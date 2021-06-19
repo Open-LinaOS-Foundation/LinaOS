@@ -9,6 +9,9 @@
 | 系统裁切     | 🙂         | ☹          | ☹          |
 | 类Unix环境   | 🙂         | 😐         | ☹          |
 | FOSS        | 🙂         | ☹          | ☹          |
+## 系统架构图
+
+![System Architecture](https://github.com/StickTech/LinaOS/blob/main/Architecture.jpeg)
 
 ## 关于
 
