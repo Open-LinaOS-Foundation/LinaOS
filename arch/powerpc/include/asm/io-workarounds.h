@@ -9,7 +9,7 @@
 #define _IO_WORKAROUNDS_H
 
 #ifdef CONFIG_PPC_IO_WORKAROUNDS
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <asm/pci-bridge.h>
 
 /* Bus info */

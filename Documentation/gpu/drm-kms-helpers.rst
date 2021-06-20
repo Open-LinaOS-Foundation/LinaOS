@@ -358,7 +358,7 @@ by any driver interfacing with HDMI outputs like v4l or alsa drivers.
 But it nicely fits into the overall topic of mode setting helper
 libraries and hence is also included here.
 
-.. kernel-doc:: include/linux/hdmi.h
+.. kernel-doc:: include/linaos/hdmi.h
    :internal:
 
 .. kernel-doc:: drivers/video/hdmi.c

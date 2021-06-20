@@ -123,7 +123,7 @@ em_cpu_energy() API. The estimation is performed assuming that the schedutil
 CPUfreq governor is in use in case of CPU device. Currently this calculation is
 not provided for other type of devices.
 
-More details about the above APIs can be found in include/linux/energy_model.h.
+More details about the above APIs can be found in include/linaos/energy_model.h.
 
 
 3. Example driver

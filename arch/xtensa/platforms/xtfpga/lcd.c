@@ -10,9 +10,9 @@
  * Copyright (C) 2015 Cadence Design Systems Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 
 #include <platform/hardware.h>
 #include <platform/lcd.h>

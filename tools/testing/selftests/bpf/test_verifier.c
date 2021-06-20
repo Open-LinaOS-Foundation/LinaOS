@@ -9,7 +9,7 @@
 
 #include <endian.h>
 #include <asm/types.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -24,12 +24,12 @@
 
 #include <sys/capability.h>
 
-#include <linux/unistd.h>
-#include <linux/filter.h>
-#include <linux/bpf_perf_event.h>
-#include <linux/bpf.h>
-#include <linux/if_ether.h>
-#include <linux/btf.h>
+#include <linaos/unistd.h>
+#include <linaos/filter.h>
+#include <linaos/bpf_perf_event.h>
+#include <linaos/bpf.h>
+#include <linaos/if_ether.h>
+#include <linaos/btf.h>
 
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
@@ -45,7 +45,7 @@
 #include "bpf_rand.h"
 #include "bpf_util.h"
 #include "test_btf.h"
-#include "../../../include/linux/filter.h"
+#include "../../../include/linaos/filter.h"
 
 #define MAX_INSNS	BPF_MAXINSNS
 #define MAX_TEST_INSNS	1000000
@@ -1096,7 +1096,7 @@ static void do_test_single(struct bpf_test *test, bool unpriv,
 	attr.prog_flags = pflags;
 
 	if (prog_type == BPF_PROG_TYPE_TRACING && test->kfunc) {
-		attr.attach_btf_id = libbpf_find_vmlinux_btf_id(test->kfunc,
+		attr.attach_btf_id = libbpf_find_vmlinaos_btf_id(test->kfunc,
 						attr.expected_attach_type);
 		if (attr.attach_btf_id < 0) {
 			printf("FAIL\nFailed to find BTF ID for '%s'!\n",

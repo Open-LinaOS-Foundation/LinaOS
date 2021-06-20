@@ -3,15 +3,15 @@
  * Simple stack backtrace regression test module
  *
  * (C) Copyright 2008 Intel Corporation
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@linaos.intel.com>
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/stacktrace.h>
 
 static void backtrace_test_normal(void)
 {
@@ -79,4 +79,4 @@ static void exitf(void)
 module_init(backtrace_regression_test);
 module_exit(exitf);
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Arjan van de Ven <arjan@linux.intel.com>");
+MODULE_AUTHOR("Arjan van de Ven <arjan@linaos.intel.com>");

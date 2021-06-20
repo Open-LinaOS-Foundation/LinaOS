@@ -10,17 +10,17 @@
 #define pr_fmt(fmt)		KBUILD_MODNAME ": " fmt
 #define psmouse_fmt(fmt)	fmt
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/init.h>
-#include <linux/libps2.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
+#include <linaos/init.h>
+#include <linaos/libps2.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
 
 #include "psmouse.h"
 #include "synaptics.h"

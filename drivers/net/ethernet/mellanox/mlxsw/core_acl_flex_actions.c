@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2017-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/rhashtable.h>
-#include <linux/list.h>
-#include <linux/idr.h>
-#include <linux/refcount.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/rhashtable.h>
+#include <linaos/list.h>
+#include <linaos/idr.h>
+#include <linaos/refcount.h>
 #include <net/flow_offload.h>
 
 #include "item.h"

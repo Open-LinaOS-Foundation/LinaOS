@@ -6,9 +6,9 @@
 #ifndef BTRFS_VOLUMES_H
 #define BTRFS_VOLUMES_H
 
-#include <linux/bio.h>
-#include <linux/sort.h>
-#include <linux/btrfs.h>
+#include <linaos/bio.h>
+#include <linaos/sort.h>
+#include <linaos/btrfs.h>
 #include "async-thread.h"
 
 #define BTRFS_MAX_DATA_CHUNK_SIZE	(10ULL * SZ_1G)
@@ -37,7 +37,7 @@ struct btrfs_io_geometry {
  * 32-bit processors.
  */
 #if BITS_PER_LONG==32 && defined(CONFIG_SMP)
-#include <linux/seqlock.h>
+#include <linaos/seqlock.h>
 #define __BTRFS_NEED_DEVICE_DATA_ORDERED
 #define btrfs_device_data_ordered_init(device)	\
 	seqcount_init(&device->data_seqcount)

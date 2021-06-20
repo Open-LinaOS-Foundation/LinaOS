@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * INET		An implementation of the TCP/IP protocol suite for the LINUX
  *		operating system.  INET is implemented using the  BSD Socket
@@ -24,8 +24,8 @@
 #ifndef _LINUX_ROUTE_H
 #define _LINUX_ROUTE_H
 
-#include <linux/if.h>
-#include <linux/compiler.h>
+#include <linaos/if.h>
+#include <linaos/compiler.h>
 
 /* This structure gets passed by the SIOCADDRT and SIOCDELRT calls. */
 struct rtentry {
@@ -61,7 +61,7 @@ struct rtentry {
 #define RTF_REJECT	0x0200		/* Reject route			*/
 
 /*
- *	<linux/ipv6_route.h> uses RTF values >= 64k
+ *	<linaos/ipv6_route.h> uses RTF values >= 64k
  */
 
 

@@ -6,20 +6,20 @@
  * Maintained at www.Open-FCoE.org
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/errno.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/errno.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
 #include <net/rtnetlink.h>
 
 #include <scsi/fc/fc_els.h>

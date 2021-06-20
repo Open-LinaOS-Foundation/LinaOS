@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/tlb-v7.S
+ *  linaos/arch/arm/mm/tlb-v7.S
  *
  *  Copyright (C) 1997-2002 Russell King
  *  Modified for ARMv7 by Catalin Marinas
@@ -8,8 +8,8 @@
  *  ARM architecture version 6 TLB handling functions.
  *  These assume a split I/D TLB.
  */
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/page.h>

@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/sound/soc/pxa/mmp-pcm.c
+ * linaos/sound/soc/pxa/mmp-pcm.c
  *
  * Copyright (C) 2011 Marvell International Ltd.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/platform_data/dma-mmp_tdma.h>
-#include <linux/platform_data/mmp_audio.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/platform_data/dma-mmp_tdma.h>
+#include <linaos/platform_data/mmp_audio.h>
 
 #include <sound/pxa2xx-lib.h>
 #include <sound/core.h>

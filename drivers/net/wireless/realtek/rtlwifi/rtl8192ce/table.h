@@ -4,7 +4,7 @@
 #ifndef __RTL92CE_TABLE__H_
 #define __RTL92CE_TABLE__H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define PHY_REG_2TARRAY_LENGTH	374
 extern u32 RTL8192CEPHY_REG_2TARRAY[PHY_REG_2TARRAY_LENGTH];

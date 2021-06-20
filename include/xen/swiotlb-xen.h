@@ -2,7 +2,7 @@
 #ifndef __LINUX_SWIOTLB_XEN_H
 #define __LINUX_SWIOTLB_XEN_H
 
-#include <linux/swiotlb.h>
+#include <linaos/swiotlb.h>
 #include <asm/xen/swiotlb-xen.h>
 
 void xen_dma_sync_for_cpu(struct device *dev, dma_addr_t handle,

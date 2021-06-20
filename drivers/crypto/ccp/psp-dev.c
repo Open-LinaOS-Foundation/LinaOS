@@ -7,8 +7,8 @@
  * Author: Brijesh Singh <brijesh.singh@amd.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/irqreturn.h>
+#include <linaos/kernel.h>
+#include <linaos/irqreturn.h>
 
 #include "sp-dev.h"
 #include "psp-dev.h"

@@ -29,7 +29,7 @@
 #include "nbio/nbio_6_1_sh_mask.h"
 #include "nbio/nbio_6_1_smn.h"
 #include "vega10_enum.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/linaos/kfd_ioctl.h>
 
 #define smnPCIE_LC_CNTL		0x11140280
 #define smnPCIE_LC_CNTL3	0x111402d4

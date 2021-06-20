@@ -5,9 +5,9 @@
  *  Copyright (c) 2010, 2012-2013, NVIDIA Corporation. All rights reserved.
  */
 
-#include <linux/clk/tegra.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
+#include <linaos/clk/tegra.h>
+#include <linaos/kernel.h>
+#include <linaos/smp.h>
 
 #include <soc/tegra/common.h>
 #include <soc/tegra/fuse.h>

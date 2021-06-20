@@ -11,7 +11,7 @@
 #ifndef __LINUX_MBUS_H
 #define __LINUX_MBUS_H
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 struct resource;
 

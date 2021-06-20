@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/genhd.h>
-#include <linux/mutex.h>
-#include <linux/ide.h>
-#include <linux/hdreg.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/genhd.h>
+#include <linaos/mutex.h>
+#include <linaos/ide.h>
+#include <linaos/hdreg.h>
+#include <linaos/dmi.h>
+#include <linaos/slab.h>
 
 #if !defined(CONFIG_DEBUG_BLOCK_EXT_DEVT)
 #define IDE_DISK_MINORS		(1 << PARTN_BITS)

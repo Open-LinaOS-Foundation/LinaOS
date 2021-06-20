@@ -8,13 +8,13 @@
  *
  */
 
-#include <linux/bottom_half.h>
-#include <linux/cache.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/percpu.h>
+#include <linaos/bottom_half.h>
+#include <linaos/cache.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/percpu.h>
 #include <net/dst.h>
 #include <net/ip.h>
 #include <net/xfrm.h>

@@ -7,11 +7,11 @@
 #ifndef _LINUX_POSIX_CLOCK_H_
 #define _LINUX_POSIX_CLOCK_H_
 
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/posix-timers.h>
-#include <linux/rwsem.h>
+#include <linaos/cdev.h>
+#include <linaos/fs.h>
+#include <linaos/poll.h>
+#include <linaos/posix-timers.h>
+#include <linaos/rwsem.h>
 
 struct posix_clock;
 

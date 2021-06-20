@@ -7,15 +7,15 @@
 #ifndef _SELINUX_AVC_H_
 #define _SELINUX_AVC_H_
 
-#include <linux/stddef.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/kdev_t.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/audit.h>
-#include <linux/lsm_audit.h>
-#include <linux/in6.h>
+#include <linaos/stddef.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/kdev_t.h>
+#include <linaos/spinlock.h>
+#include <linaos/init.h>
+#include <linaos/audit.h>
+#include <linaos/lsm_audit.h>
+#include <linaos/in6.h>
 #include "flask.h"
 #include "av_permissions.h"
 #include "security.h"
@@ -44,7 +44,7 @@ struct avc_cache_stats {
 /*
  * We only need this data after we have decided to send an audit message.
  */
-struct selinux_audit_data {
+struct selinaos_audit_data {
 	u32 ssid;
 	u32 tsid;
 	u16 tclass;
@@ -52,7 +52,7 @@ struct selinux_audit_data {
 	u32 audited;
 	u32 denied;
 	int result;
-	struct selinux_state *state;
+	struct selinaos_state *state;
 };
 
 /*
@@ -97,7 +97,7 @@ static inline u32 avc_audit_required(u32 requested,
 	return audited;
 }
 
-int slow_avc_audit(struct selinux_state *state,
+int slow_avc_audit(struct selinaos_state *state,
 		   u32 ssid, u32 tsid, u16 tclass,
 		   u32 requested, u32 audited, u32 denied, int result,
 		   struct common_audit_data *a);
@@ -122,7 +122,7 @@ int slow_avc_audit(struct selinux_state *state,
  * be performed under a lock, to allow the lock to be released
  * before calling the auditing code.
  */
-static inline int avc_audit(struct selinux_state *state,
+static inline int avc_audit(struct selinaos_state *state,
 			    u32 ssid, u32 tsid,
 			    u16 tclass, u32 requested,
 			    struct av_decision *avd,
@@ -145,28 +145,28 @@ static inline int avc_audit(struct selinux_state *state,
 #define AVC_STRICT 1 /* Ignore permissive mode. */
 #define AVC_EXTENDED_PERMS 2	/* update extended permissions */
 #define AVC_NONBLOCKING    4	/* non blocking */
-int avc_has_perm_noaudit(struct selinux_state *state,
+int avc_has_perm_noaudit(struct selinaos_state *state,
 			 u32 ssid, u32 tsid,
 			 u16 tclass, u32 requested,
 			 unsigned flags,
 			 struct av_decision *avd);
 
-int avc_has_perm(struct selinux_state *state,
+int avc_has_perm(struct selinaos_state *state,
 		 u32 ssid, u32 tsid,
 		 u16 tclass, u32 requested,
 		 struct common_audit_data *auditdata);
-int avc_has_perm_flags(struct selinux_state *state,
+int avc_has_perm_flags(struct selinaos_state *state,
 		       u32 ssid, u32 tsid,
 		       u16 tclass, u32 requested,
 		       struct common_audit_data *auditdata,
 		       int flags);
 
-int avc_has_extended_perms(struct selinux_state *state,
+int avc_has_extended_perms(struct selinaos_state *state,
 			   u32 ssid, u32 tsid, u16 tclass, u32 requested,
 			   u8 driver, u8 perm, struct common_audit_data *ad);
 
 
-u32 avc_policy_seqno(struct selinux_state *state);
+u32 avc_policy_seqno(struct selinaos_state *state);
 
 #define AVC_CALLBACK_GRANT		1
 #define AVC_CALLBACK_TRY_REVOKE		2
@@ -180,11 +180,11 @@ u32 avc_policy_seqno(struct selinux_state *state);
 
 int avc_add_callback(int (*callback)(u32 event), u32 events);
 
-/* Exported to selinuxfs */
-struct selinux_avc;
-int avc_get_hash_stats(struct selinux_avc *avc, char *page);
-unsigned int avc_get_cache_threshold(struct selinux_avc *avc);
-void avc_set_cache_threshold(struct selinux_avc *avc,
+/* Exported to selinaosfs */
+struct selinaos_avc;
+int avc_get_hash_stats(struct selinaos_avc *avc, char *page);
+unsigned int avc_get_cache_threshold(struct selinaos_avc *avc);
+void avc_set_cache_threshold(struct selinaos_avc *avc,
 			     unsigned int cache_threshold);
 
 /* Attempt to free avc node cache */

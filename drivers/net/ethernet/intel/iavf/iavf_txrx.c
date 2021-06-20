@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2013 - 2018 Intel Corporation. */
 
-#include <linux/prefetch.h>
+#include <linaos/prefetch.h>
 
 #include "iavf.h"
 #include "iavf_trace.h"

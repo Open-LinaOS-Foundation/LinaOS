@@ -8,10 +8,10 @@
 #ifndef _DMA_HSU_H
 #define _DMA_HSU_H
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
 
-#include <linux/platform_data/dma-hsu.h>
+#include <linaos/platform_data/dma-hsu.h>
 
 struct hsu_dma;
 

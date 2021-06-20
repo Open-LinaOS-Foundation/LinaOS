@@ -8,7 +8,7 @@
  * Copyright (C) 2010 Roman Yeryomin <roman@advem.lv>
  * Copyright (C) 2011 Colin Leitner <colin.leitner@googlemail.com>
  */
-#include <linux/if_bridge.h>
+#include <linaos/if_bridge.h>
 #include <net/dsa.h>
 
 #include "realtek-smi-core.h"

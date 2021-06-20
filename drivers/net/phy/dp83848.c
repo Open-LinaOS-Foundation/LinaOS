@@ -5,8 +5,8 @@
  * Copyright (C) 2015-2016 Texas Instruments Incorporated - http://www.ti.com/
  */
 
-#include <linux/module.h>
-#include <linux/phy.h>
+#include <linaos/module.h>
+#include <linaos/phy.h>
 
 #define TI_DP83848C_PHY_ID		0x20005ca0
 #define TI_DP83620_PHY_ID		0x20005ce0

@@ -6,7 +6,7 @@
 #ifndef _LINUX_IRQ_DAVINCI_CP_INTC_
 #define _LINUX_IRQ_DAVINCI_CP_INTC_
 
-#include <linux/ioport.h>
+#include <linaos/ioport.h>
 
 /**
  * struct davinci_cp_intc_config - configuration data for davinci-cp-intc

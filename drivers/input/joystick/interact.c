@@ -7,19 +7,19 @@
  */
 
 /*
- * InterAct digital gamepad/joystick driver for Linux
+ * InterAct digital gamepad/joystick driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/gameport.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/gameport.h>
+#include <linaos/input.h>
+#include <linaos/jiffies.h>
 
 #define DRIVER_DESC	"InterAct digital joystick driver"
 

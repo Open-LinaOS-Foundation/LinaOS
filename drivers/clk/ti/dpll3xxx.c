@@ -15,16 +15,16 @@
  * Richard Woodruff, Tony Lindgren, Tuukka Tikkanen, Karthik Dasu
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/clkdev.h>
-#include <linux/clk/ti.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/bitops.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk/ti.h>
 
 #include "clock.h"
 

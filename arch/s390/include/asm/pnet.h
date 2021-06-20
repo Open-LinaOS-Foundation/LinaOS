@@ -8,8 +8,8 @@
 #ifndef _ASM_S390_PNET_H
 #define _ASM_S390_PNET_H
 
-#include <linux/device.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
 
 int pnet_id_by_dev_port(struct device *dev, unsigned short port, u8 *pnetid);
 #endif /* _ASM_S390_PNET_H */

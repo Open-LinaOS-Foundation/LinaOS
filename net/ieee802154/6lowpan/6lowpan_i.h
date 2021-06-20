@@ -2,7 +2,7 @@
 #ifndef __IEEE802154_6LOWPAN_I_H__
 #define __IEEE802154_6LOWPAN_I_H__
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 #include <net/ieee802154_netdev.h>
 #include <net/inet_frag.h>

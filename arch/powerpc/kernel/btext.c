@@ -4,12 +4,12 @@
  *
  * Benjamin Herrenschmidt <benh@kernel.crashing.org>
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/memblock.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/memblock.h>
+#include <linaos/pgtable.h>
 
 #include <asm/sections.h>
 #include <asm/prom.h>
@@ -167,33 +167,33 @@ static int btext_initialize(struct device_node *np)
 	unsigned long address = 0;
 	const u32 *prop;
 
-	prop = of_get_property(np, "linux,bootx-width", NULL);
+	prop = of_get_property(np, "linaos,bootx-width", NULL);
 	if (prop == NULL)
 		prop = of_get_property(np, "width", NULL);
 	if (prop == NULL)
 		return -EINVAL;
 	width = *prop;
-	prop = of_get_property(np, "linux,bootx-height", NULL);
+	prop = of_get_property(np, "linaos,bootx-height", NULL);
 	if (prop == NULL)
 		prop = of_get_property(np, "height", NULL);
 	if (prop == NULL)
 		return -EINVAL;
 	height = *prop;
-	prop = of_get_property(np, "linux,bootx-depth", NULL);
+	prop = of_get_property(np, "linaos,bootx-depth", NULL);
 	if (prop == NULL)
 		prop = of_get_property(np, "depth", NULL);
 	if (prop == NULL)
 		return -EINVAL;
 	depth = *prop;
 	pitch = width * ((depth + 7) / 8);
-	prop = of_get_property(np, "linux,bootx-linebytes", NULL);
+	prop = of_get_property(np, "linaos,bootx-linebytes", NULL);
 	if (prop == NULL)
 		prop = of_get_property(np, "linebytes", NULL);
 	if (prop && *prop != 0xffffffffu)
 		pitch = *prop;
 	if (pitch == 1)
 		pitch = 0x1000;
-	prop = of_get_property(np, "linux,bootx-addr", NULL);
+	prop = of_get_property(np, "linaos,bootx-addr", NULL);
 	if (prop == NULL)
 		prop = of_get_property(np, "address", NULL);
 	if (prop)
@@ -236,7 +236,7 @@ int __init btext_find_display(int allow_nonstdout)
 		return rc;
 
 	for_each_node_by_type(np, "display") {
-		if (of_get_property(np, "linux,opened", NULL)) {
+		if (of_get_property(np, "linaos,opened", NULL)) {
 			printk("trying %pOF ...\n", np);
 			rc = btext_initialize(np);
 			printk("result: %d\n", rc);

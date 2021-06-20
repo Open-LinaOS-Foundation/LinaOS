@@ -11,13 +11,13 @@
  * TODO: single cycle measurement
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 #define TSL4531_DRV_NAME "tsl4531"
 

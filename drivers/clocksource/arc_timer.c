@@ -12,16 +12,16 @@
  * which are suitable for UP and SMP based clocksources respectively
  */
 
-#include <linux/interrupt.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
+#include <linaos/interrupt.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clocksource.h>
+#include <linaos/clockchips.h>
+#include <linaos/cpu.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/sched_clock.h>
 
 #include <soc/arc/timers.h>
 #include <soc/arc/mcip.h>

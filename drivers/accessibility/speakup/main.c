@@ -9,32 +9,32 @@
  *  Copyright (C) 2003  David Borowski.
  */
 
-#include <linux/kernel.h>
-#include <linux/vt.h>
-#include <linux/tty.h>
-#include <linux/mm.h>		/* __get_free_page() and friends */
-#include <linux/vt_kern.h>
-#include <linux/ctype.h>
-#include <linux/selection.h>
-#include <linux/unistd.h>
-#include <linux/jiffies.h>
-#include <linux/kthread.h>
-#include <linux/keyboard.h>	/* for KT_SHIFT */
-#include <linux/kbd_kern.h>	/* for vc_kbd_* and friends */
-#include <linux/input.h>
-#include <linux/kmod.h>
+#include <linaos/kernel.h>
+#include <linaos/vt.h>
+#include <linaos/tty.h>
+#include <linaos/mm.h>		/* __get_free_page() and friends */
+#include <linaos/vt_kern.h>
+#include <linaos/ctype.h>
+#include <linaos/selection.h>
+#include <linaos/unistd.h>
+#include <linaos/jiffies.h>
+#include <linaos/kthread.h>
+#include <linaos/keyboard.h>	/* for KT_SHIFT */
+#include <linaos/kbd_kern.h>	/* for vc_kbd_* and friends */
+#include <linaos/input.h>
+#include <linaos/kmod.h>
 
 /* speakup_*_selection */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/consolemap.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/consolemap.h>
 
-#include <linux/spinlock.h>
-#include <linux/notifier.h>
+#include <linaos/spinlock.h>
+#include <linaos/notifier.h>
 
-#include <linux/uaccess.h>	/* copy_from|to|user() and others */
+#include <linaos/uaccess.h>	/* copy_from|to|user() and others */
 
 #include "spk_priv.h"
 #include "speakup.h"

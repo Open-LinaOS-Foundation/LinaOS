@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Management Complex (MC) userspace public interface
  *
@@ -8,7 +8,7 @@
 #ifndef _UAPI_FSL_MC_H_
 #define _UAPI_FSL_MC_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define MC_CMD_NUM_OF_PARAMS	7
 

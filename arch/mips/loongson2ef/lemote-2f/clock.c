@@ -6,9 +6,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/cpufreq.h>
-#include <linux/errno.h>
-#include <linux/export.h>
+#include <linaos/cpufreq.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
 
 #include <asm/mach-loongson2ef/loongson.h>
 

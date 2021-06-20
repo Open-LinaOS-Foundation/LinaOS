@@ -7,12 +7,12 @@
  * Uses rational best approximation algorithm.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/rational.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/rational.h>
 
 static inline u32 clk_fd_readl(struct clk_fractional_divider *fd)
 {

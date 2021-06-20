@@ -12,7 +12,7 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 #endif
 
-#include <linux/mempool.h>
+#include <linaos/mempool.h>
 
 #include "incore.h"
 

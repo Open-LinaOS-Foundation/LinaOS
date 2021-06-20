@@ -58,17 +58,17 @@ Console Selection
     multiple simultaneous consoles and doesn't tell the kernel which
     should be the "primary" one.
 
-    So how do you tell Linux which console device to use?
+    So how do you tell LinaOS which console device to use?
 
 	- If your firmware supplies the HCDP, it is simplest to
 	  configure EFI with a single device (either a UART or a VGA
-	  card) as the console.  Then you don't need to tell Linux
+	  card) as the console.  Then you don't need to tell LinaOS
 	  anything; the kernel will automatically use the EFI console.
 
 	  (This works only in 2.6.6 or later; prior to that you had
 	  to specify "console=ttyS0" to get a serial console.)
 
-	- Without an HCDP, Linux defaults to a VGA console unless you
+	- Without an HCDP, LinaOS defaults to a VGA console unless you
 	  specify a "console=" argument.
 
     NOTE: Don't assume that a serial console device will be /dev/ttyS0.
@@ -93,18 +93,18 @@ Early Serial Console
 Troubleshooting Serial Console Problems
 =======================================
 
-    No kernel output after elilo prints "Uncompressing Linux... done":
+    No kernel output after elilo prints "Uncompressing LinaOS... done":
 
-	- You specified "console=ttyS0" but Linux changed the device
+	- You specified "console=ttyS0" but LinaOS changed the device
 	  to which ttyS0 refers.  Configure exactly one EFI console
 	  device[3] and remove the "console=" option.
 
 	- The EFI console path contains both a VGA device and a UART.
-	  EFI and elilo use both, but Linux defaults to VGA.  Remove
+	  EFI and elilo use both, but LinaOS defaults to VGA.  Remove
 	  the VGA device from the EFI console path[3].
 
 	- Multiple UARTs selected as EFI console devices.  EFI and
-	  elilo use all selected devices, but Linux uses only one.
+	  elilo use all selected devices, but LinaOS uses only one.
 	  Make sure only one UART is selected in the EFI console
 	  path[3].
 
@@ -114,7 +114,7 @@ Troubleshooting Serial Console Problems
 	  Either move the console cable to the non-MP UART, or change
 	  the EFI console path[3] to the MP UART.
 
-    Long pause (60+ seconds) between "Uncompressing Linux... done" and
+    Long pause (60+ seconds) between "Uncompressing LinaOS... done" and
     start of kernel output:
 
 	- No early console because you used "console=ttyS<n>".  Remove

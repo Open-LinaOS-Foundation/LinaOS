@@ -5,13 +5,13 @@
  * Copyright (C) 2021 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/bitops.h>
-#include <linux/cpumask.h>
-#include <linux/mm.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/static_key.h>
+#include <linaos/bitops.h>
+#include <linaos/cpumask.h>
+#include <linaos/mm.h>
+#include <linaos/percpu.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/static_key.h>
 #include <asm/tlbflush.h>
 #include <asm/cacheflush.h>
 #include <asm/mmu_context.h>

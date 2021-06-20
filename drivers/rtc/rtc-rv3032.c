@@ -8,20 +8,20 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/bcd.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/bcd.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/hwmon.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/log2.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/rtc.h>
 
 #define RV3032_SEC			0x01
 #define RV3032_MIN			0x02

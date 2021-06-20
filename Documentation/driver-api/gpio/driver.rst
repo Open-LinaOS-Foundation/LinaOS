@@ -7,7 +7,7 @@ This document serves as a guide for writers of GPIO chip drivers.
 Each GPIO controller driver needs to include the following header, which defines
 the structures used to define a GPIO driver::
 
-	#include <linux/gpio/driver.h>
+	#include <linaos/gpio/driver.h>
 
 
 Internal Representation of GPIOs
@@ -53,7 +53,7 @@ Controller Drivers: gpio_chip
 =============================
 
 In the gpiolib framework each GPIO controller is packaged as a "struct
-gpio_chip" (see <linux/gpio/driver.h> for its complete definition) with members
+gpio_chip" (see <linaos/gpio/driver.h> for its complete definition) with members
 common to each controller of that type, these should be assigned by the
 driver code:
 
@@ -259,7 +259,7 @@ most often cascaded off a parent interrupt controller, and in some special
 cases the GPIO logic is melded with a SoC's primary interrupt controller.
 
 The IRQ portions of the GPIO block are implemented using an irq_chip, using
-the header <linux/irq.h>. So this combined driver is utilizing two sub-
+the header <linaos/irq.h>. So this combined driver is utilizing two sub-
 systems simultaneously: gpio and irq.
 
 It is legal for any IRQ consumer to request an IRQ from any irqchip even if it
@@ -639,7 +639,7 @@ compliance:
 - Test your driver with the appropriate in-kernel real-time test cases for both
   level and edge IRQs
 
-* [1] http://www.spinics.net/lists/linux-omap/msg120425.html
+* [1] http://www.spinics.net/lists/linaos-omap/msg120425.html
 * [2] https://lore.kernel.org/r/1443209283-20781-2-git-send-email-grygorii.strashko@ti.com
 * [3] https://lore.kernel.org/r/1443209283-20781-3-git-send-email-grygorii.strashko@ti.com
 

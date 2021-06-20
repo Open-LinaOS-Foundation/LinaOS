@@ -56,12 +56,12 @@ Here is the main features of EROFS:
 The following git tree provides the file system user-space tools under
 development (ex, formatting tool mkfs.erofs):
 
-- git://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git
+- git://git.kernel.org/pub/scm/linaos/kernel/git/xiang/erofs-utils.git
 
 Bugs and patches are welcome, please kindly help us and send to the following
-linux-erofs mailing list:
+linaos-erofs mailing list:
 
-- linux-erofs mailing list   <linux-erofs@lists.ozlabs.org>
+- linaos-erofs mailing list   <linaos-erofs@lists.ozlabs.org>
 
 Mount options
 =============
@@ -245,7 +245,7 @@ fixed in block size, as illustrated below::
 A physical cluster can be seen as a container of physical compressed blocks
 which contains compressed data. Previously, only lcluster-sized (4KB) pclusters
 were supported. After big pcluster feature is introduced (available since
-Linux v5.13), pcluster can be a multiple of lcluster size.
+LinaOS v5.13), pcluster can be a multiple of lcluster size.
 
 For each HEAD lcluster, clusterofs is recorded to indicate where a new extent
 starts and blkaddr is used to seek the compressed data. For each NONHEAD

@@ -2,13 +2,13 @@
 #ifndef __LINUX_MTD_QINFO_H
 #define __LINUX_MTD_QINFO_H
 
-#include <linux/mtd/map.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/flashchip.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/mtd/map.h>
+#include <linaos/wait.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/flashchip.h>
+#include <linaos/mtd/partitions.h>
 
 /* lpddr_private describes lpddr flash chip in memory map
  * @ManufactId - Chip Manufacture ID

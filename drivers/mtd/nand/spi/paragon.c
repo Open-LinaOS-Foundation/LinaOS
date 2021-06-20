@@ -5,9 +5,9 @@
  * Author: Jeff Kletsky <git-commits@allycomm.com>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/mtd/spinand.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/mtd/spinand.h>
 
 
 #define SPINAND_MFR_PARAGON	0xa1

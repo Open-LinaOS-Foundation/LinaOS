@@ -8,10 +8,10 @@
 #ifndef __LINUX_PLATFORM_DATA_CROS_EC_SENSORHUB_H
 #define __LINUX_PLATFORM_DATA_CROS_EC_SENSORHUB_H
 
-#include <linux/ktime.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/platform_data/cros_ec_commands.h>
+#include <linaos/ktime.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
+#include <linaos/platform_data/cros_ec_commands.h>
 
 struct iio_dev;
 

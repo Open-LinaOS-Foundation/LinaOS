@@ -2,7 +2,7 @@
 LoadPin
 =======
 
-LoadPin is a Linux Security Module that ensures all kernel-loaded files
+LoadPin is a LinaOS Security Module that ensures all kernel-loaded files
 (modules, firmware, etc) all originate from the same filesystem, with
 the expectation that such a filesystem is backed by a read-only device
 such as dm-verity or CDROM. This allows systems that have a verified
@@ -28,4 +28,4 @@ different mechanisms such as ``CONFIG_MODULE_SIG`` and
 ``CONFIG_KEXEC_VERIFY_SIG`` to verify kernel module and kernel image while
 still use LoadPin to protect the integrity of other files kernel loads. The
 full list of valid file types can be found in ``kernel_read_file_str``
-defined in ``include/linux/kernel_read_file.h``.
+defined in ``include/linaos/kernel_read_file.h``.

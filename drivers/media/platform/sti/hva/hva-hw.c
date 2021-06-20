@@ -5,12 +5,12 @@
  *          Hugues Fruchet <hugues.fruchet@st.com>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 #ifdef CONFIG_VIDEO_STI_HVA_DEBUGFS
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 #endif
 
 #include "hva.h"

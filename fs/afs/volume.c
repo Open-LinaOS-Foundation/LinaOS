@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 #include "internal.h"
 
 unsigned __read_mostly afs_volume_gc_delay = 10;

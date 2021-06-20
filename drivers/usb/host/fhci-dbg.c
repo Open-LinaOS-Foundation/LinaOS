@@ -11,12 +11,12 @@
  *               Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
 #include "fhci.h"
 
 void fhci_dbg_isr(struct fhci_hcd *fhci, int usb_er)

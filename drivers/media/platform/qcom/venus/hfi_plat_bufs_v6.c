@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The LinaOS Foundation. All rights reserved.
  */
-#include <linux/kernel.h>
-#include <linux/sizes.h>
-#include <linux/videodev2.h>
+#include <linaos/kernel.h>
+#include <linaos/sizes.h>
+#include <linaos/videodev2.h>
 
 #include "hfi.h"
 #include "hfi_plat_bufs.h"

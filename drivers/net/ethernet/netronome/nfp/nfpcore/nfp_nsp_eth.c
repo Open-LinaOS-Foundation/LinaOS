@@ -6,11 +6,11 @@
  *          Jason Mcmullan <jason.mcmullan@netronome.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/bitfield.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_ether.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #include "nfp.h"
 #include "nfp_nsp.h"

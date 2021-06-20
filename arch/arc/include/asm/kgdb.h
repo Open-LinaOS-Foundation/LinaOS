@@ -12,7 +12,7 @@
 
 #include <asm/ptrace.h>
 
-/* to ensure compatibility with Linux 2.6.35, we don't implement the get/set
+/* to ensure compatibility with LinaOS 2.6.35, we don't implement the get/set
  * register API yet */
 #undef DBG_MAX_REG_NUM
 
@@ -34,7 +34,7 @@ extern void kgdb_trap(struct pt_regs *regs);
  * arc-tdep.h for details.
  *
  * Registers are ordered for GDB 7.5. It is incompatible with GDB 6.8. */
-enum arc_linux_regnums {
+enum arc_linaos_regnums {
 	_R0		= 0,
 	_R1, _R2, _R3, _R4, _R5, _R6, _R7, _R8, _R9, _R10, _R11, _R12, _R13,
 	_R14, _R15, _R16, _R17, _R18, _R19, _R20, _R21, _R22, _R23, _R24,

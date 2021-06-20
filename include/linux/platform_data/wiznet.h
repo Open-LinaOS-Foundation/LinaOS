@@ -6,7 +6,7 @@
 #ifndef PLATFORM_DATA_WIZNET_H
 #define PLATFORM_DATA_WIZNET_H
 
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 
 struct wiznet_platform_data {
 	int	link_gpio;

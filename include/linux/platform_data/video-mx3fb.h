@@ -7,8 +7,8 @@
 #ifndef __ASM_ARCH_MX3FB_H__
 #define __ASM_ARCH_MX3FB_H__
 
-#include <linux/device.h>
-#include <linux/fb.h>
+#include <linaos/device.h>
+#include <linaos/fb.h>
 
 /* Proprietary FB_SYNC_ flags */
 #define FB_SYNC_OE_ACT_HIGH	0x80000000

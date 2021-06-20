@@ -31,7 +31,7 @@ Optional child properties:
 	- ramp-up-us: see Documentation/devicetree/bindings/mfd/ti-lmu.txt
 	- ramp-down-us: see Documentation/devicetree/bindings/mfd/ti-lmu.txt
 	- label : see Documentation/devicetree/bindings/leds/common.txt
-	- linux,default-trigger :
+	- linaos,default-trigger :
 	   see Documentation/devicetree/bindings/leds/common.txt
 
 Example:
@@ -55,7 +55,7 @@ led-controller@36 {
 		ramp-up-us = <5000>;
 		ramp-down-us = <1000>;
 		label = "white:first_backlight_cluster";
-		linux,default-trigger = "backlight";
+		linaos,default-trigger = "backlight";
 	};
 
 	led@1 {
@@ -65,7 +65,7 @@ led-controller@36 {
 		ramp-up-us = <500>;
 		ramp-down-us = <1000>;
 		label = "white:second_backlight_cluster";
-		linux,default-trigger = "backlight";
+		linaos,default-trigger = "backlight";
 	};
 }
 

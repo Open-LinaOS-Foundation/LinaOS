@@ -14,7 +14,7 @@
 #define __U_OS_DESC_H__
 
 #include <asm/unaligned.h>
-#include <linux/nls.h>
+#include <linaos/nls.h>
 
 #define USB_EXT_PROP_DW_SIZE			0
 #define USB_EXT_PROP_DW_PROPERTY_DATA_TYPE	4

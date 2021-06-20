@@ -8,8 +8,8 @@
 #ifndef __VMW_VMCI_API_H__
 #define __VMW_VMCI_API_H__
 
-#include <linux/uidgid.h>
-#include <linux/vmw_vmci_defs.h>
+#include <linaos/uidgid.h>
+#include <linaos/vmw_vmci_defs.h>
 
 #undef  VMCI_KERNEL_API_VERSION
 #define VMCI_KERNEL_API_VERSION_1 1

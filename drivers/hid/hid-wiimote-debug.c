@@ -7,11 +7,11 @@
 /*
  */
 
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
+#include <linaos/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
 #include "hid-wiimote.h"
 
 struct wiimote_debug {

@@ -2,11 +2,11 @@
 //
 // Copyright (C) 2017 Samsung Electronics Co., Ltd.
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/module.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 #include "i2s.h"

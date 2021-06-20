@@ -7,33 +7,33 @@
  * APIs (schedule(), wakeup variants, etc.)
  */
 
-#include <uapi/linux/sched.h>
+#include <uapi/linaos/sched.h>
 
 #include <asm/current.h>
 
-#include <linux/pid.h>
-#include <linux/sem.h>
-#include <linux/shm.h>
-#include <linux/mutex.h>
-#include <linux/plist.h>
-#include <linux/hrtimer.h>
-#include <linux/irqflags.h>
-#include <linux/seccomp.h>
-#include <linux/nodemask.h>
-#include <linux/rcupdate.h>
-#include <linux/refcount.h>
-#include <linux/resource.h>
-#include <linux/latencytop.h>
-#include <linux/sched/prio.h>
-#include <linux/sched/types.h>
-#include <linux/signal_types.h>
-#include <linux/syscall_user_dispatch.h>
-#include <linux/mm_types_task.h>
-#include <linux/task_io_accounting.h>
-#include <linux/posix-timers.h>
-#include <linux/rseq.h>
-#include <linux/seqlock.h>
-#include <linux/kcsan.h>
+#include <linaos/pid.h>
+#include <linaos/sem.h>
+#include <linaos/shm.h>
+#include <linaos/mutex.h>
+#include <linaos/plist.h>
+#include <linaos/hrtimer.h>
+#include <linaos/irqflags.h>
+#include <linaos/seccomp.h>
+#include <linaos/nodemask.h>
+#include <linaos/rcupdate.h>
+#include <linaos/refcount.h>
+#include <linaos/resource.h>
+#include <linaos/latencytop.h>
+#include <linaos/sched/prio.h>
+#include <linaos/sched/types.h>
+#include <linaos/signal_types.h>
+#include <linaos/syscall_user_dispatch.h>
+#include <linaos/mm_types_task.h>
+#include <linaos/task_io_accounting.h>
+#include <linaos/posix-timers.h>
+#include <linaos/rseq.h>
+#include <linaos/seqlock.h>
+#include <linaos/kcsan.h>
 #include <asm/kmap_size.h>
 
 /* task_struct member predeclarations (sorted alphabetically): */
@@ -793,7 +793,7 @@ struct task_struct {
 	/* JOBCTL_*, siglock protected: */
 	unsigned long			jobctl;
 
-	/* Used for emulating ABI behavior of previous Linux versions: */
+	/* Used for emulating ABI behavior of previous LinaOS versions: */
 	unsigned int			personality;
 
 	/* Scheduler bits, serialized by scheduler locks: */
@@ -1422,7 +1422,7 @@ static inline struct pid *task_pid(struct task_struct *task)
  *                     current.
  * task_xid_nr_ns()  : id seen from the ns specified;
  *
- * see also pid_nr() etc in include/linux/pid.h
+ * see also pid_nr() etc in include/linaos/pid.h
  */
 pid_t __task_pid_nr_ns(struct task_struct *task, enum pid_type type, struct pid_namespace *ns);
 
@@ -1785,7 +1785,7 @@ static inline struct thread_info *task_thread_info(struct task_struct *task)
  * find_task_by_vpid():
  *      finds a task by its virtual pid
  *
- * see also find_vpid() etc in include/linux/pid.h
+ * see also find_vpid() etc in include/linaos/pid.h
  */
 
 extern struct task_struct *find_task_by_vpid(pid_t nr);

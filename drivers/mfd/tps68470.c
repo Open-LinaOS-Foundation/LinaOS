@@ -11,13 +11,13 @@
  *	Yuning Pu <yuning.pu@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps68470.h>
-#include <linux/regmap.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/tps68470.h>
+#include <linaos/regmap.h>
 
 static const struct mfd_cell tps68470s[] = {
 	{ .name = "tps68470-gpio" },

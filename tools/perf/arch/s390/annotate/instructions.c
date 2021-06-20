@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 static int s390_call__parse(struct arch *arch, struct ins_operands *ops,
 			    struct map_symbol *ms)

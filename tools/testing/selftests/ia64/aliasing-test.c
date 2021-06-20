@@ -17,7 +17,7 @@
 #include <sys/mman.h>
 #include <sys/stat.h>
 #include <unistd.h>
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 int sum;
 

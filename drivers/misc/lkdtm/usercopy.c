@@ -4,11 +4,11 @@
  * hardening.
  */
 #include "lkdtm.h"
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mman.h>
-#include <linux/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mman.h>
+#include <linaos/uaccess.h>
 #include <asm/cacheflush.h>
 
 /*

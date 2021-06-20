@@ -2,7 +2,7 @@
 /*
  *  cx18 functions for DVB support
  *
- *  Copyright (c) 2008 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2008 Steven Toth <stoth@linaostv.org>
  */
 
 #include "cx18-driver.h"

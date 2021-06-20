@@ -5,32 +5,32 @@
  *              Alignment and value checking mods by Craig Metz
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/user.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/stat.h>
-#include <linux/socket.h>
-#include <linux/file.h>
-#include <linux/fcntl.h>
-#include <linux/net.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/security.h>
-#include <linux/pid_namespace.h>
-#include <linux/pid.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/errqueue.h>
+#include <linaos/module.h>
+#include <linaos/signal.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/sched/user.h>
+#include <linaos/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/stat.h>
+#include <linaos/socket.h>
+#include <linaos/file.h>
+#include <linaos/fcntl.h>
+#include <linaos/net.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/security.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/pid.h>
+#include <linaos/nsproxy.h>
+#include <linaos/slab.h>
+#include <linaos/errqueue.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/sock.h>
 #include <net/compat.h>
 #include <net/scm.h>

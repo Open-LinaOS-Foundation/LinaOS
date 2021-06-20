@@ -2,16 +2,16 @@
 /*
  * PPS API kernel header
  *
- * Copyright (C) 2009   Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2009   Rodolfo Giometti <giometti@linaos.it>
  */
 
 #ifndef LINUX_PPS_KERNEL_H
 #define LINUX_PPS_KERNEL_H
 
-#include <linux/pps.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/time.h>
+#include <linaos/pps.h>
+#include <linaos/cdev.h>
+#include <linaos/device.h>
+#include <linaos/time.h>
 
 /*
  * Global defines

@@ -6,16 +6,16 @@
  * Development of this code funded by Astaro AG (http://www.astaro.com/)
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_tables.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/netlink.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables.h>
 #include <net/netfilter/nft_reject.h>
-#include <linux/icmp.h>
-#include <linux/icmpv6.h>
+#include <linaos/icmp.h>
+#include <linaos/icmpv6.h>
 
 const struct nla_policy nft_reject_policy[NFTA_REJECT_MAX + 1] = {
 	[NFTA_REJECT_TYPE]		= { .type = NLA_U32 },

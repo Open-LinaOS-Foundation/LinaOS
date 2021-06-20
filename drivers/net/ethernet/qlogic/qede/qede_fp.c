@@ -4,20 +4,20 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/bpf_trace.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/bpf_trace.h>
 #include <net/udp_tunnel.h>
-#include <linux/ip.h>
+#include <linaos/ip.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
 #include <net/ip6_checksum.h>
 #include "qede_ptp.h"
 
-#include <linux/qed/qed_if.h>
+#include <linaos/qed/qed_if.h>
 #include "qede.h"
 /*********************************
  * Content also used by slowpath *

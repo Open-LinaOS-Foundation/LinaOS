@@ -5,20 +5,20 @@
  * Copyright (C) 2010-2011 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/pda_power.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio.h>
-#include <linux/wm97xx.h>
-#include <linux/power_supply.h>
-#include <linux/regulator/max1586.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/input.h>
+#include <linaos/pda_power.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio.h>
+#include <linaos/wm97xx.h>
+#include <linaos/power_supply.h>
+#include <linaos/regulator/max1586.h>
+#include <linaos/platform_data/i2c-pxa.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -26,11 +26,11 @@
 
 #include "pxa27x.h"
 #include <mach/audio.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/irda-pxaficp.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/irda-pxaficp.h>
 #include "udc.h"
-#include <linux/platform_data/asoc-palm27x.h>
+#include <linaos/platform_data/asoc-palm27x.h>
 #include "palm27x.h"
 
 #include "generic.h"

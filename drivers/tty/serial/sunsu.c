@@ -16,36 +16,36 @@
  *   David S. Miller (davem@davemloft.net), 2002-Jul-29
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/circ_buf.h>
-#include <linux/serial.h>
-#include <linux/sysrq.h>
-#include <linux/console.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/major.h>
+#include <linaos/string.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
+#include <linaos/circ_buf.h>
+#include <linaos/serial.h>
+#include <linaos/sysrq.h>
+#include <linaos/console.h>
+#include <linaos/slab.h>
 #ifdef CONFIG_SERIO
-#include <linux/serio.h>
+#include <linaos/serio.h>
 #endif
-#include <linux/serial_reg.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/of_device.h>
+#include <linaos/serial_reg.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/of_device.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/prom.h>
 #include <asm/setup.h>
 
-#include <linux/serial_core.h>
-#include <linux/sunserialcore.h>
+#include <linaos/serial_core.h>
+#include <linaos/sunserialcore.h>
 
 /* We are on a NS PC87303 clocked with 24.0 MHz, which results
  * in a UART clock of 1.8462 MHz.

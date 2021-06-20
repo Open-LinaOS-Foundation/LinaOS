@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/arch/arm/mm/proc-arm922.S: MMU functions for ARM922
+ *  linaos/arch/arm/mm/proc-arm922.S: MMU functions for ARM922
  *
  *  Copyright (C) 1999,2000 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd.
@@ -12,9 +12,9 @@
  *
  *  CONFIG_CPU_ARM922_CPU_IDLE -> nohlt
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable-hwdef.h>

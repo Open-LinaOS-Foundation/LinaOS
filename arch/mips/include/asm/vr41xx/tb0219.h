@@ -2,7 +2,7 @@
 /*
  *  tb0219.h, Include file for TANBAC TB0219.
  *
- *  Copyright (C) 2002-2004  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2002-2004  Yoichi Yuasa <yuasa@linaos-mips.org>
  *
  *  Modified for TANBAC TB0219:
  *  Copyright (C) 2003 Megasolution Inc.  <matsu@megasolution.jp>

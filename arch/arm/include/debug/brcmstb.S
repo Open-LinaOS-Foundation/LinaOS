@@ -10,7 +10,7 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/serial_reg.h>
+#include <linaos/serial_reg.h>
 #include <asm/cputype.h>
 
 /* Physical register offset and virtual register offset */

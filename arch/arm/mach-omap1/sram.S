@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/arch/arm/plat-omap/sram-fn.S
+ * linaos/arch/arm/plat-omap/sram-fn.S
  *
  * Functions that need to be run in internal SRAM
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/assembler.h>
 

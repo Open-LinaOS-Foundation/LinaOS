@@ -14,7 +14,7 @@
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-dma-contig.h>
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #define ROTATE_NAME		"sun8i-rotate"
 

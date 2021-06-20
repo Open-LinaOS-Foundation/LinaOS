@@ -11,13 +11,13 @@
  * legacy nodes instead.
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/platform_data/simplefb.h>
-#include <linux/platform_device.h>
-#include <linux/screen_info.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/platform_data/simplefb.h>
+#include <linaos/platform_device.h>
+#include <linaos/screen_info.h>
 #include <asm/sysfb.h>
 
 static const char simplefb_resname[] = "BOOTFB";

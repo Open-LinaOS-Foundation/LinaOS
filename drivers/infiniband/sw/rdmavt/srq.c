@@ -45,9 +45,9 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 #include <rdma/uverbs_ioctl.h>
 
 #include "srq.h"

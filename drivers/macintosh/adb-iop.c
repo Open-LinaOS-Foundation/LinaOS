@@ -9,11 +9,11 @@
  * 1999-07-31 (jmt) - First working version.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
 
 #include <asm/macintosh.h>
 #include <asm/macints.h>
@@ -21,7 +21,7 @@
 #include <asm/adb_iop.h>
 #include <asm/unaligned.h>
 
-#include <linux/adb.h>
+#include <linaos/adb.h>
 
 static struct adb_request *current_req;
 static struct adb_request *last_req;

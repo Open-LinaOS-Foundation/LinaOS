@@ -8,14 +8,14 @@
  *     Copyright IBM Corp. 2003, 2009
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>
@@ -24,10 +24,10 @@
 
 #include "raw3270.h"
 
-#include <linux/major.h>
-#include <linux/kdev_t.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
+#include <linaos/major.h>
+#include <linaos/kdev_t.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
 
 struct class *class3270;
 

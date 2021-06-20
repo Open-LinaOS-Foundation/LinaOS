@@ -3,9 +3,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/string.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
 #include <asm/pgalloc.h>
 
 pgd_t *pgd_alloc(struct mm_struct *mm)

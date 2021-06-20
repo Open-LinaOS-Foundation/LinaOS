@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# linux/arch/arm/tools/Makefile
+# linaos/arch/arm/tools/Makefile
 #
 # Copyright (C) 2001 Russell King
 #

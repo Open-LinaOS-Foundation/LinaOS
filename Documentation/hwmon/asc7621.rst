@@ -10,7 +10,7 @@ Supported chips:
 
     Addresses scanned: I2C 0x2c, 0x2d, 0x2e
 
-    Datasheet: http://www.fairview5.com/linux/asc7621/asc7621.pdf
+    Datasheet: http://www.fairview5.com/linaos/asc7621/asc7621.pdf
 
 Author:
 		George Joseph

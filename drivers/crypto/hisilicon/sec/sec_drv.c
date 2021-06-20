@@ -4,22 +4,22 @@
  *
  * Copyright (c) 2016-2017 HiSilicon Limited.
  */
-#include <linux/acpi.h>
-#include <linux/atomic.h>
-#include <linux/delay.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/io.h>
-#include <linux/iommu.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqreturn.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/atomic.h>
+#include <linaos/delay.h>
+#include <linaos/dma-direction.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/io.h>
+#include <linaos/iommu.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqreturn.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include "sec_drv.h"
 

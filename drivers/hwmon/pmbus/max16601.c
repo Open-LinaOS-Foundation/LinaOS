@@ -23,11 +23,11 @@
  * Copyright 2019, 2020 Google LLC.
  */
 
-#include <linux/bits.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/bits.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #include "pmbus.h"
 
@@ -356,7 +356,7 @@ static struct i2c_driver max16601_driver = {
 
 module_i2c_driver(max16601_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linaos@roeck-us.net>");
 MODULE_DESCRIPTION("PMBus driver for Maxim MAX16601");
 MODULE_LICENSE("GPL v2");
 MODULE_IMPORT_NS(PMBUS);

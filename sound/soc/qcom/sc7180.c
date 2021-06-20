@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 //
-// Copyright (c) 2020, The Linux Foundation. All rights reserved.
+// Copyright (c) 2020, The LinaOS Foundation. All rights reserved.
 //
 // sc7180.c -- ALSA SoC Machine driver for SC7180
 
 #include <dt-bindings/sound/sc7180-lpass.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
-#include <uapi/linux/input-event-codes.h>
+#include <uapi/linaos/input-event-codes.h>
 
 #include "../codecs/rt5682.h"
 #include "common.h"

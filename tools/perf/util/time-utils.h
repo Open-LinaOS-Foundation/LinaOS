@@ -4,7 +4,7 @@
 
 #include <stddef.h>
 #include <time.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct perf_time_interval {
 	u64 start, end;

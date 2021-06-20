@@ -10,14 +10,14 @@
  *			  - broken initialization?
  */
 
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
 #include <sound/core.h>
 #include <sound/wss.h>
 #include <sound/pcm_params.h>

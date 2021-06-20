@@ -15,14 +15,14 @@
  */
 #ifndef _UAPI_LINUX_UM_TIMETRAVEL_H
 #define _UAPI_LINUX_UM_TIMETRAVEL_H
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * struct um_timetravel_msg - UM time travel message
  *
  * This is the basic message type, going in both directions.
  *
- * This is the message passed between the host (user-mode Linux instance)
+ * This is the message passed between the host (user-mode LinaOS instance)
  * and the calendar (the application on the other side of the socket) in
  * order to implement common scheduling.
  *

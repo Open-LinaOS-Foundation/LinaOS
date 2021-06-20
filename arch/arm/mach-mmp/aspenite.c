@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-mmp/aspenite.c
+ *  linaos/arch/arm/mach-mmp/aspenite.c
  *
  *  Support for the Marvell PXA168-based Aspenite and Zylonite2
  *  Development Platform.
  */
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/smc91x.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/interrupt.h>
-#include <linux/platform_data/mv_usb.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio-pxa.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/smc91x.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_data/mv_usb.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <video/pxa168fb.h>
-#include <linux/input.h>
-#include <linux/platform_data/keypad-pxa27x.h>
+#include <linaos/input.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
 
 #include "addr-map.h"
 #include "mfp-pxa168.h"

@@ -2,14 +2,14 @@
 /*
  * IRQ support for the Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _ASM_IRQFLAGS_H
 #define _ASM_IRQFLAGS_H
 
 #include <asm/hexagon_vm.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 static inline unsigned long arch_local_save_flags(void)
 {

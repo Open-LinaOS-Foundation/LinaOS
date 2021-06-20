@@ -22,23 +22,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>	/* For module specific items */
-#include <linux/moduleparam.h>	/* For new moduleparam's */
-#include <linux/types.h>	/* For standard types (like size_t) */
-#include <linux/errno.h>	/* For the -ENODEV/... values */
-#include <linux/kernel.h>	/* For printk/panic/... */
-#include <linux/delay.h>	/* For mdelay function */
-#include <linux/miscdevice.h>	/* For struct miscdevice */
-#include <linux/watchdog.h>	/* For the watchdog specific items */
-#include <linux/notifier.h>	/* For notifier support */
-#include <linux/reboot.h>	/* For reboot_notifier stuff */
-#include <linux/init.h>		/* For __init/__exit/... */
-#include <linux/fs.h>		/* For file operations */
-#include <linux/usb.h>		/* For USB functions */
-#include <linux/slab.h>		/* For kmalloc, ... */
-#include <linux/mutex.h>	/* For mutex locking */
-#include <linux/hid.h>		/* For HID_REQ_SET_REPORT & HID_DT_REPORT */
-#include <linux/uaccess.h>	/* For copy_to_user/put_user/... */
+#include <linaos/module.h>	/* For module specific items */
+#include <linaos/moduleparam.h>	/* For new moduleparam's */
+#include <linaos/types.h>	/* For standard types (like size_t) */
+#include <linaos/errno.h>	/* For the -ENODEV/... values */
+#include <linaos/kernel.h>	/* For printk/panic/... */
+#include <linaos/delay.h>	/* For mdelay function */
+#include <linaos/miscdevice.h>	/* For struct miscdevice */
+#include <linaos/watchdog.h>	/* For the watchdog specific items */
+#include <linaos/notifier.h>	/* For notifier support */
+#include <linaos/reboot.h>	/* For reboot_notifier stuff */
+#include <linaos/init.h>		/* For __init/__exit/... */
+#include <linaos/fs.h>		/* For file operations */
+#include <linaos/usb.h>		/* For USB functions */
+#include <linaos/slab.h>		/* For kmalloc, ... */
+#include <linaos/mutex.h>	/* For mutex locking */
+#include <linaos/hid.h>		/* For HID_REQ_SET_REPORT & HID_DT_REPORT */
+#include <linaos/uaccess.h>	/* For copy_to_user/put_user/... */
 
 
 /* Module and Version Information */

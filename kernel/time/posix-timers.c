@@ -9,28 +9,28 @@
  *
  * These are all the functions necessary to implement POSIX clocks & timers
  */
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/sched/task.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/mutex.h>
+#include <linaos/sched/task.h>
 
-#include <linux/uaccess.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/compiler.h>
-#include <linux/hash.h>
-#include <linux/posix-clock.h>
-#include <linux/posix-timers.h>
-#include <linux/syscalls.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
-#include <linux/hashtable.h>
-#include <linux/compat.h>
-#include <linux/nospec.h>
-#include <linux/time_namespace.h>
+#include <linaos/uaccess.h>
+#include <linaos/list.h>
+#include <linaos/init.h>
+#include <linaos/compiler.h>
+#include <linaos/hash.h>
+#include <linaos/posix-clock.h>
+#include <linaos/posix-timers.h>
+#include <linaos/syscalls.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
+#include <linaos/export.h>
+#include <linaos/hashtable.h>
+#include <linaos/compat.h>
+#include <linaos/nospec.h>
+#include <linaos/time_namespace.h>
 
 #include "timekeeping.h"
 #include "posix-timers.h"

@@ -24,12 +24,12 @@
  *
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/slab.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/mfd/intel_soc_pmic.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pinctrl/machine.h>
+#include <linaos/slab.h>
 
 #include <asm/intel-mid.h>
 #include <asm/unaligned.h>

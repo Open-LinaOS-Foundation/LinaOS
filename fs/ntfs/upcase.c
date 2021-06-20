@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * upcase.c - Generate the full NTFS Unicode upcase table in little endian.
- *	      Part of the Linux-NTFS project.
+ *	      Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001 Richard Russon <ntfs@flatcap.org>
  * Copyright (c) 2001-2006 Anton Altaparmakov

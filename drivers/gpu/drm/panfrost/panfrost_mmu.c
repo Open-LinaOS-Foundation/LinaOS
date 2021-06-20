@@ -1,18 +1,18 @@
 // SPDX-License-Identifier:	GPL-2.0
 /* Copyright 2019 Linaro, Ltd, Rob Herring <robh@kernel.org> */
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/io-pgtable.h>
-#include <linux/iommu.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/shmem_fs.h>
-#include <linux/sizes.h>
+#include <linaos/atomic.h>
+#include <linaos/bitfield.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/io-pgtable.h>
+#include <linaos/iommu.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/sizes.h>
 
 #include "panfrost_device.h"
 #include "panfrost_mmu.h"

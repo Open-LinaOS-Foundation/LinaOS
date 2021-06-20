@@ -11,8 +11,8 @@
 #ifndef _CRYP_P_H_
 #define _CRYP_P_H_
 
-#include <linux/io.h>
-#include <linux/bitops.h>
+#include <linaos/io.h>
+#include <linaos/bitops.h>
 
 #include "cryp.h"
 #include "cryp_irqp.h"

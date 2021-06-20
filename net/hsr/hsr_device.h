@@ -10,7 +10,7 @@
 #ifndef __HSR_DEVICE_H
 #define __HSR_DEVICE_H
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include "hsr_main.h"
 
 void hsr_del_ports(struct hsr_priv *hsr);

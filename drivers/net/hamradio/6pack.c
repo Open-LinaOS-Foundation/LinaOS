@@ -5,7 +5,7 @@
  *		kernel's AX.25 protocol layers.
  *
  * Authors:	Andreas Könsgen <ajk@comnets.uni-bremen.de>
- *              Ralf Baechle DL5RB <ralf@linux-mips.org>
+ *              Ralf Baechle DL5RB <ralf@linaos-mips.org>
  *
  * Quite a lot of stuff "stolen" by Joerg Reuter from slip.c, written by
  *
@@ -13,29 +13,29 @@
  *		Fred N. van Kempen, <waltje@uwalt.nl.mugnet.org>
  */
 
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/bitops.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/in.h>
+#include <linaos/tty.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
 #include <net/ax25.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/spinlock.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/semaphore.h>
-#include <linux/refcount.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/spinlock.h>
+#include <linaos/if_arp.h>
+#include <linaos/init.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/semaphore.h>
+#include <linaos/refcount.h>
 
 #define SIXPACK_VERSION    "Revision: 0.3.0"
 
@@ -963,7 +963,7 @@ sixpack_decode(struct sixpack *sp, const unsigned char *pre_rbuff, int count)
 	}
 }
 
-MODULE_AUTHOR("Ralf Baechle DO1GRB <ralf@linux-mips.org>");
+MODULE_AUTHOR("Ralf Baechle DO1GRB <ralf@linaos-mips.org>");
 MODULE_DESCRIPTION("6pack driver for AX.25");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS_LDISC(N_6PACK);

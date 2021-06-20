@@ -9,11 +9,11 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/of.h>
 
 #define GLOBAL_WORD_ID				0x00
 #define GEMINI_GLOBAL_ARB1_CTRL			0x2c

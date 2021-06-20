@@ -5,42 +5,42 @@
  * Copyright (C) 2008 Robert Jarzmik
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/gpio_keys.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/rtc.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/pda_power.h>
-#include <linux/power_supply.h>
-#include <linux/wm97xx.h>
-#include <linux/mtd/physmap.h>
-#include <linux/reboot.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/max1586.h>
-#include <linux/slab.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/input.h>
+#include <linaos/delay.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/rtc.h>
+#include <linaos/leds.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/pda_power.h>
+#include <linaos/power_supply.h>
+#include <linaos/wm97xx.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/reboot.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/max1586.h>
+#include <linaos/slab.h>
+#include <linaos/platform_data/i2c-pxa.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 
 #include "pxa27x.h"
 #include "regs-rtc.h"
-#include <linux/platform_data/keypad-pxa27x.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/mmc-pxamci.h>
 #include "udc.h"
 #include "pxa27x-udc.h"
-#include <linux/platform_data/media/camera-pxa.h>
+#include <linaos/platform_data/media/camera-pxa.h>
 #include <mach/audio.h>
 #include <mach/smemc.h>
 

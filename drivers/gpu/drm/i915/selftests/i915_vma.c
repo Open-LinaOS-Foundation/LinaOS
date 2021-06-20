@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/prime_numbers.h>
+#include <linaos/prime_numbers.h>
 
 #include "gem/i915_gem_context.h"
 #include "gem/selftests/mock_context.h"

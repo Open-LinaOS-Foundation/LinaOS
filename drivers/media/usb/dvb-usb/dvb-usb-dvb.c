@@ -5,7 +5,7 @@
  * see dvb-usb-init.c for copyright information.
  *
  * This file contains functions for initializing and handling the
- * linux-dvb API.
+ * linaos-dvb API.
  */
 #include "dvb-usb-common.h"
 #include <media/media-device.h>

@@ -27,11 +27,11 @@
  * - Run application using a midi device (eg. /dev/snd/midiC1D0)
  */
 
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/wait.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/seq_kernel.h>
 #include <sound/seq_virmidi.h>

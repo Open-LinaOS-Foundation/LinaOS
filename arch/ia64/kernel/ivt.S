@@ -17,8 +17,8 @@
  * Copyright (C) 2005 Hewlett-Packard Co
  *	Dan Magenheimer <dan.magenheimer@hp.com>
  *      Xen paravirtualization
- * Copyright (c) 2008 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2008 Isaku Yamahata <yamahata at valinaos co jp>
+ *                    VA LinaOS Systems Japan K.K.
  *                    pv_ops.
  *      Yaozu (Eddie) Dong <eddie.dong@intel.com>
  */
@@ -48,7 +48,7 @@
  */
 
 
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm/asmmacro.h>
 #include <asm/break.h>
 #include <asm/kregs.h>
@@ -1109,7 +1109,7 @@ ENTRY(page_not_present)
 	MOV_FROM_IFA(r16)
 	RSM_PSR_DT
 	/*
-	 * The Linux page fault handler doesn't expect non-present pages to be in
+	 * The LinaOS page fault handler doesn't expect non-present pages to be in
 	 * the TLB.  Flush the existing entry now, so we meet that expectation.
 	 */
 	mov r17=PAGE_SHIFT<<2

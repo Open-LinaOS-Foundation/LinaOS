@@ -8,13 +8,13 @@
  */
 
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
 #include <crypto/sm3.h>
 #include <crypto/sm3_base.h>
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 

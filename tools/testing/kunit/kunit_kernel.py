@@ -30,14 +30,14 @@ def get_file_path(build_dir, default):
 	return default
 
 class ConfigError(Exception):
-	"""Represents an error trying to configure the Linux kernel."""
+	"""Represents an error trying to configure the LinaOS kernel."""
 
 
 class BuildError(Exception):
-	"""Represents an error trying to build the Linux kernel."""
+	"""Represents an error trying to build the LinaOS kernel."""
 
 
-class LinuxSourceTreeOperations(object):
+class LinaOSSourceTreeOperations(object):
 	"""An abstraction over command line operations performed on a source tree."""
 
 	def make_mrproper(self) -> None:
@@ -101,12 +101,12 @@ class LinuxSourceTreeOperations(object):
 		if stderr:  # likely only due to build warnings
 			print(stderr.decode())
 
-	def linux_bin(self, params, timeout, build_dir) -> None:
-		"""Runs the Linux UML binary. Must be named 'linux'."""
-		linux_bin = get_file_path(build_dir, 'linux')
+	def linaos_bin(self, params, timeout, build_dir) -> None:
+		"""Runs the LinaOS UML binary. Must be named 'linaos'."""
+		linaos_bin = get_file_path(build_dir, 'linaos')
 		outfile = get_outfile_path(build_dir)
 		with open(outfile, 'w') as output:
-			process = subprocess.Popen([linux_bin] + params,
+			process = subprocess.Popen([linaos_bin] + params,
 						   stdout=output,
 						   stderr=subprocess.STDOUT)
 			process.wait(timeout)
@@ -120,13 +120,13 @@ def get_kunitconfig_path(build_dir) -> str:
 def get_outfile_path(build_dir) -> str:
 	return get_file_path(build_dir, OUTFILE_PATH)
 
-class LinuxSourceTree(object):
-	"""Represents a Linux kernel source tree with KUnit tests."""
+class LinaOSSourceTree(object):
+	"""Represents a LinaOS kernel source tree with KUnit tests."""
 
 	def __init__(self, build_dir: str, load_config=True, kunitconfig_path='') -> None:
 		signal.signal(signal.SIGINT, self.signal_handler)
 
-		self._ops = LinuxSourceTreeOperations()
+		self._ops = LinaOSSourceTreeOperations()
 
 		if not load_config:
 			return
@@ -211,7 +211,7 @@ class LinuxSourceTree(object):
 		args.extend(['mem=1G', 'console=tty'])
 		if filter_glob:
 			args.append('kunit.filter_glob='+filter_glob)
-		self._ops.linux_bin(args, timeout, build_dir)
+		self._ops.linaos_bin(args, timeout, build_dir)
 		outfile = get_outfile_path(build_dir)
 		subprocess.call(['stty', 'sane'])
 		with open(outfile, 'r') as file:

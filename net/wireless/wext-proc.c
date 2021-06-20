@@ -4,7 +4,7 @@
  * Authors :	Jean Tourrilhes - HPL - <jt@hpl.hp.com>
  * Copyright (c) 1997-2007 Jean Tourrilhes, All Rights Reserved.
  *
- * (As all part of the Linux kernel, this file is GPL)
+ * (As all part of the LinaOS kernel, this file is GPL)
  */
 
 /*
@@ -16,12 +16,12 @@
  * The content of the file is basically the content of "struct iw_statistics".
  */
 
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
+#include <linaos/module.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/wireless.h>
+#include <linaos/netdevice.h>
+#include <linaos/rtnetlink.h>
 #include <net/iw_handler.h>
 #include <net/wext.h>
 

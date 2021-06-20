@@ -11,7 +11,7 @@
 #ifndef __AA_FILE_H
 #define __AA_FILE_H
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 #include "domain.h"
 #include "match.h"

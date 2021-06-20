@@ -2,17 +2,17 @@
 /* 
  *    EISA "eeprom" support routines
  *
- *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-linux.org>
+ *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-linaos.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/miscdevice.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/eisa_eeprom.h>
 
 #define 	EISA_EEPROM_MINOR 241

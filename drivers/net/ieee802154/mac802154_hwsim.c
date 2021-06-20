@@ -11,13 +11,13 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/platform_device.h>
-#include <linux/rtnetlink.h>
-#include <linux/netdevice.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/timer.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/netdevice.h>
+#include <linaos/device.h>
+#include <linaos/spinlock.h>
 #include <net/mac802154.h>
 #include <net/cfg802154.h>
 #include <net/genetlink.h>

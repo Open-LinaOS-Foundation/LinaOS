@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Linux on zSeries Channel Measurement Facility support
+ * LinaOS on zSeries Channel Measurement Facility support
  *
  * Copyright IBM Corp. 2000, 2006
  *
@@ -13,14 +13,14 @@
 #define KMSG_COMPONENT "cio"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/memblock.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/timex.h>	/* get_tod_clock() */
+#include <linaos/memblock.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/export.h>
+#include <linaos/moduleparam.h>
+#include <linaos/slab.h>
+#include <linaos/timex.h>	/* get_tod_clock() */
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>

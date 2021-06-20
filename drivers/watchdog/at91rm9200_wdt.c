@@ -8,26 +8,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/atmel-st.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mfd/syscon/atmel-st.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/platform_device.h>
+#include <linaos/reboot.h>
+#include <linaos/regmap.h>
+#include <linaos/types.h>
+#include <linaos/watchdog.h>
+#include <linaos/uaccess.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 #define WDT_DEFAULT_TIME	5	/* seconds */
 #define WDT_MAX_TIME		256	/* seconds */

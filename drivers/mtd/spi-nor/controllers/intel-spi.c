@@ -3,18 +3,18 @@
  * Intel PCH/PCU SPI flash driver.
  *
  * Copyright (C) 2016, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sizes.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/spi-nor.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/sizes.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/spi-nor.h>
 
 #include "intel-spi.h"
 
@@ -964,5 +964,5 @@ int intel_spi_remove(struct intel_spi *ispi)
 EXPORT_SYMBOL_GPL(intel_spi_remove);
 
 MODULE_DESCRIPTION("Intel PCH/PCU SPI flash core driver");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linaos.intel.com>");
 MODULE_LICENSE("GPL v2");

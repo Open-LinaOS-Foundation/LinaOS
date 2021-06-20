@@ -9,14 +9,14 @@
  * Copyright (C) 2008, Guennadi Liakhovetski <kernel@pengutronix.de>
  */
 
-#include <linux/clk.h>
-#include <linux/i2c.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-mediabus.h>
+#include <linaos/clk.h>
+#include <linaos/i2c.h>
+#include <linaos/log2.h>
+#include <linaos/module.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
+#include <linaos/v4l2-mediabus.h>
 
 #include <media/i2c/mt9t001.h>
 #include <media/v4l2-ctrls.h>

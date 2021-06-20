@@ -7,8 +7,8 @@
  */
 
 #include <crypto/aes.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
+#include <linaos/crypto.h>
+#include <linaos/module.h>
 
 asmlinkage void __aes_arm_encrypt(u32 *rk, int rounds, const u8 *in, u8 *out);
 asmlinkage void __aes_arm_decrypt(u32 *rk, int rounds, const u8 *in, u8 *out);

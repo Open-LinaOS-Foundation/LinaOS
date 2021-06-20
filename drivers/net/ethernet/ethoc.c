@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/net/ethernet/ethoc.c
+ * linaos/drivers/net/ethernet/ethoc.c
  *
  * Copyright (C) 2007-2008 Avionic Design Development GmbH
  * Copyright (C) 2008-2009 Avionic Design GmbH
@@ -8,20 +8,20 @@
  * Written by Thierry Reding <thierry.reding@avionic-design.de>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/clk.h>
-#include <linux/crc32.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/etherdevice.h>
+#include <linaos/clk.h>
+#include <linaos/crc32.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mii.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_net.h>
+#include <linaos/module.h>
 #include <net/ethoc.h>
 
 static int buffer_size = 0x8000; /* 32 KBytes */

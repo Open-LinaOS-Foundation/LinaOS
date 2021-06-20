@@ -5,28 +5,28 @@
  * Copyright (c) 2016 Tom Herbert <tom@herbertland.com>
  */
 
-#include <linux/bpf.h>
-#include <linux/errno.h>
-#include <linux/errqueue.h>
-#include <linux/file.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/poll.h>
-#include <linux/rculist.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
-#include <linux/syscalls.h>
-#include <linux/sched/signal.h>
+#include <linaos/bpf.h>
+#include <linaos/errno.h>
+#include <linaos/errqueue.h>
+#include <linaos/file.h>
+#include <linaos/in.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/net.h>
+#include <linaos/netdevice.h>
+#include <linaos/poll.h>
+#include <linaos/rculist.h>
+#include <linaos/skbuff.h>
+#include <linaos/socket.h>
+#include <linaos/uaccess.h>
+#include <linaos/workqueue.h>
+#include <linaos/syscalls.h>
+#include <linaos/sched/signal.h>
 
 #include <net/kcm.h>
 #include <net/netns/generic.h>
 #include <net/sock.h>
-#include <uapi/linux/kcm.h>
+#include <uapi/linaos/kcm.h>
 
 unsigned int kcm_net_id;
 

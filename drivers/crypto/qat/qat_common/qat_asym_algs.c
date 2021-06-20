@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: (BSD-3-Clause OR GPL-2.0-only)
 /* Copyright(c) 2014 - 2020 Intel Corporation */
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <crypto/internal/rsa.h>
 #include <crypto/internal/akcipher.h>
 #include <crypto/akcipher.h>
 #include <crypto/kpp.h>
 #include <crypto/internal/kpp.h>
 #include <crypto/dh.h>
-#include <linux/dma-mapping.h>
-#include <linux/fips.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/fips.h>
 #include <crypto/scatterwalk.h>
 #include "icp_qat_fw_pke.h"
 #include "adf_accel_devices.h"

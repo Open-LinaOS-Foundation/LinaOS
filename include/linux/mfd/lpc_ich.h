@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/mfd/lpc_ich.h
+ *  linaos/drivers/mfd/lpc_ich.h
  *
  *  Copyright (c) 2012 Extreme Engineering Solution, Inc.
  *  Author: Aaron Sierra <asierra@xes-inc.com>
@@ -8,7 +8,7 @@
 #ifndef LPC_ICH_H
 #define LPC_ICH_H
 
-#include <linux/platform_data/x86/intel-spi.h>
+#include <linaos/platform_data/x86/intel-spi.h>
 
 /* GPIO resources */
 #define ICH_RES_GPIO	0

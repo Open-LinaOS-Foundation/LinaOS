@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/ptrace.h>
-#include <linux/regset.h>
-#include <linux/tracehook.h>
-#include <linux/elf.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/ptrace.h>
+#include <linaos/regset.h>
+#include <linaos/tracehook.h>
+#include <linaos/elf.h>
+#include <linaos/sched/task_stack.h>
 
 enum nds32_regset {
 	REGSET_GPR,

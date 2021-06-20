@@ -50,24 +50,24 @@
 		camera_focus {
 			label = "Camera Focus";
 			gpios = <&tlmm 64 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_CAMERA_FOCUS>;
+			linaos,input-type = <1>;
+			linaos,code = <KEY_CAMERA_FOCUS>;
 			debounce-interval = <15>;
 		};
 
 		camera_snapshot {
 			label = "Camera Snapshot";
 			gpios = <&tlmm 113 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_CAMERA>;
+			linaos,input-type = <1>;
+			linaos,code = <KEY_CAMERA>;
 			debounce-interval = <15>;
 		};
 
 		vol_down {
 			label = "Volume Down";
 			gpios = <&pm660l_gpios 7 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,input-type = <1>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			gpio-key,wakeup;
 			debounce-interval = <15>;
 		};

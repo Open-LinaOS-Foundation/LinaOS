@@ -7,7 +7,7 @@
  * Copyright (c) 2003 by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include <sound/core.h>
 #include <sound/asoundef.h>
 #include "pdaudiocf.h"

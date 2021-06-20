@@ -8,7 +8,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,7 +33,7 @@
 #ifndef __LINUX_XEN_XENBUS_DEV_H__
 #define __LINUX_XEN_XENBUS_DEV_H__
 
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 
 #define IOCTL_XENBUS_BACKEND_EVTCHN			\
 	_IOC(_IOC_NONE, 'B', 0, 0)

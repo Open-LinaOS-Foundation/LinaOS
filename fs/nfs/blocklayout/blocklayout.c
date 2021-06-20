@@ -1,5 +1,5 @@
 /*
- *  linux/fs/nfs/blocklayout/blocklayout.c
+ *  linaos/fs/nfs/blocklayout/blocklayout.c
  *
  *  Module for the NFSv4.1 pNFS block layout driver.
  *
@@ -30,13 +30,13 @@
  * possibility of such damages.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/bio.h>		/* struct bio */
-#include <linux/prefetch.h>
-#include <linux/pagevec.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/bio.h>		/* struct bio */
+#include <linaos/prefetch.h>
+#include <linaos/pagevec.h>
 
 #include "../pnfs.h"
 #include "../nfs4session.h"

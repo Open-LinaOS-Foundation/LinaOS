@@ -5,10 +5,10 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/iopoll.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/iopoll.h>
+#include <linaos/slab.h>
 
 #include "ccu_common.h"
 #include "ccu_gate.h"

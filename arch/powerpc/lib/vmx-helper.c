@@ -3,11 +3,11 @@
  *
  * Copyright (C) IBM Corporation, 2011
  *
- * Authors: Sukadev Bhattiprolu <sukadev@linux.vnet.ibm.com>
+ * Authors: Sukadev Bhattiprolu <sukadev@linaos.vnet.ibm.com>
  *          Anton Blanchard <anton@au.ibm.com>
  */
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
+#include <linaos/uaccess.h>
+#include <linaos/hardirq.h>
 #include <asm/switch_to.h>
 #include <asm/asm-prototypes.h>
 

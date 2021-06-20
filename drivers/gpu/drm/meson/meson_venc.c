@@ -5,7 +5,7 @@
  * Copyright (C) 2015 Amlogic, Inc. All rights reserved.
  */
 
-#include <linux/export.h>
+#include <linaos/export.h>
 
 #include <drm/drm_modes.h>
 

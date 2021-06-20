@@ -11,7 +11,7 @@
 #include <asm/errno.h>
 #include <asm/unistd.h>
 #include <asm/vdso/cp15.h>
-#include <uapi/linux/time.h>
+#include <uapi/linaos/time.h>
 
 #define VDSO_HAS_CLOCK_GETRES		1
 

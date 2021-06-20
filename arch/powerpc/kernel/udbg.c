@@ -6,10 +6,10 @@
  */
 
 #include <stdarg.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/console.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
 #include <asm/processor.h>
 #include <asm/udbg.h>
 

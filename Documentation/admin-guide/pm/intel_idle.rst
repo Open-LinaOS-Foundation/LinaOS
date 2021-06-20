@@ -14,7 +14,7 @@ General Information
 ===================
 
 ``intel_idle`` is a part of the
-:doc:`CPU idle time management subsystem <cpuidle>` in the Linux kernel
+:doc:`CPU idle time management subsystem <cpuidle>` in the LinaOS kernel
 (``CPUIdle``).  It is the default CPU idle time management driver for the
 Nehalem and later generations of Intel processors, but the level of support for
 a particular processor model in it depends on whether or not it recognizes that

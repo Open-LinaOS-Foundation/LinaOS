@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/ftrace.h>
+#include <linaos/module.h>
+#include <linaos/ptrace.h>
+#include <linaos/sched.h>
+#include <linaos/ftrace.h>
 #include <asm/siginfo.h>
 #include <asm/signal.h>
 #include <asm/unistd.h>

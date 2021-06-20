@@ -33,9 +33,9 @@
 #ifndef _CORE_PRIV_H
 #define _CORE_PRIV_H
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/cgroup_rdma.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/cgroup_rdma.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 

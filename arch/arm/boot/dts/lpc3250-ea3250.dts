@@ -23,61 +23,61 @@
 
 		button {
 			label = "Interrupt Key";
-			linux,code = <103>;
+			linaos,code = <103>;
 			gpios = <&gpio 4 1 0>; /* GPI_P3 1 */
 		};
 
 		key1 {
 			label = "KEY1";
-			linux,code = <1>;
+			linaos,code = <1>;
 			gpios = <&pca9532 0 0>;
 		};
 
 		key2 {
 			label = "KEY2";
-			linux,code = <2>;
+			linaos,code = <2>;
 			gpios = <&pca9532 1 0>;
 		};
 
 		key3 {
 			label = "KEY3";
-			linux,code = <3>;
+			linaos,code = <3>;
 			gpios = <&pca9532 2 0>;
 		};
 
 		key4 {
 			label = "KEY4";
-			linux,code = <4>;
+			linaos,code = <4>;
 			gpios = <&pca9532 3 0>;
 		};
 
 		joy0 {
 			label = "Joystick Key 0";
-			linux,code = <10>;
+			linaos,code = <10>;
 			gpios = <&gpio 2 0 0>; /* P2.0 */
 		};
 
 		joy1 {
 			label = "Joystick Key 1";
-			linux,code = <11>;
+			linaos,code = <11>;
 			gpios = <&gpio 2 1 0>; /* P2.1 */
 		};
 
 		joy2 {
 			label = "Joystick Key 2";
-			linux,code = <12>;
+			linaos,code = <12>;
 			gpios = <&gpio 2 2 0>; /* P2.2 */
 		};
 
 		joy3 {
 			label = "Joystick Key 3";
-			linux,code = <13>;
+			linaos,code = <13>;
 			gpios = <&gpio 2 3 0>; /* P2.3 */
 		};
 
 		joy4 {
 			label = "Joystick Key 4";
-			linux,code = <14>;
+			linaos,code = <14>;
 			gpios = <&gpio 2 4 0>; /* P2.4 */
 		};
 	};
@@ -89,7 +89,7 @@
 
 		led1 {
 			gpios = <&gpio 5 14 1>; /* GPO_P3 14, GPIO 93, active low */
-			linux,default-trigger = "timer";
+			linaos,default-trigger = "timer";
 			default-state = "off";
 		};
 

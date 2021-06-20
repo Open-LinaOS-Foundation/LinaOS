@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
 
 static u64 patterns[] __initdata = {
 	/* The first entry has to be 0 to leave memtest with zeroed memory */

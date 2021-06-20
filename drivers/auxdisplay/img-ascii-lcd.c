@@ -5,16 +5,16 @@
  */
 
 #include <generated/utsrelease.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
 
 struct img_ascii_lcd_ctx;
 
@@ -394,7 +394,7 @@ static int img_ascii_lcd_probe(struct platform_device *pdev)
 	platform_set_drvdata(pdev, ctx);
 
 	/* display a default message */
-	err = img_ascii_lcd_display(ctx, "Linux " UTS_RELEASE "       ", -1);
+	err = img_ascii_lcd_display(ctx, "LinaOS " UTS_RELEASE "       ", -1);
 	if (err)
 		goto out_del_timer;
 

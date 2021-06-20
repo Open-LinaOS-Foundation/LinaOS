@@ -2,8 +2,8 @@
 #if !defined(_TRACE_PWC_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_PWC_H
 
-#include <linux/usb.h>
-#include <linux/tracepoint.h>
+#include <linaos/usb.h>
+#include <linaos/tracepoint.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM pwc

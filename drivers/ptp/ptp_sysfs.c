@@ -4,8 +4,8 @@
  *
  * Copyright (C) 2010 OMICRON electronics GmbH
  */
-#include <linux/capability.h>
-#include <linux/slab.h>
+#include <linaos/capability.h>
+#include <linaos/slab.h>
 
 #include "ptp_private.h"
 

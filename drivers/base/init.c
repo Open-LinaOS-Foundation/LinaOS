@@ -4,10 +4,10 @@
  * Copyright (c) 2002-3 Open Source Development Labs
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/memory.h>
-#include <linux/of.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/memory.h>
+#include <linaos/of.h>
 
 #include "base.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
 #include <asm/pci_x86.h>
 #include <asm/x86_init.h>
 #include <asm/irqdomain.h>

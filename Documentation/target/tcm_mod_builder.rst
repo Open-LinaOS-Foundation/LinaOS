@@ -146,4 +146,4 @@ Future TODO items
 
 October 5th, 2010
 
-Nicholas A. Bellinger <nab@linux-iscsi.org>
+Nicholas A. Bellinger <nab@linaos-iscsi.org>

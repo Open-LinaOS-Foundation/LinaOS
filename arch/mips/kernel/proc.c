@@ -4,10 +4,10 @@
  *  Copyright (C) 2001, 2004  MIPS Technologies, Inc.
  *  Copyright (C) 2004	Maciej W. Rozycki
  */
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
 #include <asm/bootinfo.h>
 #include <asm/cpu.h>
 #include <asm/cpu-features.h>

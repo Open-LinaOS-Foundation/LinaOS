@@ -8,11 +8,11 @@
  * we don't need to implement a brightness_get() method.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/platform_data/wilco-ec.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/leds.h>
+#include <linaos/platform_data/wilco-ec.h>
+#include <linaos/slab.h>
 
 #define WILCO_EC_COMMAND_KBBL		0x75
 #define WILCO_KBBL_MODE_FLAG_PWM	BIT(1)	/* Set brightness by percent. */

@@ -6,9 +6,9 @@
  *    Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com),
  */
 
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/keyboard.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/keyboard.h>
 
 #define NR_FN_HANDLER	20
 

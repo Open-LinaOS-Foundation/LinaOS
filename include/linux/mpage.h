@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/mpage.h
+ * include/linaos/mpage.h
  *
  * Contains declarations related to preparing and submitting BIOS which contain
  * multiple pagecache pages.

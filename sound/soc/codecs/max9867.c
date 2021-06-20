@@ -3,13 +3,13 @@
 // MAX9867 ALSA SoC codec driver
 //
 // Copyright 2013-2015 Maxim Integrated Products
-// Copyright 2018 Ladislav Michl <ladis@linux-mips.org>
+// Copyright 2018 Ladislav Michl <ladis@linaos-mips.org>
 //
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
@@ -668,6 +668,6 @@ static struct i2c_driver max9867_i2c_driver = {
 
 module_i2c_driver(max9867_i2c_driver);
 
-MODULE_AUTHOR("Ladislav Michl <ladis@linux-mips.org>");
+MODULE_AUTHOR("Ladislav Michl <ladis@linaos-mips.org>");
 MODULE_DESCRIPTION("ASoC MAX9867 driver");
 MODULE_LICENSE("GPL");

@@ -15,15 +15,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/vmalloc.h>
-#include <linux/raspberrypi/vchiq.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/completion.h>
+#include <linaos/vmalloc.h>
+#include <linaos/raspberrypi/vchiq.h>
 #include <media/videobuf2-vmalloc.h>
 
 #include "mmal-common.h"

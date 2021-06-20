@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/types.h>
-#include <linux/kconfig.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/security.h>
-#include <linux/highmem.h>
-#include <linux/umh.h>
-#include <linux/sysctl.h>
+#include <linaos/types.h>
+#include <linaos/kconfig.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/security.h>
+#include <linaos/highmem.h>
+#include <linaos/umh.h>
+#include <linaos/sysctl.h>
 
 #include "fallback.h"
 #include "firmware.h"

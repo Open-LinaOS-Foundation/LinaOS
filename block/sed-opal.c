@@ -9,17 +9,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":OPAL: " fmt
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/genhd.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/sed-opal.h>
-#include <linux/sed-opal.h>
-#include <linux/string.h>
-#include <linux/kdev_t.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/genhd.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <uapi/linaos/sed-opal.h>
+#include <linaos/sed-opal.h>
+#include <linaos/string.h>
+#include <linaos/kdev_t.h>
 
 #include "opal_proto.h"
 

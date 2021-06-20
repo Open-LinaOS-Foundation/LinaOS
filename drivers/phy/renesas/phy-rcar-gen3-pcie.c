@@ -5,14 +5,14 @@
  * Copyright (C) 2018 Cogent Embedded, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/phy/phy.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
 
 #define PHY_CTRL		0x4000		/* R8A77980 only */
 

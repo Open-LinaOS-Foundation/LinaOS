@@ -5,16 +5,16 @@
 //
 // Exynos - CPU PMU(Power Management Unit) support
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
 
-#include <linux/soc/samsung/exynos-regs-pmu.h>
-#include <linux/soc/samsung/exynos-pmu.h>
+#include <linaos/soc/samsung/exynos-regs-pmu.h>
+#include <linaos/soc/samsung/exynos-pmu.h>
 
 #include "exynos-pmu.h"
 

@@ -51,7 +51,7 @@ Board Support
 Platform Data
 -------------
 
-  See include/linux/platform_data/usb-ohci-s3c2410.h for the
+  See include/linaos/platform_data/usb-ohci-s3c2410.h for the
   descriptions of the platform device data. An implementation
   can be found in arch/arm/mach-s3c/simtec-usb.c .
 

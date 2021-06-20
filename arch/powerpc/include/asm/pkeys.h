@@ -8,7 +8,7 @@
 #ifndef _ASM_POWERPC_KEYS_H
 #define _ASM_POWERPC_KEYS_H
 
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 #include <asm/firmware.h>
 
 extern int num_pkey;

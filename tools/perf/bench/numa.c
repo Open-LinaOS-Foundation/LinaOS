@@ -29,10 +29,10 @@
 #include <sys/wait.h>
 #include <sys/prctl.h>
 #include <sys/types.h>
-#include <linux/kernel.h>
-#include <linux/time64.h>
-#include <linux/numa.h>
-#include <linux/zalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/time64.h>
+#include <linaos/numa.h>
+#include <linaos/zalloc.h>
 
 #include <numa.h>
 #include <numaif.h>

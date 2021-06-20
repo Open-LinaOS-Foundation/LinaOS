@@ -8,10 +8,10 @@
 #ifndef __PMC_H_
 #define __PMC_H_
 
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/regmap.h>
-#include <linux/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/irqdomain.h>
+#include <linaos/regmap.h>
+#include <linaos/spinlock.h>
 
 extern spinlock_t pmc_pcr_lock;
 

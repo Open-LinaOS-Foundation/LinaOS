@@ -6,9 +6,9 @@
  *	Dave Gerlach, Vaibhav Bedia
  */
 
-#include <linux/linkage.h>
-#include <linux/platform_data/pm33xx.h>
-#include <linux/ti-emif-sram.h>
+#include <linaos/linkage.h>
+#include <linaos/platform_data/pm33xx.h>
+#include <linaos/ti-emif-sram.h>
 #include <asm/assembler.h>
 #include <asm/memory.h>
 
@@ -20,7 +20,7 @@
 #define AM33XX_CM_CLKCTRL_MODULEMODE_DISABLE			0x0003
 #define AM33XX_CM_CLKCTRL_MODULEMODE_ENABLE			0x0002
 
-/* replicated define because linux/bitops.h cannot be included in assembly */
+/* replicated define because linaos/bitops.h cannot be included in assembly */
 #define BIT(nr)			(1 << (nr))
 
 	.arm

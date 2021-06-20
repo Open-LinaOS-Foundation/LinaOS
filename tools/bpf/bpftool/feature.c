@@ -12,8 +12,8 @@
 #include <sys/utsname.h>
 #include <sys/vfs.h>
 
-#include <linux/filter.h>
-#include <linux/limits.h>
+#include <linaos/filter.h>
+#include <linaos/limits.h>
 
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>

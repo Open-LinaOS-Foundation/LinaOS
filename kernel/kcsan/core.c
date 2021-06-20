@@ -7,18 +7,18 @@
 
 #define pr_fmt(fmt) "kcsan: " fmt
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
-#include <linux/percpu.h>
-#include <linux/preempt.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <linaos/atomic.h>
+#include <linaos/bug.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/moduleparam.h>
+#include <linaos/percpu.h>
+#include <linaos/preempt.h>
+#include <linaos/sched.h>
+#include <linaos/uaccess.h>
 
 #include "atomic.h"
 #include "encoding.h"
@@ -693,7 +693,7 @@ void kcsan_nestable_atomic_begin(void)
 	/*
 	 * Do *not* check and warn if we are in a flat atomic region: nestable
 	 * and flat atomic regions are independent from each other.
-	 * See include/linux/kcsan.h: struct kcsan_ctx comments for more
+	 * See include/linaos/kcsan.h: struct kcsan_ctx comments for more
 	 * comments.
 	 */
 

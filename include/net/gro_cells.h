@@ -2,9 +2,9 @@
 #ifndef _NET_GRO_CELLS_H
 #define _NET_GRO_CELLS_H
 
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
 
 struct gro_cell;
 

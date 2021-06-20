@@ -4,21 +4,21 @@
  * Copyright 2012 Linaro Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/clk/mxs.h>
-#include <linux/clkdev.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/irqchip/mxs.h>
-#include <linux/reboot.h>
-#include <linux/micrel_phy.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/sys_soc.h>
+#include <linaos/clk.h>
+#include <linaos/clk/mxs.h>
+#include <linaos/clkdev.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/init.h>
+#include <linaos/irqchip/mxs.h>
+#include <linaos/reboot.h>
+#include <linaos/micrel_phy.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/phy.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/sys_soc.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/mach/time.h>

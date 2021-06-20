@@ -7,7 +7,7 @@
  *
  * Based on vexpress, Copyright (C) 2002 ARM Ltd, All Rights Reserved
  */
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>
 #include "common.h"

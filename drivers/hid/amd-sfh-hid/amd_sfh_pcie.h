@@ -9,7 +9,7 @@
 #ifndef PCIE_MP2_AMD_H
 #define PCIE_MP2_AMD_H
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #define PCI_DEVICE_ID_AMD_MP2	0x15E4
 

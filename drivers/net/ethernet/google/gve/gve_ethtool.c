@@ -4,8 +4,8 @@
  * Copyright (C) 2015-2019 Google, Inc.
  */
 
-#include <linux/ethtool.h>
-#include <linux/rtnetlink.h>
+#include <linaos/ethtool.h>
+#include <linaos/rtnetlink.h>
 #include "gve.h"
 #include "gve_adminq.h"
 

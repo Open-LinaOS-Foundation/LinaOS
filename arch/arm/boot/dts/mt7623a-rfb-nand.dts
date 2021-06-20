@@ -47,13 +47,13 @@
 
 		factory {
 			label = "factory";
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			gpios = <&pio 256 GPIO_ACTIVE_LOW>;
 		};
 
 		wps {
 			label = "wps";
-			linux,code = <KEY_WPS_BUTTON>;
+			linaos,code = <KEY_WPS_BUTTON>;
 			gpios = <&pio 257 GPIO_ACTIVE_HIGH>;
 		};
 	};

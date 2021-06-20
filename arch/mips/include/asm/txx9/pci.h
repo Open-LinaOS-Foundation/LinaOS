@@ -6,7 +6,7 @@
 #ifndef __ASM_TXX9_PCI_H
 #define __ASM_TXX9_PCI_H
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 extern struct pci_controller txx9_primary_pcic;
 struct pci_controller *

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/core_lca.c
+ *	linaos/arch/alpha/kernel/core_lca.c
  *
  * Written by David Mosberger (davidm@cs.arizona.edu) with some code
  * taken from Dave Rusling's (david.rusling@reo.mts.dec.com) 32-bit
@@ -14,10 +14,10 @@
 #include <asm/core_lca.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/tty.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/tty.h>
 
 #include <asm/ptrace.h>
 #include <asm/irq_regs.h>

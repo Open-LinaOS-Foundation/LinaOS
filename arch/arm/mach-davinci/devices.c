@@ -5,14 +5,14 @@
  * DaVinci platform device setup/initialization
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/i2c-davinci.h>
-#include <linux/platform_data/mmc-davinci.h>
-#include <linux/platform_data/edma.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/reboot.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/i2c-davinci.h>
+#include <linaos/platform_data/mmc-davinci.h>
+#include <linaos/platform_data/edma.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/reboot.h>
 
 #include <mach/hardware.h>
 #include <mach/cputype.h>

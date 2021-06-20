@@ -108,10 +108,10 @@
  * allowed -- SouthBridge, JP4, JP5, JP6
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
 #include <asm/io.h>
 #include <asm/mipsregs.h>
 #include <asm/txx9/generic.h>

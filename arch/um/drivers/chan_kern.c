@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{linux.intel,addtoit}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{linaos.intel,addtoit}.com)
  */
 
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
 #include "chan.h"
 #include <os.h>
 #include <irq_kern.h>

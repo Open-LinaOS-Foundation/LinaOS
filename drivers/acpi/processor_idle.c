@@ -4,7 +4,7 @@
  *
  *  Copyright (C) 2001, 2002 Andy Grover <andrew.grover@intel.com>
  *  Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
- *  Copyright (C) 2004, 2005 Dominik Brodowski <linux@brodo.de>
+ *  Copyright (C) 2004, 2005 Dominik Brodowski <linaos@brodo.de>
  *  Copyright (C) 2004  Anil S Keshavamurthy <anil.s.keshavamurthy@intel.com>
  *  			- Added processor hotplug support
  *  Copyright (C) 2005  Venkatesh Pallipadi <venkatesh.pallipadi@intel.com>
@@ -12,18 +12,18 @@
  */
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/sched.h>       /* need_resched() */
-#include <linux/tick.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
+#include <linaos/sched.h>       /* need_resched() */
+#include <linaos/tick.h>
+#include <linaos/cpuidle.h>
+#include <linaos/cpu.h>
 #include <acpi/processor.h>
 
 /*
  * Include the apic definitions for x86 to have the APIC timer related defines
- * available also for UP (on SMP it gets magically included via linux/smp.h).
+ * available also for UP (on SMP it gets magically included via linaos/smp.h).
  * asm/acpi.h is not an option, as it would require more include magic. Also
  * creating an empty asm-ia64/apic.h would just trade pest vs. cholera.
  */

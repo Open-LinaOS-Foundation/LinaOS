@@ -144,7 +144,7 @@
  *
  * CPU_BOOT_DEV_STS0_SRAM_SCR_EN	SRAM scrambler enabled.
  *					FW initialized SRAM scrambler.
- *					Initialized in: linux
+ *					Initialized in: linaos
  *
  * CPU_BOOT_DEV_STS0_DRAM_SCR_EN	DRAM scrambler enabled.
  *					FW initialized DRAM scrambler.
@@ -155,10 +155,10 @@
  *					implemented. This means that FW will
  *					perform hard reset procedure on
  *					receiving the halt-machine event.
- *					Initialized in: preboot, u-boot, linux
+ *					Initialized in: preboot, u-boot, linaos
  *
  * CPU_BOOT_DEV_STS0_PLL_INFO_EN	FW retrieval of PLL info is enabled.
- *					Initialized in: linux
+ *					Initialized in: linaos
  *
  * CPU_BOOT_DEV_STS0_SP_SRAM_EN		SP SRAM is initialized and available
  *					for use.
@@ -170,11 +170,11 @@
  *
  * CPU_BOOT_DEV_STS0_HBM_ECC_EN		HBM ECC handling Enabled.
  *					FW handles HBM ECC indications.
- *					Initialized in: linux
+ *					Initialized in: linaos
  *
  * CPU_BOOT_DEV_STS0_PKT_PI_ACK_EN	Packets ack value used in the armcpd
  *					is set to the PI counter.
- *					Initialized in: linux
+ *					Initialized in: linaos
  *
  * CPU_BOOT_DEV_STS0_FW_LD_COM_EN	Flexible FW loading communication
  *					protocol is enabled.
@@ -188,7 +188,7 @@
  * CPU_BOOT_DEV_STS0_DYN_PLL_EN		Dynamic PLL configuration is enabled.
  *					FW sends to host a bitmap of supported
  *					PLLs.
- *					Initialized in: linux
+ *					Initialized in: linaos
  *
  * CPU_BOOT_DEV_STS0_ENABLED		Device status register enabled.
  *					This is a main indication that the

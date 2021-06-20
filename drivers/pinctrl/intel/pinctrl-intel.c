@@ -3,23 +3,23 @@
  * Intel pinctrl/GPIO core driver.
  *
  * Copyright (C) 2015, Intel Corporation
- * Authors: Mathias Nyman <mathias.nyman@linux.intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Mathias Nyman <mathias.nyman@linaos.intel.com>
+ *          Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/time.h>
+#include <linaos/acpi.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/log2.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/time.h>
 
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
 
 #include "../core.h"
 #include "pinctrl-intel.h"
@@ -1822,7 +1822,7 @@ int intel_pinctrl_resume_noirq(struct device *dev)
 EXPORT_SYMBOL_GPL(intel_pinctrl_resume_noirq);
 #endif
 
-MODULE_AUTHOR("Mathias Nyman <mathias.nyman@linux.intel.com>");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mathias Nyman <mathias.nyman@linaos.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linaos.intel.com>");
 MODULE_DESCRIPTION("Intel pinctrl/GPIO core driver");
 MODULE_LICENSE("GPL v2");

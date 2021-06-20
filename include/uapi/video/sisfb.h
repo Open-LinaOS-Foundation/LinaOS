@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * sisfb.h - definitions for the SiS framebuffer driver
  *
@@ -22,7 +22,7 @@
 #ifndef _UAPI_LINUX_SISFB_H_
 #define _UAPI_LINUX_SISFB_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/ioctl.h>
 
 /**********************************************/

@@ -5,8 +5,8 @@
  * Copyright (C) 2019 Pengutronix, Philipp Zabel
  */
 
-#include <linux/kernel.h>
-#include <linux/videodev2.h>
+#include <linaos/kernel.h>
+#include <linaos/videodev2.h>
 #include "coda.h"
 
 int coda_mpeg2_profile(int profile_idc)

@@ -4,10 +4,10 @@
  * Author: Antonios Motakis <a.motakis@virtualopensystems.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vfio.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/vfio.h>
+#include <linaos/platform_device.h>
 
 #include "vfio_platform_private.h"
 
@@ -19,7 +19,7 @@ static bool reset_required = true;
 module_param(reset_required, bool, 0444);
 MODULE_PARM_DESC(reset_required, "override reset requirement (default: 1)");
 
-/* probing devices from the linux platform bus */
+/* probing devices from the linaos platform bus */
 
 static struct resource *get_platform_resource(struct vfio_platform_device *vdev,
 					      int num)

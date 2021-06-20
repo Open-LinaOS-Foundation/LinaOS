@@ -6,10 +6,10 @@
 #ifndef __INTEL_MEMORY_REGION_H__
 #define __INTEL_MEMORY_REGION_H__
 
-#include <linux/kref.h>
-#include <linux/ioport.h>
-#include <linux/mutex.h>
-#include <linux/io-mapping.h>
+#include <linaos/kref.h>
+#include <linaos/ioport.h>
+#include <linaos/mutex.h>
+#include <linaos/io-mapping.h>
 #include <drm/drm_mm.h>
 
 #include "i915_buddy.h"

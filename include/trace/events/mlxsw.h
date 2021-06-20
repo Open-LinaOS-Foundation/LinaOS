@@ -7,7 +7,7 @@
 #if !defined(_MLXSW_TRACEPOINT_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _MLXSW_TRACEPOINT_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 struct mlxsw_sp;
 struct mlxsw_sp_acl_atcam_region;

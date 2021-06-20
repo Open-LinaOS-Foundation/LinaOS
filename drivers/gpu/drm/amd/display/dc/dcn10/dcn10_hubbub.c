@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include "dm_services.h"
 #include "dcn10_hubp.h"
@@ -123,9 +123,9 @@ bool hubbub1_verify_allow_pstate_change_high(
 	/* pstate latency is ~20us so if we wait over 40us and pstate allow
 	 * still not asserted, we are probably stuck and going to hang
 	 *
-	 * TODO: Figure out why it takes ~100us on linux
-	 * pstate takes around ~100us (up to 200us) on linux. Unknown currently
-	 * as to why it takes that long on linux
+	 * TODO: Figure out why it takes ~100us on linaos
+	 * pstate takes around ~100us (up to 200us) on linaos. Unknown currently
+	 * as to why it takes that long on linaos
 	 */
 	const unsigned int pstate_wait_timeout_us = 200;
 	const unsigned int pstate_wait_expected_timeout_us = 180;

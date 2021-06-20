@@ -20,12 +20,12 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/log2.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
 
 #include "kfd_priv.h"
 #include "cik_regs.h"

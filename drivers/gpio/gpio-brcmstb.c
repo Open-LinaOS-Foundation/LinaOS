@@ -11,14 +11,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/module.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/interrupt.h>
+#include <linaos/bitops.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/module.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/interrupt.h>
 
 enum gio_reg_index {
 	GIO_REG_ODEN = 0,

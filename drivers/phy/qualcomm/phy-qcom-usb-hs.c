@@ -2,16 +2,16 @@
 /**
  * Copyright (C) 2016 Linaro Ltd
  */
-#include <linux/module.h>
-#include <linux/ulpi/driver.h>
-#include <linux/ulpi/regs.h>
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/reset.h>
-#include <linux/extcon.h>
-#include <linux/notifier.h>
+#include <linaos/module.h>
+#include <linaos/ulpi/driver.h>
+#include <linaos/ulpi/regs.h>
+#include <linaos/clk.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/of_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/reset.h>
+#include <linaos/extcon.h>
+#include <linaos/notifier.h>
 
 #define ULPI_PWR_CLK_MNG_REG		0x88
 # define ULPI_PWR_OTG_COMP_DISABLE	BIT(0)

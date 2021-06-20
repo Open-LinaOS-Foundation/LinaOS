@@ -20,18 +20,18 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/mm_types.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/uaccess.h>
-#include <linux/mman.h>
-#include <linux/memory.h>
+#include <linaos/mm_types.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
+#include <linaos/uaccess.h>
+#include <linaos/mman.h>
+#include <linaos/memory.h>
 #include "kfd_priv.h"
 #include "kfd_events.h"
 #include "kfd_iommu.h"
-#include <linux/device.h>
+#include <linaos/device.h>
 
 /*
  * Wrapper around wait_queue_entry_t

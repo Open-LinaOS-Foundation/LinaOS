@@ -7,7 +7,7 @@
  */
 
 #ifdef CONFIG_DMI
-#include <linux/dmi.h>
+#include <linaos/dmi.h>
 
 #include "amd_iommu.h"
 

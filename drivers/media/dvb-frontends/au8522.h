@@ -2,7 +2,7 @@
 /*
     Auvitek AU8522 QAM/8VSB demodulator driver
 
-    Copyright (C) 2008 Steven Toth <stoth@linuxtv.org>
+    Copyright (C) 2008 Steven Toth <stoth@linaostv.org>
 
 
 */
@@ -10,7 +10,7 @@
 #ifndef __AU8522_H__
 #define __AU8522_H__
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 enum au8522_if_freq {
 	AU8522_IF_6MHZ = 0,

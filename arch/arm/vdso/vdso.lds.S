@@ -10,7 +10,7 @@
  * Heavily based on the vDSO linker scripts for other archs.
  */
 
-#include <linux/const.h>
+#include <linaos/const.h>
 #include <asm/page.h>
 #include <asm/vdso.h>
 

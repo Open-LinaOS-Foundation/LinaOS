@@ -18,7 +18,7 @@
 #ifndef __DVB_MATH_H
 #define __DVB_MATH_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * intlog2 - computes log2 of a value; the result is shifted left by 24 bits

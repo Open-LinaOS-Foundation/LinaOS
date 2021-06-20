@@ -15,13 +15,13 @@
 #ifndef _PCIEHP_H
 #define _PCIEHP_H
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/workqueue.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/pci_hotplug.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/rwsem.h>
+#include <linaos/workqueue.h>
 
 #include "../pcie/portdrv.h"
 

@@ -6,8 +6,8 @@
 #ifndef __ASM_ARC_ELF_H
 #define __ASM_ARC_ELF_H
 
-#include <linux/types.h>
-#include <linux/elf-em.h>
+#include <linaos/types.h>
+#include <linaos/elf-em.h>
 #include <uapi/asm/elf.h>
 
 #define EM_ARC_INUSE		(IS_ENABLED(CONFIG_ISA_ARCOMPACT) ? \

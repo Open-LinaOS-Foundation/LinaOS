@@ -10,7 +10,7 @@
 #ifndef OCFS2_BUFFER_HEAD_IO_H
 #define OCFS2_BUFFER_HEAD_IO_H
 
-#include <linux/buffer_head.h>
+#include <linaos/buffer_head.h>
 
 int ocfs2_write_block(struct ocfs2_super          *osb,
 		      struct buffer_head  *bh,

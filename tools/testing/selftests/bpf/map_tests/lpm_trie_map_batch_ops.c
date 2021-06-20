@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
 #include <arpa/inet.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <netinet/in.h>
 #include <stdio.h>
 #include <errno.h>

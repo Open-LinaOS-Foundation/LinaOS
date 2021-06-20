@@ -67,7 +67,7 @@ usage() {
     echo 'Usage: wrapper [-o output] [-p platform] [-i initrd]' >&2
     echo '       [-d devtree] [-s tree.dts] [-e esm_blob]' >&2
     echo '       [-c] [-C cross-prefix] [-D datadir] [-W workingdir]' >&2
-    echo '       [-Z (gz|xz|none)] [--no-compression] [vmlinux]' >&2
+    echo '       [-Z (gz|xz|none)] [--no-compression] [vmlinaos]' >&2
     exit 1
 }
 
@@ -188,7 +188,7 @@ if [ -n "$dts" ]; then
 fi
 
 if [ -z "$kernel" ]; then
-    kernel=vmlinux
+    kernel=vmlinaos
 fi
 
 LC_ALL=C elfformat="`${CROSS}objdump -p "$kernel" | grep 'file format' | awk '{print $4}'`"
@@ -226,7 +226,7 @@ lds=$object/zImage.lds
 ext=strip
 objflags=-S
 tmp=$tmpdir/zImage.$$.o
-ksection=.kernel:vmlinux.strip
+ksection=.kernel:vmlinaos.strip
 isection=.kernel:initrd
 esection=.kernel:esm_blob
 link_address='0x400000'
@@ -312,7 +312,7 @@ ps3)
     compression=
     ext=bin
     objflags="-O binary --set-section-flags=.bss=contents,alloc,load,data"
-    ksection=.kernel:vmlinux.bin
+    ksection=.kernel:vmlinaos.bin
     isection=.kernel:initrd
     link_address=''
     make_space=n
@@ -371,7 +371,7 @@ esac
 
 vmz="$tmpdir/`basename \"$kernel\"`.$ext"
 
-# Calculate the vmlinux.strip size
+# Calculate the vmlinaos.strip size
 ${CROSS}objcopy $objflags "$kernel" "$vmz.$$"
 strip_size=$(${CONFIG_SHELL} "${srctree}/scripts/file-size.sh" "$vmz.$$")
 
@@ -391,7 +391,7 @@ if [ -z "$cacheit" -o ! -f "$vmz$compression" -o "$vmz$compression" -ot "$kernel
         lzop -f -9 "$vmz.$$"
 	;;
     *)
-        # drop the compression suffix so the stripped vmlinux is used
+        # drop the compression suffix so the stripped vmlinaos is used
         compression=
 	uboot_comp=none
 	;;
@@ -425,10 +425,10 @@ fi
 
 # Extract kernel version information, some platforms want to include
 # it in the image header
-version=`${CROSS}strings "$kernel" | grep '^Linux version [-0-9.]' | \
+version=`${CROSS}strings "$kernel" | grep '^LinaOS version [-0-9.]' | \
     cut -d' ' -f3`
 if [ -n "$version" ]; then
-    uboot_version="-n Linux-$version"
+    uboot_version="-n LinaOS-$version"
 fi
 
 # physical offset of kernel image
@@ -437,7 +437,7 @@ membase=`${CROSS}objdump -p "$kernel" | grep -m 1 LOAD | awk '{print $7}'`
 case "$platform" in
 uboot)
     rm -f "$ofile"
-    ${MKIMAGE} -A ppc -O linux -T kernel -C $uboot_comp -a $membase -e $membase \
+    ${MKIMAGE} -A ppc -O linaos -T kernel -C $uboot_comp -a $membase -e $membase \
 	$uboot_version -d "$vmz" "$ofile"
     if [ -z "$cacheit" ]; then
 	rm -f "$vmz"
@@ -454,7 +454,7 @@ uboot-obs600)
 	real_rd=`mktemp`
 	echo "\0" >>"$real_rd"
     fi
-    ${MKIMAGE} -A ppc -O linux -T multi -C gzip -a $membase -e $membase \
+    ${MKIMAGE} -A ppc -O linaos -T multi -C gzip -a $membase -e $membase \
 	$uboot_version -d "$vmz":"$real_rd":"$dtb" "$ofile"
     if [ -z "$initrd" ]; then
 	rm -f "$real_rd"
@@ -522,7 +522,7 @@ coff)
     ;;
 cuboot*)
     gzip -n -f -9 "$ofile"
-    ${MKIMAGE} -A ppc -O linux -T kernel -C gzip -a "$base" -e "$entry" \
+    ${MKIMAGE} -A ppc -O linaos -T kernel -C gzip -a "$base" -e "$entry" \
             $uboot_version -d "$ofile".gz "$ofile"
     ;;
 treeboot*)

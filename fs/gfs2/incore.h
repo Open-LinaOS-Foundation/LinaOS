@@ -7,20 +7,20 @@
 #ifndef __INCORE_DOT_H__
 #define __INCORE_DOT_H__
 
-#include <linux/fs.h>
-#include <linux/kobject.h>
-#include <linux/workqueue.h>
-#include <linux/dlm.h>
-#include <linux/buffer_head.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist_bl.h>
-#include <linux/completion.h>
-#include <linux/rbtree.h>
-#include <linux/ktime.h>
-#include <linux/percpu.h>
-#include <linux/lockref.h>
-#include <linux/rhashtable.h>
-#include <linux/mutex.h>
+#include <linaos/fs.h>
+#include <linaos/kobject.h>
+#include <linaos/workqueue.h>
+#include <linaos/dlm.h>
+#include <linaos/buffer_head.h>
+#include <linaos/rcupdate.h>
+#include <linaos/rculist_bl.h>
+#include <linaos/completion.h>
+#include <linaos/rbtree.h>
+#include <linaos/ktime.h>
+#include <linaos/percpu.h>
+#include <linaos/lockref.h>
+#include <linaos/rhashtable.h>
+#include <linaos/mutex.h>
 
 #define DIO_WAIT	0x00000010
 #define DIO_METADATA	0x00000020

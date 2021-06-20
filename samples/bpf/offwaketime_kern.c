@@ -4,11 +4,11 @@
  * modify it under the terms of version 2 of the GNU General Public
  * License as published by the Free Software Foundation.
  */
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/ptrace.h>
-#include <uapi/linux/perf_event.h>
-#include <linux/version.h>
-#include <linux/sched.h>
+#include <uapi/linaos/bpf.h>
+#include <uapi/linaos/ptrace.h>
+#include <uapi/linaos/perf_event.h>
+#include <linaos/version.h>
+#include <linaos/sched.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 

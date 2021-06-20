@@ -9,8 +9,8 @@
  *      Tian Tao <tiantao6@hisilicon.com>
  */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_probe_helper.h>

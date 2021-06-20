@@ -8,7 +8,7 @@
 #
 # What it does?
 #
-#   If you have installed a Linux kernel from a distribution
+#   If you have installed a LinaOS kernel from a distribution
 #   that turns on way too many modules than you need, and
 #   you only want the modules you use, then this program
 #   is perfect for you.
@@ -35,7 +35,7 @@
 #
 # Here's what I did with my Debian distribution.
 #
-#    cd /usr/src/linux-2.6.10
+#    cd /usr/src/linaos-2.6.10
 #    cp /boot/config-2.6.10-1-686-smp .config
 #    ~/bin/streamline_config > config_strip
 #    mv .config config_sav
@@ -78,7 +78,7 @@ my @searchconfigs = (
 	    "test" => "scripts/extract-ikconfig",
 	},
 	{
-	    "file" => "vmlinux",
+	    "file" => "vmlinaos",
 	    "exec" => "scripts/extract-ikconfig",
 	    "test" => "scripts/extract-ikconfig",
 	},

@@ -5,7 +5,7 @@
  *         Ming Hsiu Tsai <minghsiu.tsai@mediatek.com>
  */
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #include "mtk_mdp_core.h"
 #include "mtk_mdp_regs.h"

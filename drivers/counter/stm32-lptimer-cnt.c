@@ -10,13 +10,13 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/counter.h>
-#include <linux/mfd/stm32-lptimer.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
+#include <linaos/bitfield.h>
+#include <linaos/counter.h>
+#include <linaos/mfd/stm32-lptimer.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
 
 struct stm32_lptim_cnt {
 	struct counter_device counter;

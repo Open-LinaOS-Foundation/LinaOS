@@ -13,10 +13,10 @@
 
 #define pr_fmt(fmt) "SPEAr320: " fmt
 
-#include <linux/amba/pl022.h>
-#include <linux/amba/pl08x.h>
-#include <linux/amba/serial.h>
-#include <linux/of_platform.h>
+#include <linaos/amba/pl022.h>
+#include <linaos/amba/pl08x.h>
+#include <linaos/amba/serial.h>
+#include <linaos/of_platform.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include "generic.h"

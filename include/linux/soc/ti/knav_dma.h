@@ -17,7 +17,7 @@
 #ifndef __SOC_TI_KEYSTONE_NAVIGATOR_DMA_H__
 #define __SOC_TI_KEYSTONE_NAVIGATOR_DMA_H__
 
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 
 /*
  * PKTDMA descriptor manipulation macros for host packet descriptor

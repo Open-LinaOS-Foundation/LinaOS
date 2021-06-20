@@ -14,11 +14,11 @@ include ../lib.mk
 
 khdr_dir = $(top_srcdir)/usr/include
 
-$(khdr_dir)/linux/landlock.h: khdr
+$(khdr_dir)/linaos/landlock.h: khdr
 	@:
 
 $(OUTPUT)/true: true.c
 	$(LINK.c) $< $(LDLIBS) -o $@ -static
 
-$(OUTPUT)/%_test: %_test.c $(khdr_dir)/linux/landlock.h ../kselftest_harness.h common.h
+$(OUTPUT)/%_test: %_test.c $(khdr_dir)/linaos/landlock.h ../kselftest_harness.h common.h
 	$(LINK.c) $< $(LDLIBS) -o $@ -lcap -I$(khdr_dir)

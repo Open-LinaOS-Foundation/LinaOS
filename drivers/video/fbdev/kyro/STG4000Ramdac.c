@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/kyro/STG4000Ramdac.c
+ *  linaos/drivers/video/kyro/STG4000Ramdac.c
  *
  *  Copyright (C) 2002 STMicroelectronics
  *
@@ -8,9 +8,9 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
 #include <video/kyro.h>
 
 #include "STG4000Reg.h"

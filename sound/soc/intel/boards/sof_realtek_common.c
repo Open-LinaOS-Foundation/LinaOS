@@ -2,8 +2,8 @@
 //
 // Copyright(c) 2020 Intel Corporation. All rights reserved.
 
-#include <linux/device.h>
-#include <linux/kernel.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

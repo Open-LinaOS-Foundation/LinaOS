@@ -6,7 +6,7 @@
  * Copyright 2014-2015 Linaro Ltd.
  */
 
-#include <linux/greybus.h>
+#include <linaos/greybus.h>
 #include "greybus_trace.h"
 
 static ssize_t bundle_class_show(struct device *dev,

@@ -56,7 +56,7 @@ Version 0.0.1     2.0.30    01-dic-97	Eduardo Marcelo Serrat
 					(emserrat@geocities.com)
 
 					First Development of DECnet Socket La-
-					yer for Linux. Only supports outgoing
+					yer for LinaOS. Only supports outgoing
 					connections.
 
 Version 0.0.2	  2.1.105   20-jun-98   Patrick J. Caulfield
@@ -69,14 +69,14 @@ Version 0.0.3     2.1.106   25-jun-98   Eduardo Marcelo Serrat
 					_
 					Added support for incoming connections
 					so we can start developing server apps
-					on Linux.
+					on LinaOS.
 					-
 					Module Support
 Version 0.0.4     2.1.109   21-jul-98   Eduardo Marcelo Serrat
 				       (emserrat@geocities.com)
 				       _
 					Added support for X11R6.4. Now we can
-					use DECnet transport for X on Linux!!!
+					use DECnet transport for X on LinaOS!!!
 				       -
 Version 0.0.5    2.1.110   01-aug-98   Eduardo Marcelo Serrat
 				       (emserrat@geocities.com)
@@ -91,35 +91,35 @@ Version 0.0.6    2.1.110   07-aug-98   Eduardo Marcelo Serrat
 				       dn_bind fixes
 *******************************************************************************/
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/inet.h>
-#include <linux/route.h>
-#include <linux/netfilter.h>
-#include <linux/seq_file.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/timer.h>
+#include <linaos/string.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/netdevice.h>
+#include <linaos/inet.h>
+#include <linaos/route.h>
+#include <linaos/netfilter.h>
+#include <linaos/seq_file.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/flow.h>
 #include <asm/ioctls.h>
-#include <linux/capability.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/jiffies.h>
+#include <linaos/capability.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/proc_fs.h>
+#include <linaos/stat.h>
+#include <linaos/init.h>
+#include <linaos/poll.h>
+#include <linaos/jiffies.h>
 #include <net/net_namespace.h>
 #include <net/neighbour.h>
 #include <net/dst.h>
@@ -2335,13 +2335,13 @@ static const struct proto_ops dn_proto_ops = {
 	.sendpage =	sock_no_sendpage,
 };
 
-MODULE_DESCRIPTION("The Linux DECnet Network Protocol");
-MODULE_AUTHOR("Linux DECnet Project Team");
+MODULE_DESCRIPTION("The LinaOS DECnet Network Protocol");
+MODULE_AUTHOR("LinaOS DECnet Project Team");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS_NETPROTO(PF_DECnet);
 
 static const char banner[] __initconst = KERN_INFO
-"NET4: DECnet for Linux: V.2.5.68s (C) 1995-2003 Linux DECnet Project Team\n";
+"NET4: DECnet for LinaOS: V.2.5.68s (C) 1995-2003 LinaOS DECnet Project Team\n";
 
 static int __init decnet_init(void)
 {

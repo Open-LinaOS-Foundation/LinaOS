@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * mmap based event notifications for SELinux
+ * mmap based event notifications for SELinaOS
  *
  * Author: KaiGai Kohei <kaigai@ak.jp.nec.com>
  *
  * Copyright (C) 2010 NEC corporation
  */
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/mm.h>
+#include <linaos/mutex.h>
 #include "avc.h"
 #include "security.h"
 
 /*
- * The selinux_status_page shall be exposed to userspace applications
- * using mmap interface on /selinux/status.
+ * The selinaos_status_page shall be exposed to userspace applications
+ * using mmap interface on /selinaos/status.
  * It enables to notify applications a few events that will cause reset
  * of userspace access vector without context switching.
  *
- * The selinux_kernel_status structure on the head of status page is
+ * The selinaos_kernel_status structure on the head of status page is
  * protected from concurrent accesses using seqlock logic, so userspace
  * application should reference the status page according to the seqlock
  * logic.
@@ -34,14 +34,14 @@
  */
 
 /*
- * selinux_kernel_status_page
+ * selinaos_kernel_status_page
  *
- * It returns a reference to selinux_status_page. If the status page is
+ * It returns a reference to selinaos_status_page. If the status page is
  * not allocated yet, it also tries to allocate it at the first time.
  */
-struct page *selinux_kernel_status_page(struct selinux_state *state)
+struct page *selinaos_kernel_status_page(struct selinaos_state *state)
 {
-	struct selinux_kernel_status   *status;
+	struct selinaos_kernel_status   *status;
 	struct page		       *result = NULL;
 
 	mutex_lock(&state->status_lock);
@@ -72,14 +72,14 @@ struct page *selinux_kernel_status_page(struct selinux_state *state)
 }
 
 /*
- * selinux_status_update_setenforce
+ * selinaos_status_update_setenforce
  *
  * It updates status of the current enforcing/permissive mode.
  */
-void selinux_status_update_setenforce(struct selinux_state *state,
+void selinaos_status_update_setenforce(struct selinaos_state *state,
 				      int enforcing)
 {
-	struct selinux_kernel_status   *status;
+	struct selinaos_kernel_status   *status;
 
 	mutex_lock(&state->status_lock);
 	if (state->status_page) {
@@ -97,15 +97,15 @@ void selinux_status_update_setenforce(struct selinux_state *state,
 }
 
 /*
- * selinux_status_update_policyload
+ * selinaos_status_update_policyload
  *
  * It updates status of the times of policy reloaded, and current
  * setting of deny_unknown.
  */
-void selinux_status_update_policyload(struct selinux_state *state,
+void selinaos_status_update_policyload(struct selinaos_state *state,
 				      int seqno)
 {
-	struct selinux_kernel_status   *status;
+	struct selinaos_kernel_status   *status;
 
 	mutex_lock(&state->status_lock);
 	if (state->status_page) {

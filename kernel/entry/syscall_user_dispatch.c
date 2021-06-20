@@ -2,15 +2,15 @@
 /*
  * Copyright (C) 2020 Collabora Ltd.
  */
-#include <linux/sched.h>
-#include <linux/prctl.h>
-#include <linux/syscall_user_dispatch.h>
-#include <linux/uaccess.h>
-#include <linux/signal.h>
-#include <linux/elf.h>
+#include <linaos/sched.h>
+#include <linaos/prctl.h>
+#include <linaos/syscall_user_dispatch.h>
+#include <linaos/uaccess.h>
+#include <linaos/signal.h>
+#include <linaos/elf.h>
 
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task_stack.h>
 
 #include <asm/syscall.h>
 

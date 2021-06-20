@@ -8,29 +8,29 @@
  * Author: Sean Cross <xobs@kosagi.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
-#include <linux/mfd/syscon/imx7-iomuxc-gpr.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/resource.h>
-#include <linux/signal.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/reset.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <linaos/mfd/syscon/imx7-iomuxc-gpr.h>
+#include <linaos/module.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/resource.h>
+#include <linaos/signal.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/reset.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_runtime.h>
 
 #include "pcie-designware.h"
 

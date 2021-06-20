@@ -5,27 +5,27 @@
  * Copyright 2011 Marvell. <jyli@marvell.com>
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/ktime.h>
-#include <linux/blkdev.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/pci.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/ktime.h>
+#include <linaos/blkdev.h>
+#include <linaos/io.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport.h>
 #include <scsi/scsi_eh.h>
-#include <linux/uaccess.h>
-#include <linux/kthread.h>
+#include <linaos/uaccess.h>
+#include <linaos/kthread.h>
 
 #include "mvumi.h"
 
@@ -841,7 +841,7 @@ static void mvumi_hs_build_page(struct mvumi_hba *mhba,
 		hs_page2 = (struct mvumi_hs_page2 *) hs_header;
 		hs_header->frame_length = sizeof(*hs_page2) - 4;
 		memset(hs_header->frame_content, 0, hs_header->frame_length);
-		hs_page2->host_type = 3; /* 3 mean linux*/
+		hs_page2->host_type = 3; /* 3 mean linaos*/
 		if (mhba->hba_capability & HS_CAPABILITY_SUPPORT_DYN_SRC)
 			hs_page2->host_cap = 0x08;/* host dynamic source mode */
 		hs_page2->host_ver.ver_major = VER_MAJOR;

@@ -22,7 +22,7 @@
 	};
 
 	chosen {
-		bootargs = "init=/linuxrc";
+		bootargs = "init=/linaosrc";
 		stdout-path = "serial2:115200n8";
 	};
 

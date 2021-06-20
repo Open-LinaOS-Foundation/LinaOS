@@ -31,24 +31,24 @@
  *	workaround has been removed.
  */
 
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/mc146818rtc.h>
-#include <linux/compiler.h>
-#include <linux/acpi.h>
-#include <linux/export.h>
-#include <linux/syscore_ops.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/jiffies.h>	/* time_after() */
-#include <linux/slab.h>
-#include <linux/memblock.h>
-#include <linux/msi.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/pci.h>
+#include <linaos/mc146818rtc.h>
+#include <linaos/compiler.h>
+#include <linaos/acpi.h>
+#include <linaos/export.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/freezer.h>
+#include <linaos/kthread.h>
+#include <linaos/jiffies.h>	/* time_after() */
+#include <linaos/slab.h>
+#include <linaos/memblock.h>
+#include <linaos/msi.h>
 
 #include <asm/irqdomain.h>
 #include <asm/io.h>

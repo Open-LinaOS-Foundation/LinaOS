@@ -14,7 +14,7 @@
 #ifndef _ICMP_H
 #define	_ICMP_H
 
-#include <linux/icmp.h>
+#include <linaos/icmp.h>
 
 #include <net/inet_sock.h>
 #include <net/snmp.h>

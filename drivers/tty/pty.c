@@ -7,28 +7,28 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/fcntl.h>
-#include <linux/sched/signal.h>
-#include <linux/string.h>
-#include <linux/major.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/devpts_fs.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/mount.h>
-#include <linux/file.h>
-#include <linux/ioctl.h>
-#include <linux/compat.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/fcntl.h>
+#include <linaos/sched/signal.h>
+#include <linaos/string.h>
+#include <linaos/major.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/uaccess.h>
+#include <linaos/bitops.h>
+#include <linaos/devpts_fs.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/poll.h>
+#include <linaos/mount.h>
+#include <linaos/file.h>
+#include <linaos/ioctl.h>
+#include <linaos/compat.h>
 #include "tty.h"
 
 #undef TTY_DEBUG_HANGUP

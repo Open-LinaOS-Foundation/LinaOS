@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kdebug.h>
-#include <linux/kprobes.h>
-#include <linux/export.h>
-#include <linux/notifier.h>
-#include <linux/rcupdate.h>
-#include <linux/vmalloc.h>
-#include <linux/reboot.h>
+#include <linaos/kdebug.h>
+#include <linaos/kprobes.h>
+#include <linaos/export.h>
+#include <linaos/notifier.h>
+#include <linaos/rcupdate.h>
+#include <linaos/vmalloc.h>
+#include <linaos/reboot.h>
 
 /*
  *	Notifier list for kernel code which wants to be called

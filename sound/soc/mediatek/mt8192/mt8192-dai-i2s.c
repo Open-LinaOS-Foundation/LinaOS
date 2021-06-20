@@ -6,8 +6,8 @@
 // Author: Shane Chien <shane.chien@mediatek.com>
 //
 
-#include <linux/bitops.h>
-#include <linux/regmap.h>
+#include <linaos/bitops.h>
+#include <linaos/regmap.h>
 #include <sound/pcm_params.h>
 
 #include "mt8192-afe-clk.h"

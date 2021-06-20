@@ -6,12 +6,12 @@
  * Copyright (C) Huawei Futurewei Technologies.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/kexec.h>
-#include <linux/page-flags.h>
-#include <linux/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/kexec.h>
+#include <linaos/page-flags.h>
+#include <linaos/smp.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cpu_ops.h>

@@ -7,7 +7,7 @@
  * Modified for NILFS by Amagai Yoshiji and Ryusuke Konishi.
  */
 /*
- *  linux/fs/ext2/namei.c
+ *  linaos/fs/ext2/namei.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -16,7 +16,7 @@
  *
  *  from
  *
- *  linux/fs/minix/namei.c
+ *  linaos/fs/minix/namei.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -24,7 +24,7 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/pagemap.h>
+#include <linaos/pagemap.h>
 #include "nilfs.h"
 #include "export.h"
 

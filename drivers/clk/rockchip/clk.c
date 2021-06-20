@@ -14,14 +14,14 @@
  * Author: Thomas Abraham <thomas.ab@samsung.com>
  */
 
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/reboot.h>
-#include <linux/rational.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/reboot.h>
+#include <linaos/rational.h>
 #include "clk.h"
 
 /*

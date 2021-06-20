@@ -5,19 +5,19 @@
  * Copyright (C) 2016 Fujitsu Technology Solutions GmbH,
  *		  Thilo Cestonaro <thilo.cestonaro@ts.fujitsu.com>
  */
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/uaccess.h>
-#include <linux/watchdog.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/uaccess.h>
+#include <linaos/watchdog.h>
 
 #define FTS_DEVICE_ID_REG		0x0000
 #define FTS_DEVICE_REVISION_REG		0x0001

@@ -7,15 +7,15 @@
  * the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/workqueue.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
 
 #include <pcmcia/ss.h>
 

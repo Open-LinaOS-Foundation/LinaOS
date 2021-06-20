@@ -8,28 +8,28 @@
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2014, Imagination Technologies Ltd.
  */
-#include <linux/cache.h>
-#include <linux/context_tracking.h>
-#include <linux/irqflags.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/personality.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/uprobes.h>
-#include <linux/compiler.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
-#include <linux/tracehook.h>
+#include <linaos/cache.h>
+#include <linaos/context_tracking.h>
+#include <linaos/irqflags.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/personality.h>
+#include <linaos/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/errno.h>
+#include <linaos/wait.h>
+#include <linaos/ptrace.h>
+#include <linaos/unistd.h>
+#include <linaos/uprobes.h>
+#include <linaos/compiler.h>
+#include <linaos/syscalls.h>
+#include <linaos/uaccess.h>
+#include <linaos/tracehook.h>
 
 #include <asm/abi.h>
 #include <asm/asm.h>
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include <asm/cacheflush.h>
 #include <asm/fpu.h>
 #include <asm/sim.h>

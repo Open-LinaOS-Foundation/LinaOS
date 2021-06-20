@@ -1,12 +1,12 @@
 /*
- * Created: Tue Feb  2 08:37:54 1999 by faith@valinux.com
+ * Created: Tue Feb  2 08:37:54 1999 by faith@valinaos.com
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
- * Author Rickard E. (Rik) Faith <faith@valinux.com>
- * Author Gareth Hughes <gareth@valinux.com>
+ * Author Rickard E. (Rik) Faith <faith@valinaos.com>
+ * Author Gareth Hughes <gareth@valinaos.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -28,7 +28,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_auth.h>
 #include <drm/drm_drv.h>

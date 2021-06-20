@@ -3,14 +3,14 @@
  * Copyright (C) 2018 Spreadtrum Communications Inc.
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/input.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/workqueue.h>
 
 #define CUR_DRV_CAL_SEL			GENMASK(13, 12)
 #define SLP_LDOVIBR_PD_EN		BIT(9)

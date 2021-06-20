@@ -5,19 +5,19 @@
  *  Copyright (C) 2016 Bluecherry, LLC <maintainers@bluecherrydvr.com>
  */
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/sound.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm.h>
-#include <linux/pci_ids.h>
-#include <linux/jiffies.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/kmod.h>
+#include <linaos/sound.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pm.h>
+#include <linaos/pci_ids.h>
+#include <linaos/jiffies.h>
 #include <asm/dma.h>
 #include <media/v4l2-dev.h>
 

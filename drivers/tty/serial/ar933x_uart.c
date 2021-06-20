@@ -7,24 +7,24 @@
  *  Based on drivers/char/serial.c, by Linus Torvalds, Theodore Ts'o.
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/sysrq.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/clk.h>
 
 #include <asm/div64.h>
 

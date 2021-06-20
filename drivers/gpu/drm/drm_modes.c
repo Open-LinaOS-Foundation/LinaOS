@@ -30,10 +30,10 @@
  * authorization from the copyright holder(s) and author(s).
  */
 
-#include <linux/ctype.h>
-#include <linux/list.h>
-#include <linux/list_sort.h>
-#include <linux/export.h>
+#include <linaos/ctype.h>
+#include <linaos/list.h>
+#include <linaos/list_sort.h>
+#include <linaos/export.h>
 
 #include <video/of_videomode.h>
 #include <video/videomode.h>

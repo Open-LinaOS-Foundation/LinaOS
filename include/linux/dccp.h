@@ -3,18 +3,18 @@
 #define _LINUX_DCCP_H
 
 
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/uio.h>
-#include <linux/workqueue.h>
+#include <linaos/in.h>
+#include <linaos/interrupt.h>
+#include <linaos/ktime.h>
+#include <linaos/list.h>
+#include <linaos/uio.h>
+#include <linaos/workqueue.h>
 
 #include <net/inet_connection_sock.h>
 #include <net/inet_sock.h>
 #include <net/inet_timewait_sock.h>
 #include <net/tcp_states.h>
-#include <uapi/linux/dccp.h>
+#include <uapi/linaos/dccp.h>
 
 enum dccp_state {
 	DCCP_OPEN	     = TCP_ESTABLISHED,

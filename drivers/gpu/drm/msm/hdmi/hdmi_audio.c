@@ -4,7 +4,7 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/hdmi.h>
+#include <linaos/hdmi.h>
 #include "hdmi.h"
 
 /* maps MSM_HDMI_AUDIO_CHANNEL_n consts used by audio driver to # of channels: */

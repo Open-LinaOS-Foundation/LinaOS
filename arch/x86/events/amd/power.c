@@ -7,9 +7,9 @@
  * Author: Huang Rui <ray.huang@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/perf_event.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/perf_event.h>
 #include <asm/cpu_device_id.h>
 #include "../perf_event.h"
 

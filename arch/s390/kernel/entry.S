@@ -9,8 +9,8 @@
  *		 Heiko Carstens <heiko.carstens@de.ibm.com>
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
 #include <asm/alternative-asm.h>
 #include <asm/processor.h>
 #include <asm/cache.h>

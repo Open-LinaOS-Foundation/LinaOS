@@ -14,10 +14,10 @@
 
 #define ARCH_HAS_IOREMAP_WC
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/irqflags.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/irqflags.h>
 
 #include <asm/addrspace.h>
 #include <asm/barrier.h>

@@ -11,7 +11,7 @@
 #ifndef __ASM_MACH_JAZZ_MC146818RTC_H
 #define __ASM_MACH_JAZZ_MC146818RTC_H
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include <asm/io.h>
 #include <asm/jazz.h>

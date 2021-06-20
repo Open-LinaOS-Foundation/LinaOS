@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * GHES/EDAC Linux driver
+ * GHES/EDAC LinaOS driver
  *
  * Copyright (c) 2013 by Mauro Carvalho Chehab
  *
@@ -10,8 +10,8 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <acpi/ghes.h>
-#include <linux/edac.h>
-#include <linux/dmi.h>
+#include <linaos/edac.h>
+#include <linaos/dmi.h>
 #include "edac_module.h"
 #include <ras/ras_event.h>
 

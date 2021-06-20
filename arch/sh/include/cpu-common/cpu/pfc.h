@@ -8,7 +8,7 @@
 #ifndef __ARCH_SH_CPU_PFC_H__
 #define __ARCH_SH_CPU_PFC_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct resource;
 

@@ -2,8 +2,8 @@
 #ifndef LINUX_MM_DEBUG_H
 #define LINUX_MM_DEBUG_H 1
 
-#include <linux/bug.h>
-#include <linux/stringify.h>
+#include <linaos/bug.h>
+#include <linaos/stringify.h>
 
 struct page;
 struct vm_area_struct;

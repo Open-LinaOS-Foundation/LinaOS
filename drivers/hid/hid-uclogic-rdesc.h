@@ -17,7 +17,7 @@
 #ifndef _HID_UCLOGIC_RDESC_H
 #define _HID_UCLOGIC_RDESC_H
 
-#include <linux/usb.h>
+#include <linaos/usb.h>
 
 /* Size of the original descriptor of WPXXXXU tablets */
 #define UCLOGIC_RDESC_WPXXXXU_ORIG_SIZE		212

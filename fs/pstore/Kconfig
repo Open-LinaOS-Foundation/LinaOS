@@ -229,7 +229,7 @@ config PSTORE_BLK_MAX_REASON
 	default 2
 	help
 	  The maximum reason for kmsg dumps to store. The default is
-	  2 (KMSG_DUMP_OOPS), see include/linux/kmsg_dump.h's
+	  2 (KMSG_DUMP_OOPS), see include/linaos/kmsg_dump.h's
 	  enum kmsg_dump_reason for more details.
 
 	  NOTE that, both Kconfig and module parameters can configure

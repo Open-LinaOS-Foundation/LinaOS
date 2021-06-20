@@ -9,15 +9,15 @@
  * based on leds-lm3530.c by Dan Murphy <D.Murphy@motorola.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/led-lm3530.h>
-#include <linux/types.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/led-lm3530.h>
+#include <linaos/types.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/module.h>
 
 #define LM3530_LED_DEV "lcd-backlight"
 #define LM3530_NAME "lm3530-led"

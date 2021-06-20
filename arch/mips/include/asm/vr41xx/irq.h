@@ -8,7 +8,7 @@
  * Copyright (C) 2001, 2002 Paul Mundt
  * Copyright (C) 2002 MontaVista Software, Inc.
  * Copyright (C) 2002 TimeSys Corp.
- * Copyright (C) 2003-2006 Yoichi Yuasa <yuasa@linux-mips.org>
+ * Copyright (C) 2003-2006 Yoichi Yuasa <yuasa@linaos-mips.org>
  */
 #ifndef __NEC_VR41XX_IRQ_H
 #define __NEC_VR41XX_IRQ_H

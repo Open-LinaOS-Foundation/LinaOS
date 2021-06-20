@@ -9,17 +9,17 @@
 
 #define DSS_SUBSYS_NAME "HDMICORE"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/sys_soc.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/string.h>
+#include <linaos/seq_file.h>
+#include <linaos/sys_soc.h>
 #include <sound/asound.h>
 #include <sound/asoundef.h>
 

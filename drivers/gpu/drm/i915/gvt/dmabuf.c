@@ -28,8 +28,8 @@
  *    Tina Zhang <tina.zhang@intel.com>
  */
 
-#include <linux/dma-buf.h>
-#include <linux/vfio.h>
+#include <linaos/dma-buf.h>
+#include <linaos/vfio.h>
 
 #include "i915_drv.h"
 #include "gvt.h"

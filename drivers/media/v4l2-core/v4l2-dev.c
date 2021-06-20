@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Video capture interface for Linux version 2
+ * Video capture interface for LinaOS version 2
  *
  *	A generic video device interface for the LINUX operating system
  *	using a set of device structures/vectors for low level operations.
@@ -14,17 +14,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kmod.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
@@ -32,7 +32,7 @@
 #include <media/v4l2-event.h>
 
 #define VIDEO_NUM_DEVICES	256
-#define VIDEO_NAME              "video4linux"
+#define VIDEO_NAME              "video4linaos"
 
 #define dprintk(fmt, arg...) do {					\
 		printk(KERN_DEBUG pr_fmt("%s: " fmt),			\
@@ -1074,7 +1074,7 @@ cleanup:
 EXPORT_SYMBOL(__video_register_device);
 
 /**
- *	video_unregister_device - unregister a video4linux device
+ *	video_unregister_device - unregister a video4linaos device
  *	@vdev: the device to unregister
  *
  *	This unregisters the passed device. Future open calls will
@@ -1099,14 +1099,14 @@ void video_unregister_device(struct video_device *vdev)
 EXPORT_SYMBOL(video_unregister_device);
 
 /*
- *	Initialise video for linux
+ *	Initialise video for linaos
  */
 static int __init videodev_init(void)
 {
 	dev_t dev = MKDEV(VIDEO_MAJOR, 0);
 	int ret;
 
-	pr_info("Linux video capture interface: v2.00\n");
+	pr_info("LinaOS video capture interface: v2.00\n");
 	ret = register_chrdev_region(dev, VIDEO_NUM_DEVICES, VIDEO_NAME);
 	if (ret < 0) {
 		pr_warn("videodev: unable to get major %d\n",
@@ -1121,7 +1121,7 @@ static int __init videodev_init(void)
 		return -EIO;
 	}
 
-	v4l2_debugfs_dir = debugfs_create_dir("video4linux", NULL);
+	v4l2_debugfs_dir = debugfs_create_dir("video4linaos", NULL);
 	v4l2_async_debug_init(v4l2_debugfs_dir);
 	return 0;
 }
@@ -1139,6 +1139,6 @@ subsys_initcall(videodev_init);
 module_exit(videodev_exit)
 
 MODULE_AUTHOR("Alan Cox, Mauro Carvalho Chehab <mchehab@kernel.org>, Bill Dirks, Justin Schoeman, Gerd Knorr");
-MODULE_DESCRIPTION("Video4Linux2 core driver");
+MODULE_DESCRIPTION("Video4LinaOS2 core driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS_CHARDEV_MAJOR(VIDEO_MAJOR);

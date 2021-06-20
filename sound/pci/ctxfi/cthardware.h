@@ -14,8 +14,8 @@
 #ifndef CTHARDWARE_H
 #define CTHARDWARE_H
 
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
 #include <sound/core.h>
 
 enum CHIPTYP {

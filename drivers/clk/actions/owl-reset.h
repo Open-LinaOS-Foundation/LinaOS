@@ -8,7 +8,7 @@
 #ifndef _OWL_RESET_H_
 #define _OWL_RESET_H_
 
-#include <linux/reset-controller.h>
+#include <linaos/reset-controller.h>
 
 struct owl_reset_map {
 	u32	reg;

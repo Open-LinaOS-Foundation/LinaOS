@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPv6 Address [auto]configuration
- *	Linux INET6 implementation
+ *	LinaOS INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -36,32 +36,32 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/inet.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_addr.h>
-#include <linux/if_arp.h>
-#include <linux/if_arcnet.h>
-#include <linux/if_infiniband.h>
-#include <linux/route.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/inet.h>
+#include <linaos/in6.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_addr.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_arcnet.h>
+#include <linaos/if_infiniband.h>
+#include <linaos/route.h>
+#include <linaos/inetdevice.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linaos/sysctl.h>
 #endif
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/string.h>
-#include <linux/hash.h>
+#include <linaos/capability.h>
+#include <linaos/delay.h>
+#include <linaos/notifier.h>
+#include <linaos/string.h>
+#include <linaos/hash.h>
 
 #include <net/net_namespace.h>
 #include <net/sock.h>
@@ -79,16 +79,16 @@
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/l3mdev.h>
-#include <linux/if_tunnel.h>
-#include <linux/rtnetlink.h>
-#include <linux/netconf.h>
-#include <linux/random.h>
-#include <linux/uaccess.h>
+#include <linaos/if_tunnel.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/netconf.h>
+#include <linaos/random.h>
+#include <linaos/uaccess.h>
 #include <asm/unaligned.h>
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/export.h>
 
 #define	INFINITY_LIFE_TIME	0xFFFFFFFF
 

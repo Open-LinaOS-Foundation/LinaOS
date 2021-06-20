@@ -111,7 +111,7 @@ void planetcore_set_stdout_path(const char *table)
 	if (!label)
 		return;
 
-	node = find_node_by_prop_value_str(NULL, "linux,planetcore-label",
+	node = find_node_by_prop_value_str(NULL, "linaos,planetcore-label",
 	                                   label);
 	if (!node)
 		return;
@@ -126,5 +126,5 @@ void planetcore_set_stdout_path(const char *table)
 	if (!chosen)
 		return;
 
-	setprop_str(chosen, "linux,stdout-path", path);
+	setprop_str(chosen, "linaos,stdout-path", path);
 }

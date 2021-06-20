@@ -12,23 +12,23 @@
  * Common pmac/prep/chrp pci routines. -- Cort
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/mm.h>
-#include <linux/shmem_fs.h>
-#include <linux/list.h>
-#include <linux/syscalls.h>
-#include <linux/irq.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/vgaarb.h>
-#include <linux/numa.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/of_address.h>
+#include <linaos/of_pci.h>
+#include <linaos/mm.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/list.h>
+#include <linaos/syscalls.h>
+#include <linaos/irq.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/vgaarb.h>
+#include <linaos/numa.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>
@@ -452,7 +452,7 @@ static int pci_read_irq_line(struct pci_dev *pci_dev)
 		goto error_exit;
 	}
 
-	pr_debug(" Mapped to linux irq %d\n", virq);
+	pr_debug(" Mapped to linaos irq %d\n", virq);
 
 	pci_dev->irq = virq;
 

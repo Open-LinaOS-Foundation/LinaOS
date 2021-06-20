@@ -16,14 +16,14 @@
  * If given, the driver will reset the scanlog so the platform can free it.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/proc_fs.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 #include <asm/rtas.h>
 #include <asm/prom.h>
 

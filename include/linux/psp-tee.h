@@ -11,8 +11,8 @@
 #ifndef __PSP_TEE_H_
 #define __PSP_TEE_H_
 
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
 
 /* This file defines the Trusted Execution Environment (TEE) interface commands
  * and the API exported by AMD Secure Processor driver to communicate with

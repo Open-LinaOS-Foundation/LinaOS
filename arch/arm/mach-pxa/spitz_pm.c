@@ -5,16 +5,16 @@
  * Copyright (c) 2005 Richard Purdie
  */
 
-#include <linux/module.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/apm-emulation.h>
+#include <linaos/module.h>
+#include <linaos/stat.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio-pxa.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/apm-emulation.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>

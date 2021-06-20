@@ -7,7 +7,7 @@
  *  Copyright (C) 2003  David Borowski.
  */
 
-#include <linux/keyboard.h>
+#include <linaos/keyboard.h>
 #include "spk_priv.h"
 #include "speakup.h"
 

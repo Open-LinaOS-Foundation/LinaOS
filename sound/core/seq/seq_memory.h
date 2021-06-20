@@ -7,7 +7,7 @@
 #define __SND_SEQ_MEMORYMGR_H
 
 #include <sound/seq_kernel.h>
-#include <linux/poll.h>
+#include <linaos/poll.h>
 
 struct snd_info_buffer;
 

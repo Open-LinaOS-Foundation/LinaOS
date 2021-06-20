@@ -31,8 +31,8 @@
  *    from the Power domain framework
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
 
 #include "soc.h"
 #include "clockdomain.h"

@@ -6,19 +6,19 @@
  * Copyright (c) 2012 Guenter Roeck
  */
 
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/pmbus.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <linaos/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/math64.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/pmbus.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
 #include "pmbus.h"
 
 /*

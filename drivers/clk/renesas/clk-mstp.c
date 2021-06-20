@@ -8,17 +8,17 @@
  * Contact: Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/clk/renesas.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_domain.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk/renesas.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/pm_clock.h>
+#include <linaos/pm_domain.h>
+#include <linaos/spinlock.h>
 
 /*
  * MSTP clocks. We can't use standard gate clocks as we need to poll on the

@@ -3,8 +3,8 @@
  * Copyright (c) 2020 Oracle. All rights reserved.
  */
 
-#include <linux/sunrpc/svc_rdma.h>
-#include <linux/sunrpc/rpc_rdma.h>
+#include <linaos/sunrpc/svc_rdma.h>
+#include <linaos/sunrpc/rpc_rdma.h>
 
 #include "xprt_rdma.h"
 #include <trace/events/rpcrdma.h>

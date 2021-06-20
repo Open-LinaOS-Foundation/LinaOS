@@ -8,7 +8,7 @@ title: LM75 hwmon sensor
 
 maintainers:
   - Jean Delvare <jdelvare@suse.com>
-  - Guenter Roeck <linux@roeck-us.net>
+  - Guenter Roeck <linaos@roeck-us.net>
 
 properties:
   compatible:

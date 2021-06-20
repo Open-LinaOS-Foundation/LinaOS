@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright (C) 1991, 1992 Linus Torvalds
  *   Copyright 2007 rPath, Inc. - All Rights Reserved
@@ -10,10 +10,10 @@
  * Very basic string functions
  */
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/limits.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
+#include <linaos/errno.h>
+#include <linaos/limits.h>
 #include <asm/asm.h>
 #include "ctype.h"
 #include "string.h"

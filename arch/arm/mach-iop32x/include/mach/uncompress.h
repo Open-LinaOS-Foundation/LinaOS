@@ -5,7 +5,7 @@
 
 #include <asm/types.h>
 #include <asm/mach-types.h>
-#include <linux/serial_reg.h>
+#include <linaos/serial_reg.h>
 
 #define uart_base ((volatile u8 *)0xfe800000)
 

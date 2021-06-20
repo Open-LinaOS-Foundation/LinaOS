@@ -232,13 +232,13 @@ Testing vidtv with v4l-utils
 
 Using the tools in v4l-utils is a great way to test and inspect the output of
 vidtv. It is hosted here: `v4l-utils Documentation
-<https://linuxtv.org/wiki/index.php/V4l-utils>`_.
+<https://linaostv.org/wiki/index.php/V4l-utils>`_.
 
 From its webpage::
 
 	The v4l-utils are a series of packages for handling media devices.
 
-	It is hosted at http://git.linuxtv.org/v4l-utils.git, and packaged
+	It is hosted at http://git.linaostv.org/v4l-utils.git, and packaged
 	on most distributions.
 
 	It provides a series of libraries and utilities to be used to
@@ -341,7 +341,7 @@ This should return what is currently set up at the demod struct, i.e.::
 
 For more information on dvb-fe-tools check its online documentation here:
 `dvb-fe-tool Documentation
-<https://www.linuxtv.org/wiki/index.php/Dvb-fe-tool>`_.
+<https://www.linaostv.org/wiki/index.php/Dvb-fe-tool>`_.
 
 Using dvb-scan
 ~~~~~~~~~~~~~~
@@ -368,7 +368,7 @@ here's an example::
 	should also provide 'SYMBOL_RATE'.
 
 You can browse scan tables online here: `dvb-scan-tables
-<https://git.linuxtv.org/dtv-scan-tables.git>`_.
+<https://git.linaostv.org/dtv-scan-tables.git>`_.
 
 Assuming this channel is named 'channel.conf', you can then run::
 
@@ -380,10 +380,10 @@ Assuming this channel is named 'channel.conf', you can then run::
 	    (0x00) Signal= -68.00dBm
 	Scanning frequency #2 474000000
 	Lock   (0x1f) Signal= -34.45dBm C/N= 33.74dB UCB= 0
-	Service Beethoven, provider LinuxTV.org: digital television
+	Service Beethoven, provider LinaOSTV.org: digital television
 
 For more information on dvb-scan, check its documentation online here:
-`dvb-scan Documentation <https://www.linuxtv.org/wiki/index.php/Dvbscan>`_.
+`dvb-scan Documentation <https://www.linaostv.org/wiki/index.php/Dvbscan>`_.
 
 Using dvb-zap
 ~~~~~~~~~~~~~
@@ -427,8 +427,8 @@ And, on a second terminal, playing the contents from DVR interface with::
 
 For more information on dvb-zap check its online documentation here:
 `dvb-zap Documentation
-<https://www.linuxtv.org/wiki/index.php/Dvbv5-zap>`_.
-See also: `zap <https://www.linuxtv.org/wiki/index.php/Zap>`_.
+<https://www.linaostv.org/wiki/index.php/Dvbv5-zap>`_.
+See also: `zap <https://www.linaostv.org/wiki/index.php/Zap>`_.
 
 
 What can still be improved in vidtv
@@ -462,7 +462,7 @@ first place to look into is *ISO 13818-2: Information technology — Generic
 coding of moving pictures and associated audio information — Part 2: Video*,
 which covers the encoding of compressed video in MPEG Transport Streams.
 
-This might optionally use the Video4Linux2 Test Pattern Generator, v4l2-tpg,
+This might optionally use the Video4LinaOS2 Test Pattern Generator, v4l2-tpg,
 which resides at::
 
 	drivers/media/common/v4l2-tpg/

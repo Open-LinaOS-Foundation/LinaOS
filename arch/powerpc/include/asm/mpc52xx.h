@@ -19,7 +19,7 @@
 #include <asm/mpc5xxx.h>
 #endif /* __ASSEMBLY__ */
 
-#include <linux/suspend.h>
+#include <linaos/suspend.h>
 
 /* Variants of the 5200(B) */
 #define MPC5200_SVR		0x80110010

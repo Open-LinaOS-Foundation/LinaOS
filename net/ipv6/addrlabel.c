@@ -7,18 +7,18 @@
  */
 /*
  * Author:
- *	YOSHIFUJI Hideaki @ USAGI/WIDE Project <yoshfuji@linux-ipv6.org>
+ *	YOSHIFUJI Hideaki @ USAGI/WIDE Project <yoshfuji@linaos-ipv6.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/in6.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/rcupdate.h>
+#include <linaos/in6.h>
+#include <linaos/slab.h>
 #include <net/addrconf.h>
-#include <linux/if_addrlabel.h>
-#include <linux/netlink.h>
-#include <linux/rtnetlink.h>
+#include <linaos/if_addrlabel.h>
+#include <linaos/netlink.h>
+#include <linaos/rtnetlink.h>
 
 #if 0
 #define ADDRLABEL(x...) printk(x)

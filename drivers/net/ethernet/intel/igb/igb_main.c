@@ -3,41 +3,41 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/netdevice.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pagemap.h>
+#include <linaos/netdevice.h>
+#include <linaos/ipv6.h>
+#include <linaos/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
-#include <linux/net_tstamp.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/if_ether.h>
-#include <linux/aer.h>
-#include <linux/prefetch.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/pm_runtime.h>
-#include <linux/etherdevice.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/if.h>
+#include <linaos/if_vlan.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/sctp.h>
+#include <linaos/if_ether.h>
+#include <linaos/aer.h>
+#include <linaos/prefetch.h>
+#include <linaos/bpf.h>
+#include <linaos/bpf_trace.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/etherdevice.h>
 #ifdef CONFIG_IGB_DCA
-#include <linux/dca.h>
+#include <linaos/dca.h>
 #endif
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include "igb.h"
 
 enum queue_mode {

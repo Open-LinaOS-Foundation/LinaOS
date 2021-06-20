@@ -2,7 +2,7 @@
 #ifndef _LINUX_IVERSION_H
 #define _LINUX_IVERSION_H
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 /*
  * The inode->i_version field:

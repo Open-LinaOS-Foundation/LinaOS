@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/adreno-smmu-priv.h>
-#include <linux/of_device.h>
-#include <linux/qcom_scm.h>
+#include <linaos/adreno-smmu-priv.h>
+#include <linaos/of_device.h>
+#include <linaos/qcom_scm.h>
 
 #include "arm-smmu.h"
 

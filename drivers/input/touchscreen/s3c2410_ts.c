@@ -3,25 +3,25 @@
  * Samsung S3C24XX touchscreen driver
  *
  * Copyright 2004 Arnaud Patard <arnaud.patard@rtp-net.org>
- * Copyright 2008 Ben Dooks <ben-linux@fluff.org>
- * Copyright 2009 Simtec Electronics <linux@simtec.co.uk>
+ * Copyright 2008 Ben Dooks <ben-linaos@fluff.org>
+ * Copyright 2009 Simtec Electronics <linaos@simtec.co.uk>
  *
  * Additional work by Herbert Pötzl <herbert@13thfloor.at> and
  * Harald Welte <laforge@openmoko.org>
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
 
-#include <linux/soc/samsung/s3c-adc.h>
-#include <linux/platform_data/touchscreen-s3c2410.h>
+#include <linaos/soc/samsung/s3c-adc.h>
+#include <linaos/platform_data/touchscreen-s3c2410.h>
 
 #define	S3C2410_ADCCON			(0x00)
 #define	S3C2410_ADCTSC			(0x04)
@@ -459,6 +459,6 @@ module_platform_driver(s3c_ts_driver);
 
 MODULE_AUTHOR("Arnaud Patard <arnaud.patard@rtp-net.org>, "
 	      "Ben Dooks <ben@simtec.co.uk>, "
-	      "Simtec Electronics <linux@simtec.co.uk>");
+	      "Simtec Electronics <linaos@simtec.co.uk>");
 MODULE_DESCRIPTION("S3C24XX Touchscreen driver");
 MODULE_LICENSE("GPL v2");

@@ -16,18 +16,18 @@
  *	timing value tweaking so it looks good on every monitor in every mode
  */
 
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include <video/vga.h>
 #include <video/trident.h>
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-bit.h>
 
 struct tridentfb_par {
 	void __iomem *io_virt;	/* iospace virtual memory address */

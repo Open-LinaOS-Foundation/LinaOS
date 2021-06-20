@@ -5,13 +5,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/olpc-ec.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/firmware.h>
+#include <linaos/netdevice.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/olpc-ec.h>
 
 #ifdef CONFIG_OLPC
 #include <asm/olpc.h>

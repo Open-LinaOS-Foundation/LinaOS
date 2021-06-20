@@ -7,15 +7,15 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
+#include <linaos/wait.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_drv.h>

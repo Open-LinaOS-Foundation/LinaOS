@@ -7,9 +7,9 @@
 
 #include <arpa/inet.h>
 
-#include <linux/err.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linaos/err.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
 
 #include "bpf_util.h"
 #include "network_helpers.h"

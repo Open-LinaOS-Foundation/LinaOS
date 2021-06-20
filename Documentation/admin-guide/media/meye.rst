@@ -11,7 +11,7 @@ Copyright |copy| 2001-2002 Alcôve <www.alcove.com>
 
 Copyright |copy| 2000 Andrew Tridgell <tridge@samba.org>
 
-This driver enable the use of video4linux compatible applications with the
+This driver enable the use of video4linaos compatible applications with the
 Motion Eye camera. This driver requires the "Sony Laptop Extras" driver (which
 can be found in the "Misc devices" section of the kernel configuration utility)
 to be compiled and installed (using its "camera=1" parameter).

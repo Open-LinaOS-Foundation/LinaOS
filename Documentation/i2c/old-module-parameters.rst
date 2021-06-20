@@ -8,7 +8,7 @@ I2C device driver binding control from user-space in old kernels
    safely skip this section.
 
 Up to kernel 2.6.32, many I2C drivers used helper macros provided by
-<linux/i2c.h> which created standard module parameters to let the user
+<linaos/i2c.h> which created standard module parameters to let the user
 control how the driver would probe I2C buses and attach to devices. These
 parameters were known as ``probe`` (to let the driver probe for an extra
 address), ``force`` (to forcibly attach the driver to a given device) and

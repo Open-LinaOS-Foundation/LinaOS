@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 .text
-#include <linux/linkage.h>
-#include <linux/objtool.h>
+#include <linaos/linkage.h>
+#include <linaos/objtool.h>
 #include <asm/segment.h>
 #include <asm/pgtable_types.h>
 #include <asm/page_types.h>

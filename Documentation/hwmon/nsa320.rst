@@ -19,7 +19,7 @@ Supported chips:
 
 Author:
 
-  Adam Baker <linux@baker-net.org.uk>
+  Adam Baker <linaos@baker-net.org.uk>
 
 Description
 -----------

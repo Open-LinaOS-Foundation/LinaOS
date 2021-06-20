@@ -1,5 +1,5 @@
 /**************************************************************************
- * Initio 9100 device driver for Linux.
+ * Initio 9100 device driver for LinaOS.
  *
  * Copyright (c) 1994-1998 Initio Corporation
  * All rights reserved.
@@ -35,7 +35,7 @@
  **************************************************************************/
 
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define TOTAL_SG_ENTRY		32
 #define MAX_SUPPORTED_ADAPTERS  8

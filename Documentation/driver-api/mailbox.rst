@@ -13,7 +13,7 @@ platforms employ, say, PL320 controller, the client drivers can't
 be shared across them. Even the PL320 driver might need to accommodate
 some platform specific quirks. So the API is meant mainly to avoid
 similar copies of code written for each platform. Having said that,
-nothing prevents the remote f/w to also be Linux based and use the
+nothing prevents the remote f/w to also be LinaOS based and use the
 same api there. However none of that helps us locally because we only
 ever deal at client's protocol level.
 
@@ -22,7 +22,7 @@ peculiarity of this "common" framework.
 
 
 
-Controller Driver (See include/linux/mailbox_controller.h)
+Controller Driver (See include/linaos/mailbox_controller.h)
 ==========================================================
 
 
@@ -36,7 +36,7 @@ the controller driver should set via 'txdone_irq' or 'txdone_poll'
 or neither.
 
 
-Client Driver (See include/linux/mailbox_client.h)
+Client Driver (See include/linaos/mailbox_client.h)
 ==================================================
 
 

@@ -10,15 +10,15 @@
  * Copyright (C) 2015 Renesas Electronics Corp.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
 
 #include "rcar-cpg-lib.h"
 

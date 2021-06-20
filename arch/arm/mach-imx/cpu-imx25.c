@@ -5,10 +5,10 @@
  * Copyright (c) 2009 Daniel Mack <daniel@caiaq.de>
  * Copyright (C) 2011 Freescale Semiconductor, Inc. All Rights Reserved
  */
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 
 #include "iim.h"
 #include "hardware.h"

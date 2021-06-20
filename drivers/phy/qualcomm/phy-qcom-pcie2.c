@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2014-2017, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014-2017, The LinaOS Foundation. All rights reserved.
  * Copyright (c) 2019, Linaro Ltd.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
+#include <linaos/slab.h>
 
 #include <dt-bindings/phy/phy.h>
 

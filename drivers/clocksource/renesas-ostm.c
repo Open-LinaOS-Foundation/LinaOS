@@ -6,11 +6,11 @@
  * Copyright (C) 2017 Chris Brandt
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/sched_clock.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/clockchips.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched_clock.h>
+#include <linaos/slab.h>
 
 #include "timer-of.h"
 

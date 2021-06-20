@@ -2,8 +2,8 @@
 #ifndef _NET_DN_FIB_H
 #define _NET_DN_FIB_H
 
-#include <linux/netlink.h>
-#include <linux/refcount.h>
+#include <linaos/netlink.h>
+#include <linaos/refcount.h>
 
 extern const struct nla_policy rtm_dn_policy[];
 

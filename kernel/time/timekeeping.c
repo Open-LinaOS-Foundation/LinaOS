@@ -3,25 +3,25 @@
  *  Kernel timekeeping code and accessor functions. Based on code from
  *  timer.c, moved in commit 8524070b7982.
  */
-#include <linux/timekeeper_internal.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/nmi.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/clock.h>
-#include <linux/syscore_ops.h>
-#include <linux/clocksource.h>
-#include <linux/jiffies.h>
-#include <linux/time.h>
-#include <linux/tick.h>
-#include <linux/stop_machine.h>
-#include <linux/pvclock_gtod.h>
-#include <linux/compiler.h>
-#include <linux/audit.h>
+#include <linaos/timekeeper_internal.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/percpu.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/nmi.h>
+#include <linaos/sched.h>
+#include <linaos/sched/loadavg.h>
+#include <linaos/sched/clock.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/clocksource.h>
+#include <linaos/jiffies.h>
+#include <linaos/time.h>
+#include <linaos/tick.h>
+#include <linaos/stop_machine.h>
+#include <linaos/pvclock_gtod.h>
+#include <linaos/compiler.h>
+#include <linaos/audit.h>
 
 #include "tick-internal.h"
 #include "ntp_internal.h"

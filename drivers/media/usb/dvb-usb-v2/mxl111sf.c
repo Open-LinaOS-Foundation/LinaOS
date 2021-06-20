@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (C) 2010-2014 Michael Krufky (mkrufky@linuxtv.org)
+ * Copyright (C) 2010-2014 Michael Krufky (mkrufky@linaostv.org)
  *
  * see Documentation/driver-api/media/drivers/dvb-usb.rst for more information
  */
 
-#include <linux/vmalloc.h>
-#include <linux/i2c.h>
+#include <linaos/vmalloc.h>
+#include <linaos/i2c.h>
 #include <media/tuner.h>
 
 #include "mxl111sf.h"
@@ -1448,7 +1448,7 @@ static struct usb_driver mxl111sf_usb_driver = {
 
 module_usb_driver(mxl111sf_usb_driver);
 
-MODULE_AUTHOR("Michael Krufky <mkrufky@linuxtv.org>");
+MODULE_AUTHOR("Michael Krufky <mkrufky@linaostv.org>");
 MODULE_DESCRIPTION("Driver for MaxLinear MxL111SF");
 MODULE_VERSION("1.0");
 MODULE_LICENSE("GPL");

@@ -9,13 +9,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/pci_ids.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/pci_ids.h>
+#include <linaos/types.h>
 
 struct system76_data {
 	struct acpi_device *acpi_dev;

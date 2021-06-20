@@ -4,13 +4,13 @@
  *
  *  Copyright (C) 2006  Paul Mundt
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
-#include <linux/serial_sci.h>
-#include <linux/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/serial.h>
+#include <linaos/sh_timer.h>
+#include <linaos/sh_intc.h>
+#include <linaos/serial_sci.h>
+#include <linaos/io.h>
 #include <asm/platform_early.h>
 
 enum {

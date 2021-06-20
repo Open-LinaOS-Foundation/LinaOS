@@ -11,16 +11,16 @@
  *  - http://www.intersil.com/content/dam/Intersil/documents/isl2/isl29030.pdf
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/regmap.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/pm_runtime.h>
 
 #define ISL29028_CONV_TIME_MS			100
 

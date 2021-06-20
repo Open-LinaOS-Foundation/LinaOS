@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/plat-omap/debug-leds.c
+ * linaos/arch/arm/plat-omap/debug-leds.c
  *
  * Copyright 2011 by Bryan Wu <bryan.wu@canonical.com>
  * Copyright 2003 by Texas Instruments Incorporated
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/io.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/leds.h>
+#include <linaos/io.h>
+#include <linaos/platform_data/gpio-omap.h>
+#include <linaos/slab.h>
 
 #include <asm/mach-types.h>
 

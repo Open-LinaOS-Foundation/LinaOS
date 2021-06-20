@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI__LINUX_NETFILTER_H
 #define _UAPI__LINUX_NETFILTER_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
 
 /* Responses from hook functions. */
 #define NF_DROP 0

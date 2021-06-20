@@ -9,20 +9,20 @@
  * Copyright (C) 2018 Lubomir Rintel <lkundrak@v3.sk>
  */
 
-#include <linux/completion.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/kfifo.h>
-#include <linux/module.h>
-#include <linux/olpc-ec.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/spi/spi.h>
+#include <linaos/completion.h>
+#include <linaos/ctype.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/input.h>
+#include <linaos/kfifo.h>
+#include <linaos/module.h>
+#include <linaos/olpc-ec.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/spi/spi.h>
 
 struct ec_cmd_t {
 	u8 cmd;

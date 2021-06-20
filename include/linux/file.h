@@ -6,10 +6,10 @@
 #ifndef __LINUX_FILE_H
 #define __LINUX_FILE_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/posix_types.h>
-#include <linux/errno.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
+#include <linaos/posix_types.h>
+#include <linaos/errno.h>
 
 struct file;
 

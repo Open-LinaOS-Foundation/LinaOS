@@ -11,7 +11,7 @@
 #ifndef __AA_NAMESPACE_H
 #define __AA_NAMESPACE_H
 
-#include <linux/kref.h>
+#include <linaos/kref.h>
 
 #include "apparmor.h"
 #include "apparmorfs.h"

@@ -2,8 +2,8 @@
 #ifndef _LINUX_TASK_WORK_H
 #define _LINUX_TASK_WORK_H
 
-#include <linux/list.h>
-#include <linux/sched.h>
+#include <linaos/list.h>
+#include <linaos/sched.h>
 
 typedef void (*task_work_func_t)(struct callback_head *);
 

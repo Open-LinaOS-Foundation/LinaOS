@@ -16,7 +16,7 @@ when it is convenient.  Beyond that, much of the kernel's documentation is
 found in the source as kerneldoc comments; those are usually (but not
 always) maintained by the relevant subsystem maintainer.
 
-The mailing list for documentation is linux-doc@vger.kernel.org.  Patches
+The mailing list for documentation is linaos-doc@vger.kernel.org.  Patches
 should be made against the docs-next tree whenever possible.
 
 Submit checklist addendum

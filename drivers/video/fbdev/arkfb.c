@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/arkfb.c -- Frame buffer device driver for ARK 2000PV
+ *  linaos/drivers/video/arkfb.c -- Frame buffer device driver for ARK 2000PV
  *  with ICS 5342 dac (it is easy to add support for different dacs).
  *
  *  Copyright (c) 2007 Ondrej Zajicek <santiago@crfreenet.org>
@@ -11,19 +11,19 @@
  *  Code is based on s3fb
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/svga.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/console.h> /* Why should fb driver call console functions? because console_lock() */
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/tty.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/svga.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/console.h> /* Why should fb driver call console functions? because console_lock() */
 #include <video/vga.h>
 
 struct arkfb_info {

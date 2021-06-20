@@ -8,7 +8,7 @@
 #ifndef __ASM_THREAD_INFO_H
 #define __ASM_THREAD_INFO_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #ifndef __ASSEMBLY__
 

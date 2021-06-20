@@ -31,7 +31,7 @@
  *
  */
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include <net/ipv6.h>
 #include "en_accel/tls.h"
 #include "accel/tls.h"

@@ -33,9 +33,9 @@
  * reverse-engineering activity
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>

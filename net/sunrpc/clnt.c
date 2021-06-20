@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/net/sunrpc/clnt.c
+ *  linaos/net/sunrpc/clnt.c
  *
  *  This file contains the high-level RPC interface.
  *  It is modeled as a finite state machine to support both synchronous
@@ -19,25 +19,25 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kallsyms.h>
-#include <linux/mm.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
-#include <linux/utsname.h>
-#include <linux/workqueue.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/un.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kallsyms.h>
+#include <linaos/mm.h>
+#include <linaos/namei.h>
+#include <linaos/mount.h>
+#include <linaos/slab.h>
+#include <linaos/rcupdate.h>
+#include <linaos/utsname.h>
+#include <linaos/workqueue.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/un.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/sunrpc/metrics.h>
-#include <linux/sunrpc/bc_xprt.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/sunrpc/rpc_pipe_fs.h>
+#include <linaos/sunrpc/metrics.h>
+#include <linaos/sunrpc/bc_xprt.h>
 #include <trace/events/sunrpc.h>
 
 #include "sunrpc.h"

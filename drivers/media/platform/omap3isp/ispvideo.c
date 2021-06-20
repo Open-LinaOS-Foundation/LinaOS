@@ -10,14 +10,14 @@
  *	     Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-#include <linux/clk.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/scatterlist.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/clk.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/pagemap.h>
+#include <linaos/scatterlist.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 #include <media/v4l2-dev.h>
 #include <media/v4l2-ioctl.h>

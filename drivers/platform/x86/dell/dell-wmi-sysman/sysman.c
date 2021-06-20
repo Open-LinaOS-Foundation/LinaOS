@@ -7,15 +7,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fs.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/wmi.h>
+#include <linaos/fs.h>
+#include <linaos/dmi.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/wmi.h>
 #include "dell-wmi-sysman.h"
 
 #define MAX_TYPES  4
-#include <linux/nls.h>
+#include <linaos/nls.h>
 
 static struct class firmware_attributes_class = {
 	.name = "firmware-attributes",

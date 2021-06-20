@@ -5,7 +5,7 @@
  *
  *  adapted from:
  *      sd.c Copyright (C) 1992 Drew Eckhardt
- *      Linux scsi disk driver by
+ *      LinaOS scsi disk driver by
  *              Drew Eckhardt <drew@colorado.edu>
  *
  *	Modified by Eric Youngdale ericy@andante.org to
@@ -33,23 +33,23 @@
  *	check resource allocation in sr_init and some cleanups
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bio.h>
-#include <linux/compat.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/cdrom.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/blk-pm.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/bio.h>
+#include <linaos/compat.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/cdrom.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-pm.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/uaccess.h>
 
 #include <asm/unaligned.h>
 

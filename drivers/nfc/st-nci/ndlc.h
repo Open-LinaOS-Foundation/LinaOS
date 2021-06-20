@@ -8,7 +8,7 @@
 #ifndef __LOCAL_NDLC_H_
 #define __LOCAL_NDLC_H_
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/nfc/nfc.h>
 
 struct st_nci_se_status;

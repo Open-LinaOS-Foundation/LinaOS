@@ -7,7 +7,7 @@
 #if !defined(_TRACE_EVENTS_SYSCALLS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_EVENTS_SYSCALLS_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #include <asm/ptrace.h>
 #include <asm/syscall.h>

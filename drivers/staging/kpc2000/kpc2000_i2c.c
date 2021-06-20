@@ -9,24 +9,24 @@
  *	Philip Edelbrock <phil@netroedge.com>,
  *	Mark D. Studebaker <mdsxyz123@yahoo.com>
  * Copyright (C) 2007 - 2012
- *	Jean Delvare <khali@linux-fr.org>
+ *	Jean Delvare <khali@linaos-fr.org>
  * Copyright (C) 2010 Intel Corporation
  *	David Woodhouse <dwmw2@infradead.org>
  * Copyright (C) 2014-2018 Daktronics
  *	Matt Sickler <matt.sickler@daktronics.com>,
  *	Jordon Hofer <jordon.hofer@daktronics.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/fs.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
 #include "kpc.h"
 
 MODULE_LICENSE("GPL");
@@ -102,7 +102,7 @@ struct kpc_i2c {
 #define STATUS_FLAGS	(SMBHSTSTS_BYTE_DONE | SMBHSTSTS_FAILED | \
 			 SMBHSTSTS_BUS_ERR | SMBHSTSTS_DEV_ERR | SMBHSTSTS_INTR)
 
-/* Older devices have their ID defined in <linux/pci_ids.h> */
+/* Older devices have their ID defined in <linaos/pci_ids.h> */
 #define PCI_DEVICE_ID_INTEL_COUGARPOINT_SMBUS       0x1c22
 #define PCI_DEVICE_ID_INTEL_PATSBURG_SMBUS          0x1d22
 /* Patsburg also has three 'Integrated Device Function' SMBus controllers */
@@ -591,7 +591,7 @@ static u32 i801_func(struct i2c_adapter *adapter)
 	 * I2C_FUNC_SMBUS_READ_I2C_BLOCK : 0);
 	 */
 
-	// http://lxr.free-electrons.com/source/include/uapi/linux/i2c.h#L85
+	// http://lxr.free-electrons.com/source/include/uapi/linaos/i2c.h#L85
 
 	u32 f =
 		enable_flag(I2C_FUNC_I2C) | /* 0x00000001(I enabled this one) */

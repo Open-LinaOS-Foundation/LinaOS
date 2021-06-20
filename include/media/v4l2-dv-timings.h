@@ -8,7 +8,7 @@
 #ifndef __V4L2_DV_TIMINGS_H
 #define __V4L2_DV_TIMINGS_H
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 
 /**
  * v4l2_calc_timeperframe - helper function to calculate timeperframe based

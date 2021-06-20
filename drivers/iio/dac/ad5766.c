@@ -4,13 +4,13 @@
  * Digital to Analog Converters driver
  * Copyright 2019-2020 Analog Devices Inc.
  */
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <linaos/bitfield.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
 #include <asm/unaligned.h>
 
 #define AD5766_UPPER_WORD_SPI_MASK		GENMASK(31, 16)

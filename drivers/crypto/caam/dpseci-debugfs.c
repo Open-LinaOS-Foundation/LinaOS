@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause)
 /* Copyright 2019 NXP */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/debugfs.h>
 #include "dpseci-debugfs.h"
 
 static int dpseci_dbg_fqs_show(struct seq_file *file, void *offset)

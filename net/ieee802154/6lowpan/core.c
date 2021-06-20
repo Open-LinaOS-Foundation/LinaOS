@@ -44,9 +44,9 @@
  * SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/ieee802154.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/ieee802154.h>
 
 #include <net/ipv6.h>
 

@@ -8,9 +8,9 @@
 #ifndef __NET_MPTCP_H
 #define __NET_MPTCP_H
 
-#include <linux/skbuff.h>
-#include <linux/tcp.h>
-#include <linux/types.h>
+#include <linaos/skbuff.h>
+#include <linaos/tcp.h>
+#include <linaos/types.h>
 
 struct seq_file;
 

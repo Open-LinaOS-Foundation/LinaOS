@@ -22,22 +22,22 @@
  * Thanks to Jan Volkering
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/util_macros.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/jiffies.h>
+#include <linaos/of_device.h>
+#include <linaos/of.h>
+#include <linaos/delay.h>
+#include <linaos/util_macros.h>
+#include <linaos/regmap.h>
 
-#include <linux/platform_data/ina2xx.h>
+#include <linaos/platform_data/ina2xx.h>
 
 /* common register definitions */
 #define INA2XX_CONFIG			0x00

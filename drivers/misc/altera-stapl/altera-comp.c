@@ -9,7 +9,7 @@
  * Copyright (C) 2010 Igor M. Liplianin <liplianin@netup.ru>
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "altera-exprt.h"
 
 #define	SHORT_BITS		16

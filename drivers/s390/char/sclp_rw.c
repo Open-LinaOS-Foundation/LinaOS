@@ -8,13 +8,13 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kmod.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/ctype.h>
-#include <linux/uaccess.h>
+#include <linaos/kmod.h>
+#include <linaos/types.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
+#include <linaos/spinlock.h>
+#include <linaos/ctype.h>
+#include <linaos/uaccess.h>
 
 #include "sclp.h"
 #include "sclp_rw.h"

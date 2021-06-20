@@ -6,7 +6,7 @@
 #define FIXADDR_END		0xfff00000UL
 #define FIXADDR_TOP		(FIXADDR_END - PAGE_SIZE)
 
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm/kmap_size.h>
 
 enum fixed_addresses {

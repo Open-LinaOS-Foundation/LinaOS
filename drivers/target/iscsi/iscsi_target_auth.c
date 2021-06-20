@@ -4,16 +4,16 @@
  *
  * (c) Copyright 2007-2013 Datera, Inc.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@linaos-iscsi.org>
  *
  ******************************************************************************/
 
 #include <crypto/hash.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/err.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/err.h>
+#include <linaos/random.h>
+#include <linaos/scatterlist.h>
 #include <target/iscsi/iscsi_target_core.h>
 #include "iscsi_target_nego.h"
 #include "iscsi_target_auth.h"

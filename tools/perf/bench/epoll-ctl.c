@@ -15,8 +15,8 @@
 #include <signal.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
 #include <sys/time.h>
 #include <sys/resource.h>
 #include <sys/epoll.h>

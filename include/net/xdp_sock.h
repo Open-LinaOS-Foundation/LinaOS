@@ -6,11 +6,11 @@
 #ifndef _LINUX_XDP_SOCK_H
 #define _LINUX_XDP_SOCK_H
 
-#include <linux/workqueue.h>
-#include <linux/if_xdp.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
+#include <linaos/workqueue.h>
+#include <linaos/if_xdp.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm.h>
 #include <net/sock.h>
 
 struct net_device;

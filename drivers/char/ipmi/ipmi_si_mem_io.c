@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include "ipmi_si.h"
 
 static unsigned char intf_mem_inb(const struct si_sm_io *io,

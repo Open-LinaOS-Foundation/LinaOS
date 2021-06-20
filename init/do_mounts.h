@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/major.h>
-#include <linux/root_dev.h>
-#include <linux/init_syscalls.h>
+#include <linaos/kernel.h>
+#include <linaos/blkdev.h>
+#include <linaos/init.h>
+#include <linaos/syscalls.h>
+#include <linaos/unistd.h>
+#include <linaos/slab.h>
+#include <linaos/mount.h>
+#include <linaos/major.h>
+#include <linaos/root_dev.h>
+#include <linaos/init_syscalls.h>
 
 void  mount_block_root(char *name, int flags);
 void  mount_root(void);

@@ -6,15 +6,15 @@
  *	Mason Yang <masonccyang@mxic.com.tw>
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/nand-ecc-sw-hamming.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/platform_device.h>
 
 #include "internals.h"
 

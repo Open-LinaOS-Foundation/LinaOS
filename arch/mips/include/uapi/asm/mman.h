@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -27,17 +27,17 @@
 /*
  * Flags for mmap
  */
-/* 0x01 - 0x03 are defined in linux/mman.h */
+/* 0x01 - 0x03 are defined in linaos/mman.h */
 #define MAP_TYPE	0x00f		/* Mask for type of mapping */
 #define MAP_FIXED	0x010		/* Interpret addr exactly */
 
-/* not used by linux, but here to make sure we don't clash with ABI defines */
+/* not used by linaos, but here to make sure we don't clash with ABI defines */
 #define MAP_RENAME	0x020		/* Assign page to file */
 #define MAP_AUTOGROW	0x040		/* File may grow by writing */
 #define MAP_LOCAL	0x080		/* Copy on fork/sproc */
 #define MAP_AUTORSRV	0x100		/* Logical swap reserved on demand */
 
-/* These are linux-specific */
+/* These are linaos-specific */
 #define MAP_NORESERVE	0x0400		/* don't check for reservations */
 #define MAP_ANONYMOUS	0x0800		/* don't use a file */
 #define MAP_GROWSDOWN	0x1000		/* stack-like segment */

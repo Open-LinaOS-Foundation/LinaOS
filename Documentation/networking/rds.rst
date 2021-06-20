@@ -436,7 +436,7 @@ Multipath RDS (mprds)
   port 0) with the ping packet having a rds extension header option  of
   type RDS_EXTHDR_NPATHS, length 2 bytes, and the value is the
   number of paths supported by the sender. The "probe" ping packet will
-  get sent from some reserved port, RDS_FLAG_PROBE_PORT (in <linux/rds.h>)
+  get sent from some reserved port, RDS_FLAG_PROBE_PORT (in <linaos/rds.h>)
   The receiver of a ping from RDS_FLAG_PROBE_PORT will thus immediately
   be able to compute the min(sender_paths, rcvr_paths). The pong
   sent in response to a probe-ping should contain the rcvr's npaths

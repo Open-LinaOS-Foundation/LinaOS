@@ -5,7 +5,7 @@
  * Copyright (C) 2005-2011  NTT DATA CORPORATION
  */
 
-#include <linux/security.h>
+#include <linaos/security.h>
 #include "common.h"
 
 /**

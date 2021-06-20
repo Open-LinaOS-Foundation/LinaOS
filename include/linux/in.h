@@ -15,8 +15,8 @@
 #define _LINUX_IN_H
 
 
-#include <linux/errno.h>
-#include <uapi/linux/in.h>
+#include <linaos/errno.h>
+#include <uapi/linaos/in.h>
 
 static inline int proto_ports_offset(int proto)
 {

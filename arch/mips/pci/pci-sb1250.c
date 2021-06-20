@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * Copyright (C) 2001,2002,2003 Broadcom Corporation
- * Copyright (C) 2004 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2004 by Ralf Baechle (ralf@linaos-mips.org)
  */
 
 /*
  * BCM1250-specific PCI support
  *
- * This module provides the glue between Linux's PCI subsystem
+ * This module provides the glue between LinaOS's PCI subsystem
  * and the hardware.  We basically provide glue for accessing
  * configuration space, and set up the translation for I/O
  * space accesses.
@@ -17,14 +17,14 @@
  * kernel mapped memory.  Hopefully neither of these should be a huge
  * problem.
  */
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/vt.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/console.h>
+#include <linaos/tty.h>
+#include <linaos/vt.h>
 
 #include <asm/io.h>
 
@@ -238,7 +238,7 @@ static int __init sb1250_pcibios_init(void)
 	 * space.  Use "match bytes" policy to make everything look
 	 * little-endian.  So, you need to also set
 	 * CONFIG_SWAP_IO_SPACE, but this is the combination that
-	 * works correctly with most of Linux's drivers.
+	 * works correctly with most of LinaOS's drivers.
 	 * XXX ehs: Should this happen in PCI Device mode?
 	 */
 	io_map_base = ioremap(A_PHYS_LDTPCI_IO_MATCH_BYTES, 1024 * 1024);

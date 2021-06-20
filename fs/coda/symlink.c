@@ -2,23 +2,23 @@
 /*
  * Symlink inode operations for Coda filesystem
  * Original version: (C) 1996 P. Braam and M. Callahan
- * Rewritten for Linux 2.1. (C) 1997 Carnegie Mellon University
+ * Rewritten for LinaOS 2.1. (C) 1997 Carnegie Mellon University
  * 
  * Carnegie Mellon encourages users to contribute improvements to
  * the Coda project. Contact Peter Braam (coda@cs.cmu.edu).
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/pagemap.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/time.h>
+#include <linaos/fs.h>
+#include <linaos/stat.h>
+#include <linaos/errno.h>
+#include <linaos/pagemap.h>
 
-#include <linux/coda.h>
+#include <linaos/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_linaos.h"
 
 static int coda_symlink_filler(struct file *file, struct page *page)
 {

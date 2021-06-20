@@ -10,8 +10,8 @@
 
 #include <media/dvb_frontend.h>
 #include "tda10071.h"
-#include <linux/firmware.h>
-#include <linux/regmap.h>
+#include <linaos/firmware.h>
+#include <linaos/regmap.h>
 
 struct tda10071_dev {
 	struct dvb_frontend fe;

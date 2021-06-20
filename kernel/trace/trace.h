@@ -3,23 +3,23 @@
 #ifndef _LINUX_KERNEL_TRACE_H
 #define _LINUX_KERNEL_TRACE_H
 
-#include <linux/fs.h>
-#include <linux/atomic.h>
-#include <linux/sched.h>
-#include <linux/clocksource.h>
-#include <linux/ring_buffer.h>
-#include <linux/mmiotrace.h>
-#include <linux/tracepoint.h>
-#include <linux/ftrace.h>
-#include <linux/trace.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/trace_seq.h>
-#include <linux/trace_events.h>
-#include <linux/compiler.h>
-#include <linux/glob.h>
-#include <linux/irq_work.h>
-#include <linux/workqueue.h>
-#include <linux/ctype.h>
+#include <linaos/fs.h>
+#include <linaos/atomic.h>
+#include <linaos/sched.h>
+#include <linaos/clocksource.h>
+#include <linaos/ring_buffer.h>
+#include <linaos/mmiotrace.h>
+#include <linaos/tracepoint.h>
+#include <linaos/ftrace.h>
+#include <linaos/trace.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/trace_seq.h>
+#include <linaos/trace_events.h>
+#include <linaos/compiler.h>
+#include <linaos/glob.h>
+#include <linaos/irq_work.h>
+#include <linaos/workqueue.h>
+#include <linaos/ctype.h>
 
 #ifdef CONFIG_FTRACE_SYSCALLS
 #include <asm/unistd.h>		/* For NR_SYSCALLS	     */
@@ -1692,7 +1692,7 @@ struct event_trigger_ops {
  *	commands need to do this if they themselves log to the trace
  *	buffer (see the @post_trigger() member below).  @trigger_type
  *	values are defined by adding new values to the trigger_type
- *	enum in include/linux/trace_events.h.
+ *	enum in include/linaos/trace_events.h.
  *
  * @flags: See the enum event_command_flags below.
  *

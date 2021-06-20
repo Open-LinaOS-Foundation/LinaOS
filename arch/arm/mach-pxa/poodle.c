@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/poodle.c
+ * linaos/arch/arm/mach-pxa/poodle.c
  *
  *  Support for the SHARP Poodle Board.
  *
  * Based on:
- *  linux/arch/arm/mach-pxa/lubbock.c Author:	Nicolas Pitre
+ *  linaos/arch/arm/mach-pxa/lubbock.c Author:	Nicolas Pitre
  *
  * Change Log
  *  12-Dec-2002 Sharp Corporation for Poodle
  *  John Lenz <lenz@cs.wisc.edu> updates to 2.6
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/pm.h>
-#include <linux/delay.h>
-#include <linux/mtd/physmap.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/regulator/machine.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/mtd/sharpsl.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/platform_device.h>
+#include <linaos/fb.h>
+#include <linaos/pm.h>
+#include <linaos/delay.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/i2c-pxa.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/ads7846.h>
+#include <linaos/spi/pxa2xx_spi.h>
+#include <linaos/mtd/sharpsl.h>
+#include <linaos/memblock.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>
@@ -40,11 +40,11 @@
 #include <asm/mach/irq.h>
 
 #include "pxa25x.h"
-#include <linux/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/mmc-pxamci.h>
 #include "udc.h"
-#include <linux/platform_data/irda-pxaficp.h>
+#include <linaos/platform_data/irda-pxaficp.h>
 #include <mach/poodle.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <linaos/platform_data/video-pxafb.h>
 
 #include <asm/hardware/scoop.h>
 #include <asm/hardware/locomo.h>

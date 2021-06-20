@@ -7,35 +7,35 @@
  * and only uses a centralized lock to manage a pool of partial slabs.
  *
  * (C) 2007 SGI, Christoph Lameter
- * (C) 2011 Linux Foundation, Christoph Lameter
+ * (C) 2011 LinaOS Foundation, Christoph Lameter
  */
 
-#include <linux/mm.h>
-#include <linux/swap.h> /* struct reclaim_state */
-#include <linux/module.h>
-#include <linux/bit_spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/swab.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h> /* struct reclaim_state */
+#include <linaos/module.h>
+#include <linaos/bit_spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/swab.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
 #include "slab.h"
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/kasan.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/mempolicy.h>
-#include <linux/ctype.h>
-#include <linux/debugobjects.h>
-#include <linux/kallsyms.h>
-#include <linux/kfence.h>
-#include <linux/memory.h>
-#include <linux/math64.h>
-#include <linux/fault-inject.h>
-#include <linux/stacktrace.h>
-#include <linux/prefetch.h>
-#include <linux/memcontrol.h>
-#include <linux/random.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/kasan.h>
+#include <linaos/cpu.h>
+#include <linaos/cpuset.h>
+#include <linaos/mempolicy.h>
+#include <linaos/ctype.h>
+#include <linaos/debugobjects.h>
+#include <linaos/kallsyms.h>
+#include <linaos/kfence.h>
+#include <linaos/memory.h>
+#include <linaos/math64.h>
+#include <linaos/fault-inject.h>
+#include <linaos/stacktrace.h>
+#include <linaos/prefetch.h>
+#include <linaos/memcontrol.h>
+#include <linaos/random.h>
 
 #include <trace/events/kmem.h>
 

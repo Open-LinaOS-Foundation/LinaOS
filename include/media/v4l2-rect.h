@@ -8,7 +8,7 @@
 #ifndef _V4L2_RECT_H_
 #define _V4L2_RECT_H_
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 
 /**
  * v4l2_rect_set_size_to() - copy the width/height values.

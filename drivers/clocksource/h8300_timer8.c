@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/h8300/kernel/cpu/timer/timer8.c
+ *  linaos/arch/h8300/kernel/cpu/timer/timer8.c
  *
  *  Yoshinori Sato <ysato@users.sourcefoge.jp>
  *
@@ -8,16 +8,16 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/clockchips.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/clockchips.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
 #define _8TCR	0
 #define _8TCSR	2

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/zorro.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/zorro.h>
+#include <linaos/module.h>
 
 #include <asm/page.h>
 #include <asm/amigaints.h>

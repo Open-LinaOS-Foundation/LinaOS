@@ -9,7 +9,7 @@
 .. _it_kernel_hacking_hack:
 
 =================================================
-L'inaffidabile guida all'hacking del kernel Linux
+L'inaffidabile guida all'hacking del kernel LinaOS
 =================================================
 
 :Author: Rusty Russell
@@ -18,7 +18,7 @@ Introduzione
 ============
 
 Benvenuto, gentile lettore, alla notevole ed inaffidabile guida all'hacking
-del kernel Linux ad opera di Rusty. Questo documento descrive le procedure
+del kernel LinaOS ad opera di Rusty. Questo documento descrive le procedure
 più usate ed i concetti necessari per scrivere codice per il kernel: lo scopo
 è di fornire ai programmatori C più esperti un manuale di base per sviluppo.
 Eviterò dettagli implementativi: per questo abbiamo il codice,
@@ -70,7 +70,7 @@ vostro processo. Potete sospendere l'esecuzione chiamando :c:func:`schedule()`.
 
 Nel contesto utente, il puntatore ``current`` (il quale indica il processo al
 momento in esecuzione) è valido, e :c:func:`in_interrupt()`
-(``include/linux/preempt.h``) è falsa.
+(``include/linaos/preempt.h``) è falsa.
 
 .. warning::
 
@@ -113,14 +113,14 @@ sistemi. Non appena abbandonammo i computer raffazzonati con fiammiferi e
 cicche, abbandonammo anche questa limitazione e migrammo alle interruzioni
 software 'softirqs'.
 
-Il file ``include/linux/interrupt.h`` elenca i differenti tipi di 'softirq'.
-Un tipo di softirq molto importante è il timer (``include/linux/timer.h``):
+Il file ``include/linaos/interrupt.h`` elenca i differenti tipi di 'softirq'.
+Un tipo di softirq molto importante è il timer (``include/linaos/timer.h``):
 potete programmarlo per far si che esegua funzioni dopo un determinato
 periodo di tempo.
 
 Dato che i softirq possono essere eseguiti simultaneamente su più di un
 processore, spesso diventa estenuante l'averci a che fare. Per questa ragione,
-i tasklet (``include/linux/interrupt.h``) vengo usati più di frequente:
+i tasklet (``include/linaos/interrupt.h``) vengo usati più di frequente:
 possono essere registrati dinamicamente (il che significa che potete averne
 quanti ne volete), e garantiscono che un qualsiasi tasklet verrà eseguito
 solo su un processore alla volta, sebbene diversi tasklet possono essere
@@ -133,7 +133,7 @@ eseguiti simultaneamente.
     con qualche pessima vodka che Alexey Kuznetsov si fece a quel tempo.
 
 Potete determinate se siete in un softirq (o tasklet) utilizzando la
-macro :c:func:`in_softirq()` (``include/linux/preempt.h``).
+macro :c:func:`in_softirq()` (``include/linaos/preempt.h``).
 
 .. warning::
 
@@ -164,7 +164,7 @@ Un limite rigido dello stack
     Evitare profonde ricorsioni ad enormi array locali nello stack
     (allocateli dinamicamente).
 
-Il kernel Linux è portabile
+Il kernel LinaOS è portabile
     Quindi mantenetelo tale. Il vostro codice dovrebbe essere a 64-bit ed
     indipendente dall'ordine dei byte (endianess) di un processore. Inoltre,
     dovreste minimizzare il codice specifico per un processore; per esempio
@@ -196,11 +196,11 @@ considerate l'implementazione di un'interfaccia :c:func:`sysfs()`.
 All'interno di una ioctl vi trovate nel contesto utente di un processo. Quando
 avviene un errore dovete ritornare un valore negativo di errno (consultate
 ``include/uapi/asm-generic/errno-base.h``,
-``include/uapi/asm-generic/errno.h`` e ``include/linux/errno.h``), altrimenti
+``include/uapi/asm-generic/errno.h`` e ``include/linaos/errno.h``), altrimenti
 ritornate 0.
 
 Dopo aver dormito dovreste verificare se ci sono stati dei segnali: il modo
-Unix/Linux di gestire un segnale è di uscire temporaneamente dalla chiamata
+Unix/LinaOS di gestire un segnale è di uscire temporaneamente dalla chiamata
 di sistema con l'errore ``-ERESTARTSYS``. La chiamata di sistema ritornerà
 al contesto utente, eseguirà il gestore del segnale e poi la vostra chiamata
 di sistema riprenderà (a meno che l'utente non l'abbia disabilitata). Quindi,
@@ -253,7 +253,7 @@ Alcune delle procedure più comuni
 :c:func:`printk()`
 ------------------
 
-Definita in ``include/linux/printk.h``
+Definita in ``include/linaos/printk.h``
 
 :c:func:`printk()` fornisce messaggi alla console, dmesg, e al demone syslog.
 Essa è utile per il debugging o per la notifica di errori; può essere
@@ -265,7 +265,7 @@ per indicare la "priorità"::
 
     printk(KERN_INFO "i = %u\n", i);
 
-Consultate ``include/linux/kern_levels.h`` per gli altri valori ``KERN_``;
+Consultate ``include/linaos/kern_levels.h`` per gli altri valori ``KERN_``;
 questi sono interpretati da syslog come livelli. Un caso speciale:
 per stampare un indirizzo IP usate::
 
@@ -290,7 +290,7 @@ eventuali sforamenti. Accertatevi che vi basti.
 :c:func:`copy_to_user()` / :c:func:`copy_from_user()` / :c:func:`get_user()` / :c:func:`put_user()`
 ---------------------------------------------------------------------------------------------------
 
-Definite in ``include/linux/uaccess.h`` / ``asm/uaccess.h``
+Definite in ``include/linaos/uaccess.h`` / ``asm/uaccess.h``
 
 **[DORMONO]**
 
@@ -318,7 +318,7 @@ disabilitate, o con uno spinlock trattenuto.
 :c:func:`kmalloc()`/:c:func:`kfree()`
 -------------------------------------
 
-Definite in ``include/linux/slab.h``
+Definite in ``include/linaos/slab.h``
 
 **[POTREBBERO DORMIRE: LEGGI SOTTO]**
 
@@ -348,7 +348,7 @@ d'allocazione dormiente da un contesto d'interruzione senza ``GFP_ATOMIC``.
 Dovreste correggerlo. Sbrigatevi, non cincischiate.
 
 Se allocate almeno ``PAGE_SIZE``(``asm/page.h`` o ``asm/page_types.h``) byte,
-considerate l'uso di :c:func:`__get_free_pages()` (``include/linux/gfp.h``).
+considerate l'uso di :c:func:`__get_free_pages()` (``include/linaos/gfp.h``).
 Accetta un argomento che definisce l'ordine (0 per per la dimensione di una
 pagine, 1 per una doppia pagina, 2 per quattro pagine, eccetra) e le stesse
 opzioni d'allocazione viste precedentemente.
@@ -360,14 +360,14 @@ la MMU vi darà l'impressione che lo sia (quindi, sarà contiguo solo dal punto
 di vista dei processori, non dal punto di vista dei driver dei dispositivi
 esterni).
 Se per qualche strana ragione avete davvero bisogno di una grossa quantità di
-memoria fisica contigua, avete un problema: Linux non ha un buon supporto per
+memoria fisica contigua, avete un problema: LinaOS non ha un buon supporto per
 questo caso d'uso perché, dopo un po' di tempo, la frammentazione della memoria
 rende l'operazione difficile. Il modo migliore per allocare un simile blocco
 all'inizio dell'avvio del sistema è attraverso la procedura
 :c:func:`alloc_bootmem()`.
 
 Prima di inventare la vostra cache per gli oggetti più usati, considerate
-l'uso di una cache slab disponibile in ``include/linux/slab.h``.
+l'uso di una cache slab disponibile in ``include/linaos/slab.h``.
 
 :c:macro:`current`
 -------------------
@@ -383,7 +383,7 @@ Nel contesto d'interruzione in suo valore **non è NULL**.
 :c:func:`mdelay()`/:c:func:`udelay()`
 -------------------------------------
 
-Definite in ``include/asm/delay.h`` / ``include/linux/delay.h``
+Definite in ``include/asm/delay.h`` / ``include/linaos/delay.h``
 
 Le funzioni :c:func:`udelay()` e :c:func:`ndelay()` possono essere utilizzate
 per brevi pause. Non usate grandi valori perché rischiate d'avere un
@@ -410,7 +410,7 @@ che convertono il valore puntato da un puntatore, e ritornano void.
 :c:func:`local_irq_save()`/:c:func:`local_irq_restore()`
 --------------------------------------------------------
 
-Definite in ``include/linux/irqflags.h``
+Definite in ``include/linaos/irqflags.h``
 
 Queste funzioni abilitano e disabilitano le interruzioni hardware
 sul processore locale. Entrambe sono rientranti; esse salvano lo stato
@@ -423,7 +423,7 @@ che le interruzioni sono abilite, potete semplicemente utilizzare
 :c:func:`local_bh_disable()`/:c:func:`local_bh_enable()`
 --------------------------------------------------------
 
-Definite in ``include/linux/bottom_half.h``
+Definite in ``include/linaos/bottom_half.h``
 
 
 Queste funzioni abilitano e disabilitano le interruzioni software
@@ -436,7 +436,7 @@ attuale.
 :c:func:`smp_processor_id()`
 ----------------------------
 
-Definita in ``include/linux/smp.h``
+Definita in ``include/linaos/smp.h``
 
 :c:func:`get_cpu()` nega il diritto di prelazione (quindi non potete essere
 spostati su un altro processore all'improvviso) e ritorna il numero
@@ -452,7 +452,7 @@ se siete in un contesto d'interruzione, o il diritto di prelazione
 ``__init``/``__exit``/``__initdata``
 ------------------------------------
 
-Definite in  ``include/linux/init.h``
+Definite in  ``include/linaos/init.h``
 
 Dopo l'avvio, il kernel libera una sezione speciale; le funzioni marcate
 con ``__init`` e le strutture dati marcate con ``__initdata`` vengono
@@ -469,7 +469,7 @@ esportata ai moduli utilizzando :c:func:`EXPORT_SYMBOL()` o
 :c:func:`__initcall()`/:c:func:`module_init()`
 ----------------------------------------------
 
-Definite in  ``include/linux/init.h`` / ``include/linux/module.h``
+Definite in  ``include/linaos/init.h`` / ``include/linaos/module.h``
 
 Molte parti del kernel funzionano bene come moduli (componenti del kernel
 caricabili dinamicamente). L'utilizzo delle macro :c:func:`module_init()`
@@ -493,7 +493,7 @@ in contesto utente con le interruzioni abilitate, quindi potrebbe dormire.
 -----------------------
 
 
-Definita in  ``include/linux/module.h``
+Definita in  ``include/linaos/module.h``
 
 Questa macro definisce la funzione che dev'essere chiamata al momento della
 rimozione (o mai, nel caso in cui il file sia parte integrante del kernel).
@@ -508,7 +508,7 @@ removibile (a meno che non usiate 'rmmod -f' ).
 :c:func:`try_module_get()`/:c:func:`module_put()`
 -------------------------------------------------
 
-Definite in ``include/linux/module.h``
+Definite in ``include/linaos/module.h``
 
 Queste funzioni maneggiano il contatore d'uso del modulo per proteggerlo dalla
 rimozione (in aggiunta, un modulo non può essere rimosso se un altro modulo
@@ -524,7 +524,7 @@ La maggior parte delle strutture registrabili hanno un campo owner
 Impostate questo campo al valore della macro ``THIS_MODULE``.
 
 
-Code d'attesa ``include/linux/wait.h``
+Code d'attesa ``include/linaos/wait.h``
 ======================================
 
 **[DORMONO]**
@@ -548,7 +548,7 @@ Accodamento
 
 Mettersi in una coda d'attesa è piuttosto complesso, perché dovete
 mettervi in coda prima di verificare la condizione. Esiste una macro
-a questo scopo: :c:func:`wait_event_interruptible()` (``include/linux/wait.h``).
+a questo scopo: :c:func:`wait_event_interruptible()` (``include/linaos/wait.h``).
 Il primo argomento è la testa della coda d'attesa, e il secondo è
 un'espressione che dev'essere valutata; la macro ritorna 0 quando questa
 espressione è vera, altrimenti ``-ERESTARTSYS`` se è stato ricevuto un segnale.
@@ -557,7 +557,7 @@ La versione :c:func:`wait_event()` ignora i segnali.
 Svegliare una procedura in coda
 -------------------------------
 
-Chiamate :c:func:`wake_up()` (``include/linux/wait.h``); questa attiverà tutti
+Chiamate :c:func:`wake_up()` (``include/linaos/wait.h``); questa attiverà tutti
 i processi in coda. Ad eccezione se uno di questi è impostato come
 ``TASK_EXCLUSIVE``, in questo caso i rimanenti non verranno svegliati.
 Nello stesso header file esistono altre varianti di questa funzione.
@@ -581,7 +581,7 @@ Da notare che queste funzioni sono più lente rispetto alla normale aritmetica,
 e quindi non dovrebbero essere usate a sproposito.
 
 Il secondo gruppo di operazioni atomiche sono definite in
-``include/linux/bitops.h`` ed agiscono sui bit d'una variabile di tipo
+``include/linaos/bitops.h`` ed agiscono sui bit d'una variabile di tipo
 ``unsigned long``. Queste operazioni prendono come argomento un puntatore
 alla variabile, e un numero di bit dove 0 è quello meno significativo.
 :c:func:`set_bit()`, :c:func:`clear_bit()` e :c:func:`change_bit()`
@@ -608,7 +608,7 @@ possono esportare simboli.
 :c:func:`EXPORT_SYMBOL()`
 -------------------------
 
-Definita in ``include/linux/export.h``
+Definita in ``include/linaos/export.h``
 
 Questo è il classico metodo per esportare un simbolo: i moduli caricati
 dinamicamente potranno utilizzare normalmente il simbolo.
@@ -616,7 +616,7 @@ dinamicamente potranno utilizzare normalmente il simbolo.
 :c:func:`EXPORT_SYMBOL_GPL()`
 -----------------------------
 
-Definita in ``include/linux/export.h``
+Definita in ``include/linaos/export.h``
 
 Essa è simile a :c:func:`EXPORT_SYMBOL()` ad eccezione del fatto che i
 simboli esportati con :c:func:`EXPORT_SYMBOL_GPL()` possono essere
@@ -630,7 +630,7 @@ interfacce.
 :c:func:`EXPORT_SYMBOL_NS()`
 ----------------------------
 
-Definita in ``include/linux/export.h``
+Definita in ``include/linaos/export.h``
 
 Questa è una variate di `EXPORT_SYMBOL()` che permette di specificare uno
 spazio dei nomi. Lo spazio dei nomi è documentato in
@@ -639,7 +639,7 @@ spazio dei nomi. Lo spazio dei nomi è documentato in
 :c:func:`EXPORT_SYMBOL_NS_GPL()`
 --------------------------------
 
-Definita in ``include/linux/export.h``
+Definita in ``include/linaos/export.h``
 
 Questa è una variate di `EXPORT_SYMBOL_GPL()` che permette di specificare uno
 spazio dei nomi. Lo spazio dei nomi è documentato in
@@ -648,7 +648,7 @@ spazio dei nomi. Lo spazio dei nomi è documentato in
 Procedure e convenzioni
 =======================
 
-Liste doppiamente concatenate ``include/linux/list.h``
+Liste doppiamente concatenate ``include/linaos/list.h``
 ------------------------------------------------------
 
 Un tempo negli header del kernel c'erano tre gruppi di funzioni per
@@ -665,7 +665,7 @@ C e ritornare 0 in caso di successo, ed un codice di errore negativo
 (eg. ``-EFAULT``) nei casi fallimentari. Questo potrebbe essere controintuitivo
 a prima vista, ma è abbastanza diffuso nel kernel.
 
-Utilizzate :c:func:`ERR_PTR()` (``include/linux/err.h``) per codificare
+Utilizzate :c:func:`ERR_PTR()` (``include/linaos/err.h``) per codificare
 un numero d'errore negativo in un puntatore, e :c:func:`IS_ERR()` e
 :c:func:`PTR_ERR()` per recuperarlo di nuovo: così si evita d'avere un
 puntatore dedicato per il numero d'errore. Da brividi, ma in senso positivo.
@@ -679,7 +679,7 @@ tutti sulle spine: questo riflette cambiamenti fondamentati (eg. la funzione
 non può più essere chiamata con le funzioni attive, o fa controlli aggiuntivi,
 o non fa più controlli che venivano fatti in precedenza). Solitamente a questo
 s'accompagna un'adeguata e completa nota sulla lista di discussone
-linux-kernel; cercate negli archivi.
+linaos-kernel; cercate negli archivi.
 Solitamente eseguire una semplice sostituzione su tutto un file rendere
 le cose **peggiori**.
 
@@ -703,7 +703,7 @@ viene impostato. Dovreste fare così perché si mostra meglio.
 Estensioni GNU
 --------------
 
-Le estensioni GNU sono esplicitamente permesse nel kernel Linux. Da notare
+Le estensioni GNU sono esplicitamente permesse nel kernel LinaOS. Da notare
 che alcune delle più complesse non sono ben supportate, per via dello scarso
 sviluppo, ma le seguenti sono da considerarsi la norma (per maggiori dettagli,
 leggete la sezione "C Extensions" nella pagina info di GCC - Sì, davvero
@@ -811,7 +811,7 @@ di aggiungerne altri.
             __ndelay(n))
 
 
-``include/linux/fs.h``::
+``include/linaos/fs.h``::
 
     /*
      * Kernel pointers have redundant information, so we can use a

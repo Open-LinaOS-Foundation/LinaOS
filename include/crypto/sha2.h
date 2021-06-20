@@ -6,7 +6,7 @@
 #ifndef _CRYPTO_SHA2_H
 #define _CRYPTO_SHA2_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define SHA224_DIGEST_SIZE	28
 #define SHA224_BLOCK_SIZE	64

@@ -8,13 +8,13 @@
  * Copyright (C) 1999-2000 Grant Grundler
  * Copyright (c) 2005 Matthew Wilcox
  */
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/seq_file.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/seq_file.h>
+#include <linaos/types.h>
 #include <asm/io.h>
 
 #include <asm/softirq_stack.h>

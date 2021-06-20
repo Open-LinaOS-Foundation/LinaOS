@@ -2,7 +2,7 @@
 #ifndef __NET_VXLAN_H
 #define __NET_VXLAN_H 1
 
-#include <linux/if_vlan.h>
+#include <linaos/if_vlan.h>
 #include <net/udp_tunnel.h>
 #include <net/dst_metadata.h>
 #include <net/rtnetlink.h>

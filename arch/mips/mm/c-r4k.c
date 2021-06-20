@@ -7,19 +7,19 @@
  * Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002 Ralf Baechle (ralf@gnu.org)
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/cpu_pm.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/preempt.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/bitops.h>
-#include <linux/dma-map-ops.h> /* for dma_default_coherent */
+#include <linaos/cpu_pm.h>
+#include <linaos/hardirq.h>
+#include <linaos/init.h>
+#include <linaos/highmem.h>
+#include <linaos/kernel.h>
+#include <linaos/linkage.h>
+#include <linaos/preempt.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
+#include <linaos/mm.h>
+#include <linaos/export.h>
+#include <linaos/bitops.h>
+#include <linaos/dma-map-ops.h> /* for dma_default_coherent */
 
 #include <asm/bcache.h>
 #include <asm/bootinfo.h>
@@ -1654,7 +1654,7 @@ static void setup_scache(void)
 	/*
 	 * Do the probing thing on R4000SC and R4400SC processors.  Other
 	 * processors don't have a S-cache that would be relevant to the
-	 * Linux memory management.
+	 * LinaOS memory management.
 	 */
 	switch (current_cpu_type()) {
 	case CPU_R4000SC:

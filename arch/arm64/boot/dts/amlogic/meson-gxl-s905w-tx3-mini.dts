@@ -22,7 +22,7 @@
 };
 
 &ir {
-	linux,rc-map-name = "rc-tanix-tx3mini";
+	linaos,rc-map-name = "rc-tanix-tx3mini";
 };
 
 &usb {

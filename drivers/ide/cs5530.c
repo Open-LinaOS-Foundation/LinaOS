@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2000			Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 2000			Andre Hedrick <andre@linaos-ide.org>
  * Copyright (C) 2000			Mark Lord <mlord@pobox.com>
  * Copyright (C) 2007			Bartlomiej Zolnierkiewicz
  *
@@ -12,12 +12,12 @@
  *	CS5530 documentation available from National Semiconductor.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/ide.h>
 
 #include <asm/io.h>
 

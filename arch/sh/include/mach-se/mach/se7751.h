@@ -3,7 +3,7 @@
 #define __ASM_SH_HITACHI_7751SE_H
 
 /*
- * linux/include/asm-sh/hitachi_7751se.h
+ * linaos/include/asm-sh/hitachi_7751se.h
  *
  * Copyright (C) 2000  Kazumoto Kojima
  *
@@ -12,7 +12,7 @@
  * Modified for 7751 Solution Engine by
  * Ian da Silva and Jeremy Siegel, 2001.
  */
-#include <linux/sh_intc.h>
+#include <linaos/sh_intc.h>
 
 /* Box specific addresses.  */
 

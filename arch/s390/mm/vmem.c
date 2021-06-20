@@ -4,14 +4,14 @@
  *    Author(s): Heiko Carstens <heiko.carstens@de.ibm.com>
  */
 
-#include <linux/memory_hotplug.h>
-#include <linux/memblock.h>
-#include <linux/pfn.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/hugetlb.h>
-#include <linux/slab.h>
+#include <linaos/memory_hotplug.h>
+#include <linaos/memblock.h>
+#include <linaos/pfn.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/hugetlb.h>
+#include <linaos/slab.h>
 #include <asm/cacheflush.h>
 #include <asm/pgalloc.h>
 #include <asm/setup.h>

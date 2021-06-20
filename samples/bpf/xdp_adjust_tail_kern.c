@@ -11,13 +11,13 @@
  * 600 bytes.
  */
 #define KBUILD_MODNAME "foo"
-#include <uapi/linux/bpf.h>
-#include <linux/in.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
+#include <uapi/linaos/bpf.h>
+#include <linaos/in.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_packet.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ip.h>
+#include <linaos/icmp.h>
 #include <bpf/bpf_helpers.h>
 
 #define DEFAULT_TTL 64

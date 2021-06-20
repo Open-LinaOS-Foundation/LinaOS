@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  * Copyright IBM Corporation, 2013
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@linaos.vnet.ibm.com>
  */
 
 #ifndef __POWERPC_KVM_BOOK3S_H__

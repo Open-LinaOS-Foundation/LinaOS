@@ -4,10 +4,10 @@
  * (C) Copyright 2010-2013 Datera, Inc.
  * (C) Copyright 2010-2012 IBM Corp.
  *
- * Licensed to the Linux Foundation under the General Public License (GPL) version 2.
+ * Licensed to the LinaOS Foundation under the General Public License (GPL) version 2.
  *
  * Authors: Nicholas A. Bellinger <nab@daterainc.com>
- *          Stefan Hajnoczi <stefanha@linux.vnet.ibm.com>
+ *          Stefan Hajnoczi <stefanha@linaos.vnet.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,31 +21,31 @@
  *
  ****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
 #include <generated/utsrelease.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
-#include <linux/compat.h>
-#include <linux/eventfd.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/miscdevice.h>
+#include <linaos/utsname.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/kthread.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/configfs.h>
+#include <linaos/ctype.h>
+#include <linaos/compat.h>
+#include <linaos/eventfd.h>
+#include <linaos/fs.h>
+#include <linaos/vmalloc.h>
+#include <linaos/miscdevice.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi_common.h>
 #include <scsi/scsi_proto.h>
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>
-#include <linux/vhost.h>
-#include <linux/virtio_scsi.h>
-#include <linux/llist.h>
-#include <linux/bitmap.h>
+#include <linaos/vhost.h>
+#include <linaos/virtio_scsi.h>
+#include <linaos/llist.h>
+#include <linaos/bitmap.h>
 
 #include "vhost.h"
 
@@ -80,7 +80,7 @@ struct vhost_scsi_cmd {
 	enum dma_data_direction tvc_data_direction;
 	/* Expected data transfer length from virtio-scsi header */
 	u32 tvc_exp_data_len;
-	/* The Tag from include/linux/virtio_scsi.h:struct virtio_scsi_cmd_req */
+	/* The Tag from include/linaos/virtio_scsi.h:struct virtio_scsi_cmd_req */
 	u64 tvc_tag;
 	/* The number of scatterlists associated with this cmd */
 	u32 tvc_sgl_count;

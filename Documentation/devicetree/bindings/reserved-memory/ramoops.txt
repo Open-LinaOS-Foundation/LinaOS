@@ -53,7 +53,7 @@ Optional properties:
 
 - max-reason: if present, sets maximum type of kmsg dump reasons to store
   (defaults to 2: log Oopses and Panics). This can be set to INT_MAX to
-  store all kmsg dumps. See include/linux/kmsg_dump.h KMSG_DUMP_* for other
+  store all kmsg dumps. See include/linaos/kmsg_dump.h KMSG_DUMP_* for other
   kmsg dump reason values. Setting this to 0 (KMSG_DUMP_UNDEF), means the
   reason filtering will be controlled by the printk.always_kmsg_dump boot
   param: if unset, it will be KMSG_DUMP_OOPS, otherwise KMSG_DUMP_MAX.
@@ -63,4 +63,4 @@ Optional properties:
   (KMSG_DUMP_PANIC).
 
 - flags: if present, pass ramoops behavioral flags (defaults to 0,
-  see include/linux/pstore_ram.h RAMOOPS_FLAG_* for flag values).
+  see include/linaos/pstore_ram.h RAMOOPS_FLAG_* for flag values).

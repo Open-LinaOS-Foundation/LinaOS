@@ -4,19 +4,19 @@
  * Copyright (C) 2017 Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
-#include <linux/reset.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/bitops.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/reset.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/pinctrl/consumer.h>
 #include "sata_gemini.h"
 
 #define DRV_NAME "gemini_sata_bridge"

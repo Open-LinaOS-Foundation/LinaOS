@@ -33,7 +33,7 @@ config etc.  They should be placed in `/lib/firmware/netronome` directory to
 load firmware from the host file system.
 
 Firmware for basic NIC operation is available in the upstream
-`linux-firmware.git` repository.
+`linaos-firmware.git` repository.
 
 Firmware in NVRAM
 -----------------

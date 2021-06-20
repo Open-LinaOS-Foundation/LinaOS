@@ -10,26 +10,26 @@
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1997 Miguel de Icaza (miguel@nuclecu.unam.mx)
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/kd.h>
-#include <linux/selection.h>
-#include <linux/console.h>
-#include <linux/vt_kern.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/kd.h>
+#include <linaos/selection.h>
+#include <linaos/console.h>
+#include <linaos/vt_kern.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/page.h>
 #include <asm/gio_device.h>
 
 #include <video/newport.h>
 
-#include <linux/linux_logo.h>
-#include <linux/font.h>
+#include <linaos/linaos_logo.h>
+#include <linaos/font.h>
 
 #define NEWPORT_LEN	0x10000
 
@@ -93,10 +93,10 @@ static inline void newport_init_cmap(void)
 	}
 }
 
-static const struct linux_logo *newport_show_logo(void)
+static const struct linaos_logo *newport_show_logo(void)
 {
 #ifdef CONFIG_LOGO_SGI_CLUT224
-	const struct linux_logo *logo = fb_find_logo(8);
+	const struct linaos_logo *logo = fb_find_logo(8);
 	const unsigned char *clut;
 	const unsigned char *data;
 	unsigned long i;

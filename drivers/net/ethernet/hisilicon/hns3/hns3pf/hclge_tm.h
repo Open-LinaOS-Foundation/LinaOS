@@ -4,7 +4,7 @@
 #ifndef __HCLGE_TM_H
 #define __HCLGE_TM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* MAC Pause */
 #define HCLGE_TX_MAC_PAUSE_EN_MSK	BIT(0)

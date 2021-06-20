@@ -30,11 +30,11 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/ratelimit.h>
+#include <linaos/kernel.h>
+#include <linaos/in.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/ratelimit.h>
 #include <net/addrconf.h>
 #include <rdma/ib_cm.h>
 

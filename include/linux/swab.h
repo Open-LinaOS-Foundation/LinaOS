@@ -2,7 +2,7 @@
 #ifndef _LINUX_SWAB_H
 #define _LINUX_SWAB_H
 
-#include <uapi/linux/swab.h>
+#include <uapi/linaos/swab.h>
 
 # define swab16 __swab16
 # define swab32 __swab32

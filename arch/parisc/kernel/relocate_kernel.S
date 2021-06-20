@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/linkage.h>
-#include <linux/kexec.h>
+#include <linaos/linkage.h>
+#include <linaos/kexec.h>
 
 #include <asm/assembly.h>
 #include <asm/asm-offsets.h>

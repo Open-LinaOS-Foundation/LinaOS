@@ -6,24 +6,24 @@
  * Based on the LCD driver for TI Avalanche processors written by
  * Ajay Singh and Shalom Hai.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fb.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/pm_runtime.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/console.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/lcm.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/fb.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/uaccess.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/interrupt.h>
+#include <linaos/wait.h>
+#include <linaos/clk.h>
+#include <linaos/cpufreq.h>
+#include <linaos/console.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/lcm.h>
 #include <video/da8xx-fb.h>
 #include <asm/div64.h>
 

@@ -10,10 +10,10 @@
 #if !defined(_TRACE_FILELOCK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_FILELOCK_H
 
-#include <linux/tracepoint.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/kdev_t.h>
+#include <linaos/tracepoint.h>
+#include <linaos/fs.h>
+#include <linaos/device.h>
+#include <linaos/kdev_t.h>
 
 #define show_fl_flags(val)						\
 	__print_flags(val, "|", 					\

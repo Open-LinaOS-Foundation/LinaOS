@@ -15,16 +15,16 @@
  * bits of value registers are reserved.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/regulator/consumer.h>
 
 struct adc081c {
 	struct i2c_client *i2c;

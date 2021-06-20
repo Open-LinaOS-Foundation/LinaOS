@@ -9,7 +9,7 @@
 #include <sys/mman.h>
 #include <inttypes.h>
 #include <asm/bug.h>
-#include <linux/zalloc.h>
+#include <linaos/zalloc.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h> // sysconf()
@@ -23,7 +23,7 @@
 #include "mmap.h"
 #include "../perf.h"
 #include <internal/lib.h> /* page_size */
-#include <linux/bitmap.h>
+#include <linaos/bitmap.h>
 
 #define MASK_SIZE 1023
 void mmap_cpu_mask__scnprintf(struct mmap_cpu_mask *mask, const char *tag)

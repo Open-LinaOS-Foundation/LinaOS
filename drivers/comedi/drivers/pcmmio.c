@@ -3,7 +3,7 @@
  * pcmmio.c
  * Driver for Winsystems PC-104 based multifunction IO board.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2007 Calin A. Culianu <calin@ajvar.org>
  */
 
@@ -63,9 +63,9 @@
  *		leave out if you don't need this feature)
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
 
 #include "../comedidev.h"
 

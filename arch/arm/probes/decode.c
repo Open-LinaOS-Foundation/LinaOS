@@ -8,11 +8,11 @@
  * Copyright (C) 2006, 2007 Motorola Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 #include <asm/system_info.h>
 #include <asm/ptrace.h>
-#include <linux/bug.h>
+#include <linaos/bug.h>
 
 #include "decode.h"
 

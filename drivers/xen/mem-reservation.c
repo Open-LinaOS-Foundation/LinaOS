@@ -14,7 +14,7 @@
 
 #include <xen/interface/memory.h>
 #include <xen/mem-reservation.h>
-#include <linux/moduleparam.h>
+#include <linaos/moduleparam.h>
 
 bool __read_mostly xen_scrub_pages = IS_ENABLED(CONFIG_XEN_SCRUB_PAGES_DEFAULT);
 core_param(xen_scrub_pages, xen_scrub_pages, bool, 0);
@@ -39,7 +39,7 @@ void __xenmem_reservation_va_mapping_update(unsigned long count,
 		BUG_ON(!page);
 
 		/*
-		 * We don't support PV MMU when Linux and Xen is using
+		 * We don't support PV MMU when LinaOS and Xen is using
 		 * different page granularity.
 		 */
 		BUILD_BUG_ON(XEN_PAGE_SIZE != PAGE_SIZE);
@@ -70,7 +70,7 @@ void __xenmem_reservation_va_mapping_reset(unsigned long count,
 		unsigned long pfn = page_to_pfn(page);
 
 		/*
-		 * We don't support PV MMU when Linux and Xen are using
+		 * We don't support PV MMU when LinaOS and Xen are using
 		 * different page granularity.
 		 */
 		BUILD_BUG_ON(XEN_PAGE_SIZE != PAGE_SIZE);

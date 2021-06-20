@@ -14,7 +14,7 @@
  *
  * Copyright (c) 2005 Eugene Surovegin <ebs@ebshome.net>
  */
-#include <linux/of_address.h>
+#include <linaos/of_address.h>
 #include <asm/io.h>
 
 #include "emac.h"

@@ -4,14 +4,14 @@
  *
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/of.h>
 
 /* System ID in syscon */
 #define REALVIEW_SYS_ID_OFFSET 0x00

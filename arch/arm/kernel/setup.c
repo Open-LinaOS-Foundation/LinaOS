@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/setup.c
+ *  linaos/arch/arm/kernel/setup.c
  *
  *  Copyright (C) 1995-2001 Russell King
  */
-#include <linux/efi.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/utsname.h>
-#include <linux/initrd.h>
-#include <linux/console.h>
-#include <linux/seq_file.h>
-#include <linux/screen_info.h>
-#include <linux/of_platform.h>
-#include <linux/init.h>
-#include <linux/kexec.h>
-#include <linux/libfdt.h>
-#include <linux/of_fdt.h>
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/proc_fs.h>
-#include <linux/memblock.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/sort.h>
-#include <linux/psci.h>
+#include <linaos/efi.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/stddef.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/utsname.h>
+#include <linaos/initrd.h>
+#include <linaos/console.h>
+#include <linaos/seq_file.h>
+#include <linaos/screen_info.h>
+#include <linaos/of_platform.h>
+#include <linaos/init.h>
+#include <linaos/kexec.h>
+#include <linaos/libfdt.h>
+#include <linaos/of_fdt.h>
+#include <linaos/cpu.h>
+#include <linaos/interrupt.h>
+#include <linaos/smp.h>
+#include <linaos/proc_fs.h>
+#include <linaos/memblock.h>
+#include <linaos/bug.h>
+#include <linaos/compiler.h>
+#include <linaos/sort.h>
+#include <linaos/psci.h>
 
 #include <asm/unified.h>
 #include <asm/cp15.h>
@@ -601,7 +601,7 @@ void __init smp_setup_processor_id(void)
 	 */
 	set_my_cpu_offset(0);
 
-	pr_info("Booting Linux on physical CPU 0x%x\n", mpidr);
+	pr_info("Booting LinaOS on physical CPU 0x%x\n", mpidr);
 }
 
 struct mpidr_hash mpidr_hash;

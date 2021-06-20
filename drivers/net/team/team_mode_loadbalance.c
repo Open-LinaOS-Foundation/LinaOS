@@ -4,15 +4,15 @@
  * Copyright (c) 2012 Jiri Pirko <jpirko@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/filter.h>
-#include <linux/if_team.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/filter.h>
+#include <linaos/if_team.h>
 
 static rx_handler_result_t lb_receive(struct team *team, struct team_port *port,
 				      struct sk_buff *skb)

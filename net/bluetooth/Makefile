@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux Bluetooth subsystem.
+# Makefile for the LinaOS Bluetooth subsystem.
 #
 
 obj-$(CONFIG_BT)	+= bluetooth.o

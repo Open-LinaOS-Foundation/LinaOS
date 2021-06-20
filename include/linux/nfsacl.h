@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * File: linux/nfsacl.h
+ * File: linaos/nfsacl.h
  *
  * (C) 2003 Andreas Gruenbacher <agruen@suse.de>
  */
@@ -8,9 +8,9 @@
 #define __LINUX_NFSACL_H
 
 
-#include <linux/posix_acl.h>
-#include <linux/sunrpc/xdr.h>
-#include <uapi/linux/nfsacl.h>
+#include <linaos/posix_acl.h>
+#include <linaos/sunrpc/xdr.h>
+#include <uapi/linaos/nfsacl.h>
 
 /* Maximum number of ACL entries over NFS */
 #define NFS_ACL_MAX_ENTRIES	1024

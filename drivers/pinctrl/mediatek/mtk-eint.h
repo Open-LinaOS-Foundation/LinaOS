@@ -9,7 +9,7 @@
 #ifndef __MTK_EINT_H
 #define __MTK_EINT_H
 
-#include <linux/irqdomain.h>
+#include <linaos/irqdomain.h>
 
 struct mtk_eint_regs {
 	unsigned int	stat;

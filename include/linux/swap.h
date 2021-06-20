@@ -2,18 +2,18 @@
 #ifndef _LINUX_SWAP_H
 #define _LINUX_SWAP_H
 
-#include <linux/spinlock.h>
-#include <linux/linkage.h>
-#include <linux/mmzone.h>
-#include <linux/list.h>
-#include <linux/memcontrol.h>
-#include <linux/sched.h>
-#include <linux/node.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/atomic.h>
-#include <linux/page-flags.h>
-#include <uapi/linux/mempolicy.h>
+#include <linaos/spinlock.h>
+#include <linaos/linkage.h>
+#include <linaos/mmzone.h>
+#include <linaos/list.h>
+#include <linaos/memcontrol.h>
+#include <linaos/sched.h>
+#include <linaos/node.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/atomic.h>
+#include <linaos/page-flags.h>
+#include <uapi/linaos/mempolicy.h>
 #include <asm/page.h>
 
 struct notifier_block;
@@ -56,7 +56,7 @@ static inline int current_is_kswapd(void)
  */
 
 /*
- * Unaddressable device memory support. See include/linux/hmm.h and
+ * Unaddressable device memory support. See include/linaos/hmm.h and
  * Documentation/vm/hmm.rst. Short description is we need struct pages for
  * device memory that is unaddressable (inaccessible) by CPU, so that we can
  * migrate part of a process memory to device memory.
@@ -314,7 +314,7 @@ struct vma_swap_readahead {
 #endif
 };
 
-/* linux/mm/workingset.c */
+/* linaos/mm/workingset.c */
 void workingset_age_nonresident(struct lruvec *lruvec, unsigned long nr_pages);
 void *workingset_eviction(struct page *page, struct mem_cgroup *target_memcg);
 void workingset_refault(struct page *page, void *shadow);
@@ -327,7 +327,7 @@ void workingset_update_node(struct xa_node *node);
 		xas_set_update(xas, workingset_update_node);		\
 } while (0)
 
-/* linux/mm/page_alloc.c */
+/* linaos/mm/page_alloc.c */
 extern unsigned long totalreserve_pages;
 extern unsigned long nr_free_buffer_pages(void);
 
@@ -335,7 +335,7 @@ extern unsigned long nr_free_buffer_pages(void);
 #define nr_free_pages() global_zone_page_state(NR_FREE_PAGES)
 
 
-/* linux/mm/swap.c */
+/* linaos/mm/swap.c */
 extern void lru_note_cost(struct lruvec *lruvec, bool file,
 			  unsigned int nr_pages);
 extern void lru_note_cost_page(struct page *);
@@ -368,7 +368,7 @@ extern void swap_setup(void);
 extern void lru_cache_add_inactive_or_unevictable(struct page *page,
 						struct vm_area_struct *vma);
 
-/* linux/mm/vmscan.c */
+/* linaos/mm/vmscan.c */
 extern unsigned long zone_reclaimable_pages(struct zone *zone);
 extern unsigned long try_to_free_pages(struct zonelist *zonelist, int order,
 					gfp_t gfp_mask, nodemask_t *mask);
@@ -407,9 +407,9 @@ extern void kswapd_stop(int nid);
 
 #ifdef CONFIG_SWAP
 
-#include <linux/blk_types.h> /* for bio_end_io_t */
+#include <linaos/blk_types.h> /* for bio_end_io_t */
 
-/* linux/mm/page_io.c */
+/* linaos/mm/page_io.c */
 extern int swap_readpage(struct page *page, bool do_poll);
 extern int swap_writepage(struct page *page, struct writeback_control *wbc);
 extern void end_swap_bio_write(struct bio *bio);
@@ -422,7 +422,7 @@ int add_swap_extent(struct swap_info_struct *sis, unsigned long start_page,
 int generic_swapfile_activate(struct swap_info_struct *, struct file *,
 		sector_t *);
 
-/* linux/mm/swap_state.c */
+/* linaos/mm/swap_state.c */
 /* One swap address space for each 64M swap space */
 #define SWAP_ADDRESS_SPACE_SHIFT	14
 #define SWAP_ADDRESS_SPACE_PAGES	(1 << SWAP_ADDRESS_SPACE_SHIFT)
@@ -462,7 +462,7 @@ extern struct page *swap_cluster_readahead(swp_entry_t entry, gfp_t flag,
 extern struct page *swapin_readahead(swp_entry_t entry, gfp_t flag,
 				struct vm_fault *vmf);
 
-/* linux/mm/swapfile.c */
+/* linaos/mm/swapfile.c */
 extern atomic_long_t nr_swap_pages;
 extern long total_swap_pages;
 extern atomic_t nr_rotate_swap;
@@ -534,7 +534,7 @@ static inline struct swap_info_struct *swp_swap_info(swp_entry_t entry)
 
 #define si_swapinfo(val) \
 	do { (val)->freeswap = (val)->totalswap = 0; } while (0)
-/* only sparc can not include linux/pagemap.h in this file
+/* only sparc can not include linaos/pagemap.h in this file
  * so leave put_page and release_pages undeclared... */
 #define free_page_and_swap_cache(page) \
 	put_page(page)

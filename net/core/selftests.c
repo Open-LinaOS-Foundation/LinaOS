@@ -9,7 +9,7 @@
  * Copyright (C) 2021 Oleksij Rempel <o.rempel@pengutronix.de>
  */
 
-#include <linux/phy.h>
+#include <linaos/phy.h>
 #include <net/selftests.h>
 #include <net/tcp.h>
 #include <net/udp.h>

@@ -3,7 +3,7 @@
 Submitting patches: the essential guide to getting your code into the kernel
 ============================================================================
 
-For a person or company who wishes to submit a change to the Linux
+For a person or company who wishes to submit a change to the LinaOS
 kernel, the process can sometimes be daunting if you're not familiar
 with "the system."  This text is a collection of suggestions which
 can greatly increase the chances of your change being accepted.
@@ -27,7 +27,7 @@ If you do not have a repository with the current kernel source handy, use
 ``git`` to obtain one.  You'll want to start with the mainline repository,
 which can be grabbed with::
 
-  git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+  git clone git://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git
 
 Note, however, that you may not want to develop against the mainline tree
 directly.  Most subsystem maintainers run their own trees and want to see
@@ -49,7 +49,7 @@ first paragraph.
 Describe user-visible impact.  Straight up crashes and lockups are
 pretty convincing, but not all bugs are that blatant.  Even if the
 problem was spotted during code review, describe the impact you think
-it can have on users.  Keep in mind that the majority of Linux
+it can have on users.  Keep in mind that the majority of LinaOS
 installations run kernels from secondary stable trees or
 vendor/product-specific trees that cherry-pick only specific patches
 from upstream, so include anything that could help route your change
@@ -70,7 +70,7 @@ in plain English for the reviewer to verify that the code is behaving
 as you intend it to.
 
 The maintainer will thank you if you write your patch description in a
-form which can be easily pulled into Linux's source code management
+form which can be easily pulled into LinaOS's source code management
 system, ``git``, as a "commit log".  See :ref:`explicit_in_reply_to`.
 
 Solve only one problem per patch.  If your description starts to get
@@ -213,10 +213,10 @@ to code that they maintain; look through the MAINTAINERS file and the
 source code revision history to see who those maintainers are.  The
 script scripts/get_maintainer.pl can be very useful at this step.  If you
 cannot find a maintainer for the subsystem you are working on, Andrew
-Morton (akpm@linux-foundation.org) serves as a maintainer of last resort.
+Morton (akpm@linaos-foundation.org) serves as a maintainer of last resort.
 
 You should also normally choose at least one mailing list to receive a copy
-of your patch set.  linux-kernel@vger.kernel.org functions as a list of
+of your patch set.  linaos-kernel@vger.kernel.org functions as a list of
 last resort, but the volume on that list has caused a number of developers
 to tune it out.  Look in the MAINTAINERS file for a subsystem-specific
 list; your patch will probably get more attention there.  Please do not
@@ -229,7 +229,7 @@ kernel-related lists hosted elsewhere as well, though.
 Do not send more than 15 patches at once to the vger mailing lists!!!
 
 Linus Torvalds is the final arbiter of all changes accepted into the
-Linux kernel.  His e-mail address is <torvalds@linux-foundation.org>.
+LinaOS kernel.  His e-mail address is <torvalds@linaos-foundation.org>.
 He gets a lot of e-mail, and, at this point, very few patches go through
 Linus directly, so typically you should do your best to -avoid-
 sending him e-mail.
@@ -254,7 +254,7 @@ If changes affect userland-kernel interfaces, please send the MAN-PAGES
 maintainer (as listed in the MAINTAINERS file) a man-pages patch, or at
 least a notification of the change, so that some information makes its way
 into the manual pages.  User-space API changes should also be copied to
-linux-api@vger.kernel.org.
+linaos-api@vger.kernel.org.
 
 For small patches you may want to CC the Trivial Patch Monkey
 trivial@kernel.org which collects "trivial" patches. Have a look
@@ -355,7 +355,7 @@ previous submission.
 Include PATCH in the subject
 -----------------------------
 
-Due to high e-mail traffic to Linus, and to linux-kernel, it is common
+Due to high e-mail traffic to Linus, and to linaos-kernel, it is common
 convention to prefix your subject line with [PATCH].  This lets Linus
 and other kernel developers more easily distinguish patches from other
 e-mail discussions.
@@ -805,23 +805,23 @@ References
 Andrew Morton, "The perfect patch" (tpp).
   <https://www.ozlabs.org/~akpm/stuff/tpp.txt>
 
-Jeff Garzik, "Linux kernel patch submission format".
-  <https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html>
+Jeff Garzik, "LinaOS kernel patch submission format".
+  <https://web.archive.org/web/20180829112450/http://linaos.yyz.us/patch-format.html>
 
 Greg Kroah-Hartman, "How to piss off a kernel subsystem maintainer".
-  <http://www.kroah.com/log/linux/maintainer.html>
+  <http://www.kroah.com/log/linaos/maintainer.html>
 
-  <http://www.kroah.com/log/linux/maintainer-02.html>
+  <http://www.kroah.com/log/linaos/maintainer-02.html>
 
-  <http://www.kroah.com/log/linux/maintainer-03.html>
+  <http://www.kroah.com/log/linaos/maintainer-03.html>
 
-  <http://www.kroah.com/log/linux/maintainer-04.html>
+  <http://www.kroah.com/log/linaos/maintainer-04.html>
 
-  <http://www.kroah.com/log/linux/maintainer-05.html>
+  <http://www.kroah.com/log/linaos/maintainer-05.html>
 
-  <http://www.kroah.com/log/linux/maintainer-06.html>
+  <http://www.kroah.com/log/linaos/maintainer-06.html>
 
-NO!!!! No more huge patch bombs to linux-kernel@vger.kernel.org people!
+NO!!!! No more huge patch bombs to linaos-kernel@vger.kernel.org people!
   <https://lore.kernel.org/r/20050711.125305.08322243.davem@davemloft.net>
 
 Kernel Documentation/process/coding-style.rst:

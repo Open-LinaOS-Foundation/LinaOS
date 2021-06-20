@@ -10,7 +10,7 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 #define MODULE_NAME "842_compress"
 
-#include <linux/hashtable.h>
+#include <linaos/hashtable.h>
 
 #include "842.h"
 #include "842_debugfs.h"

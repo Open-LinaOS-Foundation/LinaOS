@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/sound/pxa2xx-ac97.c -- AC97 support for the Intel PXA2xx chip.
+ * linaos/sound/pxa2xx-ac97.c -- AC97 support for the Intel PXA2xx chip.
  *
  * Author:	Nicolas Pitre
  * Created:	Dec 02, 2004
  * Copyright:	MontaVista Software Inc.
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/dma/pxa-dma.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma/pxa-dma.h>
 
 #include <sound/ac97/controller.h>
 #include <sound/core.h>

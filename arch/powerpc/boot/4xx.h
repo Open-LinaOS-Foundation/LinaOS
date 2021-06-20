@@ -2,7 +2,7 @@
  * PowerPC 4xx related functions
  *
  * Copyright 2007 IBM Corporation.
- * Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Josh Boyer <jwboyer@linaos.vnet.ibm.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2.  This program is licensed "as is" without any

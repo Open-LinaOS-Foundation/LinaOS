@@ -7,10 +7,10 @@
  */
 
 #include <crypto/hash.h>
-#include <linux/circ_buf.h>
-#include <linux/if_arp.h>
+#include <linaos/circ_buf.h>
+#include <linaos/if_arp.h>
 #include <net/iw_handler.h>
-#include <uapi/linux/llc.h>
+#include <uapi/linaos/llc.h>
 #include "eap_packet.h"
 #include "ks_wlan.h"
 #include "ks_hostif.h"

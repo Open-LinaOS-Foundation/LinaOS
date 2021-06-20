@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * smsc47b397.c - Part of lm_sensors, Linux kernel modules
+ * smsc47b397.c - Part of lm_sensors, LinaOS kernel modules
  * for hardware monitoring
  *
  * Supports the SMSC LPC47B397-NC Super-I/O chip.
@@ -15,18 +15,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/ioport.h>
+#include <linaos/jiffies.h>
+#include <linaos/platform_device.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
 
 static unsigned short force_id;
 module_param(force_id, ushort, 0);

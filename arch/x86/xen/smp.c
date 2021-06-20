@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/slab.h>
-#include <linux/cpumask.h>
-#include <linux/percpu.h>
+#include <linaos/smp.h>
+#include <linaos/cpu.h>
+#include <linaos/slab.h>
+#include <linaos/cpumask.h>
+#include <linaos/percpu.h>
 
 #include <xen/events.h>
 

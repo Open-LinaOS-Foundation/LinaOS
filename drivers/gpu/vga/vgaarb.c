@@ -35,25 +35,25 @@
 #define vgaarb_info(dev, fmt, arg...)	dev_info(dev, "vgaarb: " fmt, ##arg)
 #define vgaarb_err(dev, fmt, arg...)	dev_err(dev, "vgaarb: " fmt, ##arg)
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/sched/signal.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/poll.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/screen_info.h>
-#include <linux/vt.h>
-#include <linux/console.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/sched/signal.h>
+#include <linaos/wait.h>
+#include <linaos/spinlock.h>
+#include <linaos/poll.h>
+#include <linaos/miscdevice.h>
+#include <linaos/slab.h>
+#include <linaos/screen_info.h>
+#include <linaos/vt.h>
+#include <linaos/console.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/vgaarb.h>
+#include <linaos/vgaarb.h>
 
 static void vga_arbiter_notify_clients(void);
 /*

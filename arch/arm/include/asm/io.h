@@ -20,8 +20,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 #include <asm/memory.h>
 #include <asm-generic/pci_iomap.h>

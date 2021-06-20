@@ -32,23 +32,23 @@
  *             bits and driver data fields reflect that limit by using
  *             u8, u16, u32
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/workqueue.h>
-#include <linux/ctype.h>
-#include <linux/firmware.h>
-#include <linux/scatterlist.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/kref.h>
+#include <linaos/uaccess.h>
+#include <linaos/usb.h>
+#include <linaos/mutex.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/sdio_func.h>
+#include <linaos/mmc/sdio_ids.h>
+#include <linaos/workqueue.h>
+#include <linaos/ctype.h>
+#include <linaos/firmware.h>
+#include <linaos/scatterlist.h>
 
 struct host_controller_info {
 	u8 info_size;

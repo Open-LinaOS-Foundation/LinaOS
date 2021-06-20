@@ -3,19 +3,19 @@
  *  Driver for Xceive XC4000 "QAM/8VSB single chip tuner"
  *
  *  Copyright (c) 2007 Xceive Corporation
- *  Copyright (c) 2007 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2007 Steven Toth <stoth@linaostv.org>
  *  Copyright (c) 2009 Devin Heitmueller <dheitmueller@kernellabs.com>
  *  Copyright (c) 2009 Davide Ferri <d.ferri@zero11.it>
  *  Copyright (c) 2010 Istvan Varga <istvan_v@mailbox.hu>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/videodev2.h>
-#include <linux/delay.h>
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/videodev2.h>
+#include <linaos/delay.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
 #include <asm/unaligned.h>
 
 #include <media/dvb_frontend.h>

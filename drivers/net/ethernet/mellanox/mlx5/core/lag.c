@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/netdevice.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/vport.h>
+#include <linaos/netdevice.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/mlx5/vport.h>
 #include "mlx5_core.h"
 #include "eswitch.h"
 #include "lag.h"

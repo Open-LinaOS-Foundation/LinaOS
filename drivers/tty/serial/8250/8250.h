@@ -7,10 +7,10 @@
  *  Copyright (C) 2001 Russell King.
  */
 
-#include <linux/bits.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/dmaengine.h>
+#include <linaos/bits.h>
+#include <linaos/serial_8250.h>
+#include <linaos/serial_reg.h>
+#include <linaos/dmaengine.h>
 
 #include "../serial_mctrl_gpio.h"
 

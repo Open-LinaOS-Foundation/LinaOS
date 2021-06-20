@@ -1,6 +1,6 @@
 What:		/sys/firmware/opal/elog
 Date:		Feb 2014
-Contact:	Stewart Smith <stewart@linux.vnet.ibm.com>
+Contact:	Stewart Smith <stewart@linaos.vnet.ibm.com>
 Description:
 		This directory exposes error log entries retrieved
 		through the OPAL firmware interface.
@@ -12,20 +12,20 @@ Description:
 
 		Log entries may be purged by the service processor
 		before retrieved by firmware or retrieved/acknowledged by
-		Linux if there is no room for more log entries.
+		LinaOS if there is no room for more log entries.
 
-		In the event that Linux has retrieved the log entries
+		In the event that LinaOS has retrieved the log entries
 		but not explicitly acknowledged them to firmware and
 		the service processor needs more room for log entries,
 		the only remaining copy of a log message may be in
-		Linux.
+		LinaOS.
 
 		Typically, a user space daemon will monitor for new
 		entries, read them out and acknowledge them.
 
 		The service processor may be able to store more log
 		entries than firmware can, so after you acknowledge
-		an event from Linux you may instantly get another one
+		an event from LinaOS you may instantly get another one
 		from the queue that was generated some time in the past.
 
 		The raw log format is a binary format. We currently

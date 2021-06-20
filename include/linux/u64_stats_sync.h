@@ -63,7 +63,7 @@
  * Example of use in drivers/net/loopback.c, using per_cpu containers,
  * in BH disabled context.
  */
-#include <linux/seqlock.h>
+#include <linaos/seqlock.h>
 
 struct u64_stats_sync {
 #if BITS_PER_LONG==32 && defined(CONFIG_SMP)

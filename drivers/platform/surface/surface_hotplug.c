@@ -13,13 +13,13 @@
  * Copyright (C) 2019-2021 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/gpio.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
 
 static const struct acpi_gpio_params shps_base_presence_int   = { 0, 0, false };
 static const struct acpi_gpio_params shps_base_presence       = { 1, 0, false };

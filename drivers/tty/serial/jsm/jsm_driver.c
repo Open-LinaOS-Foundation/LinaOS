@@ -10,9 +10,9 @@
  *
  *
  ***********************************************************************/
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 
 #include "jsm.h"
 

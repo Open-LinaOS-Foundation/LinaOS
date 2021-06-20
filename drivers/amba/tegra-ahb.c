@@ -11,12 +11,12 @@
  *	Hiroshi DOYU <hdoyu@nvidia.com>
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
 
 #include <soc/tegra/ahb.h>
 

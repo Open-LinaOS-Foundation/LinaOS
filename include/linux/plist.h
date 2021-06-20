@@ -13,7 +13,7 @@
  * Simplifications of the original code by
  * Oleg Nesterov <oleg@tv-sign.ru>
  *
- * Based on simple lists (include/linux/list.h).
+ * Based on simple lists (include/linaos/list.h).
  *
  * This is a priority-sorted list of nodes; each node has a
  * priority from INT_MIN (highest) to INT_MAX (lowest).
@@ -73,8 +73,8 @@
 #ifndef _LINUX_PLIST_H_
 #define _LINUX_PLIST_H_
 
-#include <linux/kernel.h>
-#include <linux/list.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
 
 struct plist_head {
 	struct list_head node_list;

@@ -12,13 +12,13 @@
  * merely parroted back to the host at the start of each frame.
  */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/time.h>
+#include <linaos/mm.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/firmware.h>
+#include <linaos/slab.h>
 #include <asm/byteorder.h>
 
 #include "go7007-priv.h"

@@ -6,9 +6,9 @@
  * Copyright (C) 1999, 2000 by Silicon Graphics
  * Copyright (C) 2003 by Ralf Baechle
  */
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
 #include <asm/fixmap.h>
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>

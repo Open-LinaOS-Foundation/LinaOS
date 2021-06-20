@@ -6,7 +6,7 @@
  * Copyright (c) 2007 Oracle Corporation.  All rights reserved.
  * Written by Martin K. Petersen <martin.petersen@oracle.com>
  * Copyright (C) 2013 Intel Corporation
- * Author: Tim Chen <tim.c.chen@linux.intel.com>
+ * Author: Tim Chen <tim.c.chen@linaos.intel.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free
@@ -24,9 +24,9 @@
  *
  */
 
-#include <linux/crc-t10dif.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linaos/crc-t10dif.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
 
 /* Table generated using the following polynomium:
  * x^16 + x^15 + x^11 + x^9 + x^8 + x^7 + x^5 + x^4 + x^2 + x + 1

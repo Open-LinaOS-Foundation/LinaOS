@@ -9,13 +9,13 @@
  * understand what is happening here
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/sort.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/assembly.h>
 #include <asm/asm-offsets.h>
 #include <asm/ptrace.h>

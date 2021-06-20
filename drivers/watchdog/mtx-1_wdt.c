@@ -14,7 +14,7 @@
  *
  *      Release 0.02.
  *	Author: Florian Fainelli florian@openwrt.org
- *		use the Linux watchdog/timer APIs
+ *		use the LinaOS watchdog/timer APIs
  *
  *      The Watchdog is configured to reset the MTX-1
  *      if it is not triggered for 100 seconds.
@@ -25,21 +25,21 @@
  *      it MUST be triggered every 2..95 seconds.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/timer.h>
-#include <linux/completion.h>
-#include <linux/jiffies.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/miscdevice.h>
+#include <linaos/fs.h>
+#include <linaos/ioport.h>
+#include <linaos/timer.h>
+#include <linaos/completion.h>
+#include <linaos/jiffies.h>
+#include <linaos/watchdog.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
+#include <linaos/gpio/consumer.h>
 
 #include <asm/mach-au1x00/au1000.h>
 

@@ -4,14 +4,14 @@
  */
 
 #include "bcm-phy-lib.h"
-#include <linux/bitfield.h>
-#include <linux/brcmphy.h>
-#include <linux/export.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/ethtool.h>
-#include <linux/ethtool_netlink.h>
+#include <linaos/bitfield.h>
+#include <linaos/brcmphy.h>
+#include <linaos/export.h>
+#include <linaos/mdio.h>
+#include <linaos/module.h>
+#include <linaos/phy.h>
+#include <linaos/ethtool.h>
+#include <linaos/ethtool_netlink.h>
 
 #define MII_BCM_CHANNEL_WIDTH     0x2000
 #define BCM_CL45VEN_EEE_ADV       0x3c

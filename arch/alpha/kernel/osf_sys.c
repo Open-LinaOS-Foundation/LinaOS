@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/kernel/osf_sys.c
+ *  linaos/arch/alpha/kernel/osf_sys.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
@@ -11,46 +11,46 @@
  * special parameter blocks..
  */
 
-#include <linux/errno.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/cputime.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/utsname.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/major.h>
-#include <linux/stat.h>
-#include <linux/mman.h>
-#include <linux/shm.h>
-#include <linux/poll.h>
-#include <linux/file.h>
-#include <linux/types.h>
-#include <linux/ipc.h>
-#include <linux/namei.h>
-#include <linux/uio.h>
-#include <linux/vfs.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
+#include <linaos/errno.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/stddef.h>
+#include <linaos/syscalls.h>
+#include <linaos/unistd.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/utsname.h>
+#include <linaos/time.h>
+#include <linaos/timex.h>
+#include <linaos/major.h>
+#include <linaos/stat.h>
+#include <linaos/mman.h>
+#include <linaos/shm.h>
+#include <linaos/poll.h>
+#include <linaos/file.h>
+#include <linaos/types.h>
+#include <linaos/ipc.h>
+#include <linaos/namei.h>
+#include <linaos/uio.h>
+#include <linaos/vfs.h>
+#include <linaos/rcupdate.h>
+#include <linaos/slab.h>
 
 #include <asm/fpu.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/sysinfo.h>
 #include <asm/thread_info.h>
 #include <asm/hwrpb.h>
 #include <asm/processor.h>
 
 /*
- * Brk needs to return an error.  Still support Linux's brk(0) query idiom,
+ * Brk needs to return an error.  Still support LinaOS's brk(0) query idiom,
  * which OSF programs just shouldn't be doing.  We're still not quite
  * identical to OSF as we don't return 0 on success, but doing otherwise
  * would require changes to libc.  Hopefully this is good enough.
@@ -274,7 +274,7 @@ struct osf_statfs64 {
 };
 
 static int
-linux_to_osf_stat(struct kstat *lstat, struct osf_stat __user *osf_stat)
+linaos_to_osf_stat(struct kstat *lstat, struct osf_stat __user *osf_stat)
 {
 	struct osf_stat tmp = { 0 };
 
@@ -300,41 +300,41 @@ linux_to_osf_stat(struct kstat *lstat, struct osf_stat __user *osf_stat)
 }
 
 static int
-linux_to_osf_statfs(struct kstatfs *linux_stat, struct osf_statfs __user *osf_stat,
+linaos_to_osf_statfs(struct kstatfs *linaos_stat, struct osf_statfs __user *osf_stat,
 		    unsigned long bufsiz)
 {
 	struct osf_statfs tmp_stat;
 
-	tmp_stat.f_type = linux_stat->f_type;
+	tmp_stat.f_type = linaos_stat->f_type;
 	tmp_stat.f_flags = 0;	/* mount flags */
-	tmp_stat.f_fsize = linux_stat->f_frsize;
-	tmp_stat.f_bsize = linux_stat->f_bsize;
-	tmp_stat.f_blocks = linux_stat->f_blocks;
-	tmp_stat.f_bfree = linux_stat->f_bfree;
-	tmp_stat.f_bavail = linux_stat->f_bavail;
-	tmp_stat.f_files = linux_stat->f_files;
-	tmp_stat.f_ffree = linux_stat->f_ffree;
-	tmp_stat.f_fsid = linux_stat->f_fsid;
+	tmp_stat.f_fsize = linaos_stat->f_frsize;
+	tmp_stat.f_bsize = linaos_stat->f_bsize;
+	tmp_stat.f_blocks = linaos_stat->f_blocks;
+	tmp_stat.f_bfree = linaos_stat->f_bfree;
+	tmp_stat.f_bavail = linaos_stat->f_bavail;
+	tmp_stat.f_files = linaos_stat->f_files;
+	tmp_stat.f_ffree = linaos_stat->f_ffree;
+	tmp_stat.f_fsid = linaos_stat->f_fsid;
 	if (bufsiz > sizeof(tmp_stat))
 		bufsiz = sizeof(tmp_stat);
 	return copy_to_user(osf_stat, &tmp_stat, bufsiz) ? -EFAULT : 0;
 }
 
 static int
-linux_to_osf_statfs64(struct kstatfs *linux_stat, struct osf_statfs64 __user *osf_stat,
+linaos_to_osf_statfs64(struct kstatfs *linaos_stat, struct osf_statfs64 __user *osf_stat,
 		      unsigned long bufsiz)
 {
 	struct osf_statfs64 tmp_stat = { 0 };
 
-	tmp_stat.f_type = linux_stat->f_type;
-	tmp_stat.f_fsize = linux_stat->f_frsize;
-	tmp_stat.f_bsize = linux_stat->f_bsize;
-	tmp_stat.f_blocks = linux_stat->f_blocks;
-	tmp_stat.f_bfree = linux_stat->f_bfree;
-	tmp_stat.f_bavail = linux_stat->f_bavail;
-	tmp_stat.f_files = linux_stat->f_files;
-	tmp_stat.f_ffree = linux_stat->f_ffree;
-	tmp_stat.f_fsid = linux_stat->f_fsid;
+	tmp_stat.f_type = linaos_stat->f_type;
+	tmp_stat.f_fsize = linaos_stat->f_frsize;
+	tmp_stat.f_bsize = linaos_stat->f_bsize;
+	tmp_stat.f_blocks = linaos_stat->f_blocks;
+	tmp_stat.f_bfree = linaos_stat->f_bfree;
+	tmp_stat.f_bavail = linaos_stat->f_bavail;
+	tmp_stat.f_files = linaos_stat->f_files;
+	tmp_stat.f_ffree = linaos_stat->f_ffree;
+	tmp_stat.f_fsid = linaos_stat->f_fsid;
 	if (bufsiz > sizeof(tmp_stat))
 		bufsiz = sizeof(tmp_stat);
 	return copy_to_user(osf_stat, &tmp_stat, bufsiz) ? -EFAULT : 0;
@@ -343,10 +343,10 @@ linux_to_osf_statfs64(struct kstatfs *linux_stat, struct osf_statfs64 __user *os
 SYSCALL_DEFINE3(osf_statfs, const char __user *, pathname,
 		struct osf_statfs __user *, buffer, unsigned long, bufsiz)
 {
-	struct kstatfs linux_stat;
-	int error = user_statfs(pathname, &linux_stat);
+	struct kstatfs linaos_stat;
+	int error = user_statfs(pathname, &linaos_stat);
 	if (!error)
-		error = linux_to_osf_statfs(&linux_stat, buffer, bufsiz);
+		error = linaos_to_osf_statfs(&linaos_stat, buffer, bufsiz);
 	return error;	
 }
 
@@ -359,7 +359,7 @@ SYSCALL_DEFINE2(osf_stat, char __user *, name, struct osf_stat __user *, buf)
 	if (error)
 		return error;
 
-	return linux_to_osf_stat(&stat, buf);
+	return linaos_to_osf_stat(&stat, buf);
 }
 
 SYSCALL_DEFINE2(osf_lstat, char __user *, name, struct osf_stat __user *, buf)
@@ -371,7 +371,7 @@ SYSCALL_DEFINE2(osf_lstat, char __user *, name, struct osf_stat __user *, buf)
 	if (error)
 		return error;
 
-	return linux_to_osf_stat(&stat, buf);
+	return linaos_to_osf_stat(&stat, buf);
 }
 
 SYSCALL_DEFINE2(osf_fstat, int, fd, struct osf_stat __user *, buf)
@@ -383,43 +383,43 @@ SYSCALL_DEFINE2(osf_fstat, int, fd, struct osf_stat __user *, buf)
 	if (error)
 		return error;
 
-	return linux_to_osf_stat(&stat, buf);
+	return linaos_to_osf_stat(&stat, buf);
 }
 
 SYSCALL_DEFINE3(osf_fstatfs, unsigned long, fd,
 		struct osf_statfs __user *, buffer, unsigned long, bufsiz)
 {
-	struct kstatfs linux_stat;
-	int error = fd_statfs(fd, &linux_stat);
+	struct kstatfs linaos_stat;
+	int error = fd_statfs(fd, &linaos_stat);
 	if (!error)
-		error = linux_to_osf_statfs(&linux_stat, buffer, bufsiz);
+		error = linaos_to_osf_statfs(&linaos_stat, buffer, bufsiz);
 	return error;
 }
 
 SYSCALL_DEFINE3(osf_statfs64, char __user *, pathname,
 		struct osf_statfs64 __user *, buffer, unsigned long, bufsiz)
 {
-	struct kstatfs linux_stat;
-	int error = user_statfs(pathname, &linux_stat);
+	struct kstatfs linaos_stat;
+	int error = user_statfs(pathname, &linaos_stat);
 	if (!error)
-		error = linux_to_osf_statfs64(&linux_stat, buffer, bufsiz);
+		error = linaos_to_osf_statfs64(&linaos_stat, buffer, bufsiz);
 	return error;
 }
 
 SYSCALL_DEFINE3(osf_fstatfs64, unsigned long, fd,
 		struct osf_statfs64 __user *, buffer, unsigned long, bufsiz)
 {
-	struct kstatfs linux_stat;
-	int error = fd_statfs(fd, &linux_stat);
+	struct kstatfs linaos_stat;
+	int error = fd_statfs(fd, &linaos_stat);
 	if (!error)
-		error = linux_to_osf_statfs64(&linux_stat, buffer, bufsiz);
+		error = linaos_to_osf_statfs64(&linaos_stat, buffer, bufsiz);
 	return error;
 }
 
 /*
  * Uhh.. OSF/1 mount parameters aren't exactly obvious..
  *
- * Although to be frank, neither are the native Linux/i386 ones..
+ * Although to be frank, neither are the native LinaOS/i386 ones..
  */
 struct ufs_args {
 	char __user *devname;
@@ -432,7 +432,7 @@ struct cdfs_args {
 	int flags;
 	uid_t exroot;
 
-	/* This has lots more here, which Linux handles with the option block
+	/* This has lots more here, which LinaOS handles with the option block
 	   but I'm too lazy to do the translation into ASCII.  */
 };
 

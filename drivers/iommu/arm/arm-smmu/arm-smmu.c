@@ -17,29 +17,29 @@
 
 #define pr_fmt(fmt) "arm-smmu: " fmt
 
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dma-iommu.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_iommu.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/acpi_iort.h>
+#include <linaos/bitfield.h>
+#include <linaos/delay.h>
+#include <linaos/dma-iommu.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_iommu.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/ratelimit.h>
+#include <linaos/slab.h>
 
-#include <linux/amba/bus.h>
-#include <linux/fsl/mc.h>
+#include <linaos/amba/bus.h>
+#include <linaos/fsl/mc.h>
 
 #include "arm-smmu.h"
 

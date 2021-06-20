@@ -7,7 +7,7 @@
 #define __SND_SEQ_CLIENTMGR_H
 
 #include <sound/seq_kernel.h>
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include "seq_fifo.h"
 #include "seq_ports.h"
 #include "seq_lock.h"

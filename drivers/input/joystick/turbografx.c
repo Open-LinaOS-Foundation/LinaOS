@@ -7,19 +7,19 @@
  */
 
 /*
- * TurboGraFX parallel port interface driver for Linux.
+ * TurboGraFX parallel port interface driver for LinaOS.
  */
 
 /*
  */
 
-#include <linux/kernel.h>
-#include <linux/parport.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/parport.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("TurboGraFX parallel port interface driver");

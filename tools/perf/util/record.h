@@ -4,9 +4,9 @@
 
 #include <time.h>
 #include <stdbool.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/perf_event.h>
+#include <linaos/types.h>
+#include <linaos/stddef.h>
+#include <linaos/perf_event.h>
 #include "util/target.h"
 
 struct option;

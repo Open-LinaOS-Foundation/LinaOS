@@ -1,12 +1,12 @@
 #ifndef _LINUX_MMAP_LOCK_H
 #define _LINUX_MMAP_LOCK_H
 
-#include <linux/lockdep.h>
-#include <linux/mm_types.h>
-#include <linux/mmdebug.h>
-#include <linux/rwsem.h>
-#include <linux/tracepoint-defs.h>
-#include <linux/types.h>
+#include <linaos/lockdep.h>
+#include <linaos/mm_types.h>
+#include <linaos/mmdebug.h>
+#include <linaos/rwsem.h>
+#include <linaos/tracepoint-defs.h>
+#include <linaos/types.h>
 
 #define MMAP_LOCK_INITIALIZER(name) \
 	.mmap_lock = __RWSEM_INITIALIZER((name).mmap_lock),

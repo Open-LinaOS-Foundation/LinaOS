@@ -8,8 +8,8 @@
  * with some code from asm-x86/checksum.h
  */
 
-#include <linux/compiler.h>
-#include <linux/uaccess.h>
+#include <linaos/compiler.h>
+#include <linaos/uaccess.h>
 #include <asm/byteorder.h>
 
 /**
@@ -34,7 +34,7 @@ static inline __sum16 csum_fold(__wsum sum)
  *	This is a version of ip_compute_csum() optimized for IP headers,
  *	which always checksum on 4 octet boundaries.
  *
- *	By Jorge Cwik <jorge@laser.satlink.net>, adapted for linux by
+ *	By Jorge Cwik <jorge@laser.satlink.net>, adapted for linaos by
  *	Arnt Gulbrandsen.
  */
 

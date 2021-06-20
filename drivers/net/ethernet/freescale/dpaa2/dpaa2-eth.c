@@ -2,20 +2,20 @@
 /* Copyright 2014-2016 Freescale Semiconductor Inc.
  * Copyright 2016-2020 NXP
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/etherdevice.h>
-#include <linux/of_net.h>
-#include <linux/interrupt.h>
-#include <linux/msi.h>
-#include <linux/kthread.h>
-#include <linux/iommu.h>
-#include <linux/fsl/mc.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/fsl/ptp_qoriq.h>
-#include <linux/ptp_classify.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/etherdevice.h>
+#include <linaos/of_net.h>
+#include <linaos/interrupt.h>
+#include <linaos/msi.h>
+#include <linaos/kthread.h>
+#include <linaos/iommu.h>
+#include <linaos/fsl/mc.h>
+#include <linaos/bpf.h>
+#include <linaos/bpf_trace.h>
+#include <linaos/fsl/ptp_qoriq.h>
+#include <linaos/ptp_classify.h>
 #include <net/pkt_cls.h>
 #include <net/sock.h>
 

@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - COM20020 chipset support - function declarations
+ * LinaOS ARCnet driver - COM20020 chipset support - function declarations
  *
  * Written 1997 by David Woodhouse.
  * Written 1994-1999 by Avery Pennarun.
@@ -26,7 +26,7 @@
  */
 #ifndef __COM20020_H
 #define __COM20020_H
-#include <linux/leds.h>
+#include <linaos/leds.h>
 
 int com20020_check(struct net_device *dev);
 int com20020_found(struct net_device *dev, int shared);

@@ -6,7 +6,7 @@
 #if !defined(__MT76_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __MT76_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "mt76.h"
 
 #undef TRACE_SYSTEM

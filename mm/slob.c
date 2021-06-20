@@ -57,21 +57,21 @@
  * in order to prevent random node placement.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 
-#include <linux/mm.h>
-#include <linux/swap.h> /* struct reclaim_state */
-#include <linux/cache.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/kmemleak.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h> /* struct reclaim_state */
+#include <linaos/cache.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/rcupdate.h>
+#include <linaos/list.h>
+#include <linaos/kmemleak.h>
 
 #include <trace/events/kmem.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #include "slab.h"
 /*

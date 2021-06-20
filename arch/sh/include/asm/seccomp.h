@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef __ASM_SECCOMP_H
 
-#include <linux/unistd.h>
+#include <linaos/unistd.h>
 
 #define __NR_seccomp_read __NR_read
 #define __NR_seccomp_write __NR_write

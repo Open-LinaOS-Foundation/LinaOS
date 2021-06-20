@@ -25,7 +25,7 @@
  *
  **************************************************************************/
 
-#include <linux/sched/signal.h>
+#include <linaos/sched/signal.h>
 
 #include <drm/ttm/ttm_placement.h>
 

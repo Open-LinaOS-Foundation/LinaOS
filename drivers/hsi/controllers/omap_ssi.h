@@ -10,13 +10,13 @@
 #ifndef __LINUX_HSI_OMAP_SSI_H__
 #define __LINUX_HSI_OMAP_SSI_H__
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/hsi/hsi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/hsi/hsi.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 
 #define SSI_MAX_CHANNELS	8
 #define SSI_MAX_GDD_LCH		8

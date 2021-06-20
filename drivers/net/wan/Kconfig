@@ -13,10 +13,10 @@ menuconfig WAN
 
 	  Usually, a quite expensive external device called a `WAN router' is
 	  needed to connect to a WAN. As an alternative, a relatively
-	  inexpensive WAN interface card can allow your Linux box to directly
+	  inexpensive WAN interface card can allow your LinaOS box to directly
 	  connect to a WAN.
 
-	  If you have one of those cards and wish to use it under Linux,
+	  If you have one of those cards and wish to use it under LinaOS,
 	  say Y here and also to the WAN driver for your card.
 
 	  If unsure, say N.
@@ -44,7 +44,7 @@ config COSA
 
 	  These boards allow to connect synchronous serial devices (for example
 	  base-band modems, or any other device with the X.21, V.24, V.35 or
-	  V.36 interface) to your Linux box. The cards can work as the
+	  V.36 interface) to your LinaOS box. The cards can work as the
 	  character device, synchronous PPP network device, or the Cisco HDLC
 	  network device.
 
@@ -68,9 +68,9 @@ config LANMEDIA
 
 	  - LMC 1000 board allows you to connect synchronous serial devices
 	  (for example base-band modems, or any other device with the X.21,
-	  V.24, V.35 or V.36 interface) to your Linux box.
+	  V.24, V.35 or V.36 interface) to your LinaOS box.
 
-	  - LMC 1200 with on board DSU board allows you to connect your Linux
+	  - LMC 1200 with on board DSU board allows you to connect your LinaOS
 	  box directly to a T1 or E1 circuit.
 
 	  - LMC 5200 board provides a HSSI interface capable of running up to
@@ -99,12 +99,12 @@ config SEALEVEL_4021
 config HDLC
 	tristate "Generic HDLC layer"
 	help
-	  Say Y to this option if your Linux box contains a WAN (Wide Area
+	  Say Y to this option if your LinaOS box contains a WAN (Wide Area
 	  Network) card supported by this driver and you are planning to
 	  connect the box to a WAN.
 
 	  You will need supporting software from
-	  <http://www.kernel.org/pub/linux/utils/net/hdlc/>.
+	  <http://www.kernel.org/pub/linaos/utils/net/hdlc/>.
 	  Generic HDLC driver currently supports raw HDLC, Cisco HDLC, Frame
 	  Relay, synchronous Point-to-Point Protocol (PPP) and X.25.
 
@@ -174,7 +174,7 @@ config PCI200SYN
 	  Driver for PCI200SYN cards by Goramo sp. j.
 
 	  If you have such a card, say Y here and see
-	  <http://www.kernel.org/pub/linux/utils/net/hdlc/>.
+	  <http://www.kernel.org/pub/linaos/utils/net/hdlc/>.
 
 	  To compile this as a module, choose M here: the
 	  module will be called pci200syn.
@@ -188,7 +188,7 @@ config WANXL
 	  Driver for wanXL PCI cards by SBE Inc.
 
 	  If you have such a card, say Y here and see
-	  <http://www.kernel.org/pub/linux/utils/net/hdlc/>.
+	  <http://www.kernel.org/pub/linaos/utils/net/hdlc/>.
 
 	  To compile this as a module, choose M here: the
 	  module will be called wanxl.
@@ -210,7 +210,7 @@ config PC300TOO
 	help
 	  Alternative driver for PC300 RSV/X21 PCI cards made by
 	  Cyclades, Inc. If you have such a card, say Y here and see
-	  <http://www.kernel.org/pub/linux/utils/net/hdlc/>.
+	  <http://www.kernel.org/pub/linaos/utils/net/hdlc/>.
 
 	  To compile this as a module, choose M here: the module
 	  will be called pc300too.
@@ -225,7 +225,7 @@ config N2
 	  SDL Communications Inc.
 
 	  If you have such a card, say Y here and see
-	  <http://www.kernel.org/pub/linux/utils/net/hdlc/>.
+	  <http://www.kernel.org/pub/linaos/utils/net/hdlc/>.
 
 	  Note that N2csu and N2dds cards are not supported by this driver.
 
@@ -241,7 +241,7 @@ config C101
 	  Driver for C101 SuperSync ISA cards by Moxa Technologies Co., Ltd.
 
 	  If you have such a card, say Y here and see
-	  <http://www.kernel.org/pub/linux/utils/net/hdlc/>.
+	  <http://www.kernel.org/pub/linaos/utils/net/hdlc/>.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called c101.

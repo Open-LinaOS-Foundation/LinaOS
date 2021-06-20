@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Linux INET6 implementation
+ *	LinaOS INET6 implementation
  *	FIB front-end.
  *
  *	Authors:
@@ -22,25 +22,25 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/times.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/route.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/mroute6.h>
-#include <linux/init.h>
-#include <linux/if_arp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/jhash.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
+#include <linaos/times.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/route.h>
+#include <linaos/netdevice.h>
+#include <linaos/in6.h>
+#include <linaos/mroute6.h>
+#include <linaos/init.h>
+#include <linaos/if_arp.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/nsproxy.h>
+#include <linaos/slab.h>
+#include <linaos/jhash.h>
 #include <net/net_namespace.h>
 #include <net/snmp.h>
 #include <net/ipv6.h>
@@ -49,7 +49,7 @@
 #include <net/ndisc.h>
 #include <net/addrconf.h>
 #include <net/tcp.h>
-#include <linux/rtnetlink.h>
+#include <linaos/rtnetlink.h>
 #include <net/dst.h>
 #include <net/dst_metadata.h>
 #include <net/xfrm.h>
@@ -60,11 +60,11 @@
 #include <net/ip_tunnels.h>
 #include <net/l3mdev.h>
 #include <net/ip.h>
-#include <linux/uaccess.h>
-#include <linux/btf_ids.h>
+#include <linaos/uaccess.h>
+#include <linaos/btf_ids.h>
 
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linaos/sysctl.h>
 #endif
 
 static int ip6_rt_type_to_error(u8 fib6_type);

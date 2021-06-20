@@ -10,17 +10,17 @@
 #include <keys/trusted-type.h>
 #include <keys/trusted_tee.h>
 #include <keys/trusted_tpm.h>
-#include <linux/capability.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/key-type.h>
-#include <linux/module.h>
-#include <linux/parser.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/static_call.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
+#include <linaos/capability.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/key-type.h>
+#include <linaos/module.h>
+#include <linaos/parser.h>
+#include <linaos/rcupdate.h>
+#include <linaos/slab.h>
+#include <linaos/static_call.h>
+#include <linaos/string.h>
+#include <linaos/uaccess.h>
 
 static char *trusted_key_source;
 module_param_named(source, trusted_key_source, charp, 0);

@@ -6,7 +6,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* Uses NEC extended 0x02bd */
 static struct rc_map_table total_media_in_hand[] = {

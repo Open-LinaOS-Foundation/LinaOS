@@ -6,19 +6,19 @@
  * Copyright © 2018-2020 ANSSI
  */
 
-#include <linux/bits.h>
-#include <linux/bug.h>
-#include <linux/compiler_types.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/lockdep.h>
-#include <linux/overflow.h>
-#include <linux/rbtree.h>
-#include <linux/refcount.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <linaos/bits.h>
+#include <linaos/bug.h>
+#include <linaos/compiler_types.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/lockdep.h>
+#include <linaos/overflow.h>
+#include <linaos/rbtree.h>
+#include <linaos/refcount.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
 
 #include "limits.h"
 #include "object.h"

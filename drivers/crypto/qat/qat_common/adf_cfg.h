@@ -3,9 +3,9 @@
 #ifndef ADF_CFG_H_
 #define ADF_CFG_H_
 
-#include <linux/list.h>
-#include <linux/rwsem.h>
-#include <linux/debugfs.h>
+#include <linaos/list.h>
+#include <linaos/rwsem.h>
+#include <linaos/debugfs.h>
 #include "adf_accel_devices.h"
 #include "adf_cfg_common.h"
 #include "adf_cfg_strings.h"

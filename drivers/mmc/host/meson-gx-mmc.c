@@ -5,28 +5,28 @@
  * Copyright (c) 2016 BayLibre, SAS.
  * Author: Kevin Hilman <khilman@baylibre.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/iopoll.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/interrupt.h>
-#include <linux/bitfield.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/iopoll.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/ioport.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/reset.h>
+#include <linaos/interrupt.h>
+#include <linaos/bitfield.h>
+#include <linaos/pinctrl/consumer.h>
 
 #define DRIVER_NAME "meson-gx-mmc"
 

@@ -1,7 +1,7 @@
  /*
   * A driver for the PCMCIA Smartcard Reader "Omnikey CardMan Mobile 4000"
   *
-  * cm4000_cs.c support.linux@omnikey.com
+  * cm4000_cs.c support.linaos@omnikey.com
   *
   * Tue Oct 23 11:32:43 GMT 2001 herp - cleaned up header files
   * Sun Jan 20 10:11:15 MET 2002 herp - added modversion header files
@@ -23,23 +23,23 @@
   * All rights reserved. Licensed under dual BSD/GPL license.
   */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/bitrev.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/delay.h>
+#include <linaos/bitrev.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>
 #include <pcmcia/ciscode.h>
 #include <pcmcia/ds.h>
 
-#include <linux/cm4000_cs.h>
+#include <linaos/cm4000_cs.h>
 
 /* #define ATR_CSUM */
 

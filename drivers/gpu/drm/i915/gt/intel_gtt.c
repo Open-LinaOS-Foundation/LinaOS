@@ -3,9 +3,9 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/slab.h> /* fault-inject.h is not standalone! */
+#include <linaos/slab.h> /* fault-inject.h is not standalone! */
 
-#include <linux/fault-inject.h>
+#include <linaos/fault-inject.h>
 
 #include "i915_trace.h"
 #include "intel_gt.h"

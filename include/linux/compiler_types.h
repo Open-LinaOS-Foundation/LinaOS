@@ -62,7 +62,7 @@ static inline void __chk_io_ptr(const volatile void __iomem *ptr) { }
 #ifdef __KERNEL__
 
 /* Attributes */
-#include <linux/compiler_attributes.h>
+#include <linaos/compiler_attributes.h>
 
 /* Builtins */
 
@@ -77,19 +77,19 @@ static inline void __chk_io_ptr(const volatile void __iomem *ptr) { }
 
 /* Compiler specific macros. */
 #ifdef __clang__
-#include <linux/compiler-clang.h>
+#include <linaos/compiler-clang.h>
 #elif defined(__INTEL_COMPILER)
-#include <linux/compiler-intel.h>
+#include <linaos/compiler-intel.h>
 #elif defined(__GNUC__)
 /* The above compilers also define __GNUC__, so order is important here. */
-#include <linux/compiler-gcc.h>
+#include <linaos/compiler-gcc.h>
 #else
 #error "Unknown compiler"
 #endif
 
 /*
  * Some architectures need to provide custom definitions of macros provided
- * by linux/compiler-*.h, and can do so using asm/compiler.h. We include that
+ * by linaos/compiler-*.h, and can do so using asm/compiler.h. We include that
  * conditionally rather than using an asm-generic wrapper in order to avoid
  * build failures if any C compilation, which will include this file via an
  * -include argument in c_flags, occurs prior to the asm-generic wrappers being

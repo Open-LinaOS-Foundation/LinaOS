@@ -10,7 +10,7 @@
 #ifndef __SAMSUNG_CLK_H
 #define __SAMSUNG_CLK_H
 
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 #include "clk-pll.h"
 
 /**

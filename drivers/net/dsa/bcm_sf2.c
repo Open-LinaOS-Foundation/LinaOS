@@ -5,27 +5,27 @@
  * Copyright (C) 2014, Broadcom Corporation
  */
 
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/phylink.h>
-#include <linux/mii.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/phy.h>
+#include <linaos/phy_fixed.h>
+#include <linaos/phylink.h>
+#include <linaos/mii.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/of_net.h>
+#include <linaos/of_mdio.h>
 #include <net/dsa.h>
-#include <linux/ethtool.h>
-#include <linux/if_bridge.h>
-#include <linux/brcmphy.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_data/b53.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_bridge.h>
+#include <linaos/brcmphy.h>
+#include <linaos/etherdevice.h>
+#include <linaos/platform_data/b53.h>
 
 #include "bcm_sf2.h"
 #include "bcm_sf2_regs.h"
@@ -619,7 +619,7 @@ static int bcm_sf2_mdio_register(struct dsa_switch *ds)
 	priv->slave_mii_bus->phy_mask = ~priv->indir_phy_mask;
 
 	/* We need to make sure that of_phy_connect() will not work by
-	 * removing the 'phandle' and 'linux,phandle' properties and
+	 * removing the 'phandle' and 'linaos,phandle' properties and
 	 * unregister the existing PHY device that was already registered.
 	 */
 	for_each_available_child_of_node(dn, child) {
@@ -634,7 +634,7 @@ static int bcm_sf2_mdio_register(struct dsa_switch *ds)
 		if (prop)
 			of_remove_property(child, prop);
 
-		prop = of_find_property(child, "linux,phandle", NULL);
+		prop = of_find_property(child, "linaos,phandle", NULL);
 		if (prop)
 			of_remove_property(child, prop);
 

@@ -29,7 +29,7 @@
  *    Chanbin Du <changbin.du@intel.com>
  *    Min He <min.he@intel.com>
  *    Bing Niu <bing.niu@intel.com>
- *    Zhenyu Wang <zhenyuw@linux.intel.com>
+ *    Zhenyu Wang <zhenyuw@linaos.intel.com>
  *
  */
 

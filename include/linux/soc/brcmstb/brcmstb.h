@@ -2,7 +2,7 @@
 #ifndef __BRCMSTB_SOC_H
 #define __BRCMSTB_SOC_H
 
-#include <linux/kconfig.h>
+#include <linaos/kconfig.h>
 
 static inline u32 BRCM_ID(u32 reg)
 {

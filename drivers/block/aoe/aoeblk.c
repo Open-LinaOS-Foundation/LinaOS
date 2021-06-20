@@ -4,20 +4,20 @@
  * block device routines
  */
 
-#include <linux/kernel.h>
-#include <linux/hdreg.h>
-#include <linux/blk-mq.h>
-#include <linux/backing-dev.h>
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
-#include <linux/genhd.h>
-#include <linux/netdevice.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
-#include <linux/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/hdreg.h>
+#include <linaos/blk-mq.h>
+#include <linaos/backing-dev.h>
+#include <linaos/fs.h>
+#include <linaos/ioctl.h>
+#include <linaos/slab.h>
+#include <linaos/ratelimit.h>
+#include <linaos/genhd.h>
+#include <linaos/netdevice.h>
+#include <linaos/mutex.h>
+#include <linaos/export.h>
+#include <linaos/moduleparam.h>
+#include <linaos/debugfs.h>
 #include <scsi/sg.h>
 #include "aoe.h"
 

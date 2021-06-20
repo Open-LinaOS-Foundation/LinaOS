@@ -1282,7 +1282,7 @@
 			       <0x10001000 0x2000>;
 			reg-names = "dbi", "elbi", "parf", "config";
 			device_type = "pci";
-			linux,pci-domain = <0>;
+			linaos,pci-domain = <0>;
 			bus-range = <0x00 0xff>;
 			num-lanes = <1>;
 			#address-cells = <3>;

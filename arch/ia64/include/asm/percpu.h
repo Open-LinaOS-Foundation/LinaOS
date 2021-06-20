@@ -12,7 +12,7 @@
 #else /* !__ASSEMBLY__ */
 
 
-#include <linux/threads.h>
+#include <linaos/threads.h>
 
 #ifdef CONFIG_SMP
 

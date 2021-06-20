@@ -14,17 +14,17 @@
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2008
  */
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linaos/types.h>
+#include <linaos/rcupdate.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
-#include <linux/audit.h>
+#include <linaos/audit.h>
 
 #include "netlabel_addrlist.h"
 

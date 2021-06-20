@@ -5,8 +5,8 @@
  */
 
 #include <kunit/test.h>
-#include <linux/kernel.h>
-#include <linux/time64.h>
+#include <linaos/kernel.h>
+#include <linaos/time64.h>
 
 #include "ext4.h"
 

@@ -9,9 +9,9 @@
  * Copyright (C) 2010 Igor M. Liplianin <liplianin@netup.ru>
  */
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/firmware.h>
+#include <linaos/slab.h>
 #include <misc/altera.h>
 #include "altera-exprt.h"
 #include "altera-jtag.h"

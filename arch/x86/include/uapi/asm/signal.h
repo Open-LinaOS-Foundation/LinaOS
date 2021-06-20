@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_ASM_X86_SIGNAL_H
 #define _UAPI_ASM_X86_SIGNAL_H
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/time.h>
+#include <linaos/compiler.h>
 
 /* Avoid too many header ordering problems.  */
 struct siginfo;

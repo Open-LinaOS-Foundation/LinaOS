@@ -809,7 +809,7 @@ static ssize_t fill_registers_buffer(struct debug_buffer *buf)
 			case 1:
 				temp = scnprintf(next, size,
 					"ownership %08x%s%s\n", cap,
-					(cap & (1 << 24)) ? " linux" : "",
+					(cap & (1 << 24)) ? " linaos" : "",
 					(cap & (1 << 16)) ? " firmware" : "");
 				size -= temp;
 				next += temp;

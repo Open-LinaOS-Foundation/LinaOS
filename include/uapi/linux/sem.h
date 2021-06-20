@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_SEM_H
 #define _UAPI_LINUX_SEM_H
 
-#include <linux/ipc.h>
+#include <linaos/ipc.h>
 
 /* semop flags */
 #define SEM_UNDO        0x1000  /* undo the operation on exit */

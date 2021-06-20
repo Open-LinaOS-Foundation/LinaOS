@@ -16,7 +16,7 @@
 #ifndef __CORDIC_H_
 #define __CORDIC_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define CORDIC_ANGLE_GEN	39797
 #define CORDIC_PRECISION_SHIFT	16

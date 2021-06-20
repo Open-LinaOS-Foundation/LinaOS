@@ -13,18 +13,18 @@
  *		for PPC64
  */
 
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/preempt.h>
-#include <linux/extable.h>
-#include <linux/kdebug.h>
-#include <linux/slab.h>
+#include <linaos/kprobes.h>
+#include <linaos/ptrace.h>
+#include <linaos/preempt.h>
+#include <linaos/extable.h>
+#include <linaos/kdebug.h>
+#include <linaos/slab.h>
 #include <asm/code-patching.h>
 #include <asm/cacheflush.h>
 #include <asm/sstep.h>
 #include <asm/sections.h>
 #include <asm/inst.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 DEFINE_PER_CPU(struct kprobe *, current_kprobe) = NULL;
 DEFINE_PER_CPU(struct kprobe_ctlblk, kprobe_ctlblk);

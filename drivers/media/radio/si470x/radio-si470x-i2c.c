@@ -16,11 +16,11 @@
 #define DRIVER_VERSION "1.0.2"
 
 /* kernel includes */
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
 
 #include "radio-si470x.h"
 
@@ -212,7 +212,7 @@ static int si470x_fops_release(struct file *file)
 
 
 /**************************************************************************
- * Video4Linux Interface
+ * Video4LinaOS Interface
  **************************************************************************/
 
 /*
@@ -423,7 +423,7 @@ static int si470x_i2c_probe(struct i2c_client *client)
 		dev_warn(&client->dev,
 			"If you have some trouble using this driver,\n");
 		dev_warn(&client->dev,
-			"please report to V4L ML at linux-media@vger.kernel.org\n");
+			"please report to V4L ML at linaos-media@vger.kernel.org\n");
 	}
 
 	/* set initial frequency */

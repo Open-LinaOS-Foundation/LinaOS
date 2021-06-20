@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/regmap.h>
 
 #include "kxsd9.h"
 

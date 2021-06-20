@@ -4,7 +4,7 @@
 #include "wifi.h"
 #include "efuse.h"
 #include "pci.h"
-#include <linux/export.h>
+#include <linaos/export.h>
 
 static const u8 PGPKT_DATA_SIZE = 8;
 static const int EFUSE_MAX_SIZE = 512;

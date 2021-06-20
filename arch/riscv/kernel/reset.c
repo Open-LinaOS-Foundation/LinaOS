@@ -3,8 +3,8 @@
  * Copyright (C) 2012 Regents of the University of California
  */
 
-#include <linux/reboot.h>
-#include <linux/pm.h>
+#include <linaos/reboot.h>
+#include <linaos/pm.h>
 
 static void default_power_off(void)
 {

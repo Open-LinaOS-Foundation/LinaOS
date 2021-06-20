@@ -10,9 +10,9 @@
 #
 # Copyright (C) 1995-2001 by Russell King
 
-LDFLAGS_vmlinux	:= --no-undefined -X --pic-veneer -z norelro
+LDFLAGS_vmlinaos	:= --no-undefined -X --pic-veneer -z norelro
 ifeq ($(CONFIG_CPU_ENDIAN_BE8),y)
-LDFLAGS_vmlinux	+= --be8
+LDFLAGS_vmlinaos	+= --be8
 KBUILD_LDFLAGS_MODULE	+= --be8
 endif
 
@@ -100,7 +100,7 @@ tune-$(CONFIG_CPU_V6K)		=$(call cc-option,-mtune=arm1136j-s,-mtune=strongarm)
 tune-y := $(tune-y)
 
 ifeq ($(CONFIG_AEABI),y)
-CFLAGS_ABI	:=-mabi=aapcs-linux -mfpu=vfp
+CFLAGS_ABI	:=-mabi=aapcs-linaos -mfpu=vfp
 else
 CFLAGS_ABI	:=$(call cc-option,-mapcs-32,-mabi=apcs-gnu) $(call cc-option,-mno-thumb-interwork,)
 endif
@@ -304,7 +304,7 @@ PHONY += bzImage $(BOOT_TARGETS) $(INSTALL_TARGETS)
 bootpImage uImage: zImage
 zImage: Image
 
-$(BOOT_TARGETS): vmlinux
+$(BOOT_TARGETS): vmlinaos
 	$(Q)$(MAKE) $(build)=$(boot) MACHINE=$(MACHINE) $(boot)/$@
 	@$(kecho) '  Kernel: $(boot)/$@ is ready'
 

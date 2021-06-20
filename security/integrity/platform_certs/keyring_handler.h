@@ -3,7 +3,7 @@
 #ifndef PLATFORM_CERTS_INTERNAL_H
 #define PLATFORM_CERTS_INTERNAL_H
 
-#include <linux/efi.h>
+#include <linaos/efi.h>
 
 void blacklist_hash(const char *source, const void *data,
 		    size_t len, const char *type,

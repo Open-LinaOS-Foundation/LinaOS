@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/compr_mm.h
+ * linaos/compr_mm.h
  *
  * Memory management for pre-boot and ramdisk uncompressors
  *
@@ -68,11 +68,11 @@ static void free(void *where)
 
 /* Code active when compiled standalone for use when loading ramdisk: */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 /* Use defines rather than static inline in order to avoid spurious
  * warnings when not needed (indeed large_malloc / large_free are not
@@ -87,7 +87,7 @@ static void free(void *where)
 #define INIT __init
 #define STATIC
 
-#include <linux/init.h>
+#include <linaos/init.h>
 
 #endif /* STATIC */
 

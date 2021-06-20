@@ -1,5 +1,5 @@
 /*
- * linux/mfd/tps65218.h
+ * linaos/mfd/tps65218.h
  *
  * Functions to access TPS65219 power management chip.
  *
@@ -18,10 +18,10 @@
 #ifndef __LINUX_MFD_TPS65218_H
 #define __LINUX_MFD_TPS65218_H
 
-#include <linux/i2c.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/bitops.h>
+#include <linaos/i2c.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/bitops.h>
 
 /* TPS chip id list */
 #define TPS65218			0xF0

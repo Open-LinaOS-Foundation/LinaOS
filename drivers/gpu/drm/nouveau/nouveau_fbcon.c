@@ -24,18 +24,18 @@
  *     David Airlie
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/sysrq.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/screen_info.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/console.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/tty.h>
+#include <linaos/sysrq.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/screen_info.h>
+#include <linaos/vga_switcheroo.h>
+#include <linaos/console.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_crtc_helper.h>

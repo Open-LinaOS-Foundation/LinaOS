@@ -27,7 +27,7 @@
  *	that offsets of existing fields do not change.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/sn/types.h>
 
 #if defined(CONFIG_SGI_IP27)
@@ -884,7 +884,7 @@ typedef union {
 #define VDS_2ND_IO4		0x02	/* Boot from the second IO4 */
 #define VDS_DEBUG_PROM		0x01	/* Print PROM debugging messages */
 
-/* external declarations of Linux kernel functions. */
+/* external declarations of LinaOS kernel functions. */
 
 extern lboard_t *find_lboard(lboard_t *start, unsigned char type);
 extern klinfo_t *find_component(lboard_t *brd, klinfo_t *kli, unsigned char type);

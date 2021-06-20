@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/configfs.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/nls.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/gadget_configfs.h>
+#include <linaos/configfs.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/nls.h>
+#include <linaos/usb/composite.h>
+#include <linaos/usb/gadget_configfs.h>
 #include "configfs.h"
 #include "u_f.h"
 #include "u_os_desc.h"

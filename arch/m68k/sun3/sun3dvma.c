@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/m68k/sun3/sun3dvma.c
+ * linaos/arch/m68k/sun3/sun3dvma.c
  *
  * Copyright (C) 2000 Sam Creasey
  *
  * Contains common routines for sun3/sun3x DVMA management.
  */
 
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/list.h>
+#include <linaos/memblock.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/mm.h>
+#include <linaos/list.h>
 
 #include <asm/page.h>
 #include <asm/dvma.h>

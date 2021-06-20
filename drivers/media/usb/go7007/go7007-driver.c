@@ -3,21 +3,21 @@
  * Copyright (C) 2005-2006 Micronas USA Inc.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/unistd.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/firmware.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/unistd.h>
+#include <linaos/time.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/firmware.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
 #include <media/tuner.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-event.h>

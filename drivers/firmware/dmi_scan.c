@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/memblock.h>
-#include <linux/random.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/ctype.h>
+#include <linaos/dmi.h>
+#include <linaos/efi.h>
+#include <linaos/memblock.h>
+#include <linaos/random.h>
 #include <asm/dmi.h>
 #include <asm/unaligned.h>
 

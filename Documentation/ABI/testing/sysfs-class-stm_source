@@ -1,7 +1,7 @@
 What:		/sys/class/stm_source/<stm_source>/stm_source_link
 Date:		June 2015
 KernelVersion:	4.3
-Contact:	Alexander Shishkin <alexander.shishkin@linux.intel.com>
+Contact:	Alexander Shishkin <alexander.shishkin@linaos.intel.com>
 Description:
 		stm_source device linkage to stm device, where its tracing data
 		is directed. Reads return an existing connection or "<none>" if

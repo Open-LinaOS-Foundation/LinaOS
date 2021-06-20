@@ -196,9 +196,9 @@ they happen concurrently in different threads, and at least one of them is a
 least one is a write. For a more thorough discussion and definition, see `"Plain
 Accesses and Data Races" in the LKMM`_.
 
-.. _"Plain Accesses and Data Races" in the LKMM: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/memory-model/Documentation/explanation.txt#n1922
+.. _"Plain Accesses and Data Races" in the LKMM: https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git/tree/tools/memory-model/Documentation/explanation.txt#n1922
 
-Relationship with the Linux-Kernel Memory Consistency Model (LKMM)
+Relationship with the LinaOS-Kernel Memory Consistency Model (LKMM)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The LKMM defines the propagation and ordering rules of various memory
@@ -228,7 +228,7 @@ operations result in unexpected system behaviour. On the other hand, data races
 are defined at the C-language level. The following macros can be used to check
 properties of concurrent code where bugs would not manifest as data races.
 
-.. kernel-doc:: include/linux/kcsan-checks.h
+.. kernel-doc:: include/linaos/kcsan-checks.h
     :functions: ASSERT_EXCLUSIVE_WRITER ASSERT_EXCLUSIVE_WRITER_SCOPED
                 ASSERT_EXCLUSIVE_ACCESS ASSERT_EXCLUSIVE_ACCESS_SCOPED
                 ASSERT_EXCLUSIVE_BITS

@@ -9,11 +9,11 @@
  * Authors:    See the TCPv6 sources
  */
 
-#include <linux/module.h>
-#include <linux/in6.h>
-#include <linux/ipv6.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/in6.h>
+#include <linaos/ipv6.h>
+#include <linaos/jhash.h>
+#include <linaos/slab.h>
 
 #include <net/addrconf.h>
 #include <net/inet_connection_sock.h>

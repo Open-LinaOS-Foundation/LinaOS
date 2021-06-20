@@ -11,7 +11,7 @@
  *    emu10k1x: Copyright (c) by Francisco Moraes <fmoraes@nc.rr.com>
  */
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 

@@ -7,9 +7,9 @@
  *  Copyright (C) 2010  Andy Walls <awalls@md.metrocast.net>
  */
 
-#include <linux/slab.h>
-#include <linux/kfifo.h>
-#include <linux/module.h>
+#include <linaos/slab.h>
+#include <linaos/kfifo.h>
+#include <linaos/module.h>
 #include <media/drv-intf/cx25840.h>
 #include <media/rc-core.h>
 

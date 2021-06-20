@@ -8,7 +8,7 @@
 #ifndef _LINUX_ARMADA_37XX_RWTM_MAILBOX_H_
 #define _LINUX_ARMADA_37XX_RWTM_MAILBOX_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct armada_37xx_rwtm_tx_msg {
 	u16 command;

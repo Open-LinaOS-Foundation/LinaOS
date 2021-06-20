@@ -9,7 +9,7 @@
 #ifndef _ALPS_H
 #define _ALPS_H
 
-#include <linux/input/mt.h>
+#include <linaos/input/mt.h>
 
 #define ALPS_PROTO_V1		0x100
 #define ALPS_PROTO_V2		0x200

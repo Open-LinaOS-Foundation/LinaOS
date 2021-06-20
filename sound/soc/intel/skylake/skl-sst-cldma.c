@@ -7,10 +7,10 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
 #include "../common/sst-dsp.h"
 #include "../common/sst-dsp-priv.h"
 

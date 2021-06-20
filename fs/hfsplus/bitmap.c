@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hfsplus/bitmap.c
+ *  linaos/fs/hfsplus/bitmap.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -9,7 +9,7 @@
  * Handling of allocation file
  */
 
-#include <linux/pagemap.h>
+#include <linaos/pagemap.h>
 
 #include "hfsplus_fs.h"
 #include "hfsplus_raw.h"

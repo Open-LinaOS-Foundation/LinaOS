@@ -11,13 +11,13 @@
 #ifndef __ARM64_KVM_HOST_H__
 #define __ARM64_KVM_HOST_H__
 
-#include <linux/arm-smccc.h>
-#include <linux/bitmap.h>
-#include <linux/types.h>
-#include <linux/jump_label.h>
-#include <linux/kvm_types.h>
-#include <linux/percpu.h>
-#include <linux/psci.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/bitmap.h>
+#include <linaos/types.h>
+#include <linaos/jump_label.h>
+#include <linaos/kvm_types.h>
+#include <linaos/percpu.h>
+#include <linaos/psci.h>
 #include <asm/arch_gicv3.h>
 #include <asm/barrier.h>
 #include <asm/cpufeature.h>

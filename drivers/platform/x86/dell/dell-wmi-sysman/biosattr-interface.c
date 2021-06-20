@@ -6,7 +6,7 @@
  *  Copyright (c) 2020 Dell Inc.
  */
 
-#include <linux/wmi.h>
+#include <linaos/wmi.h>
 #include "dell-wmi-sysman.h"
 
 #define SETDEFAULTVALUES_METHOD_ID					0x02

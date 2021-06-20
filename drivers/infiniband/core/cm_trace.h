@@ -14,7 +14,7 @@
 
 #define _TRACE_IB_CMA_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include <rdma/ib_cm.h>
 #include <trace/events/rdma.h>
 

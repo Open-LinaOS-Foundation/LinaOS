@@ -5,7 +5,7 @@
  * Copyright (C) 2020 Intel Corporation
  *
  * Authors:
- *	Mark Gross <mgross@linux.intel.com>
+ *	Mark Gross <mgross@linaos.intel.com>
  *	Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  *
  * Provided here is an interface for specifying PM QoS dependencies.  It allows
@@ -20,23 +20,23 @@
 
 /*#define DEBUG*/
 
-#include <linux/pm_qos.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/pm_qos.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/fs.h>
+#include <linaos/device.h>
+#include <linaos/miscdevice.h>
+#include <linaos/string.h>
+#include <linaos/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
-#include <linux/uaccess.h>
-#include <linux/export.h>
+#include <linaos/uaccess.h>
+#include <linaos/export.h>
 #include <trace/events/power.h>
 
 /*

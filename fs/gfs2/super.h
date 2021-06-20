@@ -7,8 +7,8 @@
 #ifndef __SUPER_DOT_H__
 #define __SUPER_DOT_H__
 
-#include <linux/fs.h>
-#include <linux/dcache.h>
+#include <linaos/fs.h>
+#include <linaos/dcache.h>
 #include "incore.h"
 
 /* Supported fs format version range */

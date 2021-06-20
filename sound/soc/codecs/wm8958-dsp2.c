@@ -7,23 +7,23 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 #include <sound/soc.h>
 #include <sound/initval.h>
 #include <sound/tlv.h>
 #include <trace/events/asoc.h>
 
-#include <linux/mfd/wm8994/core.h>
-#include <linux/mfd/wm8994/registers.h>
-#include <linux/mfd/wm8994/pdata.h>
-#include <linux/mfd/wm8994/gpio.h>
+#include <linaos/mfd/wm8994/core.h>
+#include <linaos/mfd/wm8994/registers.h>
+#include <linaos/mfd/wm8994/pdata.h>
+#include <linaos/mfd/wm8994/gpio.h>
 
 #include <asm/unaligned.h>
 

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0-or-later WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-or-later WITH LinaOS-syscall-note */
 /*
  * Copyright (c) 2017, Oracle and/or its affiliates. All rights reserved.
  */
@@ -10,7 +10,7 @@
 #ifndef _ORADAX_H
 #define	_ORADAX_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define	CCB_KILL 0
 #define	CCB_INFO 1

@@ -10,13 +10,13 @@
 #
 # Copyright (C) 1995-2001 by Russell King
 
-LDFLAGS_vmlinux	:=--no-undefined -X
+LDFLAGS_vmlinaos	:=--no-undefined -X
 
 ifeq ($(CONFIG_RELOCATABLE), y)
 # Pass --no-apply-dynamic-relocs to restore pre-binutils-2.27 behaviour
 # for relative relocs, since this leads to better Image compression
 # with the relocation offsets always being zero.
-LDFLAGS_vmlinux		+= -shared -Bsymbolic -z notext \
+LDFLAGS_vmlinaos		+= -shared -Bsymbolic -z notext \
 			$(call ld-option, --no-apply-dynamic-relocs)
 endif
 
@@ -24,7 +24,7 @@ ifeq ($(CONFIG_ARM64_ERRATUM_843419),y)
   ifneq ($(CONFIG_ARM64_LD_HAS_FIX_ERRATUM_843419),y)
 $(warning ld does not support --fix-cortex-a53-843419; kernel may be susceptible to erratum)
   else
-LDFLAGS_vmlinux	+= --fix-cortex-a53-843419
+LDFLAGS_vmlinaos	+= --fix-cortex-a53-843419
   endif
 endif
 
@@ -114,14 +114,14 @@ ifeq ($(CONFIG_CPU_BIG_ENDIAN), y)
 KBUILD_CPPFLAGS	+= -mbig-endian
 CHECKFLAGS	+= -D__AARCH64EB__
 # Prefer the baremetal ELF build target, but not all toolchains include
-# it so fall back to the standard linux version if needed.
-KBUILD_LDFLAGS	+= -EB $(call ld-option, -maarch64elfb, -maarch64linuxb -z norelro)
+# it so fall back to the standard linaos version if needed.
+KBUILD_LDFLAGS	+= -EB $(call ld-option, -maarch64elfb, -maarch64linaosb -z norelro)
 UTS_MACHINE	:= aarch64_be
 else
 KBUILD_CPPFLAGS	+= -mlittle-endian
 CHECKFLAGS	+= -D__AARCH64EL__
-# Same as above, prefer ELF but fall back to linux target if needed.
-KBUILD_LDFLAGS	+= -EL $(call ld-option, -maarch64elf, -maarch64linux -z norelro)
+# Same as above, prefer ELF but fall back to linaos target if needed.
+KBUILD_LDFLAGS	+= -EL $(call ld-option, -maarch64elf, -maarch64linaos -z norelro)
 UTS_MACHINE	:= aarch64
 endif
 
@@ -160,7 +160,7 @@ KBUILD_IMAGE	:= $(boot)/Image.gz
 all:	Image.gz
 
 
-Image: vmlinux
+Image: vmlinaos
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 Image.%: Image

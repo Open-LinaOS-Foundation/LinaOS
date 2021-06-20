@@ -6,7 +6,7 @@
 
 #ifndef __ASSEMBLY__
 #include <asm/virtconvert.h>
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 /*
  * This file contains all the things which change drastically for the sun3

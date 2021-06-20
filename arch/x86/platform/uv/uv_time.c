@@ -6,8 +6,8 @@
  *  Copyright (c) 2009-2013 Silicon Graphics, Inc.  All Rights Reserved.
  *  Copyright (c) Dimitri Sivanich
  */
-#include <linux/clockchips.h>
-#include <linux/slab.h>
+#include <linaos/clockchips.h>
+#include <linaos/slab.h>
 
 #include <asm/uv/uv_mmrs.h>
 #include <asm/uv/uv_hub.h>

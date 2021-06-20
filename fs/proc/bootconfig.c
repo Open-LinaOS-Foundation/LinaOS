@@ -2,13 +2,13 @@
 /*
  * /proc/bootconfig - Extra boot configuration
  */
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/printk.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/bootconfig.h>
-#include <linux/slab.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/printk.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/bootconfig.h>
+#include <linaos/slab.h>
 
 static char *saved_boot_config;
 

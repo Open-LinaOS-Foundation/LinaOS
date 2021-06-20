@@ -6,14 +6,14 @@
 
 #define DSS_SUBSYS_NAME "SDI"
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/string.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/string.h>
 
 #include <drm/drm_bridge.h>
 

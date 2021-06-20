@@ -11,15 +11,15 @@
  * to 100us to include some safety margin.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/ktime.h>
-#include <linux/delay.h>
-#include <linux/pmbus.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/ktime.h>
+#include <linaos/delay.h>
+#include <linaos/pmbus.h>
 #include "pmbus.h"
 
 static const struct i2c_device_id max15301_id[] = {

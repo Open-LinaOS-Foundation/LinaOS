@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 
 /*
  * Copyright (c) 2018 Intel Corporation.  All rights reserved.
@@ -11,7 +11,7 @@
 #if !defined(_TRACE_IB_UMAD_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_IB_UMAD_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(ib_umad_template,
 	TP_PROTO(struct ib_umad_file *file, struct ib_user_mad_hdr *umad_hdr,

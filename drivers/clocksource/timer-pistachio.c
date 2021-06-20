@@ -10,20 +10,20 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/sched_clock.h>
-#include <linux/time.h>
+#include <linaos/clk.h>
+#include <linaos/clocksource.h>
+#include <linaos/clockchips.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/sched_clock.h>
+#include <linaos/time.h>
 
 /* Top level reg */
 #define CR_TIMER_CTRL_CFG		0x00

@@ -7,8 +7,8 @@
 #if defined(__sparc__) && defined(__arch64__)
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/threads.h>
+#include <linaos/compiler.h>
+#include <linaos/threads.h>
 #include <asm/switch_to.h>
 
 static inline int pt_regs_trap_type(struct pt_regs *regs)

@@ -1,9 +1,9 @@
 #ifndef __LINKMODE_H
 #define __LINKMODE_H
 
-#include <linux/bitmap.h>
-#include <linux/ethtool.h>
-#include <uapi/linux/ethtool.h>
+#include <linaos/bitmap.h>
+#include <linaos/ethtool.h>
+#include <uapi/linaos/ethtool.h>
 
 static inline void linkmode_zero(unsigned long *dst)
 {

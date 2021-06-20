@@ -8,11 +8,11 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/etherdevice.h>
-#include <linux/davinci_emac.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/etherdevice.h>
+#include <linaos/davinci_emac.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/tlb.h>
 #include <asm/mach/map.h>

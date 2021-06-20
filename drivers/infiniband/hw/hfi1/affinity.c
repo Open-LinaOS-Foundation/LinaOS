@@ -44,11 +44,11 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#include <linux/topology.h>
-#include <linux/cpumask.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/numa.h>
+#include <linaos/topology.h>
+#include <linaos/cpumask.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/numa.h>
 
 #include "hfi.h"
 #include "affinity.h"

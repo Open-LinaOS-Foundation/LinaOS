@@ -6,7 +6,7 @@
  */
 
 #include <asm/assembly.h>
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 	.section .text.hot
 	.level PA_ASM_LEVEL

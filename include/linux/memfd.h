@@ -2,7 +2,7 @@
 #ifndef __LINUX_MEMFD_H
 #define __LINUX_MEMFD_H
 
-#include <linux/file.h>
+#include <linaos/file.h>
 
 #ifdef CONFIG_MEMFD_CREATE
 extern long memfd_fcntl(struct file *file, unsigned int cmd, unsigned long arg);

@@ -32,15 +32,15 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/bitops.h>
-#include <linux/pci_ids.h>
-#include <linux/nodemask.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/irq.h>
+#include <linaos/bitops.h>
+#include <linaos/pci_ids.h>
+#include <linaos/nodemask.h>
 
 #include <asm/cpu.h>
 #include <asm/mipsregs.h>

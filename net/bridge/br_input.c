@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Handle incoming frames
- *	Linux ethernet bridge
+ *	LinaOS ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/netfilter_bridge.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/netfilter_bridge.h>
 #ifdef CONFIG_NETFILTER_FAMILY_BRIDGE
 #include <net/netfilter/nf_queue.h>
 #endif
-#include <linux/neighbour.h>
+#include <linaos/neighbour.h>
 #include <net/arp.h>
 #include <net/dsa.h>
-#include <linux/export.h>
-#include <linux/rculist.h>
+#include <linaos/export.h>
+#include <linaos/rculist.h>
 #include "br_private.h"
 #include "br_private_tunnel.h"
 

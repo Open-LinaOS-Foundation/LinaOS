@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 #include "internal.h"
 
 void afs_put_serverlist(struct afs_net *net, struct afs_server_list *slist)

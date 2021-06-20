@@ -3,9 +3,9 @@
  * Copyright (C) 2012 Regents of the University of California
  */
 
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/of.h>
+#include <linaos/init.h>
+#include <linaos/seq_file.h>
+#include <linaos/of.h>
 #include <asm/smp.h>
 
 /*

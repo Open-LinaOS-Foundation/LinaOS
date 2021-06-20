@@ -29,17 +29,17 @@
 			Alan Cox, 30th May 1994
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/rtnetlink.h>
-#include <linux/net_tstamp.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/init.h>
+#include <linaos/moduleparam.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/net_tstamp.h>
 #include <net/rtnetlink.h>
-#include <linux/u64_stats_sync.h>
+#include <linaos/u64_stats_sync.h>
 
 #define DRV_NAME	"dummy"
 

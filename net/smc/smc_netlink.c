@@ -6,15 +6,15 @@
  *
  *  Copyright IBM Corp. 2020
  *
- *  Author(s):	Guvenc Gulce <guvenc@linux.ibm.com>
+ *  Author(s):	Guvenc Gulce <guvenc@linaos.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/ctype.h>
-#include <linux/mutex.h>
-#include <linux/if.h>
-#include <linux/smc.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/ctype.h>
+#include <linaos/mutex.h>
+#include <linaos/if.h>
+#include <linaos/smc.h>
 
 #include "smc_core.h"
 #include "smc_ism.h"

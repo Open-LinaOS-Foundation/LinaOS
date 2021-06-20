@@ -9,10 +9,10 @@
 #ifndef __NET_CFG802154_H
 #define __NET_CFG802154_H
 
-#include <linux/ieee802154.h>
-#include <linux/netdevice.h>
-#include <linux/mutex.h>
-#include <linux/bug.h>
+#include <linaos/ieee802154.h>
+#include <linaos/netdevice.h>
+#include <linaos/mutex.h>
+#include <linaos/bug.h>
 
 #include <net/nl802154.h>
 

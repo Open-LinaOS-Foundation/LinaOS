@@ -5,8 +5,8 @@
 #include <arpa/inet.h>
 #include <errno.h>
 #include <error.h>
-#include <linux/errqueue.h>
-#include <linux/net_tstamp.h>
+#include <linaos/errqueue.h>
+#include <linaos/net_tstamp.h>
 #include <netinet/if_ether.h>
 #include <netinet/in.h>
 #include <netinet/ip.h>

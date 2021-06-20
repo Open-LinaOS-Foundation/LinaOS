@@ -8,34 +8,34 @@
  *  Improving global KVA allocator, Uladzislau Rezki, Sony, May 2019
  */
 
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/set_memory.h>
-#include <linux/debugobjects.h>
-#include <linux/kallsyms.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/rbtree.h>
-#include <linux/xarray.h>
-#include <linux/rcupdate.h>
-#include <linux/pfn.h>
-#include <linux/kmemleak.h>
-#include <linux/atomic.h>
-#include <linux/compiler.h>
-#include <linux/llist.h>
-#include <linux/bitops.h>
-#include <linux/rbtree_augmented.h>
-#include <linux/overflow.h>
-#include <linux/pgtable.h>
-#include <linux/uaccess.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/highmem.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/set_memory.h>
+#include <linaos/debugobjects.h>
+#include <linaos/kallsyms.h>
+#include <linaos/list.h>
+#include <linaos/notifier.h>
+#include <linaos/rbtree.h>
+#include <linaos/xarray.h>
+#include <linaos/rcupdate.h>
+#include <linaos/pfn.h>
+#include <linaos/kmemleak.h>
+#include <linaos/atomic.h>
+#include <linaos/compiler.h>
+#include <linaos/llist.h>
+#include <linaos/bitops.h>
+#include <linaos/rbtree_augmented.h>
+#include <linaos/overflow.h>
+#include <linaos/pgtable.h>
+#include <linaos/uaccess.h>
 #include <asm/tlbflush.h>
 #include <asm/shmparam.h>
 
@@ -1196,7 +1196,7 @@ find_vmap_lowest_match(unsigned long size,
 }
 
 #if DEBUG_AUGMENT_LOWEST_MATCH_CHECK
-#include <linux/random.h>
+#include <linaos/random.h>
 
 static struct vmap_area *
 find_vmap_lowest_linear_match(unsigned long size,

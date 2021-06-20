@@ -2,7 +2,7 @@
 #ifndef __LINUX_MDIO_BITBANG_H
 #define __LINUX_MDIO_BITBANG_H
 
-#include <linux/phy.h>
+#include <linaos/phy.h>
 
 struct module;
 

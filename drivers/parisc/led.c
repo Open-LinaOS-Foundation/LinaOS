@@ -19,33 +19,33 @@
  *	  			  David Pye <dmp@davidmpye.dyndns.org>
  */
 
-#include <linux/module.h>
-#include <linux/stddef.h>	/* for offsetof() */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/utsname.h>
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/reboot.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/ctype.h>
-#include <linux/blkdev.h>
-#include <linux/workqueue.h>
-#include <linux/rcupdate.h>
+#include <linaos/module.h>
+#include <linaos/stddef.h>	/* for offsetof() */
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/ioport.h>
+#include <linaos/utsname.h>
+#include <linaos/capability.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/inetdevice.h>
+#include <linaos/in.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/reboot.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/ctype.h>
+#include <linaos/blkdev.h>
+#include <linaos/workqueue.h>
+#include <linaos/rcupdate.h>
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <asm/hardware.h>
 #include <asm/param.h>		/* HZ */
 #include <asm/led.h>
 #include <asm/pdc.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /* The control of the LEDs and LCDs on PARISC-machines have to be done 
    completely in software. The necessary calculations are done in a work queue
@@ -687,7 +687,7 @@ int __init led_init(void)
 	int ret;
 
 	snprintf(lcd_text_default, sizeof(lcd_text_default),
-		"Linux %s", init_utsname()->release);
+		"LinaOS %s", init_utsname()->release);
 
 	/* Work around the buggy PDC of KittyHawk-machines */
 	switch (CPU_HVERSION) {

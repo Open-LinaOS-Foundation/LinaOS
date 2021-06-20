@@ -5,7 +5,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static struct rc_map_table su3000[] = {
 	{ 0x25, KEY_POWER },	/* right-bottom Red */

@@ -5,13 +5,13 @@
  * Copyright (c) 2008 Sascha Hauer <s.hauer@pengutronix.de>, Pengutronix
  */
 
-#include <linux/of.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/of_gpio.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/module.h>
+#include <linaos/of.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/of_gpio.h>
+#include <linaos/io.h>
+#include <linaos/of_platform.h>
+#include <linaos/module.h>
 
 #include <asm/mpc52xx.h>
 #include <sysdev/fsl_soc.h>

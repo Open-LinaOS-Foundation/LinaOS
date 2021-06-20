@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/netfilter.h>
+#include <linaos/mutex.h>
 #include <net/sock.h>
 
 #include "nf_internals.h"

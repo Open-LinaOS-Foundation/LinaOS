@@ -108,13 +108,13 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/delay.h>
 
 #include <asm/irq.h>
 #include <asm/macintosh.h>

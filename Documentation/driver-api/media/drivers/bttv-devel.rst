@@ -34,7 +34,7 @@ and other nice features.  The msp34xx chips are used by Hauppauge for
 example.  If your board has one, you might have to load a helper
 module like ``msp3400`` to make sound work.  If there isn't one for the
 chip used on your board:  Bad luck.  Start writing a new one.  Well,
-you might want to check the video4linux mailing list archive first...
+you might want to check the video4linaos mailing list archive first...
 
 Of course you need a correctly installed soundcard unless you have the
 speakers connected directly to the grabber board.  Hint: check the

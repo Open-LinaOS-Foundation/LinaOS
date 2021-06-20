@@ -4,23 +4,23 @@
  *
  * Copyright IBM Corporation, 2014
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@linaos.ibm.com>
  */
 
 #ifndef __LINUX_TORTURE_H
 #define __LINUX_TORTURE_H
 
-#include <linux/types.h>
-#include <linux/cache.h>
-#include <linux/spinlock.h>
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/seqlock.h>
-#include <linux/lockdep.h>
-#include <linux/completion.h>
-#include <linux/debugobjects.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/cache.h>
+#include <linaos/spinlock.h>
+#include <linaos/threads.h>
+#include <linaos/cpumask.h>
+#include <linaos/seqlock.h>
+#include <linaos/lockdep.h>
+#include <linaos/completion.h>
+#include <linaos/debugobjects.h>
+#include <linaos/bug.h>
+#include <linaos/compiler.h>
 
 /* Definitions for a non-string torture-test module parameter. */
 #define torture_param(type, name, init, msg) \

@@ -35,19 +35,19 @@
 		user-led1 {
 			label = "green:user1";
 			gpios = <&lsio_gpio4 16 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		user-led2 {
 			label = "green:user2";
 			gpios = <&lsio_gpio0 6 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 		};
 
 		user-led3 {
 			label = "green:user3";
 			gpios = <&lsio_gpio0 7 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc1";
+			linaos,default-trigger = "mmc1";
 			default-state = "off";
 		};
 
@@ -55,20 +55,20 @@
 			label = "green:user4";
 			gpios = <&lsio_gpio4 21 GPIO_ACTIVE_HIGH>;
 			panic-indicator;
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 		};
 
 		wlan-active-led {
 			label = "yellow:wlan";
 			gpios = <&lsio_gpio4 17 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy0tx";
+			linaos,default-trigger = "phy0tx";
 			default-state = "off";
 		};
 
 		bt-active-led {
 			label = "blue:bt";
 			gpios = <&lsio_gpio4 18 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "hci0-power";
+			linaos,default-trigger = "hci0-power";
 			default-state = "off";
 		};
 	};

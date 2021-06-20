@@ -3,20 +3,20 @@
 //
 // Copyright (C) 2014 Google, Inc.
 
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linaos/ctype.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/kobject.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_proto.h>
+#include <linaos/platform_device.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
 
 #define DRV_NAME "cros-ec-sysfs"
 

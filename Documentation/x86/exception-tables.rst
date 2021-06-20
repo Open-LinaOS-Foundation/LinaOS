@@ -10,7 +10,7 @@ When a process runs in kernel mode, it often has to access user
 mode memory whose address has been passed by an untrusted program.
 To protect itself the kernel has to verify this address.
 
-In older versions of Linux this was done with the
+In older versions of LinaOS this was done with the
 int verify_area(int type, const void * addr, unsigned long size)
 function (which has since been replaced by access_ok()).
 
@@ -24,7 +24,7 @@ tests, this normally unneeded verification used up a considerable
 amount of time.
 
 To overcome this situation, Linus decided to let the virtual memory
-hardware present in every Linux-capable CPU handle this test.
+hardware present in every LinaOS-capable CPU handle this test.
 
 How does this work?
 
@@ -162,9 +162,9 @@ memory. But what does the .section stuff do?????
 
 To understand this we have to look at the final kernel::
 
- > objdump --section-headers vmlinux
+ > objdump --section-headers vmlinaos
  >
- > vmlinux:     file format elf32-i386
+ > vmlinaos:     file format elf32-i386
  >
  > Sections:
  > Idx Name          Size      VMA       LMA       File off  Algn
@@ -189,7 +189,7 @@ There are obviously 2 non standard ELF sections in the generated object
 file. But first we want to find out what happened to our code in the
 final kernel executable::
 
- > objdump --disassemble --section=.text vmlinux
+ > objdump --disassemble --section=.text vmlinaos
  >
  > c017e785 <do_con_write+c1> xorl   %edx,%edx
  > c017e787 <do_con_write+c3> movl   0xc01c7bec,%eax
@@ -207,7 +207,7 @@ The instructions bracketed in the .section directives are no longer
 in the normal execution path. They are located in a different section
 of the executable file::
 
- > objdump --disassemble --section=.fixup vmlinux
+ > objdump --disassemble --section=.fixup vmlinaos
  >
  > c0199ff5 <.fixup+10b5> movl   $0xfffffff2,%eax
  > c0199ffa <.fixup+10ba> xorb   %dl,%dl
@@ -215,7 +215,7 @@ of the executable file::
 
 And finally::
 
- > objdump --full-contents --section=__ex_table vmlinux
+ > objdump --full-contents --section=__ex_table vmlinaos
  >
  >  c01aa7c4 93c017c0 e09f19c0 97c017c0 99c017c0  ................
  >  c01aa7d4 f6c217c0 e99f19c0 a5e717c0 f59f19c0  ................
@@ -250,12 +250,12 @@ are local labels. The local label 1b (1b stands for next label 1
 backward) is the address of the instruction that might fault, i.e.
 in our case the address of the label 1 is c017e7a5:
 the original assembly code: > 1:      movb (%ebx),%dl
-and linked in vmlinux     : > c017e7a5 <do_con_write+e1> movb   (%ebx),%dl
+and linked in vmlinaos     : > c017e7a5 <do_con_write+e1> movb   (%ebx),%dl
 
 The local label 3 (backwards again) is the address of the code to handle
 the fault, in our case the actual value is c0199ff5:
 the original assembly code: > 3:      movl $-14,%eax
-and linked in vmlinux     : > c0199ff5 <.fixup+10b5> movl   $0xfffffff2,%eax
+and linked in vmlinaos     : > c0199ff5 <.fixup+10b5> movl   $0xfffffff2,%eax
 
 If the fixup was able to handle the exception, control flow may be returned
 to the instruction after the one that triggered the fault, ie. local label 2b.
@@ -309,7 +309,7 @@ only use exceptions for code in the .text section.  Any other section
 will cause the exception table to not be sorted correctly, and the
 exceptions will fail.
 
-Things changed when 64-bit support was added to x86 Linux. Rather than
+Things changed when 64-bit support was added to x86 LinaOS. Rather than
 double the size of the exception table by expanding the two entries
 from 32-bits to 64 bits, a clever trick was used to store addresses
 as relative offsets from the table itself. The assembly code changed

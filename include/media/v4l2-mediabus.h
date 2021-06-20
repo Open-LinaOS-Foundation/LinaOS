@@ -8,8 +8,8 @@
 #ifndef V4L2_MEDIABUS_H
 #define V4L2_MEDIABUS_H
 
-#include <linux/v4l2-mediabus.h>
-#include <linux/bitops.h>
+#include <linaos/v4l2-mediabus.h>
+#include <linaos/bitops.h>
 
 /*
  * How to use the V4L2_MBUS_* flags:

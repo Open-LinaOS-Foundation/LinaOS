@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Compatibility interface for userspace libc header coordination:
  *
@@ -18,7 +18,7 @@
  * Then follow this process:
  *
  * (a) Include libc-compat.h in the UAPI header.
- *      e.g. #include <linux/libc-compat.h>
+ *      e.g. #include <linaos/libc-compat.h>
  *     This include must be as early as possible.
  *
  * (b) In libc-compat.h add enough code to detect that the comflicting
@@ -34,7 +34,7 @@
  *       ...
  *     #endif
  *
- * This fixes the situation where the linux headers are included *after* the
+ * This fixes the situation where the linaos headers are included *after* the
  * libc headers. To fix the problem with the inclusion in the other order the
  * userspace libc headers must be fixed like this:
  *
@@ -71,7 +71,7 @@
 
 #else /* _NET_IF_H */
 
-/* Linux headers included first, and we must define everything
+/* LinaOS headers included first, and we must define everything
  * we need. The expectation is that glibc will check the
  * __UAPI_DEF_* defines and adjust appropriately. */
 
@@ -117,7 +117,7 @@
 
 #else
 
-/* Linux headers included first, and we must define everything
+/* LinaOS headers included first, and we must define everything
  * we need. The expectation is that glibc will check the
  * __UAPI_DEF_* defines and adjust appropriately. */
 #define __UAPI_DEF_IN_ADDR		1

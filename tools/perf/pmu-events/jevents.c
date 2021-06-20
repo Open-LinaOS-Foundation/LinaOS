@@ -45,7 +45,7 @@
 #include <sys/resource.h>		/* getrlimit */
 #include <ftw.h>
 #include <sys/stat.h>
-#include <linux/list.h>
+#include <linaos/list.h>
 #include "jsmn.h"
 #include "json.h"
 #include "pmu-events.h"

@@ -10,17 +10,17 @@
  * Based on TI DMA Crossbar driver
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_dma.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/reset.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #define STM32_DMAMUX_CCR(x)		(0x4 * (x))
 #define STM32_DMAMUX_MAX_DMA_REQUESTS	32

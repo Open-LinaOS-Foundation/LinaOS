@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /* Copyright (c) 2020 Mellanox Technologies. */
 
 #ifndef __ML5_ESW_CHAINS_H__
 #define __ML5_ESW_CHAINS_H__
 
-#include <linux/mlx5/fs.h>
+#include <linaos/mlx5/fs.h>
 
 struct mlx5_fs_chains;
 struct mlx5_mapped_obj;

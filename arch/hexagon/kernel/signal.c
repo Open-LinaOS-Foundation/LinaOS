@@ -2,18 +2,18 @@
 /*
  * Signal support for Hexagon processor
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/linkage.h>
-#include <linux/syscalls.h>
-#include <linux/tracehook.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/linkage.h>
+#include <linaos/syscalls.h>
+#include <linaos/tracehook.h>
+#include <linaos/sched/task_stack.h>
 
 #include <asm/registers.h>
 #include <asm/thread_info.h>
 #include <asm/unistd.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/ucontext.h>
 #include <asm/cacheflush.h>
 #include <asm/signal.h>

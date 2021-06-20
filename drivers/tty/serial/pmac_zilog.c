@@ -27,25 +27,25 @@
 #undef DEBUG_HARD
 #undef USE_CTRL_O_SYSRQ
 
-#include <linux/module.h>
-#include <linux/tty.h>
+#include <linaos/module.h>
+#include <linaos/tty.h>
 
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/bitops.h>
-#include <linux/sysrq.h>
-#include <linux/mutex.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/tty_flip.h>
+#include <linaos/major.h>
+#include <linaos/string.h>
+#include <linaos/fcntl.h>
+#include <linaos/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/adb.h>
+#include <linaos/pmu.h>
+#include <linaos/bitops.h>
+#include <linaos/sysrq.h>
+#include <linaos/mutex.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 #include <asm/sections.h>
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -57,12 +57,12 @@
 #include <asm/dbdma.h>
 #include <asm/macio.h>
 #else
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 #define of_machine_is_compatible(x) (0)
 #endif
 
-#include <linux/serial.h>
-#include <linux/serial_core.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
 
 #include "pmac_zilog.h"
 

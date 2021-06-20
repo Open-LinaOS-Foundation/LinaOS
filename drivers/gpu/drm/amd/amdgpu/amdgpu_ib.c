@@ -26,8 +26,8 @@
  *          Jerome Glisse
  *          Christian König
  */
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
 
 #include <drm/amdgpu_drm.h>
 

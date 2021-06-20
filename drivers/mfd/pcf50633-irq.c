@@ -7,14 +7,14 @@
  * All rights reserved.
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/mutex.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/mbc.h>
+#include <linaos/mfd/pcf50633/core.h>
+#include <linaos/mfd/pcf50633/mbc.h>
 
 int pcf50633_register_irq(struct pcf50633 *pcf, int irq,
 			void (*handler) (int, void *), void *data)

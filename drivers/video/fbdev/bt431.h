@@ -1,14 +1,14 @@
 /*
- *	linux/drivers/video/bt431.h
+ *	linaos/drivers/video/bt431.h
  *
  *	Copyright 2003  Thiemo Seufer <seufer@csv.ica.uni-stuttgart.de>
- *	Copyright 2016  Maciej W. Rozycki <macro@linux-mips.org>
+ *	Copyright 2016  Maciej W. Rozycki <macro@linaos-mips.org>
  *
  *	This file is subject to the terms and conditions of the GNU General
  *	Public License. See the file COPYING in the main directory of this
  *	archive for more details.
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define BT431_CURSOR_SIZE	64
 

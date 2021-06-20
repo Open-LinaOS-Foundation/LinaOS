@@ -135,14 +135,14 @@
 
 	button-400 {
 		label = "Volume Down";
-		linux,code = <KEY_VOLUMEDOWN>;
+		linaos,code = <KEY_VOLUMEDOWN>;
 		channel = <0>;
 		voltage = <400000>;
 	};
 
 	button-800 {
 		label = "Volume Up";
-		linux,code = <KEY_VOLUMEUP>;
+		linaos,code = <KEY_VOLUMEUP>;
 		channel = <0>;
 		voltage = <800000>;
 	};

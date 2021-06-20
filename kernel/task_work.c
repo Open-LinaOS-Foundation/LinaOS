@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/spinlock.h>
-#include <linux/task_work.h>
-#include <linux/tracehook.h>
+#include <linaos/spinlock.h>
+#include <linaos/task_work.h>
+#include <linaos/tracehook.h>
 
 static struct callback_head work_exited; /* all we need is ->next == NULL */
 

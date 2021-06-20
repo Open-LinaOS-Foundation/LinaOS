@@ -8,8 +8,8 @@
 #ifndef LINUX_CEC_PIN_PRIV_H
 #define LINUX_CEC_PIN_PRIV_H
 
-#include <linux/types.h>
-#include <linux/atomic.h>
+#include <linaos/types.h>
+#include <linaos/atomic.h>
 #include <media/cec-pin.h>
 
 enum cec_pin_state {

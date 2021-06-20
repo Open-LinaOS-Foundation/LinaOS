@@ -51,13 +51,13 @@
 
 		key-right {
 			label = "Right";
-			linux,code = <KEY_RIGHT>;
+			linaos,code = <KEY_RIGHT>;
 			gpios = <&pio 6 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PG9 */
 		};
 
 		key-left {
 			label = "Left";
-			linux,code = <KEY_LEFT>;
+			linaos,code = <KEY_LEFT>;
 			gpios = <&pio 6 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PG10 */
 		};
 	};
@@ -142,14 +142,14 @@
 
 	button-200 {
 		label = "Home";
-		linux,code = <KEY_HOME>;
+		linaos,code = <KEY_HOME>;
 		channel = <0>;
 		voltage = <200000>;
 	};
 
 	button-400 {
 		label = "Menu";
-		linux,code = <KEY_MENU>;
+		linaos,code = <KEY_MENU>;
 		channel = <0>;
 		voltage = <400000>;
 	};

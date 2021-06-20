@@ -3,8 +3,8 @@
  * Copyright (C) 2019 IBM Corporation
  * Author: Nayna Jain
  */
-#include <linux/types.h>
-#include <linux/of.h>
+#include <linaos/types.h>
+#include <linaos/of.h>
 #include <asm/secure_boot.h>
 
 static struct device_node *get_ppc_fw_sb_node(void)

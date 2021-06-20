@@ -19,8 +19,8 @@
  */
 
 #include "ubifs.h"
-#include <linux/writeback.h>
-#include <linux/math64.h>
+#include <linaos/writeback.h>
+#include <linaos/math64.h>
 
 /*
  * When pessimistic budget calculations say that there is no enough space,

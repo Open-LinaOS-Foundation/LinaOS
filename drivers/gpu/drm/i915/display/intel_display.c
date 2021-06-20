@@ -25,13 +25,13 @@
  */
 
 #include <acpi/video.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/intel-iommu.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/dma-resv.h>
-#include <linux/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/intel-iommu.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/dma-resv.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

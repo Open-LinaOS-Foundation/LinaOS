@@ -43,7 +43,7 @@
 		 */
 		button-0 {
 			label = "TA1-GPIO-A";
-			linux,code = <KEY_A>;
+			linaos,code = <KEY_A>;
 			gpios = <&gpiof 3 GPIO_ACTIVE_LOW>;
 		};
 
@@ -53,7 +53,7 @@
 		 */
 		button-2 {
 			label = "TA3-GPIO-C";
-			linux,code = <KEY_C>;
+			linaos,code = <KEY_C>;
 			gpios = <&gpiog 0 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -64,14 +64,14 @@
 
 		button-1 {
 			label = "TA2-GPIO-B";
-			linux,code = <KEY_B>;
+			linaos,code = <KEY_B>;
 			gpios = <&gpiod 6 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
 
 		button-3 {
 			label = "TA4-GPIO-D";
-			linux,code = <KEY_D>;
+			linaos,code = <KEY_D>;
 			gpios = <&gpiod 12 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
@@ -189,7 +189,7 @@
 		reg = <0x38>;
 		interrupt-parent = <&gpiog>;
 		interrupts = <2 IRQ_TYPE_EDGE_FALLING>; /* GPIO E */
-		linux,wakeup;
+		linaos,wakeup;
 	};
 };
 

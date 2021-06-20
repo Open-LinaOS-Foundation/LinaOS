@@ -7,9 +7,9 @@
  * Written by Koji Sato.
  */
 
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
 #include "nilfs.h"
 #include "bmap.h"
 #include "btree.h"

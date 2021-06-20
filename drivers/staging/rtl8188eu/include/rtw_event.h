@@ -10,8 +10,8 @@
 #include <osdep_service.h>
 
 #include <wlan_bssdef.h>
-#include <linux/mutex.h>
-#include <linux/sem.h>
+#include <linaos/mutex.h>
+#include <linaos/sem.h>
 
 /*
  * Used to report a bss has been scanned

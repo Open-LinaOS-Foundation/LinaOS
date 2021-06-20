@@ -2,21 +2,21 @@
 /*
  * Copyright (C) 2009 Felix Fietkau <nbd@nbd.name>
  * Copyright (C) 2011-2012 Gabor Juhos <juhosg@openwrt.org>
- * Copyright (c) 2015, 2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, 2019, The LinaOS Foundation. All rights reserved.
  * Copyright (c) 2016 John Crispin <john@phrozen.org>
  */
 
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/phy.h>
+#include <linaos/netdevice.h>
 #include <net/dsa.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/if_bridge.h>
-#include <linux/mdio.h>
-#include <linux/phylink.h>
-#include <linux/gpio/consumer.h>
-#include <linux/etherdevice.h>
+#include <linaos/of_net.h>
+#include <linaos/of_platform.h>
+#include <linaos/if_bridge.h>
+#include <linaos/mdio.h>
+#include <linaos/phylink.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/etherdevice.h>
 
 #include "qca8k.h"
 
@@ -738,7 +738,7 @@ qca8k_setup(struct dsa_switch *ds)
 	for (i = 1; i < QCA8K_NUM_PORTS; i++)
 		qca8k_port_set_status(priv, i, 0);
 
-	/* Forward all unknown frames to CPU port for Linux processing */
+	/* Forward all unknown frames to CPU port for LinaOS processing */
 	qca8k_write(priv, QCA8K_REG_GLOBAL_FW_CTRL1,
 		    BIT(0) << QCA8K_GLOBAL_FW_CTRL1_IGMP_DP_S |
 		    BIT(0) << QCA8K_GLOBAL_FW_CTRL1_BC_DP_S |

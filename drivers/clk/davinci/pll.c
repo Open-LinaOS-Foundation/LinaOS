@@ -9,23 +9,23 @@
  * Copyright (C) 2008-2009 Deep Root Systems, LLC
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/clk/davinci.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/notifier.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/platform_data/clk-davinci-pll.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk.h>
+#include <linaos/clk/davinci.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/notifier.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of.h>
+#include <linaos/platform_data/clk-davinci-pll.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #include "pll.h"
 
@@ -954,7 +954,7 @@ static int __init davinci_pll_driver_init(void)
 postcore_initcall(davinci_pll_driver_init);
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 #define DEBUG_REG(n)	\
 {			\

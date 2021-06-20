@@ -4,8 +4,8 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
+#include <linaos/crc32.h>
+#include <linaos/etherdevice.h>
 #include "qed.h"
 #include "qed_sriov.h"
 #include "qed_vf.h"

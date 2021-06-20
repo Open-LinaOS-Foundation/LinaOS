@@ -6,14 +6,14 @@
  * Copyright (C) 2005-2012 Tai-hwa Liang, Sentelic Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/ctype.h>
-#include <linux/libps2.h>
-#include <linux/serio.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/input/mt.h>
+#include <linaos/ctype.h>
+#include <linaos/libps2.h>
+#include <linaos/serio.h>
+#include <linaos/jiffies.h>
+#include <linaos/slab.h>
 
 #include "psmouse.h"
 #include "sentelic.h"

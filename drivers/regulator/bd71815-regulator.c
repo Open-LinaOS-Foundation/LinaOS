@@ -8,18 +8,18 @@
 // Partially rewritten at 2021 by
 // Matti Vaittinen <matti.vaitinen@fi.rohmeurope.com>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/mfd/rohm-generic.h>
-#include <linux/mfd/rohm-bd71815.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/gpio.h>
+#include <linaos/mfd/rohm-generic.h>
+#include <linaos/mfd/rohm-bd71815.h>
+#include <linaos/regulator/of_regulator.h>
 
 struct bd71815_regulator {
 	struct regulator_desc desc;

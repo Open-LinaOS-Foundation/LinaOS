@@ -45,7 +45,7 @@
  *
  */
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <rdma/rdma_vt.h>
 #include <rdma/rdmavt_qp.h>
 

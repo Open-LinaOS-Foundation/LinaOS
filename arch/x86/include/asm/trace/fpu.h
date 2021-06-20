@@ -5,7 +5,7 @@
 #if !defined(_TRACE_FPU_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_FPU_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(x86_fpu,
 	TP_PROTO(struct fpu *fpu),

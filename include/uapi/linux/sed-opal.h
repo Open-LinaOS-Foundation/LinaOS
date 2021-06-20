@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright © 2016 Intel Corporation
  *
@@ -10,7 +10,7 @@
 #ifndef _UAPI_SED_OPAL_H
 #define _UAPI_SED_OPAL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define OPAL_KEY_MAX 256
 #define OPAL_MAX_LRS 9

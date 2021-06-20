@@ -6,13 +6,13 @@
  * Copyright (c) 周琰杰 (Zhou Yanjie) <zhouyanjie@wanyeetech.com>
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/phy.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/usb/otg.h>
+#include <linaos/usb/phy.h>
 
 /* OTGPHY register offsets */
 #define REG_USBPCR_OFFSET			0x00

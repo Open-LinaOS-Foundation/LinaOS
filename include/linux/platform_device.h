@@ -10,7 +10,7 @@
 #ifndef _PLATFORM_DEVICE_H_
 #define _PLATFORM_DEVICE_H_
 
-#include <linux/device.h>
+#include <linaos/device.h>
 
 #define PLATFORM_DEVID_NONE	(-1)
 #define PLATFORM_DEVID_AUTO	(-2)
@@ -156,7 +156,7 @@ static inline struct platform_device *platform_device_register_resndata(
  * This interface is primarily intended for use with legacy drivers which
  * probe hardware directly.  Because such drivers create sysfs device nodes
  * themselves, rather than letting system infrastructure handle such device
- * enumeration tasks, they don't fully conform to the Linux driver model.
+ * enumeration tasks, they don't fully conform to the LinaOS driver model.
  * In particular, when such drivers are built as modules, they can't be
  * "hotplugged".
  *

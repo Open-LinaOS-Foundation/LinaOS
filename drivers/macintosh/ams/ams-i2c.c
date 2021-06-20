@@ -3,18 +3,18 @@
  * Apple Motion Sensor driver (I2C variant)
  *
  * Copyright (C) 2005 Stelian Pop (stelian@popies.net)
- * Copyright (C) 2006 Michael Hanselmann (linux-kernel@hansmi.ch)
+ * Copyright (C) 2006 Michael Hanselmann (linaos-kernel@hansmi.ch)
  *
  * Clean room implementation based on the reverse engineered Mac OS X driver by
  * Johannes Berg <johannes@sipsolutions.net>, documentation available at
  * http://johannes.sipsolutions.net/PowerBook/Apple_Motion_Sensor_Specification
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
 
 #include "ams.h"
 

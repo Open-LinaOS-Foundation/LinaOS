@@ -6,17 +6,17 @@
  * Copyright (C) 2015-2017 Glider bvba
  */
 
-#include <linux/clk/renesas.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/of_address.h>
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/soc/renesas/rcar-sysc.h>
+#include <linaos/clk/renesas.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/mm.h>
+#include <linaos/of_address.h>
+#include <linaos/pm_domain.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/soc/renesas/rcar-sysc.h>
 
 #include "rcar-sysc.h"
 

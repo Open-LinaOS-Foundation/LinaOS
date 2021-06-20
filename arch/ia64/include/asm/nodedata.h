@@ -11,7 +11,7 @@
 #ifndef _ASM_IA64_NODEDATA_H
 #define _ASM_IA64_NODEDATA_H
 
-#include <linux/numa.h>
+#include <linaos/numa.h>
 
 #include <asm/percpu.h>
 #include <asm/mmzone.h>

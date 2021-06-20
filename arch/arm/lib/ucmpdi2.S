@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/ucmpdi2.S
+ *  linaos/arch/arm/lib/ucmpdi2.S
  *
  *  Author:	Nicolas Pitre
  *  Created:	Oct 19, 2005
  *  Copyright:	Monta Vista Software, Inc.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 #ifdef __ARMEB__

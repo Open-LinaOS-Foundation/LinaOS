@@ -2,7 +2,7 @@
 #ifndef _ALPHA_BUG_H
 #define _ALPHA_BUG_H
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #ifdef CONFIG_BUG
 #include <asm/pal.h>

@@ -7,24 +7,24 @@
  * Copyright 2018 Lubomir Rintel <lkundrak@v3.sk>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-device.h>
-#include <linux/platform_data/media/mmp-camera.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/pm.h>
-#include <linux/clk.h>
+#include <linaos/platform_data/media/mmp-camera.h>
+#include <linaos/device.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/io.h>
+#include <linaos/list.h>
+#include <linaos/pm.h>
+#include <linaos/clk.h>
 
 #include "mcam-core.h"
 

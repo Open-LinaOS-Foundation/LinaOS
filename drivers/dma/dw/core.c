@@ -7,19 +7,19 @@
  * Copyright (C) 2013 Intel Corporation
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
 
 #include "../dmaengine.h"
 #include "internal.h"

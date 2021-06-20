@@ -39,50 +39,50 @@
  * Copyright (C) 2018-2019 Jens Axboe
  * Copyright (c) 2018-2019 Christoph Hellwig
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/syscalls.h>
-#include <linux/compat.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/syscalls.h>
+#include <linaos/compat.h>
 #include <net/compat.h>
-#include <linux/refcount.h>
-#include <linux/uio.h>
-#include <linux/bits.h>
+#include <linaos/refcount.h>
+#include <linaos/uio.h>
+#include <linaos/bits.h>
 
-#include <linux/sched/signal.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/bvec.h>
-#include <linux/net.h>
+#include <linaos/sched/signal.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/fdtable.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/percpu.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/bvec.h>
+#include <linaos/net.h>
 #include <net/sock.h>
 #include <net/af_unix.h>
 #include <net/scm.h>
-#include <linux/anon_inodes.h>
-#include <linux/sched/mm.h>
-#include <linux/uaccess.h>
-#include <linux/nospec.h>
-#include <linux/sizes.h>
-#include <linux/hugetlb.h>
-#include <linux/highmem.h>
-#include <linux/namei.h>
-#include <linux/fsnotify.h>
-#include <linux/fadvise.h>
-#include <linux/eventpoll.h>
-#include <linux/splice.h>
-#include <linux/task_work.h>
-#include <linux/pagemap.h>
-#include <linux/io_uring.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/sched/mm.h>
+#include <linaos/uaccess.h>
+#include <linaos/nospec.h>
+#include <linaos/sizes.h>
+#include <linaos/hugetlb.h>
+#include <linaos/highmem.h>
+#include <linaos/namei.h>
+#include <linaos/fsnotify.h>
+#include <linaos/fadvise.h>
+#include <linaos/eventpoll.h>
+#include <linaos/splice.h>
+#include <linaos/task_work.h>
+#include <linaos/pagemap.h>
+#include <linaos/io_uring.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/io_uring.h>
 
-#include <uapi/linux/io_uring.h>
+#include <uapi/linaos/io_uring.h>
 
 #include "internal.h"
 #include "io-wq.h"
@@ -488,7 +488,7 @@ struct io_uring_task {
 
 /*
  * First field must be the file pointer in all the
- * iocb unions! See also 'struct kiocb' in <linux/fs.h>
+ * iocb unions! See also 'struct kiocb' in <linaos/fs.h>
  */
 struct io_poll_iocb {
 	struct file			*file;

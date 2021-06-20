@@ -6,7 +6,7 @@
 
 .. _it_kernel_docs:
 
-Indice di documenti per le persone interessate a capire e/o scrivere per il kernel Linux
+Indice di documenti per le persone interessate a capire e/o scrivere per il kernel LinaOS
 ========================================================================================
 
 .. note::

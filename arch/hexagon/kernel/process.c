@@ -2,19 +2,19 @@
 /*
  * Process creation support for Hexagon
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/tick.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/tracehook.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/tick.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/tracehook.h>
 
 /*
  * Program thread launch.  Often defined as a macro in processor.h,

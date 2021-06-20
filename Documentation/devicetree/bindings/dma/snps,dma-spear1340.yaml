@@ -8,7 +8,7 @@ title: Synopsys Designware DMA Controller
 
 maintainers:
   - Viresh Kumar <vireshk@kernel.org>
-  - Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+  - Andy Shevchenko <andriy.shevchenko@linaos.intel.com>
 
 allOf:
   - $ref: "dma-controller.yaml#"

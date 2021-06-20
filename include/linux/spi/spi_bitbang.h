@@ -2,7 +2,7 @@
 #ifndef	__SPI_BITBANG_H
 #define	__SPI_BITBANG_H
 
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 
 struct spi_bitbang {
 	struct mutex		lock;

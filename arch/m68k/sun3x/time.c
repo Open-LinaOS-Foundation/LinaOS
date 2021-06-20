@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/sun3x/time.c
+ *  linaos/arch/m68k/sun3x/time.c
  *
  *  Sun3x-specific time handling
  */
 
-#include <linux/types.h>
-#include <linux/kd.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
+#include <linaos/types.h>
+#include <linaos/kd.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/interrupt.h>
+#include <linaos/rtc.h>
+#include <linaos/bcd.h>
 
 #include <asm/irq.h>
 #include <asm/io.h>

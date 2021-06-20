@@ -3,7 +3,7 @@
  * Supervisor Mode Access Prevention support
  *
  * Copyright (C) 2012 Intel Corporation
- * Author: H. Peter Anvin <hpa@linux.intel.com>
+ * Author: H. Peter Anvin <hpa@linaos.intel.com>
  */
 
 #ifndef _ASM_X86_SMAP_H

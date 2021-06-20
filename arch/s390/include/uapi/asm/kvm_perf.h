@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Definitions for perf-kvm on s390
  *
  * Copyright 2014 IBM Corp.
- * Author(s): Alexander Yarygin <yarygin@linux.vnet.ibm.com>
+ * Author(s): Alexander Yarygin <yarygin@linaos.vnet.ibm.com>
  */
 
 #ifndef __LINUX_KVM_PERF_S390_H

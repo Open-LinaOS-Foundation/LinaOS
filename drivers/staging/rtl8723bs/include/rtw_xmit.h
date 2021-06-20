@@ -7,7 +7,7 @@
 #ifndef _RTW_XMIT_H_
 #define _RTW_XMIT_H_
 
-#include <linux/completion.h>
+#include <linaos/completion.h>
 
 #define MAX_XMITBUF_SZ	(20480)	/*  20k */
 

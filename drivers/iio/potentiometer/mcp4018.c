@@ -12,12 +12,12 @@
  * mcp4019	1	128		5, 10, 50, 100
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/iio/iio.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/property.h>
 
 #define MCP4018_WIPER_MAX 127
 

@@ -2,16 +2,16 @@
 /*
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
-#include <linux/memremap.h>
-#include <linux/rculist.h>
-#include <linux/export.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pfn_t.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <linaos/memremap.h>
+#include <linaos/rculist.h>
+#include <linaos/export.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/pfn_t.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
 #include "nfit_test.h"
 
 static LIST_HEAD(iomap_head);

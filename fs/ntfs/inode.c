@@ -5,15 +5,15 @@
  * Copyright (c) 2001-2014 Anton Altaparmakov and Tuxera Inc.
  */
 
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mount.h>
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
-#include <linux/quotaops.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
+#include <linaos/buffer_head.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/mount.h>
+#include <linaos/mutex.h>
+#include <linaos/pagemap.h>
+#include <linaos/quotaops.h>
+#include <linaos/slab.h>
+#include <linaos/log2.h>
 
 #include "aops.h"
 #include "attrib.h"
@@ -515,7 +515,7 @@ err_corrupt_attr:
  *    i_count is set to 1, so it is not going to go away
  *    i_flags is set to 0 and we have no business touching it.  Only an ioctl()
  *    is allowed to write to them. We should of course be honouring them but
- *    we need to do that using the IS_* macros defined in include/linux/fs.h.
+ *    we need to do that using the IS_* macros defined in include/linaos/fs.h.
  *    In any case ntfs_read_locked_inode() has nothing to do with i_flags.
  *
  * Return 0 on success and -errno on error.  In the error case, the inode will
@@ -1145,10 +1145,10 @@ no_data_attr_special_case:
 	 * far inaccurate as it doesn't account for any named streams or other
 	 * special non-resident attributes, but that is how Windows works, too,
 	 * so we are at least consistent with Windows, if not entirely
-	 * consistent with the Linux Way. Doing it the Linux Way would cause a
+	 * consistent with the LinaOS Way. Doing it the LinaOS Way would cause a
 	 * significant slowdown as it would involve iterating over all
 	 * attributes in the mft record and adding the allocated/compressed
-	 * sizes of all non-resident attributes present to give us the Linux
+	 * sizes of all non-resident attributes present to give us the LinaOS
 	 * correct size that should go into i_blocks (after division by 512).
 	 */
 	if (S_ISREG(vi->i_mode) && (NInoCompressed(ni) || NInoSparse(ni)))
@@ -1250,7 +1250,7 @@ static int ntfs_read_locked_attr_inode(struct inode *base_vi, struct inode *vi)
 						"non-data or named data "
 						"attribute.  Please report "
 						"you saw this message to "
-						"linux-ntfs-dev@lists."
+						"linaos-ntfs-dev@lists."
 						"sourceforge.net");
 				goto unm_err_out;
 			}
@@ -1277,7 +1277,7 @@ static int ntfs_read_locked_attr_inode(struct inode *base_vi, struct inode *vi)
 			ntfs_error(vi->i_sb, "Found mst protected attribute "
 					"but the attribute is %s.  Please "
 					"report you saw this message to "
-					"linux-ntfs-dev@lists.sourceforge.net",
+					"linaos-ntfs-dev@lists.sourceforge.net",
 					NInoCompressed(ni) ? "compressed" :
 					"sparse");
 			goto unm_err_out;
@@ -1299,7 +1299,7 @@ static int ntfs_read_locked_attr_inode(struct inode *base_vi, struct inode *vi)
 			ntfs_error(vi->i_sb, "Found mst protected attribute "
 					"but the attribute is encrypted.  "
 					"Please report you saw this message "
-					"to linux-ntfs-dev@lists.sourceforge."
+					"to linaos-ntfs-dev@lists.sourceforge."
 					"net");
 			goto unm_err_out;
 		}
@@ -1322,7 +1322,7 @@ static int ntfs_read_locked_attr_inode(struct inode *base_vi, struct inode *vi)
 			ntfs_error(vi->i_sb, "Found mst protected attribute "
 					"but the attribute is resident.  "
 					"Please report you saw this message to "
-					"linux-ntfs-dev@lists.sourceforge.net");
+					"linaos-ntfs-dev@lists.sourceforge.net");
 			goto unm_err_out;
 		}
 		vi->i_size = ni->initialized_size = le32_to_cpu(
@@ -1978,7 +1978,7 @@ int ntfs_read_inode_mount(struct inode *vi)
 						"of $MFT is not in the base "
 						"mft record. Please report "
 						"you saw this message to "
-						"linux-ntfs-dev@lists."
+						"linaos-ntfs-dev@lists."
 						"sourceforge.net");
 				goto put_err_out;
 			} else {
@@ -2091,7 +2091,7 @@ int ntfs_read_inode_mount(struct inode *vi)
 						"Run chkdsk and if no errors "
 						"are found, please report you "
 						"saw this message to "
-						"linux-ntfs-dev@lists."
+						"linaos-ntfs-dev@lists."
 						"sourceforge.net");
 				ntfs_attr_put_search_ctx(ctx);
 				/* Revert to the safe super operations. */
@@ -2511,7 +2511,7 @@ retry_truncate:
 		 * extend the file size to incorporate this dirty region
 		 * outside the file size, a write of the page would result in
 		 * this data being written to disk instead of being cleared.
-		 * Given both POSIX and the Linux mmap(2) man page specify that
+		 * Given both POSIX and the LinaOS mmap(2) man page specify that
 		 * this corner case is undefined, we choose to leave it like
 		 * that as this is much simpler for us as we cannot lock the
 		 * relevant page now since we are holding too many ntfs locks

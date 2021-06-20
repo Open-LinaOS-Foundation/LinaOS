@@ -4,9 +4,9 @@
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  * Copyright (C) 2016-2017 Intel Deutschland GmbH
  */
-#include <linux/ieee80211.h>
-#include <linux/etherdevice.h>
-#include <linux/tcp.h>
+#include <linaos/ieee80211.h>
+#include <linaos/etherdevice.h>
+#include <linaos/tcp.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 

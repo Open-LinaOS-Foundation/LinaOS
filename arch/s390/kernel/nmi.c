@@ -9,18 +9,18 @@
  *		 Heiko Carstens <heiko.carstens@de.ibm.com>,
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/hardirq.h>
-#include <linux/log2.h>
-#include <linux/kprobes.h>
-#include <linux/kmemleak.h>
-#include <linux/time.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/hardirq.h>
+#include <linaos/log2.h>
+#include <linaos/kprobes.h>
+#include <linaos/kmemleak.h>
+#include <linaos/time.h>
+#include <linaos/module.h>
+#include <linaos/sched/signal.h>
 
-#include <linux/export.h>
+#include <linaos/export.h>
 #include <asm/lowcore.h>
 #include <asm/smp.h>
 #include <asm/stp.h>
@@ -30,7 +30,7 @@
 #include <asm/switch_to.h>
 #include <asm/ctl_reg.h>
 #include <asm/asm-offsets.h>
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 struct mcck_struct {
 	unsigned int kill_task : 1;

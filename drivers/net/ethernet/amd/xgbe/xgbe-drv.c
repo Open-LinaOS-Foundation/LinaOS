@@ -114,15 +114,15 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/tcp.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/if_ether.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/tcp.h>
+#include <linaos/if_vlan.h>
+#include <linaos/interrupt.h>
+#include <linaos/clk.h>
+#include <linaos/if_ether.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/phy.h>
 #include <net/vxlan.h>
 
 #include "xgbe.h"

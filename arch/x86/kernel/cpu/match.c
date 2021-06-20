@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <asm/cpu_device_id.h>
 #include <asm/cpufeature.h>
-#include <linux/cpu.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
 
 /**
  * x86_match_cpu - match current CPU again an array of x86_cpu_ids

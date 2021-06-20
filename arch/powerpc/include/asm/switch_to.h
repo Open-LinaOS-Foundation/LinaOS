@@ -5,7 +5,7 @@
 #ifndef _ASM_POWERPC_SWITCH_TO_H
 #define _ASM_POWERPC_SWITCH_TO_H
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include <asm/reg.h>
 
 struct thread_struct;

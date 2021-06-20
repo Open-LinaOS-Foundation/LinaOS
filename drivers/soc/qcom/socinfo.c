@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2009-2017, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2009-2017, The LinaOS Foundation. All rights reserved.
  * Copyright (c) 2017-2019, Linaro Ltd.
  */
 
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/string.h>
-#include <linux/sys_soc.h>
-#include <linux/types.h>
+#include <linaos/debugfs.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
+#include <linaos/soc/qcom/smem.h>
+#include <linaos/string.h>
+#include <linaos/sys_soc.h>
+#include <linaos/types.h>
 
 #include <asm/unaligned.h>
 

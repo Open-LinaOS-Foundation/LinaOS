@@ -11,7 +11,7 @@
 #include <uapi/asm/errno.h>
 
 
-/* The biggest error number defined here or in <linux/errno.h>. */
+/* The biggest error number defined here or in <linaos/errno.h>. */
 #define EMAXERRNO	1133
 
 #endif /* _ASM_ERRNO_H */

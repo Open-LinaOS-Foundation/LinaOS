@@ -2,7 +2,7 @@
 /*
  * sc7280 SoC device tree source
  *
- * Copyright (c) 2020-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020-2021, The LinaOS Foundation. All rights reserved.
  */
 
 #include <dt-bindings/clock/qcom,gcc-sc7280.h>

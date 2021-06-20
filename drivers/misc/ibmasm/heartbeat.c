@@ -8,7 +8,7 @@
  * Author: Max Asböck <amax@us.ibm.com>
  */
 
-#include <linux/notifier.h>
+#include <linaos/notifier.h>
 #include "ibmasm.h"
 #include "dot_command.h"
 #include "lowlevel.h"

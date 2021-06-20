@@ -9,15 +9,15 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 int main(int argc, char *argv[])
 {
-	unsigned long long vmlinux_size, vmlinux_load_addr, vmlinuz_load_addr;
+	unsigned long long vmlinaos_size, vmlinaos_load_addr, vmlinuz_load_addr;
 	struct stat sb;
 
 	if (argc != 3) {
-		fprintf(stderr, "Usage: %s <pathname> <vmlinux_load_addr>\n",
+		fprintf(stderr, "Usage: %s <pathname> <vmlinaos_load_addr>\n",
 				argv[0]);
 		return EXIT_FAILURE;
 	}
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 
 	/* Convert hex characters to dec number */
 	errno = 0;
-	if (sscanf(argv[2], "%llx", &vmlinux_load_addr) != 1) {
+	if (sscanf(argv[2], "%llx", &vmlinaos_load_addr) != 1) {
 		if (errno != 0)
 			perror("sscanf");
 		else
@@ -38,15 +38,15 @@ int main(int argc, char *argv[])
 		return EXIT_FAILURE;
 	}
 
-	vmlinux_size = (uint64_t)sb.st_size;
-	vmlinuz_load_addr = vmlinux_load_addr + vmlinux_size;
+	vmlinaos_size = (uint64_t)sb.st_size;
+	vmlinuz_load_addr = vmlinaos_load_addr + vmlinaos_size;
 
 	/*
 	 * Align with 64KB: KEXEC needs load sections to be aligned to PAGE_SIZE,
 	 * which may be as large as 64KB depending on the kernel configuration.
 	 */
 
-	vmlinuz_load_addr += (SZ_64K - vmlinux_size % SZ_64K);
+	vmlinuz_load_addr += (SZ_64K - vmlinaos_size % SZ_64K);
 
 	printf("0x%llx\n", vmlinuz_load_addr);
 

@@ -3,11 +3,11 @@
  * Copyright (C) 2021 Rafał Miłecki <rafal@milecki.pl>
  */
 
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/platform_device.h>
 
 struct brcm_nvram {
 	struct device *dev;

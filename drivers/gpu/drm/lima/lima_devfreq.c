@@ -5,13 +5,13 @@
  * Based on panfrost_devfreq.c:
  *   Copyright 2019 Collabora ltd.
  */
-#include <linux/clk.h>
-#include <linux/devfreq.h>
-#include <linux/devfreq_cooling.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/property.h>
+#include <linaos/clk.h>
+#include <linaos/devfreq.h>
+#include <linaos/devfreq_cooling.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_opp.h>
+#include <linaos/property.h>
 
 #include "lima_device.h"
 #include "lima_devfreq.h"

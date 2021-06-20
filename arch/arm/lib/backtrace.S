@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/backtrace.S
+ *  linaos/arch/arm/lib/backtrace.S
  *
  *  Copyright (C) 1995, 1996 Russell King
  *
  * 27/03/03 Ian Molton Clean up CONFIG_CPU
  */
-#include <linux/kern_levels.h>
-#include <linux/linkage.h>
+#include <linaos/kern_levels.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 		.text
 

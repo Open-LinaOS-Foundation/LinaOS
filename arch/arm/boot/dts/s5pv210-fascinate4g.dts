@@ -19,20 +19,20 @@
 		power {
 			label = "power";
 			gpios = <&gph2 6 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 		};
 
 		vol-down {
 			label = "volume_down";
 			gpios = <&gph3 2 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 		};
 
 		vol-up {
 			label = "volume_up";
 			gpios = <&gph3 1 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 		};
 	};
 

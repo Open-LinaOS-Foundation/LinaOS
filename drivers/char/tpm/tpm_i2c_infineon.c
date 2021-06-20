@@ -15,9 +15,9 @@
  * It is based on the original tpm_tis device driver from Leendert van
  * Dorn and Kyleen Hall.
  */
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/wait.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/wait.h>
 #include "tpm.h"
 
 #define TPM_I2C_INFINEON_BUFSIZE 1260

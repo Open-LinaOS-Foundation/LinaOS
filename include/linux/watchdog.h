@@ -10,12 +10,12 @@
 #define _LINUX_WATCHDOG_H
 
 
-#include <linux/bitops.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <uapi/linux/watchdog.h>
+#include <linaos/bitops.h>
+#include <linaos/cdev.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/notifier.h>
+#include <uapi/linaos/watchdog.h>
 
 struct watchdog_ops;
 struct watchdog_device;

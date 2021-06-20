@@ -3,7 +3,7 @@
  * comedi/drivers/jr3_pci.c
  * hardware driver for JR3/PCI force sensor board
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2007 Anders Blomdell <anders.blomdell@control.lth.se>
  */
 /*
@@ -28,13 +28,13 @@
  * comedi_nonfree_firmware tarball.  The file is called "jr3pci.idm".
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/ctype.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/ctype.h>
+#include <linaos/jiffies.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
 
 #include "../comedi_pci.h"
 

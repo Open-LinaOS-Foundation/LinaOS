@@ -7,7 +7,7 @@
 #if !defined(__RDEV_CFG802154_OPS_TRACE) || defined(TRACE_HEADER_MULTI_READ)
 #define __RDEV_CFG802154_OPS_TRACE
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #include <net/cfg802154.h>
 

@@ -3,7 +3,7 @@
 #ifndef _DRM_VBLANK_WORK_H_
 #define _DRM_VBLANK_WORK_H_
 
-#include <linux/kthread.h>
+#include <linaos/kthread.h>
 
 struct drm_crtc;
 

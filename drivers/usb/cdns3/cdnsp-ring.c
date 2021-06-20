@@ -6,7 +6,7 @@
  *
  * Author: Pawel Laszczak <pawell@cadence.com>
  *
- * Code based on Linux XHCI driver.
+ * Code based on LinaOS XHCI driver.
  * Origin: Copyright (C) 2008 Intel Corp
  */
 
@@ -55,11 +55,11 @@
  *    for these.
  */
 
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <linaos/scatterlist.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
 
 #include "cdnsp-trace.h"
 #include "cdnsp-gadget.h"

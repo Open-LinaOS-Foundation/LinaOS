@@ -3,10 +3,10 @@
  * Tracepoint header for the s390 Common I/O layer (CIO)
  *
  * Copyright IBM Corp. 2015
- * Author(s): Peter Oberparleiter <oberpar@linux.vnet.ibm.com>
+ * Author(s): Peter Oberparleiter <oberpar@linaos.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/crw.h>
 #include <uapi/asm/chpid.h>
 #include <uapi/asm/schid.h>
@@ -19,7 +19,7 @@
 #if !defined(_TRACE_S390_CIO_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_S390_CIO_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(s390_class_schib,
 	TP_PROTO(struct subchannel_id schid, struct schib *schib, int cc),

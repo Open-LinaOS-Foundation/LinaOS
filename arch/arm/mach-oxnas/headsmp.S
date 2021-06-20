@@ -4,8 +4,8 @@
  * Copyright (c) 2003 ARM Limited
  * All Rights Reserved
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 
 	__INIT
 

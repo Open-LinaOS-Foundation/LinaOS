@@ -5,19 +5,19 @@
  * Copyright (C) 2012-2013, Guennadi Liakhovetski <g.liakhovetski@gmx.de>
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #include <media/v4l2-async.h>
 #include <media/v4l2-device.h>

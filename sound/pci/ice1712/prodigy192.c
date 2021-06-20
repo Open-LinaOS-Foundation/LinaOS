@@ -40,10 +40,10 @@
  *      Copyright (c) 2004 Kouichi ONO <co2b@ceres.dti.ne.jp>
  */      
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 
 #include "ice1712.h"

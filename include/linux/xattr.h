@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
-  File: linux/xattr.h
+  File: linaos/xattr.h
 
   Extended attributes handling.
 
@@ -12,12 +12,12 @@
 #define _LINUX_XATTR_H
 
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/user_namespace.h>
-#include <uapi/linux/xattr.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm.h>
+#include <linaos/user_namespace.h>
+#include <uapi/linaos/xattr.h>
 
 struct inode;
 struct dentry;

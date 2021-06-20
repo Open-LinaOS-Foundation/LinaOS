@@ -10,14 +10,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/pm_domain.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/pm_domain.h>
+#include <linaos/regulator/consumer.h>
 
 #include "opp.h"
 

@@ -3,23 +3,23 @@
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/libnvdimm.h>
-#include <linux/sched/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/fcntl.h>
-#include <linux/async.h>
-#include <linux/genhd.h>
-#include <linux/ndctl.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/nd.h>
+#include <linaos/libnvdimm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>
+#include <linaos/fcntl.h>
+#include <linaos/async.h>
+#include <linaos/genhd.h>
+#include <linaos/ndctl.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/fs.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/nd.h>
 #include "nd-core.h"
 #include "nd.h"
 #include "pfn.h"

@@ -8,10 +8,10 @@
  * Copyright 2003 by Hans-Joerg Frieden and Thomas Frieden
  */
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/seq_file.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/seq_file.h>
 #include <generated/utsrelease.h>
 
 #include <asm/machdep.h>
@@ -67,7 +67,7 @@ static int __init amigaone_add_bridge(struct device_node *dev)
 void __init amigaone_setup_arch(void)
 {
 	if (ppc_md.progress)
-		ppc_md.progress("Linux/PPC "UTS_RELEASE"\n", 0);
+		ppc_md.progress("LinaOS/PPC "UTS_RELEASE"\n", 0);
 }
 
 static void __init amigaone_discover_phbs(void)

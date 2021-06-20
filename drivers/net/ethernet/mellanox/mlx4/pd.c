@@ -31,9 +31,9 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/io-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/io-mapping.h>
 
 #include <asm/page.h>
 

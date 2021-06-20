@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright (C) 1991, 1992 Linus Torvalds
  *   Copyright 2007 rPath, Inc. - All Rights Reserved
@@ -12,9 +12,9 @@
 
 #ifndef BOOT_BITOPS_H
 #define BOOT_BITOPS_H
-#define _LINUX_BITOPS_H		/* Inhibit inclusion of <linux/bitops.h> */
+#define _LINUX_BITOPS_H		/* Inhibit inclusion of <linaos/bitops.h> */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/asm.h>
 
 static inline bool constant_test_bit(int nr, const void *addr)

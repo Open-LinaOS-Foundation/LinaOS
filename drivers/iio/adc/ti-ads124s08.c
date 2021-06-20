@@ -3,24 +3,24 @@
  * Copyright (C) 2018 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/spi/spi.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/spi/spi.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/sysfs.h>
 
 #include <asm/unaligned.h>
 

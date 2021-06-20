@@ -1,7 +1,7 @@
 What:		/dev/rtcX
 Date:		April 2005
 KernelVersion:	2.6.12
-Contact:	linux-rtc@vger.kernel.org
+Contact:	linaos-rtc@vger.kernel.org
 Description:
 		The ioctl interface to drivers for real-time clocks (RTCs).
 		Following actions are supported:

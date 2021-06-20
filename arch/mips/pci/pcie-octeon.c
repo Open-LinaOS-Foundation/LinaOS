@@ -5,13 +5,13 @@
  *
  * Copyright (C) 2007, 2008, 2009, 2010, 2011 Cavium Networks
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/time.h>
+#include <linaos/delay.h>
+#include <linaos/moduleparam.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-npei-defs.h>
@@ -1454,8 +1454,8 @@ static int cvmx_pcie_rc_initialize(int pcie_port)
 /**
  * Map a PCI device to the appropriate interrupt line
  *
- * @dev:    The Linux PCI device structure for the device to map
- * @slot:   The slot number for this device on __BUS 0__. Linux
+ * @dev:    The LinaOS PCI device structure for the device to map
+ * @slot:   The slot number for this device on __BUS 0__. LinaOS
  *		 enumerates through all the bridges and figures out the
  *		 slot on Bus 0 where this device eventually hooks to.
  * @pin:    The PCI interrupt pin read from the device, then swizzled

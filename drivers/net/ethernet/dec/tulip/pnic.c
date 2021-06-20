@@ -1,7 +1,7 @@
 /*
 	drivers/net/ethernet/dec/tulip/pnic.c
 
-	Copyright 2000,2001  The Linux Kernel Team
+	Copyright 2000,2001  The LinaOS Kernel Team
 	Written/copyright 1994-2001 by Donald Becker.
 
 	This software may be used and distributed according to the terms
@@ -10,9 +10,9 @@
 	Please submit bugs to http://bugzilla.kernel.org/ .
 */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/jiffies.h>
 #include "tulip.h"
 
 

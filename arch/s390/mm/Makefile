@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux s390-specific parts of the memory manager.
+# Makefile for the linaos s390-specific parts of the memory manager.
 #
 
 obj-y		:= init.o fault.o extmem.o mmap.o vmem.o maccess.o

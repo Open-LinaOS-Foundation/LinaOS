@@ -4,11 +4,11 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/isa.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/sb.h>
 #include <sound/opl3.h>

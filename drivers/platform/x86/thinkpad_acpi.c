@@ -34,43 +34,43 @@
  *			    thanks to Chris Wright <chrisw@osdl.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/nvram.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/sysfs.h>
-#include <linux/backlight.h>
-#include <linux/bitops.h>
-#include <linux/fb.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/rfkill.h>
-#include <linux/dmi.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/power_supply.h>
-#include <linux/platform_profile.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/sched.h>
+#include <linaos/sched/signal.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/nvram.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/sysfs.h>
+#include <linaos/backlight.h>
+#include <linaos/bitops.h>
+#include <linaos/fb.h>
+#include <linaos/platform_device.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/input.h>
+#include <linaos/leds.h>
+#include <linaos/rfkill.h>
+#include <linaos/dmi.h>
+#include <linaos/jiffies.h>
+#include <linaos/workqueue.h>
+#include <linaos/acpi.h>
+#include <linaos/pci.h>
+#include <linaos/power_supply.h>
+#include <linaos/platform_profile.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/initval.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <acpi/battery.h>
 #include <acpi/video.h>
 
@@ -1618,7 +1618,7 @@ static void tpacpi_remove_driver_attributes(struct device_driver *drv)
  *    1. Stable BIOS, listed because the unknown amount of
  *       bugs and bad ACPI behaviour on older versions
  *
- *    2. BIOS or EC fw with known bugs that trigger on Linux
+ *    2. BIOS or EC fw with known bugs that trigger on LinaOS
  *
  *    3. BIOS with known reduced functionality in older versions
  *
@@ -3271,7 +3271,7 @@ static int __init hotkey_init(struct ibm_init_struct *iibm)
 	 *    ware may react very differently if you change them to
 	 *    something else;
 	 *
-	 * 2. You must be subscribed to the linux-thinkpad and
+	 * 2. You must be subscribed to the linaos-thinkpad and
 	 *    ibm-acpi-devel mailing lists, and you should read the
 	 *    list archives since 2007 if you want to change the
 	 *    keymaps.  This requirement exists so that you will
@@ -3280,7 +3280,7 @@ static int __init hotkey_init(struct ibm_init_struct *iibm)
 	 *    listening to any bug reports;
 	 *
 	 * 3. Do not send thinkpad-acpi specific patches directly to
-	 *    for merging, *ever*.  Send them to the linux-acpi
+	 *    for merging, *ever*.  Send them to the linaos-acpi
 	 *    mailinglist for comments.  Merging is to be done only
 	 *    through acpi-test and the ACPI maintainer.
 	 *

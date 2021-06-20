@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for LinaOS.
  *
  * Copyright (c) 2016 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,8 +35,8 @@
 #ifndef __CXGB4_SCHED_H
 #define __CXGB4_SCHED_H
 
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
+#include <linaos/spinlock.h>
+#include <linaos/atomic.h>
 
 #define SCHED_CLS_NONE 0xff
 

@@ -9,15 +9,15 @@
  * Copyright 2009 Wolfson Microelectronics plc
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reboot.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/cpufreq.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/reboot.h>
+#include <linaos/module.h>
 
 static DEFINE_MUTEX(cpufreq_lock);
 

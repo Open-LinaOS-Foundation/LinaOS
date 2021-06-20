@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * page.h:  Various defines and such for MMU operations on the Sparc for
- *          the Linux kernel.
+ *          the LinaOS kernel.
  *
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
@@ -9,7 +9,7 @@
 #ifndef _SPARC_PAGE_H
 #define _SPARC_PAGE_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 #define PAGE_SHIFT   12
 #define PAGE_SIZE    (_AC(1, UL) << PAGE_SHIFT)

@@ -34,13 +34,13 @@
 // IN1, IN2, OUT1 and OUT2 are TSE-850 connectors and DAC is the PCB name
 // of the (filtered) output from the PCM5142 codec.
 
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/gpio.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/regulator/consumer.h>
 
 #include <sound/soc.h>
 #include <sound/pcm_params.h>

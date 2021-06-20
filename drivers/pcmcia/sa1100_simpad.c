@@ -5,10 +5,10 @@
  * PCMCIA implementation routines for simpad
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>

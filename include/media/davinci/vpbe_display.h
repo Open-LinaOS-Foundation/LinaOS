@@ -6,7 +6,7 @@
 #define VPBE_DISPLAY_H
 
 /* Header files */
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-fh.h>
 #include <media/videobuf2-v4l2.h>

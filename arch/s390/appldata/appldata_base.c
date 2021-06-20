@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Base infrastructure for Linux-z/VM Monitor Stream, Stage 1.
+ * Base infrastructure for LinaOS-z/VM Monitor Stream, Stage 1.
  * Exports appldata_register_ops() and appldata_unregister_ops() for the
  * data gathering modules.
  *
@@ -12,25 +12,25 @@
 #define KMSG_COMPONENT	"appldata"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/sched/stat.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
-#include <linux/sysctl.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/workqueue.h>
-#include <linux/suspend.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/sched/stat.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/proc_fs.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/pagemap.h>
+#include <linaos/sysctl.h>
+#include <linaos/notifier.h>
+#include <linaos/cpu.h>
+#include <linaos/workqueue.h>
+#include <linaos/suspend.h>
+#include <linaos/platform_device.h>
 #include <asm/appldata.h>
 #include <asm/vtimer.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/smp.h>
 

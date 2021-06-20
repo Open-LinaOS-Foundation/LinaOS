@@ -2,7 +2,7 @@
 #ifndef _H8300_IRQ_H_
 #define _H8300_IRQ_H_
 
-#include <linux/irqchip.h>
+#include <linaos/irqchip.h>
 
 #if defined(CONFIG_CPU_H8300H)
 #define NR_IRQS 64

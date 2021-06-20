@@ -5,14 +5,14 @@
  */
 
 #include <dt-bindings/firmware/imx/rsrc.h>
-#include <linux/arm-smccc.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/clk-provider.h>
+#include <linaos/err.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
 
 #include "clk-scu.h"
 

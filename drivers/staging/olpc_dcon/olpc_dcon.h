@@ -2,8 +2,8 @@
 #ifndef OLPC_DCON_H_
 #define OLPC_DCON_H_
 
-#include <linux/notifier.h>
-#include <linux/workqueue.h>
+#include <linaos/notifier.h>
+#include <linaos/workqueue.h>
 
 /* DCON registers */
 
@@ -102,7 +102,7 @@ struct dcon_gpio {
 	unsigned long flags;
 };
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 irqreturn_t dcon_interrupt(int irq, void *id);
 

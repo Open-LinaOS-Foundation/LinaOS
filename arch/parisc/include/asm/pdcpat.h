@@ -6,8 +6,8 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright 2000 (c) Hewlett Packard (Paul Bame <bame()spam.parisc-linux.org>)
- * Copyright 2000,2004 (c) Grant Grundler <grundler()nahspam.parisc-linux.org>
+ * Copyright 2000 (c) Hewlett Packard (Paul Bame <bame()spam.parisc-linaos.org>)
+ * Copyright 2000,2004 (c) Grant Grundler <grundler()nahspam.parisc-linaos.org>
  */
 
 
@@ -210,7 +210,7 @@
 /* PDC_PAT_SYSTEM_INFO uses the same options as PDC_SYSTEM_INFO function. */
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifdef CONFIG_64BIT
 #define is_pdc_pat()	(PDC_TYPE_PAT == pdc_type)

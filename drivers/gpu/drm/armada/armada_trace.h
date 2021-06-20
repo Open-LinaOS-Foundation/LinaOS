@@ -2,7 +2,7 @@
 #if !defined(ARMADA_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define ARMADA_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 struct drm_crtc;
 struct drm_framebuffer;

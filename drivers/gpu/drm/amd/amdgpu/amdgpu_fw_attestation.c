@@ -21,9 +21,9 @@
  *
  */
 
-#include <linux/debugfs.h>
-#include <linux/firmware.h>
-#include <linux/dma-mapping.h>
+#include <linaos/debugfs.h>
+#include <linaos/firmware.h>
+#include <linaos/dma-mapping.h>
 
 #include "amdgpu.h"
 #include "amdgpu_fw_attestation.h"

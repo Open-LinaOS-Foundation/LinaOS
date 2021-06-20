@@ -2,8 +2,8 @@
 #ifndef _NF_CONNTRACK_COMMON_H
 #define _NF_CONNTRACK_COMMON_H
 
-#include <linux/atomic.h>
-#include <uapi/linux/netfilter/nf_conntrack_common.h>
+#include <linaos/atomic.h>
+#include <uapi/linaos/netfilter/nf_conntrack_common.h>
 
 struct ip_conntrack_stat {
 	unsigned int found;

@@ -2,7 +2,7 @@
 #ifndef _SUNVNETCOMMON_H
 #define _SUNVNETCOMMON_H
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 /* length of time (or less) we expect pending descriptors to be marked
  * as VIO_DESC_DONE and skbs ready to be freed

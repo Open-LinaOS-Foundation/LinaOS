@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * v4l2-i2c - I2C helpers for Video4Linux2
+ * v4l2-i2c - I2C helpers for Video4LinaOS2
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 

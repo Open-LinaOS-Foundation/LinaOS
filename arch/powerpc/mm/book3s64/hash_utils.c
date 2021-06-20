@@ -18,24 +18,24 @@
 #undef DEBUG_LOW
 
 #define pr_fmt(fmt) "hash-mmu: " fmt
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/sched/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/sysctl.h>
-#include <linux/export.h>
-#include <linux/ctype.h>
-#include <linux/cache.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/memblock.h>
-#include <linux/context_tracking.h>
-#include <linux/libfdt.h>
-#include <linux/pkeys.h>
-#include <linux/hugetlb.h>
-#include <linux/cpu.h>
-#include <linux/pgtable.h>
+#include <linaos/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/sched/mm.h>
+#include <linaos/proc_fs.h>
+#include <linaos/stat.h>
+#include <linaos/sysctl.h>
+#include <linaos/export.h>
+#include <linaos/ctype.h>
+#include <linaos/cache.h>
+#include <linaos/init.h>
+#include <linaos/signal.h>
+#include <linaos/memblock.h>
+#include <linaos/context_tracking.h>
+#include <linaos/libfdt.h>
+#include <linaos/pkeys.h>
+#include <linaos/hugetlb.h>
+#include <linaos/cpu.h>
+#include <linaos/pgtable.h>
 
 #include <asm/debugfs.h>
 #include <asm/interrupt.h>
@@ -44,7 +44,7 @@
 #include <asm/mmu_context.h>
 #include <asm/page.h>
 #include <asm/types.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/machdep.h>
 #include <asm/prom.h>
 #include <asm/io.h>
@@ -87,7 +87,7 @@
 #define GB (1024L*MB)
 
 /*
- * Note:  pte   --> Linux PTE
+ * Note:  pte   --> LinaOS PTE
  *        HPTE  --> PowerPC Hashed Page Table Entry
  *
  * Execution context:
@@ -197,7 +197,7 @@ unsigned long htab_convert_pte_flags(unsigned long pteflags, unsigned long flags
 		rflags |= HPTE_R_N;
 	/*
 	 * PPP bits:
-	 * Linux uses slb key 0 for kernel and 1 for user.
+	 * LinaOS uses slb key 0 for kernel and 1 for user.
 	 * kernel RW areas are mapped with PPP=0b000
 	 * User area is mapped with PPP=0b010 for read/write
 	 * or PPP=0b011 for read-only (including writeable but clean pages).
@@ -1378,7 +1378,7 @@ int hash_page_mm(struct mm_struct *mm, unsigned long ea,
 #endif /* CONFIG_PPC_64K_PAGES */
 
 	/* Get PTE and page size from page tables */
-	ptep = find_linux_pte(pgdir, ea, &is_thp, &hugeshift);
+	ptep = find_linaos_pte(pgdir, ea, &is_thp, &hugeshift);
 	if (ptep == NULL || !pte_present(*ptep)) {
 		DBG_LOW(" no PTE !\n");
 		rc = 1;
@@ -1654,7 +1654,7 @@ static void hash_preload(struct mm_struct *mm, pte_t *ptep, unsigned long ea,
 	DBG_LOW("hash_preload(mm=%p, mm->pgdir=%p, ea=%016lx, access=%lx,"
 		" trap=%lx\n", mm, mm->pgd, ea, access, trap);
 
-	/* Get Linux PTE if available */
+	/* Get LinaOS PTE if available */
 	pgdir = mm->pgd;
 	if (pgdir == NULL)
 		return;
@@ -1692,7 +1692,7 @@ static void hash_preload(struct mm_struct *mm, pte_t *ptep, unsigned long ea,
 	 * will prevent them taking hash faults (see the NMI test in
 	 * do_hash_page), then read_user_stack's copy_from_user_nofault will
 	 * fail and perf will fall back to read_user_stack_slow(), which
-	 * walks the Linux page tables.
+	 * walks the LinaOS page tables.
 	 *
 	 * Interrupts must also be off for the duration of the
 	 * mm_is_thread_local test and update, to prevent preempt running the
@@ -1728,9 +1728,9 @@ static void hash_preload(struct mm_struct *mm, pte_t *ptep, unsigned long ea,
 
 /*
  * This is called at the end of handling a user page fault, when the
- * fault has been handled by updating a PTE in the linux page tables.
+ * fault has been handled by updating a PTE in the linaos page tables.
  * We use it to preload an HPTE into the hash table corresponding to
- * the updated linux PTE.
+ * the updated linaos PTE.
  *
  * This must always be called with the pte lock held.
  */
@@ -1747,7 +1747,7 @@ void update_mmu_cache(struct vm_area_struct *vma, unsigned long address,
 	if (radix_enabled())
 		return;
 
-	/* We only want HPTEs for linux PTEs that have _PAGE_ACCESSED set */
+	/* We only want HPTEs for linaos PTEs that have _PAGE_ACCESSED set */
 	if (!pte_young(*ptep) || address >= TASK_SIZE)
 		return;
 

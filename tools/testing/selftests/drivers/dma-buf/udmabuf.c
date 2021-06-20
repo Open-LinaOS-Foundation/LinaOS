@@ -4,13 +4,13 @@
 #include <unistd.h>
 #include <string.h>
 #include <errno.h>
-#include <linux/fcntl.h>
+#include <linaos/fcntl.h>
 #include <malloc.h>
 
 #include <sys/ioctl.h>
 #include <sys/syscall.h>
-#include <linux/memfd.h>
-#include <linux/udmabuf.h>
+#include <linaos/memfd.h>
+#include <linaos/udmabuf.h>
 
 #define TEST_PREFIX	"drivers/dma-buf/udmabuf"
 #define NUM_PAGES       4

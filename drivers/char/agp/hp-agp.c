@@ -6,13 +6,13 @@
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/agp_backend.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/agp_backend.h>
+#include <linaos/log2.h>
+#include <linaos/slab.h>
 
 #include <asm/acpi-ext.h>
 

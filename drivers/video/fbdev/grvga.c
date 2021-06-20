@@ -10,21 +10,21 @@
  * Contributors: Kristoffer Glembo <kristoffer@gaisler.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/mm.h>
+#include <linaos/fb.h>
+#include <linaos/io.h>
 
 struct grvga_regs {
 	u32 status; 		/* 0x00 */

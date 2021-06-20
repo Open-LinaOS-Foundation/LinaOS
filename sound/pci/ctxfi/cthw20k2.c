@@ -11,14 +11,14 @@
  * @Date 	May 14 2008
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
 #include "cthw20k2.h"
 #include "ct20k2reg.h"
 

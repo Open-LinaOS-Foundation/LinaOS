@@ -10,7 +10,7 @@ Light-weight System Calls for IA-64
 		      <davidm@hpl.hp.com>
 
 Using the "epc" instruction effectively introduces a new mode of
-execution to the ia64 linux kernel.  We call this mode the
+execution to the ia64 linaos kernel.  We call this mode the
 "fsys-mode".  To recap, the normal states of execution are:
 
   - kernel mode:
@@ -55,7 +55,7 @@ care (see below).
 How to tell fsys-mode
 =====================
 
-Linux operates in fsys-mode when (a) the privilege level is 0 (most
+LinaOS operates in fsys-mode when (a) the privilege level is 0 (most
 privileged) and (b) the stacks have NOT been switched to kernel memory
 yet.  For convenience, the header file <asm-ia64/ptrace.h> provides
 three macros::
@@ -82,7 +82,7 @@ The file arch/ia64/kernel/fsys.S contains a table of fsyscall-handlers
 (fsyscall_table).  This table contains one entry for each system call.
 By default, a system call is handled by fsys_fallback_syscall().  This
 routine takes care of entering (full) kernel mode and calling the
-normal Linux system call handler.  For performance-critical system
+normal LinaOS system call handler.  For performance-critical system
 calls, it is possible to write a hand-tuned fsyscall_handler.  For
 example, fsys.S contains fsys_getpid(), which is a hand-tuned version
 of the getpid() system call.
@@ -232,9 +232,9 @@ PSR.cpl	Cleared to 0.
 PSR.is	Unchanged (guaranteed to be 0 on entry to the gate page).
 PSR.mc	Unchanged.
 PSR.it	Unchanged (guaranteed to be 1).
-PSR.id	Unchanged.  Note: the ia64 linux kernel never sets this bit.
-PSR.da	Unchanged.  Note: the ia64 linux kernel never sets this bit.
-PSR.dd	Unchanged.  Note: the ia64 linux kernel never sets this bit.
+PSR.id	Unchanged.  Note: the ia64 linaos kernel never sets this bit.
+PSR.da	Unchanged.  Note: the ia64 linaos kernel never sets this bit.
+PSR.dd	Unchanged.  Note: the ia64 linaos kernel never sets this bit.
 PSR.ss	Lazy redirect.  If set, "epc" will cause a Single Step Trap to
 	be taken.  The trap handler then modifies the saved machine
 	state such that execution resumes in the gate page at
@@ -246,7 +246,7 @@ PSR.ed	Unchanged.  Note: This bit could only have an effect if an fsys-mode
 	needed.
 PSR.bn	Unchanged.  Note: fsys-mode handlers may clear the bit, if needed.
 	Doing so requires clearing PSR.i and PSR.ic as well.
-PSR.ia	Unchanged.  Note: the ia64 linux kernel never sets this bit.
+PSR.ia	Unchanged.  Note: the ia64 linaos kernel never sets this bit.
 ======= =======================================================================
 
 Using fast system calls

@@ -2,7 +2,7 @@
 #ifndef __LINUX_STACKTRACE_H
 #define __LINUX_STACKTRACE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/errno.h>
 
 struct task_struct;

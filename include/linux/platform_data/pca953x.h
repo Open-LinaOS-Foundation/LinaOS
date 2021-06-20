@@ -2,8 +2,8 @@
 #ifndef _LINUX_PCA953X_H
 #define _LINUX_PCA953X_H
 
-#include <linux/types.h>
-#include <linux/i2c.h>
+#include <linaos/types.h>
+#include <linaos/i2c.h>
 
 /* platform data for the PCA9539 16-bit I/O expander driver */
 

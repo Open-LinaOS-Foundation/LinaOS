@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/parport/parport_ax88796.c
+/* linaos/drivers/parport/parport_ax88796.c
  *
  * (c) 2005,2006 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/parport.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/parport.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

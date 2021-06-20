@@ -5,9 +5,9 @@
  * Copyright (c) 2017-19 David Ahern <dsa@cumulusnetworks.com>
  */
 
-#include <linux/nexthop.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <linaos/nexthop.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/slab.h>
 #include <net/arp.h>
 #include <net/ipv6_stubs.h>
 #include <net/lwtunnel.h>

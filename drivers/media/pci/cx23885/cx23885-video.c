@@ -2,22 +2,22 @@
 /*
  *  Driver for the Conexant CX23885 PCIe bridge
  *
- *  Copyright (c) 2007 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2007 Steven Toth <stoth@linaostv.org>
  */
 
 #include "cx23885.h"
 #include "cx23885-video.h"
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kmod.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kmod.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
 #include <asm/div64.h>
 
 #include <media/v4l2-common.h>
@@ -29,7 +29,7 @@
 #include <media/drv-intf/cx25840.h>
 
 MODULE_DESCRIPTION("v4l2 driver module for cx23885 based TV cards");
-MODULE_AUTHOR("Steven Toth <stoth@linuxtv.org>");
+MODULE_AUTHOR("Steven Toth <stoth@linaostv.org>");
 MODULE_LICENSE("GPL");
 
 /* ------------------------------------------------------------------ */

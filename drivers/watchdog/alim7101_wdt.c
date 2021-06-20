@@ -2,13 +2,13 @@
 /*
  *	ALi M7101 PMU Computer Watchdog Timer driver
  *
- *	Based on w83877f_wdt.c by Scott Jennings <linuxdrivers@oro.net>
+ *	Based on w83877f_wdt.c by Scott Jennings <linaosdrivers@oro.net>
  *	and the Cobalt kernel WDT timer driver by Tim Hockin
  *	                                      <thockin@cobaltnet.com>
  *
  *	(c)2002 Steve Hill <steve@navaho.co.uk>
  *
- *  This WDT driver is different from most other Linux WDT
+ *  This WDT driver is different from most other LinaOS WDT
  *  drivers in that the driver will ping the watchdog by itself,
  *  because this particular WDT has a very short timeout (1.6
  *  seconds) and it would be insane to count on any userspace
@@ -22,20 +22,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/ioport.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/timer.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/ioport.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 
 #define WDT_ENABLE 0x9C

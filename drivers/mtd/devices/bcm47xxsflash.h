@@ -2,7 +2,7 @@
 #ifndef __BCM47XXSFLASH_H
 #define __BCM47XXSFLASH_H
 
-#include <linux/mtd/mtd.h>
+#include <linaos/mtd/mtd.h>
 
 #define BCM47XXSFLASH_WINDOW_SZ			SZ_16M
 

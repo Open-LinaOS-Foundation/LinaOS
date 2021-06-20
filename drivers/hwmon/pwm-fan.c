@@ -7,17 +7,17 @@
  * Author: Kamil Debski <k.debski@samsung.com>
  */
 
-#include <linux/hwmon.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sysfs.h>
-#include <linux/thermal.h>
-#include <linux/timer.h>
+#include <linaos/hwmon.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/sysfs.h>
+#include <linaos/thermal.h>
+#include <linaos/timer.h>
 
 #define MAX_PWM 255
 

@@ -34,7 +34,7 @@
 |	(3) example "Call-out" table
 |
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 |################################
 | (1) EXAMPLE CALL-OUTS		#

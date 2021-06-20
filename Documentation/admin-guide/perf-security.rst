@@ -6,7 +6,7 @@ Perf events and tool security
 Overview
 --------
 
-Usage of Performance Counters for Linux (perf_events) [1]_ , [2]_ , [3]_
+Usage of Performance Counters for LinaOS (perf_events) [1]_ , [2]_ , [3]_
 can impose a considerable risk of leaking sensitive data accessed by
 monitored processes. The data leakage is possible both in scenarios of
 direct usage of perf_events system call API [2]_ and over data files
@@ -49,7 +49,7 @@ the subject for security access control management [5]_ .
 perf_events access control
 -------------------------------
 
-To perform security checks, the Linux implementation splits processes
+To perform security checks, the LinaOS implementation splits processes
 into two categories [6]_ : a) privileged processes (whose effective user
 ID is 0, referred to as superuser or root), and b) unprivileged
 processes (whose effective UID is nonzero). Privileged processes bypass
@@ -61,7 +61,7 @@ Unprivileged processes are subject to a full security permission check
 based on the process's credentials [5]_ (usually: effective UID,
 effective GID, and supplementary group list).
 
-Linux divides the privileges traditionally associated with superuser
+LinaOS divides the privileges traditionally associated with superuser
 into distinct units, known as capabilities [6]_ , which can be
 independently enabled and disabled on per-thread basis for processes and
 files of unprivileged users.
@@ -84,11 +84,11 @@ capabilities then providing the process with CAP_PERFMON capability singly
 is recommended as the preferred secure approach to resolve double access
 denial logging related to usage of performance monitoring and observability.
 
-Prior Linux v5.9 unprivileged processes using perf_events system call
+Prior LinaOS v5.9 unprivileged processes using perf_events system call
 are also subject for PTRACE_MODE_READ_REALCREDS ptrace access mode check
 [7]_ , whose outcome determines whether monitoring is permitted.
 So unprivileged processes provided with CAP_SYS_PTRACE capability are
-effectively permitted to pass the check. Starting from Linux v5.9
+effectively permitted to pass the check. Starting from LinaOS v5.9
 CAP_SYS_PTRACE capability is not required and CAP_PERFMON is enough to
 be provided for processes to make performance monitoring and observability
 operations.
@@ -214,7 +214,7 @@ environment:
 
 As a result, members of perf_users group have access to the privileged
 environment where they can use tools employing performance monitoring APIs
-governed by CAP_PERFMON Linux capability.
+governed by CAP_PERFMON LinaOS capability.
 
 This specific access control management is only available to superuser
 or root running processes with CAP_SETPCAP, CAP_SETFCAP [6]_
@@ -308,18 +308,18 @@ Bibliography
 ------------
 
 .. [1] `<https://lwn.net/Articles/337493/>`_
-.. [2] `<http://man7.org/linux/man-pages/man2/perf_event_open.2.html>`_
+.. [2] `<http://man7.org/linaos/man-pages/man2/perf_event_open.2.html>`_
 .. [3] `<http://web.eece.maine.edu/~vweaver/projects/perf_events/>`_
 .. [4] `<https://perf.wiki.kernel.org/index.php/Main_Page>`_
 .. [5] `<https://www.kernel.org/doc/html/latest/security/credentials.html>`_
-.. [6] `<http://man7.org/linux/man-pages/man7/capabilities.7.html>`_
-.. [7] `<http://man7.org/linux/man-pages/man2/ptrace.2.html>`_
+.. [6] `<http://man7.org/linaos/man-pages/man7/capabilities.7.html>`_
+.. [7] `<http://man7.org/linaos/man-pages/man2/ptrace.2.html>`_
 .. [8] `<https://en.wikipedia.org/wiki/Hardware_performance_counter>`_
 .. [9] `<https://en.wikipedia.org/wiki/Model-specific_register>`_
-.. [10] `<http://man7.org/linux/man-pages/man5/acl.5.html>`_
-.. [11] `<http://man7.org/linux/man-pages/man2/getrlimit.2.html>`_
-.. [12] `<http://man7.org/linux/man-pages/man5/limits.conf.5.html>`_
+.. [10] `<http://man7.org/linaos/man-pages/man5/acl.5.html>`_
+.. [11] `<http://man7.org/linaos/man-pages/man2/getrlimit.2.html>`_
+.. [12] `<http://man7.org/linaos/man-pages/man5/limits.conf.5.html>`_
 .. [13] `<https://sites.google.com/site/fullycapable>`_
-.. [14] `<http://man7.org/linux/man-pages/man8/auditd.8.html>`_
-.. [15] `<https://man7.org/linux/man-pages/man8/sudo.8.html>`_
+.. [14] `<http://man7.org/linaos/man-pages/man8/auditd.8.html>`_
+.. [15] `<https://man7.org/linaos/man-pages/man8/sudo.8.html>`_
 .. [16] `<https://git.kernel.org/pub/scm/libs/libcap/libcap.git/>`_

@@ -14,23 +14,23 @@
 
 #undef DEBUG
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/fd.h>
-#include <linux/ioctl.h>
-#include <linux/blk-mq.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/timer.h>
+#include <linaos/delay.h>
+#include <linaos/fd.h>
+#include <linaos/ioctl.h>
+#include <linaos/blk-mq.h>
+#include <linaos/interrupt.h>
+#include <linaos/mutex.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/wait.h>
 #include <asm/io.h>
 #include <asm/dbdma.h>
 #include <asm/prom.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/mediabay.h>
 #include <asm/machdep.h>
 #include <asm/pmac_feature.h>

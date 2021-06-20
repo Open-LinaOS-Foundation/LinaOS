@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/drivers/video/omap2/omapfb.h
+ * linaos/drivers/video/omap2/omapfb.h
  *
  * Copyright (C) 2008 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -16,8 +16,8 @@
 #define DEBUG
 #endif
 
-#include <linux/rwsem.h>
-#include <linux/dma-mapping.h>
+#include <linaos/rwsem.h>
+#include <linaos/dma-mapping.h>
 
 #include <video/omapfb_dss.h>
 

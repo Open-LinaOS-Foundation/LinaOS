@@ -7,10 +7,10 @@
  *   https://web.archive.org/web/20080316215752/http://wil.cs.caltech.edu/pfldnet2007/paper/YeAH_TCP.pdf
  *
  */
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/inet_diag.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/inet_diag.h>
 
 #include <net/tcp.h>
 

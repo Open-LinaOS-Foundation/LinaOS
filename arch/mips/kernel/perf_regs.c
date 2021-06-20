@@ -9,7 +9,7 @@
  * Copyright (C) 2013 Cavium, Inc.
  */
 
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 
 #include <asm/ptrace.h>
 

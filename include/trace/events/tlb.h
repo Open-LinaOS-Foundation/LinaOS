@@ -5,8 +5,8 @@
 #if !defined(_TRACE_TLB_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_TLB_H
 
-#include <linux/mm_types.h>
-#include <linux/tracepoint.h>
+#include <linaos/mm_types.h>
+#include <linaos/tracepoint.h>
 
 #define TLB_FLUSH_REASON						\
 	EM(  TLB_FLUSH_ON_TASK_SWITCH,	"flush on task switch" )	\

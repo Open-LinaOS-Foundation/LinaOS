@@ -8,9 +8,9 @@
 #ifndef _CRYPTO_AEAD_H
 #define _CRYPTO_AEAD_H
 
-#include <linux/crypto.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/crypto.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 
 /**
  * DOC: Authenticated Encryption With Associated Data (AEAD) Cipher API

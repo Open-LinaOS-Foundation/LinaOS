@@ -6,7 +6,7 @@
 #ifndef MIPS_SN_IOC3_H
 #define MIPS_SN_IOC3_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* serial port register map */
 struct ioc3_serialregs {

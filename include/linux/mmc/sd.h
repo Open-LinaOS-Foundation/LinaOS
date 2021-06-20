@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  include/linux/mmc/sd.h
+ *  include/linaos/mmc/sd.h
  *
  *  Copyright (C) 2005-2007 Pierre Ossman, All Rights Reserved.
  */

@@ -9,7 +9,7 @@
 #ifndef _XHCI_MTK_H_
 #define _XHCI_MTK_H_
 
-#include <linux/clk.h>
+#include <linaos/clk.h>
 
 #include "xhci.h"
 

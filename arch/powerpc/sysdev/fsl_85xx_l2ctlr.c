@@ -7,9 +7,9 @@
  * Author: Vivek Mahajan <vivek.mahajan@freescale.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
 #include <asm/io.h>
 
 #include "fsl_85xx_cache_ctlr.h"

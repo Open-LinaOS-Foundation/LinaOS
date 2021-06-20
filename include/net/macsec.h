@@ -7,9 +7,9 @@
 #ifndef _NET_MACSEC_H_
 #define _NET_MACSEC_H_
 
-#include <linux/u64_stats_sync.h>
-#include <uapi/linux/if_link.h>
-#include <uapi/linux/if_macsec.h>
+#include <linaos/u64_stats_sync.h>
+#include <uapi/linaos/if_link.h>
+#include <uapi/linaos/if_macsec.h>
 
 #define MACSEC_DEFAULT_PN_LEN 4
 #define MACSEC_XPN_PN_LEN 8

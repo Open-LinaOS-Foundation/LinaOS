@@ -5,18 +5,18 @@
  * Copyright (C) 2012 Richard Cochran <richardcochran@gmail.com>
  *
  */
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/if.h>
-#include <linux/hrtimer.h>
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_classify.h>
-#include <linux/time.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
+#include <linaos/clk-provider.h>
+#include <linaos/err.h>
+#include <linaos/if.h>
+#include <linaos/hrtimer.h>
+#include <linaos/module.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/time.h>
+#include <linaos/uaccess.h>
+#include <linaos/workqueue.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
 
 #include "cpts.h"
 

@@ -2,12 +2,12 @@
 /*
  * scsi_logging.c
  *
- * Copyright (C) 2014 SUSE Linux Products GmbH
+ * Copyright (C) 2014 SUSE LinaOS Products GmbH
  * Copyright (C) 2014 Hannes Reinecke <hare@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/atomic.h>
+#include <linaos/kernel.h>
+#include <linaos/atomic.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

@@ -4,8 +4,8 @@
 #ifndef _MLXSW_CORE_ACL_FLEX_ACTIONS_H
 #define _MLXSW_CORE_ACL_FLEX_ACTIONS_H
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
+#include <linaos/types.h>
+#include <linaos/netdevice.h>
 #include <net/flow_offload.h>
 
 struct mlxsw_afa;

@@ -24,10 +24,10 @@
  *     David Airlie
  */
 
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/vga_switcheroo.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/vga_switcheroo.h>
 
 #include <drm/amdgpu_drm.h>
 #include <drm/drm_crtc.h>

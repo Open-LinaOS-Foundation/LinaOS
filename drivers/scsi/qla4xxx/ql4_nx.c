@@ -3,15 +3,15 @@
  * QLogic iSCSI HBA Driver
  * Copyright (c)  2003-2013 QLogic Corporation
  */
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/ratelimit.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/pci.h>
+#include <linaos/ratelimit.h>
 #include "ql4_def.h"
 #include "ql4_glbl.h"
 #include "ql4_inline.h"
 
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 
 #define TIMEOUT_100_MS	100
 #define MASK(n)		DMA_BIT_MASK(n)

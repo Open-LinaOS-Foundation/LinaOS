@@ -5,10 +5,10 @@
  * Copyright (C) 2010 Broadcom Corporation.
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/sched/signal.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/sched/signal.h>
 #include "pci.h"
 
 /* VPD access through PCI 2.2+ VPD capability */

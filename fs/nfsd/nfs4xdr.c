@@ -33,16 +33,16 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/statfs.h>
-#include <linux/utsname.h>
-#include <linux/pagemap.h>
-#include <linux/sunrpc/svcauth_gss.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/xattr.h>
-#include <uapi/linux/xattr.h>
+#include <linaos/file.h>
+#include <linaos/slab.h>
+#include <linaos/namei.h>
+#include <linaos/statfs.h>
+#include <linaos/utsname.h>
+#include <linaos/pagemap.h>
+#include <linaos/sunrpc/svcauth_gss.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/xattr.h>
+#include <uapi/linaos/xattr.h>
 
 #include "idmap.h"
 #include "acl.h"
@@ -57,7 +57,7 @@
 #include "trace.h"
 
 #ifdef CONFIG_NFSD_V4_SECURITY_LABEL
-#include <linux/security.h>
+#include <linaos/security.h>
 #endif
 
 

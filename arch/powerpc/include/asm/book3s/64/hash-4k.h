@@ -48,7 +48,7 @@
 #define _PAGE_HPTEFLAGS (H_PAGE_BUSY | H_PAGE_HASHPTE | \
 			 H_PAGE_F_SECOND | H_PAGE_F_GIX)
 /*
- * Not supported by 4k linux page size
+ * Not supported by 4k linaos page size
  */
 #define H_PAGE_4K_PFN	0x0
 #define H_PAGE_THP_HUGE 0x0

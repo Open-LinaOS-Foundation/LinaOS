@@ -18,8 +18,8 @@
 #ifndef _LM3554_H_
 #define _LM3554_H_
 
-#include <linux/gpio/consumer.h>
-#include <linux/videodev2.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-subdev.h>
 
 #define LM3554_ID      3554

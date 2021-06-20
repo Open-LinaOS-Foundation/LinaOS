@@ -8,13 +8,13 @@
  * Copyright (C) 2013 Pali Rohár <pali@kernel.org>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/cpu_pm.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/memblock.h>
+#include <linaos/of.h>
 
 #include <asm/cacheflush.h>
 #include <asm/memblock.h>

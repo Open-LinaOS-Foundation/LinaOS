@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /* elf-fdpic.h: FDPIC ELF load map
  *
  * Copyright (C) 2003 Red Hat, Inc. All Rights Reserved.
@@ -13,7 +13,7 @@
 #ifndef _UAPI_LINUX_ELF_FDPIC_H
 #define _UAPI_LINUX_ELF_FDPIC_H
 
-#include <linux/elf.h>
+#include <linaos/elf.h>
 
 #define PT_GNU_STACK    (PT_LOOS + 0x474e551)
 

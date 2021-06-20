@@ -32,7 +32,7 @@
 
 #include "vmwgfx_drv.h"
 #include "ttm_object.h"
-#include <linux/dma-buf.h>
+#include <linaos/dma-buf.h>
 
 /*
  * DMA-BUF attach- and mapping methods. No need to implement

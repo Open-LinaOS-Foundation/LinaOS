@@ -2,7 +2,7 @@
 #ifndef _ASM_S390_TOPOLOGY_H
 #define _ASM_S390_TOPOLOGY_H
 
-#include <linux/cpumask.h>
+#include <linaos/cpumask.h>
 #include <asm/numa.h>
 
 struct sysinfo_15_1_x;

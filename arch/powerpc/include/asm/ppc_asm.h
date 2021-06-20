@@ -4,7 +4,7 @@
 #ifndef _ASM_POWERPC_PPC_ASM_H
 #define _ASM_POWERPC_PPC_ASM_H
 
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 #include <asm/asm-compat.h>
 #include <asm/processor.h>
 #include <asm/ppc-opcode.h>

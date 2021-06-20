@@ -17,7 +17,7 @@
 #ifndef __LINUX_WW_MUTEX_H
 #define __LINUX_WW_MUTEX_H
 
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 
 struct ww_class {
 	atomic_long_t stamp;

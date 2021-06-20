@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 #ifndef KP2000_CDEV_UAPI_H_
 #define KP2000_CDEV_UAPI_H_
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 
 struct kp2000_regs {
 	__u32 card_id;

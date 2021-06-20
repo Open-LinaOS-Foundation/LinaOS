@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/pcmcia/pxa2xx_palmld.c
+ * linaos/drivers/pcmcia/pxa2xx_palmld.c
  *
  * Driver for Palm LifeDrive PCMCIA
  *
@@ -8,9 +8,9 @@
  * Copyright (C) 2007-2011 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
 
 #include <asm/mach-types.h>
 #include <mach/palmld.h>

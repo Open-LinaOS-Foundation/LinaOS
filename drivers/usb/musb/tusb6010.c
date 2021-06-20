@@ -11,18 +11,18 @@
  *   interface.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/prefetch.h>
-#include <linux/usb.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb/usb_phy_generic.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/prefetch.h>
+#include <linaos/usb.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/usb/usb_phy_generic.h>
 
 #include "musb_core.h"
 

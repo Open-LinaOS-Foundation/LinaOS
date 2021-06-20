@@ -34,9 +34,9 @@
 #include "arch/common.h"
 #include <regex.h>
 #include <pthread.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
 #include <subcmd/parse-options.h>
 #include <subcmd/run-command.h>
 
@@ -52,7 +52,7 @@
 #define DARROW_CHAR	((unsigned char)'.')
 #define UARROW_CHAR	((unsigned char)'-')
 
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 
 struct annotation_options annotation__default_options = {
 	.use_offset     = true,
@@ -1596,12 +1596,12 @@ int symbol__strerror_disassemble(struct map_symbol *ms, int errnum, char *buf, s
 			build_id_msg = bf;
 		}
 		scnprintf(buf, buflen,
-			  "No vmlinux file%s\nwas found in the path.\n\n"
+			  "No vmlinaos file%s\nwas found in the path.\n\n"
 			  "Note that annotation using /proc/kcore requires CAP_SYS_RAWIO capability.\n\n"
 			  "Please use:\n\n"
-			  "  perf buildid-cache -vu vmlinux\n\n"
+			  "  perf buildid-cache -vu vmlinaos\n\n"
 			  "or:\n\n"
-			  "  --vmlinux vmlinux\n", build_id_msg ?: "");
+			  "  --vmlinaos vmlinaos\n", build_id_msg ?: "");
 	}
 		break;
 	case SYMBOL_ANNOTATE_ERRNO__NO_LIBOPCODES_FOR_BPF:
@@ -1693,7 +1693,7 @@ fallback:
 #include <bpf/bpf.h>
 #include <bpf/btf.h>
 #include <bpf/libbpf.h>
-#include <linux/btf.h>
+#include <linaos/btf.h>
 
 static int symbol__disassemble_bpf(struct symbol *sym,
 				   struct annotate_args *args)

@@ -3,7 +3,7 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/log2.h>
+#include <linaos/log2.h>
 
 #include "gen6_ppgtt.h"
 #include "i915_scatterlist.h"

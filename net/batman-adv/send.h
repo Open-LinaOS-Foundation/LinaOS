@@ -9,11 +9,11 @@
 
 #include "main.h"
 
-#include <linux/compiler.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <uapi/linux/batadv_packet.h>
+#include <linaos/compiler.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <uapi/linaos/batadv_packet.h>
 
 void batadv_forw_packet_free(struct batadv_forw_packet *forw_packet,
 			     bool dropped);

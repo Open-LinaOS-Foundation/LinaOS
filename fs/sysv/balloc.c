@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/sysv/balloc.c
+ *  linaos/fs/sysv/balloc.c
  *
  *  minix/bitmap.c
  *  Copyright (C) 1991, 1992  Linus Torvalds
@@ -20,8 +20,8 @@
  *  This file contains code for allocating/freeing blocks.
  */
 
-#include <linux/buffer_head.h>
-#include <linux/string.h>
+#include <linaos/buffer_head.h>
+#include <linaos/string.h>
 #include "sysv.h"
 
 /* We don't trust the value of

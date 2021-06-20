@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/svc.h
+ * linaos/include/linaos/sunrpc/svc.h
  *
  * RPC server declarations.
  *
@@ -11,14 +11,14 @@
 #ifndef SUNRPC_SVC_H
 #define SUNRPC_SVC_H
 
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/sunrpc/types.h>
+#include <linaos/sunrpc/xdr.h>
+#include <linaos/sunrpc/auth.h>
+#include <linaos/sunrpc/svcauth.h>
+#include <linaos/wait.h>
+#include <linaos/mm.h>
 
 /* statistics for svc_pool structures */
 struct svc_pool_stats {
@@ -137,7 +137,7 @@ static inline void svc_get(struct svc_serv *serv)
  * has to fit into the IP datagram limit of 64K.  The largest
  * feasible number for all known page sizes is probably 48K,
  * but we choose 32K here.  This is the same as the historical
- * Linux limit; someone who cares more about NFS/UDP performance
+ * LinaOS limit; someone who cares more about NFS/UDP performance
  * can test a larger number.
  *
  * For TCP transports we have more freedom.  A size of 1MB is

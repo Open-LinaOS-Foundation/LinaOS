@@ -8,11 +8,11 @@
 #ifndef __STMPE_H
 #define __STMPE_H
 
-#include <linux/device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/stmpe.h>
-#include <linux/printk.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/stmpe.h>
+#include <linaos/printk.h>
+#include <linaos/types.h>
 
 extern const struct dev_pm_ops stmpe_dev_pm_ops;
 

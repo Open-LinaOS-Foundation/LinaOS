@@ -1,5 +1,5 @@
 /*
- * Adaptec AIC7xxx device driver for Linux.
+ * Adaptec AIC7xxx device driver for LinaOS.
  *
  * Copyright (c) 2000-2001 Adaptec Inc.
  * All rights reserved.

@@ -1,5 +1,5 @@
 /*
- * Amiga Linux/68k 8390 based PCMCIA Ethernet Driver for the Amiga 1200
+ * Amiga LinaOS/68k 8390 based PCMCIA Ethernet Driver for the Amiga 1200
  *
  * (C) Copyright 1997 Alain Malek
  *                    (Alain.Malek@cryogen.com)
@@ -8,10 +8,10 @@
  *
  * This program is based on
  *
- * ne.c:       A general non-shared-memory NS8390 ethernet driver for linux
+ * ne.c:       A general non-shared-memory NS8390 ethernet driver for linaos
  *             Written 1992-94 by Donald Becker.
  *
- * 8390.c:     A general NS8390 ethernet driver core for linux.
+ * 8390.c:     A general NS8390 ethernet driver core for linaos.
  *             Written 1992-94 by Donald Becker.
  *
  * cnetdevice: A Sana-II ethernet driver for AmigaOS
@@ -20,7 +20,7 @@
  * ----------------------------------------------------------------------------
  *
  * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of the Linux
+ * License.  See the file COPYING in the main directory of the LinaOS
  * distribution for more details.
  *
  * ----------------------------------------------------------------------------
@@ -28,16 +28,16 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
 
 #include <asm/io.h>
 #include <asm/setup.h>
@@ -118,7 +118,7 @@ static int apne_owned;	/* signal if card already owned */
 
 static u32 apne_msg_enable;
 module_param_named(msg_enable, apne_msg_enable, uint, 0444);
-MODULE_PARM_DESC(msg_enable, "Debug message level (see linux/netdevice.h for bitmap)");
+MODULE_PARM_DESC(msg_enable, "Debug message level (see linaos/netdevice.h for bitmap)");
 
 struct net_device * __init apne_probe(int unit)
 {

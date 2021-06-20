@@ -6,8 +6,8 @@
 #ifndef __MT76x02_DFS_H
 #define __MT76x02_DFS_H
 
-#include <linux/types.h>
-#include <linux/nl80211.h>
+#include <linaos/types.h>
+#include <linaos/nl80211.h>
 
 #define MT_DFS_GP_INTERVAL		(10 << 4) /* 64 us unit */
 #define MT_DFS_NUM_ENGINES		4

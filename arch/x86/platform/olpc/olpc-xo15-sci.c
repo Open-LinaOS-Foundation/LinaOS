@@ -5,13 +5,13 @@
  * Copyright (C) 2009-2010 One Laptop per Child
  */
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/power_supply.h>
-#include <linux/olpc-ec.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/power_supply.h>
+#include <linaos/olpc-ec.h>
 
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 #include <asm/olpc.h>
 
 #define DRV_NAME			"olpc-xo15-sci"

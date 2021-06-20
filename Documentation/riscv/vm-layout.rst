@@ -1,33 +1,33 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =====================================
-Virtual Memory Layout on RISC-V Linux
+Virtual Memory Layout on RISC-V LinaOS
 =====================================
 
 :Author: Alexandre Ghiti <alex@ghiti.fr>
 :Date: 12 February 2021
 
-This document describes the virtual memory layout used by the RISC-V Linux
+This document describes the virtual memory layout used by the RISC-V LinaOS
 Kernel.
 
-RISC-V Linux Kernel 32bit
+RISC-V LinaOS Kernel 32bit
 =========================
 
-RISC-V Linux Kernel SV32
+RISC-V LinaOS Kernel SV32
 ------------------------
 
 TODO
 
-RISC-V Linux Kernel 64bit
+RISC-V LinaOS Kernel 64bit
 =========================
 
 The RISC-V privileged architecture document states that the 64bit addresses
 "must have bits 63–48 all equal to bit 47, or else a page-fault exception will
 occur.": that splits the virtual address space into 2 halves separated by a very
 big hole, the lower half is where the userspace resides, the upper half is where
-the RISC-V Linux Kernel resides.
+the RISC-V LinaOS Kernel resides.
 
-RISC-V Linux Kernel SV39
+RISC-V LinaOS Kernel SV39
 ------------------------
 
 ::

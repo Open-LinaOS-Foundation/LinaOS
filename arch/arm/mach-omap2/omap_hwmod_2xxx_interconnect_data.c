@@ -8,7 +8,7 @@
  * XXX handle crossbar/shared link difference for L3?
  * XXX these should be marked initdata for multi-OMAP kernels
  */
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #include "omap_hwmod.h"
 #include "l3_2xxx.h"

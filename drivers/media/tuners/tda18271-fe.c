@@ -2,15 +2,15 @@
 /*
     tda18271-fe.c - driver for the Philips / NXP TDA18271 silicon tuner
 
-    Copyright (C) 2007, 2008 Michael Krufky <mkrufky@linuxtv.org>
+    Copyright (C) 2007, 2008 Michael Krufky <mkrufky@linaostv.org>
 
 */
 
 #include "tda18271-priv.h"
 #include "tda8290.h"
 
-#include <linux/delay.h>
-#include <linux/videodev2.h>
+#include <linaos/delay.h>
+#include <linaos/videodev2.h>
 
 int tda18271_debug;
 module_param_named(debug, tda18271_debug, int, 0644);
@@ -1338,6 +1338,6 @@ fail:
 }
 EXPORT_SYMBOL_GPL(tda18271_attach);
 MODULE_DESCRIPTION("NXP TDA18271HD analog / digital tuner driver");
-MODULE_AUTHOR("Michael Krufky <mkrufky@linuxtv.org>");
+MODULE_AUTHOR("Michael Krufky <mkrufky@linaostv.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.4");

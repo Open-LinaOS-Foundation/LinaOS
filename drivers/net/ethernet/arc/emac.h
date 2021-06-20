@@ -8,11 +8,11 @@
 #ifndef ARC_EMAC_H
 #define ARC_EMAC_H
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/clk.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/netdevice.h>
+#include <linaos/phy.h>
+#include <linaos/clk.h>
 
 /* STATUS and ENABLE Register bit masks */
 #define TXINT_MASK	(1 << 0)	/* Transmit interrupt */

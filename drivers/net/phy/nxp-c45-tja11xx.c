@@ -4,15 +4,15 @@
  * Author: Radu Pirea <radu-nicolae.pirea@oss.nxp.com>
  */
 
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/processor.h>
-#include <linux/property.h>
+#include <linaos/delay.h>
+#include <linaos/ethtool.h>
+#include <linaos/ethtool_netlink.h>
+#include <linaos/kernel.h>
+#include <linaos/mii.h>
+#include <linaos/module.h>
+#include <linaos/phy.h>
+#include <linaos/processor.h>
+#include <linaos/property.h>
 
 #define PHY_ID_TJA_1103			0x001BB010
 

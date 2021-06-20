@@ -3,9 +3,9 @@
  *    Copyright IBM Corp. 2017
  */
 
-#include <linux/console.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linaos/console.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
 #include <asm/sclp.h>
 
 static void sclp_early_write(struct console *con, const char *s, unsigned int len)

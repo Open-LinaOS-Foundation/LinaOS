@@ -39,21 +39,21 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/selection.h>
-#include <linux/init.h>
-#include <linux/nvram.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/fb.h>
+#include <linaos/selection.h>
+#include <linaos/init.h>
+#include <linaos/nvram.h>
+#include <linaos/adb.h>
+#include <linaos/cuda.h>
 #ifdef CONFIG_MAC
 #include <asm/macintosh.h>
 #else
@@ -445,7 +445,7 @@ static int read_valkyrie_sense(struct fb_info_valkyrie *p)
  * swiping the platinumfb code is that we now have more comprehensible error
  * messages when a vmode/cmode switch fails. (Most of the error messages are
  * platinumfb.c, but I added two of my own, and I also changed some commas
- * into colons to make the messages more consistent with other Linux error
+ * into colons to make the messages more consistent with other LinaOS error
  * messages.) In addition, I think the new code *might* fix some vmode-
  * switching oddities, but I'm not sure.
  *

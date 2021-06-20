@@ -11,7 +11,7 @@
 #ifndef __DWMAC100_H__
 #define __DWMAC100_H__
 
-#include <linux/phy.h>
+#include <linaos/phy.h>
 #include "common.h"
 
 /*----------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright (c) 2005 Voltaire Inc.  All rights reserved.
  * Copyright (c) 2005 Intel Corporation.  All rights reserved.
@@ -7,8 +7,8 @@
 #ifndef RDMA_CM_H
 #define RDMA_CM_H
 
-#include <linux/socket.h>
-#include <linux/in6.h>
+#include <linaos/socket.h>
+#include <linaos/in6.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_sa.h>
 #include <uapi/rdma/rdma_user_cm.h>

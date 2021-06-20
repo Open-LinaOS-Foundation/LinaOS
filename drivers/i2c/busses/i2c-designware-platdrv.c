@@ -8,29 +8,29 @@
  * Copyright (C) 2007 MontaVista Software Inc.
  * Copyright (C) 2009 Provigent Ltd.
  */
-#include <linux/acpi.h>
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <linaos/acpi.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/dmi.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
 
 #include "i2c-designware-core.h"
 

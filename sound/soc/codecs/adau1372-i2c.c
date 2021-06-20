@@ -6,10 +6,10 @@
  *  Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 #include <sound/soc.h>
 
 #include "adau1372.h"

@@ -9,10 +9,10 @@
  * Copyright (C) 2019 Intel Corporation
  */
 
-#include <linux/ieee80211.h>
-#include <linux/log2.h>
+#include <linaos/ieee80211.h>
+#include <linaos/log2.h>
 #include <net/cfg80211.h>
-#include <linux/rtnetlink.h>
+#include <linaos/rtnetlink.h>
 #include "ieee80211_i.h"
 #include "driver-ops.h"
 #include "rate.h"

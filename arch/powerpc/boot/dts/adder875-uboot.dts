@@ -98,7 +98,7 @@
 			interrupts = <3 1>;
 			interrupt-parent = <&PIC>;
 			phy-handle = <&PHY0>;
-			linux,network-index = <0>;
+			linaos,network-index = <0>;
 		};
 
 		eth1: ethernet@1e00 {
@@ -110,7 +110,7 @@
 			interrupts = <7 1>;
 			interrupt-parent = <&PIC>;
 			phy-handle = <&PHY1>;
-			linux,network-index = <1>;
+			linaos,network-index = <1>;
 		};
 
 		PIC: interrupt-controller@0 {

@@ -2,7 +2,7 @@
 .. include:: <isonum.txt>
 
 ==========================================
-README file for the Linux g_NCR5380 driver
+README file for the LinaOS g_NCR5380 driver
 ==========================================
 
 Copyright |copy| 1993 Drew Eckhard

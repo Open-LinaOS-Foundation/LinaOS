@@ -20,21 +20,21 @@
  */
 
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/delay.h>
 
 #ifdef CONFIG_PPC_PMAC
 #include <asm/prom.h>
 #endif
 
-#include <linux/sungem_phy.h>
+#include <linaos/sungem_phy.h>
 
 /* Link modes of the BCM5400 PHY */
 static const int phy_BCM5400_link_table[8][3] = {

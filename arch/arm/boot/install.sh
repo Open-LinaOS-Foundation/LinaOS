@@ -45,7 +45,7 @@ if [ "$(basename $2)" = "zImage" ]; then
 else
 # Normal install
   echo "Installing normal kernel"
-  base=vmlinux
+  base=vmlinaos
 fi
 
 if [ -f $4/$base-$1 ]; then

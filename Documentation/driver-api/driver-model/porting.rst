@@ -31,7 +31,7 @@ mounted by doing::
 
 The Process
 
-Step 0: Read include/linux/device.h for object and function definitions.
+Step 0: Read include/linaos/device.h for object and function definitions.
 
 Step 1: Registering the bus driver.
 
@@ -67,7 +67,7 @@ Step 1: Registering the bus driver.
   Other code may wish to reference the bus type, so declare it in a
   shared header file and export the symbol.
 
-From include/linux/pci.h::
+From include/linaos/pci.h::
 
   extern struct bus_type pci_bus_type;
 

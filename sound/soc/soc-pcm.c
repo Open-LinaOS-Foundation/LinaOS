@@ -10,15 +10,15 @@
 // Authors: Liam Girdwood <lrg@ti.com>
 //          Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
-#include <linux/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/export.h>
+#include <linaos/debugfs.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

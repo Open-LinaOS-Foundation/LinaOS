@@ -4,7 +4,7 @@
 #ifndef __OTX2_CPTLF_H
 #define __OTX2_CPTLF_H
 
-#include <linux/soc/marvell/octeontx2/asm.h>
+#include <linaos/soc/marvell/octeontx2/asm.h>
 #include <mbox.h>
 #include <rvu.h>
 #include "otx2_cpt_common.h"

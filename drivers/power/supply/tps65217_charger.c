@@ -7,21 +7,21 @@
 /*
  * Battery charger driver for TI's tps65217
  */
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/power_supply.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/power_supply.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps65217.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/tps65217.h>
 
 #define CHARGER_STATUS_PRESENT	(TPS65217_STATUS_ACPWR | TPS65217_STATUS_USBPWR)
 #define NUM_CHARGER_IRQS	2

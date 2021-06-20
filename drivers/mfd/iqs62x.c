@@ -14,23 +14,23 @@
  * Link to conversion tool: https://github.com/jlabundy/iqs62x-h2bin.git
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/iqs62x.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/of_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/firmware.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/iqs62x.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/of_device.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 #include <asm/unaligned.h>
 
 #define IQS62X_PROD_NUM				0x00

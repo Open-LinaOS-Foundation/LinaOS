@@ -4,7 +4,7 @@
  *     Driver for DAQCard-700 DIO/AI
  *     copied from 8255
  *
- *     COMEDI - Linux Control and Measurement Device Interface
+ *     COMEDI - LinaOS Control and Measurement Device Interface
  *     Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
@@ -38,9 +38,9 @@
  *		User Manual:	https://www.ni.com/pdf/manuals/320676d.pdf
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
 
 #include "../comedi_pcmcia.h"
 

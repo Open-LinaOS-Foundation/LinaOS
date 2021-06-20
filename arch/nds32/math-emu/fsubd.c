@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2018 Andes Technology Corporation
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <asm/sfp-machine.h>
 #include <math-emu/soft-fp.h>

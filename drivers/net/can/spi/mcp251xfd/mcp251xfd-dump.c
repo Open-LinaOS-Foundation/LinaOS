@@ -7,7 +7,7 @@
 // Copyright (C) 2015-2018 Etnaviv Project
 //
 
-#include <linux/devcoredump.h>
+#include <linaos/devcoredump.h>
 
 #include "mcp251xfd.h"
 #include "mcp251xfd-dump.h"

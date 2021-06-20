@@ -11,8 +11,8 @@
 #ifndef __XEN_DRM_FRONT_EVTCHNL_H_
 #define __XEN_DRM_FRONT_EVTCHNL_H_
 
-#include <linux/completion.h>
-#include <linux/types.h>
+#include <linaos/completion.h>
+#include <linaos/types.h>
 
 #include <xen/interface/io/ring.h>
 #include <xen/interface/io/displif.h>

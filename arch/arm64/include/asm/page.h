@@ -12,7 +12,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/personality.h> /* for READ_IMPLIES_EXEC */
+#include <linaos/personality.h> /* for READ_IMPLIES_EXEC */
 #include <asm/pgtable-types.h>
 
 struct page;

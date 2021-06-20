@@ -24,8 +24,8 @@
 #ifndef _PP_OVERDRIVER_H_
 #define _PP_OVERDRIVER_H_
 
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
 
 struct phm_fuses_default {
 	uint64_t key;

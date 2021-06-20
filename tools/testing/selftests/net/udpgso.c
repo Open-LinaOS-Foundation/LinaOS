@@ -7,9 +7,9 @@
 #include <error.h>
 #include <errno.h>
 #include <net/if.h>
-#include <linux/in.h>
-#include <linux/netlink.h>
-#include <linux/rtnetlink.h>
+#include <linaos/in.h>
+#include <linaos/netlink.h>
+#include <linaos/rtnetlink.h>
 #include <netinet/if_ether.h>
 #include <netinet/ip.h>
 #include <netinet/ip6.h>

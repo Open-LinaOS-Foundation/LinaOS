@@ -5,9 +5,9 @@
 #ifndef _LINUX_MEI_CL_BUS_H
 #define _LINUX_MEI_CL_BUS_H
 
-#include <linux/device.h>
-#include <linux/uuid.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/device.h>
+#include <linaos/uuid.h>
+#include <linaos/mod_devicetable.h>
 
 struct mei_cl_device;
 struct mei_device;
@@ -23,7 +23,7 @@ typedef void (*mei_cldev_cb_t)(struct mei_cl_device *cldev);
  *
  * @bus_list: device on the bus list
  * @bus: parent mei device
- * @dev: linux driver model device pointer
+ * @dev: linaos driver model device pointer
  * @me_cl: me client
  * @cl: mei client
  * @name: device name

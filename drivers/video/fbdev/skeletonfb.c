@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/skeletonfb.c -- Skeleton for a frame buffer device
+ * linaos/drivers/video/skeletonfb.c -- Skeleton for a frame buffer device
  *
  *  Modified to new api Jan 2001 by James Simmons (jsimmons@transvirtual.com)
  *
@@ -42,16 +42,16 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 
     /*
      *  This is just simple sample code.
@@ -72,7 +72,7 @@ static char *mode_option;
 
 /* 
  * This structure defines the hardware state of the graphics card. Normally
- * you place this in a header file in linux/include/video. This file usually
+ * you place this in a header file in linaos/include/video. This file usually
  * also includes register information. That allows other driver subsystems
  * and userland applications the ability to use the same header file to 
  * avoid duplicate work and easy porting of software. 
@@ -694,7 +694,7 @@ static int xxxfb_probe(struct pci_dev *dev, const struct pci_device_id *ent)
     /*
      * Set up flags to indicate what sort of acceleration your
      * driver can provide (pan/wrap/copyarea/etc.) and whether it
-     * is a module -- see FBINFO_* in include/linux/fb.h
+     * is a module -- see FBINFO_* in include/linaos/fb.h
      *
      * If your hardware can support any of the hardware accelerated functions
      * fbcon performance will improve if info->flags is set properly.
@@ -906,7 +906,7 @@ static void __exit xxxfb_exit(void)
 	pci_unregister_driver(&xxxfb_driver);
 }
 #else /* non PCI, platform drivers */
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 /* for platform devices */
 
 #ifdef CONFIG_PM

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #include <perf/cpumap.h>
 #include <stdlib.h>
-#include <linux/refcount.h>
+#include <linaos/refcount.h>
 #include <internal/cpumap.h>
 #include <asm/bug.h>
 #include <stdio.h>

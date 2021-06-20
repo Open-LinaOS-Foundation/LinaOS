@@ -5,13 +5,13 @@
  *
  * Generic LRU infrastructure
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/list_lru.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/memcontrol.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/list_lru.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/memcontrol.h>
 #include "slab.h"
 
 #ifdef CONFIG_MEMCG_KMEM

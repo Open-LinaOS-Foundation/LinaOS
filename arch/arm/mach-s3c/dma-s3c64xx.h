@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* linux/arch/arm/mach-s3c6400/include/mach/dma.h
+/* linaos/arch/arm/mach-s3c6400/include/mach/dma.h
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armlinaos.simtec.co.uk/
  *
  * S3C6400 - DMA support
  */
@@ -52,6 +52,6 @@ enum dma_ch {
 	DMACH_MAX = 32
 };
 
-#include <linux/amba/pl08x.h>
+#include <linaos/amba/pl08x.h>
 
 #endif /* __ASM_ARCH_IRQ_H */

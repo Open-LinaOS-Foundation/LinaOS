@@ -2,9 +2,9 @@
 #ifndef __INCLUDE_ATMEL_SSC_H
 #define __INCLUDE_ATMEL_SSC_H
 
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/list.h>
+#include <linaos/io.h>
 
 struct atmel_ssc_platform_data {
 	int			use_dma;

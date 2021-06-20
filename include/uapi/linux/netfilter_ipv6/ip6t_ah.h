@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _IP6T_AH_H
 #define _IP6T_AH_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct ip6t_ah {
 	__u32 spis[2];			/* Security Parameter Index */

@@ -6,8 +6,8 @@
 #ifndef __INTEL_TC_H__
 #define __INTEL_TC_H__
 
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
 
 struct intel_digital_port;
 struct intel_encoder;

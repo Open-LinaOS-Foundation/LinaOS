@@ -8,15 +8,15 @@
 // #define	DEBUG			// error path messages, extra info
 // #define	VERBOSE			// more; success messages
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/workqueue.h>
+#include <linaos/mii.h>
+#include <linaos/usb.h>
+#include <linaos/usb/cdc.h>
+#include <linaos/usb/usbnet.h>
 
 
 #if IS_ENABLED(CONFIG_USB_NET_RNDIS_HOST)

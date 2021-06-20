@@ -45,11 +45,11 @@
  *
  */
 
-#include <linux/firmware.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
+#include <linaos/firmware.h>
+#include <linaos/mutex.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/crc32.h>
 
 #include "hfi.h"
 #include "trace.h"
@@ -147,7 +147,7 @@ struct augmented_firmware_file {
 						sizeof(struct firmware_file))
 
 struct firmware_details {
-	/* Linux core piece */
+	/* LinaOS core piece */
 	const struct firmware *fw;
 
 	struct css_header *css_header;

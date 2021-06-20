@@ -2,7 +2,7 @@
 #ifndef _NF_CONNTRACK_ZONES_COMMON_H
 #define _NF_CONNTRACK_ZONES_COMMON_H
 
-#include <uapi/linux/netfilter/nf_conntrack_tuple_common.h>
+#include <uapi/linaos/netfilter/nf_conntrack_tuple_common.h>
 
 #define NF_CT_DEFAULT_ZONE_ID	0
 

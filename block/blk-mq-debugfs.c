@@ -3,11 +3,11 @@
  * Copyright (C) 2017 Facebook
  */
 
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/blkdev.h>
+#include <linaos/debugfs.h>
 
-#include <linux/blk-mq.h>
+#include <linaos/blk-mq.h>
 #include "blk.h"
 #include "blk-mq.h"
 #include "blk-mq-debugfs.h"

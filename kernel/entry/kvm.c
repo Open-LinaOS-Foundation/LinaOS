@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/entry-kvm.h>
-#include <linux/kvm_host.h>
+#include <linaos/entry-kvm.h>
+#include <linaos/kvm_host.h>
 
 static int xfer_to_guest_mode_work(struct kvm_vcpu *vcpu, unsigned long ti_work)
 {

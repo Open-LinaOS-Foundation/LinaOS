@@ -8,8 +8,8 @@
 #ifndef __RT711_SDW_SDCA_H__
 #define __RT711_SDW_SDCA_H__
 
-#include <linux/regmap.h>
-#include <linux/soundwire/sdw_registers.h>
+#include <linaos/regmap.h>
+#include <linaos/soundwire/sdw_registers.h>
 
 static const struct reg_default rt711_sdca_reg_defaults[] = {
 	{ 0x201a, 0x00 },

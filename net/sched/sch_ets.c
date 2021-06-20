@@ -29,7 +29,7 @@
  * scheduler moves on to the next band in the active list.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <net/gen_stats.h>
 #include <net/netlink.h>
 #include <net/pkt_cls.h>

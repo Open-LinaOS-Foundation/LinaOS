@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux arm-specific parts of the memory manager.
+# Makefile for the linaos arm-specific parts of the memory manager.
 #
 
 obj-y				:= extable.o fault.o init.o iomap.o

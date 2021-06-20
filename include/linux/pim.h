@@ -2,7 +2,7 @@
 #ifndef __LINUX_PIM_H
 #define __LINUX_PIM_H
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <asm/byteorder.h>
 
 /* Message types - V1 */

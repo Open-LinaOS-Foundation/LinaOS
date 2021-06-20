@@ -8,13 +8,13 @@
  * Author: Leonard Crestez <leonard.crestez@nxp.com>
  */
 
-#include <linux/device.h>
-#include <linux/interconnect-provider.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_qos.h>
+#include <linaos/device.h>
+#include <linaos/interconnect-provider.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_qos.h>
 
 #include "imx.h"
 

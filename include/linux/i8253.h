@@ -9,9 +9,9 @@
 #ifndef __LINUX_I8253_H
 #define __LINUX_I8253_H
 
-#include <linux/param.h>
-#include <linux/spinlock.h>
-#include <linux/timex.h>
+#include <linaos/param.h>
+#include <linaos/spinlock.h>
+#include <linaos/timex.h>
 
 /* i8253A PIT registers */
 #define PIT_MODE	0x43

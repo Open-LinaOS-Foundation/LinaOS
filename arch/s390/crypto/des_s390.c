@@ -9,12 +9,12 @@
  *	      Jan Glauber (jan.glauber@de.ibm.com)
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/cpufeature.h>
-#include <linux/crypto.h>
-#include <linux/fips.h>
-#include <linux/mutex.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/cpufeature.h>
+#include <linaos/crypto.h>
+#include <linaos/fips.h>
+#include <linaos/mutex.h>
 #include <crypto/algapi.h>
 #include <crypto/internal/des.h>
 #include <crypto/internal/skcipher.h>

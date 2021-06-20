@@ -2,7 +2,7 @@
 #ifndef __ASM_SH_MOBILE_LCDC_H__
 #define __ASM_SH_MOBILE_LCDC_H__
 
-#include <linux/fb.h>
+#include <linaos/fb.h>
 
 /* Register definitions */
 #define _LDDCKR			0x410

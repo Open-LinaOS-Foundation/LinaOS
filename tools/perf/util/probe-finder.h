@@ -6,7 +6,7 @@
 #include "intlist.h"
 #include "build-id.h"
 #include "probe-event.h"
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 
 #define MAX_PROBE_BUFFER	1024
 #define MAX_PROBES		 128

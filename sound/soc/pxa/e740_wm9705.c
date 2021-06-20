@@ -5,9 +5,9 @@
  * Copyright 2007 (c) Ian Molton <spyro@f2s.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/gpio.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

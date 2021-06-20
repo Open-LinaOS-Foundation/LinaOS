@@ -6,8 +6,8 @@
  * Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
 
 #include <drm/bridge/dw_hdmi.h>
 #include <drm/drm_crtc.h>

@@ -6,12 +6,12 @@
  * Copyright 2010 Ion Beam Application, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/poll.h>
+#include <linaos/io.h>
 
 #include "vme_vmivme7805.h"
 

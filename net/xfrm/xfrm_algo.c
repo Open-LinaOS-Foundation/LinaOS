@@ -7,11 +7,11 @@
 
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pfkeyv2.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/pfkeyv2.h>
+#include <linaos/crypto.h>
+#include <linaos/scatterlist.h>
 #include <net/xfrm.h>
 #if IS_ENABLED(CONFIG_INET_ESP) || IS_ENABLED(CONFIG_INET6_ESP)
 #include <net/esp.h>

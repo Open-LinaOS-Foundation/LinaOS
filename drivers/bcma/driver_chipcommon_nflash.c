@@ -7,8 +7,8 @@
 
 #include "bcma_private.h"
 
-#include <linux/platform_device.h>
-#include <linux/bcma/bcma.h>
+#include <linaos/platform_device.h>
+#include <linaos/bcma/bcma.h>
 
 struct platform_device bcma_nflash_dev = {
 	.name		= "bcma_nflash",

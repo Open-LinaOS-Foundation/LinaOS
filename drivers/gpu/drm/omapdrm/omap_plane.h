@@ -9,7 +9,7 @@
 #ifndef __OMAPDRM_PLANE_H__
 #define __OMAPDRM_PLANE_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum drm_plane_type;
 

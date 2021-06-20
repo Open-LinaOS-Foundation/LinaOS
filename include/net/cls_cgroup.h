@@ -8,9 +8,9 @@
 #ifndef _NET_CLS_CGROUP_H
 #define _NET_CLS_CGROUP_H
 
-#include <linux/cgroup.h>
-#include <linux/hardirq.h>
-#include <linux/rcupdate.h>
+#include <linaos/cgroup.h>
+#include <linaos/hardirq.h>
+#include <linaos/rcupdate.h>
 #include <net/sock.h>
 #include <net/inet_sock.h>
 

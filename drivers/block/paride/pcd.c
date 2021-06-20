@@ -129,17 +129,17 @@ enum {D_PRT, D_PRO, D_UNI, D_MOD, D_SLV, D_DLY};
 
 /* end of parameters */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/cdrom.h>
-#include <linux/spinlock.h>
-#include <linux/blk-mq.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/cdrom.h>
+#include <linaos/spinlock.h>
+#include <linaos/blk-mq.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
 
 static DEFINE_MUTEX(pcd_mutex);
 static DEFINE_SPINLOCK(pcd_lock);

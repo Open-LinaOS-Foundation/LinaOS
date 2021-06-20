@@ -6,19 +6,19 @@
 //  Copyright (C) 2009 Samsung Electronics
 //  Minkyu Kang <mk7.kang@samsung.com>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/power_supply.h>
-#include <linux/of_device.h>
-#include <linux/max17040_battery.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/mutex.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/power_supply.h>
+#include <linaos/of_device.h>
+#include <linaos/max17040_battery.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 #define MAX17040_VCELL	0x02
 #define MAX17040_SOC	0x04

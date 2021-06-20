@@ -7,7 +7,7 @@
 #ifndef SIGNAL_H
 #define SIGNAL_H
 
-#include <linux/signal.h>
+#include <linaos/signal.h>
 
 #include "system.h"
 

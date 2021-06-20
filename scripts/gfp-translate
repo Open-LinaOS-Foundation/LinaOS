@@ -41,10 +41,10 @@ done
 
 # Guess the kernel source directory if it's not set. Preference is in order of
 # o current directory
-# o /usr/src/linux
+# o /usr/src/linaos
 if [ "$SOURCE" = "" ]; then
-	if [ -r "/usr/src/linux/Makefile" ]; then
-		SOURCE=/usr/src/linux
+	if [ -r "/usr/src/linaos/Makefile" ]; then
+		SOURCE=/usr/src/linaos
 	fi
 	if [ -r "`pwd`/Makefile" ]; then
 		SOURCE=`pwd`
@@ -63,11 +63,11 @@ fi
 
 # Extract GFP flags from the kernel source
 TMPFILE=`mktemp -t gfptranslate-XXXXXX` || exit 1
-grep -q ___GFP $SOURCE/include/linux/gfp.h
+grep -q ___GFP $SOURCE/include/linaos/gfp.h
 if [ $? -eq 0 ]; then
-	grep "^#define ___GFP" $SOURCE/include/linux/gfp.h | sed -e 's/u$//' | grep -v GFP_BITS > $TMPFILE
+	grep "^#define ___GFP" $SOURCE/include/linaos/gfp.h | sed -e 's/u$//' | grep -v GFP_BITS > $TMPFILE
 else
-	grep "^#define __GFP" $SOURCE/include/linux/gfp.h | sed -e 's/(__force gfp_t)//' | sed -e 's/u)/)/' | grep -v GFP_BITS | sed -e 's/)\//) \//' > $TMPFILE
+	grep "^#define __GFP" $SOURCE/include/linaos/gfp.h | sed -e 's/(__force gfp_t)//' | sed -e 's/u)/)/' | grep -v GFP_BITS | sed -e 's/)\//) \//' > $TMPFILE
 fi
 
 # Parse the flags

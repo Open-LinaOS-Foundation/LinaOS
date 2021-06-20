@@ -18,8 +18,8 @@
  *   ADC3  <-  3rd PCM1804
  */
 
-#include <linux/pci.h>
-#include <linux/module.h>
+#include <linaos/pci.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/initval.h>

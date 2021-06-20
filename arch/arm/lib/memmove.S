@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/memmove.S
+ *  linaos/arch/arm/lib/memmove.S
  *
  *  Author:	Nicolas Pitre
  *  Created:	Sep 28, 2005
  *  Copyright:	(C) MontaVista Software Inc.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/unwind.h>
 

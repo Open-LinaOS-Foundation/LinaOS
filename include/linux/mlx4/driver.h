@@ -34,7 +34,7 @@
 #define MLX4_DRIVER_H
 
 #include <net/devlink.h>
-#include <linux/mlx4/device.h>
+#include <linaos/mlx4/device.h>
 
 struct mlx4_dev;
 

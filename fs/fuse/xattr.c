@@ -8,8 +8,8 @@
 
 #include "fuse_i.h"
 
-#include <linux/xattr.h>
-#include <linux/posix_acl_xattr.h>
+#include <linaos/xattr.h>
+#include <linaos/posix_acl_xattr.h>
 
 int fuse_setxattr(struct inode *inode, const char *name, const void *value,
 		  size_t size, int flags, unsigned int extra_flags)

@@ -12,7 +12,7 @@
 #include "cx18-irq.h"
 #include "cx18-firmware.h"
 #include "cx18-cards.h"
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 #define CX18_PROC_SOFT_RESET		0xc70010
 #define CX18_DDR_SOFT_RESET		0xc70014

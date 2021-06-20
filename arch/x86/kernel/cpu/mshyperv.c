@@ -6,18 +6,18 @@
  * Author : K. Y. Srinivasan <ksrinivasan@novell.com>
  */
 
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/hardirq.h>
-#include <linux/efi.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kexec.h>
-#include <linux/i8253.h>
-#include <linux/random.h>
+#include <linaos/types.h>
+#include <linaos/time.h>
+#include <linaos/clocksource.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/hardirq.h>
+#include <linaos/efi.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kexec.h>
+#include <linaos/i8253.h>
+#include <linaos/random.h>
 #include <asm/processor.h>
 #include <asm/hypervisor.h>
 #include <asm/hyperv-tlfs.h>
@@ -33,7 +33,7 @@
 #include <clocksource/hyperv_timer.h>
 #include <asm/numa.h>
 
-/* Is Linux running as the root partition? */
+/* Is LinaOS running as the root partition? */
 bool hv_root_partition;
 EXPORT_SYMBOL_GPL(hv_root_partition);
 
@@ -283,7 +283,7 @@ static void __init ms_hyperv_init_platform(void)
 	 * Check CPU management privilege.
 	 *
 	 * To mirror what Windows does we should extract CPU management
-	 * features and use the ReservedIdentityBit to detect if Linux is the
+	 * features and use the ReservedIdentityBit to detect if LinaOS is the
 	 * root partition. But that requires negotiating CPU management
 	 * interface (a process to be finalized).
 	 *

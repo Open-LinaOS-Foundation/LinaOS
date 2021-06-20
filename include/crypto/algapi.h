@@ -7,9 +7,9 @@
 #ifndef _CRYPTO_ALGAPI_H
 #define _CRYPTO_ALGAPI_H
 
-#include <linux/crypto.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
+#include <linaos/crypto.h>
+#include <linaos/list.h>
+#include <linaos/kernel.h>
 
 /*
  * Maximum values for blocksize and alignmask, used to allocate

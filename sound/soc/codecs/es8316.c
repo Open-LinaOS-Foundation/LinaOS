@@ -7,14 +7,14 @@
  *          Daniel Drake <drake@endlessm.com>
  */
 
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/mutex.h>
+#include <linaos/regmap.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

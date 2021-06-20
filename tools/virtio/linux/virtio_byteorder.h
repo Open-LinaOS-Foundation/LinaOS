@@ -3,7 +3,7 @@
 #define _LINUX_VIRTIO_BYTEORDER_STUB_H
 
 #include <asm/byteorder.h>
-#include "../../include/linux/byteorder/generic.h"
-#include "../../include/linux/virtio_byteorder.h"
+#include "../../include/linaos/byteorder/generic.h"
+#include "../../include/linaos/virtio_byteorder.h"
 
 #endif

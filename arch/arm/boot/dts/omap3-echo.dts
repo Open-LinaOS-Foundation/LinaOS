@@ -65,14 +65,14 @@
 
 		mute-button {
 			label = "mute";
-			linux,code = <KEY_MUTE>;
+			linaos,code = <KEY_MUTE>;
 			gpios = <&gpio3 6 GPIO_ACTIVE_LOW>;	/* GPIO_70 */
 			wakeup-source;
 		};
 
 		help-button {
 			label = "help";
-			linux,code = <KEY_HELP>;
+			linaos,code = <KEY_HELP>;
 			gpios = <&gpio3 8 GPIO_ACTIVE_LOW>;	/* GPIO_72 */
 			wakeup-source;
 		};
@@ -84,7 +84,7 @@
 			&gpio3  5 GPIO_ACTIVE_HIGH /* GPIO_69 */
 			&gpio3 12 GPIO_ACTIVE_HIGH /* GPIO_76 */
 		>;
-		linux,axis = <REL_X>;
+		linaos,axis = <REL_X>;
 		rotary-encoder,relative-axis;
 	};
 

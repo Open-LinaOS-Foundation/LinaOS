@@ -1,4 +1,4 @@
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2002-2004 H. Peter Anvin - All Rights Reserved
  *
@@ -22,7 +22,7 @@
  * bracked this with preempt_disable/enable or in a lock)
  */
 
-#include <linux/raid/pq.h>
+#include <linaos/raid/pq.h>
 
 #ifdef CONFIG_ALTIVEC
 

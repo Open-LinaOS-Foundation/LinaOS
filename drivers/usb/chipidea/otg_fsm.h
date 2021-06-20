@@ -8,7 +8,7 @@
 #ifndef __DRIVERS_USB_CHIPIDEA_OTG_FSM_H
 #define __DRIVERS_USB_CHIPIDEA_OTG_FSM_H
 
-#include <linux/usb/otg-fsm.h>
+#include <linaos/usb/otg-fsm.h>
 
 /*
  *  A-DEVICE timing  constants

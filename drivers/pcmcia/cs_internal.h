@@ -17,7 +17,7 @@
 #ifndef _LINUX_CS_INTERNAL_H
 #define _LINUX_CS_INTERNAL_H
 
-#include <linux/kref.h>
+#include <linaos/kref.h>
 
 /* Flags in client state */
 #define CLIENT_WIN_REQ(i)	(0x1<<(i))

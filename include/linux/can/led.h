@@ -6,9 +6,9 @@
 #ifndef _CAN_LED_H
 #define _CAN_LED_H
 
-#include <linux/if.h>
-#include <linux/leds.h>
-#include <linux/netdevice.h>
+#include <linaos/if.h>
+#include <linaos/leds.h>
+#include <linaos/netdevice.h>
 
 enum can_led_event {
 	CAN_LED_EVENT_OPEN,

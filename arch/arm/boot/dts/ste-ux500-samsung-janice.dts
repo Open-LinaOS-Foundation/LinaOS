@@ -163,19 +163,19 @@
 		pinctrl-0 = <&gpio_keys_default_mode>;
 
 		button-home {
-			linux,code = <KEY_HOME>;
+			linaos,code = <KEY_HOME>;
 			label = "HOME";
 			/* GPIO91 */
 			gpios = <&gpio2 27 GPIO_ACTIVE_LOW>;
 		};
 		button-volup {
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			label = "VOL+";
 			/* GPIO67 */
 			gpios = <&gpio2 3 GPIO_ACTIVE_LOW>;
 		};
 		button-voldown {
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			label = "VOL-";
 			/* GPIO92 */
 			gpios = <&gpio2 28 GPIO_ACTIVE_LOW>;
@@ -314,7 +314,7 @@
 
 			pinctrl-names = "default";
 			pinctrl-0 = <&touchkey_default_mode>;
-			linux,keycodes = <KEY_MENU KEY_BACK>;
+			linaos,keycodes = <KEY_MENU KEY_BACK>;
 		};
 	};
 

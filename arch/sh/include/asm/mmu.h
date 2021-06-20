@@ -34,8 +34,8 @@
 #define PMB_NO_ENTRY		(-1)
 
 #ifndef __ASSEMBLY__
-#include <linux/errno.h>
-#include <linux/threads.h>
+#include <linaos/errno.h>
+#include <linaos/threads.h>
 #include <asm/page.h>
 
 /* Default "unsigned long" context */

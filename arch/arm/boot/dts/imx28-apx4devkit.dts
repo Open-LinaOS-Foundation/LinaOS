@@ -234,7 +234,7 @@
 		user {
 			label = "Heartbeat";
 			gpios = <&gpio3 28 0>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 };

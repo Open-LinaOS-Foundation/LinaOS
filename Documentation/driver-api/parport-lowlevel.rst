@@ -108,7 +108,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_driver {
 		const char *name;
@@ -247,7 +247,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_driver {
 		const char *name;
@@ -296,7 +296,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport *parport_enumerate (void);
 
@@ -362,7 +362,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	typedef int (*preempt_func) (void *handle);
 	typedef void (*wakeup_func) (void *handle);
@@ -504,7 +504,7 @@ SYNPOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	void parport_unregister_device (struct pardevice *dev);
 
@@ -541,7 +541,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	int parport_claim (struct pardevice *dev);
 	int parport_claim_or_block (struct pardevice *dev);
@@ -587,7 +587,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	void parport_release (struct pardevice *dev);
 
@@ -629,7 +629,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	int parport_yield (struct pardevice *dev)
 	int parport_yield_blocking (struct pardevice *dev);
@@ -675,7 +675,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	int parport_wait_peripheral (struct parport *port,
 				     unsigned char mask,
@@ -710,7 +710,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	int parport_poll_peripheral (struct parport *port,
 				     unsigned char mask,
@@ -746,7 +746,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	int parport_wait_event (struct parport *port, signed long timeout)
 
@@ -773,7 +773,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	int parport_negotiate (struct parport *, int mode);
 
@@ -807,7 +807,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	ssize_t parport_read (struct parport *, void *buf, size_t len);
 
@@ -837,7 +837,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	ssize_t parport_write (struct parport *, const void *buf, size_t len);
 
@@ -867,7 +867,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct pardevice *parport_open (int devnum, const char *name,
 				        int (*pf) (void *),
@@ -903,7 +903,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	void parport_close (struct pardevice *dev);
 
@@ -927,7 +927,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	ssize_t parport_device_id (int devnum, char *buffer, size_t len);
 
@@ -971,7 +971,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	int parport_device_coords (int devnum, int *parport, int *mux,
 				   int *daisy);
@@ -1003,7 +1003,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	typedef enum {
 		PARPORT_CLASS_LEGACY = 0,       /* Non-IEEE1284 device */
@@ -1061,7 +1061,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	int parport_find_device (const char *mfg, const char *mdl, int from);
 
@@ -1103,7 +1103,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	long parport_set_timeout (struct pardevice *dev, long inactivity);
 
@@ -1156,7 +1156,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1189,7 +1189,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1218,7 +1218,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1254,7 +1254,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1283,7 +1283,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1320,7 +1320,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1356,7 +1356,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1387,7 +1387,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1416,7 +1416,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1445,7 +1445,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1474,7 +1474,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1512,7 +1512,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1550,7 +1550,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1590,7 +1590,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1630,7 +1630,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1664,7 +1664,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1699,7 +1699,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1738,7 +1738,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1772,7 +1772,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...
@@ -1806,7 +1806,7 @@ SYNOPSIS
 
 ::
 
-	#include <linux/parport.h>
+	#include <linaos/parport.h>
 
 	struct parport_operations {
 		...

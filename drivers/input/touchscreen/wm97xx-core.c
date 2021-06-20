@@ -7,7 +7,7 @@
  * Author: Liam Girdwood <lrg@slimlogic.co.uk>
  * Parts Copyright : Ian Molton <spyro@f2s.com>
  *                   Andrew Zabolotny <zap@homelink.ru>
- *                   Russell King <rmk@arm.linux.org.uk>
+ *                   Russell King <rmk@arm.linaos.org.uk>
  *
  * Notes:
  *
@@ -29,22 +29,22 @@
  *       - Support for async sampling control for noisy LCDs.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/proc_fs.h>
-#include <linux/pm.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/mfd/wm97xx.h>
-#include <linux/workqueue.h>
-#include <linux/wm97xx.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/proc_fs.h>
+#include <linaos/pm.h>
+#include <linaos/interrupt.h>
+#include <linaos/bitops.h>
+#include <linaos/mfd/wm97xx.h>
+#include <linaos/workqueue.h>
+#include <linaos/wm97xx.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
 #define TS_NAME			"wm97xx"
 #define WM_CORE_VERSION		"1.00"

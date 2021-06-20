@@ -7,15 +7,15 @@
 #ifndef _MTK_IOMMU_H_
 #define _MTK_IOMMU_H_
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/io-pgtable.h>
-#include <linux/iommu.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/io-pgtable.h>
+#include <linaos/iommu.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/dma-mapping.h>
 #include <soc/mediatek/smi.h>
 #include <dt-bindings/memory/mtk-memory-port.h>
 

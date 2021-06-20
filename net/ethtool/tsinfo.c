@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/net_tstamp.h>
+#include <linaos/net_tstamp.h>
 
 #include "netlink.h"
 #include "common.h"

@@ -9,11 +9,11 @@
  *	Andrew F. Davis <afd@ti.com>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/property.h>
 
 /**
  * struct pca9570 - GPIO driver data

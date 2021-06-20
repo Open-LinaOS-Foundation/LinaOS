@@ -5,10 +5,10 @@
  * Generic Hardware Error Source provides a way to report platform
  * hardware errors (such as that from chipset). It works in so called
  * "Firmware First" mode, that is, hardware errors are reported to
- * firmware firstly, then reported to Linux by firmware. This way,
+ * firmware firstly, then reported to LinaOS by firmware. This way,
  * some non-standard hardware error registers or non-standard hardware
  * link can be checked by firmware to produce more hardware error
- * information for Linux.
+ * information for LinaOS.
  *
  * For more information about Generic Hardware Error Source, please
  * refer to ACPI Specification version 4.0, section 17.3.2.6
@@ -17,30 +17,30 @@
  *   Author: Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/arm_sdei.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/cper.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/ratelimit.h>
-#include <linux/vmalloc.h>
-#include <linux/irq_work.h>
-#include <linux/llist.h>
-#include <linux/genalloc.h>
-#include <linux/pci.h>
-#include <linux/pfn.h>
-#include <linux/aer.h>
-#include <linux/nmi.h>
-#include <linux/sched/clock.h>
-#include <linux/uuid.h>
-#include <linux/ras.h>
-#include <linux/task_work.h>
+#include <linaos/arm_sdei.h>
+#include <linaos/kernel.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/timer.h>
+#include <linaos/cper.h>
+#include <linaos/platform_device.h>
+#include <linaos/mutex.h>
+#include <linaos/ratelimit.h>
+#include <linaos/vmalloc.h>
+#include <linaos/irq_work.h>
+#include <linaos/llist.h>
+#include <linaos/genalloc.h>
+#include <linaos/pci.h>
+#include <linaos/pfn.h>
+#include <linaos/aer.h>
+#include <linaos/nmi.h>
+#include <linaos/sched/clock.h>
+#include <linaos/uuid.h>
+#include <linaos/ras.h>
+#include <linaos/task_work.h>
 
 #include <acpi/actbl1.h>
 #include <acpi/ghes.h>
@@ -120,7 +120,7 @@ static DEFINE_MUTEX(ghes_list_mutex);
 
 /*
  * Because the memory area used to transfer hardware error information
- * from BIOS to Linux can be determined only in NMI, IRQ or timer
+ * from BIOS to LinaOS can be determined only in NMI, IRQ or timer
  * handler, but general ioremap can not be used in atomic context, so
  * the fixmap is used instead.
  *

@@ -10,13 +10,13 @@
 //   Author: Shadi Ammouri <shadi@marvell.com>
 //   Copyright (C) 2007-2008 Marvell Ltd.
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/reset.h>
-#include <linux/spi/spi.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/reset.h>
+#include <linaos/spi/spi.h>
 
 #define DRIVER_NAME		"spi-mt7621"
 

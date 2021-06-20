@@ -9,12 +9,12 @@
  * Copyright 2017	Intel Deutschland GmbH
  */
 
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/wireless.h>
-#include <linux/export.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/wireless.h>
+#include <linaos/export.h>
 #include <net/iw_handler.h>
 #include <net/cfg80211.h>
 #include <net/rtnetlink.h>

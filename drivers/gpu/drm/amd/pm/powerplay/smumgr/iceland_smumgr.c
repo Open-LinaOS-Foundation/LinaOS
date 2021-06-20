@@ -23,11 +23,11 @@
  *
  */
 #include "pp_debug.h"
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/gfp.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/gfp.h>
 
 #include "smumgr.h"
 #include "iceland_smumgr.h"

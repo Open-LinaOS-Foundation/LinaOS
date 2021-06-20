@@ -4,7 +4,7 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/dma-fence.h>
+#include <linaos/dma-fence.h>
 
 #include "msm_drv.h"
 #include "msm_fence.h"

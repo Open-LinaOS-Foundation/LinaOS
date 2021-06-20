@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH LinaOS-syscall-note */
 /*
  * osd.h - DEPRECATED On Screen Display API
  *
@@ -27,7 +27,7 @@
 #ifndef _DVBOSD_H_
 #define _DVBOSD_H_
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 typedef enum {
 	/* All functions return -2 on "not open" */

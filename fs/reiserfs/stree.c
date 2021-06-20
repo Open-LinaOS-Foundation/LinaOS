@@ -8,13 +8,13 @@
  *  Pereslavl-Zalessky Russia
  */
 
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/bio.h>
+#include <linaos/time.h>
+#include <linaos/string.h>
+#include <linaos/pagemap.h>
+#include <linaos/bio.h>
 #include "reiserfs.h"
-#include <linux/buffer_head.h>
-#include <linux/quotaops.h>
+#include <linaos/buffer_head.h>
+#include <linaos/quotaops.h>
 
 /* Does the buffer contain a disk block which is in the tree. */
 inline int B_IS_IN_TREE(const struct buffer_head *bh)

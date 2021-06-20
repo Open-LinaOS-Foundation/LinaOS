@@ -28,7 +28,7 @@
  *  Ben Skeggs <bskeggs@redhat.com>
  */
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 #include <nvif/class.h>
 #include <nvif/if0001.h>
 #include "nouveau_debugfs.h"

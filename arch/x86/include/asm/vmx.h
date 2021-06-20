@@ -12,8 +12,8 @@
 #define VMX_H
 
 
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/types.h>
 #include <uapi/asm/vmx.h>
 #include <asm/vmxfeatures.h>
 

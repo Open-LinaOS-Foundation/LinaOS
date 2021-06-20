@@ -2,18 +2,18 @@
 #ifndef __LINUX_NETFILTER_H
 #define __LINUX_NETFILTER_H
 
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/net.h>
-#include <linux/if.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/static_key.h>
-#include <linux/netfilter_defs.h>
-#include <linux/netdevice.h>
-#include <linux/sockptr.h>
+#include <linaos/init.h>
+#include <linaos/skbuff.h>
+#include <linaos/net.h>
+#include <linaos/if.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/wait.h>
+#include <linaos/list.h>
+#include <linaos/static_key.h>
+#include <linaos/netfilter_defs.h>
+#include <linaos/netdevice.h>
+#include <linaos/sockptr.h>
 #include <net/net_namespace.h>
 
 static inline int NF_DROP_GETERR(int verdict)
@@ -432,7 +432,7 @@ nf_nat_decode_session(struct sk_buff *skb, struct flowi *fl, u_int8_t family)
 #endif /*CONFIG_NETFILTER*/
 
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
-#include <linux/netfilter/nf_conntrack_zones_common.h>
+#include <linaos/netfilter/nf_conntrack_zones_common.h>
 
 extern void (*ip_ct_attach)(struct sk_buff *, const struct sk_buff *) __rcu;
 void nf_ct_attach(struct sk_buff *, const struct sk_buff *);

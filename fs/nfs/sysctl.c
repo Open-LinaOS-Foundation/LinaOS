@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/nfs/sysctl.c
+ * linaos/fs/nfs/sysctl.c
  *
  * Sysctl interface to NFS parameters
  */
-#include <linux/types.h>
-#include <linux/linkage.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
-#include <linux/nfs_fs.h>
+#include <linaos/types.h>
+#include <linaos/linkage.h>
+#include <linaos/ctype.h>
+#include <linaos/fs.h>
+#include <linaos/sysctl.h>
+#include <linaos/module.h>
+#include <linaos/nfs_fs.h>
 
 static struct ctl_table_header *nfs_callback_sysctl_table;
 

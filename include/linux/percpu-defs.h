@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/percpu-defs.h - basic definitions for percpu areas
+ * linaos/percpu-defs.h - basic definitions for percpu areas
  *
  * DO NOT INCLUDE DIRECTLY OUTSIDE PERCPU IMPLEMENTATION PROPER.
  *
- * This file is separate from linux/percpu.h to avoid cyclic inclusion
+ * This file is separate from linaos/percpu.h to avoid cyclic inclusion
  * dependency from arch header files.  Only to be included from
  * asm/percpu.h.
  *
@@ -384,7 +384,7 @@ do {									\
 } while (0)
 
 /*
- * this_cpu operations (C) 2008-2013 Christoph Lameter <cl@linux.com>
+ * this_cpu operations (C) 2008-2013 Christoph Lameter <cl@linaos.com>
  *
  * Optimized manipulation for memory allocated through the per cpu
  * allocator or for addresses of per cpu variables.

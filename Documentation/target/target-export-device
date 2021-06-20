@@ -30,7 +30,7 @@ shift $(($OPTIND - 1))
 DEVICE=$1
 [ -n "$DEVICE" ] || die "Missing device or file argument"
 [ -b $DEVICE -o -f $DEVICE ] || die "Invalid device or file: ${DEVICE}"
-IQN="iqn.2003-01.org.linux-iscsi.$(hostname):$(basename $DEVICE)"
+IQN="iqn.2003-01.org.linaos-iscsi.$(hostname):$(basename $DEVICE)"
 [ -n "$PORTAL" ] || PORTAL="0.0.0.0:3260"
 
 CONFIGFS=/sys/kernel/config

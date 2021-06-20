@@ -6,9 +6,9 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/errno.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/errno.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 #include <asm/assembler.h>
 #include <asm/cpufeature.h>
 #include <asm/alternative.h>

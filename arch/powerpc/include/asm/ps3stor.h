@@ -9,7 +9,7 @@
 #ifndef _ASM_POWERPC_PS3STOR_H_
 #define _ASM_POWERPC_PS3STOR_H_
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #include <asm/ps3.h>
 

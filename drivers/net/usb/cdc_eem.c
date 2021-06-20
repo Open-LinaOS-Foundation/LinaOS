@@ -5,19 +5,19 @@
  * by Omar Laazimani, Olivier Condemine
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ctype.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/crc32.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
-#include <linux/gfp.h>
-#include <linux/if_vlan.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ctype.h>
+#include <linaos/ethtool.h>
+#include <linaos/workqueue.h>
+#include <linaos/mii.h>
+#include <linaos/usb.h>
+#include <linaos/crc32.h>
+#include <linaos/usb/cdc.h>
+#include <linaos/usb/usbnet.h>
+#include <linaos/gfp.h>
+#include <linaos/if_vlan.h>
 
 
 /*

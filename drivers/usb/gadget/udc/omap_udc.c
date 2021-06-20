@@ -11,35 +11,35 @@
 #undef	DEBUG
 #undef	VERBOSE
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/prefetch.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/ioport.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/proc_fs.h>
+#include <linaos/mm.h>
+#include <linaos/moduleparam.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/otg.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/prefetch.h>
+#include <linaos/io.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>
 #include <asm/unaligned.h>
 #include <asm/mach-types.h>
 
-#include <linux/omap-dma.h>
+#include <linaos/omap-dma.h>
 
 #include <mach/usb.h>
 
@@ -2131,7 +2131,7 @@ static int omap_udc_stop(struct usb_gadget *g)
 
 #ifdef CONFIG_USB_GADGET_DEBUG_FILES
 
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 
 static const char proc_filename[] = "driver/udc";
 

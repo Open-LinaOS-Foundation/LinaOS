@@ -13,11 +13,11 @@
  * When we get generic panel drivers to the kernel, this file will be removed.
  */
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/slab.h>
-#include <linux/list.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_graph.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
 
 static struct list_head dss_conv_list __initdata;
 

@@ -7,15 +7,15 @@
  * Author: David Dajun Chen <dchen@diasemi.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/leds.h>
+#include <linaos/slab.h>
 
-#include <linux/mfd/da9052/reg.h>
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/pdata.h>
+#include <linaos/mfd/da9052/reg.h>
+#include <linaos/mfd/da9052/da9052.h>
+#include <linaos/mfd/da9052/pdata.h>
 
 #define DA9052_OPENDRAIN_OUTPUT	2
 #define DA9052_SET_HIGH_LVL_OUTPUT	(1 << 3)

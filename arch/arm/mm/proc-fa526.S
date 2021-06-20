@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/arch/arm/mm/proc-fa526.S: MMU functions for FA526
+ *  linaos/arch/arm/mm/proc-fa526.S: MMU functions for FA526
  *
  *  Written by : Luke Lee
  *  Copyright (C) 2005 Faraday Corp.
@@ -9,9 +9,9 @@
  * These are the low level assembler for performing cache and TLB
  * functions on the fa526.
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable-hwdef.h>

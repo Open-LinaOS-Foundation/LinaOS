@@ -28,20 +28,20 @@
 
 
 #include <asm/delay.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/if_arp.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
-#include <linux/rtnetlink.h>
-#include <linux/wireless.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/if_arp.h>
+#include <linaos/delay.h>
+#include <linaos/random.h>
+#include <linaos/wait.h>
+#include <linaos/sched/signal.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/wireless.h>
 #include <net/iw_handler.h>
 #include <net/lib80211.h>
 #include <asm/irq.h>

@@ -5,12 +5,12 @@
  * Copyright 2020 Kamlesh Gurudasani <kamlesh.gurudasani@gmail.com>
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
+#include <linaos/backlight.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/property.h>
+#include <linaos/spi/spi.h>
 
 #include <video/mipi_display.h>
 

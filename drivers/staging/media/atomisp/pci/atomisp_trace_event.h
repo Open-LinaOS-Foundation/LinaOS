@@ -21,8 +21,8 @@
 #if !defined(ATOMISP_TRACE_EVENT_H) || defined(TRACE_HEADER_MULTI_READ)
 #define ATOMISP_TRACE_EVENT_H
 
-#include <linux/tracepoint.h>
-#include <linux/string.h>
+#include <linaos/tracepoint.h>
+#include <linaos/string.h>
 TRACE_EVENT(camera_meminfo,
 
 	    TP_PROTO(const char *name, int uptr_size, int counter, int sys_size,

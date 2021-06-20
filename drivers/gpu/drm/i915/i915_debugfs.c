@@ -26,8 +26,8 @@
  *
  */
 
-#include <linux/sched/mm.h>
-#include <linux/sort.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sort.h>
 
 #include <drm/drm_debugfs.h>
 

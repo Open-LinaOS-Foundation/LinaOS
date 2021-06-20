@@ -8,17 +8,17 @@
  * Based on the DA8xx "glue layer" code.
  * Copyright (c) 2008-2009, MontaVista Software, Inc. <source@mvista.com>
  *
- * This file is part of the Inventra Controller Driver for Linux.
+ * This file is part of the Inventra Controller Driver for LinaOS.
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb/usb_phy_generic.h>
-#include <linux/platform_data/usb-omap.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/usb/usb_phy_generic.h>
+#include <linaos/platform_data/usb-omap.h>
 
 #include "musb_core.h"
 

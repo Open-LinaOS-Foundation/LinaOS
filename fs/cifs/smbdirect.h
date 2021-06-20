@@ -13,7 +13,7 @@
 #include "cifsglob.h"
 #include <rdma/ib_verbs.h>
 #include <rdma/rdma_cm.h>
-#include <linux/mempool.h>
+#include <linaos/mempool.h>
 
 extern int rdma_readwrite_threshold;
 extern int smbd_max_frmr_depth;

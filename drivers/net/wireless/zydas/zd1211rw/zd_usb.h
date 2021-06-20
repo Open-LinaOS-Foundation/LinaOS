@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-/* ZD1211 USB-WLAN driver for Linux
+/* ZD1211 USB-WLAN driver for LinaOS
  *
  * Copyright (C) 2005-2007 Ulrich Kunitz <kune@deine-taler.de>
  * Copyright (C) 2006-2007 Daniel Drake <dsd@gentoo.org>
@@ -8,11 +8,11 @@
 #ifndef _ZD_USB_H
 #define _ZD_USB_H
 
-#include <linux/completion.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/usb.h>
+#include <linaos/completion.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/skbuff.h>
+#include <linaos/usb.h>
 
 #include "zd_def.h"
 

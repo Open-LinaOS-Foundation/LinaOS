@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Modified 1999
  *	David Mosberger-Tang <davidm@hpl.hp.com>, Hewlett-Packard Co

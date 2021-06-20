@@ -29,7 +29,7 @@
 #include <drm/drm_file.h>
 #include <drm/drm_sysfs.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "drm_crtc_internal.h"
 #include "drm_internal.h"
@@ -787,7 +787,7 @@ static const struct drm_prop_enum_list drm_link_status_enum_list[] = {
  * @num_formats: the number of entries in the fmts array
  *
  * Store the supported bus formats in display info structure.
- * See MEDIA_BUS_FMT_* definitions in include/uapi/linux/media-bus-format.h for
+ * See MEDIA_BUS_FMT_* definitions in include/uapi/linaos/media-bus-format.h for
  * a full list of available formats.
  */
 int drm_display_info_set_bus_formats(struct drm_display_info *info,

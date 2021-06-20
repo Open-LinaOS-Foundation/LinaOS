@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * omap3isp.h
  *
@@ -28,8 +28,8 @@
 #ifndef OMAP3_ISP_USER_H
 #define OMAP3_ISP_USER_H
 
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
 
 /*
  * Private IOCTLs

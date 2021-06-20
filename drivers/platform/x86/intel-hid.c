@@ -6,14 +6,14 @@
  *  Copyright (C) 2015 Andrew Lutomirski <luto@kernel.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/suspend.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
+#include <linaos/input.h>
+#include <linaos/input/sparse-keymap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/suspend.h>
 
 /* When NOT in tablet mode, VGBS returns with the flag 0x40 */
 #define TABLET_MODE_FLAG BIT(6)
@@ -458,7 +458,7 @@ static void notify_handler(acpi_handle handle, u32 event, void *context)
 	 * firmware know if the 2-in-1 is in tablet- or laptop-mode so that it can
 	 * disable the kbd and touchpad to avoid spurious input in tablet-mode.
 	 *
-	 * The linux kxcjk1013 driver calls the DSM for this once at probe time
+	 * The linaos kxcjk1013 driver calls the DSM for this once at probe time
 	 * to ensure that the builtin kbd and touchpad work. On some devices this
 	 * causes a "spurious" 0xcd event on the intel-hid ACPI dev. In this case
 	 * there is not a functional tablet-mode switch, so we should not register

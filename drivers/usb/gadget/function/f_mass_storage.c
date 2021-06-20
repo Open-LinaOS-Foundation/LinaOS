@@ -198,31 +198,31 @@
 /* #define VERBOSE_DEBUG */
 /* #define DUMP_MSGS */
 
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/dcache.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/fcntl.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/kthread.h>
-#include <linux/sched/signal.h>
-#include <linux/limits.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/freezer.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linaos/blkdev.h>
+#include <linaos/completion.h>
+#include <linaos/dcache.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/fcntl.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/kthread.h>
+#include <linaos/sched/signal.h>
+#include <linaos/limits.h>
+#include <linaos/rwsem.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/freezer.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
 #include <asm/unaligned.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/composite.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/composite.h>
 
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
 #include "configfs.h"
 
@@ -2852,7 +2852,7 @@ void fsg_common_set_inquiry_string(struct fsg_common *common, const char *vn,
 	/* Prepare inquiryString */
 	i = get_default_bcdDevice();
 	snprintf(common->inquiry_string, sizeof(common->inquiry_string),
-		 "%-8s%-16s%04x", vn ?: "Linux",
+		 "%-8s%-16s%04x", vn ?: "LinaOS",
 		 /* Assume product name dependent on the first LUN */
 		 pn ?: ((*common->luns)->cdrom
 		     ? "File-CD Gadget"

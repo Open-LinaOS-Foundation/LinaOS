@@ -3,8 +3,8 @@
 #define _LINUX_BUG_H
 
 #include <asm/bug.h>
-#include <linux/compiler.h>
-#include <linux/build_bug.h>
+#include <linaos/compiler.h>
+#include <linaos/build_bug.h>
 
 enum bug_trap_type {
 	BUG_TRAP_TYPE_NONE = 0,

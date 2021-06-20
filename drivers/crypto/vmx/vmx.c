@@ -7,12 +7,12 @@
  * Author: Marcelo Henrique Cerri <mhcerri@br.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/cpufeature.h>
-#include <linux/crypto.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/err.h>
+#include <linaos/cpufeature.h>
+#include <linaos/crypto.h>
 #include <asm/cputable.h>
 #include <crypto/internal/hash.h>
 #include <crypto/internal/skcipher.h>

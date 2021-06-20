@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Copyright The Asahi Linux Contributors
+ * Copyright The Asahi LinaOS Contributors
  *
  * Based on irq-lpc32xx:
  *   Copyright 2015-2016 Vladimir Zapolskiy <vz@mleia.com>
@@ -31,7 +31,7 @@
  *
  * - This driver creates two IRQ domains, one for HW IRQs and internal FIQs,
  *   and one for IPIs.
- * - Since Linux needs more than 2 IPIs, we implement a software IRQ controller
+ * - Since LinaOS needs more than 2 IPIs, we implement a software IRQ controller
  *   and funnel all IPIs into one per-CPU IPI (the second "self" IPI is unused).
  * - FIQ hwirq numbers are assigned after true hwirqs, and are per-cpu.
  * - DT bindings use 3-cell form (like GIC):
@@ -45,15 +45,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/cpuhotplug.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/limits.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <linaos/bits.h>
+#include <linaos/bitfield.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/io.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqdomain.h>
+#include <linaos/limits.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
 #include <asm/exception.h>
 #include <asm/sysreg.h>
 #include <asm/virt.h>

@@ -3,7 +3,7 @@
  *  ahci.h - Common AHCI SATA definitions and declarations
  *
  *  Maintained by:  Tejun Heo <tj@kernel.org>
- *    		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *    		    Please ALWAYS copy linaos-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2004-2005 Red Hat, Inc.
@@ -19,11 +19,11 @@
 #ifndef _AHCI_H
 #define _AHCI_H
 
-#include <linux/pci.h>
-#include <linux/clk.h>
-#include <linux/libata.h>
-#include <linux/phy/phy.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/pci.h>
+#include <linaos/clk.h>
+#include <linaos/libata.h>
+#include <linaos/phy/phy.h>
+#include <linaos/regulator/consumer.h>
 
 /* Enclosure Management Control */
 #define EM_CTRL_MSG_TYPE              0x000f0000

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: (GPL-2.0 OR BSD-3-Clause)
 // Copyright(c) 2015-17 Intel Corporation.
 
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
+#include <linaos/acpi.h>
+#include <linaos/of.h>
+#include <linaos/soundwire/sdw.h>
+#include <linaos/soundwire/sdw_type.h>
 #include "bus.h"
 #include "sysfs_local.h"
 

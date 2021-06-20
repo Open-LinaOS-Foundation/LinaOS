@@ -39,7 +39,7 @@
 #define COMPAT_HWCAP2_CRC32	(1 << 4)
 
 #ifndef __ASSEMBLY__
-#include <linux/log2.h>
+#include <linaos/log2.h>
 
 /*
  * For userspace we represent hwcaps as a collection of HWCAP{,2}_x bitfields

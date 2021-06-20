@@ -3,7 +3,7 @@
  * Hypervisor Maintenance Interrupt header file.
  *
  * Copyright 2015 IBM Corporation
- * Author: Mahesh Salgaonkar <mahesh@linux.vnet.ibm.com>
+ * Author: Mahesh Salgaonkar <mahesh@linaos.vnet.ibm.com>
  */
 
 #ifndef __ASM_PPC64_HMI_H__

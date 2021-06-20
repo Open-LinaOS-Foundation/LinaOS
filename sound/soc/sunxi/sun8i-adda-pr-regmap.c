@@ -7,10 +7,10 @@
  * Copyright (C) 2018 Vasily Khoruzhick <anarsoul@gmail.com>
  */
 
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 
 #include "sun8i-adda-pr-regmap.h"
 

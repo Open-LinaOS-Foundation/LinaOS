@@ -3,19 +3,19 @@
  * VFIO ZPCI devices support
  *
  * Copyright (C) IBM Corp. 2020.  All rights reserved.
- *	Author(s): Pierre Morel <pmorel@linux.ibm.com>
- *                 Matthew Rosato <mjrosato@linux.ibm.com>
+ *	Author(s): Pierre Morel <pmorel@linaos.ibm.com>
+ *                 Matthew Rosato <mjrosato@linaos.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  *
  */
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
-#include <linux/vfio_zdev.h>
+#include <linaos/io.h>
+#include <linaos/pci.h>
+#include <linaos/uaccess.h>
+#include <linaos/vfio.h>
+#include <linaos/vfio_zdev.h>
 #include <asm/pci_clp.h>
 #include <asm/pci_io.h>
 

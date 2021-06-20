@@ -13,14 +13,14 @@
  * any later version.
  */
 
-#include <linux/acpi.h>
-#include <linux/hid.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeup.h>
+#include <linaos/acpi.h>
+#include <linaos/hid.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_proto.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_wakeup.h>
 #include <asm/unaligned.h>
 
 #include "hid-ids.h"

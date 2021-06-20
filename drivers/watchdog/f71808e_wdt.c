@@ -8,18 +8,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/uaccess.h>
-#include <linux/watchdog.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/uaccess.h>
+#include <linaos/watchdog.h>
 
 #define DRVNAME "f71808e_wdt"
 

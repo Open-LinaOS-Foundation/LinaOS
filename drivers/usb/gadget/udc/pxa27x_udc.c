@@ -5,31 +5,31 @@
  * Inspired by original driver by Frank Becker, David Brownell, and others.
  * Copyright (C) 2008 Robert Jarzmik
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
-#include <linux/byteorder/generic.h>
-#include <linux/platform_data/pxa2xx_udc.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/proc_fs.h>
+#include <linaos/clk.h>
+#include <linaos/irq.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/prefetch.h>
+#include <linaos/byteorder/generic.h>
+#include <linaos/platform_data/pxa2xx_udc.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
 
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/phy.h>
+#include <linaos/usb.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/phy.h>
 
 #include "pxa27x_udc.h"
 
@@ -83,9 +83,9 @@ static void handle_ep(struct pxa_ep *ep);
  */
 #ifdef CONFIG_USB_GADGET_DEBUG_FS
 
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/uaccess.h>
+#include <linaos/seq_file.h>
 
 static int state_dbg_show(struct seq_file *s, void *p)
 {

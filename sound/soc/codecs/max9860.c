@@ -10,14 +10,14 @@
 // Author: Peter Rosin <peda@axentia.s>
 //         Copyright 2016 Axentia Technologies
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/i2c.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/regulator/consumer.h>
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
 #include <sound/pcm_params.h>

@@ -6,7 +6,7 @@
  * Copyright 2017, Michael Ellerman, IBM Corporation.
  */
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 extern struct dentry *powerpc_debugfs_root;
 

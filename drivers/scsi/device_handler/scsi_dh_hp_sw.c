@@ -8,8 +8,8 @@
  * Copyright (C) 2008 Hannes Reinecke <hare@suse.de>
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_dbg.h>
 #include <scsi/scsi_eh.h>

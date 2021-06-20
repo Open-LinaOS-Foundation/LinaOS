@@ -6,7 +6,7 @@
 #endif
 
 /*
- * include/linux/spinlock_types_up.h - spinlock type definitions for UP
+ * include/linaos/spinlock_types_up.h - spinlock type definitions for UP
  *
  * portions Copyright 2005, Red Hat, Inc., Ingo Molnar
  * Released under the General Public License (GPL).

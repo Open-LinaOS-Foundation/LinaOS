@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/div64.S
+ *  linaos/arch/arm/lib/div64.S
  *
  *  Optimized computation of 64-bit dividend / 32-bit divisor
  *
@@ -9,7 +9,7 @@
  *  Copyright:	Monta Vista Software, Inc.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/unwind.h>
 

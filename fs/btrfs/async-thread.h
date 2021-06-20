@@ -7,7 +7,7 @@
 #ifndef BTRFS_ASYNC_THREAD_H
 #define BTRFS_ASYNC_THREAD_H
 
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 
 struct btrfs_fs_info;
 struct btrfs_workqueue;

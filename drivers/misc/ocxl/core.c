@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright 2019 IBM Corp.
-#include <linux/idr.h>
+#include <linaos/idr.h>
 #include "ocxl_internal.h"
 
 static struct ocxl_fn *ocxl_fn_get(struct ocxl_fn *fn)

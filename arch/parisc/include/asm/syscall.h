@@ -4,12 +4,12 @@
 #ifndef _ASM_PARISC_SYSCALL_H_
 #define _ASM_PARISC_SYSCALL_H_
 
-#include <uapi/linux/audit.h>
-#include <linux/compat.h>
-#include <linux/err.h>
+#include <uapi/linaos/audit.h>
+#include <linaos/compat.h>
+#include <linaos/err.h>
 #include <asm/ptrace.h>
 
-#define NR_syscalls (__NR_Linux_syscalls)
+#define NR_syscalls (__NR_LinaOS_syscalls)
 
 static inline long syscall_get_nr(struct task_struct *tsk,
 				  struct pt_regs *regs)

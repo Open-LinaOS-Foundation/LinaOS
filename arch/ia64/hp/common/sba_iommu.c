@@ -16,26 +16,26 @@
 **
 */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/nodemask.h>
-#include <linux/bitops.h>         /* hweight64() */
-#include <linux/crash_dump.h>
-#include <linux/iommu-helper.h>
-#include <linux/dma-map-ops.h>
-#include <linux/prefetch.h>
-#include <linux/swiotlb.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/pci.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/acpi.h>
+#include <linaos/efi.h>
+#include <linaos/nodemask.h>
+#include <linaos/bitops.h>         /* hweight64() */
+#include <linaos/crash_dump.h>
+#include <linaos/iommu-helper.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/prefetch.h>
+#include <linaos/swiotlb.h>
 
 #include <asm/delay.h>		/* ia64_get_itc() */
 #include <asm/io.h>

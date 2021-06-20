@@ -5,7 +5,7 @@
  * Copyright 2015-2016 Google Inc.
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "audio_manager.h"
 #include "audio_manager_private.h"

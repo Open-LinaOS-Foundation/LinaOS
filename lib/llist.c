@@ -10,9 +10,9 @@
  * Copyright 2010,2011 Intel Corp.
  *   Author: Huang Ying <ying.huang@intel.com>
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/llist.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/llist.h>
 
 
 /**

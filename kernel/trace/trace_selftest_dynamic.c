@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include "trace.h"
 
 noinline __noclone int DYN_FTRACE_TEST_NAME(void)

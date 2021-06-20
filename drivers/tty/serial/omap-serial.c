@@ -16,25 +16,25 @@
  * this driver as required for the omap-platform.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/serial_reg.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/serial_core.h>
-#include <linux/irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_data/serial-omap.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/serial_reg.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/serial_core.h>
+#include <linaos/irq.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_wakeirq.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/platform_data/serial-omap.h>
 
 #define OMAP_MAX_HSUART_PORTS	10
 

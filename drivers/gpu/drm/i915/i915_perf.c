@@ -191,9 +191,9 @@
  *   with the rest of the i915 driver.
  */
 
-#include <linux/anon_inodes.h>
-#include <linux/sizes.h>
-#include <linux/uuid.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/sizes.h>
+#include <linaos/uuid.h>
 
 #include "gem/i915_gem_context.h"
 #include "gt/intel_engine_pm.h"

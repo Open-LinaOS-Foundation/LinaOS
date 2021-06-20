@@ -8,9 +8,9 @@
 #ifndef _REALTEK_SMI_H
 #define _REALTEK_SMI_H
 
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio/consumer.h>
 #include <net/dsa.h>
 
 struct realtek_smi_ops;

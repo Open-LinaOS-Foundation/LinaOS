@@ -6,7 +6,7 @@
  *
  * Copyright (C) 2005 by Thomas Winischhofer, Vienna, Austria
  *
- * If distributed as part of the Linux kernel, this code is licensed under the
+ * If distributed as part of the LinaOS kernel, this code is licensed under the
  * terms of the GPL v2.
  *
  * Otherwise, the following license terms apply:
@@ -37,24 +37,24 @@
  *
  */
 
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/kref.h>
-#include <linux/usb.h>
-#include <linux/vmalloc.h>
+#include <linaos/mutex.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/errno.h>
+#include <linaos/poll.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/kref.h>
+#include <linaos/usb.h>
+#include <linaos/vmalloc.h>
 
 #include "sisusb.h"
 #include "sisusb_init.h"
 
 #ifdef CONFIG_USB_SISUSBVGA_CON
-#include <linux/font.h>
+#include <linaos/font.h>
 #endif
 
 #define SISUSB_DONTSYNC

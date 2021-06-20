@@ -21,7 +21,7 @@
  * Only synchronous operations are supported.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "../comedidev.h"
 
 #include "comedi_8254.h"

@@ -5,7 +5,7 @@ Netdev features mess and how to get out from it alive
 =====================================================
 
 Author:
-	Michał Mirosław <mirq-linux@rere.qmqm.pl>
+	Michał Mirosław <mirq-linaos@rere.qmqm.pl>
 
 
 
@@ -16,7 +16,7 @@ Long gone are the days when a network card would just take and give packets
 verbatim.  Today's devices add multiple features and bugs (read: offloads)
 that relieve an OS of various tasks like generating and checking checksums,
 splitting packets, classifying them.  Those capabilities and their state
-are commonly referred to as netdev features in Linux kernel world.
+are commonly referred to as netdev features in LinaOS kernel world.
 
 There are currently three sets of features relevant to the driver, and
 one used internally by network core:
@@ -100,12 +100,12 @@ Errors returned are not (and cannot be) propagated anywhere except dmesg.
 Part IV: Features
 =================
 
-For current list of features, see include/linux/netdev_features.h.
+For current list of features, see include/linaos/netdev_features.h.
 This section describes semantics of some of them.
 
  * Transmit checksumming
 
-For complete description, see comments near the top of include/linux/skbuff.h.
+For complete description, see comments near the top of include/linaos/skbuff.h.
 
 Note: NETIF_F_HW_CSUM is a superset of NETIF_F_IP_CSUM + NETIF_F_IPV6_CSUM.
 It means that device can fill TCP/UDP-like checksum anywhere in the packets

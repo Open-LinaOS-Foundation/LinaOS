@@ -9,8 +9,8 @@
 #ifndef _I915_MEI_HDCP_INTERFACE_H_
 #define _I915_MEI_HDCP_INTERFACE_H_
 
-#include <linux/mutex.h>
-#include <linux/device.h>
+#include <linaos/mutex.h>
+#include <linaos/device.h>
 #include <drm/drm_hdcp.h>
 
 /**

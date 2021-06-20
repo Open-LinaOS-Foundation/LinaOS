@@ -9,10 +9,10 @@
 #ifndef __LINUX_NEXTHOP_H
 #define __LINUX_NEXTHOP_H
 
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/route.h>
-#include <linux/types.h>
+#include <linaos/netdevice.h>
+#include <linaos/notifier.h>
+#include <linaos/route.h>
+#include <linaos/types.h>
 #include <net/ip_fib.h>
 #include <net/ip6_fib.h>
 #include <net/netlink.h>

@@ -5,12 +5,12 @@
 #ifndef TEE_PRIVATE_H
 #define TEE_PRIVATE_H
 
-#include <linux/cdev.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linaos/cdev.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/kref.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
 
 /**
  * struct tee_shm_pool - shared memory pool

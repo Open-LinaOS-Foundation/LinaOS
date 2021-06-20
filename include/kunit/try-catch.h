@@ -10,7 +10,7 @@
 #ifndef _KUNIT_TRY_CATCH_H
 #define _KUNIT_TRY_CATCH_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 typedef void (*kunit_try_catch_func_t)(void *);
 

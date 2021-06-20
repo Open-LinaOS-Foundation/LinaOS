@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 struct compat_if_dqblk {
 	compat_u64			dqb_bhardlimit;

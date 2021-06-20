@@ -1,8 +1,8 @@
 /*
  * drm_irq.c IRQ and vblank support
  *
- * \author Rickard E. (Rik) Faith <faith@valinux.com>
- * \author Gareth Hughes <gareth@valinux.com>
+ * \author Rickard E. (Rik) Faith <faith@valinaos.com>
+ * \author Gareth Hughes <gareth@valinaos.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -25,10 +25,10 @@
  */
 
 /*
- * Created: Fri Mar 19 14:30:16 1999 by faith@valinux.com
+ * Created: Fri Mar 19 14:30:16 1999 by faith@valinaos.com
  *
  * Copyright 1999, 2000 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -52,10 +52,10 @@
  */
 
 
-#include <linux/export.h>
-#include <linux/interrupt.h>	/* For task queue support */
-#include <linux/pci.h>
-#include <linux/vgaarb.h>
+#include <linaos/export.h>
+#include <linaos/interrupt.h>	/* For task queue support */
+#include <linaos/pci.h>
+#include <linaos/vgaarb.h>
 
 #include <drm/drm.h>
 #include <drm/drm_device.h>

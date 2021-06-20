@@ -1,7 +1,7 @@
 /*
- *  linux/arch/arm/kernel/fiqasm.S
+ *  linaos/arch/arm/kernel/fiqasm.S
  *
- *  Derived from code originally in linux/arch/arm/kernel/fiq.c:
+ *  Derived from code originally in linaos/arch/arm/kernel/fiq.c:
  *
  *  Copyright (C) 1998 Russell King
  *  Copyright (C) 1998, 1999 Phil Blundell
@@ -14,7 +14,7 @@
  *  v7/Thumb-2 compatibility modifications by Linaro Limited, 2011.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 /*

@@ -3,7 +3,7 @@
  * Copyright (C) 2007 Lemote Inc. & Institute of Computing Technology
  * Author: Fuxin Zhang, zhangfx@lemote.com
  */
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/i8259.h>

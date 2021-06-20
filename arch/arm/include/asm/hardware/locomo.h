@@ -6,7 +6,7 @@
  * (C) Copyright 2004 John Lenz
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See linaos/COPYING for more information.
  *
  * Based on sa1111.h
  */

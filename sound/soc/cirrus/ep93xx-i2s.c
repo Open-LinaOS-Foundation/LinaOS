@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/sound/soc/ep93xx-i2s.c
+ * linaos/sound/soc/ep93xx-i2s.c
  * EP93xx I2S driver
  *
  * Copyright (C) 2010 Ryan Mallon
@@ -10,11 +10,11 @@
  *   Copyright (C) 2006 Lennert Buytenhek <buytenh@wantstofly.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
 
 #include <sound/core.h>
 #include <sound/dmaengine_pcm.h>
@@ -23,8 +23,8 @@
 #include <sound/initval.h>
 #include <sound/soc.h>
 
-#include <linux/platform_data/dma-ep93xx.h>
-#include <linux/soc/cirrus/ep93xx.h>
+#include <linaos/platform_data/dma-ep93xx.h>
+#include <linaos/soc/cirrus/ep93xx.h>
 
 #include "ep93xx-pcm.h"
 

@@ -6,11 +6,11 @@
 #ifndef __ETNAVIV_DRV_H__
 #define __ETNAVIV_DRV_H__
 
-#include <linux/list.h>
-#include <linux/mm_types.h>
-#include <linux/sizes.h>
-#include <linux/time64.h>
-#include <linux/types.h>
+#include <linaos/list.h>
+#include <linaos/mm_types.h>
+#include <linaos/sizes.h>
+#include <linaos/time64.h>
+#include <linaos/types.h>
 
 #include <drm/drm_fb_helper.h>
 #include <drm/drm_gem.h>

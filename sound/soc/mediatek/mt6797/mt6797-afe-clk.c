@@ -5,7 +5,7 @@
 // Copyright (c) 2018 MediaTek Inc.
 // Author: KaiChieh Chuang <kaichieh.chuang@mediatek.com>
 
-#include <linux/clk.h>
+#include <linaos/clk.h>
 
 #include "mt6797-afe-common.h"
 #include "mt6797-afe-clk.h"

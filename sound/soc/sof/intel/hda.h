@@ -5,14 +5,14 @@
  *
  * Copyright(c) 2017 Intel Corporation. All rights reserved.
  *
- * Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+ * Author: Liam Girdwood <liam.r.girdwood@linaos.intel.com>
  */
 
 #ifndef __SOF_INTEL_HDA_H
 #define __SOF_INTEL_HDA_H
 
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_intel.h>
+#include <linaos/soundwire/sdw.h>
+#include <linaos/soundwire/sdw_intel.h>
 #include <sound/compress_driver.h>
 #include <sound/hda_codec.h>
 #include <sound/hdaudio_ext.h>

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/mmc/sh_mmcif.h
+ * include/linaos/mmc/sh_mmcif.h
  *
  * platform data for eMMC driver
  *
@@ -10,8 +10,8 @@
 #ifndef LINUX_MMC_SH_MMCIF_H
 #define LINUX_MMC_SH_MMCIF_H
 
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
 
 /*
  * MMCIF : CE_CLK_CTRL [19:16]

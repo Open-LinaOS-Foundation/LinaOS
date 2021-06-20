@@ -8,11 +8,11 @@
  * Author : Lan Tianyu <Tianyu.Lan@microsoft.com>
  */
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/iommu.h>
+#include <linaos/module.h>
 
 #include <asm/apic.h>
 #include <asm/cpu.h>
@@ -180,7 +180,7 @@ struct irq_remap_ops hyperv_irq_remap_ops = {
 	.enable			= hyperv_enable_irq_remapping,
 };
 
-/* IRQ remapping domain when Linux runs as the root partition */
+/* IRQ remapping domain when LinaOS runs as the root partition */
 struct hyperv_root_ir_data {
 	u8 ioapic_id;
 	bool is_level;

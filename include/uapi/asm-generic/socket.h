@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __ASM_GENERIC_SOCKET_H
 #define __ASM_GENERIC_SOCKET_H
 
-#include <linux/posix_types.h>
+#include <linaos/posix_types.h>
 #include <asm/sockios.h>
 
 /* For setsockopt(2) */

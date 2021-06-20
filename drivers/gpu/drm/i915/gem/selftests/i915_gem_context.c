@@ -4,7 +4,7 @@
  * Copyright © 2017 Intel Corporation
  */
 
-#include <linux/prime_numbers.h>
+#include <linaos/prime_numbers.h>
 
 #include "gem/i915_gem_pm.h"
 #include "gt/intel_engine_pm.h"

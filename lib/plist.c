@@ -15,15 +15,15 @@
  * Simplifications of the original code by
  * Oleg Nesterov <oleg@tv-sign.ru>
  *
- * Based on simple lists (include/linux/list.h).
+ * Based on simple lists (include/linaos/list.h).
  *
  * This file contains the add / del functions which are considered to
- * be too large to inline. See include/linux/plist.h for further
+ * be too large to inline. See include/linaos/plist.h for further
  * information.
  */
 
-#include <linux/bug.h>
-#include <linux/plist.h>
+#include <linaos/bug.h>
+#include <linaos/plist.h>
 
 #ifdef CONFIG_DEBUG_PLIST
 
@@ -173,10 +173,10 @@ void plist_requeue(struct plist_node *node, struct plist_head *head)
 }
 
 #ifdef CONFIG_DEBUG_PLIST
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/sched.h>
+#include <linaos/sched/clock.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 
 static struct plist_node __initdata test_node[241];
 

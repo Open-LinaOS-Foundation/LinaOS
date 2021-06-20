@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-mmp/pxa168.c
+ *  linaos/arch/arm/mach-mmp/pxa168.c
  *
  *  Code specific to PXA168
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clk/mmp.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/mv_usb.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/clk/mmp.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/mv_usb.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/mach/time.h>
 #include <asm/system_misc.h>
 
 #include "addr-map.h"
 #include "common.h"
-#include <linux/soc/mmp/cputype.h>
+#include <linaos/soc/mmp/cputype.h>
 #include "devices.h"
 #include "irqs.h"
 #include "mfp.h"

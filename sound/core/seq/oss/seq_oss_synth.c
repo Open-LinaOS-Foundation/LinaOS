@@ -10,10 +10,10 @@
 #include "seq_oss_synth.h"
 #include "seq_oss_midi.h"
 #include "../seq_lock.h"
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/nospec.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/nospec.h>
 
 /*
  * constants

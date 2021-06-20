@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <stdbool.h>
 #include <errno.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <internal/lib.h>
 
 unsigned int page_size;

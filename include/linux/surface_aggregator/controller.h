@@ -12,11 +12,11 @@
 #ifndef _LINUX_SURFACE_AGGREGATOR_CONTROLLER_H
 #define _LINUX_SURFACE_AGGREGATOR_CONTROLLER_H
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/types.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
 
-#include <linux/surface_aggregator/serial_hub.h>
+#include <linaos/surface_aggregator/serial_hub.h>
 
 
 /* -- Main data types and definitions --------------------------------------- */

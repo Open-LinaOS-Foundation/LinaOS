@@ -2,7 +2,7 @@
 /*
  * Powerpc userspace implementations of gettimeofday() and similar.
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 
 int __c_kernel_clock_gettime(clockid_t clock, struct old_timespec32 *ts,
 			     const struct vdso_data *vd)

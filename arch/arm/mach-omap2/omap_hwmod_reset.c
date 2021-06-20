@@ -23,8 +23,8 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
 
 #include "omap_hwmod.h"
 #include "common.h"

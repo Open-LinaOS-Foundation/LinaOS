@@ -7,19 +7,19 @@
  * Copyright (c) 2016 Jiri Pirko <jiri@mellanox.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/gfp.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/refcount.h>
-#include <linux/workqueue.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/timekeeping.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/gfp.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/refcount.h>
+#include <linaos/workqueue.h>
+#include <linaos/u64_stats_sync.h>
+#include <linaos/timekeeping.h>
 #include <rdma/ib_verbs.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>

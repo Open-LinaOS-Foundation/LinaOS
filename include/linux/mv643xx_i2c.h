@@ -5,7 +5,7 @@
 #ifndef _MV64XXX_I2C_H_
 #define _MV64XXX_I2C_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define MV64XXX_I2C_CTLR_NAME	"mv64xxx_i2c"
 

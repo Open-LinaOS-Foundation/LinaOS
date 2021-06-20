@@ -2,8 +2,8 @@
 #ifndef _ASM_GENERIC_FUTEX_H
 #define _ASM_GENERIC_FUTEX_H
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
+#include <linaos/futex.h>
+#include <linaos/uaccess.h>
 #include <asm/errno.h>
 
 #ifndef CONFIG_SMP

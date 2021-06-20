@@ -6,14 +6,14 @@
 #ifndef __ASM_SN_MAPPED_KERNEL_H
 #define __ASM_SN_MAPPED_KERNEL_H
 
-#include <linux/mmzone.h>
+#include <linaos/mmzone.h>
 
 /*
  * Note on how mapped kernels work: the text and data section is
  * compiled at cksseg segment (LOADADDR = 0xc001c000), and the
  * init/setup/data section gets a 16M virtual address bump in the
  * ld.script file (so that tlblo0 and tlblo1 maps the sections).
- * The vmlinux.64 section addresses are put in the xkseg range
+ * The vmlinaos.64 section addresses are put in the xkseg range
  * using the change-addresses makefile option. Use elfdump -of
  * on IRIX to see where the sections go. The Origin loader loads
  * the two sections contiguously in physical memory. The loader

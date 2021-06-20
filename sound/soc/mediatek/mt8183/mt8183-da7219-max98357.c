@@ -6,10 +6,10 @@
 // Copyright (c) 2018 MediaTek Inc.
 // Author: Shunli Wang <shunli.wang@mediatek.com>
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/consumer.h>
 #include <sound/jack.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

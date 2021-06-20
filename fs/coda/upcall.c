@@ -4,37 +4,37 @@
  *  -- upcalls
  *  -- upcall routines
  *
- * Linux 2.0 version
+ * LinaOS 2.0 version
  * Copyright (C) 1996 Peter J. Braam <braam@maths.ox.ac.uk>, 
  * Michael Callahan <callahan@maths.ox.ac.uk> 
  * 
- * Redone for Linux 2.1
+ * Redone for LinaOS 2.1
  * Copyright (C) 1997 Carnegie Mellon University
  *
  * Carnegie Mellon University encourages users of this code to contribute
  * improvements to the Coda project. Contact Peter Braam <coda@cs.cmu.edu>.
  */
 
-#include <linux/signal.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/vfs.h>
+#include <linaos/signal.h>
+#include <linaos/sched/signal.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/time.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/stat.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
+#include <linaos/vmalloc.h>
+#include <linaos/vfs.h>
 
-#include <linux/coda.h>
+#include <linaos/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_linaos.h"
 #include "coda_cache.h"
 
 #include "coda_int.h"

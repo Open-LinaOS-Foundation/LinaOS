@@ -3,7 +3,7 @@
  * For conditions of distribution and use, see copyright notice in zlib.h
  */
 
-#include <linux/zutil.h>
+#include <linaos/zutil.h>
 #include "inftrees.h"
 
 #define MAXBITS 15

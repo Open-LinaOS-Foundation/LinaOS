@@ -5,11 +5,11 @@
 //
 // Common infrastructure for PWM Backlight for Samsung boards
 
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/pwm_backlight.h>
+#include <linaos/gpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/pwm_backlight.h>
 
 #include "devs.h"
 #include "gpio-cfg.h"

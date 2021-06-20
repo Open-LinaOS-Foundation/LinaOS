@@ -10,15 +10,15 @@
  * Author: Tom Lyon, pugs@cisco.com
  */
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/eventfd.h>
-#include <linux/msi.h>
-#include <linux/pci.h>
-#include <linux/file.h>
-#include <linux/vfio.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/eventfd.h>
+#include <linaos/msi.h>
+#include <linaos/pci.h>
+#include <linaos/file.h>
+#include <linaos/vfio.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
 
 #include "vfio_pci_private.h"
 

@@ -150,13 +150,13 @@
 
 #define HFC_MULTI_VERSION	"2.03"
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/mISDNhw.h>
-#include <linux/mISDNdsp.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/mISDNhw.h>
+#include <linaos/mISDNdsp.h>
 
 /*
   #define IRQCOUNT_DEBUG

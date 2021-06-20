@@ -7,12 +7,12 @@
  * Author: Wenyou Yang <wenyou.yang@atmel.com>
  */
 
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
 #include <dt-bindings/regulator/active-semi,8945a-regulator.h>
 
 /**

@@ -8,15 +8,15 @@
 
 #include "fuse_i.h"
 
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/fs_context.h>
-#include <linux/sched.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/iversion.h>
-#include <linux/posix_acl.h>
+#include <linaos/pagemap.h>
+#include <linaos/file.h>
+#include <linaos/fs_context.h>
+#include <linaos/sched.h>
+#include <linaos/namei.h>
+#include <linaos/slab.h>
+#include <linaos/xattr.h>
+#include <linaos/iversion.h>
+#include <linaos/posix_acl.h>
 
 static void fuse_advise_use_readdirplus(struct inode *dir)
 {

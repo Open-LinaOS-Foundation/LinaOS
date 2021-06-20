@@ -104,7 +104,7 @@ config CRYPTO_DEV_FSL_CAAM_CRYPTO_API
 	select CRYPTO_XTS
 	help
 	  Selecting this will offload crypto for users of the
-	  scatterlist crypto API (such as the linux native IPSec
+	  scatterlist crypto API (such as the linaos native IPSec
 	  stack) to the SEC4 via job ring.
 
 config CRYPTO_DEV_FSL_CAAM_CRYPTO_API_QI

@@ -26,11 +26,11 @@
 
 #include "udfdecl.h"
 
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/bio.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/bio.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"

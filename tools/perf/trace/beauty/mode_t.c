@@ -3,7 +3,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-/* From include/linux/stat.h */
+/* From include/linaos/stat.h */
 #ifndef S_IRWXUGO
 #define S_IRWXUGO	(S_IRWXU|S_IRWXG|S_IRWXO)
 #endif

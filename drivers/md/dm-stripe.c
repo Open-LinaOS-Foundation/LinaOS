@@ -5,15 +5,15 @@
  */
 
 #include "dm.h"
-#include <linux/device-mapper.h>
+#include <linaos/device-mapper.h>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/dax.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/bio.h>
+#include <linaos/dax.h>
+#include <linaos/slab.h>
+#include <linaos/log2.h>
 
 #define DM_MSG_PREFIX "striped"
 #define DM_IO_ERROR_THRESHOLD 15

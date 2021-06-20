@@ -8,7 +8,7 @@ Introduction
 The Adjunct Processor (AP) facility is an IBM Z cryptographic facility comprised
 of three AP instructions and from 1 up to 256 PCIe cryptographic adapter cards.
 The AP devices provide cryptographic functions to all CPUs assigned to a
-linux system running in an IBM Z system LPAR.
+linaos system running in an IBM Z system LPAR.
 
 The AP adapter cards are exposed via the AP bus. The motivation for vfio-ap
 is to make AP cards available to KVM guests using the VFIO mediated device
@@ -25,14 +25,14 @@ definitions:
 
   An AP adapter is an IBM Z adapter card that can perform cryptographic
   functions. There can be from 0 to 256 adapters assigned to an LPAR. Adapters
-  assigned to the LPAR in which a linux host is running will be available to
-  the linux host. Each adapter is identified by a number from 0 to 255; however,
+  assigned to the LPAR in which a linaos host is running will be available to
+  the linaos host. Each adapter is identified by a number from 0 to 255; however,
   the maximum adapter number is determined by machine model and/or adapter type.
   When installed, an AP adapter is accessed by AP instructions executed by any
   CPU.
 
   The AP adapter cards are assigned to a given LPAR via the system's Activation
-  Profile which can be edited via the HMC. When the linux host system is IPL'd
+  Profile which can be edited via the HMC. When the linaos host system is IPL'd
   in the LPAR, the AP bus detects the AP adapter cards assigned to the LPAR and
   creates a sysfs device for each assigned adapter. For example, if AP adapters
   4 and 10 (0x0a) are assigned to the LPAR, the AP bus will create the following
@@ -66,7 +66,7 @@ definitions:
       domain.
 
   The AP usage and control domains are assigned to a given LPAR via the system's
-  Activation Profile which can be edited via the HMC. When a linux host system
+  Activation Profile which can be edited via the HMC. When a linaos host system
   is IPL'd in the LPAR, the AP bus module detects the AP usage and control
   domains assigned to the LPAR. The domain number of each usage domain and
   adapter number of each AP adapter are combined to create AP queue devices
@@ -158,7 +158,7 @@ and 2 and usage domains 5 and 6 are assigned to a guest, the APQNs (1,5), (1,6),
 
 The APQNs can provide secure key functionality - i.e., a private key is stored
 on the adapter card for each of its domains - so each APQN must be assigned to
-at most one guest or to the linux host::
+at most one guest or to the linaos host::
 
    Example 1: Valid configuration:
    ------------------------------
@@ -496,7 +496,7 @@ CARD.DOMAIN TYPE  MODE
 
 These are the steps:
 
-1. Install the vfio_ap module on the linux host. The dependency chain for the
+1. Install the vfio_ap module on the linaos host. The dependency chain for the
    vfio_ap module is:
    * iommu
    * s390
@@ -561,7 +561,7 @@ These are the steps:
       1, 2, 3, 4, 5, and 7-255 belong to the default drivers' pool, and 0 and 6
       belong to the vfio_ap device driver's pool.
 
-   The APQN of each AP queue device assigned to the linux host is checked by the
+   The APQN of each AP queue device assigned to the linaos host is checked by the
    AP bus against the set of APQNs derived from the cross product of APIDs
    and APQIs marked as usable only by the default AP queue device drivers. If a
    match is detected,  only the default AP queue device drivers will be probed;
@@ -847,7 +847,7 @@ all of the steps starting with step 3 will have to be performed again. Note
 that the remove will fail if a guest using the mdev is still running.
 
 It is not necessary to remove an mdev matrix device, but one may want to
-remove it if no guest will use it during the remaining lifetime of the linux
+remove it if no guest will use it during the remaining lifetime of the linaos
 host. If the mdev matrix device is removed, one may want to also reconfigure
 the pool of adapters and queues reserved for use by the default drivers.
 

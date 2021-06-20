@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * sysctl.c - Code for sysctl handling in NTFS Linux kernel driver. Part of
- *	      the Linux-NTFS project. Adapted from the old NTFS driver,
+ * sysctl.c - Code for sysctl handling in NTFS LinaOS kernel driver. Part of
+ *	      the LinaOS-NTFS project. Adapted from the old NTFS driver,
  *	      Copyright (C) 1997 Martin von Löwis, Régis Duchesne
  *
  * Copyright (c) 2002-2005 Anton Altaparmakov
@@ -9,12 +9,12 @@
 
 #ifdef DEBUG
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/proc_fs.h>
-#include <linux/sysctl.h>
+#include <linaos/proc_fs.h>
+#include <linaos/sysctl.h>
 
 #include "sysctl.h"
 #include "debug.h"

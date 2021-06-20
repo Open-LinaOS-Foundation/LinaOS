@@ -6,12 +6,12 @@
  *	Colin Cross <ccross@android.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/cpu_pm.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/spinlock.h>
-#include <linux/syscore_ops.h>
+#include <linaos/kernel.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/spinlock.h>
+#include <linaos/syscore_ops.h>
 
 static ATOMIC_NOTIFIER_HEAD(cpu_pm_notifier_chain);
 

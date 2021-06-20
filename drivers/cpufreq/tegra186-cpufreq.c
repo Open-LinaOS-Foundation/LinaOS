@@ -3,11 +3,11 @@
  * Copyright (c) 2017, NVIDIA CORPORATION. All rights reserved
  */
 
-#include <linux/cpufreq.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/cpufreq.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 
 #include <soc/tegra/bpmp.h>
 #include <soc/tegra/bpmp-abi.h>

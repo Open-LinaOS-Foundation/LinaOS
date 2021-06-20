@@ -7,15 +7,15 @@
  * Author : Yoshihiro Shimoda <yoshihiro.shimoda.uh@renesas.com>
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
 
 #include "m66592-udc.h"
 

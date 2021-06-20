@@ -6,7 +6,7 @@
 #ifndef __INTEL_GT_CLOCK_UTILS_H__
 #define __INTEL_GT_CLOCK_UTILS_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct intel_gt;
 

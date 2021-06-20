@@ -37,7 +37,7 @@
 };
 
 &ir {
-	linux,rc-map-name = "rc-vega-s9x";
+	linaos,rc-map-name = "rc-vega-s9x";
 };
 
 &usb {

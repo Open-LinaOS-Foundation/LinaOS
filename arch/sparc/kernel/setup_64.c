@@ -1,39 +1,39 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/sparc64/kernel/setup.c
+ *  linaos/arch/sparc64/kernel/setup.c
  *
  *  Copyright (C) 1995,1996  David S. Miller (davem@caip.rutgers.edu)
  *  Copyright (C) 1997       Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/ptrace.h>
 #include <asm/smp.h>
-#include <linux/user.h>
-#include <linux/screen_info.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/syscalls.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/inet.h>
-#include <linux/console.h>
-#include <linux/root_dev.h>
-#include <linux/interrupt.h>
-#include <linux/cpu.h>
-#include <linux/initrd.h>
-#include <linux/module.h>
-#include <linux/start_kernel.h>
-#include <linux/memblock.h>
-#include <uapi/linux/mount.h>
+#include <linaos/user.h>
+#include <linaos/screen_info.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/syscalls.h>
+#include <linaos/kdev_t.h>
+#include <linaos/major.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/inet.h>
+#include <linaos/console.h>
+#include <linaos/root_dev.h>
+#include <linaos/interrupt.h>
+#include <linaos/cpu.h>
+#include <linaos/initrd.h>
+#include <linaos/module.h>
+#include <linaos/start_kernel.h>
+#include <linaos/memblock.h>
+#include <uapi/linaos/mount.h>
 
 #include <asm/io.h>
 #include <asm/processor.h>

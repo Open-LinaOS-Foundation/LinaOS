@@ -9,16 +9,16 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/clockchips.h>
-#include <linux/sched_clock.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/clockchips.h>
+#include <linaos/sched_clock.h>
 
 /* TIMER1 used as tick
  * TIMER2 used as clocksource

@@ -1,5 +1,5 @@
 /* Included by drivers/net/dsa/lan9303.h and net/dsa/tag_lan9303.c */
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 
 struct lan9303;
 

@@ -9,15 +9,15 @@
  *   Authors	Victor Prupis
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/proc_fs.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/blkdev.h>
+#include <linaos/bio.h>
+#include <linaos/proc_fs.h>
+#include <linaos/uaccess.h>
 #include <platform/simcall.h>
 
 #define SIMDISK_MAJOR 240

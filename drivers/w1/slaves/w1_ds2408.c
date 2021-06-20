@@ -5,15 +5,15 @@
  * Copyright (c) 2010 Jean-Francois Dagenais <dagenaisj@sonatest.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
 
-#include <linux/w1.h>
+#include <linaos/w1.h>
 
 #define W1_FAMILY_DS2408	0x29
 

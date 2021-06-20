@@ -6,11 +6,11 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/i2c.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/device.h>
+#include <linaos/clk.h>
+#include <linaos/i2c.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

@@ -5,21 +5,21 @@
  * Released under the GPLv2 only.
  */
 
-#include <linux/acpi.h>
-#include <linux/pci.h>	/* for scatterlist macros */
-#include <linux/usb.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/timer.h>
-#include <linux/ctype.h>
-#include <linux/nls.h>
-#include <linux/device.h>
-#include <linux/scatterlist.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/quirks.h>
-#include <linux/usb/hcd.h>	/* for usbcore internals */
-#include <linux/usb/of.h>
+#include <linaos/acpi.h>
+#include <linaos/pci.h>	/* for scatterlist macros */
+#include <linaos/usb.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/timer.h>
+#include <linaos/ctype.h>
+#include <linaos/nls.h>
+#include <linaos/device.h>
+#include <linaos/scatterlist.h>
+#include <linaos/usb/cdc.h>
+#include <linaos/usb/quirks.h>
+#include <linaos/usb/hcd.h>	/* for usbcore internals */
+#include <linaos/usb/of.h>
 #include <asm/byteorder.h>
 
 #include "usb.h"
@@ -1500,7 +1500,7 @@ void usb_enable_interface(struct usb_device *dev,
  * interface's default setting.  To access such bandwidth, alternate
  * interface settings must be made current.
  *
- * Note that in the Linux USB subsystem, bandwidth associated with
+ * Note that in the LinaOS USB subsystem, bandwidth associated with
  * an endpoint in a given alternate setting is not reserved until an URB
  * is submitted that needs that bandwidth.  Some other operating systems
  * allocate bandwidth early, when a configuration is chosen.
@@ -1921,7 +1921,7 @@ static void __usb_queue_reset_device(struct work_struct *ws)
  * accept @configuration = -1 as indicating the device should be put in
  * an unconfigured state.
  *
- * USB device configurations may affect Linux interoperability,
+ * USB device configurations may affect LinaOS interoperability,
  * power consumption and the functionality available.  For example,
  * the default configuration is limited to using 100mA of bus power,
  * so that when certain device functionality requires more power,

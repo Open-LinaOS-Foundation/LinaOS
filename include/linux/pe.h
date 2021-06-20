@@ -8,10 +8,10 @@
 #ifndef __LINUX_PE_H
 #define __LINUX_PE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
- * Linux EFI stub v1.0 adds the following functionality:
+ * LinaOS EFI stub v1.0 adds the following functionality:
  * - Loading initrd from the LINUX_EFI_INITRD_MEDIA_GUID device path,
  * - Loading/starting the kernel from firmware that targets a different
  *   machine type, via the entrypoint exposed in the .compat PE/COFF section.

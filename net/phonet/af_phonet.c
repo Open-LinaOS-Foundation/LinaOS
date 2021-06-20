@@ -10,14 +10,14 @@
  *          Rémi Denis-Courmont
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <asm/unaligned.h>
 #include <net/sock.h>
 
-#include <linux/if_phonet.h>
-#include <linux/phonet.h>
+#include <linaos/if_phonet.h>
+#include <linaos/phonet.h>
 #include <net/phonet/phonet.h>
 #include <net/phonet/pn_dev.h>
 
@@ -536,6 +536,6 @@ static void __exit phonet_exit(void)
 
 module_init(phonet_init);
 module_exit(phonet_exit);
-MODULE_DESCRIPTION("Phonet protocol stack for Linux");
+MODULE_DESCRIPTION("Phonet protocol stack for LinaOS");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS_NETPROTO(PF_PHONET);

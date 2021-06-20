@@ -5,10 +5,10 @@
  *  Copyright (C) 2012,2013 Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/platform_device.h>
 
 static int clps711x_gpio_probe(struct platform_device *pdev)
 {

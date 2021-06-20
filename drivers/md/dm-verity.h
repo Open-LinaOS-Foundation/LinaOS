@@ -11,8 +11,8 @@
 #ifndef DM_VERITY_H
 #define DM_VERITY_H
 
-#include <linux/dm-bufio.h>
-#include <linux/device-mapper.h>
+#include <linaos/dm-bufio.h>
+#include <linaos/device-mapper.h>
 #include <crypto/hash.h>
 
 #define DM_VERITY_MAX_LEVELS		63

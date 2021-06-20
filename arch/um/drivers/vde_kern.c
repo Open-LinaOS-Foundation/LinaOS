@@ -7,8 +7,8 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/netdevice.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
 #include <net_kern.h>
 #include <net_user.h>
 #include "vde.h"

@@ -22,9 +22,9 @@ Translation's purpose is to ease reading and understanding in languages other
 than English. Its aim is to help people who do not understand English or have
 doubts about its interpretation. Additionally, some people prefer to read
 documentation in their native language, but please bear in mind that the
-*only* official documentation is the English one: :ref:`linux_doc`.
+*only* official documentation is the English one: :ref:`linaos_doc`.
 
-It is very unlikely that an update to :ref:`linux_doc` will be propagated
+It is very unlikely that an update to :ref:`linaos_doc` will be propagated
 immediately to all translations.  Translations' maintainers - and
 contributors - follow the evolution of the official documentation and they
 maintain translations aligned as much as they can.  For this reason there is
@@ -48,6 +48,6 @@ adapted to fit a different language.  For this reason, when viewing
 translations, you may find slight differences that carry the same message but
 in a different form.
 
-If you need to communicate with the Linux community but you do not feel
+If you need to communicate with the LinaOS community but you do not feel
 comfortable writing in English, you can ask the translation's maintainers
 for help.

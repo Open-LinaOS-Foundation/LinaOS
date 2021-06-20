@@ -23,7 +23,7 @@ Required backlight properties:
 
 Optional backlight properties:
 	- label : see Documentation/devicetree/bindings/leds/common.txt
-	- linux,default-trigger :
+	- linaos,default-trigger :
 	   see Documentation/devicetree/bindings/leds/common.txt
 
 Example:
@@ -76,7 +76,7 @@ lm36274@11 {
 			reg = <0>;
 			led-sources = <0 2>;
 			label = "white:backlight_cluster";
-			linux,default-trigger = "backlight";
+			linaos,default-trigger = "backlight";
 		};
 	};
 };

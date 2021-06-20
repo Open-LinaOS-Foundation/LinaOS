@@ -4,7 +4,7 @@ Information regarding the Enhanced IDE drive
 
    The hdparm utility can be used to control various IDE features on a
    running system. It is packaged separately.  Please Look for it on popular
-   linux FTP sites.
+   linaos FTP sites.
 
 -------------------------------------------------------------------------------
 
@@ -15,21 +15,21 @@ Information regarding the Enhanced IDE drive
     PCI versions of the CMD640 and RZ1000 interfaces are now detected
     automatically at startup when PCI BIOS support is configured.
 
-    Linux disables the "prefetch" ("readahead") mode of the RZ1000
+    LinaOS disables the "prefetch" ("readahead") mode of the RZ1000
     to prevent data corruption possible due to hardware design flaws.
 
-    For the CMD640, linux disables "IRQ unmasking" (hdparm -u1) on any
+    For the CMD640, linaos disables "IRQ unmasking" (hdparm -u1) on any
     drive for which the "prefetch" mode of the CMD640 is turned on.
     If "prefetch" is disabled (hdparm -p8), then "IRQ unmasking" can be
     used again.
 
-    For the CMD640, linux disables "32bit I/O" (hdparm -c1) on any drive
+    For the CMD640, linaos disables "32bit I/O" (hdparm -c1) on any drive
     for which the "prefetch" mode of the CMD640 is turned off.
     If "prefetch" is enabled (hdparm -p9), then "32bit I/O" can be
     used again.
 
     The CMD640 is also used on some Vesa Local Bus (VLB) cards, and is *NOT*
-    automatically detected by Linux.  For safe, reliable operation with such
+    automatically detected by LinaOS.  For safe, reliable operation with such
     interfaces, one *MUST* use the "cmd640.probe_vlb" kernel option.
 
     Use of the "serialize" option is no longer necessary.
@@ -152,7 +152,7 @@ to read it.  One of the following is probably the problem:
     be a separate MS-DOS driver just for the controller.  IDE interfaces
     on sound cards usually fall into this category.  Such configurations
     can often be made to work by first booting MS-DOS, loading the
-    appropriate drivers, and then warm-booting linux (without powering
+    appropriate drivers, and then warm-booting linaos (without powering
     off).  This can be automated using loadlin in the MS-DOS autoexec.
 
 If you always get timeout errors, interrupts from the drive are probably
@@ -166,7 +166,7 @@ The kernel is able to execute binaries directly off of the cdrom,
 provided it is mounted with the default block size of 1024 (as above).
 
 Please pass on any feedback on any of this stuff to the maintainer,
-whose address can be found in linux/MAINTAINERS.
+whose address can be found in linaos/MAINTAINERS.
 
 The IDE driver is modularized.  The high level disk/CD-ROM/tape/floppy
 drivers can always be compiled as loadable modules, the chipset drivers

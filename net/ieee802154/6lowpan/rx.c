@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/if_arp.h>
+#include <linaos/if_arp.h>
 
 #include <net/6lowpan.h>
 #include <net/mac802154.h>

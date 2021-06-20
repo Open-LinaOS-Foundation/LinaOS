@@ -2,7 +2,7 @@
 #ifndef BOOT_COMPRESSED_DECOMPRESSOR_H
 #define BOOT_COMPRESSED_DECOMPRESSOR_H
 
-#include <linux/stddef.h>
+#include <linaos/stddef.h>
 
 #ifdef CONFIG_KERNEL_UNCOMPRESSED
 static inline void *decompress_kernel(void) { return NULL; }
@@ -12,7 +12,7 @@ void *decompress_kernel(void);
 unsigned long mem_safe_offset(void);
 void error(char *m);
 
-struct vmlinux_info {
+struct vmlinaos_info {
 	unsigned long default_lma;
 	void (*entry)(void);
 	unsigned long image_size;	/* does not include .bss */
@@ -26,7 +26,7 @@ struct vmlinux_info {
 	unsigned long rela_dyn_end;
 };
 
-extern char _vmlinux_info[];
-#define vmlinux (*(struct vmlinux_info *)_vmlinux_info)
+extern char _vmlinaos_info[];
+#define vmlinaos (*(struct vmlinaos_info *)_vmlinaos_info)
 
 #endif /* BOOT_COMPRESSED_DECOMPRESSOR_H */

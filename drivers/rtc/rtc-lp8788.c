@@ -7,13 +7,13 @@
  * Author: Milo(Woogyom) Kim <milo.kim@ti.com>
  */
 
-#include <linux/err.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/lp8788.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/irqdomain.h>
+#include <linaos/mfd/lp8788.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
 
 /* register address */
 #define LP8788_INTEN_3			0x05

@@ -11,11 +11,11 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/notifier.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/notifier.h>
+#include <linaos/usb.h>
+#include <linaos/mutex.h>
 #include "usb.h"
 
 static BLOCKING_NOTIFIER_HEAD(usb_notifier_list);

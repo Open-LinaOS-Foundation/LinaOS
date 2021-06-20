@@ -355,7 +355,7 @@
 		bp3 {
 			label = "PB_USER";
 			gpios = <&pioE 29 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_PROG1>;
+			linaos,code = <KEY_PROG1>;
 			wakeup-source;
 		};
 	};
@@ -366,7 +366,7 @@
 		d2 {
 			label = "d2";
 			gpios = <&pioE 23 GPIO_ACTIVE_LOW>;	/* PE23, conflicts with A23, CTS2 */
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		d3 {

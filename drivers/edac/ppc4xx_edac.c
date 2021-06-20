@@ -4,15 +4,15 @@
  *   Grant Erickson <gerickson@nuovations.com>
  */
 
-#include <linux/edac.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/types.h>
+#include <linaos/edac.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/types.h>
 
 #include <asm/dcr.h>
 

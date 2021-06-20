@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linaos/bitops.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_clock.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
 
 #include <dt-bindings/clock/qcom,q6sstopcc-qcs404.h>
 

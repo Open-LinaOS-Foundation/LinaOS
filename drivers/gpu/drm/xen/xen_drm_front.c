@@ -8,10 +8,10 @@
  * Author: Oleksandr Andrushchenko <oleksandr_andrushchenko@epam.com>
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_drv.h>

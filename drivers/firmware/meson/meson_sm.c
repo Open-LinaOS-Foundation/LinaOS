@@ -8,19 +8,19 @@
 
 #define pr_fmt(fmt) "meson-sm: " fmt
 
-#include <linux/arm-smccc.h>
-#include <linux/bug.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/types.h>
-#include <linux/sizes.h>
- #include <linux/slab.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/bug.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/printk.h>
+#include <linaos/types.h>
+#include <linaos/sizes.h>
+ #include <linaos/slab.h>
 
-#include <linux/firmware/meson/meson_sm.h>
+#include <linaos/firmware/meson/meson_sm.h>
 
 struct meson_sm_cmd {
 	unsigned int index;

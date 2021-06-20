@@ -8,12 +8,12 @@
  * All registers are 16bits wide with 32bit spacing.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/spinlock.h>
+#include <linaos/irq.h>
 #include <asm/addrspace.h>
 #include <asm/io.h>
 #include <asm/mach-db1x00/bcsr.h>
@@ -24,7 +24,7 @@ static struct bcsr_reg {
 } bcsr_regs[BCSR_CNT];
 
 static void __iomem *bcsr_virt; /* KSEG1 addr of BCSR base */
-static int bcsr_csc_base;	/* linux-irq of first cascaded irq */
+static int bcsr_csc_base;	/* linaos-irq of first cascaded irq */
 
 void __init bcsr_init(unsigned long bcsr1_phys, unsigned long bcsr2_phys)
 {

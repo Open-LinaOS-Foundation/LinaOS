@@ -15,7 +15,7 @@
  *	http://koti.mbnet.fi/axh/crypto/camellia-BSD-1.2.0-aesni1.tar.xz
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/frame.h>
 
 #define CAMELLIA_TABLE_BYTE_LEN 272

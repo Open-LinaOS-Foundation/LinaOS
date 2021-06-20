@@ -7,10 +7,10 @@
  * Copyright 2017 Google Inc.
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #include "memconsole.h"
 #include "coreboot_table.h"

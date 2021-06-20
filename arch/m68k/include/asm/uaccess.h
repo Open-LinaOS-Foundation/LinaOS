@@ -7,8 +7,8 @@
 /*
  * User space memory access functions
  */
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
 #include <asm/segment.h>
 #include <asm/extable.h>
 

@@ -19,32 +19,32 @@
  * 	Johnnie Peters <jpeters@mvista.com>
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/bitops.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/crc32.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/bitops.h>
+#include <linaos/workqueue.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_net.h>
+#include <linaos/of_mdio.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>
 #include <asm/dma.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/dcr.h>
 #include <asm/dcr-regs.h>
 

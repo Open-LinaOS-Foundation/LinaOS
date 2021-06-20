@@ -5,10 +5,10 @@
 #ifndef __LINUX_SPI_ALTERA_H
 #define __LINUX_SPI_ALTERA_H
 
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/regmap.h>
+#include <linaos/spi/spi.h>
+#include <linaos/types.h>
 
 #define ALTERA_SPI_MAX_CS		32
 

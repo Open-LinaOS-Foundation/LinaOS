@@ -277,7 +277,7 @@ label##3:					       	\
 	.popsection;
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <linaos/types.h>
 
 extern long stf_barrier_fallback;
 extern long entry_flush_fallback;

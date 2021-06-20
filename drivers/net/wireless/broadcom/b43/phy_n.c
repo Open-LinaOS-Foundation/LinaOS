@@ -10,10 +10,10 @@
 
 */
 
-#include <linux/cordic.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/cordic.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #include "b43.h"
 #include "phy_n.h"

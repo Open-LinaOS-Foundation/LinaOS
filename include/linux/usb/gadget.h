@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * <linux/usb/gadget.h>
+ * <linaos/usb/gadget.h>
  *
- * We call the USB code inside a Linux-based peripheral device a "gadget"
+ * We call the USB code inside a LinaOS-based peripheral device a "gadget"
  * driver, except for the hardware-specific bus glue.  One USB host can
  * talk to many USB gadgets, but the gadgets are only able to communicate
  * to one host.
@@ -17,15 +17,15 @@
 #ifndef __LINUX_USB_GADGET_H
 #define __LINUX_USB_GADGET_H
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/usb/ch9.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/scatterlist.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
+#include <linaos/usb/ch9.h>
 
 #define UDC_TRACE_STR_MAX	512
 

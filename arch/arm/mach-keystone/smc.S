@@ -6,7 +6,7 @@
  * 	Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 /**
  * u32 keystone_cpu_smc(u32 command, u32 cpu, u32 addr)

@@ -5,7 +5,7 @@
  * Copyright IBM Corp. 2019
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/errno.h>
 #include <asm/sigp.h>
 

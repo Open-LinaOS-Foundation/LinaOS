@@ -57,9 +57,9 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <errno.h>
-#include <linux/rbtree.h>
-#include <linux/zalloc.h>
-#include <linux/err.h>
+#include <linaos/rbtree.h>
+#include <linaos/zalloc.h>
+#include <linaos/err.h>
 #include <btf.h>
 #include <libbpf.h>
 #include <parse-options.h>

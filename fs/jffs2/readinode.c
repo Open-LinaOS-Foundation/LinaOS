@@ -11,14 +11,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/crc32.h>
-#include <linux/pagemap.h>
-#include <linux/mtd/mtd.h>
-#include <linux/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/crc32.h>
+#include <linaos/pagemap.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/compiler.h>
 #include "nodelist.h"
 
 /*
@@ -1354,7 +1354,7 @@ int jffs2_do_read_inode(struct jffs2_sb_info *c, struct jffs2_inode_info *f,
 		case INO_STATE_READING:
 		case INO_STATE_PRESENT:
 			/* Eep. This should never happen. It can
-			happen if Linux calls read_inode() again
+			happen if LinaOS calls read_inode() again
 			before clear_inode() has finished though. */
 			JFFS2_ERROR("Eep. Trying to read_inode #%u when it's already in state %d!\n", ino, f->inocache->state);
 			/* Fail. That's probably better than allowing it to succeed */

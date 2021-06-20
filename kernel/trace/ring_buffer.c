@@ -4,28 +4,28 @@
  *
  * Copyright (C) 2008 Steven Rostedt <srostedt@redhat.com>
  */
-#include <linux/trace_recursion.h>
-#include <linux/trace_events.h>
-#include <linux/ring_buffer.h>
-#include <linux/trace_clock.h>
-#include <linux/sched/clock.h>
-#include <linux/trace_seq.h>
-#include <linux/spinlock.h>
-#include <linux/irq_work.h>
-#include <linux/security.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kthread.h>	/* for self test */
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/hash.h>
-#include <linux/list.h>
-#include <linux/cpu.h>
-#include <linux/oom.h>
+#include <linaos/trace_recursion.h>
+#include <linaos/trace_events.h>
+#include <linaos/ring_buffer.h>
+#include <linaos/trace_clock.h>
+#include <linaos/sched/clock.h>
+#include <linaos/trace_seq.h>
+#include <linaos/spinlock.h>
+#include <linaos/irq_work.h>
+#include <linaos/security.h>
+#include <linaos/uaccess.h>
+#include <linaos/hardirq.h>
+#include <linaos/kthread.h>	/* for self test */
+#include <linaos/module.h>
+#include <linaos/percpu.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/hash.h>
+#include <linaos/list.h>
+#include <linaos/cpu.h>
+#include <linaos/oom.h>
 
 #include <asm/local.h>
 

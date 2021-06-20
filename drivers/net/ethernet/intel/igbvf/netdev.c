@@ -3,24 +3,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/tcp.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pagemap.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/tcp.h>
+#include <linaos/ipv6.h>
+#include <linaos/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/prefetch.h>
-#include <linux/sctp.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_vlan.h>
+#include <linaos/prefetch.h>
+#include <linaos/sctp.h>
 
 #include "igbvf.h"
 

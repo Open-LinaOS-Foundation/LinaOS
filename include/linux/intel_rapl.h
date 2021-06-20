@@ -10,9 +10,9 @@
 #ifndef __INTEL_RAPL_H__
 #define __INTEL_RAPL_H__
 
-#include <linux/types.h>
-#include <linux/powercap.h>
-#include <linux/cpuhotplug.h>
+#include <linaos/types.h>
+#include <linaos/powercap.h>
+#include <linaos/cpuhotplug.h>
 
 enum rapl_domain_type {
 	RAPL_DOMAIN_PACKAGE,	/* entire package/socket */

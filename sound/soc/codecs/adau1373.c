@@ -6,13 +6,13 @@
  * Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/gcd.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/gcd.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

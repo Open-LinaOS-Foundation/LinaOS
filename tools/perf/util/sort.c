@@ -3,8 +3,8 @@
 #include <inttypes.h>
 #include <regex.h>
 #include <stdlib.h>
-#include <linux/mman.h>
-#include <linux/time64.h>
+#include <linaos/mman.h>
+#include <linaos/time64.h>
 #include "debug.h"
 #include "dso.h"
 #include "sort.h"
@@ -29,8 +29,8 @@
 #include "time-utils.h"
 #include "cgroup.h"
 #include "machine.h"
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
 
 regex_t		parent_regex;
 const char	default_parent_pattern[] = "^sys_|^do_page_fault";

@@ -33,8 +33,8 @@
 #ifndef MLX5_QP_H
 #define MLX5_QP_H
 
-#include <linux/mlx5/device.h>
-#include <linux/mlx5/driver.h>
+#include <linaos/mlx5/device.h>
+#include <linaos/mlx5/driver.h>
 
 #define MLX5_INVALID_LKEY	0x100
 /* UMR (3 WQE_BB's) + SIG (3 WQE_BB's) + PSV (mem) + PSV (wire) */

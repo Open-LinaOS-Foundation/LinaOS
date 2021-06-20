@@ -8,26 +8,26 @@
  * Based on fsl_elbc_nand.c, Copyright (c) 2006-2007 Freescale Semiconductor
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sh_dma.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sh_dma.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/sh_flctl.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/sh_flctl.h>
 
 static int flctl_4secc_ooblayout_sp_ecc(struct mtd_info *mtd, int section,
 					struct mtd_oob_region *oobregion)

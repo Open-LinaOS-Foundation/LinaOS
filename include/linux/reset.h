@@ -2,9 +2,9 @@
 #ifndef _LINUX_RESET_H_
 #define _LINUX_RESET_H_
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
 
 struct device;
 struct device_node;

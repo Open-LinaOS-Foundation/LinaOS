@@ -52,15 +52,15 @@
  *	and to initiate probes of the loop for new devices.
  */
 
-#include <linux/hil_mlc.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/list.h>
+#include <linaos/hil_mlc.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
+#include <linaos/list.h>
 
 MODULE_AUTHOR("Brian S. Julin <bri@calyx.com>");
 MODULE_DESCRIPTION("HIL MLC serio");

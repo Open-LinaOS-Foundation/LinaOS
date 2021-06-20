@@ -5,7 +5,7 @@
 #if !defined(_TRACE_OCFS2_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_OCFS2_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(ocfs2__int,
 	TP_PROTO(int num),

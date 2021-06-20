@@ -9,7 +9,7 @@ Digital TV Audio Device
 The Digital TV audio device controls the MPEG2 audio decoder of the Digital
 TV hardware. It can be accessed through ``/dev/dvb/adapter?/audio?``. Data
 types and ioctl definitions can be accessed by including
-``linux/dvb/audio.h`` in your application.
+``linaos/dvb/audio.h`` in your application.
 
 Please note that some Digital TV cards don’t have their own MPEG decoder, which
 results in the omission of the audio and video device.

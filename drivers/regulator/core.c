@@ -7,25 +7,25 @@
 //
 // Author: Liam Girdwood <lrg@slimlogic.co.uk>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/async.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/coupler.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/async.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/suspend.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/regulator/coupler.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/module.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/regulator.h>

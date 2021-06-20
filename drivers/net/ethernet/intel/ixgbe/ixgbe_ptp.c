@@ -2,8 +2,8 @@
 /* Copyright(c) 1999 - 2018 Intel Corporation. */
 
 #include "ixgbe.h"
-#include <linux/ptp_classify.h>
-#include <linux/clocksource.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/clocksource.h>
 
 /*
  * The 82599 and the X540 do not have true 64bit nanosecond scale
@@ -82,7 +82,7 @@
 
 /* In contrast, the X550 controller has two registers, SYSTIMEH and SYSTIMEL
  * which contain measurements of seconds and nanoseconds respectively. This
- * matches the standard linux representation of time in the kernel. In addition,
+ * matches the standard linaos representation of time in the kernel. In addition,
  * the X550 also has a SYSTIMER register which represents residue, or
  * subnanosecond overflow adjustments. To control clock adjustment, the TIMINCA
  * register is used, but it is unlike the X540 and 82599 devices. TIMINCA

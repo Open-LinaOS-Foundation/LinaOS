@@ -15,15 +15,15 @@
 // but provides extensions to which platform specific implementation of the gpio
 // and wakeup interrupts can be hooked to.
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/irqdomain.h>
-#include <linux/of_device.h>
-#include <linux/spinlock.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of_device.h>
+#include <linaos/spinlock.h>
 
 #include <dt-bindings/pinctrl/samsung.h>
 

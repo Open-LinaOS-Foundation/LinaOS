@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Zoned block devices handling.
  *
@@ -16,8 +16,8 @@
 #ifndef _UAPI_BLKZONED_H
 #define _UAPI_BLKZONED_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 
 /**
  * enum blk_zone_type - Types of zones allowed in a zoned device.

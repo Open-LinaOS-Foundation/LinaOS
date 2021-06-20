@@ -6,13 +6,13 @@
  * Author(s): Neil Armstrong <narmstrong@baylibre.com>
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/khadas-mcu.h>
-#include <linux/regmap.h>
-#include <linux/sysfs.h>
-#include <linux/thermal.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/khadas-mcu.h>
+#include <linaos/regmap.h>
+#include <linaos/sysfs.h>
+#include <linaos/thermal.h>
 
 #define MAX_LEVEL 3
 

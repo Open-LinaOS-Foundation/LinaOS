@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0-or-later WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-or-later WITH LinaOS-syscall-note */
 /* Types and definitions for AF_RXRPC.
  *
  * Copyright (C) 2007 Red Hat, Inc. All Rights Reserved.
@@ -8,9 +8,9 @@
 #ifndef _UAPI_LINUX_RXRPC_H
 #define _UAPI_LINUX_RXRPC_H
 
-#include <linux/types.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linaos/types.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
 
 /*
  * RxRPC socket address

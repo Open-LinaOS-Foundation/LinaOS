@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/9p/vfs_addr.c
+ *  linaos/fs/9p/vfs_addr.c
  *
  * This file contians vfs address (mmap) ops for 9P2000.
  *
@@ -8,18 +8,18 @@
  *  Copyright (C) 2002 by Ron Minnich <rminnich@lanl.gov>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/inet.h>
-#include <linux/pagemap.h>
-#include <linux/idr.h>
-#include <linux/sched.h>
-#include <linux/uio.h>
-#include <linux/bvec.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/stat.h>
+#include <linaos/string.h>
+#include <linaos/inet.h>
+#include <linaos/pagemap.h>
+#include <linaos/idr.h>
+#include <linaos/sched.h>
+#include <linaos/uio.h>
+#include <linaos/bvec.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

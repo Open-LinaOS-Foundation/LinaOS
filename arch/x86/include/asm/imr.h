@@ -8,7 +8,7 @@
 #ifndef _IMR_H
 #define _IMR_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * IMR agent access mask bits

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# The Linux Kernel documentation build configuration file, created by
+# The LinaOS Kernel documentation build configuration file, created by
 # sphinx-quickstart on Fri Feb 12 13:51:46 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -58,7 +58,7 @@ if major >= 3:
             # GCC Compiler types not parsed by Sphinx:
             "__restrict__",
 
-            # include/linux/compiler_types.h:
+            # include/linaos/compiler_types.h:
             "__iomem",
             "__kernel",
             "noinstr",
@@ -67,7 +67,7 @@ if major >= 3:
             "__rcu",
             "__user",
 
-            # include/linux/compiler_attributes.h:
+            # include/linaos/compiler_attributes.h:
             "__alias",
             "__aligned",
             "__aligned_largest",
@@ -97,15 +97,15 @@ if major >= 3:
             "__weak",
             "noinline",
 
-            # include/linux/memblock.h:
+            # include/linaos/memblock.h:
             "__init_memblock",
             "__meminit",
 
-            # include/linux/init.h:
+            # include/linaos/init.h:
             "__init",
             "__ref",
 
-            # include/linux/linkage.h:
+            # include/linaos/linkage.h:
             "asmlinkage",
         ]
 
@@ -133,7 +133,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'The Linux Kernel'
+project = 'The LinaOS Kernel'
 copyright = 'The kernel development community'
 author = 'The kernel development community'
 
@@ -326,7 +326,7 @@ html_use_smartypants = False
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'TheLinuxKerneldoc'
+htmlhelp_basename = 'TheLinaOSKerneldoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -414,7 +414,7 @@ for fn in os.listdir('.'):
                 break
         if not has:
             latex_documents.append((doc, fn + '.tex',
-                                    'Linux %s Documentation' % fn.capitalize(),
+                                    'LinaOS %s Documentation' % fn.capitalize(),
                                     'The kernel development community',
                                     'manual'))
 
@@ -444,7 +444,7 @@ for fn in os.listdir('.'):
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'thelinuxkernel', 'The Linux Kernel Documentation',
+    (master_doc, 'thelinaoskernel', 'The LinaOS Kernel Documentation',
      [author], 1)
 ]
 
@@ -458,8 +458,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'TheLinuxKernel', 'The Linux Kernel Documentation',
-     author, 'TheLinuxKernel', 'One line description of project.',
+    (master_doc, 'TheLinaOSKernel', 'The LinaOS Kernel Documentation',
+     author, 'TheLinaOSKernel', 'One line description of project.',
      'Miscellaneous'),
 ]
 

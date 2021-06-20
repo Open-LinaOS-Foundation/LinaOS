@@ -8,7 +8,7 @@
 #ifndef __ASM_LDT_H
 #define __ASM_LDT_H
 
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 #include <asm/ldt.h>
 
 extern void ldt_host_info(void);

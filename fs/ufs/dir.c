@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ufs/ufs_dir.c
+ *  linaos/fs/ufs/ufs_dir.c
  *
  * Copyright (C) 1996
  * Adrian Rodriguez (adrian@franklins-tower.rutgers.edu)
@@ -17,10 +17,10 @@
  * Evgeniy Dushistov <dushistov@mail.ru> based on ext2 code base.
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/swap.h>
-#include <linux/iversion.h>
+#include <linaos/time.h>
+#include <linaos/fs.h>
+#include <linaos/swap.h>
+#include <linaos/iversion.h>
 
 #include "ufs_fs.h"
 #include "ufs.h"

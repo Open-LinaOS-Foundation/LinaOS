@@ -22,9 +22,9 @@ KBUILD_DEFCONFIG := or1ksim_defconfig
 OBJCOPYFLAGS    := -O binary -R .note -R .comment -S
 LIBGCC 		:= $(shell $(CC) $(KBUILD_CFLAGS) -print-libgcc-file-name)
 
-KBUILD_CFLAGS	+= -pipe -ffixed-r10 -D__linux__
+KBUILD_CFLAGS	+= -pipe -ffixed-r10 -D__linaos__
 
-all: vmlinux.bin
+all: vmlinaos.bin
 
 boot := arch/$(ARCH)/boot
 
@@ -45,9 +45,9 @@ head-y 		:= arch/openrisc/kernel/head.o
 core-y		+= arch/openrisc/
 libs-y		+= $(LIBGCC)
 
-PHONY += vmlinux.bin
+PHONY += vmlinaos.bin
 
-vmlinux.bin: vmlinux
+vmlinaos.bin: vmlinaos
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 archclean:

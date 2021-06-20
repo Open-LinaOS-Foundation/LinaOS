@@ -15,8 +15,8 @@
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
-#include <linux/bpf.h>
-#include <linux/perf_event.h>
+#include <linaos/bpf.h>
+#include <linaos/perf_event.h>
 #include <sys/ioctl.h>
 #include <sys/mman.h>
 #include <sys/syscall.h>

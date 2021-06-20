@@ -3,7 +3,7 @@
 
 #include "wifi.h"
 #include "stats.h"
-#include <linux/export.h>
+#include <linaos/export.h>
 
 u8 rtl_query_rxpwrpercentage(s8 antpower)
 {

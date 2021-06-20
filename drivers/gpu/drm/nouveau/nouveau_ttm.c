@@ -23,8 +23,8 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/limits.h>
-#include <linux/swiotlb.h>
+#include <linaos/limits.h>
+#include <linaos/swiotlb.h>
 
 #include "nouveau_drv.h"
 #include "nouveau_gem.h"

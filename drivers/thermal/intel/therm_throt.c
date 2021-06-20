@@ -14,16 +14,16 @@
  * Credits: Adapted from Zwane Mwaikambo's original code in mce_intel.c.
  *          Inspired by Ross Biro's and Al Borchers' counter code.
  */
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/percpu.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
+#include <linaos/interrupt.h>
+#include <linaos/notifier.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/percpu.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/smp.h>
+#include <linaos/cpu.h>
 
 #include <asm/processor.h>
 #include <asm/thermal.h>

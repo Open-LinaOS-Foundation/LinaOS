@@ -9,7 +9,7 @@
 #include <drv_types.h>
 #include <rtw_debug.h>
 #include <hal_data.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 u8 PHY_GetTxPowerByRateBase(struct adapter *Adapter, u8 Band, u8 RfPath,
 			    u8 TxNum, enum rate_section RateSection)

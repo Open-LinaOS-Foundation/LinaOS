@@ -7,10 +7,10 @@ Introduction
 
 Modern SoCs typically have heterogeneous remote processor devices in asymmetric
 multiprocessing (AMP) configurations, which may be running different instances
-of operating system, whether it's Linux or any other flavor of real-time OS.
+of operating system, whether it's LinaOS or any other flavor of real-time OS.
 
 OMAP4, for example, has dual Cortex-A9, dual Cortex-M3 and a C64x+ DSP.
-In a typical configuration, the dual cortex-A9 is running Linux in a SMP
+In a typical configuration, the dual cortex-A9 is running LinaOS in a SMP
 configuration, and each of the other three cores (two M3 cores and a DSP)
 is running its own instance of RTOS in an AMP configuration.
 
@@ -80,7 +80,7 @@ Typical usage
 
 ::
 
-  #include <linux/remoteproc.h>
+  #include <linaos/remoteproc.h>
 
   /* in case we were given a valid 'rproc' handle */
   int dummy_rproc_example(struct rproc *my_rproc)
@@ -333,7 +333,7 @@ Here are the various resource types that are currently supported::
   };
 
 For more details regarding a specific resource type, please see its
-dedicated structure in include/linux/remoteproc.h.
+dedicated structure in include/linaos/remoteproc.h.
 
 We also expect that platform-specific resource entries will show up
 at some point. When that happens, we could easily add a new RSC_PLATFORM

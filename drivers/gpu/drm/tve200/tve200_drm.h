@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2006-2008 Intel Corporation
  * Copyright (C) 2007 Amos Lee <amos_lee@storlinksemi.com>
- * Copyright (C) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (C) 2007 Dave Airlie <airlied@linaos.ie>
  * Copyright (C) 2011 Texas Instruments
  * Copyright (C) 2017 Eric Anholt
  */
@@ -13,7 +13,7 @@
 #ifndef _TVE200_DRM_H_
 #define _TVE200_DRM_H_
 
-#include <linux/irqreturn.h>
+#include <linaos/irqreturn.h>
 
 #include <drm/drm_simple_kms_helper.h>
 

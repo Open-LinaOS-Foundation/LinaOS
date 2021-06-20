@@ -3,13 +3,13 @@
  * Copyright (c) 2012, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/io.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/clk/tegra.h>
-#include <linux/delay.h>
+#include <linaos/io.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clkdev.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/clk/tegra.h>
+#include <linaos/delay.h>
 #include <dt-bindings/clock/tegra20-car.h>
 
 #include "clk.h"

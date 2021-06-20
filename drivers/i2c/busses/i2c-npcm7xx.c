@@ -4,21 +4,21 @@
  *
  * Copyright (C) 2020 Nuvoton Technologies tali.perry@nuvoton.com
  */
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/debugfs.h>
+#include <linaos/errno.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/irq.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 enum i2c_mode {
 	I2C_MASTER,

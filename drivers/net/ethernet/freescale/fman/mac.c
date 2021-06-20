@@ -31,18 +31,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/device.h>
-#include <linux/phy.h>
-#include <linux/netdevice.h>
-#include <linux/phy_fixed.h>
-#include <linux/etherdevice.h>
-#include <linux/libfdt_env.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_net.h>
+#include <linaos/of_mdio.h>
+#include <linaos/device.h>
+#include <linaos/phy.h>
+#include <linaos/netdevice.h>
+#include <linaos/phy_fixed.h>
+#include <linaos/etherdevice.h>
+#include <linaos/libfdt_env.h>
 
 #include "mac.h"
 #include "fman_mac.h"

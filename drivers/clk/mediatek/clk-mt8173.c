@@ -4,9 +4,9 @@
  * Author: James Liao <jamesjj.liao@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 
 #include "clk-mtk.h"
 #include "clk-gate.h"

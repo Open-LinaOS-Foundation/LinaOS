@@ -9,8 +9,8 @@
 #ifndef _SND_SOC_PCM512X
 #define _SND_SOC_PCM512X
 
-#include <linux/pm.h>
-#include <linux/regmap.h>
+#include <linaos/pm.h>
+#include <linaos/regmap.h>
 
 #define PCM512x_VIRT_BASE 0x100
 #define PCM512x_PAGE_LEN  0x100

@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - "RIM I" (entirely mem-mapped) cards
+ * LinaOS ARCnet driver - "RIM I" (entirely mem-mapped) cards
  *
  * Written 1994-1999 by Avery Pennarun.
  * Written 1999-2000 by Martin Mares <mj@ucw.cz>.
@@ -27,16 +27,16 @@
 
 #define pr_fmt(fmt) "arcnet:" KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/memblock.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 
 #include "arcdevice.h"
 #include "com9026.h"

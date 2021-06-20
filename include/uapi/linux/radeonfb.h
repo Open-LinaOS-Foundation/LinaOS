@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __LINUX_RADEONFB_H__
 #define __LINUX_RADEONFB_H__
 
 #include <asm/ioctl.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define ATY_RADEON_LCD_ON	0x00000001
 #define ATY_RADEON_CRT_ON	0x00000002

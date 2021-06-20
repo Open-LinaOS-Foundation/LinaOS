@@ -6,12 +6,12 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/ioport.h>
-#include <linux/of_address.h>
-#include <linux/of_graph.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
+#include <linaos/clk-provider.h>
+#include <linaos/ioport.h>
+#include <linaos/of_address.h>
+#include <linaos/of_graph.h>
+#include <linaos/of_irq.h>
+#include <linaos/regmap.h>
 
 #include <video/videomode.h>
 

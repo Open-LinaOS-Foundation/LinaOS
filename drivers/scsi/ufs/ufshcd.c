@@ -2,20 +2,20 @@
 /*
  * Universal Flash Storage Host controller driver Core
  * Copyright (C) 2011-2013 Samsung India Software Operations
- * Copyright (c) 2013-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2016, The LinaOS Foundation. All rights reserved.
  *
  * Authors:
  *	Santosh Yaraganavi <santosh.sy@samsung.com>
  *	Vinayak Holikatti <h.vinayak@samsung.com>
  */
 
-#include <linux/async.h>
-#include <linux/devfreq.h>
-#include <linux/nls.h>
-#include <linux/of.h>
-#include <linux/bitfield.h>
-#include <linux/blk-pm.h>
-#include <linux/blkdev.h>
+#include <linaos/async.h>
+#include <linaos/devfreq.h>
+#include <linaos/nls.h>
+#include <linaos/of.h>
+#include <linaos/bitfield.h>
+#include <linaos/blk-pm.h>
+#include <linaos/blkdev.h>
 #include "ufshcd.h"
 #include "ufs_quirks.h"
 #include "unipro.h"

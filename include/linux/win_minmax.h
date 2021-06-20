@@ -6,7 +6,7 @@
 #ifndef MINMAX_H
 #define MINMAX_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* A single data point for our parameterized min-max tracker */
 struct minmax_sample {

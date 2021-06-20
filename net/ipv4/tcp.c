@@ -244,30 +244,30 @@
 #define pr_fmt(fmt) "TCP: " fmt
 
 #include <crypto/hash.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/poll.h>
-#include <linux/inet_diag.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/skbuff.h>
-#include <linux/scatterlist.h>
-#include <linux/splice.h>
-#include <linux/net.h>
-#include <linux/socket.h>
-#include <linux/random.h>
-#include <linux/memblock.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
-#include <linux/cache.h>
-#include <linux/err.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/errqueue.h>
-#include <linux/static_key.h>
-#include <linux/btf.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/poll.h>
+#include <linaos/inet_diag.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/skbuff.h>
+#include <linaos/scatterlist.h>
+#include <linaos/splice.h>
+#include <linaos/net.h>
+#include <linaos/socket.h>
+#include <linaos/random.h>
+#include <linaos/memblock.h>
+#include <linaos/highmem.h>
+#include <linaos/swap.h>
+#include <linaos/cache.h>
+#include <linaos/err.h>
+#include <linaos/time.h>
+#include <linaos/slab.h>
+#include <linaos/errqueue.h>
+#include <linaos/static_key.h>
+#include <linaos/btf.h>
 
 #include <net/icmp.h>
 #include <net/inet_common.h>
@@ -277,7 +277,7 @@
 #include <net/ip.h>
 #include <net/sock.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/ioctls.h>
 #include <net/busy_poll.h>
 
@@ -2590,12 +2590,12 @@ void tcp_set_state(struct sock *sk, int state)
 	BUILD_BUG_ON((int)BPF_TCP_MAX_STATES != (int)TCP_MAX_STATES);
 
 	/* bpf uapi header bpf.h defines an anonymous enum with values
-	 * BPF_TCP_* used by bpf programs. Currently gcc built vmlinux
+	 * BPF_TCP_* used by bpf programs. Currently gcc built vmlinaos
 	 * is able to emit this enum in DWARF due to the above BUILD_BUG_ON.
-	 * But clang built vmlinux does not have this enum in DWARF
+	 * But clang built vmlinaos does not have this enum in DWARF
 	 * since clang removes the above code before generating IR/debuginfo.
 	 * Let us explicitly emit the type debuginfo to ensure the
-	 * above-mentioned anonymous enum in the vmlinux DWARF and hence BTF
+	 * above-mentioned anonymous enum in the vmlinaos DWARF and hence BTF
 	 * regardless of which compiler is used.
 	 */
 	BTF_TYPE_EMIT_ENUM(BPF_TCP_ESTABLISHED);
@@ -2773,13 +2773,13 @@ void __tcp_close(struct sock *sk, long timeout)
 		 * rather than queued out of window. Purists blame.
 		 *
 		 * F.e. "RFC state" is ESTABLISHED,
-		 * if Linux state is FIN-WAIT-1, but FIN is still not sent.
+		 * if LinaOS state is FIN-WAIT-1, but FIN is still not sent.
 		 *
 		 * The visible declinations are that sometimes
 		 * we enter time-wait state, when it is not required really
 		 * (harmless), do not send active resets, when they are
 		 * required by specs (TCP_ESTABLISHED, TCP_CLOSE_WAIT, when
-		 * they look as CLOSING or LAST_ACK for Linux)
+		 * they look as CLOSING or LAST_ACK for LinaOS)
 		 * Probably, I missed some more holelets.
 		 * 						--ANK
 		 * XXX (TFO) - To start off we don't support SYN+ACK+FIN
@@ -2950,7 +2950,7 @@ int tcp_disconnect(struct sock *sk, int flags)
 	} else if (tcp_need_reset(old_state) ||
 		   (tp->snd_nxt != tp->write_seq &&
 		    (1 << old_state) & (TCPF_CLOSING | TCPF_LAST_ACK))) {
-		/* The last check adjusts for discrepancy of Linux wrt. RFC
+		/* The last check adjusts for discrepancy of LinaOS wrt. RFC
 		 * states
 		 */
 		tcp_send_active_reset(sk, gfp_any());

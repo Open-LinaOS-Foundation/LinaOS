@@ -9,16 +9,16 @@
  * (originally switch class is supported)
  */
 
-#include <linux/devm-helpers.h>
-#include <linux/extcon-provider.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/devm-helpers.h>
+#include <linaos/extcon-provider.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 
 /**
  * struct gpio_extcon_data - A simple GPIO-controlled extcon device state container.

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright (c) 2019 Mellanox Technologies. All rights reserved.
  */
@@ -6,8 +6,8 @@
 #ifndef _RDMA_COUNTER_H_
 #define _RDMA_COUNTER_H_
 
-#include <linux/mutex.h>
-#include <linux/pid_namespace.h>
+#include <linaos/mutex.h>
+#include <linaos/pid_namespace.h>
 
 #include <rdma/restrack.h>
 #include <rdma/rdma_netlink.h>

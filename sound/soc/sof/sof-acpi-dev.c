@@ -5,13 +5,13 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@linaos.intel.com>
 //
 
-#include <linux/acpi.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linaos/acpi.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
 #include <sound/soc-acpi.h>
 #include <sound/soc-acpi-intel-match.h>
 #include <sound/sof.h>

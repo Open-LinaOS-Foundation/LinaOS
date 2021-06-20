@@ -9,7 +9,7 @@
 #ifndef _REGS_MFC_V8_H
 #define _REGS_MFC_V8_H
 
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 #include "regs-mfc-v7.h"
 
 /* Additional registers for v8 */

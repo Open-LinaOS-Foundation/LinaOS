@@ -2,7 +2,7 @@
 
 #define RO_EXCEPTION_TABLE_ALIGN	16
 
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 #include <asm/page.h>
 #include <asm/thread_info.h>
 

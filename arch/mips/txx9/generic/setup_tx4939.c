@@ -1,6 +1,6 @@
 /*
  * TX4939 setup routines
- * Based on linux/arch/mips/txx9/generic/setup_tx4938.c,
+ * Based on linaos/arch/mips/txx9/generic/setup_tx4938.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * 2003-2005 (c) MontaVista Software, Inc.
@@ -10,18 +10,18 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/param.h>
-#include <linux/ptrace.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/txx9/ndfmc.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/notifier.h>
+#include <linaos/device.h>
+#include <linaos/ethtool.h>
+#include <linaos/param.h>
+#include <linaos/ptrace.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/txx9/ndfmc.h>
 #include <asm/reboot.h>
 #include <asm/traps.h>
 #include <asm/txx9irq.h>

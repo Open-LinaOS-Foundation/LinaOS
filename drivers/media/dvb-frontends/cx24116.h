@@ -2,14 +2,14 @@
 /*
     Conexant cx24116/cx24118 - DVBS/S2 Satellite demod/tuner driver
 
-    Copyright (C) 2006 Steven Toth <stoth@linuxtv.com>
+    Copyright (C) 2006 Steven Toth <stoth@linaostv.com>
 
 */
 
 #ifndef CX24116_H
 #define CX24116_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 struct cx24116_config {
 	/* the demodulator's i2c address */

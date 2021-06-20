@@ -10,19 +10,19 @@
  * This driver has been derived from v2.1 of the visor driver.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/atomic.h>
+#include <linaos/usb.h>
+#include <linaos/usb/serial.h>
 
 /* the mode to be set when the port ist opened */
 static int initial_mode = 1;

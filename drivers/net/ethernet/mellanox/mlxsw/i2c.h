@@ -4,7 +4,7 @@
 #ifndef _MLXSW_I2C_H
 #define _MLXSW_I2C_H
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 #if IS_ENABLED(CONFIG_MLXSW_I2C)
 

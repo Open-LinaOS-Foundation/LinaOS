@@ -10,7 +10,7 @@
 #define omap_readw(reg)		0
 #define omap_writew(val, reg)	do {} while (0)
 #endif
-#include <linux/input/matrix_keypad.h>
+#include <linaos/input/matrix_keypad.h>
 
 struct omap_kp_platform_data {
 	int rows;

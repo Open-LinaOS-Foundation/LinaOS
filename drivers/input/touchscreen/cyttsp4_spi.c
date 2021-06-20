@@ -16,9 +16,9 @@
 
 #include "cyttsp4_core.h"
 
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/spi/spi.h>
+#include <linaos/delay.h>
+#include <linaos/input.h>
+#include <linaos/spi/spi.h>
 
 #define CY_SPI_WR_OP		0x00 /* r/~w */
 #define CY_SPI_RD_OP		0x01

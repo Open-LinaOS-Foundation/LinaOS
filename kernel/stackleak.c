@@ -4,18 +4,18 @@
  * before returning to userspace. It's part of the STACKLEAK feature
  * ported from grsecurity/PaX.
  *
- * Author: Alexander Popov <alex.popov@linux.com>
+ * Author: Alexander Popov <alex.popov@linaos.com>
  *
  * STACKLEAK reduces the information which kernel stack leak bugs can
  * reveal and blocks some uninitialized stack variable attacks.
  */
 
-#include <linux/stackleak.h>
-#include <linux/kprobes.h>
+#include <linaos/stackleak.h>
+#include <linaos/kprobes.h>
 
 #ifdef CONFIG_STACKLEAK_RUNTIME_DISABLE
-#include <linux/jump_label.h>
-#include <linux/sysctl.h>
+#include <linaos/jump_label.h>
+#include <linaos/sysctl.h>
 
 static DEFINE_STATIC_KEY_FALSE(stack_erasing_bypass);
 

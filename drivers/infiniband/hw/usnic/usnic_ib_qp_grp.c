@@ -30,10 +30,10 @@
  * SOFTWARE.
  *
  */
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <linaos/bug.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
 
 #include "usnic_log.h"
 #include "usnic_vnic.h"

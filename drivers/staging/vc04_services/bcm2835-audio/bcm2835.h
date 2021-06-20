@@ -4,9 +4,9 @@
 #ifndef __SOUND_ARM_BCM2835_H
 #define __SOUND_ARM_BCM2835_H
 
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/raspberrypi/vchiq.h>
+#include <linaos/device.h>
+#include <linaos/wait.h>
+#include <linaos/raspberrypi/vchiq.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm-indirect.h>

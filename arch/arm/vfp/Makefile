@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# linux/arch/arm/vfp/Makefile
+# linaos/arch/arm/vfp/Makefile
 #
 # Copyright (C) 2001 ARM Limited
 #

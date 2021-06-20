@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Intel IXP4xx HSS (synchronous serial port) driver for Linux
+ * Intel IXP4xx HSS (synchronous serial port) driver for LinaOS
  *
  * Copyright (C) 2007-2008 Krzysztof Hałasa <khc@pm.waw.pl>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/cdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/fs.h>
-#include <linux/hdlc.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/wan_ixp4xx_hss.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/soc/ixp4xx/npe.h>
-#include <linux/soc/ixp4xx/qmgr.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
+#include <linaos/cdev.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/fs.h>
+#include <linaos/hdlc.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/wan_ixp4xx_hss.h>
+#include <linaos/poll.h>
+#include <linaos/slab.h>
+#include <linaos/soc/ixp4xx/npe.h>
+#include <linaos/soc/ixp4xx/qmgr.h>
 
 #define DEBUG_DESC		0
 #define DEBUG_RX		0

@@ -118,7 +118,7 @@ Notes
 -----
 Driver expects it is registered using the i2c_board_info mechanism.
 To register the chip at address 0x63 on specific adapter, set the platform data
-according to include/linux/platform_data/leds-lm3556.h, set the i2c board info
+according to include/linaos/platform_data/leds-lm3556.h, set the i2c board info
 
 Example::
 

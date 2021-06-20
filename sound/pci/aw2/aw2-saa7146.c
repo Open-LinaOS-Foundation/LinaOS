@@ -10,11 +10,11 @@
 
 #define AW2_SAA7146_M
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

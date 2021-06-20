@@ -7,7 +7,7 @@
 #
 # Copyright (C) IBM Corporation, 2013
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@linaos.ibm.com>
 
 if test -n "$TORTURE_ALLOTED_CPUS"
 then

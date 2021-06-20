@@ -4,14 +4,14 @@
  * Author: Gregory CLEMENT <gregory.clement@free-electrons.com>
  */
 
-#include <linux/io.h>
-#include <linux/mbus.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
+#include <linaos/io.h>
+#include <linaos/mbus.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/phy/phy.h>
 
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
 
 #include "xhci-mvebu.h"
 #include "xhci.h"

@@ -9,8 +9,8 @@
 #ifndef _BPF_JIT_H
 #define _BPF_JIT_H
 
-#include <linux/bpf.h>
-#include <linux/filter.h>
+#include <linaos/bpf.h>
+#include <linaos/filter.h>
 #include <asm/cacheflush.h>
 
 static inline bool rvc_enabled(void)

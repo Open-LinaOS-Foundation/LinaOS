@@ -3,10 +3,10 @@
  * Copyright (c) 2010 Sascha Hauer <s.hauer@pengutronix.de>
  * Copyright (C) 2005-2009 Freescale Semiconductor, Inc.
  */
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
 
 #include <video/imx-ipu-v3.h>
 #include "ipu-prv.h"

@@ -6,8 +6,8 @@
  * in an architecture-specific manner due to speed.
  */
  
-#include <linux/compiler.h>
-#include <linux/export.h>
+#include <linaos/compiler.h>
+#include <linaos/export.h>
 #include <asm/checksum.h>
 
 static inline unsigned short from32to16(unsigned a) 

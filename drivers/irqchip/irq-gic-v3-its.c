@@ -4,35 +4,35 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/bitfield.h>
-#include <linux/bitmap.h>
-#include <linux/cpu.h>
-#include <linux/crash_dump.h>
-#include <linux/delay.h>
-#include <linux/dma-iommu.h>
-#include <linux/efi.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/irqdomain.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
+#include <linaos/acpi.h>
+#include <linaos/acpi_iort.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitmap.h>
+#include <linaos/cpu.h>
+#include <linaos/crash_dump.h>
+#include <linaos/delay.h>
+#include <linaos/dma-iommu.h>
+#include <linaos/efi.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/irqdomain.h>
+#include <linaos/list.h>
+#include <linaos/log2.h>
+#include <linaos/memblock.h>
+#include <linaos/mm.h>
+#include <linaos/msi.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_pci.h>
+#include <linaos/of_platform.h>
+#include <linaos/percpu.h>
+#include <linaos/slab.h>
+#include <linaos/syscore_ops.h>
 
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-gic-v3.h>
-#include <linux/irqchip/arm-gic-v4.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/arm-gic-v3.h>
+#include <linaos/irqchip/arm-gic-v4.h>
 
 #include <asm/cputype.h>
 #include <asm/exception.h>

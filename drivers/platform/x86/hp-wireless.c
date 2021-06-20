@@ -5,12 +5,12 @@
  *  Copyright (C) 2014-2017 Alex Hung <alex.hung@canonical.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/platform_device.h>
+#include <linaos/acpi.h>
 #include <acpi/acpi_bus.h>
 
 MODULE_LICENSE("GPL");

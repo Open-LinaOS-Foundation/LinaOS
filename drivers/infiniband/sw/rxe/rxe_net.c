@@ -1,17 +1,17 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /*
  * Copyright (c) 2016 Mellanox Technologies Ltd. All rights reserved.
  * Copyright (c) 2015 System Fabric Works, Inc. All rights reserved.
  */
 
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_arp.h>
+#include <linaos/netdevice.h>
+#include <linaos/if.h>
+#include <linaos/if_vlan.h>
 #include <net/udp_tunnel.h>
 #include <net/sch_generic.h>
-#include <linux/netfilter.h>
+#include <linaos/netfilter.h>
 #include <rdma/ib_addr.h>
 
 #include "rxe.h"

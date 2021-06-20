@@ -6,7 +6,7 @@
 #ifndef _ASM_RISCV_PROCESSOR_H
 #define _ASM_RISCV_PROCESSOR_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 #include <vdso/processor.h>
 

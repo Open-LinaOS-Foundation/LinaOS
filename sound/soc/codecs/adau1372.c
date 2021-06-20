@@ -6,14 +6,14 @@
  * Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gcd.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/gcd.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

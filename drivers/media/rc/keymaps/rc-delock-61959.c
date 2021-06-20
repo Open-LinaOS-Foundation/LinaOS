@@ -5,7 +5,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /*
  * Keytable for remote provided with Delock 61959

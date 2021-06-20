@@ -14,8 +14,8 @@
 #ifndef __TEE_DEV_H__
 #define __TEE_DEV_H__
 
-#include <linux/device.h>
-#include <linux/mutex.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
 
 #define TEE_DEFAULT_TIMEOUT		10
 #define MAX_BUFFER_SIZE			988

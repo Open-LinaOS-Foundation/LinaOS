@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Squashfs - a compressed read only filesystem for Linux
+ * Squashfs - a compressed read only filesystem for LinaOS
  *
  * Copyright (c) 2002, 2003, 2004, 2005, 2006, 2007, 2008
  * Phillip Lougher <phillip@squashfs.org.uk>
@@ -16,16 +16,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/vfs.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/magic.h>
-#include <linux/xattr.h>
+#include <linaos/fs.h>
+#include <linaos/fs_context.h>
+#include <linaos/vfs.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/pagemap.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/magic.h>
+#include <linaos/xattr.h>
 
 #include "squashfs_fs.h"
 #include "squashfs_fs_sb.h"

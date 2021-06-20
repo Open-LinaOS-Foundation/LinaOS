@@ -2,8 +2,8 @@
 #ifndef _LINUX_START_KERNEL_H
 #define _LINUX_START_KERNEL_H
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 
 /* Define the prototype for start_kernel here, rather than cluttering
    up something else. */

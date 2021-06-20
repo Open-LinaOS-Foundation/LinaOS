@@ -18,8 +18,8 @@
 #ifndef __LINUX_MFD_TPS65912_H
 #define __LINUX_MFD_TPS65912_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
 
 /* List of registers for TPS65912 */
 #define TPS65912_DCDC1_CTRL		0x00

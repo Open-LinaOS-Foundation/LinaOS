@@ -5,7 +5,7 @@
 #ifndef __LINUX_MFD_GSC_H_
 #define __LINUX_MFD_GSC_H_
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 /* Device Addresses */
 #define GSC_MISC	0x20

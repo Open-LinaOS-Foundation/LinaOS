@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (c) 2013-2020, Intel Corporation. All rights reserved.
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) LinaOS driver
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/uuid.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/uuid.h>
 
-#include <linux/mei_cl_bus.h>
+#include <linaos/mei_cl_bus.h>
 
 #include "mei_dev.h"
 #include "client.h"
@@ -248,7 +248,7 @@ static void mei_mkhi_fix(struct mei_cl_device *cldev)
  * @cldev: me clients device
  */
 #if IS_ENABLED(CONFIG_INTEL_MEI_ME)
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include "hw-me-regs.h"
 static void mei_wd(struct mei_cl_device *cldev)
 {

@@ -6,9 +6,9 @@
 #ifndef BTRFS_QGROUP_H
 #define BTRFS_QGROUP_H
 
-#include <linux/spinlock.h>
-#include <linux/rbtree.h>
-#include <linux/kobject.h>
+#include <linaos/spinlock.h>
+#include <linaos/rbtree.h>
+#include <linaos/kobject.h>
 #include "ulist.h"
 #include "delayed-ref.h"
 

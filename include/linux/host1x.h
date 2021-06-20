@@ -6,8 +6,8 @@
 #ifndef __LINUX_HOST1X_H
 #define __LINUX_HOST1X_H
 
-#include <linux/device.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
 
 enum host1x_class {
 	HOST1X_CLASS_HOST1X = 0x1,

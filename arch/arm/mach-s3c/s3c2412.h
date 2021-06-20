@@ -2,7 +2,7 @@
 /*
  * Copyright (c) 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  */
 
 #ifndef __ARCH_ARM_MACH_S3C24XX_S3C2412_H

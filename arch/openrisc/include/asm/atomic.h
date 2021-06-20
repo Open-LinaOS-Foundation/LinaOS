@@ -9,7 +9,7 @@
 #ifndef __ASM_OPENRISC_ATOMIC_H
 #define __ASM_OPENRISC_ATOMIC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Atomically perform op with v->counter and i */
 #define ATOMIC_OP(op)							\

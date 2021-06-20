@@ -2,14 +2,14 @@
 /*
  * Copyright (c) 2005-2011 Atheros Communications Inc.
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _WMI_H_
 #define _WMI_H_
 
-#include <linux/types.h>
-#include <linux/ieee80211.h>
+#include <linaos/types.h>
+#include <linaos/ieee80211.h>
 
 /*
  * This file specifies the WMI interface for the Unified Software
@@ -68,7 +68,7 @@ struct wmi_cmd_hdr {
  * up with our own version. The idea is from fs/ntfs/endian.h.
  *
  * Use a_ prefix so that it doesn't conflict if we get proper support to
- * linux/types.h.
+ * linaos/types.h.
  */
 typedef __s32 __bitwise a_sle32;
 

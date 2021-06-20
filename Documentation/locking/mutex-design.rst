@@ -9,7 +9,7 @@ updated by Davidlohr Bueso <davidlohr@hp.com>
 What are mutexes?
 -----------------
 
-In the Linux kernel, mutexes refer to a particular locking primitive
+In the LinaOS kernel, mutexes refer to a particular locking primitive
 that enforces serialization on shared memory systems, and not only to
 the generic term referring to 'mutual exclusion' found in academia
 or similar theoretical text books. Mutexes are sleeping locks which
@@ -23,7 +23,7 @@ code (see Disadvantages).
 Implementation
 --------------
 
-Mutexes are represented by 'struct mutex', defined in include/linux/mutex.h
+Mutexes are represented by 'struct mutex', defined in include/linaos/mutex.h
 and implemented in kernel/locking/mutex.c. These locks use an atomic variable
 (->owner) to keep track of the lock state during its lifetime.  Field owner
 actually contains `struct task_struct *` to the current lock owner and it is

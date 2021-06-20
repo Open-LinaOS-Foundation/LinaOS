@@ -10,7 +10,7 @@
  * For Memory Regions. This stuff should probably be moved into rdmavt/mr.h once
  * drivers no longer need access to the MR directly.
  */
-#include <linux/percpu-refcount.h>
+#include <linaos/percpu-refcount.h>
 
 /*
  * A segment is a linear region of low physical memory.

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright IBM Corp. 2004, 2005
  * Interface implementation for communication with the z/VM control program
@@ -16,7 +16,7 @@
 #ifndef _UAPI_ASM_VMCP_H
 #define _UAPI_ASM_VMCP_H
 
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 
 #define VMCP_GETCODE	_IOR(0x10, 1, int)
 #define VMCP_SETBUF	_IOW(0x10, 2, int)

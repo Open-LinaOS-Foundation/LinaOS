@@ -7,14 +7,14 @@
 #define KMSG_COMPONENT "ism"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/err.h>
-#include <linux/ctype.h>
-#include <linux/processor.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/pci.h>
+#include <linaos/err.h>
+#include <linaos/ctype.h>
+#include <linaos/processor.h>
 #include <net/smc.h>
 
 #include <asm/debug.h>

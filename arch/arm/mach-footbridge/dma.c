@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/arm/kernel/dma-ebsa285.c
+ *  linaos/arch/arm/kernel/dma-ebsa285.c
  *
  *  Copyright (C) 1998 Phil Blundell
  *
@@ -11,10 +11,10 @@
  *   17-Mar-1999 RMK	Allow any EBSA285-like architecture to have
  *			ISA DMA controllers.
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/scatterlist.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
+#include <linaos/scatterlist.h>
 
 #include <asm/dma.h>
 

@@ -61,7 +61,7 @@ extern unsigned int bench_repeat;
 
 #ifndef HAVE_PTHREAD_ATTR_SETAFFINITY_NP
 #include <pthread.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 static inline int pthread_attr_setaffinity_np(pthread_attr_t *attr __maybe_unused,
 					      size_t cpusetsize __maybe_unused,
 					      cpu_set_t *cpuset __maybe_unused)

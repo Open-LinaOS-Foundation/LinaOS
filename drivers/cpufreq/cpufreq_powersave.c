@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/cpufreq/cpufreq_powersave.c
+ * linaos/drivers/cpufreq/cpufreq_powersave.c
  *
- * Copyright (C) 2002 - 2003 Dominik Brodowski <linux@brodo.de>
+ * Copyright (C) 2002 - 2003 Dominik Brodowski <linaos@brodo.de>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cpufreq.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linaos/cpufreq.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
 
 static void cpufreq_gov_powersave_limits(struct cpufreq_policy *policy)
 {
@@ -24,7 +24,7 @@ static struct cpufreq_governor cpufreq_gov_powersave = {
 	.flags		= CPUFREQ_GOV_STRICT_TARGET,
 };
 
-MODULE_AUTHOR("Dominik Brodowski <linux@brodo.de>");
+MODULE_AUTHOR("Dominik Brodowski <linaos@brodo.de>");
 MODULE_DESCRIPTION("CPUfreq policy governor 'powersave'");
 MODULE_LICENSE("GPL");
 

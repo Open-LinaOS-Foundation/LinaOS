@@ -20,12 +20,12 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
 #include <drm/drm_dp_dual_mode_helper.h>
 #include <drm/drm_print.h>

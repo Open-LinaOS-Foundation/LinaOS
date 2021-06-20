@@ -10,8 +10,8 @@
 #ifndef _ASM_BMIPS_H
 #define _ASM_BMIPS_H
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
+#include <linaos/compiler.h>
+#include <linaos/linkage.h>
 #include <asm/addrspace.h>
 #include <asm/mipsregs.h>
 #include <asm/hazards.h>
@@ -44,7 +44,7 @@
 
 #if !defined(__ASSEMBLY__)
 
-#include <linux/cpumask.h>
+#include <linaos/cpumask.h>
 #include <asm/r4kcache.h>
 #include <asm/smp-ops.h>
 

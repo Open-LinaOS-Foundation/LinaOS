@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2017-2018, The Linux foundation. All rights reserved.
+// Copyright (c) 2017-2018, The LinaOS foundation. All rights reserved.
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_runtime.h>
-#include <linux/qcom-geni-se.h>
-#include <linux/spi/spi.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/log2.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_opp.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/qcom-geni-se.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spinlock.h>
 
 /* SPI SE specific registers and respective register fields */
 #define SE_SPI_CPHA		0x224

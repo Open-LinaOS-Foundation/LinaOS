@@ -7,8 +7,8 @@
 #ifndef EF4_FILTER_H
 #define EF4_FILTER_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <linaos/types.h>
+#include <linaos/if_ether.h>
 #include <asm/byteorder.h>
 
 /**

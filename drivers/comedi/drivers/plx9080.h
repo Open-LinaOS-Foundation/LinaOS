@@ -15,12 +15,12 @@
 #ifndef __COMEDI_PLX9080_H
 #define __COMEDI_PLX9080_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
 
 /**
  * struct plx_dma_desc - DMA descriptor format for PLX PCI 9080

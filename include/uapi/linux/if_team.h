@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
- * include/linux/if_team.h - Network team device driver header
+ * include/linaos/if_team.h - Network team device driver header
  * Copyright (c) 2011 Jiri Pirko <jpirko@redhat.com>
  *
  * This program is free software; you can redistribute it and/or modify

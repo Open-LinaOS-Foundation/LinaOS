@@ -5,7 +5,7 @@
 #ifndef _LINUX_CRC64_H
 #define _LINUX_CRC64_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 u64 __pure crc64_be(u64 crc, const void *p, size_t len);
 #endif /* _LINUX_CRC64_H */

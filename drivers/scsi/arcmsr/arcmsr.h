@@ -1,6 +1,6 @@
 /*
 *******************************************************************************
-**        O.S   : Linux
+**        O.S   : LinaOS
 **   FILE NAME  : arcmsr.h
 **        BY    : Nick Cheng
 **   Description: SCSI RAID Device Driver for
@@ -42,7 +42,7 @@
 ** THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 *******************************************************************************
 */
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 struct device_attribute;
 /*The limit of outstanding scsi command that firmware can handle*/
 #define ARCMSR_MAX_FREECCB_NUM		1024
@@ -955,7 +955,7 @@ struct AdapterControlBlock
 struct CommandControlBlock{
 	/*x32:sizeof struct_CCB=(64+60)byte, x64:sizeof struct_CCB=(64+60)byte*/
 	struct list_head		list;		/*x32: 8byte, x64: 16byte*/
-	struct scsi_cmnd		*pcmd;		/*8 bytes pointer of linux scsi command */
+	struct scsi_cmnd		*pcmd;		/*8 bytes pointer of linaos scsi command */
 	struct AdapterControlBlock	*acb;		/*x32: 4byte, x64: 8byte*/
 	unsigned long			cdb_phyaddr;	/*x32: 4byte, x64: 8byte*/
 	uint32_t			arc_cdb_size;	/*x32:4byte,x64:4byte*/

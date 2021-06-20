@@ -10,15 +10,15 @@
  * that driver see drivers/spi/mpc52xx_psc_spi.c
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/of_platform.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/io.h>
-#include <linux/of_gpio.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/of_platform.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/spi/spi.h>
+#include <linaos/io.h>
+#include <linaos/of_gpio.h>
+#include <linaos/slab.h>
 #include <asm/time.h>
 #include <asm/mpc52xx.h>
 

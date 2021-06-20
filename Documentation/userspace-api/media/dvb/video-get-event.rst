@@ -56,7 +56,7 @@ This ioctl call returns an event of type video_event if available. If
 an event is not available, the behavior depends on whether the device is
 in blocking or non-blocking mode. In the latter case, the call fails
 immediately with errno set to ``EWOULDBLOCK``. In the former case, the call
-blocks until an event becomes available. The standard Linux poll()
+blocks until an event becomes available. The standard LinaOS poll()
 and/or select() system calls can be used with the device file descriptor
 to watch for new events. For select(), the file descriptor should be
 included in the exceptfds argument, and for poll(), POLLPRI should be

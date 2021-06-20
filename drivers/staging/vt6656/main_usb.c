@@ -21,10 +21,10 @@
  */
 #undef __NO_VERSION__
 
-#include <linux/bits.h>
-#include <linux/etherdevice.h>
-#include <linux/file.h>
-#include <linux/kernel.h>
+#include <linaos/bits.h>
+#include <linaos/etherdevice.h>
+#include <linaos/file.h>
+#include <linaos/kernel.h>
 #include "device.h"
 #include "card.h"
 #include "baseband.h"

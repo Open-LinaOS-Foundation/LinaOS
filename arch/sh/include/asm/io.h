@@ -13,12 +13,12 @@
  * While read{b,w,l,q} and write{b,w,l,q} contain memory barriers
  * automatically, there are also __raw versions, which do not.
  */
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include <asm/cache.h>
 #include <asm/addrspace.h>
 #include <asm/machvec.h>
 #include <asm/page.h>
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm-generic/iomap.h>
 
 #define __IO_PREFIX     generic

@@ -2,7 +2,7 @@
 /*
  *  Fujitsu Lifebook Application Panel button drive
  *
- *  Copyright (C) 2007 Stephen Hemminger <shemminger@linux-foundation.org>
+ *  Copyright (C) 2007 Stephen Hemminger <shemminger@linaos-foundation.org>
  *  Copyright (C) 2001-2003 Jochen Eisinger <jochen@penguin-breeder.org>
  *
  * Many Fujitsu Lifebook laptops have a small panel of buttons that are
@@ -13,13 +13,13 @@
  *	http://apanel.sourceforge.net/tech.php
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/io.h>
+#include <linaos/input.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
 
 #define APANEL_NAME	"Fujitsu Application Panel"
 #define APANEL		"apanel"
@@ -297,7 +297,7 @@ static void __exit apanel_cleanup(void)
 }
 module_exit(apanel_cleanup);
 
-MODULE_AUTHOR("Stephen Hemminger <shemminger@linux-foundation.org>");
+MODULE_AUTHOR("Stephen Hemminger <shemminger@linaos-foundation.org>");
 MODULE_DESCRIPTION(APANEL_NAME " driver");
 MODULE_LICENSE("GPL");
 

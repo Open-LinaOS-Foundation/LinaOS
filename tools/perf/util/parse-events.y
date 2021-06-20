@@ -10,9 +10,9 @@
 
 #include <fnmatch.h>
 #include <stdio.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/zalloc.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
+#include <linaos/zalloc.h>
 #include "pmu.h"
 #include "evsel.h"
 #include "parse-events.h"

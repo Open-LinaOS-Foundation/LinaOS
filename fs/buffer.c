@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/buffer.c
+ *  linaos/fs/buffer.c
  *
  *  Copyright (C) 1991, 1992, 2002  Linus Torvalds
  */
@@ -19,35 +19,35 @@
  * async buffer flushing, 1999 Andrea Arcangeli <andrea@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/syscalls.h>
-#include <linux/fs.h>
-#include <linux/iomap.h>
-#include <linux/mm.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/capability.h>
-#include <linux/blkdev.h>
-#include <linux/file.h>
-#include <linux/quotaops.h>
-#include <linux/highmem.h>
-#include <linux/export.h>
-#include <linux/backing-dev.h>
-#include <linux/writeback.h>
-#include <linux/hash.h>
-#include <linux/suspend.h>
-#include <linux/buffer_head.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/bio.h>
-#include <linux/cpu.h>
-#include <linux/bitops.h>
-#include <linux/mpage.h>
-#include <linux/bit_spinlock.h>
-#include <linux/pagevec.h>
-#include <linux/sched/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/syscalls.h>
+#include <linaos/fs.h>
+#include <linaos/iomap.h>
+#include <linaos/mm.h>
+#include <linaos/percpu.h>
+#include <linaos/slab.h>
+#include <linaos/capability.h>
+#include <linaos/blkdev.h>
+#include <linaos/file.h>
+#include <linaos/quotaops.h>
+#include <linaos/highmem.h>
+#include <linaos/export.h>
+#include <linaos/backing-dev.h>
+#include <linaos/writeback.h>
+#include <linaos/hash.h>
+#include <linaos/suspend.h>
+#include <linaos/buffer_head.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/bio.h>
+#include <linaos/cpu.h>
+#include <linaos/bitops.h>
+#include <linaos/mpage.h>
+#include <linaos/bit_spinlock.h>
+#include <linaos/pagevec.h>
+#include <linaos/sched/mm.h>
 #include <trace/events/block.h>
-#include <linux/fscrypt.h>
+#include <linaos/fscrypt.h>
 
 #include "internal.h"
 

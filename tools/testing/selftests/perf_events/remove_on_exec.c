@@ -23,7 +23,7 @@
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 #include <pthread.h>
 #include <signal.h>
 #include <sys/ioctl.h>

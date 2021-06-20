@@ -2,7 +2,7 @@
 /*
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_fourcc.h>

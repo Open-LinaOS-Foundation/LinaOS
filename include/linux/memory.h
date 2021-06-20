@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/memory.h - generic memory definition
+ * include/linaos/memory.h - generic memory definition
  *
  * This is mainly for topological representation. We define the
  * basic "struct memory_block" here, which can be embedded in per-arch
@@ -16,10 +16,10 @@
 #ifndef _LINUX_MEMORY_H_
 #define _LINUX_MEMORY_H_
 
-#include <linux/node.h>
-#include <linux/compiler.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
+#include <linaos/node.h>
+#include <linaos/compiler.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
 
 #define MIN_MEMORY_BLOCK_SIZE     (1UL << SECTION_SIZE_BITS)
 

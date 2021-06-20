@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: LGPL-2.1
-#include <linux/log2.h>
+#include <linaos/log2.h>
 
 #include "trace/beauty/generated/mmap_prot_array.c"
 static DEFINE_STRARRAY(mmap_prot, "PROT_");

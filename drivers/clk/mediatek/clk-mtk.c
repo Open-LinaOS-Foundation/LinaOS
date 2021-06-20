@@ -4,15 +4,15 @@
  * Author: James Liao <jamesjj.liao@mediatek.com>
  */
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/clkdev.h>
-#include <linux/mfd/syscon.h>
-#include <linux/device.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/clkdev.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/device.h>
 
 #include "clk-mtk.h"
 #include "clk-gate.h"

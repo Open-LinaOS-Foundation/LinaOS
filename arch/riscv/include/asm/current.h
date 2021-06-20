@@ -10,8 +10,8 @@
 #ifndef _ASM_RISCV_CURRENT_H
 #define _ASM_RISCV_CURRENT_H
 
-#include <linux/bug.h>
-#include <linux/compiler.h>
+#include <linaos/bug.h>
+#include <linaos/compiler.h>
 
 #ifndef __ASSEMBLY__
 

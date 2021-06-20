@@ -2,7 +2,7 @@
 /*
  * Device tree based initialization code for reserved memory.
  *
- * Copyright (c) 2013, 2015 The Linux Foundation. All Rights Reserved.
+ * Copyright (c) 2013, 2015 The LinaOS Foundation. All Rights Reserved.
  * Copyright (c) 2013,2014 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
  * Author: Marek Szyprowski <m.szyprowski@samsung.com>
@@ -11,16 +11,16 @@
 
 #define pr_fmt(fmt)	"OF: reserved mem: " fmt
 
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
-#include <linux/mm.h>
-#include <linux/sizes.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
-#include <linux/memblock.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
+#include <linaos/mm.h>
+#include <linaos/sizes.h>
+#include <linaos/of_reserved_mem.h>
+#include <linaos/sort.h>
+#include <linaos/slab.h>
+#include <linaos/memblock.h>
 
 #define MAX_RESERVED_REGIONS	64
 static struct reserved_mem reserved_mem[MAX_RESERVED_REGIONS];
@@ -261,7 +261,7 @@ void __init fdt_init_reserved_mem(void)
 		nomap = of_get_flat_dt_prop(node, "no-map", NULL) != NULL;
 		prop = of_get_flat_dt_prop(node, "phandle", &len);
 		if (!prop)
-			prop = of_get_flat_dt_prop(node, "linux,phandle", &len);
+			prop = of_get_flat_dt_prop(node, "linaos,phandle", &len);
 		if (prop)
 			rmem->phandle = of_read_number(prop, len/4);
 

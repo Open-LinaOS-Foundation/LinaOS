@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI__LINUX_RTNETLINK_H
 #define _UAPI__LINUX_RTNETLINK_H
 
-#include <linux/types.h>
-#include <linux/netlink.h>
-#include <linux/if_link.h>
-#include <linux/if_addr.h>
-#include <linux/neighbour.h>
+#include <linaos/types.h>
+#include <linaos/netlink.h>
+#include <linaos/if_link.h>
+#include <linaos/if_addr.h>
+#include <linaos/neighbour.h>
 
 /* rtnetlink families. Values up to 127 are reserved for real address
  * families, values above 128 may be used arbitrarily.
@@ -330,7 +330,7 @@ enum rt_scope_t {
 #define RTM_F_OFFLOAD_FAILED	0x20000000 /* route offload failed, this value
 					    * is chosen to avoid conflicts with
 					    * other flags defined in
-					    * include/uapi/linux/ipv6_route.h
+					    * include/uapi/linaos/ipv6_route.h
 					    */
 
 /* Reserved table identifiers */

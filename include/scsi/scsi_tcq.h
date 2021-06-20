@@ -2,7 +2,7 @@
 #ifndef _SCSI_SCSI_TCQ_H
 #define _SCSI_SCSI_TCQ_H
 
-#include <linux/blkdev.h>
+#include <linaos/blkdev.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>

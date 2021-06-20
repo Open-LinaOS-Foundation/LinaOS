@@ -3,15 +3,15 @@
  * c67x00-ll-hpi.c: Cypress C67X00 USB Low level interface using HPI
  *
  * Copyright (C) 2006-2008 Barco N.V.
- *    Derived from the Cypress cy7c67200/300 ezusb linux driver and
- *    based on multiple host controller drivers inside the linux kernel.
+ *    Derived from the Cypress cy7c67200/300 ezusb linaos driver and
+ *    based on multiple host controller drivers inside the linaos kernel.
  */
 
 #include <asm/byteorder.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/usb/c67x00.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/jiffies.h>
+#include <linaos/usb/c67x00.h>
 #include "c67x00.h"
 
 #define COMM_REGS 14

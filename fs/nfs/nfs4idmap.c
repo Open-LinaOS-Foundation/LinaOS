@@ -33,20 +33,20 @@
  *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include <linux/types.h>
-#include <linux/parser.h>
-#include <linux/fs.h>
+#include <linaos/types.h>
+#include <linaos/parser.h>
+#include <linaos/fs.h>
 #include <net/net_namespace.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_fs_sb.h>
-#include <linux/key.h>
-#include <linux/keyctl.h>
-#include <linux/key-type.h>
+#include <linaos/sunrpc/rpc_pipe_fs.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_fs_sb.h>
+#include <linaos/key.h>
+#include <linaos/keyctl.h>
+#include <linaos/key-type.h>
 #include <keys/user-type.h>
 #include <keys/request_key_auth-type.h>
-#include <linux/module.h>
-#include <linux/user_namespace.h>
+#include <linaos/module.h>
+#include <linaos/user_namespace.h>
 
 #include "internal.h"
 #include "netns.h"

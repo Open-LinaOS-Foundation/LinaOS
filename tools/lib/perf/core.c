@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <unistd.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <perf/core.h>
 #include <internal/lib.h>
 #include "internal.h"

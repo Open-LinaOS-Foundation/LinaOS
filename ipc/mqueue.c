@@ -1,5 +1,5 @@
 /*
- * POSIX message queues filesystem for Linux.
+ * POSIX message queues filesystem for LinaOS.
  *
  * Copyright (C) 2003,2004  Krzysztof Benedyczak    (golbi@mat.uni.torun.pl)
  *                          Michal Wronski          (michal.wronski@gmail.com)
@@ -13,32 +13,32 @@
  * This file is released under the GPL.
  */
 
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/fs_context.h>
-#include <linux/namei.h>
-#include <linux/sysctl.h>
-#include <linux/poll.h>
-#include <linux/mqueue.h>
-#include <linux/msg.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/netlink.h>
-#include <linux/syscalls.h>
-#include <linux/audit.h>
-#include <linux/signal.h>
-#include <linux/mutex.h>
-#include <linux/nsproxy.h>
-#include <linux/pid.h>
-#include <linux/ipc_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/slab.h>
-#include <linux/sched/wake_q.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/user.h>
+#include <linaos/capability.h>
+#include <linaos/init.h>
+#include <linaos/pagemap.h>
+#include <linaos/file.h>
+#include <linaos/mount.h>
+#include <linaos/fs_context.h>
+#include <linaos/namei.h>
+#include <linaos/sysctl.h>
+#include <linaos/poll.h>
+#include <linaos/mqueue.h>
+#include <linaos/msg.h>
+#include <linaos/skbuff.h>
+#include <linaos/vmalloc.h>
+#include <linaos/netlink.h>
+#include <linaos/syscalls.h>
+#include <linaos/audit.h>
+#include <linaos/signal.h>
+#include <linaos/mutex.h>
+#include <linaos/nsproxy.h>
+#include <linaos/pid.h>
+#include <linaos/ipc_namespace.h>
+#include <linaos/user_namespace.h>
+#include <linaos/slab.h>
+#include <linaos/sched/wake_q.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/user.h>
 
 #include <net/sock.h>
 #include "util.h"

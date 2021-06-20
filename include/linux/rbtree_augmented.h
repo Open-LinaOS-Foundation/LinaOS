@@ -6,15 +6,15 @@
   (C) 2012  Michel Lespinasse <walken@google.com>
 
 
-  linux/include/linux/rbtree_augmented.h
+  linaos/include/linaos/rbtree_augmented.h
 */
 
 #ifndef _LINUX_RBTREE_AUGMENTED_H
 #define _LINUX_RBTREE_AUGMENTED_H
 
-#include <linux/compiler.h>
-#include <linux/rbtree.h>
-#include <linux/rcupdate.h>
+#include <linaos/compiler.h>
+#include <linaos/rbtree.h>
+#include <linaos/rcupdate.h>
 
 /*
  * Please note - only struct rb_augment_callbacks and the prototypes for

@@ -9,8 +9,8 @@
 #include <stddef.h>
 #include <errno.h> /* for EINVAL */
 #include <string.h> /* for strcmp */
-#include <linux/ptrace.h> /* for struct pt_regs */
-#include <linux/kernel.h> /* for offsetof */
+#include <linaos/ptrace.h> /* for struct pt_regs */
+#include <linaos/kernel.h> /* for offsetof */
 #include <dwarf-regs.h>
 
 /*

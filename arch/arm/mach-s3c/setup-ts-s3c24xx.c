@@ -5,12 +5,12 @@
 //
 // Based on S3C24XX setup for i2c device
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/gpio.h>
 
 struct platform_device; /* don't need the contents */
 
-#include <linux/platform_data/touchscreen-s3c2410.h>
+#include <linaos/platform_data/touchscreen-s3c2410.h>
 
 #include "gpio-cfg.h"
 #include "gpio-samsung.h"

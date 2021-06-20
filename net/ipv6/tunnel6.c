@@ -2,19 +2,19 @@
 /*
  * Copyright (C)2003,2004 USAGI/WIDE Project
  *
- * Authors	Mitsuru KANDA  <mk@linux-ipv6.org>
- *		YOSHIFUJI Hideaki <yoshfuji@linux-ipv6.org>
+ * Authors	Mitsuru KANDA  <mk@linaos-ipv6.org>
+ *		YOSHIFUJI Hideaki <yoshfuji@linaos-ipv6.org>
  */
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/icmpv6.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linaos/icmpv6.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
 #include <net/ipv6.h>
 #include <net/protocol.h>
 #include <net/xfrm.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/dma-fence.h>
+#include <linaos/dma-fence.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

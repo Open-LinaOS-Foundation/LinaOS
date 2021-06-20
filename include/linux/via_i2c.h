@@ -7,8 +7,8 @@
 #ifndef __VIA_I2C_H__
 #define __VIA_I2C_H__
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-bit.h>
 
 struct via_i2c_stuff {
 	u16 i2c_port;			/* GPIO or I2C port */

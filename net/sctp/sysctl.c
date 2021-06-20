@@ -9,7 +9,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    Mingqin Liu           <liuming@us.ibm.com>
@@ -23,7 +23,7 @@
 
 #include <net/sctp/structs.h>
 #include <net/sctp/sctp.h>
-#include <linux/sysctl.h>
+#include <linaos/sysctl.h>
 
 static int timer_max = 86400000; /* ms in one day */
 static int sack_timer_min = 1;

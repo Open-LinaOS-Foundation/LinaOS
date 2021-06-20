@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * This file contains volume label definitions for DASD devices.
  *
@@ -11,7 +11,7 @@
 #ifndef _ASM_S390_VTOC_H
 #define _ASM_S390_VTOC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct vtoc_ttr
 {

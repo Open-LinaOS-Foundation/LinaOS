@@ -4,7 +4,7 @@
 #ifndef __IPU3_TABLES_H
 #define __IPU3_TABLES_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #include "ipu3-abi.h"
 

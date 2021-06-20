@@ -9,14 +9,14 @@
  * For details on why we do all the strange and hairy things in here
  * take a look at Documentation/filesystems/nfs/exporting.rst.
  */
-#include <linux/exportfs.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
+#include <linaos/exportfs.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/module.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/sched.h>
+#include <linaos/cred.h>
 
 #define dprintk(fmt, args...) do{}while(0)
 

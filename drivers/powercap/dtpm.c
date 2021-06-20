@@ -17,12 +17,12 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/dtpm.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/powercap.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <linaos/dtpm.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/powercap.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
 
 #define DTPM_POWER_LIMIT_FLAG 0
 

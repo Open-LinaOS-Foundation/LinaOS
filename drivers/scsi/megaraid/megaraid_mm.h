@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  *
- *			Linux MegaRAID device driver
+ *			LinaOS MegaRAID device driver
  *
  * Copyright (c) 2003-2004  LSI Logic Corporation.
  *
@@ -11,14 +11,14 @@
 #ifndef MEGARAID_MM_H
 #define MEGARAID_MM_H
 
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/fs.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/pci.h>
+#include <linaos/list.h>
+#include <linaos/miscdevice.h>
 
 #include "mbox_defs.h"
 #include "megaraid_ioctl.h"

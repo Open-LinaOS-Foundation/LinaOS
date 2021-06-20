@@ -13,22 +13,22 @@
 
 #include <video/da8xx-fb.h>
 
-#include <linux/platform_device.h>
-#include <linux/davinci_emac.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_data/davinci_asp.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/videodev2.h>
+#include <linaos/platform_device.h>
+#include <linaos/davinci_emac.h>
+#include <linaos/spi/spi.h>
+#include <linaos/platform_data/davinci_asp.h>
+#include <linaos/reboot.h>
+#include <linaos/regmap.h>
+#include <linaos/videodev2.h>
 
 #include <mach/serial.h>
 #include <mach/pm.h>
-#include <linux/platform_data/edma.h>
-#include <linux/platform_data/i2c-davinci.h>
-#include <linux/platform_data/mmc-davinci.h>
-#include <linux/platform_data/usb-davinci.h>
-#include <linux/platform_data/spi-davinci.h>
-#include <linux/platform_data/uio_pruss.h>
+#include <linaos/platform_data/edma.h>
+#include <linaos/platform_data/i2c-davinci.h>
+#include <linaos/platform_data/mmc-davinci.h>
+#include <linaos/platform_data/usb-davinci.h>
+#include <linaos/platform_data/spi-davinci.h>
+#include <linaos/platform_data/uio_pruss.h>
 
 #include <media/davinci/vpif_types.h>
 

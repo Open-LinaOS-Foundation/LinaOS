@@ -5,7 +5,7 @@
  * Based on Al's description, and a test for the bug fixed in this commit:
  *
  * commit 9a81c16b527528ad307843be5571111aa8d35a80
- * Author: Al Viro <viro@zeniv.linux.org.uk>
+ * Author: Al Viro <viro@zeniv.linaos.org.uk>
  * Date:   Mon Sep 20 21:48:57 2010 +0100
  *
  *  powerpc: fix double syscall restarts

@@ -10,14 +10,14 @@
  * This driver tries to understand which model of Thrustmaster wheel the generic
  * "Thrustmaster FFB Wheel" really is and then sends the appropriate control code.
  *
- * Copyright (c) 2020-2021 Dario Pagani <dario.pagani.146+linuxk@gmail.com>
+ * Copyright (c) 2020-2021 Dario Pagani <dario.pagani.146+linaosk@gmail.com>
  * Copyright (c) 2020-2021 Kim Kuparinen <kimi.h.kuparinen@gmail.com>
  */
-#include <linux/hid.h>
-#include <linux/usb.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/hid.h>
+#include <linaos/usb.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
 /*
  * These interrupts are used to prevent a nasty crash when initializing the
@@ -365,7 +365,7 @@ static struct hid_driver thrustmaster_driver = {
 
 module_hid_driver(thrustmaster_driver);
 
-MODULE_AUTHOR("Dario Pagani <dario.pagani.146+linuxk@gmail.com>");
+MODULE_AUTHOR("Dario Pagani <dario.pagani.146+linaosk@gmail.com>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Driver to initialize some steering wheel joysticks from Thrustmaster");
 

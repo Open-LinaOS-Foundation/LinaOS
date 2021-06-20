@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPv6 over IPv4 tunnel device - Simple Internet Transition (SIT)
- *	Linux INET6 implementation
+ *	LinaOS INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -15,22 +15,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/icmp.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/init.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/if_ether.h>
+#include <linaos/module.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/in6.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/icmp.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/if_ether.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>

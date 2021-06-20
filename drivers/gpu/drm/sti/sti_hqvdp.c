@@ -4,14 +4,14 @@
  * Authors: Fabien Dessenne <fabien.dessenne@st.com> for STMicroelectronics.
  */
 
-#include <linux/component.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/reset.h>
-#include <linux/seq_file.h>
+#include <linaos/component.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/firmware.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/reset.h>
+#include <linaos/seq_file.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_device.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/kernel/setup.c
+ *  linaos/arch/alpha/kernel/setup.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
@@ -11,40 +11,40 @@
  * Bootup setup stuff.
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/user.h>
-#include <linux/screen_info.h>
-#include <linux/delay.h>
-#include <linux/mc146818rtc.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/memblock.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/initrd.h>
-#include <linux/eisa.h>
-#include <linux/pfn.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/user.h>
+#include <linaos/screen_info.h>
+#include <linaos/delay.h>
+#include <linaos/mc146818rtc.h>
+#include <linaos/console.h>
+#include <linaos/cpu.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/ioport.h>
+#include <linaos/platform_device.h>
+#include <linaos/memblock.h>
+#include <linaos/pci.h>
+#include <linaos/seq_file.h>
+#include <linaos/root_dev.h>
+#include <linaos/initrd.h>
+#include <linaos/eisa.h>
+#include <linaos/pfn.h>
 #ifdef CONFIG_MAGIC_SYSRQ
-#include <linux/sysrq.h>
-#include <linux/reboot.h>
+#include <linaos/sysrq.h>
+#include <linaos/reboot.h>
 #endif
-#include <linux/notifier.h>
+#include <linaos/notifier.h>
 #include <asm/setup.h>
 #include <asm/io.h>
-#include <linux/log2.h>
-#include <linux/export.h>
+#include <linaos/log2.h>
+#include <linaos/export.h>
 
 extern struct atomic_notifier_head panic_notifier_list;
 static int alpha_panic_event(struct notifier_block *, unsigned long, void *);
@@ -54,7 +54,7 @@ static struct notifier_block alpha_panic_block = {
         INT_MAX /* try to do it first */
 };
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/hwrpb.h>
 #include <asm/dma.h>
 #include <asm/mmu_context.h>

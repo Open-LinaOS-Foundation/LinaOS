@@ -9,8 +9,8 @@
 #ifndef __ARCH_S390_ATOMIC__
 #define __ARCH_S390_ATOMIC__
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
 #include <asm/atomic_ops.h>
 #include <asm/barrier.h>
 #include <asm/cmpxchg.h>

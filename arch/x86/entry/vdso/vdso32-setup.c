@@ -7,11 +7,11 @@
  * This file contains the needed initializations to support sysenter.
  */
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/mm_types.h>
-#include <linux/elf.h>
+#include <linaos/init.h>
+#include <linaos/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/mm_types.h>
+#include <linaos/elf.h>
 
 #include <asm/processor.h>
 #include <asm/vdso.h>
@@ -64,7 +64,7 @@ subsys_initcall(sysenter_setup);
 
 #ifdef CONFIG_SYSCTL
 /* Register vsyscall32 into the ABI table */
-#include <linux/sysctl.h>
+#include <linaos/sysctl.h>
 
 static struct ctl_table abi_table2[] = {
 	{

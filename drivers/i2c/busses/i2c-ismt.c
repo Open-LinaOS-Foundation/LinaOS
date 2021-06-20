@@ -57,17 +57,17 @@
  *  Slave mode                       no
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/stddef.h>
+#include <linaos/completion.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/i2c.h>
+#include <linaos/acpi.h>
+#include <linaos/interrupt.h>
 
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 
 /* PCI Address Constants */
 #define SMBBAR		0

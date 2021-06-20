@@ -5,7 +5,7 @@
 #include <asm/pgtable_32_types.h>
 
 /*
- * The Linux memory management assumes a three-level page table setup. On
+ * The LinaOS memory management assumes a three-level page table setup. On
  * the i386, we use that, but "fold" the mid level into the top-level page
  * table, so that we physically have the same two-level page table as the
  * i386 mmu expects.
@@ -15,12 +15,12 @@
  */
 #ifndef __ASSEMBLY__
 #include <asm/processor.h>
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #include <asm/paravirt.h>
 
-#include <linux/bitops.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <linaos/bitops.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
 
 struct mm_struct;
 struct vm_area_struct;

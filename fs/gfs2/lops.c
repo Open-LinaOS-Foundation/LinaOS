@@ -4,17 +4,17 @@
  * Copyright (C) 2004-2006 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/mempool.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/bio.h>
-#include <linux/fs.h>
-#include <linux/list_sort.h>
-#include <linux/blkdev.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/completion.h>
+#include <linaos/buffer_head.h>
+#include <linaos/mempool.h>
+#include <linaos/gfs2_ondisk.h>
+#include <linaos/bio.h>
+#include <linaos/fs.h>
+#include <linaos/list_sort.h>
+#include <linaos/blkdev.h>
 
 #include "bmap.h"
 #include "dir.h"

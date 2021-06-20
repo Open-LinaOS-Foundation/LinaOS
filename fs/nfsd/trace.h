@@ -8,7 +8,7 @@
 #if !defined(_NFSD_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _NFSD_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "export.h"
 #include "nfsfh.h"
 

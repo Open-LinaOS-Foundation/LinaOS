@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
   nubus.h: various definitions and prototypes for NuBus drivers to use.
 
@@ -13,7 +13,7 @@
 #ifndef _UAPILINUX_NUBUS_H
 #define _UAPILINUX_NUBUS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum nubus_category {
 	NUBUS_CAT_BOARD          = 0x0001,

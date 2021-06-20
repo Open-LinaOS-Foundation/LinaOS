@@ -7,10 +7,10 @@
 #ifndef _GVE_H_
 #define _GVE_H_
 
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/u64_stats_sync.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/u64_stats_sync.h>
 #include "gve_desc.h"
 
 #ifndef PCI_VENDOR_ID_GOOGLE

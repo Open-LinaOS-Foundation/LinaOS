@@ -7,14 +7,14 @@
  * Copyright (C) 2006, 2008 Oracle.  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/crc32.h>
-#include <linux/buffer_head.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/crc32.h>
+#include <linaos/buffer_head.h>
+#include <linaos/bitops.h>
+#include <linaos/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
 #include <asm/byteorder.h>
 
 #include <cluster/masklog.h>

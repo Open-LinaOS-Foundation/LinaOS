@@ -5,11 +5,11 @@
  * Copyright 2018 Advanced Micro Devices, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/platform_data/clk-fch.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/platform_data/clk-fch.h>
+#include <linaos/platform_device.h>
 
 /* Clock Driving Strength 2 register */
 #define CLKDRVSTR2	0x28

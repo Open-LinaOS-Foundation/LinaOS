@@ -46,8 +46,8 @@ lines::
 
   image=/boot/vmlinuz
   initrd=/boot/initrd.gz
-  label=linux
-  append="root=/dev/ram0 init=/linuxrc rw"
+  label=linaos
+  append="root=/dev/ram0 init=/linaosrc rw"
 
 Finally you need to create or modify your initrd. Lets assume
 you create an initrd that reads the required dm-crypt setup
@@ -63,7 +63,7 @@ like the following::
 
 /dev/hda1 contains an unencrypted mini system that sets up all
 of your crypto devices, again by reading the setup from the
-pcmcia flash disk. What follows now is a /linuxrc for your
+pcmcia flash disk. What follows now is a /linaosrc for your
 initrd that allows you to resume from encrypted swap and that
 continues boot with your mini system on /dev/hda1 if resume
 does not happen::

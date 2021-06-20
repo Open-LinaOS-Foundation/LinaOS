@@ -11,7 +11,7 @@
 #ifndef __XEN_DRM_FRONT_KMS_H_
 #define __XEN_DRM_FRONT_KMS_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct xen_drm_front_drm_info;
 struct xen_drm_front_drm_pipeline;

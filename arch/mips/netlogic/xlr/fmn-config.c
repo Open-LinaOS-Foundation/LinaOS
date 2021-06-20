@@ -33,8 +33,8 @@
  */
 
 #include <asm/cpu-info.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
 
 #include <asm/cpu.h>
 #include <asm/mipsregs.h>

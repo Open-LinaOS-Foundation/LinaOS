@@ -7,10 +7,10 @@
 #ifndef _CRYPTO_ENGINE_H
 #define _CRYPTO_ENGINE_H
 
-#include <linux/crypto.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
+#include <linaos/crypto.h>
+#include <linaos/list.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
 #include <crypto/algapi.h>
 #include <crypto/aead.h>
 #include <crypto/akcipher.h>

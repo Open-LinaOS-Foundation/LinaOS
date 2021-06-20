@@ -2,18 +2,18 @@
 #ifndef __LINUX_GFP_H
 #define __LINUX_GFP_H
 
-#include <linux/mmdebug.h>
-#include <linux/mmzone.h>
-#include <linux/stddef.h>
-#include <linux/linkage.h>
-#include <linux/topology.h>
+#include <linaos/mmdebug.h>
+#include <linaos/mmzone.h>
+#include <linaos/stddef.h>
+#include <linaos/linkage.h>
+#include <linaos/topology.h>
 
 /* The typedef is in types.h but we want the documentation here */
 #if 0
 /**
  * typedef gfp_t - Memory allocation flags.
  *
- * GFP flags are commonly used throughout Linux to indicate how memory
+ * GFP flags are commonly used throughout LinaOS to indicate how memory
  * should be allocated.  The GFP acronym stands for get_free_pages(),
  * the underlying memory allocation function.  Not every GFP flag is
  * supported by every function which may allocate memory.  Most users
@@ -61,7 +61,7 @@ struct vm_area_struct;
 /* If the above are modified, __GFP_BITS_SHIFT may need updating */
 
 /*
- * Physical address zone modifiers (see linux/mmzone.h - low four bits)
+ * Physical address zone modifiers (see linaos/mmzone.h - low four bits)
  *
  * Do not put any conditional on these. If necessary modify the definitions
  * without the underscores and use them consistently. The definitions here may

@@ -14,12 +14,12 @@
  * they aren't actually interrupt lines but data lines (to the DSP?)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
 
 #include <asm/traps.h>
 #include <asm/macintosh.h>

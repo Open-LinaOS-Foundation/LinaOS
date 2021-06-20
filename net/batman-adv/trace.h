@@ -9,12 +9,12 @@
 
 #include "main.h"
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/percpu.h>
-#include <linux/printk.h>
-#include <linux/tracepoint.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/percpu.h>
+#include <linaos/printk.h>
+#include <linaos/tracepoint.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM batadv

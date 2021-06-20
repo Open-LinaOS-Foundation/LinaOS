@@ -14,12 +14,12 @@
  * problems, but...
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/platform_device.h>
 #include <asm/hardware.h>
 #include <asm/io.h>
 #include <asm/mmzone.h>

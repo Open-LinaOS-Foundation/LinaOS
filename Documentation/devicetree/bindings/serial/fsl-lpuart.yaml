@@ -56,7 +56,7 @@ properties:
       - const: tx
 
   rs485-rts-active-low: true
-  linux,rs485-enabled-at-boot-time: true
+  linaos,rs485-enabled-at-boot-time: true
 
 required:
   - compatible

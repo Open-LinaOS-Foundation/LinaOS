@@ -18,8 +18,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
 
 #include <media/v4l2-ioctl.h>
 #include <media/videobuf-vmalloc.h>

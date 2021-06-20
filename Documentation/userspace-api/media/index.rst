@@ -3,7 +3,7 @@
 .. include:: <isonum.txt>
 
 ########################################
-Linux Media Infrastructure userspace API
+LinaOS Media Infrastructure userspace API
 ########################################
 
 This section contains the  driver development information and Kernel APIs
@@ -42,7 +42,7 @@ Please see:
 
     drivers/index
 
-**Copyright** |copy| 2009-2020 : LinuxTV Developers
+**Copyright** |copy| 2009-2020 : LinaOSTV Developers
 
 ::
 
@@ -67,4 +67,4 @@ GNU General Public License::
   FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
   more details.
 
-  For more details see the file COPYING in the source distribution of Linux.
+  For more details see the file COPYING in the source distribution of LinaOS.

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/acorn/scsi/msgqueue.c
+ *  linaos/drivers/acorn/scsi/msgqueue.c
  *
  *  Copyright (C) 1997-1998 Russell King
  *
  *  message queue handling
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/stddef.h>
+#include <linaos/init.h>
 
 #include "msgqueue.h"
 

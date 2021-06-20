@@ -84,7 +84,7 @@ config FUSION_CTL
 
 	  One use of this ioctl interface is to perform an upgrade (reflash)
 	  of the MPT adapter firmware.  Refer to readme file(s) distributed
-	  with the Fusion MPT linux driver for additional details.
+	  with the Fusion MPT linaos driver for additional details.
 
 	  If enabled by saying M to this, a driver named: mptctl
 	  will be compiled.
@@ -101,7 +101,7 @@ config FUSION_LAN
 	  Please refer to that document for details.
 
 	  Installing this driver requires the knowledge to configure and
-	  activate a new network interface, "fc0", using standard Linux tools.
+	  activate a new network interface, "fc0", using standard LinaOS tools.
 
 	  If enabled by saying M to this, a driver named: mptlan
 	  will be compiled.

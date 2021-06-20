@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/stat.h>
-#include <linux/sysctl.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
-#include <linux/hash.h>
-#include <linux/kmemleak.h>
-#include <linux/user_namespace.h>
+#include <linaos/stat.h>
+#include <linaos/sysctl.h>
+#include <linaos/slab.h>
+#include <linaos/cred.h>
+#include <linaos/hash.h>
+#include <linaos/kmemleak.h>
+#include <linaos/user_namespace.h>
 
 #define UCOUNTS_HASHTABLE_BITS 10
 static struct hlist_head ucounts_hashtable[(1 << UCOUNTS_HASHTABLE_BITS)];

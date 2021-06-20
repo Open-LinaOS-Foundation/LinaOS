@@ -7,8 +7,8 @@
 #ifndef _ASM_RISCV_IRQ_H
 #define _ASM_RISCV_IRQ_H
 
-#include <linux/interrupt.h>
-#include <linux/linkage.h>
+#include <linaos/interrupt.h>
+#include <linaos/linkage.h>
 
 #include <asm-generic/irq.h>
 

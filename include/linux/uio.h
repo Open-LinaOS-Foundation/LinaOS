@@ -5,9 +5,9 @@
 #ifndef __LINUX_UIO_H
 #define __LINUX_UIO_H
 
-#include <linux/kernel.h>
-#include <linux/thread_info.h>
-#include <uapi/linux/uio.h>
+#include <linaos/kernel.h>
+#include <linaos/thread_info.h>
+#include <uapi/linaos/uio.h>
 
 struct page;
 struct pipe_inode_info;

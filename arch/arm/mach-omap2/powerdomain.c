@@ -11,13 +11,13 @@
  */
 #undef DEBUG
 
-#include <linux/cpu_pm.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/spinlock.h>
 #include <trace/events/power.h>
 
 #include "cm2xxx_3xxx.h"
@@ -382,7 +382,7 @@ int pwrdm_complete_init(void)
 }
 
 /**
- * pwrdm_lock - acquire a Linux spinlock on a powerdomain
+ * pwrdm_lock - acquire a LinaOS spinlock on a powerdomain
  * @pwrdm: struct powerdomain * to lock
  *
  * Acquire the powerdomain spinlock on @pwrdm.  No return value.
@@ -394,7 +394,7 @@ void pwrdm_lock(struct powerdomain *pwrdm)
 }
 
 /**
- * pwrdm_unlock - release a Linux spinlock on a powerdomain
+ * pwrdm_unlock - release a LinaOS spinlock on a powerdomain
  * @pwrdm: struct powerdomain * to unlock
  *
  * Release the powerdomain spinlock on @pwrdm.  No return value.

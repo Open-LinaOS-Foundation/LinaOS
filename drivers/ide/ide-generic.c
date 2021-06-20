@@ -7,11 +7,11 @@
  * May be copied or modified under the terms of the GNU General Public License.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ide.h>
-#include <linux/pci_ids.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/ide.h>
+#include <linaos/pci_ids.h>
 
 /* FIXME: convert arm to use ide_platform host driver */
 #ifdef CONFIG_ARM

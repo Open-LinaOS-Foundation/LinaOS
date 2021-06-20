@@ -3,15 +3,15 @@
  * Copyright (c) 2019 Hammerspace Inc
  */
 
-#include <linux/module.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
-#include <linux/nfs_fs.h>
-#include <linux/rcupdate.h>
+#include <linaos/module.h>
+#include <linaos/kobject.h>
+#include <linaos/sysfs.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
+#include <linaos/string.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/rcupdate.h>
 
 #include "nfs4_fs.h"
 #include "netns.h"

@@ -7,16 +7,16 @@
  * Copyright (C) 2013 Linaro Limited.
  * Author: Sandeepa Prabhu <sandeepa.prabhu@linaro.org>
  */
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/extable.h>
-#include <linux/slab.h>
-#include <linux/stop_machine.h>
-#include <linux/sched/debug.h>
-#include <linux/set_memory.h>
-#include <linux/stringify.h>
-#include <linux/vmalloc.h>
+#include <linaos/kasan.h>
+#include <linaos/kernel.h>
+#include <linaos/kprobes.h>
+#include <linaos/extable.h>
+#include <linaos/slab.h>
+#include <linaos/stop_machine.h>
+#include <linaos/sched/debug.h>
+#include <linaos/set_memory.h>
+#include <linaos/stringify.h>
+#include <linaos/vmalloc.h>
 #include <asm/traps.h>
 #include <asm/ptrace.h>
 #include <asm/cacheflush.h>
@@ -24,7 +24,7 @@
 #include <asm/daifflags.h>
 #include <asm/system_misc.h>
 #include <asm/insn.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/irq.h>
 #include <asm/sections.h>
 

@@ -35,23 +35,23 @@
 #ifndef _IPOIB_H
 #define _IPOIB_H
 
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
-#include <linux/kref.h>
-#include <linux/if_infiniband.h>
-#include <linux/mutex.h>
+#include <linaos/list.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/workqueue.h>
+#include <linaos/kref.h>
+#include <linaos/if_infiniband.h>
+#include <linaos/mutex.h>
 
 #include <net/neighbour.h>
 #include <net/sch_generic.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_pack.h>
 #include <rdma/ib_sa.h>
-#include <linux/sched.h>
+#include <linaos/sched.h>
 /* constants */
 
 enum ipoib_flush_level {

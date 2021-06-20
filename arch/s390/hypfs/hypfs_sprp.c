@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *    Hypervisor filesystem for Linux on s390.
+ *    Hypervisor filesystem for LinaOS on s390.
  *    Set Partition-Resource Parameter interface.
  *
  *    Copyright IBM Corp. 2013
  *    Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/compat.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linaos/compat.h>
+#include <linaos/errno.h>
+#include <linaos/gfp.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
 #include <asm/diag.h>
 #include <asm/sclp.h>
 #include "hypfs.h"

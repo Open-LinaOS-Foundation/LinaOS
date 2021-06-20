@@ -1,4 +1,4 @@
-/* i915_irq.c -- IRQ support for the I915 -*- linux-c -*-
+/* i915_irq.c -- IRQ support for the I915 -*- linaos-c -*-
  */
 /*
  * Copyright 2003 Tungsten Graphics, Inc., Cedar Park, Texas.
@@ -28,9 +28,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/circ_buf.h>
-#include <linux/slab.h>
-#include <linux/sysrq.h>
+#include <linaos/circ_buf.h>
+#include <linaos/slab.h>
+#include <linaos/sysrq.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_irq.h>

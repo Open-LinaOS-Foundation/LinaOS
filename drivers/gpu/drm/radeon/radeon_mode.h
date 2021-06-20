@@ -1,6 +1,6 @@
 /*
  * Copyright 2000 ATI Technologies Inc., Markham, Ontario, and
- *                VA Linux Systems Inc., Fremont, California.
+ *                VA LinaOS Systems Inc., Fremont, California.
  * Copyright 2008 Red Hat Inc.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -37,8 +37,8 @@
 #include <drm/drm_dp_mst_helper.h>
 #include <drm/drm_fixed.h>
 #include <drm/drm_crtc_helper.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-bit.h>
 
 struct radeon_bo;
 struct radeon_device;

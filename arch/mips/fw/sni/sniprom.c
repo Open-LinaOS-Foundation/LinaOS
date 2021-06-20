@@ -9,11 +9,11 @@
  * Copyright (C) 2005-2006 Thomas Bogendoerfer (tsbogend@alpha.franken.de)
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/string.h>
-#include <linux/console.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/string.h>
+#include <linaos/console.h>
 
 #include <asm/addrspace.h>
 #include <asm/sni.h>

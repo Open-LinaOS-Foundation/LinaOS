@@ -14,18 +14,18 @@
  * another interface, some abstraction will have to be introduced.
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mod_devicetable.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/watchdog.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/watchdog.h>
+#include <linaos/bitops.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
 #define DEFAULT_HEARTBEAT 60
 #define MAX_HEARTBEAT     60

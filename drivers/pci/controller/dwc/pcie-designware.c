@@ -8,10 +8,10 @@
  * Author: Jingoo Han <jg1.han@samsung.com>
  */
 
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/types.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/types.h>
 
 #include "../../pci.h"
 #include "pcie-designware.h"

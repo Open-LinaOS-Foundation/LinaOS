@@ -128,7 +128,7 @@ class DeviceRoutes(CSVCollection):
  *  comedi/drivers/ni_routing/{filename}
  *  List of valid routes for specific NI boards.
  *
- *  COMEDI - Linux Control and Measurement Device Interface
+ *  COMEDI - LinaOS Control and Measurement Device Interface
  *  Copyright (C) 2016 Spencer E. Olson <olsonse@umich.edu>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -160,7 +160,7 @@ class DeviceRoutes(CSVCollection):
  *  comedi/drivers/ni_routing/{filename}
  *  List of valid routes for specific NI boards.
  *
- *  COMEDI - Linux Control and Measurement Device Interface
+ *  COMEDI - LinaOS Control and Measurement Device Interface
  *  Copyright (C) 2016 Spencer E. Olson <olsonse@umich.edu>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -198,7 +198,7 @@ class DeviceRoutes(CSVCollection):
  *  comedi/drivers/ni_routing/{filename}
  *  List of valid routes for specific NI boards.
  *
- *  COMEDI - Linux Control and Measurement Device Interface
+ *  COMEDI - LinaOS Control and Measurement Device Interface
  *  Copyright (C) 2016 Spencer E. Olson <olsonse@umich.edu>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -304,7 +304,7 @@ class RouteValues(CSVCollection):
  *  comedi/drivers/ni_routing/{filename}
  *  Route information for NI boards.
  *
- *  COMEDI - Linux Control and Measurement Device Interface
+ *  COMEDI - LinaOS Control and Measurement Device Interface
  *  Copyright (C) 2016 Spencer E. Olson <olsonse@umich.edu>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -342,7 +342,7 @@ class RouteValues(CSVCollection):
  *  comedi/drivers/ni_routing/{filename}
  *  List of valid routes for specific NI boards.
  *
- *  COMEDI - Linux Control and Measurement Device Interface
+ *  COMEDI - LinaOS Control and Measurement Device Interface
  *  Copyright (C) 2016 Spencer E. Olson <olsonse@umich.edu>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -380,7 +380,7 @@ class RouteValues(CSVCollection):
  *  comedi/drivers/ni_routing/{filename}
  *  Route information for {sheet} boards.
  *
- *  COMEDI - Linux Control and Measurement Device Interface
+ *  COMEDI - LinaOS Control and Measurement Device Interface
  *  Copyright (C) 2016 Spencer E. Olson <olsonse@umich.edu>
  *
  *  This program is free software; you can redistribute it and/or modify

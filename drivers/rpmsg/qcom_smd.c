@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (c) 2015, Sony Mobile Communications AB.
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mailbox_client.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/sched.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/wait.h>
-#include <linux/rpmsg.h>
-#include <linux/rpmsg/qcom_smd.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/sched.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/soc/qcom/smem.h>
+#include <linaos/wait.h>
+#include <linaos/rpmsg.h>
+#include <linaos/rpmsg/qcom_smd.h>
 
 #include "rpmsg_internal.h"
 

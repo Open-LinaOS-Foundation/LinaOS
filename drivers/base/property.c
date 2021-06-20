@@ -4,19 +4,19 @@
  *
  * Copyright (C) 2014, Intel Corporation
  * Authors: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_graph.h>
-#include <linux/of_irq.h>
-#include <linux/property.h>
-#include <linux/etherdevice.h>
-#include <linux/phy.h>
+#include <linaos/acpi.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_graph.h>
+#include <linaos/of_irq.h>
+#include <linaos/property.h>
+#include <linaos/etherdevice.h>
+#include <linaos/phy.h>
 
 struct fwnode_handle *dev_fwnode(struct device *dev)
 {
@@ -1004,7 +1004,7 @@ EXPORT_SYMBOL(device_get_mac_address);
  * @fwnode:	Pointer to the firmware node
  * @index:	Zero-based index of the IRQ
  *
- * Returns Linux IRQ number on success. Other values are determined
+ * Returns LinaOS IRQ number on success. Other values are determined
  * accordingly to acpi_/of_ irq_get() operation.
  */
 int fwnode_irq_get(struct fwnode_handle *fwnode, unsigned int index)

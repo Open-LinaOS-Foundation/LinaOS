@@ -2,18 +2,18 @@
 /* Copyright 2017 Microsemi Corporation
  * Copyright 2018-2019 NXP Semiconductors
  */
-#include <linux/fsl/enetc_mdio.h>
+#include <linaos/fsl/enetc_mdio.h>
 #include <soc/mscc/ocelot_qsys.h>
 #include <soc/mscc/ocelot_vcap.h>
 #include <soc/mscc/ocelot_ptp.h>
 #include <soc/mscc/ocelot_sys.h>
 #include <soc/mscc/ocelot.h>
-#include <linux/dsa/ocelot.h>
-#include <linux/pcs-lynx.h>
+#include <linaos/dsa/ocelot.h>
+#include <linaos/pcs-lynx.h>
 #include <net/pkt_sched.h>
-#include <linux/iopoll.h>
-#include <linux/mdio.h>
-#include <linux/pci.h>
+#include <linaos/iopoll.h>
+#include <linaos/mdio.h>
+#include <linaos/pci.h>
 #include "felix.h"
 
 #define VSC9959_TAS_GCL_ENTRY_MAX	63

@@ -6,30 +6,30 @@
  * Author: Catalin Marinas <catalin.marinas@arm.com>
  */
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/bottom_half.h>
-#include <linux/bug.h>
-#include <linux/cache.h>
-#include <linux/compat.h>
-#include <linux/compiler.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/irqflags.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/prctl.h>
-#include <linux/preempt.h>
-#include <linux/ptrace.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/sysctl.h>
-#include <linux/swab.h>
+#include <linaos/bitmap.h>
+#include <linaos/bitops.h>
+#include <linaos/bottom_half.h>
+#include <linaos/bug.h>
+#include <linaos/cache.h>
+#include <linaos/compat.h>
+#include <linaos/compiler.h>
+#include <linaos/cpu.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/kernel.h>
+#include <linaos/linkage.h>
+#include <linaos/irqflags.h>
+#include <linaos/init.h>
+#include <linaos/percpu.h>
+#include <linaos/prctl.h>
+#include <linaos/preempt.h>
+#include <linaos/ptrace.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/signal.h>
+#include <linaos/slab.h>
+#include <linaos/stddef.h>
+#include <linaos/sysctl.h>
+#include <linaos/swab.h>
 
 #include <asm/esr.h>
 #include <asm/exception.h>

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-1.0+ WITH LinaOS-syscall-note */
 #ifndef __LINUX_ARP_NETFILTER_H
 #define __LINUX_ARP_NETFILTER_H
 
@@ -6,7 +6,7 @@
  * (C)2002 Rusty Russell IBM -- This code is GPL.
  */
 
-#include <linux/netfilter.h>
+#include <linaos/netfilter.h>
 
 /* There is no PF_ARP. */
 #define NF_ARP		0

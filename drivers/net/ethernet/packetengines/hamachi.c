@@ -1,4 +1,4 @@
-/* hamachi.c: A Packet Engines GNIC-II Gigabit Ethernet driver for Linux. */
+/* hamachi.c: A Packet Engines GNIC-II Gigabit Ethernet driver for LinaOS. */
 /*
 	Written 1998-2000 by Donald Becker.
 	Updates 2000 by Keith Underwood.
@@ -140,27 +140,27 @@ static int tx_params[MAX_UNITS] = {-1, -1, -1, -1, -1, -1, -1, -1};
 /* Time in jiffies before concluding the transmitter is hung. */
 #define TX_TIMEOUT  (5*HZ)
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/time.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <linaos/capability.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/time.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/ip.h>
+#include <linaos/delay.h>
+#include <linaos/bitops.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/processor.h>	/* Processor type for cache alignment. */
 #include <asm/io.h>
 #include <asm/unaligned.h>
@@ -175,7 +175,7 @@ KERN_INFO DRV_NAME ".c:v" DRV_VERSION " " DRV_RELDATE "  Written by Donald Becke
 /* IP_MF appears to be only defined in <netinet/ip.h>, however,
    we need it for hardware checksumming support.  FYI... some of
    the definitions in <netinet/ip.h> conflict/duplicate those in
-   other linux headers causing many compiler warnings.
+   other linaos headers causing many compiler warnings.
 */
 #ifndef IP_MF
   #define IP_MF 0x2000   /* IP more frags from <netinet/ip.h> */
@@ -368,7 +368,7 @@ mitigation parameters.  Tx should interrupt VERY infrequently due to
 Eric's scheme.  Rx should be more often...
 
 03/13/2000 KDU Added a patch to make the Rx Checksum code interact
-nicely with non-linux machines.
+nicely with non-linaos machines.
 
 03/13/2000 KDU Experimented with some of the configuration values:
 

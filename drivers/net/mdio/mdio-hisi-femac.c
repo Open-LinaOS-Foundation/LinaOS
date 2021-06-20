@@ -5,13 +5,13 @@
  * Copyright (c) 2016 HiSilicon Technologies Co., Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_mdio.h>
+#include <linaos/platform_device.h>
 
 #define MDIO_RWCTRL		0x00
 #define MDIO_RO_DATA		0x04

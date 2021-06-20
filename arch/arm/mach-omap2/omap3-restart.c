@@ -7,9 +7,9 @@
  * Tony Lindgren <tony@atomide.com>
  * Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/reboot.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/reboot.h>
 
 #include "common.h"
 #include "control.h"

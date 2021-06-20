@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2020 Daniel Palmer<daniel@thingy.jp> */
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include <dt-bindings/gpio/msc313-gpio.h>
 #include <dt-bindings/interrupt-controller/arm-gic.h>

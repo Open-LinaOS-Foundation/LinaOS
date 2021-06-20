@@ -4,7 +4,7 @@
  * Copyright (C) 2018 Lorenzo Bianconi <lorenzo.bianconi83@gmail.com>
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include "mt76x02.h"
 #include "mt76x02_phy.h"

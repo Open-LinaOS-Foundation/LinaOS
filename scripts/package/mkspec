@@ -29,7 +29,7 @@ fi
 
 PROVIDES="$PROVIDES kernel-$KERNELRELEASE"
 __KERNELRELEASE=$(echo $KERNELRELEASE | sed -e "s/-/_/g")
-EXCLUDES="$RCS_TAR_IGNORE --exclude=*vmlinux* --exclude=*.mod \
+EXCLUDES="$RCS_TAR_IGNORE --exclude=*vmlinaos* --exclude=*.mod \
 --exclude=*.o --exclude=*.ko --exclude=*.cmd --exclude=Documentation \
 --exclude=.config.old --exclude=.missing-syscalls.d --exclude=*.s"
 
@@ -40,12 +40,12 @@ EXCLUDES="$RCS_TAR_IGNORE --exclude=*vmlinux* --exclude=*.mod \
 #  $M: this line is enabled only when CONFIG_MODULES is enabled
 sed -e '/^DEL/d' -e 's/^\t*//' <<EOF
 	Name: kernel
-	Summary: The Linux Kernel
+	Summary: The LinaOS Kernel
 	Version: $__KERNELRELEASE
 	Release: $(cat .version 2>/dev/null || echo 1)
 	License: GPL
 	Group: System Environment/Kernel
-	Vendor: The Linux Community
+	Vendor: The LinaOS Community
 	URL: https://www.kernel.org
 $S	Source: kernel-$__KERNELRELEASE.tar.gz
 	Provides: $PROVIDES
@@ -53,16 +53,16 @@ $S	Source: kernel-$__KERNELRELEASE.tar.gz
 	%define debug_package %{nil}
 
 	%description
-	The Linux Kernel, the operating system core itself
+	The LinaOS Kernel, the operating system core itself
 
 	%package headers
-	Summary: Header files for the Linux kernel for use by glibc
+	Summary: Header files for the LinaOS kernel for use by glibc
 	Group: Development/System
 	Obsoletes: kernel-headers
 	Provides: kernel-headers = %{version}
 	%description headers
 	Kernel-headers includes the C header files that specify the interface
-	between the Linux kernel and userspace libraries and programs.  The
+	between the LinaOS kernel and userspace libraries and programs.  The
 	header files define structures and constants that are needed for
 	building most standard programs and are also needed for rebuilding the
 	glibc package.
@@ -94,8 +94,8 @@ $M	$MAKE %{?_smp_mflags} INSTALL_MOD_PATH=%{buildroot} modules_install
 	$MAKE %{?_smp_mflags} INSTALL_HDR_PATH=%{buildroot}/usr headers_install
 	cp System.map %{buildroot}/boot/System.map-$KERNELRELEASE
 	cp .config %{buildroot}/boot/config-$KERNELRELEASE
-	bzip2 -9 --keep vmlinux
-	mv vmlinux.bz2 %{buildroot}/boot/vmlinux-$KERNELRELEASE.bz2
+	bzip2 -9 --keep vmlinaos
+	mv vmlinaos.bz2 %{buildroot}/boot/vmlinaos-$KERNELRELEASE.bz2
 $S$M	rm -f %{buildroot}/lib/modules/$KERNELRELEASE/build
 $S$M	rm -f %{buildroot}/lib/modules/$KERNELRELEASE/source
 $S$M	mkdir -p %{buildroot}/usr/src/kernels/$KERNELRELEASE

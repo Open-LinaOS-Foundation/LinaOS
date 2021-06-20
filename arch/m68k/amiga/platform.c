@@ -6,10 +6,10 @@
  * for more details.
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/zorro.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/zorro.h>
 
 #include <asm/amigahw.h>
 #include <asm/amigayle.h>

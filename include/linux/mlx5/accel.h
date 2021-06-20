@@ -34,7 +34,7 @@
 #ifndef __MLX5_ACCEL_H__
 #define __MLX5_ACCEL_H__
 
-#include <linux/mlx5/driver.h>
+#include <linaos/mlx5/driver.h>
 
 enum mlx5_accel_esp_aes_gcm_keymat_iv_algo {
 	MLX5_ACCEL_ESP_AES_GCM_IV_ALGO_SEQ,

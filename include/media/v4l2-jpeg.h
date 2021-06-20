@@ -10,7 +10,7 @@
 #ifndef _V4L2_JPEG_H
 #define _V4L2_JPEG_H
 
-#include <linux/v4l2-controls.h>
+#include <linaos/v4l2-controls.h>
 
 #define V4L2_JPEG_MAX_COMPONENTS	4
 #define V4L2_JPEG_MAX_TABLES		4

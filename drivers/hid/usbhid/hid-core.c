@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  USB HID support for Linux
+ *  USB HID support for LinaOS
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -12,27 +12,27 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
-#include <linux/input.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/string.h>
+#include <linaos/input.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
+#include <linaos/string.h>
 
-#include <linux/usb.h>
+#include <linaos/usb.h>
 
-#include <linux/hid.h>
-#include <linux/hiddev.h>
-#include <linux/hid-debug.h>
-#include <linux/hidraw.h>
+#include <linaos/hid.h>
+#include <linaos/hiddev.h>
+#include <linaos/hid-debug.h>
+#include <linaos/hidraw.h>
 #include "usbhid.h"
 
 /*

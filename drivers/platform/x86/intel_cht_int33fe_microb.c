@@ -17,14 +17,14 @@
  * for these chip can bind to the it.
  */
 
-#include <linux/acpi.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/usb/pd.h>
+#include <linaos/acpi.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/usb/pd.h>
 
 #include "intel_cht_int33fe_common.h"
 

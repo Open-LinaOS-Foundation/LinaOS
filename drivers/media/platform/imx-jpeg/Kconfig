@@ -7,5 +7,5 @@ config VIDEO_IMX8_JPEG
 	select V4L2_MEM2MEM_DEV
 	select V4L2_JPEG_HELPER
 	help
-	  This is a video4linux2 driver for the i.MX8 QXP/QM integrated
+	  This is a video4linaos2 driver for the i.MX8 QXP/QM integrated
 	  JPEG encoder/decoder.

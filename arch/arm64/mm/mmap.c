@@ -5,9 +5,9 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/types.h>
+#include <linaos/io.h>
+#include <linaos/memblock.h>
+#include <linaos/types.h>
 
 #include <asm/page.h>
 

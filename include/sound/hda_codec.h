@@ -8,8 +8,8 @@
 #ifndef __SOUND_HDA_CODEC_H
 #define __SOUND_HDA_CODEC_H
 
-#include <linux/kref.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/kref.h>
+#include <linaos/mod_devicetable.h>
 #include <sound/info.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

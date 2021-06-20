@@ -39,11 +39,11 @@
 #include <rdma/ib_user_verbs.h>
 #include <rdma/uverbs_ioctl.h>
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/export.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/mm.h>
+#include <linaos/export.h>
 
 #include "mthca_dev.h"
 #include "mthca_cmd.h"

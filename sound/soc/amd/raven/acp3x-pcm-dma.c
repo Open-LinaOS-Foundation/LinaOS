@@ -4,11 +4,11 @@
 //
 //Copyright 2016 Advanced Micro Devices, Inc.
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/pm_runtime.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>

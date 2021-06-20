@@ -4,20 +4,20 @@
  * Copyright (C) 2013-2015  Dialog Semiconductor Ltd.
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
 
-#include <linux/mfd/da9062/registers.h>
-#include <linux/mfd/da9063/registers.h>
-#include <linux/mfd/da9063/core.h>
+#include <linaos/mfd/da9062/registers.h>
+#include <linaos/mfd/da9063/registers.h>
+#include <linaos/mfd/da9063/core.h>
 
 #define YEARS_TO_DA9063(year)		((year) - 100)
 #define MONTHS_TO_DA9063(month)		((month) + 1)

@@ -3,16 +3,16 @@
  * USB Typec-C DisplayPort Alternate Mode driver
  *
  * Copyright (C) 2018 Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linaos.intel.com>
  *
  * DisplayPort is trademark of VESA (www.vesa.org)
  */
 
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/usb/pd_vdo.h>
-#include <linux/usb/typec_dp.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/module.h>
+#include <linaos/usb/pd_vdo.h>
+#include <linaos/usb/typec_dp.h>
 #include "displayport.h"
 
 #define DP_HEADER(_dp, ver, cmd)	(VDO((_dp)->alt->svid, 1, ver, cmd)	\
@@ -584,6 +584,6 @@ static struct typec_altmode_driver dp_altmode_driver = {
 };
 module_typec_altmode_driver(dp_altmode_driver);
 
-MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linux.intel.com>");
+MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linaos.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("DisplayPort Alternate Mode");

@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _IP6T_SRH_H
 #define _IP6T_SRH_H
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
+#include <linaos/types.h>
+#include <linaos/netfilter.h>
 
 /* Values for "mt_flags" field in struct ip6t_srh */
 #define IP6T_SRH_NEXTHDR        0x0001

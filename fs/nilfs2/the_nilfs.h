@@ -11,14 +11,14 @@
 #ifndef _THE_NILFS_H
 #define _THE_NILFS_H
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/rbtree.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/slab.h>
-#include <linux/refcount.h>
+#include <linaos/types.h>
+#include <linaos/buffer_head.h>
+#include <linaos/rbtree.h>
+#include <linaos/fs.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/slab.h>
+#include <linaos/refcount.h>
 
 struct nilfs_sc_info;
 struct nilfs_sysfs_dev_subgroups;

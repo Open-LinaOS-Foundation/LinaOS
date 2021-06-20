@@ -5,7 +5,7 @@
  * Copyright (c) 2017 HiSilicon Technologies Co., Ltd.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <media/rc-map.h>
 
 static struct rc_map_table hisi_tv_demo_keymap[] = {

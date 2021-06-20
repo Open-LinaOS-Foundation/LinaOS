@@ -35,7 +35,7 @@ struct xenix_super_block {
 	/* the cache of free inodes: */
 	__fs16		s_ninode; /* number of free inodes in s_inode, <= XENIX_NICINOD */
 	sysv_ino_t	s_inode[XENIX_NICINOD]; /* some free inodes */
-	/* locks, not used by Linux: */
+	/* locks, not used by LinaOS: */
 	char		s_flock;	/* lock during free block list manipulation */
 	char		s_ilock;	/* lock during inode cache manipulation */
 	char		s_fmod;		/* super-block modified flag */
@@ -76,7 +76,7 @@ struct sysv4_super_block {
 	__fs16	s_ninode;	/* number of free inodes in s_inode, <= SYSV_NICINOD */
 	u16	s_pad2;
 	sysv_ino_t     s_inode[SYSV_NICINOD]; /* some free inodes */
-	/* locks, not used by Linux: */
+	/* locks, not used by LinaOS: */
 	char	s_flock;	/* lock during free block list manipulation */
 	char	s_ilock;	/* lock during inode cache manipulation */
 	char	s_fmod;		/* super-block modified flag */
@@ -105,7 +105,7 @@ struct sysv2_super_block {
 	/* the cache of free inodes: */
 	__fs16	s_ninode;		/* number of free inodes in s_inode, <= SYSV_NICINOD */
 	sysv_ino_t     s_inode[SYSV_NICINOD]; /* some free inodes */
-	/* locks, not used by Linux: */
+	/* locks, not used by LinaOS: */
 	char	s_flock;		/* lock during free block list manipulation */
 	char	s_ilock;		/* lock during inode cache manipulation */
 	char	s_fmod;			/* super-block modified flag */
@@ -135,7 +135,7 @@ struct v7_super_block {
 	/* the cache of free inodes: */
 	__fs16 s_ninode;       /* number of free inodes in s_inode, <= V7_NICINOD */
 	sysv_ino_t      s_inode[V7_NICINOD]; /* some free inodes */
-	/* locks, not used by Linux or V7: */
+	/* locks, not used by LinaOS or V7: */
 	char    s_flock;        /* lock during free block list manipulation */
 	char    s_ilock;        /* lock during inode cache manipulation */
 	char    s_fmod;         /* super-block modified flag */
@@ -173,7 +173,7 @@ struct coh_super_block {
 	/* the cache of free inodes: */
 	__fs16		s_ninode;	/* number of free inodes in s_inode, <= COH_NICINOD */
 	sysv_ino_t	s_inode[COH_NICINOD]; /* some free inodes */
-	/* locks, not used by Linux: */
+	/* locks, not used by LinaOS: */
 	char		s_flock;	/* lock during free block list manipulation */
 	char		s_ilock;	/* lock during inode cache manipulation */
 	char		s_fmod;		/* super-block modified flag */

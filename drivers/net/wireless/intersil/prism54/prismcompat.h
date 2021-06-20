@@ -14,11 +14,11 @@
 #ifndef _PRISM_COMPAT_H
 #define _PRISM_COMPAT_H
 
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/moduleparam.h>
-#include <linux/workqueue.h>
-#include <linux/compiler.h>
+#include <linaos/device.h>
+#include <linaos/firmware.h>
+#include <linaos/moduleparam.h>
+#include <linaos/workqueue.h>
+#include <linaos/compiler.h>
 
 #ifndef __iomem
 #define __iomem

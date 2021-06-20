@@ -18,17 +18,17 @@
  *
  * Also see Documentation/locking/mutex-design.rst.
  */
-#include <linux/mutex.h>
-#include <linux/ww_mutex.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/wake_q.h>
-#include <linux/sched/debug.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/debug_locks.h>
-#include <linux/osq_lock.h>
+#include <linaos/mutex.h>
+#include <linaos/ww_mutex.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/rt.h>
+#include <linaos/sched/wake_q.h>
+#include <linaos/sched/debug.h>
+#include <linaos/export.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/debug_locks.h>
+#include <linaos/osq_lock.h>
 
 #ifdef CONFIG_DEBUG_MUTEXES
 # include "mutex-debug.h"

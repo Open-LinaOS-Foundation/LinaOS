@@ -59,21 +59,21 @@
 		user4 {
 			label = "green:user4";
 			gpios = <&pm8150_gpios 10 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "panic-indicator";
+			linaos,default-trigger = "panic-indicator";
 			default-state = "off";
 		};
 
 		wlan {
 			label = "yellow:wlan";
 			gpios = <&pm8150_gpios 9 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy0tx";
+			linaos,default-trigger = "phy0tx";
 			default-state = "off";
 		};
 
 		bt {
 			label = "blue:bt";
 			gpios = <&pm8150_gpios 7 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "bluetooth-power";
+			linaos,default-trigger = "bluetooth-power";
 			default-state = "off";
 		};
 

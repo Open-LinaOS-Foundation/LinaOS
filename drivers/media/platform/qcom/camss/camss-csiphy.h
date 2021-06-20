@@ -4,14 +4,14 @@
  *
  * Qualcomm MSM Camera Subsystem - CSIPHY Module
  *
- * Copyright (c) 2011-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2015, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2016-2018 Linaro Ltd.
  */
 #ifndef QC_MSM_CAMSS_CSIPHY_H
 #define QC_MSM_CAMSS_CSIPHY_H
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
 #include <media/media-entity.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-mediabus.h>

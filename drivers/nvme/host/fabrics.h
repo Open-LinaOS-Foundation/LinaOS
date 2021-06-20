@@ -6,8 +6,8 @@
 #ifndef _NVME_FABRICS_H
 #define _NVME_FABRICS_H 1
 
-#include <linux/in.h>
-#include <linux/inet.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
 
 #define NVMF_MIN_QUEUE_SIZE	16
 #define NVMF_MAX_QUEUE_SIZE	1024

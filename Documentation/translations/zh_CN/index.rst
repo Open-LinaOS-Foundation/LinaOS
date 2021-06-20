@@ -5,7 +5,7 @@
 	\renewcommand\thesection*
 	\renewcommand\thesubsection*
 
-.. _linux_doc_zh:
+.. _linaos_doc_zh:
 
 中文翻译
 ========
@@ -19,7 +19,7 @@
 许可证文档
 ----------
 
-下面的文档介绍了Linux内核源代码的许可证（GPLv2）、如何在源代码树中正确标记
+下面的文档介绍了LinaOS内核源代码的许可证（GPLv2）、如何在源代码树中正确标记
 单个文件的许可证、以及指向完整许可证文本的链接。
 
 * Documentation/translations/zh_CN/process/license-rules.rst

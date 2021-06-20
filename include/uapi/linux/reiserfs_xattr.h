@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
-  File: linux/reiserfs_xattr.h
+  File: linaos/reiserfs_xattr.h
 */
 
 #ifndef _LINUX_REISERFS_XATTR_H
 #define _LINUX_REISERFS_XATTR_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Magic value in header */
 #define REISERFS_XATTR_MAGIC 0x52465841	/* "RFXA" */

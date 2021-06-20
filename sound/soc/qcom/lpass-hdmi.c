@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2020 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020 The LinaOS Foundation. All rights reserved.
  *
  * lpass-hdmi.c -- ALSA SoC HDMI-CPU DAI driver for QTi LPASS HDMI
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 #include <sound/pcm_params.h>
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>
 #include <dt-bindings/sound/sc7180-lpass.h>

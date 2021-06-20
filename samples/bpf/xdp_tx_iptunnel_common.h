@@ -4,7 +4,7 @@
 #ifndef _SAMPLES_BPF_XDP_TX_IPTNL_COMMON_H
 #define _SAMPLES_BPF_XDP_TX_IPTNL_COMMON_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define MAX_IPTNL_ENTRIES 256U
 

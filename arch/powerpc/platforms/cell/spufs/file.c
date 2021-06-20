@@ -9,21 +9,21 @@
 
 #undef DEBUG
 
-#include <linux/coredump.h>
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/export.h>
-#include <linux/pagemap.h>
-#include <linux/poll.h>
-#include <linux/ptrace.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linaos/coredump.h>
+#include <linaos/fs.h>
+#include <linaos/ioctl.h>
+#include <linaos/export.h>
+#include <linaos/pagemap.h>
+#include <linaos/poll.h>
+#include <linaos/ptrace.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
 #include <asm/time.h>
 #include <asm/spu.h>
 #include <asm/spu_info.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "spufs.h"
 #include "sputrace.h"

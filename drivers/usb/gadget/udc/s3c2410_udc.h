@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/drivers/usb/gadget/s3c2410_udc.h
+ * linaos/drivers/usb/gadget/s3c2410_udc.h
  * Samsung on-chip full speed USB device controllers
  *
  * Copyright (C) 2004-2007 Herbert Pötzl - Arnaud Patard
- *	Additional cleanups by Ben Dooks <ben-linux@fluff.org>
+ *	Additional cleanups by Ben Dooks <ben-linaos@fluff.org>
  */
 
 #ifndef _S3C2410_UDC_H

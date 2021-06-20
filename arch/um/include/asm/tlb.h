@@ -2,7 +2,7 @@
 #ifndef __UM_TLB_H
 #define __UM_TLB_H
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 #include <asm/tlbflush.h>
 #include <asm-generic/cacheflush.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Roccat Kone driver for Linux
+ * Roccat Kone driver for LinaOS
  *
  * Copyright (c) 2010 Stefan Achatz <erazor_de@users.sourceforge.net>
  */
@@ -22,12 +22,12 @@
  * TODO is it possible to overwrite group for sysfs attributes via udev?
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/hid-roccat.h>
+#include <linaos/device.h>
+#include <linaos/input.h>
+#include <linaos/hid.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/hid-roccat.h>
 #include "hid-ids.h"
 #include "hid-roccat-common.h"
 #include "hid-roccat-kone.h"

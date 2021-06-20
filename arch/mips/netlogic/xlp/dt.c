@@ -32,12 +32,12 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/memblock.h>
 
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_device.h>
 
 #include <asm/prom.h>
 

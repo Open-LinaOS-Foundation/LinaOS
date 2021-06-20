@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include <loongson.h>
 
 static void pci_fixup_radeon(struct pci_dev *pdev)

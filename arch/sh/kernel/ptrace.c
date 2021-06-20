@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ptrace.h>
+#include <linaos/ptrace.h>
 
 /**
  * regs_query_register_offset() - query register offset from its name

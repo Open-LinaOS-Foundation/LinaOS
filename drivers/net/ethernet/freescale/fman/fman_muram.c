@@ -32,9 +32,9 @@
 
 #include "fman_muram.h"
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/genalloc.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/genalloc.h>
 
 struct muram_info {
 	struct gen_pool *pool;

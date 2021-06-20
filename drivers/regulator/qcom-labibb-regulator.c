@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
-// Copyright (c) 2020, The Linux Foundation. All rights reserved.
+// Copyright (c) 2020, The LinaOS Foundation. All rights reserved.
 
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/module.h>
+#include <linaos/of_irq.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/of_regulator.h>
 
 #define REG_PERPH_TYPE                  0x04
 

@@ -20,7 +20,7 @@
 
 		button-recovery {
 			label = "Recovery";
-			linux,code = <KEY_VENDOR>;
+			linaos,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <0>;
 		};
 	};
@@ -31,7 +31,7 @@
 		power {
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
 			label = "GPIO Power";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			pinctrl-names = "default";
 			pinctrl-0 = <&pwr_key>;
 			wakeup-source;
@@ -44,13 +44,13 @@
 		heartbeat_led: led-0 {
 			gpios = <&gpio7 RK_PB7 GPIO_ACTIVE_LOW>;
 			label = "rock2:green:state1";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		mmc_led: led-1 {
 			gpios = <&gpio0 RK_PB3 GPIO_ACTIVE_LOW>;
 			label = "rock2:blue:state2";
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 	};
 
@@ -82,7 +82,7 @@
 	};
 
 	spdif_out: spdif-out {
-		compatible = "linux,spdif-dit";
+		compatible = "linaos,spdif-dit";
 		#sound-dai-cells = <0>;
 	};
 

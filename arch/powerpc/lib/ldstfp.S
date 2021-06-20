@@ -12,7 +12,7 @@
 #include <asm/reg.h>
 #include <asm/asm-offsets.h>
 #include <asm/asm-compat.h>
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 #define STKFRM	(PPC_MIN_STKFRM + 16)
 

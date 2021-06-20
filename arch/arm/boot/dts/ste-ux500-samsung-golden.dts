@@ -47,7 +47,7 @@
 
 			pinctrl-names = "default";
 			pinctrl-0 = <&touchkey_default>;
-			linux,keycodes = <KEY_MENU KEY_BACK>;
+			linaos,keycodes = <KEY_MENU KEY_BACK>;
 		};
 	};
 
@@ -357,21 +357,21 @@
 			label = "Volume Up";
 			/* GPIO67 (VOL_UP) */
 			gpios = <&gpio2 3 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 		};
 
 		volume-down {
 			label = "Volume Down";
 			/* GPIO92 (VOL_DOWN) */
 			gpios = <&gpio2 28 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 		};
 
 		home {
 			label = "Home";
 			/* GPIO91 (HOME_KEY) */
 			gpios = <&gpio2 27 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOMEPAGE>;
+			linaos,code = <KEY_HOMEPAGE>;
 		};
 	};
 

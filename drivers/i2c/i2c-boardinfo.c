@@ -3,12 +3,12 @@
  * i2c-boardinfo.c - collect pre-declarations of I2C devices
  */
 
-#include <linux/export.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/property.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
+#include <linaos/export.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/property.h>
+#include <linaos/rwsem.h>
+#include <linaos/slab.h>
 
 #include "i2c-core.h"
 
@@ -33,7 +33,7 @@ EXPORT_SYMBOL_GPL(__i2c_first_dynamic_bus_num);
  * @len: how many descriptors in the vector; may be zero to reserve
  *	the specified bus number.
  *
- * Systems using the Linux I2C driver stack can declare tables of board info
+ * Systems using the LinaOS I2C driver stack can declare tables of board info
  * while they initialize.  This should be done in board-specific init code
  * near arch_initcall() time, or equivalent, before any I2C adapter driver is
  * registered.  For example, mainboard init code could define several devices,

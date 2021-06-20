@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/amba-clcd.c
+ *  linaos/drivers/video/amba-clcd.c
  *
  * Copyright (C) 2001 ARM Limited, by David A Rusling
  * Updated to 2.5, Deep Blue Solutions Ltd.
@@ -10,22 +10,22 @@
  *
  *  ARM PrimeCell PL110 Color LCD Controller
  */
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
-#include <linux/backlight.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_graph.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/amba/bus.h>
+#include <linaos/amba/clcd.h>
+#include <linaos/backlight.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_graph.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 #include <video/display_timing.h>
 #include <video/of_display_timing.h>
 #include <video/videomode.h>

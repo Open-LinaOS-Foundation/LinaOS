@@ -5,18 +5,18 @@
  * Copyright 2014 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/math64.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-dv-timings.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/math64.h>
+#include <linaos/videodev2.h>
+#include <linaos/v4l2-dv-timings.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-dv-timings.h>
-#include <linux/fixp-arith.h>
+#include <linaos/fixp-arith.h>
 
 #include "vivid-core.h"
 #include "vivid-ctrls.h"

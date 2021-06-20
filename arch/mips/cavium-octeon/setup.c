@@ -5,30 +5,30 @@
  *
  * Copyright (C) 2004-2007 Cavium Networks
  * Copyright (C) 2008, 2009 Wind River Systems
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@linaos-mips.org>
  */
-#include <linux/compiler.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/serial.h>
-#include <linux/smp.h>
-#include <linux/types.h>
-#include <linux/string.h>	/* for memset */
-#include <linux/tty.h>
-#include <linux/time.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/serial_8250.h>
-#include <linux/of_fdt.h>
-#include <linux/libfdt.h>
-#include <linux/kexec.h>
+#include <linaos/compiler.h>
+#include <linaos/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/memblock.h>
+#include <linaos/serial.h>
+#include <linaos/smp.h>
+#include <linaos/types.h>
+#include <linaos/string.h>	/* for memset */
+#include <linaos/tty.h>
+#include <linaos/time.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_8250.h>
+#include <linaos/of_fdt.h>
+#include <linaos/libfdt.h>
+#include <linaos/kexec.h>
 
 #include <asm/processor.h>
 #include <asm/reboot.h>
@@ -312,7 +312,7 @@ EXPORT_SYMBOL(octeon_is_simulation);
 
 /**
  * Return true if Octeon is in PCI Host mode. This means
- * Linux can control the PCI bus.
+ * LinaOS can control the PCI bus.
  *
  * Returns Non zero if Octeon in host mode.
  */
@@ -383,7 +383,7 @@ static int octeon_get_boot_uart(void)
 }
 
 /**
- * Get the coremask Linux was booted on.
+ * Get the coremask LinaOS was booted on.
  *
  * Returns Core mask
  */
@@ -834,9 +834,9 @@ void __init prom_init(void)
 	octeon_uart = octeon_get_boot_uart();
 
 #ifdef CONFIG_SMP
-	octeon_write_lcd("LinuxSMP");
+	octeon_write_lcd("LinaOSSMP");
 #else
-	octeon_write_lcd("Linux");
+	octeon_write_lcd("LinaOS");
 #endif
 
 	octeon_setup_delays();

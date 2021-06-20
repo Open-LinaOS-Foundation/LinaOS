@@ -12,18 +12,18 @@
  * e-mail - mail your message to Paul Stewart <stewart@wetlogic.net>
  */
 
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/usb.h>
-#include <linux/hid.h>
-#include <linux/hiddev.h>
-#include <linux/compat.h>
-#include <linux/vmalloc.h>
-#include <linux/nospec.h>
+#include <linaos/poll.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/usb.h>
+#include <linaos/hid.h>
+#include <linaos/hiddev.h>
+#include <linaos/compat.h>
+#include <linaos/vmalloc.h>
+#include <linaos/nospec.h>
 #include "usbhid.h"
 
 #ifdef CONFIG_USB_DYNAMIC_MINORS

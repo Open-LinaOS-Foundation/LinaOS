@@ -14,7 +14,7 @@
 #include <asm/kvm_arm.h>
 #include <asm/ptrace.h>
 #include <asm/sysreg.h>
-#include <linux/irqchip/arm-gic-v3.h>
+#include <linaos/irqchip/arm-gic-v3.h>
 
 .macro __init_el2_sctlr
 	mov_q	x0, INIT_SCTLR_EL2_MMU_OFF

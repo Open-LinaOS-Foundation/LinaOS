@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: ISC
 /*
  * Copyright (c) 2012-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #include "wil6210.h"
 #include "trace.h"

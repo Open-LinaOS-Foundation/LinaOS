@@ -106,7 +106,7 @@
 
 	spdif_out: spdif-out {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dit";
+		compatible = "linaos,spdif-dit";
 	};
 };
 
@@ -177,49 +177,49 @@
 
 	button-190 {
 		label = "Volume Up";
-		linux,code = <KEY_VOLUMEUP>;
+		linaos,code = <KEY_VOLUMEUP>;
 		channel = <0>;
 		voltage = <190000>;
 	};
 
 	button-390 {
 		label = "Volume Down";
-		linux,code = <KEY_VOLUMEDOWN>;
+		linaos,code = <KEY_VOLUMEDOWN>;
 		channel = <0>;
 		voltage = <390000>;
 	};
 
 	button-600 {
 		label = "Menu";
-		linux,code = <KEY_MENU>;
+		linaos,code = <KEY_MENU>;
 		channel = <0>;
 		voltage = <600000>;
 	};
 
 	button-800 {
 		label = "Search";
-		linux,code = <KEY_SEARCH>;
+		linaos,code = <KEY_SEARCH>;
 		channel = <0>;
 		voltage = <800000>;
 	};
 
 	button-980 {
 		label = "Home";
-		linux,code = <KEY_HOMEPAGE>;
+		linaos,code = <KEY_HOMEPAGE>;
 		channel = <0>;
 		voltage = <980000>;
 	};
 
 	button-1180 {
 		label = "Esc";
-		linux,code = <KEY_ESC>;
+		linaos,code = <KEY_ESC>;
 		channel = <0>;
 		voltage = <1180000>;
 	};
 
 	button-1400 {
 		label = "Enter";
-		linux,code = <KEY_ENTER>;
+		linaos,code = <KEY_ENTER>;
 		channel = <0>;
 		voltage = <1400000>;
 	};

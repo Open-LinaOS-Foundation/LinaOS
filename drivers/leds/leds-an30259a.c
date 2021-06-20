@@ -7,12 +7,12 @@
 // Datasheet:
 // https://www.alliedelec.com/m/d/a9d2b3ee87c2d1a535a41dd747b1c247.pdf
 
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
 
 #define AN30259A_MAX_LEDS 3
 

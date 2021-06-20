@@ -3,7 +3,7 @@
 #ifndef _UAPI_TEGRA_VDE_H_
 #define _UAPI_TEGRA_VDE_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/ioctl.h>
 
 #define FLAG_B_FRAME		0x1

@@ -32,9 +32,9 @@
 #include <nvif/clb069.h>
 #include <nvif/ifc00d.h>
 
-#include <linux/sched/mm.h>
-#include <linux/sort.h>
-#include <linux/hmm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sort.h>
+#include <linaos/hmm.h>
 
 struct nouveau_svm {
 	struct nouveau_drm *drm;

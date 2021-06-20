@@ -9,9 +9,9 @@
  *               Christian Ehrhardt <ehrhardt@de.ibm.com>
  */
 
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/slab.h>
+#include <linaos/kvm.h>
+#include <linaos/kvm_host.h>
+#include <linaos/slab.h>
 #include <asm/sigp.h>
 #include "gaccess.h"
 #include "kvm-s390.h"

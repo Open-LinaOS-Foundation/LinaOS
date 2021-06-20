@@ -36,7 +36,7 @@
 #include "accel/accel.h"
 
 #include <net/inet6_hashtables.h>
-#include <linux/ipv6.h>
+#include <linaos/ipv6.h>
 
 #define SYNDROM_DECRYPTED  0x30
 #define SYNDROM_RESYNC_REQUEST 0x31

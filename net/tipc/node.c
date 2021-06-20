@@ -1704,7 +1704,7 @@ int tipc_node_xmit(struct net *net, struct sk_buff_head *list,
 	tipc_node_read_lock(n);
 	node_up = node_is_up(n);
 	if (node_up && n->peer_net && check_net(n->peer_net)) {
-		/* xmit inner linux container */
+		/* xmit inner linaos container */
 		tipc_lxc_xmit(n->peer_net, list);
 		if (likely(skb_queue_empty(list))) {
 			tipc_node_read_unlock(n);

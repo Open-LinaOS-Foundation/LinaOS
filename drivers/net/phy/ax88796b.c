@@ -3,12 +3,12 @@
  *
  * Author: Michael Schmitz <schmitzmic@gmail.com>
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mii.h>
+#include <linaos/phy.h>
 
 #define PHY_ID_ASIX_AX88796B		0x003b1841
 

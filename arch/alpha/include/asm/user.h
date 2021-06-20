@@ -2,8 +2,8 @@
 #ifndef _ALPHA_USER_H
 #define _ALPHA_USER_H
 
-#include <linux/sched.h>
-#include <linux/ptrace.h>
+#include <linaos/sched.h>
+#include <linaos/ptrace.h>
 
 #include <asm/page.h>
 #include <asm/reg.h>
@@ -11,7 +11,7 @@
 /*
  * Core file format: The core file is written in such a way that gdb
  * can understand it and provide useful information to the user (under
- * linux we use the `trad-core' bfd, NOT the osf-core).  The file contents
+ * linaos we use the `trad-core' bfd, NOT the osf-core).  The file contents
  * are as follows:
  *
  *  upage: 1 page consisting of a user struct that tells gdb

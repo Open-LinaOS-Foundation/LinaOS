@@ -6,7 +6,7 @@
 #ifndef K3_EVENT_ROUTER_
 #define K3_EVENT_ROUTER_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct k3_event_route_data {
 	void *priv;

@@ -8,9 +8,9 @@
  *           Jens Osterkamp <Jens.Osterkamp@de.ibm.com>
  */
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/pci.h>
 
 #include "spider_net.h"
 

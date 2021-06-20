@@ -7,7 +7,7 @@
 #include "pvrusb2-std.h"
 #include "pvrusb2-debug.h"
 #include <asm/string.h>
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 struct std_name {
 	const char *name;

@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-/* ZD1211 USB-WLAN driver for Linux
+/* ZD1211 USB-WLAN driver for LinaOS
  *
  * Copyright (C) 2005-2007 Ulrich Kunitz <kune@deine-taler.de>
  * Copyright (C) 2006-2007 Daniel Drake <dsd@gentoo.org>
@@ -8,9 +8,9 @@
 #ifndef _ZD_DEF_H
 #define _ZD_DEF_H
 
-#include <linux/kernel.h>
-#include <linux/stringify.h>
-#include <linux/device.h>
+#include <linaos/kernel.h>
+#include <linaos/stringify.h>
+#include <linaos/device.h>
 
 typedef u16 __nocast zd_addr_t;
 

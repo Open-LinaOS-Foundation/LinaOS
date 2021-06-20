@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/fpu/api.h>
 
 #include "i915_memcpy.h"

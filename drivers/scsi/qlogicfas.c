@@ -15,17 +15,17 @@
  * Check qlogicfas408.c for more credits and info.
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>		/* to get disk capacity */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/unistd.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>		/* to get disk capacity */
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/proc_fs.h>
+#include <linaos/unistd.h>
+#include <linaos/spinlock.h>
+#include <linaos/stat.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

@@ -8,12 +8,12 @@
  * Based on code from pci.c, chrp_pci.c and pSeries_pci.c
  */
 
-#include <linux/kernel.h>
-#include <linux/threads.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/threads.h>
+#include <linaos/pci.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

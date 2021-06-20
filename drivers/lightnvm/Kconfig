@@ -15,7 +15,7 @@ menuconfig NVM
 	  If you say N, all options in this submenu will be skipped and disabled
 	  only do this if you know what you are doing.
 
-	  This code is deprecated and will be removed in Linux 5.15.
+	  This code is deprecated and will be removed in LinaOS 5.15.
 
 if NVM
 

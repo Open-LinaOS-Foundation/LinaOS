@@ -6,7 +6,7 @@
 #ifndef _MISC_CXLLIB_H
 #define _MISC_CXLLIB_H
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include <asm/reg.h>
 
 /*

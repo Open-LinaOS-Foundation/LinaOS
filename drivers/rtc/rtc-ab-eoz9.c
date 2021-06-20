@@ -5,15 +5,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/bitfield.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <linaos/module.h>
+#include <linaos/rtc.h>
+#include <linaos/i2c.h>
+#include <linaos/bcd.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
+#include <linaos/bitfield.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
 
 #define ABEOZ9_REG_CTRL1		0x00
 #define ABEOZ9_REG_CTRL1_MASK		GENMASK(7, 0)

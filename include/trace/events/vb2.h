@@ -5,7 +5,7 @@
 #if !defined(_TRACE_VB2_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_VB2_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include <media/videobuf2-core.h>
 
 DECLARE_EVENT_CLASS(vb2_event_class,

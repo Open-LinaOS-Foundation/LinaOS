@@ -6,20 +6,20 @@
  *  Copyright (C) 2015-2017 Sebastian Reichel <sre@kernel.org>
  */
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/serdev.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/errno.h>
+#include <linaos/firmware.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/serdev.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 #include <asm/unaligned.h>
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <sys/epoll.h>
 #include <util/symbol.h>
-#include <linux/filter.h>
+#include <linaos/filter.h>
 #include "tests.h"
 #include "debug.h"
 #include "probe-file.h"

@@ -3,7 +3,7 @@
  * Algorithm testing framework and tests.
  *
  * Copyright (c) 2002 James Morris <jmorris@intercode.com.au>
- * Copyright (c) 2002 Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) 2002 Jean-Francois Dive <jef@linaosbe.org>
  * Copyright (c) 2007 Nokia Siemens Networks
  * Copyright (c) 2008 Herbert Xu <herbert@gondor.apana.org.au>
  * Copyright (c) 2019 Google LLC
@@ -19,15 +19,15 @@
 #include <crypto/aead.h>
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/err.h>
-#include <linux/fips.h>
-#include <linux/module.h>
-#include <linux/once.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/uio.h>
+#include <linaos/err.h>
+#include <linaos/fips.h>
+#include <linaos/module.h>
+#include <linaos/once.h>
+#include <linaos/random.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/uio.h>
 #include <crypto/rng.h>
 #include <crypto/drbg.h>
 #include <crypto/akcipher.h>

@@ -6,7 +6,7 @@
 
 #include "spectrum_router.h"
 #include <net/ip_fib.h>
-#include <linux/if_tunnel.h>
+#include <linaos/if_tunnel.h>
 
 struct ip_tunnel_parm
 mlxsw_sp_ipip_netdev_parms4(const struct net_device *ol_dev);

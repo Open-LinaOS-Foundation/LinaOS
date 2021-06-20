@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irq.h>
 
 #include "msm_drv.h"
 #include "mdp5_kms.h"

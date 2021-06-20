@@ -27,7 +27,7 @@ config VIDEO_AU0828_V4L2
 	select VIDEO_TUNER
 	default y
 	help
-	  This is a video4linux driver for Auvitek's USB device.
+	  This is a video4linaos driver for Auvitek's USB device.
 
 	  Choose Y here to include support for v4l2 analog video
 	  capture within the au0828 driver.

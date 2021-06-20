@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/pcmcia/pxa/pxa_cm_x270.c
+ * linaos/drivers/pcmcia/pxa/pxa_cm_x270.c
  *
  * Compulab Ltd., 2003, 2007, 2008
  * Mike Rapoport <mike@compulab.co.il>
  */
 
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/export.h>
+#include <linaos/platform_device.h>
+#include <linaos/irq.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/export.h>
 
 #include "soc_common.h"
 

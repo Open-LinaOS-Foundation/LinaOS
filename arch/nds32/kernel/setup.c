@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/cpu.h>
-#include <linux/memblock.h>
-#include <linux/seq_file.h>
-#include <linux/console.h>
-#include <linux/screen_info.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
+#include <linaos/cpu.h>
+#include <linaos/memblock.h>
+#include <linaos/seq_file.h>
+#include <linaos/console.h>
+#include <linaos/screen_info.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
 #include <asm/setup.h>
 #include <asm/sections.h>
 #include <asm/proc-fns.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux-DVB Driver for DiBcom's DiB0090 base-band RF Tuner.
+ * LinaOS-DVB Driver for DiBcom's DiB0090 base-band RF Tuner.
  *
  * Copyright (C) 2005-9 DiBcom (http://www.dibcom.fr/)
  *
@@ -10,10 +10,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
 
 #include <media/dvb_frontend.h>
 

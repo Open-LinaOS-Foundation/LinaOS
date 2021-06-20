@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux s390-specific parts of the memory manager.
+# Makefile for the linaos s390-specific parts of the memory manager.
 #
 
 KCOV_INSTRUMENT := n
@@ -58,13 +58,13 @@ define cmd_section_cmp
 	touch $@
 endef
 
-$(obj)/bzImage: $(obj)/compressed/vmlinux $(obj)/section_cmp.boot.data $(obj)/section_cmp.boot.preserved.data FORCE
+$(obj)/bzImage: $(obj)/compressed/vmlinaos $(obj)/section_cmp.boot.data $(obj)/section_cmp.boot.preserved.data FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/section_cmp%: vmlinux $(obj)/compressed/vmlinux FORCE
+$(obj)/section_cmp%: vmlinaos $(obj)/compressed/vmlinaos FORCE
 	$(call if_changed,section_cmp)
 
-$(obj)/compressed/vmlinux: $(obj)/startup.a FORCE
+$(obj)/compressed/vmlinaos: $(obj)/startup.a FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed $@
 
 $(obj)/startup.a: $(OBJECTS) FORCE

@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2011-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2012, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _CORESIGHT_PRIV_H
 #define _CORESIGHT_PRIV_H
 
-#include <linux/amba/bus.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/coresight.h>
-#include <linux/pm_runtime.h>
+#include <linaos/amba/bus.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
+#include <linaos/coresight.h>
+#include <linaos/pm_runtime.h>
 
 /*
  * Coresight management registers (0xf00-0xfcc)

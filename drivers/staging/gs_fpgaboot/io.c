@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/firmware.h>
+#include <linaos/io.h>
 
 #include "io.h"
 

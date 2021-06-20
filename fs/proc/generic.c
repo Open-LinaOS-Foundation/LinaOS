@@ -9,24 +9,24 @@
  * Copyright (C) 1997 Theodore Ts'o
  */
 
-#include <linux/cache.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/printk.h>
-#include <linux/mount.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
+#include <linaos/cache.h>
+#include <linaos/errno.h>
+#include <linaos/time.h>
+#include <linaos/proc_fs.h>
+#include <linaos/stat.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/namei.h>
+#include <linaos/slab.h>
+#include <linaos/printk.h>
+#include <linaos/mount.h>
+#include <linaos/init.h>
+#include <linaos/idr.h>
+#include <linaos/bitops.h>
+#include <linaos/spinlock.h>
+#include <linaos/completion.h>
+#include <linaos/uaccess.h>
+#include <linaos/seq_file.h>
 
 #include "internal.h"
 

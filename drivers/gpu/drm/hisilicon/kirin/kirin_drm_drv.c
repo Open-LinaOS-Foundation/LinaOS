@@ -11,11 +11,11 @@
  *	Xinwei Kong <kong.kongxinwei@hisilicon.com>
  */
 
-#include <linux/of_platform.h>
-#include <linux/component.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/component.h>
+#include <linaos/module.h>
+#include <linaos/of_graph.h>
+#include <linaos/platform_device.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_drv.h>

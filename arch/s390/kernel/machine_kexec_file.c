@@ -4,14 +4,14 @@
  *
  * Copyright IBM Corp. 2018
  *
- * Author(s): Philipp Rudo <prudo@linux.vnet.ibm.com>
+ * Author(s): Philipp Rudo <prudo@linaos.vnet.ibm.com>
  */
 
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/kexec.h>
-#include <linux/module_signature.h>
-#include <linux/verification.h>
+#include <linaos/elf.h>
+#include <linaos/errno.h>
+#include <linaos/kexec.h>
+#include <linaos/module_signature.h>
+#include <linaos/verification.h>
 #include <asm/boot_data.h>
 #include <asm/ipl.h>
 #include <asm/setup.h>

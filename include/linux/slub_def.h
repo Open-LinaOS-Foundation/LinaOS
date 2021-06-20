@@ -7,9 +7,9 @@
  *
  * (C) 2007 SGI, Christoph Lameter
  */
-#include <linux/kfence.h>
-#include <linux/kobject.h>
-#include <linux/reciprocal_div.h>
+#include <linaos/kfence.h>
+#include <linaos/kobject.h>
+#include <linaos/reciprocal_div.h>
 
 enum stat_item {
 	ALLOC_FASTPATH,		/* Allocation from cpu slab */

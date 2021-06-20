@@ -2,8 +2,8 @@
 /*
  * Ceph string constants
  */
-#include <linux/module.h>
-#include <linux/ceph/types.h>
+#include <linaos/module.h>
+#include <linaos/ceph/types.h>
 
 const char *ceph_entity_type_name(int type)
 {

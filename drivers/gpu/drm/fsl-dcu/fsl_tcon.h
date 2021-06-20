@@ -10,7 +10,7 @@
 #ifndef __FSL_TCON_H__
 #define __FSL_TCON_H__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define FSL_TCON_CTRL1			0x0
 #define FSL_TCON_CTRL1_TCON_BYPASS	BIT(29)

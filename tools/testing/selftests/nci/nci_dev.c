@@ -12,9 +12,9 @@
 #include <sys/ioctl.h>
 #include <fcntl.h>
 #include <pthread.h>
-#include <linux/genetlink.h>
+#include <linaos/genetlink.h>
 #include <sys/socket.h>
-#include <linux/nfc.h>
+#include <linaos/nfc.h>
 
 #include "../kselftest_harness.h"
 

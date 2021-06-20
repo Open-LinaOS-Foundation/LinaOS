@@ -36,7 +36,7 @@
 		led-0 {
 			label = "debug0";
 			gpios = <&gpio4 16 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

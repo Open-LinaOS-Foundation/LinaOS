@@ -5,16 +5,16 @@
  * Copyright 2007, 2008 Wolfson Microelectronics PLC.
  *
  * Author: Liam Girdwood
- *         linux@wolfsonmicro.com
+ *         linaos@wolfsonmicro.com
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/wm8350/core.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/wm8350/core.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 static int wm8350_i2c_probe(struct i2c_client *i2c,
 			    const struct i2c_device_id *id)

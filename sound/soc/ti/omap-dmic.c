@@ -10,15 +10,15 @@
  *	   Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/of_device.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of_device.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

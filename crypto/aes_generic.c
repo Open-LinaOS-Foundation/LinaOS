@@ -5,7 +5,7 @@
  *
  * Based on Brian Gladman's code.
  *
- * Linux developers:
+ * LinaOS developers:
  *  Alexander Kjeldaas <astor@fast.no>
  *  Herbert Valerio Riedel <hvr@hvrlab.org>
  *  Kyle McMartin <kyle@debian.org>
@@ -48,11 +48,11 @@
  */
 
 #include <crypto/aes.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/crypto.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/crypto.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 

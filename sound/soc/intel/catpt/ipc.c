@@ -5,7 +5,7 @@
 // Author: Cezary Rojewski <cezary.rojewski@intel.com>
 //
 
-#include <linux/irqreturn.h>
+#include <linaos/irqreturn.h>
 #include "core.h"
 #include "messages.h"
 #include "registers.h"

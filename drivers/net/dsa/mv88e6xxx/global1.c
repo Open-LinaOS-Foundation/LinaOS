@@ -4,11 +4,11 @@
  *
  * Copyright (c) 2008 Marvell Semiconductor
  *
- * Copyright (c) 2016-2017 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2016-2017 Savoir-faire LinaOS Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairelinaos.com>
  */
 
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 
 #include "chip.h"
 #include "global1.h"

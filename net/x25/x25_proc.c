@@ -12,10 +12,10 @@
  *	2002/10/06	Arnaldo Carvalho de Melo  seq_file support
  */
 
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <linaos/init.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/export.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/x25.h>

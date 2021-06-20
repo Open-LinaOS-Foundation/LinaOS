@@ -465,7 +465,7 @@
 			       0x0ff00000 0x100000>;
 			reg-names = "dbi", "elbi", "parf", "config";
 			device_type = "pci";
-			linux,pci-domain = <0>;
+			linaos,pci-domain = <0>;
 			bus-range = <0x00 0xff>;
 			num-lanes = <1>;
 			#address-cells = <3>;
@@ -516,7 +516,7 @@
 			       0x31f00000 0x100000>;
 			reg-names = "dbi", "elbi", "parf", "config";
 			device_type = "pci";
-			linux,pci-domain = <1>;
+			linaos,pci-domain = <1>;
 			bus-range = <0x00 0xff>;
 			num-lanes = <1>;
 			#address-cells = <3>;
@@ -567,7 +567,7 @@
 			       0x35f00000 0x100000>;
 			reg-names = "dbi", "elbi", "parf", "config";
 			device_type = "pci";
-			linux,pci-domain = <2>;
+			linaos,pci-domain = <2>;
 			bus-range = <0x00 0xff>;
 			num-lanes = <1>;
 			#address-cells = <3>;

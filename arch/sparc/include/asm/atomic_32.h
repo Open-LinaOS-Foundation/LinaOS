@@ -2,8 +2,8 @@
 /* atomic.h: These still suck, but the I-cache hit rate is higher.
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
- * Copyright (C) 2000 Anton Blanchard (anton@linuxcare.com.au)
- * Copyright (C) 2007 Kyle McMartin (kyle@parisc-linux.org)
+ * Copyright (C) 2000 Anton Blanchard (anton@linaoscare.com.au)
+ * Copyright (C) 2007 Kyle McMartin (kyle@parisc-linaos.org)
  *
  * Additions by Keith M Wesolowski (wesolows@foobazco.org) based
  * on asm-parisc/atomic.h Copyright (C) 2000 Philipp Rumpf <prumpf@tux.org>.
@@ -12,7 +12,7 @@
 #ifndef __ARCH_SPARC_ATOMIC__
 #define __ARCH_SPARC_ATOMIC__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include <asm/cmpxchg.h>
 #include <asm/barrier.h>

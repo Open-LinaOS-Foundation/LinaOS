@@ -2,9 +2,9 @@
 #ifndef ISCSI_TARGET_STAT_H
 #define ISCSI_TARGET_STAT_H
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/socket.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/socket.h>
 
 /*
  * For struct iscsi_tiqn->tiqn_wwn default groups

@@ -3,17 +3,17 @@
  * Copyright 2011 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/kvm_host.h>
-#include <linux/preempt.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/sizes.h>
-#include <linux/cma.h>
-#include <linux/bitops.h>
+#include <linaos/cpu.h>
+#include <linaos/kvm_host.h>
+#include <linaos/preempt.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/sizes.h>
+#include <linaos/cma.h>
+#include <linaos/bitops.h>
 
 #include <asm/asm-prototypes.h>
 #include <asm/cputable.h>

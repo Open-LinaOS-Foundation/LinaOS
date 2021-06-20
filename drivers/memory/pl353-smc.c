@@ -7,15 +7,15 @@
  * Author: Naga Sureshkumar Relli <nagasure@xilinx.com>
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/pl353-smc.h>
-#include <linux/amba/bus.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/pl353-smc.h>
+#include <linaos/amba/bus.h>
 
 /* Register definitions */
 #define PL353_SMC_MEMC_STATUS_OFFS	0	/* Controller status reg, RO */

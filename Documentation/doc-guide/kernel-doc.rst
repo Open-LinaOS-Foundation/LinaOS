@@ -1,7 +1,7 @@
 Writing kernel-doc comments
 ===========================
 
-The Linux kernel source files may contain structured documentation
+The LinaOS kernel source files may contain structured documentation
 comments in the kernel-doc format to describe the functions, types
 and design of the code. It is easier to keep documentation up-to-date
 when it is embedded in source files.

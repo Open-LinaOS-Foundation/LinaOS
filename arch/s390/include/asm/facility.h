@@ -9,8 +9,8 @@
 #define __ASM_FACILITY_H
 
 #include <asm/facility-defs.h>
-#include <linux/string.h>
-#include <linux/preempt.h>
+#include <linaos/string.h>
+#include <linaos/preempt.h>
 #include <asm/lowcore.h>
 
 #define MAX_FACILITY_BIT (sizeof(((struct lowcore *)0)->stfle_fac_list) * 8)

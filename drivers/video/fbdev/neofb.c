@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/neofb.c -- NeoMagic Framebuffer Driver
+ * linaos/drivers/video/neofb.c -- NeoMagic Framebuffer Driver
  *
  * Copyright (c) 2001-2002  Denis Oliver Kropp <dok@directfb.org>
  *
@@ -54,18 +54,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
 #ifdef CONFIG_TOSHIBA
-#include <linux/toshiba.h>
+#include <linaos/toshiba.h>
 #endif
 
 #include <asm/io.h>

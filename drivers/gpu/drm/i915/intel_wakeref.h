@@ -7,15 +7,15 @@
 #ifndef INTEL_WAKEREF_H
 #define INTEL_WAKEREF_H
 
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/lockdep.h>
-#include <linux/mutex.h>
-#include <linux/refcount.h>
-#include <linux/stackdepot.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <linaos/atomic.h>
+#include <linaos/bitfield.h>
+#include <linaos/bits.h>
+#include <linaos/lockdep.h>
+#include <linaos/mutex.h>
+#include <linaos/refcount.h>
+#include <linaos/stackdepot.h>
+#include <linaos/timer.h>
+#include <linaos/workqueue.h>
 
 #if IS_ENABLED(CONFIG_DRM_I915_DEBUG)
 #define INTEL_WAKEREF_BUG_ON(expr) BUG_ON(expr)

@@ -382,7 +382,7 @@ config SPARC_LEON
 	  The LEON processor is a synthesizable VHDL model of the
 	  SPARC-v8 standard. LEON is  part of the GRLIB collection of
 	  IP cores that are distributed under GPL. GRLIB can be downloaded
-	  from www.gaisler.com. You can download a sparc-linux cross-compilation
+	  from www.gaisler.com. You can download a sparc-linaos cross-compilation
 	  toolchain at www.gaisler.com.
 
 if SPARC_LEON
@@ -393,7 +393,7 @@ config UBOOT_LOAD_ADDR
 	default 0x40004000
 	help
 	 U-Boot kernel load address, the address in physical address space
-	 where u-boot will place the Linux kernel before booting it.
+	 where u-boot will place the LinaOS kernel before booting it.
 	 This address is normally the base address of main memory + 0x4000.
 
 config UBOOT_FLASH_ADDR
@@ -412,7 +412,7 @@ config UBOOT_ENTRY_ADDR
 	 Do not change this unless you know what you're doing. This is
 	 hardcoded by the SPARC32 and LEON port.
 
-	 This is the virtual address u-boot jumps to when booting the Linux
+	 This is the virtual address u-boot jumps to when booting the LinaOS
 	 Kernel.
 
 endmenu

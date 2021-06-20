@@ -29,25 +29,25 @@
 
 /*****************************************************************************/
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/if.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <linaos/capability.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/net.h>
+#include <linaos/in.h>
+#include <linaos/if.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/hdlcdrv.h>
-#include <linux/random.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/skbuff.h>
+#include <linaos/hdlcdrv.h>
+#include <linaos/random.h>
 #include <net/ax25.h> 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/crc-ccitt.h>
+#include <linaos/crc-ccitt.h>
 
 /* --------------------------------------------------------------------- */
 

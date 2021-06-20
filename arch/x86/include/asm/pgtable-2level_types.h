@@ -3,7 +3,7 @@
 #define _ASM_X86_PGTABLE_2LEVEL_DEFS_H
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <linaos/types.h>
 
 typedef unsigned long	pteval_t;
 typedef unsigned long	pmdval_t;

@@ -11,7 +11,7 @@
 #ifndef __XEN_DRM_FRONT_CFG_H_
 #define __XEN_DRM_FRONT_CFG_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define XEN_DRM_FRONT_MAX_CRTCS	4
 

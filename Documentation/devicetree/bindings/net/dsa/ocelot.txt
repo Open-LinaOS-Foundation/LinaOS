@@ -32,7 +32,7 @@ connected, in the Node Processor Interface (NPI) mode, to an Ethernet port.
 By default, in fsl-ls1028a.dtsi, the NPI port is assigned to the internal
 2.5Gbps port@4, but can be moved to the 1Gbps port@5, depending on the specific
 use case.  Moving the NPI port to an external switch port is hardware possible,
-but there is no platform support for the Linux system on the LS1028A chip to
+but there is no platform support for the LinaOS system on the LS1028A chip to
 operate as an entire slave DSA chip.  NPI functionality (and therefore DSA
 tagging) is supported on a single port at a time.
 

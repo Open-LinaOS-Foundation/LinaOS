@@ -20,7 +20,7 @@ config VIDEO_TM6000_ALSA
 	depends on VIDEO_TM6000 && SND
 	select SND_PCM
 	help
-	  This is a video4linux driver for direct (DMA) audio for
+	  This is a video4linaos driver for direct (DMA) audio for
 	  TM5600/TM6000/TM6010 USB Devices.
 
 	  To compile this driver as a module, choose M here: the

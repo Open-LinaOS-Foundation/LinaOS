@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2009 Atsushi Nemoto
  */
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/scatterlist.h>
 
 #include "dmaengine.h"
 #include "txx9dmac.h"

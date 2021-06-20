@@ -11,14 +11,14 @@
  * Atheros chip stored on UBI Volume on NAND. Hence, this module can be used to
  * initialize the chip when the user-space is ready to extract the init code.
  */
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/ath9k_platform.h>
+#include <linaos/module.h>
+#include <linaos/completion.h>
+#include <linaos/etherdevice.h>
+#include <linaos/firmware.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/ath9k_platform.h>
 
 struct owl_ctx {
 	struct completion eeprom_load;

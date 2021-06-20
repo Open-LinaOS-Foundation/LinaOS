@@ -55,11 +55,11 @@
  */
 
 #include <crypto/skcipher.h>
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/lcm.h>
+#include <linaos/err.h>
+#include <linaos/types.h>
+#include <linaos/sunrpc/gss_krb5.h>
+#include <linaos/sunrpc/xdr.h>
+#include <linaos/lcm.h>
 
 #if IS_ENABLED(CONFIG_SUNRPC_DEBUG)
 # define RPCDBG_FACILITY        RPCDBG_AUTH

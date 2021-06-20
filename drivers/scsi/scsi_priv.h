@@ -2,10 +2,10 @@
 #ifndef _SCSI_PRIV_H
 #define _SCSI_PRIV_H
 
-#include <linux/device.h>
-#include <linux/async.h>
+#include <linaos/device.h>
+#include <linaos/async.h>
 #include <scsi/scsi_device.h>
-#include <linux/sbitmap.h>
+#include <linaos/sbitmap.h>
 
 struct request_queue;
 struct request;

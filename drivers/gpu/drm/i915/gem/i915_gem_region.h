@@ -6,7 +6,7 @@
 #ifndef __I915_GEM_REGION_H__
 #define __I915_GEM_REGION_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct intel_memory_region;
 struct drm_i915_gem_object;

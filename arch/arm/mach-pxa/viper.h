@@ -80,7 +80,7 @@
 #define VIPER_BOARD_ISSUE(x)	(((x) >> 0) & 0x7)
 
 /* Interrupt and Configuration Register (VIPER_ICR) */
-/* This is a write only register. Only CF_RST is used under Linux */
+/* This is a write only register. Only CF_RST is used under LinaOS */
 
 #define VIPER_ICR_RETRIG	(1 << 0)
 #define VIPER_ICR_AUTO_CLR	(1 << 1)

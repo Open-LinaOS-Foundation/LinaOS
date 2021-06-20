@@ -6,19 +6,19 @@
  * Copyright © 2000-2003 Nicolas Pitre <nico@fluxnic.net>
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/vmalloc.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/blktrans.h>
-#include <linux/mutex.h>
-#include <linux/major.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/blktrans.h>
+#include <linaos/mutex.h>
+#include <linaos/major.h>
 
 
 struct mtdblk_dev {
@@ -34,7 +34,7 @@ struct mtdblk_dev {
 /*
  * Cache stuff...
  *
- * Since typical flash erasable sectors are much larger than what Linux's
+ * Since typical flash erasable sectors are much larger than what LinaOS's
  * buffer cache can handle, we must implement read-modify-write on flash
  * sectors for each block write requests.  To avoid over-erasing flash sectors
  * and to speed things up, we locally cache a whole flash sector while it is

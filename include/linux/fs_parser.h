@@ -8,7 +8,7 @@
 #ifndef _LINUX_FS_PARSER_H
 #define _LINUX_FS_PARSER_H
 
-#include <linux/fs_context.h>
+#include <linaos/fs_context.h>
 
 struct path;
 

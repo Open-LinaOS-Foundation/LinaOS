@@ -9,8 +9,8 @@
 #include <crypto/internal/hash.h>
 #include <crypto/internal/simd.h>
 #include <crypto/nhpoly1305.h>
-#include <linux/module.h>
-#include <linux/sizes.h>
+#include <linaos/module.h>
+#include <linaos/sizes.h>
 #include <asm/simd.h>
 
 asmlinkage void nh_avx2(const u32 *key, const u8 *message, size_t message_len,

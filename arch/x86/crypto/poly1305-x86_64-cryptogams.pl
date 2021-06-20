@@ -129,7 +129,7 @@ sub end_function() {
 }
 
 $code.=<<___ if $kernel;
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 ___
 
 if ($avx) {

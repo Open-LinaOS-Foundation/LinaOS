@@ -19,7 +19,7 @@
 #include "percpu.h"
 #include "workqueues.h"
 
-#include <linux/srcu.h>
+#include <linaos/srcu.h>
 
 /* Functions needed from modify_srcu.c */
 bool try_check_zero(struct srcu_struct *sp, int idx, int trycount);

@@ -9,20 +9,20 @@
 // Baikal-T1 DW APB SPI and System Boot SPI driver
 //
 
-#include <linux/clk.h>
-#include <linux/cpumask.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mux/consumer.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/spi/spi-mem.h>
-#include <linux/spi/spi.h>
+#include <linaos/clk.h>
+#include <linaos/cpumask.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mux/consumer.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi-mem.h>
+#include <linaos/spi/spi.h>
 
 #include "spi-dw.h"
 

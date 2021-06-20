@@ -50,7 +50,7 @@ static void iss_4xx_fixups(void)
 		ibm4xx_sdram_fixup_memsize();
 }
 
-static void *iss_4xx_vmlinux_alloc(unsigned long size)
+static void *iss_4xx_vmlinaos_alloc(unsigned long size)
 {
 	return (void *)ibm4xx_memstart;
 }
@@ -64,7 +64,7 @@ void platform_init(void)
 
 	simple_alloc_init(_end, avail_ram, 128, 64);
 	platform_ops.fixups = iss_4xx_fixups;
-	platform_ops.vmlinux_alloc = iss_4xx_vmlinux_alloc;
+	platform_ops.vmlinaos_alloc = iss_4xx_vmlinaos_alloc;
 	platform_ops.exit = ibm44x_dbcr_reset;
 	pir_reg = mfspr(SPRN_PIR);
 	fdt_set_boot_cpuid_phys(_dtb_start, pir_reg);

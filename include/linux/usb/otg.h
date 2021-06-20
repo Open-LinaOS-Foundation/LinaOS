@@ -10,8 +10,8 @@
 #ifndef __LINUX_USB_OTG_H
 #define __LINUX_USB_OTG_H
 
-#include <linux/phy/phy.h>
-#include <linux/usb/phy.h>
+#include <linaos/phy/phy.h>
+#include <linaos/usb/phy.h>
 
 struct usb_otg {
 	u8			default_a;

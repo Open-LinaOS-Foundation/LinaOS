@@ -8,16 +8,16 @@
  * This was inspired by Brendan Higgins' ipmi-bmc-bt-i2c driver.
  */
 
-#include <linux/acpi.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <linaos/acpi.h>
+#include <linaos/errno.h>
+#include <linaos/i2c.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/poll.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/wait.h>
 
 #define MAX_MSG_LEN		240
 #define IPMB_REQUEST_LEN_MIN	7

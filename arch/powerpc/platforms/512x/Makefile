@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Freescale PowerPC 512x linux kernel.
+# Makefile for the Freescale PowerPC 512x linaos kernel.
 #
 obj-$(CONFIG_COMMON_CLK)	+= clock-commonclk.o
 obj-y				+= mpc512x_shared.o

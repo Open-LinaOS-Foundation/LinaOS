@@ -2,7 +2,7 @@
 /*
  * Driver for Allwinner sunXi IR controller
  *
- * Copyright (C) 2014 Alexsey Shestacov <wingrime@linux-sunxi.org>
+ * Copyright (C) 2014 Alexsey Shestacov <wingrime@linaos-sunxi.org>
  * Copyright (C) 2014 Alexander Bersenev <bay@hackerdom.ru>
  *
  * Based on sun5i-ir.c:
@@ -10,11 +10,11 @@
  * Allwinner Technology Co., Ltd. <www.allwinnertech.com>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/reset.h>
 #include <media/rc-core.h>
 
 #define SUNXI_IR_DEV "sunxi-ir"
@@ -320,7 +320,7 @@ static int sunxi_ir_probe(struct platform_device *pdev)
 	ir->rc->input_id.vendor = 0x0001;
 	ir->rc->input_id.product = 0x0001;
 	ir->rc->input_id.version = 0x0100;
-	ir->map_name = of_get_property(dn, "linux,rc-map-name", NULL);
+	ir->map_name = of_get_property(dn, "linaos,rc-map-name", NULL);
 	ir->rc->map_name = ir->map_name ?: RC_MAP_EMPTY;
 	ir->rc->dev.parent = dev;
 	ir->rc->allowed_protocols = RC_PROTO_BIT_ALL_IR_DECODER;
@@ -427,5 +427,5 @@ static struct platform_driver sunxi_ir_driver = {
 module_platform_driver(sunxi_ir_driver);
 
 MODULE_DESCRIPTION("Allwinner sunXi IR controller driver");
-MODULE_AUTHOR("Alexsey Shestacov <wingrime@linux-sunxi.org>");
+MODULE_AUTHOR("Alexsey Shestacov <wingrime@linaos-sunxi.org>");
 MODULE_LICENSE("GPL");

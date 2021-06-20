@@ -1,8 +1,8 @@
-#include <uapi/linux/bpf.h>
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <uapi/linux/in.h>
-#include <uapi/linux/in6.h>
+#include <uapi/linaos/bpf.h>
+#include <linaos/socket.h>
+#include <linaos/net.h>
+#include <uapi/linaos/in.h>
+#include <uapi/linaos/in6.h>
 #include <bpf/bpf_helpers.h>
 
 SEC("cgroup/sock1")

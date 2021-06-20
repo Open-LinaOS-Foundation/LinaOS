@@ -6,9 +6,9 @@
 #ifndef __LINUX_SND_SOC_ACPI_H
 #define __LINUX_SND_SOC_ACPI_H
 
-#include <linux/stddef.h>
-#include <linux/acpi.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/stddef.h>
+#include <linaos/acpi.h>
+#include <linaos/mod_devicetable.h>
 
 struct snd_soc_acpi_package_context {
 	char *name;           /* package name */

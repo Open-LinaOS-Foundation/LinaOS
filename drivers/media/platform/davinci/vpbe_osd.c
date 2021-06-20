@@ -8,20 +8,20 @@
  * Murali Karicheri (mkaricheri@gmail.com), Texas Instruments Ltd.
  * - ported to sub device interface
  */
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/slab.h>
 
 #include <media/davinci/vpss.h>
 #include <media/v4l2-device.h>
 #include <media/davinci/vpbe_types.h>
 #include <media/davinci/vpbe_osd.h>
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include "vpbe_osd_regs.h"
 
 #define MODULE_NAME	"davinci-vpbe-osd"

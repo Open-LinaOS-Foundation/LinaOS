@@ -7,8 +7,8 @@
  * Author:  Chunfeng.Yun <chunfeng.yun@mediatek.com>
  */
 
-#include <linux/iopoll.h>
-#include <linux/usb/composite.h>
+#include <linaos/iopoll.h>
+#include <linaos/usb/composite.h>
 
 #include "mtu3.h"
 #include "mtu3_debug.h"

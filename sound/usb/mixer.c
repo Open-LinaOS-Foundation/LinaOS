@@ -27,16 +27,16 @@
  *  	- parse available sample rates again when clock sources changed
  */
 
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/usb/audio-v3.h>
+#include <linaos/bitops.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/log2.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/usb.h>
+#include <linaos/usb/audio.h>
+#include <linaos/usb/audio-v2.h>
+#include <linaos/usb/audio-v3.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

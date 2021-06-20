@@ -4,17 +4,17 @@
  * Emilio López <emilio@elopez.com.ar>
  */
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/bitmap.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dmapool.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of_dma.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #include "virt-dma.h"
 

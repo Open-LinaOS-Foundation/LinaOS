@@ -21,11 +21,11 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/keyctl.h>
-#include <linux/key-type.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/keyctl.h>
+#include <linaos/key-type.h>
 #include <keys/user-type.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
@@ -351,8 +351,8 @@ sid_to_id(struct cifs_sb_info *cifs_sb, struct cifs_sid *psid,
 	struct key *sidkey;
 	char *sidstr;
 	const struct cred *saved_cred;
-	kuid_t fuid = cifs_sb->ctx->linux_uid;
-	kgid_t fgid = cifs_sb->ctx->linux_gid;
+	kuid_t fuid = cifs_sb->ctx->linaos_uid;
+	kgid_t fgid = cifs_sb->ctx->linaos_gid;
 
 	/*
 	 * If we have too many subauthorities, then something is really wrong.
@@ -453,7 +453,7 @@ out_revert_creds:
 
 	/*
 	 * Note that we return 0 here unconditionally. If the mapping
-	 * fails then we just fall back to using the ctx->linux_uid/linux_gid.
+	 * fails then we just fall back to using the ctx->linaos_uid/linaos_gid.
 	 */
 got_valid_id:
 	rc = 0;

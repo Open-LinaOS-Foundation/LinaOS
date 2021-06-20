@@ -4,8 +4,8 @@
 #ifndef _GDMA_H
 #define _GDMA_H
 
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/netdevice.h>
 
 #include "shm_channel.h"
 
@@ -509,7 +509,7 @@ struct gdma_verify_ver_req {
 
 	/* Advisory fields */
 	u64 drv_ver;
-	u32 os_type; /* Linux = 0x10; Windows = 0x20; Other = 0x30 */
+	u32 os_type; /* LinaOS = 0x10; Windows = 0x20; Other = 0x30 */
 	u32 reserved;
 	u32 os_ver_major;
 	u32 os_ver_minor;

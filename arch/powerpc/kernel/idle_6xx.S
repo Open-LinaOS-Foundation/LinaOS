@@ -9,7 +9,7 @@
  *  be done to check a runtime var (a bit like powersave-nap)
  */
 
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #include <asm/reg.h>
 #include <asm/page.h>
 #include <asm/cputable.h>

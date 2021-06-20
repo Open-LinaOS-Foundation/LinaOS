@@ -13,14 +13,14 @@
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2006
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/socket.h>
-#include <linux/audit.h>
-#include <linux/tty.h>
-#include <linux/security.h>
-#include <linux/gfp.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/socket.h>
+#include <linaos/audit.h>
+#include <linaos/tty.h>
+#include <linaos/security.h>
+#include <linaos/gfp.h>
 #include <net/sock.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>

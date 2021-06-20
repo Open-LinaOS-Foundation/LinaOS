@@ -9,7 +9,7 @@
 #include <asm/asm-offsets.h>
 #include <asm/ppc_asm.h>
 #include <asm/code-patching-asm.h>
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 /* int exec_instr(struct pt_regs *regs) */
 _GLOBAL(exec_instr)

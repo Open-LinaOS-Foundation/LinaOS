@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "dce_ipp.h"
 #include "reg_helper.h"

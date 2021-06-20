@@ -7,7 +7,7 @@
 #ifndef __LINUX_CLK_ZYNQ_H_
 #define __LINUX_CLK_ZYNQ_H_
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 void zynq_clock_init(void);
 

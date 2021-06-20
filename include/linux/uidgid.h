@@ -12,8 +12,8 @@
  * to detect when we overlook these differences.
  *
  */
-#include <linux/types.h>
-#include <linux/highuid.h>
+#include <linaos/types.h>
+#include <linaos/highuid.h>
 
 struct user_namespace;
 extern struct user_namespace init_user_ns;

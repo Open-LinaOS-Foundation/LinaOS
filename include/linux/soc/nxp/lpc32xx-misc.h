@@ -8,8 +8,8 @@
 #ifndef __SOC_LPC32XX_MISC_H
 #define __SOC_LPC32XX_MISC_H
 
-#include <linux/types.h>
-#include <linux/phy.h>
+#include <linaos/types.h>
+#include <linaos/phy.h>
 
 #ifdef CONFIG_ARCH_LPC32XX
 extern u32 lpc32xx_return_iram(void __iomem **mapbase, dma_addr_t *dmaaddr);

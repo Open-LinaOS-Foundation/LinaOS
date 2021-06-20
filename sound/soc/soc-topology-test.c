@@ -5,7 +5,7 @@
  * Copyright(c) 2021 Intel Corporation. All rights reserved.
  */
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 #include <sound/core.h>
 #include <sound/soc.h>
 #include <sound/soc-topology.h>

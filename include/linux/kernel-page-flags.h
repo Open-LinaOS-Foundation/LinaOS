@@ -2,7 +2,7 @@
 #ifndef LINUX_KERNEL_PAGE_FLAGS_H
 #define LINUX_KERNEL_PAGE_FLAGS_H
 
-#include <uapi/linux/kernel-page-flags.h>
+#include <uapi/linaos/kernel-page-flags.h>
 
 
 /* kernel hacking assistances

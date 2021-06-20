@@ -2,7 +2,7 @@
 #ifndef ISCSI_TARGET_UTIL_H
 #define ISCSI_TARGET_UTIL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <scsi/iscsi_proto.h>        /* itt_t */
 
 #define MARKER_SIZE	8

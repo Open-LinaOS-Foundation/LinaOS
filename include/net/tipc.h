@@ -36,7 +36,7 @@
 #ifndef _TIPC_HDR_H
 #define _TIPC_HDR_H
 
-#include <linux/random.h>
+#include <linaos/random.h>
 
 #define KEEPALIVE_MSG_MASK 0x0e080000  /* LINK_PROTOCOL + MSG_IS_KEEPALIVE */
 

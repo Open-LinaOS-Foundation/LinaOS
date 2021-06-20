@@ -3,11 +3,11 @@
 #define _LINUX_UTSNAME_H
 
 
-#include <linux/sched.h>
-#include <linux/nsproxy.h>
-#include <linux/ns_common.h>
-#include <linux/err.h>
-#include <uapi/linux/utsname.h>
+#include <linaos/sched.h>
+#include <linaos/nsproxy.h>
+#include <linaos/ns_common.h>
+#include <linaos/err.h>
+#include <uapi/linaos/utsname.h>
 
 enum uts_proc {
 	UTS_PROC_OSTYPE,

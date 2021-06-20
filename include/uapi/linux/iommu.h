@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * IOMMU user API definitions
  */
@@ -6,7 +6,7 @@
 #ifndef _UAPI_IOMMU_H
 #define _UAPI_IOMMU_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define IOMMU_FAULT_PERM_READ	(1 << 0) /* read */
 #define IOMMU_FAULT_PERM_WRITE	(1 << 1) /* write */

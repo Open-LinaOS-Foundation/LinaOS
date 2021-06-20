@@ -6,8 +6,8 @@
 struct socket *tap_get_socket(struct file *);
 struct ptr_ring *tap_get_ptr_ring(struct file *file);
 #else
-#include <linux/err.h>
-#include <linux/errno.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
 struct file;
 struct socket;
 static inline struct socket *tap_get_socket(struct file *f)
@@ -21,7 +21,7 @@ static inline struct ptr_ring *tap_get_ptr_ring(struct file *f)
 #endif /* CONFIG_TAP */
 
 #include <net/sock.h>
-#include <linux/skb_array.h>
+#include <linaos/skb_array.h>
 
 /*
  * Maximum times a tap device can be opened. This can be used to

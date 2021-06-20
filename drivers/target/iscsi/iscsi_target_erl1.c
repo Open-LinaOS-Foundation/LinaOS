@@ -4,12 +4,12 @@
  *
  * (c) Copyright 2007-2013 Datera, Inc.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@linaos-iscsi.org>
  *
  ******************************************************************************/
 
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 #include <scsi/iscsi_proto.h>
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>

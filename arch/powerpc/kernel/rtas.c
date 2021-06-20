@@ -8,22 +8,22 @@
  */
 
 #include <stdarg.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/cpu.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/completion.h>
-#include <linux/cpumask.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/reboot.h>
-#include <linux/syscalls.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/capability.h>
+#include <linaos/delay.h>
+#include <linaos/cpu.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
+#include <linaos/completion.h>
+#include <linaos/cpumask.h>
+#include <linaos/memblock.h>
+#include <linaos/slab.h>
+#include <linaos/reboot.h>
+#include <linaos/syscalls.h>
 
 #include <asm/prom.h>
 #include <asm/rtas.h>
@@ -33,11 +33,11 @@
 #include <asm/page.h>
 #include <asm/param.h>
 #include <asm/delay.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/udbg.h>
 #include <asm/syscalls.h>
 #include <asm/smp.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/time.h>
 #include <asm/mmu.h>
 #include <asm/topology.h>
@@ -1182,7 +1182,7 @@ void __init rtas_initialize(void)
 	if (!rtas.dev)
 		return;
 
-	no_base = of_property_read_u32(rtas.dev, "linux,rtas-base", &base);
+	no_base = of_property_read_u32(rtas.dev, "linaos,rtas-base", &base);
 	no_size = of_property_read_u32(rtas.dev, "rtas-size", &size);
 	if (no_base || no_size) {
 		of_node_put(rtas.dev);
@@ -1192,7 +1192,7 @@ void __init rtas_initialize(void)
 
 	rtas.base = base;
 	rtas.size = size;
-	no_entry = of_property_read_u32(rtas.dev, "linux,rtas-entry", &entry);
+	no_entry = of_property_read_u32(rtas.dev, "linaos,rtas-entry", &entry);
 	rtas.entry = no_entry ? rtas.base : entry;
 
 	/* If RTAS was found, allocate the RMO buffer for it and look for
@@ -1223,8 +1223,8 @@ int __init early_init_dt_scan_rtas(unsigned long node,
 	if (depth != 1 || strcmp(uname, "rtas") != 0)
 		return 0;
 
-	basep  = of_get_flat_dt_prop(node, "linux,rtas-base", NULL);
-	entryp = of_get_flat_dt_prop(node, "linux,rtas-entry", NULL);
+	basep  = of_get_flat_dt_prop(node, "linaos,rtas-base", NULL);
+	entryp = of_get_flat_dt_prop(node, "linaos,rtas-entry", NULL);
 	sizep  = of_get_flat_dt_prop(node, "rtas-size", NULL);
 
 	if (basep && entryp && sizep) {

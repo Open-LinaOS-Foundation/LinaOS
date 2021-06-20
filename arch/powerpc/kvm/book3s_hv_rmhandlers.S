@@ -5,7 +5,7 @@
  *
  * Derived from book3s_rmhandlers.S and other files, which are:
  *
- * Copyright SUSE Linux Products GmbH 2009
+ * Copyright SUSE LinaOS Products GmbH 2009
  *
  * Authors: Alexander Graf <agraf@suse.de>
  */
@@ -122,7 +122,7 @@ END_FTR_SECTION_IFCLR(CPU_FTR_ARCH_207S)
 	stb	r0, HSTATE_HWTHREAD_REQ(r13)
 
 	/*
-	 * For external interrupts we need to call the Linux
+	 * For external interrupts we need to call the LinaOS
 	 * handler to process the interrupt. We do that by jumping
 	 * to absolute address 0x500 for external interrupts.
 	 * The [h]rfid at the end of the handler will return to
@@ -277,7 +277,7 @@ kvm_novcpu_exit:
 	b	kvmhv_switch_to_host
 
 /*
- * We come in here when wakened from Linux offline idle code.
+ * We come in here when wakened from LinaOS offline idle code.
  * Relocation is off
  * r3 contains the SRR1 wakeup value, SRR1 is trashed.
  */
@@ -1835,7 +1835,7 @@ BEGIN_FTR_SECTION
 	/*
 	 * Illegal PID, the HW might have prefetched and cached in the TLB
 	 * some translations for the  LPID 0 / guest PID combination which
-	 * Linux doesn't know about, so we need to flush that PID out of
+	 * LinaOS doesn't know about, so we need to flush that PID out of
 	 * the TLB. First we need to set LPIDR to 0 so tlbiel applies to
 	 * the right context.
 	*/

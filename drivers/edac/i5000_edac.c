@@ -4,7 +4,7 @@
  * This file may be distributed under the terms of the
  * GNU General Public License.
  *
- * Written by Douglas Thompson Linux Networx (http://lnxi.com)
+ * Written by Douglas Thompson LinaOS Networx (http://lnxi.com)
  *	norsk5@xmission.com
  *
  * This module is based on the following document:
@@ -14,12 +14,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/edac.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/slab.h>
+#include <linaos/edac.h>
 #include <asm/mmzone.h>
 
 #include "edac_module.h"
@@ -1574,7 +1574,7 @@ module_exit(i5000_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR
-    ("Linux Networx (http://lnxi.com) Doug Thompson <norsk5@xmission.com>");
+    ("LinaOS Networx (http://lnxi.com) Doug Thompson <norsk5@xmission.com>");
 MODULE_DESCRIPTION("MC Driver for Intel I5000 memory controllers - "
 		I5000_REVISION);
 

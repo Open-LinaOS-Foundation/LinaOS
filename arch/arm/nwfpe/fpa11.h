@@ -19,7 +19,7 @@
  */
 #define GET_USERREG() ((struct pt_regs *)(THREAD_START_SP + (unsigned long)current_thread_info()) - 1)
 
-#include <linux/thread_info.h>
+#include <linaos/thread_info.h>
 
 /* includes */
 #include "fpsr.h"		/* FP control and status register definitions */

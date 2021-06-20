@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/zlib.h>
+#include <linaos/zlib.h>
 
 /* bits taken from ppc */
 

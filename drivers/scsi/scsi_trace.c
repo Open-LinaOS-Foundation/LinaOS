@@ -3,8 +3,8 @@
  * Copyright (C) 2010 FUJITSU LIMITED
  * Copyright (C) 2010 Tomohiro Kusumi <kusumi.tomohiro@jp.fujitsu.com>
  */
-#include <linux/kernel.h>
-#include <linux/trace_seq.h>
+#include <linaos/kernel.h>
+#include <linaos/trace_seq.h>
 #include <asm/unaligned.h>
 #include <trace/events/scsi.h>
 

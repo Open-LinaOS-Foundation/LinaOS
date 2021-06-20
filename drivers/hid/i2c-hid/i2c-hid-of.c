@@ -6,7 +6,7 @@
  * Copyright (c) 2012 Red Hat, Inc
  *
  * This code was forked out of the core code, which was partly based on
- * "USB HID support for Linux":
+ * "USB HID support for LinaOS":
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -19,14 +19,14 @@
  * more details.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/pm.h>
+#include <linaos/regulator/consumer.h>
 
 #include "i2c-hid.h"
 

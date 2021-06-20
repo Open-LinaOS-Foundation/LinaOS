@@ -46,10 +46,10 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#include <linux/fault-inject.h>
-#include <linux/dcache.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
+#include <linaos/fault-inject.h>
+#include <linaos/dcache.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
 #include <rdma/rdma_vt.h>
 
 #include "hfi.h"

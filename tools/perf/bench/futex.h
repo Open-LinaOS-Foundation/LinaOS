@@ -2,7 +2,7 @@
 /*
  * Glibc independent futex library for testing kernel functionality.
  * Shamelessly stolen from Darren Hart <dvhltc@us.ibm.com>
- *    http://git.kernel.org/cgit/linux/kernel/git/dvhart/futextest.git/
+ *    http://git.kernel.org/cgit/linaos/kernel/git/dvhart/futextest.git/
  */
 
 #ifndef _FUTEX_H
@@ -11,7 +11,7 @@
 #include <unistd.h>
 #include <sys/syscall.h>
 #include <sys/types.h>
-#include <linux/futex.h>
+#include <linaos/futex.h>
 
 /**
  * futex() - SYS_futex syscall wrapper

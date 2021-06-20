@@ -8,7 +8,7 @@
 #ifndef QMAN_IF_H
 #define QMAN_IF_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * PRIMARY QUEUE

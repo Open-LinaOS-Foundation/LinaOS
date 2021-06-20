@@ -23,7 +23,7 @@ pool management.
 
 knav qmss driver provides a set of APIs to drivers to open/close qmss queues,
 allocate descriptor pools, map the descriptors, push/pop to queues etc. For
-details of the available APIs, please refers to include/linux/soc/ti/knav_qmss.h
+details of the available APIs, please refers to include/linaos/soc/ti/knav_qmss.h
 
 DT documentation is available at
 Documentation/devicetree/bindings/soc/ti/keystone-navigator-qmss.txt
@@ -43,7 +43,7 @@ k2_qmss_pdsp_acc48_k2_le_1_0_0_9.bin firmware supports upto 48 accumulator
 channels. This firmware is available under ti-keystone folder of
 firmware.git at
 
-   git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
+   git://git.kernel.org/pub/scm/linaos/kernel/git/firmware/linaos-firmware.git
 
 To use copy the firmware image to lib/firmware folder of the initramfs or
 ubifs file system and provide a sym link to k2_qmss_pdsp_acc48_k2_le_1_0_0_9.bin

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	UDP over IPv6
- *	Linux INET6 implementation
+ *	LinaOS INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Based on linux/ipv4/udp.c
+ *	Based on linaos/ipv4/udp.c
  *
  *	Fixes:
  *	Hideaki YOSHIFUJI	:	sin6_scope_id support
@@ -17,22 +17,22 @@
  *      YOSHIFUJI Hideaki @USAGI:	convert /proc/net/udp6 to seq_file.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/in6.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/ipv6.h>
+#include <linaos/icmpv6.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/indirect_call_wrapper.h>
 
 #include <net/addrconf.h>
 #include <net/ndisc.h>
@@ -49,8 +49,8 @@
 #include <net/busy_poll.h>
 #include <net/sock_reuseport.h>
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 #include <trace/events/skb.h>
 #include "udp_impl.h"
 

@@ -40,7 +40,7 @@ one or more *master* chips and one or more *slave* chips.
    Simple I2C bus
 
 A **master** chip is a node that starts communications with slaves. In the
-Linux kernel implementation it is called an **adapter** or bus. Adapter
+LinaOS kernel implementation it is called an **adapter** or bus. Adapter
 drivers are in the ``drivers/i2c/busses/`` subdirectory.
 
 An **algorithm** contains general code that can be used to implement a
@@ -49,7 +49,7 @@ an algorithm driver in the ``drivers/i2c/algos/`` subdirectory, or includes
 its own implementation.
 
 A **slave** chip is a node that responds to communications when addressed
-by the master. In Linux it is called a **client**. Client drivers are kept
+by the master. In LinaOS it is called a **client**. Client drivers are kept
 in a directory specific to the feature they provide, for example
 ``drivers/media/gpio/`` for GPIO expanders and ``drivers/media/i2c/`` for
 video-related chips.

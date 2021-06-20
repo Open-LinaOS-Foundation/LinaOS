@@ -16,11 +16,11 @@
  * a specific device.
  */
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
 
 #include <sound/pcm.h>
 #include <sound/core.h>

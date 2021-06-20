@@ -10,7 +10,7 @@
 #include <rtw_debug.h>
 #include <rtw_wifi_regd.h>
 #include <hal_btcoex.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/unaligned.h>
 
 static struct mlme_handler mlme_sta_tbl[] = {

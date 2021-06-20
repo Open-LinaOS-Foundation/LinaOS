@@ -5,14 +5,14 @@
  * Copyright (C) 2016 Freescale Semiconductor, Inc.
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of_fdt.h>
-#include <linux/sys_soc.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/fsl/guts.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/of_fdt.h>
+#include <linaos/sys_soc.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/fsl/guts.h>
 
 struct guts {
 	struct ccsr_guts __iomem *regs;

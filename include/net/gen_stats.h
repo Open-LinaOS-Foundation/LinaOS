@@ -2,12 +2,12 @@
 #ifndef __NET_GEN_STATS_H
 #define __NET_GEN_STATS_H
 
-#include <linux/gen_stats.h>
-#include <linux/socket.h>
-#include <linux/rtnetlink.h>
-#include <linux/pkt_sched.h>
+#include <linaos/gen_stats.h>
+#include <linaos/socket.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/pkt_sched.h>
 
-/* Note: this used to be in include/uapi/linux/gen_stats.h */
+/* Note: this used to be in include/uapi/linaos/gen_stats.h */
 struct gnet_stats_basic_packed {
 	__u64	bytes;
 	__u64	packets;

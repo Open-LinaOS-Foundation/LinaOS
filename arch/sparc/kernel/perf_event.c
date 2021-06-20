@@ -13,18 +13,18 @@
  *  Copyright (C) 2008-2009 Red Hat, Inc., Peter Zijlstra
  */
 
-#include <linux/perf_event.h>
-#include <linux/kprobes.h>
-#include <linux/ftrace.h>
-#include <linux/kernel.h>
-#include <linux/kdebug.h>
-#include <linux/mutex.h>
+#include <linaos/perf_event.h>
+#include <linaos/kprobes.h>
+#include <linaos/ftrace.h>
+#include <linaos/kernel.h>
+#include <linaos/kdebug.h>
+#include <linaos/mutex.h>
 
 #include <asm/stacktrace.h>
 #include <asm/cpudata.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
-#include <linux/sched/clock.h>
+#include <linaos/uaccess.h>
+#include <linaos/atomic.h>
+#include <linaos/sched/clock.h>
 #include <asm/nmi.h>
 #include <asm/pcr.h>
 #include <asm/cacheflush.h>

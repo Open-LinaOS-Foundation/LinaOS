@@ -3,10 +3,10 @@
  * ACPI support
  *
  * Copyright (C) 2020, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 
 #include "tb.h"
 

@@ -8,35 +8,35 @@
 #include <asm/heartbeat.h>
 #include <asm/suspend.h>
 #include <cpu/sh7724.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/interrupt.h>
-#include <linux/memblock.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sh_mmcif.h>
-#include <linux/mtd/physmap.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/platform_data/gpio_backlight.h>
-#include <linux/platform_data/tsc2007.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/sh_eth.h>
-#include <linux/sh_intc.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/spi/sh_msiof.h>
-#include <linux/spi/spi.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/usb/renesas_usbhs.h>
-#include <linux/videodev2.h>
-#include <linux/dma-map-ops.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/input/sh_keysc.h>
+#include <linaos/interrupt.h>
+#include <linaos/memblock.h>
+#include <linaos/mfd/tmio.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/sh_mmcif.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/platform_data/gpio_backlight.h>
+#include <linaos/platform_data/tsc2007.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/sh_eth.h>
+#include <linaos/sh_intc.h>
+#include <linaos/spi/mmc_spi.h>
+#include <linaos/spi/sh_msiof.h>
+#include <linaos/spi/spi.h>
+#include <linaos/usb/r8a66597.h>
+#include <linaos/usb/renesas_usbhs.h>
+#include <linaos/videodev2.h>
+#include <linaos/dma-map-ops.h>
 
 #include <media/drv-intf/renesas-ceu.h>
 #include <media/i2c/mt9t112.h>
@@ -51,8 +51,8 @@
  *  Address      Interface        BusWidth
  *-----------------------------------------
  *  0x0000_0000  uboot            16bit
- *  0x0004_0000  Linux romImage   16bit
- *  0x0014_0000  MTD for Linux    16bit
+ *  0x0004_0000  LinaOS romImage   16bit
+ *  0x0014_0000  MTD for LinaOS    16bit
  *  0x0400_0000  Internal I/O     16/32bit
  *  0x0800_0000  DRAM             32bit
  *  0x1800_0000  MFI              16bit

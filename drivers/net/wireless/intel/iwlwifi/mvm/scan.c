@@ -4,9 +4,9 @@
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  * Copyright (C) 2016-2017 Intel Deutschland GmbH
  */
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include <net/mac80211.h>
-#include <linux/crc32.h>
+#include <linaos/crc32.h>
 
 #include "mvm.h"
 #include "fw/api/scan.h"

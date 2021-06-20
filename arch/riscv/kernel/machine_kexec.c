@@ -4,17 +4,17 @@
  *  Nick Kossifidis <mick@ics.forth.gr>
  */
 
-#include <linux/kexec.h>
+#include <linaos/kexec.h>
 #include <asm/kexec.h>		/* For riscv_kexec_* symbol defines */
-#include <linux/smp.h>		/* For smp_send_stop () */
+#include <linaos/smp.h>		/* For smp_send_stop () */
 #include <asm/cacheflush.h>	/* For local_flush_icache_all() */
 #include <asm/barrier.h>	/* For smp_wmb() */
 #include <asm/page.h>		/* For PAGE_MASK */
-#include <linux/libfdt.h>	/* For fdt_check_header() */
+#include <linaos/libfdt.h>	/* For fdt_check_header() */
 #include <asm/set_memory.h>	/* For set_memory_x() */
-#include <linux/compiler.h>	/* For unreachable() */
-#include <linux/cpu.h>		/* For cpu_down() */
-#include <linux/reboot.h>
+#include <linaos/compiler.h>	/* For unreachable() */
+#include <linaos/cpu.h>		/* For cpu_down() */
+#include <linaos/reboot.h>
 
 /*
  * kexec_image_info - Print received image details

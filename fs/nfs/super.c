@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/nfs/super.c
+ *  linaos/fs/nfs/super.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -21,43 +21,43 @@
  *   of another (see nfs_lookup())
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/metrics.h>
-#include <linux/sunrpc/xprtsock.h>
-#include <linux/sunrpc/xprtrdma.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/lockd/bind.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/vfs.h>
-#include <linux/inet.h>
-#include <linux/in6.h>
-#include <linux/slab.h>
+#include <linaos/time.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/stat.h>
+#include <linaos/errno.h>
+#include <linaos/unistd.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/sunrpc/stats.h>
+#include <linaos/sunrpc/metrics.h>
+#include <linaos/sunrpc/xprtsock.h>
+#include <linaos/sunrpc/xprtrdma.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_mount.h>
+#include <linaos/nfs4_mount.h>
+#include <linaos/lockd/bind.h>
+#include <linaos/seq_file.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/vfs.h>
+#include <linaos/inet.h>
+#include <linaos/in6.h>
+#include <linaos/slab.h>
 #include <net/ipv6.h>
-#include <linux/netdevice.h>
-#include <linux/nfs_xdr.h>
-#include <linux/magic.h>
-#include <linux/parser.h>
-#include <linux/nsproxy.h>
-#include <linux/rcupdate.h>
+#include <linaos/netdevice.h>
+#include <linaos/nfs_xdr.h>
+#include <linaos/magic.h>
+#include <linaos/parser.h>
+#include <linaos/nsproxy.h>
+#include <linaos/rcupdate.h>
 
-#include <linux/uaccess.h>
-#include <linux/nfs_ssc.h>
+#include <linaos/uaccess.h>
+#include <linaos/nfs_ssc.h>
 
 #include "nfs4_fs.h"
 #include "callback.h"
@@ -275,9 +275,9 @@ int nfs_statfs(struct dentry *dentry, struct kstatfs *buf)
 
 	/*
 	 * On most *nix systems, f_blocks, f_bfree, and f_bavail
-	 * are reported in units of f_frsize.  Linux hasn't had
+	 * are reported in units of f_frsize.  LinaOS hasn't had
 	 * an f_frsize field in its statfs struct until recently,
-	 * thus historically Linux's sys_statfs reports these
+	 * thus historically LinaOS's sys_statfs reports these
 	 * fields in units of f_bsize.
 	 */
 	buf->f_bsize = dentry->d_sb->s_blocksize;

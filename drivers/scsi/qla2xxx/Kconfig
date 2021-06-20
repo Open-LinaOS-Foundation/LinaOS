@@ -29,7 +29,7 @@ config SCSI_QLA_FC
 
 		http://ldriver.qlogic.com/firmware/
 
-	They are also included in the linux-firmware tree as well.
+	They are also included in the linaos-firmware tree as well.
 
 config TCM_QLA2XXX
 	tristate "TCM_QLA2XXX fabric module for QLogic 24xx+ series target mode HBAs"

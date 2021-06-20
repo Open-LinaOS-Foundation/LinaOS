@@ -114,10 +114,10 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/log2.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/pci.h>
+#include <linaos/log2.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

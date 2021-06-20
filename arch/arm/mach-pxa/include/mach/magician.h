@@ -8,7 +8,7 @@
 #ifndef _MAGICIAN_H_
 #define _MAGICIAN_H_
 
-#include <linux/gpio.h>
+#include <linaos/gpio.h>
 #include <mach/irqs.h>
 
 /*

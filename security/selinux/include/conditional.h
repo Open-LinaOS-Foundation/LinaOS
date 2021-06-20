@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  * Interface to booleans in the security server. This is exported
- * for the selinuxfs.
+ * for the selinaosfs.
  *
  * Author: Karl MacMillan <kmacmillan@tresys.com>
  *
@@ -13,11 +13,11 @@
 
 #include "security.h"
 
-int security_get_bools(struct selinux_policy *policy,
+int security_get_bools(struct selinaos_policy *policy,
 		       u32 *len, char ***names, int **values);
 
-int security_set_bools(struct selinux_state *state, u32 len, int *values);
+int security_set_bools(struct selinaos_state *state, u32 len, int *values);
 
-int security_get_bool_value(struct selinux_state *state, u32 index);
+int security_get_bool_value(struct selinaos_state *state, u32 index);
 
 #endif

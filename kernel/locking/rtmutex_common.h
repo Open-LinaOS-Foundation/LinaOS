@@ -13,9 +13,9 @@
 #ifndef __KERNEL_RTMUTEX_COMMON_H
 #define __KERNEL_RTMUTEX_COMMON_H
 
-#include <linux/debug_locks.h>
-#include <linux/rtmutex.h>
-#include <linux/sched/wake_q.h>
+#include <linaos/debug_locks.h>
+#include <linaos/rtmutex.h>
+#include <linaos/sched/wake_q.h>
 
 /*
  * This is the control structure for tasks blocked on a rt_mutex,

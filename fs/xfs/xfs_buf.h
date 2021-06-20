@@ -6,14 +6,14 @@
 #ifndef __XFS_BUF_H__
 #define __XFS_BUF_H__
 
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/dax.h>
-#include <linux/uio.h>
-#include <linux/list_lru.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/dax.h>
+#include <linaos/uio.h>
+#include <linaos/list_lru.h>
 
 /*
  *	Base types

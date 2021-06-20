@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * QNX6 file system, Linux implementation.
+ * QNX6 file system, LinaOS implementation.
  *
  * Version : 1.0.0
  *
@@ -17,14 +17,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fs.h>
-#include <linux/pagemap.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
 
 typedef __u16 __bitwise __fs16;
 typedef __u32 __bitwise __fs32;
 typedef __u64 __bitwise __fs64;
 
-#include <linux/qnx6_fs.h>
+#include <linaos/qnx6_fs.h>
 
 struct qnx6_sb_info {
 	struct buffer_head	*sb_buf;	/* superblock buffer */

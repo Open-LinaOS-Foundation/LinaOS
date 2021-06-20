@@ -12,9 +12,9 @@
 #ifndef _PCIE_MOBIVEIL_H
 #define _PCIE_MOBIVEIL_H
 
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
+#include <linaos/pci.h>
+#include <linaos/irq.h>
+#include <linaos/msi.h>
 #include "../../pci.h"
 
 /* register offsets and bit positions */

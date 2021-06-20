@@ -8,9 +8,9 @@
 /*
  */
 
-#include <linux/hid.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/hid.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 #include "hid-roccat-common.h"
 
 static inline uint16_t roccat_common2_feature_report(uint8_t report_id)

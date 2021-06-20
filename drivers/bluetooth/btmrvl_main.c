@@ -18,11 +18,11 @@
  * this warranty disclaimer.
  **/
 
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>
-#include <linux/mmc/sdio_func.h>
+#include <linaos/mmc/sdio_func.h>
 
 #include "btmrvl_drv.h"
 #include "btmrvl_sdio.h"

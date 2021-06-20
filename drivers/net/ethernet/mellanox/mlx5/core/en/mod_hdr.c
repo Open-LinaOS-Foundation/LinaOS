@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 // Copyright (c) 2020 Mellanox Technologies
 
-#include <linux/jhash.h>
+#include <linaos/jhash.h>
 #include "mod_hdr.h"
 
 #define MLX5_MH_ACT_SZ MLX5_UN_SZ_BYTES(set_add_copy_action_in_auto)

@@ -2,8 +2,8 @@
 #ifndef _NF_NAT_REDIRECT_H_
 #define _NF_NAT_REDIRECT_H_
 
-#include <linux/skbuff.h>
-#include <uapi/linux/netfilter/nf_nat.h>
+#include <linaos/skbuff.h>
+#include <uapi/linaos/netfilter/nf_nat.h>
 
 unsigned int
 nf_nat_redirect_ipv4(struct sk_buff *skb,

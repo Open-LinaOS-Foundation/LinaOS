@@ -7,11 +7,11 @@
  *     Author: Alex Williamson <alex.williamson@redhat.com>
  */
 
-#include <linux/vfio.h>
-#include <linux/eventfd.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/vfio.h>
+#include <linaos/eventfd.h>
+#include <linaos/file.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 #define DRIVER_VERSION  "0.1"
 #define DRIVER_AUTHOR   "Alex Williamson <alex.williamson@redhat.com>"

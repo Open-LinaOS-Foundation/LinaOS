@@ -7,17 +7,17 @@
  * Author: Joonyoung Shim <jy0922.shim@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
 
 #include "ehci.h"
 

@@ -4,7 +4,7 @@
 #define _BR_PRIVATE_CFM_H_
 
 #include "br_private.h"
-#include <uapi/linux/cfm_bridge.h>
+#include <uapi/linaos/cfm_bridge.h>
 
 struct br_cfm_mep_create {
 	enum br_cfm_domain domain; /* Domain for this MEP */

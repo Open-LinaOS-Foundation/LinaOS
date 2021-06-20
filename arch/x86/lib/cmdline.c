@@ -3,9 +3,9 @@
  *
  * Misc librarized functions for cmdline poking.
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
 #include <asm/setup.h>
 
 static inline int myisspace(u8 c)
@@ -105,7 +105,7 @@ __cmdline_find_option_bool(const char *cmdline, int max_cmdline_size,
 
 /*
  * Find a non-boolean option (i.e. option=argument). In accordance with
- * standard Linux practice, if this option is repeated, this returns the
+ * standard LinaOS practice, if this option is repeated, this returns the
  * last instance on the command line.
  *
  * @cmdline: the cmdline string

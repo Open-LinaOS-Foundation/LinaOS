@@ -7,7 +7,7 @@
 #ifndef __HUGE_GEM_OBJECT_H
 #define __HUGE_GEM_OBJECT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "gem/i915_gem_object_types.h"
 

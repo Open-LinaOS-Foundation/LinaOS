@@ -6,7 +6,7 @@
  *              high-performance and highly available server based on a
  *              cluster of servers.
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@linaosvirtualserver.org>
  *              Peter Kese <peter.kese@ijs.si>
  *              Julian Anastasov <ja@ssi.bg>
  *
@@ -22,13 +22,13 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/icmp.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/sctp.h>
+#include <linaos/icmp.h>
+#include <linaos/slab.h>
 
 #include <net/ip.h>
 #include <net/tcp.h>
@@ -40,17 +40,17 @@
 #include <net/ip6_checksum.h>
 #include <net/netns/generic.h>		/* net_generic() */
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv4.h>
 
 #ifdef CONFIG_IP_VS_IPV6
 #include <net/ipv6.h>
-#include <linux/netfilter_ipv6.h>
+#include <linaos/netfilter_ipv6.h>
 #include <net/ip6_route.h>
 #endif
 
 #include <net/ip_vs.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/indirect_call_wrapper.h>
 
 
 EXPORT_SYMBOL(register_ip_vs_scheduler);

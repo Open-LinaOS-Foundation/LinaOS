@@ -5,11 +5,11 @@
  * Copyright 2020 NXP
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/msi.h>
-#include <linux/fsl/mc.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/msi.h>
+#include <linaos/fsl/mc.h>
 
 #include "dpaa2-ptp.h"
 

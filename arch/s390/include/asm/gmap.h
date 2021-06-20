@@ -9,8 +9,8 @@
 #ifndef _ASM_S390_GMAP_H
 #define _ASM_S390_GMAP_H
 
-#include <linux/radix-tree.h>
-#include <linux/refcount.h>
+#include <linaos/radix-tree.h>
+#include <linaos/refcount.h>
 
 /* Generic bits for GMAP notification on DAT table entry changes. */
 #define GMAP_NOTIFY_SHADOW	0x2

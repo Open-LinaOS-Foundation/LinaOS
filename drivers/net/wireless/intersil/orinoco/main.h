@@ -5,7 +5,7 @@
 #ifndef _ORINOCO_MAIN_H_
 #define _ORINOCO_MAIN_H_
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 #include "orinoco.h"
 
 /********************************************************************/

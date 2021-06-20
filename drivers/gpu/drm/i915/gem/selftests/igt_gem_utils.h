@@ -7,7 +7,7 @@
 #ifndef __IGT_GEM_UTILS_H__
 #define __IGT_GEM_UTILS_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct i915_request;
 struct i915_gem_context;

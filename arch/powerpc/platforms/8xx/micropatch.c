@@ -6,14 +6,14 @@
  * also relocates SMC2, but this would require additional changes
  * to uart.c, so I am holding off on that for a moment.
  */
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/param.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
 #include <asm/irq.h>
 #include <asm/page.h>
 #include <asm/8xx_immap.h>

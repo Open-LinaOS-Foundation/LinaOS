@@ -18,9 +18,9 @@
 #ifndef __CPIA2_H__
 #define __CPIA2_H__
 
-#include <linux/videodev2.h>
-#include <linux/usb.h>
-#include <linux/poll.h>
+#include <linaos/videodev2.h>
+#include <linaos/usb.h>
+#include <linaos/poll.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>

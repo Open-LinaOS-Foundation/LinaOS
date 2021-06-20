@@ -5,13 +5,13 @@
  *
  * Copyright(c) 2018 Intel Corporation. All rights reserved.
  *
- * Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+ * Author: Liam Girdwood <liam.r.girdwood@linaos.intel.com>
  */
 
 #ifndef __INCLUDE_SOUND_SOF_H
 #define __INCLUDE_SOUND_SOF_H
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>
 

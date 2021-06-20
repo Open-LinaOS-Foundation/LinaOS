@@ -9,7 +9,7 @@
 
 #include "machine.h"
 #include "tool.h"
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct build_id {
 	u8	data[BUILD_ID_SIZE];

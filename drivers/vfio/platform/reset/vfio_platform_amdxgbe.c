@@ -7,12 +7,12 @@
  *              www.linaro.org
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <uapi/linux/mdio.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <uapi/linaos/mdio.h>
+#include <linaos/delay.h>
 
 #include "../vfio_platform_private.h"
 

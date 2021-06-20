@@ -12,11 +12,11 @@
 #ifndef _DEBUGFS_H_
 #define _DEBUGFS_H_
 
-#include <linux/fs.h>
-#include <linux/seq_file.h>
+#include <linaos/fs.h>
+#include <linaos/seq_file.h>
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
 
 struct device;
 struct file_operations;
@@ -163,7 +163,7 @@ ssize_t debugfs_read_file_str(struct file *file, char __user *user_buf,
 
 #else
 
-#include <linux/err.h>
+#include <linaos/err.h>
 
 /*
  * We do not return NULL from these functions if CONFIG_DEBUG_FS is not enabled

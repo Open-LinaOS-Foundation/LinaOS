@@ -6,11 +6,11 @@
  * Author: Dmitry Tarnyagin <dmitry.tarnyagin@lockless.no>
  */
 
-#include <linux/vmalloc.h>
-#include <linux/sched.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
+#include <linaos/vmalloc.h>
+#include <linaos/sched.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/etherdevice.h>
 
 #include "cw1200.h"
 #include "sta.h"

@@ -19,14 +19,14 @@
  * AK4648 is tested.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/of_device.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 #include <sound/soc.h>
 #include <sound/initval.h>
 #include <sound/tlv.h>

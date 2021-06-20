@@ -9,8 +9,8 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 #include <asm/dma.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

@@ -6,9 +6,9 @@
  * Copyright Gavin Shan, IBM Corporation 2014.
  */
 
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/vfio.h>
 #include <asm/eeh.h>
 
 #define DRIVER_VERSION	"0.1"

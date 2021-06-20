@@ -2,32 +2,32 @@
 /*
  * umh - the kernel usermode helper
  */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/binfmts.h>
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/cred.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/fs_struct.h>
-#include <linux/workqueue.h>
-#include <linux/security.h>
-#include <linux/mount.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/resource.h>
-#include <linux/notifier.h>
-#include <linux/suspend.h>
-#include <linux/rwsem.h>
-#include <linux/ptrace.h>
-#include <linux/async.h>
-#include <linux/uaccess.h>
-#include <linux/initrd.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task.h>
+#include <linaos/binfmts.h>
+#include <linaos/syscalls.h>
+#include <linaos/unistd.h>
+#include <linaos/kmod.h>
+#include <linaos/slab.h>
+#include <linaos/completion.h>
+#include <linaos/cred.h>
+#include <linaos/file.h>
+#include <linaos/fdtable.h>
+#include <linaos/fs_struct.h>
+#include <linaos/workqueue.h>
+#include <linaos/security.h>
+#include <linaos/mount.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/resource.h>
+#include <linaos/notifier.h>
+#include <linaos/suspend.h>
+#include <linaos/rwsem.h>
+#include <linaos/ptrace.h>
+#include <linaos/async.h>
+#include <linaos/uaccess.h>
+#include <linaos/initrd.h>
 
 #include <trace/events/module.h>
 

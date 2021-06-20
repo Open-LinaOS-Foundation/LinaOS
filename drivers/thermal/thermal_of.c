@@ -8,14 +8,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
+#include <linaos/thermal.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
 
 #include "thermal_core.h"
 
@@ -750,7 +750,7 @@ end:
 }
 
 /*
- * It maps 'enum thermal_trip_type' found in include/linux/thermal.h
+ * It maps 'enum thermal_trip_type' found in include/linaos/thermal.h
  * into the device tree binding of 'trip', property type.
  */
 static const char * const trip_types[] = {

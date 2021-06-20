@@ -8,15 +8,15 @@
  *   http://www.national.com/ds.cgi/LM/LM95241.pdf
  */
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/hwmon.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/hwmon.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
 
 #define DEVNAME "lm95241"
 

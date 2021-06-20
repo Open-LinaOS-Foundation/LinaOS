@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <errno.h>
-#include <linux/err.h>
+#include <linaos/err.h>
 #include "hashmap.h"
 #include "libbpf_internal.h"
 #include "strset.h"

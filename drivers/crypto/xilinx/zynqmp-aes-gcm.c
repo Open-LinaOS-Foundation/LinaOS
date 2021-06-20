@@ -10,12 +10,12 @@
 #include <crypto/internal/aead.h>
 #include <crypto/scatterwalk.h>
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
 
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <linaos/firmware/xlnx-zynqmp.h>
 
 #define ZYNQMP_DMA_BIT_MASK	32U
 

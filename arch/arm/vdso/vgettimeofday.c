@@ -4,8 +4,8 @@
  *
  * Copyright 2015 Mentor Graphics Corporation.
  */
-#include <linux/time.h>
-#include <linux/types.h>
+#include <linaos/time.h>
+#include <linaos/types.h>
 
 int __vdso_clock_gettime(clockid_t clock,
 			 struct old_timespec32 *ts)

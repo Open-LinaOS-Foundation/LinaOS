@@ -8,19 +8,19 @@
 #ifndef _SURFACE_AGGREGATOR_CONTROLLER_H
 #define _SURFACE_AGGREGATOR_CONTROLLER_H
 
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/rwsem.h>
-#include <linux/serdev.h>
-#include <linux/spinlock.h>
-#include <linux/srcu.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/rbtree.h>
+#include <linaos/rwsem.h>
+#include <linaos/serdev.h>
+#include <linaos/spinlock.h>
+#include <linaos/srcu.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/serial_hub.h>
+#include <linaos/surface_aggregator/controller.h>
+#include <linaos/surface_aggregator/serial_hub.h>
 
 #include "ssh_request_layer.h"
 

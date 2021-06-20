@@ -8,17 +8,17 @@
 
 #define pr_fmt(fmt) "mips-gic-timer: " fmt
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/of_irq.h>
-#include <linux/percpu.h>
-#include <linux/sched_clock.h>
-#include <linux/smp.h>
-#include <linux/time.h>
+#include <linaos/clk.h>
+#include <linaos/clockchips.h>
+#include <linaos/cpu.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/notifier.h>
+#include <linaos/of_irq.h>
+#include <linaos/percpu.h>
+#include <linaos/sched_clock.h>
+#include <linaos/smp.h>
+#include <linaos/time.h>
 #include <asm/mips-cps.h>
 
 static DEFINE_PER_CPU(struct clock_event_device, gic_clockevent_device);

@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #include "smumgr.h"
 #include "vega10_inc.h"

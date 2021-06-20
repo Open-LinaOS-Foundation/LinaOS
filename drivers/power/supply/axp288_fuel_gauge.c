@@ -8,19 +8,19 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/iio/consumer.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/dmi.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
+#include <linaos/jiffies.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/axp20x.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/iio/consumer.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 #include <asm/unaligned.h>
 
 #define PS_STAT_VBUS_TRIGGER		(1 << 0)
@@ -895,6 +895,6 @@ static struct platform_driver axp288_fuel_gauge_driver = {
 module_platform_driver(axp288_fuel_gauge_driver);
 
 MODULE_AUTHOR("Ramakrishna Pallala <ramakrishna.pallala@intel.com>");
-MODULE_AUTHOR("Todd Brandt <todd.e.brandt@linux.intel.com>");
+MODULE_AUTHOR("Todd Brandt <todd.e.brandt@linaos.intel.com>");
 MODULE_DESCRIPTION("Xpower AXP288 Fuel Gauge Driver");
 MODULE_LICENSE("GPL");

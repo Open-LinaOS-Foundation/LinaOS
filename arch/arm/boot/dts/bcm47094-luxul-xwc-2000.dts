@@ -28,7 +28,7 @@
 		status	{
 			label = "bcm53xx:green:status";
 			gpios = <&chipcommon 18 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "timer";
+			linaos,default-trigger = "timer";
 		};
 	};
 
@@ -39,7 +39,7 @@
 
 		restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&chipcommon 19 GPIO_ACTIVE_LOW>;
 		};
 	};

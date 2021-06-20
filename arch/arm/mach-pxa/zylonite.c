@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/zylonite.c
+ * linaos/arch/arm/mach-pxa/zylonite.c
  *
  * Support for the PXA3xx Development Platform (aka Zylonite)
  *
@@ -10,27 +10,27 @@
  *             rewrite to align with latest kernel
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/machine.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/smc91x.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/leds.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/smc91x.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include "pxa3xx.h"
 #include <mach/audio.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <linaos/platform_data/video-pxafb.h>
 #include "zylonite.h"
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/keypad-pxa27x.h>
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
+#include <linaos/platform_data/mtd-nand-pxa3xx.h>
 
 #include "devices.h"
 #include "generic.h"

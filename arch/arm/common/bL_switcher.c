@@ -6,31 +6,31 @@
  * Copyright:	(C) 2012-2013  Linaro Limited
  */
 
-#include <linux/atomic.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/interrupt.h>
-#include <linux/cpu_pm.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/clockchips.h>
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
-#include <linux/notifier.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/moduleparam.h>
+#include <linaos/atomic.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched/signal.h>
+#include <uapi/linaos/sched/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/kthread.h>
+#include <linaos/wait.h>
+#include <linaos/time.h>
+#include <linaos/clockchips.h>
+#include <linaos/hrtimer.h>
+#include <linaos/tick.h>
+#include <linaos/notifier.h>
+#include <linaos/mm.h>
+#include <linaos/mutex.h>
+#include <linaos/smp.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/sysfs.h>
+#include <linaos/irqchip/arm-gic.h>
+#include <linaos/moduleparam.h>
 
 #include <asm/smp_plat.h>
 #include <asm/cputype.h>

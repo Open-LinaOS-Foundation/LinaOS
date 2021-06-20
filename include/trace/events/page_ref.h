@@ -5,9 +5,9 @@
 #if !defined(_TRACE_PAGE_REF_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_PAGE_REF_H
 
-#include <linux/types.h>
-#include <linux/page_ref.h>
-#include <linux/tracepoint.h>
+#include <linaos/types.h>
+#include <linaos/page_ref.h>
+#include <linaos/tracepoint.h>
 #include <trace/events/mmflags.h>
 
 DECLARE_EVENT_CLASS(page_ref_mod_template,

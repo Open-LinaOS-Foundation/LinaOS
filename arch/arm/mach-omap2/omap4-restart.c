@@ -3,8 +3,8 @@
  * omap4-restart.c - Common to OMAP4 and OMAP5
  */
 
-#include <linux/types.h>
-#include <linux/reboot.h>
+#include <linaos/types.h>
+#include <linaos/reboot.h>
 #include "common.h"
 #include "prm.h"
 

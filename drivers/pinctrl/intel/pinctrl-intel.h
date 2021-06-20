@@ -3,21 +3,21 @@
  * Core pinctrl/GPIO driver for Intel GPIO controllers
  *
  * Copyright (C) 2015, Intel Corporation
- * Authors: Mathias Nyman <mathias.nyman@linux.intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Mathias Nyman <mathias.nyman@linaos.intel.com>
+ *          Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
 #ifndef PINCTRL_INTEL_H
 #define PINCTRL_INTEL_H
 
-#include <linux/bits.h>
-#include <linux/compiler_types.h>
-#include <linux/gpio/driver.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/pm.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/spinlock_types.h>
+#include <linaos/bits.h>
+#include <linaos/compiler_types.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/pm.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/spinlock_types.h>
 
 struct platform_device;
 struct device;

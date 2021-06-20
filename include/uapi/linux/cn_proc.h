@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1 WITH LinaOS-syscall-note */
 /*
  * cn_proc.h - process events connector
  *
@@ -19,7 +19,7 @@
 #ifndef _UAPICN_PROC_H
 #define _UAPICN_PROC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Userspace sends this enum to register with the kernel that it is listening

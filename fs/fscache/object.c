@@ -9,9 +9,9 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL COOKIE
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/prefetch.h>
 #include "internal.h"
 
 static const struct fscache_state *fscache_abort_initialisation(struct fscache_object *, int);

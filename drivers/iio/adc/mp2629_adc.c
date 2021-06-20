@@ -7,14 +7,14 @@
  * Author: Saravanan Sekar <sravanhome@gmail.com>
  */
 
-#include <linux/iio/driver.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/machine.h>
-#include <linux/mfd/mp2629.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/iio/driver.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/machine.h>
+#include <linaos/mfd/mp2629.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 #define	MP2629_REG_ADC_CTRL		0x03
 #define	MP2629_REG_BATT_VOLT		0x0e

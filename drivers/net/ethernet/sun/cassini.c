@@ -54,40 +54,40 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/list.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/vmalloc.h>
+#include <linaos/ioport.h>
+#include <linaos/pci.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>
+#include <linaos/list.h>
+#include <linaos/dma-mapping.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/random.h>
-#include <linux/mii.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/mutex.h>
-#include <linux/firmware.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/ethtool.h>
+#include <linaos/crc32.h>
+#include <linaos/random.h>
+#include <linaos/mii.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/mutex.h>
+#include <linaos/firmware.h>
 
 #include <net/checksum.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define cas_page_map(x)      kmap_atomic((x))
 #define cas_page_unmap(x)    kunmap_atomic((x))
@@ -202,7 +202,7 @@ MODULE_PARM_DESC(linkdown_timeout,
 /*
  * value in 'ticks' (units used by jiffies). Set when we init the
  * module because 'HZ' in actually a function call on some flavors of
- * Linux.  This will default to DEFAULT_LINKDOWN_TIMEOUT * HZ.
+ * LinaOS.  This will default to DEFAULT_LINKDOWN_TIMEOUT * HZ.
  */
 static int link_transition_timeout;
 

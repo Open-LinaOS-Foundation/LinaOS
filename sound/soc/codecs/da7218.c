@@ -7,15 +7,15 @@
  * Author: Adam Thomson <Adam.Thomson.Opensource@diasemi.com>
  */
 
-#include <linux/clk.h>
-#include <linux/i2c.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/i2c.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/pm.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/regulator/consumer.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

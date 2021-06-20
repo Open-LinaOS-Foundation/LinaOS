@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #include <asm/cpu_type.h>
 

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/tgafb.c -- DEC 21030 TGA frame buffer device
+ *  linaos/drivers/video/tgafb.c -- DEC 21030 TGA frame buffer device
  *
  *	Copyright (C) 1995 Jay Estabrook
  *	Copyright (C) 1997 Geert Uytterhoeven
@@ -12,21 +12,21 @@
  *  more details.
  */
 
-#include <linux/bitrev.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/selection.h>
-#include <linux/string.h>
-#include <linux/tc.h>
+#include <linaos/bitrev.h>
+#include <linaos/compiler.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/selection.h>
+#include <linaos/string.h>
+#include <linaos/tc.h>
 
 #include <asm/io.h>
 

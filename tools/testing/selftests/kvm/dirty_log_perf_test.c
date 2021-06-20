@@ -12,7 +12,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <pthread.h>
-#include <linux/bitmap.h>
+#include <linaos/bitmap.h>
 
 #include "kvm_util.h"
 #include "test_util.h"

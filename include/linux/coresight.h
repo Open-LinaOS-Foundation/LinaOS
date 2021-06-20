@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _LINUX_CORESIGHT_H
 #define _LINUX_CORESIGHT_H
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/perf_event.h>
-#include <linux/sched.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/perf_event.h>
+#include <linaos/sched.h>
 
 /* Peripheral id registers (0xFD0-0xFEC) */
 #define CORESIGHT_PERIPHIDR4	0xfd0

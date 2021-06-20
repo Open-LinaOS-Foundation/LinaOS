@@ -11,26 +11,26 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/hw_random.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/hw_random.h>
+#include <linaos/platform_device.h>
 
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_device.h>
-#include <linux/delay.h>
-#include <linux/crypto.h>
+#include <linaos/device.h>
+#include <linaos/dmaengine.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/scatterlist.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/of_device.h>
+#include <linaos/delay.h>
+#include <linaos/crypto.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/algapi.h>
 #include <crypto/aes.h>

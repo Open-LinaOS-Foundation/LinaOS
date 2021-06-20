@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI__ASM_GENERIC_SIGNAL_H
 #define _UAPI__ASM_GENERIC_SIGNAL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define _NSIG		64
 #define _NSIG_BPW	__BITS_PER_LONG
@@ -62,7 +62,7 @@ typedef struct {
 	unsigned long sig[_NSIG_WORDS];
 } sigset_t;
 
-/* not actually used, but required for linux/syscalls.h */
+/* not actually used, but required for linaos/syscalls.h */
 typedef unsigned long old_sigset_t;
 
 #include <asm-generic/signal-defs.h>

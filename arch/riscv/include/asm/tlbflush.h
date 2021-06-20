@@ -7,7 +7,7 @@
 #ifndef _ASM_RISCV_TLBFLUSH_H
 #define _ASM_RISCV_TLBFLUSH_H
 
-#include <linux/mm_types.h>
+#include <linaos/mm_types.h>
 #include <asm/smp.h>
 #include <asm/errata_list.h>
 

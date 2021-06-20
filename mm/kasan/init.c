@@ -6,13 +6,13 @@
  * Author: Andrey Ryabinin <ryabinin.a.a@gmail.com>
  */
 
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pfn.h>
-#include <linux/slab.h>
+#include <linaos/memblock.h>
+#include <linaos/init.h>
+#include <linaos/kasan.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/pfn.h>
+#include <linaos/slab.h>
 
 #include <asm/page.h>
 #include <asm/pgalloc.h>

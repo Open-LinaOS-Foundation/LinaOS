@@ -7,13 +7,13 @@
  * Tao Peng <bergwolf@primarydata.com>
  */
 
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs_page.h>
-#include <linux/module.h>
-#include <linux/sched/mm.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_mount.h>
+#include <linaos/nfs_page.h>
+#include <linaos/module.h>
+#include <linaos/sched/mm.h>
 
-#include <linux/sunrpc/metrics.h>
+#include <linaos/sunrpc/metrics.h>
 
 #include "flexfilelayout.h"
 #include "../nfs4session.h"

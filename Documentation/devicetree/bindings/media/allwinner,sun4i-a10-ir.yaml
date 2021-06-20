@@ -71,7 +71,7 @@ examples:
           resets = <&apb0_rst 1>;
           interrupts = <0 5 1>;
           reg = <0x01C21800 0x40>;
-          linux,rc-map-name = "rc-rc6-mce";
+          linaos,rc-map-name = "rc-rc6-mce";
       };
 
 ...

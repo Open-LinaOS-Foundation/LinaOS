@@ -5,16 +5,16 @@
  * Copyright (C) 2019 Jeff LaBundy <jeff@labundy.com>
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/mfd/iqs62x.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/iqs62x.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 enum {
 	IQS62X_SW_HALL_N,
@@ -49,7 +49,7 @@ static int iqs62x_keys_parse_prop(struct platform_device *pdev,
 	unsigned int val;
 	int ret, i;
 
-	ret = device_property_count_u32(&pdev->dev, "linux,keycodes");
+	ret = device_property_count_u32(&pdev->dev, "linaos,keycodes");
 	if (ret > IQS62X_NUM_KEYS) {
 		dev_err(&pdev->dev, "Too many keycodes present\n");
 		return -EINVAL;
@@ -59,7 +59,7 @@ static int iqs62x_keys_parse_prop(struct platform_device *pdev,
 	}
 	iqs62x_keys->keycodemax = ret;
 
-	ret = device_property_read_u32_array(&pdev->dev, "linux,keycodes",
+	ret = device_property_read_u32_array(&pdev->dev, "linaos,keycodes",
 					     iqs62x_keys->keycode,
 					     iqs62x_keys->keycodemax);
 	if (ret) {
@@ -73,7 +73,7 @@ static int iqs62x_keys_parse_prop(struct platform_device *pdev,
 		if (!child)
 			continue;
 
-		ret = fwnode_property_read_u32(child, "linux,code", &val);
+		ret = fwnode_property_read_u32(child, "linaos,code", &val);
 		if (ret) {
 			dev_err(&pdev->dev, "Failed to read switch code: %d\n",
 				ret);

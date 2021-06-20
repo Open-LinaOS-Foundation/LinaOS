@@ -3,14 +3,14 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/module.h>
-#include <linux/moduleloader.h>
-#include <linux/kernel.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/string.h>
+#include <linaos/module.h>
+#include <linaos/moduleloader.h>
+#include <linaos/kernel.h>
+#include <linaos/elf.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
 #include <asm/unwind.h>
 
 static inline void arc_write_me(unsigned short *addr, unsigned long value)

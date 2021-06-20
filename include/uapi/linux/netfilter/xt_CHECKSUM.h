@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* Header file for iptables ipt_CHECKSUM target
  *
  * (C) 2002 by Harald Welte <laforge@gnumonks.org>
@@ -10,7 +10,7 @@
 #ifndef _XT_CHECKSUM_TARGET_H
 #define _XT_CHECKSUM_TARGET_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define XT_CHECKSUM_OP_FILL	0x01	/* fill in checksum in IP header */
 

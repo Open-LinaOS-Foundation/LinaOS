@@ -5,7 +5,7 @@
 #ifndef __TDA9887_H__
 #define __TDA9887_H__
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/dvb_frontend.h>
 
 /* ------------------------------------------------------------------------ */

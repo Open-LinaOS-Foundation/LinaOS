@@ -4,10 +4,10 @@
 #include <asm/simd.h>
 #include <crypto/sm4.h>
 #include <crypto/internal/simd.h>
-#include <linux/module.h>
-#include <linux/cpufeature.h>
-#include <linux/crypto.h>
-#include <linux/types.h>
+#include <linaos/module.h>
+#include <linaos/cpufeature.h>
+#include <linaos/crypto.h>
+#include <linaos/types.h>
 
 MODULE_ALIAS_CRYPTO("sm4");
 MODULE_ALIAS_CRYPTO("sm4-ce");

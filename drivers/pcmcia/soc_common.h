@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/drivers/pcmcia/soc_common.h
+ * linaos/drivers/pcmcia/soc_common.h
  *
  * Copyright (C) 2000 John G Dorsey <john+@cs.cmu.edu>
  *
@@ -11,8 +11,8 @@
 #define _ASM_ARCH_PCMCIA
 
 /* include the world */
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
+#include <linaos/clk.h>
+#include <linaos/cpufreq.h>
 #include <pcmcia/ss.h>
 #include <pcmcia/cistpl.h>
 

@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _LINUX_MEMREMAP_H_
 #define _LINUX_MEMREMAP_H_
-#include <linux/range.h>
-#include <linux/ioport.h>
-#include <linux/percpu-refcount.h>
+#include <linaos/range.h>
+#include <linaos/ioport.h>
+#include <linaos/percpu-refcount.h>
 
 struct resource;
 struct device;
@@ -37,7 +37,7 @@ struct vmem_altmap {
  * must be treated as an opaque object, rather than a "normal" struct page.
  *
  * A more complete discussion of unaddressable memory may be found in
- * include/linux/hmm.h and Documentation/vm/hmm.rst.
+ * include/linaos/hmm.h and Documentation/vm/hmm.rst.
  *
  * MEMORY_DEVICE_FS_DAX:
  * Host memory that has similar access semantics as System RAM i.e. DMA

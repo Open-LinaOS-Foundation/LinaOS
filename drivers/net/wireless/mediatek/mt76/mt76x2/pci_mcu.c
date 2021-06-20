@@ -3,9 +3,9 @@
  * Copyright (C) 2016 Felix Fietkau <nbd@nbd.name>
  */
 
-#include <linux/kernel.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/firmware.h>
+#include <linaos/delay.h>
 
 #include "mt76x2.h"
 #include "mcu.h"

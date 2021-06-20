@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kthread.h>
-#include <linux/wait.h>
+#include <linaos/kthread.h>
+#include <linaos/wait.h>
 
 #include "spk_types.h"
 #include "speakup.h"

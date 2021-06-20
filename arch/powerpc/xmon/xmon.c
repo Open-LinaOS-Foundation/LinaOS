@@ -7,25 +7,25 @@
  * Copyrignt (C) 2006 Michael Ellerman, IBM Corp
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/sched/signal.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/kallsyms.h>
-#include <linux/kmsg_dump.h>
-#include <linux/cpumask.h>
-#include <linux/export.h>
-#include <linux/sysrq.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/bug.h>
-#include <linux/nmi.h>
-#include <linux/ctype.h>
-#include <linux/highmem.h>
-#include <linux/security.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/sched/signal.h>
+#include <linaos/smp.h>
+#include <linaos/mm.h>
+#include <linaos/reboot.h>
+#include <linaos/delay.h>
+#include <linaos/kallsyms.h>
+#include <linaos/kmsg_dump.h>
+#include <linaos/cpumask.h>
+#include <linaos/export.h>
+#include <linaos/sysrq.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/bug.h>
+#include <linaos/nmi.h>
+#include <linaos/ctype.h>
+#include <linaos/highmem.h>
+#include <linaos/security.h>
 
 #include <asm/debugfs.h>
 #include <asm/ptrace.h>
@@ -1792,7 +1792,7 @@ static void excprint(struct pt_regs *fp)
 	if (trap == INTERRUPT_PROGRAM)
 		print_bug_trap(fp);
 
-	printf(linux_banner);
+	printf(linaos_banner);
 }
 
 static void prregs(struct pt_regs *fp)

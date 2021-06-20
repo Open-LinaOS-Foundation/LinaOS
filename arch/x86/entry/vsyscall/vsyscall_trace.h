@@ -5,7 +5,7 @@
 #if !defined(__VSYSCALL_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __VSYSCALL_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(emulate_vsyscall,
 

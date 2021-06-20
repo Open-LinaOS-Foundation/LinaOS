@@ -17,7 +17,7 @@
 
 #include "kvm_util.h"
 #include "asm/kvm.h"
-#include "linux/kvm.h"
+#include "linaos/kvm.h"
 
 void test_vcpu_creation(int first_vcpu_id, int num_vcpus)
 {

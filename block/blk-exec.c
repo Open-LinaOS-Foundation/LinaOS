@@ -2,12 +2,12 @@
 /*
  * Functions related to setting various queue properties from drivers
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/sched/sysctl.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/sched/sysctl.h>
 
 #include "blk.h"
 #include "blk-mq-sched.h"

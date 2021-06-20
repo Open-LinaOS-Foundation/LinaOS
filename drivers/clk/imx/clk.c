@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 #include "clk.h"
 
 #define CCM_CCDR			0x4

@@ -13,7 +13,7 @@
 
 #include <dt-bindings/clock/maxim,max77686.h>
 #include <dt-bindings/gpio/gpio.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linaos-event-codes.h>
 #include <dt-bindings/interrupt-controller/irq.h>
 #include <dt-bindings/pinctrl/samsung.h>
 
@@ -53,21 +53,21 @@
 
 		key-down {
 			gpios = <&gpx2 2 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			label = "volume down";
 			debounce-interval = <10>;
 		};
 
 		key-up {
 			gpios = <&gpx3 3 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			label = "volume up";
 			debounce-interval = <10>;
 		};
 
 		key-power {
 			gpios = <&gpx2 7 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			label = "power";
 			debounce-interval = <10>;
 			wakeup-source;

@@ -5,8 +5,8 @@
 
 #include <asm/asm-offsets.h>
 #include <asm/asm.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
@@ -29,7 +29,7 @@ _xip_fixup: .dword CONFIG_PHYS_RAM_BASE - CONFIG_XIP_PHYS_ADDR - XIP_OFFSET
 __HEAD
 ENTRY(_start)
 	/*
-	 * Image header expected by Linux boot-loaders. The image header data
+	 * Image header expected by LinaOS boot-loaders. The image header data
 	 * structure is described in asm/image.h.
 	 * Do not modify it without modifying the structure and all bootloaders
 	 * that expects this header format!!

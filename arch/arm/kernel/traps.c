@@ -1,33 +1,33 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/traps.c
+ *  linaos/arch/arm/kernel/traps.c
  *
  *  Copyright (C) 1995-2009 Russell King
- *  Fragments that appear the same as linux/arch/i386/kernel/traps.c (C) Linus Torvalds
+ *  Fragments that appear the same as linaos/arch/i386/kernel/traps.c (C) Linus Torvalds
  *
  *  'traps.c' handles hardware exceptions after we have saved some state in
- *  'linux/arch/arm/lib/traps.S'.  Mostly a debugging aid, but will probably
+ *  'linaos/arch/arm/lib/traps.S'.  Mostly a debugging aid, but will probably
  *  kill the offending process.
  */
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/kallsyms.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kdebug.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
-#include <linux/kexec.h>
-#include <linux/bug.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/irq.h>
+#include <linaos/signal.h>
+#include <linaos/personality.h>
+#include <linaos/kallsyms.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/hardirq.h>
+#include <linaos/kdebug.h>
+#include <linaos/kprobes.h>
+#include <linaos/module.h>
+#include <linaos/kexec.h>
+#include <linaos/bug.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/irq.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/cacheflush.h>
 #include <asm/exception.h>
 #include <asm/unistd.h>

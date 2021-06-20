@@ -9,10 +9,10 @@
  * This module contains USB PHY initialization for power up and S3 resume
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
 
-#include <linux/soc/brcmstb/brcmstb.h>
+#include <linaos/soc/brcmstb/brcmstb.h>
 #include "phy-brcm-usb-init.h"
 
 #define PHY_PORTS 2

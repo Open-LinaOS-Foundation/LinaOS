@@ -14,13 +14,13 @@
  * TODO: 1) Raw bayer parameter settings and bayer capture
  *	 2) Add support for control ioctl
  */
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/videodev2.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/videodev2.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
 
 #include <media/davinci/isif.h>
 #include <media/davinci/vpss.h>

@@ -30,10 +30,10 @@
  * SOFTWARE.
  *
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
 
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_addr.h>

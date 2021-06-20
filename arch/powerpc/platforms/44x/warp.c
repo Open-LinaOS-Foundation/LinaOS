@@ -5,15 +5,15 @@
  * Copyright (c) 2008-2009 PIKA Technologies
  *   Sean MacLennan <smaclennan@pikatech.com>
  */
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/kthread.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/of_gpio.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/init.h>
+#include <linaos/of_platform.h>
+#include <linaos/kthread.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/of_gpio.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>

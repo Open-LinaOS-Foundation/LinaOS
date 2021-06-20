@@ -8,7 +8,7 @@
  *                          Dan Eaton <dan.eaton@rocketlogix.com>
  * Copyright (C) 2004-2008  Jean Delvare <jdelvare@suse.de>
  *
- * Original port to Linux 2.6 by Jeff Oliver.
+ * Original port to LinaOS 2.6 by Jeff Oliver.
  *
  * The LM87 is a sensor chip made by National Semiconductor. It monitors up
  * to 8 voltages (including its own power source), up to three temperatures
@@ -43,17 +43,17 @@
  *   https://www.analog.com/en/prod/0,2877,ADM1024,00.html
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/hwmon-vid.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/regulator/consumer.h>
 
 /*
  * Addresses to scan

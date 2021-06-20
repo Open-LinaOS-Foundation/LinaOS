@@ -7,10 +7,10 @@
  *
  */
 
-#include <linux/stddef.h>
+#include <linaos/stddef.h>
 #include <asm/errno.h>
-#include <linux/sysrq.h>
-#include <linux/ctype.h>
+#include <linaos/sysrq.h>
+#include <linaos/ctype.h>
 
 #include "ctrlchar.h"
 

@@ -4,7 +4,7 @@
 
 #include <crypto/b128ops.h>
 #include <crypto/serpent.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct crypto_skcipher;
 

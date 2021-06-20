@@ -4,13 +4,13 @@
  * to work in 2.5 by Dave Jones.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/agp_backend.h>
-#include <linux/page-flags.h>
-#include <linux/mm.h>
-#include <linux/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/agp_backend.h>
+#include <linaos/page-flags.h>
+#include <linaos/mm.h>
+#include <linaos/jiffies.h>
 #include "agp.h"
 
 /* NVIDIA registers */

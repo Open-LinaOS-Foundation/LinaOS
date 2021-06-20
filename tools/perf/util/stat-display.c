@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <inttypes.h>
-#include <linux/string.h>
-#include <linux/time64.h>
+#include <linaos/string.h>
+#include <linaos/time64.h>
 #include <math.h>
 #include "color.h"
 #include "counts.h"
@@ -13,7 +13,7 @@
 #include "thread_map.h"
 #include "cpumap.h"
 #include "string2.h"
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 #include "cgroup.h"
 #include <api/fs/fs.h>
 #include "util.h"

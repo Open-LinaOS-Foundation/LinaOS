@@ -9,10 +9,10 @@
 #ifndef _ASM_ACPI_H
 #define _ASM_ACPI_H
 
-#include <linux/efi.h>
-#include <linux/memblock.h>
-#include <linux/psci.h>
-#include <linux/stddef.h>
+#include <linaos/efi.h>
+#include <linaos/memblock.h>
+#include <linaos/psci.h>
+#include <linaos/stddef.h>
 
 #include <asm/cputype.h>
 #include <asm/io.h>

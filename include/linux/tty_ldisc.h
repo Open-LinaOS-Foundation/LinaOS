@@ -123,9 +123,9 @@
  *	If assigned, prefer this function for automatic flow control.
  */
 
-#include <linux/fs.h>
-#include <linux/wait.h>
-#include <linux/atomic.h>
+#include <linaos/fs.h>
+#include <linaos/wait.h>
+#include <linaos/atomic.h>
 
 /*
  * the semaphore definition

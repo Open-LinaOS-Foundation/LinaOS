@@ -6,8 +6,8 @@
 #include "qla_def.h"
 #include "qla_target.h"
 
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
 
 #include <scsi/scsi_tcq.h>
 

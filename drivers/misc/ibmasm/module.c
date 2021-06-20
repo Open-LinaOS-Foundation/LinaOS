@@ -36,9 +36,9 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 #include "ibmasm.h"
 #include "lowlevel.h"
 #include "remote.h"

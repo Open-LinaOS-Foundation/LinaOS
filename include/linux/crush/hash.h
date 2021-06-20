@@ -3,7 +3,7 @@
 #define CEPH_CRUSH_HASH_H
 
 #ifdef __KERNEL__
-# include <linux/types.h>
+# include <linaos/types.h>
 #else
 # include "crush_compat.h"
 #endif

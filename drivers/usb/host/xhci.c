@@ -5,18 +5,18 @@
  * Copyright (C) 2008 Intel Corp.
  *
  * Author: Sarah Sharp
- * Some code borrowed from the Linux EHCI driver.
+ * Some code borrowed from the LinaOS EHCI driver.
  */
 
-#include <linux/pci.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/dmi.h>
-#include <linux/dma-mapping.h>
+#include <linaos/pci.h>
+#include <linaos/iopoll.h>
+#include <linaos/irq.h>
+#include <linaos/log2.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/slab.h>
+#include <linaos/dmi.h>
+#include <linaos/dma-mapping.h>
 
 #include "xhci.h"
 #include "xhci-trace.h"

@@ -3,7 +3,7 @@
  * SiS 300/540/630[S]/730[S],
  * SiS 315[E|PRO]/550/[M]650/651/[M]661[F|M]X/740/[M]741[GX]/330/[M]760[GX],
  * XGI V3XT/V5/V8, Z7
- * frame buffer driver for Linux kernels >= 2.4.14 and >=2.6.3
+ * frame buffer driver for LinaOS kernels >= 2.4.14 and >=2.6.3
  *
  * 2D acceleration part
  *
@@ -15,11 +15,11 @@
  *			for more information and updates)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/fb.h>
+#include <linaos/ioport.h>
+#include <linaos/types.h>
 #include <asm/io.h>
 
 #include "sis.h"

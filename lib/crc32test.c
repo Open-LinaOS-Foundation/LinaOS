@@ -4,7 +4,7 @@
  * algorithm to the closely similar existing slicing-by-4 algorithm.
  *
  * Oct 15, 2000 Matt Domsch <Matt_Domsch@dell.com>
- * Nicer crc32 functions/docs submitted by linux@horizon.com.  Thanks!
+ * Nicer crc32 functions/docs submitted by linaos@horizon.com.  Thanks!
  * Code was from the public domain, copyright abandoned.  Code was
  * subsequently included in the kernel, thus was re-licensed under the
  * GNU GPL v2.
@@ -24,9 +24,9 @@
  * Version 2.  See the file COPYING for more details.
  */
 
-#include <linux/crc32.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <linaos/crc32.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
 
 #include "crc32defs.h"
 
@@ -659,7 +659,7 @@ static struct crc_test {
 	{0xb18a0319, 0x00000026, 0x000007db, 0x1cf98dcc, 0x8fa9ad6a, 0x9dc0bb48},
 };
 
-#include <linux/time.h>
+#include <linaos/time.h>
 
 static int __init crc32c_test(void)
 {

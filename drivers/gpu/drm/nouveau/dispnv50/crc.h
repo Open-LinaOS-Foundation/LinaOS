@@ -2,7 +2,7 @@
 #ifndef __NV50_CRC_H__
 #define __NV50_CRC_H__
 
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 #include <drm/drm_crtc.h>
 #include <drm/drm_vblank_work.h>
 

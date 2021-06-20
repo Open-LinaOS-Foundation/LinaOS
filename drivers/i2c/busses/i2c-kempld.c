@@ -8,11 +8,11 @@
  * The driver is based on the i2c-ocores driver by Peter Korsgaard.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/mfd/kempld.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/mfd/kempld.h>
 
 #define KEMPLD_I2C_PRELOW	0x0b
 #define KEMPLD_I2C_PREHIGH	0x0c

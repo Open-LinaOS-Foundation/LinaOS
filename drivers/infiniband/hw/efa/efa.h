@@ -6,9 +6,9 @@
 #ifndef _EFA_H_
 #define _EFA_H_
 
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
+#include <linaos/bitops.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
 
 #include <rdma/efa-abi.h>
 #include <rdma/ib_verbs.h>

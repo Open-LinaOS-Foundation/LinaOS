@@ -3,8 +3,8 @@
  * Copyright 2018 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/dmi.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/dmi.h>
+#include <linaos/mod_devicetable.h>
 #include "core.h"
 #include "common.h"
 #include "brcm_hw_ids.h"
@@ -46,7 +46,7 @@ static const struct brcmf_dmi_data predia_basic_data = {
 
 /* Note the Voyo winpad A15 tablet uses the same Ampak AP6330 module, with the
  * exact same nvram file as the Prowise-PT301 tablet. Since the nvram for the
- * Prowise-PT301 is already in linux-firmware we just point to that here.
+ * Prowise-PT301 is already in linaos-firmware we just point to that here.
  */
 static const struct brcmf_dmi_data voyo_winpad_a15_data = {
 	BRCM_CC_4330_CHIP_ID, 4, "Prowise-PT301"

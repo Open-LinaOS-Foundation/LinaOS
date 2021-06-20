@@ -45,14 +45,14 @@
  *
  */
 
-#include <linux/spinlock.h>
-#include <linux/seqlock.h>
-#include <linux/netdevice.h>
-#include <linux/moduleparam.h>
-#include <linux/bitops.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
+#include <linaos/spinlock.h>
+#include <linaos/seqlock.h>
+#include <linaos/netdevice.h>
+#include <linaos/moduleparam.h>
+#include <linaos/bitops.h>
+#include <linaos/timer.h>
+#include <linaos/vmalloc.h>
+#include <linaos/highmem.h>
 
 #include "hfi.h"
 #include "common.h"

@@ -7,9 +7,9 @@
  * Copyright (c) 2019 Sven Schnelle <svens@stackframe.org>
  */
 
-#include <linux/types.h>
-#include <linux/kprobes.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/kprobes.h>
+#include <linaos/slab.h>
 #include <asm/cacheflush.h>
 #include <asm/patch.h>
 

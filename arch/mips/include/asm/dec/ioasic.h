@@ -10,8 +10,8 @@
 #ifndef __ASM_DEC_IOASIC_H
 #define __ASM_DEC_IOASIC_H
 
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 
 extern spinlock_t ioasic_ssr_lock;
 

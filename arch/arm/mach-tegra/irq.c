@@ -8,15 +8,15 @@
  * Copyright (C) 2010,2013, NVIDIA Corporation
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/syscore_ops.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irqchip/arm-gic.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/of_address.h>
+#include <linaos/of.h>
+#include <linaos/syscore_ops.h>
 
 #include <soc/tegra/irq.h>
 

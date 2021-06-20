@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2019 Spreadtrum Communications Inc.
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/hwspinlock.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/hwspinlock.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
 
 #define SPRD_EFUSE_ENABLE		0x20
 #define SPRD_EFUSE_ERR_FLAG		0x24

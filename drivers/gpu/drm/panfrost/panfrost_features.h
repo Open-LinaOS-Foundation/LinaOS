@@ -4,7 +4,7 @@
 #ifndef __PANFROST_FEATURES_H__
 #define __PANFROST_FEATURES_H__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #include "panfrost_device.h"
 

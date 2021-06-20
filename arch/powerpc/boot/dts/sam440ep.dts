@@ -3,7 +3,7 @@
  * original copyrights below 
  *
  * Copyright (c) 2006, 2007 IBM Corp.
- * Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Josh Boyer <jwboyer@linaos.vnet.ibm.com>
  *
  * Modified from bamboo.dts for sam440ep:
  * Copyright 2008 Giuseppe Coviello <gicoviello@gmail.com>
@@ -215,7 +215,7 @@
 			};
 
 			EMAC0: ethernet@ef600e00 {
-				linux,network-index = <0>;
+				linaos,network-index = <0>;
 				device_type = "network";
 				compatible = "ibm,emac-440ep", "ibm,emac-440gp", "ibm,emac";
 				interrupt-parent = <&UIC1>;
@@ -236,7 +236,7 @@
 			};
 
 			EMAC1: ethernet@ef600f00 {
-				linux,network-index = <1>;
+				linaos,network-index = <1>;
 				device_type = "network";
 				compatible = "ibm,emac-440ep", "ibm,emac-440gp", "ibm,emac";
 				interrupt-parent = <&UIC1>;

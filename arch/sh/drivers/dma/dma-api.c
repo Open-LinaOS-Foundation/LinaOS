@@ -6,16 +6,16 @@
  *
  * Copyright (C) 2003, 2004, 2005  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/list.h>
+#include <linaos/platform_device.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 #include <asm/dma.h>
 
 DEFINE_SPINLOCK(dma_spin_lock);
@@ -412,6 +412,6 @@ static int __init dma_api_init(void)
 }
 subsys_initcall(dma_api_init);
 
-MODULE_AUTHOR("Paul Mundt <lethal@linux-sh.org>");
+MODULE_AUTHOR("Paul Mundt <lethal@linaos-sh.org>");
 MODULE_DESCRIPTION("DMA API for SuperH");
 MODULE_LICENSE("GPL v2");

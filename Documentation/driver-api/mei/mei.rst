@@ -210,4 +210,4 @@ Supported Chipsets
 ==================
 82X38/X48 Express and newer
 
-linux-mei@linux.intel.com
+linaos-mei@linaos.intel.com

@@ -7,17 +7,17 @@
  * Copyright (C) 2014 Paradox Innovation Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/console.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/workqueue.h>
 
 #define UA_ENABLE			0x00
 #define UA_ENABLE_ENABLE		BIT(0)

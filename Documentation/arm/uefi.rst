@@ -11,7 +11,7 @@ UEFI are used somewhat interchangeably in this document and associated
 source code. As a rule, anything new uses 'UEFI', whereas 'EFI' refers
 to legacy code or specifications.
 
-UEFI support in Linux
+UEFI support in LinaOS
 =====================
 Booting on a platform with firmware compliant with the UEFI specification
 makes it possible for the kernel to support additional features:
@@ -52,22 +52,22 @@ following parameters:
 ==========================  ======   ===========================================
 Name                        Size     Description
 ==========================  ======   ===========================================
-linux,uefi-system-table     64-bit   Physical address of the UEFI System Table.
+linaos,uefi-system-table     64-bit   Physical address of the UEFI System Table.
 
-linux,uefi-mmap-start       64-bit   Physical address of the UEFI memory map,
+linaos,uefi-mmap-start       64-bit   Physical address of the UEFI memory map,
                                      populated by the UEFI GetMemoryMap() call.
 
-linux,uefi-mmap-size        32-bit   Size in bytes of the UEFI memory map
+linaos,uefi-mmap-size        32-bit   Size in bytes of the UEFI memory map
                                      pointed to in previous entry.
 
-linux,uefi-mmap-desc-size   32-bit   Size in bytes of each entry in the UEFI
+linaos,uefi-mmap-desc-size   32-bit   Size in bytes of each entry in the UEFI
                                      memory map.
 
-linux,uefi-mmap-desc-ver    32-bit   Version of the mmap descriptor format.
+linaos,uefi-mmap-desc-ver    32-bit   Version of the mmap descriptor format.
 
-linux,initrd-start          64-bit   Physical start address of an initrd
+linaos,initrd-start          64-bit   Physical start address of an initrd
 
-linux,initrd-end            64-bit   Physical end address of an initrd
+linaos,initrd-end            64-bit   Physical end address of an initrd
 
 kaslr-seed                  64-bit   Entropy used to randomize the kernel image
                                      base address location.

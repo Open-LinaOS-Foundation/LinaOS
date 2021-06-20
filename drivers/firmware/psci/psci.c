@@ -6,20 +6,20 @@
 
 #define pr_fmt(fmt) "psci: " fmt
 
-#include <linux/acpi.h>
-#include <linux/arm-smccc.h>
-#include <linux/cpuidle.h>
-#include <linux/errno.h>
-#include <linux/linkage.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/printk.h>
-#include <linux/psci.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <linaos/acpi.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/cpuidle.h>
+#include <linaos/errno.h>
+#include <linaos/linkage.h>
+#include <linaos/of.h>
+#include <linaos/pm.h>
+#include <linaos/printk.h>
+#include <linaos/psci.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
 
-#include <uapi/linux/psci.h>
+#include <uapi/linaos/psci.h>
 
 #include <asm/cpuidle.h>
 #include <asm/cputype.h>
@@ -127,7 +127,7 @@ static unsigned long __invoke_psci_fn_smc(unsigned long function_id,
 	return res.a0;
 }
 
-static int psci_to_linux_errno(int errno)
+static int psci_to_linaos_errno(int errno)
 {
 	switch (errno) {
 	case PSCI_RET_SUCCESS:
@@ -163,7 +163,7 @@ int psci_set_osi_mode(bool enable)
 			PSCI_1_0_SUSPEND_MODE_PC;
 
 	err = invoke_psci_fn(PSCI_1_0_FN_SET_SUSPEND_MODE, suspend_mode, 0, 0);
-	return psci_to_linux_errno(err);
+	return psci_to_linaos_errno(err);
 }
 
 static int __psci_cpu_suspend(u32 fn, u32 state, unsigned long entry_point)
@@ -171,7 +171,7 @@ static int __psci_cpu_suspend(u32 fn, u32 state, unsigned long entry_point)
 	int err;
 
 	err = invoke_psci_fn(fn, state, entry_point, 0);
-	return psci_to_linux_errno(err);
+	return psci_to_linaos_errno(err);
 }
 
 static int psci_0_1_cpu_suspend(u32 state, unsigned long entry_point)
@@ -191,7 +191,7 @@ static int __psci_cpu_off(u32 fn, u32 state)
 	int err;
 
 	err = invoke_psci_fn(fn, state, 0, 0);
-	return psci_to_linux_errno(err);
+	return psci_to_linaos_errno(err);
 }
 
 static int psci_0_1_cpu_off(u32 state)
@@ -209,7 +209,7 @@ static int __psci_cpu_on(u32 fn, unsigned long cpuid, unsigned long entry_point)
 	int err;
 
 	err = invoke_psci_fn(fn, cpuid, entry_point, 0);
-	return psci_to_linux_errno(err);
+	return psci_to_linaos_errno(err);
 }
 
 static int psci_0_1_cpu_on(unsigned long cpuid, unsigned long entry_point)
@@ -227,7 +227,7 @@ static int __psci_migrate(u32 fn, unsigned long cpuid)
 	int err;
 
 	err = invoke_psci_fn(fn, cpuid, 0, 0);
-	return psci_to_linux_errno(err);
+	return psci_to_linaos_errno(err);
 }
 
 static int psci_0_1_migrate(unsigned long cpuid)

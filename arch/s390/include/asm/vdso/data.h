@@ -2,7 +2,7 @@
 #ifndef __S390_ASM_VDSO_DATA_H
 #define __S390_ASM_VDSO_DATA_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <vdso/datapage.h>
 
 struct arch_vdso_data {

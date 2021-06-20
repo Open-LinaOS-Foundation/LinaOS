@@ -20,20 +20,20 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
-#include <uapi/linux/kfd_ioctl.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/dma-buf.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/compat.h>
+#include <uapi/linaos/kfd_ioctl.h>
+#include <linaos/time.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/dma-buf.h>
 #include <asm/processor.h>
 #include "kfd_priv.h"
 #include "kfd_device_queue_manager.h"

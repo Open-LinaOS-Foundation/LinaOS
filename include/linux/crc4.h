@@ -2,7 +2,7 @@
 #ifndef _LINUX_CRC4_H
 #define _LINUX_CRC4_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 extern uint8_t crc4(uint8_t c, uint64_t x, int bits);
 

@@ -21,7 +21,7 @@
  * including ioctls to map and unmap acceleration parameters and buffers.
  */
 
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <media/v4l2-event.h>
 
 #include "hmm.h"

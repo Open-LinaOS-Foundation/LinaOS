@@ -125,7 +125,7 @@ For details of implementation refer to fw_load_sysfs_fallback(), in particular
 on the use of dev_set_uevent_suppress() and kobject_uevent().
 
 The kernel's kobject uevent mechanism is implemented in lib/kobject_uevent.c,
-it issues uevents to userspace. As a supplement to kobject uevents Linux
+it issues uevents to userspace. As a supplement to kobject uevents LinaOS
 distributions could also enable CONFIG_UEVENT_HELPER_PATH, which makes use of
 core kernel's usermode helper (UMH) functionality to call out to a userspace
 helper for kobject uevents. In practice though no standard distribution has
@@ -139,7 +139,7 @@ sysfs mechanism the userspace component "hotplug" provided the functionality of
 monitoring for kobject events. Historically this was superseded be systemd's
 udev, however firmware loading support was removed from udev as of systemd
 commit be2ea723b1d0 ("udev: remove userspace firmware loading support")
-as of v217 on August, 2014. This means most Linux distributions today are
+as of v217 on August, 2014. This means most LinaOS distributions today are
 not using or taking advantage of the firmware fallback mechanism provided
 by kobject uevents. This is specially exacerbated due to the fact that most
 distributions today disable CONFIG_FW_LOADER_USER_HELPER_FALLBACK.
@@ -209,7 +209,7 @@ EFI embedded firmware fallback mechanism
 
 On some devices the system's EFI code / ROM may contain an embedded copy
 of firmware for some of the system's integrated peripheral devices and
-the peripheral's Linux device-driver needs to access this firmware.
+the peripheral's LinaOS device-driver needs to access this firmware.
 
 Device drivers which need such firmware can use the
 firmware_request_platform() function for this, note that this is a
@@ -219,7 +219,7 @@ this does not use the sysfs interface.
 A device driver which needs this can describe the firmware it needs
 using an efi_embedded_fw_desc struct:
 
-.. kernel-doc:: include/linux/efi_embedded_fw.h
+.. kernel-doc:: include/linaos/efi_embedded_fw.h
    :functions: efi_embedded_fw_desc
 
 The EFI embedded-fw code works by scanning all EFI_BOOT_SERVICES_CODE memory
@@ -237,7 +237,7 @@ To register this array with the efi-embedded-fw code, a driver needs to:
    separate object file which always gets builtin.
 
 2. Add an extern declaration for the dmi_system_id array to
-   include/linux/efi_embedded_fw.h.
+   include/linaos/efi_embedded_fw.h.
 
 3. Add the dmi_system_id array to the embedded_fw_table in
    drivers/firmware/efi/embedded-firmware.c wrapped in a #ifdef testing that

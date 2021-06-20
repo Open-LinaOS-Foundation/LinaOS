@@ -6,8 +6,8 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/memblock.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
 #include <asm/txx9/generic.h>
 #include <asm/txx9/rbtx4939.h>
 

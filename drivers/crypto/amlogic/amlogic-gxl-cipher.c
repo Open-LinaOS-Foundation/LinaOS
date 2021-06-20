@@ -8,12 +8,12 @@
  * CBC and ECB mode.
  */
 
-#include <linux/crypto.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linaos/crypto.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
 #include <crypto/scatterwalk.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
+#include <linaos/scatterlist.h>
+#include <linaos/dma-mapping.h>
 #include <crypto/internal/skcipher.h>
 #include "amlogic-gxl.h"
 

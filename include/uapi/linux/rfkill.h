@@ -19,7 +19,7 @@
 #define _UAPI__RFKILL_H
 
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* define userspace visible states */
 #define RFKILL_STATE_SOFT_BLOCKED	0

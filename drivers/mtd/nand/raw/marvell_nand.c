@@ -74,21 +74,21 @@
  *     markers.
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/of_platform.h>
-#include <linux/iopoll.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/of_platform.h>
+#include <linaos/iopoll.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 #include <asm/unaligned.h>
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma/pxa-dma.h>
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dma/pxa-dma.h>
+#include <linaos/platform_data/mtd-nand-pxa3xx.h>
 
 /* Data FIFO granularity, FIFO reads/writes must be a multiple of this length */
 #define FIFO_DEPTH		8

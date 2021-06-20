@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/acpi.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/mdio/mdio-i2c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/acpi.h>
+#include <linaos/ctype.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/hwmon.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
+#include <linaos/mdio/mdio-i2c.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 
 #include "sfp.h"
 #include "swphy.h"
@@ -1788,7 +1788,7 @@ static int sfp_sm_mod_probe(struct sfp *sfp, bool report)
 	u8 check;
 	int ret;
 
-	/* Some SFP modules and also some Linux I2C drivers do not like reads
+	/* Some SFP modules and also some LinaOS I2C drivers do not like reads
 	 * longer than 16 bytes, so read the EEPROM in chunks of 16 bytes at
 	 * a time.
 	 */

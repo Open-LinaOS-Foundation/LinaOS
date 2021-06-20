@@ -20,14 +20,14 @@
 #define DRV_VERSION	"1.04"
 
 /* Includes */
-#include <linux/module.h>		/* For module specific items */
-#include <linux/moduleparam.h>		/* For new moduleparam's */
-#include <linux/types.h>		/* For standard types (like size_t) */
-#include <linux/errno.h>		/* For the -ENODEV/... values */
-#include <linux/kernel.h>		/* For printk/panic/... */
-#include <linux/init.h>			/* For __init/__exit/... */
-#include <linux/ioport.h>		/* For io-port access */
-#include <linux/io.h>			/* For inb/outb/... */
+#include <linaos/module.h>		/* For module specific items */
+#include <linaos/moduleparam.h>		/* For new moduleparam's */
+#include <linaos/types.h>		/* For standard types (like size_t) */
+#include <linaos/errno.h>		/* For the -ENODEV/... values */
+#include <linaos/kernel.h>		/* For printk/panic/... */
+#include <linaos/init.h>			/* For __init/__exit/... */
+#include <linaos/ioport.h>		/* For io-port access */
+#include <linaos/io.h>			/* For inb/outb/... */
 
 #include "iTCO_vendor.h"
 

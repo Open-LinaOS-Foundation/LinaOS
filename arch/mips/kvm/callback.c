@@ -7,8 +7,8 @@
  * Authors: Yann Le Du <ledu@kymasys.com>
  */
 
-#include <linux/export.h>
-#include <linux/kvm_host.h>
+#include <linaos/export.h>
+#include <linaos/kvm_host.h>
 
 struct kvm_mips_callbacks *kvm_mips_callbacks;
 EXPORT_SYMBOL_GPL(kvm_mips_callbacks);

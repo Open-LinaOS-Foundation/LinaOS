@@ -5,12 +5,12 @@
  * Copyright (C) 2015 Renesas Electronics Corporation
  * Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/i2c.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/i2c.h>
+#include <linaos/of_device.h>
+#include <linaos/module.h>
 
 #define CH_MAX 4
 #define RATIO_REG_SIZE 4

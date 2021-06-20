@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * OPAL Runtime Diagnostics interface driver
  * Supported on POWERNV platform
  *
  * (C) Copyright IBM 2015
  *
- * Author: Vaidyanathan Srinivasan <svaidy at linux.vnet.ibm.com>
+ * Author: Vaidyanathan Srinivasan <svaidy at linaos.vnet.ibm.com>
  * Author: Jeremy Kerr <jk@ozlabs.org>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -22,7 +22,7 @@
 #ifndef _UAPI_ASM_POWERPC_OPAL_PRD_H_
 #define _UAPI_ASM_POWERPC_OPAL_PRD_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * The version of the kernel interface of the PRD system. This describes the

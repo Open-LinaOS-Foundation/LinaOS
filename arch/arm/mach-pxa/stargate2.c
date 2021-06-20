@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/stargate2.c
+ *  linaos/arch/arm/mach-pxa/stargate2.c
  *
  *  Author:	Ed C. Epp
  *  Created:	Nov 05, 2002
@@ -9,26 +9,26 @@
  *  Modified 2009:  Jonathan Cameron <jic23@cam.ac.uk>
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/machine.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/plat-ram.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/bitops.h>
+#include <linaos/fb.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/plat-ram.h>
+#include <linaos/mtd/partitions.h>
 
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/platform_data/pcf857x.h>
-#include <linux/smc91x.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/property.h>
+#include <linaos/platform_data/i2c-pxa.h>
+#include <linaos/platform_data/pcf857x.h>
+#include <linaos/smc91x.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio.h>
+#include <linaos/leds.h>
+#include <linaos/property.h>
 
 #include <asm/types.h>
 #include <asm/setup.h>
@@ -42,14 +42,14 @@
 #include <asm/mach/flash.h>
 
 #include "pxa27x.h"
-#include <linux/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/mmc-pxamci.h>
 #include "udc.h"
 #include "pxa27x-udc.h"
 #include <mach/smemc.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/mfd/da903x.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/pxa2xx_spi.h>
+#include <linaos/mfd/da903x.h>
 
 #include "devices.h"
 #include "generic.h"

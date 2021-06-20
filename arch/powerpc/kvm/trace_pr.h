@@ -3,7 +3,7 @@
 #if !defined(_TRACE_KVM_PR_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_KVM_PR_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "trace_book3s.h"
 
 #undef TRACE_SYSTEM

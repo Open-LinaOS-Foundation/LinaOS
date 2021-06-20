@@ -35,8 +35,8 @@
 #ifndef MTHCA_MEMFREE_H
 #define MTHCA_MEMFREE_H
 
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
 
 #define MTHCA_ICM_CHUNK_LEN \
 	((256 - sizeof (struct list_head) - 2 * sizeof (int)) /		\

@@ -7,13 +7,13 @@
  * subsystem, and only handles one master device, but this doesn't have to be
  * the case.
  */
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
+#include <linaos/component.h>
+#include <linaos/device.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/debugfs.h>
 
 /**
  * DOC: overview

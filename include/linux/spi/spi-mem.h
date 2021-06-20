@@ -11,7 +11,7 @@
 #ifndef __LINUX_SPI_MEM_H
 #define __LINUX_SPI_MEM_H
 
-#include <linux/spi/spi.h>
+#include <linaos/spi/spi.h>
 
 #define SPI_MEM_OP_CMD(__opcode, __buswidth)			\
 	{							\

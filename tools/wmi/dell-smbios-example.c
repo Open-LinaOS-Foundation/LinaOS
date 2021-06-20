@@ -20,7 +20,7 @@
 #ifndef __packed
 #define __packed __attribute__((packed))
 #endif
-#include <linux/wmi.h>
+#include <linaos/wmi.h>
 
 /* It would be better to discover these using udev, but for a simple
  * application they're hardcoded

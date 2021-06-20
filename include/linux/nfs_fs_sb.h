@@ -2,15 +2,15 @@
 #ifndef _NFS_FS_SB
 #define _NFS_FS_SB
 
-#include <linux/list.h>
-#include <linux/backing-dev.h>
-#include <linux/idr.h>
-#include <linux/wait.h>
-#include <linux/nfs_xdr.h>
-#include <linux/sunrpc/xprt.h>
+#include <linaos/list.h>
+#include <linaos/backing-dev.h>
+#include <linaos/idr.h>
+#include <linaos/wait.h>
+#include <linaos/nfs_xdr.h>
+#include <linaos/sunrpc/xprt.h>
 
-#include <linux/atomic.h>
-#include <linux/refcount.h>
+#include <linaos/atomic.h>
+#include <linaos/refcount.h>
 
 struct nfs4_session;
 struct nfs_iostats;
@@ -144,7 +144,7 @@ struct nfs_server {
 	atomic_long_t		writeback;	/* number of writeback pages */
 	unsigned int		flags;		/* various flags */
 
-/* The following are for internal use only. Also see uapi/linux/nfs_mount.h */
+/* The following are for internal use only. Also see uapi/linaos/nfs_mount.h */
 #define NFS_MOUNT_LOOKUP_CACHE_NONEG	0x10000
 #define NFS_MOUNT_LOOKUP_CACHE_NONE	0x20000
 #define NFS_MOUNT_NORESVPORT		0x40000

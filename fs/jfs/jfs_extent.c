@@ -3,8 +3,8 @@
  *   Copyright (C) International Business Machines Corp., 2000-2004
  */
 
-#include <linux/fs.h>
-#include <linux/quotaops.h>
+#include <linaos/fs.h>
+#include <linaos/quotaops.h>
 #include "jfs_incore.h"
 #include "jfs_inode.h"
 #include "jfs_superblock.h"

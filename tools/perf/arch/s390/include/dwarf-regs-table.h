@@ -6,7 +6,7 @@
 
 /*
  * For reference, see DWARF register mapping:
- * http://refspecs.linuxfoundation.org/ELF/zSeries/lzsabi0_s390/x1542.html
+ * http://refspecs.linaosfoundation.org/ELF/zSeries/lzsabi0_s390/x1542.html
  */
 static const char * const s390_dwarf_regs[] = {
 	"%r0", "%r1",  "%r2",  "%r3",  "%r4",  "%r5",  "%r6",  "%r7",

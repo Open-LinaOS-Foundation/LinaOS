@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2001,2002,2003 Broadcom Corporation
  */
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include <asm/mipsregs.h>
 #include <asm/sibyte/sb1250.h>
 #include <asm/sibyte/sb1250_regs.h>

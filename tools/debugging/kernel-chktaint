@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: GPL-2.0
 #
 # Randy Dunlap <rdunlap@infradead.org>, 2018
-# Thorsten Leemhuis <linux@leemhuis.info>, 2018
+# Thorsten Leemhuis <linaos@leemhuis.info>, 2018
 
 usage()
 {
@@ -196,7 +196,7 @@ else
 fi
 
 echo "For a more detailed explanation of the various taint flags see"
-echo " Documentation/admin-guide/tainted-kernels.rst in the the Linux kernel sources"
+echo " Documentation/admin-guide/tainted-kernels.rst in the the LinaOS kernel sources"
 echo " or https://kernel.org/doc/html/latest/admin-guide/tainted-kernels.html"
 echo "Raw taint value as int/string: $taint/'$out'"
 #EOF#

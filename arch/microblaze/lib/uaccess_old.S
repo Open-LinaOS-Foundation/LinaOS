@@ -8,8 +8,8 @@
  * for more details.
  */
 
-#include <linux/errno.h>
-#include <linux/linkage.h>
+#include <linaos/errno.h>
+#include <linaos/linkage.h>
 #include <asm/page.h>
 
 /*

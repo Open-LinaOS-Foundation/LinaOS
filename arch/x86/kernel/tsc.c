@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/timer.h>
-#include <linux/acpi_pmtmr.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/clocksource.h>
-#include <linux/percpu.h>
-#include <linux/timex.h>
-#include <linux/static_key.h>
-#include <linux/static_call.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/clock.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/timer.h>
+#include <linaos/acpi_pmtmr.h>
+#include <linaos/cpufreq.h>
+#include <linaos/delay.h>
+#include <linaos/clocksource.h>
+#include <linaos/percpu.h>
+#include <linaos/timex.h>
+#include <linaos/static_key.h>
+#include <linaos/static_call.h>
 
 #include <asm/hpet.h>
 #include <asm/timer.h>

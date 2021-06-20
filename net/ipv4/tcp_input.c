@@ -64,20 +64,20 @@
 
 #define pr_fmt(fmt) "TCP: " fmt
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/kernel.h>
-#include <linux/prefetch.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/sysctl.h>
+#include <linaos/kernel.h>
+#include <linaos/prefetch.h>
 #include <net/dst.h>
 #include <net/tcp.h>
 #include <net/inet_common.h>
-#include <linux/ipsec.h>
+#include <linaos/ipsec.h>
 #include <asm/unaligned.h>
-#include <linux/errqueue.h>
+#include <linaos/errqueue.h>
 #include <trace/events/tcp.h>
-#include <linux/jump_label_ratelimit.h>
+#include <linaos/jump_label_ratelimit.h>
 #include <net/busy_poll.h>
 #include <net/mptcp.h>
 
@@ -909,7 +909,7 @@ static void tcp_set_rto(struct sock *sk)
 	 *    It cannot be less due to utterly erratic ACK generation made
 	 *    at least by solaris and freebsd. "Erratic ACKs" has _nothing_
 	 *    to do with delayed acks, because at cwnd>2 true delack timeout
-	 *    is invisible. Actually, Linux-2.4 also generates erratic
+	 *    is invisible. Actually, LinaOS-2.4 also generates erratic
 	 *    ACKs in some circumstances.
 	 */
 	inet_csk(sk)->icsk_rto = __tcp_set_rto(tp);
@@ -2174,7 +2174,7 @@ static inline int tcp_dupack_heuristics(const struct tcp_sock *tp)
 	return tp->sacked_out + 1;
 }
 
-/* Linux NewReno/SACK/ECN state machine.
+/* LinaOS NewReno/SACK/ECN state machine.
  * --------------------------------------
  *
  * "Open"	Normal state, no dubious events, fast path.
@@ -3478,7 +3478,7 @@ static void tcp_rcv_nxt_update(struct tcp_sock *tp, u32 seq)
 
 /* Update our send window.
  *
- * Window update algorithm, described in RFC793/RFC1122 (used in linux-2.2
+ * Window update algorithm, described in RFC793/RFC1122 (used in linaos-2.2
  * and in FreeBSD. NetBSD's one is even worse.) is wrong.
  */
 static int tcp_ack_update_window(struct sock *sk, const struct sk_buff *skb, u32 ack,
@@ -6577,7 +6577,7 @@ static inline void pr_drop_req(struct request_sock *req, __u16 port, int family)
  * TCP ECN negotiation.
  *
  * Exception: tcp_ca wants ECN. This is required for DCTCP
- * congestion control: Linux DCTCP asserts ECT on all packets,
+ * congestion control: LinaOS DCTCP asserts ECT on all packets,
  * including SYN, which is most optimal solution; however,
  * others, such as FreeBSD do not.
  *

@@ -16,9 +16,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bug.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
+#include <linaos/bug.h>
+#include <linaos/jump_label.h>
+#include <linaos/kernel.h>
 
 /*
  * CPU feature register tracking
@@ -283,7 +283,7 @@ extern struct arm64_ftr_reg arm64_ftr_reg_ctrel0;
  * CPU feature detected at boot time based on system-wide value of a
  * feature. It is safe for a late CPU to have this feature even though
  * the system hasn't enabled it, although the feature will not be used
- * by Linux in this case. If the system has enabled this feature already,
+ * by LinaOS in this case. If the system has enabled this feature already,
  * then every late CPU must have it.
  */
 #define ARM64_CPUCAP_SYSTEM_FEATURE	\
@@ -319,7 +319,7 @@ extern struct arm64_ftr_reg arm64_ftr_reg_ctrel0;
 /*
  * CPU feature used early in the boot based on the boot CPU. It is safe for a
  * late CPU to have this feature even though the boot CPU hasn't enabled it,
- * although the feature will not be used by Linux in this case. If the boot CPU
+ * although the feature will not be used by LinaOS in this case. If the boot CPU
  * has enabled this feature already, then every late CPU must have it.
  */
 #define ARM64_CPUCAP_BOOT_CPU_FEATURE                  \

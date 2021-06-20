@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "ieee80211.h"
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
+#include <linaos/etherdevice.h>
+#include <linaos/slab.h>
 #include "rtl819x_TS.h"
 
 static void TsSetupTimeOut(struct timer_list *unused)

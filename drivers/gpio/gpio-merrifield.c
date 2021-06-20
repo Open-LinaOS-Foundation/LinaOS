@@ -3,17 +3,17 @@
  * Intel Merrifield SoC GPIO driver
  *
  * Copyright (c) 2016 Intel Corporation.
- * Author: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Author: Andy Shevchenko <andriy.shevchenko@linaos.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/acpi.h>
+#include <linaos/bitops.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pinctrl/consumer.h>
 
 #define GCCR		0x000	/* controller configuration */
 #define GPLR		0x004	/* pin level r/o */
@@ -520,6 +520,6 @@ static struct pci_driver mrfld_gpio_driver = {
 
 module_pci_driver(mrfld_gpio_driver);
 
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linaos.intel.com>");
 MODULE_DESCRIPTION("Intel Merrifield SoC GPIO driver");
 MODULE_LICENSE("GPL v2");

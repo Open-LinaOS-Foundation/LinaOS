@@ -6,7 +6,7 @@
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * linaos-wlan
  *
  *   The contents of this file are subject to the Mozilla Public
  *   License Version 1.1 (the "License"); you may not use this file
@@ -31,12 +31,12 @@
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the linaos-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@linaos-wlan.com
+ * http://www.linaos-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -51,16 +51,16 @@
  * --------------------------------------------------------------------
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/skbuff.h>
+#include <linaos/wireless.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
 #include <net/sock.h>
-#include <linux/netlink.h>
+#include <linaos/netlink.h>
 
 #include "p80211types.h"
 #include "p80211hdr.h"
@@ -154,7 +154,7 @@ int p80211req_dorequest(struct wlandevice *wlandev, u8 *msgbuf)
  *
  * p80211 message handler.  Primarily looks for messages that
  * belong to p80211 and then dispatches the appropriate response.
- * TODO: we don't do anything yet.  Once the linuxMIB is better
+ * TODO: we don't do anything yet.  Once the linaosMIB is better
  *	defined we'll need a get/set handler.
  *
  * Arguments:

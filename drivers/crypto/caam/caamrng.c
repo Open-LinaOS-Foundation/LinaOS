@@ -9,10 +9,10 @@
  *
  */
 
-#include <linux/hw_random.h>
-#include <linux/completion.h>
-#include <linux/atomic.h>
-#include <linux/kfifo.h>
+#include <linaos/hw_random.h>
+#include <linaos/completion.h>
+#include <linaos/atomic.h>
+#include <linaos/kfifo.h>
 
 #include "compat.h"
 

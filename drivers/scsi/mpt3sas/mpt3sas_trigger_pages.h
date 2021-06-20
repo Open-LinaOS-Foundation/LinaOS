@@ -10,7 +10,7 @@
  * Authors: Broadcom Inc.
  * Sreekanth Reddy  <sreekanth.reddy@broadcom.com>
  *
- * Send feedback to : MPT-FusionLinux.pdl@broadcom.com)
+ * Send feedback to : MPT-FusionLinaOS.pdl@broadcom.com)
  */
 
 #include "mpi/mpi2_cnfg.h"

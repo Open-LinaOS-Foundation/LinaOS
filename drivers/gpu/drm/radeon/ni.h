@@ -1,4 +1,4 @@
-/* ni.h -- Private header for radeon driver -*- linux-c -*-
+/* ni.h -- Private header for radeon driver -*- linaos-c -*-
  *
  * Copyright 2010 Advanced Micro Devices, Inc.
  *

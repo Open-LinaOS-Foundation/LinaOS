@@ -5,20 +5,20 @@
  * Copyright (C) 2014 Andreas Noever <andreas.noever@gmail.com>
  * Copyright (C) 2017, Intel Corporation
  * Authors: Michael Jamet <michael.jamet@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
 #ifndef THUNDERBOLT_H_
 #define THUNDERBOLT_H_
 
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pci.h>
-#include <linux/uuid.h>
-#include <linux/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/idr.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/pci.h>
+#include <linaos/uuid.h>
+#include <linaos/workqueue.h>
 
 enum tb_cfg_pkg_type {
 	TB_CFG_PKG_READ = 1,
@@ -67,7 +67,7 @@ enum tb_security_level {
  * @wq: Ordered workqueue for all domain specific work
  * @root_switch: Root switch of this domain
  * @cm_ops: Connection manager specific operations vector
- * @index: Linux assigned domain number
+ * @index: LinaOS assigned domain number
  * @security_level: Current security level
  * @nboot_acl: Number of boot ACLs the domain supports
  * @privdata: Private connection manager specific data

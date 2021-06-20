@@ -11,7 +11,7 @@
  * 2001-02-06:	Cliff Brake         Initial code
  *
  * 2001-02-25:	Sukjae Cho <sjcho@east.isi.edu> &
- * 		Chester Kuo <chester@linux.org.tw>
+ * 		Chester Kuo <chester@linaos.org.tw>
  * 			Save more value for the resume function! Support
  * 			Bitsy/Assabet/Freebird board
  *
@@ -22,11 +22,11 @@
  * 2002-05-27:	Nicolas Pitre	Killed sleep.h and the kmalloced save array.
  * 				Storage is local on the stack now.
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/time.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/suspend.h>
+#include <linaos/errno.h>
+#include <linaos/time.h>
 
 #include <mach/hardware.h>
 #include <asm/memory.h>

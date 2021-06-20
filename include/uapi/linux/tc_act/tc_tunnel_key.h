@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Copyright (c) 2016, Amir Vadai <amir@vadai.me>
  * Copyright (c) 2016, Mellanox Technologies. All rights reserved.
@@ -12,7 +12,7 @@
 #ifndef __LINUX_TC_TUNNEL_KEY_H
 #define __LINUX_TC_TUNNEL_KEY_H
 
-#include <linux/pkt_cls.h>
+#include <linaos/pkt_cls.h>
 
 #define TCA_TUNNEL_KEY_ACT_SET	    1
 #define TCA_TUNNEL_KEY_ACT_RELEASE  2

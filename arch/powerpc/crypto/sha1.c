@@ -10,13 +10,13 @@
  * Derived from "crypto/sha1.c"
  * Copyright (c) Alan Smithee.
  * Copyright (c) Andrew McDonald <andrew@mcdonald.org.uk>
- * Copyright (c) Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) Jean-Francois Dive <jef@linaosbe.org>
  */
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
 #include <crypto/sha1.h>
 #include <asm/byteorder.h>
 

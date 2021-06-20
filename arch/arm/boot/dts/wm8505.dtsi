@@ -2,7 +2,7 @@
 /*
  * wm8505.dtsi - Device tree file for Wondermedia WM8505 SoC
  *
- * Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (C) 2012 Tony Prisk <linaos@prisktech.co.nz>
  */
 
 / {

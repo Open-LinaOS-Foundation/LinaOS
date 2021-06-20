@@ -4,17 +4,17 @@
  * Author: Florian Westphal <fw@strlen.de>
  */
 
-#include <linux/module.h>
-#include <linux/static_key.h>
-#include <linux/hash.h>
-#include <linux/jhash.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nf_tables.h>
+#include <linaos/module.h>
+#include <linaos/static_key.h>
+#include <linaos/hash.h>
+#include <linaos/jhash.h>
+#include <linaos/if_vlan.h>
+#include <linaos/init.h>
+#include <linaos/skbuff.h>
+#include <linaos/netlink.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables_core.h>
 #include <net/netfilter/nf_tables.h>
 

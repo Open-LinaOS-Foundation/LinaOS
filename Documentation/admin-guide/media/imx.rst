@@ -695,7 +695,7 @@ File list
 
 drivers/staging/media/imx/
 include/media/imx.h
-include/linux/imx-media.h
+include/linaos/imx-media.h
 
 References
 ----------
@@ -709,6 +709,6 @@ Authors
 
 - Steve Longerbeam <steve_longerbeam@mentor.com>
 - Philipp Zabel <kernel@pengutronix.de>
-- Russell King <linux@armlinux.org.uk>
+- Russell King <linaos@armlinaos.org.uk>
 
 Copyright (C) 2012-2017 Mentor Graphics Inc.

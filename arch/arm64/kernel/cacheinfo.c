@@ -6,9 +6,9 @@
  *  All Rights Reserved
  */
 
-#include <linux/acpi.h>
-#include <linux/cacheinfo.h>
-#include <linux/of.h>
+#include <linaos/acpi.h>
+#include <linaos/cacheinfo.h>
+#include <linaos/of.h>
 
 #define MAX_CACHE_LEVEL			7	/* Max 7 level supported */
 /* Ctypen, bits[3(n - 1) + 2 : 3(n - 1)], for n = 1 to 7 */

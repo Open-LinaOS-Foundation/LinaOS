@@ -7,7 +7,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 /*
  * This table contains the complete RC5 code, instead of just the data part
  */

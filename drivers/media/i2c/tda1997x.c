@@ -2,19 +2,19 @@
 /*
  * Copyright (C) 2018 Gateworks Corporation
  */
-#include <linux/delay.h>
-#include <linux/hdmi.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/types.h>
-#include <linux/v4l2-dv-timings.h>
-#include <linux/videodev2.h>
+#include <linaos/delay.h>
+#include <linaos/hdmi.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_graph.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/types.h>
+#include <linaos/v4l2-dv-timings.h>
+#include <linaos/videodev2.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

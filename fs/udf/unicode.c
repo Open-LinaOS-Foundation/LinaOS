@@ -20,11 +20,11 @@
 
 #include "udfdecl.h"
 
-#include <linux/kernel.h>
-#include <linux/string.h>	/* for memset */
-#include <linux/nls.h>
-#include <linux/crc-itu-t.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>	/* for memset */
+#include <linaos/nls.h>
+#include <linaos/crc-itu-t.h>
+#include <linaos/slab.h>
 
 #include "udf_sb.h"
 

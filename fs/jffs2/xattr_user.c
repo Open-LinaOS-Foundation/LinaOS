@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/jffs2.h>
-#include <linux/xattr.h>
-#include <linux/mtd/mtd.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/jffs2.h>
+#include <linaos/xattr.h>
+#include <linaos/mtd/mtd.h>
 #include "nodelist.h"
 
 static int jffs2_user_getxattr(const struct xattr_handler *handler,

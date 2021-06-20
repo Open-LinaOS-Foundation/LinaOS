@@ -7,18 +7,18 @@
  * Copyright (C) 2008      John Poet
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/atomic.h>
+#include <linaos/usb.h>
+#include <linaos/mutex.h>
+#include <linaos/i2c.h>
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-common.h>
 

@@ -18,12 +18,12 @@
  * kernel; copyright (C) 2001-2003 Greg Kroah-Hartman (greg@kroah.com)
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/ktime.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/ktime.h>
+#include <linaos/usb.h>
+#include <linaos/usb/input.h>
 #include <media/rc-core.h>
 
 #define DRIVER_VERSION	"1.61"

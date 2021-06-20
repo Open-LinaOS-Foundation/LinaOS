@@ -6,10 +6,10 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/spinlock.h>
-#include <linux/mm_types.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm_types.h>
+#include <linaos/smp.h>
+#include <linaos/sched.h>
 
 #include <asm/spitfire.h>
 #include <asm/adi_64.h>

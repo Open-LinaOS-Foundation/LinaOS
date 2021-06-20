@@ -6,14 +6,14 @@
  * Copyright 2014 Linaro Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/gpio/driver.h>
-#include <linux/mutex.h>
-#include <linux/greybus.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/mutex.h>
+#include <linaos/greybus.h>
 
 #include "gbphy.h"
 

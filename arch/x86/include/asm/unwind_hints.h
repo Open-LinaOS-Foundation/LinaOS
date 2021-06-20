@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_UNWIND_HINTS_H
 #define _ASM_X86_UNWIND_HINTS_H
 
-#include <linux/objtool.h>
+#include <linaos/objtool.h>
 
 #include "orc_types.h"
 

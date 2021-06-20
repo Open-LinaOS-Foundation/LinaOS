@@ -9,7 +9,7 @@ can be downloaded from WD at:
 http://support.wdc.com/product/download.asp?groupid=801&sid=27&lang=en
 
 There is no license anywhere in the file or on the page - so the firmware
-probably cannot be added to linux-firmware.
+probably cannot be added to linaos-firmware.
 
 This script downloads and extracts the firmware, creating wd719x-risc.bin and
 d719x-wcs.bin files. Put them in /lib/firmware/::

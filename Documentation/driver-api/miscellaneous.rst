@@ -1,7 +1,7 @@
 Parallel Port Devices
 =====================
 
-.. kernel-doc:: include/linux/parport.h
+.. kernel-doc:: include/linaos/parport.h
    :internal:
 
 .. kernel-doc:: drivers/parport/ieee1284.c
@@ -42,7 +42,7 @@ active state of the signal.
 Note that PWM devices are exclusive resources: they can always only be
 used by one consumer at a time.
 
-.. kernel-doc:: include/linux/pwm.h
+.. kernel-doc:: include/linaos/pwm.h
    :internal:
 
 .. kernel-doc:: drivers/pwm/core.c

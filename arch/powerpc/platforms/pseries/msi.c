@@ -4,10 +4,10 @@
  * Copyright 2006-2007 Michael Ellerman, IBM Corp.
  */
 
-#include <linux/crash_dump.h>
-#include <linux/device.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
+#include <linaos/crash_dump.h>
+#include <linaos/device.h>
+#include <linaos/irq.h>
+#include <linaos/msi.h>
 
 #include <asm/rtas.h>
 #include <asm/hw_irq.h>

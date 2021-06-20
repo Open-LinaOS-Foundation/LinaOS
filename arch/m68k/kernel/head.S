@@ -1,7 +1,7 @@
 /* -*- mode: asm -*-
 **
 ** head.S -- This file contains the initial boot code for the
-**	     Linux/68k kernel.
+**	     LinaOS/68k kernel.
 **
 ** Copyright 1993 by Hamish Macdonald
 **
@@ -22,7 +22,7 @@
 **			      Magnum- and FX-alternate ram
 ** 98/04/25 Phil Blundell: added HP300 support
 ** 1998/08/30 David Kilzer: Added support for font_desc structures
-**            for linux-2.1.115
+**            for linaos-2.1.115
 ** 1999/02/11  Richard Zidlicky: added Q40 support (initial version 99/01/01)
 ** 2004/05/13 Kars de Jong: Finalised HP300 support
 **
@@ -33,7 +33,7 @@
 */
 
 /*
- * Linux startup code.
+ * LinaOS startup code.
  *
  * At this point, the boot loader has:
  * Disabled interrupts
@@ -165,7 +165,7 @@
  *
  * console_put_penguin
  * -------------------
- *	An important part of any Linux bring up is the penguin and there's
+ *	An important part of any LinaOS bring up is the penguin and there's
  * nothing like getting the Penguin on the screen!  This algorithm will work
  * on any machine for which there is a console_plot_pixel.
  *
@@ -253,9 +253,9 @@
  * MAC_USE_SCC_B: Use SCC port B (printer) for serial debug.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 #include <asm/bootinfo.h>
 #include <asm/bootinfo-amiga.h>
 #include <asm/bootinfo-atari.h>
@@ -907,7 +907,7 @@ L(nocon):
  *	mmu_init
  *
  *	This block of code does what's necessary to map in the various kinds
- *	of machines for execution of Linux.
+ *	of machines for execution of LinaOS.
  *	First map the first 4, 8, or 16 MB of kernel code & data
  */
 
@@ -2146,7 +2146,7 @@ func_start	mmu_map,%d0-%d4/%a0-%a4
  *
  *	The 040 does not support early terminating descriptors, as
  *	the 030 does.  Therefore, a third level of table is needed
- *	for the 040, and that would be the page table.  In Linux,
+ *	for the 040, and that would be the page table.  In LinaOS,
  *	page tables are allocated directly from the memory above the
  *	kernel.
  *

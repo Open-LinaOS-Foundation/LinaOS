@@ -6,10 +6,10 @@
  *   Author: Angelo Dureghello <angelo.dureghello@timesys.it>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/platform_data/mmc-esdhc-mcf.h>
-#include <linux/mmc/mmc.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/platform_data/mmc-esdhc-mcf.h>
+#include <linaos/mmc/mmc.h>
 #include "sdhci-pltfm.h"
 #include "sdhci-esdhc.h"
 

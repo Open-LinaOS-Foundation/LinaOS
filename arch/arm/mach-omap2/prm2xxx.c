@@ -9,11 +9,11 @@
  * Rajendra Nayak <rnayak@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
 
 #include "powerdomain.h"
 #include "clockdomain.h"

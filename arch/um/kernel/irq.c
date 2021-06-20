@@ -2,25 +2,25 @@
 /*
  * Copyright (C) 2017 - Cambridge Greys Ltd
  * Copyright (C) 2011 - 2014 Cisco Systems Inc
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  * Derived (i.e. mostly copied) from arch/i386/kernel/irq.c:
  *	Copyright (C) 1992, 1998 Linus Torvalds, Ingo Molnar
  */
 
-#include <linux/cpumask.h>
-#include <linux/hardirq.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linaos/cpumask.h>
+#include <linaos/hardirq.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
 #include <as-layout.h>
 #include <kern_util.h>
 #include <os.h>
 #include <irq_user.h>
 #include <irq_kern.h>
-#include <linux/time-internal.h>
+#include <linaos/time-internal.h>
 
 
 extern void free_irqs(void);

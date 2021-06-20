@@ -5,16 +5,16 @@
  *  Copyright (C) 2004 Aurelien Alleaume <slts@free.fr>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 #include "pvrusb2-context.h"
 #include "pvrusb2-hdw.h"
 #include "pvrusb2.h"
 #include "pvrusb2-debug.h"
 #include "pvrusb2-v4l2.h"
 #include "pvrusb2-ioread.h"
-#include <linux/videodev2.h>
-#include <linux/module.h>
+#include <linaos/videodev2.h>
+#include <linaos/module.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-fh.h>
@@ -104,7 +104,7 @@ static struct v4l2_format pvr_format [] = {
 
 
 /*
- * This is part of Video 4 Linux API. These procedures handle ioctl() calls.
+ * This is part of Video 4 LinaOS API. These procedures handle ioctl() calls.
  */
 static int pvr2_querycap(struct file *file, void *priv, struct v4l2_capability *cap)
 {

@@ -5,11 +5,11 @@
  * Copyright (C) 2006-2018 Oracle Corporation
  */
 
-#include <linux/mm.h>
-#include <linux/page-flags.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/sizes.h>
+#include <linaos/mm.h>
+#include <linaos/page-flags.h>
+#include <linaos/pagemap.h>
+#include <linaos/highmem.h>
+#include <linaos/sizes.h>
 #include "vfsmod.h"
 
 struct vboxsf_handle {
@@ -44,7 +44,7 @@ static int vboxsf_file_open(struct inode *inode, struct file *file)
 	if (file->f_flags & O_CREAT) {
 		params.create_flags |= SHFL_CF_ACT_CREATE_IF_NEW;
 		/*
-		 * We ignore O_EXCL, as the Linux kernel seems to call create
+		 * We ignore O_EXCL, as the LinaOS kernel seems to call create
 		 * beforehand itself, so O_EXCL should always fail.
 		 */
 		if (file->f_flags & O_TRUNC)

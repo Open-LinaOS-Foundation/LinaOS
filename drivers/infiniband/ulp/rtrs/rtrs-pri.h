@@ -10,7 +10,7 @@
 #ifndef RTRS_PRI_H
 #define RTRS_PRI_H
 
-#include <linux/uuid.h>
+#include <linaos/uuid.h>
 #include <rdma/rdma_cm.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/ib.h>
@@ -178,7 +178,7 @@ struct rtrs_sg_desc {
  */
 struct rtrs_msg_conn_req {
 	/* Is set to 0 by cma.c in case of AF_IB, do not touch that.
-	 * see https://www.spinics.net/lists/linux-rdma/msg22397.html
+	 * see https://www.spinics.net/lists/linaos-rdma/msg22397.html
 	 */
 	u8		__cma_version;
 	/* On sender side that should be set to 0, or cma_save_ip_info()

@@ -2,7 +2,7 @@
 #ifndef _LINUX_IRQNR_H
 #define _LINUX_IRQNR_H
 
-#include <uapi/linux/irqnr.h>
+#include <uapi/linaos/irqnr.h>
 
 
 extern int nr_irqs;

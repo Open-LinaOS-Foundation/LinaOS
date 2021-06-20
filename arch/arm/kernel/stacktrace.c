@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/stacktrace.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/stacktrace.h>
 
 #include <asm/sections.h>
 #include <asm/stacktrace.h>

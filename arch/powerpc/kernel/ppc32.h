@@ -2,7 +2,7 @@
 #ifndef _PPC64_PPC32_H
 #define _PPC64_PPC32_H
 
-#include <linux/compat.h>
+#include <linaos/compat.h>
 #include <asm/siginfo.h>
 #include <asm/signal.h>
 

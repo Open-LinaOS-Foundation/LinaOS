@@ -9,15 +9,15 @@
 #include <sys/syscall.h>
 #include <errno.h>
 #include <string.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <sys/socket.h>
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
 #include <sys/ioctl.h>
-#include <linux/rtnetlink.h>
+#include <linaos/rtnetlink.h>
 #include <signal.h>
-#include <linux/perf_event.h>
-#include <linux/err.h>
+#include <linaos/perf_event.h>
+#include <linaos/err.h>
 
 #include "bpf_rlimit.h"
 #include "bpf_util.h"

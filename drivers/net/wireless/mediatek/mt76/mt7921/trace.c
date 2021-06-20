@@ -3,7 +3,7 @@
  * Copyright (C) 2021 Lorenzo Bianconi <lorenzo@kernel.org>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #ifndef __CHECKER__
 #define CREATE_TRACE_POINTS

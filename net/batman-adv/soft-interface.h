@@ -9,9 +9,9 @@
 
 #include "main.h"
 
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/types.h>
 #include <net/net_namespace.h>
 #include <net/rtnetlink.h>
 

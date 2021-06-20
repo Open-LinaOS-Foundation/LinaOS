@@ -9,9 +9,9 @@
  */
 #define pr_fmt(fmt) "intc: " fmt
 
-#include <linux/irqdomain.h>
-#include <linux/sh_intc.h>
-#include <linux/export.h>
+#include <linaos/irqdomain.h>
+#include <linaos/sh_intc.h>
+#include <linaos/export.h>
 #include "internals.h"
 
 /**

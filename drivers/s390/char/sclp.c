@@ -8,18 +8,18 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/reboot.h>
-#include <linux/jiffies.h>
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/completion.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/timer.h>
+#include <linaos/reboot.h>
+#include <linaos/jiffies.h>
+#include <linaos/init.h>
+#include <linaos/suspend.h>
+#include <linaos/completion.h>
+#include <linaos/platform_device.h>
 #include <asm/types.h>
 #include <asm/irq.h>
 

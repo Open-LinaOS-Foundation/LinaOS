@@ -1,7 +1,7 @@
 What:		/sys/bus/event_source/devices/dsa*/format
 Date:		April 2021
 KernelVersion:  5.13
-Contact:	Tom Zanussi <tom.zanussi@linux.intel.com>
+Contact:	Tom Zanussi <tom.zanussi@linaos.intel.com>
 Description:	Read-only.  Attribute group to describe the magic bits
 		that go into perf_event_attr.config or
 		perf_event_attr.config1 for the IDXD DSA pmu.  (See also
@@ -24,7 +24,7 @@ Description:	Read-only.  Attribute group to describe the magic bits
 What:		/sys/bus/event_source/devices/dsa*/cpumask
 Date:		April 2021
 KernelVersion:  5.13
-Contact:	Tom Zanussi <tom.zanussi@linux.intel.com>
+Contact:	Tom Zanussi <tom.zanussi@linaos.intel.com>
 Description:    Read-only.  This file always returns the cpu to which the
                 IDXD DSA pmu is bound for access to all dsa pmu
 		performance monitoring events.

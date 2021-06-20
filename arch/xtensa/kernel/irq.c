@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/xtensa/kernel/irq.c
+ * linaos/arch/xtensa/kernel/irq.c
  *
  * Xtensa built-in interrupt controller and some generic functions copied
  * from i386.
@@ -14,19 +14,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel_stat.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/xtensa-mx.h>
-#include <linux/irqchip/xtensa-pic.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/xtensa-mx.h>
+#include <linaos/irqchip/xtensa-pic.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of.h>
 
 #include <asm/mxregs.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/platform.h>
 
 DECLARE_PER_CPU(unsigned long, nmi_count);

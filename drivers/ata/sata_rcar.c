@@ -7,14 +7,14 @@
  * Copyright (C) 2013-2015 Renesas Solutions Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/ata.h>
+#include <linaos/libata.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/err.h>
 
 #define DRV_NAME "sata_rcar"
 

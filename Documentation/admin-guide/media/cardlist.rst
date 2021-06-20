@@ -15,7 +15,7 @@ The PCI and USB drivers, however, are independent of the system's board,
 and may be added/removed by the user.
 
 You may also take a look at
-https://linuxtv.org/wiki/index.php/Hardware_Device_Information
+https://linaostv.org/wiki/index.php/Hardware_Device_Information
 for more details about supported cards.
 
 .. toctree::

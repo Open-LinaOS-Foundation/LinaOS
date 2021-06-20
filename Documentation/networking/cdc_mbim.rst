@@ -136,8 +136,8 @@ userspace.
 	#include <stdio.h>
 	#include <fcntl.h>
 	#include <sys/ioctl.h>
-	#include <linux/types.h>
-	#include <linux/usb/cdc-wdm.h>
+	#include <linaos/types.h>
+	#include <linaos/usb/cdc-wdm.h>
 	int main()
 	{
 		__u16 max;

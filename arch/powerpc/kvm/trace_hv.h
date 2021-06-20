@@ -2,7 +2,7 @@
 #if !defined(_TRACE_KVM_HV_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_KVM_HV_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "trace_book3s.h"
 #include <asm/hvcall.h>
 #include <asm/kvm_asm.h>

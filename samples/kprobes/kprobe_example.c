@@ -10,9 +10,9 @@
  * whenever kernel_clone() is invoked to create a new process.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kprobes.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kprobes.h>
 
 #define MAX_SYMBOL_LEN	64
 static char symbol[MAX_SYMBOL_LEN] = "kernel_clone";

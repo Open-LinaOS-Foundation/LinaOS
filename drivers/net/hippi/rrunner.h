@@ -2,7 +2,7 @@
 #ifndef _RRUNNER_H_
 #define _RRUNNER_H_
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #if ((BITS_PER_LONG != 32) && (BITS_PER_LONG != 64))
 #error "BITS_PER_LONG not defined or not valid"
@@ -791,7 +791,7 @@ struct rr_info {
 };
 
 /*
- * The linux structure for the RoadRunner.
+ * The linaos structure for the RoadRunner.
  *
  * RX/TX descriptors are put first to make sure they are properly
  * aligned and do not cross cache-line boundaries.

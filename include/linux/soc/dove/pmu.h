@@ -2,7 +2,7 @@
 #ifndef LINUX_SOC_DOVE_PMU_H
 #define LINUX_SOC_DOVE_PMU_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct dove_pmu_domain_initdata {
 	u32 pwr_mask;

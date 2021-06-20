@@ -9,7 +9,7 @@
 #include <asm/sections.h>
 #include <asm/alternative.h>
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static int no_alternatives;
 static int __init setup_no_alternatives(char *str)

@@ -3,15 +3,15 @@
  *
  * Copyright (c) 2017 Jesper Dangaard Brouer, Red Hat Inc.
  */
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/rhashtable.h>
-#include <linux/bug.h>
+#include <linaos/bpf.h>
+#include <linaos/filter.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/netdevice.h>
+#include <linaos/slab.h>
+#include <linaos/idr.h>
+#include <linaos/rhashtable.h>
+#include <linaos/bug.h>
 #include <net/page_pool.h>
 
 #include <net/xdp.h>

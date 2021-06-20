@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2020 Intel Corporation. All rights reserved. */
-#include <linux/device.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
 
 /**
  * DOC: cxl bus

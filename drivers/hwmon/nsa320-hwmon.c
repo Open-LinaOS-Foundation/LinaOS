@@ -5,24 +5,24 @@
  * ZyXEL NSA320 Media Servers
  * hardware monitoring
  *
- * Copyright (C) 2016 Adam Baker <linux@baker-net.org.uk>
+ * Copyright (C) 2016 Adam Baker <linaos@baker-net.org.uk>
  * based on a board file driver
- * Copyright (C) 2012 Peter Schildmann <linux@schildmann.info>
+ * Copyright (C) 2012 Peter Schildmann <linaos@schildmann.info>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
 
 /* Tests for error return values rely upon this value being < 0x80 */
 #define MAGIC_NUMBER 0x55
@@ -200,8 +200,8 @@ static struct platform_driver nsa320_hwmon_driver = {
 module_platform_driver(nsa320_hwmon_driver);
 
 MODULE_DEVICE_TABLE(of, of_nsa320_hwmon_match);
-MODULE_AUTHOR("Peter Schildmann <linux@schildmann.info>");
-MODULE_AUTHOR("Adam Baker <linux@baker-net.org.uk>");
+MODULE_AUTHOR("Peter Schildmann <linaos@schildmann.info>");
+MODULE_AUTHOR("Adam Baker <linaos@baker-net.org.uk>");
 MODULE_DESCRIPTION("NSA320 Hardware Monitoring");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:nsa320-hwmon");

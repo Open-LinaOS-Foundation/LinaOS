@@ -6,7 +6,7 @@
 #ifndef __LINUX_NET_XDP_H__
 #define __LINUX_NET_XDP_H__
 
-#include <linux/skbuff.h> /* skb_shared_info */
+#include <linaos/skbuff.h> /* skb_shared_info */
 
 /**
  * DOC: XDP RX-queue information

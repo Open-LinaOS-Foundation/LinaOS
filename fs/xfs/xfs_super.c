@@ -37,9 +37,9 @@
 #include "xfs_reflink.h"
 #include "xfs_pwork.h"
 
-#include <linux/magic.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
+#include <linaos/magic.h>
+#include <linaos/fs_context.h>
+#include <linaos/fs_parser.h>
 
 static const struct super_operations xfs_super_operations;
 
@@ -630,7 +630,7 @@ xfs_check_delalloc(
 
 /*
  * Now that the generic code is guaranteed not to be accessing
- * the linux inode, we can inactivate and reclaim the inode.
+ * the linaos inode, we can inactivate and reclaim the inode.
  */
 STATIC void
 xfs_fs_destroy_inode(

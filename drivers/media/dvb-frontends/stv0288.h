@@ -15,7 +15,7 @@
 #ifndef STV0288_H
 #define STV0288_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 #include <media/dvb_frontend.h>
 
 struct stv0288_config {

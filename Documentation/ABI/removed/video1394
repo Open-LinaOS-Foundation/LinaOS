@@ -1,6 +1,6 @@
 What:		video1394 (a.k.a. "OHCI-1394 Video support" for FireWire)
 Date:		May 2010 (scheduled), finally removed in kernel v2.6.37
-Contact:	linux1394-devel@lists.sourceforge.net
+Contact:	linaos1394-devel@lists.sourceforge.net
 Description:
 	/dev/video1394/* were character device files, one for each FireWire
 	controller, which were used for isochronous I/O.  It was added as an
@@ -9,7 +9,7 @@ Description:
 	to use raw1394 + libraw1394 too because video1394 did not provide
 	asynchronous I/O for device discovery and configuration.
 
-	Replaced by /dev/fw*, i.e. the <linux/firewire-cdev.h> ABI of
+	Replaced by /dev/fw*, i.e. the <linaos/firewire-cdev.h> ABI of
 	firewire-core.
 
 Users:

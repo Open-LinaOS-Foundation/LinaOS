@@ -150,14 +150,14 @@
 		btn3 {
 			label = "Button 3";
 			gpios = <&pioA 30 GPIO_ACTIVE_LOW>;
-			linux,code = <0x103>;
+			linaos,code = <0x103>;
 			wakeup-source;
 		};
 
 		btn4 {
 			label = "Button 4";
 			gpios = <&pioA 31 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_PROG1>;
+			linaos,code = <KEY_PROG1>;
 			wakeup-source;
 		};
 	};
@@ -177,7 +177,7 @@
 		ds1 {
 			label = "ds1";
 			gpios = <&pioA 9 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		ds5 {

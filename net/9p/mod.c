@@ -11,17 +11,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/moduleparam.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/moduleparam.h>
 #include <net/9p/9p.h>
-#include <linux/fs.h>
-#include <linux/parser.h>
+#include <linaos/fs.h>
+#include <linaos/parser.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
 
 #ifdef CONFIG_NET_9P_DEBUG
 unsigned int p9_debug_level = 0;	/* feature-rific global debug level  */

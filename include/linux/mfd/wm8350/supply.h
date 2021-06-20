@@ -8,8 +8,8 @@
 #ifndef __LINUX_MFD_WM8350_SUPPLY_H_
 #define __LINUX_MFD_WM8350_SUPPLY_H_
 
-#include <linux/mutex.h>
-#include <linux/power_supply.h>
+#include <linaos/mutex.h>
+#include <linaos/power_supply.h>
 
 /*
  * Charger registers

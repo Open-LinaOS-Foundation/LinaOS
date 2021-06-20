@@ -10,8 +10,8 @@
 #ifndef __AA_SECID_H
 #define __AA_SECID_H
 
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 struct aa_label;
 

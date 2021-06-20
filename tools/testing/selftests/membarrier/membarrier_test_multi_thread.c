@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #define _GNU_SOURCE
-#include <linux/membarrier.h>
+#include <linaos/membarrier.h>
 #include <syscall.h>
 #include <stdio.h>
 #include <errno.h>

@@ -7,11 +7,11 @@
 
 #include "bcm47xxnflash.h"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/bcma/bcma.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/bcma/bcma.h>
 
 MODULE_DESCRIPTION("NAND flash driver for BCMA bus");
 MODULE_LICENSE("GPL");

@@ -23,11 +23,11 @@
 
 #define NO_SYNC 25
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/parport.h>
-#include <linux/input.h>
-#include <linux/hrtimer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/parport.h>
+#include <linaos/input.h>
+#include <linaos/hrtimer.h>
 
 MODULE_AUTHOR("Peter Popovec <popovec@fei.tuke.sk>");
 MODULE_DESCRIPTION("Walkera WK-0701 TX as joystick");

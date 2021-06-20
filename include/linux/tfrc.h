@@ -10,7 +10,7 @@
  *  Copyright (c) 2005 Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  *  Copyright (c) 2003 Nils-Erik Mattsson, Joacim Haggmark, Magnus Erixzon
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /** 	tfrc_rx_info    -    TFRC Receiver Data Structure
  *

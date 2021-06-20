@@ -8,20 +8,20 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/random.h>
-#include <linux/blkdev.h>
-#include <linux/socket.h>
-#include <linux/inet.h>
-#include <linux/timer.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/highmem.h>
+#include <linaos/init.h>
+#include <linaos/sysctl.h>
+#include <linaos/random.h>
+#include <linaos/blkdev.h>
+#include <linaos/socket.h>
+#include <linaos/inet.h>
+#include <linaos/timer.h>
+#include <linaos/kthread.h>
+#include <linaos/delay.h>
 
 
 #include "../cluster/heartbeat.h"

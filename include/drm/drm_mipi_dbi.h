@@ -8,7 +8,7 @@
 #ifndef __LINUX_MIPI_DBI_H
 #define __LINUX_MIPI_DBI_H
 
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 #include <drm/drm_device.h>
 #include <drm/drm_simple_kms_helper.h>
 

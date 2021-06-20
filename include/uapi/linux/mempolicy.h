@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * NUMA memory policies for Linux.
+ * NUMA memory policies for LinaOS.
  * Copyright 2003,2004 Andi Kleen SuSE Labs
  */
 #ifndef _UAPI_LINUX_MEMPOLICY_H
 #define _UAPI_LINUX_MEMPOLICY_H
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 
 /*

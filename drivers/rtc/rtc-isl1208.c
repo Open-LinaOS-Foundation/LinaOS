@@ -5,12 +5,12 @@
  * Copyright 2005,2006 Hebert Valerio Riedel <hvr@gnu.org>
  */
 
-#include <linux/bcd.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/rtc.h>
 
 /* Register map */
 /* rtc section */

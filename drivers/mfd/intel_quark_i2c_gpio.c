@@ -9,16 +9,16 @@
  * respective drivers.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/mfd/core.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/gpio-dwapb.h>
-#include <linux/property.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/mfd/core.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/dmi.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/gpio-dwapb.h>
+#include <linaos/property.h>
 
 /* PCI BAR for register base address */
 #define MFD_I2C_BAR		0

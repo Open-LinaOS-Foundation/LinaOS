@@ -6,7 +6,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -30,12 +30,12 @@
 
 #include "common.h"
 
-#include <linux/kthread.h>
-#include <linux/sched/task.h>
-#include <linux/ethtool.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
-#include <linux/vmalloc.h>
+#include <linaos/kthread.h>
+#include <linaos/sched/task.h>
+#include <linaos/ethtool.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/if_vlan.h>
+#include <linaos/vmalloc.h>
 
 #include <xen/events.h>
 #include <asm/xen/hypercall.h>

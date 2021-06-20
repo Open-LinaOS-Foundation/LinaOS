@@ -11,12 +11,12 @@
  *   Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/reset.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/reset.h>
 
 #include "pinctrl-sunxi.h"
 

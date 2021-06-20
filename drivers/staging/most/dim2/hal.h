@@ -9,7 +9,7 @@
 #ifndef _DIM2_HAL_H
 #define _DIM2_HAL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "reg.h"
 
 /*

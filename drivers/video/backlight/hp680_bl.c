@@ -10,13 +10,13 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/fb.h>
+#include <linaos/backlight.h>
 
 #include <cpu/dac.h>
 #include <mach/hp6xx.h>

@@ -86,9 +86,9 @@ receives information about the packet that triggered the socket lookup. Namely:
 * source and destination L4 port,
 * the socket that has been selected with ``bpf_sk_assign()``.
 
-Refer to ``struct bpf_sk_lookup`` declaration in ``linux/bpf.h`` user API
+Refer to ``struct bpf_sk_lookup`` declaration in ``linaos/bpf.h`` user API
 header, and `bpf-helpers(7)
-<https://man7.org/linux/man-pages/man7/bpf-helpers.7.html>`_ man-page section
+<https://man7.org/linaos/man-pages/man7/bpf-helpers.7.html>`_ man-page section
 for ``bpf_sk_assign()`` for details.
 
 Example

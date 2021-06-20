@@ -7,10 +7,10 @@
  */
 
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/of.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/of.h>
 
 #include <asm/io.h>
 #include <asm/prom.h>

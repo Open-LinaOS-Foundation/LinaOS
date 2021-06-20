@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 # 
-# Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+# Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
 #
 
 # Don't instrument UML-specific code

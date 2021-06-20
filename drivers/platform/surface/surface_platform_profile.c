@@ -7,12 +7,12 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_profile.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_profile.h>
+#include <linaos/types.h>
 
-#include <linux/surface_aggregator/device.h>
+#include <linaos/surface_aggregator/device.h>
 
 enum ssam_tmp_profile {
 	SSAM_TMP_PROFILE_NORMAL             = 1,

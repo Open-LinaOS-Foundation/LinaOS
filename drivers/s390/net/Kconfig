@@ -22,7 +22,7 @@ config CTCM
 	  This device driver supports real CTC coupling using ESCON.
 	  It also supports virtual CTCs when running under VM.
 	  This driver also supports channel-to-channel MPC SNA devices.
-	  MPC is an SNA protocol device used by Communication Server for Linux.
+	  MPC is an SNA protocol device used by Communication Server for LinaOS.
 	  To compile as a module, choose M. The module name is ctcm.
 	  To compile into the kernel, choose Y.
 	  If you do not need any channel-to-channel connection, choose N.
@@ -35,7 +35,7 @@ config NETIUCV
 	  Select this option if you want to use inter-user communication
 	  vehicle networking under VM or VIF. It enables a fast communication
 	  link between VM guests. Using ifconfig a point-to-point connection
-	  can be established to the Linux on IBM System z
+	  can be established to the LinaOS on IBM System z
 	  running on the other VM guest. To compile as a module, choose M.
 	  The module name is netiucv. If unsure, choose Y.
 

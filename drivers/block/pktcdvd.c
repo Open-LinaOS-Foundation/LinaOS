@@ -4,7 +4,7 @@
  * Copyright (C) 2006 Thomas Maier <balagi@justmail.de>
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See linaos/COPYING for more information.
  *
  * Packet writing layer for ATAPI and SCSI CD-RW, DVD+RW, DVD-RW and
  * DVD-RAM devices.
@@ -46,29 +46,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/pktcdvd.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/compat.h>
-#include <linux/kthread.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/file.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/miscdevice.h>
-#include <linux/freezer.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/backing-dev.h>
+#include <linaos/pktcdvd.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/compat.h>
+#include <linaos/kthread.h>
+#include <linaos/errno.h>
+#include <linaos/spinlock.h>
+#include <linaos/file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/miscdevice.h>
+#include <linaos/freezer.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/backing-dev.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_ioctl.h>
 #include <scsi/scsi.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/nospec.h>
-#include <linux/uaccess.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/nospec.h>
+#include <linaos/uaccess.h>
 
 #define DRIVER_NAME	"pktcdvd"
 

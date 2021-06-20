@@ -8,15 +8,15 @@
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/mmci.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
+#include <linaos/amba/bus.h>
+#include <linaos/amba/mmci.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

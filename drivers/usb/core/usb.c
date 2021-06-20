@@ -23,26 +23,26 @@
  * with no callbacks.  Callbacks are evil.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/usb/of.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/string.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/kmod.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/mutex.h>
+#include <linaos/workqueue.h>
+#include <linaos/debugfs.h>
+#include <linaos/usb/of.h>
 
 #include <asm/io.h>
-#include <linux/scatterlist.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
+#include <linaos/scatterlist.h>
+#include <linaos/mm.h>
+#include <linaos/dma-mapping.h>
 
 #include "hub.h"
 

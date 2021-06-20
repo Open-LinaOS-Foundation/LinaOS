@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/nfs_fs.h
+ *  linaos/include/linaos/nfs_fs.h
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -9,7 +9,7 @@
 #ifndef _LINUX_NFS_FS_H
 #define _LINUX_NFS_FS_H
 
-#include <uapi/linux/nfs_fs.h>
+#include <uapi/linaos/nfs_fs.h>
 
 
 /*
@@ -19,26 +19,26 @@
 # define NFS_DEBUG
 #endif
 
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/rbtree.h>
-#include <linux/refcount.h>
-#include <linux/rwsem.h>
-#include <linux/wait.h>
+#include <linaos/in.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/rbtree.h>
+#include <linaos/refcount.h>
+#include <linaos/rwsem.h>
+#include <linaos/wait.h>
 
-#include <linux/sunrpc/debug.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/clnt.h>
+#include <linaos/sunrpc/debug.h>
+#include <linaos/sunrpc/auth.h>
+#include <linaos/sunrpc/clnt.h>
 
-#include <linux/nfs.h>
-#include <linux/nfs2.h>
-#include <linux/nfs3.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_xdr.h>
-#include <linux/nfs_fs_sb.h>
+#include <linaos/nfs.h>
+#include <linaos/nfs2.h>
+#include <linaos/nfs3.h>
+#include <linaos/nfs4.h>
+#include <linaos/nfs_xdr.h>
+#include <linaos/nfs_fs_sb.h>
 
-#include <linux/mempool.h>
+#include <linaos/mempool.h>
 
 /*
  * These are the default flags for swap requests
@@ -369,7 +369,7 @@ static inline unsigned long nfs_save_change_attribute(struct inode *dir)
 }
 
 /*
- * linux/fs/nfs/inode.c
+ * linaos/fs/nfs/inode.c
  */
 extern int nfs_sync_mapping(struct address_space *mapping);
 extern void nfs_zap_mapping(struct inode *inode, struct address_space *mapping);
@@ -452,14 +452,14 @@ static inline void nfs_display_fhandle(const struct nfs_fh *fh,
 #endif
 
 /*
- * linux/fs/nfs/nfsroot.c
+ * linaos/fs/nfs/nfsroot.c
  */
 extern int  nfs_root_data(char **root_device, char **root_data); /*__init*/
-/* linux/net/ipv4/ipconfig.c: trims ip addr off front of name, too. */
+/* linaos/net/ipv4/ipconfig.c: trims ip addr off front of name, too. */
 extern __be32 root_nfs_parse_addr(char *name); /*__init*/
 
 /*
- * linux/fs/nfs/file.c
+ * linaos/fs/nfs/file.c
  */
 extern const struct file_operations nfs_file_operations;
 #if IS_ENABLED(CONFIG_NFS_V4)
@@ -485,7 +485,7 @@ static inline const struct cred *nfs_file_cred(struct file *file)
 }
 
 /*
- * linux/fs/nfs/direct.c
+ * linaos/fs/nfs/direct.c
  */
 extern ssize_t nfs_direct_IO(struct kiocb *, struct iov_iter *);
 extern ssize_t nfs_file_direct_read(struct kiocb *iocb,
@@ -494,7 +494,7 @@ extern ssize_t nfs_file_direct_write(struct kiocb *iocb,
 			struct iov_iter *iter);
 
 /*
- * linux/fs/nfs/dir.c
+ * linaos/fs/nfs/dir.c
  */
 extern const struct file_operations nfs_dir_operations;
 extern const struct dentry_operations nfs_dentry_operations;
@@ -515,12 +515,12 @@ extern int nfs_access_get_cached(struct inode *inode, const struct cred *cred, s
 				 bool may_block);
 
 /*
- * linux/fs/nfs/symlink.c
+ * linaos/fs/nfs/symlink.c
  */
 extern const struct inode_operations nfs_symlink_inode_operations;
 
 /*
- * linux/fs/nfs/sysctl.c
+ * linaos/fs/nfs/sysctl.c
  */
 #ifdef CONFIG_SYSCTL
 extern int nfs_register_sysctl(void);
@@ -531,7 +531,7 @@ extern void nfs_unregister_sysctl(void);
 #endif
 
 /*
- * linux/fs/nfs/namespace.c
+ * linaos/fs/nfs/namespace.c
  */
 extern const struct inode_operations nfs_mountpoint_inode_operations;
 extern const struct inode_operations nfs_referral_inode_operations;
@@ -539,12 +539,12 @@ extern int nfs_mountpoint_expiry_timeout;
 extern void nfs_release_automount_timer(void);
 
 /*
- * linux/fs/nfs/unlink.c
+ * linaos/fs/nfs/unlink.c
  */
 extern void nfs_complete_unlink(struct dentry *dentry, struct inode *);
 
 /*
- * linux/fs/nfs/write.c
+ * linaos/fs/nfs/write.c
  */
 extern int  nfs_congestion_kb;
 extern int  nfs_writepage(struct page *page, struct writeback_control *wbc);
@@ -571,7 +571,7 @@ nfs_have_writebacks(struct inode *inode)
 }
 
 /*
- * linux/fs/nfs/read.c
+ * linaos/fs/nfs/read.c
  */
 extern int  nfs_readpage(struct file *, struct page *);
 extern int  nfs_readpages(struct file *, struct address_space *,

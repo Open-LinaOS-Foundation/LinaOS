@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-h3-mmc.c
+ * linaos/arch/arm/mach-omap1/board-h3-mmc.c
  *
  * Copyright (C) 2007 Instituto Nokia de Tecnologia - INdT
  * Author: Felipe Balbi <felipe.lima@indt.org.br>
  *
- * This code is based on linux/arch/arm/mach-omap2/board-n800-mmc.c, which is:
+ * This code is based on linaos/arch/arm/mach-omap2/board-n800-mmc.c, which is:
  * Copyright (C) 2006 Nokia Corporation
  */
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/platform_device.h>
 
-#include <linux/mfd/tps65010.h>
+#include <linaos/mfd/tps65010.h>
 
 #include "common.h"
 #include "board-h3.h"

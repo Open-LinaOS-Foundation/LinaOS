@@ -8,12 +8,12 @@
  * Funded by: Volkswagen Group Research
  */
 
-#include <linux/delay.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
+#include <linaos/delay.h>
+#include <linaos/if_ether.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_arp.h>
+#include <linaos/etherdevice.h>
+#include <linaos/rtnetlink.h>
 #include <net/mac80211.h>
 #include <asm/unaligned.h>
 

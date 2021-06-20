@@ -1700,7 +1700,7 @@ struct vxge_hw_device_stats_sw_err {
  *                space.
  * @hw_info_dma_acch: One more DMA handle used subsequently to free the
  *                    DMA object. Note that this and the previous handle have
- *                    physical meaning for Solaris; on Windows and Linux the
+ *                    physical meaning for Solaris; on Windows and LinaOS the
  *                    corresponding value will be simply pointer to PCI device.
  *
  * @hw_dev_info_stats: Titan statistics maintained by the hardware.

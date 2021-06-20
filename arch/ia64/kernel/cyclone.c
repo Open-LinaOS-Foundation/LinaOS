@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/time.h>
-#include <linux/errno.h>
-#include <linux/timex.h>
-#include <linux/clocksource.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/smp.h>
+#include <linaos/time.h>
+#include <linaos/errno.h>
+#include <linaos/timex.h>
+#include <linaos/clocksource.h>
+#include <linaos/io.h>
 
 /* IBM Summit (EXA) Cyclone counter code*/
 #define CYCLONE_CBAR_ADDR 0xFEB00CD0

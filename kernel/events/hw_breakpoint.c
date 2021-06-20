@@ -7,7 +7,7 @@
  * Thanks to Ingo Molnar for his many suggestions.
  *
  * Authors: Alan Stern <stern@rowland.harvard.edu>
- *          K.Prasad <prasad@linux.vnet.ibm.com>
+ *          K.Prasad <prasad@linaos.vnet.ibm.com>
  *          Frederic Weisbecker <fweisbec@gmail.com>
  */
 
@@ -17,23 +17,23 @@
  * This file contains the arch-independent routines.
  */
 
-#include <linux/irqflags.h>
-#include <linux/kallsyms.h>
-#include <linux/notifier.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/bug.h>
+#include <linaos/irqflags.h>
+#include <linaos/kallsyms.h>
+#include <linaos/notifier.h>
+#include <linaos/kprobes.h>
+#include <linaos/kdebug.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/percpu.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/cpu.h>
+#include <linaos/smp.h>
+#include <linaos/bug.h>
 
-#include <linux/hw_breakpoint.h>
+#include <linaos/hw_breakpoint.h>
 /*
  * Constraints data
  */

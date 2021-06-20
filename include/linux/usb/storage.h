@@ -3,7 +3,7 @@
 #define __LINUX_USB_STORAGE_H
 
 /*
- * linux/usb/storage.h
+ * linaos/usb/storage.h
  *
  * Copyright Matthew Wilcox for Intel Corp, 2010
  *

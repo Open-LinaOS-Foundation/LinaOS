@@ -4,11 +4,11 @@
  * is enabled.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
-#include <linux/mtd/map.h>
-#include <linux/mtd/xip.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/xip.h>
 
 static map_word __xipram simple_map_read(struct map_info *map, unsigned long ofs)
 {

@@ -3,7 +3,7 @@
 // Copyright (c) 2009 Samsung Electronics Co. Ltd
 // Author: Jaswinder Singh <jassisinghbrar@gmail.com>
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 

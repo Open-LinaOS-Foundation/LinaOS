@@ -4,12 +4,12 @@
  *
  * Copyright © 2009 Paul Mackerras, IBM Corporation.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/perf_event.h>
-#include <linux/percpu.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/perf_event.h>
+#include <linaos/percpu.h>
+#include <linaos/uaccess.h>
+#include <linaos/mm.h>
 #include <asm/ptrace.h>
 #include <asm/sigcontext.h>
 #include <asm/ucontext.h>

@@ -10,14 +10,14 @@
  * Author: Dongsoo Nathaniel Kim <dongsoo45.kim@samsung.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/videodev2.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-subdev.h>

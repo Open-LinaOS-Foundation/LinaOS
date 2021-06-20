@@ -32,7 +32,7 @@
 #ifndef __QED_HSI_RDMA__
 #define __QED_HSI_RDMA__
 
-#include <linux/qed/rdma_common.h>
+#include <linaos/qed/rdma_common.h>
 
 /* rdma completion notification queue element */
 struct rdma_cnqe {

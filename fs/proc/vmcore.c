@@ -8,25 +8,25 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/kcore.h>
-#include <linux/user.h>
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/printk.h>
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/crash_dump.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/uaccess.h>
-#include <linux/mem_encrypt.h>
+#include <linaos/mm.h>
+#include <linaos/kcore.h>
+#include <linaos/user.h>
+#include <linaos/elf.h>
+#include <linaos/elfcore.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/highmem.h>
+#include <linaos/printk.h>
+#include <linaos/memblock.h>
+#include <linaos/init.h>
+#include <linaos/crash_dump.h>
+#include <linaos/list.h>
+#include <linaos/moduleparam.h>
+#include <linaos/mutex.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pagemap.h>
+#include <linaos/uaccess.h>
+#include <linaos/mem_encrypt.h>
 #include <asm/io.h>
 #include "internal.h"
 

@@ -1,12 +1,12 @@
 #ifndef __LINUX_UMH_H__
 #define __LINUX_UMH_H__
 
-#include <linux/gfp.h>
-#include <linux/stddef.h>
-#include <linux/errno.h>
-#include <linux/compiler.h>
-#include <linux/workqueue.h>
-#include <linux/sysctl.h>
+#include <linaos/gfp.h>
+#include <linaos/stddef.h>
+#include <linaos/errno.h>
+#include <linaos/compiler.h>
+#include <linaos/workqueue.h>
+#include <linaos/sysctl.h>
 
 struct cred;
 struct file;

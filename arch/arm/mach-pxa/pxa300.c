@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/pxa300.c
+ * linaos/arch/arm/mach-pxa/pxa300.c
  *
  * Code specific to PXA300/PXA310
  *
@@ -10,10 +10,10 @@
  *             initial version
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
 
 #include "pxa300.h"
 

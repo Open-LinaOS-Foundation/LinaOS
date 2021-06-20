@@ -6,7 +6,7 @@
 #ifndef __XFS_SYSCTL_H__
 #define __XFS_SYSCTL_H__
 
-#include <linux/sysctl.h>
+#include <linaos/sysctl.h>
 
 /*
  * Tunable xfs parameters

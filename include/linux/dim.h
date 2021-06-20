@@ -1,14 +1,14 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /* Copyright (c) 2019 Mellanox Technologies. */
 
 #ifndef DIM_H
 #define DIM_H
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/bits.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
 /*
  * Number of events between DIM iterations.

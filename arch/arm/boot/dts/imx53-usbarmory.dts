@@ -70,7 +70,7 @@
 		user {
 			label = "LED";
 			gpios = <&gpio4 27 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 };

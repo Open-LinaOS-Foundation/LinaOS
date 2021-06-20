@@ -207,7 +207,7 @@ this parameter must to have the following structure::
 	unsigned int    tp_frame_nr;    /* Total number of frames */
     };
 
-This structure is defined in /usr/include/linux/if_packet.h and establishes a
+This structure is defined in /usr/include/linaos/if_packet.h and establishes a
 circular buffer (ring) of unswappable memory.
 Being mapped in the capture process allows reading the captured frames and
 related meta-information like timestamps without requiring a system call.
@@ -276,7 +276,7 @@ So get_free_pages can allocate as much as 4MB or 8MB in a 2.4/2.6 kernel
 respectively, with an i386 architecture.
 
 User space programs can include /usr/include/sys/user.h and
-/usr/include/linux/mmzone.h to get PAGE_SIZE MAX_ORDER declarations.
+/usr/include/linaos/mmzone.h to get PAGE_SIZE MAX_ORDER declarations.
 
 The pagesize can also be determined dynamically with the getpagesize (2)
 system call.
@@ -373,7 +373,7 @@ If you check the source code you will see that what I draw here as a frame
 is not only the link level frame. At the beginning of each frame there is a
 header called struct tpacket_hdr used in PACKET_MMAP to hold link level's frame
 meta information like timestamp. So what we draw here a frame it's really
-the following (from include/linux/if_packet.h)::
+the following (from include/linaos/if_packet.h)::
 
  /*
    Frame structure:
@@ -436,7 +436,7 @@ and the following flags apply:
 Capture process
 ^^^^^^^^^^^^^^^
 
-From include/linux/if_packet.h::
+From include/linaos/if_packet.h::
 
      #define TP_STATUS_COPY          (1 << 1)
      #define TP_STATUS_LOSING        (1 << 2)
@@ -625,8 +625,8 @@ Minimal example code by David S. Miller (try things like "./test eth0 hash",
 
     #include <unistd.h>
 
-    #include <linux/if_ether.h>
-    #include <linux/if_packet.h>
+    #include <linaos/if_ether.h>
+    #include <linaos/if_packet.h>
 
     #include <net/if.h>
 
@@ -791,9 +791,9 @@ it with gcc -Wall -O2 blob.c, and try things like "./a.out eth0", etc.)::
     #include <inttypes.h>
     #include <sys/socket.h>
     #include <sys/mman.h>
-    #include <linux/if_packet.h>
-    #include <linux/if_ether.h>
-    #include <linux/ip.h>
+    #include <linaos/if_packet.h>
+    #include <linaos/if_ether.h>
+    #include <linaos/ip.h>
 
     #ifndef likely
     # define likely(x)		__builtin_expect(!!(x), 1)
@@ -1068,13 +1068,13 @@ TX_RING part only TP_STATUS_AVAILABLE is set, then the tp_sec and tp_{n,u}sec
 members do not contain a valid value. For TX_RINGs, by default no timestamp
 is generated!
 
-See include/linux/net_tstamp.h and Documentation/networking/timestamping.rst
+See include/linaos/net_tstamp.h and Documentation/networking/timestamping.rst
 for more information on hardware timestamps.
 
 Miscellaneous bits
 ==================
 
-- Packet sockets work well together with Linux socket filters, thus you also
+- Packet sockets work well together with LinaOS socket filters, thus you also
   might want to have a look at Documentation/networking/filter.rst
 
 THANKS

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Code to handle transition of Linux booting another kernel.
+ * Code to handle transition of LinaOS booting another kernel.
  *
  * Copyright (C) 2002-2003 Eric Biederman  <ebiederm@xmission.com>
  * GameCube/ppc32 port Copyright (C) 2004 Albert Herranz
  * Copyright (C) 2005 IBM Corporation.
  */
 
-#include <linux/kexec.h>
-#include <linux/reboot.h>
-#include <linux/threads.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/irq.h>
-#include <linux/ftrace.h>
+#include <linaos/kexec.h>
+#include <linaos/reboot.h>
+#include <linaos/threads.h>
+#include <linaos/memblock.h>
+#include <linaos/of.h>
+#include <linaos/irq.h>
+#include <linaos/ftrace.h>
 
 #include <asm/kdump.h>
 #include <asm/machdep.h>
@@ -210,25 +210,25 @@ static phys_addr_t crashk_size;
 static unsigned long long mem_limit;
 
 static struct property kernel_end_prop = {
-	.name = "linux,kernel-end",
+	.name = "linaos,kernel-end",
 	.length = sizeof(phys_addr_t),
 	.value = &kernel_end,
 };
 
 static struct property crashk_base_prop = {
-	.name = "linux,crashkernel-base",
+	.name = "linaos,crashkernel-base",
 	.length = sizeof(phys_addr_t),
 	.value = &crashk_base
 };
 
 static struct property crashk_size_prop = {
-	.name = "linux,crashkernel-size",
+	.name = "linaos,crashkernel-size",
 	.length = sizeof(phys_addr_t),
 	.value = &crashk_size,
 };
 
 static struct property memory_limit_prop = {
-	.name = "linux,memory-limit",
+	.name = "linaos,memory-limit",
 	.length = sizeof(unsigned long long),
 	.value = &mem_limit,
 };
@@ -240,9 +240,9 @@ static void __init export_crashk_values(struct device_node *node)
 	/* There might be existing crash kernel properties, but we can't
 	 * be sure what's in them, so remove them. */
 	of_remove_property(node, of_find_property(node,
-				"linux,crashkernel-base", NULL));
+				"linaos,crashkernel-base", NULL));
 	of_remove_property(node, of_find_property(node,
-				"linux,crashkernel-size", NULL));
+				"linaos,crashkernel-size", NULL));
 
 	if (crashk_res.start != 0) {
 		crashk_base = cpu_to_be_ulong(crashk_res.start),

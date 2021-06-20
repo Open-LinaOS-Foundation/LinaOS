@@ -7,14 +7,14 @@
  * Copyright (C) Tom Long Nguyen (tom.l.nguyen@intel.com)
  */
 
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/init.h>
-#include <linux/aer.h>
-#include <linux/dmi.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/init.h>
+#include <linaos/aer.h>
+#include <linaos/dmi.h>
 
 #include "../pci.h"
 #include "portdrv.h"
@@ -30,7 +30,7 @@ bool pcie_ports_disabled;
 bool pcie_ports_native;
 
 /*
- * If the user specified "pcie_ports=dpc-native", use the Linux DPC PCIe
+ * If the user specified "pcie_ports=dpc-native", use the LinaOS DPC PCIe
  * service even if the platform hasn't given us permission.
  */
 bool pcie_ports_dpc_native;

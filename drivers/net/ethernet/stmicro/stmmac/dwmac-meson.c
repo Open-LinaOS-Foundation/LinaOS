@@ -5,13 +5,13 @@
  * Copyright (C) 2014 Beniamino Galvani <b.galvani@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/stmmac.h>
+#include <linaos/device.h>
+#include <linaos/ethtool.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/stmmac.h>
 
 #include "stmmac_platform.h"
 

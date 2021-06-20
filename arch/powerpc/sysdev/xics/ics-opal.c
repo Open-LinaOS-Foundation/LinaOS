@@ -7,16 +7,16 @@
 
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/spinlock.h>
-#include <linux/msi.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/irq.h>
+#include <linaos/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/cpu.h>
+#include <linaos/of.h>
+#include <linaos/spinlock.h>
+#include <linaos/msi.h>
 
 #include <asm/prom.h>
 #include <asm/smp.h>

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  *  S390 version
  *    Copyright IBM Corp. 1999, 2000
@@ -7,8 +7,8 @@
 #ifndef _ASM_S390_SIGCONTEXT_H
 #define _ASM_S390_SIGCONTEXT_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
 
 #define __NUM_GPRS		16
 #define __NUM_FPRS		16

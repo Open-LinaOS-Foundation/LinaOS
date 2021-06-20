@@ -16,7 +16,7 @@ E.G.::
  |          | SCL/SDA    |          |-------------- |           |
  |          |------------|          |
  |          |            |          | Bus segment 2 |           |
- |  Linux   | GPIO 1..N  |   MUX    |---------------   Devices
+ |  LinaOS   | GPIO 1..N  |   MUX    |---------------   Devices
  |          |------------|          |               |           |
  |          |            |          | Bus segment M
  |          |            |          |---------------|           |
@@ -32,13 +32,13 @@ i2c-mux-gpio uses the platform bus, so you need to provide a struct
 platform_device with the platform_data pointing to a struct
 i2c_mux_gpio_platform_data with the I2C adapter number of the master
 bus, the number of bus segments to create and the GPIO pins used
-to control it. See include/linux/platform_data/i2c-mux-gpio.h for details.
+to control it. See include/linaos/platform_data/i2c-mux-gpio.h for details.
 
 E.G. something like this for a MUX providing 4 bus segments
 controlled through 3 GPIO pins::
 
-  #include <linux/platform_data/i2c-mux-gpio.h>
-  #include <linux/platform_device.h>
+  #include <linaos/platform_data/i2c-mux-gpio.h>
+  #include <linaos/platform_device.h>
 
   static const unsigned myboard_gpiomux_gpios[] = {
 	AT91_PIN_PC26, AT91_PIN_PC25, AT91_PIN_PC24

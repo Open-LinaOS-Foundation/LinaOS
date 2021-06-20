@@ -2,7 +2,7 @@
 /*
  * ip_vs_xmit.c: various packet transmitters for IPVS
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@linaosvirtualserver.org>
  *              Julian Anastasov <ja@ssi.bg>
  *
  * Changes:
@@ -24,9 +24,9 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>                  /* for tcphdr */
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/tcp.h>                  /* for tcphdr */
 #include <net/ip.h>
 #include <net/gue.h>
 #include <net/gre.h>
@@ -39,9 +39,9 @@
 #include <net/ip_tunnels.h>
 #include <net/ip6_checksum.h>
 #include <net/addrconf.h>
-#include <linux/icmpv6.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
+#include <linaos/icmpv6.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv4.h>
 
 #include <net/ip_vs.h>
 

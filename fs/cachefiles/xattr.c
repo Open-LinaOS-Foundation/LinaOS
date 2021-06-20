@@ -5,14 +5,14 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/fsnotify.h>
-#include <linux/quotaops.h>
-#include <linux/xattr.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/fsnotify.h>
+#include <linaos/quotaops.h>
+#include <linaos/xattr.h>
+#include <linaos/slab.h>
 #include "internal.h"
 
 static const char cachefiles_xattr_cache[] =

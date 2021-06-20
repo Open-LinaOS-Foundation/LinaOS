@@ -1,5 +1,5 @@
 /*
- * tc35815.c: A TOSHIBA TC35815CF PCI 10/100Mbps ethernet driver for linux.
+ * tc35815.c: A TOSHIBA TC35815CF PCI 10/100Mbps ethernet driver for linaos.
  *
  * Based on skelton.c by Donald Becker.
  *
@@ -26,27 +26,27 @@
 static const char version[] = "tc35815.c:v" DRV_VERSION "\n";
 #define MODNAME			"tc35815"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/if_vlan.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/phy.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/in.h>
+#include <linaos/if_vlan.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/phy.h>
+#include <linaos/workqueue.h>
+#include <linaos/platform_device.h>
+#include <linaos/prefetch.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
 

@@ -356,7 +356,7 @@ card.
 
 4. Boot the VM.
 
-   In the Linux guest VM, with no hardware on the host, the device appears
+   In the LinaOS guest VM, with no hardware on the host, the device appears
    as  follows::
 
      # lspci -s 00:05.0 -xxvv
@@ -376,14 +376,14 @@ card.
      20: 00 00 00 00 00 00 00 00 00 00 00 00 48 43 53 32
      30: 00 00 00 00 00 00 00 00 00 00 00 00 0a 01 00 00
 
-     In the Linux guest VM, dmesg output for the device is as follows:
+     In the LinaOS guest VM, dmesg output for the device is as follows:
 
      serial 0000:00:05.0: PCI INT A -> Link[LNKA] -> GSI 10 (level, high) -> IRQ 10
      0000:00:05.0: ttyS1 at I/O 0xc150 (irq = 10) is a 16550A
      0000:00:05.0: ttyS2 at I/O 0xc158 (irq = 10) is a 16550A
 
 
-5. In the Linux guest VM, check the serial ports::
+5. In the LinaOS guest VM, check the serial ports::
 
      # setserial -g /dev/ttyS*
      /dev/ttyS0, UART: 16550A, Port: 0x03f8, IRQ: 4
@@ -406,6 +406,6 @@ References
 ==========
 
 1. See Documentation/driver-api/vfio.rst for more information on VFIO.
-2. struct mdev_driver in include/linux/mdev.h
-3. struct mdev_parent_ops in include/linux/mdev.h
-4. struct vfio_iommu_driver_ops in include/linux/vfio.h
+2. struct mdev_driver in include/linaos/mdev.h
+3. struct mdev_parent_ops in include/linaos/mdev.h
+4. struct vfio_iommu_driver_ops in include/linaos/vfio.h

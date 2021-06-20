@@ -17,8 +17,8 @@ import math
 
 import drgn
 from drgn import container_of
-from drgn.helpers.linux.list import list_for_each_entry,list_empty
-from drgn.helpers.linux.radixtree import radix_tree_for_each,radix_tree_lookup
+from drgn.helpers.linaos.list import list_for_each_entry,list_empty
+from drgn.helpers.linaos.radixtree import radix_tree_for_each,radix_tree_lookup
 
 import argparse
 parser = argparse.ArgumentParser(description=desc,

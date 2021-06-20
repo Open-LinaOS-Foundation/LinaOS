@@ -16,11 +16,11 @@
  *   Cleaned up and rewrote lowlevel routines.
  */
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <asm/dma.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/time.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/sb.h>
 

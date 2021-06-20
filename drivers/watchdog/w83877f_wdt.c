@@ -9,7 +9,7 @@
  *	any of this software. This material is provided "AS-IS" in
  *      the hope that it may be useful for others.
  *
- *	(c) Copyright 2001    Scott Jennings <linuxdrivers@oro.net>
+ *	(c) Copyright 2001    Scott Jennings <linaosdrivers@oro.net>
  *
  *           4/19 - 2001      [Initial revision]
  *           9/27 - 2001      Added spinlocking
@@ -31,7 +31,7 @@
  *			      module_param
  *                            made the keepalive ping an internal subroutine
  *
- *  This WDT driver is different from most other Linux WDT
+ *  This WDT driver is different from most other LinaOS WDT
  *  drivers in that the driver will ping the watchdog by itself,
  *  because this particular WDT has a very short timeout (1.6
  *  seconds) and it would be insane to count on any userspace
@@ -40,20 +40,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/timer.h>
+#include <linaos/jiffies.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/fs.h>
+#include <linaos/ioport.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 #define OUR_NAME "w83877f_wdt"
 

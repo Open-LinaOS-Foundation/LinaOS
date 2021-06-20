@@ -6,19 +6,19 @@
 
 #undef DEBUG
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/interrupt.h>
-#include <linux/mc146818rtc.h>
-#include <linux/bcd.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/param.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/time.h>
+#include <linaos/adb.h>
+#include <linaos/pmu.h>
+#include <linaos/interrupt.h>
+#include <linaos/mc146818rtc.h>
+#include <linaos/bcd.h>
 
 #include <asm/sections.h>
 #include <asm/prom.h>

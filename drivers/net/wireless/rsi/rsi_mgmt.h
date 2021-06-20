@@ -17,7 +17,7 @@
 #ifndef __RSI_MGMT_H__
 #define __RSI_MGMT_H__
 
-#include <linux/sort.h>
+#include <linaos/sort.h>
 #include "rsi_boot_params.h"
 #include "rsi_main.h"
 

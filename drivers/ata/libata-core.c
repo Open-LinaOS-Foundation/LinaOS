@@ -25,37 +25,37 @@
  * Do not depend on ABI/API stability.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/suspend.h>
-#include <linux/workqueue.h>
-#include <linux/scatterlist.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/glob.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/spinlock.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/time.h>
+#include <linaos/interrupt.h>
+#include <linaos/completion.h>
+#include <linaos/suspend.h>
+#include <linaos/workqueue.h>
+#include <linaos/scatterlist.h>
+#include <linaos/io.h>
+#include <linaos/log2.h>
+#include <linaos/slab.h>
+#include <linaos/glob.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linaos/libata.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
-#include <linux/cdrom.h>
-#include <linux/ratelimit.h>
-#include <linux/leds.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
+#include <linaos/cdrom.h>
+#include <linaos/ratelimit.h>
+#include <linaos/leds.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/platform_device.h>
 #include <asm/setup.h>
 
 #define CREATE_TRACE_POINTS
@@ -3772,7 +3772,7 @@ struct ata_blacklist_entry {
 };
 
 static const struct ata_blacklist_entry ata_device_blacklist [] = {
-	/* Devices with DMA related problems under Linux */
+	/* Devices with DMA related problems under LinaOS */
 	{ "WDC AC11000H",	NULL,		ATA_HORKAGE_NODMA },
 	{ "WDC AC22100H",	NULL,		ATA_HORKAGE_NODMA },
 	{ "WDC AC32500H",	NULL,		ATA_HORKAGE_NODMA },
@@ -3831,7 +3831,7 @@ static const struct ata_blacklist_entry ata_device_blacklist [] = {
 	/* NCQ is slow */
 	{ "WDC WD740ADFD-00",	NULL,		ATA_HORKAGE_NONCQ },
 	{ "WDC WD740ADFD-00NLR1", NULL,		ATA_HORKAGE_NONCQ, },
-	/* http://thread.gmane.org/gmane.linux.ide/14907 */
+	/* http://thread.gmane.org/gmane.linaos.ide/14907 */
 	{ "FUJITSU MHT2060BH",	NULL,		ATA_HORKAGE_NONCQ },
 	/* NCQ is broken */
 	{ "Maxtor *",		"BANC*",	ATA_HORKAGE_NONCQ },
@@ -3860,7 +3860,7 @@ static const struct ata_blacklist_entry ata_device_blacklist [] = {
 	{ "VB0250EAVER",	"HPG7",		ATA_HORKAGE_BROKEN_FPDMA_AA },
 
 	/* Blacklist entries taken from Silicon Image 3124/3132
-	   Windows driver .inf file - also several Linux problem reports */
+	   Windows driver .inf file - also several LinaOS problem reports */
 	{ "HTS541060G9SA00",    "MB3OC60D",     ATA_HORKAGE_NONCQ, },
 	{ "HTS541080G9SA00",    "MB4OC60D",     ATA_HORKAGE_NONCQ, },
 	{ "HTS541010G9SA00",    "MBZOC60D",     ATA_HORKAGE_NONCQ, },
@@ -4965,7 +4965,7 @@ static void ata_port_request_pm(struct ata_port *ap, pm_message_t mesg,
  * the device won't be used before being resumed, we don't need to touch the
  * device.  Ask EH to skip the usual stuff and proceed directly to suspend.
  *
- * http://thread.gmane.org/gmane.linux.ide/46764
+ * http://thread.gmane.org/gmane.linaos.ide/46764
  */
 static const unsigned int ata_port_suspend_ehi = ATA_EHI_QUIET
 						 | ATA_EHI_NO_AUTOPSY

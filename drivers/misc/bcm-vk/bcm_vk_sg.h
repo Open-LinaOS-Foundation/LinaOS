@@ -6,7 +6,7 @@
 #ifndef BCM_VK_SG_H
 #define BCM_VK_SG_H
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 
 struct bcm_vk_dma {
 	/* for userland buffer */

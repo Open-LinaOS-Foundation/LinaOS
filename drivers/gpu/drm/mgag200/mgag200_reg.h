@@ -19,7 +19,7 @@
 #ifndef _MGA_REG_H_
 #define _MGA_REG_H_
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 #define	MGAREG_DWGCTL		0x1c00
 #define	MGAREG_MACCESS		0x1c04

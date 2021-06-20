@@ -5,7 +5,7 @@
 #ifndef VIRTIO_SND_IF_H
 #define VIRTIO_SND_IF_H
 
-#include <linux/virtio_types.h>
+#include <linaos/virtio_types.h>
 
 /*******************************************************************************
  * CONFIGURATION SPACE

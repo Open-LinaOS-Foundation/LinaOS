@@ -4,8 +4,8 @@
 #ifndef _MLXSW_CORE_ACL_FLEX_KEYS_H
 #define _MLXSW_CORE_ACL_FLEX_KEYS_H
 
-#include <linux/types.h>
-#include <linux/bitmap.h>
+#include <linaos/types.h>
+#include <linaos/bitmap.h>
 
 #include "item.h"
 

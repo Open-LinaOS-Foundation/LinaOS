@@ -2,19 +2,19 @@
 /*
  * Wakeup statistics in sysfs
  *
- * Copyright (c) 2019 Linux Foundation
- * Copyright (c) 2019 Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+ * Copyright (c) 2019 LinaOS Foundation
+ * Copyright (c) 2019 Greg Kroah-Hartman <gregkh@linaosfoundation.org>
  * Copyright (c) 2019 Google Inc.
  */
 
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/kdev_t.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
-#include <linux/timekeeping.h>
+#include <linaos/device.h>
+#include <linaos/idr.h>
+#include <linaos/init.h>
+#include <linaos/kdev_t.h>
+#include <linaos/kernel.h>
+#include <linaos/kobject.h>
+#include <linaos/slab.h>
+#include <linaos/timekeeping.h>
 
 #include "power.h"
 

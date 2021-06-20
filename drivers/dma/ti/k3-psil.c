@@ -4,12 +4,12 @@
  *  Author: Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/sys_soc.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/sys_soc.h>
 
 #include "k3-psil-priv.h"
 

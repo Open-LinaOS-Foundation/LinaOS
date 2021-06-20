@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * linux/sound/soc/pxa/mmp-sspa.h
+ * linaos/sound/soc/pxa/mmp-sspa.h
  *
  * Copyright (C) 2011 Marvell International Ltd.
  */

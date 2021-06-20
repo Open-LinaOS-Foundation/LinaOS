@@ -253,7 +253,7 @@ child one.
 State machine
 =============
 
-.. kernel-doc:: include/linux/device.h
+.. kernel-doc:: include/linaos/device.h
    :functions: device_link_state
 
 ::

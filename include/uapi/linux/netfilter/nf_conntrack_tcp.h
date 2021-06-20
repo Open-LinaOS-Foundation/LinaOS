@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_NF_CONNTRACK_TCP_H
 #define _UAPI_NF_CONNTRACK_TCP_H
 /* TCP tracking. */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* This is exposed to userspace (ctnetlink) */
 enum tcp_conntrack {

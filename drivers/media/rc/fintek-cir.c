@@ -11,13 +11,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pnp.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pnp.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 #include <media/rc-core.h>
 
 #include "fintek-cir.h"

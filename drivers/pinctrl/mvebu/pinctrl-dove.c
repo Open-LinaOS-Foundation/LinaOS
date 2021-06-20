@@ -5,17 +5,17 @@
  * Author: Sebastian Hesselbarth <sebastian.hesselbarth@gmail.com>
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/regmap.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/bitops.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/regmap.h>
 
 #include "pinctrl-mvebu.h"
 

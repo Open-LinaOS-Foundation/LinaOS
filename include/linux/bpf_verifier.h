@@ -4,10 +4,10 @@
 #ifndef _LINUX_BPF_VERIFIER_H
 #define _LINUX_BPF_VERIFIER_H 1
 
-#include <linux/bpf.h> /* for enum bpf_reg_type */
-#include <linux/btf.h> /* for struct btf and btf_id() */
-#include <linux/filter.h> /* for MAX_BPF_STACK */
-#include <linux/tnum.h>
+#include <linaos/bpf.h> /* for enum bpf_reg_type */
+#include <linaos/btf.h> /* for struct btf and btf_id() */
+#include <linaos/filter.h> /* for MAX_BPF_STACK */
+#include <linaos/tnum.h>
 
 /* Maximum variable offset umax_value permitted when resolving memory accesses.
  * In practice this is far bigger than any realistic pointer offset; this limit

@@ -32,10 +32,10 @@
  * Macros and inline functions that does not naturally belong in other places
  */
 
-#include <linux/interrupt.h>
-#include <linux/kgdb.h>
-#include <linux/preempt.h>
-#include <linux/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/kgdb.h>
+#include <linaos/preempt.h>
+#include <linaos/smp.h>
 
 /*
  * Use EXPORT_SYMBOL_FOR_TESTS_ONLY() for functions that shall
@@ -66,7 +66,7 @@
  * drm_can_sleep - returns true if currently okay to sleep
  *
  * This function shall not be used in new code.
- * The check for running in atomic context may not work - see linux/preempt.h.
+ * The check for running in atomic context may not work - see linaos/preempt.h.
  *
  * FIXME: All users of drm_can_sleep should be removed (see todo.rst)
  *

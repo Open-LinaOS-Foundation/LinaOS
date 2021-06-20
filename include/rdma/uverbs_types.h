@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright (c) 2017, Mellanox Technologies inc.  All rights reserved.
  */
@@ -6,7 +6,7 @@
 #ifndef _UVERBS_TYPES_
 #define _UVERBS_TYPES_
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <rdma/ib_verbs.h>
 
 struct uverbs_obj_type;

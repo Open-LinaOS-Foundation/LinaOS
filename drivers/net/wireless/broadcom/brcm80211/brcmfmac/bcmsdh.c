@@ -4,24 +4,24 @@
  */
 /* ****************** SDIO CARD Interface Functions **************************/
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/scatterlist.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/pm_runtime.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
+#include <linaos/types.h>
+#include <linaos/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/sched.h>
+#include <linaos/completion.h>
+#include <linaos/interrupt.h>
+#include <linaos/scatterlist.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/mmc/core.h>
+#include <linaos/mmc/sdio_func.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/host.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/suspend.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
 #include <net/cfg80211.h>
 
 #include <defs.h>

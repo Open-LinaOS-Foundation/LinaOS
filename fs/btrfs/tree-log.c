@@ -3,11 +3,11 @@
  * Copyright (C) 2008 Oracle.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/list_sort.h>
-#include <linux/iversion.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/list_sort.h>
+#include <linaos/iversion.h>
 #include "misc.h"
 #include "ctree.h"
 #include "tree-log.h"

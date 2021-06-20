@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Interfaces for vfio-ccw
  *
  * Copyright IBM Corp. 2017
  *
- * Author(s): Dong Jia Shi <bjsdjshi@linux.vnet.ibm.com>
+ * Author(s): Dong Jia Shi <bjsdjshi@linaos.vnet.ibm.com>
  */
 
 #ifndef _VFIO_CCW_H_
 #define _VFIO_CCW_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* used for START SUBCHANNEL, always present */
 struct ccw_io_region {

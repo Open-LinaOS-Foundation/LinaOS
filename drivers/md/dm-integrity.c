@@ -8,20 +8,20 @@
 
 #include "dm-bio-record.h"
 
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/device-mapper.h>
-#include <linux/dm-io.h>
-#include <linux/vmalloc.h>
-#include <linux/sort.h>
-#include <linux/rbtree.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/reboot.h>
+#include <linaos/compiler.h>
+#include <linaos/module.h>
+#include <linaos/device-mapper.h>
+#include <linaos/dm-io.h>
+#include <linaos/vmalloc.h>
+#include <linaos/sort.h>
+#include <linaos/rbtree.h>
+#include <linaos/delay.h>
+#include <linaos/random.h>
+#include <linaos/reboot.h>
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/async_tx.h>
-#include <linux/dm-bufio.h>
+#include <linaos/async_tx.h>
+#include <linaos/dm-bufio.h>
 
 #define DM_MSG_PREFIX "integrity"
 

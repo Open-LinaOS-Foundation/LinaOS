@@ -5,12 +5,12 @@
  *
  * Copyright © 2009 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
-#include <linux/types.h>
-#include <linux/cache.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/atomic.h>
+#include <linaos/types.h>
+#include <linaos/cache.h>
+#include <linaos/spinlock.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/atomic.h>
 
 /*
  * We use a hashed array of spinlocks to provide exclusive access

@@ -5,21 +5,21 @@
  * (C) 2003 - 2004		Dominik Brodowski
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/major.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/timer.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
 #include <asm/irq.h>
 
 #include <pcmcia/ss.h>

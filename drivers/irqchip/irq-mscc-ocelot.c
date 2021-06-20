@@ -4,13 +4,13 @@
  *
  * Copyright (c) 2017 Microsemi Corporation
  */
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/interrupt.h>
+#include <linaos/bitops.h>
+#include <linaos/irq.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/interrupt.h>
 
 #define ICPU_CFG_INTR_DST_INTR_IDENT(_p, x) ((_p)->reg_off_ident + 0x4 * (x))
 #define ICPU_CFG_INTR_INTR_TRIGGER(_p, x)   ((_p)->reg_off_trigger + 0x4 * (x))

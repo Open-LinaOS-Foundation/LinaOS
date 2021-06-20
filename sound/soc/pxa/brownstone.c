@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/sound/soc/pxa/brownstone.c
+ * linaos/sound/soc/pxa/brownstone.c
  *
  * Copyright (C) 2011 Marvell International Ltd.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

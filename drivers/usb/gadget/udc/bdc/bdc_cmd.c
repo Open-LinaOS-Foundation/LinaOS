@@ -6,8 +6,8 @@
  *
  * Author: Ashwini Pahuja
  */
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
 
 #include "bdc.h"
 #include "bdc_cmd.h"

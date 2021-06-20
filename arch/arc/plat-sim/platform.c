@@ -5,7 +5,7 @@
  * Copyright (C) 2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/mach_desc.h>
 
 /*----------------------- Machine Descriptions ------------------------------

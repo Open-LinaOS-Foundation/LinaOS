@@ -8,15 +8,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/backlight.h>
-#include <linux/notifier.h>
-#include <linux/ctype.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/backlight.h>
+#include <linaos/notifier.h>
+#include <linaos/ctype.h>
+#include <linaos/err.h>
+#include <linaos/fb.h>
+#include <linaos/slab.h>
 
 #ifdef CONFIG_PMAC_BACKLIGHT
 #include <asm/backlight.h>

@@ -4,11 +4,11 @@
  * Author: Paul Burton <paul.burton@mips.com>
  */
 
-#include <linux/errno.h>
-#include <linux/percpu.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/percpu.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/spinlock.h>
 
 #include <asm/mips-cps.h>
 

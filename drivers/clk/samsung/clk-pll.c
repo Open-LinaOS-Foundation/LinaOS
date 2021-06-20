@@ -6,14 +6,14 @@
  * This file contains the utility functions to register the pll clocks.
 */
 
-#include <linux/errno.h>
-#include <linux/hrtimer.h>
-#include <linux/iopoll.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/timekeeping.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
+#include <linaos/errno.h>
+#include <linaos/hrtimer.h>
+#include <linaos/iopoll.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/timekeeping.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
 #include "clk.h"
 #include "clk-pll.h"
 

@@ -5,9 +5,9 @@
  *  Copyright (C) 2002  KOBIL Systems GmbH
  *  Author: Thomas Wahrenbruch
  *
- *  Contact: linuxusb@kobil.de
+ *  Contact: linaosusb@kobil.de
  *
- *  This program is largely derived from work by the linux-usb group
+ *  This program is largely derived from work by the linaos-usb group
  *  and associated source files.  Please see the usb/serial files for
  *  individual credits and copyrights.
  *
@@ -19,18 +19,18 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/ioctl.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/usb.h>
+#include <linaos/usb/serial.h>
+#include <linaos/ioctl.h>
 #include "kobil_sct.h"
 
 #define DRIVER_AUTHOR "KOBIL Systems GmbH - http://www.kobil.com"

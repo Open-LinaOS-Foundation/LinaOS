@@ -9,8 +9,8 @@
 #ifndef __LINUX_MFD_ATC260X_CORE_H
 #define __LINUX_MFD_ATC260X_CORE_H
 
-#include <linux/mfd/atc260x/atc2603c.h>
-#include <linux/mfd/atc260x/atc2609a.h>
+#include <linaos/mfd/atc260x/atc2603c.h>
+#include <linaos/mfd/atc260x/atc2609a.h>
 
 enum atc260x_type {
 	ATC2603A = 0,

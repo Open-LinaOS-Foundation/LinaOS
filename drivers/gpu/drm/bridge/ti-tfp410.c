@@ -4,12 +4,12 @@
  * Author: Jyri Sarha <jsarha@ti.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/of_graph.h>
+#include <linaos/platform_device.h>
+#include <linaos/workqueue.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

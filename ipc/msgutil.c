@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/ipc/msgutil.c
+ * linaos/ipc/msgutil.c
  * Copyright (C) 1999, 2004 Manfred Spraul
  */
 
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/ipc.h>
-#include <linux/msg.h>
-#include <linux/ipc_namespace.h>
-#include <linux/utsname.h>
-#include <linux/proc_ns.h>
-#include <linux/uaccess.h>
-#include <linux/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/init.h>
+#include <linaos/security.h>
+#include <linaos/slab.h>
+#include <linaos/ipc.h>
+#include <linaos/msg.h>
+#include <linaos/ipc_namespace.h>
+#include <linaos/utsname.h>
+#include <linaos/proc_ns.h>
+#include <linaos/uaccess.h>
+#include <linaos/sched.h>
 
 #include "util.h"
 

@@ -5,20 +5,20 @@
  */
 
 #ifdef CONFIG_XIP_KERNEL
-#include "vmlinux-xip.lds.S"
+#include "vmlinaos-xip.lds.S"
 #else
 
 #include <asm/pgtable.h>
 #define LOAD_OFFSET KERNEL_LINK_ADDR
 
-#include <asm/vmlinux.lds.h>
+#include <asm/vmlinaos.lds.h>
 #include <asm/page.h>
 #include <asm/cache.h>
 #include <asm/thread_info.h>
 #include <asm/set_memory.h>
 #include "image-vars.h"
 
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 OUTPUT_ARCH(riscv)
 ENTRY(_start)
 

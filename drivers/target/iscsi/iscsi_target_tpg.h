@@ -2,7 +2,7 @@
 #ifndef ISCSI_TARGET_TPG_H
 #define ISCSI_TARGET_TPG_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct iscsi_np;
 struct iscsi_session;

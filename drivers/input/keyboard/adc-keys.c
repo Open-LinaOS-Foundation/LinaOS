@@ -5,16 +5,16 @@
  * Copyright (c) 2016 Alexandre Belloni
  */
 
-#include <linux/err.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/types.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/iio/consumer.h>
+#include <linaos/iio/types.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
 
 struct adc_keys_button {
 	u32 voltage;
@@ -89,9 +89,9 @@ static int adc_keys_load_keymap(struct device *dev, struct adc_keys_state *st)
 		}
 		map[i].voltage /= 1000;
 
-		if (fwnode_property_read_u32(child, "linux,code",
+		if (fwnode_property_read_u32(child, "linaos,code",
 					     &map[i].keycode)) {
-			dev_err(dev, "Key with invalid or missing linux,code\n");
+			dev_err(dev, "Key with invalid or missing linaos,code\n");
 			fwnode_handle_put(child);
 			return -EINVAL;
 		}

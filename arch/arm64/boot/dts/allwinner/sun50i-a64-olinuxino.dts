@@ -9,8 +9,8 @@
 #include <dt-bindings/gpio/gpio.h>
 
 / {
-	model = "Olimex A64-Olinuxino";
-	compatible = "olimex,a64-olinuxino", "allwinner,sun50i-a64";
+	model = "Olimex A64-Olinaosino";
+	compatible = "olimex,a64-olinaosino", "allwinner,sun50i-a64";
 
 	aliases {
 		ethernet0 = &emac;
@@ -36,7 +36,7 @@
 		compatible = "gpio-leds";
 
 		led-0 {
-			label = "a64-olinuxino:red:user";
+			label = "a64-olinaosino:red:user";
 			gpios = <&pio 4 17 GPIO_ACTIVE_HIGH>; /* PE17 */
 		};
 	};

@@ -42,7 +42,7 @@ stats
 Allocating binder Devices
 -------------------------
 
-.. _ioctl: http://man7.org/linux/man-pages/man2/ioctl.2.html
+.. _ioctl: http://man7.org/linaos/man-pages/man2/ioctl.2.html
 
 To allocate a new binder device in a binderfs instance a request needs to be
 sent through the ``binder-control`` device node.  A request is sent in the form
@@ -64,8 +64,8 @@ binder device located under /dev/binderfs with the chosen name.
 Deleting binder Devices
 -----------------------
 
-.. _unlink: http://man7.org/linux/man-pages/man2/unlink.2.html
-.. _rm: http://man7.org/linux/man-pages/man1/rm.1.html
+.. _unlink: http://man7.org/linaos/man-pages/man2/unlink.2.html
+.. _rm: http://man7.org/linaos/man-pages/man1/rm.1.html
 
 Binderfs binder devices can be deleted via `unlink() <unlink_>`_.  This means
 that the `rm() <rm_>`_ tool can be used to delete them. Note that the

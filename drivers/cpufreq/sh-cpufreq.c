@@ -14,19 +14,19 @@
  */
 #define pr_fmt(fmt) "cpufreq: " fmt
 
-#include <linux/types.h>
-#include <linux/cpufreq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/cpumask.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/sched.h>	/* set_cpus_allowed() */
-#include <linux/clk.h>
-#include <linux/percpu.h>
-#include <linux/sh_clk.h>
+#include <linaos/types.h>
+#include <linaos/cpufreq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/cpumask.h>
+#include <linaos/cpu.h>
+#include <linaos/smp.h>
+#include <linaos/sched.h>	/* set_cpus_allowed() */
+#include <linaos/clk.h>
+#include <linaos/percpu.h>
+#include <linaos/sh_clk.h>
 
 static DEFINE_PER_CPU(struct clk, sh_cpuclk);
 
@@ -182,6 +182,6 @@ static void __exit sh_cpufreq_module_exit(void)
 module_init(sh_cpufreq_module_init);
 module_exit(sh_cpufreq_module_exit);
 
-MODULE_AUTHOR("Paul Mundt <lethal@linux-sh.org>");
+MODULE_AUTHOR("Paul Mundt <lethal@linaos-sh.org>");
 MODULE_DESCRIPTION("cpufreq driver for SuperH");
 MODULE_LICENSE("GPL");

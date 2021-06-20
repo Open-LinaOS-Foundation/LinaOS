@@ -76,7 +76,7 @@
 		status-led {
 			label = "helios4:green:status";
 			gpios = <&gpio0 24 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "on";
 		};
 
@@ -95,31 +95,31 @@
 		sata1-led {
 			label = "helios4:green:ata1";
 			gpios = <&gpio1 17 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "ata1";
+			linaos,default-trigger = "ata1";
 			default-state = "off";
 		};
 		sata2-led {
 			label = "helios4:green:ata2";
 			gpios = <&gpio1 18 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "ata2";
+			linaos,default-trigger = "ata2";
 			default-state = "off";
 		};
 		sata3-led {
 			label = "helios4:green:ata3";
 			gpios = <&gpio1 20 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "ata3";
+			linaos,default-trigger = "ata3";
 			default-state = "off";
 		};
 		sata4-led {
 			label = "helios4:green:ata4";
 			gpios = <&gpio1 21 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "ata4";
+			linaos,default-trigger = "ata4";
 			default-state = "off";
 		};
 		usb-led {
 			label = "helios4:green:usb";
 			gpios = <&gpio1 22 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "usb-host";
+			linaos,default-trigger = "usb-host";
 			default-state = "off";
 		};
 	};

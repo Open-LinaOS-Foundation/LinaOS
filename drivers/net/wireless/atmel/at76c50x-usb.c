@@ -20,24 +20,24 @@
  * https://wireless.wiki.kernel.org/en/users/Drivers/at76c50x-usb#TODO
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/wireless.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/usb.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/wireless.h>
 #include <net/iw_handler.h>
 #include <net/ieee80211_radiotap.h>
-#include <linux/firmware.h>
-#include <linux/leds.h>
+#include <linaos/firmware.h>
+#include <linaos/leds.h>
 #include <net/mac80211.h>
 
 #include "at76c50x-usb.h"

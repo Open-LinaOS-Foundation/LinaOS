@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Author(s)......: Holger Smolinski <Holger.Smolinski@de.ibm.com>
- * Based on.......: linux/drivers/s390/block/mdisk.h
+ * Based on.......: linaos/drivers/s390/block/mdisk.h
  * ...............: by Hartmunt Penner <hpenner@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <LinaOS390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2000
  *
  */

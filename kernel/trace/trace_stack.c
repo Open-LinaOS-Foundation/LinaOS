@@ -3,17 +3,17 @@
  * Copyright (C) 2008 Steven Rostedt <srostedt@redhat.com>
  *
  */
-#include <linux/sched/task_stack.h>
-#include <linux/stacktrace.h>
-#include <linux/security.h>
-#include <linux/kallsyms.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/stacktrace.h>
+#include <linaos/security.h>
+#include <linaos/kallsyms.h>
+#include <linaos/seq_file.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/ftrace.h>
+#include <linaos/module.h>
+#include <linaos/sysctl.h>
+#include <linaos/init.h>
 
 #include <asm/setup.h>
 

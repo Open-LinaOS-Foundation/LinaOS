@@ -2,7 +2,7 @@
 bpftool-feature
 ===============
 -------------------------------------------------------------------------------
-tool for inspection of eBPF-related parameters for Linux kernel or net device
+tool for inspection of eBPF-related parameters for LinaOS kernel or net device
 -------------------------------------------------------------------------------
 
 :Manual section: 8

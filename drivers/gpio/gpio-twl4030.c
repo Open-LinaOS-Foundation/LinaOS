@@ -12,17 +12,17 @@
  *	Andy Lowe / Nishanth Menon
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/irq.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/irqdomain.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kthread.h>
+#include <linaos/irq.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/irqdomain.h>
 
-#include <linux/mfd/twl.h>
+#include <linaos/mfd/twl.h>
 
 /*
  * The GPIO "subchip" supports 18 GPIOs which can be configured as

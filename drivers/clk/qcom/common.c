@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2014, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/platform_device.h>
-#include <linux/clk-provider.h>
-#include <linux/reset-controller.h>
-#include <linux/of.h>
+#include <linaos/export.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/reset-controller.h>
+#include <linaos/of.h>
 
 #include "common.h"
 #include "clk-rcg.h"

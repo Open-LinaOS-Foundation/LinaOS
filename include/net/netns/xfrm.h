@@ -2,11 +2,11 @@
 #ifndef __NETNS_XFRM_H
 #define __NETNS_XFRM_H
 
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/rhashtable-types.h>
-#include <linux/xfrm.h>
+#include <linaos/list.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
+#include <linaos/rhashtable-types.h>
+#include <linaos/xfrm.h>
 #include <net/dst_ops.h>
 
 struct ctl_table_header;

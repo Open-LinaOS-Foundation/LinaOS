@@ -6,7 +6,7 @@
 #include "debug.h"
 #include "pmu.h"
 #include <errno.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 static int perf_evsel__roundtrip_cache_name_test(void)
 {

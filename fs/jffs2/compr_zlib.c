@@ -16,9 +16,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/zlib.h>
-#include <linux/zutil.h>
+#include <linaos/kernel.h>
+#include <linaos/zlib.h>
+#include <linaos/zutil.h>
 #include "nodelist.h"
 #include "compr.h"
 
@@ -35,10 +35,10 @@ static DEFINE_MUTEX(deflate_mutex);
 static DEFINE_MUTEX(inflate_mutex);
 static z_stream inf_strm, def_strm;
 
-#ifdef __KERNEL__ /* Linux-only */
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
+#ifdef __KERNEL__ /* LinaOS-only */
+#include <linaos/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
 
 static int __init alloc_workspaces(void)
 {

@@ -6,8 +6,8 @@
 #ifndef __ASMARM_SMP_PLAT_H
 #define __ASMARM_SMP_PLAT_H
 
-#include <linux/cpumask.h>
-#include <linux/err.h>
+#include <linaos/cpumask.h>
+#include <linaos/err.h>
 
 #include <asm/cpu.h>
 #include <asm/cputype.h>

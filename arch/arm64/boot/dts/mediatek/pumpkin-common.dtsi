@@ -32,7 +32,7 @@
 		volume-up {
 			gpios = <&pio 42 GPIO_ACTIVE_LOW>;
 			label = "volume_up";
-			linux,code = <115>;
+			linaos,code = <115>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -40,7 +40,7 @@
 		volume-down {
 			gpios = <&pio 43 GPIO_ACTIVE_LOW>;
 			label = "volume_down";
-			linux,code = <114>;
+			linaos,code = <114>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};

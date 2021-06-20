@@ -5,7 +5,7 @@
  * Copyright (C) 2014 Red Hat Inc.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 	/* A stack for the loaded kernel.
 	 * Separate and in the data section so it can be prepopulated.

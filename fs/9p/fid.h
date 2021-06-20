@@ -6,7 +6,7 @@
  */
 #ifndef FS_9P_FID_H
 #define FS_9P_FID_H
-#include <linux/list.h>
+#include <linaos/list.h>
 
 struct p9_fid *v9fs_fid_lookup(struct dentry *dentry);
 static inline struct p9_fid *v9fs_parent_fid(struct dentry *dentry)

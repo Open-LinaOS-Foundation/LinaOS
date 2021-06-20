@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/minix/dir.c
+ *  linaos/fs/minix/dir.c
  *
  *  Copyright (C) 1991, 1992 Linus Torvalds
  *
@@ -10,9 +10,9 @@
  */
 
 #include "minix.h"
-#include <linux/buffer_head.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
+#include <linaos/buffer_head.h>
+#include <linaos/highmem.h>
+#include <linaos/swap.h>
 
 typedef struct minix_dir_entry minix_dirent;
 typedef struct minix3_dir_entry minix3_dirent;

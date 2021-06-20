@@ -2,29 +2,29 @@
 #ifndef _LINUX_BLKDEV_H
 #define _LINUX_BLKDEV_H
 
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/major.h>
-#include <linux/genhd.h>
-#include <linux/list.h>
-#include <linux/llist.h>
-#include <linux/minmax.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/backing-dev-defs.h>
-#include <linux/wait.h>
-#include <linux/mempool.h>
-#include <linux/pfn.h>
-#include <linux/bio.h>
-#include <linux/stringify.h>
-#include <linux/gfp.h>
-#include <linux/bsg.h>
-#include <linux/smp.h>
-#include <linux/rcupdate.h>
-#include <linux/percpu-refcount.h>
-#include <linux/scatterlist.h>
-#include <linux/blkzoned.h>
-#include <linux/pm.h>
+#include <linaos/sched.h>
+#include <linaos/sched/clock.h>
+#include <linaos/major.h>
+#include <linaos/genhd.h>
+#include <linaos/list.h>
+#include <linaos/llist.h>
+#include <linaos/minmax.h>
+#include <linaos/timer.h>
+#include <linaos/workqueue.h>
+#include <linaos/backing-dev-defs.h>
+#include <linaos/wait.h>
+#include <linaos/mempool.h>
+#include <linaos/pfn.h>
+#include <linaos/bio.h>
+#include <linaos/stringify.h>
+#include <linaos/gfp.h>
+#include <linaos/bsg.h>
+#include <linaos/smp.h>
+#include <linaos/rcupdate.h>
+#include <linaos/percpu-refcount.h>
+#include <linaos/scatterlist.h>
+#include <linaos/blkzoned.h>
+#include <linaos/pm.h>
 
 struct module;
 struct scsi_ioctl_command;
@@ -282,7 +282,7 @@ static inline unsigned short req_get_ioprio(struct request *req)
 	return req->ioprio;
 }
 
-#include <linux/elevator.h>
+#include <linaos/elevator.h>
 
 struct blk_queue_ctx;
 
@@ -951,7 +951,7 @@ static inline struct request_queue *bdev_get_queue(struct block_device *bdev)
 
 /*
  * The basic unit of block I/O is a sector. It is used in a number of contexts
- * in Linux (blk, bio, genhd). The size of one sector is 512 = 2**9
+ * in LinaOS (blk, bio, genhd). The size of one sector is 512 = 2**9
  * bytes. Variables of type sector_t represent an offset or size that is a
  * multiple of 512 bytes. Hence these two constants.
  */

@@ -5,14 +5,14 @@
  * Copyright 2016 Qtechnology A/S
  * 2016 Ricardo Ribalda <ribalda@kernel.org>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/bitops.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/regulator/consumer.h>
-#include <linux/platform_data/ad5761.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
+#include <linaos/bitops.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/platform_data/ad5761.h>
 
 #define AD5761_ADDR(addr)		((addr & 0xf) << 16)
 #define AD5761_ADDR_NOOP		0x0

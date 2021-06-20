@@ -5,11 +5,11 @@
  * Copyright (c) 2013 Chanho Min <chanho.min@lge.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/vmalloc.h>
-#include <linux/lz4.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/crypto.h>
+#include <linaos/vmalloc.h>
+#include <linaos/lz4.h>
 #include <crypto/internal/scompress.h>
 
 struct lz4_ctx {

@@ -8,23 +8,23 @@
  * Author: Gary R Hook <gary.hook@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/hw_random.h>
-#include <linux/cpu.h>
-#include <linux/atomic.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/spinlock_types.h>
+#include <linaos/types.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/hw_random.h>
+#include <linaos/cpu.h>
+#include <linaos/atomic.h>
 #ifdef CONFIG_X86
 #include <asm/cpu_device_id.h>
 #endif
-#include <linux/ccp.h>
+#include <linaos/ccp.h>
 
 #include "ccp-dev.h"
 

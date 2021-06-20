@@ -2,7 +2,7 @@
 #ifndef TARGET_CORE_PR_H
 #define TARGET_CORE_PR_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <target/target_core_base.h>
 
 /*

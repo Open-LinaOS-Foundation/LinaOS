@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-tegra/platsmp.c
+ *  linaos/arch/arm/mach-tegra/platsmp.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
@@ -9,14 +9,14 @@
  *  All Rights Reserved
  */
 
-#include <linux/clk/tegra.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/smp.h>
+#include <linaos/clk/tegra.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/jiffies.h>
+#include <linaos/smp.h>
 
 #include <soc/tegra/flowctrl.h>
 #include <soc/tegra/fuse.h>

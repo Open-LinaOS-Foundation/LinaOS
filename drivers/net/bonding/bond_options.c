@@ -5,14 +5,14 @@
  * Copyright (c) 2013 Scott Feldman <sfeldma@cumulusnetworks.com>
  */
 
-#include <linux/errno.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/ctype.h>
-#include <linux/inet.h>
-#include <linux/sched/signal.h>
+#include <linaos/errno.h>
+#include <linaos/if.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/rcupdate.h>
+#include <linaos/ctype.h>
+#include <linaos/inet.h>
+#include <linaos/sched/signal.h>
 
 #include <net/bonding.h>
 

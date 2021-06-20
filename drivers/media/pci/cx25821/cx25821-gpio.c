@@ -6,7 +6,7 @@
  *  Authors  <shu.lin@conexant.com>, <hiep.huynh@conexant.com>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "cx25821.h"
 
 /********************* GPIO stuffs *********************/

@@ -5,16 +5,16 @@
  * Copyright (C) 2016, Florian Fainelli <f.fainelli@gmail.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/export.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
-#include <linux/if_bridge.h>
-#include <linux/dsa/loop.h>
+#include <linaos/platform_device.h>
+#include <linaos/netdevice.h>
+#include <linaos/phy.h>
+#include <linaos/phy_fixed.h>
+#include <linaos/export.h>
+#include <linaos/ethtool.h>
+#include <linaos/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/if_bridge.h>
+#include <linaos/dsa/loop.h>
 #include <net/dsa.h>
 
 #include "dsa_loop.h"

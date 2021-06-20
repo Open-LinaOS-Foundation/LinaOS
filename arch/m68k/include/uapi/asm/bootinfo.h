@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * asm/bootinfo.h -- Definition of the Linux/m68k boot information structure
+ * asm/bootinfo.h -- Definition of the LinaOS/m68k boot information structure
  *
  * Copyright 1992 by Greg Harp
  *
@@ -13,7 +13,7 @@
 #define _UAPI_ASM_M68K_BOOTINFO_H
 
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 
 #ifndef __ASSEMBLY__
@@ -67,7 +67,7 @@ struct mem_info {
 
 
     /*
-     *  Linux/m68k Architectures (BI_MACHTYPE)
+     *  LinaOS/m68k Architectures (BI_MACHTYPE)
      */
 
 #define MACH_AMIGA		1

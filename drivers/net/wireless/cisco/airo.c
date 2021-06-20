@@ -13,41 +13,41 @@
     code in the Developer's manual was granted for this driver by
     Aironet.  Major code contributions were received from Javier Achirica
     <achirica@users.sourceforge.net> and Jean Tourrilhes <jt@hpl.hp.com>.
-    Code was also integrated from the Cisco Aironet driver for Linux.
+    Code was also integrated from the Cisco Aironet driver for LinaOS.
     Support for MPI350 cards was added by Fabrice Bellet
     <fabrice@bellet.info>.
 
 ======================================================================*/
 
-#include <linux/err.h>
-#include <linux/init.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/proc_fs.h>
 
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/bitops.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
-#include <linux/io.h>
+#include <linaos/sched.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/in.h>
+#include <linaos/bitops.h>
+#include <linaos/scatterlist.h>
+#include <linaos/crypto.h>
+#include <linaos/io.h>
 #include <asm/unaligned.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_arp.h>
+#include <linaos/ioport.h>
+#include <linaos/pci.h>
+#include <linaos/uaccess.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
 
 #include <crypto/aes.h>
 #include <crypto/skcipher.h>
@@ -91,12 +91,12 @@ static struct pci_driver airo_driver = {
 #endif /* CONFIG_PCI */
 
 /* Include Wireless Extension definition and check version - Jean II */
-#include <linux/wireless.h>
+#include <linaos/wireless.h>
 #define WIRELESS_SPY		/* enable iwspy support */
 
 #define CISCO_EXT		/* enable Cisco extensions */
 #ifdef CISCO_EXT
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #endif
 
 /* Hack to do some power saving */
@@ -1183,7 +1183,7 @@ struct airo_info {
 #define FLAG_UPDATE_MULTI 5
 #define FLAG_UPDATE_UNI 6
 #define FLAG_802_11	7
-#define FLAG_PROMISC	8	/* IFF_PROMISC 0x100 - include/linux/if.h */
+#define FLAG_PROMISC	8	/* IFF_PROMISC 0x100 - include/linaos/if.h */
 #define FLAG_PENDING_XMIT 9
 #define FLAG_PENDING_XMIT11 10
 #define FLAG_MPI	11

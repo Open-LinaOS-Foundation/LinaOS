@@ -17,14 +17,14 @@
  * - Use prepare/unprepare for the basic power on/off of the backligt
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/spi/spi.h>
+#include <linaos/backlight.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/sched.h>
+#include <linaos/spi/spi.h>
 #include <video/mipi_display.h>
 
 #include <drm/drm_connector.h>

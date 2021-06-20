@@ -2,9 +2,9 @@
 #ifndef DM_STATS_H
 #define DM_STATS_H
 
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
+#include <linaos/types.h>
+#include <linaos/mutex.h>
+#include <linaos/list.h>
 
 int dm_statistics_init(void);
 void dm_statistics_exit(void);

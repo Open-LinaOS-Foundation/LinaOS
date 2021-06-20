@@ -37,7 +37,7 @@
  * String handling code courtesy of Gerard Roudier's <groudier@club-internet.fr>
  * sym driver.
  *
- * $Id: //depot/aic7xxx/linux/drivers/scsi/aic7xxx/aic79xx_proc.c#19 $
+ * $Id: //depot/aic7xxx/linaos/drivers/scsi/aic7xxx/aic79xx_proc.c#19 $
  */
 #include "aic79xx_osm.h"
 #include "aic79xx_inline.h"
@@ -191,7 +191,7 @@ ahd_dump_target_state(struct ahd_softc *ahd, struct seq_file *m,
 static void
 ahd_dump_device_state(struct seq_file *m, struct scsi_device *sdev)
 {
-	struct ahd_linux_device *dev = scsi_transport_device_data(sdev);
+	struct ahd_linaos_device *dev = scsi_transport_device_data(sdev);
 
 	seq_printf(m, "\tChannel %c Target %d Lun %d Settings\n",
 		  sdev->sdev_target->channel + 'A',
@@ -272,7 +272,7 @@ done:
  * Return information to handle /proc support for the driver.
  */
 int
-ahd_linux_show_info(struct seq_file *m, struct Scsi_Host *shost)
+ahd_linaos_show_info(struct seq_file *m, struct Scsi_Host *shost)
 {
 	struct	ahd_softc *ahd = *(struct ahd_softc **)shost->hostdata;
 	char	ahd_info[256];

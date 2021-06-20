@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/char/pc8736x_gpio.c
+/* linaos/drivers/char/pc8736x_gpio.c
 
    National Semiconductor PC8736x GPIO driver.  Allows a user space
    process to play with the GPIO pins.
 
    Copyright (c) 2005,2006 Jim Cromie <jim.cromie@gmail.com>
 
-   adapted from linux/drivers/char/scx200_gpio.c
+   adapted from linaos/drivers/char/scx200_gpio.c
    Copyright (c) 2001,2002 Christer Weinigel <wingel@nano-system.com>,
 */
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/cdev.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/mutex.h>
-#include <linux/nsc_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/cdev.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/mutex.h>
+#include <linaos/nsc_gpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/uaccess.h>
 
 #define DEVNAME "pc8736x_gpio"
 

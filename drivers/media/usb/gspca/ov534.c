@@ -23,7 +23,7 @@
 
 #include "gspca.h"
 
-#include <linux/fixp-arith.h>
+#include <linaos/fixp-arith.h>
 #include <media/v4l2-ctrls.h>
 
 #define OV534_REG_ADDRESS	0xf1	/* sensor address */

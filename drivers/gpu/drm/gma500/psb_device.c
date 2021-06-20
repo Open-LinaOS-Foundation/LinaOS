@@ -5,7 +5,7 @@
  *
  **************************************************************************/
 
-#include <linux/backlight.h>
+#include <linaos/backlight.h>
 
 #include <drm/drm.h>
 

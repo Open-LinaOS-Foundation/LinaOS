@@ -6,8 +6,8 @@
 #ifndef __MLXBF_TMFIFO_REGS_H__
 #define __MLXBF_TMFIFO_REGS_H__
 
-#include <linux/types.h>
-#include <linux/bits.h>
+#include <linaos/types.h>
+#include <linaos/bits.h>
 
 #define MLXBF_TMFIFO_TX_DATA				0x00
 #define MLXBF_TMFIFO_TX_STS				0x08

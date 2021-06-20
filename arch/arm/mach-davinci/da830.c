@@ -8,13 +8,13 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/clk-provider.h>
-#include <linux/clk/davinci.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irqchip/irq-davinci-cp-intc.h>
-#include <linux/platform_data/gpio-davinci.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk/davinci.h>
+#include <linaos/gpio.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/irqchip/irq-davinci-cp-intc.h>
+#include <linaos/platform_data/gpio-davinci.h>
 
 #include <asm/mach/map.h>
 

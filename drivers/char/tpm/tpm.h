@@ -18,14 +18,14 @@
 #ifndef __TPM_H__
 #define __TPM_H__
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/tpm.h>
-#include <linux/tpm_eventlog.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/sched.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/tpm.h>
+#include <linaos/tpm_eventlog.h>
 
 #ifdef CONFIG_X86
 #include <asm/intel-family.h>

@@ -39,20 +39,20 @@
  * Provides the initialization and cleanup entry points for the DWC_otg PCI
  * driver
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/usb.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/usb.h>
 
-#include <linux/usb/hcd.h>
-#include <linux/usb/ch11.h>
-#include <linux/platform_device.h>
-#include <linux/usb/usb_phy_generic.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/usb/ch11.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb/usb_phy_generic.h>
 
 #define PCI_PRODUCT_ID_HAPS_HSOTG	0xabc0
 

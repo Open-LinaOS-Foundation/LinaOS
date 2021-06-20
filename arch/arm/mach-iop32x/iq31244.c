@@ -10,19 +10,19 @@
  * Copyright (C) 2004 Intel Corp.
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/string.h>
-#include <linux/serial_core.h>
-#include <linux/serial_8250.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio/machine.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/pm.h>
+#include <linaos/string.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_8250.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/gpio/machine.h>
 #include <asm/cputype.h>
 #include <asm/irq.h>
 #include <asm/mach/arch.h>

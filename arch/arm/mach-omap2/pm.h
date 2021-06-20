@@ -8,7 +8,7 @@
 #ifndef __ARCH_ARM_MACH_OMAP2_PM_H
 #define __ARCH_ARM_MACH_OMAP2_PM_H
 
-#include <linux/err.h>
+#include <linaos/err.h>
 
 #include "powerdomain.h"
 

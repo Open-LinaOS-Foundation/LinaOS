@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/amba/bus.h>
-#include <linux/coresight.h>
-#include <linux/cpumask.h>
+#include <linaos/acpi.h>
+#include <linaos/types.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_graph.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/amba/bus.h>
+#include <linaos/coresight.h>
+#include <linaos/cpumask.h>
 #include <asm/smp_plat.h>
 
 #include "coresight-priv.h"

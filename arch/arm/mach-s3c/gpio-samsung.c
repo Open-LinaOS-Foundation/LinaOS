@@ -6,23 +6,23 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2008 Simtec Electronics
 //      Ben Dooks <ben@simtec.co.uk>
-//      http://armlinux.simtec.co.uk/
+//      http://armlinaos.simtec.co.uk/
 //
 // Samsung - GPIOlib support
 
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
+#include <linaos/kernel.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/gpio.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/ioport.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/of_address.h>
 
 #include <asm/irq.h>
 

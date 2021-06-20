@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * These are the public elements of the Linux kernel X.25 implementation.
+ * These are the public elements of the LinaOS kernel X.25 implementation.
  *
  * 	History
  *	mar/20/00	Daniela Squassoni Disabling/enabling of facilities 
@@ -12,8 +12,8 @@
 #ifndef	X25_KERNEL_H
 #define	X25_KERNEL_H
 
-#include <linux/types.h>
-#include <linux/socket.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
 
 #define	SIOCX25GSUBSCRIP	(SIOCPROTOPRIVATE + 0)
 #define	SIOCX25SSUBSCRIP	(SIOCPROTOPRIVATE + 1)
@@ -56,7 +56,7 @@ struct x25_address {
 };
 
 /*
- *	Linux X.25 Address structure, used for bind, and connect mostly.
+ *	LinaOS X.25 Address structure, used for bind, and connect mostly.
  */
 struct sockaddr_x25 {
 	__kernel_sa_family_t sx25_family;	/* Must be AF_X25 */

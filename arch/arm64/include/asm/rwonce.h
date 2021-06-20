@@ -7,7 +7,7 @@
 
 #ifdef CONFIG_LTO
 
-#include <linux/compiler_types.h>
+#include <linaos/compiler_types.h>
 #include <asm/alternative-macros.h>
 
 #ifndef BUILD_VDSO

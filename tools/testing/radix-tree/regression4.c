@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/radix-tree.h>
-#include <linux/rcupdate.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/slab.h>
+#include <linaos/radix-tree.h>
+#include <linaos/rcupdate.h>
 #include <stdlib.h>
 #include <pthread.h>
 #include <stdio.h>

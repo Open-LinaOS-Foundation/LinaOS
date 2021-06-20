@@ -10,12 +10,12 @@
  *
  */
 
-#include <linux/bcd.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/rtc.h>
-#include <linux/watchdog.h>
+#include <linaos/bcd.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/rtc.h>
+#include <linaos/watchdog.h>
 
 #define ABX8XX_REG_HTH		0x00
 #define ABX8XX_REG_SC		0x01

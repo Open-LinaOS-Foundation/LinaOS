@@ -4,15 +4,15 @@
  * Copyright (C) 2011 Novell Inc.
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl.h>
-#include <linux/ratelimit.h>
-#include <linux/fiemap.h>
-#include <linux/fileattr.h>
-#include <linux/security.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/cred.h>
+#include <linaos/xattr.h>
+#include <linaos/posix_acl.h>
+#include <linaos/ratelimit.h>
+#include <linaos/fiemap.h>
+#include <linaos/fileattr.h>
+#include <linaos/security.h>
 #include "overlayfs.h"
 
 

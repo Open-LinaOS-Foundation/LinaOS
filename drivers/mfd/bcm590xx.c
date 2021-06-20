@@ -6,17 +6,17 @@
  * Author: Matt Porter <mporter@linaro.org>
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/mfd/bcm590xx.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/mfd/bcm590xx.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 static const struct mfd_cell bcm590xx_devs[] = {
 	{

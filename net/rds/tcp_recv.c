@@ -30,8 +30,8 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 #include <net/tcp.h>
 
 #include "rds.h"

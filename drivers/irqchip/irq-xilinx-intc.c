@@ -9,15 +9,15 @@
  * for more details.
  */
 
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/jump_label.h>
-#include <linux/bug.h>
-#include <linux/of_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/io.h>
+#include <linaos/jump_label.h>
+#include <linaos/bug.h>
+#include <linaos/of_irq.h>
 
 /* No one else should require these constants, so define them locally here. */
 #define ISR 0x00			/* Interrupt Status Register */

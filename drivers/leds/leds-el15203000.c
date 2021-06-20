@@ -2,11 +2,11 @@
 // Copyright (c) 2019 Crane Merchandising Systems. All rights reserved.
 // Copyright (C) 2019 Oleh Kravchenko <oleg@kaa.org.ua>
 
-#include <linux/delay.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
+#include <linaos/delay.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/spi/spi.h>
 
 /*
  * EL15203000 SPI protocol description:

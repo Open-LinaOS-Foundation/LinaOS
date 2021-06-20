@@ -7,10 +7,10 @@
  * Copyright (C) 2006-2007  Paul Mundt
  * Copyright (C) 2007  kogiidena
  */
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
 #include <mach-landisk/mach/iodata_landisk.h>
 #include <asm/push-switch.h>
 

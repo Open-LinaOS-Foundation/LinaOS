@@ -17,12 +17,12 @@
  * and waking up the secondary CPUs
  */
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/mbus.h>
+#include <linaos/init.h>
+#include <linaos/smp.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/mbus.h>
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>
 #include "common.h"

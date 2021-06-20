@@ -10,7 +10,7 @@
 /*
  * Everything needed for IOPart-GuestPart communication is define in
  * this file. Note: Everything is OS-independent because this file is
- * used by Windows, Linux and possible EFI drivers.
+ * used by Windows, LinaOS and possible EFI drivers.
  *
  * Communication flow between the IOPart and GuestPart uses the channel headers
  * channel state. The following states are currently being used:
@@ -31,9 +31,9 @@
  *        CHANNEL_ATTACHED -> CHANNEL_OPENED (performed only by GuestPart)
  */
 
-#include <linux/uuid.h>
-#include <linux/skbuff.h>
-#include <linux/visorbus.h>
+#include <linaos/uuid.h>
+#include <linaos/skbuff.h>
+#include <linaos/visorbus.h>
 
 /*
  * Must increment these whenever you insert or delete fields within this channel
@@ -194,7 +194,7 @@ struct vhba_config_max {
  * @data_dir:		Direction of the data, if any.
  * @struct vdest:	Identifies the virtual hba, id, channel, lun to which
  *			cmd was sent.
- * @linuxstat:		Original Linux status used by Linux vdisk.
+ * @linaosstat:		Original LinaOS status used by LinaOS vdisk.
  * @scsistat:		The scsi status.
  * @addlstat:		Non-scsi status.
  * @sensebuf:		Sense info in case cmd failed. sensebuf holds the
@@ -205,7 +205,7 @@ struct vhba_config_max {
  *			no_disk_result is set to 1
  *			scsi.scsistat is SAM_STAT_GOOD
  *			scsi.addlstat is 0
- *			scsi.linuxstat is SAM_STAT_GOOD
+ *			scsi.linaosstat is SAM_STAT_GOOD
  *			That is, there is NO error.
  */
 struct uiscmdrsp_scsi {
@@ -217,7 +217,7 @@ struct uiscmdrsp_scsi {
 	u32 data_dir;
 	struct uisscsi_dest vdest;
 	/* Needed to queue the rsp back to cmd originator. */
-	int linuxstat;
+	int linaosstat;
 	u8 scsistat;
 	u8 addlstat;
 #define ADDL_SEL_TIMEOUT 4
@@ -273,8 +273,8 @@ struct uiscmdrsp_scsi {
 #define DEV_HISUPPORT 0x10
 
 /*
- * NOTE: Linux code assumes inquiry contains 36 bytes. Without checking length
- * in buf[4] some Linux code accesses bytes beyond 5 to retrieve vendor, product
+ * NOTE: LinaOS code assumes inquiry contains 36 bytes. Without checking length
+ * in buf[4] some LinaOS code accesses bytes beyond 5 to retrieve vendor, product
  * and revision. Yikes! So let us always send back 36 bytes, the minimum for
  * inquiry result.
  */
@@ -456,7 +456,7 @@ struct uiscmdrsp_net {
  * @handle:		 This is a handle that the guest has saved off for its
  *			 own use. The handle value is preserved by iopart and
  *			 returned as in task mgmt rsp.
- * @notify_handle:	 For Linux guests, this is a pointer to wait_queue_head
+ * @notify_handle:	 For LinaOS guests, this is a pointer to wait_queue_head
  *			 that a thread is waiting on to see if the taskmgmt
  *			 command has completed. When the rsp is received by
  *			 guest, the thread receiving the response uses this to

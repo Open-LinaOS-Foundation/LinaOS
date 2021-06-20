@@ -6,7 +6,7 @@
 #ifndef _INTEL_DSB_H
 #define _INTEL_DSB_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "i915_reg.h"
 

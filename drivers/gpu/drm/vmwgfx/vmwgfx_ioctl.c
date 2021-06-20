@@ -414,8 +414,8 @@ out_clips:
 /**
  * vmw_fops_poll - wrapper around the drm_poll function
  *
- * @filp: See the linux fops poll documentation.
- * @wait: See the linux fops poll documentation.
+ * @filp: See the linaos fops poll documentation.
+ * @wait: See the linaos fops poll documentation.
  *
  * Wrapper around the drm_poll function that makes sure the device is
  * processing the fifo if drm_poll decides to wait.
@@ -434,10 +434,10 @@ __poll_t vmw_fops_poll(struct file *filp, struct poll_table_struct *wait)
 /**
  * vmw_fops_read - wrapper around the drm_read function
  *
- * @filp: See the linux fops read documentation.
- * @buffer: See the linux fops read documentation.
- * @count: See the linux fops read documentation.
- * @offset: See the linux fops read documentation.
+ * @filp: See the linaos fops read documentation.
+ * @buffer: See the linaos fops read documentation.
+ * @count: See the linaos fops read documentation.
+ * @offset: See the linaos fops read documentation.
  *
  * Wrapper around the drm_read function that makes sure the device is
  * processing the fifo if drm_read decides to wait.

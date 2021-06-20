@@ -24,34 +24,34 @@
  */
  
  
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/genhd.h>
-#include <linux/blkpg.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/completion.h>
-#include <linux/reboot.h>
-#include <linux/cdrom.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/kmod.h>
-#include <linux/scatterlist.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/major.h>
+#include <linaos/errno.h>
+#include <linaos/genhd.h>
+#include <linaos/blkpg.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/ide.h>
+#include <linaos/completion.h>
+#include <linaos/reboot.h>
+#include <linaos/cdrom.h>
+#include <linaos/seq_file.h>
+#include <linaos/device.h>
+#include <linaos/kmod.h>
+#include <linaos/scatterlist.h>
+#include <linaos/bitops.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 
 int ide_end_rq(ide_drive_t *drive, struct request *rq, blk_status_t error,
@@ -857,7 +857,7 @@ irqreturn_t ide_intr (int irq, void *dev_id)
 	 * Note that handler() may have set things up for another
 	 * interrupt to occur soon, but it cannot happen until
 	 * we exit from this routine, because it will be the
-	 * same irq as is currently being serviced here, and Linux
+	 * same irq as is currently being serviced here, and LinaOS
 	 * won't allow another of the same (on any CPU) until we return.
 	 */
 	if (startstop == ide_stopped && hwif->polling == 0) {

@@ -1,6 +1,6 @@
 #include "util/map_symbol.h"
 #include "util/branch.h"
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 static bool cross_area(u64 addr1, u64 addr2, int size)
 {

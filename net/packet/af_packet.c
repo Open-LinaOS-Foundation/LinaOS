@@ -16,7 +16,7 @@
  *		Alan Cox	:	tidied skbuff lists.
  *		Alan Cox	:	Now uses generic datagram routines I
  *					added. Also fixed the peek/read crash
- *					from all old Linux datagram code.
+ *					from all old LinaOS datagram code.
  *		Alan Cox	:	Uses the improved datagram code.
  *		Alan Cox	:	Added NULL's for socket options.
  *		Alan Cox	:	Re-commented the code.
@@ -46,48 +46,48 @@
  *					Copyright (C) 2011, <lokec@ccs.neu.edu>
  */
 
-#include <linux/ethtool.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/capability.h>
-#include <linux/fcntl.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/if_packet.h>
-#include <linux/wireless.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/ethtool.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/capability.h>
+#include <linaos/fcntl.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_packet.h>
+#include <linaos/wireless.h>
+#include <linaos/kernel.h>
+#include <linaos/kmod.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 #include <net/net_namespace.h>
 #include <net/ip.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/sock.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/timer.h>
+#include <linaos/uaccess.h>
 #include <asm/ioctls.h>
 #include <asm/page.h>
 #include <asm/cacheflush.h>
 #include <asm/io.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/if_vlan.h>
-#include <linux/virtio_net.h>
-#include <linux/errqueue.h>
-#include <linux/net_tstamp.h>
-#include <linux/percpu.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/poll.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/if_vlan.h>
+#include <linaos/virtio_net.h>
+#include <linaos/errqueue.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/percpu.h>
 #ifdef CONFIG_INET
 #include <net/inet_common.h>
 #endif
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <net/compat.h>
 
 #include "internal.h"

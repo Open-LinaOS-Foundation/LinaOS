@@ -29,10 +29,10 @@
  * Authors: Thomas Hellstrom <thellstrom-at-vmware-dot-com>
  * 	    Jerome Glisse
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/sched.h>
-#include <linux/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/sched.h>
+#include <linaos/debugfs.h>
 #include <drm/drm_sysfs.h>
 
 #include "ttm_module.h"

@@ -5,9 +5,9 @@
  * Copyright (C) 2009-2013 VMware, Inc. All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/stddef.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/stddef.h>
 #include <net/sock.h>
 
 #include "vmci_transport_notify.h"

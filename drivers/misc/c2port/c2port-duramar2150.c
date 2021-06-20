@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Silicon Labs C2 port Linux support for Eurotech Duramar 2150
+ *  Silicon Labs C2 port LinaOS support for Eurotech Duramar 2150
  *
- *  Copyright (c) 2008 Rodolfo Giometti <giometti@linux.it>
+ *  Copyright (c) 2008 Rodolfo Giometti <giometti@linaos.it>
  *  Copyright (c) 2008 Eurotech S.p.A. <info@eurotech.it>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/c2port.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/c2port.h>
 
 #define DATA_PORT	0x325
 #define DIR_PORT	0x326
@@ -151,6 +151,6 @@ static void __exit duramar2150_c2port_exit(void)
 module_init(duramar2150_c2port_init);
 module_exit(duramar2150_c2port_exit);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
-MODULE_DESCRIPTION("Silicon Labs C2 port Linux support for Duramar 2150");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@linaos.it>");
+MODULE_DESCRIPTION("Silicon Labs C2 port LinaOS support for Duramar 2150");
 MODULE_LICENSE("GPL");

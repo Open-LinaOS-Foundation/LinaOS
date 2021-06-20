@@ -3,9 +3,9 @@
  * rtl871x_mp_ioctl.c
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192SU
+ * LinaOS device driver for RTL8192SU
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the LinaOS staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -14,7 +14,7 @@
  *
  ******************************************************************************/
 
-#include <linux/rndis.h>
+#include <linaos/rndis.h>
 #include "osdep_service.h"
 #include "drv_types.h"
 #include "mlme_osdep.h"
@@ -846,7 +846,7 @@ uint oid_rt_set_rx_packet_type_hdl(struct oid_par_priv *poid_par_priv)
 }
 
 /*--------------------------------------------------------------------------*/
-/*Linux*/
+/*LinaOS*/
 unsigned int mp_ioctl_xmit_packet_hdl(struct oid_par_priv *poid_par_priv)
 {
 	return _SUCCESS;

@@ -27,7 +27,7 @@
 #ifndef _LINUX_VIRTIO_SCSI_H
 #define _LINUX_VIRTIO_SCSI_H
 
-#include <linux/virtio_types.h>
+#include <linaos/virtio_types.h>
 
 /* Default values of the CDB and sense data size configuration fields */
 #define VIRTIO_SCSI_CDB_DEFAULT_SIZE   32

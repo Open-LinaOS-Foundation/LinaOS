@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * collate.c - NTFS kernel collation handling.  Part of the Linux-NTFS project.
+ * collate.c - NTFS kernel collation handling.  Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2004 Anton Altaparmakov
  */

@@ -8,17 +8,17 @@
  * memory is cyclically updated over the RGB interface.
  */
 
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/lcd.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/string.h>
+#include <linaos/fb.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/lcd.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi.h>
+#include <linaos/string.h>
 
 /* Register offset, see manual section 8.2 */
 #define REG_START_OSCILLATION			0x00

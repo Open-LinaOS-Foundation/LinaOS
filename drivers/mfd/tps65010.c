@@ -6,22 +6,22 @@
  * Copyright (C) 2004-2005 David Brownell
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/workqueue.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
 
-#include <linux/mfd/tps65010.h>
+#include <linaos/mfd/tps65010.h>
 
-#include <linux/gpio/driver.h>
+#include <linaos/gpio/driver.h>
 
 
 /*-------------------------------------------------------------------------*/

@@ -10,17 +10,17 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/maple.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/maple.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
 #include <asm/cacheflush.h>
 #include <asm/dma.h>
 #include <asm/io.h>

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/buffer_head.h
+ * include/linaos/buffer_head.h
  *
  * Everything to do with buffer_heads.
  */
@@ -8,12 +8,12 @@
 #ifndef _LINUX_BUFFER_HEAD_H
 #define _LINUX_BUFFER_HEAD_H
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/linkage.h>
-#include <linux/pagemap.h>
-#include <linux/wait.h>
-#include <linux/atomic.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/linkage.h>
+#include <linaos/pagemap.h>
+#include <linaos/wait.h>
+#include <linaos/atomic.h>
 
 #ifdef CONFIG_BLOCK
 

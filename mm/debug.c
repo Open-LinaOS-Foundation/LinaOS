@@ -6,14 +6,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/trace_events.h>
-#include <linux/memcontrol.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/trace_events.h>
+#include <linaos/memcontrol.h>
 #include <trace/events/mmflags.h>
-#include <linux/migrate.h>
-#include <linux/page_owner.h>
-#include <linux/ctype.h>
+#include <linaos/migrate.h>
+#include <linaos/page_owner.h>
+#include <linaos/ctype.h>
 
 #include "internal.h"
 

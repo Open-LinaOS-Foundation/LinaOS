@@ -5,19 +5,19 @@
  * Author: Milo(Woogyom) Kim <milo.kim@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/regulator/lp872x.h>
-#include <linux/regulator/driver.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/delay.h>
+#include <linaos/regulator/lp872x.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/regulator/of_regulator.h>
 
 /* Registers : LP8720/8725 shared */
 #define LP872X_GENERAL_CFG		0x00

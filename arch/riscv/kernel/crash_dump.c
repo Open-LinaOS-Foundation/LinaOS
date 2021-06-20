@@ -5,8 +5,8 @@
  * Copyright (C) 2017 Linaro Limited
  */
 
-#include <linux/crash_dump.h>
-#include <linux/io.h>
+#include <linaos/crash_dump.h>
+#include <linaos/io.h>
 
 /**
  * copy_oldmem_page() - copy one page from old kernel memory

@@ -13,11 +13,11 @@
  */
 #include "ieee80211.h"
 
-#include <linux/random.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/etherdevice.h>
+#include <linaos/random.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/etherdevice.h>
 
 #include "dot11d.h"
 
@@ -788,7 +788,7 @@ static struct sk_buff *ieee80211_probe_resp(struct ieee80211_device *ieee, u8 *d
 
 	if (wpa_ie_len) {
 		if (ieee->iw_mode == IW_MODE_ADHOC) {
-			//as Windows will set pairwise key same as the group key which is not allowed in Linux, so set this for IOT issue. WB 2008.07.07
+			//as Windows will set pairwise key same as the group key which is not allowed in LinaOS, so set this for IOT issue. WB 2008.07.07
 			memcpy(&ieee->wpa_ie[14], &ieee->wpa_ie[8], 4);
 		}
 		memcpy(tag, ieee->wpa_ie, ieee->wpa_ie_len);

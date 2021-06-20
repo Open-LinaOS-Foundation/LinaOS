@@ -4,7 +4,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 
 struct sch56xx_watchdog_data;
 

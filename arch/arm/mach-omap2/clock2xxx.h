@@ -9,7 +9,7 @@
 #ifndef __ARCH_ARM_MACH_OMAP2_CLOCK2XXX_H
 #define __ARCH_ARM_MACH_OMAP2_CLOCK2XXX_H
 
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 #include "clock.h"
 
 unsigned long omap2_table_mpu_recalc(struct clk_hw *clk,

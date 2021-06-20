@@ -11,7 +11,7 @@
  *		accelerated operations on a GEM object)
  */
 
-#include <linux/pagemap.h>
+#include <linaos/pagemap.h>
 
 #include <drm/drm.h>
 #include <drm/drm_vma_manager.h>

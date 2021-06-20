@@ -3,9 +3,9 @@
  * This file contains all networking devres helpers.
  */
 
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
+#include <linaos/device.h>
+#include <linaos/etherdevice.h>
+#include <linaos/netdevice.h>
 
 struct net_device_devres {
 	struct net_device *ndev;

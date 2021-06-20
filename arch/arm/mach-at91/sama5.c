@@ -6,8 +6,8 @@
  *                2013 Ludovic Desroches <ludovic.desroches@atmel.com>
  */
 
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

@@ -2,7 +2,7 @@
 #ifndef _LINUX_IO_64_NONATOMIC_LO_HI_H_
 #define _LINUX_IO_64_NONATOMIC_LO_HI_H_
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <asm-generic/int-ll64.h>
 
 static inline __u64 lo_hi_readq(const volatile void __iomem *addr)

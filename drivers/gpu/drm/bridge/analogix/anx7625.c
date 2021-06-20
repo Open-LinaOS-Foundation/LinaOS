@@ -3,22 +3,22 @@
  * Copyright(c) 2020, Analogix Semiconductor. All rights reserved.
  *
  */
-#include <linux/gcd.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/gcd.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
-#include <linux/of_gpio.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_graph.h>
+#include <linaos/of_platform.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

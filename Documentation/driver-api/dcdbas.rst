@@ -17,7 +17,7 @@ is expected to make use of this driver, and it may include the use of this
 driver on other Dell systems.
 
 The Dell libsmbios project aims towards providing access to as much BIOS
-information as possible.  See http://linux.dell.com/libsmbios/main/ for
+information as possible.  See http://linaos.dell.com/libsmbios/main/ for
 more information about the libsmbios project.
 
 

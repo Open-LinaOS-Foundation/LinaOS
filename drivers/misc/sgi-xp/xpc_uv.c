@@ -13,16 +13,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/numa.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/cpu.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/numa.h>
 #include <asm/uv/uv_hub.h>
 #if defined CONFIG_X86_64
 #include <asm/uv/bios.h>

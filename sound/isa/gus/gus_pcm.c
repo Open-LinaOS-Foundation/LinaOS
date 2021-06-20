@@ -11,8 +11,8 @@
  */
 
 #include <asm/dma.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

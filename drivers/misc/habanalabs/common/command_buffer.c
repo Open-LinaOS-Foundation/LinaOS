@@ -8,9 +8,9 @@
 #include <uapi/misc/habanalabs.h>
 #include "habanalabs.h"
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 static int cb_map_mem(struct hl_ctx *ctx, struct hl_cb *cb)
 {

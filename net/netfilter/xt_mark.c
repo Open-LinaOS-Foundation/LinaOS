@@ -7,11 +7,11 @@
  *	Jan Engelhardt <jengelh@medozas.de>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
 
-#include <linux/netfilter/xt_mark.h>
-#include <linux/netfilter/x_tables.h>
+#include <linaos/netfilter/xt_mark.h>
+#include <linaos/netfilter/x_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Marc Boucher <marc@mbsi.ca>");

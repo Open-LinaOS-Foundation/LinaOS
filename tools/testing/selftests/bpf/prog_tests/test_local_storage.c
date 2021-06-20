@@ -7,7 +7,7 @@
 #include <asm-generic/errno-base.h>
 #include <sys/stat.h>
 #include <test_progs.h>
-#include <linux/limits.h>
+#include <linaos/limits.h>
 
 #include "local_storage.skel.h"
 #include "network_helpers.h"

@@ -9,12 +9,12 @@
 #include "dm-cache-policy.h"
 #include "dm.h"
 
-#include <linux/hash.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/vmalloc.h>
-#include <linux/math64.h>
+#include <linaos/hash.h>
+#include <linaos/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/vmalloc.h>
+#include <linaos/math64.h>
 
 #define DM_MSG_PREFIX "cache-policy-smq"
 

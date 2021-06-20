@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-nokia770.c
+ * linaos/arch/arm/mach-omap1/board-nokia770.c
  *
  * Modified from board-generic.c
  */
-#include <linux/clkdev.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/omapfb.h>
+#include <linaos/clkdev.h>
+#include <linaos/irq.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/omapfb.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/ads7846.h>
+#include <linaos/workqueue.h>
+#include <linaos/delay.h>
 
-#include <linux/platform_data/keypad-omap.h>
-#include <linux/platform_data/lcd-mipid.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <linaos/platform_data/keypad-omap.h>
+#include <linaos/platform_data/lcd-mipid.h>
+#include <linaos/platform_data/gpio-omap.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

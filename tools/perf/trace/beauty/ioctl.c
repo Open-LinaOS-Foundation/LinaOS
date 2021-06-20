@@ -6,7 +6,7 @@
  */
 
 #include "trace/beauty/beauty.h"
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /*
  * FIXME: to support all arches we have to improve this, for

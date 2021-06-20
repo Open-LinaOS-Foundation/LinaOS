@@ -5,9 +5,9 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
-#include <linux/types.h>
-#include <linux/refcount.h>
-#include <linux/perf_event.h>
+#include <linaos/types.h>
+#include <linaos/refcount.h>
+#include <linaos/perf_event.h>
 #include "stat.h"
 #include "evsel.h"
 

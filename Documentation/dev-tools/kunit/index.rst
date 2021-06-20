@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =========================================
-KUnit - Unit Testing for the Linux Kernel
+KUnit - Unit Testing for the LinaOS Kernel
 =========================================
 
 .. toctree::
@@ -18,7 +18,7 @@ KUnit - Unit Testing for the Linux Kernel
 What is KUnit?
 ==============
 
-KUnit is a lightweight unit testing and mocking framework for the Linux kernel.
+KUnit is a lightweight unit testing and mocking framework for the LinaOS kernel.
 
 KUnit is heavily inspired by JUnit, Python's unittest.mock, and
 Googletest/Googlemock for C++. KUnit provides facilities for defining unit test
@@ -31,8 +31,8 @@ built-in, or when loaded if built as a module. These tests write out results to
 the kernel log in `TAP <https://testanything.org/>`_ format.
 
 To make running these tests (and reading the results) easier, KUnit offers
-:doc:`kunit_tool <kunit-tool>`, which builds a `User Mode Linux
-<http://user-mode-linux.sourceforge.net>`_ kernel, runs it, and parses the test
+:doc:`kunit_tool <kunit-tool>`, which builds a `User Mode LinaOS
+<http://user-mode-linaos.sourceforge.net>`_ kernel, runs it, and parses the test
 results. This provides a quick way of running KUnit tests during development,
 without requiring a virtual machine or separate hardware.
 
@@ -57,8 +57,8 @@ module is loaded.
 .. note::
 
         KUnit can also run tests without needing a virtual machine or actual
-        hardware under User Mode Linux. User Mode Linux is a Linux architecture,
-        like ARM or x86, which compiles the kernel as a Linux executable. KUnit
+        hardware under User Mode LinaOS. User Mode LinaOS is a LinaOS architecture,
+        like ARM or x86, which compiles the kernel as a LinaOS executable. KUnit
         can be used with UML either by building with ``ARCH=um`` (like any other
         architecture), or by using :doc:`kunit_tool <kunit-tool>`.
 

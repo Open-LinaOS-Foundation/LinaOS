@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0
  *
- * linux/sound/soc-dapm.h -- ALSA SoC Dynamic Audio Power Management
+ * linaos/sound/soc-dapm.h -- ALSA SoC Dynamic Audio Power Management
  *
  * Author:	Liam Girdwood
  * Created:	Aug 11th 2005
@@ -10,7 +10,7 @@
 #ifndef __LINUX_SND_SOC_DAPM_H
 #define __LINUX_SND_SOC_DAPM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <sound/control.h>
 #include <sound/soc-topology.h>
 #include <sound/asoc.h>

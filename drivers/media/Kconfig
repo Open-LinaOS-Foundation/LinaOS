@@ -18,7 +18,7 @@ menuconfig MEDIA_SUPPORT
 	  and other options below.
 
 	  Additional info and docs are available on the web at
-	  <https://linuxtv.org>
+	  <https://linaostv.org>
 
 if MEDIA_SUPPORT
 
@@ -105,7 +105,7 @@ config MEDIA_RADIO_SUPPORT
 	  Enable AM/FM radio support.
 
 	  Additional info and docs are available on the web at
-	  <https://linuxtv.org>
+	  <https://linaostv.org>
 
 	  Say Y when you have a board with radio support.
 
@@ -158,7 +158,7 @@ menu "Media core support"
 	visible if !MEDIA_SUPPORT_FILTER
 
 config VIDEO_DEV
-	tristate "Video4Linux core"
+	tristate "Video4LinaOS core"
 	default MEDIA_CAMERA_SUPPORT || MEDIA_ANALOG_TV_SUPPORT || MEDIA_RADIO_SUPPORT || MEDIA_SDR_SUPPORT || MEDIA_PLATFORM_SUPPORT || MEDIA_TEST_SUPPORT
 	help
 	  Enables the V4L2 API, used by cameras, analog TV, video grabbers,
@@ -193,7 +193,7 @@ endmenu # Media core support
 #
 # Extra per-media API core functionality
 
-menu "Video4Linux options"
+menu "Video4LinaOS options"
 	visible if VIDEO_DEV
 
 source "drivers/media/v4l2-core/Kconfig"

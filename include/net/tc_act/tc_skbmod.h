@@ -7,7 +7,7 @@
 #define __NET_TC_SKBMOD_H
 
 #include <net/act_api.h>
-#include <linux/tc_act/tc_skbmod.h>
+#include <linaos/tc_act/tc_skbmod.h>
 
 struct tcf_skbmod_params {
 	struct rcu_head	rcu;

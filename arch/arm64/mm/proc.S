@@ -7,9 +7,9 @@
  * Author: Catalin Marinas <catalin.marinas@arm.com>
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/pgtable.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
+#include <linaos/pgtable.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/asm_pointer_auth.h>

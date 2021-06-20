@@ -134,7 +134,7 @@
 
 		led-6 {
 			function = LED_FUNCTION_DISK;
-			linux,default-trigger = "disk-activity";
+			linaos,default-trigger = "disk-activity";
 			gpios = <&cp0_gpio2 22 GPIO_ACTIVE_HIGH>;
 		};
 

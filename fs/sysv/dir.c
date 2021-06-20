@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/sysv/dir.c
+ *  linaos/fs/sysv/dir.c
  *
  *  minix/dir.c
  *  Copyright (C) 1991, 1992  Linus Torvalds
@@ -14,9 +14,9 @@
  *  SystemV/Coherent directory handling functions
  */
 
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
+#include <linaos/pagemap.h>
+#include <linaos/highmem.h>
+#include <linaos/swap.h>
 #include "sysv.h"
 
 static int sysv_readdir(struct file *, struct dir_context *);

@@ -7,9 +7,9 @@
  *		Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
 
 #include <asm/alternative.h>
 #include <asm/assembler.h>
@@ -1001,7 +1001,7 @@ NOKPROBE(ret_from_fork)
 #ifdef CONFIG_ARM_SDE_INTERFACE
 
 #include <asm/sdei.h>
-#include <uapi/linux/arm_sdei.h>
+#include <uapi/linaos/arm_sdei.h>
 
 .macro sdei_handler_exit exit_mode
 	/* On success, this call never returns... */

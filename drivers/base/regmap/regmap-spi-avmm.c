@@ -4,9 +4,9 @@
 //
 // Copyright (C) 2018-2020 Intel Corporation. All rights reserved.
 
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/spi/spi.h>
 
 /*
  * This driver implements the regmap operations for a generic SPI

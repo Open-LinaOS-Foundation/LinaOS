@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/wm2200.h -- Platform data for WM2200
+ * linaos/sound/wm2200.h -- Platform data for WM2200
  *
  * Copyright 2012 Wolfson Microelectronics. PLC.
  */

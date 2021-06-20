@@ -13,22 +13,22 @@
  *     https://www.cirrus.com/en/pubs/manual/EP93xx_Users_Guide_UM1.pdf
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/scatterlist.h>
-#include <linux/spi/spi.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dmaengine.h>
+#include <linaos/bitops.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
+#include <linaos/scatterlist.h>
+#include <linaos/spi/spi.h>
 
-#include <linux/platform_data/dma-ep93xx.h>
-#include <linux/platform_data/spi-ep93xx.h>
+#include <linaos/platform_data/dma-ep93xx.h>
+#include <linaos/platform_data/spi-ep93xx.h>
 
 #define SSPCR0			0x0000
 #define SSPCR0_SPO		BIT(6)

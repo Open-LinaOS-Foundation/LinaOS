@@ -9,7 +9,7 @@
 #define __ASM_TOPOLOGY_H
 
 #include <topology.h>
-#include <linux/smp.h>
+#include <linaos/smp.h>
 
 #ifdef CONFIG_SMP
 #define topology_physical_package_id(cpu)	(cpu_data[cpu].package)

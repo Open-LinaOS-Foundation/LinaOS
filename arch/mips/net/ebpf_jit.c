@@ -10,11 +10,11 @@
  * Author: Markos Chandras <markos.chandras@imgtec.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
-#include <linux/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/errno.h>
+#include <linaos/filter.h>
+#include <linaos/bpf.h>
+#include <linaos/slab.h>
 #include <asm/bitops.h>
 #include <asm/byteorder.h>
 #include <asm/cacheflush.h>

@@ -713,7 +713,7 @@
 		bp1 {
 			label = "PB_USER";
 			gpios = <&pioA PIN_PB9 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_PROG1>;
+			linaos,code = <KEY_PROG1>;
 			wakeup-source;
 		};
 	};
@@ -738,7 +738,7 @@
 		blue {
 			label = "blue";
 			gpios = <&pioA PIN_PB0 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 };

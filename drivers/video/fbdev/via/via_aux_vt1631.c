@@ -6,7 +6,7 @@
  * driver for VIA VT1631 LVDS Transmitter
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "via_aux.h"
 
 

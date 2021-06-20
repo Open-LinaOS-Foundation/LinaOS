@@ -4,20 +4,20 @@
  */
 
 /*
- * PDPI Lightning 4 gamecard driver for Linux.
+ * PDPI Lightning 4 gamecard driver for LinaOS.
  */
 
 /*
  */
 
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gameport.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/gameport.h>
 
 #define L4_PORT			0x201
 #define L4_SELECT_ANALOG	0xa4

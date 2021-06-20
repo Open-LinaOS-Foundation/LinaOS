@@ -1,42 +1,42 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/host/mmci.c - ARM PrimeCell MMCI PL180/1 driver
+ *  linaos/drivers/mmc/host/mmci.c - ARM PrimeCell MMCI PL180/1 driver
  *
  *  Copyright (C) 2003 Deep Blue Solutions, Ltd, All Rights Reserved.
  *  Copyright (C) 2010 ST-Ericsson SA
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/log2.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/pm.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/amba/bus.h>
-#include <linux/clk.h>
-#include <linux/scatterlist.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/amba/mmci.h>
-#include <linux/pm_runtime.h>
-#include <linux/types.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/reset.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/highmem.h>
+#include <linaos/log2.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/pm.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/sd.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/amba/bus.h>
+#include <linaos/clk.h>
+#include <linaos/scatterlist.h>
+#include <linaos/of.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/amba/mmci.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/types.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/reset.h>
+#include <linaos/gpio/consumer.h>
 
 #include <asm/div64.h>
 #include <asm/io.h>

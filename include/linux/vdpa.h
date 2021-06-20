@@ -2,10 +2,10 @@
 #ifndef _LINUX_VDPA_H
 #define _LINUX_VDPA_H
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/vhost_iotlb.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/vhost_iotlb.h>
 
 /**
  * struct vdpa_calllback - vDPA callback definition.

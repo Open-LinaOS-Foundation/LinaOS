@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *    Copyright (c) 1995-1996 Gary Thomas <gdt@linuxppc.org>
+ *    Copyright (c) 1995-1996 Gary Thomas <gdt@linaosppc.org>
  *      Initial PowerPC version.
  *    Copyright (c) 1996 Cort Dougan <cort@cs.nmt.edu>
  *      Rewritten for PReP
@@ -25,8 +25,8 @@
  *      Kernel execution entry point code.
  */
 
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/mmu.h>
@@ -305,7 +305,7 @@ _ASM_NOKPROBE_SYMBOL(\name\()_virt)
 	beq	2f			/* Bail if no table */
 
 	rlwimi	r11, r10, 22, 20, 29	/* Compute PTE address */
-	lwz	r11, 0(r11)		/* Get Linux PTE */
+	lwz	r11, 0(r11)		/* Get LinaOS PTE */
 	li	r9, _PAGE_PRESENT | _PAGE_ACCESSED
 	andc.	r9, r9, r11		/* Check permission */
 	bne	5f
@@ -385,7 +385,7 @@ _ASM_NOKPROBE_SYMBOL(\name\()_virt)
 	beq	2f			/* Bail if no table */
 
 	rlwimi	r11, r10, 22, 20, 29	/* Compute PTE address */
-	lwz	r11, 0(r11)		/* Get Linux PTE */
+	lwz	r11, 0(r11)		/* Get LinaOS PTE */
 	li	r9, _PAGE_PRESENT | _PAGE_ACCESSED | _PAGE_EXEC
 	andc.	r9, r9, r11		/* Check permission */
 	bne	5f
@@ -538,7 +538,7 @@ WDTException:
 	 * exception space :-).  Both the instruction and data TLB
 	 * miss get to this point to load the TLB.
 	 * 	r10 - TLB_TAG value
-	 * 	r11 - Linux PTE
+	 * 	r11 - LinaOS PTE
 	 *	r9 - available to use
 	 *	PID - loaded with proper value when we get here
 	 *	Upon exit, we reload everything and RFI.

@@ -4,32 +4,32 @@
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/atm_zatm.h>
-#include <linux/capability.h>
-#include <linux/bitops.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/pci.h>
+#include <linaos/errno.h>
+#include <linaos/atm.h>
+#include <linaos/atmdev.h>
+#include <linaos/sonet.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/delay.h>
+#include <linaos/uio.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/atm_zatm.h>
+#include <linaos/capability.h>
+#include <linaos/bitops.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
 #include <asm/byteorder.h>
 #include <asm/string.h>
 #include <asm/io.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
-#include <linux/nospec.h>
+#include <linaos/atomic.h>
+#include <linaos/uaccess.h>
+#include <linaos/nospec.h>
 
 #include "uPD98401.h"
 #include "uPD98402.h"

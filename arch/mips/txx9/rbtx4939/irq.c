@@ -1,6 +1,6 @@
 /*
  * Toshiba RBTX4939 interrupt routines
- * Based on linux/arch/mips/txx9/rbtx4938/irq.c,
+ * Based on linaos/arch/mips/txx9/rbtx4938/irq.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * Copyright (C) 2000-2001,2005-2006 Toshiba Corporation
@@ -9,9 +9,9 @@
  * licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
 #include <asm/mipsregs.h>
 #include <asm/txx9/rbtx4939.h>
 

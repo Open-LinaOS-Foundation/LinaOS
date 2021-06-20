@@ -14,8 +14,8 @@
 # error "you need to define GENL_MAGIC_INCLUDE_FILE before inclusion"
 #endif
 
-#include <linux/genetlink.h>
-#include <linux/types.h>
+#include <linaos/genetlink.h>
+#include <linaos/types.h>
 
 #define CONCAT__(a,b)	a ## b
 #define CONCAT_(a,b)	CONCAT__(a,b)

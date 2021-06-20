@@ -4,7 +4,7 @@
  *
  * Copyright 2007 Wolfson Microelectronics PLC.
  * Author: Graeme Gregory
- *         graeme.gregory@wolfsonmicro.com or linux@wolfsonmicro.com
+ *         graeme.gregory@wolfsonmicro.com or linaos@wolfsonmicro.com
  */
 
 #ifndef __WM8990REGISTERDEFS_H__

@@ -1,5 +1,5 @@
 /*
- * include/linux/platform_data/uio_pruss.h
+ * include/linaos/platform_data/uio_pruss.h
  *
  * Platform data for uio_pruss driver
  *

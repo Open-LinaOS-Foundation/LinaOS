@@ -9,14 +9,14 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ *  Author(s):  Ursula Braun <ubraun@linaos.vnet.ibm.com>
  */
 
-#include <linux/random.h>
-#include <linux/workqueue.h>
-#include <linux/scatterlist.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
+#include <linaos/random.h>
+#include <linaos/workqueue.h>
+#include <linaos/scatterlist.h>
+#include <linaos/wait.h>
+#include <linaos/mutex.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_cache.h>
 

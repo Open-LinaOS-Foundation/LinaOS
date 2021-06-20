@@ -3,18 +3,18 @@
 // pv88080-regulator.c - Regulator device driver for PV88080
 // Copyright (C) 2016  Powerventure Semiconductor Ltd.
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regmap.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regmap.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/regulator/of_regulator.h>
 #include "pv88080-regulator.h"
 
 #define PV88080_MAX_REGULATORS	4

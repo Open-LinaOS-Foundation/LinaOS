@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright (c) 2016-2017 Hisilicon Limited.
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 
 #include "hclge_cmd.h"
 #include "hclge_main.h"

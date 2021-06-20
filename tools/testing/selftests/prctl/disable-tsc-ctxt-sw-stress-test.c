@@ -18,7 +18,7 @@
 
 
 #include <sys/prctl.h>
-#include <linux/prctl.h>
+#include <linaos/prctl.h>
 
 /* Get/set the process' ability to use the timestamp counter instruction */
 #ifndef PR_GET_TSC

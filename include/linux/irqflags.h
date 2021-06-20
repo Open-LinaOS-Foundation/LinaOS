@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/irqflags.h
+ * include/linaos/irqflags.h
  *
  * IRQ flags tracing: follow the state of the hardirq and softirq flags and
  * provide callbacks for transitions between ON and OFF states.
@@ -12,7 +12,7 @@
 #ifndef _LINUX_TRACE_IRQFLAGS_H
 #define _LINUX_TRACE_IRQFLAGS_H
 
-#include <linux/typecheck.h>
+#include <linaos/typecheck.h>
 #include <asm/irqflags.h>
 #include <asm/percpu.h>
 

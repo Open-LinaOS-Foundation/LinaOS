@@ -5,9 +5,9 @@
  * Copyright 2009-2011 Analog Devices Inc.
  */
 
-#include <linux/regmap.h>
-#include <linux/export.h>
-#include <linux/module.h>
+#include <linaos/regmap.h>
+#include <linaos/export.h>
+#include <linaos/module.h>
 
 #include "sigmadsp.h"
 

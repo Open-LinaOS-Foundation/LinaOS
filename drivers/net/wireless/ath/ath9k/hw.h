@@ -17,10 +17,10 @@
 #ifndef HW_H
 #define HW_H
 
-#include <linux/if_ether.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/firmware.h>
+#include <linaos/if_ether.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/firmware.h>
 
 #include "mac.h"
 #include "ani.h"

@@ -7,15 +7,15 @@
  *    Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com),
  */
 
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/sysrq.h>
+#include <linaos/module.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/sysrq.h>
 
-#include <linux/consolemap.h>
-#include <linux/kbd_kern.h>
-#include <linux/kbd_diacr.h>
-#include <linux/uaccess.h>
+#include <linaos/consolemap.h>
+#include <linaos/kbd_kern.h>
+#include <linaos/kbd_diacr.h>
+#include <linaos/uaccess.h>
 
 #include "keyboard.h"
 

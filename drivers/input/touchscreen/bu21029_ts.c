@@ -9,16 +9,16 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/timer.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/input/touchscreen.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/timer.h>
 
 /*
  * HW_ID1 Register (PAGE=0, ADDR=0x0E, Reset value=0x02, Read only)

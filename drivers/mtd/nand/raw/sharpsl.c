@@ -6,18 +6,18 @@
  *  Based on Sharp's NAND driver sharp_sl.c
  */
 
-#include <linux/genhd.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/sharpsl.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <linaos/genhd.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/nand-ecc-sw-hamming.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/sharpsl.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
 
 struct sharpsl_nand {
 	struct nand_controller	controller;

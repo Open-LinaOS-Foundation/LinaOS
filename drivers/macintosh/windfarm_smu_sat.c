@@ -5,14 +5,14 @@
  * Copyright (C) 2005 Paul Mackerras, IBM Corp. <paulus@samba.org>
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/wait.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
 #include <asm/prom.h>
 #include <asm/smu.h>
 #include <asm/pmac_low_i2c.h>

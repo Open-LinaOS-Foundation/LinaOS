@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * QNX4 file system, Linux implementation.
+ * QNX4 file system, LinaOS implementation.
  *
  * Version : 0.2.1
  *
@@ -14,8 +14,8 @@
  * 28-06-1998 by Frank Denis : qnx4_free_inode (to be fixed) .
  */
 
-#include <linux/buffer_head.h>
-#include <linux/bitops.h>
+#include <linaos/buffer_head.h>
+#include <linaos/bitops.h>
 #include "qnx4.h"
 
 unsigned long qnx4_count_free_blocks(struct super_block *sb)

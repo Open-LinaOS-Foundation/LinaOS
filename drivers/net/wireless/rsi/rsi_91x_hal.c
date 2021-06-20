@@ -14,7 +14,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 #include <net/bluetooth/bluetooth.h>
 #include "rsi_mgmt.h"
 #include "rsi_hal.h"

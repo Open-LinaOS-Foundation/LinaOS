@@ -82,17 +82,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/kgdb.h>
-#include <linux/ctype.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/nmi.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/sched/task.h>
-#include <linux/kallsyms.h>
+#include <linaos/kernel.h>
+#include <linaos/kgdb.h>
+#include <linaos/ctype.h>
+#include <linaos/uaccess.h>
+#include <linaos/syscalls.h>
+#include <linaos/nmi.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/module.h>
+#include <linaos/sched/task.h>
+#include <linaos/kallsyms.h>
 
 #include <asm/sections.h>
 

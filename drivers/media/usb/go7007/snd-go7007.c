@@ -3,18 +3,18 @@
  * Copyright (C) 2005-2006 Micronas USA Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/time.h>
+#include <linaos/mm.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

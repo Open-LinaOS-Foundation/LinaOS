@@ -1,6 +1,6 @@
 What:		/sys/bus/*/drivers/ufshcd/*/auto_hibern8
 Date:		March 2018
-Contact:	linux-scsi@vger.kernel.org
+Contact:	linaos-scsi@vger.kernel.org
 Description:
 		This file contains the auto-hibernate idle timer setting of a
 		UFS host controller. A value of '0' means auto-hibernate is not

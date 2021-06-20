@@ -8,19 +8,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/version.h>
-#include <linux/pstore.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/compiler.h>
-#include <linux/pstore_ram.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/version.h>
+#include <linaos/pstore.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/compiler.h>
+#include <linaos/pstore_ram.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 #include "internal.h"
 
 #define RAMOOPS_KERNMSG_HDR "===="

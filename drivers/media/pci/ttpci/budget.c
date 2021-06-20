@@ -14,7 +14,7 @@
  *           Oliver Endriss <o.endriss@gmx.de> and
  *           Andreas 'randy' Weinberger
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://linaostv.org
  */
 
 #include "budget.h"

@@ -8,7 +8,7 @@
 #ifndef _ASM_WATCH_H
 #define _ASM_WATCH_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #include <asm/mipsregs.h>
 

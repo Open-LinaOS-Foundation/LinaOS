@@ -15,9 +15,9 @@
 #ifndef LINUX_IEEE80211_H
 #define LINUX_IEEE80211_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
+#include <linaos/types.h>
+#include <linaos/if_ether.h>
+#include <linaos/etherdevice.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 

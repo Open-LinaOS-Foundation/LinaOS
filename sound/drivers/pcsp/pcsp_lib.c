@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * PC-Speaker driver for Linux
+ * PC-Speaker driver for LinaOS
  *
  * Copyright (C) 1993-1997  Michael Beck
  * Copyright (C) 1997-2001  David Woodhouse
  * Copyright (C) 2001-2008  Stas Sergeev
  */
 
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/gfp.h>
+#include <linaos/moduleparam.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 #include <sound/pcm.h>
 #include "pcsp.h"
 

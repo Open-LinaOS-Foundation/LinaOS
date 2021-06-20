@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2009 Manuel Gebele <forensixs@gmx.de>, Germany
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -27,14 +27,14 @@
  *  - pwm
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/errno.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
+#include <linaos/poll.h>
+#include <linaos/uaccess.h>
 
 #include "../comedi_usb.h"
 

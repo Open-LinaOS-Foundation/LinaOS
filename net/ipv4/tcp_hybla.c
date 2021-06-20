@@ -8,10 +8,10 @@
  *   International Journal on satellite Communications,
  *				       September 2004
  *    Daniele Lacamera
- *    root at danielinux.net
+ *    root at danielinaos.net
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <net/tcp.h>
 
 /* Tcp Hybla structure. */

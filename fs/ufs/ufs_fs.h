@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/ufs_fs.h
+ *  linaos/include/linaos/ufs_fs.h
  *
  * Copyright (C) 1996
  * Adrian Rodriguez (adrian@franklins-tower.rutgers.edu)
@@ -31,11 +31,11 @@
 #ifndef __LINUX_UFS_FS_H
 #define __LINUX_UFS_FS_H
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/stat.h>
-#include <linux/fs.h>
-#include <linux/workqueue.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/stat.h>
+#include <linaos/fs.h>
+#include <linaos/workqueue.h>
 
 #include <asm/div64.h>
 typedef __u64 __bitwise __fs64;

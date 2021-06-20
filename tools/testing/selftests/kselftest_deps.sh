@@ -3,7 +3,7 @@
 # kselftest_deps.sh
 #
 # Checks for kselftest build dependencies on the build system.
-# Copyright (c) 2020 Shuah Khan <skhan@linuxfoundation.org>
+# Copyright (c) 2020 Shuah Khan <skhan@linaosfoundation.org>
 #
 #
 
@@ -13,8 +13,8 @@ usage()
 echo -e "Usage: $0 -[p] <compiler> [test_name]\n"
 echo -e "\tkselftest_deps.sh [-p] gcc"
 echo -e "\tkselftest_deps.sh [-p] gcc vm"
-echo -e "\tkselftest_deps.sh [-p] aarch64-linux-gnu-gcc"
-echo -e "\tkselftest_deps.sh [-p] aarch64-linux-gnu-gcc vm\n"
+echo -e "\tkselftest_deps.sh [-p] aarch64-linaos-gnu-gcc"
+echo -e "\tkselftest_deps.sh [-p] aarch64-linaos-gnu-gcc vm\n"
 echo "- Should be run in selftests directory in the kernel repo."
 echo "- Checks if Kselftests can be built/cross-built on a system."
 echo "- Parses all test/sub-test Makefile to find library dependencies."

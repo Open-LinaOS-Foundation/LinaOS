@@ -9,18 +9,18 @@
  *              Vlad Lungu   <vlad.lungu@windriver.com>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/videodev2.h>
-#include <linux/kmod.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/videodev2.h>
+#include <linaos/kmod.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/gpio.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
@@ -100,7 +100,7 @@ static inline struct vip_buffer *to_vip_buffer(struct vb2_v4l2_buffer *vb2)
  * @sequence: sequence number of acquired buffer
  * @active: current active buffer
  * @lock: used in videobuf2 callback
- * @v4l_lock: serialize its video4linux ioctls
+ * @v4l_lock: serialize its video4linaos ioctls
  * @tcount: Number of top frames
  * @bcount: Number of bottom frames
  * @overflow: Number of FIFO overflows

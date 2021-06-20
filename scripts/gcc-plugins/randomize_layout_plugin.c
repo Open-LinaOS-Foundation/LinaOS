@@ -57,7 +57,7 @@ static const struct whitelist_entry whitelist[] = {
 	{ }
 };
 
-/* from old Linux dcache.h */
+/* from old LinaOS dcache.h */
 static inline unsigned long
 partial_name_hash(unsigned long c, unsigned long prevhash)
 {

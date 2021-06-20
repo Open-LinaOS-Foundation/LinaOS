@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
 #include <asm/mtrr.h>
 #include <asm/msr.h>
 

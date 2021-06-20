@@ -11,7 +11,7 @@
 #include <sound/rawmidi.h>
 #include <sound/ac97_codec.h>
 #include <sound/timer.h>
-#include <linux/gameport.h>
+#include <linaos/gameport.h>
 
 /*
  *  Direct registers

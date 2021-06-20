@@ -4,17 +4,17 @@
  *
  * Pentium III FXSR, SSE support
  * General FPU state handling cleanups
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@valinaos.com>, May 2000
  * x86-64 work by Andi Kleen 2002
  */
 
 #ifndef _ASM_X86_FPU_INTERNAL_H
 #define _ASM_X86_FPU_INTERNAL_H
 
-#include <linux/compat.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <linaos/compat.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
 
 #include <asm/user.h>
 #include <asm/fpu/api.h>

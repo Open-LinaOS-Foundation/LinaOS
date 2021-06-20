@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/ia64/kernel/irq.c
+ *	linaos/arch/ia64/kernel/irq.c
  *
  *	Copyright (C) 1992, 1998 Linus Torvalds, Ingo Molnar
  *
@@ -18,11 +18,11 @@
  */
 
 #include <asm/delay.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel_stat.h>
 
 #include <asm/mca.h>
 #include <asm/xtp.h>

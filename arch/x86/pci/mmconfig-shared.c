@@ -11,14 +11,14 @@
  * themselves.
  */
 
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bitmap.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/rculist.h>
+#include <linaos/acpi.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/bitmap.h>
+#include <linaos/dmi.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/rculist.h>
 #include <asm/e820/api.h>
 #include <asm/pci_x86.h>
 #include <asm/acpi.h>

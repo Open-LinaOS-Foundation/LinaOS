@@ -181,12 +181,12 @@
 
 		reset {
 			label = "reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&gpio0 28 GPIO_ACTIVE_LOW>;
 		};
 		wps {
 			label = "wps";
-			linux,code = <KEY_WPS_BUTTON>;
+			linaos,code = <KEY_WPS_BUTTON>;
 			gpios = <&gpio1 14 GPIO_ACTIVE_LOW>;
 		};
 	};

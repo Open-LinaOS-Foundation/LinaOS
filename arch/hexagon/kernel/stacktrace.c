@@ -2,14 +2,14 @@
 /*
  * Stacktrace support for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/stacktrace.h>
-#include <linux/thread_info.h>
-#include <linux/module.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/stacktrace.h>
+#include <linaos/thread_info.h>
+#include <linaos/module.h>
 
 struct stackframe {
 	unsigned long fp;

@@ -4,13 +4,13 @@
  *
  * Authors:
  *	Eric Anholt <eric@anholt.net>
- *	Dave Airlie <airlied@linux.ie>
+ *	Dave Airlie <airlied@linaos.ie>
  *	Jesse Barnes <jesse.barnes@intel.com>
  */
 
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
+#include <linaos/dmi.h>
+#include <linaos/i2c.h>
+#include <linaos/pm_runtime.h>
 
 #include <drm/drm_simple_kms_helper.h>
 

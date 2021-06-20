@@ -8,11 +8,11 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/bitmap.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/bitmap.h>
+#include <linaos/io.h>
 #include <mach/ilsel.h>
 
 /*

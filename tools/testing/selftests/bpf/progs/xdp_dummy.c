@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
 #define KBUILD_MODNAME "xdp_dummy"
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 SEC("xdp_dummy")

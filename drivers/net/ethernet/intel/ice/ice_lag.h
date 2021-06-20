@@ -4,7 +4,7 @@
 #ifndef _ICE_LAG_H_
 #define _ICE_LAG_H_
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 
 /* LAG roles for netdev */
 enum ice_lag_role {

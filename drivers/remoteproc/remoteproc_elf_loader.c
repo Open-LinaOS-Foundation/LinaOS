@@ -17,10 +17,10 @@
 
 #define pr_fmt(fmt)    "%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/remoteproc.h>
-#include <linux/elf.h>
+#include <linaos/module.h>
+#include <linaos/firmware.h>
+#include <linaos/remoteproc.h>
+#include <linaos/elf.h>
 
 #include "remoteproc_internal.h"
 #include "remoteproc_elf_helpers.h"

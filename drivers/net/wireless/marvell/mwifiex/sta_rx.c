@@ -17,7 +17,7 @@
  * this warranty disclaimer.
  */
 
-#include <uapi/linux/ipv6.h>
+#include <uapi/linaos/ipv6.h>
 #include <net/ndisc.h>
 #include "decl.h"
 #include "ioctl.h"

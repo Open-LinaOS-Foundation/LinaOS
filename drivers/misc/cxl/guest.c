@@ -3,9 +3,9 @@
  * Copyright 2015 IBM Corp.
  */
 
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/delay.h>
 
 #include "cxl.h"
 #include "hcalls.h"

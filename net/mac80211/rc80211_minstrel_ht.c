@@ -3,13 +3,13 @@
  * Copyright (C) 2010-2013 Felix Fietkau <nbd@openwrt.org>
  * Copyright (C) 2019-2020 Intel Corporation
  */
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/debugfs.h>
-#include <linux/random.h>
-#include <linux/moduleparam.h>
-#include <linux/ieee80211.h>
+#include <linaos/netdevice.h>
+#include <linaos/types.h>
+#include <linaos/skbuff.h>
+#include <linaos/debugfs.h>
+#include <linaos/random.h>
+#include <linaos/moduleparam.h>
+#include <linaos/ieee80211.h>
 #include <net/mac80211.h>
 #include "rate.h"
 #include "sta_info.h"

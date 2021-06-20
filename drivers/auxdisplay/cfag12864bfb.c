@@ -9,17 +9,17 @@
  *        Date: 2006-10-31
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/cfag12864b.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/fb.h>
+#include <linaos/mm.h>
+#include <linaos/platform_device.h>
+#include <linaos/string.h>
+#include <linaos/uaccess.h>
+#include <linaos/cfag12864b.h>
 
 #define CFAG12864BFB_NAME "cfag12864bfb"
 

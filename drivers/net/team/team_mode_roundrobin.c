@@ -4,13 +4,13 @@
  * Copyright (c) 2011 Jiri Pirko <jpirko@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/if_team.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_team.h>
 
 struct rr_priv {
 	unsigned int sent_packets;

@@ -8,10 +8,10 @@
  *		 Peter Oberparleiter <peter.oberparleiter@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
 #include <asm/ccwdev.h>
 #include <asm/setup.h>
 #include <asm/cio.h>

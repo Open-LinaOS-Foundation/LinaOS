@@ -4,7 +4,7 @@
  * Author: Jacob Chen <jacob-chen@iotwrt.com>
  */
 
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

@@ -7,14 +7,14 @@
  * Author: Sean Cross <xobs@kosagi.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/of_device.h>
+#include <linaos/module.h>
+#include <linaos/pm.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/regulator/consumer.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

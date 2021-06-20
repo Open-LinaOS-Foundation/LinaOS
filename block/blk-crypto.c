@@ -9,11 +9,11 @@
 
 #define pr_fmt(fmt) "blk-crypto: " fmt
 
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/keyslot-manager.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/keyslot-manager.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 #include "blk-crypto-internal.h"
 

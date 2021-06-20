@@ -1,4 +1,4 @@
-/* mac89x0.c: A Crystal Semiconductor CS89[02]0 driver for linux. */
+/* mac89x0.c: A Crystal Semiconductor CS89[02]0 driver for linaos. */
 /*
 	Written 1996 by Russell Nelson, with reference to skeleton.c
 	written 1993-1994 by Donald Becker.
@@ -12,7 +12,7 @@
   Changelog:
 
   Mike Cruse        : mcruse@cti-ltd.com
-                    : Changes for Linux 2.0 compatibility.
+                    : Changes for LinaOS 2.0 compatibility.
                     : Added dev_id parameter in net_interrupt(),
                     : request_irq() and free_irq(). Just NULL for now.
 
@@ -23,7 +23,7 @@
 
   Mike Cruse        : Rewrote init_module() and cleanup_module using 8390.c
                     : as an example. Disabled autoprobing in init_module(),
-                    : not a good thing to do to other devices while Linux
+                    : not a good thing to do to other devices while LinaOS
                     : is running from all accounts.
 
   Alan Cox          : Removed 1.2 support, added 2.1 extra counters.
@@ -61,7 +61,7 @@
 static const char version[] =
 "cs89x0.c:v1.02 11/26/96 Russell Nelson <nelson@crynwr.com>\n";
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /*
   Sources:
@@ -72,23 +72,23 @@ static const char version[] =
 
 */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/nubus.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/in.h>
+#include <linaos/string.h>
+#include <linaos/nubus.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/platform_device.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/delay.h>
+#include <linaos/bitops.h>
+#include <linaos/gfp.h>
 
 #include <asm/io.h>
 #include <asm/hwtest.h>

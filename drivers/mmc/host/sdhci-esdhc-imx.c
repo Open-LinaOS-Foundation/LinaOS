@@ -8,24 +8,24 @@
  *   Author: Wolfram Sang <kernel@pengutronix.de>
  */
 
-#include <linux/bitfield.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pm_qos.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_data/mmc-esdhc-imx.h>
-#include <linux/pm_runtime.h>
+#include <linaos/bitfield.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/pm_qos.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_data/mmc-esdhc-imx.h>
+#include <linaos/pm_runtime.h>
 #include "sdhci-pltfm.h"
 #include "sdhci-esdhc.h"
 #include "cqhci.h"
@@ -1375,12 +1375,12 @@ static void sdhci_esdhc_imx_hwinit(struct sdhci_host *host)
 		}
 
 		/*
-		 * On i.MX8MM, we are running Dual Linux OS, with 1st Linux using SD Card
-		 * as rootfs storage, 2nd Linux using eMMC as rootfs storage. We let the
-		 * the 1st linux configure power/clock for the 2nd Linux.
+		 * On i.MX8MM, we are running Dual LinaOS OS, with 1st LinaOS using SD Card
+		 * as rootfs storage, 2nd LinaOS using eMMC as rootfs storage. We let the
+		 * the 1st linaos configure power/clock for the 2nd LinaOS.
 		 *
-		 * When the 2nd Linux is booting into rootfs stage, we let the 1st Linux
-		 * to destroy the 2nd linux, then restart the 2nd linux, we met SDHCI dump.
+		 * When the 2nd LinaOS is booting into rootfs stage, we let the 1st LinaOS
+		 * to destroy the 2nd linaos, then restart the 2nd linaos, we met SDHCI dump.
 		 * After we clear the pending interrupt and halt CQCTL, issue gone.
 		 */
 		if (cq_host) {

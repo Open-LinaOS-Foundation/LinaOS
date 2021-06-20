@@ -3,7 +3,7 @@
  * Copyright (C) 2009 Thomas Chou <thomas@wytron.com.tw>
  */
 #include <asm/page.h>
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 #include <asm/cache.h>
 #include <asm/thread_info.h>
 

@@ -3,7 +3,7 @@
  * Copyright (C) 2013 Regents of the University of California
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asm.h>
 
 /* void *memcpy(void *, const void *, size_t) */

@@ -4,14 +4,14 @@
  * Copyright 2016 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/anon_inodes.h>
-#include <linux/file.h>
-#include <linux/debugfs.h>
-#include <linux/pgtable.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kvm.h>
+#include <linaos/kvm_host.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/file.h>
+#include <linaos/debugfs.h>
+#include <linaos/pgtable.h>
 
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>

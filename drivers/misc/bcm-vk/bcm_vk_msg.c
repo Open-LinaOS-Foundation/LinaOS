@@ -3,16 +3,16 @@
  * Copyright 2018-2020 Broadcom.
  */
 
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/hash.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/sizes.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
+#include <linaos/hash.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/poll.h>
+#include <linaos/sizes.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
 
 #include "bcm_vk.h"
 #include "bcm_vk_msg.h"

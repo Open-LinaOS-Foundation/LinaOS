@@ -11,14 +11,14 @@
  * kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
 #include <asm/io.h>
 
-#include <linux/fsl/bestcomm/bestcomm.h>
-#include <linux/fsl/bestcomm/bestcomm_priv.h>
-#include <linux/fsl/bestcomm/fec.h>
+#include <linaos/fsl/bestcomm/bestcomm.h>
+#include <linaos/fsl/bestcomm/bestcomm_priv.h>
+#include <linaos/fsl/bestcomm/fec.h>
 
 
 /* ======================================================================== */

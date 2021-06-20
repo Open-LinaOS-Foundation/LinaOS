@@ -14,10 +14,10 @@
 
 #include "clk-kona.h"
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/clk-provider.h>
 
 /*
  * "Policies" affect the frequencies of bus clocks provided by a

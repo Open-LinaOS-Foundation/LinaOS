@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
-#include <linux/export.h>
-#include <linux/bitrev.h>
+#include <linaos/delay.h>
+#include <linaos/mISDNif.h>
+#include <linaos/mISDNdsp.h>
+#include <linaos/export.h>
+#include <linaos/bitrev.h>
 #include "core.h"
 #include "dsp.h"
 

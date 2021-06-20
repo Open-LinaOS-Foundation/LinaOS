@@ -4,17 +4,17 @@
 * Author: Tianping.Fang <tianping.fang@mediatek.com>
 */
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/mfd/mt6397/rtc.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/mt6397/core.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/rtc.h>
+#include <linaos/mfd/mt6397/rtc.h>
+#include <linaos/mod_devicetable.h>
 
 static int mtk_rtc_write_trigger(struct mt6397_rtc *rtc)
 {

@@ -4,7 +4,7 @@
  * Copyright 2020 Google LLC.
  */
 
-#include "vmlinux.h"
+#include "vmlinaos.h"
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 #include  <errno.h>
@@ -105,7 +105,7 @@ int BPF_PROG(test_int_hook, struct vm_area_struct *vma,
 }
 
 SEC("lsm.s/bprm_committed_creds")
-int BPF_PROG(test_void_hook, struct linux_binprm *bprm)
+int BPF_PROG(test_void_hook, struct linaos_binprm *bprm)
 {
 	__u32 pid = bpf_get_current_pid_tgid() >> 32;
 	struct inner_map *inner_map;

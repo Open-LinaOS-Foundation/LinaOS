@@ -24,7 +24,7 @@
 #include "xfs_reflink.h"
 #include "xfs_ialloc.h"
 
-#include <linux/iversion.h>
+#include <linaos/iversion.h>
 
 /*
  * Allocate and initialise an xfs_inode.

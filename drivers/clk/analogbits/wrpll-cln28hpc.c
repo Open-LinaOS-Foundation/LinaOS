@@ -21,11 +21,11 @@
  *   https://static.dev.sifive.com/FU540-C000-v1.0.pdf
  */
 
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/log2.h>
-#include <linux/math64.h>
-#include <linux/clk/analogbits-wrpll-cln28hpc.h>
+#include <linaos/bug.h>
+#include <linaos/err.h>
+#include <linaos/log2.h>
+#include <linaos/math64.h>
+#include <linaos/clk/analogbits-wrpll-cln28hpc.h>
 
 /* MIN_INPUT_FREQ: minimum input clock frequency, in Hz (Fref_min) */
 #define MIN_INPUT_FREQ			7000000
@@ -324,7 +324,7 @@ int wrpll_configure_for_rate(struct wrpll_cfg *c, u32 target_rate,
  *
  * Return: the PLL's output clock rate, in Hz.  The return value from
  *         this function is intended to be convenient to pass directly
- *         to the Linux clock framework; thus there is no explicit
+ *         to the LinaOS clock framework; thus there is no explicit
  *         error return value.
  */
 unsigned long wrpll_calc_output_rate(const struct wrpll_cfg *c,

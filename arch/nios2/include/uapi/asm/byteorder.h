@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2009   Thomas Chou <thomas@wytron.com.tw>
  * Copyright (C) 2004   Microtronix Datacom Ltd
@@ -18,6 +18,6 @@
 #ifndef _ASM_NIOS2_BYTEORDER_H
 #define _ASM_NIOS2_BYTEORDER_H
 
-#include <linux/byteorder/little_endian.h>
+#include <linaos/byteorder/little_endian.h>
 
 #endif

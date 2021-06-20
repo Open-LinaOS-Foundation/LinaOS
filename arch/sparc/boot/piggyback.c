@@ -63,7 +63,7 @@ static void die(const char *str)
 static void usage(void)
 {
 	/* fs_img.gz is an image of initial ramdisk. */
-	fprintf(stderr, "Usage: piggyback bits vmlinux.aout System.map fs_img.gz\n");
+	fprintf(stderr, "Usage: piggyback bits vmlinaos.aout System.map fs_img.gz\n");
 	fprintf(stderr, "\tKernel image will be modified in place.\n");
 	exit(1);
 }

@@ -7,25 +7,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/string.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/inet.h>
-#include <linux/interrupt.h>
-#include <linux/netpoll.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/netlink.h>
-#include <linux/net_dropmon.h>
-#include <linux/percpu.h>
-#include <linux/timer.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/string.h>
+#include <linaos/if_arp.h>
+#include <linaos/inetdevice.h>
+#include <linaos/inet.h>
+#include <linaos/interrupt.h>
+#include <linaos/netpoll.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
+#include <linaos/netlink.h>
+#include <linaos/net_dropmon.h>
+#include <linaos/percpu.h>
+#include <linaos/timer.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 #include <net/genetlink.h>
 #include <net/netevent.h>
 #include <net/flow_offload.h>

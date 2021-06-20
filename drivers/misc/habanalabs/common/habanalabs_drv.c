@@ -10,9 +10,9 @@
 
 #include "habanalabs.h"
 
-#include <linux/pci.h>
-#include <linux/aer.h>
-#include <linux/module.h>
+#include <linaos/pci.h>
+#include <linaos/aer.h>
+#include <linaos/module.h>
 
 #define HL_DRIVER_AUTHOR	"HabanaLabs Kernel Driver Team"
 

@@ -2,16 +2,16 @@
 //
 // Copyright (c) 2019 MediaTek Inc.
 
-#include <linux/mfd/mt6358/registers.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/mt6358-regulator.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/mfd/mt6358/registers.h>
+#include <linaos/mfd/mt6397/core.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/mt6358-regulator.h>
+#include <linaos/regulator/of_regulator.h>
 
 #define MT6358_BUCK_MODE_AUTO	0
 #define MT6358_BUCK_MODE_FORCE_PWM	1

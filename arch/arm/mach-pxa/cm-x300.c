@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/cm-x300.c
+ * linaos/arch/arm/mach-pxa/cm-x300.c
  *
  * Support for the CompuLab CM-X300 modules
  *
@@ -11,34 +11,34 @@
  */
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
 
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/dm9000.h>
-#include <linux/leds.h>
-#include <linux/platform_data/rtc-v3020.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/dm9000.h>
+#include <linaos/leds.h>
+#include <linaos/platform_data/rtc-v3020.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
 
-#include <linux/i2c.h>
-#include <linux/platform_data/pca953x.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/pca953x.h>
+#include <linaos/platform_data/i2c-pxa.h>
 
-#include <linux/mfd/da903x.h>
-#include <linux/regulator/machine.h>
-#include <linux/power_supply.h>
-#include <linux/apm-emulation.h>
+#include <linaos/mfd/da903x.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/power_supply.h>
+#include <linaos/apm-emulation.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_gpio.h>
-#include <linux/spi/tdo24m.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi_gpio.h>
+#include <linaos/spi/tdo24m.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -47,12 +47,12 @@
 
 #include "pxa300.h"
 #include "pxa27x-udc.h"
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/mtd-nand-pxa3xx.h>
 #include <mach/audio.h>
-#include <linux/platform_data/usb-pxa3xx-ulpi.h>
+#include <linaos/platform_data/usb-pxa3xx-ulpi.h>
 
 #include <asm/mach/map.h>
 

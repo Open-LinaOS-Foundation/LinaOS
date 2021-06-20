@@ -5,7 +5,7 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include <asm/fpu.h>
 
 #ifdef CONFIG_ISA_ARCOMPACT

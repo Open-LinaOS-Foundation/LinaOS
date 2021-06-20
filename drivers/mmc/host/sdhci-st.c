@@ -9,12 +9,12 @@
  * Based on sdhci-cns3xxx.c
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/mmc/host.h>
-#include <linux/reset.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/mmc/host.h>
+#include <linaos/reset.h>
 #include "sdhci-pltfm.h"
 
 struct st_mmc_platform_data {

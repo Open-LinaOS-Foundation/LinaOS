@@ -33,16 +33,16 @@
 #ifndef MLX4_DEVICE_H
 #define MLX4_DEVICE_H
 
-#include <linux/if_ether.h>
-#include <linux/pci.h>
-#include <linux/completion.h>
-#include <linux/radix-tree.h>
-#include <linux/cpu_rmap.h>
-#include <linux/crash_dump.h>
+#include <linaos/if_ether.h>
+#include <linaos/pci.h>
+#include <linaos/completion.h>
+#include <linaos/radix-tree.h>
+#include <linaos/cpu_rmap.h>
+#include <linaos/crash_dump.h>
 
-#include <linux/refcount.h>
+#include <linaos/refcount.h>
 
-#include <linux/timecounter.h>
+#include <linaos/timecounter.h>
 
 #define DEFAULT_UAR_PAGE_SHIFT  12
 

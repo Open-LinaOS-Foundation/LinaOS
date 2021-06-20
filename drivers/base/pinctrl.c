@@ -9,10 +9,10 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/device.h>
-#include <linux/pinctrl/devinfo.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/pinctrl/devinfo.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/slab.h>
 
 /**
  * pinctrl_bind_pins() - called by the device core before probe
@@ -65,7 +65,7 @@ int pinctrl_bind_pins(struct device *dev)
 	/*
 	 * If power management is enabled, we also look for the optional
 	 * sleep and idle pin states, with semantics as defined in
-	 * <linux/pinctrl/pinctrl-state.h>
+	 * <linaos/pinctrl/pinctrl-state.h>
 	 */
 	dev->pins->sleep_state = pinctrl_lookup_state(dev->pins->p,
 					PINCTRL_STATE_SLEEP);

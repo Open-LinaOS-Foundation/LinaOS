@@ -178,7 +178,7 @@ static void BITSFUNC(go)(void *raw_addr, size_t raw_len,
 	mapping_size = (stripped_len + 4095) / 4096 * 4096;
 
 	fprintf(outfile, "/* AUTOMATICALLY GENERATED -- DO NOT EDIT */\n\n");
-	fprintf(outfile, "#include <linux/linkage.h>\n");
+	fprintf(outfile, "#include <linaos/linkage.h>\n");
 	fprintf(outfile, "#include <asm/page_types.h>\n");
 	fprintf(outfile, "#include <asm/vdso.h>\n");
 	fprintf(outfile, "\n");

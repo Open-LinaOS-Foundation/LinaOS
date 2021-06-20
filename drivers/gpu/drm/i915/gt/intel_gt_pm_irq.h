@@ -6,7 +6,7 @@
 #ifndef INTEL_GT_PM_IRQ_H
 #define INTEL_GT_PM_IRQ_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct intel_gt;
 

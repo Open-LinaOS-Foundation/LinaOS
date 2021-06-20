@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/pcmcia/pxa2xx_vpac270.c
+ * linaos/drivers/pcmcia/pxa2xx_vpac270.c
  *
  * Driver for Voipac PXA270 PCMCIA and CF sockets
  *
  * Copyright (C) 2010-2011 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include <asm/mach-types.h>
 

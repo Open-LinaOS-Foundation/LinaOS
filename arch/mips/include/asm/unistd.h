@@ -18,11 +18,11 @@
 #include <asm/unistd_nr_o32.h>
 
 #ifdef CONFIG_MIPS32_N32
-#define NR_syscalls  (__NR_N32_Linux + __NR_N32_Linux_syscalls)
+#define NR_syscalls  (__NR_N32_LinaOS + __NR_N32_LinaOS_syscalls)
 #elif defined(CONFIG_64BIT)
-#define NR_syscalls  (__NR_64_Linux + __NR_64_Linux_syscalls)
+#define NR_syscalls  (__NR_64_LinaOS + __NR_64_LinaOS_syscalls)
 #else
-#define NR_syscalls  (__NR_O32_Linux + __NR_O32_Linux_syscalls)
+#define NR_syscalls  (__NR_O32_LinaOS + __NR_O32_LinaOS_syscalls)
 #endif
 
 #ifndef __ASSEMBLY__

@@ -2,7 +2,7 @@
 #ifndef ARCH_POWERPC_MM_BOOK3S64_INTERNAL_H
 #define ARCH_POWERPC_MM_BOOK3S64_INTERNAL_H
 
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 
 extern bool stress_slb_enabled;
 

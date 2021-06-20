@@ -3,10 +3,10 @@
  * Copyright (C) 2015, 2016 ARM Ltd.
  */
 
-#include <linux/uaccess.h>
-#include <linux/interrupt.h>
-#include <linux/cpu.h>
-#include <linux/kvm_host.h>
+#include <linaos/uaccess.h>
+#include <linaos/interrupt.h>
+#include <linaos/cpu.h>
+#include <linaos/kvm_host.h>
 #include <kvm/arm_vgic.h>
 #include <asm/kvm_emulate.h>
 #include <asm/kvm_mmu.h>

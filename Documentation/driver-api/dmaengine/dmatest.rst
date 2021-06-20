@@ -2,7 +2,7 @@
 DMA Test Guide
 ==============
 
-Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+Andy Shevchenko <andriy.shevchenko@linaos.intel.com>
 
 This small document introduces how to test DMA drivers using dmatest module.
 

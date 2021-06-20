@@ -24,7 +24,7 @@
  *	jim liu <jim.liu@intel.com>
  */
 
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 
 #include <drm/drm.h>
 #include <drm/drm_crtc.h>

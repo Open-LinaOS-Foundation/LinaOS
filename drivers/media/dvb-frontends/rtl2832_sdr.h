@@ -5,13 +5,13 @@
  * Copyright (C) 2013 Antti Palosaari <crope@iki.fi>
  *
  * GNU Radio plugin "gr-kernel" for device usage will be on:
- * http://git.linuxtv.org/anttip/gr-kernel.git
+ * http://git.linaostv.org/anttip/gr-kernel.git
  */
 
 #ifndef RTL2832_SDR_H
 #define RTL2832_SDR_H
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/v4l2-subdev.h>
 #include <media/dvb_frontend.h>
 

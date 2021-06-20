@@ -5,14 +5,14 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@linaos.intel.com>
 //
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/workqueue.h>
+#include <linaos/bits.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/firmware.h>
+#include <linaos/workqueue.h>
 #include <sound/tlv.h>
 #include <sound/pcm_params.h>
 #include <uapi/sound/sof/tokens.h>

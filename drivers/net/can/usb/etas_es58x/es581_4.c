@@ -9,7 +9,7 @@
  * Copyright (c) 2020, 2021 Vincent Mailhol <mailhol.vincent@wanadoo.fr>
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/unaligned.h>
 
 #include "es58x_core.h"

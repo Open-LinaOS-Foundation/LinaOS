@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/lockd/lockd.h
+ * linaos/include/linaos/lockd/lockd.h
  *
  * General-purpose lockd include file.
  *
@@ -10,20 +10,20 @@
 #ifndef LINUX_LOCKD_LOCKD_H
 #define LINUX_LOCKD_LOCKD_H
 
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
 #include <net/ipv6.h>
-#include <linux/fs.h>
-#include <linux/kref.h>
-#include <linux/refcount.h>
-#include <linux/utsname.h>
-#include <linux/lockd/bind.h>
-#include <linux/lockd/xdr.h>
+#include <linaos/fs.h>
+#include <linaos/kref.h>
+#include <linaos/refcount.h>
+#include <linaos/utsname.h>
+#include <linaos/lockd/bind.h>
+#include <linaos/lockd/xdr.h>
 #ifdef CONFIG_LOCKD_V4
-#include <linux/lockd/xdr4.h>
+#include <linaos/lockd/xdr4.h>
 #endif
-#include <linux/lockd/debug.h>
-#include <linux/sunrpc/svc.h>
+#include <linaos/lockd/debug.h>
+#include <linaos/sunrpc/svc.h>
 
 /*
  * Version string

@@ -2,11 +2,11 @@
 /*
  *  Interrupt handing routines for NEC VR4100 series.
  *
- *  Copyright (C) 2005-2007  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2005-2007  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <linaos/export.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/vr41xx/irq.h>

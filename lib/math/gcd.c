@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/gcd.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/gcd.h>
+#include <linaos/export.h>
 
 /*
  * This implements the binary GCD algorithm. (Often attributed to Stein,

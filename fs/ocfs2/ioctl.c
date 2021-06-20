@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/ocfs2/ioctl.c
+ * linaos/fs/ocfs2/ioctl.c
  *
  * Copyright (C) 2006 Herbert Poetzl
  * adapted from Remy Card's ext2/ioctl.c
  */
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/blkdev.h>
-#include <linux/compat.h>
-#include <linux/fileattr.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/blkdev.h>
+#include <linaos/compat.h>
+#include <linaos/fileattr.h>
 
 #include <cluster/masklog.h>
 

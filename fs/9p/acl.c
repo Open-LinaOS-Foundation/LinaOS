@@ -1,6 +1,6 @@
 /*
  * Copyright IBM Corporation, 2010
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@linaos.vnet.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of version 2.1 of the GNU Lesser General Public License
@@ -12,13 +12,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/posix_acl_xattr.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/posix_acl_xattr.h>
 #include "xattr.h"
 #include "acl.h"
 #include "v9fs.h"

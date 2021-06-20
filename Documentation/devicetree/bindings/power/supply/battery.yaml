@@ -22,7 +22,7 @@ description: |
   without a corresponding update to the dtb.
 
   Battery properties are named, where possible, for the corresponding elements
-  in enum power_supply_property, defined in include/linux/power_supply.h
+  in enum power_supply_property, defined in include/linaos/power_supply.h
 
   Batteries must be referenced by chargers and/or fuel-gauges using a phandle.
   The phandle's property should be named "monitored-battery".

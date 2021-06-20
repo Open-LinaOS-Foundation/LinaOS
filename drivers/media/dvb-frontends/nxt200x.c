@@ -3,7 +3,7 @@
  *    Support for NXT2002 and NXT2004 - VSB/QAM
  *
  *    Copyright (C) 2005 Kirk Lapray <kirk.lapray@gmail.com>
- *    Copyright (C) 2006-2014 Michael Krufky <mkrufky@linuxtv.org>
+ *    Copyright (C) 2006-2014 Michael Krufky <mkrufky@linaostv.org>
  *    based on nxt2002 by Taylor Jacob <rtjacob@earthlink.net>
  *    and nxt2004 by Jean-Francois Thibert <jeanfrancois@sagetv.com>
 */
@@ -11,7 +11,7 @@
 /*
  *                      NOTES ABOUT THIS DRIVER
  *
- * This Linux driver supports:
+ * This LinaOS driver supports:
  *   B2C2/BBTI Technisat Air2PC - ATSC (NXT2002)
  *   AverTVHD MCE A180 (NXT2004)
  *   ATI HDTV Wonder (NXT2004)
@@ -32,11 +32,11 @@
 #define NXT2004_DEFAULT_FIRMWARE "dvb-fe-nxt2004.fw"
 #define CRC_CCIT_MASK 0x1021
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
 #include <media/dvb_frontend.h>
 #include "nxt200x.h"

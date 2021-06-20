@@ -7,17 +7,17 @@
  * archive for more details.
  */
 
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/ptrace.h>
-#include <linux/regset.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/tracehook.h>
-#include <linux/uaccess.h>
-#include <linux/user.h>
+#include <linaos/elf.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/ptrace.h>
+#include <linaos/regset.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/tracehook.h>
+#include <linaos/uaccess.h>
+#include <linaos/user.h>
 
 static int genregs_get(struct task_struct *target,
 		       const struct user_regset *regset,
@@ -88,7 +88,7 @@ static int genregs_set(struct task_struct *target,
 }
 
 /*
- * Define the register sets available on Nios2 under Linux
+ * Define the register sets available on Nios2 under LinaOS
  */
 enum nios2_regset {
 	REGSET_GENERAL,

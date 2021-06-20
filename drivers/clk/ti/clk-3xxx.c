@@ -14,11 +14,11 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clk/ti.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk/ti.h>
 
 #include "clock.h"
 

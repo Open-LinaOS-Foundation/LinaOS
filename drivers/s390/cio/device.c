@@ -11,20 +11,20 @@
 #define KMSG_COMPONENT "cio"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/kernel_stat.h>
-#include <linux/sched/signal.h>
-#include <linux/dma-mapping.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/device.h>
+#include <linaos/workqueue.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/sched/signal.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>
@@ -53,7 +53,7 @@ static struct bus_type ccw_bus_type;
 
 /******************* bus type handling ***********************/
 
-/* The Linux driver model distinguishes between a bus type and
+/* The LinaOS driver model distinguishes between a bus type and
  * the bus itself. Of course we only have one channel
  * subsystem driver and one channel system per machine, but
  * we still use the abstraction. T.R. says it's a good idea. */

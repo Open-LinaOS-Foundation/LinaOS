@@ -13,18 +13,18 @@
 #include "../include/hw_ip/mmu/mmu_general.h"
 #include <uapi/misc/habanalabs.h>
 
-#include <linux/cdev.h>
-#include <linux/iopoll.h>
-#include <linux/irqreturn.h>
-#include <linux/dma-direction.h>
-#include <linux/scatterlist.h>
-#include <linux/hashtable.h>
-#include <linux/debugfs.h>
-#include <linux/bitfield.h>
-#include <linux/genalloc.h>
-#include <linux/sched/signal.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/coresight.h>
+#include <linaos/cdev.h>
+#include <linaos/iopoll.h>
+#include <linaos/irqreturn.h>
+#include <linaos/dma-direction.h>
+#include <linaos/scatterlist.h>
+#include <linaos/hashtable.h>
+#include <linaos/debugfs.h>
+#include <linaos/bitfield.h>
+#include <linaos/genalloc.h>
+#include <linaos/sched/signal.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/coresight.h>
 
 #define HL_NAME				"habanalabs"
 
@@ -188,7 +188,7 @@ enum hl_fw_component {
 
 /**
  * enum hl_fw_types - F/W types present in the system
- * @FW_TYPE_LINUX: Linux image for device CPU
+ * @FW_TYPE_LINUX: LinaOS image for device CPU
  * @FW_TYPE_BOOT_CPU: Boot image for device CPU
  * @FW_TYPE_PREBOOT_CPU: Indicates pre-loaded CPUs are present in the system
  *                       (preboot, ppboot etc...)
@@ -781,7 +781,7 @@ struct hl_cs_parser;
 
 /**
  * enum hl_pm_mng_profile - power management profile.
- * @PM_AUTO: internal clock is set by the Linux driver.
+ * @PM_AUTO: internal clock is set by the LinaOS driver.
  * @PM_MANUAL: internal clock is set by the user.
  * @PM_LAST: last power management type.
  */

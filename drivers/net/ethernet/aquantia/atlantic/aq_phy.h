@@ -8,7 +8,7 @@
 #ifndef AQ_PHY_H
 #define AQ_PHY_H
 
-#include <linux/mdio.h>
+#include <linaos/mdio.h>
 
 #include "hw_atl/hw_atl_llh.h"
 #include "hw_atl/hw_atl_llh_internal.h"

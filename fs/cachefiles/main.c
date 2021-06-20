@@ -6,18 +6,18 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/statfs.h>
-#include <linux/sysctl.h>
-#include <linux/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/completion.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/namei.h>
+#include <linaos/mount.h>
+#include <linaos/statfs.h>
+#include <linaos/sysctl.h>
+#include <linaos/miscdevice.h>
 #define CREATE_TRACE_POINTS
 #include "internal.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/string.h>
-#include <linux/elf.h>
+#include <linaos/string.h>
+#include <linaos/elf.h>
 #include <asm/boot_data.h>
 #include <asm/sections.h>
 #include <asm/cpu_mf.h>
@@ -72,7 +72,7 @@ static void setup_lpp(void)
 #ifdef CONFIG_KERNEL_UNCOMPRESSED
 unsigned long mem_safe_offset(void)
 {
-	return vmlinux.default_lma + vmlinux.image_size + vmlinux.bss_size;
+	return vmlinaos.default_lma + vmlinaos.image_size + vmlinaos.bss_size;
 }
 #endif
 
@@ -90,12 +90,12 @@ static void rescue_initrd(unsigned long addr)
 
 static void copy_bootdata(void)
 {
-	if (__boot_data_end - __boot_data_start != vmlinux.bootdata_size)
+	if (__boot_data_end - __boot_data_start != vmlinaos.bootdata_size)
 		error(".boot.data section size mismatch");
-	memcpy((void *)vmlinux.bootdata_off, __boot_data_start, vmlinux.bootdata_size);
-	if (__boot_data_preserved_end - __boot_data_preserved_start != vmlinux.bootdata_preserved_size)
+	memcpy((void *)vmlinaos.bootdata_off, __boot_data_start, vmlinaos.bootdata_size);
+	if (__boot_data_preserved_end - __boot_data_preserved_start != vmlinaos.bootdata_preserved_size)
 		error(".boot.preserved.data section size mismatch");
-	memcpy((void *)vmlinux.bootdata_preserved_off, __boot_data_preserved_start, vmlinux.bootdata_preserved_size);
+	memcpy((void *)vmlinaos.bootdata_preserved_off, __boot_data_preserved_start, vmlinaos.bootdata_preserved_size);
 }
 
 static void handle_relocs(unsigned long offset)
@@ -105,9 +105,9 @@ static void handle_relocs(unsigned long offset)
 	Elf64_Addr loc, val;
 	Elf64_Sym *dynsym;
 
-	rela_start = (Elf64_Rela *) vmlinux.rela_dyn_start;
-	rela_end = (Elf64_Rela *) vmlinux.rela_dyn_end;
-	dynsym = (Elf64_Sym *) vmlinux.dynsym_start;
+	rela_start = (Elf64_Rela *) vmlinaos.rela_dyn_start;
+	rela_end = (Elf64_Rela *) vmlinaos.rela_dyn_end;
+	dynsym = (Elf64_Sym *) vmlinaos.dynsym_start;
 	for (rela = rela_start; rela < rela_end; rela++) {
 		loc = rela->r_offset + offset;
 		val = rela->r_addend;
@@ -170,11 +170,11 @@ static void setup_ident_map_size(unsigned long max_physmem_end)
 }
 
 /*
- * This function clears the BSS section of the decompressed Linux kernel and NOT the decompressor's.
+ * This function clears the BSS section of the decompressed LinaOS kernel and NOT the decompressor's.
  */
 static void clear_bss_section(void)
 {
-	memset((void *)vmlinux.default_lma + vmlinux.image_size, 0, vmlinux.bss_size);
+	memset((void *)vmlinaos.default_lma + vmlinaos.image_size, 0, vmlinaos.bss_size);
 }
 
 /*
@@ -213,23 +213,23 @@ void startup_kernel(void)
 	if (IS_ENABLED(CONFIG_RANDOMIZE_BASE) && kaslr_enabled) {
 		random_lma = get_random_base(safe_addr);
 		if (random_lma) {
-			__kaslr_offset = random_lma - vmlinux.default_lma;
-			img = (void *)vmlinux.default_lma;
-			vmlinux.default_lma += __kaslr_offset;
-			vmlinux.entry += __kaslr_offset;
-			vmlinux.bootdata_off += __kaslr_offset;
-			vmlinux.bootdata_preserved_off += __kaslr_offset;
-			vmlinux.rela_dyn_start += __kaslr_offset;
-			vmlinux.rela_dyn_end += __kaslr_offset;
-			vmlinux.dynsym_start += __kaslr_offset;
+			__kaslr_offset = random_lma - vmlinaos.default_lma;
+			img = (void *)vmlinaos.default_lma;
+			vmlinaos.default_lma += __kaslr_offset;
+			vmlinaos.entry += __kaslr_offset;
+			vmlinaos.bootdata_off += __kaslr_offset;
+			vmlinaos.bootdata_preserved_off += __kaslr_offset;
+			vmlinaos.rela_dyn_start += __kaslr_offset;
+			vmlinaos.rela_dyn_end += __kaslr_offset;
+			vmlinaos.dynsym_start += __kaslr_offset;
 		}
 	}
 
 	if (!IS_ENABLED(CONFIG_KERNEL_UNCOMPRESSED)) {
 		img = decompress_kernel();
-		memmove((void *)vmlinux.default_lma, img, vmlinux.image_size);
+		memmove((void *)vmlinaos.default_lma, img, vmlinaos.image_size);
 	} else if (__kaslr_offset)
-		memcpy((void *)vmlinux.default_lma, img, vmlinux.image_size);
+		memcpy((void *)vmlinaos.default_lma, img, vmlinaos.image_size);
 
 	clear_bss_section();
 	copy_bootdata();
@@ -244,7 +244,7 @@ void startup_kernel(void)
 		S390_lowcore.vmcore_info = __kaslr_offset | 0x1UL;
 		/* Clear non-relocated kernel */
 		if (IS_ENABLED(CONFIG_KERNEL_UNCOMPRESSED))
-			memset(img, 0, vmlinux.image_size);
+			memset(img, 0, vmlinaos.image_size);
 	}
-	vmlinux.entry();
+	vmlinaos.entry();
 }

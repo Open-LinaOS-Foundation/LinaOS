@@ -15,7 +15,7 @@
 #
 # Copyright (C) IBM Corporation, 2016
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@linaos.ibm.com>
 
 me=$(($1 * 1000))
 jittering=$2

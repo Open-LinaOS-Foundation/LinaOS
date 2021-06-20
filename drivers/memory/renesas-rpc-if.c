@@ -7,13 +7,13 @@
  * Copyright (C) 2019-2020 Cogent Embedded, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 
 #include <memory/renesas-rpc-if.h>
 

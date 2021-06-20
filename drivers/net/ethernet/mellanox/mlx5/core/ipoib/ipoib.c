@@ -31,7 +31,7 @@
  */
 
 #include <rdma/ib_verbs.h>
-#include <linux/mlx5/fs.h>
+#include <linaos/mlx5/fs.h>
 #include "en.h"
 #include "en/params.h"
 #include "ipoib.h"

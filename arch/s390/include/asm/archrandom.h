@@ -13,8 +13,8 @@
 
 #ifdef CONFIG_ARCH_RANDOM
 
-#include <linux/static_key.h>
-#include <linux/atomic.h>
+#include <linaos/static_key.h>
+#include <linaos/atomic.h>
 
 DECLARE_STATIC_KEY_FALSE(s390_arch_random_available);
 extern atomic64_t s390_arch_random_counter;

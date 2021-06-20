@@ -3,8 +3,8 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/err.h>
-#include <linux/uuid.h>
+#include <linaos/err.h>
+#include <linaos/uuid.h>
 #include "ctree.h"
 #include "transaction.h"
 #include "disk-io.h"

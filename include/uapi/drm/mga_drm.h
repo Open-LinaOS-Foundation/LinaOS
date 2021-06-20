@@ -1,8 +1,8 @@
-/* mga_drm.h -- Public header for the Matrox g200/g400 driver -*- linux-c -*-
+/* mga_drm.h -- Public header for the Matrox g200/g400 driver -*- linaos-c -*-
  * Created: Tue Jan 25 01:50:01 1999 by jhartmann@precisioninsight.com
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -25,11 +25,11 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Jeff Hartmann <jhartmann@valinux.com>
+ *    Jeff Hartmann <jhartmann@valinaos.com>
  *    Keith Whitwell <keith@tungstengraphics.com>
  *
  * Rewritten by:
- *    Gareth Hughes <gareth@valinux.com>
+ *    Gareth Hughes <gareth@valinaos.com>
  */
 
 #ifndef __MGA_DRM_H__

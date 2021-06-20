@@ -7,18 +7,18 @@
  * Copyright (C) 2006 Advanced Micro Devices, Inc.
  */
 
-#include <linux/cs5535.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_wakeup.h>
-#include <linux/power_supply.h>
-#include <linux/suspend.h>
-#include <linux/workqueue.h>
-#include <linux/olpc-ec.h>
+#include <linaos/cs5535.h>
+#include <linaos/device.h>
+#include <linaos/gpio.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/pm_wakeup.h>
+#include <linaos/power_supply.h>
+#include <linaos/suspend.h>
+#include <linaos/workqueue.h>
+#include <linaos/olpc-ec.h>
 
 #include <asm/io.h>
 #include <asm/msr.h>

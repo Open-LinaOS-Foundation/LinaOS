@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/linkage.h>
+#include <linaos/module.h>
+#include <linaos/linkage.h>
 
 /*
  * libgcc functions - functions that are used internally by the

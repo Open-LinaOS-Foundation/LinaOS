@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-h3.c
+ * linaos/arch/arm/mach-omap1/board-h3.c
  *
  * This file contains OMAP1710 H3 specific code.
  *
@@ -10,26 +10,26 @@
  * Author: RidgeRun, Inc.
  *         Greg Lonnon (glonnon@ridgerun.com) or info@ridgerun.com
  */
-#include <linux/gpio.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/workqueue.h>
-#include <linux/i2c.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/platnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/input.h>
-#include <linux/spi/spi.h>
-#include <linux/mfd/tps65010.h>
-#include <linux/smc91x.h>
-#include <linux/omapfb.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/leds.h>
+#include <linaos/gpio.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/major.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/errno.h>
+#include <linaos/workqueue.h>
+#include <linaos/i2c.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/platnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/input.h>
+#include <linaos/spi/spi.h>
+#include <linaos/mfd/tps65010.h>
+#include <linaos/smc91x.h>
+#include <linaos/omapfb.h>
+#include <linaos/platform_data/gpio-omap.h>
+#include <linaos/leds.h>
 
 #include <asm/setup.h>
 #include <asm/page.h>
@@ -39,8 +39,8 @@
 
 #include <mach/mux.h>
 #include <mach/tc.h>
-#include <linux/platform_data/keypad-omap.h>
-#include <linux/omap-dma.h>
+#include <linaos/platform_data/keypad-omap.h>
+#include <linaos/omap-dma.h>
 #include "flash.h"
 
 #include <mach/hardware.h>

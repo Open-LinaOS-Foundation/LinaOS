@@ -7,7 +7,7 @@
 #ifndef __SELFTEST_H__
 #define __SELFTEST_H__
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #define selftest(name, func) int func(void);
 #include "selftests.h"

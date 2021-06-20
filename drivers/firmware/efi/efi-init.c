@@ -9,16 +9,16 @@
 
 #define pr_fmt(fmt)	"efi: " fmt
 
-#include <linux/efi.h>
-#include <linux/fwnode.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/mm_types.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/platform_device.h>
-#include <linux/screen_info.h>
+#include <linaos/efi.h>
+#include <linaos/fwnode.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/mm_types.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_fdt.h>
+#include <linaos/platform_device.h>
+#include <linaos/screen_info.h>
 
 #include <asm/efi.h>
 

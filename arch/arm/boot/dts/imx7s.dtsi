@@ -611,7 +611,7 @@
 					interrupts = <GIC_SPI 4 IRQ_TYPE_LEVEL_HIGH>;
 					clocks = <&clks IMX7D_SNVS_CLK>;
 					clock-names = "snvs-pwrkey";
-					linux,keycode = <KEY_POWER>;
+					linaos,keycode = <KEY_POWER>;
 					wakeup-source;
 					status = "disabled";
 				};

@@ -6,8 +6,8 @@
 #ifndef __ASM_MACH_PXA168FB_H
 #define __ASM_MACH_PXA168FB_H
 
-#include <linux/fb.h>
-#include <linux/interrupt.h>
+#include <linaos/fb.h>
+#include <linaos/interrupt.h>
 
 /* Dumb interface */
 #define PIN_MODE_DUMB_24		0

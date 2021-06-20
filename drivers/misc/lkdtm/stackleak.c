@@ -4,12 +4,12 @@
  * with STACKLEAK_POISON).
  *
  * Authors:
- *   Alexander Popov <alex.popov@linux.com>
+ *   Alexander Popov <alex.popov@linaos.com>
  *   Tycho Andersen <tycho@tycho.ws>
  */
 
 #include "lkdtm.h"
-#include <linux/stackleak.h>
+#include <linaos/stackleak.h>
 
 void lkdtm_STACKLEAK_ERASING(void)
 {

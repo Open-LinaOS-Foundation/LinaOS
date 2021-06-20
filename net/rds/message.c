@@ -30,12 +30,12 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/skbuff.h>
-#include <linux/list.h>
-#include <linux/errqueue.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/skbuff.h>
+#include <linaos/list.h>
+#include <linaos/errqueue.h>
 
 #include "rds.h"
 

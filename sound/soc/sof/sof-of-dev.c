@@ -5,9 +5,9 @@
 // Author: Daniel Baluta <daniel.baluta@nxp.com>
 //
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
 #include <sound/sof.h>
 
 #include "ops.h"

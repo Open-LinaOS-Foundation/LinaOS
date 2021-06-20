@@ -16,10 +16,10 @@
 
 #define pr_fmt(fmt) "kexec ranges: " fmt
 
-#include <linux/sort.h>
-#include <linux/kexec.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
+#include <linaos/sort.h>
+#include <linaos/kexec.h>
+#include <linaos/of_device.h>
+#include <linaos/slab.h>
 #include <asm/sections.h>
 #include <asm/kexec_ranges.h>
 
@@ -249,8 +249,8 @@ int add_tce_mem_ranges(struct crash_mem **mem_ranges)
 		u64 base;
 		u32 size;
 
-		ret = of_property_read_u64(dn, "linux,tce-base", &base);
-		ret |= of_property_read_u32(dn, "linux,tce-size", &size);
+		ret = of_property_read_u64(dn, "linaos,tce-base", &base);
+		ret |= of_property_read_u32(dn, "linaos,tce-size", &size);
 		if (ret) {
 			/*
 			 * It is ok to have pci nodes without tce. So, ignore
@@ -288,8 +288,8 @@ int add_initrd_mem_range(struct crash_mem **mem_ranges)
 	if (!strstr(saved_command_line, "retain_initrd"))
 		return 0;
 
-	ret = of_property_read_u64(of_chosen, "linux,initrd-start", &base);
-	ret |= of_property_read_u64(of_chosen, "linux,initrd-end", &end);
+	ret = of_property_read_u64(of_chosen, "linaos,initrd-start", &base);
+	ret |= of_property_read_u64(of_chosen, "linaos,initrd-end", &end);
 	if (!ret)
 		ret = add_mem_range(mem_ranges, base, end - base + 1);
 
@@ -341,7 +341,7 @@ int add_rtas_mem_range(struct crash_mem **mem_ranges)
 	if (!dn)
 		return 0;
 
-	ret = of_property_read_u32(dn, "linux,rtas-base", &base);
+	ret = of_property_read_u32(dn, "linaos,rtas-base", &base);
 	ret |= of_property_read_u32(dn, "rtas-size", &size);
 	if (!ret)
 		ret = add_mem_range(mem_ranges, base, size);

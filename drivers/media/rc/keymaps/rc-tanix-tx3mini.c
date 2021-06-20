@@ -2,7 +2,7 @@
 // Copyright (c) 2018 Christian Hewitt
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /*
  * Keymap for the Tanix TX3 mini STB remote control

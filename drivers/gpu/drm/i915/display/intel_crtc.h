@@ -6,7 +6,7 @@
 #ifndef _INTEL_CRTC_H_
 #define _INTEL_CRTC_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum pipe;
 struct drm_i915_private;

@@ -3,7 +3,7 @@
  * IOP Coprocessor-6 access handler
  * Copyright (c) 2006, Intel Corporation.
  */
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/traps.h>
 #include <asm/ptrace.h>
 

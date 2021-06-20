@@ -11,7 +11,7 @@
  *   (c) 2000 Stephen J. Gowdy (SGowdy@lbl.gov)
  *
  * Initial work by:
- *   (c) 1999 Michael Gee (michael@linuxspecific.com)
+ *   (c) 1999 Michael Gee (michael@linaosspecific.com)
  *
  * This driver is based on the 'USB Mass Storage Class' document. This
  * describes in detail the protocol used to communicate with such
@@ -28,10 +28,10 @@
  * status of a command.
  */
 
-#include <linux/blkdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linaos/blkdev.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -40,7 +40,7 @@
 #include <scsi/scsi_eh.h>
 
 #include "usb.h"
-#include <linux/usb/hcd.h>
+#include <linaos/usb/hcd.h>
 #include "scsiglue.h"
 #include "debug.h"
 #include "transport.h"

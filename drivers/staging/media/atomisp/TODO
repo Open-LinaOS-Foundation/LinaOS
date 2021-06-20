@@ -73,7 +73,7 @@ TODO
    CHT version. Yet, there are some ISP-specific headers that change the
    driver's behavior during compile time.
 
-8. The file structure needs to get tidied up to resemble a normal Linux
+8. The file structure needs to get tidied up to resemble a normal LinaOS
    driver.
 
 9. Lots of the midlayer glue. unused code and abstraction needs removing.

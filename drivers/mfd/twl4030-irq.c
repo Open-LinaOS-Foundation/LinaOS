@@ -14,13 +14,13 @@
  * by syed khasim <x0khasim@ti.com>
  */
 
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/twl.h>
+#include <linaos/export.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/irqdomain.h>
+#include <linaos/mfd/twl.h>
 
 #include "twl-core.h"
 
@@ -49,7 +49,7 @@
 #define REG_PIH_ISR_P2			0x02
 #define REG_PIH_SIR			0x03	/* for testing */
 
-/* Linux could (eventually) use either IRQ line */
+/* LinaOS could (eventually) use either IRQ line */
 static int irq_line;
 
 struct sih {

@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/fbmon.c
+ * linaos/drivers/video/fbmon.c
  *
  * Copyright (C) 2002 James Simmons <jsimmons@users.sf.net>
  *
@@ -26,10 +26,10 @@
  * for more details.
  *
  */
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/fb.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 #include <video/edid.h>
 #include <video/of_videomode.h>
 #include <video/videomode.h>

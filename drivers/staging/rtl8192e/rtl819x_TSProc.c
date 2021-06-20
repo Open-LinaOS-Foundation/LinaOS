@@ -5,7 +5,7 @@
  * Contact Information: wlanfae <wlanfae@realtek.com>
  */
 #include "rtllib.h"
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include "rtl819x_TS.h"
 
 static void TsSetupTimeOut(struct timer_list *unused)

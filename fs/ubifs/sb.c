@@ -15,9 +15,9 @@
  */
 
 #include "ubifs.h"
-#include <linux/slab.h>
-#include <linux/math64.h>
-#include <linux/uuid.h>
+#include <linaos/slab.h>
+#include <linaos/math64.h>
+#include <linaos/uuid.h>
 
 /*
  * Default journal size in logical eraseblocks as a percent of total

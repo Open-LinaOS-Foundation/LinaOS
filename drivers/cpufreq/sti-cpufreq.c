@@ -8,14 +8,14 @@
  * Copyright (C) 2015 STMicroelectronics (R&D) Limited
  */
 
-#include <linux/cpu.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pm_opp.h>
-#include <linux/regmap.h>
+#include <linaos/cpu.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_opp.h>
+#include <linaos/regmap.h>
 
 #define VERSION_ELEMENTS	3
 #define MAX_PCODE_NAME_LEN	7

@@ -16,7 +16,7 @@
 #include "phy.h"
 #include "radio.h"
 
-#include <linux/capability.h>
+#include <linaos/capability.h>
 
 
 #define GENERIC_FILESIZE	64

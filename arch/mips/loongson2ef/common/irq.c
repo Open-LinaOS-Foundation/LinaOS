@@ -3,8 +3,8 @@
  * Copyright (C) 2007 Lemote Inc. & Institute of Computing Technology
  * Author: Fuxin Zhang, zhangfx@lemote.com
  */
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
 
 #include <loongson.h>
 /*

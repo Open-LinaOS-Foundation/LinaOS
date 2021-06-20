@@ -4,8 +4,8 @@
  * Copyright (C) 2012 Regents of the University of California
  */
 
-#include <linux/linkage.h>
-#include <linux/syscalls.h>
+#include <linaos/linkage.h>
+#include <linaos/syscalls.h>
 #include <asm-generic/syscalls.h>
 #include <asm/vdso.h>
 #include <asm/syscall.h>

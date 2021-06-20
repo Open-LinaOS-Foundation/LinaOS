@@ -5,9 +5,9 @@
  * affiliates.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/uio.h>
-#include <linux/falloc.h>
-#include <linux/file.h>
+#include <linaos/uio.h>
+#include <linaos/falloc.h>
+#include <linaos/file.h>
 #include "nvmet.h"
 
 #define NVMET_MAX_MPOOL_BVEC		16

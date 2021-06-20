@@ -44,7 +44,7 @@ t_irq13:TRAP_ENTRY_INTERRUPT(13)            /* IRQ Audio Intr.               */
 t_irq14:TRAP_ENTRY_INTERRUPT(14)            /* IRQ Timer #2                  */
 
 	.globl	t_nmi
-t_nmi:	TRAP_ENTRY(0x1f, linux_trap_ipi15_sun4m)
+t_nmi:	TRAP_ENTRY(0x1f, linaos_trap_ipi15_sun4m)
 
 t_racc:	TRAP_ENTRY(0x20, do_reg_access)     /* General Register Access Error */
 t_iacce:BAD_TRAP(0x21)                      /* Instr Access Error            */
@@ -88,7 +88,7 @@ t_bad88:BAD_TRAP(0x88)                      /* Slowaris System Call          */
 t_bad89:BAD_TRAP(0x89)                      /* Net-B.S. System Call          */
 t_bad8a:BAD_TRAP(0x8a) BAD_TRAP(0x8b) BAD_TRAP(0x8c) BAD_TRAP(0x8d) BAD_TRAP(0x8e)
 t_bad8f:BAD_TRAP(0x8f)
-t_linux:LINUX_SYSCALL_TRAP                  /* Linux System Call             */
+t_linaos:LINUX_SYSCALL_TRAP                  /* LinaOS System Call             */
 t_bad91:BAD_TRAP(0x91) BAD_TRAP(0x92) BAD_TRAP(0x93) BAD_TRAP(0x94) BAD_TRAP(0x95)
 t_bad96:BAD_TRAP(0x96) BAD_TRAP(0x97) BAD_TRAP(0x98) BAD_TRAP(0x99) BAD_TRAP(0x9a)
 t_bad9b:BAD_TRAP(0x9b) BAD_TRAP(0x9c) BAD_TRAP(0x9d) BAD_TRAP(0x9e) BAD_TRAP(0x9f)
@@ -146,7 +146,7 @@ trapbase_cpu1:
 	TRAP_ENTRY_INTERRUPT(9) TRAP_ENTRY_INTERRUPT(10)
 	TRAP_ENTRY_INTERRUPT(11) TRAP_ENTRY_INTERRUPT(12)
 	TRAP_ENTRY_INTERRUPT(13) TRAP_ENTRY_INTERRUPT(14)
-	TRAP_ENTRY(0x1f, linux_trap_ipi15_sun4m)
+	TRAP_ENTRY(0x1f, linaos_trap_ipi15_sun4m)
 	TRAP_ENTRY(0x20, do_reg_access)
 	BAD_TRAP(0x21)
 	BAD_TRAP(0x22)
@@ -245,7 +245,7 @@ trapbase_cpu2:
 	TRAP_ENTRY_INTERRUPT(12)
 	TRAP_ENTRY_INTERRUPT(13)
 	TRAP_ENTRY_INTERRUPT(14)
-	TRAP_ENTRY(0x1f, linux_trap_ipi15_sun4m)
+	TRAP_ENTRY(0x1f, linaos_trap_ipi15_sun4m)
 	TRAP_ENTRY(0x20, do_reg_access)
 	BAD_TRAP(0x21)
 	BAD_TRAP(0x22)
@@ -345,7 +345,7 @@ trapbase_cpu3:
 	TRAP_ENTRY_INTERRUPT(12)
 	TRAP_ENTRY_INTERRUPT(13)
 	TRAP_ENTRY_INTERRUPT(14)
-	TRAP_ENTRY(0x1f, linux_trap_ipi15_sun4m)
+	TRAP_ENTRY(0x1f, linaos_trap_ipi15_sun4m)
 	TRAP_ENTRY(0x20, do_reg_access)
 	BAD_TRAP(0x21)
 	BAD_TRAP(0x22)

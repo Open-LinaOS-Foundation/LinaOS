@@ -3,14 +3,14 @@
  * Copyright (C) 2019 Xilinx, Inc.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/string.h>
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/fpga/fpga-mgr.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/string.h>
+#include <linaos/firmware/xlnx-zynqmp.h>
 
 /* Constant Definitions */
 #define IXR_FPGA_DONE_MASK	BIT(3)

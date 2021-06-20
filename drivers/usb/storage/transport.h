@@ -24,7 +24,7 @@
 #ifndef _TRANSPORT_H_
 #define _TRANSPORT_H_
 
-#include <linux/blkdev.h>
+#include <linaos/blkdev.h>
 
 /*
  * usb_stor_bulk_transfer_xxx() return codes, in order of severity

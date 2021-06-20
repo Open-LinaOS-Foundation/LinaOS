@@ -3,25 +3,25 @@
 
 #include <crypto/aead.h>
 #include <crypto/authenc.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 #include <net/esp.h>
-#include <linux/scatterlist.h>
-#include <linux/kernel.h>
-#include <linux/pfkeyv2.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/in6.h>
+#include <linaos/scatterlist.h>
+#include <linaos/kernel.h>
+#include <linaos/pfkeyv2.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/in6.h>
 #include <net/icmp.h>
 #include <net/protocol.h>
 #include <net/udp.h>
 #include <net/tcp.h>
 #include <net/espintcp.h>
 
-#include <linux/highmem.h>
+#include <linaos/highmem.h>
 
 struct esp_skb_cb {
 	struct xfrm_skb_cb xfrm;

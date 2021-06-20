@@ -7,7 +7,7 @@
 #ifndef DRIVERS_GPU_DRM_INGENIC_INGENIC_IPU_H
 #define DRIVERS_GPU_DRM_INGENIC_INGENIC_IPU_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define JZ_REG_IPU_CTRL			0x00
 #define JZ_REG_IPU_STATUS		0x04

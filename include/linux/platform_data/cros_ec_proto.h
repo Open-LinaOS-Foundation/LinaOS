@@ -8,11 +8,11 @@
 #ifndef __LINUX_CROS_EC_PROTO_H
 #define __LINUX_CROS_EC_PROTO_H
 
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
 
-#include <linux/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_commands.h>
 
 #define CROS_EC_DEV_NAME	"cros_ec"
 #define CROS_EC_DEV_FP_NAME	"cros_fp"

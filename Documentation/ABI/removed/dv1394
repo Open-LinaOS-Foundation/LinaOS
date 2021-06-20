@@ -1,6 +1,6 @@
 What:		dv1394 (a.k.a. "OHCI-DV I/O support" for FireWire)
 Date:		May 2010 (scheduled), finally removed in kernel v2.6.37
-Contact:	linux1394-devel@lists.sourceforge.net
+Contact:	linaos1394-devel@lists.sourceforge.net
 Description:
 	/dev/dv1394/* were character device files, one for each FireWire
 	controller and for NTSC and PAL respectively, from which DV data

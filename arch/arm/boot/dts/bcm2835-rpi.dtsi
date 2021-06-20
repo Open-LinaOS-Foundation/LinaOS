@@ -7,7 +7,7 @@
 		act {
 			label = "ACT";
 			default-state = "keep";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

@@ -1,7 +1,7 @@
 USB hotplugging
 ~~~~~~~~~~~~~~~
 
-Linux Hotplugging
+LinaOS Hotplugging
 =================
 
 
@@ -51,7 +51,7 @@ the subsystem making that invocation.
 
 Hotplug software and other resources is available at:
 
-	http://linux-hotplug.sourceforge.net
+	http://linaos-hotplug.sourceforge.net
 
 Mailing list information is also available at that site.
 
@@ -92,7 +92,7 @@ which contains the entries from each driver's ``MODULE_DEVICE_TABLE``.  Such
 files can be used by various user mode policy agents to make sure all the
 right driver modules get loaded, either at boot time or later.
 
-See ``linux/usb.h`` for full information about such table entries; or look
+See ``linaos/usb.h`` for full information about such table entries; or look
 at existing drivers.  Each table entry describes one or more criteria to
 be used when matching a driver to a device or class of devices.  The
 specific criteria are identified by bits set in "match_flags", paired

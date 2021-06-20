@@ -8,13 +8,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/pci.h>
-#include <linux/ethtool.h>
-#include <linux/stddef.h>
-#include <linux/etherdevice.h>
-#include <linux/log2.h>
-#include <linux/net_tstamp.h>
-#include <linux/linkmode.h>
+#include <linaos/pci.h>
+#include <linaos/ethtool.h>
+#include <linaos/stddef.h>
+#include <linaos/etherdevice.h>
+#include <linaos/log2.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/linkmode.h>
 
 #include "otx2_common.h"
 #include "otx2_ptp.h"

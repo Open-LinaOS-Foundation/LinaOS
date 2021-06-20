@@ -4,16 +4,16 @@
  * Copyright (c) 2013 Lubomir Rintel
  */
 
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/clk.h>
-#include <linux/reset.h>
+#include <linaos/hw_random.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/printk.h>
+#include <linaos/clk.h>
+#include <linaos/reset.h>
 
 #define RNG_CTRL	0x0
 #define RNG_STATUS	0x4

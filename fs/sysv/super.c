@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/sysv/inode.c
+ *  linaos/fs/sysv/inode.c
  *
  *  minix/inode.c
  *  Copyright (C) 1991, 1992  Linus Torvalds
@@ -21,10 +21,10 @@
  *  This file contains code for read/parsing the superblock.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/buffer_head.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/buffer_head.h>
 #include "sysv.h"
 
 /*

@@ -11,16 +11,16 @@
  *     Created 12 Jul 1997 by Geert Uytterhoeven
  */
 
-#include <linux/ata.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/libata.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/zorro.h>
+#include <linaos/ata.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/libata.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/zorro.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>
 

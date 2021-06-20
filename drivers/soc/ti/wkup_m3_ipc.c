@@ -7,18 +7,18 @@
  * Dave Gerlach <d-gerlach@ti.com>
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/omap-mailbox.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc.h>
-#include <linux/suspend.h>
-#include <linux/wkup_m3_ipc.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/omap-mailbox.h>
+#include <linaos/platform_device.h>
+#include <linaos/remoteproc.h>
+#include <linaos/suspend.h>
+#include <linaos/wkup_m3_ipc.h>
 
 #define AM33XX_CTRL_IPC_REG_COUNT	0x8
 #define AM33XX_CTRL_IPC_REG_OFFSET(m)	(0x4 + 4 * (m))

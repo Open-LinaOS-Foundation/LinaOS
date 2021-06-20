@@ -9,7 +9,7 @@
 #ifndef _BLK_BSG_
 #define _BLK_BSG_
 
-#include <linux/blkdev.h>
+#include <linaos/blkdev.h>
 #include <scsi/scsi_request.h>
 
 struct request;

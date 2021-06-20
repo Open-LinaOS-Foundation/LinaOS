@@ -76,7 +76,7 @@
 
 		volume_down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			debounce-interval = <100>;
 
 			gpios = <&pio 6 GPIO_ACTIVE_LOW>;
@@ -84,7 +84,7 @@
 
 		volume_up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			debounce-interval = <100>;
 
 			gpios = <&pio 5 GPIO_ACTIVE_LOW>;

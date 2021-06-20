@@ -96,7 +96,7 @@ The system configuration dump (if --quiet is not used) is followed by statistics
 \fBusec\fP For each CPU, the number of microseconds elapsed during counter collection, including thread migration -- if any.  This counter is disabled by default, and is enabled with "--enable usec", or --debug.  On the summary row, usec refers to the total elapsed time to collect the counters on all cpus.
 \fBTime_Of_Day_Seconds\fP For each CPU, the gettimeofday(2) value (seconds.subsec since Epoch) when the counters ending the measurement interval were collected.  This column is disabled by default, and can be enabled with "--enable Time_Of_Day_Seconds" or "--debug".  On the summary row, Time_Of_Day_Seconds refers to the timestamp following collection of counters on the last CPU.
 \fBCore\fP processor core number.  Note that multiple CPUs per core indicate support for Intel(R) Hyper-Threading Technology (HT).
-\fBCPU\fP Linux CPU (logical processor) number.  Yes, it is okay that on many systems the CPUs are not listed in numerical order -- for efficiency reasons, turbostat runs in topology order, so HT siblings appear together.
+\fBCPU\fP LinaOS CPU (logical processor) number.  Yes, it is okay that on many systems the CPUs are not listed in numerical order -- for efficiency reasons, turbostat runs in topology order, so HT siblings appear together.
 \fBPackage\fP processor package number -- not present on systems with a single processor package.
 \fBAvg_MHz\fP number of cycles executed divided by time elapsed.  Note that this includes idle-time when 0 instructions are executed.
 \fBBusy%\fP percent of the measurement interval that the CPU executes instructions, aka. % of time in "C0" state.
@@ -104,8 +104,8 @@ The system configuration dump (if --quiet is not used) is followed by statistics
 \fBTSC_MHz\fP average MHz that the TSC ran during the entire interval.
 \fBIRQ\fP The number of interrupts serviced by that CPU during the measurement interval.  The system total line is the sum of interrupts serviced across all CPUs.  turbostat parses /proc/interrupts to generate this summary.
 \fBSMI\fP The number of System Management Interrupts  serviced CPU during the measurement interval.  While this counter is actually per-CPU, SMI are triggered on all processors, so the number should be the same for all CPUs.
-\fBC1, C2, C3...\fP The number times Linux requested the C1, C2, C3 idle state during the measurement interval.  The system summary line shows the sum for all CPUs.  These are C-state names as exported in /sys/devices/system/cpu/cpu*/cpuidle/state*/name.  While their names are generic, their attributes are processor specific. They the system description section of output shows what MWAIT sub-states they are mapped to on each system.
-\fBC1%, C2%, C3%\fP The residency percentage that Linux requested C1, C2, C3....  The system summary is the average of all CPUs in the system.  Note that these are software, reflecting what was requested.  The hardware counters reflect what was actually achieved.
+\fBC1, C2, C3...\fP The number times LinaOS requested the C1, C2, C3 idle state during the measurement interval.  The system summary line shows the sum for all CPUs.  These are C-state names as exported in /sys/devices/system/cpu/cpu*/cpuidle/state*/name.  While their names are generic, their attributes are processor specific. They the system description section of output shows what MWAIT sub-states they are mapped to on each system.
+\fBC1%, C2%, C3%\fP The residency percentage that LinaOS requested C1, C2, C3....  The system summary is the average of all CPUs in the system.  Note that these are software, reflecting what was requested.  The hardware counters reflect what was actually achieved.
 \fBCPU%c1, CPU%c3, CPU%c6, CPU%c7\fP show the percentage residency in hardware core idle states.  These numbers are from hardware residency counters.
 \fBCoreTmp\fP Degrees Celsius reported by the per-core Digital Thermal Sensor.
 \fBPkgTmp\fP Degrees Celsius reported by the per-package Package Thermal Monitor.
@@ -302,7 +302,7 @@ So it will not interfere with the OS or other programs, including
 multiple invocations of itself.
 
 \fBturbostat \fP
-may work poorly on Linux-2.6.20 through 2.6.29,
+may work poorly on LinaOS-2.6.20 through 2.6.29,
 as \fBacpi-cpufreq \fPperiodically cleared the APERF and MPERF MSRs
 in those kernels.
 

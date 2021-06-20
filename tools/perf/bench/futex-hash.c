@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2013  Davidlohr Bueso <davidlohr@hp.com>
  *
- * futex-hash: Stress the hell out of the Linux kernel futex uaddr hashing.
+ * futex-hash: Stress the hell out of the LinaOS kernel futex uaddr hashing.
  *
  * This program is particularly useful for measuring the kernel's futex hash
  * table/function implementation. In order for it to make sense, use with as
@@ -16,9 +16,9 @@
 #include <errno.h>
 #include <signal.h>
 #include <stdlib.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/zalloc.h>
 #include <sys/time.h>
 #include <perf/cpumap.h>
 

@@ -9,7 +9,7 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  */
 
-#include <linux/if_arp.h>
+#include <linaos/if_arp.h>
 
 #include <net/mac802154.h>
 #include <net/ieee802154_netdev.h>

@@ -5,7 +5,7 @@
 #ifndef INTEL_SCALER_H
 #define INTEL_SCALER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum drm_scaling_filter;
 struct drm_i915_private;

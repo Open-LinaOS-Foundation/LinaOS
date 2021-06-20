@@ -9,7 +9,7 @@
  */
 
 #include <crypto/internal/hash.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <asm/cpacf.h>
 #include "sha.h"
 

@@ -4,16 +4,16 @@
  *
  * Copyright 2010 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.uclinaos.org/
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
 
 #define AD5398_CURRENT_EN_MASK	0x8000
 

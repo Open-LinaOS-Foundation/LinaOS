@@ -6,15 +6,15 @@
  * Copyright (C) 2013 by John Crispin <john@phrozen.org>
  */
 
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/reset.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <linaos/clockchips.h>
+#include <linaos/clocksource.h>
+#include <linaos/interrupt.h>
+#include <linaos/reset.h>
+#include <linaos/init.h>
+#include <linaos/time.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
 
 #include <asm/mach-ralink/ralink_regs.h>
 

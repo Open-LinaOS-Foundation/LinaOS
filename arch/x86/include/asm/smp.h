@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_SMP_H
 #define _ASM_X86_SMP_H
 #ifndef __ASSEMBLY__
-#include <linux/cpumask.h>
+#include <linaos/cpumask.h>
 #include <asm/percpu.h>
 
 #include <asm/thread_info.h>

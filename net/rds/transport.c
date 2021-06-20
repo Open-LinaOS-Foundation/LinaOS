@@ -30,10 +30,10 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/in.h>
+#include <linaos/ipv6.h>
 
 #include "rds.h"
 #include "loop.h"

@@ -23,13 +23,13 @@
 
 		button-kalt {
 			label = "Kaltstart";
-			linux,code = <KEY_F6>;
+			linaos,code = <KEY_F6>;
 			gpios = <&gpio2 26 GPIO_ACTIVE_HIGH>;
 		};
 
 		button-pwr {
 			label = "PowerFailInterrupt";
-			linux,code = <KEY_F7>;
+			linaos,code = <KEY_F7>;
 			gpios = <&gpio3 22 GPIO_ACTIVE_HIGH>;
 		};
 	};
@@ -42,21 +42,21 @@
 		led-bus {
 			label = "bus";
 			gpios = <&gpio2 30 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "gpio";
+			linaos,default-trigger = "gpio";
 			default-state = "off";
 		};
 
 		led-error {
 			label = "error";
 			gpios = <&gpio3 28 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "gpio";
+			linaos,default-trigger = "gpio";
 			default-state = "off";
 		};
 
 		led-flash {
 			label = "flash";
 			gpios = <&gpio5 0 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

@@ -193,7 +193,7 @@ AARCH64_EXIT_REASONS = {
     'BRK64':        0x3C,
 }
 
-# From include/uapi/linux/kvm.h, KVM_EXIT_xxx
+# From include/uapi/linaos/kvm.h, KVM_EXIT_xxx
 USERSPACE_EXIT_REASONS = {
     'UNKNOWN':          0,
     'EXCEPTION':        1,
@@ -335,7 +335,7 @@ class perf_event_attr(ctypes.Structure):
     """Struct that holds the necessary data to set up a trace event.
 
     For an extensive explanation see perf_event_open(2) and
-    include/uapi/linux/perf_event.h, struct perf_event_attr
+    include/uapi/linaos/perf_event.h, struct perf_event_attr
 
     All fields that are not initialized in the constructor are 0.
 
@@ -450,7 +450,7 @@ class Event(object):
 
     def _setup_event(self, group, trace_cpu, trace_pid, trace_point,
                      trace_filter, trace_set):
-        """Sets up the perf event in Linux.
+        """Sets up the perf event in LinaOS.
 
         Issues the syscall to register the event in the kernel and
         then sets the optional filter.

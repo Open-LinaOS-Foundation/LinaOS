@@ -113,17 +113,17 @@
  *
  * http://www.cs.berkeley.edu/~istoica/papers/eevdf-tr-95.pdf
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/cgroup.h>
-#include <linux/elevator.h>
-#include <linux/ktime.h>
-#include <linux/rbtree.h>
-#include <linux/ioprio.h>
-#include <linux/sbitmap.h>
-#include <linux/delay.h>
-#include <linux/backing-dev.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/cgroup.h>
+#include <linaos/elevator.h>
+#include <linaos/ktime.h>
+#include <linaos/rbtree.h>
+#include <linaos/ioprio.h>
+#include <linaos/sbitmap.h>
+#include <linaos/delay.h>
+#include <linaos/backing-dev.h>
 
 #include <trace/events/block.h>
 

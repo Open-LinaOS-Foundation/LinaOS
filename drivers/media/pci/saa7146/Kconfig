@@ -4,7 +4,7 @@ config VIDEO_HEXIUM_GEMINI
 	depends on PCI && VIDEO_V4L2 && I2C
 	select VIDEO_SAA7146_VV
 	help
-	  This is a video4linux driver for the Hexium Gemini frame
+	  This is a video4linaos driver for the Hexium Gemini frame
 	  grabber card by Hexium. Please note that the Gemini Dual
 	  card is *not* fully supported.
 
@@ -16,7 +16,7 @@ config VIDEO_HEXIUM_ORION
 	depends on PCI && VIDEO_V4L2 && I2C
 	select VIDEO_SAA7146_VV
 	help
-	  This is a video4linux driver for the Hexium HV-PCI6 and
+	  This is a video4linaos driver for the Hexium HV-PCI6 and
 	  Orion frame grabber cards by Hexium.
 
 	  To compile this driver as a module, choose M here: the
@@ -32,7 +32,7 @@ config VIDEO_MXB
 	select VIDEO_TEA6415C if MEDIA_SUBDRV_AUTOSELECT
 	select VIDEO_TEA6420 if MEDIA_SUBDRV_AUTOSELECT
 	help
-	  This is a video4linux driver for the 'Multimedia eXtension Board'
+	  This is a video4linaos driver for the 'Multimedia eXtension Board'
 	  TV card by Siemens-Nixdorf.
 
 	  To compile this driver as a module, choose M here: the

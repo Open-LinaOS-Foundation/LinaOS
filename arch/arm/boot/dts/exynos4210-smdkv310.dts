@@ -26,7 +26,7 @@
 	};
 
 	chosen {
-		bootargs = "root=/dev/ram0 rw ramdisk=8192 initrd=0x41000000,8M init=/linuxrc";
+		bootargs = "root=/dev/ram0 rw ramdisk=8192 initrd=0x41000000,8M init=/linaosrc";
 		stdout-path = "serial1:115200n8";
 	};
 
@@ -84,7 +84,7 @@
 &keypad {
 	samsung,keypad-num-rows = <2>;
 	samsung,keypad-num-columns = <8>;
-	linux,keypad-no-autorepeat;
+	linaos,keypad-no-autorepeat;
 	wakeup-source;
 	pinctrl-names = "default";
 	pinctrl-0 = <&keypad_rows &keypad_cols>;
@@ -93,61 +93,61 @@
 	key-1 {
 		keypad,row = <0>;
 		keypad,column = <3>;
-		linux,code = <2>;
+		linaos,code = <2>;
 	};
 
 	key-2 {
 		keypad,row = <0>;
 		keypad,column = <4>;
-		linux,code = <3>;
+		linaos,code = <3>;
 	};
 
 	key-3 {
 		keypad,row = <0>;
 		keypad,column = <5>;
-		linux,code = <4>;
+		linaos,code = <4>;
 	};
 
 	key-4 {
 		keypad,row = <0>;
 		keypad,column = <6>;
-		linux,code = <5>;
+		linaos,code = <5>;
 	};
 
 	key-5 {
 		keypad,row = <0>;
 		keypad,column = <7>;
-		linux,code = <6>;
+		linaos,code = <6>;
 	};
 
 	key-a {
 		keypad,row = <1>;
 		keypad,column = <3>;
-		linux,code = <30>;
+		linaos,code = <30>;
 	};
 
 	key-b {
 		keypad,row = <1>;
 		keypad,column = <4>;
-		linux,code = <48>;
+		linaos,code = <48>;
 	};
 
 	key-c {
 		keypad,row = <1>;
 		keypad,column = <5>;
-		linux,code = <46>;
+		linaos,code = <46>;
 	};
 
 	key-d {
 		keypad,row = <1>;
 		keypad,column = <6>;
-		linux,code = <32>;
+		linaos,code = <32>;
 	};
 
 	key-e {
 		keypad,row = <1>;
 		keypad,column = <7>;
-		linux,code = <18>;
+		linaos,code = <18>;
 	};
 };
 

@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * SuperTrak EX Series Storage Controller driver for Linux
+ * SuperTrak EX Series Storage Controller driver for LinaOS
  *
  *	Copyright (C) 2005-2015 Promise Technology Inc.
  *
  *	Written By:
- *		Ed Lin <promise_linux@promise.com>
+ *		Ed Lin <promise_linaos@promise.com>
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/ktime.h>
-#include <linux/reboot.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/pci.h>
+#include <linaos/blkdev.h>
+#include <linaos/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/ktime.h>
+#include <linaos/reboot.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/byteorder.h>

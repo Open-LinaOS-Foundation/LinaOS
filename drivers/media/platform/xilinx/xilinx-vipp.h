@@ -12,8 +12,8 @@
 #ifndef __XILINX_VIPP_H__
 #define __XILINX_VIPP_H__
 
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
 #include <media/media-device.h>
 #include <media/v4l2-async.h>
 #include <media/v4l2-ctrls.h>

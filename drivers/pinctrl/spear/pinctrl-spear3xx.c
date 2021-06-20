@@ -9,7 +9,7 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinctrl.h>
 
 #include "pinctrl-spear3xx.h"
 

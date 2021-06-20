@@ -5,10 +5,10 @@
  * Parse symbolic events/counts passed in as options:
  */
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include <stdbool.h>
-#include <linux/types.h>
-#include <linux/perf_event.h>
+#include <linaos/types.h>
+#include <linaos/perf_event.h>
 #include <string.h>
 
 struct list_head;

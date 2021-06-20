@@ -10,23 +10,23 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/syscore_ops.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/pgtable.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/cpu.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
+#include <linaos/debugfs.h>
+#include <linaos/fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pgtable.h>
 #include <asm/cacheflush.h>
-#include <linux/sizes.h>
-#include <linux/uaccess.h>
+#include <linaos/sizes.h>
+#include <linaos/uaccess.h>
 #include <asm/page.h>
 #include <asm/mmu.h>
 #include <asm/mmu_context.h>

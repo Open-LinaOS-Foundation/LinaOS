@@ -2,18 +2,18 @@
 #ifndef _LINUX_TTY_H
 #define _LINUX_TTY_H
 
-#include <linux/fs.h>
-#include <linux/major.h>
-#include <linux/termios.h>
-#include <linux/workqueue.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_ldisc.h>
-#include <linux/mutex.h>
-#include <linux/tty_flags.h>
-#include <linux/seq_file.h>
-#include <uapi/linux/tty.h>
-#include <linux/rwsem.h>
-#include <linux/llist.h>
+#include <linaos/fs.h>
+#include <linaos/major.h>
+#include <linaos/termios.h>
+#include <linaos/workqueue.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_ldisc.h>
+#include <linaos/mutex.h>
+#include <linaos/tty_flags.h>
+#include <linaos/seq_file.h>
+#include <uapi/linaos/tty.h>
+#include <linaos/rwsem.h>
+#include <linaos/llist.h>
 
 
 /*

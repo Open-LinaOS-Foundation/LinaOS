@@ -2,7 +2,7 @@
 #ifndef __QCOM_PIL_INFO_H__
 #define __QCOM_PIL_INFO_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 int qcom_pil_info_store(const char *image, phys_addr_t base, size_t size);
 

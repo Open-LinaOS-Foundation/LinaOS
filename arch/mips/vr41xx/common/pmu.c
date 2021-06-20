@@ -2,16 +2,16 @@
 /*
  *  pmu.c, Power Management Unit routines for NEC VR4100 series.
  *
- *  Copyright (C) 2003-2007  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2003-2007  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/pm.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <linaos/cpu.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/pm.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cpu.h>

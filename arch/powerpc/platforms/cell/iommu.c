@@ -9,14 +9,14 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/notifier.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
+#include <linaos/memblock.h>
 
 #include <asm/prom.h>
 #include <asm/iommu.h>

@@ -10,8 +10,8 @@
  * Support for TX4938 in 2.6 - Manish Lachwani (mlachwani@mvista.com)
  */
 
-#include <linux/init.h>
-#include <linux/memblock.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
 #include <asm/txx9/generic.h>
 #include <asm/txx9/rbtx4938.h>
 

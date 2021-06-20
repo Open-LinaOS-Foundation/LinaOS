@@ -11,11 +11,11 @@
  * this driver does not currently support them.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 #include "pmbus.h"
 
 static struct pmbus_driver_info ir38064_info = {

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/tboot.h>
+#include <linaos/tboot.h>
 
 #include <asm/cpufeature.h>
 #include <asm/msr-index.h>

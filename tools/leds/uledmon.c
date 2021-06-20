@@ -17,7 +17,7 @@
 #include <time.h>
 #include <unistd.h>
 
-#include <linux/uleds.h>
+#include <linaos/uleds.h>
 
 int main(int argc, char const *argv[])
 {

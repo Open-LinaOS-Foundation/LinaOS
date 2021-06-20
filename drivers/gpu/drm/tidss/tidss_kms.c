@@ -4,7 +4,7 @@
  * Author: Tomi Valkeinen <tomi.valkeinen@ti.com>
  */
 
-#include <linux/dma-fence.h>
+#include <linaos/dma-fence.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

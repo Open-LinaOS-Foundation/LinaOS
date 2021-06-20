@@ -21,9 +21,9 @@
 #include "huf.h"
 #include "mem.h"
 #include "zstd_internal.h" /* includes zstd.h */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h> /* memset */
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/string.h> /* memset */
 
 /*-*************************************
 *  Constants

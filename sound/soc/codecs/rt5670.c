@@ -6,17 +6,17 @@
  * Author: Bard Liao <bardliao@realtek.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/spi/spi.h>
-#include <linux/dmi.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/spi/spi.h>
+#include <linaos/dmi.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

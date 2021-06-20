@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -11,7 +11,7 @@
 #ifndef _ASM_TERMBITS_H
 #define _ASM_TERMBITS_H
 
-#include <linux/posix_types.h>
+#include <linaos/posix_types.h>
 
 typedef unsigned char cc_t;
 typedef unsigned int speed_t;

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/sleep.S
+ * linaos/arch/arm/mach-omap1/sleep.S
  *
  * Low-level OMAP7XX/1510/1610 sleep/wakeUp support
  *
@@ -32,7 +32,7 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/assembler.h>
 

@@ -6,7 +6,7 @@
 #ifndef _LINUX_IRQ_DAVINCI_AINTC_
 #define _LINUX_IRQ_DAVINCI_AINTC_
 
-#include <linux/ioport.h>
+#include <linaos/ioport.h>
 
 /**
  * struct davinci_aintc_config - configuration data for davinci-aintc driver.

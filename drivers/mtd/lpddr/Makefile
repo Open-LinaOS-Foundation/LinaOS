@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# linux/drivers/mtd/lpddr/Makefile
+# linaos/drivers/mtd/lpddr/Makefile
 #
 
 obj-$(CONFIG_MTD_QINFO_PROBE)	+= qinfo_probe.o

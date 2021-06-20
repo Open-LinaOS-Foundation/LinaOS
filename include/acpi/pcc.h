@@ -6,8 +6,8 @@
 #ifndef _PCC_H
 #define _PCC_H
 
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox_client.h>
+#include <linaos/mailbox_controller.h>
+#include <linaos/mailbox_client.h>
 
 #define MAX_PCC_SUBSPACES	256
 #ifdef CONFIG_PCC

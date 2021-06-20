@@ -3,12 +3,12 @@
  * Copyright (C) 2015 Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
-#include <linux/clk.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #define UNIPHIER_I2C_DTRM	0x00	/* TX register */
 #define     UNIPHIER_I2C_DTRM_IRQEN	BIT(11)	/* enable interrupt */

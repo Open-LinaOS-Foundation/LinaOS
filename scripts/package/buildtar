@@ -17,7 +17,7 @@ set -e
 # Some variables and settings used throughout the script
 #
 tmpdir="${objtree}/tar-install"
-tarball="${objtree}/linux-${KERNELRELEASE}-${ARCH}.tar"
+tarball="${objtree}/linaos-${KERNELRELEASE}-${ARCH}.tar"
 
 
 #
@@ -79,7 +79,7 @@ fi
 #
 cp -v -- "${objtree}/System.map" "${tmpdir}/boot/System.map-${KERNELRELEASE}"
 cp -v -- "${KCONFIG_CONFIG}" "${tmpdir}/boot/config-${KERNELRELEASE}"
-cp -v -- "${objtree}/vmlinux" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
+cp -v -- "${objtree}/vmlinaos" "${tmpdir}/boot/vmlinaos-${KERNELRELEASE}"
 
 
 #
@@ -90,31 +90,31 @@ case "${ARCH}" in
 		[ -f "${objtree}/arch/x86/boot/bzImage" ] && cp -v -- "${objtree}/arch/x86/boot/bzImage" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
 		;;
 	alpha)
-		[ -f "${objtree}/arch/alpha/boot/vmlinux.gz" ] && cp -v -- "${objtree}/arch/alpha/boot/vmlinux.gz" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
+		[ -f "${objtree}/arch/alpha/boot/vmlinaos.gz" ] && cp -v -- "${objtree}/arch/alpha/boot/vmlinaos.gz" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
 		;;
 	parisc*)
-		[ -f "${KBUILD_IMAGE}" ] && cp -v -- "${KBUILD_IMAGE}" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
+		[ -f "${KBUILD_IMAGE}" ] && cp -v -- "${KBUILD_IMAGE}" "${tmpdir}/boot/vmlinaos-${KERNELRELEASE}"
 		[ -f "${objtree}/lifimage" ] && cp -v -- "${objtree}/lifimage" "${tmpdir}/boot/lifimage-${KERNELRELEASE}"
 		;;
 	mips)
-		if [ -f "${objtree}/arch/mips/boot/compressed/vmlinux.bin" ]; then
-			cp -v -- "${objtree}/arch/mips/boot/compressed/vmlinux.bin" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
-		elif [ -f "${objtree}/arch/mips/boot/compressed/vmlinux.ecoff" ]; then
-			cp -v -- "${objtree}/arch/mips/boot/compressed/vmlinux.ecoff" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
-		elif [ -f "${objtree}/arch/mips/boot/compressed/vmlinux.srec" ]; then
-			cp -v -- "${objtree}/arch/mips/boot/compressed/vmlinux.srec" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
-		elif [ -f "${objtree}/vmlinux.32" ]; then
-			cp -v -- "${objtree}/vmlinux.32" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
-		elif [ -f "${objtree}/vmlinux.64" ]; then
-			cp -v -- "${objtree}/vmlinux.64" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
-		elif [ -f "${objtree}/arch/mips/boot/vmlinux.bin" ]; then
-			cp -v -- "${objtree}/arch/mips/boot/vmlinux.bin" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
-		elif [ -f "${objtree}/arch/mips/boot/vmlinux.ecoff" ]; then
-			cp -v -- "${objtree}/arch/mips/boot/vmlinux.ecoff" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
-		elif [ -f "${objtree}/arch/mips/boot/vmlinux.srec" ]; then
-			cp -v -- "${objtree}/arch/mips/boot/vmlinux.srec" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
-		elif [ -f "${objtree}/vmlinux" ]; then
-			cp -v -- "${objtree}/vmlinux" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
+		if [ -f "${objtree}/arch/mips/boot/compressed/vmlinaos.bin" ]; then
+			cp -v -- "${objtree}/arch/mips/boot/compressed/vmlinaos.bin" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
+		elif [ -f "${objtree}/arch/mips/boot/compressed/vmlinaos.ecoff" ]; then
+			cp -v -- "${objtree}/arch/mips/boot/compressed/vmlinaos.ecoff" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
+		elif [ -f "${objtree}/arch/mips/boot/compressed/vmlinaos.srec" ]; then
+			cp -v -- "${objtree}/arch/mips/boot/compressed/vmlinaos.srec" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
+		elif [ -f "${objtree}/vmlinaos.32" ]; then
+			cp -v -- "${objtree}/vmlinaos.32" "${tmpdir}/boot/vmlinaos-${KERNELRELEASE}"
+		elif [ -f "${objtree}/vmlinaos.64" ]; then
+			cp -v -- "${objtree}/vmlinaos.64" "${tmpdir}/boot/vmlinaos-${KERNELRELEASE}"
+		elif [ -f "${objtree}/arch/mips/boot/vmlinaos.bin" ]; then
+			cp -v -- "${objtree}/arch/mips/boot/vmlinaos.bin" "${tmpdir}/boot/vmlinaos-${KERNELRELEASE}"
+		elif [ -f "${objtree}/arch/mips/boot/vmlinaos.ecoff" ]; then
+			cp -v -- "${objtree}/arch/mips/boot/vmlinaos.ecoff" "${tmpdir}/boot/vmlinaos-${KERNELRELEASE}"
+		elif [ -f "${objtree}/arch/mips/boot/vmlinaos.srec" ]; then
+			cp -v -- "${objtree}/arch/mips/boot/vmlinaos.srec" "${tmpdir}/boot/vmlinaos-${KERNELRELEASE}"
+		elif [ -f "${objtree}/vmlinaos" ]; then
+			cp -v -- "${objtree}/vmlinaos" "${tmpdir}/boot/vmlinaos-${KERNELRELEASE}"
 		fi
 		;;
 	arm64)
@@ -128,13 +128,13 @@ case "${ARCH}" in
 	riscv)
 		for i in Image.bz2 Image.gz Image; do
 			if [ -f "${objtree}/arch/riscv/boot/${i}" ] ; then
-				cp -v -- "${objtree}/arch/riscv/boot/${i}" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
+				cp -v -- "${objtree}/arch/riscv/boot/${i}" "${tmpdir}/boot/vmlinaos-${KERNELRELEASE}"
 				break
 			fi
 		done
 		;;
 	*)
-		[ -f "${KBUILD_IMAGE}" ] && cp -v -- "${KBUILD_IMAGE}" "${tmpdir}/boot/vmlinux-kbuild-${KERNELRELEASE}"
+		[ -f "${KBUILD_IMAGE}" ] && cp -v -- "${KBUILD_IMAGE}" "${tmpdir}/boot/vmlinaos-kbuild-${KERNELRELEASE}"
 		echo "" >&2
 		echo '** ** **  WARNING  ** ** **' >&2
 		echo "" >&2

@@ -12,27 +12,27 @@
 
 #include <cpu/sh7724.h>
 
-#include <linux/clkdev.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/interrupt.h>
-#include <linux/memblock.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_data/lv5207lp.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/sh_intc.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/videodev2.h>
-#include <linux/dma-map-ops.h>
+#include <linaos/clkdev.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/input/sh_keysc.h>
+#include <linaos/interrupt.h>
+#include <linaos/memblock.h>
+#include <linaos/mfd/tmio.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/platform_data/lv5207lp.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/sh_intc.h>
+#include <linaos/usb/r8a66597.h>
+#include <linaos/videodev2.h>
+#include <linaos/dma-map-ops.h>
 
 #include <mach/kfr2r09.h>
 

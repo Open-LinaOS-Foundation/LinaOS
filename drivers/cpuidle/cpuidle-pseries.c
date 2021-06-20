@@ -6,13 +6,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/moduleparam.h>
+#include <linaos/cpuidle.h>
+#include <linaos/cpu.h>
+#include <linaos/notifier.h>
 
 #include <asm/paca.h>
 #include <asm/reg.h>

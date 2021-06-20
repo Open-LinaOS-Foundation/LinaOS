@@ -5,7 +5,7 @@
 #ifndef _VPIF_TYPES_H
 #define _VPIF_TYPES_H
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 #define VPIF_CAPTURE_MAX_CHANNELS	2
 #define VPIF_DISPLAY_MAX_CHANNELS	2

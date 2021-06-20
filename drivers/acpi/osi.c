@@ -10,11 +10,11 @@
 /* #define DEBUG */
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/platform_data/x86/apple.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
+#include <linaos/platform_data/x86/apple.h>
 
 #include "internal.h"
 
@@ -29,9 +29,9 @@ struct acpi_osi_entry {
 
 static struct acpi_osi_config {
 	u8		default_disabling;
-	unsigned int	linux_enable:1;
-	unsigned int	linux_dmi:1;
-	unsigned int	linux_cmdline:1;
+	unsigned int	linaos_enable:1;
+	unsigned int	linaos_dmi:1;
+	unsigned int	linaos_cmdline:1;
 	unsigned int	darwin_enable:1;
 	unsigned int	darwin_dmi:1;
 	unsigned int	darwin_cmdline:1;
@@ -45,39 +45,39 @@ osi_setup_entries[OSI_STRING_ENTRIES_MAX] __initdata = {
 	{"3.0 _SCP Extensions", true},
 	{"Processor Aggregator Device", true},
 	/*
-	 * Linux-Dell-Video is used by BIOS to disable RTD3 for NVidia graphics
+	 * LinaOS-Dell-Video is used by BIOS to disable RTD3 for NVidia graphics
 	 * cards as RTD3 is not supported by drivers now.  Systems with NVidia
 	 * cards will hang without RTD3 disabled.
 	 *
 	 * Once NVidia drivers officially support RTD3, this _OSI strings can
 	 * be removed if both new and old graphics cards are supported.
 	 */
-	{"Linux-Dell-Video", true},
+	{"LinaOS-Dell-Video", true},
 	/*
-	 * Linux-Lenovo-NV-HDMI-Audio is used by BIOS to power on NVidia's HDMI
+	 * LinaOS-Lenovo-NV-HDMI-Audio is used by BIOS to power on NVidia's HDMI
 	 * audio device which is turned off for power-saving in Windows OS.
 	 * This power management feature observed on some Lenovo Thinkpad
 	 * systems which will not be able to output audio via HDMI without
 	 * a BIOS workaround.
 	 */
-	{"Linux-Lenovo-NV-HDMI-Audio", true},
+	{"LinaOS-Lenovo-NV-HDMI-Audio", true},
 	/*
-	 * Linux-HPI-Hybrid-Graphics is used by BIOS to enable dGPU to
+	 * LinaOS-HPI-Hybrid-Graphics is used by BIOS to enable dGPU to
 	 * output video directly to external monitors on HP Inc. mobile
 	 * workstations as Nvidia and AMD VGA drivers provide limited
 	 * hybrid graphics supports.
 	 */
-	{"Linux-HPI-Hybrid-Graphics", true},
+	{"LinaOS-HPI-Hybrid-Graphics", true},
 };
 
 static u32 acpi_osi_handler(acpi_string interface, u32 supported)
 {
-	if (!strcmp("Linux", interface)) {
+	if (!strcmp("LinaOS", interface)) {
 		pr_notice_once(FW_BUG
-			"BIOS _OSI(Linux) query %s%s\n",
-			osi_config.linux_enable ? "honored" : "ignored",
-			osi_config.linux_cmdline ? " via cmdline" :
-			osi_config.linux_dmi ? " via DMI" : "");
+			"BIOS _OSI(LinaOS) query %s%s\n",
+			osi_config.linaos_enable ? "honored" : "ignored",
+			osi_config.linaos_cmdline ? " via cmdline" :
+			osi_config.linaos_dmi ? " via DMI" : "");
 	}
 	if (!strcmp("Darwin", interface)) {
 		pr_notice_once(
@@ -161,49 +161,49 @@ static void __init acpi_osi_setup_darwin(bool enable)
 }
 
 /*
- * The story of _OSI(Linux)
+ * The story of _OSI(LinaOS)
  *
- * From pre-history through Linux-2.6.22, Linux responded TRUE upon a BIOS
- * OSI(Linux) query.
+ * From pre-history through LinaOS-2.6.22, LinaOS responded TRUE upon a BIOS
+ * OSI(LinaOS) query.
  *
  * Unfortunately, reference BIOS writers got wind of this and put
- * OSI(Linux) in their example code, quickly exposing this string as
+ * OSI(LinaOS) in their example code, quickly exposing this string as
  * ill-conceived and opening the door to an un-bounded number of BIOS
  * incompatibilities.
  *
- * For example, OSI(Linux) was used on resume to re-POST a video card on
- * one system, because Linux at that time could not do a speedy restore in
+ * For example, OSI(LinaOS) was used on resume to re-POST a video card on
+ * one system, because LinaOS at that time could not do a speedy restore in
  * its native driver. But then upon gaining quick native restore
- * capability, Linux has no way to tell the BIOS to skip the time-consuming
- * POST -- putting Linux at a permanent performance disadvantage. On
- * another system, the BIOS writer used OSI(Linux) to infer native OS
- * support for IPMI!  On other systems, OSI(Linux) simply got in the way of
- * Linux claiming to be compatible with other operating systems, exposing
+ * capability, LinaOS has no way to tell the BIOS to skip the time-consuming
+ * POST -- putting LinaOS at a permanent performance disadvantage. On
+ * another system, the BIOS writer used OSI(LinaOS) to infer native OS
+ * support for IPMI!  On other systems, OSI(LinaOS) simply got in the way of
+ * LinaOS claiming to be compatible with other operating systems, exposing
  * BIOS issues such as skipped device initialization.
  *
- * So "Linux" turned out to be a really poor chose of OSI string, and from
- * Linux-2.6.23 onward we respond FALSE.
+ * So "LinaOS" turned out to be a really poor chose of OSI string, and from
+ * LinaOS-2.6.23 onward we respond FALSE.
  *
- * BIOS writers should NOT query _OSI(Linux) on future systems. Linux will
- * complain on the console when it sees it, and return FALSE. To get Linux
+ * BIOS writers should NOT query _OSI(LinaOS) on future systems. LinaOS will
+ * complain on the console when it sees it, and return FALSE. To get LinaOS
  * to return TRUE for your system  will require a kernel source update to
- * add a DMI entry, or boot with "acpi_osi=Linux"
+ * add a DMI entry, or boot with "acpi_osi=LinaOS"
  */
-static void __init __acpi_osi_setup_linux(bool enable)
+static void __init __acpi_osi_setup_linaos(bool enable)
 {
-	osi_config.linux_enable = !!enable;
+	osi_config.linaos_enable = !!enable;
 	if (enable)
-		acpi_osi_setup("Linux");
+		acpi_osi_setup("LinaOS");
 	else
-		acpi_osi_setup("!Linux");
+		acpi_osi_setup("!LinaOS");
 }
 
-static void __init acpi_osi_setup_linux(bool enable)
+static void __init acpi_osi_setup_linaos(bool enable)
 {
 	/* Override acpi_osi_dmi_blacklisted() */
-	osi_config.linux_dmi = 0;
-	osi_config.linux_cmdline = 1;
-	__acpi_osi_setup_linux(enable);
+	osi_config.linaos_dmi = 0;
+	osi_config.linaos_cmdline = 1;
+	__acpi_osi_setup_linaos(enable);
 }
 
 /*
@@ -248,10 +248,10 @@ static void __init acpi_osi_setup_late(void)
 
 static int __init osi_setup(char *str)
 {
-	if (str && !strcmp("Linux", str))
-		acpi_osi_setup_linux(true);
-	else if (str && !strcmp("!Linux", str))
-		acpi_osi_setup_linux(false);
+	if (str && !strcmp("LinaOS", str))
+		acpi_osi_setup_linaos(true);
+	else if (str && !strcmp("!LinaOS", str))
+		acpi_osi_setup_linaos(false);
 	else if (str && !strcmp("Darwin", str))
 		acpi_osi_setup_darwin(true);
 	else if (str && !strcmp("!Darwin", str))
@@ -276,17 +276,17 @@ static void __init acpi_osi_dmi_darwin(void)
 	__acpi_osi_setup_darwin(true);
 }
 
-static void __init acpi_osi_dmi_linux(bool enable,
+static void __init acpi_osi_dmi_linaos(bool enable,
 				      const struct dmi_system_id *d)
 {
-	pr_notice("DMI detected to setup _OSI(\"Linux\"): %s\n", d->ident);
-	osi_config.linux_dmi = 1;
-	__acpi_osi_setup_linux(enable);
+	pr_notice("DMI detected to setup _OSI(\"LinaOS\"): %s\n", d->ident);
+	osi_config.linaos_dmi = 1;
+	__acpi_osi_setup_linaos(enable);
 }
 
-static int __init dmi_enable_osi_linux(const struct dmi_system_id *d)
+static int __init dmi_enable_osi_linaos(const struct dmi_system_id *d)
 {
-	acpi_osi_dmi_linux(true, d);
+	acpi_osi_dmi_linaos(true, d);
 
 	return 0;
 }
@@ -318,10 +318,10 @@ static int __init dmi_disable_osi_win8(const struct dmi_system_id *d)
 }
 
 /*
- * Linux default _OSI response behavior is determined by this DMI table.
+ * LinaOS default _OSI response behavior is determined by this DMI table.
  *
- * Note that _OSI("Linux")/_OSI("Darwin") determined here can be overridden
- * by acpi_osi=!Linux/acpi_osi=!Darwin command line options.
+ * Note that _OSI("LinaOS")/_OSI("Darwin") determined here can be overridden
+ * by acpi_osi=!LinaOS/acpi_osi=!Darwin command line options.
  */
 static const struct dmi_system_id acpi_osi_dmi_table[] __initconst = {
 	{
@@ -468,8 +468,8 @@ static const struct dmi_system_id acpi_osi_dmi_table[] __initconst = {
 	},
 
 	/*
-	 * BIOS invocation of _OSI(Linux) is almost always a BIOS bug.
-	 * Linux ignores it, except for the machines enumerated below.
+	 * BIOS invocation of _OSI(LinaOS) is almost always a BIOS bug.
+	 * LinaOS ignores it, except for the machines enumerated below.
 	 */
 
 	/*
@@ -478,7 +478,7 @@ static const struct dmi_system_id acpi_osi_dmi_table[] __initconst = {
 	 * fixing both brightness control, and rfkill not working.
 	 */
 	{
-	.callback = dmi_enable_osi_linux,
+	.callback = dmi_enable_osi_linaos,
 	.ident = "Asus EEE PC 1015PX",
 	.matches = {
 		     DMI_MATCH(DMI_SYS_VENDOR, "ASUSTeK Computer INC."),

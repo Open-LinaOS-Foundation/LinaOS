@@ -55,7 +55,7 @@
 	};
 
 	bt_codec: bt-sco {
-		compatible = "linux,bt-sco";
+		compatible = "linaos,bt-sco";
 		#sound-dai-cells = <0>;
 	};
 
@@ -475,7 +475,7 @@
 			reg = <0x20>;
 			vdd-supply = <&touchkey_vdd>;
 			vcc-supply = <&buck3_reg>;
-			linux,keycodes = <KEY_MENU KEY_BACK
+			linaos,keycodes = <KEY_MENU KEY_BACK
 					  KEY_HOMEPAGE KEY_SEARCH>;
 			interrupt-parent = <&gpj4>;
 			interrupts = <1 IRQ_TYPE_LEVEL_LOW>;

@@ -2,18 +2,18 @@
 /*
  *  Driver for the Conexant CX23885 PCIe bridge
  *
- *  Copyright (c) 2006 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2006 Steven Toth <stoth@linaostv.org>
  */
 
 #include "cx23885.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/kthread.h>
-#include <linux/file.h>
-#include <linux/suspend.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/kthread.h>
+#include <linaos/file.h>
+#include <linaos/suspend.h>
 
 #include <media/v4l2-common.h>
 

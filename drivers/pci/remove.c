@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/pci.h>
-#include <linux/module.h>
+#include <linaos/pci.h>
+#include <linaos/module.h>
 #include "pci.h"
 
 static void pci_free_resources(struct pci_dev *dev)

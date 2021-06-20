@@ -9,14 +9,14 @@
 #ifndef __USBIP_VUDC_H
 #define __USBIP_VUDC_H
 
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/ch9.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/time.h>
-#include <linux/sysfs.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/time.h>
+#include <linaos/sysfs.h>
 
 #include "usbip_common.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/ethtool_netlink.h>
+#include <linaos/ethtool_netlink.h>
 #include <net/udp_tunnel.h>
 #include <net/vxlan.h>
 

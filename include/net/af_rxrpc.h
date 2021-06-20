@@ -8,8 +8,8 @@
 #ifndef _NET_RXRPC_H
 #define _NET_RXRPC_H
 
-#include <linux/rxrpc.h>
-#include <linux/ktime.h>
+#include <linaos/rxrpc.h>
+#include <linaos/ktime.h>
 
 struct key;
 struct sock;

@@ -6,24 +6,24 @@
  * Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/onenand.h>
-#include <linux/dm9000.h>
-#include <linux/ucb1400.h>
-#include <linux/ata_platform.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/max1586.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/input.h>
+#include <linaos/leds.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/mtd/onenand.h>
+#include <linaos/dm9000.h>
+#include <linaos/ucb1400.h>
+#include <linaos/ata_platform.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/max1586.h>
+#include <linaos/platform_data/i2c-pxa.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -31,12 +31,12 @@
 #include "pxa27x.h"
 #include <mach/audio.h>
 #include <mach/vpac270.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
 #include "pxa27x-udc.h"
 #include "udc.h"
-#include <linux/platform_data/ata-pxa.h>
+#include <linaos/platform_data/ata-pxa.h>
 
 #include "generic.h"
 #include "devices.h"

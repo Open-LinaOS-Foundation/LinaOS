@@ -78,7 +78,7 @@ This driver provides the following features:
    or a tape drive.  The two devices on an interface are called `master`
    and `slave`; this is usually selectable via a jumper on the drive.
 
-   Linux names these devices as follows.  The master and slave devices
+   LinaOS names these devices as follows.  The master and slave devices
    on the primary IDE interface are called `hda` and `hdb`,
    respectively.  The drives on the secondary interface are called
    `hdc` and `hdd`.  (Interfaces at other locations get other letters
@@ -138,7 +138,7 @@ You should feel free to remove the cdrom line from /etc/fstab and
 mount CDROMs manually if that suits you better.
 
 Multisession and photocd discs should work with no special handling.
-The hpcdtoppm package (ftp.gwdg.de:/pub/linux/hpcdtoppm/) may be
+The hpcdtoppm package (ftp.gwdg.de:/pub/linaos/hpcdtoppm/) may be
 useful for reading photocds.
 
 To play an audio CD, you should first unmount and remove any data
@@ -211,7 +211,7 @@ a. Drive is not detected during booting.
 
      Even if support is not available for your interface, you may be
      able to get it to work with the following procedure.  First boot
-     MS-DOS and load the appropriate drivers.  Then warm-boot linux
+     MS-DOS and load the appropriate drivers.  Then warm-boot linaos
      (i.e., without powering off).  If this works, it can be automated
      by running loadlin from the MS-DOS autoexec.
 
@@ -246,7 +246,7 @@ b. Timeout/IRQ errors.
     on boot such as "irq timeout: status=0x50 { DriveReady SeekComplete }"
     The Pioneer DR-A24X CDROM drives are fairly popular these days.
     Unfortunately, these drives seem to become very confused when we perform
-    the standard Linux ATA disk drive probe. If you own one of these drives,
+    the standard LinaOS ATA disk drive probe. If you own one of these drives,
     you can bypass the ATA probing which confuses these CDROM drives, by
     adding `append="hdX=noprobe hdX=cdrom"` to your lilo.conf file and running
     lilo (again where X is the drive letter corresponding to where your drive
@@ -361,7 +361,7 @@ f. Data corruption.
   #include <unistd.h>
   #include <fcntl.h>
   #include <sys/ioctl.h>
-  #include <linux/cdrom.h>
+  #include <linaos/cdrom.h>
 
 
   int

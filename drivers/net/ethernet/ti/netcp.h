@@ -13,9 +13,9 @@
 #ifndef __NETCP_H__
 #define __NETCP_H__
 
-#include <linux/netdevice.h>
-#include <linux/soc/ti/knav_dma.h>
-#include <linux/u64_stats_sync.h>
+#include <linaos/netdevice.h>
+#include <linaos/soc/ti/knav_dma.h>
+#include <linaos/u64_stats_sync.h>
 
 /* Maximum Ethernet frame size supported by Keystone switch */
 #define NETCP_MAX_FRAME_SIZE		9504

@@ -5,14 +5,14 @@
  * Copyright (C) 2006 Nokia Corporation
  * Author: Imre Deak <imre.deak@nokia.com>
  */
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/spi/spi.h>
+#include <linaos/module.h>
 
-#include <linux/platform_data/lcd-mipid.h>
+#include <linaos/platform_data/lcd-mipid.h>
 
 #include "omapfb.h"
 

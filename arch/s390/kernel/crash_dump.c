@@ -3,18 +3,18 @@
  * S390 kdump implementation
  *
  * Copyright IBM Corp. 2011
- * Author(s): Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author(s): Michael Holzheu <holzheu@linaos.vnet.ibm.com>
  */
 
-#include <linux/crash_dump.h>
+#include <linaos/crash_dump.h>
 #include <asm/lowcore.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/memblock.h>
-#include <linux/elf.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/gfp.h>
+#include <linaos/slab.h>
+#include <linaos/memblock.h>
+#include <linaos/elf.h>
 #include <asm/asm-offsets.h>
 #include <asm/os_info.h>
 #include <asm/elf.h>
@@ -419,7 +419,7 @@ static void *nt_prpsinfo(void *ptr)
 
 	memset(&prpsinfo, 0, sizeof(prpsinfo));
 	prpsinfo.pr_sname = 'R';
-	strcpy(prpsinfo.pr_fname, "vmlinux");
+	strcpy(prpsinfo.pr_fname, "vmlinaos");
 	return nt_init(ptr, NT_PRPSINFO, &prpsinfo, sizeof(prpsinfo));
 }
 

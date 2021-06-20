@@ -20,16 +20,16 @@
 
 #define pr_fmt(fmt) "mvebu-coherency: " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/smp.h>
-#include <linux/dma-map-ops.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mbus.h>
-#include <linux/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/of_address.h>
+#include <linaos/io.h>
+#include <linaos/smp.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/mbus.h>
+#include <linaos/pci.h>
 #include <asm/smp_plat.h>
 #include <asm/cacheflush.h>
 #include <asm/mach/map.h>

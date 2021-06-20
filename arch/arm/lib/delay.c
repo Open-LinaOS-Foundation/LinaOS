@@ -7,12 +7,12 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/clocksource.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/timex.h>
+#include <linaos/clocksource.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/timex.h>
 
 /*
  * Default to the loop-based delay implementation.

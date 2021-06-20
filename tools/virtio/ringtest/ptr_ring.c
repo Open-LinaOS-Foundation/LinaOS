@@ -109,7 +109,7 @@ static void spin_unlock_irqrestore(spinlock_t *lock, unsigned long f)
 	spin_unlock(lock);
 }
 
-#include "../../../include/linux/ptr_ring.h"
+#include "../../../include/linaos/ptr_ring.h"
 
 static unsigned long long headcnt, tailcnt;
 static struct ptr_ring array ____cacheline_aligned_in_smp;

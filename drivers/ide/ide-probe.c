@@ -7,9 +7,9 @@
 /*
  *  Mostly written by Mark Lord <mlord@pobox.com>
  *                and Gadi Oxman <gadio@netvision.net.il>
- *                and Andre Hedrick <andre@linux-ide.org>
+ *                and Andre Hedrick <andre@linaos-ide.org>
  *
- *  See linux/MAINTAINERS for address of current maintainer.
+ *  See linaos/MAINTAINERS for address of current maintainer.
  *
  * This is the IDE probe module, as evolved from hd.c and ide.c.
  *
@@ -17,27 +17,27 @@
  *	 by Andrea Arcangeli
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/genhd.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/spinlock.h>
-#include <linux/kmod.h>
-#include <linux/pci.h>
-#include <linux/scatterlist.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/major.h>
+#include <linaos/errno.h>
+#include <linaos/genhd.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/ide.h>
+#include <linaos/spinlock.h>
+#include <linaos/kmod.h>
+#include <linaos/pci.h>
+#include <linaos/scatterlist.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 
 /**
@@ -108,7 +108,7 @@ static void ide_classify_ata_dev(ide_drive_t *drive)
 	char *m = (char *)&id[ATA_ID_PROD];
 	int is_cfa = ata_id_is_cfa(id);
 
-	/* CF devices are *not* removable in Linux definition of the term */
+	/* CF devices are *not* removable in LinaOS definition of the term */
 	if (is_cfa == 0 && (id[ATA_ID_CONFIG] & (1 << 7)))
 		drive->dev_flags |= IDE_DFLAG_REMOVABLE;
 
@@ -1386,7 +1386,7 @@ int ide_host_register(struct ide_host *host, const struct ide_port_info *d,
 	int i, j = 0;
 
 	pr_warn("legacy IDE will be removed in 2021, please switch to libata\n"
-		"Report any missing HW support to linux-ide@vger.kernel.org\n");
+		"Report any missing HW support to linaos-ide@vger.kernel.org\n");
 
 	ide_host_for_each_port(i, hwif, host) {
 		if (hwif == NULL) {

@@ -9,7 +9,7 @@ Required properties:
  - interrupts	: a single specifier for the interrupt from the device
 
 Optional properties:
- - linux,rc-map-name:	see rc.txt file in the same directory.
+ - linaos,rc-map-name:	see rc.txt file in the same directory.
 
 Example:
 

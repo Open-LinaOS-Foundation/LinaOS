@@ -1,20 +1,20 @@
 /*
  * Watchdog driver for TS-4800 based boards
  *
- * Copyright (c) 2015 - Savoir-faire Linux
+ * Copyright (c) 2015 - Savoir-faire LinaOS
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/watchdog.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/watchdog.h>
 
 static bool nowayout = WATCHDOG_NOWAYOUT;
 module_param(nowayout, bool, 0);
@@ -198,6 +198,6 @@ static struct platform_driver ts4800_wdt_driver = {
 
 module_platform_driver(ts4800_wdt_driver);
 
-MODULE_AUTHOR("Damien Riegel <damien.riegel@savoirfairelinux.com>");
+MODULE_AUTHOR("Damien Riegel <damien.riegel@savoirfairelinaos.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:ts4800_wdt");

@@ -2,7 +2,7 @@
 #ifndef _ALPHA_SPINLOCK_H
 #define _ALPHA_SPINLOCK_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/current.h>
 #include <asm/barrier.h>
 #include <asm/processor.h>

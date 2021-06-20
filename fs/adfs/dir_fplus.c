@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/adfs/dir_fplus.c
+ *  linaos/fs/adfs/dir_fplus.c
  *
  *  Copyright (C) 1997-1999 Russell King
  */

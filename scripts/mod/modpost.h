@@ -120,7 +120,7 @@ struct module {
 	int gpl_compatible;
 	struct symbol *unres;
 	int from_dump;  /* 1 if module was loaded from *.symvers */
-	int is_vmlinux;
+	int is_vmlinaos;
 	int seen;
 	int has_init;
 	int has_cleanup;
@@ -210,10 +210,10 @@ void modpost_log(enum loglevel loglevel, const char *fmt, ...);
 /*
  * warn - show the given message, then let modpost continue running, still
  *        allowing modpost to exit successfully. This should be used when
- *        we still allow to generate vmlinux and modules.
+ *        we still allow to generate vmlinaos and modules.
  *
  * error - show the given message, then let modpost continue running, but fail
- *         in the end. This should be used when we should stop building vmlinux
+ *         in the end. This should be used when we should stop building vmlinaos
  *         or modules, but we can continue running modpost to catch as many
  *         issues as possible.
  *

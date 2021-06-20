@@ -6,8 +6,8 @@
 
 #include <stdarg.h>
 #include <stdbool.h>
-#include <linux/btf.h>
-#include <linux/types.h>
+#include <linaos/btf.h>
+#include <linaos/types.h>
 
 #include "libbpf_common.h"
 

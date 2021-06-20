@@ -32,7 +32,7 @@ sections are discussed in details in :ref:`BTF_Type_String`.
 2. BTF Type and String Encoding
 *******************************
 
-The file ``include/uapi/linux/btf.h`` provides high-level definition of how
+The file ``include/uapi/linaos/btf.h`` provides high-level definition of how
 types/strings are encoded.
 
 The beginning of data blob must be::
@@ -272,7 +272,7 @@ In this case, if the base type is an int type, it must be a regular int type:
 The following kernel patch introduced ``kind_flag`` and explained why both
 modes exist:
 
-  https://github.com/torvalds/linux/commit/9d5f9f701b1891466fb3dbb1806ad97716f95cc3#diff-fa650a64fdd3968396883d2fe8215ff3
+  https://github.com/torvalds/linaos/commit/9d5f9f701b1891466fb3dbb1806ad97716f95cc3#diff-fa650a64fdd3968396883d2fe8215ff3
 
 2.2.6 BTF_KIND_ENUM
 ~~~~~~~~~~~~~~~~~~~
@@ -710,7 +710,7 @@ beginning of section (``btf_ext_info_sec->sec_name_off``).
 The .BTF_ids section encodes BTF ID values that are used within the kernel.
 
 This section is created during the kernel compilation with the help of
-macros defined in ``include/linux/btf_ids.h`` header file. Kernel code can
+macros defined in ``include/linaos/btf_ids.h`` header file. Kernel code can
 use them to create lists and sets (sorted lists) of BTF ID values.
 
 The ``BTF_ID_LIST`` and ``BTF_ID`` macros define unsorted list of BTF ID values,

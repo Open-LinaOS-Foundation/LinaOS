@@ -5,7 +5,7 @@
  * Copyright (C) 2014 Broadcom Corporation
  */
 
-#include <linux/serial_bcm63xx.h>
+#include <linaos/serial_bcm63xx.h>
 
 	.macro	addruart, rp, rv, tmp
 	ldr	\rp, =CONFIG_DEBUG_UART_PHYS

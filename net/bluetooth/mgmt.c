@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for LinaOS
 
    Copyright (C) 2010  Nokia Corporation
    Copyright (C) 2011-2012 Intel Corporation
@@ -24,7 +24,7 @@
 
 /* Bluetooth HCI Management interface */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <asm/unaligned.h>
 
 #include <net/bluetooth/bluetooth.h>

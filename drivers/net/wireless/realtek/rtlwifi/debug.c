@@ -4,8 +4,8 @@
 #include "wifi.h"
 #include "cam.h"
 
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
+#include <linaos/moduleparam.h>
+#include <linaos/vmalloc.h>
 
 #ifdef CONFIG_RTLWIFI_DEBUG
 void _rtl_dbg_print(struct rtl_priv *rtlpriv, u64 comp, int level,

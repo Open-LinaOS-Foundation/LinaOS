@@ -7,12 +7,12 @@
  * Copyright (C) 1999 - 2001 Kanoj Sarcar
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/bitops.h>
+#include <linaos/sched.h>
 
 #include <asm/io.h>
 #include <asm/irq_cpu.h>

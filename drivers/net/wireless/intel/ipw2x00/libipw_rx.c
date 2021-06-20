@@ -9,24 +9,24 @@
  * Copyright (c) 2004-2005, Intel Corporation
  */
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/in6.h>
-#include <linux/gfp.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
-#include <linux/tcp.h>
-#include <linux/types.h>
-#include <linux/wireless.h>
-#include <linux/etherdevice.h>
-#include <linux/uaccess.h>
-#include <linux/ctype.h>
+#include <linaos/compiler.h>
+#include <linaos/errno.h>
+#include <linaos/if_arp.h>
+#include <linaos/in6.h>
+#include <linaos/gfp.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/proc_fs.h>
+#include <linaos/skbuff.h>
+#include <linaos/tcp.h>
+#include <linaos/types.h>
+#include <linaos/wireless.h>
+#include <linaos/etherdevice.h>
+#include <linaos/uaccess.h>
+#include <linaos/ctype.h>
 
 #include <net/lib80211.h>
 

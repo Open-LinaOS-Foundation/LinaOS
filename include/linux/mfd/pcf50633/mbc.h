@@ -9,8 +9,8 @@
 #ifndef __LINUX_MFD_PCF50633_MBC_H
 #define __LINUX_MFD_PCF50633_MBC_H
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/platform_device.h>
+#include <linaos/mfd/pcf50633/core.h>
+#include <linaos/platform_device.h>
 
 #define PCF50633_REG_MBCC1	0x43
 #define PCF50633_REG_MBCC2	0x44

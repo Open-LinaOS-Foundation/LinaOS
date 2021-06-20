@@ -9,7 +9,7 @@
  * High speed xor_block operation for RAID4/5 utilizing the
  * ldd/std SPARC instructions.
  *
- * Copyright (C) 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1999 Jakub Jelinek (jj@ultra.linaos.cz)
  */
 
 static void

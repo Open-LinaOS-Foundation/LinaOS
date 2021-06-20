@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/sunrpc/xprtsock.h
+ *  linaos/include/linaos/sunrpc/xprtsock.h
  *
  *  Declarations for the RPC transport socket provider.
  */

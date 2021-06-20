@@ -6,13 +6,13 @@
  * Copyright (C) 2016 Jonas Gorski <jonas.gorski@gmail.com>
  */
 
-#include <linux/bits.h>
-#include <linux/gpio/driver.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/bits.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 #include "../pinctrl-utils.h"
 

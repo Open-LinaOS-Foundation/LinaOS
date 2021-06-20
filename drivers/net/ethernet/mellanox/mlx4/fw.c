@@ -32,11 +32,11 @@
  * SOFTWARE.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/mlx4/cmd.h>
-#include <linux/module.h>
-#include <linux/cache.h>
-#include <linux/kernel.h>
+#include <linaos/etherdevice.h>
+#include <linaos/mlx4/cmd.h>
+#include <linaos/module.h>
+#include <linaos/cache.h>
+#include <linaos/kernel.h>
 #include <uapi/rdma/mlx4-abi.h>
 
 #include "fw.h"

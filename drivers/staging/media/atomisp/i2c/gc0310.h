@@ -18,20 +18,20 @@
 
 #ifndef __GC0310_H__
 #define __GC0310_H__
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
-#include <linux/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/i2c.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/videodev2.h>
+#include <linaos/spinlock.h>
 #include <media/v4l2-subdev.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
-#include <linux/v4l2-mediabus.h>
+#include <linaos/v4l2-mediabus.h>
 #include <media/media-entity.h>
 
-#include "../include/linux/atomisp_platform.h"
+#include "../include/linaos/atomisp_platform.h"
 
 /* Defines for register writes and register array processing */
 #define I2C_MSG_LENGTH		1

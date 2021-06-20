@@ -24,7 +24,7 @@
 			label = "led0";
 			gpios = <&gpio3 7 GPIO_ACTIVE_LOW>;
 			default-state = "keep";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		led1 {

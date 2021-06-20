@@ -2,7 +2,7 @@
 #ifndef _PERF_UI_PROGRESS_H_
 #define _PERF_UI_PROGRESS_H_ 1
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 void ui_progress__finish(void);
 

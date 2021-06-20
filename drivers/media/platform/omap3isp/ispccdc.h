@@ -14,8 +14,8 @@
 #ifndef OMAP3_ISP_CCDC_H
 #define OMAP3_ISP_CCDC_H
 
-#include <linux/omap3isp.h>
-#include <linux/workqueue.h>
+#include <linaos/omap3isp.h>
+#include <linaos/workqueue.h>
 
 #include "ispvideo.h"
 

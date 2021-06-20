@@ -3,7 +3,7 @@
  *  libahci.c - Common AHCI SATA low-level routines
  *
  *  Maintained by:  Tejun Heo <tj@kernel.org>
- *    		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *    		    Please ALWAYS copy linaos-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2004-2005 Red Hat, Inc.
@@ -16,19 +16,19 @@
  * http://www.intel.com/technology/serialata/pdf/rev1_1.pdf
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/nospec.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/module.h>
+#include <linaos/nospec.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/libata.h>
-#include <linux/pci.h>
+#include <linaos/libata.h>
+#include <linaos/pci.h>
 #include "ahci.h"
 #include "libata.h"
 

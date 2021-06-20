@@ -4,7 +4,7 @@
  *		    Horst Hummel <Horst.Hummel@de.ibm.com>
  *		    Carsten Otte <Cotte@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <LinaOS390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2001
  *
  * i/o controls for the dasd driver.
@@ -12,17 +12,17 @@
 
 #define KMSG_COMPONENT "dasd"
 
-#include <linux/interrupt.h>
-#include <linux/compat.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/blkpg.h>
-#include <linux/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/compat.h>
+#include <linaos/major.h>
+#include <linaos/fs.h>
+#include <linaos/blkpg.h>
+#include <linaos/slab.h>
 #include <asm/ccwdev.h>
 #include <asm/schid.h>
 #include <asm/cmb.h>
-#include <linux/uaccess.h>
-#include <linux/dasd_mod.h>
+#include <linaos/uaccess.h>
+#include <linaos/dasd_mod.h>
 
 /* This is ugly... */
 #define PRINTK_HEADER "dasd_ioctl:"

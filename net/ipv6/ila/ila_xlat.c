@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/jhash.h>
-#include <linux/netfilter.h>
-#include <linux/rcupdate.h>
-#include <linux/rhashtable.h>
-#include <linux/vmalloc.h>
+#include <linaos/jhash.h>
+#include <linaos/netfilter.h>
+#include <linaos/rcupdate.h>
+#include <linaos/rhashtable.h>
+#include <linaos/vmalloc.h>
 #include <net/genetlink.h>
 #include <net/ila.h>
 #include <net/netns/generic.h>
-#include <uapi/linux/genetlink.h>
+#include <uapi/linaos/genetlink.h>
 #include "ila.h"
 
 struct ila_xlat_params {

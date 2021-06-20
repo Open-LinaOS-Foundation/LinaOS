@@ -5,15 +5,15 @@
  * SMBus host driver for PA Semi PWRficient
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/stddef.h>
+#include <linaos/sched.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 
 static struct pci_driver pasemi_smb_driver;
 

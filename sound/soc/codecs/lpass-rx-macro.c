@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
-// Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+// Copyright (c) 2018-2020, The LinaOS Foundation. All rights reserved.
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
 #include <sound/soc.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc-dapm.h>
 #include <sound/tlv.h>
-#include <linux/of_clk.h>
-#include <linux/clk-provider.h>
+#include <linaos/of_clk.h>
+#include <linaos/clk-provider.h>
 
 #define CDC_RX_TOP_TOP_CFG0		(0x0000)
 #define CDC_RX_TOP_SWR_CTRL		(0x0008)

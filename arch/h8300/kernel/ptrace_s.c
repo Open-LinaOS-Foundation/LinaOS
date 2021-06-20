@@ -1,5 +1,5 @@
 /*
- *  linux/arch/h8300/kernel/ptrace_h8s.c
+ *  linaos/arch/h8300/kernel/ptrace_h8s.c
  *    ptrace cpu depend helper functions
  *
  *  Yoshinori Sato <ysato@users.sourceforge.jp>
@@ -9,9 +9,9 @@
  * this archive for more details.
  */
 
-#include <linux/linkage.h>
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
+#include <linaos/linkage.h>
+#include <linaos/sched/signal.h>
+#include <linaos/errno.h>
 #include <asm/ptrace.h>
 
 #define CCR_MASK  0x6f

@@ -5,17 +5,17 @@
  * Copyright (C) 2012 Google, Inc.
  */
 
-#include <linux/export.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/anon_inodes.h>
-#include <linux/sync_file.h>
-#include <uapi/linux/sync_file.h>
+#include <linaos/export.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/sync_file.h>
+#include <uapi/linaos/sync_file.h>
 
 static const struct file_operations sync_file_fops;
 

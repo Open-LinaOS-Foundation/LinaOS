@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hpfs/inode.c
+ *  linaos/fs/hpfs/inode.c
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *
  *  inode VFS functions
  */
 
-#include <linux/slab.h>
-#include <linux/user_namespace.h>
+#include <linaos/slab.h>
+#include <linaos/user_namespace.h>
 #include "hpfs_fn.h"
 
 void hpfs_init_inode(struct inode *i)

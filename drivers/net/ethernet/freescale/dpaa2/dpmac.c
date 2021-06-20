@@ -2,7 +2,7 @@
 /* Copyright 2013-2016 Freescale Semiconductor Inc.
  * Copyright 2019 NXP
  */
-#include <linux/fsl/mc.h>
+#include <linaos/fsl/mc.h>
 #include "dpmac.h"
 #include "dpmac-cmd.h"
 

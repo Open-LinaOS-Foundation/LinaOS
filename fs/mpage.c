@@ -13,23 +13,23 @@
  *		use bio_add_page() to build bio's just the right size
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/kdev_t.h>
-#include <linux/gfp.h>
-#include <linux/bio.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
-#include <linux/highmem.h>
-#include <linux/prefetch.h>
-#include <linux/mpage.h>
-#include <linux/mm_inline.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/pagevec.h>
-#include <linux/cleancache.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/kdev_t.h>
+#include <linaos/gfp.h>
+#include <linaos/bio.h>
+#include <linaos/fs.h>
+#include <linaos/buffer_head.h>
+#include <linaos/blkdev.h>
+#include <linaos/highmem.h>
+#include <linaos/prefetch.h>
+#include <linaos/mpage.h>
+#include <linaos/mm_inline.h>
+#include <linaos/writeback.h>
+#include <linaos/backing-dev.h>
+#include <linaos/pagevec.h>
+#include <linaos/cleancache.h>
 #include "internal.h"
 
 /*

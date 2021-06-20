@@ -31,7 +31,7 @@
  *
  * virqs
  * -----
- * The Linux IRQ subsystem requires that each irq source be assigned a
+ * The LinaOS IRQ subsystem requires that each irq source be assigned a
  * system wide unique IRQ number starting at 1 (0 means no irq).  Since
  * systems can have multiple interrupt controllers, the virtual IRQ (virq)
  * infrastructure lets each interrupt controller to define a local set
@@ -98,9 +98,9 @@
  */
 #undef DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/of.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/of.h>
 #include <asm/io.h>
 #include <asm/prom.h>
 #include <asm/mpc52xx.h>
@@ -309,7 +309,7 @@ static int mpc52xx_irqhost_xlate(struct irq_domain *h, struct device_node *ct,
 	int intrvect_l1;
 	int intrvect_l2;
 	int intrvect_type;
-	int intrvect_linux;
+	int intrvect_linaos;
 
 	if (intsize != 3)
 		return -1;
@@ -318,16 +318,16 @@ static int mpc52xx_irqhost_xlate(struct irq_domain *h, struct device_node *ct,
 	intrvect_l2 = (int)intspec[1];
 	intrvect_type = (int)intspec[2] & 0x3;
 
-	intrvect_linux = (intrvect_l1 << MPC52xx_IRQ_L1_OFFSET) &
+	intrvect_linaos = (intrvect_l1 << MPC52xx_IRQ_L1_OFFSET) &
 			 MPC52xx_IRQ_L1_MASK;
-	intrvect_linux |= intrvect_l2 & MPC52xx_IRQ_L2_MASK;
+	intrvect_linaos |= intrvect_l2 & MPC52xx_IRQ_L2_MASK;
 
-	*out_hwirq = intrvect_linux;
+	*out_hwirq = intrvect_linaos;
 	*out_flags = IRQ_TYPE_LEVEL_LOW;
 	if (mpc52xx_is_extirq(intrvect_l1, intrvect_l2))
 		*out_flags = mpc52xx_map_senses[intrvect_type];
 
-	pr_debug("return %x, l1=%d, l2=%d\n", intrvect_linux, intrvect_l1,
+	pr_debug("return %x, l1=%d, l2=%d\n", intrvect_linaos, intrvect_l1,
 		 intrvect_l2);
 	return 0;
 }
@@ -443,7 +443,7 @@ void __init mpc52xx_init_irq(void)
 
 	/*
 	 * As last step, add an irq host to translate the real
-	 * hw irq information provided by the ofw to linux virq
+	 * hw irq information provided by the ofw to linaos virq
 	 */
 	mpc52xx_irqhost = irq_domain_add_linear(picnode,
 	                                 MPC52xx_IRQ_HIGHTESTHWIRQ,

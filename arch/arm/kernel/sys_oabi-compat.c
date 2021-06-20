@@ -70,18 +70,18 @@
  *   wrappers provided below.
  */
 
-#include <linux/syscalls.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/cred.h>
-#include <linux/fcntl.h>
-#include <linux/eventpoll.h>
-#include <linux/sem.h>
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <linux/ipc.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <linaos/syscalls.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/cred.h>
+#include <linaos/fcntl.h>
+#include <linaos/eventpoll.h>
+#include <linaos/sem.h>
+#include <linaos/socket.h>
+#include <linaos/net.h>
+#include <linaos/ipc.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
 
 struct oldabi_stat64 {
 	unsigned long long st_dev;

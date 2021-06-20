@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_SOUND_H
 #define _UAPI_LINUX_SOUND_H
 
@@ -6,7 +6,7 @@
  * Minor numbers for the sound driver.
  */
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 #define SND_DEV_CTL		0	/* Control port /dev/mixer */
 #define SND_DEV_SEQ		1	/* Sequencer output /dev/sequencer (FM

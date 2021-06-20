@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/nodemask.h>
-#include <linux/module.h>
-#include <linux/random.h>
+#include <linaos/nodemask.h>
+#include <linaos/module.h>
+#include <linaos/random.h>
 
 int __next_node_in(int node, const nodemask_t *srcp)
 {

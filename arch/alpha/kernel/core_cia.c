@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/core_cia.c
+ *	linaos/arch/alpha/kernel/core_cia.c
  *
  * Written by David A Rusling (david.rusling@reo.mts.dec.com).
  * December 1995.
@@ -17,11 +17,11 @@
 #include <asm/core_cia.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
 
 #include <asm/ptrace.h>
 #include <asm/mce.h>

@@ -5,14 +5,14 @@
 // Copyright (c) 2018 MediaTek Inc.
 // Author: KaiChieh Chuang <kaichieh.chuang@mediatek.com>
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/sched.h>
+#include <linaos/mfd/mt6397/core.h>
+#include <linaos/regulator/consumer.h>
 
 #include <sound/soc.h>
 #include <sound/tlv.h>

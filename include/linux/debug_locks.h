@@ -2,9 +2,9 @@
 #ifndef __LINUX_DEBUG_LOCKING_H
 #define __LINUX_DEBUG_LOCKING_H
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/printk.h>
+#include <linaos/atomic.h>
+#include <linaos/bug.h>
+#include <linaos/printk.h>
 
 struct task_struct;
 

@@ -2,32 +2,32 @@
 /* By Ross Biro 1/23/92 */
 /*
  * Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@valinaos.com>, May 2000
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/ptrace.h>
-#include <linux/tracehook.h>
-#include <linux/user.h>
-#include <linux/elf.h>
-#include <linux/security.h>
-#include <linux/audit.h>
-#include <linux/seccomp.h>
-#include <linux/signal.h>
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
-#include <linux/context_tracking.h>
-#include <linux/nospec.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/ptrace.h>
+#include <linaos/tracehook.h>
+#include <linaos/user.h>
+#include <linaos/elf.h>
+#include <linaos/security.h>
+#include <linaos/audit.h>
+#include <linaos/seccomp.h>
+#include <linaos/signal.h>
+#include <linaos/perf_event.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/rcupdate.h>
+#include <linaos/export.h>
+#include <linaos/context_tracking.h>
+#include <linaos/nospec.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/processor.h>
 #include <asm/fpu/internal.h>
 #include <asm/fpu/signal.h>
@@ -835,8 +835,8 @@ long arch_ptrace(struct task_struct *child, long request,
 
 #ifdef CONFIG_IA32_EMULATION
 
-#include <linux/compat.h>
-#include <linux/syscalls.h>
+#include <linaos/compat.h>
+#include <linaos/syscalls.h>
 #include <asm/ia32.h>
 #include <asm/user32.h>
 

@@ -5,15 +5,15 @@
  * Copyright (C) 2009-2010 Marvell International Ltd.
  *      Haojian Zhuang <haojian.zhuang@marvell.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/slab.h>
-#include <linux/regulator/max8649.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/slab.h>
+#include <linaos/regulator/max8649.h>
+#include <linaos/regmap.h>
 
 #define MAX8649_DCDC_VMIN	750000		/* uV */
 #define MAX8649_DCDC_VMAX	1380000		/* uV */

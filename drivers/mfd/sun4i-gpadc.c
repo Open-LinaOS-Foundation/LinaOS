@@ -4,15 +4,15 @@
  * Copyright (c) 2016 Quentin Schulz <quentin.schulz@free-electrons.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/regmap.h>
 
-#include <linux/mfd/sun4i-gpadc.h>
+#include <linaos/mfd/sun4i-gpadc.h>
 
 #define ARCH_SUN4I_A10 0
 #define ARCH_SUN5I_A13 1

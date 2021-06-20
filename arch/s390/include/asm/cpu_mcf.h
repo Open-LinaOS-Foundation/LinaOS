@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Counter facility support definitions for the Linux perf
+ * Counter facility support definitions for the LinaOS perf
  *
  * Copyright IBM Corp. 2019
- * Author(s): Hendrik Brueckner <brueckner@linux.ibm.com>
+ * Author(s): Hendrik Brueckner <brueckner@linaos.ibm.com>
  */
 #ifndef _ASM_S390_CPU_MCF_H
 #define _ASM_S390_CPU_MCF_H
 
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 #include <asm/cpu_mf.h>
 
 enum cpumf_ctr_set {

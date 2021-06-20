@@ -9,8 +9,8 @@
 #ifndef _LINUX_KFENCE_H
 #define _LINUX_KFENCE_H
 
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
 
 #ifdef CONFIG_KFENCE
 
@@ -23,10 +23,10 @@
 extern char *__kfence_pool;
 
 #ifdef CONFIG_KFENCE_STATIC_KEYS
-#include <linux/static_key.h>
+#include <linaos/static_key.h>
 DECLARE_STATIC_KEY_FALSE(kfence_allocation_key);
 #else
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 extern atomic_t kfence_allocation_gate;
 #endif
 

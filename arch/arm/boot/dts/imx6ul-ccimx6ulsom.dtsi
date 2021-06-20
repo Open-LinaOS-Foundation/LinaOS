@@ -17,11 +17,11 @@
 		#size-cells = <1>;
 		ranges;
 
-		linux,cma {
+		linaos,cma {
 			compatible = "shared-dma-pool";
 			reusable;
 			size = <0x4000000>;
-			linux,cma-default;
+			linaos,cma-default;
 		};
 	};
 };

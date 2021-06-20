@@ -49,7 +49,7 @@ discard_max_bytes (RW)
 ----------------------
 While discard_max_hw_bytes is the hardware limit for the device, this
 setting is the software limit. Some devices exhibit large latencies when
-large discards are issued, setting this value lower will make Linux issue
+large discards are issued, setting this value lower will make LinaOS issue
 smaller discards and potentially help reduce latencies induced by large
 discard operations.
 

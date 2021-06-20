@@ -6,7 +6,7 @@ Authors: Matthew Fioravante (JHUAPL), Daniel De Graaf (NSA)
 
 This document describes the virtual Trusted Platform Module (vTPM) subsystem for
 Xen. The reader is assumed to have familiarity with building and installing Xen,
-Linux, and a basic understanding of the TPM and vTPM concepts.
+LinaOS, and a basic understanding of the TPM and vTPM concepts.
 
 Introduction
 ------------
@@ -33,7 +33,7 @@ Design Overview
 The architecture of vTPM is described below::
 
   +------------------+
-  |    Linux DomU    | ...
+  |    LinaOS DomU    | ...
   |       |  ^       |
   |       v  |       |
   |   xen-tpmfront   |
@@ -66,18 +66,18 @@ The architecture of vTPM is described below::
   |   Hardware TPM   |
   +------------------+
 
-* Linux DomU:
-	       The Linux based guest that wants to use a vTPM. There may be
+* LinaOS DomU:
+	       The LinaOS based guest that wants to use a vTPM. There may be
 	       more than one of these.
 
 * xen-tpmfront.ko:
-		    Linux kernel virtual TPM frontend driver. This driver
-                    provides vTPM access to a Linux-based DomU.
+		    LinaOS kernel virtual TPM frontend driver. This driver
+                    provides vTPM access to a LinaOS-based DomU.
 
 * mini-os/tpmback:
-		    Mini-os TPM backend driver. The Linux frontend driver
+		    Mini-os TPM backend driver. The LinaOS frontend driver
 		    connects to this backend driver to facilitate communications
-		    between the Linux DomU and its vTPM. This driver is also
+		    between the LinaOS DomU and its vTPM. This driver is also
 		    used by vtpmmgr-stubdom to communicate with vtpm-stubdom.
 
 * vtpm-stubdom:

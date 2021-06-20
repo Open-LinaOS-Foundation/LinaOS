@@ -11,7 +11,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    La Monte H.P. Yarroll <piggy@acm.org>
@@ -40,21 +40,21 @@
  *   and will continue to evolve.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/in.h>
-#include <linux/tty.h>
-#include <linux/proc_fs.h>
-#include <linux/spinlock.h>
-#include <linux/jiffies.h>
-#include <linux/idr.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/in.h>
+#include <linaos/tty.h>
+#include <linaos/proc_fs.h>
+#include <linaos/spinlock.h>
+#include <linaos/jiffies.h>
+#include <linaos/idr.h>
 
 #if IS_ENABLED(CONFIG_IPV6)
 #include <net/ipv6.h>
 #include <net/ip6_route.h>
 #endif
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/page.h>
 #include <net/sock.h>
 #include <net/snmp.h>

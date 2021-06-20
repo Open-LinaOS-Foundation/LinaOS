@@ -82,28 +82,28 @@
 		compatible = "gpio-keys";
 
 		one {
-			linux,code = <KEY_1>;
+			linaos,code = <KEY_1>;
 			label = "SW2-1";
 			wakeup-source;
 			debounce-interval = <20>;
 			gpios = <&gpio1 14 GPIO_ACTIVE_LOW>;
 		};
 		two {
-			linux,code = <KEY_2>;
+			linaos,code = <KEY_2>;
 			label = "SW2-2";
 			wakeup-source;
 			debounce-interval = <20>;
 			gpios = <&gpio1 24 GPIO_ACTIVE_LOW>;
 		};
 		three {
-			linux,code = <KEY_3>;
+			linaos,code = <KEY_3>;
 			label = "SW2-3";
 			wakeup-source;
 			debounce-interval = <20>;
 			gpios = <&gpio1 26 GPIO_ACTIVE_LOW>;
 		};
 		four {
-			linux,code = <KEY_4>;
+			linaos,code = <KEY_4>;
 			label = "SW2-4";
 			wakeup-source;
 			debounce-interval = <20>;

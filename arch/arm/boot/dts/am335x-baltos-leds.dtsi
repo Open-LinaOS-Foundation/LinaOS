@@ -19,7 +19,7 @@
 
 		power {
 			label = "onrisc:red:power";
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 			gpios = <&gpio3 0 GPIO_ACTIVE_LOW>;
 			default-state = "on";
 		};

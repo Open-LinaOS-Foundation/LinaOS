@@ -3,7 +3,7 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2008 Simtec Electronics
 //      Ben Dooks <ben@simtec.co.uk>
-//      http://armlinux.simtec.co.uk/
+//      http://armlinaos.simtec.co.uk/
 //
 // S3C64XX - Interrupt handling Power Management
 
@@ -11,14 +11,14 @@
  * NOTE: Code in this file is not used when booting with Device Tree support.
  */
 
-#include <linux/kernel.h>
-#include <linux/syscore_ops.h>
-#include <linux/interrupt.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/interrupt.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
 
 #include "map.h"
 

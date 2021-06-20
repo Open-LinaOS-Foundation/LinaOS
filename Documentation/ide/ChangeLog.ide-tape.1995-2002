@@ -4,11 +4,11 @@
  *                        was successful ! (Using tar cvf ... on the block
  *                        device interface).
  *                       A longer backup resulted in major swapping, bad
- *                        overall Linux performance and eventually failed as
+ *                        overall LinaOS performance and eventually failed as
  *                        we received non serial read-ahead requests from the
  *                        buffer cache.
  * Ver 0.3   Nov 28 95   Long backups are now possible, thanks to the
- *                        character device interface. Linux's responsiveness
+ *                        character device interface. LinaOS's responsiveness
  *                        and performance doesn't seem to be much affected
  *                        from the background backup procedure.
  *                       Some general mtio.h magnetic tape operations are
@@ -35,7 +35,7 @@
  *                        performing one tape r/w request, a lot of requests
  *                        from the other device can be queued and ide.c will
  *			  service all of them after this single tape request.
- * Ver 1.0   Dec 11 95   Integrated into Linux 1.3.46 development tree.
+ * Ver 1.0   Dec 11 95   Integrated into LinaOS 1.3.46 development tree.
  *                       On each read / write request, we now ask the drive
  *                        if we can transfer a constant number of bytes
  *                        (a parameter of the drive) only to its buffers,
@@ -97,7 +97,7 @@
  *                        service time, based on the tape's parameters. In
  *                        the pipelined operation mode, this allows us to
  *                        adjust our polling frequency to a much lower value,
- *                        and thus to dramatically reduce our load on Linux,
+ *                        and thus to dramatically reduce our load on LinaOS,
  *                        without any decrease in performance.
  *                       Implemented additional mtio.h operations.
  *                       The recommended user block size is returned by
@@ -204,7 +204,7 @@
  *                   Proposed changes to release-notes:
  *		     4) write a simple `quickstart' section in the
  *                      release notes; I volunteer if you don't want to
- *		     5) include a pointer to video4linux in the doc
+ *		     5) include a pointer to video4linaos in the doc
  *                      to stimulate video applications
  *                   6) release notes lines 331 and 362: explain what happens
  *			if the application data rate is higher than 1100 KB/s;
@@ -228,7 +228,7 @@
  *			  Onstream read recovery.
  *			- Add capacity, logical_blk_num and first/last_frame_position
  *			  to /proc/ide/hd?/settings.
- *			- Module use count was gone in the Linux 2.4 driver.
+ *			- Module use count was gone in the LinaOS 2.4 driver.
  * Ver 1.17a Apr 2001 Willem Riede osst@riede.org
  *			- Get drive's actual block size from mode sense block descriptor
  *			- Limit size of pipeline

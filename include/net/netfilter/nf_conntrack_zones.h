@@ -2,7 +2,7 @@
 #ifndef _NF_CONNTRACK_ZONES_H
 #define _NF_CONNTRACK_ZONES_H
 
-#include <linux/netfilter/nf_conntrack_zones_common.h>
+#include <linaos/netfilter/nf_conntrack_zones_common.h>
 #include <net/netfilter/nf_conntrack.h>
 
 static inline const struct nf_conntrack_zone *

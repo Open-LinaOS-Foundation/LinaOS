@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/hfsplus/xattr.c
+ * linaos/fs/hfsplus/xattr.c
  *
  * Vyacheslav Dubeyko <slava@dubeyko.com>
  *
@@ -8,7 +8,7 @@
  */
 
 #include "hfsplus_fs.h"
-#include <linux/nls.h>
+#include <linaos/nls.h>
 #include "xattr.h"
 
 static int hfsplus_removexattr(struct inode *inode, const char *name);

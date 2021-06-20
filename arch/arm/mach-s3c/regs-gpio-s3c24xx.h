@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2003-2004 Simtec Electronics <linux@simtec.co.uk>
+ * Copyright (c) 2003-2004 Simtec Electronics <linaos@simtec.co.uk>
  *	http://www.simtec.co.uk/products/SWLINUX/
  *
  * S3C2410 GPIO register definitions

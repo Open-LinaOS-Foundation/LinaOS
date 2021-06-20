@@ -21,16 +21,16 @@
  * - Power management is supported
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include <sound/soc.h>
 #include <sound/initval.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_device.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of_device.h>
 
 /*
  * The codec isn't really big-endian or little-endian, since the I2S

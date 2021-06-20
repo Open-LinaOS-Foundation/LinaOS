@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_CACHE_H
 #define _ASM_X86_CACHE_H
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 /* L1 cache line size */
 #define L1_CACHE_SHIFT	(CONFIG_X86_L1_CACHE_SHIFT)

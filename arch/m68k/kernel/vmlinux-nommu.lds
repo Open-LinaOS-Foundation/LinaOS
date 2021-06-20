@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *	vmlinux.lds.S -- master linker script for m68knommu arch
+ *	vmlinaos.lds.S -- master linker script for m68knommu arch
  *
  *	(C) Copyright 2002-2012, Greg Ungerer <gerg@snapgear.com>
  *
@@ -19,7 +19,7 @@
 
 #include <asm/page.h>
 #include <asm/thread_info.h>
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 
 OUTPUT_ARCH(m68k)
 ENTRY(_start)

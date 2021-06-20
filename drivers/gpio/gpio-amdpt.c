@@ -6,12 +6,12 @@
  * Author: YD Tseng <yd_tseng@asmedia.com.tw>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/spinlock.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/spinlock.h>
+#include <linaos/acpi.h>
+#include <linaos/platform_device.h>
 
 #define PT_TOTAL_GPIO 8
 

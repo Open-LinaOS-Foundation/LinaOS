@@ -7,9 +7,9 @@
 
 #define pr_fmt(fmt) "xen:" KBUILD_MODNAME ": " fmt
 
-#include <linux/linkage.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <linaos/linkage.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
 
 #include <asm/sync_bitops.h>
 #include <asm/xen/hypercall.h>

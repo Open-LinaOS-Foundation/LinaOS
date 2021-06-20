@@ -3,7 +3,7 @@
  *  Copyright (C) 2008-2010 Thomas Chou <thomas@wytron.com.tw>
  */
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 #if (defined(CONFIG_SERIAL_ALTERA_JTAGUART_CONSOLE) && defined(JTAG_UART_BASE))\
 	|| (defined(CONFIG_SERIAL_ALTERA_UART_CONSOLE) && defined(UART0_BASE))

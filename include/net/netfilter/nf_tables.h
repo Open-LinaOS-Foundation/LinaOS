@@ -3,13 +3,13 @@
 #define _NET_NF_TABLES_H
 
 #include <asm/unaligned.h>
-#include <linux/list.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/nf_tables.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/rhashtable.h>
+#include <linaos/list.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter/nf_tables.h>
+#include <linaos/u64_stats_sync.h>
+#include <linaos/rhashtable.h>
 #include <net/netfilter/nf_flow_table.h>
 #include <net/netlink.h>
 #include <net/flow_offload.h>

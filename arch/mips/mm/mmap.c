@@ -4,18 +4,18 @@
  * for more details.
  *
  * Copyright (C) 2011 Wind River Systems,
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@linaos-mips.org>
  */
-#include <linux/compiler.h>
-#include <linux/elf-randomize.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/export.h>
-#include <linux/personality.h>
-#include <linux/random.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
+#include <linaos/compiler.h>
+#include <linaos/elf-randomize.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/export.h>
+#include <linaos/personality.h>
+#include <linaos/random.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
 
 unsigned long shm_align_mask = PAGE_SIZE - 1;	/* Sane caches */
 EXPORT_SYMBOL(shm_align_mask);

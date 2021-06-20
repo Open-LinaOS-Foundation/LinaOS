@@ -19,8 +19,8 @@
  *
  *****************************************************************************/
 
-#if defined(_LINUX) || defined(__linux__)
-#include <acpi/platform/aclinuxex.h>
+#if defined(_LINUX) || defined(__linaos__)
+#include <acpi/platform/aclinaosex.h>
 
 #elif defined(__DragonFly__)
 #include "acdragonflyex.h"

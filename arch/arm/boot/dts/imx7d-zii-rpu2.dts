@@ -39,7 +39,7 @@
 		debug {
 			label = "zii:green:debug1";
 			gpios = <&gpio2 8 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

@@ -8,16 +8,16 @@
  *
  */
 
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/iopoll.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/dmi.h>
+#include <linaos/moduleparam.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/iopoll.h>
+#include <linaos/delay.h>
+#include <linaos/log2.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/irq.h>
+#include <linaos/dmi.h>
 
 #include "core.h"
 #include "gadget-export.h"

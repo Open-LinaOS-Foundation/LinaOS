@@ -11,8 +11,8 @@
 #ifndef __MFD_DA9063_CORE_H__
 #define __MFD_DA9063_CORE_H__
 
-#include <linux/interrupt.h>
-#include <linux/mfd/da9063/registers.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/da9063/registers.h>
 
 /* DA9063 modules */
 #define DA9063_DRVNAME_CORE		"da9063-core"

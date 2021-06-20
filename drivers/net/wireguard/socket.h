@@ -6,10 +6,10 @@
 #ifndef _WG_SOCKET_H
 #define _WG_SOCKET_H
 
-#include <linux/netdevice.h>
-#include <linux/udp.h>
-#include <linux/if_vlan.h>
-#include <linux/if_ether.h>
+#include <linaos/netdevice.h>
+#include <linaos/udp.h>
+#include <linaos/if_vlan.h>
+#include <linaos/if_ether.h>
 
 int wg_socket_init(struct wg_device *wg, u16 port);
 void wg_socket_reinit(struct wg_device *wg, struct sock *new4,

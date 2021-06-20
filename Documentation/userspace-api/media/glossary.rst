@@ -26,7 +26,7 @@ Glossary
 	See :ref:`cec`.
 
     Device Driver
-	Part of the Linux Kernel that implements support for a hardware
+	Part of the LinaOS Kernel that implements support for a hardware
 	component.
 
     Device Node
@@ -135,7 +135,7 @@ Glossary
 	See :ref:`v4l2_hardware_control` for more details.
 
     Media Hardware
-	Subset of the hardware that is supported by the Linux Media API.
+	Subset of the hardware that is supported by the LinaOS Media API.
 
 	This includes audio and video capture and playback hardware,
 	digital and analog TV, camera sensors, ISPs, remote controllers,

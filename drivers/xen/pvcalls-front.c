@@ -3,9 +3,9 @@
  * (c) 2017 Stefano Stabellini <stefano@aporeto.com>
  */
 
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/socket.h>
+#include <linaos/module.h>
+#include <linaos/net.h>
+#include <linaos/socket.h>
 
 #include <net/sock.h>
 

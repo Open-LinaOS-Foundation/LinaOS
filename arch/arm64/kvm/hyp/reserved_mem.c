@@ -4,9 +4,9 @@
  * Author: Quentin Perret <qperret@google.com>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/memblock.h>
-#include <linux/sort.h>
+#include <linaos/kvm_host.h>
+#include <linaos/memblock.h>
+#include <linaos/sort.h>
 
 #include <asm/kvm_host.h>
 

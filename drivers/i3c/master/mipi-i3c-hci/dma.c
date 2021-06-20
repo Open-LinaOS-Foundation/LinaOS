@@ -8,12 +8,12 @@
  * v1.x of the spec and v2.0 will likely be split out.
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/i3c/master.h>
-#include <linux/io.h>
+#include <linaos/bitfield.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/i3c/master.h>
+#include <linaos/io.h>
 
 #include "hci.h"
 #include "cmd.h"

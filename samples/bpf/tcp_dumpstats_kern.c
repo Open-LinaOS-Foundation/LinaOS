@@ -2,7 +2,7 @@
 /* Refer to samples/bpf/tcp_bpf.readme for the instructions on
  * how to run this sample program.
  */
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>

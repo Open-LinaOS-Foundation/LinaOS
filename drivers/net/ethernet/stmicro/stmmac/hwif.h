@@ -5,8 +5,8 @@
 #ifndef __STMMAC_HWIF_H__
 #define __STMMAC_HWIF_H__
 
-#include <linux/netdevice.h>
-#include <linux/stmmac.h>
+#include <linaos/netdevice.h>
+#include <linaos/stmmac.h>
 
 #define stmmac_do_void_callback(__priv, __module, __cname,  __arg0, __args...) \
 ({ \

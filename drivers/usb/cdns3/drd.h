@@ -9,7 +9,7 @@
 #ifndef __LINUX_CDNS3_DRD
 #define __LINUX_CDNS3_DRD
 
-#include <linux/usb/otg.h>
+#include <linaos/usb/otg.h>
 #include "core.h"
 
 /*  DRD register interface for version v1 of cdns3 driver. */

@@ -6,9 +6,9 @@
 #ifndef _ASM_S390_SETUP_H
 #define _ASM_S390_SETUP_H
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 #include <uapi/asm/setup.h>
-#include <linux/build_bug.h>
+#include <linaos/build_bug.h>
 
 #define EP_OFFSET		0x10008
 #define EP_STRING		"S390EP"

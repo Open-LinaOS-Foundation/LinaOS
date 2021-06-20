@@ -9,17 +9,17 @@
  * may be copied, distributed, and modified under those terms.
  */
 
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/input/mt.h>
-#include <linux/acpi.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/firmware.h>
+#include <linaos/input/mt.h>
+#include <linaos/acpi.h>
 #include <asm/unaligned.h>
 
 #define WDT87XX_NAME		"wdt87xx_i2c"

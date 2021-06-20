@@ -23,9 +23,9 @@
 #ifndef __DRM_BRIDGE_H__
 #define __DRM_BRIDGE_H__
 
-#include <linux/ctype.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <linaos/ctype.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_encoder.h>

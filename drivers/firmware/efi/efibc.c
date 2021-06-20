@@ -6,10 +6,10 @@
 
 #define pr_fmt(fmt) "efibc: " fmt
 
-#include <linux/efi.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
+#include <linaos/efi.h>
+#include <linaos/module.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
 
 static void efibc_str_to_str16(const char *str, efi_char16_t *str16)
 {

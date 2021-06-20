@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/memblock.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
+#include <linaos/stddef.h>
+#include <linaos/module.h>
+#include <linaos/memblock.h>
+#include <linaos/highmem.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/slab.h>
 #include <asm/fixmap.h>
 #include <asm/page.h>
 #include <as-layout.h>

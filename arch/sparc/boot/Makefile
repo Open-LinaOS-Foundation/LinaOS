@@ -2,13 +2,13 @@
 # Makefile for the Sparc boot stuff.
 #
 # Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
-# Copyright (C) 1997,1998 Jakub Jelinek (jj@ultra.linux.cz)
+# Copyright (C) 1997,1998 Jakub Jelinek (jj@ultra.linaos.cz)
 
 ROOT_IMG	:= /usr/src/root.img
 ELFTOAOUT	:= elftoaout
 
 hostprogs	:= piggyback
-targets		:= tftpboot.img image zImage vmlinux.aout
+targets		:= tftpboot.img image zImage vmlinaos.aout
 clean-files	:= System.map
 
 quiet_cmd_elftoaout	= ELFTOAOUT $@
@@ -26,7 +26,7 @@ $(obj)/zImage: $(obj)/image
 	$(call if_changed,gzip)
 	@echo '  kernel: $@ is ready'
 
-$(obj)/vmlinux.aout: vmlinux FORCE
+$(obj)/vmlinaos.aout: vmlinaos FORCE
 	$(call if_changed,elftoaout)
 	@echo '  kernel: $@ is ready'
 else
@@ -63,7 +63,7 @@ $(obj)/uImage: $(obj)/image.gz
 
 endif
 
-$(obj)/image: vmlinux FORCE
+$(obj)/image: vmlinaos FORCE
 	$(call if_changed,strip)
 	@echo '  kernel: $@ is ready'
 

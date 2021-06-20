@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  isl29003.c - Linux kernel module for
+ *  isl29003.c - LinaOS kernel module for
  * 	Intersil ISL29003 ambient light sensor
  *
  *  See file:Documentation/misc-devices/isl29003.rst
@@ -8,15 +8,15 @@
  *  Copyright (c) 2009 Daniel Mack <daniel@caiaq.de>
  *
  *  Based on code written by
- *  	Rodolfo Giometti <giometti@linux.it>
+ *  	Rodolfo Giometti <giometti@linaos.it>
  *  	Eurotech S.p.A. <info@eurotech.it>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
 
 #define ISL29003_DRV_NAME	"isl29003"
 #define DRIVER_VERSION		"1.0"

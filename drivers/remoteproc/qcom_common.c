@@ -4,20 +4,20 @@
  *
  * Copyright (C) 2016 Linaro Ltd
  * Copyright (C) 2015 Sony Mobile Communications Inc
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/remoteproc.h>
-#include <linux/remoteproc/qcom_rproc.h>
-#include <linux/rpmsg/qcom_glink.h>
-#include <linux/rpmsg/qcom_smd.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/mdt_loader.h>
-#include <linux/soc/qcom/smem.h>
+#include <linaos/firmware.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/remoteproc.h>
+#include <linaos/remoteproc/qcom_rproc.h>
+#include <linaos/rpmsg/qcom_glink.h>
+#include <linaos/rpmsg/qcom_smd.h>
+#include <linaos/slab.h>
+#include <linaos/soc/qcom/mdt_loader.h>
+#include <linaos/soc/qcom/smem.h>
 
 #include "remoteproc_internal.h"
 #include "qcom_common.h"

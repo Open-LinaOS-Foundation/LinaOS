@@ -32,10 +32,10 @@
 
 #include <drm/drm_mm.h>
 #include <drm/drm_vma_manager.h>
-#include <linux/workqueue.h>
-#include <linux/fs.h>
-#include <linux/spinlock.h>
-#include <linux/dma-resv.h>
+#include <linaos/workqueue.h>
+#include <linaos/fs.h>
+#include <linaos/spinlock.h>
+#include <linaos/dma-resv.h>
 
 #include <drm/ttm/ttm_device.h>
 

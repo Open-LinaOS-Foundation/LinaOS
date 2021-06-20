@@ -3,23 +3,23 @@
  * ti-sysc.c - Texas Instruments sysc interconnect target driver
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
-#include <linux/iopoll.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
+#include <linaos/delay.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/reset.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
+#include <linaos/iopoll.h>
 
-#include <linux/platform_data/ti-sysc.h>
+#include <linaos/platform_data/ti-sysc.h>
 
 #include <dt-bindings/bus/ti-sysc.h>
 

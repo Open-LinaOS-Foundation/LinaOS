@@ -4,7 +4,7 @@
  * Copyright (C) 2015 Numascale AS. All rights reserved.
  */
 
-#include <linux/clockchips.h>
+#include <linaos/clockchips.h>
 
 #include <asm/irq.h>
 #include <asm/numachip/numachip.h>

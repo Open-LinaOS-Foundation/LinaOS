@@ -2,7 +2,7 @@
 Documentation for /proc/sys
 ===========================
 
-Copyright (c) 1998, 1999,  Rik van Riel <riel@nl.linux.org>
+Copyright (c) 1998, 1999,  Rik van Riel <riel@nl.linaos.org>
 
 ------------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@ it. Not only to have a great laugh, but also to make sure that
 you're the last RTFMing person to screw up.
 
 In short, e-mail your suggestions, corrections and / or horror
-stories to: <riel@nl.linux.org>
+stories to: <riel@nl.linaos.org>
 
 Rik van Riel.
 
@@ -52,7 +52,7 @@ don't even need special tools to do it!
 In fact, there are only four things needed to use these config
 facilities:
 
-- a running Linux system
+- a running LinaOS system
 - root access
 - common sense (this is especially hard to come by these days)
 - knowledge of what all those values mean

@@ -2,14 +2,14 @@
 #ifndef _ASM_GENERIC_GPIO_H
 #define _ASM_GENERIC_GPIO_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
 
 #ifdef CONFIG_GPIOLIB
 
-#include <linux/compiler.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/compiler.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/gpio/consumer.h>
 
 /* Platforms may implement their GPIO interface with library code,
  * at a small performance cost for non-inlined operations and some
@@ -138,7 +138,7 @@ static inline void gpio_unexport(unsigned gpio)
 
 #else	/* !CONFIG_GPIOLIB */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 static inline bool gpio_is_valid(int number)
 {

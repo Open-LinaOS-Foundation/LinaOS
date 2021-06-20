@@ -1,6 +1,6 @@
 What:           /sys/devices/uncore_iio_x/dieX
 Date:           February 2020
-Contact:        Roman Sudarikov <roman.sudarikov@linux.intel.com>
+Contact:        Roman Sudarikov <roman.sudarikov@linaos.intel.com>
 Description:
                 Each IIO stack (PCIe root port) has its own IIO PMON block, so
                 each dieX file (where X is die number) holds "Segment:Root Bus"

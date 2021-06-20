@@ -6,11 +6,11 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/reboot.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
+#include <linaos/init.h>
+#include <linaos/reboot.h>
+#include <linaos/memblock.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
 #include <asm/mach_desc.h>
 
 #ifdef CONFIG_SERIAL_EARLYCON

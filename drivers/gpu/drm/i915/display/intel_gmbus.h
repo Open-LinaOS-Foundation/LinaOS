@@ -6,7 +6,7 @@
 #ifndef __INTEL_GMBUS_H__
 #define __INTEL_GMBUS_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_private;
 struct i2c_adapter;

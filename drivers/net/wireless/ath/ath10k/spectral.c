@@ -3,7 +3,7 @@
  * Copyright (c) 2013-2017 Qualcomm Atheros, Inc.
  */
 
-#include <linux/relay.h>
+#include <linaos/relay.h>
 #include "core.h"
 #include "debug.h"
 #include "wmi-ops.h"

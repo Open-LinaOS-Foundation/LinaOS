@@ -4,7 +4,7 @@
 #include <net/xfrm.h>
 #include <net/esp.h>
 #include <net/espintcp.h>
-#include <linux/skmsg.h>
+#include <linaos/skmsg.h>
 #include <net/inet_common.h>
 #if IS_ENABLED(CONFIG_IPV6)
 #include <net/ipv6_stubs.h>

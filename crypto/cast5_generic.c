@@ -14,12 +14,12 @@
 
 
 #include <asm/unaligned.h>
-#include <linux/init.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/crypto.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 #include <crypto/cast5.h>
 
 static const u32 s5[256] = {

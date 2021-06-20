@@ -6,24 +6,24 @@
  * (C) 2008, 2009, 2010, 2011 by Marc Kleine-Budde <kernel@pengutronix.de>
  */
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/errno.h>
+#include <linaos/if_arp.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/led.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/error.h>
+#include <linaos/can/led.h>
 
 #define AT91_MB_MASK(i)		((1 << (i)) - 1)
 
@@ -601,7 +601,7 @@ static void at91_read_mb(struct net_device *dev, unsigned int mb,
  * @dev: net device
  * @mb: mail box to read from
  *
- * Reads a CAN message from given mailbox, and put into linux network
+ * Reads a CAN message from given mailbox, and put into linaos network
  * RX queue, does all housekeeping chores (stats, ...)
  */
 static void at91_read_msg(struct net_device *dev, unsigned int mb)

@@ -19,16 +19,16 @@
  *  Copyright (C) 2004 MontaVista Software, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/page-flags.h>
-#include <linux/device.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/dmapool.h>
-#include <linux/list.h>
-#include <linux/scatterlist.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/page-flags.h>
+#include <linaos/device.h>
+#include <linaos/dma-direct.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/dmapool.h>
+#include <linaos/list.h>
+#include <linaos/scatterlist.h>
 
 #include <asm/cacheflush.h>
 #include <asm/dma-iommu.h>

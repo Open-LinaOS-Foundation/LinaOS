@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/if_bridge.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/refcount.h>
-#include <linux/rtnetlink.h>
-#include <linux/workqueue.h>
+#include <linaos/if_bridge.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/refcount.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/workqueue.h>
 #include <net/arp.h>
 #include <net/gre.h>
 #include <net/lag.h>

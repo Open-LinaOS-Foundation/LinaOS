@@ -32,12 +32,12 @@
  * SOFTWARE.
  */
 
-#include <linux/completion.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/completion.h>
+#include <linaos/pci.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <asm/io.h>
 #include <rdma/ib_mad.h>
 

@@ -14,7 +14,7 @@
 #ifndef V4L2_COMMON_H_
 #define V4L2_COMMON_H_
 
-#include <linux/time.h>
+#include <linaos/time.h>
 #include <media/v4l2-dev.h>
 
 /* Common printk constructs for v4l-i2c drivers. These macros create a unique
@@ -102,7 +102,7 @@ struct v4l2_subdev;
 struct v4l2_subdev_ops;
 
 /* I2C Helper functions */
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 /**
  * enum v4l2_i2c_tuner_type - specifies the range of tuner address that
@@ -267,7 +267,7 @@ static inline void v4l2_i2c_subdev_unregister(struct v4l2_subdev *sd)
 
 /* SPI Helper functions */
 
-#include <linux/spi/spi.h>
+#include <linaos/spi/spi.h>
 
 #if defined(CONFIG_SPI)
 

@@ -14,7 +14,7 @@
  *   Xiao Guangrong <xiaoguangrong@cn.fujitsu.com>
  */
 
-#include <linux/ratelimit.h>
+#include <linaos/ratelimit.h>
 
 static char const *audit_point_name[] = {
 	"pre page fault",

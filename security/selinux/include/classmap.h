@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/capability.h>
-#include <linux/socket.h>
+#include <linaos/capability.h>
+#include <linaos/socket.h>
 
 #define COMMON_FILE_SOCK_PERMS "ioctl", "read", "write", "create", \
     "getattr", "setattr", "lock", "relabelfrom", "relabelto", "append", "map"
@@ -19,7 +19,7 @@
 
 #define COMMON_CAP_PERMS  "chown", "dac_override", "dac_read_search", \
 	    "fowner", "fsetid", "kill", "setgid", "setuid", "setpcap", \
-	    "linux_immutable", "net_bind_service", "net_broadcast", \
+	    "linaos_immutable", "net_bind_service", "net_broadcast", \
 	    "net_admin", "net_raw", "ipc_lock", "ipc_owner", "sys_module", \
 	    "sys_rawio", "sys_chroot", "sys_ptrace", "sys_pacct", "sys_admin", \
 	    "sys_boot", "sys_nice", "sys_resource", "sys_time", \
@@ -126,7 +126,7 @@ struct security_class_mapping secclass_map[] = {
 	{ "netlink_xfrm_socket",
 	  { COMMON_SOCK_PERMS,
 	    "nlmsg_read", "nlmsg_write", NULL } },
-	{ "netlink_selinux_socket",
+	{ "netlink_selinaos_socket",
 	  { COMMON_SOCK_PERMS, NULL } },
 	{ "netlink_iscsi_socket",
 	  { COMMON_SOCK_PERMS, NULL } },

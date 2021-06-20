@@ -14,15 +14,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
-#include <linux/types.h>
-#include <linux/units.h>
+#include <linaos/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
+#include <linaos/thermal.h>
+#include <linaos/types.h>
+#include <linaos/units.h>
 
 MODULE_AUTHOR("Thomas Sujith");
 MODULE_AUTHOR("Zhang Rui");

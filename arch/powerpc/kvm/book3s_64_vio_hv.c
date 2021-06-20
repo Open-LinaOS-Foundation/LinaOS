@@ -6,16 +6,16 @@
  * Copyright 2016 Alexey Kardashevskiy, IBM Corporation <aik@au1.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/highmem.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/hugetlb.h>
-#include <linux/list.h>
-#include <linux/stringify.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kvm.h>
+#include <linaos/kvm_host.h>
+#include <linaos/highmem.h>
+#include <linaos/gfp.h>
+#include <linaos/slab.h>
+#include <linaos/hugetlb.h>
+#include <linaos/list.h>
+#include <linaos/stringify.h>
 
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>
@@ -540,7 +540,7 @@ long kvmppc_rm_h_put_tce_indirect(struct kvm_vcpu *vcpu,
 		 * This is usually a case of a guest with emulated devices only
 		 * when TCE list is not in preregistered memory.
 		 * We do not require memory to be preregistered in this case
-		 * so lock rmap and do __find_linux_pte_or_hugepte().
+		 * so lock rmap and do __find_linaos_pte_or_hugepte().
 		 */
 		if (kvmppc_rm_tce_to_ua(vcpu->kvm, tce_list, &ua))
 			return H_TOO_HARD;

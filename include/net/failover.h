@@ -4,7 +4,7 @@
 #ifndef _FAILOVER_H
 #define _FAILOVER_H
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 
 struct failover_ops {
 	int (*slave_pre_register)(struct net_device *slave_dev,

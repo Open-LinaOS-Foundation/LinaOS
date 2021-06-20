@@ -7,24 +7,24 @@
  * Copyright (C) 2006-2010 Patrick McHardy <kaber@trash.net>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/cache.h>
-#include <linux/capability.h>
-#include <linux/skbuff.h>
-#include <linux/kmod.h>
-#include <linux/vmalloc.h>
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/icmp.h>
+#include <linaos/cache.h>
+#include <linaos/capability.h>
+#include <linaos/skbuff.h>
+#include <linaos/kmod.h>
+#include <linaos/vmalloc.h>
+#include <linaos/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/icmp.h>
 #include <net/ip.h>
 #include <net/compat.h>
-#include <linux/uaccess.h>
-#include <linux/mutex.h>
-#include <linux/proc_fs.h>
-#include <linux/err.h>
-#include <linux/cpumask.h>
+#include <linaos/uaccess.h>
+#include <linaos/mutex.h>
+#include <linaos/proc_fs.h>
+#include <linaos/err.h>
+#include <linaos/cpumask.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter_ipv4/ip_tables.h>
 #include <net/netfilter/nf_log.h>
 #include "../../netfilter/xt_repldata.h"
 

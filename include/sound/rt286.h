@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/rt286.h -- Platform data for RT286
+ * linaos/sound/rt286.h -- Platform data for RT286
  *
  * Copyright 2013 Realtek Microelectronics
  */

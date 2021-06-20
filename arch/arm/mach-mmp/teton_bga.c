@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-mmp/teton_bga.c
+ *  linaos/arch/arm/mach-mmp/teton_bga.c
  *
  *  Support for the Marvell PXA168 Teton BGA Development Platform.
  *
@@ -9,14 +9,14 @@
  *  This code is based on aspenite.c
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/input.h>
-#include <linux/platform_data/keypad-pxa27x.h>
-#include <linux/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio-pxa.h>
+#include <linaos/input.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
+#include <linaos/i2c.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

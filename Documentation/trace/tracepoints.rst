@@ -1,11 +1,11 @@
 ==================================
-Using the Linux Kernel Tracepoints
+Using the LinaOS Kernel Tracepoints
 ==================================
 
 :Author: Mathieu Desnoyers
 
 
-This document introduces Linux Kernel Tracepoints and their use. It
+This document introduces LinaOS Kernel Tracepoints and their use. It
 provides examples of how to insert tracepoints in the kernel and
 connect probe functions to them and provides some examples of probe
 functions.
@@ -40,7 +40,7 @@ Two elements are required for tracepoints :
 - A tracepoint definition, placed in a header file.
 - The tracepoint statement, in C code.
 
-In order to use tracepoints, you should include linux/tracepoint.h.
+In order to use tracepoints, you should include linaos/tracepoint.h.
 
 In include/trace/events/subsys.h::
 
@@ -50,7 +50,7 @@ In include/trace/events/subsys.h::
 	#if !defined(_TRACE_SUBSYS_H) || defined(TRACE_HEADER_MULTI_READ)
 	#define _TRACE_SUBSYS_H
 
-	#include <linux/tracepoint.h>
+	#include <linaos/tracepoint.h>
 
 	DECLARE_TRACE(subsys_eventname,
 		TP_PROTO(int firstarg, struct task_struct *p),

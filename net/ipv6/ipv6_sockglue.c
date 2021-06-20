@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPv6 BSD socket options interface
- *	Linux INET6 implementation
+ *	LinaOS INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Based on linux/net/ipv4/ip_sockglue.c
+ *	Based on linaos/net/ipv4/ip_sockglue.c
  *
  *	FIXME: Make the setsockopt code POSIX compliant: That is
  *
@@ -18,21 +18,21 @@
  *		- added multicast source filtering API for MLDv2
  */
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/mroute6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/netfilter.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/in6.h>
+#include <linaos/mroute6.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/init.h>
+#include <linaos/sysctl.h>
+#include <linaos/netfilter.h>
+#include <linaos/slab.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>
@@ -50,7 +50,7 @@
 #include <net/compat.h>
 #include <net/seg6.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 struct ip6_ra_chain *ip6_ra_chain;
 DEFINE_RWLOCK(ip6_ra_lock);

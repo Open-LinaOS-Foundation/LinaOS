@@ -4,7 +4,7 @@
  */
 
 #include "mt76.h"
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 void mt76_pci_disable_aspm(struct pci_dev *pdev)
 {

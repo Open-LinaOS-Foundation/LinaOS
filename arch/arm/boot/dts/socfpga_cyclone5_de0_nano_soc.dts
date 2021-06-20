@@ -36,7 +36,7 @@
 		hps0 {
 			label = "hps_led0";
 			gpios = <&portb 24 0>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 };

@@ -7,14 +7,14 @@
 #ifndef __LINUX_IOMMU_H
 #define __LINUX_IOMMU_H
 
-#include <linux/scatterlist.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/ioasid.h>
-#include <uapi/linux/iommu.h>
+#include <linaos/scatterlist.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/ioasid.h>
+#include <uapi/linaos/iommu.h>
 
 #define IOMMU_READ	(1 << 0)
 #define IOMMU_WRITE	(1 << 1)

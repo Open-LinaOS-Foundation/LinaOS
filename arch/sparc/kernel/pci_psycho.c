@@ -6,14 +6,14 @@
  * Copyright (C) 1999 Jakub Jelinek   (jakub@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/of_device.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_device.h>
 
 #include <asm/iommu.h>
 #include <asm/irq.h>
@@ -507,7 +507,7 @@ static struct pci_pbm_info *psycho_find_sibling(u32 upa_portid)
 
 static int psycho_probe(struct platform_device *op)
 {
-	const struct linux_prom64_registers *pr_regs;
+	const struct linaos_prom64_registers *pr_regs;
 	struct device_node *dp = op->dev.of_node;
 	struct pci_pbm_info *pbm;
 	struct iommu *iommu;

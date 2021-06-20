@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (C) 2010 SUSE Linux Products GmbH. All rights reserved.
+ * Copyright (C) 2010 SUSE LinaOS Products GmbH. All rights reserved.
  *
  * Authors:
  *     Alexander Graf <agraf@suse.de>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/hash.h>
-#include <linux/slab.h>
-#include <linux/rculist.h>
+#include <linaos/kvm_host.h>
+#include <linaos/hash.h>
+#include <linaos/slab.h>
+#include <linaos/rculist.h>
 
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>

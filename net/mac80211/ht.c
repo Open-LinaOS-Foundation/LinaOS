@@ -12,8 +12,8 @@
  * Copyright(c) 2020 Intel Corporation
  */
 
-#include <linux/ieee80211.h>
-#include <linux/export.h>
+#include <linaos/ieee80211.h>
+#include <linaos/export.h>
 #include <net/mac80211.h>
 #include "ieee80211_i.h"
 #include "rate.h"

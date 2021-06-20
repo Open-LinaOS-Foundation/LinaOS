@@ -15,7 +15,7 @@
  * Maintained by: QLogic-Storage-Upstream@qlogic.com
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <scsi/scsi_tcq.h>
 #include <scsi/libiscsi.h>
 #include "bnx2i.h"

@@ -7,10 +7,10 @@
  *      Block on a futex and wait for timeout.
  *
  * AUTHOR
- *      Darren Hart <dvhart@linux.intel.com>
+ *      Darren Hart <dvhart@linaos.intel.com>
  *
  * HISTORY
- *      2009-Nov-6: Initial version by Darren Hart <dvhart@linux.intel.com>
+ *      2009-Nov-6: Initial version by Darren Hart <dvhart@linaos.intel.com>
  *
  *****************************************************************************/
 

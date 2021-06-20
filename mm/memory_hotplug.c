@@ -1,41 +1,41 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/memory_hotplug.c
+ *  linaos/mm/memory_hotplug.c
  *
  *  Copyright (C)
  */
 
-#include <linux/stddef.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/swap.h>
-#include <linux/interrupt.h>
-#include <linux/pagemap.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/pagevec.h>
-#include <linux/writeback.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/cpu.h>
-#include <linux/memory.h>
-#include <linux/memremap.h>
-#include <linux/memory_hotplug.h>
-#include <linux/highmem.h>
-#include <linux/vmalloc.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/migrate.h>
-#include <linux/page-isolation.h>
-#include <linux/pfn.h>
-#include <linux/suspend.h>
-#include <linux/mm_inline.h>
-#include <linux/firmware-map.h>
-#include <linux/stop_machine.h>
-#include <linux/hugetlb.h>
-#include <linux/memblock.h>
-#include <linux/compaction.h>
-#include <linux/rmap.h>
+#include <linaos/stddef.h>
+#include <linaos/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/swap.h>
+#include <linaos/interrupt.h>
+#include <linaos/pagemap.h>
+#include <linaos/compiler.h>
+#include <linaos/export.h>
+#include <linaos/pagevec.h>
+#include <linaos/writeback.h>
+#include <linaos/slab.h>
+#include <linaos/sysctl.h>
+#include <linaos/cpu.h>
+#include <linaos/memory.h>
+#include <linaos/memremap.h>
+#include <linaos/memory_hotplug.h>
+#include <linaos/highmem.h>
+#include <linaos/vmalloc.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/migrate.h>
+#include <linaos/page-isolation.h>
+#include <linaos/pfn.h>
+#include <linaos/suspend.h>
+#include <linaos/mm_inline.h>
+#include <linaos/firmware-map.h>
+#include <linaos/stop_machine.h>
+#include <linaos/hugetlb.h>
+#include <linaos/memblock.h>
+#include <linaos/compaction.h>
+#include <linaos/rmap.h>
 
 #include <asm/tlbflush.h>
 

@@ -1,13 +1,13 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- *	include/linux/bfs_fs.h - BFS data structures on disk.
+ *	include/linaos/bfs_fs.h - BFS data structures on disk.
  *	Copyright (C) 1999-2018 Tigran Aivazian <aivazian.tigran@gmail.com>
  */
 
 #ifndef _LINUX_BFS_FS_H
 #define _LINUX_BFS_FS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define BFS_BSIZE_BITS		9
 #define BFS_BSIZE		(1<<BFS_BSIZE_BITS)

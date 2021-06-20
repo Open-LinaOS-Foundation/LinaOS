@@ -7,7 +7,7 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/device.h>
+#include <linaos/device.h>
 
 #include <media/v4l2-subdev.h>
 

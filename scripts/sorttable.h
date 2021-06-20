@@ -4,7 +4,7 @@
  *
  * Added ORC unwind tables sort support and other updates:
  * Copyright (C) 1999-2019 Alibaba Group Holding Limited. by:
- * Shile Zhang <shile.zhang@linux.alibaba.com>
+ * Shile Zhang <shile.zhang@linaos.alibaba.com>
  *
  * Copyright 2011 - 2012 Cavium, Inc.
  *

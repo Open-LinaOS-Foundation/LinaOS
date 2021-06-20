@@ -1,5 +1,5 @@
 ==============================================================================
-Linux Driver Source for Xilinx FPGA firmware download
+LinaOS Driver Source for Xilinx FPGA firmware download
 ==============================================================================
 
 
@@ -48,18 +48,18 @@ TABLE OF CONTENTS.
 	This is a real gain :)
 
 	b. For the FPGA that runs without config after the download, which
-	doesn't talk to any of Linux interfaces (such as PCIE).
+	doesn't talk to any of LinaOS interfaces (such as PCIE).
 
 	We download FPGA firmware from user triggered or some other way, and that's it.
-	Since that FPGA runs on its own, it doesn't require a linux driver
+	Since that FPGA runs on its own, it doesn't require a linaos driver
 	after the download.
 
 	c. For the FPGA that requires config after the download, which talk to
-	any of linux interfaces (such as PCIE)
+	any of linaos interfaces (such as PCIE)
 
 	Then, this type of FPGA config can be put into device tree and have a
 	separate driver (pcie or others), then THAT driver calls my driver to
-	download FPGA firmware during the Linux boot, the take over the device
+	download FPGA firmware during the LinaOS boot, the take over the device
 	through the interface.
 
 6. REFERENCE

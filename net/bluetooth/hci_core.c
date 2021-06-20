@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for LinaOS
    Copyright (C) 2000-2001 Qualcomm Incorporated
    Copyright (C) 2011 ProFUSION Embedded Systems
 
@@ -25,13 +25,13 @@
 
 /* Bluetooth HCI core. */
 
-#include <linux/export.h>
-#include <linux/rfkill.h>
-#include <linux/debugfs.h>
-#include <linux/crypto.h>
-#include <linux/property.h>
-#include <linux/suspend.h>
-#include <linux/wait.h>
+#include <linaos/export.h>
+#include <linaos/rfkill.h>
+#include <linaos/debugfs.h>
+#include <linaos/crypto.h>
+#include <linaos/property.h>
+#include <linaos/suspend.h>
+#include <linaos/wait.h>
 #include <asm/unaligned.h>
 
 #include <net/bluetooth/bluetooth.h>

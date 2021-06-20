@@ -15,23 +15,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/dmi.h>
-#include <linux/timex.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/cpufreq.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/dmi.h>
+#include <linaos/timex.h>
+#include <linaos/io.h>
 
 #include <asm/timer.h>		/* Needed for recalibrate_cpu_khz() */
 #include <asm/msr.h>
 #include <asm/cpu_device_id.h>
 
 #ifdef CONFIG_X86_POWERNOW_K7_ACPI
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 #include <acpi/processor.h>
 #endif
 

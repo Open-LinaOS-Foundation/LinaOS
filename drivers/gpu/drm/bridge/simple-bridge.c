@@ -6,11 +6,11 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_graph.h>
+#include <linaos/regulator/consumer.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/backtrace-clang.S
+ *  linaos/arch/arm/lib/backtrace-clang.S
  *
  *  Copyright (C) 2019 Nathan Huckleberry
  *
  */
-#include <linux/kern_levels.h>
-#include <linux/linkage.h>
+#include <linaos/kern_levels.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 		.text
 

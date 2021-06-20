@@ -45,11 +45,11 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/mmu_notifier.h>
-#include <linux/interval_tree_generic.h>
-#include <linux/sched/mm.h>
+#include <linaos/list.h>
+#include <linaos/rculist.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/interval_tree_generic.h>
+#include <linaos/sched/mm.h>
 
 #include "mmu_rb.h"
 #include "trace.h"

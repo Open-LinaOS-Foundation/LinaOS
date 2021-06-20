@@ -15,23 +15,23 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h> /* platform_device() */
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h> /* platform_device() */
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/vmalloc.h>
+#include <linaos/wait.h>
 
 #include "omap_dmm_tiler.h"
 #include "omap_dmm_priv.h"

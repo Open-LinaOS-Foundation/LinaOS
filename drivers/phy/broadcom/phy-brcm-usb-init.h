@@ -6,7 +6,7 @@
 #ifndef _USB_BRCM_COMMON_INIT_H
 #define _USB_BRCM_COMMON_INIT_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 #define USB_CTLR_MODE_HOST 0
 #define USB_CTLR_MODE_DEVICE 1

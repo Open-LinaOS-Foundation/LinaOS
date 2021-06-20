@@ -323,9 +323,9 @@ config GDB_SCRIPTS
 	bool "Provide GDB scripts for kernel debugging"
 	help
 	  This creates the required links to GDB helper scripts in the
-	  build directory. If you load vmlinux into gdb, the helper
+	  build directory. If you load vmlinaos into gdb, the helper
 	  scripts will be automatically imported by gdb as well, and
-	  additional functions are available to analyze a Linux kernel
+	  additional functions are available to analyze a LinaOS kernel
 	  instance. See Documentation/dev-tools/gdb-kernel-debugging.rst
 	  for further details.
 
@@ -379,7 +379,7 @@ config DEBUG_SECTION_MISMATCH
 	  any use of code/data previously in these sections would
 	  most likely result in an oops.
 	  In the code, functions and variables are annotated with
-	  __init,, etc. (see the full list in include/linux/init.h),
+	  __init,, etc. (see the full list in include/linaos/init.h),
 	  which results in the code/data being placed in specific sections.
 	  The section mismatch analysis is always performed after a full
 	  kernel build, and enabling this option causes the following
@@ -449,11 +449,11 @@ config VMLINUX_VALIDATION
 	default y
 
 config VMLINUX_MAP
-	bool "Generate vmlinux.map file when linking"
+	bool "Generate vmlinaos.map file when linking"
 	depends on EXPERT
 	help
-	  Selecting this option will pass "-Map=vmlinux.map" to ld
-	  when linking vmlinux. That file can be useful for verifying
+	  Selecting this option will pass "-Map=vmlinaos.map" to ld
+	  when linking vmlinaos. That file can be useful for verifying
 	  and debugging magic section games, and for seeing which
 	  pieces of code get eliminated with
 	  CONFIG_LD_DEAD_CODE_DATA_ELIMINATION.
@@ -1552,7 +1552,7 @@ config WARN_ALL_UNSEEDED_RANDOM
 	  Say Y here if you want to receive warnings for all uses of
 	  unseeded randomness.  This will be of use primarily for
 	  those developers interested in improving the security of
-	  Linux kernels running on their architecture (or
+	  LinaOS kernels running on their architecture (or
 	  subarchitecture).
 
 config DEBUG_KOBJECT
@@ -1647,7 +1647,7 @@ config DEBUG_CREDENTIALS
 	  see that this number never exceeds the usage count of the cred
 	  struct.
 
-	  Furthermore, if SELinux is enabled, this also checks that the
+	  Furthermore, if SELinaOS is enabled, this also checks that the
 	  security pointer in the cred struct is never seen to be invalid.
 
 	  If unsure, say N.
@@ -2034,7 +2034,7 @@ menuconfig RUNTIME_TESTING_MENU
 if RUNTIME_TESTING_MENU
 
 config LKDTM
-	tristate "Linux Kernel Dump Test Tool Module"
+	tristate "LinaOS Kernel Dump Test Tool Module"
 	depends on DEBUG_FS
 	help
 	This module enables testing of the different dumping mechanisms by
@@ -2207,8 +2207,8 @@ config TEST_RHASHTABLE
 config TEST_HASH
 	tristate "Perform selftest on hash functions"
 	help
-	  Enable this option to test the kernel's integer (<linux/hash.h>),
-	  string (<linux/stringhash.h>), and siphash (<linux/siphash.h>)
+	  Enable this option to test the kernel's integer (<linaos/hash.h>),
+	  string (<linaos/stringhash.h>), and siphash (<linaos/siphash.h>)
 	  hash functions on boot (or module load).
 
 	  This is intended to help people writing architecture-specific
@@ -2456,7 +2456,7 @@ config TEST_KMOD
 	select BTRFS_FS
 	help
 	  Test the kernel's module loading mechanism: kmod. kmod implements
-	  support to load modules using the Linux kernel's usermode helper.
+	  support to load modules using the LinaOS kernel's usermode helper.
 	  This test provides a series of tests against kmod.
 
 	  Although technically you can either build test_kmod as a module or

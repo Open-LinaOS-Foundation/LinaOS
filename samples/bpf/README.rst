@@ -91,7 +91,7 @@ cofiguration and header install steps described above. This will direct make to
 build samples for the cross target::
 
  export ARCH=arm64
- export CROSS_COMPILE="aarch64-linux-gnu-"
+ export CROSS_COMPILE="aarch64-linaos-gnu-"
 
 Headers can be also installed on RFS of target board if need to keep them in
 sync (not necessarily and it creates a local "usr/include" directory also)::

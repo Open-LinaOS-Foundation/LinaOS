@@ -5,9 +5,9 @@
  * modify it under the terms of version 2 of the GNU General Public
  * License as published by the Free Software Foundation.
  */
-#include <linux/version.h>
-#include <linux/ptrace.h>
-#include <uapi/linux/bpf.h>
+#include <linaos/version.h>
+#include <linaos/ptrace.h>
+#include <uapi/linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 #define MAX_ENTRIES	20

@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI__LINUX_BRIDGE_NETFILTER_H
 #define _UAPI__LINUX_BRIDGE_NETFILTER_H
 
 /* bridge-specific defines for netfilter. 
  */
 
-#include <linux/in.h>
-#include <linux/netfilter.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/if_pppox.h>
+#include <linaos/in.h>
+#include <linaos/netfilter.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/if_pppox.h>
 
 #ifndef __KERNEL__
 #include <limits.h> /* for INT_MIN, INT_MAX */

@@ -9,7 +9,7 @@ srctree := $(patsubst %/,%,$(dir $(CURDIR)))
 srctree := $(patsubst %/,%,$(dir $(srctree)))
 endif
 
-LIBSRC = $(srctree)/lib/bootconfig.c $(srctree)/include/linux/bootconfig.h
+LIBSRC = $(srctree)/lib/bootconfig.c $(srctree)/include/linaos/bootconfig.h
 CFLAGS = -Wall -g -I$(CURDIR)/include
 
 ALL_TARGETS := bootconfig

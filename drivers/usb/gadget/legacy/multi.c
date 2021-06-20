@@ -9,9 +9,9 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
 
 #include "u_serial.h"
 #if defined USB_ETH_RNDIS
@@ -44,7 +44,7 @@ USB_ETHERNET_MODULE_PARAMETERS();
 
 /***************************** Device Descriptor ****************************/
 
-#define MULTI_VENDOR_NUM	0x1d6b	/* Linux Foundation */
+#define MULTI_VENDOR_NUM	0x1d6b	/* LinaOS Foundation */
 #define MULTI_PRODUCT_NUM	0x0104	/* Multifunction Composite Gadget */
 
 

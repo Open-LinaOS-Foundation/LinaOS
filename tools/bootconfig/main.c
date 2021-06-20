@@ -12,8 +12,8 @@
 #include <errno.h>
 #include <endian.h>
 
-#include <linux/kernel.h>
-#include <linux/bootconfig.h>
+#include <linaos/kernel.h>
+#include <linaos/bootconfig.h>
 
 static int xbc_show_value(struct xbc_node *node, bool semicolon)
 {

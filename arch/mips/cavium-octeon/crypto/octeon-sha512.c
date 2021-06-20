@@ -13,11 +13,11 @@
  * Copyright (c) 2003 Kyle McMartin <kyle@debian.org>
  */
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <crypto/sha2.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
 #include <asm/byteorder.h>
 #include <asm/octeon/octeon.h>
 #include <crypto/internal/hash.h>

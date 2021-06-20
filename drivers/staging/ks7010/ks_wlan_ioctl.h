@@ -9,7 +9,7 @@
 #ifndef _KS_WLAN_IOCTL_H
 #define _KS_WLAN_IOCTL_H
 
-#include <linux/wireless.h>
+#include <linaos/wireless.h>
 /* The low order bit identify a SET (0) or a GET (1) ioctl.  */
 
 /*					(SIOCIWFIRSTPRIV + 0) */
@@ -51,7 +51,7 @@
 #ifdef __KERNEL__
 
 #include "ks_wlan.h"
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 
 int ks_wlan_setup_parameter(struct ks_wlan_private *priv,
 			    unsigned int commit_flag);

@@ -1,5 +1,5 @@
 /*
- * Copyright 2006 Dave Airlie <airlied@linux.ie>
+ * Copyright 2006 Dave Airlie <airlied@linaos.ie>
  * Copyright © 2006-2007 Intel Corporation
  *   Jesse Barnes <jesse.barnes@intel.com>
  *
@@ -26,11 +26,11 @@
  *	Eric Anholt <eric@anholt.net>
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_edid.h>

@@ -1,4 +1,4 @@
-Linux Devlink Documentation
+LinaOS Devlink Documentation
 ===========================
 
 devlink is an API to expose device information and resources not directly

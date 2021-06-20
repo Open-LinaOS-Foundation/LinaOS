@@ -3,9 +3,9 @@
  *
  * isar.h   ISAR (Siemens PSB 7110) specific defines
  *
- * Author Karsten Keil (keil@isdn4linux.de)
+ * Author Karsten Keil (keil@isdn4linaos.de)
  *
- * Copyright 2009  by Karsten Keil <keil@isdn4linux.de>
+ * Copyright 2009  by Karsten Keil <keil@isdn4linaos.de>
  */
 
 #include "iohelper.h"

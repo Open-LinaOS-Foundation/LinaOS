@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux/MIPS kernel.
+# Makefile for the LinaOS/MIPS kernel.
 #
 
-extra-y		:= head.o vmlinux.lds
+extra-y		:= head.o vmlinaos.lds
 
 obj-y		+= branch.o cmpxchg.o elf.o entry.o genex.o idle.o irq.o \
 		   process.o prom.o ptrace.o reset.o setup.o signal.o \
@@ -78,7 +78,7 @@ obj-$(CONFIG_IRQ_GT641XX)	+= irq-gt641xx.o
 obj-$(CONFIG_KPROBES)		+= kprobes.o
 obj-$(CONFIG_32BIT)		+= scall32-o32.o
 obj-$(CONFIG_64BIT)		+= scall64-n64.o
-obj-$(CONFIG_MIPS32_COMPAT)	+= linux32.o ptrace32.o signal32.o
+obj-$(CONFIG_MIPS32_COMPAT)	+= linaos32.o ptrace32.o signal32.o
 obj-$(CONFIG_MIPS32_N32)	+= scall64-n32.o signal_n32.o
 obj-$(CONFIG_MIPS32_O32)	+= scall64-o32.o signal_o32.o
 
@@ -115,4 +115,4 @@ obj-$(CONFIG_MIPS_CPC)		+= mips-cpc.o
 obj-$(CONFIG_CPU_PM)		+= pm.o
 obj-$(CONFIG_MIPS_CPS_PM)	+= pm-cps.o
 
-CPPFLAGS_vmlinux.lds		:= $(KBUILD_CFLAGS)
+CPPFLAGS_vmlinaos.lds		:= $(KBUILD_CFLAGS)

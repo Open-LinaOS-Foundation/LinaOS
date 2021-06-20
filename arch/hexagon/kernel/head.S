@@ -2,11 +2,11 @@
 /*
  * Early kernel startup code for Hexagon
  *
- * Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2013, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 #include <asm/asm-offsets.h>
 #include <asm/mem-layout.h>
 #include <asm/vm_mmu.h>

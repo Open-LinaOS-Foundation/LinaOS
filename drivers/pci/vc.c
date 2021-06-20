@@ -6,12 +6,12 @@
  *     Author: Alex Williamson <alex.williamson@redhat.com>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pci_regs.h>
+#include <linaos/types.h>
 
 #include "pci.h"
 

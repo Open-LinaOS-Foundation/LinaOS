@@ -10,13 +10,13 @@
 // Based on ak4535.c by Richard Purdie
 // Based on wm8753.c by Liam Girdwood
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/of_device.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 #include <sound/tlv.h>

@@ -11,7 +11,7 @@
 #include "decl.h"
 #include "host.h"
 
-#include <linux/kfifo.h>
+#include <linaos/kfifo.h>
 
 /* sleep_params */
 struct sleep_params {

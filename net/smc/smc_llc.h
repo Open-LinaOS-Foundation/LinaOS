@@ -7,7 +7,7 @@
  *  Copyright IBM Corp. 2016
  *
  *  Author(s):  Klaus Wacker <Klaus.Wacker@de.ibm.com>
- *              Ursula Braun <ubraun@linux.vnet.ibm.com>
+ *              Ursula Braun <ubraun@linaos.vnet.ibm.com>
  */
 
 #ifndef SMC_LLC_H

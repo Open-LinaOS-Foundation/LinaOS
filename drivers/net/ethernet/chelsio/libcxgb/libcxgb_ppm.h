@@ -37,16 +37,16 @@
 #ifndef	__LIBCXGB_PPM_H__
 #define	__LIBCXGB_PPM_H__
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/scatterlist.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/bitmap.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/debugfs.h>
+#include <linaos/list.h>
+#include <linaos/netdevice.h>
+#include <linaos/scatterlist.h>
+#include <linaos/skbuff.h>
+#include <linaos/vmalloc.h>
+#include <linaos/bitmap.h>
 
 struct cxgbi_pagepod_hdr {
 	u32 vld_tid;

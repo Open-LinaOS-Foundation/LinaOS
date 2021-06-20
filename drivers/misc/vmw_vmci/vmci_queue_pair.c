@@ -5,21 +5,21 @@
  * Copyright (C) 2012 VMware, Inc. All rights reserved.
  */
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/vmw_vmci_api.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uio.h>
-#include <linux/wait.h>
-#include <linux/vmalloc.h>
-#include <linux/skbuff.h>
+#include <linaos/vmw_vmci_defs.h>
+#include <linaos/vmw_vmci_api.h>
+#include <linaos/highmem.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/pagemap.h>
+#include <linaos/pci.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/uio.h>
+#include <linaos/wait.h>
+#include <linaos/vmalloc.h>
+#include <linaos/skbuff.h>
 
 #include "vmci_handle_array.h"
 #include "vmci_queue_pair.h"
@@ -2681,7 +2681,7 @@ int vmci_qpair_alloc(struct vmci_qp **qpair,
 	 * enforces a limit on the total amount of memory that can be
 	 * allocated to queuepairs for a guest.  However, we try to
 	 * allocate this memory before we make the queuepair
-	 * allocation hypercall.  On Linux, we allocate each page
+	 * allocation hypercall.  On LinaOS, we allocate each page
 	 * separately, which means rather than fail, the guest will
 	 * thrash while it tries to allocate, and will become
 	 * increasingly unresponsive to the point where it appears to
@@ -3099,7 +3099,7 @@ EXPORT_SYMBOL_GPL(vmci_qpair_dequeue);
  * @qpair:      Pointer to the queue pair struct.
  * @buf:        Pointer to buffer for the data
  * @buf_size:   Length of buffer.
- * @buf_type:   Buffer type (Unused on Linux).
+ * @buf_type:   Buffer type (Unused on LinaOS).
  *
  * This is the client interface for peeking into a queue.  (I.e.,
  * copy data from the queue without updating the head pointer.)
@@ -3226,7 +3226,7 @@ EXPORT_SYMBOL_GPL(vmci_qpair_dequev);
  * @qpair:      Pointer to the queue pair struct.
  * @iov:        Pointer to buffer for the data
  * @iov_size:   Length of buffer.
- * @buf_type:   Buffer type (Unused on Linux).
+ * @buf_type:   Buffer type (Unused on LinaOS).
  *
  * This is the client interface for peeking into a queue.  (I.e.,
  * copy data from the queue without updating the head pointer.)

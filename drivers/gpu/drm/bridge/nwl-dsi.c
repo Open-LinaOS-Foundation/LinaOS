@@ -6,20 +6,20 @@
  * Copyright (C) 2020 Purism SPC
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/math64.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/mux/consumer.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/sys_soc.h>
-#include <linux/time64.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/irq.h>
+#include <linaos/math64.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/mux/consumer.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/phy/phy.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
+#include <linaos/sys_soc.h>
+#include <linaos/time64.h>
 
 #include <drm/drm_bridge.h>
 #include <drm/drm_mipi_dsi.h>

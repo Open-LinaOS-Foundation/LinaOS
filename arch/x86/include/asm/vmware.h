@@ -4,7 +4,7 @@
 
 #include <asm/cpufeatures.h>
 #include <asm/alternative.h>
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 /*
  * The hypercall definitions differ in the low word of the %edx argument

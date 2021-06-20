@@ -10,8 +10,8 @@
 #ifndef __LINUX_HWSPINLOCK_H
 #define __LINUX_HWSPINLOCK_H
 
-#include <linux/err.h>
-#include <linux/sched.h>
+#include <linaos/err.h>
+#include <linaos/sched.h>
 
 /* hwspinlock mode argument */
 #define HWLOCK_IRQSTATE		0x01 /* Disable interrupts, save state */

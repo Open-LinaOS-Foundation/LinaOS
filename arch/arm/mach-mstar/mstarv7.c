@@ -6,12 +6,12 @@
  * Author: Daniel Palmer <daniel@thingy.jp>
  */
 
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/io.h>
 
 /*
  * In the u-boot code the area these registers are in is
@@ -19,7 +19,7 @@
  * for something in the same area called "AXI".
  *
  * It's not exactly known what this is but the vendor code
- * for both u-boot and linux share calls to "flush the miu pipe".
+ * for both u-boot and linaos share calls to "flush the miu pipe".
  * This seems to be to force pending CPU writes to memory so that
  * the state is right before DMA capable devices try to read
  * descriptors and data the CPU has prepared. Without doing this

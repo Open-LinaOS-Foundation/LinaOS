@@ -13,8 +13,8 @@
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_gem.h>
 
-#include <linux/module.h>
-#include <linux/component.h>
+#include <linaos/module.h>
+#include <linaos/component.h>
 
 #define ROCKCHIP_MAX_FB_BUFFER	3
 #define ROCKCHIP_MAX_CONNECTOR	2

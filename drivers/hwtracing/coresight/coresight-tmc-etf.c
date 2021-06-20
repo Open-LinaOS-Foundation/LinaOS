@@ -4,11 +4,11 @@
  * Author: Mathieu Poirier <mathieu.poirier@linaro.org>
  */
 
-#include <linux/atomic.h>
-#include <linux/circ_buf.h>
-#include <linux/coresight.h>
-#include <linux/perf_event.h>
-#include <linux/slab.h>
+#include <linaos/atomic.h>
+#include <linaos/circ_buf.h>
+#include <linaos/coresight.h>
+#include <linaos/perf_event.h>
+#include <linaos/slab.h>
 #include "coresight-priv.h"
 #include "coresight-tmc.h"
 #include "coresight-etm-perf.h"

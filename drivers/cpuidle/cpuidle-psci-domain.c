@@ -9,15 +9,15 @@
 
 #define pr_fmt(fmt) "CPUidle PSCI: " fmt
 
-#include <linux/cpu.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/psci.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/cpu.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/psci.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
 #include "cpuidle-psci.h"
 

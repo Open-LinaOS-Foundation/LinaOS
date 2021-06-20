@@ -39,13 +39,13 @@
  * but lo_hi_readq() ensures that we are safe across all e3-1200 processors.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/edac.h>
 
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 #include "edac_module.h"
 
 #define EDAC_MOD_STR "ie31200_edac"

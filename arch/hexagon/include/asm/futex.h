@@ -4,8 +4,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
+#include <linaos/futex.h>
+#include <linaos/uaccess.h>
 #include <asm/errno.h>
 
 /* XXX TODO-- need to add sync barriers! */

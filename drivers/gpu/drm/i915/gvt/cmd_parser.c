@@ -34,7 +34,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "i915_drv.h"
 #include "gt/intel_gpu_commands.h"

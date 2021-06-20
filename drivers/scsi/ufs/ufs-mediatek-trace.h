@@ -8,7 +8,7 @@
 #if !defined(_TRACE_EVENT_UFS_MEDIATEK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_EVENT_UFS_MEDIATEK_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(ufs_mtk_event,
 	TP_PROTO(unsigned int type, unsigned int data),

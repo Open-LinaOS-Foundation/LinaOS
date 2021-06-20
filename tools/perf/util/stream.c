@@ -7,7 +7,7 @@
 
 #include <inttypes.h>
 #include <stdlib.h>
-#include <linux/zalloc.h>
+#include <linaos/zalloc.h>
 #include "debug.h"
 #include "hist.h"
 #include "sort.h"

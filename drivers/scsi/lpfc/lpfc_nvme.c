@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex LinaOS Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2021 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.  *
@@ -20,12 +20,12 @@
  * more details, a copy of which can be found in the file COPYING  *
  * included with this package.                                     *
  ********************************************************************/
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
 #include <asm/unaligned.h>
-#include <linux/crc-t10dif.h>
+#include <linaos/crc-t10dif.h>
 #include <net/checksum.h>
 
 #include <scsi/scsi.h>

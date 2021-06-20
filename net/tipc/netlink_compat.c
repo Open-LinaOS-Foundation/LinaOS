@@ -39,7 +39,7 @@
 #include "node.h"
 #include "net.h"
 #include <net/genetlink.h>
-#include <linux/tipc_config.h>
+#include <linaos/tipc_config.h>
 
 /* The legacy API had an artificial message length limit called
  * ULTRA_STRING_MAX_LEN.

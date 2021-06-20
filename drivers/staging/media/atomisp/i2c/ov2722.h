@@ -18,19 +18,19 @@
 
 #ifndef __OV2722_H__
 #define __OV2722_H__
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
-#include <linux/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/videodev2.h>
+#include <linaos/spinlock.h>
 #include <media/v4l2-subdev.h>
 #include <media/v4l2-device.h>
-#include <linux/v4l2-mediabus.h>
+#include <linaos/v4l2-mediabus.h>
 #include <media/media-entity.h>
 #include <media/v4l2-ctrls.h>
 
-#include "../include/linux/atomisp_platform.h"
+#include "../include/linaos/atomisp_platform.h"
 
 #define OV2722_POWER_UP_RETRY_NUM 5
 

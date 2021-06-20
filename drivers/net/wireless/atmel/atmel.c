@@ -1,4 +1,4 @@
-/*** -*- linux-c -*- **********************************************************
+/*** -*- linaos-c -*- **********************************************************
 
      Driver for Atmel at76c502 at76c504 and at76c506 wireless cards.
 
@@ -7,8 +7,8 @@
 
     This code was developed from version 2.1.1 of the Atmel drivers,
     released by Atmel corp. under the GPL in December 2002. It also
-    includes code from the Linux aironet drivers (C) Benjamin Reed,
-    and the Linux PCMCIA package, (C) David Hinds and the Linux wireless
+    includes code from the LinaOS aironet drivers (C) Benjamin Reed,
+    and the LinaOS PCMCIA package, (C) David Hinds and the LinaOS wireless
     extensions, (C) Jean Tourrilhes.
 
     The firmware module for reading the MAC address of the card comes from
@@ -39,33 +39,33 @@
 
 ******************************************************************************/
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
 #include <asm/byteorder.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/wireless.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_arp.h>
+#include <linaos/ioport.h>
+#include <linaos/fcntl.h>
+#include <linaos/delay.h>
+#include <linaos/wireless.h>
 #include <net/iw_handler.h>
-#include <linux/crc32.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
+#include <linaos/crc32.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/device.h>
+#include <linaos/moduleparam.h>
+#include <linaos/firmware.h>
+#include <linaos/jiffies.h>
 #include <net/cfg80211.h>
 #include "atmel.h"
 

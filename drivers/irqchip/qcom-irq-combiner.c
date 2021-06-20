@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The LinaOS Foundation. All rights reserved.
  */
 
 /*
@@ -16,10 +16,10 @@
 
 #define pr_fmt(fmt) "QCOM80B1:" fmt
 
-#include <linux/acpi.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/platform_device.h>
 
 #define REG_SIZE 32
 

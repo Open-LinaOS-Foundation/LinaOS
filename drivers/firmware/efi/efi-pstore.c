@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/efi.h>
-#include <linux/module.h>
-#include <linux/pstore.h>
-#include <linux/slab.h>
-#include <linux/ucs2_string.h>
+#include <linaos/efi.h>
+#include <linaos/module.h>
+#include <linaos/pstore.h>
+#include <linaos/slab.h>
+#include <linaos/ucs2_string.h>
 
 #define DUMP_NAME_LEN 66
 

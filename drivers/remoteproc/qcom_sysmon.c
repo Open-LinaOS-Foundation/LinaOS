@@ -2,17 +2,17 @@
 /*
  * Copyright (c) 2017, Linaro Ltd.
  */
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc/qcom_rproc.h>
-#include <linux/rpmsg.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/remoteproc/qcom_rproc.h>
+#include <linaos/rpmsg.h>
 
 #include "qcom_common.h"
 

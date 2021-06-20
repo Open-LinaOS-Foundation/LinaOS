@@ -49,7 +49,7 @@ capability.
 User Guide
 ==========
 
-Include the PCI Express AER Root Driver into the Linux Kernel
+Include the PCI Express AER Root Driver into the LinaOS Kernel
 -------------------------------------------------------------
 
 The PCI Express AER Root driver is a Root Port service driver attached
@@ -61,9 +61,9 @@ CONFIG_PCIEAER = y.
 Load PCI Express AER Root Driver
 --------------------------------
 
-Some systems have AER support in firmware. Enabling Linux AER support at
+Some systems have AER support in firmware. Enabling LinaOS AER support at
 the same time the firmware handles AER may result in unpredictable
-behavior. Therefore, Linux does not handle AER events unless the firmware
+behavior. Therefore, LinaOS does not handle AER events unless the firmware
 grants AER control to the OS via the ACPI _OSC method. See the PCI FW 3.0
 Specification for details regarding _OSC usage.
 
@@ -294,7 +294,7 @@ After reboot with new kernel or insert the module, a device file named
 Then, you need a user space tool named aer-inject, which can be gotten
 from:
 
-    https://git.kernel.org/cgit/linux/kernel/git/gong.chen/aer-inject.git/
+    https://git.kernel.org/cgit/linaos/kernel/git/gong.chen/aer-inject.git/
 
 More information about aer-inject can be found in the document comes
 with its source code.

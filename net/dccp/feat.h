@@ -8,7 +8,7 @@
  *  Copyright (c) 2008 Gerrit Renker <gerrit@erg.abdn.ac.uk>
  *  Copyright (c) 2005 Andrea Bittau <a.bittau@cs.ucl.ac.uk>
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "dccp.h"
 
 /*

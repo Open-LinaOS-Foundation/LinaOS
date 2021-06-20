@@ -1,10 +1,10 @@
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 #include <asm/checksum.h>
 #include <asm/console.h>
 #include <asm/page.h>
 #include <asm/string.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <asm-generic/asm-prototypes.h>
 

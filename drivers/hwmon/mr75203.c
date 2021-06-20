@@ -7,16 +7,16 @@
  * analog IP to enable multiple embedded temperature sensor(TS),
  * voltage monitor(VM) & process detector(PD) modules.
  */
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/hwmon.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/hwmon.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 
 /* PVT Common register */
 #define PVT_IP_CONFIG	0x04

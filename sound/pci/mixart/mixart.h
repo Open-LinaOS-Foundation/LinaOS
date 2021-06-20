@@ -10,8 +10,8 @@
 #ifndef __SOUND_MIXART_H
 #define __SOUND_MIXART_H
 
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
+#include <linaos/interrupt.h>
+#include <linaos/mutex.h>
 #include <sound/pcm.h>
 
 #define MIXART_DRIVER_VERSION	0x000100	/* 0.1.0 */

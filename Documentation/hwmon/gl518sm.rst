@@ -20,7 +20,7 @@ Supported chips:
 Authors:
        - Frodo Looijaard <frodol@dds.nl>,
        - Kyösti Mälkki <kmalkki@cc.hut.fi>
-       - Hong-Gunn Chew <hglinux@gunnet.org>
+       - Hong-Gunn Chew <hglinaos@gunnet.org>
        - Jean Delvare <jdelvare@suse.de>
 
 Description

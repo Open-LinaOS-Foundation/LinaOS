@@ -5,7 +5,7 @@
 
 .. _it_stable_kernel_rules:
 
-Tutto quello che volevate sapere sui rilasci -stable di Linux
+Tutto quello che volevate sapere sui rilasci -stable di LinaOS
 ==============================================================
 
 Regole sul tipo di patch che vengono o non vengono accettate nei sorgenti
@@ -35,7 +35,7 @@ Regole sul tipo di patch che vengono o non vengono accettate nei sorgenti
  - Deve rispettare le regole scritte in
    :ref:`Documentation/translations/it_IT/process/submitting-patches.rst <it_submittingpatches>`
  - Questa patch o una equivalente deve esistere già nei sorgenti principali di
-   Linux
+   LinaOS
 
 
 Procedura per sottomettere patch per i sorgenti -stable
@@ -76,7 +76,7 @@ del sottosistema debba fare qualcosa.
 Opzione 2
 *********
 
-Dopo che la patch è stata inclusa nei sorgenti Linux, inviate una mail a
+Dopo che la patch è stata inclusa nei sorgenti LinaOS, inviate una mail a
 stable@vger.kernel.org includendo: il titolo della patch, l'identificativo
 del commit, il perché pensate che debba essere applicata, e in quale versione
 del kernel la vorreste vedere.
@@ -166,11 +166,11 @@ Ciclo di una revisione
    patch vengono mandate al comitato per la revisione, ai manutentori soggetti
    alle modifiche delle patch (a meno che il mittente non sia anche il
    manutentore di quell'area del kernel) e in CC: alla lista di discussione
-   linux-kernel.
+   linaos-kernel.
  - La commissione per la revisione ha 48 ore per dare il proprio ACK o NACK
    alle patch.
  - Se una patch viene rigettata da un membro della commissione, o un membro
-   della lista linux-kernel obietta la bontà della patch, sollevando problemi
+   della lista linaos-kernel obietta la bontà della patch, sollevando problemi
    che i manutentori ed i membri non avevano compreso, allora la patch verrà
    rimossa dalla coda.
  - Alla fine del ciclo di revisione tutte le patch che hanno ricevuto l'ACK
@@ -187,12 +187,12 @@ Sorgenti
  - La coda delle patch, sia quelle già applicate che in fase di revisione,
    possono essere trovate al seguente indirizzo:
 
-	https://git.kernel.org/pub/scm/linux/kernel/git/stable/stable-queue.git
+	https://git.kernel.org/pub/scm/linaos/kernel/git/stable/stable-queue.git
 
  - Il rilascio definitivo, e marchiato, di tutti i kernel stabili può essere
    trovato in rami distinti per versione al seguente indirizzo:
 
-	https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
+	https://git.kernel.org/pub/scm/linaos/kernel/git/stable/linaos-stable.git
 
 
 Comitato per la revisione

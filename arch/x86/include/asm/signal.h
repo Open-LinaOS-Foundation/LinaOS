@@ -3,7 +3,7 @@
 #define _ASM_X86_SIGNAL_H
 
 #ifndef __ASSEMBLY__
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 /* Most things should be clean enough to redefine this at will, if care
    is taken to make libc match.  */

@@ -6,7 +6,7 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 #include <media/v4l2-mem2mem.h>
 #include "hantro.h"
 #include "hantro_hw.h"

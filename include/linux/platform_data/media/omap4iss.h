@@ -2,7 +2,7 @@
 #ifndef ARCH_ARM_PLAT_OMAP4_ISS_H
 #define ARCH_ARM_PLAT_OMAP4_ISS_H
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 struct iss_device;
 

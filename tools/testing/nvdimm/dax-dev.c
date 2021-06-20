@@ -3,7 +3,7 @@
  * Copyright (c) 2016, Intel Corporation.
  */
 #include "test/nfit_test.h"
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include "../../../drivers/dax/dax-private.h"
 
 phys_addr_t dax_pgoff_to_phys(struct dev_dax *dev_dax, pgoff_t pgoff,

@@ -3,9 +3,9 @@
 #ifndef __USB_TYPEC_ALTMODE_H
 #define __USB_TYPEC_ALTMODE_H
 
-#include <linux/mod_devicetable.h>
-#include <linux/usb/typec.h>
-#include <linux/device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/usb/typec.h>
+#include <linaos/device.h>
 
 #define MODE_DISCOVERY_MAX	6
 

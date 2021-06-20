@@ -32,14 +32,14 @@
 #include <drm/ttm/ttm_bo_driver.h>
 #include <drm/ttm/ttm_placement.h>
 #include <drm/drm_vma_manager.h>
-#include <linux/dma-buf-map.h>
-#include <linux/io.h>
-#include <linux/highmem.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/dma-resv.h>
+#include <linaos/dma-buf-map.h>
+#include <linaos/io.h>
+#include <linaos/highmem.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/dma-resv.h>
 
 struct ttm_transfer_obj {
 	struct ttm_buffer_object base;

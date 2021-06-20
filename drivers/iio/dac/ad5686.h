@@ -8,10 +8,10 @@
 #ifndef __DRIVERS_IIO_DAC_AD5686_H__
 #define __DRIVERS_IIO_DAC_AD5686_H__
 
-#include <linux/types.h>
-#include <linux/cache.h>
-#include <linux/mutex.h>
-#include <linux/kernel.h>
+#include <linaos/types.h>
+#include <linaos/cache.h>
+#include <linaos/mutex.h>
+#include <linaos/kernel.h>
 
 #define AD5310_CMD(x)				((x) << 12)
 

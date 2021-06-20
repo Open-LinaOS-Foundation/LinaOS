@@ -8,15 +8,15 @@
  * originally based on code by:
  * Copyright (C) 1998,1999 Christian Theiss <mistert@rz.fh-augsburg.de>
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://linaostv.org
  */
 
-#include <linux/ethtool.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
+#include <linaos/ethtool.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
 
 #include "av7110.h"
 #include "av7110_hw.h"

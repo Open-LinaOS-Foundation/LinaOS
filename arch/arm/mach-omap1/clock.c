@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-omap1/clock.c
+ *  linaos/arch/arm/mach-omap1/clock.c
  *
  *  Copyright (C) 2004 - 2005, 2009-2010 Nokia Corporation
  *  Written by Tuukka Tikkanen <tuukka.tikkanen@elektrobit.com>
@@ -8,14 +8,14 @@
  *  Modified to use omap shared clock framework by
  *  Tony Lindgren <tony@atomide.com>
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
 
 #include <asm/mach-types.h>
 
@@ -662,7 +662,7 @@ unsigned long clk_get_rate(struct clk *clk)
 EXPORT_SYMBOL(clk_get_rate);
 
 /*
- * Optional clock functions defined in include/linux/clk.h
+ * Optional clock functions defined in include/linaos/clk.h
  */
 
 long clk_round_rate(struct clk *clk, unsigned long rate)
@@ -960,8 +960,8 @@ late_initcall(omap_clk_enable_autoidle_all);
  *	debugfs support to trace clock tree hierarchy and attributes
  */
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
 static struct dentry *clk_debugfs_root;
 

@@ -34,8 +34,8 @@
  *    Thomas Hellstrom.
  */
 
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
 
 #include <drm/drm.h>
 #include <drm/drm_agpsupport.h>

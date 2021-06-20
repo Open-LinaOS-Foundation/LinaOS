@@ -6,7 +6,7 @@
  * tools/ copied this from include/asm-generic/bitops.h, bit by bit as it needed
  * some functions.
  *
- * For the benefit of those who are trying to port Linux to another
+ * For the benefit of those who are trying to port LinaOS to another
  * architecture, here are some C-language equivalents.  You should
  * recode these in the native assembly language, if at all possible.
  *
@@ -21,7 +21,7 @@
 #include <asm-generic/bitops/find.h>
 
 #ifndef _TOOLS_LINUX_BITOPS_H_
-#error only <linux/bitops.h> can be included directly
+#error only <linaos/bitops.h> can be included directly
 #endif
 
 #include <asm-generic/bitops/hweight.h>

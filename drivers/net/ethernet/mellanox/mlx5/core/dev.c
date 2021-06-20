@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/eswitch.h>
-#include <linux/mlx5/mlx5_ifc_vdpa.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/mlx5/eswitch.h>
+#include <linaos/mlx5/mlx5_ifc_vdpa.h>
 #include "mlx5_core.h"
 
 /* intf dev list mutex */

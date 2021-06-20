@@ -7,12 +7,12 @@
 #ifndef _SPARC_SMP_H
 #define _SPARC_SMP_H
 
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #include <asm/head.h>
 
 #ifndef __ASSEMBLY__
 
-#include <linux/cpumask.h>
+#include <linaos/cpumask.h>
 
 #endif /* __ASSEMBLY__ */
 
@@ -22,7 +22,7 @@
 
 #include <asm/ptrace.h>
 #include <asm/asi.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 /*
  *	Private routines/data
@@ -31,7 +31,7 @@
 extern unsigned char boot_cpu_id;
 extern volatile unsigned long cpu_callin_map[NR_CPUS];
 extern cpumask_t smp_commenced_mask;
-extern struct linux_prom_registers smp_penguin_ctable;
+extern struct linaos_prom_registers smp_penguin_ctable;
 
 typedef void (*smpfunc_t)(unsigned long, unsigned long, unsigned long,
 		       unsigned long, unsigned long);
@@ -115,7 +115,7 @@ void smp_setup_cpu_possible_map(void);
 
 /* Empirical PROM processor mailbox constants.  If the per-cpu mailbox
  * contains something other than one of these then the ipi is from
- * Linux's active_kernel_processor.  This facility exists so that
+ * LinaOS's active_kernel_processor.  This facility exists so that
  * the boot monitor can capture all the other cpus when one catches
  * a watchdog reset or the user enters the monitor using L1-A keys.
  */

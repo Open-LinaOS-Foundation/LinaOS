@@ -17,20 +17,20 @@
  *      More documentation can be found in serial-u16550.txt.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 #include <sound/initval.h>
 
-#include <linux/serial_reg.h>
-#include <linux/jiffies.h>
+#include <linaos/serial_reg.h>
+#include <linaos/jiffies.h>
 
 MODULE_DESCRIPTION("MIDI serial u16550");
 MODULE_LICENSE("GPL");

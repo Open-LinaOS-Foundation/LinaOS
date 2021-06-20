@@ -4,8 +4,8 @@
  * Copyright 2006-2007, Michael Ellerman, IBM Corporation.
  */
 
-#include <linux/irq.h>
-#include <linux/msi.h>
+#include <linaos/irq.h>
+#include <linaos/msi.h>
 #include <asm/mpic.h>
 #include <asm/prom.h>
 #include <asm/hw_irq.h>

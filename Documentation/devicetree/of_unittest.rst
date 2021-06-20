@@ -18,7 +18,7 @@ It is recommended to read the following documents before moving ahead.
 (1) Documentation/devicetree/usage-model.rst
 (2) http://www.devicetree.org/Device_Tree_Usage
 
-OF Selftest has been designed to test the interface (include/linux/of.h)
+OF Selftest has been designed to test the interface (include/linaos/of.h)
 provided to device driver developers to fetch the device information..etc.
 from the unflattened device tree data structure. This interface is used by
 most of the device drivers in various use cases.

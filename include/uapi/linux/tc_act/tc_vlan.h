@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Copyright (c) 2014 Jiri Pirko <jiri@resnulli.us>
  *
@@ -11,7 +11,7 @@
 #ifndef __LINUX_TC_VLAN_H
 #define __LINUX_TC_VLAN_H
 
-#include <linux/pkt_cls.h>
+#include <linaos/pkt_cls.h>
 
 #define TCA_VLAN_ACT_POP	1
 #define TCA_VLAN_ACT_PUSH	2

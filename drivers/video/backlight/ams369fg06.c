@@ -8,13 +8,13 @@
  * Derived from drivers/video/s6e63m0.c
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/lcd.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/wait.h>
+#include <linaos/backlight.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/lcd.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
+#include <linaos/wait.h>
 
 #define SLEEPMSEC		0x1000
 #define ENDDEF			0x2000

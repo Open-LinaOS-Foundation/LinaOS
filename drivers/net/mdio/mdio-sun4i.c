@@ -5,19 +5,19 @@
  * Copyright 2012-2013 Stefan Roese <sr@denx.de>
  * Copyright 2013 Maxime Ripard <maxime.ripard@free-electrons.com>
  *
- * Based on the Linux driver provided by Allwinner:
+ * Based on the LinaOS driver provided by Allwinner:
  * Copyright (C) 1997  Sten Wang
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_address.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of_address.h>
+#include <linaos/of_mdio.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
 
 #define EMAC_MAC_MCMD_REG	(0x00)
 #define EMAC_MAC_MADR_REG	(0x04)

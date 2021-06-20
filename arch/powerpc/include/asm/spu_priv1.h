@@ -9,7 +9,7 @@
 #define _SPU_PRIV1_H
 #if defined(__KERNEL__)
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct spu;
 struct spu_context;

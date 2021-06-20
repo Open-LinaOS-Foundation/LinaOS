@@ -2,12 +2,12 @@
  * Internal Header for the Direct Rendering Manager
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * Copyright (c) 2009-2010, Code Aurora Forum.
  * All rights reserved.
  *
- * Author: Rickard E. (Rik) Faith <faith@valinux.com>
- * Author: Gareth Hughes <gareth@valinux.com>
+ * Author: Rickard E. (Rik) Faith <faith@valinaos.com>
+ * Author: Gareth Hughes <gareth@valinaos.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -32,8 +32,8 @@
 #ifndef _DRM_DEBUGFS_H_
 #define _DRM_DEBUGFS_H_
 
-#include <linux/types.h>
-#include <linux/seq_file.h>
+#include <linaos/types.h>
+#include <linaos/seq_file.h>
 /**
  * struct drm_info_list - debugfs info list entry
  *

@@ -7,7 +7,7 @@
  *
  * aeb, 950210
  *
- * Support for multiple unimaps by Jakub Jelinek <jj@ultra.linux.cz>, July 1998
+ * Support for multiple unimaps by Jakub Jelinek <jj@ultra.linaos.cz>, July 1998
  *
  * Fix bug in inverse translation. Stanislav Voronyi <stas@cnti.uanet.kharkov.ua>, Dec 1998
  *
@@ -23,18 +23,18 @@
  * stack overflow.
  */
 
-#include <linux/module.h>
-#include <linux/kd.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/uaccess.h>
-#include <linux/console.h>
-#include <linux/consolemap.h>
-#include <linux/vt_kern.h>
-#include <linux/string.h>
+#include <linaos/module.h>
+#include <linaos/kd.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/tty.h>
+#include <linaos/uaccess.h>
+#include <linaos/console.h>
+#include <linaos/consolemap.h>
+#include <linaos/vt_kern.h>
+#include <linaos/string.h>
 
 static unsigned short translations[][256] = {
   /* 8-bit Latin-1 mapped to Unicode -- trivial mapping */

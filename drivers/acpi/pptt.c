@@ -17,8 +17,8 @@
  */
 #define pr_fmt(fmt) "ACPI PPTT: " fmt
 
-#include <linux/acpi.h>
-#include <linux/cacheinfo.h>
+#include <linaos/acpi.h>
+#include <linaos/cacheinfo.h>
 #include <acpi/processor.h>
 
 static struct acpi_subtable_header *fetch_pptt_subtable(struct acpi_table_header *table_hdr,

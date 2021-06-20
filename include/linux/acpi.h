@@ -8,13 +8,13 @@
 #ifndef _LINUX_ACPI_H
 #define _LINUX_ACPI_H
 
-#include <linux/errno.h>
-#include <linux/ioport.h>	/* for struct resource */
-#include <linux/irqdomain.h>
-#include <linux/resource_ext.h>
-#include <linux/device.h>
-#include <linux/property.h>
-#include <linux/uuid.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>	/* for struct resource */
+#include <linaos/irqdomain.h>
+#include <linaos/resource_ext.h>
+#include <linaos/device.h>
+#include <linaos/property.h>
+#include <linaos/uuid.h>
 
 #ifndef _LINUX
 #define _LINUX
@@ -23,11 +23,11 @@
 
 #ifdef	CONFIG_ACPI
 
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
-#include <linux/dynamic_debug.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linaos/list.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/dynamic_debug.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
 
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>

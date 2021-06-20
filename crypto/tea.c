@@ -14,12 +14,12 @@
  * Copyright (c) 2004 Aaron Grothe ajgrothe@yahoo.com
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
 #include <asm/byteorder.h>
-#include <linux/crypto.h>
-#include <linux/types.h>
+#include <linaos/crypto.h>
+#include <linaos/types.h>
 
 #define TEA_KEY_SIZE		16
 #define TEA_BLOCK_SIZE		8

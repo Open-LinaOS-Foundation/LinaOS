@@ -2,7 +2,7 @@
 /*
  * Author: Patrick Stählin <me@packi.ch>
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>

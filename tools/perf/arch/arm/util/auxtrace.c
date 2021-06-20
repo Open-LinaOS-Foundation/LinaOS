@@ -5,8 +5,8 @@
  */
 
 #include <stdbool.h>
-#include <linux/coresight-pmu.h>
-#include <linux/zalloc.h>
+#include <linaos/coresight-pmu.h>
+#include <linaos/zalloc.h>
 
 #include "../../util/auxtrace.h"
 #include "../../util/debug.h"

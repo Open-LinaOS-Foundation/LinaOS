@@ -8,10 +8,10 @@
  * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/of_platform.h>
+#include <linaos/io.h>
 #include <asm/prom.h>
 #include <asm/time.h>
 #include <asm/ipic.h>

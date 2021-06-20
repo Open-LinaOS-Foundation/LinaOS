@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfs/sysdep.c
+ *  linaos/fs/hfs/sysdep.c
  *
  * Copyright (C) 1996  Paul H. Hargrove
  * (C) 2003 Ardis Technologies <roman@ardistech.com>
@@ -8,7 +8,7 @@
  * This file contains the code to do various system dependent things.
  */
 
-#include <linux/namei.h>
+#include <linaos/namei.h>
 #include "hfs_fs.h"
 
 /* dentry case-handling: just lowercase everything */

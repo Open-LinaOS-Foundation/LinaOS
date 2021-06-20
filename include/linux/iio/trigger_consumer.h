@@ -7,8 +7,8 @@
 #ifndef __LINUX_IIO_TRIGGER_CONSUMER_H__
 #define __LINUX_IIO_TRIGGER_CONSUMER_H__
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/types.h>
 
 struct iio_dev;
 struct iio_trigger;

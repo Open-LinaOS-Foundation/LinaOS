@@ -9,43 +9,43 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 
   Documentation available at:
-	http://www.stlinux.com
+	http://www.stlinaos.com
   Support available at:
-	https://bugzilla.stlinux.com/
+	https://bugzilla.stlinaos.com/
 *******************************************************************************/
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/prefetch.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/skbuff.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_ether.h>
+#include <linaos/crc32.h>
+#include <linaos/mii.h>
+#include <linaos/if.h>
+#include <linaos/if_vlan.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/prefetch.h>
+#include <linaos/pinctrl/consumer.h>
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 #endif /* CONFIG_DEBUG_FS */
-#include <linux/net_tstamp.h>
-#include <linux/phylink.h>
-#include <linux/udp.h>
-#include <linux/bpf_trace.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/phylink.h>
+#include <linaos/udp.h>
+#include <linaos/bpf_trace.h>
 #include <net/pkt_cls.h>
 #include <net/xdp_sock_drv.h>
 #include "stmmac_ptp.h"
 #include "stmmac.h"
 #include "stmmac_xdp.h"
-#include <linux/reset.h>
-#include <linux/of_mdio.h>
+#include <linaos/reset.h>
+#include <linaos/of_mdio.h>
 #include "dwmac1000.h"
 #include "dwxgmac2.h"
 #include "hwif.h"

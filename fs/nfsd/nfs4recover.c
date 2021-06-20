@@ -33,16 +33,16 @@
 */
 
 #include <crypto/hash.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/module.h>
+#include <linaos/file.h>
+#include <linaos/slab.h>
+#include <linaos/namei.h>
+#include <linaos/sched.h>
+#include <linaos/fs.h>
+#include <linaos/module.h>
 #include <net/net_namespace.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfsd/cld.h>
+#include <linaos/sunrpc/rpc_pipe_fs.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/nfsd/cld.h>
 
 #include "nfsd.h"
 #include "state.h"

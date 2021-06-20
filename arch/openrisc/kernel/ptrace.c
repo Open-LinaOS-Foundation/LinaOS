@@ -2,7 +2,7 @@
 /*
  * OpenRISC ptrace.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -12,18 +12,18 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/string.h>
 
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/audit.h>
-#include <linux/regset.h>
-#include <linux/tracehook.h>
-#include <linux/elf.h>
+#include <linaos/mm.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
+#include <linaos/audit.h>
+#include <linaos/regset.h>
+#include <linaos/tracehook.h>
+#include <linaos/elf.h>
 
 #include <asm/thread_info.h>
 #include <asm/page.h>
@@ -88,7 +88,7 @@ static int genregs_set(struct task_struct *target,
 }
 
 /*
- * Define the register sets available on OpenRISC under Linux
+ * Define the register sets available on OpenRISC under LinaOS
  */
 enum or1k_regset {
 	REGSET_GENERAL,

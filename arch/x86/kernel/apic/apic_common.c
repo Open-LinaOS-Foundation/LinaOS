@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: GPL-2.0
  */
-#include <linux/irq.h>
+#include <linaos/irq.h>
 #include <asm/apic.h>
 
 u32 apic_default_calc_apicid(unsigned int cpu)

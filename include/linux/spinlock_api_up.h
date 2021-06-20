@@ -6,7 +6,7 @@
 #endif
 
 /*
- * include/linux/spinlock_api_up.h
+ * include/linaos/spinlock_api_up.h
  *
  * spinlock API implementation on UP-nondebug (inlined implementation)
  *

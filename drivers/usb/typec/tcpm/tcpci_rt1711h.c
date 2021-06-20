@@ -5,13 +5,13 @@
  * Richtek RT1711H Type-C Chip Driver
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/gpio/consumer.h>
-#include <linux/usb/tcpm.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/usb/tcpm.h>
+#include <linaos/regmap.h>
 #include "tcpci.h"
 
 #define RT1711H_VID		0x29CF

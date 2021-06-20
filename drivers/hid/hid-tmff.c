@@ -15,10 +15,10 @@
 /*
  */
 
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/hid.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
 #include "hid-ids.h"
 

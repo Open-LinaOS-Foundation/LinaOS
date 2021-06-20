@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/regmap.h>
+#include <linaos/module.h>
 
 #include <dt-bindings/clock/qcom,apss-ipq.h>
 

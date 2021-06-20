@@ -2,9 +2,9 @@
 /*
 ** SMP Support
 **
-** Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+** Copyright (C) 1999 Walt Drummond <drummond@valinaos.com>
 ** Copyright (C) 1999 David Mosberger-Tang <davidm@hpl.hp.com>
-** Copyright (C) 2001,2004 Grant Grundler <grundler@parisc-linux.org>
+** Copyright (C) 2001,2004 Grant Grundler <grundler@parisc-linaos.org>
 ** 
 ** Lots of stuff stolen from arch/alpha/kernel/smp.c
 ** ...and then parisc stole from arch/ia64/kernel/smp.c. Thanks David! :^)
@@ -13,24 +13,24 @@
 ** -grant (1/12/2001)
 **
 */
-#include <linux/types.h>
-#include <linux/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched/mm.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/kernel_stat.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/ftrace.h>
-#include <linux/cpu.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched/mm.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/smp.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/mm.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/bitops.h>
+#include <linaos/ftrace.h>
+#include <linaos/cpu.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/current.h>
 #include <asm/delay.h>
 #include <asm/tlbflush.h>
@@ -265,7 +265,7 @@ smp_cpu_init(int cpunum)
 
 	mb();
 
-	/* Well, support 2.4 linux scheme as well. */
+	/* Well, support 2.4 linaos scheme as well. */
 	if (cpu_online(cpunum))	{
 		extern void machine_halt(void); /* arch/parisc.../process.c */
 

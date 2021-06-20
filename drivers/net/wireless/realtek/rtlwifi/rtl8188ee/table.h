@@ -4,7 +4,7 @@
 #ifndef __RTL92CE_TABLE__H_
 #define __RTL92CE_TABLE__H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #define  RTL8188EEPHY_REG_1TARRAYLEN	382
 extern u32 RTL8188EEPHY_REG_1TARRAY[];
 #define RTL8188EEPHY_REG_ARRAY_PGLEN 264

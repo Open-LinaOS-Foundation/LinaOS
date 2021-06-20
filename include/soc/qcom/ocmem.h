@@ -9,8 +9,8 @@
  * Copyright (C) 2015 Red Hat. Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
 
 #ifndef __OCMEM_H__
 #define __OCMEM_H__

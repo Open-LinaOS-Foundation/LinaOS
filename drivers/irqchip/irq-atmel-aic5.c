@@ -13,20 +13,20 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/bitmap.h>
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/bitmap.h>
+#include <linaos/types.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 
 #include <asm/exception.h>
 #include <asm/mach/irq.h>

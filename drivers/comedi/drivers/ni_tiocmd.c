@@ -30,7 +30,7 @@
  * TODO: Support use of both banks X and Y
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "ni_tio_internal.h"
 #include "mite.h"
 #include "ni_routes.h"

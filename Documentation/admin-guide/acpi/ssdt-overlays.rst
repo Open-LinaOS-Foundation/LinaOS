@@ -63,7 +63,7 @@ which can then be compiled to AML binary format::
     ASL Input:     minnomax.asl - 30 lines, 614 bytes, 7 keywords
     AML Output:    minnowmax.aml - 165 bytes, 6 named objects, 1 executable opcodes
 
-[1] https://www.elinux.org/Minnowboard:MinnowMax#Low_Speed_Expansion_.28Top.29
+[1] https://www.elinaos.org/Minnowboard:MinnowMax#Low_Speed_Expansion_.28Top.29
 
 The resulting AML code can then be loaded by the kernel using one of the methods
 below.
@@ -119,7 +119,7 @@ EFI variable. Updating a file in /sys/firmware/efi/efivars will update the EFI
 variable. Please note that the file name needs to be specially formatted as
 "Name-GUID" and that the first 4 bytes in the file (little-endian format)
 represent the attributes of the EFI variable (see EFI_VARIABLE_MASK in
-include/linux/efi.h). Writing to the file must also be done with one write
+include/linaos/efi.h). Writing to the file must also be done with one write
 operation.
 
 For example, you can use the following bash script to create/update an EFI

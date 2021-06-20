@@ -2,7 +2,7 @@
 /*
  *
  * device driver for Conexant 2388x based TV cards
- * video4linux video interface
+ * video4linaos video interface
  *
  * (c) 2003-04 Gerd Knorr <kraxel@bytesex.org> [SuSE Labs]
  *
@@ -14,16 +14,16 @@
 
 #include "cx88.h"
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/kmod.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
 #include <asm/div64.h>
 
 #include <media/v4l2-common.h>

@@ -8,10 +8,10 @@
  *    Copyright (c) 2004 Freescale Semiconductor, Inc
  */
 
-#include <linux/errno.h>
-#include <linux/bug.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <linaos/errno.h>
+#include <linaos/bug.h>
+#include <linaos/spinlock.h>
+#include <linaos/export.h>
 
 #include <asm/processor.h>
 #include <asm/cputable.h>

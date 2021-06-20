@@ -3,8 +3,8 @@
 #ifndef BTRFS_ZONED_H
 #define BTRFS_ZONED_H
 
-#include <linux/types.h>
-#include <linux/blkdev.h>
+#include <linaos/types.h>
+#include <linaos/blkdev.h>
 #include "volumes.h"
 #include "disk-io.h"
 #include "block-group.h"

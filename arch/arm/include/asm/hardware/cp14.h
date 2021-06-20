@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2011-2012, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2011-2012, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef __ASM_HARDWARE_CP14_H
 #define __ASM_HARDWARE_CP14_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Accessors for CP14 registers */
 #define dbg_read(reg)			RCP14_##reg()

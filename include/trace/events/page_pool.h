@@ -5,8 +5,8 @@
 #if !defined(_TRACE_PAGE_POOL_H) || defined(TRACE_HEADER_MULTI_READ)
 #define      _TRACE_PAGE_POOL_H
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <linaos/types.h>
+#include <linaos/tracepoint.h>
 
 #include <trace/events/mmflags.h>
 #include <net/page_pool.h>

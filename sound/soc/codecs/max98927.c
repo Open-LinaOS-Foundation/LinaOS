@@ -6,17 +6,17 @@
  * Author: Ryan Lee <ryans.lee@maximintegrated.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/cdev.h>
+#include <linaos/acpi.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/cdev.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
+#include <linaos/gpio.h>
+#include <linaos/of_gpio.h>
 #include <sound/tlv.h>
 #include "max98927.h"
 

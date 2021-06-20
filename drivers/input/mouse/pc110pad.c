@@ -7,21 +7,21 @@
  */
 
 /*
- * IBM PC110 touchpad driver for Linux
+ * IBM PC110 touchpad driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/input.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/input.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

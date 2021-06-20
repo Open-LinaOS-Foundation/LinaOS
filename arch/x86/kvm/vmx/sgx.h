@@ -2,7 +2,7 @@
 #ifndef __KVM_X86_SGX_H
 #define __KVM_X86_SGX_H
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 #include "capabilities.h"
 #include "vmx_ops.h"

@@ -4,8 +4,8 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#include <linux/uaccess.h>
-#include <linux/export.h>
+#include <linaos/uaccess.h>
+#include <linaos/export.h>
 
 #include <asm/tlbflush.h>
 

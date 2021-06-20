@@ -7,10 +7,10 @@
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  */
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linaos/bug.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
 
 #include <asm/sgialib.h>
 #include <asm/bootinfo.h>

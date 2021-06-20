@@ -7,7 +7,7 @@
  * 	- add support for poll()
  * 	- driver cleanup
  * 	- add waitqueues
- * 	- adhere to linux kernel coding style and policies
+ * 	- adhere to linaos kernel coding style and policies
  * 	- support 2.6.13 "new style" pcmcia interface
  * 	- add class interface for udev device creation
  *
@@ -17,16 +17,16 @@
  * All rights reserved, Dual BSD/GPL Licensed.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/delay.h>
+#include <linaos/poll.h>
+#include <linaos/mutex.h>
+#include <linaos/wait.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 
 #include <pcmcia/cistpl.h>

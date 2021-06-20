@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/kyro/fbdev.c
+ *  linaos/drivers/video/kyro/fbdev.c
  *
  *  Copyright (C) 2002 STMicroelectronics
  *  Copyright (C) 2003, 2004 Paul Mundt
@@ -9,19 +9,19 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/ioctl.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/ioctl.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <video/kyro.h>
 
@@ -793,5 +793,5 @@ module_init(kyrofb_init);
 module_exit(kyrofb_exit);
 #endif
 
-MODULE_AUTHOR("STMicroelectronics; Paul Mundt <lethal@linux-sh.org>");
+MODULE_AUTHOR("STMicroelectronics; Paul Mundt <lethal@linaos-sh.org>");
 MODULE_LICENSE("GPL");

@@ -8,8 +8,8 @@
 #ifndef _CRYPTO_HASH_H
 #define _CRYPTO_HASH_H
 
-#include <linux/crypto.h>
-#include <linux/string.h>
+#include <linaos/crypto.h>
+#include <linaos/string.h>
 
 struct crypto_ahash;
 

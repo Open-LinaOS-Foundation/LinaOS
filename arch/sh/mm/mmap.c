@@ -7,11 +7,11 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/mman.h>
-#include <linux/module.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/mman.h>
+#include <linaos/module.h>
 #include <asm/page.h>
 #include <asm/processor.h>
 

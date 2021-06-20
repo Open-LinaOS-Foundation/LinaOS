@@ -5,11 +5,11 @@
  * Copyright (C) 2015 John Crispin <john@phrozen.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
+#include <linaos/memblock.h>
 
 #include <asm/bootinfo.h>
 #include <asm/mipsregs.h>

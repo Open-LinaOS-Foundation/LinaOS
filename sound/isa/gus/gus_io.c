@@ -4,8 +4,8 @@
  *  I/O routines for GF1/InterWave synthesizer chips
  */
 
-#include <linux/delay.h>
-#include <linux/time.h>
+#include <linaos/delay.h>
+#include <linaos/time.h>
 #include <sound/core.h>
 #include <sound/gus.h>
 

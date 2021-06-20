@@ -5,14 +5,14 @@
  * Copyright (c) 2010-2013, NVIDIA Corporation.
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/host1x.h>

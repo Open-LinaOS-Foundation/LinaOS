@@ -5,10 +5,10 @@
  *
  * Author: Boris Brezillon <boris.brezillon@bootlin.com>
  */
-#include <linux/dmaengine.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
+#include <linaos/dmaengine.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi-mem.h>
 
 #include "internals.h"
 

@@ -7,11 +7,11 @@
 #ifndef __CLK_BT1_CCU_PLL_H__
 #define __CLK_BT1_CCU_PLL_H__
 
-#include <linux/clk-provider.h>
-#include <linux/spinlock.h>
-#include <linux/regmap.h>
-#include <linux/bits.h>
-#include <linux/of.h>
+#include <linaos/clk-provider.h>
+#include <linaos/spinlock.h>
+#include <linaos/regmap.h>
+#include <linaos/bits.h>
+#include <linaos/of.h>
 
 /*
  * struct ccu_pll_init_data - CCU PLL initialization data

@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2015 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015 The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/clk.h>
+#include <linaos/platform_device.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/jack.h>
 #include <sound/soc.h>
-#include <uapi/linux/input-event-codes.h>
+#include <uapi/linaos/input-event-codes.h>
 #include <dt-bindings/sound/apq8016-lpass.h>
 #include "common.h"
 

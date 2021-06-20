@@ -9,11 +9,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/netdev_features.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/netdev_features.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
 #include <net/mpls.h>
 
 static struct sk_buff *mpls_gso_segment(struct sk_buff *skb,

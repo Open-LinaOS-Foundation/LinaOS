@@ -3,20 +3,20 @@
  * Copyright (c) 2015 Jiri Pirko <jiri@resnulli.us>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/filter.h>
+#include <linaos/bpf.h>
 
 #include <net/netlink.h>
 #include <net/sock.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
 
-#include <linux/tc_act/tc_bpf.h>
+#include <linaos/tc_act/tc_bpf.h>
 #include <net/tc_act/tc_bpf.h>
 
 #define ACT_BPF_NAME_LEN	256

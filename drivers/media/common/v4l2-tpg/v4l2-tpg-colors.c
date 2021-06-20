@@ -23,7 +23,7 @@
  * Copyright 2014 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 #include <media/tpg/v4l2-tpg.h>
 
 /* sRGB colors with range [0-255] */

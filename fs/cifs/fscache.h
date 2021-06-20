@@ -21,7 +21,7 @@
 #ifndef _CIFS_FSCACHE_H
 #define _CIFS_FSCACHE_H
 
-#include <linux/fscache.h>
+#include <linaos/fscache.h>
 
 #include "cifsglob.h"
 

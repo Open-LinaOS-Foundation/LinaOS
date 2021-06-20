@@ -5,14 +5,14 @@
  * Uses debugfs to create fault injection points for client testing
  */
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/nsproxy.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/nsproxy.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/uaccess.h>
+#include <linaos/kernel.h>
 
 #include "state.h"
 #include "netns.h"

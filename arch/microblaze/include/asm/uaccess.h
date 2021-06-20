@@ -8,13 +8,13 @@
 #ifndef _ASM_MICROBLAZE_UACCESS_H
 #define _ASM_MICROBLAZE_UACCESS_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include <asm/mmu.h>
 #include <asm/page.h>
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm/extable.h>
-#include <linux/string.h>
+#include <linaos/string.h>
 
 /*
  * On Microblaze the fs value is actually the top of the corresponding

@@ -5,15 +5,15 @@
  * Copyright IBM Corp. 2017
  * Copyright Red Hat, Inc. 2019
  *
- * Author(s): Dong Jia Shi <bjsdjshi@linux.vnet.ibm.com>
- *            Xiao Feng Ren <renxiaof@linux.vnet.ibm.com>
+ * Author(s): Dong Jia Shi <bjsdjshi@linaos.vnet.ibm.com>
+ *            Xiao Feng Ren <renxiaof@linaos.vnet.ibm.com>
  *            Cornelia Huck <cohuck@redhat.com>
  */
 
-#include <linux/vfio.h>
-#include <linux/mdev.h>
-#include <linux/nospec.h>
-#include <linux/slab.h>
+#include <linaos/vfio.h>
+#include <linaos/mdev.h>
+#include <linaos/nospec.h>
+#include <linaos/slab.h>
 
 #include "vfio_ccw_private.h"
 

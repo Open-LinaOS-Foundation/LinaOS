@@ -4,9 +4,9 @@
  */
 #ifndef _ADMA_H
 #define _ADMA_H
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/platform_data/dma-iop32x.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
+#include <linaos/platform_data/dma-iop32x.h>
 
 /* Memory copy units */
 #define DMA_CCR(chan)		(chan->mmr_base + 0x0)

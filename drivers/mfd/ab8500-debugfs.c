@@ -71,23 +71,23 @@
  * Warning: bit shift direction depends on read or right command.
  */
 
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <linaos/seq_file.h>
+#include <linaos/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/debugfs.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/kobject.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
 
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
+#include <linaos/mfd/abx500.h>
+#include <linaos/mfd/abx500/ab8500.h>
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/string.h>
-#include <linux/ctype.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
 #endif
 
 static u32 debug_bank;

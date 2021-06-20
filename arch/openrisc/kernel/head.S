@@ -2,7 +2,7 @@
 /*
  * OpenRISC head.S
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -11,12 +11,12 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/linkage.h>
-#include <linux/threads.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/serial_reg.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/threads.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/serial_reg.h>
+#include <linaos/pgtable.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/mmu.h>
@@ -24,7 +24,7 @@
 #include <asm/cache.h>
 #include <asm/spr_defs.h>
 #include <asm/asm-offsets.h>
-#include <linux/of_fdt.h>
+#include <linaos/of_fdt.h>
 
 #define tophys(rd,rs)				\
 	l.movhi	rd,hi(-KERNELBASE)		;\
@@ -1655,10 +1655,10 @@ ENTRY(_emergency_print_nr)
 
 /*
  * This should be used for debugging only.
- * It messes up the Linux early serial output
+ * It messes up the LinaOS early serial output
  * somehow, so use it sparingly and essentially
  * only if you need to debug something that goes wrong
- * before Linux gets the early serial going.
+ * before LinaOS gets the early serial going.
  *
  * Furthermore, you'll have to make sure you set the
  * UART_DEVISOR correctly according to the system
@@ -1724,7 +1724,7 @@ _string_nl:
 
 /*
  * .data section should be page aligned
- *	(look into arch/openrisc/kernel/vmlinux.lds.S)
+ *	(look into arch/openrisc/kernel/vmlinaos.lds.S)
  */
 	.section .data,"aw"
 	.align	8192

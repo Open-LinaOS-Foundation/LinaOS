@@ -6,13 +6,13 @@
  * Copyright (c) 2001-2002 Intel Corp.
  * Copyright (c) 2002      Nokia Corp.
  *
- * This is part of the SCTP Linux Kernel Implementation.
+ * This is part of the SCTP LinaOS Kernel Implementation.
  *
  * These are the state functions for the state machine.
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    La Monte H.P. Yarroll <piggy@acm.org>
@@ -30,16 +30,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/net.h>
-#include <linux/inet.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/net.h>
+#include <linaos/inet.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
 #include <net/inet_ecn.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>
 #include <net/sctp/structs.h>

@@ -245,7 +245,7 @@ descriptor2:	.byte	0,0	/* Not a detailed timing descriptor */
 		.byte	0	/* Must be zero */
 		.byte	0xff	/* Descriptor is monitor serial number (text) */
 		.byte	0	/* Must be zero */
-start1:		.ascii	"Linux #0"
+start1:		.ascii	"LinaOS #0"
 end1:		.byte	0x0a	/* End marker */
 		.fill	12-(end1-start1), 1, 0x20 /* Padded spaces */
 descriptor3:	.byte	0,0	/* Not a detailed timing descriptor */

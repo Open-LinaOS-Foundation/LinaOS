@@ -5,14 +5,14 @@
 #include <errno.h>
 #include <getopt.h>
 #include <libgen.h>
-#include <linux/bpf.h>
-#include <linux/compiler.h>
-#include <linux/if_link.h>
-#include <linux/if_xdp.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
-#include <linux/limits.h>
-#include <linux/udp.h>
+#include <linaos/bpf.h>
+#include <linaos/compiler.h>
+#include <linaos/if_link.h>
+#include <linaos/if_xdp.h>
+#include <linaos/if_ether.h>
+#include <linaos/ip.h>
+#include <linaos/limits.h>
+#include <linaos/udp.h>
 #include <arpa/inet.h>
 #include <locale.h>
 #include <net/ethernet.h>
@@ -557,7 +557,7 @@ static void *memset32_htonl(void *dest, u32 val, u32 size)
 
 /*
  * This function code has been taken from
- * Linux kernel lib/checksum.c
+ * LinaOS kernel lib/checksum.c
  */
 static inline unsigned short from32to16(unsigned int x)
 {
@@ -570,7 +570,7 @@ static inline unsigned short from32to16(unsigned int x)
 
 /*
  * This function code has been taken from
- * Linux kernel lib/checksum.c
+ * LinaOS kernel lib/checksum.c
  */
 static unsigned int do_csum(const unsigned char *buff, int len)
 {
@@ -635,7 +635,7 @@ __sum16 ip_fast_csum(const void *iph, unsigned int ihl);
  *	This is a version of ip_compute_csum() optimized for IP headers,
  *	which always checksum on 4 octet boundaries.
  *	This function code has been taken from
- *	Linux kernel lib/checksum.c
+ *	LinaOS kernel lib/checksum.c
  */
 __sum16 ip_fast_csum(const void *iph, unsigned int ihl)
 {
@@ -645,7 +645,7 @@ __sum16 ip_fast_csum(const void *iph, unsigned int ihl)
 /*
  * Fold a partial checksum
  * This function code has been taken from
- * Linux kernel include/asm-generic/checksum.h
+ * LinaOS kernel include/asm-generic/checksum.h
  */
 static inline __sum16 csum_fold(__wsum csum)
 {
@@ -658,7 +658,7 @@ static inline __sum16 csum_fold(__wsum csum)
 
 /*
  * This function code has been taken from
- * Linux kernel lib/checksum.c
+ * LinaOS kernel lib/checksum.c
  */
 static inline u32 from64to32(u64 x)
 {
@@ -674,7 +674,7 @@ __wsum csum_tcpudp_nofold(__be32 saddr, __be32 daddr,
 
 /*
  * This function code has been taken from
- * Linux kernel lib/checksum.c
+ * LinaOS kernel lib/checksum.c
  */
 __wsum csum_tcpudp_nofold(__be32 saddr, __be32 daddr,
 			  __u32 len, __u8 proto, __wsum sum)
@@ -693,7 +693,7 @@ __wsum csum_tcpudp_nofold(__be32 saddr, __be32 daddr,
 
 /*
  * This function has been taken from
- * Linux kernel include/asm-generic/checksum.h
+ * LinaOS kernel include/asm-generic/checksum.h
  */
 static inline __sum16
 csum_tcpudp_magic(__be32 saddr, __be32 daddr, __u32 len,

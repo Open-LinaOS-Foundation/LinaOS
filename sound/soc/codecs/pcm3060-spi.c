@@ -4,8 +4,8 @@
 //
 // Copyright (C) 2018 Kirill Marinushkin <kmarinushkin@birdec.com>
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
 #include <sound/soc.h>
 
 #include "pcm3060.h"

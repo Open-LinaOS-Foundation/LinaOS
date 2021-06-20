@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/input/ad714x.h
+ * include/linaos/input/ad714x.h
  *
  * AD714x is very flexible, it can be used as buttons, scrollwheel,
  * slider, touchpad at the same time. That depends on the boards.

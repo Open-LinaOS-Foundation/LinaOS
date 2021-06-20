@@ -5,16 +5,16 @@
  * Copyright 2011 Benjamin Herrenschmidt, IBM Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/msi.h>
-#include <linux/iommu.h>
-#include <linux/sched/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/msi.h>
+#include <linaos/iommu.h>
+#include <linaos/sched/mm.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>
@@ -189,7 +189,7 @@ int pnv_setup_msi_irqs(struct pci_dev *pdev, int nvec, int type)
 		}
 		virq = irq_create_mapping(NULL, phb->msi_base + hwirq);
 		if (!virq) {
-			pr_warn("%s: Failed to map MSI to linux irq\n",
+			pr_warn("%s: Failed to map MSI to linaos irq\n",
 				pci_name(pdev));
 			msi_bitmap_free_hwirqs(&phb->msi_bmp, hwirq, 1);
 			return -ENOMEM;

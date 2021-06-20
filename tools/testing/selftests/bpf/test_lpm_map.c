@@ -13,7 +13,7 @@
 #include <assert.h>
 #include <errno.h>
 #include <inttypes.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

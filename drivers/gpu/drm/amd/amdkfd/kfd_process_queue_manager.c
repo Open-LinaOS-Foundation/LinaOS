@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/list.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
 #include "kfd_device_queue_manager.h"
 #include "kfd_priv.h"
 #include "kfd_kernel_queue.h"

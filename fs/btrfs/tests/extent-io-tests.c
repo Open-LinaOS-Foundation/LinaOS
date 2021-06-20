@@ -3,10 +3,10 @@
  * Copyright (C) 2013 Fusion IO.  All rights reserved.
  */
 
-#include <linux/pagemap.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/sizes.h>
+#include <linaos/pagemap.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/sizes.h>
 #include "btrfs-tests.h"
 #include "../ctree.h"
 #include "../extent_io.h"

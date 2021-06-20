@@ -6,19 +6,19 @@
  * Copyright (c) 2016, Intel Corporation
  * Author: Giovanni Cabiddu <giovanni.cabiddu@intel.com>
  */
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/crypto.h>
-#include <linux/compiler.h>
-#include <linux/vmalloc.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/crypto.h>
+#include <linaos/compiler.h>
+#include <linaos/vmalloc.h>
 #include <crypto/algapi.h>
-#include <linux/cryptouser.h>
+#include <linaos/cryptouser.h>
 #include <net/netlink.h>
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/internal/acompress.h>
 #include <crypto/internal/scompress.h>

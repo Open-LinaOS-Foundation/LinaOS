@@ -8,19 +8,19 @@
  * Author: Brian Austin <brian.austin@cirrus.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/of_gpio.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/of_gpio.h>
+#include <linaos/pm.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/platform_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

@@ -87,7 +87,7 @@ void pci_hp_deregister(struct hotplug_slot *slot);
 	__pci_hp_initialize(slot, bus, nr, name, THIS_MODULE, KBUILD_MODNAME)
 
 #ifdef CONFIG_ACPI
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 bool pciehp_is_native(struct pci_dev *bridge);
 int acpi_get_hp_hw_control_from_firmware(struct pci_dev *bridge);
 bool shpchp_is_native(struct pci_dev *bridge);

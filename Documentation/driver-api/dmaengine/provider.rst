@@ -81,7 +81,7 @@ memory-to-device (mem2dev) kind of transfers. Most devices often
 support other kind of transfers or memory operations that dmaengine
 support and will be detailed later in this document.
 
-DMA Support in Linux
+DMA Support in LinaOS
 ====================
 
 Historically, DMA controller drivers have been implemented using the
@@ -154,7 +154,7 @@ mask using the dma_cap_set function, with various flags depending on
 transaction types you support as an argument.
 
 All those capabilities are defined in the ``dma_transaction_type enum``,
-in ``include/linux/dmaengine.h``
+in ``include/linaos/dmaengine.h``
 
 Currently, the types available are:
 

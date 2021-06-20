@@ -8,12 +8,12 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/kallsyms.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/debug_locks.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/kallsyms.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/debug_locks.h>
 
 #include <asm/exceptions.h>
 #include <asm/unwind.h>

@@ -8,12 +8,12 @@
  *  Copyright (C) 2014  STMicroelectronics SAS. All rights reserved.
  */
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 #include "../nfc.h"
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
-#include <linux/nfc.h>
+#include <linaos/nfc.h>
 
 struct nci_data {
 	u8              conn_id;

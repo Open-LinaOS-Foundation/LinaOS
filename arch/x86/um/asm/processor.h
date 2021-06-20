@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef __UM_PROCESSOR_H
 #define __UM_PROCESSOR_H
-#include <linux/time-internal.h>
+#include <linaos/time-internal.h>
 
 /* include faultinfo structure */
 #include <sysdep/faultinfo.h>

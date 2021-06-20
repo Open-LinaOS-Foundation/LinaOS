@@ -7,8 +7,8 @@
  * Author: Oleg Nesterov <oleg@redhat.com>
  */
 
-#include <linux/rcu_sync.h>
-#include <linux/sched.h>
+#include <linaos/rcu_sync.h>
+#include <linaos/sched.h>
 
 enum { GP_IDLE = 0, GP_ENTER, GP_PASSED, GP_EXIT, GP_REPLAY };
 

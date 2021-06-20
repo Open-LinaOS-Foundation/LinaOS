@@ -9,10 +9,10 @@
  * specificly written as a driver for the speakup screenreview
  * s not a general device driver.
  */
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/kthread.h>
+#include <linaos/jiffies.h>
+#include <linaos/sched.h>
+#include <linaos/timer.h>
+#include <linaos/kthread.h>
 
 #include "spk_priv.h"
 #include "speakup.h"

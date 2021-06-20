@@ -7,7 +7,7 @@
  * access functions.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifdef CONFIG_FAULT_INJECTION_USERCOPY
 

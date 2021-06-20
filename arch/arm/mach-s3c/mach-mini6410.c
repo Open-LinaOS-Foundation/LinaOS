@@ -4,20 +4,20 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/dm9000.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/fb.h>
+#include <linaos/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/dm9000.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/types.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -27,14 +27,14 @@
 #include "regs-gpio.h"
 #include "gpio-samsung.h"
 
-#include <linux/soc/samsung/s3c-adc.h>
+#include <linaos/soc/samsung/s3c-adc.h>
 #include "cpu.h"
 #include "devs.h"
 #include "fb.h"
-#include <linux/platform_data/mtd-nand-s3c2410.h>
-#include <linux/platform_data/mmc-sdhci-s3c.h>
+#include <linaos/platform_data/mtd-nand-s3c2410.h>
+#include <linaos/platform_data/mmc-sdhci-s3c.h>
 #include "sdhci.h"
-#include <linux/platform_data/touchscreen-s3c2410.h>
+#include <linaos/platform_data/touchscreen-s3c2410.h>
 #include <mach/irqs.h>
 
 #include <video/platform_lcd.h>

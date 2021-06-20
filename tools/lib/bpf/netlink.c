@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <memory.h>
 #include <unistd.h>
-#include <linux/bpf.h>
-#include <linux/rtnetlink.h>
+#include <linaos/bpf.h>
+#include <linaos/rtnetlink.h>
 #include <sys/socket.h>
 #include <errno.h>
 #include <time.h>

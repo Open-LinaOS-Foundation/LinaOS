@@ -12,7 +12,7 @@
  * Copyright (c) 2009 Wind River Systems, Inc.  All Rights Reserved.
  */
 
-#include <linux/kgdb.h>
+#include <linaos/kgdb.h>
 #include "../debug_core.h"
 
 /* Kernel Debugger Command codes.  Must not overlap with error codes. */

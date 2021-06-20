@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2014-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014-2015, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _CORESIGHT_CORESIGHT_ETM_H
 #define _CORESIGHT_CORESIGHT_ETM_H
 
 #include <asm/local.h>
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 #include "coresight-priv.h"
 
 /*

@@ -4,7 +4,7 @@
  *
  * Other names: H13G, "Tonga"
  *
- * Copyright The Asahi Linux Contributors
+ * Copyright The Asahi LinaOS Contributors
  */
 
 #include <dt-bindings/interrupt-controller/apple-aic.h>

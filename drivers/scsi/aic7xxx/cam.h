@@ -29,13 +29,13 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: //depot/aic7xxx/linux/drivers/scsi/aic7xxx/cam.h#15 $
+ * $Id: //depot/aic7xxx/linaos/drivers/scsi/aic7xxx/cam.h#15 $
  */
 
 #ifndef _AIC7XXX_CAM_H
 #define _AIC7XXX_CAM_H 1
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define	CAM_BUS_WILDCARD ((u_int)~0)
 #define	CAM_TARGET_WILDCARD ((u_int)~0)

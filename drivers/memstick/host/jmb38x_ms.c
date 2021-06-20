@@ -5,15 +5,15 @@
  *  Copyright (C) 2008 Alex Dubov <oakad@yahoo.com>
  */
 
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/memstick.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/highmem.h>
+#include <linaos/memstick.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
 #define DRIVER_NAME "jmb38x_ms"
 

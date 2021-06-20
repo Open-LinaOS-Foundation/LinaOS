@@ -4,9 +4,9 @@
  *
  * Copyright (c) 2017 Microsemi Corporation
  */
-#include <linux/dsa/ocelot.h>
-#include <linux/if_bridge.h>
-#include <linux/ptp_classify.h>
+#include <linaos/dsa/ocelot.h>
+#include <linaos/if_bridge.h>
+#include <linaos/ptp_classify.h>
 #include <soc/mscc/ocelot_vcap.h>
 #include "ocelot.h"
 #include "ocelot_vcap.h"

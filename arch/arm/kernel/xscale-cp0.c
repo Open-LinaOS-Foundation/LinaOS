@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/kernel/xscale-cp0.c
+ * linaos/arch/arm/kernel/xscale-cp0.c
  *
  * XScale DSP and iWMMXt coprocessor context switching and handling
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 #include <asm/thread_notify.h>
 #include <asm/cputype.h>
 

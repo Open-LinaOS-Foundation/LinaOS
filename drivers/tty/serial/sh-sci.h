@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/bitops.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
+#include <linaos/bitops.h>
+#include <linaos/serial_core.h>
+#include <linaos/io.h>
 
 #define SCI_MAJOR		204
 #define SCI_MINOR_START		8

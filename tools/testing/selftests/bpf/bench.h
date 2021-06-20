@@ -2,7 +2,7 @@
 #pragma once
 #include <stdlib.h>
 #include <stdbool.h>
-#include <linux/err.h>
+#include <linaos/err.h>
 #include <errno.h>
 #include <unistd.h>
 #include <bpf/bpf.h>

@@ -37,7 +37,7 @@ patternProperties:
         $ref: /schemas/types.yaml#/definitions/string
         description: Descriptive name of the key
 
-      linux,code:
+      linaos,code:
         $ref: /schemas/types.yaml#/definitions/uint32
         description: Keycode to emit
 
@@ -54,7 +54,7 @@ patternProperties:
 
     required:
       - label
-      - linux,code
+      - linaos,code
       - channel
       - voltage
 
@@ -78,14 +78,14 @@ examples:
 
         button-191 {
             label = "Volume Up";
-            linux,code = <115>;
+            linaos,code = <115>;
             channel = <0>;
             voltage = <191274>;
         };
 
         button-392 {
             label = "Volume Down";
-            linux,code = <114>;
+            linaos,code = <114>;
             channel = <0>;
             voltage = <392644>;
         };

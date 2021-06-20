@@ -21,11 +21,11 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/power_supply.h>
-#include <linux/pm_runtime.h>
+#include <linaos/pci.h>
+#include <linaos/acpi.h>
+#include <linaos/slab.h>
+#include <linaos/power_supply.h>
+#include <linaos/pm_runtime.h>
 #include <acpi/video.h>
 #include <acpi/actbl.h>
 

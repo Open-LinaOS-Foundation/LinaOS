@@ -7,13 +7,13 @@
  * Based on ledtrig-timer.c by Richard Purdie <rpurdie@openedhand.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/ctype.h>
+#include <linaos/slab.h>
+#include <linaos/leds.h>
 #include "../leds.h"
 
 #define DEFAULT_DELAY 100

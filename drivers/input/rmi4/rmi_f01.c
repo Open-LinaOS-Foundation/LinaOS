@@ -4,11 +4,11 @@
  * Copyright (c) 2011 Unixphere
  */
 
-#include <linux/kernel.h>
-#include <linux/rmi.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/rmi.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/of.h>
 #include <asm/unaligned.h>
 #include "rmi_driver.h"
 

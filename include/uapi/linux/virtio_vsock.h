@@ -34,9 +34,9 @@
 #ifndef _UAPI_LINUX_VIRTIO_VSOCK_H
 #define _UAPI_LINUX_VIRTIO_VSOCK_H
 
-#include <linux/types.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
+#include <linaos/types.h>
+#include <linaos/virtio_ids.h>
+#include <linaos/virtio_config.h>
 
 struct virtio_vsock_config {
 	__le64 guest_cid;

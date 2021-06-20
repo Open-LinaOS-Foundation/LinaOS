@@ -1,6 +1,6 @@
 What:		/sys/devices/system/cpu/cpuidle/current_governor_ro
 Date:		April, 2020
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 	current_governor_ro shows current using cpuidle governor, but read only.
 	with the update that cpuidle governor can be changed at runtime in default,

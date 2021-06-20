@@ -8,16 +8,16 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 #define dev_fmt pr_fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rwsem.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/kref.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/atomic.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/rwsem.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/kref.h>
+#include <linaos/pci.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>
+#include <linaos/atomic.h>
 #include <xen/events.h>
 #include <asm/xen/pci.h>
 #include <asm/xen/hypervisor.h>

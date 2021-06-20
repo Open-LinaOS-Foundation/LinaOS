@@ -11,12 +11,12 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 
 #include <dt-bindings/clock/bcm-ns2.h>
 #include "clk-iproc.h"

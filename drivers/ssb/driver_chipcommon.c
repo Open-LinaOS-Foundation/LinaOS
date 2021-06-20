@@ -11,11 +11,11 @@
 
 #include "ssb_private.h"
 
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_regs.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/bcm47xx_wdt.h>
+#include <linaos/ssb/ssb.h>
+#include <linaos/ssb/ssb_regs.h>
+#include <linaos/export.h>
+#include <linaos/pci.h>
+#include <linaos/bcm47xx_wdt.h>
 
 
 /* Clock sources */

@@ -2,7 +2,7 @@
 /*
  * OpenRISC traps.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -15,20 +15,20 @@
  *  things.
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/extable.h>
-#include <linux/kmod.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/kallsyms.h>
-#include <linux/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/extable.h>
+#include <linaos/kmod.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
+#include <linaos/timer.h>
+#include <linaos/mm.h>
+#include <linaos/kallsyms.h>
+#include <linaos/uaccess.h>
 
 #include <asm/io.h>
 #include <asm/unwinder.h>

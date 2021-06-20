@@ -10,9 +10,9 @@
 #ifndef __ASM_SPARC64_FLOPPY_H
 #define __ASM_SPARC64_FLOPPY_H
 
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/dma-mapping.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/auxio.h>
 

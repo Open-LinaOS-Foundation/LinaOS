@@ -5,7 +5,7 @@
  * Author: Joerg Roedel <jroedel@suse.de>
  *
  * This file is not compiled stand-alone. It contains code shared
- * between the pre-decompression boot code and the running Linux kernel
+ * between the pre-decompression boot code and the running LinaOS kernel
  * and is included directly into both code-bases.
  */
 

@@ -6,7 +6,7 @@
 #ifndef __I915_GEM_LMEM_H
 #define __I915_GEM_LMEM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_private;
 struct drm_i915_gem_object;

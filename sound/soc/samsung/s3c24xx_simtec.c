@@ -2,13 +2,13 @@
 //
 // Copyright 2009 Simtec Electronics
 
-#include <linux/gpio.h>
-#include <linux/clk.h>
-#include <linux/module.h>
+#include <linaos/gpio.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
 
 #include <sound/soc.h>
 
-#include <linux/platform_data/asoc-s3c24xx_simtec.h>
+#include <linaos/platform_data/asoc-s3c24xx_simtec.h>
 
 #include "s3c24xx-i2s.h"
 #include "s3c24xx_simtec.h"

@@ -8,21 +8,21 @@
  */
 
 
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/extable.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/extable.h>
 #include <asm/asi.h>
 #include <asm/ptrace.h>
 #include <asm/pstate.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
-#include <linux/smp.h>
-#include <linux/bitops.h>
-#include <linux/perf_event.h>
-#include <linux/ratelimit.h>
-#include <linux/context_tracking.h>
+#include <linaos/uaccess.h>
+#include <linaos/smp.h>
+#include <linaos/bitops.h>
+#include <linaos/perf_event.h>
+#include <linaos/ratelimit.h>
+#include <linaos/context_tracking.h>
 #include <asm/fpumacro.h>
 #include <asm/cacheflush.h>
 #include <asm/setup.h>

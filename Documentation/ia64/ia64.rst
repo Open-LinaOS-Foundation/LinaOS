@@ -1,11 +1,11 @@
 ===========================================
-Linux kernel release for the IA-64 Platform
+LinaOS kernel release for the IA-64 Platform
 ===========================================
 
-   These are the release notes for Linux since version 2.4 for IA-64
+   These are the release notes for LinaOS since version 2.4 for IA-64
    platform.  This document provides information specific to IA-64
-   ONLY, to get additional information about the Linux kernel also
-   read the original Linux README provided with the kernel.
+   ONLY, to get additional information about the LinaOS kernel also
+   read the original LinaOS README provided with the kernel.
 
 Installing the Kernel
 =====================

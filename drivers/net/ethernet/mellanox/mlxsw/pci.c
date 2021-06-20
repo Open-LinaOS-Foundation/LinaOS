@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2015-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
-#include <linux/log2.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/export.h>
+#include <linaos/err.h>
+#include <linaos/device.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/wait.h>
+#include <linaos/types.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_vlan.h>
+#include <linaos/log2.h>
+#include <linaos/string.h>
 
 #include "pci_hw.h"
 #include "pci.h"

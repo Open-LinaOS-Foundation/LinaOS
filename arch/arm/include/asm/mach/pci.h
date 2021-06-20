@@ -8,7 +8,7 @@
 #ifndef __ASM_MACH_PCI_H
 #define __ASM_MACH_PCI_H
 
-#include <linux/ioport.h>
+#include <linaos/ioport.h>
 
 struct pci_sys_data;
 struct pci_ops;

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/proc_fs.h>
-#include <linux/nsproxy.h>
-#include <linux/ptrace.h>
-#include <linux/namei.h>
-#include <linux/file.h>
-#include <linux/utsname.h>
+#include <linaos/proc_fs.h>
+#include <linaos/nsproxy.h>
+#include <linaos/ptrace.h>
+#include <linaos/namei.h>
+#include <linaos/file.h>
+#include <linaos/utsname.h>
 #include <net/net_namespace.h>
-#include <linux/ipc_namespace.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
+#include <linaos/ipc_namespace.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/user_namespace.h>
 #include "internal.h"
 
 

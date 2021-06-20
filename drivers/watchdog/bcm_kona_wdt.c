@@ -4,14 +4,14 @@
  *
  */
 
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/watchdog.h>
 
 #define SECWDOG_CTRL_REG		0x00000000
 #define SECWDOG_COUNT_REG		0x00000004

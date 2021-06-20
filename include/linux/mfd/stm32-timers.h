@@ -7,10 +7,10 @@
 #ifndef _LINUX_STM32_GPTIMER_H_
 #define _LINUX_STM32_GPTIMER_H_
 
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/regmap.h>
 
 #define TIM_CR1		0x00	/* Control Register 1      */
 #define TIM_CR2		0x04	/* Control Register 2      */

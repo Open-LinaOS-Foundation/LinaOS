@@ -9,13 +9,13 @@
  * Author: Beomho Seo <beomho.seo@samsung.com>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/of_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/rt5033.h>
-#include <linux/mfd/rt5033-private.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_device.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/rt5033.h>
+#include <linaos/mfd/rt5033-private.h>
 
 static const struct regmap_irq rt5033_irqs[] = {
 	{ .mask = RT5033_PMIC_IRQ_BUCKOCP, },

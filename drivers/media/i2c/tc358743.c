@@ -12,20 +12,20 @@
  * REF_02 - Toshiba, TC358743XBG_HDMI-CSI_Tv11p_nm.xls
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/of_graph.h>
-#include <linux/videodev2.h>
-#include <linux/workqueue.h>
-#include <linux/v4l2-dv-timings.h>
-#include <linux/hdmi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/timer.h>
+#include <linaos/of_graph.h>
+#include <linaos/videodev2.h>
+#include <linaos/workqueue.h>
+#include <linaos/v4l2-dv-timings.h>
+#include <linaos/hdmi.h>
 #include <media/cec.h>
 #include <media/v4l2-dv-timings.h>
 #include <media/v4l2-device.h>

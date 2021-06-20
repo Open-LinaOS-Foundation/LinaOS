@@ -23,7 +23,7 @@ void die(char *fmt, ...)
 
 static void usage(void)
 {
-	die("relocs [--reloc-info|--text|--bin|--keep] vmlinux\n");
+	die("relocs [--reloc-info|--text|--bin|--keep] vmlinaos\n");
 }
 
 int main(int argc, char **argv)

@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2018-2021 Intel Corporation
  */
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 #include "iwl-drv.h"
 #include "iwl-trans.h"
 #include "iwl-dbg-tlv.h"

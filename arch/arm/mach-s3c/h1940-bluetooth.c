@@ -4,14 +4,14 @@
 //
 //	    S3C2410 bluetooth "driver"
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/rfkill.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/leds.h>
+#include <linaos/gpio.h>
+#include <linaos/rfkill.h>
 
 #include "gpio-cfg.h"
 #include "regs-gpio.h"

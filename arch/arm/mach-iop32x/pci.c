@@ -8,13 +8,13 @@
  * Copyright (C) 2002 Rory Bolt
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/io.h>
 #include <asm/irq.h>
 #include <asm/signal.h>
 #include <asm/mach/pci.h>

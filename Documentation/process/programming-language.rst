@@ -7,7 +7,7 @@ The kernel is written in the C programming language [c-language]_.
 More precisely, the kernel is typically compiled with ``gcc`` [gcc]_
 under ``-std=gnu89`` [gcc-c-dialect-options]_: the GNU dialect of ISO C90
 (including some C99 features). ``clang`` [clang]_ is also supported, see
-docs on :ref:`Building Linux with Clang/LLVM <kbuild_llvm>`.
+docs on :ref:`Building LinaOS with Clang/LLVM <kbuild_llvm>`.
 
 This dialect contains many extensions to the language [gnu-extensions]_,
 and many of them are used within the kernel as a matter of course.
@@ -33,7 +33,7 @@ The kernel defines pseudo-keywords (e.g. ``__pure``) instead of using
 directly the GNU attribute syntax (e.g. ``__attribute__((__pure__))``)
 in order to feature detect which ones can be used and/or to shorten the code.
 
-Please refer to ``include/linux/compiler_attributes.h`` for more information.
+Please refer to ``include/linaos/compiler_attributes.h`` for more information.
 
 .. [c-language] http://www.open-std.org/jtc1/sc22/wg14/www/standards
 .. [gcc] https://gcc.gnu.org

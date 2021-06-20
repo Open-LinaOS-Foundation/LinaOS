@@ -23,14 +23,14 @@
 
 #define pr_fmt(fmt) "ACPI: PM: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/sysfs.h>
-#include <linux/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sysfs.h>
+#include <linaos/acpi.h>
 #include "sleep.h"
 #include "internal.h"
 

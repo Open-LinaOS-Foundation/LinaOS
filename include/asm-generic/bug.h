@@ -2,8 +2,8 @@
 #ifndef _ASM_GENERIC_BUG_H
 #define _ASM_GENERIC_BUG_H
 
-#include <linux/compiler.h>
-#include <linux/instrumentation.h>
+#include <linaos/compiler.h>
+#include <linaos/instrumentation.h>
 
 #define CUT_HERE		"------------[ cut here ]------------\n"
 
@@ -17,7 +17,7 @@
 #endif
 
 #ifndef __ASSEMBLY__
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #ifdef CONFIG_BUG
 

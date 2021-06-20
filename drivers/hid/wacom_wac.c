@@ -10,7 +10,7 @@
 
 #include "wacom_wac.h"
 #include "wacom.h"
-#include <linux/input/mt.h>
+#include <linaos/input/mt.h>
 
 /* resolution for penabled devices */
 #define WACOM_PL_RES		20

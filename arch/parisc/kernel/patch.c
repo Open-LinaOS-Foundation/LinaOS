@@ -5,11 +5,11 @@
   * Copyright (c) 2019 Sven Schnelle <svens@stackframe.org>
   */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/kprobes.h>
-#include <linux/mm.h>
-#include <linux/stop_machine.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/kprobes.h>
+#include <linaos/mm.h>
+#include <linaos/stop_machine.h>
 
 #include <asm/cacheflush.h>
 #include <asm/fixmap.h>

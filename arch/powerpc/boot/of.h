@@ -11,7 +11,7 @@ void of_init(void *promptr);
 int of_call_prom(const char *service, int nargs, int nret, ...);
 unsigned int of_claim(unsigned long virt, unsigned long size,
 	unsigned long align);
-void *of_vmlinux_alloc(unsigned long size);
+void *of_vmlinaos_alloc(unsigned long size);
 void of_exit(void);
 void *of_finddevice(const char *name);
 int of_getprop(const void *phandle, const char *name, void *buf,

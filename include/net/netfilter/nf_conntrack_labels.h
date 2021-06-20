@@ -3,13 +3,13 @@
 #ifndef _NF_CONNTRACK_LABELS_H
 #define _NF_CONNTRACK_LABELS_H
 
-#include <linux/netfilter/nf_conntrack_common.h>
-#include <linux/netfilter/nf_conntrack_tuple_common.h>
-#include <linux/types.h>
+#include <linaos/netfilter/nf_conntrack_common.h>
+#include <linaos/netfilter/nf_conntrack_tuple_common.h>
+#include <linaos/types.h>
 #include <net/net_namespace.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_extend.h>
-#include <uapi/linux/netfilter/xt_connlabel.h>
+#include <uapi/linaos/netfilter/xt_connlabel.h>
 
 #define NF_CT_LABELS_MAX_SIZE ((XT_CONNLABEL_MAXBIT + 1) / BITS_PER_BYTE)
 

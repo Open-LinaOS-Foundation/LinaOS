@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * Copyright (ST) 2012 Rajeev Kumar (rajeevkumar.linux@gmail.com)
+ * Copyright (ST) 2012 Rajeev Kumar (rajeevkumar.linaos@gmail.com)
  */
 
 #ifndef __SOUND_DESIGNWARE_I2S_H
 #define __SOUND_DESIGNWARE_I2S_H
 
-#include <linux/dmaengine.h>
-#include <linux/types.h>
+#include <linaos/dmaengine.h>
+#include <linaos/types.h>
 
 /*
  * struct i2s_clk_config_data - represent i2s clk configuration data

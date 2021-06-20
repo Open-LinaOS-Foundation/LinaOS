@@ -600,8 +600,8 @@
 		lid {
 			label = "Lid";
 			gpios = <&gpio TEGRA_GPIO(R, 4) GPIO_ACTIVE_LOW>;
-			linux,input-type = <5>;
-			linux,code = <KEY_RESERVED>;
+			linaos,input-type = <5>;
+			linaos,code = <KEY_RESERVED>;
 			debounce-interval = <1>;
 			wakeup-source;
 		};
@@ -609,7 +609,7 @@
 		power {
 			label = "Power";
 			gpios = <&gpio TEGRA_GPIO(Q, 0) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			debounce-interval = <30>;
 			wakeup-source;
 		};

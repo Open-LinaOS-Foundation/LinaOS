@@ -8,7 +8,7 @@
 #ifndef __LINUX_CLK_ANALOGBITS_WRPLL_CLN28HPC_H
 #define __LINUX_CLK_ANALOGBITS_WRPLL_CLN28HPC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* DIVQ_VALUES: number of valid DIVQ values */
 #define DIVQ_VALUES				6

@@ -26,19 +26,19 @@
  * There will be no PIN request from the device.
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
-#include <linux/power_supply.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/idr.h>
-#include <linux/input/mt.h>
-#include <linux/crc32.h>
-#include <linux/usb.h>
-#include <linux/timer.h>
+#include <linaos/device.h>
+#include <linaos/hid.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/leds.h>
+#include <linaos/power_supply.h>
+#include <linaos/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/idr.h>
+#include <linaos/input/mt.h>
+#include <linaos/crc32.h>
+#include <linaos/usb.h>
+#include <linaos/timer.h>
 #include <asm/unaligned.h>
 
 #include "hid-ids.h"
@@ -359,7 +359,7 @@ static const unsigned int buzz_keymap[] = {
 /* The Navigation controller is a partial DS3 and uses the same HID report
  * and hence the same keymap indices, however not not all axes/buttons
  * are physically present. We use the same axis and button mapping as
- * the DS3, which uses the Linux gamepad spec.
+ * the DS3, which uses the LinaOS gamepad spec.
  */
 static const unsigned int navigation_absmap[] = {
 	[0x30] = ABS_X,
@@ -3014,7 +3014,7 @@ static int sony_probe(struct hid_device *hdev, const struct hid_device_id *id)
 
 	/* Patch the hw version on DS3/4 compatible devices, so applications can
 	 * distinguish between the default HID mappings and the mappings defined
-	 * by the Linux game controller spec. This is important for the SDL2
+	 * by the LinaOS game controller spec. This is important for the SDL2
 	 * library, which has a game controller database, which uses device ids
 	 * in combination with version as a key.
 	 */

@@ -9,8 +9,8 @@
 #ifndef __ACPI_BUS_H__
 #define __ACPI_BUS_H__
 
-#include <linux/device.h>
-#include <linux/property.h>
+#include <linaos/device.h>
+#include <linaos/property.h>
 
 /* TBD: Make dynamic */
 #define ACPI_MAX_HANDLES	10

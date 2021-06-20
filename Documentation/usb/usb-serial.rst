@@ -120,11 +120,11 @@ PocketPC PDA Driver
   contains the necessary packages and a simple step-by-step howto.
 
   Once connected, you can use Win CE programs like ftpView, Pocket Outlook
-  from the PDA and xcerdisp, synce utilities from the Linux side.
+  from the PDA and xcerdisp, synce utilities from the LinaOS side.
 
   To use Pocket IE, follow the instructions given at
   http://www.tekguru.co.uk/EM500/usbtonet.htm to achieve the same thing
-  on Win98. Omit the proxy server part; Linux is quite capable of forwarding
+  on Win98. Omit the proxy server part; LinaOS is quite capable of forwarding
   packets unlike Win98. Another modification is required at least for the
   iPAQ - disable autosync by going to the Start/Settings/Connections menu
   and unchecking the "Automatically synchronize ..." box. Go to
@@ -302,7 +302,7 @@ Digi AccelePort Driver
   The driver is generally working, though we still have a few more ioctls
   to implement and final testing and debugging to do.  The parallel port
   on the USB 2 is supported as a serial to parallel converter; in other
-  words, it appears as another USB serial port on Linux, even though
+  words, it appears as another USB serial port on LinaOS, even though
   physically it is really a parallel port.  The Digi Acceleport USB 8
   is not yet supported.
 
@@ -426,10 +426,10 @@ REINER SCT cyberJack pinpad/e-com USB chipcard reader
     This is the kernel part of the driver for this USB card reader.
     There is also a user part for a CT-API driver available. A site
     for downloading is TBA. For now, you can request it from the
-    maintainer (linux-usb@sii.li).
+    maintainer (linaos-usb@sii.li).
 
   For any questions or problems with this driver, please contact
-  linux-usb@sii.li
+  linaos-usb@sii.li
 
 
 Prolific PL2303 Driver
@@ -460,7 +460,7 @@ Current status:
   why it is wise to cut down on the rate used is wise for large
   transfers until this is settled.
 
-  See http://www.uuhaus.de/linux/palmconnect.html for up-to-date
+  See http://www.uuhaus.de/linaos/palmconnect.html for up-to-date
   information on this driver.
 
 Winchiphead CH341 Driver
@@ -528,9 +528,9 @@ Contact
 
   If anyone has any problems using these drivers, with any of the above
   specified products, please contact the specific driver's author listed
-  above, or join the Linux-USB mailing list (information on joining the
+  above, or join the LinaOS-USB mailing list (information on joining the
   mailing list, as well as a link to its searchable archive is at
-  http://www.linux-usb.org/ )
+  http://www.linaos-usb.org/ )
 
 
 Greg Kroah-Hartman

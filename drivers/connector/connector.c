@@ -6,18 +6,18 @@
  * All rights reserved.
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/skbuff.h>
 #include <net/netlink.h>
-#include <linux/moduleparam.h>
-#include <linux/connector.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/proc_fs.h>
-#include <linux/spinlock.h>
+#include <linaos/moduleparam.h>
+#include <linaos/connector.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/proc_fs.h>
+#include <linaos/spinlock.h>
 
 #include <net/sock.h>
 

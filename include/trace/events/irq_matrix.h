@@ -4,7 +4,7 @@
 #if !defined(_TRACE_IRQ_MATRIX_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_IRQ_MATRIX_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 struct irq_matrix;
 struct cpumap;

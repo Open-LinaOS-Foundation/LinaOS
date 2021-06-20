@@ -12,11 +12,11 @@
 #ifndef __DRM_IPU_H__
 #define __DRM_IPU_H__
 
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/bitmap.h>
-#include <linux/fb.h>
-#include <linux/of.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
+#include <linaos/bitmap.h>
+#include <linaos/fb.h>
+#include <linaos/of.h>
 #include <media/v4l2-mediabus.h>
 #include <video/videomode.h>
 

@@ -2,7 +2,7 @@
 #ifndef _LINUX_UNALIGNED_BE_STRUCT_H
 #define _LINUX_UNALIGNED_BE_STRUCT_H
 
-#include <linux/unaligned/packed_struct.h>
+#include <linaos/unaligned/packed_struct.h>
 
 static inline u16 get_unaligned_be16(const void *p)
 {

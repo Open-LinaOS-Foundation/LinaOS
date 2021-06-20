@@ -1,7 +1,7 @@
-/* radeon_drm.h -- Public header for the radeon driver -*- linux-c -*-
+/* radeon_drm.h -- Public header for the radeon driver -*- linaos-c -*-
  *
  * Copyright 2000 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Fremont, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Fremont, California.
  * Copyright 2002 Tungsten Graphics, Inc., Cedar Park, Texas.
  * All rights reserved.
  *
@@ -25,8 +25,8 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Kevin E. Martin <martin@valinux.com>
- *    Gareth Hughes <gareth@valinux.com>
+ *    Kevin E. Martin <martin@valinaos.com>
+ *    Gareth Hughes <gareth@valinaos.com>
  *    Keith Whitwell <keith@tungstengraphics.com>
  */
 

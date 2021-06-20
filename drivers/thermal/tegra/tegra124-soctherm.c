@@ -13,8 +13,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include <dt-bindings/thermal/tegra124-soctherm.h>
 

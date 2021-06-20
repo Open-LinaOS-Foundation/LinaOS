@@ -15,23 +15,23 @@
  * Marc Gauthier<marc@tensilica.com> <marc@alumni.uwaterloo.ca>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/screen_info.h>
-#include <linux/kernel.h>
-#include <linux/percpu.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/proc_fs.h>
+#include <linaos/screen_info.h>
+#include <linaos/kernel.h>
+#include <linaos/percpu.h>
+#include <linaos/cpu.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
 
 #if defined(CONFIG_VGA_CONSOLE) || defined(CONFIG_DUMMY_CONSOLE)
-# include <linux/console.h>
+# include <linaos/console.h>
 #endif
 
 #ifdef CONFIG_PROC_FS
-# include <linux/seq_file.h>
+# include <linaos/seq_file.h>
 #endif
 
 #include <asm/bootparam.h>
@@ -435,7 +435,7 @@ void cpu_reset(void)
 	/*
 	 * We have full MMU: all autoload ways, ways 7, 8 and 9 of DTLB must
 	 * be flushed.
-	 * Way 4 is not currently used by linux.
+	 * Way 4 is not currently used by linaos.
 	 * Ways 5 and 6 shall not be touched on MMUv2 as they are hardwired.
 	 * Way 5 shall be flushed and way 6 shall be set to identity mapping
 	 * on MMUv3.

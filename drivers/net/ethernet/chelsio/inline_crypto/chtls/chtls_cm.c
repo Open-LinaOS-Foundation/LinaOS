@@ -5,20 +5,20 @@
  * Written by: Atul Gupta (atul.gupta@chelsio.com)
  */
 
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
-#include <linux/notifier.h>
-#include <linux/inetdevice.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sched/signal.h>
-#include <linux/kallsyms.h>
-#include <linux/kprobes.h>
-#include <linux/if_vlan.h>
-#include <linux/ipv6.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/workqueue.h>
+#include <linaos/skbuff.h>
+#include <linaos/timer.h>
+#include <linaos/notifier.h>
+#include <linaos/inetdevice.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/sched/signal.h>
+#include <linaos/kallsyms.h>
+#include <linaos/kprobes.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ipv6.h>
 #include <net/ipv6.h>
 #include <net/transp_v6.h>
 #include <net/ip6_route.h>

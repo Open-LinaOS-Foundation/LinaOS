@@ -8,8 +8,8 @@
  * Copyright (C) 2013-2015 Intel Corporation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>
 #include "../internal.h"
@@ -49,7 +49,7 @@ struct always_present_id {
 static const struct always_present_id always_present_ids[] = {
 	/*
 	 * Bay / Cherry Trail PWM directly poked by GPU driver in win10,
-	 * but Linux uses a separate PWM driver, harmless if not used.
+	 * but LinaOS uses a separate PWM driver, harmless if not used.
 	 */
 	ENTRY("80860F09", "1", X86_MATCH(ATOM_SILVERMONT), {}),
 	ENTRY("80862288", "1", X86_MATCH(ATOM_AIRMONT), {}),

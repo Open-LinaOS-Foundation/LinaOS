@@ -2,11 +2,11 @@
  * Legacy: Generic DRM Buffer Management
  *
  * Copyright 1999, 2000 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
- * Author: Rickard E. (Rik) Faith <faith@valinux.com>
- * Author: Gareth Hughes <gareth@valinux.com>
+ * Author: Rickard E. (Rik) Faith <faith@valinaos.com>
+ * Author: Gareth Hughes <gareth@valinaos.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -28,15 +28,15 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/export.h>
-#include <linux/log2.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/nospec.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
+#include <linaos/export.h>
+#include <linaos/log2.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/nospec.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/shmparam.h>
 

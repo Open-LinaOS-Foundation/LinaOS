@@ -5,7 +5,7 @@
 #ifndef	_H_JFS_SUPERBLOCK
 #define _H_JFS_SUPERBLOCK
 
-#include <linux/uuid.h>
+#include <linaos/uuid.h>
 
 /*
  * make the magic number something a human could read

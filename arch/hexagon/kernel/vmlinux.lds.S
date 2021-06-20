@@ -2,10 +2,10 @@
 /*
  * Linker script for Hexagon kernel
  *
- * Copyright (c) 2010-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2014, The LinaOS Foundation. All rights reserved.
  */
 
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 #include <asm/asm-offsets.h>	/*  Most of the kernel defines are here  */
 #include <asm/mem-layout.h>	/*  except for page_offset  */
 #include <asm/cache.h>		/*  and now we're pulling cache line size  */
@@ -17,7 +17,7 @@ ENTRY(stext)
 jiffies = jiffies_64;
 
 /*
-See asm-generic/vmlinux.lds.h for expansion of some of these macros.
+See asm-generic/vmlinaos.lds.h for expansion of some of these macros.
 See asm-generic/sections.h for seemingly required labels.
 */
 

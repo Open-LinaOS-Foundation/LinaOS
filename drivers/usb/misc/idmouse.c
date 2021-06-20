@@ -12,16 +12,16 @@
 
 */
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/completion.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
+#include <linaos/usb.h>
 
 /* image constants */
 #define WIDTH 225

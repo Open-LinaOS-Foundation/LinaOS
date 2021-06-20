@@ -1,5 +1,5 @@
 /*
- * include/uapi/linux/nfs_idmap.h
+ * include/uapi/linaos/nfs_idmap.h
  *
  *  UID and GID to name mapping for clients.
  *
@@ -37,7 +37,7 @@
 #ifndef _UAPINFS_IDMAP_H
 #define _UAPINFS_IDMAP_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* XXX from bits/utmp.h  */
 #define IDMAP_NAMESZ  128

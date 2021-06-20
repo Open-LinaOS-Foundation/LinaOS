@@ -9,12 +9,12 @@
  *           Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_graph.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <media/v4l2-async.h>
 #include <media/v4l2-common.h>

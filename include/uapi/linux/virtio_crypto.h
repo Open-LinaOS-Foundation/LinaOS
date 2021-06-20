@@ -27,10 +27,10 @@
  * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  */
-#include <linux/types.h>
-#include <linux/virtio_types.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
+#include <linaos/types.h>
+#include <linaos/virtio_types.h>
+#include <linaos/virtio_ids.h>
+#include <linaos/virtio_config.h>
 
 
 #define VIRTIO_CRYPTO_SERVICE_CIPHER 0

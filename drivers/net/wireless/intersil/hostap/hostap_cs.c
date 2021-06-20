@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define PRISM2_PCCARD
 
-#include <linux/module.h>
-#include <linux/if.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
-#include <linux/wireless.h>
+#include <linaos/module.h>
+#include <linaos/if.h>
+#include <linaos/slab.h>
+#include <linaos/wait.h>
+#include <linaos/timer.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/workqueue.h>
+#include <linaos/wireless.h>
 #include <net/iw_handler.h>
 
 #include <pcmcia/cistpl.h>

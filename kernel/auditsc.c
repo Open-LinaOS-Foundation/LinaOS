@@ -27,7 +27,7 @@
  *
  * The method for actual interception of syscall entry and exit (not in
  * this file -- see entry.S) is based on a GPL'd patch written by
- * okir@suse.de and Copyright 2003 SuSE Linux AG.
+ * okir@suse.de and Copyright 2003 SuSE LinaOS AG.
  *
  * POSIX message queue support added by George Wilson <ltcgcw@us.ibm.com>,
  * 2006.
@@ -44,38 +44,38 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/types.h>
-#include <linux/atomic.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/socket.h>
-#include <linux/mqueue.h>
-#include <linux/audit.h>
-#include <linux/personality.h>
-#include <linux/time.h>
-#include <linux/netlink.h>
-#include <linux/compiler.h>
+#include <linaos/atomic.h>
+#include <linaos/fs.h>
+#include <linaos/namei.h>
+#include <linaos/mm.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/mount.h>
+#include <linaos/socket.h>
+#include <linaos/mqueue.h>
+#include <linaos/audit.h>
+#include <linaos/personality.h>
+#include <linaos/time.h>
+#include <linaos/netlink.h>
+#include <linaos/compiler.h>
 #include <asm/unistd.h>
-#include <linux/security.h>
-#include <linux/list.h>
-#include <linux/binfmts.h>
-#include <linux/highmem.h>
-#include <linux/syscalls.h>
+#include <linaos/security.h>
+#include <linaos/list.h>
+#include <linaos/binfmts.h>
+#include <linaos/highmem.h>
+#include <linaos/syscalls.h>
 #include <asm/syscall.h>
-#include <linux/capability.h>
-#include <linux/fs_struct.h>
-#include <linux/compat.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/fsnotify_backend.h>
-#include <uapi/linux/limits.h>
-#include <uapi/linux/netfilter/nf_tables.h>
+#include <linaos/capability.h>
+#include <linaos/fs_struct.h>
+#include <linaos/compat.h>
+#include <linaos/ctype.h>
+#include <linaos/string.h>
+#include <linaos/uaccess.h>
+#include <linaos/fsnotify_backend.h>
+#include <uapi/linaos/limits.h>
+#include <uapi/linaos/netfilter/nf_tables.h>
 
 #include "audit.h"
 
@@ -2326,7 +2326,7 @@ void __audit_ipc_set_perm(unsigned long qbytes, uid_t uid, gid_t gid, umode_t mo
 	context->ipc.has_perm = 1;
 }
 
-void __audit_bprm(struct linux_binprm *bprm)
+void __audit_bprm(struct linaos_binprm *bprm)
 {
 	struct audit_context *context = audit_context();
 
@@ -2463,7 +2463,7 @@ int audit_signal_info_syscall(struct task_struct *t)
  *
  * -Eric
  */
-int __audit_log_bprm_fcaps(struct linux_binprm *bprm,
+int __audit_log_bprm_fcaps(struct linaos_binprm *bprm,
 			   const struct cred *new, const struct cred *old)
 {
 	struct audit_aux_data_bprm_fcaps *ax;

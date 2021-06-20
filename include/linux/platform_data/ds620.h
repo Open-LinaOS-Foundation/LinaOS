@@ -2,8 +2,8 @@
 #ifndef _LINUX_DS620_H
 #define _LINUX_DS620_H
 
-#include <linux/types.h>
-#include <linux/i2c.h>
+#include <linaos/types.h>
+#include <linaos/i2c.h>
 
 /* platform data for the DS620 temperature sensor and thermostat */
 

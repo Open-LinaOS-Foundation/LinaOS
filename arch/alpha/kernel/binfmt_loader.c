@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mm_types.h>
-#include <linux/binfmts.h>
-#include <linux/a.out.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/mm_types.h>
+#include <linaos/binfmts.h>
+#include <linaos/a.out.h>
 
-static int load_binary(struct linux_binprm *bprm)
+static int load_binary(struct linaos_binprm *bprm)
 {
 	struct exec *eh = (struct exec *)bprm->buf;
 	unsigned long loader;
@@ -34,7 +34,7 @@ static int load_binary(struct linux_binprm *bprm)
 	return 0;
 }
 
-static struct linux_binfmt loader_format = {
+static struct linaos_binfmt loader_format = {
 	.load_binary	= load_binary,
 };
 

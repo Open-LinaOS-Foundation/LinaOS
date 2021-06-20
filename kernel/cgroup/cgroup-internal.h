@@ -2,12 +2,12 @@
 #ifndef __CGROUP_INTERNAL_H
 #define __CGROUP_INTERNAL_H
 
-#include <linux/cgroup.h>
-#include <linux/kernfs.h>
-#include <linux/workqueue.h>
-#include <linux/list.h>
-#include <linux/refcount.h>
-#include <linux/fs_parser.h>
+#include <linaos/cgroup.h>
+#include <linaos/kernfs.h>
+#include <linaos/workqueue.h>
+#include <linaos/list.h>
+#include <linaos/refcount.h>
+#include <linaos/fs_parser.h>
 
 #define TRACE_CGROUP_PATH_LEN 1024
 extern spinlock_t trace_cgroup_path_lock;

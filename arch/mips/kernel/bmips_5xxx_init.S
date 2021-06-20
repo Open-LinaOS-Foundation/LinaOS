@@ -10,7 +10,7 @@
  * Used to init second core in dual core 5000's.
  */
 
-#include <linux/init.h>
+#include <linaos/init.h>
 
 #include <asm/asm.h>
 #include <asm/asmmacro.h>

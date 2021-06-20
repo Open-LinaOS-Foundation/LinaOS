@@ -7,7 +7,7 @@
 #if !defined(__MAC802154_DRIVER_TRACE) || defined(TRACE_HEADER_MULTI_READ)
 #define __MAC802154_DRIVER_TRACE
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #include <net/mac802154.h>
 #include "ieee802154_i.h"

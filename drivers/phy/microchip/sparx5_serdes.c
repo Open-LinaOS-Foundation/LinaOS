@@ -8,16 +8,16 @@
  * and the datasheet is available here:
  * https://ww1.microchip.com/downloads/en/DeviceDoc/SparX-5_Family_L2L3_Enterprise_10G_Ethernet_Switches_Datasheet_00003822B.pdf
  */
-#include <linux/printk.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/phy.h>
-#include <linux/phy/phy.h>
+#include <linaos/printk.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/netdevice.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/phy.h>
+#include <linaos/phy/phy.h>
 
 #include "sparx5_serdes.h"
 

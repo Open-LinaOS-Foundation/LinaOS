@@ -33,14 +33,14 @@
  * SOFTWARE.
  */
 
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/count_zeros.h>
+#include <linaos/mm.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/pagemap.h>
+#include <linaos/count_zeros.h>
 #include <rdma/ib_umem_odp.h>
 
 #include "uverbs.h"

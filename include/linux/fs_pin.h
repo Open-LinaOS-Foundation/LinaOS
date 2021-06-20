@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/wait.h>
+#include <linaos/wait.h>
 
 struct fs_pin {
 	wait_queue_head_t	wait;

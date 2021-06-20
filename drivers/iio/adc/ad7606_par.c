@@ -5,13 +5,13 @@
  * Copyright 2011 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/types.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
 
-#include <linux/iio/iio.h>
+#include <linaos/iio/iio.h>
 #include "ad7606.h"
 
 static int ad7606_par16_read_block(struct device *dev,

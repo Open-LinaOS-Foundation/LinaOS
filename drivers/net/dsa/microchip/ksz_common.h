@@ -7,11 +7,11 @@
 #ifndef __KSZ_COMMON_H
 #define __KSZ_COMMON_H
 
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/phy.h>
-#include <linux/regmap.h>
+#include <linaos/etherdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/mutex.h>
+#include <linaos/phy.h>
+#include <linaos/regmap.h>
 #include <net/dsa.h>
 
 struct vlan_table {

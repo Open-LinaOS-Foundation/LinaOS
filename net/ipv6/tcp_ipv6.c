@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	TCP over IPv6
- *	Linux INET6 implementation
+ *	LinaOS INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
  *	Based on:
- *	linux/net/ipv4/tcp.c
- *	linux/net/ipv4/tcp_input.c
- *	linux/net/ipv4/tcp_output.c
+ *	linaos/net/ipv4/tcp.c
+ *	linaos/net/ipv4/tcp_input.c
+ *	linaos/net/ipv4/tcp_output.c
  *
  *	Fixes:
  *	Hideaki YOSHIFUJI	:	sin6_scope_id support
@@ -19,27 +19,27 @@
  *	YOSHIFUJI Hideaki @USAGI:	convert /proc/net/tcp6 to seq_file.
  */
 
-#include <linux/bottom_half.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/jiffies.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/jhash.h>
-#include <linux/ipsec.h>
-#include <linux/times.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/random.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/bottom_half.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/jiffies.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/netdevice.h>
+#include <linaos/init.h>
+#include <linaos/jhash.h>
+#include <linaos/ipsec.h>
+#include <linaos/times.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/ipv6.h>
+#include <linaos/icmpv6.h>
+#include <linaos/random.h>
+#include <linaos/indirect_call_wrapper.h>
 
 #include <net/tcp.h>
 #include <net/ndisc.h>
@@ -60,11 +60,11 @@
 #include <net/secure_seq.h>
 #include <net/busy_poll.h>
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 
 #include <crypto/hash.h>
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 #include <trace/events/tcp.h>
 
@@ -434,7 +434,7 @@ static int tcp_v6_err(struct sk_buff *skb, struct inet6_skb_parm *opt,
 
 	if (type == ICMPV6_PKT_TOOBIG) {
 		/* We are not interested in TCP_LISTEN and open_requests
-		 * (SYN-ACKs send out by Linux are always <576bytes so
+		 * (SYN-ACKs send out by LinaOS are always <576bytes so
 		 * they should go through unfragmented).
 		 */
 		if (sk->sk_state == TCP_LISTEN)

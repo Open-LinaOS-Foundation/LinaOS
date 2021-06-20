@@ -44,8 +44,8 @@
 #ifndef __ASM_FNCPY_H
 #define __ASM_FNCPY_H
 
-#include <linux/types.h>
-#include <linux/string.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
 
 #include <asm/bug.h>
 #include <asm/cacheflush.h>

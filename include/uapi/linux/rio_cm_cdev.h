@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR BSD-3-Clause) */
 /*
  * Copyright (c) 2015, Integrated Device Technology Inc.
  * Copyright (c) 2015, Prodrive Technologies
@@ -39,7 +39,7 @@
 #ifndef _RIO_CM_CDEV_H_
 #define _RIO_CM_CDEV_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct rio_cm_channel {
 	__u16 id;

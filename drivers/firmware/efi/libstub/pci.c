@@ -6,8 +6,8 @@
  * Copyright 2019 Google, LLC
  */
 
-#include <linux/efi.h>
-#include <linux/pci.h>
+#include <linaos/efi.h>
+#include <linaos/pci.h>
 
 #include <asm/efi.h>
 

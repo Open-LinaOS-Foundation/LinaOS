@@ -4,11 +4,11 @@
  * Author: Paul Burton <paul.burton@mips.com>
  */
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/libfdt.h>
-#include <linux/of_fdt.h>
-#include <linux/sizes.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/libfdt.h>
+#include <linaos/of_fdt.h>
+#include <linaos/sizes.h>
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>
 #include <asm/fw/fw.h>
@@ -218,10 +218,10 @@ static void __init append_memory(void *fdt, int root_off)
 		panic("Unable to set memory regs property: %d", err);
 
 	mem_entries = gen_fdt_mem_array(mem_array, memsize, mem_map);
-	err = fdt_setprop(fdt, mem_off, "linux,usable-memory", mem_array,
+	err = fdt_setprop(fdt, mem_off, "linaos,usable-memory", mem_array,
 			  mem_entries * 2 * sizeof(mem_array[0]));
 	if (err)
-		panic("Unable to set linux,usable-memory property: %d", err);
+		panic("Unable to set linaos,usable-memory property: %d", err);
 }
 
 static void __init remove_gic(void *fdt)

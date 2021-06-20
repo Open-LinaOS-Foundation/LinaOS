@@ -5,13 +5,13 @@
  *
  ******************************************************************************/
 #define _RTL8188EU_RECV_C_
-#include <linux/kmemleak.h>
+#include <linaos/kmemleak.h>
 #include <osdep_service.h>
 #include <drv_types.h>
 #include <recv_osdep.h>
 #include <mlme_osdep.h>
 
-#include <usb_ops_linux.h>
+#include <usb_ops_linaos.h>
 #include <wifi.h>
 
 #include <rtl8188e_hal.h>

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/arch/arm/boot/compressed/head-sharpsl.S
+ * linaos/arch/arm/boot/compressed/head-sharpsl.S
  *
  * Copyright (C) 2004-2005 Richard Purdie <rpurdie@rpsys.net>
  *
@@ -13,7 +13,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/mach-types.h>
 
 #ifndef CONFIG_PXA_SHARPSL

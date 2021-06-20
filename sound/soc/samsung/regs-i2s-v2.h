@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright 2007 Simtec Electronics <linux@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ * Copyright 2007 Simtec Electronics <linaos@simtec.co.uk>
+ *	http://armlinaos.simtec.co.uk/
  *
  * S3C2412 IIS register definition
  */

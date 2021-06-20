@@ -32,31 +32,31 @@
 
 		esc-key {
 			label = "esc";
-			linux,code = <KEY_ESC>;
+			linaos,code = <KEY_ESC>;
 			press-threshold-microvolt = <1310000>;
 		};
 
 		home-key {
 			label = "home";
-			linux,code = <KEY_HOME>;
+			linaos,code = <KEY_HOME>;
 			press-threshold-microvolt = <624000>;
 		};
 
 		menu-key {
 			label = "menu";
-			linux,code = <KEY_MENU>;
+			linaos,code = <KEY_MENU>;
 			press-threshold-microvolt = <987000>;
 		};
 
 		vol-down-key {
 			label = "volume down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			press-threshold-microvolt = <300000>;
 		};
 
 		vol-up-key {
 			label = "volume up";
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			press-threshold-microvolt = <17000>;
 		};
 	};

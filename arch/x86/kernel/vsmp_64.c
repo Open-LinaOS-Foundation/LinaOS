@@ -9,11 +9,11 @@
  *			     Ravikiran Thirumalai <kiran@scalemp.com>
  */
 
-#include <linux/init.h>
-#include <linux/pci_ids.h>
-#include <linux/pci_regs.h>
-#include <linux/smp.h>
-#include <linux/irq.h>
+#include <linaos/init.h>
+#include <linaos/pci_ids.h>
+#include <linaos/pci_regs.h>
+#include <linaos/smp.h>
+#include <linaos/irq.h>
 
 #include <asm/apic.h>
 #include <asm/pci-direct.h>

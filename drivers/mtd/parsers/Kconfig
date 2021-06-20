@@ -39,11 +39,11 @@ config MTD_CMDLINE_PARTS
 	  <mtddef>  := <mtd-id>:<partdef>[,<partdef>]
 	  <partdef> := <size>[@offset][<name>][ro]
 	  <mtd-id>  := unique id used in mapping driver/device
-	  <size>    := standard linux memsize OR "-" to denote all
+	  <size>    := standard linaos memsize OR "-" to denote all
 	  remaining space
 	  <name>    := (NAME)
 
-	  Due to the way Linux handles the command line, no spaces are
+	  Due to the way LinaOS handles the command line, no spaces are
 	  allowed in the partition definition, including mtd id's and partition
 	  names.
 
@@ -154,7 +154,7 @@ config MTD_REDBOOT_DIRECTORY_BLOCK
 	int "Location of RedBoot partition table"
 	default "-1"
 	help
-	  This option is the Linux counterpart to the
+	  This option is the LinaOS counterpart to the
 	  CYGNUM_REDBOOT_FIS_DIRECTORY_BLOCK RedBoot compile time
 	  option.
 

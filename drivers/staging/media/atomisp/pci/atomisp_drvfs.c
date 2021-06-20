@@ -16,9 +16,9 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
 
 #include "atomisp_compat.h"
 #include "atomisp_internal.h"

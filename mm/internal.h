@@ -7,10 +7,10 @@
 #ifndef __MM_INTERNAL_H
 #define __MM_INTERNAL_H
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/tracepoint-defs.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/tracepoint-defs.h>
 
 /*
  * The set of flags that only affect watermark checking and reclaim

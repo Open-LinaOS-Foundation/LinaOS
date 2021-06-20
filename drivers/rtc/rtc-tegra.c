@@ -5,18 +5,18 @@
  * Copyright (c) 2010-2019, NVIDIA Corporation.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
 
 /* Set to 1 = busy every eight 32 kHz clocks during copy of sec+msec to AHB. */
 #define TEGRA_RTC_REG_BUSY			0x004

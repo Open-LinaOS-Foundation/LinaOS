@@ -6,7 +6,7 @@
 #if !defined(_PCM_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _PCM_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(hwptr,
 	TP_PROTO(struct snd_pcm_substream *substream, snd_pcm_uframes_t pos, bool irq),

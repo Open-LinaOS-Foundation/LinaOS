@@ -137,7 +137,7 @@
 		power_led {
 			label = "status:blue:power_led";
 			gpios = <&gpio0 31 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		backup_led {
@@ -174,19 +174,19 @@
 
 		power-button {
 			label = "Power Button";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio1 15 GPIO_ACTIVE_LOW>;
 		};
 
 		reset-button {
 			label = "Reset Button";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
 		};
 
 		backup-button {
 			label = "Backup Button";
-			linux,code = <KEY_COPY>;
+			linaos,code = <KEY_COPY>;
 			gpios = <&gpio1 13 GPIO_ACTIVE_LOW>;
 		};
 	};

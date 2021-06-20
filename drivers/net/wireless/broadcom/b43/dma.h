@@ -2,7 +2,7 @@
 #ifndef B43_DMA_H_
 #define B43_DMA_H_
 
-#include <linux/err.h>
+#include <linaos/err.h>
 
 #include "b43.h"
 

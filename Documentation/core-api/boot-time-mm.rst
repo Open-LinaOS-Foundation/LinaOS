@@ -36,6 +36,6 @@ documented it would be silly to omit them. Besides, reading the
 descriptions for the internal functions can help to understand what
 really happens under the hood.
 
-.. kernel-doc:: include/linux/memblock.h
+.. kernel-doc:: include/linaos/memblock.h
 .. kernel-doc:: mm/memblock.c
    :functions:

@@ -9,22 +9,22 @@
 
 #define pr_fmt(fmt) "watchdog: " fmt
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/cpu.h>
-#include <linux/nmi.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/kprobes.h>
-#include <linux/hardirq.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/kdebug.h>
-#include <linux/sched/debug.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/param.h>
+#include <linaos/init.h>
+#include <linaos/percpu.h>
+#include <linaos/cpu.h>
+#include <linaos/nmi.h>
+#include <linaos/module.h>
+#include <linaos/export.h>
+#include <linaos/kprobes.h>
+#include <linaos/hardirq.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/kdebug.h>
+#include <linaos/sched/debug.h>
+#include <linaos/delay.h>
+#include <linaos/smp.h>
 
 #include <asm/interrupt.h>
 #include <asm/paca.h>
@@ -43,7 +43,7 @@
  * are disabled with local_irq_disable(), platforms that use soft-masking
  * can leave hardware interrupts enabled and handle them with a masked
  * interrupt handler. The masked handler can send the timer interrupt to the
- * watchdog's soft_nmi_interrupt(), which appears to Linux as an NMI
+ * watchdog's soft_nmi_interrupt(), which appears to LinaOS as an NMI
  * interrupt, and can be used to detect CPUs stuck with IRQs disabled.
  *
  * The soft-NMI checker will compare the heartbeat timestamp for this CPU

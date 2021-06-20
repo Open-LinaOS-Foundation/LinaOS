@@ -1,15 +1,15 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <inttypes.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 #include <perf/cpumap.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
-#include <uapi/linux/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
-#include <linux/perf_event.h>
-#include <linux/zalloc.h>
+#include <uapi/linaos/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
+#include <linaos/perf_event.h>
+#include <linaos/zalloc.h>
 #include "cpumap.h"
 #include "dso.h"
 #include "event.h"
@@ -22,7 +22,7 @@
 #include "thread.h"
 #include "thread_map.h"
 #include "time-utils.h"
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 #include "map.h"
 #include "util/namespaces.h"
 #include "symbol.h"

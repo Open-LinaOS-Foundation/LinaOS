@@ -2,11 +2,11 @@
 /* Copyright (c) 2016 Thomas Graf <tgraf@tgraf.ch>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/bpf.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/types.h>
+#include <linaos/bpf.h>
 #include <net/lwtunnel.h>
 #include <net/gre.h>
 #include <net/ip6_route.h>

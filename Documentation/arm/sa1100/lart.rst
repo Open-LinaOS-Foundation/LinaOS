@@ -1,5 +1,5 @@
 ====================================
-Linux Advanced Radio Terminal (LART)
+LinaOS Advanced Radio Terminal (LART)
 ====================================
 
 The LART is a small (7.5 x 10cm) SA-1100 board, designed for embedded

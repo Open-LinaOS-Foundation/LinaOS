@@ -1,12 +1,12 @@
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 #include <asm/page.h>
 #include "sizes.h"
 
 #ifndef CONFIG_64BIT
-OUTPUT_FORMAT("elf32-hppa-linux")
+OUTPUT_FORMAT("elf32-hppa-linaos")
 OUTPUT_ARCH(hppa)
 #else
-OUTPUT_FORMAT("elf64-hppa-linux")
+OUTPUT_FORMAT("elf64-hppa-linaos")
 OUTPUT_ARCH(hppa:hppa2.0w)
 #endif
 
@@ -42,7 +42,7 @@ SECTIONS
 #endif
 	_startcode_end = .;
 
-	/* vmlinux.bin.gz is here */
+	/* vmlinaos.bin.gz is here */
 	. = ALIGN(8);
 	.rodata.compressed : {
 		*(.rodata.compressed)

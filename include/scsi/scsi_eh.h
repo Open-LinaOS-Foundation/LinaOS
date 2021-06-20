@@ -2,7 +2,7 @@
 #ifndef _SCSI_SCSI_EH_H
 #define _SCSI_SCSI_EH_H
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_common.h>

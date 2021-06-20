@@ -52,42 +52,42 @@
  *	Based upon Swansea University Computer Society NET3.039
  */
 
-#include <linux/ethtool.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/file.h>
-#include <linux/net.h>
-#include <linux/interrupt.h>
-#include <linux/thread_info.h>
-#include <linux/rcupdate.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/ptp_classify.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/cache.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/compat.h>
-#include <linux/kmod.h>
-#include <linux/audit.h>
-#include <linux/wireless.h>
-#include <linux/nsproxy.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/nospec.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/ethtool.h>
+#include <linaos/mm.h>
+#include <linaos/socket.h>
+#include <linaos/file.h>
+#include <linaos/net.h>
+#include <linaos/interrupt.h>
+#include <linaos/thread_info.h>
+#include <linaos/rcupdate.h>
+#include <linaos/netdevice.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/mutex.h>
+#include <linaos/if_bridge.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/init.h>
+#include <linaos/poll.h>
+#include <linaos/cache.h>
+#include <linaos/module.h>
+#include <linaos/highmem.h>
+#include <linaos/mount.h>
+#include <linaos/pseudo_fs.h>
+#include <linaos/security.h>
+#include <linaos/syscalls.h>
+#include <linaos/compat.h>
+#include <linaos/kmod.h>
+#include <linaos/audit.h>
+#include <linaos/wireless.h>
+#include <linaos/nsproxy.h>
+#include <linaos/magic.h>
+#include <linaos/slab.h>
+#include <linaos/xattr.h>
+#include <linaos/nospec.h>
+#include <linaos/indirect_call_wrapper.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/unistd.h>
 
 #include <net/compat.h>
@@ -95,15 +95,15 @@
 #include <net/cls_cgroup.h>
 
 #include <net/sock.h>
-#include <linux/netfilter.h>
+#include <linaos/netfilter.h>
 
-#include <linux/if_tun.h>
-#include <linux/ipv6_route.h>
-#include <linux/route.h>
-#include <linux/termios.h>
-#include <linux/sockios.h>
+#include <linaos/if_tun.h>
+#include <linaos/ipv6_route.h>
+#include <linaos/route.h>
+#include <linaos/termios.h>
+#include <linaos/sockios.h>
 #include <net/busy_poll.h>
-#include <linux/errqueue.h>
+#include <linaos/errqueue.h>
 
 #ifdef CONFIG_NET_RX_BUSY_POLL
 unsigned int sysctl_net_busy_read __read_mostly;
@@ -398,7 +398,7 @@ static struct file_system_type sock_fs_type = {
  *
  *	Returns the &file bound with @sock, implicitly storing it
  *	in sock->file. If dname is %NULL, sets to "".
- *	On failure the return is a ERR pointer (see linux/err.h).
+ *	On failure the return is a ERR pointer (see linaos/err.h).
  *	This function uses GFP_KERNEL internally.
  */
 
@@ -2443,7 +2443,7 @@ SYSCALL_DEFINE3(sendmsg, int, fd, struct user_msghdr __user *, msg, unsigned int
 }
 
 /*
- *	Linux sendmmsg interface
+ *	LinaOS sendmmsg interface
  */
 
 int __sys_sendmmsg(int fd, struct mmsghdr __user *mmsg, unsigned int vlen,
@@ -2652,7 +2652,7 @@ SYSCALL_DEFINE3(recvmsg, int, fd, struct user_msghdr __user *, msg,
 }
 
 /*
- *     Linux recvmmsg interface
+ *     LinaOS recvmmsg interface
  */
 
 static int do_recvmmsg(int fd, struct mmsghdr __user *mmsg,

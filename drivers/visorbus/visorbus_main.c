@@ -4,12 +4,12 @@
  * All rights reserved.
  */
 
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/visorbus.h>
-#include <linux/uuid.h>
+#include <linaos/ctype.h>
+#include <linaos/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/visorbus.h>
+#include <linaos/uuid.h>
 
 #include "visorbus_private.h"
 
@@ -925,7 +925,7 @@ static int visordriver_probe_device(struct device *xdev)
  * caller MUST fill in the following fields within the #drv structure:
  *     name, version, owner, channel_types, probe, remove
  *
- * Here's how the whole Linux bus / driver / device model works.
+ * Here's how the whole LinaOS bus / driver / device model works.
  *
  * At system start-up, the visorbus kernel module is loaded, which registers
  * visorbus_type as a bus type, using bus_register().

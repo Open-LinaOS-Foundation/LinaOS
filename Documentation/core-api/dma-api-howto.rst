@@ -87,7 +87,7 @@ mapping and returns the DMA address Z.  The driver then tells the device to
 do DMA to Z, and the IOMMU maps it to the buffer at address Y in system
 RAM.
 
-So that Linux can use the dynamic DMA mapping, it needs some help from the
+So that LinaOS can use the dynamic DMA mapping, it needs some help from the
 drivers, namely it has to take into account that DMA addresses should be
 mapped only for the time they are actually used and unmapped after the DMA
 transfer.
@@ -102,7 +102,7 @@ pci_map_*() interfaces.
 
 First of all, you should make sure::
 
-	#include <linux/dma-mapping.h>
+	#include <linaos/dma-mapping.h>
 
 is in your driver, which provides the definition of dma_addr_t.  This type
 can hold any valid DMA address for the platform and should be used
@@ -886,7 +886,7 @@ need the address in order to perform the unmap operation.
 Platform Issues
 ===============
 
-If you are just writing drivers for Linux and do not maintain
+If you are just writing drivers for LinaOS and do not maintain
 an architecture port for the kernel, you can safely skip down
 to "Closing".
 
@@ -918,7 +918,7 @@ form without the feedback and suggestions from numerous individuals.
 We would like to specifically mention, in no particular order, the
 following people::
 
-	Russell King <rmk@arm.linux.org.uk>
+	Russell King <rmk@arm.linaos.org.uk>
 	Leo Dagum <dagum@barrel.engr.sgi.com>
 	Ralf Baechle <ralf@oss.sgi.com>
 	Grant Grundler <grundler@cup.hp.com>

@@ -418,7 +418,7 @@ static void cmpk_handle_tx_rate_history(struct net_device *dev, u8 *pmsg)
 	ptemp = (u32 *)pmsg;
 
 	/* Do endian transfer to word alignment(16 bits) for windows system.
-	 * You must do different endian transfer for linux and MAC OS
+	 * You must do different endian transfer for linaos and MAC OS
 	 */
 	for (i = 0; i < (length/4); i++) {
 		u16	 temp1, temp2;

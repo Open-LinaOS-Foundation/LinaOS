@@ -2,13 +2,13 @@
 #ifndef LINUX_CRASH_DUMP_H
 #define LINUX_CRASH_DUMP_H
 
-#include <linux/kexec.h>
-#include <linux/proc_fs.h>
-#include <linux/elf.h>
-#include <linux/pgtable.h>
-#include <uapi/linux/vmcore.h>
+#include <linaos/kexec.h>
+#include <linaos/proc_fs.h>
+#include <linaos/elf.h>
+#include <linaos/pgtable.h>
+#include <uapi/linaos/vmcore.h>
 
-#include <linux/pgtable.h> /* for pgprot_t */
+#include <linaos/pgtable.h> /* for pgprot_t */
 
 #ifdef CONFIG_CRASH_DUMP
 #define ELFCORE_ADDR_MAX	(-1ULL)

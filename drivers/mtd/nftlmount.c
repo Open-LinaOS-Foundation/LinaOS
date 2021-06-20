@@ -7,13 +7,13 @@
  * Copyright © 1999-2010 David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/errno.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/nftl.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/nftl.h>
 
 #define SECTORSIZE 512
 

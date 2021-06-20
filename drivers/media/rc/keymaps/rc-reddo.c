@@ -6,7 +6,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /*
  * Derived from MSI DIGIVOX mini III remote (rc-msi-digivox-iii.c)

@@ -11,11 +11,11 @@
  * Copyright 2001 - 2005 Tensilica Inc.
  * Copyright 2017 Cadence Design Systems Inc.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/printk.h>
-#include <linux/string.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/notifier.h>
+#include <linaos/printk.h>
+#include <linaos/string.h>
 
 #include <asm/platform.h>
 #include <asm/setup.h>

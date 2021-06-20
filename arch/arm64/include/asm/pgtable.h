@@ -32,9 +32,9 @@
 
 #include <asm/cmpxchg.h>
 #include <asm/fixmap.h>
-#include <linux/mmdebug.h>
-#include <linux/mm_types.h>
-#include <linux/sched.h>
+#include <linaos/mmdebug.h>
+#include <linaos/mm_types.h>
+#include <linaos/sched.h>
 
 #ifdef CONFIG_TRANSPARENT_HUGEPAGE
 #define __HAVE_ARCH_FLUSH_PMD_TLB_RANGE
@@ -384,7 +384,7 @@ static inline pgprot_t mk_pmd_sect_prot(pgprot_t prot)
 
 #ifdef CONFIG_NUMA_BALANCING
 /*
- * See the comment in include/linux/pgtable.h
+ * See the comment in include/linaos/pgtable.h
  */
 static inline int pte_protnone(pte_t pte)
 {

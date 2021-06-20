@@ -5,7 +5,7 @@
  *	(c) 1999 Martin Mares <mj@ucw.cz>
  */
 
-#include <linux/ioport.h>
+#include <linaos/ioport.h>
 
 #undef DEBUG
 

@@ -15,8 +15,8 @@
  * SOFTWARE.
  */
 
-#include <linux/string.h>
-#include <linux/device.h>
+#include <linaos/string.h>
+#include <linaos/device.h>
 
 #include "snic.h"
 

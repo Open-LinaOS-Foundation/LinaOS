@@ -4,15 +4,15 @@
  * Author: Tony Xie <tony.xie@rock-chips.com>
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/suspend.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regulator/machine.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/regmap.h>
+#include <linaos/suspend.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regulator/machine.h>
 
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>

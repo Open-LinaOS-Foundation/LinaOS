@@ -2,14 +2,14 @@
 #ifndef DW_SPI_HEADER_H
 #define DW_SPI_HEADER_H
 
-#include <linux/bits.h>
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/irqreturn.h>
-#include <linux/io.h>
-#include <linux/scatterlist.h>
-#include <linux/spi/spi-mem.h>
-#include <linux/bitfield.h>
+#include <linaos/bits.h>
+#include <linaos/completion.h>
+#include <linaos/debugfs.h>
+#include <linaos/irqreturn.h>
+#include <linaos/io.h>
+#include <linaos/scatterlist.h>
+#include <linaos/spi/spi-mem.h>
+#include <linaos/bitfield.h>
 
 /* Register offsets */
 #define DW_SPI_CTRLR0			0x00

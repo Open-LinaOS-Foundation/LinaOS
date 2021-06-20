@@ -2,7 +2,7 @@
 #if !defined(__TRACE_ATH5K_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __TRACE_ATH5K_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 
 #if !defined(CONFIG_ATH5K_TRACER) || defined(__CHECKER__)

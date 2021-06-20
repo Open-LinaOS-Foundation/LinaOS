@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2012, The LinaOS Foundation. All rights reserved.
  *
  * Description: CoreSight Trace Port Interface Unit driver
  */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/coresight.h>
-#include <linux/amba/bus.h>
-#include <linux/clk.h>
+#include <linaos/atomic.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/coresight.h>
+#include <linaos/amba/bus.h>
+#include <linaos/clk.h>
 
 #include "coresight-priv.h"
 

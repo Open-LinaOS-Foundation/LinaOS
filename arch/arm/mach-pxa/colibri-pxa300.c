@@ -8,21 +8,21 @@
  *  Matthias Meier <matthias.j.meier@gmx.net>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/interrupt.h>
 
 #include <asm/mach-types.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/irq.h>
 
 #include "pxa300.h"
 #include "colibri.h"
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/video-pxafb.h>
 #include <mach/audio.h>
 
 #include "generic.h"

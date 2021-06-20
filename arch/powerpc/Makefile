@@ -120,9 +120,9 @@ else
 cflags-$(CONFIG_STACKPROTECTOR)	+= -mstack-protector-guard-reg=r2
 endif
 
-LDFLAGS_vmlinux-y := -Bstatic
-LDFLAGS_vmlinux-$(CONFIG_RELOCATABLE) := -pie
-LDFLAGS_vmlinux	:= $(LDFLAGS_vmlinux-y)
+LDFLAGS_vmlinaos-y := -Bstatic
+LDFLAGS_vmlinaos-$(CONFIG_RELOCATABLE) := -pie
+LDFLAGS_vmlinaos	:= $(LDFLAGS_vmlinaos-y)
 
 ifdef CONFIG_PPC64
 ifeq ($(call cc-option-yn,-mcmodel=medium),y)
@@ -281,9 +281,9 @@ PHONY += $(BOOT_TARGETS1) $(BOOT_TARGETS2)
 
 boot := arch/$(ARCH)/boot
 
-$(BOOT_TARGETS1): vmlinux
+$(BOOT_TARGETS1): vmlinaos
 	$(Q)$(MAKE) $(build)=$(boot) $(patsubst %,$(boot)/%,$@)
-$(BOOT_TARGETS2): vmlinux
+$(BOOT_TARGETS2): vmlinaos
 	$(Q)$(MAKE) $(build)=$(boot) $(patsubst %,$(boot)/%,$@)
 
 

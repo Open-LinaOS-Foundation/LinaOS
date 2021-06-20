@@ -6,7 +6,7 @@
  */
 
 /*
- *  Linux VFS namei operations.
+ *  LinaOS VFS namei operations.
  */
 
 #include "protocol.h"

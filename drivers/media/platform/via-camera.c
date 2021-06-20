@@ -6,15 +6,15 @@
  *
  * This work was supported by the One Laptop Per Child project
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/pci.h>
+#include <linaos/gpio.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
@@ -22,12 +22,12 @@
 #include <media/v4l2-image-sizes.h>
 #include <media/i2c/ov7670.h>
 #include <media/videobuf2-dma-sg.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_qos.h>
-#include <linux/via-core.h>
-#include <linux/via-gpio.h>
-#include <linux/via_i2c.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pm_qos.h>
+#include <linaos/via-core.h>
+#include <linaos/via-gpio.h>
+#include <linaos/via_i2c.h>
 
 #ifdef CONFIG_X86
 #include <asm/olpc.h>

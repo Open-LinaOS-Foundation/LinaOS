@@ -7,8 +7,8 @@
 #ifndef NET_ATM_ADDR_H
 #define NET_ATM_ADDR_H
 
-#include <linux/atm.h>
-#include <linux/atmdev.h>
+#include <linaos/atm.h>
+#include <linaos/atmdev.h>
 
 void atm_reset_addr(struct atm_dev *dev, enum atm_addr_type_t type);
 int atm_add_addr(struct atm_dev *dev, const struct sockaddr_atmsvc *addr,

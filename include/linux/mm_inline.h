@@ -2,8 +2,8 @@
 #ifndef LINUX_MM_INLINE_H
 #define LINUX_MM_INLINE_H
 
-#include <linux/huge_mm.h>
-#include <linux/swap.h>
+#include <linaos/huge_mm.h>
+#include <linaos/swap.h>
 
 /**
  * page_is_file_lru - should the page be on a file LRU or anon LRU?

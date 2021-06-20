@@ -7,7 +7,7 @@
 #ifndef _INTEL_SOC_DTS_IOSF_CORE_H
 #define _INTEL_SOC_DTS_IOSF_CORE_H
 
-#include <linux/thermal.h>
+#include <linaos/thermal.h>
 
 /* DTS0 and DTS 1 */
 #define SOC_MAX_DTS_SENSORS	2

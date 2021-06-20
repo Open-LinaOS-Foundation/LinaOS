@@ -6,12 +6,12 @@
  * Copyright (c) 2011 John Crispin <john@phrozen.org>
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/device.h>
+#include <linaos/gfp.h>
 
 #include "gpiolib.h"
 

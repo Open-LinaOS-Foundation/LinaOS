@@ -6,8 +6,8 @@
 #ifndef __IF_TUN_H
 #define __IF_TUN_H
 
-#include <uapi/linux/if_tun.h>
-#include <uapi/linux/virtio_net.h>
+#include <uapi/linaos/if_tun.h>
+#include <uapi/linaos/virtio_net.h>
 
 #define TUN_XDP_FLAG 0x1UL
 
@@ -41,8 +41,8 @@ static inline struct xdp_frame *tun_ptr_to_xdp(void *ptr)
 }
 void tun_ptr_free(void *ptr);
 #else
-#include <linux/err.h>
-#include <linux/errno.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
 struct file;
 struct socket;
 static inline struct socket *tun_get_socket(struct file *f)

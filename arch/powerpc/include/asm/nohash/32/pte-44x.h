@@ -50,7 +50,7 @@
  *     have -some- form of SMP support and so I keep the bit there for
  *     future use
  *
- * With the PPC 44x Linux implementation, the 0-11th LSBs of the PTE are used
+ * With the PPC 44x LinaOS implementation, the 0-11th LSBs of the PTE are used
  * for memory protection related functions (see PTE structure in
  * include/asm-ppc/mmu.h).  The _PAGE_XXX definitions in this file map to the
  * above bits.  Note that the bit values are CPU specific, not architecture
@@ -85,7 +85,7 @@
 #define _PAGE_NO_CACHE	0x00000400		/* H: I bit */
 #define _PAGE_WRITETHRU	0x00000800		/* H: W bit */
 
-/* No page size encoding in the linux PTE */
+/* No page size encoding in the linaos PTE */
 #define _PAGE_PSIZE		0
 
 #define _PAGE_KERNEL_RO		0

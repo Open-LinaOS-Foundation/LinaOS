@@ -8,7 +8,7 @@
 #ifndef RPM_H
 #define RPM_H
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 /* PCI device IDs */
 #define PCI_DEVID_CN10K_RPM		0xA060

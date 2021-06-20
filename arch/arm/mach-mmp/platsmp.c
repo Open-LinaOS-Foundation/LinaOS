@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2019 Lubomir Rintel <lkundrak@v3.sk>
  */
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <asm/smp_scu.h>
 #include <asm/smp.h>
 #include "addr-map.h"

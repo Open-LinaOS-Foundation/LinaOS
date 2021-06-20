@@ -15,7 +15,7 @@ Danielsson <pvrusb2@dax.nu> whose web page can be found here:
 http://pvrusb2.dax.nu/
 
 From there Aurelien Alleaume <slts@free.fr> began an effort to
-create a video4linux compatible driver.  I began with Aurelien's
+create a video4linaos compatible driver.  I began with Aurelien's
 last known snapshot and evolved the driver to the state it is in
 here.
 
@@ -40,7 +40,7 @@ roughly:
    system.
 
 5. High level interfaces which glue the driver to various published
-   Linux APIs (V4L, sysfs, maybe DVB in the future).
+   LinaOS APIs (V4L, sysfs, maybe DVB in the future).
 
 The most important shearing layer is between the top 2 layers.  A
 lot of work went into the driver to ensure that any kind of
@@ -71,7 +71,7 @@ Source file list / functional overview
 
 (Note: The term "module" used below generally refers to loosely
 defined functional units within the pvrusb2 driver and bears no
-relation to the Linux kernel's concept of a loadable module.)
+relation to the LinaOS kernel's concept of a loadable module.)
 
 pvrusb2-audio.[ch] - This is glue logic that resides between this
     driver and the msp3400.ko I2C client driver (which is found
@@ -186,7 +186,7 @@ pvrusb2-util.h - This header defines some common macros used
     the driver, but they had to go somewhere.
 
 pvrusb2-v4l2.[ch] - This is the high level interface which ties the
-    pvrusb2 driver into video4linux.  It is through here that V4L
+    pvrusb2 driver into video4linaos.  It is through here that V4L
     applications can open and operate the driver in the usual V4L
     ways.  Note that **ALL** V4L functionality is published only
     through here and nowhere else.

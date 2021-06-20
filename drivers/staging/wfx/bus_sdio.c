@@ -5,13 +5,13 @@
  * Copyright (c) 2017-2020, Silicon Laboratories, Inc.
  * Copyright (c) 2010, ST-Ericsson
  */
-#include <linux/module.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/card.h>
-#include <linux/interrupt.h>
-#include <linux/of_irq.h>
-#include <linux/irq.h>
+#include <linaos/module.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/mmc/sdio_func.h>
+#include <linaos/mmc/card.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_irq.h>
+#include <linaos/irq.h>
 
 #include "bus.h"
 #include "wfx.h"

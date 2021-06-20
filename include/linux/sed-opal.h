@@ -10,8 +10,8 @@
 #ifndef LINUX_OPAL_H
 #define LINUX_OPAL_H
 
-#include <uapi/linux/sed-opal.h>
-#include <linux/kernel.h>
+#include <uapi/linaos/sed-opal.h>
+#include <linaos/kernel.h>
 
 struct opal_dev;
 

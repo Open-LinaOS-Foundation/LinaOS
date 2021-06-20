@@ -9,20 +9,20 @@
  * or implied.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk/davinci.h>
-#include <linux/clkdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irqchip/irq-davinci-aintc.h>
-#include <linux/platform_data/edma.h>
-#include <linux/platform_data/gpio-davinci.h>
-#include <linux/platform_data/spi-davinci.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/spi/spi.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk/davinci.h>
+#include <linaos/clkdev.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/irqchip/irq-davinci-aintc.h>
+#include <linaos/platform_data/edma.h>
+#include <linaos/platform_data/gpio-davinci.h>
+#include <linaos/platform_data/spi-davinci.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial_8250.h>
+#include <linaos/spi/spi.h>
 
 #include <asm/mach/map.h>
 

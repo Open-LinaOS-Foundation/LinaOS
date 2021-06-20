@@ -7,22 +7,22 @@
  * Author: Pradeep Goudagunta <pgoudagunta@nvidia.com>
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/pm.h>
-#include <linux/mfd/palmas.h>
-#include <linux/completion.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/machine.h>
-#include <linux/iio/driver.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/pm.h>
+#include <linaos/mfd/palmas.h>
+#include <linaos/completion.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/machine.h>
+#include <linaos/iio/driver.h>
 
 #define MOD_NAME "palmas-gpadc"
 #define PALMAS_ADC_CONVERSION_TIMEOUT	(msecs_to_jiffies(5000))

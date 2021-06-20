@@ -17,7 +17,7 @@
  * this warranty disclaimer.
  */
 
-#include <linux/suspend.h>
+#include <linaos/suspend.h>
 
 #include "main.h"
 #include "wmm.h"

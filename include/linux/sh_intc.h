@@ -2,7 +2,7 @@
 #ifndef __SH_INTC_H
 #define __SH_INTC_H
 
-#include <linux/ioport.h>
+#include <linaos/ioport.h>
 
 #ifdef CONFIG_SUPERH
 #define INTC_NR_IRQS	512

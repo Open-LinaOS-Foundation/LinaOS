@@ -20,7 +20,7 @@
  * 1. Configure your memory controller to add such delays if it can (the best)
  * 2. Implement platform-specific delay function possibly
  *    combined with configuring the memory controller; see
- *    include/linux/usb_isp1362.h for more info.
+ *    include/linaos/usb_isp1362.h for more info.
  * 3. Use ndelay (easiest, poorest).
  *
  * Use the corresponding macros USE_PLATFORM_DELAY and USE_NDELAY in the
@@ -60,26 +60,26 @@
  */
 #undef CHIP_BUFFER_TEST
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/isp1362.h>
-#include <linux/usb/hcd.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/io.h>
-#include <linux/bitmap.h>
-#include <linux/prefetch.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/usb.h>
+#include <linaos/usb/isp1362.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/io.h>
+#include <linaos/bitmap.h>
+#include <linaos/prefetch.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
 #include <asm/irq.h>
 #include <asm/byteorder.h>

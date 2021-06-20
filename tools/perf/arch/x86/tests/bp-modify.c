@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/user.h>

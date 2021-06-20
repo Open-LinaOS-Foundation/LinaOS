@@ -4,7 +4,7 @@
 #ifndef __INC_HAL8192SE_FW_IMG_H
 #define __INC_HAL8192SE_FW_IMG_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*Created on  2010/ 4/12,  5:56*/
 

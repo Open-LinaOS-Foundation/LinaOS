@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright 2019 Collabora ltd. */
 
-#include <linux/clk.h>
-#include <linux/devfreq.h>
-#include <linux/devfreq_cooling.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
+#include <linaos/clk.h>
+#include <linaos/devfreq.h>
+#include <linaos/devfreq_cooling.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_opp.h>
 
 #include "panfrost_device.h"
 #include "panfrost_devfreq.h"

@@ -6,19 +6,19 @@
  *
  * Copyright 2007 David Gibson <dwg@au1.ibm.com>, IBM Corporation.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/stddef.h>
+#include <linaos/sched.h>
+#include <linaos/signal.h>
+#include <linaos/device.h>
+#include <linaos/spinlock.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel_stat.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 #include <asm/prom.h>

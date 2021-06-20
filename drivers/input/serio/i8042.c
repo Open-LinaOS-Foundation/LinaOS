@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  i8042 keyboard and mouse controller driver for Linux
+ *  i8042 keyboard and mouse controller driver for LinaOS
  *
  *  Copyright (c) 1999-2004 Vojtech Pavlik
  */
@@ -8,20 +8,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/serio.h>
-#include <linux/err.h>
-#include <linux/rcupdate.h>
-#include <linux/platform_device.h>
-#include <linux/i8042.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/property.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/serio.h>
+#include <linaos/err.h>
+#include <linaos/rcupdate.h>
+#include <linaos/platform_device.h>
+#include <linaos/i8042.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
+#include <linaos/property.h>
 
 #include <asm/io.h>
 

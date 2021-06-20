@@ -9,7 +9,7 @@
 #ifndef __MALIDP_HW_H__
 #define __MALIDP_HW_H__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include "malidp_regs.h"
 
 struct videomode;

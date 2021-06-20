@@ -5,11 +5,11 @@
  *  Copyright (c) 2009 Jochen Friedrich <jochen@scram.de>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
 
 #include <media/dvb_frontend.h>
 

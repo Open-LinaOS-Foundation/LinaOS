@@ -34,9 +34,9 @@ enum {
  * | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - |
  *   | | [ ]                           [      thresh_cmp     ]   [  thresh_ctl   ]
  *   | |  |                                                              |
- *   | |  *- IFM (Linux)                 thresh start/stop OR FAB match -*
- *   | *- BHRB (Linux)
- *   *- EBB (Linux)
+ *   | |  *- IFM (LinaOS)                 thresh start/stop OR FAB match -*
+ *   | *- BHRB (LinaOS)
+ *   *- EBB (LinaOS)
  *
  *        28        24        20        16        12         8         4         0
  * | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - |

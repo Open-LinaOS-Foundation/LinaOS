@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/stacktrace.h>
-#include <linux/thread_info.h>
-#include <linux/ftrace.h>
-#include <linux/export.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/stacktrace.h>
+#include <linaos/thread_info.h>
+#include <linaos/ftrace.h>
+#include <linaos/export.h>
 #include <asm/ptrace.h>
 #include <asm/stacktrace.h>
 

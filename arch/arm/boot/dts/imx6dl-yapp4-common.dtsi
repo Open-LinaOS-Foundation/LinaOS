@@ -365,7 +365,7 @@
 		reg = <0x5a>;
 		vdd-supply = <&sw2_reg>;
 		autorepeat;
-		linux,keycodes = <KEY_1>, <KEY_2>, <KEY_3>, <KEY_4>, <KEY_5>,
+		linaos,keycodes = <KEY_1>, <KEY_2>, <KEY_3>, <KEY_4>, <KEY_5>,
 				<KEY_6>, <KEY_7>, <KEY_8>, <KEY_9>,
 				<KEY_BACKSPACE>, <KEY_0>, <KEY_ENTER>;
 		poll-interval = <50>;

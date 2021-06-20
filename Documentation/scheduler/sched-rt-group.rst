@@ -171,12 +171,12 @@ B and can starve B's tasks (assuming they are of lower priority) for a whole
 period.
 
 The next project will be SCHED_EDF (Earliest Deadline First scheduling) to bring
-full deadline scheduling to the linux kernel. Deadline scheduling the above
+full deadline scheduling to the linaos kernel. Deadline scheduling the above
 groups and treating end of the period as a deadline will ensure that they both
 get their allocated time.
 
 Implementing SCHED_EDF might take a while to complete. Priority Inheritance is
-the biggest challenge as the current linux PI infrastructure is geared towards
+the biggest challenge as the current linaos PI infrastructure is geared towards
 the limited static priority levels 0-99. With deadline scheduling you need to
 do deadline inheritance (since priority is inversely proportional to the
 deadline delta (deadline - now)).

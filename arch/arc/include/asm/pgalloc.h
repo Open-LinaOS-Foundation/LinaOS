@@ -29,8 +29,8 @@
 #ifndef _ASM_ARC_PGALLOC_H
 #define _ASM_ARC_PGALLOC_H
 
-#include <linux/mm.h>
-#include <linux/log2.h>
+#include <linaos/mm.h>
+#include <linaos/log2.h>
 
 static inline void
 pmd_populate_kernel(struct mm_struct *mm, pmd_t *pmd, pte_t *pte)

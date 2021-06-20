@@ -8,7 +8,7 @@
 #ifndef __LINUX_MFD_WM8400_H
 #define __LINUX_MFD_WM8400_H
 
-#include <linux/regulator/machine.h>
+#include <linaos/regulator/machine.h>
 
 #define WM8400_LDO1  0
 #define WM8400_LDO2  1

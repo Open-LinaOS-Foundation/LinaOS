@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Parallel port to Keyboard port adapter driver for Linux
+ *  Parallel port to Keyboard port adapter driver for LinaOS
  *
  *  Copyright (c) 1999-2004 Vojtech Pavlik
  */
@@ -40,11 +40,11 @@
  * with 300 mA power reqirement of a typical AT keyboard.
  */
 
-#include <linux/module.h>
-#include <linux/parport.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/serio.h>
+#include <linaos/module.h>
+#include <linaos/parport.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/serio.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Parallel port to Keyboard port adapter driver");

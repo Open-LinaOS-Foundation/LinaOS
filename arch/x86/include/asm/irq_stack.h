@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_IRQ_STACK_H
 #define _ASM_X86_IRQ_STACK_H
 
-#include <linux/ptrace.h>
+#include <linaos/ptrace.h>
 
 #include <asm/processor.h>
 

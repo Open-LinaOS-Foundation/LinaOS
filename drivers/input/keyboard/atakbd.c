@@ -13,7 +13,7 @@
  */
 
 /*
- * Atari keyboard driver for Linux/m68k
+ * Atari keyboard driver for LinaOS/m68k
  *
  * The low level init and interrupt stuff is handled in arch/mm68k/atari/atakeyb.c
  * (the keyboard ACIA also handles the mouse and joystick data, and the keyboard
@@ -24,11 +24,11 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
 
 #include <asm/atariints.h>
 #include <asm/atarihw.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/sh/kernel/signal.c
+ *  linaos/arch/sh/kernel/signal.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -9,25 +9,25 @@
  *  SuperH version:  Copyright (C) 1999, 2000  Niibe Yutaka & Kaz Kojima
  *
  */
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/tty.h>
-#include <linux/elf.h>
-#include <linux/personality.h>
-#include <linux/binfmts.h>
-#include <linux/io.h>
-#include <linux/tracehook.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/errno.h>
+#include <linaos/wait.h>
+#include <linaos/ptrace.h>
+#include <linaos/unistd.h>
+#include <linaos/stddef.h>
+#include <linaos/tty.h>
+#include <linaos/elf.h>
+#include <linaos/personality.h>
+#include <linaos/binfmts.h>
+#include <linaos/io.h>
+#include <linaos/tracehook.h>
 #include <asm/ucontext.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/syscalls.h>
 #include <asm/fpu.h>

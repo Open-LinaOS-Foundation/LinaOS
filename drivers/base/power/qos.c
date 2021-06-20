@@ -27,14 +27,14 @@
  *     allocated and free'd.
  */
 
-#include <linux/pm_qos.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/pm_runtime.h>
-#include <linux/err.h>
+#include <linaos/pm_qos.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/export.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/err.h>
 #include <trace/events/power.h>
 
 #include "power.h"

@@ -77,42 +77,42 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/dcache.h>
-#include <linux/namei.h>
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/fcntl.h>
-#include <linux/termios.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/sched/signal.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/stat.h>
+#include <linaos/dcache.h>
+#include <linaos/namei.h>
+#include <linaos/socket.h>
+#include <linaos/un.h>
+#include <linaos/fcntl.h>
+#include <linaos/termios.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/in.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/af_unix.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 #include <net/scm.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/rtnetlink.h>
-#include <linux/mount.h>
+#include <linaos/init.h>
+#include <linaos/poll.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/mount.h>
 #include <net/checksum.h>
-#include <linux/security.h>
-#include <linux/freezer.h>
-#include <linux/file.h>
+#include <linaos/security.h>
+#include <linaos/freezer.h>
+#include <linaos/file.h>
 
 #include "scm.h"
 
@@ -577,7 +577,7 @@ static void unix_release_sock(struct sock *sk, int embrion)
 
 	/*
 	 * Fixme: BSD difference: In BSD all sockets connected to us get
-	 *	  ECONNRESET and we die on the spot. In Linux we behave
+	 *	  ECONNRESET and we die on the spot. In LinaOS we behave
 	 *	  like files and pipes do and wait for the last
 	 *	  dereference.
 	 *

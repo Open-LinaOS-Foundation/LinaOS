@@ -14,7 +14,7 @@
  * 2005-Dec	Used as a template for s390 by Mike Grundy
  *		<grundym@us.ibm.com>
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm-generic/kprobes.h>
 
 #define BREAKPOINT_INSTRUCTION	0x0002
@@ -29,9 +29,9 @@ int probe_get_fixup_type(u16 *insn);
 int probe_is_insn_relative_long(u16 *insn);
 
 #ifdef CONFIG_KPROBES
-#include <linux/ptrace.h>
-#include <linux/percpu.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/ptrace.h>
+#include <linaos/percpu.h>
+#include <linaos/sched/task_stack.h>
 
 #define __ARCH_WANT_KPROBES_INSN_SLOT
 

@@ -7,15 +7,15 @@
  * Copyright 2016	Intel Deutschland GmbH
  * Copyright (C) 2018-2020 Intel Corporation
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/wireless.h>
-#include <linux/nl80211.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
-#include <linux/bitfield.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/wireless.h>
+#include <linaos/nl80211.h>
+#include <linaos/etherdevice.h>
+#include <linaos/crc32.h>
+#include <linaos/bitfield.h>
 #include <net/arp.h>
 #include <net/cfg80211.h>
 #include <net/cfg80211-wext.h>

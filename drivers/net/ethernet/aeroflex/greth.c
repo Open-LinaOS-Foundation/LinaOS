@@ -18,21 +18,21 @@
  *               Marko Isomaki
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/io.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/of_device.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/skbuff.h>
+#include <linaos/io.h>
+#include <linaos/crc32.h>
+#include <linaos/mii.h>
+#include <linaos/of_device.h>
+#include <linaos/of_net.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
 #include <asm/cacheflush.h>
 #include <asm/byteorder.h>
 

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/video/mmp/common.c
+ * linaos/drivers/video/mmp/common.c
  * This driver is a common framework for Marvell Display Controller
  *
  * Copyright (C) 2012 Marvell Technology Group Ltd.
  * Authors: Zhou Zhu <zzhu3@marvell.com>
  */
 
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
-#include <linux/module.h>
+#include <linaos/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/export.h>
+#include <linaos/module.h>
 #include <video/mmp_disp.h>
 
 static struct mmp_overlay *path_get_overlay(struct mmp_path *path,

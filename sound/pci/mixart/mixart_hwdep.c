@@ -7,13 +7,13 @@
  * Copyright (c) 2003 by Digigram <alsa@digigram.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/firmware.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
 #include <sound/core.h>
 #include "mixart.h"
 #include "mixart_mixer.h"

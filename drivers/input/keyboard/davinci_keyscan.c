@@ -8,18 +8,18 @@
  *
  * Initial Code: Sandeep Paulraj <s-paulraj@ti.com>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
 
-#include <linux/platform_data/keyscan-davinci.h>
+#include <linaos/platform_data/keyscan-davinci.h>
 
 /* Key scan registers */
 #define DAVINCI_KEYSCAN_KEYCTRL		0x0000
@@ -222,7 +222,7 @@ static int __init davinci_ks_probe(struct platform_device *pdev)
 		goto fail3;
 	}
 
-	/* Enable auto repeat feature of Linux input subsystem */
+	/* Enable auto repeat feature of LinaOS input subsystem */
 	if (pdata->rep)
 		__set_bit(EV_REP, key_dev->evbit);
 

@@ -4,9 +4,9 @@
  *    Author(s): Peter Oberparleiter <peter.oberparleiter@de.ibm.com>
  */
 
-#include <linux/vmalloc.h>
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
+#include <linaos/vmalloc.h>
+#include <linaos/bitmap.h>
+#include <linaos/bitops.h>
 #include "idset.h"
 #include "css.h"
 

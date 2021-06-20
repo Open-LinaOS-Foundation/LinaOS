@@ -5,17 +5,17 @@
  * Copyright (c) 2008 Applied Micro Circuits Corporation.
  * All rights reserved. James Hsiao <jhsiao@amcc.com>
  *
- * This file implements the Linux crypto algorithms.
+ * This file implements the LinaOS crypto algorithms.
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock_types.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
-#include <linux/hash.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock_types.h>
+#include <linaos/scatterlist.h>
+#include <linaos/crypto.h>
+#include <linaos/hash.h>
 #include <crypto/internal/hash.h>
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 #include <crypto/algapi.h>
 #include <crypto/aead.h>
 #include <crypto/aes.h>

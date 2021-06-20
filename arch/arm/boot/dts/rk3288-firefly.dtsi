@@ -20,7 +20,7 @@
 
 		button-recovery {
 			label = "Recovery";
-			linux,code = <KEY_VENDOR>;
+			linaos,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <0>;
 		};
 	};
@@ -53,7 +53,7 @@
 			wakeup-source;
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
 			label = "GPIO Power";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			pinctrl-names = "default";
 			pinctrl-0 = <&pwr_key>;
 		};
@@ -65,7 +65,7 @@
 		work_led: led-0 {
 			gpios = <&gpio8 RK_PA1 GPIO_ACTIVE_LOW>;
 			label = "firefly:blue:user";
-			linux,default-trigger = "rc-feedback";
+			linaos,default-trigger = "rc-feedback";
 			pinctrl-names = "default";
 			pinctrl-0 = <&work_led_pin>;
 		};
@@ -73,7 +73,7 @@
 		power_led: led-1 {
 			gpios = <&gpio8 RK_PA2 GPIO_ACTIVE_LOW>;
 			label = "firefly:green:power";
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 			pinctrl-names = "default";
 			pinctrl-0 = <&power_led_pin>;
 		};

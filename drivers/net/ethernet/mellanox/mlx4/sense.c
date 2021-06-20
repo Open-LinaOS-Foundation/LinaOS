@@ -31,10 +31,10 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/if_ether.h>
+#include <linaos/errno.h>
+#include <linaos/if_ether.h>
 
-#include <linux/mlx4/cmd.h>
+#include <linaos/mlx4/cmd.h>
 
 #include "mlx4.h"
 

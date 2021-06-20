@@ -9,7 +9,7 @@
 #ifndef __ASM_ARCH_DMA_H
 #define __ASM_ARCH_DMA_H __FILE__
 
-#include <linux/device.h>
+#include <linaos/device.h>
 
 /* We use `virtual` dma channels to hide the fact we have only a limited
  * number of DMA channels, and not of all of them (dependent on the device)

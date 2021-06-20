@@ -11,16 +11,16 @@
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/firmware.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
-#include <linux/async.h>
-#include <linux/acpi.h>
-#include <linux/sysfs.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/firmware.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_qos.h>
+#include <linaos/async.h>
+#include <linaos/acpi.h>
+#include <linaos/sysfs.h>
 #include <sound/core.h>
 #include <sound/soc.h>
 #include <asm/platform_sst_audio.h>

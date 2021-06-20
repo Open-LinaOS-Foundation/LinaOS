@@ -8,15 +8,15 @@
  * Based on virtio_pci_modern.c.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/vdpa.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ring.h>
-#include <linux/virtio_pci.h>
-#include <linux/virtio_pci_modern.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/vdpa.h>
+#include <linaos/virtio.h>
+#include <linaos/virtio_config.h>
+#include <linaos/virtio_ring.h>
+#include <linaos/virtio_pci.h>
+#include <linaos/virtio_pci_modern.h>
 
 #define VP_VDPA_QUEUE_MAX 256
 #define VP_VDPA_DRIVER_NAME "vp_vdpa"

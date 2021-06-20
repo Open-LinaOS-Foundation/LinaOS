@@ -6,17 +6,17 @@
  * Author: Roy Im <Roy.Im.Opensource@diasemi.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
-#include <linux/workqueue.h>
-#include <linux/uaccess.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pwm.h>
+#include <linaos/regmap.h>
+#include <linaos/workqueue.h>
+#include <linaos/uaccess.h>
 
 /* Registers */
 #define DA7280_IRQ_EVENT1			0x03

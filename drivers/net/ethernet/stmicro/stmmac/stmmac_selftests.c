@@ -6,13 +6,13 @@
  * Author: Jose Abreu <joabreu@synopsys.com>
  */
 
-#include <linux/bitrev.h>
-#include <linux/completion.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/ip.h>
-#include <linux/phy.h>
-#include <linux/udp.h>
+#include <linaos/bitrev.h>
+#include <linaos/completion.h>
+#include <linaos/crc32.h>
+#include <linaos/ethtool.h>
+#include <linaos/ip.h>
+#include <linaos/phy.h>
+#include <linaos/udp.h>
 #include <net/pkt_cls.h>
 #include <net/pkt_sched.h>
 #include <net/tcp.h>

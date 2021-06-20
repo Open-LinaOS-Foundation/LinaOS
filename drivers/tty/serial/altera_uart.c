@@ -9,20 +9,20 @@
  * (C) Copyright 2010, Tobias Klauser <tklauser@distanz.ch>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/altera_uart.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/console.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/io.h>
+#include <linaos/altera_uart.h>
 
 #define DRV_NAME "altera_uart"
 #define SERIAL_ALTERA_MAJOR 204

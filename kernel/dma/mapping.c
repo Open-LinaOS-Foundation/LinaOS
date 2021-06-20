@@ -2,17 +2,17 @@
 /*
  * arch-independent dma-mapping routines
  *
- * Copyright (c) 2006  SUSE Linux Products GmbH
+ * Copyright (c) 2006  SUSE LinaOS Products GmbH
  * Copyright (c) 2006  Tejun Heo <teheo@suse.de>
  */
-#include <linux/memblock.h> /* for max_pfn */
-#include <linux/acpi.h>
-#include <linux/dma-map-ops.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/memblock.h> /* for max_pfn */
+#include <linaos/acpi.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/export.h>
+#include <linaos/gfp.h>
+#include <linaos/of_device.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 #include "debug.h"
 #include "direct.h"
 

@@ -1,6 +1,6 @@
 /* $Id: capilli.h,v 1.1.2.2 2004/01/16 21:09:27 keil Exp $
  * 
- * Kernel CAPI 2.0 Driver Interface for Linux
+ * Kernel CAPI 2.0 Driver Interface for LinaOS
  * 
  * Copyright 1999 by Carsten Paeth <calle@calle.de>
  * 
@@ -12,10 +12,10 @@
 #ifndef __CAPILLI_H__
 #define __CAPILLI_H__
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/capi.h>
-#include <linux/kernelcapi.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/capi.h>
+#include <linaos/kernelcapi.h>
 
 typedef struct capiloaddatapart {
 	int user;		/* data in userspace ? */

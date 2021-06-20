@@ -9,8 +9,8 @@
 #ifndef _ASM_PGTABLE_64_H
 #define _ASM_PGTABLE_64_H
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
+#include <linaos/compiler.h>
+#include <linaos/linkage.h>
 
 #include <asm/addrspace.h>
 #include <asm/page.h>

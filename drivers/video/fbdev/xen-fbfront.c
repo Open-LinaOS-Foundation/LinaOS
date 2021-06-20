@@ -4,7 +4,7 @@
  * Copyright (C) 2005-2006 Anthony Liguori <aliguori@us.ibm.com>
  * Copyright (C) 2006-2008 Red Hat, Inc., Markus Armbruster <armbru@redhat.com>
  *
- *  Based on linux/drivers/video/q40fb.c
+ *  Based on linaos/drivers/video/q40fb.c
  *
  *  This file is subject to the terms and conditions of the GNU General Public
  *  License. See the file COPYING in the main directory of this archive for
@@ -20,14 +20,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/console.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
+#include <linaos/console.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/fb.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm.h>
 
 #include <asm/xen/hypervisor.h>
 

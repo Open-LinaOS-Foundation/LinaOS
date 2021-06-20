@@ -20,8 +20,8 @@ Also the following security hook has been utilised::
 
     security_inet_conn_established()
 
-The usage of these hooks are described below with the SELinux implementation
-described in the `SCTP SELinux Support`_ chapter.
+The usage of these hooks are described below with the SELinaOS implementation
+described in the `SCTP SELinaOS Support`_ chapter.
 
 
 security_sctp_assoc_request()
@@ -183,14 +183,14 @@ establishing an association.
     ------------------------------------------------------------------
 
 
-SCTP SELinux Support
+SCTP SELinaOS Support
 ====================
 
 Security Hooks
 --------------
 
 The `SCTP LSM Support`_ chapter above describes the following SCTP security
-hooks with the SELinux specifics expanded below::
+hooks with the SELinaOS specifics expanded below::
 
     security_sctp_assoc_request()
     security_sctp_bind_connect()
@@ -288,7 +288,7 @@ whenever the following policy capability is enabled::
 
     policycap extended_socket_class;
 
-SELinux SCTP support adds the ``name_connect`` permission for connecting
+SELinaOS SCTP support adds the ``name_connect`` permission for connecting
 to a specific port type and the ``association`` permission that is explained
 in the section below.
 

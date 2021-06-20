@@ -11,7 +11,7 @@ Required properties:
   array of pin numbers which is used as rows.
 - nvidia,kbc-col-pins: The KBC pins which are configured as column. This is an
   array of pin numbers which is used as column.
-- linux,keymap: The keymap for keys as described in the binding document
+- linaos,keymap: The keymap for keys as described in the binding document
   devicetree/bindings/input/matrix-keymap.txt.
 - clocks: Must contain one entry, for the module clock.
   See ../clocks/clock-bindings.txt for details.
@@ -23,7 +23,7 @@ Required properties:
 Optional properties, in addition to those specified by the shared
 matrix-keyboard bindings:
 
-- linux,fn-keymap: a second keymap, same specification as the
+- linaos,fn-keymap: a second keymap, same specification as the
   matrix-keyboard-controller spec but to be used when the KEY_FN modifier
   key is pressed.
 - nvidia,debounce-delay-ms: delay in milliseconds per row scan for debouncing
@@ -45,7 +45,7 @@ keyboard: keyboard {
 	nvidia,debounce-delay-ms = <640>;
 	nvidia,kbc-row-pins = <0 1 2>;    /* pin 0, 1, 2 as rows */
 	nvidia,kbc-col-pins = <11 12 13>; /* pin 11, 12, 13 as columns */
-	linux,keymap = <0x00000074
+	linaos,keymap = <0x00000074
 			0x00010067
 			0x00020066
 			0x01010068

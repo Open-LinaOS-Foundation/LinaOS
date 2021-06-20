@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * INET         An implementation of the TCP/IP protocol suite for the LINUX
  *              operating system.  INET is implemented using the  BSD Socket
@@ -17,8 +17,8 @@
 #ifndef _LINUX_IF_ARCNET_H
 #define _LINUX_IF_ARCNET_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <linaos/types.h>
+#include <linaos/if_ether.h>
 
 /*
  *    These are the defined ARCnet Protocol ID's.

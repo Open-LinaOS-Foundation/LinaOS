@@ -4,7 +4,7 @@
 #define __ABI_CSKY_CACHEFLUSH_H
 
 /* Keep includes the same across arches.  */
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 /*
  * The cache doesn't need to be flushed when TLB entries change when

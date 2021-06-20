@@ -2,7 +2,7 @@
 #ifndef __SND_SEQ_LOCK_H
 #define __SND_SEQ_LOCK_H
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 
 typedef atomic_t snd_use_lock_t;
 

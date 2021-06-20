@@ -14,9 +14,9 @@
  * size and improve performance, 2015.
  */
 
-#include <linux/bitops.h>
-#include <linux/bitmap.h>
-#include <linux/kernel.h>
+#include <linaos/bitops.h>
+#include <linaos/bitmap.h>
+#include <linaos/kernel.h>
 
 #if !defined(find_next_bit) || !defined(find_next_zero_bit) || \
 		!defined(find_next_and_bit)

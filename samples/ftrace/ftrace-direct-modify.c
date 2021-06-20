@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/ftrace.h>
+#include <linaos/module.h>
+#include <linaos/kthread.h>
+#include <linaos/ftrace.h>
 
 void my_direct_func1(void)
 {

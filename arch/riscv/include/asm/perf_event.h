@@ -8,9 +8,9 @@
 #ifndef _ASM_RISCV_PERF_EVENT_H
 #define _ASM_RISCV_PERF_EVENT_H
 
-#include <linux/perf_event.h>
-#include <linux/ptrace.h>
-#include <linux/interrupt.h>
+#include <linaos/perf_event.h>
+#include <linaos/ptrace.h>
+#include <linaos/interrupt.h>
 
 #ifdef CONFIG_RISCV_BASE_PMU
 #define RISCV_BASE_COUNTERS	2

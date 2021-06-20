@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR BSD-3-Clause) */
 /*
  * cec - HDMI Consumer Electronics Control message functions
  *
@@ -8,7 +8,7 @@
 #ifndef _CEC_UAPI_FUNCS_H
 #define _CEC_UAPI_FUNCS_H
 
-#include <linux/cec.h>
+#include <linaos/cec.h>
 
 /* One Touch Play Feature */
 static inline void cec_msg_active_source(struct cec_msg *msg, __u16 phys_addr)

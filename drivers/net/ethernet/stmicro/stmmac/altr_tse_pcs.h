@@ -7,8 +7,8 @@
 #ifndef __TSE_PCS_H__
 #define __TSE_PCS_H__
 
-#include <linux/phy.h>
-#include <linux/timer.h>
+#include <linaos/phy.h>
+#include <linaos/timer.h>
 
 struct tse_pcs {
 	struct device *dev;

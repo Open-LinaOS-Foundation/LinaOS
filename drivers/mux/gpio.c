@@ -7,14 +7,14 @@
  * Author: Peter Rosin <peda@axentia.se>
  */
 
-#include <linux/bitmap.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mux/driver.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linaos/bitmap.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/mux/driver.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
 
 struct mux_gpio {
 	struct gpio_descs *gpios;

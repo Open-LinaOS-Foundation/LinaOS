@@ -5,13 +5,13 @@
  * Copyright (c) 2019 Mellanox Technologies.
  */
 
-#include <linux/acpi.h>
-#include <linux/arm-smccc.h>
-#include <linux/bitfield.h>
-#include <linux/edac.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/bitfield.h>
+#include <linaos/edac.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include "edac_module.h"
 

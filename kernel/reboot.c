@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/reboot.c
+ *  linaos/kernel/reboot.c
  *
  *  Copyright (C) 2013  Linus Torvalds
  */
 
 #define pr_fmt(fmt)	"reboot: " fmt
 
-#include <linux/ctype.h>
-#include <linux/export.h>
-#include <linux/kexec.h>
-#include <linux/kmod.h>
-#include <linux/kmsg_dump.h>
-#include <linux/reboot.h>
-#include <linux/suspend.h>
-#include <linux/syscalls.h>
-#include <linux/syscore_ops.h>
-#include <linux/uaccess.h>
+#include <linaos/ctype.h>
+#include <linaos/export.h>
+#include <linaos/kexec.h>
+#include <linaos/kmod.h>
+#include <linaos/kmsg_dump.h>
+#include <linaos/reboot.h>
+#include <linaos/suspend.h>
+#include <linaos/syscalls.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/uaccess.h>
 
 /*
  * this indicates whether you can reboot with ctrl-alt-del: the default is yes

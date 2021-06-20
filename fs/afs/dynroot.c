@@ -5,9 +5,9 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/dns_resolver.h>
+#include <linaos/fs.h>
+#include <linaos/namei.h>
+#include <linaos/dns_resolver.h>
 #include "internal.h"
 
 static atomic_t afs_autocell_ino;

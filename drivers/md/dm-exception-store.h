@@ -10,9 +10,9 @@
 #ifndef _LINUX_DM_EXCEPTION_STORE
 #define _LINUX_DM_EXCEPTION_STORE
 
-#include <linux/blkdev.h>
-#include <linux/list_bl.h>
-#include <linux/device-mapper.h>
+#include <linaos/blkdev.h>
+#include <linaos/list_bl.h>
+#include <linaos/device-mapper.h>
 
 /*
  * The snapshot code deals with largish chunks of the disk at a

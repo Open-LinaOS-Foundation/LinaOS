@@ -10,8 +10,8 @@
 #ifndef TDA10048_H
 #define TDA10048_H
 
-#include <linux/dvb/frontend.h>
-#include <linux/firmware.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/firmware.h>
 
 struct tda10048_config {
 

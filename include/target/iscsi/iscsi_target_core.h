@@ -2,11 +2,11 @@
 #ifndef ISCSI_TARGET_CORE_H
 #define ISCSI_TARGET_CORE_H
 
-#include <linux/dma-direction.h>     /* enum dma_data_direction */
-#include <linux/list.h>              /* struct list_head */
-#include <linux/sched.h>
-#include <linux/socket.h>            /* struct sockaddr_storage */
-#include <linux/types.h>             /* u8 */
+#include <linaos/dma-direction.h>     /* enum dma_data_direction */
+#include <linaos/list.h>              /* struct list_head */
+#include <linaos/sched.h>
+#include <linaos/socket.h>            /* struct sockaddr_storage */
+#include <linaos/types.h>             /* u8 */
 #include <scsi/iscsi_proto.h>        /* itt_t */
 #include <target/target_core_base.h> /* struct se_cmd */
 
@@ -440,7 +440,7 @@ struct iscsi_cmd {
 	void			*buf_ptr;
 	/* Used by SendTargets=[iqn.,eui.] discovery */
 	void			*text_in_ptr;
-	/* See include/linux/dma-mapping.h */
+	/* See include/linaos/dma-mapping.h */
 	enum dma_data_direction	data_direction;
 	/* iSCSI PDU Header + CRC */
 	unsigned char		pdu[ISCSI_HDR_LEN + ISCSI_CRC_LEN];

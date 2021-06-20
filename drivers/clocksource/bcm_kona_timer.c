@@ -11,19 +11,19 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/clockchips.h>
-#include <linux/types.h>
-#include <linux/clk.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
+#include <linaos/clockchips.h>
+#include <linaos/types.h>
+#include <linaos/clk.h>
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
 
 #define KONA_GPTIMER_STCS_OFFSET			0x00000000

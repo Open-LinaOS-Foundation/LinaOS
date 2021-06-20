@@ -5,9 +5,9 @@
  * Copyright (C) 2018 Christoph Hellwig
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqchip.h>
-#include <linux/seq_file.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqchip.h>
+#include <linaos/seq_file.h>
 #include <asm/smp.h>
 
 int arch_show_interrupts(struct seq_file *p, int prec)

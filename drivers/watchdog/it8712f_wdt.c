@@ -18,18 +18,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/fs.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/fs.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
 
 #define NAME "it8712f_wdt"
 

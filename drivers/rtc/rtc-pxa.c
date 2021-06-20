@@ -5,16 +5,16 @@
  * Copyright (C) 2008 Robert Jarzmik
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/rtc.h>
+#include <linaos/seq_file.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 #include <mach/hardware.h>
 

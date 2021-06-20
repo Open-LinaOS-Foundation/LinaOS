@@ -24,8 +24,8 @@
 #ifndef __LINUX_HDMI_H_
 #define __LINUX_HDMI_H_
 
-#include <linux/types.h>
-#include <linux/device.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
 
 enum hdmi_packet_type {
 	HDMI_PACKET_TYPE_NULL = 0x00,

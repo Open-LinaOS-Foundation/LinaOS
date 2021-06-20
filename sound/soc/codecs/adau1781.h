@@ -9,7 +9,7 @@
 #ifndef __SOUND_SOC_CODECS_ADAU1781_H__
 #define __SOUND_SOC_CODECS_ADAU1781_H__
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 #include "adau17x1.h"
 
 struct device;

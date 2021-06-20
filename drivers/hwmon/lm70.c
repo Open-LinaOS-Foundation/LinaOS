@@ -13,19 +13,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/mutex.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/sysfs.h>
+#include <linaos/hwmon.h>
+#include <linaos/mutex.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/property.h>
+#include <linaos/spi/spi.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
 
 #define DRVNAME		"lm70"
 
@@ -226,5 +226,5 @@ static struct spi_driver lm70_driver = {
 module_spi_driver(lm70_driver);
 
 MODULE_AUTHOR("Kaiwan N Billimoria");
-MODULE_DESCRIPTION("NS LM70 and compatibles Linux driver");
+MODULE_DESCRIPTION("NS LM70 and compatibles LinaOS driver");
 MODULE_LICENSE("GPL");

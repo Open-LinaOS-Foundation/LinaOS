@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/zylonite_pxa320.c
+ * linaos/arch/arm/mach-pxa/zylonite_pxa320.c
  *
  * PXA320 specific support code for the
  * PXA3xx Development Platform (aka Zylonite)
@@ -10,10 +10,10 @@
  *             initial version
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/gpio.h>
 
 #include "pxa320.h"
 #include "zylonite.h"

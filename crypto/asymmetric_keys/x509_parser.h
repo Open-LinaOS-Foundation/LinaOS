@@ -5,7 +5,7 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/time.h>
+#include <linaos/time.h>
 #include <crypto/public_key.h>
 #include <keys/asymmetric-type.h>
 

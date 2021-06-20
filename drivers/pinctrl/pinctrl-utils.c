@@ -19,12 +19,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
  * 02111-1307, USA
  */
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 #include "core.h"
 #include "pinctrl-utils.h"
 

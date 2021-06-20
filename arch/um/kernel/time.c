@@ -3,24 +3,24 @@
  * Copyright (C) 2015 Anton Ivanov (aivanov@{brocade.com,kot-begemot.co.uk})
  * Copyright (C) 2015 Thomas Meyer (thomas@m3y3r.de)
  * Copyright (C) 2012-2014 Cisco Systems
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  * Copyright (C) 2019 Intel Corporation
  */
 
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/threads.h>
+#include <linaos/clockchips.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/threads.h>
 #include <asm/irq.h>
 #include <asm/param.h>
 #include <kern_util.h>
 #include <os.h>
-#include <linux/time-internal.h>
-#include <linux/um_timetravel.h>
+#include <linaos/time-internal.h>
+#include <linaos/um_timetravel.h>
 #include <shared/init.h>
 
 #ifdef CONFIG_UML_TIME_TRAVEL_SUPPORT

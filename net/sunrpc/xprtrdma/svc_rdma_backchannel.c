@@ -5,7 +5,7 @@
  * Support for reverse-direction RPCs on RPC/RDMA (server-side).
  */
 
-#include <linux/sunrpc/svc_rdma.h>
+#include <linaos/sunrpc/svc_rdma.h>
 
 #include "xprt_rdma.h"
 #include <trace/events/rpcrdma.h>

@@ -5,9 +5,9 @@
 #ifndef _INPUT_H
 #define _INPUT_H
 
-#include <linux/time.h>
-#include <linux/list.h>
-#include <uapi/linux/input.h>
+#include <linaos/time.h>
+#include <linaos/list.h>
+#include <uapi/linaos/input.h>
 /* Implementation details, userspace should not care about these */
 #define ABS_MT_FIRST		ABS_MT_TOUCH_MAJOR
 #define ABS_MT_LAST		ABS_MT_TOOL_Y
@@ -16,10 +16,10 @@
  * In-kernel definitions.
  */
 
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/timer.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/timer.h>
+#include <linaos/mod_devicetable.h>
 
 struct input_dev_poller;
 

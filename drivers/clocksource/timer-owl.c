@@ -5,19 +5,19 @@
  * Copyright 2012 Actions Semi Inc.
  * Author: Actions Semi, Inc.
  *
- * Copyright (c) 2017 SUSE Linux GmbH
+ * Copyright (c) 2017 SUSE LinaOS GmbH
  * Author: Andreas Färber
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqreturn.h>
-#include <linux/sched_clock.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/clk.h>
+#include <linaos/clockchips.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqreturn.h>
+#include <linaos/sched_clock.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
 #define OWL_Tx_CTL		0x0
 #define OWL_Tx_CMP		0x4

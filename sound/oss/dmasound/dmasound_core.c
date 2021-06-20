@@ -1,10 +1,10 @@
 /*
- *  linux/sound/oss/dmasound/dmasound_core.c
+ *  linaos/sound/oss/dmasound/dmasound_core.c
  *
  *
  *  OSS/Free compatible Atari TT/Falcon and Amiga DMA sound driver for
- *  Linux/m68k
- *  Extended to support Power Macintosh for Linux/ppc by Paul Mackerras
+ *  LinaOS/m68k
+ *  Extended to support Power Macintosh for LinaOS/ppc by Paul Mackerras
  *
  *  (c) 1995 by Michael Schlueter & Michael Marte
  *
@@ -175,16 +175,16 @@
  * see the fault until after the damage is done.
 */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sound.h>
-#include <linux/init.h>
-#include <linux/soundcard.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/sched/signal.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/sound.h>
+#include <linaos/init.h>
+#include <linaos/soundcard.h>
+#include <linaos/poll.h>
+#include <linaos/mutex.h>
+#include <linaos/sched/signal.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "dmasound.h"
 

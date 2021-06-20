@@ -5,11 +5,11 @@
  * just do it by hand with the magic northbridge registers.
  */
 
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/security.h>
+#include <linaos/syscalls.h>
+#include <linaos/uaccess.h>
 #include "pci.h"
 
 SYSCALL_DEFINE5(pciconfig_read, unsigned long, bus, unsigned long, dfn,

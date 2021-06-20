@@ -7,7 +7,7 @@
 #ifndef _ASM_RISCV_PGALLOC_H
 #define _ASM_RISCV_PGALLOC_H
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <asm/tlb.h>
 
 #ifdef CONFIG_MMU

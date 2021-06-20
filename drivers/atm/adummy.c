@@ -3,25 +3,25 @@
  * adummy.c: a dummy ATM driver
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/atmdev.h>
-#include <linux/atm.h>
-#include <linux/sonet.h>
+#include <linaos/atmdev.h>
+#include <linaos/atm.h>
+#include <linaos/sonet.h>
 
 /* version definition */
 

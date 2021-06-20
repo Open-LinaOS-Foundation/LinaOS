@@ -16,7 +16,7 @@ a great deal of thanks for this wonderful piece of code!
 Needed tools
 ============
 
-Support for this device is now a part of the standard Linux kernel.  The
+Support for this device is now a part of the standard LinaOS kernel.  The
 driver source code file is drivers/net/sb1000.c.  In addition to this
 you will need:
 
@@ -34,19 +34,19 @@ you will need:
    the sb1000 driver can be found at:
 
       - http://web.archive.org/web/%2E/http://home.adelphia.net/~siglercm/sb1000.html
-      - http://web.archive.org/web/%2E/http://linuxpower.cx/~cable/
+      - http://web.archive.org/web/%2E/http://linaospower.cx/~cable/
 
    along with these utilities.
 
 3. The standard isapnp tools.  These are necessary to configure your SB1000
    card at boot time (or afterwards by hand) since it's a PnP card.
 
-   If you don't have these installed as a standard part of your Linux
+   If you don't have these installed as a standard part of your LinaOS
    distribution, you can find them at:
 
       http://www.roestock.demon.co.uk/isapnptools/
 
-   or check your Linux distribution binary CD or their web site.  For help with
+   or check your LinaOS distribution binary CD or their web site.  For help with
    isapnp, pnpdump, or /etc/isapnp.conf, go to:
 
       http://www.roestock.demon.co.uk/isapnptools/isapnpfaq.html
@@ -152,7 +152,7 @@ Solution
 
 Solution
    You probably have a non-matching kernel source tree and
-   /usr/include/linux and /usr/include/asm header files.  Make sure you
+   /usr/include/linaos and /usr/include/asm header files.  Make sure you
    install the correct versions of the header files in these two directories.
    Then rebuild and reinstall the kernel.
 
@@ -213,7 +213,7 @@ Credits
 This README came from Franco Venturi's original README file which is
 still supplied with his driver .tar.gz archive.  I and all other sb1000 users
 owe Franco a tremendous "Thank you!"  Additional thanks goes to Carl Patten
-and Ralph Bonnell who are now managing the Linux SB1000 web site, and to
+and Ralph Bonnell who are now managing the LinaOS SB1000 web site, and to
 the SB1000 users who reported and helped debug the common problems listed
 above.
 

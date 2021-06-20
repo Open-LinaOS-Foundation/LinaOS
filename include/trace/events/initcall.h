@@ -5,7 +5,7 @@
 #if !defined(_TRACE_INITCALL_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_INITCALL_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(initcall_level,
 

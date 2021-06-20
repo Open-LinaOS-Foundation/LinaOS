@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/smp_tlb.c
+ *  linaos/arch/arm/kernel/smp_tlb.c
  *
  *  Copyright (C) 2002 ARM Limited, All Rights Reserved.
  */
-#include <linux/preempt.h>
-#include <linux/smp.h>
-#include <linux/uaccess.h>
+#include <linaos/preempt.h>
+#include <linaos/smp.h>
+#include <linaos/uaccess.h>
 
 #include <asm/smp_plat.h>
 #include <asm/tlbflush.h>

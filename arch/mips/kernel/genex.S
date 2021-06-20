@@ -8,7 +8,7 @@
  * Copyright (C) 2002, 2007  Maciej W. Rozycki
  * Copyright (C) 2001, 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
+#include <linaos/init.h>
 
 #include <asm/asm.h>
 #include <asm/asmmacro.h>

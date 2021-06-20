@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright 1996, 1997, 1998 Hans Reiser, see reiserfs/README for licensing and copyright details
  */
 #ifndef _LINUX_REISER_FS_H
 #define _LINUX_REISER_FS_H
 
-#include <linux/types.h>
-#include <linux/magic.h>
+#include <linaos/types.h>
+#include <linaos/magic.h>
 
 /*
- *  include/linux/reiser_fs.h
+ *  include/linaos/reiser_fs.h
  *
  *  Reiser File System constants and structures
  *

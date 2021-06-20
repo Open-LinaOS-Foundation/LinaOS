@@ -39,11 +39,11 @@ Description
 For driver debugging purposes this ioctl allows test applications to
 query the driver about the chips present on the TV card. Regular
 applications must not use it. When you found a chip specific bug, please
-contact the linux-media mailing list
-(`https://linuxtv.org/lists.php <https://linuxtv.org/lists.php>`__)
+contact the linaos-media mailing list
+(`https://linaostv.org/lists.php <https://linaostv.org/lists.php>`__)
 so it can be fixed.
 
-Additionally the Linux kernel must be compiled with the
+Additionally the LinaOS kernel must be compiled with the
 ``CONFIG_VIDEO_ADV_DEBUG`` option to enable this ioctl.
 
 To query the driver applications must initialize the ``match.type`` and
@@ -71,8 +71,8 @@ supports reading registers from the device or ``V4L2_CHIP_FL_WRITABLE``
 if the driver supports writing registers to the device.
 
 We recommended the v4l2-dbg utility over calling this ioctl directly. It
-is available from the LinuxTV v4l-dvb repository; see
-`https://linuxtv.org/repo/ <https://linuxtv.org/repo/>`__ for access
+is available from the LinaOSTV v4l-dvb repository; see
+`https://linaostv.org/repo/ <https://linaostv.org/repo/>`__ for access
 instructions.
 
 .. tabularcolumns:: |p{3.5cm}|p{3.5cm}|p{3.5cm}|p{6.6cm}|

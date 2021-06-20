@@ -15,25 +15,25 @@
  *	"BCM1250/BCM1125/BCM1125H User Manual", Broadcom Corporation
  */
 
-#include <linux/compiler.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/major.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/spinlock.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/major.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/spinlock.h>
+#include <linaos/sysrq.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/types.h>
 
-#include <linux/refcount.h>
+#include <linaos/refcount.h>
 #include <asm/io.h>
 
 #include <asm/sibyte/sb1250.h>
@@ -69,7 +69,7 @@
 #endif
 
 
-MODULE_AUTHOR("Maciej W. Rozycki <macro@linux-mips.org>");
+MODULE_AUTHOR("Maciej W. Rozycki <macro@linaos-mips.org>");
 MODULE_DESCRIPTION("BCM1xxx on-chip DUART serial driver");
 MODULE_LICENSE("GPL");
 

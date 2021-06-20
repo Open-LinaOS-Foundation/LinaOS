@@ -12,7 +12,7 @@ Introduction
 ------------
 
 
-This brings support under Linux for the Aiptek PocketDV 3300 and similar
+This brings support under LinaOS for the Aiptek PocketDV 3300 and similar
 devices in webcam mode. If you just want to get on your PC the pictures
 and movies on the camera, you should use the usb-storage module instead.
 

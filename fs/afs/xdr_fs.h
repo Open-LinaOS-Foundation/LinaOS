@@ -96,7 +96,7 @@ union afs_xdr_dir_block {
 } __packed;
 
 /*
- * Directory layout on a linux VM page.
+ * Directory layout on a linaos VM page.
  */
 struct afs_xdr_dir_page {
 	union afs_xdr_dir_block	blocks[AFS_DIR_BLOCKS_PER_PAGE];

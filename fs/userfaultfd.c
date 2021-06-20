@@ -10,24 +10,24 @@
  *  mm/ksm.c (mm hashing).
  */
 
-#include <linux/list.h>
-#include <linux/hashtable.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/mm.h>
-#include <linux/mmu_notifier.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/file.h>
-#include <linux/bug.h>
-#include <linux/anon_inodes.h>
-#include <linux/syscalls.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/mempolicy.h>
-#include <linux/ioctl.h>
-#include <linux/security.h>
-#include <linux/hugetlb.h>
+#include <linaos/list.h>
+#include <linaos/hashtable.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
+#include <linaos/mm.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/poll.h>
+#include <linaos/slab.h>
+#include <linaos/seq_file.h>
+#include <linaos/file.h>
+#include <linaos/bug.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/syscalls.h>
+#include <linaos/userfaultfd_k.h>
+#include <linaos/mempolicy.h>
+#include <linaos/ioctl.h>
+#include <linaos/security.h>
+#include <linaos/hugetlb.h>
 
 int sysctl_unprivileged_userfaultfd __read_mostly;
 

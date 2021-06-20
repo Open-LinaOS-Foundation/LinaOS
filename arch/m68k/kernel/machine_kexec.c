@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * machine_kexec.c - handle transition of Linux booting another kernel
+ * machine_kexec.c - handle transition of LinaOS booting another kernel
  */
-#include <linux/compiler.h>
-#include <linux/kexec.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
+#include <linaos/compiler.h>
+#include <linaos/kexec.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
 
 #include <asm/cacheflush.h>
 #include <asm/page.h>

@@ -6,15 +6,15 @@
  *		Jorge Ramirez-Ortiz	<jorge.ramirez-ortiz@linaro.org>
  */
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/iopoll.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/iopoll.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/mutex.h>
 
 #include "mtk_ecc.h"
 

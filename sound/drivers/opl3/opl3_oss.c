@@ -5,7 +5,7 @@
  *  Copyright (C) 2000 Uros Bizjak <uros@kss-loka.si>
  */
 
-#include <linux/export.h>
+#include <linaos/export.h>
 #include "opl3_voice.h"
 
 static int snd_opl3_open_seq_oss(struct snd_seq_oss_arg *arg, void *closure);

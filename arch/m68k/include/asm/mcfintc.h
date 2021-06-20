@@ -5,7 +5,7 @@
  *	mcfintc.h -- support definitions for the simple ColdFire
  *		     Interrupt Controller
  *
- * 	(C) Copyright 2009,  Greg Ungerer <gerg@uclinux.org>
+ * 	(C) Copyright 2009,  Greg Ungerer <gerg@uclinaos.org>
  */
 
 /****************************************************************************/

@@ -4,18 +4,18 @@
  *
  * Copyright (c) 2009 Aava Mobile
  *
- * Some cleanups by Alan Cox <alan@linux.intel.com>
+ * Some cleanups by Alan Cox <alan@linaos.intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/input/cy8ctmg110_pdata.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/i2c.h>
+#include <linaos/gpio.h>
+#include <linaos/input/cy8ctmg110_pdata.h>
 
 #define CY8CTMG110_DRIVER_NAME      "cy8ctmg110"
 

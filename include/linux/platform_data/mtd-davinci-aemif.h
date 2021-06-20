@@ -10,7 +10,7 @@
 #ifndef _MACH_DAVINCI_AEMIF_H
 #define _MACH_DAVINCI_AEMIF_H
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #define NRCSR_OFFSET		0x00
 #define AWCCR_OFFSET		0x04

@@ -52,8 +52,8 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include <linux/circ_buf.h>
-#include <linux/device.h>
+#include <linaos/circ_buf.h>
+#include <linaos/device.h>
 #include <scsi/sas.h>
 #include "host.h"
 #include "isci.h"

@@ -11,14 +11,14 @@
  *
  *    Initial PA-RISC Version: 04-23-1999 by Helge Deller
  */
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
+#include <linaos/cpu.h>
 #include <asm/param.h>
 #include <asm/cache.h>
 #include <asm/hardware.h>	/* for register_parisc_driver() stuff */

@@ -33,10 +33,10 @@
 #ifndef MLX4_CMD_H
 #define MLX4_CMD_H
 
-#include <linux/dma-mapping.h>
-#include <linux/if_link.h>
-#include <linux/mlx4/device.h>
-#include <linux/netdevice.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/if_link.h>
+#include <linaos/mlx4/device.h>
+#include <linaos/netdevice.h>
 
 enum {
 	/* initialization and general commands */

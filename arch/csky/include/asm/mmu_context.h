@@ -9,8 +9,8 @@
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
 
-#include <linux/errno.h>
-#include <linux/sched.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
 #include <abi/ckmmu.h>
 
 #define ASID_MASK		((1 << CONFIG_CPU_ASID_BITS) - 1)

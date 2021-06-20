@@ -16,7 +16,7 @@
 #ifndef _DVB_USB_CINERGYT2_H_
 #define _DVB_USB_CINERGYT2_H_
 
-#include <linux/usb/input.h>
+#include <linaos/usb/input.h>
 
 #define DVB_USB_LOG_PREFIX "cinergyT2"
 #include "dvb-usb.h"

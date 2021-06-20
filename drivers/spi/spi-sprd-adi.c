@@ -4,18 +4,18 @@
  * SPDX-License-Identifier: GPL-2.0
  */
 
-#include <linux/delay.h>
-#include <linux/hwspinlock.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/spi/spi.h>
-#include <linux/sizes.h>
+#include <linaos/delay.h>
+#include <linaos/hwspinlock.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/reboot.h>
+#include <linaos/spi/spi.h>
+#include <linaos/sizes.h>
 
 /* Registers definitions for ADI controller */
 #define REG_ADI_CTRL0			0x4

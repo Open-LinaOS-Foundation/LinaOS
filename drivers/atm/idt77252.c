@@ -26,27 +26,27 @@
  *
  *******************************************************************/
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/poison.h>
-#include <linux/skbuff.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
-#include <linux/netdevice.h>
-#include <linux/atmdev.h>
-#include <linux/atm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/wait.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/poison.h>
+#include <linaos/skbuff.h>
+#include <linaos/kernel.h>
+#include <linaos/vmalloc.h>
+#include <linaos/netdevice.h>
+#include <linaos/atmdev.h>
+#include <linaos/atm.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/bitops.h>
+#include <linaos/wait.h>
+#include <linaos/jiffies.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <linaos/uaccess.h>
+#include <linaos/atomic.h>
 #include <asm/byteorder.h>
 
 #ifdef CONFIG_ATM_IDT77252_USE_SUNI
@@ -3445,7 +3445,7 @@ static int init_card(struct atm_dev *dev)
 	/*
 	 * this is a jhs hack to get around special functionality in the
 	 * phy driver for the atecom hardware; the functionality doesn't
-	 * exist in the linux atm suni driver
+	 * exist in the linaos atm suni driver
 	 *
 	 * it isn't the right way to do things, but as the guy from NIST
 	 * said, talking about their measurement of the fine structure

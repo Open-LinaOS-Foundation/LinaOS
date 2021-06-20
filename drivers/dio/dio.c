@@ -25,14 +25,14 @@
  * This file is based on the way the Amiga port handles Zorro II cards, 
  * although we aren't so complicated...
  */
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dio.h>
-#include <linux/slab.h>                         /* kmalloc() */
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/dio.h>
+#include <linaos/slab.h>                         /* kmalloc() */
+#include <linaos/uaccess.h>
 #include <asm/io.h>                             /* readb() */
 
 struct dio_bus dio_bus = {
@@ -90,7 +90,7 @@ static struct dioname names[] =
 #undef DIOFBNAME
 
 static const char unknowndioname[]
-	= "unknown DIO board, please email linux-m68k@lists.linux-m68k.org";
+	= "unknown DIO board, please email linaos-m68k@lists.linaos-m68k.org";
 
 static const char *dio_getname(int id)
 {

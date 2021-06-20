@@ -12,11 +12,11 @@
  * Joe Taylor	<joe@tensilica.com, joetylr@yahoo.com>
  */
 
-#include <linux/mm.h>
-#include <linux/extable.h>
-#include <linux/hardirq.h>
-#include <linux/perf_event.h>
-#include <linux/uaccess.h>
+#include <linaos/mm.h>
+#include <linaos/extable.h>
+#include <linaos/hardirq.h>
+#include <linaos/perf_event.h>
+#include <linaos/uaccess.h>
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
 #include <asm/hardirq.h>

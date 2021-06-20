@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _LINUX_LOCAL_LOCK_H
-# error "Do not include directly, include linux/local_lock.h"
+# error "Do not include directly, include linaos/local_lock.h"
 #endif
 
-#include <linux/percpu-defs.h>
-#include <linux/lockdep.h>
+#include <linaos/percpu-defs.h>
+#include <linaos/lockdep.h>
 
 typedef struct {
 #ifdef CONFIG_DEBUG_LOCK_ALLOC

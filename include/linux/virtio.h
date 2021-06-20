@@ -3,12 +3,12 @@
 #define _LINUX_VIRTIO_H
 /* Everything a virtio driver needs to work with any particular virtio
  * implementation. */
-#include <linux/types.h>
-#include <linux/scatterlist.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/gfp.h>
+#include <linaos/types.h>
+#include <linaos/scatterlist.h>
+#include <linaos/spinlock.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/gfp.h>
 
 /**
  * virtqueue - a queue to register buffers for sending or receiving.

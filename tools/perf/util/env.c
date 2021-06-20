@@ -3,8 +3,8 @@
 #include "debug.h"
 #include "env.h"
 #include "util/header.h"
-#include <linux/ctype.h>
-#include <linux/zalloc.h>
+#include <linaos/ctype.h>
+#include <linaos/zalloc.h>
 #include "cgroup.h"
 #include <errno.h>
 #include <sys/utsname.h>

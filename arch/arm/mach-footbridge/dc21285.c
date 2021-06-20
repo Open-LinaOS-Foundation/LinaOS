@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/dec21285.c: PCI functions for DC21285
+ *  linaos/arch/arm/kernel/dec21285.c: PCI functions for DC21285
  *
  *  Copyright (C) 1998-2001 Russell King
  *  Copyright (C) 1998-2000 Phil Blundell
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
 
 #include <asm/irq.h>
 #include <asm/mach/pci.h>

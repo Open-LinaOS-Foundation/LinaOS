@@ -1,7 +1,7 @@
 What:		/sys/class/infiniband_srp/srp-<hca>-<port_number>/add_target
 Date:		January 2, 2006
 KernelVersion:	2.6.15
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	Interface for making ib_srp connect to a new target.
 		One can request ib_srp to connect to a new target by writing
 		a comma-separated list of login parameters to this sysfs
@@ -74,19 +74,19 @@ Description:	Interface for making ib_srp connect to a new target.
 What:		/sys/class/infiniband_srp/srp-<hca>-<port_number>/ibdev
 Date:		January 2, 2006
 KernelVersion:	2.6.15
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	HCA name (<hca>).
 
 What:		/sys/class/infiniband_srp/srp-<hca>-<port_number>/port
 Date:		January 2, 2006
 KernelVersion:	2.6.15
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	HCA port number (<port_number>).
 
 What:		/sys/class/scsi_host/host<n>/allow_ext_sg
 Date:		May 19, 2011
 KernelVersion:	2.6.39
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	Whether ib_srp is allowed to include a partial memory
 		descriptor list in an SRP_CMD when communicating with an SRP
 		target.
@@ -94,76 +94,76 @@ Description:	Whether ib_srp is allowed to include a partial memory
 What:		/sys/class/scsi_host/host<n>/ch_count
 Date:		April 1, 2015
 KernelVersion:	3.19
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	Number of RDMA channels used for communication with the SRP
 		target.
 
 What:		/sys/class/scsi_host/host<n>/cmd_sg_entries
 Date:		May 19, 2011
 KernelVersion:	2.6.39
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	Maximum number of data buffer descriptors that may be sent to
 		the target in a single SRP_CMD request.
 
 What:		/sys/class/scsi_host/host<n>/comp_vector
 Date:		September 2, 2013
 KernelVersion:	3.11
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	Completion vector used for the first RDMA channel.
 
 What:		/sys/class/scsi_host/host<n>/dgid
 Date:		June 17, 2006
 KernelVersion:	2.6.17
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	InfiniBand destination GID used for communication with the SRP
 		target. Differs from orig_dgid if port redirection has happened.
 
 What:		/sys/class/scsi_host/host<n>/id_ext
 Date:		June 17, 2006
 KernelVersion:	2.6.17
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	Eight-byte identifier extension portion of the 16-byte target
 		port identifier.
 
 What:		/sys/class/scsi_host/host<n>/ioc_guid
 Date:		June 17, 2006
 KernelVersion:	2.6.17
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	Eight-byte I/O controller GUID portion of the 16-byte target
 		port identifier.
 
 What:		/sys/class/scsi_host/host<n>/local_ib_device
 Date:		November 29, 2006
 KernelVersion:	2.6.19
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	Name of the InfiniBand HCA used for communicating with the
 		SRP target.
 
 What:		/sys/class/scsi_host/host<n>/local_ib_port
 Date:		November 29, 2006
 KernelVersion:	2.6.19
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	Number of the HCA port used for communicating with the
 		SRP target.
 
 What:		/sys/class/scsi_host/host<n>/orig_dgid
 Date:		June 17, 2006
 KernelVersion:	2.6.17
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	InfiniBand destination GID specified in the parameters
 		written to the add_target sysfs attribute.
 
 What:		/sys/class/scsi_host/host<n>/pkey
 Date:		June 17, 2006
 KernelVersion:	2.6.17
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	A 16-bit number representing the InfiniBand partition key used
 		for communication with the SRP target.
 
 What:		/sys/class/scsi_host/host<n>/req_lim
 Date:		October 20, 2010
 KernelVersion:	2.6.36
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	Number of requests ib_srp can send to the target before it has
 		to wait for more credits. For more information see also the
 		SRP credit algorithm in the SRP specification.
@@ -171,21 +171,21 @@ Description:	Number of requests ib_srp can send to the target before it has
 What:		/sys/class/scsi_host/host<n>/service_id
 Date:		June 17, 2006
 KernelVersion:	2.6.17
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	InfiniBand service ID used for establishing communication with
 		the SRP	target.
 
 What:		/sys/class/scsi_host/host<n>/sgid
 Date:		February 1, 2014
 KernelVersion:	3.13
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	InfiniBand GID of the source port used for communication with
 		the SRP target.
 
 What:		/sys/class/scsi_host/host<n>/zero_req_lim
 Date:		September 20, 2006
 KernelVersion:	2.6.18
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:	Number of times the initiator had to wait before sending a
 		request to the target because it ran out of credits. For more
 		information see also the SRP credit algorithm in the SRP

@@ -16,7 +16,7 @@ root complex is connected to emulated endpoint devices internal to the ASIC
 - #interrupt-cells: set to <1>
 - interrupt-map-mask and interrupt-map, standard PCI properties to define the
   mapping of the PCIe interface to interrupt numbers
-- linux,pci-domain: PCI domain ID. Should be unique for each host controller
+- linaos,pci-domain: PCI domain ID. Should be unique for each host controller
 - bus-range: PCI bus numbers covered
 - #address-cells: set to <3>
 - #size-cells: set to <2>
@@ -80,7 +80,7 @@ Example:
 		interrupt-map-mask = <0 0 0 0>;
 		interrupt-map = <0 0 0 0 &gic GIC_SPI 100 IRQ_TYPE_NONE>;
 
-		linux,pci-domain = <0>;
+		linaos,pci-domain = <0>;
 
 		bus-range = <0x00 0xff>;
 
@@ -118,7 +118,7 @@ Example:
 		interrupt-map-mask = <0 0 0 0>;
 		interrupt-map = <0 0 0 0 &gic GIC_SPI 106 IRQ_TYPE_NONE>;
 
-		linux,pci-domain = <1>;
+		linaos,pci-domain = <1>;
 
 		bus-range = <0x00 0xff>;
 

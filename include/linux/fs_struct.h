@@ -2,9 +2,9 @@
 #ifndef _LINUX_FS_STRUCT_H
 #define _LINUX_FS_STRUCT_H
 
-#include <linux/path.h>
-#include <linux/spinlock.h>
-#include <linux/seqlock.h>
+#include <linaos/path.h>
+#include <linaos/spinlock.h>
+#include <linaos/seqlock.h>
 
 struct fs_struct {
 	int users;

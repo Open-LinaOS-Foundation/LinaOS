@@ -5,16 +5,16 @@
  * FSG board-level PCI initialization
  *
  * Author: Rod Whitby <rod@whitby.id.au>
- * Maintainer: http://www.nslu2-linux.org/
+ * Maintainer: http://www.nslu2-linaos.org/
  *
  * based on ixdp425-pci.c:
  *	Copyright (C) 2002 Intel Corporation.
  *	Copyright (C) 2003-2004 MontaVista Software, Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
 #include <asm/mach/pci.h>
 #include <asm/mach-types.h>
 

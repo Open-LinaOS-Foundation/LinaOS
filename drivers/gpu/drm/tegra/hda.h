@@ -6,7 +6,7 @@
 #ifndef DRM_TEGRA_HDA_H
 #define DRM_TEGRA_HDA_H 1
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct tegra_hda_format {
 	unsigned int sample_rate;

@@ -5,15 +5,15 @@
  * Copyright (c) 2016 HiSilicon Technologies Co., Ltd.
  */
 
-#include <linux/circ_buf.h>
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linaos/circ_buf.h>
+#include <linaos/clk.h>
+#include <linaos/etherdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
 
 /* MAC control register list */
 #define MAC_PORTSEL			0x0200

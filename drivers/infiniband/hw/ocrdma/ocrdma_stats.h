@@ -33,7 +33,7 @@
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * linaos-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
@@ -43,7 +43,7 @@
 #ifndef __OCRDMA_STATS_H__
 #define __OCRDMA_STATS_H__
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 #include "ocrdma.h"
 #include "ocrdma_hw.h"
 

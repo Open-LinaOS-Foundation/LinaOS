@@ -6,11 +6,11 @@
  * Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/pm.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/reset-controller.h>
+#include <linaos/pm.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/delay.h>
+#include <linaos/reset-controller.h>
 
 #include <asm/reboot.h>
 

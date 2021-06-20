@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/of.h>
-#include <linux/mtd/map.h>
+#include <linaos/of.h>
+#include <linaos/mtd/map.h>
 
 #ifdef CONFIG_MTD_PHYSMAP_GEMINI
 int of_flash_probe_gemini(struct platform_device *pdev,

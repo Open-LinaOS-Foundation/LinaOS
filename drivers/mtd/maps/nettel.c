@@ -10,18 +10,18 @@
 
 /****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/cfi.h>
-#include <linux/reboot.h>
-#include <linux/err.h>
-#include <linux/kdev_t.h>
-#include <linux/root_dev.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/cfi.h>
+#include <linaos/reboot.h>
+#include <linaos/err.h>
+#include <linaos/kdev_t.h>
+#include <linaos/root_dev.h>
 #include <asm/io.h>
 
 /****************************************************************************/

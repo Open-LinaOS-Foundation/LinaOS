@@ -7,13 +7,13 @@
  * Copyright (C) 2004, 2008 Oracle.  All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/sysctl.h>
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/export.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/highmem.h>
+#include <linaos/sysctl.h>
+#include <linaos/spinlock.h>
+#include <linaos/debugfs.h>
+#include <linaos/export.h>
 
 #include "../cluster/heartbeat.h"
 #include "../cluster/nodemanager.h"

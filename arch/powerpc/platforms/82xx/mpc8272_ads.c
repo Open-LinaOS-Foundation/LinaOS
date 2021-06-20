@@ -9,13 +9,13 @@
  * Copyright (c) 2006 MontaVista Software, Inc.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/fsl_devices.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/fsl_devices.h>
+#include <linaos/of_address.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
+#include <linaos/io.h>
 
 #include <asm/cpm2.h>
 #include <asm/udbg.h>

@@ -23,7 +23,7 @@ might render the machine unbootable and requires special equipment like
 Dediprog to revive. You have been warned!
 
 Below are the steps how to upgrade MinnowBoard MAX BIOS directly from
-Linux.
+LinaOS.
 
  1) Download and extract the latest Minnowboard MAX BIOS SPI image
     [1]. At the time writing this the latest image is v92.
@@ -87,4 +87,4 @@ References
 
 [1] https://firmware.intel.com/sites/default/files/MinnowBoard%2EMAX_%2EX64%2E92%2ER01%2Ezip
 
-[2] http://www.linux-mtd.infradead.org/
+[2] http://www.linaos-mtd.infradead.org/

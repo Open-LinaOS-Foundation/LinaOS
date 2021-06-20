@@ -1,5 +1,5 @@
 	This is at least a partial credits-file of people that have
-	contributed to the Linux project.  It is sorted by name and
+	contributed to the LinaOS project.  It is sorted by name and
 	formatted to allow easy grepping and beautification by
 	scripts.  The fields are: name (N), email (E), web-address
 	(W), PGP key ID and fingerprint (P), description (D), and
@@ -45,7 +45,7 @@ S: Weymouth, MA 02188
 S: USA
 
 N: Dave Airlie
-E: airlied@linux.ie
+E: airlied@linaos.ie
 W: http://www.csn.ul.ie/~airlied
 D: NFS over TCP patches
 D: in-kernel DRM Maintainer
@@ -54,7 +54,7 @@ S: Sydney, Australia
 
 N: Tigran A. Aivazian
 E: tigran@aivazian.fsnet.co.uk
-W: http://www.moses.uklinux.net/patches
+W: http://www.moses.uklinaos.net/patches
 D: BFS filesystem
 D: Intel IA32 CPU microcode update support
 D: Various kernel patches
@@ -107,7 +107,7 @@ S: USA
 N: Michael Ang
 E: mang@subcarrier.org
 W: http://www.subcarrier.org/mang
-D: Linux/PA-RISC hacker
+D: LinaOS/PA-RISC hacker
 S: 85 Frank St.
 S: Ottawa, Ontario
 S: Canada K2P 0X3
@@ -116,21 +116,21 @@ N: H. Peter Anvin
 E: hpa@zytor.com
 W: https://www.zytor.com/~hpa/
 P: 2047/2A960705 BA 03 D3 2C 14 A8 A8 BD  1E DF FE 69 EE 35 BD 74
-D: Author of the SYSLINUX boot loader, maintainer of the linux.* news
-D: hierarchy and the Linux Device List; various kernel hacks
+D: Author of the SYSLINUX boot loader, maintainer of the linaos.* news
+D: hierarchy and the LinaOS Device List; various kernel hacks
 S: 4390 Albany Drive #46
 S: San Jose, California 95129
 S: USA
 
 N: Andrea Arcangeli
 E: andrea@suse.de
-W: https://www.kernel.org/pub/linux/kernel/people/andrea/
+W: https://www.kernel.org/pub/linaos/kernel/people/andrea/
 P: 1024D/68B9CB43 13D9 8355 295F 4823 7C49  C012 DFA1 686E 68B9 CB43
 P: 1024R/CB4660B9 CC A0 71 81 F4 A0 63 AC  C0 4B 81 1D 8C 15 C8 E5
 D: Parport hacker
 D: Implemented a workaround for some interrupt buggy printers
 D: Author of pscan that helps to fix lp/parport bugs
-D: Author of lil (Linux Interrupt Latency benchmark)
+D: Author of lil (LinaOS Interrupt Latency benchmark)
 D: Fixed the shm swap deallocation at swapoff time (try_to_unuse message)
 D: VM hacker
 D: Various other kernel hacks
@@ -139,7 +139,7 @@ S: Italy
 
 N: Derek Atkins
 E: warlord@MIT.EDU
-D: Linux-AFS Port, random kernel hacker,
+D: LinaOS-AFS Port, random kernel hacker,
 D: VFS fixes (new notify_change in particular)
 D: Moving all VFS access checks into the file systems
 S: MIT Room E15-341
@@ -154,7 +154,7 @@ D: VIA MVP-3/TX Pro III chipset IDE
 
 N: Jens Axboe
 E: axboe@suse.de
-D: Linux CD-ROM maintainer, DVD support
+D: LinaOS CD-ROM maintainer, DVD support
 D: elevator + block layer rewrites
 D: highmem I/O support
 D: misc hacking on IDE, SCSI, block drivers, etc
@@ -172,7 +172,7 @@ S: Canada
 
 N: Miles Bader
 E: miles@gnu.org
-D: v850 port (uClinux)
+D: v850 port (uClinaos)
 S: NEC Corporation
 S: 1753 Shimonumabe, Nakahara-ku
 S: Kawasaki 211-8666
@@ -181,8 +181,8 @@ S: Japan
 N: Ralf Baechle
 E: ralf@gnu.org
 P: 1024/AF7B30C1 CF 97 C2 CC 6D AE A7 FE  C8 BA 9C FC 88 DE 32 C3
-D: Linux/MIPS port
-D: Linux/68k hacker
+D: LinaOS/MIPS port
+D: LinaOS/68k hacker
 S: Hauptstrasse 19
 S: 79837 St. Blasien
 S: Germany
@@ -213,7 +213,7 @@ N: Paul Bame
 E: bame@debian.org
 E: bame@puffin.external.hp.com
 E: paul_bame@hp.com
-W: http://www.parisc-linux.org
+W: http://www.parisc-linaos.org
 D: PA-RISC 32 and 64-bit early boot, firmware interface, interrupts, misc
 S: MS42
 S: Hewlett-Packard
@@ -304,7 +304,7 @@ S: USA
 
 N: Adam Belay
 E: ambx1@neo.rr.com
-D: Linux Plug and Play Support
+D: LinaOS Plug and Play Support
 S: USA
 
 N: Daniele Bellucci
@@ -376,7 +376,7 @@ D: dsp56k device driver
 
 N: Ross Biro
 E: ross.biro@gmail.com
-D: Original author of the Linux networking code
+D: Original author of the LinaOS networking code
 
 N: Anton Blanchard
 E: anton@samba.org
@@ -394,7 +394,7 @@ S: Australia
 
 N: Philip Blundell
 E: philb@gnu.org
-D: Linux/ARM hacker
+D: LinaOS/ARM hacker
 D: Device driver hacker (eexpress, 3c505, c-qcam, ...)
 D: m68k port to HP9000/300
 D: AUN network protocols
@@ -408,8 +408,8 @@ N: Thomas Bogendörfer
 E: tsbogend@alpha.franken.de
 D: PCnet32 driver, SONIC driver, JAZZ_ESP driver
 D: newport abscon driver, g364 framebuffer driver
-D: strace for Linux/Alpha
-D: Linux/MIPS hacker
+D: strace for LinaOS/Alpha
+D: LinaOS/MIPS hacker
 S: Schafhofstr. 40
 S: 90556 Cadolzburg
 S: Germany
@@ -422,7 +422,7 @@ N: Axel Boldt
 E: axel@uni-paderborn.de
 W: http://math-www.uni-paderborn.de/~axel/
 D: Configuration help text support
-D: Linux CD and Support Giveaway List
+D: LinaOS CD and Support Giveaway List
 
 N: Erik Inge Bolsø
 E: knan@mo.himolde.no
@@ -475,14 +475,14 @@ S: Canada, T1W 2R9
 
 N: Ryan Bradetich
 E: rbradetich@uswest.net
-D: Linux/PA-RISC hacker
+D: LinaOS/PA-RISC hacker
 S: 1200 Goldenrod Dr.
 S: Nampa, Idaho 83686
 S: USA
 
 N: Dirk J. Brandewie
 E: dirk.j.brandewie@intel.com
-E: linux-wimax@intel.com
+E: linaos-wimax@intel.com
 D: Intel Wireless WiMAX Connection 2400 SDIO driver
 
 N: Derrick J. Brashear
@@ -513,7 +513,7 @@ S: Sweden
 
 N: Paul Bristow
 E: paul@paulbristow.net
-W: https://paulbristow.net/linux/idefloppy.html
+W: https://paulbristow.net/linaos/idefloppy.html
 D: Maintainer of IDE/ATAPI floppy driver
 
 N: Stefano Brivio
@@ -521,7 +521,7 @@ E: stefano.brivio@polimi.it
 D: Broadcom B43 driver
 
 N: Dominik Brodowski
-E: linux@brodo.de
+E: linaos@brodo.de
 W: https://www.brodo.de/
 P: 1024D/725B37C6  190F 3E77 9C89 3B6D BECD  46EE 67C3 0308 725B 37C6
 D: parts of CPUFreq code, ACPI bugfixes, PCMCIA rewrite, cpufrequtils
@@ -529,7 +529,7 @@ S: Tuebingen, Germany
 
 N: Andries Brouwer
 E: aeb@cwi.nl
-D: random Linux hacker
+D: random LinaOS hacker
 S: Bessemerstraat 21
 S: Amsterdam
 S: The Netherlands
@@ -548,7 +548,7 @@ N: David Brownell
 D: Kernel engineer, mentor, and friend.  Maintained USB EHCI and
 D: gadget layers, SPI subsystem, GPIO subsystem, and more than a few
 D: device drivers.  His encouragement also helped many engineers get
-D: started working on the Linux kernel.  David passed away in early
+D: started working on the LinaOS kernel.  David passed away in early
 D: 2011, and will be greatly missed.
 W: https://lore.kernel.org/lkml/20110405034819.GA7872@kroah.com
 
@@ -586,7 +586,7 @@ S: The Netherlands
 
 N: Michael Callahan
 E: callahan@maths.ox.ac.uk
-D: PPP for Linux
+D: PPP for LinaOS
 S: The Mathematical Institute
 S: 25-29 St Giles
 S: Oxford
@@ -602,7 +602,7 @@ S: Brazil
 
 N: Remy Card
 E: Remy.Card@masi.ibp.fr
-E: Remy.Card@linux.org
+E: Remy.Card@linaos.org
 D: Extended file system [defunct] designer and developer
 D: Second extended file system designer and developer
 S: Institut Blaise Pascal
@@ -696,7 +696,7 @@ D: Author of HSI Subsystem
 
 N: Randolph Chung
 E: tausq@debian.org
-D: Linux/PA-RISC hacker
+D: LinaOS/PA-RISC hacker
 S: Hong Kong
 
 N: Juan Jose Ciarlante
@@ -774,14 +774,14 @@ D: Ralink rt2x00 WLAN driver
 S: Belas, Portugal
 
 N: Alan Cox
-W: http://www.linux.org.uk/diary/
-D: Linux Networking (0.99.10->2.0.29)
+W: http://www.linaos.org.uk/diary/
+D: LinaOS Networking (0.99.10->2.0.29)
 D: Original Appletalk, AX.25, and IPX code
 D: 3c501 hacker
 D: Watchdog timer drivers
-D: Linux/SMP x86 (up to 2.0 only)
+D: LinaOS/SMP x86 (up to 2.0 only)
 D: Initial Mac68K port
-D: Video4Linux design, bw-qcam and PMS driver ports.
+D: Video4LinaOS design, bw-qcam and PMS driver ports.
 D: IDE modularisation work
 D: Z85230 driver
 D: Former security contact point (please use vendor-sec@lst.de)
@@ -824,7 +824,7 @@ N: Ray Dassen
 E: jdassen@wi.LeidenUniv.nl
 W: http://www.wi.leidenuniv.nl/~jdassen/
 P: 1024/672D05C1 DD 60 32 60 F7 90 64 80  E7 6F D4 E4 F8 C9 4A 58
-D: Debian GNU/Linux: www.debian.org maintainer, FAQ co-maintainer,
+D: Debian GNU/LinaOS: www.debian.org maintainer, FAQ co-maintainer,
 D: packages testing, nit-picking & fixing. Enjoying BugFree (TM) kernels.
 S: Zuidsingel 10A
 S: 2312 SB  Leiden
@@ -866,8 +866,8 @@ D: PWM fan driver
 
 N: Helge Deller
 E: deller@gmx.de
-W: http://www.parisc-linux.org/
-D: PA-RISC Linux architecture maintainer
+W: http://www.parisc-linaos.org/
+D: PA-RISC LinaOS architecture maintainer
 D: LASI-, ASP-, WAX-, LCD/LED-driver
 S: Germany
 
@@ -897,7 +897,7 @@ D: HTB qdisc and random networking hacks
 
 N: Alex deVries
 E: alex@onefishtwo.ca
-D: Various SGI parts, bits of HAL2 and Newport, PA-RISC Linux.
+D: Various SGI parts, bits of HAL2 and Newport, PA-RISC LinaOS.
 S: 41.5 William Street
 S: Ottawa, Ontario
 S: K1N 6Z9
@@ -905,7 +905,7 @@ S: CANADA
 
 N: Jeff Dike
 E: jdike@karaya.com
-W: http://user-mode-linux.sourceforge.net
+W: http://user-mode-linaos.sourceforge.net
 D: User mode kernel port
 S: 375 Tubbs Hill Rd
 S: Deering NH 03244
@@ -913,9 +913,9 @@ S: USA
 
 N: Matt Domsch
 E: Matt_Domsch@dell.com
-W: https://www.dell.com/linux
-W: https://domsch.com/linux
-D: Linux/IA-64
+W: https://www.dell.com/linaos
+W: https://domsch.com/linaos
+D: LinaOS/IA-64
 D: Dell PowerEdge server, SCSI layer, misc drivers, and other patches
 S: Dell Inc.
 S: One Dell Way
@@ -927,7 +927,7 @@ E: malattia@gmail.com
 D: cpufrequtils (precursor to cpupowerutils)
 
 N: Ben Dooks
-E: ben-linux@fluff.org
+E: ben-linaos@fluff.org
 E: ben@simtec.co.uk
 W: http://www.fluff.org/ben/
 W: http://www.simtec.co.uk/
@@ -949,7 +949,7 @@ S: Haarlem, The Netherlands
 
 N: John G Dorsey
 E: john+@cs.cmu.edu
-D: ARM Linux ports to Assabet/Neponset, Spot
+D: ARM LinaOS ports to Assabet/Neponset, Spot
 S: Department of Electrical and Computer Engineering
 S: Carnegie Mellon University
 S: Pittsburgh, PA  15213
@@ -957,15 +957,15 @@ S: USA
 
 N: Eddie C. Dost
 E: ecd@skynet.be
-D: Linux/Sparc kernel hacker
-D: Linux/Sparc maintainer
+D: LinaOS/Sparc kernel hacker
+D: LinaOS/Sparc maintainer
 S: Rue de la Chapelle 51
 S: 4850 Moresnet
 S: Belgium
 
 N: Cort Dougan
 E: cort@fsmlabs.com
-W: http://www.fsmlabs.com/linuxppcbk.html
+W: http://www.fsmlabs.com/linaosppcbk.html
 D: PowerPC
 
 N: Daniel Drake
@@ -983,8 +983,8 @@ S: Crimea
 S: UKRAINE, 334320
 
 N: Walt Drummond
-E: drummond@valinux.com
-D: Linux/IA-64
+E: drummond@valinaos.com
+D: LinaOS/IA-64
 S: 1382 Bordeaux Drive
 S: Sunnyvale, CA 94087
 S: USA
@@ -995,8 +995,8 @@ D: CPUFreq and ACPI bugfixes.
 S: Mougin, France
 
 N: Don Dugger
-E: n0ano@valinux.com
-D: Linux/IA-64
+E: n0ano@valinaos.com
+D: LinaOS/IA-64
 S: 1209 Pearl Street, #12
 S: Boulder, CO 80302
 S: USA
@@ -1012,7 +1012,7 @@ S: USA
 N: Randy Dunlap
 E: rdunlap@infradead.org
 W: https://www.infradead.org/~rdunlap/
-D: Linux-USB subsystem, USB core/UHCI/printer/storage drivers
+D: LinaOS-USB subsystem, USB core/UHCI/printer/storage drivers
 D: x86 SMP, ACPI, bootflag hacking
 D: documentation, builds
 S: (ask for current address)
@@ -1037,7 +1037,7 @@ D: implemented kmod
 N: Torsten Duwe
 E: Torsten.Duwe@informatik.uni-erlangen.de
 D: Part-time kernel hacker
-D: The Linux Support Team Erlangen
+D: The LinaOS Support Team Erlangen
 S: Grevenbroicher Str. 17
 S: 47807 Krefeld
 S: Germany
@@ -1089,7 +1089,7 @@ S: Finland
 
 N: David Engebretsen
 E: engebret@us.ibm.com
-D: Linux port to 64-bit PowerPC architecture
+D: LinaOS port to 64-bit PowerPC architecture
 
 N: Michael Engel
 E: engel@unix-ag.org
@@ -1105,14 +1105,14 @@ S: USA
 
 N: Stephane Eranian
 E: eranian@hpl.hp.com
-D: Linux/ia64
+D: LinaOS/ia64
 S: 1501 Page Mill Rd, MS 1U17
 S: Palo Alto, CA 94304
 S: USA
 
 N: Johannes Erdfelt
 E: johannes@erdfelt.com
-D: Linux/IA-64 bootloader and kernel goop, USB
+D: LinaOS/IA-64 bootloader and kernel goop, USB
 S: 6350 Stoneridge Mall Road
 S: Pleasanton, CA 94588
 S: USA
@@ -1189,7 +1189,7 @@ S: USA
 
 N: Ralf Flaxa
 E: rfflaxa@immd4.informatik.uni-erlangen.de
-D: The Linux Support Team Erlangen
+D: The LinaOS Support Team Erlangen
 D: Creator of LST distribution
 D: Author of installation tool LISA
 S: Pfitznerweg 6
@@ -1205,14 +1205,14 @@ S: USA
 
 N: Karl Fogel
 E: kfogel@cs.oberlin.edu
-D: Contributor, Linux User's Guide
+D: Contributor, LinaOS User's Guide
 S: 1123 North Oak Park Avenue
 S: Oak Park, Illinois 60302
 S: USA
 
 N: Daniel J. Frasnelli
-E: dfrasnel@alphalinux.org
-W: http://www.alphalinux.org/
+E: dfrasnel@alphalinaos.org
+W: http://www.alphalinaos.org/
 P: 1024/3EF87611 B9 F1 44 50 D3 E8 C2 80  DA E5 55 AA 56 7C 42 DA
 D: DEC Alpha hacker
 D: Miscellaneous bug squisher
@@ -1319,7 +1319,7 @@ S: New South Wales, 2121
 S: Australia
 
 N: Carlos E. Gorges
-E: carlos@techlinux.com.br
+E: carlos@techlinaos.com.br
 D: fix smp support on cmpci driver
 P: 2048G/EA3C4B19 FF31 33A6 0362 4915 B7EB  E541 17D0 0379 EA3C 4B19
 S: Brazil
@@ -1344,7 +1344,7 @@ D: Workbit NinjaSCSI-32Bi/UDE driver
 S: Japan
 
 N: John E. Gotts
-E: jgotts@linuxsavvy.com
+E: jgotts@linaossavvy.com
 D: kernel hacker
 S: 8124 Constitution Apt. 7
 S: Sterling Heights, Michigan 48313
@@ -1390,7 +1390,7 @@ S: South Africa
 N: Grant Grundler
 E: grantgrundler@gmail.com
 W: http://obmouse.sourceforge.net/
-W: http://www.parisc-linux.org/
+W: http://www.parisc-linaos.org/
 D: obmouse - rewrote Olivier Florent's Omnibook 600 "pop-up" mouse driver
 D: PA-RISC - Interrupt/PCI HBA/IOMMU author and architect
 S: Mountain View, California
@@ -1398,7 +1398,7 @@ S: USA
 
 N: Grant Guenther
 E: grant@torque.net
-W: http://www.torque.net/linux-pp.html
+W: http://www.torque.net/linaos-pp.html
 D: original author of ppa driver for parallel port ZIP drive
 D: original architect of the parallel-port sharing scheme
 D: PARIDE subsystem: drivers for parallel port IDE & ATAPI devices
@@ -1494,10 +1494,10 @@ E: ajh@primag.co.uk
 D: Selection mechanism
 
 N: Andre Hedrick
-E: andre@linux-ide.org
-E: andre@linuxdiskcert.org
-W: http://www.linux-ide.org/
-W: http://www.linuxdiskcert.org/
+E: andre@linaos-ide.org
+E: andre@linaosdiskcert.org
+W: http://www.linaos-ide.org/
+W: http://www.linaosdiskcert.org/
 D: Random SMP kernel hacker...
 D: Uniform Multi-Platform E-IDE driver
 D: Active-ATA-Chipset maddness..........
@@ -1506,7 +1506,7 @@ D: ATA-Disconnect, ATA-TCQ
 D: ATA-Smart Kernel Daemon
 D: Serial ATA
 D: ATA Command Block and Taskfile
-S: Linux ATA Development (LAD)
+S: LinaOS ATA Development (LAD)
 S: Concord, CA
 
 N: Jochen Hein
@@ -1514,8 +1514,8 @@ E: jochen@jochen.org
 P: 1024/4A27F015 25 72 FB E3 85 9F DE 3B  CB 0A DA DA 40 77 05 6C
 P: 1024D/77D4FC9B F5C5 1C20 1DFC DEC3 3107  54A4 2332 ADFC 77D4 FC9B
 D: National Language Support
-D: Linux Internationalization Project
-D: German Localization for Linux and GNU software
+D: LinaOS Internationalization Project
+D: German Localization for LinaOS and GNU software
 S: Auf der Fittel 18
 S: 53347 Alfter
 S: Germany
@@ -1555,8 +1555,8 @@ S: Germany
 
 N: Sebastian Hetze
 E: she@lunetix.de
-D: German Linux Documentation,
-D: Organization of German Linux Conferences
+D: German LinaOS Documentation,
+D: Organization of German LinaOS Conferences
 S: Danckelmannstr. 48
 S: 14059 Berlin
 S: Germany
@@ -1578,9 +1578,9 @@ S: Germany
 
 N: Richard Hirst
 E: richard@sleepie.demon.co.uk
-E: rhirst@linuxcare.com
+E: rhirst@linaoscare.com
 W: http://www.sleepie.demon.co.uk/
-D: linux-m68k VME support
+D: linaos-m68k VME support
 D: PA-RISC port, scsi and network drivers
 D: 53c700/53c710 driver author, 82596 driver maintainer
 S: United Kingdom
@@ -1589,7 +1589,7 @@ N: Jauder Ho
 E: jauderho@carumba.com
 W: http://www.carumba.com/
 D: bug toaster (A1 sauce makes all the difference)
-D: Random linux hacker
+D: Random linaos hacker
 
 N: James Hogan
 E: jhogan@kernel.org
@@ -1630,7 +1630,7 @@ N: Nick Holloway
 E: Nick.Holloway@pyrites.org.uk
 W: https://www.pyrites.org.uk/
 P: 1024/36115A04 F4E1 3384 FCFD C055 15D6  BA4C AB03 FBF8 3611 5A04
-D: Occasional Linux hacker...
+D: Occasional LinaOS hacker...
 S: (ask for current address)
 S: United Kingdom
 
@@ -1649,7 +1649,7 @@ S: USA
 N: Marcel Holtmann
 E: marcel@holtmann.org
 W: http://www.holtmann.org
-D: Maintainer of the Linux Bluetooth Subsystem
+D: Maintainer of the LinaOS Bluetooth Subsystem
 D: Author and maintainer of the various Bluetooth HCI drivers
 D: Author and maintainer of the CAPI message transport protocol driver
 D: Author and maintainer of the Bluetooth HID protocol driver
@@ -1660,7 +1660,7 @@ N: Rob W. W. Hooft
 E: hooft@EMBL-Heidelberg.DE
 D: Shared libs for graphics-tools and for the f2c compiler
 D: Some kernel programming on the floppy and sound drivers in early days
-D: Some other hacks to get different kinds of programs to work for linux
+D: Some other hacks to get different kinds of programs to work for linaos
 S: Panoramastrasse 18
 S: D-69126 Heidelberg
 S: Germany
@@ -1723,14 +1723,14 @@ S: Ireland
 
 N: Michael Hunold
 E: michael@mihu.de
-W: http://www.mihu.de/linux/
-D: Generic saa7146 video4linux-2 driver core,
+W: http://www.mihu.de/linaos/
+D: Generic saa7146 video4linaos-2 driver core,
 D: Driver for the "Multimedia eXtension Board", "dpc7146",
 D: "Hexium Orion", "Hexium Gemini"
 
 N: Miguel de Icaza Amozurrutia
 E: miguel@nuclecu.unam.mx
-D: Linux/SPARC team, Midnight Commander maintainer
+D: LinaOS/SPARC team, Midnight Commander maintainer
 S: Avenida Copilco 162, 22-1003
 S: Mexico, DF
 S: Mexico
@@ -1790,7 +1790,7 @@ N: Michael K. Johnson
 E: johnsonm@redhat.com
 W: http://www.redhat.com/~johnsonm
 P: 1024/4536A8DD 2A EC 88 08 40 64 CE D8  DD F8 12 2B 61 43 83 15
-D: The Linux Documentation Project
+D: The LinaOS Documentation Project
 D: Kernel Hackers' Guide
 D: Procps
 D: Proc filesystem
@@ -1852,7 +1852,7 @@ S: 8103 Rein
 S: Austria
 
 N: Mitsuru Kanda
-E: mk@linux-ipv6.org
+E: mk@linaos-ipv6.org
 E: mk@isl.rdc.toshiba.co.jp
 E: mk@karaba.org
 W: http://www.karaba.org/~mk/
@@ -1898,7 +1898,7 @@ S: 74143 Knivsta
 S: Sweden
 
 N: Fred N. van Kempen
-E: waltje@linux.com
+E: waltje@linaos.com
 D: NET-2
 D: Drivers
 D: Kernel cleanups
@@ -1947,15 +1947,15 @@ D: Samsung SoC Audio (ASoC) drivers
 D: Samsung PMIC (RTC, regulators, MFD) drivers
 
 N: Russell King
-E: rmk@arm.linux.org.uk
-D: Linux/arm integrator, maintainer & hacker
+E: rmk@arm.linaos.org.uk
+D: LinaOS/arm integrator, maintainer & hacker
 D: Acornfb, Cyber2000fb author
 S: Burgh Heath, Tadworth, Surrey.
 S: England
 
 N: Olaf Kirch
 E: okir@monad.swb.de
-D: Author of the Linux Network Administrators' Guide
+D: Author of the LinaOS Network Administrators' Guide
 S: Kattreinstr 38
 S: D-64295
 S: Germany
@@ -1977,7 +1977,7 @@ N: Ian Kluft
 E: ikluft@thunder.sbay.org
 W: http://www.kluft.com/~ikluft/
 D: NET-1 beta testing & minor patches, original Smail binary packages for
-D: Slackware and Debian, vote-taker for 2nd comp.os.linux reorganization
+D: Slackware and Debian, vote-taker for 2nd comp.os.linaos reorganization
 S: Post Office Box 611311
 S: San Jose, California 95161-1311
 S: USA
@@ -2008,7 +2008,7 @@ N: Gerd Knorr
 W: http://bytesex.org
 E: kraxel@bytesex.org
 E: kraxel@suse.de
-D: video4linux, bttv, vesafb, some scsi, misc fixes
+D: video4linaos, bttv, vesafb, some scsi, misc fixes
 
 N: Hans J. Koch
 D: USERSPACE I/O, MAX6650
@@ -2024,7 +2024,7 @@ S: Germany
 
 N: Rudolf Koenig
 E: rfkoenig@immd4.informatik.uni-erlangen.de
-D: The Linux Support Team Erlangen
+D: The LinaOS Support Team Erlangen
 
 N: Andreas Koensgen
 E: ajk@comnets.uni-bremen.de
@@ -2032,7 +2032,7 @@ D: 6pack driver for AX.25
 
 N: Harald Koerfgen
 E: hkoerfg@web.de
-D: Linux/MIPS kernel hacks and fixes,
+D: LinaOS/MIPS kernel hacks and fixes,
 D: DECstation port, Sharp Mobilon port
 S: D-50931 Koeln
 S: Germany
@@ -2074,7 +2074,7 @@ E: maxk@qualcomm.com
 W: http://vtun.sf.net
 W: http://bluez.sf.net
 D: Author of the Universal TUN/TAP driver
-D: Author of the Linux Bluetooth Subsystem (BlueZ)
+D: Author of the LinaOS Bluetooth Subsystem (BlueZ)
 D: Various other kernel patches, cleanups and fixes
 S: 2213 La Terrace Circle
 S: San Jose, CA 95123
@@ -2087,14 +2087,14 @@ D: CYPRESS CY82C693 chipset IDE, Digital's PC-Alpha 164SX boards
 N: Greg Kroah-Hartman
 E: greg@kroah.com
 E: gregkh@suse.de
-W: http://www.kroah.com/linux/
+W: http://www.kroah.com/linaos/
 D: USB Serial Converter driver framework, USB Handspring Visor driver
 D: ConnectTech WHITEHeat USB driver, Generic USB Serial driver
 D: USB I/O Edgeport driver, USB Serial IrDA driver
 D: USB Bluetooth driver, USB Skeleton driver
 D: bits and pieces of USB core code.
 D: PCI Hotplug core, PCI Hotplug Compaq driver modifications
-D: portions of the Linux Security Module (LSM) framework
+D: portions of the LinaOS Security Module (LSM) framework
 D: parts of the driver core, debugfs.
 
 N: Russell Kroll
@@ -2232,7 +2232,7 @@ S: Australia
 
 N: Hans Lermen
 E: lermen@elserv.ffm.fgan.de
-D: Author of the LOADLIN Linux loader, hacking on boot stuff
+D: Author of the LOADLIN LinaOS loader, hacking on boot stuff
 D: Coordinator of DOSEMU releases
 S: Am Muehlenweg 38
 S: D53424 Remagen
@@ -2317,7 +2317,7 @@ S: Canada K2H 6S3
 
 N: Warner Losh
 E: imp@village.org
-D: Linux/MIPS Deskstation support, Provided OI/OB for Linux
+D: LinaOS/MIPS Deskstation support, Provided OI/OB for LinaOS
 S: 8786 Niwot Road
 S: Niwot, Colorado 80503
 S: USA
@@ -2340,7 +2340,7 @@ D: GCC + libraries hacker
 
 N: Yanir Lubetkin
 E: yanirx.lubatkin@intel.com
-E: linux-wimax@intel.com
+E: linaos-wimax@intel.com
 D: Intel Wireless WiMAX Connection 2400 driver
 
 N: Michal Ludvig
@@ -2369,7 +2369,7 @@ D: dv1394
 
 N: Hamish Macdonald
 E: hamishm@lucent.com
-D: Linux/68k port
+D: LinaOS/68k port
 S: 32 Clydesdale Avenue
 S: Kanata, Ontario
 S: Canada K2M-2G7
@@ -2390,8 +2390,8 @@ S: Czech Republic
 N: Paul Mackerras
 E: paulus@samba.org
 D: PPP driver
-D: Linux for PowerPC
-D: Linux port for PCI Power Macintosh
+D: LinaOS for PowerPC
+D: LinaOS port for PCI Power Macintosh
 
 N: Pat Mackinlay
 E: pat@it.com.au
@@ -2416,7 +2416,7 @@ D: SCSI Tape Driver
 
 N: Asit Mallick
 E: asit.k.mallick@intel.com
-D: Linux/IA-64
+D: LinaOS/IA-64
 S: 2200 Mission College Blvd
 S: Santa Clara, CA 95052
 S: USA
@@ -2540,7 +2540,7 @@ S: USA
 
 N: Kyle McMartin
 E: kyle@mcmartin.ca
-D: Linux/PARISC hacker
+D: LinaOS/PARISC hacker
 D: AD1889 sound driver
 S: Ottawa, Canada
 
@@ -2568,7 +2568,7 @@ D: tools/, IPX, LLC, DCCP, cyc2x, wl3501_cs, net/ hacks
 S: Brazil
 
 N: Karsten Merker
-E: merker@linuxtag.org
+E: merker@linaostag.org
 D: DECstation framebuffer drivers
 S: Germany
 
@@ -2610,7 +2610,7 @@ N: Pauline Middelink
 E: middelin@polyware.nl
 D: General low-level bug fixes, /proc fixes, identd support
 D: Author of IP masquerading
-D: Zoran ZR36120 Video For Linux driver
+D: Zoran ZR36120 Video For LinaOS driver
 S: Boterkorfhoek 34
 S: 7546 JA  Enschede
 S: Netherlands
@@ -2618,8 +2618,8 @@ S: Netherlands
 N: David S. Miller
 E: davem@davemloft.net
 D: Sparc and blue box hacker
-D: Vger Linux mailing list co-maintainer
-D: Linux Emacs elf/qmagic support + other libc/gcc things
+D: Vger LinaOS mailing list co-maintainer
+D: LinaOS Emacs elf/qmagic support + other libc/gcc things
 D: Yee bore de yee bore! ;-)
 S: 575 Harrison St. #103
 S: San Francisco, CA 94105
@@ -2628,16 +2628,16 @@ S: USA
 N: Rick Miller
 E: rdmiller@execpc.com
 W: http://www.execpc.com/~rdmiller/
-D: Original Linux Device Registrar (Major/minor numbers)
+D: Original LinaOS Device Registrar (Major/minor numbers)
 D: au-play, bwBASIC
 S: S78 W16203 Woods Road
 S: Muskego, Wisconsin 53150
 S: USA
 
 N: Harald Milz
-E: hm@seneca.linux.de
-D: Linux Projects Map, Linux Commercial-HOWTO
-D: general Linux publicity in Germany, vacation port
+E: hm@seneca.linaos.de
+D: LinaOS Projects Map, LinaOS Commercial-HOWTO
+D: general LinaOS publicity in Germany, vacation port
 D: UUCP and CNEWS binary packages for LST
 S: Editorial Board iX Mag
 S: Helstorfer Str. 7
@@ -2663,7 +2663,7 @@ S: Garland, Texas 75044
 S: USA
 
 N: Kazunori Miyazawa
-E: miyazawa@linux-ipv6.org
+E: miyazawa@linaos-ipv6.org
 E: Kazunori.Miyazawa@jp.yokogawa.com
 E: kazunori@miyazawa.org
 W: http://www.miyazawa.org/~kazunori/
@@ -2695,12 +2695,12 @@ D: bug fixes, documentation, minor hackery
 N: Paul Moore
 E: paul@paul-moore.com
 W: https://www.paul-moore.com
-D: NetLabel, SELinux, audit
+D: NetLabel, SELinaOS, audit
 
 N: James Morris
 E: jmorris@namei.org
 W: http://namei.org/
-D: Netfilter, Linux Security Modules (LSM), SELinux, IPSec,
+D: Netfilter, LinaOS Security Modules (LSM), SELinaOS, IPSec,
 D: Crypto API, general networking, miscellaneous.
 S: PO Box 707
 S: Spit Junction NSW 2088
@@ -2708,7 +2708,7 @@ S: Australia
 
 N: David Mosberger-Tang
 E: davidm@hpl.hp.com if IA-64 related, else David.Mosberger@acm.org
-D: Linux/Alpha and Linux/ia64
+D: LinaOS/Alpha and LinaOS/ia64
 S: 35706 Runckel Lane
 S: Fremont, California 94536
 S: USA
@@ -2837,7 +2837,7 @@ N: David C. Niemi
 E: niemi@tux.org
 W: http://www.tux.org/~niemi/
 D: Assistant maintainer of Mtools, fdutils, and floppy driver
-D: Administrator of Tux.Org Linux Server, https://www.tux.org
+D: Administrator of Tux.Org LinaOS Server, https://www.tux.org
 S: 2364 Old Trail Drive
 S: Reston, Virginia 20191
 S: USA
@@ -2945,7 +2945,7 @@ S: CANADA P7C 5M9
 
 N: Inaky Perez-Gonzalez
 E: inaky.perez-gonzalez@intel.com
-E: linux-wimax@intel.com
+E: linaos-wimax@intel.com
 E: inakypg@yahoo.com
 D: WiMAX stack
 D: Intel Wireless WiMAX Connection 2400 driver
@@ -2993,7 +2993,7 @@ S: Ottawa, Ontario
 S: Canada K2P 0X8
 
 N: Mikael Pettersson
-E: mikpelinux@gmail.com
+E: mikpelinaos@gmail.com
 D: Miscellaneous fixes
 
 N: Reed H. Petty
@@ -3012,7 +3012,7 @@ P: 1024/B42868C1 D9 59 B9 98 BB 93 05 38  2E 3E 31 79 C3 65 5D E1
 D: Driver for Laser Magnetic Storage CD-ROM
 D: Some kernel bug fixes
 D: Port of the database Postgres
-D: Book: "Linux verstehen und anwenden" (Hanser-Verlag)
+D: Book: "LinaOS verstehen und anwenden" (Hanser-Verlag)
 S: Triftstra=DFe 55
 S: 13353 Berlin
 S: Germany
@@ -3020,7 +3020,7 @@ S: Germany
 N: Emanuel Pirker
 E: epirker@edu.uni-klu.ac.at
 D: AIC5800 IEEE 1394, RAW I/O on 1394
-D: Starter of Linux1394 effort
+D: Starter of LinaOS1394 effort
 S: ask per mail for current address
 
 N: Nicolas Pitre
@@ -3042,7 +3042,7 @@ S: Paimpont, France
 
 N: Pete Popov
 E: pete_popov@yahoo.com
-D: Linux/MIPS AMD/Alchemy Port and mips hacking and debugging
+D: LinaOS/MIPS AMD/Alchemy Port and mips hacking and debugging
 S: San Jose, CA 95134
 S: USA
 
@@ -3064,7 +3064,7 @@ D: ATM device driver for NICStAR based cards
 
 N: Stefan Probst
 E: sp@caldera.de
-D: The Linux Support Team Erlangen, 1993-97
+D: The LinaOS Support Team Erlangen, 1993-97
 S: Caldera (Deutschland) GmbH
 S: Lazarettstrasse 8
 S: 91054 Erlangen
@@ -3089,7 +3089,7 @@ N: Daniel Quinlan
 E: quinlan@pathname.com
 W: https://www.pathname.com/~quinlan/
 D: FSSTND coordinator; FHS editor
-D: random Linux documentation, patches, and hacks
+D: random LinaOS documentation, patches, and hacks
 S: 4390 Albany Drive #41A
 S: San Jose, California 95129
 S: USA
@@ -3115,7 +3115,7 @@ S: Brazil
 
 N: Goutham Rao
 E: goutham.rao@intel.com
-D: Linux/IA-64
+D: LinaOS/IA-64
 S: 2200 Mission College Blvd
 S: Santa Clara, CA 95052
 S: USA
@@ -3135,8 +3135,8 @@ S: Malvern, Pennsylvania 19355
 S: USA
 
 N: Stefan Reinauer
-E: stepan@linux.de
-W: http://www.freiburg.linux.de/~stepan/
+E: stepan@linaos.de
+W: http://www.freiburg.linaos.de/~stepan/
 D: Modularization of some filesystems
 D: /proc/sound, minor fixes
 S: Schlossbergring 9
@@ -3146,7 +3146,7 @@ S: Germany
 N: Thomas Renninger
 E: trenn@suse.de
 D: cpupowerutils
-S: SUSE Linux GmbH
+S: SUSE LinaOS GmbH
 S: Germany
 
 N: Joerg Reuter
@@ -3183,9 +3183,9 @@ S: France
 N: Rik van Riel
 E: riel@redhat.com
 W: https://www.surriel.com/
-D: Linux-MM site, Documentation/admin-guide/sysctl/*, swap/mm readaround
+D: LinaOS-MM site, Documentation/admin-guide/sysctl/*, swap/mm readaround
 D: kswapd fixes, random kernel hacker, rmap VM,
-D: nl.linux.org administrator, minor scheduler additions
+D: nl.linaos.org administrator, minor scheduler additions
 S: Red Hat Boston
 S: 3 Lan Drive
 S: Westford, MA 01886
@@ -3246,7 +3246,7 @@ S: Germany
 
 N: Thiago Berlitz Rondon
 E: maluco@mileniumnet.com.br
-W: http://vivaldi.linuxms.com.br/~maluco
+W: http://vivaldi.linaosms.com.br/~maluco
 D: Miscellaneous kernel hacker
 S: R. Anhanguera, 1487 - Ipiranga
 S: 79080-740 - Campo Grande - Mato Grosso do Sul
@@ -3344,7 +3344,7 @@ D: Firmware loader (request_firmware)
 N: Wayne Salamon
 E: wsalamon@tislabs.com
 E: wsalamon@nai.com
-D: portions of the Linux Security Module (LSM) framework and security modules
+D: portions of the LinaOS Security Module (LSM) framework and security modules
 
 N: Robert Sanders
 E: gt8134b@prism.gatech.edu
@@ -3410,11 +3410,11 @@ S: B2240 Zandhoven
 S: Belgium
 
 N: Martin Schulze
-E: joey@linux.de
+E: joey@linaos.de
 W: http://home.pages.de/~joey/
-D: Random Linux Hacker, Linux Promoter
+D: Random LinaOS Hacker, LinaOS Promoter
 D: CD-List, Books-List, Ex-FAQ
-D: Linux-Support, -Mailbox, -Stammtisch
+D: LinaOS-Support, -Mailbox, -Stammtisch
 D: several improvements to system programs
 S: Oldenburg
 S: Germany
@@ -3423,7 +3423,7 @@ N: Robert Schwebel
 E: robert@schwebel.de
 W: https://www.schwebel.de
 D: Embedded hacker and book author,
-D: AMD Elan support for Linux
+D: AMD Elan support for LinaOS
 S: Pengutronix
 S: Braunschweiger Strasse 79
 S: 31134 Hildesheim
@@ -3431,7 +3431,7 @@ S: Germany
 
 N: Martin Schwidefsky
 D: Martin was the most significant contributor to the initial s390
-D: port of the Linux Kernel and later the maintainer of the s390
+D: port of the LinaOS Kernel and later the maintainer of the s390
 D: architecture backend for almost two decades.
 D: He passed away in 2019, and will be greatly missed.
 S: Germany
@@ -3475,7 +3475,7 @@ N: John Shifflett
 E: john@geolog.com
 E: jshiffle@netcom.com
 D: Always IN2000 SCSI driver
-D: wd33c93 SCSI driver (linux-m68k)
+D: wd33c93 SCSI driver (linaos-m68k)
 S: San Jose, California
 S: USA
 
@@ -3510,7 +3510,7 @@ S: Canada
 
 N: Haavard Skinnemoen
 M: Haavard Skinnemoen <hskinnemoen@gmail.com>
-D: AVR32 architecture port to Linux and maintainer.
+D: AVR32 architecture port to LinaOS and maintainer.
 
 N: Rick Sladkey
 E: jrs@world.std.com
@@ -3532,7 +3532,7 @@ S: Australia
 
 N: Stephen Smalley
 E: sds@tycho.nsa.gov
-D: portions of the Linux Security Module (LSM) framework and security modules
+D: portions of the LinaOS Security Module (LSM) framework and security modules
 
 N: Chris Smith
 E: csmith@convex.com
@@ -3599,7 +3599,7 @@ E: storner@image.dk
 W: http://www.image.dk/~storner/
 W: https://www.sslug.dk/
 D: Configure script: Invented tristate for module-configuration
-D: vfat/msdos integration, kerneld docs, Linux promotion
+D: vfat/msdos integration, kerneld docs, LinaOS promotion
 D: Miscellaneous bug-fixes
 S: Chr. Winthersvej 1 B, st.th.
 S: DK-1860 Frederiksberg C
@@ -3679,7 +3679,7 @@ S: Sevilla 41005
 S: Spain
 
 N: Linus Torvalds
-E: torvalds@linux-foundation.org
+E: torvalds@linaos-foundation.org
 D: Original kernel hacker
 S: Portland, Oregon 97005
 S: USA
@@ -3724,10 +3724,10 @@ D: kernel tinification
 N: Winfried Trümper
 E: winni@xpilot.org
 W: http://www.shop.de/~winni/
-D: German HOWTO, Crash-Kurs Linux (German, 100 comprehensive pages)
+D: German HOWTO, Crash-Kurs LinaOS (German, 100 comprehensive pages)
 D: CD-Writing HOWTO, various mini-HOWTOs
-D: One-week tutorials on Linux twice a year (free of charge)
-D: Linux-Workshop Köln (aka LUG Cologne, Germany), Installfests
+D: One-week tutorials on LinaOS twice a year (free of charge)
+D: LinaOS-Workshop Köln (aka LUG Cologne, Germany), Installfests
 S: Tacitusstr. 6
 S: D-50968 Köln
 
@@ -3744,7 +3744,7 @@ S: USA
 
 N: Theodore Ts'o
 E: tytso@mit.edu
-D: Random Linux hacker
+D: Random LinaOS hacker
 D: Maintainer of tsx-11.mit.edu ftp archive
 D: Maintainer of c.o.l.* Usenet<->mail gateway
 D: Author of serial driver
@@ -3779,8 +3779,8 @@ S: United Kingdom
 N: Thomas Uhl
 E: uhl@sun1.rz.fh-heilbronn.de
 D: Application programmer
-D: Linux promoter
-D: Author of a German book on Linux
+D: LinaOS promoter
+D: Author of a German book on LinaOS
 S: Obere Heerbergstrasse 17
 S: 97078 Wuerzburg
 S: Germany
@@ -3791,8 +3791,8 @@ D: I3000 EDAC driver
 
 N: Greg Ungerer
 E: gerg@snapgear.com
-D: uClinux kernel hacker
-D: Port uClinux to the Motorola ColdFire CPU
+D: uClinaos kernel hacker
+D: Port uClinaos to the Motorola ColdFire CPU
 D: Author of Stallion multiport serial drivers
 S: SnapGear Inc.
 S: 825 Stanley St
@@ -3801,9 +3801,9 @@ S: Australia
 
 N: Jeffrey A. Uphoff
 E: juphoff@transmeta.com
-E: jeff.uphoff@linux.org
+E: jeff.uphoff@linaos.org
 P: 1024/9ED505C5 D7 BB CA AA 10 45 40 1B  16 19 0A C0 38 A0 3E CB
-D: Linux Security/Alert mailing lists' moderator/maintainer.
+D: LinaOS Security/Alert mailing lists' moderator/maintainer.
 D: NSM (rpc.statd) developer.
 D: PAM S/Key module developer.
 D: 'dip' contributor.
@@ -3818,13 +3818,13 @@ E: smurf@smurf.noris.de
 E: smurf@debian.org
 E: matthias@urlichs.de
 D: Consultant, developer, kernel hacker
-D: In a previous life, worked on Streams/ISDN/BSD networking code for Linux
+D: In a previous life, worked on Streams/ISDN/BSD networking code for LinaOS
 S: Schleiermacherstrasse 12
 S: 90491 Nuernberg
 S: Germany
 
 N: Geert Uytterhoeven
-E: geert@linux-m68k.org
+E: geert@linaos-m68k.org
 W: http://users.telenet.be/geertu/
 P: 4096R/4804B4BC3F55EEFB 750D 82B0 A781 5431 5E25  925B 4804 B4BC 3F55 EEFB
 D: m68k/Amiga and PPC/CHRP Longtrail coordinator
@@ -3842,7 +3842,7 @@ S: Belgium
 N: Chris Vance
 E: cvance@tislabs.com
 E: cvance@nai.com
-D: portions of the Linux Security Module (LSM) framework and security modules
+D: portions of the LinaOS Security Module (LSM) framework and security modules
 
 N: Petr Vandrovec
 E: petr@vandrovec.name
@@ -3874,11 +3874,11 @@ D: Turtle Beach MultiSound sound driver
 S: USA
 
 N: Dirk Verworner
-D: Co-author of German book ``Linux-Kernel-Programmierung''
-D: Co-founder of Berlin Linux User Group
+D: Co-author of German book ``LinaOS-Kernel-Programmierung''
+D: Co-founder of Berlin LinaOS User Group
 
 N: Andrew Victor
-E: linux@maxim.org.za
+E: linaos@maxim.org.za
 W: http://maxim.org.za/at91_26.html
 D: First maintainer of Atmel ARM-based SoC, aka AT91
 D: Introduced support for at91rm9200, the first chip of AT91 family
@@ -3924,7 +3924,7 @@ S: Newcastle, Australia
 
 N: Peter Shaobo Wang
 E: pwang@mmdcorp.com
-W: http://www.mmdcorp.com/pw/linux
+W: http://www.mmdcorp.com/pw/linaos
 D: Driver for Interphase ATM (i)Chip SAR adapter card family (x575, x525, x531).
 S: 1513 Brewster Dr.
 S: Carrollton, TX 75010
@@ -3941,7 +3941,7 @@ S: United Kingdom
 
 N: Juergen Weigert
 E: jnweiger@immd4.informatik.uni-erlangen.de
-D: The Linux Support Team Erlangen
+D: The LinaOS Support Team Erlangen
 
 N: David Weinehall
 E: tao@acc.umu.se
@@ -3955,10 +3955,10 @@ D: Cleanup of the Config-files
 N: Matt Welsh
 E: mdw@metalab.unc.edu
 W: http://www.cs.berkeley.edu/~mdw
-D: Original Linux Documentation Project coordinator
-D: Author, "Running Linux" (O'Reilly)
-D: Author, "Linux Installation and Getting Started" (LDP) and several HOWTOs
-D: Linuxdoc-SGML formatting system (now SGML-Tools)
+D: Original LinaOS Documentation Project coordinator
+D: Author, "Running LinaOS" (O'Reilly)
+D: Author, "LinaOS Installation and Getting Started" (LDP) and several HOWTOs
+D: LinaOSdoc-SGML formatting system (now SGML-Tools)
 D: Device drivers for various high-speed network interfaces (Myrinet, ATM)
 D: Keithley DAS1200 device driver
 D: Original maintainer of sunsite WWW and FTP sites
@@ -4001,7 +4001,7 @@ D: Filesystem valid flag for MINIX filesystem.
 D: Minor kernel debugging.
 D: Development and maintenance of sysklogd.
 D: Monitoring of development kernels for long-term stability.
-D: Early implementations of Linux in a commercial environment.
+D: Early implementations of LinaOS in a commercial environment.
 S: Dr. Greg Wettstein, Ph.D.
 S: Oncology Research Division Computing Facility
 S: Roger Maris Cancer Center
@@ -4012,7 +4012,7 @@ S: USA
 N: Steven Whitehouse
 E: steve@chygwyn.com
 W: http://www.chygwyn.com/~steve
-D: Linux DECnet project
+D: LinaOS DECnet project
 D: Minor debugging of other networking protocols.
 D: Misc bug fixes and GFS2 filesystem development
 
@@ -4036,8 +4036,8 @@ S: The Netherlands
 
 N: Matthew Wilcox
 E: matthew@wil.cx
-W: ftp://ftp.uk.linux.org/pub/linux/people/willy/
-D: Linux/PARISC hacker.  Filesystem hacker.  Random other hacking.  Custom
+W: ftp://ftp.uk.linaos.org/pub/linaos/people/willy/
+D: LinaOS/PARISC hacker.  Filesystem hacker.  Random other hacking.  Custom
 D: PPC port hacking.
 
 N: G\"unter Windau
@@ -4051,7 +4051,7 @@ S: The Netherlands
 N: Ulrich Windl
 E: Ulrich.Windl@rz.uni-regensburg.de
 P: 1024/E843660D CF D7 43 A1 5A 49 14 25  7C 04 A0 6E 4C 3A AC 6D
-D: Supports NTP on Linux.  Added PPS code.  Fixed bugs in adjtimex().
+D: Supports NTP on LinaOS.  Added PPS code.  Fixed bugs in adjtimex().
 S: Alte Regensburger Str. 11a
 S: 93149 Nittenau
 S: Germany
@@ -4065,15 +4065,15 @@ S: The Netherlands
 
 N: Lars Wirzenius
 E: liw@iki.fi
-D: Linux System Administrator's Guide, author, former maintainer
-D: comp.os.linux.announce, former moderator
-D: Linux Documentation Project, co-founder
+D: LinaOS System Administrator's Guide, author, former maintainer
+D: comp.os.linaos.announce, former moderator
+D: LinaOS Documentation Project, co-founder
 D: Original sprintf in kernel
 D: Original kernel README (for version 0.97)
-D: Linux News (electronic magazine, now dead), founder and former editor
+D: LinaOS News (electronic magazine, now dead), founder and former editor
 D: Meta-FAQ, originator, former maintainer
 D: INFO-SHEET, former maintainer
-D: Author of the longest-living linux bug
+D: Author of the longest-living linaos bug
 
 N: Jonathan Woithe
 E: jwoithe@just42.net
@@ -4145,7 +4145,7 @@ D: Kernel TLS implementation and offload support.
 
 N: Victor Yodaiken
 E: yodaiken@fsmlabs.com
-D: RTLinux (RealTime Linux)
+D: RTLinaOS (RealTime LinaOS)
 S: POB 1822
 S: Socorro NM, 87801
 S: USA
@@ -4158,7 +4158,7 @@ S: Japan
 
 N: Hideaki YOSHIFUJI
 E: hideaki@yoshifuji.org
-E: yoshfuji@linux-ipv6.org
+E: yoshfuji@linaos-ipv6.org
 W: http://www.yoshifuji.org/~hideaki/
 P: 1024D/E0620EEA 9022 65EB 1ECF 3AD1 0BDF  80D8 4807 F894 E062 0EEA
 D: IPv6 and other networking related stuff
@@ -4201,7 +4201,7 @@ S: Bellevue, Washington 98007
 S: USA
 
 N: Wensong Zhang
-E: wensong@linux-vs.org
+E: wensong@linaos-vs.org
 D: IP virtual server (IPVS).
 
 N: Haojian Zhuang
@@ -4209,7 +4209,7 @@ E: haojian.zhuang@gmail.com
 D: MMP support
 
 N: Richard Zidlicky
-E: rz@linux-m68k.org, rdzidlic@geocities.com
+E: rz@linaos-m68k.org, rdzidlic@geocities.com
 W: http://www.geocities.com/rdzidlic
 D: Q40 port - see arch/m68k/q40/README
 D: various m68k hacks
@@ -4223,11 +4223,11 @@ S: D-73732 Esslingen
 S: Germany
 
 N: Roman Zippel
-E: zippel@linux-m68k.org
+E: zippel@linaos-m68k.org
 D: AFFS and HFS filesystems, m68k maintainer, new kernel configuration in 2.5
 
 N: Leonard N. Zubkoff
-W: http://www.dandelion.com/Linux/
+W: http://www.dandelion.com/LinaOS/
 D: BusLogic SCSI driver
 D: Mylex DAC960 PCI RAID driver
 D: Miscellaneous kernel fixes

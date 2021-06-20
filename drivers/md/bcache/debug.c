@@ -11,11 +11,11 @@
 #include "debug.h"
 #include "extents.h"
 
-#include <linux/console.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
+#include <linaos/console.h>
+#include <linaos/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/random.h>
+#include <linaos/seq_file.h>
 
 struct dentry *bcache_debug;
 

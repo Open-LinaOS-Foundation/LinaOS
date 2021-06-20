@@ -14,9 +14,9 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/ath9k_platform.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
+#include <linaos/ath9k_platform.h>
 #include "hw.h"
 
 enum ath_bt_mode {

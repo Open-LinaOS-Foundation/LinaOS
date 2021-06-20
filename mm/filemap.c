@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *	linux/mm/filemap.c
+ *	linaos/mm/filemap.c
  *
  * Copyright (C) 1994-1999  Linus Torvalds
  */
@@ -10,38 +10,38 @@
  * most "normal" filesystems (but you don't /have/ to use this:
  * the NFS filesystem used to do this differently, for example)
  */
-#include <linux/export.h>
-#include <linux/compiler.h>
-#include <linux/dax.h>
-#include <linux/fs.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
-#include <linux/capability.h>
-#include <linux/kernel_stat.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/uio.h>
-#include <linux/error-injection.h>
-#include <linux/hash.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/pagevec.h>
-#include <linux/blkdev.h>
-#include <linux/security.h>
-#include <linux/cpuset.h>
-#include <linux/hugetlb.h>
-#include <linux/memcontrol.h>
-#include <linux/cleancache.h>
-#include <linux/shmem_fs.h>
-#include <linux/rmap.h>
-#include <linux/delayacct.h>
-#include <linux/psi.h>
-#include <linux/ramfs.h>
-#include <linux/page_idle.h>
+#include <linaos/export.h>
+#include <linaos/compiler.h>
+#include <linaos/dax.h>
+#include <linaos/fs.h>
+#include <linaos/sched/signal.h>
+#include <linaos/uaccess.h>
+#include <linaos/capability.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/gfp.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/mman.h>
+#include <linaos/pagemap.h>
+#include <linaos/file.h>
+#include <linaos/uio.h>
+#include <linaos/error-injection.h>
+#include <linaos/hash.h>
+#include <linaos/writeback.h>
+#include <linaos/backing-dev.h>
+#include <linaos/pagevec.h>
+#include <linaos/blkdev.h>
+#include <linaos/security.h>
+#include <linaos/cpuset.h>
+#include <linaos/hugetlb.h>
+#include <linaos/memcontrol.h>
+#include <linaos/cleancache.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/rmap.h>
+#include <linaos/delayacct.h>
+#include <linaos/psi.h>
+#include <linaos/ramfs.h>
+#include <linaos/page_idle.h>
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>
 #include "internal.h"
@@ -52,7 +52,7 @@
 /*
  * FIXME: remove all knowledge of the buffer layer from the core VM
  */
-#include <linux/buffer_head.h> /* for try_to_free_buffers */
+#include <linaos/buffer_head.h> /* for try_to_free_buffers */
 
 #include <asm/mman.h>
 
@@ -1784,7 +1784,7 @@ repeat:
 	/*
 	 * Has the page moved or been split?
 	 * This is part of the lockless pagecache protocol. See
-	 * include/linux/pagemap.h for details.
+	 * include/linaos/pagemap.h for details.
 	 */
 	if (unlikely(page != xas_reload(&xas))) {
 		put_page(page);

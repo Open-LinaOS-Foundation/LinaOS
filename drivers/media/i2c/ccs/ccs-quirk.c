@@ -6,10 +6,10 @@
  *
  * Copyright (C) 2020 Intel Corporation
  * Copyright (C) 2011--2012 Nokia Corporation
- * Contact: Sakari Ailus <sakari.ailus@linux.intel.com>
+ * Contact: Sakari Ailus <sakari.ailus@linaos.intel.com>
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include "ccs.h"
 #include "ccs-limits.h"

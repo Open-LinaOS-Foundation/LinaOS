@@ -4,19 +4,19 @@
  *
  * Copyright 2010 Freescale Semiconductor, Inc.
  */
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fsl_devices.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/pm_runtime.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/fsl_devices.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/pm_runtime.h>
 #include <sysdev/fsl_soc.h>
 
 /* eSPI Controller registers */

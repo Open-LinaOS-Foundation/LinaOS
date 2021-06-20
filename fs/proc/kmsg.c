@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/proc/kmsg.c
+ *  linaos/fs/proc/kmsg.c
  *
  *  Copyright (C) 1992  by Linus Torvalds
  *
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/fs.h>
-#include <linux/syslog.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/time.h>
+#include <linaos/kernel.h>
+#include <linaos/poll.h>
+#include <linaos/proc_fs.h>
+#include <linaos/fs.h>
+#include <linaos/syslog.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 
 extern wait_queue_head_t log_wait;

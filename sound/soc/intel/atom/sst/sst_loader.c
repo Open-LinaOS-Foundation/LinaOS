@@ -14,14 +14,14 @@
  *  This file contains all dsp controlling functions like firmware download,
  * setting/resetting dsp cores, etc
  */
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/firmware.h>
-#include <linux/dmaengine.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/firmware.h>
+#include <linaos/dmaengine.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_qos.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

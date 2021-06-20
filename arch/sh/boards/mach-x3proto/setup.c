@@ -6,18 +6,18 @@
  *
  * Copyright (C) 2007 - 2010  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/smc91x.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/usb/m66592.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/smc91x.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/usb/r8a66597.h>
+#include <linaos/usb/m66592.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio_keys.h>
 #include <mach/ilsel.h>
 #include <mach/hardware.h>
 #include <asm/smp-ops.h>

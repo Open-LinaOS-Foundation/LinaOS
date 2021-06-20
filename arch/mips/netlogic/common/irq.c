@@ -32,17 +32,17 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
+#include <linaos/interrupt.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
 
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
 #include <asm/errno.h>
 #include <asm/signal.h>

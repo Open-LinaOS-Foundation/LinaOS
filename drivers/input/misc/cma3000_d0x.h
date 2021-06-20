@@ -9,8 +9,8 @@
 #ifndef _INPUT_CMA3000_H
 #define _INPUT_CMA3000_H
 
-#include <linux/types.h>
-#include <linux/input.h>
+#include <linaos/types.h>
+#include <linaos/input.h>
 
 struct device;
 struct cma3000_accl_data;

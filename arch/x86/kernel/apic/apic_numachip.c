@@ -10,9 +10,9 @@
  * Send feedback to <support@numascale.com>
  *
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 
 #include <asm/numachip/numachip.h>
 #include <asm/numachip/numachip_csr.h>

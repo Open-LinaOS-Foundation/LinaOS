@@ -3,7 +3,7 @@
   * iio/adc/max1027.c
   * Copyright (C) 2014 Philippe Reynes
   *
-  * based on linux/drivers/iio/ad7923.c
+  * based on linaos/drivers/iio/ad7923.c
   * Copyright 2011 Analog Devices Inc (from AD7923 Driver)
   * Copyright 2012 CS Systemes d'Information
   *
@@ -12,17 +12,17 @@
   * Partial support for max1027 and similar chips.
   */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/spi/spi.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/spi/spi.h>
+#include <linaos/delay.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
 
 #define MAX1027_CONV_REG  BIT(7)
 #define MAX1027_SETUP_REG BIT(6)

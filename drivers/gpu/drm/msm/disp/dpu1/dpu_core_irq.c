@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The LinaOS Foundation. All rights reserved.
  */
 
 #define pr_fmt(fmt)	"[drm:%s:%d] " fmt, __func__, __LINE__
 
-#include <linux/debugfs.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/kthread.h>
+#include <linaos/debugfs.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irq.h>
+#include <linaos/kthread.h>
 
 #include "dpu_core_irq.h"
 #include "dpu_trace.h"

@@ -2,16 +2,16 @@
 /*
  * Copyright (c) 2015, Linaro Limited
  */
-#include <linux/arm-smccc.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/tee_drv.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
 #include "optee_private.h"
 #include "optee_smc.h"
 #define CREATE_TRACE_POINTS
@@ -490,7 +490,7 @@ void optee_fill_pages_list(u64 *dst, struct page **pages, int num_pages,
 
 	pages_data = (void *)dst;
 	/*
-	 * If linux page is bigger than 4k, and user buffer offset is
+	 * If linaos page is bigger than 4k, and user buffer offset is
 	 * larger than 4k/8k/12k/etc this will skip first 4k pages,
 	 * because they bear no value data for OP-TEE.
 	 */

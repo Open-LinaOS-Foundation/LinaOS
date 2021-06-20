@@ -97,6 +97,6 @@
 	};
 
 	hypervisor {
-		compatible = "linux,kvm";
+		compatible = "linaos,kvm";
 	};
 };

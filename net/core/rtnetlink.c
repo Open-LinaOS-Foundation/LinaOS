@@ -12,36 +12,36 @@
  *	Vitaly E. Lavrov		RTA_OK arithmetics was wrong.
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/capability.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/security.h>
-#include <linux/mutex.h>
-#include <linux/if_addr.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/bpf.h>
+#include <linaos/bitops.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/string.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/fcntl.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/capability.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/security.h>
+#include <linaos/mutex.h>
+#include <linaos/if_addr.h>
+#include <linaos/if_bridge.h>
+#include <linaos/if_vlan.h>
+#include <linaos/pci.h>
+#include <linaos/etherdevice.h>
+#include <linaos/bpf.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/inet.h>
-#include <linux/netdevice.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
 #include <net/ip.h>
 #include <net/protocol.h>
 #include <net/arp.h>
@@ -148,7 +148,7 @@ static inline int rtm_msgindex(int msgtype)
 	/*
 	 * msgindex < 0 implies someone tried to register a netlink
 	 * control code. msgindex >= RTM_NR_MSGTYPES may indicate that
-	 * the message type has not been added to linux/rtnetlink.h
+	 * the message type has not been added to linaos/rtnetlink.h
 	 */
 	BUG_ON(msgindex < 0 || msgindex >= RTM_NR_MSGTYPES);
 
@@ -2042,7 +2042,7 @@ static int rtnl_valid_dump_ifinfo_req(const struct nlmsghdr *nlh,
 
 	/* A hack to preserve kernel<->userspace interface.
 	 * The correct header is ifinfomsg. It is consistent with rtnl_getlink.
-	 * However, before Linux v3.9 the code here assumed rtgenmsg and that's
+	 * However, before LinaOS v3.9 the code here assumed rtgenmsg and that's
 	 * what iproute2 < v3.9.0 used.
 	 * We can detect the old iproute2. Even including the IFLA_EXT_MASK
 	 * attribute, its netlink message is shorter than struct ifinfomsg.
@@ -4297,7 +4297,7 @@ static int valid_fdb_dump_legacy(const struct nlmsghdr *nlh,
 	int err;
 
 	/* A hack to preserve kernel<->userspace interface.
-	 * Before Linux v4.12 this code accepted ndmsg since iproute2 v3.3.0.
+	 * Before LinaOS v4.12 this code accepted ndmsg since iproute2 v3.3.0.
 	 * However, ndmsg is shorter than ifinfomsg thus nlmsg_parse() bails.
 	 * So, check for ndmsg with an optional u32 attribute (not used here).
 	 * Fortunately these sizes don't conflict with the size of ifinfomsg

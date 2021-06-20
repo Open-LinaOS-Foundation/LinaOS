@@ -205,16 +205,16 @@ enum batadv_uev_type {
 
 /* Kernel headers */
 
-#include <linux/atomic.h>
-#include <linux/compiler.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/jiffies.h>
-#include <linux/netdevice.h>
-#include <linux/percpu.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <uapi/linux/batadv_packet.h>
+#include <linaos/atomic.h>
+#include <linaos/compiler.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/jiffies.h>
+#include <linaos/netdevice.h>
+#include <linaos/percpu.h>
+#include <linaos/skbuff.h>
+#include <linaos/types.h>
+#include <uapi/linaos/batadv_packet.h>
 
 #include "types.h"
 #include "main.h"

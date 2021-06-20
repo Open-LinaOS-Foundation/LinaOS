@@ -4,30 +4,30 @@
 # Copyright © 2015 IBM Corporation
 
 
-# This script checks the relocations of a vmlinux for "suspicious"
+# This script checks the relocations of a vmlinaos for "suspicious"
 # relocations.
 
 # based on relocs_check.pl
 # Copyright © 2009 IBM Corporation
 
 if [ $# -lt 3 ]; then
-	echo "$0 [path to objdump] [path to nm] [path to vmlinux]" 1>&2
+	echo "$0 [path to objdump] [path to nm] [path to vmlinaos]" 1>&2
 	exit 1
 fi
 
 # Have Kbuild supply the path to objdump and nm so we handle cross compilation.
 objdump="$1"
 nm="$2"
-vmlinux="$3"
+vmlinaos="$3"
 
 # Remove from the bad relocations those that match an undefined weak symbol
 # which will result in an absolute relocation to 0.
 # Weak unresolved symbols are of that form in nm output:
-# "                  w _binary__btf_vmlinux_bin_end"
-undef_weak_symbols=$($nm "$vmlinux" | awk '$1 ~ /w/ { print $2 }')
+# "                  w _binary__btf_vmlinaos_bin_end"
+undef_weak_symbols=$($nm "$vmlinaos" | awk '$1 ~ /w/ { print $2 }')
 
 bad_relocs=$(
-$objdump -R "$vmlinux" |
+$objdump -R "$vmlinaos" |
 	# Only look at relocation lines.
 	grep -E '\<R_' |
 	# These relocations are okay

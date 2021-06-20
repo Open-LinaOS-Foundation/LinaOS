@@ -4,17 +4,17 @@
  * All Rights Reserved
  */
 
-#include <linux/phy.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/smp.h>
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <linaos/phy.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/smp.h>
+#include <linaos/ethtool.h>
+#include <linaos/module.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/jiffies.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
 
 #include <asm/mipsregs.h>
 /*

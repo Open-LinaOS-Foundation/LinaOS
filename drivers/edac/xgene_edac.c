@@ -7,14 +7,14 @@
  *         Loc Ho <lho@apm.com>
  */
 
-#include <linux/ctype.h>
-#include <linux/edac.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
+#include <linaos/ctype.h>
+#include <linaos/edac.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/regmap.h>
 
 #include "edac_module.h"
 

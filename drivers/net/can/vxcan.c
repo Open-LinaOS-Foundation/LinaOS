@@ -9,17 +9,17 @@
  * Copyright (c) 2017 Oliver Hartkopp <socketcan@hartkopp.net>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/skb.h>
-#include <linux/can/vxcan.h>
-#include <linux/can/can-ml.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_ether.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/skb.h>
+#include <linaos/can/vxcan.h>
+#include <linaos/can/can-ml.h>
+#include <linaos/slab.h>
 #include <net/rtnetlink.h>
 
 #define DRV_NAME "vxcan"

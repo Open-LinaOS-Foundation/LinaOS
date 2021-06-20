@@ -5,7 +5,7 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include "internal.h"
 
 static enum fscache_checkaux afs_vnode_cache_check_aux(void *cookie_netfs_data,

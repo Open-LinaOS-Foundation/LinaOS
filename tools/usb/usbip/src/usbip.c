@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * command structure borrowed from udev
- * (git://git.kernel.org/pub/scm/linux/hotplug/udev.git)
+ * (git://git.kernel.org/pub/scm/linaos/hotplug/udev.git)
  *
  * Copyright (C) 2011 matt mooney <mfm@muteddisk.com>
  *               2005-2007 Takahiro Hirofuchi

@@ -18,22 +18,22 @@
 
 #undef DEBUG
 
-#include <linux/console.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/major.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linaos/console.h>
+#include <linaos/ctype.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/major.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/sysrq.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
 #include <asm/hvcall.h>
 #include <asm/hvconsole.h>
 #include <asm/prom.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/vio.h>
 #include <asm/param.h>
 #include <asm/hvsi.h>

@@ -4,7 +4,7 @@
  * T10 Data Integrity Field CRC16 Crypto Transform using PCLMULQDQ Instructions
  *
  * Copyright (C) 2013 Intel Corporation
- * Author: Tim Chen <tim.c.chen@linux.intel.com>
+ * Author: Tim Chen <tim.c.chen@linaos.intel.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free
@@ -22,14 +22,14 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/crc-t10dif.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/crc-t10dif.h>
 #include <crypto/internal/hash.h>
 #include <crypto/internal/simd.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
 #include <asm/cpufeatures.h>
 #include <asm/cpu_device_id.h>
 #include <asm/simd.h>
@@ -135,7 +135,7 @@ static void __exit crct10dif_intel_mod_fini(void)
 module_init(crct10dif_intel_mod_init);
 module_exit(crct10dif_intel_mod_fini);
 
-MODULE_AUTHOR("Tim Chen <tim.c.chen@linux.intel.com>");
+MODULE_AUTHOR("Tim Chen <tim.c.chen@linaos.intel.com>");
 MODULE_DESCRIPTION("T10 DIF CRC calculation accelerated with PCLMULQDQ.");
 MODULE_LICENSE("GPL");
 

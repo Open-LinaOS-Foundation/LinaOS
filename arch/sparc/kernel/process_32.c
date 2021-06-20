@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-/*  linux/arch/sparc/kernel/process.c
+/*  linaos/arch/sparc/kernel/process.c
  *
  *  Copyright (C) 1995, 2008 David S. Miller (davem@davemloft.net)
  *  Copyright (C) 1996 Eddie C. Dost   (ecd@skynet.be)
@@ -11,28 +11,28 @@
 
 #include <stdarg.h>
 
-#include <linux/elfcore.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/smp.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
+#include <linaos/elfcore.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/stddef.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/smp.h>
+#include <linaos/reboot.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
+#include <linaos/cpu.h>
 
 #include <asm/auxio.h>
 #include <asm/oplib.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/page.h>
 #include <asm/delay.h>
 #include <asm/processor.h>

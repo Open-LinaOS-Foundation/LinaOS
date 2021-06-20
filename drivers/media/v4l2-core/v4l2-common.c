@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Video for Linux Two
+ *	Video for LinaOS Two
  *
  *	A generic video device interface for the LINUX operating system
  *	using a set of device structures/vectors for low level operations.
@@ -13,7 +13,7 @@
  */
 
 /*
- * Video capture interface for Linux
+ * Video capture interface for LinaOS
  *
  *	A generic video device interface for the LINUX operating system
  *	using a set of device structures/vectors for low level operations.
@@ -24,7 +24,7 @@
  */
 
 /*
- * Video4linux 1/2 integration by Justin Schoeman
+ * Video4linaos 1/2 integration by Justin Schoeman
  * <justin@suntiger.ee.up.ac.za>
  * 2.4 PROCFS support ported from 2.4 kernels by
  *  Iñaki García Etxebarria <garetxe@euskalnet.net>
@@ -34,20 +34,20 @@
  * Added Gerd Knorrs v4l1 enhancements (Justin Schoeman)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/div64.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 
 /*
  *

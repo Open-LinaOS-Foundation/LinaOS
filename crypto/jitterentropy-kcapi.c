@@ -1,6 +1,6 @@
 /*
  * Non-physical true random number generator based on timing jitter --
- * Linux Kernel Crypto API specific code
+ * LinaOS Kernel Crypto API specific code
  *
  * Copyright Stephan Mueller <smueller@chronox.de>, 2015
  *
@@ -37,11 +37,11 @@
  * DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fips.h>
-#include <linux/time.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/fips.h>
+#include <linaos/time.h>
 #include <crypto/internal/rng.h>
 
 #include "jitterentropy.h"

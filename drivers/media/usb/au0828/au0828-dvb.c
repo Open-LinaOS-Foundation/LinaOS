@@ -2,15 +2,15 @@
 /*
  *  Driver for the Auvitek USB bridge
  *
- *  Copyright (c) 2008 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2008 Steven Toth <stoth@linaostv.org>
  */
 
 #include "au0828.h"
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/device.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
 #include <media/v4l2-common.h>
 #include <media/tuner.h>
 

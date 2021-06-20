@@ -8,14 +8,14 @@
 
 #define pr_fmt(fmt) "cn_test: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
 
-#include <linux/connector.h>
+#include <linaos/connector.h>
 
 static struct cb_id cn_test_id = { CN_NETLINK_USERS + 3, 0x456 };
 static char cn_test_name[] = "cn_test";

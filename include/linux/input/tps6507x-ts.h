@@ -1,4 +1,4 @@
-/* linux/i2c/tps6507x-ts.h
+/* linaos/i2c/tps6507x-ts.h
  *
  * Functions to access TPS65070 touch screen chip.
  *

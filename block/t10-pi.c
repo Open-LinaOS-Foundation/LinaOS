@@ -4,10 +4,10 @@
  *	      Information.
  */
 
-#include <linux/t10-pi.h>
-#include <linux/blkdev.h>
-#include <linux/crc-t10dif.h>
-#include <linux/module.h>
+#include <linaos/t10-pi.h>
+#include <linaos/blkdev.h>
+#include <linaos/crc-t10dif.h>
+#include <linaos/module.h>
 #include <net/checksum.h>
 
 typedef __be16 (csum_fn) (void *, unsigned int);

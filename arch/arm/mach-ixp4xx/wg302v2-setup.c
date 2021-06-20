@@ -13,12 +13,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/serial_8250.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/serial.h>
+#include <linaos/tty.h>
+#include <linaos/serial_8250.h>
 
 #include <asm/types.h>
 #include <asm/setup.h>

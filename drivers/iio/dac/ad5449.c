@@ -7,20 +7,20 @@
  *  Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/spi/spi.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/regulator/consumer.h>
 #include <asm/unaligned.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
-#include <linux/platform_data/ad5449.h>
+#include <linaos/platform_data/ad5449.h>
 
 #define AD5449_MAX_CHANNELS		2
 #define AD5449_MAX_VREFS		2

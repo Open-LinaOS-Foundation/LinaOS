@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2010-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2014, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _COMMON_H_
 #define _COMMON_H_
 
-#include <linux/crypto.h>
-#include <linux/types.h>
+#include <linaos/crypto.h>
+#include <linaos/types.h>
 #include <crypto/aes.h>
 #include <crypto/hash.h>
 #include <crypto/internal/skcipher.h>

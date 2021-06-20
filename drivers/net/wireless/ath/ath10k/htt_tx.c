@@ -4,7 +4,7 @@
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
  */
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include "htt.h"
 #include "mac.h"
 #include "hif.h"

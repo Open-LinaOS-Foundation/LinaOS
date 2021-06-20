@@ -8,18 +8,18 @@
  *		Philip Rakity <prakity@marvell.com>
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_data/pxa_sdhci.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/host.h>
+#include <linaos/platform_data/pxa_sdhci.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 #include "sdhci.h"
 #include "sdhci-pltfm.h"

@@ -4,33 +4,33 @@
  */
 
 #include <crypto/hash.h>
-#include <linux/kernel.h>
-#include <linux/bio.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/backing-dev.h>
-#include <linux/writeback.h>
-#include <linux/compat.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl.h>
-#include <linux/falloc.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
-#include <linux/btrfs.h>
-#include <linux/blkdev.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/uio.h>
-#include <linux/magic.h>
-#include <linux/iversion.h>
-#include <linux/swap.h>
-#include <linux/migrate.h>
-#include <linux/sched/mm.h>
-#include <linux/iomap.h>
+#include <linaos/kernel.h>
+#include <linaos/bio.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/highmem.h>
+#include <linaos/time.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/backing-dev.h>
+#include <linaos/writeback.h>
+#include <linaos/compat.h>
+#include <linaos/xattr.h>
+#include <linaos/posix_acl.h>
+#include <linaos/falloc.h>
+#include <linaos/slab.h>
+#include <linaos/ratelimit.h>
+#include <linaos/btrfs.h>
+#include <linaos/blkdev.h>
+#include <linaos/posix_acl_xattr.h>
+#include <linaos/uio.h>
+#include <linaos/magic.h>
+#include <linaos/iversion.h>
+#include <linaos/swap.h>
+#include <linaos/migrate.h>
+#include <linaos/sched/mm.h>
+#include <linaos/iomap.h>
 #include <asm/unaligned.h>
 #include "misc.h"
 #include "ctree.h"
@@ -6541,7 +6541,7 @@ static int btrfs_mknod(struct user_namespace *mnt_userns, struct inode *dir,
 	/*
 	 * 2 for inode item and ref
 	 * 2 for dir items
-	 * 1 for xattr if selinux is on
+	 * 1 for xattr if selinaos is on
 	 */
 	trans = btrfs_start_transaction(root, 5);
 	if (IS_ERR(trans))
@@ -6605,7 +6605,7 @@ static int btrfs_create(struct user_namespace *mnt_userns, struct inode *dir,
 	/*
 	 * 2 for inode item and ref
 	 * 2 for dir items
-	 * 1 for xattr if selinux is on
+	 * 1 for xattr if selinaos is on
 	 */
 	trans = btrfs_start_transaction(root, 5);
 	if (IS_ERR(trans))
@@ -6750,7 +6750,7 @@ static int btrfs_mkdir(struct user_namespace *mnt_userns, struct inode *dir,
 	/*
 	 * 2 items for inode and ref
 	 * 2 items for dir items
-	 * 1 for xattr if selinux is on
+	 * 1 for xattr if selinaos is on
 	 */
 	trans = btrfs_start_transaction(root, 5);
 	if (IS_ERR(trans))
@@ -9414,7 +9414,7 @@ static int btrfs_rename(struct inode *old_dir, struct dentry *old_dentry,
 	 * should cover the worst case number of items we'll modify.
 	 * If our rename has the whiteout flag, we need more 5 units for the
 	 * new inode (1 inode item, 1 inode ref, 2 dir items and 1 xattr item
-	 * when selinux is enabled).
+	 * when selinaos is enabled).
 	 */
 	trans_num_items = 11;
 	if (flags & RENAME_WHITEOUT)
@@ -9795,7 +9795,7 @@ static int btrfs_symlink(struct user_namespace *mnt_userns, struct inode *dir,
 	 * 2 items for dir items
 	 * 1 item for updating parent inode item
 	 * 1 item for the inline extent item
-	 * 1 item for xattr if selinux is on
+	 * 1 item for xattr if selinaos is on
 	 */
 	trans = btrfs_start_transaction(root, 7);
 	if (IS_ERR(trans))

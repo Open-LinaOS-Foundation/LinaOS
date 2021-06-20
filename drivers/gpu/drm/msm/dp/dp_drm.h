@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2017-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017-2020, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _DP_DRM_H_
 #define _DP_DRM_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <drm/drm_crtc.h>
 #include <drm/drm_crtc_helper.h>
 

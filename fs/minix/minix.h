@@ -2,9 +2,9 @@
 #ifndef FS_MINIX_H
 #define FS_MINIX_H
 
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/minix_fs.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/minix_fs.h>
 
 #define INODE_VERSION(inode)	minix_sb(inode->i_sb)->s_version
 #define MINIX_V1		0x0001		/* original minix fs */

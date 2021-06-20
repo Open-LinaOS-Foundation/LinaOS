@@ -4,21 +4,21 @@
  * Copyright 2005-06 Tower Technologies
  *
  * Author: Alessandro Zummo <a.zummo@towertech.it>
- * Maintainers: http://www.nslu2-linux.org/
+ * Maintainers: http://www.nslu2-linaos.org/
  *
  * based on the other drivers in this same directory.
  *
  * http://www.semiconductors.philips.com/acrobat/datasheets/PCF8563-04.pdf
  */
 
-#include <linux/clk-provider.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/err.h>
+#include <linaos/clk-provider.h>
+#include <linaos/i2c.h>
+#include <linaos/bcd.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/err.h>
 
 #define PCF8563_REG_ST1		0x00 /* status */
 #define PCF8563_REG_ST2		0x01

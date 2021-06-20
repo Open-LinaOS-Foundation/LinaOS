@@ -16,14 +16,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/mfd/tps65217.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/backlight.h>
+#include <linaos/err.h>
+#include <linaos/fb.h>
+#include <linaos/mfd/tps65217.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 struct tps65217_bl {
 	struct tps65217 *tps;

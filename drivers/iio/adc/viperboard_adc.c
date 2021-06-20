@@ -7,18 +7,18 @@
  *  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
 
-#include <linux/usb.h>
-#include <linux/iio/iio.h>
+#include <linaos/usb.h>
+#include <linaos/iio/iio.h>
 
-#include <linux/mfd/viperboard.h>
+#include <linaos/mfd/viperboard.h>
 
 #define VPRBRD_ADC_CMD_GET		0x00
 

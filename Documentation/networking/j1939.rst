@@ -169,7 +169,7 @@ API Calls
 ---------
 
 On CAN, you first need to open a socket for communicating over a CAN network.
-To use J1939, ``#include <linux/can/j1939.h>``. From there, ``<linux/can.h>`` will be
+To use J1939, ``#include <linaos/can/j1939.h>``. From there, ``<linaos/can.h>`` will be
 included too. To open a socket, use:
 
 .. code-block:: C

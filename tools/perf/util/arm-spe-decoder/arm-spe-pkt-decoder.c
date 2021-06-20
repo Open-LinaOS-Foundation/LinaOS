@@ -8,7 +8,7 @@
 #include <string.h>
 #include <endian.h>
 #include <byteswap.h>
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include <stdarg.h>
 
 #include "arm-spe-pkt-decoder.h"

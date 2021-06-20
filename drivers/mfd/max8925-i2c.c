@@ -5,12 +5,12 @@
  * Copyright (C) 2009 Marvell International Ltd.
  *	Haojian Zhuang <haojian.zhuang@marvell.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/mfd/max8925.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/mfd/max8925.h>
+#include <linaos/slab.h>
 
 #define RTC_I2C_ADDR		0x68
 #define ADC_I2C_ADDR		0x47

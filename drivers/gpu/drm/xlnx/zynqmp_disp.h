@@ -12,7 +12,7 @@
 #ifndef _ZYNQMP_DISP_H_
 #define _ZYNQMP_DISP_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * 3840x2160 is advertised as the maximum resolution, but almost any

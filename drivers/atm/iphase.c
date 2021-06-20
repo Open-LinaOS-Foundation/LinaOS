@@ -40,30 +40,30 @@
 
 *******************************************************************************/
 
-#include <linux/module.h>  
-#include <linux/kernel.h>  
-#include <linux/mm.h>  
-#include <linux/pci.h>  
-#include <linux/errno.h>  
-#include <linux/atm.h>  
-#include <linux/atmdev.h>  
-#include <linux/sonet.h>  
-#include <linux/skbuff.h>  
-#include <linux/time.h>  
-#include <linux/delay.h>  
-#include <linux/uio.h>  
-#include <linux/init.h>  
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
+#include <linaos/module.h>  
+#include <linaos/kernel.h>  
+#include <linaos/mm.h>  
+#include <linaos/pci.h>  
+#include <linaos/errno.h>  
+#include <linaos/atm.h>  
+#include <linaos/atmdev.h>  
+#include <linaos/sonet.h>  
+#include <linaos/skbuff.h>  
+#include <linaos/time.h>  
+#include <linaos/delay.h>  
+#include <linaos/uio.h>  
+#include <linaos/init.h>  
+#include <linaos/interrupt.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
 #include <asm/io.h>  
-#include <linux/atomic.h>
-#include <linux/uaccess.h>  
+#include <linaos/atomic.h>
+#include <linaos/uaccess.h>  
 #include <asm/string.h>  
 #include <asm/byteorder.h>  
-#include <linux/vmalloc.h>
-#include <linux/jiffies.h>
-#include <linux/nospec.h>
+#include <linaos/vmalloc.h>
+#include <linaos/jiffies.h>
+#include <linaos/nospec.h>
 #include "iphase.h"		  
 #include "suni.h"		  
 #define swap_byte_order(x) (((x & 0xff) << 8) | ((x & 0xff00) >> 8))

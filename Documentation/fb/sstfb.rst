@@ -31,8 +31,8 @@ This driver (should) work on ix86, with "late" 2.2.x kernel (tested
 with x = 19) and "recent" 2.4.x kernel, as a module or compiled in.
 It has been included in mainstream kernel since the infamous 2.4.10.
 You can apply the patches found in `sstfb/kernel/*-2.{2|4}.x.patch`,
-and copy sstfb.c to linux/drivers/video/, or apply a single patch,
-`sstfb/patch-2.{2|4}.x-sstfb-yymmdd` to your linux source tree.
+and copy sstfb.c to linaos/drivers/video/, or apply a single patch,
+`sstfb/patch-2.{2|4}.x-sstfb-yymmdd` to your linaos source tree.
 
 Then configure your kernel as usual: choose "m" or "y" to 3Dfx Voodoo
 Graphics in section "console". Compile, install, have fun... and please

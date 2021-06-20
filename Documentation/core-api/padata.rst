@@ -25,7 +25,7 @@ Initializing
 The first step in using padata to run serialized jobs is to set up a
 padata_instance structure for overall control of how jobs are to be run::
 
-    #include <linux/padata.h>
+    #include <linaos/padata.h>
 
     struct padata_instance *padata_alloc(const char *name);
 
@@ -174,5 +174,5 @@ padata_do_multithreaded(), which will return once the job is finished.
 Interface
 =========
 
-.. kernel-doc:: include/linux/padata.h
+.. kernel-doc:: include/linaos/padata.h
 .. kernel-doc:: kernel/padata.c

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/arm/mach-sa1100/lart.c
+ * linaos/arch/arm/mach-sa1100/lart.c
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/tty.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_data/sa11x0-serial.h>
+#include <linaos/tty.h>
+#include <linaos/gpio.h>
+#include <linaos/leds.h>
+#include <linaos/platform_device.h>
 
 #include <video/sa1100fb.h>
 
@@ -20,7 +20,7 @@
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <linaos/platform_data/mfd-mcp-sa11x0.h>
 #include <mach/irqs.h>
 
 #include "generic.h"

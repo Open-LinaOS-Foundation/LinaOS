@@ -30,12 +30,12 @@
  * SOFTWARE.
  */
 
-#include <linux/list.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/mlx5/fs.h>
-#include <linux/mlx5/mpfs.h>
+#include <linaos/list.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/tcp.h>
+#include <linaos/mlx5/fs.h>
+#include <linaos/mlx5/mpfs.h>
 #include "en.h"
 #include "en_rep.h"
 #include "lib/mpfs.h"

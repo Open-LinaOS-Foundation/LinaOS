@@ -6,7 +6,7 @@
 #ifndef __ETNAVIV_CMDBUF_H__
 #define __ETNAVIV_CMDBUF_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct device;
 struct etnaviv_iommu_context;

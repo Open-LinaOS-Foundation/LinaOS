@@ -5,7 +5,7 @@
  * Copyright (C) 2013 Texas Instruments Inc.
  */
 
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 
 #include "acx.h"
 #include "wlcore.h"

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kasan.h>
-#include <linux/sched/task.h>
-#include <linux/memblock.h>
-#include <linux/pgtable.h>
+#include <linaos/kasan.h>
+#include <linaos/sched/task.h>
+#include <linaos/memblock.h>
+#include <linaos/pgtable.h>
 #include <asm/pgalloc.h>
 #include <asm/kasan.h>
 #include <asm/mem_detect.h>
@@ -28,7 +28,7 @@ static pgd_t early_pg_dir[PTRS_PER_PGD] __initdata __aligned(PAGE_SIZE);
 
 static void __init kasan_early_panic(const char *reason)
 {
-	sclp_early_printk("The Linux kernel failed to boot with the KernelAddressSanitizer:\n");
+	sclp_early_printk("The LinaOS kernel failed to boot with the KernelAddressSanitizer:\n");
 	sclp_early_printk(reason);
 	disabled_wait();
 }

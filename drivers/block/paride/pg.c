@@ -130,7 +130,7 @@
 #define PI_PG	4
 #endif
 
-#include <linux/types.h>
+#include <linaos/types.h>
 /* Here are things one can override from the insmod command.
    Most are autoprobed by paride unless set here.  Verbose is 0
    by default.
@@ -154,19 +154,19 @@ enum {D_PRT, D_PRO, D_UNI, D_MOD, D_SLV, D_DLY};
 
 /* end of parameters */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mtio.h>
-#include <linux/pg.h>
-#include <linux/device.h>
-#include <linux/sched.h>	/* current, TASK_* */
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/mtio.h>
+#include <linaos/pg.h>
+#include <linaos/device.h>
+#include <linaos/sched.h>	/* current, TASK_* */
+#include <linaos/mutex.h>
+#include <linaos/jiffies.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 module_param(verbose, int, 0644);
 module_param(major, int, 0);

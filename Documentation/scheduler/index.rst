@@ -1,5 +1,5 @@
 ===============
-Linux Scheduler
+LinaOS Scheduler
 ===============
 
 .. toctree::

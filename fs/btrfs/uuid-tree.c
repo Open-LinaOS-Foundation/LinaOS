@@ -3,7 +3,7 @@
  * Copyright (C) STRATO AG 2013.  All rights reserved.
  */
 
-#include <linux/uuid.h>
+#include <linaos/uuid.h>
 #include <asm/unaligned.h>
 #include "ctree.h"
 #include "transaction.h"

@@ -2,7 +2,7 @@
 #ifndef __LINUX_ULPI_INTERFACE_H
 #define __LINUX_ULPI_INTERFACE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct ulpi;
 struct device;

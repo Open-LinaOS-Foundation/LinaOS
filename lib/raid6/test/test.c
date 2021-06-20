@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2002-2007 H. Peter Anvin - All Rights Reserved
  *
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <linux/raid/pq.h>
+#include <linaos/raid/pq.h>
 
 #define NDISKS		16	/* Including P and Q */
 

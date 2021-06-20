@@ -4,7 +4,7 @@
  * for more details.
  *
  * Copyright (C) 2005 Embedded Alley Solutions, Inc
- * Copyright (C) 2005 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2005 Ralf Baechle (ralf@linaos-mips.org)
  * Copyright (C) 2009 Jiajie Chen (chenjiajie@cse.buaa.edu.cn)
  * Copyright (C) 2012 Huacai Chen (chenhc@lemote.com)
  */

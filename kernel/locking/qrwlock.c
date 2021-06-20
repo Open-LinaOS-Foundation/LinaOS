@@ -6,12 +6,12 @@
  *
  * Authors: Waiman Long <waiman.long@hp.com>
  */
-#include <linux/smp.h>
-#include <linux/bug.h>
-#include <linux/cpumask.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/spinlock.h>
+#include <linaos/smp.h>
+#include <linaos/bug.h>
+#include <linaos/cpumask.h>
+#include <linaos/percpu.h>
+#include <linaos/hardirq.h>
+#include <linaos/spinlock.h>
 
 /**
  * queued_read_lock_slowpath - acquire read lock of a queue rwlock

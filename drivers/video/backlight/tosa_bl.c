@@ -6,15 +6,15 @@
  *  Copyright (c) 2007,2008	Dmitry Baryshkov
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c.h>
-#include <linux/gpio/consumer.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/i2c.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/fb.h>
+#include <linaos/backlight.h>
+#include <linaos/slab.h>
 
 #include <asm/mach/sharpsl_param.h>
 

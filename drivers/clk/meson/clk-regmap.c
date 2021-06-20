@@ -4,7 +4,7 @@
  * Author: Jerome Brunet <jbrunet@baylibre.com>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "clk-regmap.h"
 
 static int clk_regmap_gate_endisable(struct clk_hw *hw, int enable)

@@ -7,7 +7,7 @@
 #if defined(__KERNEL__) && !defined(__ASSEMBLY__)
 
 #include <asm/asm.h>
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include <asm/alternative.h>
 
 enum cpuid_leafs

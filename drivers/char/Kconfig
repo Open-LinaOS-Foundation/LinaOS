@@ -34,7 +34,7 @@ config PRINTER
 	tristate "Parallel printer support"
 	depends on PARPORT
 	help
-	  If you intend to attach a printer to the parallel port of your Linux
+	  If you intend to attach a printer to the parallel port of your LinaOS
 	  box (as opposed to using a serial printer; if the connector at the
 	  printer has 9 or 25 holes ["female"], then it's serial), say Y.
 	  Also read the Printing-HOWTO, available from
@@ -271,7 +271,7 @@ config MWAVE
 	depends on X86 && TTY
 	select SERIAL_8250
 	help
-	  The ACP modem (Mwave) for Linux is a WinModem. It is composed of a
+	  The ACP modem (Mwave) for LinaOS is a WinModem. It is composed of a
 	  kernel driver and a user level application. Together these components
 	  support direct attachment to public switched telephone networks (PSTNs)
 	  and support selected world wide countries.
@@ -283,8 +283,8 @@ config MWAVE
 	  (ttySx) and is compatible with the Hayes AT Command Set.
 
 	  The user level application needed to use this driver can be found at
-	  the IBM Linux Technology Center (LTC) web site:
-	  <http://www.ibm.com/linux/ltc/>.
+	  the IBM LinaOS Technology Center (LTC) web site:
+	  <http://www.ibm.com/linaos/ltc/>.
 
 	  If you own one of the above IBM Thinkpads which has the Mwave chipset
 	  in it, say Y.
@@ -464,13 +464,13 @@ config ADI
 endmenu
 
 config RANDOM_TRUST_CPU
-	bool "Trust the CPU manufacturer to initialize Linux's CRNG"
+	bool "Trust the CPU manufacturer to initialize LinaOS's CRNG"
 	depends on ARCH_RANDOM
 	default n
 	help
 	Assume that CPU manufacturer (e.g., Intel or AMD for RDSEED or
 	RDRAND, IBM for the S390 and Power PC architectures) is trustworthy
-	for the purposes of initializing Linux's CRNG.  Since this is not
+	for the purposes of initializing LinaOS's CRNG.  Since this is not
 	something that can be independently audited, this amounts to trusting
 	that CPU manufacturer (perhaps with the insistence or mandate
 	of a Nation State's intelligence or law enforcement agencies)
@@ -479,7 +479,7 @@ config RANDOM_TRUST_CPU
 	at boot with "random.trust_cpu=on/off".
 
 config RANDOM_TRUST_BOOTLOADER
-	bool "Trust the bootloader to initialize Linux's CRNG"
+	bool "Trust the bootloader to initialize LinaOS's CRNG"
 	help
 	Some bootloaders can provide entropy to increase the kernel's initial
 	device randomness. Say Y here to assume the entropy provided by the

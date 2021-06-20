@@ -4,7 +4,7 @@
  * Copyright (C) 2010 Will Deacon, ARM Ltd.
  */
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 #include "irqs.h"
 
 static struct resource pmu_resource = {

@@ -3,10 +3,10 @@
  * Copyright © 2021 Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/moduleparam.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
 #include "i915_drv.h"
 #include "i915_mitigations.h"

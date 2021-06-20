@@ -6,7 +6,7 @@
 #endif
 
 /*
- * include/linux/rwlock_api_smp.h
+ * include/linaos/rwlock_api_smp.h
  *
  * spinlock API declarations on SMP (and debug)
  * (implemented in kernel/spinlock.c)

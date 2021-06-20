@@ -5,14 +5,14 @@
  * Copyright (C) 2009 Peter Edwards <sweetlilmre@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/z2_battery.h>
+#include <linaos/module.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/power_supply.h>
+#include <linaos/slab.h>
+#include <linaos/z2_battery.h>
 
 #define	Z2_DEFAULT_NAME	"Z2"
 

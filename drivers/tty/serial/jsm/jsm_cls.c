@@ -6,21 +6,21 @@
  *	NOTE TO LINUX KERNEL HACKERS:  DO NOT REFORMAT THIS CODE!
  *
  *	This is shared code between Digi's CVS archive and the
- *	Linux Kernel sources.
+ *	LinaOS Kernel sources.
  *	Changing the source just for reformatting needlessly breaks
  *	our CVS diff history.
  *
- *	Send any bug fixes/changes to:  Eng.Linux at digi dot com.
+ *	Send any bug fixes/changes to:  Eng.LinaOS at digi dot com.
  *	Thank you.
  *
  */
 
-#include <linux/delay.h>	/* For udelay */
-#include <linux/io.h>		/* For read[bwl]/write[bwl] */
-#include <linux/serial.h>	/* For struct async_serial */
-#include <linux/serial_reg.h>	/* For the various UART offsets */
-#include <linux/pci.h>
-#include <linux/tty.h>
+#include <linaos/delay.h>	/* For udelay */
+#include <linaos/io.h>		/* For read[bwl]/write[bwl] */
+#include <linaos/serial.h>	/* For struct async_serial */
+#include <linaos/serial_reg.h>	/* For the various UART offsets */
+#include <linaos/pci.h>
+#include <linaos/tty.h>
 
 #include "jsm.h"	/* Driver main header file */
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2018, Intel Corporation. */
 
-/* Intel(R) Ethernet Connection E800 Series Linux Driver */
+/* Intel(R) Ethernet Connection E800 Series LinaOS Driver */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
@@ -14,7 +14,7 @@
 #include "ice_dcb_nl.h"
 #include "ice_devlink.h"
 
-#define DRV_SUMMARY	"Intel(R) Ethernet Connection E800 Series Linux Driver"
+#define DRV_SUMMARY	"Intel(R) Ethernet Connection E800 Series LinaOS Driver"
 static const char ice_driver_string[] = DRV_SUMMARY;
 static const char ice_copyright[] = "Copyright (c) 2018, Intel Corporation.";
 
@@ -22,7 +22,7 @@ static const char ice_copyright[] = "Copyright (c) 2018, Intel Corporation.";
 #define ICE_DDP_PKG_PATH	"intel/ice/ddp/"
 #define ICE_DDP_PKG_FILE	ICE_DDP_PKG_PATH "ice.pkg"
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <linaos.nics@intel.com>");
 MODULE_DESCRIPTION(DRV_SUMMARY);
 MODULE_LICENSE("GPL v2");
 MODULE_FIRMWARE(ICE_DDP_PKG_FILE);

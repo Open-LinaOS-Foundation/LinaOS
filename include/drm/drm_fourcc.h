@@ -22,7 +22,7 @@
 #ifndef __DRM_FOURCC_H__
 #define __DRM_FOURCC_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <uapi/drm/drm_fourcc.h>
 
 /*

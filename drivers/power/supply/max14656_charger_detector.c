@@ -9,15 +9,15 @@
  * Copyright (C) Amazon Technologies Inc. All rights reserved.
  * Manish Lachwani (lachwani@lab126.com)
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/of_device.h>
-#include <linux/workqueue.h>
-#include <linux/power_supply.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/of_device.h>
+#include <linaos/workqueue.h>
+#include <linaos/power_supply.h>
 
 #define MAX14656_MANUFACTURER	"Maxim Integrated"
 #define MAX14656_NAME		"max14656"

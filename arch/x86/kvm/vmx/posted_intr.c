@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 #include <asm/irq_remapping.h>
 #include <asm/cpu.h>

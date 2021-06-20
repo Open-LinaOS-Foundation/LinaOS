@@ -14,7 +14,7 @@
  * Prom setup file for AR5312/AR231x SoCs
  */
 
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/bootinfo.h>
 
 void __init prom_init(void)

@@ -6,14 +6,14 @@
  * This file contains TC6387XB base support.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mfd/tc6387xb.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/tmio.h>
+#include <linaos/mfd/tc6387xb.h>
+#include <linaos/slab.h>
 
 enum {
 	TC6387XB_CELL_MMC,

@@ -5,7 +5,7 @@
 enum uv_system_type {UV_NONE, UV_LEGACY_APIC, UV_X2APIC};
 
 #ifdef CONFIG_X86_UV
-#include <linux/efi.h>
+#include <linaos/efi.h>
 
 #define	UV_PROC_NODE	"sgi_uv"
 

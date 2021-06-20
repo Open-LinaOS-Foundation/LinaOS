@@ -2,14 +2,14 @@
 /*
  * Copyright (c) 2015-2016, Linaro Limited
  */
-#include <linux/device.h>
-#include <linux/dma-buf.h>
-#include <linux/fdtable.h>
-#include <linux/idr.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
-#include <linux/uio.h>
+#include <linaos/device.h>
+#include <linaos/dma-buf.h>
+#include <linaos/fdtable.h>
+#include <linaos/idr.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/tee_drv.h>
+#include <linaos/uio.h>
 #include "tee_private.h"
 
 static void release_registered_pages(struct tee_shm *shm)

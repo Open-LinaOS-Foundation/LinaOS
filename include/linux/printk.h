@@ -3,14 +3,14 @@
 #define __KERNEL_PRINTK__
 
 #include <stdarg.h>
-#include <linux/init.h>
-#include <linux/kern_levels.h>
-#include <linux/linkage.h>
-#include <linux/cache.h>
-#include <linux/ratelimit_types.h>
+#include <linaos/init.h>
+#include <linaos/kern_levels.h>
+#include <linaos/linkage.h>
+#include <linaos/cache.h>
+#include <linaos/ratelimit_types.h>
 
-extern const char linux_banner[];
-extern const char linux_proc_banner[];
+extern const char linaos_banner[];
+extern const char linaos_proc_banner[];
 
 extern int oops_in_progress;	/* If set, an oops, panic(), BUG() or die() is in progress */
 
@@ -406,7 +406,7 @@ extern int kptr_restrict;
 /* If you are writing a driver, please use dev_dbg instead */
 #if defined(CONFIG_DYNAMIC_DEBUG) || \
 	(defined(CONFIG_DYNAMIC_DEBUG_CORE) && defined(DYNAMIC_DEBUG_MODULE))
-#include <linux/dynamic_debug.h>
+#include <linaos/dynamic_debug.h>
 
 /**
  * pr_debug - Print a debug-level message conditionally

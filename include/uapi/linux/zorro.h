@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- *  linux/zorro.h -- Amiga AutoConfig (Zorro) Bus Definitions
+ *  linaos/zorro.h -- Amiga AutoConfig (Zorro) Bus Definitions
  *
  *  Copyright (C) 1995--2003 Geert Uytterhoeven
  *
@@ -12,7 +12,7 @@
 #ifndef _UAPI_LINUX_ZORRO_H
 #define _UAPI_LINUX_ZORRO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 
     /*
@@ -40,7 +40,7 @@ typedef __u32 zorro_id;
 
 
 /* Include the ID list */
-#include <linux/zorro_ids.h>
+#include <linaos/zorro_ids.h>
 
 
     /*

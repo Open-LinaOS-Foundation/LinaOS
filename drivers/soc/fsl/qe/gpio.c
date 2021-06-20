@@ -7,18 +7,18 @@
  * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/gpio/driver.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/gpio/driver.h>
 /* FIXME: needed for gpio_to_chip() get rid of this */
-#include <linux/gpio.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/gpio.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 #include <soc/fsl/qe/qe.h>
 
 struct qe_gpio_chip {

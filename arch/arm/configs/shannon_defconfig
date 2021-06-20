@@ -8,7 +8,7 @@ CONFIG_PCCARD=y
 CONFIG_PCMCIA_SA1100=y
 CONFIG_ZBOOT_ROM_TEXT=0x0
 CONFIG_ZBOOT_ROM_BSS=0x0
-CONFIG_CMDLINE="console=ttySA0,9600 console=tty1 root=/dev/mtdblock2 init=/linuxrc"
+CONFIG_CMDLINE="console=ttySA0,9600 console=tty1 root=/dev/mtdblock2 init=/linaosrc"
 CONFIG_FPE_NWFPE=y
 CONFIG_NET=y
 CONFIG_PACKET=y

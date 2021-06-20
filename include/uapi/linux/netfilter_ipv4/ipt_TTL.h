@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* TTL modification module for IP tables
  * (C) 2000 by Harald Welte <laforge@netfilter.org> */
 
 #ifndef _IPT_TTL_H
 #define _IPT_TTL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum {
 	IPT_TTL_SET = 0,

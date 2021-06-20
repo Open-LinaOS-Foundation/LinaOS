@@ -5,15 +5,15 @@
  * test virtio server in host kernel.
  */
 
-#include <linux/compat.h>
-#include <linux/eventfd.h>
-#include <linux/vhost.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/file.h>
-#include <linux/slab.h>
+#include <linaos/compat.h>
+#include <linaos/eventfd.h>
+#include <linaos/vhost.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/workqueue.h>
+#include <linaos/file.h>
+#include <linaos/slab.h>
 
 #include "test.h"
 #include "vhost.h"

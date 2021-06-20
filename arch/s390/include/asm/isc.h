@@ -2,7 +2,7 @@
 #ifndef _ASM_S390_ISC_H
 #define _ASM_S390_ISC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * I/O interruption subclasses used by drivers.

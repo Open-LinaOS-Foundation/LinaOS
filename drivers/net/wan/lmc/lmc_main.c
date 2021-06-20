@@ -20,8 +20,8 @@
   * To control link specific options lmcctl is required.
   * It can be obtained from ftp.lanmedia.com.
   *
-  * Linux driver notes:
-  * Linux uses the device struct lmc_private to pass private information
+  * LinaOS driver notes:
+  * LinaOS uses the device struct lmc_private to pass private information
   * around.
   *
   * The initialization portion of this driver (the lmc_reset() and the
@@ -34,29 +34,29 @@
   * we no longer can transmit.
   */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/hdlc.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/inet.h>
-#include <linux/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/ptrace.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/hdlc.h>
+#include <linaos/in.h>
+#include <linaos/if_arp.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/inet.h>
+#include <linaos/bitops.h>
 #include <asm/processor.h>             /* Processor type for cache alignment. */
 #include <asm/io.h>
 #include <asm/dma.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 //#include <asm/spinlock.h>
 
 #define DRIVER_MAJOR_VERSION     1
@@ -102,7 +102,7 @@ static void lmc_dec_reset(lmc_softc_t * const sc);
 static void lmc_driver_timeout(struct net_device *dev, unsigned int txqueue);
 
 /*
- * linux reserves 16 device specific IOCTLs.  We call them
+ * linaos reserves 16 device specific IOCTLs.  We call them
  * LMCIOC* to control various bits of our world.
  */
 int lmc_ioctl(struct net_device *dev, struct ifreq *ifr, int cmd) /*fold00*/

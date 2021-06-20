@@ -10,17 +10,17 @@
  * https://www.maxbotix.com/documents/I2CXL-MaxSonar-EZ_Datasheet.pdf
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/of_irq.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/of_irq.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
 
 /* registers of MaxSonar device */
 #define MB1232_RANGE_COMMAND	0x51	/* Command for reading range */

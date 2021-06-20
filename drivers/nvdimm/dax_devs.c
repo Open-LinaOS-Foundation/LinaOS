@@ -2,10 +2,10 @@
 /*
  * Copyright(c) 2013-2016 Intel Corporation. All rights reserved.
  */
-#include <linux/device.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <linaos/device.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
 #include "nd-core.h"
 #include "pfn.h"
 #include "nd.h"

@@ -8,12 +8,12 @@
  * manipulated in a form independent of the underlying raid.  Ultimately this
  * should work for both hardware and software raids.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/raid_class.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/raid_class.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>
 

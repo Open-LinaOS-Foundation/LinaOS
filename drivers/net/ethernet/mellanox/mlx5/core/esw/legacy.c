@@ -1,11 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /* Copyright (c) 2021 Mellanox Technologies Ltd */
 
-#include <linux/etherdevice.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/mlx5_ifc.h>
-#include <linux/mlx5/vport.h>
-#include <linux/mlx5/fs.h>
+#include <linaos/etherdevice.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/mlx5/mlx5_ifc.h>
+#include <linaos/mlx5/vport.h>
+#include <linaos/mlx5/fs.h>
 #include "esw/acl/lgcy.h"
 #include "esw/legacy.h"
 #include "mlx5_core.h"

@@ -13,15 +13,15 @@
  * Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/input/mt.h>
+#include <linaos/input/touchscreen.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/delay.h>
 
 /* Packet header defines (first byte of data send / received) */
 #define EKTF2127_NOISE			0x40

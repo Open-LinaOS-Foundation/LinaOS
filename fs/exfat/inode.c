@@ -3,16 +3,16 @@
  * Copyright (C) 2012-2013 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/init.h>
-#include <linux/buffer_head.h>
-#include <linux/mpage.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/time.h>
-#include <linux/writeback.h>
-#include <linux/uio.h>
-#include <linux/random.h>
-#include <linux/iversion.h>
+#include <linaos/init.h>
+#include <linaos/buffer_head.h>
+#include <linaos/mpage.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/time.h>
+#include <linaos/writeback.h>
+#include <linaos/uio.h>
+#include <linaos/random.h>
+#include <linaos/iversion.h>
 
 #include "exfat_raw.h"
 #include "exfat_fs.h"

@@ -2,13 +2,13 @@
 /*
  *  GT641xx IRQ routines.
  *
- *  Copyright (C) 2007	Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2007	Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/hardirq.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 
 #include <asm/gt64120.h>
 

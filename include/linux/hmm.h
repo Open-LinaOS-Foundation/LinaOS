@@ -9,14 +9,14 @@
 #ifndef LINUX_HMM_H
 #define LINUX_HMM_H
 
-#include <linux/kconfig.h>
-#include <linux/pgtable.h>
+#include <linaos/kconfig.h>
+#include <linaos/pgtable.h>
 
-#include <linux/device.h>
-#include <linux/migrate.h>
-#include <linux/memremap.h>
-#include <linux/completion.h>
-#include <linux/mmu_notifier.h>
+#include <linaos/device.h>
+#include <linaos/migrate.h>
+#include <linaos/memremap.h>
+#include <linaos/completion.h>
+#include <linaos/mmu_notifier.h>
 
 /*
  * On output:

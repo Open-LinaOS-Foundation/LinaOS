@@ -9,18 +9,18 @@
  * Author: Srinidhi Kasagar <srinidhi.kasagar@stericsson.com>
  * Author: Sachin Verma <sachin.verma@st.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/amba/bus.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/amba/bus.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/pinctrl/consumer.h>
 
 #define DRIVER_NAME "nmk-i2c"
 

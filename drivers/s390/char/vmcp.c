@@ -12,17 +12,17 @@
  * The idea of this driver is based on cpint from Neale Ferguson and #CP in CMS
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/cma.h>
-#include <linux/mm.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/compat.h>
+#include <linaos/kernel.h>
+#include <linaos/miscdevice.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/export.h>
+#include <linaos/mutex.h>
+#include <linaos/cma.h>
+#include <linaos/mm.h>
 #include <asm/cpcmd.h>
 #include <asm/debug.h>
 #include <asm/vmcp.h>
@@ -187,7 +187,7 @@ vmcp_write(struct file *file, const char __user *buff, size_t count,
 
 /*
  * These ioctls are available, as the semantics of the diagnose 8 call
- * does not fit very well into a Linux call. Diagnose X'08' is described in
+ * does not fit very well into a LinaOS call. Diagnose X'08' is described in
  * CP Programming Services SC24-6084-00
  *
  * VMCP_GETCODE: gives the CP return code back to user space

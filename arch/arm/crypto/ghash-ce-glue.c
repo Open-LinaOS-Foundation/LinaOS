@@ -14,10 +14,10 @@
 #include <crypto/internal/hash.h>
 #include <crypto/internal/simd.h>
 #include <crypto/gf128mul.h>
-#include <linux/cpufeature.h>
-#include <linux/crypto.h>
-#include <linux/jump_label.h>
-#include <linux/module.h>
+#include <linaos/cpufeature.h>
+#include <linaos/crypto.h>
+#include <linaos/jump_label.h>
+#include <linaos/module.h>
 
 MODULE_DESCRIPTION("GHASH hash function using ARMv8 Crypto Extensions");
 MODULE_AUTHOR("Ard Biesheuvel <ard.biesheuvel@linaro.org>");

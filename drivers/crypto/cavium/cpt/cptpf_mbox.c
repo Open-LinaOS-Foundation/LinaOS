@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2016 Cavium, Inc.
  */
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "cptpf.h"
 
 static void cpt_send_msg_to_vf(struct cpt_device *cpt, int vf,

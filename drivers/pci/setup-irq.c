@@ -9,11 +9,11 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/cache.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/cache.h>
 #include "pci.h"
 
 void pci_assign_irq(struct pci_dev *dev)

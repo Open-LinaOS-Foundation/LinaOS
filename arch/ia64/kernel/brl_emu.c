@@ -8,9 +8,9 @@
  *				leaking kernel bits.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/uaccess.h>
 #include <asm/processor.h>
 
 extern char ia64_set_b1, ia64_set_b2, ia64_set_b3, ia64_set_b4, ia64_set_b5;

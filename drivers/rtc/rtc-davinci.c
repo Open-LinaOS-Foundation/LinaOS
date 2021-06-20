@@ -6,17 +6,17 @@
  *
  * Author: Miguel Aguilar <miguel.aguilar@ridgerun.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
 /*
  * The DaVinci RTC is a simple RTC with the following

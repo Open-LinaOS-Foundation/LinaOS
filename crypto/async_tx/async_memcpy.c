@@ -10,12 +10,12 @@
  *      Neil Brown <neilb@suse.de>
  *      Jeff Garzik <jeff@garzik.org>
  */
-#include <linux/kernel.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/async_tx.h>
+#include <linaos/kernel.h>
+#include <linaos/highmem.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/async_tx.h>
 
 /**
  * async_memcpy - attempt to copy memory with a dma engine.

@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/hwmon/s3c-hwmon.c
+/* linaos/drivers/hwmon/s3c-hwmon.c
  *
  * Copyright (C) 2005, 2008, 2009 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C24XX/S3C64XX ADC hwmon support
 */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
 
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
 
-#include <linux/soc/samsung/s3c-adc.h>
-#include <linux/platform_data/hwmon-s3c.h>
+#include <linaos/soc/samsung/s3c-adc.h>
+#include <linaos/platform_data/hwmon-s3c.h>
 
 struct s3c_hwmon_attr {
 	struct sensor_device_attribute	in;

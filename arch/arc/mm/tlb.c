@@ -48,9 +48,9 @@
  * Rahul Trivedi : Codito Technologies 2004
  */
 
-#include <linux/module.h>
-#include <linux/bug.h>
-#include <linux/mm_types.h>
+#include <linaos/module.h>
+#include <linaos/bug.h>
+#include <linaos/mm_types.h>
 
 #include <asm/arcregs.h>
 #include <asm/setup.h>
@@ -544,7 +544,7 @@ void create_tlb(struct vm_area_struct *vma, unsigned long vaddr, pte_t *ptep)
 
 	/*
 	 * ARC MMU provides fully orthogonal access bits for K/U mode,
-	 * however Linux only saves 1 set to save PTE real-estate
+	 * however LinaOS only saves 1 set to save PTE real-estate
 	 * Here we convert 3 PTE bits into 6 MMU bits:
 	 * -Kernel only entries have Kr Kw Kx 0 0 0
 	 * -User entries have mirrored K and U bits
@@ -612,7 +612,7 @@ void update_mmu_cache(struct vm_area_struct *vma, unsigned long vaddr_unaligned,
 #ifdef CONFIG_TRANSPARENT_HUGEPAGE
 
 /*
- * MMUv4 in HS38x cores supports Super Pages which are basis for Linux THP
+ * MMUv4 in HS38x cores supports Super Pages which are basis for LinaOS THP
  * support.
  *
  * Normal and Super pages can co-exist (ofcourse not overlap) in TLB with a
@@ -620,7 +620,7 @@ void update_mmu_cache(struct vm_area_struct *vma, unsigned long vaddr_unaligned,
  * Super Page size is configurable in hardware (4K to 16M), but fixed once
  * RTL builds.
  *
- * The exact THP size a Linux configuration will support is a function of:
+ * The exact THP size a LinaOS configuration will support is a function of:
  *  - MMU page size (typical 8K, RTL fixed)
  *  - software page walker address split between PGD:PTE:PFN (typical
  *    11:8:13, but can be changed with 1 line)
@@ -837,7 +837,7 @@ void arc_mmu_init(void)
 
 	if (IS_ENABLED(CONFIG_TRANSPARENT_HUGEPAGE) &&
 	    mmu->s_pg_sz_m != TO_MB(HPAGE_PMD_SIZE))
-		panic("MMU Super pg size != Linux HPAGE_PMD_SIZE (%luM)\n",
+		panic("MMU Super pg size != LinaOS HPAGE_PMD_SIZE (%luM)\n",
 		      (unsigned long)TO_MB(HPAGE_PMD_SIZE));
 
 	if (IS_ENABLED(CONFIG_ARC_HAS_PAE40) && !mmu->pae)

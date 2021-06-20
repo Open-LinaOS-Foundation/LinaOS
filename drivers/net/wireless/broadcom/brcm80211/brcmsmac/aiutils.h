@@ -17,7 +17,7 @@
 #ifndef	_BRCM_AIUTILS_H_
 #define	_BRCM_AIUTILS_H_
 
-#include <linux/bcma/bcma.h>
+#include <linaos/bcma/bcma.h>
 
 #include "types.h"
 

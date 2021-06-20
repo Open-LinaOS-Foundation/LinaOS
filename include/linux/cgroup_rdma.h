@@ -6,7 +6,7 @@
 #ifndef _CGROUP_RDMA_H
 #define _CGROUP_RDMA_H
 
-#include <linux/cgroup.h>
+#include <linaos/cgroup.h>
 
 enum rdmacg_resource_type {
 	RDMACG_RESOURCE_HCA_HANDLE,

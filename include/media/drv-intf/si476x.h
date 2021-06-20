@@ -11,10 +11,10 @@
 #ifndef SI476X_H
 #define SI476X_H
 
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
 
-#include <linux/mfd/si476x-reports.h>
+#include <linaos/mfd/si476x-reports.h>
 
 enum si476x_ctrl_id {
 	V4L2_CID_SI476X_RSSI_THRESHOLD	= (V4L2_CID_USER_SI476X_BASE + 1),

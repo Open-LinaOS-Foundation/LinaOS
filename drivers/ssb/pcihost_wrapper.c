@@ -11,11 +11,11 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/pm.h>
-#include <linux/pci.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/ssb/ssb.h>
+#include <linaos/pm.h>
+#include <linaos/pci.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/ssb/ssb.h>
 
 
 #ifdef CONFIG_PM_SLEEP

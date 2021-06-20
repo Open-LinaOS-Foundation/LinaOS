@@ -6,15 +6,15 @@
  * Copyright (C) Tom Long Nguyen (tom.l.nguyen@intel.com)
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/aer.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/aer.h>
 
 #include "../pci.h"
 #include "portdrv.h"
@@ -248,7 +248,7 @@ static int get_port_device_capability(struct pci_dev *dev)
 	}
 
 	/*
-	 * With dpc-native, allow Linux to use DPC even if it doesn't have
+	 * With dpc-native, allow LinaOS to use DPC even if it doesn't have
 	 * permission to use AER.
 	 */
 	if (pci_find_ext_capability(dev, PCI_EXT_CAP_ID_DPC) &&

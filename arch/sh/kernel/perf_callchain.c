@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2009  Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/perf_event.h>
-#include <linux/percpu.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/perf_event.h>
+#include <linaos/percpu.h>
 #include <asm/unwinder.h>
 #include <asm/ptrace.h>
 

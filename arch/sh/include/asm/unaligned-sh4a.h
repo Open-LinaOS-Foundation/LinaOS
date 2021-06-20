@@ -19,8 +19,8 @@
  * of spill registers and blowing up when building at low optimization
  * levels. See http://gcc.gnu.org/bugzilla/show_bug.cgi?id=34777.
  */
-#include <linux/unaligned/packed_struct.h>
-#include <linux/types.h>
+#include <linaos/unaligned/packed_struct.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 
 static inline u16 sh4a_get_unaligned_cpu16(const u8 *p)
@@ -186,7 +186,7 @@ static inline void put_unaligned_be64(u64 val, void *p)
  * use the __get/put_xxx prefixing, they actually wrap in to the
  * non-prefixed get/put_xxx variants as provided above.
  */
-#include <linux/unaligned/generic.h>
+#include <linaos/unaligned/generic.h>
 
 #ifdef __LITTLE_ENDIAN
 # define get_unaligned __get_unaligned_le

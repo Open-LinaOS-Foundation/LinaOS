@@ -10,8 +10,8 @@
 #ifndef __SHMOB_DRM_REGS_H__
 #define __SHMOB_DRM_REGS_H__
 
-#include <linux/io.h>
-#include <linux/jiffies.h>
+#include <linaos/io.h>
+#include <linaos/jiffies.h>
 
 #include "shmob_drm_drv.h"
 

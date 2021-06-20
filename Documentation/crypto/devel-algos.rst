@@ -15,7 +15,7 @@ filled with each, struct crypto_alg, must be considered -- see below
 for a description of this data structure.
 
 The generic registration functions can be found in
-include/linux/crypto.h and their definition can be seen below. The
+include/linaos/crypto.h and their definition can be seen below. The
 former function registers a single transformation, while the latter
 works on an array of transformation descriptions. The latter is useful
 when registering transformations in bulk, for example when a driver
@@ -130,7 +130,7 @@ Scatterlist handling
 Some drivers will want to use the Generic ScatterWalk in case the
 hardware needs to be fed separate chunks of the scatterlist which
 contains the plaintext and will contain the ciphertext. Please refer
-to the ScatterWalk interface offered by the Linux kernel scatter /
+to the ScatterWalk interface offered by the LinaOS kernel scatter /
 gather list implementation.
 
 Hashing [HASH]

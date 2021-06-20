@@ -2,15 +2,15 @@
 /*
  * Apple Motion Sensor driver (PMU variant)
  *
- * Copyright (C) 2006 Michael Hanselmann (linux-kernel@hansmi.ch)
+ * Copyright (C) 2006 Michael Hanselmann (linaos-kernel@hansmi.ch)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/adb.h>
+#include <linaos/pmu.h>
 
 #include "ams.h"
 

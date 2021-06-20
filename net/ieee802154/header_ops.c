@@ -6,7 +6,7 @@
  * Phoebe Buckheister <phoebe.buckheister@itwm.fraunhofer.de>
  */
 
-#include <linux/ieee802154.h>
+#include <linaos/ieee802154.h>
 
 #include <net/mac802154.h>
 #include <net/ieee802154_netdev.h>

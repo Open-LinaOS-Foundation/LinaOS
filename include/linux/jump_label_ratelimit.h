@@ -2,8 +2,8 @@
 #ifndef _LINUX_JUMP_LABEL_RATELIMIT_H
 #define _LINUX_JUMP_LABEL_RATELIMIT_H
 
-#include <linux/jump_label.h>
-#include <linux/workqueue.h>
+#include <linaos/jump_label.h>
+#include <linaos/workqueue.h>
 
 #if defined(CONFIG_JUMP_LABEL)
 struct static_key_deferred {

@@ -3,9 +3,9 @@
 #define _LINUX_BITOPS_H
 
 #include <asm/types.h>
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
-#include <uapi/linux/kernel.h>
+#include <uapi/linaos/kernel.h>
 
 /* Set bits in the first 'n' bytes when loaded from memory */
 #ifdef __LITTLE_ENDIAN

@@ -3,9 +3,9 @@
  * VGIC system registers handling functions for AArch64 mode
  */
 
-#include <linux/irqchip/arm-gic-v3.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
+#include <linaos/irqchip/arm-gic-v3.h>
+#include <linaos/kvm.h>
+#include <linaos/kvm_host.h>
 #include <asm/kvm_emulate.h>
 #include "vgic/vgic.h"
 #include "sys_regs.h"

@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2017, Intel Corporation
  * Authors: Michael Jamet <michael.jamet@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
 #ifndef DMA_PORT_H_

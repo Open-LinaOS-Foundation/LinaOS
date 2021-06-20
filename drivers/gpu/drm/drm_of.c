@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/component.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/of_graph.h>
+#include <linaos/component.h>
+#include <linaos/export.h>
+#include <linaos/list.h>
+#include <linaos/of_graph.h>
 
 #include <drm/drm_bridge.h>
 #include <drm/drm_crtc.h>

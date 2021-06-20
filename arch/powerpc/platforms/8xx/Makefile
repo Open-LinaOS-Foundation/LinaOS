@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the PowerPC 8xx linux kernel.
+# Makefile for the PowerPC 8xx linaos kernel.
 #
 obj-y			+= m8xx_setup.o machine_check.o pic.o
 obj-$(CONFIG_CPM1)		+= cpm1.o

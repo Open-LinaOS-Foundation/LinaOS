@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  *  SCSI Transport Netlink Interface
  *    Used for the posting of outbound SCSI transport events
@@ -8,8 +8,8 @@
 #ifndef SCSI_NETLINK_H
 #define SCSI_NETLINK_H
 
-#include <linux/netlink.h>
-#include <linux/types.h>
+#include <linaos/netlink.h>
+#include <linaos/types.h>
 
 /*
  * This file intended to be included by both kernel and user space

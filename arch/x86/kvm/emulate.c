@@ -6,7 +6,7 @@
  *
  * Copyright (c) 2005 Keir Fraser
  *
- * Linux coding style, mod r/m decoder, segment base fixes, real-mode
+ * LinaOS coding style, mod r/m decoder, segment base fixes, real-mode
  * privileged instructions:
  *
  * Copyright (C) 2006 Qumranet
@@ -18,10 +18,10 @@
  * From: xen-unstable 10676:af9809f51f81a3c43f276f00c81a52ef558afda4
  */
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 #include "kvm_cache_regs.h"
 #include "kvm_emulate.h"
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 #include <asm/fpu/api.h>
 #include <asm/debugreg.h>
 #include <asm/nospec-branch.h>

@@ -8,7 +8,7 @@ my $output = shift;
 open STDOUT,">$output" || die "can't open $output: $!";
 
 my %GLOBALS;
-my $dotinlocallabels=($flavour=~/linux/)?1:0;
+my $dotinlocallabels=($flavour=~/linaos/)?1:0;
 
 ################################################################
 # directives which need special treatment on different platforms
@@ -28,7 +28,7 @@ my $globl = sub {
 	/osx/		&& do { $name = "_$name";
 				last;
 			      };
-	/linux/
+	/linaos/
 			&& do {	$ret = "_GLOBAL($name)";
 				last;
 			      };
@@ -40,7 +40,7 @@ my $globl = sub {
 };
 my $text = sub {
     my $ret = ($flavour =~ /aix/) ? ".csect\t.text[PR],7" : ".text";
-    $ret = ".abiversion	2\n".$ret	if ($flavour =~ /linux.*64le/);
+    $ret = ".abiversion	2\n".$ret	if ($flavour =~ /linaos.*64le/);
     $ret;
 };
 my $machine = sub {
@@ -53,7 +53,7 @@ my $machine = sub {
     ".machine	$arch";
 };
 my $size = sub {
-    if ($flavour =~ /linux/)
+    if ($flavour =~ /linaos/)
     {	shift;
 	my $name = shift; $name =~ s|^[\.\_]||;
 	my $ret  = ".size	$name,.-".($flavour=~/64$/?".":"").$name;
@@ -98,7 +98,7 @@ my $cmplw = sub {
     my $f = shift;
     my $cr = 0; $cr = shift if ($#_>1);
     # Some out-of-date 32-bit GNU assembler just can't handle cmplw...
-    ($flavour =~ /linux.*32/) ?
+    ($flavour =~ /linaos.*32/) ?
 	"	.long	".sprintf "0x%x",31<<26|$cr<<23|$_[0]<<16|$_[1]<<11|64 :
 	"	cmplw	".join(',',$cr,@_);
 };
@@ -106,25 +106,25 @@ my $bdnz = sub {
     my $f = shift;
     my $bo = $f=~/[\+\-]/ ? 16+9 : 16;	# optional "to be taken" hint
     "	bc	$bo,0,".shift;
-} if ($flavour!~/linux/);
+} if ($flavour!~/linaos/);
 my $bltlr = sub {
     my $f = shift;
     my $bo = $f=~/\-/ ? 12+2 : 12;	# optional "not to be taken" hint
-    ($flavour =~ /linux/) ?		# GNU as doesn't allow most recent hints
+    ($flavour =~ /linaos/) ?		# GNU as doesn't allow most recent hints
 	"	.long	".sprintf "0x%x",19<<26|$bo<<21|16<<1 :
 	"	bclr	$bo,0";
 };
 my $bnelr = sub {
     my $f = shift;
     my $bo = $f=~/\-/ ? 4+2 : 4;	# optional "not to be taken" hint
-    ($flavour =~ /linux/) ?		# GNU as doesn't allow most recent hints
+    ($flavour =~ /linaos/) ?		# GNU as doesn't allow most recent hints
 	"	.long	".sprintf "0x%x",19<<26|$bo<<21|2<<16|16<<1 :
 	"	bclr	$bo,2";
 };
 my $beqlr = sub {
     my $f = shift;
     my $bo = $f=~/-/ ? 12+2 : 12;	# optional "not to be taken" hint
-    ($flavour =~ /linux/) ?		# GNU as doesn't allow most recent hints
+    ($flavour =~ /linaos/) ?		# GNU as doesn't allow most recent hints
 	"	.long	".sprintf "0x%X",19<<26|$bo<<21|2<<16|16<<1 :
 	"	bclr	$bo,2";
 };
@@ -142,7 +142,7 @@ my $vmr = sub {
 
 # Some ABIs specify vrsave, special-purpose register #256, as reserved
 # for system use.
-my $no_vrsave = ($flavour =~ /linux-ppc64le/);
+my $no_vrsave = ($flavour =~ /linaos-ppc64le/);
 my $mtspr = sub {
     my ($f,$idx,$ra) = @_;
     if ($idx == 256 && $no_vrsave) {
@@ -197,7 +197,7 @@ my $mtsle	= sub {
     "	.long	".sprintf "0x%X",(31<<26)|($arg<<21)|(147*2);
 };
 
-print "#include <asm/ppc_asm.h>\n" if $flavour =~ /linux/;
+print "#include <asm/ppc_asm.h>\n" if $flavour =~ /linaos/;
 
 while($line=<>) {
 

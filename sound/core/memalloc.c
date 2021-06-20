@@ -6,11 +6,11 @@
  *  Generic memory allocators
  */
 
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/genalloc.h>
-#include <linux/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/genalloc.h>
+#include <linaos/vmalloc.h>
 #ifdef CONFIG_X86
 #include <asm/set_memory.h>
 #endif

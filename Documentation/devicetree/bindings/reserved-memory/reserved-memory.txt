@@ -67,11 +67,11 @@ reusable (optional) - empty property
 A node must not carry both the no-map and the reusable property as these are
 logically contradictory.
 
-Linux implementation note:
-- If a "linux,cma-default" property is present, then Linux will use the
+LinaOS implementation note:
+- If a "linaos,cma-default" property is present, then LinaOS will use the
   region for the default pool of the contiguous memory allocator.
 
-- If a "linux,dma-default" property is present, then Linux will use the
+- If a "linaos,dma-default" property is present, then LinaOS will use the
   region for the default pool of the consistent DMA allocator.
 
 Device node references to reserved memory
@@ -85,8 +85,8 @@ memory-region-names (optional) - a list of names, one for each corresponding
 
 Example
 -------
-This example defines 3 contiguous regions are defined for Linux kernel:
-one default of all device drivers (named linux,cma@72000000 and 64MiB in size),
+This example defines 3 contiguous regions are defined for LinaOS kernel:
+one default of all device drivers (named linaos,cma@72000000 and 64MiB in size),
 one dedicated to the framebuffer device (named framebuffer@78000000, 8MiB), and
 one for multimedia processing (named multimedia-memory@77000000, 64MiB).
 
@@ -104,12 +104,12 @@ one for multimedia processing (named multimedia-memory@77000000, 64MiB).
 		ranges;
 
 		/* global autoconfigured region for contiguous allocations */
-		linux,cma {
+		linaos,cma {
 			compatible = "shared-dma-pool";
 			reusable;
 			size = <0x4000000>;
 			alignment = <0x2000>;
-			linux,cma-default;
+			linaos,cma-default;
 		};
 
 		display_reserved: framebuffer@78000000 {

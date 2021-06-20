@@ -6,16 +6,16 @@
  * Copyright (C) 2016-2018 Vadim Pasternak <vadimp@mellanox.com>
  */
 
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/i2c-mux.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/i2c-mux-reg.h>
-#include <linux/platform_data/mlxreg.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/dmi.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-mux.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/i2c-mux-reg.h>
+#include <linaos/platform_data/mlxreg.h>
+#include <linaos/regmap.h>
 
 #define MLX_PLAT_DEVICE_NAME		"mlxplat"
 

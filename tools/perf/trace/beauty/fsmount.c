@@ -6,8 +6,8 @@
  */
 
 #include "trace/beauty/beauty.h"
-#include <linux/log2.h>
-#include <uapi/linux/mount.h>
+#include <linaos/log2.h>
+#include <uapi/linaos/mount.h>
 
 static size_t fsmount__scnprintf_attr_flags(unsigned long flags, char *bf, size_t size, bool show_prefix)
 {

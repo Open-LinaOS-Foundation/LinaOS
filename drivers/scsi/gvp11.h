@@ -3,14 +3,14 @@
 
 /* $Id: gvp11.h,v 1.4 1997/01/19 23:07:12 davem Exp $
  *
- * Header file for the GVP Series II SCSI controller for Linux
+ * Header file for the GVP Series II SCSI controller for LinaOS
  *
  * Written and (C) 1993, Ralf Baechle, see gvp11.c for more info
  * based on a2091.h (C) 1993 by Hamish Macdonald
  *
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifndef CMD_PER_LUN
 #define CMD_PER_LUN		2

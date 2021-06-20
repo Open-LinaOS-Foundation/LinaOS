@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/tlbv4wbi.S
+ *  linaos/arch/arm/mm/tlbv4wbi.S
  *
  *  Copyright (C) 1997-2002 Russell King
  *
@@ -9,8 +9,8 @@
  *
  *  Processors: ARM920 ARM922 ARM925 ARM926 XScale
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/tlbflush.h>

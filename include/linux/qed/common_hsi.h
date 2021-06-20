@@ -7,10 +7,10 @@
 #ifndef _COMMON_HSI_H
 #define _COMMON_HSI_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
 
 /* dma_addr_t manip */
 #define PTR_LO(x)		((u32)(((uintptr_t)(x)) & 0xffffffff))

@@ -10,8 +10,8 @@
 #ifndef __LINUX_LOCKDEP_H
 #define __LINUX_LOCKDEP_H
 
-#include <linux/lockdep_types.h>
-#include <linux/smp.h>
+#include <linaos/lockdep_types.h>
+#include <linaos/smp.h>
 #include <asm/percpu.h>
 
 struct task_struct;
@@ -22,10 +22,10 @@ extern int lock_stat;
 
 #ifdef CONFIG_LOCKDEP
 
-#include <linux/linkage.h>
-#include <linux/list.h>
-#include <linux/debug_locks.h>
-#include <linux/stacktrace.h>
+#include <linaos/linkage.h>
+#include <linaos/list.h>
+#include <linaos/debug_locks.h>
+#include <linaos/stacktrace.h>
 
 static inline void lockdep_copy_map(struct lockdep_map *to,
 				    struct lockdep_map *from)

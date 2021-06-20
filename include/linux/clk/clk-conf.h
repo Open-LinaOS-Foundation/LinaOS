@@ -7,7 +7,7 @@
 #ifndef __CLK_CONF_H
 #define __CLK_CONF_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct device_node;
 

@@ -56,7 +56,7 @@
 #ifndef _SCI_SAS_H_
 #define _SCI_SAS_H_
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /*
  * SATA FIS Types These constants depict the various SATA FIS types devined in

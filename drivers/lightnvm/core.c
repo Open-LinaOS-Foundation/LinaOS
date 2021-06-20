@@ -6,15 +6,15 @@
 
 #define pr_fmt(fmt) "nvm: " fmt
 
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/sem.h>
-#include <linux/bitmap.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/miscdevice.h>
-#include <linux/lightnvm.h>
-#include <linux/sched/sysctl.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
+#include <linaos/sem.h>
+#include <linaos/bitmap.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/miscdevice.h>
+#include <linaos/lightnvm.h>
+#include <linaos/sched/sysctl.h>
 
 static LIST_HEAD(nvm_tgt_types);
 static DECLARE_RWSEM(nvm_tgtt_lock);
@@ -1174,7 +1174,7 @@ int nvm_register(struct nvm_dev *dev)
 {
 	int ret, exp_pool_size;
 
-	pr_warn_once("lightnvm support is deprecated and will be removed in Linux 5.15.\n");
+	pr_warn_once("lightnvm support is deprecated and will be removed in LinaOS 5.15.\n");
 
 	if (!dev->q || !dev->ops) {
 		kref_put(&dev->ref, nvm_free);

@@ -3,7 +3,7 @@
 
 /* $Id$
  *
- * Header file for the adaptec 1740 driver for Linux
+ * Header file for the adaptec 1740 driver for LinaOS
  *
  * With minor revisions 3/31/93
  * Written and (C) 1992,1993 Brad McLean.  See aha1740.c
@@ -11,7 +11,7 @@
  *
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define SLOTSIZE	0x5c
 

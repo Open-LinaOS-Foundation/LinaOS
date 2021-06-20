@@ -1,4 +1,4 @@
-/* sbni.c:  Granch SBNI12 leased line adapters driver for linux
+/* sbni.c:  Granch SBNI12 leased line adapters driver for linaos
  *
  *	Written 2001 by Denis I.Timofeev (timofeev@granch.ru)
  *
@@ -39,21 +39,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/fcntl.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/fcntl.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/pci.h>
+#include <linaos/skbuff.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
 
 #include <net/net_namespace.h>
 #include <net/arp.h>
@@ -63,7 +63,7 @@
 #include <asm/types.h>
 #include <asm/byteorder.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "sbni.h"
 

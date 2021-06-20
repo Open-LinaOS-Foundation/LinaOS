@@ -8,7 +8,7 @@
 #ifndef __ASM_POWERPC_KFENCE_H
 #define __ASM_POWERPC_KFENCE_H
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <asm/pgtable.h>
 
 static inline bool arch_kfence_init_pool(void)

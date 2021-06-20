@@ -7,7 +7,7 @@
 #ifndef DM_CACHE_BACKGROUND_WORK_H
 #define DM_CACHE_BACKGROUND_WORK_H
 
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 #include "dm-cache-policy.h"
 
 /*----------------------------------------------------------------*/

@@ -224,7 +224,7 @@ features in the future.
 A. Related Structures
 ---------------------
 
-* struct pmu: include/linux/perf_event.h
+* struct pmu: include/linaos/perf_event.h
 * struct riscv_pmu: arch/riscv/include/asm/perf_event.h
 
   Both structures are designed to be read-only.
@@ -236,7 +236,7 @@ A. Related Structures
   *struct riscv_pmu* defines PMU-specific parameters.  The naming follows the
   convention of all other architectures.
 
-* struct perf_event: include/linux/perf_event.h
+* struct perf_event: include/linaos/perf_event.h
 * struct hw_perf_event
 
   The generic structure that represents perf events, and the hardware-related
@@ -250,6 +250,6 @@ A. Related Structures
 References
 ----------
 
-[1] https://github.com/riscv/riscv-linux/pull/124
+[1] https://github.com/riscv/riscv-linaos/pull/124
 
 [2] https://groups.google.com/a/groups.riscv.org/forum/#!topic/sw-dev/f19TmCNP6yA

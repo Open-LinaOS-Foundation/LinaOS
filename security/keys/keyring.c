@@ -5,19 +5,19 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/security.h>
-#include <linux/seq_file.h>
-#include <linux/err.h>
-#include <linux/user_namespace.h>
-#include <linux/nsproxy.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/security.h>
+#include <linaos/seq_file.h>
+#include <linaos/err.h>
+#include <linaos/user_namespace.h>
+#include <linaos/nsproxy.h>
 #include <keys/keyring-type.h>
 #include <keys/user-type.h>
-#include <linux/assoc_array_priv.h>
-#include <linux/uaccess.h>
+#include <linaos/assoc_array_priv.h>
+#include <linaos/uaccess.h>
 #include <net/net_namespace.h>
 #include "internal.h"
 

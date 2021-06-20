@@ -6,11 +6,11 @@
 #ifndef _LINUX_DMA_DIRECT_H
 #define _LINUX_DMA_DIRECT_H 1
 
-#include <linux/dma-mapping.h>
-#include <linux/dma-map-ops.h>
-#include <linux/memblock.h> /* for min_low_pfn */
-#include <linux/mem_encrypt.h>
-#include <linux/swiotlb.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/memblock.h> /* for min_low_pfn */
+#include <linaos/mem_encrypt.h>
+#include <linaos/swiotlb.h>
 
 extern unsigned int zone_dma_bits;
 

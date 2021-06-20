@@ -6,20 +6,20 @@
  * Copyright (C) 2005-2007 Richard Purdie <rpurdie@openedhand.com>
  */
 
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <uapi/linux/uleds.h>
-#include <linux/of.h>
+#include <linaos/ctype.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/leds.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
+#include <uapi/linaos/uleds.h>
+#include <linaos/of.h>
 #include "leds.h"
 
 static struct class *leds_class;
@@ -356,7 +356,7 @@ int led_classdev_register_ext(struct device *parent,
 
 		if (init_data->fwnode)
 			fwnode_property_read_string(init_data->fwnode,
-				"linux,default-trigger",
+				"linaos,default-trigger",
 				&led_cdev->default_trigger);
 	} else {
 		proposed_name = led_cdev->name;

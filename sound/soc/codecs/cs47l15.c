@@ -6,23 +6,23 @@
 //                         Cirrus Logic International Semiconductor Ltd.
 //
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
 
-#include <linux/irqchip/irq-madera.h>
-#include <linux/mfd/madera/core.h>
-#include <linux/mfd/madera/registers.h>
+#include <linaos/irqchip/irq-madera.h>
+#include <linaos/mfd/madera/core.h>
+#include <linaos/mfd/madera/registers.h>
 
 #include "madera.h"
 #include "wm_adsp.h"

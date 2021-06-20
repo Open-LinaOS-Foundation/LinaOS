@@ -17,15 +17,15 @@
  *       - processors supported:- Intel XScale PXA25x, PXA26x, PXA27x
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/wm97xx.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/wm97xx.h>
+#include <linaos/io.h>
+#include <linaos/gpio.h>
 
 #include <mach/regs-ac97.h>
 

@@ -3,8 +3,8 @@
  * sys_ia32.c: Conversion between 32bit and 64bit native syscalls. Based on
  *             sys_sparc32
  *
- * Copyright (C) 2000		VA Linux Co
- * Copyright (C) 2000		Don Dugger <n0ano@valinux.com>
+ * Copyright (C) 2000		VA LinaOS Co
+ * Copyright (C) 2000		Don Dugger <n0ano@valinaos.com>
  * Copyright (C) 1999		Arun Sharma <arun.sharma@intel.com>
  * Copyright (C) 1997,1998	Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  * Copyright (C) 1997		David S. Miller (davem@caip.rutgers.edu)
@@ -21,31 +21,31 @@
  * hopefully all marked.  This should be fixed.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/signal.h>
-#include <linux/syscalls.h>
-#include <linux/times.h>
-#include <linux/utsname.h>
-#include <linux/mm.h>
-#include <linux/uio.h>
-#include <linux/poll.h>
-#include <linux/personality.h>
-#include <linux/stat.h>
-#include <linux/rwsem.h>
-#include <linux/compat.h>
-#include <linux/vfs.h>
-#include <linux/ptrace.h>
-#include <linux/highuid.h>
-#include <linux/sysctl.h>
-#include <linux/slab.h>
-#include <linux/sched/task.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/signal.h>
+#include <linaos/syscalls.h>
+#include <linaos/times.h>
+#include <linaos/utsname.h>
+#include <linaos/mm.h>
+#include <linaos/uio.h>
+#include <linaos/poll.h>
+#include <linaos/personality.h>
+#include <linaos/stat.h>
+#include <linaos/rwsem.h>
+#include <linaos/compat.h>
+#include <linaos/vfs.h>
+#include <linaos/ptrace.h>
+#include <linaos/highuid.h>
+#include <linaos/sysctl.h>
+#include <linaos/slab.h>
+#include <linaos/sched/task.h>
 #include <asm/mman.h>
 #include <asm/types.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <linaos/uaccess.h>
+#include <linaos/atomic.h>
 #include <asm/vgtod.h>
 #include <asm/ia32.h>
 
@@ -206,7 +206,7 @@ COMPAT_SYSCALL_DEFINE4(ia32_fstatat64, unsigned int, dfd,
 }
 
 /*
- * Linux/i386 didn't use to be able to handle more than
+ * LinaOS/i386 didn't use to be able to handle more than
  * 4 system call parameters, so these system calls used a memory
  * block for parameter passing..
  */

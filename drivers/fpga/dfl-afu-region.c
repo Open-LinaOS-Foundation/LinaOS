@@ -6,7 +6,7 @@
  *
  * Authors:
  *   Wu Hao <hao.wu@intel.com>
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@linaos.intel.com>
  */
 #include "dfl-afu.h"
 

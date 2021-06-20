@@ -9,11 +9,11 @@
  *          Pawel Laszczak <pawell@cadence.com>
  */
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 #include "core.h"
 #include "drd.h"
 #include "host-export.h"
-#include <linux/usb/hcd.h>
+#include <linaos/usb/hcd.h>
 #include "../host/xhci.h"
 #include "../host/xhci-plat.h"
 

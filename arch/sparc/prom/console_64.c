@@ -6,12 +6,12 @@
  * Copyright (C) 1996,1997 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
 #include <asm/openprom.h>
 #include <asm/oplib.h>
-#include <linux/string.h>
+#include <linaos/string.h>
 
 static int __prom_console_write_buf(const char *buf, int len)
 {

@@ -17,7 +17,7 @@ are going to develop your own suspend/resume utilities.
 
 The interface consists of a character device providing the open(),
 release(), read(), and write() operations as well as several ioctl()
-commands defined in include/linux/suspend_ioctls.h .  The major and minor
+commands defined in include/linaos/suspend_ioctls.h .  The major and minor
 numbers of the device are, respectively, 10 and 231, and they can
 be read from /sys/class/misc/snapshot/dev.
 

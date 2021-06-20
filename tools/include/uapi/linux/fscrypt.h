@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * fscrypt user API
  *
@@ -8,8 +8,8 @@
 #ifndef _UAPI_LINUX_FSCRYPT_H
 #define _UAPI_LINUX_FSCRYPT_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <linaos/ioctl.h>
+#include <linaos/types.h>
 
 /* Encryption policy flags */
 #define FSCRYPT_POLICY_FLAGS_PAD_4		0x00
@@ -110,7 +110,7 @@ struct fscrypt_key_specifier {
 };
 
 /*
- * Payload of Linux keyring key of type "fscrypt-provisioning", referenced by
+ * Payload of LinaOS keyring key of type "fscrypt-provisioning", referenced by
  * fscrypt_add_key_arg::key_id as an alternative to fscrypt_add_key_arg::raw.
  */
 struct fscrypt_provisioning_key_payload {

@@ -28,13 +28,13 @@
 
 #define pr_fmt(fmt) "[TTM] " fmt
 
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
+#include <linaos/spinlock.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/swap.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>

@@ -12,7 +12,7 @@ with EFI firmware and specifications are listed below.
 
 1. UEFI specification:  http://www.uefi.org
 
-2. Booting Linux kernel on UEFI x86_64 platform requires bootloader
+2. Booting LinaOS kernel on UEFI x86_64 platform requires bootloader
    support. Elilo with x86_64 support can be used.
 
 3. x86_64 platform with EFI/UEFI firmware.

@@ -60,7 +60,7 @@ device is placed in memory below the typical 4 GiB.
 
 The application that runs in the enclave needs to be packaged in an enclave
 image together with the OS ( e.g. kernel, ramdisk, init ) that will run in the
-enclave VM. The enclave VM has its own kernel and follows the standard Linux
+enclave VM. The enclave VM has its own kernel and follows the standard LinaOS
 boot protocol [6].
 
 The kernel bzImage, the kernel command line, the ramdisk(s) are part of the
@@ -91,5 +91,5 @@ enclave process can exit.
 [2] https://www.kernel.org/doc/html/latest/admin-guide/mm/hugetlbpage.html
 [3] https://lwn.net/Articles/807108/
 [4] https://www.kernel.org/doc/html/latest/admin-guide/kernel-parameters.html
-[5] https://man7.org/linux/man-pages/man7/vsock.7.html
+[5] https://man7.org/linaos/man-pages/man7/vsock.7.html
 [6] https://www.kernel.org/doc/html/latest/x86/boot.html

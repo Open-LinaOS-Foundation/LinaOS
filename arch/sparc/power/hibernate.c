@@ -5,7 +5,7 @@
  * Copyright (C) 2013 Kirill V Tkhai (tkhai@yandex.ru)
  */
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 #include <asm/hibernate.h>
 #include <asm/visasm.h>

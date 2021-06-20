@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for LinaOS
    Copyright (c) 2000-2001, 2010, Code Aurora Forum. All rights reserved.
 
    Written 2000,2001 by Maxim Krasnyansky <maxk@qualcomm.com>
@@ -25,9 +25,9 @@
 #ifndef __HCI_CORE_H
 #define __HCI_CORE_H
 
-#include <linux/idr.h>
-#include <linux/leds.h>
-#include <linux/rculist.h>
+#include <linaos/idr.h>
+#include <linaos/leds.h>
+#include <linaos/rculist.h>
 
 #include <net/bluetooth/hci.h>
 #include <net/bluetooth/hci_sock.h>

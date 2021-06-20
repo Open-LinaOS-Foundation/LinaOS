@@ -13,7 +13,7 @@
 #ifndef __CRC16_H
 #define __CRC16_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 extern u16 const crc16_table[256];
 

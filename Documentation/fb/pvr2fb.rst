@@ -61,6 +61,6 @@ X11
 XF86_FBDev has been shown to work on the Dreamcast in the past - though not yet
 on any 2.6 series kernel.
 
-Paul Mundt <lethal@linuxdc.org>
+Paul Mundt <lethal@linaosdc.org>
 
 Updated by Adrian McMenamin <adrian@mcmen.demon.co.uk>

@@ -2,7 +2,7 @@
 Introduction
 ============
 
-The Linux DRM layer contains code intended to support the needs of
+The LinaOS DRM layer contains code intended to support the needs of
 complex graphics devices, usually containing programmable pipelines well
 suited to 3D graphics acceleration. Graphics drivers in the kernel may
 make use of DRM functions to make tasks like memory management,
@@ -87,10 +87,10 @@ Here we just document some of the specialities of the GPU subsystem.
 Feature Merge Deadlines
 -----------------------
 
-All feature work must be in the linux-next tree by the -rc6 release of the
+All feature work must be in the linaos-next tree by the -rc6 release of the
 current release cycle, otherwise they must be postponed and can't reach the next
 merge window. All patches must have landed in the drm-next tree by latest -rc7,
-but if your branch is not in linux-next then this must have happened by -rc6
+but if your branch is not in linaos-next then this must have happened by -rc6
 already.
 
 After that point only bugfixes (like after the upstream merge window has closed
@@ -99,7 +99,7 @@ allowed.
 
 This means that there's a blackout-period of about one month where feature work
 can't be merged. The recommended way to deal with that is having a -next tree
-that's always open, but making sure to not feed it into linux-next during the
+that's always open, but making sure to not feed it into linaos-next during the
 blackout period. As an example, drm-misc works like that.
 
 Code of Conduct

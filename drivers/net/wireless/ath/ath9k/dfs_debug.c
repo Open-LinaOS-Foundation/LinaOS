@@ -15,8 +15,8 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/debugfs.h>
-#include <linux/export.h>
+#include <linaos/debugfs.h>
+#include <linaos/export.h>
 
 #include "ath9k.h"
 #include "dfs_debug.h"

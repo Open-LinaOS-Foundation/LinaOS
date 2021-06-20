@@ -13,7 +13,7 @@
 #ifndef __ES581_4_H__
 #define __ES581_4_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define ES581_4_NUM_CAN_CH 2
 #define ES581_4_CHANNEL_IDX_OFFSET 1

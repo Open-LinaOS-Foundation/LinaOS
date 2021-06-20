@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2020 Xiphera Ltd. */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/hw_random.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/hw_random.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
 
 #define CONTROL_REG			0x00000000
 #define STATUS_REG			0x00000004

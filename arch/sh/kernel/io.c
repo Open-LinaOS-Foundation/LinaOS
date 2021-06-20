@@ -5,8 +5,8 @@
  * Copyright (C) 2000 - 2009  Stuart Menefy
  * Copyright (C) 2005  Paul Mundt
  */
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 #include <asm/machvec.h>
 #include <asm/io.h>
 

@@ -3,27 +3,27 @@
  *
  * Copyright (C) 1997, 1998, 1999 David S. Miller (davem@redhat.com)
  * Copyright (C) 1998, 1999 Eddie C. Dost   (ecd@skynet.be)
- * Copyright (C) 1999 Jakub Jelinek   (jj@ultra.linux.cz)
+ * Copyright (C) 1999 Jakub Jelinek   (jj@ultra.linaos.cz)
  *
  * OF tree based PCI bus probing taken from the PowerPC port
  * with minor modifications, see there for credits.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pgtable.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/sched.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/msi.h>
+#include <linaos/irq.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pgtable.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/irq.h>
 #include <asm/prom.h>
 #include <asm/apb.h>

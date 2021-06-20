@@ -681,7 +681,7 @@ config USB_U132_HCD
 
 	  It is safe to say M here.
 
-	  See also <http://www.elandigitalsystems.com/support/ufaq/u132linux.php>
+	  See also <http://www.elandigitalsystems.com/support/ufaq/u132linaos.php>
 
 config USB_SL811_HCD
 	tristate "SL811HS HCD support"

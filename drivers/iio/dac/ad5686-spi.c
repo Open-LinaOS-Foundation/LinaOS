@@ -10,8 +10,8 @@
 
 #include "ad5686.h"
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
 
 static int ad5686_spi_write(struct ad5686_state *st,
 			    u8 cmd, u8 addr, u16 val)

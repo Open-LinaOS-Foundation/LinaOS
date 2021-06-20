@@ -29,17 +29,17 @@
 
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/ide.h>
-#include <linux/major.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/ioport.h>
+#include <linaos/ide.h>
+#include <linaos/major.h>
+#include <linaos/delay.h>
 #include <asm/io.h>
 
 #include <pcmcia/cistpl.h>

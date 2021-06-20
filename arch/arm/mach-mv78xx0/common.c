@@ -8,19 +8,19 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/ata_platform.h>
-#include <linux/clk-provider.h>
-#include <linux/ethtool.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial_8250.h>
+#include <linaos/ata_platform.h>
+#include <linaos/clk-provider.h>
+#include <linaos/ethtool.h>
 #include <asm/hardware/cache-feroceon-l2.h>
 #include <asm/mach/map.h>
 #include <asm/mach/time.h>
-#include <linux/platform_data/usb-ehci-orion.h>
-#include <linux/platform_data/mtd-orion_nand.h>
+#include <linaos/platform_data/usb-ehci-orion.h>
+#include <linaos/platform_data/mtd-orion_nand.h>
 #include <plat/time.h>
 #include <plat/common.h>
 #include <plat/addr-map.h>

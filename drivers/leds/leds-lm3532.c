@@ -3,15 +3,15 @@
 // Copyright (C) 2019 Texas Instruments Incorporated - https://www.ti.com/
 // https://www.ti.com/lit/ds/symlink/lm3532.pdf
 
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
-#include <uapi/linux/uleds.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
+#include <linaos/slab.h>
+#include <linaos/regmap.h>
+#include <linaos/types.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/module.h>
+#include <uapi/linaos/uleds.h>
+#include <linaos/gpio/consumer.h>
 
 #define LM3532_NAME "lm3532-led"
 #define LM3532_BL_MODE_MANUAL	0x00

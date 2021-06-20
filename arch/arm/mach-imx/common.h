@@ -7,7 +7,7 @@
 #ifndef __ASM_ARCH_MXC_COMMON_H__
 #define __ASM_ARCH_MXC_COMMON_H__
 
-#include <linux/reboot.h>
+#include <linaos/reboot.h>
 
 struct irq_data;
 struct platform_device;

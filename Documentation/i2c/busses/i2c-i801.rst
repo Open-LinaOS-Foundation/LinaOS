@@ -161,7 +161,7 @@ host bridge PCI device. Get yours with ``lspci -n -v -s 00:00.0``::
 
 Here the host bridge ID is 2570 (82865G/PE/P), the subvendor ID is 1043
 (Asus) and the subdevice ID is 80f2 (P4P800-X). You can find the symbolic
-names for the bridge ID and the subvendor ID in include/linux/pci_ids.h,
+names for the bridge ID and the subvendor ID in include/linaos/pci_ids.h,
 and then add a case for your subdevice ID at the right place in
 drivers/pci/quirks.c. Then please give it very good testing, to make sure
 that the unhidden SMBus doesn't conflict with e.g. ACPI.

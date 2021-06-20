@@ -5,27 +5,27 @@
  * This file is released under the GPL.
  */
 
-#include <linux/device-mapper.h>
+#include <linaos/device-mapper.h>
 
 #include "dm-rq.h"
 #include "dm-bio-record.h"
 #include "dm-path-selector.h"
 #include "dm-uevent.h"
 
-#include <linux/blkdev.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
+#include <linaos/blkdev.h>
+#include <linaos/ctype.h>
+#include <linaos/init.h>
+#include <linaos/mempool.h>
+#include <linaos/module.h>
+#include <linaos/pagemap.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/timer.h>
+#include <linaos/workqueue.h>
+#include <linaos/delay.h>
 #include <scsi/scsi_dh.h>
-#include <linux/atomic.h>
-#include <linux/blk-mq.h>
+#include <linaos/atomic.h>
+#include <linaos/blk-mq.h>
 
 #define DM_MSG_PREFIX "multipath"
 #define DM_PG_INIT_DELAY_MSECS 2000

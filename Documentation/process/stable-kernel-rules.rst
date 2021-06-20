@@ -1,6 +1,6 @@
 .. _stable_kernel_rules:
 
-Everything you ever wanted to know about Linux -stable releases
+Everything you ever wanted to know about LinaOS -stable releases
 ===============================================================
 
 Rules on what kind of patches are accepted, and which ones are not, into the
@@ -146,9 +146,9 @@ Review cycle
  - When the -stable maintainers decide for a review cycle, the patches will be
    sent to the review committee, and the maintainer of the affected area of
    the patch (unless the submitter is the maintainer of the area) and CC: to
-   the linux-kernel mailing list.
+   the linaos-kernel mailing list.
  - The review committee has 48 hours in which to ACK or NAK the patch.
- - If the patch is rejected by a member of the committee, or linux-kernel
+ - If the patch is rejected by a member of the committee, or linaos-kernel
    members object to the patch, bringing up issues that the maintainers and
    members did not realize, the patch will be dropped from the queue.
  - At the end of the review cycle, the ACKed patches will be added to the
@@ -163,12 +163,12 @@ Trees
  - The queues of patches, for both completed versions and in progress
    versions can be found at:
 
-	https://git.kernel.org/pub/scm/linux/kernel/git/stable/stable-queue.git
+	https://git.kernel.org/pub/scm/linaos/kernel/git/stable/stable-queue.git
 
  - The finalized and tagged releases of all stable kernels can be found
    in separate branches per version at:
 
-	https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
+	https://git.kernel.org/pub/scm/linaos/kernel/git/stable/linaos-stable.git
 
 
 Review committee

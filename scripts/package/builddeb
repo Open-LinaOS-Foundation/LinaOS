@@ -3,7 +3,7 @@
 # builddeb 1.3
 # Copyright 2003 Wichert Akkerman <wichert@wiggy.net>
 #
-# Simple script to generate a deb package for a Linux kernel. All the
+# Simple script to generate a deb package for a LinaOS kernel. All the
 # complexity of what to do with a kernel after it is installed or removed
 # is left to other scripts and packages: they can install scripts in the
 # /etc/kernel/{pre,post}{inst,rm}.d/ directories (or an alternative location
@@ -78,7 +78,7 @@ deploy_kernel_headers () {
 		fi
 	} > debian/hdrobjfiles
 
-	destdir=$pdir/usr/src/linux-headers-$version
+	destdir=$pdir/usr/src/linaos-headers-$version
 	mkdir -p $destdir
 	tar -c -f - -C $srctree -T debian/hdrsrcfiles | tar -xf - -C $destdir
 	tar -c -f - -T debian/hdrobjfiles | tar -xf - -C $destdir
@@ -88,7 +88,7 @@ deploy_kernel_headers () {
 	cp $KCONFIG_CONFIG $destdir/.config
 
 	mkdir -p $pdir/lib/modules/$version/
-	ln -s /usr/src/linux-headers-$version $pdir/lib/modules/$version/build
+	ln -s /usr/src/linaos-headers-$version $pdir/lib/modules/$version/build
 }
 
 deploy_libc_headers () {
@@ -107,13 +107,13 @@ deploy_libc_headers () {
 }
 
 version=$KERNELRELEASE
-tmpdir=debian/linux-image
-dbg_dir=debian/linux-image-dbg
-packagename=linux-image-$version
+tmpdir=debian/linaos-image
+dbg_dir=debian/linaos-image-dbg
+packagename=linaos-image-$version
 dbg_packagename=$packagename-dbg
 
 if [ "$ARCH" = "um" ] ; then
-	packagename=user-mode-linux-$version
+	packagename=user-mode-linaos-$version
 fi
 
 # Not all arches have the same installed path in debian
@@ -121,10 +121,10 @@ fi
 # path instead
 case $ARCH in
 um)
-	installed_image_path="usr/bin/linux-$version"
+	installed_image_path="usr/bin/linaos-$version"
 	;;
 parisc|mips|powerpc)
-	installed_image_path="boot/vmlinux-$version"
+	installed_image_path="boot/vmlinaos-$version"
 	;;
 *)
 	installed_image_path="boot/vmlinuz-$version"
@@ -210,12 +210,12 @@ done
 
 if [ "$ARCH" != "um" ]; then
 	if is_enabled CONFIG_MODULES; then
-		deploy_kernel_headers debian/linux-headers
-		create_package linux-headers-$version debian/linux-headers
+		deploy_kernel_headers debian/linaos-headers
+		create_package linaos-headers-$version debian/linaos-headers
 	fi
 
-	deploy_libc_headers debian/linux-libc-dev
-	create_package linux-libc-dev debian/linux-libc-dev
+	deploy_libc_headers debian/linaos-libc-dev
+	create_package linaos-libc-dev debian/linaos-libc-dev
 fi
 
 create_package "$packagename" "$tmpdir"
@@ -225,12 +225,12 @@ if [ -n "$BUILD_DEBUG" ] ; then
 	# Different tools want the image in different locations
 	# perf
 	mkdir -p $dbg_dir/usr/lib/debug/lib/modules/$version/
-	cp vmlinux $dbg_dir/usr/lib/debug/lib/modules/$version/
+	cp vmlinaos $dbg_dir/usr/lib/debug/lib/modules/$version/
 	# systemtap
 	mkdir -p $dbg_dir/usr/lib/debug/boot/
-	ln -s ../lib/modules/$version/vmlinux $dbg_dir/usr/lib/debug/boot/vmlinux-$version
+	ln -s ../lib/modules/$version/vmlinaos $dbg_dir/usr/lib/debug/boot/vmlinaos-$version
 	# kdump-tools
-	ln -s lib/modules/$version/vmlinux $dbg_dir/usr/lib/debug/vmlinux-$version
+	ln -s lib/modules/$version/vmlinaos $dbg_dir/usr/lib/debug/vmlinaos-$version
 	create_package "$dbg_packagename" "$dbg_dir"
 fi
 

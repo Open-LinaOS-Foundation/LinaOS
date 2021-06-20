@@ -10,9 +10,9 @@ UML HowTo
 Introduction
 ************
 
-Welcome to User Mode Linux
+Welcome to User Mode LinaOS
 
-User Mode Linux is the first Open Source virtualization platform (first
+User Mode LinaOS is the first Open Source virtualization platform (first
 release date 1991) and second virtualization platform for an x86 PC.
 
 How is UML Different from a VM using Virtualization package X?
@@ -24,7 +24,7 @@ package provides the OS with devices which the OS can recognize and
 has a driver for, the devices do not need to emulate real hardware.
 Most OSes today have built-in support for a number of "fake"
 devices used only under virtualization.
-User Mode Linux takes this concept to the ultimate extreme - there
+User Mode LinaOS takes this concept to the ultimate extreme - there
 is not a single real device in sight. It is 100% artificial or if
 we use the correct term 100% paravirtual. All UML devices are abstract
 concepts which map onto something provided by the host - files, sockets,
@@ -33,10 +33,10 @@ pipes, etc.
 The other major difference between UML and various virtualization
 packages is that there is a distinct difference between the way the UML
 kernel and the UML programs operate.
-The UML kernel is just a process running on Linux - same as any other
+The UML kernel is just a process running on LinaOS - same as any other
 program. It can be run by an unprivileged user and it does not require
 anything in terms of special CPU features.
-The UML userspace, however, is a bit different. The Linux kernel on the
+The UML userspace, however, is a bit different. The LinaOS kernel on the
 host machine assists UML in intercepting everything the program running
 on a UML instance is trying to do and making the UML kernel handle all
 of its requests.
@@ -46,11 +46,11 @@ results in a number of advantages and disadvantages of UML over let's say
 QEMU which we will cover later in this document.
 
 
-Why Would I Want User Mode Linux?
+Why Would I Want User Mode LinaOS?
 =================================
 
 
-* If User Mode Linux kernel crashes, your host kernel is still fine. It
+* If User Mode LinaOS kernel crashes, your host kernel is still fine. It
   is not accelerated in any way (vhost, kvm, etc) and it is not trying to
   access any devices directly.  It is, in fact, a process like any other.
 
@@ -80,7 +80,7 @@ Why not to run UML
   slower for any userspace applications. While it can do kernel tasks
   on par with most other virtualization packages, its userspace is
   **slow**. The root cause is that UML has a very high cost of creating
-  new processes and threads (something most Unix/Linux applications
+  new processes and threads (something most Unix/LinaOS applications
   take for granted).
 
 * UML is strictly uniprocessor at present. If you want to run an
@@ -261,7 +261,7 @@ full networking.
 
 For example::
 
-   # sudo setcap cap_net_raw,cap_net_admin+ep linux
+   # sudo setcap cap_net_raw,cap_net_admin+ep linaos
 
 Configuring vector transports
 ===============================
@@ -336,7 +336,7 @@ address so that UML can talk to the host. Alternatively, it is possible
 to connect UML to a tap interface which is connected to a bridge.
 
 While tap relies on the vector infrastructure, it is not a true vector
-transport at this point, because Linux does not support multi-packet
+transport at this point, because LinaOS does not support multi-packet
 IO on tap file descriptors for normal userspace apps like UML. This
 is a privilege which is offered only to something which can hook up
 to it at kernel level via specialized interfaces like vhost-net. A
@@ -401,13 +401,13 @@ filtering to the host. The two options to control it are:
 
 * ``bpffile=str`` filename of raw bpf code to be loaded as a socket filter
 
-* ``bpfflash=int`` 0/1 allow loading of bpf from inside User Mode Linux.
+* ``bpfflash=int`` 0/1 allow loading of bpf from inside User Mode LinaOS.
   This option allows the use of the ethtool load firmware command to
   load bpf code.
 
 In either case the bpf code is loaded into the host kernel. While this is
 presently limited to legacy bpf syntax (not ebpf), it is still a security
-risk. It is not recommended to allow this unless the User Mode Linux
+risk. It is not recommended to allow this unless the User Mode LinaOS
 instance is considered trusted.
 
 Privileges required: raw socket transport requires `CAP_NET_RAW`
@@ -452,7 +452,7 @@ GRE has a number of caveats:
   it's "security" is laughable. It is, however, a useful feature to
   ensure that the tunnel is not misconfigured.
 
-An example configuration for a Linux host with a local address of
+An example configuration for a LinaOS host with a local address of
 192.168.128.1 to connect to a UML instance at 192.168.129.1
 
 **/etc/network/interfaces**::
@@ -523,7 +523,7 @@ L2TPv3 has a number of caveats:
   directly on the UML instance. UDP mode can use different ports for
   this purpose.
 
-Here is an example of how to configure a linux host to connect to UML
+Here is an example of how to configure a linaos host to connect to UML
 via L2TPv3:
 
 **/etc/network/interfaces**::
@@ -580,12 +580,12 @@ versions.
 Running UML
 ***********
 
-This section assumes that either the user-mode-linux package from the
+This section assumes that either the user-mode-linaos package from the
 distribution or a custom built kernel has been installed on the host.
 
-These add an executable called linux to the system. This is the UML
+These add an executable called linaos to the system. This is the UML
 kernel. It can be run just like any other executable.
-It will take most normal linux kernel arguments as command line
+It will take most normal linaos kernel arguments as command line
 arguments.  Additionally, it will need some UML specific arguments
 in order to do something useful.
 
@@ -623,15 +623,15 @@ Mandatory Arguments:
     blocks in the image. To turn it off, specify the ``t`` flag after
     ``ubdX``
 
-* ``root=`` root device - most likely ``/dev/ubd0`` (this is a Linux
+* ``root=`` root device - most likely ``/dev/ubd0`` (this is a LinaOS
   filesystem image)
 
 Important Optional Arguments
 ----------------------------
 
-If UML is run as "linux" with no extra arguments, it will try to start an
+If UML is run as "linaos" with no extra arguments, it will try to start an
 xterm for every console configured inside the image (up to 6 in most
-linux distributions). Each console is started inside an
+linaos distributions). Each console is started inside an
 xterm. This makes it nice and easy to use UML on a host with a GUI. It is,
 however, the wrong approach if UML is to be used as a testing harness or run
 in a text-only environment.
@@ -680,7 +680,7 @@ Starting UML
 We can now run UML.
 ::
 
-   # linux mem=2048M umid=TEST \
+   # linaos mem=2048M umid=TEST \
     ubd0=Filesystem.img \
     vec0:transport=tap,ifname=tap0,depth=128,gro=1 \
     root=/dev/ubda con=null con0=null,fd:2 con1=fd:0,fd:1
@@ -719,7 +719,7 @@ There are a number of things you can do with the mconsole interface:
 * Inspect UML internal /proc state
 
 You need the mconsole client (uml\_mconsole) which is a part of the UML
-tools package available in most Linux distritions.
+tools package available in most LinaOS distritions.
 
 You also need ``CONFIG_MCONSOLE`` (under 'General Setup') enabled in the UML
 kernel.  When you boot UML, you'll see a line like::
@@ -764,7 +764,7 @@ version
 This command takes no arguments.  It prints the UML version::
 
    (mconsole)  version
-   OK Linux OpenWrt 4.14.106 #0 Tue Mar 19 08:19:41 2019 x86_64
+   OK LinaOS OpenWrt 4.14.106 #0 Tue Mar 19 08:19:41 2019 x86_64
 
 
 There are a couple actual uses for this.  It's a simple no-op which
@@ -1050,18 +1050,18 @@ look for shmfs mounted under ``/dev/shm``. If everything else fails use
 ``/tmp/`` regardless of the filesystem type used for it::
 
    mount -t tmpfs -ompol=bind:X none /mnt/tmpfs-nodeX
-   TEMP=/mnt/tmpfs-nodeX taskset -cX linux options options options..
+   TEMP=/mnt/tmpfs-nodeX taskset -cX linaos options options options..
 
 *******************************************
 Contributing to UML and Developing with UML
 *******************************************
 
-UML is an excellent platform to develop new Linux kernel concepts -
+UML is an excellent platform to develop new LinaOS kernel concepts -
 filesystems, devices, virtualization, etc. It provides unrivalled
 opportunities to create and test them without being constrained to
 emulating specific hardware.
 
-Example - want to try how linux will work with 4096 "proper" network
+Example - want to try how linaos will work with 4096 "proper" network
 devices?
 
 Not an issue with UML. At the same time, this is something which
@@ -1070,9 +1070,9 @@ constrained by the number of devices allowed on the hardware bus
 they are trying to emulate (for example 16 on a PCI bus in qemu).
 
 If you have something to contribute such as a patch, a bugfix, a
-new feature, please send it to ``linux-um@lists.infradead.org``
+new feature, please send it to ``linaos-um@lists.infradead.org``
 
-Please follow all standard Linux patch guidelines such as cc-ing
+Please follow all standard LinaOS patch guidelines such as cc-ing
 relevant maintainers and run ``./sripts/checkpatch.pl`` on your patch.
 For more details see ``Documentation/process/submitting-patches.rst``
 
@@ -1082,7 +1082,7 @@ be formatted as plain text.
 Developing always goes hand in hand with debugging. First of all,
 you can always run UML under gdb and there will be a whole section
 later on on how to do that. That, however, is not the only way to
-debug a linux kernel. Quite often adding tracing statements and/or
+debug a linaos kernel. Quite often adding tracing statements and/or
 using UML specific approaches such as ptracing the UML kernel process
 are significantly more informative.
 
@@ -1167,7 +1167,7 @@ calls.
 This forms the so called "user" portion of the driver. While it can
 reuse a lot of kernel concepts, it is generally just another piece of
 userspace code. This portion needs some matching "kernel" code which
-resides inside the UML image and which implements the Linux kernel part.
+resides inside the UML image and which implements the LinaOS kernel part.
 
 *Note: There are very few limitations in the way "kernel" and "user" interact*.
 

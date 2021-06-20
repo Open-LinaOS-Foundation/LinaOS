@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/netdevice.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 #include <net/wext.h>
 
 #define BUCKET_SPACE (32 - NETDEV_HASHBITS - 1)

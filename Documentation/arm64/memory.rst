@@ -1,14 +1,14 @@
 ==============================
-Memory Layout on AArch64 Linux
+Memory Layout on AArch64 LinaOS
 ==============================
 
 Author: Catalin Marinas <catalin.marinas@arm.com>
 
 This document describes the virtual memory layout used by the AArch64
-Linux kernel. The architecture allows up to 4 levels of translation
+LinaOS kernel. The architecture allows up to 4 levels of translation
 tables with a 4KB page size and up to 3 levels with a 64KB page size.
 
-AArch64 Linux uses either 3 levels or 4 levels of translation tables
+AArch64 LinaOS uses either 3 levels or 4 levels of translation tables
 with the 4KB page configuration, allowing 39-bit (512GB) or 48-bit
 (256TB) virtual addresses, respectively, for both user and kernel. With
 64KB pages, only 2 levels of translation tables, allowing 42-bit (4TB)
@@ -26,7 +26,7 @@ The swapper_pg_dir address is written to TTBR1 and never written to
 TTBR0.
 
 
-AArch64 Linux memory layout with 4KB pages + 4 levels (48-bit)::
+AArch64 LinaOS memory layout with 4KB pages + 4 levels (48-bit)::
 
   Start			End			Size		Use
   -----------------------------------------------------------------------
@@ -44,7 +44,7 @@ AArch64 Linux memory layout with 4KB pages + 4 levels (48-bit)::
   fffffe0000000000	ffffffffffffffff	   2TB		[guard region]
 
 
-AArch64 Linux memory layout with 64KB pages + 3 levels (52-bit with HW support)::
+AArch64 LinaOS memory layout with 64KB pages + 3 levels (52-bit with HW support)::
 
   Start			End			Size		Use
   -----------------------------------------------------------------------

@@ -2,18 +2,18 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
 #ifdef CONFIG_PROC_FS
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/ktime.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/atmmpc.h>
-#include <linux/atm.h>
-#include <linux/gfp.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/proc_fs.h>
+#include <linaos/ktime.h>
+#include <linaos/seq_file.h>
+#include <linaos/uaccess.h>
+#include <linaos/atmmpc.h>
+#include <linaos/atm.h>
+#include <linaos/gfp.h>
 #include "mpc.h"
 #include "mpoa_caches.h"
 

@@ -4,9 +4,9 @@
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kgdb.h>
-#include <linux/kdebug.h>
-#include <linux/sched.h>
+#include <linaos/kgdb.h>
+#include <linaos/kdebug.h>
+#include <linaos/sched.h>
 
 #include <asm/kdebug.h>
 #include <asm/ptrace.h>
@@ -109,7 +109,7 @@ void gdb_regs_to_pt_regs(unsigned long *gdb_regs, struct pt_regs *regs)
 
 int kgdb_arch_handle_exception(int e_vector, int signo, int err_code,
 			       char *remcomInBuffer, char *remcomOutBuffer,
-			       struct pt_regs *linux_regs)
+			       struct pt_regs *linaos_regs)
 {
 	unsigned long addr;
 	char *ptr;
@@ -119,16 +119,16 @@ int kgdb_arch_handle_exception(int e_vector, int signo, int err_code,
 		/* try to read optional parameter, pc unchanged if no parm */
 		ptr = &remcomInBuffer[1];
 		if (kgdb_hex2long(&ptr, &addr)) {
-			linux_regs->pc = addr;
-			linux_regs->npc = addr + 4;
+			linaos_regs->pc = addr;
+			linaos_regs->npc = addr + 4;
 		}
 		fallthrough;
 
 	case 'D':
 	case 'k':
-		if (linux_regs->pc == (unsigned long) arch_kgdb_breakpoint) {
-			linux_regs->pc = linux_regs->npc;
-			linux_regs->npc += 4;
+		if (linaos_regs->pc == (unsigned long) arch_kgdb_breakpoint) {
+			linaos_regs->pc = linaos_regs->npc;
+			linaos_regs->npc += 4;
 		}
 		return 0;
 	}

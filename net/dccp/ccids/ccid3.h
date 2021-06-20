@@ -13,7 +13,7 @@
  *  authors:
  *  Copyright (c) 2003 Nils-Erik Mattsson, Joacim Haggmark, Magnus Erixzon
  *
- *  Changes to meet Linux coding standards, to make it meet latest ccid3 draft
+ *  Changes to meet LinaOS coding standards, to make it meet latest ccid3 draft
  *  and to make it work as a loadable module in the DCCP stack written by
  *  Arnaldo Carvalho de Melo <acme@conectiva.com.br>.
  *
@@ -22,10 +22,10 @@
 #ifndef _DCCP_CCID3_H_
 #define _DCCP_CCID3_H_
 
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/tfrc.h>
+#include <linaos/ktime.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
+#include <linaos/tfrc.h>
 #include "lib/tfrc.h"
 #include "../ccid.h"
 

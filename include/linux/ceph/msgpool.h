@@ -2,7 +2,7 @@
 #ifndef _FS_CEPH_MSGPOOL
 #define _FS_CEPH_MSGPOOL
 
-#include <linux/mempool.h>
+#include <linaos/mempool.h>
 
 /*
  * we use memory pools for preallocating messages we may receive, to

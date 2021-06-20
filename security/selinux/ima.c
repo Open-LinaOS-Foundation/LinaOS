@@ -2,25 +2,25 @@
 /*
  * Copyright (C) 2021 Microsoft Corporation
  *
- * Author: Lakshmi Ramasubramanian (nramas@linux.microsoft.com)
+ * Author: Lakshmi Ramasubramanian (nramas@linaos.microsoft.com)
  *
- * Measure critical data structures maintainted by SELinux
+ * Measure critical data structures maintainted by SELinaOS
  * using IMA subsystem.
  */
-#include <linux/vmalloc.h>
-#include <linux/ima.h>
+#include <linaos/vmalloc.h>
+#include <linaos/ima.h>
 #include "security.h"
 #include "ima.h"
 
 /*
- * selinux_ima_collect_state - Read selinux configuration settings
+ * selinaos_ima_collect_state - Read selinaos configuration settings
  *
- * @state: selinux_state
+ * @state: selinaos_state
  *
  * On success returns the configuration settings string.
  * On error, returns NULL.
  */
-static char *selinux_ima_collect_state(struct selinux_state *state)
+static char *selinaos_ima_collect_state(struct selinaos_state *state)
 {
 	const char *on = "=1;", *off = "=0;";
 	char *buf;
@@ -30,7 +30,7 @@ static char *selinux_ima_collect_state(struct selinux_state *state)
 
 	len = strlen(on);
 	for (i = 0; i < __POLICYDB_CAPABILITY_MAX; i++)
-		buf_len += strlen(selinux_policycap_names[i]) + len;
+		buf_len += strlen(selinaos_policycap_names[i]) + len;
 
 	buf = kzalloc(buf_len, GFP_KERNEL);
 	if (!buf)
@@ -39,7 +39,7 @@ static char *selinux_ima_collect_state(struct selinux_state *state)
 	rc = strscpy(buf, "initialized", buf_len);
 	WARN_ON(rc < 0);
 
-	rc = strlcat(buf, selinux_initialized(state) ? on : off, buf_len);
+	rc = strlcat(buf, selinaos_initialized(state) ? on : off, buf_len);
 	WARN_ON(rc >= buf_len);
 
 	rc = strlcat(buf, "enforcing", buf_len);
@@ -55,7 +55,7 @@ static char *selinux_ima_collect_state(struct selinux_state *state)
 	WARN_ON(rc >= buf_len);
 
 	for (i = 0; i < __POLICYDB_CAPABILITY_MAX; i++) {
-		rc = strlcat(buf, selinux_policycap_names[i], buf_len);
+		rc = strlcat(buf, selinaos_policycap_names[i], buf_len);
 		WARN_ON(rc >= buf_len);
 
 		rc = strlcat(buf, state->policycap[i] ? on : off, buf_len);
@@ -66,11 +66,11 @@ static char *selinux_ima_collect_state(struct selinux_state *state)
 }
 
 /*
- * selinux_ima_measure_state_locked - Measure SELinux state and hash of policy
+ * selinaos_ima_measure_state_locked - Measure SELinaOS state and hash of policy
  *
- * @state: selinux state struct
+ * @state: selinaos state struct
  */
-void selinux_ima_measure_state_locked(struct selinux_state *state)
+void selinaos_ima_measure_state_locked(struct selinaos_state *state)
 {
 	char *state_str = NULL;
 	void *policy = NULL;
@@ -79,45 +79,45 @@ void selinux_ima_measure_state_locked(struct selinux_state *state)
 
 	WARN_ON(!mutex_is_locked(&state->policy_mutex));
 
-	state_str = selinux_ima_collect_state(state);
+	state_str = selinaos_ima_collect_state(state);
 	if (!state_str) {
-		pr_err("SELinux: %s: failed to read state.\n", __func__);
+		pr_err("SELinaOS: %s: failed to read state.\n", __func__);
 		return;
 	}
 
-	ima_measure_critical_data("selinux", "selinux-state",
+	ima_measure_critical_data("selinaos", "selinaos-state",
 				  state_str, strlen(state_str), false);
 
 	kfree(state_str);
 
 	/*
-	 * Measure SELinux policy only after initialization is completed.
+	 * Measure SELinaOS policy only after initialization is completed.
 	 */
-	if (!selinux_initialized(state))
+	if (!selinaos_initialized(state))
 		return;
 
 	rc = security_read_state_kernel(state, &policy, &policy_len);
 	if (rc) {
-		pr_err("SELinux: %s: failed to read policy %d.\n", __func__, rc);
+		pr_err("SELinaOS: %s: failed to read policy %d.\n", __func__, rc);
 		return;
 	}
 
-	ima_measure_critical_data("selinux", "selinux-policy-hash",
+	ima_measure_critical_data("selinaos", "selinaos-policy-hash",
 				  policy, policy_len, true);
 
 	vfree(policy);
 }
 
 /*
- * selinux_ima_measure_state - Measure SELinux state and hash of policy
+ * selinaos_ima_measure_state - Measure SELinaOS state and hash of policy
  *
- * @state: selinux state struct
+ * @state: selinaos state struct
  */
-void selinux_ima_measure_state(struct selinux_state *state)
+void selinaos_ima_measure_state(struct selinaos_state *state)
 {
 	WARN_ON(mutex_is_locked(&state->policy_mutex));
 
 	mutex_lock(&state->policy_mutex);
-	selinux_ima_measure_state_locked(state);
+	selinaos_ima_measure_state_locked(state);
 	mutex_unlock(&state->policy_mutex);
 }

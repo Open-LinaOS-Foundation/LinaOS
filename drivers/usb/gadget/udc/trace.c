@@ -3,7 +3,7 @@
  * trace.c - USB Gadget Framework Trace Support
  *
  * Copyright (C) 2016 Intel Corporation
- * Author: Felipe Balbi <felipe.balbi@linux.intel.com>
+ * Author: Felipe Balbi <felipe.balbi@linaos.intel.com>
  */
 
 #define CREATE_TRACE_POINTS

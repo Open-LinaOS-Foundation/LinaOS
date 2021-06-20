@@ -32,13 +32,13 @@
  */
 
 
-#include <linux/kref.h>
-#include <linux/random.h>
-#include <linux/debugfs.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-resv.h>
+#include <linaos/kref.h>
+#include <linaos/random.h>
+#include <linaos/debugfs.h>
+#include <linaos/export.h>
+#include <linaos/delay.h>
+#include <linaos/dma-buf.h>
+#include <linaos/dma-resv.h>
 #include <rdma/ib_umem.h>
 #include <rdma/ib_umem_odp.h>
 #include <rdma/ib_verbs.h>

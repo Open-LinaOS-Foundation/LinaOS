@@ -33,7 +33,7 @@
 #define __FM_SP_H
 
 #include "fman.h"
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define ILLEGAL_BASE    (~0)
 

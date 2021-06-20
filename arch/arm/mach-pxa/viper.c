@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/viper.c
+ *  linaos/arch/arm/mach-pxa/viper.c
  *
  *  Support for the Arcom VIPER SBC.
  *
@@ -17,45 +17,45 @@
  *  Copyright:	MontaVista Software Inc.
  */
 
-#include <linux/types.h>
-#include <linux/memory.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/sched.h>
-#include <linux/gpio.h>
-#include <linux/jiffies.h>
-#include <linux/platform_data/i2c-gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/serial_8250.h>
-#include <linux/smc91x.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/usb/isp116x.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/syscore_ops.h>
+#include <linaos/types.h>
+#include <linaos/memory.h>
+#include <linaos/cpu.h>
+#include <linaos/cpufreq.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/major.h>
+#include <linaos/module.h>
+#include <linaos/pm.h>
+#include <linaos/sched.h>
+#include <linaos/gpio.h>
+#include <linaos/jiffies.h>
+#include <linaos/platform_data/i2c-gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/platform_data/i2c-pxa.h>
+#include <linaos/serial_8250.h>
+#include <linaos/smc91x.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/usb/isp116x.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/syscore_ops.h>
 
 #include "pxa25x.h"
 #include <mach/audio.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <linaos/platform_data/video-pxafb.h>
 #include <mach/regs-uart.h>
-#include <linux/platform_data/pcmcia-pxa2xx_viper.h>
+#include <linaos/platform_data/pcmcia-pxa2xx_viper.h>
 #include "viper.h"
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>
 #include <asm/irq.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 #include <asm/system_info.h>
 
 #include <asm/mach/arch.h>

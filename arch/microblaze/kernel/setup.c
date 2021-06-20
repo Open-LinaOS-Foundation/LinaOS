@@ -8,28 +8,28 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/of_clk.h>
-#include <linux/clocksource.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/cpu.h>
-#include <linux/initrd.h>
-#include <linux/console.h>
-#include <linux/debugfs.h>
-#include <linux/of_fdt.h>
-#include <linux/pgtable.h>
+#include <linaos/init.h>
+#include <linaos/of_clk.h>
+#include <linaos/clocksource.h>
+#include <linaos/string.h>
+#include <linaos/seq_file.h>
+#include <linaos/cpu.h>
+#include <linaos/initrd.h>
+#include <linaos/console.h>
+#include <linaos/debugfs.h>
+#include <linaos/of_fdt.h>
+#include <linaos/pgtable.h>
 
 #include <asm/setup.h>
 #include <asm/sections.h>
 #include <asm/page.h>
-#include <linux/io.h>
-#include <linux/bug.h>
-#include <linux/param.h>
-#include <linux/pci.h>
-#include <linux/cache.h>
-#include <linux/of.h>
-#include <linux/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/bug.h>
+#include <linaos/param.h>
+#include <linaos/pci.h>
+#include <linaos/cache.h>
+#include <linaos/of.h>
+#include <linaos/dma-mapping.h>
 #include <asm/cacheflush.h>
 #include <asm/entry.h>
 #include <asm/cpuinfo.h>

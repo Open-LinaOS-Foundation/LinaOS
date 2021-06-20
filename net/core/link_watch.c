@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux network device link state notification
+ * LinaOS network device link state notification
  *
  * Author:
  *     Stefan Rompf <sux@loplof.de>
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/if.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/if.h>
 #include <net/sock.h>
 #include <net/pkt_sched.h>
-#include <linux/rtnetlink.h>
-#include <linux/jiffies.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/jiffies.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
+#include <linaos/bitops.h>
+#include <linaos/types.h>
 
 
 enum lw_bits {

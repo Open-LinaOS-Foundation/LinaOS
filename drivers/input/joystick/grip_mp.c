@@ -10,14 +10,14 @@
  *  Copyright (c) 1998-2000 Vojtech Pavlik
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/gameport.h>
+#include <linaos/input.h>
+#include <linaos/delay.h>
+#include <linaos/proc_fs.h>
+#include <linaos/jiffies.h>
 
 #define DRIVER_DESC	"Gravis Grip Multiport driver"
 
@@ -504,7 +504,7 @@ static int multiport_init(struct grip_mp *grip)
 }
 
 /*
- * Reports joystick state to the linux input layer.
+ * Reports joystick state to the linaos input layer.
  */
 
 static void report_slot(struct grip_mp *grip, int slot)
@@ -512,12 +512,12 @@ static void report_slot(struct grip_mp *grip, int slot)
 	struct grip_port *port = grip->port[slot];
 	int i;
 
-	/* Store button states with linux input driver */
+	/* Store button states with linaos input driver */
 
 	for (i = 0; i < 8; i++)
 		input_report_key(port->dev, grip_btn_gp[i], (port->buttons >> i) & 1);
 
-	/* Store axis states with linux driver */
+	/* Store axis states with linaos driver */
 
 	input_report_abs(port->dev, ABS_X, port->xaxes);
 	input_report_abs(port->dev, ABS_Y, port->yaxes);
@@ -578,7 +578,7 @@ static void grip_close(struct input_dev *dev)
 }
 
 /*
- * Tell the linux input layer about a newly plugged-in gamepad.
+ * Tell the linaos input layer about a newly plugged-in gamepad.
  */
 
 static int register_slot(int slot, struct grip_mp *grip)

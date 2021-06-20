@@ -12,7 +12,7 @@
 #ifndef _NET_MIP6_H
 #define _NET_MIP6_H
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/sock.h>
 
 /*

@@ -37,7 +37,7 @@
 #include <sys/ioctl.h>
 #include <sys/stat.h>
 #include <time.h>
-#include <linux/media.h>
+#include <linaos/media.h>
 
 #include "../kselftest.h"
 

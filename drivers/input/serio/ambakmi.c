@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/input/serio/ambakmi.c
+ *  linaos/drivers/input/serio/ambakmi.c
  *
  *  Copyright (C) 2000-2003 Deep Blue Solutions Ltd.
  *  Copyright (C) 2002 Russell King.
  */
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/kmi.h>
-#include <linux/clk.h>
+#include <linaos/module.h>
+#include <linaos/serio.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/amba/bus.h>
+#include <linaos/amba/kmi.h>
+#include <linaos/clk.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -205,6 +205,6 @@ static struct amba_driver ambakmi_driver = {
 
 module_amba_driver(ambakmi_driver);
 
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.linaos.org.uk>");
 MODULE_DESCRIPTION("AMBA KMI controller driver");
 MODULE_LICENSE("GPL");

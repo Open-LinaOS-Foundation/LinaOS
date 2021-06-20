@@ -4,7 +4,7 @@
  *
  *  Copyright (C) 2003-2005 Ben. Herrenschmidt (benh@kernel.crashing.org)
  *
- * The linux i2c layer isn't completely suitable for our needs for various
+ * The linaos i2c layer isn't completely suitable for our needs for various
  * reasons ranging from too late initialisation to semantics not perfectly
  * matching some requirements of the apple platform functions etc...
  *
@@ -17,7 +17,7 @@
  * The drivers in this file are synchronous/blocking. In addition, the
  * keywest one is fairly slow due to the use of msleep instead of interrupts
  * as the interrupt is currently used by i2c-keywest. In the long run, we
- * might want to get rid of those high-level interfaces to linux i2c layer
+ * might want to get rid of those high-level interfaces to linaos i2c layer
  * either completely (converting all drivers) or replacing them all with a
  * single stub driver on top of this one. Once done, the interrupt will be
  * available for our use.
@@ -26,20 +26,20 @@
 #undef DEBUG
 #undef DEBUG_LOW
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/mutex.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/adb.h>
+#include <linaos/pmu.h>
+#include <linaos/delay.h>
+#include <linaos/completion.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/timer.h>
+#include <linaos/mutex.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
 #include <asm/keylargo.h>
 #include <asm/uninorth.h>
 #include <asm/io.h>

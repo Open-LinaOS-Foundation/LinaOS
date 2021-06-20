@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/can/dev.h
+ * linaos/can/dev.h
  *
  * Definitions for the CAN network device driver interface
  *
@@ -14,14 +14,14 @@
 #ifndef _CAN_DEV_H
 #define _CAN_DEV_H
 
-#include <linux/can.h>
-#include <linux/can/bittiming.h>
-#include <linux/can/error.h>
-#include <linux/can/led.h>
-#include <linux/can/length.h>
-#include <linux/can/netlink.h>
-#include <linux/can/skb.h>
-#include <linux/netdevice.h>
+#include <linaos/can.h>
+#include <linaos/can/bittiming.h>
+#include <linaos/can/error.h>
+#include <linaos/can/led.h>
+#include <linaos/can/length.h>
+#include <linaos/can/netlink.h>
+#include <linaos/can/skb.h>
+#include <linaos/netdevice.h>
 
 /*
  * CAN mode
@@ -58,7 +58,7 @@ struct can_priv {
 
 	enum can_state state;
 
-	/* CAN controller features - see include/uapi/linux/can/netlink.h */
+	/* CAN controller features - see include/uapi/linaos/can/netlink.h */
 	u32 ctrlmode;		/* current options setting */
 	u32 ctrlmode_supported;	/* options that can be modified by netlink */
 	u32 ctrlmode_static;	/* static enabled options for driver/hardware */

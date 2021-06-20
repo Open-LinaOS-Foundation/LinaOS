@@ -11,9 +11,9 @@
 
 #include <net/cfg80211.h>
 #include <net/rtnetlink.h>
-#include <linux/etherdevice.h>
-#include <linux/math64.h>
-#include <linux/module.h>
+#include <linaos/etherdevice.h>
+#include <linaos/math64.h>
+#include <linaos/module.h>
 
 static struct wiphy *common_wiphy;
 

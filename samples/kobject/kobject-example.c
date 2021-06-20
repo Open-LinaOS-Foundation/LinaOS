@@ -5,11 +5,11 @@
  * Copyright (C) 2004-2007 Greg Kroah-Hartman <greg@kroah.com>
  * Copyright (C) 2007 Novell Inc.
  */
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/kobject.h>
+#include <linaos/string.h>
+#include <linaos/sysfs.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 
 /*
  * This module shows how to create a simple subdirectory in sysfs called

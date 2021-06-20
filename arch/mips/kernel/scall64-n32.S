@@ -7,7 +7,7 @@
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2001 MIPS Technologies, Inc.
  */
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include <asm/asm.h>
 #include <asm/asmmacro.h>
 #include <asm/irqflags.h>
@@ -32,8 +32,8 @@ NESTED(handle_sysn32, PT_SIZE, sp)
 	.set	at
 #endif
 
-	dsubu	t0, v0, __NR_N32_Linux	# check syscall number
-	sltiu	t0, t0, __NR_N32_Linux_syscalls
+	dsubu	t0, v0, __NR_N32_LinaOS	# check syscall number
+	sltiu	t0, t0, __NR_N32_LinaOS_syscalls
 
 #ifndef CONFIG_MIPS32_O32
 	ld	t1, PT_EPC(sp)		# skip syscall on return
@@ -51,7 +51,7 @@ NESTED(handle_sysn32, PT_SIZE, sp)
 
 syscall_common:
 	dsll	t0, v0, 3		# offset into table
-	ld	t2, (sysn32_call_table - (__NR_N32_Linux * 8))(t0)
+	ld	t2, (sysn32_call_table - (__NR_N32_LinaOS * 8))(t0)
 
 	jalr	t2			# Do The Real Thing (TM)
 
@@ -86,8 +86,8 @@ n32_syscall_trace_entry:
 	ld	a4, PT_R8(sp)
 	ld	a5, PT_R9(sp)
 
-	dsubu	t2, v0, __NR_N32_Linux	# check (new) syscall number
-	sltiu   t0, t2, __NR_N32_Linux_syscalls
+	dsubu	t2, v0, __NR_N32_LinaOS	# check (new) syscall number
+	sltiu   t0, t2, __NR_N32_LinaOS_syscalls
 	beqz	t0, not_n32_scall
 
 	j	syscall_common

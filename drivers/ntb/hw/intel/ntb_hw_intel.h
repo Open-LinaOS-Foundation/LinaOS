@@ -42,7 +42,7 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * Intel PCIe NTB Linux driver
+ * Intel PCIe NTB LinaOS driver
  *
  * Contact Information:
  * Jon Mason <jon.mason@intel.com>
@@ -51,9 +51,9 @@
 #ifndef NTB_HW_INTEL_H
 #define NTB_HW_INTEL_H
 
-#include <linux/ntb.h>
-#include <linux/pci.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/ntb.h>
+#include <linaos/pci.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 
 /* PCI device IDs */
 #define PCI_DEVICE_ID_INTEL_NTB_B2B_JSF	0x3725

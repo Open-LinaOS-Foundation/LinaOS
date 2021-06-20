@@ -11,16 +11,16 @@
  *
  ******************************************************************************/
 
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/in.h>
-#include <linux/export.h>
-#include <linux/t10-pi.h>
+#include <linaos/net.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/kthread.h>
+#include <linaos/in.h>
+#include <linaos/export.h>
+#include <linaos/t10-pi.h>
 #include <asm/unaligned.h>
 #include <net/sock.h>
 #include <net/tcp.h>
@@ -706,7 +706,7 @@ static void scsi_dump_inquiry(struct se_device *dev)
 	int device_type = dev->transport->get_device_type(dev);
 
 	/*
-	 * Print Linux/SCSI style INQUIRY formatting to the kernel ring buffer
+	 * Print LinaOS/SCSI style INQUIRY formatting to the kernel ring buffer
 	 */
 	pr_debug("  Vendor: %-" __stringify(INQUIRY_VENDOR_LEN) "s\n",
 		wwn->vendor);
@@ -837,7 +837,7 @@ bool target_configure_unmap_from_queue(struct se_dev_attrib *attrib,
 	attrib->max_unmap_lba_count =
 		q->limits.max_discard_sectors >> (ilog2(block_size) - 9);
 	/*
-	 * Currently hardcoded to 1 in Linux/SCSI code..
+	 * Currently hardcoded to 1 in LinaOS/SCSI code..
 	 */
 	attrib->max_unmap_block_desc_count = 1;
 	attrib->unmap_granularity = q->limits.discard_granularity / block_size;
@@ -850,9 +850,9 @@ EXPORT_SYMBOL(target_configure_unmap_from_queue);
 
 /*
  * Convert from blocksize advertised to the initiator to the 512 byte
- * units unconditionally used by the Linux block layer.
+ * units unconditionally used by the LinaOS block layer.
  */
-sector_t target_to_linux_sector(struct se_device *dev, sector_t lb)
+sector_t target_to_linaos_sector(struct se_device *dev, sector_t lb)
 {
 	switch (dev->dev_attrib.block_size) {
 	case 4096:
@@ -865,7 +865,7 @@ sector_t target_to_linux_sector(struct se_device *dev, sector_t lb)
 		return lb;
 	}
 }
-EXPORT_SYMBOL(target_to_linux_sector);
+EXPORT_SYMBOL(target_to_linaos_sector);
 
 struct devices_idr_iter {
 	struct config_item *prev_item;

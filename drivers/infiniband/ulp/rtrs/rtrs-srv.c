@@ -10,8 +10,8 @@
 #undef pr_fmt
 #define pr_fmt(fmt) KBUILD_MODNAME " L" __stringify(__LINE__) ": " fmt
 
-#include <linux/module.h>
-#include <linux/mempool.h>
+#include <linaos/module.h>
+#include <linaos/mempool.h>
 
 #include "rtrs-srv.h"
 #include "rtrs-log.h"

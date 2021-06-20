@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2000 Jens Axboe <axboe@suse.de>
  * Copyright (C) 2001-2004 Peter Osterlund <petero2@telia.com>
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See linaos/COPYING for more information.
  *
  * Packet writing layer for ATAPI and SCSI CD-R, CD-RW, DVD-R, and
  * DVD-RW devices.
@@ -13,7 +13,7 @@
 #ifndef _UAPI__PKTCDVD_H
 #define _UAPI__PKTCDVD_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * 1 for normal debug messages, 2 is very verbose. 0 to turn it off.

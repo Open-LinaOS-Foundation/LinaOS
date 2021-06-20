@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 #include <asm/unwind_hints.h>
 #include <asm/cpufeatures.h>
 #include <asm/page_types.h>

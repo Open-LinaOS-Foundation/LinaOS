@@ -16,7 +16,7 @@
  * primary CPU from C code during its boot.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #define ARMADA_XP_CFB_CTL_REG_OFFSET 0x0
 #define ARMADA_XP_CFB_CFG_REG_OFFSET 0x4
 

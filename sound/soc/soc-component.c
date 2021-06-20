@@ -8,10 +8,10 @@
 // Mark Brown <broonie@opensource.wolfsonmicro.com>
 // Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
 //
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
 #include <sound/soc.h>
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define soc_component_ret(dai, ret) _soc_component_ret(dai, __func__, ret)
 static inline int _soc_component_ret(struct snd_soc_component *component,

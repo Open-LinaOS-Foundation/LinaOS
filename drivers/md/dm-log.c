@@ -5,14 +5,14 @@
  * This file is released under the LGPL.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/dm-io.h>
-#include <linux/dm-dirty-log.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/vmalloc.h>
+#include <linaos/dm-io.h>
+#include <linaos/dm-dirty-log.h>
 
-#include <linux/device-mapper.h>
+#include <linaos/device-mapper.h>
 
 #define DM_MSG_PREFIX "dirty region log"
 

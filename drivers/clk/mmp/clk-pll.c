@@ -5,9 +5,9 @@
  * Copyright (C) 2020 Lubomir Rintel <lkundrak@v3.sk>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/clk-provider.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 
 #include "clk.h"
 

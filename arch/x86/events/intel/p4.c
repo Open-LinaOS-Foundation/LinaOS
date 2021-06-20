@@ -7,7 +7,7 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 
 #include <asm/perf_event_p4.h>
 #include <asm/hardirq.h>

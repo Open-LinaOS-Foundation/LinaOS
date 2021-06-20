@@ -3,7 +3,7 @@
 #define __SOUND_ASOUNDEF_H
 
 /*
- *  Advanced Linux Sound Architecture - ALSA - Driver
+ *  Advanced LinaOS Sound Architecture - ALSA - Driver
  *  Copyright (c) 1994-2000 by Jaroslav Kysela <perex@perex.cz>
  */
 

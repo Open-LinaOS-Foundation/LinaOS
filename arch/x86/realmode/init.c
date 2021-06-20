@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/memblock.h>
-#include <linux/mem_encrypt.h>
-#include <linux/pgtable.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/memblock.h>
+#include <linaos/mem_encrypt.h>
+#include <linaos/pgtable.h>
 
 #include <asm/set_memory.h>
 #include <asm/realmode.h>

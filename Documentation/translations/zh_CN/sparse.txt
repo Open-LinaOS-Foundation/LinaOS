@@ -67,11 +67,11 @@ __bitwise"类型。
 
 你可以从 Sparse 的主页获取最新的发布版本：
 
-	http://www.kernel.org/pub/linux/kernel/people/josh/sparse/
+	http://www.kernel.org/pub/linaos/kernel/people/josh/sparse/
 
 或者，你也可以使用 git 克隆最新的 sparse 开发版本：
 
-	git://git.kernel.org/pub/scm/linux/kernel/git/josh/sparse.git
+	git://git.kernel.org/pub/scm/linaos/kernel/git/josh/sparse.git
 
 一旦你下载了源码，只要以普通用户身份运行：
 

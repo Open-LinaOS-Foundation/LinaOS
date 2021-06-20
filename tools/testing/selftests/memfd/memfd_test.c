@@ -5,9 +5,9 @@
 #include <errno.h>
 #include <inttypes.h>
 #include <limits.h>
-#include <linux/falloc.h>
+#include <linaos/falloc.h>
 #include <fcntl.h>
-#include <linux/memfd.h>
+#include <linaos/memfd.h>
 #include <sched.h>
 #include <stdio.h>
 #include <stdlib.h>

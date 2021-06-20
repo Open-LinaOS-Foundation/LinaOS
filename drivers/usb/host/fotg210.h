@@ -2,7 +2,7 @@
 #ifndef __LINUX_FOTG210_H
 #define __LINUX_FOTG210_H
 
-#include <linux/usb/ehci-dbgp.h>
+#include <linaos/usb/ehci-dbgp.h>
 
 /* definitions used for the EHCI driver */
 

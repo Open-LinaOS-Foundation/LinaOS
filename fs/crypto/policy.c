@@ -10,10 +10,10 @@
  * Modified by Eric Biggers, 2019 for v2 policy support.
  */
 
-#include <linux/random.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/mount.h>
+#include <linaos/random.h>
+#include <linaos/seq_file.h>
+#include <linaos/string.h>
+#include <linaos/mount.h>
 #include "fscrypt_private.h"
 
 /**

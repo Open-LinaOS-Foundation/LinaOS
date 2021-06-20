@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Part of the HSI character device driver.
  *
@@ -24,7 +24,7 @@
 #ifndef __HSI_CHAR_H
 #define __HSI_CHAR_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define HSI_CHAR_MAGIC		'k'
 #define HSC_IOW(num, dtype)	_IOW(HSI_CHAR_MAGIC, num, dtype)

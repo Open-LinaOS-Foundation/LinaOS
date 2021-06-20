@@ -15,7 +15,7 @@
 #include <crypto/sha2.h>
 #include <crypto/sha3.h>
 #include <crypto/skcipher.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define EIP197_HIA_VERSION_BE			0xca35
 #define EIP197_HIA_VERSION_LE			0x35ca

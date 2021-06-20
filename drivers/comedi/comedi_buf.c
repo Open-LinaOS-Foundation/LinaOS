@@ -2,13 +2,13 @@
 /*
  * comedi_buf.c
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  * Copyright (C) 2002 Frank Mori Hess <fmhess@users.sourceforge.net>
  */
 
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
 
 #include "comedidev.h"
 #include "comedi_internal.h"

@@ -15,10 +15,10 @@
 #include <sound/util_mem.h>
 #include <sound/pcm-indirect.h>
 #include <sound/timer.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/mutex.h>
+#include <linaos/firmware.h>
+#include <linaos/io.h>
 
 #include <uapi/sound/emu10k1.h>
 
@@ -123,7 +123,7 @@
 
 #define INTE_MRHANDENABLE	0x00080000	/* Enable the "Mr. Hand" logic			*/
 						/* NOTE: There is no reason to use this under	*/
-						/* Linux, and it will cause odd hardware 	*/
+						/* LinaOS, and it will cause odd hardware 	*/
 						/* behavior and possibly random segfaults and	*/
 						/* lockups if enabled.				*/
 
@@ -158,7 +158,7 @@
 #define HCFG			0x14		/* Hardware config register			*/
 						/* NOTE: There is no reason to use the legacy	*/
 						/* SoundBlaster emulation stuff described below	*/
-						/* under Linux, and all kinds of weird hardware	*/
+						/* under LinaOS, and all kinds of weird hardware	*/
 						/* behavior can result if you try.  Don't.	*/
 #define HCFG_LEGACYFUNC_MASK	0xe0000000	/* Legacy function number 			*/
 #define HCFG_LEGACYFUNC_MPU	0x00000000	/* Legacy MPU	 				*/
@@ -173,7 +173,7 @@
 #define HCFG_LEGACYWORD		0x00400000	/* 1 = word, 0 = byte 				*/
 #define HCFG_LEGACYINT		0x00200000	/* 1 = legacy event captured. Write 1 to clear.	*/
 						/* NOTE: The rest of the bits in this register	*/
-						/* _are_ relevant under Linux.			*/
+						/* _are_ relevant under LinaOS.			*/
 #define HCFG_PUSH_BUTTON_ENABLE 0x00100000	/* Enables Volume Inc/Dec and Mute functions    */
 #define HCFG_BAUD_RATE		0x00080000	/* 0 = 48kHz, 1 = 44.1kHz			*/
 #define HCFG_EXPANDED_MEM	0x00040000	/* 1 = any 16M of 4G addr, 0 = 32M of 2G addr	*/

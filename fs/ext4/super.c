@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/super.c
+ *  linaos/fs/ext4/super.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  linaos/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -17,35 +17,35 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/parser.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/vfs.h>
-#include <linux/random.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/quotaops.h>
-#include <linux/seq_file.h>
-#include <linux/ctype.h>
-#include <linux/log2.h>
-#include <linux/crc16.h>
-#include <linux/dax.h>
-#include <linux/cleancache.h>
-#include <linux/uaccess.h>
-#include <linux/iversion.h>
-#include <linux/unicode.h>
-#include <linux/part_stat.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/fs.h>
+#include <linaos/time.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/parser.h>
+#include <linaos/buffer_head.h>
+#include <linaos/exportfs.h>
+#include <linaos/vfs.h>
+#include <linaos/random.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/quotaops.h>
+#include <linaos/seq_file.h>
+#include <linaos/ctype.h>
+#include <linaos/log2.h>
+#include <linaos/crc16.h>
+#include <linaos/dax.h>
+#include <linaos/cleancache.h>
+#include <linaos/uaccess.h>
+#include <linaos/iversion.h>
+#include <linaos/unicode.h>
+#include <linaos/part_stat.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
 
 #include "ext4.h"
 #include "ext4_extents.h"	/* Needed for trace points definition */
@@ -1828,7 +1828,7 @@ static ext4_fsblk_t get_sb_block(void **data)
 
 static const char deprecated_msg[] =
 	"Mount option \"%s\" will be removed by %s\n"
-	"Contact linux-ext4@vger.kernel.org if you think we should keep it.\n";
+	"Contact linaos-ext4@vger.kernel.org if you think we should keep it.\n";
 
 #ifdef CONFIG_QUOTA
 static int set_qf_name(struct super_block *sb, int qtype, substring_t *args)

@@ -13,27 +13,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/in.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/ipv6.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/un.h>
-#include <linux/uaccess.h>
-#include <linux/inet.h>
-#include <linux/idr.h>
-#include <linux/file.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <linaos/in.h>
+#include <linaos/module.h>
+#include <linaos/net.h>
+#include <linaos/ipv6.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/un.h>
+#include <linaos/uaccess.h>
+#include <linaos/inet.h>
+#include <linaos/idr.h>
+#include <linaos/file.h>
+#include <linaos/highmem.h>
+#include <linaos/slab.h>
 #include <net/9p/9p.h>
-#include <linux/parser.h>
+#include <linaos/parser.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>
-#include <linux/scatterlist.h>
-#include <linux/swap.h>
-#include <linux/virtio.h>
-#include <linux/virtio_9p.h>
+#include <linaos/scatterlist.h>
+#include <linaos/swap.h>
+#include <linaos/virtio.h>
+#include <linaos/virtio_9p.h>
 #include "trans_common.h"
 
 #define VIRTQUEUE_NUM	128

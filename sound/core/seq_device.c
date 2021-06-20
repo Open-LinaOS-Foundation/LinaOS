@@ -21,17 +21,17 @@
  * resources like i/o port are passed via snd_seq_device argument.
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/info.h>
 #include <sound/seq_device.h>
 #include <sound/seq_kernel.h>
 #include <sound/initval.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <linaos/kmod.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
 
 MODULE_AUTHOR("Takashi Iwai <tiwai@suse.de>");
 MODULE_DESCRIPTION("ALSA sequencer device management");

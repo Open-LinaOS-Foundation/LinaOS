@@ -9,7 +9,7 @@
  * example, the app is requesting memory of size 256MB that is backed by
  * huge pages.
  *
- * For the ia64 architecture, the Linux kernel reserves Region number 4 for
+ * For the ia64 architecture, the LinaOS kernel reserves Region number 4 for
  * huge pages.  That means that if one requires a fixed address, a huge page
  * aligned address starting with 0x800000... will be required.  If a fixed
  * address is not required, the kernel will select an address in the proper

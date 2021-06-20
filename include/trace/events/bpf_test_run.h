@@ -5,7 +5,7 @@
 #if !defined(_TRACE_BPF_TEST_RUN_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_BPF_TEST_RUN_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(bpf_test_finish,
 

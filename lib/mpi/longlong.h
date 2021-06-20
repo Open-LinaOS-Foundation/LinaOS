@@ -19,7 +19,7 @@
  * the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston,
  * MA 02111-1307, USA. */
 
-#include <linux/count_zeros.h>
+#include <linaos/count_zeros.h>
 
 /* You have to define the following before including this file:
  *
@@ -316,7 +316,7 @@ extern UDItype __udiv_qrnnd(UDItype *, UDItype, UDItype, UDItype);
 	     "rM" ((USItype)(al)), \
 	     "rM" ((USItype)(bl)))
 #if 0 && defined(_PA_RISC1_1)
-/* xmpyu uses floating point register which is not allowed in Linux kernel. */
+/* xmpyu uses floating point register which is not allowed in LinaOS kernel. */
 #define umul_ppmm(wh, wl, u, v) \
 do { \
 	union {UDItype __ll; \

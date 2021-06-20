@@ -14,7 +14,7 @@
 #ifndef __LINUX_USB_AUDIO_V2_H
 #define __LINUX_USB_AUDIO_V2_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* v1.0 and v2.0 of this standard have many things in common. For the rest
  * of the definitions, please refer to audio.h */

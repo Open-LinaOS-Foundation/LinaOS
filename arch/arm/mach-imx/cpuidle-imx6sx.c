@@ -3,9 +3,9 @@
  * Copyright (C) 2014 Freescale Semiconductor, Inc.
  */
 
-#include <linux/cpuidle.h>
-#include <linux/cpu_pm.h>
-#include <linux/module.h>
+#include <linaos/cpuidle.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/module.h>
 #include <asm/cacheflush.h>
 #include <asm/cpuidle.h>
 #include <asm/suspend.h>

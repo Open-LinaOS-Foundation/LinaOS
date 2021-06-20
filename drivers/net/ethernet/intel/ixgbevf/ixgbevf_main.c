@@ -7,29 +7,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/vmalloc.h>
+#include <linaos/string.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/sctp.h>
+#include <linaos/ipv6.h>
+#include <linaos/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/prefetch.h>
+#include <linaos/ethtool.h>
+#include <linaos/if.h>
+#include <linaos/if_vlan.h>
+#include <linaos/prefetch.h>
 #include <net/mpls.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/atomic.h>
+#include <linaos/bpf.h>
+#include <linaos/bpf_trace.h>
+#include <linaos/atomic.h>
 #include <net/xfrm.h>
 
 #include "ixgbevf.h"
@@ -76,7 +76,7 @@ static const struct pci_device_id ixgbevf_pci_tbl[] = {
 };
 MODULE_DEVICE_TABLE(pci, ixgbevf_pci_tbl);
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <linaos.nics@intel.com>");
 MODULE_DESCRIPTION("Intel(R) 10 Gigabit Virtual Function Network Driver");
 MODULE_LICENSE("GPL v2");
 

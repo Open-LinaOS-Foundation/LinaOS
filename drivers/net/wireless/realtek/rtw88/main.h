@@ -6,14 +6,14 @@
 #define __RTK_MAIN_H_
 
 #include <net/mac80211.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
-#include <linux/average.h>
-#include <linux/bitops.h>
-#include <linux/bitfield.h>
-#include <linux/iopoll.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
+#include <linaos/vmalloc.h>
+#include <linaos/firmware.h>
+#include <linaos/average.h>
+#include <linaos/bitops.h>
+#include <linaos/bitfield.h>
+#include <linaos/iopoll.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
 
 #include "util.h"
 

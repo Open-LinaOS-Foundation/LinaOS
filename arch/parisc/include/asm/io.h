@@ -2,8 +2,8 @@
 #ifndef _ASM_IO_H
 #define _ASM_IO_H
 
-#include <linux/types.h>
-#include <linux/pgtable.h>
+#include <linaos/types.h>
+#include <linaos/pgtable.h>
 
 #define virt_to_phys(a) ((unsigned long)__pa(a))
 #define phys_to_virt(a) __va(a)

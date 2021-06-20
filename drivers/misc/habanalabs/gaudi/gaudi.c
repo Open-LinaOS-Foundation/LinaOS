@@ -13,12 +13,12 @@
 #include "../include/gaudi/gaudi_reg_map.h"
 #include "../include/gaudi/gaudi_async_ids_map_extended.h"
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/hwmon.h>
-#include <linux/iommu.h>
-#include <linux/seq_file.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/firmware.h>
+#include <linaos/hwmon.h>
+#include <linaos/iommu.h>
+#include <linaos/seq_file.h>
 
 /*
  * Gaudi security scheme:
@@ -3836,7 +3836,7 @@ static void gaudi_pre_hw_init(struct hl_device *hdev)
 	RREG32(mmHW_STATE);
 
 	if (hdev->asic_prop.fw_security_disabled) {
-		/* Set the access through PCI bars (Linux driver only) as
+		/* Set the access through PCI bars (LinaOS driver only) as
 		 * secured
 		 */
 		WREG32(mmPCIE_WRAP_LBW_PROT_OVR,

@@ -2,31 +2,31 @@
 /*
  * Qualcomm PCIe root complex driver
  *
- * Copyright (c) 2014-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014-2015, The LinaOS Foundation. All rights reserved.
  * Copyright 2015 Linaro Limited.
  *
  * Author: Stanimir Varbanov <svarbanov@mm-sol.com>
  */
 
-#include <linux/clk.h>
-#include <linux/crc8.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/crc8.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/pci.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/platform_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/reset.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #include "../../pci.h"
 #include "pcie-designware.h"

@@ -24,24 +24,24 @@
  * archive for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/ptrace.h>
-#include <linux/signal.h>
-#include <linux/elf.h>
-#include <linux/audit.h>
-#include <linux/seccomp.h>
-#include <linux/tracehook.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/ptrace.h>
+#include <linaos/signal.h>
+#include <linaos/elf.h>
+#include <linaos/audit.h>
+#include <linaos/seccomp.h>
+#include <linaos/tracehook.h>
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/asm-offsets.h>
 #include <asm/cacheflush.h>
 #include <asm/syscall.h>
-#include <linux/io.h>
+#include <linaos/io.h>
 
 /* Returns the address where the register at REG_OFFS in P is stashed away. */
 static microblaze_reg_t *reg_save_addr(unsigned reg_offs,

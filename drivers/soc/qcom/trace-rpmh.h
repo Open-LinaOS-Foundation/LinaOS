@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2018, The LinaOS Foundation. All rights reserved.
  */
 
 #if !defined(_TRACE_RPMH_H) || defined(TRACE_HEADER_MULTI_READ)
@@ -9,7 +9,7 @@
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM rpmh
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "rpmh-internal.h"
 
 TRACE_EVENT(rpmh_tx_done,

@@ -8,14 +8,14 @@
 
 /*#define DEBUG*/
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/io.h>
+#include <linaos/bitops.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
 
 #include <video/omapvrfb.h>
 

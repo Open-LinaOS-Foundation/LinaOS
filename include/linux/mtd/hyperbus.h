@@ -6,7 +6,7 @@
 #ifndef __LINUX_MTD_HYPERBUS_H__
 #define __LINUX_MTD_HYPERBUS_H__
 
-#include <linux/mtd/map.h>
+#include <linaos/mtd/map.h>
 
 /* HyperBus command bits */
 #define HYPERBUS_RW	0x80	/* R/W# */

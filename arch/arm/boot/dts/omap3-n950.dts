@@ -20,8 +20,8 @@
 		keypad_slide {
 			label = "Keypad Slide";
 			gpios = <&gpio4 13 GPIO_ACTIVE_LOW>; /* 109 */
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_KEYPAD_SLIDE>;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_KEYPAD_SLIDE>;
 			wakeup-source;
 			pinctrl-names = "default";
 			pinctrl-0 = <&keypad_slide_pins>;
@@ -135,7 +135,7 @@
 };
 
 &twl_keypad {
-	linux,keymap = < MATRIX_KEY(0x00, 0x00, KEY_BACKSLASH)
+	linaos,keymap = < MATRIX_KEY(0x00, 0x00, KEY_BACKSLASH)
 			 MATRIX_KEY(0x01, 0x00, KEY_LEFTSHIFT)
 			 MATRIX_KEY(0x02, 0x00, KEY_COMPOSE)
 			 MATRIX_KEY(0x03, 0x00, KEY_LEFTMETA)

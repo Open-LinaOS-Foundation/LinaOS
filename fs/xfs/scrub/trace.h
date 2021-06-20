@@ -9,7 +9,7 @@
 #if !defined(_TRACE_XFS_SCRUB_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_XFS_SCRUB_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "xfs_bit.h"
 
 /*

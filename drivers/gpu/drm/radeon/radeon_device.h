@@ -1,7 +1,7 @@
-/* radeon_device.h -- Private header for radeon device -*- linux-c -*-
+/* radeon_device.h -- Private header for radeon device -*- linaos-c -*-
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Fremont, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Fremont, California.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a

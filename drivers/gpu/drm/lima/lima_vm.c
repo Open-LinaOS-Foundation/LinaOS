@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0 OR MIT
 /* Copyright 2017-2019 Qiang Yu <yuq825@gmail.com> */
 
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/dma-mapping.h>
 
 #include "lima_device.h"
 #include "lima_vm.h"

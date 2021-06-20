@@ -1,5 +1,5 @@
 ========================================
-The Linux driver implementer's API guide
+The LinaOS driver implementer's API guide
 ========================================
 
 The kernel offers a wide variety of interfaces to support the development

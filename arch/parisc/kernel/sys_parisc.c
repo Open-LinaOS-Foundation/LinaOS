@@ -3,27 +3,27 @@
 /*
  *    PARISC specific syscalls
  *
- *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-linux.org>
- *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-linux.org>
- *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-linux.org>
+ *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-linaos.org>
+ *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-linaos.org>
+ *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-linaos.org>
  *    Copyright (C) 1999-2020 Helge Deller <deller@gmx.de>
  */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/elf.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/linkage.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/shm.h>
-#include <linux/syscalls.h>
-#include <linux/utsname.h>
-#include <linux/personality.h>
-#include <linux/random.h>
-#include <linux/compat.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/linkage.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
+#include <linaos/shm.h>
+#include <linaos/syscalls.h>
+#include <linaos/utsname.h>
+#include <linaos/personality.h>
+#include <linaos/random.h>
+#include <linaos/compat.h>
 
 /* we construct an artificial offset for the mapping based on the physical
  * address of the kernel mapping variable */

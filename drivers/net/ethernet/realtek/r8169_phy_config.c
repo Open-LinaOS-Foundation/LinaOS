@@ -9,8 +9,8 @@
  * See MAINTAINERS file for support contact information.
  */
 
-#include <linux/delay.h>
-#include <linux/phy.h>
+#include <linaos/delay.h>
+#include <linaos/phy.h>
 
 #include "r8169.h"
 

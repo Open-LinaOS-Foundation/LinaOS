@@ -6,9 +6,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <linaos/acpi.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>
 #include "intel_soc_dts_iosf.h"
@@ -118,5 +118,5 @@ module_init(intel_soc_thermal_init)
 module_exit(intel_soc_thermal_exit)
 
 MODULE_DESCRIPTION("Intel SoC DTS Thermal Driver");
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>");
 MODULE_LICENSE("GPL v2");

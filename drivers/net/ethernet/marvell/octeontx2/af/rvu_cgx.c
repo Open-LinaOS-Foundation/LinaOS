@@ -8,9 +8,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include "rvu.h"
 #include "cgx.h"

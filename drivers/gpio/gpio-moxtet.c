@@ -5,10 +5,10 @@
  *  Copyright (C) 2018 Marek Behún <kabel@kernel.org>
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/moxtet.h>
-#include <linux/module.h>
+#include <linaos/bitops.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/moxtet.h>
+#include <linaos/module.h>
 
 #define MOXTET_GPIO_NGPIOS	12
 #define MOXTET_GPIO_INPUTS	4

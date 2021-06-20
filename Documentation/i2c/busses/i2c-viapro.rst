@@ -19,13 +19,13 @@ Supported adapters:
     Datasheet: available on request and under NDA from VIA
 
   * VIA Technologies, Inc. VX800/VX820
-    Datasheet: available on http://linux.via.com.tw
+    Datasheet: available on http://linaos.via.com.tw
 
   * VIA Technologies, Inc. VX855/VX875
-    Datasheet: available on http://linux.via.com.tw
+    Datasheet: available on http://linaos.via.com.tw
 
   * VIA Technologies, Inc. VX900
-    Datasheet: available on http://linux.via.com.tw
+    Datasheet: available on http://linaos.via.com.tw
 
 Authors:
 	- Kyösti Mälkki <kmalkki@cc.hut.fi>,

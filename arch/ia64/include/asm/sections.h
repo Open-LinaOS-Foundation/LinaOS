@@ -7,8 +7,8 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
 
-#include <linux/elf.h>
-#include <linux/uaccess.h>
+#include <linaos/elf.h>
+#include <linaos/uaccess.h>
 #include <asm-generic/sections.h>
 
 extern char __phys_per_cpu_start[];

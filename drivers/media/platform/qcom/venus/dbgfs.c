@@ -3,7 +3,7 @@
  * Copyright (C) 2020 Linaro Ltd.
  */
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 #include "core.h"
 

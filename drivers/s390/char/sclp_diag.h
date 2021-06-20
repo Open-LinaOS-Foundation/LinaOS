@@ -7,7 +7,7 @@
 #ifndef _SCLP_DIAG_H
 #define _SCLP_DIAG_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* return codes for Diagnostic Test FTP Service, as indicated in member
  * sclp_diag_ftp::ldflg

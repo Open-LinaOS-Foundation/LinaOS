@@ -3,7 +3,7 @@
 #ifndef __LINUX_USB_TYPEC_H
 #define __LINUX_USB_TYPEC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* USB Type-C Specification releases */
 #define USB_TYPEC_REV_1_0	0x100 /* 1.0 */

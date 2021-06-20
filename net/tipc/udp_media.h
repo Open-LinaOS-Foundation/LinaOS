@@ -38,8 +38,8 @@
 #ifndef _TIPC_UDP_MEDIA_H
 #define _TIPC_UDP_MEDIA_H
 
-#include <linux/ip.h>
-#include <linux/udp.h>
+#include <linaos/ip.h>
+#include <linaos/udp.h>
 
 int tipc_udp_nl_bearer_add(struct tipc_bearer *b, struct nlattr *attr);
 int tipc_udp_nl_add_bearer_data(struct tipc_nl_msg *msg, struct tipc_bearer *b);

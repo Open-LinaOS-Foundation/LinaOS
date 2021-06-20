@@ -5,20 +5,20 @@
  * Authors:	Jamal Hadi Salim (2002-4)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
-#include <linux/tc_act/tc_pedit.h>
+#include <linaos/tc_act/tc_pedit.h>
 #include <net/tc_act/tc_pedit.h>
-#include <uapi/linux/tc_act/tc_pedit.h>
+#include <uapi/linaos/tc_act/tc_pedit.h>
 #include <net/pkt_cls.h>
 
 static unsigned int pedit_net_id;

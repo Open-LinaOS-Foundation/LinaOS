@@ -11,10 +11,10 @@
 #include "../include/goya/asic_reg/goya_masks.h"
 #include "../include/goya/goya_reg_map.h"
 
-#include <linux/pci.h>
-#include <linux/hwmon.h>
-#include <linux/iommu.h>
-#include <linux/seq_file.h>
+#include <linaos/pci.h>
+#include <linaos/hwmon.h>
+#include <linaos/iommu.h>
+#include <linaos/seq_file.h>
 
 /*
  * GOYA security scheme:
@@ -2457,7 +2457,7 @@ static int goya_init_cpu(struct hl_device *hdev)
 		return 0;
 
 	/*
-	 * Before pushing u-boot/linux to device, need to set the ddr bar to
+	 * Before pushing u-boot/linaos to device, need to set the ddr bar to
 	 * base address of dram
 	 */
 	if (goya_set_ddr_bar_base(hdev, DRAM_PHYS_BASE) == U64_MAX) {

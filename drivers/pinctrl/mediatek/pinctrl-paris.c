@@ -9,8 +9,8 @@
  *	   Hongzhou.Yang <hongzhou.yang@mediatek.com>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/module.h>
 #include <dt-bindings/pinctrl/mt65xx.h>
 #include "pinctrl-paris.h"
 

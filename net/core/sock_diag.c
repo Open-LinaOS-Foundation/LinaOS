@@ -1,19 +1,19 @@
 /* License: GPL */
 
-#include <linux/mutex.h>
-#include <linux/socket.h>
-#include <linux/skbuff.h>
+#include <linaos/mutex.h>
+#include <linaos/socket.h>
+#include <linaos/skbuff.h>
 #include <net/netlink.h>
 #include <net/net_namespace.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <net/sock.h>
-#include <linux/kernel.h>
-#include <linux/tcp.h>
-#include <linux/workqueue.h>
-#include <linux/nospec.h>
-#include <linux/cookie.h>
-#include <linux/inet_diag.h>
-#include <linux/sock_diag.h>
+#include <linaos/kernel.h>
+#include <linaos/tcp.h>
+#include <linaos/workqueue.h>
+#include <linaos/nospec.h>
+#include <linaos/cookie.h>
+#include <linaos/inet_diag.h>
+#include <linaos/sock_diag.h>
 
 static const struct sock_diag_handler *sock_diag_handlers[AF_MAX];
 static int (*inet_rcv_compat)(struct sk_buff *skb, struct nlmsghdr *nlh);

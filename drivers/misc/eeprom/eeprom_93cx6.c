@@ -8,10 +8,10 @@
  * Supported chipsets: 93c46 & 93c66.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/eeprom_93cx6.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/eeprom_93cx6.h>
 
 MODULE_AUTHOR("http://rt2x00.serialmonkey.com");
 MODULE_VERSION("1.0");

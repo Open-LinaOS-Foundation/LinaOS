@@ -7,9 +7,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
 #include <asm/cache.h>
 
 #define CCR_CACHE_SNM	0x40000		/* Hardware-assisted synonym avoidance */

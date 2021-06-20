@@ -5,8 +5,8 @@
 # s390 script.
 #
 # Copyright IBM Corp. 2017
-# Author(s):  Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
-# Changed by: Ravi Bangoria <ravi.bangoria@linux.vnet.ibm.com>
+# Author(s):  Hendrik Brueckner <brueckner@linaos.vnet.ibm.com>
+# Changed by: Ravi Bangoria <ravi.bangoria@linaos.vnet.ibm.com>
 
 wordsize=$1
 SYSCALL_TBL=$2

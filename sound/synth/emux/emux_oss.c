@@ -10,8 +10,8 @@
  */
 
 
-#include <linux/export.h>
-#include <linux/uaccess.h>
+#include <linaos/export.h>
+#include <linaos/uaccess.h>
 #include <sound/core.h>
 #include "emux_voice.h"
 #include <sound/asoundef.h>
@@ -409,7 +409,7 @@ emuspec_control(struct snd_emux *emu, struct snd_emux_port *port, int cmd,
  * GUS specific h/w controls
  */
 
-#include <linux/ultrasound.h>
+#include <linaos/ultrasound.h>
 
 static void
 gusspec_control(struct snd_emux *emu, struct snd_emux_port *port, int cmd,

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/omapfb-main.c
+ * linaos/drivers/video/omap2/omapfb-main.c
  *
  * Copyright (C) 2008 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -9,15 +9,15 @@
  * by Imre Deak.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/omapfb.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/fb.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/vmalloc.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/omapfb.h>
 
 #include <video/omapfb_dss.h>
 #include <video/omapvrfb.h>

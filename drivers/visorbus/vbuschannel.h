@@ -16,8 +16,8 @@
  * the client devices and client drivers for the server end to see.
  */
 
-#include <linux/uuid.h>
-#include <linux/visorbus.h>
+#include <linaos/uuid.h>
+#include <linaos/visorbus.h>
 
 /* {193b331b-c58f-11da-95a9-00e08161165f} */
 #define VISOR_VBUS_CHANNEL_GUID						\

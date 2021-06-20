@@ -17,12 +17,12 @@
  * Released under the GPLv2 only.
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/usb.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/rwsem.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/usb.h>
 
 #include "usb.h"
 

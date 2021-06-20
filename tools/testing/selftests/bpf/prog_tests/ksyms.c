@@ -9,7 +9,7 @@ static int duration;
 
 void test_ksyms(void)
 {
-	const char *btf_path = "/sys/kernel/btf/vmlinux";
+	const char *btf_path = "/sys/kernel/btf/vmlinaos";
 	struct test_ksyms *skel;
 	struct test_ksyms__data *data;
 	__u64 link_fops_addr, per_cpu_start_addr;

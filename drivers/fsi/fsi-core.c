@@ -10,17 +10,17 @@
  *  - s/cfam/chip (cfam_id -> chip_id etc...)
  */
 
-#include <linux/crc4.h>
-#include <linux/device.h>
-#include <linux/fsi.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
+#include <linaos/crc4.h>
+#include <linaos/device.h>
+#include <linaos/fsi.h>
+#include <linaos/idr.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/cdev.h>
+#include <linaos/fs.h>
+#include <linaos/uaccess.h>
 
 #include "fsi-master.h"
 
@@ -1343,7 +1343,7 @@ void fsi_master_unregister(struct fsi_master *master)
 }
 EXPORT_SYMBOL_GPL(fsi_master_unregister);
 
-/* FSI core & Linux bus type definitions */
+/* FSI core & LinaOS bus type definitions */
 
 static int fsi_bus_match(struct device *dev, struct device_driver *drv)
 {

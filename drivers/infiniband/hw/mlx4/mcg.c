@@ -35,9 +35,9 @@
 #include <rdma/ib_cache.h>
 #include <rdma/ib_sa.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/rbtree.h>
-#include <linux/delay.h>
+#include <linaos/mlx4/cmd.h>
+#include <linaos/rbtree.h>
+#include <linaos/delay.h>
 
 #include "mlx4_ib.h"
 

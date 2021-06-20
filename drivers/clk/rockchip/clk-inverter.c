@@ -3,11 +3,11 @@
  * Copyright 2015 Heiko Stuebner <heiko@sntech.de>
  */
 
-#include <linux/slab.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
+#include <linaos/kernel.h>
 #include "clk.h"
 
 struct rockchip_inv_clock {

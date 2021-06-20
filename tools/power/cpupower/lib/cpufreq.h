@@ -2,7 +2,7 @@
 /*
  *  cpufreq.h - definitions for libcpufreq
  *
- *  Copyright (C) 2004-2009  Dominik Brodowski <linux@dominikbrodowski.de>
+ *  Copyright (C) 2004-2009  Dominik Brodowski <linaos@dominikbrodowski.de>
  */
 
 #ifndef __CPUPOWER_CPUFREQ_H__

@@ -40,10 +40,10 @@
 #include <net/tcp.h>
 #include <net/mptcp.h>
 
-#include <linux/compiler.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/static_key.h>
+#include <linaos/compiler.h>
+#include <linaos/gfp.h>
+#include <linaos/module.h>
+#include <linaos/static_key.h>
 
 #include <trace/events/tcp.h>
 

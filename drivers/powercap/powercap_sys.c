@@ -4,11 +4,11 @@
  * Copyright (c) 2013, Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/powercap.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/powercap.h>
 
 #define to_powercap_zone(n) container_of(n, struct powercap_zone, dev)
 #define to_powercap_control_type(n) \
@@ -673,5 +673,5 @@ static int __init powercap_init(void)
 fs_initcall(powercap_init);
 
 MODULE_DESCRIPTION("PowerCap sysfs Driver");
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>");
 MODULE_LICENSE("GPL v2");

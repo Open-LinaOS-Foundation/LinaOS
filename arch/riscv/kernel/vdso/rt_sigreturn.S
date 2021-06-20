@@ -3,7 +3,7 @@
  * Copyright (C) 2014 Regents of the University of California
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/unistd.h>
 
 	.text

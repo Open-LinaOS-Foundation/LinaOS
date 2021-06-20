@@ -41,20 +41,20 @@
  * consecutive packets.
  */
 
-#include <linux/acpi.h>
-#include <linux/crc16.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/efi.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/ktime.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/spi/spi.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linaos/acpi.h>
+#include <linaos/crc16.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/efi.h>
+#include <linaos/input.h>
+#include <linaos/input/mt.h>
+#include <linaos/ktime.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/spi/spi.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
 
 #include <asm/barrier.h>
 #include <asm/unaligned.h>

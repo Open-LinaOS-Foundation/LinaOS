@@ -6,9 +6,9 @@
  *
  */
 
-#include <linux/crypto.h>
-#include <linux/cryptouser.h>
-#include <linux/sched.h>
+#include <linaos/crypto.h>
+#include <linaos/cryptouser.h>
+#include <linaos/sched.h>
 #include <net/netlink.h>
 #include <net/sock.h>
 #include <crypto/internal/skcipher.h>

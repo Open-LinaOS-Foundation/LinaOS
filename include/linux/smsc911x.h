@@ -8,8 +8,8 @@
 #ifndef __LINUX_SMSC911X_H__
 #define __LINUX_SMSC911X_H__
 
-#include <linux/phy.h>
-#include <linux/if_ether.h>
+#include <linaos/phy.h>
+#include <linaos/if_ether.h>
 
 /* platform_device configuration data, should be assigned to
  * the platform_device's dev.platform_data */

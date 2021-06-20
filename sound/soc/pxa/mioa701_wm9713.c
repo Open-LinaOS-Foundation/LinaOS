@@ -28,9 +28,9 @@
  *                           +-------------------+        ---
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/platform_device.h>
 
 #include <asm/mach-types.h>
 #include <mach/audio.h>

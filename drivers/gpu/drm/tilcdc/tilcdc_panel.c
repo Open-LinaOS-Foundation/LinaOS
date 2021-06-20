@@ -4,9 +4,9 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
 
 #include <video/display_timing.h>
 #include <video/of_display_timing.h>

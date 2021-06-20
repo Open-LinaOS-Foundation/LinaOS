@@ -10,7 +10,7 @@
  * buttons, such as OR22V and OR24E.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <media/rc-map.h>
 
 static struct rc_map_table medion_x10_or2x[] = {

@@ -98,9 +98,9 @@
  *   func = static_call_query(name);
  */
 
-#include <linux/types.h>
-#include <linux/cpu.h>
-#include <linux/static_call_types.h>
+#include <linaos/types.h>
+#include <linaos/cpu.h>
+#include <linaos/static_call_types.h>
 
 #ifdef CONFIG_HAVE_STATIC_CALL
 #include <asm/static_call.h>
@@ -131,7 +131,7 @@ extern int __init static_call_init(void);
 
 struct static_call_mod {
 	struct static_call_mod *next;
-	struct module *mod; /* for vmlinux, mod == NULL */
+	struct module *mod; /* for vmlinaos, mod == NULL */
 	struct static_call_site *sites;
 };
 

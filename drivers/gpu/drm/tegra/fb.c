@@ -7,7 +7,7 @@
  *   Copyright (C) 2012 Analog Devices Inc.
  */
 
-#include <linux/console.h>
+#include <linaos/console.h>
 
 #include <drm/drm_fourcc.h>
 #include <drm/drm_gem_framebuffer_helper.h>

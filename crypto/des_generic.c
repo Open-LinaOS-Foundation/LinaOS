@@ -8,11 +8,11 @@
  */
 
 #include <asm/byteorder.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/crypto.h>
+#include <linaos/bitops.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/crypto.h>
 
 #include <crypto/internal/des.h>
 

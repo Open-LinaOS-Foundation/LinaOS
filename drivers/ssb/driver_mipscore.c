@@ -10,15 +10,15 @@
 
 #include "ssb_private.h"
 
-#include <linux/ssb/ssb.h>
+#include <linaos/ssb/ssb.h>
 
-#include <linux/mtd/physmap.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/time.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_reg.h>
+#include <linaos/time.h>
 #ifdef CONFIG_BCM47XX
-#include <linux/bcm47xx_nvram.h>
+#include <linaos/bcm47xx_nvram.h>
 #endif
 
 static const char * const part_probes[] = { "bcm47xxpart", NULL };

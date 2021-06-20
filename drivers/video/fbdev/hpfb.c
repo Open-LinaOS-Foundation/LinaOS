@@ -3,21 +3,21 @@
  *	HP300 Topcat framebuffer support (derived from macfb of all things)
  *	Phil Blundell <philb@gnu.org> 1998
  *	DIO-II, colour map and Catseye support by
- *	Kars de Jong <jongk@linux-m68k.org>, May 2004.
+ *	Kars de Jong <jongk@linaos-m68k.org>, May 2004.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/fb.h>
-#include <linux/dio.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/fb.h>
+#include <linaos/dio.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 static struct fb_info fb_info = {
 	.fix = {

@@ -71,35 +71,35 @@
 		SW1 {
 			label = "SW1";
 			gpios = <&pioA PIN_PA29 GPIO_ACTIVE_LOW>;
-			linux,code = <0x101>;
+			linaos,code = <0x101>;
 			wakeup-source;
 		};
 
 		SW2 {
 			label = "SW2";
 			gpios = <&pioA PIN_PA18 GPIO_ACTIVE_LOW>;
-			linux,code = <0x102>;
+			linaos,code = <0x102>;
 			wakeup-source;
 		};
 
 		SW3 {
 			label = "SW3";
 			gpios = <&pioA PIN_PA22 GPIO_ACTIVE_LOW>;
-			linux,code = <0x103>;
+			linaos,code = <0x103>;
 			wakeup-source;
 		};
 
 		SW7 {
 			label = "SW7";
 			gpios = <&pioA PIN_PA26 GPIO_ACTIVE_LOW>;
-			linux,code = <0x107>;
+			linaos,code = <0x107>;
 			wakeup-source;
 		};
 
 		SW8 {
 			label = "SW8";
 			gpios = <&pioA PIN_PA24 GPIO_ACTIVE_LOW>;
-			linux,code = <0x108>;
+			linaos,code = <0x108>;
 			wakeup-source;
 		};
 	};

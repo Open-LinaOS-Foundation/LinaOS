@@ -15,7 +15,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
-#include <linux/if_xdp.h>
+#include <linaos/if_xdp.h>
 
 #include "libbpf.h"
 

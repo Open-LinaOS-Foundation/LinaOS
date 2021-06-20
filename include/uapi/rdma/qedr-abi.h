@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR Linux-OpenIB) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR LinaOS-OpenIB) */
 /* QLogic qedr NIC Driver
  * Copyright (c) 2015-2016  QLogic Corporation
  *
@@ -33,7 +33,7 @@
 #ifndef __QEDR_USER_H__
 #define __QEDR_USER_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define QEDR_ABI_VERSION		(8)
 

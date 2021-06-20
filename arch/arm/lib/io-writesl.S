@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/io-writesl.S
+ *  linaos/arch/arm/lib/io-writesl.S
  *
  *  Copyright (C) 1995-2000 Russell King
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 ENTRY(__raw_writesl)

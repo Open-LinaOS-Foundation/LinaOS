@@ -3,17 +3,17 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/ratelimit.h>
-#include <linux/kthread.h>
-#include <linux/raid/pq.h>
-#include <linux/semaphore.h>
-#include <linux/uuid.h>
-#include <linux/list_sort.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/bio.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/ratelimit.h>
+#include <linaos/kthread.h>
+#include <linaos/raid/pq.h>
+#include <linaos/semaphore.h>
+#include <linaos/uuid.h>
+#include <linaos/list_sort.h>
 #include "misc.h"
 #include "ctree.h"
 #include "extent_map.h"

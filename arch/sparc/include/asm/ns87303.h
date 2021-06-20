@@ -78,7 +78,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 #include <asm/io.h>
 

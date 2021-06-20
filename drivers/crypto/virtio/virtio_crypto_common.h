@@ -7,9 +7,9 @@
 #ifndef _VIRTIO_CRYPTO_COMMON_H
 #define _VIRTIO_CRYPTO_COMMON_H
 
-#include <linux/virtio.h>
-#include <linux/crypto.h>
-#include <linux/spinlock.h>
+#include <linaos/virtio.h>
+#include <linaos/crypto.h>
+#include <linaos/spinlock.h>
 #include <crypto/aead.h>
 #include <crypto/aes.h>
 #include <crypto/engine.h>

@@ -9,16 +9,16 @@
  * Copyright (C) 2018-2021 Intel Corporation
  */
 
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
-#include <linux/kcov.h>
-#include <linux/bitops.h>
+#include <linaos/jiffies.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/rcupdate.h>
+#include <linaos/export.h>
+#include <linaos/kcov.h>
+#include <linaos/bitops.h>
 #include <net/mac80211.h>
 #include <net/ieee80211_radiotap.h>
 #include <asm/unaligned.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/sparc/mm/init.c
+ *  linaos/arch/sparc/mm/init.c
  *
  *  Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  *  Copyright (C) 1995 Eddie C. Dost (ecd@skynet.be)
@@ -8,24 +8,24 @@
  *  Copyright (C) 2000 Anton Blanchard (anton@samba.org)
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/initrd.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
-#include <linux/pagemap.h>
-#include <linux/poison.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/ptrace.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/initrd.h>
+#include <linaos/init.h>
+#include <linaos/highmem.h>
+#include <linaos/memblock.h>
+#include <linaos/pagemap.h>
+#include <linaos/poison.h>
+#include <linaos/gfp.h>
 
 #include <asm/sections.h>
 #include <asm/page.h>
@@ -255,7 +255,7 @@ void __init mem_init(void)
 		       PKMAP_BASE,
 		       (unsigned long)PKMAP_BASE+LAST_PKMAP*PAGE_SIZE,
 		       FIXADDR_START);
-		prom_printf("Please mail sparclinux@vger.kernel.org.\n");
+		prom_printf("Please mail sparclinaos@vger.kernel.org.\n");
 		prom_halt();
 	}
 

@@ -9,23 +9,23 @@
  * LCR is written whilst busy.  If it is, then a busy detect interrupt is
  * raised, the LCR needs to be rewritten and the uart status register read.
  */
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/reset.h>
-#include <linux/pm_runtime.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/serial_8250.h>
+#include <linaos/serial_reg.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/workqueue.h>
+#include <linaos/notifier.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/reset.h>
+#include <linaos/pm_runtime.h>
 
 #include <asm/byteorder.h>
 

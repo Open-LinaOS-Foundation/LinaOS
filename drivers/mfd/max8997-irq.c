@@ -7,11 +7,11 @@
 //
 // This driver is based on max8998-irq.c
 
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/max8997.h>
-#include <linux/mfd/max8997-private.h>
+#include <linaos/err.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/max8997.h>
+#include <linaos/mfd/max8997-private.h>
 
 static const u8 max8997_mask_reg[] = {
 	[PMIC_INT1] = MAX8997_REG_INT1MSK,

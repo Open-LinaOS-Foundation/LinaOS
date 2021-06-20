@@ -1,7 +1,7 @@
 What:		/sys/bus/usb/drivers/usbtmc/*/interface_capabilities
 What:		/sys/bus/usb/drivers/usbtmc/*/device_capabilities
 Date:		August 2008
-Contact:	Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+Contact:	Greg Kroah-Hartman <gregkh@linaosfoundation.org>
 Description:
 		These files show the various USB TMC capabilities as described
 		by the device itself.  The full description of the bitfields
@@ -15,7 +15,7 @@ Description:
 What:		/sys/bus/usb/drivers/usbtmc/*/usb488_interface_capabilities
 What:		/sys/bus/usb/drivers/usbtmc/*/usb488_device_capabilities
 Date:		August 2008
-Contact:	Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+Contact:	Greg Kroah-Hartman <gregkh@linaosfoundation.org>
 Description:
 		These files show the various USB TMC capabilities as described
 		by the device itself.  The full description of the bitfields

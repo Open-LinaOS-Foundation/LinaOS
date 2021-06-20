@@ -105,7 +105,7 @@
 					reg = <0x70000 0x10000>;
 				};
 				partition@80000 {
-					label = "linux";
+					label = "linaos";
 					reg = <0x80000 0x310000>;
 				};
 				partition@390000 {
@@ -145,7 +145,7 @@
 			};
 
 			kbd@a0000000 {
-				linux,keymap = < 0x00000001
+				linaos,keymap = < 0x00000001
 						 0x00010002
 						 0x00020003
 						 0x00030004

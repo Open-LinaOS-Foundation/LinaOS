@@ -16,7 +16,7 @@
 #define CTAMIXER_H
 
 #include "ctresource.h"
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 #include <sound/core.h>
 
 /* Define the descriptor of a summation node resource */

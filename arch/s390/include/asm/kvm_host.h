@@ -11,14 +11,14 @@
 #ifndef ASM_KVM_HOST_H
 #define ASM_KVM_HOST_H
 
-#include <linux/types.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/kvm_types.h>
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/seqlock.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/hrtimer.h>
+#include <linaos/interrupt.h>
+#include <linaos/kvm_types.h>
+#include <linaos/kvm_host.h>
+#include <linaos/kvm.h>
+#include <linaos/seqlock.h>
+#include <linaos/module.h>
 #include <asm/debug.h>
 #include <asm/cpu.h>
 #include <asm/fpu/api.h>

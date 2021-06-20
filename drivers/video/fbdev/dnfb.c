@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
 
 #include <asm/setup.h>
 #include <asm/irq.h>
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>
 #include <asm/apollohw.h>
-#include <linux/fb.h>
-#include <linux/module.h>
+#include <linaos/fb.h>
+#include <linaos/module.h>
 
 /* apollo video HW definitions */
 

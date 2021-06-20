@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/extable.h>
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/ptrace.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/hardirq.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
+#include <linaos/extable.h>
+#include <linaos/module.h>
+#include <linaos/signal.h>
+#include <linaos/ptrace.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/hardirq.h>
+#include <linaos/uaccess.h>
+#include <linaos/perf_event.h>
 
 #include <asm/tlbflush.h>
 

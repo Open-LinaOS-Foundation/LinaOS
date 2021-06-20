@@ -3,7 +3,7 @@
 #ifndef BTRFS_DISCARD_H
 #define BTRFS_DISCARD_H
 
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 struct btrfs_fs_info;
 struct btrfs_discard_ctl;

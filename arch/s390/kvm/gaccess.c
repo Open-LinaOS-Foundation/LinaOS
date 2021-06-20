@@ -6,10 +6,10 @@
  *
  */
 
-#include <linux/vmalloc.h>
-#include <linux/mm_types.h>
-#include <linux/err.h>
-#include <linux/pgtable.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm_types.h>
+#include <linaos/err.h>
+#include <linaos/pgtable.h>
 
 #include <asm/gmap.h>
 #include "kvm-s390.h"

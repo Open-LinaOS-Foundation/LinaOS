@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/binfmts.h>
-#include <linux/elf.h>
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <linaos/binfmts.h>
+#include <linaos/elf.h>
+#include <linaos/err.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
 
 #include <asm/page.h>
 #ifdef GENERIC_TIME_VSYSCALL
@@ -52,7 +52,7 @@ static int __init vdso_init(void)
 }
 arch_initcall(vdso_init);
 
-int arch_setup_additional_pages(struct linux_binprm *bprm,
+int arch_setup_additional_pages(struct linaos_binprm *bprm,
 	int uses_interp)
 {
 	struct mm_struct *mm = current->mm;

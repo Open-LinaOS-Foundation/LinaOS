@@ -5,11 +5,11 @@
  * Copyright (C) 2015 Martin Willi
  */
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/bitops.h>
+#include <linaos/string.h>
 #include <asm/unaligned.h>
 #include <crypto/chacha.h>
 

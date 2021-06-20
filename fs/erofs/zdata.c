@@ -6,7 +6,7 @@
  */
 #include "zdata.h"
 #include "compress.h"
-#include <linux/prefetch.h>
+#include <linaos/prefetch.h>
 
 #include <trace/events/erofs.h>
 

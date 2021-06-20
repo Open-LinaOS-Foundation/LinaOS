@@ -30,7 +30,7 @@
 /*
  * Note that, due to trying to use names similar to the protocol specifications,
  * there are many mixed case field names in the structures below.  Although
- * this does not match typical Linux kernel style, it is necessary to be
+ * this does not match typical LinaOS kernel style, it is necessary to be
  * able to match against the protocol specfication.
  *
  * SMB2 commands

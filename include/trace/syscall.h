@@ -2,10 +2,10 @@
 #ifndef _TRACE_SYSCALL_H
 #define _TRACE_SYSCALL_H
 
-#include <linux/tracepoint.h>
-#include <linux/unistd.h>
-#include <linux/trace_events.h>
-#include <linux/thread_info.h>
+#include <linaos/tracepoint.h>
+#include <linaos/unistd.h>
+#include <linaos/trace_events.h>
+#include <linaos/thread_info.h>
 
 #include <asm/ptrace.h>
 

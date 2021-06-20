@@ -23,18 +23,18 @@
  * 02111-1307, USA
  */
 
-#include <linux/bcd.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/palmas.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/rtc.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
+#include <linaos/bcd.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/palmas.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/rtc.h>
+#include <linaos/types.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
 
 struct palmas_rtc {
 	struct rtc_device	*rtc;

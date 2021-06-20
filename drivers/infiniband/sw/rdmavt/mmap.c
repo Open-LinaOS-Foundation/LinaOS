@@ -45,9 +45,9 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm.h>
 #include <rdma/uverbs_ioctl.h>
 #include "mmap.h"
 

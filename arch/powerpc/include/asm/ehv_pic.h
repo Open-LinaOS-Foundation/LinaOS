@@ -10,7 +10,7 @@
 #ifndef __EHV_PIC_H__
 #define __EHV_PIC_H__
 
-#include <linux/irq.h>
+#include <linaos/irq.h>
 
 #define NR_EHV_PIC_INTS 1024
 
@@ -27,7 +27,7 @@ struct ehv_pic {
 	/* The remapper for this EHV_PIC */
 	struct irq_domain	*irqhost;
 
-	/* The "linux" controller struct */
+	/* The "linaos" controller struct */
 	struct irq_chip	hc_irq;
 
 	/* core int flag */

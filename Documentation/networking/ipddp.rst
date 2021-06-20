@@ -15,7 +15,7 @@ AppleTalk-IP (IPDDP) is the method computers connected to AppleTalk
 networks can use to communicate via IP. AppleTalk-IP is simply IP datagrams
 inside AppleTalk packets.
 
-Through this driver you can either allow your Linux box to communicate
+Through this driver you can either allow your LinaOS box to communicate
 IP over an AppleTalk network or you can provide IP gatewaying functions
 for your AppleTalk users.
 
@@ -56,7 +56,7 @@ for locations with large Mac installations)
 
 Encapsulation - You will need to download a software daemon called ipddpd.
 This software expects there to be an AppleTalk-IP gateway on the network.
-You will also need to add the proper routes to route your Linux box's IP
+You will also need to add the proper routes to route your LinaOS box's IP
 traffic out the ipddp interface.
 
 Common Uses of ipddp.c
@@ -66,7 +66,7 @@ decapsulation is being used most for connecting LocalTalk networks to
 IP networks. Although it has been used on EtherTalk networks to allow
 Macs that are only able to tunnel IP over EtherTalk.
 
-Encapsulation has been used to allow a Linux box stuck on a LocalTalk
+Encapsulation has been used to allow a LinaOS box stuck on a LocalTalk
 network to use IP. It should work equally well if you are stuck on an
 EtherTalk only network.
 

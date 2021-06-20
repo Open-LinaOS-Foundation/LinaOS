@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hpfs/dir.c
+ *  linaos/fs/hpfs/dir.c
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *
  *  directory VFS functions
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "hpfs_fn.h"
 
 static int hpfs_dir_release(struct inode *inode, struct file *filp)

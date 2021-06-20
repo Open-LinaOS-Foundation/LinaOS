@@ -7,21 +7,21 @@
  * Copyright (C) 2016 Lino Sanfilippo <LinoSanfilippo@gmx.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/list.h>
-#include <linux/u64_stats_sync.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/crc32.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/firmware.h>
+#include <linaos/list.h>
+#include <linaos/u64_stats_sync.h>
 
 #include "slic.h"
 

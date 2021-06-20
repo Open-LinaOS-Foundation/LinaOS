@@ -7,16 +7,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/efi.h>
-#include <linux/efi-bgrt.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/screen_info.h>
-#include <linux/pm_runtime.h>
+#include <linaos/kernel.h>
+#include <linaos/efi.h>
+#include <linaos/efi-bgrt.h>
+#include <linaos/errno.h>
+#include <linaos/fb.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/printk.h>
+#include <linaos/screen_info.h>
+#include <linaos/pm_runtime.h>
 #include <video/vga.h>
 #include <asm/efi.h>
 #include <drm/drm_utils.h> /* For drm_get_panel_orientation_quirk */

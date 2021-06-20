@@ -12,13 +12,13 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
 
 #include <asm/rheap.h>
 

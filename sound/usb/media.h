@@ -19,7 +19,7 @@
 
 #ifdef CONFIG_SND_USB_AUDIO_USE_MEDIA_CONTROLLER
 
-#include <linux/media.h>
+#include <linaos/media.h>
 #include <media/media-device.h>
 #include <media/media-entity.h>
 #include <media/media-dev-allocator.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
-   SCSI Tape Driver for Linux version 1.1 and newer. See the accompanying
+   SCSI Tape Driver for LinaOS version 1.1 and newer. See the accompanying
    file Documentation/scsi/st.rst for more information.
 
    History:
@@ -20,30 +20,30 @@
 
 static const char *verstr = "20160209";
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/compat.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/mtio.h>
-#include <linux/cdrom.h>
-#include <linux/ioctl.h>
-#include <linux/fcntl.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/moduleparam.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
+#include <linaos/compat.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/mtio.h>
+#include <linaos/cdrom.h>
+#include <linaos/ioctl.h>
+#include <linaos/fcntl.h>
+#include <linaos/spinlock.h>
+#include <linaos/blkdev.h>
+#include <linaos/moduleparam.h>
+#include <linaos/cdev.h>
+#include <linaos/idr.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/dma.h>
 #include <asm/unaligned.h>
 
@@ -4285,7 +4285,7 @@ static int st_probe(struct device *dev)
 		sdev_printk(KERN_INFO, SDp,
 			    "OnStream tapes are no longer supported;\n");
 		sdev_printk(KERN_INFO, SDp,
-			    "please mail to linux-scsi@vger.kernel.org.\n");
+			    "please mail to linaos-scsi@vger.kernel.org.\n");
 		return -ENODEV;
 	}
 

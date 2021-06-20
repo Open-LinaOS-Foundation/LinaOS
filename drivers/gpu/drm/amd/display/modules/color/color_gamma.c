@@ -23,8 +23,8 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
 
 #include "dc.h"
 #include "opp.h"
@@ -1377,7 +1377,7 @@ static void scale_user_regamma_ramp(struct pwl_float_data *pwl_rgb,
  *
  * adjustedY is then linearly interpolating regamma Y between lut1 and lut2
  *
- * Custom degamma on Linux uses the same interpolation math, so is handled here
+ * Custom degamma on LinaOS uses the same interpolation math, so is handled here
  */
 static void apply_lut_1d(
 		const struct dc_gamma *ramp,

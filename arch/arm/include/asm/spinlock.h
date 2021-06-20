@@ -6,7 +6,7 @@
 #error SMP not supported on pre-ARMv6 CPUs
 #endif
 
-#include <linux/prefetch.h>
+#include <linaos/prefetch.h>
 #include <asm/barrier.h>
 #include <asm/processor.h>
 

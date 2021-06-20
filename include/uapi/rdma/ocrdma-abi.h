@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-2-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR BSD-2-Clause) */
 /* This file is part of the Emulex RoCE Device Driver for
  * RoCE (RDMA over Converged Ethernet) adapters.
  * Copyright (C) 2012-2015 Emulex. All rights reserved.
@@ -34,7 +34,7 @@
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * linaos-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
@@ -44,7 +44,7 @@
 #ifndef OCRDMA_ABI_USER_H
 #define OCRDMA_ABI_USER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define OCRDMA_ABI_VERSION 2
 #define OCRDMA_BE_ROCE_ABI_VERSION 1

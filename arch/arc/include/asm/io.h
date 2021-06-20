@@ -6,7 +6,7 @@
 #ifndef _ASM_ARC_IO_H
 #define _ASM_ARC_IO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 #include <asm/page.h>
 #include <asm/unaligned.h>

@@ -7,11 +7,11 @@
 #include <dirent.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <linux/bitmap.h>
+#include <linaos/bitmap.h>
 #include "asm/bug.h"
 
-#include <linux/ctype.h>
-#include <linux/zalloc.h>
+#include <linaos/ctype.h>
+#include <linaos/zalloc.h>
 
 static int max_cpu_num;
 static int max_present_cpu_num;

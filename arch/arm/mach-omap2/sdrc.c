@@ -11,14 +11,14 @@
  */
 #undef DEBUG
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
 
 #include "common.h"
 #include "clock.h"

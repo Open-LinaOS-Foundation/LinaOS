@@ -76,7 +76,7 @@ perf = Extension('perf',
 
 setup(name='perf',
       version='0.1',
-      description='Interface with the Linux profiling infrastructure',
+      description='Interface with the LinaOS profiling infrastructure',
       author='Arnaldo Carvalho de Melo',
       author_email='acme@redhat.com',
       license='GPLv2',

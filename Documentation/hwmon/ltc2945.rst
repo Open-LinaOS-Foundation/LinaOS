@@ -13,7 +13,7 @@ Supported chips:
 
 	https://www.analog.com/media/en/technical-documentation/data-sheets/2945fb.pdf
 
-Author: Guenter Roeck <linux@roeck-us.net>
+Author: Guenter Roeck <linaos@roeck-us.net>
 
 
 Description

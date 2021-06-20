@@ -7,8 +7,8 @@
  * i2c slave address: 0x20 + SA1 << 1 + SA0.
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
 
 #include "rm3100.h"
 

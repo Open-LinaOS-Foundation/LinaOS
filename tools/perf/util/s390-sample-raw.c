@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright IBM Corp. 2019
- * Author(s): Thomas Richter <tmricht@linux.ibm.com>
+ * Author(s): Thomas Richter <tmricht@linaos.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License (version 2 only)
@@ -18,7 +18,7 @@
 #include <inttypes.h>
 
 #include <sys/stat.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/byteorder.h>
 
 #include "debug.h"

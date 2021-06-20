@@ -11,8 +11,8 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/clocksource.h>
-#include <linux/of_address.h>
+#include <linaos/clocksource.h>
+#include <linaos/of_address.h>
 
 #include <asm/mach/arch.h>
 

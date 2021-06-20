@@ -11,11 +11,11 @@
  */
 
 
-#include <linux/device.h>
-#include <linux/libps2.h>
-#include <linux/input/mt.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/libps2.h>
+#include <linaos/input/mt.h>
+#include <linaos/serio.h>
+#include <linaos/slab.h>
 #include "psmouse.h"
 #include "focaltech.h"
 

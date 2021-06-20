@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Intel I/OAT DMA Linux driver
+ * Intel I/OAT DMA LinaOS driver
  * Copyright(c) 2004 - 2015 Intel Corporation.
  */
 
@@ -9,17 +9,17 @@
  * copy operations.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/workqueue.h>
-#include <linux/prefetch.h>
-#include <linux/sizes.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/dmaengine.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/workqueue.h>
+#include <linaos/prefetch.h>
+#include <linaos/sizes.h>
 #include "dma.h"
 #include "registers.h"
 #include "hw.h"

@@ -5,7 +5,7 @@
  * Copyright (c) 2015 Takashi Sakamoto
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include "tascam.h"
 
 #define CLOCK_STATUS_MASK      0xffff0000

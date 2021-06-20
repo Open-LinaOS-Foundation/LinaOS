@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/drivers/net/ethernet/ibm/ehea/ehea.h
+ *  linaos/drivers/net/ethernet/ibm/ehea/ehea.h
  *
  *  eHEA ethernet device driver for IBM eServer System p
  *
@@ -15,10 +15,10 @@
 #ifndef __EHEA_H__
 #define __EHEA_H__
 
-#include <linux/module.h>
-#include <linux/ethtool.h>
-#include <linux/vmalloc.h>
-#include <linux/if_vlan.h>
+#include <linaos/module.h>
+#include <linaos/ethtool.h>
+#include <linaos/vmalloc.h>
+#include <linaos/if_vlan.h>
 
 #include <asm/ibmebus.h>
 #include <asm/io.h>
@@ -135,7 +135,7 @@ struct ehea_page {
 };
 
 /*
- * Generic queue in linux kernel virtual memory
+ * Generic queue in linaos kernel virtual memory
  */
 struct hw_queue {
 	u64 current_q_offset;		/* current queue entry */

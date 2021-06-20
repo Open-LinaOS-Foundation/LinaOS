@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hpfs/namei.c
+ *  linaos/fs/hpfs/namei.c
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *
  *  adding & removing files & directories
  */
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include "hpfs_fn.h"
 
 static void hpfs_update_directory_times(struct inode *dir)

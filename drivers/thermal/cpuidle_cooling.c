@@ -7,14 +7,14 @@
  */
 #define pr_fmt(fmt) "cpuidle cooling: " fmt
 
-#include <linux/cpu_cooling.h>
-#include <linux/cpuidle.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/idle_inject.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <linaos/cpu_cooling.h>
+#include <linaos/cpuidle.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/idle_inject.h>
+#include <linaos/of_device.h>
+#include <linaos/slab.h>
+#include <linaos/thermal.h>
 
 /**
  * struct cpuidle_cooling_device - data for the idle cooling device

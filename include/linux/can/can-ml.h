@@ -42,9 +42,9 @@
 #ifndef CAN_ML_H
 #define CAN_ML_H
 
-#include <linux/can.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
+#include <linaos/can.h>
+#include <linaos/list.h>
+#include <linaos/netdevice.h>
 
 #define CAN_SFF_RCV_ARRAY_SZ (1 << CAN_SFF_ID_BITS)
 #define CAN_EFF_RCV_HASH_BITS 10

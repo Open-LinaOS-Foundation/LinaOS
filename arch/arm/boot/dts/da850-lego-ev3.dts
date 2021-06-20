@@ -7,7 +7,7 @@
 
 /dts-v1/;
 #include <dt-bindings/gpio/gpio.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linaos-event-codes.h>
 #include <dt-bindings/pwm/pwm.h>
 
 #include "da850.dtsi"
@@ -36,37 +36,37 @@
 
 		center {
 			label = "Center";
-			linux,code = <KEY_ENTER>;
+			linaos,code = <KEY_ENTER>;
 			gpios = <&gpio 29 GPIO_ACTIVE_HIGH>;
 		};
 
 		left {
 			label = "Left";
-			linux,code = <KEY_LEFT>;
+			linaos,code = <KEY_LEFT>;
 			gpios = <&gpio 102 GPIO_ACTIVE_HIGH>;
 		};
 
 		back {
 			label = "Back";
-			linux,code = <KEY_BACKSPACE>;
+			linaos,code = <KEY_BACKSPACE>;
 			gpios = <&gpio 106 GPIO_ACTIVE_HIGH>;
 		};
 
 		right {
 			label = "Right";
-			linux,code = <KEY_RIGHT>;
+			linaos,code = <KEY_RIGHT>;
 			gpios = <&gpio 124 GPIO_ACTIVE_HIGH>;
 		};
 
 		down {
 			label = "Down";
-			linux,code = <KEY_DOWN>;
+			linaos,code = <KEY_DOWN>;
 			gpios = <&gpio 126 GPIO_ACTIVE_HIGH>;
 		};
 
 		up {
 			label = "Up";
-			linux,code = <KEY_UP>;
+			linaos,code = <KEY_UP>;
 			gpios = <&gpio 127 GPIO_ACTIVE_HIGH>;
 		};
 	};
@@ -81,28 +81,28 @@
 			label = "led0:green:brick-status";
 			/* GP6[13] */
 			gpios = <&gpio 103 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		right_red {
 			label = "led1:red:brick-status";
 			/* GP6[7] */
 			gpios = <&gpio 108 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		left_red {
 			label = "led0:red:brick-status";
 			/* GP6[12] */
 			gpios = <&gpio 109 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		right_green {
 			label = "led1:green:brick-status";
 			/* GP6[14] */
 			gpios = <&gpio 110 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 	};
 

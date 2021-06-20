@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/** -*- linux-c -*- ***********************************************************
- * Linux PPP over Ethernet (PPPoX/PPPoE) Sockets
+/** -*- linaos-c -*- ***********************************************************
+ * LinaOS PPP over Ethernet (PPPoX/PPPoE) Sockets
  *
  * PPPoX --- Generic PPP encapsulation socket family
  * PPPoE --- PPP over Ethernet (RFC 2516)
@@ -52,33 +52,33 @@
  * License:
  */
 
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/net.h>
-#include <linux/inetdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/if_ether.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp_channel.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/notifier.h>
-#include <linux/file.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/net.h>
+#include <linaos/inetdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_pppox.h>
+#include <linaos/ppp_channel.h>
+#include <linaos/ppp_defs.h>
+#include <linaos/ppp-ioctl.h>
+#include <linaos/notifier.h>
+#include <linaos/file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 
-#include <linux/nsproxy.h>
+#include <linaos/nsproxy.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/sock.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define PPPOE_HASH_BITS 4
 #define PPPOE_HASH_SIZE (1 << PPPOE_HASH_BITS)

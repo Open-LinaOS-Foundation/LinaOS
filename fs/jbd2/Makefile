@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for the linux journaling routines.
+# Makefile for the linaos journaling routines.
 #
 
 obj-$(CONFIG_JBD2) += jbd2.o

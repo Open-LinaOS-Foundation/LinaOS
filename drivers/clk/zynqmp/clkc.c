@@ -7,13 +7,13 @@
  * Based on drivers/clk/zynq/clkc.c
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
 #include "clk-zynqmp.h"
 

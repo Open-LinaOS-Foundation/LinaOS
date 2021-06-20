@@ -17,8 +17,8 @@
 #define FP_SIZE HOST_FP_SIZE
 
 /*
- * x86_64 FC3 doesn't define this in /usr/include/linux/ptrace.h even though
- * it's defined in the kernel's include/linux/ptrace.h. Additionally, use the
+ * x86_64 FC3 doesn't define this in /usr/include/linaos/ptrace.h even though
+ * it's defined in the kernel's include/linaos/ptrace.h. Additionally, use the
  * 2.4 name and value for 2.4 host compatibility.
  */
 #ifndef PTRACE_OLDSETOPTIONS

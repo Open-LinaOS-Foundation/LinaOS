@@ -3,23 +3,23 @@
  * Copyright (C) 2005-2007  Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/bug.h>
-#include <linux/completion.h>
-#include <linux/crc-itu-t.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <linaos/bug.h>
+#include <linaos/completion.h>
+#include <linaos/crc-itu-t.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/firewire.h>
+#include <linaos/firewire-constants.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/byteorder.h>
 
 #include "core.h"

@@ -30,7 +30,7 @@
 		button-setup {
 			debounce-interval = <100>;
 			wakeup-source;
-			linux,code = <KEY_SETUP>;
+			linaos,code = <KEY_SETUP>;
 			label = "factory reset";
 			/* Conflict with NAND flash */
 			gpios = <&gpio0 18 GPIO_ACTIVE_LOW>;
@@ -43,13 +43,13 @@
 			label = "sq201:green:info";
 			gpios = <&gpio0 20 GPIO_ACTIVE_HIGH>;
 			default-state = "on";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 		led-green-usb {
 			label = "sq201:green:usb";
 			gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "usb-host";
+			linaos,default-trigger = "usb-host";
 		};
 	};
 

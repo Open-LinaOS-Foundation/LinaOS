@@ -2,7 +2,7 @@
 #ifndef _LINUX_STDDEF_H
 #define _LINUX_STDDEF_H
 
-#include <uapi/linux/stddef.h>
+#include <uapi/linaos/stddef.h>
 
 #undef NULL
 #define NULL ((void *)0)

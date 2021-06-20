@@ -7,13 +7,13 @@
 #define KMSG_COMPONENT "prot_virt"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/sizes.h>
-#include <linux/bitmap.h>
-#include <linux/memblock.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/sizes.h>
+#include <linaos/bitmap.h>
+#include <linaos/memblock.h>
+#include <linaos/pagemap.h>
+#include <linaos/swap.h>
 #include <asm/facility.h>
 #include <asm/sections.h>
 #include <asm/uv.h>

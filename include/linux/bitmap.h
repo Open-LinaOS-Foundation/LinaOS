@@ -4,11 +4,11 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/align.h>
-#include <linux/bitops.h>
-#include <linux/limits.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/align.h>
+#include <linaos/bitops.h>
+#include <linaos/limits.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 struct device;
 
@@ -112,7 +112,7 @@ struct device;
 
 /**
  * DOC: declare bitmap
- * The DECLARE_BITMAP(name,bits) macro, in linux/types.h, can be used
+ * The DECLARE_BITMAP(name,bits) macro, in linaos/types.h, can be used
  * to declare an array named 'name' of just enough unsigned longs to
  * contain all bit positions from 0 to 'bits' - 1.
  */
@@ -497,10 +497,10 @@ static inline void bitmap_next_set_region(unsigned long *bitmap,
  * BITMAP_FROM_U64() - Represent u64 value in the format suitable for bitmap.
  * @n: u64 value
  *
- * Linux bitmaps are internally arrays of unsigned longs, i.e. 32-bit
+ * LinaOS bitmaps are internally arrays of unsigned longs, i.e. 32-bit
  * integers in 32-bit environment, and 64-bit integers in 64-bit one.
  *
- * There are four combinations of endianness and length of the word in linux
+ * There are four combinations of endianness and length of the word in linaos
  * ABIs: LE64, BE64, LE32 and BE32.
  *
  * On 64-bit kernels 64-bit LE and BE numbers are naturally ordered in

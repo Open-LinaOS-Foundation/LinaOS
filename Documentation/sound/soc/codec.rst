@@ -68,7 +68,7 @@ Codec control IO
 ----------------
 The codec can usually be controlled via an I2C or SPI style interface
 (AC97 combines control with data in the DAI). The codec driver should use the
-Regmap API for all codec IO. Please see include/linux/regmap.h and existing
+Regmap API for all codec IO. Please see include/linaos/regmap.h and existing
 codec drivers for example regmap usage.
 
 

@@ -22,9 +22,9 @@
  * Authors: Alex Deucher
  */
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
 
 #include "amdgpu.h"
 #include "amdgpu_ucode.h"

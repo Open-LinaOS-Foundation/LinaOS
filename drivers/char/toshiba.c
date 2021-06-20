@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* toshiba.c -- Linux driver for accessing the SMM on Toshiba laptops
+/* toshiba.c -- LinaOS driver for accessing the SMM on Toshiba laptops
  *
  * Copyright (c) 1996-2001  Jonathan A. Buzzard (jonathan@buzzard.org.uk)
  *
@@ -46,20 +46,20 @@
 #define TOSH_VERSION "1.11 26/9/2001"
 #define TOSH_DEBUG 0
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/miscdevice.h>
+#include <linaos/ioport.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
-#include <linux/toshiba.h>
+#include <linaos/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/stat.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/mutex.h>
+#include <linaos/toshiba.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Jonathan Buzzard <jonathan@buzzard.org.uk>");
@@ -296,7 +296,7 @@ static int proc_toshiba_show(struct seq_file *m, void *v)
 	key = tosh_fn_status();
 
 	/* Arguments
-	     0) Linux driver version (this will change if format changes)
+	     0) LinaOS driver version (this will change if format changes)
 	     1) Machine ID
 	     2) SCI version
 	     3) BIOS version (major, minor)

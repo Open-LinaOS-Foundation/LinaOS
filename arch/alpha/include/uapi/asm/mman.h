@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __ALPHA_MMAN_H__
 #define __ALPHA_MMAN_H__
 
@@ -10,17 +10,17 @@
 #define PROT_GROWSDOWN	0x01000000	/* mprotect flag: extend change to start of growsdown vma */
 #define PROT_GROWSUP	0x02000000	/* mprotect flag: extend change to end of growsup vma */
 
-/* 0x01 - 0x03 are defined in linux/mman.h */
+/* 0x01 - 0x03 are defined in linaos/mman.h */
 #define MAP_TYPE	0x0f		/* Mask for type of mapping (OSF/1 is _wrong_) */
 #define MAP_FIXED	0x100		/* Interpret addr exactly */
 #define MAP_ANONYMOUS	0x10		/* don't use a file */
 
-/* not used by linux, but here to make sure we don't clash with OSF/1 defines */
+/* not used by linaos, but here to make sure we don't clash with OSF/1 defines */
 #define _MAP_HASSEMAPHORE 0x0200
 #define _MAP_INHERIT	0x0400
 #define _MAP_UNALIGNED	0x0800
 
-/* These are linux-specific */
+/* These are linaos-specific */
 #define MAP_GROWSDOWN	0x01000		/* stack-like segment */
 #define MAP_DENYWRITE	0x02000		/* ETXTBSY */
 #define MAP_EXECUTABLE	0x04000		/* mark it as an executable */

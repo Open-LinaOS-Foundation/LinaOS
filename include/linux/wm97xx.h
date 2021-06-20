@@ -11,10 +11,10 @@
 #include <sound/pcm.h>
 #include <sound/ac97_codec.h>
 #include <sound/initval.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/input.h>	/* Input device layer */
-#include <linux/platform_device.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/input.h>	/* Input device layer */
+#include <linaos/platform_device.h>
 
 /*
  * WM97xx variants

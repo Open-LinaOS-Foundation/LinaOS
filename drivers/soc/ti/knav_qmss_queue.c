@@ -8,18 +8,18 @@
  *		Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/soc/ti/knav_qmss.h>
+#include <linaos/debugfs.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/firmware.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/soc/ti/knav_qmss.h>
 
 #include "knav_qmss.h"
 

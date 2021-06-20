@@ -3,10 +3,10 @@
  *
  *  For licencing details see kernel-base/COPYING
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/export.h>
+#include <linaos/pci.h>
 
 #include <asm/acpi.h>
 #include <asm/bios_ebda.h>

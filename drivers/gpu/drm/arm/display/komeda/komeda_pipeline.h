@@ -7,7 +7,7 @@
 #ifndef _KOMEDA_PIPELINE_H_
 #define _KOMEDA_PIPELINE_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>
 #include "malidp_utils.h"

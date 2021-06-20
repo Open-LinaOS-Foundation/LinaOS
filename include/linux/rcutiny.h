@@ -4,7 +4,7 @@
  *
  * Copyright IBM Corporation, 2008
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@linaos.ibm.com>
  *
  * For detailed explanation of Read-Copy Update mechanism see -
  *		Documentation/RCU
@@ -35,7 +35,7 @@ static inline void synchronize_rcu_expedited(void)
 
 /*
  * Add one more declaration of kvfree() here. It is
- * not so straight forward to just include <linux/mm.h>
+ * not so straight forward to just include <linaos/mm.h>
  * where it is defined due to getting many compile
  * errors caused by that include.
  */

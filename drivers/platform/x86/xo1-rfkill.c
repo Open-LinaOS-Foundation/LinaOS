@@ -5,10 +5,10 @@
  * Copyright (C) 2010 One Laptop per Child
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rfkill.h>
-#include <linux/olpc-ec.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/rfkill.h>
+#include <linaos/olpc-ec.h>
 
 static bool card_blocked;
 

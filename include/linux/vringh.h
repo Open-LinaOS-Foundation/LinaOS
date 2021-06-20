@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * Linux host-side vring helpers; for when the kernel needs to access
+ * LinaOS host-side vring helpers; for when the kernel needs to access
  * someone else's vring.
  *
  * Copyright IBM Corporation, 2013.
@@ -10,13 +10,13 @@
  */
 #ifndef _LINUX_VRINGH_H
 #define _LINUX_VRINGH_H
-#include <uapi/linux/virtio_ring.h>
-#include <linux/virtio_byteorder.h>
-#include <linux/uio.h>
-#include <linux/slab.h>
+#include <uapi/linaos/virtio_ring.h>
+#include <linaos/virtio_byteorder.h>
+#include <linaos/uio.h>
+#include <linaos/slab.h>
 #if IS_REACHABLE(CONFIG_VHOST_IOTLB)
-#include <linux/dma-direction.h>
-#include <linux/vhost_iotlb.h>
+#include <linaos/dma-direction.h>
+#include <linaos/vhost_iotlb.h>
 #endif
 #include <asm/barrier.h>
 

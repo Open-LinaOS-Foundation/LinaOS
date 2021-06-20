@@ -6,11 +6,11 @@
 #ifndef __SOC_TEGRA_BPMP_H
 #define __SOC_TEGRA_BPMP_H
 
-#include <linux/mailbox_client.h>
-#include <linux/pm_domain.h>
-#include <linux/reset-controller.h>
-#include <linux/semaphore.h>
-#include <linux/types.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/pm_domain.h>
+#include <linaos/reset-controller.h>
+#include <linaos/semaphore.h>
+#include <linaos/types.h>
 
 #include <soc/tegra/bpmp-abi.h>
 

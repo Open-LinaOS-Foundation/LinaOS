@@ -4,14 +4,14 @@
  * Copyright (C) 1997, 1999, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
 
 #include <asm/fhc.h>
 #include <asm/upa.h>

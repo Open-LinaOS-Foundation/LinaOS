@@ -1,10 +1,10 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /*
  * Copyright 2018-2020 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
 
-#include <linux/vmalloc.h>
-#include <linux/log2.h>
+#include <linaos/vmalloc.h>
+#include <linaos/log2.h>
 
 #include <rdma/ib_addr.h>
 #include <rdma/ib_umem.h>

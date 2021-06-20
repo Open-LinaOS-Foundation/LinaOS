@@ -9,14 +9,14 @@
  * Daniel Wang <danielwang@allwinnertech.com>
  */
 
-#include <linux/ahci_platform.h>
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/ahci_platform.h>
+#include <linaos/clk.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
 #include "ahci.h"
 
 #define DRV_NAME "ahci-sunxi"

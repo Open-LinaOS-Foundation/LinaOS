@@ -6,7 +6,7 @@
 #ifndef __KCS_BMC_H__
 #define __KCS_BMC_H__
 
-#include <linux/miscdevice.h>
+#include <linaos/miscdevice.h>
 
 /* Different phases of the KCS BMC module.
  *  KCS_PHASE_IDLE:

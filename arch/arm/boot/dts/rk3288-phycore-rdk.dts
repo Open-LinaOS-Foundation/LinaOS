@@ -22,14 +22,14 @@
 
 		button@0 {
 			label = "home";
-			linux,code = <KEY_HOME>;
+			linaos,code = <KEY_HOME>;
 			gpios = <&gpio8 0 GPIO_ACTIVE_HIGH>;
 			wakeup-source;
 		};
 
 		button@1 {
 			label = "menu";
-			linux,code = <KEY_MENU>;
+			linaos,code = <KEY_MENU>;
 			gpios = <&gpio8 3 GPIO_ACTIVE_HIGH>;
 			wakeup-source;
 		};
@@ -123,25 +123,25 @@
 
 		led1 {
 			label = "red:user1";
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 			type = <PCA9532_TYPE_LED>;
 		};
 
 		led2 {
 			label = "green:user2";
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 			type = <PCA9532_TYPE_LED>;
 		};
 
 		led3 {
 			label = "blue:user3";
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 			type = <PCA9532_TYPE_LED>;
 		};
 
 		led4 {
 			label = "red:user4";
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 			type = <PCA9532_TYPE_LED>;
 		};
 	};

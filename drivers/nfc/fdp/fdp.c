@@ -5,11 +5,11 @@
  * -------------------------------------------------------------------------
  */
 
-#include <linux/module.h>
-#include <linux/nfc.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
+#include <linaos/module.h>
+#include <linaos/nfc.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/firmware.h>
 #include <net/nfc/nci_core.h>
 
 #include "fdp.h"

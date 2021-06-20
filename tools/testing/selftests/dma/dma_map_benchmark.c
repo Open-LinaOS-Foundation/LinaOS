@@ -10,7 +10,7 @@
 #include <unistd.h>
 #include <sys/ioctl.h>
 #include <sys/mman.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define NSEC_PER_MSEC	1000000L
 

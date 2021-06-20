@@ -3,15 +3,15 @@
  * processor_thermal_device.c
  * Copyright (c) 2014, Intel Corporation.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/thermal.h>
-#include <linux/cpuhotplug.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/thermal.h>
+#include <linaos/cpuhotplug.h>
 #include "int340x_thermal_zone.h"
 #include "processor_thermal_device.h"
 #include "../intel_soc_dts_iosf.h"
@@ -662,6 +662,6 @@ static void __exit proc_thermal_exit(void)
 module_init(proc_thermal_init);
 module_exit(proc_thermal_exit);
 
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>");
 MODULE_DESCRIPTION("Processor Thermal Reporting Device Driver");
 MODULE_LICENSE("GPL v2");

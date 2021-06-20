@@ -3,7 +3,7 @@
 #define _DYNAMIC_DEBUG_H
 
 #if defined(CONFIG_JUMP_LABEL)
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 #endif
 
 /*
@@ -183,9 +183,9 @@ void __dynamic_ibdev_dbg(struct _ddebug *descriptor,
 
 #else /* !CONFIG_DYNAMIC_DEBUG_CORE */
 
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/printk.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/printk.h>
 
 static inline int ddebug_add_module(struct _ddebug *tab, unsigned int n,
 				    const char *modname)

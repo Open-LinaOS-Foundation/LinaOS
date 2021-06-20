@@ -106,7 +106,7 @@
 			label = "status0:red:cpu0";
 			gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "cpu0";
+			linaos,default-trigger = "cpu0";
 		};
 
 		led1 {
@@ -125,7 +125,7 @@
 			label = "status1:red:mmc0";
 			gpios = <&gpio1 30 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 
 		led4 {
@@ -146,7 +146,7 @@
 			<&pca9536 2 GPIO_ACTIVE_HIGH>,
 			<&pca9536 1 GPIO_ACTIVE_HIGH>,
 			<&pca9536 0 GPIO_ACTIVE_HIGH>;
-		linux,axis = <0>; /* ABS_X */
+		linaos,axis = <0>; /* ABS_X */
 		decoder-max-value = <9>;
 	};
 };

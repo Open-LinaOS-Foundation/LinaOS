@@ -12,9 +12,9 @@
 #include "thread_map.h"
 #include "tests.h"
 #include "util/mmap.h"
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
 #include <perf/evlist.h>
 #include <perf/mmap.h>
 

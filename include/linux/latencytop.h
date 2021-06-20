@@ -3,14 +3,14 @@
  * latencytop.h: Infrastructure for displaying latency
  *
  * (C) Copyright 2008 Intel Corporation
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@linaos.intel.com>
  *
  */
 
 #ifndef _INCLUDE_GUARD_LATENCYTOP_H_
 #define _INCLUDE_GUARD_LATENCYTOP_H_
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 struct task_struct;
 
 #ifdef CONFIG_LATENCYTOP

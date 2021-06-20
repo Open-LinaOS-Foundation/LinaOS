@@ -11,15 +11,15 @@
  *   - Adaptive compression.
  */
 
-#include <linux/crypto.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/vmalloc.h>
+#include <linaos/crypto.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/percpu.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
+#include <linaos/vmalloc.h>
 #include <net/ip.h>
 #include <net/ipcomp.h>
 #include <net/xfrm.h>

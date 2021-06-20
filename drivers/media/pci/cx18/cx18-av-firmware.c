@@ -8,7 +8,7 @@
 
 #include "cx18-driver.h"
 #include "cx18-io.h"
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 #define CX18_AUDIO_ENABLE    0xc72014
 #define CX18_AI1_MUX_MASK    0x30

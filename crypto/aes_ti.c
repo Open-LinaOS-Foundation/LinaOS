@@ -6,8 +6,8 @@
  */
 
 #include <crypto/aes.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
+#include <linaos/crypto.h>
+#include <linaos/module.h>
 
 static int aesti_set_key(struct crypto_tfm *tfm, const u8 *in_key,
 			 unsigned int key_len)

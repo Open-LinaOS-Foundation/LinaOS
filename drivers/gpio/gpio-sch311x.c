@@ -8,14 +8,14 @@
  * (c) Copyright 2008 Wim Van Sebroeck <wim@iguana.be>.
  */
 
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/driver.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
 
 #define DRV_NAME			"gpio-sch311x"
 

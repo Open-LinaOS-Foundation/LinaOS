@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/memblock.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/ksm.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/huge_mm.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/hugetlb.h>
-#include <linux/memcontrol.h>
-#include <linux/mmu_notifier.h>
-#include <linux/page_idle.h>
-#include <linux/kernel-page-flags.h>
-#include <linux/uaccess.h>
+#include <linaos/memblock.h>
+#include <linaos/compiler.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/ksm.h>
+#include <linaos/mm.h>
+#include <linaos/mmzone.h>
+#include <linaos/huge_mm.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/hugetlb.h>
+#include <linaos/memcontrol.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/page_idle.h>
+#include <linaos/kernel-page-flags.h>
+#include <linaos/uaccess.h>
 #include "internal.h"
 
 #define KPMSIZE sizeof(u64)

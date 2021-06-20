@@ -3,12 +3,12 @@
 
 #include "igc.h"
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/ptp_classify.h>
-#include <linux/clocksource.h>
-#include <linux/ktime.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/pci.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/clocksource.h>
+#include <linaos/ktime.h>
 
 #define INCVALUE_MASK		0x7fffffff
 #define ISGN			0x80000000

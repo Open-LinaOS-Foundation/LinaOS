@@ -106,7 +106,7 @@ int execvp_noalloc(char *buf, const char *file, char *const argv[])
 					   anything else so ignore those, too.  */
 				case ENOEXEC:
 					/* We won't go searching for the shell
-					 * if it is not executable - the Linux
+					 * if it is not executable - the LinaOS
 					 * kernel already handles this enough,
 					 * for us. */
 					break;

@@ -12,9 +12,9 @@
 #include <sys/utsname.h>
 #include <sys/param.h>
 #include <sys/stat.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/btf.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/btf.h>
 #include <gelf.h>
 #include "btf.h"
 #include "bpf.h"
@@ -4388,7 +4388,7 @@ static int btf_dedup_remap_types(struct btf_dedup *d)
 }
 
 /*
- * Probe few well-known locations for vmlinux kernel image and try to load BTF
+ * Probe few well-known locations for vmlinaos kernel image and try to load BTF
  * data out of it to use for target BTF.
  */
 struct btf *libbpf_find_kernel_btf(void)
@@ -4397,16 +4397,16 @@ struct btf *libbpf_find_kernel_btf(void)
 		const char *path_fmt;
 		bool raw_btf;
 	} locations[] = {
-		/* try canonical vmlinux BTF through sysfs first */
-		{ "/sys/kernel/btf/vmlinux", true /* raw BTF */ },
-		/* fall back to trying to find vmlinux ELF on disk otherwise */
-		{ "/boot/vmlinux-%1$s" },
-		{ "/lib/modules/%1$s/vmlinux-%1$s" },
-		{ "/lib/modules/%1$s/build/vmlinux" },
-		{ "/usr/lib/modules/%1$s/kernel/vmlinux" },
-		{ "/usr/lib/debug/boot/vmlinux-%1$s" },
-		{ "/usr/lib/debug/boot/vmlinux-%1$s.debug" },
-		{ "/usr/lib/debug/lib/modules/%1$s/vmlinux" },
+		/* try canonical vmlinaos BTF through sysfs first */
+		{ "/sys/kernel/btf/vmlinaos", true /* raw BTF */ },
+		/* fall back to trying to find vmlinaos ELF on disk otherwise */
+		{ "/boot/vmlinaos-%1$s" },
+		{ "/lib/modules/%1$s/vmlinaos-%1$s" },
+		{ "/lib/modules/%1$s/build/vmlinaos" },
+		{ "/usr/lib/modules/%1$s/kernel/vmlinaos" },
+		{ "/usr/lib/debug/boot/vmlinaos-%1$s" },
+		{ "/usr/lib/debug/boot/vmlinaos-%1$s.debug" },
+		{ "/usr/lib/debug/lib/modules/%1$s/vmlinaos" },
 	};
 	char path[PATH_MAX + 1];
 	struct utsname buf;

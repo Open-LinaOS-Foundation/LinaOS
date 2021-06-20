@@ -6,8 +6,8 @@
 #include "qla_def.h"
 #include "qla_target.h"
 
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <linaos/delay.h>
+#include <linaos/gfp.h>
 
 static struct mb_cmd_name {
 	uint16_t cmd;

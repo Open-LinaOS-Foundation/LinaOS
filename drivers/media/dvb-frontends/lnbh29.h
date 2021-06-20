@@ -8,8 +8,8 @@
 #ifndef LNBH29_H
 #define LNBH29_H
 
-#include <linux/i2c.h>
-#include <linux/dvb/frontend.h>
+#include <linaos/i2c.h>
+#include <linaos/dvb/frontend.h>
 
 /* Using very low E.S.R. capacitors or ceramic caps */
 #define LNBH29_DATA_COMP    BIT(3)

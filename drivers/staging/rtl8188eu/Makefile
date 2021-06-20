@@ -41,16 +41,16 @@ r8188eu-y :=				\
 		hal/rtl8188eu_recv.o	\
 		hal/rtl8188eu_xmit.o	\
 		hal/usb_halinit.o	\
-		os_dep/ioctl_linux.o	\
-		os_dep/mlme_linux.o	\
+		os_dep/ioctl_linaos.o	\
+		os_dep/mlme_linaos.o	\
 		os_dep/mon.o		\
 		os_dep/os_intfs.o	\
 		os_dep/osdep_service.o	\
-		os_dep/recv_linux.o	\
+		os_dep/recv_linaos.o	\
 		os_dep/rtw_android.o	\
 		os_dep/usb_intf.o	\
-		os_dep/usb_ops_linux.o	\
-		os_dep/xmit_linux.o
+		os_dep/usb_ops_linaos.o	\
+		os_dep/xmit_linaos.o
 
 obj-$(CONFIG_R8188EU)	:= r8188eu.o
 

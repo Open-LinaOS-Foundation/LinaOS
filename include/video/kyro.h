@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/kyro/kryo.h
+ *  linaos/drivers/video/kyro/kryo.h
  *
  *  Copyright (C) 2002 STMicroelectronics
  *  Copyright (C) 2004 Paul Mundt
@@ -32,7 +32,7 @@ struct kyrofb_info {
 	u32 PIXCLK;	/* Pixel Clock       */
 	u32 HCLK;	/* Hor Clock         */
 
-	/* Useful to hold depth here for Linux */
+	/* Useful to hold depth here for LinaOS */
 	u8 PIXDEPTH;
 
 	int wc_cookie;

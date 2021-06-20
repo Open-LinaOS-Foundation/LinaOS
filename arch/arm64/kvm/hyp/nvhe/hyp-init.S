@@ -4,8 +4,8 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/linkage.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/linkage.h>
 
 #include <asm/alternative.h>
 #include <asm/assembler.h>

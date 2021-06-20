@@ -2,7 +2,7 @@
 #ifndef _NF_TABLES_IPV6_H_
 #define _NF_TABLES_IPV6_H_
 
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <linaos/netfilter_ipv6/ip6_tables.h>
 #include <net/ipv6.h>
 #include <net/netfilter/nf_tables.h>
 

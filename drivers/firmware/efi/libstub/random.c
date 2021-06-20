@@ -3,7 +3,7 @@
  * Copyright (C) 2016 Linaro Ltd;  <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/efi.h>
+#include <linaos/efi.h>
 #include <asm/efi.h>
 
 #include "efistub.h"
@@ -68,7 +68,7 @@ efi_status_t efi_random_get_seed(void)
 	efi_guid_t rng_algo_raw = EFI_RNG_ALGORITHM_RAW;
 	efi_guid_t rng_table_guid = LINUX_EFI_RANDOM_SEED_TABLE_GUID;
 	efi_rng_protocol_t *rng = NULL;
-	struct linux_efi_random_seed *seed = NULL;
+	struct linaos_efi_random_seed *seed = NULL;
 	efi_status_t status;
 
 	status = efi_bs_call(locate_protocol, &rng_proto, NULL, (void **)&rng);

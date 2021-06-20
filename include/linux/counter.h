@@ -6,9 +6,9 @@
 #ifndef _COUNTER_H_
 #define _COUNTER_H_
 
-#include <linux/counter_enum.h>
-#include <linux/device.h>
-#include <linux/types.h>
+#include <linaos/counter_enum.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
 
 enum counter_count_direction {
 	COUNTER_COUNT_DIRECTION_FORWARD = 0,

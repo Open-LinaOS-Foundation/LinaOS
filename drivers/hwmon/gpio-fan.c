@@ -7,19 +7,19 @@
  * Author: Simon Guinot <sguinot@lacie.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/hwmon.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/thermal.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/hwmon.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/thermal.h>
 
 struct gpio_fan_speed {
 	int rpm;

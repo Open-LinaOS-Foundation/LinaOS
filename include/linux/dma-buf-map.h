@@ -6,8 +6,8 @@
 #ifndef __DMA_BUF_MAP_H__
 #define __DMA_BUF_MAP_H__
 
-#include <linux/io.h>
-#include <linux/string.h>
+#include <linaos/io.h>
+#include <linaos/string.h>
 
 /**
  * DOC: overview

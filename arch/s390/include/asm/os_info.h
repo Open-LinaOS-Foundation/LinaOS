@@ -3,7 +3,7 @@
  * OS info memory interface
  *
  * Copyright IBM Corp. 2012
- * Author(s): Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author(s): Michael Holzheu <holzheu@linaos.vnet.ibm.com>
  */
 #ifndef _ASM_S390_OS_INFO_H
 #define _ASM_S390_OS_INFO_H

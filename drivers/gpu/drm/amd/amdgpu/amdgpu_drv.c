@@ -1,5 +1,5 @@
 /*
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -30,13 +30,13 @@
 #include "amdgpu_drv.h"
 
 #include <drm/drm_pciids.h>
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/vga_switcheroo.h>
+#include <linaos/console.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/vga_switcheroo.h>
 #include <drm/drm_probe_helper.h>
-#include <linux/mmu_notifier.h>
-#include <linux/suspend.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/suspend.h>
 
 #include "amdgpu.h"
 #include "amdgpu_irq.h"

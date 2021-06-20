@@ -3,22 +3,22 @@
  * Copyright (C) 2016-2017 Linaro Ltd., Rob Herring <robh@kernel.org>
  *
  * Based on drivers/spmi/spmi.c:
- * Copyright (c) 2012-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2015, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/errno.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched.h>
-#include <linux/serdev.h>
-#include <linux/slab.h>
-#include <linux/platform_data/x86/apple.h>
+#include <linaos/acpi.h>
+#include <linaos/errno.h>
+#include <linaos/idr.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sched.h>
+#include <linaos/serdev.h>
+#include <linaos/slab.h>
+#include <linaos/platform_data/x86/apple.h>
 
 static bool is_registered;
 static DEFINE_IDA(ctrl_ida);

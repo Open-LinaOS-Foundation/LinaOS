@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <linaos/ceph/ceph_debug.h>
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/math64.h>
-#include <linux/ktime.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/ctype.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/math64.h>
+#include <linaos/ktime.h>
 
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/auth.h>
-#include <linux/ceph/debugfs.h>
+#include <linaos/ceph/libceph.h>
+#include <linaos/ceph/mon_client.h>
+#include <linaos/ceph/auth.h>
+#include <linaos/ceph/debugfs.h>
 
 #include "super.h"
 

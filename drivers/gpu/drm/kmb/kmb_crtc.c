@@ -3,7 +3,7 @@
  * Copyright © 2018-2020 Intel Corporation
  */
 
-#include <linux/clk.h>
+#include <linaos/clk.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

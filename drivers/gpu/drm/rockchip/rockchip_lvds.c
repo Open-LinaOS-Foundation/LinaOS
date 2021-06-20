@@ -6,16 +6,16 @@
  *      Sandy Huang <hjc@rock-chips.com>
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_graph.h>
-#include <linux/phy/phy.h>
-#include <linux/pinctrl/devinfo.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of_graph.h>
+#include <linaos/phy/phy.h>
+#include <linaos/pinctrl/devinfo.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

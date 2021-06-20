@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * <linux/swait.h> (simple wait queues ) implementation:
+ * <linaos/swait.h> (simple wait queues ) implementation:
  */
 #include "sched.h"
 

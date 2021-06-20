@@ -3,19 +3,19 @@
  *
  * Copyright (c) 2005 Petr Stehlik of ARAnyM dev team
  *
- * Reworked for Linux by Roman Zippel <zippel@linux-m68k.org>
+ * Reworked for LinaOS by Roman Zippel <zippel@linaos-m68k.org>
  *
  * This software may be used and distributed according to the terms of
  * the GNU General Public License (GPL), incorporated herein by reference.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/console.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
 #include <asm/machdep.h>
 #include <asm/natfeat.h>
 

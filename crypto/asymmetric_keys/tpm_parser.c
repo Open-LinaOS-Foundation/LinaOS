@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) "TPM-PARSER: "fmt
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
 #include <keys/asymmetric-subtype.h>
 #include <keys/asymmetric-parser.h>
 #include <crypto/asym_tpm_subtype.h>

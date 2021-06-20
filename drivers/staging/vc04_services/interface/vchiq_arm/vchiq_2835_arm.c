@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause
 /* Copyright (c) 2010-2012 Broadcom. All rights reserved. */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/pagemap.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/pagemap.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/uaccess.h>
+#include <linaos/mm.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 #include <soc/bcm2835/raspberrypi-firmware.h>
 
 #define TOTAL_SLOTS (VCHIQ_SLOT_ZERO_SLOTS + 2 * 32)

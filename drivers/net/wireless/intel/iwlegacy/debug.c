@@ -4,11 +4,11 @@
  * Copyright(c) 2008 - 2011 Intel Corporation. All rights reserved.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel LinaOS Wireless <ilw@linaos.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *****************************************************************************/
-#include <linux/ieee80211.h>
-#include <linux/export.h>
+#include <linaos/ieee80211.h>
+#include <linaos/export.h>
 #include <net/mac80211.h>
 
 #include "common.h"

@@ -6,7 +6,7 @@
  ******************************************************************************/
 #define _IOCTL_LINUX_C_
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 
 #include <osdep_service.h>
 #include <drv_types.h>
@@ -19,8 +19,8 @@
 #include <rtw_ioctl_set.h>
 #include <rtl8188e_hal.h>
 
-#include <linux/vmalloc.h>
-#include <linux/etherdevice.h>
+#include <linaos/vmalloc.h>
+#include <linaos/etherdevice.h>
 
 #include "osdep_intf.h"
 
@@ -849,7 +849,7 @@ static int rtw_wx_get_range(struct net_device *dev,
 	memset(range, 0, sizeof(*range));
 
 	/* Let's try to keep this struct in the same order as in
-	 * linux/include/wireless.h
+	 * linaos/include/wireless.h
 	 */
 
 	/* TODO: See what values we can set, and remove the ones we can't

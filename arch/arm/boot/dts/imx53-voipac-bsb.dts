@@ -137,7 +137,7 @@
 &kpp {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_kpp_1>;
-	linux,keymap = <
+	linaos,keymap = <
 			0x0203003b	/* KEY_F1 */
 			0x0603003c	/* KEY_F2 */
 			0x0207003d	/* KEY_F3 */

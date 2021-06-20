@@ -6,7 +6,7 @@
 #ifndef __INTEL_DP_MST_H__
 #define __INTEL_DP_MST_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct intel_digital_port;
 struct intel_crtc_state;

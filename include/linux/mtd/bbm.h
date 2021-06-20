@@ -7,7 +7,7 @@
  *  Kyungmin Park <kyungmin.park@samsung.com>
  *
  *  Copyright © 2000-2005
- *  Thomas Gleixner <tglx@linuxtronix.de>
+ *  Thomas Gleixner <tglx@linaostronix.de>
  */
 #ifndef __LINUX_MTD_BBM_H
 #define __LINUX_MTD_BBM_H

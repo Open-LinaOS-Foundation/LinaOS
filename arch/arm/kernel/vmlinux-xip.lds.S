@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* ld script to make ARM Linux kernel
+/* ld script to make ARM LinaOS kernel
  * taken from the i386 version by Russell King
  * Written by Martin Mares <mj@atrey.karlin.mff.cuni.cz>
  */
@@ -7,9 +7,9 @@
 /* No __ro_after_init data in the .rodata section - which will always be ro */
 #define RO_AFTER_INIT_DATA
 
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
-#include <asm/vmlinux.lds.h>
+#include <asm/vmlinaos.lds.h>
 #include <asm/cache.h>
 #include <asm/thread_info.h>
 #include <asm/memory.h>

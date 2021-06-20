@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/boot/bootp/bootp.lds
+ *  linaos/arch/arm/boot/bootp/bootp.lds
  *
  *  Copyright (C) 2000-2002 Russell King
  *

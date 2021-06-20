@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/timer.c
+ * linaos/net/sunrpc/timer.c
  *
  * Estimate RPC request round trip time.
  *
@@ -16,11 +16,11 @@
 
 #include <asm/param.h>
 
-#include <linux/types.h>
-#include <linux/unistd.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/unistd.h>
+#include <linaos/module.h>
 
-#include <linux/sunrpc/clnt.h>
+#include <linaos/sunrpc/clnt.h>
 
 #define RPC_RTO_MAX (60*HZ)
 #define RPC_RTO_INIT (HZ/5)

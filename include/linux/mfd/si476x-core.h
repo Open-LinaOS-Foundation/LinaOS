@@ -12,17 +12,17 @@
 #ifndef SI476X_CORE_H
 #define SI476X_CORE_H
 
-#include <linux/kfifo.h>
-#include <linux/atomic.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/mutex.h>
-#include <linux/mfd/core.h>
-#include <linux/videodev2.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/kfifo.h>
+#include <linaos/atomic.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
+#include <linaos/mutex.h>
+#include <linaos/mfd/core.h>
+#include <linaos/videodev2.h>
+#include <linaos/regulator/consumer.h>
 
-#include <linux/mfd/si476x-platform.h>
-#include <linux/mfd/si476x-reports.h>
+#include <linaos/mfd/si476x-platform.h>
+#include <linaos/mfd/si476x-reports.h>
 
 /* Command Timeouts */
 #define SI476X_DEFAULT_TIMEOUT	100000

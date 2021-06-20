@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2015-2017, The Linux Foundation.
+// Copyright (c) 2015-2017, The LinaOS Foundation.
 // Copyright (c) 2019, Linaro Limited
 
-#include <linux/bitops.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/soundwire/sdw_type.h>
+#include <linaos/bitops.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/soundwire/sdw.h>
+#include <linaos/soundwire/sdw_registers.h>
+#include <linaos/soundwire/sdw_type.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
 

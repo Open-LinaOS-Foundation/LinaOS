@@ -9,7 +9,7 @@
 #ifndef STKWEBCAM_H
 #define STKWEBCAM_H
 
-#include <linux/usb.h>
+#include <linaos/usb.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-common.h>

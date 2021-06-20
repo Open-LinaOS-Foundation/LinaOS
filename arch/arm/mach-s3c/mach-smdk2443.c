@@ -7,16 +7,16 @@
 //
 // Thanks to Samsung for the loan of an SMDK2443
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -27,8 +27,8 @@
 
 #include "regs-gpio.h"
 
-#include <linux/platform_data/fb-s3c2410.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/fb-s3c2410.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 
 #include "devs.h"
 #include "cpu.h"
@@ -126,7 +126,7 @@ static void __init smdk2443_machine_init(void)
 }
 
 MACHINE_START(SMDK2443, "SMDK2443")
-	/* Maintainer: Ben Dooks <ben-linux@fluff.org> */
+	/* Maintainer: Ben Dooks <ben-linaos@fluff.org> */
 	.atag_offset	= 0x100,
 
 	.init_irq	= s3c2443_init_irq,

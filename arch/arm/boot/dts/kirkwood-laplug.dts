@@ -53,7 +53,7 @@
 
 		power {
 			label = "Power push button";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>;
 		};
 	};
@@ -68,7 +68,7 @@
 		blue-power {
 			label = "laplug_v2:blue:power";
 			gpios = <&gpio0 29 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 	};
 

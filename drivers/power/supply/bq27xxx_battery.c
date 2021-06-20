@@ -2,7 +2,7 @@
 /*
  * BQ27xxx battery driver
  *
- * Copyright (C) 2008 Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2008 Rodolfo Giometti <giometti@linaos.it>
  * Copyright (C) 2008 Eurotech S.p.A. <info@eurotech.it>
  * Copyright (C) 2010-2011 Lars-Peter Clausen <lars@metafoo.de>
  * Copyright (C) 2011 Pali Rohár <pali@kernel.org>
@@ -42,19 +42,19 @@
  * https://www.ti.com/product/bq78z100
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/param.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/param.h>
+#include <linaos/jiffies.h>
+#include <linaos/workqueue.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 
-#include <linux/power/bq27xxx_battery.h>
+#include <linaos/power/bq27xxx_battery.h>
 
 #define BQ27XXX_MANUFACTURER	"Texas Instruments"
 
@@ -2153,6 +2153,6 @@ void bq27xxx_battery_teardown(struct bq27xxx_device_info *di)
 }
 EXPORT_SYMBOL_GPL(bq27xxx_battery_teardown);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@linaos.it>");
 MODULE_DESCRIPTION("BQ27xxx battery monitor driver");
 MODULE_LICENSE("GPL");

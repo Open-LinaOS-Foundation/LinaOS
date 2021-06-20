@@ -19,7 +19,7 @@ menuconfig EDAC
 	  memory errors, cache errors, PCI errors, thermal throttling, etc..
 	  If unsure, select 'Y'.
 
-	  The mailing list for the EDAC project is linux-edac@vger.kernel.org.
+	  The mailing list for the EDAC project is linaos-edac@vger.kernel.org.
 
 if EDAC
 

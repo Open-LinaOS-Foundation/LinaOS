@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright (C) 1991, 1992 Linus Torvalds
  *   Copyright 2007 rPath, Inc. - All Rights Reserved
@@ -12,12 +12,12 @@
 
 #include <stdarg.h>
 
-#include <linux/compiler.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/ctype.h>
+#include <linaos/kernel.h>
+#include <linaos/limits.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 static
 int skip_atoi(const char **s)

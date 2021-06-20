@@ -5,7 +5,7 @@
  * Copyright (C) 2018 Martin Willi
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 .section	.rodata.cst32.CTR2BL, "aM", @progbits, 32
 .align 32

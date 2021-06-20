@@ -2,7 +2,7 @@
 /*
  * OpenRISC signal.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -11,22 +11,22 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/tracehook.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/errno.h>
+#include <linaos/wait.h>
+#include <linaos/ptrace.h>
+#include <linaos/unistd.h>
+#include <linaos/stddef.h>
+#include <linaos/tracehook.h>
 
 #include <asm/processor.h>
 #include <asm/syscall.h>
 #include <asm/ucontext.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define DEBUG_SIG 0
 

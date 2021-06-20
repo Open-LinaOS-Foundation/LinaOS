@@ -9,9 +9,9 @@
 #ifndef _LINUX_NVMEM_PROVIDER_H
 #define _LINUX_NVMEM_PROVIDER_H
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/gpio/consumer.h>
 
 struct nvmem_device;
 struct nvmem_cell_info;

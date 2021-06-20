@@ -3,7 +3,7 @@
 #define __PERF_BPF_MAP_H 1
 
 #include <stdio.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 struct bpf_map;
 
 #ifdef HAVE_LIBBPF_SUPPORT

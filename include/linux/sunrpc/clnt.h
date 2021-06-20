@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/sunrpc/clnt.h
+ *  linaos/include/linaos/sunrpc/clnt.h
  *
  *  Declarations for the high-level RPC client interface
  *
@@ -10,23 +10,23 @@
 #ifndef _LINUX_SUNRPC_CLNT_H
 #define _LINUX_SUNRPC_CLNT_H
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
 
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/xprt.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/timer.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
+#include <linaos/sunrpc/msg_prot.h>
+#include <linaos/sunrpc/sched.h>
+#include <linaos/sunrpc/xprt.h>
+#include <linaos/sunrpc/auth.h>
+#include <linaos/sunrpc/stats.h>
+#include <linaos/sunrpc/xdr.h>
+#include <linaos/sunrpc/timer.h>
+#include <linaos/sunrpc/rpc_pipe_fs.h>
 #include <asm/signal.h>
-#include <linux/path.h>
+#include <linaos/path.h>
 #include <net/ipv6.h>
-#include <linux/sunrpc/xprtmultipath.h>
+#include <linaos/sunrpc/xprtmultipath.h>
 
 struct rpc_inode;
 

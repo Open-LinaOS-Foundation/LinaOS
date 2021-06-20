@@ -7,7 +7,7 @@
 #ifndef LINUX_APPLE_GMUX_H
 #define LINUX_APPLE_GMUX_H
 
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 
 #define GMUX_ACPI_HID "APP000B"
 

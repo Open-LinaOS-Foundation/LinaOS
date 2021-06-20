@@ -27,7 +27,7 @@
 #ifndef _TTM_TT_H_
 #define _TTM_TT_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <drm/ttm/ttm_caching.h>
 
 struct ttm_bo_device;
@@ -160,7 +160,7 @@ void ttm_tt_unpopulate(struct ttm_device *bdev, struct ttm_tt *ttm);
 void ttm_tt_mgr_init(unsigned long num_pages, unsigned long num_dma32_pages);
 
 #if IS_ENABLED(CONFIG_AGP)
-#include <linux/agp_backend.h>
+#include <linaos/agp_backend.h>
 
 /**
  * ttm_agp_tt_create
@@ -171,7 +171,7 @@ void ttm_tt_mgr_init(unsigned long num_pages, unsigned long num_dma32_pages);
  *
  *
  * Create a TTM backend that uses the indicated AGP bridge as an aperture
- * for TT memory. This function uses the linux agpgart interface to
+ * for TT memory. This function uses the linaos agpgart interface to
  * bind and unbind memory backing a ttm_tt.
  */
 struct ttm_tt *ttm_agp_tt_create(struct ttm_buffer_object *bo,

@@ -294,14 +294,14 @@ struct btf_ext_info {
  *   record size for struct bpf_func_info in the func_info subsection
  *   struct btf_sec_func_info for section #1
  *   a list of bpf_func_info records for section #1
- *     where struct bpf_func_info mimics one in include/uapi/linux/bpf.h
+ *     where struct bpf_func_info mimics one in include/uapi/linaos/bpf.h
  *     but may not be identical
  *   struct btf_sec_func_info for section #2
  *   a list of bpf_func_info records for section #2
  *   ......
  *
  * Note that the bpf_func_info record size in .BTF.ext may not
- * be the same as the one defined in include/uapi/linux/bpf.h.
+ * be the same as the one defined in include/uapi/linaos/bpf.h.
  * The loader should ensure that record_size meets minimum
  * requirement and pass the record as is to the kernel. The
  * kernel will handle the func_info properly based on its contents.

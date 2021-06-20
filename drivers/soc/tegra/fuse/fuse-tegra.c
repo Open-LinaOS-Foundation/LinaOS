@@ -3,18 +3,18 @@
  * Copyright (c) 2013-2014, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/kobject.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/kobject.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/nvmem-consumer.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
 
 #include <soc/tegra/common.h>
 #include <soc/tegra/fuse.h>

@@ -120,7 +120,7 @@ is equivalent to doing::
 	    .store = store_foo,
     };
 
-Note as stated in include/linux/kernel.h "OTHER_WRITABLE?  Generally
+Note as stated in include/linaos/kernel.h "OTHER_WRITABLE?  Generally
 considered a bad idea." so trying to set a sysfs file writable for
 everyone will fail reverting to RO mode for "Others".
 
@@ -338,7 +338,7 @@ Current Interfaces
 The following interface layers currently exist in sysfs:
 
 
-devices (include/linux/device.h)
+devices (include/linaos/device.h)
 --------------------------------
 Structure::
 
@@ -360,7 +360,7 @@ Creation/Removal::
     void device_remove_file(struct device *dev, const struct device_attribute * attr);
 
 
-bus drivers (include/linux/device.h)
+bus drivers (include/linaos/device.h)
 ------------------------------------
 Structure::
 
@@ -382,7 +382,7 @@ Creation/Removal::
     void bus_remove_file(struct bus_type *, struct bus_attribute *);
 
 
-device drivers (include/linux/device.h)
+device drivers (include/linaos/device.h)
 ---------------------------------------
 
 Structure::

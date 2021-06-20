@@ -21,28 +21,28 @@
  *
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
+#include <linaos/spinlock.h>
+#include <linaos/moduleparam.h>
 
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/bitops.h>
+#include <linaos/skbuff.h>
+#include <linaos/string.h>
+#include <linaos/serial.h>
+#include <linaos/serial_reg.h>
+#include <linaos/bitops.h>
 #include <asm/io.h>
 
-#include <linux/device.h>
-#include <linux/firmware.h>
+#include <linaos/device.h>
+#include <linaos/firmware.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ciscode.h>

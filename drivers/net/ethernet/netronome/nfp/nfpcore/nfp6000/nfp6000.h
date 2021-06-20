@@ -4,8 +4,8 @@
 #ifndef NFP6000_NFP6000_H
 #define NFP6000_NFP6000_H
 
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
 
 /* CPP Target IDs */
 #define NFP_CPP_TARGET_INVALID          0

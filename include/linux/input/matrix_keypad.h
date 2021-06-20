@@ -2,9 +2,9 @@
 #ifndef _MATRIX_KEYPAD_H
 #define _MATRIX_KEYPAD_H
 
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/of.h>
+#include <linaos/types.h>
+#include <linaos/input.h>
+#include <linaos/of.h>
 
 #define MATRIX_MAX_ROWS		32
 #define MATRIX_MAX_COLS		32

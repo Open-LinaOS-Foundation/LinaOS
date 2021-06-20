@@ -24,10 +24,10 @@
 
 #define pr_fmt(fmt) "FS-Cache: " fmt
 
-#include <linux/fscache-cache.h>
+#include <linaos/fscache-cache.h>
 #include <trace/events/fscache.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
 
 #define FSCACHE_MIN_THREADS	4
 #define FSCACHE_MAX_THREADS	32

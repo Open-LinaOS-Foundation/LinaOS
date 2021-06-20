@@ -15,17 +15,17 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/irq.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/irq.h>
+#include <linaos/bitops.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irqchip.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 
 /* The source ID bits start from 4 to 31 (total 28 bits)*/
 #define BIT_OFS			4

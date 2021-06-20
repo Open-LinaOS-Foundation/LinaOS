@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/export.h>
+#include <linaos/export.h>
 #include <rdma/ib_marshall.h>
 
 #define OPA_DEFAULT_GID_PREFIX cpu_to_be64(0xfe80000000000000ULL)

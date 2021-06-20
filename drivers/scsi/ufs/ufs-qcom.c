@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2013-2016, Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2016, LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/time.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/gpio/consumer.h>
-#include <linux/reset-controller.h>
-#include <linux/devfreq.h>
+#include <linaos/acpi.h>
+#include <linaos/time.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/reset-controller.h>
+#include <linaos/devfreq.h>
 
 #include "ufshcd.h"
 #include "ufshcd-pltfrm.h"

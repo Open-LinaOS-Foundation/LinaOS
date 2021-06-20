@@ -11,10 +11,10 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/reboot.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/reboot.h>
 
 #define RSTMGR_REG_WR_ACCESS_OFFSET	0
 #define RSTMGR_REG_CHIP_SOFT_RST_OFFSET	4

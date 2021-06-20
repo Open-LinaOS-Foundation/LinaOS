@@ -58,7 +58,7 @@ Optional properties:
 	pendown-gpio			GPIO handle describing the pin the !PENIRQ
 					line is connected to.
 	wakeup-source			use any event on touchscreen as wakeup event.
-					(Legacy property support: "linux,wakeup")
+					(Legacy property support: "linaos,wakeup")
 	touchscreen-size-x		General touchscreen binding, see [1].
 	touchscreen-size-y		General touchscreen binding, see [1].
 	touchscreen-max-pressure	General touchscreen binding, see [1].

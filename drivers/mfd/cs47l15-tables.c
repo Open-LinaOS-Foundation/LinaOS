@@ -6,12 +6,12 @@
  *                         Cirrus Logic International Semiconductor Ltd.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 
-#include <linux/mfd/madera/core.h>
-#include <linux/mfd/madera/registers.h>
+#include <linaos/mfd/madera/core.h>
+#include <linaos/mfd/madera/registers.h>
 
 #include "madera.h"
 

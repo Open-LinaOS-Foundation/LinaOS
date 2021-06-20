@@ -10,10 +10,10 @@
 #ifndef __DA9150_CORE_H
 #define __DA9150_CORE_H
 
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/regmap.h>
 
 /* I2C address paging */
 #define DA9150_REG_PAGE_SHIFT	8

@@ -8,24 +8,24 @@
  */
 
 #define pr_fmt(fmt) "watchq: " fmt
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/printk.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/poll.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/file.h>
-#include <linux/security.h>
-#include <linux/cred.h>
-#include <linux/sched/signal.h>
-#include <linux/watch_queue.h>
-#include <linux/pipe_fs_i.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/printk.h>
+#include <linaos/miscdevice.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/poll.h>
+#include <linaos/uaccess.h>
+#include <linaos/vmalloc.h>
+#include <linaos/file.h>
+#include <linaos/security.h>
+#include <linaos/cred.h>
+#include <linaos/sched/signal.h>
+#include <linaos/watch_queue.h>
+#include <linaos/pipe_fs_i.h>
 
 MODULE_DESCRIPTION("Watch queue");
 MODULE_AUTHOR("Red Hat, Inc.");

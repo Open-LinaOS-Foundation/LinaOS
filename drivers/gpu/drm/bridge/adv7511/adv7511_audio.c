@@ -10,7 +10,7 @@
 #include <sound/hdmi-codec.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
-#include <linux/of_graph.h>
+#include <linaos/of_graph.h>
 
 #include "adv7511.h"
 

@@ -11,20 +11,20 @@
  * SPARSEMEM should be contained here, or in mm/memory_hotplug.c.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/topology.h>
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/memory.h>
-#include <linux/memory_hotplug.h>
-#include <linux/mm.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/xarray.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/topology.h>
+#include <linaos/capability.h>
+#include <linaos/device.h>
+#include <linaos/memory.h>
+#include <linaos/memory_hotplug.h>
+#include <linaos/mm.h>
+#include <linaos/stat.h>
+#include <linaos/slab.h>
+#include <linaos/xarray.h>
 
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
+#include <linaos/atomic.h>
+#include <linaos/uaccess.h>
 
 #define MEMORY_CLASS_NAME	"memory"
 

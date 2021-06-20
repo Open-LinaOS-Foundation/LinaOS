@@ -7,9 +7,9 @@
  *
  * Highly modified by Steven Rostedt (VMware).
  */
-#include <linux/suspend.h>
-#include <linux/ftrace.h>
-#include <linux/slab.h>
+#include <linaos/suspend.h>
+#include <linaos/ftrace.h>
+#include <linaos/slab.h>
 
 #include <trace/events/sched.h>
 
@@ -356,7 +356,7 @@ int ftrace_graph_entry_stub(struct ftrace_graph_ent *trace)
 
 /*
  * Simply points to ftrace_stub, but with the proper protocol.
- * Defined by the linker script in linux/vmlinux.lds.h
+ * Defined by the linker script in linaos/vmlinaos.lds.h
  */
 extern void ftrace_stub_graph(struct ftrace_graph_ret *);
 

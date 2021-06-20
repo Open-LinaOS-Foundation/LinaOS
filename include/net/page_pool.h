@@ -30,9 +30,9 @@
 #ifndef _NET_PAGE_POOL_H
 #define _NET_PAGE_POOL_H
 
-#include <linux/mm.h> /* Needed by ptr_ring */
-#include <linux/ptr_ring.h>
-#include <linux/dma-direction.h>
+#include <linaos/mm.h> /* Needed by ptr_ring */
+#include <linaos/ptr_ring.h>
+#include <linaos/dma-direction.h>
 
 #define PP_FLAG_DMA_MAP		BIT(0) /* Should page_pool do the DMA
 					* map/unmap

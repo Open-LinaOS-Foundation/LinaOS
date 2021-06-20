@@ -23,7 +23,7 @@
 #ifndef __INTEL_DVO_DEV_H__
 #define __INTEL_DVO_DEV_H__
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 #include <drm/drm_crtc.h>
 

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/platform_device.h>
-#include <linux/memregion.h>
-#include <linux/module.h>
-#include <linux/pfn_t.h>
+#include <linaos/platform_device.h>
+#include <linaos/memregion.h>
+#include <linaos/module.h>
+#include <linaos/pfn_t.h>
 #include "../bus.h"
 
 static bool region_idle;

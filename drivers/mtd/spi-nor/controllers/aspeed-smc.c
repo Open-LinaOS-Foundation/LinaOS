@@ -5,18 +5,18 @@
  * Copyright (c) 2015-2016, IBM Corporation.
  */
 
-#include <linux/bug.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/spi-nor.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/sizes.h>
-#include <linux/sysfs.h>
+#include <linaos/bug.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/spi-nor.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/sizes.h>
+#include <linaos/sysfs.h>
 
 #define DEVICE_NAME	"aspeed-smc"
 
@@ -204,7 +204,7 @@ struct aspeed_smc_controller {
  * to its size. The address within the multiple 8kB range is ignored when
  * sending bytes to the SPI bus.
  *
- * On the arm architecture, as of Linux version 4.3, memcpy_fromio and
+ * On the arm architecture, as of LinaOS version 4.3, memcpy_fromio and
  * memcpy_toio on little endian targets use the optimized memcpy routines
  * that were designed for well behavied memory storage. These routines
  * have a stutter if the source and destination are not both word aligned,
@@ -673,7 +673,7 @@ static int aspeed_smc_chip_setup_init(struct aspeed_smc_chip *chip,
 	 * Get value of the inherited control register. U-Boot usually
 	 * does some timing calibration on the FMC chip, so it's good
 	 * to keep them. In the future, we should handle calibration
-	 * from Linux.
+	 * from LinaOS.
 	 */
 	reg = readl(chip->ctl);
 	dev_dbg(controller->dev, "control register: %08x\n", reg);

@@ -7,7 +7,7 @@
 #include "bitarray.h"
 #include "main.h"
 
-#include <linux/bitmap.h>
+#include <linaos/bitmap.h>
 
 #include "log.h"
 

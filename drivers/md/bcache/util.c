@@ -6,14 +6,14 @@
  * Copyright 2012 Google, Inc.
  */
 
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/types.h>
-#include <linux/sched/clock.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/ctype.h>
+#include <linaos/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/types.h>
+#include <linaos/sched/clock.h>
 
 #include "util.h"
 

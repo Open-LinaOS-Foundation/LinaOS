@@ -8,9 +8,9 @@
  * Copyright (C) 2015  Imagination Technologies Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
-#include <linux/kvm_para.h>
+#include <linaos/kernel.h>
+#include <linaos/kvm_host.h>
+#include <linaos/kvm_para.h>
 
 #define MAX_HYPCALL_ARGS	4
 

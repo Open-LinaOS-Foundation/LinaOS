@@ -7,9 +7,9 @@
 #include <crypto/aes.h>
 #include <crypto/engine.h>
 #include <crypto/skcipher.h>
-#include <linux/debugfs.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
+#include <linaos/debugfs.h>
+#include <linaos/crypto.h>
+#include <linaos/scatterlist.h>
 
 #define MODE_KEY 1
 #define MODE_AES_128 0x8

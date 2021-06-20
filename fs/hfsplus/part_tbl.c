@@ -1,5 +1,5 @@
 /*
- * linux/fs/hfsplus/part_tbl.c
+ * linaos/fs/hfsplus/part_tbl.c
  *
  * Copyright (C) 1996-1997  Paul H. Hargrove
  * This file may be distributed under the terms of
@@ -14,7 +14,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "hfsplus_fs.h"
 
 /* offsets to various blocks */

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/osq_lock.h>
+#include <linaos/percpu.h>
+#include <linaos/sched.h>
+#include <linaos/osq_lock.h>
 
 /*
  * An MCS like lock especially tailored for optimistic spinning for sleeping

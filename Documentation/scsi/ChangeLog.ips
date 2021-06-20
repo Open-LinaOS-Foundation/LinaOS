@@ -72,7 +72,7 @@ IBM ServeRAID driver Change Log
         4.00.06 - Fix timeout with initial FFDC command
 
         4.00.05 - Remove wish_block from init routine
-                - Use linux/spinlock.h instead of asm/spinlock.h for kernels
+                - Use linaos/spinlock.h instead of asm/spinlock.h for kernels
                   2.3.18 and later
                 - Sync with other changes from the 2.3 kernels
 

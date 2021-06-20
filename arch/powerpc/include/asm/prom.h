@@ -11,16 +11,16 @@
  *
  * Updates for PPC64 by Peter Bergner & David Engebretsen, IBM Corp.
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/irq.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 /* These includes should be removed once implicit includes are cleaned up. */
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
 
 #define OF_DT_BEGIN_NODE	0x1		/* Start of node, full name */
 #define OF_DT_END_NODE		0x2		/* End node */
@@ -175,7 +175,7 @@ extern int of_read_drc_info_cell(struct property **prop,
 #define OV5_DRC_INFO		0x1640	/* Redef Prop Structures: drc-info   */
 
 /* Option Vector 6: IBM PAPR hints */
-#define OV6_LINUX		0x02	/* Linux is our OS */
+#define OV6_LINUX		0x02	/* LinaOS is our OS */
 
 #endif /* __KERNEL__ */
 #endif /* _POWERPC_PROM_H */

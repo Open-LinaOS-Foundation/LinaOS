@@ -16,17 +16,17 @@
  * Kevin Chea
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/memblock.h>
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
-#include <linux/mman.h>
-#include <linux/nodemask.h>
-#include <linux/mm.h>
-#include <linux/of_fdt.h>
-#include <linux/dma-map-ops.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/memblock.h>
+#include <linaos/gfp.h>
+#include <linaos/highmem.h>
+#include <linaos/swap.h>
+#include <linaos/mman.h>
+#include <linaos/nodemask.h>
+#include <linaos/mm.h>
+#include <linaos/of_fdt.h>
+#include <linaos/dma-map-ops.h>
 
 #include <asm/bootparam.h>
 #include <asm/page.h>

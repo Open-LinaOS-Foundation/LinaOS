@@ -1,8 +1,8 @@
 
 /*
- * Adaptec AIC7xxx device driver for Linux.
+ * Adaptec AIC7xxx device driver for LinaOS.
  *
- * $Id: //depot/aic7xxx/linux/drivers/scsi/aic7xxx/aic7xxx_osm.c#235 $
+ * $Id: //depot/aic7xxx/linaos/drivers/scsi/aic7xxx/aic7xxx_osm.c#235 $
  *
  * Copyright (c) 1994 John Aycock
  *   The University of Calgary Department of Computer Science.
@@ -22,9 +22,9 @@
  * the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  *
  * Sources include the Adaptec 1740 driver (aha1740.c), the Ultrastor 24F
- * driver (ultrastor.c), various Linux kernel source, the Adaptec EISA
+ * driver (ultrastor.c), various LinaOS kernel source, the Adaptec EISA
  * config file (!adp7771.cfg), the Adaptec AHA-2740A Series User's Guide,
- * the Linux Kernel Hacker's Guide, Writing a SCSI Device Driver for Linux,
+ * the LinaOS Kernel Hacker's Guide, Writing a SCSI Device Driver for LinaOS,
  * the Adaptec 1542 driver (aha1542.c), the Adaptec EISA overlay file
  * (adp7770.ovl), the Adaptec AHA-2740 Series Technical Reference Manual,
  * the Adaptec AIC-7770 Data Book, the ANSI SCSI specification, the
@@ -124,13 +124,13 @@
 #include "aic7xxx_inline.h"
 #include <scsi/scsicam.h>
 
-static struct scsi_transport_template *ahc_linux_transport_template = NULL;
+static struct scsi_transport_template *ahc_linaos_transport_template = NULL;
 
-#include <linux/init.h>		/* __setup */
-#include <linux/mm.h>		/* For fetching system memory size */
-#include <linux/blkdev.h>		/* For block_size() */
-#include <linux/delay.h>	/* For ssleep/msleep */
-#include <linux/slab.h>
+#include <linaos/init.h>		/* __setup */
+#include <linaos/mm.h>		/* For fetching system memory size */
+#include <linaos/blkdev.h>		/* For block_size() */
+#include <linaos/delay.h>	/* For ssleep/msleep */
+#include <linaos/slab.h>
 
 
 /*
@@ -359,25 +359,25 @@ MODULE_PARM_DESC(aic7xxx,
 "	options aic7xxx 'aic7xxx=probe_eisa_vl.tag_info:{{}.{.10}}.seltime:1'\n"
 );
 
-static void ahc_linux_handle_scsi_status(struct ahc_softc *,
+static void ahc_linaos_handle_scsi_status(struct ahc_softc *,
 					 struct scsi_device *,
 					 struct scb *);
-static void ahc_linux_queue_cmd_complete(struct ahc_softc *ahc,
+static void ahc_linaos_queue_cmd_complete(struct ahc_softc *ahc,
 					 struct scsi_cmnd *cmd);
-static void ahc_linux_freeze_simq(struct ahc_softc *ahc);
-static void ahc_linux_release_simq(struct ahc_softc *ahc);
-static int  ahc_linux_queue_recovery_cmd(struct scsi_cmnd *cmd, scb_flag flag);
-static void ahc_linux_initialize_scsi_bus(struct ahc_softc *ahc);
-static u_int ahc_linux_user_tagdepth(struct ahc_softc *ahc,
+static void ahc_linaos_freeze_simq(struct ahc_softc *ahc);
+static void ahc_linaos_release_simq(struct ahc_softc *ahc);
+static int  ahc_linaos_queue_recovery_cmd(struct scsi_cmnd *cmd, scb_flag flag);
+static void ahc_linaos_initialize_scsi_bus(struct ahc_softc *ahc);
+static u_int ahc_linaos_user_tagdepth(struct ahc_softc *ahc,
 				     struct ahc_devinfo *devinfo);
-static void ahc_linux_device_queue_depth(struct scsi_device *);
-static int ahc_linux_run_command(struct ahc_softc*,
-				 struct ahc_linux_device *,
+static void ahc_linaos_device_queue_depth(struct scsi_device *);
+static int ahc_linaos_run_command(struct ahc_softc*,
+				 struct ahc_linaos_device *,
 				 struct scsi_cmnd *);
-static void ahc_linux_setup_tag_info_global(char *p);
+static void ahc_linaos_setup_tag_info_global(char *p);
 static int  aic7xxx_setup(char *s);
 
-static int ahc_linux_unit;
+static int ahc_linaos_unit;
 
 
 /************************** OS Utility Wrappers *******************************/
@@ -385,7 +385,7 @@ void
 ahc_delay(long usec)
 {
 	/*
-	 * udelay on Linux can have problems for
+	 * udelay on LinaOS can have problems for
 	 * multi-millisecond waits.  Wait at most
 	 * 1024us per call.
 	 */
@@ -427,7 +427,7 @@ ahc_outsb(struct ahc_softc * ahc, long port, uint8_t *array, int count)
 	int i;
 
 	/*
-	 * There is probably a more efficient way to do this on Linux
+	 * There is probably a more efficient way to do this on LinaOS
 	 * but we don't use this for anything speed critical and this
 	 * should work.
 	 */
@@ -441,7 +441,7 @@ ahc_insb(struct ahc_softc * ahc, long port, uint8_t *array, int count)
 	int i;
 
 	/*
-	 * There is probably a more efficient way to do this on Linux
+	 * There is probably a more efficient way to do this on LinaOS
 	 * but we don't use this for anything speed critical and this
 	 * should work.
 	 */
@@ -450,14 +450,14 @@ ahc_insb(struct ahc_softc * ahc, long port, uint8_t *array, int count)
 }
 
 /********************************* Inlines ************************************/
-static void ahc_linux_unmap_scb(struct ahc_softc*, struct scb*);
+static void ahc_linaos_unmap_scb(struct ahc_softc*, struct scb*);
 
-static int ahc_linux_map_seg(struct ahc_softc *ahc, struct scb *scb,
+static int ahc_linaos_map_seg(struct ahc_softc *ahc, struct scb *scb,
 				      struct ahc_dma_seg *sg,
 				      dma_addr_t addr, bus_size_t len);
 
 static void
-ahc_linux_unmap_scb(struct ahc_softc *ahc, struct scb *scb)
+ahc_linaos_unmap_scb(struct ahc_softc *ahc, struct scb *scb)
 {
 	struct scsi_cmnd *cmd;
 
@@ -468,7 +468,7 @@ ahc_linux_unmap_scb(struct ahc_softc *ahc, struct scb *scb)
 }
 
 static int
-ahc_linux_map_seg(struct ahc_softc *ahc, struct scb *scb,
+ahc_linaos_map_seg(struct ahc_softc *ahc, struct scb *scb,
 		  struct ahc_dma_seg *sg, dma_addr_t addr, bus_size_t len)
 {
 	int	 consumed;
@@ -493,7 +493,7 @@ ahc_linux_map_seg(struct ahc_softc *ahc, struct scb *scb,
  * Return a string describing the driver.
  */
 static const char *
-ahc_linux_info(struct Scsi_Host *host)
+ahc_linaos_info(struct Scsi_Host *host)
 {
 	static char buffer[512];
 	char	ahc_info[256];
@@ -519,10 +519,10 @@ ahc_linux_info(struct Scsi_Host *host)
  * Queue an SCB to the controller.
  */
 static int
-ahc_linux_queue_lck(struct scsi_cmnd * cmd, void (*scsi_done) (struct scsi_cmnd *))
+ahc_linaos_queue_lck(struct scsi_cmnd * cmd, void (*scsi_done) (struct scsi_cmnd *))
 {
 	struct	 ahc_softc *ahc;
-	struct	 ahc_linux_device *dev = scsi_transport_device_data(cmd->device);
+	struct	 ahc_linaos_device *dev = scsi_transport_device_data(cmd->device);
 	int rtn = SCSI_MLQUEUE_HOST_BUSY;
 	unsigned long flags;
 
@@ -532,17 +532,17 @@ ahc_linux_queue_lck(struct scsi_cmnd * cmd, void (*scsi_done) (struct scsi_cmnd 
 	if (ahc->platform_data->qfrozen == 0) {
 		cmd->scsi_done = scsi_done;
 		cmd->result = CAM_REQ_INPROG << 16;
-		rtn = ahc_linux_run_command(ahc, dev, cmd);
+		rtn = ahc_linaos_run_command(ahc, dev, cmd);
 	}
 	ahc_unlock(ahc, &flags);
 
 	return rtn;
 }
 
-static DEF_SCSI_QCMD(ahc_linux_queue)
+static DEF_SCSI_QCMD(ahc_linaos_queue)
 
 static inline struct scsi_target **
-ahc_linux_target_in_softc(struct scsi_target *starget)
+ahc_linaos_target_in_softc(struct scsi_target *starget)
 {
 	struct	ahc_softc *ahc =
 		*((struct ahc_softc **)dev_to_shost(&starget->dev)->hostdata);
@@ -556,13 +556,13 @@ ahc_linux_target_in_softc(struct scsi_target *starget)
 }
 
 static int
-ahc_linux_target_alloc(struct scsi_target *starget)
+ahc_linaos_target_alloc(struct scsi_target *starget)
 {
 	struct	ahc_softc *ahc =
 		*((struct ahc_softc **)dev_to_shost(&starget->dev)->hostdata);
 	struct seeprom_config *sc = ahc->seep_config;
 	unsigned long flags;
-	struct scsi_target **ahc_targp = ahc_linux_target_in_softc(starget);
+	struct scsi_target **ahc_targp = ahc_linaos_target_in_softc(starget);
 	unsigned short scsirate;
 	struct ahc_devinfo devinfo;
 	char channel = starget->channel + 'A';
@@ -625,20 +625,20 @@ ahc_linux_target_alloc(struct scsi_target *starget)
 }
 
 static void
-ahc_linux_target_destroy(struct scsi_target *starget)
+ahc_linaos_target_destroy(struct scsi_target *starget)
 {
-	struct scsi_target **ahc_targp = ahc_linux_target_in_softc(starget);
+	struct scsi_target **ahc_targp = ahc_linaos_target_in_softc(starget);
 
 	*ahc_targp = NULL;
 }
 
 static int
-ahc_linux_slave_alloc(struct scsi_device *sdev)
+ahc_linaos_slave_alloc(struct scsi_device *sdev)
 {
 	struct	ahc_softc *ahc =
 		*((struct ahc_softc **)sdev->host->hostdata);
 	struct scsi_target *starget = sdev->sdev_target;
-	struct ahc_linux_device *dev;
+	struct ahc_linaos_device *dev;
 
 	if (bootverbose)
 		printk("%s: Slave Alloc %d\n", ahc_name(ahc), sdev->id);
@@ -665,12 +665,12 @@ ahc_linux_slave_alloc(struct scsi_device *sdev)
 }
 
 static int
-ahc_linux_slave_configure(struct scsi_device *sdev)
+ahc_linaos_slave_configure(struct scsi_device *sdev)
 {
 	if (bootverbose)
 		sdev_printk(KERN_INFO, sdev, "Slave Configure\n");
 
-	ahc_linux_device_queue_depth(sdev);
+	ahc_linaos_device_queue_depth(sdev);
 
 	/* Initial Domain Validation */
 	if (!spi_initial_dv(sdev->sdev_target))
@@ -684,7 +684,7 @@ ahc_linux_slave_configure(struct scsi_device *sdev)
  * Return the disk geometry for the given SCSI device.
  */
 static int
-ahc_linux_biosparam(struct scsi_device *sdev, struct block_device *bdev,
+ahc_linaos_biosparam(struct scsi_device *sdev, struct block_device *bdev,
 		    sector_t capacity, int geom[])
 {
 	int	 heads;
@@ -726,11 +726,11 @@ ahc_linux_biosparam(struct scsi_device *sdev, struct block_device *bdev,
  * Abort the current SCSI command(s).
  */
 static int
-ahc_linux_abort(struct scsi_cmnd *cmd)
+ahc_linaos_abort(struct scsi_cmnd *cmd)
 {
 	int error;
 
-	error = ahc_linux_queue_recovery_cmd(cmd, SCB_ABORT);
+	error = ahc_linaos_queue_recovery_cmd(cmd, SCB_ABORT);
 	if (error != SUCCESS)
 		printk("aic7xxx_abort returns 0x%x\n", error);
 	return (error);
@@ -740,11 +740,11 @@ ahc_linux_abort(struct scsi_cmnd *cmd)
  * Attempt to send a target reset message to the device that timed out.
  */
 static int
-ahc_linux_dev_reset(struct scsi_cmnd *cmd)
+ahc_linaos_dev_reset(struct scsi_cmnd *cmd)
 {
 	int error;
 
-	error = ahc_linux_queue_recovery_cmd(cmd, SCB_DEVICE_RESET);
+	error = ahc_linaos_queue_recovery_cmd(cmd, SCB_DEVICE_RESET);
 	if (error != SUCCESS)
 		printk("aic7xxx_dev_reset returns 0x%x\n", error);
 	return (error);
@@ -754,7 +754,7 @@ ahc_linux_dev_reset(struct scsi_cmnd *cmd)
  * Reset the SCSI bus.
  */
 static int
-ahc_linux_bus_reset(struct scsi_cmnd *cmd)
+ahc_linaos_bus_reset(struct scsi_cmnd *cmd)
 {
 	struct ahc_softc *ahc;
 	int    found;
@@ -778,24 +778,24 @@ struct scsi_host_template aic7xxx_driver_template = {
 	.module			= THIS_MODULE,
 	.name			= "aic7xxx",
 	.proc_name		= "aic7xxx",
-	.show_info		= ahc_linux_show_info,
+	.show_info		= ahc_linaos_show_info,
 	.write_info		= ahc_proc_write_seeprom,
-	.info			= ahc_linux_info,
-	.queuecommand		= ahc_linux_queue,
-	.eh_abort_handler	= ahc_linux_abort,
-	.eh_device_reset_handler = ahc_linux_dev_reset,
-	.eh_bus_reset_handler	= ahc_linux_bus_reset,
+	.info			= ahc_linaos_info,
+	.queuecommand		= ahc_linaos_queue,
+	.eh_abort_handler	= ahc_linaos_abort,
+	.eh_device_reset_handler = ahc_linaos_dev_reset,
+	.eh_bus_reset_handler	= ahc_linaos_bus_reset,
 #if defined(__i386__)
-	.bios_param		= ahc_linux_biosparam,
+	.bios_param		= ahc_linaos_biosparam,
 #endif
 	.can_queue		= AHC_MAX_QUEUE,
 	.this_id		= -1,
 	.max_sectors		= 8192,
 	.cmd_per_lun		= 2,
-	.slave_alloc		= ahc_linux_slave_alloc,
-	.slave_configure	= ahc_linux_slave_configure,
-	.target_alloc		= ahc_linux_target_alloc,
-	.target_destroy		= ahc_linux_target_destroy,
+	.slave_alloc		= ahc_linaos_slave_alloc,
+	.slave_configure	= ahc_linaos_slave_configure,
+	.target_alloc		= ahc_linaos_target_alloc,
+	.target_destroy		= ahc_linaos_target_destroy,
 };
 
 /**************************** Tasklet Handler *********************************/
@@ -822,8 +822,8 @@ ahc_dma_tag_create(struct ahc_softc *ahc, bus_dma_tag_t parent,
 		return (ENOMEM);
 
 	/*
-	 * Linux is very simplistic about DMA memory.  For now don't
-	 * maintain all specification information.  Once Linux supplies
+	 * LinaOS is very simplistic about DMA memory.  For now don't
+	 * maintain all specification information.  Once LinaOS supplies
 	 * better facilities for doing these operations, or the
 	 * needs of this particular driver change, we might need to do
 	 * more here.
@@ -889,7 +889,7 @@ ahc_dmamap_unload(struct ahc_softc *ahc, bus_dma_tag_t dmat, bus_dmamap_t map)
 }
 
 static void
-ahc_linux_setup_tag_info_global(char *p)
+ahc_linaos_setup_tag_info_global(char *p)
 {
 	int tags, i, j;
 
@@ -904,7 +904,7 @@ ahc_linux_setup_tag_info_global(char *p)
 }
 
 static void
-ahc_linux_setup_tag_info(u_long arg, int instance, int targ, int32_t value)
+ahc_linaos_setup_tag_info(u_long arg, int instance, int targ, int32_t value)
 {
 
 	if ((instance >= 0) && (targ >= 0)
@@ -997,7 +997,7 @@ ahc_parse_brace_option(char *opt_name, char *opt_arg, char *end, int depth,
 }
 
 /*
- * Handle Linux boot parameters. This routine allows for assigning a value
+ * Handle LinaOS boot parameters. This routine allows for assigning a value
  * to a parameter with a ':' between the parameter and the value.
  * ie. aic7xxx=stpwlev:1,extended
  */
@@ -1048,10 +1048,10 @@ aic7xxx_setup(char *s)
 			continue;
 
 		if (strncmp(p, "global_tag_depth", n) == 0) {
-			ahc_linux_setup_tag_info_global(p + n);
+			ahc_linaos_setup_tag_info_global(p + n);
 		} else if (strncmp(p, "tag_info", n) == 0) {
 			s = ahc_parse_brace_option("tag_info", p + n, end,
-			    2, ahc_linux_setup_tag_info, 0);
+			    2, ahc_linaos_setup_tag_info, 0);
 		} else if (p[n] == ':') {
 			*(options[i].flag) = simple_strtoul(p + n + 1, NULL, 0);
 		} else if (strncmp(p, "verbose", n) == 0) {
@@ -1068,7 +1068,7 @@ __setup("aic7xxx=", aic7xxx_setup);
 uint32_t aic7xxx_verbose;
 
 int
-ahc_linux_register_host(struct ahc_softc *ahc, struct scsi_host_template *template)
+ahc_linaos_register_host(struct ahc_softc *ahc, struct scsi_host_template *template)
 {
 	char	buf[80];
 	struct	Scsi_Host *host;
@@ -1093,7 +1093,7 @@ ahc_linux_register_host(struct ahc_softc *ahc, struct scsi_host_template *templa
 	host->max_channel = (ahc->features & AHC_TWIN) ? 1 : 0;
 	host->sg_tablesize = AHC_NSEG;
 	ahc_lock(ahc, &s);
-	ahc_set_unit(ahc, ahc_linux_unit++);
+	ahc_set_unit(ahc, ahc_linaos_unit++);
 	ahc_unlock(ahc, &s);
 	sprintf(buf, "scsi%d", host->host_no);
 	new_name = kmalloc(strlen(buf) + 1, GFP_ATOMIC);
@@ -1102,10 +1102,10 @@ ahc_linux_register_host(struct ahc_softc *ahc, struct scsi_host_template *templa
 		ahc_set_name(ahc, new_name);
 	}
 	host->unique_id = ahc->unit;
-	ahc_linux_initialize_scsi_bus(ahc);
+	ahc_linaos_initialize_scsi_bus(ahc);
 	ahc_intr_enable(ahc, TRUE);
 
-	host->transportt = ahc_linux_transport_template;
+	host->transportt = ahc_linaos_transport_template;
 
 	retval = scsi_add_host(host, ahc->dev);
 	if (retval) {
@@ -1124,7 +1124,7 @@ ahc_linux_register_host(struct ahc_softc *ahc, struct scsi_host_template *templa
  * target.
  */
 static void
-ahc_linux_initialize_scsi_bus(struct ahc_softc *ahc)
+ahc_linaos_initialize_scsi_bus(struct ahc_softc *ahc)
 {
 	int i;
 	int numtarg;
@@ -1184,9 +1184,9 @@ ahc_linux_initialize_scsi_bus(struct ahc_softc *ahc)
 	ahc_unlock(ahc, &s);
 	/* Give the bus some time to recover */
 	if ((ahc->flags & (AHC_RESET_BUS_A|AHC_RESET_BUS_B)) != 0) {
-		ahc_linux_freeze_simq(ahc);
+		ahc_linaos_freeze_simq(ahc);
 		msleep(AIC7XXX_RESET_DELAY);
-		ahc_linux_release_simq(ahc);
+		ahc_linaos_release_simq(ahc);
 	}
 }
 
@@ -1255,7 +1255,7 @@ void
 ahc_platform_set_tags(struct ahc_softc *ahc, struct scsi_device *sdev,
 		      struct ahc_devinfo *devinfo, ahc_queue_alg alg)
 {
-	struct ahc_linux_device *dev;
+	struct ahc_linaos_device *dev;
 	int was_queuing;
 	int now_queuing;
 
@@ -1287,7 +1287,7 @@ ahc_platform_set_tags(struct ahc_softc *ahc, struct scsi_device *sdev,
 	if (now_queuing) {
 		u_int usertags;
 
-		usertags = ahc_linux_user_tagdepth(ahc, devinfo);
+		usertags = ahc_linaos_user_tagdepth(ahc, devinfo);
 		if (!was_queuing) {
 			/*
 			 * Start out aggressively and allow our
@@ -1339,7 +1339,7 @@ ahc_platform_abort_scbs(struct ahc_softc *ahc, int target, char channel,
 }
 
 static u_int
-ahc_linux_user_tagdepth(struct ahc_softc *ahc, struct ahc_devinfo *devinfo)
+ahc_linaos_user_tagdepth(struct ahc_softc *ahc, struct ahc_devinfo *devinfo)
 {
 	static int warned_user;
 	u_int tags;
@@ -1373,7 +1373,7 @@ ahc_linux_user_tagdepth(struct ahc_softc *ahc, struct ahc_devinfo *devinfo)
  * Determines the queue depth for a given device.
  */
 static void
-ahc_linux_device_queue_depth(struct scsi_device *sdev)
+ahc_linaos_device_queue_depth(struct scsi_device *sdev)
 {
 	struct	ahc_devinfo devinfo;
 	u_int	tags;
@@ -1385,7 +1385,7 @@ ahc_linux_device_queue_depth(struct scsi_device *sdev)
 			    sdev->sdev_target->id, sdev->lun,
 			    sdev->sdev_target->channel == 0 ? 'A' : 'B',
 			    ROLE_INITIATOR);
-	tags = ahc_linux_user_tagdepth(ahc, &devinfo);
+	tags = ahc_linaos_user_tagdepth(ahc, &devinfo);
 	if (tags != 0 && sdev->tagged_supported != 0) {
 
 		ahc_platform_set_tags(ahc, sdev, &devinfo, AHC_QUEUE_TAGGED);
@@ -1401,7 +1401,7 @@ ahc_linux_device_queue_depth(struct scsi_device *sdev)
 }
 
 static int
-ahc_linux_run_command(struct ahc_softc *ahc, struct ahc_linux_device *dev,
+ahc_linaos_run_command(struct ahc_softc *ahc, struct ahc_linaos_device *dev,
 		      struct scsi_cmnd *cmd)
 {
 	struct	 scb *scb;
@@ -1519,7 +1519,7 @@ ahc_linux_run_command(struct ahc_softc *ahc, struct ahc_linux_device *dev,
 
 			addr = sg_dma_address(cur_seg);
 			len = sg_dma_len(cur_seg);
-			consumed = ahc_linux_map_seg(ahc, scb,
+			consumed = ahc_linaos_map_seg(ahc, scb,
 						     sg, addr, len);
 			sg += consumed;
 			scb->sg_count += consumed;
@@ -1566,7 +1566,7 @@ ahc_linux_run_command(struct ahc_softc *ahc, struct ahc_linux_device *dev,
  * SCSI controller interrupt handler.
  */
 irqreturn_t
-ahc_linux_isr(int irq, void *dev_id)
+ahc_linaos_isr(int irq, void *dev_id)
 {
 	struct	ahc_softc *ahc;
 	u_long	flags;
@@ -1673,7 +1673,7 @@ void
 ahc_done(struct ahc_softc *ahc, struct scb *scb)
 {
 	struct scsi_cmnd *cmd;
-	struct	   ahc_linux_device *dev;
+	struct	   ahc_linaos_device *dev;
 
 	LIST_REMOVE(scb, pending_links);
 	if ((scb->flags & SCB_UNTAGGEDQ) != 0) {
@@ -1702,11 +1702,11 @@ ahc_done(struct ahc_softc *ahc, struct scb *scb)
 		cmd->result &= ~(CAM_DEV_QFRZN << 16);
 		dev->qfrozen--;
 	}
-	ahc_linux_unmap_scb(ahc, scb);
+	ahc_linaos_unmap_scb(ahc, scb);
 
 	/*
 	 * Guard against stale sense data.
-	 * The Linux mid-layer assumes that sense
+	 * The LinaOS mid-layer assumes that sense
 	 * was retrieved anytime the first byte of
 	 * the sense buffer looks "sane".
 	 */
@@ -1755,7 +1755,7 @@ ahc_done(struct ahc_softc *ahc, struct scb *scb)
 			ahc_set_transaction_status(scb, CAM_REQ_CMP);
 		}
 	} else if (ahc_get_transaction_status(scb) == CAM_SCSI_STATUS_ERROR) {
-		ahc_linux_handle_scsi_status(ahc, cmd->device, scb);
+		ahc_linaos_handle_scsi_status(ahc, cmd->device, scb);
 	}
 
 	if (dev->openings == 1
@@ -1788,15 +1788,15 @@ ahc_done(struct ahc_softc *ahc, struct scb *scb)
 	}
 
 	ahc_free_scb(ahc, scb);
-	ahc_linux_queue_cmd_complete(ahc, cmd);
+	ahc_linaos_queue_cmd_complete(ahc, cmd);
 }
 
 static void
-ahc_linux_handle_scsi_status(struct ahc_softc *ahc,
+ahc_linaos_handle_scsi_status(struct ahc_softc *ahc,
 			     struct scsi_device *sdev, struct scb *scb)
 {
 	struct	ahc_devinfo devinfo;
-	struct ahc_linux_device *dev = scsi_transport_device_data(sdev);
+	struct ahc_linaos_device *dev = scsi_transport_device_data(sdev);
 
 	ahc_compile_devinfo(&devinfo,
 			    ahc->our_id,
@@ -1921,10 +1921,10 @@ ahc_linux_handle_scsi_status(struct ahc_softc *ahc,
 }
 
 static void
-ahc_linux_queue_cmd_complete(struct ahc_softc *ahc, struct scsi_cmnd *cmd)
+ahc_linaos_queue_cmd_complete(struct ahc_softc *ahc, struct scsi_cmnd *cmd)
 {
 	/*
-	 * Map CAM error codes into Linux Error codes.  We
+	 * Map CAM error codes into LinaOS Error codes.  We
 	 * avoid the conversion so that the DV code has the
 	 * full error information available when making
 	 * state change decisions.
@@ -1991,7 +1991,7 @@ ahc_linux_queue_cmd_complete(struct ahc_softc *ahc, struct scsi_cmnd *cmd)
 }
 
 static void
-ahc_linux_freeze_simq(struct ahc_softc *ahc)
+ahc_linaos_freeze_simq(struct ahc_softc *ahc)
 {
 	unsigned long s;
 
@@ -2009,7 +2009,7 @@ ahc_linux_freeze_simq(struct ahc_softc *ahc)
 }
 
 static void
-ahc_linux_release_simq(struct ahc_softc *ahc)
+ahc_linaos_release_simq(struct ahc_softc *ahc)
 {
 	u_long s;
 	int    unblock_reqs;
@@ -2032,10 +2032,10 @@ ahc_linux_release_simq(struct ahc_softc *ahc)
 }
 
 static int
-ahc_linux_queue_recovery_cmd(struct scsi_cmnd *cmd, scb_flag flag)
+ahc_linaos_queue_recovery_cmd(struct scsi_cmnd *cmd, scb_flag flag)
 {
 	struct ahc_softc *ahc;
-	struct ahc_linux_device *dev;
+	struct ahc_linaos_device *dev;
 	struct scb *pending_scb;
 	u_int  saved_scbptr;
 	u_int  active_scb_index;
@@ -2311,7 +2311,7 @@ done:
 	return (retval);
 }
 
-static void ahc_linux_set_width(struct scsi_target *starget, int width)
+static void ahc_linaos_set_width(struct scsi_target *starget, int width)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahc_softc *ahc = *((struct ahc_softc **)shost->hostdata);
@@ -2325,7 +2325,7 @@ static void ahc_linux_set_width(struct scsi_target *starget, int width)
 	ahc_unlock(ahc, &flags);
 }
 
-static void ahc_linux_set_period(struct scsi_target *starget, int period)
+static void ahc_linaos_set_period(struct scsi_target *starget, int period)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahc_softc *ahc = *((struct ahc_softc **)shost->hostdata);
@@ -2370,7 +2370,7 @@ static void ahc_linux_set_period(struct scsi_target *starget, int period)
 	ahc_unlock(ahc, &flags);
 }
 
-static void ahc_linux_set_offset(struct scsi_target *starget, int offset)
+static void ahc_linaos_set_offset(struct scsi_target *starget, int offset)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahc_softc *ahc = *((struct ahc_softc **)shost->hostdata);
@@ -2399,7 +2399,7 @@ static void ahc_linux_set_offset(struct scsi_target *starget, int offset)
 	ahc_unlock(ahc, &flags);
 }
 
-static void ahc_linux_set_dt(struct scsi_target *starget, int dt)
+static void ahc_linaos_set_dt(struct scsi_target *starget, int dt)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahc_softc *ahc = *((struct ahc_softc **)shost->hostdata);
@@ -2419,7 +2419,7 @@ static void ahc_linux_set_dt(struct scsi_target *starget, int dt)
 	if (dt && spi_max_width(starget)) {
 		ppr_options |= MSG_EXT_PPR_DT_REQ;
 		if (!width)
-			ahc_linux_set_width(starget, 1);
+			ahc_linaos_set_width(starget, 1);
 	} else if (period == 9)
 		period = 10;	/* if resetting DT, period must be >= 25ns */
 
@@ -2438,7 +2438,7 @@ static void ahc_linux_set_dt(struct scsi_target *starget, int dt)
  * sequencer code and aic7xxx_core have no support for these parameters and
  * will get into a bad state if they're negotiated.  Do not enable this
  * unless you know what you're doing */
-static void ahc_linux_set_qas(struct scsi_target *starget, int qas)
+static void ahc_linaos_set_qas(struct scsi_target *starget, int qas)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahc_softc *ahc = *((struct ahc_softc **)shost->hostdata);
@@ -2467,7 +2467,7 @@ static void ahc_linux_set_qas(struct scsi_target *starget, int qas)
 	ahc_unlock(ahc, &flags);
 }
 
-static void ahc_linux_set_iu(struct scsi_target *starget, int iu)
+static void ahc_linaos_set_iu(struct scsi_target *starget, int iu)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahc_softc *ahc = *((struct ahc_softc **)shost->hostdata);
@@ -2497,7 +2497,7 @@ static void ahc_linux_set_iu(struct scsi_target *starget, int iu)
 }
 #endif
 
-static void ahc_linux_get_signalling(struct Scsi_Host *shost)
+static void ahc_linaos_get_signalling(struct Scsi_Host *shost)
 {
 	struct ahc_softc *ahc = *(struct ahc_softc **)shost->hostdata;
 	unsigned long flags;
@@ -2526,28 +2526,28 @@ static void ahc_linux_get_signalling(struct Scsi_Host *shost)
 		spi_signalling(shost) = SPI_SIGNAL_UNKNOWN;
 }
 
-static struct spi_function_template ahc_linux_transport_functions = {
-	.set_offset	= ahc_linux_set_offset,
+static struct spi_function_template ahc_linaos_transport_functions = {
+	.set_offset	= ahc_linaos_set_offset,
 	.show_offset	= 1,
-	.set_period	= ahc_linux_set_period,
+	.set_period	= ahc_linaos_set_period,
 	.show_period	= 1,
-	.set_width	= ahc_linux_set_width,
+	.set_width	= ahc_linaos_set_width,
 	.show_width	= 1,
-	.set_dt		= ahc_linux_set_dt,
+	.set_dt		= ahc_linaos_set_dt,
 	.show_dt	= 1,
 #if 0
-	.set_iu		= ahc_linux_set_iu,
+	.set_iu		= ahc_linaos_set_iu,
 	.show_iu	= 1,
-	.set_qas	= ahc_linux_set_qas,
+	.set_qas	= ahc_linaos_set_qas,
 	.show_qas	= 1,
 #endif
-	.get_signalling	= ahc_linux_get_signalling,
+	.get_signalling	= ahc_linaos_get_signalling,
 };
 
 
 
 static int __init
-ahc_linux_init(void)
+ahc_linaos_init(void)
 {
 	/*
 	 * If we've been passed any parameters, process them now.
@@ -2555,26 +2555,26 @@ ahc_linux_init(void)
 	if (aic7xxx)
 		aic7xxx_setup(aic7xxx);
 
-	ahc_linux_transport_template =
-		spi_attach_transport(&ahc_linux_transport_functions);
-	if (!ahc_linux_transport_template)
+	ahc_linaos_transport_template =
+		spi_attach_transport(&ahc_linaos_transport_functions);
+	if (!ahc_linaos_transport_template)
 		return -ENODEV;
 
-	scsi_transport_reserve_device(ahc_linux_transport_template,
-				      sizeof(struct ahc_linux_device));
+	scsi_transport_reserve_device(ahc_linaos_transport_template,
+				      sizeof(struct ahc_linaos_device));
 
-	ahc_linux_pci_init();
-	ahc_linux_eisa_init();
+	ahc_linaos_pci_init();
+	ahc_linaos_eisa_init();
 	return 0;
 }
 
 static void
-ahc_linux_exit(void)
+ahc_linaos_exit(void)
 {
-	ahc_linux_pci_exit();
-	ahc_linux_eisa_exit();
-	spi_release_transport(ahc_linux_transport_template);
+	ahc_linaos_pci_exit();
+	ahc_linaos_eisa_exit();
+	spi_release_transport(ahc_linaos_transport_template);
 }
 
-module_init(ahc_linux_init);
-module_exit(ahc_linux_exit);
+module_init(ahc_linaos_init);
+module_exit(ahc_linaos_exit);

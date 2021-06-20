@@ -35,7 +35,7 @@
 #ifndef __NLM_HAL_HALDEFS_H__
 #define __NLM_HAL_HALDEFS_H__
 
-#include <linux/irqflags.h>	/* for local_irq_disable */
+#include <linaos/irqflags.h>	/* for local_irq_disable */
 
 /*
  * This file contains platform specific memory mapped IO implementation

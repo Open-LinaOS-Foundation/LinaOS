@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 #ifndef __SOUND_HDSP_H
 #define __SOUND_HDSP_H
 
@@ -20,8 +20,8 @@
  *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#ifdef __linux__
-#include <linux/types.h>
+#ifdef __linaos__
+#include <linaos/types.h>
 #endif
 
 #define HDSP_MATRIX_MIXER_SIZE 2048

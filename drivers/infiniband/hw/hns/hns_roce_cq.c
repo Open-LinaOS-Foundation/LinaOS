@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 #include <rdma/ib_umem.h>
 #include <rdma/uverbs_ioctl.h>
 #include "hns_roce_device.h"

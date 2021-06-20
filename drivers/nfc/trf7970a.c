@@ -9,18 +9,18 @@
  * Author: Mark A. Greer <mgreer@animalcreek.com>
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/nfc.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/netdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/nfc.h>
+#include <linaos/skbuff.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of.h>
+#include <linaos/spi/spi.h>
+#include <linaos/regulator/consumer.h>
 
 #include <net/nfc/nfc.h>
 #include <net/nfc/digital.h>

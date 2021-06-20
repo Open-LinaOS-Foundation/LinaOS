@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-2-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR BSD-2-Clause) */
 /*
  * Copyright 2018-2020 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
@@ -6,7 +6,7 @@
 #ifndef EFA_ABI_USER_H
 #define EFA_ABI_USER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Increment this value if any changes that break userspace ABI

@@ -8,12 +8,12 @@
  * for more details.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/fb.h>
+#include <linaos/i2c-algo-bit.h>
+#include <linaos/slab.h>
 
 #include "../edid.h"
 

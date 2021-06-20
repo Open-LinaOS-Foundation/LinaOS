@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/pci.h>
+#include <linaos/device.h>
+#include <linaos/pci.h>
 
 #include "ath5k.h"
 #include "reg.h"

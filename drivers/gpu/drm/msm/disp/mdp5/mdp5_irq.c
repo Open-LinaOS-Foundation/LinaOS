@@ -4,7 +4,7 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/irq.h>
+#include <linaos/irq.h>
 
 #include <drm/drm_print.h>
 #include <drm/drm_vblank.h>

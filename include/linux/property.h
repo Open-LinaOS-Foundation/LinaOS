@@ -4,15 +4,15 @@
  *
  * Copyright (C) 2014, Intel Corporation
  * Authors: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
 #ifndef _LINUX_PROPERTY_H_
 #define _LINUX_PROPERTY_H_
 
-#include <linux/bits.h>
-#include <linux/fwnode.h>
-#include <linux/types.h>
+#include <linaos/bits.h>
+#include <linaos/fwnode.h>
+#include <linaos/types.h>
 
 struct device;
 

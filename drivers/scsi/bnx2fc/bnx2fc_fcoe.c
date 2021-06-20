@@ -1,4 +1,4 @@
-/* bnx2fc_fcoe.c: QLogic Linux FCoE offload driver.
+/* bnx2fc_fcoe.c: QLogic LinaOS FCoE offload driver.
  * This file contains the code that interacts with libfc, libfcoe,
  * cnic modules to create FCoE instances, send/receive non-offloaded
  * FIP/FCoE packets, listen to link events etc.
@@ -16,7 +16,7 @@
 
 #include "bnx2fc.h"
 
-#include <linux/ethtool.h>
+#include <linaos/ethtool.h>
 
 static struct list_head adapter_list;
 static struct list_head if_list;

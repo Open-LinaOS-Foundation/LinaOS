@@ -19,7 +19,7 @@
 #ifndef __DDBRIDGE_I2C_H__
 #define __DDBRIDGE_I2C_H__
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 #include "ddbridge.h"
 

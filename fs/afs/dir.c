@@ -5,14 +5,14 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/ctype.h>
-#include <linux/sched.h>
-#include <linux/task_io_accounting_ops.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/namei.h>
+#include <linaos/pagemap.h>
+#include <linaos/swap.h>
+#include <linaos/ctype.h>
+#include <linaos/sched.h>
+#include <linaos/task_io_accounting_ops.h>
 #include "internal.h"
 #include "afs_fs.h"
 #include "xdr_fs.h"

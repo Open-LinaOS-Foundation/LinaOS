@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for LinaOS
  *
  * Copyright 2016 Red Hat, Inc. and/or its affiliates.
  */
-#include <linux/kvm_host.h>
-#include <linux/debugfs.h>
+#include <linaos/kvm_host.h>
+#include <linaos/debugfs.h>
 #include "lapic.h"
 
 static int vcpu_get_timer_advance_ns(void *data, u64 *val)

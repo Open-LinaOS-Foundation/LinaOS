@@ -14,8 +14,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/reboot.h>
-#include <linux/platform_data/eth_ixp4xx.h>
+#include <linaos/reboot.h>
+#include <linaos/platform_data/eth_ixp4xx.h>
 
 #include <asm/types.h>
 

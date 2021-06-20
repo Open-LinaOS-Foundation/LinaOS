@@ -5,8 +5,8 @@
  *    CORTINA is a registered trademark of Cortina Systems, Inc.
  *
  */
-#include <linux/module.h>
-#include <linux/phy.h>
+#include <linaos/module.h>
+#include <linaos/phy.h>
 
 #define PHY_ID_CS4340	0x13e51002
 

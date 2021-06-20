@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 // Copyright (c) 2018 Mellanox Technologies
 
-#include <linux/mlx5/driver.h>
+#include <linaos/mlx5/driver.h>
 
 #include "mlx5_core.h"
 #include "lib/eq.h"

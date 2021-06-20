@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 1999 - 2018 Intel Corporation. */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/ipv6.h>
-#include <linux/if_bridge.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/vmalloc.h>
+#include <linaos/string.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/ipv6.h>
+#include <linaos/if_bridge.h>
 #ifdef NETIF_F_HW_VLAN_CTAG_TX
-#include <linux/if_vlan.h>
+#include <linaos/if_vlan.h>
 #endif
 
 #include "ixgbe.h"

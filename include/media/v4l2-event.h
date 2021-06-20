@@ -12,9 +12,9 @@
 #ifndef V4L2_EVENT_H
 #define V4L2_EVENT_H
 
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/wait.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
+#include <linaos/wait.h>
 
 struct v4l2_fh;
 struct v4l2_subdev;

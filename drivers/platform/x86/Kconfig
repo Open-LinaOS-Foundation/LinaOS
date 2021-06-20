@@ -28,7 +28,7 @@ config ACPI_WMI
 	  defined methods and data blocks in a PNP0C14 device, which are then
 	  made available for userspace to call.
 
-	  The implementation of this in Linux currently only exposes this to
+	  The implementation of this in LinaOS currently only exposes this to
 	  other kernel space drivers.
 
 	  This driver is a required dependency to build the firmware specific
@@ -644,7 +644,7 @@ config INTEL_ATOMISP2_LED
 	depends on GPIOLIB && LEDS_GPIO
 	help
 	  Many Bay Trail and Cherry Trail devices come with a camera attached
-	  to Intel's Image Signal Processor. Linux currently does not have a
+	  to Intel's Image Signal Processor. LinaOS currently does not have a
 	  driver for these, so they do not work as a camera. Some of these
 	  camera's have a LED which is controlled through a GPIO.
 
@@ -1129,7 +1129,7 @@ config INTEL_SMARTCONNECT
 	  Intel Smart Connect is a technology intended to permit devices to
 	  update state by resuming for a short period of time at regular
 	  intervals. If a user enables this functionality under Windows and
-	  then reboots into Linux, the system may remain configured to resume
+	  then reboots into LinaOS, the system may remain configured to resume
 	  on suspend. In the absence of any userspace to support it, the system
 	  will then remain awake until something triggers another suspend.
 

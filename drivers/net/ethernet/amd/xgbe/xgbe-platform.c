@@ -114,22 +114,22 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
-#include <linux/clk.h>
-#include <linux/property.h>
-#include <linux/acpi.h>
-#include <linux/mdio.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_net.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_device.h>
+#include <linaos/clk.h>
+#include <linaos/property.h>
+#include <linaos/acpi.h>
+#include <linaos/mdio.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

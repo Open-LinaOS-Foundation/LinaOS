@@ -3,10 +3,10 @@
  * Copyright (c) 2018-2019, Vladimir Oltean <olteanv@gmail.com>
  */
 #include "sja1105_static_config.h"
-#include <linux/crc32.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <linaos/crc32.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
 
 /* Convenience wrappers over the generic packing functions. These take into
  * account the SJA1105 memory layout quirks and provide some level of

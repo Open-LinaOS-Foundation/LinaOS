@@ -5,7 +5,7 @@
  * Copyright (C) 2012 VMware, Inc. All rights reserved.
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "vmci_handle_array.h"
 
 static size_t handle_arr_calc_size(u32 capacity)

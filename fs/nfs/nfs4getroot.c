@@ -4,7 +4,7 @@
 * Written by David Howells (dhowells@redhat.com)
 */
 
-#include <linux/nfs_fs.h>
+#include <linaos/nfs_fs.h>
 #include "nfs4_fs.h"
 #include "internal.h"
 

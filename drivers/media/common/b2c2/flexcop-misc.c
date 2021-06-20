@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Linux driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
+ * LinaOS driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
  * flexcop-misc.c - miscellaneous functions
  * see flexcop.c for copyright information
  */
@@ -24,7 +24,7 @@ void flexcop_determine_revision(struct flexcop_device *fc)
 		fc->rev = FLEXCOP_III;
 		break;
 	default:
-		err("unknown FlexCop Revision: %x. Please report this to linux-dvb@linuxtv.org.",
+		err("unknown FlexCop Revision: %x. Please report this to linaos-dvb@linaostv.org.",
 				v.misc_204.Rev_N_sig_revision_hi);
 		break;
 	}

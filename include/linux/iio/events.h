@@ -6,8 +6,8 @@
 #ifndef _IIO_EVENTS_H_
 #define _IIO_EVENTS_H_
 
-#include <linux/iio/types.h>
-#include <uapi/linux/iio/events.h>
+#include <linaos/iio/types.h>
+#include <uapi/linaos/iio/events.h>
 
 /**
  * IIO_EVENT_CODE() - create event identifier

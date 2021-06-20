@@ -11,13 +11,13 @@
  *  Adapted for sparc64 by David S. Miller davem@davemloft.net
  */
 
-#include <linux/memblock.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/cpu.h>
-#include <linux/mm.h>
-#include <linux/of.h>
+#include <linaos/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/cpu.h>
+#include <linaos/mm.h>
+#include <linaos/of.h>
 
 #include <asm/prom.h>
 #include <asm/oplib.h>
@@ -66,7 +66,7 @@ void * __init prom_early_alloc(unsigned long size)
 static void __init sun4v_path_component(struct device_node *dp, char *tmp_buf)
 {
 	const char *name = of_get_property(dp, "name", NULL);
-	struct linux_prom64_registers *regs;
+	struct linaos_prom64_registers *regs;
 	struct property *rprop;
 	u32 high_bits, low_bits, type;
 
@@ -108,7 +108,7 @@ static void __init sun4v_path_component(struct device_node *dp, char *tmp_buf)
 static void __init sun4u_path_component(struct device_node *dp, char *tmp_buf)
 {
 	const char *name = of_get_property(dp, "name", NULL);
-	struct linux_prom64_registers *regs;
+	struct linaos_prom64_registers *regs;
 	struct property *prop;
 
 	prop = of_find_property(dp, "reg", NULL);
@@ -144,7 +144,7 @@ static void __init sun4u_path_component(struct device_node *dp, char *tmp_buf)
 static void __init sbus_path_component(struct device_node *dp, char *tmp_buf)
 {
 	const char *name = of_get_property(dp, "name", NULL);
-	struct linux_prom_registers *regs;
+	struct linaos_prom_registers *regs;
 	struct property *prop;
 
 	prop = of_find_property(dp, "reg", NULL);
@@ -162,7 +162,7 @@ static void __init sbus_path_component(struct device_node *dp, char *tmp_buf)
 static void __init pci_path_component(struct device_node *dp, char *tmp_buf)
 {
 	const char *name = of_get_property(dp, "name", NULL);
-	struct linux_prom_pci_registers *regs;
+	struct linaos_prom_pci_registers *regs;
 	struct property *prop;
 	unsigned int devfn;
 
@@ -188,7 +188,7 @@ static void __init pci_path_component(struct device_node *dp, char *tmp_buf)
 static void __init upa_path_component(struct device_node *dp, char *tmp_buf)
 {
 	const char *name = of_get_property(dp, "name", NULL);
-	struct linux_prom64_registers *regs;
+	struct linaos_prom64_registers *regs;
 	struct property *prop;
 
 	prop = of_find_property(dp, "reg", NULL);
@@ -227,7 +227,7 @@ static void __init vdev_path_component(struct device_node *dp, char *tmp_buf)
 static void __init ebus_path_component(struct device_node *dp, char *tmp_buf)
 {
 	const char *name = of_get_property(dp, "name", NULL);
-	struct linux_prom64_registers *regs;
+	struct linaos_prom64_registers *regs;
 	struct property *prop;
 
 	prop = of_find_property(dp, "reg", NULL);

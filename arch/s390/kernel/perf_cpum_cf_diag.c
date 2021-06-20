@@ -3,22 +3,22 @@
  * Performance event support for s390x - CPU-measurement Counter Sets
  *
  *  Copyright IBM Corp. 2019, 2021
- *  Author(s): Hendrik Brueckner <brueckner@linux.ibm.com>
- *	       Thomas Richer <tmricht@linux.ibm.com>
+ *  Author(s): Hendrik Brueckner <brueckner@linaos.ibm.com>
+ *	       Thomas Richer <tmricht@linaos.ibm.com>
  */
 #define KMSG_COMPONENT	"cpum_cf_diag"
 #define pr_fmt(fmt)	KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/processor.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/percpu.h>
+#include <linaos/notifier.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/processor.h>
+#include <linaos/miscdevice.h>
+#include <linaos/mutex.h>
 
 #include <asm/ctl_reg.h>
 #include <asm/irq.h>

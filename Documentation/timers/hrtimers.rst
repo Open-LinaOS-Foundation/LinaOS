@@ -132,7 +132,7 @@ CPUs. This build-time-selectable ktime_t storage format was implemented
 to avoid the performance impact of 64-bit multiplications and divisions
 on 32bit CPUs. Such operations are frequently necessary to convert
 between the storage formats provided by kernel and userspace interfaces
-and the internal time format. (See include/linux/ktime.h for further
+and the internal time format. (See include/linaos/ktime.h for further
 details.)
 
 hrtimers - rounding of timer values

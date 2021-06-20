@@ -2,7 +2,7 @@
 #ifndef __LINUX_COMPILER_H
 #define __LINUX_COMPILER_H
 
-#include <linux/compiler_types.h>
+#include <linaos/compiler_types.h>
 
 #ifndef __ASSEMBLY__
 

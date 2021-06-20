@@ -7,12 +7,12 @@
 #ifndef _BPF_LOCAL_STORAGE_H
 #define _BPF_LOCAL_STORAGE_H
 
-#include <linux/bpf.h>
-#include <linux/rculist.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/types.h>
-#include <uapi/linux/btf.h>
+#include <linaos/bpf.h>
+#include <linaos/rculist.h>
+#include <linaos/list.h>
+#include <linaos/hash.h>
+#include <linaos/types.h>
+#include <uapi/linaos/btf.h>
 
 #define BPF_LOCAL_STORAGE_CACHE_SIZE	16
 

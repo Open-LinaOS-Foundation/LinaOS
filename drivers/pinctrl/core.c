@@ -12,19 +12,19 @@
  */
 #define pr_fmt(fmt) "pinctrl core: " fmt
 
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/machine.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/machine.h>
 
 #ifdef CONFIG_GPIOLIB
 #include "../gpio/gpiolib.h"

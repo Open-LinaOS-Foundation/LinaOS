@@ -2,10 +2,10 @@
 #ifndef _LINUX_BINFMTS_H
 #define _LINUX_BINFMTS_H
 
-#include <linux/sched.h>
-#include <linux/unistd.h>
+#include <linaos/sched.h>
+#include <linaos/unistd.h>
 #include <asm/exec.h>
-#include <uapi/linux/binfmts.h>
+#include <uapi/linaos/binfmts.h>
 
 struct filename;
 
@@ -14,7 +14,7 @@ struct filename;
 /*
  * This structure is used to hold the arguments that are used when loading binaries.
  */
-struct linux_binprm {
+struct linaos_binprm {
 #ifdef CONFIG_MMU
 	struct vm_area_struct *vma;
 	unsigned long vma_pages;
@@ -91,37 +91,37 @@ struct coredump_params {
 
 /*
  * This structure defines the functions that are used to load the binary formats that
- * linux accepts.
+ * linaos accepts.
  */
-struct linux_binfmt {
+struct linaos_binfmt {
 	struct list_head lh;
 	struct module *module;
-	int (*load_binary)(struct linux_binprm *);
+	int (*load_binary)(struct linaos_binprm *);
 	int (*load_shlib)(struct file *);
 	int (*core_dump)(struct coredump_params *cprm);
 	unsigned long min_coredump;	/* minimal dump size */
 } __randomize_layout;
 
-extern void __register_binfmt(struct linux_binfmt *fmt, int insert);
+extern void __register_binfmt(struct linaos_binfmt *fmt, int insert);
 
 /* Registration of default binfmt handlers */
-static inline void register_binfmt(struct linux_binfmt *fmt)
+static inline void register_binfmt(struct linaos_binfmt *fmt)
 {
 	__register_binfmt(fmt, 0);
 }
 /* Same as above, but adds a new binfmt at the top of the list */
-static inline void insert_binfmt(struct linux_binfmt *fmt)
+static inline void insert_binfmt(struct linaos_binfmt *fmt)
 {
 	__register_binfmt(fmt, 1);
 }
 
-extern void unregister_binfmt(struct linux_binfmt *);
+extern void unregister_binfmt(struct linaos_binfmt *);
 
-extern int __must_check remove_arg_zero(struct linux_binprm *);
-extern int begin_new_exec(struct linux_binprm * bprm);
-extern void setup_new_exec(struct linux_binprm * bprm);
-extern void finalize_exec(struct linux_binprm *bprm);
-extern void would_dump(struct linux_binprm *, struct file *);
+extern int __must_check remove_arg_zero(struct linaos_binprm *);
+extern int begin_new_exec(struct linaos_binprm * bprm);
+extern void setup_new_exec(struct linaos_binprm * bprm);
+extern void finalize_exec(struct linaos_binprm *bprm);
+extern void would_dump(struct linaos_binprm *, struct file *);
 
 extern int suid_dumpable;
 
@@ -130,14 +130,14 @@ extern int suid_dumpable;
 #define EXSTACK_DISABLE_X 1	/* Disable executable stacks */
 #define EXSTACK_ENABLE_X  2	/* Enable executable stacks */
 
-extern int setup_arg_pages(struct linux_binprm * bprm,
+extern int setup_arg_pages(struct linaos_binprm * bprm,
 			   unsigned long stack_top,
 			   int executable_stack);
-extern int transfer_args_to_stack(struct linux_binprm *bprm,
+extern int transfer_args_to_stack(struct linaos_binprm *bprm,
 				  unsigned long *sp_location);
-extern int bprm_change_interp(const char *interp, struct linux_binprm *bprm);
-int copy_string_kernel(const char *arg, struct linux_binprm *bprm);
-extern void set_binfmt(struct linux_binfmt *new);
+extern int bprm_change_interp(const char *interp, struct linaos_binprm *bprm);
+int copy_string_kernel(const char *arg, struct linaos_binprm *bprm);
+extern void set_binfmt(struct linaos_binfmt *new);
 extern ssize_t read_code(struct file *, unsigned long, loff_t, size_t);
 
 int kernel_execve(const char *filename,

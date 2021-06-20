@@ -60,7 +60,7 @@ OPTIONS
 	older entries since those may be still needed for annotating old
 	(or remote) perf.data. Only if there is already a cache which has
 	exactly same build-id, that is replaced by new one. It can be used
-	to update kallsyms and kernel dso to vmlinux in order to support
+	to update kallsyms and kernel dso to vmlinaos in order to support
 	annotation.
 -l::
 --list::

@@ -33,7 +33,7 @@
 #ifndef __MLX5_PORT_H__
 #define __MLX5_PORT_H__
 
-#include <linux/mlx5/driver.h>
+#include <linaos/mlx5/driver.h>
 
 enum mlx5_beacon_duration {
 	MLX5_BEACON_DURATION_OFF = 0x0,

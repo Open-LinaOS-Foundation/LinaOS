@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  *
  * Copyright (c) 2011, Microsoft Corporation.
@@ -26,7 +26,7 @@
 #ifndef _UAPI_HYPERV_H
 #define _UAPI_HYPERV_H
 
-#include <linux/uuid.h>
+#include <linaos/uuid.h>
 
 /*
  * Framework version for util services.
@@ -77,7 +77,7 @@ struct hv_vss_hdr {
 
 
 /*
- * Flag values for the hv_vss_check_feature. Linux supports only
+ * Flag values for the hv_vss_check_feature. LinaOS supports only
  * one value.
  */
 #define VSS_HBU_NO_AUTO_RECOVERY	0x00000005
@@ -148,7 +148,7 @@ struct hv_do_fcopy {
 } __attribute__((packed));
 
 /*
- * An implementation of HyperV key value pair (KVP) functionality for Linux.
+ * An implementation of HyperV key value pair (KVP) functionality for LinaOS.
  *
  *
  * Copyright (C) 2010, Novell, Inc.
@@ -186,7 +186,7 @@ struct hv_do_fcopy {
 #define HV_KVP_EXCHANGE_MAX_KEY_SIZE            (512)
 
 /*
- * In Linux, we implement the KVP functionality in two components:
+ * In LinaOS, we implement the KVP functionality in two components:
  * 1) The kernel component which is packaged as part of the hv_utils driver
  * is responsible for communicating with the host and responsible for
  * implementing the host/guest protocol. 2) A user level daemon that is

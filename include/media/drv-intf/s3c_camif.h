@@ -8,7 +8,7 @@
 #ifndef MEDIA_S3C_CAMIF_
 #define MEDIA_S3C_CAMIF_
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/v4l2-mediabus.h>
 
 /**

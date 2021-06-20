@@ -3,8 +3,8 @@
  *  Copyright (C) 2003,2004 Aurelien Alleaume <slts@free.fr>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 
 #include "prismcompat.h"
 #include "islpci_dev.h"

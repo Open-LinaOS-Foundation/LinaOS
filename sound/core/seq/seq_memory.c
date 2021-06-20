@@ -6,11 +6,11 @@
  *                2000 by Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
+#include <linaos/mm.h>
 #include <sound/core.h>
 
 #include <sound/seq_kernel.h>

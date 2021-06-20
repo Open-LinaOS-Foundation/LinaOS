@@ -9,25 +9,25 @@
  * See MAINTAINERS file for support contact information.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
-#include <linux/io.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/bitfield.h>
-#include <linux/prefetch.h>
-#include <linux/ipv6.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/ethtool.h>
+#include <linaos/phy.h>
+#include <linaos/if_vlan.h>
+#include <linaos/in.h>
+#include <linaos/io.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/bitfield.h>
+#include <linaos/prefetch.h>
+#include <linaos/ipv6.h>
 #include <asm/unaligned.h>
 #include <net/ip6_checksum.h>
 
@@ -640,7 +640,7 @@ struct rtl8169_private {
 
 typedef void (*rtl_generic_fct)(struct rtl8169_private *tp);
 
-MODULE_AUTHOR("Realtek and the Linux r8169 crew <netdev@vger.kernel.org>");
+MODULE_AUTHOR("Realtek and the LinaOS r8169 crew <netdev@vger.kernel.org>");
 MODULE_DESCRIPTION("RealTek RTL-8169 Gigabit Ethernet driver");
 MODULE_SOFTDEP("pre: realtek");
 MODULE_LICENSE("GPL");

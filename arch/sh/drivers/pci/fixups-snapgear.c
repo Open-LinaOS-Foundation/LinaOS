@@ -4,17 +4,17 @@
  *
  * Author:  David McCullough <davidm@snapgear.com>
  *
- * Ported to new API by Paul Mundt <lethal@linux-sh.org>
+ * Ported to new API by Paul Mundt <lethal@linaos-sh.org>
  *
  * Highly leveraged from pci-bigsur.c, written by Dustin McIntire.
  *
  * PCI initialization for the SnapGear boards
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/sh_intc.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/sh_intc.h>
 #include "pci-sh4.h"
 
 int pcibios_map_platform_irq(const struct pci_dev *pdev, u8 slot, u8 pin)

@@ -2,7 +2,7 @@
 #ifndef __LINUX_GRE_H
 #define __LINUX_GRE_H
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/ip_tunnels.h>
 
 struct gre_base_hdr {

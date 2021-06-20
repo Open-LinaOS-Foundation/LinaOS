@@ -20,9 +20,9 @@
 /*
  * This file contains functions for reserved memory pool management
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
 
 #include <asm/set_memory.h>
 

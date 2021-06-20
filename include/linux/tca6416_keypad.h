@@ -10,7 +10,7 @@
 #ifndef _TCA6416_KEYS_H
 #define _TCA6416_KEYS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct tca6416_button {
 	/* Configuration parameters */

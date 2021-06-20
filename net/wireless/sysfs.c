@@ -8,11 +8,11 @@
  * Copyright (C) 2020-2021 Intel Corporation
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/nl80211.h>
-#include <linux/rtnetlink.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/nl80211.h>
+#include <linaos/rtnetlink.h>
 #include <net/cfg80211.h>
 #include "sysfs.h"
 #include "core.h"

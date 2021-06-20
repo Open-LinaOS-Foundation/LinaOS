@@ -5,10 +5,10 @@
  * Author: Shobhit Kumar <shobhit.kumar@intel.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/pwm.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/intel_soc_pmic.h>
+#include <linaos/pwm.h>
 
 #define PWM0_CLK_DIV		0x4B
 #define  PWM_OUTPUT_ENABLE	BIT(7)

@@ -74,7 +74,7 @@
 #ifndef __CVMX_CMD_QUEUE_H__
 #define __CVMX_CMD_QUEUE_H__
 
-#include <linux/prefetch.h>
+#include <linaos/prefetch.h>
 
 #include <asm/compiler.h>
 

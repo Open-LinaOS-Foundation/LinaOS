@@ -1,11 +1,11 @@
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *
  *  Derived from "arch/m68k/kernel/ptrace.c"
  *  Copyright (C) 1994 by Hamish Macdonald
- *  Taken from linux/kernel/ptrace.c and modified for M680x0.
- *  linux/kernel/ptrace.c is by Ross Biro 1/23/92, edited by Linus Torvalds
+ *  Taken from linaos/kernel/ptrace.c and modified for M680x0.
+ *  linaos/kernel/ptrace.c is by Ross Biro 1/23/92, edited by Linus Torvalds
  *
  * Modified by Cort Dougan (cort@hq.fsmlabs.com)
  * and Paul Mackerras (paulus@samba.org).
@@ -15,11 +15,11 @@
  * this archive for more details.
  */
 
-#include <linux/regset.h>
-#include <linux/tracehook.h>
-#include <linux/audit.h>
-#include <linux/context_tracking.h>
-#include <linux/syscalls.h>
+#include <linaos/regset.h>
+#include <linaos/tracehook.h>
+#include <linaos/audit.h>
+#include <linaos/context_tracking.h>
+#include <linaos/syscalls.h>
 
 #include <asm/switch_to.h>
 #include <asm/asm-prototypes.h>

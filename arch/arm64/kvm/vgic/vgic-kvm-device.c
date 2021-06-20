@@ -5,9 +5,9 @@
  * Copyright (C) 2015 ARM Ltd.
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 #include <kvm/arm_vgic.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/kvm_mmu.h>
 #include <asm/cputype.h>
 #include "vgic.h"

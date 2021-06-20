@@ -6,16 +6,16 @@
  *  Copyright (C) 2009 Daniel Ribeiro <drwyrm@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/mfd/ezx-pcap.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/pm.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/mfd/ezx-pcap.h>
 
 struct pcap_ts {
 	struct pcap_chip *pcap;

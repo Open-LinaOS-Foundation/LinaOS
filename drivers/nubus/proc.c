@@ -18,15 +18,15 @@
    value has to be interpreted as a slot ROM pointer etc.).
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/nubus.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/nubus.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
 #include <asm/byteorder.h>
 
 /*

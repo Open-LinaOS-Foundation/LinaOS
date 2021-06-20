@@ -3,20 +3,20 @@
  * Tty buffer allocation management
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/ratelimit.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/timer.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/ratelimit.h>
 #include "tty.h"
 
 #define MIN_TTYB_SIZE	256

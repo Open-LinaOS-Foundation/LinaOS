@@ -1,3 +1,3 @@
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
-#include "../../../include/linux/uio.h"
+#include "../../../include/linaos/uio.h"

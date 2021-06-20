@@ -62,7 +62,7 @@ Overview
   distinct N_Port_ID and view of fabric endpoints and storage entities.
   The fc_host associated with the physical adapter will export the ability
   to create vports. The transport will create the vport object within the
-  Linux device tree, and instruct the fc_host's driver to instantiate the
+  LinaOS device tree, and instruct the fc_host's driver to instantiate the
   virtual port. Typically, the driver will create a new scsi_host instance
   on the vport, resulting in a unique <H,C,T,L> namespace for the vport.
   Thus, whether a FC port is based on a physical port or on a virtual port,
@@ -162,7 +162,7 @@ Vport Attributes
 
      vport_disable:                                             Write_Only
        When written with a "1", will transition the vport to a disabled.
-       state.  The vport will still be instantiated with the Linux kernel,
+       state.  The vport will still be instantiated with the LinaOS kernel,
        but it will not be active on the FC link.
        When written with a "0", will enable the vport.
 

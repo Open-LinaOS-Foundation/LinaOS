@@ -5,10 +5,10 @@
  *   Author: Dong Aisheng <aisheng.dong@nxp.com>
  */
 
-#include <linux/irqchip.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
+#include <linaos/irqchip.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of_platform.h>
+#include <linaos/regmap.h>
 #include <asm/mach/arch.h>
 
 #include "common.h"

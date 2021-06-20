@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap2/board-n8x0.c
+ * linaos/arch/arm/mach-omap2/board-n8x0.c
  *
  * Copyright (C) 2005-2009 Nokia Corporation
  * Author: Juha Yrjola <juha.yrjola@nokia.com>
@@ -8,20 +8,20 @@
  * Modified from mach-omap2/board-generic.c
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/stddef.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/usb/musb.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_data/spi-omap2-mcspi.h>
-#include <linux/platform_data/mmc-omap.h>
-#include <linux/mfd/menelaus.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/stddef.h>
+#include <linaos/i2c.h>
+#include <linaos/spi/spi.h>
+#include <linaos/usb/musb.h>
+#include <linaos/mmc/host.h>
+#include <linaos/platform_data/spi-omap2-mcspi.h>
+#include <linaos/platform_data/mmc-omap.h>
+#include <linaos/mfd/menelaus.h>
 #include <sound/tlv320aic3x.h>
 
 #include <asm/mach/arch.h>

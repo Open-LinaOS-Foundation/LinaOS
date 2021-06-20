@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The LinaOS Foundation. All rights reserved.
  */
 
 #define pr_fmt(fmt)	"[drm:%s:%d] " fmt, __func__, __LINE__
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
 #include "dpu_hw_mdss.h"
 #include "dpu_hw_catalog.h"
 #include "dpu_kms.h"

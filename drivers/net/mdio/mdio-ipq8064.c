@@ -5,14 +5,14 @@
  * Copyright (C) 2020 Ansuel Smith <ansuelsmth@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_mdio.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 /* MII address register definitions */
 #define MII_ADDR_REG_ADDR                       0x10

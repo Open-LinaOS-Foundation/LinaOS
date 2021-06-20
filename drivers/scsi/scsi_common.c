@@ -3,10 +3,10 @@
  * SCSI functions used by both the initiator and the target code.
  */
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi_common.h>
 

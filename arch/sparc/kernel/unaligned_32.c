@@ -8,15 +8,15 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/mm.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
-#include <linux/smp.h>
-#include <linux/perf_event.h>
-#include <linux/extable.h>
+#include <linaos/uaccess.h>
+#include <linaos/smp.h>
+#include <linaos/perf_event.h>
+#include <linaos/extable.h>
 
 #include <asm/setup.h>
 

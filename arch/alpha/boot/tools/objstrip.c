@@ -23,11 +23,11 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
-#include <linux/a.out.h>
-#include <linux/coff.h>
-#include <linux/param.h>
+#include <linaos/a.out.h>
+#include <linaos/coff.h>
+#include <linaos/param.h>
 #ifdef __ELF__
-# include <linux/elf.h>
+# include <linaos/elf.h>
 # define elfhdr elf64_hdr
 # define elf_phdr elf64_phdr
 # define elf_check_arch(x) ((x)->e_machine == EM_ALPHA)
@@ -122,7 +122,7 @@ main (int argc, char *argv[])
 
 	size = (st.st_size + BLOCK_SIZE - 1) & ~(BLOCK_SIZE - 1);
 	memset(bb, 0, sizeof(bb));
-	strcpy((char *) bb, "Linux SRM bootblock");
+	strcpy((char *) bb, "LinaOS SRM bootblock");
 	bb[60] = size / BLOCK_SIZE;	/* count */
 	bb[61] = 1;			/* starting sector # */
 	bb[62] = 0;			/* flags---must be 0 */

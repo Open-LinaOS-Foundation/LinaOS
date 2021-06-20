@@ -69,7 +69,7 @@ Description:
 		pin offered by the PTP hardware clock. The file name
 		is the hardware dependent pin name. Reading from this
 		file produces two numbers, the assigned function (see
-		the `PTP_PF_` enumeration values in linux/ptp_clock.h)
+		the `PTP_PF_` enumeration values in linaos/ptp_clock.h)
 		and the channel number. The function and channel
 		assignment may be changed by two writing numbers into
 		the file.
@@ -117,6 +117,6 @@ Date:		September 2010
 Contact:	Richard Cochran <richardcochran@gmail.com>
 Description:
 		This write-only file enables or disables delivery of
-		PPS events to the Linux PPS subsystem. To enable PPS
+		PPS events to the LinaOS PPS subsystem. To enable PPS
 		events, write a "1" into the file. To disable events,
 		write a "0" into the file.

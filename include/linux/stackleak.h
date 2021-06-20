@@ -2,8 +2,8 @@
 #ifndef _LINUX_STACKLEAK_H
 #define _LINUX_STACKLEAK_H
 
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
 
 /*
  * Check that the poison value points to the unused hole in the

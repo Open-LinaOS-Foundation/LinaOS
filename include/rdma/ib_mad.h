@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright (c) 2004 Mellanox Technologies Ltd.  All rights reserved.
  * Copyright (c) 2004 Infinicon Corporation.  All rights reserved.
@@ -10,7 +10,7 @@
 #ifndef IB_MAD_H
 #define IB_MAD_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 #include <rdma/ib_verbs.h>
 #include <uapi/rdma/ib_user_mad.h>

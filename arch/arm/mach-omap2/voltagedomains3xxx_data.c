@@ -11,9 +11,9 @@
  * Kalle Jokiniemi
  * Paul Walmsley
  */
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
 
 #include "soc.h"
 #include "common.h"

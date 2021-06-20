@@ -5,17 +5,17 @@
  *	(c) 1999--2000 Martin Mares <mj@ucw.cz>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
-#include <linux/smp.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/dmi.h>
+#include <linaos/io.h>
+#include <linaos/smp.h>
 #include <asm/io_apic.h>
-#include <linux/irq.h>
-#include <linux/acpi.h>
+#include <linaos/irq.h>
+#include <linaos/acpi.h>
 #include <asm/pci_x86.h>
 
 #define PIRQ_SIGNATURE	(('$' << 0) + ('P' << 8) + ('I' << 16) + ('R' << 24))

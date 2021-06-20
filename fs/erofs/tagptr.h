@@ -7,8 +7,8 @@
 #ifndef __EROFS_FS_TAGPTR_H
 #define __EROFS_FS_TAGPTR_H
 
-#include <linux/types.h>
-#include <linux/build_bug.h>
+#include <linaos/types.h>
+#include <linaos/build_bug.h>
 
 /*
  * the name of tagged pointer types are tagptr{1, 2, 3...}_t

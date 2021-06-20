@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
-**  linux/amiga/chipram.c
+**  linaos/amiga/chipram.c
 **
-**      Modified 03-May-94 by Geert Uytterhoeven <geert@linux-m68k.org>
+**      Modified 03-May-94 by Geert Uytterhoeven <geert@linaos-m68k.org>
 **          - 64-bit aligned allocations for full AGA compatibility
 **
 **	Rewritten 15/9/2000 by Geert to use resource management
 */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
 
 #include <asm/atomic.h>
 #include <asm/page.h>

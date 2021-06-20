@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /* Copyright (c) 2018 Mellanox Technologies */
 
-#include <linux/mlx5/vport.h>
+#include <linaos/mlx5/vport.h>
 #include "lib/devcom.h"
 
 static LIST_HEAD(devcom_list);

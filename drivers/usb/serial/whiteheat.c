@@ -12,22 +12,22 @@
  * driver
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
 #include <asm/termbits.h>
-#include <linux/usb.h>
-#include <linux/serial_reg.h>
-#include <linux/serial.h>
-#include <linux/usb/serial.h>
-#include <linux/usb/ezusb.h>
+#include <linaos/usb.h>
+#include <linaos/serial_reg.h>
+#include <linaos/serial.h>
+#include <linaos/usb/serial.h>
+#include <linaos/usb/ezusb.h>
 #include "whiteheat.h"			/* WhiteHEAT specific commands */
 
 #ifndef CMSPAR

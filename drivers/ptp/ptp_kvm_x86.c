@@ -5,15 +5,15 @@
  * Copyright (C) 2017 Red Hat Inc.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
 #include <asm/pvclock.h>
 #include <asm/kvmclock.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <uapi/asm/kvm_para.h>
-#include <uapi/linux/kvm_para.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/ptp_kvm.h>
+#include <uapi/linaos/kvm_para.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/ptp_kvm.h>
 
 struct pvclock_vsyscall_time_info *hv_clock;
 

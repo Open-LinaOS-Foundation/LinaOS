@@ -1,4 +1,4 @@
-/* This version ported to the Linux-MTD system by dwmw2@infradead.org
+/* This version ported to the LinaOS-MTD system by dwmw2@infradead.org
  *
  * Fixes: Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  * - fixes some leaks on failure in build_maps and ftl_notify_add, cleanups
@@ -54,25 +54,25 @@
     contact M-Systems directly. M-Systems since acquired by Sandisk. 
 
 ======================================================================*/
-#include <linux/mtd/blktrans.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
+#include <linaos/mtd/blktrans.h>
+#include <linaos/module.h>
+#include <linaos/mtd/mtd.h>
 /*#define PSYCHO_DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/hdreg.h>
-#include <linux/vmalloc.h>
-#include <linux/blkpg.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/major.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/hdreg.h>
+#include <linaos/vmalloc.h>
+#include <linaos/blkpg.h>
+#include <linaos/uaccess.h>
 
-#include <linux/mtd/ftl.h>
+#include <linaos/mtd/ftl.h>
 
 /*====================================================================*/
 

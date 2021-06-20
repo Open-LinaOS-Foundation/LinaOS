@@ -78,31 +78,31 @@
 		pinctrl-0 = <&gpio_keys_default_mode>;
 
 		button-home {
-			linux,code = <KEY_HOME>;
+			linaos,code = <KEY_HOME>;
 			label = "HOME";
 			/* GPIO91 */
 			gpios = <&gpio2 27 GPIO_ACTIVE_LOW>;
 		};
 		button-volup {
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			label = "VOL+";
 			/* GPIO67 */
 			gpios = <&gpio2 3 GPIO_ACTIVE_LOW>;
 		};
 		button-voldown {
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			label = "VOL-";
 			/* GPIO92 */
 			gpios = <&gpio2 28 GPIO_ACTIVE_LOW>;
 		};
 		button-menu {
-			linux,code = <KEY_MENU>;
+			linaos,code = <KEY_MENU>;
 			label = "MENU";
 			/* GPIO204 */
 			gpios = <&gpio6 12 GPIO_ACTIVE_LOW>;
 		};
 		button-back {
-			linux,code = <KEY_BACK>;
+			linaos,code = <KEY_BACK>;
 			label = "BACK";
 			/* GPIO205 */
 			gpios = <&gpio6 13 GPIO_ACTIVE_LOW>;

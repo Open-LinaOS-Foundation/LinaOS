@@ -1,4 +1,4 @@
-/* evergreen_hdmi.h -- Private header for radeon driver -*- linux-c -*-
+/* evergreen_hdmi.h -- Private header for radeon driver -*- linaos-c -*-
  *
  * Copyright 2008 Advanced Micro Devices, Inc.
  * Copyright 2008 Red Hat Inc.

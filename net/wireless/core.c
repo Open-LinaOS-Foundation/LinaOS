@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * This is the linux wireless configuration interface.
+ * This is the linaos wireless configuration interface.
  *
  * Copyright 2006-2010		Johannes Berg <johannes@sipsolutions.net>
  * Copyright 2013-2014  Intel Mobile Communications GmbH
@@ -10,18 +10,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/if.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/nl80211.h>
-#include <linux/debugfs.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched.h>
+#include <linaos/if.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/nl80211.h>
+#include <linaos/debugfs.h>
+#include <linaos/notifier.h>
+#include <linaos/device.h>
+#include <linaos/etherdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/sched.h>
 #include <net/genetlink.h>
 #include <net/cfg80211.h>
 #include "nl80211.h"

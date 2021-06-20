@@ -5,11 +5,11 @@
  *	Alex Chiang <achiang@hp.com>
  */
 
-#include <linux/kobject.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/err.h>
+#include <linaos/kobject.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/err.h>
 #include "pci.h"
 
 struct kset *pci_slots_kset;
@@ -321,7 +321,7 @@ void pci_destroy_slot(struct pci_slot *slot)
 EXPORT_SYMBOL_GPL(pci_destroy_slot);
 
 #if defined(CONFIG_HOTPLUG_PCI) || defined(CONFIG_HOTPLUG_PCI_MODULE)
-#include <linux/pci_hotplug.h>
+#include <linaos/pci_hotplug.h>
 /**
  * pci_hp_create_module_link - create symbolic link to hotplug driver module
  * @pci_slot: struct pci_slot

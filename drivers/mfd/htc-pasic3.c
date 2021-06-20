@@ -5,18 +5,18 @@
  * Copyright (C) 2006 Philipp Zabel <philipp.zabel@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/ds1wm.h>
-#include <linux/mfd/htc-pasic3.h>
-#include <linux/slab.h>
+#include <linaos/gpio.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/ds1wm.h>
+#include <linaos/mfd/htc-pasic3.h>
+#include <linaos/slab.h>
 
 struct pasic3_data {
 	void __iomem *mapping;

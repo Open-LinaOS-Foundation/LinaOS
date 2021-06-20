@@ -7,10 +7,10 @@
  * Copyright (C) 1998,99 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/compat.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/compat.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/initval.h>

@@ -7,7 +7,7 @@
 #ifndef __RTC_H
 #define __RTC_H
 
-#include <linux/fsl/ptp_qoriq.h>
+#include <linaos/fsl/ptp_qoriq.h>
 
 #include "dprtc.h"
 #include "dprtc-cmd.h"

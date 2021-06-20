@@ -4,11 +4,11 @@
  *
  * Picked from realview
  * Copyright (c) 2012 ST Microelectronics Limited
- * Shiraz Hashim <shiraz.linux.kernel@gmail.com>
+ * Shiraz Hashim <shiraz.linaos.kernel@gmail.com>
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 
 	__INIT
 

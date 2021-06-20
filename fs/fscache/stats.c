@@ -6,9 +6,9 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL THREAD
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/module.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 #include "internal.h"
 
 /*

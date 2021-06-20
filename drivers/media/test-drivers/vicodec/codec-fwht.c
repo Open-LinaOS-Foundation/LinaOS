@@ -9,9 +9,9 @@
  * R.D. Brown, 1977
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/videodev2.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/videodev2.h>
 #include "codec-fwht.h"
 
 #define OVERFLOW_BIT BIT(14)

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  Copyright (C) 2006	Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2006	Yoichi Yuasa <yuasa@linaos-mips.org>
  */
 #ifndef _COBALT_MACH_GT64120_H
 #define _COBALT_MACH_GT64120_H

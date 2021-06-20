@@ -4,7 +4,7 @@
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  * Copyright (C) 2015-2017 Intel Deutschland GmbH
  */
-#include <linux/devcoredump.h>
+#include <linaos/devcoredump.h>
 #include "iwl-drv.h"
 #include "runtime.h"
 #include "dbg.h"

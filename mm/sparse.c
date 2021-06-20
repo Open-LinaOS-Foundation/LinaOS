@@ -2,17 +2,17 @@
 /*
  * sparse memory mappings.
  */
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/mmzone.h>
-#include <linux/memblock.h>
-#include <linux/compiler.h>
-#include <linux/highmem.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/mmzone.h>
+#include <linaos/memblock.h>
+#include <linaos/compiler.h>
+#include <linaos/highmem.h>
+#include <linaos/export.h>
+#include <linaos/spinlock.h>
+#include <linaos/vmalloc.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
 
 #include "internal.h"
 #include <asm/dma.h>

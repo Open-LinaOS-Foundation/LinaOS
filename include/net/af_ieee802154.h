@@ -12,7 +12,7 @@
 #ifndef _AF_IEEE802154_H
 #define _AF_IEEE802154_H
 
-#include <linux/socket.h> /* for sa_family_t */
+#include <linaos/socket.h> /* for sa_family_t */
 
 enum {
 	IEEE802154_ADDR_NONE = 0x0,

@@ -10,10 +10,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/sched/signal.h>
+#include <linaos/compat.h>
+#include <linaos/module.h>
+#include <linaos/rtc.h>
+#include <linaos/sched/signal.h>
 #include "rtc-core.h"
 
 static dev_t rtc_devt;

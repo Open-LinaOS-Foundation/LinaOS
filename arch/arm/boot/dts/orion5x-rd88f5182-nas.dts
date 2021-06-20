@@ -39,7 +39,7 @@
 
 		led@0 {
 			label = "rd88f5182:cpu";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			gpios = <&gpio0 0 GPIO_ACTIVE_HIGH>;
 		};
 	};

@@ -5,7 +5,7 @@
 #if !defined(_TRACE_SCMI_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SCMI_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(scmi_xfer_begin,
 	TP_PROTO(int transfer_id, u8 msg_id, u8 protocol_id, u16 seq,

@@ -20,18 +20,18 @@
  * See also Documentation/block/ioprio.rst
  *
  */
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ioprio.h>
-#include <linux/cred.h>
-#include <linux/blkdev.h>
-#include <linux/capability.h>
-#include <linux/sched/user.h>
-#include <linux/sched/task.h>
-#include <linux/syscalls.h>
-#include <linux/security.h>
-#include <linux/pid_namespace.h>
+#include <linaos/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/ioprio.h>
+#include <linaos/cred.h>
+#include <linaos/blkdev.h>
+#include <linaos/capability.h>
+#include <linaos/sched/user.h>
+#include <linaos/sched/task.h>
+#include <linaos/syscalls.h>
+#include <linaos/security.h>
+#include <linaos/pid_namespace.h>
 
 int set_task_ioprio(struct task_struct *task, int ioprio)
 {

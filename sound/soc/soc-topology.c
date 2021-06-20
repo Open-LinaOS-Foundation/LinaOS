@@ -5,7 +5,7 @@
 // Copyright (C) 2012 Texas Instruments Inc.
 // Copyright (C) 2015 Intel Corporation.
 //
-// Authors: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Authors: Liam Girdwood <liam.r.girdwood@linaos.intel.com>
 //		K, Mythri P <mythri.p.k@intel.com>
 //		Prusty, Subhransu S <subhransu.s.prusty@intel.com>
 //		B, Jayachandran <jayachandran.b@intel.com>
@@ -20,11 +20,11 @@
 //  This file only manages the core ALSA and ASoC components, all other bespoke
 //  firmware topology data is passed to component drivers for bespoke handling.
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/list.h>
+#include <linaos/firmware.h>
+#include <linaos/slab.h>
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
 #include <sound/soc-topology.h>

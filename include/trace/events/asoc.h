@@ -5,8 +5,8 @@
 #if !defined(_TRACE_ASOC_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_ASOC_H
 
-#include <linux/ktime.h>
-#include <linux/tracepoint.h>
+#include <linaos/ktime.h>
+#include <linaos/tracepoint.h>
 #include <sound/jack.h>
 
 #define DAPM_DIRECT "(direct)"

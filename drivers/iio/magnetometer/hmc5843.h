@@ -9,8 +9,8 @@
 #ifndef HMC5843_CORE_H
 #define HMC5843_CORE_H
 
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
+#include <linaos/regmap.h>
+#include <linaos/iio/iio.h>
 
 #define HMC5843_CONFIG_REG_A			0x00
 #define HMC5843_CONFIG_REG_B			0x01

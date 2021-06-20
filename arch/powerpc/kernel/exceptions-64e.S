@@ -5,7 +5,7 @@
  *  Copyright (C) 2007 Ben. Herrenschmidt (benh@kernel.crashing.org), IBM Corp.
  */
 
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #include <asm/reg.h>
 #include <asm/page.h>
 #include <asm/ppc_asm.h>

@@ -3,12 +3,12 @@
  * Fast batching percpu counters.
  */
 
-#include <linux/percpu_counter.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/debugobjects.h>
+#include <linaos/percpu_counter.h>
+#include <linaos/mutex.h>
+#include <linaos/init.h>
+#include <linaos/cpu.h>
+#include <linaos/module.h>
+#include <linaos/debugobjects.h>
 
 #ifdef CONFIG_HOTPLUG_CPU
 static LIST_HEAD(percpu_counters);

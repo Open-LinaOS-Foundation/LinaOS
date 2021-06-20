@@ -8,11 +8,11 @@
  * Author: Max Asböck <amax@us.ibm.com>
  */
 
-#include <linux/termios.h>
-#include <linux/tty.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/serial_8250.h>
+#include <linaos/termios.h>
+#include <linaos/tty.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_reg.h>
+#include <linaos/serial_8250.h>
 #include "ibmasm.h"
 #include "lowlevel.h"
 

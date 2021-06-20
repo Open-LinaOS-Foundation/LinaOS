@@ -5,9 +5,9 @@
  * Copyright (C) 2013 Inktank Storage, Inc.
  */
 
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/ceph/libceph.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
+#include <linaos/ceph/libceph.h>
 
 /*
  * Ceph snapshot contexts are reference counted objects, and the

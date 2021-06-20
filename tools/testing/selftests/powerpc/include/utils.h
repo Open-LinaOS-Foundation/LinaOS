@@ -10,8 +10,8 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include <linux/auxvec.h>
-#include <linux/perf_event.h>
+#include <linaos/auxvec.h>
+#include <linaos/perf_event.h>
 #include <asm/cputable.h>
 #include "reg.h"
 

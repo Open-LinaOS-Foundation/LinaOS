@@ -2,11 +2,11 @@
 /*
  * Copyright (c) 2016-2018 Christoph Hellwig.
  */
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/iomap.h>
-#include <linux/fiemap.h>
+#include <linaos/module.h>
+#include <linaos/compiler.h>
+#include <linaos/fs.h>
+#include <linaos/iomap.h>
+#include <linaos/fiemap.h>
 
 struct fiemap_ctx {
 	struct fiemap_extent_info *fi;

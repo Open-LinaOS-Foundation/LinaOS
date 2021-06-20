@@ -13,7 +13,7 @@
 #ifndef __PPC_KERNEL_MPC10X_H
 #define __PPC_KERNEL_MPC10X_H
 
-#include <linux/pci_ids.h>
+#include <linaos/pci_ids.h>
 #include <asm/pci-bridge.h>
 
 /*
@@ -33,7 +33,7 @@
 
 /*
  * Define the vendor/device IDs for the various bridges--should be added to
- * <linux/pci_ids.h>
+ * <linaos/pci_ids.h>
  */
 #define	MPC10X_BRIDGE_106	((PCI_DEVICE_ID_MOTOROLA_MPC106 << 16) |  \
 				  PCI_VENDOR_ID_MOTOROLA)

@@ -5,9 +5,9 @@
 //
 // Copyright 2019 Analog Devices Inc.
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
 
 #include "adau7118.h"
 

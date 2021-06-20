@@ -12,12 +12,12 @@
  * Copyright (c) 2014, Intel Corporation.
  */
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
+#include <linaos/regmap.h>
 
 #include "bmc150-accel.h"
 
@@ -138,6 +138,6 @@ static struct i2c_driver bmc150_accel_driver = {
 };
 module_i2c_driver(bmc150_accel_driver);
 
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("BMC150 I2C accelerometer driver");

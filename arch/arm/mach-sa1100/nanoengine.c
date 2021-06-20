@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-sa1100/nanoengine.c
+ * linaos/arch/arm/mach-sa1100/nanoengine.c
  *
  * Bright Star Engineering's nanoEngine board init code.
  *
  * Copyright (C) 2010 Marcelo Roberto Jimenez <mroberto@cpti.cetuc.puc-rio.br>
  */
 
-#include <linux/init.h>
-#include <linux/gpio/machine.h>
-#include <linux/kernel.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/root_dev.h>
+#include <linaos/init.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_data/sa11x0-serial.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/root_dev.h>
 
 #include <asm/mach-types.h>
 #include <asm/setup.h>

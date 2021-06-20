@@ -10,7 +10,7 @@
 #ifndef DM_REGION_HASH_H
 #define DM_REGION_HASH_H
 
-#include <linux/dm-dirty-log.h>
+#include <linaos/dm-dirty-log.h>
 
 /*-----------------------------------------------------------------
  * Region hash

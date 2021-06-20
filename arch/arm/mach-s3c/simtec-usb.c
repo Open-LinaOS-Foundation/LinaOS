@@ -9,15 +9,15 @@
 
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/gpio.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/gpio.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -27,7 +27,7 @@
 #include <mach/irqs.h>
 #include <asm/irq.h>
 
-#include <linux/platform_data/usb-ohci-s3c2410.h>
+#include <linaos/platform_data/usb-ohci-s3c2410.h>
 #include "devs.h"
 
 #include "bast.h"

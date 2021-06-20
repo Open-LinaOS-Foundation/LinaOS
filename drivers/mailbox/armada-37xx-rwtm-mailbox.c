@@ -5,15 +5,15 @@
  * Author: Marek Behún <kabel@kernel.org>
  */
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_controller.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/armada-37xx-rwtm-mailbox.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mailbox_controller.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/armada-37xx-rwtm-mailbox.h>
 
 #define DRIVER_NAME	"armada-37xx-rwtm-mailbox"
 

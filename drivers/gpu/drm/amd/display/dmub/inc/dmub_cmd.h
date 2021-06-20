@@ -36,9 +36,9 @@
 #else
 
 #include <asm/byteorder.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/delay.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
 #include <stdarg.h>
 
 #include "atomfirmware.h"

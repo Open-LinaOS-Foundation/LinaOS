@@ -5,40 +5,40 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h> /* for UINT_MAX */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/if_arp.h> /* for some manifest constants */
-#include <linux/notifier.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/atmclip.h>
-#include <linux/atmarp.h>
-#include <linux/capability.h>
-#include <linux/ip.h> /* for net/route.h */
-#include <linux/in.h> /* for struct sockaddr_in */
-#include <linux/if.h> /* for IFF_UP */
-#include <linux/inetdevice.h>
-#include <linux/bitops.h>
-#include <linux/poison.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/rcupdate.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h> /* for UINT_MAX */
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/wait.h>
+#include <linaos/timer.h>
+#include <linaos/if_arp.h> /* for some manifest constants */
+#include <linaos/notifier.h>
+#include <linaos/atm.h>
+#include <linaos/atmdev.h>
+#include <linaos/atmclip.h>
+#include <linaos/atmarp.h>
+#include <linaos/capability.h>
+#include <linaos/ip.h> /* for net/route.h */
+#include <linaos/in.h> /* for struct sockaddr_in */
+#include <linaos/if.h> /* for IFF_UP */
+#include <linaos/inetdevice.h>
+#include <linaos/bitops.h>
+#include <linaos/poison.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/rcupdate.h>
+#include <linaos/jhash.h>
+#include <linaos/slab.h>
 #include <net/route.h> /* for struct rtable and routing */
 #include <net/icmp.h> /* icmp_send */
 #include <net/arp.h>
-#include <linux/param.h> /* for HZ */
-#include <linux/uaccess.h>
+#include <linaos/param.h> /* for HZ */
+#include <linaos/uaccess.h>
 #include <asm/byteorder.h> /* for htons etc. */
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #include "common.h"
 #include "resources.h"

@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2014-2015 Altera Corporation. All rights reserved.
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 #define MAX_LOOP_COUNT		1000

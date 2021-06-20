@@ -2,12 +2,12 @@
 #ifndef _SCD30_H
 #define _SCD30_H
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
-#include <linux/regulator/consumer.h>
-#include <linux/types.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/pm.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/types.h>
 
 struct scd30_state;
 

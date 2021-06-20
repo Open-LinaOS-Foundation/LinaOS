@@ -11,8 +11,8 @@
 #define __ASM_ARCH_OMAP_GPIO_H
 
 #ifndef __ASSEMBLER__
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
 #endif
 
 #define OMAP1_MPUIO_BASE			0xfffb5000

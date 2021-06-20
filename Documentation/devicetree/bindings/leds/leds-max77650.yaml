@@ -43,7 +43,7 @@ patternProperties:
 
       label: true
 
-      linux,default-trigger: true
+      linaos,default-trigger: true
 
 required:
   - compatible

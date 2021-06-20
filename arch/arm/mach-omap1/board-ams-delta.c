@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-ams-delta.c
+ * linaos/arch/arm/mach-omap1/board-ams-delta.c
  *
  * Modified from board-generic.c
  *
@@ -8,33 +8,33 @@
  *
  * Copyright (C) 2006 Jonathan McDowell <noodles@earth.li>
  */
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/mtd/nand-gpio.h>
-#include <linux/mtd/partitions.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/serial_8250.h>
-#include <linux/export.h>
-#include <linux/omapfb.h>
-#include <linux/io.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/leds.h>
+#include <linaos/mtd/nand-gpio.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/serial_8250.h>
+#include <linaos/export.h>
+#include <linaos/omapfb.h>
+#include <linaos/io.h>
+#include <linaos/platform_data/gpio-omap.h>
 
 #include <asm/serial.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
-#include <linux/platform_data/keypad-omap.h>
+#include <linaos/platform_data/keypad-omap.h>
 #include <mach/mux.h>
 
 #include <mach/hardware.h>

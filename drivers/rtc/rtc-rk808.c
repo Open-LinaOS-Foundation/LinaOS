@@ -8,13 +8,13 @@
  * Author: Zhang Qing <zhangqing@rock-chips.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/mfd/rk808.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/mfd/rk808.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
 
 /* RTC_CTRL_REG bitfields */
 #define BIT_RTC_CTRL_REG_STOP_RTC_M		BIT(0)

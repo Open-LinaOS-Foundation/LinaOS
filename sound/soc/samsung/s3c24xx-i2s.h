@@ -4,7 +4,7 @@
  *
  * Copyright 2005 Wolfson Microelectronics PLC.
  * Author: Graeme Gregory
- *         graeme.gregory@wolfsonmicro.com or linux@wolfsonmicro.com
+ *         graeme.gregory@wolfsonmicro.com or linaos@wolfsonmicro.com
  *
  *  Revision history
  *    10th Nov 2006   Initial version.

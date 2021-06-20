@@ -33,12 +33,12 @@
  *   20050816 henk	Merge 2.6.13-rc6
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/rwsem.h>
-#include <linux/usb/input.h>
-#include <linux/map_to_7segment.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/rwsem.h>
+#include <linaos/usb/input.h>
+#include <linaos/map_to_7segment.h>
 
 #include "yealink.h"
 
@@ -576,7 +576,7 @@ static ssize_t store_map(struct device *dev, struct device_attribute *attr,
  * Example:
  * cat ./line3
  * 888888888888
- * Linux Rocks!
+ * LinaOS Rocks!
  */
 static ssize_t show_line(struct device *dev, char *buf, int a, int b)
 {
@@ -788,7 +788,7 @@ static const struct attribute_group yld_attr_group = {
 };
 
 /*******************************************************************************
- * Linux interface and usb initialisation
+ * LinaOS interface and usb initialisation
  ******************************************************************************/
 
 struct driver_info {

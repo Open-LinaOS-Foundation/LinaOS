@@ -5,8 +5,8 @@
  * e1000_i211
  */
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <linaos/types.h>
+#include <linaos/if_ether.h>
 
 #include "e1000_hw.h"
 #include "e1000_i210.h"

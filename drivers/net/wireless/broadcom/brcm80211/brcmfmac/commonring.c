@@ -3,8 +3,8 @@
  * Copyright (c) 2014 Broadcom Corporation
  */
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
+#include <linaos/types.h>
+#include <linaos/netdevice.h>
 
 #include <brcmu_utils.h>
 #include <brcmu_wifi.h>

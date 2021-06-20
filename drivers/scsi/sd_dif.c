@@ -6,8 +6,8 @@
  * Written by: Martin K. Petersen <martin.petersen@oracle.com>
  */
 
-#include <linux/blkdev.h>
-#include <linux/t10-pi.h>
+#include <linaos/blkdev.h>
+#include <linaos/t10-pi.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

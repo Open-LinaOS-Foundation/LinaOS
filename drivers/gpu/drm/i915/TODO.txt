@@ -35,7 +35,7 @@ Smaller things:
 - i915_mm.c should be moved to the right places. Some of the helpers also look a
   bit fishy:
 
-  https://lore.kernel.org/linux-mm/20210301083320.943079-1-hch@lst.de/
+  https://lore.kernel.org/linaos-mm/20210301083320.943079-1-hch@lst.de/
 
 - tasklet helpers in i915_gem.h also look a bit misplaced and should
   probably be moved to tasklet headers.

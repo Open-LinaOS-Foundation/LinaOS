@@ -11,7 +11,7 @@
 #ifndef I2C_ITG3200_H_
 #define I2C_ITG3200_H_
 
-#include <linux/iio/iio.h>
+#include <linaos/iio/iio.h>
 
 /* Register with I2C address (34h) */
 #define ITG3200_REG_ADDRESS		0x00

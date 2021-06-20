@@ -44,13 +44,13 @@
 
 		factory {
 			label = "factory";
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			gpios = <&pio 0 0>;
 		};
 
 		wps {
 			label = "wps";
-			linux,code = <KEY_WPS_BUTTON>;
+			linaos,code = <KEY_WPS_BUTTON>;
 			gpios = <&pio 102 0>;
 		};
 	};

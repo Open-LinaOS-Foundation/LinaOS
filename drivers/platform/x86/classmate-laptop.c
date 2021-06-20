@@ -4,14 +4,14 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/input.h>
-#include <linux/rfkill.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/acpi.h>
+#include <linaos/backlight.h>
+#include <linaos/input.h>
+#include <linaos/rfkill.h>
 
 MODULE_LICENSE("GPL");
 

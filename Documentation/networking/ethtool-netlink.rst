@@ -8,7 +8,7 @@ Basic information
 
 Netlink interface for ethtool uses generic netlink family ``ethtool``
 (userspace application should use macros ``ETHTOOL_GENL_NAME`` and
-``ETHTOOL_GENL_VERSION`` defined in ``<linux/ethtool_netlink.h>`` uapi
+``ETHTOOL_GENL_VERSION`` defined in ``<linaos/ethtool_netlink.h>`` uapi
 header). This family does not use a specific header, all information in
 requests and replies is passed using netlink attributes.
 
@@ -1009,7 +1009,7 @@ in ``ETHTOOL_A_HEADER_FLAGS``.
 It will be empty if driver did not report any statistics. Drivers fill in
 the statistics in the following structure:
 
-.. kernel-doc:: include/linux/ethtool.h
+.. kernel-doc:: include/linaos/ethtool.h
     :identifiers: ethtool_pause_stats
 
 Each member has a corresponding attribute defined.
@@ -1337,7 +1337,7 @@ the array will be:
 
 Drivers fill in the statistics in the following structure:
 
-.. kernel-doc:: include/linux/ethtool.h
+.. kernel-doc:: include/linaos/ethtool.h
     :identifiers: ethtool_fec_stats
 
 FEC_SET

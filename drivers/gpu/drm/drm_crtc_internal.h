@@ -31,7 +31,7 @@
  * and are not exported to drivers.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum drm_color_encoding;
 enum drm_color_range;

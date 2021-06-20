@@ -9,16 +9,16 @@
  * TODO: offset, ACPI, continuous measurement mode, PM
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/regmap.h>
-#include <linux/acpi.h>
-#include <linux/pm.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/regmap.h>
+#include <linaos/acpi.h>
+#include <linaos/pm.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 #define MMC35240_DRV_NAME "mmc35240"
 #define MMC35240_REGMAP_NAME "mmc35240_regmap"

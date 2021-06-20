@@ -10,16 +10,16 @@
 
 #if IS_ENABLED(CONFIG_TI_CPTS)
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clocksource.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/skbuff.h>
-#include <linux/ptp_classify.h>
-#include <linux/timecounter.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
+#include <linaos/clocksource.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/of.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/timecounter.h>
 
 struct cpsw_cpts {
 	u32 idver;                /* Identification and version */

@@ -6,9 +6,9 @@
 //
 // Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
 
 #include "internal.h"
 

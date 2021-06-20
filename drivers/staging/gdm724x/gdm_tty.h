@@ -4,8 +4,8 @@
 #ifndef _GDM_TTY_H_
 #define _GDM_TTY_H_
 
-#include <linux/types.h>
-#include <linux/tty.h>
+#include <linaos/types.h>
+#include <linaos/tty.h>
 
 #define TTY_MAX_COUNT		2
 

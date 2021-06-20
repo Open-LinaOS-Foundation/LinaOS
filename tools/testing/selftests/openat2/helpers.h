@@ -10,7 +10,7 @@
 #define _GNU_SOURCE
 #include <stdint.h>
 #include <errno.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "../kselftest.h"
 
 #define ARRAY_LEN(X) (sizeof (X) / sizeof (*(X)))

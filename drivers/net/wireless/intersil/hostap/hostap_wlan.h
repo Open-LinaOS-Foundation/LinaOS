@@ -2,12 +2,12 @@
 #ifndef HOSTAP_WLAN_H
 #define HOSTAP_WLAN_H
 
-#include <linux/interrupt.h>
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mutex.h>
-#include <linux/refcount.h>
+#include <linaos/interrupt.h>
+#include <linaos/wireless.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/mutex.h>
+#include <linaos/refcount.h>
 #include <net/iw_handler.h>
 #include <net/ieee80211_radiotap.h>
 #include <net/lib80211.h>
@@ -30,21 +30,21 @@
 #define ETH_P_HOSTAP ETH_P_CONTROL
 
 /* ARPHRD_IEEE80211_PRISM uses a bloated version of Prism2 RX frame header
- * (from linux-wlan-ng) */
-struct linux_wlan_ng_val {
+ * (from linaos-wlan-ng) */
+struct linaos_wlan_ng_val {
 	u32 did;
 	u16 status, len;
 	u32 data;
 } __packed;
 
-struct linux_wlan_ng_prism_hdr {
+struct linaos_wlan_ng_prism_hdr {
 	u32 msgcode, msglen;
 	char devname[16];
-	struct linux_wlan_ng_val hosttime, mactime, channel, rssi, sq, signal,
+	struct linaos_wlan_ng_val hosttime, mactime, channel, rssi, sq, signal,
 		noise, rate, istx, frmlen;
 } __packed;
 
-struct linux_wlan_ng_cap_hdr {
+struct linaos_wlan_ng_cap_hdr {
 	__be32 version;
 	__be32 length;
 	__be64 mactime;

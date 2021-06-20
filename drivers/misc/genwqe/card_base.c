@@ -4,7 +4,7 @@
  *
  * (C) Copyright IBM Corp. 2013
  *
- * Author: Frank Haverkamp <haver@linux.vnet.ibm.com>
+ * Author: Frank Haverkamp <haver@linaos.vnet.ibm.com>
  * Author: Joerg-Stephan Vogt <jsvogt@de.ibm.com>
  * Author: Michael Jung <mijung@gmx.net>
  * Author: Michael Ruettger <michael@ibmra.de>
@@ -16,24 +16,24 @@
  * controlled from here.
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/err.h>
-#include <linux/aer.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
-#include <linux/log2.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/err.h>
+#include <linaos/aer.h>
+#include <linaos/string.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/device.h>
+#include <linaos/log2.h>
 
 #include "card_base.h"
 #include "card_ddcb.h"
 
-MODULE_AUTHOR("Frank Haverkamp <haver@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Frank Haverkamp <haver@linaos.vnet.ibm.com>");
 MODULE_AUTHOR("Michael Ruettger <michael@ibmra.de>");
 MODULE_AUTHOR("Joerg-Stephan Vogt <jsvogt@de.ibm.com>");
 MODULE_AUTHOR("Michael Jung <mijung@gmx.net>");

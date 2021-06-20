@@ -2,7 +2,7 @@
 /*
  *  arch/arm/mach-vt8500/timer.c
  *
- *  Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ *  Copyright (C) 2012 Tony Prisk <linaos@prisktech.co.nz>
  *  Copyright (C) 2010 Alexey Charkov <alchark@gmail.com>
  */
 
@@ -11,16 +11,16 @@
  * Alexey Charkov. Minor changes have been made for Device Tree Support.
  */
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/delay.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/clocksource.h>
+#include <linaos/clockchips.h>
+#include <linaos/delay.h>
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
 #define VT8500_TIMER_OFFSET	0x0100
 #define VT8500_TIMER_HZ		3000000

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* IPv4-specific defines for netfilter. 
  * (C)1998 Rusty Russell -- This code is GPL.
  */
@@ -6,7 +6,7 @@
 #define _UAPI__LINUX_IP_NETFILTER_H
 
 
-#include <linux/netfilter.h>
+#include <linaos/netfilter.h>
 
 /* only for userspace compatibility */
 #ifndef __KERNEL__

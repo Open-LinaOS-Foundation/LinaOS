@@ -6,17 +6,17 @@
  * Copyright (c) 2009 Dmitry Artamonow <mad_soft@inbox.ru>
  */
 
-#include <linux/kernel.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/platform_data/gpio-htc-egpio.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
+#include <linaos/kernel.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/input.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/platform_data/gpio-htc-egpio.h>
+#include <linaos/platform_data/sa11x0-serial.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial_core.h>
 
 #include <asm/mach/flash.h>
 #include <asm/mach/map.h>

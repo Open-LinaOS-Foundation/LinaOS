@@ -3,25 +3,25 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 // Copyright 2009 Kwangwoo Lee
 //	Kwangwoo Lee <kwangwoo.lee@gmail.com>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/dm9000.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/i2c.h>
+#include <linaos/fb.h>
+#include <linaos/gpio.h>
+#include <linaos/delay.h>
+#include <linaos/dm9000.h>
 
 #include <video/platform_lcd.h>
 #include <video/samsung_fimd.h>
@@ -35,7 +35,7 @@
 #include <asm/irq.h>
 #include <asm/mach-types.h>
 
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 #include "fb.h"
 
 #include "devs.h"

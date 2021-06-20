@@ -6,8 +6,8 @@
  * HEVC, VP9
  */
 
-#include <linux/firmware.h>
-#include <linux/clk.h>
+#include <linaos/firmware.h>
+#include <linaos/clk.h>
 
 #include "vdec_1.h"
 #include "vdec_helpers.h"

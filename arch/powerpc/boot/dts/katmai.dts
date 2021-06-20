@@ -5,7 +5,7 @@
  * Benjamin Herrenschmidt <benh@kernel.crashing.org>
  *
  * Copyright (c) 2006, 2007 IBM Corp.
- * Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Josh Boyer <jwboyer@linaos.vnet.ibm.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2.  This program is licensed "as is" without
@@ -252,7 +252,7 @@
 			};
 
 			EMAC0: ethernet@f0000800 {
-				linux,network-index = <0x0>;
+				linaos,network-index = <0x0>;
 				device_type = "network";
 				compatible = "ibm,emac-440spe", "ibm,emac4";
 				interrupt-parent = <&UIC1>;

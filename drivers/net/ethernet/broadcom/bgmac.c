@@ -9,12 +9,12 @@
 
 #define pr_fmt(fmt)		KBUILD_MODNAME ": " fmt
 
-#include <linux/bcma/bcma.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/bcm47xx_nvram.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
+#include <linaos/bcma/bcma.h>
+#include <linaos/etherdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/bcm47xx_nvram.h>
+#include <linaos/phy.h>
+#include <linaos/phy_fixed.h>
 #include <net/dsa.h>
 #include "bgmac.h"
 

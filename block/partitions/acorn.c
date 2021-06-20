@@ -7,8 +7,8 @@
  *  every single manufacturer of SCSI and IDE cards created their own
  *  method.
  */
-#include <linux/buffer_head.h>
-#include <linux/adfs_fs.h>
+#include <linaos/buffer_head.h>
+#include <linaos/adfs_fs.h>
 
 #include "check.h"
 
@@ -114,7 +114,7 @@ static int riscix_partition(struct parsed_partitions *state,
 #define LINUX_NATIVE_MAGIC 0xdeafa1de
 #define LINUX_SWAP_MAGIC   0xdeafab1e
 
-struct linux_part {
+struct linaos_part {
 	__le32 magic;
 	__le32 start_sect;
 	__le32 nr_sects;
@@ -122,31 +122,31 @@ struct linux_part {
 
 #if defined(CONFIG_ACORN_PARTITION_CUMANA) || \
 	defined(CONFIG_ACORN_PARTITION_ADFS)
-static int linux_partition(struct parsed_partitions *state,
+static int linaos_partition(struct parsed_partitions *state,
 			   unsigned long first_sect, int slot,
 			   unsigned long nr_sects)
 {
 	Sector sect;
-	struct linux_part *linuxp;
+	struct linaos_part *linaosp;
 	unsigned long size = nr_sects > 2 ? 2 : nr_sects;
 
-	strlcat(state->pp_buf, " [Linux]", PAGE_SIZE);
+	strlcat(state->pp_buf, " [LinaOS]", PAGE_SIZE);
 
 	put_partition(state, slot++, first_sect, size);
 
-	linuxp = read_part_sector(state, first_sect, &sect);
-	if (!linuxp)
+	linaosp = read_part_sector(state, first_sect, &sect);
+	if (!linaosp)
 		return -1;
 
 	strlcat(state->pp_buf, " <", PAGE_SIZE);
-	while (linuxp->magic == cpu_to_le32(LINUX_NATIVE_MAGIC) ||
-	       linuxp->magic == cpu_to_le32(LINUX_SWAP_MAGIC)) {
+	while (linaosp->magic == cpu_to_le32(LINUX_NATIVE_MAGIC) ||
+	       linaosp->magic == cpu_to_le32(LINUX_SWAP_MAGIC)) {
 		if (slot == state->limit)
 			break;
 		put_partition(state, slot++, first_sect +
-				 le32_to_cpu(linuxp->start_sect),
-				 le32_to_cpu(linuxp->nr_sects));
-		linuxp ++;
+				 le32_to_cpu(linaosp->start_sect),
+				 le32_to_cpu(linaosp->nr_sects));
+		linaosp ++;
 	}
 	strlcat(state->pp_buf, " >", PAGE_SIZE);
 
@@ -221,7 +221,7 @@ int adfspart_check_CUMANA(struct parsed_partitions *state)
 #endif
 
 		case PARTITION_LINUX:
-			slot = linux_partition(state, first_sector, slot,
+			slot = linaos_partition(state, first_sector, slot,
 					       nr_sects);
 			break;
 		}
@@ -288,7 +288,7 @@ int adfspart_check_ADFS(struct parsed_partitions *state)
 #endif
 
 		case PARTITION_LINUX:
-			slot = linux_partition(state, start_sect, slot,
+			slot = linaos_partition(state, start_sect, slot,
 					       nr_sects);
 			break;
 		}
@@ -305,7 +305,7 @@ struct ics_part {
 	__le32 size;
 };
 
-static int adfspart_check_ICSLinux(struct parsed_partitions *state,
+static int adfspart_check_ICSLinaOS(struct parsed_partitions *state,
 				   unsigned long block)
 {
 	Sector sect;
@@ -313,7 +313,7 @@ static int adfspart_check_ICSLinux(struct parsed_partitions *state,
 	int result = 0;
 
 	if (data) {
-		if (memcmp(data, "LinuxPart", 9) == 0)
+		if (memcmp(data, "LinaOSPart", 9) == 0)
 			result = 1;
 		put_dev_sector(sect);
 	}
@@ -389,7 +389,7 @@ int adfspart_check_ICS(struct parsed_partitions *state)
 			 * partition is.  We must not make this visible
 			 * to the filesystem.
 			 */
-			if (size > 1 && adfspart_check_ICSLinux(state, start)) {
+			if (size > 1 && adfspart_check_ICSLinaOS(state, start)) {
 				start += 1;
 				size -= 1;
 			}

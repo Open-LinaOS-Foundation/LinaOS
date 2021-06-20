@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/befs/debug.c
+ *  linaos/fs/befs/debug.c
  *
  * Copyright (C) 2001 Will Dyson (will_dyson at pobox.com)
  *
@@ -15,11 +15,11 @@
 #ifdef __KERNEL__
 
 #include <stdarg.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <linaos/string.h>
+#include <linaos/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
 
 #endif				/* __KERNEL__ */
 

@@ -7,21 +7,21 @@
  * https://www.analog.com/ADF7242
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/firmware.h>
-#include <linux/spi/spi.h>
-#include <linux/skbuff.h>
-#include <linux/of.h>
-#include <linux/irq.h>
-#include <linux/debugfs.h>
-#include <linux/bitops.h>
-#include <linux/ieee802154.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/workqueue.h>
+#include <linaos/spinlock.h>
+#include <linaos/firmware.h>
+#include <linaos/spi/spi.h>
+#include <linaos/skbuff.h>
+#include <linaos/of.h>
+#include <linaos/irq.h>
+#include <linaos/debugfs.h>
+#include <linaos/bitops.h>
+#include <linaos/ieee802154.h>
 #include <net/mac802154.h>
 #include <net/cfg802154.h>
 

@@ -7,9 +7,9 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/random.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/random.h>
 
 #include <net/ip_vs.h>
 

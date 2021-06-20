@@ -8,18 +8,18 @@
  * Suman Anna <s-anna@ti.com>
  */
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/remoteproc.h>
-#include <linux/reset.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/remoteproc.h>
+#include <linaos/reset.h>
 
-#include <linux/platform_data/wkup_m3.h>
+#include <linaos/platform_data/wkup_m3.h>
 
 #include "remoteproc_internal.h"
 

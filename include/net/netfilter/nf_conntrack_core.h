@@ -7,13 +7,13 @@
  * 16 Dec 2003: Yasuyuki Kozakai @USAGI <yasuyuki.kozakai@toshiba.co.jp>
  *	- generalize L3 protocol dependent part.
  *
- * Derived from include/linux/netfiter_ipv4/ip_conntrack_core.h
+ * Derived from include/linaos/netfiter_ipv4/ip_conntrack_core.h
  */
 
 #ifndef _NF_CONNTRACK_CORE_H
 #define _NF_CONNTRACK_CORE_H
 
-#include <linux/netfilter.h>
+#include <linaos/netfilter.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>

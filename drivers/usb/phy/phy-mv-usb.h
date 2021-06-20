@@ -6,7 +6,7 @@
 #ifndef	__MV_USB_OTG_CONTROLLER__
 #define	__MV_USB_OTG_CONTROLLER__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Command Register Bit Masks */
 #define USBCMD_RUN_STOP			(0x00000001)

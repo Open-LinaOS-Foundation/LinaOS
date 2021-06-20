@@ -5,7 +5,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include "tests.h"
 #include "util/debug.h"
 

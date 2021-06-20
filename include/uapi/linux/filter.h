@@ -1,14 +1,14 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * Linux Socket Filter Data Structures
+ * LinaOS Socket Filter Data Structures
  */
 
 #ifndef _UAPI__LINUX_FILTER_H__
 #define _UAPI__LINUX_FILTER_H__
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/bpf_common.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
+#include <linaos/bpf_common.h>
 
 /*
  * Current version of the filter code architecture.

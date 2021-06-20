@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * (C) 2002 - 2003 Dominik Brodowski <linux@brodo.de>
+ * (C) 2002 - 2003 Dominik Brodowski <linaos@brodo.de>
  *
  *  Library for common functions for Intel SpeedStep v.1 and v.2 support
  *

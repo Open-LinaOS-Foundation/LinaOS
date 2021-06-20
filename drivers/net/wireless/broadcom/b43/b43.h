@@ -2,13 +2,13 @@
 #ifndef B43_H_
 #define B43_H_
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/hw_random.h>
-#include <linux/bcma/bcma.h>
-#include <linux/ssb/ssb.h>
-#include <linux/completion.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/hw_random.h>
+#include <linaos/bcma/bcma.h>
+#include <linaos/ssb/ssb.h>
+#include <linaos/completion.h>
 #include <net/mac80211.h>
 
 #include "debugfs.h"

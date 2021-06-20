@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ * LinaOS/PA-RISC Project (http://www.parisc-linaos.org/)
  *
  * kernel entry points (interruptions, system call wrappers)
  *  Copyright (C) 1999,2000 Philipp Rumpf 
@@ -26,8 +26,8 @@
 #include <asm/thread_info.h>
 #include <asm/alternative.h>
 
-#include <linux/linkage.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/pgtable.h>
 
 #ifdef CONFIG_64BIT
 	.level 2.0w

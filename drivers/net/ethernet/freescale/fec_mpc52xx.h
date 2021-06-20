@@ -14,7 +14,7 @@
 #ifndef __DRIVERS_NET_MPC52XX_FEC_H__
 #define __DRIVERS_NET_MPC52XX_FEC_H__
 
-#include <linux/phy.h>
+#include <linaos/phy.h>
 
 /* Tunable constant */
 /* FEC_RX_BUFFER_SIZE includes 4 bytes for CRC32 */

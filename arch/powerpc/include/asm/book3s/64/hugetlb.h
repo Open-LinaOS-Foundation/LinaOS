@@ -118,7 +118,7 @@ static inline int check_and_get_huge_psize(int shift)
 	/*
 	 * We need to make sure that for different page sizes reported by
 	 * firmware we only add hugetlb support for page sizes that can be
-	 * supported by linux page table layout.
+	 * supported by linaos page table layout.
 	 * For now we have
 	 * Radix: 2M and 1G
 	 * Hash: 16M and 16G

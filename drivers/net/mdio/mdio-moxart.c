@@ -4,14 +4,14 @@
  * Copyright (C) 2013 Jonas Jensen <jonas.jensen@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_address.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of_address.h>
+#include <linaos/of_mdio.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
 
 #define REG_PHY_CTRL            0
 #define REG_PHY_WRITE_DATA      4

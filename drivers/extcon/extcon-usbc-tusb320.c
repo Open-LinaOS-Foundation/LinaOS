@@ -6,13 +6,13 @@
  * Author: Michael Auchter <michael.auchter@ni.com>
  */
 
-#include <linux/extcon-provider.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/extcon-provider.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 
 #define TUSB320_REG9				0x9
 #define TUSB320_REG9_ATTACHED_STATE_SHIFT	6

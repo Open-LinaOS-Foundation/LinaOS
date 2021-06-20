@@ -4,9 +4,9 @@
  * details
  */
 
-#include <linux/time.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
+#include <linaos/time.h>
+#include <linaos/pagemap.h>
+#include <linaos/buffer_head.h>
 #include "reiserfs.h"
 
 /*

@@ -9,7 +9,7 @@
 #define _ASM_RISCV_WORD_AT_A_TIME_H
 
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 struct word_at_a_time {
 	const unsigned long one_bits, high_bits;

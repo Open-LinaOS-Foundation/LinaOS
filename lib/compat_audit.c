@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
 #include <asm/unistd32.h>
 
 unsigned compat_dir_class[] = {

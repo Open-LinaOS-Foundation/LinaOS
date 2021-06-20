@@ -206,7 +206,7 @@ instead of 30.
 4.4 The _cmsg Structure
 -----------------------
 
-(declared in <linux/isdn/capiutil.h>)
+(declared in <linaos/isdn/capiutil.h>)
 
 The _cmsg structure stores the contents of a CAPI 2.0 message in an easily
 accessible form. It contains members for all possible CAPI 2.0 parameters,
@@ -226,7 +226,7 @@ Only those parameters appearing in the message type currently being processed
 are actually used. Unused members should be set to zero.
 
 Members are named after the CAPI 2.0 standard names of the parameters they
-represent. See <linux/isdn/capiutil.h> for the exact spelling. Member data
+represent. See <linaos/isdn/capiutil.h> for the exact spelling. Member data
 types are:
 
 =========== =================================================================
@@ -282,7 +282,7 @@ for forwarding to the specified application
 ==============================
 
 Macros to extract/set element values from/in a CAPI message header
-(from <linux/isdn/capiutil.h>):
+(from <linaos/isdn/capiutil.h>):
 
 ======================  =============================   ====================
 Get Macro		Set Macro			Element (Type)
@@ -302,7 +302,7 @@ CAPIMSG_DATALEN(m)	CAPIMSG_SETDATALEN(m, len)	Data Length (u16)
 
 
 Library functions for working with _cmsg structures
-(from <linux/isdn/capiutil.h>):
+(from <linaos/isdn/capiutil.h>):
 
 ``char *capi_cmd2str(u8 Command, u8 Subcommand)``
 	Returns the CAPI 2.0 message name corresponding to the given command

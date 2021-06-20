@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/fs/befs/endian.h
+ * linaos/fs/befs/endian.h
  *
  * Copyright (C) 2001 Will Dyson <will_dyson@pobox.com>
  *

@@ -3,8 +3,8 @@
 //
 // Copyright (C) 2018 Sean Young <sean@mess.org>
 
-#include <linux/bpf.h>
-#include <linux/lirc.h>
+#include <linaos/bpf.h>
+#include <linaos/lirc.h>
 #include <bpf/bpf_helpers.h>
 
 SEC("lirc_mode2")

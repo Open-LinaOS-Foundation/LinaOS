@@ -8,7 +8,7 @@
 #ifndef RTL2830_H
 #define RTL2830_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 /**
  * struct rtl2830_platform_data - Platform data for the rtl2830 driver

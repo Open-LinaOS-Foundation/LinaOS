@@ -12,13 +12,13 @@
  * Copyright (C) 2012  Intel Corporation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/nfc.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/nfc.h>
+#include <linaos/gpio/consumer.h>
 #include <asm/unaligned.h>
 
 #include <net/nfc/nfc.h>

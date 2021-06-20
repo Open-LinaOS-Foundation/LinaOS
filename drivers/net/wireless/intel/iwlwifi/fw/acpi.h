@@ -6,7 +6,7 @@
 #ifndef __iwl_fw_acpi__
 #define __iwl_fw_acpi__
 
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 #include "fw/api/commands.h"
 #include "fw/api/power.h"
 #include "fw/api/phy.h"

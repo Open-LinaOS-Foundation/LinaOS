@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 //
 // Copyright (c) 2009 Simtec Electronics
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //	Ben Dooks <ben@simtec.co.uk>
 //
 // Audio setup for various Simtec S3C24XX implementations
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
 
 #include "regs-gpio.h"
 #include "gpio-samsung.h"
 #include "gpio-cfg.h"
 
-#include <linux/platform_data/asoc-s3c24xx_simtec.h>
+#include <linaos/platform_data/asoc-s3c24xx_simtec.h>
 #include "devs.h"
 
 #include "bast.h"

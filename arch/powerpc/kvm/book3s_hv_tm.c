@@ -5,7 +5,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>

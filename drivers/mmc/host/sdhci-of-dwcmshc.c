@@ -7,15 +7,15 @@
  * Author: Jisheng Zhang <jszhang@kernel.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/sizes.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/sizes.h>
 
 #include "sdhci-pltfm.h"
 

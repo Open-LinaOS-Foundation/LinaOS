@@ -9,20 +9,20 @@
  *
  * TODO: magnetometer, hardware FIFO
  */
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/of_irq.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/of_irq.h>
+#include <linaos/regulator/consumer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/trigger.h>
 
 #include "bmi160.h"
 

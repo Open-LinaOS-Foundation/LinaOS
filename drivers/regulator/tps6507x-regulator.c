@@ -15,18 +15,18 @@
  * General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/tps6507x.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/mfd/tps6507x.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/tps6507x.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/mfd/tps6507x.h>
+#include <linaos/regulator/of_regulator.h>
 
 /* DCDC's */
 #define TPS6507X_DCDC_1				0

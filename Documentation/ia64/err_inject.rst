@@ -3,7 +3,7 @@ IPF Machine Check (MC) error inject tool
 ========================================
 
 IPF Machine Check (MC) error inject tool is used to inject MC
-errors from Linux. The tool is a test bed for IPF MC work flow including
+errors from LinaOS. The tool is a test bed for IPF MC work flow including
 hardware correctable error handling, OS recoverable error handling, MC
 event logging, etc.
 

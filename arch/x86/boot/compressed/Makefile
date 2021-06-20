@@ -1,21 +1,21 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# linux/arch/x86/boot/compressed/Makefile
+# linaos/arch/x86/boot/compressed/Makefile
 #
-# create a compressed vmlinux image from the original vmlinux
+# create a compressed vmlinaos image from the original vmlinaos
 #
 # vmlinuz is:
 #	decompression code (*.o)
 #	asm globals (piggy.S), including:
-#		vmlinux.bin.(gz|bz2|lzma|...)
+#		vmlinaos.bin.(gz|bz2|lzma|...)
 #
-# vmlinux.bin is:
-#	vmlinux stripped of debugging and comments
-# vmlinux.bin.all is:
-#	vmlinux.bin + vmlinux.relocs
-# vmlinux.bin.(gz|bz2|lzma|...) is:
+# vmlinaos.bin is:
+#	vmlinaos stripped of debugging and comments
+# vmlinaos.bin.all is:
+#	vmlinaos.bin + vmlinaos.relocs
+# vmlinaos.bin.(gz|bz2|lzma|...) is:
 #	(see scripts/Makefile.lib size_append)
-#	compressed vmlinux.bin.all + u32 size of vmlinux.bin.all
+#	compressed vmlinaos.bin.all + u32 size of vmlinaos.bin.all
 
 # Sanitizer runtimes are unavailable and cannot be linked for early boot code.
 KASAN_SANITIZE			:= n
@@ -25,8 +25,8 @@ OBJECT_FILES_NON_STANDARD	:= y
 # Prevents link failures: __sanitizer_cov_trace_pc() is not linked in.
 KCOV_INSTRUMENT		:= n
 
-targets := vmlinux vmlinux.bin vmlinux.bin.gz vmlinux.bin.bz2 vmlinux.bin.lzma \
-	vmlinux.bin.xz vmlinux.bin.lzo vmlinux.bin.lz4 vmlinux.bin.zst
+targets := vmlinaos vmlinaos.bin vmlinaos.bin.gz vmlinaos.bin.bz2 vmlinaos.bin.lzma \
+	vmlinaos.bin.xz vmlinaos.bin.lzo vmlinaos.bin.lz4 vmlinaos.bin.zst
 
 KBUILD_CFLAGS := -m$(BITS) -O2
 KBUILD_CFLAGS += -fno-strict-aliasing -fPIE
@@ -46,7 +46,7 @@ KBUILD_CFLAGS += -fno-asynchronous-unwind-tables
 KBUILD_CFLAGS += -D__DISABLE_EXPORTS
 # Disable relocation relaxation in case the link is not PIE.
 KBUILD_CFLAGS += $(call as-option,-Wa$(comma)-mrelax-relocations=no)
-KBUILD_CFLAGS += -include $(srctree)/include/linux/hidden.h
+KBUILD_CFLAGS += -include $(srctree)/include/linaos/hidden.h
 KBUILD_CFLAGS += $(CLANG_FLAGS)
 
 # sev.c indirectly inludes inat-table.h which is generated during
@@ -62,11 +62,11 @@ KBUILD_LDFLAGS := -m elf_$(UTS_MACHINE)
 KBUILD_LDFLAGS += $(call ld-option,--no-ld-generated-unwind-info)
 # Compressed kernel should be built as PIE since it may be loaded at any
 # address by the bootloader.
-LDFLAGS_vmlinux := -pie $(call ld-option, --no-dynamic-linker)
+LDFLAGS_vmlinaos := -pie $(call ld-option, --no-dynamic-linker)
 ifdef CONFIG_LD_ORPHAN_WARN
-LDFLAGS_vmlinux += --orphan-handling=warn
+LDFLAGS_vmlinaos += --orphan-handling=warn
 endif
-LDFLAGS_vmlinux += -T
+LDFLAGS_vmlinaos += -T
 
 hostprogs	:= mkpiggy
 HOST_EXTRACFLAGS += -I$(srctree)/tools/include
@@ -78,61 +78,61 @@ quiet_cmd_voffset = VOFFSET $@
 
 targets += ../voffset.h
 
-$(obj)/../voffset.h: vmlinux FORCE
+$(obj)/../voffset.h: vmlinaos FORCE
 	$(call if_changed,voffset)
 
 $(obj)/misc.o: $(obj)/../voffset.h
 
-vmlinux-objs-y := $(obj)/vmlinux.lds $(obj)/kernel_info.o $(obj)/head_$(BITS).o \
+vmlinaos-objs-y := $(obj)/vmlinaos.lds $(obj)/kernel_info.o $(obj)/head_$(BITS).o \
 	$(obj)/misc.o $(obj)/string.o $(obj)/cmdline.o $(obj)/error.o \
 	$(obj)/piggy.o $(obj)/cpuflags.o
 
-vmlinux-objs-$(CONFIG_EARLY_PRINTK) += $(obj)/early_serial_console.o
-vmlinux-objs-$(CONFIG_RANDOMIZE_BASE) += $(obj)/kaslr.o
+vmlinaos-objs-$(CONFIG_EARLY_PRINTK) += $(obj)/early_serial_console.o
+vmlinaos-objs-$(CONFIG_RANDOMIZE_BASE) += $(obj)/kaslr.o
 ifdef CONFIG_X86_64
-	vmlinux-objs-y += $(obj)/ident_map_64.o
-	vmlinux-objs-y += $(obj)/idt_64.o $(obj)/idt_handlers_64.o
-	vmlinux-objs-y += $(obj)/mem_encrypt.o
-	vmlinux-objs-y += $(obj)/pgtable_64.o
-	vmlinux-objs-$(CONFIG_AMD_MEM_ENCRYPT) += $(obj)/sev.o
+	vmlinaos-objs-y += $(obj)/ident_map_64.o
+	vmlinaos-objs-y += $(obj)/idt_64.o $(obj)/idt_handlers_64.o
+	vmlinaos-objs-y += $(obj)/mem_encrypt.o
+	vmlinaos-objs-y += $(obj)/pgtable_64.o
+	vmlinaos-objs-$(CONFIG_AMD_MEM_ENCRYPT) += $(obj)/sev.o
 endif
 
-vmlinux-objs-$(CONFIG_ACPI) += $(obj)/acpi.o
+vmlinaos-objs-$(CONFIG_ACPI) += $(obj)/acpi.o
 
-vmlinux-objs-$(CONFIG_EFI_MIXED) += $(obj)/efi_thunk_$(BITS).o
+vmlinaos-objs-$(CONFIG_EFI_MIXED) += $(obj)/efi_thunk_$(BITS).o
 efi-obj-$(CONFIG_EFI_STUB) = $(objtree)/drivers/firmware/efi/libstub/lib.a
 
-$(obj)/vmlinux: $(vmlinux-objs-y) $(efi-obj-y) FORCE
+$(obj)/vmlinaos: $(vmlinaos-objs-y) $(efi-obj-y) FORCE
 	$(call if_changed,ld)
 
-OBJCOPYFLAGS_vmlinux.bin :=  -R .comment -S
-$(obj)/vmlinux.bin: vmlinux FORCE
+OBJCOPYFLAGS_vmlinaos.bin :=  -R .comment -S
+$(obj)/vmlinaos.bin: vmlinaos FORCE
 	$(call if_changed,objcopy)
 
-targets += $(patsubst $(obj)/%,%,$(vmlinux-objs-y)) vmlinux.bin.all vmlinux.relocs
+targets += $(patsubst $(obj)/%,%,$(vmlinaos-objs-y)) vmlinaos.bin.all vmlinaos.relocs
 
 CMD_RELOCS = arch/x86/tools/relocs
 quiet_cmd_relocs = RELOCS  $@
       cmd_relocs = $(CMD_RELOCS) $< > $@;$(CMD_RELOCS) --abs-relocs $<
-$(obj)/vmlinux.relocs: vmlinux FORCE
+$(obj)/vmlinaos.relocs: vmlinaos FORCE
 	$(call if_changed,relocs)
 
-vmlinux.bin.all-y := $(obj)/vmlinux.bin
-vmlinux.bin.all-$(CONFIG_X86_NEED_RELOCS) += $(obj)/vmlinux.relocs
+vmlinaos.bin.all-y := $(obj)/vmlinaos.bin
+vmlinaos.bin.all-$(CONFIG_X86_NEED_RELOCS) += $(obj)/vmlinaos.relocs
 
-$(obj)/vmlinux.bin.gz: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinaos.bin.gz: $(vmlinaos.bin.all-y) FORCE
 	$(call if_changed,gzip)
-$(obj)/vmlinux.bin.bz2: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinaos.bin.bz2: $(vmlinaos.bin.all-y) FORCE
 	$(call if_changed,bzip2)
-$(obj)/vmlinux.bin.lzma: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinaos.bin.lzma: $(vmlinaos.bin.all-y) FORCE
 	$(call if_changed,lzma)
-$(obj)/vmlinux.bin.xz: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinaos.bin.xz: $(vmlinaos.bin.all-y) FORCE
 	$(call if_changed,xzkern)
-$(obj)/vmlinux.bin.lzo: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinaos.bin.lzo: $(vmlinaos.bin.all-y) FORCE
 	$(call if_changed,lzo)
-$(obj)/vmlinux.bin.lz4: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinaos.bin.lz4: $(vmlinaos.bin.all-y) FORCE
 	$(call if_changed,lz4)
-$(obj)/vmlinux.bin.zst: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinaos.bin.zst: $(vmlinaos.bin.all-y) FORCE
 	$(call if_changed,zstd22)
 
 suffix-$(CONFIG_KERNEL_GZIP)	:= gz
@@ -147,5 +147,5 @@ quiet_cmd_mkpiggy = MKPIGGY $@
       cmd_mkpiggy = $(obj)/mkpiggy $< > $@
 
 targets += piggy.S
-$(obj)/piggy.S: $(obj)/vmlinux.bin.$(suffix-y) $(obj)/mkpiggy FORCE
+$(obj)/piggy.S: $(obj)/vmlinaos.bin.$(suffix-y) $(obj)/mkpiggy FORCE
 	$(call if_changed,mkpiggy)

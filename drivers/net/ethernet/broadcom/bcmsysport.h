@@ -8,10 +8,10 @@
 #ifndef __BCM_SYSPORT_H
 #define __BCM_SYSPORT_H
 
-#include <linux/bitmap.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/dim.h>
+#include <linaos/bitmap.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_vlan.h>
+#include <linaos/dim.h>
 
 #include "unimac.h"
 

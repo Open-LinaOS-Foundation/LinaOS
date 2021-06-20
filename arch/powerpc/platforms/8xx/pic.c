@@ -1,9 +1,9 @@
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/irq.h>
-#include <linux/dma-mapping.h>
+#include <linaos/kernel.h>
+#include <linaos/stddef.h>
+#include <linaos/sched.h>
+#include <linaos/signal.h>
+#include <linaos/irq.h>
+#include <linaos/dma-mapping.h>
 #include <asm/prom.h>
 #include <asm/irq.h>
 #include <asm/io.h>

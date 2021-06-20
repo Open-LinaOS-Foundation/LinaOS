@@ -6,15 +6,15 @@
  *
  */
 
-#include <linux/litex.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/reboot.h>
+#include <linaos/litex.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/printk.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/reboot.h>
 
 /* reset register located at the base address */
 #define RESET_REG_OFF           0x00

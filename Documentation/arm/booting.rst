@@ -1,5 +1,5 @@
 =================
-Booting ARM Linux
+Booting ARM LinaOS
 =================
 
 Author:	Russell King
@@ -8,9 +8,9 @@ Date  : 18 May 2002
 
 The following documentation is relevant to 2.4.18-rmk6 and beyond.
 
-In order to boot ARM Linux, you require a boot loader, which is a small
+In order to boot ARM LinaOS, you require a boot loader, which is a small
 program that runs before the main kernel.  The boot loader is expected
-to initialise various devices, and eventually call the Linux kernel,
+to initialise various devices, and eventually call the LinaOS kernel,
 passing information to the kernel.
 
 Essentially, the boot loader should provide (as a minimum) the
@@ -72,7 +72,7 @@ The boot loader should detect the machine type its running on by some
 method.  Whether this is a hard coded value or some algorithm that
 looks at the connected hardware is beyond the scope of this document.
 The boot loader must ultimately be able to provide a MACH_TYPE_xxx
-value to the kernel. (see linux/arch/arm/tools/mach-types).  This
+value to the kernel. (see linaos/arch/arm/tools/mach-types).  This
 should be passed to the kernel in register r1.
 
 For DT-only platforms, the machine type will be determined by device

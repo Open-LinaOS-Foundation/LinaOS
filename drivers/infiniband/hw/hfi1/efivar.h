@@ -47,7 +47,7 @@
 #ifndef _HFI1_EFIVAR_H
 #define _HFI1_EFIVAR_H
 
-#include <linux/efi.h>
+#include <linaos/efi.h>
 
 #include "hfi.h"
 

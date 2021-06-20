@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2009-2012  Realtek Corporation.*/
 
-#include <linux/export.h>
+#include <linaos/export.h>
 #include "dm_common.h"
 #include "phy_common.h"
 #include "../pci.h"

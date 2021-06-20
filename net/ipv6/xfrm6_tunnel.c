@@ -2,21 +2,21 @@
 /*
  * Copyright (C)2003,2004 USAGI/WIDE Project
  *
- * Authors	Mitsuru KANDA  <mk@linux-ipv6.org>
- *		YOSHIFUJI Hideaki <yoshfuji@linux-ipv6.org>
+ * Authors	Mitsuru KANDA  <mk@linaos-ipv6.org>
+ *		YOSHIFUJI Hideaki <yoshfuji@linaos-ipv6.org>
  *
  * Based on net/ipv4/xfrm4_tunnel.c
  */
-#include <linux/module.h>
-#include <linux/xfrm.h>
-#include <linux/slab.h>
-#include <linux/rculist.h>
+#include <linaos/module.h>
+#include <linaos/xfrm.h>
+#include <linaos/slab.h>
+#include <linaos/rculist.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 #include <net/ipv6.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/mutex.h>
+#include <linaos/ipv6.h>
+#include <linaos/icmpv6.h>
+#include <linaos/mutex.h>
 #include <net/netns/generic.h>
 
 #define XFRM6_TUNNEL_SPI_BYADDR_HSIZE 256

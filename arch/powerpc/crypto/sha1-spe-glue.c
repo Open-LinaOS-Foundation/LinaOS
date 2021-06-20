@@ -8,14 +8,14 @@
  */
 
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
 #include <crypto/sha1.h>
 #include <asm/byteorder.h>
 #include <asm/switch_to.h>
-#include <linux/hardirq.h>
+#include <linaos/hardirq.h>
 
 /*
  * MAX_BYTES defines the number of bytes that are allowed to be processed

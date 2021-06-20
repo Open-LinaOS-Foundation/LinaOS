@@ -5,18 +5,18 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/param.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/thermal.h>
-#include <linux/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/param.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/cpu.h>
+#include <linaos/smp.h>
+#include <linaos/slab.h>
+#include <linaos/pm.h>
+#include <linaos/thermal.h>
+#include <linaos/debugfs.h>
 
 #include <asm/cpu_device_id.h>
 
@@ -537,5 +537,5 @@ static void __exit pkg_temp_thermal_exit(void)
 module_exit(pkg_temp_thermal_exit)
 
 MODULE_DESCRIPTION("X86 PKG TEMP Thermal Driver");
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>");
 MODULE_LICENSE("GPL v2");

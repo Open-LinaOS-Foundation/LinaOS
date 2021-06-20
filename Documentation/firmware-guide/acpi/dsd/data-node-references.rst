@@ -6,7 +6,7 @@ Referencing hierarchical data nodes
 ===================================
 
 :Copyright: |copy| 2018 Intel Corporation
-:Author: Sakari Ailus <sakari.ailus@linux.intel.com>
+:Author: Sakari Ailus <sakari.ailus@linaos.intel.com>
 
 ACPI in general allows referring to device objects in the tree only.
 Hierarchical data extension nodes may not be referred to directly, hence this

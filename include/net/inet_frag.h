@@ -2,8 +2,8 @@
 #ifndef __NET_FRAG_H__
 #define __NET_FRAG_H__
 
-#include <linux/rhashtable-types.h>
-#include <linux/completion.h>
+#include <linaos/rhashtable-types.h>
+#include <linaos/completion.h>
 
 /* Per netns frag queues directory */
 struct fqdir {

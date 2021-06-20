@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 #ifndef _UAPI_HISI_QM_H
 #define _UAPI_HISI_QM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * struct hisi_qp_ctx - User data for hisi qp.

@@ -6,7 +6,7 @@
 #ifndef __LINUX_LM8323_H
 #define __LINUX_LM8323_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Largest keycode that the chip can send, plus one,

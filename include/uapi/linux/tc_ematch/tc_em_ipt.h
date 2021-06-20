@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __LINUX_TC_EM_IPT_H
 #define __LINUX_TC_EM_IPT_H
 
-#include <linux/types.h>
-#include <linux/pkt_cls.h>
+#include <linaos/types.h>
+#include <linaos/pkt_cls.h>
 
 enum {
 	TCA_EM_IPT_UNSPEC,

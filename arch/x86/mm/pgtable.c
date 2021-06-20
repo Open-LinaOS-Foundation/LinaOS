@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/hugetlb.h>
+#include <linaos/mm.h>
+#include <linaos/gfp.h>
+#include <linaos/hugetlb.h>
 #include <asm/pgalloc.h>
 #include <asm/tlb.h>
 #include <asm/fixmap.h>
@@ -357,7 +357,7 @@ static void pgd_prepopulate_user_pmd(struct mm_struct *mm,
  */
 #ifdef CONFIG_X86_PAE
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #define PGD_SIZE	(PTRS_PER_PGD * sizeof(pgd_t))
 #define PGD_ALIGN	32

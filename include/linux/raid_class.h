@@ -4,7 +4,7 @@
  *
  * Copyright (c) 2005 - James Bottomley <James.Bottomley@steeleye.com>
  */
-#include <linux/transport_class.h>
+#include <linaos/transport_class.h>
 
 struct raid_template {
 	struct transport_container raid_attrs;

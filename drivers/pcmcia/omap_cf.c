@@ -5,20 +5,20 @@
  * Copyright (c) 2005 David Brownell
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
 
 #include <pcmcia/ss.h>
 
 #include <mach/hardware.h>
 #include <asm/io.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #include <mach/mux.h>
 #include <mach/tc.h>

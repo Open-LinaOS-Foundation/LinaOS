@@ -4,13 +4,13 @@
  *  Copyright (C) 2010 John Crispin <john@phrozen.org>
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/mm.h>
 #include <asm/addrspace.h>
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 
 #include <lantiq_soc.h>
 

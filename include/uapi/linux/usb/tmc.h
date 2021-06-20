@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2007 Stefan Kopp, Gechingen, Germany
  * Copyright (C) 2008 Novell, Inc.
@@ -17,7 +17,7 @@
 #ifndef __LINUX_USB_TMC_H
 #define __LINUX_USB_TMC_H
 
-#include <linux/types.h>   /* __u8 etc */
+#include <linaos/types.h>   /* __u8 etc */
 
 /* USB TMC status values */
 #define USBTMC_STATUS_SUCCESS				0x01

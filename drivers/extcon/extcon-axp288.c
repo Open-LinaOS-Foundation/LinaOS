@@ -7,20 +7,20 @@
  * Author: Ramakrishna Pallala <ramakrishna.pallala@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/notifier.h>
-#include <linux/extcon-provider.h>
-#include <linux/regmap.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/usb/role.h>
-#include <linux/workqueue.h>
+#include <linaos/acpi.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/notifier.h>
+#include <linaos/extcon-provider.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/axp20x.h>
+#include <linaos/usb/role.h>
+#include <linaos/workqueue.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>

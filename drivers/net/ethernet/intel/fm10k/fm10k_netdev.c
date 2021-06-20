@@ -2,9 +2,9 @@
 /* Copyright(c) 2013 - 2019 Intel Corporation. */
 
 #include "fm10k.h"
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 #include <net/udp_tunnel.h>
-#include <linux/if_macvlan.h>
+#include <linaos/if_macvlan.h>
 
 /**
  * fm10k_setup_tx_resources - allocate Tx resources (Descriptors)

@@ -3,18 +3,18 @@
 // Copyright (c) 2004 Nex Vision
 //   Guillaume GOURAT <guillaume.gourat@nexvision.fr>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
 
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>

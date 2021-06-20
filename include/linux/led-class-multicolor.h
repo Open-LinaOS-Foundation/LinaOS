@@ -6,7 +6,7 @@
 #ifndef _LINUX_MULTICOLOR_LEDS_H_INCLUDED
 #define _LINUX_MULTICOLOR_LEDS_H_INCLUDED
 
-#include <linux/leds.h>
+#include <linaos/leds.h>
 #include <dt-bindings/leds/common.h>
 
 struct mc_subled {

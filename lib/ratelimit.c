@@ -8,9 +8,9 @@
  * parameter. Now every user can use their own standalone ratelimit_state.
  */
 
-#include <linux/ratelimit.h>
-#include <linux/jiffies.h>
-#include <linux/export.h>
+#include <linaos/ratelimit.h>
+#include <linaos/jiffies.h>
+#include <linaos/export.h>
 
 /*
  * __ratelimit - rate limiting

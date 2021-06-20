@@ -3,7 +3,7 @@
  * Copyright (C) 2020 SiFive
  */
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 /* The bit field of immediate value in I-type instruction */
 #define I_IMM_SIGN_OPOFF	31

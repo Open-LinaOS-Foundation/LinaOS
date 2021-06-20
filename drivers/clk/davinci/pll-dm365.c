@@ -5,12 +5,12 @@
  * Copyright (C) 2018 David Lechner <david@lechnology.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/clkdev.h>
-#include <linux/clk/davinci.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk/davinci.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 
 #include "pll.h"
 

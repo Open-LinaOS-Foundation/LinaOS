@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (C) 2009. SUSE Linux Products GmbH. All rights reserved.
+ * Copyright (C) 2009. SUSE LinaOS Products GmbH. All rights reserved.
  *
  * Authors:
  *    Alexander Graf <agraf@suse.de>
@@ -16,15 +16,15 @@
  * by Hollis Blanchard <hollisb@us.ibm.com>.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linaos/kvm_host.h>
+#include <linaos/export.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
 
 #include <asm/reg.h>
 #include <asm/cputable.h>
 #include <asm/cacheflush.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>
@@ -32,12 +32,12 @@
 #include <asm/switch_to.h>
 #include <asm/firmware.h>
 #include <asm/setup.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/miscdevice.h>
+#include <linaos/gfp.h>
+#include <linaos/sched.h>
+#include <linaos/vmalloc.h>
+#include <linaos/highmem.h>
+#include <linaos/module.h>
+#include <linaos/miscdevice.h>
 #include <asm/asm-prototypes.h>
 #include <asm/tm.h>
 
@@ -627,8 +627,8 @@ static void kvmppc_set_pvr_pr(struct kvm_vcpu *vcpu, u32 pvr)
 	}
 }
 
-/* Book3s_32 CPUs always have 32 bytes cache line size, which Linux assumes. To
- * make Book3s_32 Linux work on Book3s_64, we have to make sure we trap dcbz to
+/* Book3s_32 CPUs always have 32 bytes cache line size, which LinaOS assumes. To
+ * make Book3s_32 LinaOS work on Book3s_64, we have to make sure we trap dcbz to
  * emulate 32 bytes dcbz length.
  *
  * The Book3s_64 inventors also realized this case and implemented a special bit
@@ -1009,7 +1009,7 @@ static int kvmppc_handle_fac(struct kvm_vcpu *vcpu, ulong fac)
 
 	switch (fac) {
 	case FSCR_TAR_LG:
-		/* TAR switching isn't lazy in Linux yet */
+		/* TAR switching isn't lazy in LinaOS yet */
 		current->thread.tar = mfspr(SPRN_TAR);
 		mtspr(SPRN_TAR, vcpu->arch.tar);
 		vcpu->arch.shadow_fscr |= FSCR_TAR;

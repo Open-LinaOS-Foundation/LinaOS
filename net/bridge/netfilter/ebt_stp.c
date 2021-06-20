@@ -8,11 +8,11 @@
  *
  *  July, 2003
  */
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_stp.h>
+#include <linaos/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter_bridge/ebtables.h>
+#include <linaos/netfilter_bridge/ebt_stp.h>
 
 #define BPDU_TYPE_CONFIG 0
 

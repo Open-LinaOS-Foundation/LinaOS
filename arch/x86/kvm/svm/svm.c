@@ -1,6 +1,6 @@
 #define pr_fmt(fmt) "SVM: " fmt
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 #include "irq.h"
 #include "mmu.h"
@@ -9,22 +9,22 @@
 #include "cpuid.h"
 #include "pmu.h"
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/amd-iommu.h>
-#include <linux/sched.h>
-#include <linux/trace_events.h>
-#include <linux/slab.h>
-#include <linux/hashtable.h>
-#include <linux/objtool.h>
-#include <linux/psp-sev.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/rwsem.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/kernel.h>
+#include <linaos/vmalloc.h>
+#include <linaos/highmem.h>
+#include <linaos/amd-iommu.h>
+#include <linaos/sched.h>
+#include <linaos/trace_events.h>
+#include <linaos/slab.h>
+#include <linaos/hashtable.h>
+#include <linaos/objtool.h>
+#include <linaos/psp-sev.h>
+#include <linaos/file.h>
+#include <linaos/pagemap.h>
+#include <linaos/swap.h>
+#include <linaos/rwsem.h>
 
 #include <asm/apic.h>
 #include <asm/perf_event.h>

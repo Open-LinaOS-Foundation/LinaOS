@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* include/linux/amba/pl080.h
+/* include/linaos/amba/pl080.h
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
- *      http://armlinux.simtec.co.uk/
+ *      http://armlinaos.simtec.co.uk/
  *      Ben Dooks <ben@simtec.co.uk>
  *
  * ARM PrimeCell PL080 DMA controller

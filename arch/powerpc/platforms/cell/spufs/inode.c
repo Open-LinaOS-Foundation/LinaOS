@@ -8,25 +8,25 @@
  * Author: Arnd Bergmann <arndb@de.ibm.com>
  */
 
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/fsnotify.h>
-#include <linux/backing-dev.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/pagemap.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/fs_context.h>
+#include <linaos/fs_parser.h>
+#include <linaos/fsnotify.h>
+#include <linaos/backing-dev.h>
+#include <linaos/init.h>
+#include <linaos/ioctl.h>
+#include <linaos/module.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/pagemap.h>
+#include <linaos/poll.h>
+#include <linaos/slab.h>
 
 #include <asm/prom.h>
 #include <asm/spu.h>
 #include <asm/spu_priv1.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "spufs.h"
 

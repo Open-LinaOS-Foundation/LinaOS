@@ -14,16 +14,16 @@
  * Steve Whitehouse - Memory buffer settings, like the tcp ones
  *
  */
-#include <linux/mm.h>
-#include <linux/sysctl.h>
-#include <linux/fs.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
+#include <linaos/mm.h>
+#include <linaos/sysctl.h>
+#include <linaos/fs.h>
+#include <linaos/netdevice.h>
+#include <linaos/string.h>
 #include <net/neighbour.h>
 #include <net/dst.h>
 #include <net/flow.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <net/dn.h>
 #include <net/dn_dev.h>

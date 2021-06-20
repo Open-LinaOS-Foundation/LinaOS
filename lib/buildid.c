@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/buildid.h>
-#include <linux/elf.h>
-#include <linux/pagemap.h>
+#include <linaos/buildid.h>
+#include <linaos/elf.h>
+#include <linaos/pagemap.h>
 
 #define BUILD_ID 3
 /*

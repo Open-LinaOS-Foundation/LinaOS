@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux ppc-specific parts of the memory manager.
+# Makefile for the linaos ppc-specific parts of the memory manager.
 #
 
 ccflags-$(CONFIG_PPC64)	:= $(NO_MINIMAL_TOC)

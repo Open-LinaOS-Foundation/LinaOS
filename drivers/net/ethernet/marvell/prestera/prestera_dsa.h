@@ -4,7 +4,7 @@
 #ifndef __PRESTERA_DSA_H_
 #define __PRESTERA_DSA_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define PRESTERA_DSA_HLEN	16
 

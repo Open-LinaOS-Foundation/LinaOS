@@ -7,13 +7,13 @@
  * Gregory Clement <gregory.clement@free-electrons.com>
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
 
 #define RTC_STATUS	    0x0
 #define RTC_STATUS_ALARM1	    BIT(0)

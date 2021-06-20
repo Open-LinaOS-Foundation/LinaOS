@@ -8,8 +8,8 @@
 #ifndef _LINUX_POWERPC_PERF_ISA207_COMMON_H_
 #define _LINUX_POWERPC_PERF_ISA207_COMMON_H_
 
-#include <linux/kernel.h>
-#include <linux/perf_event.h>
+#include <linaos/kernel.h>
+#include <linaos/perf_event.h>
 #include <asm/firmware.h>
 #include <asm/cputable.h>
 
@@ -47,7 +47,7 @@
 #define EVENT_IS_MARKED		(EVENT_MARKED_MASK << EVENT_MARKED_SHIFT)
 #define EVENT_PSEL_MASK		0xff	/* PMCxSEL value */
 
-/* Bits defined by Linux */
+/* Bits defined by LinaOS */
 #define EVENT_LINUX_MASK	\
 	((EVENT_EBB_MASK  << EVENT_EBB_SHIFT)			|	\
 	 (EVENT_BHRB_MASK << EVENT_BHRB_SHIFT)			|	\

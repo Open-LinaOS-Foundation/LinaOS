@@ -10,9 +10,9 @@
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/io.h>
-#include <linux/amba/sp810.h>
-#include <linux/reboot.h>
+#include <linaos/io.h>
+#include <linaos/amba/sp810.h>
+#include <linaos/reboot.h>
 #include <asm/system_misc.h>
 #include <mach/spear.h>
 #include "generic.h"

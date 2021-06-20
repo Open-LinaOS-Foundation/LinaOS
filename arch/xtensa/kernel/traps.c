@@ -23,23 +23,23 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/stringify.h>
-#include <linux/kallsyms.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/ratelimit.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/stringify.h>
+#include <linaos/kallsyms.h>
+#include <linaos/delay.h>
+#include <linaos/hardirq.h>
+#include <linaos/ratelimit.h>
+#include <linaos/pgtable.h>
 
 #include <asm/stacktrace.h>
 #include <asm/ptrace.h>
 #include <asm/timex.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/processor.h>
 #include <asm/traps.h>
 #include <asm/hw_breakpoint.h>

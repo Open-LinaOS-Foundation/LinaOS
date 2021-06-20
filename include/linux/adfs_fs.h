@@ -2,7 +2,7 @@
 #ifndef _ADFS_FS_H
 #define _ADFS_FS_H
 
-#include <uapi/linux/adfs_fs.h>
+#include <uapi/linaos/adfs_fs.h>
 
 /*
  * Calculate the boot block checksum on an ADFS drive.  Note that this will

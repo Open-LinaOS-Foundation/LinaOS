@@ -8,11 +8,11 @@
 #ifndef _VMCI_CONTEXT_H_
 #define _VMCI_CONTEXT_H_
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/atomic.h>
-#include <linux/kref.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linaos/vmw_vmci_defs.h>
+#include <linaos/atomic.h>
+#include <linaos/kref.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
 
 #include "vmci_handle_array.h"
 #include "vmci_datagram.h"

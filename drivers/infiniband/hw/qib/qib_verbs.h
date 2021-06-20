@@ -35,14 +35,14 @@
 #ifndef QIB_VERBS_H
 #define QIB_VERBS_H
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/kref.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
-#include <linux/completion.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/kref.h>
+#include <linaos/workqueue.h>
+#include <linaos/kthread.h>
+#include <linaos/completion.h>
 #include <rdma/ib_pack.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_hdrs.h>

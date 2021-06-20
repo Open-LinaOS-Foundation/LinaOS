@@ -10,13 +10,13 @@
  * License terms:
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_data/asoc-ux500-msp.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/platform_data/asoc-ux500-msp.h>
 
 #include <sound/soc.h>
 

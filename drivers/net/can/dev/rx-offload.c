@@ -5,8 +5,8 @@
  *                         Marc Kleine-Budde <kernel@pengutronix.de>
  */
 
-#include <linux/can/dev.h>
-#include <linux/can/rx-offload.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/rx-offload.h>
 
 struct can_rx_offload_cb {
 	u32 timestamp;

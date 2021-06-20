@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/kernel/head-common.S
+ *  linaos/arch/arm/kernel/head-common.S
  *
  *  Copyright (C) 1994-2002 Russell King
  *  Copyright (c) 2003 ARM Limited

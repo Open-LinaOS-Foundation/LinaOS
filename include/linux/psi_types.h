@@ -1,11 +1,11 @@
 #ifndef _LINUX_PSI_TYPES_H
 #define _LINUX_PSI_TYPES_H
 
-#include <linux/kthread.h>
-#include <linux/seqlock.h>
-#include <linux/types.h>
-#include <linux/kref.h>
-#include <linux/wait.h>
+#include <linaos/kthread.h>
+#include <linaos/seqlock.h>
+#include <linaos/types.h>
+#include <linaos/kref.h>
+#include <linaos/wait.h>
 
 #ifdef CONFIG_PSI
 

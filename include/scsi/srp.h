@@ -41,7 +41,7 @@
  * draft Revision 16a of the SRP standard.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <scsi/scsi.h>
 
 enum {

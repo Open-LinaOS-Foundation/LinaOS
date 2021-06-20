@@ -3,18 +3,18 @@
  * Copyright 2019 NXP.
  */
 
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linaos/err.h>
+#include <linaos/device.h>
+#include <linaos/firmware/imx/sci.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
 
 #define DEBOUNCE_TIME				30
 #define REPEAT_INTERVAL				60
@@ -122,9 +122,9 @@ static int imx_sc_key_probe(struct platform_device *pdev)
 	if (error)
 		return error;
 
-	if (device_property_read_u32(&pdev->dev, "linux,keycodes",
+	if (device_property_read_u32(&pdev->dev, "linaos,keycodes",
 				     &priv->keycode)) {
-		dev_err(&pdev->dev, "missing linux,keycodes property\n");
+		dev_err(&pdev->dev, "missing linaos,keycodes property\n");
 		return -EINVAL;
 	}
 

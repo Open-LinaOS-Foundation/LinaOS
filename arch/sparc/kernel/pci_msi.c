@@ -3,10 +3,10 @@
  *
  * Copyright (C) 2007 David S. Miller (davem@davemloft.net)
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
 
 #include "pci_impl.h"
 

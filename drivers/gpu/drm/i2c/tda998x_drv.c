@@ -4,12 +4,12 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/component.h>
-#include <linux/gpio/consumer.h>
-#include <linux/hdmi.h>
-#include <linux/module.h>
-#include <linux/platform_data/tda9950.h>
-#include <linux/irq.h>
+#include <linaos/component.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/hdmi.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/tda9950.h>
+#include <linaos/irq.h>
 #include <sound/asoundef.h>
 #include <sound/hdmi-codec.h>
 

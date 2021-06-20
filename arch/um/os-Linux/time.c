@@ -3,7 +3,7 @@
  * Copyright (C) 2015 Anton Ivanov (aivanov@{brocade.com,kot-begemot.co.uk})
  * Copyright (C) 2015 Thomas Meyer (thomas@m3y3r.de)
  * Copyright (C) 2012-2014 Cisco Systems
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike{addtoit,linaos.intel}.com)
  */
 
 #include <stddef.h>

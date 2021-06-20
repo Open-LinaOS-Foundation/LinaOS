@@ -9,10 +9,10 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
 #include "pinctrl-spear.h"
 
 #define DRIVER_NAME "spear1310-pinmux"

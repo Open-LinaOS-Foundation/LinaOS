@@ -29,7 +29,7 @@
 #define CORE_DUMP_USE_REGSET
 
 /* Least-significant four bits of ELF header's e_flags are OS-specific.  The bits are
-   interpreted as follows by Linux: */
+   interpreted as follows by LinaOS: */
 #define EF_IA_64_LINUX_EXECUTABLE_STACK	0x1	/* is stack (& heap) executable by default? */
 
 #define ELF_EXEC_PAGESIZE	PAGE_SIZE

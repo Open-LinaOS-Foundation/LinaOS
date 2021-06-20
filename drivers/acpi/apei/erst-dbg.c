@@ -11,11 +11,11 @@
  *   Author: Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
 #include <acpi/apei.h>
-#include <linux/miscdevice.h>
+#include <linaos/miscdevice.h>
 
 #include "apei-internal.h"
 

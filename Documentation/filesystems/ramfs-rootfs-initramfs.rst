@@ -12,11 +12,11 @@ Rob Landley <rob@landley.net>
 What is ramfs?
 --------------
 
-Ramfs is a very simple filesystem that exports Linux's disk caching
+Ramfs is a very simple filesystem that exports LinaOS's disk caching
 mechanisms (the page cache and dentry cache) as a dynamically resizable
 RAM-based filesystem.
 
-Normally all files are cached in memory by Linux.  Pages of data read from
+Normally all files are cached in memory by LinaOS.  Pages of data read from
 backing store (usually the block device the filesystem is mounted on) are kept
 around in case it's needed again, but marked as clean (freeable) in case the
 Virtual Memory system needs the memory for something else.  Similarly, data
@@ -31,7 +31,7 @@ This means the pages are never marked clean, so they can't be freed by the
 VM when it's looking to recycle memory.
 
 The amount of code required to implement ramfs is tiny, because all the
-work is done by the existing Linux caching infrastructure.  Basically,
+work is done by the existing LinaOS caching infrastructure.  Basically,
 you're mounting the disk cache as a filesystem.  Because of this, ramfs is not
 an optional component removable via menuconfig, since there would be negligible
 space savings.
@@ -92,7 +92,7 @@ line.
 What is initramfs?
 ------------------
 
-All 2.6 Linux kernels contain a gzipped "cpio" format archive, which is
+All 2.6 LinaOS kernels contain a gzipped "cpio" format archive, which is
 extracted into rootfs when the kernel boots up.  After extracting, the kernel
 checks to see if rootfs contains a file "init", and if so it executes it as PID
 1.  If found, this init process is responsible for bringing the system the
@@ -105,7 +105,7 @@ out of that.
 All this differs from the old initrd in several ways:
 
   - The old initrd was always a separate file, while the initramfs archive is
-    linked into the linux kernel image.  (The directory ``linux-*/usr`` is
+    linked into the linaos kernel image.  (The directory ``linaos-*/usr`` is
     devoted to generating this archive during the build.)
 
   - The old initrd file was a gzipped filesystem image (in some file format,
@@ -164,7 +164,7 @@ documenting the above file format.
 One advantage of the configuration file is that root access is not required to
 set permissions or create device nodes in the new archive.  (Note that those
 two example "file" entries expect to find files named "init.sh" and "busybox" in
-a directory called "initramfs", under the linux-2.6.* directory.  See
+a directory called "initramfs", under the linaos-2.6.* directory.  See
 Documentation/driver-api/early-userspace/early_userspace_support.rst for more details.)
 
 The kernel does not depend on external cpio tools.  If you specify a
@@ -215,7 +215,7 @@ use in place of the above config file::
    of filenames is with the find command; you should give find the -depth
    option to minimize problems with permissions on directories that are
    unwritable or not searchable."  Don't do this when creating
-   initramfs.cpio.gz images, it won't work.  The Linux kernel cpio extractor
+   initramfs.cpio.gz images, it won't work.  The LinaOS kernel cpio extractor
    won't create files in a directory that doesn't exist, so the directory
    entries must go before the files that go in those directories.
    The above script gets them in the right order.
@@ -231,7 +231,7 @@ archive into rootfs before trying to run /init.
 This has the memory efficiency advantages of initramfs (no ramdisk block
 device) but the separate packaging of initrd (which is nice if you have
 non-GPL code you'd like to run from initramfs, without conflating it with
-the GPL licensed Linux kernel binary).
+the GPL licensed LinaOS kernel binary).
 
 It can also be used to supplement the kernel's built-in initramfs image.  The
 files in the external archive will overwrite any conflicting files in
@@ -241,16 +241,16 @@ a single kernel image with task-specific initramfs images, without recompiling.
 Contents of initramfs:
 ----------------------
 
-An initramfs archive is a complete self-contained root filesystem for Linux.
+An initramfs archive is a complete self-contained root filesystem for LinaOS.
 If you don't already understand what shared libraries, devices, and paths
 you need to get a minimal root filesystem up and running, here are some
 references:
 
 - https://www.tldp.org/HOWTO/Bootdisk-HOWTO/
 - https://www.tldp.org/HOWTO/From-PowerUp-To-Bash-Prompt-HOWTO.html
-- http://www.linuxfromscratch.org/lfs/view/stable/
+- http://www.linaosfromscratch.org/lfs/view/stable/
 
-The "klibc" package (https://www.kernel.org/pub/linux/libs/klibc) is
+The "klibc" package (https://www.kernel.org/pub/linaos/libs/klibc) is
 designed to be a tiny C library to statically link early userspace
 code against, along with some related utilities.  It is BSD licensed.
 
@@ -265,7 +265,7 @@ name lookups, even when otherwise statically linked.)
 
 A good first step is to get initramfs to run a statically linked "hello world"
 program as init, and test it under an emulator like qemu (www.qemu.org) or
-User Mode Linux, like so::
+User Mode LinaOS, like so::
 
   cat > hello.c << EOF
   #include <stdio.h>
@@ -291,20 +291,20 @@ Why cpio rather than tar?
 
 This decision was made back in December, 2001.  The discussion started here:
 
-  http://www.uwsg.iu.edu/hypermail/linux/kernel/0112.2/1538.html
+  http://www.uwsg.iu.edu/hypermail/linaos/kernel/0112.2/1538.html
 
 And spawned a second thread (specifically on tar vs cpio), starting here:
 
-  http://www.uwsg.iu.edu/hypermail/linux/kernel/0112.2/1587.html
+  http://www.uwsg.iu.edu/hypermail/linaos/kernel/0112.2/1587.html
 
 The quick and dirty summary version (which is no substitute for reading
 the above threads) is:
 
 1) cpio is a standard.  It's decades old (from the AT&T days), and already
-   widely used on Linux (inside RPM, Red Hat's device driver disks).  Here's
-   a Linux Journal article about it from 1996:
+   widely used on LinaOS (inside RPM, Red Hat's device driver disks).  Here's
+   a LinaOS Journal article about it from 1996:
 
-      http://www.linuxjournal.com/article/1213
+      http://www.linaosjournal.com/article/1213
 
    It's not as popular as tar because the traditional cpio command line tools
    require _truly_hideous_ command line arguments.  But that says nothing
@@ -321,7 +321,7 @@ the above threads) is:
    total of human-readable text.
 
 3) The GNU project standardizing on tar is approximately as relevant as
-   Windows standardizing on zip.  Linux is not part of either, and is free
+   Windows standardizing on zip.  LinaOS is not part of either, and is free
    to make its own technical decisions.
 
 4) Since this is a kernel internal format, it could easily have been
@@ -332,12 +332,12 @@ the above threads) is:
 5) Al Viro made the decision (quote: "tar is ugly as hell and not going to be
    supported on the kernel side"):
 
-      http://www.uwsg.iu.edu/hypermail/linux/kernel/0112.2/1540.html
+      http://www.uwsg.iu.edu/hypermail/linaos/kernel/0112.2/1540.html
 
    explained his reasoning:
 
-     - http://www.uwsg.iu.edu/hypermail/linux/kernel/0112.2/1550.html
-     - http://www.uwsg.iu.edu/hypermail/linux/kernel/0112.2/1638.html
+     - http://www.uwsg.iu.edu/hypermail/linaos/kernel/0112.2/1550.html
+     - http://www.uwsg.iu.edu/hypermail/linaos/kernel/0112.2/1638.html
 
    and, most importantly, designed and implemented the initramfs code.
 

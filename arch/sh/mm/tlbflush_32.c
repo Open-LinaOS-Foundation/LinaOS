@@ -8,7 +8,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <asm/mmu_context.h>
 #include <asm/tlbflush.h>
 

@@ -4,7 +4,7 @@
 // Copyright (C) 2013 Renesas Solutions Corp.
 // Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/soc.h>
 
 /*

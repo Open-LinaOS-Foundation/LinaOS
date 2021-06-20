@@ -1,7 +1,7 @@
-/* mga_warp.c -- Matrox G200/G400 WARP engine management -*- linux-c -*-
- * Created: Thu Jan 11 21:29:32 2001 by gareth@valinux.com
+/* mga_warp.c -- Matrox G200/G400 WARP engine management -*- linaos-c -*-
+ * Created: Thu Jan 11 21:29:32 2001 by gareth@valinaos.com
  *
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -24,13 +24,13 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Gareth Hughes <gareth@valinux.com>
+ *    Gareth Hughes <gareth@valinaos.com>
  */
 
-#include <linux/firmware.h>
-#include <linux/ihex.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/firmware.h>
+#include <linaos/ihex.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include "mga_drv.h"
 

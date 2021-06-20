@@ -7,20 +7,20 @@
  * Michel Pollet <michel.pollet@bp.renesas.com>, <buserror@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/math64.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_clock.h>
+#include <linaos/pm_domain.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 #include <dt-bindings/clock/r9a06g032-sysctrl.h>
 
 struct r9a06g032_gate {
@@ -523,7 +523,7 @@ r9a06g032_register_gate(struct r9a06g032_priv *clocks,
 
 	/*
 	 * important here, some clocks are already in use by the CM3, we
-	 * have to assume they are not Linux's to play with and try to disable
+	 * have to assume they are not LinaOS's to play with and try to disable
 	 * at the end of the boot!
 	 */
 	if (r9a06g032_clk_gate_is_enabled(&g->hw)) {
@@ -871,7 +871,7 @@ r9a06g032_register_dualgate(struct r9a06g032_priv *clocks,
 	g->hw.init = &init;
 	/*
 	 * important here, some clocks are already in use by the CM3, we
-	 * have to assume they are not Linux's to play with and try to disable
+	 * have to assume they are not LinaOS's to play with and try to disable
 	 * at the end of the boot!
 	 */
 	if (r9a06g032_clk_dualgate_is_enabled(&g->hw)) {

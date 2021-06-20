@@ -4,8 +4,8 @@
  * Copyright 2011 Linaro Ltd.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 #include <asm/assembler.h>
 
 diag_reg_offset:

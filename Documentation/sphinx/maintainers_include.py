@@ -10,10 +10,10 @@ u"""
     Implementation of the ``maintainers-include`` reST-directive.
 
     :copyright:  Copyright (C) 2019  Kees Cook <keescook@chromium.org>
-    :license:    GPL Version 2, June 1991 see linux/COPYING for details.
+    :license:    GPL Version 2, June 1991 see linaos/COPYING for details.
 
     The ``maintainers-include`` reST-directive performs extensive parsing
-    specific to the Linux kernel's standard "MAINTAINERS" file, in an
+    specific to the LinaOS kernel's standard "MAINTAINERS" file, in an
     effort to avoid needing to heavily mark up the original plain text.
 """
 

@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /*
  * Copyright (c) 2018, Mellanox Technologies inc.  All rights reserved.
  */
@@ -11,12 +11,12 @@
 #include <rdma/mlx5_user_ioctl_verbs.h>
 #include <rdma/ib_umem.h>
 #include <rdma/uverbs_std_types.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/fs.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/mlx5/fs.h>
 #include "mlx5_ib.h"
 #include "devx.h"
 #include "qp.h"
-#include <linux/xarray.h>
+#include <linaos/xarray.h>
 
 #define UVERBS_MODULE_NAME mlx5_ib
 #include <rdma/uverbs_named_ioctl.h>

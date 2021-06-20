@@ -3,12 +3,12 @@
  * Copyright 2020 NXP
  */
 
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
 
 #include <soc/imx/cpu.h>
 #include <soc/imx/revision.h>

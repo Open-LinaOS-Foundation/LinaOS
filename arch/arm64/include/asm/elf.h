@@ -135,11 +135,11 @@
 
 #ifndef __ASSEMBLY__
 
-#include <uapi/linux/elf.h>
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/types.h>
+#include <uapi/linaos/elf.h>
+#include <linaos/bug.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
 #include <asm/processor.h> /* for signal_minsigstksz, used by ARCH_DLINFO */
 
 typedef unsigned long elf_greg_t;
@@ -182,8 +182,8 @@ do {									\
 } while (0)
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES
-struct linux_binprm;
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+struct linaos_binprm;
+extern int arch_setup_additional_pages(struct linaos_binprm *bprm,
 				       int uses_interp);
 
 /* 1GB of VA */
@@ -242,7 +242,7 @@ do {									\
 #else
 #define COMPAT_ARCH_DLINFO
 #endif
-extern int aarch32_setup_additional_pages(struct linux_binprm *bprm,
+extern int aarch32_setup_additional_pages(struct linaos_binprm *bprm,
 					  int uses_interp);
 #define compat_arch_setup_additional_pages \
 					aarch32_setup_additional_pages

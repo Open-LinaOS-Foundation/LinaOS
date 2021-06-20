@@ -28,9 +28,9 @@
 #ifndef __GENALLOC_H__
 #define __GENALLOC_H__
 
-#include <linux/types.h>
-#include <linux/spinlock_types.h>
-#include <linux/atomic.h>
+#include <linaos/types.h>
+#include <linaos/spinlock_types.h>
+#include <linaos/atomic.h>
 
 struct device;
 struct device_node;

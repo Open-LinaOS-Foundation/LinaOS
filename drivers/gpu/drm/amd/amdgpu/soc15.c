@@ -20,10 +20,10 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/firmware.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include <drm/amdgpu_drm.h>
 
@@ -78,7 +78,7 @@
 #include "mxgpu_ai.h"
 #include "amdgpu_ras.h"
 #include "amdgpu_xgmi.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/linaos/kfd_ioctl.h>
 
 #define mmMP0_MISC_CGTT_CTRL0                                                                   0x01b9
 #define mmMP0_MISC_CGTT_CTRL0_BASE_IDX                                                          0

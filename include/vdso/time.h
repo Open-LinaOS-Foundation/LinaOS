@@ -2,7 +2,7 @@
 #ifndef __VDSO_TIME_H
 #define __VDSO_TIME_H
 
-#include <uapi/linux/types.h>
+#include <uapi/linaos/types.h>
 
 struct timens_offset {
 	s64	sec;

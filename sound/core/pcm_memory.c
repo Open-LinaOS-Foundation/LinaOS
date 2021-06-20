@@ -4,13 +4,13 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/io.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <linaos/io.h>
+#include <linaos/time.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/moduleparam.h>
+#include <linaos/vmalloc.h>
+#include <linaos/export.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/info.h>

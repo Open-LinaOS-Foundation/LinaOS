@@ -6,7 +6,7 @@
  * This file initializes secvar operations for PowerPC Secureboot
  */
 
-#include <linux/cache.h>
+#include <linaos/cache.h>
 #include <asm/secvar.h>
 
 const struct secvar_operations *secvar_ops __ro_after_init;

@@ -2,7 +2,7 @@
 #ifndef __ASM_GENERIC_MSI_H
 #define __ASM_GENERIC_MSI_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifdef CONFIG_GENERIC_MSI_IRQ_DOMAIN
 

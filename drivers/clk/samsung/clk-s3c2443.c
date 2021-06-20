@@ -5,12 +5,12 @@
  * Common Clock Framework support for S3C2443 and following SoCs.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk/samsung.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/reboot.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk/samsung.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/reboot.h>
 
 #include <dt-bindings/clock/s3c2443.h>
 

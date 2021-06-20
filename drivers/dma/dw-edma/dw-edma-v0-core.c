@@ -6,7 +6,7 @@
  * Author: Gustavo Pimentel <gustavo.pimentel@synopsys.com>
  */
 
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 
 #include "dw-edma-core.h"
 #include "dw-edma-v0-core.h"

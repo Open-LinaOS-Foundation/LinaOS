@@ -5,8 +5,8 @@
 
 #define pr_fmt(fmt) "drm_format: " fmt
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
 
 #include <drm/drm_fourcc.h>
 

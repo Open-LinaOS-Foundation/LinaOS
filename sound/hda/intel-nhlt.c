@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (c) 2015-2019 Intel Corporation
 
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 #include <sound/intel-nhlt.h>
 
 struct nhlt_acpi_table *intel_nhlt_init(struct device *dev)

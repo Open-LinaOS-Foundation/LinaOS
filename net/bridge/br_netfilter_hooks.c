@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Handle firewalling
- *	Linux ethernet bridge
+ *	LinaOS ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -10,25 +10,25 @@
  *	Lennert dedicates this file to Kerstin Wurdinger.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/ip.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp_defs.h>
-#include <linux/netfilter_bridge.h>
-#include <uapi/linux/netfilter_bridge.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_arp.h>
-#include <linux/in_route.h>
-#include <linux/rculist.h>
-#include <linux/inetdevice.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/ip.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/if_pppox.h>
+#include <linaos/ppp_defs.h>
+#include <linaos/netfilter_bridge.h>
+#include <uapi/linaos/netfilter_bridge.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/netfilter_arp.h>
+#include <linaos/in_route.h>
+#include <linaos/rculist.h>
+#include <linaos/inetdevice.h>
 
 #include <net/ip.h>
 #include <net/ipv6.h>
@@ -37,10 +37,10 @@
 #include <net/netfilter/br_netfilter.h>
 #include <net/netns/generic.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include "br_private.h"
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linaos/sysctl.h>
 #endif
 
 static unsigned int brnf_net_id __read_mostly;
@@ -1195,4 +1195,4 @@ module_exit(br_netfilter_fini);
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Lennert Buytenhek <buytenh@gnu.org>");
 MODULE_AUTHOR("Bart De Schuymer <bdschuym@pandora.be>");
-MODULE_DESCRIPTION("Linux ethernet netfilter firewall bridge");
+MODULE_DESCRIPTION("LinaOS ethernet netfilter firewall bridge");

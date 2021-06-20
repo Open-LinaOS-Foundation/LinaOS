@@ -4,10 +4,10 @@
 
 #include <drm/drm_util.h>
 
-#include <linux/hashtable.h>
-#include <linux/irq_work.h>
-#include <linux/random.h>
-#include <linux/seqlock.h>
+#include <linaos/hashtable.h>
+#include <linaos/irq_work.h>
+#include <linaos/random.h>
+#include <linaos/seqlock.h>
 
 #include "i915_pmu.h"
 #include "i915_reg.h"

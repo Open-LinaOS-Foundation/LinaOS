@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/drivers/video/w100fb.h
+ * linaos/drivers/video/w100fb.h
  *
  * Frame Buffer Device for ATI w100 (Wallaby)
  *

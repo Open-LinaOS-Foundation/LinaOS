@@ -10,23 +10,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/tracehook.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/personality.h>
-#include <linux/uaccess.h>
-#include <linux/user-return-notifier.h>
-#include <linux/uprobes.h>
-#include <linux/context_tracking.h>
-#include <linux/entry-common.h>
-#include <linux/syscalls.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/wait.h>
+#include <linaos/tracehook.h>
+#include <linaos/unistd.h>
+#include <linaos/stddef.h>
+#include <linaos/personality.h>
+#include <linaos/uaccess.h>
+#include <linaos/user-return-notifier.h>
+#include <linaos/uprobes.h>
+#include <linaos/context_tracking.h>
+#include <linaos/entry-common.h>
+#include <linaos/syscalls.h>
 
 #include <asm/processor.h>
 #include <asm/ucontext.h>
@@ -38,7 +38,7 @@
 #include <asm/vm86.h>
 
 #ifdef CONFIG_X86_64
-#include <linux/compat.h>
+#include <linaos/compat.h>
 #include <asm/proto.h>
 #include <asm/ia32_unistd.h>
 #endif /* CONFIG_X86_64 */

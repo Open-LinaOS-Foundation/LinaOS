@@ -47,7 +47,7 @@ should not change the relative position of each field within the struct.
 1) Common and basic accounting fields::
 
 	/* The version number of this struct. This field is always set to
-	 * TAKSTATS_VERSION, which is defined in <linux/taskstats.h>.
+	 * TAKSTATS_VERSION, which is defined in <linaos/taskstats.h>.
 	 * Each time the struct is changed, the value should be incremented.
 	 */
 	__u16	version;
@@ -55,7 +55,7 @@ should not change the relative position of each field within the struct.
 	/* The exit code of a task. */
 	__u32	ac_exitcode;		/* Exit status */
 
-	/* The accounting flags of a task as defined in <linux/acct.h>
+	/* The accounting flags of a task as defined in <linaos/acct.h>
 	 * Defined values are AFORK, ASU, ACOMPAT, ACORE, and AXSIG.
 	 */
 	__u8	ac_flag;		/* Record flags */

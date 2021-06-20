@@ -1,5 +1,5 @@
 /*
- *  linux/include/linux/sunrpc/gss_asn1.h
+ *  linaos/include/linaos/sunrpc/gss_asn1.h
  *
  *  minimal asn1 for generic encoding/decoding of gss tokens
  *
@@ -38,7 +38,7 @@
  */
 
 
-#include <linux/sunrpc/gss_api.h>
+#include <linaos/sunrpc/gss_api.h>
 
 #define SIZEOF_INT 4
 

@@ -1,5 +1,5 @@
 /*
- * linux/arch/mips/tx4938/common/irq.c
+ * linaos/arch/mips/tx4938/common/irq.c
  *
  * Common tx4938 irq handler
  * Copyright (C) 2000-2001 Toshiba Corporation
@@ -11,9 +11,9 @@
  *
  * Support for TX4938 in 2.6 - Manish Lachwani (mlachwani@mvista.com)
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
 #include <asm/irq_cpu.h>
 #include <asm/txx9/tx4938.h>
 

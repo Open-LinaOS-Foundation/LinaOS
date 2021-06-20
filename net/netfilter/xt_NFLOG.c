@@ -3,12 +3,12 @@
  * Copyright (c) 2006 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/skbuff.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_NFLOG.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter/xt_NFLOG.h>
 #include <net/netfilter/nf_log.h>
 
 MODULE_AUTHOR("Patrick McHardy <kaber@trash.net>");

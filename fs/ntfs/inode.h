@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * inode.h - Defines for inode structures NTFS Linux kernel driver. Part of
- *	     the Linux-NTFS project.
+ * inode.h - Defines for inode structures NTFS LinaOS kernel driver. Part of
+ *	     the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2007 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
@@ -10,13 +10,13 @@
 #ifndef _LINUX_NTFS_INODE_H
 #define _LINUX_NTFS_INODE_H
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
+#include <linaos/fs.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/mutex.h>
+#include <linaos/seq_file.h>
 
 #include "layout.h"
 #include "volume.h"

@@ -9,7 +9,7 @@
 #ifndef _ASM_TERMIOS_H
 #define _ASM_TERMIOS_H
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <uapi/asm/termios.h>
 
 /*
@@ -21,7 +21,7 @@
  */
 #define INIT_C_CC "\003\034\177\025\1\0\0\0\021\023\032\0\022\017\027\026\004\0"
 
-#include <linux/string.h>
+#include <linaos/string.h>
 
 /*
  * Translate a "termio" structure into a "termios". Ugh.

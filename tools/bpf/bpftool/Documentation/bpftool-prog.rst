@@ -67,7 +67,7 @@ DESCRIPTION
 		  Output will start with program ID followed by program type and
 		  zero or more named attributes (depending on kernel version).
 
-		  Since Linux 5.1 the kernel can collect statistics on BPF
+		  Since LinaOS 5.1 the kernel can collect statistics on BPF
 		  programs (such as the total time spent running the program,
 		  and the number of times it was run). If available, bpftool
 		  shows such statistics. However, the kernel does not collect
@@ -75,7 +75,7 @@ DESCRIPTION
 		  program run. Activation or deactivation of the feature is
 		  performed via the **kernel.bpf_stats_enabled** sysctl knob.
 
-		  Since Linux 5.8 bpftool is able to discover information about
+		  Since LinaOS 5.8 bpftool is able to discover information about
 		  processes that hold open file descriptors (FDs) against BPF
 		  programs. On such kernels bpftool will automatically emit this
 		  information as well.

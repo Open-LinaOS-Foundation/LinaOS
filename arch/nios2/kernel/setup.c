@@ -10,16 +10,16 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/console.h>
-#include <linux/memblock.h>
-#include <linux/initrd.h>
-#include <linux/of_fdt.h>
-#include <linux/screen_info.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task.h>
+#include <linaos/console.h>
+#include <linaos/memblock.h>
+#include <linaos/initrd.h>
+#include <linaos/of_fdt.h>
+#include <linaos/screen_info.h>
 
 #include <asm/mmu_context.h>
 #include <asm/sections.h>

@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * -- <linux/cdrom.h>
- * General header file for linux CD-ROM drivers 
+ * -- <linaos/cdrom.h>
+ * General header file for linaos CD-ROM drivers 
  * Copyright (C) 1992         David Giller, rafetmad@oxy.edu
  *               1994, 1995   Eberhard Mönkeberg, emoenke@gwdg.de
  *               1996         David van Leeuwen, david@tm.tno.nl
@@ -12,18 +12,18 @@
 #ifndef _UAPI_LINUX_CDROM_H
 #define _UAPI_LINUX_CDROM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 
 /*******************************************************
- * As of Linux 2.1.x, all Linux CD-ROM application programs will use this 
- * (and only this) include file.  It is my hope to provide Linux with
+ * As of LinaOS 2.1.x, all LinaOS CD-ROM application programs will use this 
+ * (and only this) include file.  It is my hope to provide LinaOS with
  * a uniform interface between software accessing CD-ROMs and the various 
  * device drivers that actually talk to the drives.  There may still be
  * 23 different kinds of strange CD-ROM drives, but at least there will 
- * now be one, and only one, Linux CD-ROM interface.
+ * now be one, and only one, LinaOS CD-ROM interface.
  *
- * Additionally, as of Linux 2.1.x, all Linux application programs 
+ * Additionally, as of LinaOS 2.1.x, all LinaOS application programs 
  * should use the O_NONBLOCK option when opening a CD-ROM device 
  * for subsequent ioctl commands.  This allows for neat system errors 
  * like "No medium found" or "Wrong medium type" upon attempting to 
@@ -35,7 +35,7 @@
  * It is worth the small change.
  *
  *  Patches for many common CD programs (provided by David A. van Leeuwen)
- *  can be found at:  ftp://ftp.gwdg.de/pub/linux/cdrom/drivers/cm206/
+ *  can be found at:  ftp://ftp.gwdg.de/pub/linaos/cdrom/drivers/cm206/
  * 
  *******************************************************/
 

@@ -19,7 +19,7 @@ KBUILD_DEFCONFIG := multi_defconfig
 ifdef cross_compiling
 	ifeq ($(CROSS_COMPILE),)
 		CROSS_COMPILE := $(call cc-cross-prefix, \
-			m68k-linux-gnu- m68k-linux- m68k-unknown-linux-gnu-)
+			m68k-linaos-gnu- m68k-linaos- m68k-unknown-linaos-gnu-)
 	endif
 endif
 
@@ -69,15 +69,15 @@ ifdef CONFIG_MMU
 # without -fno-strength-reduce the 53c7xx.c driver fails ;-(
 KBUILD_CFLAGS += -fno-strength-reduce -ffixed-a2
 else
-# we can use a m68k-linux-gcc toolchain with these in place
-KBUILD_CPPFLAGS += -DUTS_SYSNAME=\"uClinux\"
-KBUILD_CPPFLAGS += -D__uClinux__
+# we can use a m68k-linaos-gcc toolchain with these in place
+KBUILD_CPPFLAGS += -DUTS_SYSNAME=\"uClinaos\"
+KBUILD_CPPFLAGS += -D__uClinaos__
 endif
 
 KBUILD_LDFLAGS := -m m68kelf
 
 ifdef CONFIG_SUN3
-LDFLAGS_vmlinux = -N
+LDFLAGS_vmlinaos = -N
 endif
 
 CHECKFLAGS += -D__mc68000__
@@ -104,43 +104,43 @@ libs-y				+= arch/m68k/lib/
 
 all:	zImage
 
-lilo:	vmlinux
-	if [ -f $(INSTALL_PATH)/vmlinux ]; then mv -f $(INSTALL_PATH)/vmlinux $(INSTALL_PATH)/vmlinux.old; fi
+lilo:	vmlinaos
+	if [ -f $(INSTALL_PATH)/vmlinaos ]; then mv -f $(INSTALL_PATH)/vmlinaos $(INSTALL_PATH)/vmlinaos.old; fi
 	if [ -f $(INSTALL_PATH)/System.map ]; then mv -f $(INSTALL_PATH)/System.map $(INSTALL_PATH)/System.old; fi
-	cat vmlinux > $(INSTALL_PATH)/vmlinux
+	cat vmlinaos > $(INSTALL_PATH)/vmlinaos
 	cp System.map $(INSTALL_PATH)/System.map
 	if [ -x /sbin/lilo ]; then /sbin/lilo; else /etc/lilo/install; fi
 
-zImage compressed: vmlinux.gz
+zImage compressed: vmlinaos.gz
 
-vmlinux.gz: vmlinux
-
-ifndef CONFIG_KGDB
-	cp vmlinux vmlinux.tmp
-	$(STRIP) vmlinux.tmp
-	$(KGZIP) -9c vmlinux.tmp >vmlinux.gz
-	rm vmlinux.tmp
-else
-	$(KGZIP) -9c vmlinux >vmlinux.gz
-endif
-
-bzImage: vmlinux.bz2
-
-vmlinux.bz2: vmlinux
+vmlinaos.gz: vmlinaos
 
 ifndef CONFIG_KGDB
-	cp vmlinux vmlinux.tmp
-	$(STRIP) vmlinux.tmp
-	$(KBZIP2) -1c vmlinux.tmp >vmlinux.bz2
-	rm vmlinux.tmp
+	cp vmlinaos vmlinaos.tmp
+	$(STRIP) vmlinaos.tmp
+	$(KGZIP) -9c vmlinaos.tmp >vmlinaos.gz
+	rm vmlinaos.tmp
 else
-	$(KBZIP2) -1c vmlinux >vmlinux.bz2
+	$(KGZIP) -9c vmlinaos >vmlinaos.gz
 endif
 
-CLEAN_FILES += vmlinux.gz vmlinux.bz2
+bzImage: vmlinaos.bz2
+
+vmlinaos.bz2: vmlinaos
+
+ifndef CONFIG_KGDB
+	cp vmlinaos vmlinaos.tmp
+	$(STRIP) vmlinaos.tmp
+	$(KBZIP2) -1c vmlinaos.tmp >vmlinaos.bz2
+	rm vmlinaos.tmp
+else
+	$(KBZIP2) -1c vmlinaos >vmlinaos.bz2
+endif
+
+CLEAN_FILES += vmlinaos.gz vmlinaos.bz2
 
 archheaders:
 	$(Q)$(MAKE) $(build)=arch/m68k/kernel/syscalls all
 
 install:
-	sh $(srctree)/arch/m68k/install.sh $(KERNELRELEASE) vmlinux.gz System.map "$(INSTALL_PATH)"
+	sh $(srctree)/arch/m68k/install.sh $(KERNELRELEASE) vmlinaos.gz System.map "$(INSTALL_PATH)"

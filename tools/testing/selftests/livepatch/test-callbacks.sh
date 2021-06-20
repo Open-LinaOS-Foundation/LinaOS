@@ -17,7 +17,7 @@ setup_config
 # before the livepatch module.  Unload them in the same order.
 #
 # - On livepatch enable, before the livepatch transition starts,
-#   pre-patch callbacks are executed for vmlinux and $MOD_TARGET (those
+#   pre-patch callbacks are executed for vmlinaos and $MOD_TARGET (those
 #   klp_objects currently loaded).  After klp_objects are patched
 #   according to the klp_patch, their post-patch callbacks run and the
 #   transition completes.
@@ -39,20 +39,20 @@ $MOD_TARGET: ${MOD_TARGET}_init
 % modprobe $MOD_LIVEPATCH
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
-$MOD_LIVEPATCH: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH: pre_patch_callback: vmlinaos
 $MOD_LIVEPATCH: pre_patch_callback: $MOD_TARGET -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': starting patching transition
 livepatch: '$MOD_LIVEPATCH': completing patching transition
-$MOD_LIVEPATCH: post_patch_callback: vmlinux
+$MOD_LIVEPATCH: post_patch_callback: vmlinaos
 $MOD_LIVEPATCH: post_patch_callback: $MOD_TARGET -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': patching complete
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH/enabled
 livepatch: '$MOD_LIVEPATCH': initializing unpatching transition
-$MOD_LIVEPATCH: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: pre_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH: pre_unpatch_callback: $MOD_TARGET -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH': completing unpatching transition
-$MOD_LIVEPATCH: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: post_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH: post_unpatch_callback: $MOD_TARGET -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': unpatching complete
 % rmmod $MOD_LIVEPATCH
@@ -65,12 +65,12 @@ $MOD_TARGET: ${MOD_TARGET}_exit"
 # core's module_coming handler.
 #
 # - On livepatch enable, only pre/post-patch callbacks are executed for
-#   currently loaded klp_objects, in this case, vmlinux.
+#   currently loaded klp_objects, in this case, vmlinaos.
 #
 # - When a targeted module is subsequently loaded, only its
 #   pre/post-patch callbacks are executed.
 #
-# - On livepatch disable, all currently loaded klp_objects' (vmlinux and
+# - On livepatch disable, all currently loaded klp_objects' (vmlinaos and
 #   $MOD_TARGET) pre/post-unpatch callbacks are executed.
 
 start_test "module_coming notifier"
@@ -84,10 +84,10 @@ unload_mod $MOD_TARGET
 check_result "% modprobe $MOD_LIVEPATCH
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
-$MOD_LIVEPATCH: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH: pre_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': starting patching transition
 livepatch: '$MOD_LIVEPATCH': completing patching transition
-$MOD_LIVEPATCH: post_patch_callback: vmlinux
+$MOD_LIVEPATCH: post_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': patching complete
 % modprobe $MOD_TARGET
 livepatch: applying patch '$MOD_LIVEPATCH' to loading module '$MOD_TARGET'
@@ -96,11 +96,11 @@ $MOD_LIVEPATCH: post_patch_callback: $MOD_TARGET -> [MODULE_STATE_COMING] Full f
 $MOD_TARGET: ${MOD_TARGET}_init
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH/enabled
 livepatch: '$MOD_LIVEPATCH': initializing unpatching transition
-$MOD_LIVEPATCH: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: pre_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH: pre_unpatch_callback: $MOD_TARGET -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH': completing unpatching transition
-$MOD_LIVEPATCH: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: post_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH: post_unpatch_callback: $MOD_TARGET -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': unpatching complete
 % rmmod $MOD_LIVEPATCH
@@ -119,7 +119,7 @@ $MOD_TARGET: ${MOD_TARGET}_exit"
 #   post-unpatch callbacks are executed when this occurs.
 #
 # - When the livepatch is disabled, pre and post-unpatch callbacks are
-#   run for the remaining klp_object, vmlinux.
+#   run for the remaining klp_object, vmlinaos.
 
 start_test "module_going notifier"
 
@@ -134,11 +134,11 @@ $MOD_TARGET: ${MOD_TARGET}_init
 % modprobe $MOD_LIVEPATCH
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
-$MOD_LIVEPATCH: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH: pre_patch_callback: vmlinaos
 $MOD_LIVEPATCH: pre_patch_callback: $MOD_TARGET -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': starting patching transition
 livepatch: '$MOD_LIVEPATCH': completing patching transition
-$MOD_LIVEPATCH: post_patch_callback: vmlinux
+$MOD_LIVEPATCH: post_patch_callback: vmlinaos
 $MOD_LIVEPATCH: post_patch_callback: $MOD_TARGET -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': patching complete
 % rmmod $MOD_TARGET
@@ -148,10 +148,10 @@ livepatch: reverting patch '$MOD_LIVEPATCH' on unloading module '$MOD_TARGET'
 $MOD_LIVEPATCH: post_unpatch_callback: $MOD_TARGET -> [MODULE_STATE_GOING] Going away
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH/enabled
 livepatch: '$MOD_LIVEPATCH': initializing unpatching transition
-$MOD_LIVEPATCH: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: pre_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH': completing unpatching transition
-$MOD_LIVEPATCH: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: post_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': unpatching complete
 % rmmod $MOD_LIVEPATCH"
 
@@ -180,10 +180,10 @@ unload_lp $MOD_LIVEPATCH
 check_result "% modprobe $MOD_LIVEPATCH
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
-$MOD_LIVEPATCH: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH: pre_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': starting patching transition
 livepatch: '$MOD_LIVEPATCH': completing patching transition
-$MOD_LIVEPATCH: post_patch_callback: vmlinux
+$MOD_LIVEPATCH: post_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': patching complete
 % modprobe $MOD_TARGET
 livepatch: applying patch '$MOD_LIVEPATCH' to loading module '$MOD_TARGET'
@@ -197,10 +197,10 @@ livepatch: reverting patch '$MOD_LIVEPATCH' on unloading module '$MOD_TARGET'
 $MOD_LIVEPATCH: post_unpatch_callback: $MOD_TARGET -> [MODULE_STATE_GOING] Going away
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH/enabled
 livepatch: '$MOD_LIVEPATCH': initializing unpatching transition
-$MOD_LIVEPATCH: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: pre_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH': completing unpatching transition
-$MOD_LIVEPATCH: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: post_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': unpatching complete
 % rmmod $MOD_LIVEPATCH"
 
@@ -211,7 +211,7 @@ livepatch: '$MOD_LIVEPATCH': unpatching complete
 # - Load the livepatch.
 #
 # - As expected, only pre/post-(un)patch handlers are executed for
-#   vmlinux.
+#   vmlinaos.
 
 start_test "target module not present"
 
@@ -222,28 +222,28 @@ unload_lp $MOD_LIVEPATCH
 check_result "% modprobe $MOD_LIVEPATCH
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
-$MOD_LIVEPATCH: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH: pre_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': starting patching transition
 livepatch: '$MOD_LIVEPATCH': completing patching transition
-$MOD_LIVEPATCH: post_patch_callback: vmlinux
+$MOD_LIVEPATCH: post_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': patching complete
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH/enabled
 livepatch: '$MOD_LIVEPATCH': initializing unpatching transition
-$MOD_LIVEPATCH: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: pre_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH': completing unpatching transition
-$MOD_LIVEPATCH: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: post_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': unpatching complete
 % rmmod $MOD_LIVEPATCH"
 
 
-# Test a scenario where a vmlinux pre-patch callback returns a non-zero
+# Test a scenario where a vmlinaos pre-patch callback returns a non-zero
 # status (ie, failure).
 #
 # - First load a target module.
 #
 # - Load the livepatch module, setting its 'pre_patch_ret' value to -19
-#   (-ENODEV).  When its vmlinux pre-patch callback executes, this
+#   (-ENODEV).  When its vmlinaos pre-patch callback executes, this
 #   status code will propagate back to the module-loading subsystem.
 #   The result is that the insmod command refuses to load the livepatch
 #   module.
@@ -259,8 +259,8 @@ $MOD_TARGET: ${MOD_TARGET}_init
 % modprobe $MOD_LIVEPATCH pre_patch_ret=-19
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
-test_klp_callbacks_demo: pre_patch_callback: vmlinux
-livepatch: pre-patch callback failed for object 'vmlinux'
+test_klp_callbacks_demo: pre_patch_callback: vmlinaos
+livepatch: pre-patch callback failed for object 'vmlinaos'
 livepatch: failed to enable patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': canceling patching transition, going to unpatch
 livepatch: '$MOD_LIVEPATCH': completing unpatching transition
@@ -270,12 +270,12 @@ modprobe: ERROR: could not insert '$MOD_LIVEPATCH': No such device
 $MOD_TARGET: ${MOD_TARGET}_exit"
 
 
-# Similar to the previous test, setup a livepatch such that its vmlinux
+# Similar to the previous test, setup a livepatch such that its vmlinaos
 # pre-patch callback returns success.  However, when a targeted kernel
 # module is later loaded, have the livepatch return a failing status
 # code.
 #
-# - Load the livepatch, vmlinux pre-patch callback succeeds.
+# - Load the livepatch, vmlinaos pre-patch callback succeeds.
 #
 # - Set a trap so subsequent pre-patch callbacks to this livepatch will
 #   return -ENODEV.
@@ -285,7 +285,7 @@ $MOD_TARGET: ${MOD_TARGET}_exit"
 #   the kernel module.  No post-patch or pre/post-unpatch callbacks are
 #   executed for this klp_object.
 #
-# - Pre/post-unpatch callbacks are run for the vmlinux klp_object.
+# - Pre/post-unpatch callbacks are run for the vmlinaos klp_object.
 
 start_test "module_coming + pre-patch callback -ENODEV"
 
@@ -298,10 +298,10 @@ unload_lp $MOD_LIVEPATCH
 check_result "% modprobe $MOD_LIVEPATCH
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
-$MOD_LIVEPATCH: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH: pre_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': starting patching transition
 livepatch: '$MOD_LIVEPATCH': completing patching transition
-$MOD_LIVEPATCH: post_patch_callback: vmlinux
+$MOD_LIVEPATCH: post_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': patching complete
 % echo -19 > /sys/module/$MOD_LIVEPATCH/parameters/pre_patch_ret
 % modprobe $MOD_TARGET
@@ -312,10 +312,10 @@ livepatch: patch '$MOD_LIVEPATCH' failed for module '$MOD_TARGET', refusing to l
 modprobe: ERROR: could not insert '$MOD_TARGET': No such device
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH/enabled
 livepatch: '$MOD_LIVEPATCH': initializing unpatching transition
-$MOD_LIVEPATCH: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: pre_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH': completing unpatching transition
-$MOD_LIVEPATCH: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: post_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': unpatching complete
 % rmmod $MOD_LIVEPATCH"
 
@@ -347,11 +347,11 @@ $MOD_TARGET_BUSY: busymod_work_func exit
 % modprobe $MOD_LIVEPATCH
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
-$MOD_LIVEPATCH: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH: pre_patch_callback: vmlinaos
 $MOD_LIVEPATCH: pre_patch_callback: $MOD_TARGET_BUSY -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': starting patching transition
 livepatch: '$MOD_LIVEPATCH': completing patching transition
-$MOD_LIVEPATCH: post_patch_callback: vmlinux
+$MOD_LIVEPATCH: post_patch_callback: vmlinaos
 $MOD_LIVEPATCH: post_patch_callback: $MOD_TARGET_BUSY -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': patching complete
 % modprobe $MOD_TARGET
@@ -366,11 +366,11 @@ livepatch: reverting patch '$MOD_LIVEPATCH' on unloading module '$MOD_TARGET'
 $MOD_LIVEPATCH: post_unpatch_callback: $MOD_TARGET -> [MODULE_STATE_GOING] Going away
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH/enabled
 livepatch: '$MOD_LIVEPATCH': initializing unpatching transition
-$MOD_LIVEPATCH: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: pre_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH: pre_unpatch_callback: $MOD_TARGET_BUSY -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH': completing unpatching transition
-$MOD_LIVEPATCH: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: post_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH: post_unpatch_callback: $MOD_TARGET_BUSY -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': unpatching complete
 % rmmod $MOD_LIVEPATCH
@@ -427,7 +427,7 @@ $MOD_TARGET_BUSY: busymod_work_func enter
 % modprobe $MOD_LIVEPATCH
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
-$MOD_LIVEPATCH: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH: pre_patch_callback: vmlinaos
 $MOD_LIVEPATCH: pre_patch_callback: $MOD_TARGET_BUSY -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': starting patching transition
 % modprobe $MOD_TARGET
@@ -442,7 +442,7 @@ $MOD_LIVEPATCH: post_unpatch_callback: $MOD_TARGET -> [MODULE_STATE_GOING] Going
 livepatch: '$MOD_LIVEPATCH': reversing transition from patching to unpatching
 livepatch: '$MOD_LIVEPATCH': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH': completing unpatching transition
-$MOD_LIVEPATCH: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: post_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH: post_unpatch_callback: $MOD_TARGET_BUSY -> [MODULE_STATE_LIVE] Normal state
 livepatch: '$MOD_LIVEPATCH': unpatching complete
 % rmmod $MOD_LIVEPATCH
@@ -470,32 +470,32 @@ unload_lp $MOD_LIVEPATCH
 check_result "% modprobe $MOD_LIVEPATCH
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
-$MOD_LIVEPATCH: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH: pre_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': starting patching transition
 livepatch: '$MOD_LIVEPATCH': completing patching transition
-$MOD_LIVEPATCH: post_patch_callback: vmlinux
+$MOD_LIVEPATCH: post_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': patching complete
 % modprobe $MOD_LIVEPATCH2
 livepatch: enabling patch '$MOD_LIVEPATCH2'
 livepatch: '$MOD_LIVEPATCH2': initializing patching transition
-$MOD_LIVEPATCH2: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH2: pre_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH2': starting patching transition
 livepatch: '$MOD_LIVEPATCH2': completing patching transition
-$MOD_LIVEPATCH2: post_patch_callback: vmlinux
+$MOD_LIVEPATCH2: post_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH2': patching complete
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH2/enabled
 livepatch: '$MOD_LIVEPATCH2': initializing unpatching transition
-$MOD_LIVEPATCH2: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH2: pre_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH2': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH2': completing unpatching transition
-$MOD_LIVEPATCH2: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH2: post_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH2': unpatching complete
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH/enabled
 livepatch: '$MOD_LIVEPATCH': initializing unpatching transition
-$MOD_LIVEPATCH: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: pre_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH': completing unpatching transition
-$MOD_LIVEPATCH: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: post_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': unpatching complete
 % rmmod $MOD_LIVEPATCH2
 % rmmod $MOD_LIVEPATCH"
@@ -526,25 +526,25 @@ unload_lp $MOD_LIVEPATCH
 check_result "% modprobe $MOD_LIVEPATCH
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
-$MOD_LIVEPATCH: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH: pre_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': starting patching transition
 livepatch: '$MOD_LIVEPATCH': completing patching transition
-$MOD_LIVEPATCH: post_patch_callback: vmlinux
+$MOD_LIVEPATCH: post_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH': patching complete
 % modprobe $MOD_LIVEPATCH2 replace=1
 livepatch: enabling patch '$MOD_LIVEPATCH2'
 livepatch: '$MOD_LIVEPATCH2': initializing patching transition
-$MOD_LIVEPATCH2: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH2: pre_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH2': starting patching transition
 livepatch: '$MOD_LIVEPATCH2': completing patching transition
-$MOD_LIVEPATCH2: post_patch_callback: vmlinux
+$MOD_LIVEPATCH2: post_patch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH2': patching complete
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH2/enabled
 livepatch: '$MOD_LIVEPATCH2': initializing unpatching transition
-$MOD_LIVEPATCH2: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH2: pre_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH2': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH2': completing unpatching transition
-$MOD_LIVEPATCH2: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH2: post_unpatch_callback: vmlinaos
 livepatch: '$MOD_LIVEPATCH2': unpatching complete
 % rmmod $MOD_LIVEPATCH2
 % rmmod $MOD_LIVEPATCH"

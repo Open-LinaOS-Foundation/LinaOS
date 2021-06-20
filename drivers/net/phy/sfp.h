@@ -1,8 +1,8 @@
 #ifndef SFP_H
 #define SFP_H
 
-#include <linux/ethtool.h>
-#include <linux/sfp.h>
+#include <linaos/ethtool.h>
+#include <linaos/sfp.h>
 
 struct sfp;
 

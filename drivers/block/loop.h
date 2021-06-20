@@ -9,13 +9,13 @@
 #ifndef _LINUX_LOOP_H
 #define _LINUX_LOOP_H
 
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/kthread.h>
-#include <uapi/linux/loop.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/kthread.h>
+#include <uapi/linaos/loop.h>
 
 /* Possible states of device */
 enum {

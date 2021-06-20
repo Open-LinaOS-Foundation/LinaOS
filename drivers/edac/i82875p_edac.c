@@ -1,6 +1,6 @@
 /*
  * Intel D82875P Memory Controller kernel module
- * (C) 2003 Linux Networx (http://lnxi.com)
+ * (C) 2003 LinaOS Networx (http://lnxi.com)
  * This file may be distributed under the terms of the
  * GNU General Public License.
  *
@@ -13,11 +13,11 @@
  * Note: E7210 appears same as D82875P - zhenyu.z.wang at intel.com
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/edac.h>
 #include "edac_module.h"
 
 #define EDAC_MOD_STR		"i82875p_edac"
@@ -592,7 +592,7 @@ module_init(i82875p_init);
 module_exit(i82875p_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Linux Networx (http://lnxi.com) Thayne Harbaugh");
+MODULE_AUTHOR("LinaOS Networx (http://lnxi.com) Thayne Harbaugh");
 MODULE_DESCRIPTION("MC support for Intel 82875 memory hub controllers");
 
 module_param(edac_op_state, int, 0444);

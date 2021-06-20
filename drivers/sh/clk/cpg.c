@@ -8,11 +8,11 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/sh_clk.h>
+#include <linaos/clk.h>
+#include <linaos/compiler.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/sh_clk.h>
 
 #define CPG_CKSTP_BIT	BIT(8)
 

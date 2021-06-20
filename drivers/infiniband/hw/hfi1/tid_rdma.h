@@ -6,7 +6,7 @@
 #ifndef HFI1_TID_RDMA_H
 #define HFI1_TID_RDMA_H
 
-#include <linux/circ_buf.h>
+#include <linaos/circ_buf.h>
 #include "common.h"
 
 /* Add a convenience helper */

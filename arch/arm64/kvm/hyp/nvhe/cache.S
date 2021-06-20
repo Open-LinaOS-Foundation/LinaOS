@@ -3,7 +3,7 @@
  * Code copied from arch/arm64/mm/cache.S.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/alternative.h>
 

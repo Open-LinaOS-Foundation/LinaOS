@@ -5,17 +5,17 @@
  * copyright Jamal Hadi Salim (2015)
 */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
-#include <uapi/linux/tc_act/tc_ife.h>
+#include <uapi/linaos/tc_act/tc_ife.h>
 #include <net/tc_act/tc_ife.h>
 
 static int skbmark_encode(struct sk_buff *skb, void *skbdata,

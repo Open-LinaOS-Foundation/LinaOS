@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-nand.c
+ * linaos/arch/arm/mach-omap1/board-nand.c
  *
  * Common OMAP1 board NAND code
  *
@@ -10,10 +10,10 @@
  * Author: RidgeRun, Inc.
  *         Greg Lonnon (glonnon@ridgerun.com) or info@ridgerun.com
  */
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
 
 #include "common.h"
 

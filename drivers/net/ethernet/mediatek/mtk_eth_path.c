@@ -7,8 +7,8 @@
  *
  */
 
-#include <linux/phy.h>
-#include <linux/regmap.h>
+#include <linaos/phy.h>
+#include <linaos/regmap.h>
 
 #include "mtk_eth_soc.h"
 

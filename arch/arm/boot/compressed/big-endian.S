@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/arch/arm/boot/compressed/big-endian.S
+ *  linaos/arch/arm/boot/compressed/big-endian.S
  *
  *  Switch CPU into big endian mode.
  *  Author: Nicolas Pitre

@@ -3,7 +3,7 @@
 #define I2C_PCA9564_PLATFORM_H
 
 struct i2c_pca9564_pf_platform_data {
-	int i2c_clock_speed;	/* values are defined in linux/i2c-algo-pca.h */
+	int i2c_clock_speed;	/* values are defined in linaos/i2c-algo-pca.h */
 	int timeout;		/* timeout in jiffies */
 };
 

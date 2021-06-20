@@ -15,19 +15,19 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/mempool.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/workqueue.h>
-#include <linux/pci.h>
-#include <linux/scatterlist.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <linaos/mempool.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/workqueue.h>
+#include <linaos/pci.h>
+#include <linaos/scatterlist.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/delay.h>
+#include <linaos/gfp.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>

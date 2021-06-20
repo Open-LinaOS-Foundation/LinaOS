@@ -3,13 +3,13 @@
  * Copyright (C) 2019 Spreadtrum Communications Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/math64.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
 
 #define SPRD_PWM_PRESCALE	0x0
 #define SPRD_PWM_MOD		0x4

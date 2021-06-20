@@ -7,10 +7,10 @@
  * Copyright (C) 2004 Dmitry Torokhov
  */
 
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linaos/bitops.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
 
 #define PS2_CMD_SETSCALE11	0x00e6
 #define PS2_CMD_SETRES		0x10e8

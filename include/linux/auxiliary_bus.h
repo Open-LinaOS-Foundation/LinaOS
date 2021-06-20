@@ -8,8 +8,8 @@
 #ifndef _AUXILIARY_BUS_H_
 #define _AUXILIARY_BUS_H_
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
 
 struct auxiliary_device {
 	struct device dev;

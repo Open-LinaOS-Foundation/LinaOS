@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
 
 #define RTMV20_REG_DEVINFO	0x00
 #define RTMV20_REG_PULSEDELAY	0x01

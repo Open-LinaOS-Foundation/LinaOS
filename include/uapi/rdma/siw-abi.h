@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: (GPL-2.0 WITH Linux-syscall-note) or BSD-3-Clause */
+/* SPDX-License-Identifier: (GPL-2.0 WITH LinaOS-syscall-note) or BSD-3-Clause */
 
 /* Authors: Bernard Metzler <bmt@zurich.ibm.com> */
 /* Copyright (c) 2008-2019, IBM Corporation */
@@ -6,7 +6,7 @@
 #ifndef _SIW_USER_H
 #define _SIW_USER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define SIW_NODE_DESC_COMMON "Software iWARP stack"
 #define SIW_ABI_VERSION 1

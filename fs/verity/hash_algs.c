@@ -8,7 +8,7 @@
 #include "fsverity_private.h"
 
 #include <crypto/hash.h>
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 /* The hash algorithms supported by fs-verity */
 struct fsverity_hash_alg fsverity_hash_algs[] = {

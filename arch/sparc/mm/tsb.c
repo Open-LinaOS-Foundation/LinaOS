@@ -4,11 +4,11 @@
  * Copyright (C) 2006, 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/preempt.h>
-#include <linux/slab.h>
-#include <linux/mm_types.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/preempt.h>
+#include <linaos/slab.h>
+#include <linaos/mm_types.h>
+#include <linaos/pgtable.h>
 
 #include <asm/page.h>
 #include <asm/mmu_context.h>
@@ -459,7 +459,7 @@ retry_tsb_alloc:
 	 * But even with that lock held, processors run asynchronously
 	 * accessing the old TSB via TLB miss handling.  This is OK
 	 * because those actions are just propagating state from the
-	 * Linux page tables into the TSB, page table mappings are not
+	 * LinaOS page tables into the TSB, page table mappings are not
 	 * being changed.  If a real fault occurs, the processor will
 	 * synchronize with us when it hits flush_tsb_user(), this is
 	 * also true for the case where vmscan is modifying the page

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-1.0+ WITH LinaOS-syscall-note */
 /* Header file for kernel module to match connection tracking information.
  * GPL (C) 2001  Marc Boucher (marc@mbsi.ca).
  */
@@ -6,9 +6,9 @@
 #ifndef _XT_CONNTRACK_H
 #define _XT_CONNTRACK_H
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_conntrack_tuple_common.h>
+#include <linaos/types.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/nf_conntrack_tuple_common.h>
 
 #define XT_CONNTRACK_STATE_BIT(ctinfo) (1 << ((ctinfo)%IP_CT_IS_REPLY+1))
 #define XT_CONNTRACK_STATE_INVALID (1 << 0)

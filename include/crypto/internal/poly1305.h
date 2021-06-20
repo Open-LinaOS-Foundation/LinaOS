@@ -7,7 +7,7 @@
 #define _CRYPTO_INTERNAL_POLY1305_H
 
 #include <asm/unaligned.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <crypto/poly1305.h>
 
 /*

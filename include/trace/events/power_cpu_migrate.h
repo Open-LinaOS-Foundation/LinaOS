@@ -5,7 +5,7 @@
 #if !defined(_TRACE_POWER_CPU_MIGRATE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_POWER_CPU_MIGRATE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #define __cpu_migrate_proto			\
 	TP_PROTO(u64 timestamp,			\

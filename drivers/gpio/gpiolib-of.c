@@ -7,18 +7,18 @@
  * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/slab.h>
-#include <linux/gpio/machine.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_gpio.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/slab.h>
+#include <linaos/gpio/machine.h>
 
 #include "gpiolib.h"
 #include "gpiolib-of.h"
@@ -51,7 +51,7 @@ static int of_gpio_spi_cs_get_count(struct device *dev, const char *con_id)
 }
 
 /*
- * This is used by external users of of_gpio_count() from <linux/of_gpio.h>
+ * This is used by external users of of_gpio_count() from <linaos/of_gpio.h>
  *
  * FIXME: get rid of those external users by converting them to GPIO
  * descriptors and let them all use gpiod_count()
@@ -232,7 +232,7 @@ static void of_gpio_flags_quirks(struct device_node *np,
  * @index:	index of the GPIO
  * @flags:	a flags pointer to fill in
  *
- * Returns GPIO descriptor to use with Linux GPIO API, or one of the errno
+ * Returns GPIO descriptor to use with LinaOS GPIO API, or one of the errno
  * value on the error condition. If @flags is not NULL the function also fills
  * in flags for the GPIO.
  */
@@ -570,7 +570,7 @@ struct gpio_desc *of_find_gpio(struct device *dev, const char *con_id,
  *		of_find_gpio() or of_parse_own_gpio()
  * @dflags:	gpiod_flags - optional GPIO initialization flags
  *
- * Returns GPIO descriptor to use with Linux GPIO API, or one of the errno
+ * Returns GPIO descriptor to use with LinaOS GPIO API, or one of the errno
  * value on the error condition.
  */
 static struct gpio_desc *of_parse_own_gpio(struct device_node *np,

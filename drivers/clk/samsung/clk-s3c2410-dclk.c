@@ -5,14 +5,14 @@
  * Common Clock Framework support for s3c24xx external clock output.
  */
 
-#include <linux/clkdev.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/clk-s3c2410.h>
-#include <linux/module.h>
+#include <linaos/clkdev.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/clk-s3c2410.h>
+#include <linaos/module.h>
 #include "clk.h"
 
 #define MUX_DCLK0	0

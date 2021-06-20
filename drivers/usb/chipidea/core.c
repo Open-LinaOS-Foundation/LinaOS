@@ -14,28 +14,28 @@
  * - Low power mode
  * - USB wakeup
  */
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/extcon.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/chipidea.h>
-#include <linux/usb/of.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/usb/ehci_def.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/extcon.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/idr.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/otg.h>
+#include <linaos/usb/chipidea.h>
+#include <linaos/usb/of.h>
+#include <linaos/of.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/usb/ehci_def.h>
 
 #include "ci.h"
 #include "udc.h"

@@ -12,21 +12,21 @@
  * Chris Zankel <chris@zankel.net>
  */
 
-#include <linux/clk.h>
-#include <linux/of_clk.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/profile.h>
-#include <linux/delay.h>
-#include <linux/irqdomain.h>
-#include <linux/sched_clock.h>
+#include <linaos/clk.h>
+#include <linaos/of_clk.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/time.h>
+#include <linaos/clocksource.h>
+#include <linaos/clockchips.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/profile.h>
+#include <linaos/delay.h>
+#include <linaos/irqdomain.h>
+#include <linaos/sched_clock.h>
 
 #include <asm/timex.h>
 #include <asm/platform.h>
@@ -66,7 +66,7 @@ static int ccount_timer_set_next_event(unsigned long delta,
 
 	local_irq_save(flags);
 	next = get_ccount() + delta;
-	set_linux_timer(next);
+	set_linaos_timer(next);
 	if (next - get_ccount() > delta)
 		ret = -ETIME;
 	local_irq_restore(flags);
@@ -119,7 +119,7 @@ static irqreturn_t timer_interrupt(int irq, void *dev_id)
 {
 	struct clock_event_device *evt = &this_cpu_ptr(&ccount_timer)->evt;
 
-	set_linux_timer(get_linux_timer());
+	set_linaos_timer(get_linaos_timer());
 	evt->event_handler(evt);
 
 	/* Allow platform to do something useful (Wdog). */

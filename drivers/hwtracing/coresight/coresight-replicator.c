@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2015, The LinaOS Foundation. All rights reserved.
  *
  * Description: CoreSight Replicator driver
  */
 
-#include <linux/acpi.h>
-#include <linux/amba/bus.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/coresight.h>
+#include <linaos/acpi.h>
+#include <linaos/amba/bus.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/property.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/coresight.h>
 
 #include "coresight-priv.h"
 

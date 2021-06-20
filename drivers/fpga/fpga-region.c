@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * FPGA Region - Support for FPGA programming under Linux
+ * FPGA Region - Support for FPGA programming under LinaOS
  *
  *  Copyright (C) 2013-2016 Altera Corporation
  *  Copyright (C) 2017 Intel Corporation
  */
-#include <linux/fpga/fpga-bridge.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/fpga/fpga-region.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/fpga/fpga-bridge.h>
+#include <linaos/fpga/fpga-mgr.h>
+#include <linaos/fpga/fpga-region.h>
+#include <linaos/idr.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 static DEFINE_IDA(fpga_region_ida);
 static struct class *fpga_region_class;

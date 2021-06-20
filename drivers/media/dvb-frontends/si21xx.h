@@ -2,7 +2,7 @@
 #ifndef SI21XX_H
 #define SI21XX_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 #include <media/dvb_frontend.h>
 
 struct si21xx_config {

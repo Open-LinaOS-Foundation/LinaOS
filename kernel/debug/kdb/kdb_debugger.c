@@ -8,11 +8,11 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kgdb.h>
-#include <linux/kdb.h>
-#include <linux/kdebug.h>
-#include <linux/export.h>
-#include <linux/hardirq.h>
+#include <linaos/kgdb.h>
+#include <linaos/kdb.h>
+#include <linaos/kdebug.h>
+#include <linaos/export.h>
+#include <linaos/hardirq.h>
 #include "kdb_private.h"
 #include "../debug_core.h"
 
@@ -54,7 +54,7 @@ int kdb_stub(struct kgdb_state *ks)
 {
 	int error = 0;
 	kdb_bp_t *bp;
-	unsigned long addr = kgdb_arch_pc(ks->ex_vector, ks->linux_regs);
+	unsigned long addr = kgdb_arch_pc(ks->ex_vector, ks->linaos_regs);
 	kdb_reason_t reason = KDB_REASON_OOPS;
 	kdb_dbtrap_t db_result = KDB_DB_NOBPT;
 	int i;
@@ -63,7 +63,7 @@ int kdb_stub(struct kgdb_state *ks)
 	if (KDB_STATE(REENTRY)) {
 		reason = KDB_REASON_SWITCH;
 		KDB_STATE_CLEAR(REENTRY);
-		addr = instruction_pointer(ks->linux_regs);
+		addr = instruction_pointer(ks->linaos_regs);
 	}
 	ks->pass_exception = 0;
 	if (atomic_read(&kgdb_setting_breakpoint))
@@ -79,8 +79,8 @@ int kdb_stub(struct kgdb_state *ks)
 		if ((bp->bp_enabled) && (bp->bp_addr == addr)) {
 			reason = KDB_REASON_BREAK;
 			db_result = KDB_DB_BPT;
-			if (addr != instruction_pointer(ks->linux_regs))
-				kgdb_arch_set_pc(ks->linux_regs, addr);
+			if (addr != instruction_pointer(ks->linaos_regs))
+				kgdb_arch_set_pc(ks->linaos_regs, addr);
 			break;
 		}
 	}
@@ -132,7 +132,7 @@ int kdb_stub(struct kgdb_state *ks)
 	} else {
 		/* Start kdb main loop */
 		error = kdb_main_loop(KDB_REASON_ENTER, reason,
-				      ks->err_code, db_result, ks->linux_regs);
+				      ks->err_code, db_result, ks->linaos_regs);
 	}
 	/*
 	 * Upon exit from the kdb main loop setup break points and restart
@@ -146,7 +146,7 @@ int kdb_stub(struct kgdb_state *ks)
 			KDB_STATE_CLEAR(DOING_KGDB);
 		return DBG_PASS_EVENT;
 	}
-	kdb_bp_install(ks->linux_regs);
+	kdb_bp_install(ks->linaos_regs);
 	/* Set the exit state to a single step or a continue */
 	if (KDB_STATE(DOING_SS))
 		gdbstub_state(ks, "s");

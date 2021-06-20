@@ -7,9 +7,9 @@
 
 */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_crtc_helper.h>

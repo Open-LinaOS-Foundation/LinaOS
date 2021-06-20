@@ -9,20 +9,20 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/joystick.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/joystick.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/major.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/poll.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/cdev.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Joystick device interfaces");

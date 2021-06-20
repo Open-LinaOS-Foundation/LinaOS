@@ -7,16 +7,16 @@
  * Copyright (C) 2006 Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/firewire.h>
+#include <linaos/firewire-constants.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/vmalloc.h>
+#include <linaos/export.h>
 
 #include <asm/byteorder.h>
 

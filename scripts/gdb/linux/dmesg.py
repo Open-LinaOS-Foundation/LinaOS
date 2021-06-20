@@ -1,5 +1,5 @@
 #
-# gdb helper commands and functions for Linux kernel debugging
+# gdb helper commands and functions for LinaOS kernel debugging
 #
 #  kernel log buffer dump
 #
@@ -14,7 +14,7 @@
 import gdb
 import sys
 
-from linux import utils
+from linaos import utils
 
 printk_info_type = utils.CachedType("struct printk_info")
 prb_data_blk_lpos_type = utils.CachedType("struct prb_data_blk_lpos")
@@ -25,7 +25,7 @@ printk_ringbuffer_type = utils.CachedType("struct printk_ringbuffer")
 atomic_long_type = utils.CachedType("atomic_long_t")
 
 class LxDmesg(gdb.Command):
-    """Print Linux kernel log buffer."""
+    """Print LinaOS kernel log buffer."""
 
     def __init__(self):
         super(LxDmesg, self).__init__("lx-dmesg", gdb.COMMAND_DATA)

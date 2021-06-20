@@ -18,7 +18,7 @@
 #include "xfs_rmap.h"
 #include "xfs_alloc.h"
 #include "xfs_bit.h"
-#include <linux/fsmap.h>
+#include <linaos/fsmap.h>
 #include "xfs_fsmap.h"
 #include "xfs_refcount.h"
 #include "xfs_refcount_btree.h"

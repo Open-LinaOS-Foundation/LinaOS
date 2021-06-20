@@ -11,11 +11,11 @@
 #include <sound/asound.h>
 #include <sound/memalloc.h>
 #include <sound/minors.h>
-#include <linux/poll.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
-#include <linux/pm_qos.h>
-#include <linux/refcount.h>
+#include <linaos/poll.h>
+#include <linaos/mm.h>
+#include <linaos/bitops.h>
+#include <linaos/pm_qos.h>
+#include <linaos/refcount.h>
 
 #define snd_pcm_substream_chip(substream) ((substream)->private_data)
 #define snd_pcm_chip(pcm) ((pcm)->private_data)

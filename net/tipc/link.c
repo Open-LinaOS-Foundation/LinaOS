@@ -46,7 +46,7 @@
 #include "trace.h"
 #include "crypto.h"
 
-#include <linux/pkt_sched.h>
+#include <linaos/pkt_sched.h>
 
 struct tipc_stats {
 	u32 sent_pkts;

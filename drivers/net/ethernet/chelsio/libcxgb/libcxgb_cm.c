@@ -30,8 +30,8 @@
  * SOFTWARE.
  */
 
-#include <linux/tcp.h>
-#include <linux/ipv6.h>
+#include <linaos/tcp.h>
+#include <linaos/ipv6.h>
 #include <net/route.h>
 #include <net/ip6_route.h>
 

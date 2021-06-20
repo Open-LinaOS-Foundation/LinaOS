@@ -2,9 +2,9 @@
 #ifndef __MACH_MMP_CLK_H
 #define __MACH_MMP_CLK_H
 
-#include <linux/clk-provider.h>
-#include <linux/pm_domain.h>
-#include <linux/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/pm_domain.h>
+#include <linaos/clkdev.h>
 
 #define APBC_NO_BUS_CTRL	BIT(0)
 #define APBC_POWER_CTRL		BIT(1)

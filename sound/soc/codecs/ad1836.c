@@ -6,19 +6,19 @@
  * Copyright 2009-2011 Analog Devices Inc.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/initval.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
+#include <linaos/spi/spi.h>
+#include <linaos/regmap.h>
 
 #include "ad1836.h"
 

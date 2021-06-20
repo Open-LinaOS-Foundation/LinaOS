@@ -8,11 +8,11 @@
  *  for specific codecs.
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/export.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/writeback.h
+ * include/linaos/writeback.h
  */
 #ifndef WRITEBACK_H
 #define WRITEBACK_H
 
-#include <linux/sched.h>
-#include <linux/workqueue.h>
-#include <linux/fs.h>
-#include <linux/flex_proportions.h>
-#include <linux/backing-dev-defs.h>
-#include <linux/blk_types.h>
-#include <linux/blk-cgroup.h>
+#include <linaos/sched.h>
+#include <linaos/workqueue.h>
+#include <linaos/fs.h>
+#include <linaos/flex_proportions.h>
+#include <linaos/backing-dev-defs.h>
+#include <linaos/blk_types.h>
+#include <linaos/blk-cgroup.h>
 
 struct bio;
 
@@ -208,8 +208,8 @@ static inline void wait_on_inode(struct inode *inode)
 
 #ifdef CONFIG_CGROUP_WRITEBACK
 
-#include <linux/cgroup.h>
-#include <linux/bio.h>
+#include <linaos/cgroup.h>
+#include <linaos/bio.h>
 
 void __inode_attach_wb(struct inode *inode, struct page *page);
 void wbc_attach_and_unlock_inode(struct writeback_control *wbc,

@@ -5,12 +5,12 @@
  * Author: Mattias Wallin <mattias.wallin@stericsson.com>
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mfd/abx500.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/mfd/abx500.h>
 
 static LIST_HEAD(abx500_list);
 

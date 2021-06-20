@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/eswitch.h>
-#include <linux/module.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/mlx5/eswitch.h>
+#include <linaos/module.h>
 #include "mlx5_core.h"
 #include "../../mlxfw/mlxfw.h"
 #include "accel/tls.h"

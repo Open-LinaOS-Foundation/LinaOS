@@ -11,9 +11,9 @@
 #ifndef __LINUX_OPP_H__
 #define __LINUX_OPP_H__
 
-#include <linux/energy_model.h>
-#include <linux/err.h>
-#include <linux/notifier.h>
+#include <linaos/energy_model.h>
+#include <linaos/err.h>
+#include <linaos/notifier.h>
 
 struct clk;
 struct regulator;

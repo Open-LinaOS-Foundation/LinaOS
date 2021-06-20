@@ -17,14 +17,14 @@
  * for these chips can bind to the them.
  */
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/usb/pd.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/usb/pd.h>
 
 #include "intel_cht_int33fe_common.h"
 
@@ -75,7 +75,7 @@ static struct software_node_ref_args fusb302_mux_refs[] = {
 };
 
 static const struct property_entry fusb302_properties[] = {
-	PROPERTY_ENTRY_STRING("linux,extcon-name", "cht_wcove_pwrsrc"),
+	PROPERTY_ENTRY_STRING("linaos,extcon-name", "cht_wcove_pwrsrc"),
 	PROPERTY_ENTRY_REF_ARRAY("usb-role-switch", fusb302_mux_refs),
 	{ }
 };

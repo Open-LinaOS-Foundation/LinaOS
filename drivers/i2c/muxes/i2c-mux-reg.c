@@ -6,15 +6,15 @@
  * York Sun  <yorksun@freescale.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/i2c-mux.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_data/i2c-mux-reg.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-mux.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_data/i2c-mux-reg.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 struct regmux {
 	struct i2c_mux_reg_platform_data data;

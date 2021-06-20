@@ -3,16 +3,16 @@
  * Copyright IBM Corp. 2012
  *
  * Author(s):
- *   Jan Glauber <jang@linux.vnet.ibm.com>
+ *   Jan Glauber <jang@linaos.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/iommu-helper.h>
-#include <linux/dma-map-ops.h>
-#include <linux/vmalloc.h>
-#include <linux/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/iommu-helper.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pci.h>
 #include <asm/pci_dma.h>
 
 static struct kmem_cache *dma_region_table_cache;

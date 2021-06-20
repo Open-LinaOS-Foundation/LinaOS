@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2019-2021 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/bitfield.h>
-#include <linux/bug.h>
-#include <linux/dma-mapping.h>
-#include <linux/iommu.h>
-#include <linux/io.h>
-#include <linux/soc/qcom/smem.h>
+#include <linaos/types.h>
+#include <linaos/bitfield.h>
+#include <linaos/bug.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/iommu.h>
+#include <linaos/io.h>
+#include <linaos/soc/qcom/smem.h>
 
 #include "ipa.h"
 #include "ipa_reg.h"

@@ -6,17 +6,17 @@
  * Copyright (C) 2014 ARM Ltd.
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/pci-ecam.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/of_pci.h>
+#include <linaos/of_platform.h>
+#include <linaos/pci.h>
+#include <linaos/pci-acpi.h>
+#include <linaos/pci-ecam.h>
+#include <linaos/slab.h>
 
 #ifdef CONFIG_ACPI
 /*

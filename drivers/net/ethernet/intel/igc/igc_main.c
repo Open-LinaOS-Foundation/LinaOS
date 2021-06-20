@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c)  2018 Intel Corporation */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/if_vlan.h>
-#include <linux/aer.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/ip.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/if_vlan.h>
+#include <linaos/aer.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/ip.h>
+#include <linaos/pm_runtime.h>
 #include <net/pkt_sched.h>
-#include <linux/bpf_trace.h>
+#include <linaos/bpf_trace.h>
 
 #include <net/ipv6.h>
 
@@ -19,7 +19,7 @@
 #include "igc_tsn.h"
 #include "igc_xdp.h"
 
-#define DRV_SUMMARY	"Intel(R) 2.5G Ethernet Linux Driver"
+#define DRV_SUMMARY	"Intel(R) 2.5G Ethernet LinaOS Driver"
 
 #define DEFAULT_MSG_ENABLE (NETIF_MSG_DRV | NETIF_MSG_PROBE | NETIF_MSG_LINK)
 
@@ -30,7 +30,7 @@
 
 static int debug = -1;
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <linaos.nics@intel.com>");
 MODULE_DESCRIPTION(DRV_SUMMARY);
 MODULE_LICENSE("GPL v2");
 module_param(debug, int, 0);

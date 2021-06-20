@@ -90,13 +90,13 @@
 		checkstop {
 			label = "checkstop";
 			gpios = <&gpio ASPEED_GPIO(J, 2) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(J, 2)>;
+			linaos,code = <ASPEED_GPIO(J, 2)>;
 		};
 
 		id-button {
 			label = "id-button";
 			gpios = <&gpio ASPEED_GPIO(Q, 7) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(Q, 7)>;
+			linaos,code = <ASPEED_GPIO(Q, 7)>;
 		};
 	};
 

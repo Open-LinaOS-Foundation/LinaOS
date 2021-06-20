@@ -13,19 +13,19 @@
  * by Hollis Blanchard <hollisb@us.ibm.com>.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/highmem.h>
-#include <linux/log2.h>
-#include <linux/uaccess.h>
-#include <linux/sched.h>
-#include <linux/rwsem.h>
-#include <linux/vmalloc.h>
-#include <linux/hugetlb.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/kvm.h>
+#include <linaos/kvm_host.h>
+#include <linaos/highmem.h>
+#include <linaos/log2.h>
+#include <linaos/uaccess.h>
+#include <linaos/sched.h>
+#include <linaos/rwsem.h>
+#include <linaos/vmalloc.h>
+#include <linaos/hugetlb.h>
 #include <asm/kvm_ppc.h>
 
 #include "e500.h"

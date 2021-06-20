@@ -2,7 +2,7 @@
 /*
  * vt8500-bv07.dts - Device tree file for Benign BV07 Netbook
  *
- * Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (C) 2012 Tony Prisk <linaos@prisktech.co.nz>
  */
 
 /dts-v1/;

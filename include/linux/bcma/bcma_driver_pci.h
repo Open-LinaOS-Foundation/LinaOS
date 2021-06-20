@@ -2,7 +2,7 @@
 #ifndef LINUX_BCMA_DRIVER_PCI_H_
 #define LINUX_BCMA_DRIVER_PCI_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct pci_dev;
 

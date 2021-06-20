@@ -3,10 +3,10 @@
  * Copyright (c) 2019 Christoph Hellwig.
  * Copyright (c) 2019 Western Digital Corporation or its affiliates.
  */
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/clk.h>
 #include <asm/soc.h>
 
 #include <soc/canaan/k210-sysctl.h>

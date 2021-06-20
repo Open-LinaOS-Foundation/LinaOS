@@ -3,10 +3,10 @@
  * (C) Copyright 2009, Texas Instruments, Inc. https://www.ti.com/
  */
 
-/* replicated define because linux/bitops.h cannot be included in assembly */
+/* replicated define because linaos/bitops.h cannot be included in assembly */
 #define BIT(nr)			(1 << (nr))
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include "psc.h"
 #include "ddr2.h"

@@ -5,23 +5,23 @@
  *	   Neil Zhang <zhangwm@marvell.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/uaccess.h>
-#include <linux/device.h>
-#include <linux/proc_fs.h>
-#include <linux/clk.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/uaccess.h>
+#include <linaos/device.h>
+#include <linaos/proc_fs.h>
+#include <linaos/clk.h>
+#include <linaos/workqueue.h>
+#include <linaos/platform_device.h>
 
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/hcd.h>
-#include <linux/platform_data/mv_usb.h>
+#include <linaos/usb.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/otg.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/platform_data/mv_usb.h>
 
 #include "phy-mv-usb.h"
 

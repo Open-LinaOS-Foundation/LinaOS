@@ -4,7 +4,7 @@
  * for more details.
  *
  * Copyright (C) 2003, 2004 Chris Dearman
- * Copyright (C) 2005 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2005 Ralf Baechle (ralf@linaos-mips.org)
  */
 #ifndef __ASM_MACH_MIPS_CPU_FEATURE_OVERRIDES_H
 #define __ASM_MACH_MIPS_CPU_FEATURE_OVERRIDES_H

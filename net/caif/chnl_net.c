@@ -7,15 +7,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s(): " fmt, __func__
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
-#include <linux/sched.h>
-#include <linux/sockios.h>
-#include <linux/caif/if_caif.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/ip.h>
+#include <linaos/sched.h>
+#include <linaos/sockios.h>
+#include <linaos/caif/if_caif.h>
 #include <net/rtnetlink.h>
 #include <net/caif/caif_layer.h>
 #include <net/caif/cfpkt.h>

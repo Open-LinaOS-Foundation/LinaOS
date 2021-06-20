@@ -10,15 +10,15 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/interrupt.h>
-#include <linux/extable.h>
-#include <linux/uaccess.h>
-#include <linux/hugetlb.h>
-#include <linux/perf_event.h>
+#include <linaos/mm.h>
+#include <linaos/ptrace.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/interrupt.h>
+#include <linaos/extable.h>
+#include <linaos/uaccess.h>
+#include <linaos/hugetlb.h>
+#include <linaos/perf_event.h>
 
 #include <asm/traps.h>
 

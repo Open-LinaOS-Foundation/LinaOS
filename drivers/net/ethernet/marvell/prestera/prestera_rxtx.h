@@ -4,7 +4,7 @@
 #ifndef _PRESTERA_RXTX_H_
 #define _PRESTERA_RXTX_H_
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 
 struct prestera_switch;
 struct prestera_port;

@@ -7,12 +7,12 @@
  * Datasheet: https://www.ti.com/lit/ds/symlink/ads8344.pdf
  */
 
-#include <linux/delay.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linaos/delay.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/module.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/spi/spi.h>
 
 #define ADS8344_START BIT(7)
 #define ADS8344_SINGLE_END BIT(2)

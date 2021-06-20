@@ -7,18 +7,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/socket.h>
-#include <linux/sctp.h>
-#include <linux/proc_fs.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/kfifo.h>
-#include <linux/time.h>
+#include <linaos/kernel.h>
+#include <linaos/kprobes.h>
+#include <linaos/socket.h>
+#include <linaos/sctp.h>
+#include <linaos/proc_fs.h>
+#include <linaos/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/kfifo.h>
+#include <linaos/time.h>
 #include <net/net_namespace.h>
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/checksum.h>
 #include <net/protocol.h>

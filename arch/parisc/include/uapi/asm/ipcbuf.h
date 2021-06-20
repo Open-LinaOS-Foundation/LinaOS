@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __PARISC_IPCBUF_H__
 #define __PARISC_IPCBUF_H__
 
 #include <asm/bitsperlong.h>
-#include <linux/posix_types.h>
+#include <linaos/posix_types.h>
 
 /*
  * The ipc64_perm structure for PA-RISC is almost identical to

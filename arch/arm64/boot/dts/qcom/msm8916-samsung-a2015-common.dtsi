@@ -33,13 +33,13 @@
 		volume-up {
 			label = "Volume Up";
 			gpios = <&msmgpio 107 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 		};
 
 		home {
 			label = "Home";
 			gpios = <&msmgpio 109 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOMEPAGE>;
+			linaos,code = <KEY_HOMEPAGE>;
 		};
 	};
 
@@ -54,9 +54,9 @@
 		hall-sensor {
 			label = "Hall Effect Sensor";
 			gpios = <&msmgpio 52 GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
-			linux,can-disable;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_LID>;
+			linaos,can-disable;
 		};
 	};
 
@@ -138,7 +138,7 @@
 
 &pm8916_resin {
 	status = "okay";
-	linux,code = <KEY_VOLUMEDOWN>;
+	linaos,code = <KEY_VOLUMEDOWN>;
 };
 
 &pronto {

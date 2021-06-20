@@ -4,7 +4,7 @@
  * Author: Paul Burton <paul.burton@mips.com>
  */
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include <asm/cmpxchg.h>
 
 unsigned long __xchg_small(volatile void *ptr, unsigned long val, unsigned int size)

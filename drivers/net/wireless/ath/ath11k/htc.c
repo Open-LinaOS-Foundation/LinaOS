@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The LinaOS Foundation. All rights reserved.
  */
-#include <linux/skbuff.h>
-#include <linux/ctype.h>
+#include <linaos/skbuff.h>
+#include <linaos/ctype.h>
 
 #include "debug.h"
 #include "hif.h"

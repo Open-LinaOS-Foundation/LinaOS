@@ -52,13 +52,13 @@
  *		- Support for STREAMON before QBUF
  *		- Support for control ioctls
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
 #include <media/v4l2-common.h>
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <media/davinci/vpfe_capture.h>
 #include "ccdc_hw_device.h"
 
@@ -74,7 +74,7 @@ MODULE_PARM_DESC(numbuffers, "buffer count (default:3)");
 MODULE_PARM_DESC(bufsize, "buffer size in bytes (default:720 x 576 x 2)");
 MODULE_PARM_DESC(debug, "Debug level 0-1");
 
-MODULE_DESCRIPTION("VPFE Video for Linux Capture Driver");
+MODULE_DESCRIPTION("VPFE Video for LinaOS Capture Driver");
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Texas Instruments");
 

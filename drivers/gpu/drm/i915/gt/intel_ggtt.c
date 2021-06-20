@@ -3,7 +3,7 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/stop_machine.h>
+#include <linaos/stop_machine.h>
 
 #include <asm/set_memory.h>
 #include <asm/smp.h>

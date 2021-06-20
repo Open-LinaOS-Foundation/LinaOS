@@ -6,7 +6,7 @@
  ******************************************************************************/
 #define _RTW_MLME_C_
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 
 #include <osdep_service.h>
 #include <drv_types.h>
@@ -18,7 +18,7 @@
 #include <wifi.h>
 #include <wlan_bssdef.h>
 #include <rtw_ioctl_set.h>
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 
 extern const u8 MCS_rate_1R[16];
 

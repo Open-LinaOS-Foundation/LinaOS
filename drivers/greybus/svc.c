@@ -6,9 +6,9 @@
  * Copyright 2015 Linaro Ltd.
  */
 
-#include <linux/debugfs.h>
-#include <linux/workqueue.h>
-#include <linux/greybus.h>
+#include <linaos/debugfs.h>
+#include <linaos/workqueue.h>
+#include <linaos/greybus.h>
 
 #define SVC_INTF_EJECT_TIMEOUT		9000
 #define SVC_INTF_ACTIVATE_TIMEOUT	6000

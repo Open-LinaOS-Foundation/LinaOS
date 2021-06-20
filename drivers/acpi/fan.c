@@ -6,15 +6,15 @@
  *  Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/thermal.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
-#include <linux/sort.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
+#include <linaos/thermal.h>
+#include <linaos/acpi.h>
+#include <linaos/platform_device.h>
+#include <linaos/sort.h>
 
 MODULE_AUTHOR("Paul Diefenbaugh");
 MODULE_DESCRIPTION("ACPI Fan Driver");

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright 2015-2020 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
@@ -6,18 +6,18 @@
 #ifndef ENA_COM
 #define ENA_COM
 
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/prefetch.h>
-#include <linux/sched.h>
-#include <linux/sizes.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/netdevice.h>
+#include <linaos/compiler.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/gfp.h>
+#include <linaos/io.h>
+#include <linaos/prefetch.h>
+#include <linaos/sched.h>
+#include <linaos/sizes.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
+#include <linaos/netdevice.h>
 
 #include "ena_common_defs.h"
 #include "ena_admin_defs.h"

@@ -1,5 +1,5 @@
 /* ----------------------------------------------------------------------------
-Linux PCMCIA ethernet adapter driver for the New Media Ethernet LAN.
+LinaOS PCMCIA ethernet adapter driver for the New Media Ethernet LAN.
   nmclan_cs.c,v 0.16 1995/07/01 06:42:17 rpao Exp rpao
 
   The Ethernet LAN uses the Advanced Micro Devices (AMD) Am79C940 Media
@@ -8,12 +8,12 @@ Linux PCMCIA ethernet adapter driver for the New Media Ethernet LAN.
 
 Written by Roger C. Pao <rpao@paonet.org>
   Copyright 1995 Roger C. Pao
-  Linux 2.5 cleanups Copyright Red Hat 2003
+  LinaOS 2.5 cleanups Copyright Red Hat 2003
 
   This software may be used and distributed according to the terms of
   the GNU General Public License.
 
-Ported to Linux 1.3.* network driver environment by
+Ported to LinaOS 1.3.* network driver environment by
   Matti Aarnio <mea@utu.fi>
 
 References
@@ -21,8 +21,8 @@ References
   Am2150 Technical Reference Manual, Revision 1.0, August 17, 1993
   Am79C940 (MACE) Data Sheet, 1994
   Am79C90 (C-LANCE) Data Sheet, 1994
-  Linux PCMCIA Programmer's Guide v1.17
-  /usr/src/linux/net/inet/dev.c, Linux kernel 1.2.8
+  LinaOS PCMCIA Programmer's Guide v1.17
+  /usr/src/linaos/net/inet/dev.c, LinaOS kernel 1.2.8
 
   Eric Mears, New Media Corporation
   Tom Pollard, New Media Corporation
@@ -31,10 +31,10 @@ References
   Donald Becker <becker@scyld.com>
   David Hinds <dahinds@users.sourceforge.net>
 
-  The Linux client driver is based on the 3c589_cs.c client driver by
+  The LinaOS client driver is based on the 3c589_cs.c client driver by
   David Hinds.
 
-  The Linux network driver outline is based on the 3c589_cs.c driver,
+  The LinaOS network driver outline is based on the 3c589_cs.c driver,
   the 8390.c driver, and the example skeleton.c kernel code, which are
   by Donald Becker.
 
@@ -50,7 +50,7 @@ Driver Notes and Issues
 
 1. Developed on a Dell 320SLi
    PCMCIA Card Services 2.6.2
-   Linux dell 1.2.10 #1 Thu Jun 29 20:23:41 PDT 1995 i386
+   LinaOS dell 1.2.10 #1 Thu Jun 29 20:23:41 PDT 1995 i386
 
 2. rc.pcmcia may require loading pcmcia_core with io_speed=300:
    'insmod pcmcia_core.o io_speed=300'.
@@ -128,28 +128,28 @@ Conditional Compilation Options
 Include Files
 ---------------------------------------------------------------------------- */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/in.h>
+#include <linaos/delay.h>
+#include <linaos/ethtool.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_arp.h>
+#include <linaos/ioport.h>
+#include <linaos/bitops.h>
 
 #include <pcmcia/cisreg.h>
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 
 /* ----------------------------------------------------------------------------
@@ -828,7 +828,7 @@ mace_start_xmit
 	This routine begins the packet transmit function.  When completed,
 	it will generate a transmit interrupt.
 
-	According to /usr/src/linux/net/inet/dev.c, if _start_xmit
+	According to /usr/src/linaos/net/inet/dev.c, if _start_xmit
 	returns 0, the "packet is now solely the responsibility of the
 	driver."  If _start_xmit returns non-zero, the "transmission
 	failed, put skb back into a list."
@@ -1127,11 +1127,11 @@ static int mace_rx(struct net_device *dev, unsigned char RxCnt)
 } /* mace_rx */
 
 /* ----------------------------------------------------------------------------
-pr_linux_stats
+pr_linaos_stats
 ---------------------------------------------------------------------------- */
-static void pr_linux_stats(struct net_device_stats *pstats)
+static void pr_linaos_stats(struct net_device_stats *pstats)
 {
-  pr_debug("pr_linux_stats\n");
+  pr_debug("pr_linaos_stats\n");
   pr_debug(" rx_packets=%-7ld        tx_packets=%ld\n",
 	(long)pstats->rx_packets, (long)pstats->tx_packets);
   pr_debug(" rx_errors=%-7ld         tx_errors=%ld\n",
@@ -1154,7 +1154,7 @@ static void pr_linux_stats(struct net_device_stats *pstats)
 	(long)pstats->tx_fifo_errors, (long)pstats->tx_heartbeat_errors);
   pr_debug(" tx_window_errors=%ld\n",
 	(long)pstats->tx_window_errors);
-} /* pr_linux_stats */
+} /* pr_linaos_stats */
 
 /* ----------------------------------------------------------------------------
 pr_mace_stats
@@ -1270,7 +1270,7 @@ static struct net_device_stats *mace_get_stats(struct net_device *dev)
   update_stats(dev->base_addr, dev);
 
   pr_debug("%s: updating the statistics.\n", dev->name);
-  pr_linux_stats(&dev->stats);
+  pr_linaos_stats(&dev->stats);
   pr_mace_stats(&lp->mace_stats);
 
   return &dev->stats;

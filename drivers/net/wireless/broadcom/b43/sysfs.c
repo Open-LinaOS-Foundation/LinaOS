@@ -10,8 +10,8 @@
 
 */
 
-#include <linux/capability.h>
-#include <linux/io.h>
+#include <linaos/capability.h>
+#include <linaos/io.h>
 
 #include "b43.h"
 #include "sysfs.h"

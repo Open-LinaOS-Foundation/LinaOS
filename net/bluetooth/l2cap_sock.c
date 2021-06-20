@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for LinaOS
    Copyright (C) 2000-2001 Qualcomm Incorporated
    Copyright (C) 2009-2010 Gustavo F. Padovan <gustavo@padovan.org>
    Copyright (C) 2010 Google Inc.
@@ -27,9 +27,9 @@
 
 /* Bluetooth L2CAP sockets. */
 
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/sched/signal.h>
+#include <linaos/module.h>
+#include <linaos/export.h>
+#include <linaos/sched/signal.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

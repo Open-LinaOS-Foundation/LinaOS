@@ -11,7 +11,7 @@
 #ifndef __LINUX_RAWNAND_INTERNALS
 #define __LINUX_RAWNAND_INTERNALS
 
-#include <linux/mtd/rawnand.h>
+#include <linaos/mtd/rawnand.h>
 
 /*
  * NAND Flash Manufacturer ID Codes

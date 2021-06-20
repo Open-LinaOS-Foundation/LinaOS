@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Linux Guest Relocation (LGR) detection
+ * LinaOS Guest Relocation (LGR) detection
  *
  * Copyright IBM Corp. 2012
- * Author(s): Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author(s): Michael Holzheu <holzheu@linaos.vnet.ibm.com>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
 #include <asm/facility.h>
 #include <asm/sysinfo.h>
 #include <asm/ebcdic.h>

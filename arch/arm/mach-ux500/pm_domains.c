@@ -6,11 +6,11 @@
  *
  * Implements PM domains using the generic PM domain for ux500.
  */
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/pm_domain.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/pm_domain.h>
 
 #include <dt-bindings/arm/ux500_pm_domains.h>
 #include "pm_domains.h"

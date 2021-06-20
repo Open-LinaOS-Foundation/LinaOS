@@ -6,30 +6,30 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/cache.h>
-#include <linux/mman.h>
-#include <linux/nodemask.h>
-#include <linux/initrd.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/sort.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/efi.h>
-#include <linux/swiotlb.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
-#include <linux/hugetlb.h>
-#include <linux/acpi_iort.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/errno.h>
+#include <linaos/swap.h>
+#include <linaos/init.h>
+#include <linaos/cache.h>
+#include <linaos/mman.h>
+#include <linaos/nodemask.h>
+#include <linaos/initrd.h>
+#include <linaos/gfp.h>
+#include <linaos/memblock.h>
+#include <linaos/sort.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/dma-direct.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/efi.h>
+#include <linaos/swiotlb.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm.h>
+#include <linaos/kexec.h>
+#include <linaos/crash_dump.h>
+#include <linaos/hugetlb.h>
+#include <linaos/acpi_iort.h>
 
 #include <asm/boot.h>
 #include <asm/fixmap.h>
@@ -40,7 +40,7 @@
 #include <asm/numa.h>
 #include <asm/sections.h>
 #include <asm/setup.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 #include <asm/tlb.h>
 #include <asm/alternative.h>
 #include <asm/xen/swiotlb-xen.h>
@@ -134,7 +134,7 @@ static int __init early_init_dt_scan_elfcorehdr(unsigned long node,
 	if (depth != 1 || strcmp(uname, "chosen") != 0)
 		return 0;
 
-	reg = of_get_flat_dt_prop(node, "linux,elfcorehdr", &len);
+	reg = of_get_flat_dt_prop(node, "linaos,elfcorehdr", &len);
 	if (!reg || (len < (dt_root_addr_cells + dt_root_size_cells)))
 		return 1;
 
@@ -283,7 +283,7 @@ static int __init early_init_dt_scan_usablemem(unsigned long node,
 	if (depth != 1 || strcmp(uname, "chosen") != 0)
 		return 0;
 
-	reg = of_get_flat_dt_prop(node, "linux,usable-memory-range", &len);
+	reg = of_get_flat_dt_prop(node, "linaos,usable-memory-range", &len);
 	if (!reg || (len < (dt_root_addr_cells + dt_root_size_cells)))
 		return 1;
 
@@ -309,7 +309,7 @@ void __init arm64_memblock_init(void)
 {
 	const s64 linear_region_size = PAGE_END - _PAGE_OFFSET(vabits_actual);
 
-	/* Handle linux,usable-memory-range property */
+	/* Handle linaos,usable-memory-range property */
 	fdt_enforce_memory_region();
 
 	/* Remove memory above our supported physical address size */

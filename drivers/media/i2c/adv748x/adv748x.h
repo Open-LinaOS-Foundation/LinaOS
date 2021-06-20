@@ -18,7 +18,7 @@
  *       ADV7482      X        X          X       X
  */
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 #ifndef _ADV748X_H_
 #define _ADV748X_H_

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * INET		An implementation of the TCP/IP protocol suite for the LINUX
  *		operating system.  INET is implemented using the  BSD Socket
@@ -17,7 +17,7 @@
  */
 #ifndef _UAPI_LINUX_IP_H
 #define _UAPI_LINUX_IP_H
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 
 #define IPTOS_TOS_MASK		0x1E

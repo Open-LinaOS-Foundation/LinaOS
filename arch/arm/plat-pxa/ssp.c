@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/ssp.c
+ *  linaos/arch/arm/mach-pxa/ssp.c
  *
- *  based on linux/arch/arm/mach-sa1100/ssp.c by Russell King
+ *  based on linaos/arch/arm/mach-sa1100/ssp.c by Russell King
  *
  *  Copyright (C) 2003 Russell King.
  *  Copyright (C) 2003 Wolfson Microelectronics PLC
@@ -13,22 +13,22 @@
  *  Author: Liam Girdwood <liam.girdwood@wolfsonmicro.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/spi/pxa2xx_spi.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 #include <asm/irq.h>
 

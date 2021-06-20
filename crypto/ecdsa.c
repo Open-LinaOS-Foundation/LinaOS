@@ -3,12 +3,12 @@
  * Copyright (c) 2021 IBM Corporation
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <crypto/internal/akcipher.h>
 #include <crypto/akcipher.h>
 #include <crypto/ecdh.h>
-#include <linux/asn1_decoder.h>
-#include <linux/scatterlist.h>
+#include <linaos/asn1_decoder.h>
+#include <linaos/scatterlist.h>
 
 #include "ecc.h"
 #include "ecdsasignature.asn1.h"
@@ -371,6 +371,6 @@ subsys_initcall(ecdsa_init);
 module_exit(ecdsa_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Stefan Berger <stefanb@linux.ibm.com>");
+MODULE_AUTHOR("Stefan Berger <stefanb@linaos.ibm.com>");
 MODULE_DESCRIPTION("ECDSA generic algorithm");
 MODULE_ALIAS_CRYPTO("ecdsa-generic");

@@ -5,16 +5,16 @@
  * Rework for mainline by Oliver Hartkopp <socketcan@hartkopp.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
 #include "sja1000.h"
 
 #define DRV_NAME "ems_pcmcia"

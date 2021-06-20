@@ -7,7 +7,7 @@
 #ifndef _MALIDP_IO_H_
 #define _MALIDP_IO_H_
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 static inline u32
 malidp_read32(u32 __iomem *base, u32 offset)

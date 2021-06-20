@@ -9,8 +9,8 @@
 #include "e1000.h"
 
 #ifdef CONFIG_E1000E_HWTS
-#include <linux/clocksource.h>
-#include <linux/ktime.h>
+#include <linaos/clocksource.h>
+#include <linaos/ktime.h>
 #include <asm/tsc.h>
 #endif
 

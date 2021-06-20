@@ -5,13 +5,13 @@
 // Copyright (C) 2014 Samsung Electronics
 // Krzysztof Kozlowski <krzk@kernel.org>
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/mfd/max77693.h>
-#include <linux/mfd/max77693-common.h>
-#include <linux/mfd/max77693-private.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/max77693.h>
+#include <linaos/mfd/max77693-common.h>
+#include <linaos/mfd/max77693-private.h>
 
 #define MAX77693_CHARGER_NAME				"max77693-charger"
 static const char *max77693_charger_model		= "MAX77693";

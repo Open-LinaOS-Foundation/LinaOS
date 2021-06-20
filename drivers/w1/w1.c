@@ -3,23 +3,23 @@
  * Copyright (c) 2004 Evgeniy Polyakov <zbr@ioremap.net>
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/hwmon.h>
-#include <linux/of.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/hwmon.h>
+#include <linaos/of.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #include "w1_internal.h"
 #include "w1_netlink.h"

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/mm/fault.c
+ *  linaos/arch/m68k/mm/fault.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  */
 
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/perf_event.h>
 
 #include <asm/setup.h>
 #include <asm/traps.h>

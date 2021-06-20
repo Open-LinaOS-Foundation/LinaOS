@@ -6,8 +6,8 @@
 #ifndef _ASM_RISCV_PGTABLE_H
 #define _ASM_RISCV_PGTABLE_H
 
-#include <linux/mmzone.h>
-#include <linux/sizes.h>
+#include <linaos/mmzone.h>
+#include <linaos/sizes.h>
 
 #include <asm/pgtable-bits.h>
 
@@ -85,7 +85,7 @@
 #include <asm-generic/pgtable-nopud.h>
 #include <asm/page.h>
 #include <asm/tlbflush.h>
-#include <linux/mm_types.h>
+#include <linaos/mm_types.h>
 
 #ifdef CONFIG_64BIT
 #include <asm/pgtable-64.h>
@@ -490,7 +490,7 @@ static inline int ptep_clear_flush_young(struct vm_area_struct *vma,
 #define __swp_entry_to_pte(x)	((pte_t) { (x).val })
 
 /*
- * In the RV64 Linux scheme, we give the user half of the virtual-address space
+ * In the RV64 LinaOS scheme, we give the user half of the virtual-address space
  * and give the kernel the other (upper) half.
  */
 #ifdef CONFIG_64BIT

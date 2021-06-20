@@ -9,7 +9,7 @@
 #ifndef __KVM_IRQ_H
 #define __KVM_IRQ_H
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 static inline int irqchip_in_kernel(struct kvm *kvm)
 {

@@ -33,19 +33,19 @@ struct kmem_cache {
 #endif /* CONFIG_SLOB */
 
 #ifdef CONFIG_SLAB
-#include <linux/slab_def.h>
+#include <linaos/slab_def.h>
 #endif
 
 #ifdef CONFIG_SLUB
-#include <linux/slub_def.h>
+#include <linaos/slub_def.h>
 #endif
 
-#include <linux/memcontrol.h>
-#include <linux/fault-inject.h>
-#include <linux/kasan.h>
-#include <linux/kmemleak.h>
-#include <linux/random.h>
-#include <linux/sched/mm.h>
+#include <linaos/memcontrol.h>
+#include <linaos/fault-inject.h>
+#include <linaos/kasan.h>
+#include <linaos/kmemleak.h>
+#include <linaos/random.h>
+#include <linaos/sched/mm.h>
 
 /*
  * State of the slab allocator.

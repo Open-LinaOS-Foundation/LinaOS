@@ -6,8 +6,8 @@
  */
 
 #include <net/sock.h>
-#include <linux/list.h>
-#include <linux/kthread.h>
+#include <linaos/list.h>
+#include <linaos/kthread.h>
 
 #include "usbip_common.h"
 #include "vudc.h"

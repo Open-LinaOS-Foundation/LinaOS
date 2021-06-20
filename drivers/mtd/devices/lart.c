@@ -14,7 +14,7 @@
  *           - January 2000
  *
  *    [2] MTD internal API documentation
- *           - http://www.linux-mtd.infradead.org/ 
+ *           - http://www.linaos-mtd.infradead.org/ 
  *
  * Limitations:
  *
@@ -31,14 +31,14 @@
 /* debugging */
 //#define LART_DEBUG
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
 
 #ifndef CONFIG_SA1100_LART
 #error This is for LART architecture only
@@ -68,7 +68,7 @@ static char module_name[] = "lart";
 
 /* general */
 #define BUSWIDTH			4				/* don't change this - a lot of the code _will_ break if you change this */
-#define FLASH_OFFSET		0xe8000000		/* see linux/arch/arm/mach-sa1100/lart.c */
+#define FLASH_OFFSET		0xe8000000		/* see linaos/arch/arm/mach-sa1100/lart.c */
 
 /* blob */
 #define NUM_BLOB_BLOCKS		FLASH_NUMBLOCKS_16m_PARAM

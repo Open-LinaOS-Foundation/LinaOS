@@ -2,18 +2,18 @@
 /*
  * Driver for MAX31730 3-Channel Remote Temperature Sensor
  *
- * Copyright (c) 2019 Guenter Roeck <linux@roeck-us.net>
+ * Copyright (c) 2019 Guenter Roeck <linaos@roeck-us.net>
  */
 
-#include <linux/bits.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/hwmon.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/bits.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/hwmon.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 
 /* Addresses scanned */
 static const unsigned short normal_i2c[] = { 0x1c, 0x1d, 0x1e, 0x1f, 0x4c,
@@ -435,6 +435,6 @@ static struct i2c_driver max31730_driver = {
 
 module_i2c_driver(max31730_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linaos@roeck-us.net>");
 MODULE_DESCRIPTION("MAX31730 driver");
 MODULE_LICENSE("GPL");

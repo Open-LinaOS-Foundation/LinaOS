@@ -9,26 +9,26 @@
  * the reader.
  */
 
-#include <linux/module.h> /* for EXPORT_SYMBOL */
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/errno.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/netdevice.h>
-#include <linux/atmclip.h>
-#include <linux/init.h> /* for __init */
-#include <linux/slab.h>
+#include <linaos/module.h> /* for EXPORT_SYMBOL */
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/stat.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/errno.h>
+#include <linaos/atm.h>
+#include <linaos/atmdev.h>
+#include <linaos/netdevice.h>
+#include <linaos/atmclip.h>
+#include <linaos/init.h> /* for __init */
+#include <linaos/slab.h>
 #include <net/net_namespace.h>
 #include <net/atmclip.h>
-#include <linux/uaccess.h>
-#include <linux/param.h> /* for HZ */
-#include <linux/atomic.h>
+#include <linaos/uaccess.h>
+#include <linaos/param.h> /* for HZ */
+#include <linaos/atomic.h>
 #include "resources.h"
 #include "common.h" /* atm_proc_init prototype */
 #include "signaling.h" /* to get sigd - ugly too */

@@ -5,14 +5,14 @@
  * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/pm.h>
-#include <linux/memblock.h>
-#include <linux/cpuidle.h>
-#include <linux/cpufreq.h>
-#include <linux/memory_hotplug.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/pm.h>
+#include <linaos/memblock.h>
+#include <linaos/cpuidle.h>
+#include <linaos/cpufreq.h>
+#include <linaos/memory_hotplug.h>
 
 #include <asm/elf.h>
 #include <asm/vdso.h>

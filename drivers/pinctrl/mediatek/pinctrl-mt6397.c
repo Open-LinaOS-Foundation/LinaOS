@@ -4,13 +4,13 @@
  * Author: Hongzhou.Yang <hongzhou.yang@mediatek.com>
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/mfd/mt6397/core.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/mfd/mt6397/core.h>
 
 #include "pinctrl-mtk-common.h"
 #include "pinctrl-mtk-mt6397.h"

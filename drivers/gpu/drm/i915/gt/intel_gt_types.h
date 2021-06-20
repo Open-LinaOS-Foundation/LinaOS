@@ -6,14 +6,14 @@
 #ifndef __INTEL_GT_TYPES__
 #define __INTEL_GT_TYPES__
 
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/llist.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/ktime.h>
+#include <linaos/list.h>
+#include <linaos/llist.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
 #include "uc/intel_uc.h"
 

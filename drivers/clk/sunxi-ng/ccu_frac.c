@@ -4,9 +4,9 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
 
 #include "ccu_frac.h"
 

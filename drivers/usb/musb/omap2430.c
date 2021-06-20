@@ -6,23 +6,23 @@
  * Copyright (C) 2006 Nokia Corporation
  * Tony Lindgren <tony@atomide.com>
  *
- * This file is part of the Inventra Controller Driver for Linux.
+ * This file is part of the Inventra Controller Driver for LinaOS.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/usb/musb.h>
-#include <linux/phy/omap_control_phy.h>
-#include <linux/of_platform.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/usb/musb.h>
+#include <linaos/phy/omap_control_phy.h>
+#include <linaos/of_platform.h>
 
 #include "musb_core.h"
 #include "omap2430.h"

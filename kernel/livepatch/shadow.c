@@ -31,9 +31,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/hashtable.h>
-#include <linux/slab.h>
-#include <linux/livepatch.h>
+#include <linaos/hashtable.h>
+#include <linaos/slab.h>
+#include <linaos/livepatch.h>
 
 static DEFINE_HASHTABLE(klp_shadow_hash, 12);
 

@@ -17,7 +17,7 @@ than a straight-forward I2C bus with one adapter and one or more devices.
 Etc
 ===
 
-These constructs are represented as I2C adapter trees by Linux, where
+These constructs are represented as I2C adapter trees by LinaOS, where
 each adapter has a parent adapter (except the root adapter) and zero or
 more child adapters. The root adapter is the actual adapter that issues
 I2C transfers, and all adapters with a parent are part of an "i2c-mux"

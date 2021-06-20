@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2012 ARM Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ftrace.h>
-#include <linux/kprobes.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/stacktrace.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/ftrace.h>
+#include <linaos/kprobes.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/stacktrace.h>
 
 #include <asm/irq.h>
 #include <asm/pointer_auth.h>

@@ -7,9 +7,9 @@
 
   */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/dvb/frontend.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/dvb/frontend.h>
 #include <asm/types.h>
 
 #include "stb6000.h"

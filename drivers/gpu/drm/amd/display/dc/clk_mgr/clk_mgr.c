@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "dal_asic_id.h"
 #include "dc_types.h"

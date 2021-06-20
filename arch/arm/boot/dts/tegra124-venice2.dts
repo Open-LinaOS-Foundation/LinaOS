@@ -629,7 +629,7 @@
 			reg = <0x4b>;
 			interrupt-parent = <&gpio>;
 			interrupts = <TEGRA_GPIO(W, 3) IRQ_TYPE_LEVEL_LOW>;
-			linux,gpio-keymap = <0 0 0 BTN_LEFT>;
+			linaos,gpio-keymap = <0 0 0 BTN_LEFT>;
 		};
 	};
 
@@ -1073,7 +1073,7 @@
 		power {
 			label = "Power";
 			gpios = <&gpio TEGRA_GPIO(Q, 0) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			debounce-interval = <10>;
 			wakeup-source;
 		};

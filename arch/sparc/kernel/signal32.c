@@ -8,21 +8,21 @@
  *  Copyright (C) 1997,1998 Jakub Jelinek   (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/compat.h>
-#include <linux/bitops.h>
-#include <linux/tracehook.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/errno.h>
+#include <linaos/wait.h>
+#include <linaos/ptrace.h>
+#include <linaos/unistd.h>
+#include <linaos/mm.h>
+#include <linaos/tty.h>
+#include <linaos/binfmts.h>
+#include <linaos/compat.h>
+#include <linaos/bitops.h>
+#include <linaos/tracehook.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/ptrace.h>
 #include <asm/psrcompat.h>
 #include <asm/fpumacro.h>

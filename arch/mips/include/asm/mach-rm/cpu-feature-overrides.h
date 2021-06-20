@@ -3,7 +3,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2003, 04, 07 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2003, 04, 07 Ralf Baechle (ralf@linaos-mips.org)
  *
  * SNI RM200 C apparently was only shipped with R4600 V2.0 and R5000 processors.
  */

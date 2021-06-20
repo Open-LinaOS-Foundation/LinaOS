@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: (BSD-3-Clause OR GPL-2.0-only)
 /* Copyright(c) 2014 - 2020 Intel Corporation */
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/bitops.h>
-#include <linux/pci.h>
-#include <linux/cdev.h>
-#include <linux/uaccess.h>
-#include <linux/crypto.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/bitops.h>
+#include <linaos/pci.h>
+#include <linaos/cdev.h>
+#include <linaos/uaccess.h>
+#include <linaos/crypto.h>
 
 #include "adf_accel_devices.h"
 #include "adf_common_drv.h"

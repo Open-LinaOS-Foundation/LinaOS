@@ -5,41 +5,41 @@
  * Copyright Alan Cox GW4PTS (alan@lxorguk.ukuu.org.uk)
  * Copyright Darryl Miles G7LED (dlm@g7led.demon.co.uk)
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/stat.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/timer.h>
+#include <linaos/string.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/stat.h>
 #include <net/ax25.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/skbuff.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
-#include <linux/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/termios.h>	/* For TIOCINQ/OUTQ */
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
+#include <linaos/uaccess.h>
+#include <linaos/fcntl.h>
+#include <linaos/termios.h>	/* For TIOCINQ/OUTQ */
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/notifier.h>
 #include <net/netrom.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 #include <net/ip.h>
 #include <net/tcp_states.h>
 #include <net/arp.h>
-#include <linux/init.h>
+#include <linaos/init.h>
 
 static int nr_ndevs = 4;
 

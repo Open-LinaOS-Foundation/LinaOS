@@ -7,11 +7,11 @@
 #ifndef _LINUX_IF_VLAN_H_
 #define _LINUX_IF_VLAN_H_
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/bug.h>
-#include <uapi/linux/if_vlan.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/bug.h>
+#include <uapi/linaos/if_vlan.h>
 
 #define VLAN_HLEN	4		/* The additional bytes required by VLAN
 					 * (in addition to the Ethernet header)
@@ -53,7 +53,7 @@ struct vlan_ethhdr {
 	__be16		h_vlan_encapsulated_proto;
 };
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 static inline struct vlan_ethhdr *vlan_eth_hdr(const struct sk_buff *skb)
 {

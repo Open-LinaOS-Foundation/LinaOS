@@ -41,9 +41,9 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/ktime.h>
-#include <linux/skbuff.h>
+#include <linaos/types.h>
+#include <linaos/ktime.h>
+#include <linaos/skbuff.h>
 #include <net/pkt_sched.h>
 #include <net/inet_ecn.h>
 
@@ -52,7 +52,7 @@
  * Source : Kathleen Nichols and Van Jacobson
  * http://queue.acm.org/detail.cfm?id=2209336
  *
- * Implemented on linux by Dave Taht and Eric Dumazet
+ * Implemented on linaos by Dave Taht and Eric Dumazet
  */
 
 

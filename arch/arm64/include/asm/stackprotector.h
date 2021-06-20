@@ -13,8 +13,8 @@
 #ifndef __ASM_STACKPROTECTOR_H
 #define __ASM_STACKPROTECTOR_H
 
-#include <linux/random.h>
-#include <linux/version.h>
+#include <linaos/random.h>
+#include <linaos/version.h>
 #include <asm/pointer_auth.h>
 
 extern unsigned long __stack_chk_guard;

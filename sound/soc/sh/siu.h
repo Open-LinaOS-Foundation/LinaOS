@@ -28,7 +28,7 @@
 #define PRAM0_SIZE		(0x0100 / 4)		/* 64 */
 #define PRAM1_SIZE		((0x2000 - 0x0100) / 4)	/* 1984 */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct siu_spb_param {
 	__u32	ab1a;	/* input FIFO address */
@@ -54,10 +54,10 @@ struct siu_firmware {
 
 #ifdef __KERNEL__
 
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/sh_dma.h>
+#include <linaos/dmaengine.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/sh_dma.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

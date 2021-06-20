@@ -23,7 +23,7 @@ Optional child properties:
 	- function : see Documentation/devicetree/bindings/leds/common.txt
 	- color : see Documentation/devicetree/bindings/leds/common.txt
 	- label : see Documentation/devicetree/bindings/leds/common.txt (deprecated)
-	- linux,default-trigger :
+	- linaos,default-trigger :
 	   see Documentation/devicetree/bindings/leds/common.txt
 
 Example:
@@ -42,7 +42,7 @@ led-controller@2d {
 		reg = <0>;
 		function = LED_FUNCTION_BACKLIGHT;
 		color = <LED_COLOR_ID_WHITE>;
-		linux,default-trigger = "backlight";
+		linaos,default-trigger = "backlight";
 	};
 }
 

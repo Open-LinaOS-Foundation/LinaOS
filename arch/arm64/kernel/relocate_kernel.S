@@ -6,8 +6,8 @@
  * Copyright (C) Huawei Futurewei Technologies.
  */
 
-#include <linux/kexec.h>
-#include <linux/linkage.h>
+#include <linaos/kexec.h>
+#include <linaos/linkage.h>
 
 #include <asm/assembler.h>
 #include <asm/kexec.h>

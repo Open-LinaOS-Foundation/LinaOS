@@ -12,16 +12,16 @@
  * https://www.robot-electronics.co.uk/htm/srf02tech.htm
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
 
 /* registers of SRF08 device */
 #define SRF08_WRITE_COMMAND	0x00	/* Command Register */

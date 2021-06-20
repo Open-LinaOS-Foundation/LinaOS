@@ -5,21 +5,21 @@
 //
 // http://www.simtec.co.uk/products/EB2410ITX/
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/syscore_ops.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/gpio.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/platform_device.h>
+#include <linaos/reboot.h>
+#include <linaos/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

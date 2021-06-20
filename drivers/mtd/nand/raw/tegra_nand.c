@@ -5,19 +5,19 @@
  * Copyright (C) 2012 Avionic Design GmbH
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
 
 #define COMMAND					0x00
 #define   COMMAND_GO				BIT(31)

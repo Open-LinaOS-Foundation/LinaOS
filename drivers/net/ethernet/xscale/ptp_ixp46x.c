@@ -4,17 +4,17 @@
  *
  * Copyright (C) 2010 OMICRON electronics GmbH
  */
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
-#include <linux/ptp_clock_kernel.h>
+#include <linaos/ptp_clock_kernel.h>
 
 #include "ixp46x_ts.h"
 

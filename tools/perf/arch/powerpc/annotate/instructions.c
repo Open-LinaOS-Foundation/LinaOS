@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 static struct ins_ops *powerpc__associate_instruction_ops(struct arch *arch, const char *name)
 {

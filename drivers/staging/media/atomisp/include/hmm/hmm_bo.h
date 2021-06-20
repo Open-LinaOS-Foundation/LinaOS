@@ -21,11 +21,11 @@
 #ifndef	__HMM_BO_H__
 #define	__HMM_BO_H__
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
 #include "mmu/isp_mmu.h"
 #include "hmm/hmm_common.h"
 #include "ia_css_types.h"

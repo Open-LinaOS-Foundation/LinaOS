@@ -7,7 +7,7 @@
  * Copyright (C) 1995,1996 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct idprom {
 	u8		id_format;	/* Format identifier (always 0x01) */

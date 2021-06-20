@@ -6,7 +6,7 @@ Idea behind the dvb-usb-framework
 .. note::
 
    #) This documentation is outdated. Please check at the DVB wiki
-      at https://linuxtv.org/wiki for more updated info.
+      at https://linaostv.org/wiki for more updated info.
 
    #) **deprecated:** Newer DVB USB drivers should use the dvb-usb-v2 framework.
 
@@ -50,9 +50,9 @@ feeds requested.
 Supported devices
 -----------------
 
-See the LinuxTV DVB Wiki at https://linuxtv.org for a complete list of
+See the LinaOSTV DVB Wiki at https://linaostv.org for a complete list of
 cards/drivers/firmwares:
-https://linuxtv.org/wiki/index.php/DVB_USB
+https://linaostv.org/wiki/index.php/DVB_USB
 
 0. History & News:
 
@@ -233,12 +233,12 @@ working.
 Have a look at the Wikipage for the DVB-USB-drivers to find out, which firmware
 you need for your device:
 
-https://linuxtv.org/wiki/index.php/DVB_USB
+https://linaostv.org/wiki/index.php/DVB_USB
 
 Compiling
 ~~~~~~~~~
 
-Since the driver is in the linux kernel, activating the driver in
+Since the driver is in the linaos kernel, activating the driver in
 your favorite config-environment should sufficient. I recommend
 to compile the driver as module. Hotplug does the rest.
 
@@ -335,7 +335,7 @@ Patches, comments and suggestions are very very welcome.
 
    Glen Harris for bringing up, that there is a new dibusb-device and Jiun-Kuei
    Jung from AVerMedia who kindly provided a special firmware to get the device
-   up and running in Linux.
+   up and running in LinaOS.
 
    Jennifer Chen, Jeff and Jack from Twinhan for kindly supporting by
    writing the vp7045-driver.
@@ -345,7 +345,7 @@ Patches, comments and suggestions are very very welcome.
 
    Michael Paxton for submitting remote control keymaps.
 
-   Some guys on the linux-dvb mailing list for encouraging me.
+   Some guys on the linaos-dvb mailing list for encouraging me.
 
    Peter Schildmann >peter.schildmann-nospam-at-web.de< for his
    user-level firmware loader, which saves a lot of time

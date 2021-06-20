@@ -15,7 +15,7 @@
  * read, write 1 to clear.  M_SYNDROME and E_SYNDROME are read-only.
  */
 
-/* Software bit set by linux trap handlers to indicate that the trap was
+/* Software bit set by linaos trap handlers to indicate that the trap was
  * signalled at %tl >= 1.
  */
 #define CHAFSR_TL1		(1UL << 63UL) /* n/a */

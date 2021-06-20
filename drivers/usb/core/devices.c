@@ -36,14 +36,14 @@
  *   per device, not per bus
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/usb.h>
-#include <linux/usbdevice_fs.h>
-#include <linux/usb/hcd.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/gfp.h>
+#include <linaos/usb.h>
+#include <linaos/usbdevice_fs.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
 
 #include "usb.h"
 

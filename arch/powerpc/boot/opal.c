@@ -24,7 +24,7 @@ int64_t opal_console_write_buffer_space(uint64_t term_number, uint64_t *length);
 int64_t opal_console_flush(uint64_t term_number);
 int64_t opal_poll_events(uint64_t *outstanding_event_mask);
 
-void opal_kentry(unsigned long fdt_addr, void *vmlinux_addr);
+void opal_kentry(unsigned long fdt_addr, void *vmlinaos_addr);
 
 static int opal_con_open(void)
 {

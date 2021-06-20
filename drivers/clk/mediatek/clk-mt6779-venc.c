@@ -4,8 +4,8 @@
  * Author: Wendell Lin <wendell.lin@mediatek.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/platform_device.h>
 
 #include "clk-mtk.h"
 #include "clk-gate.h"

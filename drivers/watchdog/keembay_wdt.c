@@ -5,17 +5,17 @@
  * Copyright (C) 2020 Intel Corporation
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/watchdog.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/limits.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/reboot.h>
+#include <linaos/watchdog.h>
 
 /* Non-secure watchdog register offsets */
 #define TIM_WATCHDOG		0x0

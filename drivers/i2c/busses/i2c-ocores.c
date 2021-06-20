@@ -9,22 +9,22 @@
  * Andreas Larsson <andreas@gaisler.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/platform_data/i2c-ocores.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/spinlock.h>
-#include <linux/jiffies.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/wait.h>
+#include <linaos/platform_data/i2c-ocores.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/log2.h>
+#include <linaos/spinlock.h>
+#include <linaos/jiffies.h>
 
 /*
  * 'process_lock' exists because ocores_process() and ocores_process_timeout()

@@ -3,23 +3,23 @@
  * (C) 2002-2006 Netfilter Core Team <coreteam@netfilter.org>
  */
 
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/icmp.h>
-#include <linux/icmpv6.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/udp.h>
+#include <linaos/tcp.h>
+#include <linaos/icmp.h>
+#include <linaos/icmpv6.h>
 
-#include <linux/dccp.h>
-#include <linux/sctp.h>
+#include <linaos/dccp.h>
+#include <linaos/sctp.h>
 #include <net/sctp/checksum.h>
 
-#include <linux/netfilter.h>
+#include <linaos/netfilter.h>
 #include <net/netfilter/nf_nat.h>
 
-#include <linux/ipv6.h>
-#include <linux/netfilter_ipv6.h>
+#include <linaos/ipv6.h>
+#include <linaos/netfilter_ipv6.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
 #include <net/ip6_route.h>
@@ -28,7 +28,7 @@
 
 #include <net/netfilter/nf_conntrack_core.h>
 #include <net/netfilter/nf_conntrack.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <linaos/netfilter/nfnetlink_conntrack.h>
 
 static void nf_csum_update(struct sk_buff *skb,
 			   unsigned int iphdroff, __sum16 *check,

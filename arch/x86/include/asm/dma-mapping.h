@@ -7,7 +7,7 @@
  * Documentation/core-api/dma-api.rst for documentation.
  */
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 #include <asm/io.h>
 #include <asm/swiotlb.h>
 

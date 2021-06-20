@@ -6,14 +6,14 @@
 
 #ifndef _QED_RDMA_H
 #define _QED_RDMA_H
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/qed/qed_if.h>
-#include <linux/qed/qed_rdma_if.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/qed/qed_if.h>
+#include <linaos/qed/qed_rdma_if.h>
 #include "qed.h"
 #include "qed_dev_api.h"
 #include "qed_hsi.h"

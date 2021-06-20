@@ -72,7 +72,7 @@ respected even under speculation. Architectures which are affected by
 speculation-based side-channels are expected to implement these
 primitives.
 
-The array_index_nospec() helper in <linux/nospec.h> can be used to
+The array_index_nospec() helper in <linaos/nospec.h> can be used to
 prevent information from being leaked via side-channels.
 
 A call to array_index_nospec(index, size) returns a sanitized index

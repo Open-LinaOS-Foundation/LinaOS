@@ -9,11 +9,11 @@
 #ifndef _IOVA_H_
 #define _IOVA_H_
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/rbtree.h>
-#include <linux/atomic.h>
-#include <linux/dma-mapping.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/rbtree.h>
+#include <linaos/atomic.h>
+#include <linaos/dma-mapping.h>
 
 /* iova structure */
 struct iova {

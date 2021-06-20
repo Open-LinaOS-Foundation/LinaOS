@@ -66,7 +66,7 @@ configures resources with an unpatch handler tears down and releases
 those same resources.
 
 A callback is only executed if its host klp_object is loaded.  For
-in-kernel vmlinux targets, this means that callbacks will always execute
+in-kernel vmlinaos targets, this means that callbacks will always execute
 when a livepatch is enabled/disabled.  For patch target kernel modules,
 callbacks will only execute if the target module is loaded.  When a
 module target is (un)loaded, its callbacks will execute only if the

@@ -33,7 +33,7 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * IDT PCIe-switch NTB Linux driver
+ * IDT PCIe-switch NTB LinaOS driver
  *
  * Contact Information:
  * Serge Semin <fancer.lancer@gmail.com>, <Sergey.Semin@t-platforms.ru>
@@ -67,20 +67,20 @@
  * CSR address and value can be any of hexadecimal, decimal or octal format.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/debugfs.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/i2c.h>
-#include <linux/pci_ids.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/sysfs.h>
+#include <linaos/debugfs.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/property.h>
+#include <linaos/i2c.h>
+#include <linaos/pci_ids.h>
+#include <linaos/delay.h>
 
 #define IDT_NAME		"89hpesx"
 #define IDT_89HPESX_DESC	"IDT 89HPESx SMBus-slave interface driver"

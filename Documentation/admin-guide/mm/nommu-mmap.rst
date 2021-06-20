@@ -3,14 +3,14 @@ No-MMU memory mapping support
 =============================
 
 The kernel has limited support for memory mapping under no-MMU conditions, such
-as are used in uClinux environments. From the userspace point of view, memory
+as are used in uClinaos environments. From the userspace point of view, memory
 mapping is made use of in conjunction with the mmap() system call, the shmat()
 call and the execve() system call. From the kernel's point of view, execve()
 mapping is actually performed by the binfmt drivers, which call back into the
 mmap() routines to do the actual work.
 
 Memory mapping behaviour also involves the way fork(), vfork(), clone() and
-ptrace() work. Under uClinux there is no fork(), and clone() must be supplied
+ptrace() work. Under uClinaos there is no fork(), and clone() must be supplied
 the CLONE_VM flag.
 
 The behaviour is similar between the MMU and no-MMU cases, but not identical;
@@ -120,7 +120,7 @@ Further notes on no-MMU MMAP
 
  (#) The memory allocated by a request for an anonymous mapping will normally
      be cleared by the kernel before being returned in accordance with the
-     Linux man pages (ver 2.22 or later).
+     LinaOS man pages (ver 2.22 or later).
 
      In the MMU case this can be achieved with reasonable performance as
      regions are backed by virtual pages, with the contents only being mapped

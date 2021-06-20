@@ -11,7 +11,7 @@
 #ifndef __ARCH_MV78XX0_COMMON_H
 #define __ARCH_MV78XX0_COMMON_H
 
-#include <linux/reboot.h>
+#include <linaos/reboot.h>
 
 struct mv643xx_eth_platform_data;
 struct mv_sata_platform_data;

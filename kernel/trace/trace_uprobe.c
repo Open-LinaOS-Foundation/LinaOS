@@ -3,18 +3,18 @@
  * uprobes-based tracing events
  *
  * Copyright (C) IBM Corporation, 2010-2012
- * Author:	Srikar Dronamraju <srikar@linux.vnet.ibm.com>
+ * Author:	Srikar Dronamraju <srikar@linaos.vnet.ibm.com>
  */
 #define pr_fmt(fmt)	"trace_uprobe: " fmt
 
-#include <linux/security.h>
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/uprobes.h>
-#include <linux/namei.h>
-#include <linux/string.h>
-#include <linux/rculist.h>
+#include <linaos/security.h>
+#include <linaos/ctype.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/uprobes.h>
+#include <linaos/namei.h>
+#include <linaos/string.h>
+#include <linaos/rculist.h>
 
 #include "trace_dynevent.h"
 #include "trace_probe.h"

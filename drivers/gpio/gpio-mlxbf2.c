@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/resource.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/resource.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 
 /*
  * There are 3 YU GPIO blocks:

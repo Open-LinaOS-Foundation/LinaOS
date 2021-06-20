@@ -1,5 +1,5 @@
 /*
- * linux/arch/m68k/atari/debug.c
+ * linaos/arch/m68k/atari/debug.c
  *
  * Atari debugging and serial console stuff
  *
@@ -10,12 +10,12 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/tty.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
 
 #include <asm/atarihw.h>
 #include <asm/atariints.h>

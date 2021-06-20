@@ -4,7 +4,7 @@
  * Copyright (C) 2008-2009 Wolfgang Grandegger <wg@grandegger.com>
  */
 
-#include <linux/can/dev.h>
+#include <linaos/can/dev.h>
 
 /* Local echo of CAN messages
  *

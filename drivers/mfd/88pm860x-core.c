@@ -7,22 +7,22 @@
  * Author: Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/regulator/machine.h>
-#include <linux/power/charger-manager.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/88pm860x.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/power/charger-manager.h>
 
 #define INT_STATUS_NUM			3
 

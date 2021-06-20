@@ -24,14 +24,14 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/spinlock.h>
-#include <linux/ssb/ssb_driver_chipcommon.h>
-#include <linux/ssb/ssb_regs.h>
-#include <linux/smp.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/memblock.h>
+#include <linaos/spinlock.h>
+#include <linaos/ssb/ssb_driver_chipcommon.h>
+#include <linaos/ssb/ssb_regs.h>
+#include <linaos/smp.h>
 #include <asm/bootinfo.h>
 #include <bcm47xx.h>
 #include <bcm47xx_board.h>

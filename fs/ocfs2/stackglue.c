@@ -8,15 +8,15 @@
  * Copyright (C) 2007, 2009 Oracle.  All rights reserved.
  */
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/fs.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/sysctl.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/kmod.h>
+#include <linaos/fs.h>
+#include <linaos/kobject.h>
+#include <linaos/sysfs.h>
+#include <linaos/sysctl.h>
 
 #include "ocfs2_fs.h"
 

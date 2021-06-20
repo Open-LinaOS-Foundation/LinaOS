@@ -45,16 +45,16 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/xarray.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/hrtimer.h>
-#include <linux/bitmap.h>
-#include <linux/numa.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/xarray.h>
+#include <linaos/module.h>
+#include <linaos/printk.h>
+#include <linaos/hrtimer.h>
+#include <linaos/bitmap.h>
+#include <linaos/numa.h>
 #include <rdma/rdma_vt.h>
 
 #include "hfi.h"

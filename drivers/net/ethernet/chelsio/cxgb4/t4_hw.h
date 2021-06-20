@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for LinaOS.
  *
  * Copyright (c) 2003-2014 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,7 +35,7 @@
 #ifndef __T4_HW_H
 #define __T4_HW_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum {
 	NCHAN           = 4,    /* # of HW channels */

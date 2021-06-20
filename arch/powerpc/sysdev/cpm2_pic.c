@@ -26,10 +26,10 @@
  * which register to use and which bit in the register to use.
  */
 
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/irq.h>
+#include <linaos/stddef.h>
+#include <linaos/sched.h>
+#include <linaos/signal.h>
+#include <linaos/irq.h>
 
 #include <asm/immap_cpm2.h>
 #include <asm/mpc8260.h>

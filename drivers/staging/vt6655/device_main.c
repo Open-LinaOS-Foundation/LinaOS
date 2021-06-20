@@ -33,7 +33,7 @@
  * Revision History:
  */
 
-#include <linux/file.h>
+#include <linaos/file.h>
 #include "device.h"
 #include "card.h"
 #include "channel.h"
@@ -43,9 +43,9 @@
 #include "rxtx.h"
 #include "dpc.h"
 #include "rf.h"
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/slab.h>
 
 /*---------------------  Static Definitions -------------------------*/
 /*

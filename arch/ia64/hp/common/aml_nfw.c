@@ -19,8 +19,8 @@
  * result.
  */
 
-#include <linux/module.h>
-#include <linux/acpi.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
 #include <asm/sal.h>
 
 MODULE_AUTHOR("Bjorn Helgaas <bjorn.helgaas@hp.com>");

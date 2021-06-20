@@ -4,8 +4,8 @@
 #if !defined(DRM_TEGRA_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define DRM_TEGRA_TRACE_H 1
 
-#include <linux/device.h>
-#include <linux/tracepoint.h>
+#include <linaos/device.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(register_access,
 	TP_PROTO(struct device *dev, unsigned int offset, u32 value),

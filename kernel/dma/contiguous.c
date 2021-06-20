@@ -45,11 +45,11 @@
 
 #include <asm/page.h>
 
-#include <linux/memblock.h>
-#include <linux/err.h>
-#include <linux/sizes.h>
-#include <linux/dma-map-ops.h>
-#include <linux/cma.h>
+#include <linaos/memblock.h>
+#include <linaos/err.h>
+#include <linaos/sizes.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/cma.h>
 
 #ifdef CONFIG_CMA_SIZE_MBYTES
 #define CMA_SIZE_MBYTES CONFIG_CMA_SIZE_MBYTES
@@ -373,9 +373,9 @@ void dma_free_contiguous(struct device *dev, struct page *page, size_t size)
  * Support for reserved memory regions defined in device tree
  */
 #ifdef CONFIG_OF_RESERVED_MEM
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_reserved_mem.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_reserved_mem.h>
 
 #undef pr_fmt
 #define pr_fmt(fmt) fmt
@@ -402,7 +402,7 @@ static int __init rmem_cma_setup(struct reserved_mem *rmem)
 	phys_addr_t align = PAGE_SIZE << max(MAX_ORDER - 1, pageblock_order);
 	phys_addr_t mask = align - 1;
 	unsigned long node = rmem->fdt_node;
-	bool default_cma = of_get_flat_dt_prop(node, "linux,cma-default", NULL);
+	bool default_cma = of_get_flat_dt_prop(node, "linaos,cma-default", NULL);
 	struct cma *cma;
 	int err;
 

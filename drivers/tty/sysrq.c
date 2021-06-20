@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	Linux Magic System Request Key Hacks
+ *	LinaOS Magic System Request Key Hacks
  *
  *	(c) 1997 Martin Mares <mj@atrey.karlin.mff.cuni.cz>
  *	based on ideas by Pavel Machek <pavel@atrey.karlin.mff.cuni.cz>
@@ -15,42 +15,42 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sched/signal.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/ctype.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/reboot.h>
-#include <linux/sysrq.h>
-#include <linux/kbd_kern.h>
-#include <linux/proc_fs.h>
-#include <linux/nmi.h>
-#include <linux/quotaops.h>
-#include <linux/perf_event.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/suspend.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/spinlock.h>
-#include <linux/vt_kern.h>
-#include <linux/workqueue.h>
-#include <linux/hrtimer.h>
-#include <linux/oom.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/uaccess.h>
-#include <linux/moduleparam.h>
-#include <linux/jiffies.h>
-#include <linux/syscalls.h>
-#include <linux/of.h>
-#include <linux/rcupdate.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/rt.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/ctype.h>
+#include <linaos/interrupt.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/kdev_t.h>
+#include <linaos/major.h>
+#include <linaos/reboot.h>
+#include <linaos/sysrq.h>
+#include <linaos/kbd_kern.h>
+#include <linaos/proc_fs.h>
+#include <linaos/nmi.h>
+#include <linaos/quotaops.h>
+#include <linaos/perf_event.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/suspend.h>
+#include <linaos/writeback.h>
+#include <linaos/swap.h>
+#include <linaos/spinlock.h>
+#include <linaos/vt_kern.h>
+#include <linaos/workqueue.h>
+#include <linaos/hrtimer.h>
+#include <linaos/oom.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/uaccess.h>
+#include <linaos/moduleparam.h>
+#include <linaos/jiffies.h>
+#include <linaos/syscalls.h>
+#include <linaos/of.h>
+#include <linaos/rcupdate.h>
 
 #include <asm/ptrace.h>
 #include <asm/irq_regs.h>
@@ -317,7 +317,7 @@ static const struct sysrq_key_op sysrq_showstate_blocked_op = {
 };
 
 #ifdef CONFIG_TRACING
-#include <linux/ftrace.h>
+#include <linaos/ftrace.h>
 
 static void sysrq_ftrace_dump(int key)
 {
@@ -760,7 +760,7 @@ static void sysrq_of_get_keyreset_config(void)
 	struct property *prop;
 	const __be32 *p;
 
-	np = of_find_node_by_path("/chosen/linux,sysrq-reset-seq");
+	np = of_find_node_by_path("/chosen/linaos,sysrq-reset-seq");
 	if (!np) {
 		pr_debug("No sysrq node found");
 		return;

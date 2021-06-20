@@ -9,7 +9,7 @@
 #endif
 #define SEC(NAME) __attribute__((section(NAME), used))
 
-#include <uapi/linux/fs.h>
+#include <uapi/linaos/fs.h>
 
 /*
  * If CONFIG_PROFILE_ALL_BRANCHES is selected,

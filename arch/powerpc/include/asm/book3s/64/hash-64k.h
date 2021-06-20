@@ -213,7 +213,7 @@ static inline char *get_hpte_slot_array(pmd_t *pmdp)
 
 }
 /*
- * The linux hugepage PMD now include the pmd entries followed by the address
+ * The linaos hugepage PMD now include the pmd entries followed by the address
  * to the stashed pgtable_t. The stashed pgtable_t contains the hpte bits.
  * [ 000 | 1 bit secondary | 3 bit hidx | 1 bit valid]. We use one byte per
  * each HPTE entry. With 16MB hugepage and 64K HPTE we need 256 entries and

@@ -9,8 +9,8 @@
 #ifndef _LINUX_PMU_H
 #define _LINUX_PMU_H
 
-#include <linux/rtc.h>
-#include <uapi/linux/pmu.h>
+#include <linaos/rtc.h>
+#include <uapi/linaos/pmu.h>
 
 
 extern int find_via_pmu(void);

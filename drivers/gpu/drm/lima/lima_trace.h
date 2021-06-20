@@ -4,7 +4,7 @@
 #if !defined(_LIMA_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _LIMA_TRACE_H_
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM lima

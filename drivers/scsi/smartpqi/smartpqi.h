@@ -9,13 +9,13 @@
  *
  */
 
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 
 #if !defined(_SMARTPQI_H)
 #define _SMARTPQI_H
 
 #include <scsi/scsi_host.h>
-#include <linux/bsg-lib.h>
+#include <linaos/bsg-lib.h>
 
 #pragma pack(1)
 

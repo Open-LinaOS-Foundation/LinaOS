@@ -4,8 +4,8 @@
 #include "dfltcc_util.h"
 #include "dfltcc.h"
 #include <asm/setup.h>
-#include <linux/export.h>
-#include <linux/zutil.h>
+#include <linaos/export.h>
+#include <linaos/zutil.h>
 
 /*
  * Expand.

@@ -4,12 +4,12 @@
  *
  * Copyright (C) 2020, Intel Corporation
  * Authors: Gil Fine <gil.fine@intel.com>
- *	    Mika Westerberg <mika.westerberg@linux.intel.com>
+ *	    Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
-#include <linux/uaccess.h>
+#include <linaos/debugfs.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/uaccess.h>
 
 #include "tb.h"
 

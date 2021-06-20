@@ -15,17 +15,17 @@
  * TODO: irq, threshold events, continuous mode, hardware buffer
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/util_macros.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/delay.h>
+#include <linaos/util_macros.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 #define VL6180_DRV_NAME "vl6180"
 

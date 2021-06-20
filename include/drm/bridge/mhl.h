@@ -12,7 +12,7 @@
 #ifndef __MHL_H__
 #define __MHL_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Device Capabilities Registers */
 enum {

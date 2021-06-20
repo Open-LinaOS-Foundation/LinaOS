@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/mmu.c
+ *  linaos/arch/arm/mm/mmu.c
  *
  *  Copyright (C) 1995-2005 Russell King
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mman.h>
-#include <linux/nodemask.h>
-#include <linux/memblock.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/sizes.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/mman.h>
+#include <linaos/nodemask.h>
+#include <linaos/memblock.h>
+#include <linaos/fs.h>
+#include <linaos/vmalloc.h>
+#include <linaos/sizes.h>
 
 #include <asm/cp15.h>
 #include <asm/cputype.h>
@@ -1028,7 +1028,7 @@ void __init vm_reserve_area_early(unsigned long addr, unsigned long size,
 #ifndef CONFIG_ARM_LPAE
 
 /*
- * The Linux PMD is made of two consecutive section entries covering 2MB
+ * The LinaOS PMD is made of two consecutive section entries covering 2MB
  * (see definition in include/asm/pgtable-2level.h).  However a call to
  * create_mapping() may optimize static mappings by using individual
  * 1MB section mappings.  This leaves the actual PMD potentially half

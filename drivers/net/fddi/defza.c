@@ -27,27 +27,27 @@
 /* End of FZA configurable parameters.  No need to change anything below.    */
 /* ------------------------------------------------------------------------- */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/fddidevice.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
-#include <linux/tc.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/fddidevice.h>
+#include <linaos/sched.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/stat.h>
+#include <linaos/tc.h>
+#include <linaos/timer.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
 
 #include <asm/barrier.h>
 

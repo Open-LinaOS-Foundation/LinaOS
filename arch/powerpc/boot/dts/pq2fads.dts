@@ -176,7 +176,7 @@
 				interrupts = <33 8>;
 				interrupt-parent = <&PIC>;
 				phy-handle = <&PHY0>;
-				linux,network-index = <0>;
+				linaos,network-index = <0>;
 				fsl,cpm-command = <0x16200300>;
 			};
 
@@ -188,7 +188,7 @@
 				interrupts = <34 8>;
 				interrupt-parent = <&PIC>;
 				phy-handle = <&PHY1>;
-				linux,network-index = <1>;
+				linaos,network-index = <1>;
 				fsl,cpm-command = <0x1a400300>;
 				local-mac-address = [00 e0 0c 00 79 01];
 			};

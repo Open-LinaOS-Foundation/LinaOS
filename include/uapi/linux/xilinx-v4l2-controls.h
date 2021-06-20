@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Xilinx Controls Header
  *
@@ -21,7 +21,7 @@
 #ifndef __UAPI_XILINX_V4L2_CONTROLS_H__
 #define __UAPI_XILINX_V4L2_CONTROLS_H__
 
-#include <linux/v4l2-controls.h>
+#include <linaos/v4l2-controls.h>
 
 #define V4L2_CID_XILINX_OFFSET	0xc000
 #define V4L2_CID_XILINX_BASE	(V4L2_CID_USER_BASE + V4L2_CID_XILINX_OFFSET)

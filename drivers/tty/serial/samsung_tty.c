@@ -3,7 +3,7 @@
  * Driver core for Samsung SoC onboard UARTs.
  *
  * Ben Dooks, Copyright (c) 2003-2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  */
 
 /* Note on 2410 error handling
@@ -21,25 +21,25 @@
  * BJD, 04-Nov-2004
  */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/sysrq.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/serial_s3c.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/of.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/sysrq.h>
+#include <linaos/console.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/cpufreq.h>
+#include <linaos/of.h>
 #include <asm/irq.h>
 
 /* UART name and device definitions */

@@ -5,18 +5,18 @@
  *
  * Copyright (C) IBM Corporation, 2017
  *
- * Author: Paul McKenney <paulmck@linux.ibm.com>
+ * Author: Paul McKenney <paulmck@linaos.ibm.com>
  */
 
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/preempt.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/srcu.h>
+#include <linaos/export.h>
+#include <linaos/mutex.h>
+#include <linaos/preempt.h>
+#include <linaos/rcupdate_wait.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/srcu.h>
 
-#include <linux/rcu_node_tree.h>
+#include <linaos/rcu_node_tree.h>
 #include "rcu_segcblist.h"
 #include "rcu.h"
 

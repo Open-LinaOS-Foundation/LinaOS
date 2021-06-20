@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Copyright (c) 2018 Dmitry V. Levin <ldv@altlinux.org>
+ * Copyright (c) 2018 Dmitry V. Levin <ldv@altlinaos.org>
  * All rights reserved.
  *
  * Check whether PTRACE_GET_SYSCALL_INFO semantics implemented in the kernel
@@ -11,7 +11,7 @@
 #include <err.h>
 #include <signal.h>
 #include <asm/unistd.h>
-#include "linux/ptrace.h"
+#include "linaos/ptrace.h"
 
 static int
 kill_tracee(pid_t pid)

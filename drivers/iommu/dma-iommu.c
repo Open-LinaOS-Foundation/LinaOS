@@ -8,23 +8,23 @@
  * Copyright (C) 2000-2004 Russell King
  */
 
-#include <linux/acpi_iort.h>
-#include <linux/device.h>
-#include <linux/dma-map-ops.h>
-#include <linux/dma-iommu.h>
-#include <linux/gfp.h>
-#include <linux/huge_mm.h>
-#include <linux/iommu.h>
-#include <linux/iova.h>
-#include <linux/irq.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/swiotlb.h>
-#include <linux/scatterlist.h>
-#include <linux/vmalloc.h>
-#include <linux/crash_dump.h>
-#include <linux/dma-direct.h>
+#include <linaos/acpi_iort.h>
+#include <linaos/device.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/dma-iommu.h>
+#include <linaos/gfp.h>
+#include <linaos/huge_mm.h>
+#include <linaos/iommu.h>
+#include <linaos/iova.h>
+#include <linaos/irq.h>
+#include <linaos/mm.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/swiotlb.h>
+#include <linaos/scatterlist.h>
+#include <linaos/vmalloc.h>
+#include <linaos/crash_dump.h>
+#include <linaos/dma-direct.h>
 
 struct iommu_dma_msi_page {
 	struct list_head	list;

@@ -2,13 +2,13 @@
 /*
  * Copyright (c) 2020 Western Digital Corporation or its affiliates.
  */
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/delay.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset-controller.h>
+#include <linaos/delay.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 #include <soc/canaan/k210-sysctl.h>
 
 #include <dt-bindings/reset/k210-rst.h>

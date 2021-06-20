@@ -17,8 +17,8 @@
 
 #include "em28xx.h"
 
-#include <linux/i2c.h>
-#include <linux/usb.h>
+#include <linaos/i2c.h>
+#include <linaos/usb.h>
 #include <media/i2c/mt9v011.h>
 #include <media/v4l2-common.h>
 

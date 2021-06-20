@@ -11,17 +11,17 @@
  * their supports.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/iommu.h>
-#include <linux/uuid.h>
-#include <linux/vdpa.h>
-#include <linux/nospec.h>
-#include <linux/vhost.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/cdev.h>
+#include <linaos/device.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/iommu.h>
+#include <linaos/uuid.h>
+#include <linaos/vdpa.h>
+#include <linaos/nospec.h>
+#include <linaos/vhost.h>
 
 #include "vhost.h"
 

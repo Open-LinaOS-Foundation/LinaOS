@@ -5,12 +5,12 @@
  */
 
 #include <dt-bindings/pinctrl/mt65xx.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/regmap.h>
 
 #include "pinctrl-mtk-common.h"
 #include "pinctrl-mtk-mt2701.h"

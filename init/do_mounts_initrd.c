@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/unistd.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/minix_fs.h>
-#include <linux/romfs_fs.h>
-#include <linux/initrd.h>
-#include <linux/sched.h>
-#include <linux/freezer.h>
-#include <linux/kmod.h>
-#include <uapi/linux/mount.h>
+#include <linaos/unistd.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/minix_fs.h>
+#include <linaos/romfs_fs.h>
+#include <linaos/initrd.h>
+#include <linaos/sched.h>
+#include <linaos/freezer.h>
+#include <linaos/kmod.h>
+#include <uapi/linaos/mount.h>
 
 #include "do_mounts.h"
 
@@ -51,7 +51,7 @@ static int __init early_initrd(char *p)
 }
 early_param("initrd", early_initrd);
 
-static int __init init_linuxrc(struct subprocess_info *info, struct cred *new)
+static int __init init_linaosrc(struct subprocess_info *info, struct cred *new)
 {
 	ksys_unshare(CLONE_FS | CLONE_FILES);
 	console_on_rootfs();
@@ -66,7 +66,7 @@ static int __init init_linuxrc(struct subprocess_info *info, struct cred *new)
 static void __init handle_initrd(void)
 {
 	struct subprocess_info *info;
-	static char *argv[] = { "linuxrc", NULL, };
+	static char *argv[] = { "linaosrc", NULL, };
 	extern char *envp_init[];
 	int error;
 
@@ -80,13 +80,13 @@ static void __init handle_initrd(void)
 	init_chdir("/old");
 
 	/*
-	 * In case that a resume from disk is carried out by linuxrc or one of
+	 * In case that a resume from disk is carried out by linaosrc or one of
 	 * its children, we need to tell the freezer not to wait for us.
 	 */
 	current->flags |= PF_FREEZER_SKIP;
 
-	info = call_usermodehelper_setup("/linuxrc", argv, envp_init,
-					 GFP_KERNEL, init_linuxrc, NULL, NULL);
+	info = call_usermodehelper_setup("/linaosrc", argv, envp_init,
+					 GFP_KERNEL, init_linaosrc, NULL, NULL);
 	if (!info)
 		return;
 	call_usermodehelper_exec(info, UMH_WAIT_PROC);

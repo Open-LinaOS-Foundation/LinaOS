@@ -11,7 +11,7 @@
 #ifndef __DWMAC4_DESCS_H__
 #define __DWMAC4_DESCS_H__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 /* Normal transmit descriptor defines (without split feature) */
 

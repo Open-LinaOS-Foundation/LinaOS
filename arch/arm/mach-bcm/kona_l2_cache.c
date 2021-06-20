@@ -12,8 +12,8 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/printk.h>
+#include <linaos/init.h>
+#include <linaos/printk.h>
 #include <asm/hardware/cache-l2x0.h>
 
 #include "bcm_kona_smc.h"

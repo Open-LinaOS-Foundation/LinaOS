@@ -4,7 +4,7 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/crc32.h>
+#include <linaos/crc32.h>
 #include "qed.h"
 #include "qed_dev_api.h"
 #include "qed_mcp.h"

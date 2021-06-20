@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __SPARC_STAT_H
 #define __SPARC_STAT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #if defined(__sparc__) && defined(__arch64__)
 /* 64 bit sparc */

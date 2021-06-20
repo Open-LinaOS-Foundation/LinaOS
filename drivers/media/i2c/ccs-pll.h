@@ -6,13 +6,13 @@
  *
  * Copyright (C) 2020 Intel Corporation
  * Copyright (C) 2012 Nokia Corporation
- * Contact: Sakari Ailus <sakari.ailus@linux.intel.com>
+ * Contact: Sakari Ailus <sakari.ailus@linaos.intel.com>
  */
 
 #ifndef CCS_PLL_H
 #define CCS_PLL_H
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 /* CSI-2 or CCP-2 */
 #define CCS_PLL_BUS_TYPE_CSI2_DPHY				0x00

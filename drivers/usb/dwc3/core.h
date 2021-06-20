@@ -11,27 +11,27 @@
 #ifndef __DRIVERS_USB_DWC3_CORE_H
 #define __DRIVERS_USB_DWC3_CORE_H
 
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/debugfs.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/ioport.h>
+#include <linaos/list.h>
+#include <linaos/bitops.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/mm.h>
+#include <linaos/debugfs.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/role.h>
-#include <linux/ulpi/interface.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/otg.h>
+#include <linaos/usb/role.h>
+#include <linaos/ulpi/interface.h>
 
-#include <linux/phy/phy.h>
+#include <linaos/phy/phy.h>
 
-#include <linux/power_supply.h>
+#include <linaos/power_supply.h>
 
 #define DWC3_MSG_MAX	500
 

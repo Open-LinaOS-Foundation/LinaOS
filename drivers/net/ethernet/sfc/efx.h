@@ -8,7 +8,7 @@
 #ifndef EFX_EFX_H
 #define EFX_EFX_H
 
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/indirect_call_wrapper.h>
 #include "net_driver.h"
 #include "ef100_rx.h"
 #include "ef100_tx.h"

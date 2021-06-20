@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: ISC
 
-#include <linux/of.h>
+#include <linaos/of.h>
 #include "mt7603.h"
 #include "eeprom.h"
 

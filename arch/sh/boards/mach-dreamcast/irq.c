@@ -6,12 +6,12 @@
  *
  * Copyright (c) 2001, 2002 M. R. Brown <mrbrown@0xd6.org>
  *
- * This file is part of the LinuxDC project (www.linuxdc.org)
+ * This file is part of the LinaOSDC project (www.linaosdc.org)
  */
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/err.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/export.h>
+#include <linaos/err.h>
 #include <mach/sysasic.h>
 
 /*

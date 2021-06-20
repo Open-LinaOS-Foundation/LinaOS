@@ -197,7 +197,7 @@ Kernel interface
 Access rights
 -------------
 
-.. kernel-doc:: include/uapi/linux/landlock.h
+.. kernel-doc:: include/uapi/linaos/landlock.h
     :identifiers: fs_access
 
 Creating a new ruleset
@@ -206,7 +206,7 @@ Creating a new ruleset
 .. kernel-doc:: security/landlock/syscalls.c
     :identifiers: sys_landlock_create_ruleset
 
-.. kernel-doc:: include/uapi/linux/landlock.h
+.. kernel-doc:: include/uapi/linaos/landlock.h
     :identifiers: landlock_ruleset_attr
 
 Extending a ruleset
@@ -215,7 +215,7 @@ Extending a ruleset
 .. kernel-doc:: security/landlock/syscalls.c
     :identifiers: sys_landlock_add_rule
 
-.. kernel-doc:: include/uapi/linux/landlock.h
+.. kernel-doc:: include/uapi/linaos/landlock.h
     :identifiers: landlock_rule_type landlock_path_beneath_attr
 
 Enforcing a ruleset
@@ -308,4 +308,4 @@ Additional documentation
 
 .. Links
 .. _samples/landlock/sandboxer.c:
-   https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/samples/landlock/sandboxer.c
+   https://git.kernel.org/pub/scm/linaos/kernel/git/stable/linaos.git/tree/samples/landlock/sandboxer.c

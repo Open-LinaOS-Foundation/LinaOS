@@ -10,7 +10,7 @@
 #ifndef __TI_CPSW_SL_H__
 #define __TI_CPSW_SL_H__
 
-#include <linux/device.h>
+#include <linaos/device.h>
 
 enum cpsw_sl_regs {
 	CPSW_SL_IDVER,

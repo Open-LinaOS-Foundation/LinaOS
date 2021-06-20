@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ide.h>
-#include <linux/seq_file.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/ide.h>
+#include <linaos/seq_file.h>
 
 #include "ide-floppy.h"
 

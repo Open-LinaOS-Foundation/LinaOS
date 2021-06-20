@@ -7,26 +7,26 @@
  * the information ethtool needs.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/sfp.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched/signal.h>
-#include <linux/net.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/ethtool.h>
+#include <linaos/netdevice.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/phy.h>
+#include <linaos/bitops.h>
+#include <linaos/uaccess.h>
+#include <linaos/vmalloc.h>
+#include <linaos/sfp.h>
+#include <linaos/slab.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/sched/signal.h>
+#include <linaos/net.h>
 #include <net/devlink.h>
 #include <net/xdp_sock_drv.h>
 #include <net/flow_offload.h>
-#include <linux/ethtool_netlink.h>
+#include <linaos/ethtool_netlink.h>
 #include <generated/utsrelease.h>
 #include "common.h"
 

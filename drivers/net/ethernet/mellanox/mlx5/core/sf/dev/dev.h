@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /* Copyright (c) 2020 Mellanox Technologies Ltd */
 
 #ifndef __MLX5_SF_DEV_H__
@@ -6,7 +6,7 @@
 
 #ifdef CONFIG_MLX5_SF
 
-#include <linux/auxiliary_bus.h>
+#include <linaos/auxiliary_bus.h>
 
 #define MLX5_SF_DEV_ID_NAME "sf"
 

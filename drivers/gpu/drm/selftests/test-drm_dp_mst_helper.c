@@ -5,7 +5,7 @@
 
 #define PREFIX_STR "[drm_dp_mst_helper]"
 
-#include <linux/random.h>
+#include <linaos/random.h>
 
 #include <drm/drm_dp_mst_helper.h>
 #include <drm/drm_print.h>

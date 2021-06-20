@@ -2,13 +2,13 @@
 /*
  * irq_domain - IRQ translation domains
  *
- * Translation infrastructure between hw and linux irq numbers.  This is
+ * Translation infrastructure between hw and linaos irq numbers.  This is
  * helpful for interrupt controllers to implement mapping between hardware
- * irq numbers and the Linux irq number space.
+ * irq numbers and the LinaOS irq number space.
  *
  * irq_domains also have hooks for translating device tree or other
  * firmware interrupt representations into a hardware irq number that
- * can be mapped back to a Linux irq number without any extra platform
+ * can be mapped back to a LinaOS irq number without any extra platform
  * support code.
  *
  * Interrupt controller "domain" data structure. This could be defined as a
@@ -30,11 +30,11 @@
 #ifndef _LINUX_IRQDOMAIN_H
 #define _LINUX_IRQDOMAIN_H
 
-#include <linux/types.h>
-#include <linux/irqhandler.h>
-#include <linux/of.h>
-#include <linux/mutex.h>
-#include <linux/radix-tree.h>
+#include <linaos/types.h>
+#include <linaos/irqhandler.h>
+#include <linaos/of.h>
+#include <linaos/mutex.h>
+#include <linaos/radix-tree.h>
 
 struct device_node;
 struct fwnode_handle;
@@ -95,7 +95,7 @@ enum irq_domain_bus_token {
  *       irq number. This is called only once for a given mapping.
  * @unmap: Dispose of such a mapping
  * @xlate: Given a device tree node and interrupt specifier, decode
- *         the hardware irq number and linux irq type value.
+ *         the hardware irq number and linaos irq type value.
  *
  * Functions below are provided by the driver and called whenever a new mapping
  * is created or an old mapping is disposed. The driver can then proceed to
@@ -407,7 +407,7 @@ static inline unsigned int irq_create_mapping(struct irq_domain *host,
 
 
 /**
- * irq_linear_revmap() - Find a linux irq from a hw irq number.
+ * irq_linear_revmap() - Find a linaos irq from a hw irq number.
  * @domain: domain owning this hardware interrupt
  * @hwirq: hardware irq number in that domain space
  *

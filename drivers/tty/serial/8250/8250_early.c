@@ -23,14 +23,14 @@
  *	console=uart8250,mmio32,0xff5e0000,115200n8
  */
 
-#include <linux/tty.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/serial_reg.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
+#include <linaos/tty.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/serial_reg.h>
+#include <linaos/serial.h>
+#include <linaos/serial_8250.h>
 #include <asm/io.h>
 #include <asm/serial.h>
 

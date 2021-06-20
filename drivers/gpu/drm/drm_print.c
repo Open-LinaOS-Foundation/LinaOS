@@ -27,10 +27,10 @@
 
 #include <stdarg.h>
 
-#include <linux/io.h>
-#include <linux/moduleparam.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linaos/io.h>
+#include <linaos/moduleparam.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
 
 #include <drm/drm.h>
 #include <drm/drm_drv.h>

@@ -182,7 +182,7 @@ config MTD_POWERNV_FLASH
 	depends on PPC_POWERNV
 	help
 	  This provides an MTD device to access flash on powernv OPAL
-	  platforms from Linux. This device abstracts away the
+	  platforms from LinaOS. This device abstracts away the
 	  firmware interface for flash access.
 
 comment "Disk-On-Chip Device Drivers"

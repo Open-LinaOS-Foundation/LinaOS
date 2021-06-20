@@ -7,8 +7,8 @@
 #ifndef __MSM_GEM_H__
 #define __MSM_GEM_H__
 
-#include <linux/kref.h>
-#include <linux/dma-resv.h>
+#include <linaos/kref.h>
+#include <linaos/dma-resv.h>
 #include "msm_drv.h"
 
 /* Make all GEM related WARN_ON()s ratelimited.. when things go wrong they

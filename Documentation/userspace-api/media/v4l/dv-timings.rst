@@ -18,7 +18,7 @@ set/get video timings at the input and output.
 These ioctls deal with the detailed digital video timings that define
 each video format. This includes parameters such as the active video
 width and height, signal polarities, frontporches, backporches, sync
-widths etc. The ``linux/v4l2-dv-timings.h`` header can be used to get
+widths etc. The ``linaos/v4l2-dv-timings.h`` header can be used to get
 the timings of the formats in the :ref:`cea861` and :ref:`vesadmt`
 standards.
 

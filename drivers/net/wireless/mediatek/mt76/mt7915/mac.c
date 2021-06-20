@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: ISC
 /* Copyright (C) 2020 MediaTek Inc. */
 
-#include <linux/etherdevice.h>
-#include <linux/timekeeping.h>
+#include <linaos/etherdevice.h>
+#include <linaos/timekeeping.h>
 #include "mt7915.h"
 #include "../dma.h"
 #include "mac.h"

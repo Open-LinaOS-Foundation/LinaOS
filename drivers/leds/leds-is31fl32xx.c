@@ -9,13 +9,13 @@
  *   http://www.si-en.com/product.asp?parentid=890
  */
 
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 /* Used to indicate a device has no such register */
 #define IS31FL32XX_REG_NONE 0xFF

@@ -8,8 +8,8 @@
 #ifndef _LINUX_UUID_H_
 #define _LINUX_UUID_H_
 
-#include <uapi/linux/uuid.h>
-#include <linux/string.h>
+#include <uapi/linaos/uuid.h>
+#include <linaos/string.h>
 
 #define UUID_SIZE 16
 

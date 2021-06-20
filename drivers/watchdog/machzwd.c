@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  MachZ ZF-Logic Watchdog Timer driver for Linux
+ *  MachZ ZF-Logic Watchdog Timer driver for LinaOS
  *
  *  The author does NOT admit liability nor provide warranty for
  *  any of this software. This material is provided "AS-IS" in
@@ -24,20 +24,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/timer.h>
+#include <linaos/jiffies.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/fs.h>
+#include <linaos/ioport.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 
 /* ports */

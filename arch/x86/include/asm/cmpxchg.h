@@ -2,7 +2,7 @@
 #ifndef ASM_X86_CMPXCHG_H
 #define ASM_X86_CMPXCHG_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/cpufeatures.h>
 #include <asm/alternative.h> /* Provides LOCK_PREFIX */
 

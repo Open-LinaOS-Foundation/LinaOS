@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (C) 2003 Christoph Hellwig (hch@lst.de)
- * Copyright (C) 1999, 2000, 04 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1999, 2000, 04 Ralf Baechle (ralf@linaos-mips.org)
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/smp.h>
-#include <linux/dma-direct.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/xtalk-bridge.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/crc16.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/pci.h>
+#include <linaos/smp.h>
+#include <linaos/dma-direct.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/xtalk-bridge.h>
+#include <linaos/nvmem-consumer.h>
+#include <linaos/crc16.h>
 
 #include <asm/pci/bridge.h>
 #include <asm/paccess.h>

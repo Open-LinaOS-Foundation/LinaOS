@@ -6,12 +6,12 @@
  *
  * Heavily inspired from former arch/arm/mach-pxa/clock.c.
  */
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 #include <mach/pxa2xx-regs.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/of.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
+#include <linaos/of.h>
 
 #include <mach/smemc.h>
 

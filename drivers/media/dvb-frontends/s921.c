@@ -14,7 +14,7 @@
  *   FIXME: Need to port to DVB v5.2 API
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/div64.h>
 
 #include <media/dvb_frontend.h>

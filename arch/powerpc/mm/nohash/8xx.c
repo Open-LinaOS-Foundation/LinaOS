@@ -7,9 +7,9 @@
  *  Derived from arch/powerpc/mm/40x_mmu.c:
  */
 
-#include <linux/memblock.h>
-#include <linux/mmu_context.h>
-#include <linux/hugetlb.h>
+#include <linaos/memblock.h>
+#include <linaos/mmu_context.h>
+#include <linaos/hugetlb.h>
 #include <asm/fixmap.h>
 #include <asm/code-patching.h>
 #include <asm/inst.h>

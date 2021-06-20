@@ -8,9 +8,9 @@
 #ifndef __SND_SOC_INTEL_CATPT_REGS_H
 #define __SND_SOC_INTEL_CATPT_REGS_H
 
-#include <linux/bitops.h>
-#include <linux/iopoll.h>
-#include <uapi/linux/pci_regs.h>
+#include <linaos/bitops.h>
+#include <linaos/iopoll.h>
+#include <uapi/linaos/pci_regs.h>
 
 #define CATPT_SHIM_REGS_SIZE	4096
 #define CATPT_DMA_REGS_SIZE	1024

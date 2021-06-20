@@ -2,7 +2,7 @@
 /*
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C - FB platform data definitions
@@ -11,7 +11,7 @@
 #ifndef __PLAT_S3C_FB_H
 #define __PLAT_S3C_FB_H __FILE__
 
-#include <linux/platform_data/video_s3c.h>
+#include <linaos/platform_data/video_s3c.h>
 
 /**
  * s3c_fb_set_platdata() - Setup the FB device with platform data.

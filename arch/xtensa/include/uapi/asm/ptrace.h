@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * include/asm-xtensa/ptrace.h
  *
@@ -12,7 +12,7 @@
 #ifndef _UAPI_XTENSA_PTRACE_H
 #define _UAPI_XTENSA_PTRACE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Registers used by strace */
 
@@ -29,7 +29,7 @@
 
 #define SYSCALL_NR	0x00ff
 
-/* Other PTRACE_ values defined in <linux/ptrace.h> using values 0-9,16,17,24 */
+/* Other PTRACE_ values defined in <linaos/ptrace.h> using values 0-9,16,17,24 */
 
 #define PTRACE_GETREGS		12
 #define PTRACE_SETREGS		13

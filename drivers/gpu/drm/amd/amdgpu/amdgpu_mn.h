@@ -24,11 +24,11 @@
 #ifndef __AMDGPU_MN_H__
 #define __AMDGPU_MN_H__
 
-#include <linux/types.h>
-#include <linux/hmm.h>
-#include <linux/rwsem.h>
-#include <linux/workqueue.h>
-#include <linux/interval_tree.h>
+#include <linaos/types.h>
+#include <linaos/hmm.h>
+#include <linaos/rwsem.h>
+#include <linaos/workqueue.h>
+#include <linaos/interval_tree.h>
 
 #if defined(CONFIG_HMM_MIRROR)
 int amdgpu_mn_register(struct amdgpu_bo *bo, unsigned long addr);

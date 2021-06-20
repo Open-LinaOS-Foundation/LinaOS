@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/sstfb.c -- voodoo graphics frame buffer
+ * linaos/drivers/video/sstfb.c -- voodoo graphics frame buffer
  *
  *     Copyright (c) 2000-2002 Ghozlane Toumi <gtoumi@laposte.net>
  *
@@ -80,15 +80,15 @@
  * Includes
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/init.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/fb.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <video/sstfb.h>
 
 

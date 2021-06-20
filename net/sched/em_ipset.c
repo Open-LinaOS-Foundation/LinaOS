@@ -5,14 +5,14 @@
  * Copyright (c) 2012 Florian Westphal <fw@strlen.de>
  */
 
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter/xt_set.h>
-#include <linux/ipv6.h>
+#include <linaos/gfp.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/skbuff.h>
+#include <linaos/netfilter/xt_set.h>
+#include <linaos/ipv6.h>
 #include <net/ip.h>
 #include <net/pkt_cls.h>
 

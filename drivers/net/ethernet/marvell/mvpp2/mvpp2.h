@@ -9,15 +9,15 @@
 #ifndef _MVPP2_H_
 #define _MVPP2_H_
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/phylink.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/phy.h>
+#include <linaos/phylink.h>
 #include <net/flow_offload.h>
 #include <net/page_pool.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <net/xdp.h>
 
 /* The PacketOffset field is measured in units of 32 bytes and is 3 bits wide,

@@ -10,7 +10,7 @@
 
 #include <drm/drm_connector.h>
 #include <drm/drm_encoder.h>
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 #include <media/cec-pin.h>
 

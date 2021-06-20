@@ -1,8 +1,8 @@
 #if !defined(_TRACE_TEGRA_APB_DMA_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_TEGRA_APB_DMA_H
 
-#include <linux/tracepoint.h>
-#include <linux/dmaengine.h>
+#include <linaos/tracepoint.h>
+#include <linaos/dmaengine.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM tegra_apb_dma

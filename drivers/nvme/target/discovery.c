@@ -4,7 +4,7 @@
  * Copyright (C) 2016 Intel Corporation. All rights reserved.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <generated/utsrelease.h>
 #include "nvmet.h"
 
@@ -244,7 +244,7 @@ static void nvmet_execute_disc_identify(struct nvmet_req *req)
 {
 	struct nvmet_ctrl *ctrl = req->sq->ctrl;
 	struct nvme_id_ctrl *id;
-	const char model[] = "Linux";
+	const char model[] = "LinaOS";
 	u16 status = 0;
 
 	if (!nvmet_check_transfer_len(req, NVME_IDENTIFY_DATA_SIZE))

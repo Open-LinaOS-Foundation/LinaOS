@@ -32,16 +32,16 @@
 
 		lid {
 			gpios = <&tlmm 124 GPIO_ACTIVE_HIGH>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_LID>;
 			wakeup-source;
 			wakeup-event-action = <EV_ACT_DEASSERTED>;
 		};
 
 		mode {
 			gpios = <&tlmm 95 GPIO_ACTIVE_HIGH>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_TABLET_MODE>;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_TABLET_MODE>;
 		};
 	};
 

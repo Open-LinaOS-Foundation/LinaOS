@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2015, Sony Mobile Communications Inc.
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The LinaOS Foundation. All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/netlink.h>
-#include <linux/qrtr.h>
-#include <linux/termios.h>	/* For TIOCINQ/OUTQ */
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <linaos/module.h>
+#include <linaos/netlink.h>
+#include <linaos/qrtr.h>
+#include <linaos/termios.h>	/* For TIOCINQ/OUTQ */
+#include <linaos/spinlock.h>
+#include <linaos/wait.h>
 
 #include <net/sock.h>
 

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2019 Mellanox Technologies. All rights reserved */
 
-#include <linux/ptp_clock_kernel.h>
-#include <linux/clocksource.h>
-#include <linux/timecounter.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/rhashtable.h>
-#include <linux/ptp_classify.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/net_tstamp.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/clocksource.h>
+#include <linaos/timecounter.h>
+#include <linaos/spinlock.h>
+#include <linaos/device.h>
+#include <linaos/rhashtable.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/net_tstamp.h>
 
 #include "spectrum.h"
 #include "spectrum_ptp.h"

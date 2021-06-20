@@ -33,9 +33,9 @@
 #ifndef RB_TREE_LATCH_H
 #define RB_TREE_LATCH_H
 
-#include <linux/rbtree.h>
-#include <linux/seqlock.h>
-#include <linux/rcupdate.h>
+#include <linaos/rbtree.h>
+#include <linaos/seqlock.h>
+#include <linaos/rcupdate.h>
 
 struct latch_tree_node {
 	struct rb_node node[2];

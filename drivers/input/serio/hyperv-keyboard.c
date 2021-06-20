@@ -3,13 +3,13 @@
  *  Copyright (c) 2013, Microsoft Corporation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/completion.h>
-#include <linux/hyperv.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/completion.h>
+#include <linaos/hyperv.h>
+#include <linaos/serio.h>
+#include <linaos/slab.h>
 
 /*
  * Current version 1.0

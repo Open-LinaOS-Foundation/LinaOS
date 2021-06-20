@@ -2,7 +2,7 @@
 #ifndef _NF_NAT_MASQUERADE_H_
 #define _NF_NAT_MASQUERADE_H_
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/netfilter/nf_nat.h>
 
 unsigned int

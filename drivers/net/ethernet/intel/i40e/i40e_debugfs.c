@@ -3,8 +3,8 @@
 
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/fs.h>
-#include <linux/debugfs.h>
+#include <linaos/fs.h>
+#include <linaos/debugfs.h>
 
 #include "i40e.h"
 

@@ -11,9 +11,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
-#include <linux/err.h>
-#include <linux/btf.h>
-#include <linux/kernel.h>
+#include <linaos/err.h>
+#include <linaos/btf.h>
+#include <linaos/kernel.h>
 #include "btf.h"
 #include "hashmap.h"
 #include "libbpf.h"

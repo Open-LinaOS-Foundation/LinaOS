@@ -1,4 +1,4 @@
-/* atp.c: Attached (pocket) ethernet adapter driver for linux. */
+/* atp.c: Attached (pocket) ethernet adapter driver for linaos. */
 /*
 	This is a driver for commonly OEM pocket (parallel port)
 	ethernet adapters based on the Realtek RTL8002 and RTL8012 chips.
@@ -122,23 +122,23 @@ static int xcvr[NUM_UNITS]; 			/* The data transfer mode. */
 	interpretations of the device registers.
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/in.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/crc32.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/bitops.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
@@ -184,7 +184,7 @@ struct net_local {
    hangs the device. */
 #define TIMED_CHECKER (HZ/4)
 #ifdef TIMED_CHECKER
-#include <linux/timer.h>
+#include <linaos/timer.h>
 static void atp_timed_checker(struct timer_list *t);
 #endif
 

@@ -6,20 +6,20 @@
  */
 #define pr_fmt(fmt) "PCI: " fmt
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/async.h>
-#include <linux/delay.h>
-#include <linux/dma-map-ops.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/sh_clk.h>
-#include <linux/sh_intc.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/async.h>
+#include <linaos/delay.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/sh_clk.h>
+#include <linaos/sh_intc.h>
 #include <cpu/sh7786.h>
 #include "pcie-sh7786.h"
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 struct sh7786_pcie_port {
 	struct pci_channel	*hose;

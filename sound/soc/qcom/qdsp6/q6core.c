@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2017, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2017, The LinaOS Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/jiffies.h>
-#include <linux/soc/qcom/apr.h>
+#include <linaos/slab.h>
+#include <linaos/wait.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/jiffies.h>
+#include <linaos/soc/qcom/apr.h>
 #include "q6core.h"
 #include "q6dsp-errno.h"
 

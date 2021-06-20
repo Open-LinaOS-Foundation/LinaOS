@@ -44,7 +44,7 @@ The chip is used mainly in embedded contexts, so this driver expects it is
 registered using the i2c_board_info mechanism.
 
 To register the chip at address 0x60 on adapter 0, set the platform data
-according to include/linux/leds-lp3944.h, set the i2c board info::
+according to include/linaos/leds-lp3944.h, set the i2c board info::
 
 	static struct i2c_board_info a910_i2c_board_info[] __initdata = {
 		{

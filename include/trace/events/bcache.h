@@ -5,7 +5,7 @@
 #if !defined(_TRACE_BCACHE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_BCACHE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(bcache_request,
 	TP_PROTO(struct bcache_device *d, struct bio *bio),

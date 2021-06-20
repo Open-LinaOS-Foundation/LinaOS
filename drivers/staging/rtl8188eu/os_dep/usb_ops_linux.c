@@ -440,7 +440,7 @@ u32 usb_read_port(struct adapter *adapter, u32 addr, struct recv_buf *precvbuf)
 			precvbuf->reuse = true;
 	}
 
-	/* re-assign for linux based on skb */
+	/* re-assign for linaos based on skb */
 	if (!precvbuf->reuse || !precvbuf->pskb) {
 		precvbuf->pskb = netdev_alloc_skb(adapter->pnetdev, MAX_RECVBUF_SZ);
 		if (!precvbuf->pskb) {

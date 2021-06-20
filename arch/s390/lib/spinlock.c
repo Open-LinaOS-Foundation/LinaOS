@@ -6,13 +6,13 @@
  *    Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com)
  */
 
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/jiffies.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/percpu.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
+#include <linaos/spinlock.h>
+#include <linaos/jiffies.h>
+#include <linaos/init.h>
+#include <linaos/smp.h>
+#include <linaos/percpu.h>
 #include <asm/alternative.h>
 #include <asm/io.h>
 

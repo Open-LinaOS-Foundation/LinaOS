@@ -8,7 +8,7 @@
 #ifndef __ASM_CTL_REG_H
 #define __ASM_CTL_REG_H
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 #define CR0_CLOCK_COMPARATOR_SIGN	BIT(63 - 10)
 #define CR0_LOW_ADDRESS_PROTECTION	BIT(63 - 35)
@@ -33,7 +33,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bug.h>
+#include <linaos/bug.h>
 
 #define __ctl_load(array, low, high) do {				\
 	typedef struct { char _[sizeof(array)]; } addrtype;		\

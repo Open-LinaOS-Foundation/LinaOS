@@ -9,31 +9,31 @@
  * pinctrl-tegra.c, please see original file for copyright information
  */
 
-#include <linux/bitmap.h>
-#include <linux/bug.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdesc.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/bitmap.h>
+#include <linaos/bug.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/irqdesc.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_address.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pinctrl/machine.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/platform_device.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 #include <dt-bindings/pinctrl/bcm2835.h>
 
 #define MODULE_NAME "pinctrl-bcm2835"

@@ -3,14 +3,14 @@
  * Copyright (C)2006 USAGI/WIDE Project
  *
  * Author:
- * 	Kazunori Miyazawa <miyazawa@linux-ipv6.org>
+ * 	Kazunori Miyazawa <miyazawa@linaos-ipv6.org>
  */
 
 #include <crypto/internal/cipher.h>
 #include <crypto/internal/hash.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 static u_int32_t ks[12] = {0x01010101, 0x01010101, 0x01010101, 0x01010101,
 			   0x02020202, 0x02020202, 0x02020202, 0x02020202,

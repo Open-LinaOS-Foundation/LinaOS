@@ -2,9 +2,9 @@
 #ifndef _IP_SET_GETPORT_H
 #define _IP_SET_GETPORT_H
 
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <uapi/linux/in.h>
+#include <linaos/skbuff.h>
+#include <linaos/types.h>
+#include <uapi/linaos/in.h>
 
 extern bool ip_set_get_ip4_port(const struct sk_buff *skb, bool src,
 				__be16 *port, u8 *proto);

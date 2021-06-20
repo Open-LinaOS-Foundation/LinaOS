@@ -15,7 +15,7 @@
 #include <media/v4l2-ctrls.h>
 #include <video/omapfb_dss.h>
 #include <video/omapvrfb.h>
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 
 #define YUYV_BPP        2
 #define RGB565_BPP      2

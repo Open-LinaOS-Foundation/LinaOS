@@ -83,7 +83,7 @@ un -rc - piuttosto che creare il vostro ramo da quello principale in un punto
 a caso.
 
 Per facilitare una revisione e una verifica più estesa, potrebbe diventare
-necessaria la produzione di versioni per -mm, linux-next o i sorgenti di un
+necessaria la produzione di versioni per -mm, linaos-next o i sorgenti di un
 sottosistema.  Basare questa patch sui suddetti sorgenti potrebbe richiedere
 un lavoro significativo nella risoluzione dei conflitti e nella correzione dei
 cambiamenti di API; questo potrebbe variare a seconda dell'area d'interesse
@@ -307,7 +307,7 @@ In particolare le copie dovrebbero essere inviate a:
    funzionalità, includete anche gli autori di quei rapporti/richieste.
 
  - Inviate una copia alle liste di discussione interessate, o, se nient'altro
-   è adatto, alla lista linux-kernel
+   è adatto, alla lista linaos-kernel
 
  - Se state correggendo un baco, pensate se la patch dovrebbe essere inclusa
    nel prossimo rilascio stabile.  Se è così, la lista di discussione

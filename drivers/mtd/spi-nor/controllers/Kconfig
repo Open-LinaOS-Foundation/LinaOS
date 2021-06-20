@@ -38,7 +38,7 @@ config SPI_INTEL_SPI_PCI
 	  This enables PCI support for the Intel PCH/PCU SPI controller in
 	  master mode. This controller is present in modern Intel hardware
 	  and is used to hold BIOS and other persistent settings. Using
-	  this driver it is possible to upgrade BIOS directly from Linux.
+	  this driver it is possible to upgrade BIOS directly from LinaOS.
 
 	  Say N here unless you know what you are doing. Overwriting the
 	  SPI flash may render the system unbootable.
@@ -55,7 +55,7 @@ config SPI_INTEL_SPI_PLATFORM
 	  controller in master mode. This controller is present in modern
 	  Intel hardware and is used to hold BIOS and other persistent
 	  settings. Using this driver it is possible to upgrade BIOS
-	  directly from Linux.
+	  directly from LinaOS.
 
 	  Say N here unless you know what you are doing. Overwriting the
 	  SPI flash may render the system unbootable.

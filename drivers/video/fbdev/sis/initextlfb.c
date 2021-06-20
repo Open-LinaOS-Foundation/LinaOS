@@ -3,9 +3,9 @@
  * SiS 300/540/630[S]/730[S]
  * SiS 315[E|PRO]/550/[M]65x/[M]66x[F|M|G]X/[M]74x[GX]/330/[M]76x[GX]
  * XGI V3XT/V5/V8, Z7
- * frame buffer driver for Linux kernels >= 2.4.14 and >=2.6.3
+ * frame buffer driver for LinaOS kernels >= 2.4.14 and >=2.6.3
  *
- * Linux kernel specific extensions to init.c/init301.c
+ * LinaOS kernel specific extensions to init.c/init301.c
  *
  * Copyright (C) 2001-2005 Thomas Winischhofer, Vienna, Austria.
  *
@@ -16,8 +16,8 @@
 #include "vgatypes.h"
 #include "vstruct.h"
 
-#include <linux/types.h>
-#include <linux/fb.h>
+#include <linaos/types.h>
+#include <linaos/fb.h>
 
 int		sisfb_mode_rate_to_dclock(struct SiS_Private *SiS_Pr,
 			unsigned char modeno, unsigned char rateindex);

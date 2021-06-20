@@ -12,12 +12,12 @@
 #define pr_fmt(fmt) "CacheFiles: " fmt
 
 
-#include <linux/fscache-cache.h>
-#include <linux/timer.h>
-#include <linux/wait_bit.h>
-#include <linux/cred.h>
-#include <linux/workqueue.h>
-#include <linux/security.h>
+#include <linaos/fscache-cache.h>
+#include <linaos/timer.h>
+#include <linaos/wait_bit.h>
+#include <linaos/cred.h>
+#include <linaos/workqueue.h>
+#include <linaos/security.h>
 
 struct cachefiles_cache;
 struct cachefiles_object;

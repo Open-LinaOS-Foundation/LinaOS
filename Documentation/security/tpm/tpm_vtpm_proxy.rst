@@ -1,17 +1,17 @@
 =============================================
-Virtual TPM Proxy Driver for Linux Containers
+Virtual TPM Proxy Driver for LinaOS Containers
 =============================================
 
 | Authors:
-| Stefan Berger <stefanb@linux.vnet.ibm.com>
+| Stefan Berger <stefanb@linaos.vnet.ibm.com>
 
 This document describes the virtual Trusted Platform Module (vTPM)
-proxy device driver for Linux containers.
+proxy device driver for LinaOS containers.
 
 Introduction
 ============
 
-The goal of this work is to provide TPM functionality to each Linux
+The goal of this work is to provide TPM functionality to each LinaOS
 container. This allows programs to interact with a TPM in a container
 the same way they interact with a TPM on the physical system. Each
 container gets its own unique, emulated, software TPM.
@@ -44,7 +44,7 @@ returned by the ioctl. The commands should be responded to immediately.
 UAPI
 ====
 
-.. kernel-doc:: include/uapi/linux/vtpm_proxy.h
+.. kernel-doc:: include/uapi/linaos/vtpm_proxy.h
 
 .. kernel-doc:: drivers/char/tpm/tpm_vtpm_proxy.c
    :functions: vtpmx_ioc_new_dev

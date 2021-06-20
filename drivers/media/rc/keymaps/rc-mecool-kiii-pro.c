@@ -3,7 +3,7 @@
 // Copyright (C) 2021 Christian Hewitt <christianshewitt@gmail.com>
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 //
 // Keytable for the Mecool Kiii Pro remote control

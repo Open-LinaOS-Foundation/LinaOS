@@ -5,26 +5,26 @@
  * Communication to userspace based on kernel/printk.c
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/spinlock.h>
-#include <linux/cpu.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/topology.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/poll.h>
+#include <linaos/proc_fs.h>
+#include <linaos/init.h>
+#include <linaos/vmalloc.h>
+#include <linaos/spinlock.h>
+#include <linaos/cpu.h>
+#include <linaos/workqueue.h>
+#include <linaos/slab.h>
+#include <linaos/topology.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/rtas.h>
 #include <asm/prom.h>
 #include <asm/nvram.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/machdep.h>
 #include <asm/topology.h>
 

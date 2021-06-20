@@ -3,19 +3,19 @@
  * scan.c - support for transforming the ACPI namespace into individual objects
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/signal.h>
-#include <linux/kthread.h>
-#include <linux/dmi.h>
-#include <linux/nls.h>
-#include <linux/dma-map-ops.h>
-#include <linux/platform_data/x86/apple.h>
-#include <linux/pgtable.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/acpi.h>
+#include <linaos/acpi_iort.h>
+#include <linaos/signal.h>
+#include <linaos/kthread.h>
+#include <linaos/dmi.h>
+#include <linaos/nls.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/platform_data/x86/apple.h>
+#include <linaos/pgtable.h>
 
 #include "internal.h"
 
@@ -1199,7 +1199,7 @@ acpi_backlight_cap_match(acpi_handle handle, u32 level, void *context,
 
 /* Returns true if the ACPI object is a video device which can be
  * handled by video.ko.
- * The device will get a Linux specific CID added in scan.c to
+ * The device will get a LinaOS specific CID added in scan.c to
  * identify the device as an ACPI graphics device
  * Be aware that the graphics device may not be physically present
  * Use acpi_video_get_capabilities() to detect general ACPI video

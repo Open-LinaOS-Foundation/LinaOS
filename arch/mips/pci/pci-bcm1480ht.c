@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * Copyright (C) 2001,2002,2005 Broadcom Corporation
- * Copyright (C) 2004 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2004 by Ralf Baechle (ralf@linaos-mips.org)
  */
 
 /*
  * BCM1480/1455-specific HT support (looking like PCI)
  *
- * This module provides the glue between Linux's PCI subsystem
+ * This module provides the glue between LinaOS's PCI subsystem
  * and the hardware.  We basically provide glue for accessing
  * configuration space, and set up the translation for I/O
  * space accesses.
@@ -18,13 +18,13 @@
  * problem.
  *
  */
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/console.h>
-#include <linux/tty.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/console.h>
+#include <linaos/tty.h>
 
 #include <asm/sibyte/bcm1480_regs.h>
 #include <asm/sibyte/bcm1480_scd.h>

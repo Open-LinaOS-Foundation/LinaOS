@@ -6,7 +6,7 @@
  * Copyright 2014-2015 Linaro Ltd.
  */
 
-#include <linux/greybus.h>
+#include <linaos/greybus.h>
 
 static const char *get_descriptor_type_string(u8 type)
 {

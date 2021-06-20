@@ -12,12 +12,12 @@
  */
 
 #include <stdarg.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
+#include <linaos/smp.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
 
 #include <asm/cacheflush.h>
-#include <linux/of_address.h>
+#include <linaos/of_address.h>
 
 #include "bcm_kona_smc.h"
 

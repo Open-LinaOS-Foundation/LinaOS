@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPIBSG_H
 #define _UAPIBSG_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define BSG_PROTOCOL_SCSI		0
 

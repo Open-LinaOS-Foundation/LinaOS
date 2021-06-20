@@ -2,7 +2,7 @@
 #ifndef __WL12XX_80211_H__
 #define __WL12XX_80211_H__
 
-#include <linux/if_ether.h>	/* ETH_ALEN */
+#include <linaos/if_ether.h>	/* ETH_ALEN */
 
 /* RATES */
 #define IEEE80211_CCK_RATE_1MB		        0x02

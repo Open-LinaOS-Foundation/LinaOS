@@ -4,10 +4,10 @@
  * Copyright (C) 2004 Li Shaohua <shaohua.li@intel.com>
  */
 
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 
 #include "internal.h"
 #include "sleep.h"

@@ -11,8 +11,8 @@
 #ifndef OCTEON_ETHERNET_H
 #define OCTEON_ETHERNET_H
 
-#include <linux/of.h>
-#include <linux/phy.h>
+#include <linaos/of.h>
+#include <linaos/phy.h>
 
 #ifdef CONFIG_CAVIUM_OCTEON_SOC
 

@@ -17,7 +17,7 @@
 		ledb {
 			label = "cm-t3x:green";
 			gpios = <&gpio6 26 GPIO_ACTIVE_HIGH>;  /* gpio186 */
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 
@@ -315,7 +315,7 @@
 			reg = <0x260000 0x40000>;
 		};
 		partition@2a0000 {
-			label = "linux";
+			label = "linaos";
 			reg = <0x2a0000 0x400000>;
 		};
 		partition@6a0000 {

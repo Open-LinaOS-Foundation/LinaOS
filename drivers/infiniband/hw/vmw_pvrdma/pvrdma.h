@@ -46,13 +46,13 @@
 #ifndef __PVRDMA_H__
 #define __PVRDMA_H__
 
-#include <linux/compiler.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/semaphore.h>
-#include <linux/workqueue.h>
+#include <linaos/compiler.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/semaphore.h>
+#include <linaos/workqueue.h>
 #include <rdma/ib_umem.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/vmw_pvrdma-abi.h>

@@ -20,7 +20,7 @@ a tree-like structure with zero or more properties (key-value pairs)
 in each node of the tree.
 
 The data structure may be accessed at runtime by using the device_*
-and fwnode_* functions defined in include/linux/fwnode.h .
+and fwnode_* functions defined in include/linaos/fwnode.h .
 
 Fwnode represents a generic firmware node object. It is independent on
 the firmware type. In ACPI, fwnodes are _DSD hierarchical data

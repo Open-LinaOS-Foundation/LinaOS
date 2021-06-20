@@ -10,11 +10,11 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/of_clk.h>
-#include <linux/platform_device.h>
-#include <linux/reset/sunxi.h>
+#include <linaos/clocksource.h>
+#include <linaos/init.h>
+#include <linaos/of_clk.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset/sunxi.h>
 
 #include <asm/mach/arch.h>
 #include <asm/secure_cntvoff.h>

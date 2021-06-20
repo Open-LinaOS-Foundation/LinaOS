@@ -9,7 +9,7 @@
  *
  * IO-DATA LANDISK support
  */
-#include <linux/sh_intc.h>
+#include <linaos/sh_intc.h>
 
 /* Box specific addresses.  */
 

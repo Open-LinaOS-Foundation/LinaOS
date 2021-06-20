@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  include/linux/userfaultfd_k.h
+ *  include/linaos/userfaultfd_k.h
  *
  *  Copyright (C) 2015  Red Hat, Inc.
  *
@@ -11,10 +11,10 @@
 
 #ifdef CONFIG_USERFAULTFD
 
-#include <linux/userfaultfd.h> /* linux/include/uapi/linux/userfaultfd.h */
+#include <linaos/userfaultfd.h> /* linaos/include/uapi/linaos/userfaultfd.h */
 
-#include <linux/fcntl.h>
-#include <linux/mm.h>
+#include <linaos/fcntl.h>
+#include <linaos/mm.h>
 #include <asm-generic/pgtable_uffd.h>
 
 /* The set of all possible UFFD-related VM flags. */

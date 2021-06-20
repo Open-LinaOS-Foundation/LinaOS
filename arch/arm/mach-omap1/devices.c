@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/arch/arm/mach-omap1/devices.c
+ * linaos/arch/arm/mach-omap1/devices.c
  *
  * OMAP1 platform device setup/initialization
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/gpio.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/spi/spi.h>
 
-#include <linux/platform_data/omap-wd-timer.h>
+#include <linaos/platform_data/omap-wd-timer.h>
 
 #include <asm/mach/map.h>
 

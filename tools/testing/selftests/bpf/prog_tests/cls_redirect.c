@@ -6,7 +6,7 @@
 #include <arpa/inet.h>
 #include <string.h>
 
-#include <linux/pkt_cls.h>
+#include <linaos/pkt_cls.h>
 #include <netinet/tcp.h>
 
 #include <test_progs.h>

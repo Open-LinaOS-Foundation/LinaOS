@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/char/ttyprintk.c
+ *  linaos/drivers/char/ttyprintk.c
  *
  *  Copyright (C) 2010  Samo Pogacnik
  */
@@ -11,11 +11,11 @@
  * of the boot process, for example.
  */
 
-#include <linux/device.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <linaos/device.h>
+#include <linaos/serial.h>
+#include <linaos/tty.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
 
 struct ttyprintk_port {
 	struct tty_port port;

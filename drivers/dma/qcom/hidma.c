@@ -1,7 +1,7 @@
 /*
  * Qualcomm Technologies HIDMA DMA engine interface
  *
- * Copyright (c) 2015-2017, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2017, The LinaOS Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -40,24 +40,24 @@
  * file called COPYING.
  */
 
-/* Linux Foundation elects GPLv2 license only. */
+/* LinaOS Foundation elects GPLv2 license only. */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/of_dma.h>
-#include <linux/of_device.h>
-#include <linux/property.h>
-#include <linux/delay.h>
-#include <linux/acpi.h>
-#include <linux/irq.h>
-#include <linux/atomic.h>
-#include <linux/pm_runtime.h>
-#include <linux/msi.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/of_dma.h>
+#include <linaos/of_device.h>
+#include <linaos/property.h>
+#include <linaos/delay.h>
+#include <linaos/acpi.h>
+#include <linaos/irq.h>
+#include <linaos/atomic.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/msi.h>
 
 #include "../dmaengine.h"
 #include "hidma.h"

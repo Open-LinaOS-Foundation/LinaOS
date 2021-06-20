@@ -4,7 +4,7 @@
  * 2007-1-12 Robert Jarzmik
 */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 /*

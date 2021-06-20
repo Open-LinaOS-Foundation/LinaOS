@@ -2,7 +2,7 @@
 #ifndef __SEQ_FILE_NET_H__
 #define __SEQ_FILE_NET_H__
 
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 
 struct net;
 extern struct net init_net;

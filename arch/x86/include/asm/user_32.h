@@ -5,7 +5,7 @@
 #include <asm/page.h>
 /* Core file format: The core file is written in such a way that gdb
    can understand it and provide useful information to the user (under
-   linux we use the 'trad-core' bfd).  There are quite a number of
+   linaos we use the 'trad-core' bfd).  There are quite a number of
    obstacles to being able to view the contents of the floating point
    registers, and until these are solved you will not be able to view the
    contents of them.  Actually, you can read in the core file and look at
@@ -32,7 +32,7 @@
 
 /*
  * Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@valinaos.com>, May 2000
  *
  * Provide support for the GDB 5.0+ PTRACE_{GET|SET}FPXREGS requests for
  * interacting with the FXSR-format floating point environment.  Floating

@@ -10,24 +10,24 @@
 
 #define pr_fmt(fmt) "LSM: " fmt
 
-#include <linux/bpf.h>
-#include <linux/capability.h>
-#include <linux/dcache.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kernel_read_file.h>
-#include <linux/lsm_hooks.h>
-#include <linux/integrity.h>
-#include <linux/ima.h>
-#include <linux/evm.h>
-#include <linux/fsnotify.h>
-#include <linux/mman.h>
-#include <linux/mount.h>
-#include <linux/personality.h>
-#include <linux/backing-dev.h>
-#include <linux/string.h>
-#include <linux/msg.h>
+#include <linaos/bpf.h>
+#include <linaos/capability.h>
+#include <linaos/dcache.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/kernel_read_file.h>
+#include <linaos/lsm_hooks.h>
+#include <linaos/integrity.h>
+#include <linaos/ima.h>
+#include <linaos/evm.h>
+#include <linaos/fsnotify.h>
+#include <linaos/mman.h>
+#include <linaos/mount.h>
+#include <linaos/personality.h>
+#include <linaos/backing-dev.h>
+#include <linaos/string.h>
+#include <linaos/msg.h>
 #include <net/flow.h>
 
 #define MAX_LSM_EVM_XATTR	2
@@ -694,7 +694,7 @@ static int lsm_superblock_alloc(struct super_block *sb)
 }
 
 /*
- * The default value of the LSM hook is defined in linux/lsm_hook_defs.h and
+ * The default value of the LSM hook is defined in linaos/lsm_hook_defs.h and
  * can be accessed with:
  *
  *	LSM_RET_DEFAULT(<hook_name>)
@@ -709,7 +709,7 @@ static int lsm_superblock_alloc(struct super_block *sb)
 #define LSM_HOOK(RET, DEFAULT, NAME, ...) \
 	DECLARE_LSM_RET_DEFAULT_##RET(DEFAULT, NAME)
 
-#include <linux/lsm_hook_defs.h>
+#include <linaos/lsm_hook_defs.h>
 #undef LSM_HOOK
 
 /*
@@ -848,17 +848,17 @@ int security_vm_enough_memory_mm(struct mm_struct *mm, long pages)
 	return __vm_enough_memory(mm, pages, cap_sys_admin);
 }
 
-int security_bprm_creds_for_exec(struct linux_binprm *bprm)
+int security_bprm_creds_for_exec(struct linaos_binprm *bprm)
 {
 	return call_int_hook(bprm_creds_for_exec, 0, bprm);
 }
 
-int security_bprm_creds_from_file(struct linux_binprm *bprm, struct file *file)
+int security_bprm_creds_from_file(struct linaos_binprm *bprm, struct file *file)
 {
 	return call_int_hook(bprm_creds_from_file, 0, bprm, file);
 }
 
-int security_bprm_check(struct linux_binprm *bprm)
+int security_bprm_check(struct linaos_binprm *bprm)
 {
 	int ret;
 
@@ -868,12 +868,12 @@ int security_bprm_check(struct linux_binprm *bprm)
 	return ima_bprm_check(bprm);
 }
 
-void security_bprm_committing_creds(struct linux_binprm *bprm)
+void security_bprm_committing_creds(struct linaos_binprm *bprm)
 {
 	call_void_hook(bprm_committing_creds, bprm);
 }
 
-void security_bprm_committed_creds(struct linux_binprm *bprm)
+void security_bprm_committed_creds(struct linaos_binprm *bprm)
 {
 	call_void_hook(bprm_committed_creds, bprm);
 }
@@ -1341,7 +1341,7 @@ int security_inode_setxattr(struct user_namespace *mnt_userns,
 	if (unlikely(IS_PRIVATE(d_backing_inode(dentry))))
 		return 0;
 	/*
-	 * SELinux and Smack integrate the cap call,
+	 * SELinaOS and Smack integrate the cap call,
 	 * so assume that all LSMs supplying this call do so.
 	 */
 	ret = call_int_hook(inode_setxattr, 1, mnt_userns, dentry, name, value,
@@ -1388,7 +1388,7 @@ int security_inode_removexattr(struct user_namespace *mnt_userns,
 	if (unlikely(IS_PRIVATE(d_backing_inode(dentry))))
 		return 0;
 	/*
-	 * SELinux and Smack integrate the cap call,
+	 * SELinaOS and Smack integrate the cap call,
 	 * so assume that all LSMs supplying this call do so.
 	 */
 	ret = call_int_hook(inode_removexattr, 1, mnt_userns, dentry, name);
@@ -2481,7 +2481,7 @@ int security_xfrm_state_pol_flow_match(struct xfrm_state *x,
 	/*
 	 * Since this function is expected to return 0 or 1, the judgment
 	 * becomes difficult if multiple LSMs supply this call. Fortunately,
-	 * we can use the first LSM's judgment because currently only SELinux
+	 * we can use the first LSM's judgment because currently only SELinaOS
 	 * supplies this call.
 	 *
 	 * For speed optimization, we explicitly break the loop rather than

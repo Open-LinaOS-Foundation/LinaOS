@@ -6,12 +6,12 @@
 
 #define COMMAND_LINE_SIZE 2048
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/page_types.h>
 
 #ifdef __i386__
 
-#include <linux/pfn.h>
+#include <linaos/pfn.h>
 /*
  * Reserved space for vmalloc and iomap - defined in asm/page.h
  */
@@ -69,7 +69,7 @@ static inline void x86_ce4100_early_setup(void) { }
 #ifndef _SETUP
 
 #include <asm/espfix.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /*
  * This is set up by the setup-routine at boot-time
@@ -115,7 +115,7 @@ void *extend_brk(size_t size, size_t align);
  * (This uses a temp function to wrap the asm so we can pass it the
  * size parameter; otherwise we wouldn't be able to.  We can't use a
  * "section" attribute on a normal variable because it always ends up
- * being @progbits, which ends up allocating space in the vmlinux
+ * being @progbits, which ends up allocating space in the vmlinaos
  * executable.)
  */
 #define RESERVE_BRK(name,sz)						\

@@ -31,7 +31,7 @@ the transmit and the receive into the kernel.
 
 .. code-block:: c
 
-  /* From linux/tls.h */
+  /* From linaos/tls.h */
   struct tls_crypto_info {
           unsigned short version;
           unsigned short cipher_type;

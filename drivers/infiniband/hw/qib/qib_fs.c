@@ -32,13 +32,13 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/namei.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/fs_context.h>
+#include <linaos/mount.h>
+#include <linaos/pagemap.h>
+#include <linaos/init.h>
+#include <linaos/namei.h>
 
 #include "qib.h"
 

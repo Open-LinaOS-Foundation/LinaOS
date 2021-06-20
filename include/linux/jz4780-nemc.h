@@ -9,7 +9,7 @@
 #ifndef __LINUX_JZ4780_NEMC_H__
 #define __LINUX_JZ4780_NEMC_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct device;
 

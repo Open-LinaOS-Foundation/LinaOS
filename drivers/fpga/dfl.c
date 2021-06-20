@@ -8,12 +8,12 @@
  *   Kang Luwei <luwei.kang@intel.com>
  *   Zhang Yi <yi.z.zhang@intel.com>
  *   Wu Hao <hao.wu@intel.com>
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@linaos.intel.com>
  */
-#include <linux/dfl.h>
-#include <linux/fpga-dfl.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linaos/dfl.h>
+#include <linaos/fpga-dfl.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
 
 #include "dfl.h"
 
@@ -682,7 +682,7 @@ EXPORT_SYMBOL_GPL(dfl_fpga_dev_ops_unregister);
  * @dev: device to enumerate.
  * @cdev: the container device for all feature devices.
  * @nr_irqs: number of irqs for all feature devices.
- * @irq_table: Linux IRQ numbers for all irqs, indexed by local irq index of
+ * @irq_table: LinaOS IRQ numbers for all irqs, indexed by local irq index of
  *	       this device.
  * @feature_dev: current feature device.
  * @ioaddr: header register region address of current FIU in enumeration.
@@ -1323,7 +1323,7 @@ EXPORT_SYMBOL_GPL(dfl_fpga_enum_info_add_dfl);
  *
  * @info: ptr to dfl_fpga_enum_info
  * @nr_irqs: number of irqs of the DFL fpga device to be enumerated.
- * @irq_table: Linux IRQ numbers for all irqs, indexed by local irq index of
+ * @irq_table: LinaOS IRQ numbers for all irqs, indexed by local irq index of
  *	       this device.
  *
  * One FPGA device may have several interrupts. This function adds irq

@@ -24,17 +24,17 @@
  * alternative licensing inquiries.
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 /* TCA8418 hardware limits */
 #define TCA8418_MAX_ROWS	8

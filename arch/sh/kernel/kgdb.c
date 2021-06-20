@@ -6,12 +6,12 @@
  *
  * Single stepping taken from the old stub by Henry Bell and Jeremy Siegel.
  */
-#include <linux/kgdb.h>
-#include <linux/kdebug.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/kgdb.h>
+#include <linaos/kdebug.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
 
 #include <asm/cacheflush.h>
 #include <asm/traps.h>
@@ -44,80 +44,80 @@
 #define STEP_OPCODE             0xc33d
 
 /* Calculate the new address for after a step */
-static short *get_step_address(struct pt_regs *linux_regs)
+static short *get_step_address(struct pt_regs *linaos_regs)
 {
-	insn_size_t op = __raw_readw(linux_regs->pc);
+	insn_size_t op = __raw_readw(linaos_regs->pc);
 	long addr;
 
 	/* BT */
 	if (OPCODE_BT(op)) {
-		if (linux_regs->sr & SR_T_BIT_MASK)
-			addr = linux_regs->pc + 4 + OPCODE_BTF_DISP(op);
+		if (linaos_regs->sr & SR_T_BIT_MASK)
+			addr = linaos_regs->pc + 4 + OPCODE_BTF_DISP(op);
 		else
-			addr = linux_regs->pc + 2;
+			addr = linaos_regs->pc + 2;
 	}
 
 	/* BTS */
 	else if (OPCODE_BTS(op)) {
-		if (linux_regs->sr & SR_T_BIT_MASK)
-			addr = linux_regs->pc + 4 + OPCODE_BTF_DISP(op);
+		if (linaos_regs->sr & SR_T_BIT_MASK)
+			addr = linaos_regs->pc + 4 + OPCODE_BTF_DISP(op);
 		else
-			addr = linux_regs->pc + 4;	/* Not in delay slot */
+			addr = linaos_regs->pc + 4;	/* Not in delay slot */
 	}
 
 	/* BF */
 	else if (OPCODE_BF(op)) {
-		if (!(linux_regs->sr & SR_T_BIT_MASK))
-			addr = linux_regs->pc + 4 + OPCODE_BTF_DISP(op);
+		if (!(linaos_regs->sr & SR_T_BIT_MASK))
+			addr = linaos_regs->pc + 4 + OPCODE_BTF_DISP(op);
 		else
-			addr = linux_regs->pc + 2;
+			addr = linaos_regs->pc + 2;
 	}
 
 	/* BFS */
 	else if (OPCODE_BFS(op)) {
-		if (!(linux_regs->sr & SR_T_BIT_MASK))
-			addr = linux_regs->pc + 4 + OPCODE_BTF_DISP(op);
+		if (!(linaos_regs->sr & SR_T_BIT_MASK))
+			addr = linaos_regs->pc + 4 + OPCODE_BTF_DISP(op);
 		else
-			addr = linux_regs->pc + 4;	/* Not in delay slot */
+			addr = linaos_regs->pc + 4;	/* Not in delay slot */
 	}
 
 	/* BRA */
 	else if (OPCODE_BRA(op))
-		addr = linux_regs->pc + 4 + OPCODE_BRA_DISP(op);
+		addr = linaos_regs->pc + 4 + OPCODE_BRA_DISP(op);
 
 	/* BRAF */
 	else if (OPCODE_BRAF(op))
-		addr = linux_regs->pc + 4
-		    + linux_regs->regs[OPCODE_BRAF_REG(op)];
+		addr = linaos_regs->pc + 4
+		    + linaos_regs->regs[OPCODE_BRAF_REG(op)];
 
 	/* BSR */
 	else if (OPCODE_BSR(op))
-		addr = linux_regs->pc + 4 + OPCODE_BSR_DISP(op);
+		addr = linaos_regs->pc + 4 + OPCODE_BSR_DISP(op);
 
 	/* BSRF */
 	else if (OPCODE_BSRF(op))
-		addr = linux_regs->pc + 4
-		    + linux_regs->regs[OPCODE_BSRF_REG(op)];
+		addr = linaos_regs->pc + 4
+		    + linaos_regs->regs[OPCODE_BSRF_REG(op)];
 
 	/* JMP */
 	else if (OPCODE_JMP(op))
-		addr = linux_regs->regs[OPCODE_JMP_REG(op)];
+		addr = linaos_regs->regs[OPCODE_JMP_REG(op)];
 
 	/* JSR */
 	else if (OPCODE_JSR(op))
-		addr = linux_regs->regs[OPCODE_JSR_REG(op)];
+		addr = linaos_regs->regs[OPCODE_JSR_REG(op)];
 
 	/* RTS */
 	else if (OPCODE_RTS(op))
-		addr = linux_regs->pr;
+		addr = linaos_regs->pr;
 
 	/* RTE */
 	else if (OPCODE_RTE(op))
-		addr = linux_regs->regs[15];
+		addr = linaos_regs->regs[15];
 
 	/* Other */
 	else
-		addr = linux_regs->pc + instruction_size(op);
+		addr = linaos_regs->pc + instruction_size(op);
 
 	flush_icache_range(addr, addr + instruction_size(op));
 	return (short *)addr;
@@ -135,10 +135,10 @@ static short *get_step_address(struct pt_regs *linux_regs)
 static unsigned long stepped_address;
 static insn_size_t stepped_opcode;
 
-static void do_single_step(struct pt_regs *linux_regs)
+static void do_single_step(struct pt_regs *linaos_regs)
 {
 	/* Determine where the target instruction will send us to */
-	unsigned short *addr = get_step_address(linux_regs);
+	unsigned short *addr = get_step_address(linaos_regs);
 
 	stepped_address = (int)addr;
 
@@ -152,7 +152,7 @@ static void do_single_step(struct pt_regs *linux_regs)
 }
 
 /* Undo a single step */
-static void undo_single_step(struct pt_regs *linux_regs)
+static void undo_single_step(struct pt_regs *linaos_regs)
 {
 	/* If we have stepped, put back the old instruction */
 	/* Use stepped_address in case we stopped elsewhere */
@@ -251,13 +251,13 @@ void sleeping_thread_to_gdb_regs(unsigned long *gdb_regs, struct task_struct *p)
 
 int kgdb_arch_handle_exception(int e_vector, int signo, int err_code,
 			       char *remcomInBuffer, char *remcomOutBuffer,
-			       struct pt_regs *linux_regs)
+			       struct pt_regs *linaos_regs)
 {
 	unsigned long addr;
 	char *ptr;
 
 	/* Undo any stepping we may have done */
-	undo_single_step(linux_regs);
+	undo_single_step(linaos_regs);
 
 	switch (remcomInBuffer[0]) {
 	case 'c':
@@ -265,14 +265,14 @@ int kgdb_arch_handle_exception(int e_vector, int signo, int err_code,
 		/* try to read optional parameter, pc unchanged if no parm */
 		ptr = &remcomInBuffer[1];
 		if (kgdb_hex2long(&ptr, &addr))
-			linux_regs->pc = addr;
+			linaos_regs->pc = addr;
 		fallthrough;
 	case 'D':
 	case 'k':
 		atomic_set(&kgdb_cpu_doing_single_step, -1);
 
 		if (remcomInBuffer[0] == 's') {
-			do_single_step(linux_regs);
+			do_single_step(linaos_regs);
 			kgdb_single_step = 1;
 
 			atomic_set(&kgdb_cpu_doing_single_step,

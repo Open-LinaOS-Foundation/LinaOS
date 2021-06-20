@@ -1,11 +1,11 @@
 /*
- *  linux/drivers/message/fusion/mptlan.h
+ *  linaos/drivers/message/fusion/mptlan.h
  *      IP Over Fibre Channel device driver.
  *      For use with LSI Fibre Channel PCI chip/adapters
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 2000-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionLinaOS@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -52,25 +52,25 @@
 /*****************************************************************************/
 
 #if !defined(__GENKSYMS__)
-#include <linux/module.h>
+#include <linaos/module.h>
 #endif
 
-#include <linux/netdevice.h>
-#include <linux/errno.h>
-// #include <linux/etherdevice.h>
-#include <linux/fcdevice.h>
-// #include <linux/fddidevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/errno.h>
+// #include <linaos/etherdevice.h>
+#include <linaos/fcdevice.h>
+// #include <linaos/fddidevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_arp.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
+#include <linaos/delay.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 
     /* Override mptbase.h by pre-defining these! */

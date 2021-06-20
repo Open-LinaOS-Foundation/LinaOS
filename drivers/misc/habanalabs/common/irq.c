@@ -7,7 +7,7 @@
 
 #include "habanalabs.h"
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 /**
  * struct hl_eqe_work - This structure is used to schedule work of EQ

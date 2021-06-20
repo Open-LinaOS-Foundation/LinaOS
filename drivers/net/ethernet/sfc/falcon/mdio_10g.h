@@ -7,7 +7,7 @@
 #ifndef EF4_MDIO_10G_H
 #define EF4_MDIO_10G_H
 
-#include <linux/mdio.h>
+#include <linaos/mdio.h>
 
 /*
  * Helper functions for doing 10G MDIO as specified in IEEE 802.3 clause 45.

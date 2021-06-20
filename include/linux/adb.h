@@ -5,7 +5,7 @@
 #ifndef __ADB_H
 #define __ADB_H
 
-#include <uapi/linux/adb.h>
+#include <uapi/linaos/adb.h>
 
 
 struct adb_request {

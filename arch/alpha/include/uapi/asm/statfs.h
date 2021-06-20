@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _ALPHA_STATFS_H
 #define _ALPHA_STATFS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Alpha is the only 64-bit platform with 32-bit statfs. And doesn't
    even seem to implement statfs64 */

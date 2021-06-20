@@ -26,10 +26,10 @@
 *	http://www.obock.de/kernel/cypress
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
 
 #define DRIVER_AUTHOR		"Oliver Bock (bock@tfh-berlin.de)"
 #define DRIVER_DESC		"Cypress CY7C63xxx USB driver"

@@ -17,16 +17,16 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/spinlock.h>
-#include <linux/v4l2-dv-timings.h>
-#include <linux/of_graph.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/spinlock.h>
+#include <linaos/v4l2-dv-timings.h>
+#include <linaos/of_graph.h>
 
 #include "vpif.h"
 

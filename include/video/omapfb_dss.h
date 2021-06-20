@@ -6,11 +6,11 @@
 #ifndef __OMAPFB_DSS_H
 #define __OMAPFB_DSS_H
 
-#include <linux/list.h>
-#include <linux/kobject.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/platform_data/omapdss.h>
+#include <linaos/list.h>
+#include <linaos/kobject.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_data/omapdss.h>
 
 #include <video/videomode.h>
 

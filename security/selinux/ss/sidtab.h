@@ -11,9 +11,9 @@
 #ifndef _SS_SIDTAB_H_
 #define _SS_SIDTAB_H_
 
-#include <linux/spinlock_types.h>
-#include <linux/log2.h>
-#include <linux/hashtable.h>
+#include <linaos/spinlock_types.h>
+#include <linaos/log2.h>
+#include <linaos/hashtable.h>
 
 #include "context.h"
 

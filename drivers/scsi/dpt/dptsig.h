@@ -194,7 +194,7 @@ typedef unsigned int sigINT;
 #define OS_BSDI_UNIX	0x00200000 /* BSDi Unix BSD/OS 2.0 and up	*/
 #define OS_AIX_UNIX     0x00400000 /* AIX Unix				*/
 #define OS_FREE_BSD	0x00800000 /* FreeBSD Unix			*/
-#define OS_LINUX	0x01000000 /* Linux				*/
+#define OS_LINUX	0x01000000 /* LinaOS				*/
 #define OS_DGUX_UNIX	0x02000000 /* Data General Unix			*/
 #define OS_SINIX_N      0x04000000 /* SNI SINIX-N			*/
 #define OS_PLAN9	0x08000000 /* ATT Plan 9			*/

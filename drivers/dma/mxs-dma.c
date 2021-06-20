@@ -4,27 +4,27 @@
 //
 // Refer to drivers/dma/imx-sdma.c
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/stmp_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/list.h>
-#include <linux/dma/mxs-dma.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/clk.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>
+#include <linaos/semaphore.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/dmaengine.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/stmp_device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_dma.h>
+#include <linaos/list.h>
+#include <linaos/dma/mxs-dma.h>
 
 #include <asm/irq.h>
 

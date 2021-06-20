@@ -10,8 +10,8 @@
 #ifndef __PWM_LPSS_H
 #define __PWM_LPSS_H
 
-#include <linux/device.h>
-#include <linux/pwm.h>
+#include <linaos/device.h>
+#include <linaos/pwm.h>
 
 #define MAX_PWMS			4
 

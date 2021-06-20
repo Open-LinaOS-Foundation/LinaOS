@@ -2,9 +2,9 @@
 #ifndef _ASM_GENERIC_PERCPU_H_
 #define _ASM_GENERIC_PERCPU_H_
 
-#include <linux/compiler.h>
-#include <linux/threads.h>
-#include <linux/percpu-defs.h>
+#include <linaos/compiler.h>
+#include <linaos/threads.h>
+#include <linaos/percpu-defs.h>
 
 #ifdef CONFIG_SMP
 

@@ -5,21 +5,21 @@
  * Copyright (c) 2013 Florian Fainelli <florian@openwrt.org>
  */
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_platform.h>
-#include <linux/of_net.h>
-#include <linux/netdevice.h>
-#include <linux/sysfs.h>
-#include <linux/phy_fixed.h>
-#include <linux/ptp_classify.h>
-#include <linux/etherdevice.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/of.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_net.h>
+#include <linaos/netdevice.h>
+#include <linaos/sysfs.h>
+#include <linaos/phy_fixed.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/etherdevice.h>
 
 #include "dsa_priv.h"
 

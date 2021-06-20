@@ -9,15 +9,15 @@
  *		except it reports the sockets in the INET6 address family.
  *
  * Authors:	David S. Miller (davem@caip.rutgers.edu)
- *		YOSHIFUJI Hideaki <yoshfuji@linux-ipv6.org>
+ *		YOSHIFUJI Hideaki <yoshfuji@linaos-ipv6.org>
  */
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <linux/ipv6.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/stddef.h>
-#include <linux/export.h>
+#include <linaos/socket.h>
+#include <linaos/net.h>
+#include <linaos/ipv6.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/stddef.h>
+#include <linaos/export.h>
 #include <net/net_namespace.h>
 #include <net/ip.h>
 #include <net/sock.h>

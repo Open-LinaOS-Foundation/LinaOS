@@ -3,12 +3,12 @@
 #ifndef _LINUX_TRACE_EVENT_H
 #define _LINUX_TRACE_EVENT_H
 
-#include <linux/ring_buffer.h>
-#include <linux/trace_seq.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/perf_event.h>
-#include <linux/tracepoint.h>
+#include <linaos/ring_buffer.h>
+#include <linaos/trace_seq.h>
+#include <linaos/percpu.h>
+#include <linaos/hardirq.h>
+#include <linaos/perf_event.h>
+#include <linaos/tracepoint.h>
 
 struct trace_array;
 struct array_buffer;

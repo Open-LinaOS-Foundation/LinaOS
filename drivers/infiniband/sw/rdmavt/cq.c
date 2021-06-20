@@ -45,8 +45,8 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 #include "cq.h"
 #include "vt.h"
 #include "trace.h"

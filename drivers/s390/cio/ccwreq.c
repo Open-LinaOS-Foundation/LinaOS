@@ -9,8 +9,8 @@
 #define KMSG_COMPONENT "cio"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/types.h>
-#include <linux/err.h>
+#include <linaos/types.h>
+#include <linaos/err.h>
 #include <asm/ccwdev.h>
 #include <asm/cio.h>
 

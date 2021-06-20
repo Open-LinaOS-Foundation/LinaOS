@@ -3,9 +3,9 @@
 
 #ifndef __HCLGE_CMD_H
 #define __HCLGE_CMD_H
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/etherdevice.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
+#include <linaos/etherdevice.h>
 #include "hnae3.h"
 
 #define HCLGE_CMDQ_TX_TIMEOUT		30000

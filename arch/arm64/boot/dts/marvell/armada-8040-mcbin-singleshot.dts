@@ -24,7 +24,7 @@
 			gpios = <&cp0_gpio2 1 GPIO_ACTIVE_LOW>;
 			function = LED_FUNCTION_HEARTBEAT;
 			color = <LED_COLOR_ID_GREEN>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 };

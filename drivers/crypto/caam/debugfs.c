@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause)
 /* Copyright 2019 NXP */
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 #include "compat.h"
 #include "debugfs.h"
 #include "regs.h"

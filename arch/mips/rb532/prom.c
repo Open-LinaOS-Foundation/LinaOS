@@ -9,14 +9,14 @@
  *			Florian Fainelli <florian@openwrt.org>
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/console.h>
-#include <linux/memblock.h>
-#include <linux/ioport.h>
-#include <linux/blkdev.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/export.h>
+#include <linaos/string.h>
+#include <linaos/console.h>
+#include <linaos/memblock.h>
+#include <linaos/ioport.h>
+#include <linaos/blkdev.h>
 
 #include <asm/bootinfo.h>
 #include <asm/mach-rc32434/ddr.h>

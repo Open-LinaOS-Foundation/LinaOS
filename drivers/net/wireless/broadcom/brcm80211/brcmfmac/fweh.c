@@ -2,7 +2,7 @@
 /*
  * Copyright (c) 2012 Broadcom Corporation
  */
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 
 #include "brcmu_wifi.h"
 #include "brcmu_utils.h"

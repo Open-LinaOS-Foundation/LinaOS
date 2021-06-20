@@ -5,10 +5,10 @@
  *  Copyright (C) 2007-2008 Yan Burman
  *  Copyright (C) 2008-2009 Eric Piel
  */
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/regulator/consumer.h>
-#include <linux/miscdevice.h>
+#include <linaos/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/miscdevice.h>
 
 /*
  * This driver tries to support the "digital" accelerometer chips from
@@ -21,7 +21,7 @@
  * a register. They can be connected either via I²C or SPI.
  */
 
-#include <linux/lis3lv02d.h>
+#include <linaos/lis3lv02d.h>
 
 enum lis3_reg {
 	WHO_AM_I	= 0x0F,

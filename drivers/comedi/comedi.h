@@ -3,7 +3,7 @@
  * comedi.h
  * header file for COMEDI user API
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1998-2001 David A. Schleef <ds@schleef.org>
  */
 

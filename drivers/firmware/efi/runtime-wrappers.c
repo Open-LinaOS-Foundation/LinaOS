@@ -15,8 +15,8 @@
  *
  * Split off from arch/x86/platform/efi/efi.c
  *
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA LinaOS Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@valinaos.com>
  * Copyright (C) 1999-2002 Hewlett-Packard Co.
  * Copyright (C) 2005-2008 Intel Co.
  * Copyright (C) 2013 SuSE Labs
@@ -24,14 +24,14 @@
 
 #define pr_fmt(fmt)	"efi: " fmt
 
-#include <linux/bug.h>
-#include <linux/efi.h>
-#include <linux/irqflags.h>
-#include <linux/mutex.h>
-#include <linux/semaphore.h>
-#include <linux/stringify.h>
-#include <linux/workqueue.h>
-#include <linux/completion.h>
+#include <linaos/bug.h>
+#include <linaos/efi.h>
+#include <linaos/irqflags.h>
+#include <linaos/mutex.h>
+#include <linaos/semaphore.h>
+#include <linaos/stringify.h>
+#include <linaos/workqueue.h>
+#include <linaos/completion.h>
 
 #include <asm/efi.h>
 

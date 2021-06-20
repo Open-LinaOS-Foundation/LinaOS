@@ -7,15 +7,15 @@
 
 #define pr_fmt(fmt) "SCMI Notifications PERF - " fmt
 
-#include <linux/bits.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/scmi_protocol.h>
-#include <linux/sort.h>
+#include <linaos/bits.h>
+#include <linaos/of.h>
+#include <linaos/io.h>
+#include <linaos/io-64-nonatomic-hi-lo.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_opp.h>
+#include <linaos/scmi_protocol.h>
+#include <linaos/sort.h>
 
 #include "common.h"
 #include "notify.h"

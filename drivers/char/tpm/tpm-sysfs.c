@@ -12,7 +12,7 @@
  *
  * sysfs filesystem inspection interface to the TPM
  */
-#include <linux/device.h>
+#include <linaos/device.h>
 #include "tpm.h"
 
 struct tpm_readpubek_out {

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * head.S: The initial boot code for the Sparc port of Linux.
+ * head.S: The initial boot code for the Sparc port of LinaOS.
  *
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  * Copyright (C) 1995,1999 Pete Zaitcev   (zaitcev@yahoo.com)
@@ -11,8 +11,8 @@
  * CompactPCI platform by Eric Brower, 1999.
  */
 
-#include <linux/version.h>
-#include <linux/init.h>
+#include <linaos/version.h>
+#include <linaos/init.h>
 
 #include <asm/head.h>
 #include <asm/asi.h>
@@ -45,11 +45,11 @@ cputypvar:
 	.align 4
 
 notsup:
-	.asciz	"Sparc-Linux sun4/sun4c or MMU-less not supported\n\n"
+	.asciz	"Sparc-LinaOS sun4/sun4c or MMU-less not supported\n\n"
 	.align 4
 
 sun4e_notsup:
-        .asciz  "Sparc-Linux sun4e support does not exist\n\n"
+        .asciz  "Sparc-LinaOS sun4e support does not exist\n\n"
 	.align 4
 
 /* The trap-table - located in the __HEAD section */
@@ -366,8 +366,8 @@ execute_in_high_mem:
 		sethi	%hi(prom_vector_p), %g1
 		st	%o0, [%g1 + %lo(prom_vector_p)]
 
-		sethi	%hi(linux_dbvec), %g1
-		st	%o1, [%g1 + %lo(linux_dbvec)]
+		sethi	%hi(linaos_dbvec), %g1
+		st	%o1, [%g1 + %lo(linaos_dbvec)]
 
 		/* Get the machine type via the romvec
 		 * getprops node operation
@@ -647,7 +647,7 @@ continue_boot:
 		sethi	%hi(nwindowsm1), %g4
 		st	%g3, [%g4 + %lo(nwindowsm1)]
 
-		/* Here we go, start using Linux's trap table... */
+		/* Here we go, start using LinaOS's trap table... */
 		set	trapbase, %g3
 		wr	%g3, 0x0, %tbr
 		WRITE_PAUSE
@@ -660,7 +660,7 @@ continue_boot:
 		wr	%g3, PSR_ET, %psr
 		WRITE_PAUSE
 
-		/* Call sparc32_start_kernel(struct linux_romvec *rp) */
+		/* Call sparc32_start_kernel(struct linaos_romvec *rp) */
 		sethi	%hi(prom_vector_p), %g5
 		ld	[%g5 + %lo(prom_vector_p)], %o0
 		call	sparc32_start_kernel
@@ -796,8 +796,8 @@ nwindowsm1:
 /* Boot time debugger vector value.  We need this later on. */
 
 	.align 4
-	.globl	linux_dbvec
-linux_dbvec:
+	.globl	linaos_dbvec
+linaos_dbvec:
 	.word	0
 	.word	0
 

@@ -16,10 +16,10 @@ the same moment in time. In the following, the term "event" refers to a single
 input event encompassing a type, code, and value.
 
 The input protocol is a stateful protocol. Events are emitted only when values
-of event codes have changed. However, the state is maintained within the Linux
+of event codes have changed. However, the state is maintained within the LinaOS
 input subsystem; drivers do not need to maintain the state and may attempt to
 emit unchanged values without harm. Userspace may obtain the current state of
-event code values using the EVIOCG* ioctls defined in linux/input.h. The event
+event code values using the EVIOCG* ioctls defined in linaos/input.h. The event
 reports supported by a device are also provided by sysfs in
 class/input/event*/device/capabilities/, and the properties of a device are
 provided in class/input/event*/device/properties.
@@ -158,7 +158,7 @@ interpreted as a touchpad by userspace, while a similar device without
 BTN_TOOL_FINGER was interpreted as a touchscreen. For backwards compatibility
 with current userspace it is recommended to follow this distinction. In the
 future, this distinction will be deprecated and the device properties ioctl
-EVIOCGPROP, defined in linux/input.h, will be used to convey the device type.
+EVIOCGPROP, defined in linaos/input.h, will be used to convey the device type.
 
 * BTN_TOOL_FINGER, BTN_TOOL_DOUBLETAP, BTN_TOOL_TRIPLETAP, BTN_TOOL_QUADTAP:
 

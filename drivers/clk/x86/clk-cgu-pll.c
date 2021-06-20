@@ -5,11 +5,11 @@
  * Rahul Tanwar <rahul.tanwar@intel.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/iopoll.h>
-#include <linux/of.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/iopoll.h>
+#include <linaos/of.h>
 
 #include "clk-cgu.h"
 

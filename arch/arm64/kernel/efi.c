@@ -7,8 +7,8 @@
  * Copyright (C) 2013, 2014 Linaro Ltd.
  */
 
-#include <linux/efi.h>
-#include <linux/init.h>
+#include <linaos/efi.h>
+#include <linaos/init.h>
 
 #include <asm/efi.h>
 

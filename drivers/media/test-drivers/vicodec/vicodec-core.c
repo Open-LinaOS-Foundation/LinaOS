@@ -9,13 +9,13 @@
  * destination and encodes or decodes the data.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

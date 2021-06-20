@@ -6,8 +6,8 @@
 #ifndef __LINUX_KEYSLOT_MANAGER_H
 #define __LINUX_KEYSLOT_MANAGER_H
 
-#include <linux/bio.h>
-#include <linux/blk-crypto.h>
+#include <linaos/bio.h>
+#include <linaos/blk-crypto.h>
 
 struct blk_keyslot_manager;
 

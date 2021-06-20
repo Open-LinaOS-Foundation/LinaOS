@@ -21,7 +21,7 @@
  * SOFTWARE.
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_flip_work.h>
 #include <drm/drm_print.h>

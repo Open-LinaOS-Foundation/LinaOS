@@ -81,12 +81,12 @@ Example:
 ================================
 
 A livepatch module manages its own Elf relocation sections to apply
-relocations to modules as well as to the kernel (vmlinux) at the
+relocations to modules as well as to the kernel (vmlinaos) at the
 appropriate time. For example, if a patch module patches a driver that is
 not currently loaded, livepatch will apply the corresponding livepatch
 relocation section(s) to the driver once it loads.
 
-Each "object" (e.g. vmlinux, or a module) within a patch module may have
+Each "object" (e.g. vmlinaos, or a module) within a patch module may have
 multiple livepatch relocation sections associated with it (e.g. patches to
 multiple functions within the same object). There is a 1-1 correspondence
 between a livepatch relocation section and the target section (usually the
@@ -108,7 +108,7 @@ apply_relocate_add(). See Section 3 for more information.
 =======================================
 
 Livepatch relocation sections must be marked with the SHF_RELA_LIVEPATCH
-section flag. See include/uapi/linux/elf.h for the definition. The module
+section flag. See include/uapi/linaos/elf.h for the definition. The module
 loader recognizes this flag and will avoid applying those relocation sections
 at patch module load time. These sections must also be marked with SHF_ALLOC,
 so that the module loader doesn't discard them on module load (i.e. they will
@@ -126,7 +126,7 @@ format::
   The relocation section name is prefixed with the string ".klp.rela."
 
 [B]
-  The name of the object (i.e. "vmlinux" or name of module) to
+  The name of the object (i.e. "vmlinaos" or name of module) to
   which the relocation section belongs follows immediately after the prefix.
 
 [C]
@@ -140,10 +140,10 @@ Examples:
 ::
 
   .klp.rela.ext4.text.ext4_attr_store
-  .klp.rela.vmlinux.text.cmdline_proc_show
+  .klp.rela.vmlinaos.text.cmdline_proc_show
 
 **`readelf --sections` output for a patch
-module that patches vmlinux and modules 9p, btrfs, ext4:**
+module that patches vmlinaos and modules 9p, btrfs, ext4:**
 
 ::
 
@@ -155,8 +155,8 @@ module that patches vmlinux and modules 9p, btrfs, ext4:**
   [ snip ]
   [34] .klp.rela.ext4.text.ext4.attr.store RELA              0000000000000000 002fd8 0000d8 18 AIo 64  13  8
   [35] .klp.rela.ext4.text.ext4.attr.show RELA               0000000000000000 0030b0 000150 18 AIo 64  15  8
-  [36] .klp.rela.vmlinux.text.cmdline.proc.show RELA         0000000000000000 003200 000018 18 AIo 64  17  8
-  [37] .klp.rela.vmlinux.text.meminfo.proc.show RELA         0000000000000000 003218 0000f0 18 AIo 64  19  8
+  [36] .klp.rela.vmlinaos.text.cmdline.proc.show RELA         0000000000000000 003200 000018 18 AIo 64  17  8
+  [37] .klp.rela.vmlinaos.text.meminfo.proc.show RELA         0000000000000000 003218 0000f0 18 AIo 64  19  8
   [ snip ]                                       ^                                             ^
                                                  |                                             |
                                                 [*]                                           [*]
@@ -173,10 +173,10 @@ module that patches vmlinux and modules 9p, btrfs, ext4:**
 
   Relocation section '.klp.rela.btrfs.text.btrfs_feature_attr_show' at offset 0x2ba0 contains 4 entries:
       Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
-  000000000000001f  0000005e00000002 R_X86_64_PC32          0000000000000000 .klp.sym.vmlinux.printk,0 - 4
+  000000000000001f  0000005e00000002 R_X86_64_PC32          0000000000000000 .klp.sym.vmlinaos.printk,0 - 4
   0000000000000028  0000003d0000000b R_X86_64_32S           0000000000000000 .klp.sym.btrfs.btrfs_ktype,0 + 0
   0000000000000036  0000003b00000002 R_X86_64_PC32          0000000000000000 .klp.sym.btrfs.can_modify_feature.isra.3,0 - 4
-  000000000000004c  0000004900000002 R_X86_64_PC32          0000000000000000 .klp.sym.vmlinux.snprintf,0 - 4
+  000000000000004c  0000004900000002 R_X86_64_PC32          0000000000000000 .klp.sym.vmlinaos.snprintf,0 - 4
   [ snip ]                                                                   ^
                                                                              |
                                                                             [*]
@@ -221,14 +221,14 @@ For example, take this particular rela from a livepatch module:::
 
   Relocation section '.klp.rela.btrfs.text.btrfs_feature_attr_show' at offset 0x2ba0 contains 4 entries:
       Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
-  000000000000001f  0000005e00000002 R_X86_64_PC32          0000000000000000 .klp.sym.vmlinux.printk,0 - 4
+  000000000000001f  0000005e00000002 R_X86_64_PC32          0000000000000000 .klp.sym.vmlinaos.printk,0 - 4
 
-  This rela refers to the symbol '.klp.sym.vmlinux.printk,0', and the symbol index is encoded
+  This rela refers to the symbol '.klp.sym.vmlinaos.printk,0', and the symbol index is encoded
   in 'Info'. Here its symbol index is 0x5e, which is 94 in decimal, which refers to the
   symbol index 94.
   And in this patch module's corresponding symbol table, symbol index 94 refers to that very symbol:
   [ snip ]
-  94: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT OS [0xff20] .klp.sym.vmlinux.printk,0
+  94: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT OS [0xff20] .klp.sym.vmlinaos.printk,0
   [ snip ]
 
 4.2 Livepatch symbol format
@@ -236,7 +236,7 @@ For example, take this particular rela from a livepatch module:::
 
 Livepatch symbols must have their section index marked as SHN_LIVEPATCH, so
 that the module loader can identify them and not attempt to resolve them.
-See include/uapi/linux/elf.h for the actual definitions.
+See include/uapi/linaos/elf.h for the actual definitions.
 
 Livepatch symbol names must conform to the following format::
 
@@ -249,7 +249,7 @@ Livepatch symbol names must conform to the following format::
   The symbol name is prefixed with the string ".klp.sym."
 
 [B]
-  The name of the object (i.e. "vmlinux" or name of module) to
+  The name of the object (i.e. "vmlinaos" or name of module) to
   which the symbol belongs follows immediately after the prefix.
 
 [C]
@@ -268,8 +268,8 @@ Examples:
 
 ::
 
-	.klp.sym.vmlinux.snprintf,0
-	.klp.sym.vmlinux.printk,0
+	.klp.sym.vmlinaos.snprintf,0
+	.klp.sym.vmlinaos.printk,0
 	.klp.sym.btrfs.btrfs_ktype,0
 
 **`readelf --symbols` output for a patch module:**
@@ -279,10 +279,10 @@ Examples:
   Symbol table '.symtab' contains 127 entries:
      Num:    Value          Size Type    Bind   Vis     Ndx         Name
      [ snip ]
-      73: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT OS [0xff20] .klp.sym.vmlinux.snprintf,0
-      74: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT OS [0xff20] .klp.sym.vmlinux.capable,0
-      75: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT OS [0xff20] .klp.sym.vmlinux.find_next_bit,0
-      76: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT OS [0xff20] .klp.sym.vmlinux.si_swapinfo,0
+      73: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT OS [0xff20] .klp.sym.vmlinaos.snprintf,0
+      74: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT OS [0xff20] .klp.sym.vmlinaos.capable,0
+      75: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT OS [0xff20] .klp.sym.vmlinaos.find_next_bit,0
+      76: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT OS [0xff20] .klp.sym.vmlinaos.si_swapinfo,0
     [ snip ]                                               ^
                                                            |
                                                           [*]

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/ima.h>
+#include <linaos/ima.h>
 #include <asm/boot_data.h>
 
 bool arch_ima_get_secureboot(void)

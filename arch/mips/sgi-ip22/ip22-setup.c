@@ -5,13 +5,13 @@
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1997, 1998 Ralf Baechle (ralf@gnu.org)
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kdev_t.h>
-#include <linux/types.h>
-#include <linux/console.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/kdev_t.h>
+#include <linaos/types.h>
+#include <linaos/console.h>
+#include <linaos/sched.h>
+#include <linaos/tty.h>
 
 #include <asm/addrspace.h>
 #include <asm/bcache.h>

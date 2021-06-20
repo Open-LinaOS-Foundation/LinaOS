@@ -3,7 +3,7 @@
  * Copyright (C) 2014 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/of.h>
+#include <linaos/of.h>
 
 #include <soc/tegra/common.h>
 

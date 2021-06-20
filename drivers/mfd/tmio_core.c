@@ -3,8 +3,8 @@
  * Copyright(c) 2009 Ian Molton <spyro@f2s.com>
  */
 
-#include <linux/export.h>
-#include <linux/mfd/tmio.h>
+#include <linaos/export.h>
+#include <linaos/mfd/tmio.h>
 
 #define CNF_CMD     0x04
 #define CNF_CTL_BASE   0x10

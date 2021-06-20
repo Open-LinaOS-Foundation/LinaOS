@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * ATM Lan Emulation Daemon driver interface
  *
@@ -8,11 +8,11 @@
 #ifndef _ATMLEC_H_
 #define _ATMLEC_H_
 
-#include <linux/atmapi.h>
-#include <linux/atmioc.h>
-#include <linux/atm.h>
-#include <linux/if_ether.h>
-#include <linux/types.h>
+#include <linaos/atmapi.h>
+#include <linaos/atmioc.h>
+#include <linaos/atm.h>
+#include <linaos/if_ether.h>
+#include <linaos/types.h>
 
 /* ATM lec daemon control socket */
 #define ATMLEC_CTRL	_IO('a', ATMIOC_LANE)

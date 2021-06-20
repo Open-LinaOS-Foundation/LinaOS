@@ -9,7 +9,7 @@
  * Copyright (C) 1998  Kenneth Albanowski <kjahds@kjahds.com>,
  *
  */
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #ifndef _MC68328_H_
 #define _MC68328_H_

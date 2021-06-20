@@ -11,7 +11,7 @@
 #ifndef __XEN_DRM_FRONT_H_
 #define __XEN_DRM_FRONT_H_
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_simple_kms_helper.h>

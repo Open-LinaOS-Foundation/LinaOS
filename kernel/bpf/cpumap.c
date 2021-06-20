@@ -16,19 +16,19 @@
  * netstack, and assigning dedicated CPUs for this stage.  This
  * basically allows for 10G wirespeed pre-filtering via bpf.
  */
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/ptr_ring.h>
+#include <linaos/bpf.h>
+#include <linaos/filter.h>
+#include <linaos/ptr_ring.h>
 #include <net/xdp.h>
 
-#include <linux/sched.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
-#include <linux/capability.h>
+#include <linaos/sched.h>
+#include <linaos/workqueue.h>
+#include <linaos/kthread.h>
+#include <linaos/capability.h>
 #include <trace/events/xdp.h>
 
-#include <linux/netdevice.h>   /* netif_receive_skb_list */
-#include <linux/etherdevice.h> /* eth_type_trans */
+#include <linaos/netdevice.h>   /* netif_receive_skb_list */
+#include <linaos/etherdevice.h> /* eth_type_trans */
 
 /* General idea: XDP packets getting XDP redirected to another CPU,
  * will maximum be stored/queued for one driver ->poll() call.  It is

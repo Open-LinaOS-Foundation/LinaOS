@@ -153,7 +153,7 @@ int check_regs64(void)
 			 * Therefore it must preserve R12+
 			 * (they are callee-saved registers in 64-bit C ABI).
 			 *
-			 * Starting in Linux 4.17 (and any kernel that
+			 * Starting in LinaOS 4.17 (and any kernel that
 			 * backports the change), R8..11 are preserved.
 			 * Historically (and probably unintentionally), they
 			 * were clobbered or zeroed.
@@ -387,7 +387,7 @@ int main(int argc, char **argv, char **envp)
 		printf("[NOTE]\tNot a 64-bit kernel, won't test R8..R15 leaks\n");
 
 	/* This only works for non-static builds:
-	 * syscall_addr = dlsym(dlopen("linux-gate.so.1", RTLD_NOW), "__kernel_vsyscall");
+	 * syscall_addr = dlsym(dlopen("linaos-gate.so.1", RTLD_NOW), "__kernel_vsyscall");
 	 */
 	syscall_addr = get_syscall(envp);
 

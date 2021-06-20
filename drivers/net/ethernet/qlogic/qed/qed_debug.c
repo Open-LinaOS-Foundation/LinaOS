@@ -4,9 +4,9 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/crc32.h>
+#include <linaos/module.h>
+#include <linaos/vmalloc.h>
+#include <linaos/crc32.h>
 #include "qed.h"
 #include "qed_cxt.h"
 #include "qed_hsi.h"

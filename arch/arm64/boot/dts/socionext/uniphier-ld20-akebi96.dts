@@ -71,7 +71,7 @@
 	};
 
 	spdif-out {
-		compatible = "linux,spdif-dit";
+		compatible = "linaos,spdif-dit";
 		#sound-dai-cells = <0>;
 
 		port@0 {
@@ -82,7 +82,7 @@
 	};
 
 	comp-spdif-out {
-		compatible = "linux,spdif-dit";
+		compatible = "linaos,spdif-dit";
 		#sound-dai-cells = <0>;
 
 		port@0 {

@@ -9,31 +9,31 @@
  * Copyright (C) 1996 Thomas K. Dyas (tdyas@eden.rutgers.edu)
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/mc146818rtc.h>
-#include <linux/delay.h>
-#include <linux/profile.h>
-#include <linux/bcd.h>
-#include <linux/jiffies.h>
-#include <linux/cpufreq.h>
-#include <linux/percpu.h>
-#include <linux/rtc/m48t59.h>
-#include <linux/kernel_stat.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/platform_device.h>
-#include <linux/ftrace.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/param.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/time.h>
+#include <linaos/timex.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/mc146818rtc.h>
+#include <linaos/delay.h>
+#include <linaos/profile.h>
+#include <linaos/bcd.h>
+#include <linaos/jiffies.h>
+#include <linaos/cpufreq.h>
+#include <linaos/percpu.h>
+#include <linaos/rtc/m48t59.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/clockchips.h>
+#include <linaos/clocksource.h>
+#include <linaos/platform_device.h>
+#include <linaos/ftrace.h>
 
 #include <asm/oplib.h>
 #include <asm/timer.h>
@@ -44,7 +44,7 @@
 #include <asm/smp.h>
 #include <asm/sections.h>
 #include <asm/cpudata.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/irq_regs.h>
 #include <asm/cacheflush.h>
 

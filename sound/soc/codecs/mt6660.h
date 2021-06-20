@@ -6,8 +6,8 @@
 #ifndef __SND_SOC_MT6660_H
 #define __SND_SOC_MT6660_H
 
-#include <linux/mutex.h>
-#include <linux/regmap.h>
+#include <linaos/mutex.h>
+#include <linaos/regmap.h>
 
 #pragma pack(push, 1)
 struct mt6660_platform_data {

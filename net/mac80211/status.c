@@ -7,8 +7,8 @@
  * Copyright 2013-2014  Intel Mobile Communications GmbH
  */
 
-#include <linux/export.h>
-#include <linux/etherdevice.h>
+#include <linaos/export.h>
+#include <linaos/etherdevice.h>
 #include <net/mac80211.h>
 #include <asm/unaligned.h>
 #include "ieee80211_i.h"

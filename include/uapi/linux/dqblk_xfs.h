@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH LinaOS-syscall-note */
 /*
  * Copyright (c) 1995-2001,2004 Silicon Graphics, Inc.  All Rights Reserved.
  *
@@ -18,7 +18,7 @@
 #ifndef _LINUX_DQBLK_XFS_H
 #define _LINUX_DQBLK_XFS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Disk quota - quotactl(2) commands for the XFS Quota Manager (XQM).

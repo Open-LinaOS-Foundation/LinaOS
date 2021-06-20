@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include "vmlinux.h"
+#include "vmlinaos.h"
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
 

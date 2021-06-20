@@ -3,13 +3,13 @@
  * Software nodes for the firmware node framework.
  *
  * Copyright (C) 2018, Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linaos.intel.com>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
 
 struct swnode {
 	struct kobject kobj;

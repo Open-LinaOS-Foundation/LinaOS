@@ -10,7 +10,7 @@
 #ifndef	OCFS2_RESERVATIONS_H
 #define	OCFS2_RESERVATIONS_H
 
-#include <linux/rbtree.h>
+#include <linaos/rbtree.h>
 
 #define OCFS2_DEFAULT_RESV_LEVEL	2
 #define OCFS2_MAX_RESV_LEVEL	9

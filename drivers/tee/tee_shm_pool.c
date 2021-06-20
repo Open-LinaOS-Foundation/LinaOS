@@ -2,11 +2,11 @@
 /*
  * Copyright (c) 2015, Linaro Limited
  */
-#include <linux/device.h>
-#include <linux/dma-buf.h>
-#include <linux/genalloc.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
+#include <linaos/device.h>
+#include <linaos/dma-buf.h>
+#include <linaos/genalloc.h>
+#include <linaos/slab.h>
+#include <linaos/tee_drv.h>
 #include "tee_private.h"
 
 static int pool_op_gen_alloc(struct tee_shm_pool_mgr *poolm,

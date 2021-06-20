@@ -7,7 +7,7 @@
 
 #include "fsverity_private.h"
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 static struct kmem_cache *fsverity_info_cachep;
 

@@ -10,15 +10,15 @@
 
 #undef DEBUG
 
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
+#include <linaos/fb.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
 #if defined(CONFIG_OF)
-#include <linux/of_platform.h>
+#include <linaos/of_platform.h>
 #endif
 #include "mb862xxfb.h"
 #include "mb862xx_reg.h"

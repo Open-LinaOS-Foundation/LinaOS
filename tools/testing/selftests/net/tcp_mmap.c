@@ -64,7 +64,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <poll.h>
-#include <linux/tcp.h>
+#include <linaos/tcp.h>
 #include <assert.h>
 
 #ifndef MSG_ZEROCOPY

@@ -9,8 +9,8 @@
 #ifndef _SECURITY_LANDLOCK_LIMITS_H
 #define _SECURITY_LANDLOCK_LIMITS_H
 
-#include <linux/limits.h>
-#include <uapi/linux/landlock.h>
+#include <linaos/limits.h>
+#include <uapi/linaos/landlock.h>
 
 #define LANDLOCK_MAX_NUM_LAYERS		64
 #define LANDLOCK_MAX_NUM_RULES		U32_MAX

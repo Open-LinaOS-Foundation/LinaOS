@@ -12,18 +12,18 @@
  * Copyright (c) 2011 Vista Silicon S.L.
  * Javier Martin <javier.martin@vista-silicon.com>
  */
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/videobuf2-dma-contig.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #define EMMAPRP_MODULE_NAME "mem2mem-emmaprp"
 

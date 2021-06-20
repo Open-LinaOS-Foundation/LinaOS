@@ -7,7 +7,7 @@
 #ifndef __MSM_MMU_H__
 #define __MSM_MMU_H__
 
-#include <linux/iommu.h>
+#include <linaos/iommu.h>
 
 struct msm_mmu_funcs {
 	void (*detach)(struct msm_mmu *mmu);

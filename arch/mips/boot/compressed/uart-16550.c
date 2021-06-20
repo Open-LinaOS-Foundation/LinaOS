@@ -3,8 +3,8 @@
  * 16550 compatible uart based serial debug support for zboot
  */
 
-#include <linux/types.h>
-#include <linux/serial_reg.h>
+#include <linaos/types.h>
+#include <linaos/serial_reg.h>
 
 #include <asm/addrspace.h>
 

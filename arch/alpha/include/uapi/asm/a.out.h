@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI__ALPHA_A_OUT_H__
 #define _UAPI__ALPHA_A_OUT_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * OSF/1 ECOFF header structs.  ECOFF files consist of:

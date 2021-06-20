@@ -2,7 +2,7 @@
 #ifndef __NET_DST_METADATA_H
 #define __NET_DST_METADATA_H 1
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/ip_tunnels.h>
 #include <net/dst.h>
 

@@ -4,28 +4,28 @@
  * Copyright (C) 2002-2007 Kristian Høgsberg
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/sched.h> /* required for linux/wait.h */
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/time64.h>
-#include <linux/timex.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
-#include <linux/dma-mapping.h>
-#include <linux/atomic.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h> /* required for linaos/wait.h */
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/time64.h>
+#include <linaos/timex.h>
+#include <linaos/uaccess.h>
+#include <linaos/wait.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/atomic.h>
 #include <asm/byteorder.h>
 
 #include "nosy.h"

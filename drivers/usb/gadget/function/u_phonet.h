@@ -8,8 +8,8 @@
 #ifndef __U_PHONET_H
 #define __U_PHONET_H
 
-#include <linux/usb/composite.h>
-#include <linux/usb/cdc.h>
+#include <linaos/usb/composite.h>
+#include <linaos/usb/cdc.h>
 
 struct f_phonet_opts {
 	struct usb_function_instance func_inst;

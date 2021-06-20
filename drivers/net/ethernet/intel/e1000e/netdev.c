@@ -3,29 +3,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/tcp.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pagemap.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/tcp.h>
+#include <linaos/ipv6.h>
+#include <linaos/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_runtime.h>
-#include <linux/aer.h>
-#include <linux/prefetch.h>
-#include <linux/suspend.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_vlan.h>
+#include <linaos/cpu.h>
+#include <linaos/smp.h>
+#include <linaos/pm_qos.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/aer.h>
+#include <linaos/prefetch.h>
+#include <linaos/suspend.h>
 
 #include "e1000.h"
 
@@ -7914,7 +7914,7 @@ static void __exit e1000_exit_module(void)
 }
 module_exit(e1000_exit_module);
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <linaos.nics@intel.com>");
 MODULE_DESCRIPTION("Intel(R) PRO/1000 Network Driver");
 MODULE_LICENSE("GPL v2");
 

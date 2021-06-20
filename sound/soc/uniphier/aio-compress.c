@@ -4,12 +4,12 @@
 //
 // Copyright (c) 2017-2018 Socionext Inc.
 
-#include <linux/bitfield.h>
-#include <linux/circ_buf.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/bitfield.h>
+#include <linaos/circ_buf.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

@@ -7,7 +7,7 @@
 #ifndef __MESON_SCLK_DIV_H
 #define __MESON_SCLK_DIV_H
 
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 #include "parm.h"
 
 struct meson_sclk_div_data {

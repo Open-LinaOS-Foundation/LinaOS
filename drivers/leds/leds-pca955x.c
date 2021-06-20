@@ -37,17 +37,17 @@
  *  bits the chip supports.
  */
 
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/ctype.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
 #include <dt-bindings/leds/leds-pca955x.h>
 
@@ -406,7 +406,7 @@ pca955x_get_pdata(struct i2c_client *client, struct pca955x_chipdef *chip)
 
 		pdata->leds[reg].type = PCA955X_TYPE_LED;
 		fwnode_property_read_u32(child, "type", &pdata->leds[reg].type);
-		fwnode_property_read_string(child, "linux,default-trigger",
+		fwnode_property_read_string(child, "linaos,default-trigger",
 					&pdata->leds[reg].default_trigger);
 	}
 

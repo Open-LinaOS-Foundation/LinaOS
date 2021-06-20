@@ -16,8 +16,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
+#include <linaos/debugfs.h>
+#include <linaos/uaccess.h>
 #include "wcn36xx.h"
 #include "debug.h"
 #include "pmc.h"

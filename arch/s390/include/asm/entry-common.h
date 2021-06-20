@@ -2,12 +2,12 @@
 #ifndef ARCH_S390_ENTRY_COMMON_H
 #define ARCH_S390_ENTRY_COMMON_H
 
-#include <linux/sched.h>
-#include <linux/audit.h>
-#include <linux/randomize_kstack.h>
-#include <linux/tracehook.h>
-#include <linux/processor.h>
-#include <linux/uaccess.h>
+#include <linaos/sched.h>
+#include <linaos/audit.h>
+#include <linaos/randomize_kstack.h>
+#include <linaos/tracehook.h>
+#include <linaos/processor.h>
+#include <linaos/uaccess.h>
 #include <asm/timex.h>
 #include <asm/fpu/api.h>
 

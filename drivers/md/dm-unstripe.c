@@ -6,7 +6,7 @@
 
 #include "dm.h"
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 struct unstripe_c {
 	struct dm_dev *dev;

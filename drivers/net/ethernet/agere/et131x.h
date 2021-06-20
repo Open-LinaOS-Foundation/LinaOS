@@ -1252,7 +1252,7 @@ struct address_map {
 };
 
 /* Defines for generic MII registers 0x00 -> 0x0F can be found in
- * include/linux/mii.h
+ * include/linaos/mii.h
  */
 /* some defines for modem registers that seem to be 'reserved' */
 #define PHY_INDEX_REG              0x10

@@ -1,6 +1,6 @@
 What:		/sys/class/
 Date:		Febuary 2006
-Contact:	Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+Contact:	Greg Kroah-Hartman <gregkh@linaosfoundation.org>
 Description:
 		The /sys/class directory will consist of a group of
 		subdirectories describing individual classes of devices
@@ -13,4 +13,4 @@ Description:
 		work properly.
 
 Users:
-	udev <linux-hotplug-devel@lists.sourceforge.net>
+	udev <linaos-hotplug-devel@lists.sourceforge.net>

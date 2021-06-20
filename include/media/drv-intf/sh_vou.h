@@ -7,7 +7,7 @@
 #ifndef SH_VOU_H
 #define SH_VOU_H
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 /* Bus flags */
 #define SH_VOU_PCLK_FALLING	(1 << 0)

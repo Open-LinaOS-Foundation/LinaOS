@@ -52,28 +52,28 @@
 		led1 {
 			label = "pandora::sd1";
 			gpios = <&gpio5 0 GPIO_ACTIVE_HIGH>;	/* GPIO_128 */
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 			default-state = "off";
 		};
 
 		led2 {
 			label = "pandora::sd2";
 			gpios = <&gpio5 1 GPIO_ACTIVE_HIGH>;	/* GPIO_129 */
-			linux,default-trigger = "mmc1";
+			linaos,default-trigger = "mmc1";
 			default-state = "off";
 		};
 
 		led3 {
 			label = "pandora::bluetooth";
 			gpios = <&gpio5 30 GPIO_ACTIVE_HIGH>;	/* GPIO_158 */
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 
 		led4 {
 			label = "pandora::wifi";
 			gpios = <&gpio5 31 GPIO_ACTIVE_HIGH>;	/* GPIO_159 */
-			linux,default-trigger = "mmc2";
+			linaos,default-trigger = "mmc2";
 			default-state = "off";
 		};
 	};
@@ -86,120 +86,120 @@
 
 		up-button {
 			label = "up";
-			linux,code = <KEY_UP>;
+			linaos,code = <KEY_UP>;
 			gpios = <&gpio4 14 GPIO_ACTIVE_LOW>;	/* GPIO_110 */
 			wakeup-source;
 		};
 
 		down-button {
 			label = "down";
-			linux,code = <KEY_DOWN>;
+			linaos,code = <KEY_DOWN>;
 			gpios = <&gpio4 7 GPIO_ACTIVE_LOW>;	/* GPIO_103 */
 			wakeup-source;
 		};
 
 		left-button {
 			label = "left";
-			linux,code = <KEY_LEFT>;
+			linaos,code = <KEY_LEFT>;
 			gpios = <&gpio4 0 GPIO_ACTIVE_LOW>;	/* GPIO_96 */
 			wakeup-source;
 		};
 
 		right-button {
 			label = "right";
-			linux,code = <KEY_RIGHT>;
+			linaos,code = <KEY_RIGHT>;
 			gpios = <&gpio4 2 GPIO_ACTIVE_LOW>;	/* GPIO_98 */
 			wakeup-source;
 		};
 
 		pageup-button {
 			label = "game 1";
-			linux,code = <KEY_PAGEUP>;
+			linaos,code = <KEY_PAGEUP>;
 			gpios = <&gpio4 13 GPIO_ACTIVE_LOW>;	/* GPIO_109 */
 			wakeup-source;
 		};
 
 		pagedown-button {
 			label = "game 3";
-			linux,code = <KEY_PAGEDOWN>;
+			linaos,code = <KEY_PAGEDOWN>;
 			gpios = <&gpio4 10 GPIO_ACTIVE_LOW>;	/* GPIO_106 */
 			wakeup-source;
 		};
 
 		home-button {
 			label = "game 4";
-			linux,code = <KEY_HOME>;
+			linaos,code = <KEY_HOME>;
 			gpios = <&gpio4 5 GPIO_ACTIVE_LOW>;	/* GPIO_101 */
 			wakeup-source;
 		};
 
 		end-button {
 			label = "game 2";
-			linux,code = <KEY_END>;
+			linaos,code = <KEY_END>;
 			gpios = <&gpio4 15 GPIO_ACTIVE_LOW>;	/* GPIO_111 */
 			wakeup-source;
 		};
 
 		right-shift {
 			label = "l";
-			linux,code = <KEY_RIGHTSHIFT>;
+			linaos,code = <KEY_RIGHTSHIFT>;
 			gpios = <&gpio4 6 GPIO_ACTIVE_LOW>;	/* GPIO_102 */
 			wakeup-source;
 		};
 
 		kp-plus {
 			label = "l2";
-			linux,code = <KEY_KPPLUS>;
+			linaos,code = <KEY_KPPLUS>;
 			gpios = <&gpio4 1 GPIO_ACTIVE_LOW>;	/* GPIO_97 */
 			wakeup-source;
 		};
 
 		right-ctrl {
 			label = "r";
-			linux,code = <KEY_RIGHTCTRL>;
+			linaos,code = <KEY_RIGHTCTRL>;
 			gpios = <&gpio4 9 GPIO_ACTIVE_LOW>;	/* GPIO_105 */
 			wakeup-source;
 		};
 
 		kp-minus {
 			label = "r2";
-			linux,code = <KEY_KPMINUS>;
+			linaos,code = <KEY_KPMINUS>;
 			gpios = <&gpio4 11 GPIO_ACTIVE_LOW>;	/* GPIO_107 */
 			wakeup-source;
 		};
 
 		left-ctrl {
 			label = "ctrl";
-			linux,code = <KEY_LEFTCTRL>;
+			linaos,code = <KEY_LEFTCTRL>;
 			gpios = <&gpio4 8 GPIO_ACTIVE_LOW>;	/* GPIO_104 */
 			wakeup-source;
 		};
 
 		menu {
 			label = "menu";
-			linux,code = <KEY_MENU>;
+			linaos,code = <KEY_MENU>;
 			gpios = <&gpio4 3 GPIO_ACTIVE_LOW>;	/* GPIO_99 */
 			wakeup-source;
 		};
 
 		hold {
 			label = "hold";
-			linux,code = <KEY_COFFEE>;
+			linaos,code = <KEY_COFFEE>;
 			gpios = <&gpio6 16 GPIO_ACTIVE_LOW>;	/* GPIO_176 */
 			wakeup-source;
 		};
 
 		left-alt {
 			label = "alt";
-			linux,code = <KEY_LEFTALT>;
+			linaos,code = <KEY_LEFTALT>;
 			gpios = <&gpio4 4 GPIO_ACTIVE_HIGH>;	/* GPIO_100 */
 			wakeup-source;
 		};
 
 		lid {
 			label = "lid";
-			linux,code = <0x00>;    /* SW_LID lid shut */
-			linux,input-type = <0x05>;    /* EV_SW */
+			linaos,code = <0x00>;    /* SW_LID lid shut */
+			linaos,input-type = <0x05>;    /* EV_SW */
 			gpios = <&gpio4 12 GPIO_ACTIVE_HIGH>;   /* GPIO_108 */
 		};
 	};
@@ -396,7 +396,7 @@
 &twl_keypad {
 	keypad,num-rows = <8>;
 	keypad,num-columns = <6>;
-	linux,keymap = <
+	linaos,keymap = <
 		MATRIX_KEY(0, 0, KEY_9)
 		MATRIX_KEY(0, 1, KEY_8)
 		MATRIX_KEY(0, 2, KEY_I)

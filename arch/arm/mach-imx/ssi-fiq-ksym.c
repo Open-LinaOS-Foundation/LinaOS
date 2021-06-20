@@ -5,9 +5,9 @@
  * Copyright (C) 2009, Sascha Hauer <s.hauer@pengutronix.de>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/platform_data/asoc-imx-ssi.h>
+#include <linaos/platform_data/asoc-imx-ssi.h>
 
 EXPORT_SYMBOL(imx_ssi_fiq_tx_buffer);
 EXPORT_SYMBOL(imx_ssi_fiq_rx_buffer);

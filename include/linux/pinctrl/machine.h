@@ -11,9 +11,9 @@
 #ifndef __LINUX_PINCTRL_MACHINE_H
 #define __LINUX_PINCTRL_MACHINE_H
 
-#include <linux/bug.h>
+#include <linaos/bug.h>
 
-#include <linux/pinctrl/pinctrl-state.h>
+#include <linaos/pinctrl/pinctrl-state.h>
 
 enum pinctrl_map_type {
 	PIN_MAP_TYPE_INVALID,

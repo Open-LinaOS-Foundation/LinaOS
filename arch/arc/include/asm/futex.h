@@ -8,9 +8,9 @@
 #ifndef _ASM_FUTEX_H
 #define _ASM_FUTEX_H
 
-#include <linux/futex.h>
-#include <linux/preempt.h>
-#include <linux/uaccess.h>
+#include <linaos/futex.h>
+#include <linaos/preempt.h>
+#include <linaos/uaccess.h>
 #include <asm/errno.h>
 
 #ifdef CONFIG_ARC_HAS_LLSC

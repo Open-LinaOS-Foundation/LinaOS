@@ -22,7 +22,7 @@
  * Authors: Alex Deucher
  */
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 #include "amdgpu.h"
 #include "sid.h"

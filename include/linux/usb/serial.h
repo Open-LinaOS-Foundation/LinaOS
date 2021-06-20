@@ -14,10 +14,10 @@
 #ifndef __LINUX_USB_SERIAL_H
 #define __LINUX_USB_SERIAL_H
 
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/serial.h>
-#include <linux/kfifo.h>
+#include <linaos/kref.h>
+#include <linaos/mutex.h>
+#include <linaos/serial.h>
+#include <linaos/kfifo.h>
 
 /* The maximum number of ports one device can grab at once */
 #define MAX_NUM_PORTS		16

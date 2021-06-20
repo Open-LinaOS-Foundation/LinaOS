@@ -4,7 +4,7 @@
 #ifndef _SUN8I_FORMATS_H_
 #define _SUN8I_FORMATS_H_
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 
 #define ROTATE_FLAG_YUV    BIT(0)
 #define ROTATE_FLAG_OUTPUT BIT(1)

@@ -9,9 +9,9 @@
  * Copyright (c) 2016 Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/usb.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/usb.h>
 #include <media/media-device.h>
 #include <media/media-entity.h>
 #include <media/v4l2-fh.h>

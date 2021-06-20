@@ -537,7 +537,7 @@
 		device_type = "pci";
 		reg = <0 0x40000000 0 0x10000000>;	/* ECAM config space */
 		bus-range = <0 255>;
-		linux,pci-domain = <0>;
+		linaos,pci-domain = <0>;
 		#address-cells = <3>;
 		#size-cells = <2>;
 		dma-coherent;

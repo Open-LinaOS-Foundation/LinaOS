@@ -6,14 +6,14 @@
 #include <sys/syscall.h>
 #include <string.h>
 #include <limits.h>
-#include <linux/utsname.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/kern_levels.h>
-#include <linux/err.h>
-#include <linux/rcu.h>
-#include <linux/list.h>
-#include <linux/hardirq.h>
+#include <linaos/utsname.h>
+#include <linaos/compiler.h>
+#include <linaos/export.h>
+#include <linaos/kern_levels.h>
+#include <linaos/err.h>
+#include <linaos/rcu.h>
+#include <linaos/list.h>
+#include <linaos/hardirq.h>
 #include <unistd.h>
 
 #define MAX_LOCK_DEPTH 63UL
@@ -21,7 +21,7 @@
 #define asmlinkage
 #define __visible
 
-#include "../../../include/linux/lockdep.h"
+#include "../../../include/linaos/lockdep.h"
 
 struct task_struct {
 	u64 curr_chain_key;

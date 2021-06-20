@@ -10,7 +10,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 

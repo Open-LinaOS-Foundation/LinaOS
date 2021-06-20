@@ -24,7 +24,7 @@
 #include "cx18-ioctl.h"
 #include "cx18-controls.h"
 #include "tuner-xc2028.h"
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 #include <media/tveeprom.h>
 
 /* If you have already X v4l cards, then set this to X. This way
@@ -675,7 +675,7 @@ done:
 			 cx->pci_dev->subsystem_device);
 		CX18_ERR("Defaulting to %s card\n", cx->card->name);
 		CX18_ERR("Please mail the vendor/device and subsystem vendor/device IDs and what kind of\n");
-		CX18_ERR("card you have to the linux-media mailinglist (www.linuxtv.org)\n");
+		CX18_ERR("card you have to the linaos-media mailinglist (www.linaostv.org)\n");
 		CX18_ERR("Prefix your subject line with [UNKNOWN CX18 CARD].\n");
 	}
 	cx->v4l2_cap = cx->card->v4l2_capabilities;

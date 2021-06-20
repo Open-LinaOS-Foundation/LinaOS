@@ -8,7 +8,7 @@
  */
 #ifndef _CRYPTO_ACOMP_H
 #define _CRYPTO_ACOMP_H
-#include <linux/crypto.h>
+#include <linaos/crypto.h>
 
 #define CRYPTO_ACOMP_ALLOC_OUTPUT	0x00000001
 

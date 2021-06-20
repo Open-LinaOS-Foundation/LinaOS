@@ -45,28 +45,28 @@
 		led1 {
 			label = "green:user0";
 			gpios = <&gpioz 7 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 
 		led2 {
 			label = "green:user1";
 			gpios = <&gpiof 3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 			default-state = "off";
 		};
 
 		led3 {
 			label = "green:user2";
 			gpios = <&gpiog 0 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc1";
+			linaos,default-trigger = "mmc1";
 			default-state = "off";
 		};
 
 		led4 {
 			label = "green:user3";
 			gpios = <&gpiog 1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 			default-state = "off";
 			panic-indicator;
 		};

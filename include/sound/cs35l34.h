@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/cs35l34.h -- Platform data for CS35l34
+ * linaos/sound/cs35l34.h -- Platform data for CS35l34
  *
  * Copyright (c) 2016 Cirrus Logic Inc.
  */

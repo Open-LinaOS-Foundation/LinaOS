@@ -13,7 +13,7 @@
 #ifndef U_UAC2_H
 #define U_UAC2_H
 
-#include <linux/usb/composite.h>
+#include <linaos/usb/composite.h>
 
 #define UAC2_DEF_PCHMASK 0x3
 #define UAC2_DEF_PSRATE 48000

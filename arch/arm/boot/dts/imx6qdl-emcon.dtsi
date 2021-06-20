@@ -35,7 +35,7 @@
 
 		wake {
 			label = "Wake";
-			linux,code = <KEY_WAKEUP>;
+			linaos,code = <KEY_WAKEUP>;
 			gpios = <&gpio3 2 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
@@ -49,7 +49,7 @@
 		green {
 			label = "som:green";
 			gpios = <&gpio3 0 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "on";
 		};
 

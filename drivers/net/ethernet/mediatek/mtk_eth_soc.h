@@ -9,14 +9,14 @@
 #ifndef MTK_ETH_H
 #define MTK_ETH_H
 
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/of_net.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/refcount.h>
-#include <linux/phylink.h>
-#include <linux/rhashtable.h>
-#include <linux/dim.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/netdevice.h>
+#include <linaos/of_net.h>
+#include <linaos/u64_stats_sync.h>
+#include <linaos/refcount.h>
+#include <linaos/phylink.h>
+#include <linaos/rhashtable.h>
+#include <linaos/dim.h>
 #include "mtk_ppe.h"
 
 #define MTK_QDMA_PAGE_SIZE	2048

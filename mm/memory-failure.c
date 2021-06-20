@@ -33,29 +33,29 @@
  * are rare we hope to get away with this. This avoids impacting the core 
  * VM.
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/page-flags.h>
-#include <linux/kernel-page-flags.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/export.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/backing-dev.h>
-#include <linux/migrate.h>
-#include <linux/suspend.h>
-#include <linux/slab.h>
-#include <linux/swapops.h>
-#include <linux/hugetlb.h>
-#include <linux/memory_hotplug.h>
-#include <linux/mm_inline.h>
-#include <linux/memremap.h>
-#include <linux/kfifo.h>
-#include <linux/ratelimit.h>
-#include <linux/page-isolation.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/page-flags.h>
+#include <linaos/kernel-page-flags.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task.h>
+#include <linaos/ksm.h>
+#include <linaos/rmap.h>
+#include <linaos/export.h>
+#include <linaos/pagemap.h>
+#include <linaos/swap.h>
+#include <linaos/backing-dev.h>
+#include <linaos/migrate.h>
+#include <linaos/suspend.h>
+#include <linaos/slab.h>
+#include <linaos/swapops.h>
+#include <linaos/hugetlb.h>
+#include <linaos/memory_hotplug.h>
+#include <linaos/mm_inline.h>
+#include <linaos/memremap.h>
+#include <linaos/kfifo.h>
+#include <linaos/ratelimit.h>
+#include <linaos/page-isolation.h>
 #include "internal.h"
 #include "ras/ras_event.h"
 
@@ -731,7 +731,7 @@ static int me_pagecache_dirty(struct page *p, unsigned long pfn)
 		 *
 		 * The EIO will be only reported on the next IO
 		 * operation and then cleared through the IO map.
-		 * Normally Linux has two mechanisms to pass IO error
+		 * Normally LinaOS has two mechanisms to pass IO error
 		 * first through the AS_EIO flag in the address space
 		 * and then through the PageError flag in the page.
 		 * Since we drop pages on memory failure handling the
@@ -1711,7 +1711,7 @@ core_initcall(memory_failure_init);
  * memory_failure() earlier.
  *
  * This is only done on the software-level, so it only works
- * for linux injected failures, not real hardware failures
+ * for linaos injected failures, not real hardware failures
  *
  * Returns 0 for success, otherwise -errno.
  */

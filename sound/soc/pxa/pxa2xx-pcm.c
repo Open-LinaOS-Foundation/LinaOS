@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/sound/arm/pxa2xx-pcm.c -- ALSA PCM interface for the Intel PXA2xx chip
+ * linaos/sound/arm/pxa2xx-pcm.c -- ALSA PCM interface for the Intel PXA2xx chip
  *
  * Author:	Nicolas Pitre
  * Created:	Nov 30, 2004
  * Copyright:	(C) 2004 MontaVista Software, Inc.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/dmaengine.h>
-#include <linux/of.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/dmaengine.h>
+#include <linaos/of.h>
 
 #include <sound/core.h>
 #include <sound/soc.h>

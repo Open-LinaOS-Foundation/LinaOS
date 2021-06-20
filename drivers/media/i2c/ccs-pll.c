@@ -6,13 +6,13 @@
  *
  * Copyright (C) 2020 Intel Corporation
  * Copyright (C) 2011--2012 Nokia Corporation
- * Contact: Sakari Ailus <sakari.ailus@linux.intel.com>
+ * Contact: Sakari Ailus <sakari.ailus@linaos.intel.com>
  */
 
-#include <linux/device.h>
-#include <linux/gcd.h>
-#include <linux/lcm.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/gcd.h>
+#include <linaos/lcm.h>
+#include <linaos/module.h>
 
 #include "ccs-pll.h"
 
@@ -875,6 +875,6 @@ int ccs_pll_calculate(struct device *dev, const struct ccs_pll_limits *lim,
 }
 EXPORT_SYMBOL_GPL(ccs_pll_calculate);
 
-MODULE_AUTHOR("Sakari Ailus <sakari.ailus@linux.intel.com>");
+MODULE_AUTHOR("Sakari Ailus <sakari.ailus@linaos.intel.com>");
 MODULE_DESCRIPTION("Generic MIPI CCS/SMIA/SMIA++ PLL calculator");
 MODULE_LICENSE("GPL");

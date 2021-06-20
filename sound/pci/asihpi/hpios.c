@@ -5,15 +5,15 @@
     Copyright (C) 1997-2012  AudioScience Inc. <support@audioscience.com>
 
 
-HPI Operating System function implementation for Linux
+HPI Operating System function implementation for LinaOS
 
 (C) Copyright AudioScience Inc. 1997-2003
 ******************************************************************************/
 #define SOURCEFILE_NAME "hpios.c"
 #include "hpi_internal.h"
 #include "hpidebug.h"
-#include <linux/delay.h>
-#include <linux/sched.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
 
 void hpios_delay_micro_seconds(u32 num_micro_sec)
 {

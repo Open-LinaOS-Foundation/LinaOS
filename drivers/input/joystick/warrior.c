@@ -4,17 +4,17 @@
  */
 
 /*
- * Logitech WingMan Warrior joystick driver for Linux
+ * Logitech WingMan Warrior joystick driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
 
 #define DRIVER_DESC	"Logitech WingMan Warrior joystick driver"
 

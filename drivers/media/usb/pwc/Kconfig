@@ -23,7 +23,7 @@ config USB_PWC
 	  drivers.
 
 	  Some newer logitech webcams are not handled by this driver but by the
-	  Usb Video Class driver (linux-uvc).
+	  Usb Video Class driver (linaos-uvc).
 
 	  The built-in microphone is enabled by selecting USB Audio support.
 

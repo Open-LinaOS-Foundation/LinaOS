@@ -7,7 +7,7 @@
  * This file contains functions for initializing the input-device and for handling remote-control-queries.
  */
 #include "dvb-usb-common.h"
-#include <linux/usb/input.h>
+#include <linaos/usb/input.h>
 
 static unsigned int
 legacy_dvb_usb_get_keymap_index(const struct input_keymap_entry *ke,

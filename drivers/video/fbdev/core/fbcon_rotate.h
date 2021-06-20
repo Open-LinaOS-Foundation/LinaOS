@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/console/fbcon_rotate.h -- Software Display Rotation
+ *  linaos/drivers/video/console/fbcon_rotate.h -- Software Display Rotation
  *
  *	Copyright (C) 2005 Antonino Daplas <adaplas@pol.net>
  *

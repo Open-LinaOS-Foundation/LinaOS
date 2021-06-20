@@ -6,21 +6,21 @@
  *  David Lebrun <david.lebrun@uclouvain.be>
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/slab.h>
-#include <linux/rhashtable.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/net.h>
+#include <linaos/in6.h>
+#include <linaos/slab.h>
+#include <linaos/rhashtable.h>
 
 #include <net/ipv6.h>
 #include <net/protocol.h>
 
 #include <net/seg6.h>
 #include <net/genetlink.h>
-#include <linux/seg6.h>
-#include <linux/seg6_genl.h>
+#include <linaos/seg6.h>
+#include <linaos/seg6_genl.h>
 #ifdef CONFIG_IPV6_SEG6_HMAC
 #include <net/seg6_hmac.h>
 #endif

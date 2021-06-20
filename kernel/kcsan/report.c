@@ -5,16 +5,16 @@
  * Copyright (C) 2019, Google LLC.
  */
 
-#include <linux/debug_locks.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/lockdep.h>
-#include <linux/preempt.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/stacktrace.h>
+#include <linaos/debug_locks.h>
+#include <linaos/delay.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/lockdep.h>
+#include <linaos/preempt.h>
+#include <linaos/printk.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/stacktrace.h>
 
 #include "kcsan.h"
 #include "encoding.h"

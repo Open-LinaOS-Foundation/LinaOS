@@ -2,8 +2,8 @@
 #ifndef _PARISC_CACHEFLUSH_H
 #define _PARISC_CACHEFLUSH_H
 
-#include <linux/mm.h>
-#include <linux/uaccess.h>
+#include <linaos/mm.h>
+#include <linaos/uaccess.h>
 #include <asm/tlbflush.h>
 
 /* The usual comment is "Caches aren't brain-dead on the <architecture>".

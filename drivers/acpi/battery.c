@@ -10,22 +10,22 @@
 
 #define pr_fmt(fmt) "ACPI: battery: " fmt
 
-#include <linux/async.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/types.h>
+#include <linaos/async.h>
+#include <linaos/delay.h>
+#include <linaos/dmi.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
+#include <linaos/types.h>
 
 #include <asm/unaligned.h>
 
-#include <linux/acpi.h>
-#include <linux/power_supply.h>
+#include <linaos/acpi.h>
+#include <linaos/power_supply.h>
 
 #include <acpi/battery.h>
 

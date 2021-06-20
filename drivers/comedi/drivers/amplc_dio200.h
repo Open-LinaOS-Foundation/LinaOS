@@ -7,14 +7,14 @@
  *
  * Copyright (C) 2005-2013 MEV Ltd. <https://www.mev.co.uk/>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1998,2000 David A. Schleef <ds@schleef.org>
  */
 
 #ifndef AMPLC_DIO200_H_INCLUDED
 #define AMPLC_DIO200_H_INCLUDED
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct comedi_device;
 

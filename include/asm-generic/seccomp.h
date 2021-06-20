@@ -8,7 +8,7 @@
 #ifndef _ASM_GENERIC_SECCOMP_H
 #define _ASM_GENERIC_SECCOMP_H
 
-#include <linux/unistd.h>
+#include <linaos/unistd.h>
 
 #if defined(CONFIG_COMPAT) && !defined(__NR_seccomp_read_32)
 #define __NR_seccomp_read_32		__NR_read

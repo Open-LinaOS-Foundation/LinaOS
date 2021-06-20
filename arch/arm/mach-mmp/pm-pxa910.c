@@ -6,19 +6,19 @@
  * All Rights Reserved
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/suspend.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/time.h>
+#include <linaos/delay.h>
+#include <linaos/suspend.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
 #include <asm/mach-types.h>
 #include <asm/outercache.h>
 
-#include <linux/soc/mmp/cputype.h>
+#include <linaos/soc/mmp/cputype.h>
 #include "addr-map.h"
 #include "pm-pxa910.h"
 #include "regs-icu.h"

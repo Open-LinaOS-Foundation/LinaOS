@@ -16,7 +16,7 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/mfd/core.h>
+#include <linaos/mfd/core.h>
 
 #define REG_RAWIRQSTATUS	0x024
 #define REG_IRQSTATUS		0x028

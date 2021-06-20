@@ -3,40 +3,40 @@
 #define __KVM_HOST_H
 
 
-#include <linux/types.h>
-#include <linux/hardirq.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/sched/stat.h>
-#include <linux/bug.h>
-#include <linux/minmax.h>
-#include <linux/mm.h>
-#include <linux/mmu_notifier.h>
-#include <linux/preempt.h>
-#include <linux/msi.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/rcupdate.h>
-#include <linux/ratelimit.h>
-#include <linux/err.h>
-#include <linux/irqflags.h>
-#include <linux/context_tracking.h>
-#include <linux/irqbypass.h>
-#include <linux/rcuwait.h>
-#include <linux/refcount.h>
-#include <linux/nospec.h>
+#include <linaos/types.h>
+#include <linaos/hardirq.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/sched/stat.h>
+#include <linaos/bug.h>
+#include <linaos/minmax.h>
+#include <linaos/mm.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/preempt.h>
+#include <linaos/msi.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/rcupdate.h>
+#include <linaos/ratelimit.h>
+#include <linaos/err.h>
+#include <linaos/irqflags.h>
+#include <linaos/context_tracking.h>
+#include <linaos/irqbypass.h>
+#include <linaos/rcuwait.h>
+#include <linaos/refcount.h>
+#include <linaos/nospec.h>
 #include <asm/signal.h>
 
-#include <linux/kvm.h>
-#include <linux/kvm_para.h>
+#include <linaos/kvm.h>
+#include <linaos/kvm_para.h>
 
-#include <linux/kvm_types.h>
+#include <linaos/kvm_types.h>
 
 #include <asm/kvm_host.h>
-#include <linux/kvm_dirty_ring.h>
+#include <linaos/kvm_dirty_ring.h>
 
 #ifndef KVM_MAX_VCPU_ID
 #define KVM_MAX_VCPU_ID KVM_MAX_VCPUS
@@ -45,7 +45,7 @@
 /*
  * The bit 16 ~ bit 31 of kvm_memory_region::flags are internally used
  * in kvm, other bits are visible for userspace which are defined in
- * include/linux/kvm_h.
+ * include/linaos/kvm_h.
  */
 #define KVM_MEMSLOT_INVALID	(1UL << 16)
 

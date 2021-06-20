@@ -17,7 +17,7 @@
  * For the curious, more information about this unusual reordering is
  * available in chapter 15 of the "perfbook":
  *
- *  https://kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html
+ *  https://kernel.org/pub/linaos/kernel/people/paulmck/perfbook/perfbook.html
  *
  */
 #define __READ_ONCE(x)							\

@@ -8,15 +8,15 @@
  * SPU contexts rather than hardware.
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/poll.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/smp.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/poll.h>
 
 #include <asm/io.h>
 #include <asm/spu.h>

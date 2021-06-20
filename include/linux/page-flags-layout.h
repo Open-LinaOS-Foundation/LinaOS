@@ -2,7 +2,7 @@
 #ifndef PAGE_FLAGS_LAYOUT_H
 #define PAGE_FLAGS_LAYOUT_H
 
-#include <linux/numa.h>
+#include <linaos/numa.h>
 #include <generated/bounds.h>
 
 /*
@@ -10,7 +10,7 @@
  * as being suitable for DMA) the caller will pass in hints to the
  * allocator in the gfp_mask, in the zone modifier bits.  These bits
  * are used to select a priority ordered list of memory zones which
- * match the requested limits. See gfp_zone() in include/linux/gfp.h
+ * match the requested limits. See gfp_zone() in include/linaos/gfp.h
  */
 #if MAX_NR_ZONES < 2
 #define ZONES_SHIFT 0

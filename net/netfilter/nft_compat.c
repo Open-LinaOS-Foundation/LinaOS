@@ -5,19 +5,19 @@
  * This software has been sponsored by Sophos Astaro <http://www.sophos.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nf_tables.h>
-#include <linux/netfilter/nf_tables_compat.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_arp/arp_tables.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/netlink.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/nf_tables.h>
+#include <linaos/netfilter/nf_tables_compat.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter_ipv4/ip_tables.h>
+#include <linaos/netfilter_ipv6/ip6_tables.h>
+#include <linaos/netfilter_bridge/ebtables.h>
+#include <linaos/netfilter_arp/arp_tables.h>
 #include <net/netfilter/nf_tables.h>
 
 /* Used for matches where *info is larger than X byte */

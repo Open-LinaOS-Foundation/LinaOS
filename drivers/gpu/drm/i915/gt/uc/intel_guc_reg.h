@@ -6,8 +6,8 @@
 #ifndef _INTEL_GUC_REG_H_
 #define _INTEL_GUC_REG_H_
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
 
 #include "i915_reg.h"
 

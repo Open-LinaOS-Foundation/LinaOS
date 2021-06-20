@@ -17,9 +17,9 @@
 #ifndef _ASM_GENERIC_ATOMIC_INSTRUMENTED_H
 #define _ASM_GENERIC_ATOMIC_INSTRUMENTED_H
 
-#include <linux/build_bug.h>
-#include <linux/compiler.h>
-#include <linux/instrumented.h>
+#include <linaos/build_bug.h>
+#include <linaos/compiler.h>
+#include <linaos/instrumented.h>
 
 static __always_inline int
 atomic_read(const atomic_t *v)

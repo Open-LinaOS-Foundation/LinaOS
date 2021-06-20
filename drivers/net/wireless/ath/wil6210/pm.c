@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: ISC
 /*
  * Copyright (c) 2014,2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The LinaOS Foundation. All rights reserved.
  */
 
 #include "wil6210.h"
-#include <linux/jiffies.h>
-#include <linux/pm_runtime.h>
+#include <linaos/jiffies.h>
+#include <linaos/pm_runtime.h>
 
 #define WIL6210_AUTOSUSPEND_DELAY_MS (1000)
 

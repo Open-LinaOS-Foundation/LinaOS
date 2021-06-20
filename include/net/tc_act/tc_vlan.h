@@ -7,7 +7,7 @@
 #define __NET_TC_VLAN_H
 
 #include <net/act_api.h>
-#include <linux/tc_act/tc_vlan.h>
+#include <linaos/tc_act/tc_vlan.h>
 
 struct tcf_vlan_params {
 	int               tcfv_action;

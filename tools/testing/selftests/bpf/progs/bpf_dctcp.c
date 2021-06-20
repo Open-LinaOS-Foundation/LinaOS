@@ -7,10 +7,10 @@
  */
 
 #include <stddef.h>
-#include <linux/bpf.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/tcp.h>
+#include <linaos/bpf.h>
+#include <linaos/types.h>
+#include <linaos/stddef.h>
+#include <linaos/tcp.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 #include "bpf_tcp_helpers.h"

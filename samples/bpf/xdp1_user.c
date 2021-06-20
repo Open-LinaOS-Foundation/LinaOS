@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2016 PLUMgrid
  */
-#include <linux/bpf.h>
-#include <linux/if_link.h>
+#include <linaos/bpf.h>
+#include <linaos/if_link.h>
 #include <assert.h>
 #include <errno.h>
 #include <signal.h>

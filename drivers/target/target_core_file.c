@@ -10,16 +10,16 @@
  *
  ******************************************************************************/
 
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/timer.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/falloc.h>
-#include <linux/uio.h>
+#include <linaos/string.h>
+#include <linaos/parser.h>
+#include <linaos/timer.h>
+#include <linaos/blkdev.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/vmalloc.h>
+#include <linaos/falloc.h>
+#include <linaos/uio.h>
 #include <scsi/scsi_proto.h>
 #include <asm/unaligned.h>
 
@@ -174,7 +174,7 @@ static int fd_configure_device(struct se_device *dev)
 		 */
 		dev->dev_attrib.max_unmap_lba_count = 0x2000;
 		/*
-		 * Currently hardcoded to 1 in Linux/SCSI code..
+		 * Currently hardcoded to 1 in LinaOS/SCSI code..
 		 */
 		dev->dev_attrib.max_unmap_block_desc_count = 1;
 		dev->dev_attrib.unmap_granularity = 1;
@@ -555,8 +555,8 @@ fd_execute_unmap(struct se_cmd *cmd, sector_t lba, sector_t nolb)
 		struct se_device *dev = cmd->se_dev;
 
 		ret = blkdev_issue_discard(bdev,
-					   target_to_linux_sector(dev, lba),
-					   target_to_linux_sector(dev,  nolb),
+					   target_to_linaos_sector(dev, lba),
+					   target_to_linaos_sector(dev,  nolb),
 					   GFP_KERNEL, 0);
 		if (ret < 0) {
 			pr_warn("FILEIO: blkdev_issue_discard() failed: %d\n",
@@ -945,7 +945,7 @@ static void __exit fileio_module_exit(void)
 }
 
 MODULE_DESCRIPTION("TCM FILEIO subsystem plugin");
-MODULE_AUTHOR("nab@Linux-iSCSI.org");
+MODULE_AUTHOR("nab@LinaOS-iSCSI.org");
 MODULE_LICENSE("GPL");
 
 module_init(fileio_module_init);

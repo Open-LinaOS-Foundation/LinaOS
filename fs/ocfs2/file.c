@@ -7,21 +7,21 @@
  * Copyright (C) 2002, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/sched.h>
-#include <linux/splice.h>
-#include <linux/mount.h>
-#include <linux/writeback.h>
-#include <linux/falloc.h>
-#include <linux/quotaops.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
+#include <linaos/capability.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/highmem.h>
+#include <linaos/pagemap.h>
+#include <linaos/uio.h>
+#include <linaos/sched.h>
+#include <linaos/splice.h>
+#include <linaos/mount.h>
+#include <linaos/writeback.h>
+#include <linaos/falloc.h>
+#include <linaos/quotaops.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
 
 #include <cluster/masklog.h>
 

@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * hdlcdrv.h  -- HDLC packet radio network driver.
- * The Linux soundcard driver for 1200 baud and 9600 baud packet radio
+ * The LinaOS soundcard driver for 1200 baud and 9600 baud packet radio
  * (C) 1996-1998 by Thomas Sailer, HB9JNX/AE4WA
  */
 #ifndef _HDLCDRV_H
 #define _HDLCDRV_H
 
 
-#include <linux/netdevice.h>
-#include <linux/if.h>
-#include <linux/spinlock.h>
-#include <uapi/linux/hdlcdrv.h>
+#include <linaos/netdevice.h>
+#include <linaos/if.h>
+#include <linaos/spinlock.h>
+#include <uapi/linaos/hdlcdrv.h>
 
 #define HDLCDRV_MAGIC      0x5ac6e778
 #define HDLCDRV_HDLCBUFFER  32 /* should be a power of 2 for speed reasons */

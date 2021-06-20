@@ -40,7 +40,7 @@
 		user {
 			label = "debug";
 			gpios = <&gpio2 4 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

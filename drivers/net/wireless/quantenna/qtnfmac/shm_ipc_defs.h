@@ -4,7 +4,7 @@
 #ifndef _QTN_FMAC_SHM_IPC_DEFS_H_
 #define _QTN_FMAC_SHM_IPC_DEFS_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define QTN_IPC_REG_HDR_SZ	(32)
 #define QTN_IPC_REG_SZ		(4096)

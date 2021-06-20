@@ -5,10 +5,10 @@
  * Transplanted from lockd code
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 static unsigned int grace_net_id;
 static DEFINE_SPINLOCK(grace_lock);

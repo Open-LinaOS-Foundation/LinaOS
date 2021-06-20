@@ -2,7 +2,7 @@
 /*
  * ec_access.c
  *
- * Copyright (C) 2010 SUSE Linux Products GmbH
+ * Copyright (C) 2010 SUSE LinaOS Products GmbH
  * Author:
  *      Thomas Renninger <trenn@suse.de>
  */

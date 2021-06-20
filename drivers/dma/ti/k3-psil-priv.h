@@ -6,7 +6,7 @@
 #ifndef K3_PSIL_PRIV_H_
 #define K3_PSIL_PRIV_H_
 
-#include <linux/dma/k3-psil.h>
+#include <linaos/dma/k3-psil.h>
 
 struct psil_ep {
 	u32 thread_id;

@@ -4,21 +4,21 @@
  *
  * Copyright (C) 2005 Intel Corp.
  * Copyright (C) 2005 Randy Dunlap
- * Copyright (C) 2006 SUSE Linux Products GmbH
+ * Copyright (C) 2006 SUSE LinaOS Products GmbH
  * Copyright (C) 2006 Hannes Reinecke
  */
 
-#include <linux/acpi.h>
-#include <linux/ata.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/ide.h>
-#include <linux/pci.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
+#include <linaos/acpi.h>
+#include <linaos/ata.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/ide.h>
+#include <linaos/pci.h>
+#include <linaos/dmi.h>
+#include <linaos/module.h>
 
 #define REGS_PER_GTF		7
 

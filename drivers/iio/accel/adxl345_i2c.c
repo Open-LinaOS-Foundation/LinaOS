@@ -8,9 +8,9 @@
  * 0x53 (ALT ADDRESS pin grounded)
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 
 #include "adxl345.h"
 

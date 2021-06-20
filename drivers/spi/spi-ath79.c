@@ -8,18 +8,18 @@
  *	Copyright (C) 2006,2008 David Brownell
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_data/spi-ath79.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi_bitbang.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/platform_data/spi-ath79.h>
 
 #define DRV_NAME	"ath79-spi"
 

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  *  Copyright IBM Corp. 2012, 2019
- *  Author(s): Holger Dengler <hd@linux.vnet.ibm.com>
+ *  Author(s): Holger Dengler <hd@linaos.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/atomic.h>
+#include <linaos/uaccess.h>
+#include <linaos/mod_devicetable.h>
 
 #include "ap_bus.h"
 #include "zcrypt_api.h"

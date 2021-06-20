@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*    Kernel link layout for various "sections"
  *
- *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-linux.org>
- *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-linux.org>
- *    Copyright (C) 2000 John Marvin <jsm at parisc-linux.org>
+ *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-linaos.org>
+ *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-linaos.org>
+ *    Copyright (C) 2000 John Marvin <jsm at parisc-linaos.org>
  *    Copyright (C) 2000 Michael Ang <mang with subcarrier.org>
- *    Copyright (C) 2002 Randolph Chung <tausq with parisc-linux.org>
- *    Copyright (C) 2003 James Bottomley <jejb with parisc-linux.org>
+ *    Copyright (C) 2002 Randolph Chung <tausq with parisc-linaos.org>
+ *    Copyright (C) 2003 James Bottomley <jejb with parisc-linaos.org>
  *    Copyright (C) 2006-2013 Helge Deller <deller@gmx.de>
  */
 
@@ -21,7 +21,7 @@
 #define CC_USING_PATCHABLE_FUNCTION_ENTRY
 #define RO_EXCEPTION_TABLE_ALIGN	8
 
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 
 /* needed for the processor specific cache alignment size */	
 #include <asm/cache.h>
@@ -29,12 +29,12 @@
 #include <asm/asm-offsets.h>
 #include <asm/thread_info.h>
 	
-/* ld script to make hppa Linux kernel */
+/* ld script to make hppa LinaOS kernel */
 #ifndef CONFIG_64BIT
-OUTPUT_FORMAT("elf32-hppa-linux")
+OUTPUT_FORMAT("elf32-hppa-linaos")
 OUTPUT_ARCH(hppa)
 #else
-OUTPUT_FORMAT("elf64-hppa-linux")
+OUTPUT_FORMAT("elf64-hppa-linaos")
 OUTPUT_ARCH(hppa:hppa2.0w)
 #endif
 

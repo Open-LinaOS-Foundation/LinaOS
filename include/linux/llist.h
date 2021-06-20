@@ -48,8 +48,8 @@
  *   Author: Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
+#include <linaos/atomic.h>
+#include <linaos/kernel.h>
 
 struct llist_head {
 	struct llist_node *first;

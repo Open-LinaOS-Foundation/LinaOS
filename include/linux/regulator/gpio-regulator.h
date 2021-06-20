@@ -17,7 +17,7 @@
 #ifndef __REGULATOR_GPIO_H
 #define __REGULATOR_GPIO_H
 
-#include <linux/gpio/consumer.h>
+#include <linaos/gpio/consumer.h>
 
 struct regulator_init_data;
 

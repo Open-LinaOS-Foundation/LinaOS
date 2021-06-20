@@ -4,7 +4,7 @@
  *  Author: Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include "k3-psil-priv.h"
 

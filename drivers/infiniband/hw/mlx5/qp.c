@@ -30,12 +30,12 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <rdma/ib_umem.h>
 #include <rdma/ib_cache.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/rdma_counter.h>
-#include <linux/mlx5/fs.h>
+#include <linaos/mlx5/fs.h>
 #include "mlx5_ib.h"
 #include "ib_rep.h"
 #include "counters.h"

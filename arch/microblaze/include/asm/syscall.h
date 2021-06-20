@@ -2,9 +2,9 @@
 #ifndef __ASM_MICROBLAZE_SYSCALL_H
 #define __ASM_MICROBLAZE_SYSCALL_H
 
-#include <uapi/linux/audit.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <uapi/linaos/audit.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
 #include <asm/ptrace.h>
 
 /* The system call number is given by the user in R12 */

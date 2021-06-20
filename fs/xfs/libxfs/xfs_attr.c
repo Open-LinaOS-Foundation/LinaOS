@@ -396,7 +396,7 @@ xfs_attr_remove_args(
 
 /*
  * Note: If args->value is NULL the attribute will be removed, just like the
- * Linux ->setattr API.
+ * LinaOS ->setattr API.
  */
 int
 xfs_attr_set(

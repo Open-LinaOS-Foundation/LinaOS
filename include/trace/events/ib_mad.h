@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 
 /*
  * Copyright (c) 2018 Intel Corporation.  All rights reserved.
@@ -10,7 +10,7 @@
 #if !defined(_TRACE_IB_MAD_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_IB_MAD_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include <rdma/ib_mad.h>
 
 #ifdef CONFIG_TRACEPOINTS

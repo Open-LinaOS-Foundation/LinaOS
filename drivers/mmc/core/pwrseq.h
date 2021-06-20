@@ -7,7 +7,7 @@
 #ifndef _MMC_CORE_PWRSEQ_H
 #define _MMC_CORE_PWRSEQ_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct mmc_host;
 struct device;

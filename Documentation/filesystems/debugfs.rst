@@ -28,7 +28,7 @@ options can be used.
 
 Note that the debugfs API is exported GPL-only to modules.
 
-Code using debugfs should include <linux/debugfs.h>.  Then, the first order
+Code using debugfs should include <linaos/debugfs.h>.  Then, the first order
 of business will be to create at least one directory to hold a set of
 debugfs files::
 

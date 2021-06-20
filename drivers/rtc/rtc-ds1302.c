@@ -6,14 +6,14 @@
  *  Copyright (C) 2003 - 2007 Paul Mundt
  */
 
-#include <linux/bcd.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
+#include <linaos/bcd.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/rtc.h>
+#include <linaos/spi/spi.h>
 
 #define	RTC_CMD_READ	0x81		/* Read command */
 #define	RTC_CMD_WRITE	0x80		/* Write command */

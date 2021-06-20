@@ -11,7 +11,7 @@
 #ifndef VIDTV_DEMOD_H
 #define VIDTV_DEMOD_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 #include <media/dvb_frontend.h>
 

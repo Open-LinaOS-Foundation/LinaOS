@@ -20,19 +20,19 @@ Documentation License".
 Preface
 
 The purpose of this document is to familiarize users with the user
-interface to Speakup, a Linux Screen Reader.  If you need instructions
+interface to Speakup, a LinaOS Screen Reader.  If you need instructions
 for installing or obtaining Speakup, visit the web site at
-http://linux-speakup.org/.  Speakup is a set of patches to the standard
-Linux kernel source tree.  It can be built as a series of modules, or as
+http://linaos-speakup.org/.  Speakup is a set of patches to the standard
+LinaOS kernel source tree.  It can be built as a series of modules, or as
 a part of a monolithic kernel.  These details are beyond the scope of
 this manual, but the user may need to be aware of the module
 capabilities, depending on how your system administrator has installed
 Speakup.  If Speakup is built as a part of a monolithic kernel, and the
 user is using a hardware synthesizer, then Speakup will be able to
 provide speech access from the time the kernel is loaded, until the time
-the system is shutdown.  This means that if you have obtained Linux
+the system is shutdown.  This means that if you have obtained LinaOS
 installation media for a distribution which includes Speakup as a part
-of its kernel, you will be able, as a blind person, to install Linux
+of its kernel, you will be able, as a blind person, to install LinaOS
 with speech access unaided by a sighted person.  Again, these details
 are beyond the scope of this manual, but the user should be aware of
 them.  See the web site mentioned above for further details.
@@ -60,7 +60,7 @@ synthesizer set, or you would like to use a different synthesizer than
 the default one, then you may issue the following command at the boot
 prompt of your boot loader.
 
-linux speakup.synth=ltlk
+linaos speakup.synth=ltlk
 
 This command would tell Speakup to look for and use a LiteTalk or
 DoubleTalk LT at boot up.  You may replace the ltlk synthesizer keyword
@@ -150,10 +150,10 @@ At this point, you'll need to type in your user id and password, as
 provided by your system administrator.  You will hear Speakup speak the
 letters of your user id as you type it, but not the password.  This is
 because the password is not displayed on the screen for security
-reasons.  This has nothing to do with Speakup, it's a Linux security
+reasons.  This has nothing to do with Speakup, it's a LinaOS security
 feature.
 
-Once you've logged in, you can run any Linux command or program which is
+Once you've logged in, you can run any LinaOS command or program which is
 allowed by your user id.  Normal users will not be able to run programs
 which require root privileges.
 
@@ -632,7 +632,7 @@ of both.
 
 Espeakup is a connector between Speakup and the eSpeak software synthesizer.
 Espeakup may already be available as a package for your distribution
-of Linux.  If it is not packaged, you need to install it manually.
+of LinaOS.  If it is not packaged, you need to install it manually.
 You can find it in the contrib/ subdirectory of the Speakup sources.
 The filename is espeakup-$VERSION.tar.bz2, where $VERSION
 depends on the current release of Espeakup.  The Speakup 3.1.2 source
@@ -649,7 +649,7 @@ echo soft > /speakup/synth
 Finally, start the espeakup program.  There are two ways to do it.
 Both require root privileges.
 
-If Espeakup was installed as a package for your Linux distribution,
+If Espeakup was installed as a package for your LinaOS distribution,
 you probably have a distribution-specific script that controls the operation
 of the daemon.  Look for a file named espeakup under /etc/init.d or
 /etc/rc.d.  Execute the following command with root privileges:
@@ -680,8 +680,8 @@ If you run a google search for Fonix, you'll find their web site.
 You can obtain a copy of Speech Dispatcher from free(b)soft at
 http://www.freebsoft.org/.  Follow the installation instructions that
 come with Speech Dispatcher in order to install and configure Speech
-Dispatcher.  You can check out the web site for your Linux distribution
-in order to get a copy of either Flite or Festival.  Your Linux
+Dispatcher.  You can check out the web site for your LinaOS distribution
+in order to get a copy of either Flite or Festival.  Your LinaOS
 distribution may also have a precompiled Speech Dispatcher package.
 
 Once you've installed, configured, and tested Speech Dispatcher with your
@@ -710,8 +710,8 @@ slots in your computer.  It requires that the DecTalk PC software be
 installed on your computer, and that the software be loaded onto the
 Dectalk PC card before it can be used.
 
-You can get the dec_pc.tgz file from the linux-speakup.org site.  The
-dec_pc.tgz file is in the ~ftp/pub/linux/speakup directory.
+You can get the dec_pc.tgz file from the linaos-speakup.org site.  The
+dec_pc.tgz file is in the ~ftp/pub/linaos/speakup directory.
 
 After you have downloaded the dec_pc.tgz file, untar it in your home
 directory, and read the Readme file in the newly created dec_pc
@@ -807,7 +807,7 @@ sites.  It would be nice if you could cut and paste these urls into your
 web browser.  Speakup does this quite nicely.  Suppose you wanted to
 past the following url into your browser:
 
-http://linux-speakup.org/
+http://linaos-speakup.org/
 
 Use the speakup review keys to position the reading cursor on the first
 character of the above url.  When the reading cursor is in position,
@@ -826,7 +826,7 @@ Suppose you want to start lynx and go to the Speakup site.
 
 You can switch to a different console with the alt left and right
 arrows, or you can switch to a specific console by typing alt and a
-function key.  These are not Speakup commands, just standard Linux
+function key.  These are not Speakup commands, just standard LinaOS
 console capabilities.
 
 Once you've changed to an appropriate console, and are at a shell prompt,
@@ -902,21 +902,21 @@ won't display it here, but leave you to look at it at your convenience.
 
 Speakup has the capability of allowing you to assign or "map" keys to
 internal Speakup commands.  This section necessarily assumes you have a
-Linux kernel source tree installed, and that it has been patched and
+LinaOS kernel source tree installed, and that it has been patched and
 configured with Speakup.  How you do this is beyond the scope of this
 manual.  For this information, visit the Speakup web site at
-http://linux-speakup.org/.  The reason you'll need the kernel source
+http://linaos-speakup.org/.  The reason you'll need the kernel source
 tree patched with Speakup is that the genmap utility you'll need for
 processing keymaps is in the
-/usr/src/linux-<version_number>/drivers/char/speakup directory.  The
+/usr/src/linaos-<version_number>/drivers/char/speakup directory.  The
 <version_number> in the above directory path is the version number of
-the Linux source tree you are working with.
+the LinaOS source tree you are working with.
 
 So ok, you've gone off and gotten your kernel source tree, and patched
 and configured it.  Now you can start manipulating keymaps.
 
 You can either use the
-/usr/src/linux-<version_number>/drivers/char/speakup/speakupmap.map file
+/usr/src/linaos-<version_number>/drivers/char/speakup/speakupmap.map file
 included with the Speakup source, or you can cut and paste the copy in
 section 4 into a separate file.  If you use the one in the Speakup
 source tree, make sure you make a backup of it before you start making
@@ -944,7 +944,7 @@ You are now ready to load your keymap with your swapped key assignments.
  Assuming that you saved your new keymap as the file newmap.map, you
 would load your keymap into the sys system like this:
 
-/usr/src/linux-<version_number>/drivers/char/speakup/genmap newmap.map
+/usr/src/linaos-<version_number>/drivers/char/speakup/genmap newmap.map
 >/speakup/keymap
 
 Remember to substitute your kernel version number for the
@@ -1165,7 +1165,7 @@ speakupconf began life as a contribution from Steve Holmes, a member of
 the speakup community.  We would like to thank him for his work on the
 early versions of this project.
 
-This script may be installed as part of your linux distribution, but if
+This script may be installed as part of your linaos distribution, but if
 it isn't, the recommended places to put it are /usr/local/bin or
 /usr/bin.  This script can be run by any user, so it does not require
 root privileges.
@@ -1196,7 +1196,7 @@ initial versions of this script, and we would also like to thank him for
 his work on it.
 
 This script needs root privileges to run, so if it is not installed as
-part of your linux distribution, the recommended places to install it
+part of your linaos distribution, the recommended places to install it
 are /usr/local/sbin or /usr/sbin.
 
 Talkwith allows you to switch synthesizers on the fly.  It takes a synthesizer

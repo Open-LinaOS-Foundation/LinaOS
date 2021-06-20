@@ -20,15 +20,15 @@
  *  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/completion.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
 
 #define DRV_NAME	"pmcmsptwi"
 

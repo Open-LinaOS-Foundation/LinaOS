@@ -11,8 +11,8 @@
 *(tony.olech@elandigitalsystems.com)
 *
 * The driver was written by Tony Olech(tony.olech@elandigitalsystems.com)
-* based on various USB client drivers in the 2.6.15 linux kernel
-* with constant reference to the 3rd Edition of Linux Device Drivers
+* based on various USB client drivers in the 2.6.15 linaos kernel
+* with constant reference to the 3rd Edition of LinaOS Device Drivers
 * published by O'Reilly
 *
 * The U132 adapter is a USB to CardBus adapter specifically designed

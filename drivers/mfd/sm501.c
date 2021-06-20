@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/mfd/sm501.c
+/* linaos/drivers/mfd/sm501.c
  *
  * Copyright (C) 2006 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -8,24 +8,24 @@
  * SM501 MFD driver
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/platform_data/i2c-gpio.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pci.h>
+#include <linaos/platform_data/i2c-gpio.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/slab.h>
 
-#include <linux/sm501.h>
-#include <linux/sm501-regs.h>
-#include <linux/serial_8250.h>
+#include <linaos/sm501.h>
+#include <linaos/sm501-regs.h>
+#include <linaos/serial_8250.h>
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 struct sm501_device {
 	struct list_head		list;
@@ -35,7 +35,7 @@ struct sm501_device {
 struct sm501_gpio;
 
 #ifdef CONFIG_MFD_SM501_GPIO
-#include <linux/gpio.h>
+#include <linaos/gpio.h>
 
 struct sm501_gpio_chip {
 	struct gpio_chip	gpio;

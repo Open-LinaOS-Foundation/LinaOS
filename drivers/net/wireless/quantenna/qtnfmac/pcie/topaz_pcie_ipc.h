@@ -4,7 +4,7 @@
 #ifndef _QTN_FMAC_PCIE_IPC_H_
 #define _QTN_FMAC_PCIE_IPC_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "shm_ipc_defs.h"
 

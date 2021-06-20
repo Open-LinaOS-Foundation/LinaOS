@@ -27,13 +27,13 @@
  * limited to 4k bytes per second.
  */
 
-#include <linux/kernel.h>
-#include <linux/atomic.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/static_key.h>
-#include <linux/workqueue.h>
-#include <linux/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/atomic.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
+#include <linaos/static_key.h>
+#include <linaos/workqueue.h>
+#include <linaos/moduleparam.h>
 #include <asm/cpacf.h>
 
 DEFINE_STATIC_KEY_FALSE(s390_arch_random_available);

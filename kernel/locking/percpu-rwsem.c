@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/atomic.h>
-#include <linux/percpu.h>
-#include <linux/wait.h>
-#include <linux/lockdep.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/errno.h>
+#include <linaos/atomic.h>
+#include <linaos/percpu.h>
+#include <linaos/wait.h>
+#include <linaos/lockdep.h>
+#include <linaos/percpu-rwsem.h>
+#include <linaos/rcupdate.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task.h>
+#include <linaos/errno.h>
 
 int __percpu_init_rwsem(struct percpu_rw_semaphore *sem,
 			const char *name, struct lock_class_key *key)

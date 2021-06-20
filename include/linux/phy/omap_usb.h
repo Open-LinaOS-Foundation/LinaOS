@@ -9,7 +9,7 @@
 #ifndef __DRIVERS_OMAP_USB2_H
 #define __DRIVERS_OMAP_USB2_H
 
-#include <linux/usb/phy_companion.h>
+#include <linaos/usb/phy_companion.h>
 
 #define	phy_to_omapusb(x)	container_of((x), struct omap_usb, phy)
 

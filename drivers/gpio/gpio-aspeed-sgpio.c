@@ -5,17 +5,17 @@
  * Author: Karthikeyan Mani <karthikeyanm@amiindia.co.in>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/gpio/driver.h>
-#include <linux/hashtable.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/hashtable.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
 
 /*
  * MAX_NR_HW_GPIO represents the number of actual hardware-supported GPIOs (ie,

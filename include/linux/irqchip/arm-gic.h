@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  include/linux/irqchip/arm-gic.h
+ *  include/linaos/irqchip/arm-gic.h
  *
  *  Copyright (C) 2002 ARM Limited, All Rights Reserved.
  */
@@ -127,7 +127,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/irqdomain.h>
+#include <linaos/irqdomain.h>
 
 struct device_node;
 struct gic_chip_data;

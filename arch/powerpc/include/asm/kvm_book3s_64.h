@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  *
- * Copyright SUSE Linux Products GmbH 2010
+ * Copyright SUSE LinaOS Products GmbH 2010
  *
  * Authors: Alexander Graf <agraf@suse.de>
  */
@@ -9,7 +9,7 @@
 #ifndef __ASM_KVM_BOOK3S_64_H__
 #define __ASM_KVM_BOOK3S_64_H__
 
-#include <linux/string.h>
+#include <linaos/string.h>
 #include <asm/bitops.h>
 #include <asm/book3s/64/mmu-hash.h>
 #include <asm/cpu_has_feature.h>
@@ -418,7 +418,7 @@ static inline bool hpte_cache_flags_ok(unsigned long hptel, bool is_ci)
  * If it's present and writable, atomically set dirty and referenced bits and
  * return the PTE, otherwise return 0.
  */
-static inline pte_t kvmppc_read_update_linux_pte(pte_t *ptep, int writing)
+static inline pte_t kvmppc_read_update_linaos_pte(pte_t *ptep, int writing)
 {
 	pte_t old_pte, new_pte = __pte(0);
 
@@ -641,7 +641,7 @@ find_kvm_secondary_pte_unlocked(struct kvm *kvm, unsigned long ea,
 {
 	pte_t *pte;
 
-	pte = __find_linux_pte(kvm->arch.pgtable, ea, NULL, hshift);
+	pte = __find_linaos_pte(kvm->arch.pgtable, ea, NULL, hshift);
 	return pte;
 }
 
@@ -652,7 +652,7 @@ static inline pte_t *find_kvm_secondary_pte(struct kvm *kvm, unsigned long ea,
 
 	VM_WARN(!spin_is_locked(&kvm->mmu_lock),
 		"%s called with kvm mmu_lock not held \n", __func__);
-	pte = __find_linux_pte(kvm->arch.pgtable, ea, NULL, hshift);
+	pte = __find_linaos_pte(kvm->arch.pgtable, ea, NULL, hshift);
 
 	return pte;
 }
@@ -668,7 +668,7 @@ static inline pte_t *find_kvm_host_pte(struct kvm *kvm, unsigned long mmu_seq,
 	if (mmu_notifier_retry(kvm, mmu_seq))
 		return NULL;
 
-	pte = __find_linux_pte(kvm->mm->pgd, ea, NULL, hshift);
+	pte = __find_linaos_pte(kvm->mm->pgd, ea, NULL, hshift);
 
 	return pte;
 }

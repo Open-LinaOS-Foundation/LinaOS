@@ -21,9 +21,9 @@
  *
  */
 
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/mm_types.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/mm_types.h>
 
 #include "kfd_priv.h"
 #include "kfd_mqd_manager.h"

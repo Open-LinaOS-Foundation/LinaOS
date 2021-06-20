@@ -31,21 +31,21 @@
  *
  */
 
-#include <linux/bpf.h>
-#include <linux/etherdevice.h>
-#include <linux/tcp.h>
-#include <linux/if_vlan.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
+#include <linaos/bpf.h>
+#include <linaos/etherdevice.h>
+#include <linaos/tcp.h>
+#include <linaos/if_vlan.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/hash.h>
 #include <net/ip.h>
 #include <net/vxlan.h>
 #include <net/devlink.h>
 
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/cq.h>
+#include <linaos/mlx4/driver.h>
+#include <linaos/mlx4/device.h>
+#include <linaos/mlx4/cmd.h>
+#include <linaos/mlx4/cq.h>
 
 #include "mlx4_en.h"
 #include "en_port.h"

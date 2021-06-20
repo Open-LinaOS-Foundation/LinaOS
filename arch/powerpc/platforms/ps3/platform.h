@@ -9,7 +9,7 @@
 #if !defined(_PS3_PLATFORM_H)
 #define _PS3_PLATFORM_H
 
-#include <linux/rtc.h>
+#include <linaos/rtc.h>
 #include <scsi/scsi.h>
 
 #include <asm/ps3.h>

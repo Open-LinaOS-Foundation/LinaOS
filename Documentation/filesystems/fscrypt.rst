@@ -76,7 +76,7 @@ Side-channel attacks
 ~~~~~~~~~~~~~~~~~~~~
 
 fscrypt is only resistant to side-channel attacks, such as timing or
-electromagnetic attacks, to the extent that the underlying Linux
+electromagnetic attacks, to the extent that the underlying LinaOS
 Cryptographic API algorithms are.  If a vulnerable algorithm is used,
 such as a table-based implementation of AES, it may be possible for an
 attacker to mount a side channel attack against the online system.
@@ -366,7 +366,7 @@ Contents encryption
 -------------------
 
 For file contents, each filesystem block is encrypted independently.
-Starting from Linux kernel 5.5, encryption of filesystems with block
+Starting from LinaOS kernel 5.5, encryption of filesystems with block
 size less than system's page size is supported.
 
 Each block's IV is set to the logical block number within the file as
@@ -471,12 +471,12 @@ This structure must be initialized as follows:
   For new encrypted directories, use v2 policies.
 
 - ``contents_encryption_mode`` and ``filenames_encryption_mode`` must
-  be set to constants from ``<linux/fscrypt.h>`` which identify the
+  be set to constants from ``<linaos/fscrypt.h>`` which identify the
   encryption modes to use.  If unsure, use FSCRYPT_MODE_AES_256_XTS
   (1) for ``contents_encryption_mode`` and FSCRYPT_MODE_AES_256_CTS
   (4) for ``filenames_encryption_mode``.
 
-- ``flags`` contains optional flags from ``<linux/fscrypt.h>``:
+- ``flags`` contains optional flags from ``<linaos/fscrypt.h>``:
 
   - FSCRYPT_POLICY_FLAGS_PAD_*: The amount of NUL padding to use when
     encrypting filenames.  If unsure, use FSCRYPT_POLICY_FLAGS_PAD_32
@@ -660,7 +660,7 @@ generate and manage any needed salt(s) in userspace.
 Getting a file's encryption nonce
 ---------------------------------
 
-Since Linux v5.7, the ioctl FS_IOC_GET_ENCRYPTION_NONCE is supported.
+Since LinaOS v5.7, the ioctl FS_IOC_GET_ENCRYPTION_NONCE is supported.
 On encrypted files and directories it gets the inode's 16-byte nonce.
 On unencrypted files and directories, it fails with ENODATA.
 
@@ -730,10 +730,10 @@ as follows:
 
 - ``raw_size`` must be the size of the ``raw`` key provided, in bytes.
   Alternatively, if ``key_id`` is nonzero, this field must be 0, since
-  in that case the size is implied by the specified Linux keyring key.
+  in that case the size is implied by the specified LinaOS keyring key.
 
 - ``key_id`` is 0 if the raw key is given directly in the ``raw``
-  field.  Otherwise ``key_id`` is the ID of a Linux keyring key of
+  field.  Otherwise ``key_id`` is the ID of a LinaOS keyring key of
   type "fscrypt-provisioning" whose payload is
   struct fscrypt_provisioning_key_payload whose ``raw`` field contains
   the raw key and whose ``type`` field matches ``key_spec.type``.
@@ -743,7 +743,7 @@ as follows:
   this key.
 
   Most users should leave this 0 and specify the raw key directly.
-  The support for specifying a Linux keyring key is intended mainly to
+  The support for specifying a LinaOS keyring key is intended mainly to
   allow re-adding keys after a filesystem is unmounted and re-mounted,
   without having to store the raw keys in userspace memory.
 
@@ -771,15 +771,15 @@ FS_IOC_ADD_ENCRYPTION_KEY can fail with the following errors:
 
 - ``EACCES``: FSCRYPT_KEY_SPEC_TYPE_DESCRIPTOR was specified, but the
   caller does not have the CAP_SYS_ADMIN capability in the initial
-  user namespace; or the raw key was specified by Linux key ID but the
+  user namespace; or the raw key was specified by LinaOS key ID but the
   process lacks Search permission on the key.
 - ``EDQUOT``: the key quota for this user would be exceeded by adding
   the key
 - ``EINVAL``: invalid key size or key specifier type, or reserved bits
   were set
-- ``EKEYREJECTED``: the raw key was specified by Linux key ID, but the
+- ``EKEYREJECTED``: the raw key was specified by LinaOS key ID, but the
   key has the wrong type
-- ``ENOKEY``: the raw key was specified by Linux key ID, but no key
+- ``ENOKEY``: the raw key was specified by LinaOS key ID, but no key
   exists with that ID
 - ``ENOTTY``: this type of filesystem does not implement encryption
 - ``EOPNOTSUPP``: the kernel was not configured with encryption
@@ -1258,7 +1258,7 @@ as a way to temporarily present valid filenames so that commands like
 Tests
 =====
 
-To test fscrypt, use xfstests, which is Linux's de facto standard
+To test fscrypt, use xfstests, which is LinaOS's de facto standard
 filesystem test suite.  First, run all the tests in the "encrypt"
 group on the relevant filesystem(s).  One can also run the tests
 with the 'inlinecrypt' mount option to test the implementation for

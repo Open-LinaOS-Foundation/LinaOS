@@ -5,7 +5,7 @@
  * Copyright (C) 2015 Martin Willi
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 .section	.rodata.cst32.ROT8, "aM", @progbits, 32
 .align 32

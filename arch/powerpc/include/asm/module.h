@@ -3,7 +3,7 @@
 #define _ASM_POWERPC_MODULE_H
 #ifdef __KERNEL__
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include <asm/bug.h>
 #include <asm-generic/module.h>
 

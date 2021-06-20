@@ -8,7 +8,7 @@
 #ifndef __LINUX_MFD_WM8350_GPIO_H_
 #define __LINUX_MFD_WM8350_GPIO_H_
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 /*
  * GPIO Registers.

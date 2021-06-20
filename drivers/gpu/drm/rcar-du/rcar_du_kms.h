@@ -10,7 +10,7 @@
 #ifndef __RCAR_DU_KMS_H__
 #define __RCAR_DU_KMS_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_file;
 struct drm_device;

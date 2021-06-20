@@ -1,5 +1,5 @@
 ==========================
-S3C24XX ARM Linux Overview
+S3C24XX ARM LinaOS Overview
 ==========================
 
 
@@ -8,13 +8,13 @@ Introduction
 ------------
 
   The Samsung S3C24XX range of ARM9 System-on-Chip CPUs are supported
-  by the 's3c2410' architecture of ARM Linux. Currently the S3C2410,
+  by the 's3c2410' architecture of ARM LinaOS. Currently the S3C2410,
   S3C2412, S3C2413, S3C2416, S3C2440, S3C2442, S3C2443 and S3C2450 devices
   are supported.
 
   Support for the S3C2400 and S3C24A0 series was never completed and the
   corresponding code has been removed after a while.  If someone wishes to
-  revive this effort, partial support can be retrieved from earlier Linux
+  revive this effort, partial support can be retrieved from earlier LinaOS
   versions.
 
   The S3C2416 and S3C2450 devices are very similar and S3C2450 support is
@@ -132,15 +132,15 @@ Adding New Machines
   Read the kernel patch submission policies as well as the
   Documentation/arm directory before submitting patches. The
   ARM kernel series is managed by Russell King, and has a patch system
-  located at http://www.arm.linux.org.uk/developer/patches/
+  located at http://www.arm.linaos.org.uk/developer/patches/
   as well as mailing lists that can be found from the same site.
 
-  As a courtesy, please notify <ben-linux@fluff.org> of any new
+  As a courtesy, please notify <ben-linaos@fluff.org> of any new
   machines or other modifications.
 
   Any large scale modifications, or new drivers should be discussed
-  on the ARM kernel mailing list (linux-arm-kernel) before being
-  attempted. See http://www.arm.linux.org.uk/mailinglists/ for the
+  on the ARM kernel mailing list (linaos-arm-kernel) before being
+  attempted. See http://www.arm.linaos.org.uk/mailinglists/ for the
   mailing list information.
 
 
@@ -172,8 +172,8 @@ NAND
 ----
 
   The current kernels now have support for the s3c2410 NAND
-  controller. If there are any problems the latest linux-mtd
-  code can be found from http://www.linux-mtd.infradead.org/
+  controller. If there are any problems the latest linaos-mtd
+  code can be found from http://www.linaos-mtd.infradead.org/
 
   For more information see Documentation/arm/samsung-s3c24xx/nand.rst
 

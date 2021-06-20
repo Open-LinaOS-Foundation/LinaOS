@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/hash.h>
+#include <linaos/hash.h>
 #include "ipoib.h"
 
 #define MLX5I_MAX_LOG_PKEY_SUP 7

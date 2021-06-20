@@ -2,9 +2,9 @@
 /*
  * Core PHY library, taken from phy.c
  */
-#include <linux/export.h>
-#include <linux/phy.h>
-#include <linux/of.h>
+#include <linaos/export.h>
+#include <linaos/phy.h>
+#include <linaos/of.h>
 
 /**
  * phy_speed_to_str - Return a string representing the PHY link speed

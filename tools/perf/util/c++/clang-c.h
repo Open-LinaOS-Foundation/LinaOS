@@ -21,7 +21,7 @@ extern int perf_clang__compile_bpf(const char *filename,
 #else
 
 #include <errno.h>
-#include <linux/compiler.h>	/* for __maybe_unused */
+#include <linaos/compiler.h>	/* for __maybe_unused */
 
 static inline void perf_clang__init(void) { }
 static inline void perf_clang__cleanup(void) { }

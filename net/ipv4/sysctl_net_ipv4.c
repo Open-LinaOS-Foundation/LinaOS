@@ -6,16 +6,16 @@
  * Added /proc/sys/net/ipv4 directory entry (empty =) ). [MS]
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/igmp.h>
-#include <linux/inetdevice.h>
-#include <linux/seqlock.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/nsproxy.h>
-#include <linux/swap.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/sysctl.h>
+#include <linaos/igmp.h>
+#include <linaos/inetdevice.h>
+#include <linaos/seqlock.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/nsproxy.h>
+#include <linaos/swap.h>
 #include <net/snmp.h>
 #include <net/icmp.h>
 #include <net/ip.h>

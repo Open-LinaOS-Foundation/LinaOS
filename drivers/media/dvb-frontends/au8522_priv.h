@@ -2,24 +2,24 @@
 /*
     Auvitek AU8522 QAM/8VSB demodulator driver
 
-    Copyright (C) 2008 Steven Toth <stoth@linuxtv.org>
-    Copyright (C) 2008 Devin Heitmueller <dheitmueller@linuxtv.org>
+    Copyright (C) 2008 Steven Toth <stoth@linaostv.org>
+    Copyright (C) 2008 Devin Heitmueller <dheitmueller@linaostv.org>
     Copyright (C) 2005-2008 Auvitek International, Ltd.
 
 
 */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-mc.h>
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/dvb_frontend.h>
 #include "au8522.h"
 #include "tuner-i2c.h"

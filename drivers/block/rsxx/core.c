@@ -3,25 +3,25 @@
 * Filename: core.c
 *
 * Authors: Joshua Morris <josh.h.morris@us.ibm.com>
-*	Philip Kelleher <pjk1939@linux.vnet.ibm.com>
+*	Philip Kelleher <pjk1939@linaos.vnet.ibm.com>
 *
 * (C) Copyright 2013 IBM Corporation
 */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
-#include <linux/genhd.h>
-#include <linux/idr.h>
+#include <linaos/genhd.h>
+#include <linaos/idr.h>
 
 #include "rsxx_priv.h"
 #include "rsxx_cfg.h"

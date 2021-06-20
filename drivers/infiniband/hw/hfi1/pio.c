@@ -45,7 +45,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include "hfi.h"
 #include "qp.h"
 #include "trace.h"

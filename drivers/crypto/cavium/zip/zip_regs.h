@@ -51,7 +51,7 @@
  * Cavium ZIP.
  */
 
-#include <linux/kern_levels.h>
+#include <linaos/kern_levels.h>
 
 /* ZIP invocation result completion status codes */
 #define ZIP_CMD_NOTDONE        0x0

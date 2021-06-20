@@ -18,7 +18,7 @@
  *
  *  DHCP support added.  To users this looks like a whole separate
  *  protocol, but we know it's just a bag on the side of BOOTP.
- *		-- Chip Salzenberg <chip@valinux.com>, May 2000
+ *		-- Chip Salzenberg <chip@valinaos.com>, May 2000
  *
  *  Ported DHCP support from 2.2.16 to 2.4.0-test4
  *              -- Eric Biederman <ebiederman@lnxi.com>, 30 Aug 2000
@@ -33,39 +33,39 @@
  *              --  Chris Novakovic <chris@chrisn.me.uk>, April 2018
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/utsname.h>
-#include <linux/in.h>
-#include <linux/if.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/socket.h>
-#include <linux/route.h>
-#include <linux/udp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/major.h>
-#include <linux/root_dev.h>
-#include <linux/delay.h>
-#include <linux/nfs_fs.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/jiffies.h>
+#include <linaos/random.h>
+#include <linaos/init.h>
+#include <linaos/utsname.h>
+#include <linaos/in.h>
+#include <linaos/if.h>
+#include <linaos/inet.h>
+#include <linaos/inetdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/skbuff.h>
+#include <linaos/ip.h>
+#include <linaos/socket.h>
+#include <linaos/route.h>
+#include <linaos/udp.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/major.h>
+#include <linaos/root_dev.h>
+#include <linaos/delay.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 #include <net/net_namespace.h>
 #include <net/arp.h>
 #include <net/ip.h>
 #include <net/ipconfig.h>
 #include <net/route.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <net/checksum.h>
 #include <asm/processor.h>
 

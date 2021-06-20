@@ -4,8 +4,8 @@
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  * Copyright (C) 2016-2017 Intel Deutschland GmbH
  */
-#include <linux/firmware.h>
-#include <linux/rtnetlink.h>
+#include <linaos/firmware.h>
+#include <linaos/rtnetlink.h>
 #include "iwl-trans.h"
 #include "iwl-csr.h"
 #include "mvm.h"

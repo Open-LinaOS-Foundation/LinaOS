@@ -2,12 +2,12 @@
 /*
  * Copyright (c) 2016 Christoph Hellwig.
  */
-#include <linux/kobject.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/blk-mq-pci.h>
-#include <linux/pci.h>
-#include <linux/module.h>
+#include <linaos/kobject.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/blk-mq-pci.h>
+#include <linaos/pci.h>
+#include <linaos/module.h>
 
 #include "blk-mq.h"
 

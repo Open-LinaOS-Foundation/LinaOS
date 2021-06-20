@@ -8,12 +8,12 @@
  * This is not a complete driver, just low-level access routines for
  * the MAC controller itself.
  *
- * Based on the prism2 driver from Absolute Value Systems' linux-wlan
- * project, the Linux wvlan_cs driver, Lucent's HCF-Light
+ * Based on the prism2 driver from Absolute Value Systems' linaos-wlan
+ * project, the LinaOS wvlan_cs driver, Lucent's HCF-Light
  * (wvlan_hcf.c) library, and the NetBSD wireless driver (in no
  * particular order).
  *
- * Copyright (C) 2000, David Gibson, Linuxcare Australia.
+ * Copyright (C) 2000, David Gibson, LinaOScare Australia.
  * (C) Copyright David Gibson, IBM Corp. 2001-2003.
  *
  * The contents of this file are subject to the Mozilla Public License
@@ -38,9 +38,9 @@
  * under either the MPL or the GPL.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
 
 #include "hermes.h"
 

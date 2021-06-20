@@ -2,27 +2,27 @@
 #define pr_fmt(fmt) "kcov: " fmt
 
 #define DISABLE_BRANCH_PROFILING
-#include <linux/atomic.h>
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/hashtable.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/preempt.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/kcov.h>
-#include <linux/refcount.h>
-#include <linux/log2.h>
+#include <linaos/atomic.h>
+#include <linaos/compiler.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/hashtable.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/preempt.h>
+#include <linaos/printk.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/vmalloc.h>
+#include <linaos/debugfs.h>
+#include <linaos/uaccess.h>
+#include <linaos/kcov.h>
+#include <linaos/refcount.h>
+#include <linaos/log2.h>
 #include <asm/setup.h>
 
 #define kcov_debug(fmt, ...) pr_debug("%s: " fmt, __func__, ##__VA_ARGS__)

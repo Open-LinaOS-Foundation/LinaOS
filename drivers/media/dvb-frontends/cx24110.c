@@ -9,10 +9,10 @@
 
 */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 
 #include <media/dvb_frontend.h>
 #include "cx24110.h"

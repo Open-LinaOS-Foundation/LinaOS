@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/svc_xprt.c
+ * linaos/net/sunrpc/svc_xprt.c
  *
  * Author: Tom Tucker <tom@opengridcomputing.com>
  */
 
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/freezer.h>
+#include <linaos/kthread.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/xprt.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/sunrpc/stats.h>
+#include <linaos/sunrpc/svc_xprt.h>
+#include <linaos/sunrpc/svcsock.h>
+#include <linaos/sunrpc/xprt.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
 #include <trace/events/sunrpc.h>
 
 #define RPCDBG_FACILITY	RPCDBG_SVCXPRT

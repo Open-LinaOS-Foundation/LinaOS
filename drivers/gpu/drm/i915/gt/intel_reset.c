@@ -3,8 +3,8 @@
  * Copyright © 2008-2018 Intel Corporation
  */
 
-#include <linux/sched/mm.h>
-#include <linux/stop_machine.h>
+#include <linaos/sched/mm.h>
+#include <linaos/stop_machine.h>
 
 #include "display/intel_display_types.h"
 #include "display/intel_overlay.h"

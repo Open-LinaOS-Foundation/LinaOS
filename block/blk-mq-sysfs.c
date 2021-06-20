@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/backing-dev.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/backing-dev.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/smp.h>
 
-#include <linux/blk-mq.h>
+#include <linaos/blk-mq.h>
 #include "blk.h"
 #include "blk-mq.h"
 #include "blk-mq-tag.h"

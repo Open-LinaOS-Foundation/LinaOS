@@ -8,30 +8,30 @@
 
 /*
  * The Watchdog Timer Mode Register can be only written to once. If the
- * timeout need to be set from Linux, be sure that the bootstrap or the
+ * timeout need to be set from LinaOS, be sure that the bootstrap or the
  * bootloader doesn't write to this register.
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <linaos/clk.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/platform_device.h>
+#include <linaos/reboot.h>
+#include <linaos/types.h>
+#include <linaos/watchdog.h>
+#include <linaos/jiffies.h>
+#include <linaos/timer.h>
+#include <linaos/bitops.h>
+#include <linaos/uaccess.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
 
 #include "at91sam9_wdt.h"
 

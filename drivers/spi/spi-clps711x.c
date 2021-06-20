@@ -5,16 +5,16 @@
  *  Copyright (C) 2012-2016 Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/clps711x.h>
-#include <linux/spi/spi.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mfd/syscon/clps711x.h>
+#include <linaos/spi/spi.h>
 
 #define DRIVER_NAME		"clps711x-spi"
 

@@ -3,7 +3,7 @@
  * Copyright (C) 2012 Intel Corporation
  */
 
-#include <linux/raid/pq.h>
+#include <linaos/raid/pq.h>
 #include "x86.h"
 
 static int raid6_has_ssse3(void)

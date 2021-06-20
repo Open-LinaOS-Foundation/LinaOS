@@ -110,7 +110,7 @@ The type of ``**_cpumask macros`` is ``(const) struct cpumask *``. The latter
 correspond with appropriate ``**_siblings`` sysfs attributes (except for
 topology_sibling_cpumask() which corresponds with thread_siblings).
 
-To be consistent on all architectures, include/linux/topology.h
+To be consistent on all architectures, include/linaos/topology.h
 provides default definitions for any of the above macros that are
 not defined by include/asm-XXX/topology.h:
 
@@ -149,7 +149,7 @@ source for the output is in brackets ("[]").
     =========== ==========================================================
 
 The format for the above output is compatible with cpulist_parse()
-[see <linux/cpumask.h>].  Some examples follow.
+[see <linaos/cpumask.h>].  Some examples follow.
 
 In this example, there are 64 CPUs in the system but cpus 32-63 exceed
 the kernel max which is limited to 0..31 by the NR_CPUS config option

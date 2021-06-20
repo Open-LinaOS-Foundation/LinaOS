@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-/* linux/drivers/usb/gadget/s3c-hsudc.c
+/* linaos/drivers/usb/gadget/s3c-hsudc.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/
@@ -11,24 +11,24 @@
  * can be configured for Bulk or Interrupt transfer mode.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/prefetch.h>
-#include <linux/platform_data/s3c-hsudc.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/otg.h>
+#include <linaos/prefetch.h>
+#include <linaos/platform_data/s3c-hsudc.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/pm_runtime.h>
 
 #define S3C_HSUDC_REG(x)	(x)
 

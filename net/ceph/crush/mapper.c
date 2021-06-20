@@ -11,13 +11,13 @@
  */
 
 #ifdef __KERNEL__
-# include <linux/string.h>
-# include <linux/slab.h>
-# include <linux/bug.h>
-# include <linux/kernel.h>
-# include <linux/crush/crush.h>
-# include <linux/crush/hash.h>
-# include <linux/crush/mapper.h>
+# include <linaos/string.h>
+# include <linaos/slab.h>
+# include <linaos/bug.h>
+# include <linaos/kernel.h>
+# include <linaos/crush/crush.h>
+# include <linaos/crush/hash.h>
+# include <linaos/crush/mapper.h>
 #else
 # include "crush_compat.h"
 # include "crush.h"

@@ -12,9 +12,9 @@
  * Copyright 2007 David Gibson <dwg@au1.ibm.com>, IBM Corporation.
  */
 
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/rtc.h>
+#include <linaos/init.h>
+#include <linaos/of_platform.h>
+#include <linaos/rtc.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>

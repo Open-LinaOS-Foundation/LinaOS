@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * w83791d.c - Part of lm_sensors, Linux kernel modules for hardware
+ * w83791d.c - Part of lm_sensors, LinaOS kernel modules for hardware
  *	       monitoring
  *
  * Copyright (C) 2006-2007 Charles Spirakis <bezaur@gmail.com>
@@ -19,16 +19,16 @@
  * The w83791g chip is the same as the w83791d but lead-free.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-vid.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-vid.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/jiffies.h>
 
 #define NUMBER_OF_VIN		10
 #define NUMBER_OF_FANIN		5

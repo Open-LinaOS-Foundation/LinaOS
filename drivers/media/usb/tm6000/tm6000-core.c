@@ -6,11 +6,11 @@
 // Copyright (c) 2007 Michel Ludwig <michel.ludwig@gmail.com>
 //     - DVB-T support
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/i2c.h>
 #include "tm6000.h"
 #include "tm6000-regs.h"
 #include <media/v4l2-common.h>

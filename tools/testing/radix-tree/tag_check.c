@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <linux/slab.h>
-#include <linux/radix-tree.h>
+#include <linaos/slab.h>
+#include <linaos/radix-tree.h>
 
 #include "test.h"
 

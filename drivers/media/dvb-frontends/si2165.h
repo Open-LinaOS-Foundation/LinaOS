@@ -11,7 +11,7 @@
 #ifndef _DVB_SI2165_H
 #define _DVB_SI2165_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 enum {
 	SI2165_MODE_OFF = 0x00,

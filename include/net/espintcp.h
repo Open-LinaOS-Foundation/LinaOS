@@ -3,7 +3,7 @@
 #define _NET_ESPINTCP_H
 
 #include <net/strparser.h>
-#include <linux/skmsg.h>
+#include <linaos/skmsg.h>
 
 void __init espintcp_init(void);
 

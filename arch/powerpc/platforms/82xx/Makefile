@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the PowerPC 82xx linux kernel.
+# Makefile for the PowerPC 82xx linaos kernel.
 #
 obj-$(CONFIG_MPC8272_ADS) += mpc8272_ads.o
 obj-$(CONFIG_CPM2) += pq2.o

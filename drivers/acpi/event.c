@@ -7,13 +7,13 @@
  *
  */
 
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/gfp.h>
-#include <linux/acpi.h>
+#include <linaos/spinlock.h>
+#include <linaos/export.h>
+#include <linaos/proc_fs.h>
+#include <linaos/init.h>
+#include <linaos/poll.h>
+#include <linaos/gfp.h>
+#include <linaos/acpi.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 

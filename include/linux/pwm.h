@@ -2,9 +2,9 @@
 #ifndef __LINUX_PWM_H
 #define __LINUX_PWM_H
 
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
 
 struct pwm_capture;
 struct seq_file;

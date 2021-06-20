@@ -3,7 +3,7 @@
 #define _ASM_ARM64_PARAVIRT_H
 
 #ifdef CONFIG_PARAVIRT
-#include <linux/static_call_types.h>
+#include <linaos/static_call_types.h>
 
 struct static_key;
 extern struct static_key paravirt_steal_enabled;

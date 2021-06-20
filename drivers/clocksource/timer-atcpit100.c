@@ -6,17 +6,17 @@
  *
  */
 
-#include <linux/irq.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/cpufreq.h>
-#include <linux/sched.h>
-#include <linux/sched_clock.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linaos/irq.h>
+#include <linaos/clocksource.h>
+#include <linaos/clockchips.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/cpufreq.h>
+#include <linaos/sched.h>
+#include <linaos/sched_clock.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
 #include "timer-of.h"
 #ifdef CONFIG_NDS32
 #include <asm/vdso_timer_info.h>

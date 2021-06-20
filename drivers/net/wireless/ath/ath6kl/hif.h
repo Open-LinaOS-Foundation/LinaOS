@@ -21,7 +21,7 @@
 #include "common.h"
 #include "core.h"
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 #define BUS_REQUEST_MAX_NUM                64
 #define HIF_MBOX_BLOCK_SIZE                128

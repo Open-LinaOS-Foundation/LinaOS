@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2015, Sony Mobile Communications AB.
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
 
-#include <linux/rpmsg.h>
-#include <linux/soc/qcom/smd-rpm.h>
+#include <linaos/rpmsg.h>
+#include <linaos/soc/qcom/smd-rpm.h>
 
 #define RPM_REQUEST_TIMEOUT     (5 * HZ)
 

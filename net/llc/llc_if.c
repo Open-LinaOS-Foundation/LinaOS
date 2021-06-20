@@ -11,11 +11,11 @@
  *
  * See the GNU General Public License for more details.
  */
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/errno.h>
+#include <linaos/gfp.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/errno.h>
 #include <net/llc_if.h>
 #include <net/llc_sap.h>
 #include <net/llc_s_ev.h>

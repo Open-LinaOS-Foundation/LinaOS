@@ -2,7 +2,7 @@
 #ifndef __LINUX_SPI_EEPROM_H
 #define __LINUX_SPI_EEPROM_H
 
-#include <linux/memory.h>
+#include <linaos/memory.h>
 
 /*
  * Put one of these structures in platform_data for SPI EEPROMS handled

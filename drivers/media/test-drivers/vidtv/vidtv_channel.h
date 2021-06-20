@@ -22,7 +22,7 @@
 #ifndef VIDTV_CHANNEL_H
 #define VIDTV_CHANNEL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "vidtv_encoder.h"
 #include "vidtv_mux.h"

@@ -15,26 +15,26 @@
  * Trademarks are the property of their respective owners.
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/input/mt.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/input.h>
-#include <linux/uaccess.h>
-#include <linux/jiffies.h>
-#include <linux/completion.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/firmware.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/input/mt.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/input.h>
+#include <linaos/uaccess.h>
+#include <linaos/jiffies.h>
+#include <linaos/completion.h>
+#include <linaos/of.h>
+#include <linaos/property.h>
+#include <linaos/regulator/consumer.h>
 #include <asm/unaligned.h>
 
 #include "elan_i2c.h"
@@ -1440,7 +1440,7 @@ static const struct i2c_device_id elan_id[] = {
 MODULE_DEVICE_TABLE(i2c, elan_id);
 
 #ifdef CONFIG_ACPI
-#include <linux/input/elan-i2c-ids.h>
+#include <linaos/input/elan-i2c-ids.h>
 MODULE_DEVICE_TABLE(acpi, elan_acpi_id);
 #endif
 

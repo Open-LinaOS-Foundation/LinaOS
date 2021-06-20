@@ -4,12 +4,12 @@
  * All rights reserved.
  */
 
-#include <linux/debugfs.h>
-#include <linux/kthread.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/visorbus.h>
+#include <linaos/debugfs.h>
+#include <linaos/kthread.h>
+#include <linaos/idr.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/visorbus.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
@@ -430,13 +430,13 @@ static const char *visorhba_get_info(struct Scsi_Host *shp)
 }
 
 /*
- * dma_data_dir_linux_to_spar - convert dma_data_direction value to
+ * dma_data_dir_linaos_to_spar - convert dma_data_direction value to
  *				Unisys-specific equivalent
  * @d: dma direction value to convert
  *
  * Returns the Unisys-specific dma direction value corresponding to @d
  */
-static u32 dma_data_dir_linux_to_spar(enum dma_data_direction d)
+static u32 dma_data_dir_linaos_to_spar(enum dma_data_direction d)
 {
 	switch (d) {
 	case DMA_BIDIRECTIONAL:
@@ -501,7 +501,7 @@ static int visorhba_queue_command_lck(struct scsi_cmnd *scsicmd,
 	cmdrsp->scsi.vdest.lun = scsidev->lun;
 	/* save datadir */
 	cmdrsp->scsi.data_dir =
-		dma_data_dir_linux_to_spar(scsicmd->sc_data_direction);
+		dma_data_dir_linaos_to_spar(scsicmd->sc_data_direction);
 	memcpy(cmdrsp->scsi.cmnd, cdb, MAX_CMND_SIZE);
 	cmdrsp->scsi.bufflen = scsi_bufflen(scsicmd);
 
@@ -744,13 +744,13 @@ static int visorhba_serverdown(struct visorhba_devdata *devdata)
 }
 
 /*
- * do_scsi_linuxstat - Scsi command returned linuxstat
+ * do_scsi_linaosstat - Scsi command returned linaosstat
  * @cmdrsp:  Response from IOVM
  * @scsicmd: Command issued
  *
  * Don't log errors for disk-not-present inquiries.
  */
-static void do_scsi_linuxstat(struct uiscmdrsp *cmdrsp,
+static void do_scsi_linaosstat(struct uiscmdrsp *cmdrsp,
 			      struct scsi_cmnd *scsicmd)
 {
 	struct visordisk_info *vdisk;
@@ -761,7 +761,7 @@ static void do_scsi_linuxstat(struct uiscmdrsp *cmdrsp,
 
 	/* Do not log errors for disk-not-present inquiries */
 	if (cmdrsp->scsi.cmnd[0] == INQUIRY &&
-	    (host_byte(cmdrsp->scsi.linuxstat) == DID_NO_CONNECT) &&
+	    (host_byte(cmdrsp->scsi.linaosstat) == DID_NO_CONNECT) &&
 	    cmdrsp->scsi.addlstat == ADDL_SEL_TIMEOUT)
 		return;
 	/* Okay see what our error_count is here.... */
@@ -791,13 +791,13 @@ static int set_no_disk_inquiry_result(unsigned char *buf, size_t len,
 }
 
 /*
- * do_scsi_nolinuxstat - Scsi command didn't have linuxstat
+ * do_scsi_nolinaosstat - Scsi command didn't have linaosstat
  * @cmdrsp:  Response from IOVM
  * @scsicmd: Command issued
  *
- * Handle response when no linuxstat was returned.
+ * Handle response when no linaosstat was returned.
  */
-static void do_scsi_nolinuxstat(struct uiscmdrsp *cmdrsp,
+static void do_scsi_nolinaosstat(struct uiscmdrsp *cmdrsp,
 				struct scsi_cmnd *scsicmd)
 {
 	struct scsi_device *scsidev;
@@ -819,7 +819,7 @@ static void do_scsi_nolinuxstat(struct uiscmdrsp *cmdrsp,
 		if (!buf)
 			return;
 
-		/* Linux scsi code wants a device at Lun 0
+		/* LinaOS scsi code wants a device at Lun 0
 		 * to issue report luns, but we don't want
 		 * a disk there so we'll present a processor
 		 * there.
@@ -864,11 +864,11 @@ static void complete_scsi_command(struct uiscmdrsp *cmdrsp,
 				  struct scsi_cmnd *scsicmd)
 {
 	/* take what we need out of cmdrsp and complete the scsicmd */
-	scsicmd->result = cmdrsp->scsi.linuxstat;
-	if (cmdrsp->scsi.linuxstat)
-		do_scsi_linuxstat(cmdrsp, scsicmd);
+	scsicmd->result = cmdrsp->scsi.linaosstat;
+	if (cmdrsp->scsi.linaosstat)
+		do_scsi_linaosstat(cmdrsp, scsicmd);
 	else
-		do_scsi_nolinuxstat(cmdrsp, scsicmd);
+		do_scsi_nolinaosstat(cmdrsp, scsicmd);
 
 	scsicmd->scsi_done(scsicmd);
 }

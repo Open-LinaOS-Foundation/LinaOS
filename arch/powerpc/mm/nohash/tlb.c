@@ -12,7 +12,7 @@
  *                     IBM Corp.
  *
  *  Derived from arch/ppc/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -22,17 +22,17 @@
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/preempt.h>
-#include <linux/spinlock.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
-#include <linux/hugetlb.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/highmem.h>
+#include <linaos/pagemap.h>
+#include <linaos/preempt.h>
+#include <linaos/spinlock.h>
+#include <linaos/memblock.h>
+#include <linaos/of_fdt.h>
+#include <linaos/hugetlb.h>
 
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>
@@ -712,7 +712,7 @@ static void __init early_mmu_set_memory_limit(void)
 		 * Limit memory so we dont have linear faults.
 		 * Unlike memblock_set_current_limit, which limits
 		 * memory available during early boot, this permanently
-		 * reduces the memory available to Linux.  We need to
+		 * reduces the memory available to LinaOS.  We need to
 		 * do this because highmem is not supported on 64-bit.
 		 */
 		memblock_enforce_memory_limit(linear_map_top);
@@ -745,7 +745,7 @@ void setup_initial_memory_limit(phys_addr_t first_memblock_base,
 	 *
 	 * on FSL Embedded 64-bit, usually all RAM is bolted, but with
 	 * unusual memory sizes it's possible for some RAM to not be mapped
-	 * (such RAM is not used at all by Linux, since we don't support
+	 * (such RAM is not used at all by LinaOS, since we don't support
 	 * highmem on 64-bit).  We limit ppc64_rma_size to what would be
 	 * mappable if this memblock is the only one.  Additional memblocks
 	 * can only increase, not decrease, the amount that ends up getting

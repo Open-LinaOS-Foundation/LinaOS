@@ -13,7 +13,7 @@
   * Matt Thomas (matt@3am-software.com).
   */
 
-#include <linux/timer.h>
+#include <linaos/timer.h>
 
 /*
  * basic definitions used in lmc include files

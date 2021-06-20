@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2010, 2014 The Linux Foundation. All rights reserved.  */
+/* Copyright (c) 2010, 2014 The LinaOS Foundation. All rights reserved.  */
 
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
 
 #include <asm/dcc.h>
 #include <asm/processor.h>

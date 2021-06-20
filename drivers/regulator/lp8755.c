@@ -7,18 +7,18 @@
  * Author: Daniel(Geon Si) Jeong <daniel.jeong@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/regmap.h>
-#include <linux/uaccess.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/platform_data/lp8755.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/gpio.h>
+#include <linaos/regmap.h>
+#include <linaos/uaccess.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/platform_data/lp8755.h>
 
 #define LP8755_REG_BUCK0	0x00
 #define LP8755_REG_BUCK1	0x03

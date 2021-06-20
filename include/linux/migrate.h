@@ -2,10 +2,10 @@
 #ifndef _LINUX_MIGRATE_H
 #define _LINUX_MIGRATE_H
 
-#include <linux/mm.h>
-#include <linux/mempolicy.h>
-#include <linux/migrate_mode.h>
-#include <linux/hugetlb.h>
+#include <linaos/mm.h>
+#include <linaos/mempolicy.h>
+#include <linaos/migrate_mode.h>
+#include <linaos/hugetlb.h>
 
 typedef struct page *new_page_t(struct page *page, unsigned long private);
 typedef void free_page_t(struct page *page, unsigned long private);

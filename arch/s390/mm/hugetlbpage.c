@@ -9,11 +9,11 @@
 #define KMSG_COMPONENT "hugetlb"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/mman.h>
-#include <linux/sched/mm.h>
-#include <linux/security.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/mman.h>
+#include <linaos/sched/mm.h>
+#include <linaos/security.h>
 
 /*
  * If the bit selected by single-bit bitmask "a" is set within "x", move

@@ -4,16 +4,16 @@
  * Copyright (c) 2011 Jonathan Cameron
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/of.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/types.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/hwmon.h>
+#include <linaos/of.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/iio/consumer.h>
+#include <linaos/iio/types.h>
 
 /**
  * struct iio_hwmon_state - device instance state

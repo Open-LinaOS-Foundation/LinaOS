@@ -6,12 +6,12 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/component.h>
-#include <linux/kfifo.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
+#include <linaos/component.h>
+#include <linaos/kfifo.h>
+#include <linaos/module.h>
+#include <linaos/of_graph.h>
+#include <linaos/of_reserved_mem.h>
+#include <linaos/platform_device.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_drv.h>

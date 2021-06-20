@@ -8,7 +8,7 @@
 #include <osdep_service.h>
 #include <drv_types.h>
 #include <rtl8188e_hal.h>
-#include <usb_ops_linux.h>
+#include <usb_ops_linaos.h>
 
 void sw_led_on(struct adapter *padapter, struct LED_871x *pLed)
 {

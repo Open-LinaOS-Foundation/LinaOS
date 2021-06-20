@@ -2,8 +2,8 @@
 /*
  *  acpi.c - Architecture-Specific Low-Level ACPI Support
  *
- *  Copyright (C) 1999 VA Linux Systems
- *  Copyright (C) 1999,2000 Walt Drummond <drummond@valinux.com>
+ *  Copyright (C) 1999 VA LinaOS Systems
+ *  Copyright (C) 1999,2000 Walt Drummond <drummond@valinaos.com>
  *  Copyright (C) 2000, 2002-2003 Hewlett-Packard Co.
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  *  Copyright (C) 2000 Intel Corp.
@@ -15,19 +15,19 @@
  *  Copyright (C) 2004 Ashok Raj <ashok.raj@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/mmzone.h>
-#include <linux/nodemask.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/irq.h>
+#include <linaos/acpi.h>
+#include <linaos/efi.h>
+#include <linaos/mmzone.h>
+#include <linaos/nodemask.h>
+#include <linaos/slab.h>
 #include <acpi/processor.h>
 #include <asm/io.h>
 #include <asm/iosapic.h>

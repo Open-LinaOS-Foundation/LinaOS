@@ -8,7 +8,7 @@
  * http://ccr.sigcomm.org/archive/1995/jan95/ccr-9501-partridge87.pdf
  */
 
-#include <linux/net.h>
+#include <linaos/net.h>
 #include "ar-internal.h"
 
 #define RXRPC_RTO_MAX	((unsigned)(120 * HZ))
@@ -110,7 +110,7 @@ static void rxrpc_set_rto(struct rxrpc_peer *peer)
 	 *    It cannot be less due to utterly erratic ACK generation made
 	 *    at least by solaris and freebsd. "Erratic ACKs" has _nothing_
 	 *    to do with delayed acks, because at cwnd>2 true delack timeout
-	 *    is invisible. Actually, Linux-2.4 also generates erratic
+	 *    is invisible. Actually, LinaOS-2.4 also generates erratic
 	 *    ACKs in some circumstances.
 	 */
 	rto = __rxrpc_set_rto(peer);

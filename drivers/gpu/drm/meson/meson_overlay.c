@@ -5,7 +5,7 @@
  * Copyright (C) 2015 Amlogic, Inc. All rights reserved.
  */
 
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

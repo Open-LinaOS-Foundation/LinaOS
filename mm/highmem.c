@@ -17,19 +17,19 @@
  * Copyright (C) 1999 Ingo Molnar <mingo@redhat.com>
  */
 
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/swap.h>
-#include <linux/bio.h>
-#include <linux/pagemap.h>
-#include <linux/mempool.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/hash.h>
-#include <linux/highmem.h>
-#include <linux/kgdb.h>
+#include <linaos/mm.h>
+#include <linaos/export.h>
+#include <linaos/swap.h>
+#include <linaos/bio.h>
+#include <linaos/pagemap.h>
+#include <linaos/mempool.h>
+#include <linaos/blkdev.h>
+#include <linaos/init.h>
+#include <linaos/hash.h>
+#include <linaos/highmem.h>
+#include <linaos/kgdb.h>
 #include <asm/tlbflush.h>
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 
 /*
  * Virtual_count is not a pure "count".

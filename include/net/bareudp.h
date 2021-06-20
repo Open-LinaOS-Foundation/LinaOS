@@ -3,8 +3,8 @@
 #ifndef __NET_BAREUDP_H
 #define __NET_BAREUDP_H
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
+#include <linaos/types.h>
+#include <linaos/skbuff.h>
 #include <net/rtnetlink.h>
 
 struct bareudp_conf {

@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#include <linux/err.h>
+#include <linaos/err.h>
 
 #include <bpf/bpf.h>
 #include <bpf/btf.h>
@@ -18,7 +18,7 @@
 
 static const struct btf_type *map_info_type;
 static __u32 map_info_alloc_len;
-static struct btf *btf_vmlinux;
+static struct btf *btf_vmlinaos;
 static __s32 map_info_type_id;
 
 struct res {
@@ -26,16 +26,16 @@ struct res {
 	unsigned int nr_errs;
 };
 
-static const struct btf *get_btf_vmlinux(void)
+static const struct btf *get_btf_vmlinaos(void)
 {
-	if (btf_vmlinux)
-		return btf_vmlinux;
+	if (btf_vmlinaos)
+		return btf_vmlinaos;
 
-	btf_vmlinux = libbpf_find_kernel_btf();
-	if (IS_ERR(btf_vmlinux))
+	btf_vmlinaos = libbpf_find_kernel_btf();
+	if (IS_ERR(btf_vmlinaos))
 		p_err("struct_ops requires kernel CONFIG_DEBUG_INFO_BTF=y");
 
-	return btf_vmlinux;
+	return btf_vmlinaos;
 }
 
 static const char *get_kern_struct_ops_name(const struct bpf_map_info *info)
@@ -44,11 +44,11 @@ static const char *get_kern_struct_ops_name(const struct bpf_map_info *info)
 	const struct btf_type *t;
 	const char *st_ops_name;
 
-	kern_btf = get_btf_vmlinux();
+	kern_btf = get_btf_vmlinaos();
 	if (IS_ERR(kern_btf))
-		return "<btf_vmlinux_not_found>";
+		return "<btf_vmlinaos_not_found>";
 
-	t = btf__type_by_id(kern_btf, info->btf_vmlinux_value_type_id);
+	t = btf__type_by_id(kern_btf, info->btf_vmlinaos_value_type_id);
 	st_ops_name = btf__name_by_offset(kern_btf, t->name_off);
 	st_ops_name += strlen(STRUCT_OPS_VALUE_PREFIX);
 
@@ -62,7 +62,7 @@ static __s32 get_map_info_type_id(void)
 	if (map_info_type_id)
 		return map_info_type_id;
 
-	kern_btf = get_btf_vmlinux();
+	kern_btf = get_btf_vmlinaos();
 	if (IS_ERR(kern_btf)) {
 		map_info_type_id = PTR_ERR(kern_btf);
 		return map_info_type_id;
@@ -71,7 +71,7 @@ static __s32 get_map_info_type_id(void)
 	map_info_type_id = btf__find_by_name_kind(kern_btf, "bpf_map_info",
 						  BTF_KIND_STRUCT);
 	if (map_info_type_id < 0) {
-		p_err("can't find bpf_map_info from btf_vmlinux");
+		p_err("can't find bpf_map_info from btf_vmlinaos");
 		return map_info_type_id;
 	}
 	map_info_type = btf__type_by_id(kern_btf, map_info_type_id);
@@ -364,10 +364,10 @@ static int __do_dump(int fd, const struct bpf_map_info *info, void *data,
 	kern_btf = d->btf;
 
 	/* The kernel supporting BPF_MAP_TYPE_STRUCT_OPS must have
-	 * btf_vmlinux_value_type_id.
+	 * btf_vmlinaos_value_type_id.
 	 */
 	struct_ops_type = btf__type_by_id(kern_btf,
-					  info->btf_vmlinux_value_type_id);
+					  info->btf_vmlinaos_value_type_id);
 	struct_ops_name = btf__name_by_offset(kern_btf,
 					      struct_ops_type->name_off);
 	value = calloc(1, info->value_size);
@@ -390,7 +390,7 @@ static int __do_dump(int fd, const struct bpf_map_info *info, void *data,
 
 	jsonw_start_object(wtr);
 	jsonw_name(wtr, struct_ops_name);
-	btf_dumper_type(d, info->btf_vmlinux_value_type_id, value);
+	btf_dumper_type(d, info->btf_vmlinaos_value_type_id, value);
 	jsonw_end_object(wtr);
 
 	free(value);
@@ -414,7 +414,7 @@ static int do_dump(int argc, char **argv)
 		search_term = GET_ARG();
 	}
 
-	kern_btf = get_btf_vmlinux();
+	kern_btf = get_btf_vmlinaos();
 	if (IS_ERR(kern_btf))
 		return -1;
 
@@ -596,8 +596,8 @@ int do_struct_ops(int argc, char **argv)
 
 	err = cmd_select(cmds, argc, argv, do_help);
 
-	if (!IS_ERR(btf_vmlinux))
-		btf__free(btf_vmlinux);
+	if (!IS_ERR(btf_vmlinaos))
+		btf__free(btf_vmlinaos);
 
 	return err;
 }

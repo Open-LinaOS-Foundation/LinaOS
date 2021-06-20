@@ -32,9 +32,9 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/of_fdt.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/of_fdt.h>
+#include <linaos/memblock.h>
 
 #include <asm/idle.h>
 #include <asm/reboot.h>
@@ -53,7 +53,7 @@ struct nlm_soc_info nlm_nodes[NLM_NR_NODES];
 cpumask_t nlm_cpumask = CPU_MASK_CPU0;
 unsigned int nlm_threads_per_core;
 
-static void nlm_linux_exit(void)
+static void nlm_linaos_exit(void)
 {
 	uint64_t sysbase = nlm_get_node(0)->sysbase;
 
@@ -103,9 +103,9 @@ void __init plat_mem_setup(void)
 
 	register_smp_ops(&nlm_smp_ops);
 #endif
-	_machine_restart = (void (*)(char *))nlm_linux_exit;
-	_machine_halt	= nlm_linux_exit;
-	pm_power_off	= nlm_linux_exit;
+	_machine_restart = (void (*)(char *))nlm_linaos_exit;
+	_machine_halt	= nlm_linaos_exit;
+	pm_power_off	= nlm_linaos_exit;
 
 	/* memory and bootargs from DT */
 	xlp_early_init_devtree();

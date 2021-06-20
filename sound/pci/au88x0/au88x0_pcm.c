@@ -9,7 +9,7 @@
  * It remains stuck,and DMA transfers do not happen. 
  */
 #include <sound/asoundef.h>
-#include <linux/time.h>
+#include <linaos/time.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

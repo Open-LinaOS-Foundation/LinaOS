@@ -17,7 +17,7 @@
  * this warranty disclaimer.
  */
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 #include "main.h"
 #include "11n.h"

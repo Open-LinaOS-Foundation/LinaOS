@@ -7,21 +7,21 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/fsl/ftm.h>
-#include <linux/rtc.h>
-#include <linux/time.h>
-#include <linux/acpi.h>
-#include <linux/pm_wakeirq.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/module.h>
+#include <linaos/fsl/ftm.h>
+#include <linaos/rtc.h>
+#include <linaos/time.h>
+#include <linaos/acpi.h>
+#include <linaos/pm_wakeirq.h>
 
 #define FTM_SC_CLK(c)		((c) << FTM_SC_CLK_MASK_SHIFT)
 

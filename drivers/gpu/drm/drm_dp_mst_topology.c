@@ -20,22 +20,22 @@
  * OF THIS SOFTWARE.
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/iopoll.h>
+#include <linaos/bitfield.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/random.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/iopoll.h>
 
 #if IS_ENABLED(CONFIG_DRM_DEBUG_DP_MST_TOPOLOGY_REFS)
-#include <linux/stacktrace.h>
-#include <linux/sort.h>
-#include <linux/timekeeping.h>
-#include <linux/math64.h>
+#include <linaos/stacktrace.h>
+#include <linaos/sort.h>
+#include <linaos/timekeeping.h>
+#include <linaos/math64.h>
 #endif
 
 #include <drm/drm_atomic.h>

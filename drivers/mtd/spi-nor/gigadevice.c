@@ -4,7 +4,7 @@
  * Copyright (C) 2014, Freescale Semiconductor, Inc.
  */
 
-#include <linux/mtd/spi-nor.h>
+#include <linaos/mtd/spi-nor.h>
 
 #include "core.h"
 

@@ -7,8 +7,8 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/firmware.h>
-#include <linux/greybus.h>
+#include <linaos/firmware.h>
+#include <linaos/greybus.h>
 #include "firmware.h"
 #include "spilib.h"
 

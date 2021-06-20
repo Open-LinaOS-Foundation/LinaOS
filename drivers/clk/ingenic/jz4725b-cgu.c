@@ -6,9 +6,9 @@
  * Author: Paul Cercueil <paul@crapouillou.net>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/of.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
 
 #include <dt-bindings/clock/jz4725b-cgu.h>
 

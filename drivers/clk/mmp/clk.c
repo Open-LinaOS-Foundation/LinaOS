@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/io.h>
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/io.h>
+#include <linaos/clk-provider.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 
 #include "clk.h"
 

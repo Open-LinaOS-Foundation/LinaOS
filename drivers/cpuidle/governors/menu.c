@@ -5,19 +5,19 @@
  * Copyright (C) 2006-2007 Adam Belay <abelay@novell.com>
  * Copyright (C) 2009 Intel Corporation
  * Author:
- *        Arjan van de Ven <arjan@linux.intel.com>
+ *        Arjan van de Ven <arjan@linaos.intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/cpuidle.h>
-#include <linux/time.h>
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/stat.h>
-#include <linux/math64.h>
+#include <linaos/kernel.h>
+#include <linaos/cpuidle.h>
+#include <linaos/time.h>
+#include <linaos/ktime.h>
+#include <linaos/hrtimer.h>
+#include <linaos/tick.h>
+#include <linaos/sched.h>
+#include <linaos/sched/loadavg.h>
+#include <linaos/sched/stat.h>
+#include <linaos/math64.h>
 
 #define BUCKETS 12
 #define INTERVAL_SHIFT 3

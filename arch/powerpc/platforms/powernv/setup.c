@@ -7,24 +7,24 @@
 
 #undef DEBUG
 
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/interrupt.h>
-#include <linux/bug.h>
-#include <linux/pci.h>
-#include <linux/cpufreq.h>
-#include <linux/memblock.h>
+#include <linaos/cpu.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/tty.h>
+#include <linaos/reboot.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/seq_file.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/interrupt.h>
+#include <linaos/bug.h>
+#include <linaos/pci.h>
+#include <linaos/cpufreq.h>
+#include <linaos/memblock.h>
 
 #include <asm/machdep.h>
 #include <asm/firmware.h>

@@ -11,8 +11,8 @@
 #include <crypto/algapi.h>
 #include <crypto/internal/cipher.h>
 #include <crypto/skcipher.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
 
 struct aead_request;
 struct rtattr;

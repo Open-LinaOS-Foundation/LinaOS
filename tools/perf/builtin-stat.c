@@ -32,7 +32,7 @@
  *
  * Improvements and fixes by:
  *
- *   Arjan van de Ven <arjan@linux.intel.com>
+ *   Arjan van de Ven <arjan@linaos.intel.com>
  *   Yanmin Zhang <yanmin.zhang@intel.com>
  *   Wu Fengguang <fengguang.wu@intel.com>
  *   Mike Galbraith <efault@gmx.de>
@@ -73,8 +73,8 @@
 #include "util/pmu-hybrid.h"
 #include "asm/bug.h"
 
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <linaos/time64.h>
+#include <linaos/zalloc.h>
 #include <api/fs/fs.h>
 #include <errno.h>
 #include <signal.h>
@@ -89,9 +89,9 @@
 #include <unistd.h>
 #include <sys/time.h>
 #include <sys/resource.h>
-#include <linux/err.h>
+#include <linaos/err.h>
 
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 #include <perf/evlist.h>
 
 #define DEFAULT_SEPARATOR	" "

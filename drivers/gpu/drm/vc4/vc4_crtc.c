@@ -29,9 +29,9 @@
  * ones that set the clock.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/of_device.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/of_device.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

@@ -11,7 +11,7 @@
 #ifndef PAGEBLOCK_FLAGS_H
 #define PAGEBLOCK_FLAGS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define PB_migratetype_bits 3
 /* Bit indices that affect a whole block of pages */

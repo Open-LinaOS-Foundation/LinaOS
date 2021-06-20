@@ -10,15 +10,15 @@
  *          Rolf Neugebauer <rolf.neugebauer@netronome.com>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/lockdep.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/msi.h>
-#include <linux/random.h>
-#include <linux/rtnetlink.h>
+#include <linaos/etherdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/lockdep.h>
+#include <linaos/pci.h>
+#include <linaos/pci_regs.h>
+#include <linaos/msi.h>
+#include <linaos/random.h>
+#include <linaos/rtnetlink.h>
 
 #include "nfpcore/nfp.h"
 #include "nfpcore/nfp_cpp.h"

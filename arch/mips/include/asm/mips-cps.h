@@ -7,8 +7,8 @@
 #ifndef __MIPS_ASM_MIPS_CPS_H__
 #define __MIPS_ASM_MIPS_CPS_H__
 
-#include <linux/io.h>
-#include <linux/types.h>
+#include <linaos/io.h>
+#include <linaos/types.h>
 
 #include <asm/mips-boards/launch.h>
 

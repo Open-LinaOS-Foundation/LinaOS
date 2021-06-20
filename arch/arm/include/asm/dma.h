@@ -19,8 +19,8 @@
  * This is used to support drivers written for the x86 ISA DMA API.
  * It should not be re-used except for that purpose.
  */
-#include <linux/spinlock.h>
-#include <linux/scatterlist.h>
+#include <linaos/spinlock.h>
+#include <linaos/scatterlist.h>
 
 #include <mach/isa-dma.h>
 

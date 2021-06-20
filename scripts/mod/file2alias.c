@@ -50,7 +50,7 @@ typedef struct {
 /* Big exception to the "don't include kernel headers into userspace, which
  * even potentially has different endianness and word sizes, since
  * we handle those differences explicitly below */
-#include "../../include/linux/mod_devicetable.h"
+#include "../../include/linaos/mod_devicetable.h"
 
 /* This array collects all instances that use the generic do_table */
 struct devtable {

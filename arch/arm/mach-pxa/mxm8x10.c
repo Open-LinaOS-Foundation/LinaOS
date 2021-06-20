@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/mxm8x10.c
+ * linaos/arch/arm/mach-pxa/mxm8x10.c
  *
  * Support for the Embedian MXM-8x10 Computer on Module
  *
@@ -16,16 +16,16 @@
  *             rework for upstream merge
  */
 
-#include <linux/serial_8250.h>
-#include <linux/dm9000.h>
-#include <linux/gpio/machine.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/serial_8250.h>
+#include <linaos/dm9000.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/platform_data/i2c-pxa.h>
 
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <linaos/platform_data/mtd-nand-pxa3xx.h>
 
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
 #include "pxa320.h"
 
 #include "mxm8x10.h"

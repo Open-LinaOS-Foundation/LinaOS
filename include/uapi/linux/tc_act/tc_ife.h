@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __UAPI_TC_IFE_H
 #define __UAPI_TC_IFE_H
 
-#include <linux/types.h>
-#include <linux/pkt_cls.h>
-#include <linux/ife.h>
+#include <linaos/types.h>
+#include <linaos/pkt_cls.h>
+#include <linaos/ife.h>
 
 /* Flag bits for now just encoding/decoding; mutually exclusive */
 #define IFE_ENCODE 1

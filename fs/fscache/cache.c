@@ -6,8 +6,8 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL CACHE
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include "internal.h"
 
 LIST_HEAD(fscache_cache_list);

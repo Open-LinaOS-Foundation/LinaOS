@@ -2,7 +2,7 @@
 #ifndef __ASM_SH_CACHE_INSNS_32_H
 #define __ASM_SH_CACHE_INSNS_32_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #if defined(CONFIG_CPU_SH4A)
 #define __icbi(addr)	__asm__ __volatile__ ( "icbi @%0\n\t" : : "r" (addr))

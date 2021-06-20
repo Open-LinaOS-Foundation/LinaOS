@@ -32,11 +32,11 @@ patternProperties:
         label:
           description: Descriptive name of the key.
 
-        linux,code:
+        linaos,code:
           description: Key / Axis code to emit.
           $ref: /schemas/types.yaml#/definitions/uint32
 
-        linux,input-type:
+        linaos,input-type:
           description:
             Specify event type this button/key generates. If not specified defaults to
             <1> == EV_KEY.
@@ -44,17 +44,17 @@ patternProperties:
 
           default: 1
 
-        linux,input-value:
+        linaos,input-value:
           description: |
-            If linux,input-type is EV_ABS or EV_REL then this
+            If linaos,input-type is EV_ABS or EV_REL then this
             value is sent for events this button generates when pressed.
             EV_ABS/EV_REL axis will generate an event with a value of 0
-            when all buttons with linux,input-type == type and
-            linux,code == axis are released. This value is interpreted
+            when all buttons with linaos,input-type == type and
+            linaos,code == axis are released. This value is interpreted
             as a signed 32 bit value, e.g. to make a button generate a
             value of -1 use:
 
-            linux,input-value = <0xffffffff>; /* -1 */
+            linaos,input-value = <0xffffffff>; /* -1 */
 
           $ref: /schemas/types.yaml#/definitions/uint32
 
@@ -74,7 +74,7 @@ patternProperties:
             deasserted, or both. This property is only valid for keys that wake up the
             system (e.g., when the "wakeup-source" property is also provided).
 
-            Supported values are defined in linux-event-codes.h:
+            Supported values are defined in linaos-event-codes.h:
 
               EV_ACT_ANY        - both asserted and deasserted
               EV_ACT_ASSERTED   - asserted
@@ -82,7 +82,7 @@ patternProperties:
           $ref: /schemas/types.yaml#/definitions/uint32
           enum: [0, 1, 2]
 
-        linux,can-disable:
+        linaos,can-disable:
           description:
             Indicates that button is connected to dedicated (not shared) interrupt
             which can be disabled to suppress events from the button.
@@ -95,7 +95,7 @@ patternProperties:
           maxItems: 1
 
       required:
-        - linux,code
+        - linaos,code
 
       anyOf:
         - required:
@@ -105,7 +105,7 @@ patternProperties:
 
       dependencies:
         wakeup-event-action: [ wakeup-source ]
-        linux,input-value: [ gpios ]
+        linaos,input-value: [ gpios ]
 
       unevaluatedProperties: false
 
@@ -135,13 +135,13 @@ examples:
 
         up {
             label = "GPIO Key UP";
-            linux,code = <103>;
+            linaos,code = <103>;
             gpios = <&gpio1 0 1>;
         };
 
         down {
             label = "GPIO Key DOWN";
-            linux,code = <108>;
+            linaos,code = <108>;
             interrupts = <1 IRQ_TYPE_LEVEL_HIGH 7>;
         };
     };

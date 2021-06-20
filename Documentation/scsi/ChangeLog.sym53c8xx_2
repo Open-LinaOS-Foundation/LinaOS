@@ -16,7 +16,7 @@ Sun Jan 14 22:30 2001 Gerard Roudier
 Wed Jan 17 23:30 2001 Gerard Roudier 
 	* version sym-2.1.3-20010117
 	- Wrong residual values were returned in some situations.
-	  This broke cdrecord with linux-2.4.0, for example.
+	  This broke cdrecord with linaos-2.4.0, for example.
 
 Sat Jan 20 18:00 2001 Gerard Roudier 
 	* version sym-2.1.4-20010120
@@ -26,7 +26,7 @@ Sat Jan 20 18:00 2001 Gerard Roudier
 
 Wed Jan 24 21:00 2001 Gerard Roudier 
 	* version sym-2.1.5-20010124
-	- Make the driver work under Linux-2.4.x when statically linked 
+	- Make the driver work under LinaOS-2.4.x when statically linked 
 	  with the kernel.
 	- Check against memory allocation failure for SCRIPTZ and add the 
 	  missing free of this memory on instance detach.
@@ -54,7 +54,7 @@ Sat Mar 3 21:00 2001 Gerard Roudier
 	  This allows to share the corresponding code with NetBSD 
 	  without polluating the core driver source (sym_hipd.c).
 	- Add optionnal code that handles IO timeouts from the driver.
-	  (not used under Linux, but required for NetBSD)
+	  (not used under LinaOS, but required for NetBSD)
 	- Donnot assume any longer that PAGE_SHIFT and PAGE_SIZE are 
 	  defined at compile time, as at least NetBSD uses variables 
 	  in memory for that.
@@ -76,7 +76,7 @@ Tues Apr 10 21:00 2001 Gerard Roudier
 	- Add DT/ST (double/simple transition) in the transfer 
 	  negotiation announce.
 	- Forces the max number of tasks per LUN to at least 64.
-	- Use pci_set_dma_mask() for linux-2.4.3 and above.
+	- Use pci_set_dma_mask() for linaos-2.4.3 and above.
 	- A couple of comments fixes.
 
 Wed May 22:00 2001 Gerard Roudier 
@@ -87,12 +87,12 @@ Wed May 22:00 2001 Gerard Roudier
 	- Define the number of PQS BUSes supported.
 	  Fix sent by Stig Telfer <stig@api-networks.com>
 	- Miscellaneous common code rearrangements due to NetBSD accel 
-	  ioctl support, without impact on Linux (hopefully).
+	  ioctl support, without impact on LinaOS (hopefully).
 
 Mon July 2 12:00 2001 Gerard Roudier 
 	* version sym-2.1.11-20010702
 	- Add Tekram 390 U2B/U2W SCSI LED handling.
-	  Submitted by Chip Salzenberg <chip@valinux.com>
+	  Submitted by Chip Salzenberg <chip@valinaos.com>
 	- Add call to scsi_set_pci_device() for kernels >= 2.4.4.
 	- Check pci dma mapping failures and complete the IO with some 
 	  error when such mapping fails.
@@ -119,7 +119,7 @@ Sat Sep 22 12:00 2001 Gerard Roudier
 
 Sun Sep 30 17:00 2001 Gerard Roudier 
 	* version sym-2.1.15-20010930
-	- Include <linux/module.h> unconditionnaly as expected by latest
+	- Include <linaos/module.h> unconditionnaly as expected by latest
 	  kernels.
 	- Use del_timer_sync() for recent kernels to kill the driver timer 
 	  on module release.
@@ -127,7 +127,7 @@ Sun Sep 30 17:00 2001 Gerard Roudier
 Sun Oct 28 15:00 2001 Gerard Roudier 
 	* version sym-2.1.16-20011028
 	- Slightly simplify driver configuration.
-	- Prepare a new patch against linux-2.4.13.
+	- Prepare a new patch against linaos-2.4.13.
 
 Sat Nov 17 10:00 2001 Gerard Roudier 
 	* version sym-2.1.17

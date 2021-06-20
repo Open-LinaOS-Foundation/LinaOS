@@ -2,10 +2,10 @@
 
 #ifndef __WCD934X_H__
 #define __WCD934X_H__
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regmap.h>
-#include <linux/slimbus.h>
+#include <linaos/clk.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/regmap.h>
+#include <linaos/slimbus.h>
 
 #define WCD934X_MAX_SUPPLY	5
 

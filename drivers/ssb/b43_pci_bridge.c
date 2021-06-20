@@ -12,9 +12,9 @@
 
 #include "ssb_private.h"
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/ssb/ssb.h>
+#include <linaos/pci.h>
+#include <linaos/module.h>
+#include <linaos/ssb/ssb.h>
 
 
 static const struct pci_device_id b43_pci_bridge_tbl[] = {

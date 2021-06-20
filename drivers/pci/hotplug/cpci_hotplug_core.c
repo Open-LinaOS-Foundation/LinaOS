@@ -11,17 +11,17 @@
  * Send feedback to <scottm@somanetworks.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/atomic.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/pci_hotplug.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/atomic.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
 #include "cpci_hotplug.h"
 
 #define DRIVER_AUTHOR	"Scott Murray <scottm@somanetworks.com>"

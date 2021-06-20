@@ -9,8 +9,8 @@
  * 	Rohit Seth <rohit.seth@intel.com>
  * 	Suresh Siddha <suresh.b.siddha@intel.com>
  * 	Gordon Jin <gordon.jin@intel.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA LinaOS Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@valinaos.com>
  *
  * 12/26/04 S.Siddha, G.Jin, R.Seth
  *			Add multi-threading and multi-core detection
@@ -23,35 +23,35 @@
  * 06/24/99 W.Drummond	added boot_cpu_data.
  * 05/28/05 Z. Menyhart	Dynamic stride size for "flush_icache_range()"
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 
-#include <linux/acpi.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/cpu.h>
-#include <linux/kdev_t.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/reboot.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/task_stack.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/threads.h>
-#include <linux/screen_info.h>
-#include <linux/dmi.h>
-#include <linux/root_dev.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/efi.h>
-#include <linux/initrd.h>
-#include <linux/pm.h>
-#include <linux/cpufreq.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
+#include <linaos/acpi.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/cpu.h>
+#include <linaos/kdev_t.h>
+#include <linaos/kernel.h>
+#include <linaos/memblock.h>
+#include <linaos/reboot.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/clock.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/seq_file.h>
+#include <linaos/string.h>
+#include <linaos/threads.h>
+#include <linaos/screen_info.h>
+#include <linaos/dmi.h>
+#include <linaos/root_dev.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/efi.h>
+#include <linaos/initrd.h>
+#include <linaos/pm.h>
+#include <linaos/cpufreq.h>
+#include <linaos/kexec.h>
+#include <linaos/crash_dump.h>
 
 #include <asm/mca.h>
 #include <asm/meminit.h>
@@ -628,7 +628,7 @@ setup_arch (char **cmdline_p)
 
 	/*
 	 * Default to /dev/sda2.  This assumes that the EFI partition
-	 * is physical disk 1 partition 1 and the Linux root disk is
+	 * is physical disk 1 partition 1 and the LinaOS root disk is
 	 * physical disk 1 partition 2.
 	 */
 	ROOT_DEV = Root_SDA2;		/* default to second partition on first drive */

@@ -9,11 +9,11 @@
  * http://www.samsung.com/
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
 #include "s5p_mfc_common.h"
 #include "s5p_mfc_debug.h"
 #include "s5p_mfc_intr.h"

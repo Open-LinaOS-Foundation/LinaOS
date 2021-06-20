@@ -9,10 +9,10 @@
  * License version 2.  This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <linaos/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
 #include <plat/orion-gpio.h>
 #include <plat/irq.h>
 #include <asm/exception.h>

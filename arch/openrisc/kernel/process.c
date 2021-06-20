@@ -2,7 +2,7 @@
 /*
  * OpenRISC process.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -16,32 +16,32 @@
 #define __KERNEL_SYSCALLS__
 #include <stdarg.h>
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/elfcore.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init_task.h>
-#include <linux/mqueue.h>
-#include <linux/fs.h>
-#include <linux/reboot.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/elfcore.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/init_task.h>
+#include <linaos/mqueue.h>
+#include <linaos/fs.h>
+#include <linaos/reboot.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <asm/spr_defs.h>
 
-#include <linux/smp.h>
+#include <linaos/smp.h>
 
 /*
  * Pointer to Current thread info structure.

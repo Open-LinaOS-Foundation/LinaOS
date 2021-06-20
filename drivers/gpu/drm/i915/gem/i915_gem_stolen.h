@@ -6,7 +6,7 @@
 #ifndef __I915_GEM_STOLEN_H__
 #define __I915_GEM_STOLEN_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_private;
 struct drm_mm_node;

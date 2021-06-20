@@ -10,13 +10,13 @@
 #ifndef _SPARC_BITOPS_H
 #define _SPARC_BITOPS_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/byteorder.h>
 
 #ifdef __KERNEL__
 
 #ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#error only <linaos/bitops.h> can be included directly
 #endif
 
 unsigned long ___set_bit(unsigned long *addr, unsigned long mask);

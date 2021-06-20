@@ -6,10 +6,10 @@
  * for more details.
  *
  */
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/vgaarb.h>
+#include <linaos/fb.h>
+#include <linaos/pci.h>
+#include <linaos/module.h>
+#include <linaos/vgaarb.h>
 
 int fb_is_primary_device(struct fb_info *info)
 {

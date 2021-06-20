@@ -8,15 +8,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/audit.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if_arp.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_AUDIT.h>
-#include <linux/netfilter_bridge/ebtables.h>
+#include <linaos/audit.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/if_arp.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter/xt_AUDIT.h>
+#include <linaos/netfilter_bridge/ebtables.h>
 #include <net/ipv6.h>
 #include <net/ip.h>
 

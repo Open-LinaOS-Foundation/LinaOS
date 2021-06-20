@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/asm-generic/pci.h
+ * linaos/include/asm-generic/pci.h
  *
  *  Copyright (C) 2003 Russell King
  */

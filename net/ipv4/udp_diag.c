@@ -6,12 +6,12 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/inet_diag.h>
-#include <linux/udp.h>
+#include <linaos/module.h>
+#include <linaos/inet_diag.h>
+#include <linaos/udp.h>
 #include <net/udp.h>
 #include <net/udplite.h>
-#include <linux/sock_diag.h>
+#include <linaos/sock_diag.h>
 
 static int sk_diag_dump(struct sock *sk, struct sk_buff *skb,
 			struct netlink_callback *cb,

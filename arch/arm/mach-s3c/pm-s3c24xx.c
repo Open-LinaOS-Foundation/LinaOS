@@ -11,15 +11,15 @@
 //
 // Thanks to Dimitry Andric for debugging
 
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/suspend.h>
+#include <linaos/errno.h>
+#include <linaos/time.h>
+#include <linaos/gpio.h>
+#include <linaos/interrupt.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/io.h>
 
 #include "regs-clock.h"
 #include "regs-gpio.h"

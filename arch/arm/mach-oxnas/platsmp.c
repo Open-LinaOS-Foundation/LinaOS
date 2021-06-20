@@ -5,10 +5,10 @@
  * Copyright (C) 2002 ARM Ltd.
  * All Rights Reserved
  */
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

@@ -24,7 +24,7 @@
 #ifndef SMU_V11_I2C_CONTROL_H
 #define SMU_V11_I2C_CONTROL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct i2c_adapter;
 

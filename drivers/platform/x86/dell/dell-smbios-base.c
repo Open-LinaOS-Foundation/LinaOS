@@ -11,14 +11,14 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/capability.h>
+#include <linaos/dmi.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 #include "dell-smbios.h"
 
 static u32 da_supported_commands;

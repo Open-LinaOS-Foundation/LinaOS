@@ -13,14 +13,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/cache.h>
+#include <linaos/module.h>
+#include <linaos/moduleloader.h>
+#include <linaos/elf.h>
+#include <linaos/vmalloc.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/cache.h>
 
 static int
 decode_calln_opcode (unsigned char *location)

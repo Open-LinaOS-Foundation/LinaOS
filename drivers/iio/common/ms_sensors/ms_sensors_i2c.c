@@ -5,10 +5,10 @@
  * Copyright (c) 2015 Measurement-Specialties
  */
 
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/device.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/iio/iio.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
 
 #include "ms_sensors_i2c.h"
 

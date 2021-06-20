@@ -10,16 +10,16 @@
  *  based on i386 version
  *    Copyright (C) 2001 Rusty Russell.
  */
-#include <linux/module.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/kasan.h>
-#include <linux/moduleloader.h>
-#include <linux/bug.h>
-#include <linux/memory.h>
+#include <linaos/module.h>
+#include <linaos/elf.h>
+#include <linaos/vmalloc.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/kasan.h>
+#include <linaos/moduleloader.h>
+#include <linaos/bug.h>
+#include <linaos/memory.h>
 #include <asm/alternative.h>
 #include <asm/nospec-branch.h>
 #include <asm/facility.h>

@@ -2,7 +2,7 @@
 #ifndef _METER_H
 #define _METER_H
 
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/sysfs.h>
 
 /* metering ic types of attribute */
 

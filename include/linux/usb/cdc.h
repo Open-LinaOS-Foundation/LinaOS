@@ -11,7 +11,7 @@
 #ifndef __LINUX_USB_CDC_H
 #define __LINUX_USB_CDC_H
 
-#include <uapi/linux/usb/cdc.h>
+#include <uapi/linaos/usb/cdc.h>
 
 /*
  * inofficial magic numbers

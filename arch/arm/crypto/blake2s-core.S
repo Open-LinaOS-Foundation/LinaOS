@@ -7,7 +7,7 @@
  * Author: Eric Biggers <ebiggers@google.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 	// Registers used to hold message words temporarily.  There aren't

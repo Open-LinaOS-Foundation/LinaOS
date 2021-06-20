@@ -5,12 +5,12 @@
  * Cleaned up by substantially rewriting, and converted to DT by
  * Russell King.  Origin is not known.
  */
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 
 #include "dove-divider.h"
 

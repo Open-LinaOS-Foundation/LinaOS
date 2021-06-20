@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/sched.h>
 #include <asm/sbi.h>
 
 void flush_tlb_all(void)

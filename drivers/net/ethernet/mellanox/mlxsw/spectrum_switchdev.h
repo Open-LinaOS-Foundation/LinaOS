@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0 */
 /* Copyright (c) 2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 
 struct mlxsw_sp_bridge;
 struct mlxsw_sp_bridge_port;

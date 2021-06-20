@@ -32,7 +32,7 @@ config CIFS
 	  MacOS) and even in the cloud (e.g. Microsoft Azure).
 	  The older CIFS protocol was included in Windows NT4, 2000 and XP (and
 	  later) as well by Samba (which provides excellent CIFS and SMB3
-	  server support for Linux and many other operating systems). Use of
+	  server support for LinaOS and many other operating systems). Use of
 	  dialects older than SMB2.1 is often discouraged on public networks.
 	  This module also provides limited support for OS/2 and Windows ME
 	  and similar very old servers.
@@ -128,7 +128,7 @@ config CIFS_XATTR
 	  CIFS maps the name of extended attributes beginning with the user
 	  namespace prefix to SMB/CIFS EAs.  EAs are stored on Windows
 	  servers without the user namespace prefix, but their names are
-	  seen by Linux cifs clients prefaced by the user namespace prefix.
+	  seen by LinaOS cifs clients prefaced by the user namespace prefix.
 	  The system namespace (used by some filesystems to store ACLs) is
 	  not supported at this time.
 

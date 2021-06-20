@@ -2,8 +2,8 @@
 #ifndef __CGROUP_H__
 #define __CGROUP_H__
 
-#include <linux/refcount.h>
-#include <linux/rbtree.h>
+#include <linaos/refcount.h>
+#include <linaos/rbtree.h>
 #include "util/env.h"
 
 struct option;

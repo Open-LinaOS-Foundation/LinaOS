@@ -75,13 +75,13 @@
 
 		sw5 {
 			label = "GPIO Key USER1";
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			gpios = <&wkup_gpio0 24 GPIO_ACTIVE_LOW>;
 		};
 
 		sw6 {
 			label = "GPIO Key USER2";
-			linux,code = <BTN_1>;
+			linaos,code = <BTN_1>;
 			gpios = <&wkup_gpio0 27 GPIO_ACTIVE_LOW>;
 		};
 	};

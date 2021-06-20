@@ -4,8 +4,8 @@
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  * Copyright (C) 2015-2017 Intel Deutschland GmbH
  */
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
 #include "iwl-trans.h"
 #include "mvm.h"
 #include "fw-api.h"

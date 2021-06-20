@@ -9,10 +9,10 @@
 #define E4000_PRIV_H
 
 #include "e4000.h"
-#include <linux/math64.h>
+#include <linaos/math64.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-subdev.h>
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 struct e4000_dev {
 	struct i2c_client *client;

@@ -1,4 +1,4 @@
-/* 82596.c: A generic 82596 ethernet driver for linux. */
+/* 82596.c: A generic 82596 ethernet driver for linaos. */
 /*
    Based on Apricot.c
    Written 1994 by Mark Evans.
@@ -40,20 +40,20 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
-#include <linux/pgtable.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/gfp.h>
+#include <linaos/pgtable.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

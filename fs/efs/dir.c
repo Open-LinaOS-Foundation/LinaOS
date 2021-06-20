@@ -5,7 +5,7 @@
  * Copyright (c) 1999 Al Smith
  */
 
-#include <linux/buffer_head.h>
+#include <linaos/buffer_head.h>
 #include "efs.h"
 
 static int efs_readdir(struct file *, struct dir_context *);

@@ -2,7 +2,7 @@
 #ifndef _LINUX_QUOTAIO_V1_H
 #define _LINUX_QUOTAIO_V1_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * The following constants define the amount of time given a user

@@ -11,10 +11,10 @@
 #ifndef _CRYP_H_
 #define _CRYP_H_
 
-#include <linux/completion.h>
-#include <linux/dmaengine.h>
-#include <linux/klist.h>
-#include <linux/mutex.h>
+#include <linaos/completion.h>
+#include <linaos/dmaengine.h>
+#include <linaos/klist.h>
+#include <linaos/mutex.h>
 
 #define DEV_DBG_NAME "crypX crypX:"
 

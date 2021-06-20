@@ -4,19 +4,19 @@
  *
  *  Copyright (C) 2005 - 2010  Paul Mundt
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/irq.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/timer.h>
+#include <linaos/irq.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/log2.h>
 #include "pci-sh4.h"
 #include <asm/mmu.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #if defined(CONFIG_CPU_BIG_ENDIAN)
 # define PCICR_ENDIANNESS SH4_PCICR_BSWP

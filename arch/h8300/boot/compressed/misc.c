@@ -3,14 +3,14 @@
  * arch/h8300/boot/compressed/misc.c
  *
  * This is a collection of several routines from gzip-1.0.3
- * adapted for Linux.
+ * adapted for LinaOS.
  *
  * malloc by Hannu Savolainen 1993 and Matthias Urlichs 1994
  *
  * Adapted for h8300 by Yoshinori Sato 2006
  */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /*
  * gzip declarations

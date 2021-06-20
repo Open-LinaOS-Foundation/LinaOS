@@ -11,8 +11,8 @@
 #include "ufshcd-dwc.h"
 #include "tc-dwc-g210.h"
 
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
+#include <linaos/pci.h>
+#include <linaos/pm_runtime.h>
 
 /* Test Chip type expected values */
 #define TC_G210_20BIT 20

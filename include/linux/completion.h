@@ -9,7 +9,7 @@
  * See kernel/sched/completion.c for details.
  */
 
-#include <linux/swait.h>
+#include <linaos/swait.h>
 
 /*
  * struct completion - structure used to maintain state for a "completion"

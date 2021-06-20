@@ -23,9 +23,9 @@
 #include <crypto/internal/chacha.h>
 #include <crypto/internal/simd.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/jump_label.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #include <asm/hwcap.h>
 #include <asm/neon.h>

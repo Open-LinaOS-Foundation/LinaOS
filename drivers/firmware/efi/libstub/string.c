@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Taken from:
- *  linux/lib/string.c
+ *  linaos/lib/string.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <linaos/ctype.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
 
 #ifndef __HAVE_ARCH_STRSTR
 /**

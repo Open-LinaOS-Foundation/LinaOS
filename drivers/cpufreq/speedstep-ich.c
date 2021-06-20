@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * (C) 2001  Dave Jones, Arjan van de ven.
- * (C) 2002 - 2003  Dominik Brodowski <linux@brodo.de>
+ * (C) 2002 - 2003  Dominik Brodowski <linaos@brodo.de>
  *
  *  Based upon reverse engineered information, and on Intel documentation
  *  for chipsets ICH2-M and ICH3-M.
@@ -20,12 +20,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/cpufreq.h>
+#include <linaos/pci.h>
+#include <linaos/sched.h>
 
 #include <asm/cpu_device_id.h>
 
@@ -377,7 +377,7 @@ static void __exit speedstep_exit(void)
 }
 
 
-MODULE_AUTHOR("Dave Jones, Dominik Brodowski <linux@brodo.de>");
+MODULE_AUTHOR("Dave Jones, Dominik Brodowski <linaos@brodo.de>");
 MODULE_DESCRIPTION("Speedstep driver for Intel mobile processors on chipsets "
 		"with ICH-M southbridges.");
 MODULE_LICENSE("GPL");

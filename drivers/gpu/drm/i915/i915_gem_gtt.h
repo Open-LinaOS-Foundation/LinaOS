@@ -6,8 +6,8 @@
 #ifndef __I915_GEM_GTT_H__
 #define __I915_GEM_GTT_H__
 
-#include <linux/io-mapping.h>
-#include <linux/types.h>
+#include <linaos/io-mapping.h>
+#include <linaos/types.h>
 
 #include <drm/drm_mm.h>
 

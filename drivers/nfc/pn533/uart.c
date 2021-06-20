@@ -7,13 +7,13 @@
  * All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/nfc.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/serdev.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/nfc.h>
+#include <linaos/netdevice.h>
+#include <linaos/of.h>
+#include <linaos/serdev.h>
 #include "pn533.h"
 
 #define PN532_UART_SKB_BUFF_LEN	(PN533_CMD_DATAEXCH_DATA_MAXLEN * 2)

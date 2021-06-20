@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Copyright (c) 2005 Henk Vergonet <Henk.Vergonet@gmail.com>
  */
@@ -49,9 +49,9 @@
  * static DEVICE_ATTR_RW(map_seg7);
  *
  * History:
- * 2005-05-31	RFC linux-kernel@vger.kernel.org
+ * 2005-05-31	RFC linaos-kernel@vger.kernel.org
  */
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 
 #define BIT_SEG7_A		0

@@ -27,7 +27,7 @@
 
 		recovery {
 			label = "recovery";
-			linux,code = <KEY_VENDOR>;
+			linaos,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <17000>;
 		};
 	};
@@ -72,7 +72,7 @@
 	};
 
 	spdif_out: spdif-out {
-		compatible = "linux,spdif-dit";
+		compatible = "linaos,spdif-dit";
 		#sound-dai-cells = <0>;
 	};
 

@@ -10,11 +10,11 @@
 
 #include <crypto/algapi.h>
 #include <crypto/internal/cipher.h>
-#include <linux/kernel.h>
-#include <linux/crypto.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/crypto.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 #include "internal.h"
 
 static int setkey_unaligned(struct crypto_cipher *tfm, const u8 *key,

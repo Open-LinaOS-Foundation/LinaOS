@@ -4,8 +4,8 @@
 // Copyright 2019 Google LLC.
 
 #include <kunit/test.h>
-#include <linux/property.h>
-#include <linux/types.h>
+#include <linaos/property.h>
+#include <linaos/types.h>
 
 static void pe_test_uints(struct kunit *test)
 {

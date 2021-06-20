@@ -1,35 +1,35 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/saar.c
+ *  linaos/arch/arm/mach-pxa/saar.c
  *
  *  Support for the Marvell PXA930 Handheld Platform (aka SAAR)
  *
  *  Copyright (C) 2007-2008 Marvell International Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/smc91x.h>
-#include <linux/mfd/da903x.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/onenand.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/gpio.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/i2c-pxa.h>
+#include <linaos/smc91x.h>
+#include <linaos/mfd/da903x.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/onenand.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>
 
 #include "pxa930.h"
-#include <linux/platform_data/video-pxafb.h>
+#include <linaos/platform_data/video-pxafb.h>
 
 #include "devices.h"
 #include "generic.h"

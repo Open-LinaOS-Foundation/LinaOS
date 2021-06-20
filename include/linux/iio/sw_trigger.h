@@ -8,10 +8,10 @@
 #ifndef __IIO_SW_TRIGGER
 #define __IIO_SW_TRIGGER
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/iio/iio.h>
-#include <linux/configfs.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/iio/iio.h>
+#include <linaos/configfs.h>
 
 #define module_iio_sw_trigger_driver(__iio_sw_trigger_type) \
 	module_driver(__iio_sw_trigger_type, iio_register_sw_trigger_type, \

@@ -5,13 +5,13 @@
  * Copyright (c) 2017 Beckhoff Automation GmbH & Co. KG
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/rtc.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_wakeirq.h>
+#include <linaos/rtc.h>
 
 #define SRTC_LPPDR_INIT       0x41736166	/* init for glitch detect */
 

@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * file.c - NTFS kernel file operations.  Part of the Linux-NTFS project.
+ * file.c - NTFS kernel file operations.  Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2015 Anton Altaparmakov and Tuxera Inc.
  */
 
-#include <linux/backing-dev.h>
-#include <linux/buffer_head.h>
-#include <linux/gfp.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/sched/signal.h>
-#include <linux/swap.h>
-#include <linux/uio.h>
-#include <linux/writeback.h>
+#include <linaos/backing-dev.h>
+#include <linaos/buffer_head.h>
+#include <linaos/gfp.h>
+#include <linaos/pagemap.h>
+#include <linaos/pagevec.h>
+#include <linaos/sched/signal.h>
+#include <linaos/swap.h>
+#include <linaos/uio.h>
+#include <linaos/writeback.h>
 
 #include <asm/page.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "attrib.h"
 #include "bitmap.h"

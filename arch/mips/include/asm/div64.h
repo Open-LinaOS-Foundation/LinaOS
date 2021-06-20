@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2000, 2004, 2021  Maciej W. Rozycki
- * Copyright (C) 2003, 07 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2003, 07 Ralf Baechle (ralf@linaos-mips.org)
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive

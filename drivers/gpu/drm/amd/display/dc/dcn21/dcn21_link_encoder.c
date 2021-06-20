@@ -25,7 +25,7 @@
 
 #include "reg_helper.h"
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include "core_types.h"
 #include "link_encoder.h"
 #include "dcn21_link_encoder.h"

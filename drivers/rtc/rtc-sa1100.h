@@ -2,7 +2,7 @@
 #ifndef __RTC_SA1100_H__
 #define __RTC_SA1100_H__
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 struct clk;
 struct platform_device;

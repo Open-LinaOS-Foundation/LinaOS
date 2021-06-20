@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	SMsC 37B787 Watchdog Timer driver for Linux 2.6.x.x
+ *	SMsC 37B787 Watchdog Timer driver for LinaOS 2.6.x.x
  *
  *	Based on acquirewdt.c by Alan Cox <alan@lxorguk.ukuu.org.uk>
  *	and some other existing drivers
@@ -12,8 +12,8 @@
  *	(C) Copyright 2003-2006  Sven Anders <anders@anduras.de>
  *
  *  History:
- *	2003 - Created version 1.0 for Linux 2.4.x.
- *	2006 - Ported to Linux 2.6, added nowayout and MAGICCLOSE
+ *	2003 - Created version 1.0 for LinaOS 2.4.x.
+ *	2006 - Ported to LinaOS 2.6, added nowayout and MAGICCLOSE
  *	       features. Released version 1.1
  *
  *  Theory of operation:
@@ -41,20 +41,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
+#include <linaos/ioport.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 
 /* enable support for minutes as units? */

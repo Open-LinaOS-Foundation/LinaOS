@@ -4,13 +4,13 @@
  * Copyright (c) 2015-2016 HGST, a Western Digital Company.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/ctype.h>
-#include <linux/pci.h>
-#include <linux/pci-p2pdma.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/ctype.h>
+#include <linaos/pci.h>
+#include <linaos/pci-p2pdma.h>
 
 #include "nvmet.h"
 

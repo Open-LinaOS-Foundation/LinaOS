@@ -7,10 +7,10 @@
  * Author: Arnd Bergmann <arndb@de.ibm.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/ioport.h>
-#include <linux/pgtable.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/ioport.h>
+#include <linaos/pgtable.h>
 
 #include <asm/prom.h>
 #include <asm/io.h>

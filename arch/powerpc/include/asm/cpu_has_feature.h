@@ -4,7 +4,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bug.h>
+#include <linaos/bug.h>
 #include <asm/cputable.h>
 
 static __always_inline bool early_cpu_has_feature(unsigned long feature)
@@ -14,7 +14,7 @@ static __always_inline bool early_cpu_has_feature(unsigned long feature)
 }
 
 #ifdef CONFIG_JUMP_LABEL_FEATURE_CHECKS
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 
 #define NUM_CPU_FTR_KEYS	BITS_PER_LONG
 

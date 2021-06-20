@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@linux.nu>
+/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@linaos.nu>
  *                         Patrick Schaaf <bof@bof.de>
  * Copyright (C) 2003-2013 Jozsef Kadlecsik <kadlec@netfilter.org>
  */
 
 /* Kernel module implementing an IP set type: the bitmap:ip type */
 
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/netlink.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
+#include <linaos/module.h>
+#include <linaos/ip.h>
+#include <linaos/skbuff.h>
+#include <linaos/errno.h>
+#include <linaos/bitops.h>
+#include <linaos/spinlock.h>
+#include <linaos/netlink.h>
+#include <linaos/jiffies.h>
+#include <linaos/timer.h>
 #include <net/netlink.h>
 #include <net/tcp.h>
 
-#include <linux/netfilter/ipset/pfxlen.h>
-#include <linux/netfilter/ipset/ip_set.h>
-#include <linux/netfilter/ipset/ip_set_bitmap.h>
+#include <linaos/netfilter/ipset/pfxlen.h>
+#include <linaos/netfilter/ipset/ip_set.h>
+#include <linaos/netfilter/ipset/ip_set_bitmap.h>
 
 #define IPSET_TYPE_REV_MIN	0
 /*				1	   Counter support added */

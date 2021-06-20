@@ -7,10 +7,10 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 
 #include <asm/ppc-pci.h>
 #include <asm/pci-bridge.h>

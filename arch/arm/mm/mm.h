@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifdef CONFIG_MMU
-#include <linux/list.h>
-#include <linux/vmalloc.h>
-#include <linux/pgtable.h>
+#include <linaos/list.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pgtable.h>
 
 /* the upper-most page table pointer */
 extern pmd_t *top_pmd;

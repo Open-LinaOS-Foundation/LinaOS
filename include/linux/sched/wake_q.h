@@ -33,7 +33,7 @@
  * location of the wake_q_add().
  */
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 
 struct wake_q_head {
 	struct wake_q_node *first;

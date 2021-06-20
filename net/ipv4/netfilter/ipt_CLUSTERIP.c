@@ -3,26 +3,26 @@
  * (C) 2003-2004 by Harald Welte <laforge@netfilter.org>
  * based on ideas of Fabio Olive Leite <olive@unixforge.org>
  *
- * Development of this code funded by SuSE Linux AG, https://www.suse.com/
+ * Development of this code funded by SuSE LinaOS AG, https://www.suse.com/
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/jhash.h>
-#include <linux/bitops.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/icmp.h>
-#include <linux/if_arp.h>
-#include <linux/seq_file.h>
-#include <linux/refcount.h>
-#include <linux/netfilter_arp.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv4/ipt_CLUSTERIP.h>
+#include <linaos/module.h>
+#include <linaos/proc_fs.h>
+#include <linaos/jhash.h>
+#include <linaos/bitops.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/icmp.h>
+#include <linaos/if_arp.h>
+#include <linaos/seq_file.h>
+#include <linaos/refcount.h>
+#include <linaos/netfilter_arp.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter_ipv4/ip_tables.h>
+#include <linaos/netfilter_ipv4/ipt_CLUSTERIP.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
@@ -630,7 +630,7 @@ arp_mangle(void *priv,
 	if (!c)
 		return NF_ACCEPT;
 
-	/* normally the linux kernel always replies to arp queries of
+	/* normally the linaos kernel always replies to arp queries of
 	 * addresses on different interfacs.  However, in the CLUSTERIP case
 	 * this wouldn't work, since we didn't subscribe the mcast group on
 	 * other interfaces */

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Sony Programmable I/O Control Device driver for VAIO
  *
@@ -14,7 +14,7 @@
  *
  * Copyright (C) 2000 Takaya Kinjo <t-kinjo@tc4.so-net.ne.jp>
  *
- * Copyright (C) 2000 Andrew Tridgell <tridge@valinux.com>
+ * Copyright (C) 2000 Andrew Tridgell <tridge@valinaos.com>
  *
  * Earlier work by Werner Almesberger, Paul `Rusty' Russell and Paul Mackerras.
  *
@@ -37,7 +37,7 @@
 #ifndef _UAPI_SONYPI_H_
 #define _UAPI_SONYPI_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* events the user application reading /dev/sonypi can use */
 

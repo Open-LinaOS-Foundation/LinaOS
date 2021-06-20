@@ -3,7 +3,7 @@
 #define __UDF_ENDIAN_H
 
 #include <asm/byteorder.h>
-#include <linux/string.h>
+#include <linaos/string.h>
 
 static inline struct kernel_lb_addr lelb_to_cpu(struct lb_addr in)
 {

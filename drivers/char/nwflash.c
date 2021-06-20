@@ -15,24 +15,24 @@
  * power to convert these machines into doorstops...
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/miscdevice.h>
-#include <linux/spinlock.h>
-#include <linux/rwsem.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/proc_fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/rwsem.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/jiffies.h>
 
 #include <asm/hardware/dec21285.h>
 #include <asm/io.h>
 #include <asm/mach-types.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /*****************************************************************************/
 #include <asm/nwflash.h>

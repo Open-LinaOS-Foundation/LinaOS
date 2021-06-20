@@ -2,7 +2,7 @@
 #ifndef __PERF_TSC_H
 #define __PERF_TSC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "event.h"
 

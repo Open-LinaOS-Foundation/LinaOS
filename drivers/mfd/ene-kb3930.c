@@ -5,13 +5,13 @@
  * Copyright (C) 2020 Lubomir Rintel
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/reboot.h>
+#include <linaos/regmap.h>
 
 /* I2C registers that are multiplexing access to the EC RAM. */
 enum {

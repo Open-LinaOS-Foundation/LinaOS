@@ -36,7 +36,7 @@
 		user {
 			label = "debug";
 			gpios = <&gpio3 20 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 
@@ -558,7 +558,7 @@
 &kpp {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_kpp>;
-	linux,keymap = <
+	linaos,keymap = <
 			MATRIX_KEY(0x0, 0x0, KEY_UP)         /* ROW0, COL0 */
 			MATRIX_KEY(0x0, 0x1, KEY_DOWN)       /* ROW0, COL1 */
 			MATRIX_KEY(0x0, 0x2, KEY_ENTER)      /* ROW0, COL2 */

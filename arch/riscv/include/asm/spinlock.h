@@ -7,7 +7,7 @@
 #ifndef _ASM_RISCV_SPINLOCK_H
 #define _ASM_RISCV_SPINLOCK_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/current.h>
 #include <asm/fence.h>
 

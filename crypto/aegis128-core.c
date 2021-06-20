@@ -11,12 +11,12 @@
 #include <crypto/internal/simd.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/jump_label.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/scatterlist.h>
 
 #include <asm/simd.h>
 

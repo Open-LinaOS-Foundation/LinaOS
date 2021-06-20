@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-/* -*- linux-c -*- *
+/* -*- linaos-c -*- *
  *
  * ALSA driver for the digigram lx6464es interface
  *
@@ -9,8 +9,8 @@
 #ifndef LX6464ES_H
 #define LX6464ES_H
 
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
+#include <linaos/spinlock.h>
+#include <linaos/atomic.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

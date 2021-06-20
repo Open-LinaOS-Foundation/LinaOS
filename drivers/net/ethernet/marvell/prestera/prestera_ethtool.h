@@ -4,7 +4,7 @@
 #ifndef __PRESTERA_ETHTOOL_H_
 #define __PRESTERA_ETHTOOL_H_
 
-#include <linux/ethtool.h>
+#include <linaos/ethtool.h>
 
 extern const struct ethtool_ops prestera_ethtool_ops;
 

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1 WITH LinaOS-syscall-note */
 /* taskstats.h - exporting per-task statistics
  *
  * Copyright (C) Shailabh Nagar, IBM Corp. 2006
@@ -17,7 +17,7 @@
 #ifndef _LINUX_TASKSTATS_H
 #define _LINUX_TASKSTATS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Format for per-task data returned to userland when
  *	- a task exits
@@ -36,18 +36,18 @@
 
 #define TASKSTATS_VERSION	10
 #define TS_COMM_LEN		32	/* should be >= TASK_COMM_LEN
-					 * in linux/sched.h */
+					 * in linaos/sched.h */
 
 struct taskstats {
 
 	/* The version number of this struct. This field is always set to
-	 * TAKSTATS_VERSION, which is defined in <linux/taskstats.h>.
+	 * TAKSTATS_VERSION, which is defined in <linaos/taskstats.h>.
 	 * Each time the struct is changed, the value should be incremented.
 	 */
 	__u16	version;
 	__u32	ac_exitcode;		/* Exit status */
 
-	/* The accounting flags of a task as defined in <linux/acct.h>
+	/* The accounting flags of a task as defined in <linaos/acct.h>
 	 * Defined values are AFORK, ASU, ACOMPAT, ACORE, and AXSIG.
 	 */
 	__u8	ac_flag;		/* Record flags */

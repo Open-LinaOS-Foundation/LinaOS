@@ -2,7 +2,7 @@
 #ifndef B43_RADIO_2059_H_
 #define B43_RADIO_2059_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "phy_ht.h"
 

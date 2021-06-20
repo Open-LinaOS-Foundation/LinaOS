@@ -7,17 +7,17 @@
  * Copyright (C) 2014  Ulrich Hecht
  */
 
-#include <linux/clocksource.h>
-#include <linux/device.h>
-#include <linux/dma-map-ops.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
-#include <linux/psci.h>
+#include <linaos/clocksource.h>
+#include <linaos/device.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/memblock.h>
+#include <linaos/of.h>
+#include <linaos/of_clk.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
+#include <linaos/psci.h>
 #include <asm/mach/arch.h>
 #include <asm/secure_cntvoff.h>
 #include "common.h"
@@ -87,7 +87,7 @@ static void __init rcar_gen2_timer_init(void)
 	    of_machine_is_compatible("renesas,r8a7794")) {
 		freq = 260000000 / 8;	/* ZS / 8 */
 	} else {
-		/* At Linux boot time the r8a7790 arch timer comes up
+		/* At LinaOS boot time the r8a7790 arch timer comes up
 		 * with the counter disabled. Moreover, it may also report
 		 * a potentially incorrect fixed 13 MHz frequency. To be
 		 * correct these registers need to be updated to use the
@@ -141,7 +141,7 @@ static int __init rcar_gen2_scan_mem(unsigned long node, const char *uname,
 	if (type == NULL || strcmp(type, "memory"))
 		return 0;
 
-	reg = of_get_flat_dt_prop(node, "linux,usable-memory", &l);
+	reg = of_get_flat_dt_prop(node, "linaos,usable-memory", &l);
 	if (reg == NULL)
 		reg = of_get_flat_dt_prop(node, "reg", &l);
 	if (reg == NULL)

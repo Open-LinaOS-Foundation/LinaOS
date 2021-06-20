@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Advanced Linux Sound Architecture
+ *  Advanced LinaOS Sound Architecture
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/debugfs.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/info.h>
 #include <sound/control.h>
 #include <sound/initval.h>
-#include <linux/kmod.h>
-#include <linux/mutex.h>
+#include <linaos/kmod.h>
+#include <linaos/mutex.h>
 
 static int major = CONFIG_SND_MAJOR;
 int snd_major;
@@ -25,7 +25,7 @@ EXPORT_SYMBOL(snd_major);
 static int cards_limit = 1;
 
 MODULE_AUTHOR("Jaroslav Kysela <perex@perex.cz>");
-MODULE_DESCRIPTION("Advanced Linux Sound Architecture driver for soundcards.");
+MODULE_DESCRIPTION("Advanced LinaOS Sound Architecture driver for soundcards.");
 MODULE_LICENSE("GPL");
 module_param(major, int, 0444);
 MODULE_PARM_DESC(major, "Major # for sound driver.");
@@ -408,7 +408,7 @@ static int __init alsa_sound_init(void)
 	sound_debugfs_root = debugfs_create_dir("sound", NULL);
 #endif
 #ifndef MODULE
-	pr_info("Advanced Linux Sound Architecture Driver Initialized.\n");
+	pr_info("Advanced LinaOS Sound Architecture Driver Initialized.\n");
 #endif
 	return 0;
 }

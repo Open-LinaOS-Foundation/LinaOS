@@ -8,8 +8,8 @@ Adding reference counters (krefs) to kernel objects
 A lot of this was lifted from Greg Kroah-Hartman's 2004 OLS paper and
 presentation on krefs, which can be found at:
 
-  - http://www.kroah.com/linux/talks/ols_2004_kref_paper/Reprint-Kroah-Hartman-OLS2004.pdf
-  - http://www.kroah.com/linux/talks/ols_2004_kref_talk/
+  - http://www.kroah.com/linaos/talks/ols_2004_kref_paper/Reprint-Kroah-Hartman-OLS2004.pdf
+  - http://www.kroah.com/linaos/talks/ols_2004_kref_talk/
 
 Introduction
 ============

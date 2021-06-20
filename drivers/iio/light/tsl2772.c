@@ -8,19 +8,19 @@
  * Copyright (c) 2017-2018 Brian Masney <masneyb@onstation.org>
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/platform_data/tsl2772.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/platform_data/tsl2772.h>
+#include <linaos/regulator/consumer.h>
 
 /* Cal defs */
 #define PROX_STAT_CAL			0

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/balloc.c
+ *  linaos/fs/ext4/balloc.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -12,11 +12,11 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/time.h>
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/quotaops.h>
-#include <linux/buffer_head.h>
+#include <linaos/time.h>
+#include <linaos/capability.h>
+#include <linaos/fs.h>
+#include <linaos/quotaops.h>
+#include <linaos/buffer_head.h>
 #include "ext4.h"
 #include "ext4_jbd2.h"
 #include "mballoc.h"

@@ -11,18 +11,18 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/gfp.h>
+#include <linaos/io.h>
+#include <linaos/input.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/stddef.h>
+#include <linaos/types.h>
 
 #define DEFAULT_CLK_HZ			31250
 #define MAX_ROWS			8
@@ -333,7 +333,7 @@ static int bcm_kp_probe(struct platform_device *pdev)
 
 	__set_bit(EV_KEY, input_dev->evbit);
 
-	/* Enable auto repeat feature of Linux input subsystem */
+	/* Enable auto repeat feature of LinaOS input subsystem */
 	if (of_property_read_bool(pdev->dev.of_node, "autorepeat"))
 		__set_bit(EV_REP, input_dev->evbit);
 

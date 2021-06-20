@@ -7,16 +7,16 @@
  * either be read from the "time" and "timeh" CSRs, and can use the SBI to
  * setup events, or directly accessed using MMIO registers.
  */
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/sched_clock.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/interrupt.h>
-#include <linux/of_irq.h>
+#include <linaos/clocksource.h>
+#include <linaos/clockchips.h>
+#include <linaos/cpu.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/sched_clock.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_irq.h>
 #include <asm/smp.h>
 #include <asm/sbi.h>
 #include <asm/timex.h>

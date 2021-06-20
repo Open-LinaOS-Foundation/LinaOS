@@ -7,12 +7,12 @@
  * Author: Christian Krafft <krafft@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/pm_qos.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_qos.h>
 
 #include <asm/processor.h>
 #include <asm/prom.h>

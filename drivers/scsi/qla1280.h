@@ -1006,10 +1006,10 @@ struct qla_driver_setup {
 
 
 /*
- * Linux Host Adapter structure
+ * LinaOS Host Adapter structure
  */
 struct scsi_qla_host {
-	/* Linux adapter configuration data */
+	/* LinaOS adapter configuration data */
 	struct Scsi_Host *host;	/* pointer to host data */
 	struct scsi_qla_host *next;
 	struct device_reg __iomem *iobase;	/* Base Memory-mapped I/O address */

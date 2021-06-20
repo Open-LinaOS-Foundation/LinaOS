@@ -5,12 +5,12 @@
  * Copyright (C) 2017 Endless Mobile, Inc.
  */
 
-#include <linux/acpi.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci_ids.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci_ids.h>
+#include <linaos/types.h>
 
 static const struct acpi_device_id acer_wireless_acpi_ids[] = {
 	{"10251229", 0},

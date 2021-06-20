@@ -3,12 +3,12 @@
  * Copyright (c) 2020 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/of.h>
+#include <linaos/string.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
 #include <asm/cpu_ops.h>
 #include <asm/sbi.h>
 #include <asm/smp.h>

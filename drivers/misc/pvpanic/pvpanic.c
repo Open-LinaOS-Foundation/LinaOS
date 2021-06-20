@@ -7,15 +7,15 @@
  *  Copyright (C) 2021 Oracle.
  */
 
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kexec.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/cdev.h>
-#include <linux/list.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/kexec.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/types.h>
+#include <linaos/cdev.h>
+#include <linaos/list.h>
 
 #include <uapi/misc/pvpanic.h>
 

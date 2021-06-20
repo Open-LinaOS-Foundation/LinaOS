@@ -5,7 +5,7 @@
  * This code is based on drivers/scsi/mpt3sas/mpt3sas_ctl.h
  * Copyright (C) 2012-2014  LSI Corporation
  * Copyright (C) 2013-2014 Avago Technologies
- *  (mailto: MPT-FusionLinux.pdl@avagotech.com)
+ *  (mailto: MPT-FusionLinaOS.pdl@avagotech.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -47,7 +47,7 @@
 #define MPT3SAS_CTL_H_INCLUDED
 
 #ifdef __KERNEL__
-#include <linux/miscdevice.h>
+#include <linaos/miscdevice.h>
 #endif
 
 #include "mpt3sas_base.h"

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2012 Tobias Klauser <tklauser@distanz.ch>
  * Copyright (C) 2011 Pyramid Technical Consultants, Inc.
@@ -11,7 +11,7 @@
 #ifndef _ASM_NIOS2_SWAB_H
 #define _ASM_NIOS2_SWAB_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm-generic/swab.h>
 
 #ifdef CONFIG_NIOS2_CI_SWAB_SUPPORT

@@ -10,11 +10,11 @@
  * Copyright (C) 2019 Nicolas Saenz Julienne <nsaenzjulienne@suse.de>
  */
 
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include <soc/bcm2835/raspberrypi-firmware.h>
 

@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_IF_LINK_H
 #define _UAPI_LINUX_IF_LINK_H
 
-#include <linux/types.h>
-#include <linux/netlink.h>
+#include <linaos/types.h>
+#include <linaos/netlink.h>
 
 /* This struct should be in sync with struct rtnl_link_stats64 */
 struct rtnl_link_stats {
@@ -13,8 +13,8 @@ struct rtnl_link_stats {
 	__u32	tx_bytes;		/* total bytes transmitted	*/
 	__u32	rx_errors;		/* bad packets received		*/
 	__u32	tx_errors;		/* packet transmit problems	*/
-	__u32	rx_dropped;		/* no space in linux buffers	*/
-	__u32	tx_dropped;		/* no space available in linux	*/
+	__u32	rx_dropped;		/* no space in linaos buffers	*/
+	__u32	tx_dropped;		/* no space available in linaos	*/
 	__u32	multicast;		/* multicast packets received	*/
 	__u32	collisions;
 
@@ -48,8 +48,8 @@ struct rtnl_link_stats64 {
 	__u64	tx_bytes;		/* total bytes transmitted	*/
 	__u64	rx_errors;		/* bad packets received		*/
 	__u64	tx_errors;		/* packet transmit problems	*/
-	__u64	rx_dropped;		/* no space in linux buffers	*/
-	__u64	tx_dropped;		/* no space available in linux	*/
+	__u64	rx_dropped;		/* no space in linaos buffers	*/
+	__u64	tx_dropped;		/* no space available in linaos	*/
 	__u64	multicast;		/* multicast packets received	*/
 	__u64	collisions;
 

@@ -5,16 +5,16 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/uio.h>
-#include <linux/sched/mm.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/netfs.h>
+#include <linaos/module.h>
+#include <linaos/export.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/slab.h>
+#include <linaos/uio.h>
+#include <linaos/sched/mm.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/netfs.h>
 #include "internal.h"
 #define CREATE_TRACE_POINTS
 #include <trace/events/netfs.h>

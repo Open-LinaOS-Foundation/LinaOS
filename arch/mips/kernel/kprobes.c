@@ -11,11 +11,11 @@
  *   Copyright (C) IBM Corporation, 2002, 2004
  */
 
-#include <linux/kprobes.h>
-#include <linux/preempt.h>
-#include <linux/uaccess.h>
-#include <linux/kdebug.h>
-#include <linux/slab.h>
+#include <linaos/kprobes.h>
+#include <linaos/preempt.h>
+#include <linaos/uaccess.h>
+#include <linaos/kdebug.h>
+#include <linaos/slab.h>
 
 #include <asm/ptrace.h>
 #include <asm/branch.h>

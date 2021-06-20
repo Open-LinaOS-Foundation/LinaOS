@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *	Linux INET6 implementation 
+ *	LinaOS INET6 implementation 
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>	
@@ -9,17 +9,17 @@
 #ifndef _IP6_FIB_H
 #define _IP6_FIB_H
 
-#include <linux/ipv6_route.h>
-#include <linux/rtnetlink.h>
-#include <linux/spinlock.h>
-#include <linux/notifier.h>
+#include <linaos/ipv6_route.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/spinlock.h>
+#include <linaos/notifier.h>
 #include <net/dst.h>
 #include <net/flow.h>
 #include <net/ip_fib.h>
 #include <net/netlink.h>
 #include <net/inetpeer.h>
 #include <net/fib_notifier.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/indirect_call_wrapper.h>
 
 #ifdef CONFIG_IPV6_MULTIPLE_TABLES
 #define FIB6_TABLE_HASHSZ 256

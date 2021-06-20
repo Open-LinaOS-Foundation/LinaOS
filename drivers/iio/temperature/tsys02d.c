@@ -10,13 +10,13 @@
  *  http://www.meas-spec.com/downloads/Digital_Sensor_TSYS02D.pdf
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/stat.h>
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/stat.h>
+#include <linaos/module.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 #include "../common/ms_sensors/ms_sensors_i2c.h"
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <stdarg.h>
 #include <stdio.h>
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 #include <perf/cpumap.h>
 #include <perf/threadmap.h>
 #include <perf/evsel.h>

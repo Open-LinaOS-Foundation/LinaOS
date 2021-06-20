@@ -29,11 +29,11 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/crypto.h>
+#include <linaos/module.h>
+#include <linaos/scatterlist.h>
 #include <asm/byteorder.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/internal/cipher.h>

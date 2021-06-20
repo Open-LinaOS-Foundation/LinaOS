@@ -8,9 +8,9 @@
 #ifndef _V4L2_CTRLS_H
 #define _V4L2_CTRLS_H
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/videodev2.h>
 #include <media/media-request.h>
 
 /*

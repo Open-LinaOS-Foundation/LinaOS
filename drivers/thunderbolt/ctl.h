@@ -9,8 +9,8 @@
 #ifndef _TB_CFG
 #define _TB_CFG
 
-#include <linux/kref.h>
-#include <linux/thunderbolt.h>
+#include <linaos/kref.h>
+#include <linaos/thunderbolt.h>
 
 #include "nhi.h"
 #include "tb_msgs.h"

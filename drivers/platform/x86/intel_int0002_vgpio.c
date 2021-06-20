@@ -27,16 +27,16 @@
  * for a real GPIO controller.
  */
 
-#include <linux/acpi.h>
-#include <linux/bitmap.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <linaos/acpi.h>
+#include <linaos/bitmap.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>

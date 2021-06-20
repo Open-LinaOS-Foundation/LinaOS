@@ -3,7 +3,7 @@
  * Copyright (C) 2007 Lemote, Inc. & Institute of Computing Technology
  * Author: Fuxin Zhang, zhangfx@lemote.com
  */
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #include <pci.h>
 #include <loongson.h>

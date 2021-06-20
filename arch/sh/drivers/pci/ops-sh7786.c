@@ -4,11 +4,11 @@
  *
  *  Copyright (C) 2009 - 2010  Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
 #include "pcie-sh7786.h"
 
 enum {

@@ -26,16 +26,16 @@
  */
 
 #include <drm/drm_vma_manager.h>
-#include <linux/dma-fence-array.h>
-#include <linux/kthread.h>
-#include <linux/dma-resv.h>
-#include <linux/shmem_fs.h>
-#include <linux/slab.h>
-#include <linux/stop_machine.h>
-#include <linux/swap.h>
-#include <linux/pci.h>
-#include <linux/dma-buf.h>
-#include <linux/mman.h>
+#include <linaos/dma-fence-array.h>
+#include <linaos/kthread.h>
+#include <linaos/dma-resv.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/slab.h>
+#include <linaos/stop_machine.h>
+#include <linaos/swap.h>
+#include <linaos/pci.h>
+#include <linaos/dma-buf.h>
+#include <linaos/mman.h>
 
 #include "display/intel_display.h"
 #include "display/intel_frontbuffer.h"

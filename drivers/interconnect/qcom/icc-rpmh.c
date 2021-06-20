@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/interconnect.h>
-#include <linux/interconnect-provider.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/interconnect.h>
+#include <linaos/interconnect-provider.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 
 #include "bcm-voter.h"
 #include "icc-rpmh.h"

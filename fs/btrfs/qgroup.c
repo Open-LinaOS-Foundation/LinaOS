@@ -3,15 +3,15 @@
  * Copyright (C) 2011 STRATO.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/btrfs.h>
-#include <linux/sched/mm.h>
+#include <linaos/sched.h>
+#include <linaos/pagemap.h>
+#include <linaos/writeback.h>
+#include <linaos/blkdev.h>
+#include <linaos/rbtree.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/btrfs.h>
+#include <linaos/sched/mm.h>
 
 #include "ctree.h"
 #include "transaction.h"

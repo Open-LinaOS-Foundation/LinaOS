@@ -7,17 +7,17 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linaos/module.h>
+#include <linaos/serio.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
 
 #define DRIVER_NAME		"xilinx_ps2"
 

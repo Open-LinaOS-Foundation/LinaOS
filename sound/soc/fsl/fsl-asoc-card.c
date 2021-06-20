@@ -6,10 +6,10 @@
 //
 // Author: Nicolin Chen <nicoleotsuka@gmail.com>
 
-#include <linux/clk.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linaos/clk.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
 #if IS_ENABLED(CONFIG_SND_AC97_CODEC)
 #include <sound/ac97_codec.h>
 #endif

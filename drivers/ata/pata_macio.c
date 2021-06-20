@@ -12,18 +12,18 @@
 #undef DEBUG
 #undef DEBUG_DMA
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/scatterlist.h>
-#include <linux/of.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/ata.h>
+#include <linaos/libata.h>
+#include <linaos/adb.h>
+#include <linaos/pmu.h>
+#include <linaos/scatterlist.h>
+#include <linaos/of.h>
+#include <linaos/gfp.h>
+#include <linaos/pci.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>

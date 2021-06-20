@@ -4,8 +4,8 @@
  * Copyright 2001-2008 S3 Graphics, Inc. All Rights Reserved.
 
  */
-#include <linux/via-core.h>
-#include <linux/via_i2c.h>
+#include <linaos/via-core.h>
+#include <linaos/via_i2c.h>
 #include "global.h"
 
 #define viafb_compact_res(x, y) (((x)<<16)|(y))

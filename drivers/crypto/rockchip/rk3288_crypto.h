@@ -5,9 +5,9 @@
 #include <crypto/aes.h>
 #include <crypto/internal/des.h>
 #include <crypto/algapi.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/scatterlist.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/scatterlist.h>
 #include <crypto/internal/hash.h>
 #include <crypto/internal/skcipher.h>
 

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
- *  Linux X.25 packet to device interface
+ *  LinaOS X.25 packet to device interface
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
 #ifndef _IF_X25_H
 #define _IF_X25_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Documentation/networking/x25-iface.rst */
 #define X25_IFACE_DATA		0x00

@@ -5,14 +5,14 @@
  * Counter driver for Texas Instruments Enhanced Quadrature Encoder Pulse (eQEP)
  */
 
-#include <linux/bitops.h>
-#include <linux/counter.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linaos/bitops.h>
+#include <linaos/counter.h>
+#include <linaos/kernel.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
 
 /* 32-bit registers */
 #define QPOSCNT		0x0

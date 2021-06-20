@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/devfreq/governor_passive.c
+ * linaos/drivers/devfreq/governor_passive.c
  *
  * Copyright (C) 2016 Samsung Electronics
  * Author: Chanwoo Choi <cw00.choi@samsung.com>
  * Author: MyungJoo Ham <myungjoo.ham@samsung.com>
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/devfreq.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/devfreq.h>
 #include "governor.h"
 
 static int devfreq_passive_get_target_freq(struct devfreq *devfreq,

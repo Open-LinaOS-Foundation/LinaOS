@@ -12,19 +12,19 @@
  * (c) 2011 Arvid Brodin <arvid.brodin@enea.com>
  *
  */
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/mm.h>
-#include <linux/timer.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/debugfs.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/mm.h>
+#include <linaos/timer.h>
 #include <asm/unaligned.h>
 #include <asm/cacheflush.h>
 

@@ -9,11 +9,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cpu.h>
-#include <linux/percpu-defs.h>
-#include <linux/slab.h>
-#include <linux/tick.h>
-#include <linux/sched/cpufreq.h>
+#include <linaos/cpu.h>
+#include <linaos/percpu-defs.h>
+#include <linaos/slab.h>
+#include <linaos/tick.h>
+#include <linaos/sched/cpufreq.h>
 
 #include "cpufreq_ondemand.h"
 

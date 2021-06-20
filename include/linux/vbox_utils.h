@@ -4,8 +4,8 @@
 #ifndef __VBOX_UTILS_H__
 #define __VBOX_UTILS_H__
 
-#include <linux/printk.h>
-#include <linux/vbox_vmmdev_types.h>
+#include <linaos/printk.h>
+#include <linaos/vbox_vmmdev_types.h>
 
 struct vbg_dev;
 
@@ -38,7 +38,7 @@ int vbg_hgcm_call(struct vbg_dev *gdev, u32 requestor, u32 client_id,
 		  int *vbox_status);
 
 /**
- * Convert a VirtualBox status code to a standard Linux kernel return value.
+ * Convert a VirtualBox status code to a standard LinaOS kernel return value.
  * Return: 0 or negative errno value.
  * @rc:			VirtualBox status code to convert.
  */

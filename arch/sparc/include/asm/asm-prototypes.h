@@ -6,12 +6,12 @@
 #include <asm/xor.h>
 #include <asm/checksum.h>
 #include <asm/trap_block.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/atomic.h>
 #include <asm/ftrace.h>
 #include <asm/cacheflush.h>
 #include <asm/oplib.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 void *__memscan_zero(void *, size_t);
 void *__memscan_generic(void *, int, size_t);

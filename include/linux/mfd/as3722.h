@@ -12,7 +12,7 @@
 #ifndef __LINUX_MFD_AS3722_H__
 #define __LINUX_MFD_AS3722_H__
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 /* AS3722 registers */
 #define AS3722_SD0_VOLTAGE_REG				0x00

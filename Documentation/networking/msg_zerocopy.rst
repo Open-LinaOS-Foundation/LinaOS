@@ -14,7 +14,7 @@ Opportunity and Caveats
 -----------------------
 
 Copying large buffers between user process and kernel can be
-expensive. Linux supports various interfaces that eschew copying,
+expensive. LinaOS supports various interfaces that eschew copying,
 such as sendpage and splice. The MSG_ZEROCOPY flag extends the
 underlying copy avoidance mechanism to common socket send calls.
 

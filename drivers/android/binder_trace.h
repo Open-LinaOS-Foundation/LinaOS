@@ -9,7 +9,7 @@
 #if !defined(_BINDER_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _BINDER_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 struct binder_buffer;
 struct binder_node;

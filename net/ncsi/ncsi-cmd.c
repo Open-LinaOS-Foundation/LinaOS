@@ -3,12 +3,12 @@
  * Copyright Gavin Shan, IBM Corporation 2016.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/etherdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
 
 #include <net/ncsi.h>
 #include <net/net_namespace.h>

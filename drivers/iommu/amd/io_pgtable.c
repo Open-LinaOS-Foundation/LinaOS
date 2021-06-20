@@ -9,14 +9,14 @@
 #define pr_fmt(fmt)     "AMD-Vi: " fmt
 #define dev_fmt(fmt)    pr_fmt(fmt)
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/io-pgtable.h>
-#include <linux/kernel.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/dma-mapping.h>
+#include <linaos/atomic.h>
+#include <linaos/bitops.h>
+#include <linaos/io-pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/barrier.h>
 

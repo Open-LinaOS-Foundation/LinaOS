@@ -6,12 +6,12 @@
  *
  */
 
-#include <linux/kgdb.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/notifier.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
+#include <linaos/kgdb.h>
+#include <linaos/string.h>
+#include <linaos/sched.h>
+#include <linaos/notifier.h>
+#include <linaos/kdebug.h>
+#include <linaos/uaccess.h>
 #include <asm/ptrace.h>
 #include <asm/traps.h>
 #include <asm/processor.h>

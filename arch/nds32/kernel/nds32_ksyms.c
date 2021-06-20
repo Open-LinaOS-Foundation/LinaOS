@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/in6.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/in6.h>
+#include <linaos/syscalls.h>
+#include <linaos/uaccess.h>
 
 #include <asm/checksum.h>
 #include <asm/io.h>

@@ -6,7 +6,7 @@
 #  of kbuild code, which is not credited, but mostly developed by:
 #
 #  Copyright (C) Sam Ravnborg <sam@mars.ravnborg.org>, 2015
-#  Copyright (C) Linus Torvalds <torvalds@linux-foundation.org>, 2015
+#  Copyright (C) Linus Torvalds <torvalds@linaos-foundation.org>, 2015
 #
 
 PHONY := __build

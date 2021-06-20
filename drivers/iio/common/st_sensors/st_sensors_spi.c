@@ -7,14 +7,14 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/iio/iio.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/iio/iio.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
 
-#include <linux/iio/common/st_sensors_spi.h>
+#include <linaos/iio/common/st_sensors_spi.h>
 #include "st_sensors_core.h"
 
 #define ST_SENSORS_SPI_MULTIREAD	0xc0

@@ -21,16 +21,16 @@
  * Note if you know that you won't have an FPU, then you'll get much
  * better performance by compiling with -msoft-float!
  */
-#include <linux/sched.h>
-#include <linux/debugfs.h>
-#include <linux/percpu-defs.h>
-#include <linux/perf_event.h>
+#include <linaos/sched.h>
+#include <linaos/debugfs.h>
+#include <linaos/percpu-defs.h>
+#include <linaos/perf_event.h>
 
 #include <asm/branch.h>
 #include <asm/inst.h>
 #include <asm/ptrace.h>
 #include <asm/signal.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <asm/cpu-info.h>
 #include <asm/processor.h>
@@ -770,7 +770,7 @@ int isBranchInstr(struct pt_regs *regs, struct mm_decoded_insn dec_insn,
 }
 
 /*
- * In the Linux kernel, we support selection of FPR format on the
+ * In the LinaOS kernel, we support selection of FPR format on the
  * basis of the Status.FR bit.	If an FPU is not present, the FR bit
  * is hardwired to zero, which would imply a 32-bit FPU even for
  * 64-bit CPUs so we rather look at TIF_32BIT_FPREGS.
@@ -1010,7 +1010,7 @@ static int cop1Emulate(struct pt_regs *xcp, struct mips_fpu_struct *ctx,
 		 * would have had a trap for that instruction, and would not
 		 * come through this route.
 		 *
-		 * Linux MIPS branch emulator operates on context, updating the
+		 * LinaOS MIPS branch emulator operates on context, updating the
 		 * cp0_epc.
 		 */
 		ir = dec_insn.next_insn;  /* process delay slot instr */

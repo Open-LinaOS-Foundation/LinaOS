@@ -6,8 +6,8 @@
  ******************************************************************************/
 #define _HAL_INIT_C_
 
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <linaos/firmware.h>
+#include <linaos/slab.h>
 #include <drv_types.h>
 #include <rtw_debug.h>
 #include <rtl8723b_hal.h>

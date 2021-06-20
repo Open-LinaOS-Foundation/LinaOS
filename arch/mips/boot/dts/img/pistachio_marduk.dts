@@ -53,7 +53,7 @@
 			label = "marduk:red:heartbeat";
 			pwms = <&pwm 3 300000>;
 			max-brightness = <255>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 
@@ -61,12 +61,12 @@
 		compatible = "gpio-keys";
 		button@1 {
 			label = "Button 1";
-			linux,code = <0x101>; /* BTN_1 */
+			linaos,code = <0x101>; /* BTN_1 */
 			gpios = <&gpio3 6 GPIO_ACTIVE_LOW>;
 		};
 		button@2 {
 			label = "Button 2";
-			linux,code = <0x102>; /* BTN_2 */
+			linaos,code = <0x102>; /* BTN_2 */
 			gpios = <&gpio2 14 GPIO_ACTIVE_LOW>;
 		};
 	};

@@ -8,9 +8,9 @@
 #ifndef __LINUX_USB_OF_H
 #define __LINUX_USB_OF_H
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/phy.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/otg.h>
+#include <linaos/usb/phy.h>
 
 struct usb_device;
 

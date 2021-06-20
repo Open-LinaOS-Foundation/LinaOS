@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright 2019 Linaro, Ltd, Rob Herring <robh@kernel.org> */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/dma-buf.h>
+#include <linaos/dma-mapping.h>
 
 #include <drm/panfrost_drm.h>
 #include "panfrost_device.h"

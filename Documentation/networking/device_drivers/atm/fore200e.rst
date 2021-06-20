@@ -5,7 +5,7 @@ FORE Systems PCA-200E/SBA-200E ATM NIC driver
 =============================================
 
 This driver adds support for the FORE Systems 200E-series ATM adapters
-to the Linux operating system. It is based on the earlier PCA-200E driver
+to the LinaOS operating system. It is based on the earlier PCA-200E driver
 written by Uwe Dannowski.
 
 The driver simultaneously supports PCA-200E and SBA-200E adapters on
@@ -23,7 +23,7 @@ Firmware Copyright Notice
 -------------------------
 
 Please read the fore200e_firmware_copyright file present
-in the linux/drivers/atm directory for details and restrictions.
+in the linaos/drivers/atm directory for details and restrictions.
 
 
 Firmware Updates
@@ -51,7 +51,7 @@ Name and location of the new firmware images can be set at kernel
 configuration time:
 
 1. Copy the new firmware binary files (with .bin, .bin1 or .bin2 suffix)
-   to some directory, such as linux/drivers/atm.
+   to some directory, such as linaos/drivers/atm.
 
 2. Reconfigure your kernel to set the new firmware name and location.
    Expected pathnames are absolute or relative to the drivers/atm directory.

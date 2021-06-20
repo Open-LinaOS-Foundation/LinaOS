@@ -3,12 +3,12 @@
 #define _LINUX_STRING_H_
 
 
-#include <linux/compiler.h>	/* for inline */
-#include <linux/types.h>	/* for size_t */
-#include <linux/stddef.h>	/* for NULL */
-#include <linux/errno.h>	/* for E2BIG */
+#include <linaos/compiler.h>	/* for inline */
+#include <linaos/types.h>	/* for size_t */
+#include <linaos/stddef.h>	/* for NULL */
+#include <linaos/errno.h>	/* for E2BIG */
 #include <stdarg.h>
-#include <uapi/linux/string.h>
+#include <uapi/linaos/string.h>
 
 extern char *strndup_user(const char __user *, long);
 extern void *memdup_user(const void __user *, size_t);
@@ -266,7 +266,7 @@ void __read_overflow3(void) __compiletime_error("detected read beyond size of ob
 void __write_overflow(void) __compiletime_error("detected write beyond size of object passed as 1st parameter");
 
 #if !defined(__NO_FORTIFY) && defined(__OPTIMIZE__) && defined(CONFIG_FORTIFY_SOURCE)
-#include <linux/fortify-string.h>
+#include <linaos/fortify-string.h>
 #endif
 
 /**

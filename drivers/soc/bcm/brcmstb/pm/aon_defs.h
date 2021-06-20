@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Always ON (AON) register interface between bootloader and Linux
+ * Always ON (AON) register interface between bootloader and LinaOS
  *
  * Copyright © 2014-2017 Broadcom
  */
@@ -8,7 +8,7 @@
 #ifndef __BRCMSTB_AON_DEFS_H__
 #define __BRCMSTB_AON_DEFS_H__
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 /* Magic number in upper 16-bits */
 #define BRCMSTB_S3_MAGIC_MASK                   0xffff0000
@@ -26,7 +26,7 @@ enum {
 
 	/*
 	 * Modification of this bit reserved for bootloader only.
-	 * 1=PSCI started Linux, 0=Direct jump to Linux.
+	 * 1=PSCI started LinaOS, 0=Direct jump to LinaOS.
 	 */
 	S3_FLAG_PSCI_BOOT		= (1 << 3),
 

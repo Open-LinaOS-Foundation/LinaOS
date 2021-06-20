@@ -8,7 +8,7 @@
 #ifndef CC770_DEV_H
 #define CC770_DEV_H
 
-#include <linux/can/dev.h>
+#include <linaos/can/dev.h>
 
 struct cc770_msgobj {
 	u8 ctrl0;
@@ -90,7 +90,7 @@ struct cc770_regs {
  * Clock Out Register (0x1f)
  * Bus Configuration Register (0x2f)
  *
- * see include/linux/can/platform/cc770.h
+ * see include/linaos/can/platform/cc770.h
  */
 
 /* Message Control Register 0 (Base Address + 0x0) */

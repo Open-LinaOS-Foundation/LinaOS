@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0+ WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0+ WITH LinaOS-syscall-note) OR BSD-3-Clause) */
 /*
  * Freescale hypervisor ioctl and kernel interface
  *
@@ -41,7 +41,7 @@
 #ifndef _UAPIFSL_HYPERVISOR_H
 #define _UAPIFSL_HYPERVISOR_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * struct fsl_hv_ioctl_restart - restart a partition

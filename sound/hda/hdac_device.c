@@ -3,13 +3,13 @@
  * HD-audio codec core device
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/pm_runtime.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/export.h>
+#include <linaos/pm_runtime.h>
 #include <sound/hdaudio.h>
 #include <sound/hda_regmap.h>
 #include <sound/pcm.h>

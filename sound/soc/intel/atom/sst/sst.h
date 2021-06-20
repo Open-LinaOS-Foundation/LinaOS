@@ -16,7 +16,7 @@
 #ifndef __SST_H__
 #define __SST_H__
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 /* driver names */
 #define SST_DRV_NAME "intel_sst_driver"

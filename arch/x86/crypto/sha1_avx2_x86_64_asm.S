@@ -21,7 +21,7 @@
  * Ilya Albrekht <ilya.albrekht@intel.com>
  * Maxim Locktyukhin <maxim.locktyukhin@intel.com>
  * Ronen Zohar <ronen.zohar@intel.com>
- * Chandramouli Narayanan <mouli@linux.intel.com>
+ * Chandramouli Narayanan <mouli@linaos.intel.com>
  *
  * BSD LICENSE
  *
@@ -69,7 +69,7 @@
  *	struct sha1_state *state, const u8* input, int blocks );
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #define	CTX	%rdi	/* arg1 */
 #define BUF	%rsi	/* arg2 */

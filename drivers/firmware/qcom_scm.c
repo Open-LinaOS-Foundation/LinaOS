@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2010,2015,2019 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2010,2015,2019 The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2015 Linaro Ltd.
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/cpumask.h>
-#include <linux/export.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/qcom_scm.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
-#include <linux/reset-controller.h>
-#include <linux/arm-smccc.h>
+#include <linaos/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/cpumask.h>
+#include <linaos/export.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/qcom_scm.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/clk.h>
+#include <linaos/reset-controller.h>
+#include <linaos/arm-smccc.h>
 
 #include "qcom_scm.h"
 
@@ -265,7 +265,7 @@ static bool __qcom_scm_is_call_available(struct device *dev, u32 svc_id,
  * @entry: Entry point function for the cpus
  * @cpus: The cpumask of cpus that will use the entry point
  *
- * Set the Linux entry point for the SCM to transfer control to when coming
+ * Set the LinaOS entry point for the SCM to transfer control to when coming
  * out of a power down. CPU power down may be executed on cpuidle or hotplug.
  */
 int qcom_scm_set_warm_boot_addr(void *entry, const cpumask_t *cpus)

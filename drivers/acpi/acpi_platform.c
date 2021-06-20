@@ -3,19 +3,19 @@
  * ACPI support for platform bus type.
  *
  * Copyright (C) 2012, Intel Corporation
- * Authors: Mika Westerberg <mika.westerberg@linux.intel.com>
- *          Mathias Nyman <mathias.nyman@linux.intel.com>
+ * Authors: Mika Westerberg <mika.westerberg@linaos.intel.com>
+ *          Mathias Nyman <mathias.nyman@linaos.intel.com>
  *          Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
 
 #include "internal.h"
 

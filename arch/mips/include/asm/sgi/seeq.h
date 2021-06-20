@@ -8,7 +8,7 @@
 #ifndef __ASM_SGI_SEEQ_H
 #define __ASM_SGI_SEEQ_H
 
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 
 #include <asm/sgi/hpc3.h>
 

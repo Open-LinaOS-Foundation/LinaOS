@@ -24,9 +24,9 @@ struct route_info {
 #include <net/ip6_fib.h>
 #include <net/sock.h>
 #include <net/lwtunnel.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/route.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/route.h>
 #include <net/nexthop.h>
 
 #define RT6_LOOKUP_F_IFACE		0x00000001

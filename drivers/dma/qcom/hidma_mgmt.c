@@ -2,22 +2,22 @@
 /*
  * Qualcomm Technologies HIDMA DMA engine Management interface
  *
- * Copyright (c) 2015-2017, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2017, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/dmaengine.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/acpi.h>
+#include <linaos/of.h>
+#include <linaos/property.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/bitops.h>
+#include <linaos/dma-mapping.h>
 
 #include "hidma_mgmt.h"
 

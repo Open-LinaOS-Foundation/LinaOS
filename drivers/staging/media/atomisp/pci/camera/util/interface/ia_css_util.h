@@ -16,7 +16,7 @@
 #ifndef __IA_CSS_UTIL_H__
 #define __IA_CSS_UTIL_H__
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 #include <ia_css_err.h>
 #include <type_support.h>

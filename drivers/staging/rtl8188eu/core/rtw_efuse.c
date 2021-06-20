@@ -9,7 +9,7 @@
 #include <osdep_service.h>
 #include <drv_types.h>
 #include <rtw_efuse.h>
-#include <usb_ops_linux.h>
+#include <usb_ops_linaos.h>
 #include <rtl8188e_hal.h>
 #include <rtw_iol.h>
 

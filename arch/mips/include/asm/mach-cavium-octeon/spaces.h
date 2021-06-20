@@ -8,7 +8,7 @@
 #ifndef _ASM_MACH_CAVIUM_OCTEON_SPACES_H
 #define _ASM_MACH_CAVIUM_OCTEON_SPACES_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 #ifdef CONFIG_64BIT
 /* They are all the same and some OCTEON II cores cannot handle 0xa8.. */

@@ -11,15 +11,15 @@
  *
  * Copyright (C) IBM Corporation, 2009
  *
- * Author: K.Prasad <prasad@linux.vnet.ibm.com>
+ * Author: K.Prasad <prasad@linaos.vnet.ibm.com>
  */
-#include <linux/module.h>	/* Needed by all modules */
-#include <linux/kernel.h>	/* Needed for KERN_INFO */
-#include <linux/init.h>		/* Needed for the macros */
-#include <linux/kallsyms.h>
+#include <linaos/module.h>	/* Needed by all modules */
+#include <linaos/kernel.h>	/* Needed for KERN_INFO */
+#include <linaos/init.h>		/* Needed for the macros */
+#include <linaos/kallsyms.h>
 
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
+#include <linaos/perf_event.h>
+#include <linaos/hw_breakpoint.h>
 
 struct perf_event * __percpu *sample_hbp;
 

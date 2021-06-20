@@ -2,19 +2,19 @@
 #ifndef B43legacy_H_
 #define B43legacy_H_
 
-#include <linux/hw_random.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/stringify.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/atomic.h>
-#include <linux/io.h>
+#include <linaos/hw_random.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/stringify.h>
+#include <linaos/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/atomic.h>
+#include <linaos/io.h>
 
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_driver_chipcommon.h>
-#include <linux/completion.h>
+#include <linaos/ssb/ssb.h>
+#include <linaos/ssb/ssb_driver_chipcommon.h>
+#include <linaos/completion.h>
 
 #include <net/mac80211.h>
 

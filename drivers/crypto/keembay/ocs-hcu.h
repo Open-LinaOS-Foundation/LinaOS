@@ -5,7 +5,7 @@
  * Copyright (C) 2018-2020 Intel Corporation
  */
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 
 #ifndef _CRYPTO_OCS_HCU_H
 #define _CRYPTO_OCS_HCU_H

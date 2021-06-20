@@ -4,9 +4,9 @@ Required properties:
 
 - compatible     : 'manufacturer,model', eg. nuvoton,npct650
 - label          : human readable string describing the device, eg. "tpm"
-- linux,sml-base : 64-bit base address of the reserved memory allocated for
+- linaos,sml-base : 64-bit base address of the reserved memory allocated for
                    the firmware event log
-- linux,sml-size : size of the memory allocated for the firmware event log
+- linaos,sml-size : size of the memory allocated for the firmware event log
 
 Optional properties:
 
@@ -21,6 +21,6 @@ tpm@57 {
 	reg = <0x57>;
 	label = "tpm";
 	compatible = "nuvoton,npct650", "nuvoton,npct601";
-	linux,sml-base = <0x7f 0xfd450000>;
-	linux,sml-size = <0x10000>;
+	linaos,sml-base = <0x7f 0xfd450000>;
+	linaos,sml-size = <0x10000>;
 };

@@ -7,10 +7,10 @@
  * Copyright (C) 2018 Martin Blumenstingl <martin.blumenstingl@googlemail.com>
  */
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/phy/phy.h>
-#include <linux/of.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/phy/phy.h>
+#include <linaos/of.h>
 
 #include "phy.h"
 

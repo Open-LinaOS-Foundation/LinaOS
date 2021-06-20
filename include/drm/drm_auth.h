@@ -28,9 +28,9 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/idr.h>
-#include <linux/kref.h>
-#include <linux/wait.h>
+#include <linaos/idr.h>
+#include <linaos/kref.h>
+#include <linaos/wait.h>
 
 struct drm_file;
 struct drm_hw_lock;

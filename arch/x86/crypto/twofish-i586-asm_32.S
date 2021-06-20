@@ -7,7 +7,7 @@
 .file "twofish-i586-asm.S"
 .text
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asm-offsets.h>
 
 /* return address at 0 */

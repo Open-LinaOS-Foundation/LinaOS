@@ -3,8 +3,8 @@
  * Copyright (c) 2014-2015 Hisilicon Limited.
  */
 
-#include <linux/delay.h>
-#include <linux/of_mdio.h>
+#include <linaos/delay.h>
+#include <linaos/of_mdio.h>
 #include "hns_dsaf_main.h"
 #include "hns_dsaf_mac.h"
 #include "hns_dsaf_gmac.h"

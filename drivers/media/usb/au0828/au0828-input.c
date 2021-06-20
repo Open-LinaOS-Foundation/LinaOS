@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0+
-// handle au0828 IR remotes via linux kernel input layer.
+// handle au0828 IR remotes via linaos kernel input layer.
 //
 // Copyright (c) 2014 Mauro Carvalho Chehab <mchehab@samsung.com>
 // Copyright (c) 2014 Samsung Electronics Co., Ltd.
@@ -8,12 +8,12 @@
 
 #include "au0828.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/usb.h>
+#include <linaos/slab.h>
 #include <media/rc-core.h>
 
 static int disable_ir;

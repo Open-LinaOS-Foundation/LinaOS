@@ -5,8 +5,8 @@
 import gdb
 import sys
 
-from linux.utils import CachedType
-from linux.lists import list_for_each_entry
+from linaos.utils import CachedType
+from linaos.lists import list_for_each_entry
 
 generic_pm_domain_type = CachedType('struct generic_pm_domain')
 pm_domain_data_type = CachedType('struct pm_domain_data')

@@ -20,7 +20,7 @@ Sub-nodes:
   - #address-cells: Must be 1.
   - #size-cells: Must be 0.
   Each led node should contain "reg", which used as LED ID (described below).
-  Optional properties "label" and "linux,default-trigger" is described in
+  Optional properties "label" and "linaos,default-trigger" is described in
   Documentation/devicetree/bindings/leds/common.txt.
 - regulators : Contain the regulator nodes. The regulators are bound using
   their names as listed below with their registers and bits for enabling.
@@ -133,7 +133,7 @@ ecspi@70010000 { /* ECSPI1 */
 			sysled@3 {
 				reg = <3>;
 				label = "system:red:live";
-				linux,default-trigger = "heartbeat";
+				linaos,default-trigger = "heartbeat";
 			};
 		};
 

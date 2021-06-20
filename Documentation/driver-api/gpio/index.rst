@@ -19,7 +19,7 @@ Contents:
 Core
 ====
 
-.. kernel-doc:: include/linux/gpio/driver.h
+.. kernel-doc:: include/linaos/gpio/driver.h
    :internal:
 
 .. kernel-doc:: drivers/gpio/gpiolib.c

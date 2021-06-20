@@ -5,11 +5,11 @@
  *
  * Author: Andi Kleen
  */
-#include <linux/kernel.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/debugfs.h>
+#include <linaos/uaccess.h>
 
 #include <asm/mce.h>
 #include <asm/intel-family.h>

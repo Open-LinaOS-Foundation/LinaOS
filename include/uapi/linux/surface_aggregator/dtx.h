@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Surface DTX (clipboard detachment system driver) user-space interface.
  *
@@ -12,8 +12,8 @@
 #ifndef _UAPI_LINUX_SURFACE_AGGREGATOR_DTX_H
 #define _UAPI_LINUX_SURFACE_AGGREGATOR_DTX_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <linaos/ioctl.h>
+#include <linaos/types.h>
 
 /* Status/error categories */
 #define SDTX_CATEGORY_STATUS		0x0000

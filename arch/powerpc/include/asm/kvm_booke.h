@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  *
- * Copyright SUSE Linux Products GmbH 2010
+ * Copyright SUSE LinaOS Products GmbH 2010
  *
  * Authors: Alexander Graf <agraf@suse.de>
  */
@@ -9,8 +9,8 @@
 #ifndef __ASM_KVM_BOOKE_H__
 #define __ASM_KVM_BOOKE_H__
 
-#include <linux/types.h>
-#include <linux/kvm_host.h>
+#include <linaos/types.h>
+#include <linaos/kvm_host.h>
 
 /*
  * Number of available lpids. Only the low-order 6 bits of LPID rgister are

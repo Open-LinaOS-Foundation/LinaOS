@@ -6,11 +6,11 @@
 //
 // Author: Codrin Ciubotariu <codrin.ciubotariu@microchip.com>
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/spinlock.h>
 
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>

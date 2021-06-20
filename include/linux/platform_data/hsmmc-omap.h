@@ -47,7 +47,7 @@ struct omap_hsmmc_platform_data {
 
 	/*
 	 * 4/8 wires and any additional host capabilities
-	 * need to OR'd all capabilities (ref. linux/mmc/host.h)
+	 * need to OR'd all capabilities (ref. linaos/mmc/host.h)
 	 */
 	u32 caps;	/* Used for the MMC driver on 2430 and later */
 	u32 pm_caps;	/* PM capabilities of the mmc */

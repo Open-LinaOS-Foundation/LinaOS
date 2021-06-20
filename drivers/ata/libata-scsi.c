@@ -13,12 +13,12 @@
  *  - http://www.t13.org/
  */
 
-#include <linux/compat.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <linaos/compat.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/blkdev.h>
+#include <linaos/spinlock.h>
+#include <linaos/export.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
@@ -26,13 +26,13 @@
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_tcq.h>
 #include <scsi/scsi_transport.h>
-#include <linux/libata.h>
-#include <linux/hdreg.h>
-#include <linux/uaccess.h>
-#include <linux/suspend.h>
+#include <linaos/libata.h>
+#include <linaos/hdreg.h>
+#include <linaos/uaccess.h>
+#include <linaos/suspend.h>
 #include <asm/unaligned.h>
-#include <linux/ioprio.h>
-#include <linux/of.h>
+#include <linaos/ioprio.h>
+#include <linaos/of.h>
 
 #include "libata.h"
 #include "libata-transport.h"
@@ -2058,7 +2058,7 @@ static unsigned int ata_scsiop_inq_89(struct ata_scsi_args *args, u8 *rbuf)
 	rbuf[2] = (0x238 >> 8);		/* page size fixed at 238h */
 	rbuf[3] = (0x238 & 0xff);
 
-	memcpy(&rbuf[8], "linux   ", 8);
+	memcpy(&rbuf[8], "linaos   ", 8);
 	memcpy(&rbuf[16], "libata          ", 16);
 	memcpy(&rbuf[32], DRV_VERSION, 4);
 
@@ -2570,7 +2570,7 @@ static void atapi_request_sense(struct ata_queued_cmd *qc)
  * ATAPI devices typically report zero for their SCSI version, and sometimes
  * deviate from the spec WRT response data format.  If SCSI version is
  * reported as zero like normal, then we make the following fixups:
- *   1) Fake MMC-5 version, to indicate to the Linux scsi midlayer this is a
+ *   1) Fake MMC-5 version, to indicate to the LinaOS scsi midlayer this is a
  *	modern device.
  *   2) Ensure response data format / ATAPI information are always correct.
  */

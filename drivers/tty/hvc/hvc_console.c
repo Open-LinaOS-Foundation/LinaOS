@@ -9,26 +9,26 @@
  *  Ryan S. Arnold <rsa@us.ibm.com>
  */
 
-#include <linux/console.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/kbd_kern.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/list.h>
-#include <linux/major.h>
-#include <linux/atomic.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/slab.h>
-#include <linux/serial_core.h>
+#include <linaos/console.h>
+#include <linaos/cpumask.h>
+#include <linaos/init.h>
+#include <linaos/kbd_kern.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
+#include <linaos/list.h>
+#include <linaos/major.h>
+#include <linaos/atomic.h>
+#include <linaos/sysrq.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/freezer.h>
+#include <linaos/slab.h>
+#include <linaos/serial_core.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "hvc_console.h"
 

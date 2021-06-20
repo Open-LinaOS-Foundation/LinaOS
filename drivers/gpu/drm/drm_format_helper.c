@@ -8,9 +8,9 @@
  * (at your option) any later version.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 
 #include <drm/drm_format_helper.h>
 #include <drm/drm_framebuffer.h>

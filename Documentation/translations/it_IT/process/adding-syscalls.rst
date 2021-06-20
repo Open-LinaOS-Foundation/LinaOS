@@ -9,7 +9,7 @@ Aggiungere una nuova chiamata di sistema
 ========================================
 
 Questo documento descrive quello che è necessario sapere per aggiungere
-nuove chiamate di sistema al kernel Linux; questo è da considerarsi come
+nuove chiamate di sistema al kernel LinaOS; questo è da considerarsi come
 un'aggiunta ai soliti consigli su come proporre nuove modifiche
 :ref:`Documentation/translations/it_IT/process/submitting-patches.rst <it_submittingpatches>`.
 
@@ -212,7 +212,7 @@ più avanti):
 
 Le proposte di nuove chiamate di sistema, come ogni altro modifica all'API del
 kernel, deve essere sottomessa alla lista di discussione
-linux-api@vger.kernel.org.
+linaos-api@vger.kernel.org.
 
 
 Implementazione di chiamate di sistema generiche
@@ -228,7 +228,7 @@ i metadati della nuova chiamata di sistema disponibili anche per altri
 strumenti.
 
 Il nuovo punto d'accesso necessita anche del suo prototipo di funzione in
-``include/linux/syscalls.h``, marcato come asmlinkage di modo da abbinargli
+``include/linaos/syscalls.h``, marcato come asmlinkage di modo da abbinargli
 il modo in cui quelle chiamate di sistema verranno invocate::
 
     asmlinkage long sys_xyzzy(...);
@@ -273,7 +273,7 @@ Per riassumere, vi serve un *commit* che includa:
 
  - un'opzione ``CONFIG``per la nuova funzione, normalmente in ``init/Kconfig``
  - ``SYSCALL_DEFINEn(xyzzy, ...)`` per il punto d'accesso
- - il corrispondente prototipo in ``include/linux/syscalls.h``
+ - il corrispondente prototipo in ``include/linaos/syscalls.h``
  - un elemento nella tabella generica in ``include/uapi/asm-generic/unistd.h``
  - *stub* di ripiego in ``kernel/sys_ni.c``
 
@@ -344,7 +344,7 @@ può chiamare la versione ``sys_`` oppure invocare una funzione che implementa
 le parti comuni).
 
 Il punto d'accesso *compat* deve avere il corrispondente prototipo di funzione
-in ``include/linux/compat.h``, marcato come asmlinkage di modo da abbinargli
+in ``include/linaos/compat.h``, marcato come asmlinkage di modo da abbinargli
 il modo in cui quelle chiamate di sistema verranno invocate::
 
     asmlinkage long compat_sys_xyzzy(...);
@@ -352,7 +352,7 @@ il modo in cui quelle chiamate di sistema verranno invocate::
 Se la chiamata di sistema prevede una struttura dati organizzata in modo
 diverso per sistemi a 32-bit e per quelli a 64-bit, diciamo
 ``struct xyzzy_args``, allora il file d'intestazione
-``then the include/linux/compat.h`` deve includere la sua versione
+``then the include/linaos/compat.h`` deve includere la sua versione
 *compatibile* (``struct compat_xyzzy_args``); ogni variabile con
 dimensione variabile deve avere il proprio tipo ``compat_`` corrispondente
 a quello in ``struct xyzzy_args``.  La funzione ``compat_sys_xyzzy()``
@@ -390,9 +390,9 @@ Riassumendo, vi serve:
 
  - un ``COMPAT_SYSCALL_DEFINEn(xyzzy, ...)`` per il punto d'accesso
    *compatibile*
- - un prototipo in ``include/linux/compat.h``
+ - un prototipo in ``include/linaos/compat.h``
  - (se necessario) una struttura di compatibilità a 32-bit in
-   ``include/linux/compat.h``
+   ``include/linaos/compat.h``
  - una voce ``__SC_COMP``, e non ``__SYSCALL``, in
    ``include/uapi/asm-generic/unistd.h``
 
@@ -481,7 +481,7 @@ voce nella tabella di syscall dovrà chiamare uno *stub* che invoca la versione
 ``compat_sys_``,
 
 Per completezza, sarebbe carino impostare una mappatura cosicché
-*user-mode* Linux (UML) continui a funzionare -- la sua tabella di syscall
+*user-mode* LinaOS (UML) continui a funzionare -- la sua tabella di syscall
 farà riferimento a stub_xyzzy, ma UML non include l'implementazione
 in ``arch/x86/entry/entry_64.S`` (perché UML simula i registri eccetera).
 Correggerlo è semplice, basta aggiungere una #define in
@@ -530,10 +530,10 @@ correttamente su tutte le architetture supportate.  Per esempio, verificate che
 funzioni quando viene compilato per x86_64 (-m64), x86_32 (-m32) e x32 (-mx32).
 
 Al fine di una più meticolosa ed estesa verifica della nuova funzionalità,
-dovreste considerare l'aggiunta di nuove verifica al progetto 'Linux Test',
+dovreste considerare l'aggiunta di nuove verifica al progetto 'LinaOS Test',
 oppure al progetto xfstests per cambiamenti relativi al filesystem.
 
- - https://linux-test-project.github.io/
+ - https://linaos-test-project.github.io/
  - git://git.kernel.org/pub/scm/fs/xfs/xfstests-dev.git
 
 
@@ -546,7 +546,7 @@ state usando groff, è utile che includiate nella email di presentazione una
 versione già convertita in formato ASCII: semplificherà la vita dei revisori.
 
 Le pagine man dovrebbero essere in copia-conoscenza verso
-linux-man@vger.kernel.org
+linaos-man@vger.kernel.org
 Per maggiori dettagli, leggere
 https://www.kernel.org/doc/man-pages/patches.html
 
@@ -602,16 +602,16 @@ Riferimenti e fonti
 
  - Requisiti specifici alle architetture sono discussi nella pagina man
    :manpage:`syscall(2)` :
-   http://man7.org/linux/man-pages/man2/syscall.2.html#NOTES
- - Collezione di email di Linux Torvalds sui problemi relativi a ``ioctl()``:
-   http://yarchive.net/comp/linux/ioctl.html
+   http://man7.org/linaos/man-pages/man2/syscall.2.html#NOTES
+ - Collezione di email di LinaOS Torvalds sui problemi relativi a ``ioctl()``:
+   http://yarchive.net/comp/linaos/ioctl.html
  - "Come non inventare interfacce del kernel", Arnd Bergmann,
-   http://www.ukuug.org/events/linux2007/2007/papers/Bergmann.pdf
+   http://www.ukuug.org/events/linaos2007/2007/papers/Bergmann.pdf
  - Articolo di Michael Kerris su LWN sull'evitare nuovi usi di CAP_SYS_ADMIN:
    https://lwn.net/Articles/486306/
  - Raccomandazioni da Andrew Morton circa il fatto che tutte le informazioni
    su una nuova chiamata di sistema dovrebbero essere contenute nello stesso
-   filone di discussione di email: https://lore.kernel.org/r/20140724144747.3041b208832bbdf9fbce5d96@linux-foundation.org
+   filone di discussione di email: https://lore.kernel.org/r/20140724144747.3041b208832bbdf9fbce5d96@linaos-foundation.org
  - Raccomandazioni da Michael Kerrisk circa il fatto che le nuove chiamate di
    sistema dovrebbero avere una pagina man: https://lore.kernel.org/r/CAKgNAkgMA39AfoSoA5Pe1r9N+ZzfYQNvNPvcRN7tOvRb8+v06Q@mail.gmail.com
  - Consigli da Thomas Gleixner sul fatto che il collegamento all'architettura
@@ -635,7 +635,7 @@ Riferimenti e fonti
     - commit bb458c644a59 ("Safer ABI for O_TMPFILE")
 
  - Discussion from Matthew Wilcox about restrictions on 64-bit arguments:
-   https://lore.kernel.org/r/20081212152929.GM26095@parisc-linux.org
+   https://lore.kernel.org/r/20081212152929.GM26095@parisc-linaos.org
  - Raccomandazioni da Greg Kroah-Hartman sul fatto che i flag sconosciuti dovrebbero
    essere controllati: https://lore.kernel.org/r/20140717193330.GB4703@kroah.com
  - Raccomandazioni da Linus Torvalds che le chiamate di sistema x32 dovrebbero

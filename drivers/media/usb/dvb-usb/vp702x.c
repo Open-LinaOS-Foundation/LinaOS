@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* DVB USB compliant Linux driver for the TwinhanDTV StarBox USB2.0 DVB-S
+/* DVB USB compliant LinaOS driver for the TwinhanDTV StarBox USB2.0 DVB-S
  * receiver.
  *
  * Copyright (C) 2005 Ralph Metzler <rjkm@metzlerbros.de>
@@ -12,7 +12,7 @@
  * see Documentation/driver-api/media/drivers/dvb-usb.rst for more information
  */
 #include "vp702x.h"
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 
 /* debug */
 int dvb_usb_vp702x_debug;

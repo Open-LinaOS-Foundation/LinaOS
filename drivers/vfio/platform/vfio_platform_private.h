@@ -7,9 +7,9 @@
 #ifndef VFIO_PLATFORM_PRIVATE_H
 #define VFIO_PLATFORM_PRIVATE_H
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/vfio.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/vfio.h>
 
 #define VFIO_PLATFORM_OFFSET_SHIFT   40
 #define VFIO_PLATFORM_OFFSET_MASK (((u64)(1) << VFIO_PLATFORM_OFFSET_SHIFT) - 1)

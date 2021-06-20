@@ -9,21 +9,21 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/cache.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/cache.h>
+#include <linaos/err.h>
+#include <linaos/device.h>
+#include <linaos/cpu.h>
+#include <linaos/pgtable.h>
 
 #include <asm/ptrace.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/irq.h>
 #include <asm/page.h>
 #include <asm/io.h>

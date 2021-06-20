@@ -2,7 +2,7 @@
 #ifndef __LINUX_SMP_TYPES_H
 #define __LINUX_SMP_TYPES_H
 
-#include <linux/llist.h>
+#include <linaos/llist.h>
 
 enum {
 	CSD_FLAG_LOCK		= 0x01,

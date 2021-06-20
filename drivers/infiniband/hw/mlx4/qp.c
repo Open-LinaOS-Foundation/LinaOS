@@ -31,11 +31,11 @@
  * SOFTWARE.
  */
 
-#include <linux/log2.h>
-#include <linux/etherdevice.h>
+#include <linaos/log2.h>
+#include <linaos/etherdevice.h>
 #include <net/ip.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
 
 #include <rdma/ib_cache.h>
 #include <rdma/ib_pack.h>
@@ -43,8 +43,8 @@
 #include <rdma/ib_mad.h>
 #include <rdma/uverbs_ioctl.h>
 
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/qp.h>
+#include <linaos/mlx4/driver.h>
+#include <linaos/mlx4/qp.h>
 
 #include "mlx4_ib.h"
 #include <rdma/mlx4-abi.h>

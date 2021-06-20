@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 /* Crude resource management */
-#include <linux/spinlock.h>
-#include <linux/genalloc.h>
-#include <linux/ratelimit.h>
+#include <linaos/spinlock.h>
+#include <linaos/genalloc.h>
+#include <linaos/ratelimit.h>
 #include "iw_cxgb4.h"
 
 static int c4iw_init_qid_table(struct c4iw_rdev *rdev)
@@ -257,7 +257,7 @@ void c4iw_destroy_resource(struct c4iw_resource *rscp)
 }
 
 /*
- * PBL Memory Manager.  Uses Linux generic allocator.
+ * PBL Memory Manager.  Uses LinaOS generic allocator.
  */
 
 #define MIN_PBL_SHIFT 8			/* 256B == min PBL size (32 entries) */
@@ -336,7 +336,7 @@ void c4iw_pblpool_destroy(struct c4iw_rdev *rdev)
 }
 
 /*
- * RQT Memory Manager.  Uses Linux generic allocator.
+ * RQT Memory Manager.  Uses LinaOS generic allocator.
  */
 
 #define MIN_RQT_SHIFT 10	/* 1KB == min RQT size (16 entries) */

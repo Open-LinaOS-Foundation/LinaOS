@@ -8,10 +8,10 @@
  * Copyright (C) 2008 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
+#include <linaos/acpi.h>
+#include <linaos/efi.h>
+#include <linaos/module.h>
+#include <linaos/percpu.h>
 #include <asm/uv/uv.h>
 #include <asm/uv/uv_mmrs.h>
 #include <asm/uv/uv_hub.h>

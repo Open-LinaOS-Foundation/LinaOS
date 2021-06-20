@@ -6,7 +6,7 @@
 #ifndef __INTEL_HDCP_H__
 #define __INTEL_HDCP_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define HDCP_ENCRYPT_STATUS_CHANGE_TIMEOUT_MS	50
 

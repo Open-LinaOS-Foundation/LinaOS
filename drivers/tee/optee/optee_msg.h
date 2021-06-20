@@ -5,8 +5,8 @@
 #ifndef _OPTEE_MSG_H
 #define _OPTEE_MSG_H
 
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/types.h>
 
 /*
  * This file defines the OP-TEE message protocol (ABI) used to communicate

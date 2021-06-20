@@ -4,15 +4,15 @@
 #ifndef _IGC_H_
 #define _IGC_H_
 
-#include <linux/kobject.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/ethtool.h>
-#include <linux/sctp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/timecounter.h>
-#include <linux/net_tstamp.h>
+#include <linaos/kobject.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/vmalloc.h>
+#include <linaos/ethtool.h>
+#include <linaos/sctp.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/timecounter.h>
+#include <linaos/net_tstamp.h>
 
 #include "igc_hw.h"
 

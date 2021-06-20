@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2010-2011,2013-2015 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2010-2011,2013-2015 The LinaOS Foundation. All rights reserved.
  *
  * max98357a.c -- MAX98357A ALSA SoC Codec driver
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/kernel.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>

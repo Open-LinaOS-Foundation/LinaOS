@@ -8,8 +8,8 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
 #include "hwif.h"
 #include "mmc.h"
 

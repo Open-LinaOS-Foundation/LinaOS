@@ -6,14 +6,14 @@
  * Copyright (C) 2016-2017 Pengutronix, Philipp Zabel <kernel@pengutronix.de>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/mux/consumer.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/mux/consumer.h>
+#include <linaos/of.h>
+#include <linaos/of_graph.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 #include <media/v4l2-async.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-fwnode.h>

@@ -10,8 +10,8 @@
 #ifndef _DA7218_H
 #define _DA7218_H
 
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
 #include <sound/da7218.h>
 
 

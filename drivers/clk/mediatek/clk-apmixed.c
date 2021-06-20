@@ -4,9 +4,9 @@
  * Author: James Liao <jamesjj.liao@mediatek.com>
  */
 
-#include <linux/delay.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
 
 #include "clk-mtk.h"
 

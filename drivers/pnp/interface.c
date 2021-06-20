@@ -8,17 +8,17 @@
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
  */
 
-#include <linux/pnp.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/stat.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <linaos/pnp.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
+#include <linaos/stat.h>
+#include <linaos/ctype.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "base.h"
 

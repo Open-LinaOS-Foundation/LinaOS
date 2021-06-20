@@ -30,18 +30,18 @@
  * SOFTWARE.
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/pid.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/vmalloc.h>
-#include <linux/hugetlb.h>
-#include <linux/interval_tree.h>
-#include <linux/hmm.h>
-#include <linux/pagemap.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/task.h>
+#include <linaos/pid.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/vmalloc.h>
+#include <linaos/hugetlb.h>
+#include <linaos/interval_tree.h>
+#include <linaos/hmm.h>
+#include <linaos/pagemap.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_umem.h>

@@ -11,8 +11,8 @@
 #error "Cannot use generic cmpxchg on SMP"
 #endif
 
-#include <linux/types.h>
-#include <linux/irqflags.h>
+#include <linaos/types.h>
+#include <linaos/irqflags.h>
 
 #ifndef xchg
 

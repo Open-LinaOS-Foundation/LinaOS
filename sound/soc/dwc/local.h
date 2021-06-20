@@ -1,5 +1,5 @@
 /*
- * Copyright (ST) 2012 Rajeev Kumar (rajeevkumar.linux@gmail.com)
+ * Copyright (ST) 2012 Rajeev Kumar (rajeevkumar.linaos@gmail.com)
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -9,9 +9,9 @@
 #ifndef __DESIGNWARE_LOCAL_H
 #define __DESIGNWARE_LOCAL_H
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm.h>
 #include <sound/designware_i2s.h>

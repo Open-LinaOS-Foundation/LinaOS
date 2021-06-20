@@ -5,15 +5,15 @@
  * Author: Lee Jones <lee.jones@linaro.org> for ST-Ericsson.
  */
 
-#include <linux/sysfs.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/spinlock.h>
-#include <linux/sys_soc.h>
-#include <linux/err.h>
-#include <linux/glob.h>
+#include <linaos/sysfs.h>
+#include <linaos/init.h>
+#include <linaos/stat.h>
+#include <linaos/slab.h>
+#include <linaos/idr.h>
+#include <linaos/spinlock.h>
+#include <linaos/sys_soc.h>
+#include <linaos/err.h>
+#include <linaos/glob.h>
 
 static DEFINE_IDA(soc_ida);
 

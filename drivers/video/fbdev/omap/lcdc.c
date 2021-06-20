@@ -5,20 +5,20 @@
  * Copyright (C) 2004 Nokia Corporation
  * Author: Imre Deak <imre.deak@nokia.com>
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/clk.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/err.h>
+#include <linaos/mm.h>
+#include <linaos/fb.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/vmalloc.h>
+#include <linaos/clk.h>
+#include <linaos/gfp.h>
 
 #include <mach/lcdc.h>
-#include <linux/omap-dma.h>
+#include <linaos/omap-dma.h>
 
 #include <asm/mach-types.h>
 

@@ -9,8 +9,8 @@
 #ifndef _KUNIT_STRING_STREAM_H
 #define _KUNIT_STRING_STREAM_H
 
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 #include <stdarg.h>
 
 struct string_stream_fragment {

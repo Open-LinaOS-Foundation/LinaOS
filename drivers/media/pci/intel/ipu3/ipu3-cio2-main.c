@@ -3,7 +3,7 @@
  * Copyright (C) 2017,2020 Intel Corporation
  *
  * Based partially on Intel IPU4 driver written by
- *  Sakari Ailus <sakari.ailus@linux.intel.com>
+ *  Sakari Ailus <sakari.ailus@linaos.intel.com>
  *  Samu Onkalo <samu.onkalo@intel.com>
  *  Jouni Högander <jouni.hogander@intel.com>
  *  Jouni Ukkonen <jouni.ukkonen@intel.com>
@@ -11,16 +11,16 @@
  * et al.
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pfn.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pfn.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/property.h>
+#include <linaos/vmalloc.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>

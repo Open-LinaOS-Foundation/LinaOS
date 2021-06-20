@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* Copyright (c) 2017 The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2017 The LinaOS Foundation. All rights reserved. */
 
 #ifndef _A6XX_GMU_H_
 #define _A6XX_GMU_H_
 
-#include <linux/iopoll.h>
-#include <linux/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/interrupt.h>
 #include "msm_drv.h"
 #include "a6xx_hfi.h"
 

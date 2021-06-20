@@ -21,11 +21,11 @@
  *
  */
 #include "pp_debug.h"
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/slab.h>
+#include <linaos/firmware.h>
 #include "amd_shared.h"
 #include "amd_powerplay.h"
 #include "power_state.h"

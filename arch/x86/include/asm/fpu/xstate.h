@@ -2,8 +2,8 @@
 #ifndef __ASM_X86_XSAVE_H
 #define __ASM_X86_XSAVE_H
 
-#include <linux/uaccess.h>
-#include <linux/types.h>
+#include <linaos/uaccess.h>
+#include <linaos/types.h>
 
 #include <asm/processor.h>
 #include <asm/user.h>

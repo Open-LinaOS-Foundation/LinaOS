@@ -9,18 +9,18 @@
  * Copyright 2002-2003 MontaVista Software Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/timex.h>
-#include <linux/io.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/export.h>
-#include <linux/sched_clock.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/time.h>
+#include <linaos/init.h>
+#include <linaos/timex.h>
+#include <linaos/io.h>
+#include <linaos/clocksource.h>
+#include <linaos/clockchips.h>
+#include <linaos/export.h>
+#include <linaos/sched_clock.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/mach/irq.h>
 #include <asm/mach/time.h>
 

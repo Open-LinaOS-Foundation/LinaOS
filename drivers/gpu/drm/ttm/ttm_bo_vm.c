@@ -34,12 +34,12 @@
 #include <drm/ttm/ttm_bo_driver.h>
 #include <drm/ttm/ttm_placement.h>
 #include <drm/drm_vma_manager.h>
-#include <linux/mm.h>
-#include <linux/pfn_t.h>
-#include <linux/rbtree.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/mem_encrypt.h>
+#include <linaos/mm.h>
+#include <linaos/pfn_t.h>
+#include <linaos/rbtree.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/mem_encrypt.h>
 
 static vm_fault_t ttm_bo_vm_fault_idle(struct ttm_buffer_object *bo,
 				struct vm_fault *vmf)

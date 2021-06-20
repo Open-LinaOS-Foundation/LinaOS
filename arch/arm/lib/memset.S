@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/memset.S
+ *  linaos/arch/arm/lib/memset.S
  *
  *  Copyright (C) 1995-2000 Russell King
  *
  *  ASM optimised string functions
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/unwind.h>
 

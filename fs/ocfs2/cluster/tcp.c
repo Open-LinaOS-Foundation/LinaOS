@@ -37,17 +37,17 @@
  * and only accepts the connection if the higher numbered node is heartbeating.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/mm.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/kref.h>
-#include <linux/net.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/mm.h>
+#include <linaos/jiffies.h>
+#include <linaos/slab.h>
+#include <linaos/idr.h>
+#include <linaos/kref.h>
+#include <linaos/net.h>
+#include <linaos/export.h>
 #include <net/tcp.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "heartbeat.h"
 #include "tcp.h"

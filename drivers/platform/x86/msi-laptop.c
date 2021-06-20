@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/*-*-linux-c-*-*/
+/*-*-linaos-c-*-*/
 
 /*
   Copyright (C) 2006 Lennart Poettering <mzxreary (at) 0pointer (dot) de>
@@ -29,7 +29,7 @@
  *   hardware is available. (ro)
  *
  * In addition to these platform device attributes the driver
- * registers itself in the Linux backlight control subsystem and is
+ * registers itself in the LinaOS backlight control subsystem and is
  * available to userspace under /sys/class/backlight/msi-laptop-bl/.
  *
  * This driver might work on other laptops produced by MSI. If you
@@ -40,17 +40,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/backlight.h>
-#include <linux/platform_device.h>
-#include <linux/rfkill.h>
-#include <linux/i8042.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
+#include <linaos/backlight.h>
+#include <linaos/platform_device.h>
+#include <linaos/rfkill.h>
+#include <linaos/i8042.h>
+#include <linaos/input.h>
+#include <linaos/input/sparse-keymap.h>
 #include <acpi/video.h>
 
 #define MSI_DRIVER_VERSION "0.5"
@@ -120,7 +120,7 @@ struct quirk_entry {
 	 * disable the original Wlan/Bluetooth control by BIOS when user press
 	 * fn key, then control Wlan/Bluetooth/3G by SCM (software control by
 	 * OS). Without SCM, user cann't on/off 3G module on those 3G netbook.
-	 * On Linux, msi-laptop driver will do the same thing to disable the
+	 * On LinaOS, msi-laptop driver will do the same thing to disable the
 	 * original BIOS control, then might need use HAL or other userland
 	 * application to do the software control that simulate with SCM.
 	 * e.g. MSI N034 netbook

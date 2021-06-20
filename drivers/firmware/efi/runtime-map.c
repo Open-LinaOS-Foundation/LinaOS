@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/drivers/efi/runtime-map.c
+ * linaos/drivers/efi/runtime-map.c
  * Copyright (C) 2013 Red Hat, Inc., Dave Young <dyoung@redhat.com>
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/efi.h>
-#include <linux/slab.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/efi.h>
+#include <linaos/slab.h>
 
 #include <asm/setup.h>
 

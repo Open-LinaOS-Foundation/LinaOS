@@ -37,7 +37,7 @@ PLATFORM = $(platform-y)
 export PLATFORM
 
 # temporarily until string.h is fixed
-KBUILD_CFLAGS += -ffreestanding -D__linux__
+KBUILD_CFLAGS += -ffreestanding -D__linaos__
 KBUILD_CFLAGS += -pipe -mlongcalls -mtext-section-literals
 KBUILD_CFLAGS += $(call cc-option,-mforce-no-pic,)
 KBUILD_CFLAGS += $(call cc-option,-mno-serialize-volatile,)
@@ -75,7 +75,7 @@ libs-y		+= arch/xtensa/lib/ $(LIBGCC)
 
 boot		:= arch/xtensa/boot
 
-all Image zImage uImage xipImage: vmlinux
+all Image zImage uImage xipImage: vmlinaos
 	$(Q)$(MAKE) $(build)=$(boot) $@
 
 archheaders:

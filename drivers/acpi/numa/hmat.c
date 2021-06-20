@@ -11,20 +11,20 @@
 #define pr_fmt(fmt) "acpi/hmat: " fmt
 #define dev_fmt(fmt) "acpi/hmat: " fmt
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/list_sort.h>
-#include <linux/memregion.h>
-#include <linux/memory.h>
-#include <linux/mutex.h>
-#include <linux/node.h>
-#include <linux/sysfs.h>
-#include <linux/dax.h>
+#include <linaos/acpi.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/platform_device.h>
+#include <linaos/list_sort.h>
+#include <linaos/memregion.h>
+#include <linaos/memory.h>
+#include <linaos/mutex.h>
+#include <linaos/node.h>
+#include <linaos/sysfs.h>
+#include <linaos/dax.h>
 
 static u8 hmat_revision;
 static int hmat_disable __initdata;

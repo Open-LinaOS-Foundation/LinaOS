@@ -84,7 +84,7 @@
 		power {
 			label = "Power Button";
 			gpios = <&gpio5 2 GPIO_ACTIVE_HIGH>;
-			linux,code = <116>; /* KEY_POWER */
+			linaos,code = <116>; /* KEY_POWER */
 			wakeup-source;
 		};
 	};
@@ -97,7 +97,7 @@
 		user {
 			label = "Heartbeat";
 			gpios = <&gpio2 20 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

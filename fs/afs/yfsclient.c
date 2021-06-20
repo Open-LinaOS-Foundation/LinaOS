@@ -5,11 +5,11 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/circ_buf.h>
-#include <linux/iversion.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/circ_buf.h>
+#include <linaos/iversion.h>
 #include "internal.h"
 #include "afs_fs.h"
 #include "xdr_fs.h"
@@ -77,7 +77,7 @@ static __be32 *xdr_encode_name(__be32 *bp, const struct qstr *p)
 	return xdr_encode_string(bp, p->name, p->len);
 }
 
-static s64 linux_to_yfs_time(const struct timespec64 *t)
+static s64 linaos_to_yfs_time(const struct timespec64 *t)
 {
 	/* Convert to 100ns intervals. */
 	return (u64)t->tv_sec * 10000000 + t->tv_nsec/100;
@@ -98,7 +98,7 @@ static __be32 *xdr_encode_YFSStoreStatus_mode(__be32 *bp, mode_t mode)
 static __be32 *xdr_encode_YFSStoreStatus_mtime(__be32 *bp, const struct timespec64 *t)
 {
 	struct yfs_xdr_YFSStoreStatus *x = (void *)bp;
-	s64 mtime = linux_to_yfs_time(t);
+	s64 mtime = linaos_to_yfs_time(t);
 
 	x->mask		= htonl(AFS_SET_MTIME);
 	x->mode		= htonl(0);
@@ -111,7 +111,7 @@ static __be32 *xdr_encode_YFSStoreStatus_mtime(__be32 *bp, const struct timespec
 /*
  * Convert a signed 100ns-resolution 64-bit time into a timespec.
  */
-static struct timespec64 yfs_time_to_linux(s64 t)
+static struct timespec64 yfs_time_to_linaos(s64 t)
 {
 	struct timespec64 ts;
 	u64 abs_t;
@@ -139,7 +139,7 @@ static struct timespec64 xdr_to_time(const struct yfs_xdr_u64 xdr)
 {
 	s64 t = xdr_to_u64(xdr);
 
-	return yfs_time_to_linux(t);
+	return yfs_time_to_linaos(t);
 }
 
 static void yfs_check_req(struct afs_call *call, __be32 *bp)
@@ -276,7 +276,7 @@ static __be32 *xdr_encode_YFS_StoreStatus(__be32 *bp, struct iattr *attr)
 	mask = 0;
 	if (attr->ia_valid & ATTR_MTIME) {
 		mask |= AFS_SET_MTIME;
-		mtime = linux_to_yfs_time(&attr->ia_mtime);
+		mtime = linaos_to_yfs_time(&attr->ia_mtime);
 	}
 
 	if (attr->ia_valid & ATTR_UID) {

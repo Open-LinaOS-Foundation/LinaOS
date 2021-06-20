@@ -20,21 +20,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/workqueue.h>
+#include <linaos/slab.h>
+#include <linaos/pm.h>
 #ifdef CONFIG_RTC_DRV_DS1374_WDT
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/miscdevice.h>
-#include <linux/reboot.h>
-#include <linux/watchdog.h>
+#include <linaos/fs.h>
+#include <linaos/ioctl.h>
+#include <linaos/miscdevice.h>
+#include <linaos/reboot.h>
+#include <linaos/watchdog.h>
 #endif
 
 #define DS1374_REG_TOD0		0x00 /* Time of Day */

@@ -8,12 +8,12 @@
  *
  */
 
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/cpu.h>
+#include <linaos/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/gfp.h>
+#include <linaos/cpu.h>
 #include <asm/ctl_reg.h>
 #include <asm/io.h>
 #include <asm/stacktrace.h>

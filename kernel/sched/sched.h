@@ -2,71 +2,71 @@
 /*
  * Scheduler internal types and methods:
  */
-#include <linux/sched.h>
+#include <linaos/sched.h>
 
-#include <linux/sched/autogroup.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/cpufreq.h>
-#include <linux/sched/cputime.h>
-#include <linux/sched/deadline.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/idle.h>
-#include <linux/sched/init.h>
-#include <linux/sched/isolation.h>
-#include <linux/sched/jobctl.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/nohz.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/sched/prio.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/smt.h>
-#include <linux/sched/stat.h>
-#include <linux/sched/sysctl.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/topology.h>
-#include <linux/sched/user.h>
-#include <linux/sched/wake_q.h>
-#include <linux/sched/xacct.h>
+#include <linaos/sched/autogroup.h>
+#include <linaos/sched/clock.h>
+#include <linaos/sched/coredump.h>
+#include <linaos/sched/cpufreq.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/sched/deadline.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/hotplug.h>
+#include <linaos/sched/idle.h>
+#include <linaos/sched/init.h>
+#include <linaos/sched/isolation.h>
+#include <linaos/sched/jobctl.h>
+#include <linaos/sched/loadavg.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/nohz.h>
+#include <linaos/sched/numa_balancing.h>
+#include <linaos/sched/prio.h>
+#include <linaos/sched/rt.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/smt.h>
+#include <linaos/sched/stat.h>
+#include <linaos/sched/sysctl.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/sched/topology.h>
+#include <linaos/sched/user.h>
+#include <linaos/sched/wake_q.h>
+#include <linaos/sched/xacct.h>
 
-#include <uapi/linux/sched/types.h>
+#include <uapi/linaos/sched/types.h>
 
-#include <linux/binfmts.h>
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
-#include <linux/compat.h>
-#include <linux/context_tracking.h>
-#include <linux/cpufreq.h>
-#include <linux/cpuidle.h>
-#include <linux/cpuset.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/delayacct.h>
-#include <linux/energy_model.h>
-#include <linux/init_task.h>
-#include <linux/kprobes.h>
-#include <linux/kthread.h>
-#include <linux/membarrier.h>
-#include <linux/migrate.h>
-#include <linux/mmu_context.h>
-#include <linux/nmi.h>
-#include <linux/proc_fs.h>
-#include <linux/prefetch.h>
-#include <linux/profile.h>
-#include <linux/psi.h>
-#include <linux/ratelimit.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/security.h>
-#include <linux/stop_machine.h>
-#include <linux/suspend.h>
-#include <linux/swait.h>
-#include <linux/syscalls.h>
-#include <linux/task_work.h>
-#include <linux/tsacct_kern.h>
+#include <linaos/binfmts.h>
+#include <linaos/bitops.h>
+#include <linaos/blkdev.h>
+#include <linaos/compat.h>
+#include <linaos/context_tracking.h>
+#include <linaos/cpufreq.h>
+#include <linaos/cpuidle.h>
+#include <linaos/cpuset.h>
+#include <linaos/ctype.h>
+#include <linaos/debugfs.h>
+#include <linaos/delayacct.h>
+#include <linaos/energy_model.h>
+#include <linaos/init_task.h>
+#include <linaos/kprobes.h>
+#include <linaos/kthread.h>
+#include <linaos/membarrier.h>
+#include <linaos/migrate.h>
+#include <linaos/mmu_context.h>
+#include <linaos/nmi.h>
+#include <linaos/proc_fs.h>
+#include <linaos/prefetch.h>
+#include <linaos/profile.h>
+#include <linaos/psi.h>
+#include <linaos/ratelimit.h>
+#include <linaos/rcupdate_wait.h>
+#include <linaos/security.h>
+#include <linaos/stop_machine.h>
+#include <linaos/suspend.h>
+#include <linaos/swait.h>
+#include <linaos/syscalls.h>
+#include <linaos/task_work.h>
+#include <linaos/tsacct_kern.h>
 
 #include <asm/tlb.h>
 
@@ -352,8 +352,8 @@ extern bool dl_cpu_busy(unsigned int cpu);
 
 #ifdef CONFIG_CGROUP_SCHED
 
-#include <linux/cgroup.h>
-#include <linux/psi.h>
+#include <linaos/cgroup.h>
+#include <linaos/psi.h>
 
 struct cfs_rq;
 struct rt_rq;
@@ -1653,7 +1653,7 @@ static inline void __set_task_cpu(struct task_struct *p, unsigned int cpu)
  * Tunables that become constants when CONFIG_SCHED_DEBUG is off:
  */
 #ifdef CONFIG_SCHED_DEBUG
-# include <linux/static_key.h>
+# include <linaos/static_key.h>
 # define const_debug __read_mostly
 #else
 # define const_debug const
@@ -1902,7 +1902,7 @@ static inline void set_next_task(struct rq *rq, struct task_struct *next)
  * Helper to define a sched_class instance; each one is placed in a separate
  * section which is ordered by the linker script:
  *
- *   include/asm-generic/vmlinux.lds.h
+ *   include/asm-generic/vmlinaos.lds.h
  *
  * Also enforce alignment on the instance, not the type, to guarantee layout.
  */
@@ -1911,7 +1911,7 @@ const struct sched_class name##_sched_class \
 	__aligned(__alignof__(struct sched_class)) \
 	__section("__" #name "_sched_class")
 
-/* Defined in include/asm-generic/vmlinux.lds.h */
+/* Defined in include/asm-generic/vmlinaos.lds.h */
 extern struct sched_class __begin_sched_classes[];
 extern struct sched_class __end_sched_classes[];
 

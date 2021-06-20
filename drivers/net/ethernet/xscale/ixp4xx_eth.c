@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Intel IXP4xx Ethernet driver for Linux
+ * Intel IXP4xx Ethernet driver for LinaOS
  *
  * Copyright (C) 2007 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -20,23 +20,23 @@
  * bits 5 -> 31	- physical descriptor address
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/etherdevice.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/net_tstamp.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/platform_data/eth_ixp4xx.h>
-#include <linux/platform_device.h>
-#include <linux/ptp_classify.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/soc/ixp4xx/npe.h>
-#include <linux/soc/ixp4xx/qmgr.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/etherdevice.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/of.h>
+#include <linaos/of_mdio.h>
+#include <linaos/phy.h>
+#include <linaos/platform_data/eth_ixp4xx.h>
+#include <linaos/platform_device.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/soc/ixp4xx/npe.h>
+#include <linaos/soc/ixp4xx/qmgr.h>
 
 #include "ixp46x_ts.h"
 

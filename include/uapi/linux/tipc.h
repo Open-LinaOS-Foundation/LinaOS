@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR BSD-3-Clause) */
 /*
- * include/uapi/linux/tipc.h: Header for TIPC socket interface
+ * include/uapi/linaos/tipc.h: Header for TIPC socket interface
  *
  * Copyright (c) 2003-2006, 2015-2016 Ericsson AB
  * Copyright (c) 2005, 2010-2011, Wind River Systems
@@ -38,8 +38,8 @@
 #ifndef _LINUX_TIPC_H_
 #define _LINUX_TIPC_H_
 
-#include <linux/types.h>
-#include <linux/sockios.h>
+#include <linaos/types.h>
+#include <linaos/sockios.h>
 
 /*
  * TIPC addressing primitives

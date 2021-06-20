@@ -8,14 +8,14 @@
  *	    Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-#include <linux/ioctl.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/export.h>
-#include <linux/version.h>
+#include <linaos/ioctl.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
+#include <linaos/export.h>
+#include <linaos/version.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

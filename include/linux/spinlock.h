@@ -3,7 +3,7 @@
 #define __LINUX_SPINLOCK_H
 
 /*
- * include/linux/spinlock.h - generic spinlock/rwlock declarations
+ * include/linaos/spinlock.h - generic spinlock/rwlock declarations
  *
  * here's the role of the various spinlock/rwlock related include files:
  *
@@ -12,7 +12,7 @@
  *  asm/spinlock_types.h: contains the arch_spinlock_t/arch_rwlock_t and the
  *                        initializers
  *
- *  linux/spinlock_types.h:
+ *  linaos/spinlock_types.h:
  *                        defines the generic type and initializers
  *
  *  asm/spinlock.h:       contains the arch_spin_*()/etc. lowlevel
@@ -20,43 +20,43 @@
  *
  *   (also included on UP-debug builds:)
  *
- *  linux/spinlock_api_smp.h:
+ *  linaos/spinlock_api_smp.h:
  *                        contains the prototypes for the _spin_*() APIs.
  *
- *  linux/spinlock.h:     builds the final spin_*() APIs.
+ *  linaos/spinlock.h:     builds the final spin_*() APIs.
  *
  * on UP builds:
  *
- *  linux/spinlock_type_up.h:
+ *  linaos/spinlock_type_up.h:
  *                        contains the generic, simplified UP spinlock type.
  *                        (which is an empty structure on non-debug builds)
  *
- *  linux/spinlock_types.h:
+ *  linaos/spinlock_types.h:
  *                        defines the generic type and initializers
  *
- *  linux/spinlock_up.h:
+ *  linaos/spinlock_up.h:
  *                        contains the arch_spin_*()/etc. version of UP
  *                        builds. (which are NOPs on non-debug, non-preempt
  *                        builds)
  *
  *   (included on UP-non-debug builds:)
  *
- *  linux/spinlock_api_up.h:
+ *  linaos/spinlock_api_up.h:
  *                        builds the _spin_*() APIs.
  *
- *  linux/spinlock.h:     builds the final spin_*() APIs.
+ *  linaos/spinlock.h:     builds the final spin_*() APIs.
  */
 
-#include <linux/typecheck.h>
-#include <linux/preempt.h>
-#include <linux/linkage.h>
-#include <linux/compiler.h>
-#include <linux/irqflags.h>
-#include <linux/thread_info.h>
-#include <linux/kernel.h>
-#include <linux/stringify.h>
-#include <linux/bottom_half.h>
-#include <linux/lockdep.h>
+#include <linaos/typecheck.h>
+#include <linaos/preempt.h>
+#include <linaos/linkage.h>
+#include <linaos/compiler.h>
+#include <linaos/irqflags.h>
+#include <linaos/thread_info.h>
+#include <linaos/kernel.h>
+#include <linaos/stringify.h>
+#include <linaos/bottom_half.h>
+#include <linaos/lockdep.h>
 #include <asm/barrier.h>
 #include <asm/mmiowb.h>
 
@@ -81,7 +81,7 @@
 /*
  * Pull the arch_spinlock_t and arch_rwlock_t definitions:
  */
-#include <linux/spinlock_types.h>
+#include <linaos/spinlock_types.h>
 
 /*
  * Pull the arch_spin*() functions/declarations (UP-nondebug doesn't need them):
@@ -89,7 +89,7 @@
 #ifdef CONFIG_SMP
 # include <asm/spinlock.h>
 #else
-# include <linux/spinlock_up.h>
+# include <linaos/spinlock_up.h>
 #endif
 
 #ifdef CONFIG_DEBUG_SPINLOCK
@@ -309,15 +309,15 @@ static inline void do_raw_spin_unlock(raw_spinlock_t *lock) __releases(lock)
 })
 
 /* Include rwlock functions */
-#include <linux/rwlock.h>
+#include <linaos/rwlock.h>
 
 /*
  * Pull the _spin_*()/_read_*()/_write_*() functions/declarations:
  */
 #if defined(CONFIG_SMP) || defined(CONFIG_DEBUG_SPINLOCK)
-# include <linux/spinlock_api_smp.h>
+# include <linaos/spinlock_api_smp.h>
 #else
-# include <linux/spinlock_api_up.h>
+# include <linaos/spinlock_api_up.h>
 #endif
 
 /*
@@ -439,7 +439,7 @@ static __always_inline int spin_trylock_irq(spinlock_t *lock)
  * seen to be locked, not that it is locked on your CPU.
  *
  * Further, on CONFIG_SMP=n builds with CONFIG_DEBUG_SPINLOCK=n,
- * the return value is always 0 (see include/linux/spinlock_up.h).
+ * the return value is always 0 (see include/linaos/spinlock_up.h).
  * Therefore you should not rely heavily on the return value.
  */
 static __always_inline int spin_is_locked(spinlock_t *lock)
@@ -458,7 +458,7 @@ static __always_inline int spin_is_contended(spinlock_t *lock)
  * Pull the atomic_t declaration:
  * (asm-mips/atomic.h needs above definitions)
  */
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 /**
  * atomic_dec_and_lock - lock on reaching reference count zero
  * @atomic: the atomic counter

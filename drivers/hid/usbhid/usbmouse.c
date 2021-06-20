@@ -12,12 +12,12 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/usb/input.h>
-#include <linux/hid.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/usb/input.h>
+#include <linaos/hid.h>
 
 /* for apple IDs */
 #ifdef CONFIG_USB_HID_MODULE

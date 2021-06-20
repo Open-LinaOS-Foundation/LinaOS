@@ -15,11 +15,11 @@
  *	Revision 1.1, Digital Equipment Corporation
  */
 
-#include <linux/compiler.h>
-#include <linux/if_fddi.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/if_fddi.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
+#include <linaos/types.h>
 
 /* IOmem register offsets. */
 #define FZA_REG_BASE		0x100000	/* register base address */

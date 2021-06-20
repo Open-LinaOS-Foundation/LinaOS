@@ -3,15 +3,15 @@
 //  Copyright (C) 2013, Analog Devices Inc.
 //	Author: Lars-Peter Clausen <lars@metafoo.de>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/dmaengine.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/dmaengine.h>
+#include <linaos/slab.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/of.h>
 
 #include <sound/dmaengine_pcm.h>
 
@@ -367,9 +367,9 @@ static int dmaengine_pcm_request_chan_of(struct dmaengine_pcm *pcm,
 
 	if (config && config->dma_dev) {
 		/*
-		 * If this warning is seen, it probably means that your Linux
+		 * If this warning is seen, it probably means that your LinaOS
 		 * device structure does not match your HW device structure.
-		 * It would be best to refactor the Linux device structure to
+		 * It would be best to refactor the LinaOS device structure to
 		 * correctly match the HW structure.
 		 */
 		dev_warn(dev, "DMA channels sourced from device %s",

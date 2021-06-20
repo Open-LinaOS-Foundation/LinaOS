@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux WWAN device drivers.
+# Makefile for the LinaOS WWAN device drivers.
 #
 
 obj-$(CONFIG_WWAN_CORE) += wwan.o

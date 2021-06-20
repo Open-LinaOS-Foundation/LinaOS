@@ -51,7 +51,7 @@
 #include <sys/ioctl.h>
 #include <sys/wait.h>
 #include <pthread.h>
-#include <linux/userfaultfd.h>
+#include <linaos/userfaultfd.h>
 #include <setjmp.h>
 #include <stdbool.h>
 #include <assert.h>

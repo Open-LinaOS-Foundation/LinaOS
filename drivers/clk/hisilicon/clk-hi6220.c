@@ -7,14 +7,14 @@
  * Author: Bintian Wang <bintian.wang@huawei.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clkdev.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/slab.h>
 
 #include <dt-bindings/clock/hi6220-clock.h>
 

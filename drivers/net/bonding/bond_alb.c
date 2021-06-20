@@ -3,20 +3,20 @@
  * Copyright(c) 1999 - 2004 Intel Corporation. All rights reserved.
  */
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/pkt_sched.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/if_bonding.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/pkt_sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_bonding.h>
+#include <linaos/if_vlan.h>
+#include <linaos/in.h>
 #include <net/ipx.h>
 #include <net/arp.h>
 #include <net/ipv6.h>

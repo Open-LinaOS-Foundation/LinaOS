@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0-only WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-only WITH LinaOS-syscall-note */
 /*
  * Userspace interface for AMD Secure Encrypted Virtualization (SEV)
  * platform management commands.
@@ -13,7 +13,7 @@
 #ifndef __PSP_SEV_USER_H__
 #define __PSP_SEV_USER_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * SEV platform commands

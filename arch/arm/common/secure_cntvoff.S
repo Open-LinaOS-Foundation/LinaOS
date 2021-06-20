@@ -6,7 +6,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 ENTRY(secure_cntvoff_init)

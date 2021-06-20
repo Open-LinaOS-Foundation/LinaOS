@@ -4,25 +4,25 @@
  *
  * Author: Ryan Wilson <hap9@epoch.ncsc.mil>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
 #include <xen/xenbus.h>
 #include <xen/events.h>
 #include <xen/grant_table.h>
 #include <xen/page.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
+#include <linaos/spinlock.h>
+#include <linaos/pci.h>
+#include <linaos/msi.h>
 #include <xen/interface/io/pciif.h>
 #include <asm/xen/pci.h>
-#include <linux/interrupt.h>
-#include <linux/atomic.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/time.h>
-#include <linux/ktime.h>
-#include <linux/swiotlb.h>
+#include <linaos/interrupt.h>
+#include <linaos/atomic.h>
+#include <linaos/workqueue.h>
+#include <linaos/bitops.h>
+#include <linaos/time.h>
+#include <linaos/ktime.h>
+#include <linaos/swiotlb.h>
 #include <xen/platform_pci.h>
 
 #include <asm/xen/swiotlb-xen.h>

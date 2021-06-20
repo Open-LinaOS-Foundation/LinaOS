@@ -12,12 +12,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_time.h>
+#include <linaos/ktime.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/types.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter/xt_time.h>
 
 struct xtm {
 	u_int8_t month;    /* (1-12) */

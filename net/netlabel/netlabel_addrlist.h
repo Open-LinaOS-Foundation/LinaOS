@@ -17,11 +17,11 @@
 #ifndef _NETLABEL_ADDRLIST_H
 #define _NETLABEL_ADDRLIST_H
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/in6.h>
-#include <linux/audit.h>
+#include <linaos/types.h>
+#include <linaos/rcupdate.h>
+#include <linaos/list.h>
+#include <linaos/in6.h>
+#include <linaos/audit.h>
 
 /**
  * struct netlbl_af4list - NetLabel IPv4 address list

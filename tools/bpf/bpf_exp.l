@@ -25,7 +25,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <linux/filter.h>
+#include <linaos/filter.h>
 
 #include "bpf_exp.yacc.h"
 

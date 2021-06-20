@@ -35,7 +35,7 @@
 		arietta_led {
 			label = "arietta_led";
 			gpios = <&pioB 8 GPIO_ACTIVE_HIGH>; /* PB8 */
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 };

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * CPU Microcode Update Driver for Linux
+ * CPU Microcode Update Driver for LinaOS
  *
  * Copyright (C) 2000-2006 Tigran Aivazian <aivazian.tigran@gmail.com>
  *	      2006	Shaohua Li <shaohua.li@intel.com>
  *	      2013-2016	Borislav Petkov <bp@alien8.de>
  *
- * X86 CPU microcode early update for Linux:
+ * X86 CPU microcode early update for LinaOS:
  *
  *	Copyright (C) 2012 Fenghua Yu <fenghua.yu@intel.com>
  *			   H Peter Anvin" <hpa@zytor.com>
@@ -17,19 +17,19 @@
 
 #define pr_fmt(fmt) "microcode: " fmt
 
-#include <linux/platform_device.h>
-#include <linux/stop_machine.h>
-#include <linux/syscore_ops.h>
-#include <linux/miscdevice.h>
-#include <linux/capability.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/cpu.h>
-#include <linux/nmi.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
+#include <linaos/platform_device.h>
+#include <linaos/stop_machine.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/miscdevice.h>
+#include <linaos/capability.h>
+#include <linaos/firmware.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/cpu.h>
+#include <linaos/nmi.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
 
 #include <asm/microcode_intel.h>
 #include <asm/cpu_device_id.h>

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0+
-#include <linux/extcon.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/iio.h>
-#include <linux/input-event-codes.h>
-#include <linux/mfd/wm8994/registers.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/extcon.h>
+#include <linaos/iio/consumer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/input-event-codes.h>
+#include <linaos/mfd/wm8994/registers.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/regulator/consumer.h>
 #include <sound/jack.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

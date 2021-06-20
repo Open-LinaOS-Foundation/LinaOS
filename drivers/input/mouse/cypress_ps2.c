@@ -12,15 +12,15 @@
  *   Kyle Fazzari <git@status.e4ward.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/serio.h>
-#include <linux/libps2.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/serio.h>
+#include <linaos/libps2.h>
+#include <linaos/input.h>
+#include <linaos/input/mt.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
 
 #include "cypress_ps2.h"
 

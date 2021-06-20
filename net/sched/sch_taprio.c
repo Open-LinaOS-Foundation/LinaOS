@@ -6,18 +6,18 @@
  *
  */
 
-#include <linux/ethtool.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
+#include <linaos/ethtool.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
+#include <linaos/math64.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/rcupdate.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>

@@ -55,15 +55,15 @@ r8723bs-y = \
 		hal/HalHWImg8723B_RF.o \
 		hal/HalPhyRf_8723B.o \
 		os_dep/ioctl_cfg80211.o \
-		os_dep/ioctl_linux.o \
-		os_dep/mlme_linux.o \
+		os_dep/ioctl_linaos.o \
+		os_dep/mlme_linaos.o \
 		os_dep/osdep_service.o \
 		os_dep/os_intfs.o \
-		os_dep/recv_linux.o \
+		os_dep/recv_linaos.o \
 		os_dep/sdio_intf.o \
-		os_dep/sdio_ops_linux.o \
+		os_dep/sdio_ops_linaos.o \
 		os_dep/wifi_regd.o \
-		os_dep/xmit_linux.o
+		os_dep/xmit_linaos.o
 
 obj-$(CONFIG_RTL8723BS) := r8723bs.o
 

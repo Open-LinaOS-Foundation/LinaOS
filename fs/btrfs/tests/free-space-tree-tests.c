@@ -3,7 +3,7 @@
  * Copyright (C) 2015 Facebook.  All rights reserved.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "btrfs-tests.h"
 #include "../ctree.h"
 #include "../disk-io.h"

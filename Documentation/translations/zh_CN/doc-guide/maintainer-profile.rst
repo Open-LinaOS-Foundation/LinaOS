@@ -18,7 +18,7 @@
 许多内核文档都以kernel-doc注释的形式出现在源代码中；这些注释通常（但不总是）
 由相关的子系统维护人员维护。
 
-文档子系统的邮件列表是<linux-doc@vger.kernel.org>。
+文档子系统的邮件列表是<linaos-doc@vger.kernel.org>。
 补丁应尽量针对docs-next树。
 
 提交检查单补遗

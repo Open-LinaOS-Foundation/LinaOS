@@ -22,21 +22,21 @@
  *  - Add support for extended VLAN support.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/phy.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/phy.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
 
 #include "xilinx_axienet.h"
 
@@ -1240,7 +1240,7 @@ static const struct net_device_ops axienet_netdev_ops = {
  * @ed:		Pointer to ethtool_drvinfo structure
  *
  * This implements ethtool command for getting the driver information.
- * Issue "ethtool -i ethX" under linux prompt to execute this function.
+ * Issue "ethtool -i ethX" under linaos prompt to execute this function.
  */
 static void axienet_ethtools_get_drvinfo(struct net_device *ndev,
 					 struct ethtool_drvinfo *ed)
@@ -1382,7 +1382,7 @@ axienet_ethtools_get_pauseparam(struct net_device *ndev,
  * @epauseparm:Pointer to ethtool_pauseparam structure
  *
  * This implements ethtool command for enabling flow control on Rx and Tx
- * paths. Issue "ethtool -A ethX tx on|off" under linux prompt to execute this
+ * paths. Issue "ethtool -A ethX tx on|off" under linaos prompt to execute this
  * function.
  *
  * Return: 0 on success, -EFAULT if device is running
@@ -1402,7 +1402,7 @@ axienet_ethtools_set_pauseparam(struct net_device *ndev,
  * @ecoalesce:	Pointer to ethtool_coalesce structure
  *
  * This implements ethtool command for getting the DMA interrupt coalescing
- * count on Tx and Rx paths. Issue "ethtool -c ethX" under linux prompt to
+ * count on Tx and Rx paths. Issue "ethtool -c ethX" under linaos prompt to
  * execute this function.
  *
  * Return: 0 always
@@ -1427,7 +1427,7 @@ static int axienet_ethtools_get_coalesce(struct net_device *ndev,
  * @ecoalesce:	Pointer to ethtool_coalesce structure
  *
  * This implements ethtool command for setting the DMA interrupt coalescing
- * count on Tx and Rx paths. Issue "ethtool -C ethX rx-frames 5" under linux
+ * count on Tx and Rx paths. Issue "ethtool -C ethX rx-frames 5" under linaos
  * prompt to execute this function.
  *
  * Return: 0, on success, Non-zero error value on failure.

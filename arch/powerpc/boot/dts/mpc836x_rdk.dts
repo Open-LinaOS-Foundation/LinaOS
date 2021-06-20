@@ -428,7 +428,7 @@
 			width = <0>;
 			height = <0>;
 			linebytes = <0>;
-			/* linux,opened; - added by uboot */
+			/* linaos,opened; - added by uboot */
 		};
 	};
 

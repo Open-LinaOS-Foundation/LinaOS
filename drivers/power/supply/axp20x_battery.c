@@ -5,7 +5,7 @@
  *	Quentin Schulz <quentin.schulz@free-electrons.com>
  *
  * This driver is based on a previous upstreaming attempt by:
- *	Bruno Prémont <bonbons@linux-vserver.org>
+ *	Bruno Prémont <bonbons@linaos-vserver.org>
  *
  * This file is subject to the terms and conditions of the GNU General
  * Public License. See the file "COPYING" in the main directory of this
@@ -17,20 +17,20 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/consumer.h>
-#include <linux/mfd/axp20x.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/consumer.h>
+#include <linaos/mfd/axp20x.h>
 
 #define AXP20X_PWR_STATUS_BAT_CHARGING	BIT(2)
 

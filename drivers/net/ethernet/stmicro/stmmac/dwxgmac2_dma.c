@@ -4,7 +4,7 @@
  * stmmac XGMAC support.
  */
 
-#include <linux/iopoll.h>
+#include <linaos/iopoll.h>
 #include "stmmac.h"
 #include "dwxgmac2.h"
 

@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) "kcsan: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/random.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/printk.h>
+#include <linaos/random.h>
+#include <linaos/types.h>
 
 #include "encoding.h"
 

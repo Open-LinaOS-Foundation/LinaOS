@@ -2,21 +2,21 @@
 /*
  * nct7802 - Driver for Nuvoton NCT7802Y
  *
- * Copyright (C) 2014  Guenter Roeck <linux@roeck-us.net>
+ * Copyright (C) 2014  Guenter Roeck <linaos@roeck-us.net>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 #define DRVNAME "nct7802"
 
@@ -1107,6 +1107,6 @@ static struct i2c_driver nct7802_driver = {
 
 module_i2c_driver(nct7802_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linaos@roeck-us.net>");
 MODULE_DESCRIPTION("NCT7802Y Hardware Monitoring Driver");
 MODULE_LICENSE("GPL v2");

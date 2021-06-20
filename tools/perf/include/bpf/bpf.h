@@ -2,7 +2,7 @@
 #ifndef _PERF_BPF_H
 #define _PERF_BPF_H
 
-#include <uapi/linux/bpf.h>
+#include <uapi/linaos/bpf.h>
 
 /*
  * A helper structure used by eBPF C program to describe map attributes to

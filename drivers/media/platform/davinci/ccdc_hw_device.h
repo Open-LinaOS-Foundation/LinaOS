@@ -8,8 +8,8 @@
 #define _CCDC_HW_DEVICE_H
 
 #ifdef __KERNEL__
-#include <linux/videodev2.h>
-#include <linux/device.h>
+#include <linaos/videodev2.h>
+#include <linaos/device.h>
 #include <media/davinci/vpfe_types.h>
 #include <media/davinci/ccdc_types.h>
 

@@ -3,15 +3,15 @@
  * Copyright (c) 2020, NVIDIA CORPORATION. All rights reserved
  */
 
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/cpufreq.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <asm/smp_plat.h>
 

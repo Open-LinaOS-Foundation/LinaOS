@@ -7,7 +7,7 @@
 #ifndef _ASM_S390_SCLP_H
 #define _ASM_S390_SCLP_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/chpid.h>
 #include <asm/cpu.h>
 

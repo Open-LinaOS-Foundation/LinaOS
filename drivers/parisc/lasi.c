@@ -10,13 +10,13 @@
  * 	   Alex deVries <alex@onefishtwo.ca>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/pm.h>
+#include <linaos/types.h>
 
 #include <asm/io.h>
 #include <asm/hardware.h>

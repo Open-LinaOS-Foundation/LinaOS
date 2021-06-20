@@ -12,7 +12,7 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 
 #include <asm/intel_ds.h>
 #include <asm/cpu.h>

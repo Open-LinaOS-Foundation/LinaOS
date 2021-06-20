@@ -4,29 +4,29 @@
  * Copyright (c) 2011 Jiri Pirko <jpirko@redhat.com>
  */
 
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
-#include <linux/errno.h>
-#include <linux/ctype.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/netpoll.h>
-#include <linux/if_vlan.h>
-#include <linux/if_arp.h>
-#include <linux/socket.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
+#include <linaos/ethtool.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/rcupdate.h>
+#include <linaos/errno.h>
+#include <linaos/ctype.h>
+#include <linaos/notifier.h>
+#include <linaos/netdevice.h>
+#include <linaos/netpoll.h>
+#include <linaos/if_vlan.h>
+#include <linaos/if_arp.h>
+#include <linaos/socket.h>
+#include <linaos/etherdevice.h>
+#include <linaos/rtnetlink.h>
 #include <net/rtnetlink.h>
 #include <net/genetlink.h>
 #include <net/netlink.h>
 #include <net/sch_generic.h>
 #include <generated/utsrelease.h>
-#include <linux/if_team.h>
+#include <linaos/if_team.h>
 
 #define DRV_NAME "team"
 

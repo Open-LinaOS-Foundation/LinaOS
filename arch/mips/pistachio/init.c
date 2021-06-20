@@ -6,11 +6,11 @@
  * Copyright (C) 2016 Imagination Technologies
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/of_address.h>
+#include <linaos/of_fdt.h>
 
 #include <asm/cacheflush.h>
 #include <asm/fw/fw.h>

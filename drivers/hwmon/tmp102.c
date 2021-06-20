@@ -4,19 +4,19 @@
  * Copyright (C) 2010 Steven King <sfking@fdwdc.com>
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/device.h>
+#include <linaos/jiffies.h>
+#include <linaos/regmap.h>
+#include <linaos/of.h>
 
 #define	DRIVER_NAME "tmp102"
 

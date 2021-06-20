@@ -15,11 +15,11 @@
  * https://www.ti.com/lit/ds/symlink/dac7573.pdf
  */
 
-#include <linux/iio/iio.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/regulator/consumer.h>
 
 enum chip_id {
 	single_8bit, single_10bit, single_12bit,

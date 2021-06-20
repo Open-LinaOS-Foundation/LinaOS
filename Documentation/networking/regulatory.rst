@@ -1,10 +1,10 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =======================================
-Linux wireless regulatory documentation
+LinaOS wireless regulatory documentation
 =======================================
 
-This document gives a brief review over how the Linux wireless
+This document gives a brief review over how the LinaOS wireless
 regulatory infrastructure works.
 
 More up to date information can be obtained at the project's web page:

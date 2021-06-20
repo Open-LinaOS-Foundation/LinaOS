@@ -3,16 +3,16 @@
  * Copyright (C) 2015 - 2016 Cavium, Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/pci-ecam.h>
-#include <linux/platform_device.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/bitfield.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/of_address.h>
+#include <linaos/of_pci.h>
+#include <linaos/pci-acpi.h>
+#include <linaos/pci-ecam.h>
+#include <linaos/platform_device.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 #include "../pci.h"
 
 #if defined(CONFIG_PCI_HOST_THUNDER_PEM) || (defined(CONFIG_ACPI) && defined(CONFIG_PCI_QUIRKS))
@@ -25,7 +25,7 @@
  *
  * N.B. This is a non-standard platform-specific ECAM bus shift value.  For
  * standard values defined in the PCI Express Base Specification see
- * include/linux/pci-ecam.h.
+ * include/linaos/pci-ecam.h.
  */
 #define THUNDER_PCIE_ECAM_BUS_SHIFT	24
 

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 #ifndef _UAPI_SPI_H
 #define _UAPI_SPI_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 #define	SPI_CPHA		_BITUL(0)	/* clock phase */
 #define	SPI_CPOL		_BITUL(1)	/* clock polarity */
@@ -31,7 +31,7 @@
 /*
  * All the bits defined above should be covered by SPI_MODE_USER_MASK.
  * The SPI_MODE_USER_MASK has the SPI_MODE_KERNEL_MASK counterpart in
- * 'include/linux/spi/spi.h'. The bits defined here are from bit 0 upwards
+ * 'include/linaos/spi/spi.h'. The bits defined here are from bit 0 upwards
  * while in SPI_MODE_KERNEL_MASK they are from the other end downwards.
  * These bits must not overlap. A static assert check should make sure of that.
  * If adding extra bits, make sure to increase the bit index below as well.

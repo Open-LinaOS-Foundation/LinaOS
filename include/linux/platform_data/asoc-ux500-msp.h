@@ -8,7 +8,7 @@
 #ifndef __MSP_H
 #define __MSP_H
 
-#include <linux/platform_data/dma-ste-dma40.h>
+#include <linaos/platform_data/dma-ste-dma40.h>
 
 /* Platform data structure for a MSP I2S-device */
 struct msp_i2s_platform_data {

@@ -31,12 +31,12 @@
  *
  */
 
-#include <linux/hil.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/semaphore.h>
-#include <linux/serio.h>
-#include <linux/list.h>
+#include <linaos/hil.h>
+#include <linaos/time.h>
+#include <linaos/interrupt.h>
+#include <linaos/semaphore.h>
+#include <linaos/serio.h>
+#include <linaos/list.h>
 
 typedef struct hil_mlc hil_mlc;
 

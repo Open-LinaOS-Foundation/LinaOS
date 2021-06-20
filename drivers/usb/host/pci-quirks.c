@@ -3,21 +3,21 @@
  * This file contains code to reset and initialize USB host controllers.
  * Some of it includes work-arounds for PCI hardware and BIOS quirks.
  * It may need to run early during booting -- before USB would normally
- * initialize -- to ensure that Linux doesn't use any legacy modes.
+ * initialize -- to ensure that LinaOS doesn't use any legacy modes.
  *
  *  Copyright (c) 1999 Martin Mares <mj@ucw.cz>
  *  (and others)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/of.h>
-#include <linux/iopoll.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
+#include <linaos/of.h>
+#include <linaos/iopoll.h>
 
 #include "pci-quirks.h"
 #include "xhci-ext-caps.h"
@@ -879,7 +879,7 @@ static void ehci_bios_handoff(struct pci_dev *pdev,
  * and is known to prevent some systems from booting.  so we won't do this
  * unless maybe we can determine when we're on a system that needs SMI forced.
  */
-		/* BIOS workaround (?): be sure the pre-Linux code
+		/* BIOS workaround (?): be sure the pre-LinaOS code
 		 * receives the SMI
 		 */
 		pci_read_config_dword(pdev, offset + EHCI_USBLEGCTLSTS, &val);

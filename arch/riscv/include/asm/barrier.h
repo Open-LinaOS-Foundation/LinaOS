@@ -44,7 +44,7 @@ do {									\
 
 /*
  * This is a very specific barrier: it's currently only used in two places in
- * the kernel, both in the scheduler.  See include/linux/spinlock.h for the two
+ * the kernel, both in the scheduler.  See include/linaos/spinlock.h for the two
  * orderings it guarantees, but the "critical section is RCsc" guarantee
  * mandates a barrier on RISC-V.  The sequence looks like:
  *

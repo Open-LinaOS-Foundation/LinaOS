@@ -9,8 +9,8 @@
 
 #include "ad5686.h"
 
-#include <linux/module.h>
-#include <linux/i2c.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
 
 static int ad5686_i2c_read(struct ad5686_state *st, u8 addr)
 {

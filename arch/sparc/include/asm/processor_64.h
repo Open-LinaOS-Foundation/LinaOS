@@ -81,7 +81,7 @@ struct thread_struct {
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/fpumacro.h>
 
 struct task_struct;

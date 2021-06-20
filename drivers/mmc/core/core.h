@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/mmc/core/core.h
+ *  linaos/drivers/mmc/core/core.h
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *  Copyright 2007 Pierre Ossman
@@ -8,8 +8,8 @@
 #ifndef _MMC_CORE_CORE_H
 #define _MMC_CORE_CORE_H
 
-#include <linux/delay.h>
-#include <linux/sched.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
 
 struct mmc_host;
 struct mmc_card;

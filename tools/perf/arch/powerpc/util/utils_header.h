@@ -2,7 +2,7 @@
 #ifndef __PERF_UTIL_HEADER_H
 #define __PERF_UTIL_HEADER_H
 
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 #define mfspr(rn)       ({unsigned long rval; \
 			asm volatile("mfspr %0," __stringify(rn) \

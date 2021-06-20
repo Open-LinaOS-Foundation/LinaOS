@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for LinaOS
  * cpuid support routines
  *
  * derived from arch/x86/kvm/x86.c
@@ -9,11 +9,11 @@
  * Copyright IBM Corporation, 2008
  */
 
-#include <linux/kvm_host.h>
-#include <linux/export.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
-#include <linux/sched/stat.h>
+#include <linaos/kvm_host.h>
+#include <linaos/export.h>
+#include <linaos/vmalloc.h>
+#include <linaos/uaccess.h>
+#include <linaos/sched/stat.h>
 
 #include <asm/processor.h>
 #include <asm/user.h>

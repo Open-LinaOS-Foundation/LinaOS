@@ -26,8 +26,8 @@ The RBDS standard also specifies support for MMBS (Modified Mobile
 Search). This is a proprietary format which seems to be discontinued.
 The RDS interface does not support this format. Should support for MMBS
 (or the so-called 'E blocks' in general) be needed, then please contact
-the linux-media mailing list:
-`https://linuxtv.org/lists.php <https://linuxtv.org/lists.php>`__.
+the linaos-media mailing list:
+`https://linaostv.org/lists.php <https://linaostv.org/lists.php>`__.
 
 Querying Capabilities
 =====================
@@ -44,8 +44,8 @@ driver only passes RDS blocks without interpreting the data the
 ``V4L2_TUNER_CAP_RDS_CONTROLS`` has also been defined. However, a driver
 for a radio tuner with this capability does not yet exist, so if you are
 planning to write such a driver you should discuss this on the
-linux-media mailing list:
-`https://linuxtv.org/lists.php <https://linuxtv.org/lists.php>`__.
+linaos-media mailing list:
+`https://linaostv.org/lists.php <https://linaostv.org/lists.php>`__.
 
 Whether an RDS signal is present can be detected by looking at the
 ``rxsubchans`` field of struct :c:type:`v4l2_tuner`: the

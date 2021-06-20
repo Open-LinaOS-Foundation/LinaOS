@@ -2,13 +2,13 @@
 /*
 * Copyright (C) 2015 Intel Corporation Inc.
 */
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
+#include <linaos/of.h>
+#include <linaos/property.h>
+#include <linaos/spi/spi.h>
+#include <linaos/regmap.h>
+#include <linaos/iio/iio.h>
 #include "inv_mpu_iio.h"
 
 static const struct regmap_config inv_mpu_regmap_config = {

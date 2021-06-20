@@ -3317,7 +3317,7 @@ void ice_update_rx_ring_stats(struct ice_ring *rx_ring, u64 pkts, u64 bytes)
 }
 
 /**
- * ice_status_to_errno - convert from enum ice_status to Linux errno
+ * ice_status_to_errno - convert from enum ice_status to LinaOS errno
  * @err: ice_status value to convert
  */
 int ice_status_to_errno(enum ice_status err)

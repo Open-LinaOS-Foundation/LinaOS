@@ -3,8 +3,8 @@
  * Copyright (C) 2011-12 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqchip.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqchip.h>
 #include <asm/mach_desc.h>
 #include <asm/smp.h>
 

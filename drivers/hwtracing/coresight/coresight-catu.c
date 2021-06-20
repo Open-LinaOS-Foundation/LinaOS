@@ -7,12 +7,12 @@
  * Author: Suzuki K Poulose <suzuki.poulose@arm.com>
  */
 
-#include <linux/amba/bus.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/amba/bus.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 
 #include "coresight-catu.h"
 #include "coresight-priv.h"

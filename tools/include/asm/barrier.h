@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #if defined(__i386__) || defined(__x86_64__)
 #include "../../arch/x86/include/asm/barrier.h"
 #elif defined(__arm__)

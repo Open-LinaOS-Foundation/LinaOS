@@ -12,13 +12,13 @@
  *
  * If -E is returned, result is not touched.
  */
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linaos/ctype.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/math64.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
 #include "kstrtox.h"
 
 const char *_parse_integer_fixup_radix(const char *s, unsigned int *base)

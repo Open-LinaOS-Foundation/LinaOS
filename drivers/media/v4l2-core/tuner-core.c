@@ -15,18 +15,18 @@
  * handle both radio and analog TV tuning.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/i2c.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/videodev2.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/poll.h>
+#include <linaos/i2c.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/videodev2.h>
 #include <media/tuner.h>
 #include <media/tuner-types.h>
 #include <media/v4l2-device.h>

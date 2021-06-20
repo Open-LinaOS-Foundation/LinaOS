@@ -6,7 +6,7 @@
 #ifndef __SOUND_AC97_CODEC2_H
 #define __SOUND_AC97_CODEC2_H
 
-#include <linux/device.h>
+#include <linaos/device.h>
 
 #define AC97_ID(vendor_id1, vendor_id2) \
 	((((vendor_id1) & 0xffff) << 16) | ((vendor_id2) & 0xffff))

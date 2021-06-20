@@ -6,14 +6,14 @@
  * Author: Andrey Ryabinin <ryabinin.a.a@gmail.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <linaos/bitops.h>
+#include <linaos/bug.h>
+#include <linaos/ctype.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/uaccess.h>
 
 #include "ubsan.h"
 

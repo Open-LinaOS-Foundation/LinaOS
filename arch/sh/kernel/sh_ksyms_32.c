@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/uaccess.h>
+#include <linaos/delay.h>
+#include <linaos/mm.h>
 #include <asm/checksum.h>
 #include <asm/sections.h>
 

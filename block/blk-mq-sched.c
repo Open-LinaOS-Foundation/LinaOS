@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2016 Jens Axboe
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/blk-mq.h>
-#include <linux/list_sort.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/blk-mq.h>
+#include <linaos/list_sort.h>
 
 #include <trace/events/block.h>
 

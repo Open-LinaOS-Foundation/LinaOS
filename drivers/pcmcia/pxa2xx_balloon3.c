@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/pcmcia/pxa2xx_balloon3.c
+ * linaos/drivers/pcmcia/pxa2xx_balloon3.c
  *
  * Balloon3 PCMCIA specific routines.
  *
@@ -12,13 +12,13 @@
  * Various modification by Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/gpio.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
 
 #include <mach/balloon3.h>
 

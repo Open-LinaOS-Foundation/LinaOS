@@ -10,7 +10,7 @@
  * files/head:/src/aarch64/
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 /*

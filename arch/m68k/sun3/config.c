@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/sun3/config.c
+ *  linaos/arch/m68k/sun3/config.c
  *
  *  Copyright (C) 1996,1997 Pekka Pietik{inen
  *
@@ -8,15 +8,15 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/platform_device.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/seq_file.h>
+#include <linaos/tty.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/platform_device.h>
 
 #include <asm/oplib.h>
 #include <asm/setup.h>
@@ -95,7 +95,7 @@ void __init sun3_init(void)
 /* Without this, Bad Things happen when something calls arch_reset. */
 static void sun3_reboot (void)
 {
-	prom_reboot ("vmlinux");
+	prom_reboot ("vmlinaos");
 }
 
 static void sun3_halt (void)

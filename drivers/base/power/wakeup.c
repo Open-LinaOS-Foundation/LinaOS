@@ -6,15 +6,15 @@
  */
 #define pr_fmt(fmt) "PM: " fmt
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/capability.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/pm_wakeirq.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
+#include <linaos/capability.h>
+#include <linaos/export.h>
+#include <linaos/suspend.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/pm_wakeirq.h>
 #include <trace/events/power.h>
 
 #include "power.h"

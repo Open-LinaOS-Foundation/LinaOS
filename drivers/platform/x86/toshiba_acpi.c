@@ -13,7 +13,7 @@
  *  Credits:
  *	Jonathan A. Buzzard - Toshiba HCI info, and critical tips on reverse
  *		engineering the Windows drivers
- *	Yasushi Nagato - changes for linux kernel 2.4 -> 2.5
+ *	Yasushi Nagato - changes for linaos kernel 2.4 -> 2.5
  *	Rob Miller - TV out and hotkeys help
  */
 
@@ -22,28 +22,28 @@
 #define TOSHIBA_ACPI_VERSION	"0.24"
 #define PROC_INTERFACE_VERSION	1
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/backlight.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/i8042.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/uaccess.h>
-#include <linux/miscdevice.h>
-#include <linux/rfkill.h>
-#include <linux/iio/iio.h>
-#include <linux/toshiba.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/backlight.h>
+#include <linaos/input.h>
+#include <linaos/input/sparse-keymap.h>
+#include <linaos/leds.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/i8042.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
+#include <linaos/uaccess.h>
+#include <linaos/miscdevice.h>
+#include <linaos/rfkill.h>
+#include <linaos/iio/iio.h>
+#include <linaos/toshiba.h>
 #include <acpi/video.h>
 
 MODULE_AUTHOR("John Belmonte");

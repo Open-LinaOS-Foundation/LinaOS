@@ -38,7 +38,7 @@ power of two) and each kmesg dump writes a ``record_size`` chunk of
 information.
 
 Limiting which kinds of kmsg dumps are stored can be controlled via
-the ``max_reason`` value, as defined in include/linux/kmsg_dump.h's
+the ``max_reason`` value, as defined in include/linaos/kmsg_dump.h's
 ``enum kmsg_dump_reason``. For example, to store both Oopses and Panics,
 ``max_reason`` should be set to 2 (KMSG_DUMP_OOPS), to store only Panics
 ``max_reason`` should be set to 1 (KMSG_DUMP_PANIC). Setting this to 0
@@ -90,7 +90,7 @@ Setting the ramoops parameters can be done in several different manners:
 
  .. code-block:: c
 
-  #include <linux/pstore_ram.h>
+  #include <linaos/pstore_ram.h>
   [...]
 
   static struct ramoops_platform_data ramoops_data = {
@@ -122,7 +122,7 @@ You can specify either RAM memory or peripheral devices' memory. However, when
 specifying RAM, be sure to reserve the memory by issuing memblock_reserve()
 very early in the architecture code, e.g.::
 
-	#include <linux/memblock.h>
+	#include <linaos/memblock.h>
 
 	memblock_reserve(ramoops_data.mem_address, ramoops_data.mem_size);
 

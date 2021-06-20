@@ -11,7 +11,7 @@
 #ifndef __LINUX_IMA_TEMPLATE_LIB_H
 #define __LINUX_IMA_TEMPLATE_LIB_H
 
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 #include "ima.h"
 
 #define ENFORCE_FIELDS 0x00000001

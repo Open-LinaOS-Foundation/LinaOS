@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2002 Yoshinori Sato
  *
- * Based on: linux/asm-m68nommu/processor.h
+ * Based on: linaos/asm-m68nommu/processor.h
  *
  * Copyright (C) 1995 Hamish Macdonald
  */
@@ -12,7 +12,7 @@
 #ifndef __ASM_H8300_PROCESSOR_H
 #define __ASM_H8300_PROCESSOR_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/segment.h>
 #include <asm/ptrace.h>
 #include <asm/current.h>

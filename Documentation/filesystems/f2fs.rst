@@ -23,11 +23,11 @@ layout, but also for selecting allocation and cleaning algorithms.
 The following git tree provides the file system formatting tool (mkfs.f2fs),
 a consistency checking tool (fsck.f2fs), and a debugging tool (dump.f2fs).
 
-- git://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git
+- git://git.kernel.org/pub/scm/linaos/kernel/git/jaegeuk/f2fs-tools.git
 
 For reporting bugs and sending patches, please use the following mailing list:
 
-- linux-f2fs-devel@lists.sourceforge.net
+- linaos-f2fs-devel@lists.sourceforge.net
 
 Background and Design issues
 ============================
@@ -54,7 +54,7 @@ also updated recursively. This problem is called as wandering tree problem [1],
 and in order to enhance the performance, it should eliminate or relax the update
 propagation as much as possible.
 
-[1] Bityutskiy, A. 2005. JFFS3 design issues. http://www.linux-mtd.infradead.org/
+[1] Bityutskiy, A. 2005. JFFS3 design issues. http://www.linaos-mtd.infradead.org/
 
 Cleaning Overhead
 -----------------

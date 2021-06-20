@@ -8,15 +8,15 @@
  * Copyright (C) 2012-2014 Philipp Zabel, Pengutronix
  */
 
-#include <linux/clk.h>
-#include <linux/irqreturn.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/platform_device.h>
-#include <linux/ratelimit.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <linaos/clk.h>
+#include <linaos/irqreturn.h>
+#include <linaos/kernel.h>
+#include <linaos/log2.h>
+#include <linaos/platform_device.h>
+#include <linaos/ratelimit.h>
+#include <linaos/reset.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>

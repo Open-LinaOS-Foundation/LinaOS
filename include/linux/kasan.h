@@ -2,8 +2,8 @@
 #ifndef _LINUX_KASAN_H
 #define _LINUX_KASAN_H
 
-#include <linux/static_key.h>
-#include <linux/types.h>
+#include <linaos/static_key.h>
+#include <linaos/types.h>
 
 struct kmem_cache;
 struct page;
@@ -12,7 +12,7 @@ struct task_struct;
 
 #ifdef CONFIG_KASAN
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/kasan.h>
 
 /* kasan_data struct is used in KUnit tests for KASAN expected failures */
@@ -25,7 +25,7 @@ struct kunit_kasan_expectation {
 
 #if defined(CONFIG_KASAN_GENERIC) || defined(CONFIG_KASAN_SW_TAGS)
 
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 
 /* Software KASAN implementations use shadow memory. */
 

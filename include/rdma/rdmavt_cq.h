@@ -6,7 +6,7 @@
 #ifndef DEF_RDMAVT_INCCQ_H
 #define DEF_RDMAVT_INCCQ_H
 
-#include <linux/kthread.h>
+#include <linaos/kthread.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_verbs.h>
 

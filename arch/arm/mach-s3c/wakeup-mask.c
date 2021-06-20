@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 //
-// Copyright 2010 Ben Dooks <ben-linux@fluff.org>
+// Copyright 2010 Ben Dooks <ben-linaos@fluff.org>
 //
 // Support for wakeup mask interrupts on newer SoCs
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
 
 #include "wakeup-mask.h"
 #include "pm.h"

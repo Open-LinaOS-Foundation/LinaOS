@@ -5,13 +5,13 @@
  * Copyright(c) 2018 - 2020 Intel Corporation
  *
  * Contact Information:
- *  Intel Linux Wireless <linuxwifi@intel.com>
+ *  Intel LinaOS Wireless <linaoswifi@intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/stringify.h>
+#include <linaos/module.h>
+#include <linaos/stringify.h>
 #include "iwl-config.h"
 #include "iwl-agn-hw.h"
 #include "dvm/commands.h" /* needed for BT for now */

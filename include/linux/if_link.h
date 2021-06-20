@@ -2,7 +2,7 @@
 #ifndef _LINUX_IF_LINK_H
 #define _LINUX_IF_LINK_H
 
-#include <uapi/linux/if_link.h>
+#include <uapi/linaos/if_link.h>
 
 
 /* We don't want this structure exposed to user space */

@@ -6,7 +6,7 @@
 #ifndef __CRYPTO_DES_H
 #define __CRYPTO_DES_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define DES_KEY_SIZE		8
 #define DES_EXPKEY_WORDS	32

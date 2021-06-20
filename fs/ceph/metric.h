@@ -2,9 +2,9 @@
 #ifndef _FS_CEPH_MDS_METRIC_H
 #define _FS_CEPH_MDS_METRIC_H
 
-#include <linux/types.h>
-#include <linux/percpu_counter.h>
-#include <linux/ktime.h>
+#include <linaos/types.h>
+#include <linaos/percpu_counter.h>
+#include <linaos/ktime.h>
 
 extern bool disable_send_metrics;
 

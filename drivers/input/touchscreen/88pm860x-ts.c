@@ -5,15 +5,15 @@
  * Copyright (C) 2009 Marvell International Ltd.
  * 	Haojian Zhuang <haojian.zhuang@marvell.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/mfd/88pm860x.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
 
 #define MEAS_LEN		(8)
 #define ACCURATE_BIT		(12)

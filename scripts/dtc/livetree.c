@@ -605,9 +605,9 @@ cell_t get_node_phandle(struct node *root, struct node *node)
 	d = data_add_marker(d, TYPE_UINT32, NULL);
 	d = data_append_cell(d, phandle);
 
-	if (!get_property(node, "linux,phandle")
+	if (!get_property(node, "linaos,phandle")
 	    && (phandle_format & PHANDLE_LEGACY))
-		add_property(node, build_property("linux,phandle", d, NULL));
+		add_property(node, build_property("linaos,phandle", d, NULL));
 
 	if (!get_property(node, "phandle")
 	    && (phandle_format & PHANDLE_EPAPR))

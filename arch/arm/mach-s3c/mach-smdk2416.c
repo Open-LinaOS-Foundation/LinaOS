@@ -5,20 +5,20 @@
 // Copyright (c) 2009 Promwad Innovation Company
 //	Yauhen Kharuzhy <yauhen.kharuzhy@promwad.com>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mtd/partitions.h>
-#include <linux/gpio.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/gpio.h>
+#include <linaos/fb.h>
+#include <linaos/delay.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -33,16 +33,16 @@
 #include "regs-s3c2443-clock.h"
 #include "gpio-samsung.h"
 
-#include <linux/platform_data/leds-s3c24xx.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/leds-s3c24xx.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 
 #include "gpio-cfg.h"
 #include "devs.h"
 #include "cpu.h"
-#include <linux/platform_data/mtd-nand-s3c2410.h>
+#include <linaos/platform_data/mtd-nand-s3c2410.h>
 #include "sdhci.h"
-#include <linux/platform_data/usb-s3c2410_udc.h>
-#include <linux/platform_data/s3c-hsudc.h>
+#include <linaos/platform_data/usb-s3c2410_udc.h>
+#include <linaos/platform_data/s3c-hsudc.h>
 
 #include "fb.h"
 

@@ -4,7 +4,7 @@
  * Generic code to add IPMI platform devices.
  */
 
-#include <linux/ipmi.h>
+#include <linaos/ipmi.h>
 
 enum ipmi_plat_interface_type { IPMI_PLAT_IF_SI, IPMI_PLAT_IF_SSIF };
 

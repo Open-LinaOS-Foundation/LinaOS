@@ -6,9 +6,9 @@
 #include <string.h>
 #include <unistd.h>
 #include <asm/byteorder.h>
-#include <linux/bitops.h>
-#include <linux/btf.h>
-#include <linux/err.h>
+#include <linaos/bitops.h>
+#include <linaos/btf.h>
+#include <linaos/err.h>
 #include <bpf/btf.h>
 #include <bpf/bpf.h>
 

@@ -21,11 +21,11 @@
  *
  */
 #include "pp_debug.h"
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 #include <asm/div64.h>
 #include <drm/amdgpu_drm.h>
 #include "ppatomctrl.h"

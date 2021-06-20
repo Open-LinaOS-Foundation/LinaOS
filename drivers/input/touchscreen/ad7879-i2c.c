@@ -5,13 +5,13 @@
  * Copyright (C) 2008-2010 Michael Hennerich, Analog Devices Inc.
  */
 
-#include <linux/input.h>	/* BUS_I2C */
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
+#include <linaos/input.h>	/* BUS_I2C */
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/of.h>
+#include <linaos/pm.h>
+#include <linaos/regmap.h>
 
 #include "ad7879.h"
 

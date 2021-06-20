@@ -30,7 +30,7 @@
  * Helper functions for common, but complicated tasks.
  *
  */
-#include <linux/bug.h>
+#include <linaos/bug.h>
 #include <asm/octeon/octeon.h>
 
 #include <asm/octeon/cvmx-config.h>

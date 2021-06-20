@@ -4,8 +4,8 @@
 #if !defined(_TRACE_BRIDGE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_BRIDGE_H
 
-#include <linux/netdevice.h>
-#include <linux/tracepoint.h>
+#include <linaos/netdevice.h>
+#include <linaos/tracepoint.h>
 
 #include "../../../net/bridge/br_private.h"
 

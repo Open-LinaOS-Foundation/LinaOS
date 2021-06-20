@@ -3,8 +3,8 @@ What:		/sys/bus/soundwire/devices/sdw:.../status
 
 Date:		September 2020
 
-Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
-		Bard Liao <yung-chuan.liao@linux.intel.com>
+Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linaos.intel.com>
+		Bard Liao <yung-chuan.liao@linaos.intel.com>
 		Vinod Koul <vkoul@kernel.org>
 
 Description:	SoundWire Slave status
@@ -34,8 +34,8 @@ What:		/sys/bus/soundwire/devices/sdw:.../dev-properties/mipi_revision
 
 Date:		May 2020
 
-Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
-		Bard Liao <yung-chuan.liao@linux.intel.com>
+Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linaos.intel.com>
+		Bard Liao <yung-chuan.liao@linaos.intel.com>
 		Vinod Koul <vkoul@kernel.org>
 
 Description:	SoundWire Slave DisCo properties.
@@ -54,8 +54,8 @@ What:		/sys/bus/soundwire/devices/sdw:.../dp0/max_word
 
 Date:		May 2020
 
-Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
-		Bard Liao <yung-chuan.liao@linux.intel.com>
+Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linaos.intel.com>
+		Bard Liao <yung-chuan.liao@linaos.intel.com>
 		Vinod Koul <vkoul@kernel.org>
 
 Description:	SoundWire Slave Data Port-0 DisCo properties.
@@ -98,8 +98,8 @@ What:		/sys/bus/soundwire/devices/sdw:.../dpN_src/max_word
 
 Date:		May 2020
 
-Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
-		Bard Liao <yung-chuan.liao@linux.intel.com>
+Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linaos.intel.com>
+		Bard Liao <yung-chuan.liao@linaos.intel.com>
 		Vinod Koul <vkoul@kernel.org>
 
 Description:	SoundWire Slave Data Source/Sink Port-N DisCo properties.

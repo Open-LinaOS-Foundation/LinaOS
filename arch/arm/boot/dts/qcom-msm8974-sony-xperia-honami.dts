@@ -28,29 +28,29 @@
 		volume-down {
 			label = "volume_down";
 			gpios = <&pm8941_gpios 2 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,input-type = <1>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 		};
 
 		camera-snapshot {
 			label = "camera_snapshot";
 			gpios = <&pm8941_gpios 3 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_CAMERA>;
+			linaos,input-type = <1>;
+			linaos,code = <KEY_CAMERA>;
 		};
 
 		camera-focus {
 			label = "camera_focus";
 			gpios = <&pm8941_gpios 4 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_CAMERA_FOCUS>;
+			linaos,input-type = <1>;
+			linaos,code = <KEY_CAMERA_FOCUS>;
 		};
 
 		volume-up {
 			label = "volume_up";
 			gpios = <&pm8941_gpios 5 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,input-type = <1>;
+			linaos,code = <KEY_VOLUMEUP>;
 		};
 	};
 

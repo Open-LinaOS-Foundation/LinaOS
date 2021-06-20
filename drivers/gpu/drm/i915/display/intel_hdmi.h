@@ -6,8 +6,8 @@
 #ifndef __INTEL_HDMI_H__
 #define __INTEL_HDMI_H__
 
-#include <linux/hdmi.h>
-#include <linux/types.h>
+#include <linaos/hdmi.h>
+#include <linaos/types.h>
 
 #include "i915_reg.h"
 

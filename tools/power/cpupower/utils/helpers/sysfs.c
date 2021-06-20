@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  (C) 2004-2009  Dominik Brodowski <linux@dominikbrodowski.de>
+ *  (C) 2004-2009  Dominik Brodowski <linaos@dominikbrodowski.de>
  *  (C) 2011       Thomas Renninger <trenn@novell.com> Novell Inc.
  */
 

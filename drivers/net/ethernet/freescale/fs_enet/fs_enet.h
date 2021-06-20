@@ -2,14 +2,14 @@
 #ifndef FS_ENET_H
 #define FS_ENET_H
 
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/phy.h>
-#include <linux/dma-mapping.h>
+#include <linaos/mii.h>
+#include <linaos/netdevice.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/phy.h>
+#include <linaos/dma-mapping.h>
 
-#include <linux/fs_enet_pd.h>
+#include <linaos/fs_enet_pd.h>
 #include <asm/fs_pd.h>
 
 #ifdef CONFIG_CPM1

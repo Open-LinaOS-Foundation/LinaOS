@@ -11,7 +11,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    Le Yanqun		    <yanqun.le@nokia.com>
@@ -22,28 +22,28 @@
  *    Ardelle Fan	    <ardelle.fan@intel.com>
  *
  * Based on:
- *	linux/net/ipv6/tcp_ipv6.c
+ *	linaos/net/ipv6/tcp_ipv6.c
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/ipsec.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/netdevice.h>
+#include <linaos/init.h>
+#include <linaos/ipsec.h>
+#include <linaos/slab.h>
 
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
+#include <linaos/ipv6.h>
+#include <linaos/icmpv6.h>
+#include <linaos/random.h>
+#include <linaos/seq_file.h>
 
 #include <net/protocol.h>
 #include <net/ndisc.h>
@@ -57,7 +57,7 @@
 #include <net/sctp/sctp.h>
 #include <net/udp_tunnel.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 static inline int sctp_v6_addr_match_len(union sctp_addr *s1,
 					 union sctp_addr *s2);

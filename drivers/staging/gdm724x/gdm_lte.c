@@ -3,20 +3,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/udp.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/in6.h>
-#include <linux/tcp.h>
-#include <linux/icmp.h>
-#include <linux/icmpv6.h>
-#include <linux/uaccess.h>
-#include <linux/errno.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/udp.h>
+#include <linaos/in.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/in6.h>
+#include <linaos/tcp.h>
+#include <linaos/icmp.h>
+#include <linaos/icmpv6.h>
+#include <linaos/uaccess.h>
+#include <linaos/errno.h>
 #include <net/ndisc.h>
 
 #include "gdm_lte.h"

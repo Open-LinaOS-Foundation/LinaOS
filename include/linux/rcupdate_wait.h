@@ -6,8 +6,8 @@
  * RCU synchronization types and methods:
  */
 
-#include <linux/rcupdate.h>
-#include <linux/completion.h>
+#include <linaos/rcupdate.h>
+#include <linaos/completion.h>
 
 /*
  * Structure allowing asynchronous waiting on RCU.

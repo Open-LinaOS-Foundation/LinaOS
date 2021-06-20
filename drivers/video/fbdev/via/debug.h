@@ -7,7 +7,7 @@
 #ifndef __DEBUG_H__
 #define __DEBUG_H__
 
-#include <linux/printk.h>
+#include <linaos/printk.h>
 
 #ifndef VIAFB_DEBUG
 #define VIAFB_DEBUG 0

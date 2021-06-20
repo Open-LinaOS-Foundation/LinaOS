@@ -2,12 +2,12 @@
 /*
  * Copyright (C) STMicroelectronics 2020 - All Rights Reserved
  */
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rpmsg.h>
-#include <linux/rpmsg/ns.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/rpmsg.h>
+#include <linaos/rpmsg/ns.h>
+#include <linaos/slab.h>
 
 #include "rpmsg_internal.h"
 

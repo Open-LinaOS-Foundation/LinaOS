@@ -2,15 +2,15 @@
  * \file drm_memory.c
  * Memory management wrappers for DRM
  *
- * \author Rickard E. (Rik) Faith <faith@valinux.com>
- * \author Gareth Hughes <gareth@valinux.com>
+ * \author Rickard E. (Rik) Faith <faith@valinaos.com>
+ * \author Gareth Hughes <gareth@valinaos.com>
  */
 
 /*
- * Created: Thu Feb  4 14:00:34 1999 by faith@valinux.com
+ * Created: Thu Feb  4 14:00:34 1999 by faith@valinaos.com
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -33,10 +33,10 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/export.h>
-#include <linux/highmem.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
+#include <linaos/export.h>
+#include <linaos/highmem.h>
+#include <linaos/pci.h>
+#include <linaos/vmalloc.h>
 
 #include <drm/drm_agpsupport.h>
 #include <drm/drm_cache.h>

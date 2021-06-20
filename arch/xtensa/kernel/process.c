@@ -15,35 +15,35 @@
  * Kevin Chea
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/elf.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/init.h>
-#include <linux/prctl.h>
-#include <linux/init_task.h>
-#include <linux/module.h>
-#include <linux/mqueue.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/ptrace.h>
+#include <linaos/elf.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/init.h>
+#include <linaos/prctl.h>
+#include <linaos/init_task.h>
+#include <linaos/module.h>
+#include <linaos/mqueue.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/rcupdate.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <asm/platform.h>
 #include <asm/mmu.h>
 #include <asm/irq.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/asm-offsets.h>
 #include <asm/regs.h>
 #include <asm/hw_breakpoint.h>
@@ -56,7 +56,7 @@ EXPORT_SYMBOL(pm_power_off);
 
 
 #ifdef CONFIG_STACKPROTECTOR
-#include <linux/stackprotector.h>
+#include <linaos/stackprotector.h>
 unsigned long __stack_chk_guard __read_mostly;
 EXPORT_SYMBOL(__stack_chk_guard);
 #endif

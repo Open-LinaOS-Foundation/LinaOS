@@ -10,7 +10,7 @@
 #define pr_fmt(fmt)  "Hyper-V: " fmt
 
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/hyperv-tlfs.h>
 #include <asm/mshyperv.h>
 #include <asm/tlbflush.h>

@@ -4,17 +4,17 @@
  *
  *  Copyright (C) 2001-2003 MontaVista Software Inc.
  *    Author: Yoichi Yuasa <source@mvista.com>
- *  Copyright (C) 2004-2008  Yoichi Yuasa <yuasa@linux-mips.org>
- *  Copyright (C) 2004 by Ralf Baechle (ralf@linux-mips.org)
+ *  Copyright (C) 2004-2008  Yoichi Yuasa <yuasa@linaos-mips.org>
+ *  Copyright (C) 2004 by Ralf Baechle (ralf@linaos-mips.org)
  */
 /*
  * Changes:
  *  MontaVista Software Inc. <source@mvista.com>
  *  - New creation, NEC VR4122 and VR4131 are supported.
  */
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/types.h>
 
 #include <asm/cpu.h>
 #include <asm/io.h>

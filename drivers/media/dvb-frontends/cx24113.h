@@ -2,7 +2,7 @@
 /*
  *  Driver for Conexant CX24113/CX24128 Tuner (Satellite)
  *
- *  Copyright (C) 2007-8 Patrick Boettcher <pb@linuxtv.org>
+ *  Copyright (C) 2007-8 Patrick Boettcher <pb@linaostv.org>
  */
 
 #ifndef CX24113_H

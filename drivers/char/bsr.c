@@ -6,17 +6,17 @@
  * Author: Sonny Rao <sonnyrao@us.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/cdev.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/fs.h>
+#include <linaos/module.h>
+#include <linaos/cdev.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
 #include <asm/io.h>
 
 /*

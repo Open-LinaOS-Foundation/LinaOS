@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/blk-mq.h>
-#include <linux/blk-pm.h>
-#include <linux/blkdev.h>
-#include <linux/pm_runtime.h>
+#include <linaos/blk-mq.h>
+#include <linaos/blk-pm.h>
+#include <linaos/blkdev.h>
+#include <linaos/pm_runtime.h>
 #include "blk-mq.h"
 #include "blk-mq-tag.h"
 

@@ -1,35 +1,35 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/parisc/kernel/signal.c: Architecture-specific signal
+ *  linaos/arch/parisc/kernel/signal.c: Architecture-specific signal
  *  handling support.
  *
  *  Copyright (C) 2000 David Huggins-Daines <dhd@debian.org>
- *  Copyright (C) 2000 Linuxcare, Inc.
+ *  Copyright (C) 2000 LinaOScare, Inc.
  *
  *  Based on the ia64, i386, and alpha versions.
  *
  *  Like the IA-64, we are a recent enough port (we are *starting*
  *  with glibc2.2) that we do not need to support the old non-realtime
- *  Linux signals.  Therefore we don't.
+ *  LinaOS signals.  Therefore we don't.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/tracehook.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/compat.h>
-#include <linux/elf.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/errno.h>
+#include <linaos/wait.h>
+#include <linaos/ptrace.h>
+#include <linaos/tracehook.h>
+#include <linaos/unistd.h>
+#include <linaos/stddef.h>
+#include <linaos/compat.h>
+#include <linaos/elf.h>
 #include <asm/ucontext.h>
 #include <asm/rt_sigframe.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/asm-offsets.h>
 

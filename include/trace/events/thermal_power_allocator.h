@@ -5,7 +5,7 @@
 #if !defined(_TRACE_THERMAL_POWER_ALLOCATOR_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_THERMAL_POWER_ALLOCATOR_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(thermal_power_allocator,
 	TP_PROTO(struct thermal_zone_device *tz, u32 *req_power,

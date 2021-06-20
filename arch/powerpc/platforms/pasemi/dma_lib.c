@@ -5,12 +5,12 @@
  * Common functions for DMA access on PA Semi PWRficient
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/sched.h>
 
 #include <asm/pasemi_dma.h>
 

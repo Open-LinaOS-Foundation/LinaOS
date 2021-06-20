@@ -5,13 +5,13 @@
  * Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/bitops.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/interrupt.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/mipsregs.h>

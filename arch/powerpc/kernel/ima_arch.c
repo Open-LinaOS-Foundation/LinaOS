@@ -4,7 +4,7 @@
  * Author: Nayna Jain
  */
 
-#include <linux/ima.h>
+#include <linaos/ima.h>
 #include <asm/secure_boot.h>
 
 bool arch_ima_get_secureboot(void)

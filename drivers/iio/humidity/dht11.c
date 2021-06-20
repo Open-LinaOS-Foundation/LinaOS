@@ -5,27 +5,27 @@
  * Copyright (c) Harald Geyer <harald@ccbib.org>
  */
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/sysfs.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/timekeeping.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/sysfs.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/wait.h>
+#include <linaos/bitops.h>
+#include <linaos/completion.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/timekeeping.h>
 
-#include <linux/iio/iio.h>
+#include <linaos/iio/iio.h>
 
 #define DRIVER_NAME	"dht11"
 

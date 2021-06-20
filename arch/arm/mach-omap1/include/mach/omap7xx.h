@@ -1,7 +1,7 @@
 /*
  * Hardware definitions for TI OMAP7XX processor.
  *
- * Cleanup for Linux-2.6 by Dirk Behme <dirk.behme@de.bosch.com>
+ * Cleanup for LinaOS-2.6 by Dirk Behme <dirk.behme@de.bosch.com>
  * Adapted for omap850 by Zebediah C. McClure <zmc@lurian.net>
  * Adapted for omap7xx by Alistair Buxton <a.j.buxton@gmail.com>
  *

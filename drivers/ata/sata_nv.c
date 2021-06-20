@@ -20,17 +20,17 @@
  *  sent through the legacy interface.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/gfp.h>
+#include <linaos/pci.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>
-#include <linux/libata.h>
+#include <linaos/libata.h>
 
 #define DRV_NAME			"sata_nv"
 #define DRV_VERSION			"3.5"
@@ -398,7 +398,7 @@ static struct scsi_host_template nv_swncq_sht = {
  *
  *  bko11195 reports that link doesn't come online after hardreset on
  *  generic nv's and there have been several other similar reports on
- *  linux-ide.
+ *  linaos-ide.
  *
  *  bko12351#c23 reports that warmplug on MCP61 doesn't work with
  *  softreset.
@@ -409,7 +409,7 @@ static struct scsi_host_template nv_swncq_sht = {
  *  reliably after hardreset.  The following thread reports detection
  *  failure on cold boot with the standard debouncing timing.
  *
- *  http://thread.gmane.org/gmane.linux.ide/34098
+ *  http://thread.gmane.org/gmane.linaos.ide/34098
  *
  *  bko12176 reports that hardreset fails to bring up the link during
  *  boot on nf2.

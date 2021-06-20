@@ -17,14 +17,14 @@
 #ifndef HTC_H
 #define HTC_H
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/firmware.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/firmware.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/leds.h>
+#include <linaos/slab.h>
 #include <net/mac80211.h>
 
 #include "common.h"

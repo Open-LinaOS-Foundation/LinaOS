@@ -1,18 +1,18 @@
 Input: sysrq reset sequence
 
 A simple binding to represent a set of keys as described in
-include/uapi/linux/input.h. This is to communicate a sequence of keys to the
+include/uapi/linaos/input.h. This is to communicate a sequence of keys to the
 sysrq driver. Upon holding the keys for a specified amount of time (if
 specified) the system is sync'ed and reset.
 
 Key sequences are global to the system but all the keys in a set must be coming
 from the same input device.
 
-The /chosen node should contain a 'linux,sysrq-reset-seq' child node to define
+The /chosen node should contain a 'linaos,sysrq-reset-seq' child node to define
 a set of keys.
 
 Required property:
-keyset: array of Linux keycodes, one keycode per cell.
+keyset: array of LinaOS keycodes, one keycode per cell.
 
 Optional property:
 timeout-ms: duration keys must be pressed together in milliseconds before
@@ -22,7 +22,7 @@ sequence has been recognized.
 Example:
 
  chosen {
-                linux,sysrq-reset-seq {
+                linaos,sysrq-reset-seq {
                         keyset = <0x03
                                   0x04
                                   0x0a>;

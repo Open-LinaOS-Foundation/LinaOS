@@ -37,14 +37,14 @@
 /*
  * Generic range manager structs
  */
-#include <linux/bug.h>
-#include <linux/rbtree.h>
-#include <linux/kernel.h>
-#include <linux/mm_types.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <linaos/bug.h>
+#include <linaos/rbtree.h>
+#include <linaos/kernel.h>
+#include <linaos/mm_types.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
 #ifdef CONFIG_DRM_DEBUG_MM
-#include <linux/stackdepot.h>
+#include <linaos/stackdepot.h>
 #endif
 #include <drm/drm_print.h>
 

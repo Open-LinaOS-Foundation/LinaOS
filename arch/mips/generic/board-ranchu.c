@@ -5,8 +5,8 @@
  * Author: Miodrag Dinic <miodrag.dinic@mips.com>
  */
 
-#include <linux/of_address.h>
-#include <linux/types.h>
+#include <linaos/of_address.h>
+#include <linaos/types.h>
 
 #include <asm/machine.h>
 #include <asm/mipsregs.h>

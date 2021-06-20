@@ -2,8 +2,8 @@
 #ifndef _MM_PERCPU_INTERNAL_H
 #define _MM_PERCPU_INTERNAL_H
 
-#include <linux/types.h>
-#include <linux/percpu.h>
+#include <linaos/types.h>
+#include <linaos/percpu.h>
 
 /*
  * There are two chunk types: root and memcg-aware.
@@ -161,7 +161,7 @@ static inline struct list_head *pcpu_chunk_list(enum pcpu_chunk_type chunk_type)
 
 #ifdef CONFIG_PERCPU_STATS
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 struct percpu_stats {
 	u64 nr_alloc;		/* lifetime # of allocations */

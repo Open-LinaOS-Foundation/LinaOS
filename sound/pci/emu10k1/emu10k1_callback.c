@@ -5,7 +5,7 @@
  *  Copyright (C) 2000 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/export.h>
+#include <linaos/export.h>
 #include "emu10k1_synth_local.h"
 #include <sound/asoundef.h>
 

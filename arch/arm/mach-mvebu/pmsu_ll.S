@@ -9,7 +9,7 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 

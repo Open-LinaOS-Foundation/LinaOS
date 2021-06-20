@@ -9,23 +9,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/freezer.h>
-#include <linux/uaccess.h>
-#include <linux/leds.h>
-#include <linux/atomic.h>
-#include <linux/acpi.h>
-#include <linux/i8042.h>
-#include <linux/serio.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/dmi.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/wait.h>
+#include <linaos/poll.h>
+#include <linaos/freezer.h>
+#include <linaos/uaccess.h>
+#include <linaos/leds.h>
+#include <linaos/atomic.h>
+#include <linaos/acpi.h>
+#include <linaos/i8042.h>
+#include <linaos/serio.h>
 #include "../../misc/lis3lv02d/lis3lv02d.h"
 
 #define DRIVER_NAME     "hp_accel"

@@ -18,11 +18,11 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
 
 #include <media/cec.h>
 

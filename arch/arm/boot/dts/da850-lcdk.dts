@@ -105,13 +105,13 @@
 
 		user1 {
 			label = "GPIO Key USER1";
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			gpios = <&gpio 36 GPIO_ACTIVE_LOW>;
 		};
 
 		user2 {
 			label = "GPIO Key USER2";
-			linux,code = <BTN_1>;
+			linaos,code = <BTN_1>;
 			gpios = <&gpio 37 GPIO_ACTIVE_LOW>;
 		};
 	};

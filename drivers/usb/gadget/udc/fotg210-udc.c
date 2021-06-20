@@ -7,14 +7,14 @@
  * Author : Yuan-Hsin Chen <yhchen@faraday-tech.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
 
 #include "fotg210.h"
 

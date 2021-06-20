@@ -20,7 +20,7 @@
 #ifndef __LINUX_USB_EHCI_DEF_H
 #define __LINUX_USB_EHCI_DEF_H
 
-#include <linux/usb/ehci-dbgp.h>
+#include <linaos/usb/ehci-dbgp.h>
 
 /* EHCI register interface, corresponds to EHCI Revision 0.95 specification */
 

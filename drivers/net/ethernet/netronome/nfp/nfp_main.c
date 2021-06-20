@@ -9,12 +9,12 @@
  *          Rolf Neugebauer <rolf.neugebauer@netronome.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/vmalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/firmware.h>
+#include <linaos/vmalloc.h>
 #include <net/devlink.h>
 
 #include "nfpcore/nfp.h"

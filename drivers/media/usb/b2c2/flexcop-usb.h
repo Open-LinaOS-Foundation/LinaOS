@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Linux driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
+ * LinaOS driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
  * flexcop-usb.h - header file for the USB part
  * see flexcop.c for copyright information
  */
 #ifndef __FLEXCOP_USB_H_INCLUDED__
 #define __FLEXCOP_USB_H_INCLUDED__
 
-#include <linux/usb.h>
+#include <linaos/usb.h>
 
 /* transfer parameters */
 #define B2C2_USB_FRAMES_PER_ISO 4

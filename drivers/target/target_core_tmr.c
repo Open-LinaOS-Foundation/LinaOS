@@ -10,10 +10,10 @@
  *
  ******************************************************************************/
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/export.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/export.h>
 
 #include <target/target_core_base.h>
 #include <target/target_core_backend.h>

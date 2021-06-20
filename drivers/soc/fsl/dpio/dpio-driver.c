@@ -5,18 +5,18 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/msi.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/sys_soc.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/msi.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/sys_soc.h>
 
-#include <linux/fsl/mc.h>
+#include <linaos/fsl/mc.h>
 #include <soc/fsl/dpaa2-io.h>
 
 #include "qbman-portal.h"

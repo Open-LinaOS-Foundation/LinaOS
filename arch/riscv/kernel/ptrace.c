@@ -10,13 +10,13 @@
 #include <asm/ptrace.h>
 #include <asm/syscall.h>
 #include <asm/thread_info.h>
-#include <linux/audit.h>
-#include <linux/ptrace.h>
-#include <linux/elf.h>
-#include <linux/regset.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/tracehook.h>
+#include <linaos/audit.h>
+#include <linaos/ptrace.h>
+#include <linaos/elf.h>
+#include <linaos/regset.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/tracehook.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/syscalls.h>

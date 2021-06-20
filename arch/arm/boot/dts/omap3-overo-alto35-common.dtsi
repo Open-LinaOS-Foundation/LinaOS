@@ -43,7 +43,7 @@
 		pinctrl-0 = <&button_pins>;
 		button0 {
 			label = "button0";
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			gpios = <&gpio1 10 GPIO_ACTIVE_LOW>;		/* gpio_10 */
 			wakeup-source;
 		};

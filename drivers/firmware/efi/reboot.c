@@ -3,8 +3,8 @@
  * Copyright (C) 2014 Intel Corporation; author Matt Fleming
  * Copyright (c) 2014 Red Hat, Inc., Mark Salter <msalter@redhat.com>
  */
-#include <linux/efi.h>
-#include <linux/reboot.h>
+#include <linaos/efi.h>
+#include <linaos/reboot.h>
 
 static void (*orig_pm_power_off)(void);
 

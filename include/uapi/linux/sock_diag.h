@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI__SOCK_DIAG_H__
 #define _UAPI__SOCK_DIAG_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define SOCK_DIAG_BY_FAMILY 20
 #define SOCK_DESTROY 21

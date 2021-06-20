@@ -42,7 +42,7 @@
 #include <unistd.h>
 #include <sys/syscall.h>
 #include <sys/uio.h>
-#include <linux/kdev_t.h>
+#include <linaos/kdev_t.h>
 #include <sys/time.h>
 #include <sys/resource.h>
 

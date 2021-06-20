@@ -5,14 +5,14 @@
 #ifndef _TI_LMU_COMMON_H_
 #define _TI_LMU_COMMON_H_
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <uapi/linux/uleds.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <uapi/linaos/uleds.h>
 
 #define LMU_11BIT_LSB_MASK	(BIT(0) | BIT(1) | BIT(2))
 #define LMU_11BIT_MSB_SHIFT	3

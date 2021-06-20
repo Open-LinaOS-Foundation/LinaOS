@@ -8,8 +8,8 @@
 #define __ASM_GENERIC_IO_H
 
 #include <asm/page.h> /* I/O is all done through memory accesses */
-#include <linux/string.h> /* for memset() and memcpy() */
-#include <linux/types.h>
+#include <linaos/string.h> /* for memset() and memcpy() */
+#include <linaos/types.h>
 
 #ifdef CONFIG_GENERIC_IOMAP
 #include <asm-generic/iomap.h>
@@ -523,7 +523,7 @@ static inline void _outl(u32 value, unsigned long addr)
 }
 #endif
 
-#include <linux/logic_pio.h>
+#include <linaos/logic_pio.h>
 
 #ifndef inb
 #define inb _inb
@@ -908,7 +908,7 @@ static inline void iowrite64_rep(volatile void __iomem *addr,
 
 #ifdef __KERNEL__
 
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 #define __io_virt(x) ((void __force *)(x))
 
 /*
@@ -962,7 +962,7 @@ static inline void iounmap(void __iomem *addr)
 }
 #endif
 #elif defined(CONFIG_GENERIC_IOREMAP)
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 
 void __iomem *ioremap_prot(phys_addr_t addr, size_t size, unsigned long prot);
 void iounmap(volatile void __iomem *addr);

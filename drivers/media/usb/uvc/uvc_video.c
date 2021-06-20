@@ -6,18 +6,18 @@
  *          Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/atomic.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/highmem.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/videodev2.h>
+#include <linaos/vmalloc.h>
+#include <linaos/wait.h>
+#include <linaos/atomic.h>
 #include <asm/unaligned.h>
 
 #include <media/v4l2-common.h>

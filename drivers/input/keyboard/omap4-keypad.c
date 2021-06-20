@@ -8,17 +8,17 @@
  * Initial Code: Syed Rafiuddin <rafiuddin.syed@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/input.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_wakeirq.h>
 
 /* OMAP4 registers */
 #define OMAP4_KBD_REVISION		0x00
@@ -277,7 +277,7 @@ static int omap4_keypad_parse_dt(struct device *dev,
 	if (err)
 		return err;
 
-	if (of_get_property(np, "linux,input-no-autorepeat", NULL))
+	if (of_get_property(np, "linaos,input-no-autorepeat", NULL))
 		keypad_data->no_autorepeat = true;
 
 	return 0;

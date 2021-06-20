@@ -6,8 +6,8 @@
  */
 #ifndef _CRYPTO_UX500_H
 #define _CRYPTO_UX500_H
-#include <linux/dmaengine.h>
-#include <linux/platform_data/dma-ste-dma40.h>
+#include <linaos/dmaengine.h>
+#include <linaos/platform_data/dma-ste-dma40.h>
 
 struct hash_platform_data {
 	void *mem_to_engine;

@@ -3,8 +3,8 @@
  * Copyright (C) 2005-2014, 2021 Intel Corporation
  * Copyright (C) 2015-2017 Intel Deutschland GmbH
  */
-#include <linux/sched.h>
-#include <linux/export.h>
+#include <linaos/sched.h>
+#include <linaos/export.h>
 
 #include "iwl-drv.h"
 #include "notif-wait.h"

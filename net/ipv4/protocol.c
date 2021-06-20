@@ -18,10 +18,10 @@
  *		Vince Laviano	: Modified inet_del_protocol() to correctly
  *				  maintain copy bit.
  */
-#include <linux/cache.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
+#include <linaos/cache.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
 #include <net/protocol.h>
 
 struct net_protocol __rcu *inet_protos[MAX_INET_PROTOS] __read_mostly;

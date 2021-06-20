@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (C) 2015 Thomas Meyer (thomas@m3y3r.de)
- * Copyright (C) 2002- 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002- 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
 #include <stdlib.h>
@@ -21,7 +21,7 @@
 #include <registers.h>
 #include <skas.h>
 #include <sysdep/stub.h>
-#include <linux/threads.h>
+#include <linaos/threads.h>
 
 int is_skas_winch(int pid, int fd, void *data)
 {

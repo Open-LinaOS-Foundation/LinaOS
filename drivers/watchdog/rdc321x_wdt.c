@@ -7,21 +7,21 @@
  * This driver is highly inspired from the cpu5_wdt driver
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/timer.h>
-#include <linux/completion.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/mfd/rdc321x.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/miscdevice.h>
+#include <linaos/fs.h>
+#include <linaos/ioport.h>
+#include <linaos/timer.h>
+#include <linaos/completion.h>
+#include <linaos/jiffies.h>
+#include <linaos/platform_device.h>
+#include <linaos/watchdog.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
+#include <linaos/mfd/rdc321x.h>
 
 #define RDC_WDT_MASK	0x80000000 /* Mask */
 #define RDC_WDT_EN	0x00800000 /* Enable bit */

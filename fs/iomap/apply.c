@@ -3,10 +3,10 @@
  * Copyright (C) 2010 Red Hat, Inc.
  * Copyright (c) 2016-2018 Christoph Hellwig.
  */
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/iomap.h>
+#include <linaos/module.h>
+#include <linaos/compiler.h>
+#include <linaos/fs.h>
+#include <linaos/iomap.h>
 #include "trace.h"
 
 /*

@@ -7,7 +7,7 @@
 #ifndef __RTW_CMD_H_
 #define __RTW_CMD_H_
 
-#include <linux/completion.h>
+#include <linaos/completion.h>
 
 #define C2H_MEM_SZ (16*1024)
 

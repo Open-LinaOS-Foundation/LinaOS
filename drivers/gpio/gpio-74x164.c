@@ -6,14 +6,14 @@
  *  Copyright (C) 2010 Miguel Gaio <miguel.gaio@efixo.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <linaos/bitops.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi.h>
 
 #define GEN_74X164_NUMBER_GPIOS	8
 

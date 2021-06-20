@@ -14,9 +14,9 @@
 #define _LINUX_UDP_H
 
 #include <net/inet_sock.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/netns/hash.h>
-#include <uapi/linux/udp.h>
+#include <uapi/linaos/udp.h>
 
 static inline struct udphdr *udp_hdr(const struct sk_buff *skb)
 {

@@ -15,10 +15,10 @@
  * code in here.  If there is it should be reported as a bug.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/seq_kernel.h>
 #include <sound/seq_midi_emul.h>
@@ -26,7 +26,7 @@
 #include <sound/asoundef.h>
 
 MODULE_AUTHOR("Takashi Iwai / Steve Ratcliffe");
-MODULE_DESCRIPTION("Advanced Linux Sound Architecture sequencer MIDI emulation.");
+MODULE_DESCRIPTION("Advanced LinaOS Sound Architecture sequencer MIDI emulation.");
 MODULE_LICENSE("GPL");
 
 /* Prototypes for static functions */

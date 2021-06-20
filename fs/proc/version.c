@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/utsname.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/utsname.h>
 
 static int version_proc_show(struct seq_file *m, void *v)
 {
-	seq_printf(m, linux_proc_banner,
+	seq_printf(m, linaos_proc_banner,
 		utsname()->sysname,
 		utsname()->release,
 		utsname()->version);

@@ -8,8 +8,8 @@
 #ifndef _ISHTP_DEV_H_
 #define _ISHTP_DEV_H_
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
 #include "bus.h"
 #include "hbm.h"
 

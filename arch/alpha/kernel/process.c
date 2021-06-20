@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/kernel/process.c
+ *  linaos/arch/alpha/kernel/process.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
@@ -9,33 +9,33 @@
  * This file handles the architecture-dependent parts of process handling.
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/time.h>
-#include <linux/major.h>
-#include <linux/stat.h>
-#include <linux/vt.h>
-#include <linux/mman.h>
-#include <linux/elfcore.h>
-#include <linux/reboot.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/time.h>
+#include <linaos/major.h>
+#include <linaos/stat.h>
+#include <linaos/vt.h>
+#include <linaos/mman.h>
+#include <linaos/elfcore.h>
+#include <linaos/reboot.h>
+#include <linaos/tty.h>
+#include <linaos/console.h>
+#include <linaos/slab.h>
+#include <linaos/rcupdate.h>
 
 #include <asm/reg.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/hwrpb.h>
 #include <asm/fpu.h>

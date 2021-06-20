@@ -30,12 +30,12 @@
     
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/init.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
 
 #include <pcmcia/ss.h>
 
@@ -209,7 +209,7 @@ static void __exit sa11x0_pcmcia_exit(void)
 }
 
 MODULE_AUTHOR("John Dorsey <john+@cs.cmu.edu>");
-MODULE_DESCRIPTION("Linux PCMCIA Card Services: SA-11x0 Socket Controller");
+MODULE_DESCRIPTION("LinaOS PCMCIA Card Services: SA-11x0 Socket Controller");
 MODULE_LICENSE("Dual MPL/GPL");
 
 fs_initcall(sa11x0_pcmcia_init);

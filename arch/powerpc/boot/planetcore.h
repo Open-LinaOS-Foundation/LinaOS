@@ -39,8 +39,8 @@ int planetcore_get_hex(const char *table, const char *key, u64 *val);
  */
 void planetcore_set_mac_addrs(const char *table);
 
-/* Sets the linux,stdout-path in the /chosen node.  This requires the
- * linux,planetcore-label property in each serial node.
+/* Sets the linaos,stdout-path in the /chosen node.  This requires the
+ * linaos,planetcore-label property in each serial node.
  */
 void planetcore_set_stdout_path(const char *table);
 

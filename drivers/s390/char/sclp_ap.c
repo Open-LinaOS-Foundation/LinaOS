@@ -7,8 +7,8 @@
 #define KMSG_COMPONENT "sclp_cmd"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
 #include <asm/sclp.h>
 #include "sclp.h"
 

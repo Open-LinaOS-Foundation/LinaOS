@@ -2,9 +2,9 @@
 #ifndef __ASM_SMP_H
 #define __ASM_SMP_H
 
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/bitops.h>
+#include <linaos/threads.h>
+#include <linaos/cpumask.h>
+#include <linaos/bitops.h>
 #include <asm/pal.h>
 
 /* HACK: Cabrio WHAMI return value is bogus if more than 8 bits used.. :-( */

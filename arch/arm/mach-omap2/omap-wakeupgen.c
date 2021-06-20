@@ -13,17 +13,17 @@
  *	Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/cpu_pm.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/cpu.h>
+#include <linaos/notifier.h>
+#include <linaos/cpu_pm.h>
 
 #include "omap-wakeupgen.h"
 #include "omap-secure.h"

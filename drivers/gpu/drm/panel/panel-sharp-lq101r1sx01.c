@@ -3,11 +3,11 @@
  * Copyright (C) 2014 NVIDIA Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/regulator/consumer.h>
 
 #include <video/mipi_display.h>
 

@@ -13,7 +13,7 @@
  */
 
 #include "ctimap.h"
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 int input_mapper_add(struct list_head *mappers, struct imapper *entry,
 		     int (*map_op)(void *, struct imapper *), void *data)

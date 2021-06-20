@@ -16,20 +16,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/watchdog.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/delay.h>
+#include <linaos/reboot.h>
 
 /* WatchDog Timer - Chapter 23 Page 207 */
 

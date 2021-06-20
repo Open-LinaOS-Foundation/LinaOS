@@ -9,16 +9,16 @@
 #ifndef _FIREDTV_H
 #define _FIREDTV_H
 
-#include <linux/time.h>
-#include <linux/dvb/dmx.h>
-#include <linux/dvb/frontend.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linaos/time.h>
+#include <linaos/dvb/dmx.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/list.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock_types.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
 
 #include <media/demux.h>
 #include <media/dmxdev.h>

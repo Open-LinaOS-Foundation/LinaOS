@@ -6,20 +6,20 @@
  * Copyright (c) 2009-2011, NVIDIA Corporation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/reset.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/clk.h>
+#include <linaos/slab.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/reset.h>
+#include <linaos/err.h>
 
 #define KBC_MAX_KPENT	8
 
@@ -535,8 +535,8 @@ static int tegra_kbc_parse_dt(struct tegra_kbc *kbc)
 		return -EINVAL;
 	}
 
-	if (!of_get_property(np, "linux,keymap", &proplen)) {
-		dev_err(kbc->dev, "property linux,keymap not found\n");
+	if (!of_get_property(np, "linaos,keymap", &proplen)) {
+		dev_err(kbc->dev, "property linaos,keymap not found\n");
 		return -ENOENT;
 	}
 

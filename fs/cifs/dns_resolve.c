@@ -25,8 +25,8 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/slab.h>
-#include <linux/dns_resolver.h>
+#include <linaos/slab.h>
+#include <linaos/dns_resolver.h>
 #include "dns_resolve.h"
 #include "cifsglob.h"
 #include "cifsproto.h"

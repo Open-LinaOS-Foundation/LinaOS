@@ -213,8 +213,8 @@ struct leon3_cacheregs {
 	unsigned long dccr;	/* 0x0c - Data Cache Configuration Register */
 };
 
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
 
 struct device_node;
 struct task_struct;
@@ -242,7 +242,7 @@ void leon_enable_irq_cpu(unsigned int irq_nr, unsigned int cpu);
 irqreturn_t leon_percpu_timer_interrupt(int irq, void *unused);
 
 extern unsigned int smpleon_ipi[];
-extern unsigned int linux_trap_ipi15_leon[];
+extern unsigned int linaos_trap_ipi15_leon[];
 extern int leon_ipi_irq;
 
 #endif /* CONFIG_SMP */

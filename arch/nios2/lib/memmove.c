@@ -7,8 +7,8 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
 
 void *memmove(void *d, const void *s, size_t count)
 {

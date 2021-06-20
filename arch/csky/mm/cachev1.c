@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 #include <asm/cache.h>
 #include <abi/reg_ops.h>
 

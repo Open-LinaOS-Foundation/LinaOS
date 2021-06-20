@@ -3,13 +3,13 @@
  *  Copyright (C) 2014, Samsung Electronics Co. Ltd. All Rights Reserved.
  */
 
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <linaos/iio/iio.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
 #include "ssp.h"
 
 #define SSP_WDT_TIME			10000

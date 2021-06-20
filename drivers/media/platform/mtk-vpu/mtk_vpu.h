@@ -7,7 +7,7 @@
 #ifndef _MTK_VPU_H
 #define _MTK_VPU_H
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 /**
  * DOC: VPU

@@ -22,7 +22,7 @@
  */
 
 #include "pp_overdriver.h"
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 static const struct phm_fuses_default vega10_fuses_default[] = {
 	{ 0x0213EA94DE0E4964, 0x00003C96, 0xFFFFE226, 0x00000656, 0x00002203, 0xFFFFF201, 0x000003FF, 0x00002203, 0xFFFFF201, 0x000003FF },

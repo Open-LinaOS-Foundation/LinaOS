@@ -2,14 +2,14 @@
 /*
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/sizes.h>
-#include <linux/ndctl.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/nd.h>
+#include <linaos/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/sizes.h>
+#include <linaos/ndctl.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/nd.h>
 #include "label.h"
 #include "nd.h"
 

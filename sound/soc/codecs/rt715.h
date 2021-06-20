@@ -8,7 +8,7 @@
 #ifndef __RT715_H__
 #define __RT715_H__
 
-#include <linux/regulator/consumer.h>
+#include <linaos/regulator/consumer.h>
 
 struct rt715_priv {
 	struct regmap *regmap;

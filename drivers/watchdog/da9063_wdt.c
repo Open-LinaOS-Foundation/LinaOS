@@ -8,16 +8,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mfd/da9063/registers.h>
-#include <linux/mfd/da9063/core.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/watchdog.h>
+#include <linaos/platform_device.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/mfd/da9063/registers.h>
+#include <linaos/mfd/da9063/core.h>
+#include <linaos/regmap.h>
 
 /*
  * Watchdog selector to timeout in seconds.

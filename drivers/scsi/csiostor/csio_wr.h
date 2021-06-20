@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for LinaOS.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,7 +35,7 @@
 #ifndef __CSIO_WR_H__
 #define __CSIO_WR_H__
 
-#include <linux/cache.h>
+#include <linaos/cache.h>
 
 #include "csio_defs.h"
 #include "t4fw_api.h"

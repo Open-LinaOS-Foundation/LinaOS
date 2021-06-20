@@ -8,7 +8,7 @@
 #ifndef _MTD_DOCG3_H
 #define _MTD_DOCG3_H
 
-#include <linux/mtd/mtd.h>
+#include <linaos/mtd/mtd.h>
 
 /*
  * Flash memory areas :
@@ -314,7 +314,7 @@ struct docg3 {
 #if !defined(_MTD_DOCG3_TRACE) || defined(TRACE_HEADER_MULTI_READ)
 #define _MTD_DOCG3_TRACE
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(docg3_io,
 	    TP_PROTO(int op, int width, u16 reg, int val),

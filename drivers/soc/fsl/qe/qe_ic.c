@@ -10,19 +10,19 @@
  * QUICC ENGINE Interrupt Controller
  */
 
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/irq.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/irq.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/stddef.h>
+#include <linaos/sched.h>
+#include <linaos/signal.h>
+#include <linaos/device.h>
+#include <linaos/spinlock.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 #include <soc/fsl/qe/qe.h>
@@ -49,7 +49,7 @@ struct qe_ic {
 	/* The remapper for this QEIC */
 	struct irq_domain *irqhost;
 
-	/* The "linux" controller struct */
+	/* The "linaos" controller struct */
 	struct irq_chip hc_irq;
 
 	/* VIRQ numbers of QE high/low irqs */

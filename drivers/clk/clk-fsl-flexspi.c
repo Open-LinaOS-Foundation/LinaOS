@@ -5,10 +5,10 @@
  * Copyright 2020 Michael Walle <michael@walle.cc>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 static const struct clk_div_table ls1028a_flexspi_divs[] = {
 	{ .val = 0, .div = 1, },

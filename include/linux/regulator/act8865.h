@@ -8,7 +8,7 @@
 #ifndef __LINUX_REGULATOR_ACT8865_H
 #define __LINUX_REGULATOR_ACT8865_H
 
-#include <linux/regulator/machine.h>
+#include <linaos/regulator/machine.h>
 
 enum {
 	ACT8600_ID_DCDC1,

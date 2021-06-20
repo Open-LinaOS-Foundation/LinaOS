@@ -2,7 +2,7 @@
 #ifndef _LMC_PROTO_H_
 #define _LMC_PROTO_H_
 
-#include <linux/hdlc.h>
+#include <linaos/hdlc.h>
 
 void lmc_proto_attach(lmc_softc_t *sc);
 int lmc_proto_ioctl(lmc_softc_t *sc, struct ifreq *ifr, int cmd);

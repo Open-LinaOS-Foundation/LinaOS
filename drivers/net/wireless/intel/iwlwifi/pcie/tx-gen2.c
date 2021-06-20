@@ -4,7 +4,7 @@
  * Copyright (C) 2018-2020 Intel Corporation
  */
 #include <net/tso.h>
-#include <linux/tcp.h>
+#include <linaos/tcp.h>
 
 #include "iwl-debug.h"
 #include "iwl-csr.h"

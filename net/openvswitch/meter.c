@@ -5,14 +5,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/if.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/openvswitch.h>
-#include <linux/netlink.h>
-#include <linux/rculist.h>
-#include <linux/swap.h>
+#include <linaos/if.h>
+#include <linaos/skbuff.h>
+#include <linaos/ip.h>
+#include <linaos/kernel.h>
+#include <linaos/openvswitch.h>
+#include <linaos/netlink.h>
+#include <linaos/rculist.h>
+#include <linaos/swap.h>
 
 #include <net/netlink.h>
 #include <net/genetlink.h>

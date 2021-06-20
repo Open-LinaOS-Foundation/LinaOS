@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/platinumfb-hw.c -- Frame buffer device for the
+ * linaos/drivers/video/platinumfb-hw.c -- Frame buffer device for the
  * Platinum on-board video in PowerMac 7200s (and some clones based
  * on the same motherboard.)
  *

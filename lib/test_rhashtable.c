@@ -10,18 +10,18 @@
  * Self Test
  **************************************************************************/
 
-#include <linux/init.h>
-#include <linux/jhash.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/rcupdate.h>
-#include <linux/rhashtable.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/random.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
+#include <linaos/init.h>
+#include <linaos/jhash.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
+#include <linaos/module.h>
+#include <linaos/rcupdate.h>
+#include <linaos/rhashtable.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/random.h>
+#include <linaos/vmalloc.h>
+#include <linaos/wait.h>
 
 #define MAX_ENTRIES	1000000
 #define TEST_INSERT_FAIL INT_MAX

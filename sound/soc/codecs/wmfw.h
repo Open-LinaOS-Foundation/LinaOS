@@ -10,7 +10,7 @@
 #ifndef __WMFW_H
 #define __WMFW_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define WMFW_MAX_ALG_NAME         256
 #define WMFW_MAX_ALG_DESCR_NAME   256

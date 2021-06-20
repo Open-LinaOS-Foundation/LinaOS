@@ -2,8 +2,8 @@
 #ifndef _TDFX_H
 #define _TDFX_H
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-bit.h>
 
 /* membase0 register offsets */
 #define STATUS		0x00

@@ -3,11 +3,11 @@
  * Copyright (c) 2015 MediaTek Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
-#include <linux/soc/mediatek/mtk-cmdq.h>
-#include <linux/soc/mediatek/mtk-mmsys.h>
-#include <linux/soc/mediatek/mtk-mutex.h>
+#include <linaos/clk.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/soc/mediatek/mtk-cmdq.h>
+#include <linaos/soc/mediatek/mtk-mmsys.h>
+#include <linaos/soc/mediatek/mtk-mutex.h>
 
 #include <asm/barrier.h>
 #include <soc/mediatek/smi.h>

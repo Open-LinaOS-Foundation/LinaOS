@@ -5,12 +5,12 @@
  * Copyright 2015 IBM Corp.
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/device.h>
+#include <linaos/cpu.h>
 
 #include <asm/asm-prototypes.h>
 #include <asm/firmware.h>

@@ -8,8 +8,8 @@
 #ifndef _HV_UTILS_TRANSPORT_H
 #define _HV_UTILS_TRANSPORT_H
 
-#include <linux/connector.h>
-#include <linux/miscdevice.h>
+#include <linaos/connector.h>
+#include <linaos/miscdevice.h>
 
 enum hvutil_transport_mode {
 	HVUTIL_TRANSPORT_INIT = 0,

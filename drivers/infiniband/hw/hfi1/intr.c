@@ -45,9 +45,9 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/bitmap.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/bitmap.h>
 
 #include "hfi.h"
 #include "common.h"

@@ -18,16 +18,16 @@
  *		 2001-2004 Juergen Stuber <starblue@users.sourceforge.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
 
-#include <linux/uaccess.h>
-#include <linux/input.h>
-#include <linux/usb.h>
-#include <linux/poll.h>
+#include <linaos/uaccess.h>
+#include <linaos/input.h>
+#include <linaos/usb.h>
+#include <linaos/poll.h>
 
 /* Define these values to match your devices */
 #define USB_VENDOR_ID_LD		0x0f11	/* USB Vendor ID of LD Didactic GmbH */

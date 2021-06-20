@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/ide.h>
-#include <linux/bitops.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/interrupt.h>
+#include <linaos/ide.h>
+#include <linaos/bitops.h>
 
 u64 ide_get_lba_addr(struct ide_cmd *cmd, int lba48)
 {

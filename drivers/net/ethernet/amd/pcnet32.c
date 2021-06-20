@@ -1,4 +1,4 @@
-/* pcnet32.c: An AMD PCnet32 ethernet driver for linux. */
+/* pcnet32.c: An AMD PCnet32 ethernet driver for linaos. */
 /*
  *	Copyright 1996-1999 Thomas Bogendoerfer
  *
@@ -27,35 +27,35 @@
 #define DRV_RELDATE	"21.Apr.2008"
 #define PFX		DRV_NAME ": "
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/crc32.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/moduleparam.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 #include <asm/dma.h>
 #include <asm/irq.h>
 
 /*
- * PCI device identifiers for "new style" Linux PCI Device Drivers
+ * PCI device identifiers for "new style" LinaOS PCI Device Drivers
  */
 static const struct pci_device_id pcnet32_pci_tbl[] = {
 	{ PCI_DEVICE(PCI_VENDOR_ID_AMD, PCI_DEVICE_ID_AMD_LANCE_HOME), },

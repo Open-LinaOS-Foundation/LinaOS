@@ -7,21 +7,21 @@
  * Author: Brijesh Singh <brijesh.singh@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/hw_random.h>
-#include <linux/ccp.h>
-#include <linux/firmware.h>
-#include <linux/gfp.h>
-#include <linux/cpufeature.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/spinlock_types.h>
+#include <linaos/types.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/hw_random.h>
+#include <linaos/ccp.h>
+#include <linaos/firmware.h>
+#include <linaos/gfp.h>
+#include <linaos/cpufeature.h>
 
 #include <asm/smp.h>
 

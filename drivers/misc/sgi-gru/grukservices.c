@@ -7,19 +7,19 @@
  *  Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/interrupt.h>
-#include <linux/sync_core.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/spinlock.h>
+#include <linaos/device.h>
+#include <linaos/miscdevice.h>
+#include <linaos/proc_fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/sync_core.h>
+#include <linaos/uaccess.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
 #include <asm/io_apic.h>
 #include "gru.h"
 #include "grulib.h"

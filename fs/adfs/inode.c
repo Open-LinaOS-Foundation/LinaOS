@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/adfs/inode.c
+ *  linaos/fs/adfs/inode.c
  *
  *  Copyright (C) 1997-1999 Russell King
  */
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
+#include <linaos/buffer_head.h>
+#include <linaos/writeback.h>
 #include "adfs.h"
 
 /*
@@ -81,7 +81,7 @@ static const struct address_space_operations adfs_aops = {
 };
 
 /*
- * Convert ADFS attributes and filetype to Linux permission.
+ * Convert ADFS attributes and filetype to LinaOS permission.
  */
 static umode_t
 adfs_atts2mode(struct super_block *sb, struct inode *inode)
@@ -124,7 +124,7 @@ adfs_atts2mode(struct super_block *sb, struct inode *inode)
 }
 
 /*
- * Convert Linux permission to ADFS attribute.  We try to do the reverse
+ * Convert LinaOS permission to ADFS attribute.  We try to do the reverse
  * of atts2mode, but there is not a 1:1 translation.
  */
 static int adfs_mode2atts(struct super_block *sb, struct inode *inode,

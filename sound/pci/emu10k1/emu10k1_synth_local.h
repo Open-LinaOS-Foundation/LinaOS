@@ -7,7 +7,7 @@
  *  Copyright (C) 2000 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/time.h>
+#include <linaos/time.h>
 #include <sound/core.h>
 #include <sound/emu10k1_synth.h>
 

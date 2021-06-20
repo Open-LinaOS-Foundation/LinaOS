@@ -11,8 +11,8 @@
 #ifndef _MEDIA_DEVICE_H
 #define _MEDIA_DEVICE_H
 
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
 
 #include <media/media-devnode.h>
 #include <media/media-entity.h>

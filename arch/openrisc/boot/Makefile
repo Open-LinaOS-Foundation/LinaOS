@@ -3,8 +3,8 @@
 # Makefile for bootable kernel images
 #
 
-targets += vmlinux.bin
+targets += vmlinaos.bin
 
-OBJCOPYFLAGS_vmlinux.bin := -O binary
-$(obj)/vmlinux.bin: vmlinux FORCE
+OBJCOPYFLAGS_vmlinaos.bin := -O binary
+$(obj)/vmlinaos.bin: vmlinaos FORCE
 	$(call if_changed,objcopy)

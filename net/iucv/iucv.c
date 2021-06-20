@@ -23,22 +23,22 @@
 #define KMSG_COMPONENT "iucv"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/reboot.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/device.h>
+#include <linaos/cpu.h>
+#include <linaos/reboot.h>
 #include <net/iucv/iucv.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/ebcdic.h>
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -1900,5 +1900,5 @@ subsys_initcall(iucv_init);
 module_exit(iucv_exit);
 
 MODULE_AUTHOR("(C) 2001 IBM Corp. by Fritz Elfert (felfert@millenux.com)");
-MODULE_DESCRIPTION("Linux for S/390 IUCV lowlevel driver");
+MODULE_DESCRIPTION("LinaOS for S/390 IUCV lowlevel driver");
 MODULE_LICENSE("GPL");

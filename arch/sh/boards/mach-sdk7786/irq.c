@@ -5,7 +5,7 @@
  * Copyright (C) 2010  Matt Fleming
  * Copyright (C) 2010  Paul Mundt
  */
-#include <linux/irq.h>
+#include <linaos/irq.h>
 #include <mach/fpga.h>
 #include <mach/irq.h>
 

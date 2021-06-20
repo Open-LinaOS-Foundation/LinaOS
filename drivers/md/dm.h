@@ -10,16 +10,16 @@
 #ifndef DM_INTERNAL_H
 #define DM_INTERNAL_H
 
-#include <linux/fs.h>
-#include <linux/device-mapper.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/hdreg.h>
-#include <linux/completion.h>
-#include <linux/kobject.h>
-#include <linux/refcount.h>
+#include <linaos/fs.h>
+#include <linaos/device-mapper.h>
+#include <linaos/list.h>
+#include <linaos/moduleparam.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/hdreg.h>
+#include <linaos/completion.h>
+#include <linaos/kobject.h>
+#include <linaos/refcount.h>
 
 #include "dm-stats.h"
 

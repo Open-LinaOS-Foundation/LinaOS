@@ -9,8 +9,8 @@
  * This file implements various helper functions for UBIFS authentication support
  */
 
-#include <linux/crypto.h>
-#include <linux/verification.h>
+#include <linaos/crypto.h>
+#include <linaos/verification.h>
 #include <crypto/hash.h>
 #include <crypto/algapi.h>
 #include <keys/user-type.h>

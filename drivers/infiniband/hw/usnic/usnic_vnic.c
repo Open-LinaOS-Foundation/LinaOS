@@ -30,9 +30,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include "usnic_ib.h"
 #include "vnic_resource.h"

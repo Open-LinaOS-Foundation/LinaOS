@@ -28,12 +28,12 @@
  *   NOTE: This driver currently only supports mode 00.
  */
 
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
-#include <linux/mutex.h>
-#include <uapi/linux/uleds.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/mutex.h>
+#include <uapi/linaos/uleds.h>
 
 struct spi_byte_chipdef {
 	/* SPI byte that will be send to switch the LED off */

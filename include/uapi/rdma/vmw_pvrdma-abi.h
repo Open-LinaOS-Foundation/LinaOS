@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-2-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR BSD-2-Clause) */
 /*
  * Copyright (c) 2012-2016 VMware, Inc.  All rights reserved.
  *
@@ -47,7 +47,7 @@
 #ifndef __VMW_PVRDMA_ABI_H__
 #define __VMW_PVRDMA_ABI_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define PVRDMA_UVERBS_ABI_VERSION	3		/* ABI Version. */
 #define PVRDMA_UAR_HANDLE_MASK		0x00FFFFFF	/* Bottom 24 bits. */

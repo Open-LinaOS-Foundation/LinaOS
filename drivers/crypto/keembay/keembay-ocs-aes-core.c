@@ -5,16 +5,16 @@
  * Copyright (C) 2018-2020 Intel Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/crypto.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/crypto.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/types.h>
 
 #include <crypto/aes.h>
 #include <crypto/engine.h>

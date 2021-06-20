@@ -1,8 +1,8 @@
-/* r128_state.c -- State support for r128 -*- linux-c -*-
- * Created: Thu Jan 27 02:53:43 2000 by gareth@valinux.com
+/* r128_state.c -- State support for r128 -*- linaos-c -*-
+ * Created: Thu Jan 27 02:53:43 2000 by gareth@valinaos.com
  */
 /*
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -25,12 +25,12 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Gareth Hughes <gareth@valinux.com>
+ *    Gareth Hughes <gareth@valinaos.com>
  */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>

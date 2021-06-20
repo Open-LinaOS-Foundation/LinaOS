@@ -7,11 +7,11 @@
  * Copyright (C) 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/fiemap.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/fiemap.h>
 
 #include <cluster/masklog.h>
 

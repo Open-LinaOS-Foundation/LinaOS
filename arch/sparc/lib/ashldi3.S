@@ -6,7 +6,7 @@
  * Copyright (C) 1999 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/export.h>
 
 	.text

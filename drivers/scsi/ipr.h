@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * ipr.h -- driver for IBM Power Linux RAID adapters
+ * ipr.h -- driver for IBM Power LinaOS RAID adapters
  *
  * Written By: Brian King <brking@us.ibm.com>, IBM Corporation
  *
@@ -14,12 +14,12 @@
 #define _IPR_H
 
 #include <asm/unaligned.h>
-#include <linux/types.h>
-#include <linux/completion.h>
-#include <linux/libata.h>
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/irq_poll.h>
+#include <linaos/types.h>
+#include <linaos/completion.h>
+#include <linaos/libata.h>
+#include <linaos/list.h>
+#include <linaos/kref.h>
+#include <linaos/irq_poll.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 

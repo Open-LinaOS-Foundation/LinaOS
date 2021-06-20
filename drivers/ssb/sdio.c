@@ -14,11 +14,11 @@
 
 #include "ssb_private.h"
 
-#include <linux/ssb/ssb.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/etherdevice.h>
-#include <linux/mmc/sdio_func.h>
+#include <linaos/ssb/ssb.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/etherdevice.h>
+#include <linaos/mmc/sdio_func.h>
 
 /* Define the following to 1 to enable a printk on each coreswitch. */
 #define SSB_VERBOSE_SDIOCORESWITCH_DEBUG		0

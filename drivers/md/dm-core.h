@@ -9,11 +9,11 @@
 #ifndef DM_CORE_INTERNAL_H
 #define DM_CORE_INTERNAL_H
 
-#include <linux/kthread.h>
-#include <linux/ktime.h>
-#include <linux/genhd.h>
-#include <linux/blk-mq.h>
-#include <linux/keyslot-manager.h>
+#include <linaos/kthread.h>
+#include <linaos/ktime.h>
+#include <linaos/genhd.h>
+#include <linaos/blk-mq.h>
+#include <linaos/keyslot-manager.h>
 
 #include <trace/events/block.h>
 

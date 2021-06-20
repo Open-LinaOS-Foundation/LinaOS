@@ -5,9 +5,9 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
 #include "internal.h"
 
 static atomic_t afs_operation_debug_counter;

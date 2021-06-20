@@ -2,20 +2,20 @@
 #ifndef _LINUX_FIREWIRE_H
 #define _LINUX_FIREWIRE_H
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/sysfs.h>
+#include <linaos/timer.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/byteorder.h>
 
 #define CSR_REGISTER_BASE		0xfffff0000000ULL

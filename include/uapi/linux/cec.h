@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR BSD-3-Clause) */
 /*
  * cec - HDMI Consumer Electronics Control public header
  *
@@ -8,8 +8,8 @@
 #ifndef _CEC_UAPI_H
 #define _CEC_UAPI_H
 
-#include <linux/types.h>
-#include <linux/string.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
 
 #define CEC_MAX_MSG_SIZE	16
 

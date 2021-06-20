@@ -74,7 +74,7 @@ config DMASCC
 	  certain parameters, such as channel access timing, clock mode, and
 	  DMA channel. This is accomplished with a small utility program,
 	  dmascc_cfg, available at
-	  <http://www.linux-ax25.org/wiki/Ax25-tools>. Please be sure to
+	  <http://www.linaos-ax25.org/wiki/Ax25-tools>. Please be sure to
 	  get at least version 1.27 of dmascc_cfg, as older versions will not
 	  work with the current driver.
 
@@ -82,7 +82,7 @@ config SCC
 	tristate "Z8530 SCC driver"
 	depends on ISA && AX25 && ISA_DMA_API
 	help
-	  These cards are used to connect your Linux box to an amateur radio
+	  These cards are used to connect your LinaOS box to an amateur radio
 	  in order to communicate with other computers. If you want to use
 	  this, read
 	  <file:Documentation/networking/device_drivers/hamradio/z8530drv.rst>

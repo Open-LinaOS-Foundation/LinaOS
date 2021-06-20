@@ -3,13 +3,13 @@
 VCHI is just a tool to let drivers talk to the firmware.  Here are
 some of the ones we want:
 
-  - vc_mem (https://github.com/raspberrypi/linux/blob/rpi-4.4.y/drivers/char/broadcom/vc_mem.c)
+  - vc_mem (https://github.com/raspberrypi/linaos/blob/rpi-4.4.y/drivers/char/broadcom/vc_mem.c)
 
   This driver is what the vcdbg userspace program uses to set up its
   requests to the firmware, which are transmitted across VCHIQ.  vcdbg
   is really useful for debugging firmware interactions.
 
-  - VCSM (https://github.com/raspberrypi/linux/tree/rpi-4.4.y/drivers/char/broadcom/vc_sm)
+  - VCSM (https://github.com/raspberrypi/linaos/tree/rpi-4.4.y/drivers/char/broadcom/vc_sm)
 
   This driver is used for talking about regions of VC memory across
   firmware protocols including VCHI.  We'll want to extend this driver
@@ -59,7 +59,7 @@ functions.
 
 8) Get rid of custom function return values
 
-Most functions use a custom set of return values, we should force proper Linux
+Most functions use a custom set of return values, we should force proper LinaOS
 error numbers. Special care is needed for VCHIQ_RETRY.
 
 9) Reformat core code with more sane indentations

@@ -30,12 +30,12 @@
  * SOFTWARE.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/mlx5_ifc.h>
-#include <linux/mlx5/vport.h>
-#include <linux/mlx5/fs.h>
-#include <linux/mlx5/mpfs.h>
+#include <linaos/etherdevice.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/mlx5/mlx5_ifc.h>
+#include <linaos/mlx5/vport.h>
+#include <linaos/mlx5/fs.h>
+#include <linaos/mlx5/mpfs.h>
 #include "esw/acl/lgcy.h"
 #include "esw/legacy.h"
 #include "mlx5_core.h"

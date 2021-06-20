@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/regset.h>
+#include <linaos/regset.h>
 
 #include <asm/switch_to.h>
 #include <asm/tm.h>

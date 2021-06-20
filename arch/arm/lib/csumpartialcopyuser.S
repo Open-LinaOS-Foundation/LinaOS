@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/csumpartialcopyuser.S
+ *  linaos/arch/arm/lib/csumpartialcopyuser.S
  *
  *  Copyright (C) 1995-1998 Russell King
  *
  * 27/03/03 Ian Molton Clean up CONFIG_CPU
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/errno.h>
 #include <asm/asm-offsets.h>

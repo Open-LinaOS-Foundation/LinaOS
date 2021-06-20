@@ -5,8 +5,8 @@
  *
  ******************************************************************************/
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
 
 #include <rtw_android.h>
 #include <osdep_service.h>

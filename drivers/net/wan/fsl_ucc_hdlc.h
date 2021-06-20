@@ -7,8 +7,8 @@
 #ifndef _UCC_HDLC_H_
 #define _UCC_HDLC_H_
 
-#include <linux/kernel.h>
-#include <linux/list.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
 
 #include <soc/fsl/qe/immap_qe.h>
 #include <soc/fsl/qe/qe.h>

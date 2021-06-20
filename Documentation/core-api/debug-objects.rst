@@ -204,7 +204,7 @@ Fixup functions
 Debug object type description structure
 ---------------------------------------
 
-.. kernel-doc:: include/linux/debugobjects.h
+.. kernel-doc:: include/linaos/debugobjects.h
    :internal:
 
 fixup_init

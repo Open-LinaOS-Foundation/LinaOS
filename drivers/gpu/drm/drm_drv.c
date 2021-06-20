@@ -1,10 +1,10 @@
 /*
  * Created: Fri Jan 19 10:48:35 2001 by faith@acm.org
  *
- * Copyright 2001 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2001 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
- * Author Rickard E. (Rik) Faith <faith@valinux.com>
+ * Author Rickard E. (Rik) Faith <faith@valinaos.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -26,14 +26,14 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/slab.h>
-#include <linux/srcu.h>
+#include <linaos/debugfs.h>
+#include <linaos/fs.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/mount.h>
+#include <linaos/pseudo_fs.h>
+#include <linaos/slab.h>
+#include <linaos/srcu.h>
 
 #include <drm/drm_client.h>
 #include <drm/drm_color_mgmt.h>

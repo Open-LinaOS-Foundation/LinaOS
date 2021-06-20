@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2011, Thomas Gleixner
  */
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/syscore_ops.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/irqdomain.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/syscore_ops.h>
 
 #include "internals.h"
 

@@ -6,9 +6,9 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/nfc.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/nfc.h>
 
 #include "mei_phy.h"
 

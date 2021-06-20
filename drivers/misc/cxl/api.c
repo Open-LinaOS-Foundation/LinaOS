@@ -3,15 +3,15 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/file.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/file.h>
 #include <misc/cxl.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/sched/mm.h>
-#include <linux/mmu_context.h>
+#include <linaos/module.h>
+#include <linaos/mount.h>
+#include <linaos/pseudo_fs.h>
+#include <linaos/sched/mm.h>
+#include <linaos/mmu_context.h>
 
 #include "cxl.h"
 

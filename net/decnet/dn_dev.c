@@ -25,25 +25,25 @@
  *                             devices. All mtu based now.
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/if_addr.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/sysctl.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/uaccess.h>
+#include <linaos/capability.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/net.h>
+#include <linaos/netdevice.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/timer.h>
+#include <linaos/string.h>
+#include <linaos/if_addr.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_ether.h>
+#include <linaos/skbuff.h>
+#include <linaos/sysctl.h>
+#include <linaos/notifier.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/uaccess.h>
 #include <net/net_namespace.h>
 #include <net/neighbour.h>
 #include <net/dst.h>
@@ -809,7 +809,7 @@ out:
  * Find a default address to bind to.
  *
  * This is one of those areas where the initial VMS concepts don't really
- * map onto the Linux concepts, and since we introduced multiple addresses
+ * map onto the LinaOS concepts, and since we introduced multiple addresses
  * per interface we have to cope with slightly odd ways of finding out what
  * "our address" really is. Mostly it's not a problem; for this we just guess
  * a sensible default. Eventually the routing code will take care of all the

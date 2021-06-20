@@ -4,14 +4,14 @@
  * Copyright 2012 Benjamin Herrenschmidt, IBM Corporation.
  */
 
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/anon_inodes.h>
-#include <linux/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/kvm_host.h>
+#include <linaos/err.h>
+#include <linaos/gfp.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/spinlock.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/kvm_book3s.h>
 #include <asm/kvm_ppc.h>
 #include <asm/hvcall.h>
@@ -19,7 +19,7 @@
 #include <asm/debugfs.h>
 #include <asm/time.h>
 
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 
 #include "book3s_xics.h"
 

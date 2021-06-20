@@ -23,7 +23,7 @@ both voltage regulators (where voltage output is controllable) and
 current sinks (where current limit is controllable).
 
 Note that additional (and currently more complete) documentation is
-available in the Linux kernel source under
+available in the LinaOS kernel source under
 ``Documentation/power/regulator``.
 
 Glossary
@@ -157,13 +157,13 @@ Due to limitations of the kernel documentation framework and the
 existing layout of the source code the entire regulator API is
 documented here.
 
-.. kernel-doc:: include/linux/regulator/consumer.h
+.. kernel-doc:: include/linaos/regulator/consumer.h
    :internal:
 
-.. kernel-doc:: include/linux/regulator/machine.h
+.. kernel-doc:: include/linaos/regulator/machine.h
    :internal:
 
-.. kernel-doc:: include/linux/regulator/driver.h
+.. kernel-doc:: include/linaos/regulator/driver.h
    :internal:
 
 .. kernel-doc:: drivers/regulator/core.c

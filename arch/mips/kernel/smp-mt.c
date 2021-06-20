@@ -3,18 +3,18 @@
  *
  * Copyright (C) 2004, 05, 06 MIPS Technologies, Inc.
  *    Elizabeth Clarke (beth@mips.com)
- *    Ralf Baechle (ralf@linux-mips.org)
- * Copyright (C) 2006 Ralf Baechle (ralf@linux-mips.org)
+ *    Ralf Baechle (ralf@linaos-mips.org)
+ * Copyright (C) 2006 Ralf Baechle (ralf@linaos-mips.org)
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/compiler.h>
-#include <linux/sched/task_stack.h>
-#include <linux/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/cpumask.h>
+#include <linaos/interrupt.h>
+#include <linaos/compiler.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/smp.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/cacheflush.h>
 #include <asm/cpu.h>
 #include <asm/processor.h>

@@ -3,7 +3,7 @@
  * fs/sysfs/dir.c - sysfs core and dir operation implementation
  *
  * Copyright (c) 2001-3 Patrick Mochel
- * Copyright (c) 2007 SUSE Linux Products GmbH
+ * Copyright (c) 2007 SUSE LinaOS Products GmbH
  * Copyright (c) 2007 Tejun Heo <teheo@suse.de>
  *
  * Please see Documentation/filesystems/sysfs.rst for more information.
@@ -11,9 +11,9 @@
 
 #define pr_fmt(fmt)	"sysfs: " fmt
 
-#include <linux/fs.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
+#include <linaos/fs.h>
+#include <linaos/kobject.h>
+#include <linaos/slab.h>
 #include "sysfs.h"
 
 DEFINE_SPINLOCK(sysfs_symlink_target_lock);

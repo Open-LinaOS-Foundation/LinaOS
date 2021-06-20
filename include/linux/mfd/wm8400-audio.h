@@ -8,7 +8,7 @@
 #ifndef __LINUX_MFD_WM8400_AUDIO_H
 #define __LINUX_MFD_WM8400_AUDIO_H
 
-#include <linux/mfd/wm8400-audio.h>
+#include <linaos/mfd/wm8400-audio.h>
 
 /*
  * R2 (0x02) - Power Management (1)

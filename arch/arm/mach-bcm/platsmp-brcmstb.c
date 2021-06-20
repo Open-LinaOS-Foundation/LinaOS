@@ -13,17 +13,17 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/printk.h>
-#include <linux/regmap.h>
-#include <linux/smp.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/jiffies.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/printk.h>
+#include <linaos/regmap.h>
+#include <linaos/smp.h>
+#include <linaos/mfd/syscon.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

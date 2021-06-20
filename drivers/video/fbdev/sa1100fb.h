@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/sa1100fb.h
+ * linaos/drivers/video/sa1100fb.h
  *    -- StrongARM 1100 LCD Controller Frame Buffer Device
  *
  *  Copyright (C) 1999 Eric A. Thomas

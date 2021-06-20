@@ -49,8 +49,8 @@
 #ifndef _TTM_LOCK_H_
 #define _TTM_LOCK_H_
 
-#include <linux/atomic.h>
-#include <linux/wait.h>
+#include <linaos/atomic.h>
+#include <linaos/wait.h>
 
 #include "ttm_object.h"
 

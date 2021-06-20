@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/lockd/bind.h
+ * linaos/include/linaos/lockd/bind.h
  *
  * This is the part of lockd visible to nfsd and the nfs client.
  *
@@ -10,11 +10,11 @@
 #ifndef LINUX_LOCKD_BIND_H
 #define LINUX_LOCKD_BIND_H
 
-#include <linux/lockd/nlm.h>
+#include <linaos/lockd/nlm.h>
 /* need xdr-encoded error codes too, so... */
-#include <linux/lockd/xdr.h>
+#include <linaos/lockd/xdr.h>
 #ifdef CONFIG_LOCKD_V4
-#include <linux/lockd/xdr4.h>
+#include <linaos/lockd/xdr4.h>
 #endif
 
 /* Dummy declarations */

@@ -1,5 +1,5 @@
 =====================================================
-Notes on the Generic Block Layer Rewrite in Linux 2.5
+Notes on the Generic Block Layer Rewrite in LinaOS 2.5
 =====================================================
 
 .. note::
@@ -43,7 +43,7 @@ document:
 	- Christoph Hellwig <hch@infradead.org>
 	- Arjan van de Ven <arjanv@redhat.com>
 	- Randy Dunlap <rdunlap@xenotime.net>
-	- Andre Hedrick <andre@linux-ide.org>
+	- Andre Hedrick <andre@linaos-ide.org>
 
 The following people helped with fixes/contributions to the bio patches
 while it was still work-in-progress:
@@ -527,7 +527,7 @@ request structure.
 
 Only some relevant fields (mainly those which changed or may be referred
 to in some of the discussion here) are listed below, not necessarily in
-the order in which they occur in the structure (see include/linux/blkdev.h)
+the order in which they occur in the structure (see include/linaos/blkdev.h)
 Refer to Documentation/block/request.rst for details about all the request
 structure fields and a quick reference about the layers which are
 supposed to use or modify those fields::

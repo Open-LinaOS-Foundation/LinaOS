@@ -8,9 +8,9 @@
 #ifndef _NETPRIO_CGROUP_H
 #define _NETPRIO_CGROUP_H
 
-#include <linux/cgroup.h>
-#include <linux/hardirq.h>
-#include <linux/rcupdate.h>
+#include <linaos/cgroup.h>
+#include <linaos/hardirq.h>
+#include <linaos/rcupdate.h>
 
 #if IS_ENABLED(CONFIG_CGROUP_NET_PRIO)
 struct netprio_map {

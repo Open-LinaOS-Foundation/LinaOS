@@ -51,7 +51,7 @@ Todolist:
 并发原语
 ========
 
-Linux如何让一切同时发生。 详情请参阅
+LinaOS如何让一切同时发生。 详情请参阅
 :doc:`/locking/index`
 
 .. toctree::

@@ -9,15 +9,15 @@
  * Copyright (c) 2017 Microsemi Corporation
  * Copyright (c) 2020 Daniel Golle <daniel@makrotopia.org>
  */
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/notifier.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/notifier.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/reboot.h>
+#include <linaos/regmap.h>
 
 /* bit numbers of reset control register */
 #define OX820_SYS_CTRL_RST_SCU                0

@@ -86,7 +86,7 @@ config PARIDE_PG
 	  your system.
 
 	  This driver implements an API loosely related to the generic SCSI
-	  driver. See <file:include/linux/pg.h>. for details.
+	  driver. See <file:include/linaos/pg.h>. for details.
 
 	  You can obtain the most recent version of cdrtools from
 	  <ftp://ftp.berlios.de/pub/cdrecord/>. Versions 1.6.1a3 and

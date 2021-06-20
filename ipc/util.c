@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/ipc/util.c
+ * linaos/ipc/util.c
  * Copyright (C) 1992 Krishna Balasubramanian
  *
  * Sep 1997 - Call suser() last after "normal" permission checks so we
@@ -44,26 +44,26 @@
  *  see sem_lock().
  */
 
-#include <linux/mm.h>
-#include <linux/shm.h>
-#include <linux/init.h>
-#include <linux/msg.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/capability.h>
-#include <linux/highuid.h>
-#include <linux/security.h>
-#include <linux/rcupdate.h>
-#include <linux/workqueue.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/audit.h>
-#include <linux/nsproxy.h>
-#include <linux/rwsem.h>
-#include <linux/memory.h>
-#include <linux/ipc_namespace.h>
-#include <linux/rhashtable.h>
+#include <linaos/mm.h>
+#include <linaos/shm.h>
+#include <linaos/init.h>
+#include <linaos/msg.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/notifier.h>
+#include <linaos/capability.h>
+#include <linaos/highuid.h>
+#include <linaos/security.h>
+#include <linaos/rcupdate.h>
+#include <linaos/workqueue.h>
+#include <linaos/seq_file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/audit.h>
+#include <linaos/nsproxy.h>
+#include <linaos/rwsem.h>
+#include <linaos/memory.h>
+#include <linaos/ipc_namespace.h>
+#include <linaos/rhashtable.h>
 
 #include <asm/unistd.h>
 
@@ -514,7 +514,7 @@ void ipc_rcu_putref(struct kern_ipc_perm *ptr,
  * Check user, group, other permissions for access
  * to ipc resources. return 0 if allowed
  *
- * @flag will most probably be 0 or ``S_...UGO`` from <linux/stat.h>
+ * @flag will most probably be 0 or ``S_...UGO`` from <linaos/stat.h>
  */
 int ipcperms(struct ipc_namespace *ns, struct kern_ipc_perm *ipcp, short flag)
 {

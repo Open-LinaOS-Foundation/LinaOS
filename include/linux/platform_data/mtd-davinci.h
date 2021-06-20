@@ -15,7 +15,7 @@
 #ifndef __ARCH_ARM_DAVINCI_NAND_H
 #define __ARCH_ARM_DAVINCI_NAND_H
 
-#include <linux/mtd/rawnand.h>
+#include <linaos/mtd/rawnand.h>
 
 #define NANDFCR_OFFSET		0x60
 #define NANDFSR_OFFSET		0x64

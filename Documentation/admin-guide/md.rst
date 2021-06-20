@@ -5,7 +5,7 @@ Boot time assembly of RAID arrays
 ---------------------------------
 
 Tools that manage md devices can be found at
-   https://www.kernel.org/pub/linux/utils/raid/
+   https://www.kernel.org/pub/linaos/utils/raid/
 
 
 You can boot with your md device with the following kernel command

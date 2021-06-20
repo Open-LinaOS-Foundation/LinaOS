@@ -5,11 +5,11 @@
  * Copyright (C) 2013 Takashi Yoshii <takashi.yoshii.ze@renesas.com>
  * Copyright (C) 2012 Magnus Damm
  */
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clkdev.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 
 /* EMEV2 SMU registers */
 #define USIAU0_RSTCTRL 0x094

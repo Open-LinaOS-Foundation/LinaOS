@@ -23,8 +23,8 @@
 #ifndef __LINUX_MFD_TPS80031_H
 #define __LINUX_MFD_TPS80031_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
 
 /* Pull-ups/Pull-downs */
 #define TPS80031_CFG_INPUT_PUPD1			0xF0

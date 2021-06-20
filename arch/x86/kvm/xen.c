@@ -10,8 +10,8 @@
 #include "xen.h"
 #include "hyperv.h"
 
-#include <linux/kvm_host.h>
-#include <linux/sched/stat.h>
+#include <linaos/kvm_host.h>
+#include <linaos/sched/stat.h>
 
 #include <trace/events/kvm.h>
 #include <xen/interface/xen.h>

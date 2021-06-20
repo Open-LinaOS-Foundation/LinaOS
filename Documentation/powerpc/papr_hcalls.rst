@@ -13,10 +13,10 @@ operating system and how it should interact with the hypervisor for
 privileged operations. Currently there are two PAPR compliant hypervisors:
 
 - **IBM PowerVM (PHYP)**: IBM's proprietary hypervisor that supports AIX,
-  IBM-i and  Linux as supported guests (termed as Logical Partitions
+  IBM-i and  LinaOS as supported guests (termed as Logical Partitions
   or LPARS). It supports the full PAPR specification.
 
-- **Qemu/KVM**: Supports PPC64 linux guests running on a PPC64 linux host.
+- **Qemu/KVM**: Supports PPC64 linaos guests running on a PPC64 linaos host.
   Though it only implements a subset of PAPR specification called LoPAPR [2]_.
 
 On PPC64 arch a guest kernel running on top of a PAPR hypervisor is called
@@ -46,7 +46,7 @@ out values are returned in registers *r4-r12*. Again like in case of in-argument
 any out values stored in a memory buffer will be in Big-endian byte order.
 
 Powerpc arch code provides convenient wrappers named **plpar_hcall_xxx** defined
-in a arch specific header [4]_ to issue hcalls from the linux kernel
+in a arch specific header [4]_ to issue hcalls from the linaos kernel
 running as pseries guest.
 
 Register Conventions
@@ -293,7 +293,7 @@ References
 ==========
 .. [1] "Power Architecture Platform Reference"
        https://en.wikipedia.org/wiki/Power_Architecture_Platform_Reference
-.. [2] "Linux on Power Architecture Platform Reference"
+.. [2] "LinaOS on Power Architecture Platform Reference"
        https://members.openpowerfoundation.org/document/dl/469
 .. [3] "Definitions and Notation" Book III-Section 14.5.3
        https://openpowerfoundation.org/?resource_lib=power-isa-version-3-0

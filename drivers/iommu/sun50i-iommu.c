@@ -2,30 +2,30 @@
 // Copyright (C) 2016-2018, Allwinner Technology CO., LTD.
 // Copyright (C) 2019-2020, Cerno
 
-#include <linux/bitfield.h>
-#include <linux/bug.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-iommu.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/bitfield.h>
+#include <linaos/bug.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/dma-direction.h>
+#include <linaos/dma-iommu.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/iommu.h>
+#include <linaos/iopoll.h>
+#include <linaos/ioport.h>
+#include <linaos/log2.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/reset.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 
 #define IOMMU_RESET_REG			0x010
 #define IOMMU_ENABLE_REG		0x020

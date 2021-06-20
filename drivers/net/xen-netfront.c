@@ -7,7 +7,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -31,22 +31,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_ether.h>
 #include <net/tcp.h>
-#include <linux/udp.h>
-#include <linux/moduleparam.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <linaos/udp.h>
+#include <linaos/moduleparam.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
 #include <net/ip.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <net/page_pool.h>
-#include <linux/bpf_trace.h>
+#include <linaos/bpf_trace.h>
 
 #include <xen/xen.h>
 #include <xen/xenbus.h>

@@ -595,7 +595,7 @@ The following helpers all wrap sget_fc():
 Parameter Description
 =====================
 
-Parameters are described using structures defined in linux/fs_parser.h.
+Parameters are described using structures defined in linaos/fs_parser.h.
 There's a core description struct that links everything together::
 
 	struct fs_parameter_description {

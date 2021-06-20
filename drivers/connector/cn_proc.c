@@ -8,17 +8,17 @@
  * Copyright (C) 2005 BULL SA.
  */
 
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/init.h>
-#include <linux/connector.h>
-#include <linux/gfp.h>
-#include <linux/ptrace.h>
-#include <linux/atomic.h>
-#include <linux/pid_namespace.h>
+#include <linaos/kernel.h>
+#include <linaos/ktime.h>
+#include <linaos/init.h>
+#include <linaos/connector.h>
+#include <linaos/gfp.h>
+#include <linaos/ptrace.h>
+#include <linaos/atomic.h>
+#include <linaos/pid_namespace.h>
 
-#include <linux/cn_proc.h>
-#include <linux/local_lock.h>
+#include <linaos/cn_proc.h>
+#include <linaos/local_lock.h>
 
 /*
  * Size of a cn_msg followed by a proc_event structure.  Since the

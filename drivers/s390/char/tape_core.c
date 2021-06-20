@@ -14,13 +14,13 @@
 #define KMSG_COMPONENT "tape"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>	     // for kernel parameters
-#include <linux/kmod.h>	     // for requesting modules
-#include <linux/spinlock.h>  // for locks
-#include <linux/vmalloc.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>	     // for kernel parameters
+#include <linaos/kmod.h>	     // for requesting modules
+#include <linaos/spinlock.h>  // for locks
+#include <linaos/vmalloc.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 
 #include <asm/types.h>	     // for variable types
 
@@ -1301,7 +1301,7 @@ tape_exit(void)
 
 MODULE_AUTHOR("(C) 2001 IBM Deutschland Entwicklung GmbH by Carsten Otte and "
 	      "Michael Holzheu (cotte@de.ibm.com,holzheu@de.ibm.com)");
-MODULE_DESCRIPTION("Linux on zSeries channel attached tape device driver");
+MODULE_DESCRIPTION("LinaOS on zSeries channel attached tape device driver");
 MODULE_LICENSE("GPL");
 
 module_init(tape_init);

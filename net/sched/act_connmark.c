@@ -6,19 +6,19 @@
  * Copyright (c) 2011 Felix Fietkau <nbd@openwrt.org>
 */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/pkt_cls.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/pkt_cls.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/act_api.h>
 #include <net/pkt_cls.h>
-#include <uapi/linux/tc_act/tc_connmark.h>
+#include <uapi/linaos/tc_act/tc_connmark.h>
 #include <net/tc_act/tc_connmark.h>
 
 #include <net/netfilter/nf_conntrack.h>

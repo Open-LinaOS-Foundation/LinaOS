@@ -7,14 +7,14 @@
  * Author: Len Brown <len.brown@intel.com>
  */
 
-#include <linux/delay.h>
-#include <linux/ktime.h>
-#include <linux/math64.h>
-#include <linux/percpu.h>
-#include <linux/cpufreq.h>
-#include <linux/smp.h>
-#include <linux/sched/isolation.h>
-#include <linux/rcupdate.h>
+#include <linaos/delay.h>
+#include <linaos/ktime.h>
+#include <linaos/math64.h>
+#include <linaos/percpu.h>
+#include <linaos/cpufreq.h>
+#include <linaos/smp.h>
+#include <linaos/sched/isolation.h>
+#include <linaos/rcupdate.h>
 
 #include "cpu.h"
 

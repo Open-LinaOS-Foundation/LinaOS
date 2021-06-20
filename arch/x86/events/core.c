@@ -12,23 +12,23 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#include <linux/perf_event.h>
-#include <linux/capability.h>
-#include <linux/notifier.h>
-#include <linux/hardirq.h>
-#include <linux/kprobes.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kdebug.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/clock.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/nospec.h>
-#include <linux/static_call.h>
+#include <linaos/perf_event.h>
+#include <linaos/capability.h>
+#include <linaos/notifier.h>
+#include <linaos/hardirq.h>
+#include <linaos/kprobes.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/kdebug.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/clock.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/nospec.h>
+#include <linaos/static_call.h>
 
 #include <asm/apic.h>
 #include <asm/stacktrace.h>
@@ -2794,7 +2794,7 @@ static unsigned long get_segment_base(unsigned int segment)
 
 #ifdef CONFIG_IA32_EMULATION
 
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 static inline int
 perf_callchain_user32(struct pt_regs *regs, struct perf_callchain_entry_ctx *entry)

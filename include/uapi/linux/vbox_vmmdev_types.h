@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR CDDL-1.0) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR CDDL-1.0) */
 /*
  * Virtual Device for Guest <-> VMM/Host communication, type definitions
  * which are also used for the vboxguest ioctl interface / by vboxsf
@@ -10,10 +10,10 @@
 #define __UAPI_VBOX_VMMDEV_TYPES_H__
 
 #include <asm/bitsperlong.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
- * We cannot use linux' compiletime_assert here because it expects to be used
+ * We cannot use linaos' compiletime_assert here because it expects to be used
  * inside a function only. Use a typedef to a char array with a negative size.
  */
 #define VMMDEV_ASSERT_SIZE(type, size) \
@@ -142,7 +142,7 @@ enum vmmdev_request_type {
 /* Requestor is member of special VirtualBox user group. */
 #define VMMDEV_REQUESTOR_GRP_VBOX                           0x00000080
 
-/* Note: trust level is for windows guests only, linux always uses not-given */
+/* Note: trust level is for windows guests only, linaos always uses not-given */
 /* Requestor trust level: Unspecified */
 #define VMMDEV_REQUESTOR_TRUST_NOT_GIVEN                    0x00000000
 /* Requestor trust level: Untrusted (SID S-1-16-0) */

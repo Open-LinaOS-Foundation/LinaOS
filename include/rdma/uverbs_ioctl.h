@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright (c) 2017, Mellanox Technologies inc.  All rights reserved.
  */
@@ -7,7 +7,7 @@
 #define _UVERBS_IOCTL_
 
 #include <rdma/uverbs_types.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <rdma/rdma_user_ioctl.h>
 #include <rdma/ib_user_ioctl_verbs.h>
 #include <rdma/ib_user_ioctl_cmds.h>

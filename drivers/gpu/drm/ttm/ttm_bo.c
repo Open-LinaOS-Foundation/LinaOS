@@ -33,14 +33,14 @@
 
 #include <drm/ttm/ttm_bo_driver.h>
 #include <drm/ttm/ttm_placement.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/atomic.h>
-#include <linux/dma-resv.h>
+#include <linaos/jiffies.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/file.h>
+#include <linaos/module.h>
+#include <linaos/atomic.h>
+#include <linaos/dma-resv.h>
 
 #include "ttm_module.h"
 

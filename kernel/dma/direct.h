@@ -7,7 +7,7 @@
 #ifndef _KERNEL_DMA_DIRECT_H
 #define _KERNEL_DMA_DIRECT_H
 
-#include <linux/dma-direct.h>
+#include <linaos/dma-direct.h>
 
 int dma_direct_get_sgtable(struct device *dev, struct sg_table *sgt,
 		void *cpu_addr, dma_addr_t dma_addr, size_t size,

@@ -300,7 +300,7 @@ that there are some functions where kprobes cannot probe. Probing
 fault) or the nested probe handler may never be called.
 Kprobes manages such functions as a blacklist.
 If you want to add a function into the blacklist, you just need
-to (1) include linux/kprobes.h and (2) use NOKPROBE_SYMBOL() macro
+to (1) include linaos/kprobes.h and (2) use NOKPROBE_SYMBOL() macro
 to specify a blacklisted function.
 Kprobes checks the given probe address against the blacklist and
 rejects registering it, if the given address is in the blacklist.
@@ -341,7 +341,7 @@ kprobe address resolution code.
 
 If you need to insert a probe in the middle of a function, you may find
 it useful to "Compile the kernel with debug info" (CONFIG_DEBUG_INFO),
-so you can use "objdump -d -l vmlinux" to see the source-to-object
+so you can use "objdump -d -l vmlinaos" to see the source-to-object
 code mapping.
 
 API Reference
@@ -359,7 +359,7 @@ register_kprobe
 
 ::
 
-	#include <linux/kprobes.h>
+	#include <linaos/kprobes.h>
 	int register_kprobe(struct kprobe *kp);
 
 Sets a breakpoint at the address kp->addr.  When the breakpoint is
@@ -397,8 +397,8 @@ register_kprobe() returns 0 on success, or a negative errno otherwise.
 
 User's pre-handler (kp->pre_handler)::
 
-	#include <linux/kprobes.h>
-	#include <linux/ptrace.h>
+	#include <linaos/kprobes.h>
+	#include <linaos/ptrace.h>
 	int pre_handler(struct kprobe *p, struct pt_regs *regs);
 
 Called with p pointing to the kprobe associated with the breakpoint,
@@ -407,8 +407,8 @@ the breakpoint was hit.  Return 0 here unless you're a Kprobes geek.
 
 User's post-handler (kp->post_handler)::
 
-	#include <linux/kprobes.h>
-	#include <linux/ptrace.h>
+	#include <linaos/kprobes.h>
+	#include <linaos/ptrace.h>
 	void post_handler(struct kprobe *p, struct pt_regs *regs,
 			  unsigned long flags);
 
@@ -417,8 +417,8 @@ to be zero.
 
 User's fault-handler (kp->fault_handler)::
 
-	#include <linux/kprobes.h>
-	#include <linux/ptrace.h>
+	#include <linaos/kprobes.h>
+	#include <linaos/ptrace.h>
 	int fault_handler(struct kprobe *p, struct pt_regs *regs, int trapnr);
 
 p and regs are as described for the pre_handler.  trapnr is the
@@ -431,7 +431,7 @@ register_kretprobe
 
 ::
 
-	#include <linux/kprobes.h>
+	#include <linaos/kprobes.h>
 	int register_kretprobe(struct kretprobe *rp);
 
 Establishes a return probe for the function whose address is
@@ -444,8 +444,8 @@ otherwise.
 
 User's return-probe handler (rp->handler)::
 
-	#include <linux/kprobes.h>
-	#include <linux/ptrace.h>
+	#include <linaos/kprobes.h>
+	#include <linaos/ptrace.h>
 	int kretprobe_handler(struct kretprobe_instance *ri,
 			      struct pt_regs *regs);
 
@@ -470,7 +470,7 @@ unregister_*probe
 
 ::
 
-	#include <linux/kprobes.h>
+	#include <linaos/kprobes.h>
 	void unregister_kprobe(struct kprobe *kp);
 	void unregister_kretprobe(struct kretprobe *rp);
 
@@ -487,7 +487,7 @@ register_*probes
 
 ::
 
-	#include <linux/kprobes.h>
+	#include <linaos/kprobes.h>
 	int register_kprobes(struct kprobe **kps, int num);
 	int register_kretprobes(struct kretprobe **rps, int num);
 
@@ -509,7 +509,7 @@ unregister_*probes
 
 ::
 
-	#include <linux/kprobes.h>
+	#include <linaos/kprobes.h>
 	void unregister_kprobes(struct kprobe **kps, int num);
 	void unregister_kretprobes(struct kretprobe **rps, int num);
 
@@ -527,7 +527,7 @@ disable_*probe
 
 ::
 
-	#include <linux/kprobes.h>
+	#include <linaos/kprobes.h>
 	int disable_kprobe(struct kprobe *kp);
 	int disable_kretprobe(struct kretprobe *rp);
 
@@ -539,7 +539,7 @@ enable_*probe
 
 ::
 
-	#include <linux/kprobes.h>
+	#include <linaos/kprobes.h>
 	int enable_kprobe(struct kprobe *kp);
 	int enable_kretprobe(struct kretprobe *rp);
 
@@ -582,7 +582,7 @@ probe handler.  If a probe handler hits a probe, that second probe's
 handlers won't be run in that instance, and the kprobe.nmissed member
 of the second probe will be incremented.
 
-As of Linux v2.6.15-rc1, multiple handlers (or multiple instances of
+As of LinaOS v2.6.15-rc1, multiple handlers (or multiple instances of
 the same handler) may run concurrently on different CPUs.
 
 Kprobes does not use mutexes or allocate memory except during

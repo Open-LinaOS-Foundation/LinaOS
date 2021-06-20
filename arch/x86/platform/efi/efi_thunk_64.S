@@ -19,7 +19,7 @@
  * and kernel text (see efi_setup_page_tables()).
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/page_types.h>
 #include <asm/segment.h>
 

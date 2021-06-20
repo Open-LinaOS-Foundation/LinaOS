@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/font.h>
-#include <linux/module.h>
+#include <linaos/font.h>
+#include <linaos/module.h>
 
 #define FONTDATAMAX 16384
 

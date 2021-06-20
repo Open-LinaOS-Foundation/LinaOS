@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/drivers/mmc/host/wbsd.h - Winbond W83L51xD SD/MMC driver
+ *  linaos/drivers/mmc/host/wbsd.h - Winbond W83L51xD SD/MMC driver
  *
  *  Copyright (C) 2004-2007 Pierre Ossman, All Rights Reserved.
  */

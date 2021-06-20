@@ -1,11 +1,11 @@
 /* 
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  * Licensed under the GPL
  */
 
 #include <sysdep/ptrace.h>
 
-/* These two are from asm-um/uaccess.h and linux/module.h, check them. */
+/* These two are from asm-um/uaccess.h and linaos/module.h, check them. */
 struct exception_table_entry
 {
 	unsigned long insn;

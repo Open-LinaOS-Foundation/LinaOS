@@ -4,11 +4,11 @@
  * Copyright (c) 2009-2013 QLogic Corporation
  */
 
-#include <linux/if_vlan.h>
-#include <linux/ipv6.h>
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
-#include <linux/aer.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ipv6.h>
+#include <linaos/ethtool.h>
+#include <linaos/interrupt.h>
+#include <linaos/aer.h>
 
 #include "qlcnic.h"
 #include "qlcnic_sriov.h"

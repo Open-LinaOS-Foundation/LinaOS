@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/arch/arm/mach-at91/generic.h
+ * linaos/arch/arm/mach-at91/generic.h
  *
  *  Copyright (C) 2005 David Brownell
  */

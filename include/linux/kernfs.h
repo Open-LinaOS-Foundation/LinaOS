@@ -6,16 +6,16 @@
 #ifndef __LINUX_KERNFS_H
 #define __LINUX_KERNFS_H
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/idr.h>
-#include <linux/lockdep.h>
-#include <linux/rbtree.h>
-#include <linux/atomic.h>
-#include <linux/uidgid.h>
-#include <linux/wait.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/idr.h>
+#include <linaos/lockdep.h>
+#include <linaos/rbtree.h>
+#include <linaos/atomic.h>
+#include <linaos/uidgid.h>
+#include <linaos/wait.h>
 
 struct file;
 struct dentry;

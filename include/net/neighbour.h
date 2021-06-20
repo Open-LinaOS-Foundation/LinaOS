@@ -2,7 +2,7 @@
 #ifndef _NET_NEIGHBOUR_H
 #define _NET_NEIGHBOUR_H
 
-#include <linux/neighbour.h>
+#include <linaos/neighbour.h>
 
 /*
  *	Generic neighbour manipulation
@@ -17,17 +17,17 @@
  *		- Add neighbour cache statistics like rtstat
  */
 
-#include <linux/atomic.h>
-#include <linux/refcount.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rcupdate.h>
-#include <linux/seq_file.h>
-#include <linux/bitmap.h>
+#include <linaos/atomic.h>
+#include <linaos/refcount.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/rcupdate.h>
+#include <linaos/seq_file.h>
+#include <linaos/bitmap.h>
 
-#include <linux/err.h>
-#include <linux/sysctl.h>
-#include <linux/workqueue.h>
+#include <linaos/err.h>
+#include <linaos/sysctl.h>
+#include <linaos/workqueue.h>
 #include <net/rtnetlink.h>
 
 /*

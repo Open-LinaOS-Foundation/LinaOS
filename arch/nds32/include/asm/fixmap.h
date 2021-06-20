@@ -5,7 +5,7 @@
 #define __ASM_NDS32_FIXMAP_H
 
 #ifdef CONFIG_HIGHMEM
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #include <asm/kmap_size.h>
 #endif
 

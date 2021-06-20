@@ -97,7 +97,7 @@
 			interrupts = <3 1>;
 			interrupt-parent = <&PIC>;
 			phy-handle = <&PHY0>;
-			linux,network-index = <0>;
+			linaos,network-index = <0>;
 		};
 
 		ethernet@1e00 {
@@ -109,7 +109,7 @@
 			interrupts = <7 1>;
 			interrupt-parent = <&PIC>;
 			phy-handle = <&PHY1>;
-			linux,network-index = <1>;
+			linaos,network-index = <1>;
 		};
 
 		PIC: interrupt-controller@0 {
@@ -178,7 +178,7 @@
 				interrupt-parent = <&CPM_PIC>;
 				fsl,cpm-brg = <1>;
 				fsl,cpm-command = <0x90>;
-				linux,planetcore-label = "SMC1";
+				linaos,planetcore-label = "SMC1";
 			};
 
 			// SER-1
@@ -191,7 +191,7 @@
 				interrupt-parent = <&CPM_PIC>;
 				fsl,cpm-brg = <2>;
 				fsl,cpm-command = <0x40>;
-				linux,planetcore-label = "SCC2";
+				linaos,planetcore-label = "SCC2";
 			};
 
 			usb@a00 {

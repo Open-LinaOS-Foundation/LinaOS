@@ -4,13 +4,13 @@
  *  Copyright (C) 2017 Zihao Yu
  */
 
-#include <linux/elf.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/moduleloader.h>
-#include <linux/vmalloc.h>
-#include <linux/sizes.h>
-#include <linux/pgtable.h>
+#include <linaos/elf.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/moduleloader.h>
+#include <linaos/vmalloc.h>
+#include <linaos/sizes.h>
+#include <linaos/pgtable.h>
 #include <asm/sections.h>
 
 static int apply_r_riscv_32_rela(struct module *me, u32 *location, Elf_Addr v)

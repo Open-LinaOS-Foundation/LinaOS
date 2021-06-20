@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright (c) 2007 Cisco Systems.  All rights reserved.
  * Copyright (c) 2020 Intel Corporation.  All rights reserved.
@@ -7,9 +7,9 @@
 #ifndef IB_UMEM_H
 #define IB_UMEM_H
 
-#include <linux/list.h>
-#include <linux/scatterlist.h>
-#include <linux/workqueue.h>
+#include <linaos/list.h>
+#include <linaos/scatterlist.h>
+#include <linaos/workqueue.h>
 #include <rdma/ib_verbs.h>
 
 struct ib_ucontext;
@@ -146,7 +146,7 @@ void ib_umem_dmabuf_release(struct ib_umem_dmabuf *umem_dmabuf);
 
 #else /* CONFIG_INFINIBAND_USER_MEM */
 
-#include <linux/err.h>
+#include <linaos/err.h>
 
 static inline struct ib_umem *ib_umem_get(struct ib_device *device,
 					  unsigned long addr, size_t size,

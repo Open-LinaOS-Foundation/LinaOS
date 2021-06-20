@@ -21,7 +21,7 @@
 #ifndef _ASM_ARC_UACCESS_H
 #define _ASM_ARC_UACCESS_H
 
-#include <linux/string.h>	/* for generic string functions */
+#include <linaos/string.h>	/* for generic string functions */
 
 
 #define __kernel_ok		(uaccess_kernel())

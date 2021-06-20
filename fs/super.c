@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/super.c
+ *  linaos/fs/super.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -21,23 +21,23 @@
  *  Heavily rewritten for 'one fs - one tree' dcache architecture. AV, Mar 2000
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/mount.h>
-#include <linux/security.h>
-#include <linux/writeback.h>		/* for the emergency remount stuff */
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/backing-dev.h>
-#include <linux/rculist_bl.h>
-#include <linux/cleancache.h>
-#include <linux/fscrypt.h>
-#include <linux/fsnotify.h>
-#include <linux/lockdep.h>
-#include <linux/user_namespace.h>
-#include <linux/fs_context.h>
-#include <uapi/linux/mount.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/mount.h>
+#include <linaos/security.h>
+#include <linaos/writeback.h>		/* for the emergency remount stuff */
+#include <linaos/idr.h>
+#include <linaos/mutex.h>
+#include <linaos/backing-dev.h>
+#include <linaos/rculist_bl.h>
+#include <linaos/cleancache.h>
+#include <linaos/fscrypt.h>
+#include <linaos/fsnotify.h>
+#include <linaos/lockdep.h>
+#include <linaos/user_namespace.h>
+#include <linaos/fs_context.h>
+#include <uapi/linaos/mount.h>
 #include "internal.h"
 
 static int thaw_super_locked(struct super_block *sb);

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * index.h - Defines for NTFS kernel index handling.  Part of the Linux-NTFS
+ * index.h - Defines for NTFS kernel index handling.  Part of the LinaOS-NTFS
  *	     project.
  *
  * Copyright (c) 2004 Anton Altaparmakov
@@ -9,7 +9,7 @@
 #ifndef _LINUX_NTFS_INDEX_H
 #define _LINUX_NTFS_INDEX_H
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 #include "types.h"
 #include "layout.h"

@@ -17,10 +17,10 @@
  */
 
 
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/moduleparam.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/moduleparam.h>
 #include <sound/core.h>
 #include <sound/info.h>
 #include <sound/pcm.h>
@@ -31,7 +31,7 @@
 #define USX2Y_NRPACKS 4			/* Default value used for nr of packs per urb.
 					  1 to 4 have been tested ok on uhci.
 					  To use 3 on ohci, you'd need a patch:
-					  look for "0000425-linux-2.6.9-rc4-mm1_ohci-hcd.patch.gz" on
+					  look for "0000425-linaos-2.6.9-rc4-mm1_ohci-hcd.patch.gz" on
 					  "https://bugtrack.alsa-project.org/alsa-bug/bug_view_page.php?bug_id=0000425"
 					  .
 					  1, 2 and 4 work out of the box on ohci, if I recall correctly.

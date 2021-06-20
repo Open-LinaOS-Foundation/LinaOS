@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/ftrace.h>
 #include <abi/entry.h>
 #include <asm/asm-offsets.h>

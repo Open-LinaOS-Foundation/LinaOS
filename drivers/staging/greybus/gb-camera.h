@@ -7,7 +7,7 @@
 #ifndef __GB_CAMERA_H
 #define __GB_CAMERA_H
 
-#include <linux/v4l2-mediabus.h>
+#include <linaos/v4l2-mediabus.h>
 
 /* Input flags need to be set from the caller */
 #define GB_CAMERA_IN_FLAG_TEST		(1 << 0)

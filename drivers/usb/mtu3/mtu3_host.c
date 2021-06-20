@@ -7,13 +7,13 @@
  * Author: Chunfeng Yun <chunfeng.yun@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/iopoll.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
 
 #include "mtu3.h"
 #include "mtu3_dr.h"

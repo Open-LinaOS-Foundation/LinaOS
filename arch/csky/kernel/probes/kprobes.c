@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/kprobes.h>
-#include <linux/extable.h>
-#include <linux/slab.h>
-#include <linux/stop_machine.h>
+#include <linaos/kprobes.h>
+#include <linaos/extable.h>
+#include <linaos/slab.h>
+#include <linaos/stop_machine.h>
 #include <asm/ptrace.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/sections.h>
 #include <asm/cacheflush.h>
 

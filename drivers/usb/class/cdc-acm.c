@@ -18,25 +18,25 @@
 #undef DEBUG
 #undef VERBOSE_DEBUG
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
-#include <linux/tty.h>
-#include <linux/serial.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/log2.h>
+#include <linaos/tty.h>
+#include <linaos/serial.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
+#include <linaos/usb.h>
+#include <linaos/usb/cdc.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
-#include <linux/idr.h>
-#include <linux/list.h>
+#include <linaos/idr.h>
+#include <linaos/list.h>
 
 #include "cdc-acm.h"
 
@@ -1828,7 +1828,7 @@ static const struct usb_device_id acm_ids[] = {
 	 * a modem and is picked up by the standard AT-command
 	 * information below. The second is 'vendor-specific' but
 	 * is treated as a serial device at the S60 end, so we want
-	 * to expose it on Linux too. */
+	 * to expose it on LinaOS too. */
 	{ NOKIA_PCSUITE_ACM_INFO(0x042D), }, /* Nokia 3250 */
 	{ NOKIA_PCSUITE_ACM_INFO(0x04D8), }, /* Nokia 5500 Sport */
 	{ NOKIA_PCSUITE_ACM_INFO(0x04C9), }, /* Nokia E50 */

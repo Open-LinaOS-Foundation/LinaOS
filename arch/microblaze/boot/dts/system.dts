@@ -262,7 +262,7 @@
 			heartbeat {
 				label = "Heartbeat";
 				gpios = <&LEDs_8Bit 4 1>;
-				linux,default-trigger = "heartbeat";
+				linaos,default-trigger = "heartbeat";
 			};
 
 			yellow {

@@ -31,7 +31,7 @@
 		logo {
 			label = "bcm53xx:white:logo";
 			gpios = <&chipcommon 1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		power0 {
@@ -42,7 +42,7 @@
 		power1 {
 			label = "bcm53xx:amber:power";
 			gpios = <&chipcommon 3 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		usb {
@@ -61,19 +61,19 @@
 
 		wps {
 			label = "WPS";
-			linux,code = <KEY_WPS_BUTTON>;
+			linaos,code = <KEY_WPS_BUTTON>;
 			gpios = <&chipcommon 4 GPIO_ACTIVE_LOW>;
 		};
 
 		rfkill {
 			label = "WiFi";
-			linux,code = <KEY_RFKILL>;
+			linaos,code = <KEY_RFKILL>;
 			gpios = <&chipcommon 5 GPIO_ACTIVE_LOW>;
 		};
 
 		restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&chipcommon 6 GPIO_ACTIVE_LOW>;
 		};
 	};

@@ -3,7 +3,7 @@
 #define __ASM_SH_RENESAS_RTS7751R2D_H
 
 /*
- * linux/include/asm-sh/renesas_rts7751r2d.h
+ * linaos/include/asm-sh/renesas_rts7751r2d.h
  *
  * Copyright (C) 2000  Atom Create Engineering Co., Ltd.
  *

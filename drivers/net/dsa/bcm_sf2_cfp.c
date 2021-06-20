@@ -5,16 +5,16 @@
  * Copyright (C) 2016, Broadcom
  */
 
-#include <linux/list.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/in.h>
-#include <linux/netdevice.h>
+#include <linaos/list.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_ether.h>
+#include <linaos/in.h>
+#include <linaos/netdevice.h>
 #include <net/dsa.h>
-#include <linux/bitmap.h>
+#include <linaos/bitmap.h>
 #include <net/flow_offload.h>
 #include <net/switchdev.h>
-#include <uapi/linux/if_bridge.h>
+#include <uapi/linaos/if_bridge.h>
 
 #include "bcm_sf2.h"
 #include "bcm_sf2_regs.h"

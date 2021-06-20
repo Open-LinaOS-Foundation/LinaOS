@@ -2,7 +2,7 @@
 /*
  * Copyright (c) 2005-2011 Atheros Communications Inc.
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The LinaOS Foundation. All rights reserved.
  */
 
 #include "core.h"
@@ -13,8 +13,8 @@
 #include "trace.h"
 #include "mac.h"
 
-#include <linux/log2.h>
-#include <linux/bitfield.h>
+#include <linaos/log2.h>
+#include <linaos/bitfield.h>
 
 /* when under memory pressure rx ring refill may fail and needs a retry */
 #define HTT_RX_RING_REFILL_RETRY_MS 50

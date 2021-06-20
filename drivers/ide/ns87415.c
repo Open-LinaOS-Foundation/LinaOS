@@ -2,20 +2,20 @@
 /*
  * Copyright (C) 1997-1998	Mark Lord <mlord@pobox.com>
  * Copyright (C) 1998		Eddie C. Dost <ecd@skynet.be>
- * Copyright (C) 1999-2000	Andre Hedrick <andre@linux-ide.org>
- * Copyright (C) 2004		Grant Grundler <grundler at parisc-linux.org>
+ * Copyright (C) 1999-2000	Andre Hedrick <andre@linaos-ide.org>
+ * Copyright (C) 2004		Grant Grundler <grundler at parisc-linaos.org>
  *
  * Inspired by an earlier effort from David S. Miller <davem@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/ide.h>
+#include <linaos/init.h>
 
 #include <asm/io.h>
 

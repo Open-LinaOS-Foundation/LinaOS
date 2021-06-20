@@ -4,11 +4,11 @@
  * Based on gpio-mpc8xxx.c
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/of_gpio.h> /* For of_mm_gpio_chip */
-#include <linux/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/of_gpio.h> /* For of_mm_gpio_chip */
+#include <linaos/platform_device.h>
 
 #define ALTERA_GPIO_MAX_NGPIO		32
 #define ALTERA_GPIO_DATA		0x0

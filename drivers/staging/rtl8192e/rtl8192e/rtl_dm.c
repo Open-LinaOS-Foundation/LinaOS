@@ -263,7 +263,7 @@ static void _rtl92e_dm_check_ac_dc_power(struct net_device *dev)
 	static const char ac_dc_script[] = "/etc/acpi/wireless-rtl-ac-dc-power.sh";
 	char *argv[] = {(char *)ac_dc_script, DRV_NAME, NULL};
 	static char *envp[] = {"HOME=/",
-			"TERM=linux",
+			"TERM=linaos",
 			"PATH=/usr/bin:/bin",
 			 NULL};
 
@@ -1802,7 +1802,7 @@ static void _rtl92e_dm_check_rf_ctrl_gpio(void *data)
 	bool bActuallySet = false;
 	char *argv[3];
 	static const char RadioPowerPath[] = "/etc/acpi/events/RadioPower.sh";
-	static char *envp[] = {"HOME=/", "TERM=linux", "PATH=/usr/bin:/bin",
+	static char *envp[] = {"HOME=/", "TERM=linaos", "PATH=/usr/bin:/bin",
 			       NULL};
 
 	bActuallySet = false;

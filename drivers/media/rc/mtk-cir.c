@@ -5,11 +5,11 @@
  * Copyright (C) 2017 Sean Wang <sean.wang@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/reset.h>
 #include <media/rc-core.h>
 
 #define MTK_IR_DEV KBUILD_MODNAME
@@ -338,7 +338,7 @@ static int mtk_ir_probe(struct platform_device *pdev)
 	ir->rc->input_id.vendor = 0x0001;
 	ir->rc->input_id.product = 0x0001;
 	ir->rc->input_id.version = 0x0001;
-	map_name = of_get_property(dn, "linux,rc-map-name", NULL);
+	map_name = of_get_property(dn, "linaos,rc-map-name", NULL);
 	ir->rc->map_name = map_name ?: RC_MAP_EMPTY;
 	ir->rc->dev.parent = dev;
 	ir->rc->driver_name = MTK_IR_DEV;

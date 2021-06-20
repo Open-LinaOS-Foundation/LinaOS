@@ -36,7 +36,7 @@
 		button-esc {
 			debounce-interval = <100>;
 			wakeup-source;
-			linux,code = <KEY_ESC>;
+			linaos,code = <KEY_ESC>;
 			label = "reset";
 			gpios = <&gpio1 31 GPIO_ACTIVE_LOW>;
 		};
@@ -48,7 +48,7 @@
 			label = "dns313:blue:power";
 			gpios = <&gpio0 1 GPIO_ACTIVE_HIGH>;
 			default-state = "on";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 		led-disk-blue {
 			label = "dns313:blue:disk";
@@ -59,13 +59,13 @@
 			label = "dns313:green:disk";
 			gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "disk-read";
+			linaos,default-trigger = "disk-read";
 		};
 		led-disk-red {
 			label = "dns313:red:disk";
 			gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "disk-write";
+			linaos,default-trigger = "disk-write";
 		};
 	};
 
@@ -221,7 +221,7 @@
 						groups = "gmii_gmac0_grp";
 					};
 					/*
-					 * In the vendor Linux tree, these values are set for the C3
+					 * In the vendor LinaOS tree, these values are set for the C3
 					 * version of the SL3512 ASIC with the comment "benson suggest"
 					 */
 					conf0 {

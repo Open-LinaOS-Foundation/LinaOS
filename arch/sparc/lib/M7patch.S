@@ -4,7 +4,7 @@
  * Copyright (c) 2016, Oracle and/or its affiliates.  All rights reserved.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #define BRANCH_ALWAYS	0x10680000
 #define NOP		0x01000000

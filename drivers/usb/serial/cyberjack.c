@@ -7,7 +7,7 @@
  *
  *  Contact: support@reiner-sct.com (see MAINTAINERS)
  *
- *  This program is largely derived from work by the linux-usb group
+ *  This program is largely derived from work by the linaos-usb group
  *  and associated source files.  Please see the usb/serial files for
  *  individual credits and copyrights.
  *
@@ -20,21 +20,21 @@
  *  Please note that later models of the cyberjack reader family are
  *  supported by a libusb-based userspace device driver.
  *
- *  Homepage: http://www.reiner-sct.de/support/treiber_cyberjack.php#linux
+ *  Homepage: http://www.reiner-sct.de/support/treiber_cyberjack.php#linaos
  */
 
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/usb.h>
+#include <linaos/usb/serial.h>
 
 #define CYBERJACK_LOCAL_BUF_SIZE 32
 

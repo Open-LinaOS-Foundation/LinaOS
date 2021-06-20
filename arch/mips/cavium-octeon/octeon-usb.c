@@ -8,12 +8,12 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/of_platform.h>
+#include <linaos/io.h>
 
 #include <asm/octeon/octeon.h>
 

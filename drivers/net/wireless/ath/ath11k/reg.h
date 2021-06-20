@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: BSD-3-Clause-Clear */
 /*
- * Copyright (c) 2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019 The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef ATH11K_REG_H
 #define ATH11K_REG_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <net/regulatory.h>
 
 struct ath11k_base;

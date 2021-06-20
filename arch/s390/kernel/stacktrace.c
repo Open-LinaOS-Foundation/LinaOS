@@ -6,7 +6,7 @@
  *  Author(s): Heiko Carstens <heiko.carstens@de.ibm.com>
  */
 
-#include <linux/stacktrace.h>
+#include <linaos/stacktrace.h>
 #include <asm/stacktrace.h>
 #include <asm/unwind.h>
 #include <asm/kprobes.h>

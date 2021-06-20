@@ -8,14 +8,14 @@
  *
  * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/pvclock_gtod.h>
-#include <linux/timekeeper_internal.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/clocksource.h>
+#include <linaos/clockchips.h>
+#include <linaos/gfp.h>
+#include <linaos/slab.h>
+#include <linaos/pvclock_gtod.h>
+#include <linaos/timekeeper_internal.h>
 
 #include <asm/pvclock.h>
 #include <asm/xen/hypervisor.h>

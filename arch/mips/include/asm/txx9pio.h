@@ -9,7 +9,7 @@
 #ifndef __ASM_TXX9PIO_H
 #define __ASM_TXX9PIO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct txx9_pio_reg {
 	__u32 dout;

@@ -5,17 +5,17 @@
  * Development of this code funded by Astaro AG (http://www.astaro.com/)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/vmalloc.h>
-#include <linux/rhashtable.h>
-#include <linux/audit.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nf_tables.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/skbuff.h>
+#include <linaos/netlink.h>
+#include <linaos/vmalloc.h>
+#include <linaos/rhashtable.h>
+#include <linaos/audit.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/nf_tables.h>
 #include <net/netfilter/nf_flow_table.h>
 #include <net/netfilter/nf_tables_core.h>
 #include <net/netfilter/nf_tables.h>

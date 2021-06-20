@@ -6,7 +6,7 @@
 
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 #include <drm/drm_debugfs.h>
 #include <drm/drm_file.h>

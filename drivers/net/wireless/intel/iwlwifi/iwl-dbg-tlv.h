@@ -5,8 +5,8 @@
 #ifndef __iwl_dbg_tlv_h__
 #define __iwl_dbg_tlv_h__
 
-#include <linux/device.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
 #include <fw/file.h>
 #include <fw/api/dbg-tlv.h>
 

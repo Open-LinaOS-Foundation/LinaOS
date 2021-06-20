@@ -7,9 +7,9 @@
 
 #define pr_fmt(fmt)     "opal-powercap: " fmt
 
-#include <linux/of.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
+#include <linaos/of.h>
+#include <linaos/kobject.h>
+#include <linaos/slab.h>
 
 #include <asm/opal.h>
 

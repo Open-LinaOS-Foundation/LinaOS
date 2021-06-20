@@ -2,7 +2,7 @@
 #ifndef _SCSI_GENERIC_H
 #define _SCSI_GENERIC_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 /*
  * History:
@@ -34,7 +34,7 @@ extern int sg_big_buff; /* for sysctl */
 #endif
 
 
-typedef struct sg_iovec /* same structure as used by readv() Linux system */
+typedef struct sg_iovec /* same structure as used by readv() LinaOS system */
 {                       /* call. It defines one scatter-gather element. */
     void __user *iov_base;      /* Starting address  */
     size_t iov_len;             /* Length in bytes  */
@@ -69,7 +69,7 @@ typedef struct sg_io_hdr
 } sg_io_hdr_t;  /* 64 bytes long (on i386) */
 
 #if defined(__KERNEL__)
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 struct compat_sg_io_hdr {
 	compat_int_t interface_id;	/* [i] 'S' for SCSI generic (required) */

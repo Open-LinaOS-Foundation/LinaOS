@@ -30,14 +30,14 @@
  * SOFTWARE.
  */
 
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/module.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/vport.h>
-#include <linux/mlx5/eq.h>
+#include <linaos/interrupt.h>
+#include <linaos/notifier.h>
+#include <linaos/module.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/mlx5/vport.h>
+#include <linaos/mlx5/eq.h>
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <linaos/cpu_rmap.h>
 #endif
 #include "mlx5_core.h"
 #include "lib/eq.h"

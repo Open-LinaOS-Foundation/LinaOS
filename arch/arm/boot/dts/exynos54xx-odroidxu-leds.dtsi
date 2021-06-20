@@ -23,7 +23,7 @@
 			 * so limit its max brightness
 			 */
 			max_brightness = <127>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 
 		led-2 {
@@ -31,7 +31,7 @@
 			pwms = <&pwm 2 2000000 0>;
 			pwm-names = "pwm2";
 			max_brightness = <255>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 
@@ -42,7 +42,7 @@
 			label = "red:microSD";
 			gpios = <&gpx2 3 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "mmc1";
+			linaos,default-trigger = "mmc1";
 		};
 	};
 };

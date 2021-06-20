@@ -10,7 +10,7 @@
 #ifndef _MUSB_HOST_H
 #define _MUSB_HOST_H
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 /* stored in "usb_host_endpoint.hcpriv" for scheduled endpoints */
 struct musb_qh {

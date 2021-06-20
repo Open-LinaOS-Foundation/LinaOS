@@ -2,7 +2,7 @@
 #ifndef __NET_GENERIC_NETLINK_H
 #define __NET_GENERIC_NETLINK_H
 
-#include <linux/genetlink.h>
+#include <linaos/genetlink.h>
 #include <net/netlink.h>
 #include <net/net_namespace.h>
 

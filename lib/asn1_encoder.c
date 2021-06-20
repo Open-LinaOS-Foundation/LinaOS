@@ -5,10 +5,10 @@
  * Copyright (C) 2019 James.Bottomley@HansenPartnership.com
  */
 
-#include <linux/asn1_encoder.h>
-#include <linux/bug.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <linaos/asn1_encoder.h>
+#include <linaos/bug.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
 
 /**
  * asn1_encode_integer() - encode positive integer to ASN.1

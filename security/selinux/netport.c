@@ -2,7 +2,7 @@
 /*
  * Network port table
  *
- * SELinux must keep a mapping of network ports to labels/SIDs.  This
+ * SELinaOS must keep a mapping of network ports to labels/SIDs.  This
  * mapping is maintained as part of the normal policy but a fast cache is
  * needed to reduce the lookup overhead.
  *
@@ -10,22 +10,22 @@
  *
  * This code is heavily based on the "netif" concept originally developed by
  * James Morris <jmorris@redhat.com>
- *   (see security/selinux/netif.c for more information)
+ *   (see security/selinaos/netif.c for more information)
  */
 
 /*
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2008
  */
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linaos/types.h>
+#include <linaos/rcupdate.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 
@@ -148,7 +148,7 @@ static int sel_netport_sid_slow(u8 protocol, u16 pnum, u32 *sid)
 		return 0;
 	}
 
-	ret = security_port_sid(&selinux_state, protocol, pnum, sid);
+	ret = security_port_sid(&selinaos_state, protocol, pnum, sid);
 	if (ret != 0)
 		goto out;
 	new = kzalloc(sizeof(*new), GFP_ATOMIC);
@@ -162,7 +162,7 @@ static int sel_netport_sid_slow(u8 protocol, u16 pnum, u32 *sid)
 out:
 	spin_unlock_bh(&sel_netport_lock);
 	if (unlikely(ret))
-		pr_warn("SELinux: failure in %s(), unable to determine network port label\n",
+		pr_warn("SELinaOS: failure in %s(), unable to determine network port label\n",
 			__func__);
 	return ret;
 }
@@ -224,7 +224,7 @@ static __init int sel_netport_init(void)
 {
 	int iter;
 
-	if (!selinux_enabled_boot)
+	if (!selinaos_enabled_boot)
 		return 0;
 
 	for (iter = 0; iter < SEL_NETPORT_HASH_SIZE; iter++) {

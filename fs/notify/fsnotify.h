@@ -2,10 +2,10 @@
 #ifndef __FS_NOTIFY_FSNOTIFY_H_
 #define __FS_NOTIFY_FSNOTIFY_H_
 
-#include <linux/list.h>
-#include <linux/fsnotify.h>
-#include <linux/srcu.h>
-#include <linux/types.h>
+#include <linaos/list.h>
+#include <linaos/fsnotify.h>
+#include <linaos/srcu.h>
+#include <linaos/types.h>
 
 #include "../mount.h"
 

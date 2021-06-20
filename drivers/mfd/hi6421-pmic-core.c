@@ -10,14 +10,14 @@
  * Author: Guodong Xu <guodong.xu@linaro.org>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/hi6421-pmic.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/hi6421-pmic.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 static const struct mfd_cell hi6421_devs[] = {
 	{ .name = "hi6421-regulator", },

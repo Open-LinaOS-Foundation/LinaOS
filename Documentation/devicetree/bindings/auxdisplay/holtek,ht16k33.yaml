@@ -30,9 +30,9 @@ properties:
     maxItems: 1
     description: Debouncing interval time in milliseconds
 
-  linux,keymap: true
+  linaos,keymap: true
 
-  linux,no-autorepeat:
+  linaos,no-autorepeat:
     description: Disable keyrepeat
 
   default-brightness-level:
@@ -63,7 +63,7 @@ examples:
                     interrupt-parent = <&gpio4>;
                     interrupts = <5 (IRQ_TYPE_LEVEL_HIGH | IRQ_TYPE_EDGE_RISING)>;
                     debounce-delay-ms = <50>;
-                    linux,keymap = <MATRIX_KEY(2, 0, KEY_F6)>,
+                    linaos,keymap = <MATRIX_KEY(2, 0, KEY_F6)>,
                                    <MATRIX_KEY(3, 0, KEY_F8)>,
                                    <MATRIX_KEY(4, 0, KEY_F10)>,
                                    <MATRIX_KEY(5, 0, KEY_F4)>,

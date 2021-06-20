@@ -9,7 +9,7 @@
 #ifndef DBX500_REGULATOR_H
 #define DBX500_REGULATOR_H
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 /**
  * struct dbx500_regulator_info - dbx500 regulator information

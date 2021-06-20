@@ -9,7 +9,7 @@
 #ifndef RNBD_SRV_DEV_H
 #define RNBD_SRV_DEV_H
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 #include "rnbd-proto.h"
 
 struct rnbd_dev {

@@ -22,16 +22,16 @@
  * or by adding the 'nxp,hw-blink' property to the DTS.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/leds.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/leds.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 
 /* LED select registers determine the source that drives LED outputs */
 #define PCA963X_LED_OFF		0x0	/* LED driver off */

@@ -8,7 +8,7 @@
  * Copyright (C) 2000-2001 Deep Blue Solutions Ltd
  *
  * Contributors to the old driver include:
- * Russell King <linux@armlinux.org.uk>
+ * Russell King <linaos@armlinaos.org.uk>
  * David A. Rusling <david.rusling@linaro.org> (uHAL, ARM Firmware suite)
  * Rob Herring <robh@kernel.org>
  * Liviu Dudau <Liviu.Dudau@arm.com>
@@ -16,22 +16,22 @@
  * Arnd Bergmann <arnd@arndb.de>
  * Bjorn Helgaas <bhelgaas@google.com>
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_pci.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/irq.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/clk.h>
 
 #include "../pci.h"
 

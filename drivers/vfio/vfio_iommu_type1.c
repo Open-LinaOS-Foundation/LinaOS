@@ -21,25 +21,25 @@
  * device/bus interface rather than a group interface.
  */
 
-#include <linux/compat.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/kthread.h>
-#include <linux/rbtree.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
-#include <linux/workqueue.h>
-#include <linux/mdev.h>
-#include <linux/notifier.h>
-#include <linux/dma-iommu.h>
-#include <linux/irqdomain.h>
+#include <linaos/compat.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/highmem.h>
+#include <linaos/iommu.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/kthread.h>
+#include <linaos/rbtree.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/vfio.h>
+#include <linaos/workqueue.h>
+#include <linaos/mdev.h>
+#include <linaos/notifier.h>
+#include <linaos/dma-iommu.h>
+#include <linaos/irqdomain.h>
 
 #define DRIVER_VERSION  "0.2"
 #define DRIVER_AUTHOR   "Alex Williamson <alex.williamson@redhat.com>"

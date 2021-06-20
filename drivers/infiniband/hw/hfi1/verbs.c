@@ -47,14 +47,14 @@
 
 #include <rdma/ib_mad.h>
 #include <rdma/ib_user_verbs.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/utsname.h>
-#include <linux/rculist.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/utsname.h>
+#include <linaos/rculist.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
 #include <rdma/opa_addr.h>
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
 #include "hfi.h"
 #include "common.h"

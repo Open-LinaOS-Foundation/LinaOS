@@ -4,7 +4,7 @@
 #ifndef __MAP_IN_MAP_H__
 #define __MAP_IN_MAP_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct file;
 struct bpf_map;

@@ -7,15 +7,15 @@
 #ifndef _LINUX_BPF_LSM_H
 #define _LINUX_BPF_LSM_H
 
-#include <linux/sched.h>
-#include <linux/bpf.h>
-#include <linux/lsm_hooks.h>
+#include <linaos/sched.h>
+#include <linaos/bpf.h>
+#include <linaos/lsm_hooks.h>
 
 #ifdef CONFIG_BPF_LSM
 
 #define LSM_HOOK(RET, DEFAULT, NAME, ...) \
 	RET bpf_lsm_##NAME(__VA_ARGS__);
-#include <linux/lsm_hook_defs.h>
+#include <linaos/lsm_hook_defs.h>
 #undef LSM_HOOK
 
 struct bpf_storage_blob {

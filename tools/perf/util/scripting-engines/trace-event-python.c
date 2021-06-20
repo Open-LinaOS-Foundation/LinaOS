@@ -27,9 +27,9 @@
 #include <string.h>
 #include <stdbool.h>
 #include <errno.h>
-#include <linux/bitmap.h>
-#include <linux/compiler.h>
-#include <linux/time64.h>
+#include <linaos/bitmap.h>
+#include <linaos/compiler.h>
+#include <linaos/time64.h>
 
 #include "../build-id.h"
 #include "../counts.h"

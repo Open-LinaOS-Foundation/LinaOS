@@ -23,7 +23,7 @@
 
 #ifndef __ASSEMBLY__
 /* V0 prom device operations. */
-struct linux_dev_v0_funcs {
+struct linaos_dev_v0_funcs {
 	int (*v0_devopen)(char *device_str);
 	int (*v0_devclose)(int dev_desc);
 	int (*v0_rdblkdev)(int dev_desc, int num_blks, int blk_st, char *buf);
@@ -36,7 +36,7 @@ struct linux_dev_v0_funcs {
 };
 
 /* V2 and later prom device operations. */
-struct linux_dev_v2_funcs {
+struct linaos_dev_v2_funcs {
 	int (*v2_inst2pkg)(int d);	/* Convert ihandle to phandle */
 	char * (*v2_dumb_mem_alloc)(char *va, unsigned sz);
 	void (*v2_dumb_mem_free)(char *va, unsigned sz);
@@ -56,20 +56,20 @@ struct linux_dev_v2_funcs {
 	void (*v2_wheee3)(void);
 };
 
-struct linux_mlist_v0 {
-	struct linux_mlist_v0 *theres_more;
+struct linaos_mlist_v0 {
+	struct linaos_mlist_v0 *theres_more;
 	char *start_adr;
 	unsigned num_bytes;
 };
 
-struct linux_mem_v0 {
-	struct linux_mlist_v0 **v0_totphys;
-	struct linux_mlist_v0 **v0_prommap;
-	struct linux_mlist_v0 **v0_available; /* What we can use */
+struct linaos_mem_v0 {
+	struct linaos_mlist_v0 **v0_totphys;
+	struct linaos_mlist_v0 **v0_prommap;
+	struct linaos_mlist_v0 **v0_available; /* What we can use */
 };
 
 /* Arguments sent to the kernel from the boot prompt. */
-struct linux_arguments_v0 {
+struct linaos_arguments_v0 {
 	char *argv[8];
 	char args[100];
 	char boot_dev[2];
@@ -81,7 +81,7 @@ struct linux_arguments_v0 {
 };
 
 /* V2 and up boot things. */
-struct linux_bootargs_v2 {
+struct linaos_bootargs_v2 {
 	char **bootpath;
 	char **bootargs;
 	int *fd_stdin;
@@ -89,13 +89,13 @@ struct linux_bootargs_v2 {
 };
 
 #if defined(CONFIG_SUN3) || defined(CONFIG_SUN3X)
-struct linux_romvec {
+struct linaos_romvec {
 	char		*pv_initsp;
 	int		(*pv_startmon)(void);
 
 	int		*diagberr;
 
-	struct linux_arguments_v0 **pv_v0bootargs;
+	struct linaos_arguments_v0 **pv_v0bootargs;
 	unsigned	*pv_sun3mem;
 
 	unsigned char	(*pv_getchar)(void);
@@ -184,7 +184,7 @@ struct linux_romvec {
 };
 #else
 /* The top level PROM vector. */
-struct linux_romvec {
+struct linaos_romvec {
 	/* Version numbers. */
 	unsigned int pv_magic_cookie;
 	unsigned int pv_romvers;
@@ -192,13 +192,13 @@ struct linux_romvec {
 	unsigned int pv_printrev;
 
 	/* Version 0 memory descriptors. */
-	struct linux_mem_v0 pv_v0mem;
+	struct linaos_mem_v0 pv_v0mem;
 
 	/* Node operations. */
-	struct linux_nodeops *pv_nodeops;
+	struct linaos_nodeops *pv_nodeops;
 
 	char **pv_bootstr;
-	struct linux_dev_v0_funcs pv_v0devops;
+	struct linaos_dev_v0_funcs pv_v0devops;
 
 	char *pv_stdin;
 	char *pv_stdout;
@@ -231,13 +231,13 @@ struct linux_romvec {
 		void (*v2_eval)(char *str);
 	} pv_fortheval;
 
-	struct linux_arguments_v0 **pv_v0bootargs;
+	struct linaos_arguments_v0 **pv_v0bootargs;
 
 	/* Get ether address. */
 	unsigned int (*pv_enaddr)(int d, char *enaddr);
 
-	struct linux_bootargs_v2 pv_v2bootargs;
-	struct linux_dev_v2_funcs pv_v2devops;
+	struct linaos_bootargs_v2 pv_v2bootargs;
+	struct linaos_dev_v2_funcs pv_v2devops;
 
 	int filler[15];
 
@@ -274,7 +274,7 @@ struct linux_romvec {
 #endif
 
 /* Routines for traversing the prom device tree. */
-struct linux_nodeops {
+struct linaos_nodeops {
 	int (*no_nextnode)(int node);
 	int (*no_child)(int node);
 	int (*no_proplen)(int node, char *name);
@@ -288,19 +288,19 @@ struct linux_nodeops {
 #define PROMVADDR_MAX   16
 #define PROMINTR_MAX    15
 
-struct linux_prom_registers {
+struct linaos_prom_registers {
 	int which_io;         /* is this in OBIO space? */
 	char *phys_addr;      /* The physical address of this register */
 	int reg_size;         /* How many bytes does this register take up? */
 };
 
-struct linux_prom_irqs {
+struct linaos_prom_irqs {
 	int pri;    /* IRQ priority */
 	int vector; /* This is foobar, what does it do? */
 };
 
 /* Element of the "ranges" vector */
-struct linux_prom_ranges {
+struct linaos_prom_ranges {
 	unsigned int ot_child_space;
 	unsigned int ot_child_base;		/* Bus feels this */
 	unsigned int ot_parent_space;

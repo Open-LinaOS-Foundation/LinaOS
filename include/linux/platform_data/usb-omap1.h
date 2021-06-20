@@ -8,7 +8,7 @@
 #ifndef __LINUX_USB_OMAP1_H
 #define __LINUX_USB_OMAP1_H
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 struct omap_usb_config {
 	/* Configure drivers according to the connectors on your board:

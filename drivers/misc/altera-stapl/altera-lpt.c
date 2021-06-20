@@ -9,8 +9,8 @@
  * Copyright (C) 2010 Abylay Ospan <aospan@netup.ru>
  */
 
-#include <linux/io.h>
-#include <linux/kernel.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
 #include "altera-exprt.h"
 
 static int lpt_hardware_initialized;

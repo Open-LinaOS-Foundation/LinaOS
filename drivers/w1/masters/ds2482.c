@@ -10,14 +10,14 @@
  *   http://www.maxim-ic.com/quick_view2.cfm/qv_pk/4382
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
 #include <asm/delay.h>
 
-#include <linux/w1.h>
+#include <linaos/w1.h>
 
 /**
  * Allow the active pullup to be disabled, default is enabled.

@@ -16,7 +16,7 @@ Terminology
 -----------
 
 "pid", "tid" and "task" are used interchangeably and refer to the standard
-Linux task defined by struct task_struct.  per-pid stats are the same as
+LinaOS task defined by struct task_struct.  per-pid stats are the same as
 per-task stats.
 
 "tgid", "process" and "thread group" are used interchangeably and refer to the
@@ -53,7 +53,7 @@ receive buffer sizes.
 Interface
 ---------
 
-The user-kernel interface is encapsulated in include/linux/taskstats.h
+The user-kernel interface is encapsulated in include/linaos/taskstats.h
 
 To avoid this documentation becoming obsolete as the interface evolves, only
 an outline of the current version is given. taskstats.h always overrides the

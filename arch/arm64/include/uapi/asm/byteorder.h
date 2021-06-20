@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2012 ARM Ltd.
  *
@@ -18,9 +18,9 @@
 #define __ASM_BYTEORDER_H
 
 #ifdef __AARCH64EB__
-#include <linux/byteorder/big_endian.h>
+#include <linaos/byteorder/big_endian.h>
 #else
-#include <linux/byteorder/little_endian.h>
+#include <linaos/byteorder/little_endian.h>
 #endif
 
 #endif	/* __ASM_BYTEORDER_H */

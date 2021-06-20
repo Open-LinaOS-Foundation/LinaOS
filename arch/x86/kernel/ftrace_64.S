@@ -3,7 +3,7 @@
  *  Copyright (C) 2014  Steven Rostedt, Red Hat Inc
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/ptrace.h>
 #include <asm/ftrace.h>
 #include <asm/export.h>
@@ -307,7 +307,7 @@ trace:
 
 	/*
 	 * When DYNAMIC_FTRACE is not defined, ARCH_SUPPORTS_FTRACE_OPS is not
-	 * set (see include/asm/ftrace.h and include/linux/ftrace.h).  Only the
+	 * set (see include/asm/ftrace.h and include/linaos/ftrace.h).  Only the
 	 * ip and parent ip are used and the list function is called when
 	 * function tracing is enabled.
 	 */

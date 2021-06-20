@@ -5,13 +5,13 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <linaos/io.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
 #include <asm/exception.h>
 
 #define LPC32XX_INTC_MASK		0x00

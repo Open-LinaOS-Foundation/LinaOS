@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/console.c
+ *	linaos/arch/alpha/kernel/console.c
  *
  * Architecture-specific specific support for VGA device on 
  * non-0 I/O hose
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/vt.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/tty.h>
+#include <linaos/console.h>
+#include <linaos/vt.h>
 #include <asm/vga.h>
 #include <asm/machvec.h>
 

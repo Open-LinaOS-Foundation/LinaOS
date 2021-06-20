@@ -5,7 +5,7 @@
 #ifndef _CRYPTO_SM3_H
 #define _CRYPTO_SM3_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define SM3_DIGEST_SIZE	32
 #define SM3_BLOCK_SIZE	64

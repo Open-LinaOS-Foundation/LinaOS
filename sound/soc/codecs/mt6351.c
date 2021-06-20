@@ -5,12 +5,12 @@
 // Copyright (c) 2018 MediaTek Inc.
 // Author: KaiChieh Chuang <kaichieh.chuang@mediatek.com>
 
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/delay.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

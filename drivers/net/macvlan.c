@@ -9,29 +9,29 @@
  * Re-worked by Ben Greear <greearb@candelatech.com>
  * ---
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/rculist.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/ethtool.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
-#include <linux/if_link.h>
-#include <linux/if_macvlan.h>
-#include <linux/hash.h>
-#include <linux/workqueue.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/rculist.h>
+#include <linaos/notifier.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_vlan.h>
+#include <linaos/if_link.h>
+#include <linaos/if_macvlan.h>
+#include <linaos/hash.h>
+#include <linaos/workqueue.h>
 #include <net/rtnetlink.h>
 #include <net/xfrm.h>
-#include <linux/netpoll.h>
-#include <linux/phy.h>
+#include <linaos/netpoll.h>
+#include <linaos/phy.h>
 
 #define MACVLAN_HASH_BITS	8
 #define MACVLAN_HASH_SIZE	(1<<MACVLAN_HASH_BITS)

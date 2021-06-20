@@ -5,16 +5,16 @@
  * Copyright (c) 2016 Jamal Hadi Salim <jhs@mojatatu.com>
 */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
 
-#include <linux/tc_act/tc_skbmod.h>
+#include <linaos/tc_act/tc_skbmod.h>
 #include <net/tc_act/tc_skbmod.h>
 
 static unsigned int skbmod_net_id;

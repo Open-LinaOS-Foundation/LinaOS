@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/kernel/ptrace.c
+ * linaos/kernel/ptrace.c
  *
  * (C) Copyright 1999 Linus Torvalds
  *
@@ -8,30 +8,30 @@
  * to continually duplicate across every architecture.
  */
 
-#include <linux/capability.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/task.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/ptrace.h>
-#include <linux/security.h>
-#include <linux/signal.h>
-#include <linux/uio.h>
-#include <linux/audit.h>
-#include <linux/pid_namespace.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
-#include <linux/regset.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/cn_proc.h>
-#include <linux/compat.h>
-#include <linux/sched/signal.h>
-#include <linux/minmax.h>
+#include <linaos/capability.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/coredump.h>
+#include <linaos/sched/task.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>
+#include <linaos/pagemap.h>
+#include <linaos/ptrace.h>
+#include <linaos/security.h>
+#include <linaos/signal.h>
+#include <linaos/uio.h>
+#include <linaos/audit.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/syscalls.h>
+#include <linaos/uaccess.h>
+#include <linaos/regset.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/cn_proc.h>
+#include <linaos/compat.h>
+#include <linaos/sched/signal.h>
+#include <linaos/minmax.h>
 
 #include <asm/syscall.h>	/* for syscall_get_* */
 
@@ -928,7 +928,7 @@ static int ptrace_regset(struct task_struct *task, int req, unsigned int type,
 }
 
 /*
- * This is declared in linux/regset.h and defined in machine-dependent
+ * This is declared in linaos/regset.h and defined in machine-dependent
  * code.  We put the export here, near the primary machine-neutral use,
  * to ensure no machine forgets it.
  */

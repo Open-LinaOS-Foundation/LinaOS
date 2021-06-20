@@ -24,7 +24,7 @@
 #ifndef _I915_VGPU_H_
 #define _I915_VGPU_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_private;
 struct i915_ggtt;

@@ -6,17 +6,17 @@
  * Copyright (C) 2011-2012 Avionic Design GmbH
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/pwm.h>
-#include <linux/radix-tree.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/acpi.h>
+#include <linaos/module.h>
+#include <linaos/pwm.h>
+#include <linaos/radix-tree.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
 #include <dt-bindings/pwm/pwm.h>
 
@@ -659,7 +659,7 @@ EXPORT_SYMBOL_GPL(pwm_capture);
  *
  * This function will adjust the PWM config to the PWM arguments provided
  * by the DT or PWM lookup table. This is particularly useful to adapt
- * the bootloader config to the Linux one.
+ * the bootloader config to the LinaOS one.
  */
 int pwm_adjust_config(struct pwm_device *pwm)
 {

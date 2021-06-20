@@ -3,10 +3,10 @@
 #define _X_TABLES_H
 
 
-#include <linux/netdevice.h>
-#include <linux/static_key.h>
-#include <linux/netfilter.h>
-#include <uapi/linux/netfilter/x_tables.h>
+#include <linaos/netdevice.h>
+#include <linaos/static_key.h>
+#include <linaos/netfilter.h>
+#include <uapi/linaos/netfilter/x_tables.h>
 
 /* Test a struct->invflags and a boolean for inequality */
 #define NF_INVF(ptr, flag, boolean)					\
@@ -245,7 +245,7 @@ struct xt_table {
 	const char name[XT_TABLE_MAXNAMELEN];
 };
 
-#include <linux/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv4.h>
 
 /* The table itself */
 struct xt_table_info {

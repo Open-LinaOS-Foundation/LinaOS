@@ -2,8 +2,8 @@
 #ifndef _LINUX_LIST_NULLS_H
 #define _LINUX_LIST_NULLS_H
 
-#include <linux/poison.h>
-#include <linux/const.h>
+#include <linaos/poison.h>
+#include <linaos/const.h>
 
 /*
  * Special version of lists, where end of list is not a NULL pointer,

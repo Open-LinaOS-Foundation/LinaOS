@@ -34,18 +34,18 @@
  *	Added WDIOC_GETTIMEOUT and WDIOC_SETTIMOUT.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/reboot.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/reboot.h>
+#include <linaos/mutex.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
 #include "mconsole.h"
 
 MODULE_LICENSE("GPL");

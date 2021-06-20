@@ -15,7 +15,7 @@
  */
 
 #include "hw.h"
-#include <linux/ath9k_platform.h>
+#include <linaos/ath9k_platform.h>
 
 void ath9k_hw_analog_shift_regwrite(struct ath_hw *ah, u32 reg, u32 val)
 {

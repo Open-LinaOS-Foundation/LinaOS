@@ -5,16 +5,16 @@
 #include <perf/evsel.h>
 #include <perf/cpumap.h>
 #include <perf/threadmap.h>
-#include <linux/list.h>
+#include <linaos/list.h>
 #include <internal/evsel.h>
-#include <linux/zalloc.h>
+#include <linaos/zalloc.h>
 #include <stdlib.h>
 #include <internal/xyarray.h>
 #include <internal/cpumap.h>
 #include <internal/mmap.h>
 #include <internal/threadmap.h>
 #include <internal/lib.h>
-#include <linux/string.h>
+#include <linaos/string.h>
 #include <sys/ioctl.h>
 #include <sys/mman.h>
 

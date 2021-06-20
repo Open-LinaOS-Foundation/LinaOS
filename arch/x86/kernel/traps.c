@@ -3,7 +3,7 @@
  *  Copyright (C) 2000, 2001, 2002 Andi Kleen, SuSE Labs
  *
  *  Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@valinaos.com>, May 2000
  */
 
 /*
@@ -12,33 +12,33 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/context_tracking.h>
-#include <linux/interrupt.h>
-#include <linux/kallsyms.h>
-#include <linux/spinlock.h>
-#include <linux/kprobes.h>
-#include <linux/uaccess.h>
-#include <linux/kdebug.h>
-#include <linux/kgdb.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ptrace.h>
-#include <linux/uprobes.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/kexec.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/nmi.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/hardirq.h>
-#include <linux/atomic.h>
+#include <linaos/context_tracking.h>
+#include <linaos/interrupt.h>
+#include <linaos/kallsyms.h>
+#include <linaos/spinlock.h>
+#include <linaos/kprobes.h>
+#include <linaos/uaccess.h>
+#include <linaos/kdebug.h>
+#include <linaos/kgdb.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/ptrace.h>
+#include <linaos/uprobes.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/kexec.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/bug.h>
+#include <linaos/nmi.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/io.h>
+#include <linaos/hardirq.h>
+#include <linaos/atomic.h>
 
 #include <asm/stacktrace.h>
 #include <asm/processor.h>

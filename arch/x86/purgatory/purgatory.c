@@ -8,7 +8,7 @@
  *       Vivek Goyal <vgoyal@redhat.com>
  */
 
-#include <linux/bug.h>
+#include <linaos/bug.h>
 #include <crypto/sha2.h>
 #include <asm/purgatory.h>
 

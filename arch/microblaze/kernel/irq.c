@@ -8,17 +8,17 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/ftrace.h>
-#include <linux/kernel.h>
-#include <linux/hardirq.h>
-#include <linux/interrupt.h>
-#include <linux/irqflags.h>
-#include <linux/seq_file.h>
-#include <linux/kernel_stat.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/of_irq.h>
+#include <linaos/init.h>
+#include <linaos/ftrace.h>
+#include <linaos/kernel.h>
+#include <linaos/hardirq.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqflags.h>
+#include <linaos/seq_file.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/of_irq.h>
 
 static u32 concurrent_irq;
 

@@ -10,7 +10,7 @@ GPIO Sysfs Interface for Userspace
 
 Refer to the examples in tools/gpio/* for an introduction to the new
 character device ABI. Also see the userspace header in
-include/uapi/linux/gpio.h
+include/uapi/linaos/gpio.h
 
 The deprecated sysfs ABI
 ------------------------

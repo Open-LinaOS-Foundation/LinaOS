@@ -34,24 +34,24 @@
  * are not supported.
  */
 
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/msi.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/smp.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/acpi_iort.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/cpumask.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/msi.h>
+#include <linaos/perf_event.h>
+#include <linaos/platform_device.h>
+#include <linaos/smp.h>
+#include <linaos/sysfs.h>
+#include <linaos/types.h>
 
 #define SMMU_PMCG_EVCNTR0               0x0
 #define SMMU_PMCG_EVCNTR(n, stride)     (SMMU_PMCG_EVCNTR0 + (n) * (stride))

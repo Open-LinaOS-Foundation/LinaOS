@@ -2,26 +2,26 @@
 /* cpu_feature_enabled() cannot be used this early */
 #define USE_EARLY_PGTABLE_L5
 
-#include <linux/memblock.h>
-#include <linux/linkage.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/task.h>
-#include <linux/sched/smt.h>
-#include <linux/init.h>
-#include <linux/kprobes.h>
-#include <linux/kgdb.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
-#include <linux/pgtable.h>
+#include <linaos/memblock.h>
+#include <linaos/linkage.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/percpu.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/delay.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/clock.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/smt.h>
+#include <linaos/init.h>
+#include <linaos/kprobes.h>
+#include <linaos/kgdb.h>
+#include <linaos/smp.h>
+#include <linaos/io.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/pgtable.h>
 
 #include <asm/cmdline.h>
 #include <asm/stackprotector.h>
@@ -35,9 +35,9 @@
 #include <asm/debugreg.h>
 #include <asm/sections.h>
 #include <asm/vsyscall.h>
-#include <linux/topology.h>
-#include <linux/cpumask.h>
-#include <linux/atomic.h>
+#include <linaos/topology.h>
+#include <linaos/cpumask.h>
+#include <linaos/atomic.h>
 #include <asm/proto.h>
 #include <asm/setup.h>
 #include <asm/apic.h>
@@ -45,7 +45,7 @@
 #include <asm/fpu/internal.h>
 #include <asm/mtrr.h>
 #include <asm/hwcap2.h>
-#include <linux/numa.h>
+#include <linaos/numa.h>
 #include <asm/numa.h>
 #include <asm/asm.h>
 #include <asm/bugs.h>
@@ -1457,7 +1457,7 @@ static void generic_identify(struct cpuinfo_x86 *c)
 
 	/*
 	 * ESPFIX is a strange bug.  All real CPUs have it.  Paravirt
-	 * systems that run Linux at CPL > 0 may or may not have the
+	 * systems that run LinaOS at CPL > 0 may or may not have the
 	 * issue, but, even if they have the issue, there's absolutely
 	 * nothing we can do about it because we can't use the real IRET
 	 * instruction.

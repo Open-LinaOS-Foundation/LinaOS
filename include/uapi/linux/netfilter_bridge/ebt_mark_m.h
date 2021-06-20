@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __LINUX_BRIDGE_EBT_MARK_M_H
 #define __LINUX_BRIDGE_EBT_MARK_M_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define EBT_MARK_AND 0x01
 #define EBT_MARK_OR 0x02

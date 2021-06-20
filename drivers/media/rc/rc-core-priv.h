@@ -12,8 +12,8 @@
 /* Define the max number of pulse/space transitions to buffer */
 #define	MAX_IR_EVENT_SIZE	512
 
-#include <linux/slab.h>
-#include <uapi/linux/bpf.h>
+#include <linaos/slab.h>
+#include <uapi/linaos/bpf.h>
 #include <media/rc-core.h>
 
 /**

@@ -11,7 +11,7 @@ Client Driver API Documentation
 Serial Hub Communication
 ========================
 
-.. kernel-doc:: include/linux/surface_aggregator/serial_hub.h
+.. kernel-doc:: include/linaos/surface_aggregator/serial_hub.h
 
 .. kernel-doc:: drivers/platform/surface/aggregator/ssh_packet_layer.c
     :export:
@@ -20,7 +20,7 @@ Serial Hub Communication
 Controller and Core Interface
 =============================
 
-.. kernel-doc:: include/linux/surface_aggregator/controller.h
+.. kernel-doc:: include/linaos/surface_aggregator/controller.h
 
 .. kernel-doc:: drivers/platform/surface/aggregator/controller.c
     :export:
@@ -32,7 +32,7 @@ Controller and Core Interface
 Client Bus and Client Device API
 ================================
 
-.. kernel-doc:: include/linux/surface_aggregator/device.h
+.. kernel-doc:: include/linaos/surface_aggregator/device.h
 
 .. kernel-doc:: drivers/platform/surface/aggregator/bus.c
     :export:

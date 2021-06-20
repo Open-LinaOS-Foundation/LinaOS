@@ -8,7 +8,7 @@
  * Based on Ebony code by David Gibson <david@gibson.dropbear.id.au>
  * Copyright IBM Corporation, 2007
  *
- * Based on Bamboo code by Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Based on Bamboo code by Josh Boyer <jwboyer@linaos.vnet.ibm.com>
  * Copyright IBM Corporation, 2007
  */
 

@@ -64,8 +64,8 @@
  *
  */
 
-#include <linux/log2.h>
-#include <linux/nospec.h>
+#include <linaos/log2.h>
+#include <linaos/nospec.h>
 
 #include "gt/gen6_ppgtt.h"
 #include "gt/intel_context.h"

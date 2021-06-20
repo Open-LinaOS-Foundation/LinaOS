@@ -7,13 +7,13 @@
 #ifndef _I915_ACTIVE_TYPES_H_
 #define _I915_ACTIVE_TYPES_H_
 
-#include <linux/atomic.h>
-#include <linux/dma-fence.h>
-#include <linux/llist.h>
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/rcupdate.h>
-#include <linux/workqueue.h>
+#include <linaos/atomic.h>
+#include <linaos/dma-fence.h>
+#include <linaos/llist.h>
+#include <linaos/mutex.h>
+#include <linaos/rbtree.h>
+#include <linaos/rcupdate.h>
+#include <linaos/workqueue.h>
 
 #include "i915_utils.h"
 

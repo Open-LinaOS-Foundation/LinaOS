@@ -8,11 +8,11 @@
  */
 
 #undef DEBUG
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/stm.h>
-#include <uapi/linux/stm.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/stm.h>
+#include <uapi/linaos/stm.h>
 
 static ssize_t notrace
 dummy_stm_packet(struct stm_data *stm_data, unsigned int master,
@@ -122,4 +122,4 @@ module_exit(dummy_stm_exit);
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("dummy_stm device");
-MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@linux.intel.com>");
+MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@linaos.intel.com>");

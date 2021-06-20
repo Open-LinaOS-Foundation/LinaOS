@@ -9,10 +9,10 @@
  *	    Anton Vorontsov <avorontsov@mvista.com>
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/mmc/host.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/mmc/host.h>
+#include <linaos/module.h>
 #include "sdhci-pltfm.h"
 
 static unsigned int sdhci_cns3xxx_get_max_clk(struct sdhci_host *host)

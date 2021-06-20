@@ -16,33 +16,33 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/list.h>
+#include <linaos/rculist.h>
+#include <linaos/uaccess.h>
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/kthread.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/jiffies.h>
 
-#include <linux/netdevice.h>
-#include <linux/net.h>
-#include <linux/inetdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/l2tp.h>
-#include <linux/hash.h>
-#include <linux/sort.h>
-#include <linux/file.h>
-#include <linux/nsproxy.h>
+#include <linaos/netdevice.h>
+#include <linaos/net.h>
+#include <linaos/inetdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/udp.h>
+#include <linaos/l2tp.h>
+#include <linaos/hash.h>
+#include <linaos/sort.h>
+#include <linaos/file.h>
+#include <linaos/nsproxy.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/dst.h>
@@ -58,7 +58,7 @@
 #include <net/ip6_checksum.h>
 
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #include "l2tp_core.h"
 #include "trace.h"

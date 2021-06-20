@@ -8,9 +8,9 @@
 // Copyright (c) 2018 Linaro Ltd.
 // Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
 
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 #include "owl-factor.h"
 

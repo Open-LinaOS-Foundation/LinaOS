@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/xtensa/boot/boot-elf/boot.lds.S
+ *  linaos/arch/xtensa/boot/boot-elf/boot.lds.S
  *
  *  Copyright (C) 2008 - 2013 by Tensilica Inc.
  *

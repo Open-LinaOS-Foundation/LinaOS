@@ -7,9 +7,9 @@
 #ifndef _I915_SCHEDULER_H_
 #define _I915_SCHEDULER_H_
 
-#include <linux/bitops.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
+#include <linaos/bitops.h>
+#include <linaos/list.h>
+#include <linaos/kernel.h>
 
 #include "i915_scheduler_types.h"
 

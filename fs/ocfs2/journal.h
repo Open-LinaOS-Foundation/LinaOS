@@ -10,8 +10,8 @@
 #ifndef OCFS2_JOURNAL_H
 #define OCFS2_JOURNAL_H
 
-#include <linux/fs.h>
-#include <linux/jbd2.h>
+#include <linaos/fs.h>
+#include <linaos/jbd2.h>
 
 enum ocfs2_journal_state {
 	OCFS2_JOURNAL_FREE = 0,

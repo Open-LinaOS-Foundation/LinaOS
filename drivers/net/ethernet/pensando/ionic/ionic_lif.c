@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2017 - 2019 Pensando Systems, Inc */
 
-#include <linux/ethtool.h>
-#include <linux/printk.h>
-#include <linux/dynamic_debug.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/rtnetlink.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/cpumask.h>
+#include <linaos/ethtool.h>
+#include <linaos/printk.h>
+#include <linaos/dynamic_debug.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/cpumask.h>
 
 #include "ionic.h"
 #include "ionic_bus.h"

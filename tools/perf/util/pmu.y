@@ -4,9 +4,9 @@
 
 %{
 
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/bitmap.h>
+#include <linaos/compiler.h>
+#include <linaos/list.h>
+#include <linaos/bitmap.h>
 #include <string.h>
 #include "pmu.h"
 

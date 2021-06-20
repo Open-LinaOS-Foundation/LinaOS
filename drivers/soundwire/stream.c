@@ -5,14 +5,14 @@
  *  stream.c - SoundWire Bus stream operations.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/soundwire/sdw.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/slab.h>
+#include <linaos/soundwire/sdw_registers.h>
+#include <linaos/soundwire/sdw.h>
 #include <sound/soc.h>
 #include "bus.h"
 

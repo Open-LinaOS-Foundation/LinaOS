@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/ptrace.h>
-#include <linux/personality.h>
-#include <linux/freezer.h>
-#include <linux/tracehook.h>
-#include <linux/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/ptrace.h>
+#include <linaos/personality.h>
+#include <linaos/freezer.h>
+#include <linaos/tracehook.h>
+#include <linaos/uaccess.h>
 
 #include <asm/cacheflush.h>
 #include <asm/ucontext.h>

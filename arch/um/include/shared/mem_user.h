@@ -2,7 +2,7 @@
  * arch/um/include/mem_user.h
  *
  * BRIEF MODULE DESCRIPTION
- * user side memory interface for support IO memory inside user mode linux
+ * user side memory interface for support IO memory inside user mode linaos
  *
  * Copyright (C) 2001 RidgeRun, Inc.
  * Author: RidgeRun, Inc.

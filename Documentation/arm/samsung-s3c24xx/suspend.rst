@@ -29,9 +29,9 @@ Resuming
 --------
 
   The S3C2410 user manual defines the process of sending the CPU to
-  sleep and how it resumes. The default behaviour of the Linux code
+  sleep and how it resumes. The default behaviour of the LinaOS code
   is to set the GSTATUS3 register to the physical address of the
-  code to resume Linux operation.
+  code to resume LinaOS operation.
 
   GSTATUS4 is currently left alone by the sleep code, and is free to
   use for any other purposes (for example, the EB2410ITX uses this to

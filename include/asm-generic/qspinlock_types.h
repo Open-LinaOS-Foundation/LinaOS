@@ -9,7 +9,7 @@
 #ifndef __ASM_GENERIC_QSPINLOCK_TYPES_H
 #define __ASM_GENERIC_QSPINLOCK_TYPES_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 typedef struct qspinlock {
 	union {

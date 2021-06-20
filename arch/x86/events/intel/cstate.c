@@ -98,10 +98,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/perf_event.h>
-#include <linux/nospec.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/perf_event.h>
+#include <linaos/nospec.h>
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>
 #include "../perf_event.h"

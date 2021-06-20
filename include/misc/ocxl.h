@@ -3,7 +3,7 @@
 #ifndef _MISC_OCXL_H_
 #define _MISC_OCXL_H_
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 /*
  * Opencapi drivers all need some common facilities, like parsing the

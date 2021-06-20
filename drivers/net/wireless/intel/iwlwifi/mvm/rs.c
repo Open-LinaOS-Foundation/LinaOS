@@ -6,20 +6,20 @@
  * Copyright(c) 2016 - 2017 Intel Deutschland GmbH
  *
  * Contact Information:
- *  Intel Linux Wireless <linuxwifi@intel.com>
+ *  Intel LinaOS Wireless <linaoswifi@intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
 #include <net/mac80211.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/delay.h>
 
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 #include "rs.h"
 #include "fw-api.h"
 #include "sta.h"

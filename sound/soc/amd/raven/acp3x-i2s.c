@@ -4,14 +4,14 @@
 //
 //Copyright 2016 Advanced Micro Devices, Inc.
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 
 #include "acp3x.h"
 

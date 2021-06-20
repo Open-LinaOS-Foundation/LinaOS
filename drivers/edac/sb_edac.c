@@ -8,18 +8,18 @@
  *	 Mauro Carvalho Chehab
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/edac.h>
-#include <linux/mmzone.h>
-#include <linux/smp.h>
-#include <linux/bitmap.h>
-#include <linux/math64.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/edac.h>
+#include <linaos/mmzone.h>
+#include <linaos/smp.h>
+#include <linaos/bitmap.h>
+#include <linaos/math64.h>
+#include <linaos/mod_devicetable.h>
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>
 #include <asm/processor.h>

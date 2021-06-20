@@ -4,19 +4,19 @@
  * Copyright (C) 2006, 2007, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
-#include <linux/export.h>
-#include <linux/log2.h>
-#include <linux/of_device.h>
-#include <linux/dma-map-ops.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/percpu.h>
+#include <linaos/irq.h>
+#include <linaos/msi.h>
+#include <linaos/export.h>
+#include <linaos/log2.h>
+#include <linaos/of_device.h>
+#include <linaos/dma-map-ops.h>
 #include <asm/iommu-common.h>
 
 #include <asm/iommu.h>
@@ -1221,7 +1221,7 @@ static int pci_sun4v_pbm_init(struct pci_pbm_info *pbm,
 
 static int pci_sun4v_probe(struct platform_device *op)
 {
-	const struct linux_prom64_registers *regs;
+	const struct linaos_prom64_registers *regs;
 	static int hvapi_negotiated = 0;
 	struct pci_pbm_info *pbm;
 	struct device_node *dp;

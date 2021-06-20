@@ -6,17 +6,17 @@
 #ifndef __LINUX_SPI_H
 #define __LINUX_SPI_H
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/completion.h>
-#include <linux/scatterlist.h>
-#include <linux/gpio/consumer.h>
-#include <linux/ptp_clock_kernel.h>
+#include <linaos/bits.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/slab.h>
+#include <linaos/kthread.h>
+#include <linaos/completion.h>
+#include <linaos/scatterlist.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/ptp_clock_kernel.h>
 
-#include <uapi/linux/spi/spi.h>
+#include <uapi/linaos/spi/spi.h>
 
 struct dma_chan;
 struct software_node;
@@ -172,7 +172,7 @@ struct spi_device {
 	/*
 	 * All bits defined above should be covered by SPI_MODE_KERNEL_MASK.
 	 * The SPI_MODE_KERNEL_MASK has the SPI_MODE_USER_MASK counterpart,
-	 * which is defined in 'include/uapi/linux/spi/spi.h'.
+	 * which is defined in 'include/uapi/linaos/spi/spi.h'.
 	 * The bits defined here are from bit 31 downwards, while in
 	 * SPI_MODE_USER_MASK are from 0 upwards.
 	 * These bits must not overlap. A static assert check should make sure of that.
@@ -438,7 +438,7 @@ static inline void spi_unregister_driver(struct spi_driver *sdrv)
  * @dummy_rx: dummy receive buffer for full-duplex devices
  * @dummy_tx: dummy transmit buffer for full-duplex devices
  * @fw_translate_cs: If the boot firmware uses different numbering scheme
- *	what Linux expects, this optional hook can be used to translate
+ *	what LinaOS expects, this optional hook can be used to translate
  *	between the two.
  * @ptp_sts_supported: If the driver sets this to true, it must provide a
  *	time snapshot in @spi_transfer->ptp_sts as close as possible to the

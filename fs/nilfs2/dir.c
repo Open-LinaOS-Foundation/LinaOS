@@ -7,7 +7,7 @@
  * Modified for NILFS by Amagai Yoshiji.
  */
 /*
- *  linux/fs/ext2/dir.c
+ *  linaos/fs/ext2/dir.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -16,7 +16,7 @@
  *
  *  from
  *
- *  linux/fs/minix/dir.c
+ *  linaos/fs/minix/dir.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -29,7 +29,7 @@
  * and moved here. AV
  */
 
-#include <linux/pagemap.h>
+#include <linaos/pagemap.h>
 #include "nilfs.h"
 #include "page.h"
 

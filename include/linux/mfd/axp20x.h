@@ -8,7 +8,7 @@
 #ifndef __LINUX_MFD_AXP20X_H
 #define __LINUX_MFD_AXP20X_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 enum axp20x_variants {
 	AXP152_ID = 0,

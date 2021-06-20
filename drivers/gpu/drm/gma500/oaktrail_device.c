@@ -5,10 +5,10 @@
  *
  **************************************************************************/
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
+#include <linaos/backlight.h>
+#include <linaos/delay.h>
+#include <linaos/dmi.h>
+#include <linaos/module.h>
 
 #include <drm/drm.h>
 

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/amiga/cia.c - CIA support
+ *  linaos/arch/m68k/amiga/cia.c - CIA support
  *
  *  Copyright (C) 1996 Roman Zippel
  *
@@ -10,15 +10,15 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/init.h>
+#include <linaos/seq_file.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
 
 #include <asm/irq.h>
 #include <asm/amigahw.h>

@@ -2,7 +2,7 @@
 /*
  * Network port table
  *
- * SELinux must keep a mapping of network ports to labels/SIDs.  This
+ * SELinaOS must keep a mapping of network ports to labels/SIDs.  This
  * mapping is maintained as part of the normal policy but a fast cache is
  * needed to reduce the lookup overhead.
  *

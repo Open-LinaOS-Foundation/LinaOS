@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/vga16.c -- VGA 16-color framebuffer driver
+ * linaos/drivers/video/vga16.c -- VGA 16-color framebuffer driver
  * 
  * Copyright 1999 Ben Pfaff <pfaffben@debian.org> and Petr Vandrovec <VANDROVE@vc.cvut.cz>
  * Based on VGA info at http://www.goodnet.com/~tinara/FreeVGA/home.htm
@@ -10,17 +10,17 @@
  * archive for more details.  
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/screen_info.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/screen_info.h>
 
 #include <asm/io.h>
 #include <video/vga.h>
@@ -695,7 +695,7 @@ static int vga16fb_pan_display(struct fb_var_screeninfo *var,
 /* The following VESA blanking code is taken from vgacon.c.  The VGA
    blanking code was originally by Huang shi chao, and modified by
    Christoph Rimek (chrimek@toppoint.de) and todd j. derr
-   (tjd@barefoot.org) for Linux. */
+   (tjd@barefoot.org) for LinaOS. */
 
 static void vga_vesa_blank(struct vga16fb_par *par, int mode)
 {

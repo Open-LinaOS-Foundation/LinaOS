@@ -4,7 +4,7 @@
 #if !defined(_HV_TRACE_BALLOON_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _HV_TRACE_BALLOON_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(balloon_status,
 	    TP_PROTO(u64 available, u64 committed,

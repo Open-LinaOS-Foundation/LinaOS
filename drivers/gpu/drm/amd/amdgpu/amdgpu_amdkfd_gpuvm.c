@@ -19,18 +19,18 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  */
-#include <linux/dma-buf.h>
-#include <linux/list.h>
-#include <linux/pagemap.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
+#include <linaos/dma-buf.h>
+#include <linaos/list.h>
+#include <linaos/pagemap.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/task.h>
 
 #include "amdgpu_object.h"
 #include "amdgpu_gem.h"
 #include "amdgpu_vm.h"
 #include "amdgpu_amdkfd.h"
 #include "amdgpu_dma_buf.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/linaos/kfd_ioctl.h>
 #include "amdgpu_xgmi.h"
 
 /* BO flag to indicate a KFD userptr BO */

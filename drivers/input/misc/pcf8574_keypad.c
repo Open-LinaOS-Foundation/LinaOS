@@ -5,12 +5,12 @@
  * Copyright 2005-2008 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 
 #define DRV_NAME "pcf8574_keypad"
 

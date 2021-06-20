@@ -9,9 +9,9 @@
  *
  */
 
-#include <linux/netfilter_bridge/ebtables.h>
-#include <uapi/linux/netfilter_bridge.h>
-#include <linux/module.h>
+#include <linaos/netfilter_bridge/ebtables.h>
+#include <uapi/linaos/netfilter_bridge.h>
+#include <linaos/module.h>
 
 #define FILTER_VALID_HOOKS ((1 << NF_BR_LOCAL_IN) | (1 << NF_BR_FORWARD) | \
 			    (1 << NF_BR_LOCAL_OUT))

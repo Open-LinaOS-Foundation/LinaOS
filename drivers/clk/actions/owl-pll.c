@@ -8,10 +8,10 @@
 // Copyright (c) 2018 Linaro Ltd.
 // Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
 
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <linaos/clk-provider.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
 
 #include "owl-pll.h"
 

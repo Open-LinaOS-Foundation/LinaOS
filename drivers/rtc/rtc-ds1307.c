@@ -8,26 +8,26 @@
  *  Copyright (C) 2012 Bertrand Achard (nvram access fixes)
  */
 
-#include <linux/bcd.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/rtc/ds1307.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/watchdog.h>
+#include <linaos/bcd.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/property.h>
+#include <linaos/rtc/ds1307.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/clk-provider.h>
+#include <linaos/regmap.h>
+#include <linaos/watchdog.h>
 
 /*
- * We can't determine type by probing, but if we expect pre-Linux code
+ * We can't determine type by probing, but if we expect pre-LinaOS code
  * to have set the chip up as a clock (turning on the oscillator and
- * setting the date and time), Linux can ignore the non-clock features.
+ * setting the date and time), LinaOS can ignore the non-clock features.
  * That's a natural job for a factory or repair bench.
  */
 enum ds_type {

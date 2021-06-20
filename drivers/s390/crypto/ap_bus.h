@@ -5,7 +5,7 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  *	      Ralph Wuerthner <rwuerthn@de.ibm.com>
  *	      Felix Beck <felix.beck@de.ibm.com>
- *	      Holger Dengler <hd@linux.vnet.ibm.com>
+ *	      Holger Dengler <hd@linaos.vnet.ibm.com>
  *
  * Adjunct processor bus header file.
  */
@@ -13,9 +13,9 @@
 #ifndef _AP_BUS_H_
 #define _AP_BUS_H_
 
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/hashtable.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/hashtable.h>
 #include <asm/isc.h>
 #include <asm/ap.h>
 

@@ -1,5 +1,5 @@
 ================================
-Register Usage for Linux/PA-RISC
+Register Usage for LinaOS/PA-RISC
 ================================
 
 [ an asterisk is used for planned usage which is currently unimplemented ]
@@ -53,7 +53,7 @@ Space Registers (user mode)
 ===============================	===============================================
 SR0				temporary space register
 SR1                             temporary space register
-SR2                             holds space of linux gateway page
+SR2                             holds space of linaos gateway page
 SR3                             holds user address space value while in kernel
 SR4-SR7                         Defines short address space for user/kernel
 ===============================	===============================================

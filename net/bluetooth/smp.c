@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for LinaOS
    Copyright (C) 2011 Nokia Corporation and/or its subsidiary(-ies).
 
    This program is free software; you can redistribute it and/or modify
@@ -20,9 +20,9 @@
    SOFTWARE IS DISCLAIMED.
 */
 
-#include <linux/debugfs.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
+#include <linaos/debugfs.h>
+#include <linaos/scatterlist.h>
+#include <linaos/crypto.h>
 #include <crypto/aes.h>
 #include <crypto/algapi.h>
 #include <crypto/hash.h>

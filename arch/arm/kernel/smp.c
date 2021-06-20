@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/smp.c
+ *  linaos/arch/arm/kernel/smp.c
  *
  *  Copyright (C) 2002 ARM Limited, All Rights Reserved.
  */
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/interrupt.h>
-#include <linux/cache.h>
-#include <linux/profile.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/cpu.h>
-#include <linux/seq_file.h>
-#include <linux/irq.h>
-#include <linux/nmi.h>
-#include <linux/percpu.h>
-#include <linux/clockchips.h>
-#include <linux/completion.h>
-#include <linux/cpufreq.h>
-#include <linux/irq_work.h>
-#include <linux/kernel_stat.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/hotplug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/interrupt.h>
+#include <linaos/cache.h>
+#include <linaos/profile.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/err.h>
+#include <linaos/cpu.h>
+#include <linaos/seq_file.h>
+#include <linaos/irq.h>
+#include <linaos/nmi.h>
+#include <linaos/percpu.h>
+#include <linaos/clockchips.h>
+#include <linaos/completion.h>
+#include <linaos/cpufreq.h>
+#include <linaos/irq_work.h>
+#include <linaos/kernel_stat.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/bugs.h>
 #include <asm/smp.h>
 #include <asm/cacheflush.h>

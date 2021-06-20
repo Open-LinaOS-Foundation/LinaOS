@@ -6,11 +6,11 @@
  * Copyright (C) 2004, 2005 MIPS Technologies, Inc.  All rights reserved.
  * Copyright (C) 2013 Imagination Technologies Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 
 #include <asm/vpe.h>
 

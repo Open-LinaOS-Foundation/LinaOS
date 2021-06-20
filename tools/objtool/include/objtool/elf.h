@@ -8,10 +8,10 @@
 
 #include <stdio.h>
 #include <gelf.h>
-#include <linux/list.h>
-#include <linux/hashtable.h>
-#include <linux/rbtree.h>
-#include <linux/jhash.h>
+#include <linaos/list.h>
+#include <linaos/hashtable.h>
+#include <linaos/rbtree.h>
+#include <linaos/jhash.h>
 
 #ifdef LIBELF_USE_DEPRECATED
 # define elf_getshdrnum    elf_getshnum

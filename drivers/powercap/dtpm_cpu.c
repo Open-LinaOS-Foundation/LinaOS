@@ -14,14 +14,14 @@
  * The CPU hotplug is supported and the power numbers will be updated
  * if a CPU is hot plugged / unplugged.
  */
-#include <linux/cpumask.h>
-#include <linux/cpufreq.h>
-#include <linux/cpuhotplug.h>
-#include <linux/dtpm.h>
-#include <linux/energy_model.h>
-#include <linux/pm_qos.h>
-#include <linux/slab.h>
-#include <linux/units.h>
+#include <linaos/cpumask.h>
+#include <linaos/cpufreq.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/dtpm.h>
+#include <linaos/energy_model.h>
+#include <linaos/pm_qos.h>
+#include <linaos/slab.h>
+#include <linaos/units.h>
 
 static struct dtpm *__parent;
 

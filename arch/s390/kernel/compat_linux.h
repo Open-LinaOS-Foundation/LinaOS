@@ -2,9 +2,9 @@
 #ifndef _ASM_S390X_S390_H
 #define _ASM_S390X_S390_H
 
-#include <linux/compat.h>
-#include <linux/socket.h>
-#include <linux/syscalls.h>
+#include <linaos/compat.h>
+#include <linaos/socket.h>
+#include <linaos/syscalls.h>
 
 /* Macro that masks the high order bit of an 32 bit pointer and converts it*/
 /*       to a 64 bit pointer */

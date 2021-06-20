@@ -8,8 +8,8 @@
 #ifndef ZD1301_DEMOD_H
 #define ZD1301_DEMOD_H
 
-#include <linux/platform_device.h>
-#include <linux/dvb/frontend.h>
+#include <linaos/platform_device.h>
+#include <linaos/dvb/frontend.h>
 #include <media/dvb_frontend.h>
 
 /**

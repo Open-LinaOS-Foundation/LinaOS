@@ -10,7 +10,7 @@
 #ifndef __SHMOB_DRM_KMS_H__
 #define __SHMOB_DRM_KMS_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_gem_cma_object;
 struct shmob_drm_device;

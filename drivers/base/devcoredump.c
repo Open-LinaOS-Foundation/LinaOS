@@ -4,18 +4,18 @@
  * Copyright(c) 2015 Intel Deutschland GmbH
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel LinaOS Wireless <ilw@linaos.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  * Author: Johannes Berg <johannes@sipsolutions.net>
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/devcoredump.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/devcoredump.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/workqueue.h>
 
 static struct class devcd_class;
 

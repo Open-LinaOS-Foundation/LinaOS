@@ -6,7 +6,7 @@
 #ifndef __MIPS_ASM_DEBUG_H__
 #define __MIPS_ASM_DEBUG_H__
 
-#include <linux/dcache.h>
+#include <linaos/dcache.h>
 
 /*
  * mips_debugfs_dir corresponds to the "mips" directory at the top level

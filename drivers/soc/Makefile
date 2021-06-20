@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux Kernel SOC specific device drivers.
+# Makefile for the LinaOS Kernel SOC specific device drivers.
 #
 
 obj-$(CONFIG_ARCH_ACTIONS)	+= actions/

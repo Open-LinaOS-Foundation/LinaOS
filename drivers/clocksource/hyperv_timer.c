@@ -11,16 +11,16 @@
  * Author:  Michael Kelley <mikelley@microsoft.com>
  */
 
-#include <linux/percpu.h>
-#include <linux/cpumask.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/sched_clock.h>
-#include <linux/mm.h>
-#include <linux/cpuhotplug.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/acpi.h>
+#include <linaos/percpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/clockchips.h>
+#include <linaos/clocksource.h>
+#include <linaos/sched_clock.h>
+#include <linaos/mm.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/acpi.h>
 #include <clocksource/hyperv_timer.h>
 #include <asm/hyperv-tlfs.h>
 #include <asm/mshyperv.h>
@@ -33,7 +33,7 @@ static u64 hv_sched_clock_offset __ro_after_init;
  * where it sends a VMbus message when it expires. The old
  * mechanism is used when running on older versions of Hyper-V
  * that don't support Direct Mode. While Hyper-V provides
- * four stimer's per CPU, Linux uses only stimer0.
+ * four stimer's per CPU, LinaOS uses only stimer0.
  *
  * Because Direct Mode does not require processing a VMbus
  * message, stimer interrupts can be enabled earlier in the
@@ -237,7 +237,7 @@ int hv_stimer_alloc(bool have_percpu_irqs)
 
 	/*
 	 * Synthetic timers are always available except on old versions of
-	 * Hyper-V on x86.  In that case, return as error as Linux will use a
+	 * Hyper-V on x86.  In that case, return as error as LinaOS will use a
 	 * clockevent based on emulated LAPIC timer hardware.
 	 */
 	if (!(ms_hyperv.features & HV_MSR_SYNTIMER_AVAILABLE))
@@ -553,7 +553,7 @@ void __init hv_init_clocksource(void)
 	 * done. Otherwise, set up the MSR clocksource.  At least one of
 	 * these will always be available except on very old versions of
 	 * Hyper-V on x86.  In that case we won't have a Hyper-V
-	 * clocksource, but Linux will still run with a clocksource based
+	 * clocksource, but LinaOS will still run with a clocksource based
 	 * on the emulated PIT or LAPIC timer.
 	 */
 	if (hv_init_tsc_clocksource())

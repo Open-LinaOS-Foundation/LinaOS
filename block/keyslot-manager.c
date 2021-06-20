@@ -28,13 +28,13 @@
 
 #define pr_fmt(fmt) "blk-crypto: " fmt
 
-#include <linux/keyslot-manager.h>
-#include <linux/device.h>
-#include <linux/atomic.h>
-#include <linux/mutex.h>
-#include <linux/pm_runtime.h>
-#include <linux/wait.h>
-#include <linux/blkdev.h>
+#include <linaos/keyslot-manager.h>
+#include <linaos/device.h>
+#include <linaos/atomic.h>
+#include <linaos/mutex.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/wait.h>
+#include <linaos/blkdev.h>
 
 struct blk_ksm_keyslot {
 	atomic_t slot_refs;

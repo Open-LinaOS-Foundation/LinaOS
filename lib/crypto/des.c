@@ -7,15 +7,15 @@
  * Copyright (c) 2005 Dag Arne Osvik <da@osvik.no>
  */
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/crypto.h>
-#include <linux/errno.h>
-#include <linux/fips.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/compiler.h>
+#include <linaos/crypto.h>
+#include <linaos/errno.h>
+#include <linaos/fips.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 #include <asm/unaligned.h>
 

@@ -10,8 +10,8 @@
 #ifndef __LINUX_DMA_FENCE_CHAIN_H
 #define __LINUX_DMA_FENCE_CHAIN_H
 
-#include <linux/dma-fence.h>
-#include <linux/irq_work.h>
+#include <linaos/dma-fence.h>
+#include <linaos/irq_work.h>
 
 /**
  * struct dma_fence_chain - fence to represent an node of a fence chain

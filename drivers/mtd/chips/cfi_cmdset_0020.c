@@ -8,7 +8,7 @@
  * 	- completely revamped method functions so they are aware and
  * 	  independent of the flash geometry (buswidth, interleave, etc.)
  * 	- scalability vs code size is completely set at compile-time
- * 	  (see include/linux/mtd/cfi.h for selection)
+ * 	  (see include/linaos/mtd/cfi.h for selection)
  *	- optimized write buffer method
  * 06/21/2002	Joern Engel <joern@wh.fh-wedel.de> and others
  *	- modified Intel Command Set 0x0001 to support ST Advanced Architecture
@@ -18,20 +18,20 @@
  * 	- Plugged memory leak in cfi_staa_writev().
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/cfi.h>
-#include <linux/mtd/mtd.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/cfi.h>
+#include <linaos/mtd/mtd.h>
 
 
 static int cfi_staa_read(struct mtd_info *, loff_t, size_t, size_t *, u_char *);

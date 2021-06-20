@@ -10,7 +10,7 @@
 
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
-#include <linux/percpu_counter.h>
+#include <linaos/percpu_counter.h>
 
 /* Hash tables for nfs4_clientid state */
 #define CLIENT_HASH_BITS                 4

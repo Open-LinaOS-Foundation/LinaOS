@@ -40,19 +40,19 @@
 #define _DRBG_H
 
 
-#include <linux/random.h>
-#include <linux/scatterlist.h>
+#include <linaos/random.h>
+#include <linaos/scatterlist.h>
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/crypto.h>
+#include <linaos/slab.h>
 #include <crypto/internal/rng.h>
 #include <crypto/rng.h>
-#include <linux/fips.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
+#include <linaos/fips.h>
+#include <linaos/mutex.h>
+#include <linaos/list.h>
+#include <linaos/workqueue.h>
 
 /*
  * Concatenation Helper and string operation helper

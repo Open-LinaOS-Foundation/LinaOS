@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kmod.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/net_tstamp.h>
-#include <linux/wireless.h>
+#include <linaos/kmod.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/wireless.h>
 #include <net/dsa.h>
 #include <net/wext.h>
 

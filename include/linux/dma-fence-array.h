@@ -12,8 +12,8 @@
 #ifndef __LINUX_DMA_FENCE_ARRAY_H
 #define __LINUX_DMA_FENCE_ARRAY_H
 
-#include <linux/dma-fence.h>
-#include <linux/irq_work.h>
+#include <linaos/dma-fence.h>
+#include <linaos/irq_work.h>
 
 /**
  * struct dma_fence_array_cb - callback helper for fence array

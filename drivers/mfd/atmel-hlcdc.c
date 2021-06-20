@@ -6,14 +6,14 @@
  * Author: Boris BREZILLON <boris.brezillon@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/mfd/atmel-hlcdc.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/iopoll.h>
+#include <linaos/mfd/atmel-hlcdc.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 #define ATMEL_HLCDC_REG_MAX		(0x4000 - 0x4)
 

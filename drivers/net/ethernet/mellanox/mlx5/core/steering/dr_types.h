@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /* Copyright (c) 2019, Mellanox Technologies */
 
 #ifndef	_DR_TYPES_
 #define	_DR_TYPES_
 
-#include <linux/mlx5/driver.h>
-#include <linux/refcount.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/refcount.h>
 #include "fs_core.h"
 #include "wq.h"
 #include "lib/mlx5.h"

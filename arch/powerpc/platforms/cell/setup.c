@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/arch/powerpc/platforms/cell/cell_setup.c
+ *  linaos/arch/powerpc/platforms/cell/cell_setup.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Adapted from 'alpha' version by Gary Thomas
@@ -10,23 +10,23 @@
  */
 #undef DEBUG
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/export.h>
-#include <linux/unistd.h>
-#include <linux/user.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/console.h>
-#include <linux/mutex.h>
-#include <linux/memory_hotplug.h>
-#include <linux/of_platform.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/stddef.h>
+#include <linaos/export.h>
+#include <linaos/unistd.h>
+#include <linaos/user.h>
+#include <linaos/reboot.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/seq_file.h>
+#include <linaos/root_dev.h>
+#include <linaos/console.h>
+#include <linaos/mutex.h>
+#include <linaos/memory_hotplug.h>
+#include <linaos/of_platform.h>
 
 #include <asm/mmu.h>
 #include <asm/processor.h>

@@ -37,7 +37,7 @@
 		ledb {
 			label = "omap3evm::ledb";
 			gpios = <&twl_gpio 19 GPIO_ACTIVE_HIGH>; /* LEDB */
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 	};
 
@@ -146,7 +146,7 @@
 };
 
 &twl_keypad {
-	linux,keymap = <
+	linaos,keymap = <
 			MATRIX_KEY(2, 2, KEY_1)
 			MATRIX_KEY(1, 1, KEY_2)
 			MATRIX_KEY(0, 0, KEY_3)

@@ -8,38 +8,38 @@
  * Authors:
  * Linus Walleij <linus.walleij@linaro.org>
  * Tobias Waldvogel <tobias.waldvogel@gmail.com> (OpenWRT)
- * Michał Mirosław <mirq-linux@rere.qmqm.pl>
+ * Michał Mirosław <mirq-linaos@rere.qmqm.pl>
  * Paulius Zaleckas <paulius.zaleckas@gmail.com>
  * Giuseppe De Robertis <Giuseppe.DeRobertis@ba.infn.it>
  * Gary Chen & Ch Hsu Storlink Semiconductor
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/cache.h>
-#include <linux/interrupt.h>
-#include <linux/reset.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/skbuff.h>
-#include <linux/phy.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/tcp.h>
-#include <linux/u64_stats_sync.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/cache.h>
+#include <linaos/interrupt.h>
+#include <linaos/reset.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/of_platform.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/skbuff.h>
+#include <linaos/phy.h>
+#include <linaos/crc32.h>
+#include <linaos/ethtool.h>
+#include <linaos/tcp.h>
+#include <linaos/u64_stats_sync.h>
 
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
 
 #include "gemini.h"
 

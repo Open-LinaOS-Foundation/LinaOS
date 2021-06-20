@@ -31,7 +31,7 @@ Description:	This file contains the current status of the "SSD Smart Path"
 What:		/sys/class/scsi_host/hostX/link_power_management_policy
 Date:		Oct, 2007
 KernelVersion:	v2.6.24
-Contact:	linux-ide@vger.kernel.org
+Contact:	linaos-ide@vger.kernel.org
 Description:
 		(RW) This parameter allows the user to read and set the link
 		(interface) power management.
@@ -65,7 +65,7 @@ What:		/sys/class/scsi_host/hostX/em_message
 What:		/sys/class/scsi_host/hostX/em_message_type
 Date:		Jun, 2008
 KernelVersion:	v2.6.27
-Contact:	linux-ide@vger.kernel.org
+Contact:	linaos-ide@vger.kernel.org
 Description:
 		em_message: (RW) Enclosure management support. For the LED
 		protocol, writes and reads correspond to the LED message format
@@ -84,14 +84,14 @@ What:		/sys/class/scsi_host/hostX/ahci_host_caps
 What:		/sys/class/scsi_host/hostX/ahci_host_cap2
 Date:		Mar, 2010
 KernelVersion:	v2.6.35
-Contact:	linux-ide@vger.kernel.org
+Contact:	linaos-ide@vger.kernel.org
 Description:
 		[to be documented]
 
 What:		/sys/class/scsi_host/hostX/ahci_host_version
 Date:		Mar, 2010
 KernelVersion:	v2.6.35
-Contact:	linux-ide@vger.kernel.org
+Contact:	linaos-ide@vger.kernel.org
 Description:
 		(RO) Display the version of the AHCI spec implemented by the
 		host.
@@ -99,7 +99,7 @@ Description:
 What:		/sys/class/scsi_host/hostX/em_buffer
 Date:		Apr, 2010
 KernelVersion:	v2.6.35
-Contact:	linux-ide@vger.kernel.org
+Contact:	linaos-ide@vger.kernel.org
 Description:
 		(RW) Allows access to AHCI EM (enclosure management) buffer
 		directly if the host supports EM.
@@ -114,6 +114,6 @@ Description:
 What:		/sys/class/scsi_host/hostX/em_message_supported
 Date:		Oct, 2009
 KernelVersion:	v2.6.39
-Contact:	linux-ide@vger.kernel.org
+Contact:	linaos-ide@vger.kernel.org
 Description:
 		(RO) Displays supported enclosure management message types.

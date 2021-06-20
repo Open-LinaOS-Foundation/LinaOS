@@ -12,13 +12,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/jffs2.h>
-#include <linux/mtd/mtd.h>
-#include <linux/completion.h>
-#include <linux/sched/signal.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
+#include <linaos/kernel.h>
+#include <linaos/jffs2.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/completion.h>
+#include <linaos/sched/signal.h>
+#include <linaos/freezer.h>
+#include <linaos/kthread.h>
 #include "nodelist.h"
 
 

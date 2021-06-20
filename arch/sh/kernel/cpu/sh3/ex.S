@@ -7,7 +7,7 @@
  *  Copyright (C) 1999, 2000, 2002  Niibe Yutaka
  *  Copyright (C) 2003 - 2008  Paul Mundt
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #if !defined(CONFIG_MMU)
 #define	tlb_miss_load			exception_error

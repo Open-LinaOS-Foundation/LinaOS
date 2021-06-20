@@ -10,14 +10,14 @@
  *      registered, the devfreq cooling won't react to it.
  */
 
-#include <linux/devfreq.h>
-#include <linux/devfreq_cooling.h>
-#include <linux/energy_model.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_qos.h>
-#include <linux/thermal.h>
+#include <linaos/devfreq.h>
+#include <linaos/devfreq_cooling.h>
+#include <linaos/energy_model.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/pm_opp.h>
+#include <linaos/pm_qos.h>
+#include <linaos/thermal.h>
 
 #include <trace/events/thermal.h>
 

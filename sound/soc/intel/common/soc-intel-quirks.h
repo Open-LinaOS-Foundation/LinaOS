@@ -11,7 +11,7 @@
 
 #if IS_ENABLED(CONFIG_X86)
 
-#include <linux/dmi.h>
+#include <linaos/dmi.h>
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>
 #include <asm/iosf_mbi.h>

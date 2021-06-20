@@ -8,21 +8,21 @@
  * Based on the bttv driver for Bt848 with respective copyright holders
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_graph.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-dev.h>
@@ -1361,5 +1361,5 @@ static struct platform_driver atmel_isi_driver = {
 module_platform_driver(atmel_isi_driver);
 
 MODULE_AUTHOR("Josh Wu <josh.wu@atmel.com>");
-MODULE_DESCRIPTION("The V4L2 driver for Atmel Linux");
+MODULE_DESCRIPTION("The V4L2 driver for Atmel LinaOS");
 MODULE_LICENSE("GPL");

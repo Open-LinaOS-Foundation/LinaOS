@@ -10,9 +10,9 @@ Introduction
 UBIFS file-system stands for UBI File System. UBI stands for "Unsorted
 Block Images". UBIFS is a flash file system, which means it is designed
 to work with flash devices. It is important to understand, that UBIFS
-is completely different to any traditional file-system in Linux, like
+is completely different to any traditional file-system in LinaOS, like
 Ext2, XFS, JFS, etc. UBIFS represents a separate class of file-systems
-which work with MTD devices, not block devices. The other Linux
+which work with MTD devices, not block devices. The other LinaOS
 file-system of this class is JFFS2.
 
 To make it more clear, here is a small comparison of MTD devices and
@@ -133,5 +133,5 @@ References
 
 UBIFS documentation and FAQ/HOWTO at the MTD web site:
 
-- http://www.linux-mtd.infradead.org/doc/ubifs.html
-- http://www.linux-mtd.infradead.org/faq/ubifs.html
+- http://www.linaos-mtd.infradead.org/doc/ubifs.html
+- http://www.linaos-mtd.infradead.org/faq/ubifs.html

@@ -12,10 +12,10 @@
  * we allow the resending of IRQs via a tasklet.
  */
 
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/random.h>
+#include <linaos/interrupt.h>
 
 #include "internals.h"
 

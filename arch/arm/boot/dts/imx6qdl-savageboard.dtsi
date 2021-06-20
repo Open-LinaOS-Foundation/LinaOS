@@ -61,7 +61,7 @@
 		power {
 			gpios = <&gpio3 7 GPIO_ACTIVE_LOW>;
 			label = "Power Button";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};

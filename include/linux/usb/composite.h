@@ -35,12 +35,12 @@
  * the composite model the host can use both functions at the same time.
  */
 
-#include <linux/bcd.h>
-#include <linux/version.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/log2.h>
-#include <linux/configfs.h>
+#include <linaos/bcd.h>
+#include <linaos/version.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/log2.h>
+#include <linaos/configfs.h>
 
 /*
  * USB function drivers should return USB_GADGET_DELAYED_STATUS if they

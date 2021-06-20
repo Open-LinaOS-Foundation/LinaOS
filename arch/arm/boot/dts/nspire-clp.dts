@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/boot/nspire-clp.dts
+ *  linaos/arch/arm/boot/nspire-clp.dts
  *
  *  Copyright (C) 2013 Daniel Tang <tangrs@tangrs.id.au>
  */
@@ -9,7 +9,7 @@
 /include/ "nspire-classic.dtsi"
 
 &keypad {
-	linux,keymap = <
+	linaos,keymap = <
 	0x0000001c 	0x0001001c 	0x00020039
 	0x0004002c 	0x00050034 	0x00060015
 	0x0007000b 	0x0008002d 	0x01000033

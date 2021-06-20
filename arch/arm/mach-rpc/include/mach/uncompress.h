@@ -6,7 +6,7 @@
  */
 #define VIDMEM ((char *)SCREEN_START)
  
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <mach/hardware.h>
 #include <asm/setup.h>
 #include <asm/page.h>

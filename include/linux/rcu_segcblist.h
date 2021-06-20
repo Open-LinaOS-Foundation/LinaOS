@@ -8,14 +8,14 @@
  *
  * Copyright IBM Corporation, 2017
  *
- * Authors: Paul E. McKenney <paulmck@linux.net.ibm.com>
+ * Authors: Paul E. McKenney <paulmck@linaos.net.ibm.com>
  */
 
 #ifndef __INCLUDE_LINUX_RCU_SEGCBLIST_H
 #define __INCLUDE_LINUX_RCU_SEGCBLIST_H
 
-#include <linux/types.h>
-#include <linux/atomic.h>
+#include <linaos/types.h>
+#include <linaos/atomic.h>
 
 /* Simple unsegmented callback lists. */
 struct rcu_cblist {

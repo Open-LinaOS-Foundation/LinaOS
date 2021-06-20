@@ -11,10 +11,10 @@
  * (C) Copyright IBM Deutschland Entwicklung GmbH 2005
  */
 
-#include <linux/cpufreq.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
+#include <linaos/cpufreq.h>
+#include <linaos/timer.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
 
 #include <asm/hw_irq.h>
 #include <asm/io.h>

@@ -2,7 +2,7 @@
 #ifndef __GADGET_CONFIGFS__
 #define __GADGET_CONFIGFS__
 
-#include <linux/configfs.h>
+#include <linaos/configfs.h>
 
 int check_user_usb_string(const char *name,
 		struct usb_gadget_strings *stringtab_dev);

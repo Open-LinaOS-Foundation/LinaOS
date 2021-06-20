@@ -4,13 +4,13 @@
 // Based on msm-rng.c and downstream driver
 
 #include <crypto/internal/rng.h>
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/crypto.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/crypto.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 
 /* Device specific register offsets */
 #define PRNG_DATA_OUT		0x0000

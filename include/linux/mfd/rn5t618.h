@@ -8,7 +8,7 @@
 #ifndef __LINUX_MFD_RN5T618_H
 #define __LINUX_MFD_RN5T618_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 #define RN5T618_LSIVER			0x00
 #define RN5T618_OTPVER			0x01

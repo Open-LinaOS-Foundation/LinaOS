@@ -2,7 +2,7 @@
 #ifndef __ACPI_BATTERY_H
 #define __ACPI_BATTERY_H
 
-#include <linux/power_supply.h>
+#include <linaos/power_supply.h>
 
 #define ACPI_BATTERY_CLASS "battery"
 

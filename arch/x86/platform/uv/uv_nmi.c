@@ -7,17 +7,17 @@
  * Copyright (c) Mike Travis
  */
 
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/kdb.h>
-#include <linux/kexec.h>
-#include <linux/kgdb.h>
-#include <linux/moduleparam.h>
-#include <linux/nmi.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/slab.h>
-#include <linux/clocksource.h>
+#include <linaos/cpu.h>
+#include <linaos/delay.h>
+#include <linaos/kdb.h>
+#include <linaos/kexec.h>
+#include <linaos/kgdb.h>
+#include <linaos/moduleparam.h>
+#include <linaos/nmi.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/slab.h>
+#include <linaos/clocksource.h>
 
 #include <asm/apic.h>
 #include <asm/current.h>

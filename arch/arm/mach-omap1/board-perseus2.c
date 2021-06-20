@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-perseus2.c
+ * linaos/arch/arm/mach-omap1/board-perseus2.c
  *
  * Modified from board-generic.c
  *
  * Original OMAP730 support by Jean Pihet <j-pihet@ti.com>
  * Updated for 2.6 by Kevin Hilman <kjh@hilman.org>
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/platnand.h>
-#include <linux/mtd/physmap.h>
-#include <linux/input.h>
-#include <linux/smc91x.h>
-#include <linux/omapfb.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <linaos/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/platnand.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/input.h>
+#include <linaos/smc91x.h>
+#include <linaos/omapfb.h>
+#include <linaos/platform_data/keypad-omap.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

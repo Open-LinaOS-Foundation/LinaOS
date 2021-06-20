@@ -9,7 +9,7 @@
 #ifndef __LINUX_SOC_EXYNOS5422_ASV_H
 #define __LINUX_SOC_EXYNOS5422_ASV_H
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 enum {
 	EXYNOS_ASV_SUBSYS_ID_ARM,

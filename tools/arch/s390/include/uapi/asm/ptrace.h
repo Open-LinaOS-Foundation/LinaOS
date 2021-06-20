@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  *  S390 version
  *    Copyright IBM Corp. 1999, 2000
@@ -183,8 +183,8 @@
 #define PTRACE_SYSEMU			31
 #define PTRACE_SYSEMU_SINGLESTEP	32
 #ifndef __ASSEMBLY__
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <linaos/stddef.h>
+#include <linaos/types.h>
 
 typedef union {
 	float	f;
@@ -406,7 +406,7 @@ typedef struct {
 
 /*
  * The numbers chosen here are somewhat arbitrary but absolutely MUST
- * not overlap with any of the number assigned in <linux/ptrace.h>.
+ * not overlap with any of the number assigned in <linaos/ptrace.h>.
  */
 #define PTRACE_SINGLEBLOCK	12	/* resume execution until next branch */
 

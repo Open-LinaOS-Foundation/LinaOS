@@ -2,15 +2,15 @@
  * DTMF decoder.
  *
  * Copyright            by Andreas Eversberg (jolly@eversberg.eu)
- *			based on different decoders such as ISDN4Linux
+ *			based on different decoders such as ISDN4LinaOS
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
+#include <linaos/mISDNif.h>
+#include <linaos/mISDNdsp.h>
 #include "core.h"
 #include "dsp.h"
 

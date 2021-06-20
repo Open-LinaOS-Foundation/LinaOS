@@ -5,19 +5,19 @@
  * Copyright (C) 2015-2017 Broadcom
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/soc/brcmstb/brcmstb.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/soc/brcmstb/brcmstb.h>
 #include <dt-bindings/phy/phy.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/mfd/syscon.h>
 
 #include "phy-brcm-usb-init.h"
 

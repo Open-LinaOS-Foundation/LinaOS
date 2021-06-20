@@ -7,15 +7,15 @@
  *  Sören Brinkmann <soren.brinkmann@xilinx.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/iopoll.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/iopoll.h>
 
 #define WZRD_NUM_OUTPUTS	7
 #define WZRD_ACLK_MAX_FREQ	250000000UL

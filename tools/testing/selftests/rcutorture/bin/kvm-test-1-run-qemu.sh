@@ -65,16 +65,16 @@ fi
 if test -n "$TORTURE_KCONFIG_GDB_ARG"
 then
 	base_resdir=`echo $resdir | sed -e 's/\.[0-9]\+$//'`
-	if ! test -f $base_resdir/vmlinux
+	if ! test -f $base_resdir/vmlinaos
 	then
 		base_resdir="`cat re-run`/$resdir"
-		if ! test -f $base_resdir/vmlinux
+		if ! test -f $base_resdir/vmlinaos
 		then
 			base_resdir=/path/to
 		fi
 	fi
 	echo Waiting for you to attach a debug session, for example: > /dev/tty
-	echo "    gdb $base_resdir/vmlinux" > /dev/tty
+	echo "    gdb $base_resdir/vmlinaos" > /dev/tty
 	echo 'After symbols load and the "(gdb)" prompt appears:' > /dev/tty
 	echo "    target remote :1234" > /dev/tty
 	echo "    continue" > /dev/tty

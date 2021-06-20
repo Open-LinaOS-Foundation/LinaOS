@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/vmalloc.h>
+#include <linaos/workqueue.h>
 #include <xen/xenbus.h>
 #include <xen/events.h>
 #include <asm/xen/pci.h>

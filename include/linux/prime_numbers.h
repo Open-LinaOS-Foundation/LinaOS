@@ -2,7 +2,7 @@
 #ifndef __LINUX_PRIME_NUMBERS_H
 #define __LINUX_PRIME_NUMBERS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 bool is_prime_number(unsigned long x);
 unsigned long next_prime_number(unsigned long x);

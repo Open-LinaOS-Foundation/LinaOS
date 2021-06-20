@@ -10,16 +10,16 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/irq.h>
-#include <linux/memory.h>
-#include <linux/smp.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/irqchip.h>
-#include <linux/kprobes.h>
-#include <linux/scs.h>
-#include <linux/seq_file.h>
-#include <linux/vmalloc.h>
+#include <linaos/irq.h>
+#include <linaos/memory.h>
+#include <linaos/smp.h>
+#include <linaos/hardirq.h>
+#include <linaos/init.h>
+#include <linaos/irqchip.h>
+#include <linaos/kprobes.h>
+#include <linaos/scs.h>
+#include <linaos/seq_file.h>
+#include <linaos/vmalloc.h>
 #include <asm/daifflags.h>
 #include <asm/vmap_stack.h>
 

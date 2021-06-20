@@ -4,8 +4,8 @@
 #ifndef __MTK_PPE_H
 #define __MTK_PPE_H
 
-#include <linux/kernel.h>
-#include <linux/bitfield.h>
+#include <linaos/kernel.h>
+#include <linaos/bitfield.h>
 
 #define MTK_ETH_PPE_BASE		0xc00
 

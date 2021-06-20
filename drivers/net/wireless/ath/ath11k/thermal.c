@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2020 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020 The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/thermal.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <linaos/device.h>
+#include <linaos/sysfs.h>
+#include <linaos/thermal.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
 #include "core.h"
 #include "debug.h"
 

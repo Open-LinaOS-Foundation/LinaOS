@@ -13,7 +13,7 @@
 # error "please don't include this file directly"
 #endif
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct wake_irq;
 

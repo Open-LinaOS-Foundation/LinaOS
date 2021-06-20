@@ -2,8 +2,8 @@
 #ifndef _LINUX_KERNEL_VTIME_H
 #define _LINUX_KERNEL_VTIME_H
 
-#include <linux/context_tracking_state.h>
-#include <linux/sched.h>
+#include <linaos/context_tracking_state.h>
+#include <linaos/sched.h>
 
 #ifdef CONFIG_VIRT_CPU_ACCOUNTING_NATIVE
 #include <asm/vtime.h>

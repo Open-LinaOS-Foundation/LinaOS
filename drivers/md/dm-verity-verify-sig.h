@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2019 Microsoft Corporation.
  *
- * Author:  Jaskaran Singh Khurana <jaskarankhurana@linux.microsoft.com>
+ * Author:  Jaskaran Singh Khurana <jaskarankhurana@linaos.microsoft.com>
  *
  */
 #ifndef DM_VERITY_SIG_VERIFICATION_H

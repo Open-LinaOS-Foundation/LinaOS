@@ -10,16 +10,16 @@
  * Maxim Osipov <maxim.osipov@siemens.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/if_arp.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/if_arp.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 #include <net/cfg802154.h>
 #include <net/af_ieee802154.h>
 #include <net/ieee802154_netdev.h>
 #include <net/rtnetlink.h> /* for rtnl_{un,}lock */
-#include <linux/nl802154.h>
+#include <linaos/nl802154.h>
 
 #include "ieee802154.h"
 #include "rdev-ops.h"

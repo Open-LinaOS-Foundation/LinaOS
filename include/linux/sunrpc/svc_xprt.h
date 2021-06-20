@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/svc_xprt.h
+ * linaos/include/linaos/sunrpc/svc_xprt.h
  *
  * RPC server transport I/O
  */
@@ -8,7 +8,7 @@
 #ifndef SUNRPC_SVC_XPRT_H
 #define SUNRPC_SVC_XPRT_H
 
-#include <linux/sunrpc/svc.h>
+#include <linaos/sunrpc/svc.h>
 
 struct module;
 

@@ -3,10 +3,10 @@
 #ifndef HISI_ACC_QM_H
 #define HISI_ACC_QM_H
 
-#include <linux/bitfield.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/bitfield.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #define QM_QNUM_V1			4096
 #define QM_QNUM_V2			1024

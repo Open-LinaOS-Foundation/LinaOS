@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /* Copyright (c) 2019 Mellanox Technologies. */
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include <net/nexthop.h>
 #include "lag.h"
 #include "lag_mp.h"

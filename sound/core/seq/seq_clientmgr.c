@@ -6,12 +6,12 @@
  *                             Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include <sound/minors.h>
-#include <linux/kmod.h>
+#include <linaos/kmod.h>
 
 #include <sound/seq_kernel.h>
 #include "seq_clientmgr.h"
@@ -22,7 +22,7 @@
 #include "seq_system.h"
 #include <sound/seq_device.h>
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <linaos/compat.h>
 #endif
 
 /* Client Manager

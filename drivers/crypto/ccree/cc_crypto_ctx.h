@@ -4,7 +4,7 @@
 #ifndef _CC_CRYPTO_CTX_H_
 #define _CC_CRYPTO_CTX_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define CC_DRV_DES_IV_SIZE 8
 #define CC_DRV_DES_BLOCK_SIZE 8

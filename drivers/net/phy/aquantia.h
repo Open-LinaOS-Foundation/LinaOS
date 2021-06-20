@@ -6,8 +6,8 @@
  * Author: Heiner Kallweit <hkallweit1@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/phy.h>
+#include <linaos/device.h>
+#include <linaos/phy.h>
 
 #if IS_REACHABLE(CONFIG_HWMON)
 int aqr_hwmon_probe(struct phy_device *phydev);

@@ -3,8 +3,8 @@
  * Copyright (C) 2014 Facebook.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
+#include <linaos/sched.h>
+#include <linaos/stacktrace.h>
 #include "ctree.h"
 #include "disk-io.h"
 #include "locking.h"

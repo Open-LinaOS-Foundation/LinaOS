@@ -6,7 +6,7 @@
 #ifndef _ASM_RISCV_CMPXCHG_H
 #define _ASM_RISCV_CMPXCHG_H
 
-#include <linux/bug.h>
+#include <linaos/bug.h>
 
 #include <asm/barrier.h>
 #include <asm/fence.h>

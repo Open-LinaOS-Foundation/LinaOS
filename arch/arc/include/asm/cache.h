@@ -25,7 +25,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/build_bug.h>
+#include <linaos/build_bug.h>
 
 /* Uncached access macros */
 #define arc_read_uncached_32(ptr)	\

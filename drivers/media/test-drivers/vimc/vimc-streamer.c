@@ -6,9 +6,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
+#include <linaos/init.h>
+#include <linaos/freezer.h>
+#include <linaos/kthread.h>
 
 #include "vimc-streamer.h"
 

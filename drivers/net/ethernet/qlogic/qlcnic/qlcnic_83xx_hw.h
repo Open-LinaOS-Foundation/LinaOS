@@ -7,8 +7,8 @@
 #ifndef __QLCNIC_83XX_HW_H
 #define __QLCNIC_83XX_HW_H
 
-#include <linux/types.h>
-#include <linux/etherdevice.h>
+#include <linaos/types.h>
+#include <linaos/etherdevice.h>
 
 #include "qlcnic_hw.h"
 

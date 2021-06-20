@@ -4,17 +4,17 @@
  * Copyright (c) 2015, Intel Corporation.
  */
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/pci.h>
-#include <linux/pci-ecam.h>
-#include <linux/srcu.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/msi.h>
+#include <linaos/pci.h>
+#include <linaos/pci-ecam.h>
+#include <linaos/srcu.h>
+#include <linaos/rculist.h>
+#include <linaos/rcupdate.h>
 
 #include <asm/irqdomain.h>
 #include <asm/device.h>

@@ -10,7 +10,7 @@
 #define _KUNIT_TRY_CATCH_IMPL_H
 
 #include <kunit/try-catch.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct kunit;
 

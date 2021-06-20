@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* SF16-FMR2 and SF16-FMD2 radio driver for Linux
+/* SF16-FMR2 and SF16-FMD2 radio driver for LinaOS
  * Copyright (c) 2011 Ondrej Zary
  *
  * Original driver was (c) 2000-2002 Ziglio Frediano, freddy77@angelfire.com
@@ -7,14 +7,14 @@
  * implementation
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>	/* Modules			*/
-#include <linux/init.h>		/* Initdata			*/
-#include <linux/slab.h>
-#include <linux/ioport.h>	/* request_region		*/
-#include <linux/io.h>		/* outb, outb_p			*/
-#include <linux/isa.h>
-#include <linux/pnp.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>	/* Modules			*/
+#include <linaos/init.h>		/* Initdata			*/
+#include <linaos/slab.h>
+#include <linaos/ioport.h>	/* request_region		*/
+#include <linaos/io.h>		/* outb, outb_p			*/
+#include <linaos/isa.h>
+#include <linaos/pnp.h>
 #include <media/drv-intf/tea575x.h>
 
 MODULE_AUTHOR("Ondrej Zary");

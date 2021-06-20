@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/lib/vsprintf.c
+ *  linaos/lib/vsprintf.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -18,31 +18,31 @@
  */
 
 #include <stdarg.h>
-#include <linux/build_bug.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/errname.h>
-#include <linux/module.h>	/* for KSYM_SYMBOL_LEN */
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/kallsyms.h>
-#include <linux/math64.h>
-#include <linux/uaccess.h>
-#include <linux/ioport.h>
-#include <linux/dcache.h>
-#include <linux/cred.h>
-#include <linux/rtc.h>
-#include <linux/time.h>
-#include <linux/uuid.h>
-#include <linux/of.h>
+#include <linaos/build_bug.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/errname.h>
+#include <linaos/module.h>	/* for KSYM_SYMBOL_LEN */
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/kernel.h>
+#include <linaos/kallsyms.h>
+#include <linaos/math64.h>
+#include <linaos/uaccess.h>
+#include <linaos/ioport.h>
+#include <linaos/dcache.h>
+#include <linaos/cred.h>
+#include <linaos/rtc.h>
+#include <linaos/time.h>
+#include <linaos/uuid.h>
+#include <linaos/of.h>
 #include <net/addrconf.h>
-#include <linux/siphash.h>
-#include <linux/compiler.h>
-#include <linux/property.h>
+#include <linaos/siphash.h>
+#include <linaos/compiler.h>
+#include <linaos/property.h>
 #ifdef CONFIG_BLOCK
-#include <linux/blkdev.h>
+#include <linaos/blkdev.h>
 #endif
 
 #include "../mm/internal.h"	/* For the trace_print_flags arrays */
@@ -50,7 +50,7 @@
 #include <asm/page.h>		/* for PAGE_SIZE */
 #include <asm/byteorder.h>	/* cpu_to_le16 */
 
-#include <linux/string_helpers.h>
+#include <linaos/string_helpers.h>
 #include "kstrtox.h"
 
 /**

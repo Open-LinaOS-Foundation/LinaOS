@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0+
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/fs.h>
-#include <linux/rwsem.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/fs.h>
+#include <linaos/rwsem.h>
 #include "kpc_dma_driver.h"
 
 MODULE_LICENSE("GPL");

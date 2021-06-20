@@ -10,21 +10,21 @@
  * Author : Yoshihiro Shimoda <yoshihiro.shimoda.uh@renesas.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/timer.h>
+#include <linaos/delay.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/irq.h>
+#include <linaos/slab.h>
 #include <asm/cacheflush.h>
 
 #include "r8a66597.h"

@@ -1,35 +1,35 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/video/vt8500lcdfb.c
+ *  linaos/drivers/video/vt8500lcdfb.c
  *
  *  Copyright (C) 2010 Alexey Charkov <alchark@gmail.com>
  *
  * Based on skeletonfb.c and pxafb.c
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/wait.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/wait.h>
 #include <video/of_display_timing.h>
 
 #include "vt8500lcdfb.h"
 #include "wmt_ge_rops.h"
 
 #ifdef CONFIG_OF
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/memblock.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/memblock.h>
 #endif
 
 

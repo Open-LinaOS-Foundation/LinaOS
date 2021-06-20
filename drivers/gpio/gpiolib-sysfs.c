@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/kdev_t.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
+#include <linaos/idr.h>
+#include <linaos/mutex.h>
+#include <linaos/device.h>
+#include <linaos/sysfs.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/kdev_t.h>
+#include <linaos/slab.h>
+#include <linaos/ctype.h>
 
 #include "gpiolib.h"
 #include "gpiolib-sysfs.h"

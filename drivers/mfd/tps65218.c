@@ -13,23 +13,23 @@
  * GNU General Public License version 2 for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/regmap.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/mutex.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps65218.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/tps65218.h>
 
 #define TPS65218_PASSWORD_REGS_UNLOCK   0x7D
 

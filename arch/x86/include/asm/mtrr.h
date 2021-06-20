@@ -96,7 +96,7 @@ static inline void mtrr_bp_init(void)
 #  endif
 
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 struct mtrr_sentry32 {
     compat_ulong_t base;    /*  Base address     */

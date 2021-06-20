@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/proc/base.c
+ *  linaos/fs/proc/base.c
  *
  *  Copyright (C) 1991, 1992 Linus Torvalds
  *
@@ -22,7 +22,7 @@
  *  Ilias Biris <ilias.biris@indt.org.br>
  *  Mauricio Lin <mauricio.lin@indt.org.br>
  *
- *  Embedded Linux Lab - 10LE Instituto Nokia de Tecnologia - INdT
+ *  Embedded LinaOS Lab - 10LE Instituto Nokia de Tecnologia - INdT
  *
  *  A new process specific entry (smaps) included in /proc. It shows the
  *  size of rss for each memory area. The maps entry lacks information
@@ -33,7 +33,7 @@
  *
  *  Changelog:
  *  21-Feb-2005
- *  Embedded Linux Lab - 10LE Instituto Nokia de Tecnologia - INdT
+ *  Embedded LinaOS Lab - 10LE Instituto Nokia de Tecnologia - INdT
  *  Pud inclusion in the page table walking.
  *
  *  ChangeLog:
@@ -48,53 +48,53 @@
  *  Overall revision about smaps.
  */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/generic-radix-tree.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/namei.h>
-#include <linux/mnt_namespace.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/rcupdate.h>
-#include <linux/stacktrace.h>
-#include <linux/resource.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/security.h>
-#include <linux/ptrace.h>
-#include <linux/tracehook.h>
-#include <linux/printk.h>
-#include <linux/cache.h>
-#include <linux/cgroup.h>
-#include <linux/cpuset.h>
-#include <linux/audit.h>
-#include <linux/poll.h>
-#include <linux/nsproxy.h>
-#include <linux/oom.h>
-#include <linux/elf.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/fs_struct.h>
-#include <linux/slab.h>
-#include <linux/sched/autogroup.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/stat.h>
-#include <linux/posix-timers.h>
-#include <linux/time_namespace.h>
-#include <linux/resctrl.h>
+#include <linaos/errno.h>
+#include <linaos/time.h>
+#include <linaos/proc_fs.h>
+#include <linaos/stat.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/init.h>
+#include <linaos/capability.h>
+#include <linaos/file.h>
+#include <linaos/fdtable.h>
+#include <linaos/generic-radix-tree.h>
+#include <linaos/string.h>
+#include <linaos/seq_file.h>
+#include <linaos/namei.h>
+#include <linaos/mnt_namespace.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/rcupdate.h>
+#include <linaos/stacktrace.h>
+#include <linaos/resource.h>
+#include <linaos/module.h>
+#include <linaos/mount.h>
+#include <linaos/security.h>
+#include <linaos/ptrace.h>
+#include <linaos/tracehook.h>
+#include <linaos/printk.h>
+#include <linaos/cache.h>
+#include <linaos/cgroup.h>
+#include <linaos/cpuset.h>
+#include <linaos/audit.h>
+#include <linaos/poll.h>
+#include <linaos/nsproxy.h>
+#include <linaos/oom.h>
+#include <linaos/elf.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/user_namespace.h>
+#include <linaos/fs_struct.h>
+#include <linaos/slab.h>
+#include <linaos/sched/autogroup.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/coredump.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/stat.h>
+#include <linaos/posix-timers.h>
+#include <linaos/time_namespace.h>
+#include <linaos/resctrl.h>
 #include <trace/events/oom.h>
 #include "internal.h"
 #include "fd.h"

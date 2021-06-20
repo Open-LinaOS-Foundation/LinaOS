@@ -12,8 +12,8 @@
 #ifndef UX500_MSP_I2S_H
 #define UX500_MSP_I2S_H
 
-#include <linux/platform_device.h>
-#include <linux/platform_data/asoc-ux500-msp.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/asoc-ux500-msp.h>
 
 #define MSP_INPUT_FREQ_APB 48000000
 

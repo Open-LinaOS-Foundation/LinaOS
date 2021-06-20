@@ -10,28 +10,28 @@
   supported by this driver and makes no commitment to maintain it.
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/skbuff.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/mm.h>
+#include <linaos/pci.h>
+#include <linaos/errno.h>
+#include <linaos/atm.h>
+#include <linaos/atmdev.h>
+#include <linaos/sonet.h>
+#include <linaos/skbuff.h>
+#include <linaos/time.h>
+#include <linaos/delay.h>
+#include <linaos/uio.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
+#include <linaos/atomic.h>
+#include <linaos/uaccess.h>
 #include <asm/string.h>
 #include <asm/byteorder.h>
 
@@ -102,7 +102,7 @@ static inline void __init show_version (void) {
   2. Detection
   
   All Horizon-based cards present with the same PCI Vendor and Device
-  IDs. The standard Linux 2.2 PCI API is used to locate any cards and
+  IDs. The standard LinaOS 2.2 PCI API is used to locate any cards and
   to enable bus-mastering (with appropriate latency).
   
   ATM_LAYER_STATUS in the control register distinguishes between the
@@ -176,7 +176,7 @@ static inline void __init show_version (void) {
   It can be used both to filter incoming cells and shape out-going
   cells.
   
-  ATM Linux actually supports:
+  ATM LinaOS actually supports:
   
   ATM_NONE() (no traffic in this direction)
   ATM_UBR(max_frame_size)
@@ -185,7 +185,7 @@ static inline void __init show_version (void) {
   0 or ATM_MAX_PCR are used to indicate maximum available PCR
   
   A traffic specification consists of the AAL type and separate
-  traffic specifications for either direction. In ATM Linux it is:
+  traffic specifications for either direction. In ATM LinaOS it is:
   
   struct atm_qos {
   struct atm_trafprm txtp;
@@ -205,7 +205,7 @@ static inline void __init show_version (void) {
   
   The Horizon has support for AAL frame types: 0, 3/4 and 5. However,
   it does not implement AAL 3/4 SAR and it has a different notion of
-  "raw cell" to ATM Linux's (48 bytes vs. 52 bytes) so neither are
+  "raw cell" to ATM LinaOS's (48 bytes vs. 52 bytes) so neither are
   supported by this driver.
   
   The Horizon has limited support for ABR (including UBR), VBR and
@@ -218,7 +218,7 @@ static inline void __init show_version (void) {
   configurable divider and a configurable timer preload value).
   
   At the moment only UBR and CBR are supported by the driver. VBR will
-  be supported as soon as ATM for Linux supports it. ABR support is
+  be supported as soon as ATM for LinaOS supports it. ABR support is
   very unlikely as RM cell handling is completely up to the driver.
   
   1. TX (TX channel setup and TX transfer)
@@ -333,7 +333,7 @@ static inline void __init show_version (void) {
     order to reduce the chances of TX buffer exhaustion.
   
   . Implement VBR (bucket and timers not understood) and ABR (need to
-    do RM cells manually); also no Linux support for either.
+    do RM cells manually); also no LinaOS support for either.
   
   . Implement QoS changes on open VCs (involves extracting parts of VC open
     and close into separate functions and using them to make changes).
@@ -1407,7 +1407,7 @@ static void do_housekeeping (struct timer_list *t) {
   // just stats at the moment
   hrz_dev * dev = from_timer(dev, t, housekeeping);
 
-  // collect device-specific (not driver/atm-linux) stats here
+  // collect device-specific (not driver/atm-linaos) stats here
   dev->tx_cell_count += rd_regw (dev, TX_CELL_COUNT_OFF);
   dev->rx_cell_count += rd_regw (dev, RX_CELL_COUNT_OFF);
   dev->hec_error_count += rd_regw (dev, HEC_ERROR_COUNT_OFF);
@@ -2059,7 +2059,7 @@ static int check_max_sdu (hrz_aal aal, struct atm_trafprm * tp, unsigned int max
 
 /********** check pcr **********/
 
-// something like this should be part of ATM Linux
+// something like this should be part of ATM LinaOS
 static int atm_pcr_check (struct atm_trafprm * tp, unsigned int pcr) {
   // we are assuming non-UBR, and non-special values of pcr
   if (tp->min_pcr == ATM_MAX_PCR)

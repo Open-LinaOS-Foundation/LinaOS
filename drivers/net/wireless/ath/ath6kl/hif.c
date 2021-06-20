@@ -16,7 +16,7 @@
  */
 #include "hif.h"
 
-#include <linux/export.h>
+#include <linaos/export.h>
 
 #include "core.h"
 #include "target.h"

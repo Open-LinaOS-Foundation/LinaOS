@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ide.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/ide.h>
 
 static void ide_legacy_init_one(struct ide_hw **hws, struct ide_hw *hw,
 				u8 port_no, const struct ide_port_info *d,

@@ -2,13 +2,13 @@
 #ifndef _LINUX_VMALLOC_H
 #define _LINUX_VMALLOC_H
 
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/llist.h>
+#include <linaos/spinlock.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/llist.h>
 #include <asm/page.h>		/* pgprot_t */
-#include <linux/rbtree.h>
-#include <linux/overflow.h>
+#include <linaos/rbtree.h>
+#include <linaos/overflow.h>
 
 #include <asm/vmalloc.h>
 

@@ -3,7 +3,7 @@
  * Copyright (C) 2014-15 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 ENTRY_CFI(strcmp)
 	or	r2, r0, r1

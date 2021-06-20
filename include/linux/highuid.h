@@ -2,7 +2,7 @@
 #ifndef _LINUX_HIGHUID_H
 #define _LINUX_HIGHUID_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * general notes:

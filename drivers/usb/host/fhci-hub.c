@@ -11,15 +11,15 @@
  *               Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/gpio.h>
 #include <soc/fsl/qe/qe.h>
 #include "fhci.h"
 

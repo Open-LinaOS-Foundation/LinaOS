@@ -5,7 +5,7 @@
 #define _SJA1105_DYNAMIC_CONFIG_H
 
 #include "sja1105.h"
-#include <linux/packing.h>
+#include <linaos/packing.h>
 
 /* Special index that can be used for sja1105_dynamic_config_read */
 #define SJA1105_SEARCH		-1

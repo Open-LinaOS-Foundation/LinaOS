@@ -3,7 +3,7 @@
 #ifndef _RDMA_NETLINK_H
 #define _RDMA_NETLINK_H
 
-#include <linux/netlink.h>
+#include <linaos/netlink.h>
 #include <uapi/rdma/rdma_netlink.h>
 
 enum {

@@ -1,38 +1,38 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Motion Eye video4linux driver for Sony Vaio PictureBook
+ * Motion Eye video4linaos driver for Sony Vaio PictureBook
  *
  * Copyright (C) 2001-2004 Stelian Pop <stelian@popies.net>
  *
  * Copyright (C) 2001-2002 Alcôve <www.alcove.com>
  *
- * Copyright (C) 2000 Andrew Tridgell <tridge@valinux.com>
+ * Copyright (C) 2000 Andrew Tridgell <tridge@valinaos.com>
  *
  * Earlier work by Werner Almesberger, Paul `Rusty' Russell and Paul Mackerras.
  *
- * Some parts borrowed from various video4linux drivers, especially
+ * Some parts borrowed from various video4linaos drivers, especially
  * bttv-driver.c and zoran.c, see original files for credits.
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/videodev2.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/gfp.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-fh.h>
 #include <media/v4l2-event.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/vmalloc.h>
+#include <linaos/dma-mapping.h>
 
 #include "meye.h"
-#include <linux/meye.h>
+#include <linaos/meye.h>
 
 MODULE_AUTHOR("Stelian Pop <stelian@popies.net>");
 MODULE_DESCRIPTION("v4l2 driver for the MotionEye camera");
@@ -828,7 +828,7 @@ again:
 }
 
 /****************************************************************************/
-/* video4linux integration                                                  */
+/* video4linaos integration                                                  */
 /****************************************************************************/
 
 static int meye_open(struct file *file)

@@ -3,7 +3,7 @@
  *	arch/alpha/lib/srm_puts.c
  */
 
-#include <linux/string.h>
+#include <linaos/string.h>
 #include <asm/console.h>
 
 long

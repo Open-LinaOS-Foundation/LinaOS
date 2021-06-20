@@ -6,9 +6,9 @@
 #ifndef _SCSI_SCSI_H
 #define _SCSI_SCSI_H
 
-#include <linux/types.h>
-#include <linux/scatterlist.h>
-#include <linux/kernel.h>
+#include <linaos/types.h>
+#include <linaos/scatterlist.h>
+#include <linaos/kernel.h>
 #include <scsi/scsi_common.h>
 #include <scsi/scsi_proto.h>
 
@@ -260,7 +260,7 @@ enum scsi_disposition {
 /*
  * Here are some scsi specific ioctl commands which are sometimes useful.
  *
- * Note that include/linux/cdrom.h also defines IOCTL 0x5300 - 0x5395
+ * Note that include/linaos/cdrom.h also defines IOCTL 0x5300 - 0x5395
  */
 
 /* Used to obtain PUN and LUN info.  Conflicts with CDROMAUDIOBUFSIZ */

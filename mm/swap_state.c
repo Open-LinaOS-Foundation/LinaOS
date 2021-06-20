@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/mm/swap_state.c
+ *  linaos/mm/swap_state.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  *  Swap reorganised 29.12.95, Stephen Tweedie
  *
  *  Rewritten to use page cache, (C) 1998 Stephen Tweedie
  */
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/kernel_stat.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/backing-dev.h>
-#include <linux/blkdev.h>
-#include <linux/pagevec.h>
-#include <linux/migrate.h>
-#include <linux/vmalloc.h>
-#include <linux/swap_slots.h>
-#include <linux/huge_mm.h>
-#include <linux/shmem_fs.h>
+#include <linaos/mm.h>
+#include <linaos/gfp.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
+#include <linaos/init.h>
+#include <linaos/pagemap.h>
+#include <linaos/backing-dev.h>
+#include <linaos/blkdev.h>
+#include <linaos/pagevec.h>
+#include <linaos/migrate.h>
+#include <linaos/vmalloc.h>
+#include <linaos/swap_slots.h>
+#include <linaos/huge_mm.h>
+#include <linaos/shmem_fs.h>
 #include "internal.h"
 
 /*

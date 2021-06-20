@@ -3,8 +3,8 @@
 #define __PERF_SORT_H
 #include <regex.h>
 #include <stdbool.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <linaos/list.h>
+#include <linaos/rbtree.h>
 #include "map_symbol.h"
 #include "symbol_conf.h"
 #include "callchain.h"

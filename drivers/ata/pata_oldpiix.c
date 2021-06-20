@@ -14,15 +14,15 @@
  *    Because of these behaviour differences PIIX gets its own driver module.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/ata.h>
+#include <linaos/libata.h>
+#include <linaos/ata.h>
 
 #define DRV_NAME	"pata_oldpiix"
 #define DRV_VERSION	"0.5.5"

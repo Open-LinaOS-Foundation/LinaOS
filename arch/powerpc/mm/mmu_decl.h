@@ -4,7 +4,7 @@
  * in arch/ppc/mm/.
  *
  *  Derived from arch/ppc/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -13,7 +13,7 @@
  *  Derived from "arch/i386/mm/init.c"
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <asm/mmu.h>
 
 #ifdef CONFIG_PPC_MMU_NOHASH

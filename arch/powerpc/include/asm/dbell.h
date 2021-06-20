@@ -8,8 +8,8 @@
 #ifndef _ASM_POWERPC_DBELL_H
 #define _ASM_POWERPC_DBELL_H
 
-#include <linux/smp.h>
-#include <linux/threads.h>
+#include <linaos/smp.h>
+#include <linaos/threads.h>
 
 #include <asm/cputhreads.h>
 #include <asm/ppc-opcode.h>

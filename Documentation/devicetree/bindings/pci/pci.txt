@@ -11,7 +11,7 @@ https://www.devicetree.org/open-firmware/practice/imap/imap0_9d.pdf
 Additionally to the properties specified in the above standards a host bridge
 driver implementation may support the following properties:
 
-- linux,pci-domain:
+- linaos,pci-domain:
    If present this property assigns a fixed PCI domain number to a host bridge,
    otherwise an unstable (across boots) unique number will be assigned.
    It is required to either not set this property at all or set it for all

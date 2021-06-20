@@ -7,7 +7,7 @@
 #ifndef _AB8500_CHARGALG_H_
 #define _AB8500_CHARGALG_H_
 
-#include <linux/power_supply.h>
+#include <linaos/power_supply.h>
 
 /*
  * Valid only for supplies of type:

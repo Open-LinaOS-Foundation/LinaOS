@@ -5,8 +5,8 @@
 #if !defined(_TRACE_F2FS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_F2FS_H
 
-#include <linux/tracepoint.h>
-#include <uapi/linux/f2fs.h>
+#include <linaos/tracepoint.h>
+#include <uapi/linaos/f2fs.h>
 
 #define show_dev(dev)		MAJOR(dev), MINOR(dev)
 #define show_dev_ino(entry)	show_dev(entry->dev), (unsigned long)entry->ino

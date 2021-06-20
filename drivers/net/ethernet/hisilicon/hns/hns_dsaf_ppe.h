@@ -6,7 +6,7 @@
 #ifndef _HNS_DSAF_PPE_H
 #define _HNS_DSAF_PPE_H
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #include "hns_dsaf_main.h"
 #include "hns_dsaf_mac.h"

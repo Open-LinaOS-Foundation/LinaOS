@@ -9,7 +9,7 @@
 #ifndef __HMCDRV_CACHE_H__
 #define __HMCDRV_CACHE_H__
 
-#include <linux/mmzone.h>
+#include <linaos/mmzone.h>
 #include "hmcdrv_ftp.h"
 
 #define HMCDRV_CACHE_SIZE_DFLT	(MAX_ORDER_NR_PAGES * PAGE_SIZE / 2UL)

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2019 Facebook */
 
-#include <linux/bpf.h>
-#include <linux/bpf_verifier.h>
-#include <linux/btf.h>
-#include <linux/filter.h>
-#include <linux/slab.h>
-#include <linux/numa.h>
-#include <linux/seq_file.h>
-#include <linux/refcount.h>
-#include <linux/mutex.h>
+#include <linaos/bpf.h>
+#include <linaos/bpf_verifier.h>
+#include <linaos/btf.h>
+#include <linaos/filter.h>
+#include <linaos/slab.h>
+#include <linaos/numa.h>
+#include <linaos/seq_file.h>
+#include <linaos/refcount.h>
+#include <linaos/mutex.h>
 
 enum bpf_struct_ops_state {
 	BPF_STRUCT_OPS_STATE_INIT,
@@ -61,7 +61,7 @@ struct bpf_struct_ops_map {
 
 /* bpf_struct_ops_##_name (e.g. bpf_struct_ops_tcp_congestion_ops) is
  * the map's value exposed to the userspace and its btf-type-id is
- * stored at the map->btf_vmlinux_value_type_id.
+ * stored at the map->btf_vmlinaos_value_type_id.
  *
  */
 #define BPF_STRUCT_OPS_TYPE(_name)				\
@@ -113,7 +113,7 @@ void bpf_struct_ops_init(struct btf *btf, struct bpf_verifier_log *log)
 
 	module_id = btf_find_by_name_kind(btf, "module", BTF_KIND_STRUCT);
 	if (module_id < 0) {
-		pr_warn("Cannot find struct module in btf_vmlinux\n");
+		pr_warn("Cannot find struct module in btf_vmlinaos\n");
 		return;
 	}
 	module_type = btf_type_by_id(btf, module_id);
@@ -132,7 +132,7 @@ void bpf_struct_ops_init(struct btf *btf, struct bpf_verifier_log *log)
 		value_id = btf_find_by_name_kind(btf, value_name,
 						 BTF_KIND_STRUCT);
 		if (value_id < 0) {
-			pr_warn("Cannot find struct %s in btf_vmlinux\n",
+			pr_warn("Cannot find struct %s in btf_vmlinaos\n",
 				value_name);
 			continue;
 		}
@@ -140,7 +140,7 @@ void bpf_struct_ops_init(struct btf *btf, struct bpf_verifier_log *log)
 		type_id = btf_find_by_name_kind(btf, st_ops->name,
 						BTF_KIND_STRUCT);
 		if (type_id < 0) {
-			pr_warn("Cannot find struct %s in btf_vmlinux\n",
+			pr_warn("Cannot find struct %s in btf_vmlinaos\n",
 				st_ops->name);
 			continue;
 		}
@@ -195,14 +195,14 @@ void bpf_struct_ops_init(struct btf *btf, struct bpf_verifier_log *log)
 	}
 }
 
-extern struct btf *btf_vmlinux;
+extern struct btf *btf_vmlinaos;
 
 static const struct bpf_struct_ops *
 bpf_struct_ops_find_value(u32 value_id)
 {
 	unsigned int i;
 
-	if (!value_id || !btf_vmlinux)
+	if (!value_id || !btf_vmlinaos)
 		return NULL;
 
 	for (i = 0; i < ARRAY_SIZE(bpf_struct_ops); i++) {
@@ -217,7 +217,7 @@ const struct bpf_struct_ops *bpf_struct_ops_find(u32 type_id)
 {
 	unsigned int i;
 
-	if (!type_id || !btf_vmlinux)
+	if (!type_id || !btf_vmlinaos)
 		return NULL;
 
 	for (i = 0; i < ARRAY_SIZE(bpf_struct_ops); i++) {
@@ -297,8 +297,8 @@ static int check_zero_holes(const struct btf_type *t, void *data)
 		    memchr_inv(data + prev_mend, 0, moff - prev_mend))
 			return -EINVAL;
 
-		mtype = btf_type_by_id(btf_vmlinux, member->type);
-		mtype = btf_resolve_size(btf_vmlinux, mtype, &msize);
+		mtype = btf_type_by_id(btf_vmlinaos, member->type);
+		mtype = btf_resolve_size(btf_vmlinaos, mtype, &msize);
 		if (IS_ERR(mtype))
 			return PTR_ERR(mtype);
 		prev_mend = moff + msize;
@@ -369,7 +369,7 @@ static int bpf_struct_ops_map_update_elem(struct bpf_map *map, void *key,
 		u32 moff;
 
 		moff = btf_member_bit_offset(t, member) / 8;
-		ptype = btf_type_resolve_ptr(btf_vmlinux, member->type, NULL);
+		ptype = btf_type_resolve_ptr(btf_vmlinaos, member->type, NULL);
 		if (ptype == module_type) {
 			if (*(void **)(udata + moff))
 				goto reset_unlock;
@@ -394,8 +394,8 @@ static int bpf_struct_ops_map_update_elem(struct bpf_map *map, void *key,
 		if (!ptype || !btf_type_is_func_proto(ptype)) {
 			u32 msize;
 
-			mtype = btf_type_by_id(btf_vmlinux, member->type);
-			mtype = btf_resolve_size(btf_vmlinux, mtype, &msize);
+			mtype = btf_type_by_id(btf_vmlinaos, member->type);
+			mtype = btf_resolve_size(btf_vmlinaos, mtype, &msize);
 			if (IS_ERR(mtype)) {
 				err = PTR_ERR(mtype);
 				goto reset_unlock;
@@ -517,7 +517,7 @@ static void bpf_struct_ops_map_seq_show_elem(struct bpf_map *map, void *key,
 
 	err = bpf_struct_ops_map_sys_lookup_elem(map, key, value);
 	if (!err) {
-		btf_type_seq_show(btf_vmlinux, map->btf_vmlinux_value_type_id,
+		btf_type_seq_show(btf_vmlinaos, map->btf_vmlinaos_value_type_id,
 				  value, m);
 		seq_puts(m, "\n");
 	}
@@ -540,7 +540,7 @@ static void bpf_struct_ops_map_free(struct bpf_map *map)
 static int bpf_struct_ops_map_alloc_check(union bpf_attr *attr)
 {
 	if (attr->key_size != sizeof(unsigned int) || attr->max_entries != 1 ||
-	    attr->map_flags || !attr->btf_vmlinux_value_type_id)
+	    attr->map_flags || !attr->btf_vmlinaos_value_type_id)
 		return -EINVAL;
 	return 0;
 }
@@ -556,7 +556,7 @@ static struct bpf_map *bpf_struct_ops_map_alloc(union bpf_attr *attr)
 	if (!bpf_capable())
 		return ERR_PTR(-EPERM);
 
-	st_ops = bpf_struct_ops_find_value(attr->btf_vmlinux_value_type_id);
+	st_ops = bpf_struct_ops_find_value(attr->btf_vmlinaos_value_type_id);
 	if (!st_ops)
 		return ERR_PTR(-ENOTSUPP);
 

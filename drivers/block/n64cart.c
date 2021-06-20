@@ -6,12 +6,12 @@
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/bitops.h>
+#include <linaos/blkdev.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 enum {
 	PI_DRAM_REG = 0,

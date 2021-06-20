@@ -16,7 +16,7 @@ int reservenum;		/* Number of memory reservation slots */
 int minsize;		/* Minimum blob size */
 int padsize;		/* Additional padding to blob */
 int alignsize;		/* Additional padding to blob accroding to the alignsize */
-int phandle_format = PHANDLE_EPAPR;	/* Use linux,phandle or phandle properties */
+int phandle_format = PHANDLE_EPAPR;	/* Use linaos,phandle or phandle properties */
 int generate_symbols;	/* enable symbols & fixup support */
 int generate_fixups;		/* suppress generation of fixups on symbol support */
 int auto_label_aliases;		/* auto generate labels -> aliases */
@@ -98,9 +98,9 @@ static const char * const usage_opts_help[] = {
 	"\n\tAdd a path to search for include files",
 	"\n\tSort nodes and properties before outputting (useful for comparing trees)",
 	"\n\tValid phandle formats are:\n"
-	 "\t\tlegacy - \"linux,phandle\" properties only\n"
+	 "\t\tlegacy - \"linaos,phandle\" properties only\n"
 	 "\t\tepapr  - \"phandle\" properties only\n"
-	 "\t\tboth   - Both \"linux,phandle\" and \"phandle\" properties",
+	 "\t\tboth   - Both \"linaos,phandle\" and \"phandle\" properties",
 	"\n\tEnable/disable warnings (prefix with \"no-\")",
 	"\n\tEnable/disable errors (prefix with \"no-\")",
 	"\n\tEnable generation of symbols",

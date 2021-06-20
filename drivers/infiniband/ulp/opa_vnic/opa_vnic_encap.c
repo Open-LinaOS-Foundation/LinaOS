@@ -49,8 +49,8 @@
  * This file contains OPA VNIC encapsulation/decapsulation function.
  */
 
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
 
 #include "opa_vnic_internal.h"
 

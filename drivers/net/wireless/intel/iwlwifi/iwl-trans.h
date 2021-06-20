@@ -7,16 +7,16 @@
 #ifndef __iwl_trans_h__
 #define __iwl_trans_h__
 
-#include <linux/ieee80211.h>
-#include <linux/mm.h> /* for page_address */
-#include <linux/lockdep.h>
-#include <linux/kernel.h>
+#include <linaos/ieee80211.h>
+#include <linaos/mm.h> /* for page_address */
+#include <linaos/lockdep.h>
+#include <linaos/kernel.h>
 
 #include "iwl-debug.h"
 #include "iwl-config.h"
 #include "fw/img.h"
 #include "iwl-op-mode.h"
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 #include "fw/api/cmdhdr.h"
 #include "fw/api/txq.h"
 #include "fw/api/dbg-tlv.h"

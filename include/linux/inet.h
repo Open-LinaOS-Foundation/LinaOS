@@ -38,9 +38,9 @@
 #ifndef _LINUX_INET_H
 #define _LINUX_INET_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <net/net_namespace.h>
-#include <linux/socket.h>
+#include <linaos/socket.h>
 
 /*
  * These mimic similar macros defined in user-space for inet_ntop(3).

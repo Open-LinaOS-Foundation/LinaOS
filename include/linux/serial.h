@@ -1,5 +1,5 @@
 /*
- * include/linux/serial.h
+ * include/linaos/serial.h
  *
  * Copyright (C) 1992 by Theodore Ts'o.
  * 
@@ -10,7 +10,7 @@
 #define _LINUX_SERIAL_H
 
 #include <asm/page.h>
-#include <uapi/linux/serial.h>
+#include <uapi/linaos/serial.h>
 
 
 /*
@@ -28,6 +28,6 @@ struct async_icount {
  */
 #define SERIAL_XMIT_SIZE PAGE_SIZE
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #endif /* _LINUX_SERIAL_H */

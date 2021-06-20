@@ -5,7 +5,7 @@
  * Copied from omap-smc.S Copyright (C) 2010 Texas Instruments, Inc.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 /*
  * Function signature: void exynos_smc(u32 cmd, u32 arg1, u32 arg2, u32 arg3)

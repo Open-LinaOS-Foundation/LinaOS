@@ -6,7 +6,7 @@
 #ifndef __DVB_PLL_H__
 #define __DVB_PLL_H__
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/dvb_frontend.h>
 
 #define DVB_PLL_UNDEFINED               0

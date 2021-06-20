@@ -16,20 +16,20 @@
  * Contributors: Andreas Larsson <andreas@gaisler.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/bitops.h>
 
 #define GRGPIO_MAX_NGPIO 32
 

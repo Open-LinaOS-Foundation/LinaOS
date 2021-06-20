@@ -7,19 +7,19 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/interrupt.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/irqreturn.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/interrupt.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/irqreturn.h>
+#include <linaos/regmap.h>
 
-#include <linux/iio/common/st_sensors.h>
+#include <linaos/iio/common/st_sensors.h>
 
 
 static int st_sensors_get_buffer_element(struct iio_dev *indio_dev, u8 *buf)

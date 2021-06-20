@@ -94,7 +94,7 @@ Here's a slightly in-depth example of how one could implement "mocking":
 
 .. code-block:: c
 
-	#include <linux/sched.h> /* for current */
+	#include <linaos/sched.h> /* for current */
 
 	struct test_data {
 		int foo_result;

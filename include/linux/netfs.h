@@ -14,9 +14,9 @@
 #ifndef _LINUX_NETFS_H
 #define _LINUX_NETFS_H
 
-#include <linux/workqueue.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
+#include <linaos/workqueue.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
 
 /*
  * Overload PG_private_2 to give us PG_fscache - this is used to indicate that

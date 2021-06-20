@@ -4,7 +4,7 @@
  * Author: Rob Clark <rob@ti.com>
  */
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 
 #include <drm/drm_modeset_helper.h>
 #include <drm/drm_fourcc.h>

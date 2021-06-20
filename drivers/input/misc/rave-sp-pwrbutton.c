@@ -6,11 +6,11 @@
 //
 //
 
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/rave-sp.h>
-#include <linux/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mfd/rave-sp.h>
+#include <linaos/platform_device.h>
 
 #define RAVE_SP_EVNT_BUTTON_PRESS	(RAVE_SP_EVNT_BASE + 0x00)
 

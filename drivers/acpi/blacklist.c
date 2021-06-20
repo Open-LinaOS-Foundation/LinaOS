@@ -10,10 +10,10 @@
  *  Copyright (C) 2002 Andy Grover <andrew.grover@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
 
 #include "internal.h"
 

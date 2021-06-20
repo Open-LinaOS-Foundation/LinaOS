@@ -2,7 +2,7 @@
 #ifndef _BPF_LIRC_H
 #define _BPF_LIRC_H
 
-#include <uapi/linux/bpf.h>
+#include <uapi/linaos/bpf.h>
 
 #ifdef CONFIG_BPF_LIRC_MODE2
 int lirc_prog_attach(const union bpf_attr *attr, struct bpf_prog *prog);

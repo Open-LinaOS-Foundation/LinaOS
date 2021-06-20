@@ -3,7 +3,7 @@
  * fl512.c
  * Anders Gnistrup <ex18@kalman.iau.dtu.dk>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -20,10 +20,10 @@
  *   [0] - I/O port base address
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "../comedidev.h"
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 /*
  * Register I/O map

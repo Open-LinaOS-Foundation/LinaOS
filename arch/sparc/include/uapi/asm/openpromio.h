@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef	_SPARC_OPENPROMIO_H
 #define	_SPARC_OPENPROMIO_H
 
-#include <linux/compiler.h>
-#include <linux/ioctl.h>
+#include <linaos/compiler.h>
+#include <linaos/ioctl.h>
 
 /*
  * SunOS and Solaris /dev/openprom definitions. The ioctl values
@@ -30,7 +30,7 @@ struct openpromio
 #define	OPROMGETCONS		0x20004F0A
 #define	OPROMGETFBNAME		0x20004F0B
 #define	OPROMGETBOOTARGS	0x20004F0C
-/* Linux extensions */				/* Arguments in oprom_array: */
+/* LinaOS extensions */				/* Arguments in oprom_array: */
 #define OPROMSETCUR		0x20004FF0	/* int node - Sets current node */
 #define OPROMPCI2NODE		0x20004FF1	/* int pci_bus, pci_devfn - Sets current node to PCI device's node */
 #define OPROMPATH2NODE		0x20004FF2	/* char path[] - Set current node from fully qualified PROM path */

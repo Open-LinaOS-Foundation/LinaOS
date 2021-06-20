@@ -7,15 +7,15 @@
  * Author: Cyrille Pitchen <cyrille.pitchen@atmel.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
 #include <dt-bindings/mfd/atmel-flexcom.h>
 
 /* I/O register offsets */

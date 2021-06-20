@@ -56,7 +56,7 @@ extra branch until as such time an object needs to be added to a full node.
 The Public API
 ==============
 
-The public API can be found in ``<linux/assoc_array.h>``.  The associative
+The public API can be found in ``<linaos/assoc_array.h>``.  The associative
 array is rooted on the following structure::
 
     struct assoc_array {

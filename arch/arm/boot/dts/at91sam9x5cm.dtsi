@@ -123,7 +123,7 @@
 		pb18 {
 			label = "pb18";
 			gpios = <&pioB 18 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		pd21 {
@@ -135,7 +135,7 @@
 	1wire_cm {
 		compatible = "w1-gpio";
 		gpios = <&pioB 18 GPIO_ACTIVE_HIGH>;
-		linux,open-drain;
+		linaos,open-drain;
 		pinctrl-names = "default";
 		pinctrl-0 = <&pinctrl_1wire_cm>;
 		status = "okay";

@@ -40,12 +40,12 @@
 #include <sys/mman.h>
 #include <sys/prctl.h>
 
-#include <linux/bitops.h>
-#include <linux/hash.h>
-#include <linux/log2.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linaos/bitops.h>
+#include <linaos/hash.h>
+#include <linaos/log2.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
+#include <linaos/zalloc.h>
 #include <perf/evlist.h>
 #include <perf/evsel.h>
 #include <perf/cpumap.h>

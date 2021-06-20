@@ -2,7 +2,7 @@
 #ifndef _NET_DST_CACHE_H
 #define _NET_DST_CACHE_H
 
-#include <linux/jiffies.h>
+#include <linaos/jiffies.h>
 #include <net/dst.h>
 #if IS_ENABLED(CONFIG_IPV6)
 #include <net/ip6_fib.h>

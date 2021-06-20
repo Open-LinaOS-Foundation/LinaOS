@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 /*
- * Linux device driver for ADMtek ADM8211 (IEEE 802.11b MAC/BBP)
+ * LinaOS device driver for ADMtek ADM8211 (IEEE 802.11b MAC/BBP)
  *
  * Copyright (c) 2003, Jouni Malinen <j@w1.fi>
  * Copyright (c) 2004-2007, Michael Wu <flamingice@sourmilk.net>
@@ -11,16 +11,16 @@
  * Much thanks to Infineon-ADMtek for their support of this driver.
  */
 
-#include <linux/interrupt.h>
-#include <linux/if.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/eeprom_93cx6.h>
-#include <linux/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/if.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/etherdevice.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/crc32.h>
+#include <linaos/eeprom_93cx6.h>
+#include <linaos/module.h>
 #include <net/mac80211.h>
 
 #include "adm8211.h"

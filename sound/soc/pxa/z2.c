@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/sound/soc/pxa/z2.c
+ * linaos/sound/soc/pxa/z2.c
  *
  * SoC Audio driver for Aeronix Zipit Z2
  *
@@ -8,12 +8,12 @@
  * Copyright (C) 2010 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

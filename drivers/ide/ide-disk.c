@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  *  Copyright (C) 1994-1998	   Linus Torvalds & authors (see below)
- *  Copyright (C) 1998-2002	   Linux ATA Development
- *				      Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 1998-2002	   LinaOS ATA Development
+ *				      Andre Hedrick <andre@linaos-ide.org>
  *  Copyright (C) 2003		   Red Hat
  *  Copyright (C) 2003-2005, 2007  Bartlomiej Zolnierkiewicz
  */
@@ -10,29 +10,29 @@
 /*
  *  Mostly written by Mark Lord <mlord@pobox.com>
  *                and Gadi Oxman <gadio@netvision.net.il>
- *                and Andre Hedrick <andre@linux-ide.org>
+ *                and Andre Hedrick <andre@linaos-ide.org>
  *
  * This is the IDE/ATA disk driver, as evolved from hd.c and ide.c.
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/genhd.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/leds.h>
-#include <linux/ide.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/major.h>
+#include <linaos/errno.h>
+#include <linaos/genhd.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/leds.h>
+#include <linaos/ide.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/div64.h>
 

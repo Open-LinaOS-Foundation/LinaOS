@@ -6,11 +6,11 @@
  *
  *  Copyright (C) 2006 - 2008  Paul Mundt
  */
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/stacktrace.h>
-#include <linux/thread_info.h>
-#include <linux/module.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/stacktrace.h>
+#include <linaos/thread_info.h>
+#include <linaos/module.h>
 #include <asm/unwinder.h>
 #include <asm/ptrace.h>
 #include <asm/stacktrace.h>

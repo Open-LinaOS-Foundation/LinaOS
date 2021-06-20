@@ -10,12 +10,12 @@
  * Author: Dan Magenheimer
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/exportfs.h>
-#include <linux/mm.h>
-#include <linux/debugfs.h>
-#include <linux/cleancache.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/exportfs.h>
+#include <linaos/mm.h>
+#include <linaos/debugfs.h>
+#include <linaos/cleancache.h>
 
 /*
  * cleancache_ops is set by cleancache_register_ops to contain the pointers

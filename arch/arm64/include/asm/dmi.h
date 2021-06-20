@@ -14,8 +14,8 @@
 #ifndef __ASM_DMI_H
 #define __ASM_DMI_H
 
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
 /*
  * According to section 2.3.6 of the UEFI spec, the firmware should not

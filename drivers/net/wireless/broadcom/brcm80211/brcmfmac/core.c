@@ -3,10 +3,10 @@
  * Copyright (c) 2010 Broadcom Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/inetdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/inetdevice.h>
 #include <net/cfg80211.h>
 #include <net/rtnetlink.h>
 #include <net/addrconf.h>

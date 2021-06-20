@@ -9,29 +9,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>
-#include <linux/sxgbe_platform.h>
+#include <linaos/clk.h>
+#include <linaos/crc32.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/if.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ip.h>
+#include <linaos/kernel.h>
+#include <linaos/mii.h>
+#include <linaos/module.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/netdevice.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/prefetch.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/tcp.h>
+#include <linaos/sxgbe_platform.h>
 
 #include "sxgbe_common.h"
 #include "sxgbe_desc.h"
@@ -1766,7 +1766,7 @@ static void sxgbe_get_stats64(struct net_device *dev,
  *  @dev : device pointer.
  *  @features : features which are required to be set.
  *  Description:
- *  This function is a driver entry point and called by Linux kernel whenever
+ *  This function is a driver entry point and called by LinaOS kernel whenever
  *  any device features are set or reset by user.
  *  Return value:
  *  This function returns 0 after setting or resetting device features.

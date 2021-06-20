@@ -11,7 +11,7 @@
 #ifndef _ASM_DELAY_H
 #define _ASM_DELAY_H
 
-#include <linux/param.h>
+#include <linaos/param.h>
 
 extern void __delay(unsigned long loops);
 extern void __ndelay(unsigned long ns);

@@ -19,10 +19,10 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
+#include <linaos/fs.h>
+#include <linaos/posix_acl_xattr.h>
+#include <linaos/slab.h>
+#include <linaos/xattr.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
 #include "cifsglob.h"

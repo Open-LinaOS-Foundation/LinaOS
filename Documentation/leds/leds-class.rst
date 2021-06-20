@@ -1,5 +1,5 @@
 ========================
-LED handling under Linux
+LED handling under LinaOS
 ========================
 
 In its simplest form, the LED class just allows control of LEDs from
@@ -63,7 +63,7 @@ Is currently of the form:
         include/dt-bindings/leds/common.h.
 
 If required color or function is missing, please submit a patch
-to linux-leds@vger.kernel.org.
+to linaos-leds@vger.kernel.org.
 
 It is possible that more than one LED with the same color and function will
 be required for given platform, differing only with an ordinal number.
@@ -152,7 +152,7 @@ Hardware accelerated blink of LEDs
 
 Some LEDs can be programmed to blink without any CPU interaction. To
 support this feature, a LED driver can optionally implement the
-blink_set() function (see <linux/leds.h>). To set an LED to blinking,
+blink_set() function (see <linaos/leds.h>). To set an LED to blinking,
 however, it is better to use the API function led_blink_set(), as it
 will check and implement software fallback if necessary.
 

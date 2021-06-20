@@ -11,12 +11,12 @@
  *   o Support for DAPM
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mfd/wm97xx.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/mfd/wm97xx.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/ac97_codec.h>

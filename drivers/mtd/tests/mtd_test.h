@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/mtd/mtd.h>
-#include <linux/sched/signal.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/sched/signal.h>
 
 static inline int mtdtest_relax(void)
 {

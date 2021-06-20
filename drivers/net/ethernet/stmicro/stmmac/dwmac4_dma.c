@@ -10,7 +10,7 @@
  * Author: Alexandre Torgue <alexandre.torgue@st.com>
  */
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include "dwmac4.h"
 #include "dwmac4_dma.h"
 

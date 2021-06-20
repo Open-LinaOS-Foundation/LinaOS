@@ -18,8 +18,8 @@
  * For more detailed information, please refer to QMU Programming Guide
  */
 
-#include <linux/dmapool.h>
-#include <linux/iopoll.h>
+#include <linaos/dmapool.h>
+#include <linaos/iopoll.h>
 
 #include "mtu3.h"
 #include "mtu3_trace.h"

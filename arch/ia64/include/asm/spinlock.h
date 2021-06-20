@@ -5,16 +5,16 @@
 /*
  * Copyright (C) 1998-2003 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 Walt Drummond <drummond@valinaos.com>
  *
  * This file is used for SMP configurations only.
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/bitops.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/intrinsics.h>
 #include <asm/barrier.h>
 #include <asm/processor.h>

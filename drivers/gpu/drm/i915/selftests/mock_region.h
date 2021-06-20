@@ -6,7 +6,7 @@
 #ifndef __MOCK_REGION_H
 #define __MOCK_REGION_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_private;
 struct intel_memory_region;

@@ -4,14 +4,14 @@
  *
  * Authors: Gayatri Kammela <gayatri.kammela@intel.com>
  *	    Sohil Mehta <sohil.mehta@intel.com>
- *	    Jacob Pan <jacob.jun.pan@linux.intel.com>
- *	    Lu Baolu <baolu.lu@linux.intel.com>
+ *	    Jacob Pan <jacob.jun.pan@linaos.intel.com>
+ *	    Lu Baolu <baolu.lu@linaos.intel.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/dmar.h>
-#include <linux/intel-iommu.h>
-#include <linux/pci.h>
+#include <linaos/debugfs.h>
+#include <linaos/dmar.h>
+#include <linaos/intel-iommu.h>
+#include <linaos/pci.h>
 
 #include <asm/irq_remapping.h>
 

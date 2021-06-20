@@ -5,27 +5,27 @@
  * Copyright (C) 2004, 2008 Oracle.  All rights reserved.
  *
  * CREDITS:
- * Lots of code in this file is copy from linux/fs/ext3/xattr.c.
+ * Lots of code in this file is copy from linaos/fs/ext3/xattr.c.
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  */
 
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/sched.h>
-#include <linux/splice.h>
-#include <linux/mount.h>
-#include <linux/writeback.h>
-#include <linux/falloc.h>
-#include <linux/sort.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/security.h>
+#include <linaos/capability.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/highmem.h>
+#include <linaos/pagemap.h>
+#include <linaos/uio.h>
+#include <linaos/sched.h>
+#include <linaos/splice.h>
+#include <linaos/mount.h>
+#include <linaos/writeback.h>
+#include <linaos/falloc.h>
+#include <linaos/sort.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/security.h>
 
 #include <cluster/masklog.h>
 

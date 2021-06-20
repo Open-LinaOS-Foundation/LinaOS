@@ -4,8 +4,8 @@
  *
  * Copyright IBM Corp. 2017
  *
- * Author(s): Dong Jia Shi <bjsdjshi@linux.vnet.ibm.com>
- *            Xiao Feng Ren <renxiaof@linux.vnet.ibm.com>
+ * Author(s): Dong Jia Shi <bjsdjshi@linaos.vnet.ibm.com>
+ *            Xiao Feng Ren <renxiaof@linaos.vnet.ibm.com>
  */
 
 #ifndef _VFIO_CCW_CP_H_

@@ -5,13 +5,13 @@
 #ifndef _LINUX_TICK_H
 #define _LINUX_TICK_H
 
-#include <linux/clockchips.h>
-#include <linux/irqflags.h>
-#include <linux/percpu.h>
-#include <linux/context_tracking_state.h>
-#include <linux/cpumask.h>
-#include <linux/sched.h>
-#include <linux/rcupdate.h>
+#include <linaos/clockchips.h>
+#include <linaos/irqflags.h>
+#include <linaos/percpu.h>
+#include <linaos/context_tracking_state.h>
+#include <linaos/cpumask.h>
+#include <linaos/sched.h>
+#include <linaos/rcupdate.h>
 
 #ifdef CONFIG_GENERIC_CLOCKEVENTS
 extern void __init tick_init(void);

@@ -5,13 +5,13 @@
  * Copyright 2020 GRATE-driver project
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/reboot.h>
+#include <linaos/regmap.h>
 
 #define A500_EC_I2C_ERR_TIMEOUT		500
 #define A500_EC_POWER_CMD_TIMEOUT	1000

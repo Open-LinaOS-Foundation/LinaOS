@@ -7,10 +7,10 @@
 #ifndef _CX25840_CORE_H_
 #define _CX25840_CORE_H_
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 struct cx25840_ir_state;
 

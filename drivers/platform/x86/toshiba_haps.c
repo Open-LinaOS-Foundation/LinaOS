@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/acpi.h>
 
 MODULE_AUTHOR("Azael Avalos <coproscefalo@gmail.com>");
 MODULE_DESCRIPTION("Toshiba HDD Active Protection Sensor");

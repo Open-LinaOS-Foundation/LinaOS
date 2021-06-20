@@ -12,7 +12,7 @@ builds on an earlier LWN article [1].
 ACCESS-MARKING OPTIONS
 ======================
 
-The Linux kernel provides the following access-marking options:
+The LinaOS kernel provides the following access-marking options:
 
 1.	Plain C-language accesses (unmarked), for example, "a = b;"
 

@@ -7,7 +7,7 @@ libATA Developer's Guide
 Introduction
 ============
 
-libATA is a library used inside the Linux kernel to support ATA host
+libATA is a library used inside the LinaOS kernel to support ATA host
 controllers and devices. libATA provides an ATA driver API, class
 transports for ATA and ATAPI devices, and SCSI<->ATA translation for ATA
 devices according to the T10 SAT specification.
@@ -1019,7 +1019,7 @@ Thanks
 ======
 
 The bulk of the ATA knowledge comes thanks to long conversations with
-Andre Hedrick (www.linux-ide.org), and long hours pondering the ATA and
+Andre Hedrick (www.linaos-ide.org), and long hours pondering the ATA and
 SCSI specifications.
 
 Thanks to Alan Cox for pointing out similarities between SATA and SCSI,

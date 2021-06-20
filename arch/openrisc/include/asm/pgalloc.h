@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * OpenRISC Linux
+ * OpenRISC LinaOS
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -16,9 +16,9 @@
 #define __ASM_OPENRISC_PGALLOC_H
 
 #include <asm/page.h>
-#include <linux/threads.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
+#include <linaos/threads.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
 
 #define __HAVE_ARCH_PTE_ALLOC_ONE_KERNEL
 #include <asm-generic/pgalloc.h>

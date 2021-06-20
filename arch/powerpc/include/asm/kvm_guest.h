@@ -7,7 +7,7 @@
 #define _ASM_POWERPC_KVM_GUEST_H_
 
 #if defined(CONFIG_PPC_PSERIES) || defined(CONFIG_KVM_GUEST)
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 
 DECLARE_STATIC_KEY_FALSE(kvm_guest);
 

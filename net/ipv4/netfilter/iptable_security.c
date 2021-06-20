@@ -12,9 +12,9 @@
  * Copyright (C) 2000-2004 Netfilter Core Team <coreteam <at> netfilter.org>
  * Copyright (C) 2008 Red Hat, Inc., James Morris <jmorris <at> redhat.com>
  */
-#include <linux/module.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/netfilter_ipv4/ip_tables.h>
+#include <linaos/slab.h>
 #include <net/ip.h>
 
 MODULE_LICENSE("GPL");

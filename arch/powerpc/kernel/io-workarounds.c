@@ -8,9 +8,9 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/sched/mm.h>	/* for init_mm */
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/mm.h>	/* for init_mm */
+#include <linaos/pgtable.h>
 
 #include <asm/io.h>
 #include <asm/machdep.h>

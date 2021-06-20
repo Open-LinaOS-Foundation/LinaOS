@@ -768,14 +768,14 @@ config SCHED_OMIT_FRAME_POINTER
 	  If in doubt, say "Y".
 
 menuconfig HYPERVISOR_GUEST
-	bool "Linux guest support"
+	bool "LinaOS guest support"
 	help
-	  Say Y here to enable options for running Linux under various hyper-
+	  Say Y here to enable options for running LinaOS under various hyper-
 	  visors. This option enables basic hypervisor detection and platform
 	  setup.
 
 	  If you say N, all options in this submenu will be skipped and
-	  disabled, and Linux guest support won't be built in.
+	  disabled, and LinaOS guest support won't be built in.
 
 if HYPERVISOR_GUEST
 
@@ -861,16 +861,16 @@ config JAILHOUSE_GUEST
 	depends on X86_64 && PCI
 	select X86_PM_TIMER
 	help
-	  This option allows to run Linux as guest in a Jailhouse non-root
+	  This option allows to run LinaOS as guest in a Jailhouse non-root
 	  cell. You can leave this option disabled if you only want to start
-	  Jailhouse and run Linux afterwards in the root cell.
+	  Jailhouse and run LinaOS afterwards in the root cell.
 
 config ACRN_GUEST
 	bool "ACRN Guest support"
 	depends on X86_64
 	select X86_HV_CALLBACK_VECTOR
 	help
-	  This option allows to run Linux as guest in the ACRN hypervisor. ACRN is
+	  This option allows to run LinaOS as guest in the ACRN hypervisor. ACRN is
 	  a flexible, lightweight reference open-source hypervisor, built with
 	  real-time and safety-criticality in mind. It is built for embedded
 	  IOT with small footprint and real-time features. More details can be
@@ -1254,7 +1254,7 @@ config TOSHIBA
 	  is used to set the BIOS and power saving options on Toshiba portables.
 
 	  For information on utilities to make use of this driver see the
-	  Toshiba Linux utilities web site at:
+	  Toshiba LinaOS utilities web site at:
 	  <http://www.buzzard.org.uk/toshiba/>.
 
 	  Say Y if you intend to run this kernel on a Toshiba portable.
@@ -1303,7 +1303,7 @@ config MICROCODE
 	  e.g. Pentium Pro, Pentium II, Pentium III, Pentium 4, Xeon etc. The
 	  AMD support is for families 0x10 and later. You will obviously need
 	  the actual microcode binary data itself which is not shipped with
-	  the Linux kernel.
+	  the LinaOS kernel.
 
 	  The preferred method to load microcode from a detached initrd is described
 	  in Documentation/x86/microcode.rst. For that you need to enable
@@ -1324,7 +1324,7 @@ config MICROCODE_INTEL
 
 	  For the current Intel microcode data package go to
 	  <https://downloadcenter.intel.com> and search for
-	  'Linux Processor Microcode Data File'.
+	  'LinaOS Processor Microcode Data File'.
 
 config MICROCODE_AMD
 	bool "AMD microcode loading support"
@@ -1370,7 +1370,7 @@ choice
 config NOHIGHMEM
 	bool "off"
 	help
-	  Linux can use up to 64 Gigabytes of physical memory on x86 systems.
+	  LinaOS can use up to 64 Gigabytes of physical memory on x86 systems.
 	  However, the address space of 32-bit x86 processors is only 4
 	  Gigabytes large. That means that, if you have a large amount of
 	  physical memory, not all of it can be "permanently mapped" by the
@@ -1391,7 +1391,7 @@ config NOHIGHMEM
 	  If more than 4 Gigabytes is used then answer "64GB" here. This
 	  selection turns Intel PAE (Physical Address Extension) mode on.
 	  PAE implements 3-level paging on IA32 processors. PAE is fully
-	  supported by Linux, PAE mode is implemented on all recent Intel
+	  supported by LinaOS, PAE mode is implemented on all recent Intel
 	  processors (Pentium Pro and better). NOTE: If you say "64GB" here,
 	  then the kernel will not boot on CPUs that don't support PAE!
 
@@ -1727,7 +1727,7 @@ config MATH_EMULATION
 	depends on MODIFY_LDT_SYSCALL
 	prompt "Math emulation" if X86_32 && (M486SX || MELAN)
 	help
-	  Linux can emulate a math coprocessor (used for floating point
+	  LinaOS can emulate a math coprocessor (used for floating point
 	  operations) if you don't have one. 486DX and Pentium processors have
 	  a math coprocessor built in, 486SX and 386 do not, unless you added
 	  a 487DX or 387, respectively. (The messages during boot time can
@@ -1743,7 +1743,7 @@ config MATH_EMULATION
 	  boot time.) This means that it is a good idea to say Y here if you
 	  intend to use this kernel on different machines.
 
-	  More information about the internals of the Linux math coprocessor
+	  More information about the internals of the LinaOS math coprocessor
 	  emulation can be found in <file:arch/x86/math-emu/README>.
 
 	  If you are not sure, say Y; apart from resulting in a 66 KB bigger
@@ -1998,7 +1998,7 @@ config KEXEC
 	  kexec is a system call that implements the ability to shutdown your
 	  current kernel, and to start another kernel.  It is like a reboot
 	  but it is independent of the system firmware.   And like a reboot
-	  you can start any kernel with it, not just Linux.
+	  you can start any kernel with it, not just LinaOS.
 
 	  The name comes from the similarity to the exec system call.
 
@@ -2091,13 +2091,13 @@ config PHYSICAL_START
 	  (CONFIG_RELOCATABLE=y) and be used to load and run from a different
 	  address. This option is mainly useful for the folks who don't want
 	  to use a bzImage for capturing the crash dump and want to use a
-	  vmlinux instead. vmlinux is not relocatable hence a kernel needs
+	  vmlinaos instead. vmlinaos is not relocatable hence a kernel needs
 	  to be specifically compiled to run from a specific memory area
 	  (normally a reserved region) and this option comes handy.
 
 	  So if you are using bzImage for capturing the crash dump,
 	  leave the value here unchanged to 0x1000000 and set
-	  CONFIG_RELOCATABLE=y.  Otherwise if you plan to use vmlinux
+	  CONFIG_RELOCATABLE=y.  Otherwise if you plan to use vmlinaos
 	  for capturing the crash dump change this value to start of
 	  the reserved region.  In other words, it can be set based on
 	  the "X" value as specified in the "crashkernel=YM@XM"
@@ -2110,7 +2110,7 @@ config PHYSICAL_START
 	  as production kernel and capture kernel. Above option should have
 	  gone away after relocatable bzImage support is introduced. But it
 	  is present because there are users out there who continue to use
-	  vmlinux for dump capture. This option should go away down the
+	  vmlinaos for dump capture. This option should go away down the
 	  line.
 
 	  Don't change this unless you know what you are doing.
@@ -2412,7 +2412,7 @@ config MODIFY_LDT_SYSCALL
 	bool "Enable the LDT (local descriptor table)" if EXPERT
 	default y
 	help
-	  Linux can allow user programs to install a per-process x86
+	  LinaOS can allow user programs to install a per-process x86
 	  Local Descriptor Table (LDT) using the modify_ldt(2) system
 	  call.  This is required to run 16-bit or segmented code such as
 	  DOSEMU or some Wine programs.  It is also used by some very old
@@ -2472,7 +2472,7 @@ menuconfig APM
 
 	  In order to use APM, you will need supporting software. For location
 	  and more information, read <file:Documentation/power/apm-acpi.rst>
-	  and the Battery Powered Linux mini-HOWTO, available from
+	  and the Battery Powered LinaOS mini-HOWTO, available from
 	  <http://www.tldp.org/docs.html#howto>.
 
 	  This driver does not spin down disk drives (see the hdparm(8)
@@ -2528,7 +2528,7 @@ config APM_DO_ENABLE
 	  specification: "When disabled, the APM BIOS does not automatically
 	  power manage devices, enter the Standby State, enter the Suspend
 	  State, or take power saving steps in response to CPU Idle calls."
-	  This driver will make CPU Idle calls when Linux is idle (unless this
+	  This driver will make CPU Idle calls when LinaOS is idle (unless this
 	  feature is turned off -- see "Do CPU IDLE calls", below). This
 	  should always save battery power, but more complicated APM features
 	  will be dependent on your BIOS implementation. You may need to turn
@@ -2554,7 +2554,7 @@ config APM_DISPLAY_BLANK
 	bool "Enable console blanking using APM"
 	help
 	  Enable console blanking using the APM. Some laptops can use this to
-	  turn off the LCD backlight when the screen blanker of the Linux
+	  turn off the LCD backlight when the screen blanker of the LinaOS
 	  virtual console blanks the screen. Note that this is only used by
 	  the virtual console screen blanker, and won't turn off the backlight
 	  when using the X Window system. This also doesn't have anything to
@@ -2594,10 +2594,10 @@ choice
 	  On PCI systems, the BIOS can be used to detect the PCI devices and
 	  determine their configuration. However, some old PCI motherboards
 	  have BIOS bugs and may crash if this is done. Also, some embedded
-	  PCI-based systems don't have any BIOS at all. Linux can also try to
+	  PCI-based systems don't have any BIOS at all. LinaOS can also try to
 	  detect the PCI hardware directly without using the BIOS.
 
-	  With this option, you can specify how Linux should detect the
+	  With this option, you can specify how LinaOS should detect the
 	  PCI devices. If you choose "BIOS", the BIOS will be used,
 	  if you choose "Direct", the BIOS won't be used, and if you
 	  choose "MMConfig", then PCI Express MMCONFIG will be used.

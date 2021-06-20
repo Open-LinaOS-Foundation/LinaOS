@@ -6,23 +6,23 @@
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1999 Andrew R. Baker (andrewb@uab.edu)
  * Copyright (C) 2001 Florian Lohoff (flo@rfc822.org)
- * Copyright (C) 2003, 07 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2003, 07 Ralf Baechle (ralf@linaos-mips.org)
  * 
  * (In all truth, Jed Schimmel wrote all this code.)
  */
 
 #undef DEBUG
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/gfp.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
 
 #include <asm/sgi/hpc3.h>
 #include <asm/sgi/ip22.h>
@@ -319,6 +319,6 @@ module_init(sgiwd93_module_init);
 module_exit(sgiwd93_module_exit);
 
 MODULE_DESCRIPTION("SGI WD33C93 driver");
-MODULE_AUTHOR("Ralf Baechle <ralf@linux-mips.org>");
+MODULE_AUTHOR("Ralf Baechle <ralf@linaos-mips.org>");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:sgiwd93");

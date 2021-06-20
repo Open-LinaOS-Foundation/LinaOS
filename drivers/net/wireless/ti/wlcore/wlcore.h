@@ -8,7 +8,7 @@
 #ifndef __WLCORE_H__
 #define __WLCORE_H__
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #include "wlcore_i.h"
 #include "event.h"

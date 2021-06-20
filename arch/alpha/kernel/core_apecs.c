@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/core_apecs.c
+ *	linaos/arch/alpha/kernel/core_apecs.c
  *
  * Rewritten for Apecs from the lca.c from:
  *
@@ -16,9 +16,9 @@
 #include <asm/core_apecs.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
 
 #include <asm/ptrace.h>
 #include <asm/smp.h>

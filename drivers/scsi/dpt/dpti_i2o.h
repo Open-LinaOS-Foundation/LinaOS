@@ -14,10 +14,10 @@
 
 #ifdef __KERNEL__       /* This file to be included by kernel only */
 
-#include <linux/i2o-dev.h>
+#include <linaos/i2o-dev.h>
 
-#include <linux/notifier.h>
-#include <linux/atomic.h>
+#include <linaos/notifier.h>
+#include <linaos/atomic.h>
 
 
 /*
@@ -40,7 +40,7 @@
  *	I2O Interface Objects
  */
 
-#include <linux/wait.h>
+#include <linaos/wait.h>
 typedef wait_queue_head_t adpt_wait_queue_head_t;
 #define ADPT_DECLARE_WAIT_QUEUE_HEAD(wait) DECLARE_WAIT_QUEUE_HEAD_ONSTACK(wait)
 typedef wait_queue_entry_t adpt_wait_queue_entry_t;
@@ -68,7 +68,7 @@ struct i2o_device
 	struct i2o_device *next;	/* Chain */
 	struct i2o_device *prev;
 
-	char dev_name[8];		/* linux /dev name if available */
+	char dev_name[8];		/* linaos /dev name if available */
 	i2o_lct_entry lct_data;/* Device LCT information */
 	u32 flags;
 	struct proc_dir_entry* proc_entry;	/* /proc dir */

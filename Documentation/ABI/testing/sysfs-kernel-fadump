@@ -1,6 +1,6 @@
 What:		/sys/kernel/fadump/*
 Date:		Dec 2019
-Contact:	linuxppc-dev@lists.ozlabs.org
+Contact:	linaosppc-dev@lists.ozlabs.org
 Description:
 		The /sys/kernel/fadump/* is a collection of FADump sysfs
 		file provide information about the configuration status
@@ -8,7 +8,7 @@ Description:
 
 What:		/sys/kernel/fadump/enabled
 Date:		Dec 2019
-Contact:	linuxppc-dev@lists.ozlabs.org
+Contact:	linaosppc-dev@lists.ozlabs.org
 Description:	read only
 		Primarily used to identify whether the FADump is enabled in
 		the kernel or not.
@@ -16,7 +16,7 @@ User:		Kdump service
 
 What:		/sys/kernel/fadump/registered
 Date:		Dec 2019
-Contact:	linuxppc-dev@lists.ozlabs.org
+Contact:	linaosppc-dev@lists.ozlabs.org
 Description:	read/write
 		Helps to control the dump collect feature from userspace.
 		Setting 1 to this file enables the system to collect the
@@ -25,7 +25,7 @@ User:		Kdump service
 
 What:		/sys/kernel/fadump/release_mem
 Date:		Dec 2019
-Contact:	linuxppc-dev@lists.ozlabs.org
+Contact:	linaosppc-dev@lists.ozlabs.org
 Description:	write only
 		This is a special sysfs file and only available when
 		the system is booted to capture the vmcore using FADump.
@@ -34,7 +34,7 @@ Description:	write only
 
 What:		/sys/kernel/fadump/mem_reserved
 Date:		Dec 2019
-Contact:	linuxppc-dev@lists.ozlabs.org
+Contact:	linaosppc-dev@lists.ozlabs.org
 Description:	read only
 		Provide information about the amount of memory reserved by
 		FADump to save the crash dump in bytes.

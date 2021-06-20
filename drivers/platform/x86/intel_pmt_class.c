@@ -5,13 +5,13 @@
  * Copyright (c) 2020, Intel Corporation.
  * All Rights Reserved.
  *
- * Author: "Alexander Duyck" <alexander.h.duyck@linux.intel.com>
+ * Author: "Alexander Duyck" <alexander.h.duyck@linaos.intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/pci.h>
 
 #include "intel_pmt_class.h"
 
@@ -339,6 +339,6 @@ static void __exit pmt_class_exit(void)
 module_init(pmt_class_init);
 module_exit(pmt_class_exit);
 
-MODULE_AUTHOR("Alexander Duyck <alexander.h.duyck@linux.intel.com>");
+MODULE_AUTHOR("Alexander Duyck <alexander.h.duyck@linaos.intel.com>");
 MODULE_DESCRIPTION("Intel PMT Class driver");
 MODULE_LICENSE("GPL v2");

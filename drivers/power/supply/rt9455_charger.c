@@ -5,17 +5,17 @@
  * Copyright (C) 2015 Intel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/power_supply.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include <linux/usb/phy.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/power_supply.h>
+#include <linaos/i2c.h>
+#include <linaos/acpi.h>
+#include <linaos/usb/phy.h>
+#include <linaos/regmap.h>
 
 #define RT9455_MANUFACTURER			"Richtek"
 #define RT9455_MODEL_NAME			"RT9455"

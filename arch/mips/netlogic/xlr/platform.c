@@ -7,16 +7,16 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/resource.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/i2c.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/resource.h>
+#include <linaos/serial_8250.h>
+#include <linaos/serial_reg.h>
+#include <linaos/i2c.h>
+#include <linaos/usb/ehci_pdriver.h>
+#include <linaos/usb/ohci_pdriver.h>
 
 #include <asm/netlogic/haldefs.h>
 #include <asm/netlogic/xlr/iomap.h>

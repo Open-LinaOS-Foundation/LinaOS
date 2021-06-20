@@ -110,7 +110,7 @@
 			usart4: serial@fc010000 {
 				/* LMN */
 				pinctrl-0 = <&pinctrl_usart4 &pinctrl_usart4_rts>;
-				linux,rs485-enabled-at-boot-time;
+				linaos,rs485-enabled-at-boot-time;
 				status = "okay";
 			};
 

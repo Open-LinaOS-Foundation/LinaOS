@@ -9,14 +9,14 @@
 #ifndef _SCMI_COMMON_H
 #define _SCMI_COMMON_H
 
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scmi_protocol.h>
-#include <linux/types.h>
+#include <linaos/bitfield.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/scmi_protocol.h>
+#include <linaos/types.h>
 
 #include <asm/unaligned.h>
 

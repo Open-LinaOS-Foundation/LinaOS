@@ -5,7 +5,7 @@
 #if !defined(_TRACE_PBLK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_PBLK_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 struct ppa_addr;
 

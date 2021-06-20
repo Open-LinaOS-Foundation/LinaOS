@@ -10,8 +10,8 @@
 
 #include <crypto/algapi.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 #define CTR_RFC3686_NONCE_SIZE 4
 #define CTR_RFC3686_IV_SIZE 8

@@ -7,7 +7,7 @@ CONFIG_MODVERSIONS=y
 CONFIG_XTENSA_PLATFORM_XT2000=y
 CONFIG_GENERIC_CALIBRATE_DELAY=y
 CONFIG_CMDLINE_BOOL=y
-CONFIG_CMDLINE="console=ttyS0,38400 ip=bootp root=nfs nfsroot=/opt/montavista/pro/devkit/xtensa/linux_be/target memmap=128M@0"
+CONFIG_CMDLINE="console=ttyS0,38400 ip=bootp root=nfs nfsroot=/opt/montavista/pro/devkit/xtensa/linaos_be/target memmap=128M@0"
 CONFIG_BINFMT_MISC=y
 CONFIG_NET=y
 CONFIG_UNIX=y

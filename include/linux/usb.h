@@ -2,8 +2,8 @@
 #ifndef __LINUX_USB_H
 #define __LINUX_USB_H
 
-#include <linux/mod_devicetable.h>
-#include <linux/usb/ch9.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/usb/ch9.h>
 
 #define USB_MAJOR			180
 #define USB_DEVICE_MAJOR		189
@@ -11,17 +11,17 @@
 
 #ifdef __KERNEL__
 
-#include <linux/errno.h>        /* for -ENODEV */
-#include <linux/delay.h>	/* for mdelay() */
-#include <linux/interrupt.h>	/* for in_interrupt() */
-#include <linux/list.h>		/* for struct list_head */
-#include <linux/kref.h>		/* for struct kref */
-#include <linux/device.h>	/* for struct device */
-#include <linux/fs.h>		/* for struct file_operations */
-#include <linux/completion.h>	/* for struct completion */
-#include <linux/sched.h>	/* for current && schedule_timeout */
-#include <linux/mutex.h>	/* for struct mutex */
-#include <linux/pm_runtime.h>	/* for runtime PM */
+#include <linaos/errno.h>        /* for -ENODEV */
+#include <linaos/delay.h>	/* for mdelay() */
+#include <linaos/interrupt.h>	/* for in_interrupt() */
+#include <linaos/list.h>		/* for struct list_head */
+#include <linaos/kref.h>		/* for struct kref */
+#include <linaos/device.h>	/* for struct device */
+#include <linaos/fs.h>		/* for struct file_operations */
+#include <linaos/completion.h>	/* for struct completion */
+#include <linaos/sched.h>	/* for current && schedule_timeout */
+#include <linaos/mutex.h>	/* for struct mutex */
+#include <linaos/pm_runtime.h>	/* for runtime PM */
 
 struct usb_device;
 struct usb_driver;
@@ -283,7 +283,7 @@ void usb_put_intf(struct usb_interface *intf);
  * USB Resume Timer: Every Host controller driver should drive the resume
  * signalling on the bus for the amount of time defined by this macro.
  *
- * That way we will have a 'stable' behavior among all HCDs supported by Linux.
+ * That way we will have a 'stable' behavior among all HCDs supported by LinaOS.
  *
  * Note that the USB Specification states we should drive resume for *at least*
  * 20 ms, but it doesn't give an upper bound. This creates two possible
@@ -1918,7 +1918,7 @@ void usb_sg_wait(struct usb_sg_request *io);
 /* ----------------------------------------------------------------------- */
 
 /*
- * For various legacy reasons, Linux has a small cookie that's paired with
+ * For various legacy reasons, LinaOS has a small cookie that's paired with
  * a struct usb_device to identify an endpoint queue.  Queue characteristics
  * are defined by the endpoint's descriptor.  This cookie is called a "pipe",
  * an unsigned int encoded as:

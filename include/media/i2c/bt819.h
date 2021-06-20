@@ -9,7 +9,7 @@
 #ifndef _BT819_H_
 #define _BT819_H_
 
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 
 /* v4l2_device notifications. */
 

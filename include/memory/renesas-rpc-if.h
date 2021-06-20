@@ -10,8 +10,8 @@
 #ifndef __RENESAS_RPC_IF_H
 #define __RENESAS_RPC_IF_H
 
-#include <linux/pm_runtime.h>
-#include <linux/types.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/types.h>
 
 enum rpcif_data_dir {
 	RPCIF_NO_DATA,

@@ -6,10 +6,10 @@
 #ifndef __INTEL_BREADCRUMBS_TYPES__
 #define __INTEL_BREADCRUMBS_TYPES__
 
-#include <linux/irq_work.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/irq_work.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 
 /*
  * Rather than have every client wait upon all user interrupts,

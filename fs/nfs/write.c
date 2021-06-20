@@ -1,33 +1,33 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/nfs/write.c
+ * linaos/fs/nfs/write.c
  *
  * Write file data over NFS.
  *
  * Copyright (C) 1996, 1997, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/migrate.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/file.h>
+#include <linaos/writeback.h>
+#include <linaos/swap.h>
+#include <linaos/migrate.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs_page.h>
-#include <linux/backing-dev.h>
-#include <linux/export.h>
-#include <linux/freezer.h>
-#include <linux/wait.h>
-#include <linux/iversion.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_mount.h>
+#include <linaos/nfs_page.h>
+#include <linaos/backing-dev.h>
+#include <linaos/export.h>
+#include <linaos/freezer.h>
+#include <linaos/wait.h>
+#include <linaos/iversion.h>
 
-#include <linux/uaccess.h>
-#include <linux/sched/mm.h>
+#include <linaos/uaccess.h>
+#include <linaos/sched/mm.h>
 
 #include "delegation.h"
 #include "internal.h"

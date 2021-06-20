@@ -5,35 +5,35 @@
  *  Copyright (C) 2016 - 2020 Christoph Hellwig
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/major.h>
-#include <linux/device_cgroup.h>
-#include <linux/highmem.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/module.h>
-#include <linux/blkpg.h>
-#include <linux/magic.h>
-#include <linux/buffer_head.h>
-#include <linux/swap.h>
-#include <linux/pagevec.h>
-#include <linux/writeback.h>
-#include <linux/mpage.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/uio.h>
-#include <linux/namei.h>
-#include <linux/log2.h>
-#include <linux/cleancache.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/falloc.h>
-#include <linux/part_stat.h>
-#include <linux/uaccess.h>
-#include <linux/suspend.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/fcntl.h>
+#include <linaos/slab.h>
+#include <linaos/kmod.h>
+#include <linaos/major.h>
+#include <linaos/device_cgroup.h>
+#include <linaos/highmem.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/module.h>
+#include <linaos/blkpg.h>
+#include <linaos/magic.h>
+#include <linaos/buffer_head.h>
+#include <linaos/swap.h>
+#include <linaos/pagevec.h>
+#include <linaos/writeback.h>
+#include <linaos/mpage.h>
+#include <linaos/mount.h>
+#include <linaos/pseudo_fs.h>
+#include <linaos/uio.h>
+#include <linaos/namei.h>
+#include <linaos/log2.h>
+#include <linaos/cleancache.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/falloc.h>
+#include <linaos/part_stat.h>
+#include <linaos/uaccess.h>
+#include <linaos/suspend.h>
 #include "internal.h"
 
 struct bdev_inode {

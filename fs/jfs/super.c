@@ -4,23 +4,23 @@
  *   Portions Copyright (C) Christoph Hellwig, 2001-2002
  */
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/parser.h>
-#include <linux/completion.h>
-#include <linux/vfs.h>
-#include <linux/quotaops.h>
-#include <linux/mount.h>
-#include <linux/moduleparam.h>
-#include <linux/kthread.h>
-#include <linux/posix_acl.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/blkdev.h>
+#include <linaos/fs.h>
+#include <linaos/module.h>
+#include <linaos/parser.h>
+#include <linaos/completion.h>
+#include <linaos/vfs.h>
+#include <linaos/quotaops.h>
+#include <linaos/mount.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kthread.h>
+#include <linaos/posix_acl.h>
+#include <linaos/buffer_head.h>
+#include <linaos/exportfs.h>
+#include <linaos/crc32.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/seq_file.h>
+#include <linaos/blkdev.h>
 
 #include "jfs_incore.h"
 #include "jfs_filsys.h"

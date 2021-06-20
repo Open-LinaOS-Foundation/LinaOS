@@ -8,8 +8,8 @@
 #ifndef __CXGB4_DCB_H
 #define __CXGB4_DCB_H
 
-#include <linux/netdevice.h>
-#include <linux/dcbnl.h>
+#include <linaos/netdevice.h>
+#include <linaos/dcbnl.h>
 #include <net/dcbnl.h>
 
 #ifdef CONFIG_CHELSIO_T4_DCB

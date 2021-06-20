@@ -10,8 +10,8 @@
 #ifndef __M66592_UDC_H__
 #define __M66592_UDC_H__
 
-#include <linux/clk.h>
-#include <linux/usb/m66592.h>
+#include <linaos/clk.h>
+#include <linaos/usb/m66592.h>
 
 #define M66592_SYSCFG		0x00
 #define M66592_XTAL		0xC000	/* b15-14: Crystal selection */

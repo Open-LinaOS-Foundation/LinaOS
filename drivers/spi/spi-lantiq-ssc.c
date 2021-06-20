@@ -4,19 +4,19 @@
  * Copyright (C) 2016 Hauke Mehrtens <hauke@hauke-m.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/completion.h>
+#include <linaos/spinlock.h>
+#include <linaos/err.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/spi/spi.h>
 
 #ifdef CONFIG_LANTIQ
 #include <lantiq_soc.h>

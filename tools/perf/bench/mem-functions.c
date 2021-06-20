@@ -23,8 +23,8 @@
 #include <unistd.h>
 #include <sys/time.h>
 #include <errno.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <linaos/time64.h>
+#include <linaos/zalloc.h>
 
 #define K 1024
 

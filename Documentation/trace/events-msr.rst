@@ -34,7 +34,7 @@ rdpmc
 
 The trace data can be post processed with the postprocess/decode_msr.py script::
 
-  cat /sys/kernel/debug/tracing/trace | decode_msr.py /usr/src/linux/include/asm/msr-index.h
+  cat /sys/kernel/debug/tracing/trace | decode_msr.py /usr/src/linaos/include/asm/msr-index.h
 
 to add symbolic MSR names.
 

@@ -7,12 +7,12 @@
 #ifndef __LINUX_BVEC_ITER_H
 #define __LINUX_BVEC_ITER_H
 
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/limits.h>
-#include <linux/minmax.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linaos/bug.h>
+#include <linaos/errno.h>
+#include <linaos/limits.h>
+#include <linaos/minmax.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
 
 struct page;
 

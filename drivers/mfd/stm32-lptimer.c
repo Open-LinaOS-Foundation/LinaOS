@@ -6,9 +6,9 @@
  * Inspired by Benjamin Gaignard's stm32-timers driver
  */
 
-#include <linux/mfd/stm32-lptimer.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linaos/mfd/stm32-lptimer.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
 
 #define STM32_LPTIM_MAX_REGISTER	0x3fc
 

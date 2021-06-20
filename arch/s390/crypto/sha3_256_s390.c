@@ -9,9 +9,9 @@
  *   Author(s): Joerg Schmidbauer (jschmidb@de.ibm.com)
  */
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/cpufeature.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/cpufeature.h>
 #include <crypto/sha3.h>
 #include <asm/cpacf.h>
 

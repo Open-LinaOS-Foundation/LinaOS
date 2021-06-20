@@ -10,12 +10,12 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/syscore_ops.h>
+#include <linaos/clk.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
+#include <linaos/syscore_ops.h>
 #include <asm/cpu.h>
 #include <asm/mach-au1x00/au1000.h>
 

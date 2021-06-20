@@ -6,9 +6,9 @@
 #ifndef __TEGRA_CLK_H
 #define __TEGRA_CLK_H
 
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/delay.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clkdev.h>
+#include <linaos/delay.h>
 
 #define CLK_OUT_ENB_L			0x010
 #define CLK_OUT_ENB_H			0x014

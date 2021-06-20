@@ -5,10 +5,10 @@ AppArmor
 What is AppArmor?
 =================
 
-AppArmor is MAC style security extension for the Linux kernel.  It implements
+AppArmor is MAC style security extension for the LinaOS kernel.  It implements
 a task centered policy, with task "profiles" being created and loaded
 from user space.  Tasks on the system that do not have a profile defined for
-them run in an unconfined state which is equivalent to standard Linux DAC
+them run in an unconfined state which is equivalent to standard LinaOS DAC
 permissions.
 
 How to enable/disable
@@ -30,7 +30,7 @@ If AppArmor is the default security module it can be disabled by passing
 ``apparmor=0, security=XXXX`` (where ``XXXX`` is valid security module), on the
 kernel's command line.
 
-For AppArmor to enforce any restrictions beyond standard Linux DAC permissions
+For AppArmor to enforce any restrictions beyond standard LinaOS DAC permissions
 policy must be loaded into the kernel from user space (see the Documentation
 and tools links).
 
@@ -48,4 +48,4 @@ Wiki - http://wiki.apparmor.net
 
 User space tools - https://gitlab.com/apparmor
 
-Kernel module - git://git.kernel.org/pub/scm/linux/kernel/git/jj/linux-apparmor
+Kernel module - git://git.kernel.org/pub/scm/linaos/kernel/git/jj/linaos-apparmor

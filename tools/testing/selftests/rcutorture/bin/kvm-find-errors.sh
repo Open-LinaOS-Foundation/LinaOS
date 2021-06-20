@@ -15,7 +15,7 @@
 #
 # Copyright (C) IBM Corporation, 2018
 #
-# Author: Paul E. McKenney <paulmck@linux.ibm.com>
+# Author: Paul E. McKenney <paulmck@linaos.ibm.com>
 
 rundir="${1}"
 if test -z "$rundir" -o ! -d "$rundir"

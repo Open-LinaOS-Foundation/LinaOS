@@ -13,9 +13,9 @@
  *	info@addi-data.com
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
 
 #include "../comedi_pci.h"
 #include "addi_watchdog.h"

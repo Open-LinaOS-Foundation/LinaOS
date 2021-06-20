@@ -6,13 +6,13 @@
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  * Author: Rickard Andersson <rickard.andersson@stericsson.com>
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/genalloc.h>
-#include <linux/string.h> /* memcpy */
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/stddef.h>
+#include <linaos/ioport.h>
+#include <linaos/genalloc.h>
+#include <linaos/string.h> /* memcpy */
 #include <asm/cputype.h>
 #include <asm/mach/map.h>
 #include <asm/memory.h>

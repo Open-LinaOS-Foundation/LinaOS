@@ -13,29 +13,29 @@
 
 #define pr_fmt(fmt) "IPMI Watchdog: " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ipmi.h>
-#include <linux/ipmi_smi.h>
-#include <linux/mutex.h>
-#include <linux/watchdog.h>
-#include <linux/miscdevice.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/kdebug.h>
-#include <linux/rwsem.h>
-#include <linux/errno.h>
-#include <linux/uaccess.h>
-#include <linux/notifier.h>
-#include <linux/nmi.h>
-#include <linux/reboot.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
-#include <linux/sched/signal.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/ipmi.h>
+#include <linaos/ipmi_smi.h>
+#include <linaos/mutex.h>
+#include <linaos/watchdog.h>
+#include <linaos/miscdevice.h>
+#include <linaos/init.h>
+#include <linaos/completion.h>
+#include <linaos/kdebug.h>
+#include <linaos/rwsem.h>
+#include <linaos/errno.h>
+#include <linaos/uaccess.h>
+#include <linaos/notifier.h>
+#include <linaos/nmi.h>
+#include <linaos/reboot.h>
+#include <linaos/wait.h>
+#include <linaos/poll.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/delay.h>
+#include <linaos/atomic.h>
+#include <linaos/sched/signal.h>
 
 #ifdef CONFIG_X86
 /*

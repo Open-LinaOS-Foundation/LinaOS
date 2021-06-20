@@ -12,10 +12,10 @@
 #define _LINUX_ARCDEVICE_H
 
 #include <asm/timex.h>
-#include <linux/if_arcnet.h>
+#include <linaos/if_arcnet.h>
 
 #ifdef __KERNEL__
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 /*
  * RECON_THRESHOLD is the maximum number of RECON messages to receive
@@ -31,7 +31,7 @@
 
 /*
  * Define this to the minimum "timeout" value.  If a transmit takes longer
- * than TX_TIMEOUT jiffies, Linux will abort the TX and retry.  On a large
+ * than TX_TIMEOUT jiffies, LinaOS will abort the TX and retry.  On a large
  * network, or one with heavy network traffic, this timeout may need to be
  * increased.  The larger it is, though, the longer it will be between
  * necessary transmits - don't set this too high.

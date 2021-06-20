@@ -5,7 +5,7 @@
 #if !defined(_TRACE_MMAP_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_MMAP_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(vm_unmapped_area,
 

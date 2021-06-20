@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/inetdevice.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
+#include <linaos/types.h>
+#include <linaos/atomic.h>
+#include <linaos/inetdevice.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv6.h>
 
 #include <net/netfilter/nf_nat_masquerade.h>
 

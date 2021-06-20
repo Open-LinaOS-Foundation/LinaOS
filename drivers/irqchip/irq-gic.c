@@ -17,27 +17,27 @@
  * As such, the enable set/clear, pending set/clear and active bit
  * registers are banked per-cpu for these sources.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/cpumask.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/acpi.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqchip/arm-gic.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/smp.h>
+#include <linaos/cpu.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/cpumask.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/acpi.h>
+#include <linaos/irqdomain.h>
+#include <linaos/interrupt.h>
+#include <linaos/percpu.h>
+#include <linaos/slab.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/irqchip/arm-gic.h>
 
 #include <asm/cputype.h>
 #include <asm/irq.h>
@@ -949,7 +949,7 @@ void gic_migrate_target(unsigned int new_cpu_id)
 	 * Now let's migrate and clear any potential SGIs that might be
 	 * pending for us (cur_cpu_id).  Since GIC_DIST_SGI_PENDING_SET
 	 * is a banked register, we can only forward the SGI using
-	 * GIC_DIST_SOFTINT.  The original SGI source is lost but Linux
+	 * GIC_DIST_SOFTINT.  The original SGI source is lost but LinaOS
 	 * doesn't use that information anyway.
 	 *
 	 * For the same reason we do not adjust SGI source information

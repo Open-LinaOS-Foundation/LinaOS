@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/leds.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/input.h>
+#include <linaos/leds.h>
 
 #include <asm/mach-types.h>
 

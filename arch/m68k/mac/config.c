@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/mac/config.c
+ *  linaos/arch/m68k/mac/config.c
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
@@ -7,28 +7,28 @@
  */
 
 /*
- * Miscellaneous linux stuff
+ * Miscellaneous linaos stuff
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/tty.h>
+#include <linaos/console.h>
+#include <linaos/interrupt.h>
 /* keyb */
-#include <linux/random.h>
-#include <linux/delay.h>
+#include <linaos/random.h>
+#include <linaos/delay.h>
 /* keyb */
-#include <linux/init.h>
-#include <linux/vt_kern.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/pmu.h>
-#include <linux/rtc.h>
+#include <linaos/init.h>
+#include <linaos/vt_kern.h>
+#include <linaos/platform_device.h>
+#include <linaos/ata_platform.h>
+#include <linaos/adb.h>
+#include <linaos/cuda.h>
+#include <linaos/pmu.h>
+#include <linaos/rtc.h>
 
 #include <asm/setup.h>
 #include <asm/bootinfo.h>

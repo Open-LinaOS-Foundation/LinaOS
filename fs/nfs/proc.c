@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/nfs/proc.c
+ *  linaos/fs/nfs/proc.c
  *
  *  Copyright (C) 1992, 1993, 1994  Rick Sladkey
  *
@@ -28,21 +28,21 @@
  *  incomplete struct).
  */
 
-#include <linux/types.h>
-#include <linux/param.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/pagemap.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs.h>
-#include <linux/nfs2.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
-#include <linux/lockd/bind.h>
-#include <linux/freezer.h>
+#include <linaos/types.h>
+#include <linaos/param.h>
+#include <linaos/time.h>
+#include <linaos/mm.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/in.h>
+#include <linaos/pagemap.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/nfs.h>
+#include <linaos/nfs2.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_page.h>
+#include <linaos/lockd/bind.h>
+#include <linaos/freezer.h>
 #include "internal.h"
 
 #define NFSDBG_FACILITY		NFSDBG_PROC

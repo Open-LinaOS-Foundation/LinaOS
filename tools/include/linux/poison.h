@@ -2,7 +2,7 @@
 #ifndef _LINUX_POISON_H
 #define _LINUX_POISON_H
 
-/********** include/linux/list.h **********/
+/********** include/linaos/list.h **********/
 
 /*
  * Architectures might want to move the poison pointer offset
@@ -28,7 +28,7 @@
 #define LIST_POISON2  ((void *) 0x200 + POISON_POINTER_DELTA)
 #endif
 
-/********** include/linux/timer.h **********/
+/********** include/linaos/timer.h **********/
 /*
  * Magic number "tsta" to indicate a static timer initializer
  * for the object debugging code.

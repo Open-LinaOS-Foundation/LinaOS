@@ -3,13 +3,13 @@
  * Copyright (C) 2011-2012 Avionic Design GmbH
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of_irq.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
 
 #define GPIO_DDR(gpio) (0x00 << (gpio)->reg_shift)
 #define GPIO_PLR(gpio) (0x01 << (gpio)->reg_shift)

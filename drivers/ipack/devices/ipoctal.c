@@ -9,16 +9,16 @@
  * Author: Samuel Iglesias Gonsalvez <siglesias@igalia.com>
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/serial.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/ipack.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/tty.h>
+#include <linaos/serial.h>
+#include <linaos/tty_flip.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/ipack.h>
 #include "ipoctal.h"
 #include "scc2698.h"
 

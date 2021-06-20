@@ -8,7 +8,7 @@
 #ifndef _RT3883_REGS_H_
 #define _RT3883_REGS_H_
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define RT3883_SDRAM_BASE	0x00000000
 #define RT3883_SYSC_BASE	0x10000000

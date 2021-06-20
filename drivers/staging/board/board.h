@@ -2,8 +2,8 @@
 #ifndef __BOARD_H__
 #define __BOARD_H__
 
-#include <linux/init.h>
-#include <linux/of.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
 
 struct board_staging_clk {
 	const char *clk;

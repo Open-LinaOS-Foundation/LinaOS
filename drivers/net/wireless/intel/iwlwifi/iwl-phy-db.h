@@ -5,7 +5,7 @@
 #ifndef __IWL_PHYDB_H__
 #define __IWL_PHYDB_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "iwl-op-mode.h"
 #include "iwl-trans.h"

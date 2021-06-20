@@ -10,10 +10,10 @@
 #include "cx88.h"
 #include "cx88-vp3054-i2c.h"
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 
 MODULE_DESCRIPTION("driver for cx2388x VP3054 design");
 MODULE_AUTHOR("Chris Pascoe <c.pascoe@itee.uq.edu.au>");

@@ -5,14 +5,14 @@
  * Copyright (C) 2007, Intel Corp.
  *	Huang Ying <ying.huang@intel.com>
  */
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <linaos/debugfs.h>
+#include <linaos/uaccess.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/stat.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
 
 #include <asm/setup.h>
 

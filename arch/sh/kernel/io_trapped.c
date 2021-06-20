@@ -6,14 +6,14 @@
  *
  * Intercept io operations by trapping.
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/bitops.h>
+#include <linaos/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 #include <asm/mmu_context.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/io_trapped.h>
 

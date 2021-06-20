@@ -6,15 +6,15 @@
  * based on exynos_drm_drv.c
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/dma-iommu.h>
-#include <linux/pm_runtime.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/component.h>
-#include <linux/console.h>
-#include <linux/iommu.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dma-iommu.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/of_graph.h>
+#include <linaos/of_platform.h>
+#include <linaos/component.h>
+#include <linaos/console.h>
+#include <linaos/iommu.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_fb_helper.h>

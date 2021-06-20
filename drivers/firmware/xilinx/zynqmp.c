@@ -10,19 +10,19 @@
  *  Rajan Vaja <rajanv@xilinx.com>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/compiler.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/hashtable.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/compiler.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/hashtable.h>
 
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <linaos/firmware/xlnx-zynqmp.h>
 #include "zynqmp-debug.h"
 
 /* Max HashMap Order for PM API feature check (1<<7 = 128) */
@@ -50,10 +50,10 @@ static const struct mfd_cell firmware_devs[] = {
 };
 
 /**
- * zynqmp_pm_ret_code() - Convert PMU-FW error codes to Linux error codes
+ * zynqmp_pm_ret_code() - Convert PMU-FW error codes to LinaOS error codes
  * @ret_status:		PMUFW return code
  *
- * Return: corresponding Linux error code
+ * Return: corresponding LinaOS error code
  */
 static int zynqmp_pm_ret_code(u32 ret_status)
 {

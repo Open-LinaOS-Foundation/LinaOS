@@ -7,7 +7,7 @@
  * Copyright (C) 2016, 2017, 2018 Sony Semiconductor Solutions Corporation
  */
 
-#include <linux/spi/spi.h>
+#include <linaos/spi/spi.h>
 
 #include "cxd2880_spi_device.h"
 

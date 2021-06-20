@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/ptrace.h>
-#include <linux/uaccess.h>
+#include <linaos/ptrace.h>
+#include <linaos/uaccess.h>
 #include <abi/reg_ops.h>
 
 #define MTCR_MASK	0xFC00FFE0

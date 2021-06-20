@@ -14,7 +14,7 @@ Device Power Management Basics
 :Author: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
 
 
-Most of the code in Linux is device drivers, so most of the Linux power
+Most of the code in LinaOS is device drivers, so most of the LinaOS power
 management (PM) code is also driver-specific.  Most drivers will do very
 little; others, especially for platforms with small batteries (like cell
 phones), will do a lot.
@@ -99,7 +99,7 @@ Device Power Management Operations
 
 Device power management operations, at the subsystem level as well as at the
 device driver level, are implemented by defining and populating objects of type
-struct dev_pm_ops defined in :file:`include/linux/pm.h`.  The roles of the
+struct dev_pm_ops defined in :file:`include/linaos/pm.h`.  The roles of the
 methods included in it will be explained in what follows.  For now, it should be
 sufficient to remember that the last three methods are specific to runtime power
 management while the remaining ones are used during system-wide power
@@ -142,7 +142,7 @@ All device objects in the driver model contain fields that control the handling
 of system wakeup events (hardware signals that can force the system out of a
 sleep state).  These fields are initialized by bus or device driver code using
 :c:func:`device_set_wakeup_capable()` and :c:func:`device_set_wakeup_enable()`,
-defined in :file:`include/linux/pm_wakeup.h`.
+defined in :file:`include/linaos/pm_wakeup.h`.
 
 The :c:member:`power.can_wakeup` flag just records whether the device (and its
 driver) can physically support wakeup events.  The
@@ -494,7 +494,7 @@ states, like S3).
 Drivers must also be prepared to notice that the device has been removed
 while the system was powered down, whenever that's physically possible.
 PCMCIA, MMC, USB, Firewire, SCSI, and even IDE are common examples of busses
-where common Linux platforms will see such removal.  Details of how drivers
+where common LinaOS platforms will see such removal.  Details of how drivers
 will notice and handle such removals are currently bus-specific, and often
 involve a separate thread.
 
@@ -680,8 +680,8 @@ active too, it'd only be the CPU and some peripherals that sleep).
 Some details here may be platform-specific.  Systems may have devices that
 can be fully active in certain sleep states, such as an LCD display that's
 refreshed using DMA while most of the system is sleeping lightly ... and
-its frame buffer might even be updated by a DSP or other non-Linux CPU while
-the Linux control processor stays idle.
+its frame buffer might even be updated by a DSP or other non-LinaOS CPU while
+the LinaOS control processor stays idle.
 
 Moreover, the specific actions taken may depend on the target system state.
 One target system state might allow a given device to be very operational;
@@ -706,7 +706,7 @@ sub-domain of the parent domain.
 
 Support for power domains is provided through the :c:member:`pm_domain` field of
 struct device.  This field is a pointer to an object of type
-struct dev_pm_domain, defined in :file:`include/linux/pm.h`, providing a set
+struct dev_pm_domain, defined in :file:`include/linaos/pm.h`, providing a set
 of power management callbacks analogous to the subsystem-level and device driver
 callbacks that are executed for the given device during all power transitions,
 instead of the respective subsystem-level callbacks.  Specifically, if a

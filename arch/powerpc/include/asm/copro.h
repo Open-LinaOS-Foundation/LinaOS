@@ -6,7 +6,7 @@
 #ifndef _ASM_POWERPC_COPRO_H
 #define _ASM_POWERPC_COPRO_H
 
-#include <linux/mm_types.h>
+#include <linaos/mm_types.h>
 
 struct copro_slb
 {

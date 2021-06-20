@@ -12,14 +12,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/proc_fs.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/proc_fs.h>
+#include <linaos/pci.h>
+#include <linaos/pci_hotplug.h>
 #include "../pci.h"
 #include "cpqphp.h"
 #include "cpqphp_nvram.h"

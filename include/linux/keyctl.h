@@ -8,7 +8,7 @@
 #ifndef __LINUX_KEYCTL_H
 #define __LINUX_KEYCTL_H
 
-#include <uapi/linux/keyctl.h>
+#include <uapi/linaos/keyctl.h>
 
 struct kernel_pkey_query {
 	__u32		supported_ops;	/* Which ops are supported */

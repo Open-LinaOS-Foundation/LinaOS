@@ -13,14 +13,14 @@
  * information so framebuffer drivers can load correctly.
  */
 
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/screen_info.h>
+#include <linaos/dmi.h>
+#include <linaos/err.h>
+#include <linaos/efi.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/pci.h>
+#include <linaos/screen_info.h>
 #include <video/vga.h>
 
 #include <asm/efi.h>

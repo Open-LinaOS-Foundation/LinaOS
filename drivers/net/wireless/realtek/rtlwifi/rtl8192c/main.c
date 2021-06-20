@@ -2,7 +2,7 @@
 /* Copyright(c) 2009-2012  Realtek Corporation.*/
 
 #include "../wifi.h"
-#include <linux/module.h>
+#include <linaos/module.h>
 
 MODULE_AUTHOR("lizhaoming	<chaoming_li@realsil.com.cn>");
 MODULE_AUTHOR("Realtek WlanFAE	<wlanfae@realtek.com>");

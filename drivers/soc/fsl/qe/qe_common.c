@@ -13,16 +13,16 @@
  * 2006 (c) MontaVista Software, Inc.
  * Vitaly Bordug <vbordug@ru.mvista.com>
  */
-#include <linux/genalloc.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/of_device.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/genalloc.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/of_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/export.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 #include <soc/fsl/qe/qe.h>
 
 static struct gen_pool *muram_pool;

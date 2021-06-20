@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/sched/mm.h>
+#include <linaos/sched/mm.h>
 
 #include "display/intel_frontbuffer.h"
 #include "i915_drv.h"

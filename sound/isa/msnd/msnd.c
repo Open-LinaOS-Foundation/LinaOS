@@ -3,7 +3,7 @@
  *
  * 2002/06/30 Karsten Wiese:
  *	removed kernel-version dependencies.
- *	ripped from linux kernel 2.4.18 (OSS Implementation) by me.
+ *	ripped from linaos kernel 2.4.18 (OSS Implementation) by me.
  *	In the OSS Version, this file is compiled to a separate MODULE,
  *	that is used by the pinnacle and the classic driver.
  *	since there is no classic driver for alsa yet (i dont have a classic
@@ -16,20 +16,20 @@
  *
  * msnd.c - Driver Base
  *
- * Turtle Beach MultiSound Sound Card Driver for Linux
+ * Turtle Beach MultiSound Sound Card Driver for LinaOS
  *
  * Copyright (C) 1998 Andrew Veliath
  *
  ********************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/fs.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

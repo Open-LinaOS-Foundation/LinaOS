@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0+
 //
 // Copyright (c) 2004-2005 Simtec Electronics
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //	Ben Dooks <ben@simtec.co.uk>
 //
 // S3C2442 core and lock support
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/syscore_ops.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/mutex.h>
-#include <linux/gpio.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/device.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/mutex.h>
+#include <linaos/gpio.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/irq.h>
 
 #include "regs-clock.h"

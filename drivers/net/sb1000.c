@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* sb1000.c: A General Instruments SB1000 driver for linux. */
+/* sb1000.c: A General Instruments SB1000 driver for linaos. */
 /*
 	Written 1998 by Franco Venturi.
 
@@ -23,35 +23,35 @@
 	980608 Steven Hirsch <shirsch@adelphia.net>
 
 	Small changes to make it work with 2.1.x kernels. Hopefully,
-	nothing major will change before official release of Linux 2.2.
+	nothing major will change before official release of LinaOS 2.2.
 
 	Merged with 2.2 - Alan Cox
 */
 
 static char version[] = "sb1000.c:v1.1.2 6/01/98 (fventuri@mediaone.net)\n";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/if_cablemodem.h> /* for SIOGCM/SIOSCM stuff */
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>	/* for udelay() */
-#include <linux/etherdevice.h>
-#include <linux/pnp.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/if_cablemodem.h> /* for SIOGCM/SIOSCM stuff */
+#include <linaos/in.h>
+#include <linaos/ioport.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/skbuff.h>
+#include <linaos/delay.h>	/* for udelay() */
+#include <linaos/etherdevice.h>
+#include <linaos/pnp.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/gfp.h>
 
 #include <asm/io.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #ifdef SB1000_DEBUG
 static int sb1000_debug = SB1000_DEBUG;
@@ -75,7 +75,7 @@ struct sb1000_private {
 	unsigned char rx_pkt_type[NPIDS];
 };
 
-/* prototypes for Linux interface */
+/* prototypes for LinaOS interface */
 extern int sb1000_probe(struct net_device *dev);
 static int sb1000_open(struct net_device *dev);
 static int sb1000_dev_ioctl (struct net_device *dev, struct ifreq *ifr, int cmd);
@@ -921,7 +921,7 @@ sb1000_error_dpc(struct net_device *dev)
 
 
 /*
- * Linux interface functions
+ * LinaOS interface functions
  */
 static int
 sb1000_open(struct net_device *dev)

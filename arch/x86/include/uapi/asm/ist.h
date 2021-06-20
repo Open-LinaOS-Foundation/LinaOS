@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Include file for the interface to IST BIOS
  * Copyright 2002 Andy Grover <andrew.grover@intel.com>
@@ -18,7 +18,7 @@
 
 
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct ist_info {
 	__u32 signature;

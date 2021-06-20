@@ -2,7 +2,7 @@
 #ifndef LINUX_POWERPC_PERF_HV_24X7_H_
 #define LINUX_POWERPC_PERF_HV_24X7_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum hv_perf_domains {
 #define DOMAIN(n, v, x, c) HV_PERF_DOMAIN_##n = v,

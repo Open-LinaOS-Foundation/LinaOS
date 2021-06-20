@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux I2C core SMBus and SMBus emulation code
+ * LinaOS I2C core SMBus and SMBus emulation code
  *
  * This file contains the SMBus functions which are always included in the I2C
  * core because they can be emulated via I2C. SMBus specific extensions
@@ -10,11 +10,11 @@
  * SMBus 2.0 support by Mark Studebaker <mdsxyz123@yahoo.com> and
  * Jean Delvare <jdelvare@suse.de>
  */
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/i2c-smbus.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-smbus.h>
+#include <linaos/slab.h>
 
 #include "i2c-core.h"
 

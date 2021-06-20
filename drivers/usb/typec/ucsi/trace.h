@@ -6,8 +6,8 @@
 #if !defined(__UCSI_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __UCSI_TRACE_H
 
-#include <linux/tracepoint.h>
-#include <linux/usb/typec_altmode.h>
+#include <linaos/tracepoint.h>
+#include <linaos/usb/typec_altmode.h>
 
 const char *ucsi_cmd_str(u64 raw_cmd);
 const char *ucsi_cci_str(u32 cci);

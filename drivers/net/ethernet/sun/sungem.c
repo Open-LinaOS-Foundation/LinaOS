@@ -15,35 +15,35 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/random.h>
-#include <linux/workqueue.h>
-#include <linux/if_vlan.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/in.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/crc32.h>
+#include <linaos/random.h>
+#include <linaos/workqueue.h>
+#include <linaos/if_vlan.h>
+#include <linaos/bitops.h>
+#include <linaos/mm.h>
+#include <linaos/gfp.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/irq.h>
 
 #ifdef CONFIG_SPARC
@@ -57,7 +57,7 @@
 #include <asm/pmac_feature.h>
 #endif
 
-#include <linux/sungem_phy.h>
+#include <linaos/sungem_phy.h>
 #include "sungem.h"
 
 #define STRIP_FCS

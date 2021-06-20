@@ -4,11 +4,11 @@
  *  Universal routines for AK4531 codec
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/module.h>
 
 #include <sound/core.h>
 #include <sound/ak4531_codec.h>

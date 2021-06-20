@@ -3,10 +3,10 @@
  * Copyright (C) 2012 Mentor Graphics Inc.
  * Copyright 2005-2012 Freescale Semiconductor, Inc. All Rights Reserved.
  */
-#include <linux/types.h>
-#include <linux/bitrev.h>
-#include <linux/io.h>
-#include <linux/sizes.h>
+#include <linaos/types.h>
+#include <linaos/bitrev.h>
+#include <linaos/io.h>
+#include <linaos/sizes.h>
 #include <drm/drm_fourcc.h>
 #include "ipu-prv.h"
 
@@ -156,7 +156,7 @@ static u32 ipu_ch_param_read_field(struct ipuv3_channel *ch, u32 wbs)
  * The DRM pixel formats and IPU internal representation are ordered the other
  * way around, with the first named component ordered at the most significant
  * bits. Further, V4L2 formats are not well defined:
- *     https://linuxtv.org/downloads/v4l-dvb-apis/packed-rgb.html
+ *     https://linaostv.org/downloads/v4l-dvb-apis/packed-rgb.html
  * We choose the interpretation which matches GStreamer behavior.
  */
 static int v4l2_pix_fmt_to_drm_fourcc(u32 pixelformat)

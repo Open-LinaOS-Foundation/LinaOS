@@ -5,17 +5,17 @@
  * Copyright (c) 2015 Jiri Pirko <jiri@resnulli.us>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/rhashtable.h>
-#include <linux/workqueue.h>
-#include <linux/refcount.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/rhashtable.h>
+#include <linaos/workqueue.h>
+#include <linaos/refcount.h>
 
-#include <linux/if_ether.h>
-#include <linux/in6.h>
-#include <linux/ip.h>
-#include <linux/mpls.h>
+#include <linaos/if_ether.h>
+#include <linaos/in6.h>
+#include <linaos/ip.h>
+#include <linaos/mpls.h>
 
 #include <net/sch_generic.h>
 #include <net/pkt_cls.h>
@@ -28,7 +28,7 @@
 #include <net/dst.h>
 #include <net/dst_metadata.h>
 
-#include <uapi/linux/netfilter/nf_conntrack_common.h>
+#include <uapi/linaos/netfilter/nf_conntrack_common.h>
 
 #define TCA_FLOWER_KEY_CT_FLAGS_MAX \
 		((__TCA_FLOWER_KEY_CT_FLAGS_MAX - 1) << 1)

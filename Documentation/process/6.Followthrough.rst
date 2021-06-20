@@ -33,7 +33,7 @@ mind:
    will not keep them from asking a fundamental question: what will it be
    like to maintain a kernel with this code in it five or ten years later?
    Many of the changes you may be asked to make - from coding style tweaks
-   to substantial rewrites - come from the understanding that Linux will
+   to substantial rewrites - come from the understanding that LinaOS will
    still be around and under development a decade from now.
 
  - Code review is hard work, and it is a relatively thankless occupation;
@@ -119,7 +119,7 @@ through the -mm tree.
 
 Inclusion into a subsystem tree can bring a higher level of visibility to a
 patch.  Now other developers working with that tree will get the patch by
-default.  Subsystem trees typically feed linux-next as well, making their
+default.  Subsystem trees typically feed linaos-next as well, making their
 contents visible to the development community as a whole.  At this point,
 there's a good chance that you will get more comments from a new set of
 reviewers; these comments need to be answered as in the previous round.
@@ -131,7 +131,7 @@ burner so that the remaining patches can be worked into shape and merged.
 Other times, conflict resolution will involve working with the other
 developers and, possibly, moving some patches between trees to ensure that
 everything applies cleanly.  This work can be a pain, but count your
-blessings: before the advent of the linux-next tree, these conflicts often
+blessings: before the advent of the linaos-next tree, these conflicts often
 only turned up during the merge window and had to be addressed in a hurry.
 Now they can be resolved at leisure, before the merge window opens.
 
@@ -198,7 +198,7 @@ possible, tell the author what changes need to be made to make the patch
 acceptable to you.  There is a certain resistance to merging patches which
 are opposed by the author and maintainer of the code, but it only goes so
 far.  If you are seen as needlessly blocking good work, those patches will
-eventually flow around you and get into the mainline anyway.  In the Linux
+eventually flow around you and get into the mainline anyway.  In the LinaOS
 kernel, nobody has absolute veto power over any code.  Except maybe Linus.
 
 On very rare occasion, you may see something completely different: another

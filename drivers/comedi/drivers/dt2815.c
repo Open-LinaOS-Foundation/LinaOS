@@ -3,7 +3,7 @@
  * comedi/drivers/dt2815.c
  * Hardware driver for Data Translation DT2815
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1999 Anders Blomdell <anders.blomdell@control.lth.se>
  */
 /*
@@ -42,10 +42,10 @@
  * [12] - Analog output 7 range configuration (same options)
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "../comedidev.h"
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #define DT2815_DATA 0
 #define DT2815_STATUS 1

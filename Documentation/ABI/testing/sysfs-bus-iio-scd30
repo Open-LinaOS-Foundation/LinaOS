@@ -1,7 +1,7 @@
 What:		/sys/bus/iio/devices/iio:deviceX/calibration_auto_enable
 Date:		June 2020
 KernelVersion:	5.8
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Contaminants build-up in the measurement chamber or optical
 		elements deterioration leads to sensor drift.
@@ -17,7 +17,7 @@ Description:
 What:		/sys/bus/iio/devices/iio:deviceX/calibration_forced_value
 Date:		June 2020
 KernelVersion:	5.8
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Contaminants build-up in the measurement chamber or optical
 		elements deterioration leads to sensor drift.

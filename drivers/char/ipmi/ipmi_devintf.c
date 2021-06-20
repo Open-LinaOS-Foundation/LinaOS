@@ -2,7 +2,7 @@
 /*
  * ipmi_devintf.c
  *
- * Linux device interface for the IPMI message handler.
+ * LinaOS device interface for the IPMI message handler.
  *
  * Author: MontaVista Software, Inc.
  *         Corey Minyard <minyard@mvista.com>
@@ -11,18 +11,18 @@
  * Copyright 2002 MontaVista Software Inc.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/ipmi.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/compat.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/errno.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/ipmi.h>
+#include <linaos/mutex.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/compat.h>
 
 struct ipmi_file_private
 {
@@ -905,4 +905,4 @@ module_exit(cleanup_ipmi);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Corey Minyard <minyard@mvista.com>");
-MODULE_DESCRIPTION("Linux device interface for the IPMI message handler.");
+MODULE_DESCRIPTION("LinaOS device interface for the IPMI message handler.");

@@ -6,7 +6,7 @@
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free
  * Software Foundation; either version 2 of the License, or at your option any
- * later version; or, when distributed separately from the Linux kernel or
+ * later version; or, when distributed separately from the LinaOS kernel or
  * when incorporated into other software packages, subject to the following
  * license:
  *
@@ -24,17 +24,17 @@
  * tools/testing/selftests/kmod/kmod.sh --help
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/printk.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kmod.h>
+#include <linaos/printk.h>
+#include <linaos/kthread.h>
+#include <linaos/sched.h>
+#include <linaos/fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
 
 #define TEST_START_NUM_THREADS	50
 #define TEST_START_DRIVER	"test_module"

@@ -16,10 +16,10 @@
 #ifndef _MEDIA_DEVNODE_H
 #define _MEDIA_DEVNODE_H
 
-#include <linux/poll.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
+#include <linaos/poll.h>
+#include <linaos/fs.h>
+#include <linaos/device.h>
+#include <linaos/cdev.h>
 
 struct media_device;
 

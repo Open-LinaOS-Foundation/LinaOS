@@ -10,9 +10,9 @@
 #ifndef __CCP_CRYPTO_H__
 #define __CCP_CRYPTO_H__
 
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/ccp.h>
+#include <linaos/list.h>
+#include <linaos/wait.h>
+#include <linaos/ccp.h>
 #include <crypto/algapi.h>
 #include <crypto/aes.h>
 #include <crypto/internal/aead.h>

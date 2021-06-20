@@ -10,10 +10,10 @@
 #ifndef WFX_H
 #define WFX_H
 
-#include <linux/completion.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/nospec.h>
+#include <linaos/completion.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
+#include <linaos/nospec.h>
 #include <net/mac80211.h>
 
 #include "bh.h"

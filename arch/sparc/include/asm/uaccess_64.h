@@ -6,8 +6,8 @@
  * User space memory access functions
  */
 
-#include <linux/compiler.h>
-#include <linux/string.h>
+#include <linaos/compiler.h>
+#include <linaos/string.h>
 #include <asm/asi.h>
 #include <asm/spitfire.h>
 

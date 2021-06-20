@@ -8,7 +8,7 @@
 #ifndef __ASM_PAGE_DEF_H
 #define __ASM_PAGE_DEF_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 /* PAGE_SHIFT determines the page size */
 #define PAGE_SHIFT		CONFIG_ARM64_PAGE_SHIFT

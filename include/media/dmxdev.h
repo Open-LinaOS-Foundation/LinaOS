@@ -19,18 +19,18 @@
 #ifndef _DMXDEV_H_
 #define _DMXDEV_H_
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/time.h>
+#include <linaos/timer.h>
+#include <linaos/wait.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
 
-#include <linux/dvb/dmx.h>
+#include <linaos/dvb/dmx.h>
 
 #include <media/dvbdev.h>
 #include <media/demux.h>

@@ -12,7 +12,7 @@
 #ifndef __PLAT_DEVS_H
 #define __PLAT_DEVS_H __FILE__
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 struct s3c24xx_uart_resources {
 	struct resource		*resources;

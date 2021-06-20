@@ -8,21 +8,21 @@
  *  or alternatively, you might use OpenHaptics provided by Sensable.
  */
 
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/interrupt.h>
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/phantom.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
+#include <linaos/compat.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/pci.h>
+#include <linaos/fs.h>
+#include <linaos/poll.h>
+#include <linaos/interrupt.h>
+#include <linaos/cdev.h>
+#include <linaos/slab.h>
+#include <linaos/phantom.h>
+#include <linaos/sched.h>
+#include <linaos/mutex.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/io.h>
 
 #define PHANTOM_VERSION		"n0.9.8"
@@ -528,7 +528,7 @@ static int __init phantom_init(void)
 		goto err_unchr;
 	}
 
-	printk(KERN_INFO "Phantom Linux Driver, version " PHANTOM_VERSION ", "
+	printk(KERN_INFO "Phantom LinaOS Driver, version " PHANTOM_VERSION ", "
 			"init OK\n");
 
 	return 0;

@@ -235,7 +235,7 @@ config HISI_THERMAL
 	depends on OF
 	default y
 	help
-	  Enable this to plug hisilicon's thermal sensor driver into the Linux
+	  Enable this to plug hisilicon's thermal sensor driver into the LinaOS
 	  thermal framework. cpufreq is used as the cooling device to throttle
 	  CPUs when the passive trip is crossed.
 
@@ -257,7 +257,7 @@ config IMX_SC_THERMAL
 	depends on OF
 	help
 	  Support for Temperature Monitor (TEMPMON) found on NXP i.MX SoCs with
-	  system controller inside, Linux kernel has to communicate with system
+	  system controller inside, LinaOS kernel has to communicate with system
 	  controller via MU (message unit) IPC to get temperature from thermal
 	  sensor. It supports one critical trip point and one
 	  passive trip point for each thermal sensor.
@@ -309,7 +309,7 @@ config SPEAR_THERMAL
 	depends on HAS_IOMEM
 	depends on OF
 	help
-	  Enable this to plug the SPEAr thermal sensor driver into the Linux
+	  Enable this to plug the SPEAr thermal sensor driver into the LinaOS
 	  thermal framework.
 
 config SUN8I_THERMAL
@@ -320,7 +320,7 @@ config SUN8I_THERMAL
 	depends on OF
 	depends on RESET_CONTROLLER
 	help
-	  Support for the sun8i thermal sensor driver into the Linux thermal
+	  Support for the sun8i thermal sensor driver into the LinaOS thermal
 	  framework.
 
 	  To compile this driver as a module, choose M here: the
@@ -342,7 +342,7 @@ config RCAR_THERMAL
 	depends on ARCH_RENESAS || COMPILE_TEST
 	depends on HAS_IOMEM
 	help
-	  Enable this to plug the R-Car thermal sensor driver into the Linux
+	  Enable this to plug the R-Car thermal sensor driver into the LinaOS
 	  thermal framework.
 
 config RCAR_GEN3_THERMAL
@@ -352,7 +352,7 @@ config RCAR_GEN3_THERMAL
 	depends on OF
 	help
 	  Enable this to plug the R-Car Gen3 or RZ/G2 thermal sensor driver into
-	  the Linux thermal framework.
+	  the LinaOS thermal framework.
 
 config KIRKWOOD_THERMAL
 	tristate "Temperature sensor on Marvell Kirkwood SoCs"
@@ -360,7 +360,7 @@ config KIRKWOOD_THERMAL
 	depends on HAS_IOMEM
 	depends on OF
 	help
-	  Support for the Kirkwood thermal sensor driver into the Linux thermal
+	  Support for the Kirkwood thermal sensor driver into the LinaOS thermal
 	  framework. Only kirkwood 88F6282 and 88F6283 have this sensor.
 
 config DOVE_THERMAL
@@ -369,7 +369,7 @@ config DOVE_THERMAL
 	depends on HAS_IOMEM
 	depends on OF
 	help
-	  Support for the Dove thermal sensor driver in the Linux thermal
+	  Support for the Dove thermal sensor driver in the LinaOS thermal
 	  framework.
 
 config DB8500_THERMAL
@@ -480,7 +480,7 @@ config SPRD_THERMAL
 	tristate "Temperature sensor on Spreadtrum SoCs"
 	depends on ARCH_SPRD || COMPILE_TEST
 	help
-	  Support for the Spreadtrum thermal sensor driver in the Linux thermal
+	  Support for the Spreadtrum thermal sensor driver in the LinaOS thermal
 	  framework.
 
 config KHADAS_MCU_FAN_THERMAL

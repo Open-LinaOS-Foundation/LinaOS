@@ -7,15 +7,15 @@
  * Author: Robert Marko <robert.marko@sartura.hr>
  */
 
-#include <linux/bitfield.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linaos/bitfield.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/hwmon.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
 
 #define TEMPERATURE			0x2c
 #define INPUT_VOLTAGE_LSB		0x2e

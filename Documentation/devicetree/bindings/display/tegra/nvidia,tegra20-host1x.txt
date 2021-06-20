@@ -5,8 +5,8 @@ Required properties:
 - reg: Physical base address and length of the controller's registers.
   For pre-Tegra186, one entry describing the whole register area.
   For Tegra186, one entry for each entry in reg-names:
-    "vm" - VM region assigned to Linux
-    "hypervisor" - Hypervisor region (only if Linux acts as hypervisor)
+    "vm" - VM region assigned to LinaOS
+    "hypervisor" - Hypervisor region (only if LinaOS acts as hypervisor)
 - interrupts: The interrupt outputs from the controller.
 - #address-cells: The number of cells used to represent physical base addresses
   in the host1x address space. Should be 1.

@@ -1,5 +1,5 @@
 /*
-   HIDP implementation for Linux Bluetooth stack (BlueZ).
+   HIDP implementation for LinaOS Bluetooth stack (BlueZ).
    Copyright (C) 2003-2004 Marcel Holtmann <marcel@holtmann.org>
 
    This program is free software; you can redistribute it and/or modify
@@ -23,9 +23,9 @@
 #ifndef __HIDP_H
 #define __HIDP_H
 
-#include <linux/types.h>
-#include <linux/hid.h>
-#include <linux/kref.h>
+#include <linaos/types.h>
+#include <linaos/hid.h>
+#include <linaos/kref.h>
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/l2cap.h>
 

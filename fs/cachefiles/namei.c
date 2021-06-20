@@ -5,17 +5,17 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/fsnotify.h>
-#include <linux/quotaops.h>
-#include <linux/xattr.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/fsnotify.h>
+#include <linaos/quotaops.h>
+#include <linaos/xattr.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/security.h>
+#include <linaos/slab.h>
 #include "internal.h"
 
 #define CACHEFILES_KEYBUF_SIZE 512

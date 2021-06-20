@@ -231,12 +231,12 @@
  *	if provided (otherwise ENOTTY will be returned).
  */
 
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/cdev.h>
-#include <linux/termios.h>
-#include <linux/seq_file.h>
+#include <linaos/export.h>
+#include <linaos/fs.h>
+#include <linaos/list.h>
+#include <linaos/cdev.h>
+#include <linaos/termios.h>
+#include <linaos/seq_file.h>
 
 struct tty_struct;
 struct tty_driver;

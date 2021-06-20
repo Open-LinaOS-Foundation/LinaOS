@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  *  Copyright (c) 2007 Jiri Kosina
  */
@@ -16,8 +16,8 @@
 
 
 
-#include <linux/hid.h>
-#include <linux/types.h>
+#include <linaos/hid.h>
+#include <linaos/types.h>
 
 struct hidraw_report_descriptor {
 	__u32 size;

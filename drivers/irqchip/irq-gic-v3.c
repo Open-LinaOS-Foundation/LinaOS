@@ -6,23 +6,23 @@
 
 #define pr_fmt(fmt)	"GICv3: " fmt
 
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/percpu.h>
-#include <linux/refcount.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/cpu.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/percpu.h>
+#include <linaos/refcount.h>
+#include <linaos/slab.h>
 
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-gic-common.h>
-#include <linux/irqchip/arm-gic-v3.h>
-#include <linux/irqchip/irq-partition-percpu.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/arm-gic-common.h>
+#include <linaos/irqchip/arm-gic-v3.h>
+#include <linaos/irqchip/irq-partition-percpu.h>
 
 #include <asm/cputype.h>
 #include <asm/exception.h>
@@ -111,7 +111,7 @@ static DEFINE_PER_CPU(bool, has_rss);
 #define gic_data_rdist_rd_base()	(gic_data_rdist()->rd_base)
 #define gic_data_rdist_sgi_base()	(gic_data_rdist_rd_base() + SZ_64K)
 
-/* Our default, arbitrary priority value. Linux only uses one anyway. */
+/* Our default, arbitrary priority value. LinaOS only uses one anyway. */
 #define DEFAULT_PMR_VALUE	0xf0
 
 enum gic_intid_range {
@@ -1583,7 +1583,7 @@ static void gic_enable_nmi_support(void)
 		refcount_set(&ppi_nmi_refs[i], 0);
 
 	/*
-	 * Linux itself doesn't use 1:N distribution, so has no need to
+	 * LinaOS itself doesn't use 1:N distribution, so has no need to
 	 * set PMHE. The only reason to have it set is if EL3 requires it
 	 * (and we can't change it).
 	 */
@@ -1596,7 +1596,7 @@ static void gic_enable_nmi_support(void)
 	/*
 	 * How priority values are used by the GIC depends on two things:
 	 * the security state of the GIC (controlled by the GICD_CTRL.DS bit)
-	 * and if Group 0 interrupts can be delivered to Linux in the non-secure
+	 * and if Group 0 interrupts can be delivered to LinaOS in the non-secure
 	 * world as FIQs (controlled by the SCR_EL3.FIQ bit). These affect the
 	 * the ICC_PMR_EL1 register and the priority that software assigns to
 	 * interrupts:

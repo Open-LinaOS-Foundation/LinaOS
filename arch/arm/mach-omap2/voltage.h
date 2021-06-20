@@ -11,9 +11,9 @@
 #ifndef __ARCH_ARM_MACH_OMAP2_VOLTAGE_H
 #define __ARCH_ARM_MACH_OMAP2_VOLTAGE_H
 
-#include <linux/err.h>
+#include <linaos/err.h>
 
-#include <linux/platform_data/voltage-omap.h>
+#include <linaos/platform_data/voltage-omap.h>
 
 #include "vc.h"
 #include "vp.h"

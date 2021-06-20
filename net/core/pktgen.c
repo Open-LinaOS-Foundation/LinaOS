@@ -10,7 +10,7 @@
  * Jens Låås <jens.laas@data.slu.se>
  *
  * A tool for loading the network with preconfigurated packets.
- * The tool is implemented as a linux module.  Parameters are output
+ * The tool is implemented as a linaos module.  Parameters are output
  * device, delay (to hard_xmit), number of packets, and whether
  * to use multiple SKBs or just the same one.
  * pktgen uses the installed interface's output routine.
@@ -83,7 +83,7 @@
  *
  * Included flow support. 030802 ANK.
  *
- * Fixed unaligned access on IA-64 Grant Grundler <grundler@parisc-linux.org>
+ * Fixed unaligned access on IA-64 Grant Grundler <grundler@parisc-linaos.org>
  *
  * Remove if fix from added Harald Welte <laforge@netfilter.org> 040419
  * ia64 compilation fix from  Aron Griffis <aron@hp.com> 040604
@@ -112,46 +112,46 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sys.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/unistd.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/capability.h>
-#include <linux/hrtimer.h>
-#include <linux/freezer.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/udp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/wait.h>
-#include <linux/etherdevice.h>
-#include <linux/kthread.h>
-#include <linux/prefetch.h>
-#include <linux/mmzone.h>
+#include <linaos/sys.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/mutex.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/unistd.h>
+#include <linaos/string.h>
+#include <linaos/ptrace.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/capability.h>
+#include <linaos/hrtimer.h>
+#include <linaos/freezer.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/list.h>
+#include <linaos/init.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/inet.h>
+#include <linaos/inetdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_vlan.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/udp.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/wait.h>
+#include <linaos/etherdevice.h>
+#include <linaos/kthread.h>
+#include <linaos/prefetch.h>
+#include <linaos/mmzone.h>
 #include <net/net_namespace.h>
 #include <net/checksum.h>
 #include <net/ipv6.h>
@@ -163,11 +163,11 @@
 #endif
 #include <net/netns/generic.h>
 #include <asm/byteorder.h>
-#include <linux/rcupdate.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/timex.h>
-#include <linux/uaccess.h>
+#include <linaos/rcupdate.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
+#include <linaos/timex.h>
+#include <linaos/uaccess.h>
 #include <asm/dma.h>
 #include <asm/div64.h>		/* do_div */
 

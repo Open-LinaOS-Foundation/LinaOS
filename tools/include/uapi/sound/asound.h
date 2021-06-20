@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
- *  Advanced Linux Sound Architecture - ALSA - Driver
+ *  Advanced LinaOS Sound Architecture - ALSA - Driver
  *  Copyright (c) 1994-2003 by Jaroslav Kysela <perex@perex.cz>,
  *                             Abramo Bagnara <abramo@alsa-project.org>
  *
@@ -24,8 +24,8 @@
 #ifndef _UAPI__SOUND_ASOUND_H
 #define _UAPI__SOUND_ASOUND_H
 
-#if defined(__KERNEL__) || defined(__linux__)
-#include <linux/types.h>
+#if defined(__KERNEL__) || defined(__linaos__)
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 #else
 #include <endian.h>

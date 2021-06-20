@@ -21,19 +21,19 @@
  * instead which is a bit of an overkill imho
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/jiffies.h>
-#include <linux/reboot.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/freezer.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/kthread.h>
+#include <linaos/jiffies.h>
+#include <linaos/reboot.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/mutex.h>
+#include <linaos/freezer.h>
 
 #include <asm/prom.h>
 
@@ -76,7 +76,7 @@ static int wf_critical_overtemp(void)
 	static char const critical_overtemp_path[] = "/sbin/critical_overtemp";
 	char *argv[] = { (char *)critical_overtemp_path, NULL };
 	static char *envp[] = { "HOME=/",
-				"TERM=linux",
+				"TERM=linaos",
 				"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 				NULL };
 

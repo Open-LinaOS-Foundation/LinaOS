@@ -22,13 +22,13 @@ PROPERTIES
 		    The format of the specifier is defined by the binding
 		    document describing the node's interrupt parent.
 
-- linux,keymap:
+- linaos,keymap:
 	Usage: required
 	Value type: <prop-encoded-array>
-	Definition: the linux keymap. More information can be found in
+	Definition: the linaos keymap. More information can be found in
 		    input/matrix-keymap.txt.
 
-- linux,keypad-no-autorepeat:
+- linaos,keypad-no-autorepeat:
 	Usage: optional
 	Value type: <bool>
 	Definition: don't enable autorepeat feature.
@@ -37,7 +37,7 @@ PROPERTIES
 	Usage: optional
 	Value type: <bool>
 	Definition: use any event on keypad as wakeup event.
-		    (Legacy property supported: "linux,keypad-wakeup")
+		    (Legacy property supported: "linaos,keypad-wakeup")
 
 - keypad,num-rows:
 	Usage: required
@@ -76,7 +76,7 @@ EXAMPLE
 		reg = <0x148>;
 		interrupt-parent = <&pmicintc>;
 		interrupts = <74 1>, <75 1>;
-		linux,keymap = <
+		linaos,keymap = <
 			MATRIX_KEY(0, 0, KEY_VOLUMEUP)
 			MATRIX_KEY(0, 1, KEY_VOLUMEDOWN)
 			MATRIX_KEY(0, 2, KEY_CAMERA_FOCUS)

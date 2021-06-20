@@ -18,19 +18,19 @@
  * the instance number and string from the type 41 record and exports
  * it to sysfs.
  *
- * Please see https://linux.dell.com/files/biosdevname/ for more
+ * Please see https://linaos.dell.com/files/biosdevname/ for more
  * information.
  */
 
-#include <linux/dmi.h>
-#include <linux/sysfs.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/nls.h>
-#include <linux/acpi.h>
-#include <linux/pci-acpi.h>
+#include <linaos/dmi.h>
+#include <linaos/sysfs.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/nls.h>
+#include <linaos/acpi.h>
+#include <linaos/pci-acpi.h>
 #include "pci.h"
 
 static bool device_has_acpi_name(struct device *dev)

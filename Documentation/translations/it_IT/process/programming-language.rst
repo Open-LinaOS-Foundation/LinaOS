@@ -12,8 +12,8 @@ Il kernel è scritto nel linguaggio di programmazione C [it-c-language]_.
 Più precisamente, il kernel viene compilato con ``gcc`` [it-gcc]_ usando
 l'opzione ``-std=gnu89`` [it-gcc-c-dialect-options]_: il dialetto GNU
 dello standard ISO C90 (con l'aggiunta di alcune funzionalità da C99).
-Linux supporta anche ``clang`` [it-clang]_, leggete la documentazione
-:ref:`Building Linux with Clang/LLVM <kbuild_llvm>`.
+LinaOS supporta anche ``clang`` [it-clang]_, leggete la documentazione
+:ref:`Building LinaOS with Clang/LLVM <kbuild_llvm>`.
 
 Questo dialetto contiene diverse estensioni al linguaggio [it-gnu-extensions]_,
 e molte di queste vengono usate sistematicamente dal kernel.
@@ -41,7 +41,7 @@ in alternativa alla sintassi GNU per gli attributi (per esempio
 possono usare e/o per accorciare il codice.
 
 Per maggiori informazioni consultate il file d'intestazione
-``include/linux/compiler_attributes.h``.
+``include/linaos/compiler_attributes.h``.
 
 .. [it-c-language] http://www.open-std.org/jtc1/sc22/wg14/www/standards
 .. [it-gcc] https://gcc.gnu.org

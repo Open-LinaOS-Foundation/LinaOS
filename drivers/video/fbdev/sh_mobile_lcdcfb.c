@@ -8,25 +8,25 @@
  * for more details.
  */
 
-#include <linux/atomic.h>
-#include <linux/backlight.h>
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/ctype.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/fbcon.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
+#include <linaos/atomic.h>
+#include <linaos/backlight.h>
+#include <linaos/clk.h>
+#include <linaos/console.h>
+#include <linaos/ctype.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/fbcon.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioctl.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
+#include <linaos/vmalloc.h>
 
 #include <video/sh_mobile_lcdc.h>
 

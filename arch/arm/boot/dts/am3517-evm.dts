@@ -39,55 +39,55 @@
 
 		user_pb {
 			label = "User Push Button";
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			gpios = <&tca6416 5 GPIO_ACTIVE_LOW>;
 		};
 
 		user_sw_1 {
 			label = "User Switch 1";
-			linux,code = <BTN_1>;
+			linaos,code = <BTN_1>;
 			gpios = <&tca6416 8 GPIO_ACTIVE_LOW>;
 		};
 
 		user_sw_2 {
 			label = "User Switch 2";
-			linux,code = <BTN_2>;
+			linaos,code = <BTN_2>;
 			gpios = <&tca6416 9 GPIO_ACTIVE_LOW>;
 		};
 
 		user_sw_3 {
 			label = "User Switch 3";
-			linux,code = <BTN_3>;
+			linaos,code = <BTN_3>;
 			gpios = <&tca6416 10 GPIO_ACTIVE_LOW>;
 		};
 
 		user_sw_4 {
 			label = "User Switch 4";
-			linux,code = <BTN_4>;
+			linaos,code = <BTN_4>;
 			gpios = <&tca6416 11 GPIO_ACTIVE_LOW>;
 		};
 
 		user_sw_5 {
 			label = "User Switch 5";
-			linux,code = <BTN_5>;
+			linaos,code = <BTN_5>;
 			gpios = <&tca6416 12 GPIO_ACTIVE_LOW>;
 		};
 
 		user_sw_6 {
 			label = "User Switch 6";
-			linux,code = <BTN_6>;
+			linaos,code = <BTN_6>;
 			gpios = <&tca6416 13 GPIO_ACTIVE_LOW>;
 		};
 
 		user_sw_7 {
 			label = "User Switch 7";
-			linux,code = <BTN_7>;
+			linaos,code = <BTN_7>;
 			gpios = <&tca6416 14 GPIO_ACTIVE_LOW>;
 		};
 
 		user_sw_8 {
 			label = "User Switch 8";
-			linux,code = <BTN_8>;
+			linaos,code = <BTN_8>;
 			gpios = <&tca6416 15 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -113,13 +113,13 @@
 		user_led_3 {
 			label = "am3517evm:green:user_led_3";
 			gpios = <&gpio1 11 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0"; /* SD/MMC card activity */
+			linaos,default-trigger = "mmc0"; /* SD/MMC card activity */
 		};
 
 		user_led_4 {
 			label = "am3517evm:green:user_led_4";
 			gpios = <&gpio1 31 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

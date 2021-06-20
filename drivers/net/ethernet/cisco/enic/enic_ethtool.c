@@ -16,9 +16,9 @@
  *
  */
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/net_tstamp.h>
+#include <linaos/netdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/net_tstamp.h>
 
 #include "enic_res.h"
 #include "enic.h"

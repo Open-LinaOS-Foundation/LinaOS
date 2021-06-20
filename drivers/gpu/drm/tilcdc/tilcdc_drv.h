@@ -7,8 +7,8 @@
 #ifndef __TILCDC_DRV_H__
 #define __TILCDC_DRV_H__
 
-#include <linux/cpufreq.h>
-#include <linux/irqreturn.h>
+#include <linaos/cpufreq.h>
+#include <linaos/irqreturn.h>
 
 #include <drm/drm_print.h>
 

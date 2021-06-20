@@ -15,7 +15,7 @@
 #ifndef __FSL_DIU_FB_H__
 #define __FSL_DIU_FB_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct mfb_chroma_key {
 	int enable;

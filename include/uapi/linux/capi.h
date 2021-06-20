@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* $Id: capi.h,v 1.4.6.1 2001/09/23 22:25:05 kai Exp $
  * 
- * CAPI 2.0 Interface for Linux
+ * CAPI 2.0 Interface for LinaOS
  * 
  * Copyright 1997 by Carsten Paeth (calle@calle.in-berlin.de)
  * 
@@ -13,10 +13,10 @@
 #ifndef __LINUX_CAPI_H__
 #define __LINUX_CAPI_H__
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 #ifndef __KERNEL__
-#include <linux/kernelcapi.h>
+#include <linaos/kernelcapi.h>
 #endif
 
 /*

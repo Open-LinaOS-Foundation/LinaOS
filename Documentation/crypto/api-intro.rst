@@ -52,8 +52,8 @@ process multiples of blocks).
 Here's an example of how to use the API::
 
 	#include <crypto/hash.h>
-	#include <linux/err.h>
-	#include <linux/scatterlist.h>
+	#include <linaos/err.h>
+	#include <linaos/scatterlist.h>
 
 	struct scatterlist sg[2];
 	char result[128];
@@ -130,7 +130,7 @@ Bugs
 ====
 
 Send bug reports to:
-    linux-crypto@vger.kernel.org
+    linaos-crypto@vger.kernel.org
 
 Cc:
     Herbert Xu <herbert@gondor.apana.org.au>,

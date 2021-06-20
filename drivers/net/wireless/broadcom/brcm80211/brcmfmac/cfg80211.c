@@ -3,15 +3,15 @@
  * Copyright (c) 2010 Broadcom Corporation
  */
 
-/* Toplevel file. Relies on dhd_linux.c to send commands to the dongle. */
+/* Toplevel file. Relies on dhd_linaos.c to send commands to the dongle. */
 
-#include <linux/kernel.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/vmalloc.h>
 #include <net/cfg80211.h>
 #include <net/netlink.h>
-#include <uapi/linux/if_arp.h>
+#include <uapi/linaos/if_arp.h>
 
 #include <brcmu_utils.h>
 #include <defs.h>

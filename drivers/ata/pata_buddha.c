@@ -11,17 +11,17 @@
  *	Copyright (C) 1997, 2001 by Geert Uytterhoeven and others
  */
 
-#include <linux/ata.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/libata.h>
-#include <linux/mm.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/zorro.h>
+#include <linaos/ata.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/libata.h>
+#include <linaos/mm.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/zorro.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>
 

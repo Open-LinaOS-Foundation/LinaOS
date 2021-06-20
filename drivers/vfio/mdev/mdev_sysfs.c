@@ -7,12 +7,12 @@
  *             Kirti Wankhede <kwankhede@nvidia.com>
  */
 
-#include <linux/sysfs.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/uuid.h>
-#include <linux/mdev.h>
+#include <linaos/sysfs.h>
+#include <linaos/ctype.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/uuid.h>
+#include <linaos/mdev.h>
 
 #include "mdev_private.h"
 

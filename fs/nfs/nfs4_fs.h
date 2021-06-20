@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/fs/nfs/nfs4_fs.h
+ * linaos/fs/nfs/nfs4_fs.h
  *
  * Copyright (C) 2005 Trond Myklebust
  *
@@ -22,7 +22,7 @@
 
 #define NFS4_MAX_LOOP_ON_RECOVER (10)
 
-#include <linux/seqlock.h>
+#include <linaos/seqlock.h>
 
 struct idmap;
 

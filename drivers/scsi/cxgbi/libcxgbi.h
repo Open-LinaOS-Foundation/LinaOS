@@ -14,17 +14,17 @@
 #ifndef	__LIBCXGBI_H__
 #define	__LIBCXGBI_H__
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/scatterlist.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/version.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/debugfs.h>
+#include <linaos/list.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/scatterlist.h>
+#include <linaos/skbuff.h>
+#include <linaos/vmalloc.h>
+#include <linaos/version.h>
 #include <scsi/scsi_device.h>
 #include <scsi/libiscsi_tcp.h>
 

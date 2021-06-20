@@ -33,14 +33,14 @@
 		sw14 {
 			label = "sw14";
 			gpios = <&gpio0 12 0>;
-			linux,code = <108>; /* down */
+			linaos,code = <108>; /* down */
 			wakeup-source;
 			autorepeat;
 		};
 		sw13 {
 			label = "sw13";
 			gpios = <&gpio0 14 0>;
-			linux,code = <103>; /* up */
+			linaos,code = <103>; /* up */
 			wakeup-source;
 			autorepeat;
 		};
@@ -52,7 +52,7 @@
 		led-ds23 {
 			label = "ds23";
 			gpios = <&gpio0 10 0>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

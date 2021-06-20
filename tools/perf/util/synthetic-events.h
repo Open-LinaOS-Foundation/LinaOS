@@ -4,8 +4,8 @@
 
 #include <stdbool.h>
 #include <sys/types.h> // pid_t
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
 
 struct auxtrace_record;
 struct dso;

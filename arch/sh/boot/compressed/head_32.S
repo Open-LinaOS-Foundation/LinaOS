@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/arch/sh/boot/compressed/head.S
+ *  linaos/arch/sh/boot/compressed/head.S
  *
  *  Copyright (C) 1999 Stuart Menefy
  *  Copyright (C) 2003 SUGIOKA Toshinobu

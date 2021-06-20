@@ -2,7 +2,7 @@
 /*
  * Hexagon Virtual Machine TLB functions
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The LinaOS Foundation. All rights reserved.
  */
 
 /*
@@ -10,8 +10,8 @@
  * the TLB, but there are one or two functions that need to
  * be instantiated for it, differently from a native build.
  */
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
 #include <asm/page.h>
 #include <asm/hexagon_vm.h>
 

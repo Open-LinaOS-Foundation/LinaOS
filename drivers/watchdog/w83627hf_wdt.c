@@ -13,7 +13,7 @@
  *	Based on advantechwdt.c which is based on wdt.c.
  *	Original copyright messages:
  *
- *	(c) Copyright 2000-2001 Marek Michalkiewicz <marekm@linux.org.pl>
+ *	(c) Copyright 2000-2001 Marek Michalkiewicz <marekm@linaos.org.pl>
  *
  *	(c) Copyright 1996 Alan Cox <alan@lxorguk.ukuu.org.uk>,
  *						All Rights Reserved.
@@ -27,14 +27,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/dmi.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/watchdog.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/dmi.h>
 
 #define WATCHDOG_NAME "w83627hf/thf/hg/dhg WDT"
 #define WATCHDOG_TIMEOUT 60		/* 60 sec default timeout */

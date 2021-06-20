@@ -1,6 +1,6 @@
 What:		/sys/bus/iio/devices/deviceX/inY-inZ_balance_switch_en
 KernelVersion:	3.0.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Writing 1 enables the cell balance output switch corresponding
 		to input Y. Writing 0 disables it. If the inY-inZ_balance_timer
@@ -10,7 +10,7 @@ Description:
 
 What:		/sys/bus/iio/devices/deviceX/inY-inZ_balance_timer
 KernelVersion:	3.0.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		The inY-inZ_balance_timer file allows the user to program
 		individual times for each cell balance output. The AD7280A

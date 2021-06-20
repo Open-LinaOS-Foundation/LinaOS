@@ -3,9 +3,9 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/time.h>
 #include <sound/core.h>
 #include <sound/gus.h>
 

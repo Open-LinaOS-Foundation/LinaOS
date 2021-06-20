@@ -61,7 +61,7 @@
 	- Clean up locking in probe path
     Rev  3.23.36 October 1, 2003, Christoph Hellwig
 	- queuecommand only ever receives new commands - clear flags
-	- Reintegrate lost fixes from Linux 2.5
+	- Reintegrate lost fixes from LinaOS 2.5
     Rev  3.23.35 August 14, 2003, Jes Sorensen
 	- Build against 2.6
     Rev  3.23.34 July 23, 2003, Jes Sorensen
@@ -86,7 +86,7 @@
 	- Eliminate duplicate marker commands on bus resets
 	- Handle outstanding commands appropriately on bus/device resets
     Rev  3.23.27 May 28, 2003, Jes Sorensen
-	- Remove bogus input queue code, let the Linux SCSI layer do the work
+	- Remove bogus input queue code, let the LinaOS SCSI layer do the work
 	- Clean up NVRAM handling, only read it once from the card
 	- Add a number of missing default nvram parameters
     Rev  3.23.26 Beta May 28, 2003, Jes Sorensen
@@ -169,10 +169,10 @@
 	- Remove dummy_buffer that was never modified nor printed
 	- ENTER()/LEAVE() are noops unless QL_DEBUG_LEVEL_3, hence remove
 	  #ifdef QL_DEBUG_LEVEL_3/#endif around ENTER()/LEAVE() calls
-	- Remove \r from print statements, this is Linux, not DOS
+	- Remove \r from print statements, this is LinaOS, not DOS
 	- Remove obsolete QLA1280_{SCSILU,INTR,RING}_{LOCK,UNLOCK}
 	  dummy macros
-	- Remove C++ compile hack in header file as Linux driver are not
+	- Remove C++ compile hack in header file as LinaOS driver are not
 	  supposed to be compiled as C++
 	- Kill MS_64BITS macro as it makes the code more readable
 	- Remove unnecessary flags.in_interrupts bit
@@ -198,14 +198,14 @@
 	- Reduce size of kernel version dependent device probe code
 	- Move duplicate probe/init code to separate function
 	- Handle error if qla1280_mem_alloc() fails
-	- Kill OFFSET() macro and use Linux's PCI definitions instead
+	- Kill OFFSET() macro and use LinaOS's PCI definitions instead
         - Kill private structure defining PCI config space (struct config_reg)
 	- Only allocate I/O port region if not in MMIO mode
 	- Remove duplicate (unused) sanity check of sife of srb_t
     Rev  3.23.2 Beta August 6, 2001, Jes Sorensen
 	- Change home-brew memset() implementations to use memset()
         - Remove all references to COMTRACE() - accessing a PC's COM2 serial
-          port directly is not legal under Linux.
+          port directly is not legal under LinaOS.
     Rev  3.23.1 Beta April 24, 2001, Jes Sorensen
         - Remove pre 2.2 kernel support
         - clean up 64 bit DMA setting to use 2.4 API (provide backwards compat)
@@ -295,7 +295,7 @@
        - Merge changes from ia64 port.
     Rev. 3.03       Mar 28, 2000    BN  Qlogic
        - Increase version to reflect new code drop with compile fix
-         of issue with inclusion of linux/spinlock for 2.3 kernels
+         of issue with inclusion of linaos/spinlock for 2.3 kernels
     Rev. 3.02       Mar 15, 2000    BN  Qlogic
        - Merge qla1280_proc_info from 2.10 code base
     Rev. 3.01       Feb 10, 2000    BN  Qlogic
@@ -327,23 +327,23 @@
 *****************************************************************************/
 
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/pci_ids.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/pci.h>
+#include <linaos/proc_fs.h>
+#include <linaos/stat.h>
+#include <linaos/pci_ids.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/firmware.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -808,7 +808,7 @@ qla1280_wait_for_pending_commands(struct scsi_qla_host *ha, int bus, int target)
  *    wait for the results (or time out).
  *
  * Input:
- *      cmd = Linux SCSI command packet of the command that cause the
+ *      cmd = LinaOS SCSI command packet of the command that cause the
  *            bus reset.
  *      action = error action to take (see action_t)
  *
@@ -1286,7 +1286,7 @@ qla1280_done(struct scsi_qla_host *ha)
 }
 
 /*
- * Translates a ISP error to a Linux SCSI error
+ * Translates a ISP error to a LinaOS SCSI error
  */
 static int
 qla1280_return_status(struct response * sts, struct scsi_cmnd *cp)

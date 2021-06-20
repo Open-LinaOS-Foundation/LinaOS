@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-/*** -*- linux-c -*- **********************************************************
+/*** -*- linaos-c -*- **********************************************************
 
      Driver for Atmel at76c502 at76c504 and at76c506 wireless cards.
 

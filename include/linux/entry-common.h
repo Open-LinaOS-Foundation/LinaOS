@@ -2,11 +2,11 @@
 #ifndef __LINUX_ENTRYCOMMON_H
 #define __LINUX_ENTRYCOMMON_H
 
-#include <linux/static_call_types.h>
-#include <linux/tracehook.h>
-#include <linux/syscalls.h>
-#include <linux/seccomp.h>
-#include <linux/sched.h>
+#include <linaos/static_call_types.h>
+#include <linaos/tracehook.h>
+#include <linaos/syscalls.h>
+#include <linaos/seccomp.h>
+#include <linaos/sched.h>
 
 #include <asm/entry-common.h>
 

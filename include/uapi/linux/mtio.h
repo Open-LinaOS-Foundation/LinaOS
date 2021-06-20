@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* 
- * linux/mtio.h header file for Linux. Written by H. Bergman
+ * linaos/mtio.h header file for LinaOS. Written by H. Bergman
  *
  * Modified for special ioctls provided by zftape in September 1997
  * by C.-J. Heine.
@@ -9,8 +9,8 @@
 #ifndef _LINUX_MTIO_H
 #define _LINUX_MTIO_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 
 /*
  * Structures and definitions for mag tape io control commands

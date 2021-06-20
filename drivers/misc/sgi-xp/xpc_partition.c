@@ -16,9 +16,9 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/hardirq.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/hardirq.h>
+#include <linaos/slab.h>
 #include "xpc.h"
 #include <asm/uv/uv_hub.h>
 

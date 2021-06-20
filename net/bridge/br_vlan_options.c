@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (c) 2020, Nikolay Aleksandrov <nikolay@cumulusnetworks.com>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/slab.h>
 #include <net/ip_tunnels.h>
 
 #include "br_private.h"

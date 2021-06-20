@@ -6,10 +6,10 @@
  *      Casey Schaufler <casey@schaufler-ca.com>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
 #include "smack.h"
 
 struct smack_known smack_known_huh = {

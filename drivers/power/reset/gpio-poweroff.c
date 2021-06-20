@@ -7,13 +7,13 @@
  *
  * Copyright (C) 2012 Jamie Lentin
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_platform.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of_platform.h>
+#include <linaos/module.h>
 
 #define DEFAULT_TIMEOUT_MS 3000
 /*

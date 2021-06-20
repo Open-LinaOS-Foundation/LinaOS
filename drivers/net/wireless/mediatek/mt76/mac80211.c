@@ -2,8 +2,8 @@
 /*
  * Copyright (C) 2016 Felix Fietkau <nbd@nbd.name>
  */
-#include <linux/sched.h>
-#include <linux/of.h>
+#include <linaos/sched.h>
+#include <linaos/of.h>
 #include "mt76.h"
 
 #define CHAN2G(_idx, _freq) {			\

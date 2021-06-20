@@ -8,21 +8,21 @@
  */
 
 #define pr_fmt(fmt) "(stk) :" fmt
-#include <linux/platform_device.h>
-#include <linux/jiffies.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/gpio.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/sched.h>
-#include <linux/sysfs.h>
-#include <linux/tty.h>
+#include <linaos/platform_device.h>
+#include <linaos/jiffies.h>
+#include <linaos/firmware.h>
+#include <linaos/delay.h>
+#include <linaos/wait.h>
+#include <linaos/gpio.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/sched.h>
+#include <linaos/sysfs.h>
+#include <linaos/tty.h>
 
-#include <linux/skbuff.h>
-#include <linux/ti_wilink_st.h>
-#include <linux/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/ti_wilink_st.h>
+#include <linaos/module.h>
 
 #define MAX_ST_DEVICES	3	/* Imagine 1 on each UART for now */
 static struct platform_device *st_kim_devices[MAX_ST_DEVICES];

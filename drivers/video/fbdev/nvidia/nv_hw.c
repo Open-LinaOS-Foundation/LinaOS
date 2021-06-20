@@ -49,7 +49,7 @@
 
 /* $XFree86: xc/programs/Xserver/hw/xfree86/drivers/nv/nv_hw.c,v 1.4 2003/11/03 05:11:25 tsi Exp $ */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include "nv_type.h"
 #include "nv_local.h"
 #include "nv_proto.h"

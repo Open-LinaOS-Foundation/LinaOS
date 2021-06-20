@@ -7,8 +7,8 @@
  *     Matthew Garrett <mjg59@google.com>
  *     Thiebaud Weksteen <tweek@google.com>
  */
-#include <linux/efi.h>
-#include <linux/tpm_eventlog.h>
+#include <linaos/efi.h>
+#include <linaos/tpm_eventlog.h>
 #include <asm/efi.h>
 
 #include "efistub.h"
@@ -50,10 +50,10 @@ void efi_enable_reset_attack_mitigation(void)
 void efi_retrieve_tpm2_eventlog(void)
 {
 	efi_guid_t tcg2_guid = EFI_TCG2_PROTOCOL_GUID;
-	efi_guid_t linux_eventlog_guid = LINUX_EFI_TPM_EVENT_LOG_GUID;
+	efi_guid_t linaos_eventlog_guid = LINUX_EFI_TPM_EVENT_LOG_GUID;
 	efi_status_t status;
 	efi_physical_addr_t log_location = 0, log_last_entry = 0;
-	struct linux_efi_tpm_eventlog *log_tbl = NULL;
+	struct linaos_efi_tpm_eventlog *log_tbl = NULL;
 	struct efi_tcg2_final_events_table *final_events_table = NULL;
 	unsigned long first_entry_addr, last_entry_addr;
 	size_t log_size, last_entry_size;
@@ -157,7 +157,7 @@ void efi_retrieve_tpm2_eventlog(void)
 	memcpy(log_tbl->log, (void *) first_entry_addr, log_size);
 
 	status = efi_bs_call(install_configuration_table,
-			     &linux_eventlog_guid, log_tbl);
+			     &linaos_eventlog_guid, log_tbl);
 	if (status != EFI_SUCCESS)
 		goto err_free;
 	return;

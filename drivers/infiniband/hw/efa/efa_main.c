@@ -3,10 +3,10 @@
  * Copyright 2018-2021 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/utsname.h>
-#include <linux/version.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/utsname.h>
+#include <linaos/version.h>
 
 #include <rdma/ib_user_verbs.h>
 

@@ -6,16 +6,16 @@
  *  Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com)
  */
 
-#include <linux/binfmts.h>
-#include <linux/compat.h>
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/time_namespace.h>
+#include <linaos/binfmts.h>
+#include <linaos/compat.h>
+#include <linaos/elf.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
+#include <linaos/time_namespace.h>
 #include <vdso/datapage.h>
 #include <asm/vdso.h>
 
@@ -167,7 +167,7 @@ int vdso_getcpu_init(void)
 }
 early_initcall(vdso_getcpu_init); /* Must be called before SMP init */
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct linaos_binprm *bprm, int uses_interp)
 {
 	unsigned long vdso_text_len, vdso_mapping_len;
 	unsigned long vvar_start, vdso_text_start;

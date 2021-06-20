@@ -6,14 +6,14 @@
  * Copyright (C) 2006 Paul Mackerras, IBM Corp. <paulus@samba.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/console.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/delay.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/fb.h>
+#include <linaos/console.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
 
 #define PCI_DEVICE_ID_IBM_GXT4500P	0x21c
 #define PCI_DEVICE_ID_IBM_GXT6500P	0x21b

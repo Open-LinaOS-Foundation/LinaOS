@@ -6,17 +6,17 @@
  * Copyright (C) 2008  Yoshihiro Shimoda
  * Copyright (C) 2009  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mtd/physmap.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/smsc911x.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/smsc911x.h>
+#include <linaos/irq.h>
+#include <linaos/clk.h>
 #include <asm/machvec.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 #include <asm/clock.h>
 
 static struct mtd_partition nor_flash_partitions[] = {

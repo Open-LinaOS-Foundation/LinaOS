@@ -8,7 +8,7 @@
 #include <crypto/internal/blake2s.h>
 #include <crypto/internal/hash.h>
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* defined in blake2s-core.S */
 EXPORT_SYMBOL(blake2s_compress_arch);

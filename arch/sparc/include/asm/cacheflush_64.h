@@ -6,7 +6,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 /* Cache flush operations. */
 #define flushw_all()	__asm__ __volatile__("flushw")

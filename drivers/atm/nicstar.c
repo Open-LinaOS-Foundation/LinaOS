@@ -33,27 +33,27 @@
 
 /* Header files */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/atmdev.h>
-#include <linux/atm.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/atmdev.h>
+#include <linaos/atm.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/idr.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
-#include <linux/etherdevice.h>
+#include <linaos/uaccess.h>
+#include <linaos/atomic.h>
+#include <linaos/etherdevice.h>
 #include "nicstar.h"
 #ifdef CONFIG_ATM_NICSTAR_USE_SUNI
 #include "suni.h"

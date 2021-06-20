@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <linaos/kernel.h>
+#include <linaos/pinctrl/pinctrl.h>
 #include "pinctrl-nomadik.h"
 
 /* All the pins that can be used for GPIO and some other functions */

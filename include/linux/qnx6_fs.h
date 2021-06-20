@@ -8,8 +8,8 @@
 #ifndef _LINUX_QNX6_FS_H
 #define _LINUX_QNX6_FS_H
 
-#include <linux/types.h>
-#include <linux/magic.h>
+#include <linaos/types.h>
+#include <linaos/magic.h>
 
 #define QNX6_ROOT_INO 1
 

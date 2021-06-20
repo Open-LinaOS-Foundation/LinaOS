@@ -16,15 +16,15 @@
  * EEPROMs, though. We currently use the 8 bit as a valid address.
  */
 
-#include <linux/bitfield.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
+#include <linaos/bitfield.h>
+#include <linaos/firmware.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/sysfs.h>
 
 struct eeprom_data {
 	struct bin_attribute bin;
@@ -73,7 +73,7 @@ static int i2c_slave_eeprom_slave_cb(struct i2c_client *client,
 		spin_unlock(&eeprom->buffer_lock);
 		/*
 		 * Do not increment buffer_idx here, because we don't know if
-		 * this byte will be actually used. Read Linux I2C slave docs
+		 * this byte will be actually used. Read LinaOS I2C slave docs
 		 * for details.
 		 */
 		break;

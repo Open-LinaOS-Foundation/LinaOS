@@ -5,7 +5,7 @@
 #if !defined(_TRACE_FS_DAX_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_FS_DAX_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(dax_pmd_fault_class,
 	TP_PROTO(struct inode *inode, struct vm_fault *vmf,

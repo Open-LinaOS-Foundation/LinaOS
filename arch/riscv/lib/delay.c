@@ -3,10 +3,10 @@
  * Copyright (C) 2012 Regents of the University of California
  */
 
-#include <linux/delay.h>
-#include <linux/param.h>
-#include <linux/timex.h>
-#include <linux/export.h>
+#include <linaos/delay.h>
+#include <linaos/param.h>
+#include <linaos/timex.h>
+#include <linaos/export.h>
 
 /*
  * This is copies from arch/arm/include/asm/delay.h

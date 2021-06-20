@@ -9,13 +9,13 @@
  *  All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/time.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
 #include <sound/core.h>
 #include <sound/ac97_codec.h>
 #include <sound/initval.h>

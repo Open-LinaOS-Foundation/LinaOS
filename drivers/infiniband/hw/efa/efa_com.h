@@ -6,11 +6,11 @@
 #ifndef _EFA_COM_H_
 #define _EFA_COM_H_
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/semaphore.h>
-#include <linux/sched.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/semaphore.h>
+#include <linaos/sched.h>
 
 #include <rdma/ib_verbs.h>
 

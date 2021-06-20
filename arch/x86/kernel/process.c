@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/prctl.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/idle.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/random.h>
-#include <linux/user-return-notifier.h>
-#include <linux/dmi.h>
-#include <linux/utsname.h>
-#include <linux/stackprotector.h>
-#include <linux/cpuidle.h>
-#include <linux/acpi.h>
-#include <linux/elf-randomize.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/prctl.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/sched/idle.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/pm.h>
+#include <linaos/tick.h>
+#include <linaos/random.h>
+#include <linaos/user-return-notifier.h>
+#include <linaos/dmi.h>
+#include <linaos/utsname.h>
+#include <linaos/stackprotector.h>
+#include <linaos/cpuidle.h>
+#include <linaos/acpi.h>
+#include <linaos/elf-randomize.h>
 #include <trace/events/power.h>
-#include <linux/hw_breakpoint.h>
+#include <linaos/hw_breakpoint.h>
 #include <asm/cpu.h>
 #include <asm/apic.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/mwait.h>
 #include <asm/fpu/internal.h>
 #include <asm/debugreg.h>
@@ -47,7 +47,7 @@
 #include "process.h"
 
 /*
- * per-CPU TSS segments. Threads are completely 'soft' on Linux,
+ * per-CPU TSS segments. Threads are completely 'soft' on LinaOS,
  * no more per-task TSS's. The TSS size is kept cacheline-aligned
  * so they are allowed to end up in the .data..cacheline_aligned
  * section. Since TSS's are completely CPU-local, we want them

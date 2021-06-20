@@ -26,7 +26,7 @@
 #ifndef __AMDGPU_GMC_H__
 #define __AMDGPU_GMC_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "amdgpu_irq.h"
 

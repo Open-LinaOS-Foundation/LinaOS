@@ -12,10 +12,10 @@
 /*
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linaos/device.h>
+#include <linaos/hid.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
 
 #include "hid-ids.h"
 

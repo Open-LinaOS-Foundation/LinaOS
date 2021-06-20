@@ -49,7 +49,7 @@ If the platform features IRQ redirection (info provided by SAL) all
 IO-SAPIC interrupts are initialized with CPU#0 as their default target
 and the routing is the so called "lowest priority mode" (actually
 fixed SAPIC mode with hint). The XTP chipset registers are used as hints
-for the IRQ routing. Currently in Linux XTP registers can have three
+for the IRQ routing. Currently in LinaOS XTP registers can have three
 values:
 
 	- minimal for an idle task,

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: ISC
 /*
- * Copyright (c) 2018 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018 The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/soc/qcom/qmi.h>
-#include <linux/types.h>
+#include <linaos/soc/qcom/qmi.h>
+#include <linaos/types.h>
 #include "qmi_wlfw_v01.h"
 
 static struct qmi_elem_info wlfw_ce_tgt_pipe_cfg_s_v01_ei[] = {

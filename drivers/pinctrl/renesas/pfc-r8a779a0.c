@@ -7,9 +7,9 @@
  * This file is based on the drivers/pinctrl/renesas/pfc-r8a7795.c
  */
 
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
 
 #include "sh_pfc.h"
 

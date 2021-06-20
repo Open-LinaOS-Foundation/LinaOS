@@ -14,12 +14,12 @@
  * Based on af_d88.c by Texas Instruments.
  */
 
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/errno.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/gpio/consumer.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

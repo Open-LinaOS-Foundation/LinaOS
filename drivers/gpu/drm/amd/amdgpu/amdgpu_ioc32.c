@@ -27,7 +27,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  */
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 #include <drm/amdgpu_drm.h>
 #include <drm/drm_ioctl.h>

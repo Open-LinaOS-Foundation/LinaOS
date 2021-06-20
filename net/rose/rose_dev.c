@@ -3,28 +3,28 @@
  *
  * Copyright (C) Jonathan Naylor G4KLX (g4klx@g4klx.demon.co.uk)
  */
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/sysctl.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/in.h>
-#include <linux/if_ether.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/proc_fs.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
+#include <linaos/sysctl.h>
+#include <linaos/string.h>
+#include <linaos/socket.h>
+#include <linaos/errno.h>
+#include <linaos/fcntl.h>
+#include <linaos/in.h>
+#include <linaos/if_ether.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
 
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/skbuff.h>
 
 #include <net/ip.h>
 #include <net/arp.h>

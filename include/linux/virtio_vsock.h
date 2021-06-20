@@ -2,8 +2,8 @@
 #ifndef _LINUX_VIRTIO_VSOCK_H
 #define _LINUX_VIRTIO_VSOCK_H
 
-#include <uapi/linux/virtio_vsock.h>
-#include <linux/socket.h>
+#include <uapi/linaos/virtio_vsock.h>
+#include <linaos/socket.h>
 #include <net/sock.h>
 #include <net/af_vsock.h>
 

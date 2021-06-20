@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/pid_namespace.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/stat.h>
-#include <linux/seq_file.h>
-#include <linux/seqlock.h>
-#include <linux/time.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/proc_fs.h>
+#include <linaos/sched.h>
+#include <linaos/sched/loadavg.h>
+#include <linaos/sched/stat.h>
+#include <linaos/seq_file.h>
+#include <linaos/seqlock.h>
+#include <linaos/time.h>
 
 static int loadavg_proc_show(struct seq_file *m, void *v)
 {

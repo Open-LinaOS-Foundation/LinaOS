@@ -16,12 +16,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
+#include <linaos/init.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/spinlock.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task.h>
 
 #include <asm/processor.h>
 #include <asm/mmu_context.h>

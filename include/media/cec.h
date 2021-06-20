@@ -8,14 +8,14 @@
 #ifndef _MEDIA_CEC_H
 #define _MEDIA_CEC_H
 
-#include <linux/poll.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/kthread.h>
-#include <linux/timer.h>
-#include <linux/cec-funcs.h>
+#include <linaos/poll.h>
+#include <linaos/fs.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/cdev.h>
+#include <linaos/kthread.h>
+#include <linaos/timer.h>
+#include <linaos/cec-funcs.h>
 #include <media/rc-core.h>
 
 #define CEC_CAP_DEFAULTS (CEC_CAP_LOG_ADDRS | CEC_CAP_TRANSMIT | \

@@ -6,8 +6,8 @@
  * Copyright 2014 Linaro Ltd.
  */
 
-#include <linux/delay.h>
-#include <linux/greybus.h>
+#include <linaos/delay.h>
+#include <linaos/greybus.h>
 
 #include "greybus_trace.h"
 

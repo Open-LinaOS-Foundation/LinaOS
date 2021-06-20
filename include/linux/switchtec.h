@@ -7,8 +7,8 @@
 #ifndef _SWITCHTEC_H
 #define _SWITCHTEC_H
 
-#include <linux/pci.h>
-#include <linux/cdev.h>
+#include <linaos/pci.h>
+#include <linaos/cdev.h>
 
 #define SWITCHTEC_MRPC_PAYLOAD_SIZE 1024
 #define SWITCHTEC_MAX_PFF_CSR 255

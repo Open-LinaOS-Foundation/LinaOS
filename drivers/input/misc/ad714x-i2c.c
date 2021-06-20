@@ -5,11 +5,11 @@
  * Copyright 2009-2011 Analog Devices Inc.
  */
 
-#include <linux/input.h>	/* BUS_I2C */
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pm.h>
+#include <linaos/input.h>	/* BUS_I2C */
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/pm.h>
 #include "ad714x.h"
 
 static int __maybe_unused ad714x_i2c_suspend(struct device *dev)

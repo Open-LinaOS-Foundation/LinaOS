@@ -4,7 +4,7 @@
 
 #include <asm/ptrace.h>
 #include <asm/string.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /*
  * KEXEC_SOURCE_MEMORY_LIMIT maximum page get_free_page can return.

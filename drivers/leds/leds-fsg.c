@@ -11,11 +11,11 @@
  * Author: Richard Purdie <rpurdie@openedhand.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
 #include <mach/hardware.h>
 
 #define FSG_LED_WLAN_BIT	0

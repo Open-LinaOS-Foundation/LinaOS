@@ -17,10 +17,10 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
 
 #include "clock.h"
 #include "clock2xxx.h"

@@ -6,14 +6,14 @@
  * Author Mel Gorman <mel@csn.ul.ie>
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/export.h>
-#include <linux/memory.h>
-#include <linux/notifier.h>
-#include <linux/sched.h>
-#include <linux/mman.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/kobject.h>
+#include <linaos/export.h>
+#include <linaos/memory.h>
+#include <linaos/notifier.h>
+#include <linaos/sched.h>
+#include <linaos/mman.h>
 #include "internal.h"
 
 #ifdef CONFIG_DEBUG_MEMORY_INIT

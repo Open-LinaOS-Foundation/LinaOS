@@ -47,7 +47,7 @@ I suspect that this driver could be made to work for the following SiS
 chipsets as well: 635, and 635T. If anyone owns a board with those chips
 AND is willing to risk crashing & burning an otherwise well-behaved kernel
 in the name of progress... please contact me at <mhoffman@lightlink.com> or
-via the linux-i2c mailing list: <linux-i2c@vger.kernel.org>.  Please send bug
+via the linaos-i2c mailing list: <linaos-i2c@vger.kernel.org>.  Please send bug
 reports and/or success stories as well.
 
 

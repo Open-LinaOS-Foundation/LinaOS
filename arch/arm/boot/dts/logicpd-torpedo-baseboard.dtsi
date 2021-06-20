@@ -9,28 +9,28 @@
 		sysboot2 {
 			label = "sysboot2";
 			gpios = <&gpio1 2 GPIO_ACTIVE_LOW>;	/* gpio2 */
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			wakeup-source;
 		};
 
 		sysboot5 {
 			label = "sysboot5";
 			gpios = <&gpio1 7 GPIO_ACTIVE_LOW>;	/* gpio7 */
-			linux,code = <BTN_1>;
+			linaos,code = <BTN_1>;
 			wakeup-source;
 		};
 
 		gpio1 {
 			label = "gpio1";
 			gpios = <&gpio6 21 GPIO_ACTIVE_LOW>;	/* gpio181 */
-			linux,code = <BTN_2>;
+			linaos,code = <BTN_2>;
 			wakeup-source;
 		};
 
 		gpio2 {
 			label = "gpio2";
 			gpios = <&gpio6 18 GPIO_ACTIVE_LOW>;	/* gpio178 */
-			linux,code = <BTN_3>;
+			linaos,code = <BTN_3>;
 			wakeup-source;
 		};
 	};
@@ -49,13 +49,13 @@
 		led1 {
 			label = "led1";
 			gpios = <&gpio6 20 GPIO_ACTIVE_HIGH>;	/* gpio180 */
-			linux,default-trigger = "cpu0";
+			linaos,default-trigger = "cpu0";
 		};
 
 		led2 {
 			label = "led2";
 			gpios = <&gpio6 19 GPIO_ACTIVE_HIGH>;	/* gpio179 */
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 		};
 	};
 

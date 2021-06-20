@@ -7,21 +7,21 @@
  */
 
 /*
-#include <linux/module.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/magic.h>
-#include <linux/security.h>
+#include <linaos/module.h>
+#include <linaos/nsproxy.h>
+#include <linaos/slab.h>
+#include <linaos/magic.h>
+#include <linaos/security.h>
 #include <net/net_namespace.h>
 */
 
-#include <linux/ctype.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/parser.h>
-#include <linux/utsname.h>
+#include <linaos/ctype.h>
+#include <linaos/fs_context.h>
+#include <linaos/fs_parser.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/parser.h>
+#include <linaos/utsname.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
 #include "cifsglob.h"
@@ -85,7 +85,7 @@ const struct fs_parameter_spec smb3_fs_parameters[] = {
 	fsparam_flag("nodfs", Opt_nodfs),
 	fsparam_flag_no("posixpaths", Opt_posixpaths),
 	fsparam_flag_no("unix", Opt_unix),
-	fsparam_flag_no("linux", Opt_unix),
+	fsparam_flag_no("linaos", Opt_unix),
 	fsparam_flag_no("posix", Opt_unix),
 	fsparam_flag("nocase", Opt_nocase),
 	fsparam_flag("ignorecase", Opt_nocase),
@@ -904,7 +904,7 @@ static int smb3_fs_context_parse_param(struct fs_context *fc,
 		}
 		break;
 	case Opt_uid:
-		ctx->linux_uid.val = result.uint_32;
+		ctx->linaos_uid.val = result.uint_32;
 		ctx->uid_specified = true;
 		break;
 	case Opt_cruid:
@@ -915,7 +915,7 @@ static int smb3_fs_context_parse_param(struct fs_context *fc,
 		ctx->backupgid_specified = true;
 		break;
 	case Opt_gid:
-		ctx->linux_gid.val = result.uint_32;
+		ctx->linaos_gid.val = result.uint_32;
 		ctx->gid_specified = true;
 		break;
 	case Opt_port:
@@ -1239,9 +1239,9 @@ static int smb3_fs_context_parse_param(struct fs_context *fc,
 		break;
 	case Opt_unix:
 		if (result.negated)
-			ctx->linux_ext = 0;
+			ctx->linaos_ext = 0;
 		else
-			ctx->no_linux_ext = 1;
+			ctx->no_linaos_ext = 1;
 		break;
 	case Opt_nocase:
 		ctx->nocase = 1;
@@ -1403,8 +1403,8 @@ int smb3_init_fs_context(struct fs_context *fc)
 	 */
 	ctx->target_rfc1001_name[0] = 0;
 	ctx->cred_uid = current_uid();
-	ctx->linux_uid = current_uid();
-	ctx->linux_gid = current_gid();
+	ctx->linaos_uid = current_uid();
+	ctx->linaos_gid = current_gid();
 	/* By default 4MB read ahead size, 1MB block size */
 	ctx->bsize = CIFS_DEFAULT_IOSIZE; /* can improve cp performance significantly */
 	ctx->rasize = 0; /* 0 = use default (ie negotiated rsize) for read ahead pages */

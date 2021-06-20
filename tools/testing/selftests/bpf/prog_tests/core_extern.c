@@ -4,7 +4,7 @@
 #include <test_progs.h>
 #include <sys/mman.h>
 #include <sys/utsname.h>
-#include <linux/version.h>
+#include <linaos/version.h>
 #include "test_core_extern.skel.h"
 
 static uint32_t get_kernel_version(void)

@@ -213,7 +213,7 @@ static inline int au1200_irq_to_gpio(int irq)
 }
 
 /*
- * GPIO1 block macros for common linux gpio functions.
+ * GPIO1 block macros for common linaos gpio functions.
  */
 static inline void alchemy_gpio1_set_value(int gpio, int v)
 {
@@ -278,7 +278,7 @@ static inline void alchemy_gpio1_input_enable(void)
 }
 
 /*
- * GPIO2 block macros for common linux GPIO functions. The 'gpio'
+ * GPIO2 block macros for common linaos GPIO functions. The 'gpio'
  * parameter must be in range of ALCHEMY_GPIO2_BASE..ALCHEMY_GPIO2_MAX.
  */
 static inline void __alchemy_gpio2_mod_dir(int gpio, int to_out)

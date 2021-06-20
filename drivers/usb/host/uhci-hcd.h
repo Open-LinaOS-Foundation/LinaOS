@@ -2,9 +2,9 @@
 #ifndef __LINUX_UHCI_HCD_H
 #define __LINUX_UHCI_HCD_H
 
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/clk.h>
+#include <linaos/list.h>
+#include <linaos/usb.h>
+#include <linaos/clk.h>
 
 #define usb_packetid(pipe)	(usb_pipein(pipe) ? USB_PID_IN : USB_PID_OUT)
 #define PIPE_DEVEP_MASK		0x0007ff00

@@ -3,18 +3,18 @@
  * arch/powerpc/platforms/embedded6xx/wii.c
  *
  * Nintendo Wii board-specific support
- * Copyright (C) 2008-2009 The GameCube Linux Team
+ * Copyright (C) 2008-2009 The GameCube LinaOS Team
  * Copyright (C) 2008,2009 Albert Herranz
  */
 #define DRV_MODULE_NAME "wii"
 #define pr_fmt(fmt) DRV_MODULE_NAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/of_platform.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/seq_file.h>
+#include <linaos/of_platform.h>
+#include <linaos/memblock.h>
 #include <mm/mmu_decl.h>
 
 #include <asm/io.h>

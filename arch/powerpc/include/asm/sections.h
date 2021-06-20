@@ -3,8 +3,8 @@
 #define _ASM_POWERPC_SECTIONS_H
 #ifdef __KERNEL__
 
-#include <linux/elf.h>
-#include <linux/uaccess.h>
+#include <linaos/elf.h>
+#include <linaos/uaccess.h>
 
 #define arch_is_kernel_initmem_freed arch_is_kernel_initmem_freed
 
@@ -48,7 +48,7 @@ static inline int in_kernel_text(unsigned long addr)
 
 static inline unsigned long kernel_toc_addr(void)
 {
-	/* Defined by the linker, see vmlinux.lds.S */
+	/* Defined by the linker, see vmlinaos.lds.S */
 	extern unsigned long __toc_start;
 
 	/*

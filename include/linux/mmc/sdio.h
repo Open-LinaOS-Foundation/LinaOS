@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  include/linux/mmc/sdio.h
+ *  include/linaos/mmc/sdio.h
  *
  *  Copyright 2006-2007 Pierre Ossman
  */

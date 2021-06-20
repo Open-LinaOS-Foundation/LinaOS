@@ -2,20 +2,20 @@
 /*
  * NXP SC18IS602/603 SPI driver
  *
- * Copyright (C) Guenter Roeck <linux@roeck-us.net>
+ * Copyright (C) Guenter Roeck <linaos@roeck-us.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/platform_data/sc18is602.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of_device.h>
+#include <linaos/of.h>
+#include <linaos/platform_data/sc18is602.h>
+#include <linaos/gpio/consumer.h>
 
 enum chips { sc18is602, sc18is602b, sc18is603 };
 

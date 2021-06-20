@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Copyright 2005, 2007 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  */
 
-#include <linux/serial_s3c.h>
+#include <linaos/serial_s3c.h>
 
 /* The S5PV210/S5PC110 implementations are as belows. */
 

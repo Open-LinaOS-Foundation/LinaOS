@@ -2,10 +2,10 @@
 #ifndef _LINUX_STOP_MACHINE
 #define _LINUX_STOP_MACHINE
 
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/smp.h>
-#include <linux/list.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/smp.h>
+#include <linaos/list.h>
 
 /*
  * stop_cpu[s]() is simplistic per-cpu maximum priority cpu
@@ -41,7 +41,7 @@ extern void print_stop_info(const char *log_lvl, struct task_struct *task);
 
 #else	/* CONFIG_SMP */
 
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 
 struct cpu_stop_work {
 	struct work_struct	work;

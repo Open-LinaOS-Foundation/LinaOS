@@ -17,9 +17,9 @@ Common variables
 init_uts_ns.name.release
 ------------------------
 
-The version of the Linux kernel. Used to find the corresponding source
+The version of the LinaOS kernel. Used to find the corresponding source
 code from which the kernel has been built. For example, crash uses it to
-find the corresponding vmlinux in order to process vmcore.
+find the corresponding vmlinaos in order to process vmcore.
 
 PAGE_SIZE
 ---------
@@ -322,7 +322,7 @@ array. Used by tools to compute the number of free pages.
 NR_FREE_PAGES
 -------------
 
-On linux-2.6.21 or later, the number of free pages is in
+On linaos-2.6.21 or later, the number of free pages is in
 vm_stat[NR_FREE_PAGES]. Used to get the number of free pages.
 
 PG_lru|PG_private|PG_swapcache|PG_swapbacked|PG_slab|PG_hwpoision|PG_head_mask

@@ -5,17 +5,17 @@
  * Copyright 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/ioport.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/ioport.h>
+#include <linaos/miscdevice.h>
+#include <linaos/mm.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>

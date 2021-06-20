@@ -14,13 +14,13 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/soc/ti/ti_sci_protocol.h>
+#include <linaos/idr.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset-controller.h>
+#include <linaos/soc/ti/ti_sci_protocol.h>
 
 /**
  * struct ti_sci_reset_control - reset control structure

@@ -3,19 +3,19 @@
     Copyright (C) 2008 Glauber de Oliveira Costa, Red Hat Inc.
 */
 
-#include <linux/clocksource.h>
-#include <linux/kvm_para.h>
+#include <linaos/clocksource.h>
+#include <linaos/kvm_para.h>
 #include <asm/pvclock.h>
 #include <asm/msr.h>
 #include <asm/apic.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/cpuhotplug.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/set_memory.h>
+#include <linaos/percpu.h>
+#include <linaos/hardirq.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/sched.h>
+#include <linaos/sched/clock.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/set_memory.h>
 
 #include <asm/hypervisor.h>
 #include <asm/mem_encrypt.h>

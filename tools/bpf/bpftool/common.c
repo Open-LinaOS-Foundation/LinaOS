@@ -13,8 +13,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <linux/limits.h>
-#include <linux/magic.h>
+#include <linaos/limits.h>
+#include <linaos/magic.h>
 #include <net/if.h>
 #include <sys/mount.h>
 #include <sys/resource.h>

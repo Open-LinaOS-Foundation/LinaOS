@@ -26,7 +26,7 @@
  * as they get called from within inline assembly.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/page_types.h>
 #include <asm/errno.h>
 #include <asm/asm-offsets.h>

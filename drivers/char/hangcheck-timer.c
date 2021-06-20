@@ -24,19 +24,19 @@
  * expected timeout very closely.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/sysrq.h>
-#include <linux/timer.h>
-#include <linux/hrtimer.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/reboot.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
+#include <linaos/sysrq.h>
+#include <linaos/timer.h>
+#include <linaos/hrtimer.h>
 
 #define VERSION_STR "0.9.1"
 

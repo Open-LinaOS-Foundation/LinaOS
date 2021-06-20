@@ -5,7 +5,7 @@
 #ifndef __TDA8290_H__
 #define __TDA8290_H__
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/dvb_frontend.h>
 #include "tda18271.h"
 

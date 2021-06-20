@@ -9,9 +9,9 @@
 #ifndef __IIO_ADIS_H__
 #define __IIO_ADIS_H__
 
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
-#include <linux/iio/types.h>
+#include <linaos/spi/spi.h>
+#include <linaos/interrupt.h>
+#include <linaos/iio/types.h>
 
 #define ADIS_WRITE_REG(reg) ((0x80 | (reg)))
 #define ADIS_READ_REG(reg) ((reg) & 0x7f)

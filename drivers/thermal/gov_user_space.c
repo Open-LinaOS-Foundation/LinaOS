@@ -10,8 +10,8 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <linaos/slab.h>
+#include <linaos/thermal.h>
 
 #include "thermal_core.h"
 

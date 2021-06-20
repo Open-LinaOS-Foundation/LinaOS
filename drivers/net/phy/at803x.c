@@ -7,18 +7,18 @@
  * Author: Matus Ujhelyi <ujhelyi.m@gmail.com>
  */
 
-#include <linux/phy.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/of_gpio.h>
-#include <linux/bitfield.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/phy.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool_netlink.h>
+#include <linaos/of_gpio.h>
+#include <linaos/bitfield.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/consumer.h>
 #include <dt-bindings/net/qca-ar803x.h>
 
 #define AT803X_SPECIFIC_FUNCTION_CONTROL	0x10

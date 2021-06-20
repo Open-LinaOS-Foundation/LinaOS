@@ -10,11 +10,11 @@
  * to not introduce bugs.
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/bcd.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/rtc.h>
+#include <linaos/platform_device.h>
+#include <linaos/bcd.h>
+#include <linaos/io.h>
 
 #define M48T86_SEC		0x00
 #define M48T86_SECALRM		0x01

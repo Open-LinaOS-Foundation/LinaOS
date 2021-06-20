@@ -35,13 +35,13 @@
 #ifndef I40IW_OSDEP_H
 #define I40IW_OSDEP_H
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/bitops.h>
 #include <net/tcp.h>
 #include <crypto/hash.h>
 /* get readq/writeq support for 32 bit kernels, use the low-first version */
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 
 #define STATS_TIMER_DELAY 1000
 

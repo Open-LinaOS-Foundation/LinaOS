@@ -8,9 +8,9 @@
  */
 
 #include "hsr_slave.h"
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_vlan.h>
 #include "hsr_main.h"
 #include "hsr_device.h"
 #include "hsr_forward.h"

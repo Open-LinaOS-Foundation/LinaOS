@@ -9,7 +9,7 @@
 #ifndef __PLAT_SAMSUNG_KEYPAD_H
 #define __PLAT_SAMSUNG_KEYPAD_H
 
-#include <linux/input/samsung-keypad.h>
+#include <linaos/input/samsung-keypad.h>
 
 /**
  * samsung_keypad_set_platdata - Set platform data for Samsung Keypad device.

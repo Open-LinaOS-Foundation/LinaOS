@@ -9,11 +9,11 @@
 #define _ASM_IOMMU_H
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/dma-map-ops.h>
-#include <linux/bitops.h>
+#include <linaos/compiler.h>
+#include <linaos/spinlock.h>
+#include <linaos/device.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/bitops.h>
 #include <asm/machdep.h>
 #include <asm/types.h>
 #include <asm/pci-bridge.h>

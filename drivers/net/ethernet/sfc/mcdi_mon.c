@@ -4,10 +4,10 @@
  * Copyright 2011-2013 Solarflare Communications Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/hwmon.h>
-#include <linux/stat.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/hwmon.h>
+#include <linaos/stat.h>
 
 #include "net_driver.h"
 #include "mcdi.h"

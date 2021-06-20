@@ -3,8 +3,8 @@
 #ifndef __CIO2_BRIDGE_H
 #define __CIO2_BRIDGE_H
 
-#include <linux/property.h>
-#include <linux/types.h>
+#include <linaos/property.h>
+#include <linaos/types.h>
 
 #include "ipu3-cio2.h"
 

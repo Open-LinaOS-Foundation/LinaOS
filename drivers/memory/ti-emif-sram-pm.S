@@ -14,7 +14,7 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/memory.h>
 

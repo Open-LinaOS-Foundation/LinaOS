@@ -2,7 +2,7 @@
 #ifndef __ASM_CPU_SH3_DMA_H
 #define __ASM_CPU_SH3_DMA_H
 
-#include <linux/sh_intc.h>
+#include <linaos/sh_intc.h>
 
 #if defined(CONFIG_CPU_SUBTYPE_SH7720) || \
     defined(CONFIG_CPU_SUBTYPE_SH7721) || \

@@ -6,7 +6,7 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ *  Author(s):  Ursula Braun <ubraun@linaos.vnet.ibm.com>
  */
 #ifndef _SMC_H
 #define _SMC_H

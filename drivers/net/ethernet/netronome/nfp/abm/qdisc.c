@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2018 Netronome Systems, Inc. */
 
-#include <linux/rtnetlink.h>
+#include <linaos/rtnetlink.h>
 #include <net/pkt_cls.h>
 #include <net/pkt_sched.h>
 #include <net/red.h>

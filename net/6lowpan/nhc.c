@@ -6,7 +6,7 @@
  *	Alexander Aring		<aar@pengutronix.de>
  */
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 
 #include <net/ipv6.h>
 

@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/linux/mmc/core.h
+ *  linaos/include/linaos/mmc/core.h
  */
 #ifndef LINUX_MMC_CORE_H
 #define LINUX_MMC_CORE_H
 
-#include <linux/completion.h>
-#include <linux/types.h>
+#include <linaos/completion.h>
+#include <linaos/types.h>
 
 struct mmc_data;
 struct mmc_request;

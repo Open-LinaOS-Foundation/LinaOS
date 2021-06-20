@@ -7,9 +7,9 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/device.h>
-#include <linux/gfp.h>
-#include <linux/sys_soc.h>
+#include <linaos/device.h>
+#include <linaos/gfp.h>
+#include <linaos/sys_soc.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-subdev.h>

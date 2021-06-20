@@ -8,13 +8,13 @@
  *  Based on Motorola's rtc.c Copyright (c) 2003-2005 Motorola
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mfd/ezx-pcap.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/mfd/ezx-pcap.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
 
 struct pcap_rtc {
 	struct pcap_chip *pcap;

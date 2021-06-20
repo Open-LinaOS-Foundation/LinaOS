@@ -2,7 +2,7 @@
 
 What:		/sys/class/power_supply/<supply_name>/manufacturer
 Date:		May 2007
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Reports the name of the device manufacturer.
 
@@ -11,7 +11,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/model_name
 Date:		May 2007
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Reports the name of the device model.
 
@@ -20,7 +20,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/serial_number
 Date:		January 2008
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Reports the serial number of the device.
 
@@ -29,7 +29,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/type
 Date:		May 2010
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Describes the main type of the supply.
 
@@ -40,7 +40,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/current_avg
 Date:		May 2007
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Battery:
 
@@ -63,7 +63,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/current_max
 Date:		October 2010
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Battery:
 
@@ -78,7 +78,7 @@ Description:
 
 What: 		/sys/class/power_supply/<supply_name>/current_now
 Date:		May 2007
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 
 		Battery:
@@ -103,7 +103,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/temp
 Date:		May 2007
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Battery:
 
@@ -121,7 +121,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/temp_alert_max
 Date:		July 2012
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Battery:
 
@@ -145,7 +145,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/temp_alert_min
 Date:		July 2012
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 
 		Battery:
@@ -170,7 +170,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/temp_max
 Date:		July 2014
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Battery:
 
@@ -187,7 +187,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/temp_min
 Date:		July 2014
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Battery:
 
@@ -204,7 +204,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/voltage_max,
 Date:		January 2008
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Battery:
 
@@ -221,7 +221,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/voltage_min,
 Date:		January 2008
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Battery:
 
@@ -238,7 +238,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/voltage_now,
 Date:		May 2007
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Battery:
 
@@ -262,7 +262,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/capacity
 Date:		May 2007
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Fine grain representation of battery capacity.
 
@@ -272,7 +272,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/capacity_alert_max
 Date:		July 2012
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Maximum battery capacity trip-wire value where the supply will
 		notify user-space of the event. This is normally used for the
@@ -287,7 +287,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/capacity_alert_min
 Date:		July 2012
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Minimum battery capacity trip-wire value where the supply will
 		notify user-space of the event. This is normally used for the
@@ -302,7 +302,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/capacity_error_margin
 Date:		April 2019
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Battery capacity measurement becomes unreliable without
 		recalibration. This values provides the maximum error
@@ -318,7 +318,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/capacity_level
 Date:		June 2009
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Coarse representation of battery capacity.
 
@@ -330,7 +330,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/charge_control_limit
 Date:		Oct 2012
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Maximum allowable charging current. Used for charge rate
 		throttling for thermal cooling or improving battery health.
@@ -341,7 +341,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/charge_control_limit_max
 Date:		Oct 2012
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Maximum legal value for the charge_control_limit property.
 
@@ -351,7 +351,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/charge_control_start_threshold
 Date:		April 2019
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Represents a battery percentage level, below which charging will
 		begin.
@@ -361,7 +361,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/charge_control_end_threshold
 Date:		April 2019
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Represents a battery percentage level, above which charging will
 		stop.
@@ -372,7 +372,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/charge_type
 Date:		July 2009
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Represents the type of charging currently being applied to the
 		battery. "Trickle", "Fast", and "Standard" all mean different
@@ -390,7 +390,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/charge_term_current
 Date:		July 2014
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Reports the charging current value which is used to determine
 		when the battery is considered full and charging should end.
@@ -401,7 +401,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/health
 Date:		May 2007
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Reports the health of the battery or battery side of charger
 		functionality.
@@ -417,7 +417,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/precharge_current
 Date:		June 2017
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Reports the charging current applied during pre-charging phase
 		for a battery charge cycle.
@@ -428,7 +428,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/present
 Date:		May 2007
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Reports whether a battery is present or not in the system.
 
@@ -443,7 +443,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/status
 Date:		May 2007
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Represents the charging status of the battery. Normally this
 		is read-only reporting although for some supplies this can be
@@ -457,7 +457,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/technology
 Date:		May 2007
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Describes the battery technology supported by the supply.
 
@@ -470,7 +470,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/voltage_avg,
 Date:		May 2007
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Reports an average VBAT voltage reading for the battery, over a
 		fixed period. Normally devices will provide a fixed interval in
@@ -484,7 +484,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/input_current_limit
 Date:		July 2014
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Details the incoming IBUS current limit currently set in the
 		supply. Normally this is configured based on the type of
@@ -499,7 +499,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/input_voltage_limit
 Date:		May 2019
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		This entry configures the incoming VBUS voltage limit currently
 		set in the supply. Normally this is configured based on
@@ -517,7 +517,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/input_power_limit
 Date:		May 2019
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		This entry configures the incoming power limit currently set
 		in the supply. Normally this is configured based on
@@ -531,7 +531,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/online,
 Date:		May 2007
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Indicates if VBUS is present for the supply. When the supply is
 		online, and the supply allows it, then it's possible to switch
@@ -550,7 +550,7 @@ Description:
 
 What: 		/sys/class/power_supply/<supply_name>/usb_type
 Date:		March 2018
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Reports what type of USB connection is currently active for
 		the supply, for example it can show if USB-PD capable source
@@ -709,7 +709,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/manufacture_year
 Date:		January 2020
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Reports the year (following Gregorian calendar) when the device has been
 		manufactured.
@@ -720,7 +720,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/manufacture_month
 Date:		January 2020
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Reports the month when the device has been manufactured.
 
@@ -730,7 +730,7 @@ Description:
 
 What:		/sys/class/power_supply/<supply_name>/manufacture_day
 Date:		January 2020
-Contact:	linux-pm@vger.kernel.org
+Contact:	linaos-pm@vger.kernel.org
 Description:
 		Reports the day of month when the device has been manufactured.
 

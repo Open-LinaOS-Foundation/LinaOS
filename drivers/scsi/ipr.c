@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * ipr.c -- driver for IBM Power Linux RAID adapters
+ * ipr.c -- driver for IBM Power LinaOS RAID adapters
  *
  * Written By: Brian King <brking@us.ibm.com>, IBM Corporation
  *
@@ -40,28 +40,28 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/libata.h>
-#include <linux/hdreg.h>
-#include <linux/reboot.h>
-#include <linux/stringify.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/wait.h>
+#include <linaos/spinlock.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/blkdev.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/libata.h>
+#include <linaos/hdreg.h>
+#include <linaos/reboot.h>
+#include <linaos/stringify.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/processor.h>

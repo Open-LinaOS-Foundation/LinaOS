@@ -6,15 +6,15 @@
  * Copyright (C) 2010 Nokia Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/pm_opp.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/clk.h>
-#include <linux/cpu.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/pm_opp.h>
+#include <linaos/export.h>
+#include <linaos/suspend.h>
+#include <linaos/clk.h>
+#include <linaos/cpu.h>
 
 #include <asm/system_misc.h>
 

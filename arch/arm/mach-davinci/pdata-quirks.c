@@ -4,8 +4,8 @@
  *
  * Copyright (C) 2016 BayLibre, Inc
  */
-#include <linux/kernel.h>
-#include <linux/of_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/of_platform.h>
 
 #include <media/i2c/tvp514x.h>
 #include <media/i2c/adv7343.h>

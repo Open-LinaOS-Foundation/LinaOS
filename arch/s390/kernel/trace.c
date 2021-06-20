@@ -6,7 +6,7 @@
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/percpu.h>
+#include <linaos/percpu.h>
 #define CREATE_TRACE_POINTS
 #include <asm/trace/diag.h>
 

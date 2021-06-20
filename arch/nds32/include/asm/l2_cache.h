@@ -83,7 +83,7 @@
 #define L2_CCTL_STATUS_mskCMD_COMP      (0x1 << L2_CCTL_STATUS_offCMD_COMP)
 
 extern void __iomem *atl2c_base;
-#include <linux/smp.h>
+#include <linaos/smp.h>
 #include <asm/io.h>
 #include <asm/bitfield.h>
 

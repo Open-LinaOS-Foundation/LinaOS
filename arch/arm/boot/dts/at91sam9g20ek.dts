@@ -17,7 +17,7 @@
 		ds1 {
 			label = "ds1";
 			gpios = <&pioA 9 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		ds5 {

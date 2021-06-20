@@ -37,13 +37,13 @@
 		power {
 			label = "power";
 			gpios = <&gpio0 0 1>;
-			linux,code = <0x198>;
+			linaos,code = <0x198>;
 		};
 
 		recovery {
 			label = "recovery";
 			gpios = <&gpio0 4 1>;
-			linux,code = <0xab>;
+			linaos,code = <0xab>;
 		};
 	};
 

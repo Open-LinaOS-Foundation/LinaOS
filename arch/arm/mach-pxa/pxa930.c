@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/pxa930.c
+ * linaos/arch/arm/mach-pxa/pxa930.c
  *
  * Code specific to PXA930
  *
  * Copyright (C) 2007-2008 Marvell Internation Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/irq.h>
-#include <linux/gpio-pxa.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/irq.h>
+#include <linaos/gpio-pxa.h>
+#include <linaos/platform_device.h>
 
 #include "pxa930.h"
 

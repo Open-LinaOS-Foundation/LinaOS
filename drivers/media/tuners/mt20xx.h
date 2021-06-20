@@ -5,7 +5,7 @@
 #ifndef __MT20XX_H__
 #define __MT20XX_H__
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/dvb_frontend.h>
 
 #if IS_REACHABLE(CONFIG_MEDIA_TUNER_MT20XX)

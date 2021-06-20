@@ -4,10 +4,10 @@
  */
 
 #include <drm/drm_prime.h>
-#include <linux/dma-mapping.h>
-#include <linux/shmem_fs.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/spinlock.h>
+#include <linaos/vmalloc.h>
 
 #include "etnaviv_drv.h"
 #include "etnaviv_gem.h"

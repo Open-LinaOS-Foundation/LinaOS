@@ -7,16 +7,16 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/utsname.h>
-#include <linux/bitfield.h>
+#include <linaos/kallsyms.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/utsname.h>
+#include <linaos/bitfield.h>
 
-#include <linux/usb/composite.h>
-#include <linux/usb/otg.h>
+#include <linaos/usb/composite.h>
+#include <linaos/usb/otg.h>
 #include <asm/unaligned.h>
 
 #include "u_os_desc.h"
@@ -330,7 +330,7 @@ int usb_add_function(struct usb_configuration *config,
 		value = 0;
 
 	/* We allow configurations that don't work at both speeds.
-	 * If we run into a lowspeed Linux system, treat it the same
+	 * If we run into a lowspeed LinaOS system, treat it the same
 	 * as full speed ... it's the function drivers that will need
 	 * to avoid bulk and ISO transfers.
 	 */

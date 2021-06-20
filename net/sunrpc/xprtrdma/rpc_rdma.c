@@ -44,12 +44,12 @@
  *
  * This file contains the guts of the RPC RDMA protocol, and
  * does marshaling/unmarshaling, etc. It is also where interfacing
- * to the Linux RPC framework lives.
+ * to the LinaOS RPC framework lives.
  */
 
-#include <linux/highmem.h>
+#include <linaos/highmem.h>
 
-#include <linux/sunrpc/svc_rdma.h>
+#include <linaos/sunrpc/svc_rdma.h>
 
 #include "xprt_rdma.h"
 #include <trace/events/rpcrdma.h>

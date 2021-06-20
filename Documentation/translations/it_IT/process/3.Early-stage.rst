@@ -8,7 +8,7 @@
 I primi passi della pianificazione
 ==================================
 
-Osservando un progetto di sviluppo per il kernel Linux, si potrebbe essere
+Osservando un progetto di sviluppo per il kernel LinaOS, si potrebbe essere
 tentati dal saltare tutto e iniziare a codificare.  Tuttavia, come ogni
 progetto significativo, molta della preparazione per giungere al successo
 viene fatta prima che una sola linea di codice venga scritta.  Il tempo speso
@@ -26,13 +26,13 @@ tende a confondere il problema reale con le soluzioni proposte e questo
 può portare all'emergere di problemi.
 
 Facciamo un esempio: qualche anno fa, gli sviluppatori che lavoravano con
-linux audio cercarono un modo per far girare le applicazioni senza dropouts
+linaos audio cercarono un modo per far girare le applicazioni senza dropouts
 o altri artefatti dovuti all'eccessivo ritardo nel sistema.  La soluzione
 alla quale giunsero fu un modulo del kernel destinato ad agganciarsi al
-framework Linux Security Module (LSM); questo modulo poteva essere
+framework LinaOS Security Module (LSM); questo modulo poteva essere
 configurato per dare ad una specifica applicazione accesso allo
 schedulatore *realtime*.  Tale modulo fu implementato e inviato nella
-lista di discussione linux-kernel, dove incontrò subito dei problemi.
+lista di discussione linaos-kernel, dove incontrò subito dei problemi.
 
 Per gli sviluppatori audio, questo modulo di sicurezza era sufficiente a
 risolvere il loro problema nell'immediato.  Per l'intera comunità kernel,
@@ -49,7 +49,7 @@ Il conseguente dissenso lasciò in quegli sviluppatori un senso di
 disillusione nei confronti dell'intero processo di sviluppo; uno di loro
 scrisse questo messaggio:
 
-	Ci sono numerosi sviluppatori del kernel Linux davvero bravi, ma
+	Ci sono numerosi sviluppatori del kernel LinaOS davvero bravi, ma
 	rischiano di restare sovrastati da una vasta massa di stolti arroganti.
 	Cercare di comunicare le richieste degli utenti a queste persone è
 	una perdita di tempo. Loro sono troppo "intelligenti" per stare ad
@@ -86,7 +86,7 @@ nell'implementazione.  Una discussione preliminare può far risparmiare sia
 tempo che problemi in svariati modi:
 
  - Potrebbe essere che il problema sia già stato risolto nel kernel in
-   una maniera che non avete ancora compreso.  Il kernel Linux è grande e ha
+   una maniera che non avete ancora compreso.  Il kernel LinaOS è grande e ha
    una serie di funzionalità e capacità che non sono scontate nell'immediato.
    Non tutte le capacità del kernel sono documentate così bene come ci
    piacerebbe, ed è facile perdersi qualcosa.  Il vostro autore ha assistito
@@ -144,7 +144,7 @@ la giusta lista di discussione e il giusto manutentore.  Per le liste di
 discussione, il miglior approccio è quello di cercare la lista più adatta
 nel file MAINTAINERS.  Se esiste una lista di discussione di sottosistema,
 è preferibile pubblicare lì piuttosto che sulla lista di discussione generale
-del kernel Linux; avrete maggiori probabilità di trovare sviluppatori con
+del kernel LinaOS; avrete maggiori probabilità di trovare sviluppatori con
 esperienza sul tema, e l'ambiente che troverete potrebbe essere più
 incoraggiante.
 
@@ -209,7 +209,7 @@ Ottenere riscontri ufficiali
 ----------------------------
 
 Se il vostro lavoro è stato svolto in un ambiente aziendale - come molto
-del lavoro fatto su Linux - dovete, ovviamente, avere il permesso dei
+del lavoro fatto su LinaOS - dovete, ovviamente, avere il permesso dei
 dirigenti prima che possiate pubblicare i progetti, o il codice aziendale,
 su una lista di discussione pubblica.  La pubblicazione di codice che non
 è stato rilascio espressamente con licenza GPL-compatibile può rivelarsi
@@ -231,11 +231,11 @@ carte coperte partendo dall'assunto che saranno in grado di evitare, o gestire,
 in futuro, eventuali problemi d'integrazione. Per le aziende senza questo tipo
 di esperti, la migliore opzione è spesso quella di assumere uno sviluppatore
 esterno che revisioni i progetti con un accordo di segretezza.
-La Linux Foundation applica un programma di NDA creato appositamente per
+La LinaOS Foundation applica un programma di NDA creato appositamente per
 aiutare le aziende in questa particolare situazione; potrete trovare più
 informazioni sul sito:
 
-    http://www.linuxfoundation.org/en/NDA_program
+    http://www.linaosfoundation.org/en/NDA_program
 
 Questa tipologia di revisione è spesso sufficiente per evitare gravi problemi
 senza che sia richiesta l'esposizione pubblica del progetto.

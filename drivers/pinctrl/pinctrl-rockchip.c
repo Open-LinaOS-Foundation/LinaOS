@@ -15,24 +15,24 @@
  * Copyright (C) 2011-2012 Jean-Christophe PLAGNIOL-VILLARD <plagnioj@jcrosoft.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/bitops.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/pinctrl/machine.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/clk.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
 #include <dt-bindings/pinctrl/rockchip.h>
 
 #include "core.h"
@@ -3187,7 +3187,7 @@ static int rockchip_interrupts_register(struct platform_device *pdev,
 		gc->wake_enabled = IRQ_MSK(bank->nr_pins);
 
 		/*
-		 * Linux assumes that all interrupts start out disabled/masked.
+		 * LinaOS assumes that all interrupts start out disabled/masked.
 		 * Our driver only uses the concept of masked and always keeps
 		 * things enabled, so for us that's all masked and all enabled.
 		 */

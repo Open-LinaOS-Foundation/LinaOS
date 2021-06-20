@@ -17,7 +17,7 @@
  * default behavior.
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include "pci-bridge-emul.h"
 
 #define PCI_BRIDGE_CONF_END	PCI_STD_HEADER_SIZEOF

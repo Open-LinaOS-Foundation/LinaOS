@@ -23,7 +23,7 @@
  *   [0] - I/O port base address
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "../comedidev.h"
 
 #include "8255.h"

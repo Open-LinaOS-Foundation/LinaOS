@@ -1,10 +1,10 @@
 .. _codingstyle:
 
-Linux kernel coding style
+LinaOS kernel coding style
 =========================
 
 This is a short document describing the preferred coding style for the
-linux kernel.  Coding style is very personal, and I won't **force** my
+linaos kernel.  Coding style is very personal, and I won't **force** my
 views on anybody, but this is what goes for anything that I have to be
 able to maintain, and I'd prefer it for most other things too.  Please
 at least consider the points made here.
@@ -234,10 +234,10 @@ Also, use braces when a loop contains more than a single simple statement:
 3.1) Spaces
 ***********
 
-Linux kernel style for use of spaces depends (mostly) on
+LinaOS kernel style for use of spaces depends (mostly) on
 function-versus-keyword usage.  Use a space after (most) keywords.  The
 notable exceptions are sizeof, typeof, alignof, and __attribute__, which look
-somewhat like functions (and are usually used with parentheses in Linux,
+somewhat like functions (and are usually used with parentheses in LinaOS,
 although they are not required in the language, as in: ``sizeof info`` after
 ``struct fileinfo info;`` is declared).
 
@@ -267,7 +267,7 @@ adjacent to the type name.  Examples:
 .. code-block:: c
 
 
-	char *linux_banner;
+	char *linaos_banner;
 	unsigned long long memparse(char *ptr, char **retptr);
 	char *match_strdup(substring_t *s);
 
@@ -418,7 +418,7 @@ useful only for:
      brain to become accustomed to the standard types like ``uint32_t``,
      some people object to their use anyway.
 
-     Therefore, the Linux-specific ``u8/u16/u32/u64`` types and their
+     Therefore, the LinaOS-specific ``u8/u16/u32/u64`` types and their
      signed equivalents which are identical to standard types are
      permitted -- although they are not mandatory in new code of your
      own.
@@ -481,7 +481,7 @@ closing function brace line.  E.g.:
 	EXPORT_SYMBOL(system_is_up);
 
 In function prototypes, include parameter names with their data types.
-Although this is not required by the C language, it is preferred in Linux
+Although this is not required by the C language, it is preferred in LinaOS
 because it is a simple way to add valuable information for the reader.
 
 Do not use the ``extern`` keyword with function prototypes as this makes
@@ -587,7 +587,7 @@ The preferred style for long (multi-line) comments is:
 
 	/*
 	 * This is the preferred style for multi-line
-	 * comments in the Linux kernel source code.
+	 * comments in the LinaOS kernel source code.
 	 * Please use it consistently.
 	 *
 	 * Description:  A column of asterisks on the left side,
@@ -637,7 +637,7 @@ values.  To do the latter, you can stick the following in your .emacs file:
          c-basic-offset)))
 
   (dir-locals-set-class-variables
-   'linux-kernel
+   'linaos-kernel
    '((c-mode . (
           (c-basic-offset . 8)
           (c-label-minimum-indentation . 0)
@@ -671,11 +671,11 @@ values.  To do the latter, you can stick the following in your .emacs file:
           ))))
 
   (dir-locals-set-directory-class
-   (expand-file-name "~/src/linux-trees")
-   'linux-kernel)
+   (expand-file-name "~/src/linaos-trees")
+   'linaos-kernel)
 
 This will make emacs go better with the kernel coding style for C
-files below ``~/src/linux-trees``.
+files below ``~/src/linaos-trees``.
 
 But even if you fail in getting emacs to do sane formatting, not
 everything is lost: use ``indent``.
@@ -714,7 +714,7 @@ spaces.  Example::
 	depends on NET
 	help
 	  Enable auditing infrastructure that can be used with another
-	  kernel subsystem, such as SELinux (which requires this for
+	  kernel subsystem, such as SELinaOS (which requires this for
 	  logging of avc messages output).  Does not do system-call
 	  auditing without CONFIG_AUDITSYSCALL.
 
@@ -855,11 +855,11 @@ Kernel messages do not have to be terminated with a period.
 
 Printing numbers in parentheses (%d) adds no value and should be avoided.
 
-There are a number of driver model diagnostic macros in <linux/device.h>
+There are a number of driver model diagnostic macros in <linaos/device.h>
 which you should use to make sure messages are matched to the right device
 and driver, and are tagged with the right level:  dev_err(), dev_warn(),
 dev_info(), and so forth.  For messages that aren't associated with a
-particular device, <linux/printk.h> defines pr_notice(), pr_info(),
+particular device, <linaos/printk.h> defines pr_notice(), pr_info(),
 pr_warn(), pr_err(), etc.
 
 Coming up with good debugging messages can be quite a challenge; and once
@@ -986,7 +986,7 @@ NULL or the ERR_PTR mechanism to report failure.
 17) Using bool
 --------------
 
-The Linux kernel bool type is an alias for the C99 _Bool type. bool values can
+The LinaOS kernel bool type is an alias for the C99 _Bool type. bool values can
 only evaluate to 0 or 1, and implicit or explicit conversion to bool
 automatically converts the value to true or false. When using bool types the
 !! construction is not needed, which eliminates a class of bugs.
@@ -1016,7 +1016,7 @@ readability.
 18) Don't re-invent the kernel macros
 -------------------------------------
 
-The header file include/linux/kernel.h contains a number of macros that
+The header file include/linaos/kernel.h contains a number of macros that
 you should use, rather than explicitly coding some variant of them yourself.
 For example, if you need to calculate the length of an array, take advantage
 of the macro
@@ -1171,4 +1171,4 @@ WG14 is the international standardization working group for the programming
 language C, URL: http://www.open-std.org/JTC1/SC22/WG14/
 
 Kernel :ref:`process/coding-style.rst <codingstyle>`, by greg@kroah.com at OLS 2002:
-http://www.kroah.com/linux/talks/ols_2002_kernel_codingstyle_talk/html/
+http://www.kroah.com/linaos/talks/ols_2002_kernel_codingstyle_talk/html/

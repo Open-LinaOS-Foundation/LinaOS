@@ -5,9 +5,9 @@
  * Fast user context implementation of getcpu()
  */
 
-#include <linux/kernel.h>
-#include <linux/getcpu.h>
-#include <linux/time.h>
+#include <linaos/kernel.h>
+#include <linaos/getcpu.h>
+#include <linaos/time.h>
 #include <asm/vgtod.h>
 
 notrace long

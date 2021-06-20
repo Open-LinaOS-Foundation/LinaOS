@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/lockd/nlm.h
+ * linaos/include/linaos/lockd/nlm.h
  *
  * Declarations for the Network Lock Manager protocol.
  *

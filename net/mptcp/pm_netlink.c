@@ -6,13 +6,13 @@
 
 #define pr_fmt(fmt) "MPTCP: " fmt
 
-#include <linux/inet.h>
-#include <linux/kernel.h>
+#include <linaos/inet.h>
+#include <linaos/kernel.h>
 #include <net/tcp.h>
 #include <net/netns/generic.h>
 #include <net/mptcp.h>
 #include <net/genetlink.h>
-#include <uapi/linux/mptcp.h>
+#include <uapi/linaos/mptcp.h>
 
 #include "protocol.h"
 #include "mib.h"
@@ -591,7 +591,7 @@ int mptcp_pm_nl_mp_prio_send_ack(struct mptcp_sock *msk,
 
 static void mptcp_pm_nl_rm_addr_or_subflow(struct mptcp_sock *msk,
 					   const struct mptcp_rm_list *rm_list,
-					   enum linux_mptcp_mib_field rm_type)
+					   enum linaos_mptcp_mib_field rm_type)
 {
 	struct mptcp_subflow_context *subflow, *tmp;
 	struct sock *sk = (struct sock *)msk;

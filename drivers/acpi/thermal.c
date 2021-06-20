@@ -15,21 +15,21 @@
 
 #define pr_fmt(fmt) "ACPI: thermal: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/kmod.h>
-#include <linux/reboot.h>
-#include <linux/device.h>
-#include <linux/thermal.h>
-#include <linux/acpi.h>
-#include <linux/workqueue.h>
-#include <linux/uaccess.h>
-#include <linux/units.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/dmi.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/jiffies.h>
+#include <linaos/kmod.h>
+#include <linaos/reboot.h>
+#include <linaos/device.h>
+#include <linaos/thermal.h>
+#include <linaos/acpi.h>
+#include <linaos/workqueue.h>
+#include <linaos/uaccess.h>
+#include <linaos/units.h>
 
 #define ACPI_THERMAL_CLASS		"thermal_zone"
 #define ACPI_THERMAL_DEVICE_NAME	"Thermal Zone"
@@ -257,7 +257,7 @@ do {	\
 	if (flags != ACPI_TRIPS_INIT)	\
 		acpi_handle_info(tz->device->handle,	\
 		"ACPI thermal trip point %s changed\n"	\
-		"Please report to linux-acpi@vger.kernel.org\n", str); \
+		"Please report to linaos-acpi@vger.kernel.org\n", str); \
 } while (0)
 
 static int acpi_thermal_trips_update(struct acpi_thermal *tz, int flag)

@@ -5,29 +5,29 @@
 
 if [[ $# < 1 ]]; then
 	echo "Usage:"
-	echo "	$0 -r <release> | <vmlinux> [base path] [modules path]"
+	echo "	$0 -r <release> | <vmlinaos> [base path] [modules path]"
 	exit 1
 fi
 
 if [[ $1 == "-r" ]] ; then
-	vmlinux=""
+	vmlinaos=""
 	basepath="auto"
 	modpath=""
 	release=$2
 
-	for fn in {,/usr/lib/debug}/boot/vmlinux-$release{,.debug} /lib/modules/$release{,/build}/vmlinux ; do
+	for fn in {,/usr/lib/debug}/boot/vmlinaos-$release{,.debug} /lib/modules/$release{,/build}/vmlinaos ; do
 		if [ -e "$fn" ] ; then
-			vmlinux=$fn
+			vmlinaos=$fn
 			break
 		fi
 	done
 
-	if [[ $vmlinux == "" ]] ; then
-		echo "ERROR! vmlinux image for release $release is not found" >&2
+	if [[ $vmlinaos == "" ]] ; then
+		echo "ERROR! vmlinaos image for release $release is not found" >&2
 		exit 2
 	fi
 else
-	vmlinux=$1
+	vmlinaos=$1
 	basepath=${2-auto}
 	modpath=$3
 	release=""
@@ -47,11 +47,11 @@ find_module() {
 		return 1
 	fi
 
-	modpath=$(dirname "$vmlinux")
+	modpath=$(dirname "$vmlinaos")
 	find_module && return
 
 	if [[ $release == "" ]] ; then
-		release=$(gdb -ex 'print init_uts_ns.name.release' -ex 'quit' -quiet -batch "$vmlinux" | sed -n 's/\$1 = "\(.*\)".*/\1/p')
+		release=$(gdb -ex 'print init_uts_ns.name.release' -ex 'quit' -quiet -batch "$vmlinaos" | sed -n 's/\$1 = "\(.*\)".*/\1/p')
 	fi
 
 	for dn in {/usr/lib/debug,}/lib/modules/$release ; do
@@ -73,7 +73,7 @@ parse_symbol() {
 	#   do_basic_setup+0x9c/0xbf
 
 	if [[ $module == "" ]] ; then
-		local objfile=$vmlinux
+		local objfile=$vmlinaos
 	elif [[ "${modcache[$module]+isset}" == "isset" ]]; then
 		local objfile=${modcache[$module]}
 	else
@@ -99,7 +99,7 @@ parse_symbol() {
 	# Strip the symbol name so that we could look it up
 	local name=${symbol%+*}
 
-	# Use 'nm vmlinux' to figure out the base address of said symbol.
+	# Use 'nm vmlinaos' to figure out the base address of said symbol.
 	# It's actually faster to call it every time than to load it
 	# all into bash.
 	if [[ "${cache[$module,$name]+isset}" == "isset" ]]; then

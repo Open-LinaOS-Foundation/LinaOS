@@ -10,9 +10,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bitfield.h>
-#include <linux/page-flags.h>
-#include <linux/types.h>
+#include <linaos/bitfield.h>
+#include <linaos/page-flags.h>
+#include <linaos/types.h>
 
 #include <asm/pgtable-types.h>
 

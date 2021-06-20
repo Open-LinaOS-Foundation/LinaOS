@@ -1,5 +1,5 @@
 /*
- * This file is part of the Emulex Linux Device Driver for Enterprise iSCSI
+ * This file is part of the Emulex LinaOS Device Driver for Enterprise iSCSI
  * Host Bus Adapters. Refer to the README file included with this package
  * for driver version and adapter compatibility.
  *
@@ -19,11 +19,11 @@
  * can be found in the file COPYING included with this package.
  *
  * Contact Information:
- * linux-drivers@broadcom.com
+ * linaos-drivers@broadcom.com
  *
  */
 
-#include <linux/bsg-lib.h>
+#include <linaos/bsg-lib.h>
 #include <scsi/scsi_transport_iscsi.h>
 #include <scsi/scsi_bsg_iscsi.h>
 #include "be_mgmt.h"

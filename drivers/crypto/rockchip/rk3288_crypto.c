@@ -10,13 +10,13 @@
  */
 
 #include "rk3288_crypto.h"
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/crypto.h>
-#include <linux/reset.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/clk.h>
+#include <linaos/crypto.h>
+#include <linaos/reset.h>
 
 static int rk_crypto_enable_clk(struct rk_crypto_info *dev)
 {

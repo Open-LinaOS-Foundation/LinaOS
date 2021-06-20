@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * <linux/gpio.h>
+ * <linaos/gpio.h>
  *
  * This is the LEGACY GPIO bulk include file, including legacy APIs. It is
  * used for GPIO drivers still referencing the global GPIO numberspace,
  * and should not be included in new code.
  *
- * If you're implementing a GPIO driver, only include <linux/gpio/driver.h>
- * If you're implementing a GPIO consumer, only include <linux/gpio/consumer.h>
+ * If you're implementing a GPIO driver, only include <linaos/gpio/driver.h>
+ * If you're implementing a GPIO consumer, only include <linaos/gpio/consumer.h>
  */
 #ifndef __LINUX_GPIO_H
 #define __LINUX_GPIO_H
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 /* see Documentation/driver-api/gpio/legacy.rst */
 
@@ -99,9 +99,9 @@ void devm_gpio_free(struct device *dev, unsigned int gpio);
 
 #else /* ! CONFIG_GPIOLIB */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/bug.h>
 
 struct device;
 struct gpio_chip;

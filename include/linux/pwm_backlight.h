@@ -5,7 +5,7 @@
 #ifndef __LINUX_PWM_BACKLIGHT_H
 #define __LINUX_PWM_BACKLIGHT_H
 
-#include <linux/backlight.h>
+#include <linaos/backlight.h>
 
 struct platform_pwm_backlight_data {
 	int pwm_id;

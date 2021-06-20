@@ -5,12 +5,12 @@
  *  Copyright (C) 2014 MEN Mikro Elektronik Nuernberg GmbH
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/watchdog.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
 
 #define DEVNAME "menf21bmc_wdt"
 

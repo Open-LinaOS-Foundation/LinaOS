@@ -1,4 +1,4 @@
-The Linux Hardware Monitoring kernel API
+The LinaOS Hardware Monitoring kernel API
 ========================================
 
 Guenter Roeck
@@ -19,8 +19,8 @@ also read Documentation/hwmon/submitting-patches.rst.
 
 The API
 -------
-Each hardware monitoring driver must #include <linux/hwmon.h> and, in most
-cases, <linux/hwmon-sysfs.h>. linux/hwmon.h declares the following
+Each hardware monitoring driver must #include <linaos/hwmon.h> and, in most
+cases, <linaos/hwmon-sysfs.h>. linaos/hwmon.h declares the following
 register/unregister functions::
 
   struct device *
@@ -244,7 +244,7 @@ register (HWMON_T_MAX) as well as a maximum temperature hysteresis register
 	};
 
 A complete list of bit values indicating individual attribute support
-is defined in include/linux/hwmon.h. Definition prefixes are as follows.
+is defined in include/linaos/hwmon.h. Definition prefixes are as follows.
 
 =============== =================================================
 HWMON_C_xxxx	Chip attributes, for use with hwmon_chip.
@@ -277,7 +277,7 @@ Parameters:
 		Attribute identifier associated with a specific attribute.
 		For example, the attribute value for HWMON_T_INPUT would be
 		hwmon_temp_input. For complete mappings of bit fields to
-		attribute values please see include/linux/hwmon.h.
+		attribute values please see include/linaos/hwmon.h.
 	channel:
 		The sensor channel number.
 
@@ -299,7 +299,7 @@ Parameters:
 		Attribute identifier associated with a specific attribute.
 		For example, the attribute value for HWMON_T_INPUT would be
 		hwmon_temp_input. For complete mappings please see
-		include/linux/hwmon.h.
+		include/linaos/hwmon.h.
 	channel:
 		The sensor channel number.
 	val:
@@ -322,7 +322,7 @@ Parameters:
 		Attribute identifier associated with a specific attribute.
 		For example, the attribute value for HWMON_T_INPUT would be
 		hwmon_temp_input. For complete mappings please see
-		include/linux/hwmon.h.
+		include/linaos/hwmon.h.
 	channel:
 		The sensor channel number.
 	val:
@@ -341,7 +341,7 @@ it is most likely not necessary to provide sysfs attributes. Only additional
 non-standard sysfs attributes need to be provided when one of those registration
 functions is used.
 
-The header file linux/hwmon-sysfs.h provides a number of useful macros to
+The header file linaos/hwmon-sysfs.h provides a number of useful macros to
 declare and use hardware monitoring sysfs attributes.
 
 In many cases, you can use the exsting define DEVICE_ATTR or its variants

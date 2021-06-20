@@ -10,18 +10,18 @@
 
 #define VIDEOCODEC_VERSION "v0.2"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
 
 // kernel config is here (procfs flag)
 
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/uaccess.h>
 #endif
 
 #include "videocodec.h"
@@ -304,7 +304,7 @@ static int __init videocodec_init(void)
 	static struct proc_dir_entry *videocodec_proc_entry;
 #endif
 
-	pr_info("Linux video codec intermediate layer: %s\n", VIDEOCODEC_VERSION);
+	pr_info("LinaOS video codec intermediate layer: %s\n", VIDEOCODEC_VERSION);
 
 #ifdef CONFIG_PROC_FS
 	videocodec_proc_entry = proc_create_single("videocodecs", 0, NULL, proc_videocodecs_show);

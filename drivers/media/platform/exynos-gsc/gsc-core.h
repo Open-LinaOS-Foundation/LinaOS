@@ -10,13 +10,13 @@
 #ifndef GSC_CORE_H_
 #define GSC_CORE_H_
 
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
+#include <linaos/io.h>
+#include <linaos/pm_runtime.h>
 #include <media/videobuf2-v4l2.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

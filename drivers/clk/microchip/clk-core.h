@@ -6,7 +6,7 @@
 #ifndef __MICROCHIP_CLK_PIC32_H_
 #define __MICROCHIP_CLK_PIC32_H_
 
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 
 /* PIC32 clock data */
 struct pic32_clk_common {

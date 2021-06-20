@@ -11,10 +11,10 @@
 #include <crypto/algapi.h>
 #include <crypto/blowfish.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linaos/crypto.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
 
 /* regular block cipher functions */
 asmlinkage void __blowfish_enc_blk(struct bf_ctx *ctx, u8 *dst, const u8 *src,

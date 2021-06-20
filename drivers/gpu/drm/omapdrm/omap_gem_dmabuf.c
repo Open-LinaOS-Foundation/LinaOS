@@ -4,8 +4,8 @@
  * Author: Rob Clark <rob.clark@linaro.org>
  */
 
-#include <linux/dma-buf.h>
-#include <linux/highmem.h>
+#include <linaos/dma-buf.h>
+#include <linaos/highmem.h>
 
 #include <drm/drm_prime.h>
 

@@ -6,8 +6,8 @@
  * Copyright(C) 1996,1998 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/string.h>
-#include <linux/init.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
 #include <asm/oplib.h>
 
 /* WARNING: The boot loader knows that these next three variables come one right

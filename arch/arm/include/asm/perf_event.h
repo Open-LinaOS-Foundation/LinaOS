@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/include/asm/perf_event.h
+ *  linaos/arch/arm/include/asm/perf_event.h
  *
  *  Copyright (C) 2009 picoChip Designs Ltd, Jamie Iles
  */

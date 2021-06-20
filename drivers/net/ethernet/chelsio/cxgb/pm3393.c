@@ -42,8 +42,8 @@
 #include "elmer0.h"
 #include "suni1x10gexp_regs.h"
 
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <linaos/crc32.h>
+#include <linaos/slab.h>
 
 #define OFFSET(REG_ADDR)    ((REG_ADDR) << 2)
 

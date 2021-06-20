@@ -16,7 +16,7 @@ keys on IR.
 This standard should be used by both V4L/DVB drivers and userspace
 applications
 
-The modules register the remote as keyboard within the linux input
+The modules register the remote as keyboard within the linaos input
 layer. This means that the IR key strokes will look like normal keyboard
 key strokes (if CONFIG_INPUT_KEYBOARD is enabled). Using the event
 devices (CONFIG_INPUT_EVDEV) it is possible for applications to access

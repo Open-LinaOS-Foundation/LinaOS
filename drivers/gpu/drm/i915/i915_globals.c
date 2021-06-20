@@ -4,8 +4,8 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 
 #include "i915_active.h"
 #include "gem/i915_gem_context.h"

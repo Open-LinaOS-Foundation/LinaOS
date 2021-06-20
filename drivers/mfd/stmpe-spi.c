@@ -7,12 +7,12 @@
  * Author: Viresh Kumar <vireshk@kernel.org> for ST Microelectronics
  */
 
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/types.h>
+#include <linaos/spi/spi.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/types.h>
 #include "stmpe.h"
 
 #define READ_CMD	(1 << 7)

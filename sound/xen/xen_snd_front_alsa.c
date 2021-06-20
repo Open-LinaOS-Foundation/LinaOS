@@ -8,7 +8,7 @@
  * Author: Oleksandr Andrushchenko <oleksandr_andrushchenko@epam.com>
  */
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _LINUX_XFRM_H
 #define _LINUX_XFRM_H
 
-#include <linux/in6.h>
-#include <linux/types.h>
+#include <linaos/in6.h>
+#include <linaos/types.h>
 
 /* All of the structures in this file may not change size as they are
  * passed into the kernel from userspace via netlink sockets.
@@ -228,7 +228,7 @@ enum {
 struct xfrm_user_sec_ctx {
 	__u16			len;
 	__u16			exttype;
-	__u8			ctx_alg;  /* LSMs: e.g., selinux == 1 */
+	__u8			ctx_alg;  /* LSMs: e.g., selinaos == 1 */
 	__u8			ctx_doi;
 	__u16			ctx_len;
 };

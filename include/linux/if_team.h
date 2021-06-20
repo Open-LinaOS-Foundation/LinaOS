@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/if_team.h - Network team device driver header
+ * include/linaos/if_team.h - Network team device driver header
  * Copyright (c) 2011 Jiri Pirko <jpirko@redhat.com>
  */
 #ifndef _LINUX_IF_TEAM_H_
 #define _LINUX_IF_TEAM_H_
 
-#include <linux/netpoll.h>
+#include <linaos/netpoll.h>
 #include <net/sch_generic.h>
-#include <linux/types.h>
-#include <uapi/linux/if_team.h>
+#include <linaos/types.h>
+#include <uapi/linaos/if_team.h>
 
 struct team_pcpu_stats {
 	u64			rx_packets;

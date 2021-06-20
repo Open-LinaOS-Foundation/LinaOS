@@ -1,7 +1,7 @@
 #ifndef __NV50_KMS_HEAD_H__
 #define __NV50_KMS_HEAD_H__
 #define nv50_head(c) container_of((c), struct nv50_head, base.base)
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 
 #include "disp.h"
 #include "atom.h"

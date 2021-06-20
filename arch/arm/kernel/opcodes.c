@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/opcodes.c
+ *  linaos/arch/arm/kernel/opcodes.c
  *
  *  A32 condition code lookup feature moved from nwfpe/fpopcode.c
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <asm/opcodes.h>
 
 #define ARM_OPCODE_CONDITION_UNCOND 0xf

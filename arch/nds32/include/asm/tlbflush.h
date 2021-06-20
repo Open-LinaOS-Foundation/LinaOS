@@ -4,8 +4,8 @@
 #ifndef _ASMNDS32_TLBFLUSH_H
 #define _ASMNDS32_TLBFLUSH_H
 
-#include <linux/spinlock.h>
-#include <linux/mm.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm.h>
 #include <nds32_intrinsic.h>
 
 static inline void local_flush_tlb_all(void)

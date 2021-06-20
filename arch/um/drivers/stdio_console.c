@@ -3,20 +3,20 @@
  * Copyright (C) 2000, 2001 Jeff Dike (jdike@karaya.com)
  */
 
-#include <linux/posix_types.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/kdev_t.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/hardirq.h>
+#include <linaos/posix_types.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/types.h>
+#include <linaos/major.h>
+#include <linaos/kdev_t.h>
+#include <linaos/console.h>
+#include <linaos/string.h>
+#include <linaos/sched.h>
+#include <linaos/list.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/hardirq.h>
 #include <asm/current.h>
 #include <asm/irq.h>
 #include "stdio_console.h"

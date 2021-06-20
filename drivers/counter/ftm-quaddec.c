@@ -6,14 +6,14 @@
  * of ex. a LS1021A
  */
 
-#include <linux/fsl/ftm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/counter.h>
-#include <linux/bitfield.h>
+#include <linaos/fsl/ftm.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/io.h>
+#include <linaos/mutex.h>
+#include <linaos/counter.h>
+#include <linaos/bitfield.h>
 
 #define FTM_FIELD_UPDATE(ftm, offset, mask, val)			\
 	({								\

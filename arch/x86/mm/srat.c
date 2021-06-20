@@ -10,13 +10,13 @@
  * are in one chunk. Holes between them will be included in the node.
  */
 
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/mmzone.h>
-#include <linux/bitmap.h>
-#include <linux/init.h>
-#include <linux/topology.h>
-#include <linux/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/acpi.h>
+#include <linaos/mmzone.h>
+#include <linaos/bitmap.h>
+#include <linaos/init.h>
+#include <linaos/topology.h>
+#include <linaos/mm.h>
 #include <asm/proto.h>
 #include <asm/numa.h>
 #include <asm/e820/api.h>

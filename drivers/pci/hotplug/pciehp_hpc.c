@@ -14,15 +14,15 @@
 
 #define dev_fmt(fmt) "pciehp: " fmt
 
-#include <linux/dmi.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/kthread.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linaos/dmi.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/jiffies.h>
+#include <linaos/kthread.h>
+#include <linaos/pci.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
 
 #include "../pci.h"
 #include "pciehp.h"

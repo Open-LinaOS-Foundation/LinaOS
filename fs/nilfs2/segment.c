@@ -8,20 +8,20 @@
  *
  */
 
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/bitops.h>
-#include <linux/bio.h>
-#include <linux/completion.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/crc32.h>
-#include <linux/pagevec.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <linaos/pagemap.h>
+#include <linaos/buffer_head.h>
+#include <linaos/writeback.h>
+#include <linaos/bitops.h>
+#include <linaos/bio.h>
+#include <linaos/completion.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/freezer.h>
+#include <linaos/kthread.h>
+#include <linaos/crc32.h>
+#include <linaos/pagevec.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
 
 #include "nilfs.h"
 #include "btnode.h"

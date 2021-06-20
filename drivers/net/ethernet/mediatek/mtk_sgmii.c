@@ -7,9 +7,9 @@
  *
  */
 
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
 
 #include "mtk_eth_soc.h"
 

@@ -4,9 +4,9 @@
  * Copyright 2005-2006 Ian Kent <raven@themaw.net>
  */
 
-#include <linux/seq_file.h>
-#include <linux/pagemap.h>
-#include <linux/parser.h>
+#include <linaos/seq_file.h>
+#include <linaos/pagemap.h>
+#include <linaos/parser.h>
 
 #include "autofs_i.h"
 

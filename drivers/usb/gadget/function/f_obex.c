@@ -10,10 +10,10 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
 
 #include "u_serial.h"
 

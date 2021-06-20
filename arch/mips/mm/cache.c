@@ -3,19 +3,19 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1994 - 2003, 06, 07 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1994 - 2003, 06, 07 by Ralf Baechle (ralf@linaos-mips.org)
  * Copyright (C) 2007 MIPS Technologies, Inc.
  */
-#include <linux/fs.h>
-#include <linux/fcntl.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
+#include <linaos/fs.h>
+#include <linaos/fcntl.h>
+#include <linaos/kernel.h>
+#include <linaos/linkage.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/syscalls.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>
+#include <linaos/pagemap.h>
 
 #include <asm/cacheflush.h>
 #include <asm/processor.h>

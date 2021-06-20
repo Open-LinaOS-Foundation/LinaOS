@@ -10,20 +10,20 @@
  * Bill Richardson.
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/platform_data/cros_ec_chardev.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/platform_data/cros_ec_chardev.h>
+#include <linaos/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_proto.h>
+#include <linaos/platform_device.h>
+#include <linaos/poll.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
 
 #define DRV_NAME		"cros-ec-chardev"
 

@@ -9,7 +9,7 @@
 #ifndef __ARCH_ARM_MACH_S3C24XX_COMMON_H
 #define __ARCH_ARM_MACH_S3C24XX_COMMON_H __FILE__
 
-#include <linux/reboot.h>
+#include <linaos/reboot.h>
 #include <mach/irqs.h>
 
 struct s3c2410_uartcfg;

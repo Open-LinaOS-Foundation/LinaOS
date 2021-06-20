@@ -9,13 +9,13 @@
  * Authors:	Lotsa people, from code originally in tcp
  */
 
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/vmalloc.h>
-#include <linux/memblock.h>
+#include <linaos/module.h>
+#include <linaos/random.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/wait.h>
+#include <linaos/vmalloc.h>
+#include <linaos/memblock.h>
 
 #include <net/addrconf.h>
 #include <net/inet_connection_sock.h>

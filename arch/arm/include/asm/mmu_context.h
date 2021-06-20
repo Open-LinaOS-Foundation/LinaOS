@@ -10,10 +10,10 @@
 #ifndef __ASM_ARM_MMU_CONTEXT_H
 #define __ASM_ARM_MMU_CONTEXT_H
 
-#include <linux/compiler.h>
-#include <linux/sched.h>
-#include <linux/mm_types.h>
-#include <linux/preempt.h>
+#include <linaos/compiler.h>
+#include <linaos/sched.h>
+#include <linaos/mm_types.h>
+#include <linaos/preempt.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cachetype.h>

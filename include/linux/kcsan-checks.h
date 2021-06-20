@@ -10,8 +10,8 @@
 #define _LINUX_KCSAN_CHECKS_H
 
 /* Note: Only include what is already included by compiler.h. */
-#include <linux/compiler_attributes.h>
-#include <linux/types.h>
+#include <linaos/compiler_attributes.h>
+#include <linaos/types.h>
 
 /* Access types -- if KCSAN_ACCESS_WRITE is not set, the access is a read. */
 #define KCSAN_ACCESS_WRITE	(1 << 0) /* Access is a write. */

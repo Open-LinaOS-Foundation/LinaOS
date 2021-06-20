@@ -3,8 +3,8 @@
  * crc4.c - simple crc-4 calculations.
  */
 
-#include <linux/crc4.h>
-#include <linux/module.h>
+#include <linaos/crc4.h>
+#include <linaos/module.h>
 
 static const uint8_t crc4_tab[] = {
 	0x0, 0x7, 0xe, 0x9, 0xb, 0xc, 0x5, 0x2,

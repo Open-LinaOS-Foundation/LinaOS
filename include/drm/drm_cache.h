@@ -33,7 +33,7 @@
 #ifndef _DRM_CACHE_H_
 #define _DRM_CACHE_H_
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 void drm_clflush_pages(struct page *pages[], unsigned long num_pages);
 void drm_clflush_sg(struct sg_table *st);

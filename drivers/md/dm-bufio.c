@@ -6,18 +6,18 @@
  * This file is released under the GPL.
  */
 
-#include <linux/dm-bufio.h>
+#include <linaos/dm-bufio.h>
 
-#include <linux/device-mapper.h>
-#include <linux/dm-io.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
-#include <linux/jiffies.h>
-#include <linux/vmalloc.h>
-#include <linux/shrinker.h>
-#include <linux/module.h>
-#include <linux/rbtree.h>
-#include <linux/stacktrace.h>
+#include <linaos/device-mapper.h>
+#include <linaos/dm-io.h>
+#include <linaos/slab.h>
+#include <linaos/sched/mm.h>
+#include <linaos/jiffies.h>
+#include <linaos/vmalloc.h>
+#include <linaos/shrinker.h>
+#include <linaos/module.h>
+#include <linaos/rbtree.h>
+#include <linaos/stacktrace.h>
 
 #define DM_MSG_PREFIX "bufio"
 

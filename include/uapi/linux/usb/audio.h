@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * <linux/usb/audio.h> -- USB Audio definitions.
+ * <linaos/usb/audio.h> -- USB Audio definitions.
  *
  * Copyright (C) 2006 Thumtronics Pty Ltd.
  * Developed for Thumtronics by Grey Innovation
@@ -22,7 +22,7 @@
 #ifndef _UAPI__LINUX_USB_AUDIO_H
 #define _UAPI__LINUX_USB_AUDIO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* bInterfaceProtocol values to denote the version of the standard used */
 #define UAC_VERSION_1			0x00

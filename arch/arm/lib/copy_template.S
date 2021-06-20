@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/copy_template.s
+ *  linaos/arch/arm/lib/copy_template.s
  *
  *  Code template for optimized memory copy functions
  *

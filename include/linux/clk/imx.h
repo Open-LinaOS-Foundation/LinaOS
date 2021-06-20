@@ -8,7 +8,7 @@
 #ifndef __LINUX_CLK_IMX_H
 #define __LINUX_CLK_IMX_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 void imx6sl_set_wait_clk(bool enter);
 

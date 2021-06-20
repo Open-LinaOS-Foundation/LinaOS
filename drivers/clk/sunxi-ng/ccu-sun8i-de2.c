@@ -3,12 +3,12 @@
  * Copyright (c) 2017 Icenowy Zheng <icenowy@aosc.io>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
 
 #include "ccu_common.h"
 #include "ccu_div.h"

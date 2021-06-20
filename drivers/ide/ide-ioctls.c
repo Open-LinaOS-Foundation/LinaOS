@@ -3,11 +3,11 @@
  * IDE ioctls handling.
  */
 
-#include <linux/compat.h>
-#include <linux/export.h>
-#include <linux/hdreg.h>
-#include <linux/ide.h>
-#include <linux/slab.h>
+#include <linaos/compat.h>
+#include <linaos/export.h>
+#include <linaos/hdreg.h>
+#include <linaos/ide.h>
+#include <linaos/slab.h>
 
 static int put_user_long(long val, unsigned long arg)
 {

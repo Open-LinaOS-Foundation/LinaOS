@@ -13,14 +13,14 @@
  *      mpu->write to your own I/O functions.
  */
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
 #include <sound/core.h>
 #include <sound/mpu401.h>
 

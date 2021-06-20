@@ -6,7 +6,7 @@
 #ifndef INV_MPU_MAGN_H_
 #define INV_MPU_MAGN_H_
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include "inv_mpu_iio.h"
 

@@ -3,7 +3,7 @@
  * Old U-boot compatibility for Sam440ep based off bamboo.c code
  * original copyrights below
  *
- * Author: Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Author: Josh Boyer <jwboyer@linaos.vnet.ibm.com>
  *
  * Copyright 2007 IBM Corporation
  *

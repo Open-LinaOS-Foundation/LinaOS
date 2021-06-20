@@ -10,15 +10,15 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/of_irq.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/kmod.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/string.h>
+#include <linaos/of_irq.h>
+#include <linaos/io.h>
 #include <sound/core.h>
 #include <asm/irq.h>
 #include <asm/machdep.h>

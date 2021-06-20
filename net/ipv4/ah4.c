@@ -3,15 +3,15 @@
 
 #include <crypto/algapi.h>
 #include <crypto/hash.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 #include <net/ah.h>
-#include <linux/crypto.h>
-#include <linux/pfkeyv2.h>
-#include <linux/scatterlist.h>
+#include <linaos/crypto.h>
+#include <linaos/pfkeyv2.h>
+#include <linaos/scatterlist.h>
 #include <net/icmp.h>
 #include <net/protocol.h>
 

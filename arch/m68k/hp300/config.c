@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/hp300/config.c
+ *  linaos/arch/m68k/hp300/config.c
  *
  *  Copyright (C) 1998 Philip Blundell <philb@gnu.org>
  *
@@ -8,12 +8,12 @@
  *  called by setup.c.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/rtc.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/console.h>
+#include <linaos/rtc.h>
 
 #include <asm/bootinfo.h>
 #include <asm/bootinfo-hp300.h>

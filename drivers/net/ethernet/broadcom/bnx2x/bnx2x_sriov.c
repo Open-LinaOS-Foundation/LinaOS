@@ -23,8 +23,8 @@
 #include "bnx2x_init.h"
 #include "bnx2x_cmn.h"
 #include "bnx2x_sp.h"
-#include <linux/crc32.h>
-#include <linux/if_vlan.h>
+#include <linaos/crc32.h>
+#include <linaos/if_vlan.h>
 
 static int bnx2x_vf_op_prep(struct bnx2x *bp, int vfidx,
 			    struct bnx2x_virtf **vf,
@@ -1212,7 +1212,7 @@ int bnx2x_iov_init_one(struct bnx2x *bp, int int_mode_param,
 		goto failed;
 	}
 
-	/* get the sriov info - Linux already collected all the pertinent
+	/* get the sriov info - LinaOS already collected all the pertinent
 	 * information, however the sriov structure is for the private use
 	 * of the pci module. Also we want this information regardless
 	 * of the hyper-visor.

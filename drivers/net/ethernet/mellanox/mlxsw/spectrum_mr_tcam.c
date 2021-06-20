@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2017-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/netdevice.h>
 
 #include "spectrum_mr_tcam.h"
 #include "reg.h"

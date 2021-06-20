@@ -6,21 +6,21 @@
  */
 
 #include <asm/types.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/io.h>
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/pci_ids.h>
-#include <linux/pci.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <linaos/pci_ids.h>
+#include <linaos/pci.h>
 
-#include <linux/w1.h>
+#include <linaos/w1.h>
 
 /*
  * Matrox G400 DDC registers.

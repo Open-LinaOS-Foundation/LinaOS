@@ -14,14 +14,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/of_device.h>
-#include <linux/init.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/chained_irq.h>
+#include <linaos/bitops.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/of_device.h>
+#include <linaos/init.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irqchip/chained_irq.h>
 
 #define BCM_GPIO_PASSWD				0x00a5a501
 #define GPIO_PER_BANK				32

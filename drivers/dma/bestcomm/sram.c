@@ -11,20 +11,20 @@
  * kind, whether express or implied.
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/ioport.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 
 #include <asm/io.h>
 #include <asm/mmu.h>
 
-#include <linux/fsl/bestcomm/sram.h>
+#include <linaos/fsl/bestcomm/sram.h>
 
 
 /* Struct keeping our 'state' */

@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/s3cmci.h - Samsung S3C MCI driver
+ *  linaos/drivers/mmc/s3cmci.h - Samsung S3C MCI driver
  *
  *  Copyright (C) 2004-2006 maintech GmbH, Thomas Kleffel <tk@maintech.de>
  *
  * Current driver maintained by Ben Dooks and Simtec Electronics
- *  Copyright (C) 2008 Simtec Electronics <ben-linux@fluff.org>
+ *  Copyright (C) 2008 Simtec Electronics <ben-linaos@fluff.org>
  */
 
-#include <linux/module.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_device.h>
-#include <linux/cpufreq.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/platform_data/mmc-s3cmci.h>
+#include <linaos/module.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/clk.h>
+#include <linaos/mmc/host.h>
+#include <linaos/platform_device.h>
+#include <linaos/cpufreq.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/platform_data/mmc-s3cmci.h>
 
 #include "s3cmci.h"
 
@@ -1779,4 +1779,4 @@ module_platform_driver(s3cmci_driver);
 
 MODULE_DESCRIPTION("Samsung S3C MMC/SD Card Interface driver");
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Thomas Kleffel <tk@maintech.de>, Ben Dooks <ben-linux@fluff.org>");
+MODULE_AUTHOR("Thomas Kleffel <tk@maintech.de>, Ben Dooks <ben-linaos@fluff.org>");

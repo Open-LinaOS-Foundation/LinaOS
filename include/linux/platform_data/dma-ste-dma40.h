@@ -9,10 +9,10 @@
 #ifndef STE_DMA40_H
 #define STE_DMA40_H
 
-#include <linux/dmaengine.h>
-#include <linux/scatterlist.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
+#include <linaos/dmaengine.h>
+#include <linaos/scatterlist.h>
+#include <linaos/workqueue.h>
+#include <linaos/interrupt.h>
 
 /*
  * Maxium size for a single dma descriptor

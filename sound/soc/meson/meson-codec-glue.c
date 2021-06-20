@@ -3,7 +3,7 @@
 // Copyright (c) 2019 BayLibre, SAS.
 // Author: Jerome Brunet <jbrunet@baylibre.com>
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>

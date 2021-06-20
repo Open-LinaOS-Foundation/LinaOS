@@ -7,19 +7,19 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/sysctl.h>
-#include <linux/ctype.h>
-#include <linux/swap.h>
-#include <linux/kthread.h>
-#include <linux/oom.h>
-#include <linux/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/gfp.h>
+#include <linaos/sched.h>
+#include <linaos/sysctl.h>
+#include <linaos/ctype.h>
+#include <linaos/swap.h>
+#include <linaos/kthread.h>
+#include <linaos/oom.h>
+#include <linaos/uaccess.h>
 
 #include <asm/diag.h>
 

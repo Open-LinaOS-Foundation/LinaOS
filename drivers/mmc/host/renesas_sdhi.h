@@ -9,7 +9,7 @@
 #ifndef RENESAS_SDHI_H
 #define RENESAS_SDHI_H
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 #include "tmio_mmc.h"
 
 struct renesas_sdhi_scc {

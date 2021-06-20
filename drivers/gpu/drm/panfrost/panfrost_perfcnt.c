@@ -4,12 +4,12 @@
 #include <drm/drm_file.h>
 #include <drm/drm_gem_shmem_helper.h>
 #include <drm/panfrost_drm.h>
-#include <linux/completion.h>
-#include <linux/dma-buf-map.h>
-#include <linux/iopoll.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/completion.h>
+#include <linaos/dma-buf-map.h>
+#include <linaos/iopoll.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include "panfrost_device.h"
 #include "panfrost_features.h"

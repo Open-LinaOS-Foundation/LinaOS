@@ -7,13 +7,13 @@
  *
  * (C) Copyright IBM Corp. 2013
  *
- * Author: Frank Haverkamp <haver@linux.vnet.ibm.com>
+ * Author: Frank Haverkamp <haver@linaos.vnet.ibm.com>
  * Author: Joerg-Stephan Vogt <jsvogt@de.ibm.com>
  * Author: Michael Jung <mijung@gmx.net>
  * Author: Michael Ruettger <michael@ibmra.de>
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 
 #include "genwqe_driver.h"

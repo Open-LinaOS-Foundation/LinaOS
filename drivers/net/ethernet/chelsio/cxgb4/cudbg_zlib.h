@@ -6,7 +6,7 @@
 #ifndef __CUDBG_ZLIB_H__
 #define __CUDBG_ZLIB_H__
 
-#include <linux/zlib.h>
+#include <linaos/zlib.h>
 
 #define CUDBG_ZLIB_COMPRESS_ID 17
 #define CUDBG_ZLIB_WIN_BITS 12

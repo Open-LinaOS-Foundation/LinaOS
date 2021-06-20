@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Linux INET6 implementation
+ *	LinaOS INET6 implementation
  *	Forwarding Information Database
  *
  *	Authors:
@@ -15,15 +15,15 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/net.h>
-#include <linux/route.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/net.h>
+#include <linaos/route.h>
+#include <linaos/netdevice.h>
+#include <linaos/in6.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 
 #include <net/ip.h>
 #include <net/ipv6.h>

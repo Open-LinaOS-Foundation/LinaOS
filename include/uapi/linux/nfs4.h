@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- *  include/linux/nfs4.h
+ *  include/linaos/nfs4.h
  *
  *  NFSv4 protocol definitions.
  *
@@ -14,7 +14,7 @@
 #ifndef _UAPI_LINUX_NFS4_H
 #define _UAPI_LINUX_NFS4_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define NFS4_BITMAP_SIZE	3
 #define NFS4_VERIFIER_SIZE	8

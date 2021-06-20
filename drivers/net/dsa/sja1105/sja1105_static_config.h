@@ -5,8 +5,8 @@
 #ifndef _SJA1105_STATIC_CONFIG_H
 #define _SJA1105_STATIC_CONFIG_H
 
-#include <linux/packing.h>
-#include <linux/types.h>
+#include <linaos/packing.h>
+#include <linaos/types.h>
 #include <asm/types.h>
 
 #define SJA1105_SIZE_DEVICE_ID				4

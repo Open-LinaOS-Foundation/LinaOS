@@ -3,7 +3,7 @@
  * Copyright (c) 2017, Oracle and/or its affiliates. All rights reserved.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #define LZCNT_O0_G2	\
 	.word	0x85b002e8

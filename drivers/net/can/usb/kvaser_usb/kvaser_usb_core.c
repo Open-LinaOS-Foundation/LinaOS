@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Parts of this driver are based on the following:
- *  - Kvaser linux leaf driver (version 4.78)
+ *  - Kvaser linaos leaf driver (version 4.78)
  *  - CAN driver for esd CAN-USB/2
- *  - Kvaser linux usbcanII driver (version 5.3)
- *  - Kvaser linux mhydra driver (version 5.24)
+ *  - Kvaser linaos usbcanII driver (version 5.3)
+ *  - Kvaser linaos mhydra driver (version 5.24)
  *
  * Copyright (C) 2002-2018 KVASER AB, Sweden. All rights reserved.
  * Copyright (C) 2010 Matthias Fuchs <matthias.fuchs@esd.eu>, esd gmbh
@@ -11,21 +11,21 @@
  * Copyright (C) 2015 Valeo S.A.
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
-#include <linux/if.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/usb.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/gfp.h>
+#include <linaos/if.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/netlink.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/error.h>
+#include <linaos/can/netlink.h>
 
 #include "kvaser_usb.h"
 

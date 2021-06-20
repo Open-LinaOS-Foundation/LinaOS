@@ -7,19 +7,19 @@
  * Author: David Dajun Chen <dchen@diasemi.com>
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/mfd/core.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/mfd/core.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/reg.h>
+#include <linaos/mfd/da9052/da9052.h>
+#include <linaos/mfd/da9052/reg.h>
 
 #ifdef CONFIG_OF
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 #endif
 
 /* I2C safe register check */

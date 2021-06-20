@@ -4,7 +4,7 @@
 
 #ifdef CONFIG_HUGETLB_PAGE
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 static inline bool is_vm_hugetlb_page(struct vm_area_struct *vma)
 {

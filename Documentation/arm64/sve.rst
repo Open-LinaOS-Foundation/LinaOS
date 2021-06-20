@@ -1,12 +1,12 @@
 ===================================================
-Scalable Vector Extension support for AArch64 Linux
+Scalable Vector Extension support for AArch64 LinaOS
 ===================================================
 
 Author: Dave Martin <Dave.Martin@arm.com>
 
 Date:   4 August 2017
 
-This document outlines briefly the interface provided to userspace by Linux in
+This document outlines briefly the interface provided to userspace by LinaOS in
 order to support use of the ARM Scalable Vector Extension (SVE).
 
 This is an outline of the most important features and issues only and not
@@ -25,7 +25,7 @@ model features for SVE is included in Appendix A.
 
 * The presence of SVE is reported to userspace via HWCAP_SVE in the aux vector
   AT_HWCAP entry.  Presence of this flag implies the presence of the SVE
-  instructions and registers, and the Linux-specific system interfaces
+  instructions and registers, and the LinaOS-specific system interfaces
   described in this document.  SVE is reported in /proc/cpuinfo as "sve".
 
 * Support for the execution of SVE instructions in userspace can also be
@@ -532,10 +532,10 @@ References
 ==========
 
 [1] arch/arm64/include/uapi/asm/sigcontext.h
-    AArch64 Linux signal ABI definitions
+    AArch64 LinaOS signal ABI definitions
 
 [2] arch/arm64/include/uapi/asm/ptrace.h
-    AArch64 Linux ptrace ABI definitions
+    AArch64 LinaOS ptrace ABI definitions
 
 [3] Documentation/arm64/cpu-feature-registers.rst
 

@@ -2,7 +2,7 @@
 /* Copyright 2020, NXP Semiconductors
  */
 #include <net/tc_act/tc_gate.h>
-#include <linux/dsa/8021q.h>
+#include <linaos/dsa/8021q.h>
 #include "sja1105_vl.h"
 
 #define SJA1105_SIZE_VL_STATUS			8

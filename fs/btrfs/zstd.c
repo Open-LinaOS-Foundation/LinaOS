@@ -5,18 +5,18 @@
  *
  */
 
-#include <linux/bio.h>
-#include <linux/bitmap.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/pagemap.h>
-#include <linux/refcount.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/zstd.h>
+#include <linaos/bio.h>
+#include <linaos/bitmap.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/refcount.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/zstd.h>
 #include "misc.h"
 #include "compression.h"
 #include "ctree.h"

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/types.h>
-#include <linux/device.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
 #include <target/target_core_base.h> /* struct se_cmd */
 
 #define TCM_LOOP_VERSION		"v2.1-rc2"
@@ -8,11 +8,11 @@
 #define TL_TPGS_PER_HBA			32
 
 struct tcm_loop_cmd {
-	/* State of Linux/SCSI CDB+Data descriptor */
+	/* State of LinaOS/SCSI CDB+Data descriptor */
 	u32 sc_cmd_state;
 	/* Tagged command queueing */
 	u32 sc_cmd_tag;
-	/* Pointer to the CDB+Data descriptor from Linux/SCSI subsystem */
+	/* Pointer to the CDB+Data descriptor from LinaOS/SCSI subsystem */
 	struct scsi_cmnd *sc;
 	/* The TCM I/O descriptor that is accessed via container_of() */
 	struct se_cmd tl_se_cmd;

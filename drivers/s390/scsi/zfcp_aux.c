@@ -31,9 +31,9 @@
 #define KMSG_COMPONENT "zfcp"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 #include "zfcp_ext.h"
 #include "zfcp_fc.h"
 #include "zfcp_reqlist.h"
@@ -41,7 +41,7 @@
 
 #define ZFCP_BUS_ID_SIZE	20
 
-MODULE_AUTHOR("IBM Deutschland Entwicklung GmbH - linux390@de.ibm.com");
+MODULE_AUTHOR("IBM Deutschland Entwicklung GmbH - linaos390@de.ibm.com");
 MODULE_DESCRIPTION("FCP HBA driver");
 MODULE_LICENSE("GPL");
 

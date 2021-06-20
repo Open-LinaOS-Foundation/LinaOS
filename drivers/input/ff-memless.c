@@ -13,13 +13,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/jiffies.h>
-#include <linux/fixp-arith.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/jiffies.h>
+#include <linaos/fixp-arith.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Anssi Hannula <anssi.hannula@gmail.com>");

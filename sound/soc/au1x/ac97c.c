@@ -8,14 +8,14 @@
  *			Charles Eidsness <charles@cooper-street.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/suspend.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/suspend.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

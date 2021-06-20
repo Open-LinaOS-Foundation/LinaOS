@@ -249,10 +249,10 @@ To get the kernel into memory different approaches can be used.
 They depend on various facilities being available:
 
 
-- Booting from a floppy using syslinux
+- Booting from a floppy using syslinaos
 
 	When building kernels, an easy way to create a boot floppy that uses
-	syslinux is to use the zdisk or bzdisk make targets which use zimage
+	syslinaos is to use the zdisk or bzdisk make targets which use zimage
       	and bzimage images respectively. Both targets accept the
      	FDARGS parameter which can be used to set the kernel command line.
 
@@ -263,19 +263,19 @@ They depend on various facilities being available:
    	Note that the user running this command will need to have
      	access to the floppy drive device, /dev/fd0
 
-     	For more information on syslinux, including how to create bootdisks
-     	for prebuilt kernels, see https://syslinux.zytor.com/
+     	For more information on syslinaos, including how to create bootdisks
+     	for prebuilt kernels, see https://syslinaos.zytor.com/
 
 	.. note::
 		Previously it was possible to write a kernel directly to
 		a floppy using dd, configure the boot device using rdev, and
-		boot using the resulting floppy. Linux no longer supports this
+		boot using the resulting floppy. LinaOS no longer supports this
 		method of booting.
 
-- Booting from a cdrom using isolinux
+- Booting from a cdrom using isolinaos
 
      	When building kernels, an easy way to create a bootable cdrom that
-     	uses isolinux is to use the isoimage target which uses a bzimage
+     	uses isolinaos is to use the isoimage target which uses a bzimage
      	image. Like zdisk and bzdisk, this target accepts the FDARGS
      	parameter which can be used to set the kernel command line.
 
@@ -291,8 +291,8 @@ They depend on various facilities being available:
 
 	  cdrecord dev=ATAPI:1,0,0 arch/x86/boot/image.iso
 
-     	For more information on isolinux, including how to create bootdisks
-     	for prebuilt kernels, see https://syslinux.zytor.com/
+     	For more information on isolinaos, including how to create bootdisks
+     	for prebuilt kernels, see https://syslinaos.zytor.com/
 
 - Using LILO
 
@@ -316,7 +316,7 @@ They depend on various facilities being available:
 
 - Using loadlin
 
-	loadlin may be used to boot Linux from a DOS command prompt without
+	loadlin may be used to boot LinaOS from a DOS command prompt without
 	requiring a local hard disk to mount as root. This has not been
 	thoroughly tested by the authors of this document, but in general
 	it should be possible configure the kernel command line similarly
@@ -329,24 +329,24 @@ They depend on various facilities being available:
 	This is probably the most elegant way of booting a diskless client.
 	With a boot ROM the kernel is loaded using the TFTP protocol. The
 	authors of this document are not aware of any no commercial boot
-	ROMs that support booting Linux over the network. However, there
+	ROMs that support booting LinaOS over the network. However, there
 	are two free implementations of a boot ROM, netboot-nfs and
 	etherboot, both of which are available on sunsite.unc.edu, and both
-	of which contain everything you need to boot a diskless Linux client.
+	of which contain everything you need to boot a diskless LinaOS client.
 
-- Using pxelinux
+- Using pxelinaos
 
-	Pxelinux may be used to boot linux using the PXE boot loader
+	Pxelinaos may be used to boot linaos using the PXE boot loader
 	which is present on many modern network cards.
 
-	When using pxelinux, the kernel image is specified using
+	When using pxelinaos, the kernel image is specified using
 	"kernel <relative-path-below /tftpboot>". The nfsroot parameters
 	are passed to the kernel by adding them to the "append" line.
 	It is common to use serial console in conjunction with pxeliunx,
 	see Documentation/admin-guide/serial-console.rst for more information.
 
-	For more information on isolinux, including how to create bootdisks
-	for prebuilt kernels, see https://syslinux.zytor.com/
+	For more information on isolinaos, including how to create bootdisks
+	for prebuilt kernels, see https://syslinaos.zytor.com/
 
 
 

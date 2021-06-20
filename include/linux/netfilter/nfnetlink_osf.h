@@ -2,7 +2,7 @@
 #ifndef _NFOSF_H
 #define _NFOSF_H
 
-#include <uapi/linux/netfilter/nfnetlink_osf.h>
+#include <uapi/linaos/netfilter/nfnetlink_osf.h>
 
 enum osf_fmatch_states {
 	/* Packet does not match the fingerprint */

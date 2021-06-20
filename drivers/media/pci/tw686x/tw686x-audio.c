@@ -10,14 +10,14 @@
  * (c) 2011-12 liran <jli11@intersil.com> [Intersil|Techwell China]
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kmod.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

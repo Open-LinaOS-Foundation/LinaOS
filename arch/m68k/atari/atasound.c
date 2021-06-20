@@ -1,7 +1,7 @@
 /*
- * linux/arch/m68k/atari/atasound.c
+ * linaos/arch/m68k/atari/atasound.c
  *
- * ++Geert: Moved almost all stuff to linux/drivers/sound/
+ * ++Geert: Moved almost all stuff to linaos/drivers/sound/
  *
  * The author of atari_nosound, atari_mksound and atari_microwire_cmd is
  * unknown. (++roman: That's me... :-)
@@ -16,13 +16,13 @@
  */
 
 
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/major.h>
-#include <linux/fcntl.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <linaos/sched.h>
+#include <linaos/timer.h>
+#include <linaos/major.h>
+#include <linaos/fcntl.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
 
 #include <asm/atarihw.h>
 #include <asm/irq.h>

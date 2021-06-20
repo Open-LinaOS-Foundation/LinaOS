@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *	Linux ethernet bridge
+ *	LinaOS ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -9,9 +9,9 @@
 #define _LINUX_IF_BRIDGE_H
 
 
-#include <linux/netdevice.h>
-#include <uapi/linux/if_bridge.h>
-#include <linux/bitops.h>
+#include <linaos/netdevice.h>
+#include <uapi/linaos/if_bridge.h>
+#include <linaos/bitops.h>
 
 struct br_ip {
 	union {

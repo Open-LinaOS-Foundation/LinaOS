@@ -18,12 +18,12 @@
 #ifndef _IP_H
 #define _IP_H
 
-#include <linux/types.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/skbuff.h>
-#include <linux/jhash.h>
-#include <linux/sockptr.h>
+#include <linaos/types.h>
+#include <linaos/ip.h>
+#include <linaos/in.h>
+#include <linaos/skbuff.h>
+#include <linaos/jhash.h>
+#include <linaos/sockptr.h>
 
 #include <net/inet_sock.h>
 #include <net/route.h>
@@ -615,7 +615,7 @@ static inline void ip_ipgre_mc_map(__be32 naddr, const unsigned char *broadcast,
 }
 
 #if IS_ENABLED(CONFIG_IPV6)
-#include <linux/ipv6.h>
+#include <linaos/ipv6.h>
 #endif
 
 static __inline__ void inet_reset_saddr(struct sock *sk)

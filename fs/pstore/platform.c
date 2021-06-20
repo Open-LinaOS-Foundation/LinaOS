@@ -8,30 +8,30 @@
 
 #define pr_fmt(fmt) "pstore: " fmt
 
-#include <linux/atomic.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kmsg_dump.h>
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/pstore.h>
+#include <linaos/atomic.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kmsg_dump.h>
+#include <linaos/console.h>
+#include <linaos/module.h>
+#include <linaos/pstore.h>
 #if IS_ENABLED(CONFIG_PSTORE_LZO_COMPRESS)
-#include <linux/lzo.h>
+#include <linaos/lzo.h>
 #endif
 #if IS_ENABLED(CONFIG_PSTORE_LZ4_COMPRESS) || IS_ENABLED(CONFIG_PSTORE_LZ4HC_COMPRESS)
-#include <linux/lz4.h>
+#include <linaos/lz4.h>
 #endif
 #if IS_ENABLED(CONFIG_PSTORE_ZSTD_COMPRESS)
-#include <linux/zstd.h>
+#include <linaos/zstd.h>
 #endif
-#include <linux/crypto.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
+#include <linaos/crypto.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/jiffies.h>
+#include <linaos/workqueue.h>
 
 #include "internal.h"
 

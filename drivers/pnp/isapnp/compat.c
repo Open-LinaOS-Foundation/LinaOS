@@ -6,9 +6,9 @@
  * Copyright 2002 Adam Belay <ambx1@neo.rr.com>
  */
 
-#include <linux/module.h>
-#include <linux/isapnp.h>
-#include <linux/string.h>
+#include <linaos/module.h>
+#include <linaos/isapnp.h>
+#include <linaos/string.h>
 
 static void pnp_convert_id(char *buf, unsigned short vendor,
 			   unsigned short device)

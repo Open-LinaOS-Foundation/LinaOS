@@ -8,8 +8,8 @@
  * Copyright (C) 2001-2003 Frank Mori Hess <fmhess@users.sourceforge.net>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 #include "../comedidev.h"
 

@@ -4,8 +4,8 @@
 #ifndef NFP_CRC32_H
 #define NFP_CRC32_H
 
-#include <linux/kernel.h>
-#include <linux/crc32.h>
+#include <linaos/kernel.h>
+#include <linaos/crc32.h>
 
 /**
  * crc32_posix_end() - Finalize POSIX CRC32 working state

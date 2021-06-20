@@ -1,7 +1,7 @@
 What:		/sys/class/mtd/
 Date:		April 2009
 KernelVersion:	2.6.29
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		The mtd/ class subdirectory belongs to the MTD subsystem
 		(MTD core).
@@ -9,7 +9,7 @@ Description:
 What:		/sys/class/mtd/mtdX/
 Date:		April 2009
 KernelVersion:	2.6.29
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		The /sys/class/mtd/mtd{0,1,2,3,...} directories correspond
 		to each /dev/mtdX character device.  These may represent
@@ -19,7 +19,7 @@ Description:
 What:		/sys/class/mtd/mtdXro/
 Date:		April 2009
 KernelVersion:	2.6.29
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		These directories provide the corresponding read-only device
 		nodes for /sys/class/mtd/mtdX/ .
@@ -27,7 +27,7 @@ Description:
 What:		/sys/class/mtd/mtdX/dev
 Date:		April 2009
 KernelVersion:	2.6.29
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		Major and minor numbers of the character device corresponding
 		to this MTD device (in <major>:<minor> format).  This is the
@@ -36,7 +36,7 @@ Description:
 What:		/sys/class/mtd/mtdXro/dev
 Date:		April 2009
 KernelVersion:	2.6.29
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		Major and minor numbers of the character device corresponding
 		to the read-only variant of thie MTD device (in
@@ -45,7 +45,7 @@ Description:
 What:		/sys/class/mtd/mtdX/erasesize
 Date:		April 2009
 KernelVersion:	2.6.29
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		"Major" erase size for the device.  If numeraseregions is
 		zero, this is the eraseblock size for the entire device.
@@ -55,7 +55,7 @@ Description:
 What:		/sys/class/mtd/mtdX/flags
 Date:		April 2009
 KernelVersion:	2.6.29
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		A hexadecimal value representing the device flags, ORed
 		together:
@@ -68,7 +68,7 @@ Description:
 What:		/sys/class/mtd/mtdX/name
 Date:		April 2009
 KernelVersion:	2.6.29
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		A human-readable ASCII name for the device or partition.
 		This will match the name in /proc/mtd .
@@ -76,7 +76,7 @@ Description:
 What:		/sys/class/mtd/mtdX/numeraseregions
 Date:		April 2009
 KernelVersion:	2.6.29
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		For devices that have variable eraseblock sizes, this
 		provides the total number of erase regions.  Otherwise,
@@ -85,21 +85,21 @@ Description:
 What:		/sys/class/mtd/mtdX/oobsize
 Date:		April 2009
 KernelVersion:	2.6.29
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		Number of OOB bytes per page.
 
 What:		/sys/class/mtd/mtdX/size
 Date:		April 2009
 KernelVersion:	2.6.29
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		Total size of the device/partition, in bytes.
 
 What:		/sys/class/mtd/mtdX/type
 Date:		April 2009
 KernelVersion:	2.6.29
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		One of the following ASCII strings, representing the device
 		type:
@@ -109,7 +109,7 @@ Description:
 What:		/sys/class/mtd/mtdX/writesize
 Date:		April 2009
 KernelVersion:	2.6.29
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		Minimal writable flash unit size.  This will always be
 		a positive integer.
@@ -125,7 +125,7 @@ Description:
 What:		/sys/class/mtd/mtdX/ecc_strength
 Date:		April 2012
 KernelVersion:	3.4
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		Maximum number of bit errors that the device is capable of
 		correcting within each region covering an ECC step (see
@@ -136,7 +136,7 @@ Description:
 What:		/sys/class/mtd/mtdX/bitflip_threshold
 Date:		April 2012
 KernelVersion:	3.4
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		This allows the user to examine and adjust the criteria by which
 		mtd returns -EUCLEAN from mtd_read() and mtd_read_oob().  If the
@@ -176,7 +176,7 @@ Description:
 What:		/sys/class/mtd/mtdX/ecc_step_size
 Date:		May 2013
 KernelVersion:	3.10
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		The size of a single region covered by ECC, known as the ECC
 		step.  Devices may have several equally sized ECC steps within
@@ -188,7 +188,7 @@ Description:
 What:		/sys/class/mtd/mtdX/ecc_failures
 Date:		June 2014
 KernelVersion:	3.17
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		The number of failures reported by this device's ECC. Typically,
 		these failures are associated with failed read operations.
@@ -199,7 +199,7 @@ Description:
 What:		/sys/class/mtd/mtdX/corrected_bits
 Date:		June 2014
 KernelVersion:	3.17
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		The number of bits that have been corrected by means of the
 		device's ECC.
@@ -210,14 +210,14 @@ Description:
 What:		/sys/class/mtd/mtdX/bad_blocks
 Date:		June 2014
 KernelVersion:	3.17
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		The number of blocks marked as bad, if any, in this partition.
 
 What:		/sys/class/mtd/mtdX/bbt_blocks
 Date:		June 2014
 KernelVersion:	3.17
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		The number of blocks that are marked as reserved, if any, in
 		this partition. These are typically used to store the in-flash
@@ -226,7 +226,7 @@ Description:
 What:		/sys/class/mtd/mtdX/offset
 Date:		March 2015
 KernelVersion:	4.1
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		For a partition, the offset of that partition from the start
 		of the parent (another partition or a flash device) in bytes.
@@ -236,7 +236,7 @@ Description:
 What:		/sys/class/mtd/mtdX/oobavail
 Date:		April 2018
 KernelVersion:	4.16
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		Number of bytes available for a client to place data into
 		the out of band area.

@@ -7,9 +7,9 @@
  * Adapted for OSK by <dirk.behme@de.bosch.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
 
 #include <mach/hardware.h>
 #include <mach/mux.h>

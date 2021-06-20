@@ -3,8 +3,8 @@
 //
 // Copyright (c) 2007 Mauro Carvalho Chehab <mchehab@kernel.org>
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
 #include "tm6000.h"
 #include "tm6000-regs.h"
 

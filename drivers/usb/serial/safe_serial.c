@@ -53,24 +53,24 @@
  * turned of the module works as a simple serial device with NO
  * encapsulation.
  *
- * See linux/drivers/usbd/serial_fd for a device function driver
+ * See linaos/drivers/usbd/serial_fd for a device function driver
  * implementation of this.
  *
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/gfp.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/usb.h>
+#include <linaos/usb/serial.h>
 
 static bool safe = true;
 static bool padded = IS_ENABLED(CONFIG_USB_SERIAL_SAFE_PADDED);

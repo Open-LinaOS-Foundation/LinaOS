@@ -4,14 +4,14 @@
  *
  * Copyright IBM Corp. 2018
  *
- * Author(s): Tony Krowiak <akrowiak@linux.ibm.com>
- *	      Pierre Morel <pmorel@linux.ibm.com>
+ * Author(s): Tony Krowiak <akrowiak@linaos.ibm.com>
+ *	      Pierre Morel <pmorel@linaos.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 #include <asm/facility.h>
 #include "vfio_ap_private.h"
 

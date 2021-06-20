@@ -15,8 +15,8 @@
 #ifndef LINUX_IEEE802154_H
 #define LINUX_IEEE802154_H
 
-#include <linux/types.h>
-#include <linux/random.h>
+#include <linaos/types.h>
+#include <linaos/random.h>
 
 #define IEEE802154_MTU			127
 #define IEEE802154_ACK_PSDU_LEN		5

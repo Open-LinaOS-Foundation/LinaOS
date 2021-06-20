@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/pagewalk.h>
-#include <linux/highmem.h>
-#include <linux/sched.h>
-#include <linux/hugetlb.h>
+#include <linaos/pagewalk.h>
+#include <linaos/highmem.h>
+#include <linaos/sched.h>
+#include <linaos/hugetlb.h>
 
 /*
  * We want to know the real level where a entry is located ignoring any

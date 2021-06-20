@@ -6,24 +6,24 @@
 #ifndef _NET_IP_VS_H
 #define _NET_IP_VS_H
 
-#include <linux/ip_vs.h>                /* definitions shared with userland */
+#include <linaos/ip_vs.h>                /* definitions shared with userland */
 
 #include <asm/types.h>                  /* for __uXX types */
 
-#include <linux/list.h>                 /* for struct list_head */
-#include <linux/spinlock.h>             /* for struct rwlock_t */
-#include <linux/atomic.h>               /* for struct atomic_t */
-#include <linux/refcount.h>             /* for struct refcount_t */
-#include <linux/workqueue.h>
+#include <linaos/list.h>                 /* for struct list_head */
+#include <linaos/spinlock.h>             /* for struct rwlock_t */
+#include <linaos/atomic.h>               /* for struct atomic_t */
+#include <linaos/refcount.h>             /* for struct refcount_t */
+#include <linaos/workqueue.h>
 
-#include <linux/compiler.h>
-#include <linux/timer.h>
-#include <linux/bug.h>
+#include <linaos/compiler.h>
+#include <linaos/timer.h>
+#include <linaos/bug.h>
 
 #include <net/checksum.h>
-#include <linux/netfilter.h>		/* for union nf_inet_addr */
-#include <linux/ip.h>
-#include <linux/ipv6.h>			/* for struct ipv6hdr */
+#include <linaos/netfilter.h>		/* for union nf_inet_addr */
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>			/* for struct ipv6hdr */
 #include <net/ipv6.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
 #include <net/netfilter/nf_conntrack.h>
@@ -182,7 +182,7 @@ static inline int ip_vs_addr_equal(int af, const union nf_inet_addr *a,
 }
 
 #ifdef CONFIG_IP_VS_DEBUG
-#include <linux/net.h>
+#include <linaos/net.h>
 
 int ip_vs_get_debug_level(void);
 

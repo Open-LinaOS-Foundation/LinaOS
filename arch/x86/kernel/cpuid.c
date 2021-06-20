@@ -20,22 +20,22 @@
  * an SMP box will direct the access to CPU %d.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/smp.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/uaccess.h>
-#include <linux/gfp.h>
-#include <linux/completion.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/fcntl.h>
+#include <linaos/init.h>
+#include <linaos/poll.h>
+#include <linaos/smp.h>
+#include <linaos/major.h>
+#include <linaos/fs.h>
+#include <linaos/device.h>
+#include <linaos/cpu.h>
+#include <linaos/notifier.h>
+#include <linaos/uaccess.h>
+#include <linaos/gfp.h>
+#include <linaos/completion.h>
 
 #include <asm/processor.h>
 #include <asm/msr.h>

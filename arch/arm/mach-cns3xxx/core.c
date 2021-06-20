@@ -5,15 +5,15 @@
  * Copyright 2008 Cavium Networks
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
-#include <linux/io.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/clockchips.h>
+#include <linaos/io.h>
+#include <linaos/irqchip/arm-gic.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb/ehci_pdriver.h>
+#include <linaos/usb/ohci_pdriver.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/mach/time.h>

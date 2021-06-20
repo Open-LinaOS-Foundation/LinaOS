@@ -7,7 +7,7 @@
  * Serial device driver include file.
  */
 
-#include <linux/serial_core.h>
+#include <linaos/serial_core.h>
 
 #define BAUD_TABLE_LIMIT	((sizeof(icom_acfg_baud)/sizeof(int)) - 1)
 static int icom_acfg_baud[] = {

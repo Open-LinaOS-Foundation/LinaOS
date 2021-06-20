@@ -11,10 +11,10 @@
  * Copyright (c) 2014 Red Hat Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <linaos/bitops.h>
+#include <linaos/export.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
 #include <crypto/sha2.h>
 #include <asm/unaligned.h>
 

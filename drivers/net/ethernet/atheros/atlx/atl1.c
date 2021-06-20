@@ -18,7 +18,7 @@
  * TODO:
  * Add more ethtool functions.
  * Fix abstruse irq enable/disable condition described here:
- *	http://marc.theaimsgroup.com/?l=linux-netdev&m=116398508500553&w=2
+ *	http://marc.theaimsgroup.com/?l=linaos-netdev&m=116398508500553&w=2
  *
  * NEEDS TESTING:
  * VLAN
@@ -28,38 +28,38 @@
  * SMP torture testing
  */
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/byteorder.h>
 
-#include <linux/compiler.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/hardirq.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/irqflags.h>
-#include <linux/irqreturn.h>
-#include <linux/jiffies.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/pm.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tcp.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/compiler.h>
+#include <linaos/crc32.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/etherdevice.h>
+#include <linaos/hardirq.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/in.h>
+#include <linaos/interrupt.h>
+#include <linaos/ip.h>
+#include <linaos/irqflags.h>
+#include <linaos/irqreturn.h>
+#include <linaos/jiffies.h>
+#include <linaos/mii.h>
+#include <linaos/module.h>
+#include <linaos/net.h>
+#include <linaos/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/pm.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/tcp.h>
+#include <linaos/timer.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
 #include <net/checksum.h>
 

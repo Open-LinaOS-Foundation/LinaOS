@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /**
- * runlist.c - NTFS runlist handling code.  Part of the Linux-NTFS project.
+ * runlist.c - NTFS runlist handling code.  Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2007 Anton Altaparmakov
  * Copyright (c) 2002-2005 Richard Russon

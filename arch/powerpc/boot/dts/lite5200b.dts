@@ -23,7 +23,7 @@
 		};
 		tmr3 {
 			gpios = <&gpt3 0 1>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 		led1 { gpios = <&gpio_wkup 2 1>; };
 		led2 { gpios = <&gpio_simple 3 1>; };

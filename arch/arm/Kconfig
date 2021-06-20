@@ -135,8 +135,8 @@ config ARM
 	  licensed by ARM Ltd and targeted at embedded applications and
 	  handhelds such as the Compaq IPAQ.  ARM-based PCs are no longer
 	  manufactured, but legacy ARM-based PC hardware remains popular in
-	  Europe.  There is an ARM Linux project with a web page at
-	  <http://www.arm.linux.org.uk/>.
+	  Europe.  There is an ARM LinaOS project with a web page at
+	  <http://www.arm.linaos.org.uk/>.
 
 config ARM_HAS_SG_CHAIN
 	bool
@@ -457,7 +457,7 @@ config ARCH_RPC
 	select NEED_MACH_MEMORY_H
 	select NO_IOPORT_MAP
 	help
-	  On the Acorn Risc-PC, Linux can support the internal IDE disk and
+	  On the Acorn Risc-PC, LinaOS can support the internal IDE disk and
 	  CD-ROM interface, serial and parallel port, and the floppy drive.
 
 config ARCH_SA1100
@@ -997,7 +997,7 @@ config ARM_ERRATA_798181
 	help
 	  On Cortex-A15 (r0p0..r3p2) the TLBI*IS/DSB operations are not
 	  adequately shooting down all use of the old entries. This
-	  option enables the Linux kernel workaround for this erratum
+	  option enables the LinaOS kernel workaround for this erratum
 	  which sends an IPI to the CPUs that are running the same ASID
 	  as the one being invalidated.
 
@@ -1319,7 +1319,7 @@ config ARM_PSCI
 	depends on HAVE_ARM_SMCCC
 	select ARM_PSCI_FW
 	help
-	  Say Y here if you want Linux to communicate with system firmware
+	  Say Y here if you want LinaOS to communicate with system firmware
 	  implementing the PSCI specification for CPU-centric power
 	  management operations described in ARM document number ARM DEN
 	  0022A ("Power State Coordination Interface System Software on
@@ -1611,7 +1611,7 @@ config XEN
 	select SWIOTLB_XEN
 	select PARAVIRT
 	help
-	  Say Y if you want to run Linux in a Virtual Machine on Xen on ARM.
+	  Say Y if you want to run LinaOS in a Virtual Machine on Xen on ARM.
 
 config STACKPROTECTOR_PER_TASK
 	bool "Use a unique stack canary value for each task"
@@ -1828,7 +1828,7 @@ config KEXEC
 	  kexec is a system call that implements the ability to shutdown your
 	  current kernel, and to start another kernel.  It is like a reboot
 	  but it is independent of the system firmware.   And like a reboot
-	  you can start any kernel with it, not just Linux.
+	  you can start any kernel with it, not just LinaOS.
 
 	  It is an ongoing process to be certain the hardware in a machine
 	  is properly shutdown, so do not be surprised if this code does not
@@ -1919,7 +1919,7 @@ config FPE_NWFPE
 	depends on (!AEABI || OABI_COMPAT) && !THUMB2_KERNEL
 	help
 	  Say Y to include the NWFPE floating point emulator in the kernel.
-	  This is necessary to run most binaries. Linux does not currently
+	  This is necessary to run most binaries. LinaOS does not currently
 	  support floating point hardware so you need to say Y here even if
 	  your machine has an FPA or floating point co-processor podule.
 

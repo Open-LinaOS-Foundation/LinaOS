@@ -6,7 +6,7 @@
  * Copyright (C) 2018 IBM Corporation.
  */
 #include <limits.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <sys/mman.h>
 #include <sys/types.h>
 #include <sys/stat.h>

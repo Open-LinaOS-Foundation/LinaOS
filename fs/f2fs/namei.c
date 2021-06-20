@@ -5,15 +5,15 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  */
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/pagemap.h>
-#include <linux/sched.h>
-#include <linux/ctype.h>
-#include <linux/random.h>
-#include <linux/dcache.h>
-#include <linux/namei.h>
-#include <linux/quotaops.h>
+#include <linaos/fs.h>
+#include <linaos/f2fs_fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/sched.h>
+#include <linaos/ctype.h>
+#include <linaos/random.h>
+#include <linaos/dcache.h>
+#include <linaos/namei.h>
+#include <linaos/quotaops.h>
 
 #include "f2fs.h"
 #include "node.h"

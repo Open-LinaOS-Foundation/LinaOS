@@ -5,14 +5,14 @@
 // Copyright (C) 2012 Intel Corp.
 //
 // Authors: Namarta Kohli <namartax.kohli@intel.com>
-//          Ramesh Babu K V <ramesh.babu@linux.intel.com>
-//          Vinod Koul <vinod.koul@linux.intel.com>
+//          Ramesh Babu K V <ramesh.babu@linaos.intel.com>
+//          Vinod Koul <vinod.koul@linaos.intel.com>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 #include <sound/core.h>
 #include <sound/compress_params.h>
 #include <sound/compress_driver.h>
@@ -20,7 +20,7 @@
 #include <sound/initval.h>
 #include <sound/soc-dpcm.h>
 #include <sound/soc-link.h>
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 
 static int soc_compr_clean(struct snd_compr_stream *cstream, int rollback)
 {

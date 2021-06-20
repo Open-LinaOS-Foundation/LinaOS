@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/wm5100.h -- Platform data for WM5100
+ * linaos/sound/wm5100.h -- Platform data for WM5100
  *
  * Copyright 2011 Wolfson Microelectronics. PLC.
  */

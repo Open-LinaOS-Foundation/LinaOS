@@ -21,11 +21,11 @@
  *
  */
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 
 #define MD4_DIGEST_SIZE		16

@@ -8,8 +8,8 @@
 #ifndef _LINUX_FPGA_MGR_H
 #define _LINUX_FPGA_MGR_H
 
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
 
 struct fpga_manager;
 struct sg_table;
@@ -60,7 +60,7 @@ enum fpga_mgr_states {
  *
  * %FPGA_MGR_PARTIAL_RECONFIG: do partial reconfiguration if supported
  *
- * %FPGA_MGR_EXTERNAL_CONFIG: FPGA has been configured prior to Linux booting
+ * %FPGA_MGR_EXTERNAL_CONFIG: FPGA has been configured prior to LinaOS booting
  *
  * %FPGA_MGR_ENCRYPTED_BITSTREAM: indicates bitstream is encrypted
  *

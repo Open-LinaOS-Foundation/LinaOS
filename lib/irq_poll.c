@@ -3,14 +3,14 @@
  * Functions related to interrupt-poll handling in the block layer. This
  * is similar to NAPI for network devices.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bio.h>
-#include <linux/interrupt.h>
-#include <linux/cpu.h>
-#include <linux/irq_poll.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/bio.h>
+#include <linaos/interrupt.h>
+#include <linaos/cpu.h>
+#include <linaos/irq_poll.h>
+#include <linaos/delay.h>
 
 static unsigned int irq_poll_budget __read_mostly = 256;
 

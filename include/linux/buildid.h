@@ -2,7 +2,7 @@
 #ifndef _LINUX_BUILDID_H
 #define _LINUX_BUILDID_H
 
-#include <linux/mm_types.h>
+#include <linaos/mm_types.h>
 
 #define BUILD_ID_SIZE_MAX 20
 

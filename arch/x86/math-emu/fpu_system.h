@@ -13,9 +13,9 @@
 
 /* system dependent definitions */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
 
 #include <asm/desc.h>
 #include <asm/mmu_context.h>

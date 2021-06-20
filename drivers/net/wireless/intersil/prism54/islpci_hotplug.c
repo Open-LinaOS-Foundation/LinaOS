@@ -4,12 +4,12 @@
  *  Copyright (C) 2003 Herbert Valerio Riedel <hvr@gnu.org>
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/init.h> /* For __init, __exit */
-#include <linux/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/init.h> /* For __init, __exit */
+#include <linaos/dma-mapping.h>
 
 #include "prismcompat.h"
 #include "islpci_dev.h"

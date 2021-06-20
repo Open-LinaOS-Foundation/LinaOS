@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
-   md_u.h : user <=> kernel API between Linux raidtools and RAID drivers
+   md_u.h : user <=> kernel API between LinaOS raidtools and RAID drivers
           Copyright (C) 1998 Ingo Molnar
 	  
    This program is free software; you can redistribute it and/or modify
@@ -9,7 +9,7 @@
    any later version.
    
    You should have received a copy of the GNU General Public License
-   (for example /usr/src/linux/COPYING); if not, write to the Free
+   (for example /usr/src/linaos/COPYING); if not, write to the Free
    Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.  
 */
 

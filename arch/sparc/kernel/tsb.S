@@ -25,7 +25,7 @@
 	 * %g5:	available temporary
 	 * %g6: TAG TARGET
 	 * %g7:	available temporary, will be loaded by us with
-	 *      the physical address base of the linux page
+	 *      the physical address base of the linaos page
 	 *      tables for the current address space
 	 */
 tsb_miss_dtlb:

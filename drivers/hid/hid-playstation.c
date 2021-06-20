@@ -5,13 +5,13 @@
  *  Copyright (c) 2020 Sony Interactive Entertainment
  */
 
-#include <linux/bits.h>
-#include <linux/crc32.h>
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/idr.h>
-#include <linux/input/mt.h>
-#include <linux/module.h>
+#include <linaos/bits.h>
+#include <linaos/crc32.h>
+#include <linaos/device.h>
+#include <linaos/hid.h>
+#include <linaos/idr.h>
+#include <linaos/input/mt.h>
+#include <linaos/module.h>
 
 #include <asm/unaligned.h>
 

@@ -124,10 +124,10 @@
 
 /* delay.h is required for hw_lock.h */
 
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/mISDNif.h>
+#include <linaos/mISDNdsp.h>
 #include "core.h"
 #include "dsp.h"
 /*

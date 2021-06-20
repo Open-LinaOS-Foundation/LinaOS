@@ -16,18 +16,18 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/crc32.h>
-#include <linux/bitrev.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/crc32.h>
+#include <linaos/bitrev.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/platform_device.h>
+#include <linaos/gfp.h>
+#include <linaos/interrupt.h>
 #include <asm/io.h>
 #include <asm/macints.h>
 #include <asm/mac_psc.h>

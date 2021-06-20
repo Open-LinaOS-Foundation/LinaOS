@@ -10,16 +10,16 @@
  * 2. Provide parsing result to kernel drivers
  *
  */
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/acpi.h>
-#include <linux/uaccess.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/acpi.h>
+#include <linaos/uaccess.h>
+#include <linaos/miscdevice.h>
+#include <linaos/fs.h>
 #include "acpi_thermal_rel.h"
 
 static acpi_handle acpi_thermal_rel_handle;

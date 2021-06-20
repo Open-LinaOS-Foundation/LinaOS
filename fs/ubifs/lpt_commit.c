@@ -13,9 +13,9 @@
  * subsystem.
  */
 
-#include <linux/crc16.h>
-#include <linux/slab.h>
-#include <linux/random.h>
+#include <linaos/crc16.h>
+#include <linaos/slab.h>
+#include <linaos/random.h>
 #include "ubifs.h"
 
 static int dbg_populate_lsave(struct ubifs_info *c);

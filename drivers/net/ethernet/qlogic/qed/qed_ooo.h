@@ -6,9 +6,9 @@
 
 #ifndef _QED_OOO_H
 #define _QED_OOO_H
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 #include "qed.h"
 
 #define QED_MAX_NUM_ISLES	256

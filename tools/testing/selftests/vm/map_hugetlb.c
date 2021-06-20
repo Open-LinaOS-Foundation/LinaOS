@@ -5,7 +5,7 @@
  * sure the administrator has allocated enough default sized huge pages
  * to cover the 256 MB allocation.
  *
- * For ia64 architecture, Linux kernel reserves Region number 4 for hugepages.
+ * For ia64 architecture, LinaOS kernel reserves Region number 4 for hugepages.
  * That means the addresses starting with 0x800000... will need to be
  * specified.  Specifying a fixed address is not required on ppc64, i386
  * or x86_64.

@@ -8,10 +8,10 @@
 #ifndef __LINUX_MOXTET_H
 #define __LINUX_MOXTET_H
 
-#include <linux/device.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mutex.h>
+#include <linaos/device.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/mutex.h>
 
 #define TURRIS_MOX_MAX_MODULES	10
 

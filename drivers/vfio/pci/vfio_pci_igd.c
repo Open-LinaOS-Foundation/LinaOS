@@ -10,10 +10,10 @@
  * address is also virtualized to prevent user modification.
  */
 
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
+#include <linaos/io.h>
+#include <linaos/pci.h>
+#include <linaos/uaccess.h>
+#include <linaos/vfio.h>
 
 #include "vfio_pci_private.h"
 

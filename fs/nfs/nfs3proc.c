@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/nfs/nfs3proc.c
+ *  linaos/fs/nfs/nfs3proc.c
  *
  *  Client-side NFSv3 procedures stubs.
  *
  *  Copyright (C) 1997, Olaf Kirch
  */
 
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/slab.h>
-#include <linux/nfs.h>
-#include <linux/nfs3.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
-#include <linux/lockd/bind.h>
-#include <linux/nfs_mount.h>
-#include <linux/freezer.h>
-#include <linux/xattr.h>
+#include <linaos/mm.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/slab.h>
+#include <linaos/nfs.h>
+#include <linaos/nfs3.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_page.h>
+#include <linaos/lockd/bind.h>
+#include <linaos/nfs_mount.h>
+#include <linaos/freezer.h>
+#include <linaos/xattr.h>
 
 #include "iostat.h"
 #include "internal.h"

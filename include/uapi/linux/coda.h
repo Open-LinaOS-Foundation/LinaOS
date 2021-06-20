@@ -52,7 +52,7 @@ Mellon the rights to redistribute these changes without encumbrance.
 /*
  *
  * Based on cfs.h from Mach, but revamped for increased simplicity.
- * Linux modifications by 
+ * LinaOS modifications by 
  * Peter Braam, Aug 1996
  */
 
@@ -93,8 +93,8 @@ typedef unsigned long long u_quad_t;
 #endif /* !DJGPP */
 
 
-#if defined(__linux__)
-#include <linux/time.h>
+#if defined(__linaos__)
+#include <linaos/time.h>
 #define cdev_t u_quad_t
 #ifndef __KERNEL__
 #if !defined(_UQUAD_T_) && (!defined(__GLIBC__) || __GLIBC__ < 2)

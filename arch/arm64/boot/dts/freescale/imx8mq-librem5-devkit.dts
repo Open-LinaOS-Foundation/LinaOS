@@ -40,14 +40,14 @@
 			label = "VOL_UP";
 			gpios = <&gpio4 21 GPIO_ACTIVE_LOW>;
 			wakeup-source;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 		};
 
 		btn2 {
 			label = "VOL_DOWN";
 			gpios = <&gpio4 22 GPIO_ACTIVE_LOW>;
 			wakeup-source;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 		};
 
 		wwan-wake {
@@ -56,7 +56,7 @@
 			interrupt-parent = <&gpio3>;
 			interrupts = <8 IRQ_TYPE_LEVEL_LOW>;
 			wakeup-source;
-			linux,code = <KEY_PHONE>;
+			linaos,code = <KEY_PHONE>;
 		};
 	};
 

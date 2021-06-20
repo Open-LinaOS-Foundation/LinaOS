@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 KBUILD_DEFCONFIG := mmu_defconfig
 
-UTS_SYSNAME = -DUTS_SYSNAME=\"Linux\"
+UTS_SYSNAME = -DUTS_SYSNAME=\"LinaOS\"
 
 # What CPU vesion are we building for, and crack it open
 # as major.minor.rev
@@ -63,7 +63,7 @@ core-y	+= $(boot)/dts/
 
 export DTB
 
-all: linux.bin
+all: linaos.bin
 
 archclean:
 	$(Q)$(MAKE) $(clean)=$(boot)
@@ -71,26 +71,26 @@ archclean:
 archheaders:
 	$(Q)$(MAKE) $(build)=arch/microblaze/kernel/syscalls all
 
-PHONY += linux.bin linux.bin.gz linux.bin.ub
-linux.bin.ub linux.bin.gz: linux.bin
-linux.bin: vmlinux
-linux.bin linux.bin.gz linux.bin.ub:
+PHONY += linaos.bin linaos.bin.gz linaos.bin.ub
+linaos.bin.ub linaos.bin.gz: linaos.bin
+linaos.bin: vmlinaos
+linaos.bin linaos.bin.gz linaos.bin.ub:
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 	@echo 'Kernel: $(boot)/$@ is ready' ' (#'`cat .version`')'
 
 PHONY += simpleImage.$(DTB)
-simpleImage.$(DTB): vmlinux
+simpleImage.$(DTB): vmlinaos
 	$(Q)$(MAKE) $(build)=$(boot) $(addprefix $(boot)/$@., ub unstrip strip)
 	@echo 'Kernel: $(boot)/$@ is ready' ' (#'`cat .version`')'
 
 define archhelp
-  echo '* linux.bin    - Create raw binary'
-  echo '  linux.bin.gz - Create compressed raw binary'
-  echo '  linux.bin.ub - Create U-Boot wrapped raw binary'
+  echo '* linaos.bin    - Create raw binary'
+  echo '  linaos.bin.gz - Create compressed raw binary'
+  echo '  linaos.bin.ub - Create U-Boot wrapped raw binary'
   echo '  simpleImage.<dt> - Create the following images with <dt>.dtb linked in'
   echo '                    simpleImage.<dt>        : raw image'
   echo '                    simpleImage.<dt>.ub     : raw image with U-Boot header'
-  echo '                    simpleImage.<dt>.unstrip: ELF (identical to vmlinux)'
+  echo '                    simpleImage.<dt>.unstrip: ELF (identical to vmlinaos)'
   echo '                    simpleImage.<dt>.strip  : stripped ELF'
   echo '  Targets with <dt> embed a device tree blob inside the image'
   echo '  These targets support board with firmware that does not'

@@ -2,7 +2,7 @@
 #ifndef _LINUX_BSG_H
 #define _LINUX_BSG_H
 
-#include <uapi/linux/bsg.h>
+#include <uapi/linaos/bsg.h>
 
 struct request;
 

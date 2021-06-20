@@ -2,7 +2,7 @@
 #ifndef _ASM_POWERPC_BOOK3S_64_KUP_H
 #define _ASM_POWERPC_BOOK3S_64_KUP_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 #include <asm/reg.h>
 
 #define AMR_KUAP_BLOCK_READ	UL(0x5455555555555555)
@@ -193,7 +193,7 @@
 
 #else /* !__ASSEMBLY__ */
 
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 
 DECLARE_STATIC_KEY_FALSE(uaccess_flush_key);
 

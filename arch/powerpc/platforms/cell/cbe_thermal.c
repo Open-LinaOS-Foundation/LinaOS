@@ -32,11 +32,11 @@
  * Author: Christian Krafft <krafft@de.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/cpu.h>
-#include <linux/stringify.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/cpu.h>
+#include <linaos/stringify.h>
 #include <asm/spu.h>
 #include <asm/io.h>
 #include <asm/prom.h>

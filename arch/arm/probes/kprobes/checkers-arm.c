@@ -5,7 +5,7 @@
  * Copyright (C) 2014 Huawei Inc.
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "../decode.h"
 #include "../decode-arm.h"
 #include "checkers.h"

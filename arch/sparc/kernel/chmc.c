@@ -4,18 +4,18 @@
  * Copyright (C) 2001, 2007, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/string.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 #include <asm/spitfire.h>
 #include <asm/chmctrl.h>
 #include <asm/cpudata.h>
@@ -338,7 +338,7 @@ static int jbusmc_print_dimm(int syndrome_code,
 }
 
 static u64 jbusmc_dimm_group_size(u64 base,
-				  const struct linux_prom64_registers *mem_regs,
+				  const struct linaos_prom64_registers *mem_regs,
 				  int num_mem_regs)
 {
 	u64 max = base + (8UL * 1024 * 1024 * 1024);
@@ -346,7 +346,7 @@ static u64 jbusmc_dimm_group_size(u64 base,
 	int i;
 
 	for (i = 0; i < num_mem_regs; i++) {
-		const struct linux_prom64_registers *ent;
+		const struct linaos_prom64_registers *ent;
 		u64 this_base;
 		u64 this_end;
 
@@ -366,7 +366,7 @@ static u64 jbusmc_dimm_group_size(u64 base,
 
 static void jbusmc_construct_one_dimm_group(struct jbusmc *p,
 					    unsigned long index,
-					    const struct linux_prom64_registers *mem_regs,
+					    const struct linaos_prom64_registers *mem_regs,
 					    int num_mem_regs)
 {
 	struct jbusmc_dimm_group *dp = &p->dimm_groups[index];
@@ -380,7 +380,7 @@ static void jbusmc_construct_one_dimm_group(struct jbusmc *p,
 }
 
 static void jbusmc_construct_dimm_groups(struct jbusmc *p,
-					 const struct linux_prom64_registers *mem_regs,
+					 const struct linaos_prom64_registers *mem_regs,
 					 int num_mem_regs)
 {
 	if (p->mc_reg_1 & JB_MC_REG1_DIMM1_BANK0) {
@@ -395,7 +395,7 @@ static void jbusmc_construct_dimm_groups(struct jbusmc *p,
 
 static int jbusmc_probe(struct platform_device *op)
 {
-	const struct linux_prom64_registers *mem_regs;
+	const struct linaos_prom64_registers *mem_regs;
 	struct device_node *mem_node;
 	int err, len, num_mem_regs;
 	struct jbusmc *p;

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -12,22 +12,22 @@
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/initrd.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/hugetlb.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/stddef.h>
+#include <linaos/init.h>
+#include <linaos/highmem.h>
+#include <linaos/initrd.h>
+#include <linaos/pagemap.h>
+#include <linaos/memblock.h>
+#include <linaos/gfp.h>
+#include <linaos/slab.h>
+#include <linaos/hugetlb.h>
 
 #include <asm/prom.h>
 #include <asm/io.h>

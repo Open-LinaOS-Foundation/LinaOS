@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
 #include <asm/io.h>
 #include <asm/delay.h>
 #include <asm/adc.h>

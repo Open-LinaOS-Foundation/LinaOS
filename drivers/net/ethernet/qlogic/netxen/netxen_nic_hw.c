@@ -5,8 +5,8 @@
  * All rights reserved.
  */
 
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/slab.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/slab.h>
 #include "netxen_nic.h"
 #include "netxen_nic_hw.h"
 

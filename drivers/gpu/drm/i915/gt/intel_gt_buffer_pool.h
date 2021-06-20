@@ -6,7 +6,7 @@
 #ifndef INTEL_GT_BUFFER_POOL_H
 #define INTEL_GT_BUFFER_POOL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "i915_active.h"
 #include "intel_gt_buffer_pool_types.h"

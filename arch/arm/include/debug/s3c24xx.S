@@ -6,10 +6,10 @@
  *  Copyright (C) 1994-1999 Russell King
  *  Copyright (C) 2005 Simtec Electronics
  *
- *  Moved from linux/arch/arm/kernel/debug.S by Ben Dooks
+ *  Moved from linaos/arch/arm/kernel/debug.S by Ben Dooks
 */
 
-#include <linux/serial_s3c.h>
+#include <linaos/serial_s3c.h>
 
 #define S3C2410_UART1_OFF (0x4000)
 

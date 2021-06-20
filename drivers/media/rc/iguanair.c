@@ -5,13 +5,13 @@
  * Copyright (C) 2012 Sean Young <sean@mess.org>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/usb/input.h>
+#include <linaos/slab.h>
+#include <linaos/completion.h>
 #include <media/rc-core.h>
 
 #define BUF_SIZE 152

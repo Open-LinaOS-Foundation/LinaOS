@@ -11,11 +11,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/w1.h>
-#include <linux/regmap.h>
-#include <linux/power_supply.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/w1.h>
+#include <linaos/regmap.h>
+#include <linaos/power_supply.h>
 
 #define W1_MAX1721X_FAMILY_ID		0x26
 #define DEF_DEV_NAME_MAX17211		"MAX17211"

@@ -2,13 +2,13 @@
 #ifndef _LINUX_VMSTAT_H
 #define _LINUX_VMSTAT_H
 
-#include <linux/types.h>
-#include <linux/percpu.h>
-#include <linux/mmzone.h>
-#include <linux/vm_event_item.h>
-#include <linux/atomic.h>
-#include <linux/static_key.h>
-#include <linux/mmdebug.h>
+#include <linaos/types.h>
+#include <linaos/percpu.h>
+#include <linaos/mmzone.h>
+#include <linaos/vm_event_item.h>
+#include <linaos/atomic.h>
+#include <linaos/static_key.h>
+#include <linaos/mmdebug.h>
 
 extern int sysctl_stat_interval;
 

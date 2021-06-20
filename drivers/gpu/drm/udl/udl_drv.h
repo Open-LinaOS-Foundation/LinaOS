@@ -11,8 +11,8 @@
 #ifndef UDL_DRV_H
 #define UDL_DRV_H
 
-#include <linux/mm_types.h>
-#include <linux/usb.h>
+#include <linaos/mm_types.h>
+#include <linaos/usb.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_framebuffer.h>

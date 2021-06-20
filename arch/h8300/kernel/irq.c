@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/h8300/kernel/irq.c
+ * linaos/arch/h8300/kernel/irq.c
  *
  * Copyright 2014-2015 Yoshinori Sato <ysato@users.sourceforge.jp>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of_irq.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of_irq.h>
 #include <asm/traps.h>
 
 #ifdef CONFIG_RAMKERNEL

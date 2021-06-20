@@ -7,8 +7,8 @@
  *  Copyright (C) 1999  Niibe Yutaka
  *  Copyright (C) 2002 - 2007 Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/string.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
 #include <asm/machvec.h>
 #include <asm/sections.h>
 #include <asm/addrspace.h>

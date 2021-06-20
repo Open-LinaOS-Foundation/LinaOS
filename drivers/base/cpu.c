@@ -3,23 +3,23 @@
  * CPU subsystem support
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/cpu.h>
-#include <linux/topology.h>
-#include <linux/device.h>
-#include <linux/node.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/percpu.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/cpufeature.h>
-#include <linux/tick.h>
-#include <linux/pm_qos.h>
-#include <linux/sched/isolation.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/cpu.h>
+#include <linaos/topology.h>
+#include <linaos/device.h>
+#include <linaos/node.h>
+#include <linaos/gfp.h>
+#include <linaos/slab.h>
+#include <linaos/percpu.h>
+#include <linaos/acpi.h>
+#include <linaos/of.h>
+#include <linaos/cpufeature.h>
+#include <linaos/tick.h>
+#include <linaos/pm_qos.h>
+#include <linaos/sched/isolation.h>
 
 #include "base.h"
 
@@ -137,7 +137,7 @@ struct bus_type cpu_subsys = {
 EXPORT_SYMBOL_GPL(cpu_subsys);
 
 #ifdef CONFIG_KEXEC
-#include <linux/kexec.h>
+#include <linaos/kexec.h>
 
 static ssize_t crash_notes_show(struct device *dev,
 				struct device_attribute *attr,
@@ -308,7 +308,7 @@ static void cpu_device_release(struct device *dev)
 	 * by the cpu device.
 	 *
 	 * Never copy this way of doing things, or you too will be made fun of
-	 * on the linux-kernel list, you have been warned.
+	 * on the linaos-kernel list, you have been warned.
 	 */
 }
 

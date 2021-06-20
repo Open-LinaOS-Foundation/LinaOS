@@ -32,12 +32,12 @@
 #define FIXMAP_PMD_TOP	507
 
 #ifndef __ASSEMBLY__
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/apicdef.h>
 #include <asm/page.h>
 #include <asm/pgtable_types.h>
 #ifdef CONFIG_X86_32
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #else
 #include <uapi/asm/vsyscall.h>
 #endif

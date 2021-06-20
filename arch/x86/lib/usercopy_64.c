@@ -6,9 +6,9 @@
  * Copyright 1997 Linus Torvalds
  * Copyright 2002 Andi Kleen <ak@suse.de>
  */
-#include <linux/export.h>
-#include <linux/uaccess.h>
-#include <linux/highmem.h>
+#include <linaos/export.h>
+#include <linaos/uaccess.h>
+#include <linaos/highmem.h>
 
 /*
  * Zero Userspace

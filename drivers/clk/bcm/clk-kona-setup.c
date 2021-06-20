@@ -12,8 +12,8 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/io.h>
-#include <linux/of_address.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
 
 #include "clk-kona.h"
 

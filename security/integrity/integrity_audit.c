@@ -7,9 +7,9 @@
  *	Audit calls for the integrity subsystem
  */
 
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/audit.h>
+#include <linaos/fs.h>
+#include <linaos/gfp.h>
+#include <linaos/audit.h>
 #include "integrity.h"
 
 static int integrity_audit_info;

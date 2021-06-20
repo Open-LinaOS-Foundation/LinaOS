@@ -4,11 +4,11 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/dma-map-ops.h>
-#include <linux/spinlock.h>
-#include <linux/shmem_fs.h>
-#include <linux/dma-buf.h>
-#include <linux/pfn_t.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/spinlock.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/dma-buf.h>
+#include <linaos/pfn_t.h>
 
 #include <drm/drm_prime.h>
 

@@ -9,7 +9,7 @@
 #ifndef _ASM_CPU_H
 #define _ASM_CPU_H
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 /*
    As of the MIPS32 and MIPS64 specs from MTI, the PRId register (CP0

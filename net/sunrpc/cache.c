@@ -8,30 +8,30 @@
  * Copyright (C) 2002 Neil Brown <neilb@cse.unsw.edu.au>
  */
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/string_helpers.h>
-#include <linux/uaccess.h>
-#include <linux/poll.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/net.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/slab.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/kmod.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/ctype.h>
+#include <linaos/string_helpers.h>
+#include <linaos/uaccess.h>
+#include <linaos/poll.h>
+#include <linaos/seq_file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/net.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
+#include <linaos/pagemap.h>
 #include <asm/ioctls.h>
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
+#include <linaos/sunrpc/types.h>
+#include <linaos/sunrpc/cache.h>
+#include <linaos/sunrpc/stats.h>
+#include <linaos/sunrpc/rpc_pipe_fs.h>
 #include <trace/events/sunrpc.h>
 #include "netns.h"
 

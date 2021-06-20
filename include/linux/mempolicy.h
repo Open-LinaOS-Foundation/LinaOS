@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * NUMA memory policies for Linux.
+ * NUMA memory policies for LinaOS.
  * Copyright 2003,2004 Andi Kleen SuSE Labs
  */
 #ifndef _LINUX_MEMPOLICY_H
 #define _LINUX_MEMPOLICY_H 1
 
-#include <linux/sched.h>
-#include <linux/mmzone.h>
-#include <linux/dax.h>
-#include <linux/slab.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/nodemask.h>
-#include <linux/pagemap.h>
-#include <uapi/linux/mempolicy.h>
+#include <linaos/sched.h>
+#include <linaos/mmzone.h>
+#include <linaos/dax.h>
+#include <linaos/slab.h>
+#include <linaos/rbtree.h>
+#include <linaos/spinlock.h>
+#include <linaos/nodemask.h>
+#include <linaos/pagemap.h>
+#include <uapi/linaos/mempolicy.h>
 
 struct mm_struct;
 

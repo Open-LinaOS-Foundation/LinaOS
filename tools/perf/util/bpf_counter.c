@@ -8,8 +8,8 @@
 #include <sys/file.h>
 #include <sys/time.h>
 #include <sys/resource.h>
-#include <linux/err.h>
-#include <linux/zalloc.h>
+#include <linaos/err.h>
+#include <linaos/zalloc.h>
 #include <bpf/bpf.h>
 #include <bpf/btf.h>
 #include <bpf/libbpf.h>

@@ -21,18 +21,18 @@
  * applications that require more DP ram, we can expand the boundaries
  * but then we have to be careful of any downloaded microcode.
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/param.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
 #include <asm/page.h>
 #include <asm/8xx_immap.h>
 #include <asm/cpm1.h>
@@ -44,7 +44,7 @@
 #include <asm/fs_pd.h>
 
 #ifdef CONFIG_8xx_GPIO
-#include <linux/of_gpio.h>
+#include <linaos/of_gpio.h>
 #endif
 
 #define CPM_MAP_SIZE    (0x4000)

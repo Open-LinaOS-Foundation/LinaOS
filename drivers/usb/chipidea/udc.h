@@ -10,7 +10,7 @@
 #ifndef __DRIVERS_USB_CHIPIDEA_UDC_H
 #define __DRIVERS_USB_CHIPIDEA_UDC_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 #define CTRL_PAYLOAD_MAX   64
 #define RX        0  /* similar to USB_DIR_OUT but can be used as an index */

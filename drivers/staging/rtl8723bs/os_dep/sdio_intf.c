@@ -9,7 +9,7 @@
 #include <drv_types.h>
 #include <rtw_debug.h>
 #include <hal_btcoex.h>
-#include <linux/jiffies.h>
+#include <linaos/jiffies.h>
 
 #ifndef dev_to_sdio_func
 #define dev_to_sdio_func(d)     container_of(d, struct sdio_func, dev)

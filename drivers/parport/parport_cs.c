@@ -34,19 +34,19 @@
     
 ======================================================================*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/major.h>
-#include <linux/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/ioport.h>
+#include <linaos/major.h>
+#include <linaos/interrupt.h>
 
-#include <linux/parport.h>
-#include <linux/parport_pc.h>
+#include <linaos/parport.h>
+#include <linaos/parport_pc.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

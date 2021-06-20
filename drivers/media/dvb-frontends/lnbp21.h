@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2006 Oliver Endriss
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://linaostv.org
  */
 
 #ifndef _LNBP21_H
@@ -36,7 +36,7 @@
 	1=static curr limiting */
 #define LNBP21_PCL	0x80
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 #if IS_REACHABLE(CONFIG_DVB_LNBP21)
 /* override_set and override_clear control which

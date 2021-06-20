@@ -33,7 +33,7 @@
 #ifndef __MLX5E_EN_PORT_H
 #define __MLX5E_EN_PORT_H
 
-#include <linux/mlx5/driver.h>
+#include <linaos/mlx5/driver.h>
 #include "en.h"
 
 struct mlx5e_port_eth_proto {

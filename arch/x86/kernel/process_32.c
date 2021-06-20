@@ -2,49 +2,49 @@
  *  Copyright (C) 1995  Linus Torvalds
  *
  *  Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@valinaos.com>, May 2000
  */
 
 /*
  * This file handles the architecture-dependent parts of process handling..
  */
 
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/elfcore.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/user.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/mc146818rtc.h>
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/ptrace.h>
-#include <linux/personality.h>
-#include <linux/percpu.h>
-#include <linux/prctl.h>
-#include <linux/ftrace.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/kdebug.h>
-#include <linux/syscalls.h>
+#include <linaos/cpu.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/elfcore.h>
+#include <linaos/smp.h>
+#include <linaos/stddef.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/user.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/reboot.h>
+#include <linaos/mc146818rtc.h>
+#include <linaos/export.h>
+#include <linaos/kallsyms.h>
+#include <linaos/ptrace.h>
+#include <linaos/personality.h>
+#include <linaos/percpu.h>
+#include <linaos/prctl.h>
+#include <linaos/ftrace.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/kdebug.h>
+#include <linaos/syscalls.h>
 
 #include <asm/ldt.h>
 #include <asm/processor.h>
 #include <asm/fpu/internal.h>
 #include <asm/desc.h>
 
-#include <linux/err.h>
+#include <linaos/err.h>
 
 #include <asm/tlbflush.h>
 #include <asm/cpu.h>

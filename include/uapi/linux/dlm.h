@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /******************************************************************************
 *******************************************************************************
 **
@@ -21,8 +21,8 @@
  */
 
 /* Lock levels and flags are here */
-#include <linux/dlmconstants.h>
-#include <linux/types.h>
+#include <linaos/dlmconstants.h>
+#include <linaos/types.h>
 
 typedef void dlm_lockspace_t;
 

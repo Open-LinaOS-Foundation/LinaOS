@@ -4,10 +4,10 @@
  * Author: Georgi Djakov <georgi.djakov@linaro.org>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/regmap.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/regmap.h>
 
 #include "clk-regmap-mux-div.h"
 

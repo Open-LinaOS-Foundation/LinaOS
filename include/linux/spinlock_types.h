@@ -2,7 +2,7 @@
 #define __LINUX_SPINLOCK_TYPES_H
 
 /*
- * include/linux/spinlock_types.h - generic spinlock type definitions
+ * include/linaos/spinlock_types.h - generic spinlock type definitions
  *                                  and initializers
  *
  * portions Copyright 2005, Red Hat, Inc., Ingo Molnar
@@ -12,10 +12,10 @@
 #if defined(CONFIG_SMP)
 # include <asm/spinlock_types.h>
 #else
-# include <linux/spinlock_types_up.h>
+# include <linaos/spinlock_types_up.h>
 #endif
 
-#include <linux/lockdep_types.h>
+#include <linaos/lockdep_types.h>
 
 typedef struct raw_spinlock {
 	arch_spinlock_t raw_lock;
@@ -96,6 +96,6 @@ typedef struct spinlock {
 
 #define DEFINE_SPINLOCK(x)	spinlock_t x = __SPIN_LOCK_UNLOCKED(x)
 
-#include <linux/rwlock_types.h>
+#include <linaos/rwlock_types.h>
 
 #endif /* __LINUX_SPINLOCK_TYPES_H */

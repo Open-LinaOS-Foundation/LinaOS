@@ -22,7 +22,7 @@
  *  ---------------------------------------------------
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the LinaOS
  *  distribution for more details.
  */
 
@@ -30,33 +30,33 @@
 
 #include "cgroup-internal.h"
 
-#include <linux/cred.h>
-#include <linux/errno.h>
-#include <linux/init_task.h>
-#include <linux/kernel.h>
-#include <linux/magic.h>
-#include <linux/mutex.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/proc_fs.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/string.h>
-#include <linux/hashtable.h>
-#include <linux/idr.h>
-#include <linux/kthread.h>
-#include <linux/atomic.h>
-#include <linux/cpuset.h>
-#include <linux/proc_ns.h>
-#include <linux/nsproxy.h>
-#include <linux/file.h>
-#include <linux/fs_parser.h>
-#include <linux/sched/cputime.h>
-#include <linux/psi.h>
+#include <linaos/cred.h>
+#include <linaos/errno.h>
+#include <linaos/init_task.h>
+#include <linaos/kernel.h>
+#include <linaos/magic.h>
+#include <linaos/mutex.h>
+#include <linaos/mount.h>
+#include <linaos/pagemap.h>
+#include <linaos/proc_fs.h>
+#include <linaos/rcupdate.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/percpu-rwsem.h>
+#include <linaos/string.h>
+#include <linaos/hashtable.h>
+#include <linaos/idr.h>
+#include <linaos/kthread.h>
+#include <linaos/atomic.h>
+#include <linaos/cpuset.h>
+#include <linaos/proc_ns.h>
+#include <linaos/nsproxy.h>
+#include <linaos/file.h>
+#include <linaos/fs_parser.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/psi.h>
 #include <net/sock.h>
 
 #define CREATE_TRACE_POINTS
@@ -119,14 +119,14 @@ static struct workqueue_struct *cgroup_destroy_wq;
 /* generate an array of cgroup subsystem pointers */
 #define SUBSYS(_x) [_x ## _cgrp_id] = &_x ## _cgrp_subsys,
 struct cgroup_subsys *cgroup_subsys[] = {
-#include <linux/cgroup_subsys.h>
+#include <linaos/cgroup_subsys.h>
 };
 #undef SUBSYS
 
 /* array of cgroup subsystem names */
 #define SUBSYS(_x) [_x ## _cgrp_id] = #_x,
 static const char *cgroup_subsys_name[] = {
-#include <linux/cgroup_subsys.h>
+#include <linaos/cgroup_subsys.h>
 };
 #undef SUBSYS
 
@@ -136,18 +136,18 @@ static const char *cgroup_subsys_name[] = {
 	DEFINE_STATIC_KEY_TRUE(_x ## _cgrp_subsys_on_dfl_key);			\
 	EXPORT_SYMBOL_GPL(_x ## _cgrp_subsys_enabled_key);			\
 	EXPORT_SYMBOL_GPL(_x ## _cgrp_subsys_on_dfl_key);
-#include <linux/cgroup_subsys.h>
+#include <linaos/cgroup_subsys.h>
 #undef SUBSYS
 
 #define SUBSYS(_x) [_x ## _cgrp_id] = &_x ## _cgrp_subsys_enabled_key,
 static struct static_key_true *cgroup_subsys_enabled_key[] = {
-#include <linux/cgroup_subsys.h>
+#include <linaos/cgroup_subsys.h>
 };
 #undef SUBSYS
 
 #define SUBSYS(_x) [_x ## _cgrp_id] = &_x ## _cgrp_subsys_on_dfl_key,
 static struct static_key_true *cgroup_subsys_on_dfl_key[] = {
-#include <linux/cgroup_subsys.h>
+#include <linaos/cgroup_subsys.h>
 };
 #undef SUBSYS
 

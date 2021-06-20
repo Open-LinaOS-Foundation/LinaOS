@@ -7,14 +7,14 @@
  * with information needed by the vt package
  */
 
-#include <linux/vt.h>
-#include <linux/kd.h>
-#include <linux/tty.h>
-#include <linux/mutex.h>
-#include <linux/console_struct.h>
-#include <linux/mm.h>
-#include <linux/consolemap.h>
-#include <linux/notifier.h>
+#include <linaos/vt.h>
+#include <linaos/kd.h>
+#include <linaos/tty.h>
+#include <linaos/mutex.h>
+#include <linaos/console_struct.h>
+#include <linaos/mm.h>
+#include <linaos/consolemap.h>
+#include <linaos/notifier.h>
 
 void kd_mksound(unsigned int hz, unsigned int ticks);
 int kbd_rate(struct kbd_repeat *rep);
@@ -44,7 +44,7 @@ void redraw_screen(struct vc_data *vc, int is_switch);
 #define switch_screen(x) redraw_screen(x, 1)
 
 struct tty_struct;
-int tioclinux(struct tty_struct *tty, unsigned long arg);
+int tioclinaos(struct tty_struct *tty, unsigned long arg);
 
 #ifdef CONFIG_CONSOLE_TRANSLATIONS
 /* consolemap.c */

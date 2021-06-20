@@ -2,7 +2,7 @@
 /* Copyright(c) 2020 Intel Corporation */
 #include "adf_gen2_hw_data.h"
 #include "icp_qat_hw.h"
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 void adf_gen2_cfg_iov_thds(struct adf_accel_dev *accel_dev, bool enable,
 			   int num_a_regs, int num_b_regs)

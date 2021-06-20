@@ -14,9 +14,9 @@
  *          Copyright (c) 2003-2004 Paul Miller <pmiller9@users.sourceforge.net>
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb/input.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/usb/input.h>
 #include <media/rc-core.h>
 
 /*

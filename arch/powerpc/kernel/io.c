@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * I/O string operations
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *    Copyright (C) 2006 IBM Corporation
  *
  * Largely rewritten by Cort Dougan (cort@cs.nmt.edu)
@@ -12,10 +12,10 @@
  *
  * Rewritten in C by Stephen Rothwell.
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
+#include <linaos/export.h>
 
 #include <asm/io.h>
 #include <asm/firmware.h>

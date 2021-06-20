@@ -6,24 +6,24 @@
  */
 
 #include <asm/cacheflush.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/edac.h>
-#include <linux/firmware/intel/stratix10-smc.h>
-#include <linux/genalloc.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/kernel.h>
-#include <linux/mfd/altera-sysmgr.h>
-#include <linux/mfd/syscon.h>
-#include <linux/notifier.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linaos/ctype.h>
+#include <linaos/delay.h>
+#include <linaos/edac.h>
+#include <linaos/firmware/intel/stratix10-smc.h>
+#include <linaos/genalloc.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/altera-sysmgr.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/notifier.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
 
 #include "altera_edac.h"
 #include "edac_module.h"
@@ -1817,7 +1817,7 @@ static int validate_parent_available(struct device_node *np)
 	struct device_node *parent;
 	int ret = 0;
 
-	/* SDRAM must be present for Linux (implied parent) */
+	/* SDRAM must be present for LinaOS (implied parent) */
 	if (of_device_is_compatible(np, "altr,sdram-edac-s10"))
 		return 0;
 

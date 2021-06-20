@@ -6,8 +6,8 @@
 #ifndef _CAN_BITTIMING_H
 #define _CAN_BITTIMING_H
 
-#include <linux/netdevice.h>
-#include <linux/can/netlink.h>
+#include <linaos/netdevice.h>
+#include <linaos/can/netlink.h>
 
 #define CAN_SYNC_SEG 1
 

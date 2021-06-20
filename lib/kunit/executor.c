@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 
 #include <kunit/test.h>
-#include <linux/glob.h>
-#include <linux/moduleparam.h>
+#include <linaos/glob.h>
+#include <linaos/moduleparam.h>
 
 /*
  * These symbols point to the .kunit_test_suites section and are defined in
- * include/asm-generic/vmlinux.lds.h, and consequently must be extern.
+ * include/asm-generic/vmlinaos.lds.h, and consequently must be extern.
  */
 extern struct kunit_suite * const * const __kunit_suites_start[];
 extern struct kunit_suite * const * const __kunit_suites_end[];

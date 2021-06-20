@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * cmt-speech interface definitions
  *
@@ -25,8 +25,8 @@
 #ifndef _CS_PROTOCOL_H
 #define _CS_PROTOCOL_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 
 /* chardev parameters */
 #define CS_DEV_FILE_NAME		"/dev/cmt_speech"

@@ -9,7 +9,7 @@
  *      to skip certain things during boot on simulator
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/entry.h>
 #include <asm/arcregs.h>

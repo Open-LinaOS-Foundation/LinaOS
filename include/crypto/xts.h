@@ -4,7 +4,7 @@
 
 #include <crypto/b128ops.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/fips.h>
+#include <linaos/fips.h>
 
 #define XTS_BLOCK_SIZE 16
 

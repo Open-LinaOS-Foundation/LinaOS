@@ -34,7 +34,7 @@
 #ifndef IB_DM_MAD_H
 #define IB_DM_MAD_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include <rdma/ib_mad.h>
 

@@ -11,8 +11,8 @@
 #if !defined(_TRACE_NULLB_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_NULLB_H
 
-#include <linux/tracepoint.h>
-#include <linux/trace_seq.h>
+#include <linaos/tracepoint.h>
+#include <linaos/trace_seq.h>
 
 #include "null_blk.h"
 

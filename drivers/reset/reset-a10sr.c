@@ -7,12 +7,12 @@
  * Adapted from reset-socfpga.c
  */
 
-#include <linux/err.h>
-#include <linux/mfd/altera-a10sr.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
+#include <linaos/err.h>
+#include <linaos/mfd/altera-a10sr.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset-controller.h>
 
 #include <dt-bindings/reset/altr,rst-mgr-a10sr.h>
 
@@ -122,6 +122,6 @@ static struct platform_driver a10sr_reset_driver = {
 };
 module_platform_driver(a10sr_reset_driver);
 
-MODULE_AUTHOR("Thor Thayer <thor.thayer@linux.intel.com>");
+MODULE_AUTHOR("Thor Thayer <thor.thayer@linaos.intel.com>");
 MODULE_DESCRIPTION("Altera Arria10 System Resource Reset Controller Driver");
 MODULE_LICENSE("GPL v2");

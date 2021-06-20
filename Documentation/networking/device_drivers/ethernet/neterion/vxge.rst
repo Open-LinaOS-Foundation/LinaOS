@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ==============================================================================
-Neterion's (Formerly S2io) X3100 Series 10GbE PCIe Server Adapter Linux driver
+Neterion's (Formerly S2io) X3100 Series 10GbE PCIe Server Adapter LinaOS driver
 ==============================================================================
 
 .. Contents
@@ -14,7 +14,7 @@ Neterion's (Formerly S2io) X3100 Series 10GbE PCIe Server Adapter Linux driver
 1. Introduction
 ===============
 
-This Linux driver supports all Neterion's X3100 series 10 GbE PCIe I/O
+This LinaOS driver supports all Neterion's X3100 series 10 GbE PCIe I/O
 Virtualized Server adapters.
 
 The X3100 series supports four modes of operation, configurable via

@@ -6,9 +6,9 @@
  * Copyright (C) 2003 Benjamin Herrenschmuidt (benh@kernel.crashing.org)
  * Copyright (C) 1997 Paul Mackerras (paulus@samba.org)
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
 
 #include <asm/io.h>
 #include <asm/prom.h>

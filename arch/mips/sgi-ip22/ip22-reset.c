@@ -5,15 +5,15 @@
  *
  * Copyright (C) 1997, 1998, 2001, 03, 05, 06 by Ralf Baechle
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/rtc/ds1286.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/notifier.h>
-#include <linux/pm.h>
-#include <linux/timer.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/rtc/ds1286.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/notifier.h>
+#include <linaos/pm.h>
+#include <linaos/timer.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

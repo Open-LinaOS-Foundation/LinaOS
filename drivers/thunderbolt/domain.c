@@ -3,17 +3,17 @@
  * Thunderbolt bus support
  *
  * Copyright (C) 2017, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/device.h>
-#include <linux/dmar.h>
-#include <linux/idr.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/random.h>
+#include <linaos/device.h>
+#include <linaos/dmar.h>
+#include <linaos/idr.h>
+#include <linaos/iommu.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/random.h>
 #include <crypto/hash.h>
 
 #include "tb.h"

@@ -1,7 +1,7 @@
 /*
  * MTD primitives for XIP support. Architecture specific functions.
  *
- * Do not include this file directly. It's included from linux/mtd/xip.h
+ * Do not include this file directly. It's included from linaos/mtd/xip.h
  *
  * Author: Vladimir Barinov <vbarinov@embeddedalley.com>
  *
@@ -40,7 +40,7 @@ static inline unsigned long xip_omap_mpu_timer_read(int nr)
 
 /*
  * It's permitted to do approximation for xip_elapsed_since macro
- * (see linux/mtd/xip.h)
+ * (see linaos/mtd/xip.h)
  */
 
 #ifdef CONFIG_MACH_OMAP_PERSEUS2

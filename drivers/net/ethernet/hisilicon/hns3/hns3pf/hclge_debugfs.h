@@ -4,7 +4,7 @@
 #ifndef __HCLGE_DEBUGFS_H
 #define __HCLGE_DEBUGFS_H
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include "hclge_cmd.h"
 
 #define HCLGE_DBG_BUF_LEN	   256

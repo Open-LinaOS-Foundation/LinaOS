@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2016, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/iio/adc/qcom-vadc-common.h>
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
+#include <linaos/bitops.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/iio/adc/qcom-vadc-common.h>
+#include <linaos/iio/iio.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/math64.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/log2.h>
 
 #include <dt-bindings/iio/qcom,spmi-vadc.h>
 

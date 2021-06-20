@@ -8,7 +8,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": %s: " fmt, __func__
 
-#include <linux/spi/spi.h>
+#include <linaos/spi/spi.h>
 
 #include <media/dvb_frontend.h>
 #include <media/dvb_math.h>

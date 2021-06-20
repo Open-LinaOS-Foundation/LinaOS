@@ -9,7 +9,7 @@
  * Originally written by Brett Russ.
  * Extensive overhaul and enhancement by Mark Lord <mlord@pobox.com>.
  *
- * Please ALWAYS copy linux-ide@vger.kernel.org on emails.
+ * Please ALWAYS copy linaos-ide@vger.kernel.org on emails.
  */
 
 /*
@@ -20,7 +20,7 @@
  * --> Add sysfs attributes for per-chip / per-HC IRQ coalescing thresholds.
  *
  * --> [Experiment, Marvell value added] Is it possible to use target
- *       mode to cross-connect two Linux boxes with Marvell cards?  If so,
+ *       mode to cross-connect two LinaOS boxes with Marvell cards?  If so,
  *       creating LibATA target mode support would be very interesting.
  *
  *       Target mode, for those without docs, is the ability to directly
@@ -36,29 +36,29 @@
  * work correctly otherwise  (note: this is a pretty rare condition).
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/mbus.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/dmapool.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/device.h>
+#include <linaos/clk.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/ata_platform.h>
+#include <linaos/mbus.h>
+#include <linaos/bitops.h>
+#include <linaos/gfp.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
-#include <linux/libata.h>
+#include <linaos/libata.h>
 
 #define DRV_NAME	"sata_mv"
 #define DRV_VERSION	"1.28"
@@ -2095,7 +2095,7 @@ static enum ata_completion_errors mv_qc_prep(struct ata_queued_cmd *qc)
 	default:
 		/* The only other commands EDMA supports in non-queued and
 		 * non-NCQ mode are: [RW] STREAM DMA and W DMA FUA EXT, none
-		 * of which are defined/used by Linux.  If we get here, this
+		 * of which are defined/used by LinaOS.  If we get here, this
 		 * driver needs work.
 		 */
 		ata_port_err(ap, "%s: unsupported command: %.2x\n", __func__,
@@ -3843,7 +3843,7 @@ static int mv_chip_id(struct ata_host *host, unsigned int board_idx)
 			 *
 			 * Unconfigured drives are treated as "Legacy"
 			 * by the BIOS, and it overwrites sector 8 with
-			 * a "Lgcy" metadata block prior to Linux boot.
+			 * a "Lgcy" metadata block prior to LinaOS boot.
 			 *
 			 * Configured drives (RAID or JBOD) leave sector 8
 			 * alone, but instead overwrite a high numbered

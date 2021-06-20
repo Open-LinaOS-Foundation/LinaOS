@@ -15,13 +15,13 @@
 
 /* Includes */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/idr.h>
-#include <linux/uio.h>
-#include <linux/skbuff.h>
-#include <linux/atmdev.h>
-#include <linux/atm_nicstar.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/idr.h>
+#include <linaos/uio.h>
+#include <linaos/skbuff.h>
+#include <linaos/atmdev.h>
+#include <linaos/atm_nicstar.h>
 
 /* Options */
 

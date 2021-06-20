@@ -4,17 +4,17 @@
  *
  * (c) Copyright 2007-2013 Datera, Inc.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@linaos-iscsi.org>
  *
  ******************************************************************************/
 
 #include <crypto/hash.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/kthread.h>
-#include <linux/sched/signal.h>
-#include <linux/idr.h>
-#include <linux/tcp.h>        /* TCP_NODELAY */
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/kthread.h>
+#include <linaos/sched/signal.h>
+#include <linaos/idr.h>
+#include <linaos/tcp.h>        /* TCP_NODELAY */
 #include <net/ip.h>
 #include <net/ipv6.h>         /* ipv6_addr_v4mapped() */
 #include <scsi/iscsi_proto.h>
@@ -387,7 +387,7 @@ static int iscsi_login_zero_tsih_s2(
 	/*
 	 * Workaround for Initiators that have broken connection recovery logic.
 	 *
-	 * "We would really like to get rid of this." Linux-iSCSI.org team
+	 * "We would really like to get rid of this." LinaOS-iSCSI.org team
 	 */
 	if (iscsi_change_param_sprintf(conn, "ErrorRecoveryLevel=%d", na->default_erl))
 		return -1;

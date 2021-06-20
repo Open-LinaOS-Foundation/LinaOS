@@ -3,10 +3,10 @@
 #define _ASM_POWERPC_MACHDEP_H
 #ifdef __KERNEL__
 
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/export.h>
 
 #include <asm/setup.h>
 

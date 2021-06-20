@@ -67,21 +67,21 @@
 
 		vol-up-key {
 			gpios = <&gpx2 0 GPIO_ACTIVE_LOW>;
-			linux,code = <115>;
+			linaos,code = <115>;
 			label = "volume up";
 			debounce-interval = <1>;
 		};
 
 		vol-down-key {
 			gpios = <&gpx2 1 GPIO_ACTIVE_LOW>;
-			linux,code = <114>;
+			linaos,code = <114>;
 			label = "volume down";
 			debounce-interval = <1>;
 		};
 
 		config-key {
 			gpios = <&gpx2 2 GPIO_ACTIVE_LOW>;
-			linux,code = <171>;
+			linaos,code = <171>;
 			label = "config";
 			debounce-interval = <1>;
 			wakeup-source;
@@ -89,14 +89,14 @@
 
 		camera-key {
 			gpios = <&gpx2 3 GPIO_ACTIVE_LOW>;
-			linux,code = <212>;
+			linaos,code = <212>;
 			label = "camera";
 			debounce-interval = <1>;
 		};
 
 		power-key {
 			gpios = <&gpx2 7 GPIO_ACTIVE_LOW>;
-			linux,code = <116>;
+			linaos,code = <116>;
 			label = "power";
 			debounce-interval = <1>;
 			wakeup-source;
@@ -104,7 +104,7 @@
 
 		ok-key {
 			gpios = <&gpx3 5 GPIO_ACTIVE_LOW>;
-			linux,code = <352>;
+			linaos,code = <352>;
 			label = "ok";
 			debounce-interval = <1>;
 		};

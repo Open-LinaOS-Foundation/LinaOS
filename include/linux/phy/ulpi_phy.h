@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/phy/phy.h>
+#include <linaos/phy/phy.h>
 
 /**
  * Helper that registers PHY for a ULPI device and adds a lookup for binding it

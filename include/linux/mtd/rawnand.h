@@ -13,15 +13,15 @@
 #ifndef __LINUX_MTD_RAWNAND_H
 #define __LINUX_MTD_RAWNAND_H
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/flashchip.h>
-#include <linux/mtd/bbm.h>
-#include <linux/mtd/jedec.h>
-#include <linux/mtd/onfi.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/types.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/nand.h>
+#include <linaos/mtd/flashchip.h>
+#include <linaos/mtd/bbm.h>
+#include <linaos/mtd/jedec.h>
+#include <linaos/mtd/onfi.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/types.h>
 
 struct nand_chip;
 

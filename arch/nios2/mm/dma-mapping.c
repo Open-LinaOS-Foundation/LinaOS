@@ -10,12 +10,12 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/cache.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/cache.h>
 #include <asm/cacheflush.h>
 
 void arch_sync_dma_for_device(phys_addr_t paddr, size_t size,

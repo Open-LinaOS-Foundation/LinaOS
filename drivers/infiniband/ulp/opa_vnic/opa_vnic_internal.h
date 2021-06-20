@@ -51,10 +51,10 @@
  * This file contains OPA VNIC driver internal declarations
  */
 
-#include <linux/bitops.h>
-#include <linux/etherdevice.h>
-#include <linux/hashtable.h>
-#include <linux/sizes.h>
+#include <linaos/bitops.h>
+#include <linaos/etherdevice.h>
+#include <linaos/hashtable.h>
+#include <linaos/sizes.h>
 #include <rdma/opa_vnic.h>
 
 #include "opa_vnic_encap.h"

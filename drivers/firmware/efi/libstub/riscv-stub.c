@@ -3,8 +3,8 @@
  * Copyright (C) 2020 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/efi.h>
-#include <linux/libfdt.h>
+#include <linaos/efi.h>
+#include <linaos/libfdt.h>
 
 #include <asm/efi.h>
 #include <asm/sections.h>

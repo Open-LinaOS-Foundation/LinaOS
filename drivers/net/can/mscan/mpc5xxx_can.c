@@ -8,16 +8,16 @@
  * Copyright (C) 2009 Wolfram Sang, Pengutronix <kernel@pengutronix.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
-#include <linux/can/dev.h>
-#include <linux/of_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/netdevice.h>
+#include <linaos/can/dev.h>
+#include <linaos/of_platform.h>
 #include <sysdev/fsl_soc.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
 #include <asm/mpc52xx.h>
 
 #include "mscan.h"

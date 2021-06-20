@@ -3,7 +3,7 @@
  * Copyright 2017 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>

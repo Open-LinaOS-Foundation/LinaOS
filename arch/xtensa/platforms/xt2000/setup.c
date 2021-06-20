@@ -9,20 +9,20 @@
  *
  * Copyright 2001 - 2004 Tensilica Inc.
  */
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/kdev_t.h>
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/stringify.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/reboot.h>
+#include <linaos/kdev_t.h>
+#include <linaos/types.h>
+#include <linaos/major.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/stringify.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial.h>
+#include <linaos/serial_8250.h>
 
 #include <asm/processor.h>
 #include <asm/platform.h>

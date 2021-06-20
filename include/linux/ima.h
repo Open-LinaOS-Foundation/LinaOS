@@ -7,14 +7,14 @@
 #ifndef _LINUX_IMA_H
 #define _LINUX_IMA_H
 
-#include <linux/kernel_read_file.h>
-#include <linux/fs.h>
-#include <linux/security.h>
-#include <linux/kexec.h>
-struct linux_binprm;
+#include <linaos/kernel_read_file.h>
+#include <linaos/fs.h>
+#include <linaos/security.h>
+#include <linaos/kexec.h>
+struct linaos_binprm;
 
 #ifdef CONFIG_IMA
-extern int ima_bprm_check(struct linux_binprm *bprm);
+extern int ima_bprm_check(struct linaos_binprm *bprm);
 extern int ima_file_check(struct file *file, int mask);
 extern void ima_post_create_tmpfile(struct user_namespace *mnt_userns,
 				    struct inode *inode);
@@ -64,7 +64,7 @@ static inline const char * const *arch_get_ima_policy(void)
 #endif
 
 #else
-static inline int ima_bprm_check(struct linux_binprm *bprm)
+static inline int ima_bprm_check(struct linaos_binprm *bprm)
 {
 	return 0;
 }

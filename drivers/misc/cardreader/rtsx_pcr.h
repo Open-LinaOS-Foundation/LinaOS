@@ -10,7 +10,7 @@
 #ifndef __RTSX_PCR_H
 #define __RTSX_PCR_H
 
-#include <linux/rtsx_pci.h>
+#include <linaos/rtsx_pci.h>
 
 #define MIN_DIV_N_PCR		80
 #define MAX_DIV_N_PCR		208

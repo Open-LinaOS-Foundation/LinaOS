@@ -7,18 +7,18 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/reboot.h>
+#include <linaos/sched.h>
+#include <linaos/uaccess.h>
 
 #include "stackglue.h"
 
-#include <linux/dlm_plock.h>
+#include <linaos/dlm_plock.h>
 
 /*
  * The control protocol starts with a handshake.  Until the handshake

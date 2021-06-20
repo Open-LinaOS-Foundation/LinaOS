@@ -9,7 +9,7 @@
 #ifndef __WL1251_RX_H__
 #define __WL1251_RX_H__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #include "wl1251.h"
 

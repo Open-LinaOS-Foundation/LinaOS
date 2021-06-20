@@ -6,8 +6,8 @@
  * Partly based/Inspired by Stephen Tiedemann's nfcpy
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
 #include <net/nfc/digital.h>
 
 #define VERSION "0.1"

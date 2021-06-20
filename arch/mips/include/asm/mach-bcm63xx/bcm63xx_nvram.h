@@ -2,7 +2,7 @@
 #ifndef BCM63XX_NVRAM_H
 #define BCM63XX_NVRAM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * bcm63xx_nvram_init() - initializes nvram

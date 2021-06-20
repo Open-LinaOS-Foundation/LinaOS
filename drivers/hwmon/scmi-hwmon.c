@@ -6,12 +6,12 @@
  * Sudeep Holla <sudeep.holla@arm.com>
  */
 
-#include <linux/hwmon.h>
-#include <linux/module.h>
-#include <linux/scmi_protocol.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/thermal.h>
+#include <linaos/hwmon.h>
+#include <linaos/module.h>
+#include <linaos/scmi_protocol.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/thermal.h>
 
 static const struct scmi_sensor_proto_ops *sensor_ops;
 

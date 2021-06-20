@@ -3,12 +3,12 @@
 #define __LINUX_PREEMPT_H
 
 /*
- * include/linux/preempt.h - macros for accessing and manipulating
+ * include/linaos/preempt.h - macros for accessing and manipulating
  * preempt_count (used for kernel preemption, interrupt count, etc.)
  */
 
-#include <linux/linkage.h>
-#include <linux/list.h>
+#include <linaos/linkage.h>
+#include <linaos/list.h>
 
 /*
  * We put the hardirq and softirq counter into the preemption

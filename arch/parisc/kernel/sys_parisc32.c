@@ -11,9 +11,9 @@
  * environment. Based heavily on sys_ia32.c and sys_sparc32.c.
  */
 
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
+#include <linaos/compat.h>
+#include <linaos/kernel.h>
+#include <linaos/syscalls.h>
 
 
 asmlinkage long sys32_unimplemented(int r26, int r25, int r24, int r23,

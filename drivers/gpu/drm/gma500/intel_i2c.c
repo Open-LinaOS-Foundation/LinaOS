@@ -6,10 +6,10 @@
  *	Eric Anholt <eric@anholt.net>
  */
 
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/i2c-algo-bit.h>
+#include <linaos/i2c.h>
 
 #include "psb_drv.h"
 #include "psb_intel_reg.h"
@@ -88,7 +88,7 @@ static void set_data(void *data, int state_high)
  * @reg: GPIO reg to use
  * @name: name for this bus
  *
- * Creates and registers a new i2c bus with the Linux i2c layer, for use
+ * Creates and registers a new i2c bus with the LinaOS i2c layer, for use
  * in output probing and control (e.g. DDC or SDVO control functions).
  *
  * Possible values for @reg include:

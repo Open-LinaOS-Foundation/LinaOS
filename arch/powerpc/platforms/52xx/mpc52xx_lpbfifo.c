@@ -8,20 +8,20 @@
  * - Add support for multiple requests to be queued.
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/spinlock.h>
+#include <linaos/module.h>
 #include <asm/io.h>
 #include <asm/prom.h>
 #include <asm/mpc52xx.h>
 #include <asm/time.h>
 
-#include <linux/fsl/bestcomm/bestcomm.h>
-#include <linux/fsl/bestcomm/bestcomm_priv.h>
-#include <linux/fsl/bestcomm/gen_bd.h>
+#include <linaos/fsl/bestcomm/bestcomm.h>
+#include <linaos/fsl/bestcomm/bestcomm_priv.h>
+#include <linaos/fsl/bestcomm/gen_bd.h>
 
 MODULE_AUTHOR("Grant Likely <grant.likely@secretlab.ca>");
 MODULE_DESCRIPTION("MPC5200 LocalPlus FIFO device driver");

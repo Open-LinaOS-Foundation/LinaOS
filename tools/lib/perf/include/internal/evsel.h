@@ -2,8 +2,8 @@
 #ifndef __LIBPERF_INTERNAL_EVSEL_H
 #define __LIBPERF_INTERNAL_EVSEL_H
 
-#include <linux/types.h>
-#include <linux/perf_event.h>
+#include <linaos/types.h>
+#include <linaos/perf_event.h>
 #include <stdbool.h>
 #include <sys/types.h>
 

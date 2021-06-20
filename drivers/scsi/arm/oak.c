@@ -5,10 +5,10 @@
  * Copyright 1995-2002, Russell King
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/blkdev.h>
+#include <linaos/init.h>
 
 #include <asm/ecard.h>
 #include <asm/io.h>

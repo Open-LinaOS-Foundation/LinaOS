@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <strings.h>
-#include <linux/time64.h>
+#include <linaos/time64.h>
 #include "debug.h"
 #include "clockid.h"
 #include "record.h"

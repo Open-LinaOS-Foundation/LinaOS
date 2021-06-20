@@ -5,15 +5,15 @@
  * Copyright (c) 2016, Linaro Limited
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/mtd/map.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/bitops.h>
+#include <linaos/export.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/bitops.h>
 #include "physmap-versatile.h"
 
 static struct regmap *syscon_regmap;

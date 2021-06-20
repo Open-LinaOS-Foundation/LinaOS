@@ -5,9 +5,9 @@
  * Copyright (C) 2019 ARM Ltd.
  */
 
-#include <linux/context_tracking.h>
-#include <linux/ptrace.h>
-#include <linux/thread_info.h>
+#include <linaos/context_tracking.h>
+#include <linaos/ptrace.h>
+#include <linaos/thread_info.h>
 
 #include <asm/cpufeature.h>
 #include <asm/daifflags.h>

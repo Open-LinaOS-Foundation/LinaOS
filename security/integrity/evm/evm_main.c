@@ -11,13 +11,13 @@
  *	evm_inode_removexattr, and evm_verifyxattr
  */
 
-#include <linux/init.h>
-#include <linux/crypto.h>
-#include <linux/audit.h>
-#include <linux/xattr.h>
-#include <linux/integrity.h>
-#include <linux/evm.h>
-#include <linux/magic.h>
+#include <linaos/init.h>
+#include <linaos/crypto.h>
+#include <linaos/audit.h>
+#include <linaos/xattr.h>
+#include <linaos/integrity.h>
+#include <linaos/evm.h>
+#include <linaos/magic.h>
 
 #include <crypto/hash.h>
 #include <crypto/hash_info.h>

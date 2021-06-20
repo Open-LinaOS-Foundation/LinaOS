@@ -14,9 +14,9 @@
  * User space memory access functions
  */
 #ifdef CONFIG_MMU
-#include <linux/errno.h>
-#include <linux/compiler.h>
-#include <linux/thread_info.h>
+#include <linaos/errno.h>
+#include <linaos/compiler.h>
+#include <linaos/thread_info.h>
 #include <asm/byteorder.h>
 #include <asm/extable.h>
 #include <asm/asm.h>

@@ -6,16 +6,16 @@
  * Copyright (c) 2002 Richard Russon
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/bit_spinlock.h>
-#include <linux/bio.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/gfp.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/swap.h>
+#include <linaos/buffer_head.h>
+#include <linaos/writeback.h>
+#include <linaos/bit_spinlock.h>
+#include <linaos/bio.h>
 
 #include "aops.h"
 #include "attrib.h"

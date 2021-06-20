@@ -6,7 +6,7 @@
 #ifndef __ASM_ARC_TLBFLUSH__
 #define __ASM_ARC_TLBFLUSH__
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 void local_flush_tlb_all(void);
 void local_flush_tlb_mm(struct mm_struct *mm);

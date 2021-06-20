@@ -1,7 +1,7 @@
 /*
  * Motorola CPCAP PMIC regulator driver
  *
- * Based on cpcap-regulator.c from Motorola Linux kernel tree
+ * Based on cpcap-regulator.c from Motorola LinaOS kernel tree
  * Copyright (C) 2009-2011 Motorola, Inc.
  *
  * Rewritten for mainline kernel to use device tree and regmap
@@ -17,15 +17,15 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/mfd/motorola-cpcap.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/mfd/motorola-cpcap.h>
 
 /*
  * Resource assignment register bits. These seem to control the state
@@ -81,7 +81,7 @@
 
 /*
  * Off mode configuration bit. Used currently only by SW5 on omap4. There's
- * the following comment in Motorola Linux kernel tree for it:
+ * the following comment in Motorola LinaOS kernel tree for it:
  *
  * When set in the regulator mode, the regulator assignment will be changed
  * to secondary when the regulator is disabled. The mode will be set back to
@@ -327,7 +327,7 @@ static const unsigned int vaudio_val_tbl[] = { 0, 2775000, };
 
 /*
  * SoC specific configuration for omap4. The data below is comes from Motorola
- * Linux kernel tree. It's basically the values of cpcap_regltr_data,
+ * LinaOS kernel tree. It's basically the values of cpcap_regltr_data,
  * cpcap_regulator_mode_values and cpcap_regulator_off_mode_values, see
  * CPCAP_REG macro above.
  *

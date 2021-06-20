@@ -17,15 +17,15 @@
  * Vitaly Bordug <vbordug@ru.mvista.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/mdio-bitbang.h>
-#include <linux/mdio-gpio.h>
-#include <linux/module.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_data/mdio-gpio.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/mdio-bitbang.h>
+#include <linaos/mdio-gpio.h>
+#include <linaos/module.h>
+#include <linaos/of_mdio.h>
+#include <linaos/platform_data/mdio-gpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 struct mdio_gpio_info {
 	struct mdiobb_ctrl ctrl;

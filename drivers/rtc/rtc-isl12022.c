@@ -8,14 +8,14 @@
  * by Alessandro Zummo <a.zummo@towertech.it>.
  */
 
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/i2c.h>
+#include <linaos/bcd.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 /* ISL register offsets */
 #define ISL12022_REG_SC		0x00

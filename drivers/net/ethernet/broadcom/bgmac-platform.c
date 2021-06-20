@@ -13,12 +13,12 @@
 
 #define pr_fmt(fmt)		KBUILD_MODNAME ": " fmt
 
-#include <linux/bcma/bcma.h>
-#include <linux/brcmphy.h>
-#include <linux/etherdevice.h>
-#include <linux/of_address.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
+#include <linaos/bcma/bcma.h>
+#include <linaos/brcmphy.h>
+#include <linaos/etherdevice.h>
+#include <linaos/of_address.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
 #include "bgmac.h"
 
 #define NICPM_PADRING_CFG		0x00000004

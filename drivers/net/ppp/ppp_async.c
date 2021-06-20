@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * PPP async serial channel driver for Linux.
+ * PPP async serial channel driver for LinaOS.
  *
  * Copyright 1999 Paul Mackerras.
  *
@@ -14,23 +14,23 @@
  * subsequently hacked by Paul Mackerras.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/tty.h>
-#include <linux/netdevice.h>
-#include <linux/poll.h>
-#include <linux/crc-ccitt.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/ppp_channel.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/tty.h>
+#include <linaos/netdevice.h>
+#include <linaos/poll.h>
+#include <linaos/crc-ccitt.h>
+#include <linaos/ppp_defs.h>
+#include <linaos/ppp-ioctl.h>
+#include <linaos/ppp_channel.h>
+#include <linaos/spinlock.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
+#include <linaos/slab.h>
 #include <asm/unaligned.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/string.h>
 
 #define PPP_VERSION	"2.4.2"

@@ -33,20 +33,20 @@
 #ifndef _IWPM_UTIL_H
 #define _IWPM_UTIL_H
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/jhash.h>
-#include <linux/kref.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/delay.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
+#include <linaos/jhash.h>
+#include <linaos/kref.h>
 #include <net/netlink.h>
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include <rdma/iw_portmap.h>
 #include <rdma/rdma_netlink.h>
 

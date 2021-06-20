@@ -99,7 +99,7 @@
 
 #include <crypto/drbg.h>
 #include <crypto/internal/cipher.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /***************************************************************
  * Backend cipher definitions available to DRBG

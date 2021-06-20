@@ -12,10 +12,10 @@
 #ifndef __PSP_SEV_H__
 #define __PSP_SEV_H__
 
-#include <uapi/linux/psp-sev.h>
+#include <uapi/linaos/psp-sev.h>
 
 #ifdef CONFIG_X86
-#include <linux/mem_encrypt.h>
+#include <linaos/mem_encrypt.h>
 
 #define __psp_pa(x)	__sme_pa(x)
 #else

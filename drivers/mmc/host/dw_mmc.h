@@ -10,11 +10,11 @@
 #ifndef _DW_MMC_H_
 #define _DW_MMC_H_
 
-#include <linux/scatterlist.h>
-#include <linux/mmc/core.h>
-#include <linux/dmaengine.h>
-#include <linux/reset.h>
-#include <linux/interrupt.h>
+#include <linaos/scatterlist.h>
+#include <linaos/mmc/core.h>
+#include <linaos/dmaengine.h>
+#include <linaos/reset.h>
+#include <linaos/interrupt.h>
 
 enum dw_mci_state {
 	STATE_IDLE = 0,

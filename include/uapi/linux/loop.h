@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-1.0+ WITH LinaOS-syscall-note */
 /*
- * include/linux/loop.h
+ * include/linaos/loop.h
  *
  * Written by Theodore Ts'o, 3/29/93.
  *
@@ -36,7 +36,7 @@ enum {
 				       | LO_FLAGS_PARTSCAN | LO_FLAGS_DIRECT_IO)
 
 #include <asm/posix_types.h>	/* for __kernel_old_dev_t */
-#include <linux/types.h>	/* for __u64 */
+#include <linaos/types.h>	/* for __u64 */
 
 /* Backwards compatibility version */
 struct loop_info {

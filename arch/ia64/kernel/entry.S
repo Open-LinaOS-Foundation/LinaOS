@@ -11,21 +11,21 @@
  * 	Don Dugger <Don.Dugger@intel.com>
  *	Suresh Siddha <suresh.b.siddha@intel.com>
  *	Fenghua Yu <fenghua.yu@intel.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA LinaOS Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@valinaos.com>
  */
 /*
  * ia64_switch_to now places correct virtual mapping in in TR2 for
  * kernel stack. This allows us to handle interrupts without changing
  * to physical mode.
  *
- * Jonathan Nicklin	<nicklin@missioncriticallinux.com>
- * Patrick O'Rourke	<orourke@missioncriticallinux.com>
+ * Jonathan Nicklin	<nicklin@missioncriticallinaos.com>
+ * Patrick O'Rourke	<orourke@missioncriticallinaos.com>
  * 11/07/2000
  */
 /*
- * Copyright (c) 2008 Isaku Yamahata <yamahata at valinux co jp>
- *                    VA Linux Systems Japan K.K.
+ * Copyright (c) 2008 Isaku Yamahata <yamahata at valinaos co jp>
+ *                    VA LinaOS Systems Japan K.K.
  *                    pv_ops.
  */
 /*
@@ -38,7 +38,7 @@
  */
 
 
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm/asmmacro.h>
 #include <asm/cache.h>
 #include <asm/errno.h>

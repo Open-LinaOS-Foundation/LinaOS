@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* include/linux/platform_data/s3c-hsotg.h
+/* include/linaos/platform_data/s3c-hsotg.h
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armlinaos.simtec.co.uk/
  *
  * S3C USB2.0 High-speed / OtG platform information
 */

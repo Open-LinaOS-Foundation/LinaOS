@@ -5,7 +5,7 @@
 /*
  * (C) Copyright 2000-2010, Greg Ungerer <gerg@snapgear.com>
  */
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <asm/mcfsim.h>
 
 #define flush_cache_all()			__flush_cache_all()

@@ -28,7 +28,7 @@ Groups:
     attr->addr contains the pointer to the buffer and attr->attr contains
     the length of the buffer.
     The format of the data structure kvm_s390_irq as it is copied from userspace
-    is defined in usr/include/linux/kvm.h.
+    is defined in usr/include/linaos/kvm.h.
 
   KVM_DEV_FLIC_GET_ALL_IRQS
     Copies all floating interrupts into a buffer provided by userspace.

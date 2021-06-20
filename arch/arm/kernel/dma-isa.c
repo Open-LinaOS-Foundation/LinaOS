@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/dma-isa.c
+ *  linaos/arch/arm/kernel/dma-isa.c
  *
  *  Copyright (C) 1999-2000 Russell King
  *
  *  ISA DMA primitives
  *  Taken from various sources, including:
- *   linux/include/asm/dma.h: Defines for using and allocating dma channels.
+ *   linaos/include/asm/dma.h: Defines for using and allocating dma channels.
  *     Written by Hennus Bergman, 1992.
  *     High DMA channel support & info by Hannu Savolainen and John Boyd,
  *     Nov. 1992.
  *   arch/arm/kernel/dma-ebsa285.c
  *   Copyright (C) 1998 Phil Blundell
  */
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
 
 #include <asm/dma.h>
 #include <asm/mach/dma.h>

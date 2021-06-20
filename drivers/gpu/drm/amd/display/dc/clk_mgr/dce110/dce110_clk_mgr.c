@@ -254,7 +254,7 @@ static void dce11_update_clocks(struct clk_mgr *clk_mgr_base,
 	struct dm_pp_power_level_change_request level_change_req;
 	int patched_disp_clk = context->bw_ctx.bw.dce.dispclk_khz;
 
-	/*TODO: W/A for dal3 linux, investigate why this works */
+	/*TODO: W/A for dal3 linaos, investigate why this works */
 	if (!clk_mgr_dce->dfs_bypass_active)
 		patched_disp_clk = patched_disp_clk * 115 / 100;
 

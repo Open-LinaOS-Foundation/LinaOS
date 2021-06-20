@@ -4,14 +4,14 @@
  * Copyright 2012, Kurt Van Dijck <kurt.van.dijck@eia.be>
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/can/dev.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
+#include <linaos/can/dev.h>
 
-#include <linux/can/led.h>
+#include <linaos/can/led.h>
 
 static unsigned long led_delay = 50;
 module_param(led_delay, ulong, 0644);

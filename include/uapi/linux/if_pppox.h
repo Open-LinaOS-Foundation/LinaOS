@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /***************************************************************************
- * Linux PPP over X - Generic PPP transport layer sockets
- * Linux PPP over Ethernet (PPPoE) Socket Implementation (RFC 2516) 
+ * LinaOS PPP over X - Generic PPP transport layer sockets
+ * LinaOS PPP over Ethernet (PPPoE) Socket Implementation (RFC 2516) 
  *
  * This file supplies definitions required by the PPP over Ethernet driver
  * (pppox.c).  All version information wrt this file is located in pppox.c
@@ -18,15 +18,15 @@
 #define _UAPI__LINUX_IF_PPPOX_H
 
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 
-#include <linux/socket.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_pppol2tp.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linaos/socket.h>
+#include <linaos/if.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_pppol2tp.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
 
 /* For user-space programs to pick up these definitions
  * which they wouldn't get otherwise without defining __KERNEL__

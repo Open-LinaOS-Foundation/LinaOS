@@ -9,8 +9,8 @@
 #define _ARIZONA_PDATA_H
 
 #include <dt-bindings/mfd/arizona.h>
-#include <linux/regulator/arizona-ldo1.h>
-#include <linux/regulator/arizona-micsupp.h>
+#include <linaos/regulator/arizona-ldo1.h>
+#include <linaos/regulator/arizona-micsupp.h>
 
 #define ARIZONA_GPN_DIR_MASK                     0x8000  /* GPN_DIR */
 #define ARIZONA_GPN_DIR_SHIFT                        15  /* GPN_DIR */

@@ -8,8 +8,8 @@
 #ifndef OR51211_H
 #define OR51211_H
 
-#include <linux/dvb/frontend.h>
-#include <linux/firmware.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/firmware.h>
 
 struct or51211_config
 {

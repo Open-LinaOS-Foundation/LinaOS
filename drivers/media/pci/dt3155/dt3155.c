@@ -6,11 +6,11 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <linux/module.h>
-#include <linux/stringify.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/stringify.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/slab.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-common.h>
@@ -598,7 +598,7 @@ static struct pci_driver pci_driver = {
 
 module_pci_driver(pci_driver);
 
-MODULE_DESCRIPTION("video4linux pci-driver for dt3155 frame grabber");
+MODULE_DESCRIPTION("video4linaos pci-driver for dt3155 frame grabber");
 MODULE_AUTHOR("Marin Mitov <mitov@issp.bas.bg>");
 MODULE_VERSION(DT3155_VERSION);
 MODULE_LICENSE("GPL");

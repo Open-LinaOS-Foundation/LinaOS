@@ -6,7 +6,7 @@
  * Copyright (c) 2017-2020, Silicon Laboratories, Inc.
  * Copyright (c) 2010, ST-Ericsson
  */
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 
 #include "hif_tx.h"
 #include "wfx.h"

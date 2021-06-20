@@ -4,23 +4,23 @@
  *
  *  Copyright (c) 2008 Dmitry Eremin-Solenikov
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/gpio/machine.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/partitions.h>
-#include <linux/sm501.h>
-#include <linux/smsc911x.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/platform_device.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/sm501.h>
+#include <linaos/smsc911x.h>
+#include <linaos/platform_data/i2c-pxa.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include "csb726.h"
 #include "pxa27x.h"
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
 #include <mach/audio.h>
 #include <mach/smemc.h>
 

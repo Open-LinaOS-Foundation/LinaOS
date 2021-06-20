@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/arm/mach-footbridge/netwinder-pci.c
+ * linaos/arch/arm/mach-footbridge/netwinder-pci.c
  *
  * PCI bios-type initialisation for PCI machines
  *
  * Bits taken from various places.
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
 
 #include <asm/irq.h>
 #include <asm/mach/pci.h>

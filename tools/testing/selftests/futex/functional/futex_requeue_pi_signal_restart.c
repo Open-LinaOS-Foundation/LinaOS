@@ -9,10 +9,10 @@
  *      kernel. The latter should return EWOULDBLOCK to the waiter.
  *
  * AUTHORS
- *      Darren Hart <dvhart@linux.intel.com>
+ *      Darren Hart <dvhart@linaos.intel.com>
  *
  * HISTORY
- *      2008-May-5: Initial version by Darren Hart <dvhart@linux.intel.com>
+ *      2008-May-5: Initial version by Darren Hart <dvhart@linaos.intel.com>
  *
  *****************************************************************************/
 

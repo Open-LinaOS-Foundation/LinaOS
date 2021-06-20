@@ -8,13 +8,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/serial_reg.h>
-#include <linux/ktime.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/serial_reg.h>
+#include <linaos/ktime.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
 
 #include <media/rc-core.h>
 

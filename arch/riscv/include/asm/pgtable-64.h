@@ -6,7 +6,7 @@
 #ifndef _ASM_RISCV_PGTABLE_64_H
 #define _ASM_RISCV_PGTABLE_64_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 #define PGDIR_SHIFT     30
 /* Size of region mapped by a page global directory */

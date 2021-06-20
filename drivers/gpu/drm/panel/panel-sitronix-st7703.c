@@ -7,14 +7,14 @@
  * Copyright (C) Purism SPC 2019
  */
 
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/media-bus-format.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/media-bus-format.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/regulator/consumer.h>
 
 #include <video/display_timing.h>
 #include <video/mipi_display.h>

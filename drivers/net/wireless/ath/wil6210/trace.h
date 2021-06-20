@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: ISC */
 /*
  * Copyright (c) 2013-2016 Qualcomm Atheros, Inc.
- * Copyright (c) 2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019, The LinaOS Foundation. All rights reserved.
  */
 
 #undef TRACE_SYSTEM
@@ -9,7 +9,7 @@
 #if !defined(WIL6210_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define WIL6210_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "wil6210.h"
 #include "txrx.h"
 

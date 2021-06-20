@@ -30,11 +30,11 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/in.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/ratelimit.h>
+#include <linaos/kernel.h>
+#include <linaos/in.h>
+#include <linaos/device.h>
+#include <linaos/dmapool.h>
+#include <linaos/ratelimit.h>
 
 #include "rds_single_path.h"
 #include "rds.h"

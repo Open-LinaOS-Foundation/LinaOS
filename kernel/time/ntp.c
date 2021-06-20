@@ -6,18 +6,18 @@
  * Please see those files for relevant copyright info and historical
  * changelogs.
  */
-#include <linux/capability.h>
-#include <linux/clocksource.h>
-#include <linux/workqueue.h>
-#include <linux/hrtimer.h>
-#include <linux/jiffies.h>
-#include <linux/math64.h>
-#include <linux/timex.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/audit.h>
+#include <linaos/capability.h>
+#include <linaos/clocksource.h>
+#include <linaos/workqueue.h>
+#include <linaos/hrtimer.h>
+#include <linaos/jiffies.h>
+#include <linaos/math64.h>
+#include <linaos/timex.h>
+#include <linaos/time.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/rtc.h>
+#include <linaos/audit.h>
 
 #include "ntp_internal.h"
 #include "timekeeping_internal.h"
@@ -612,7 +612,7 @@ static inline int update_rtc(struct timespec64 *to_set, unsigned long *offset_ns
 #endif
 
 /*
- * If we have an externally synchronized Linux clock, then update RTC clock
+ * If we have an externally synchronized LinaOS clock, then update RTC clock
  * accordingly every ~11 minutes. Generally RTCs can only store second
  * precision, but many RTCs will adjust the phase of their second tick to
  * match the moment of update. This infrastructure arranges to call to the RTC

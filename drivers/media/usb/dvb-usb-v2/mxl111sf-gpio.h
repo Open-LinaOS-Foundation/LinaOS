@@ -2,7 +2,7 @@
 /*
  *  mxl111sf-gpio.h - driver for the MaxLinear MXL111SF
  *
- *  Copyright (C) 2010-2014 Michael Krufky <mkrufky@linuxtv.org>
+ *  Copyright (C) 2010-2014 Michael Krufky <mkrufky@linaostv.org>
  */
 
 #ifndef _DVB_USB_MXL111SF_GPIO_H_

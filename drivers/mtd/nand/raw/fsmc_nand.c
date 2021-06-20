@@ -13,26 +13,26 @@
  *  Copyright © 2009 Alessandro Rubini
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/resource.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/mtd/partitions.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/amba/bus.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-direction.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/resource.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/nand-ecc-sw-hamming.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/amba/bus.h>
 #include <mtd/mtd-abi.h>
 
 /* fsmc controller registers for NOR flash */

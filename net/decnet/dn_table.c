@@ -13,21 +13,21 @@
  * Changes:
  *
  */
-#include <linux/string.h>
-#include <linux/net.h>
-#include <linux/socket.h>
-#include <linux/slab.h>
-#include <linux/sockios.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/proc_fs.h>
-#include <linux/netdevice.h>
-#include <linux/timer.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
-#include <linux/route.h> /* RTF_xxx */
+#include <linaos/string.h>
+#include <linaos/net.h>
+#include <linaos/socket.h>
+#include <linaos/slab.h>
+#include <linaos/sockios.h>
+#include <linaos/init.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/proc_fs.h>
+#include <linaos/netdevice.h>
+#include <linaos/timer.h>
+#include <linaos/spinlock.h>
+#include <linaos/atomic.h>
+#include <linaos/uaccess.h>
+#include <linaos/route.h> /* RTF_xxx */
 #include <net/neighbour.h>
 #include <net/netlink.h>
 #include <net/tcp.h>

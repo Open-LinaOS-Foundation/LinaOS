@@ -28,12 +28,12 @@
  * http://www.maxim-ic.com/datasheet/index.mvp/id/5943
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
 
 /* Register Address define */
 #define GENERNAL_STATUS_REG		0x00

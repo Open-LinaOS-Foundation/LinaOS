@@ -10,9 +10,9 @@
 #include <crypto/engine.h>
 #include <crypto/rng.h>
 #include <crypto/skcipher.h>
-#include <linux/atomic.h>
-#include <linux/debugfs.h>
-#include <linux/crypto.h>
+#include <linaos/atomic.h>
+#include <linaos/debugfs.h>
+#include <linaos/crypto.h>
 #include <crypto/internal/hash.h>
 #include <crypto/md5.h>
 #include <crypto/sha1.h>

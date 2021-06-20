@@ -3,7 +3,7 @@
 
 /*
  * Some functions in this program are taken from
- * Linux kernel samples/bpf/xdpsock* and modified
+ * LinaOS kernel samples/bpf/xdpsock* and modified
  * for use.
  *
  * See test_xsk.sh for detailed information on test topology
@@ -71,10 +71,10 @@
 #include <getopt.h>
 #include <asm/barrier.h>
 typedef __u16 __sum16;
-#include <linux/if_link.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
+#include <linaos/if_link.h>
+#include <linaos/if_ether.h>
+#include <linaos/ip.h>
+#include <linaos/udp.h>
 #include <arpa/inet.h>
 #include <net/if.h>
 #include <locale.h>
@@ -145,7 +145,7 @@ static void *memset32_htonl(void *dest, u32 val, u32 size)
 /*
  * Fold a partial checksum
  * This function code has been taken from
- * Linux kernel include/asm-generic/checksum.h
+ * LinaOS kernel include/asm-generic/checksum.h
  */
 static __u16 csum_fold(__u32 csum)
 {
@@ -158,7 +158,7 @@ static __u16 csum_fold(__u32 csum)
 
 /*
  * This function code has been taken from
- * Linux kernel lib/checksum.c
+ * LinaOS kernel lib/checksum.c
  */
 static u32 from64to32(u64 x)
 {
@@ -171,7 +171,7 @@ static u32 from64to32(u64 x)
 
 /*
  * This function code has been taken from
- * Linux kernel lib/checksum.c
+ * LinaOS kernel lib/checksum.c
  */
 static __u32 csum_tcpudp_nofold(__be32 saddr, __be32 daddr, __u32 len, __u8 proto, __u32 sum)
 {
@@ -189,7 +189,7 @@ static __u32 csum_tcpudp_nofold(__be32 saddr, __be32 daddr, __u32 len, __u8 prot
 
 /*
  * This function has been taken from
- * Linux kernel include/asm-generic/checksum.h
+ * LinaOS kernel include/asm-generic/checksum.h
  */
 static __u16 csum_tcpudp_magic(__be32 saddr, __be32 daddr, __u32 len, __u8 proto, __u32 sum)
 {

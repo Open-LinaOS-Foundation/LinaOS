@@ -9,14 +9,14 @@
  * as portionhelp of the ieee80211 subsystem header files.
  *
  * Contact Information:
- *  Intel Linux Wireless <linuxwifi@intel.com>
+ *  Intel LinaOS Wireless <linaoswifi@intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <linaos/etherdevice.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
 #include <net/mac80211.h>
 #include <asm/unaligned.h>
 

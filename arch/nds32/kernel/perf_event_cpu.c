@@ -6,19 +6,19 @@
  * 2010 (c) MontaVista Software, LLC.
  */
 
-#include <linux/perf_event.h>
-#include <linux/bitmap.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/pm_runtime.h>
-#include <linux/ftrace.h>
-#include <linux/uaccess.h>
-#include <linux/sched/clock.h>
-#include <linux/percpu-defs.h>
+#include <linaos/perf_event.h>
+#include <linaos/bitmap.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/ftrace.h>
+#include <linaos/uaccess.h>
+#include <linaos/sched/clock.h>
+#include <linaos/percpu-defs.h>
 
 #include <asm/pmu.h>
 #include <asm/irq_regs.h>

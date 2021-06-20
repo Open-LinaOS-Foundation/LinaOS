@@ -3,15 +3,15 @@
  * Copyright (C) 2010 NXP Semiconductors
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
 
 /*
  * Clock and Power control register offsets

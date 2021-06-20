@@ -10,7 +10,7 @@
  * Copyright (c) Russ Anderson <rja@sgi.com>
  */
 
-#include <linux/rtc.h>
+#include <linaos/rtc.h>
 
 /*
  * Values for the BIOS calls.  It is passed as the first * argument in the
@@ -110,7 +110,7 @@ struct uv_arch_type_entry {
 
 /*
  * The UV system table describes specific firmware
- * capabilities available to the Linux kernel at runtime.
+ * capabilities available to the LinaOS kernel at runtime.
  */
 struct uv_systab {
 	char signature[4];	/* must be UV_SYSTAB_SIG */

@@ -8,16 +8,16 @@
  * Wolfgang Scherr <scherr@net4you.net>
  *
  * Changes by Ronald Bultje <rbultje@ronald.bitfreak.net>
- *    - moved over to linux>=2.4.x i2c protocol (1/1/2003)
+ *    - moved over to linaos>=2.4.x i2c protocol (1/1/2003)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/ioctl.h>
-#include <linux/uaccess.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/ioctl.h>
+#include <linaos/uaccess.h>
+#include <linaos/i2c.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-device.h>
 
 MODULE_DESCRIPTION("Philips SAA7185 video encoder driver");

@@ -7,7 +7,7 @@
  * Based on: net/wireless/nl80211.c
  */
 
-#include <linux/rtnetlink.h>
+#include <linaos/rtnetlink.h>
 
 #include <net/cfg802154.h>
 #include <net/genetlink.h>

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de> */
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include "nfsd.h"
 #include "auth.h"
 

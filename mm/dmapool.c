@@ -4,7 +4,7 @@
  *
  * Copyright 2001 David Brownell
  * Copyright 2007 Intel Corporation
- *   Author: Matthew Wilcox <willy@linux.intel.com>
+ *   Author: Matthew Wilcox <willy@linaos.intel.com>
  *
  * This allocator returns small blocks of a given size which are DMA-able by
  * the given device.  It uses the dma_alloc_coherent page allocator to get
@@ -19,22 +19,22 @@
  * keep a count of how many are currently allocated from each page.
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/poison.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/export.h>
+#include <linaos/mutex.h>
+#include <linaos/poison.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
 
 #if defined(CONFIG_DEBUG_SLAB) || defined(CONFIG_SLUB_DEBUG_ON)
 #define DMAPOOL_DEBUG 1

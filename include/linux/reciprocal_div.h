@@ -2,7 +2,7 @@
 #ifndef _LINUX_RECIPROCAL_DIV_H
 #define _LINUX_RECIPROCAL_DIV_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * This algorithm is based on the paper "Division by Invariant

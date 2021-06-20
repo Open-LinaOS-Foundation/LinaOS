@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright 2006 Ben Dooks <ben-linux@fluff.org>
+ * Copyright 2006 Ben Dooks <ben-linaos@fluff.org>
  *
  * Copyright (c) 2005 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * iPAQ H1940 series definitions
@@ -23,7 +23,7 @@ extern int h1940_led_blink_set(struct gpio_desc *desc, int state,
 			       unsigned long *delay_on,
 			       unsigned long *delay_off);
 
-#include <linux/gpio.h>
+#include <linaos/gpio.h>
 
 #define H1940_LATCH_GPIO(x)		(S3C_GPIO_END + (x))
 

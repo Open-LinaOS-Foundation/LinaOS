@@ -4,21 +4,21 @@
  *  		  used in older SNI RM machines
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/irq.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
 
 #define SNI_82596_DRIVER_VERSION "SNI RM 82596 driver - Revision: 0.01"
 

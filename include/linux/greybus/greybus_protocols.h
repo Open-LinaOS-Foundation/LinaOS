@@ -7,7 +7,7 @@
 #ifndef __GREYBUS_PROTOCOLS_H
 #define __GREYBUS_PROTOCOLS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Fixed IDs for control/svc protocols */
 
@@ -831,7 +831,7 @@ struct gb_pwm_disable_request {
 
 /* SPI */
 
-/* Should match up with modes in linux/spi/spi.h */
+/* Should match up with modes in linaos/spi/spi.h */
 #define GB_SPI_MODE_CPHA		0x01		/* clock phase */
 #define GB_SPI_MODE_CPOL		0x02		/* clock polarity */
 #define GB_SPI_MODE_MODE_0		(0 | 0)		/* (original MicroWire) */
@@ -845,7 +845,7 @@ struct gb_pwm_disable_request {
 #define GB_SPI_MODE_NO_CS		0x40		/* 1 dev/bus, no chipselect */
 #define GB_SPI_MODE_READY		0x80		/* slave pulls low to pause */
 
-/* Should match up with flags in linux/spi/spi.h */
+/* Should match up with flags in linaos/spi/spi.h */
 #define GB_SPI_FLAG_HALF_DUPLEX		BIT(0)		/* can't do full duplex */
 #define GB_SPI_FLAG_NO_RX		BIT(1)		/* can't do buffer read */
 #define GB_SPI_FLAG_NO_TX		BIT(2)		/* can't do buffer write */
@@ -1823,7 +1823,7 @@ struct gb_lights_get_flash_fault_response {
 #define AUDIO_ENUM_NAME_MAX			64
 #define AUDIO_WIDGET_NAME_MAX			32
 
-/* See SNDRV_PCM_FMTBIT_* in Linux source */
+/* See SNDRV_PCM_FMTBIT_* in LinaOS source */
 #define GB_AUDIO_PCM_FMT_S8			BIT(0)
 #define GB_AUDIO_PCM_FMT_U8			BIT(1)
 #define GB_AUDIO_PCM_FMT_S16_LE			BIT(2)
@@ -1839,7 +1839,7 @@ struct gb_lights_get_flash_fault_response {
 #define GB_AUDIO_PCM_FMT_U32_LE			BIT(12)
 #define GB_AUDIO_PCM_FMT_U32_BE			BIT(13)
 
-/* See SNDRV_PCM_RATE_* in Linux source */
+/* See SNDRV_PCM_RATE_* in LinaOS source */
 #define GB_AUDIO_PCM_RATE_5512			BIT(0)
 #define GB_AUDIO_PCM_RATE_8000			BIT(1)
 #define GB_AUDIO_PCM_RATE_11025			BIT(2)
@@ -1860,13 +1860,13 @@ struct gb_lights_get_flash_fault_response {
 #define GB_AUDIO_CTL_ELEM_ACCESS_READ		BIT(0)
 #define GB_AUDIO_CTL_ELEM_ACCESS_WRITE		BIT(1)
 
-/* See SNDRV_CTL_ELEM_TYPE_* in Linux source */
+/* See SNDRV_CTL_ELEM_TYPE_* in LinaOS source */
 #define GB_AUDIO_CTL_ELEM_TYPE_BOOLEAN		0x01
 #define GB_AUDIO_CTL_ELEM_TYPE_INTEGER		0x02
 #define GB_AUDIO_CTL_ELEM_TYPE_ENUMERATED	0x03
 #define GB_AUDIO_CTL_ELEM_TYPE_INTEGER64	0x06
 
-/* See SNDRV_CTL_ELEM_IFACE_* in Linux source */
+/* See SNDRV_CTL_ELEM_IFACE_* in LinaOS source */
 #define GB_AUDIO_CTL_ELEM_IFACE_CARD		0x00
 #define GB_AUDIO_CTL_ELEM_IFACE_HWDEP		0x01
 #define GB_AUDIO_CTL_ELEM_IFACE_MIXER		0x02
@@ -1875,7 +1875,7 @@ struct gb_lights_get_flash_fault_response {
 #define GB_AUDIO_CTL_ELEM_IFACE_TIMER		0x05
 #define GB_AUDIO_CTL_ELEM_IFACE_SEQUENCER	0x06
 
-/* SNDRV_CTL_ELEM_ACCESS_* in Linux source */
+/* SNDRV_CTL_ELEM_ACCESS_* in LinaOS source */
 #define GB_AUDIO_ACCESS_READ			BIT(0)
 #define GB_AUDIO_ACCESS_WRITE			BIT(1)
 #define GB_AUDIO_ACCESS_VOLATILE		BIT(2)
@@ -1996,7 +1996,7 @@ struct gb_audio_enumerated {
 	__u8	names[];
 } __packed;
 
-struct gb_audio_ctl_elem_info { /* See snd_ctl_elem_info in Linux source */
+struct gb_audio_ctl_elem_info { /* See snd_ctl_elem_info in LinaOS source */
 	__u8		type;		/* GB_AUDIO_CTL_ELEM_TYPE_* */
 	__le16		dimen[4];
 	union {
@@ -2006,7 +2006,7 @@ struct gb_audio_ctl_elem_info { /* See snd_ctl_elem_info in Linux source */
 	} value;
 } __packed;
 
-struct gb_audio_ctl_elem_value { /* See snd_ctl_elem_value in Linux source */
+struct gb_audio_ctl_elem_value { /* See snd_ctl_elem_value in LinaOS source */
 	__le64				timestamp; /* XXX needed? */
 	union {
 		__le32	integer_value[2];	/* consider CTL_DOUBLE_xxx */

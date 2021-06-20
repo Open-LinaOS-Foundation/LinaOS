@@ -4,25 +4,25 @@
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
  
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/skbuff.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/init.h>
-#include <linux/atm_eni.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/pci.h>
+#include <linaos/errno.h>
+#include <linaos/atm.h>
+#include <linaos/atmdev.h>
+#include <linaos/sonet.h>
+#include <linaos/skbuff.h>
+#include <linaos/time.h>
+#include <linaos/delay.h>
+#include <linaos/uio.h>
+#include <linaos/init.h>
+#include <linaos/atm_eni.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
 #include <asm/io.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
+#include <linaos/atomic.h>
+#include <linaos/uaccess.h>
 #include <asm/string.h>
 #include <asm/byteorder.h>
 

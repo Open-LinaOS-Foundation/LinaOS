@@ -38,7 +38,7 @@
 		/* This button is unpopulated out of the factory. */
 		button-recovery {
 			label = "Recovery";
-			linux,code = <KEY_VENDOR>;
+			linaos,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <10000>;
 		};
 	};
@@ -58,7 +58,7 @@
 		led-0 {
 			color = <LED_COLOR_ID_BLUE>;
 			gpios = <&gpio3 RK_PA5 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

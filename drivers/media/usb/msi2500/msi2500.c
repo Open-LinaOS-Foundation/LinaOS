@@ -11,17 +11,17 @@
  *  (C) 2011 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <asm/div64.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-event.h>
-#include <linux/usb.h>
+#include <linaos/usb.h>
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-vmalloc.h>
-#include <linux/spi/spi.h>
+#include <linaos/spi/spi.h>
 
 static bool msi2500_emulated_fmt;
 module_param_named(emulated_formats, msi2500_emulated_fmt, bool, 0644);

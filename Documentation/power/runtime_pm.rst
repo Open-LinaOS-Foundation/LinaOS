@@ -19,14 +19,14 @@ at the power management core (PM core) level by means of:
   used for queuing all work items related to runtime PM, because this allows
   them to be synchronized with system-wide power transitions (suspend to RAM,
   hibernation and resume from system sleep states).  pm_wq is declared in
-  include/linux/pm_runtime.h and defined in kernel/power/main.c.
+  include/linaos/pm_runtime.h and defined in kernel/power/main.c.
 
 * A number of runtime PM fields in the 'power' member of 'struct device' (which
-  is of the type 'struct dev_pm_info', defined in include/linux/pm.h) that can
+  is of the type 'struct dev_pm_info', defined in include/linaos/pm.h) that can
   be used for synchronizing runtime PM operations with one another.
 
 * Three device runtime PM callbacks in 'struct dev_pm_ops' (defined in
-  include/linux/pm.h).
+  include/linaos/pm.h).
 
 * A set of helper functions defined in drivers/base/power/runtime.c that can be
   used for carrying out runtime PM operations in such a way that the
@@ -206,7 +206,7 @@ rules:
 ===========================
 
 The following device runtime PM fields are present in 'struct dev_pm_info', as
-defined in include/linux/pm.h:
+defined in include/linaos/pm.h:
 
   `struct timer_list suspend_timer;`
     - timer used for scheduling (delayed) suspend and autosuspend requests
@@ -303,7 +303,7 @@ All of the above fields are members of the 'power' member of 'struct device'.
 =====================================
 
 The following runtime PM helper functions are defined in
-drivers/base/power/runtime.c and include/linux/pm_runtime.h:
+drivers/base/power/runtime.c and include/linaos/pm_runtime.h:
 
   `void pm_runtime_init(struct device *dev);`
     - initialize the device runtime PM fields in 'struct dev_pm_info'
@@ -797,7 +797,7 @@ subsystem-level dev_pm_ops structure.
 Device drivers that wish to use the same function as a system suspend, freeze,
 poweroff and runtime suspend callback, and similarly for system resume, thaw,
 restore, and runtime resume, can achieve this with the help of the
-UNIVERSAL_DEV_PM_OPS macro defined in include/linux/pm.h (possibly setting its
+UNIVERSAL_DEV_PM_OPS macro defined in include/linaos/pm.h (possibly setting its
 last argument to NULL).
 
 8. "No-Callback" Devices

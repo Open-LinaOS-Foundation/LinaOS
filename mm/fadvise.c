@@ -8,17 +8,17 @@
  *		Initial version.
  */
 
-#include <linux/kernel.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/backing-dev.h>
-#include <linux/pagevec.h>
-#include <linux/fadvise.h>
-#include <linux/writeback.h>
-#include <linux/syscalls.h>
-#include <linux/swap.h>
+#include <linaos/kernel.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/backing-dev.h>
+#include <linaos/pagevec.h>
+#include <linaos/fadvise.h>
+#include <linaos/writeback.h>
+#include <linaos/syscalls.h>
+#include <linaos/swap.h>
 
 #include <asm/unistd.h>
 

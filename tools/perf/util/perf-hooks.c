@@ -10,8 +10,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <setjmp.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
 #include "util/debug.h"
 #include "util/perf-hooks.h"
 

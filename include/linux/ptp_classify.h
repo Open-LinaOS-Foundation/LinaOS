@@ -10,8 +10,8 @@
 #ifndef _PTP_CLASSIFY_H_
 #define _PTP_CLASSIFY_H_
 
-#include <linux/ip.h>
-#include <linux/skbuff.h>
+#include <linaos/ip.h>
+#include <linaos/skbuff.h>
 
 #define PTP_CLASS_NONE  0x00 /* not a PTP event message */
 #define PTP_CLASS_V1    0x01 /* protocol version 1 */

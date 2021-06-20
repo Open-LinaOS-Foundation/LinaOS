@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-integrator/core.c
+ *  linaos/arch/arm/mach-integrator/core.c
  *
  *  Copyright (C) 2000-2003 Deep Blue Solutions Ltd
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/memblock.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/serial.h>
-#include <linux/io.h>
-#include <linux/stat.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pgtable.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/memblock.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
+#include <linaos/amba/bus.h>
+#include <linaos/amba/serial.h>
+#include <linaos/io.h>
+#include <linaos/stat.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/pgtable.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/time.h>

@@ -3,15 +3,15 @@
 #define _LINUX_POLL_H
 
 
-#include <linux/compiler.h>
-#include <linux/ktime.h>
-#include <linux/wait.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/sysctl.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/poll.h>
-#include <uapi/linux/eventpoll.h>
+#include <linaos/compiler.h>
+#include <linaos/ktime.h>
+#include <linaos/wait.h>
+#include <linaos/string.h>
+#include <linaos/fs.h>
+#include <linaos/sysctl.h>
+#include <linaos/uaccess.h>
+#include <uapi/linaos/poll.h>
+#include <uapi/linaos/eventpoll.h>
 
 extern struct ctl_table epoll_table[]; /* for sysctl */
 /* ~832 bytes of stack space used max in sys_select/sys_poll before allocating

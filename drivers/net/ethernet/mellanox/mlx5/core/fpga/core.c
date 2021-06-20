@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/mlx5/driver.h>
+#include <linaos/module.h>
+#include <linaos/etherdevice.h>
+#include <linaos/mlx5/driver.h>
 
 #include "mlx5_core.h"
 #include "lib/mlx5.h"

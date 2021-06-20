@@ -98,16 +98,16 @@
 			/* The rear button */
 			label = "Rear Button";
 			gpios = <&cp0_gpio2 7 GPIO_ACTIVE_LOW>;
-			linux,can-disable;
-			linux,code = <BTN_0>;
+			linaos,can-disable;
+			linaos,code = <BTN_0>;
 		};
 
 		button_1 {
 			/* The wps button */
 			label = "WPS Button";
 			gpios = <&cp1_gpio1 30 GPIO_ACTIVE_LOW>;
-			linux,can-disable;
-			linux,code = <KEY_WPS_BUTTON>;
+			linaos,can-disable;
+			linaos,code = <KEY_WPS_BUTTON>;
 		};
 	};
 };

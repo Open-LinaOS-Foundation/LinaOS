@@ -4,16 +4,16 @@
  *
  * Copyright (C) 1997, 1998, 1999, 2000, 2009 Ingo Molnar, Hajnalka Szabo
  *	Moved from arch/x86/kernel/apic/io_apic.c.
- * Jiang Liu <jiang.liu@linux.intel.com>
+ * Jiang Liu <jiang.liu@linaos.intel.com>
  *	Convert to hierarchical irqdomain
  */
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/dmar.h>
-#include <linux/hpet.h>
-#include <linux/msi.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/pci.h>
+#include <linaos/dmar.h>
+#include <linaos/hpet.h>
+#include <linaos/msi.h>
 #include <asm/irqdomain.h>
 #include <asm/hpet.h>
 #include <asm/hw_irq.h>

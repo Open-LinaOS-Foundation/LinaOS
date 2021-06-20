@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause)
 /* Copyright 2019 NXP */
-#include <linux/fsl/enetc_mdio.h>
-#include <linux/of_mdio.h>
+#include <linaos/fsl/enetc_mdio.h>
+#include <linaos/of_mdio.h>
 #include "enetc_pf.h"
 
 #define ENETC_MDIO_DEV_ID	0xee01

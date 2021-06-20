@@ -41,12 +41,12 @@
 	};
 
 	extcon_usb: extcon_iddig {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "linaos,extcon-usb-gpio";
 		id-gpio = <&pio 12 GPIO_ACTIVE_HIGH>;
 	};
 
 	extcon_usb1: extcon_iddig1 {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "linaos,extcon-usb-gpio";
 		id-gpio = <&pio 14 GPIO_ACTIVE_HIGH>;
 	};
 

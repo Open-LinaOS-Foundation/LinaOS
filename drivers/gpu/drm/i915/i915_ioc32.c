@@ -26,7 +26,7 @@
  *
  * Author: Alan Hourihane <alanh@fairlite.demon.co.uk>
  */
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 #include <drm/drm_ioctl.h>
 

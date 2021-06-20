@@ -4,7 +4,7 @@
  * Author:Mark Yao <mark.yao@rock-chips.com>
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include <drm/drm.h>
 #include <drm/drm_atomic.h>

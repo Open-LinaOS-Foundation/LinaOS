@@ -6,13 +6,13 @@
  * Copyright (C) 2015 Huawei Inc.
  */
 
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <bpf/libbpf.h>
 #include <bpf/bpf.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/zalloc.h>
 #include <errno.h>
 #include <stdlib.h>
 #include "debug.h"

@@ -5,15 +5,15 @@
  */
 
 #include <api/fs/fs.h>
-#include <linux/bits.h>
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/coresight-pmu.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/zalloc.h>
+#include <linaos/bits.h>
+#include <linaos/bitops.h>
+#include <linaos/compiler.h>
+#include <linaos/coresight-pmu.h>
+#include <linaos/kernel.h>
+#include <linaos/log2.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/zalloc.h>
 
 #include "cs-etm.h"
 #include "../../util/debug.h"

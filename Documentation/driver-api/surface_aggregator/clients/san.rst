@@ -38,7 +38,7 @@ Consult the API documentation below for more details.
 API Documentation
 =================
 
-.. kernel-doc:: include/linux/surface_acpi_notify.h
+.. kernel-doc:: include/linaos/surface_acpi_notify.h
 
 .. kernel-doc:: drivers/platform/surface/surface_acpi_notify.c
     :export:

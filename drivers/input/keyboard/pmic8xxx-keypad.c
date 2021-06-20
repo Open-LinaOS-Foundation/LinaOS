@@ -2,18 +2,18 @@
 /* Copyright (c) 2009-2011, Code Aurora Forum. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/input/matrix_keypad.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/regmap.h>
+#include <linaos/of.h>
+#include <linaos/input/matrix_keypad.h>
 
 #define PM8XXX_MAX_ROWS		18
 #define PM8XXX_MAX_COLS		8
@@ -517,11 +517,11 @@ static int pmic8xxx_kp_probe(struct platform_device *pdev)
 		return -EINVAL;
 	}
 
-	repeat = !of_property_read_bool(np, "linux,input-no-autorepeat");
+	repeat = !of_property_read_bool(np, "linaos,input-no-autorepeat");
 
 	wakeup = of_property_read_bool(np, "wakeup-source") ||
 		 /* legacy name */
-		 of_property_read_bool(np, "linux,keypad-wakeup");
+		 of_property_read_bool(np, "linaos,keypad-wakeup");
 
 	kp = devm_kzalloc(&pdev->dev, sizeof(*kp), GFP_KERNEL);
 	if (!kp)

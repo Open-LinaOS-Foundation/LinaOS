@@ -14,7 +14,7 @@ config AFFS_FS
 
 	  With this driver you can also mount disk files used by Bernd
 	  Schmidt's Un*X Amiga Emulator
-	  (<http://www.freiburg.linux.de/~uae/>).
+	  (<http://www.freiburg.linaos.de/~uae/>).
 	  If you want to do this, you will also need to say Y or M to "Loop
 	  device support", above.
 

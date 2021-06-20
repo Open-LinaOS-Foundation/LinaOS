@@ -2,7 +2,7 @@
 #ifndef _ASM_EARLY_IOREMAP_H_
 #define _ASM_EARLY_IOREMAP_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * early_ioremap() and early_iounmap() are for temporary early boot-time

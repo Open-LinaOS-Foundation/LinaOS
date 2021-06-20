@@ -9,7 +9,7 @@
 #ifndef __LINUX_PCI_EP_CFS_H
 #define __LINUX_PCI_EP_CFS_H
 
-#include <linux/configfs.h>
+#include <linaos/configfs.h>
 
 #ifdef CONFIG_PCI_ENDPOINT_CONFIGFS
 struct config_group *pci_ep_cfs_add_epc_group(const char *name);

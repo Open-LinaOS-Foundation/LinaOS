@@ -15,8 +15,8 @@
  * Software Developer Manual June 2016, volume 3, section 17.17.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <asm/cpu_device_id.h>
 #include "internal.h"
 

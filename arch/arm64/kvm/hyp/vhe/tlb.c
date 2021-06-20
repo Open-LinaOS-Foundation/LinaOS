@@ -4,7 +4,7 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/irqflags.h>
+#include <linaos/irqflags.h>
 
 #include <asm/kvm_hyp.h>
 #include <asm/kvm_mmu.h>

@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-sa1100/ssp.c
+ *  linaos/arch/arm/mach-sa1100/ssp.c
  *
  *  Copyright (C) 2003 Russell King.
  *
  *  Generic SSP driver.  This provides the generic core for simple
  *  IO-based SSP applications.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 
 #include <mach/hardware.h>
 #include <mach/irqs.h>

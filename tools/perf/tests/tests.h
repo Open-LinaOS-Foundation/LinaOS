@@ -41,7 +41,7 @@ struct test {
 };
 
 /* Tests */
-int test__vmlinux_matches_kallsyms(struct test *test, int subtest);
+int test__vmlinaos_matches_kallsyms(struct test *test, int subtest);
 int test__openat_syscall_event(struct test *test, int subtest);
 int test__openat_syscall_event_on_all_cpus(struct test *test, int subtest);
 int test__basic_mmap(struct test *test, int subtest);

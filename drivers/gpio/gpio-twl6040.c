@@ -9,16 +9,16 @@
  *	Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/irq.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kthread.h>
+#include <linaos/irq.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/platform_device.h>
+#include <linaos/bitops.h>
+#include <linaos/of.h>
 
-#include <linux/mfd/twl6040.h>
+#include <linaos/mfd/twl6040.h>
 
 static int twl6040gpo_get(struct gpio_chip *chip, unsigned offset)
 {

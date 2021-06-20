@@ -6,20 +6,20 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/cache.h>
-#include <linux/compat.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/freezer.h>
-#include <linux/stddef.h>
-#include <linux/uaccess.h>
-#include <linux/sizes.h>
-#include <linux/string.h>
-#include <linux/tracehook.h>
-#include <linux/ratelimit.h>
-#include <linux/syscalls.h>
+#include <linaos/cache.h>
+#include <linaos/compat.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/personality.h>
+#include <linaos/freezer.h>
+#include <linaos/stddef.h>
+#include <linaos/uaccess.h>
+#include <linaos/sizes.h>
+#include <linaos/string.h>
+#include <linaos/tracehook.h>
+#include <linaos/ratelimit.h>
+#include <linaos/syscalls.h>
 
 #include <asm/daifflags.h>
 #include <asm/debug-monitors.h>

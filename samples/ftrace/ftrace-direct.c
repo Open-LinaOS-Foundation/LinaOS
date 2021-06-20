@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/sched.h> /* for wake_up_process() */
-#include <linux/ftrace.h>
+#include <linaos/sched.h> /* for wake_up_process() */
+#include <linaos/ftrace.h>
 
 void my_direct_func(struct task_struct *p)
 {

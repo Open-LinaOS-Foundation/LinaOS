@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/kallsyms.h>
-#include <linux/hardirq.h>
-#include <linux/kdebug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
+#include <linaos/module.h>
+#include <linaos/personality.h>
+#include <linaos/kallsyms.h>
+#include <linaos/hardirq.h>
+#include <linaos/kdebug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/uaccess.h>
+#include <linaos/ftrace.h>
 
 #include <asm/proc-fns.h>
 #include <asm/unistd.h>
 #include <asm/fpu.h>
 
-#include <linux/ptrace.h>
+#include <linaos/ptrace.h>
 #include <nds32_intrinsic.h>
 
 extern void show_pte(struct mm_struct *mm, unsigned long addr);

@@ -5,7 +5,7 @@
 // Copyright (c) 2020 MediaTek Inc.
 // Author: Shane Chien <shane.chien@mediatek.com>
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 #include <sound/pcm_params.h>
 
 #include "mt8192-afe-clk.h"

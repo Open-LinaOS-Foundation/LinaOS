@@ -10,9 +10,9 @@
 #ifndef _NET_SEG6_LOCAL_H
 #define _NET_SEG6_LOCAL_H
 
-#include <linux/percpu.h>
-#include <linux/net.h>
-#include <linux/ipv6.h>
+#include <linaos/percpu.h>
+#include <linaos/net.h>
+#include <linaos/ipv6.h>
 
 extern int seg6_lookup_nexthop(struct sk_buff *skb, struct in6_addr *nhaddr,
 			       u32 tbl_id);

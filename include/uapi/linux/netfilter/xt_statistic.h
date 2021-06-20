@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _XT_STATISTIC_H
 #define _XT_STATISTIC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum xt_statistic_mode {
 	XT_STATISTIC_MODE_RANDOM,

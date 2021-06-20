@@ -6,18 +6,18 @@
  */
 
 #include <asm/div64.h>
-#include <linux/clk.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/aspeed.h>
-#include <linux/hashtable.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <linaos/clk.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/gpio/aspeed.h>
+#include <linaos/hashtable.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
 
 /*
  * These two headers aren't meant to be used by GPIO drivers. We need
@@ -25,7 +25,7 @@
  * the aspeed specific API which allows the coprocessor to request
  * access to some GPIOs and to arbitrate between coprocessor and ARM.
  */
-#include <linux/gpio/consumer.h>
+#include <linaos/gpio/consumer.h>
 #include "gpiolib.h"
 
 struct aspeed_bank_props {

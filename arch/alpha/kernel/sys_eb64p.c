@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/sys_eb64p.c
+ *	linaos/arch/alpha/kernel/sys_eb64p.c
  *
  *	Copyright (C) 1995 David A Rusling
  *	Copyright (C) 1996 Jay A Estabrook
@@ -9,13 +9,13 @@
  * Code supporting the EB64+ and EB66.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
 
 #include <asm/ptrace.h>
 #include <asm/dma.h>

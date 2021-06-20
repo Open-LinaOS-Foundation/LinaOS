@@ -6,27 +6,27 @@
 // Author: Argus Lin <argus.lin@mediatek.com>
 //
 
-#include <linux/of_gpio.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/input.h>
-#include <linux/kthread.h>
-#include <linux/io.h>
-#include <linux/sched/clock.h>
-#include <linux/workqueue.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/regmap.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/input.h>
+#include <linaos/kthread.h>
+#include <linaos/io.h>
+#include <linaos/sched/clock.h>
+#include <linaos/workqueue.h>
+#include <linaos/timer.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irq.h>
+#include <linaos/regmap.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
-#include <linux/mfd/mt6397/core.h>
+#include <linaos/mfd/mt6397/core.h>
 
 #include "mt6359-accdet.h"
 #include "mt6359.h"

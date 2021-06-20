@@ -29,19 +29,19 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/iw_cm.h>
 #include <rdma/ib_mad.h>
-#include <linux/netdevice.h>
-#include <linux/iommu.h>
-#include <linux/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/iommu.h>
+#include <linaos/pci.h>
 #include <net/addrconf.h>
 
-#include <linux/qed/qed_chain.h>
-#include <linux/qed/qed_if.h>
+#include <linaos/qed/qed_chain.h>
+#include <linaos/qed/qed_if.h>
 #include "qedr.h"
 #include "verbs.h"
 #include <rdma/qedr-abi.h>

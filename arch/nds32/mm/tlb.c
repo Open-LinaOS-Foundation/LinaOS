@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/spinlock_types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <linaos/spinlock_types.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
 #include <asm/nds32.h>
 #include <nds32_intrinsic.h>
 

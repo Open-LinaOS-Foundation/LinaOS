@@ -9,11 +9,11 @@
  */
 #include <crypto/internal/hash.h>
 #include <crypto/sha2.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/cpufeature.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/cpufeature.h>
 #include <asm/cpacf.h>
 
 #include "sha.h"

@@ -4,14 +4,14 @@
 //
 // Copyright (C) 2009-2010, Lars-Peter Clausen <lars@metafoo.de>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/regmap.h>
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

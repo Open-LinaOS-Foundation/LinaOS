@@ -10,14 +10,14 @@
  *                    Jonathan Woithe <jwoithe@just42.net>
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/leds.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/dmi.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/leds.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/hda_codec.h>
@@ -6248,7 +6248,7 @@ static void alc294_gx502_toggle_output(struct hda_codec *codec,
 					struct hda_jack_callback *cb)
 {
 	/* The Windows driver sets the codec up in a very different way where
-	 * it appears to leave 0x10 = 0x8a20 set. For Linux we need to toggle it
+	 * it appears to leave 0x10 = 0x8a20 set. For LinaOS we need to toggle it
 	 */
 	if (snd_hda_jack_detect_state(codec, 0x21) == HDA_JACK_PRESENT)
 		alc_write_coef_idx(codec, 0x10, 0x8a20);

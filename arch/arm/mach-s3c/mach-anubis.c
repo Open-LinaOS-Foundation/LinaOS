@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
 //
 // Copyright 2003-2009 Simtec Electronics
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //	Ben Dooks <ben@simtec.co.uk>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/sm501.h>
-#include <linux/sm501-regs.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/gpio.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/platform_device.h>
+#include <linaos/ata_platform.h>
+#include <linaos/i2c.h>
+#include <linaos/io.h>
+#include <linaos/sm501.h>
+#include <linaos/sm501-regs.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -29,19 +29,19 @@
 
 #include "regs-gpio.h"
 #include "gpio-samsung.h"
-#include <linux/platform_data/mtd-nand-s3c2410.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/mtd-nand-s3c2410.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/nand-ecc-sw-hamming.h>
+#include <linaos/mtd/partitions.h>
 
 #include <net/ax88796.h>
 
 #include "devs.h"
 #include "cpu.h"
-#include <linux/platform_data/asoc-s3c24xx_simtec.h>
+#include <linaos/platform_data/asoc-s3c24xx_simtec.h>
 
 #include "anubis.h"
 #include "s3c24xx.h"

@@ -4,15 +4,15 @@
  * for more details.
  *
  * Copyright (C) 2005 MIPS Technologies, Inc.  All rights reserved.
- * Copyright (C) 2005, 06 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2005, 06 Ralf Baechle (ralf@linaos-mips.org)
  * Copyright (C) 2013 Imagination Technologies Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/syscalls.h>
-#include <linux/moduleloader.h>
-#include <linux/atomic.h>
-#include <linux/sched/signal.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/syscalls.h>
+#include <linaos/moduleloader.h>
+#include <linaos/atomic.h>
+#include <linaos/sched/signal.h>
 
 #include <asm/mipsmtregs.h>
 #include <asm/mips_mt.h>

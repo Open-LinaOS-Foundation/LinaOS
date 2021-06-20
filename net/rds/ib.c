@@ -30,15 +30,15 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/in.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/if_arp.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/in.h>
+#include <linaos/if.h>
+#include <linaos/netdevice.h>
+#include <linaos/inetdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 #include <net/addrconf.h>
 
 #include "rds_single_path.h"

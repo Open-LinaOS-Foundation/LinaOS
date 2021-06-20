@@ -9,17 +9,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
 #include <asm/io.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>
 
-#include <linux/mtd/map.h>
-#include <linux/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/mtd.h>
 
 #define info(format, arg...) printk(KERN_INFO "pcmciamtd: " format "\n" , ## arg)
 

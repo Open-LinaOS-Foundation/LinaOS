@@ -5,17 +5,17 @@
  * Copyright (C) 2013, 2014 Intel Corporation. All rights reserved.
  *
  * Author: Yang, Bin <bin.yang@intel.com>
- * Author: Zhu, Lejun <lejun.zhu@linux.intel.com>
+ * Author: Zhu, Lejun <lejun.zhu@linaos.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
+#include <linaos/acpi.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/intel_soc_pmic.h>
+#include <linaos/pwm.h>
+#include <linaos/regmap.h>
 
 #include "intel_soc_pmic_core.h"
 
@@ -175,4 +175,4 @@ module_i2c_driver(intel_soc_pmic_i2c_driver);
 MODULE_DESCRIPTION("I2C driver for Intel SoC PMIC");
 MODULE_LICENSE("GPL v2");
 MODULE_AUTHOR("Yang, Bin <bin.yang@intel.com>");
-MODULE_AUTHOR("Zhu, Lejun <lejun.zhu@linux.intel.com>");
+MODULE_AUTHOR("Zhu, Lejun <lejun.zhu@linaos.intel.com>");

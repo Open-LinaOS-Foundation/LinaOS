@@ -7,19 +7,19 @@
 #ifndef _NET_DEVLINK_H_
 #define _NET_DEVLINK_H_
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/gfp.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/refcount.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/gfp.h>
+#include <linaos/list.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
+#include <linaos/refcount.h>
 #include <net/net_namespace.h>
 #include <net/flow_offload.h>
-#include <uapi/linux/devlink.h>
-#include <linux/xarray.h>
-#include <linux/firmware.h>
+#include <uapi/linaos/devlink.h>
+#include <linaos/xarray.h>
+#include <linaos/firmware.h>
 
 #define DEVLINK_RELOAD_STATS_ARRAY_SIZE \
 	(__DEVLINK_RELOAD_LIMIT_MAX * __DEVLINK_RELOAD_ACTION_MAX)

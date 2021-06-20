@@ -7,7 +7,7 @@
 #ifndef __MVM_CONSTANTS_H
 #define __MVM_CONSTANTS_H
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 #include "fw-api.h"
 
 #define IWL_MVM_UAPSD_NOAGG_BSSIDS_NUM		20

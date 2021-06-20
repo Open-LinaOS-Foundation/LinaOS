@@ -6,16 +6,16 @@
  * Kamil Debski, <k.debski@samsung.com>
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/timer.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

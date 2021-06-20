@@ -13,7 +13,7 @@
 #ifndef _TB_REGS
 #define _TB_REGS
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 
 #define TB_ROUTE_SHIFT 8  /* number of bits in a port entry of a route */

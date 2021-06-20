@@ -6,10 +6,10 @@
  *	Copyright (C) IBM Corporation, 2004. All rights reserved
  */
 
-#include <linux/errno.h>
-#include <linux/crash_dump.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <linaos/errno.h>
+#include <linaos/crash_dump.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
 
 static ssize_t __copy_oldmem_page(unsigned long pfn, char *buf, size_t csize,
 				  unsigned long offset, int userbuf,

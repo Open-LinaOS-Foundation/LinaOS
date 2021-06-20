@@ -6,15 +6,15 @@
  *          Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
+#include <linaos/atomic.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/videodev2.h>
+#include <linaos/vmalloc.h>
+#include <linaos/wait.h>
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-vmalloc.h>
 

@@ -5,12 +5,12 @@
  * Copyright (C) 2011-2013 Eric Dumazet (eric.dumazet@gmail.com)
  * Internal BPF Copyright (c) 2011-2014 PLUMgrid, http://plumgrid.com
  */
-#include <linux/netdevice.h>
-#include <linux/filter.h>
-#include <linux/if_vlan.h>
-#include <linux/bpf.h>
-#include <linux/memory.h>
-#include <linux/sort.h>
+#include <linaos/netdevice.h>
+#include <linaos/filter.h>
+#include <linaos/if_vlan.h>
+#include <linaos/bpf.h>
+#include <linaos/memory.h>
+#include <linaos/sort.h>
 #include <asm/extable.h>
 #include <asm/set_memory.h>
 #include <asm/nospec-branch.h>

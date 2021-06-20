@@ -271,7 +271,7 @@ Description:
 
 What:		/sys/power/pm_wakeup_irq
 Date:		April 2015
-Contact:	Alexandra Yates <alexandra.yates@linux.intel.org>
+Contact:	Alexandra Yates <alexandra.yates@linaos.intel.org>
 Description:
 		The /sys/power/pm_wakeup_irq file reports to user space the IRQ
 		number of the first wakeup interrupt (that is, the first

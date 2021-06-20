@@ -22,20 +22,20 @@ unload_lp $MOD_LIVEPATCH
 check_result "% modprobe $MOD_LIVEPATCH
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
-$MOD_LIVEPATCH: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH: pre_patch_callback: vmlinaos
 $MOD_LIVEPATCH: allocate_loglevel_state: allocating space to store console_loglevel
 livepatch: '$MOD_LIVEPATCH': starting patching transition
 livepatch: '$MOD_LIVEPATCH': completing patching transition
-$MOD_LIVEPATCH: post_patch_callback: vmlinux
+$MOD_LIVEPATCH: post_patch_callback: vmlinaos
 $MOD_LIVEPATCH: fix_console_loglevel: fixing console_loglevel
 livepatch: '$MOD_LIVEPATCH': patching complete
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH/enabled
 livepatch: '$MOD_LIVEPATCH': initializing unpatching transition
-$MOD_LIVEPATCH: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: pre_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH: restore_console_loglevel: restoring console_loglevel
 livepatch: '$MOD_LIVEPATCH': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH': completing unpatching transition
-$MOD_LIVEPATCH: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH: post_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH: free_loglevel_state: freeing space for the stored console_loglevel
 livepatch: '$MOD_LIVEPATCH': unpatching complete
 % rmmod $MOD_LIVEPATCH"
@@ -54,31 +54,31 @@ unload_lp $MOD_LIVEPATCH2
 check_result "% modprobe $MOD_LIVEPATCH
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
-$MOD_LIVEPATCH: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH: pre_patch_callback: vmlinaos
 $MOD_LIVEPATCH: allocate_loglevel_state: allocating space to store console_loglevel
 livepatch: '$MOD_LIVEPATCH': starting patching transition
 livepatch: '$MOD_LIVEPATCH': completing patching transition
-$MOD_LIVEPATCH: post_patch_callback: vmlinux
+$MOD_LIVEPATCH: post_patch_callback: vmlinaos
 $MOD_LIVEPATCH: fix_console_loglevel: fixing console_loglevel
 livepatch: '$MOD_LIVEPATCH': patching complete
 % modprobe $MOD_LIVEPATCH2
 livepatch: enabling patch '$MOD_LIVEPATCH2'
 livepatch: '$MOD_LIVEPATCH2': initializing patching transition
-$MOD_LIVEPATCH2: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH2: pre_patch_callback: vmlinaos
 $MOD_LIVEPATCH2: allocate_loglevel_state: space to store console_loglevel already allocated
 livepatch: '$MOD_LIVEPATCH2': starting patching transition
 livepatch: '$MOD_LIVEPATCH2': completing patching transition
-$MOD_LIVEPATCH2: post_patch_callback: vmlinux
+$MOD_LIVEPATCH2: post_patch_callback: vmlinaos
 $MOD_LIVEPATCH2: fix_console_loglevel: taking over the console_loglevel change
 livepatch: '$MOD_LIVEPATCH2': patching complete
 % rmmod $MOD_LIVEPATCH
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH2/enabled
 livepatch: '$MOD_LIVEPATCH2': initializing unpatching transition
-$MOD_LIVEPATCH2: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH2: pre_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH2: restore_console_loglevel: restoring console_loglevel
 livepatch: '$MOD_LIVEPATCH2': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH2': completing unpatching transition
-$MOD_LIVEPATCH2: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH2: post_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH2: free_loglevel_state: freeing space for the stored console_loglevel
 livepatch: '$MOD_LIVEPATCH2': unpatching complete
 % rmmod $MOD_LIVEPATCH2"
@@ -99,41 +99,41 @@ unload_lp $MOD_LIVEPATCH3
 check_result "% modprobe $MOD_LIVEPATCH2
 livepatch: enabling patch '$MOD_LIVEPATCH2'
 livepatch: '$MOD_LIVEPATCH2': initializing patching transition
-$MOD_LIVEPATCH2: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH2: pre_patch_callback: vmlinaos
 $MOD_LIVEPATCH2: allocate_loglevel_state: allocating space to store console_loglevel
 livepatch: '$MOD_LIVEPATCH2': starting patching transition
 livepatch: '$MOD_LIVEPATCH2': completing patching transition
-$MOD_LIVEPATCH2: post_patch_callback: vmlinux
+$MOD_LIVEPATCH2: post_patch_callback: vmlinaos
 $MOD_LIVEPATCH2: fix_console_loglevel: fixing console_loglevel
 livepatch: '$MOD_LIVEPATCH2': patching complete
 % modprobe $MOD_LIVEPATCH3
 livepatch: enabling patch '$MOD_LIVEPATCH3'
 livepatch: '$MOD_LIVEPATCH3': initializing patching transition
-$MOD_LIVEPATCH3: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH3: pre_patch_callback: vmlinaos
 $MOD_LIVEPATCH3: allocate_loglevel_state: space to store console_loglevel already allocated
 livepatch: '$MOD_LIVEPATCH3': starting patching transition
 livepatch: '$MOD_LIVEPATCH3': completing patching transition
-$MOD_LIVEPATCH3: post_patch_callback: vmlinux
+$MOD_LIVEPATCH3: post_patch_callback: vmlinaos
 $MOD_LIVEPATCH3: fix_console_loglevel: taking over the console_loglevel change
 livepatch: '$MOD_LIVEPATCH3': patching complete
 % rmmod $MOD_LIVEPATCH2
 % modprobe $MOD_LIVEPATCH2
 livepatch: enabling patch '$MOD_LIVEPATCH2'
 livepatch: '$MOD_LIVEPATCH2': initializing patching transition
-$MOD_LIVEPATCH2: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH2: pre_patch_callback: vmlinaos
 $MOD_LIVEPATCH2: allocate_loglevel_state: space to store console_loglevel already allocated
 livepatch: '$MOD_LIVEPATCH2': starting patching transition
 livepatch: '$MOD_LIVEPATCH2': completing patching transition
-$MOD_LIVEPATCH2: post_patch_callback: vmlinux
+$MOD_LIVEPATCH2: post_patch_callback: vmlinaos
 $MOD_LIVEPATCH2: fix_console_loglevel: taking over the console_loglevel change
 livepatch: '$MOD_LIVEPATCH2': patching complete
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH2/enabled
 livepatch: '$MOD_LIVEPATCH2': initializing unpatching transition
-$MOD_LIVEPATCH2: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH2: pre_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH2: restore_console_loglevel: restoring console_loglevel
 livepatch: '$MOD_LIVEPATCH2': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH2': completing unpatching transition
-$MOD_LIVEPATCH2: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH2: post_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH2: free_loglevel_state: freeing space for the stored console_loglevel
 livepatch: '$MOD_LIVEPATCH2': unpatching complete
 % rmmod $MOD_LIVEPATCH2
@@ -152,11 +152,11 @@ unload_lp $MOD_LIVEPATCH2
 check_result "% modprobe $MOD_LIVEPATCH2
 livepatch: enabling patch '$MOD_LIVEPATCH2'
 livepatch: '$MOD_LIVEPATCH2': initializing patching transition
-$MOD_LIVEPATCH2: pre_patch_callback: vmlinux
+$MOD_LIVEPATCH2: pre_patch_callback: vmlinaos
 $MOD_LIVEPATCH2: allocate_loglevel_state: allocating space to store console_loglevel
 livepatch: '$MOD_LIVEPATCH2': starting patching transition
 livepatch: '$MOD_LIVEPATCH2': completing patching transition
-$MOD_LIVEPATCH2: post_patch_callback: vmlinux
+$MOD_LIVEPATCH2: post_patch_callback: vmlinaos
 $MOD_LIVEPATCH2: fix_console_loglevel: fixing console_loglevel
 livepatch: '$MOD_LIVEPATCH2': patching complete
 % modprobe $MOD_LIVEPATCH
@@ -164,11 +164,11 @@ livepatch: Livepatch patch ($MOD_LIVEPATCH) is not compatible with the already i
 modprobe: ERROR: could not insert '$MOD_LIVEPATCH': Invalid argument
 % echo 0 > /sys/kernel/livepatch/$MOD_LIVEPATCH2/enabled
 livepatch: '$MOD_LIVEPATCH2': initializing unpatching transition
-$MOD_LIVEPATCH2: pre_unpatch_callback: vmlinux
+$MOD_LIVEPATCH2: pre_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH2: restore_console_loglevel: restoring console_loglevel
 livepatch: '$MOD_LIVEPATCH2': starting unpatching transition
 livepatch: '$MOD_LIVEPATCH2': completing unpatching transition
-$MOD_LIVEPATCH2: post_unpatch_callback: vmlinux
+$MOD_LIVEPATCH2: post_unpatch_callback: vmlinaos
 $MOD_LIVEPATCH2: free_loglevel_state: freeing space for the stored console_loglevel
 livepatch: '$MOD_LIVEPATCH2': unpatching complete
 % rmmod $MOD_LIVEPATCH2"

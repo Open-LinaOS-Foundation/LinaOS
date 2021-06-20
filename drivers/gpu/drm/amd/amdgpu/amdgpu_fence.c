@@ -28,13 +28,13 @@
  *    Jerome Glisse <glisse@freedesktop.org>
  *    Dave Airlie
  */
-#include <linux/seq_file.h>
-#include <linux/atomic.h>
-#include <linux/wait.h>
-#include <linux/kref.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/pm_runtime.h>
+#include <linaos/seq_file.h>
+#include <linaos/atomic.h>
+#include <linaos/wait.h>
+#include <linaos/kref.h>
+#include <linaos/slab.h>
+#include <linaos/firmware.h>
+#include <linaos/pm_runtime.h>
 
 #include "amdgpu.h"
 #include "amdgpu_trace.h"

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/wm2000.h -- Platform data for WM2000
+ * linaos/sound/wm2000.h -- Platform data for WM2000
  *
  * Copyright 2010 Wolfson Microelectronics. PLC.
  */

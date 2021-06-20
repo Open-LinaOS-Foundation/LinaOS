@@ -17,14 +17,14 @@
  * General Public License for more details.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/mfd/palmas.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/mfd/palmas.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #define PALMAS_CLOCK_DT_EXT_CONTROL_ENABLE1	1
 #define PALMAS_CLOCK_DT_EXT_CONTROL_ENABLE2	2

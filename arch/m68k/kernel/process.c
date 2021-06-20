@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/kernel/process.c
+ *  linaos/arch/m68k/kernel/process.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  *
@@ -11,27 +11,27 @@
  * This file handles the architecture-dependent parts of process handling..
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/reboot.h>
-#include <linux/init_task.h>
-#include <linux/mqueue.h>
-#include <linux/rcupdate.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/smp.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/reboot.h>
+#include <linaos/init_task.h>
+#include <linaos/mqueue.h>
+#include <linaos/rcupdate.h>
+#include <linaos/syscalls.h>
+#include <linaos/uaccess.h>
 
 #include <asm/traps.h>
 #include <asm/machdep.h>

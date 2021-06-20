@@ -5,18 +5,18 @@
  * (C) 2005 by Harald Welte <laforge@netfilter.org>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 #include <net/ip.h>
-#include <linux/dccp.h>
+#include <linaos/dccp.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_dccp.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter/xt_dccp.h>
 
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <linaos/netfilter_ipv4/ip_tables.h>
+#include <linaos/netfilter_ipv6/ip6_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");

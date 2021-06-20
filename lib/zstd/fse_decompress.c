@@ -48,9 +48,9 @@
 #include "bitstream.h"
 #include "fse.h"
 #include "zstd_internal.h"
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/string.h> /* memcpy, memset */
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h> /* memcpy, memset */
 
 /* **************************************************************
 *  Error Management

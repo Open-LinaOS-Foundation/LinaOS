@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/pfn.h>
+#include <linaos/pfn.h>
 #include <asm/xen/page.h>
 #include <asm/xen/hypercall.h>
 #include <xen/interface/memory.h>

@@ -24,7 +24,7 @@
 #ifndef __AMDGPU_IRQ_H__
 #define __AMDGPU_IRQ_H__
 
-#include <linux/irqdomain.h>
+#include <linaos/irqdomain.h>
 #include "soc15_ih_clientid.h"
 #include "amdgpu_ih.h"
 

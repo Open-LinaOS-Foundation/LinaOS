@@ -2,7 +2,7 @@
 #ifndef DRIVERS_PCI_H
 #define DRIVERS_PCI_H
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 /* Number of possible devfns: 0.0 to 1f.7 inclusive */
 #define MAX_NR_DEVFNS 256
@@ -397,7 +397,7 @@ static inline bool pci_dev_is_added(const struct pci_dev *dev)
 }
 
 #ifdef CONFIG_PCIEAER
-#include <linux/aer.h>
+#include <linaos/aer.h>
 
 #define AER_MAX_MULTI_ERR_DEVICES	5	/* Not likely to have more */
 

@@ -2,9 +2,9 @@
 #ifndef NVM_H
 #define NVM_H
 
-#include <linux/blkdev.h>
-#include <linux/types.h>
-#include <uapi/linux/lightnvm.h>
+#include <linaos/blkdev.h>
+#include <linaos/types.h>
+#include <uapi/linaos/lightnvm.h>
 
 enum {
 	NVM_IO_OK = 0,
@@ -112,8 +112,8 @@ struct nvm_dev_ops {
 
 #ifdef CONFIG_NVM
 
-#include <linux/file.h>
-#include <linux/dmapool.h>
+#include <linaos/file.h>
+#include <linaos/dmapool.h>
 
 enum {
 	/* HW Responsibilities */

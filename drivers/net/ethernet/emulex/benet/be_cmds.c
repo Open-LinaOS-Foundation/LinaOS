@@ -4,14 +4,14 @@
  * All rights reserved.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * linaos-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
  * Costa Mesa, CA 92626
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "be.h"
 #include "be_cmds.h"
 

@@ -9,9 +9,9 @@
 #ifndef __IPMI_SI_H__
 #define __IPMI_SI_H__
 
-#include <linux/ipmi.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <linaos/ipmi.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
 
 #define SI_DEVICE_NAME "ipmi_si"
 

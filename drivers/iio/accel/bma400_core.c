@@ -11,15 +11,15 @@
  *  - Create channel for sensor time
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
 
 #include "bma400.h"
 

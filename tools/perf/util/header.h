@@ -2,13 +2,13 @@
 #ifndef __PERF_HEADER_H
 #define __PERF_HEADER_H
 
-#include <linux/stddef.h>
-#include <linux/perf_event.h>
+#include <linaos/stddef.h>
+#include <linaos/perf_event.h>
 #include <sys/types.h>
 #include <stdio.h> // FILE
 #include <stdbool.h>
-#include <linux/bitmap.h>
-#include <linux/types.h>
+#include <linaos/bitmap.h>
+#include <linaos/types.h>
 #include "env.h"
 #include "pmu.h"
 

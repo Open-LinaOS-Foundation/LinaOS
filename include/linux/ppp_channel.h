@@ -15,9 +15,9 @@
  * ==FILEVERSION 20000322==
  */
 
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/poll.h>
+#include <linaos/list.h>
+#include <linaos/skbuff.h>
+#include <linaos/poll.h>
 #include <net/net_namespace.h>
 
 struct ppp_channel;

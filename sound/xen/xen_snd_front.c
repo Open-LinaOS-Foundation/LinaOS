@@ -8,8 +8,8 @@
  * Author: Oleksandr Andrushchenko <oleksandr_andrushchenko@epam.com>
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
 
 #include <xen/page.h>
 #include <xen/platform_pci.h>

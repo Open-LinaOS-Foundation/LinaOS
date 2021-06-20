@@ -4,7 +4,7 @@ The PowerPC boot wrapper
 
 Copyright (C) Secret Lab Technologies Ltd.
 
-PowerPC image targets compresses and wraps the kernel image (vmlinux) with
+PowerPC image targets compresses and wraps the kernel image (vmlinaos) with
 a boot wrapper to make it usable by the system firmware.  There is no
 standard PowerPC firmware interface, so the boot wrapper is designed to
 be adaptable for each kind of image that needs to be built.
@@ -76,7 +76,7 @@ Currently, the following image format targets exist:
 
    uImage:		Native image format used by U-Boot.  The uImage target
 			does not add any boot code.  It just wraps a compressed
-			vmlinux in the uImage data structure.  This image
+			vmlinaos in the uImage data structure.  This image
 			requires a version of U-Boot that is able to pass
 			a device tree to the kernel at boot.  If using an older
 			version of U-Boot, then you need to use a cuImage
@@ -106,7 +106,7 @@ at the Makefile to see which default image targets are available.
 How it is built
 ---------------
 arch/powerpc is designed to support multiplatform kernels, which means
-that a single vmlinux image can be booted on many different target boards.
+that a single vmlinaos image can be booted on many different target boards.
 It also means that the boot wrapper must be able to wrap for many kinds of
 images on a single build.  The design decision was made to not use any
 conditional compilation code (#ifdef, etc) in the boot wrapper source code.

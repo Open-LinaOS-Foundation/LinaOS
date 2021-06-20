@@ -4,29 +4,29 @@
  * Copyright (C) 1997, 1998, 1999, 2003, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/module.h>
-#include <linux/pgtable.h>
+#include <linaos/module.h>
+#include <linaos/pgtable.h>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/in.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/crc32.h>
+#include <linaos/errno.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/bitops.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/gfp.h>
 
 #include <asm/auxio.h>
 #include <asm/byteorder.h>

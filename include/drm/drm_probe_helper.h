@@ -3,7 +3,7 @@
 #ifndef __DRM_PROBE_HELPER_H__
 #define __DRM_PROBE_HELPER_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_connector;
 struct drm_device;

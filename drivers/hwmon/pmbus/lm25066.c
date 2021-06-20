@@ -6,14 +6,14 @@
  * Copyright (c) 2013 Guenter Roeck
  */
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/log2.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/log2.h>
 #include "pmbus.h"
 
 enum chips { lm25056, lm25066, lm5064, lm5066, lm5066i };

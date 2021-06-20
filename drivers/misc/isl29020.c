@@ -11,13 +11,13 @@
  * Data sheet at: http://www.intersil.com/data/fn/fn6505.pdf
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/sysfs.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/sysfs.h>
+#include <linaos/pm_runtime.h>
 
 static DEFINE_MUTEX(mutex);
 

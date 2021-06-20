@@ -10,10 +10,10 @@
 
 #include <asm/mach-types.h>
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/spi/spi.h>
+#include <linaos/of.h>
 
 #include <sound/soc.h>
 #include <sound/initval.h>

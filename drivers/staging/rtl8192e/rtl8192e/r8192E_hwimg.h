@@ -9,7 +9,7 @@
 
 /*Created on  2008/11/18,  3: 7*/
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define PHY_REGArrayLengthPciE 1
 extern u32 Rtl8192PciEPHY_REGArray[PHY_REGArrayLengthPciE];

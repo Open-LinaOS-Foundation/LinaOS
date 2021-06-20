@@ -29,7 +29,7 @@
 		user_btn1 {
 			label = "USER_BTN1";
 			gpios = <&gpio 11 GPIO_ACTIVE_LOW>;
-			linux,code =<KEY_PROG1> ;
+			linaos,code =<KEY_PROG1> ;
 		};
 	};
 
@@ -104,13 +104,13 @@
 		ethernet_link {
 			label = "smartgw:eth:link";
 			gpios = <&gpio 3 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "netdev";
+			linaos,default-trigger = "netdev";
 		};
 
 		ethernet_activity {
 			label = "smartgw:eth:act";
 			gpios = <&gpio 43 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "netdev";
+			linaos,default-trigger = "netdev";
 		};
 	};
 
@@ -165,7 +165,7 @@
 
 	nand_flash@1 {
 		compatible = "spi-nand";
-		linux,mtd-name = "gd5f";
+		linaos,mtd-name = "gd5f";
 		reg = <1>;
 		spi-max-frequency = <40000000>;
 	};

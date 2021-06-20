@@ -9,12 +9,12 @@
  *          Richard Purdie <richard@openedhand.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/timer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/timer.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

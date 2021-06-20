@@ -4,14 +4,14 @@
  * Copyright (C) 2015-2019 Google, Inc.
  */
 
-#include <linux/cpumask.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <linaos/cpumask.h>
+#include <linaos/etherdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/sched.h>
+#include <linaos/timer.h>
+#include <linaos/workqueue.h>
 #include <net/sch_generic.h>
 #include "gve.h"
 #include "gve_adminq.h"

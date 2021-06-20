@@ -6,15 +6,15 @@
  * Copyright (c) 2011 Mircea Gherzan <mgherzan@gmail.com>
  */
 
-#include <linux/bpf.h>
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/filter.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/if_vlan.h>
+#include <linaos/bpf.h>
+#include <linaos/bitops.h>
+#include <linaos/compiler.h>
+#include <linaos/errno.h>
+#include <linaos/filter.h>
+#include <linaos/netdevice.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/if_vlan.h>
 
 #include <asm/cacheflush.h>
 #include <asm/hwcap.h>

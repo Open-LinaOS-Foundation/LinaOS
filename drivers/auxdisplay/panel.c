@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Front panel driver for Linux
+ * Front panel driver for LinaOS
  * Copyright (C) 2000-2008, Willy Tarreau <w@1wt.eu>
  * Copyright (C) 2016-2017 Glider bvba
  *
@@ -33,27 +33,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/parport.h>
-#include <linux/list.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/miscdevice.h>
+#include <linaos/slab.h>
+#include <linaos/ioport.h>
+#include <linaos/fcntl.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/ctype.h>
+#include <linaos/parport.h>
+#include <linaos/list.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 #include "charlcd.h"
 #include "hd44780_common.h"

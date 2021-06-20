@@ -2,7 +2,7 @@
 #ifndef __QCOM_PDR_HELPER__
 #define __QCOM_PDR_HELPER__
 
-#include <linux/soc/qcom/qmi.h>
+#include <linaos/soc/qcom/qmi.h>
 
 #define SERVREG_NAME_LENGTH	64
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/h8300/kernel/setup.c
+ *  linaos/arch/h8300/kernel/setup.c
  *
  *  Copyright (C) 2001-2014 Yoshinori Sato <ysato@users.sourceforge.jp>
  */
@@ -9,25 +9,25 @@
  * This file handles the architecture-dependent parts of system setup
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/console.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_address.h>
-#include <linux/clk-provider.h>
-#include <linux/memblock.h>
-#include <linux/screen_info.h>
-#include <linux/clocksource.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/console.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_address.h>
+#include <linaos/clk-provider.h>
+#include <linaos/memblock.h>
+#include <linaos/screen_info.h>
+#include <linaos/clocksource.h>
 
 #include <asm/setup.h>
 #include <asm/irq.h>
@@ -102,7 +102,7 @@ void __init setup_arch(char **cmdline_p)
 	init_mm.end_data = (unsigned long) _edata;
 	init_mm.brk = (unsigned long) 0;
 
-	pr_notice("\r\n\nuClinux " CPU "\n");
+	pr_notice("\r\n\nuClinaos " CPU "\n");
 	pr_notice("Flat model support (C) 1998,1999 Kenneth Albanowski, D. Jeff Dionne\n");
 
 	if (*command_line)

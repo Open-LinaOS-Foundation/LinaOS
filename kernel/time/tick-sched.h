@@ -2,7 +2,7 @@
 #ifndef _TICK_SCHED_H
 #define _TICK_SCHED_H
 
-#include <linux/hrtimer.h>
+#include <linaos/hrtimer.h>
 
 enum tick_device_mode {
 	TICKDEV_MODE_PERIODIC,

@@ -7,15 +7,15 @@
  * Datasheet: https://ww1.microchip.com/downloads/en/DeviceDoc/20005565B.pdf
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/hid.h>
-#include <linux/hidraw.h>
-#include <linux/i2c.h>
-#include <linux/gpio/driver.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/hid.h>
+#include <linaos/hidraw.h>
+#include <linaos/i2c.h>
+#include <linaos/gpio/driver.h>
 #include "hid-ids.h"
 
 /* Commands codes in a raw output report */

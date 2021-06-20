@@ -3,13 +3,13 @@
  * Copyright (C) 1999, 2000 Ralf Baechle (ralf@gnu.org)
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/param.h>
-#include <linux/timex.h>
-#include <linux/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/param.h>
+#include <linaos/timex.h>
+#include <linaos/mm.h>
 
 #include <asm/sn/klconfig.h>
 #include <asm/sn/arch.h>

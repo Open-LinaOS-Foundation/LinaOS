@@ -4,7 +4,7 @@
  *
  *  Copyright (C) 2001 Russell King
  */
-#include <linux/hardirq.h>
+#include <linaos/hardirq.h>
 #include <asm-generic/xor.h>
 #include <asm/hwcap.h>
 #include <asm/neon.h>

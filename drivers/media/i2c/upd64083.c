@@ -7,11 +7,11 @@
  * 2006 by Hans Verkuil <hverkuil@xs4all.nl>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/i2c.h>
+#include <linaos/videodev2.h>
+#include <linaos/slab.h>
 #include <media/v4l2-device.h>
 #include <media/i2c/upd64083.h>
 

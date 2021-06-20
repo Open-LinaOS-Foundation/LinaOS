@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* Copyright (C) 2017 - 2018 Intel Corporation */
 
 #ifndef __IPU3_UAPI_H
 #define __IPU3_UAPI_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* from /drivers/staging/media/ipu3/include/videodev2.h */
 
@@ -12,7 +12,7 @@
 #define V4L2_META_FMT_IPU3_PARAMS	v4l2_fourcc('i', 'p', '3', 'p') /* IPU3 processing parameters */
 #define V4L2_META_FMT_IPU3_STAT_3A	v4l2_fourcc('i', 'p', '3', 's') /* IPU3 3A statistics */
 
-/* from include/uapi/linux/v4l2-controls.h */
+/* from include/uapi/linaos/v4l2-controls.h */
 #define V4L2_CID_INTEL_IPU3_BASE	(V4L2_CID_USER_BASE + 0x10c0)
 #define V4L2_CID_INTEL_IPU3_MODE	(V4L2_CID_INTEL_IPU3_BASE + 1)
 

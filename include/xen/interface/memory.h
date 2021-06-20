@@ -10,7 +10,7 @@
 #ifndef __XEN_PUBLIC_MEMORY_H__
 #define __XEN_PUBLIC_MEMORY_H__
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 /*
  * Increase or decrease the specified domain's memory reservation. Returns a

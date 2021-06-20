@@ -6,7 +6,7 @@
  * S3C2412 Power Manager low-level sleep support
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include "map.h"
 

@@ -22,49 +22,49 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/stringify.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/mdio.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/brcmphy.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/workqueue.h>
-#include <linux/prefetch.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/ssb/ssb_driver_gige.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/crc32poly.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/stringify.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/in.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/ethtool.h>
+#include <linaos/mdio.h>
+#include <linaos/mii.h>
+#include <linaos/phy.h>
+#include <linaos/brcmphy.h>
+#include <linaos/if.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/workqueue.h>
+#include <linaos/prefetch.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/firmware.h>
+#include <linaos/ssb/ssb_driver_gige.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/crc32poly.h>
 
 #include <net/checksum.h>
 #include <net/ip.h>
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <uapi/linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
+#include <uapi/linaos/net_tstamp.h>
+#include <linaos/ptp_clock_kernel.h>
 
 #define BAR_0	0
 #define BAR_2	2
@@ -10058,7 +10058,7 @@ static int tg3_reset_hw(struct tg3 *tp, bool reset_phy)
 	 * the offload processers, so make the chip do the pseudo-
 	 * header checksums on receive.  For transmit it is more
 	 * convenient to do the pseudo-header checksum in software
-	 * as Linux does that on transmit for us in all cases.
+	 * as LinaOS does that on transmit for us in all cases.
 	 */
 	tp->grc_mode |= GRC_MODE_NO_TX_PHDR_CSUM;
 

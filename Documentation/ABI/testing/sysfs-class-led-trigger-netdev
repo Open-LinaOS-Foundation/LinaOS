@@ -1,14 +1,14 @@
 What:		/sys/class/leds/<led>/device_name
 Date:		Dec 2017
 KernelVersion:	4.16
-Contact:	linux-leds@vger.kernel.org
+Contact:	linaos-leds@vger.kernel.org
 Description:
 		Specifies the network device name to monitor.
 
 What:		/sys/class/leds/<led>/interval
 Date:		Dec 2017
 KernelVersion:	4.16
-Contact:	linux-leds@vger.kernel.org
+Contact:	linaos-leds@vger.kernel.org
 Description:
 		Specifies the duration of the LED blink in milliseconds.
 		Defaults to 50 ms.
@@ -16,7 +16,7 @@ Description:
 What:		/sys/class/leds/<led>/link
 Date:		Dec 2017
 KernelVersion:	4.16
-Contact:	linux-leds@vger.kernel.org
+Contact:	linaos-leds@vger.kernel.org
 Description:
 		Signal the link state of the named network device.
 
@@ -30,7 +30,7 @@ Description:
 What:		/sys/class/leds/<led>/tx
 Date:		Dec 2017
 KernelVersion:	4.16
-Contact:	linux-leds@vger.kernel.org
+Contact:	linaos-leds@vger.kernel.org
 Description:
 		Signal transmission of data on the named network device.
 
@@ -42,7 +42,7 @@ Description:
 What:		/sys/class/leds/<led>/rx
 Date:		Dec 2017
 KernelVersion:	4.16
-Contact:	linux-leds@vger.kernel.org
+Contact:	linaos-leds@vger.kernel.org
 Description:
 		Signal reception of data on the named network device.
 

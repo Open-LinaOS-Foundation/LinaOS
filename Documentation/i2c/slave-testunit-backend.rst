@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ================================
-Linux I2C slave testunit backend
+LinaOS I2C slave testunit backend
 ================================
 
 by Wolfram Sang <wsa@sang-engineering.com> in 2020
@@ -64,7 +64,7 @@ time, the bus will be busy. Example to read 128 bytes from device 0x50 after
    DATAH - high byte of the status word to send
 
 This test will send an SMBUS_HOST_NOTIFY message to the host. Note that the
-status word is currently ignored in the Linux Kernel. Example to send a
+status word is currently ignored in the LinaOS Kernel. Example to send a
 notification after 10ms:
 
 # i2cset -y 0 0x30 0x02 0x42 0x64 0x01 i

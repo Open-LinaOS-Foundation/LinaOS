@@ -2,7 +2,7 @@
 #ifndef __LIBPERF_INTERNAL_XYARRAY_H
 #define __LIBPERF_INTERNAL_XYARRAY_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <sys/types.h>
 
 struct xyarray {

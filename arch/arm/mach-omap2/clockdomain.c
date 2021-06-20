@@ -10,21 +10,21 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/limits.h>
-#include <linux/err.h>
-#include <linux/clk-provider.h>
-#include <linux/cpu_pm.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/limits.h>
+#include <linaos/err.h>
+#include <linaos/clk-provider.h>
+#include <linaos/cpu_pm.h>
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #include "soc.h"
 #include "clock.h"

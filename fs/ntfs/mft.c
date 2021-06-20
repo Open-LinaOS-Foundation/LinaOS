@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /**
- * mft.c - NTFS kernel mft record operations. Part of the Linux-NTFS project.
+ * mft.c - NTFS kernel mft record operations. Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2012 Anton Altaparmakov and Tuxera Inc.
  * Copyright (c) 2002 Richard Russon
  */
 
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/bio.h>
+#include <linaos/buffer_head.h>
+#include <linaos/slab.h>
+#include <linaos/swap.h>
+#include <linaos/bio.h>
 
 #include "attrib.h"
 #include "aops.h"
@@ -399,7 +399,7 @@ void __mark_mft_record_dirty(ntfs_inode *ni)
 }
 
 static const char *ntfs_please_email = "Please email "
-		"linux-ntfs-dev@lists.sourceforge.net and say that you saw "
+		"linaos-ntfs-dev@lists.sourceforge.net and say that you saw "
 		"this message.  Thank you.";
 
 /**
@@ -2038,7 +2038,7 @@ static int ntfs_mft_record_layout(const ntfs_volume *vol, const s64 mft_no,
 		ntfs_warning(vol->sb, "Sector size is bigger than mft record "
 				"size.  Setting usa_count to 1.  If chkdsk "
 				"reports this as corruption, please email "
-				"linux-ntfs-dev@lists.sourceforge.net stating "
+				"linaos-ntfs-dev@lists.sourceforge.net stating "
 				"that you saw this message and that the "
 				"modified filesystem created was corrupt.  "
 				"Thank you.");

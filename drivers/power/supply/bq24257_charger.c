@@ -10,17 +10,17 @@
  * https://www.ti.com/product/bq24257
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/power_supply.h>
+#include <linaos/regmap.h>
+#include <linaos/types.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
 
-#include <linux/acpi.h>
-#include <linux/of.h>
+#include <linaos/acpi.h>
+#include <linaos/of.h>
 
 #define BQ24257_REG_1			0x00
 #define BQ24257_REG_2			0x01

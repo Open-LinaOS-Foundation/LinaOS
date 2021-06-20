@@ -4,10 +4,10 @@
  * (C) Copyright 2016 Intel Corporation
  */
 
-#include <linux/slab.h>
-#include <linux/dma-fence.h>
-#include <linux/irq_work.h>
-#include <linux/dma-resv.h>
+#include <linaos/slab.h>
+#include <linaos/dma-fence.h>
+#include <linaos/irq_work.h>
+#include <linaos/dma-resv.h>
 
 #include "i915_sw_fence.h"
 #include "i915_selftest.h"

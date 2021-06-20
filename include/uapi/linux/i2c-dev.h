@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * i2c-dev.h - I2C bus char device interface
  *
@@ -9,8 +9,8 @@
 #ifndef _UAPI_LINUX_I2C_DEV_H
 #define _UAPI_LINUX_I2C_DEV_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
 
 /* /dev/i2c-X ioctl commands.  The ioctl's parameter is always an
  * unsigned long, except for:

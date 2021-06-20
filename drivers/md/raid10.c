@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * raid10.c : Multiple Devices driver for Linux
+ * raid10.c : Multiple Devices driver for LinaOS
  *
  * Copyright (C) 2000-2004 Neil Brown
  *
@@ -9,14 +9,14 @@
  * Base on code in raid1.c.  See raid1.c for further copyright information.
  */
 
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/ratelimit.h>
-#include <linux/kthread.h>
-#include <linux/raid/md_p.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/blkdev.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/ratelimit.h>
+#include <linaos/kthread.h>
+#include <linaos/raid/md_p.h>
 #include <trace/events/block.h>
 #include "md.h"
 #include "raid10.h"

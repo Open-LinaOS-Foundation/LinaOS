@@ -12,8 +12,8 @@
 /*
  */
 
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <linaos/hid.h>
+#include <linaos/module.h>
 #include "hid-ids.h"
 
 static int accutouch_input_mapping(struct hid_device *hdev,

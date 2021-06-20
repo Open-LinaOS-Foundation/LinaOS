@@ -20,7 +20,7 @@ LED sub-node properties:
 - reg : LED channel number (1..N)
 - label :  (optional)
   see Documentation/devicetree/bindings/leds/common.txt
-- linux,default-trigger :  (optional)
+- linaos,default-trigger :  (optional)
   see Documentation/devicetree/bindings/leds/common.txt
 
 

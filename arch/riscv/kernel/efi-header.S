@@ -4,8 +4,8 @@
  * Adapted from arch/arm64/kernel/efi-header.S
  */
 
-#include <linux/pe.h>
-#include <linux/sizes.h>
+#include <linaos/pe.h>
+#include <linaos/sizes.h>
 
 	.macro	__EFI_PE_HEADER
 	.long	PE_MAGIC

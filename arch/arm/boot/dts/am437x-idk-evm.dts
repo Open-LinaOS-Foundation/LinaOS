@@ -107,7 +107,7 @@
 
 		switch0 {
 			label = "power-button";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio4 2 GPIO_ACTIVE_LOW>;
 		};
 	};

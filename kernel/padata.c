@@ -24,17 +24,17 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <linux/completion.h>
-#include <linux/export.h>
-#include <linux/cpumask.h>
-#include <linux/err.h>
-#include <linux/cpu.h>
-#include <linux/padata.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/rcupdate.h>
+#include <linaos/completion.h>
+#include <linaos/export.h>
+#include <linaos/cpumask.h>
+#include <linaos/err.h>
+#include <linaos/cpu.h>
+#include <linaos/padata.h>
+#include <linaos/mutex.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/rcupdate.h>
 
 #define	PADATA_WORK_ONSTACK	1	/* Work's memory is on stack */
 

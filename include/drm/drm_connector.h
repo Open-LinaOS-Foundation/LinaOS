@@ -23,10 +23,10 @@
 #ifndef __DRM_CONNECTOR_H__
 #define __DRM_CONNECTOR_H__
 
-#include <linux/list.h>
-#include <linux/llist.h>
-#include <linux/ctype.h>
-#include <linux/hdmi.h>
+#include <linaos/list.h>
+#include <linaos/llist.h>
+#include <linaos/ctype.h>
+#include <linaos/hdmi.h>
 #include <drm/drm_mode_object.h>
 #include <drm/drm_util.h>
 

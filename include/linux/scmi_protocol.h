@@ -8,10 +8,10 @@
 #ifndef _LINUX_SCMI_PROTOCOL_H
 #define _LINUX_SCMI_PROTOCOL_H
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/notifier.h>
-#include <linux/types.h>
+#include <linaos/bitfield.h>
+#include <linaos/device.h>
+#include <linaos/notifier.h>
+#include <linaos/types.h>
 
 #define SCMI_MAX_STR_SIZE	16
 #define SCMI_MAX_NUM_RATES	16

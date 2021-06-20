@@ -2,7 +2,7 @@
 #ifndef _PERF_UI_BROWSER_H_
 #define _PERF_UI_BROWSER_H_ 1
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <stdarg.h>
 #include <sys/types.h>
 

@@ -3,12 +3,12 @@
  * Copyright 2012-2013 Freescale Semiconductor, Inc.
  */
 
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
-#include <linux/clk.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
+#include <linaos/interrupt.h>
+#include <linaos/clockchips.h>
+#include <linaos/clk.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/sched_clock.h>
 
 /*
  * Each pit takes 0x10 Bytes register space

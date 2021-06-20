@@ -13,7 +13,7 @@ Once all writes are complete, the region is considered clean again.
 
 There is a generic logging interface that the device-mapper RAID
 implementations use to perform logging operations (see
-dm_dirty_log_type in include/linux/dm-dirty-log.h).  Various different
+dm_dirty_log_type in include/linaos/dm-dirty-log.h).  Various different
 logging implementations are available and provide different
 capabilities.  The list includes:
 
@@ -22,7 +22,7 @@ Type		Files
 ==============	==============================================================
 disk		drivers/md/dm-log.c
 core		drivers/md/dm-log.c
-userspace	drivers/md/dm-log-userspace* include/linux/dm-log-userspace.h
+userspace	drivers/md/dm-log-userspace* include/linaos/dm-log-userspace.h
 ==============	==============================================================
 
 The "disk" log type
@@ -45,7 +45,7 @@ logging requests to userspace, where a daemon receives and processes the
 request.
 
 The structure used for communication between kernel and userspace are
-located in include/linux/dm-log-userspace.h.  Due to the frequency,
+located in include/linaos/dm-log-userspace.h.  Due to the frequency,
 diversity, and 2-way communication nature of the exchanges between
 kernel and userspace, 'connector' is used as the interface for
 communication.

@@ -7,13 +7,13 @@
  * Copyright 2012 Freescale Semiconductor, Inc.
  */
 
-#include <linux/device.h>
-#include <linux/mdio-mux.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
+#include <linaos/device.h>
+#include <linaos/mdio-mux.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_mdio.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
 
 struct mdio_mux_mmioreg_state {
 	void *mux_handle;

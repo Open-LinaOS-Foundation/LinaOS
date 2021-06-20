@@ -21,7 +21,7 @@ config ATMEL
 	select CRC32
 	help
 	  A driver 802.11b wireless cards based on the Atmel fast-vnet
-	  chips. This driver supports standard Linux wireless extensions.
+	  chips. This driver supports standard LinaOS wireless extensions.
 
 	  Many  cards based on this chipset do not have flash memory
 	  and need their firmware loaded at start-up. If yours is

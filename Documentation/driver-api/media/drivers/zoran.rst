@@ -14,7 +14,7 @@ Frequently Asked Questions
 What cards are supported
 ------------------------
 
-Iomega Buz, Linux Media Labs LML33/LML33R10, Pinnacle/Miro
+Iomega Buz, LinaOS Media Labs LML33/LML33R10, Pinnacle/Miro
 DC10/DC10+/DC30/DC30+ and related boards (available under various names).
 
 Iomega Buz
@@ -59,7 +59,7 @@ Card number: 8
 
    Not autodetected, card=8 is necessary.
 
-Linux Media Labs LML33
+LinaOS Media Labs LML33
 ~~~~~~~~~~~~~~~~~~~~~~
 
 * Zoran zr36067 PCI controller
@@ -76,7 +76,7 @@ Norms: PAL (720x576 @ 25 fps), NTSC (720x480 @ 29.97 fps)
 
 Card number: 5
 
-Linux Media Labs LML33R10
+LinaOS Media Labs LML33R10
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Zoran zr36067 PCI controller
@@ -397,7 +397,7 @@ your IRQs and make sure the card has its own interrupts.
 Programming interface
 ---------------------
 
-This driver conforms to video4linux2. Support for V4L1 and for the custom
+This driver conforms to video4linaos2. Support for V4L1 and for the custom
 zoran ioctls has been removed in kernel 2.6.38.
 
 For programming example, please, look at lavrec.c and lavplay.c code in
@@ -422,11 +422,11 @@ TV viewing:
 
 * xawtv
 * kwintv
-* probably any TV application that supports video4linux or video4linux2.
+* probably any TV application that supports video4linaos or video4linaos2.
 
 MJPEG capture/playback:
 
-* mjpegtools/lavtools (or Linux Video Studio)
+* mjpegtools/lavtools (or LinaOS Video Studio)
 * gstreamer
 * mplayer
 
@@ -434,13 +434,13 @@ General raw capture:
 
 * xawtv
 * gstreamer
-* probably any application that supports video4linux or video4linux2
+* probably any application that supports video4linaos or video4linaos2
 
 Video editing:
 
 * Cinelerra
 * MainActor
-* mjpegtools (or Linux Video Studio)
+* mjpegtools (or LinaOS Video Studio)
 
 
 Concerning buffer sizes, quality, output size etc.

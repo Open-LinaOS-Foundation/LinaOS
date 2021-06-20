@@ -38,24 +38,24 @@
  *  out_of_space hacks, D. Gilbert (dpg) 990608
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/unistd.h>
-#include <linux/spinlock.h>
-#include <linux/kmod.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/mutex.h>
-#include <linux/async.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/completion.h>
+#include <linaos/unistd.h>
+#include <linaos/spinlock.h>
+#include <linaos/kmod.h>
+#include <linaos/interrupt.h>
+#include <linaos/notifier.h>
+#include <linaos/cpu.h>
+#include <linaos/mutex.h>
+#include <linaos/async.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi.h>

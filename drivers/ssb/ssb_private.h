@@ -5,9 +5,9 @@
 #define PFX		"ssb: "
 #define pr_fmt(fmt)	PFX fmt
 
-#include <linux/ssb/ssb.h>
-#include <linux/types.h>
-#include <linux/bcm47xx_wdt.h>
+#include <linaos/ssb/ssb.h>
+#include <linaos/types.h>
+#include <linaos/bcm47xx_wdt.h>
 
 
 /* pci.c */

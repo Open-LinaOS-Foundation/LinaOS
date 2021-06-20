@@ -11,11 +11,11 @@
  * Fibre Channel exchange and sequence handling.
  */
 
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/log2.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/log2.h>
 
 #include <scsi/fc/fc_fc2.h>
 

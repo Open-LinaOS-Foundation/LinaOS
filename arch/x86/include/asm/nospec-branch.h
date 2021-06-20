@@ -3,8 +3,8 @@
 #ifndef _ASM_X86_NOSPEC_BRANCH_H_
 #define _ASM_X86_NOSPEC_BRANCH_H_
 
-#include <linux/static_key.h>
-#include <linux/objtool.h>
+#include <linaos/static_key.h>
+#include <linaos/objtool.h>
 
 #include <asm/alternative.h>
 #include <asm/cpufeatures.h>

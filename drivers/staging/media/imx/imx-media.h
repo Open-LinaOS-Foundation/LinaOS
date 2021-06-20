@@ -7,7 +7,7 @@
 #ifndef _IMX_MEDIA_H
 #define _IMX_MEDIA_H
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-fwnode.h>

@@ -32,7 +32,7 @@
 
 		button-reset {
 			label = "reset";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio_ao GPIOAO_3 GPIO_ACTIVE_HIGH>;
 		};
 	};
@@ -78,5 +78,5 @@
 };
 
 &ir {
-	linux,rc-map-name = "rc-videostrong-kii-pro";
+	linaos,rc-map-name = "rc-videostrong-kii-pro";
 };

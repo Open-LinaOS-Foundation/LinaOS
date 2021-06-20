@@ -3,20 +3,20 @@
  * Miscellaneous Mac68K-specific stuff
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/mm.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/time.h>
+#include <linaos/rtc.h>
+#include <linaos/mm.h>
 
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/pmu.h>
+#include <linaos/adb.h>
+#include <linaos/cuda.h>
+#include <linaos/pmu.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/segment.h>
 #include <asm/setup.h>

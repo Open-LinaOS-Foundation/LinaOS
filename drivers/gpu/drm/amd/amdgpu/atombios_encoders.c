@@ -24,7 +24,7 @@
  *          Alex Deucher
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_crtc_helper.h>
 #include <drm/amdgpu_drm.h>
@@ -34,7 +34,7 @@
 #include "atom.h"
 #include "atombios_encoders.h"
 #include "atombios_dp.h"
-#include <linux/backlight.h>
+#include <linaos/backlight.h>
 #include "bif/bif_4_1_d.h"
 
 u8

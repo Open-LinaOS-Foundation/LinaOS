@@ -2,14 +2,14 @@
 /*
  * Handling of a single switch port
  *
- * Copyright (c) 2017 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2017 Savoir-faire LinaOS Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairelinaos.com>
  */
 
-#include <linux/if_bridge.h>
-#include <linux/notifier.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
+#include <linaos/if_bridge.h>
+#include <linaos/notifier.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
 
 #include "dsa_priv.h"
 

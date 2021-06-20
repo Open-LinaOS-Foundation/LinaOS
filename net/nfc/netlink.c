@@ -16,8 +16,8 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": %s: " fmt, __func__
 
 #include <net/genetlink.h>
-#include <linux/nfc.h>
-#include <linux/slab.h>
+#include <linaos/nfc.h>
+#include <linaos/slab.h>
 
 #include "nfc.h"
 #include "llcp.h"

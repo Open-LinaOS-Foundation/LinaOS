@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/gfp.h>
-#include <linux/workqueue.h>
+#include <linaos/gfp.h>
+#include <linaos/workqueue.h>
 #include <crypto/internal/skcipher.h>
 
 #include "nitrox_common.h"

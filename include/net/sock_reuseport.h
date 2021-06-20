@@ -2,10 +2,10 @@
 #ifndef _SOCK_REUSEPORT_H
 #define _SOCK_REUSEPORT_H
 
-#include <linux/filter.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
+#include <linaos/filter.h>
+#include <linaos/skbuff.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
 #include <net/sock.h>
 
 extern spinlock_t reuseport_lock;

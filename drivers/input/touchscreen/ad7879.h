@@ -8,7 +8,7 @@
 #ifndef _AD7879_H_
 #define _AD7879_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct device;
 struct regmap;

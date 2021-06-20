@@ -6,18 +6,18 @@
 #ifndef BCM_VK_H
 #define BCM_VK_H
 
-#include <linux/atomic.h>
-#include <linux/firmware.h>
-#include <linux/irq.h>
-#include <linux/kref.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/sched/signal.h>
-#include <linux/tty.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/misc/bcm_vk.h>
+#include <linaos/atomic.h>
+#include <linaos/firmware.h>
+#include <linaos/irq.h>
+#include <linaos/kref.h>
+#include <linaos/miscdevice.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/poll.h>
+#include <linaos/sched/signal.h>
+#include <linaos/tty.h>
+#include <linaos/uaccess.h>
+#include <uapi/linaos/misc/bcm_vk.h>
 
 #include "bcm_vk_msg.h"
 

@@ -5,13 +5,13 @@
  * Authors:	Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
@@ -58,7 +58,7 @@
 	from NS. Anyone is advised to find these differences
 	and explain to me, why I am wrong 8).
 
-	--- Linux has no EOI event, so that we cannot estimate true class
+	--- LinaOS has no EOI event, so that we cannot estimate true class
 	idle time. Workaround is to consider the next dequeue event
 	as sign that previous packet is finished. This is wrong because of
 	internal device queueing, but on a permanently loaded link it is true.

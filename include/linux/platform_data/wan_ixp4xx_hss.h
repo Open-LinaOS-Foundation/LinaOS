@@ -2,7 +2,7 @@
 #ifndef __PLATFORM_DATA_WAN_IXP4XX_HSS_H
 #define __PLATFORM_DATA_WAN_IXP4XX_HSS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Information about built-in HSS (synchronous serial) interfaces */
 struct hss_plat_info {

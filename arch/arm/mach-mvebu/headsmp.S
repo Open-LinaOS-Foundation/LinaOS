@@ -18,8 +18,8 @@
  * problems.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 
 #include <asm/assembler.h>
 

@@ -17,18 +17,18 @@
  *
  *
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_qos.h>
+#include <linaos/timer.h>
+#include <linaos/delay.h>
+#include <linaos/dmi.h>
+#include <linaos/interrupt.h>
 
 #include <asm/iosf_mbi.h>
 
-#include "../../include/linux/atomisp_gmin_platform.h"
+#include "../../include/linaos/atomisp_gmin_platform.h"
 
 #include "atomisp_cmd.h"
 #include "atomisp_common.h"

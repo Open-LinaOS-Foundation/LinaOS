@@ -5,7 +5,7 @@
 #
 # Copyright (C) IBM Corporation, 2015
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@linaos.ibm.com>
 
 # per_version_boot_params bootparam-string config-file seconds
 #

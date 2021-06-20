@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
 
 #include <asm/xen/hypercall.h>
 #include <xen/xen.h>
@@ -461,7 +461,7 @@ static struct perf_guest_info_callbacks xen_guest_cbs = {
 	.get_guest_ip           = xen_get_guest_ip,
 };
 
-/* Convert registers from Xen's format to Linux' */
+/* Convert registers from Xen's format to LinaOS' */
 static void xen_convert_regs(const struct xen_pmu_regs *xen_regs,
 			     struct pt_regs *regs, uint64_t pmu_flags)
 {

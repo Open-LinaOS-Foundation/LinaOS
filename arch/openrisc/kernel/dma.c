@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * OpenRISC Linux
+ * OpenRISC LinaOS
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -13,8 +13,8 @@
  * DMA mapping callbacks...
  */
 
-#include <linux/dma-map-ops.h>
-#include <linux/pagewalk.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/pagewalk.h>
 
 #include <asm/cpuinfo.h>
 #include <asm/spr_defs.h>

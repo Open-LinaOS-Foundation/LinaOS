@@ -5,19 +5,19 @@
  *    Copyright IBM Corp. 2007, 2020
  *    Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  *		 David Hildenbrand <david@redhat.com>
- *		 Janosch Frank <frankja@linux.vnet.ibm.com>
+ *		 Janosch Frank <frankja@linaos.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/pagewalk.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/swapops.h>
-#include <linux/ksm.h>
-#include <linux/mman.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/pagewalk.h>
+#include <linaos/swap.h>
+#include <linaos/smp.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/swapops.h>
+#include <linaos/ksm.h>
+#include <linaos/mman.h>
+#include <linaos/pgtable.h>
 
 #include <asm/pgalloc.h>
 #include <asm/gmap.h>
@@ -2687,7 +2687,7 @@ static const struct mm_walk_ops reset_acc_walk_ops = {
 	.pte_entry		= __s390_reset_acc,
 };
 
-#include <linux/sched/mm.h>
+#include <linaos/sched/mm.h>
 void s390_reset_acc(struct mm_struct *mm)
 {
 	if (!mm_is_protected(mm))

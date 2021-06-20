@@ -9,7 +9,7 @@
  *
  * based on work by Grant Guenther <grant@torque.net> and Phil Blundell.
  *
- * Cleaned up include files - Russell King <linux@arm.uk.linux.org>
+ * Cleaned up include files - Russell King <linaos@arm.uk.linaos.org>
  * DMA support - Bert De Jonghe <bert@sophis.be>
  * Many ECP bugs fixed.  Fred Barnes & Jamie Lokier, 1999
  * More PCI support now conditional on CONFIG_PCI, 03/2001, Paul G.
@@ -43,28 +43,28 @@
  * but rather will start at port->base_hi.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/pnp.h>
-#include <linux/platform_device.h>
-#include <linux/sysctl.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/sched/signal.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pci.h>
+#include <linaos/pnp.h>
+#include <linaos/platform_device.h>
+#include <linaos/sysctl.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 #include <asm/dma.h>
 
-#include <linux/parport.h>
-#include <linux/parport_pc.h>
-#include <linux/via.h>
+#include <linaos/parport.h>
+#include <linaos/parport_pc.h>
+#include <linaos/via.h>
 #include <asm/parport.h>
 
 #define PARPORT_PC_MAX_PORTS PARPORT_MAX

@@ -7,9 +7,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/serial_core.h>
 
 static void sim_write(struct console *con, const char *s, unsigned n)
 {

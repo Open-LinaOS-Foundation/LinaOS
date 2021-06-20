@@ -84,7 +84,7 @@ struct e820_entry {
  * this size.
  */
 
-#include <linux/numa.h>
+#include <linaos/numa.h>
 
 #define E820_MAX_ENTRIES	(E820_MAX_ENTRIES_ZEROPAGE + 3*MAX_NUMNODES)
 

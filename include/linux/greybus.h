@@ -11,27 +11,27 @@
 
 #ifdef __KERNEL__
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/idr.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/idr.h>
 
-#include <linux/greybus/greybus_id.h>
-#include <linux/greybus/greybus_manifest.h>
-#include <linux/greybus/greybus_protocols.h>
-#include <linux/greybus/manifest.h>
-#include <linux/greybus/hd.h>
-#include <linux/greybus/svc.h>
-#include <linux/greybus/control.h>
-#include <linux/greybus/module.h>
-#include <linux/greybus/interface.h>
-#include <linux/greybus/bundle.h>
-#include <linux/greybus/connection.h>
-#include <linux/greybus/operation.h>
+#include <linaos/greybus/greybus_id.h>
+#include <linaos/greybus/greybus_manifest.h>
+#include <linaos/greybus/greybus_protocols.h>
+#include <linaos/greybus/manifest.h>
+#include <linaos/greybus/hd.h>
+#include <linaos/greybus/svc.h>
+#include <linaos/greybus/control.h>
+#include <linaos/greybus/module.h>
+#include <linaos/greybus/interface.h>
+#include <linaos/greybus/bundle.h>
+#include <linaos/greybus/connection.h>
+#include <linaos/greybus/operation.h>
 
 /* Matches up with the Greybus Protocol specification document */
 #define GREYBUS_VERSION_MAJOR	0x00

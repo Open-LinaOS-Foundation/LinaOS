@@ -8,19 +8,19 @@
 #define KMSG_COMPONENT "dcssblk"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/pfn_t.h>
-#include <linux/uio.h>
-#include <linux/dax.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/ctype.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/completion.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/pfn_t.h>
+#include <linaos/uio.h>
+#include <linaos/dax.h>
 #include <asm/extmem.h>
 #include <asm/io.h>
 

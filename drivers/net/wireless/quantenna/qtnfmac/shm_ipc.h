@@ -4,10 +4,10 @@
 #ifndef _QTN_FMAC_SHM_IPC_H_
 #define _QTN_FMAC_SHM_IPC_H_
 
-#include <linux/workqueue.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <linaos/workqueue.h>
+#include <linaos/completion.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
 
 #include "shm_ipc_defs.h"
 

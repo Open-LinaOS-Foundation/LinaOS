@@ -18,24 +18,24 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/rtnetlink.h>
-#include <linux/timer.h>
-#include <linux/platform_device.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/net.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/crc32.h>
+#include <linaos/mii.h>
+#include <linaos/device.h>
+#include <linaos/pci.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/timer.h>
+#include <linaos/platform_device.h>
+#include <linaos/gfp.h>
 
 #include <asm/io.h>
 #include <asm/tsi108.h>
@@ -1601,7 +1601,7 @@ tsi108_init_one(struct platform_device *pdev)
 	dev->netdev_ops = &tsi108_netdev_ops;
 	dev->ethtool_ops = &tsi108_ethtool_ops;
 
-	/* Apparently, the Linux networking code won't use scatter-gather
+	/* Apparently, the LinaOS networking code won't use scatter-gather
 	 * if the hardware doesn't do checksums.  However, it's faster
 	 * to checksum in place and use SG, as (among other reasons)
 	 * the cache won't be dirtied (which then has to be flushed

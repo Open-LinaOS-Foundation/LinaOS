@@ -3,11 +3,11 @@
  * ide-floppy IOCTLs handling.
  */
 
-#include <linux/kernel.h>
-#include <linux/ide.h>
-#include <linux/compat.h>
-#include <linux/cdrom.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/ide.h>
+#include <linaos/compat.h>
+#include <linaos/cdrom.h>
+#include <linaos/mutex.h>
 
 #include <asm/unaligned.h>
 

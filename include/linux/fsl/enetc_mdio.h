@@ -4,7 +4,7 @@
 #ifndef _FSL_ENETC_MDIO_H_
 #define _FSL_ENETC_MDIO_H_
 
-#include <linux/phy.h>
+#include <linaos/phy.h>
 
 /* PCS registers */
 #define ENETC_PCS_LINK_TIMER1			0x12
@@ -18,7 +18,7 @@
 #define ENETC_PCS_IF_MODE_DUPLEX_HALF		BIT(3)
 
 /* Not a mistake, the SerDes PLL needs to be set at 3.125 GHz by Reset
- * Configuration Word (RCW, outside Linux control) for 2.5G SGMII mode. The PCS
+ * Configuration Word (RCW, outside LinaOS control) for 2.5G SGMII mode. The PCS
  * still thinks it's at gigabit.
  */
 enum enetc_pcs_speed {

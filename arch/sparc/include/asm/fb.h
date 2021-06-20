@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _SPARC_FB_H_
 #define _SPARC_FB_H_
-#include <linux/console.h>
-#include <linux/fb.h>
-#include <linux/fs.h>
+#include <linaos/console.h>
+#include <linaos/fb.h>
+#include <linaos/fs.h>
 #include <asm/page.h>
 #include <asm/prom.h>
 

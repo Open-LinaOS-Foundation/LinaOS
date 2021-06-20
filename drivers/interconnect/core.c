@@ -6,18 +6,18 @@
  * Author: Georgi Djakov <georgi.djakov@linaro.org>
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/interconnect.h>
-#include <linux/interconnect-provider.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/overflow.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/idr.h>
+#include <linaos/init.h>
+#include <linaos/interconnect.h>
+#include <linaos/interconnect-provider.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/overflow.h>
 
 #include "internal.h"
 

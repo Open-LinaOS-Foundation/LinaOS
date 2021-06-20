@@ -1,43 +1,43 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/drivers/usb/gadget/s3c2410_udc.c
+ * linaos/drivers/usb/gadget/s3c2410_udc.c
  *
  * Samsung S3C24xx series on-chip full speed USB device controllers
  *
  * Copyright (C) 2004-2007 Herbert Pötzl - Arnaud Patard
- *	Additional cleanups by Ben Dooks <ben-linux@fluff.org>
+ *	Additional cleanups by Ben Dooks <ben-linaos@fluff.org>
  */
 
 #define pr_fmt(fmt) "s3c2410_udc: " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/prefetch.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/timer.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/gpio.h>
+#include <linaos/prefetch.h>
+#include <linaos/io.h>
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
-#include <linux/usb.h>
-#include <linux/usb/gadget.h>
+#include <linaos/usb.h>
+#include <linaos/usb/gadget.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>
 #include <asm/unaligned.h>
 
-#include <linux/platform_data/usb-s3c2410_udc.h>
+#include <linaos/platform_data/usb-s3c2410_udc.h>
 
 #include "s3c2410_udc.h"
 #include "s3c2410_udc_regs.h"

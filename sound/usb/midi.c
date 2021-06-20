@@ -35,20 +35,20 @@
  * SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/midi.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
+#include <linaos/usb.h>
+#include <linaos/wait.h>
+#include <linaos/usb/audio.h>
+#include <linaos/usb/midi.h>
+#include <linaos/module.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

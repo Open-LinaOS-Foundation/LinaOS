@@ -10,14 +10,14 @@
 #include <sound/pcm_params.h>
 #include <sound/soc-dapm.h>
 #include <sound/jack.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/driver.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/gpio.h>
+#include <linaos/module.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/acpi.h>
 
 #include "acp.h"
 #include "../codecs/da7219.h"

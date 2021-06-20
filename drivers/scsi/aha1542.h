@@ -2,7 +2,7 @@
 #ifndef _AHA1542_H_
 #define _AHA1542_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* I/O Port interface 4.2 */
 /* READ */

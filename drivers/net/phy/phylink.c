@@ -5,19 +5,19 @@
  *
  * Copyright (C) 2015 Russell King
  */
-#include <linux/ethtool.h>
-#include <linux/export.h>
-#include <linux/gpio/consumer.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/phylink.h>
-#include <linux/rtnetlink.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <linaos/ethtool.h>
+#include <linaos/export.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/netdevice.h>
+#include <linaos/of.h>
+#include <linaos/of_mdio.h>
+#include <linaos/phy.h>
+#include <linaos/phy_fixed.h>
+#include <linaos/phylink.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
+#include <linaos/workqueue.h>
 
 #include "sfp.h"
 #include "swphy.h"

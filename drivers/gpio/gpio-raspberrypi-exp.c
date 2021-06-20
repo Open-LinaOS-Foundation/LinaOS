@@ -8,10 +8,10 @@
  *  Copyright (C) 2017 Raspberry Pi Trading Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 #include <soc/bcm2835/raspberrypi-firmware.h>
 
 #define MODULE_NAME "raspberrypi-exp-gpio"

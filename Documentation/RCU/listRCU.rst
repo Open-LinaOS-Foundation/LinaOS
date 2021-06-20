@@ -282,11 +282,11 @@ Example 4: Eliminating Stale Data
 
 The auditing example above tolerates stale data, as do most algorithms
 that are tracking external state.  Because there is a delay from the
-time the external state changes before Linux becomes aware of the change,
+time the external state changes before LinaOS becomes aware of the change,
 additional RCU-induced staleness is generally not a problem.
 
 However, there are many examples where stale data cannot be tolerated.
-One example in the Linux kernel is the System V IPC (see the shm_lock()
+One example in the LinaOS kernel is the System V IPC (see the shm_lock()
 function in ipc/shm.c).  This code checks a *deleted* flag under a
 per-entry spinlock, and, if the *deleted* flag is set, pretends that the
 entry does not exist.  For this to be helpful, the search function must

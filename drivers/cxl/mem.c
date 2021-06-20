@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2020 Intel Corporation. All rights reserved. */
-#include <uapi/linux/cxl_mem.h>
-#include <linux/security.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/sizes.h>
-#include <linux/mutex.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <uapi/linaos/cxl_mem.h>
+#include <linaos/security.h>
+#include <linaos/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/sizes.h>
+#include <linaos/mutex.h>
+#include <linaos/cdev.h>
+#include <linaos/idr.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 #include "pci.h"
 #include "cxl.h"
 

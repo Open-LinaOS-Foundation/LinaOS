@@ -2,7 +2,7 @@
 #define _GNU_SOURCE
 #include <test_progs.h>
 #include <sys/stat.h>
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include <sys/syscall.h>
 
 #define MAX_PATH_LEN		128

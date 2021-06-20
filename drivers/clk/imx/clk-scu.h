@@ -7,8 +7,8 @@
 #ifndef __IMX_CLK_SCU_H
 #define __IMX_CLK_SCU_H
 
-#include <linux/firmware/imx/sci.h>
-#include <linux/of.h>
+#include <linaos/firmware/imx/sci.h>
+#include <linaos/of.h>
 
 extern struct list_head imx_scu_clks[];
 extern const struct dev_pm_ops imx_clk_lpcg_scu_pm_ops;

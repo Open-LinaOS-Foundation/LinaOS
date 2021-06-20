@@ -2,7 +2,7 @@
 #ifndef __KVM_X86_SVM_OPS_H
 #define __KVM_X86_SVM_OPS_H
 
-#include <linux/compiler_types.h>
+#include <linaos/compiler_types.h>
 
 #include <asm/kvm_host.h>
 

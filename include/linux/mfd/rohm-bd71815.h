@@ -12,7 +12,7 @@
 #ifndef _MFD_BD71815_H
 #define _MFD_BD71815_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 enum {
 	BD71815_BUCK1	=	0,

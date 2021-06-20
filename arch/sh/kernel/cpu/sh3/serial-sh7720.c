@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/serial_sci.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
+#include <linaos/serial_sci.h>
+#include <linaos/serial_core.h>
+#include <linaos/io.h>
 #include <cpu/serial.h>
 #include <cpu/gpio.h>
 

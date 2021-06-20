@@ -11,12 +11,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/input/mt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/hid.h>
+#include <linaos/input/mt.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 
 #include "hid-ids.h"
 

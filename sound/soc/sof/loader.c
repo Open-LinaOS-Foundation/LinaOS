@@ -5,12 +5,12 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@linaos.intel.com>
 //
 // Generic firmware loader.
 //
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 #include <sound/sof.h>
 #include <sound/sof/ext_manifest.h>
 #include "ops.h"

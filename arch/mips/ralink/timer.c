@@ -6,11 +6,11 @@
  * Copyright (C) 2013 John Crispin <john@phrozen.org>
 */
 
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/of_gpio.h>
-#include <linux/clk.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/timer.h>
+#include <linaos/of_gpio.h>
+#include <linaos/clk.h>
 
 #include <asm/mach-ralink/ralink_regs.h>
 

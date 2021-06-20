@@ -1,7 +1,7 @@
 /*
 	drivers/net/ethernet/dec/tulip/21142.c
 
-	Copyright 2000,2001  The Linux Kernel Team
+	Copyright 2000,2001  The LinaOS Kernel Team
 	Written/copyright 1994-2001 by Donald Becker.
 
 	This software may be used and distributed according to the terms
@@ -14,7 +14,7 @@
 	Please submit bugs to http://bugzilla.kernel.org/ .
 */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include "tulip.h"
 
 

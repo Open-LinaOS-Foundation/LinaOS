@@ -2,15 +2,15 @@
 /*
  * isac.c   ISAC specific routines
  *
- * Author       Karsten Keil <keil@isdn4linux.de>
+ * Author       Karsten Keil <keil@isdn4linaos.de>
  *
- * Copyright 2009  by Karsten Keil <keil@isdn4linux.de>
+ * Copyright 2009  by Karsten Keil <keil@isdn4linaos.de>
  */
 
-#include <linux/irqreturn.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mISDNhw.h>
+#include <linaos/irqreturn.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/mISDNhw.h>
 #include "ipac.h"
 
 

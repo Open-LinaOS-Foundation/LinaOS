@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/hugetlb.h>
-#include <linux/err.h>
+#include <linaos/hugetlb.h>
+#include <linaos/err.h>
 
 int pud_huge(pud_t pud)
 {

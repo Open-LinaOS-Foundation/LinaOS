@@ -3,8 +3,8 @@
 
 #ifndef __HCLGEVF_CMD_H
 #define __HCLGEVF_CMD_H
-#include <linux/io.h>
-#include <linux/types.h>
+#include <linaos/io.h>
+#include <linaos/types.h>
 #include "hnae3.h"
 
 #define HCLGEVF_CMDQ_TX_TIMEOUT		30000

@@ -2,13 +2,13 @@
 /*
  * Cache flush operations for the Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _ASM_CACHEFLUSH_H
 #define _ASM_CACHEFLUSH_H
 
-#include <linux/mm_types.h>
+#include <linaos/mm_types.h>
 
 /* Cache flushing:
  *

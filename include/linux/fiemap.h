@@ -2,8 +2,8 @@
 #ifndef _LINUX_FIEMAP_H
 #define _LINUX_FIEMAP_H 1
 
-#include <uapi/linux/fiemap.h>
-#include <linux/fs.h>
+#include <uapi/linaos/fiemap.h>
+#include <linaos/fs.h>
 
 struct fiemap_extent_info {
 	unsigned int fi_flags;		/* Flags as passed from user */

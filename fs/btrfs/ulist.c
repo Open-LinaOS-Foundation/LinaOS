@@ -4,7 +4,7 @@
  * written by Arne Jansen <sensille@gmx.net>
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "ulist.h"
 #include "ctree.h"
 

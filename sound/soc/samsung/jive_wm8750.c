@@ -6,7 +6,7 @@
 //	Copyright 2005 Wolfson Microelectronics PLC.
 //	Copyright 2005 Openedhand Ltd.
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/soc.h>
 
 #include <asm/mach-types.h>

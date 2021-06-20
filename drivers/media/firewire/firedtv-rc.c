@@ -5,13 +5,13 @@
  * Copyright (C) 2004 Andreas Monitzer <andy@monitzer.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/bitops.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
 #include "firedtv.h"
 

@@ -8,14 +8,14 @@
  *              David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/mtd/super.h>
-#include <linux/namei.h>
-#include <linux/export.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/major.h>
-#include <linux/backing-dev.h>
-#include <linux/fs_context.h>
+#include <linaos/mtd/super.h>
+#include <linaos/namei.h>
+#include <linaos/export.h>
+#include <linaos/ctype.h>
+#include <linaos/slab.h>
+#include <linaos/major.h>
+#include <linaos/backing-dev.h>
+#include <linaos/fs_context.h>
 #include "mtdcore.h"
 
 /*

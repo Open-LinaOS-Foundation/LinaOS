@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _NETFILTER_NF_NAT_H
 #define _NETFILTER_NF_NAT_H
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_conntrack_tuple_common.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/nf_conntrack_tuple_common.h>
 
 #define NF_NAT_RANGE_MAP_IPS			(1 << 0)
 #define NF_NAT_RANGE_PROTO_SPECIFIED		(1 << 1)

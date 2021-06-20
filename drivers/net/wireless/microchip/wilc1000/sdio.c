@@ -4,12 +4,12 @@
  * All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio.h>
-#include <linux/of_irq.h>
+#include <linaos/clk.h>
+#include <linaos/mmc/sdio_func.h>
+#include <linaos/mmc/sdio_ids.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/of_irq.h>
 
 #include "netdev.h"
 #include "cfg80211.h"

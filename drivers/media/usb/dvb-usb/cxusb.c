@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* DVB USB compliant linux driver for Conexant USB reference design.
+/* DVB USB compliant linaos driver for Conexant USB reference design.
  *
  * The Conexant reference design I saw on their website was only for analogue
  * capturing (using the cx25842). The box I took to write this driver (reverse
@@ -14,19 +14,19 @@
  *
  *
  * Copyright (C) 2005 Patrick Boettcher (patrick.boettcher@posteo.de)
- * Copyright (C) 2006 Michael Krufky (mkrufky@linuxtv.org)
+ * Copyright (C) 2006 Michael Krufky (mkrufky@linaostv.org)
  * Copyright (C) 2006, 2007 Chris Pascoe (c.pascoe@itee.uq.edu.au)
  * Copyright (C) 2011, 2017 Maciej S. Szmigiero (mail@maciej.szmigiero.name)
  *
  * see Documentation/driver-api/media/drivers/dvb-usb.rst for more information
  */
 #include <media/tuner.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/vmalloc.h>
 
 #include "cxusb.h"
 
@@ -2436,7 +2436,7 @@ static struct usb_driver cxusb_driver = {
 module_usb_driver(cxusb_driver);
 
 MODULE_AUTHOR("Patrick Boettcher <patrick.boettcher@posteo.de>");
-MODULE_AUTHOR("Michael Krufky <mkrufky@linuxtv.org>");
+MODULE_AUTHOR("Michael Krufky <mkrufky@linaostv.org>");
 MODULE_AUTHOR("Chris Pascoe <c.pascoe@itee.uq.edu.au>");
 MODULE_AUTHOR("Maciej S. Szmigiero <mail@maciej.szmigiero.name>");
 MODULE_DESCRIPTION("Driver for Conexant USB2.0 hybrid reference design");

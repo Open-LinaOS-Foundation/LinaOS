@@ -15,13 +15,13 @@
 		wlan2g {
 			label = "ap120c-ac:green:wlan2g";
 			gpios = <&tlmm 3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy0tpt";
+			linaos,default-trigger = "phy0tpt";
 		};
 
 		wlan5g {
 			label = "ap120c-ac:red:wlan5g";
 			gpios = <&tlmm 2 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy1tpt";
+			linaos,default-trigger = "phy1tpt";
 		};
 	};
 };

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux Socket Filter - Kernel level socket filtering
+ * LinaOS Socket Filter - Kernel level socket filtering
  *
  * Based on the design of the Berkeley Packet Filter. The new
  * internal format has been designed by PLUMgrid:
@@ -17,21 +17,21 @@
  * Kris Katterjohn - Added many additional checks in bpf_check_classic()
  */
 
-#include <uapi/linux/btf.h>
-#include <linux/filter.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/random.h>
-#include <linux/moduleloader.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/objtool.h>
-#include <linux/rbtree_latch.h>
-#include <linux/kallsyms.h>
-#include <linux/rcupdate.h>
-#include <linux/perf_event.h>
-#include <linux/extable.h>
-#include <linux/log2.h>
+#include <uapi/linaos/btf.h>
+#include <linaos/filter.h>
+#include <linaos/skbuff.h>
+#include <linaos/vmalloc.h>
+#include <linaos/random.h>
+#include <linaos/moduleloader.h>
+#include <linaos/bpf.h>
+#include <linaos/btf.h>
+#include <linaos/objtool.h>
+#include <linaos/rbtree_latch.h>
+#include <linaos/kallsyms.h>
+#include <linaos/rcupdate.h>
+#include <linaos/perf_event.h>
+#include <linaos/extable.h>
+#include <linaos/log2.h>
 #include <asm/unaligned.h>
 
 /* Registers */
@@ -2374,7 +2374,7 @@ EXPORT_SYMBOL(bpf_stats_enabled_key);
 
 /* All definitions of tracepoints related to BPF. */
 #define CREATE_TRACE_POINTS
-#include <linux/bpf_trace.h>
+#include <linaos/bpf_trace.h>
 
 EXPORT_TRACEPOINT_SYMBOL_GPL(xdp_exception);
 EXPORT_TRACEPOINT_SYMBOL_GPL(xdp_bulk_tx);

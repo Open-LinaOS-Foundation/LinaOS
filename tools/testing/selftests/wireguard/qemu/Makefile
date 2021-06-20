@@ -44,7 +44,7 @@ endef
 $(eval $(call tar_download,MUSL,musl,1.2.0,.tar.gz,https://musl.libc.org/releases/,c6de7b191139142d3f9a7b5b702c9cae1b5ee6e7f57e582da9328629408fd4e8))
 $(eval $(call tar_download,IPERF,iperf,3.7,.tar.gz,https://downloads.es.net/pub/iperf/,d846040224317caf2f75c843d309a950a7db23f9b44b94688ccbe557d6d1710c))
 $(eval $(call tar_download,BASH,bash,5.0,.tar.gz,https://ftp.gnu.org/gnu/bash/,b4a80f2ac66170b2913efbfb9f2594f1f76c7b1afd11f799e22035d63077fb4d))
-$(eval $(call tar_download,IPROUTE2,iproute2,5.6.0,.tar.xz,https://www.kernel.org/pub/linux/utils/net/iproute2/,1b5b0e25ce6e23da7526ea1da044e814ad85ba761b10dd29c2b027c056b04692))
+$(eval $(call tar_download,IPROUTE2,iproute2,5.6.0,.tar.xz,https://www.kernel.org/pub/linaos/utils/net/iproute2/,1b5b0e25ce6e23da7526ea1da044e814ad85ba761b10dd29c2b027c056b04692))
 $(eval $(call tar_download,IPTABLES,iptables,1.8.4,.tar.bz2,https://www.netfilter.org/projects/iptables/files/,993a3a5490a544c2cbf2ef15cf7e7ed21af1845baf228318d5c36ef8827e157c))
 $(eval $(call tar_download,NMAP,nmap,7.80,.tar.bz2,https://nmap.org/dist/,fcfa5a0e42099e12e4bf7a68ebe6fde05553383a682e816a7ec9256ab4773faa))
 $(eval $(call tar_download,IPUTILS,iputils,s20190709,.tar.gz,https://github.com/iputils/iputils/archive/s20190709.tar.gz/#,a15720dd741d7538dd2645f9f516d193636ae4300ff7dbc8bfca757bf166490a))
@@ -96,7 +96,7 @@ ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host -machine virt,gic_version=host,accel=kvm
 else
 QEMU_MACHINE := -cpu cortex-a15 -machine virt
-CFLAGS += -march=armv7-a -mtune=cortex-a15 -mabi=aapcs-linux
+CFLAGS += -march=armv7-a -mtune=cortex-a15 -mabi=aapcs-linaos
 endif
 else ifeq ($(ARCH),armeb)
 QEMU_ARCH := arm
@@ -106,7 +106,7 @@ ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host -machine virt,gic_version=host,accel=kvm
 else
 QEMU_MACHINE := -cpu cortex-a15 -machine virt
-CFLAGS += -march=armv7-a -mabi=aapcs-linux # We don't pass -mtune=cortex-a15 due to a compiler bug on big endian.
+CFLAGS += -march=armv7-a -mabi=aapcs-linaos # We don't pass -mtune=cortex-a15 due to a compiler bug on big endian.
 LDFLAGS += -Wl,--be8
 endif
 else ifeq ($(ARCH),x86_64)
@@ -132,7 +132,7 @@ endif
 else ifeq ($(ARCH),mips64)
 QEMU_ARCH := mips64
 KERNEL_ARCH := mips
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinaos
 ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host -machine malta,accel=kvm
 CFLAGS += -EB
@@ -143,7 +143,7 @@ endif
 else ifeq ($(ARCH),mips64el)
 QEMU_ARCH := mips64el
 KERNEL_ARCH := mips
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinaos
 ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host -machine malta,accel=kvm
 CFLAGS += -EL
@@ -154,7 +154,7 @@ endif
 else ifeq ($(ARCH),mips)
 QEMU_ARCH := mips
 KERNEL_ARCH := mips
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinaos
 ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host -machine malta,accel=kvm
 CFLAGS += -EB
@@ -165,7 +165,7 @@ endif
 else ifeq ($(ARCH),mipsel)
 QEMU_ARCH := mipsel
 KERNEL_ARCH := mips
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinaos
 ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host -machine malta,accel=kvm
 CFLAGS += -EL
@@ -176,7 +176,7 @@ endif
 else ifeq ($(ARCH),powerpc64le)
 QEMU_ARCH := ppc64
 KERNEL_ARCH := powerpc
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinaos
 ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host,accel=kvm -machine pseries
 else
@@ -196,7 +196,7 @@ CFLAGS += -mcpu=powerpc -mlong-double-64 -msecure-plt
 else ifeq ($(ARCH),m68k)
 QEMU_ARCH := m68k
 KERNEL_ARCH := m68k
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinaos
 KERNEL_CMDLINE := $(shell sed -n 's/CONFIG_CMDLINE=\(.*\)/\1/p' arch/m68k.config)
 ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host,accel=kvm -machine q800 -smp 1 -append $(KERNEL_CMDLINE)
@@ -210,7 +210,7 @@ endif
 REAL_CC := $(CBUILD)-gcc
 MUSL_CC := $(BUILD_PATH)/musl-gcc
 export CC := $(MUSL_CC)
-USERSPACE_DEPS := $(MUSL_CC) $(BUILD_PATH)/include/.installed $(BUILD_PATH)/include/linux/.installed
+USERSPACE_DEPS := $(MUSL_CC) $(BUILD_PATH)/include/.installed $(BUILD_PATH)/include/linaos/.installed
 
 build: $(KERNEL_BZIMAGE)
 qemu: $(KERNEL_BZIMAGE)
@@ -247,7 +247,7 @@ $(BUILD_PATH)/init-cpio-spec.txt:
 	echo "slink /bin/ping6 ping 777 0 0" >> $@
 	echo "dir /lib 755 0 0" >> $@
 	echo "file /lib/libc.so $(MUSL_PATH)/lib/libc.so 755 0 0" >> $@
-	echo "slink /lib/ld-linux.so.1 libc.so 777 0 0" >> $@
+	echo "slink /lib/ld-linaos.so.1 libc.so 777 0 0" >> $@
 
 $(KERNEL_BUILD_PATH)/.config: kernel.config arch/$(ARCH).config
 	mkdir -p $(KERNEL_BUILD_PATH)
@@ -261,7 +261,7 @@ $(KERNEL_BUILD_PATH)/.config: kernel.config arch/$(ARCH).config
 $(KERNEL_BZIMAGE): $(KERNEL_BUILD_PATH)/.config $(BUILD_PATH)/init-cpio-spec.txt $(MUSL_PATH)/lib/libc.so $(IPERF_PATH)/src/iperf3 $(IPUTILS_PATH)/ping $(BASH_PATH)/bash $(IPROUTE2_PATH)/misc/ss $(IPROUTE2_PATH)/ip/ip $(IPTABLES_PATH)/iptables/xtables-legacy-multi $(NMAP_PATH)/ncat/ncat $(WIREGUARD_TOOLS_PATH)/src/wg $(BUILD_PATH)/init ../netns.sh $(WIREGUARD_SOURCES)
 	$(MAKE) -C $(KERNEL_PATH) O=$(KERNEL_BUILD_PATH) ARCH=$(KERNEL_ARCH) CROSS_COMPILE=$(CROSS_COMPILE)
 
-$(BUILD_PATH)/include/linux/.installed: | $(KERNEL_BUILD_PATH)/.config
+$(BUILD_PATH)/include/linaos/.installed: | $(KERNEL_BUILD_PATH)/.config
 	$(MAKE) -C $(KERNEL_PATH) O=$(KERNEL_BUILD_PATH) INSTALL_HDR_PATH=$(BUILD_PATH) ARCH=$(KERNEL_ARCH) CROSS_COMPILE=$(CROSS_COMPILE) headers_install
 	touch $@
 
@@ -277,7 +277,7 @@ $(BUILD_PATH)/include/.installed: $(MUSL_PATH)/lib/libc.so
 	touch $@
 
 $(MUSL_CC): $(MUSL_PATH)/lib/libc.so
-	sh $(MUSL_PATH)/tools/musl-gcc.specs.sh $(BUILD_PATH)/include $(MUSL_PATH)/lib /lib/ld-linux.so.1 > $(BUILD_PATH)/musl-gcc.specs
+	sh $(MUSL_PATH)/tools/musl-gcc.specs.sh $(BUILD_PATH)/include $(MUSL_PATH)/lib /lib/ld-linaos.so.1 > $(BUILD_PATH)/musl-gcc.specs
 	printf '#!/bin/sh\nexec "$(REAL_CC)" --specs="$(BUILD_PATH)/musl-gcc.specs" "$$@"\n' > $(BUILD_PATH)/musl-gcc
 	chmod +x $(BUILD_PATH)/musl-gcc
 
@@ -359,7 +359,7 @@ $(NMAP_PATH)/.installed: $(NMAP_TAR)
 	touch $@
 
 $(NMAP_PATH)/ncat/ncat: | $(NMAP_PATH)/.installed $(USERSPACE_DEPS)
-	cd $(NMAP_PATH) && ./configure --prefix=/ $(CROSS_COMPILE_FLAG) --enable-static --disable-shared --without-ndiff --without-zenmap --without-nping --with-libpcap=included --with-libpcre=included --with-libdnet=included --without-liblua --with-liblinear=included --without-nmap-update --without-openssl --with-pcap=linux --without-libssh
+	cd $(NMAP_PATH) && ./configure --prefix=/ $(CROSS_COMPILE_FLAG) --enable-static --disable-shared --without-ndiff --without-zenmap --without-nping --with-libpcap=included --with-libpcre=included --with-libdnet=included --without-liblua --with-liblinear=included --without-nmap-update --without-openssl --with-pcap=linaos --without-libssh
 	$(MAKE) -C $(NMAP_PATH)/libpcap
 	$(MAKE) -C $(NMAP_PATH)/ncat
 	$(STRIP) -s $@

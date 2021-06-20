@@ -5,25 +5,25 @@
   Extended attribute handling.
 
   Copyright (C) 2001 by Andreas Gruenbacher <a.gruenbacher@computer.org>
-  Copyright (C) 2001 SGI - Silicon Graphics, Inc <linux-xfs@oss.sgi.com>
+  Copyright (C) 2001 SGI - Silicon Graphics, Inc <linaos-xfs@oss.sgi.com>
   Copyright (c) 2004 Red Hat, Inc., James Morris <jmorris@redhat.com>
  */
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/xattr.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/evm.h>
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/fsnotify.h>
-#include <linux/audit.h>
-#include <linux/vmalloc.h>
-#include <linux/posix_acl_xattr.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/file.h>
+#include <linaos/xattr.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/security.h>
+#include <linaos/evm.h>
+#include <linaos/syscalls.h>
+#include <linaos/export.h>
+#include <linaos/fsnotify.h>
+#include <linaos/audit.h>
+#include <linaos/vmalloc.h>
+#include <linaos/posix_acl_xattr.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 static const char *
 strcmp_prefix(const char *a, const char *a_prefix)

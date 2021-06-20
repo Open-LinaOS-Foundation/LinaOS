@@ -22,15 +22,15 @@
  *	- Db1300:	  Db1200-like, no pwr ctrl, single socket (#1).
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/resource.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #include <pcmcia/ss.h>
 
@@ -52,7 +52,7 @@ struct db1x_pcmcia_sock {
 	/* previous flags for set_socket() */
 	unsigned int old_flags;
 
-	/* interrupt sources: linux irq numbers! */
+	/* interrupt sources: linaos irq numbers! */
 	int	insert_irq;	/* default carddetect irq */
 	int	stschg_irq;	/* card-status-change irq */
 	int	card_irq;	/* card irq */

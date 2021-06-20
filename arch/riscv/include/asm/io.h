@@ -11,8 +11,8 @@
 #ifndef _ASM_RISCV_IO_H
 #define _ASM_RISCV_IO_H
 
-#include <linux/types.h>
-#include <linux/pgtable.h>
+#include <linaos/types.h>
+#include <linaos/pgtable.h>
 #include <asm/mmiowb.h>
 #include <asm/early_ioremap.h>
 

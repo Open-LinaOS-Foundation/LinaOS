@@ -7,7 +7,7 @@
 #ifndef __LINUX_MFD_MC13783_H
 #define __LINUX_MFD_MC13783_H
 
-#include <linux/mfd/mc13xxx.h>
+#include <linaos/mfd/mc13xxx.h>
 
 #define	MC13783_REG_SW1A		0
 #define	MC13783_REG_SW1B		1

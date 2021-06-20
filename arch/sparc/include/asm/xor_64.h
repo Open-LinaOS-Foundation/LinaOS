@@ -6,7 +6,7 @@
  * UltraSparc Visual Instruction Set and Niagara block-init
  * twin-load instructions.
  *
- * Copyright (C) 1997, 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1997, 1999 Jakub Jelinek (jj@ultra.linaos.cz)
  * Copyright (C) 2006 David S. Miller <davem@davemloft.net>
  */
 

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/wait.h>
-#include <linux/rbtree.h>
-#include <linux/backing-dev.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/writeback.h>
-#include <linux/device.h>
+#include <linaos/wait.h>
+#include <linaos/rbtree.h>
+#include <linaos/backing-dev.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/mm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched.h>
+#include <linaos/module.h>
+#include <linaos/writeback.h>
+#include <linaos/device.h>
 #include <trace/events/writeback.h>
 
 struct backing_dev_info noop_backing_dev_info;
@@ -36,8 +36,8 @@ struct workqueue_struct *bdi_wq;
 #define K(x) ((x) << (PAGE_SHIFT - 10))
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
 static struct dentry *bdi_debug_root;
 
@@ -368,7 +368,7 @@ static void wb_exit(struct bdi_writeback *wb)
 
 #ifdef CONFIG_CGROUP_WRITEBACK
 
-#include <linux/memcontrol.h>
+#include <linaos/memcontrol.h>
 
 /*
  * cgwb_lock protects bdi->cgwb_tree, blkcg->cgwb_list, and memcg->cgwb_list.

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2018-2020 Linaro Ltd.
  */
 #ifndef _GSI_PRIVATE_H_
@@ -8,7 +8,7 @@
 
 /* === Only "gsi.c" and "gsi_trans.c" should include this file === */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct gsi_trans;
 struct gsi_ring;

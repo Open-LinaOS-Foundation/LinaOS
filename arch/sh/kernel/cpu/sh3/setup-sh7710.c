@@ -5,13 +5,13 @@
  *  Copyright (C) 2006 - 2009  Paul Mundt
  *  Copyright (C) 2007  Nobuhiro Iwamatsu
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/serial.h>
-#include <linux/serial_sci.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
+#include <linaos/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/serial.h>
+#include <linaos/serial_sci.h>
+#include <linaos/sh_timer.h>
+#include <linaos/sh_intc.h>
 #include <asm/rtc.h>
 #include <asm/platform_early.h>
 

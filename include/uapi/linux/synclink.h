@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-1.0+ WITH LinaOS-syscall-note */
 /*
  * SyncLink Multiprotocol Serial Adapter Driver
  *
@@ -14,7 +14,7 @@
 #define _UAPI_SYNCLINK_H_
 #define SYNCLINK_H_VERSION 3.6
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define BIT0	0x0001
 #define BIT1	0x0002

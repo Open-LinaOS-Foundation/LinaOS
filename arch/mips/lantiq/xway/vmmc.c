@@ -4,10 +4,10 @@
  *  Copyright (C) 2012 John Crispin <john@phrozen.org>
  */
 
-#include <linux/export.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/dma-mapping.h>
+#include <linaos/export.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_gpio.h>
+#include <linaos/dma-mapping.h>
 
 #include <lantiq_soc.h>
 

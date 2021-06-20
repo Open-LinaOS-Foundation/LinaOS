@@ -14,7 +14,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include "rsi_debugfs.h"
 #include "rsi_mgmt.h"
 #include "rsi_sdio.h"

@@ -7,10 +7,10 @@
  * This driver implements the frontend playback DAI of AXG and G12A based SoCs
  */
 
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linaos/clk.h>
+#include <linaos/regmap.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>

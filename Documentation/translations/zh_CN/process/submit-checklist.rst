@@ -1,11 +1,11 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: :ref:`Documentation/process/submit-checklist.rst <submitchecklist>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
+:Translator: Alex Shi <alex.shi@linaos.alibaba.com>
 
 .. _cn_submitchecklist:
 
-Linux内核补丁提交清单
+LinaOS内核补丁提交清单
 ~~~~~~~~~~~~~~~~~~~~~
 
 如果开发人员希望看到他们的内核补丁提交更快地被接受，那么他们应该做一些基本
@@ -13,7 +13,7 @@ Linux内核补丁提交清单
 
 这些都是在
 :ref:`Documentation/translations/zh_CN/process/submitting-patches.rst <cn_submittingpatches>`
-和其他有关提交Linux内核补丁的文档中提供的。
+和其他有关提交LinaOS内核补丁的文档中提供的。
 
 1) 如果使用工具，则包括定义/声明该工具的文件。不要依赖于其他头文件拉入您使用
    的头文件。
@@ -80,7 +80,7 @@ Linux内核补丁提交清单
 
 19) 所有新的用户空间接口都记录在 ``Documentation/ABI/`` 中。有关详细信息，
     请参阅 ``Documentation/ABI/README`` 。更改用户空间接口的补丁应该抄送
-    linux-api@vger.kernel.org。
+    linaos-api@vger.kernel.org。
 
 20) 已通过至少注入slab和page分配失败进行检查。请参阅 ``Documentation/fault-injection/``
     如果新代码是实质性的，那么添加子系统特定的故障注入可能是合适的。

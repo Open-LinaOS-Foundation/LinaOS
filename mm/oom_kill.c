@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/oom_kill.c
+ *  linaos/mm/oom_kill.c
  * 
  *  Copyright (C)  1998,2000  Rik van Riel
  *	Thanks go out to Claus Fischer for some serious inspiration and
@@ -18,31 +18,31 @@
  *  kernel subsystems and hints as to where to find out what things do.
  */
 
-#include <linux/oom.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/task.h>
-#include <linux/sched/debug.h>
-#include <linux/swap.h>
-#include <linux/timex.h>
-#include <linux/jiffies.h>
-#include <linux/cpuset.h>
-#include <linux/export.h>
-#include <linux/notifier.h>
-#include <linux/memcontrol.h>
-#include <linux/mempolicy.h>
-#include <linux/security.h>
-#include <linux/ptrace.h>
-#include <linux/freezer.h>
-#include <linux/ftrace.h>
-#include <linux/ratelimit.h>
-#include <linux/kthread.h>
-#include <linux/init.h>
-#include <linux/mmu_notifier.h>
+#include <linaos/oom.h>
+#include <linaos/mm.h>
+#include <linaos/err.h>
+#include <linaos/gfp.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/coredump.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/debug.h>
+#include <linaos/swap.h>
+#include <linaos/timex.h>
+#include <linaos/jiffies.h>
+#include <linaos/cpuset.h>
+#include <linaos/export.h>
+#include <linaos/notifier.h>
+#include <linaos/memcontrol.h>
+#include <linaos/mempolicy.h>
+#include <linaos/security.h>
+#include <linaos/ptrace.h>
+#include <linaos/freezer.h>
+#include <linaos/ftrace.h>
+#include <linaos/ratelimit.h>
+#include <linaos/kthread.h>
+#include <linaos/init.h>
+#include <linaos/mmu_notifier.h>
 
 #include <asm/tlb.h>
 #include "internal.h"

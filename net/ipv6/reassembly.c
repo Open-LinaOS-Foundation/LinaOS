@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPv6 fragment reassembly
- *	Linux INET6 implementation
+ *	LinaOS INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -14,7 +14,7 @@
  *	Andi Kleen	Make it work with multiple hosts.
  *			More RFC compliance.
  *
- *      Horst von Brand Add missing #include <linux/string.h>
+ *      Horst von Brand Add missing #include <linaos/string.h>
  *	Alexey Kuznetsov	SMP races, threading, cleanup.
  *	Patrick McHardy		LRU queue of frag heads for evictor.
  *	Mitsuru KANDA @USAGI	Register inet6_protocol{}.
@@ -25,25 +25,25 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/jiffies.h>
-#include <linux/net.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/random.h>
-#include <linux/jhash.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/jiffies.h>
+#include <linaos/net.h>
+#include <linaos/list.h>
+#include <linaos/netdevice.h>
+#include <linaos/in6.h>
+#include <linaos/ipv6.h>
+#include <linaos/icmpv6.h>
+#include <linaos/random.h>
+#include <linaos/jhash.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>

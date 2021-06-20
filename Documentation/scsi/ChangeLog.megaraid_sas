@@ -1,5 +1,5 @@
 Release Date    : Thu. Jun 19, 2014 17:00:00 PST 2014 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford
 			Kashyap Desai
 			Sumit Saxena
@@ -13,7 +13,7 @@ Old Version     : 06.803.01.00-rc1
     5. Version and Changelog update.
 -------------------------------------------------------------------------------
 Release Date    : Mon. Mar 10, 2014 17:00:00 PST 2014 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford
 			Kashyap Desai
 			Sumit Saxena
@@ -26,7 +26,7 @@ Old Version     : 06.700.06.00-rc1
     5. Version and Changelog update.
 -------------------------------------------------------------------------------
 Release Date    : Sat. Aug 31, 2013 17:00:00 PST 2013 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford
 			Kashyap Desai
 			Sumit Saxena
@@ -36,7 +36,7 @@ Old Version     : 06.600.18.00-rc1
     2. Version and Changelog update.
 -------------------------------------------------------------------------------
 Release Date    : Wed. May 15, 2013 17:00:00 PST 2013 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford
 			Kashyap Desai
 			Sumit Saxena
@@ -58,7 +58,7 @@ Old Version     : 06.506.00.00-rc1
     12.Version and Changelog update.
 -------------------------------------------------------------------------------
 Release Date    : Sat. Feb 9, 2013 17:00:00 PST 2013 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford
 Current Version : 06.506.00.00-rc1
 Old Version     : 06.504.01.00-rc1
@@ -67,7 +67,7 @@ Old Version     : 06.504.01.00-rc1
     3. Version and Changelog update.
 -------------------------------------------------------------------------------
 Release Date    : Mon. Oct 1, 2012 17:00:00 PST 2012 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford
 Current Version : 06.504.01.00-rc1
 Old Version     : 00.00.06.18-rc1
@@ -80,7 +80,7 @@ Old Version     : 00.00.06.18-rc1
     7. Version, Changelog, Copyright update.
 -------------------------------------------------------------------------------
 Release Date    : Tue. Jun 17, 2012 17:00:00 PST 2012 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford/Kashyap Desai
 Current Version : 00.00.06.18-rc1
 Old Version     : 00.00.06.15-rc1
@@ -90,7 +90,7 @@ Old Version     : 00.00.06.15-rc1
     4. Move poll_aen_lock initializer.
 -------------------------------------------------------------------------------
 Release Date    : Mon. Mar 19, 2012 17:00:00 PST 2012 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford
 Current Version : 00.00.06.15-rc1
 Old Version     : 00.00.06.14-rc1
@@ -98,7 +98,7 @@ Old Version     : 00.00.06.14-rc1
     2. Add fpRead/WriteCapable, fpRead/WriteAcrossStripe checks.
 -------------------------------------------------------------------------------
 Release Date    : Fri. Jan 6, 2012 17:00:00 PST 2010 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford
 Current Version : 00.00.06.14-rc1
 Old Version     : 00.00.06.12-rc1
@@ -108,7 +108,7 @@ Old Version     : 00.00.06.12-rc1
     3. Remove poll_mode_io module parameter, sysfs node, and associated code.
 -------------------------------------------------------------------------------
 Release Date    : Wed. Oct 5, 2011 17:00:00 PST 2010 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford
 Current Version : 00.00.06.12-rc1
 Old Version     : 00.00.05.40-rc1
@@ -123,7 +123,7 @@ Old Version     : 00.00.05.40-rc1
     9. Add driver workaround for PERC5/1068 kdump kernel panic.
 -------------------------------------------------------------------------------
 Release Date    : Tue. Jul 26, 2011 17:00:00 PST 2010 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford
 Current Version : 00.00.05.40-rc1
 Old Version     : 00.00.05.38-rc1
@@ -131,7 +131,7 @@ Old Version     : 00.00.05.38-rc1
     2. Add .change_queue_depth support.
 -------------------------------------------------------------------------------
 Release Date    : Wed. May 11, 2011 17:00:00 PST 2010 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford
 Current Version : 00.00.05.38-rc1
 Old Version     : 00.00.05.34-rc1
@@ -145,7 +145,7 @@ Old Version     : 00.00.05.34-rc1
     7. Add 1078 OCR support.
 -------------------------------------------------------------------------------
 Release Date    : Thu. Feb 24, 2011 17:00:00 PST 2010 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford
 Current Version : 00.00.05.34-rc1
 Old Version     : 00.00.05.29-rc1
@@ -168,7 +168,7 @@ Old Version     : 00.00.05.29-rc1
     13. Fix iMR OCR support to work correctly.
 -------------------------------------------------------------------------------
 Release Date    : Tues.  Dec 14, 2010 17:00:00 PST 2010 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Adam Radford
 Current Version : 00.00.05.29-rc1
 Old Version     : 00.00.04.31-rc1
@@ -190,7 +190,7 @@ Old Version     : 00.00.04.31-rc1
    6. Add code to support MegaRAID 9265/9285 controllers device id (0x5b).
 -------------------------------------------------------------------------------
 1 Release Date    : Thur.  May 03, 2010 09:12:45 PST 2009 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Bo Yang
 
 2 Current Version : 00.00.04.31-rc1
@@ -237,7 +237,7 @@ Old Version     : 00.00.04.31-rc1
 	controller.
 
 1 Release Date    : Thur.  Oct 29, 2009 09:12:45 PST 2009 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Bo Yang
 
 2 Current Version : 00.00.04.17.1-rc1
@@ -253,7 +253,7 @@ Old Version     : 00.00.04.31-rc1
 	PD delete/ADD, LD add/delete from FW.
 
 1 Release Date    : Tues.  July 28, 2009 10:12:45 PST 2009 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Bo Yang
 
 2 Current Version : 00.00.04.12
@@ -264,7 +264,7 @@ Old Version     : 00.00.04.31-rc1
 2.	Takeoff the debug print-out in aen_polling routine.
 
 1 Release Date    : Thur.  July 02, 2009 10:12:45 PST 2009 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Bo Yang
 
 2 Current Version : 00.00.04.10
@@ -274,7 +274,7 @@ Old Version     : 00.00.04.31-rc1
 2.	Add the fix for 64bit sense date errors.
 
 1 Release Date    : Tues. May 05, 2009 10:12:45 PST 2009 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Bo Yang
 
 2 Current Version : 00.00.04.08
@@ -284,7 +284,7 @@ Old Version     : 00.00.04.31-rc1
 2.	Add the fix of deallocating memory after get pdlist.
 
 1 Release Date    : Tues. March 26, 2009 10:12:45 PST 2009 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Bo Yang
 
 2 Current Version : 00.00.04.06
@@ -294,7 +294,7 @@ Old Version     : 00.00.04.31-rc1
 2.	Add the fix of the driver MSM AEN CMD cause the system slow.
 
 1 Release Date    : Tues. March 03, 2009 10:12:45 PST 2009 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Bo Yang
 
 2 Current Version : 00.00.04.04
@@ -303,7 +303,7 @@ Old Version     : 00.00.04.31-rc1
 1.	Add the Tape drive fix to the driver: If the command is for
 	the tape device, set the pthru timeout to the os layer timeout value.
 
-2.	Add Poll_wait mechanism to Gen-2 Linux driv.
+2.	Add Poll_wait mechanism to Gen-2 LinaOS driv.
 		In the aen handler, driver needs to wakeup poll handler similar to
 		the way it raises SIGIO.
 
@@ -316,7 +316,7 @@ Old Version     : 00.00.04.31-rc1
 6.	Reasign the Application cmds to SAS2 controller
 
 1 Release Date    : Thur.July. 24 11:41:51 PST 2008 -
-                       (emaild-id:megaraidlinux@lsi.com)
+                       (emaild-id:megaraidlinaos@lsi.com)
                        Sumant Patro
                        Bo Yang
 
@@ -327,7 +327,7 @@ Old Version     : 00.00.04.31-rc1
        Those controllers are LSI's next generatation(gen2) SAS controllers.
 
 1 Release Date    : Mon.June. 23 10:12:45 PST 2008 -
-                       (emaild-id:megaraidlinux@lsi.com)
+                       (emaild-id:megaraidlinaos@lsi.com)
                        Sumant Patro
                        Bo Yang
 
@@ -335,10 +335,10 @@ Old Version     : 00.00.04.31-rc1
 3 Older Version   : 00.00.03.20
 
 1. Add shutdown DCMD cmd to the shutdown routine to make FW shutdown proper.
-2. Unexpected interrupt occurs in HWR Linux driver, add the dumy readl pci flush will fix this issue.
+2. Unexpected interrupt occurs in HWR LinaOS driver, add the dumy readl pci flush will fix this issue.
 
 1 Release Date    : Mon. March 10 11:02:31 PDT 2008 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Sumant Patro
 			Bo Yang
 
@@ -360,7 +360,7 @@ Old Version     : 00.00.04.31-rc1
 	make sure the FW will 	finish the pending cmd for KDUMP case.
 
 1 Release Date    : Thur. Nov. 07 16:30:43 PST 2007 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Sumant Patro
 			Bo Yang
 
@@ -371,7 +371,7 @@ Old Version     : 00.00.04.31-rc1
 	a max of 60 seconds to respond to the INIT cmd.
 
 1 Release Date    : Fri. Sep. 07 16:30:43 PST 2007 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Sumant Patro
 			Bo Yang
 
@@ -387,7 +387,7 @@ Old Version     : 00.00.04.31-rc1
 	indefinitely in the case that no new IOs are initiated.
 
 1 Release Date    : Fri. Sep. 07 16:30:43 PST 2007 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Sumant Patro
 			Bo Yang
 
@@ -406,7 +406,7 @@ Old Version     : 00.00.04.31-rc1
 	cmd.
 
 1 Release Date    : Fri. June. 15 16:30:43 PST 2007 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Sumant Patro
 			Bo Yang
 
@@ -424,7 +424,7 @@ It looks like megaraid_sas at least needs this to throttle its commands
 > James
 
 1 Release Date    : Sat May. 12 16:30:43 PST 2007 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Sumant Patro
 			Bo Yang
 
@@ -437,7 +437,7 @@ call completion routine every 5 seconds from the reset routine instead of
 waiting for depending on cmd completion from isr path.
 
 1 Release Date    : Mon Apr. 30 10:25:52 PST 2007 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Sumant Patro
 			Bo Yang
 
@@ -468,7 +468,7 @@ waiting for depending on cmd completion from isr path.
 	5. Performing diskdump while running IO in RHEL 4 was failing. Fixed.
 
 1 Release Date    : Fri Feb. 09 14:36:28 PST 2007 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Sumant Patro
 			Bo Yang
 
@@ -481,7 +481,7 @@ i.	Under heavy IO mid-layer prints "DRIVER_TIMEOUT" errors
 	previous release) to resume IO.
 
 1 Release Date    : Mon Feb. 05 11:35:24 PST 2007 -
-			(emaild-id:megaraidlinux@lsi.com)
+			(emaild-id:megaraidlinaos@lsi.com)
 			Sumant Patro
 			Bo Yang
 2 Current Version : 00.00.03.08

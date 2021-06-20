@@ -2,7 +2,7 @@
 #ifndef __ARCH_SPARC64_PERCPU__
 #define __ARCH_SPARC64_PERCPU__
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #ifndef BUILD_VDSO
 register unsigned long __local_per_cpu_offset asm("g5");

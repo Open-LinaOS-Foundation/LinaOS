@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  *
  * envctrl.h: Definitions for access to the i2c environment
@@ -12,7 +12,7 @@
 #ifndef _SPARC64_ENVCTRL_H
 #define _SPARC64_ENVCTRL_H 1
 
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 
 /* Application note:
  *

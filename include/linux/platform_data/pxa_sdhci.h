@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/platform_data/pxa_sdhci.h
+ * include/linaos/platform_data/pxa_sdhci.h
  *
  * Copyright 2010 Marvell
  *	Zhangfei Gao <zhangfei.gao@marvell.com>

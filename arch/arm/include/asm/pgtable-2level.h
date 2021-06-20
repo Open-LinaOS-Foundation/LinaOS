@@ -15,16 +15,16 @@
  * is one 32-bit word.  Most of the bits in the second level entry are used
  * by hardware, and there aren't any "accessed" and "dirty" bits.
  *
- * Linux on the other hand has a three level page table structure, which can
+ * LinaOS on the other hand has a three level page table structure, which can
  * be wrapped to fit a two level page table structure easily - using the PGD
- * and PTE only.  However, Linux also expects one "PTE" table per page, and
+ * and PTE only.  However, LinaOS also expects one "PTE" table per page, and
  * at least a "dirty" bit.
  *
- * Therefore, we tweak the implementation slightly - we tell Linux that we
+ * Therefore, we tweak the implementation slightly - we tell LinaOS that we
  * have 2048 entries in the first level, each of which is 8 bytes (iow, two
  * hardware pointers to the second level.)  The second level contains two
- * hardware PTE tables arranged contiguously, preceded by Linux versions
- * which contain the state information Linux needs.  We, therefore, end up
+ * hardware PTE tables arranged contiguously, preceded by LinaOS versions
+ * which contain the state information LinaOS needs.  We, therefore, end up
  * with 512 entries in the "PTE" level.
  *
  * This leads to the page tables having the following layout:
@@ -33,36 +33,36 @@
  * |        |
  * +--------+
  * |        |       +------------+ +0
- * +- - - - +       | Linux pt 0 |
+ * +- - - - +       | LinaOS pt 0 |
  * |        |       +------------+ +1024
- * +--------+ +0    | Linux pt 1 |
+ * +--------+ +0    | LinaOS pt 1 |
  * |        |-----> +------------+ +2048
  * +- - - - + +4    |  h/w pt 0  |
  * |        |-----> +------------+ +3072
  * +--------+ +8    |  h/w pt 1  |
  * |        |       +------------+ +4096
  *
- * See L_PTE_xxx below for definitions of bits in the "Linux pt", and
+ * See L_PTE_xxx below for definitions of bits in the "LinaOS pt", and
  * PTE_xxx for definitions of bits appearing in the "h/w pt".
  *
  * PMD_xxx definitions refer to bits in the first level page table.
  *
  * The "dirty" bit is emulated by only granting hardware write permission
- * iff the page is marked "writable" and "dirty" in the Linux PTE.  This
+ * iff the page is marked "writable" and "dirty" in the LinaOS PTE.  This
  * means that a write to a clean page will cause a permission fault, and
- * the Linux MM layer will mark the page dirty via handle_pte_fault().
+ * the LinaOS MM layer will mark the page dirty via handle_pte_fault().
  * For the hardware to notice the permission change, the TLB entry must
  * be flushed, and ptep_set_access_flags() does that for us.
  *
  * The "accessed" or "young" bit is emulated by a similar method; we only
  * allow accesses to the page if the "young" bit is set.  Accesses to the
  * page will cause a fault, and handle_pte_fault() will set the young bit
- * for us as long as the page is marked present in the corresponding Linux
+ * for us as long as the page is marked present in the corresponding LinaOS
  * PTE entry.  Again, ptep_set_access_flags() will ensure that the TLB is
  * up to date.
  *
  * However, when the "young" bit is cleared, we deny access to the page
- * by clearing the hardware PTE.  Currently Linux does not flush the TLB
+ * by clearing the hardware PTE.  Currently LinaOS does not flush the TLB
  * for us in this case, which means the TLB will retain the transation
  * until either the TLB entry is evicted under pressure, or a context
  * switch which changes the user space mapping occurs.
@@ -106,14 +106,14 @@
 #define USER_PTRS_PER_PGD	(TASK_SIZE / PGDIR_SIZE)
 
 /*
- * "Linux" PTE definitions.
+ * "LinaOS" PTE definitions.
  *
- * We keep two sets of PTEs - the hardware and the linux version.
- * This allows greater flexibility in the way we map the Linux bits
+ * We keep two sets of PTEs - the hardware and the linaos version.
+ * This allows greater flexibility in the way we map the LinaOS bits
  * onto the hardware tables, and allows us to have YOUNG and DIRTY
  * bits.
  *
- * The PTE table pointer refers to the hardware entries; the "Linux"
+ * The PTE table pointer refers to the hardware entries; the "LinaOS"
  * entries are stored 1024 bytes below.
  */
 #define L_PTE_VALID		(_AT(pteval_t, 1) << 0)		/* Valid */

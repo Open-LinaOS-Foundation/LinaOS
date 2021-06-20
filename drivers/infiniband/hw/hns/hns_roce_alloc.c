@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/platform_device.h>
-#include <linux/vmalloc.h>
+#include <linaos/platform_device.h>
+#include <linaos/vmalloc.h>
 #include "hns_roce_device.h"
 #include <rdma/ib_umem.h>
 

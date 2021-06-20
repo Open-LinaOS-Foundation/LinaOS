@@ -10,13 +10,13 @@
  *      Neil Brown <neilb@suse.de>
  *      Jeff Garzik <jeff@garzik.org>
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/raid/xor.h>
-#include <linux/async_tx.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/raid/xor.h>
+#include <linaos/async_tx.h>
 
 /* do_async_xor - dma map the pages and perform the xor with an engine */
 static __async_inline struct dma_async_tx_descriptor *

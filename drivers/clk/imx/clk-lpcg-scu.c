@@ -4,12 +4,12 @@
  *	Dong Aisheng <aisheng.dong@nxp.com>
  */
 
-#include <linux/bits.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/bits.h>
+#include <linaos/clk-provider.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #include "clk-scu.h"
 

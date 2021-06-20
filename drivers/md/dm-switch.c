@@ -10,11 +10,11 @@
  * mapping representation such as dm-stripe.
  */
 
-#include <linux/device-mapper.h>
+#include <linaos/device-mapper.h>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/vmalloc.h>
 
 #define DM_MSG_PREFIX "switch"
 

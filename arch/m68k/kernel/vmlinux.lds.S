@@ -6,10 +6,10 @@ PHDRS
   data PT_LOAD FLAGS (7);
 }
 #ifdef CONFIG_SUN3
-#include "vmlinux-sun3.lds"
+#include "vmlinaos-sun3.lds"
 #else
-#include "vmlinux-std.lds"
+#include "vmlinaos-std.lds"
 #endif
 #else
-#include "vmlinux-nommu.lds"
+#include "vmlinaos-nommu.lds"
 #endif

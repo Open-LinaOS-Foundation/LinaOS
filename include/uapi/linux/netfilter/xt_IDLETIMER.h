@@ -1,5 +1,5 @@
 /*
- * linux/include/linux/netfilter/xt_IDLETIMER.h
+ * linaos/include/linaos/netfilter/xt_IDLETIMER.h
  *
  * Header file for Xtables timer target module.
  *
@@ -29,7 +29,7 @@
 #ifndef _XT_IDLETIMER_H
 #define _XT_IDLETIMER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define MAX_IDLETIMER_LABEL_SIZE 28
 #define XT_IDLETIMER_ALARM 0x01

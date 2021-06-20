@@ -5,8 +5,8 @@
  * Copyright (C) 2015 Yoshinori Sato
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
 #include <asm/param.h>
 #include <asm/processor.h>
 #include <asm/timex.h>

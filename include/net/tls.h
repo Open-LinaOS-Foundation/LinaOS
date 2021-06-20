@@ -34,21 +34,21 @@
 #ifndef _TLS_OFFLOAD_H
 #define _TLS_OFFLOAD_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
-#include <linux/crypto.h>
-#include <linux/socket.h>
-#include <linux/tcp.h>
-#include <linux/skmsg.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/rcupdate.h>
+#include <linaos/crypto.h>
+#include <linaos/socket.h>
+#include <linaos/tcp.h>
+#include <linaos/skmsg.h>
+#include <linaos/mutex.h>
+#include <linaos/netdevice.h>
+#include <linaos/rcupdate.h>
 
 #include <net/net_namespace.h>
 #include <net/tcp.h>
 #include <net/strparser.h>
 #include <crypto/aead.h>
-#include <uapi/linux/tls.h>
+#include <uapi/linaos/tls.h>
 
 
 /* Maximum data size carried in a TLS record */

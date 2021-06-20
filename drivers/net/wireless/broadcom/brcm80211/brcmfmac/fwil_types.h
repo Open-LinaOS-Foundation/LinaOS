@@ -7,7 +7,7 @@
 #ifndef FWIL_TYPES_H_
 #define FWIL_TYPES_H_
 
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 
 
 #define BRCMF_FIL_ACTION_FRAME_SIZE	1800

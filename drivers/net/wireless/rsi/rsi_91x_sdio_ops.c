@@ -15,7 +15,7 @@
  *
  */
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 #include <net/rsi_91x.h>
 #include "rsi_sdio.h"
 #include "rsi_common.h"

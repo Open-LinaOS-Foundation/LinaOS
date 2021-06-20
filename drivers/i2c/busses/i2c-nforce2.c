@@ -34,17 +34,17 @@
 
 /* Note: we assume there can only be one nForce2, with two SMBus interfaces */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/stddef.h>
+#include <linaos/ioport.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/dmi.h>
+#include <linaos/acpi.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Hans-Frieder Vogt <hfvogt@gmx.net>");

@@ -17,24 +17,24 @@
 #include <asm/xen/hypercall.h>
 #include <asm/system_misc.h>
 #include <asm/efi.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/cpuidle.h>
-#include <linux/cpufreq.h>
-#include <linux/cpu.h>
-#include <linux/console.h>
-#include <linux/pvclock_gtod.h>
-#include <linux/time64.h>
-#include <linux/timekeeping.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/acpi.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqreturn.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/cpuidle.h>
+#include <linaos/cpufreq.h>
+#include <linaos/cpu.h>
+#include <linaos/console.h>
+#include <linaos/pvclock_gtod.h>
+#include <linaos/time64.h>
+#include <linaos/timekeeping.h>
+#include <linaos/timekeeper_internal.h>
+#include <linaos/acpi.h>
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 static struct start_info _xen_start_info;
 struct start_info *xen_start_info = &_xen_start_info;
@@ -49,7 +49,7 @@ struct shared_info *HYPERVISOR_shared_info = (void *)&xen_dummy_shared_info;
 DEFINE_PER_CPU(struct vcpu_info *, xen_vcpu);
 static struct vcpu_info __percpu *xen_vcpu_info;
 
-/* Linux <-> Xen vCPU id mapping */
+/* LinaOS <-> Xen vCPU id mapping */
 DEFINE_PER_CPU(uint32_t, xen_vcpu_id);
 EXPORT_PER_CPU_SYMBOL(xen_vcpu_id);
 

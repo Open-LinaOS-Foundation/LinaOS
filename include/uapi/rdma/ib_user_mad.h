@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR Linux-OpenIB) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR LinaOS-OpenIB) */
 /*
  * Copyright (c) 2004 Topspin Communications.  All rights reserved.
  * Copyright (c) 2005 Voltaire, Inc. All rights reserved.
@@ -35,7 +35,7 @@
 #ifndef IB_USER_MAD_H
 #define IB_USER_MAD_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <rdma/rdma_user_ioctl.h>
 
 /*

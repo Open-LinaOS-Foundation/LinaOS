@@ -3,9 +3,9 @@
 
 #ifndef __HCLGEVF_MAIN_H
 #define __HCLGEVF_MAIN_H
-#include <linux/fs.h>
-#include <linux/if_vlan.h>
-#include <linux/types.h>
+#include <linaos/fs.h>
+#include <linaos/if_vlan.h>
+#include <linaos/types.h>
 #include "hclge_mbx.h"
 #include "hclgevf_cmd.h"
 #include "hnae3.h"

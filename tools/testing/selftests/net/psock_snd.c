@@ -7,11 +7,11 @@
 #include <error.h>
 #include <fcntl.h>
 #include <limits.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
-#include <linux/if_packet.h>
-#include <linux/if_vlan.h>
-#include <linux/virtio_net.h>
+#include <linaos/filter.h>
+#include <linaos/bpf.h>
+#include <linaos/if_packet.h>
+#include <linaos/if_vlan.h>
+#include <linaos/virtio_net.h>
 #include <net/if.h>
 #include <net/ethernet.h>
 #include <netinet/ip.h>

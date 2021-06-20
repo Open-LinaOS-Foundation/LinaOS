@@ -9,17 +9,17 @@
  *	sdhci.c, copyright (C) 2005-2006 Pierre Ossman
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/scatterlist.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/scatterlist.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
 
 #include "toshsd.h"
 

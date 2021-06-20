@@ -14,8 +14,8 @@
 #ifndef OMAP3_ISP_PREVIEW_H
 #define OMAP3_ISP_PREVIEW_H
 
-#include <linux/omap3isp.h>
-#include <linux/types.h>
+#include <linaos/omap3isp.h>
+#include <linaos/types.h>
 #include <media/v4l2-ctrls.h>
 
 #include "ispvideo.h"
@@ -32,7 +32,7 @@
 #define ISPPRV_CONTRAST_HIGH		0xFF
 #define ISPPRV_CONTRAST_UNITS		0x1
 
-/* Additional features not listed in linux/omap3isp.h */
+/* Additional features not listed in linaos/omap3isp.h */
 #define OMAP3ISP_PREV_CONTRAST		(1 << 17)
 #define OMAP3ISP_PREV_BRIGHTNESS	(1 << 18)
 #define OMAP3ISP_PREV_FEATURES_END	(1 << 19)

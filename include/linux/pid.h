@@ -2,9 +2,9 @@
 #ifndef _LINUX_PID_H
 #define _LINUX_PID_H
 
-#include <linux/rculist.h>
-#include <linux/wait.h>
-#include <linux/refcount.h>
+#include <linaos/rculist.h>
+#include <linaos/wait.h>
+#include <linaos/refcount.h>
 
 enum pid_type
 {
@@ -120,7 +120,7 @@ extern int pid_max_min, pid_max_max;
  * find_pid_ns() finds the pid in the namespace specified
  * find_vpid() finds the pid by its virtual id, i.e. in the current namespace
  *
- * see also find_task_by_vpid() set in include/linux/sched.h
+ * see also find_task_by_vpid() set in include/linaos/sched.h
  */
 extern struct pid *find_pid_ns(int nr, struct pid_namespace *ns);
 extern struct pid *find_vpid(int nr);
@@ -173,7 +173,7 @@ static inline bool is_child_reaper(struct pid *pid)
  *               current.
  * pid_nr_ns() : id seen from the ns specified.
  *
- * see also task_xid_nr() etc in include/linux/sched.h
+ * see also task_xid_nr() etc in include/linaos/sched.h
  */
 
 static inline pid_t pid_nr(struct pid *pid)

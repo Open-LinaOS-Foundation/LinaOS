@@ -33,13 +33,13 @@
 
 #define pr_fmt(fmt) "%s:%s: " fmt, KBUILD_MODNAME, __func__
 
-#include <linux/export.h>
+#include <linaos/export.h>
 #include <net/netlink.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/sock.h>
 #include <rdma/rdma_netlink.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "core_priv.h"
 
 static struct {

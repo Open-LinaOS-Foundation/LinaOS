@@ -14,9 +14,9 @@ cflags-$(CONFIG_MIPS_GENERIC)	+= -I$(srctree)/arch/mips/include/asm/mach-generic
 
 load-$(CONFIG_MIPS_GENERIC)	+= 0xffffffff80100000
 zload-$(CONFIG_MIPS_GENERIC)	+= 0xffffffff81000000
-all-$(CONFIG_MIPS_GENERIC)	:= vmlinux.gz.itb
+all-$(CONFIG_MIPS_GENERIC)	:= vmlinaos.gz.itb
 
-its-y					:= vmlinux.its.S
+its-y					:= vmlinaos.its.S
 its-$(CONFIG_FIT_IMAGE_FDT_BOSTON)	+= board-boston.its.S
 its-$(CONFIG_FIT_IMAGE_FDT_NI169445)	+= board-ni169445.its.S
 its-$(CONFIG_FIT_IMAGE_FDT_OCELOT)	+= board-ocelot.its.S

@@ -5,7 +5,7 @@
 #if !defined(_PCM_PARAMS_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _PCM_PARAMS_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #define HW_PARAM_ENTRY(param) {SNDRV_PCM_HW_PARAM_##param, #param}
 #define hw_param_labels			\

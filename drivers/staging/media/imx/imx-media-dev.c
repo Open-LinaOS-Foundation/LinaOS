@@ -4,9 +4,9 @@
  *
  * Copyright (c) 2016-2019 Mentor Graphics Inc.
  */
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/fs.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 #include <media/v4l2-async.h>
 #include <media/v4l2-event.h>
 #include <media/imx.h>

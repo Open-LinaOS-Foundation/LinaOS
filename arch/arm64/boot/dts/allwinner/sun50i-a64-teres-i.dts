@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: (GPL-2.0 OR MIT)
 // Copyright (C) Harald Geyer <harald@ccbib.org>
-// based on sun50i-a64-olinuxino.dts by Jagan Teki <jteki@openedev.com>
+// based on sun50i-a64-olinaosino.dts by Jagan Teki <jteki@openedev.com>
 
 /dts-v1/;
 
@@ -43,8 +43,8 @@
 		lid-switch {
 			label = "Lid Switch";
 			gpios = <&r_pio 0 8 GPIO_ACTIVE_LOW>; /* PL8 */
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_LID>;
 			wakeup-source;
 		};
 	};

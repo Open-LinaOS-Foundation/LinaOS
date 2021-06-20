@@ -6,22 +6,22 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/console.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/memblock.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/root_dev.h>
-#include <linux/rtc.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/fb.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/console.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/memblock.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/initrd.h>
+#include <linaos/root_dev.h>
+#include <linaos/rtc.h>
 
 #include <asm/setup.h>
 #include <asm/irq.h>
@@ -31,7 +31,7 @@
 /*
  * parse_uboot_commandline
  *
- * Copies u-boot commandline arguments and store them in the proper linux
+ * Copies u-boot commandline arguments and store them in the proper linaos
  * variables.
  *
  * Assumes:
@@ -54,7 +54,7 @@
  *	unmodified. U-boot places them near the end of external SDRAM.
  *
  * Argument(s):
- *	commandp = the linux commandline arg container to fill.
+ *	commandp = the linaos commandline arg container to fill.
  *	size     = the sizeof commandp.
  *
  * Returns:

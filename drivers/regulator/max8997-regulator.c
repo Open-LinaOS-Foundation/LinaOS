@@ -7,18 +7,18 @@
 //
 // This driver is based on max8998.c
 
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/max8997.h>
-#include <linux/mfd/max8997-private.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/bug.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/of_gpio.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/mfd/max8997.h>
+#include <linaos/mfd/max8997-private.h>
+#include <linaos/regulator/of_regulator.h>
 
 struct max8997_data {
 	struct device *dev;

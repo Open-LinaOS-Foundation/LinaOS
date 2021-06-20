@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/unistd.h>
+#include <linaos/syscalls.h>
+#include <linaos/signal.h>
+#include <linaos/unistd.h>
 
 #undef __SYSCALL
 #define __SYSCALL(nr, call) [nr] = (call),

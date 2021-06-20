@@ -31,13 +31,13 @@ Example:
 
 		led0 {
 			gpios = <&gpio 5 1 1>; /* GPO_P3 1, active low */
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 
 		led1 {
 			gpios = <&gpio 5 14 1>; /* GPO_P3 14, active low */
-			linux,default-trigger = "timer";
+			linaos,default-trigger = "timer";
 			default-state = "off";
 		};
 	};

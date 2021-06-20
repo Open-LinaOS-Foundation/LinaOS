@@ -17,7 +17,7 @@
 #ifndef CN_PROC_H
 #define CN_PROC_H
 
-#include <uapi/linux/cn_proc.h>
+#include <uapi/linaos/cn_proc.h>
 
 #ifdef CONFIG_PROC_EVENTS
 void proc_fork_connector(struct task_struct *task);

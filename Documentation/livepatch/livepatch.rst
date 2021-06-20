@@ -23,7 +23,7 @@ functions without a system reboot.
 2. Kprobes, Ftrace, Livepatching
 ================================
 
-There are multiple mechanisms in the Linux kernel that are directly related
+There are multiple mechanisms in the LinaOS kernel that are directly related
 to redirection of code execution; namely: kernel probes, function tracing,
 and livepatching:
 
@@ -259,11 +259,11 @@ into three levels:
     As an optional parameter, the symbol position in the kallsyms database can
     be used to disambiguate functions of the same name. This is not the
     absolute position in the database, but rather the order it has been found
-    only for a particular object ( vmlinux or a kernel module ). Note that
+    only for a particular object ( vmlinaos or a kernel module ). Note that
     kallsyms allows for searching symbols according to the object name.
 
   - struct klp_object defines an array of patched functions (struct
-    klp_func) in the same object. Where the object is either vmlinux
+    klp_func) in the same object. Where the object is either vmlinaos
     (NULL) or a module name.
 
     The structure helps to group and handle functions for each object

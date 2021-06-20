@@ -9,10 +9,10 @@
 #ifndef _SECURITY_LANDLOCK_RULESET_H
 #define _SECURITY_LANDLOCK_RULESET_H
 
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/refcount.h>
-#include <linux/workqueue.h>
+#include <linaos/mutex.h>
+#include <linaos/rbtree.h>
+#include <linaos/refcount.h>
+#include <linaos/workqueue.h>
 
 #include "object.h"
 

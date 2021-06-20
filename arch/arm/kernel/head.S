@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/kernel/head.S
+ *  linaos/arch/arm/kernel/head.S
  *
  *  Copyright (C) 1994-2002 Russell King
  *  Copyright (c) 2003 ARM Limited
@@ -8,9 +8,9 @@
  *
  *  Kernel startup code for all 32-bit CPUs
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 
 #include <asm/assembler.h>
 #include <asm/cp15.h>
@@ -64,7 +64,7 @@
  * This code is mostly position independent, so if you link the kernel at
  * 0xc0008000, you call this at __pa(0xc0008000).
  *
- * See linux/arch/arm/tools/mach-types for the complete list of machine
+ * See linaos/arch/arm/tools/mach-types for the complete list of machine
  * numbers for r1.
  *
  * We're trying to keep crap to a minimum; DO NOT add any machine specific
@@ -445,7 +445,7 @@ ENDPROC(__enable_mmu)
 /*
  * Enable the MMU.  This completely changes the structure of the visible
  * memory space.  You will not be able to trace execution through this.
- * If you have an enquiry about this, *please* check the linux-arm-kernel
+ * If you have an enquiry about this, *please* check the linaos-arm-kernel
  * mailing list archives BEFORE sending another post to the list.
  *
  *  r0  = cp#15 control register

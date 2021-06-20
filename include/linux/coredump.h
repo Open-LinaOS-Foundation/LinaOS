@@ -2,9 +2,9 @@
 #ifndef _LINUX_COREDUMP_H
 #define _LINUX_COREDUMP_H
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
 #include <asm/siginfo.h>
 
 #ifdef CONFIG_COREDUMP

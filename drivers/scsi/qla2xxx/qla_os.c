@@ -5,15 +5,15 @@
  */
 #include "qla_def.h"
 
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
-#include <linux/blk-mq-pci.h>
-#include <linux/refcount.h>
+#include <linaos/moduleparam.h>
+#include <linaos/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/mutex.h>
+#include <linaos/kobject.h>
+#include <linaos/slab.h>
+#include <linaos/blk-mq-pci.h>
+#include <linaos/refcount.h>
 
 #include <scsi/scsi_tcq.h>
 #include <scsi/scsicam.h>
@@ -1214,7 +1214,7 @@ qla2x00_wait_for_chip_reset(scsi_qla_host_t *vha)
 *    The abort function will abort the specified command.
 *
 * Input:
-*    cmd = Linux SCSI command packet to be aborted.
+*    cmd = LinaOS SCSI command packet to be aborted.
 *
 * Returns:
 *    Either SUCCESS or FAILED.
@@ -1467,7 +1467,7 @@ qla2xxx_eh_target_reset(struct scsi_cmnd *cmd)
 *    commands.
 *
 * Input:
-*    cmd = Linux SCSI command packet of the command that cause the
+*    cmd = LinaOS SCSI command packet of the command that cause the
 *          bus reset.
 *
 * Returns:
@@ -1544,7 +1544,7 @@ eh_bus_reset_done:
 *    The reset function will reset the Adapter.
 *
 * Input:
-*      cmd = Linux SCSI command packet of the command that cause the
+*      cmd = LinaOS SCSI command packet of the command that cause the
 *            adapter reset.
 *
 * Returns:

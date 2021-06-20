@@ -14,15 +14,15 @@
  * 1. Support stream at lower speed: lower frame rate or lower frame size.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
 
-#include <linux/usb.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
+#include <linaos/usb.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
 #include <media/i2c/saa7115.h>
 
 #include "stk1160.h"

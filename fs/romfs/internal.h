@@ -5,7 +5,7 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/romfs_fs.h>
+#include <linaos/romfs_fs.h>
 
 struct romfs_inode_info {
 	struct inode	vfs_inode;

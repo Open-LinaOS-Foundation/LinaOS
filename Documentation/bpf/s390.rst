@@ -6,7 +6,7 @@ Testing BPF on s390
 ***************
 
 IBM Z are mainframe computers, which are descendants of IBM System/360 from
-year 1964. They are supported by the Linux kernel under the name "s390". This
+year 1964. They are supported by the LinaOS kernel under the name "s390". This
 document describes how to test BPF in an s390 QEMU guest.
 
 2. One-time setup
@@ -46,8 +46,8 @@ Once on Debian, the build prerequisites can be installed as follows::
     flex \
     g++ \
     gcc \
-    g++-s390x-linux-gnu \
-    gcc-s390x-linux-gnu \
+    g++-s390x-linaos-gnu \
+    gcc-s390x-linaos-gnu \
     gdb-multiarch \
     git \
     make \
@@ -116,9 +116,9 @@ machine.
 Compiling kernel, modules and testsuite, as well as preparing gdb scripts to
 simplify debugging, can be done using the following commands::
 
-  make ARCH=s390 CROSS_COMPILE=s390x-linux-gnu- menuconfig
-  make ARCH=s390 CROSS_COMPILE=s390x-linux-gnu- bzImage modules scripts_gdb
-  make ARCH=s390 CROSS_COMPILE=s390x-linux-gnu- \
+  make ARCH=s390 CROSS_COMPILE=s390x-linaos-gnu- menuconfig
+  make ARCH=s390 CROSS_COMPILE=s390x-linaos-gnu- bzImage modules scripts_gdb
+  make ARCH=s390 CROSS_COMPILE=s390x-linaos-gnu- \
     -C tools/testing/selftests \
     TARGETS=bpf \
     INSTALL_PATH=$PWD/tools/testing/selftests/kselftest_install \
@@ -133,11 +133,11 @@ The virtual machine can be started as follows::
     -cpu max,zpci=on \
     -smp 2 \
     -m 4G \
-    -kernel linux/arch/s390/boot/compressed/vmlinux \
+    -kernel linaos/arch/s390/boot/compressed/vmlinaos \
     -drive file=./s390.img,if=virtio,format=raw \
     -nographic \
     -append 'root=/dev/vda rw console=ttyS1' \
-    -virtfs local,path=./linux,security_model=none,mount_tag=linux \
+    -virtfs local,path=./linaos,security_model=none,mount_tag=linaos \
     -object rng-random,filename=/dev/urandom,id=rng0 \
     -device virtio-rng-ccw,rng=rng0 \
     -netdev user,id=net0 \
@@ -152,19 +152,19 @@ setup must be finalized using the following command::
 Directory with the code built on the host as well as ``/proc`` and ``/sys``
 need to be mounted as follows::
 
-  mkdir -p /linux
-  mount -t 9p linux /linux
+  mkdir -p /linaos
+  mount -t 9p linaos /linaos
   mount -t proc proc /proc
   mount -t sysfs sys /sys
 
 After that, the test suite can be run using the following commands::
 
-  cd /linux/tools/testing/selftests/kselftest_install
+  cd /linaos/tools/testing/selftests/kselftest_install
   ./run_kselftest.sh
 
 As usual, tests can be also run individually::
 
-  cd /linux/tools/testing/selftests/bpf
+  cd /linaos/tools/testing/selftests/bpf
   ./test_verifier
 
 5. Debugging
@@ -180,7 +180,7 @@ kernel image in memory, by building the kernel with::
 
 GDB can then be attached using the following command::
 
-  gdb-multiarch -ex 'target remote localhost:1234' ./vmlinux
+  gdb-multiarch -ex 'target remote localhost:1234' ./vmlinaos
 
 6. Network
 **********

@@ -1,11 +1,11 @@
 /*
  * SPDX-License-Identifier: GPL-2.0
- * Copyright (c) 2018, The Linux Foundation
+ * Copyright (c) 2018, The LinaOS Foundation
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/iopoll.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/iopoll.h>
 
 #include "dsi_phy.h"
 #include "dsi.xml.h"

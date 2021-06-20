@@ -52,7 +52,7 @@
 
 		restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&chipcommon 21 GPIO_ACTIVE_LOW>;
 		};
 	};

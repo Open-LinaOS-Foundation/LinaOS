@@ -5,25 +5,25 @@
  * Copyright (C) 2007-2013 VMware, Inc. All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/cred.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/net.h>
-#include <linux/poll.h>
-#include <linux/skbuff.h>
-#include <linux/smp.h>
-#include <linux/socket.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
+#include <linaos/cred.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/kmod.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/net.h>
+#include <linaos/poll.h>
+#include <linaos/skbuff.h>
+#include <linaos/smp.h>
+#include <linaos/socket.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
 #include <net/sock.h>
 #include <net/af_vsock.h>
 
@@ -1333,7 +1333,7 @@ vmci_transport_recv_connecting_client(struct sock *sk,
 
 		break;
 	case VMCI_TRANSPORT_PACKET_TYPE_RST:
-		/* Older versions of the linux code (WS 6.5 / ESX 4.0) used to
+		/* Older versions of the linaos code (WS 6.5 / ESX 4.0) used to
 		 * continue processing here after they sent an INVALID packet.
 		 * This meant that we got a RST after the INVALID. We ignore a
 		 * RST after an INVALID. The common code doesn't send the RST
@@ -1389,7 +1389,7 @@ static int vmci_transport_recv_connecting_client_negotiate(
 	detach_sub_id = VMCI_INVALID_ID;
 
 	/* If we have gotten here then we should be past the point where old
-	 * linux vsock could have sent the bogus rst.
+	 * linaos vsock could have sent the bogus rst.
 	 */
 	vsk->sent_request = false;
 	vsk->ignore_connecting_rst = false;

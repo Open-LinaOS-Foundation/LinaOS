@@ -6,7 +6,7 @@
 
 #define _TRACE_BPF_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(bpf_trace_printk,
 

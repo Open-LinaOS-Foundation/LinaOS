@@ -1,4 +1,4 @@
-tdc - Linux Traffic Control (tc) unit testing suite
+tdc - LinaOS Traffic Control (tc) unit testing suite
 
 Author: Lucas Bates - lucasb@mojatatu.com
 
@@ -120,7 +120,7 @@ usage: tdc.py [-h] [-p PATH] [-D DIR [DIR ...]] [-f FILE [FILE ...]]
               [-c [CATG [CATG ...]]] [-e ID [ID ...]] [-l] [-s] [-i] [-v] [-N]
               [-d DEVICE] [-P] [-n] [-V]
 
-Linux TC unit tests
+LinaOS TC unit tests
 
 optional arguments:
   -h, --help            show this help message and exit

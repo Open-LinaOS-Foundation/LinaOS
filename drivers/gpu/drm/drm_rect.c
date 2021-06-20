@@ -21,9 +21,9 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
 
 #include <drm/drm_mode.h>
 #include <drm/drm_print.h>

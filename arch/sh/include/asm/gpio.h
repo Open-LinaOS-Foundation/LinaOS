@@ -9,8 +9,8 @@
 #ifndef __ASM_SH_GPIO_H
 #define __ASM_SH_GPIO_H
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
 
 #if defined(CONFIG_CPU_SH3)
 #include <cpu/gpio.h>

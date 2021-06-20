@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * 	NetWinder Button Driver-
- *	Copyright (C) Alex Holden <alex@linuxhacker.org> 1998, 1999.
+ *	Copyright (C) Alex Holden <alex@linaoshacker.org> 1998, 1999.
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/interrupt.h>
+#include <linaos/time.h>
+#include <linaos/timer.h>
+#include <linaos/fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/irq.h>
 #include <asm/mach-types.h>
 
@@ -215,7 +215,7 @@ static int __init nwbutton_init(void)
 		return -ENODEV;
 
 	printk (KERN_INFO "NetWinder Button Driver Version %s (C) Alex Holden "
-			"<alex@linuxhacker.org> 1998.\n", VERSION);
+			"<alex@linaoshacker.org> 1998.\n", VERSION);
 
 	if (misc_register (&button_misc_device)) {
 		printk (KERN_WARNING "nwbutton: Couldn't register device 10, "

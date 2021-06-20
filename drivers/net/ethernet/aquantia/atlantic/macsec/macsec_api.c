@@ -4,7 +4,7 @@
  */
 
 #include "macsec_api.h"
-#include <linux/mdio.h>
+#include <linaos/mdio.h>
 #include "MSS_Ingress_registers.h"
 #include "MSS_Egress_registers.h"
 #include "aq_phy.h"

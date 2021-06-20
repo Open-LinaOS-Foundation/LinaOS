@@ -4,7 +4,7 @@
  *		    Horst Hummel <Horst.Hummel@de.ibm.com>
  *		    Carsten Otte <Cotte@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <LinaOS390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2002
  *
  * /proc interface for the dasd driver.
@@ -13,15 +13,15 @@
 
 #define KMSG_COMPONENT "dasd"
 
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/vmalloc.h>
-#include <linux/proc_fs.h>
+#include <linaos/ctype.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/seq_file.h>
+#include <linaos/vmalloc.h>
+#include <linaos/proc_fs.h>
 
 #include <asm/debug.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /* This is ugly... */
 #define PRINTK_HEADER "dasd_proc:"

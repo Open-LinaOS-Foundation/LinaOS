@@ -7,12 +7,12 @@
  * See Documentation/security/keys/request-key.rst
  */
 
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/kmod.h>
-#include <linux/err.h>
-#include <linux/keyctl.h>
-#include <linux/slab.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/kmod.h>
+#include <linaos/err.h>
+#include <linaos/keyctl.h>
+#include <linaos/slab.h>
 #include <net/net_namespace.h>
 #include "internal.h"
 #include <keys/request_key_auth-type.h>

@@ -7,17 +7,17 @@
 
 #include "dm-bio-record.h"
 
-#include <linux/init.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/device-mapper.h>
-#include <linux/dm-io.h>
-#include <linux/dm-dirty-log.h>
-#include <linux/dm-kcopyd.h>
-#include <linux/dm-region-hash.h>
+#include <linaos/init.h>
+#include <linaos/mempool.h>
+#include <linaos/module.h>
+#include <linaos/pagemap.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/device-mapper.h>
+#include <linaos/dm-io.h>
+#include <linaos/dm-dirty-log.h>
+#include <linaos/dm-kcopyd.h>
+#include <linaos/dm-region-hash.h>
 
 #define DM_MSG_PREFIX "raid1"
 

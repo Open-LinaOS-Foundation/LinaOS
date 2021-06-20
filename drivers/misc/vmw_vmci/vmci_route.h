@@ -8,7 +8,7 @@
 #ifndef _VMCI_ROUTE_H_
 #define _VMCI_ROUTE_H_
 
-#include <linux/vmw_vmci_defs.h>
+#include <linaos/vmw_vmci_defs.h>
 
 enum vmci_route {
 	VMCI_ROUTE_NONE,

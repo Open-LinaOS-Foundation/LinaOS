@@ -9,30 +9,30 @@
 
 #define DSS_SUBSYS_NAME "DSS"
 
-#include <linux/debugfs.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/clk.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/gfp.h>
-#include <linux/sizes.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/regulator/consumer.h>
-#include <linux/suspend.h>
-#include <linux/component.h>
-#include <linux/sys_soc.h>
+#include <linaos/debugfs.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/export.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/seq_file.h>
+#include <linaos/clk.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/gfp.h>
+#include <linaos/sizes.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_graph.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/suspend.h>
+#include <linaos/component.h>
+#include <linaos/sys_soc.h>
 
 #include "omapdss.h"
 #include "dss.h"

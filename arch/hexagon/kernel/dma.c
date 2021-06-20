@@ -2,13 +2,13 @@
 /*
  * DMA implementation for Hexagon
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/dma-map-ops.h>
-#include <linux/memblock.h>
-#include <linux/genalloc.h>
-#include <linux/module.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/memblock.h>
+#include <linaos/genalloc.h>
+#include <linaos/module.h>
 #include <asm/page.h>
 
 static struct gen_pool *coherent_pool;

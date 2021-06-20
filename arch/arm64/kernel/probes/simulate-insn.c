@@ -5,9 +5,9 @@
  * Copyright (C) 2013 Linaro Limited.
  */
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/kprobes.h>
 
 #include <asm/ptrace.h>
 

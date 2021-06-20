@@ -34,20 +34,20 @@
 #ifndef MLX4_IB_H
 #define MLX4_IB_H
 
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/idr.h>
+#include <linaos/compiler.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/idr.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_umem.h>
 #include <rdma/ib_mad.h>
 #include <rdma/ib_sa.h>
 
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/doorbell.h>
-#include <linux/mlx4/qp.h>
-#include <linux/mlx4/cq.h>
+#include <linaos/mlx4/device.h>
+#include <linaos/mlx4/doorbell.h>
+#include <linaos/mlx4/qp.h>
+#include <linaos/mlx4/cq.h>
 
 #define MLX4_IB_DRV_NAME	"mlx4_ib"
 

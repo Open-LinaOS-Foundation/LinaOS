@@ -84,7 +84,7 @@ Probing guidelines:
 
 1) Any hardware layer address you obtain for your device should
    be verified.  For example, for ethernet check it with
-   linux/etherdevice.h:is_valid_ether_addr()
+   linaos/etherdevice.h:is_valid_ether_addr()
 
 Close/stop guidelines:
 

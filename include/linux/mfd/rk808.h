@@ -15,8 +15,8 @@
 #ifndef __LINUX_REGULATOR_RK808_H
 #define __LINUX_REGULATOR_RK808_H
 
-#include <linux/regulator/machine.h>
-#include <linux/regmap.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regmap.h>
 
 /*
  * rk808 Global Register Map.

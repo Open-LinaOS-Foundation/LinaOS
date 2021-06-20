@@ -33,16 +33,16 @@
  * SOFTWARE.
  */
 
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/qp.h>
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
+#include <linaos/sched.h>
+#include <linaos/pci.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/mlx4/cmd.h>
+#include <linaos/mlx4/qp.h>
+#include <linaos/if_ether.h>
+#include <linaos/etherdevice.h>
 
 #include "mlx4.h"
 #include "fw.h"

@@ -4,7 +4,7 @@
 #ifndef __HNS3_ENET_H
 #define __HNS3_ENET_H
 
-#include <linux/if_vlan.h>
+#include <linaos/if_vlan.h>
 
 #include "hnae3.h"
 

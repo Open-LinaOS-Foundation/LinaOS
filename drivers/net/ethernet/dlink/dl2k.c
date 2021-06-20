@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/*  D-Link DL2000-based Gigabit Ethernet Adapter Linux driver */
+/*  D-Link DL2000-based Gigabit Ethernet Adapter LinaOS driver */
 /*
     Copyright (c) 2001, 2002 by D-Link Corporation
     Written by Edward Peng.<edward_peng@dlink.com.tw>
-    Created 03-May-2001, base on Linux' sundance.c.
+    Created 03-May-2001, base on LinaOS' sundance.c.
 
 */
 
 #include "dl2k.h"
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 
 #define dw32(reg, val)	iowrite32(val, ioaddr + (reg))
 #define dw16(reg, val)	iowrite16(val, ioaddr + (reg))

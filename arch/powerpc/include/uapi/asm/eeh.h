@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2, as
@@ -15,7 +15,7 @@
  *
  * Copyright IBM Corp. 2015
  *
- * Authors: Gavin Shan <gwshan@linux.vnet.ibm.com>
+ * Authors: Gavin Shan <gwshan@linaos.vnet.ibm.com>
  */
 
 #ifndef _ASM_POWERPC_EEH_H

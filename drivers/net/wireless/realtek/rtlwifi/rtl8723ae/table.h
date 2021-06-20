@@ -4,7 +4,7 @@
 #ifndef __RTL8723E_TABLE__H_
 #define __RTL8723E_TABLE__H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define RTL8723E_PHY_REG_1TARRAY_LENGTH		372
 extern u32 RTL8723EPHY_REG_1TARRAY[RTL8723E_PHY_REG_1TARRAY_LENGTH];

@@ -4,7 +4,7 @@
 // Copyright (C) 2018 Richard Cochran <richardcochran@gmail.com>
 //
 
-#include <linux/mii_timestamper.h>
+#include <linaos/mii_timestamper.h>
 
 static LIST_HEAD(mii_timestamping_devices);
 static DEFINE_MUTEX(tstamping_devices_lock);

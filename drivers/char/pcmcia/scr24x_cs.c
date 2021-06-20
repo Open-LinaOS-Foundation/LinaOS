@@ -8,14 +8,14 @@
  * Derived from "scr24x_v4.2.6_Release.tar.gz" driver by TL Sudheendran.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/cdev.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

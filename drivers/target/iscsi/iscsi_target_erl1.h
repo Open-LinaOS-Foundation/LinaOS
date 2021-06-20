@@ -2,7 +2,7 @@
 #ifndef ISCSI_TARGET_ERL1_H
 #define ISCSI_TARGET_ERL1_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <scsi/iscsi_proto.h> /* itt_t */
 
 struct iscsi_cmd;

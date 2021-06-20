@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_fourcc.h>
 #include <drm/drm_vblank.h>

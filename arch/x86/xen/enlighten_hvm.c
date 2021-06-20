@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/kexec.h>
-#include <linux/memblock.h>
+#include <linaos/acpi.h>
+#include <linaos/cpu.h>
+#include <linaos/kexec.h>
+#include <linaos/memblock.h>
 
 #include <xen/features.h>
 #include <xen/events.h>

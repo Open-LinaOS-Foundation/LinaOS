@@ -3,8 +3,8 @@
  * Copyright (C) 2015 Facebook.  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/mm.h>
 #include "ctree.h"
 #include "disk-io.h"
 #include "locking.h"

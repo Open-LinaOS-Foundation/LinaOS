@@ -11,14 +11,14 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/spi/xilinx_spi.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi_bitbang.h>
+#include <linaos/spi/xilinx_spi.h>
+#include <linaos/io.h>
 
 #define XILINX_SPI_MAX_CS	32
 

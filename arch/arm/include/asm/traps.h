@@ -2,7 +2,7 @@
 #ifndef _ASMARM_TRAP_H
 #define _ASMARM_TRAP_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 struct pt_regs;
 struct task_struct;

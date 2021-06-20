@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/buffer_head.h>
+#include <linaos/buffer_head.h>
 #include "minix.h"
 
 enum {DIRECT = 7, DEPTH = 4};	/* Have triple indirect */

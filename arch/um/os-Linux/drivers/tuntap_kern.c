@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/init.h>
+#include <linaos/skbuff.h>
 #include <asm/errno.h>
 #include <net_kern.h>
 #include "tuntap.h"

@@ -10,8 +10,8 @@
 #include "cx23885.h"
 #include "cx23888-ir.h"
 
-#include <linux/kfifo.h>
-#include <linux/slab.h>
+#include <linaos/kfifo.h>
+#include <linaos/slab.h>
 
 #include <media/v4l2-device.h>
 #include <media/rc-core.h>

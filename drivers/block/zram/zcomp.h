@@ -5,7 +5,7 @@
 
 #ifndef _ZCOMP_H_
 #define _ZCOMP_H_
-#include <linux/local_lock.h>
+#include <linaos/local_lock.h>
 
 struct zcomp_strm {
 	/* The members ->buffer and ->tfm are protected by ->lock. */

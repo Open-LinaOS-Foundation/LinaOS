@@ -6,8 +6,8 @@
  *	    Keyur Chudgar <kchudgar@apm.com>
  */
 
-#include <linux/of_gpio.h>
-#include <linux/gpio.h>
+#include <linaos/of_gpio.h>
+#include <linaos/gpio.h>
 #include "xgene_enet_main.h"
 #include "xgene_enet_hw.h"
 #include "xgene_enet_xgmac.h"

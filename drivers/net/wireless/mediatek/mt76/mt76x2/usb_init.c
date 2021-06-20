@@ -3,7 +3,7 @@
  * Copyright (C) 2018 Lorenzo Bianconi <lorenzo.bianconi83@gmail.com>
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include "mt76x2u.h"
 #include "eeprom.h"

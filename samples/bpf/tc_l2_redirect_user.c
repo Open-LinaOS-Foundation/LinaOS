@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2016 Facebook
  */
-#include <linux/unistd.h>
-#include <linux/bpf.h>
+#include <linaos/unistd.h>
+#include <linaos/bpf.h>
 
 #include <stdlib.h>
 #include <stdio.h>

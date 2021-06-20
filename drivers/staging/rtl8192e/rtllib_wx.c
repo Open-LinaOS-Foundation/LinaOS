@@ -9,13 +9,13 @@
  * Copyright (c) 2002-2003, Jouni Malinen <jkmaline@cc.hut.fi>
  *
  * Contact Information:
- * James P. Ketrenos <ipw2100-admin@linux.intel.com>
+ * James P. Ketrenos <ipw2100-admin@linaos.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  */
-#include <linux/wireless.h>
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
+#include <linaos/wireless.h>
+#include <linaos/kmod.h>
+#include <linaos/module.h>
+#include <linaos/etherdevice.h>
 #include "rtllib.h"
 struct modes_unit {
 	char *mode_string;

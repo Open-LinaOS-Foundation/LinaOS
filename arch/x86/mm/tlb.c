@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/init.h>
+#include <linaos/init.h>
 
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/cpu.h>
-#include <linux/debugfs.h>
+#include <linaos/mm.h>
+#include <linaos/spinlock.h>
+#include <linaos/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/export.h>
+#include <linaos/cpu.h>
+#include <linaos/debugfs.h>
 
 #include <asm/tlbflush.h>
 #include <asm/mmu_context.h>

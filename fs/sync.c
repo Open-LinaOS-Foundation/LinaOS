@@ -3,19 +3,19 @@
  * High-level sync()-related operations
  */
 
-#include <linux/kernel.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/namei.h>
-#include <linux/sched.h>
-#include <linux/writeback.h>
-#include <linux/syscalls.h>
-#include <linux/linkage.h>
-#include <linux/pagemap.h>
-#include <linux/quotaops.h>
-#include <linux/backing-dev.h>
+#include <linaos/kernel.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/namei.h>
+#include <linaos/sched.h>
+#include <linaos/writeback.h>
+#include <linaos/syscalls.h>
+#include <linaos/linkage.h>
+#include <linaos/pagemap.h>
+#include <linaos/quotaops.h>
+#include <linaos/backing-dev.h>
 #include "internal.h"
 
 #define VALID_FLAGS (SYNC_FILE_RANGE_WAIT_BEFORE|SYNC_FILE_RANGE_WRITE| \

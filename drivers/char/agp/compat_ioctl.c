@@ -26,12 +26,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/fs.h>
-#include <linux/agpgart.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/fs.h>
+#include <linaos/agpgart.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 #include "agp.h"
 #include "compat_ioctl.h"
 

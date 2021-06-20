@@ -2,7 +2,7 @@
 /*
  *  Driver for the Auvitek USB bridge
  *
- *  Copyright (c) 2008 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2008 Steven Toth <stoth@linaostv.org>
  */
 
 #define AU0828_BOARD_UNKNOWN		0

@@ -6,11 +6,11 @@
  ******************************************************************************/
 #define _RTW_MLME_C_
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include <drv_types.h>
 #include <rtw_debug.h>
 #include <hal_btcoex.h>
-#include <linux/jiffies.h>
+#include <linaos/jiffies.h>
 
 int	rtw_init_mlme_priv(struct adapter *padapter)
 {

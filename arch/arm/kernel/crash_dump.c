@@ -10,10 +10,10 @@
  *   Copyright (C) IBM Corporation, 2004. All rights reserved
  */
 
-#include <linux/errno.h>
-#include <linux/crash_dump.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <linaos/errno.h>
+#include <linaos/crash_dump.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
 
 /**
  * copy_oldmem_page() - copy one page from old kernel memory

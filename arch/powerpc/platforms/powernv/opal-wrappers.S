@@ -5,7 +5,7 @@
  * Copyright 2011 IBM Corp.
  */
 
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 #include <asm/ppc_asm.h>
 #include <asm/hvcall.h>
 #include <asm/asm-offsets.h>

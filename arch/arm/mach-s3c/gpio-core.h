@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Copyright 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C Platform - GPIO core
@@ -12,7 +12,7 @@
 
 /* Bring in machine-local definitions, especially S3C_GPIO_END */
 #include "gpio-samsung.h"
-#include <linux/gpio/driver.h>
+#include <linaos/gpio/driver.h>
 
 #define GPIOCON_OFF	(0x00)
 #define GPIODAT_OFF	(0x04)

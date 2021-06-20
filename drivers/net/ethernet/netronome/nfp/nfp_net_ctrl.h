@@ -13,7 +13,7 @@
 #ifndef _NFP_NET_CTRL_H_
 #define _NFP_NET_CTRL_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * Configuration BAR size.

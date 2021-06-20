@@ -1,4 +1,4 @@
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #ifndef __CHECKER__
 #define CREATE_TRACE_POINTS

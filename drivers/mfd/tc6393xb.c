@@ -11,18 +11,18 @@
  * Based on locomo.c
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mfd/tc6393xb.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/tmio.h>
+#include <linaos/mfd/tc6393xb.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/slab.h>
 
 #define SCR_REVID	0x08		/* b Revision ID	*/
 #define SCR_ISR		0x50		/* b Interrupt Status	*/

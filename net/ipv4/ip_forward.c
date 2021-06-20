@@ -20,23 +20,23 @@
  *		Mike McLagan	:	Routing by source
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/skbuff.h>
+#include <linaos/ip.h>
+#include <linaos/icmp.h>
+#include <linaos/netdevice.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
 #include <net/ip.h>
 #include <net/tcp.h>
 #include <net/udp.h>
 #include <net/icmp.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/netfilter_ipv4.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/netfilter_ipv4.h>
 #include <net/checksum.h>
-#include <linux/route.h>
+#include <linaos/route.h>
 #include <net/route.h>
 #include <net/xfrm.h>
 

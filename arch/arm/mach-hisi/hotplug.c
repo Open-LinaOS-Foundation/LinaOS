@@ -4,11 +4,11 @@
  * Copyright (c) 2013 HiSilicon Limited.
  */
 
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linaos/cpu.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>
 #include "core.h"

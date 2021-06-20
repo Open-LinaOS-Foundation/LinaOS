@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *	include/linux/vt_buffer.h -- Access to VT screen buffer
+ *	include/linaos/vt_buffer.h -- Access to VT screen buffer
  *
  *	(c) 1998 Martin Mares <mj@ucw.cz>
  *
@@ -14,7 +14,7 @@
 #ifndef _LINUX_VT_BUFFER_H_
 #define _LINUX_VT_BUFFER_H_
 
-#include <linux/string.h>
+#include <linaos/string.h>
 
 #if defined(CONFIG_VGA_CONSOLE) || defined(CONFIG_MDA_CONSOLE)
 #include <asm/vga.h>

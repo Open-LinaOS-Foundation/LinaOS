@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/acorn/scsi/acornscsi.c
+ *  linaos/drivers/acorn/scsi/acornscsi.c
  *
  *  Acorn SCSI 3 driver
  *  By R.M.King.
@@ -21,7 +21,7 @@
  *			reconnect race condition causing a warning message.
  *  12-Oct-1997	RMK	Added catch for re-entering interrupt routine.
  *  15-Oct-1997	RMK	Improved handling of commands.
- *  27-Jun-1998	RMK	Changed asm/delay.h to linux/delay.h.
+ *  27-Jun-1998	RMK	Changed asm/delay.h to linaos/delay.h.
  *  13-Dec-1998	RMK	Better abort code and command handling.  Extra state
  *			transitions added to allow dodgy devices to work.
  */
@@ -113,20 +113,20 @@
 #define DBG(cmd,xxx...) xxx
 #endif
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/proc_fs.h>
-#include <linux/ioport.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/stringify.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/signal.h>
+#include <linaos/errno.h>
+#include <linaos/proc_fs.h>
+#include <linaos/ioport.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/stringify.h>
+#include <linaos/io.h>
 
 #include <asm/ecard.h>
 

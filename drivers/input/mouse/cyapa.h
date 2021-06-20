@@ -13,7 +13,7 @@
 #ifndef _CYAPA_H
 #define _CYAPA_H
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 /* APA trackpad firmware generation number. */
 #define CYAPA_GEN_UNKNOWN   0x00   /* unknown protocol. */

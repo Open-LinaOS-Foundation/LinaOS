@@ -9,8 +9,8 @@
 
 #include <media/dvb_frontend.h>
 #include "ts2020.h"
-#include <linux/regmap.h>
-#include <linux/math64.h>
+#include <linaos/regmap.h>
+#include <linaos/math64.h>
 
 #define TS2020_XTAL_FREQ   27000 /* in kHz */
 #define FREQ_OFFSET_LOW_SYM_RATE 3000

@@ -11,11 +11,11 @@
  *                Virtualized Server Adapter.
  * Copyright(c) 2002-2010 Exar Corp.
  ******************************************************************************/
-#include <linux/vmalloc.h>
-#include <linux/etherdevice.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/etherdevice.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 
 #include "vxge-traffic.h"
 #include "vxge-config.h"

@@ -20,9 +20,9 @@
 #include <string.h>
 #include <ctype.h>
 #include <errno.h>
-#include <linux/fs.h>
-#include <linux/major.h>
-#include <linux/hyperv.h>
+#include <linaos/fs.h>
+#include <linaos/major.h>
+#include <linaos/hyperv.h>
 #include <syslog.h>
 #include <getopt.h>
 #include <stdbool.h>

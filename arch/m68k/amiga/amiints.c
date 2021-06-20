@@ -1,15 +1,15 @@
 /*
- * Amiga Linux interrupt handling code
+ * Amiga LinaOS interrupt handling code
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/irq.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/irq.h>
 
 #include <asm/irq.h>
 #include <asm/traps.h>

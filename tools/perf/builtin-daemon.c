@@ -3,9 +3,9 @@
 #include <subcmd/parse-options.h>
 #include <api/fd/array.h>
 #include <api/fs/fs.h>
-#include <linux/zalloc.h>
-#include <linux/string.h>
-#include <linux/limits.h>
+#include <linaos/zalloc.h>
+#include <linaos/string.h>
+#include <linaos/limits.h>
 #include <string.h>
 #include <sys/file.h>
 #include <signal.h>

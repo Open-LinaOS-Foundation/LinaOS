@@ -3,13 +3,13 @@
 // Copyright (c) 2019 MediaTek Inc.
 
 #include <asm/barrier.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc/mtk_scp.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/remoteproc/mtk_scp.h>
 
 #include "mtk_common.h"
 

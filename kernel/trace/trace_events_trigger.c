@@ -2,15 +2,15 @@
 /*
  * trace_events_trigger - trace event triggers
  *
- * Copyright (C) 2013 Tom Zanussi <tom.zanussi@linux.intel.com>
+ * Copyright (C) 2013 Tom Zanussi <tom.zanussi@linaos.intel.com>
  */
 
-#include <linux/security.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/rculist.h>
+#include <linaos/security.h>
+#include <linaos/module.h>
+#include <linaos/ctype.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/rculist.h>
 
 #include "trace.h"
 

@@ -1,4 +1,4 @@
-/* sundance.c: A Linux device driver for the Sundance ST201 "Alta". */
+/* sundance.c: A LinaOS device driver for the Sundance ST201 "Alta". */
 /*
 	Written 1999-2000 by Donald Becker.
 
@@ -75,28 +75,28 @@ static char *media[MAX_UNITS];
 #define PKT_BUF_SZ		1536	/* Size of each temporary Rx buffer.*/
 
 /* Include files, designed to support most kernel versions 2.0.0 and later. */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/uaccess.h>
 #include <asm/processor.h>		/* Processor type for cache alignment. */
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/crc32.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
 
 MODULE_AUTHOR("Donald Becker <becker@scyld.com>");
 MODULE_DESCRIPTION("Sundance Alta Ethernet driver");

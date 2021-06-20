@@ -3,16 +3,16 @@
 * Copyright (C) 2012 Invensense, Inc.
 */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/poll.h>
-#include <linux/math64.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/sysfs.h>
+#include <linaos/jiffies.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/poll.h>
+#include <linaos/math64.h>
 #include "inv_mpu_iio.h"
 
 /**

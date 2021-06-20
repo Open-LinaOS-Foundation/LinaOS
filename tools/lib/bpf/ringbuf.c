@@ -11,8 +11,8 @@
 #include <stdio.h>
 #include <errno.h>
 #include <unistd.h>
-#include <linux/err.h>
-#include <linux/bpf.h>
+#include <linaos/err.h>
+#include <linaos/bpf.h>
 #include <asm/barrier.h>
 #include <sys/mman.h>
 #include <sys/epoll.h>

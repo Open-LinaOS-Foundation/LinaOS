@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/resource.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/resource.h>
+#include <linaos/types.h>
 
 /* Number of pins on BlueField */
 #define MLXBF_GPIO_NR 54

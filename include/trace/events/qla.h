@@ -2,7 +2,7 @@
 #if !defined(_TRACE_QLA_H_) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_QLA_H_
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM qla

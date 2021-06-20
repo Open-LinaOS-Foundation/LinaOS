@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ========================================
-The COPS LocalTalk Linux driver (cops.c)
+The COPS LocalTalk LinaOS driver (cops.c)
 ========================================
 
 By Jay Schulist <jschlst@samba.org>

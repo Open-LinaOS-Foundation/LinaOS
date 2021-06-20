@@ -10,10 +10,10 @@
  */
 
 #include <crypto/scatterwalk.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/scatterlist.h>
 
 static inline void memcpy_dir(void *buf, void *sgdata, size_t nbytes, int out)
 {

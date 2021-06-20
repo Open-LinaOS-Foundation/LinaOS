@@ -7,7 +7,7 @@
  *
  *  Based on the powernow-k7.c module written by Dave Jones.
  *  (C) 2003 Dave Jones on behalf of SuSE Labs
- *  (C) 2004 Dominik Brodowski <linux@brodo.de>
+ *  (C) 2004 Dominik Brodowski <linaos@brodo.de>
  *  (C) 2004 Pavel Machek <pavel@ucw.cz>
  *  Based upon datasheets & sample CPUs kindly provided by AMD.
  *
@@ -26,22 +26,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/cpumask.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/smp.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/cpufreq.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/cpumask.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
 
 #include <asm/msr.h>
 #include <asm/cpu_device_id.h>
 
-#include <linux/acpi.h>
-#include <linux/mutex.h>
+#include <linaos/acpi.h>
+#include <linaos/mutex.h>
 #include <acpi/processor.h>
 
 #define VERSION "version 2.20.00"
@@ -692,9 +692,9 @@ static int find_psb_table(struct powernow_k8_data *data)
 	}
 	/*
 	 * If you see this message, complain to BIOS manufacturer. If
-	 * he tells you "we do not support Linux" or some similar
+	 * he tells you "we do not support LinaOS" or some similar
 	 * nonsense, remember that Windows 2000 uses the same legacy
-	 * mechanism that the old Linux PSB driver uses. Tell them it
+	 * mechanism that the old LinaOS PSB driver uses. Tell them it
 	 * is broken with Windows 2000.
 	 *
 	 * The reference to the AMD documentation is chapter 9 in the

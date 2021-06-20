@@ -8,17 +8,17 @@
  * Copyright (c) 2015 Herbert Xu <herbert@gondor.apana.org.au>
  */
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <crypto/internal/rng.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/cryptouser.h>
-#include <linux/compiler.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/random.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/cryptouser.h>
+#include <linaos/compiler.h>
 #include <net/netlink.h>
 
 #include "internal.h"

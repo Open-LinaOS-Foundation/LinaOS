@@ -10,7 +10,7 @@
 # CBMC_FLAGS: Additional flags to pass to CBMC
 # NR_CPUS: Number of cpus to run tests with. Default specified by the test
 # SYNC_SRCU_MODE: Choose implementation of synchronize_srcu. Defaults to simple.
-#                 kernel: Version included in the linux kernel source.
+#                 kernel: Version included in the linaos kernel source.
 #                 simple: Use try_check_zero directly.
 #
 # The input file is a script that is sourced by this file. It can define any of

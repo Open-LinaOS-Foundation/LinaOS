@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * uClinux flat-format executables
+ * uClinaos flat-format executables
  *
  * Copyright (C) 2005 John Williams <jwilliams@itee.uq.edu.au>
  */

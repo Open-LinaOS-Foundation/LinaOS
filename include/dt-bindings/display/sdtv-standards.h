@@ -8,7 +8,7 @@
 
 /*
  * Attention: Keep the SDTV_STD_* bit definitions in sync with
- * include/uapi/linux/videodev2.h V4L2_STD_* bit definitions.
+ * include/uapi/linaos/videodev2.h V4L2_STD_* bit definitions.
  */
 /* One bit for each standard */
 #define SDTV_STD_PAL_B		0x00000001

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/lockd/share.h
+ * linaos/include/linaos/lockd/share.h
  *
  * DOS share management for lockd.
  *

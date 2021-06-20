@@ -59,19 +59,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/fcntl.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/fcntl.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
+#include <linaos/inetdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/string.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/slab.h>
 #include <net/snmp.h>
 #include <net/ip.h>
 #include <net/route.h>
@@ -81,12 +81,12 @@
 #include <net/udp.h>
 #include <net/raw.h>
 #include <net/ping.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/sock.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/uaccess.h>
 #include <net/checksum.h>
 #include <net/xfrm.h>
 #include <net/inet_common.h>

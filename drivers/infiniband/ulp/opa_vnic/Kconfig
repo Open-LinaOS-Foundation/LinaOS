@@ -5,5 +5,5 @@ config INFINIBAND_OPA_VNIC
 	help
 	This is Omni-Path (OPA) Virtual Network Interface Controller (VNIC)
 	driver for Ethernet over Omni-Path feature. It implements the HW
-	independent VNIC functionality. It interfaces with Linux stack for
+	independent VNIC functionality. It interfaces with LinaOS stack for
 	data path and IB MAD for the control path.

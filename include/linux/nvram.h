@@ -2,8 +2,8 @@
 #ifndef _LINUX_NVRAM_H
 #define _LINUX_NVRAM_H
 
-#include <linux/errno.h>
-#include <uapi/linux/nvram.h>
+#include <linaos/errno.h>
+#include <uapi/linaos/nvram.h>
 
 #ifdef CONFIG_PPC
 #include <asm/machdep.h>

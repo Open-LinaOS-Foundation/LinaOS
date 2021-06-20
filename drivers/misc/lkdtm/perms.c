@@ -5,10 +5,10 @@
  * even non-readable regions.
  */
 #include "lkdtm.h"
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mman.h>
-#include <linux/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mman.h>
+#include <linaos/uaccess.h>
 #include <asm/cacheflush.h>
 
 /* Whether or not to fill the target memory area with do_nothing(). */

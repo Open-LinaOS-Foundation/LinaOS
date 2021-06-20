@@ -6,13 +6,13 @@
  *	Murali Karicheri <m-karicheri2@ti.com>
  *	Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/module.h>
+#include <linaos/clk-provider.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/of_address.h>
+#include <linaos/of.h>
+#include <linaos/module.h>
 
 /* PSC register offsets */
 #define PTCMD			0x120

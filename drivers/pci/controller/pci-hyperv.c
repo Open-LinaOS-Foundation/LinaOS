@@ -37,18 +37,18 @@
  * the PCI back-end driver in Hyper-V.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/semaphore.h>
-#include <linux/irqdomain.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/semaphore.h>
+#include <linaos/irqdomain.h>
 #include <asm/irqdomain.h>
 #include <asm/apic.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
-#include <linux/hyperv.h>
-#include <linux/refcount.h>
+#include <linaos/irq.h>
+#include <linaos/msi.h>
+#include <linaos/hyperv.h>
+#include <linaos/refcount.h>
 #include <asm/mshyperv.h>
 
 /*
@@ -617,8 +617,8 @@ static int wait_for_response(struct hv_device *hdev,
 }
 
 /**
- * devfn_to_wslot() - Convert from Linux PCI slot to Windows
- * @devfn:	The Linux representation of PCI slot
+ * devfn_to_wslot() - Convert from LinaOS PCI slot to Windows
+ * @devfn:	The LinaOS representation of PCI slot
  *
  * Windows uses a slightly different representation of PCI slot.
  *
@@ -636,12 +636,12 @@ static u32 devfn_to_wslot(int devfn)
 }
 
 /**
- * wslot_to_devfn() - Convert from Windows PCI slot to Linux
+ * wslot_to_devfn() - Convert from Windows PCI slot to LinaOS
  * @wslot:	The Windows representation of PCI slot
  *
  * Windows uses a slightly different representation of PCI slot.
  *
- * Return: The Linux representation
+ * Return: The LinaOS representation
  */
 static int wslot_to_devfn(u32 wslot)
 {
@@ -2014,7 +2014,7 @@ static struct hv_pci_dev *get_pcichild_wslot(struct hv_pcibus_device *hbus,
  *
  * "Bus Relations" is the Windows term for "children of this
  * bus."  The terminology is preserved here for people trying to
- * debug the interaction between Hyper-V and Linux.  This
+ * debug the interaction between Hyper-V and LinaOS.  This
  * function is called when the parent partition reports a list
  * of functions that should be observed under this PCI Express
  * port (bus).
@@ -2525,7 +2525,7 @@ static void hv_pci_onchannelcallback(void *context)
  * This driver is intended to support running on Windows 10
  * (server) and later versions. It will not run on earlier
  * versions, as they assume that many of the operations which
- * Linux needs accomplished with a spinlock held were done via
+ * LinaOS needs accomplished with a spinlock held were done via
  * asynchronous messaging via VMBus.  Windows 10 increases the
  * surface area of PCI emulation so that these actions can take
  * place by suspending a virtual processor for their duration.
@@ -2848,7 +2848,7 @@ static int hv_pci_query_relations(struct hv_device *hdev)
  * which is to say, the values which should be used by the
  * hardware, when it delivers an interrupt.  (MMIO resources are
  * used in local terms.)  This is nice for Windows, and lines up
- * with the FDO/PDO split, which doesn't exist in Linux.  Linux
+ * with the FDO/PDO split, which doesn't exist in LinaOS.  LinaOS
  * is deeply expecting to scan an emulated PCI configuration
  * space.  So this message is sent here only to drive the state
  * machine on the host forward.

@@ -5,7 +5,7 @@
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C Platform - SDHCI (HSMMC) platform data definitions
@@ -14,7 +14,7 @@
 #ifndef __PLAT_S3C_SDHCI_H
 #define __PLAT_S3C_SDHCI_H __FILE__
 
-#include <linux/platform_data/mmc-sdhci-s3c.h>
+#include <linaos/platform_data/mmc-sdhci-s3c.h>
 #include "devs.h"
 
 /* s3c_sdhci_set_platdata() - common helper for setting SDHCI platform data

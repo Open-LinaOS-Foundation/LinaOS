@@ -1,16 +1,16 @@
 /*
  * support for probing IDE PCI devices in the PCI bus order
  *
- * Copyright (c) 1998-2000  Andre Hedrick <andre@linux-ide.org>
+ * Copyright (c) 1998-2000  Andre Hedrick <andre@linaos-ide.org>
  * Copyright (c) 1995-1998  Mark Lord
  *
  * May be copied or modified under the terms of the GNU General Public License
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ide.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/ide.h>
 
 /*
  *	Module interfaces

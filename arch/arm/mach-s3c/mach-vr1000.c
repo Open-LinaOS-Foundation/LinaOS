@@ -6,23 +6,23 @@
 // Machine support for Thorcom VR1000 board. Designed for Thorcom by
 // Simtec Electronics, http://www.simtec.co.uk/
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/dm9000.h>
-#include <linux/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/dm9000.h>
+#include <linaos/i2c.h>
 
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/serial_s3c.h>
-#include <linux/io.h>
+#include <linaos/serial.h>
+#include <linaos/tty.h>
+#include <linaos/serial_8250.h>
+#include <linaos/serial_reg.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -31,9 +31,9 @@
 #include <asm/irq.h>
 #include <asm/mach-types.h>
 
-#include <linux/platform_data/leds-s3c24xx.h>
-#include <linux/platform_data/i2c-s3c2410.h>
-#include <linux/platform_data/asoc-s3c24xx_simtec.h>
+#include <linaos/platform_data/leds-s3c24xx.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/asoc-s3c24xx_simtec.h>
 
 #include "regs-gpio.h"
 #include "gpio-samsung.h"

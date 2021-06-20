@@ -26,7 +26,7 @@ enum { HPI_DEBUG_LEVEL_ERROR = 0,	/* always log errors */
 #define HPI_DEBUG_LEVEL_DEFAULT HPI_DEBUG_LEVEL_NOTICE
 
 /* an OS can define an extra flag string that is appended to
-   the start of each message, eg see linux kernel hpios.h */
+   the start of each message, eg see linaos kernel hpios.h */
 
 #ifdef SOURCEFILE_NAME
 #define FILE_LINE  SOURCEFILE_NAME ":" __stringify(__LINE__) " "
@@ -53,7 +53,7 @@ enum { HPI_DEBUG_LEVEL_ERROR = 0,	/* always log errors */
 void hpi_debug_init(void);
 int hpi_debug_level_set(int level);
 int hpi_debug_level_get(void);
-/* needed by Linux driver for dynamic debug level changes */
+/* needed by LinaOS driver for dynamic debug level changes */
 extern int hpi_debug_level;
 
 void hpi_debug_message(struct hpi_message *phm, char *sz_fileline);

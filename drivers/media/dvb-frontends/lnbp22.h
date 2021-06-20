@@ -5,7 +5,7 @@
  * Copyright (C) 2006 Dominik Kuhlen
  * Based on lnbp21.h
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://linaostv.org
  */
 
 #ifndef _LNBP22_H
@@ -18,7 +18,7 @@
 /* Plus 1 Volt Bit */
 #define LNBP22_LLC	0x01
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 #if IS_REACHABLE(CONFIG_DVB_LNBP22)
 /*

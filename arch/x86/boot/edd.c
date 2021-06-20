@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright (C) 1991, 1992 Linus Torvalds
  *   Copyright 2007 rPath, Inc. - All Rights Reserved
@@ -12,7 +12,7 @@
  */
 
 #include "boot.h"
-#include <linux/edd.h>
+#include <linaos/edd.h>
 #include "string.h"
 
 #if defined(CONFIG_EDD) || defined(CONFIG_EDD_MODULE)

@@ -2,19 +2,19 @@
 /*
  * eBPF JIT compiler
  *
- * Copyright 2016 Naveen N. Rao <naveen.n.rao@linux.vnet.ibm.com>
+ * Copyright 2016 Naveen N. Rao <naveen.n.rao@linaos.vnet.ibm.com>
  *		  IBM Corporation
  *
  * Based on the powerpc classic BPF JIT compiler by Matt Evans
  */
-#include <linux/moduleloader.h>
+#include <linaos/moduleloader.h>
 #include <asm/cacheflush.h>
 #include <asm/asm-compat.h>
-#include <linux/netdevice.h>
-#include <linux/filter.h>
-#include <linux/if_vlan.h>
+#include <linaos/netdevice.h>
+#include <linaos/filter.h>
+#include <linaos/if_vlan.h>
 #include <asm/kprobes.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 
 #include "bpf_jit.h"
 

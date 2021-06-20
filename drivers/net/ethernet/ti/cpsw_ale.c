@@ -5,18 +5,18 @@
  * Copyright (C) 2012 Texas Instruments
  *
  */
-#include <linux/bitmap.h>
-#include <linux/if_vlan.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/stat.h>
-#include <linux/sysfs.h>
-#include <linux/etherdevice.h>
+#include <linaos/bitmap.h>
+#include <linaos/if_vlan.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/stat.h>
+#include <linaos/sysfs.h>
+#include <linaos/etherdevice.h>
 
 #include "cpsw_ale.h"
 

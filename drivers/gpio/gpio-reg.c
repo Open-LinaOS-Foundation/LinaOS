@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2016 Russell King
  */
-#include <linux/gpio/driver.h>
-#include <linux/gpio/gpio-reg.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/gpio/gpio-reg.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 struct gpio_reg {
 	struct gpio_chip gc;
@@ -119,7 +119,7 @@ static int gpio_reg_to_irq(struct gpio_chip *gc, unsigned offset)
  * @irqdom: irq domain or %NULL
  * @irqs: array of %num ints describing the interrupt mapping for each
  *        GPIO signal, or %NULL.  If @irqdom is %NULL, then this
- *        describes the Linux interrupt number, otherwise it describes
+ *        describes the LinaOS interrupt number, otherwise it describes
  *        the hardware interrupt number in the specified irq domain.
  *
  * Add a single-register GPIO device containing up to 32 GPIO signals,

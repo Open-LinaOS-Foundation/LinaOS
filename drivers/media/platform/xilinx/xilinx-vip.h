@@ -12,8 +12,8 @@
 #ifndef __XILINX_VIP_H__
 #define __XILINX_VIP_H__
 
-#include <linux/bitops.h>
-#include <linux/io.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
 #include <media/v4l2-subdev.h>
 
 struct clk;

@@ -8,11 +8,11 @@
 
 #define dev_fmt(fmt) "DPC: " fmt
 
-#include <linux/aer.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/aer.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 
 #include "portdrv.h"
 #include "../pci.h"

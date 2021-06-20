@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2012-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2020, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _DP_HPD_H_
 #define _DP_HPD_H_
 
-//#include <linux/usb/usbpd.h>
+//#include <linaos/usb/usbpd.h>
 
-#include <linux/types.h>
-#include <linux/device.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
 
 enum plug_orientation {
 	ORIENTATION_NONE,

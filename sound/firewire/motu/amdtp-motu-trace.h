@@ -11,7 +11,7 @@
 #if !defined(_SND_FIREWIRE_MOTU_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _SND_FIREWIRE_MOTU_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 static void copy_sph(u32 *frame, __be32 *buffer, unsigned int data_blocks,
 		     unsigned int data_block_quadlets);

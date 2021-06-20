@@ -32,11 +32,11 @@
 #include "amdgpu_vce.h"
 #include "atom.h"
 
-#include <linux/vga_switcheroo.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
+#include <linaos/vga_switcheroo.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/pci.h>
+#include <linaos/pm_runtime.h>
 #include "amdgpu_amdkfd.h"
 #include "amdgpu_gem.h"
 #include "amdgpu_display.h"

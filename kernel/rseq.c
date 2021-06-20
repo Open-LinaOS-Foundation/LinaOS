@@ -8,11 +8,11 @@
  * Mathieu Desnoyers <mathieu.desnoyers@efficios.com>
  */
 
-#include <linux/sched.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/rseq.h>
-#include <linux/types.h>
+#include <linaos/sched.h>
+#include <linaos/uaccess.h>
+#include <linaos/syscalls.h>
+#include <linaos/rseq.h>
+#include <linaos/types.h>
 #include <asm/ptrace.h>
 
 #define CREATE_TRACE_POINTS

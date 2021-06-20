@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0 OR BSD-2-Clause
 /* Copyright (C) 2018 KVASER AB, Sweden. All rights reserved.
  * Parts of this driver are based on the following:
- *  - Kvaser linux pciefd driver (version 5.25)
- *  - PEAK linux canfd driver
+ *  - Kvaser linaos pciefd driver (version 5.25)
+ *  - PEAK linaos canfd driver
  *  - Altera Avalon EPCS flash controller driver
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/can/dev.h>
-#include <linux/timer.h>
-#include <linux/netdevice.h>
-#include <linux/crc32.h>
-#include <linux/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/pci.h>
+#include <linaos/can/dev.h>
+#include <linaos/timer.h>
+#include <linaos/netdevice.h>
+#include <linaos/crc32.h>
+#include <linaos/iopoll.h>
 
 MODULE_LICENSE("Dual BSD/GPL");
 MODULE_AUTHOR("Kvaser AB <support@kvaser.com>");

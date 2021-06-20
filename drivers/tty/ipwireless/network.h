@@ -19,7 +19,7 @@
 #ifndef _IPWIRELESS_CS_NETWORK_H_
 #define _IPWIRELESS_CS_NETWORK_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct ipw_network;
 struct ipw_tty;

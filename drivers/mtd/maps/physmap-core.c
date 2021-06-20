@@ -23,23 +23,23 @@
  *    Copyright © 2005-2009 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/concat.h>
-#include <linux/mtd/cfi_endian.h>
-#include <linux/io.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/mtd/concat.h>
+#include <linaos/mtd/cfi_endian.h>
+#include <linaos/io.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/gpio/consumer.h>
 
 #include "physmap-bt1-rom.h"
 #include "physmap-gemini.h"
@@ -284,7 +284,7 @@ static const char * const *of_get_part_probes(struct platform_device *dev)
 	const char **res;
 	int count;
 
-	count = of_property_count_strings(dp, "linux,part-probe");
+	count = of_property_count_strings(dp, "linaos,part-probe");
 	if (count < 0)
 		return of_default_part_probes;
 
@@ -292,7 +292,7 @@ static const char * const *of_get_part_probes(struct platform_device *dev)
 	if (!res)
 		return NULL;
 
-	count = of_property_read_string_array(dp, "linux,part-probe", res,
+	count = of_property_read_string_array(dp, "linaos,part-probe", res,
 					      count);
 	if (count < 0)
 		return NULL;
@@ -353,7 +353,7 @@ static int physmap_flash_of_init(struct platform_device *dev)
 	if (!info->part_types)
 		return -ENOMEM;
 
-	of_property_read_string(dp, "linux,mtd-name", &mtd_name);
+	of_property_read_string(dp, "linaos,mtd-name", &mtd_name);
 
 	map_indirect = of_property_read_bool(dp, "no-unaligned-direct-access");
 

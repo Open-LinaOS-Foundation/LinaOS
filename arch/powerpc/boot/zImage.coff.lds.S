@@ -24,9 +24,9 @@ SECTIONS
     *(.kernel:dtb)
     _dtb_end = .;
 
-    _vmlinux_start =  .;
-    *(.kernel:vmlinux.strip)
-    _vmlinux_end =  .;
+    _vmlinaos_start =  .;
+    *(.kernel:vmlinaos.strip)
+    _vmlinaos_end =  .;
 
     _initrd_start =  .;
     *(.kernel:initrd)

@@ -17,9 +17,9 @@
 #ifndef _NETLABEL_DOMAINHASH_H
 #define _NETLABEL_DOMAINHASH_H
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
+#include <linaos/types.h>
+#include <linaos/rcupdate.h>
+#include <linaos/list.h>
 
 #include "netlabel_addrlist.h"
 

@@ -17,11 +17,11 @@
  * project.
  */
 
-#include <linux/kernel.h>
-#include <linux/of_platform.h>
-#include <linux/sysfs.h>
-#include <linux/cpu.h>
-#include <linux/suspend.h>
+#include <linaos/kernel.h>
+#include <linaos/of_platform.h>
+#include <linaos/sysfs.h>
+#include <linaos/cpu.h>
+#include <linaos/suspend.h>
 #include <asm/dcr.h>
 #include <asm/dcr-native.h>
 #include <asm/machdep.h>

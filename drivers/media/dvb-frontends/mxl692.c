@@ -18,10 +18,10 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/mutex.h>
-#include <linux/i2c-mux.h>
-#include <linux/string.h>
-#include <linux/firmware.h>
+#include <linaos/mutex.h>
+#include <linaos/i2c-mux.h>
+#include <linaos/string.h>
+#include <linaos/firmware.h>
 
 #include "mxl692.h"
 #include "mxl692_defs.h"

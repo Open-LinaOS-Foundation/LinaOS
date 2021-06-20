@@ -8,7 +8,7 @@
 #ifndef _RK3328_CODEC_H
 #define _RK3328_CODEC_H
 
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 
 /* codec register */
 #define CODEC_RESET			(0x00 << 2)

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/linux/mtd/onenand.h
+ *  linaos/include/linaos/mtd/onenand.h
  *
  *  Copyright © 2005-2009 Samsung Electronics
  *  Kyungmin Park <kyungmin.park@samsung.com>
@@ -9,11 +9,11 @@
 #ifndef __LINUX_MTD_ONENAND_H
 #define __LINUX_MTD_ONENAND_H
 
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/mtd/flashchip.h>
-#include <linux/mtd/onenand_regs.h>
-#include <linux/mtd/bbm.h>
+#include <linaos/spinlock.h>
+#include <linaos/completion.h>
+#include <linaos/mtd/flashchip.h>
+#include <linaos/mtd/onenand_regs.h>
+#include <linaos/mtd/bbm.h>
 
 #define MAX_DIES		2
 #define MAX_BUFFERRAM		2

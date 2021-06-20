@@ -76,7 +76,7 @@ some video hardware.
 
 /dev/fb* also allows several ioctls on it, by which lots of information about
 the hardware can be queried and set. The color map handling works via ioctls,
-too. Look into <linux/fb.h> for more information on what ioctls exist and on
+too. Look into <linaos/fb.h> for more information on what ioctls exist and on
 which data structures they work. Here's just a brief overview:
 
   - You can request unchangeable information about the hardware, like name,
@@ -303,9 +303,9 @@ under "xc/programs/Xserver/hw/xfree86/doc/modeDB.txt".
 -------------
 
 For more specific information about the frame buffer device and its
-applications, please refer to the Linux-fbdev website:
+applications, please refer to the LinaOS-fbdev website:
 
-    http://linux-fbdev.sourceforge.net/
+    http://linaos-fbdev.sourceforge.net/
 
 and to the following documentation:
 
@@ -313,9 +313,9 @@ and to the following documentation:
   - The manual pages for XFree86: XF68_FBDev(1), XF86Config(4/5)
   - The mighty kernel sources:
 
-      - linux/drivers/video/
-      - linux/include/linux/fb.h
-      - linux/include/video/
+      - linaos/drivers/video/
+      - linaos/include/linaos/fb.h
+      - linaos/include/video/
 
 
 
@@ -323,9 +323,9 @@ and to the following documentation:
 ---------------
 
 There is a frame buffer device related mailing list at kernel.org:
-linux-fbdev@vger.kernel.org.
+linaos-fbdev@vger.kernel.org.
 
-Point your web browser to http://sourceforge.net/projects/linux-fbdev/ for
+Point your web browser to http://sourceforge.net/projects/linaos-fbdev/ for
 subscription information and archive browsing.
 
 
@@ -334,13 +334,13 @@ subscription information and archive browsing.
 
 All necessary files can be found at
 
-    ftp://ftp.uni-erlangen.de/pub/Linux/LOCAL/680x0/
+    ftp://ftp.uni-erlangen.de/pub/LinaOS/LOCAL/680x0/
 
 and on its mirrors.
 
 The latest version of fbset can be found at
 
-    http://www.linux-fbdev.org/
+    http://www.linaos-fbdev.org/
 
 
 10. Credits

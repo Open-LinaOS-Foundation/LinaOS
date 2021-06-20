@@ -8,9 +8,9 @@
 #include "habanalabs.h"
 #include "../include/hw_ip/mmu/mmu_general.h"
 
-#include <linux/pci.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
+#include <linaos/pci.h>
+#include <linaos/uaccess.h>
+#include <linaos/vmalloc.h>
 
 #define MMU_ADDR_BUF_SIZE	40
 #define MMU_ASID_BUF_SIZE	10

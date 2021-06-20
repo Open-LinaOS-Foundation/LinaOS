@@ -2,31 +2,31 @@
 # SPDX-License-Identifier: GPL-2.0
 
 FILES='
-include/uapi/linux/const.h
+include/uapi/linaos/const.h
 include/uapi/drm/drm.h
 include/uapi/drm/i915_drm.h
-include/uapi/linux/fadvise.h
-include/uapi/linux/fcntl.h
-include/uapi/linux/fs.h
-include/uapi/linux/fscrypt.h
-include/uapi/linux/kcmp.h
-include/uapi/linux/kvm.h
-include/uapi/linux/in.h
-include/uapi/linux/mount.h
-include/uapi/linux/openat2.h
-include/uapi/linux/perf_event.h
-include/uapi/linux/prctl.h
-include/uapi/linux/sched.h
-include/uapi/linux/stat.h
-include/uapi/linux/usbdevice_fs.h
-include/uapi/linux/vhost.h
+include/uapi/linaos/fadvise.h
+include/uapi/linaos/fcntl.h
+include/uapi/linaos/fs.h
+include/uapi/linaos/fscrypt.h
+include/uapi/linaos/kcmp.h
+include/uapi/linaos/kvm.h
+include/uapi/linaos/in.h
+include/uapi/linaos/mount.h
+include/uapi/linaos/openat2.h
+include/uapi/linaos/perf_event.h
+include/uapi/linaos/prctl.h
+include/uapi/linaos/sched.h
+include/uapi/linaos/stat.h
+include/uapi/linaos/usbdevice_fs.h
+include/uapi/linaos/vhost.h
 include/uapi/sound/asound.h
-include/linux/bits.h
+include/linaos/bits.h
 include/vdso/bits.h
-include/linux/const.h
+include/linaos/const.h
 include/vdso/const.h
-include/linux/hash.h
-include/uapi/linux/hw_breakpoint.h
+include/linaos/hash.h
+include/uapi/linaos/hw_breakpoint.h
 arch/x86/include/asm/disabled-features.h
 arch/x86/include/asm/required-features.h
 arch/x86/include/asm/cpufeatures.h
@@ -68,7 +68,7 @@ include/asm-generic/bitops/const_hweight.h
 include/asm-generic/bitops/__fls.h
 include/asm-generic/bitops/fls.h
 include/asm-generic/bitops/fls64.h
-include/linux/coresight-pmu.h
+include/linaos/coresight-pmu.h
 include/uapi/asm-generic/errno.h
 include/uapi/asm-generic/errno-base.h
 include/uapi/asm-generic/ioctls.h
@@ -89,7 +89,7 @@ arch/x86/lib/insn.c
 # tables (and the reverse lookup as well: string -> id)
 
 BEAUTY_FILES='
-include/linux/socket.h
+include/linaos/socket.h
 '
 
 check_2 () {
@@ -145,10 +145,10 @@ done
 check arch/x86/lib/memcpy_64.S        '-I "^EXPORT_SYMBOL" -I "^#include <asm/export.h>" -I"^SYM_FUNC_START\(_LOCAL\)*(memcpy_\(erms\|orig\))"'
 check arch/x86/lib/memset_64.S        '-I "^EXPORT_SYMBOL" -I "^#include <asm/export.h>" -I"^SYM_FUNC_START\(_LOCAL\)*(memset_\(erms\|orig\))"'
 check include/uapi/asm-generic/mman.h '-I "^#include <\(uapi/\)*asm-generic/mman-common\(-tools\)*.h>"'
-check include/uapi/linux/mman.h       '-I "^#include <\(uapi/\)*asm/mman.h>"'
-check include/linux/build_bug.h       '-I "^#\(ifndef\|endif\)\( \/\/\)* static_assert$"'
-check include/linux/ctype.h	      '-I "isdigit("'
-check lib/ctype.c		      '-I "^EXPORT_SYMBOL" -I "^#include <linux/export.h>" -B'
+check include/uapi/linaos/mman.h       '-I "^#include <\(uapi/\)*asm/mman.h>"'
+check include/linaos/build_bug.h       '-I "^#\(ifndef\|endif\)\( \/\/\)* static_assert$"'
+check include/linaos/ctype.h	      '-I "isdigit("'
+check lib/ctype.c		      '-I "^EXPORT_SYMBOL" -I "^#include <linaos/export.h>" -B'
 
 # diff non-symmetric files
 check_2 tools/perf/arch/x86/entry/syscalls/syscall_64.tbl arch/x86/entry/syscalls/syscall_64.tbl

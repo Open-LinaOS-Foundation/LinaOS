@@ -2,9 +2,9 @@
 #ifndef __LINUX_UDF_SB_H
 #define __LINUX_UDF_SB_H
 
-#include <linux/mutex.h>
-#include <linux/bitops.h>
-#include <linux/magic.h>
+#include <linaos/mutex.h>
+#include <linaos/bitops.h>
+#include <linaos/magic.h>
 
 #define UDF_MAX_READ_VERSION		0x0250
 #define UDF_MAX_WRITE_VERSION		0x0201

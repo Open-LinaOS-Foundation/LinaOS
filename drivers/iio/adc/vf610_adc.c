@@ -5,27 +5,27 @@
  * Copyright 2013 Freescale Semiconductor, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of_platform.h>
-#include <linux/err.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/of_platform.h>
+#include <linaos/err.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
 
 /* This will be the driver name the kernel reports */
 #define DRIVER_NAME "vf610-adc"

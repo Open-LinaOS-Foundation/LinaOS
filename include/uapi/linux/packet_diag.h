@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __PACKET_DIAG_H__
 #define __PACKET_DIAG_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct packet_diag_req {
 	__u8	sdiag_family;

@@ -2,7 +2,7 @@
 #ifndef __X86_MM_NUMA_INTERNAL_H
 #define __X86_MM_NUMA_INTERNAL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/numa.h>
 
 struct numa_memblk {

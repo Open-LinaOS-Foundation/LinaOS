@@ -5,7 +5,7 @@
  *
  * Copyright(c) 2019 Intel Corporation. All rights reserved.
  *
- * Author: Keyon Jie <yang.jie@linux.intel.com>
+ * Author: Keyon Jie <yang.jie@linaos.intel.com>
  */
 
 #ifndef __SOF_INTEL_HDA_IPC_H

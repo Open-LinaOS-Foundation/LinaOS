@@ -4,8 +4,8 @@
  * Author: Krisztian Kovacs
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
 #include <net/tcp.h>
 #include <net/udp.h>
 #include <net/icmp.h>

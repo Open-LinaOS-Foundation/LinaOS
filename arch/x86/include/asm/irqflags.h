@@ -8,7 +8,7 @@
 
 #include <asm/nospec-branch.h>
 
-/* Provide __cpuidle; we can't safely include <linux/cpu.h> */
+/* Provide __cpuidle; we can't safely include <linaos/cpu.h> */
 #define __cpuidle __section(".cpuidle.text")
 
 /*
@@ -63,7 +63,7 @@ static inline __cpuidle void native_halt(void)
 #include <asm/paravirt.h>
 #else
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <linaos/types.h>
 
 static __always_inline unsigned long arch_local_save_flags(void)
 {

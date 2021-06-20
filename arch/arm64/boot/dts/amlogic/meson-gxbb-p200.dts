@@ -29,31 +29,31 @@
 
 		button-home {
 			label = "Home";
-			linux,code = <KEY_HOME>;
+			linaos,code = <KEY_HOME>;
 			press-threshold-microvolt = <900000>; /* 50% */
 		};
 
 		button-esc {
 			label = "Esc";
-			linux,code = <KEY_ESC>;
+			linaos,code = <KEY_ESC>;
 			press-threshold-microvolt = <684000>; /* 38% */
 		};
 
 		button-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			press-threshold-microvolt = <468000>; /* 26% */
 		};
 
 		button-down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			press-threshold-microvolt = <252000>; /* 14% */
 		};
 
 		button-menu {
 			label = "Menu";
-			linux,code = <KEY_MENU>;
+			linaos,code = <KEY_MENU>;
 			press-threshold-microvolt = <0>; /* 0% */
 		};
 	};

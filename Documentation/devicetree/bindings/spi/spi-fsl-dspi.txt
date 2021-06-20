@@ -55,7 +55,7 @@ dspi0@4002c000 {
 		spi-cpol;
 		spi-cpha;
 		reg = <0>;
-		linux,modalias = "m25p80";
+		linaos,modalias = "m25p80";
 		modal = "at26df081a";
 		fsl,spi-cs-sck-delay = <100>;
 		fsl,spi-sck-cs-delay = <50>;

@@ -2,14 +2,14 @@
 /**
  * Copyright (C) 2016 Linaro Ltd
  */
-#include <linux/module.h>
-#include <linux/ulpi/driver.h>
-#include <linux/ulpi/regs.h>
-#include <linux/phy/phy.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinctrl-state.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
+#include <linaos/module.h>
+#include <linaos/ulpi/driver.h>
+#include <linaos/ulpi/regs.h>
+#include <linaos/phy/phy.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pinctrl/pinctrl-state.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
 
 #define ULPI_HSIC_CFG		0x30
 #define ULPI_HSIC_IO_CAL	0x33

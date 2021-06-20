@@ -3,10 +3,10 @@
  * 8253/PIT functions
  *
  */
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/timex.h>
-#include <linux/i8253.h>
+#include <linaos/clockchips.h>
+#include <linaos/init.h>
+#include <linaos/timex.h>
+#include <linaos/i8253.h>
 
 #include <asm/apic.h>
 #include <asm/hpet.h>

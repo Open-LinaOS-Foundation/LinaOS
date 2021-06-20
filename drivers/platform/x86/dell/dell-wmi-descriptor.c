@@ -7,10 +7,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/wmi.h>
+#include <linaos/acpi.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/wmi.h>
 #include "dell-wmi-descriptor.h"
 
 #define DELL_WMI_DESCRIPTOR_GUID "8D9DDCBC-A997-11DA-B012-B622A1EF5492"

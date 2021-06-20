@@ -6,13 +6,13 @@
  *	   Sean Wang <sean.wang@mediatek.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/sdio_ids.h>
+#include <linaos/mmc/sdio_func.h>
 
 #include "mt7615.h"
 #include "sdio.h"

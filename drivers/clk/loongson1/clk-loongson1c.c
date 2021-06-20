@@ -3,9 +3,9 @@
  * Copyright (c) 2016 Yang Ling <gnaygnil@gmail.com>
  */
 
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
 
 #include <loongson1.h>
 #include "clk.h"

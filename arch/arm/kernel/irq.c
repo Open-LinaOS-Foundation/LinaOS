@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/irq.c
+ *  linaos/arch/arm/kernel/irq.c
  *
  *  Copyright (C) 1992 Linus Torvalds
  *  Modifications for ARM processor Copyright (C) 1995-2000 Russell King.
@@ -18,20 +18,20 @@
  *  IRQ's are in fact implemented a bit like signal handlers for the kernel.
  *  Naturally it's not a 1:1 relation, but there are similarities.
  */
-#include <linux/signal.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/random.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/kallsyms.h>
-#include <linux/proc_fs.h>
-#include <linux/export.h>
+#include <linaos/signal.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/random.h>
+#include <linaos/smp.h>
+#include <linaos/init.h>
+#include <linaos/seq_file.h>
+#include <linaos/errno.h>
+#include <linaos/list.h>
+#include <linaos/kallsyms.h>
+#include <linaos/proc_fs.h>
+#include <linaos/export.h>
 
 #include <asm/hardware/cache-l2x0.h>
 #include <asm/hardware/cache-uniphier.h>

@@ -14,17 +14,17 @@
 
 #define pr_fmt(fmt) "i2c-parport: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/parport.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/i2c-smbus.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/parport.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-bit.h>
+#include <linaos/i2c-smbus.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
 
 #define PORT_DATA	0
 #define PORT_STAT	1

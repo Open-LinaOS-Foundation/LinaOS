@@ -9,9 +9,9 @@
  *	Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/ioctl.h>
-#include <linux/pm_runtime.h>
-#include <linux/videodev2.h>
+#include <linaos/ioctl.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/videodev2.h>
 
 #include <media/media-device.h>
 #include <media/v4l2-common.h>

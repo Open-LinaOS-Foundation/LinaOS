@@ -9,7 +9,7 @@
 
 #include "dm-cache-block-types.h"
 
-#include <linux/device-mapper.h>
+#include <linaos/device-mapper.h>
 
 /*----------------------------------------------------------------*/
 

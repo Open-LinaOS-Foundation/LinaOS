@@ -6,7 +6,7 @@
  * Copyright (C) 2009 Frederic Weisbecker <fweisbec@gmail.com>
  *
  * Authors: Alan Stern <stern@rowland.harvard.edu>
- *          K.Prasad <prasad@linux.vnet.ibm.com>
+ *          K.Prasad <prasad@linaos.vnet.ibm.com>
  *          Frederic Weisbecker <fweisbec@gmail.com>
  */
 
@@ -15,18 +15,18 @@
  * using the CPU's debug registers.
  */
 
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/irqflags.h>
-#include <linux/notifier.h>
-#include <linux/kallsyms.h>
-#include <linux/kprobes.h>
-#include <linux/percpu.h>
-#include <linux/kdebug.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
+#include <linaos/perf_event.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/irqflags.h>
+#include <linaos/notifier.h>
+#include <linaos/kallsyms.h>
+#include <linaos/kprobes.h>
+#include <linaos/percpu.h>
+#include <linaos/kdebug.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
 
 #include <asm/hw_breakpoint.h>
 #include <asm/processor.h>

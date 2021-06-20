@@ -13,33 +13,33 @@
  * HopeRf with a similar interace - e. g. RFM69HCW, RFM12, RFM95, ...
  *
  * Copyright (C) 2016 Wolf-Entwicklungen
- *	Marcus Wolf <linux@wolf-entwicklungen.de>
+ *	Marcus Wolf <linaos@wolf-entwicklungen.de>
  */
 
 #undef DEBUG
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/idr.h>
-#include <linux/ioctl.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/err.h>
-#include <linux/kfifo.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/spi/spi.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/idr.h>
+#include <linaos/ioctl.h>
+#include <linaos/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/device.h>
+#include <linaos/cdev.h>
+#include <linaos/err.h>
+#include <linaos/kfifo.h>
+#include <linaos/errno.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/kthread.h>
+#include <linaos/wait.h>
+#include <linaos/spi/spi.h>
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <linaos/compat.h>
 #endif
 
 #include "pi433_if.h"
@@ -1361,7 +1361,7 @@ static void __exit pi433_exit(void)
 }
 module_exit(pi433_exit);
 
-MODULE_AUTHOR("Marcus Wolf, <linux@wolf-entwicklungen.de>");
+MODULE_AUTHOR("Marcus Wolf, <linaos@wolf-entwicklungen.de>");
 MODULE_DESCRIPTION("Driver for Pi433");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("spi:pi433");

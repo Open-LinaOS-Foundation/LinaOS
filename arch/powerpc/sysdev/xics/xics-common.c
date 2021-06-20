@@ -2,20 +2,20 @@
 /*
  * Copyright 2011 IBM Corporation.
  */
-#include <linux/types.h>
-#include <linux/threads.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/debugfs.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
+#include <linaos/types.h>
+#include <linaos/threads.h>
+#include <linaos/kernel.h>
+#include <linaos/irq.h>
+#include <linaos/debugfs.h>
+#include <linaos/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/cpu.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
 
 #include <asm/prom.h>
 #include <asm/io.h>

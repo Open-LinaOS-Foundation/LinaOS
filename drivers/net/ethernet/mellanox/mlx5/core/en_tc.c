@@ -36,11 +36,11 @@
 #include <net/pkt_cls.h>
 #include <net/tc_act/tc_gact.h>
 #include <net/tc_act/tc_skbedit.h>
-#include <linux/mlx5/fs.h>
-#include <linux/mlx5/device.h>
-#include <linux/rhashtable.h>
-#include <linux/refcount.h>
-#include <linux/completion.h>
+#include <linaos/mlx5/fs.h>
+#include <linaos/mlx5/device.h>
+#include <linaos/rhashtable.h>
+#include <linaos/refcount.h>
+#include <linaos/completion.h>
 #include <net/tc_act/tc_mirred.h>
 #include <net/tc_act/tc_vlan.h>
 #include <net/tc_act/tc_tunnel_key.h>
@@ -2597,7 +2597,7 @@ static struct mlx5_fields fields[] = {
 
 	OFFLOAD(TCP_SPORT, 16, U16_MAX, tcp.source,  0, tcp_sport),
 	OFFLOAD(TCP_DPORT, 16, U16_MAX, tcp.dest,    0, tcp_dport),
-	/* in linux iphdr tcp_flags is 8 bits long */
+	/* in linaos iphdr tcp_flags is 8 bits long */
 	OFFLOAD(TCP_FLAGS,  8,  U8_MAX, tcp.ack_seq, 5, tcp_flags),
 
 	OFFLOAD(UDP_SPORT, 16, U16_MAX, udp.source, 0, udp_sport),

@@ -34,8 +34,8 @@
 #define MLX5_IB_CMD_H
 
 #include "mlx5_ib.h"
-#include <linux/kernel.h>
-#include <linux/mlx5/driver.h>
+#include <linaos/kernel.h>
+#include <linaos/mlx5/driver.h>
 
 int mlx5_cmd_dump_fill_mkey(struct mlx5_core_dev *dev, u32 *mkey);
 int mlx5_cmd_null_mkey(struct mlx5_core_dev *dev, u32 *null_mkey);

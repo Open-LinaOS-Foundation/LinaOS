@@ -11,17 +11,17 @@
  *	code written by Sharp/Lineo for 2.4 kernels
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/fb.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
 /* Why should fb driver call console functions? because console_lock() */
-#include <linux/console.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tmio.h>
-#include <linux/uaccess.h>
+#include <linaos/console.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/tmio.h>
+#include <linaos/uaccess.h>
 
 /*
  * accelerator commands

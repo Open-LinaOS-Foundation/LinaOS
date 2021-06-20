@@ -2,7 +2,7 @@
 /*
     Samsung S5H1409 VSB/QAM demodulator driver
 
-    Copyright (C) 2006 Steven Toth <stoth@linuxtv.org>
+    Copyright (C) 2006 Steven Toth <stoth@linaostv.org>
 
 
 */
@@ -10,7 +10,7 @@
 #ifndef __S5H1409_H__
 #define __S5H1409_H__
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 struct s5h1409_config {
 	/* the demodulator's i2c address */

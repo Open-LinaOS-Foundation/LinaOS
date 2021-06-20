@@ -8,17 +8,17 @@
  * Copyright (C) 2008 Mistral Solutions
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/spinlock.h>
-#include <linux/tty.h>
-#include <linux/module.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/spinlock.h>
+#include <linaos/tty.h>
+#include <linaos/module.h>
 
 #include <sound/soc.h>
 #include <sound/jack.h>
 
 #include <asm/mach-types.h>
 
-#include <linux/platform_data/asoc-ti-mcbsp.h>
+#include <linaos/platform_data/asoc-ti-mcbsp.h>
 
 #include "omap-mcbsp.h"
 #include "../codecs/cx20442.h"

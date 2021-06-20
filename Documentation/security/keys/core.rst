@@ -236,18 +236,18 @@ For changing the ownership, group ID or permissions mask, being the owner of
 the key or having the sysadmin capability is sufficient.
 
 
-SELinux Support
+SELinaOS Support
 ===============
 
-The security class "key" has been added to SELinux so that mandatory access
+The security class "key" has been added to SELinaOS so that mandatory access
 controls can be applied to keys created within various contexts.  This support
 is preliminary, and is likely to change quite significantly in the near future.
-Currently, all of the basic permissions explained above are provided in SELinux
-as well; SELinux is simply invoked after all basic permission checks have been
+Currently, all of the basic permissions explained above are provided in SELinaOS
+as well; SELinaOS is simply invoked after all basic permission checks have been
 performed.
 
 The value of the file /proc/self/attr/keycreate influences the labeling of
-newly-created keys.  If the contents of that file correspond to an SELinux
+newly-created keys.  If the contents of that file correspond to an SELinaOS
 security context, then the key will be assigned that context.  Otherwise, the
 key will be assigned the current context of the task that invoked the key
 creation request.  Tasks must be granted explicit permission to assign a
@@ -1103,7 +1103,7 @@ solve.
 
 To access the key manager, the following header must be #included::
 
-	<linux/key.h>
+	<linaos/key.h>
 
 Specific key types should have a header file under include/keys/ that should be
 used to access that type.  For keys of type "user", for example, that would be::
@@ -1401,7 +1401,7 @@ author fills in a key_type struct and registers it with the system.
 
 Source files that implement key types should include the following header file::
 
-	<linux/key-type.h>
+	<linaos/key-type.h>
 
 The structure has a number of fields, some of which are mandatory:
 

@@ -5,7 +5,7 @@
  * (C) Copyright 2009 Intel Corporation
  *
  * Authors:
- *     Arjan van de Ven <arjan@linux.intel.com>
+ *     Arjan van de Ven <arjan@linaos.intel.com>
  */
 
 #include <errno.h>
@@ -13,13 +13,13 @@
 
 #include "builtin.h"
 #include "util/color.h"
-#include <linux/list.h>
+#include <linaos/list.h>
 #include "util/evlist.h" // for struct evsel_str_handler
 #include "util/evsel.h"
-#include <linux/kernel.h>
-#include <linux/rbtree.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/rbtree.h>
+#include <linaos/time64.h>
+#include <linaos/zalloc.h>
 #include "util/symbol.h"
 #include "util/thread.h"
 #include "util/callchain.h"
@@ -35,7 +35,7 @@
 #include "util/tool.h"
 #include "util/data.h"
 #include "util/debug.h"
-#include <linux/err.h>
+#include <linaos/err.h>
 
 #ifdef LACKS_OPEN_MEMSTREAM_PROTOTYPE
 FILE *open_memstream(char **ptr, size_t *sizeloc);

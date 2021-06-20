@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2006 Atmark Techno, Inc.
  *
@@ -10,7 +10,7 @@
 #ifndef _ASM_MICROBLAZE_SIGCONTEXT_H
 #define _ASM_MICROBLAZE_SIGCONTEXT_H
 
-/* FIXME should be linux/ptrace.h */
+/* FIXME should be linaos/ptrace.h */
 #include <asm/ptrace.h>
 
 struct sigcontext {

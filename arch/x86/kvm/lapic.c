@@ -16,24 +16,24 @@
  * Based on Xen 3.1 code, Copyright (c) 2004, Intel Corporation.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/smp.h>
-#include <linux/hrtimer.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
+#include <linaos/kvm_host.h>
+#include <linaos/kvm.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>
+#include <linaos/smp.h>
+#include <linaos/hrtimer.h>
+#include <linaos/io.h>
+#include <linaos/export.h>
+#include <linaos/math64.h>
+#include <linaos/slab.h>
 #include <asm/processor.h>
 #include <asm/msr.h>
 #include <asm/page.h>
 #include <asm/current.h>
 #include <asm/apicdef.h>
 #include <asm/delay.h>
-#include <linux/atomic.h>
-#include <linux/jump_label.h>
+#include <linaos/atomic.h>
+#include <linaos/jump_label.h>
 #include "kvm_cache_regs.h"
 #include "irq.h"
 #include "ioapic.h"

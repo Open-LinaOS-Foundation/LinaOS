@@ -7,10 +7,10 @@
  * Copyright (C) 2014 Linaro Ltd.
  * Author: Rob Herring <robh@kernel.org>
  */
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
+#include <linaos/kernel.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/serial_core.h>
 
 #ifdef CONFIG_THUMB2_KERNEL
 #define SEMIHOST_SWI	"0xab"

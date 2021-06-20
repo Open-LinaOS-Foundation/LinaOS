@@ -12,11 +12,11 @@
  * Use "bpftool cgroup attach $cg sock_ops $prog" to load this BPF program.
  */
 
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/if_ether.h>
-#include <uapi/linux/if_packet.h>
-#include <uapi/linux/ip.h>
-#include <linux/socket.h>
+#include <uapi/linaos/bpf.h>
+#include <uapi/linaos/if_ether.h>
+#include <uapi/linaos/if_packet.h>
+#include <uapi/linaos/ip.h>
+#include <linaos/socket.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
 

@@ -4,7 +4,7 @@
  * Copyright (C) 2008-2009 Wolfgang Grandegger <wg@grandegger.com>
  */
 
-#include <linux/can/dev.h>
+#include <linaos/can/dev.h>
 
 #ifdef CONFIG_CAN_CALC_BITTIMING
 #define CAN_CALC_MAX_ERROR 50 /* in one-tenth of a percent */
@@ -19,7 +19,7 @@
  * Calculates proper bit-timing parameters for a specified bit-rate
  * and sample-point, which can then be used to set the bit-timing
  * registers of the CAN controller. You can find more information
- * in the header file linux/can/netlink.h.
+ * in the header file linaos/can/netlink.h.
  */
 static int
 can_update_sample_point(const struct can_bittiming_const *btc,
@@ -203,7 +203,7 @@ void can_calc_tdco(struct net_device *dev)
 /* Checks the validity of the specified bit-timing parameters prop_seg,
  * phase_seg1, phase_seg2 and sjw and tries to determine the bitrate
  * prescaler value brp. You can find more information in the header
- * file linux/can/netlink.h.
+ * file linaos/can/netlink.h.
  */
 static int can_fixup_bittiming(struct net_device *dev, struct can_bittiming *bt,
 			       const struct can_bittiming_const *btc)

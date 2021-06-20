@@ -4,7 +4,7 @@
  * Copyright 2007-2012 Solarflare Communications Inc.
  */
 
-#include <linux/rtnetlink.h>
+#include <linaos/rtnetlink.h>
 
 #include "net_driver.h"
 #include "phy.h"

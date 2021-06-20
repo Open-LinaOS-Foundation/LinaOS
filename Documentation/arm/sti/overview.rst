@@ -1,5 +1,5 @@
 ======================
-STi ARM Linux Overview
+STi ARM LinaOS Overview
 ======================
 
 Introduction
@@ -7,7 +7,7 @@ Introduction
 
   The ST Microelectronics Multimedia and Application Processors range of
   CortexA9 System-on-Chip are supported by the 'STi' platform of
-  ARM Linux. Currently STiH415, STiH416 SOCs are supported with both
+  ARM LinaOS. Currently STiH415, STiH416 SOCs are supported with both
   B2000 and B2020 Reference boards.
 
 

@@ -10,19 +10,19 @@
  * IP32 changes by Ilya.
  * Copyright (C) 2010 Cavium Networks, Inc.
  */
-#include <linux/dma-direct.h>
-#include <linux/memblock.h>
-#include <linux/swiotlb.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <linaos/dma-direct.h>
+#include <linaos/memblock.h>
+#include <linaos/swiotlb.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
 
 #include <asm/bootinfo.h>
 
 #include <asm/octeon/octeon.h>
 
 #ifdef CONFIG_PCI
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include <asm/octeon/pci-octeon.h>
 #include <asm/octeon/cvmx-npi-defs.h>
 #include <asm/octeon/cvmx-pci-defs.h>

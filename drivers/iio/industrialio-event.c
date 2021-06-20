@@ -6,22 +6,22 @@
  * Based on elements of hwmon and input subsystems.
  */
 
-#include <linux/anon_inodes.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/kfifo.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/iio-opaque.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/kfifo.h>
+#include <linaos/module.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/wait.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/iio-opaque.h>
 #include "iio_core.h"
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/events.h>
 
 /**
  * struct iio_event_interface - chrdev interface for an event line

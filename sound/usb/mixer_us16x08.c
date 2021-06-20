@@ -5,9 +5,9 @@
  *   Copyright (c) 2016 by Detlef Urban (onkel@paraair.de)
  */
 
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/audio-v2.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/usb/audio-v2.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

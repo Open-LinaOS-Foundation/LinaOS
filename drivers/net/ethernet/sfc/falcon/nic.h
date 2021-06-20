@@ -8,8 +8,8 @@
 #ifndef EF4_NIC_H
 #define EF4_NIC_H
 
-#include <linux/net_tstamp.h>
-#include <linux/i2c-algo-bit.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/i2c-algo-bit.h>
 #include "net_driver.h"
 #include "efx.h"
 

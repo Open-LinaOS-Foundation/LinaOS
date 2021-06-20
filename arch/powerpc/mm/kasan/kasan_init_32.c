@@ -2,10 +2,10 @@
 
 #define DISABLE_BRANCH_PROFILING
 
-#include <linux/kasan.h>
-#include <linux/printk.h>
-#include <linux/memblock.h>
-#include <linux/sched/task.h>
+#include <linaos/kasan.h>
+#include <linaos/printk.h>
+#include <linaos/memblock.h>
+#include <linaos/sched/task.h>
 #include <asm/pgalloc.h>
 #include <asm/code-patching.h>
 #include <mm/mmu_decl.h>

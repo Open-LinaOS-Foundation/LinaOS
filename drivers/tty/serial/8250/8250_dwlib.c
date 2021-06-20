@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Synopsys DesignWare 8250 library. */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_core.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/serial_8250.h>
+#include <linaos/serial_core.h>
 
 #include "8250_dwlib.h"
 

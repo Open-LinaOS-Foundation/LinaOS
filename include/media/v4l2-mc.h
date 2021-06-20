@@ -13,7 +13,7 @@
 #include <media/media-device.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-subdev.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* We don't need to include pci.h or usb.h here */
 struct pci_dev;

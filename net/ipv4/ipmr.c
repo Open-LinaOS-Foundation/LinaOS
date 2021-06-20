@@ -3,7 +3,7 @@
  *	IP multicast routing support for mrouted 3.6/3.8
  *
  *		(c) 1995 Alan Cox, <alan@lxorguk.ukuu.org.uk>
- *	  Linux Consultancy and Custom Driver Development
+ *	  LinaOS Consultancy and Custom Driver Development
  *
  *	Fixes:
  *	Michael Chastain	:	Incorrect size of copying.
@@ -21,49 +21,49 @@
  *					Relax this requirement to work with older peers.
  */
 
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/cache.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/mroute.h>
-#include <linux/init.h>
-#include <linux/if_ether.h>
-#include <linux/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/types.h>
+#include <linaos/cache.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/fcntl.h>
+#include <linaos/stat.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/inetdevice.h>
+#include <linaos/igmp.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/mroute.h>
+#include <linaos/init.h>
+#include <linaos/if_ether.h>
+#include <linaos/slab.h>
 #include <net/net_namespace.h>
 #include <net/ip.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/route.h>
 #include <net/icmp.h>
 #include <net/udp.h>
 #include <net/raw.h>
-#include <linux/notifier.h>
-#include <linux/if_arp.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/compat.h>
-#include <linux/export.h>
-#include <linux/rhashtable.h>
+#include <linaos/notifier.h>
+#include <linaos/if_arp.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/compat.h>
+#include <linaos/export.h>
+#include <linaos/rhashtable.h>
 #include <net/ip_tunnels.h>
 #include <net/checksum.h>
 #include <net/netlink.h>
 #include <net/fib_rules.h>
-#include <linux/netconf.h>
+#include <linaos/netconf.h>
 #include <net/rtnh.h>
 
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
 struct ipmr_rule {
 	struct fib_rule		common;

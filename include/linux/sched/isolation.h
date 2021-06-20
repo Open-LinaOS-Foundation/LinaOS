@@ -1,9 +1,9 @@
 #ifndef _LINUX_SCHED_ISOLATION_H
 #define _LINUX_SCHED_ISOLATION_H
 
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/tick.h>
+#include <linaos/cpumask.h>
+#include <linaos/init.h>
+#include <linaos/tick.h>
 
 enum hk_flags {
 	HK_FLAG_TIMER		= 1,

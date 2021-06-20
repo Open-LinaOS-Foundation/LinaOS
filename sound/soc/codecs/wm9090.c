@@ -7,13 +7,13 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 #include <sound/initval.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/mmzone.h>
-#include <linux/nodemask.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/atomic.h>
+#include <linaos/kernel.h>
+#include <linaos/mmzone.h>
+#include <linaos/nodemask.h>
+#include <linaos/spinlock.h>
+#include <linaos/smp.h>
+#include <linaos/atomic.h>
 #include <asm/sn/types.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/nmi.h>

@@ -10,9 +10,9 @@
 #ifndef _RADIO_ISA_H_
 #define _RADIO_ISA_H_
 
-#include <linux/isa.h>
-#include <linux/pnp.h>
-#include <linux/videodev2.h>
+#include <linaos/isa.h>
+#include <linaos/pnp.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 

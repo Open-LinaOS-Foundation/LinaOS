@@ -5,20 +5,20 @@
  * Copyright (C) 2011, Intel Corporation
  *
  * Authors: Bruce E. Robertson <bruce.e.robertson@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/power_supply.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/power_supply.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
 
 #include <dt-bindings/power/summit,smb347-charger.h>
 
@@ -1408,6 +1408,6 @@ static struct i2c_driver smb347_driver = {
 module_i2c_driver(smb347_driver);
 
 MODULE_AUTHOR("Bruce E. Robertson <bruce.e.robertson@intel.com>");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linaos.intel.com>");
 MODULE_DESCRIPTION("SMB347 battery charger driver");
 MODULE_LICENSE("GPL");

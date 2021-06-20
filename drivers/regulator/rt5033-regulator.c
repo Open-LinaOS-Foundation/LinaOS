@@ -6,12 +6,12 @@
  * Author: Beomho Seo <beomho.seo@samsung.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/mfd/rt5033.h>
-#include <linux/mfd/rt5033-private.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/mfd/rt5033.h>
+#include <linaos/mfd/rt5033-private.h>
+#include <linaos/regulator/of_regulator.h>
 
 static const struct regulator_ops rt5033_safe_ldo_ops = {
 	.is_enabled		= regulator_is_enabled_regmap,

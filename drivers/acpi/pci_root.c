@@ -6,20 +6,20 @@
  *  Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/dmar.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/dmi.h>
-#include <linux/platform_data/x86/apple.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/mutex.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pci.h>
+#include <linaos/pci-acpi.h>
+#include <linaos/dmar.h>
+#include <linaos/acpi.h>
+#include <linaos/slab.h>
+#include <linaos/dmi.h>
+#include <linaos/platform_data/x86/apple.h>
 #include <acpi/apei.h>	/* for acpi_hest_init() */
 
 #include "internal.h"

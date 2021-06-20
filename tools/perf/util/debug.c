@@ -8,8 +8,8 @@
 #include <stdlib.h>
 #include <sys/wait.h>
 #include <api/debug.h>
-#include <linux/kernel.h>
-#include <linux/time64.h>
+#include <linaos/kernel.h>
+#include <linaos/time64.h>
 #include <sys/time.h>
 #ifdef HAVE_BACKTRACE_SUPPORT
 #include <execinfo.h>
@@ -23,7 +23,7 @@
 #include "ui/ui.h"
 #include "util/parse-sublevel-options.h"
 
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 
 int verbose;
 int debug_peo_args;

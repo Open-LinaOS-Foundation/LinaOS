@@ -3,17 +3,17 @@
  * Copyright (c) 2016 Avago Technologies.  All rights reserved.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/parser.h>
+#include <linaos/module.h>
+#include <linaos/parser.h>
 #include <uapi/scsi/fc/fc_fs.h>
 #include <uapi/scsi/fc/fc_els.h>
-#include <linux/delay.h>
-#include <linux/overflow.h>
+#include <linaos/delay.h>
+#include <linaos/overflow.h>
 
 #include "nvme.h"
 #include "fabrics.h"
-#include <linux/nvme-fc-driver.h>
-#include <linux/nvme-fc.h>
+#include <linaos/nvme-fc-driver.h>
+#include <linaos/nvme-fc.h>
 #include "fc.h"
 #include <scsi/scsi_transport_fc.h>
 
@@ -1214,7 +1214,7 @@ nvme_fc_connect_admin_queue(struct nvme_fc_ctrl *ctrl,
 
 	assoc_rqst->assoc_cmd.ersp_ratio = cpu_to_be16(ersp_ratio);
 	assoc_rqst->assoc_cmd.sqsize = cpu_to_be16(qsize - 1);
-	/* Linux supports only Dynamic controllers */
+	/* LinaOS supports only Dynamic controllers */
 	assoc_rqst->assoc_cmd.cntlid = cpu_to_be16(0xffff);
 	uuid_copy(&assoc_rqst->assoc_cmd.hostid, &ctrl->ctrl.opts->host->id);
 	strncpy(assoc_rqst->assoc_cmd.hostnqn, ctrl->ctrl.opts->host->nqn,
@@ -1915,7 +1915,7 @@ nvme_fc_fcpio_done(struct nvmefc_fcp_req *req)
 
 	/*
 	 * WARNING:
-	 * The current linux implementation of a nvme controller
+	 * The current linaos implementation of a nvme controller
 	 * allocates a single tag set for all io queues and sizes
 	 * the io queues to fully hold all possible tags. Thus, the
 	 * implementation does not reference or care about the sqhd
@@ -1931,11 +1931,11 @@ nvme_fc_fcpio_done(struct nvmefc_fcp_req *req)
 	 *    ERSP completions are to go back to the nvme layer in order
 	 *    relative to the rsn, such that the sqhd value will always
 	 *    be "in order" for the nvme layer. As the nvme layer in
-	 *    linux doesn't care about sqhd, there's no need to return
+	 *    linaos doesn't care about sqhd, there's no need to return
 	 *    them in order.
 	 *
 	 * Additionally:
-	 * As the core nvme layer in linux currently does not look at
+	 * As the core nvme layer in linaos currently does not look at
 	 * every field in the cqe - in cases where the FC transport must
 	 * fabricate a CQE, the following fields will not be set as they
 	 * are not referenced:
@@ -1965,7 +1965,7 @@ nvme_fc_fcpio_done(struct nvmefc_fcp_req *req)
 	}
 
 	/*
-	 * For the linux implementation, if we have an unsuccesful
+	 * For the linaos implementation, if we have an unsuccesful
 	 * status, they blk-mq layer can typically be called with the
 	 * non-zero status and the content of the cqe isn't important.
 	 */
@@ -2736,7 +2736,7 @@ nvme_fc_start_fcp_op(struct nvme_fc_ctrl *ctrl, struct nvme_fc_queue *queue,
 		 * the csn value?  If the command that fails is the Connect,
 		 * no - as the connection won't be live.  If it is a command
 		 * post-connect, it's possible a gap in csn may be created.
-		 * Does this matter?  As Linux initiators don't send fused
+		 * Does this matter?  As LinaOS initiators don't send fused
 		 * commands, no.  The gap would exist, but as there's nothing
 		 * that depends on csn order to be delivered on the target
 		 * side, it shouldn't hurt.  It would be difficult for a

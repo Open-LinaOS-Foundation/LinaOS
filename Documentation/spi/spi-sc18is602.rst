@@ -9,7 +9,7 @@ Supported chips:
     Datasheet: https://www.nxp.com/documents/data_sheet/SC18IS602_602B_603.pdf
 
 Author:
-        Guenter Roeck <linux@roeck-us.net>
+        Guenter Roeck <linaos@roeck-us.net>
 
 
 Description

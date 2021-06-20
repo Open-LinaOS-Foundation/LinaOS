@@ -92,7 +92,7 @@ void acpi_tb_check_dsdt_header(void)
 		acpi_tb_print_table_header(0, acpi_gbl_DSDT);
 
 		ACPI_ERROR((AE_INFO,
-			    "Please send DMI info to linux-acpi@vger.kernel.org\n"
+			    "Please send DMI info to linaos-acpi@vger.kernel.org\n"
 			    "If system does not work as expected, please boot with acpi=copy_dsdt"));
 
 		/* Disable further error messages */

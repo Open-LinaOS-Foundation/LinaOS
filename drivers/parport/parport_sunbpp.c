@@ -19,21 +19,21 @@
  * 
  */
 
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
-#include <linux/parport.h>
+#include <linaos/parport.h>
 
 #include <asm/ptrace.h>
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #include <asm/io.h>
 #include <asm/oplib.h>           /* OpenProm Library */

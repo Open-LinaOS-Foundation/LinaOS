@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /**
  * file phonet.h
  *
@@ -24,8 +24,8 @@
 #ifndef _UAPILINUX_PHONET_H
 #define _UAPILINUX_PHONET_H
 
-#include <linux/types.h>
-#include <linux/socket.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
 
 /* Automatic protocol selection */
 #define PN_PROTO_TRANSPORT	0

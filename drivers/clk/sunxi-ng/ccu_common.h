@@ -6,8 +6,8 @@
 #ifndef _COMMON_H_
 #define _COMMON_H_
 
-#include <linux/compiler.h>
-#include <linux/clk-provider.h>
+#include <linaos/compiler.h>
+#include <linaos/clk-provider.h>
 
 #define CCU_FEATURE_FRACTIONAL		BIT(0)
 #define CCU_FEATURE_VARIABLE_PREDIV	BIT(1)

@@ -45,7 +45,7 @@ static inline unsigned long array_index_mask_nospec(unsigned long index,
 	return mask;
 }
 
-/* Override the default implementation from linux/nospec.h. */
+/* Override the default implementation from linaos/nospec.h. */
 #define array_index_mask_nospec array_index_mask_nospec
 
 /* Prevent speculative execution past this barrier. */

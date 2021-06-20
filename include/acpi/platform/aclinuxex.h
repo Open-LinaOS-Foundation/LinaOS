@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0 */
 /******************************************************************************
  *
- * Name: aclinuxex.h - Extra OS specific defines, etc. for Linux
+ * Name: aclinaosex.h - Extra OS specific defines, etc. for LinaOS
  *
  * Copyright (C) 2000 - 2021, Intel Corp.
  *
@@ -136,7 +136,7 @@ static inline void acpi_os_terminate_debugger(void)
 }
 
 /*
- * OSL interfaces added by Linux
+ * OSL interfaces added by LinaOS
  */
 
 #endif				/* __KERNEL__ */

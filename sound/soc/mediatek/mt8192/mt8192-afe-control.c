@@ -6,7 +6,7 @@
 // Author: Shane Chien <shane.chien@mediatek.com>
 //
 
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 
 #include "mt8192-afe-common.h"
 

@@ -7,10 +7,10 @@
  * Copyright (c) 2002 by Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/firmware.h>
+#include <linaos/io.h>
 #include <sound/core.h>
 #include "vxpocket.h"
 

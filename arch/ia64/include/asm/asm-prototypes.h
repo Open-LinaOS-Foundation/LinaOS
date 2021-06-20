@@ -9,7 +9,7 @@
 #include <asm/page.h>
 #include <asm/pal.h>
 #include <asm/string.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/unwind.h>
 #include <asm/xor.h>
 

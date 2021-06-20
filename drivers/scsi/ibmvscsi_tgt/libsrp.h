@@ -2,8 +2,8 @@
 #ifndef __LIBSRP_H__
 #define __LIBSRP_H__
 
-#include <linux/list.h>
-#include <linux/kfifo.h>
+#include <linaos/list.h>
+#include <linaos/kfifo.h>
 #include <scsi/srp.h>
 
 enum srp_valid {

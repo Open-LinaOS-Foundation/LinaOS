@@ -9,15 +9,15 @@
  * Copyright (C) 2008 Wind River Systems
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/libata.h>
-#include <linux/hrtimer.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/libata.h>
+#include <linaos/hrtimer.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
 #include <scsi/scsi_host.h>
 
 #include <asm/byteorder.h>

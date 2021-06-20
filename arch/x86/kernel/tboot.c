@@ -6,19 +6,19 @@
  * Copyright (c) 2006-2009, Intel Corporation
  */
 
-#include <linux/intel-iommu.h>
-#include <linux/init_task.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/dmar.h>
-#include <linux/cpu.h>
-#include <linux/pfn.h>
-#include <linux/mm.h>
-#include <linux/tboot.h>
-#include <linux/debugfs.h>
+#include <linaos/intel-iommu.h>
+#include <linaos/init_task.h>
+#include <linaos/spinlock.h>
+#include <linaos/export.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/dmar.h>
+#include <linaos/cpu.h>
+#include <linaos/pfn.h>
+#include <linaos/mm.h>
+#include <linaos/tboot.h>
+#include <linaos/debugfs.h>
 
 #include <asm/realmode.h>
 #include <asm/processor.h>

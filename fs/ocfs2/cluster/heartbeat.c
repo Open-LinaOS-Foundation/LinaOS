@@ -3,24 +3,24 @@
  * Copyright (C) 2004, 2005 Oracle.  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/file.h>
-#include <linux/kthread.h>
-#include <linux/configfs.h>
-#include <linux/random.h>
-#include <linux/crc32.h>
-#include <linux/time.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/bitmap.h>
-#include <linux/ktime.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/file.h>
+#include <linaos/kthread.h>
+#include <linaos/configfs.h>
+#include <linaos/random.h>
+#include <linaos/crc32.h>
+#include <linaos/time.h>
+#include <linaos/debugfs.h>
+#include <linaos/slab.h>
+#include <linaos/bitmap.h>
+#include <linaos/ktime.h>
 #include "heartbeat.h"
 #include "tcp.h"
 #include "nodemanager.h"

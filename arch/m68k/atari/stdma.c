@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/atari/stmda.c
+ *  linaos/arch/m68k/atari/stmda.c
  *
  *  Copyright (C) 1994 Roman Hodek
  *
@@ -28,14 +28,14 @@
 /* (can be determined by looking at its status register).              */
 
 
-#include <linux/types.h>
-#include <linux/kdev_t.h>
-#include <linux/genhd.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/kdev_t.h>
+#include <linaos/genhd.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/wait.h>
+#include <linaos/module.h>
 
 #include <asm/atari_stdma.h>
 #include <asm/atariints.h>

@@ -9,14 +9,14 @@ General
 =======
 
 HD-audio is the new standard on-board audio component on modern PCs
-after AC97.  Although Linux has been supporting HD-audio since long
+after AC97.  Although LinaOS has been supporting HD-audio since long
 time ago, there are often problems with new machines.  A part of the
 problem is broken BIOS, and the rest is the driver implementation.
 This document explains the brief trouble-shooting and debugging
 methods for the	HD-audio hardware.
 
 The HD-audio component consists of two parts: the controller chip and 
-the codec chips on the HD-audio bus.  Linux provides a single driver
+the codec chips on the HD-audio bus.  LinaOS provides a single driver
 for all controllers, snd-hda-intel.  Although the driver name contains
 a word of a well-known hardware vendor, it's not specific to it but for
 all controller chips by other companies.  Since the HD-audio
@@ -681,7 +681,7 @@ Development Tree
 ----------------
 The latest development codes for HD-audio are found on sound git tree:
 
-* git://git.kernel.org/pub/scm/linux/kernel/git/tiwai/sound.git
+* git://git.kernel.org/pub/scm/linaos/kernel/git/tiwai/sound.git
 
 The master branch or for-next branches can be used as the main
 development branches in general while the development for the current
@@ -802,7 +802,7 @@ Also, the old stand-alone package is found in the ftp directory:
 
 Also a git repository is available:
 
-* git://git.kernel.org/pub/scm/linux/kernel/git/tiwai/hda-verb.git
+* git://git.kernel.org/pub/scm/linaos/kernel/git/tiwai/hda-verb.git
 
 See README file in the tarball for more details about hda-verb
 program.
@@ -867,7 +867,7 @@ operation, the jack plugging simulation, etc.
 
 The program is found in the git repository below:
 
-* git://git.kernel.org/pub/scm/linux/kernel/git/tiwai/hda-emu.git
+* git://git.kernel.org/pub/scm/linaos/kernel/git/tiwai/hda-emu.git
 
 See README file in the repository for more details about hda-emu
 program.

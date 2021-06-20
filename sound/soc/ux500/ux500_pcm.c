@@ -11,11 +11,11 @@
 
 #include <asm/page.h>
 
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/slab.h>
-#include <linux/platform_data/dma-ste-dma40.h>
+#include <linaos/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/slab.h>
+#include <linaos/platform_data/dma-ste-dma40.h>
 
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

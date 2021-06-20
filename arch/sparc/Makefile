@@ -6,7 +6,7 @@
 # Sparc and sparc64.
 #
 # Copyright (C) 1994,1996,1998 David S. Miller (davem@caip.rutgers.edu)
-# Copyright (C) 1998 Jakub Jelinek (jj@ultra.linux.cz)
+# Copyright (C) 1998 Jakub Jelinek (jj@ultra.linaos.cz)
 
 # We are not yet configured - so test on arch
 ifeq ($(ARCH),sparc64)
@@ -71,7 +71,7 @@ boot := arch/sparc/boot
 # Default target
 all: zImage
 
-image zImage uImage tftpboot.img vmlinux.aout: vmlinux
+image zImage uImage tftpboot.img vmlinaos.aout: vmlinaos
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 install:
@@ -100,9 +100,9 @@ define archhelp
 endef
 else
 define archhelp
-  echo  '* vmlinux      - standard sparc64 kernel'
+  echo  '* vmlinaos      - standard sparc64 kernel'
   echo  '* zImage       - stripped and compressed sparc64 kernel ($(boot)/zImage)'
-  echo  '  vmlinux.aout - a.out kernel for sparc64'
+  echo  '  vmlinaos.aout - a.out kernel for sparc64'
   echo  '  tftpboot.img - image prepared for tftp'
 endef
 endif

@@ -5,11 +5,11 @@
  * Copyright (C) 2003 - 2004 Tresys Technology, LLC
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
 
 #include "security.h"
 #include "conditional.h"
@@ -99,7 +99,7 @@ static void evaluate_cond_node(struct policydb *p, struct cond_node *node)
 	if (new_state != node->cur_state) {
 		node->cur_state = new_state;
 		if (new_state == -1)
-			pr_err("SELinux: expression result was undefined - disabling all rules.\n");
+			pr_err("SELinaOS: expression result was undefined - disabling all rules.\n");
 		/* turn the rules on or off */
 		for (i = 0; i < node->true_list.len; i++) {
 			avnode = node->true_list.nodes[i];
@@ -270,7 +270,7 @@ static int cond_insertf(struct avtab *a, struct avtab_key *k, struct avtab_datum
 	 */
 	if (k->specified & AVTAB_TYPE) {
 		if (avtab_search(&p->te_avtab, k)) {
-			pr_err("SELinux: type rule already exists outside of a conditional.\n");
+			pr_err("SELinaOS: type rule already exists outside of a conditional.\n");
 			return -EINVAL;
 		}
 		/*
@@ -285,7 +285,7 @@ static int cond_insertf(struct avtab *a, struct avtab_key *k, struct avtab_datum
 			node_ptr = avtab_search_node(&p->te_cond_avtab, k);
 			if (node_ptr) {
 				if (avtab_search_node_next(node_ptr, k->specified)) {
-					pr_err("SELinux: too many conflicting type rules.\n");
+					pr_err("SELinaOS: too many conflicting type rules.\n");
 					return -EINVAL;
 				}
 				found = false;
@@ -296,13 +296,13 @@ static int cond_insertf(struct avtab *a, struct avtab_key *k, struct avtab_datum
 					}
 				}
 				if (!found) {
-					pr_err("SELinux: conflicting type rules.\n");
+					pr_err("SELinaOS: conflicting type rules.\n");
 					return -EINVAL;
 				}
 			}
 		} else {
 			if (avtab_search(&p->te_cond_avtab, k)) {
-				pr_err("SELinux: conflicting type rules when adding type rule for true.\n");
+				pr_err("SELinaOS: conflicting type rules when adding type rule for true.\n");
 				return -EINVAL;
 			}
 		}
@@ -310,7 +310,7 @@ static int cond_insertf(struct avtab *a, struct avtab_key *k, struct avtab_datum
 
 	node_ptr = avtab_insert_nonunique(&p->te_cond_avtab, k, d);
 	if (!node_ptr) {
-		pr_err("SELinux: could not insert rule.\n");
+		pr_err("SELinaOS: could not insert rule.\n");
 		return -ENOMEM;
 	}
 
@@ -359,12 +359,12 @@ static int cond_read_av_list(struct policydb *p, void *fp,
 static int expr_node_isvalid(struct policydb *p, struct cond_expr_node *expr)
 {
 	if (expr->expr_type <= 0 || expr->expr_type > COND_LAST) {
-		pr_err("SELinux: conditional expressions uses unknown operator.\n");
+		pr_err("SELinaOS: conditional expressions uses unknown operator.\n");
 		return 0;
 	}
 
 	if (expr->bool > p->p_bools.nprim) {
-		pr_err("SELinux: conditional expressions uses unknown bool.\n");
+		pr_err("SELinaOS: conditional expressions uses unknown bool.\n");
 		return 0;
 	}
 	return 1;

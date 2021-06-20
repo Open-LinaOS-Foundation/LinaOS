@@ -52,9 +52,9 @@
 #include "tp3780i.h"
 #include "smapi.h"
 #include "mwavepub.h"
-#include <linux/ioctl.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
+#include <linaos/ioctl.h>
+#include <linaos/uaccess.h>
+#include <linaos/wait.h>
 
 extern int mwave_debug;
 extern int mwave_3780i_irq;

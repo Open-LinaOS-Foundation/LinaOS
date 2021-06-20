@@ -5,7 +5,7 @@
  */
 #include "builtin.h"
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 #include "perf.h"
 #include "util/evlist.h"
@@ -16,7 +16,7 @@
 #include "util/session.h"
 #include "util/data.h"
 #include "util/debug.h"
-#include <linux/err.h>
+#include <linaos/err.h>
 #include "util/tool.h"
 
 static int process_header_feature(struct perf_session *session __maybe_unused,

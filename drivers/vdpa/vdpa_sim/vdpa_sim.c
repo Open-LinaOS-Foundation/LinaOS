@@ -7,17 +7,17 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/dma-map-ops.h>
-#include <linux/vringh.h>
-#include <linux/vdpa.h>
-#include <linux/vhost_iotlb.h>
-#include <linux/iova.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/vringh.h>
+#include <linaos/vdpa.h>
+#include <linaos/vhost_iotlb.h>
+#include <linaos/iova.h>
 
 #include "vdpa_sim.h"
 

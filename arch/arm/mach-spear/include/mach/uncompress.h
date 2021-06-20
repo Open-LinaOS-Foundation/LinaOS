@@ -11,8 +11,8 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/io.h>
-#include <linux/amba/serial.h>
+#include <linaos/io.h>
+#include <linaos/amba/serial.h>
 #include <mach/spear.h>
 
 #ifndef __PLAT_UNCOMPRESS_H

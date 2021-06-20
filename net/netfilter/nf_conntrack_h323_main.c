@@ -11,19 +11,19 @@
  * For more information, please see http://nath323.sourceforge.net/
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ctype.h>
-#include <linux/inet.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/slab.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/ctype.h>
+#include <linaos/inet.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/slab.h>
+#include <linaos/udp.h>
+#include <linaos/tcp.h>
+#include <linaos/skbuff.h>
 #include <net/route.h>
 #include <net/ip6_route.h>
-#include <linux/netfilter_ipv6.h>
+#include <linaos/netfilter_ipv6.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>
@@ -32,7 +32,7 @@
 #include <net/netfilter/nf_conntrack_ecache.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_zones.h>
-#include <linux/netfilter/nf_conntrack_h323.h>
+#include <linaos/netfilter/nf_conntrack_h323.h>
 
 /* Parameters */
 static unsigned int default_rrq_ttl __read_mostly = 300;

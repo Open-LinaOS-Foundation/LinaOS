@@ -6,11 +6,11 @@
  * Allegro VCU firmware.
  */
 
-#include <linux/bitfield.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/videodev2.h>
+#include <linaos/bitfield.h>
+#include <linaos/export.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/videodev2.h>
 
 #include "allegro-mail.h"
 

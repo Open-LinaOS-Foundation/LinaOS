@@ -7,15 +7,15 @@
 // #define	DEBUG			// error path messages, extra info
 // #define	VERBOSE			// more; success messages
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/workqueue.h>
+#include <linaos/mii.h>
+#include <linaos/crc32.h>
+#include <linaos/usb.h>
+#include <linaos/usb/cdc.h>
+#include <linaos/usb/usbnet.h>
 
 
 /*
@@ -27,7 +27,7 @@
  * There are non-Zaurus products that use these same protocols too.
  *
  * The annoying thing is that at the same time Sharp was developing
- * that annoying standards-breaking software, the Linux community had
+ * that annoying standards-breaking software, the LinaOS community had
  * a simple "CDC Subset" working reliably on the same SA-1100 hardware.
  * That is, the same functionality but not violating standards.
  *

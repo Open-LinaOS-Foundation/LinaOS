@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ======================================================
-Infrared remote control support in video4linux drivers
+Infrared remote control support in video4linaos drivers
 ======================================================
 
 Authors: Gerd Hoffmann, Mauro Carvalho Chehab
@@ -16,10 +16,10 @@ userspace ("scancode mode"). Other boards return just the pulse/space
 sequences ("raw mode").
 
 The support for remote controller in scancode mode is provided by the
-standard Linux input layer. The support for raw mode is provided via LIRC.
+standard LinaOS input layer. The support for raw mode is provided via LIRC.
 
 In order to check the support and test it, it is suggested to download
-the `v4l-utils <https://git.linuxtv.org/v4l-utils.git/>`_. It provides
+the `v4l-utils <https://git.linaostv.org/v4l-utils.git/>`_. It provides
 two tools to handle remote controllers:
 
 - ir-keytable: provides a way to query the remote controller, list the
@@ -36,16 +36,16 @@ ir-kbd-i2c module.
 How it works
 ============
 
-The modules register the remote as keyboard within the linux input
+The modules register the remote as keyboard within the linaos input
 layer, i.e. you'll see the keys of the remote as normal key strokes
 (if CONFIG_INPUT_KEYBOARD is enabled).
 
 Using the event devices (CONFIG_INPUT_EVDEV) it is possible for
 applications to access the remote via /dev/input/event<n> devices.
 The udev/systemd will automatically create the devices. If you install
-the `v4l-utils <https://git.linuxtv.org/v4l-utils.git/>`_, it may also
+the `v4l-utils <https://git.linaostv.org/v4l-utils.git/>`_, it may also
 automatically load a different keytable than the default one. Please see
-`v4l-utils <https://git.linuxtv.org/v4l-utils.git/>`_ ir-keytable.1
+`v4l-utils <https://git.linaostv.org/v4l-utils.git/>`_ ir-keytable.1
 man page for details.
 
 The ir-keytable tool is nice for trouble shooting, i.e. to check
@@ -59,7 +59,7 @@ Using with lircd
 ----------------
 
 The latest versions of the lircd daemon supports reading events from the
-linux input layer (via event device). It also supports receiving IR codes
+linaos input layer (via event device). It also supports receiving IR codes
 in lirc mode.
 
 
@@ -72,5 +72,5 @@ and should now accept all keycodes. Yet, you may want to just reassign
 the keycodes to something that your favorite media application likes.
 
 This can be done by setting
-`v4l-utils <https://git.linuxtv.org/v4l-utils.git/>`_ to load your own
+`v4l-utils <https://git.linaostv.org/v4l-utils.git/>`_ to load your own
 keytable in runtime. Please read  ir-keytable.1 man page for details.

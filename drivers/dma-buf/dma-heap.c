@@ -6,18 +6,18 @@
  * Copyright (C) 2019 Linaro Ltd.
  */
 
-#include <linux/cdev.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dma-buf.h>
-#include <linux/err.h>
-#include <linux/xarray.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/dma-heap.h>
-#include <uapi/linux/dma-heap.h>
+#include <linaos/cdev.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/dma-buf.h>
+#include <linaos/err.h>
+#include <linaos/xarray.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/syscalls.h>
+#include <linaos/dma-heap.h>
+#include <uapi/linaos/dma-heap.h>
 
 #define DEVNAME "dma_heap"
 

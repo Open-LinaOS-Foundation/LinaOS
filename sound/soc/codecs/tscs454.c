@@ -3,16 +3,16 @@
 // Copyright 2018 Tempo Semiconductor, Inc.
 // Author: Steven Eckhoff <steven.eckhoff.opensource@gmail.com>
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
 
 #include <sound/tlv.h>
 #include <sound/pcm_params.h>

@@ -17,7 +17,7 @@
 			label = "debug-led1";
 			gpios = <&gpio1 30 GPIO_ACTIVE_LOW>;
 			default-state = "off";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		led2 {
@@ -168,7 +168,7 @@
 &uart2 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_uart2>;
-	linux,rs485-enabled-at-boot-time;
+	linaos,rs485-enabled-at-boot-time;
 	rs485-rx-during-tx;
 	rs485-rts-active-low;
 	uart-has-rtscts;

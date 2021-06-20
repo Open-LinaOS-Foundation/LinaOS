@@ -21,13 +21,13 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/sched/signal.h>
-#include <linux/dma-fence-array.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/sched/signal.h>
+#include <linaos/dma-fence-array.h>
 
 #include <drm/drm_syncobj.h>
 

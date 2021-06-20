@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/mm.h>
-#include <linux/backing-dev.h>
-#include <linux/gfp.h>
+#include <linaos/types.h>
+#include <linaos/buffer_head.h>
+#include <linaos/mm.h>
+#include <linaos/backing-dev.h>
+#include <linaos/gfp.h>
 #include "nilfs.h"
 #include "mdt.h"
 #include "dat.h"

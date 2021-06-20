@@ -3,13 +3,13 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/writeback.h>
-#include <linux/pagemap.h>
-#include <linux/blkdev.h>
-#include <linux/uuid.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/writeback.h>
+#include <linaos/pagemap.h>
+#include <linaos/blkdev.h>
+#include <linaos/uuid.h>
 #include "misc.h"
 #include "ctree.h"
 #include "disk-io.h"

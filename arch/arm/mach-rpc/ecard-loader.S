@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/ecard.S
+ *  linaos/arch/arm/lib/ecard.S
  *
  *  Copyright (C) 1995, 1996 Russell King
  *
  * 27/03/03 Ian Molton Clean up CONFIG_CPU
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 #define CPSR2SPSR(rt) \

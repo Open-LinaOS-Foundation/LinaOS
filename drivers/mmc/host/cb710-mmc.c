@@ -4,10 +4,10 @@
  *
  *  Copyright by Michał Mirosław, 2008-2009
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
 #include "cb710-mmc.h"
 
 #define CB710_MMC_REQ_TIMEOUT_MS	2000
@@ -781,7 +781,7 @@ static struct platform_driver cb710_mmc_driver = {
 
 module_platform_driver(cb710_mmc_driver);
 
-MODULE_AUTHOR("Michał Mirosław <mirq-linux@rere.qmqm.pl>");
+MODULE_AUTHOR("Michał Mirosław <mirq-linaos@rere.qmqm.pl>");
 MODULE_DESCRIPTION("ENE CB710 memory card reader driver - MMC/SD part");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:cb710-mmc");

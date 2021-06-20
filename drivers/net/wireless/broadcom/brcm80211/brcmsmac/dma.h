@@ -17,8 +17,8 @@
 #ifndef	_BRCM_DMA_H_
 #define	_BRCM_DMA_H_
 
-#include <linux/delay.h>
-#include <linux/skbuff.h>
+#include <linaos/delay.h>
+#include <linaos/skbuff.h>
 #include "types.h"		/* forward structure declarations */
 
 /* map/unmap direction */

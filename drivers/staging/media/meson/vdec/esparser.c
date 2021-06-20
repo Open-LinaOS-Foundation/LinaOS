@@ -7,13 +7,13 @@
  * It reads bitstream buffers and feeds them to the VIFIFO
  */
 
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/reset.h>
-#include <linux/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/ioctl.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/reset.h>
+#include <linaos/interrupt.h>
 #include <media/videobuf2-dma-contig.h>
 #include <media/v4l2-mem2mem.h>
 

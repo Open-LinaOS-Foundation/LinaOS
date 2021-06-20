@@ -8,16 +8,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/audit.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/netlink.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/security.h>
+#include <linaos/kernel.h>
+#include <linaos/audit.h>
+#include <linaos/kthread.h>
+#include <linaos/mutex.h>
+#include <linaos/fs.h>
+#include <linaos/namei.h>
+#include <linaos/netlink.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/security.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include "audit.h"
@@ -35,7 +35,7 @@
  *		be written directly provided audit_filter_mutex is held.
  */
 
-/* Audit filter lists, defined in <linux/audit.h> */
+/* Audit filter lists, defined in <linaos/audit.h> */
 struct list_head audit_filter_list[AUDIT_NR_FILTERS] = {
 	LIST_HEAD_INIT(audit_filter_list[0]),
 	LIST_HEAD_INIT(audit_filter_list[1]),
@@ -351,7 +351,7 @@ static int audit_field_valid(struct audit_entry *entry, struct audit_field *f)
 	case AUDIT_ARG1:
 	case AUDIT_ARG2:
 	case AUDIT_ARG3:
-	case AUDIT_PERS: /* <uapi/linux/personality.h> */
+	case AUDIT_PERS: /* <uapi/linaos/personality.h> */
 	case AUDIT_DEVMINOR:
 		/* all ops are valid */
 		break;

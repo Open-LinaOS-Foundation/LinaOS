@@ -391,7 +391,7 @@ The sysfs tree has the following purposes:
 
 This is a link to the tree(1) program, very useful in
 viewing the SAS domain:
-ftp://mama.indstate.edu/linux/tree/
+ftp://mama.indstate.edu/linaos/tree/
 
 I expect user space applications to actually create a
 graphical interface of this.

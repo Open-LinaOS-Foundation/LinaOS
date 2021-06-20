@@ -8,13 +8,13 @@
  * Copyright 2009-2012 Canonical Ltd.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/err.h>
-#include <linux/kref.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/err.h>
+#include <linaos/kref.h>
 
 #include "include/lib.h"
 #include "include/match.h"

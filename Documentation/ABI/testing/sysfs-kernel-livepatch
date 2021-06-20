@@ -14,7 +14,7 @@ KernelVersion:	3.19.0
 Contact:	live-patching@vger.kernel.org
 Description:
 		The patch directory contains subdirectories for each kernel
-		object (vmlinux or a module) in which it patched functions.
+		object (vmlinaos or a module) in which it patched functions.
 
 What:		/sys/kernel/livepatch/<patch>/enabled
 Date:		Nov 2014

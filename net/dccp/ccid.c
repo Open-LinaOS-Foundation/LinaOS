@@ -8,7 +8,7 @@
  *  CCID infrastructure
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "ccid.h"
 #include "ccids/lib/tfrc.h"

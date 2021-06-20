@@ -6,16 +6,16 @@
  * Copyright (C) 2015 Mentor Graphics Corporation.
  */
 
-#include <linux/cache.h>
-#include <linux/elf.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/vmalloc.h>
+#include <linaos/cache.h>
+#include <linaos/elf.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/of.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/timekeeper_internal.h>
+#include <linaos/vmalloc.h>
 #include <asm/arch_timer.h>
 #include <asm/barrier.h>
 #include <asm/cacheflush.h>

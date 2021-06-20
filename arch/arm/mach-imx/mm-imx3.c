@@ -7,12 +7,12 @@
  *    - add MX31 specific definitions
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/pinctrl/machine.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/pinctrl/machine.h>
 
 #include <asm/system_misc.h>
 #include <asm/hardware/cache-l2x0.h>

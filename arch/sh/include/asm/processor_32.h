@@ -9,8 +9,8 @@
 #ifndef __ASM_SH_PROCESSOR_32_H
 #define __ASM_SH_PROCESSOR_32_H
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
+#include <linaos/compiler.h>
+#include <linaos/linkage.h>
 #include <asm/page.h>
 #include <asm/types.h>
 #include <asm/hw_breakpoint.h>

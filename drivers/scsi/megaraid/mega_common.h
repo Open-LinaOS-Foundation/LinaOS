@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  *
- *			Linux MegaRAID device driver
+ *			LinaOS MegaRAID device driver
  *
  * Copyright (c) 2003-2004  LSI Logic Corporation.
  *
@@ -13,17 +13,17 @@
 #ifndef _MEGA_COMMON_H_
 #define _MEGA_COMMON_H_
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/blkdev.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/blkdev.h>
+#include <linaos/list.h>
+#include <linaos/moduleparam.h>
+#include <linaos/dma-mapping.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

@@ -23,11 +23,11 @@
  *		 - sort probes in a sane way, make sure all (safe) probes
  *		   get run once & failed autoprobes don't autoprobe again.
  */
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/netlink.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/netlink.h>
 #include <net/Space.h>
 
 /* A unified ethernet device probe.  This is the easiest way to have every

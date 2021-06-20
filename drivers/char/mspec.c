@@ -24,22 +24,22 @@
  * processor from ever speculating a cache line from this page.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/numa.h>
-#include <linux/refcount.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/miscdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/vmalloc.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/numa.h>
+#include <linaos/refcount.h>
 #include <asm/page.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/tlbflush.h>
 #include <asm/uncached.h>
 
@@ -290,6 +290,6 @@ mspec_exit(void)
 module_init(mspec_init);
 module_exit(mspec_exit);
 
-MODULE_AUTHOR("Silicon Graphics, Inc. <linux-altix@sgi.com>");
+MODULE_AUTHOR("Silicon Graphics, Inc. <linaos-altix@sgi.com>");
 MODULE_DESCRIPTION("Driver for SGI SN special memory operations");
 MODULE_LICENSE("GPL");

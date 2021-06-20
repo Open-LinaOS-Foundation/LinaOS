@@ -10,11 +10,11 @@
  * and using buffers obtained after all above.
  */
 
-#include <linux/uaccess.h>
-#include <linux/time.h>
+#include <linaos/uaccess.h>
+#include <linaos/time.h>
 #include "reiserfs.h"
-#include <linux/buffer_head.h>
-#include <linux/kernel.h>
+#include <linaos/buffer_head.h>
+#include <linaos/kernel.h>
 
 static inline void buffer_info_init_left(struct tree_balance *tb,
                                          struct buffer_info *bi)

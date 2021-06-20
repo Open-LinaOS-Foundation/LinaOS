@@ -7,10 +7,10 @@
  */
 
 #include <net/sock_reuseport.h>
-#include <linux/bpf.h>
-#include <linux/idr.h>
-#include <linux/filter.h>
-#include <linux/rcupdate.h>
+#include <linaos/bpf.h>
+#include <linaos/idr.h>
+#include <linaos/filter.h>
+#include <linaos/rcupdate.h>
 
 #define INIT_SOCKS 128
 

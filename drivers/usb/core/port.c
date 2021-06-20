@@ -7,8 +7,8 @@
  * Author: Lan Tianyu <tianyu.lan@intel.com>
  */
 
-#include <linux/slab.h>
-#include <linux/pm_qos.h>
+#include <linaos/slab.h>
+#include <linaos/pm_qos.h>
 
 #include "hub.h"
 

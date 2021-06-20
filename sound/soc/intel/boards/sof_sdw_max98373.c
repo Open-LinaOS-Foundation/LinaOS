@@ -4,8 +4,8 @@
 // sof_sdw_max98373 - Helpers to handle 2x MAX98373
 // codec devices from generic machine driver
 
-#include <linux/device.h>
-#include <linux/errno.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
 #include <sound/control.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>

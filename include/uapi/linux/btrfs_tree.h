@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _BTRFS_CTREE_H_
 #define _BTRFS_CTREE_H_
 
-#include <linux/btrfs.h>
-#include <linux/types.h>
+#include <linaos/btrfs.h>
+#include <linaos/types.h>
 #ifdef __KERNEL__
-#include <linux/stddef.h>
+#include <linaos/stddef.h>
 #else
 #include <stddef.h>
 #endif

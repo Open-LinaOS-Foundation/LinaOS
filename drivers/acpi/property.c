@@ -5,14 +5,14 @@
  * Copyright (C) 2014, Intel Corporation
  * All rights reserved.
  *
- * Authors: Mika Westerberg <mika.westerberg@linux.intel.com>
- *          Darren Hart <dvhart@linux.intel.com>
+ * Authors: Mika Westerberg <mika.westerberg@linaos.intel.com>
+ *          Darren Hart <dvhart@linaos.intel.com>
  *          Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/export.h>
+#include <linaos/acpi.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
 
 #include "internal.h"
 

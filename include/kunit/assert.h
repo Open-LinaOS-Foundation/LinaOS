@@ -9,8 +9,8 @@
 #ifndef _KUNIT_ASSERT_H
 #define _KUNIT_ASSERT_H
 
-#include <linux/err.h>
-#include <linux/kernel.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
 
 struct kunit;
 struct string_stream;

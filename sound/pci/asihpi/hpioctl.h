@@ -5,7 +5,7 @@
     Copyright (C) 1997-2011  AudioScience Inc. <support@audioscience.com>
 
 
-Linux HPI ioctl, and shared module init functions
+LinaOS HPI ioctl, and shared module init functions
 *******************************************************************************/
 
 int asihpi_adapter_probe(struct pci_dev *pci_dev,

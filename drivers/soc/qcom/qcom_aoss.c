@@ -3,15 +3,15 @@
  * Copyright (c) 2019, Linaro Ltd
  */
 #include <dt-bindings/power/qcom-aoss-qmp.h>
-#include <linux/clk-provider.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/thermal.h>
-#include <linux/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/thermal.h>
+#include <linaos/slab.h>
 
 #define QMP_DESC_MAGIC			0x0
 #define QMP_DESC_VERSION		0x4
@@ -25,7 +25,7 @@
 #define QMP_DESC_UCORE_MBOX_SIZE	0x1c
 #define QMP_DESC_UCORE_MBOX_OFFSET	0x20
 
-/* Linux-side offsets */
+/* LinaOS-side offsets */
 #define QMP_DESC_MCORE_LINK_STATE	0x24
 #define QMP_DESC_MCORE_LINK_STATE_ACK	0x28
 #define QMP_DESC_MCORE_CH_STATE		0x2c

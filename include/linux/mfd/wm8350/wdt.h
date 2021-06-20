@@ -8,7 +8,7 @@
 #ifndef __LINUX_MFD_WM8350_WDT_H_
 #define __LINUX_MFD_WM8350_WDT_H_
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #define WM8350_WDOG_HIB_MODE                    0x0080
 #define WM8350_WDOG_DEBUG                       0x0040

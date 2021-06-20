@@ -2,12 +2,12 @@
 //
 // General Purpose SPI multiplexer
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mux/consumer.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mux/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi.h>
 
 #define SPI_MUX_NO_CS	((unsigned int)-1)
 

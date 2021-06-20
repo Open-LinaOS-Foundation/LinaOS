@@ -4,28 +4,28 @@
  * This code generates raw asm output which is post-processed to extract
  * and format the required data.
  *
- *    Copyright (C) 2000-2001 John Marvin <jsm at parisc-linux.org>
+ *    Copyright (C) 2000-2001 John Marvin <jsm at parisc-linaos.org>
  *    Copyright (C) 2000 David Huggins-Daines <dhd with pobox.org>
  *    Copyright (C) 2000 Sam Creasey <sammy@sammy.net>
- *    Copyright (C) 2000 Grant Grundler <grundler with parisc-linux.org>
- *    Copyright (C) 2001 Paul Bame <bame at parisc-linux.org>
- *    Copyright (C) 2001 Richard Hirst <rhirst at parisc-linux.org>
- *    Copyright (C) 2002 Randolph Chung <tausq with parisc-linux.org>
- *    Copyright (C) 2003 James Bottomley <jejb at parisc-linux.org>
+ *    Copyright (C) 2000 Grant Grundler <grundler with parisc-linaos.org>
+ *    Copyright (C) 2001 Paul Bame <bame at parisc-linaos.org>
+ *    Copyright (C) 2001 Richard Hirst <rhirst at parisc-linaos.org>
+ *    Copyright (C) 2002 Randolph Chung <tausq with parisc-linaos.org>
+ *    Copyright (C) 2003 James Bottomley <jejb at parisc-linaos.org>
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/thread_info.h>
-#include <linux/ptrace.h>
-#include <linux/hardirq.h>
-#include <linux/kbuild.h>
-#include <linux/pgtable.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/thread_info.h>
+#include <linaos/ptrace.h>
+#include <linaos/hardirq.h>
+#include <linaos/kbuild.h>
+#include <linaos/pgtable.h>
 
 #include <asm/ptrace.h>
 #include <asm/processor.h>
 #include <asm/pdc.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #ifdef CONFIG_64BIT
 #define FRAME_SIZE	128
@@ -276,7 +276,7 @@ int main(void)
 	DEFINE(ASM_PFN_PTE_SHIFT, PFN_PTE_SHIFT);
 	DEFINE(ASM_PT_INITIAL, PT_INITIAL);
 	BLANK();
-	/* HUGEPAGE_SIZE is only used in vmlinux.lds.S to align kernel text
+	/* HUGEPAGE_SIZE is only used in vmlinaos.lds.S to align kernel text
 	 * and kernel data on physical huge pages */
 #ifdef CONFIG_HUGETLB_PAGE
 	DEFINE(HUGEPAGE_SIZE, 1UL << REAL_HPAGE_SHIFT);

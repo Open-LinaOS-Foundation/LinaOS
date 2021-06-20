@@ -14,8 +14,8 @@
  */
 
 #include <asm-generic/pgtable-nop4d.h>
-#include <linux/compiler.h>
-#include <linux/const.h>
+#include <linaos/compiler.h>
+#include <linaos/const.h>
 #include <asm/types.h>
 #include <asm/spitfire.h>
 #include <asm/asi.h>
@@ -85,7 +85,7 @@ extern unsigned long VMALLOC_END;
 
 #define vmemmap			((struct page *)VMEMMAP_BASE)
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 
 bool kern_addr_valid(unsigned long addr);
 
@@ -889,7 +889,7 @@ static inline unsigned long pud_pfn(pud_t pud)
 #define p4d_set(p4dp, pudp)	\
 	(p4d_val(*(p4dp)) = (__pa((unsigned long) (pudp))))
 
-/* We cannot include <linux/mm_types.h> at this point yet: */
+/* We cannot include <linaos/mm_types.h> at this point yet: */
 extern struct mm_struct init_mm;
 
 /* Actual page table PTE updates.  */

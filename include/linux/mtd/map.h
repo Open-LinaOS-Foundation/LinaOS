@@ -8,12 +8,12 @@
 #ifndef __LINUX_MTD_MAP_H__
 #define __LINUX_MTD_MAP_H__
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/string.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
 
 #include <asm/unaligned.h>
 #include <asm/barrier.h>

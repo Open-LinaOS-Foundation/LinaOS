@@ -10,9 +10,9 @@
  * we do for performance..
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/uaccess.h>
 #include <net/checksum.h>
 
 

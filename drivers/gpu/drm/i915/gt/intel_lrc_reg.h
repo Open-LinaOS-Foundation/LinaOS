@@ -6,7 +6,7 @@
 #ifndef _INTEL_LRC_REG_H_
 #define _INTEL_LRC_REG_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define CTX_DESC_FORCE_RESTORE BIT_ULL(2)
 

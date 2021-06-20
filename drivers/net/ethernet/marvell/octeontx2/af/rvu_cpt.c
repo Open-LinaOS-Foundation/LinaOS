@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (C) 2020 Marvell. */
 
-#include <linux/bitfield.h>
-#include <linux/pci.h>
+#include <linaos/bitfield.h>
+#include <linaos/pci.h>
 #include "rvu_struct.h"
 #include "rvu_reg.h"
 #include "mbox.h"

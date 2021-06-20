@@ -4,7 +4,7 @@
 #ifndef __ASM_NDS32_MMU_CONTEXT_H
 #define __ASM_NDS32_MMU_CONTEXT_H
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 #include <asm/tlbflush.h>
 #include <asm/proc-fns.h>
 #include <asm-generic/mm_hooks.h>

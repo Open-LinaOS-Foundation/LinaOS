@@ -12,17 +12,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/can/can-ml.h>
-#include <linux/can/core.h>
-#include <linux/can/skb.h>
-#include <linux/errqueue.h>
-#include <linux/if_arp.h>
+#include <linaos/can/can-ml.h>
+#include <linaos/can/core.h>
+#include <linaos/can/skb.h>
+#include <linaos/errqueue.h>
+#include <linaos/if_arp.h>
 
 #include "j1939-priv.h"
 
 #define J1939_MIN_NAMELEN CAN_REQUIRED_SIZE(struct sockaddr_can, can_addr.j1939)
 
-/* conversion function between struct sock::sk_priority from linux and
+/* conversion function between struct sock::sk_priority from linaos and
  * j1939 priority field
  */
 static inline priority_t j1939_prio(u32 sk_priority)

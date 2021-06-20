@@ -16,15 +16,15 @@
  * eraseblock size is equivalent to the logical eraseblock size of the volume.
  */
 
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/mtd/ubi.h>
-#include <linux/mtd/mtd.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/math64.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/mtd/ubi.h>
+#include <linaos/mtd/mtd.h>
 #include "ubi-media.h"
 
 #define err_msg(fmt, ...)                                   \

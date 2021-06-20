@@ -4,11 +4,11 @@
  * Copyright (C) 2014 ARM Limited
  */
 
-#include <linux/clocksource.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/sched_clock.h>
+#include <linaos/clocksource.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/sched_clock.h>
 
 #define SYS_24MHZ 0x05c
 

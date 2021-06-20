@@ -6,35 +6,35 @@
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/crc32.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/circ_buf.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/phylink.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/iopoll.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/crc32.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/circ_buf.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/platform_device.h>
+#include <linaos/phylink.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/ip.h>
+#include <linaos/udp.h>
+#include <linaos/tcp.h>
+#include <linaos/iopoll.h>
+#include <linaos/pm_runtime.h>
 #include "macb.h"
 
 /* This structure is only used for MACB on SiFive FU540 devices */
@@ -3890,7 +3890,7 @@ static int macb_init(struct platform_device *pdev)
 #endif
 		}
 
-		/* get irq: here we use the linux queue index, not the hardware
+		/* get irq: here we use the linaos queue index, not the hardware
 		 * queue index. the queue irq definitions in the device tree
 		 * must remove the optional gaps that could exist in the
 		 * hardware queue mask.

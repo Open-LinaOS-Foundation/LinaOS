@@ -4,7 +4,7 @@
  *	All rights reserved.
  *	Authors: Carsten Langgaard <carstenl@mips.com>
  *		 Maciej W. Rozycki <macro@mips.com>
- * Copyright (C) 2005 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2005 Ralf Baechle (ralf@linaos-mips.org)
  */
 #ifndef _ASM_GT64120_H
 #define _ASM_GT64120_H

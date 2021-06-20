@@ -6,8 +6,8 @@
 #ifndef _HID_SENSOR_TRIGGER_H
 #define _HID_SENSOR_TRIGGER_H
 
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
 
 extern const struct dev_pm_ops hid_sensor_pm_ops;
 

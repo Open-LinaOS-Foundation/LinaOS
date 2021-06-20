@@ -2,14 +2,14 @@
 /*
  * Syscall support for the Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _ASM_HEXAGON_SYSCALL_H
 #define _ASM_HEXAGON_SYSCALL_H
 
-#include <uapi/linux/audit.h>
-#include <linux/err.h>
+#include <uapi/linaos/audit.h>
+#include <linaos/err.h>
 #include <asm/ptrace.h>
 
 typedef long (*syscall_fn)(unsigned long, unsigned long,

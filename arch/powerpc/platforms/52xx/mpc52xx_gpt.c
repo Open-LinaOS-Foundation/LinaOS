@@ -48,22 +48,22 @@
  * the output mode.  This driver does not change the output mode setting.
  */
 
-#include <linux/device.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/watchdog.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/watchdog.h>
+#include <linaos/miscdevice.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
 #include <asm/div64.h>
 #include <asm/mpc52xx.h>
 

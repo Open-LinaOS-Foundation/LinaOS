@@ -56,7 +56,7 @@
 #if !defined(_SAMPLE_TRACE_ARRAY_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _SAMPLE_TRACE_ARRAY_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 TRACE_EVENT(sample_event,
 
 	TP_PROTO(int count, unsigned long time),

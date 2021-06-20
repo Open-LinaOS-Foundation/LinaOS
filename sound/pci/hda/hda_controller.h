@@ -6,8 +6,8 @@
 #ifndef __SOUND_HDA_CONTROLLER_H
 #define __SOUND_HDA_CONTROLLER_H
 
-#include <linux/timecounter.h>
-#include <linux/interrupt.h>
+#include <linaos/timecounter.h>
+#include <linaos/interrupt.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

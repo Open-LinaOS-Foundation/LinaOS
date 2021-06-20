@@ -9,8 +9,8 @@
 #ifndef _DW_EDMA_H
 #define _DW_EDMA_H
 
-#include <linux/device.h>
-#include <linux/dmaengine.h>
+#include <linaos/device.h>
+#include <linaos/dmaengine.h>
 
 struct dw_edma;
 

@@ -2,24 +2,24 @@
 /*
  * Inode operations for Coda filesystem
  * Original version: (C) 1996 P. Braam and M. Callahan
- * Rewritten for Linux 2.1. (C) 1997 Carnegie Mellon University
+ * Rewritten for LinaOS 2.1. (C) 1997 Carnegie Mellon University
  * 
  * Carnegie Mellon encourages users to contribute improvements to
  * the Coda project. Contact Peter Braam (coda@cs.cmu.edu).
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/uaccess.h>
-#include <linux/string.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/time.h>
+#include <linaos/fs.h>
+#include <linaos/stat.h>
+#include <linaos/errno.h>
+#include <linaos/uaccess.h>
+#include <linaos/string.h>
 
-#include <linux/coda.h>
+#include <linaos/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_linaos.h"
 
 /* initialize the debugging variables */
 int coda_fake_statfs;
@@ -134,8 +134,8 @@ void coda_vattr_to_iattr(struct inode *inode, struct coda_vattr *attr)
 
 /* 
  * BSD sets attributes that need not be modified to -1. 
- * Linux uses the valid field to indicate what should be
- * looked at.  The BSD type field needs to be deduced from linux 
+ * LinaOS uses the valid field to indicate what should be
+ * looked at.  The BSD type field needs to be deduced from linaos 
  * mode.
  * So we have to do some translations here.
  */

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/irq.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/irq.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
 #include <asm/spitfire.h>
 
 #include "of_device_common.h"
@@ -481,7 +481,7 @@ static unsigned int __init pci_irq_swizzle(struct device_node *dp,
 					   struct device_node *pp,
 					   unsigned int irq)
 {
-	const struct linux_prom_pci_registers *regs;
+	const struct linaos_prom_pci_registers *regs;
 	unsigned int bus, devfn, slot, ret;
 
 	if (irq < 1 || irq > 4)

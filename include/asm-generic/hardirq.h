@@ -2,8 +2,8 @@
 #ifndef __ASM_GENERIC_HARDIRQ_H
 #define __ASM_GENERIC_HARDIRQ_H
 
-#include <linux/cache.h>
-#include <linux/threads.h>
+#include <linaos/cache.h>
+#include <linaos/threads.h>
 
 typedef struct {
 	unsigned int __softirq_pending;
@@ -14,7 +14,7 @@ typedef struct {
 
 DECLARE_PER_CPU_ALIGNED(irq_cpustat_t, irq_stat);
 
-#include <linux/irq.h>
+#include <linaos/irq.h>
 
 #ifndef ack_bad_irq
 static inline void ack_bad_irq(unsigned int irq)

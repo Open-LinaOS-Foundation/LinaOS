@@ -5,9 +5,9 @@
  * Copyright (C) 2018 Renesas Electronics Corp.
  */
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
-#include <linux/sys_soc.h>
+#include <linaos/bits.h>
+#include <linaos/kernel.h>
+#include <linaos/sys_soc.h>
 
 #include <dt-bindings/power/r8a77990-sysc.h>
 

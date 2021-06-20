@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (C) 2009 - 2019 Broadcom */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/pci-ecam.h>
-#include <linux/printk.h>
-#include <linux/reset.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/compiler.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/log2.h>
+#include <linaos/module.h>
+#include <linaos/msi.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_pci.h>
+#include <linaos/of_platform.h>
+#include <linaos/pci.h>
+#include <linaos/pci-ecam.h>
+#include <linaos/printk.h>
+#include <linaos/reset.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 #include "../pci.h"
 

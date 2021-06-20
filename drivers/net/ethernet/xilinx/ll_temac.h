@@ -3,9 +3,9 @@
 #ifndef XILINX_LL_TEMAC_H
 #define XILINX_LL_TEMAC_H
 
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/spinlock.h>
+#include <linaos/netdevice.h>
+#include <linaos/of.h>
+#include <linaos/spinlock.h>
 
 #ifdef CONFIG_PPC_DCR
 #include <asm/dcr.h>

@@ -3,8 +3,8 @@
  * Copyright (C) 2011 STRATO.  All rights reserved.
  */
 
-#include <linux/mm.h>
-#include <linux/rbtree.h>
+#include <linaos/mm.h>
+#include <linaos/rbtree.h>
 #include <trace/events/btrfs.h>
 #include "ctree.h"
 #include "disk-io.h"

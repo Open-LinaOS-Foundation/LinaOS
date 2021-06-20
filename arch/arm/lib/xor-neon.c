@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/lib/xor-neon.c
+ * linaos/arch/arm/lib/xor-neon.c
  *
  * Copyright (C) 2013 Linaro Ltd <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/raid/xor.h>
-#include <linux/module.h>
+#include <linaos/raid/xor.h>
+#include <linaos/module.h>
 
 MODULE_LICENSE("GPL");
 

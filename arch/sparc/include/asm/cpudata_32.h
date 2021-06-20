@@ -3,14 +3,14 @@
  *
  * Copyright (C) 2004 Keith M Wesolowski (wesolows@foobazco.org)
  *
- * Based on include/asm/cpudata.h and Linux 2.4 smp.h
+ * Based on include/asm/cpudata.h and LinaOS 2.4 smp.h
  * both (C) David S. Miller.
  */
 
 #ifndef _SPARC_CPUDATA_H
 #define _SPARC_CPUDATA_H
 
-#include <linux/percpu.h>
+#include <linaos/percpu.h>
 
 typedef struct {
 	unsigned long udelay_val;

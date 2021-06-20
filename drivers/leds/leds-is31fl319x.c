@@ -8,16 +8,16 @@
  * effect LEDs.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
 
 /* register numbers */
 #define IS31FL319X_SHUTDOWN		0x00
@@ -181,7 +181,7 @@ static int is31fl319x_parse_child_dt(const struct device *dev,
 	if (of_property_read_string(child, "label", &cdev->name))
 		cdev->name = child->name;
 
-	ret = of_property_read_string(child, "linux,default-trigger",
+	ret = of_property_read_string(child, "linaos,default-trigger",
 				      &cdev->default_trigger);
 	if (ret < 0 && ret != -EINVAL) /* is optional */
 		return ret;

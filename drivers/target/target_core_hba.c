@@ -10,13 +10,13 @@
  *
  ******************************************************************************/
 
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/module.h>
+#include <linaos/net.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/in.h>
+#include <linaos/module.h>
 #include <net/sock.h>
 #include <net/tcp.h>
 

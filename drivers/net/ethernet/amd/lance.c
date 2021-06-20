@@ -1,4 +1,4 @@
-/* lance.c: An AMD LANCE/PCnet ethernet driver for Linux. */
+/* lance.c: An AMD LANCE/PCnet ethernet driver for LinaOS. */
 /*
 	Written/copyright 1993-1998 by Donald Becker.
 
@@ -18,12 +18,12 @@
 	Andrey V. Savochkin:
 	- alignment problem with 1.3.* kernel and some minor changes.
 	Thomas Bogendoerfer (tsbogend@bigbug.franken.de):
-	- added support for Linux/Alpha, but removed most of it, because
+	- added support for LinaOS/Alpha, but removed most of it, because
         it worked only for the PCI chip.
       - added hook for the 32bit lance driver
       - added PCnetPCI II (79C970A) to chip table
 	Paul Gortmaker (gpg109@rsphy1.anu.edu.au):
-	- hopefully fix above so Linux/Alpha can use ISA cards too.
+	- hopefully fix above so LinaOS/Alpha can use ISA cards too.
     8/20/96 Fixed 7990 autoIRQ failure and reversed unneeded alignment -djb
     v1.12 10/27/97 Module support -djb
     v1.14  2/3/98 Module support modified, made PCI support optional -djb
@@ -44,21 +44,21 @@
 
 static const char version[] = "lance.c:v1.16 2006/11/09 dplatt@3do.com, becker@cesdis.gsfc.nasa.gov\n";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/mm.h>
+#include <linaos/bitops.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
@@ -153,7 +153,7 @@ IIIB. 16M memory limitations.
 For the ISA bus master mode all structures used directly by the LANCE,
 the initialization block, Rx and Tx rings, and data buffers, must be
 accessible from the ISA bus, i.e. in the lower 16M of real memory.
-This is a problem for current Linux kernels on >16M machines. The network
+This is a problem for current LinaOS kernels on >16M machines. The network
 devices are initialized after memory initialization, and the kernel doles out
 memory from the top of memory downward.	 The current solution is to have a
 special network initialization routine that's called before memory

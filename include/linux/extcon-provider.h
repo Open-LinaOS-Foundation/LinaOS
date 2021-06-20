@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  * External Connector (extcon) framework
- * - linux/include/linux/extcon-provider.h for extcon provider device driver.
+ * - linaos/include/linaos/extcon-provider.h for extcon provider device driver.
  *
  * Copyright (C) 2017 Samsung Electronics
  * Author: Chanwoo Choi <cw00.choi@samsung.com>
@@ -10,7 +10,7 @@
 #ifndef __LINUX_EXTCON_PROVIDER_H__
 #define __LINUX_EXTCON_PROVIDER_H__
 
-#include <linux/extcon.h>
+#include <linaos/extcon.h>
 
 struct extcon_dev;
 

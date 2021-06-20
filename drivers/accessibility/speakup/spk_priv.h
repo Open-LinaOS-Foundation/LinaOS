@@ -11,7 +11,7 @@
 #ifndef _SPEAKUP_PRIVATE_H
 #define _SPEAKUP_PRIVATE_H
 
-#include <linux/printk.h>
+#include <linaos/printk.h>
 
 #include "spk_types.h"
 #include "spk_priv_keyinfo.h"

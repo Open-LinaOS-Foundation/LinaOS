@@ -65,7 +65,7 @@ static inline void i8042_write_command(int val)
 
 #ifdef CONFIG_X86
 
-#include <linux/dmi.h>
+#include <linaos/dmi.h>
 
 static const struct dmi_system_id __initconst i8042_dmi_noloop_table[] = {
 	{
@@ -984,7 +984,7 @@ static const struct dmi_system_id __initconst i8042_dmi_kbdreset_table[] = {
 #endif /* CONFIG_X86 */
 
 #ifdef CONFIG_PNP
-#include <linux/pnp.h>
+#include <linaos/pnp.h>
 
 static bool i8042_pnp_kbd_registered;
 static unsigned int i8042_pnp_kbd_devices;

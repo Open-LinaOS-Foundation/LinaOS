@@ -6,7 +6,7 @@
 #ifndef _LINUX_DQBLK_QTREE_H
 #define _LINUX_DQBLK_QTREE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Numbers of blocks needed for updates - we count with the smallest
  * possible block size (1024) */

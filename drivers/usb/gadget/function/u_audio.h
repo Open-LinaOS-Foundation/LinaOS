@@ -9,7 +9,7 @@
 #ifndef __U_AUDIO_H
 #define __U_AUDIO_H
 
-#include <linux/usb/composite.h>
+#include <linaos/usb/composite.h>
 
 struct uac_params {
 	/* playback */

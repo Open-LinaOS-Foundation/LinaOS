@@ -21,32 +21,32 @@ static int sg_version_num = 30536;	/* 2 digits for each component */
  *        (otherwise the macros compile to empty statements).
  *
  */
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/mtio.h>
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/moduleparam.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/seq_file.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/blktrace_api.h>
-#include <linux/mutex.h>
-#include <linux/atomic.h>
-#include <linux/ratelimit.h>
-#include <linux/uio.h>
-#include <linux/cred.h> /* for sg_check_file_access() */
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/errno.h>
+#include <linaos/mtio.h>
+#include <linaos/ioctl.h>
+#include <linaos/slab.h>
+#include <linaos/fcntl.h>
+#include <linaos/init.h>
+#include <linaos/poll.h>
+#include <linaos/moduleparam.h>
+#include <linaos/cdev.h>
+#include <linaos/idr.h>
+#include <linaos/seq_file.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/blktrace_api.h>
+#include <linaos/mutex.h>
+#include <linaos/atomic.h>
+#include <linaos/ratelimit.h>
+#include <linaos/uio.h>
+#include <linaos/cred.h> /* for sg_check_file_access() */
 
 #include "scsi.h"
 #include <scsi/scsi_dbg.h>
@@ -58,7 +58,7 @@ static int sg_version_num = 30536;	/* 2 digits for each component */
 #include "scsi_logging.h"
 
 #ifdef CONFIG_SCSI_PROC_FS
-#include <linux/proc_fs.h>
+#include <linaos/proc_fs.h>
 static char *sg_version_date = "20140603";
 
 static int sg_proc_init(void);
@@ -299,7 +299,7 @@ sg_open(struct inode *inode, struct file *filp)
 	SCSI_LOG_TIMEOUT(3, sg_printk(KERN_INFO, sdp,
 				      "sg_open: flags=0x%x\n", flags));
 
-	/* This driver's module count bumped by fops_get in <linux/fs.h> */
+	/* This driver's module count bumped by fops_get in <linaos/fs.h> */
 	/* Prevent the device driver from vanishing while we sleep */
 	retval = scsi_device_get(sdp->device);
 	if (retval)

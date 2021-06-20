@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /dts-v1/;
 
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linaos-event-codes.h>
 #include <dt-bindings/input/gpio-keys.h>
 
 #include "tegra186-p3310.dtsi"
@@ -1015,8 +1015,8 @@
 			label = "Power";
 			gpios = <&gpio_aon TEGRA186_AON_GPIO(FF, 0)
 					   GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_KEY>;
-			linux,code = <KEY_POWER>;
+			linaos,input-type = <EV_KEY>;
+			linaos,code = <KEY_POWER>;
 			debounce-interval = <10>;
 			wakeup-event-action = <EV_ACT_ASSERTED>;
 			wakeup-source;
@@ -1026,8 +1026,8 @@
 			label = "Volume Up";
 			gpios = <&gpio_aon TEGRA186_AON_GPIO(FF, 1)
 					   GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_KEY>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,input-type = <EV_KEY>;
+			linaos,code = <KEY_VOLUMEUP>;
 			debounce-interval = <10>;
 		};
 
@@ -1035,8 +1035,8 @@
 			label = "Volume Down";
 			gpios = <&gpio_aon TEGRA186_AON_GPIO(FF, 2)
 					   GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_KEY>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,input-type = <EV_KEY>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			debounce-interval = <10>;
 		};
 	};

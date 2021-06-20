@@ -9,10 +9,10 @@
  *     Avinash.H.M <avinashhm@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
 
 #include "soc.h"
 #include "omap_hwmod.h"

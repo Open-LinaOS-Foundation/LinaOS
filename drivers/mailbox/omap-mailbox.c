@@ -9,19 +9,19 @@
  *          Suman Anna <s-anna@ti.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/kfifo.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/omap-mailbox.h>
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox_client.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/kfifo.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/omap-mailbox.h>
+#include <linaos/mailbox_controller.h>
+#include <linaos/mailbox_client.h>
 
 #include "mailbox.h"
 

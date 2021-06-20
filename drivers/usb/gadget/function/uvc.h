@@ -9,11 +9,11 @@
 #ifndef _UVC_GADGET_H_
 #define _UVC_GADGET_H_
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/usb/composite.h>
-#include <linux/videodev2.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/usb/composite.h>
+#include <linaos/videodev2.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-dev.h>

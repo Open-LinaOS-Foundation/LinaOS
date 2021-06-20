@@ -6,7 +6,7 @@
 #ifndef _FS_BFS_BFS_H
 #define _FS_BFS_BFS_H
 
-#include <linux/bfs_fs.h>
+#include <linaos/bfs_fs.h>
 
 /* In theory BFS supports up to 512 inodes, numbered from 2 (for /) up to 513 inclusive.
    In actual fact, attempting to create the 512th inode (i.e. inode No. 513 or file No. 511)

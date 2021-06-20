@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/pxa25x.c
+ *  linaos/arch/arm/mach-pxa/pxa25x.c
  *
  *  Author:	Nicolas Pitre
  *  Created:	Jun 15, 2001
@@ -13,19 +13,19 @@
  * initialization stuff for PXA machines which can be overridden later if
  * need be.
  */
-#include <linux/dmaengine.h>
-#include <linux/dma/pxa-dma.h>
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/platform_data/mmp_dma.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma/pxa-dma.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio-pxa.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/suspend.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/platform_data/mmp_dma.h>
 
 #include <asm/mach/map.h>
 #include <asm/suspend.h>

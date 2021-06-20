@@ -6,10 +6,10 @@
 // Copyright (c) 2007 Michel Ludwig <michel.ludwig@gmail.com>
 //	- Fix SMBus Read Byte command
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/usb.h>
+#include <linaos/i2c.h>
 
 #include "tm6000.h"
 #include "tm6000-regs.h"

@@ -6,9 +6,9 @@
  *    Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/sysctl.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <linaos/sysctl.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
 #include <asm/mmu_context.h>
 #include <asm/pgalloc.h>
 #include <asm/gmap.h>

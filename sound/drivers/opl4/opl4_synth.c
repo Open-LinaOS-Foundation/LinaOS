@@ -32,8 +32,8 @@
  */
 
 #include "opl4_local.h"
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
 #include <sound/asoundef.h>
 
 /* GM2 controllers */

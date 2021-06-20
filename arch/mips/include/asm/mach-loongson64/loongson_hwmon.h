@@ -2,7 +2,7 @@
 #ifndef __LOONGSON_HWMON_H_
 #define __LOONGSON_HWMON_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define MIN_TEMP	0
 #define MAX_TEMP	255

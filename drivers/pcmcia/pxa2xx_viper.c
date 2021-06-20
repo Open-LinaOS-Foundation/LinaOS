@@ -13,19 +13,19 @@
  * more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
 
 #include <pcmcia/ss.h>
 
 #include <asm/irq.h>
 
-#include <linux/platform_data/pcmcia-pxa2xx_viper.h>
+#include <linaos/platform_data/pcmcia-pxa2xx_viper.h>
 
 #include "soc_common.h"
 #include "pxa2xx_base.h"

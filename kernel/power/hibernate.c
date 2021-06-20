@@ -11,26 +11,26 @@
 
 #define pr_fmt(fmt) "PM: hibernation: " fmt
 
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/reboot.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/async.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pm.h>
-#include <linux/nmi.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/freezer.h>
-#include <linux/gfp.h>
-#include <linux/syscore_ops.h>
-#include <linux/ctype.h>
-#include <linux/genhd.h>
-#include <linux/ktime.h>
-#include <linux/security.h>
+#include <linaos/export.h>
+#include <linaos/suspend.h>
+#include <linaos/reboot.h>
+#include <linaos/string.h>
+#include <linaos/device.h>
+#include <linaos/async.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/pm.h>
+#include <linaos/nmi.h>
+#include <linaos/console.h>
+#include <linaos/cpu.h>
+#include <linaos/freezer.h>
+#include <linaos/gfp.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/ctype.h>
+#include <linaos/genhd.h>
+#include <linaos/ktime.h>
+#include <linaos/security.h>
 #include <trace/events/power.h>
 
 #include "power.h"

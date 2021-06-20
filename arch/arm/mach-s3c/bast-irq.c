@@ -5,11 +5,11 @@
 //
 // http://www.simtec.co.uk/products/EB2410ITX/
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>

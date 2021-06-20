@@ -11,8 +11,8 @@
 #if !defined(_TRACE_INTERCONNECT_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_INTERCONNECT_H
 
-#include <linux/interconnect.h>
-#include <linux/tracepoint.h>
+#include <linaos/interconnect.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(icc_set_bw,
 

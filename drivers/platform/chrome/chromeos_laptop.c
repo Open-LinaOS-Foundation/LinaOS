@@ -6,16 +6,16 @@
 
 #define pr_fmt(fmt)		KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
 
 #define ATMEL_TP_I2C_ADDR	0x4b
 #define ATMEL_TP_I2C_BL_ADDR	0x25
@@ -303,7 +303,7 @@ static const int chromebook_pixel_tp_keys[] __initconst = {
 static const struct property_entry
 chromebook_pixel_trackpad_props[] __initconst = {
 	PROPERTY_ENTRY_STRING("compatible", "atmel,maxtouch"),
-	PROPERTY_ENTRY_U32_ARRAY("linux,gpio-keymap", chromebook_pixel_tp_keys),
+	PROPERTY_ENTRY_U32_ARRAY("linaos,gpio-keymap", chromebook_pixel_tp_keys),
 	{ }
 };
 
@@ -504,7 +504,7 @@ static const u32 samus_touchpad_buttons[] __initconst = {
 
 static const struct property_entry samus_trackpad_props[] __initconst = {
 	PROPERTY_ENTRY_STRING("compatible", "atmel,maxtouch"),
-	PROPERTY_ENTRY_U32_ARRAY("linux,gpio-keymap", samus_touchpad_buttons),
+	PROPERTY_ENTRY_U32_ARRAY("linaos,gpio-keymap", samus_touchpad_buttons),
 	{ }
 };
 

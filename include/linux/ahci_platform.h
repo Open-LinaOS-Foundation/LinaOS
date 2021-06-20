@@ -11,7 +11,7 @@
 #ifndef _AHCI_PLATFORM_H
 #define _AHCI_PLATFORM_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 struct device;
 struct ata_port_info;

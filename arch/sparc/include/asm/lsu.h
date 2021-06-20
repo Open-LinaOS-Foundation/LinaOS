@@ -2,7 +2,7 @@
 #ifndef _SPARC64_LSU_H
 #define _SPARC64_LSU_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 /* LSU Control Register */
 #define LSU_CONTROL_PM _AC(0x000001fe00000000,UL) /* Phys-watchpoint byte mask*/

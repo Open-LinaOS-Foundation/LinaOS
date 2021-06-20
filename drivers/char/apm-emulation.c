@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * bios-less APM driver for ARM Linux
+ * bios-less APM driver for ARM LinaOS
  *  Jamey Hicks <jamey@crl.dec.com>
- *  adapted from the APM BIOS driver for Linux by Stephen Rothwell (sfr@linuxcare.com)
+ *  adapted from the APM BIOS driver for LinaOS by Stephen Rothwell (sfr@linaoscare.com)
  *
  * APM 1.2 Reference:
  *   Intel Corporation, Microsoft Corporation. Advanced Power Management
@@ -11,26 +11,26 @@
  * This document is available from Microsoft at:
  *    http://www.microsoft.com/whdc/archive/amp_12.mspx
  */
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/miscdevice.h>
-#include <linux/apm_bios.h>
-#include <linux/capability.h>
-#include <linux/sched.h>
-#include <linux/suspend.h>
-#include <linux/apm-emulation.h>
-#include <linux/freezer.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/poll.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/miscdevice.h>
+#include <linaos/apm_bios.h>
+#include <linaos/capability.h>
+#include <linaos/sched.h>
+#include <linaos/suspend.h>
+#include <linaos/apm-emulation.h>
+#include <linaos/freezer.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/init.h>
+#include <linaos/completion.h>
+#include <linaos/kthread.h>
+#include <linaos/delay.h>
 
 /*
  * One option can be changed at boot time as follows:
@@ -396,9 +396,9 @@ static struct miscdevice apm_device = {
 
 #ifdef CONFIG_PROC_FS
 /*
- * Arguments, with symbols from linux/apm_bios.h.
+ * Arguments, with symbols from linaos/apm_bios.h.
  *
- *   0) Linux driver version (this will change if format changes)
+ *   0) LinaOS driver version (this will change if format changes)
  *   1) APM BIOS Version.  Usually 1.0, 1.1 or 1.2.
  *   2) APM flags from APM Installation Check (0x00):
  *	bit 0: APM_16_BIT_SUPPORT

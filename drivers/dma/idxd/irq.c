@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2019 Intel Corporation. All rights rsvd. */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/dmaengine.h>
-#include <uapi/linux/idxd.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/dmaengine.h>
+#include <uapi/linaos/idxd.h>
 #include "../dmaengine.h"
 #include "idxd.h"
 #include "registers.h"
@@ -345,7 +345,7 @@ static int idxd_desc_process(struct idxd_irq_entry *irq_entry)
 	 * There are two lists we are processing. The pending_llist is where
 	 * submmiter adds all the submitted descriptor after sending it to
 	 * the workqueue. It's a lockless singly linked list. The work_list
-	 * is the common linux double linked list. We are in a scenario of
+	 * is the common linaos double linked list. We are in a scenario of
 	 * multiple producers and a single consumer. The producers are all
 	 * the kernel submitters of descriptors, and the consumer is the
 	 * kernel irq handler thread for the msix vector when using threaded

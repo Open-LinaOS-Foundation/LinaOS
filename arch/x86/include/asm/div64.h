@@ -4,8 +4,8 @@
 
 #ifdef CONFIG_X86_32
 
-#include <linux/types.h>
-#include <linux/log2.h>
+#include <linaos/types.h>
+#include <linaos/log2.h>
 
 /*
  * do_div() is NOT a C function. It wants to return

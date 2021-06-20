@@ -15,17 +15,17 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/clk/ti.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/list.h>
-#include <linux/regmap.h>
-#include <linux/memblock.h>
-#include <linux/device.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk/ti.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/list.h>
+#include <linaos/regmap.h>
+#include <linaos/memblock.h>
+#include <linaos/device.h>
 
 #include "clock.h"
 

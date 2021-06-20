@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for LinaOS
  *
  * derived from drivers/kvm/kvm_main.c
  *
@@ -16,7 +16,7 @@
  *   Ben-Ami Yassour <benami@il.ibm.com>
  */
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 #include "irq.h"
 #include "ioapic.h"
 #include "mmu.h"
@@ -31,33 +31,33 @@
 #include "lapic.h"
 #include "xen.h"
 
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/kvm.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
-#include <linux/mman.h>
-#include <linux/highmem.h>
-#include <linux/iommu.h>
-#include <linux/intel-iommu.h>
-#include <linux/cpufreq.h>
-#include <linux/user-return-notifier.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/perf_event.h>
-#include <linux/uaccess.h>
-#include <linux/hash.h>
-#include <linux/pci.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/pvclock_gtod.h>
-#include <linux/kvm_irqfd.h>
-#include <linux/irqbypass.h>
-#include <linux/sched/stat.h>
-#include <linux/sched/isolation.h>
-#include <linux/mem_encrypt.h>
-#include <linux/entry-kvm.h>
+#include <linaos/clocksource.h>
+#include <linaos/interrupt.h>
+#include <linaos/kvm.h>
+#include <linaos/fs.h>
+#include <linaos/vmalloc.h>
+#include <linaos/export.h>
+#include <linaos/moduleparam.h>
+#include <linaos/mman.h>
+#include <linaos/highmem.h>
+#include <linaos/iommu.h>
+#include <linaos/intel-iommu.h>
+#include <linaos/cpufreq.h>
+#include <linaos/user-return-notifier.h>
+#include <linaos/srcu.h>
+#include <linaos/slab.h>
+#include <linaos/perf_event.h>
+#include <linaos/uaccess.h>
+#include <linaos/hash.h>
+#include <linaos/pci.h>
+#include <linaos/timekeeper_internal.h>
+#include <linaos/pvclock_gtod.h>
+#include <linaos/kvm_irqfd.h>
+#include <linaos/irqbypass.h>
+#include <linaos/sched/stat.h>
+#include <linaos/sched/isolation.h>
+#include <linaos/mem_encrypt.h>
+#include <linaos/entry-kvm.h>
 
 #include <trace/events/kvm.h>
 
@@ -65,7 +65,7 @@
 #include <asm/msr.h>
 #include <asm/desc.h>
 #include <asm/mce.h>
-#include <linux/kernel_stat.h>
+#include <linaos/kernel_stat.h>
 #include <asm/fpu/internal.h> /* Ugh! */
 #include <asm/pvclock.h>
 #include <asm/div64.h>
@@ -2972,7 +2972,7 @@ static int set_msr_mce(struct kvm_vcpu *vcpu, struct msr_data *msr_info)
 				MSR_IA32_MCx_CTL(bank_num) - MSR_IA32_MC0_CTL);
 
 			/* only 0 or all 1s can be written to IA32_MCi_CTL
-			 * some Linux kernels though clear bit 10 in bank 4 to
+			 * some LinaOS kernels though clear bit 10 in bank 4 to
 			 * workaround a BIOS/GART TBL issue on AMD K8s, ignore
 			 * this to avoid an uncatched #GP in the guest
 			 */

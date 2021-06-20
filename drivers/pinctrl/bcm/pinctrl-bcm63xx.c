@@ -6,11 +6,11 @@
  * Copyright (C) 2016 Jonas Gorski <jonas.gorski@gmail.com>
  */
 
-#include <linux/gpio/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/gpio/regmap.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 
 #include "pinctrl-bcm63xx.h"
 

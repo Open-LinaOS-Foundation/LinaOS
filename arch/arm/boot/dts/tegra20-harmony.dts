@@ -446,7 +446,7 @@
 		nvidia,repeat-delay-ms = <160>;
 		nvidia,kbc-row-pins = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15>;
 		nvidia,kbc-col-pins = <16 17 18 19 20 21 22 23>;
-		linux,keymap = <MATRIX_KEY(0x00, 0x02, KEY_W)
+		linaos,keymap = <MATRIX_KEY(0x00, 0x02, KEY_W)
 				MATRIX_KEY(0x00, 0x03, KEY_S)
 				MATRIX_KEY(0x00, 0x04, KEY_A)
 				MATRIX_KEY(0x00, 0x05, KEY_Z)
@@ -652,7 +652,7 @@
 		power {
 			label = "Power";
 			gpios = <&gpio TEGRA_GPIO(V, 2) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};

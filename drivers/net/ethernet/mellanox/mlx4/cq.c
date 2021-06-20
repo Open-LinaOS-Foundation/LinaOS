@@ -34,11 +34,11 @@
  * SOFTWARE.
  */
 
-#include <linux/hardirq.h>
-#include <linux/export.h>
+#include <linaos/hardirq.h>
+#include <linaos/export.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/cq.h>
+#include <linaos/mlx4/cmd.h>
+#include <linaos/mlx4/cq.h>
 
 #include "mlx4.h"
 #include "icm.h"

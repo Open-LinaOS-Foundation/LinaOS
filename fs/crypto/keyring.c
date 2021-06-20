@@ -19,9 +19,9 @@
  */
 
 #include <crypto/skcipher.h>
-#include <linux/key-type.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
+#include <linaos/key-type.h>
+#include <linaos/random.h>
+#include <linaos/seq_file.h>
 
 #include "fscrypt_private.h"
 
@@ -557,7 +557,7 @@ static struct key_type key_type_fscrypt_provisioning = {
 };
 
 /*
- * Retrieve the raw key from the Linux keyring key specified by 'key_id', and
+ * Retrieve the raw key from the LinaOS keyring key specified by 'key_id', and
  * store it into 'secret'.
  *
  * The key must be of type "fscrypt-provisioning" and must have the field
@@ -567,7 +567,7 @@ static struct key_type key_type_fscrypt_provisioning = {
  * completely restrict the use of such keys; they can be used by any kernel API
  * that accepts "logon" keys and doesn't require a specific service prefix.
  *
- * The ability to specify the key via Linux keyring key is intended for cases
+ * The ability to specify the key via LinaOS keyring key is intended for cases
  * where userspace needs to re-add keys after the filesystem is unmounted and
  * re-mounted.  Most users should just provide the raw key directly instead.
  */

@@ -5,19 +5,19 @@
  * Author: Lee Jones <lee.jones@linaro.org>
  */
 
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/sched/signal.h>
+#include <linaos/debugfs.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/poll.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/sched/signal.h>
 
 #define MBOX_MAX_SIG_LEN	8
 #define MBOX_MAX_MSG_LEN	128

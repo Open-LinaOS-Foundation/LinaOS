@@ -8,23 +8,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
-#include <linux/slab.h>
-#include <linux/sched/cpufreq.h>
-#include <linux/list.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/acpi.h>
-#include <linux/vmalloc.h>
-#include <linux/pm_qos.h>
+#include <linaos/kernel.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/module.h>
+#include <linaos/ktime.h>
+#include <linaos/hrtimer.h>
+#include <linaos/tick.h>
+#include <linaos/slab.h>
+#include <linaos/sched/cpufreq.h>
+#include <linaos/list.h>
+#include <linaos/cpu.h>
+#include <linaos/cpufreq.h>
+#include <linaos/sysfs.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/acpi.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pm_qos.h>
 #include <trace/events/power.h>
 
 #include <asm/div64.h>

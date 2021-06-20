@@ -33,8 +33,8 @@
 #ifndef __MLX5_VPORT_H__
 #define __MLX5_VPORT_H__
 
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/device.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/mlx5/device.h>
 
 #define MLX5_VPORT_MANAGER(mdev)					\
 	(MLX5_CAP_GEN(mdev, vport_group_manager) &&			\

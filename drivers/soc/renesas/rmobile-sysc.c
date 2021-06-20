@@ -9,15 +9,15 @@
  * based on pm-sh7372.c
  *  Copyright (C) 2011 Magnus Damm
  */
-#include <linux/clk/renesas.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pm.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
+#include <linaos/clk/renesas.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/pm.h>
+#include <linaos/pm_clock.h>
+#include <linaos/pm_domain.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
 

@@ -2,13 +2,13 @@
 #ifndef __MM_KASAN_KASAN_H
 #define __MM_KASAN_KASAN_H
 
-#include <linux/kasan.h>
-#include <linux/kfence.h>
-#include <linux/stackdepot.h>
+#include <linaos/kasan.h>
+#include <linaos/kfence.h>
+#include <linaos/stackdepot.h>
 
 #ifdef CONFIG_KASAN_HW_TAGS
 
-#include <linux/static_key.h>
+#include <linaos/static_key.h>
 
 DECLARE_STATIC_KEY_FALSE(kasan_flag_stacktrace);
 extern bool kasan_flag_async __ro_after_init;

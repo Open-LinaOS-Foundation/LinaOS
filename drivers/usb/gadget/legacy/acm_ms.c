@@ -10,8 +10,8 @@
  * Heavily based on multi.c and cdc2.c
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #include "u_serial.h"
 
@@ -24,7 +24,7 @@
  * DO NOT REUSE THESE IDs with a protocol-incompatible driver!!  Ever!!
  * Instead:  allocate your own, using normal USB-IF procedures.
  */
-#define ACM_MS_VENDOR_NUM	0x1d6b	/* Linux Foundation */
+#define ACM_MS_VENDOR_NUM	0x1d6b	/* LinaOS Foundation */
 #define ACM_MS_PRODUCT_NUM	0x0106	/* Composite Gadget: ACM + MS*/
 
 #include "f_mass_storage.h"

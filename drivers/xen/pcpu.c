@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,11 +33,11 @@
 
 #define pr_fmt(fmt) "xen_cpu: " fmt
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/cpu.h>
-#include <linux/stat.h>
-#include <linux/capability.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/cpu.h>
+#include <linaos/stat.h>
+#include <linaos/capability.h>
 
 #include <xen/xen.h>
 #include <xen/acpi.h>

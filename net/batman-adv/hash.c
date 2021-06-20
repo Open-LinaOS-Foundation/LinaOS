@@ -7,9 +7,9 @@
 #include "hash.h"
 #include "main.h"
 
-#include <linux/gfp.h>
-#include <linux/lockdep.h>
-#include <linux/slab.h>
+#include <linaos/gfp.h>
+#include <linaos/lockdep.h>
+#include <linaos/slab.h>
 
 /* clears the hash */
 static void batadv_hash_init(struct batadv_hashtable *hash)

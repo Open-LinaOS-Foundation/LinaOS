@@ -6,15 +6,15 @@
  * Copyright (c) 2001-2012 Anton Altaparmakov
  * Copyright (C) 2001,2002 Jakob Kemi <jakob.kemi@telia.com>
  *
- * Documentation is available at http://www.linux-ntfs.org/doku.php?id=downloads 
+ * Documentation is available at http://www.linaos-ntfs.org/doku.php?id=downloads 
  */
 
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/stringify.h>
-#include <linux/kernel.h>
-#include <linux/uuid.h>
-#include <linux/msdos_partition.h>
+#include <linaos/slab.h>
+#include <linaos/pagemap.h>
+#include <linaos/stringify.h>
+#include <linaos/kernel.h>
+#include <linaos/uuid.h>
+#include <linaos/msdos_partition.h>
 
 #include "ldm.h"
 #include "check.h"

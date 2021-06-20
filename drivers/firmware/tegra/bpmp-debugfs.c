@@ -2,10 +2,10 @@
 /*
  * Copyright (c) 2017, NVIDIA CORPORATION.  All rights reserved.
  */
-#include <linux/debugfs.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/debugfs.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include <soc/tegra/bpmp.h>
 #include <soc/tegra/bpmp-abi.h>
@@ -70,7 +70,7 @@ static void seqbuf_seek(struct seqbuf *seqbuf, ssize_t offset)
 	seqbuf->pos += offset;
 }
 
-/* map filename in Linux debugfs to corresponding entry in BPMP */
+/* map filename in LinaOS debugfs to corresponding entry in BPMP */
 static const char *get_filename(struct tegra_bpmp *bpmp,
 				const struct file *file, char *buf, int size)
 {

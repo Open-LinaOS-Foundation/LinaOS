@@ -20,11 +20,11 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
 
 #include "pinctrl-sunxi.h"
 

@@ -5,7 +5,7 @@ KBUILD_DEFCONFIG = comet_defconfig
 
 # Do not use GP-relative jumps
 KBUILD_CFLAGS += -G0
-LDFLAGS_vmlinux += -G0
+LDFLAGS_vmlinaos += -G0
 
 # Do not use single-byte enums; these will overflow.
 KBUILD_CFLAGS += -fno-short-enums
@@ -30,7 +30,7 @@ KBUILD_LDFLAGS += $(ldflags-y)
 # Thread-info register will be r19.  This value is not configureable;
 # it is hard-coded in several files.
 TIR_NAME := r19
-KBUILD_CFLAGS += -ffixed-$(TIR_NAME) -DTHREADINFO_REG=$(TIR_NAME) -D__linux__
+KBUILD_CFLAGS += -ffixed-$(TIR_NAME) -DTHREADINFO_REG=$(TIR_NAME) -D__linaos__
 KBUILD_AFLAGS += -DTHREADINFO_REG=$(TIR_NAME)
 
 head-y := arch/hexagon/kernel/head.o

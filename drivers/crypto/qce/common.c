@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2014, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/types.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/sha1.h>
 #include <crypto/sha2.h>

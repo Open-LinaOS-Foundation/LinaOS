@@ -8,12 +8,12 @@
  * TWR-P102x Board Setup
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/fsl/guts.h>
-#include <linux/pci.h>
-#include <linux/of_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/fsl/guts.h>
+#include <linaos/pci.h>
+#include <linaos/of_platform.h>
 
 #include <asm/pci-bridge.h>
 #include <asm/udbg.h>

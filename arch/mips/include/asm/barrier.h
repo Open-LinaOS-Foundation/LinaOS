@@ -3,7 +3,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2006 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2006 by Ralf Baechle (ralf@linaos-mips.org)
  */
 #ifndef __ASM_BARRIER_H
 #define __ASM_BARRIER_H

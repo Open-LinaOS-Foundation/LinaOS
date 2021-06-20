@@ -14,7 +14,7 @@
 #define __ASM_POWERPC_FSL_85XX_CACHE_SRAM_H__
 
 #include <asm/rheap.h>
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 /*
  * Cache-SRAM

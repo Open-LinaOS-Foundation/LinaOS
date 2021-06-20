@@ -2,14 +2,14 @@
 /* Copyright (c) 2018 Jernej Skrabec <jernej.skrabec@siol.net> */
 
 
-#include <linux/bitfield.h>
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
+#include <linaos/bitfield.h>
+#include <linaos/component.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_graph.h>
+#include <linaos/platform_device.h>
 
 #include <dt-bindings/clock/sun8i-tcon-top.h>
 

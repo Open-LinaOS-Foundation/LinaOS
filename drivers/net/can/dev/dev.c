@@ -4,18 +4,18 @@
  * Copyright (C) 2008-2009 Wolfgang Grandegger <wg@grandegger.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/workqueue.h>
-#include <linux/can.h>
-#include <linux/can/can-ml.h>
-#include <linux/can/dev.h>
-#include <linux/can/skb.h>
-#include <linux/can/led.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/workqueue.h>
+#include <linaos/can.h>
+#include <linaos/can/can-ml.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/skb.h>
+#include <linaos/can/led.h>
+#include <linaos/of.h>
 
 #define MOD_DESC "CAN device driver interface"
 

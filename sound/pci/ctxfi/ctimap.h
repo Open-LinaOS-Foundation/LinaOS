@@ -15,7 +15,7 @@
 #ifndef CTIMAP_H
 #define CTIMAP_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 struct imapper {
 	unsigned short slot; /* the id of the slot containing input data */

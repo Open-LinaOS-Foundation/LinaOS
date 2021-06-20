@@ -3,7 +3,7 @@
  * Helpers for DMA ops implementations.  These generally rely on the fact that
  * the allocated memory contains normal pages in the direct kernel mapping.
  */
-#include <linux/dma-map-ops.h>
+#include <linaos/dma-map-ops.h>
 
 /*
  * Create scatter-list for the already allocated DMA buffer.

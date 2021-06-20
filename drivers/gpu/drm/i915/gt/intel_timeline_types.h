@@ -6,11 +6,11 @@
 #ifndef __I915_TIMELINE_TYPES_H__
 #define __I915_TIMELINE_TYPES_H__
 
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/types.h>
+#include <linaos/list.h>
+#include <linaos/kref.h>
+#include <linaos/mutex.h>
+#include <linaos/rcupdate.h>
+#include <linaos/types.h>
 
 #include "i915_active_types.h"
 

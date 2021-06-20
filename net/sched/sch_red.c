@@ -10,10 +10,10 @@
  * J Hadi Salim 980816:  ECN support
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
 #include <net/inet_ecn.h>

@@ -12,7 +12,7 @@
  * Yura's function is added (04/07/2000)
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "reiserfs.h"
 #include <asm/types.h>
 

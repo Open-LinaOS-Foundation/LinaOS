@@ -4,7 +4,7 @@
  *			  (C) 2005 Red Hat Inc
  *
  * Based on
- *  linux/drivers/ide/pci/opti621.c		Version 0.7	Sept 10, 2002
+ *  linaos/drivers/ide/pci/opti621.c		Version 0.7	Sept 10, 2002
  *
  *  Copyright (C) 1996-1998  Linus Torvalds & authors (see below)
  *
@@ -24,13 +24,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linaos/libata.h>
 
 #define DRV_NAME "pata_opti"
 #define DRV_VERSION "0.2.9"

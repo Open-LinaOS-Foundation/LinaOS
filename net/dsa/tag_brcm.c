@@ -5,10 +5,10 @@
  * Copyright (C) 2014 Broadcom Corporation
  */
 
-#include <linux/dsa/brcm.h>
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/dsa/brcm.h>
+#include <linaos/etherdevice.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 
 #include "dsa_priv.h"
 

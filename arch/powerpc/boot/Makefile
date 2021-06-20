@@ -35,7 +35,7 @@ endif
 BOOTCFLAGS    := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		 -fno-strict-aliasing -O2 -msoft-float -mno-altivec -mno-vsx \
 		 -pipe -fomit-frame-pointer -fno-builtin -fPIC -nostdinc \
-		 -include $(srctree)/include/linux/compiler_attributes.h \
+		 -include $(srctree)/include/linaos/compiler_attributes.h \
 		 $(LINUXINCLUDE)
 
 ifdef CONFIG_PPC64_BOOT_WRAPPER
@@ -95,18 +95,18 @@ $(obj)/treeboot-akebono.o: BOOTCFLAGS += -mcpu=405
 zlib-decomp-$(CONFIG_KERNEL_GZIP) := decompress_inflate.c
 zlib-$(CONFIG_KERNEL_GZIP) := inffast.c inflate.c inftrees.c
 zlibheader-$(CONFIG_KERNEL_GZIP) := inffast.h inffixed.h inflate.h inftrees.h infutil.h
-zliblinuxheader-$(CONFIG_KERNEL_GZIP) := zlib.h zconf.h zutil.h
+zliblinaosheader-$(CONFIG_KERNEL_GZIP) := zlib.h zconf.h zutil.h
 
 $(addprefix $(obj)/, decompress.o): \
 	$(addprefix $(obj)/,$(zlib-decomp-y))
 
 $(addprefix $(obj)/, $(zlib-decomp-y)): \
-	$(addprefix $(obj)/,$(zliblinuxheader-y)) \
+	$(addprefix $(obj)/,$(zliblinaosheader-y)) \
 	$(addprefix $(obj)/,$(zlibheader-y)) \
 	$(addprefix $(obj)/,$(zlib-y))
 
 $(addprefix $(obj)/,$(zlib-y)): \
-	$(addprefix $(obj)/,$(zliblinuxheader-y)) \
+	$(addprefix $(obj)/,$(zliblinaosheader-y)) \
 	$(addprefix $(obj)/,$(zlibheader-y))
 
 libfdt       := fdt.c fdt_ro.c fdt_wip.c fdt_sw.c fdt_rw.c fdt_strerror.c
@@ -182,7 +182,7 @@ $(addprefix $(obj)/,$(zlib-y)): $(obj)/%: $(srctree)/lib/zlib_inflate/%
 $(addprefix $(obj)/,$(zlibheader-y)): $(obj)/%: $(srctree)/lib/zlib_inflate/%
 	$(call cmd,copy_kern_src)
 
-$(addprefix $(obj)/,$(zliblinuxheader-y)): $(obj)/%: $(srctree)/include/linux/%
+$(addprefix $(obj)/,$(zliblinaosheader-y)): $(obj)/%: $(srctree)/include/linaos/%
 	$(call cmd,copy_kern_src)
 
 $(addprefix $(obj)/,$(zlib-decomp-y)): $(obj)/%: $(srctree)/lib/%
@@ -200,7 +200,7 @@ $(obj)/empty.c:
 $(obj)/zImage.coff.lds $(obj)/zImage.ps3.lds : $(obj)/%: $(srctree)/$(src)/%.S
 	$(Q)cp $< $@
 
-clean-files := $(zlib-) $(zlibheader-) $(zliblinuxheader-) \
+clean-files := $(zlib-) $(zlibheader-) $(zliblinaosheader-) \
 		$(zlib-decomp-) $(libfdt) $(libfdtheader) \
 		empty.c zImage.coff.lds zImage.ps3.lds zImage.lds
 
@@ -257,7 +257,7 @@ compressor-$(CONFIG_KERNEL_LZO) := lzo
 quiet_cmd_wrap	= WRAP    $@
       cmd_wrap	=$(CONFIG_SHELL) $(wrapper) -Z $(compressor-y) -c -o $@ -p $2 \
 		$(CROSSWRAP) $(if $3, -s $3)$(if $4, -d $4)$(if $5, -i $5) \
-		vmlinux
+		vmlinaos
 
 image-$(CONFIG_PPC_PSERIES)		+= zImage.pseries
 image-$(CONFIG_PPC_POWERNV)		+= zImage.pseries
@@ -381,58 +381,58 @@ $(addprefix $(obj)/, $(initrd-y)): $(obj)/ramdisk.image.gz
 # Don't put the ramdisk on the pattern rule; when its missing make will try
 # the pattern rule with less dependencies that also matches (even with the
 # hard dependency listed).
-$(obj)/zImage.initrd.%: vmlinux $(wrapperbits) FORCE
+$(obj)/zImage.initrd.%: vmlinaos $(wrapperbits) FORCE
 	$(call if_changed,wrap,$*,,,$(obj)/ramdisk.image.gz)
 
-$(addprefix $(obj)/, $(sort $(filter zImage.%, $(image-y)))): vmlinux $(wrapperbits) FORCE
+$(addprefix $(obj)/, $(sort $(filter zImage.%, $(image-y)))): vmlinaos $(wrapperbits) FORCE
 	$(call if_changed,wrap,$(subst $(obj)/zImage.,,$@))
 
 # dtbImage% - a dtbImage is a zImage with an embedded device tree blob
-$(obj)/dtbImage.initrd.%: vmlinux $(wrapperbits) $(obj)/dts/%.dtb FORCE
+$(obj)/dtbImage.initrd.%: vmlinaos $(wrapperbits) $(obj)/dts/%.dtb FORCE
 	$(call if_changed,wrap,$*,,$(obj)/dts/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/dtbImage.%: vmlinux $(wrapperbits) $(obj)/dts/%.dtb FORCE
+$(obj)/dtbImage.%: vmlinaos $(wrapperbits) $(obj)/dts/%.dtb FORCE
 	$(call if_changed,wrap,$*,,$(obj)/dts/$*.dtb)
 
 # This cannot be in the root of $(src) as the zImage rule always adds a $(obj)
 # prefix
-$(obj)/vmlinux.strip: vmlinux
+$(obj)/vmlinaos.strip: vmlinaos
 	$(STRIP) -s -R .comment $< -o $@
 
-$(obj)/uImage: vmlinux $(wrapperbits) FORCE
+$(obj)/uImage: vmlinaos $(wrapperbits) FORCE
 	$(call if_changed,wrap,uboot)
 
-$(obj)/uImage.initrd.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/uImage.initrd.%: vmlinaos $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,uboot-$*,,$(obj)/dts/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/uImage.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/uImage.%: vmlinaos $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,uboot-$*,,$(obj)/dts/$*.dtb)
 
-$(obj)/cuImage.initrd.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/cuImage.initrd.%: vmlinaos $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,cuboot-$*,,$(obj)/dts/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/cuImage.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/cuImage.%: vmlinaos $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,cuboot-$*,,$(obj)/dts/$*.dtb)
 
-$(obj)/simpleImage.initrd.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/simpleImage.initrd.%: vmlinaos $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,simpleboot-$*,,$(obj)/dts/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/simpleImage.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/simpleImage.%: vmlinaos $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,simpleboot-$*,,$(obj)/dts/$*.dtb)
 
-$(obj)/treeImage.initrd.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/treeImage.initrd.%: vmlinaos $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,treeboot-$*,,$(obj)/dts/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/treeImage.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/treeImage.%: vmlinaos $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,treeboot-$*,,$(obj)/dts/$*.dtb)
 
 # Needed for the above targets to work with dts/fsl/ files
 $(obj)/dts/%.dtb: $(obj)/dts/fsl/%.dtb
 	@cp $< $@
 
-# If there isn't a platform selected then just strip the vmlinux.
+# If there isn't a platform selected then just strip the vmlinaos.
 ifeq (,$(image-y))
-image-y := vmlinux.strip
+image-y := vmlinaos.strip
 endif
 
 $(obj)/zImage:		$(addprefix $(obj)/, $(image-y))
@@ -440,13 +440,13 @@ $(obj)/zImage:		$(addprefix $(obj)/, $(image-y))
 $(obj)/zImage.initrd:	$(addprefix $(obj)/, $(initrd-y))
 	$(Q)rm -f $@; ln $< $@
 
-# Only install the vmlinux
+# Only install the vmlinaos
 install: $(CONFIGURE) $(addprefix $(obj)/, $(image-y))
-	sh -x $(srctree)/$(src)/install.sh "$(KERNELRELEASE)" vmlinux System.map "$(INSTALL_PATH)"
+	sh -x $(srctree)/$(src)/install.sh "$(KERNELRELEASE)" vmlinaos System.map "$(INSTALL_PATH)"
 
-# Install the vmlinux and other built boot targets.
+# Install the vmlinaos and other built boot targets.
 zInstall: $(CONFIGURE) $(addprefix $(obj)/, $(image-y))
-	sh -x $(srctree)/$(src)/install.sh "$(KERNELRELEASE)" vmlinux System.map "$(INSTALL_PATH)" $^
+	sh -x $(srctree)/$(src)/install.sh "$(KERNELRELEASE)" vmlinaos System.map "$(INSTALL_PATH)" $^
 
 PHONY += install zInstall
 
@@ -457,7 +457,7 @@ clean-files += $(image-) $(initrd-) cuImage.* dtbImage.* treeImage.* \
 	zImage.maple simpleImage.* otheros.bld
 
 # clean up files cached by wrapper
-clean-kernel-base := vmlinux.strip vmlinux.bin
+clean-kernel-base := vmlinaos.strip vmlinaos.bin
 clean-kernel := $(addsuffix .gz,$(clean-kernel-base))
 clean-kernel += $(addsuffix .xz,$(clean-kernel-base))
 # If not absolute clean-files are relative to $(obj).

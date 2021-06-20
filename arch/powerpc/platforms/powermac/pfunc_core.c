@@ -6,12 +6,12 @@
  * FIXME: LOCKING !!!
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
 
 #include <asm/prom.h>
 #include <asm/pmac_pfunc.h>

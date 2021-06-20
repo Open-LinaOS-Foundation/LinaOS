@@ -14,8 +14,8 @@
 #ifndef _ASM_X86_NUMACHIP_NUMACHIP_CSR_H
 #define _ASM_X86_NUMACHIP_NUMACHIP_CSR_H
 
-#include <linux/smp.h>
-#include <linux/io.h>
+#include <linaos/smp.h>
+#include <linaos/io.h>
 
 #define CSR_NODE_SHIFT		16
 #define CSR_NODE_BITS(p)	(((unsigned long)(p)) << CSR_NODE_SHIFT)

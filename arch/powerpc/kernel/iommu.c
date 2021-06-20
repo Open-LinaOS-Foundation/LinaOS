@@ -10,22 +10,22 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitmap.h>
-#include <linux/iommu-helper.h>
-#include <linux/crash_dump.h>
-#include <linux/hash.h>
-#include <linux/fault-inject.h>
-#include <linux/pci.h>
-#include <linux/iommu.h>
-#include <linux/sched.h>
-#include <linux/debugfs.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/bitmap.h>
+#include <linaos/iommu-helper.h>
+#include <linaos/crash_dump.h>
+#include <linaos/hash.h>
+#include <linaos/fault-inject.h>
+#include <linaos/pci.h>
+#include <linaos/iommu.h>
+#include <linaos/sched.h>
+#include <linaos/debugfs.h>
 #include <asm/io.h>
 #include <asm/prom.h>
 #include <asm/iommu.h>

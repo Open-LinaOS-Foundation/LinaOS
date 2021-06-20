@@ -6,8 +6,8 @@
 #ifndef _LINUX_BCM_PHY_LIB_H
 #define _LINUX_BCM_PHY_LIB_H
 
-#include <linux/brcmphy.h>
-#include <linux/phy.h>
+#include <linaos/brcmphy.h>
+#include <linaos/phy.h>
 
 /* 28nm only register definitions */
 #define MISC_ADDR(base, channel)	base, channel

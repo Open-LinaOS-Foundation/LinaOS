@@ -5,12 +5,12 @@
  *  Copyright (C) 2010 Stefan Ringel <stefan.ringel@arcor.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
 
-#include <linux/input.h>
-#include <linux/usb.h>
+#include <linaos/input.h>
+#include <linaos/usb.h>
 
 #include <media/rc-core.h>
 

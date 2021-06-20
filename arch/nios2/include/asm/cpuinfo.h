@@ -6,7 +6,7 @@
 #ifndef _ASM_NIOS2_CPUINFO_H
 #define _ASM_NIOS2_CPUINFO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct cpuinfo {
 	/* Core CPU configuration */

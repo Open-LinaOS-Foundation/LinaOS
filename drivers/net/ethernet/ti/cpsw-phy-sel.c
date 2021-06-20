@@ -7,12 +7,12 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/phy.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 #include "cpsw.h"
 

@@ -5,9 +5,9 @@
  * Borrowed heavily from MIPS
  */
 
-#include <linux/export.h>
-#include <linux/extable.h>
-#include <linux/uaccess.h>
+#include <linaos/export.h>
+#include <linaos/extable.h>
+#include <linaos/uaccess.h>
 
 int fixup_exception(struct pt_regs *regs)
 {

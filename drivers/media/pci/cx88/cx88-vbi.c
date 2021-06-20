@@ -4,9 +4,9 @@
 
 #include "cx88.h"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 
 static unsigned int vbi_debug;
 module_param(vbi_debug, int, 0644);

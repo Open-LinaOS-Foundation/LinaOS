@@ -4,7 +4,7 @@
  *
  *  Copyright (C) 1994-2013 Russell King
  */
-#include <linux/serial_reg.h>
+#include <linaos/serial_reg.h>
 
 		.macro	addruart, rp, rv, tmp
 		ldr	\rp, =CONFIG_DEBUG_UART_PHYS

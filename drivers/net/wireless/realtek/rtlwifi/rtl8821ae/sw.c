@@ -15,8 +15,8 @@
 #include "table.h"
 #include "../btcoexist/rtl_btc.h"
 
-#include <linux/vmalloc.h>
-#include <linux/module.h>
+#include <linaos/vmalloc.h>
+#include <linaos/module.h>
 
 static void rtl8821ae_init_aspm_vars(struct ieee80211_hw *hw)
 {

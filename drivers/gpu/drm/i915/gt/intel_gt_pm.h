@@ -6,7 +6,7 @@
 #ifndef INTEL_GT_PM_H
 #define INTEL_GT_PM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "intel_gt_types.h"
 #include "intel_wakeref.h"

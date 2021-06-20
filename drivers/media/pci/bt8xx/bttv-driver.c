@@ -24,16 +24,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/kdev_t.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/kdev_t.h>
 #include "bttvp.h"
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
@@ -41,7 +41,7 @@
 #include <media/i2c/tvaudio.h>
 #include <media/drv-intf/msp3400.h>
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
@@ -1523,7 +1523,7 @@ bttv_switch_overlay(struct bttv *btv, struct bttv_fh *fh,
 }
 
 /* ----------------------------------------------------------------------- */
-/* video4linux (1) interface                                               */
+/* video4linaos (1) interface                                               */
 
 static int bttv_prepare_buffer(struct videobuf_queue *q,struct bttv *btv,
 			       struct bttv_buffer *buf,
@@ -3882,7 +3882,7 @@ static void bttv_unregister_video(struct bttv *btv)
 	video_unregister_device(&btv->radio_dev);
 }
 
-/* register video4linux devices */
+/* register video4linaos devices */
 static int bttv_register_video(struct bttv *btv)
 {
 	if (no_overlay > 0)
@@ -4161,7 +4161,7 @@ static int bttv_probe(struct pci_dev *dev, const struct pci_device_id *pci_id)
 	/* mute device */
 	audio_mute(btv, 1);
 
-	/* register video4linux + input */
+	/* register video4linaos + input */
 	if (!bttv_tvcards[btv->c.type].no_video) {
 		v4l2_ctrl_add_handler(&btv->radio_ctrl_handler, hdl,
 				v4l2_ctrl_radio_filter, false);
@@ -4240,7 +4240,7 @@ static void bttv_remove(struct pci_dev *pci_dev)
 	/* unregister i2c_bus + input */
 	fini_bttv_i2c(btv);
 
-	/* unregister video4linux */
+	/* unregister video4linaos */
 	bttv_unregister_video(btv);
 
 	/* free allocated memory */

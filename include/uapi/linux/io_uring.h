@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: (GPL-2.0 WITH Linux-syscall-note) OR MIT */
+/* SPDX-License-Identifier: (GPL-2.0 WITH LinaOS-syscall-note) OR MIT */
 /*
  * Header file for the io_uring interface.
  *
@@ -8,8 +8,8 @@
 #ifndef LINUX_IO_URING_H
 #define LINUX_IO_URING_H
 
-#include <linux/fs.h>
-#include <linux/types.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
 
 /*
  * IO submission data structure (Submission Queue Entry)

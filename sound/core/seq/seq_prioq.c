@@ -4,8 +4,8 @@
  *   Copyright (c) 1998-1999 by Frank van de Pol <fvdpol@coil.demon.nl>
  */
 
-#include <linux/time.h>
-#include <linux/slab.h>
+#include <linaos/time.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include "seq_timer.h"
 #include "seq_prioq.h"

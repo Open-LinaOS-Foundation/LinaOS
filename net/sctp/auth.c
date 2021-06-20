@@ -6,16 +6,16 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *   Vlad Yasevich     <vladislav.yasevich@hp.com>
  */
 
 #include <crypto/hash.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/scatterlist.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/auth.h>
 

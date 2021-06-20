@@ -19,7 +19,7 @@
 #ifndef __MAX14577_H__
 #define __MAX14577_H__
 
-#include <linux/regulator/consumer.h>
+#include <linaos/regulator/consumer.h>
 
 /* MAX14577 regulator IDs */
 enum max14577_regulators {

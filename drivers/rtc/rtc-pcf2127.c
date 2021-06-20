@@ -13,16 +13,16 @@
  * Datasheet: http://cache.nxp.com/documents/data_sheet/PCF2127.pdf
  */
 
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
-#include <linux/watchdog.h>
+#include <linaos/i2c.h>
+#include <linaos/spi/spi.h>
+#include <linaos/bcd.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/regmap.h>
+#include <linaos/watchdog.h>
 
 /* Control register 1 */
 #define PCF2127_REG_CTRL1		0x00

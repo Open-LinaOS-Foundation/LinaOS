@@ -8,7 +8,7 @@
 #if !defined(_HCLGEVF_TRACE_H_) || defined(TRACE_HEADER_MULTI_READ)
 #define _HCLGEVF_TRACE_H_
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #define VF_GET_MBX_LEN	(sizeof(struct hclge_mbx_pf_to_vf_cmd) / sizeof(u32))
 #define VF_SEND_MBX_LEN	(sizeof(struct hclge_mbx_vf_to_pf_cmd) / sizeof(u32))

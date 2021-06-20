@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/se/7780/setup.c
+ * linaos/arch/sh/boards/se/7780/setup.c
  *
  * Copyright (C) 2006,2007  Nobuhiro Iwamatsu
  *
  * Hitachi UL SolutionEngine 7780 Support.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
 #include <asm/machvec.h>
 #include <mach-se/mach/se7780.h>
 #include <asm/io.h>
@@ -71,7 +71,7 @@ device_initcall(se7780_devices_setup);
 
 static void __init se7780_setup(char **cmdline_p)
 {
-	/* "SH-Linux" on LED Display */
+	/* "SH-LinaOS" on LED Display */
 	__raw_writew( 'S' , PA_LED_DISP + (DISP_SEL0_ADDR << 1) );
 	__raw_writew( 'H' , PA_LED_DISP + (DISP_SEL1_ADDR << 1) );
 	__raw_writew( '-' , PA_LED_DISP + (DISP_SEL2_ADDR << 1) );

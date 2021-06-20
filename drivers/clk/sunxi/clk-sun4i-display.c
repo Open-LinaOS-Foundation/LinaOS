@@ -5,13 +5,13 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/of_address.h>
+#include <linaos/reset-controller.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 struct sun4i_a10_display_clk_data {
 	bool	has_div;

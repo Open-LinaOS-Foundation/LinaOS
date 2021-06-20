@@ -26,9 +26,9 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/console.h>
+#include <linaos/pci.h>
 
 #include <drm/drm.h>
 #include <drm/drm_atomic_helper.h>

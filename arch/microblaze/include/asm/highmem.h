@@ -20,9 +20,9 @@
 
 #ifdef __KERNEL__
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/uaccess.h>
 #include <asm/fixmap.h>
 
 extern pte_t *pkmap_page_table;

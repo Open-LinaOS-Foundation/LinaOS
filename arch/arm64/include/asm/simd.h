@@ -6,11 +6,11 @@
 #ifndef __ASM_SIMD_H
 #define __ASM_SIMD_H
 
-#include <linux/compiler.h>
-#include <linux/irqflags.h>
-#include <linux/percpu.h>
-#include <linux/preempt.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/irqflags.h>
+#include <linaos/percpu.h>
+#include <linaos/preempt.h>
+#include <linaos/types.h>
 
 DECLARE_PER_CPU(bool, fpsimd_context_busy);
 

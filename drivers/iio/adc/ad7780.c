@@ -6,22 +6,22 @@
  * Copyright 2019 Renato Lui Geh
  */
 
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/bits.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/spi/spi.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/err.h>
+#include <linaos/sched.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/bits.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/adc/ad_sigma_delta.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/adc/ad_sigma_delta.h>
 
 #define AD7780_RDY		BIT(7)
 #define AD7780_FILTER		BIT(6)

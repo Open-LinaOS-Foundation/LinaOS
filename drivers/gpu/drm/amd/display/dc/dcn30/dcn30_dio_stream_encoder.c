@@ -29,7 +29,7 @@
 #include "reg_helper.h"
 #include "hw_shared.h"
 #include "core_types.h"
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 
 #define DC_LOGGER \

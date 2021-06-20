@@ -11,32 +11,32 @@
  *
  * U8500 PRCM Unit interface driver
  */
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/irq.h>
-#include <linux/jiffies.h>
-#include <linux/bitops.h>
-#include <linux/fs.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/dbx500-prcmu.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/regulator/db8500-prcmu.h>
-#include <linux/regulator/machine.h>
-#include <linux/platform_data/ux500_wdt.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/completion.h>
+#include <linaos/irq.h>
+#include <linaos/jiffies.h>
+#include <linaos/bitops.h>
+#include <linaos/fs.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/uaccess.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/dbx500-prcmu.h>
+#include <linaos/mfd/abx500/ab8500.h>
+#include <linaos/regulator/db8500-prcmu.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/platform_data/ux500_wdt.h>
 #include "dbx500-prcmu-regs.h"
 
 /* Index of different voltages to be used when accessing AVSData */

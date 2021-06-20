@@ -23,9 +23,9 @@
 
 #define SWSMU_CODE_LAYER_L2
 
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/i2c.h>
+#include <linaos/firmware.h>
+#include <linaos/pci.h>
+#include <linaos/i2c.h>
 #include "amdgpu.h"
 #include "amdgpu_smu.h"
 #include "atomfirmware.h"

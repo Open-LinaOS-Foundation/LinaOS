@@ -3,7 +3,7 @@
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the LinaOS staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -17,8 +17,8 @@
 #include "osdep_service.h"
 
 #include "wlan_bssdef.h"
-#include <linux/semaphore.h>
-#include <linux/sem.h>
+#include <linaos/semaphore.h>
+#include <linaos/sem.h>
 
 /*
  * Used to report a bss has been scanned

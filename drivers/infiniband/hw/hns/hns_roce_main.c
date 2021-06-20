@@ -30,10 +30,10 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/acpi.h>
-#include <linux/of_platform.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/acpi.h>
+#include <linaos/of_platform.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_smi.h>
 #include <rdma/ib_user_verbs.h>

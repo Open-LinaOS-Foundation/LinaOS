@@ -7,9 +7,9 @@
 #ifndef _QEDE_PTP_H_
 #define _QEDE_PTP_H_
 
-#include <linux/ptp_clock_kernel.h>
-#include <linux/net_tstamp.h>
-#include <linux/timecounter.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/timecounter.h>
 #include "qede.h"
 
 void qede_ptp_rx_ts(struct qede_dev *edev, struct sk_buff *skb);

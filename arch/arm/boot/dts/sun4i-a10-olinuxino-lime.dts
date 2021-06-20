@@ -48,7 +48,7 @@
 
 / {
 	model = "Olimex A10-OLinuXino-LIME";
-	compatible = "olimex,a10-olinuxino-lime", "allwinner,sun4i-a10";
+	compatible = "olimex,a10-olinaosino-lime", "allwinner,sun4i-a10";
 
 	aliases {
 		serial0 = &uart0;
@@ -72,10 +72,10 @@
 	leds {
 		compatible = "gpio-leds";
 		pinctrl-names = "default";
-		pinctrl-0 = <&led_pins_olinuxinolime>;
+		pinctrl-0 = <&led_pins_olinaosinolime>;
 
 		led {
-			label = "a10-olinuxino-lime:green:usr";
+			label = "a10-olinaosino-lime:green:usr";
 			gpios = <&pio 7 2 GPIO_ACTIVE_HIGH>;
 			default-state = "on";
 		};
@@ -181,7 +181,7 @@
 };
 
 &pio {
-	led_pins_olinuxinolime: led-pin {
+	led_pins_olinaosinolime: led-pin {
 		pins = "PH2";
 		function = "gpio_out";
 		drive-strength = <20>;

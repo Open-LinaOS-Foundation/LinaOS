@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/nfs/callback_xdr.c
+ * linaos/fs/nfs/callback_xdr.c
  *
  * Copyright (C) 2004 Trond Myklebust
  *
  * NFSv4 callback encode/decode procedures
  */
-#include <linux/kernel.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/ratelimit.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/bc_xprt.h>
+#include <linaos/kernel.h>
+#include <linaos/sunrpc/svc.h>
+#include <linaos/nfs4.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/ratelimit.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/sunrpc/bc_xprt.h>
 #include "nfs4_fs.h"
 #include "callback.h"
 #include "internal.h"

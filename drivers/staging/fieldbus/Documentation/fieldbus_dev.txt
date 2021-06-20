@@ -32,7 +32,7 @@ Part I - Why do we need this subsystem?
 Fieldbus device (client) adapters are commercially available. They allow data
 exchange with a PLC aka "Fieldbus Controller" via process data memory.
 
-They are typically used when a Linux device wants to expose itself as an
+They are typically used when a LinaOS device wants to expose itself as an
 actuator, motor, console light, switch, etc. over the fieldbus.
 
 The purpose of this subsystem is:
@@ -43,7 +43,7 @@ Part II - How can drivers use the subsystem?
 --------------------------------------------
 
 Any driver that wants to register as a Fieldbus Device should allocate and
-populate a 'struct fieldbus_dev' (from include/linux/fieldbus_dev.h).
+populate a 'struct fieldbus_dev' (from include/linaos/fieldbus_dev.h).
 Registration then happens by calling fieldbus_dev_register().
 
 Part III - How can userspace use the subsystem?

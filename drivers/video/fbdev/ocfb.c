@@ -8,19 +8,19 @@
  * kind, whether express or implied.
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 
 /* OCFB register defines */
 #define OCFB_CTRL	0x000

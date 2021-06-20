@@ -33,7 +33,7 @@
 #if !defined(__LIB_TRACER_TRACEPOINT_H__) || defined(TRACE_HEADER_MULTI_READ)
 #define __LIB_TRACER_TRACEPOINT_H__
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "fw_tracer.h"
 
 #undef TRACE_SYSTEM

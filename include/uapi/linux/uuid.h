@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * UUID/GUID definition
  *
@@ -18,7 +18,7 @@
 #ifndef _UAPI_LINUX_UUID_H_
 #define _UAPI_LINUX_UUID_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 typedef struct {
 	__u8 b[16];

@@ -9,7 +9,7 @@
 #include <sys/syscall.h>
 #include <time.h>
 #include <unistd.h>
-#include <linux/futex.h>
+#include <linaos/futex.h>
 
 #include "utils.h"
 

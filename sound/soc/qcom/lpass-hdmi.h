@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2020 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020 The LinaOS Foundation. All rights reserved.
  *
  * lpass_hdmi.h - Definitions for the QTi LPASS HDMI
  */
@@ -8,7 +8,7 @@
 #ifndef __LPASS_HDMI_H__
 #define __LPASS_HDMI_H__
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 #define LPASS_HDMITX_LEGACY_DISABLE		0x0
 #define LPASS_HDMITX_LEGACY_ENABLE		0x1

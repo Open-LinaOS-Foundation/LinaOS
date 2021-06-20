@@ -2,18 +2,18 @@
 #ifndef _LINUX_FB_H
 #define _LINUX_FB_H
 
-#include <linux/kgdb.h>
-#include <uapi/linux/fb.h>
+#include <linaos/kgdb.h>
+#include <uapi/linaos/fb.h>
 
 #define FBIO_CURSOR            _IOWR('F', 0x08, struct fb_cursor_user)
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/workqueue.h>
-#include <linux/notifier.h>
-#include <linux/list.h>
-#include <linux/backlight.h>
-#include <linux/slab.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/workqueue.h>
+#include <linaos/notifier.h>
+#include <linaos/list.h>
+#include <linaos/backlight.h>
+#include <linaos/slab.h>
 #include <asm/io.h>
 
 struct vm_area_struct;

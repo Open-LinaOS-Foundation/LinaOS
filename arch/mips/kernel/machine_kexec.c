@@ -3,11 +3,11 @@
  * machine_kexec.c for kexec
  * Created by <nschichan@corp.free.fr> on Thu Oct 12 15:15:06 2006
  */
-#include <linux/compiler.h>
-#include <linux/kexec.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/libfdt.h>
+#include <linaos/compiler.h>
+#include <linaos/kexec.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/libfdt.h>
 
 #include <asm/cacheflush.h>
 #include <asm/page.h>

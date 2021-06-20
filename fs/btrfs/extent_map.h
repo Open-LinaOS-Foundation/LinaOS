@@ -3,8 +3,8 @@
 #ifndef BTRFS_EXTENT_MAP_H
 #define BTRFS_EXTENT_MAP_H
 
-#include <linux/rbtree.h>
-#include <linux/refcount.h>
+#include <linaos/rbtree.h>
+#include <linaos/refcount.h>
 
 #define EXTENT_MAP_LAST_BYTE ((u64)-4)
 #define EXTENT_MAP_HOLE ((u64)-3)

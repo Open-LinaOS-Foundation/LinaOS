@@ -9,8 +9,8 @@
 #ifndef LINUX_CPER_H
 #define LINUX_CPER_H
 
-#include <linux/uuid.h>
-#include <linux/trace_seq.h>
+#include <linaos/uuid.h>
+#include <linaos/trace_seq.h>
 
 /* CPER record signature and the size */
 #define CPER_SIG_RECORD				"CPER"
@@ -129,7 +129,7 @@ enum {
 #define CPER_SEC_CONTAINMENT_WARNING		0x0002
 /* If set, the component must be re-initialized or re-enabled prior to use */
 #define CPER_SEC_RESET				0x0004
-/* If set, Linux may choose to discontinue use of the resource */
+/* If set, LinaOS may choose to discontinue use of the resource */
 #define CPER_SEC_ERROR_THRESHOLD_EXCEEDED	0x0008
 /*
  * If set, resource could not be queried for error information due to
@@ -140,7 +140,7 @@ enum {
 /*
  * If set, action has been taken to ensure error containment (such as
  * poisoning data), but the error has not been fully corrected and the
- * data has not been consumed. Linux may choose to take further
+ * data has not been consumed. LinaOS may choose to take further
  * corrective action before the data is consumed
  */
 #define CPER_SEC_LATENT_ERROR			0x0020

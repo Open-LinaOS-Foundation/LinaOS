@@ -40,13 +40,13 @@
 		led-1 {
 			label = "beagleboard::usr0";
 			gpios = <&gpio5 22 GPIO_ACTIVE_HIGH>; /* 150 -> D6 LED */
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		led-2 {
 			label = "beagleboard::usr1";
 			gpios = <&gpio5 21 GPIO_ACTIVE_HIGH>; /* 149 -> D7 LED */
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 	};
 
@@ -73,7 +73,7 @@
 		user {
 			label = "user";
 			gpios = <&gpio1 4 GPIO_ACTIVE_HIGH>;
-			linux,code = <0x114>;
+			linaos,code = <0x114>;
 			wakeup-source;
 		};
 

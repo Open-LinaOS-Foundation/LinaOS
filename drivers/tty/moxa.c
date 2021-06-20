@@ -6,7 +6,7 @@
  *      Copyright (C) 1999-2000  Moxa Technologies (support@moxa.com).
  *      Copyright (c) 2007 Jiri Slaby <jirislaby@gmail.com>
  *
- *      This code is loosely based on the Linux serial driver, written by
+ *      This code is loosely based on the LinaOS serial driver, written by
  *      Linus Torvalds, Theodore T'so and others.
  */
 
@@ -17,33 +17,33 @@
  *      version         : 5.1
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/serial.h>
-#include <linux/tty_driver.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/ioport.h>
+#include <linaos/errno.h>
+#include <linaos/firmware.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/major.h>
+#include <linaos/string.h>
+#include <linaos/fcntl.h>
+#include <linaos/ptrace.h>
+#include <linaos/serial.h>
+#include <linaos/tty_driver.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/ratelimit.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "moxa.h"
 
@@ -756,7 +756,7 @@ static int moxa_load_fw(struct moxa_board_conf *brd, const struct firmware *fw)
 		goto err;
 	}
 	if (hdr->type != 3) {
-		sprintf(rsn, "not for linux, type is %u", hdr->type);
+		sprintf(rsn, "not for linaos, type is %u", hdr->type);
 		goto err;
 	}
 	if (moxa_check_fw_model(brd, hdr->model)) {

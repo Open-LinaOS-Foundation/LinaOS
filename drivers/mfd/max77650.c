@@ -6,14 +6,14 @@
 // Core MFD driver for MAXIM 77650/77651 charger/power-supply.
 // Programming manual: https://pdfserv.maximintegrated.com/en/an/AN6428.pdf
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max77650.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/max77650.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
 
 #define MAX77650_INT_GPI_F_MSK		BIT(0)
 #define MAX77650_INT_GPI_R_MSK		BIT(1)
@@ -186,7 +186,7 @@ static int max77650_i2c_probe(struct i2c_client *i2c)
 	 * This IC has a low-power mode which reduces the quiescent current
 	 * consumption to ~5.6uA but is only suitable for systems consuming
 	 * less than ~2mA. Since this is not likely the case even on
-	 * linux-based wearables - keep the chip in normal power mode.
+	 * linaos-based wearables - keep the chip in normal power mode.
 	 */
 	rv = regmap_update_bits(map,
 				MAX77650_REG_CNFG_GLBL,

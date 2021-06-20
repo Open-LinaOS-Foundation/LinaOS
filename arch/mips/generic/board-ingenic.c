@@ -7,12 +7,12 @@
  * Copyright (C) 2020 Paul Cercueil <paul@crapouillou.net>
  */
 
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/pm.h>
-#include <linux/sizes.h>
-#include <linux/suspend.h>
-#include <linux/types.h>
+#include <linaos/of_address.h>
+#include <linaos/of_fdt.h>
+#include <linaos/pm.h>
+#include <linaos/sizes.h>
+#include <linaos/suspend.h>
+#include <linaos/types.h>
 
 #include <asm/bootinfo.h>
 #include <asm/machine.h>

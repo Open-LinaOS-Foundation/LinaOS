@@ -23,11 +23,11 @@
 
 #define DEBUG /* So dev_dbg() is always available. */
 
-#include <linux/kernel.h> /* For printk. */
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ipmi_msgdefs.h>		/* for completion codes */
+#include <linaos/kernel.h> /* For printk. */
+#include <linaos/string.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/ipmi_msgdefs.h>		/* for completion codes */
 #include "ipmi_si_sm.h"
 
 /* smic_debug is a bit-field

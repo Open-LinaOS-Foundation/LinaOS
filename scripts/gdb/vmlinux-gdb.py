@@ -1,5 +1,5 @@
 #
-# gdb helper commands and functions for Linux kernel debugging
+# gdb helper commands and functions for LinaOS kernel debugging
 #
 #  loader module
 #
@@ -19,21 +19,21 @@ try:
     gdb.parse_and_eval("0")
     gdb.execute("", to_string=True)
 except:
-    gdb.write("NOTE: gdb 7.2 or later required for Linux helper scripts to "
+    gdb.write("NOTE: gdb 7.2 or later required for LinaOS helper scripts to "
               "work.\n")
 else:
-    import linux.utils
-    import linux.symbols
-    import linux.modules
-    import linux.dmesg
-    import linux.tasks
-    import linux.config
-    import linux.cpus
-    import linux.lists
-    import linux.rbtree
-    import linux.proc
-    import linux.constants
-    import linux.timerlist
-    import linux.clk
-    import linux.genpd
-    import linux.device
+    import linaos.utils
+    import linaos.symbols
+    import linaos.modules
+    import linaos.dmesg
+    import linaos.tasks
+    import linaos.config
+    import linaos.cpus
+    import linaos.lists
+    import linaos.rbtree
+    import linaos.proc
+    import linaos.constants
+    import linaos.timerlist
+    import linaos.clk
+    import linaos.genpd
+    import linaos.device

@@ -1,37 +1,37 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-/*  D-Link DL2000-based Gigabit Ethernet Adapter Linux driver */
+/*  D-Link DL2000-based Gigabit Ethernet Adapter LinaOS driver */
 /*
     Copyright (c) 2001, 2002 by D-Link Corporation
     Written by Edward Peng.<edward_peng@dlink.com.tw>
-    Created 03-May-2001, base on Linux' sundance.c.
+    Created 03-May-2001, base on LinaOS' sundance.c.
 
 */
 
 #ifndef __DL2K_H__
 #define __DL2K_H__
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/crc32.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/bitops.h>
 #include <asm/processor.h>	/* Processor type for cache alignment. */
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/time.h>
+#include <linaos/uaccess.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/time.h>
 #define TX_RING_SIZE	256
 #define TX_QUEUE_LEN	(TX_RING_SIZE - 1) /* Limit ring entries actually used.*/
 #define RX_RING_SIZE 	256

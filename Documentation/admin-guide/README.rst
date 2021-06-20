@@ -1,16 +1,16 @@
 .. _readme:
 
-Linux kernel release 5.x <http://kernel.org/>
+LinaOS kernel release 5.x <http://kernel.org/>
 =============================================
 
-These are the release notes for Linux version 5.  Read them carefully,
+These are the release notes for LinaOS version 5.  Read them carefully,
 as they tell you what this is all about, explain how to install the
 kernel, and what to do if something goes wrong.
 
-What is Linux?
+What is LinaOS?
 --------------
 
-  Linux is a clone of the operating system Unix, written from scratch by
+  LinaOS is a clone of the operating system Unix, written from scratch by
   Linus Torvalds with assistance from a loosely-knit team of hackers across
   the Net. It aims towards POSIX and Single UNIX Specification compliance.
 
@@ -26,26 +26,26 @@ On what hardware does it run?
 -----------------------------
 
   Although originally developed first for 32-bit x86-based PCs (386 or higher),
-  today Linux also runs on (at least) the Compaq Alpha AXP, Sun SPARC and
+  today LinaOS also runs on (at least) the Compaq Alpha AXP, Sun SPARC and
   UltraSPARC, Motorola 68000, PowerPC, PowerPC64, ARM, Hitachi SuperH, Cell,
   IBM S/390, MIPS, HP PA-RISC, Intel IA-64, DEC VAX, AMD x86-64 Xtensa, and
   ARC architectures.
 
-  Linux is easily portable to most general-purpose 32- or 64-bit architectures
+  LinaOS is easily portable to most general-purpose 32- or 64-bit architectures
   as long as they have a paged memory management unit (PMMU) and a port of the
-  GNU C compiler (gcc) (part of The GNU Compiler Collection, GCC). Linux has
+  GNU C compiler (gcc) (part of The GNU Compiler Collection, GCC). LinaOS has
   also been ported to a number of architectures without a PMMU, although
   functionality is then obviously somewhat limited.
-  Linux has also been ported to itself. You can now run the kernel as a
-  userspace application - this is called UserMode Linux (UML).
+  LinaOS has also been ported to itself. You can now run the kernel as a
+  userspace application - this is called UserMode LinaOS (UML).
 
 Documentation
 -------------
 
  - There is a lot of documentation available both in electronic form on
-   the Internet and in books, both Linux-specific and pertaining to
+   the Internet and in books, both LinaOS-specific and pertaining to
    general UNIX questions.  I'd recommend looking into the documentation
-   subdirectories on any Linux FTP site for the LDP (Linux Documentation
+   subdirectories on any LinaOS FTP site for the LDP (LinaOS Documentation
    Project) books.  This README is not meant to be documentation on the
    system: there are much better sources available.
 
@@ -63,11 +63,11 @@ Installing the kernel source
    directory where you have permissions (e.g. your home directory) and
    unpack it::
 
-     xz -cd linux-5.x.tar.xz | tar xvf -
+     xz -cd linaos-5.x.tar.xz | tar xvf -
 
    Replace "X" with the version number of the latest kernel.
 
-   Do NOT use the /usr/src/linux area! This area has a (usually
+   Do NOT use the /usr/src/linaos area! This area has a (usually
    incomplete) set of kernel headers that are used by the library header
    files.  They should match the library, and not get messed up by
    whatever the kernel-du-jour happens to be.
@@ -75,7 +75,7 @@ Installing the kernel source
  - You can also upgrade between 5.x releases by patching.  Patches are
    distributed in the xz format.  To install by patching, get all the
    newer patch files, enter the top level directory of the kernel source
-   (linux-5.x) and execute::
+   (linaos-5.x) and execute::
 
      xz -cd ../patch-5.x.xz | patch -p1
 
@@ -98,7 +98,7 @@ Installing the kernel source
    process.  It determines the current kernel version and applies any
    patches found::
 
-     linux/scripts/patch-kernel linux
+     linaos/scripts/patch-kernel linaos
 
    The first argument in the command above is the location of the
    kernel source.  Patches are applied from the current directory, but
@@ -106,7 +106,7 @@ Installing the kernel source
 
  - Make sure you have no stale .o files and dependencies lying around::
 
-     cd linux
+     cd linaos
      make mrproper
 
    You should now have the sources correctly installed.
@@ -132,12 +132,12 @@ Build directory for the kernel
    place for the output files (including .config).
    Example::
 
-     kernel source code: /usr/src/linux-5.x
+     kernel source code: /usr/src/linaos-5.x
      build directory:    /home/name/build/kernel
 
    To configure and build the kernel, use::
 
-     cd /usr/src/linux-5.x
+     cd /usr/src/linaos-5.x
      make O=/home/name/build/kernel menuconfig
      make O=/home/name/build/kernel
      sudo make O=/home/name/build/kernel modules_install install
@@ -234,7 +234,7 @@ Configuring the kernel
 
      "make tinyconfig"  Configure the tiniest possible kernel.
 
-   You can find more information on using the Linux kernel config tools
+   You can find more information on using the LinaOS kernel config tools
    in Documentation/kbuild/kconfig.rst.
 
  - NOTES on ``make config``:
@@ -300,13 +300,13 @@ Compiling the kernel
    LOCALVERSION can be set in the "General Setup" menu.
 
  - In order to boot your new kernel, you'll need to copy the kernel
-   image (e.g. .../linux/arch/x86/boot/bzImage after compilation)
+   image (e.g. .../linaos/arch/x86/boot/bzImage after compilation)
    to the place where your regular bootable kernel is found.
 
  - Booting a kernel directly from a floppy without the assistance of a
    bootloader such as LILO, is no longer supported.
 
-   If you boot Linux from the hard drive, chances are you use LILO, which
+   If you boot LinaOS from the hard drive, chances are you use LILO, which
    uses the kernel image as specified in the file /etc/lilo.conf.  The
    kernel image file is usually /vmlinuz, /boot/vmlinuz, /bzImage or
    /boot/bzImage.  To use the new kernel, save a copy of the old image
@@ -316,7 +316,7 @@ Compiling the kernel
 
    Reinstalling LILO is usually a matter of running /sbin/lilo.
    You may wish to edit /etc/lilo.conf to specify an entry for your
-   old kernel image (say, /vmlinux.old) in case the new one does not
+   old kernel image (say, /vmlinaos.old) in case the new one does not
    work.  See the LILO docs for more information.
 
    After reinstalling LILO, you should be all set.  Shutdown the system,
@@ -336,7 +336,7 @@ If something goes wrong
    the file MAINTAINERS to see if there is a particular person associated
    with the part of the kernel that you are having trouble with. If there
    isn't anyone listed there, then the second best thing is to mail
-   them to me (torvalds@linux-foundation.org), and possibly to any other
+   them to me (torvalds@linaos-foundation.org), and possibly to any other
    relevant mailing-list or to the newsgroup.
 
  - In all bug-reports, *please* tell what kernel you are talking about,
@@ -367,7 +367,7 @@ If something goes wrong
    as is, otherwise you will have to use the ``ksymoops`` program to make
    sense of the dump (but compiling with CONFIG_KALLSYMS is usually preferred).
    This utility can be downloaded from
-   https://www.kernel.org/pub/linux/utils/kernel/ksymoops/ .
+   https://www.kernel.org/pub/linaos/utils/kernel/ksymoops/ .
    Alternatively, you can do the dump lookup by hand:
 
  - In debugging dumps like the above, it helps enormously if you can
@@ -379,10 +379,10 @@ If something goes wrong
 
    To find out the kernel function name, you'll need to find the system
    binary associated with the kernel that exhibited the symptom.  This is
-   the file 'linux/vmlinux'.  To extract the namelist and match it against
+   the file 'linaos/vmlinaos'.  To extract the namelist and match it against
    the EIP from the kernel crash, do::
 
-     nm vmlinux | sort | less
+     nm vmlinaos | sort | less
 
    This will give you a list of kernel addresses sorted in ascending
    order, from which it is simple to find the function that contains the
@@ -407,7 +407,7 @@ If something goes wrong
    kernel with -g; edit arch/x86/Makefile appropriately, then do a ``make
    clean``. You'll also need to enable CONFIG_PROC_FS (via ``make config``).
 
-   After you've rebooted with the new kernel, do ``gdb vmlinux /proc/kcore``.
+   After you've rebooted with the new kernel, do ``gdb vmlinaos /proc/kcore``.
    You can now use all the usual gdb commands. The command to look up the
    point where your system crashed is ``l *0xXXXXXXXX``. (Replace the XXXes
    with the EIP value.)

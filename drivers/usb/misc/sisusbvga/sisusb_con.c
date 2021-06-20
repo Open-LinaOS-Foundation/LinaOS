@@ -6,7 +6,7 @@
  *
  * Copyright (C) 2005 by Thomas Winischhofer, Vienna, Austria
  *
- * If distributed as part of the Linux kernel, this code is licensed under the
+ * If distributed as part of the LinaOS kernel, this code is licensed under the
  * terms of the GPL v2.
  *
  * Otherwise, the following license terms apply:
@@ -48,24 +48,24 @@
  *
  */
 
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/fs.h>
-#include <linux/usb.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/kd.h>
-#include <linux/init.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
-#include <linux/spinlock.h>
-#include <linux/kref.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
+#include <linaos/mutex.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/fs.h>
+#include <linaos/usb.h>
+#include <linaos/tty.h>
+#include <linaos/console.h>
+#include <linaos/string.h>
+#include <linaos/kd.h>
+#include <linaos/init.h>
+#include <linaos/vt_kern.h>
+#include <linaos/selection.h>
+#include <linaos/spinlock.h>
+#include <linaos/kref.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/vmalloc.h>
 
 #include "sisusb.h"
 #include "sisusb_init.h"

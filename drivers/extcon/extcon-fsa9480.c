@@ -7,19 +7,19 @@
  * Loosely based on old fsa9480 misc-device driver.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/kobject.h>
-#include <linux/extcon-provider.h>
-#include <linux/irqdomain.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/interrupt.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/kobject.h>
+#include <linaos/extcon-provider.h>
+#include <linaos/irqdomain.h>
+#include <linaos/regmap.h>
 
 /* FSA9480 I2C registers */
 #define FSA9480_REG_DEVID               0x01

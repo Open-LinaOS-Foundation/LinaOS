@@ -2,7 +2,7 @@
 /*
  *  Driver for the Integrant ITD1000 "Zero-IF Tuner IC for Direct Broadcast Satellite"
  *
- *  Copyright (c) 2007 Patrick Boettcher <pb@linuxtv.org>
+ *  Copyright (c) 2007 Patrick Boettcher <pb@linaostv.org>
  */
 
 #ifndef ITD1000_PRIV_H

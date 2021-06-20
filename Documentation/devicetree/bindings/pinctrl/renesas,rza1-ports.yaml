@@ -77,7 +77,7 @@ additionalProperties:
         supplied along with the alternate function configuration number.
         The hardware reference manual specifies when a pin function requires
         "software IO driven" mode to be specified. To do so use the generic
-        properties from the <include/linux/pinctrl/pinconf_generic.h> header
+        properties from the <include/linaos/pinctrl/pinconf_generic.h> header
         file to instruct the pin controller to perform the desired pin
         configuration operation.
         The hardware reference manual specifies when a pin has to be configured

@@ -9,7 +9,7 @@
 #ifndef _DW_EDMA_V0_REGS_H
 #define _DW_EDMA_V0_REGS_H
 
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 
 #define EDMA_V0_MAX_NR_CH				8
 #define EDMA_V0_VIEWPORT_MASK				GENMASK(2, 0)

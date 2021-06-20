@@ -6,8 +6,8 @@
 #ifndef CAVIUM_PTP_H
 #define CAVIUM_PTP_H
 
-#include <linux/ptp_clock_kernel.h>
-#include <linux/timecounter.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/timecounter.h>
 
 struct cavium_ptp {
 	struct pci_dev *pdev;

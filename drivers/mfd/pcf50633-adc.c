@@ -12,15 +12,15 @@
  *  you can do only one measurement per read request.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/completion.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/completion.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/adc.h>
+#include <linaos/mfd/pcf50633/core.h>
+#include <linaos/mfd/pcf50633/adc.h>
 
 struct pcf50633_adc_request {
 	int mux;

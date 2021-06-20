@@ -8,11 +8,11 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/radix-tree.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/machine.h>
+#include <linaos/kref.h>
+#include <linaos/mutex.h>
+#include <linaos/radix-tree.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/machine.h>
 
 struct pinctrl_gpio_range;
 

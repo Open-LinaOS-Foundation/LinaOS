@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* DVB USB compliant linux driver for Technotrend DVB USB boxes and clones
+/* DVB USB compliant linaos driver for Technotrend DVB USB boxes and clones
  * (e.g. Pinnacle 400e DVB-S USB2.0).
  *
  * The Pinnacle 400e uses the same protocol as the Technotrend USB1.1 boxes.
@@ -15,7 +15,7 @@
  *
  * Copyright (c) 2002 Holger Waechtler <holger@convergence.de>
  * Copyright (c) 2003 Felix Domke <tmbinc@elitedvb.net>
- * Copyright (C) 2005-6 Patrick Boettcher <pb@linuxtv.org>
+ * Copyright (C) 2005-6 Patrick Boettcher <pb@linaostv.org>
  *
  * see Documentation/driver-api/media/drivers/dvb-usb.rst for more information
  */

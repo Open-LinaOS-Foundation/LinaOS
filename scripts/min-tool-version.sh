@@ -18,7 +18,7 @@ binutils)
 	;;
 gcc)
 	# https://gcc.gnu.org/bugzilla/show_bug.cgi?id=63293
-	# https://lore.kernel.org/r/20210107111841.GN1551@shell.armlinux.org.uk
+	# https://lore.kernel.org/r/20210107111841.GN1551@shell.armlinaos.org.uk
 	if [ "$SRCARCH" = arm64 ]; then
 		echo 5.1.0
 	else

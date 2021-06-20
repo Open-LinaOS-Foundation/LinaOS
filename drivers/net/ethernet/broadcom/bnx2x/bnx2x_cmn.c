@@ -19,15 +19,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/crash_dump.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/interrupt.h>
+#include <linaos/ip.h>
+#include <linaos/crash_dump.h>
 #include <net/tcp.h>
 #include <net/ipv6.h>
 #include <net/ip6_checksum.h>
-#include <linux/prefetch.h>
+#include <linaos/prefetch.h>
 #include "bnx2x_cmn.h"
 #include "bnx2x_init.h"
 #include "bnx2x_sp.h"
@@ -3598,7 +3598,7 @@ static u8 bnx2x_set_pbd_csum(struct bnx2x *bp, struct sk_buff *skb,
 {
 	u8 hlen = (skb_network_header(skb) - skb->data) >> 1;
 
-	/* for now NS flag is not used in Linux */
+	/* for now NS flag is not used in LinaOS */
 	pbd->global_data =
 		cpu_to_le16(hlen |
 			    ((skb->protocol == cpu_to_be16(ETH_P_8021Q)) <<

@@ -2,7 +2,7 @@
 /*******************************************************************************
  * Filename:  target_core_pscsi.c
  *
- * This file contains the generic target mode <-> Linux SCSI subsystem plugin.
+ * This file contains the generic target mode <-> LinaOS SCSI subsystem plugin.
  *
  * (c) Copyright 2003-2013 Datera, Inc.
  *
@@ -10,17 +10,17 @@
  *
  ******************************************************************************/
 
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/timer.h>
-#include <linux/blkdev.h>
-#include <linux/blk_types.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/genhd.h>
-#include <linux/cdrom.h>
-#include <linux/ratelimit.h>
-#include <linux/module.h>
+#include <linaos/string.h>
+#include <linaos/parser.h>
+#include <linaos/timer.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk_types.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/genhd.h>
+#include <linaos/cdrom.h>
+#include <linaos/ratelimit.h>
+#include <linaos/module.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi_device.h>
@@ -460,7 +460,7 @@ static int pscsi_configure_device(struct se_device *dev)
 		}
 		/*
 		 * If no scsi_host_id= was passed for PHV_VIRTUAL_HOST_ID,
-		 * use the original TCM hba ID to reference Linux/SCSI Host No
+		 * use the original TCM hba ID to reference LinaOS/SCSI Host No
 		 * and enable for PHV_LLD_SCSI_HOST_NO mode.
 		 */
 		if (!(pdv->pdv_flags & PDF_HAS_VIRT_HOST_ID)) {
@@ -1103,7 +1103,7 @@ static void __exit pscsi_module_exit(void)
 }
 
 MODULE_DESCRIPTION("TCM PSCSI subsystem plugin");
-MODULE_AUTHOR("nab@Linux-iSCSI.org");
+MODULE_AUTHOR("nab@LinaOS-iSCSI.org");
 MODULE_LICENSE("GPL");
 
 module_init(pscsi_module_init);

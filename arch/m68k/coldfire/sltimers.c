@@ -12,13 +12,13 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/profile.h>
-#include <linux/clocksource.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/profile.h>
+#include <linaos/clocksource.h>
 #include <asm/io.h>
 #include <asm/traps.h>
 #include <asm/machdep.h>

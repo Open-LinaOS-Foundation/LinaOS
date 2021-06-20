@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for linux/drivers/platform/mellanox
+# Makefile for linaos/drivers/platform/mellanox
 # Mellanox Platform-Specific Drivers
 #
 obj-$(CONFIG_MLXBF_BOOTCTL)	+= mlxbf-bootctl.o

@@ -5,9 +5,9 @@
  * Copyright (C) 2019 ARM Ltd.
  */
 
-#include <linux/io.h>
-#include <linux/processor.h>
-#include <linux/types.h>
+#include <linaos/io.h>
+#include <linaos/processor.h>
+#include <linaos/types.h>
 
 #include "common.h"
 

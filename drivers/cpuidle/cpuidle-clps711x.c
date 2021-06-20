@@ -5,11 +5,11 @@
  *  Copyright (C) 2014 Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/cpuidle.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <linaos/cpuidle.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
 
 #define CLPS711X_CPUIDLE_NAME	"clps711x-cpuidle"
 

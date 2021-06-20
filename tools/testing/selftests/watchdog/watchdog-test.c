@@ -12,8 +12,8 @@
 #include <signal.h>
 #include <getopt.h>
 #include <sys/ioctl.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
+#include <linaos/types.h>
+#include <linaos/watchdog.h>
 
 #define DEFAULT_PING_RATE	1
 

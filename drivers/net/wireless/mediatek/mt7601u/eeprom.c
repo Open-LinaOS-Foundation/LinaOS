@@ -4,10 +4,10 @@
  * Copyright (C) 2015 Jakub Kicinski <kubakici@wp.pl>
  */
 
-#include <linux/of.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/etherdevice.h>
+#include <linaos/of.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/etherdevice.h>
 #include <asm/unaligned.h>
 #include "mt7601u.h"
 #include "eeprom.h"

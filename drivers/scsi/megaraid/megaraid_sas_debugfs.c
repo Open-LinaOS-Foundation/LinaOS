@@ -1,5 +1,5 @@
 /*
- *  Linux MegaRAID driver for SAS based RAID controllers
+ *  LinaOS MegaRAID driver for SAS based RAID controllers
  *
  *  Copyright (c) 2003-2018  LSI Corporation.
  *  Copyright (c) 2003-2018  Avago Technologies.
@@ -23,14 +23,14 @@
  *           Sumit Saxena <sumit.saxena@broadcom.com>
  *           Shivasharan S <shivasharan.srikanteshwara@broadcom.com>
  *
- *  Send feedback to: megaraidlinux.pdl@broadcom.com
+ *  Send feedback to: megaraidlinaos.pdl@broadcom.com
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/compat.h>
-#include <linux/irq_poll.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/compat.h>
+#include <linaos/irq_poll.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>
@@ -40,7 +40,7 @@
 #include "megaraid_sas.h"
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 struct dentry *megasas_debugfs_root;
 

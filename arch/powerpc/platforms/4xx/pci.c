@@ -18,12 +18,12 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
 #include <asm/pci-bridge.h>
@@ -2158,7 +2158,7 @@ static void __init ppc4xx_probe_pciex_bridge(struct device_node *np)
 		return;
 	}
 
-	/* Setup the linux hose data structure */
+	/* Setup the linaos hose data structure */
 	ppc4xx_pciex_port_setup_hose(port);
 }
 

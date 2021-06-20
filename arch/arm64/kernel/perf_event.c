@@ -15,14 +15,14 @@
 
 #include <clocksource/arm_arch_timer.h>
 
-#include <linux/acpi.h>
-#include <linux/clocksource.h>
-#include <linux/kvm_host.h>
-#include <linux/of.h>
-#include <linux/perf/arm_pmu.h>
-#include <linux/platform_device.h>
-#include <linux/sched_clock.h>
-#include <linux/smp.h>
+#include <linaos/acpi.h>
+#include <linaos/clocksource.h>
+#include <linaos/kvm_host.h>
+#include <linaos/of.h>
+#include <linaos/perf/arm_pmu.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched_clock.h>
+#include <linaos/smp.h>
 
 /* ARMv8 Cortex-A53 specific event types. */
 #define ARMV8_A53_PERFCTR_PREF_LINEFILL				0xC2

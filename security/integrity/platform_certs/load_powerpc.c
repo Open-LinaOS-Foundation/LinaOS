@@ -5,12 +5,12 @@
  *
  *      - loads keys and hashes stored and controlled by the firmware.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/cred.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 #include <asm/secure_boot.h>
 #include <asm/secvar.h>
 #include "keyring_handler.h"

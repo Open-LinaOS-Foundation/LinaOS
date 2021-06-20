@@ -2,7 +2,7 @@
  *  IDE DMA support (including IDE PCI BM-DMA).
  *
  *  Copyright (C) 1995-1998   Mark Lord
- *  Copyright (C) 1999-2000   Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 1999-2000   Andre Hedrick <andre@linaos-ide.org>
  *  Copyright (C) 2004, 2007  Bartlomiej Zolnierkiewicz
  *
  *  May be copied or modified under the terms of the GNU General Public License
@@ -28,13 +28,13 @@
  * for supplying a Promise UDMA board & WD UDMA drive for this work!
  */
 
-#include <linux/types.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ide.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
+#include <linaos/types.h>
+#include <linaos/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/ide.h>
+#include <linaos/scatterlist.h>
+#include <linaos/dma-mapping.h>
 
 static const struct drive_list_entry drive_whitelist[] = {
 	{ "Micropolis 2112A"	,       NULL		},

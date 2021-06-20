@@ -5,7 +5,7 @@
 #ifndef __SOC_MESON_CANVAS_H
 #define __SOC_MESON_CANVAS_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #define MESON_CANVAS_WRAP_NONE	0x00
 #define MESON_CANVAS_WRAP_X	0x01

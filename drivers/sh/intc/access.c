@@ -8,7 +8,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/io.h>
+#include <linaos/io.h>
 #include "internals.h"
 
 unsigned long intc_phys_to_virt(struct intc_desc_int *d, unsigned long address)

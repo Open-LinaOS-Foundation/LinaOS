@@ -36,8 +36,8 @@
  * of the RS600 GART block).
  */
 
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/pci.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_vblank.h>

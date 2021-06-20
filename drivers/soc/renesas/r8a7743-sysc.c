@@ -5,7 +5,7 @@
  * Copyright (C) 2016 Cogent Embedded Inc.
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include <dt-bindings/power/r8a7743-sysc.h>
 

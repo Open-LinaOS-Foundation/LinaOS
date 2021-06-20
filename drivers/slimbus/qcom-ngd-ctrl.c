@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2017, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2017, The LinaOS Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/slimbus.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/remoteproc/qcom_rproc.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/soc/qcom/qmi.h>
-#include <linux/soc/qcom/pdr.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/slimbus.h>
+#include <linaos/delay.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
+#include <linaos/remoteproc/qcom_rproc.h>
+#include <linaos/of.h>
+#include <linaos/io.h>
+#include <linaos/soc/qcom/qmi.h>
+#include <linaos/soc/qcom/pdr.h>
 #include <net/sock.h>
 #include "slimbus.h"
 

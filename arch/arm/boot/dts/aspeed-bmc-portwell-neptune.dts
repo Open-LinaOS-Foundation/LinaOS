@@ -31,7 +31,7 @@
 		postcode1 {
 			label="BMC_HB";
 			gpios = <&gpio ASPEED_GPIO(H, 1) GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 		postcode2 {
 			label="FAULT";

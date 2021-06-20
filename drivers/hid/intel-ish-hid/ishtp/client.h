@@ -8,7 +8,7 @@
 #ifndef _ISHTP_CLIENT_H_
 #define _ISHTP_CLIENT_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "ishtp-dev.h"
 
 /* Tx and Rx ring size */

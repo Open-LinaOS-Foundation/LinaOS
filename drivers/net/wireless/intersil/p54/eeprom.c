@@ -13,14 +13,14 @@
  *   Copyright (C) 2008 Nokia Corporation and/or its subsidiary(-ies).
  */
 
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
+#include <linaos/firmware.h>
+#include <linaos/etherdevice.h>
+#include <linaos/sort.h>
+#include <linaos/slab.h>
 
 #include <net/mac80211.h>
-#include <linux/crc-ccitt.h>
-#include <linux/export.h>
+#include <linaos/crc-ccitt.h>
+#include <linaos/export.h>
 
 #include "p54.h"
 #include "eeprom.h"

@@ -2,11 +2,11 @@
 #ifndef WB_THROTTLE_H
 #define WB_THROTTLE_H
 
-#include <linux/kernel.h>
-#include <linux/atomic.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/ktime.h>
+#include <linaos/kernel.h>
+#include <linaos/atomic.h>
+#include <linaos/wait.h>
+#include <linaos/timer.h>
+#include <linaos/ktime.h>
 
 #include "blk-stat.h"
 #include "blk-rq-qos.h"

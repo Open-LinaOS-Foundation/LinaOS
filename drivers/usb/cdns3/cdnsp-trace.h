@@ -22,7 +22,7 @@
 #if !defined(__CDNSP_DEV_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __CDNSP_DEV_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "cdnsp-gadget.h"
 #include "cdnsp-debug.h"
 

@@ -6,16 +6,16 @@
 // based on previous work and know-how from:
 // Deepak Saxena <dsaxena@plexity.net>
 
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irqchip.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/bitops.h>
 /* Include that go away with DT transition */
-#include <linux/irqchip/irq-ixp4xx.h>
+#include <linaos/irqchip/irq-ixp4xx.h>
 
 #include <asm/mach-types.h>
 

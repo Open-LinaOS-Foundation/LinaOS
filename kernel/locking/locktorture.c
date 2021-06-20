@@ -4,34 +4,34 @@
  *
  * Copyright (C) IBM Corporation, 2014
  *
- * Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Authors: Paul E. McKenney <paulmck@linaos.ibm.com>
  *          Davidlohr Bueso <dave@stgolabs.net>
  *	Based on kernel/rcu/torture.c.
  */
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/sched/rt.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/rtmutex.h>
-#include <linux/atomic.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/torture.h>
-#include <linux/reboot.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kthread.h>
+#include <linaos/sched/rt.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/rwsem.h>
+#include <linaos/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <uapi/linaos/sched/types.h>
+#include <linaos/rtmutex.h>
+#include <linaos/atomic.h>
+#include <linaos/moduleparam.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/torture.h>
+#include <linaos/reboot.h>
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Paul E. McKenney <paulmck@linux.ibm.com>");
+MODULE_AUTHOR("Paul E. McKenney <paulmck@linaos.ibm.com>");
 
 torture_param(int, nwriters_stress, -1,
 	     "Number of write-locking stress-test threads");
@@ -366,7 +366,7 @@ static struct lock_torture_ops mutex_lock_ops = {
 	.name		= "mutex_lock"
 };
 
-#include <linux/ww_mutex.h>
+#include <linaos/ww_mutex.h>
 /*
  * The torture ww_mutexes should belong to the same lock class as
  * torture_ww_class to avoid lockdep problem. The ww_mutex_init()
@@ -608,7 +608,7 @@ static struct lock_torture_ops rwsem_lock_ops = {
 	.name		= "rwsem_lock"
 };
 
-#include <linux/percpu-rwsem.h>
+#include <linaos/percpu-rwsem.h>
 static struct percpu_rw_semaphore pcpu_rwsem;
 
 static void torture_percpu_rwsem_init(void)

@@ -2,7 +2,7 @@
 /*
  * DTS file for SPEAr320 Evaluation Baord
  *
- * Copyright 2012 Shiraz Hashim <shiraz.linux.kernel@gmail.com>
+ * Copyright 2012 Shiraz Hashim <shiraz.linaos.kernel@gmail.com>
  */
 
 /dts-v1/;
@@ -116,7 +116,7 @@
 				reg = <0x200000 0x40000>;
 			};
 			partition@240000 {
-				label = "linux";
+				label = "linaos";
 				reg = <0x240000 0xC00000>;
 			};
 			partition@E40000 {
@@ -132,7 +132,7 @@
 
 			button@1 {
 				label = "user button 1";
-				linux,code = <0x100>;
+				linaos,code = <0x100>;
 				gpios = <&stmpegpio 3 0x4>;
 				debounce-interval = <20>;
 				wakeup-source;
@@ -140,7 +140,7 @@
 
 			button@2 {
 				label = "user button 2";
-				linux,code = <0x200>;
+				linaos,code = <0x200>;
 				gpios = <&stmpegpio 2 0x4>;
 				debounce-interval = <20>;
 				wakeup-source;
@@ -192,7 +192,7 @@
 					reg = <0x70000 0x10000>;
 				};
 				partition@80000 {
-					label = "linux";
+					label = "linaos";
 					reg = <0x80000 0x310000>;
 				};
 				partition@390000 {

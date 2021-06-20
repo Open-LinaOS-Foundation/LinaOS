@@ -7,8 +7,8 @@
  * Authors: Felipe Balbi <balbi@ti.com>,
  */
 
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/platform_device.h>
 
 #include "core.h"
 

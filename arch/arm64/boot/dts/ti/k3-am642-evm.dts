@@ -98,7 +98,7 @@
 		led-0 {
 			label = "am64-evm:red:heartbeat";
 			gpios = <&exp1 16 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			function = LED_FUNCTION_HEARTBEAT;
 			default-state = "off";
 		};

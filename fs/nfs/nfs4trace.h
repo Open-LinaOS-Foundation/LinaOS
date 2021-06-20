@@ -8,7 +8,7 @@
 #if !defined(_TRACE_NFS4_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_NFS4_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_DEFINE_ENUM(EPERM);
 TRACE_DEFINE_ENUM(ENOENT);
@@ -309,7 +309,7 @@ TRACE_DEFINE_ENUM(NFS4ERR_RESET_TO_PNFS);
 		{ NFS4ERR_WRONG_CRED, "WRONG_CRED" }, \
 		{ NFS4ERR_WRONG_TYPE, "WRONG_TYPE" }, \
 		{ NFS4ERR_XDEV, "XDEV" }, \
-		/* ***** Internal to Linux NFS client ***** */ \
+		/* ***** Internal to LinaOS NFS client ***** */ \
 		{ NFS4ERR_RESET_TO_MDS, "RESET_TO_MDS" }, \
 		{ NFS4ERR_RESET_TO_PNFS, "RESET_TO_PNFS" })
 

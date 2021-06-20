@@ -8,22 +8,22 @@
  * Derived from i386 and Alpha versions.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/ptrace.h>
-#include <linux/tracehook.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/unistd.h>
-#include <linux/wait.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/ptrace.h>
+#include <linaos/tracehook.h>
+#include <linaos/sched.h>
+#include <linaos/signal.h>
+#include <linaos/smp.h>
+#include <linaos/stddef.h>
+#include <linaos/tty.h>
+#include <linaos/binfmts.h>
+#include <linaos/unistd.h>
+#include <linaos/wait.h>
 
 #include <asm/intrinsics.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/rse.h>
 #include <asm/sigcontext.h>
 

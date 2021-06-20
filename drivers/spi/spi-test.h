@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/drivers/spi/spi-test.h
+ *  linaos/drivers/spi/spi-test.h
  *
  *  (c) Martin Sperl <kernel@martin.sperl.org>
  *
  *  spi_test definitions
  */
 
-#include <linux/spi/spi.h>
+#include <linaos/spi/spi.h>
 
 #define SPI_TEST_MAX_TRANSFERS 4
 #define SPI_TEST_MAX_SIZE (32 * PAGE_SIZE)

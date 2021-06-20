@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2013, Sony Mobile Communications AB.
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/slab.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/reboot.h>
-#include <linux/pm.h>
-#include <linux/log2.h>
-#include <linux/qcom_scm.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pinctrl/machine.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/slab.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/reboot.h>
+#include <linaos/pm.h>
+#include <linaos/log2.h>
+#include <linaos/qcom_scm.h>
 
-#include <linux/soc/qcom/irq.h>
+#include <linaos/soc/qcom/irq.h>
 
 #include "../core.h"
 #include "../pinconf.h"
@@ -589,7 +589,7 @@ static void msm_gpio_set(struct gpio_chip *chip, unsigned offset, int value)
 }
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 
 static void msm_gpio_dbg_show_one(struct seq_file *s,
 				  struct pinctrl_dev *pctldev,

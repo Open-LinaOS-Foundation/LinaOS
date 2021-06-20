@@ -6,8 +6,8 @@
 #ifndef _LINUX_XSK_QUEUE_H
 #define _LINUX_XSK_QUEUE_H
 
-#include <linux/types.h>
-#include <linux/if_xdp.h>
+#include <linaos/types.h>
+#include <linaos/if_xdp.h>
 #include <net/xdp_sock.h>
 #include <net/xsk_buff_pool.h>
 

@@ -5,8 +5,8 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <linux/perf_event.h>
-#include <linux/limits.h>
+#include <linaos/perf_event.h>
+#include <linaos/limits.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/prctl.h>

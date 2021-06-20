@@ -4,16 +4,16 @@
  *
  * Author(s): Rolf Adelsberger,
  *	      Heiko Carstens <heiko.carstens@de.ibm.com>
- *	      Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ *	      Michael Holzheu <holzheu@linaos.vnet.ibm.com>
  */
 
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/ftrace.h>
-#include <linux/debug_locks.h>
+#include <linaos/device.h>
+#include <linaos/mm.h>
+#include <linaos/kexec.h>
+#include <linaos/delay.h>
+#include <linaos/reboot.h>
+#include <linaos/ftrace.h>
+#include <linaos/debug_locks.h>
 #include <asm/cio.h>
 #include <asm/setup.h>
 #include <asm/smp.h>

@@ -16,14 +16,14 @@
  *     Prabhakar Lad <prabhakar.lad@ti.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
-#include <linux/module.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/videodev2.h>
+#include <linaos/module.h>
+#include <linaos/v4l2-mediabus.h>
+#include <linaos/of.h>
+#include <linaos/of_graph.h>
 
 #include <media/v4l2-async.h>
 #include <media/v4l2-device.h>
@@ -47,7 +47,7 @@ module_param(debug, bool, 0644);
 MODULE_PARM_DESC(debug, "Debug level (0-1)");
 
 MODULE_AUTHOR("Texas Instruments");
-MODULE_DESCRIPTION("TVP514X linux decoder driver");
+MODULE_DESCRIPTION("TVP514X linaos decoder driver");
 MODULE_LICENSE("GPL");
 
 /* enum tvp514x_std - enum for supported standards */

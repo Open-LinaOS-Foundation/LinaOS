@@ -6,26 +6,26 @@
  * Copyright (C) 2006-2011 Analog Devices, Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/prefetch.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
+#include <linaos/usb.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
 
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>

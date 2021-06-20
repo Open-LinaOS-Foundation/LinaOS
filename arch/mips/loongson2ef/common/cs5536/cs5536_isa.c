@@ -9,7 +9,7 @@
  * Author: Wu Zhangjin, wuzhangjin@gmail.com
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include <cs5536/cs5536.h>
 #include <cs5536/cs5536_pci.h>
 

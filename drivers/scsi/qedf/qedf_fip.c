@@ -3,8 +3,8 @@
  *  QLogic FCoE Offload Driver
  *  Copyright (c) 2016-2018 Cavium Inc.
  */
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
 #include "qedf.h"
 
 extern const struct qed_fcoe_ops *qed_ops;

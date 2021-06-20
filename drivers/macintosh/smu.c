@@ -18,26 +18,26 @@
  *    the userland interface
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/memblock.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/completion.h>
-#include <linux/miscdevice.h>
-#include <linux/delay.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/dmapool.h>
+#include <linaos/memblock.h>
+#include <linaos/vmalloc.h>
+#include <linaos/highmem.h>
+#include <linaos/jiffies.h>
+#include <linaos/interrupt.h>
+#include <linaos/rtc.h>
+#include <linaos/completion.h>
+#include <linaos/miscdevice.h>
+#include <linaos/delay.h>
+#include <linaos/poll.h>
+#include <linaos/mutex.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
@@ -46,7 +46,7 @@
 #include <asm/pmac_feature.h>
 #include <asm/smu.h>
 #include <asm/sections.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define VERSION "0.7"
 #define AUTHOR  "(c) 2005 Benjamin Herrenschmidt, IBM Corp."

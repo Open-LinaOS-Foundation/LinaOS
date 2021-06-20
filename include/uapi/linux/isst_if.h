@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Intel Speed Select Interface: OS to hardware Interface
  * Copyright (c) 2019, Intel Corporation.
  * All rights reserved.
  *
- * Author: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
+ * Author: Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>
  */
 
 #ifndef __ISST_IF_H
 #define __ISST_IF_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * struct isst_if_platform_info - Define platform information
@@ -38,10 +38,10 @@ struct isst_if_platform_info {
 
 /**
  * struct isst_if_cpu_map - CPU mapping between logical and physical CPU
- * @logical_cpu:	Linux logical CPU number
+ * @logical_cpu:	LinaOS logical CPU number
  * @physical_cpu:	PUNIT CPU number
  *
- * Used to convert from Linux logical CPU to PUNIT CPU numbering scheme.
+ * Used to convert from LinaOS logical CPU to PUNIT CPU numbering scheme.
  * The PUNIT CPU number is different than APIC ID based CPU numbering.
  */
 struct isst_if_cpu_map {

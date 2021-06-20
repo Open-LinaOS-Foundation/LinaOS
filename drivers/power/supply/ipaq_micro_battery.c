@@ -7,12 +7,12 @@
  * Author : Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/ipaq-micro.h>
-#include <linux/power_supply.h>
-#include <linux/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/ipaq-micro.h>
+#include <linaos/power_supply.h>
+#include <linaos/workqueue.h>
 
 #define BATT_PERIOD 100000 /* 100 seconds in milliseconds */
 

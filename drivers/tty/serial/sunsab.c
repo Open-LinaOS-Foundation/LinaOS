@@ -16,32 +16,32 @@
  *   David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/circ_buf.h>
-#include <linux/serial.h>
-#include <linux/sysrq.h>
-#include <linux/console.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/major.h>
+#include <linaos/string.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
+#include <linaos/circ_buf.h>
+#include <linaos/serial.h>
+#include <linaos/sysrq.h>
+#include <linaos/console.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/of_device.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/prom.h>
 #include <asm/setup.h>
 
-#include <linux/serial_core.h>
-#include <linux/sunserialcore.h>
+#include <linaos/serial_core.h>
+#include <linaos/sunserialcore.h>
 
 #include "sunsab.h"
 

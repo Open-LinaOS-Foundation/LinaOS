@@ -4,9 +4,9 @@
 #ifndef __NFP_ASM_H__
 #define __NFP_ASM_H__ 1
 
-#include <linux/bitfield.h>
-#include <linux/bug.h>
-#include <linux/types.h>
+#include <linaos/bitfield.h>
+#include <linaos/bug.h>
+#include <linaos/types.h>
 
 #define REG_NONE	0
 #define REG_WIDTH	4

@@ -9,11 +9,11 @@
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/init.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_clock.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <linaos/init.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_clock.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
 
 static struct dev_pm_domain davinci_pm_domain = {
 	.ops = {

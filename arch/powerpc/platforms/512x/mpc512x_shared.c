@@ -8,13 +8,13 @@
  * MPC512x Shared code
  */
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of_platform.h>
-#include <linux/fsl-diu-fb.h>
-#include <linux/memblock.h>
+#include <linaos/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/fsl-diu-fb.h>
+#include <linaos/memblock.h>
 #include <sysdev/fsl_soc.h>
 
 #include <asm/cacheflush.h>

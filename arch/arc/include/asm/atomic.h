@@ -8,8 +8,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
 #include <asm/cmpxchg.h>
 #include <asm/barrier.h>
 #include <asm/smp.h>

@@ -56,7 +56,7 @@ be dereferenced to `struct cn_msg *`::
 Connector interfaces
 ====================
 
- .. kernel-doc:: include/linux/connector.h
+ .. kernel-doc:: include/linaos/connector.h
 
  Note:
    When registering new callback user, connector core assigns

@@ -8,12 +8,12 @@
  * XXX This code should eventually be moved to a CM driver.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/bug.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/bug.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 
 #include "cm2xxx.h"
 #include "cm3xxx.h"

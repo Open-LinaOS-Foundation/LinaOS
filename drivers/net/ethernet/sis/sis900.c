@@ -1,4 +1,4 @@
-/* sis900.c: A SiS 900/7016 PCI Fast Ethernet driver for Linux.
+/* sis900.c: A SiS 900/7016 PCI Fast Ethernet driver for LinaOS.
    Copyright 1999 Silicon Integrated System Corporation
    Revision:	1.08.10 Apr. 2 2006
 
@@ -49,32 +49,32 @@
    Rev 1.05 Aug. 7 1999 Jim Huang (cmhuang@sis.com.tw) Initial release
 */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/mii.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/init.h>
+#include <linaos/mii.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/delay.h>
+#include <linaos/ethtool.h>
+#include <linaos/crc32.h>
+#include <linaos/bitops.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/processor.h>      /* Processor type for cache alignment. */
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>	/* User space memory access functions */
+#include <linaos/uaccess.h>	/* User space memory access functions */
 
 #include "sis900.h"
 
@@ -2264,7 +2264,7 @@ static int sis900_set_config(struct net_device *dev, struct ifmap *map)
 		 * like a definition or standard for the values of that field.
 		 * I think the meaning of those values is device specific. But
 		 * since I would like to change the media type via the ifconfig
-		 * command I use the definition from linux/netdevice.h
+		 * command I use the definition from linaos/netdevice.h
 		 * (which seems to be different from the ifport(pcmcia) definition) */
 		switch(map->port){
 		case IF_PORT_UNKNOWN: /* use auto here */

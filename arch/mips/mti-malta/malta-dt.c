@@ -4,10 +4,10 @@
  * Author: Paul Burton <paul.burton@mips.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
+#include <linaos/clk-provider.h>
+#include <linaos/init.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
 
 void __init device_tree_init(void)
 {

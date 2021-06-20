@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/ia64/kernel/time.c
+ * linaos/arch/ia64/kernel/time.c
  *
  * Copyright (C) 1998-2003 Hewlett-Packard Co
  *	Stephane Eranian <eranian@hpl.hp.com>
  *	David Mosberger <davidm@hpl.hp.com>
  * Copyright (C) 1999 Don Dugger <don.dugger@intel.com>
- * Copyright (C) 1999-2000 VA Linux Systems
- * Copyright (C) 1999-2000 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999-2000 VA LinaOS Systems
+ * Copyright (C) 1999-2000 Walt Drummond <drummond@valinaos.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/profile.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/nmi.h>
-#include <linux/interrupt.h>
-#include <linux/efi.h>
-#include <linux/timex.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/platform_device.h>
-#include <linux/sched/cputime.h>
+#include <linaos/cpu.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/profile.h>
+#include <linaos/sched.h>
+#include <linaos/time.h>
+#include <linaos/nmi.h>
+#include <linaos/interrupt.h>
+#include <linaos/efi.h>
+#include <linaos/timex.h>
+#include <linaos/timekeeper_internal.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched/cputime.h>
 
 #include <asm/delay.h>
 #include <asm/efi.h>
@@ -61,7 +61,7 @@ static struct clocksource *itc_clocksource;
 
 #ifdef CONFIG_VIRT_CPU_ACCOUNTING_NATIVE
 
-#include <linux/kernel_stat.h>
+#include <linaos/kernel_stat.h>
 
 extern u64 cycle_to_nsec(u64 cyc);
 

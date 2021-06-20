@@ -9,7 +9,7 @@
  *	    Kurt Kanzenbach <kurt@linutronix.de>
  */
 
-#include <linux/ptp_clock_kernel.h>
+#include <linaos/ptp_clock_kernel.h>
 #include "hellcreek.h"
 #include "hellcreek_ptp.h"
 #include "hellcreek_hwtstamp.h"

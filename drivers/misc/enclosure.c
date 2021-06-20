@@ -9,14 +9,14 @@
 **
 **-----------------------------------------------------------------------------
 */
-#include <linux/device.h>
-#include <linux/enclosure.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/enclosure.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
 
 static LIST_HEAD(container_list);
 static DEFINE_MUTEX(container_list_lock);

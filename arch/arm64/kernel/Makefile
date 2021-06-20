@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux kernel.
+# Makefile for the linaos kernel.
 #
 
 CFLAGS_armv8_deprecated.o := -I$(src)
@@ -69,8 +69,8 @@ obj-$(CONFIG_COMPAT_VDSO)		+= vdso32-wrap.o
 
 obj-y					+= probes/
 head-y					:= head.o
-extra-y					+= $(head-y) vmlinux.lds
+extra-y					+= $(head-y) vmlinaos.lds
 
 ifeq ($(CONFIG_DEBUG_EFI),y)
-AFLAGS_head.o += -DVMLINUX_PATH="\"$(realpath $(objtree)/vmlinux)\""
+AFLAGS_head.o += -DVMLINUX_PATH="\"$(realpath $(objtree)/vmlinaos)\""
 endif

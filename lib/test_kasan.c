@@ -5,20 +5,20 @@
  * Author: Andrey Ryabinin <a.ryabinin@samsung.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/vmalloc.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/kasan.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/module.h>
+#include <linaos/printk.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/page.h>
 

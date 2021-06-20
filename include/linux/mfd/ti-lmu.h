@@ -10,10 +10,10 @@
 #ifndef __MFD_TI_LMU_H__
 #define __MFD_TI_LMU_H__
 
-#include <linux/gpio.h>
-#include <linux/notifier.h>
-#include <linux/regmap.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/gpio.h>
+#include <linaos/notifier.h>
+#include <linaos/regmap.h>
+#include <linaos/gpio/consumer.h>
 
 /* Notifier event */
 #define LMU_EVENT_MONITOR_DONE		0x01

@@ -4,8 +4,8 @@
  * Copyright 2020 NXP
  *
  */
-#include <linux/kernel.h>
-#include <linux/fsl/mc.h>
+#include <linaos/kernel.h>
+#include <linaos/fsl/mc.h>
 
 #include "fsl-mc-private.h"
 

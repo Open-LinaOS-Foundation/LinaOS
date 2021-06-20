@@ -18,9 +18,9 @@
  * Thus some part of the code might be dependent on PT3 specific config.
  */
 
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/dvb/frontend.h>
+#include <linaos/kernel.h>
+#include <linaos/math64.h>
+#include <linaos/dvb/frontend.h>
 #include <media/dvb_math.h>
 #include "tc90522.h"
 

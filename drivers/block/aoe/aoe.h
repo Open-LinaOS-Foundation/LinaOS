@@ -1,5 +1,5 @@
 /* Copyright (c) 2013 Coraid, Inc.  See COPYING for GPL terms. */
-#include <linux/blk-mq.h>
+#include <linaos/blk-mq.h>
 
 #define VERSION "85"
 #define AOE_MAJOR 152

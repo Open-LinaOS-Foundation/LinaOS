@@ -5,16 +5,16 @@
  * USB Type-C Port Controller Interface.
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/usb/pd.h>
-#include <linux/usb/tcpm.h>
-#include <linux/usb/typec.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/usb/pd.h>
+#include <linaos/usb/tcpm.h>
+#include <linaos/usb/typec.h>
 
 #include "tcpci.h"
 

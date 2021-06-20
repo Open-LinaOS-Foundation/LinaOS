@@ -3,7 +3,7 @@
 #define _ASM_SH_SUSPEND_H
 
 #ifndef __ASSEMBLY__
-#include <linux/notifier.h>
+#include <linaos/notifier.h>
 
 #include <asm/ptrace.h>
 

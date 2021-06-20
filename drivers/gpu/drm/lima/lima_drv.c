@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0 OR MIT
 /* Copyright 2017-2019 Qiang Yu <yuq825@gmail.com> */
 
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
 #include <drm/drm_ioctl.h>
 #include <drm/drm_drv.h>
 #include <drm/drm_prime.h>

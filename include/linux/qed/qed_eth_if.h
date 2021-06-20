@@ -7,11 +7,11 @@
 #ifndef _QED_ETH_IF_H
 #define _QED_ETH_IF_H
 
-#include <linux/list.h>
-#include <linux/if_link.h>
-#include <linux/qed/eth_common.h>
-#include <linux/qed/qed_if.h>
-#include <linux/qed/qed_iov_if.h>
+#include <linaos/list.h>
+#include <linaos/if_link.h>
+#include <linaos/qed/eth_common.h>
+#include <linaos/qed/qed_if.h>
+#include <linaos/qed/qed_iov_if.h>
 
 /* 64 max queues * (1 rx + 4 tx-cos + 1 xdp) */
 #define QED_MIN_L2_CONS (2 + NUM_PHYS_TCS_4PORT_K2)

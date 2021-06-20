@@ -7,7 +7,7 @@
 
 #ifndef __KSZ8XXX_H
 #define __KSZ8XXX_H
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 enum ksz_regs {
 	REG_IND_CTRL_0,

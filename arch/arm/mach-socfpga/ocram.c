@@ -2,12 +2,12 @@
 /*
  * Copyright Altera Corporation (C) 2016. All rights reserved.
  */
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/genalloc.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/genalloc.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
 
 #include "core.h"
 

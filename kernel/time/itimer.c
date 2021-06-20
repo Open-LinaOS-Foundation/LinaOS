@@ -5,18 +5,18 @@
 
 /* These are all the functions necessary to implement itimers */
 
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/syscalls.h>
-#include <linux/time.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/cputime.h>
-#include <linux/posix-timers.h>
-#include <linux/hrtimer.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/syscalls.h>
+#include <linaos/time.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/posix-timers.h>
+#include <linaos/hrtimer.h>
 #include <trace/events/timer.h>
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /**
  * itimer_get_remtime - get remaining time for the timer

@@ -4,7 +4,7 @@
  */
 /*********************channel spec common functions*********************/
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include <brcmu_utils.h>
 #include <brcmu_wifi.h>

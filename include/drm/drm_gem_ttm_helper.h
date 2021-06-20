@@ -3,7 +3,7 @@
 #ifndef DRM_GEM_TTM_HELPER_H
 #define DRM_GEM_TTM_HELPER_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include <drm/drm_gem.h>
 #include <drm/drm_device.h>

@@ -4,20 +4,20 @@
  * Copyright (C) 2010 Alessandro Rubini
  * Copyright (C) 2010 Linus Walleij for ST-Ericsson
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/sched_clock.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/clockchips.h>
+#include <linaos/clocksource.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/clk.h>
+#include <linaos/jiffies.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/sched_clock.h>
 #include <asm/mach/time.h>
 
 /*

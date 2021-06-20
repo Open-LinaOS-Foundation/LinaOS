@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/console/tileblit.c -- Tile Blitting Operation
+ *  linaos/drivers/video/console/tileblit.c -- Tile Blitting Operation
  *
  *      Copyright (C) 2004 Antonino Daplas <adaplas @pol.net>
  *
@@ -8,11 +8,11 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/vt_kern.h>
-#include <linux/console.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/fb.h>
+#include <linaos/vt_kern.h>
+#include <linaos/console.h>
 #include <asm/types.h>
 #include "fbcon.h"
 

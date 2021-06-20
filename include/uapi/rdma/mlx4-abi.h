@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR Linux-OpenIB) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR LinaOS-OpenIB) */
 /*
  * Copyright (c) 2007 Cisco Systems, Inc. All rights reserved.
  * Copyright (c) 2007, 2008 Mellanox Technologies. All rights reserved.
@@ -35,7 +35,7 @@
 #ifndef MLX4_ABI_USER_H
 #define MLX4_ABI_USER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Increment this value if any changes that break userspace ABI

@@ -5,7 +5,7 @@
 #ifndef __ASM_SH_HP6XX_H
 #define __ASM_SH_HP6XX_H
 
-#include <linux/sh_intc.h>
+#include <linaos/sh_intc.h>
 
 #define HP680_BTN_IRQ		evt2irq(0x600)	/* IRQ0_IRQ */
 #define HP680_TS_IRQ		evt2irq(0x660)	/* IRQ3_IRQ */

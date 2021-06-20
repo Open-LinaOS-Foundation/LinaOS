@@ -11,7 +11,7 @@
 #ifndef __FUSB300_UDC_H__
 #define __FUSB300_UDC_H__
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #define FUSB300_OFFSET_GCR		0x00
 #define FUSB300_OFFSET_GTM		0x04

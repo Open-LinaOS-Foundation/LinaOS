@@ -5,8 +5,8 @@
 
 #include <asm/iomap.h>
 #include <asm/memtype.h>
-#include <linux/export.h>
-#include <linux/highmem.h>
+#include <linaos/export.h>
+#include <linaos/highmem.h>
 
 static int is_io_mapping_possible(resource_size_t base, unsigned long size)
 {

@@ -9,8 +9,8 @@
 #ifndef __INCLUDE_LINUX_TI_SCI_INTA_MSI_H
 #define __INCLUDE_LINUX_TI_SCI_INTA_MSI_H
 
-#include <linux/msi.h>
-#include <linux/soc/ti/ti_sci_protocol.h>
+#include <linaos/msi.h>
+#include <linaos/soc/ti/ti_sci_protocol.h>
 
 struct irq_domain
 *ti_sci_inta_msi_create_irq_domain(struct fwnode_handle *fwnode,

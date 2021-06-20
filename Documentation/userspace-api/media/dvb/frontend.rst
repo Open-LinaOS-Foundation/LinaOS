@@ -29,7 +29,7 @@ The Digital TV frontend controls several sub-devices including:
 
 The frontend can be accessed through ``/dev/dvb/adapter?/frontend?``.
 Data types and ioctl definitions can be accessed by including
-``linux/dvb/frontend.h`` in your application.
+``linaos/dvb/frontend.h`` in your application.
 
 .. note::
 

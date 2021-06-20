@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/board-osk.c
+ * linaos/arch/arm/mach-omap1/board-osk.c
  *
  * Board specific init for OMAP5912 OSK
  *
@@ -25,23 +25,23 @@
  * with this program; if not, write  to the Free Software Foundation, Inc.,
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/smc91x.h>
-#include <linux/omapfb.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mfd/tps65010.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/platform_data/omap1_bl.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
+#include <linaos/smc91x.h>
+#include <linaos/omapfb.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/mfd/tps65010.h>
+#include <linaos/platform_data/gpio-omap.h>
+#include <linaos/platform_data/omap1_bl.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -320,12 +320,12 @@ static const struct omap_lcd_config osk_lcd_config __initconst = {
 
 #ifdef	CONFIG_OMAP_OSK_MISTRAL
 
-#include <linux/input.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
+#include <linaos/input.h>
+#include <linaos/property.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/ads7846.h>
 
-#include <linux/platform_data/keypad-omap.h>
+#include <linaos/platform_data/keypad-omap.h>
 
 static const struct property_entry mistral_at24_properties[] = {
 	PROPERTY_ENTRY_U32("pagesize", 16),

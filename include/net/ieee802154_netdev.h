@@ -16,9 +16,9 @@
 #define IEEE802154_NETDEVICE_H
 
 #include <net/af_ieee802154.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ieee802154.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/ieee802154.h>
 
 #include <net/cfg802154.h>
 

@@ -7,7 +7,7 @@
  * John Heffner <jheffner@psc.edu>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <net/tcp.h>
 
 /* From AIMD tables from RFC 3649 appendix B,

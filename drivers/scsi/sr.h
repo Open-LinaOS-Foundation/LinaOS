@@ -18,9 +18,9 @@
 #ifndef _SR_H
 #define _SR_H
 
-#include <linux/genhd.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
+#include <linaos/genhd.h>
+#include <linaos/kref.h>
+#include <linaos/mutex.h>
 
 #define MAX_RETRIES	3
 #define SR_TIMEOUT	(30 * HZ)

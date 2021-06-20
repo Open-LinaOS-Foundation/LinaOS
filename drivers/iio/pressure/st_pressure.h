@@ -11,8 +11,8 @@
 #ifndef ST_PRESS_H
 #define ST_PRESS_H
 
-#include <linux/types.h>
-#include <linux/iio/common/st_sensors.h>
+#include <linaos/types.h>
+#include <linaos/iio/common/st_sensors.h>
 
 enum st_press_type {
 	LPS001WP,

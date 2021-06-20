@@ -31,10 +31,10 @@
  * SOFTWARE.
  */
 
-#include <linux/mlx4/cq.h>
-#include <linux/mlx4/qp.h>
-#include <linux/mlx4/srq.h>
-#include <linux/slab.h>
+#include <linaos/mlx4/cq.h>
+#include <linaos/mlx4/qp.h>
+#include <linaos/mlx4/srq.h>
+#include <linaos/slab.h>
 
 #include "mlx4_ib.h"
 #include <rdma/mlx4-abi.h>

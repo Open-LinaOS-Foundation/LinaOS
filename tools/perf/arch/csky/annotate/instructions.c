@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2019 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 static struct ins_ops *csky__associate_ins_ops(struct arch *arch,
 					       const char *name)

@@ -1,4 +1,4 @@
-#include <linux/efi.h>
+#include <linaos/efi.h>
 #include <asm/e820/types.h>
 #include <asm/processor.h>
 #include <asm/efi.h>

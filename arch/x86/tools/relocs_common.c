@@ -13,7 +13,7 @@ void die(char *fmt, ...)
 static void usage(void)
 {
 	die("relocs [--abs-syms|--abs-relocs|--reloc-info|--text|--realmode]" \
-	    " vmlinux\n");
+	    " vmlinaos\n");
 }
 
 int main(int argc, char **argv)

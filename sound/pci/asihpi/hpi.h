@@ -20,7 +20,7 @@
 #ifndef _HPI_H_
 #define _HPI_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #define HPI_BUILD_KERNEL_MODE
 
 /******************************************************************************/

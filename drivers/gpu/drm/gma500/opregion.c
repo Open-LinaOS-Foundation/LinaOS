@@ -21,7 +21,7 @@
  * DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 #include "psb_drv.h"
 #include "psb_intel_reg.h"
 
@@ -236,7 +236,7 @@ static int psb_intel_opregion_video_event(struct notifier_block *nb,
 {
 	/* The only video events relevant to opregion are 0x80. These indicate
 	   either a docking event, lid switch or display switch request. In
-	   Linux, these are handled by the dock, button and video drivers.
+	   LinaOS, these are handled by the dock, button and video drivers.
 	   We might want to fix the video driver to be opregion-aware in
 	   future, but right now we just indicate to the firmware that the
 	   request has been handled */

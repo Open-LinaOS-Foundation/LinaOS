@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*- --------------------------------------------------------- *
+/* -*- linaos-c -*- --------------------------------------------------------- *
  *
- * linux/fs/devpts/inode.c
+ * linaos/fs/devpts/inode.c
  *
  *  Copyright 1998-2004 H. Peter Anvin -- All Rights Reserved
  *
@@ -9,21 +9,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/tty.h>
-#include <linux/mutex.h>
-#include <linux/magic.h>
-#include <linux/idr.h>
-#include <linux/devpts_fs.h>
-#include <linux/parser.h>
-#include <linux/fsnotify.h>
-#include <linux/seq_file.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/namei.h>
+#include <linaos/slab.h>
+#include <linaos/mount.h>
+#include <linaos/tty.h>
+#include <linaos/mutex.h>
+#include <linaos/magic.h>
+#include <linaos/idr.h>
+#include <linaos/devpts_fs.h>
+#include <linaos/parser.h>
+#include <linaos/fsnotify.h>
+#include <linaos/seq_file.h>
 
 #define DEVPTS_DEFAULT_MODE 0600
 /*

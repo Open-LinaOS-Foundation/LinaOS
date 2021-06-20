@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _VM_BASIC_TYPES_H_
 #define _VM_BASIC_TYPES_H_
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 typedef u32 uint32;
 typedef s32 int32;

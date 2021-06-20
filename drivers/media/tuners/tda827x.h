@@ -11,7 +11,7 @@
 #ifndef __DVB_TDA827X_H__
 #define __DVB_TDA827X_H__
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/dvb_frontend.h>
 #include "tda8290.h"
 

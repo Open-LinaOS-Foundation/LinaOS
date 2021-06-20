@@ -3,14 +3,14 @@
  * Copyright (c) 2001-2003 Patrick Mochel <mochel@osdl.org>
  * Copyright (c) 2004-2009 Greg Kroah-Hartman <gregkh@suse.de>
  * Copyright (c) 2008-2012 Novell Inc.
- * Copyright (c) 2012-2019 Greg Kroah-Hartman <gregkh@linuxfoundation.org>
- * Copyright (c) 2012-2019 Linux Foundation
+ * Copyright (c) 2012-2019 Greg Kroah-Hartman <gregkh@linaosfoundation.org>
+ * Copyright (c) 2012-2019 LinaOS Foundation
  *
  * Core driver model functions and structures that should not be
  * shared outside of the drivers/base/ directory.
  *
  */
-#include <linux/notifier.h>
+#include <linaos/notifier.h>
 
 /**
  * struct subsys_private - structure to hold the private to the driver core portions of the bus_type/class structure.

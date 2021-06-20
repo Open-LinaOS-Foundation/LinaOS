@@ -25,7 +25,7 @@
 #ifndef WMI_H
 #define WMI_H
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 
 #include "htc.h"
 
@@ -58,7 +58,7 @@
  * solution come up with our own version. The idea is from fs/ntfs/types.h.
  *
  * Use a_ prefix so that it doesn't conflict if we get proper support to
- * linux/types.h.
+ * linaos/types.h.
  */
 typedef __s16 __bitwise a_sle16;
 typedef __s32 __bitwise a_sle32;

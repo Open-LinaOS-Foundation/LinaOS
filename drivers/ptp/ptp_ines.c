@@ -5,20 +5,20 @@
 
 #define pr_fmt(fmt) "InES_PTP: " fmt
 
-#include <linux/ethtool.h>
-#include <linux/export.h>
-#include <linux/if_vlan.h>
-#include <linux/mii_timestamper.h>
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/ptp_classify.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/stddef.h>
+#include <linaos/ethtool.h>
+#include <linaos/export.h>
+#include <linaos/if_vlan.h>
+#include <linaos/mii_timestamper.h>
+#include <linaos/module.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/stddef.h>
 
 MODULE_DESCRIPTION("Driver for the ZHAW InES PTP time stamping IP core");
 MODULE_AUTHOR("Richard Cochran <richardcochran@gmail.com>");

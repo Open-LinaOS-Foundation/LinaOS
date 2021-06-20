@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/sort.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/sort.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
 /* a simple boot-time regression test */
 

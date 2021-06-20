@@ -140,7 +140,7 @@ max_reason
 ~~~~~~~~~~
 
 Limiting which kinds of kmsg dumps are stored can be controlled via
-the ``max_reason`` value, as defined in include/linux/kmsg_dump.h's
+the ``max_reason`` value, as defined in include/linaos/kmsg_dump.h's
 ``enum kmsg_dump_reason``. For example, to store both Oopses and Panics,
 ``max_reason`` should be set to 2 (KMSG_DUMP_OOPS), to store only Panics
 ``max_reason`` should be set to 1 (KMSG_DUMP_PANIC). Setting this to 0
@@ -206,14 +206,14 @@ The following points require special attention for panic read/write APIs:
 #. Just use CPU to transfer.
    Do not use DMA to transfer unless you are sure that DMA will not keep lock.
 #. Control registers directly.
-   Please control registers directly rather than use Linux kernel resources.
+   Please control registers directly rather than use LinaOS kernel resources.
    Do I/O map while initializing rather than wait until a panic occurs.
 #. Reset your block device and controller if necessary.
    If you are not sure of the state of your block device and controller when
    a panic occurs, you are safe to stop and reset them.
 
 pstore/blk supports psblk_blkdev_info(), which is defined in
-*linux/pstore_blk.h*, to get information of using block device, such as the
+*linaos/pstore_blk.h*, to get information of using block device, such as the
 device number, sector count and start sector of the whole disk.
 
 pstore block internals
@@ -224,11 +224,11 @@ For developer reference, here are all the important structures and APIs:
 .. kernel-doc:: fs/pstore/zone.c
    :internal:
 
-.. kernel-doc:: include/linux/pstore_zone.h
+.. kernel-doc:: include/linaos/pstore_zone.h
    :internal:
 
 .. kernel-doc:: fs/pstore/blk.c
    :internal:
 
-.. kernel-doc:: include/linux/pstore_blk.h
+.. kernel-doc:: include/linaos/pstore_blk.h
    :internal:

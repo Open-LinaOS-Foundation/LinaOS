@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hfsplus/ioctl.c
+ *  linaos/fs/hfsplus/ioctl.c
  *
  * Copyright (C) 2003
  * Ethan Benson <erbenson@alaska.net>
- * partially derived from linux/fs/ext2/ioctl.c
+ * partially derived from linaos/fs/ext2/ioctl.c
  * Copyright (C) 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
  * Laboratoire MASI - Institut Blaise Pascal
@@ -13,11 +13,11 @@
  * hfsplus ioctls
  */
 
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <linaos/capability.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/sched.h>
+#include <linaos/uaccess.h>
 #include "hfsplus_fs.h"
 
 /*

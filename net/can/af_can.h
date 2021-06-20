@@ -40,11 +40,11 @@
 #ifndef AF_CAN_H
 #define AF_CAN_H
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/can.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/list.h>
+#include <linaos/rcupdate.h>
+#include <linaos/can.h>
 
 /* af_can rx dispatcher structures */
 

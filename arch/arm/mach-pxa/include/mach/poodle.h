@@ -2,7 +2,7 @@
  * arch/arm/mach-pxa/include/mach/poodle.h
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See linaos/COPYING for more information.
  *
  * Based on:
  *   arch/arm/mach-sa1100/include/mach/collie.h

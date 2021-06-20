@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI__LINUX_GENERIC_NETLINK_H
 #define _UAPI__LINUX_GENERIC_NETLINK_H
 
-#include <linux/types.h>
-#include <linux/netlink.h>
+#include <linaos/types.h>
+#include <linaos/netlink.h>
 
 #define GENL_NAMSIZ	16	/* length of family name */
 

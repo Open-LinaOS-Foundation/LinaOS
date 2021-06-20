@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter.h>
-#include <linux/seq_file.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/proc_fs.h>
+#include <linaos/skbuff.h>
+#include <linaos/netfilter.h>
+#include <linaos/seq_file.h>
 #include <net/protocol.h>
 #include <net/netfilter/nf_log.h>
 

@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/rdma_cm.h>
 #include <rdma/rw.h>

@@ -12,12 +12,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sysfs.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/jiffies.h>
+#include <linaos/sysfs.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/jiffies.h>
 
 #include "thermal_core.h"
 

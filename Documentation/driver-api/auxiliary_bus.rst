@@ -13,7 +13,7 @@ intersection of functionality (e.g. NICs + RDMA), or a driver may want to
 export an interface for another subsystem to drive (e.g. SIOV Physical Function
 export Virtual Function management).  A split of the functinoality into child-
 devices representing sub-domains of functionality makes it possible to
-compartmentalize, layer, and distribute domain-specific concerns via a Linux
+compartmentalize, layer, and distribute domain-specific concerns via a LinaOS
 device-driver model.
 
 An example for this kind of requirement is the audio subsystem where a single

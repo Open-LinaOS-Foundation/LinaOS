@@ -4,7 +4,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* H8/300 internal I/O functions */
 

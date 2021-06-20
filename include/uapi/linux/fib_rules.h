@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __LINUX_FIB_RULES_H
 #define __LINUX_FIB_RULES_H
 
-#include <linux/types.h>
-#include <linux/rtnetlink.h>
+#include <linaos/types.h>
+#include <linaos/rtnetlink.h>
 
 /* rule is permanent, and cannot be deleted */
 #define FIB_RULE_PERMANENT	0x00000001

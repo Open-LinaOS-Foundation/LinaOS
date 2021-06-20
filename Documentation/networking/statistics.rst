@@ -7,9 +7,9 @@ Interface statistics
 Overview
 ========
 
-This document is a guide to Linux network interface statistics.
+This document is a guide to LinaOS network interface statistics.
 
-There are three main sources of interface statistics in Linux:
+There are three main sources of interface statistics in LinaOS:
 
  - standard interface statistics based on
    :c:type:`struct rtnl_link_stats64 <rtnl_link_stats64>`;
@@ -60,7 +60,7 @@ may not pertain exclusively to the packets destined to
 the local host interface. In other words the events may
 be counted at the network port (MAC/PHY blocks) without separation
 for different host side (PCIe) devices. Such ambiguity must not
-be present when internal switch is managed by Linux (so called
+be present when internal switch is managed by LinaOS (so called
 switchdev mode for NICs).
 
 Standard ethtool statistics can be accessed via the interfaces used
@@ -180,7 +180,7 @@ Some drivers expose extra statistics via `debugfs`.
 struct rtnl_link_stats64
 ========================
 
-.. kernel-doc:: include/uapi/linux/if_link.h
+.. kernel-doc:: include/uapi/linaos/if_link.h
     :identifiers: rtnl_link_stats64
 
 Notes for driver authors

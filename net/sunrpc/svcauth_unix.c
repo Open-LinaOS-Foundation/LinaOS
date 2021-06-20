@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/err.h>
-#include <linux/seq_file.h>
-#include <linux/hash.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/module.h>
+#include <linaos/sunrpc/types.h>
+#include <linaos/sunrpc/xdr.h>
+#include <linaos/sunrpc/svcsock.h>
+#include <linaos/sunrpc/svcauth.h>
+#include <linaos/sunrpc/gss_api.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/err.h>
+#include <linaos/seq_file.h>
+#include <linaos/hash.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
 #include <net/ipv6.h>
-#include <linux/kernel.h>
-#include <linux/user_namespace.h>
+#include <linaos/kernel.h>
+#include <linaos/user_namespace.h>
 #define RPCDBG_FACILITY	RPCDBG_AUTH
 
 

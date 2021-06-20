@@ -11,15 +11,15 @@
 #define _INET_HASHTABLES_H
 
 
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linaos/interrupt.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/socket.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
 
 #include <net/inet_connection_sock.h>
 #include <net/inet_sock.h>
@@ -28,7 +28,7 @@
 #include <net/tcp_states.h>
 #include <net/netns/hash.h>
 
-#include <linux/refcount.h>
+#include <linaos/refcount.h>
 #include <asm/byteorder.h>
 
 /* This is for all connections with a full identity, no wildcards.

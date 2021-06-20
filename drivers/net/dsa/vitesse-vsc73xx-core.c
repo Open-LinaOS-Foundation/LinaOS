@@ -14,18 +14,18 @@
  * Includes portions of code from the firmware uploader by:
  * Copyright (C) 2009 Gabor Juhos <juhosg@openwrt.org>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/bitops.h>
-#include <linux/if_bridge.h>
-#include <linux/etherdevice.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/random.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_mdio.h>
+#include <linaos/bitops.h>
+#include <linaos/if_bridge.h>
+#include <linaos/etherdevice.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/random.h>
 #include <net/dsa.h>
 
 #include "vitesse-vsc73xx.h"

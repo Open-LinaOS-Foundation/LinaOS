@@ -97,7 +97,7 @@ The following constants can be defined in the source file.
    The following command line will look for an adapter at 0x330
    and set the debug level to 2::
 
-      linux advansys=0x330,0,0,0,0xdeb2
+      linaos advansys=0x330,0,0,0,0xdeb2
 
    If the driver is built as a loadable module this variable can be
    defined when the driver is loaded. The following insmod command
@@ -173,7 +173,7 @@ Driver LILO Option
 ==================
 
 If init/main.c is modified as described in the 'Directions for Adding
-the AdvanSys Driver to Linux' section (B.4.) above, the driver will
+the AdvanSys Driver to LinaOS' section (B.4.) above, the driver will
 recognize the 'advansys' LILO command line and /etc/lilo.conf option.
 This option can be used to either disable I/O port scanning or to limit
 scanning to 1 - 4 I/O ports. Regardless of the option setting EISA and
@@ -185,23 +185,23 @@ Examples:
 
      boot::
 
-	linux advansys=
+	linaos advansys=
 
      or::
 
-	boot: linux advansys=0x0
+	boot: linaos advansys=0x0
 
   2. Limit I/O port scanning to one I/O port:
 
      boot::
 
-	linux advansys=0x110
+	linaos advansys=0x110
 
   3. Limit I/O port scanning to four I/O ports:
 
      boot::
 
-	linux advansys=0x110,0x210,0x230,0x330
+	linaos advansys=0x110,0x210,0x230,0x330
 
 For a loadable module the same effect can be achieved by setting
 the 'asc_iopflag' variable and 'asc_ioport' array when loading
@@ -217,12 +217,12 @@ more information.
 Credits (Chronological Order)
 =============================
 
-Bob Frey <bfrey@turbolinux.com.cn> wrote the AdvanSys SCSI driver
+Bob Frey <bfrey@turbolinaos.com.cn> wrote the AdvanSys SCSI driver
 and maintained it up to 3.3F. He continues to answer questions
 and help maintain the driver.
 
 Nathan Hartwell <mage@cdc3.cdc.net> provided the directions and
-basis for the Linux v1.3.X changes which were included in the
+basis for the LinaOS v1.3.X changes which were included in the
 1.2 release.
 
 Thomas E Zerucha <zerucha@shell.portal.com> pointed out a bug

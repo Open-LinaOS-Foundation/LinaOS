@@ -11,9 +11,9 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/irqchip.h>
-#include <linux/of_platform.h>
+#include <linaos/init.h>
+#include <linaos/irqchip.h>
+#include <linaos/of_platform.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

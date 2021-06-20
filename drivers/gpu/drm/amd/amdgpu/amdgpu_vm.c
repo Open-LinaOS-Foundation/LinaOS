@@ -25,10 +25,10 @@
  *          Alex Deucher
  *          Jerome Glisse
  */
-#include <linux/dma-fence-array.h>
-#include <linux/interval_tree_generic.h>
-#include <linux/idr.h>
-#include <linux/dma-buf.h>
+#include <linaos/dma-fence-array.h>
+#include <linaos/interval_tree_generic.h>
+#include <linaos/idr.h>
+#include <linaos/dma-buf.h>
 
 #include <drm/amdgpu_drm.h>
 #include "amdgpu.h"

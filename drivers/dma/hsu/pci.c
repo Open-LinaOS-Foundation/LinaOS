@@ -3,15 +3,15 @@
  * PCI driver for the High Speed UART DMA
  *
  * Copyright (C) 2015 Intel Corporation
- * Author: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Author: Andy Shevchenko <andriy.shevchenko@linaos.intel.com>
  *
  * Partially based on the bits found in drivers/tty/serial/mfd.c.
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include "hsu.h"
 
@@ -141,4 +141,4 @@ module_pci_driver(hsu_pci_driver);
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("High Speed UART DMA PCI driver");
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linaos.intel.com>");

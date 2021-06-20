@@ -8,11 +8,11 @@
  *  Author: Claudio Lanconelli <lanconelli.claudio@eptar.com>
  */
 
-#include <linux/mtd/blktrans.h>
-#include <linux/kfifo.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/mtd/mtd.h>
+#include <linaos/mtd/blktrans.h>
+#include <linaos/kfifo.h>
+#include <linaos/sched.h>
+#include <linaos/completion.h>
+#include <linaos/mtd/mtd.h>
 
 
 

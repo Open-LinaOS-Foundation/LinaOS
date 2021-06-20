@@ -25,7 +25,7 @@ This document describes how to build an out-of-tree kernel module.
 	   --- 5.1 INSTALL_MOD_PATH
 	   --- 5.2 INSTALL_MOD_DIR
 	=== 6. Module Versioning
-	   --- 6.1 Symbols From the Kernel (vmlinux + modules)
+	   --- 6.1 Symbols From the Kernel (vmlinaos + modules)
 	   --- 6.2 Symbols and External Modules
 	   --- 6.3 Symbols From Another External Module
 	=== 7. Tips & Tricks
@@ -36,7 +36,7 @@ This document describes how to build an out-of-tree kernel module.
 1. Introduction
 ===============
 
-"kbuild" is the build system used by the Linux kernel. Modules must use
+"kbuild" is the build system used by the LinaOS kernel. Modules must use
 kbuild to stay compatible with changes in the build infrastructure and
 to pick up the right flags to "gcc." Functionality for building modules
 both in-tree and out-of-tree is provided. The method for building
@@ -326,7 +326,7 @@ according to the following rule:
 	  source files.
 	* If the header file describes an interface used by other parts
 	  of the kernel that are located in different directories, then
-	  the file is placed in include/linux/.
+	  the file is placed in include/linaos/.
 
 	  NOTE:
 	      There are two notable exceptions to this rule: larger
@@ -337,10 +337,10 @@ according to the following rule:
 4.1 Kernel Includes
 -------------------
 
-	To include a header file located under include/linux/, simply
+	To include a header file located under include/linaos/, simply
 	use::
 
-		#include <linux/module.h>
+		#include <linaos/module.h>
 
 	kbuild will add options to "gcc" so the relevant directories
 	are searched.
@@ -461,7 +461,7 @@ module.
 Module.symvers contains a list of all exported symbols from a kernel
 build.
 
-6.1 Symbols From the Kernel (vmlinux + modules)
+6.1 Symbols From the Kernel (vmlinaos + modules)
 -----------------------------------------------
 
 	During a kernel build, a file named Module.symvers will be
@@ -483,7 +483,7 @@ build.
 
 	Module.symvers serves two purposes:
 
-	1) It lists all exported symbols from vmlinux and all modules.
+	1) It lists all exported symbols from vmlinaos and all modules.
 	2) It lists the CRC if CONFIG_MODVERSIONS is enabled.
 
 6.2 Symbols and External Modules

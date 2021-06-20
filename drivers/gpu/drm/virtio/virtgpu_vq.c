@@ -26,10 +26,10 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ring.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/virtio.h>
+#include <linaos/virtio_config.h>
+#include <linaos/virtio_ring.h>
 
 #include "virtgpu_drv.h"
 #include "virtgpu_trace.h"

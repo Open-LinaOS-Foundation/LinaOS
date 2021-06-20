@@ -8,12 +8,12 @@
  * Author: Tom Lyon, pugs@cisco.com
  */
 
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/irqbypass.h>
-#include <linux/types.h>
-#include <linux/uuid.h>
-#include <linux/notifier.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/irqbypass.h>
+#include <linaos/types.h>
+#include <linaos/uuid.h>
+#include <linaos/notifier.h>
 
 #ifndef VFIO_PCI_PRIVATE_H
 #define VFIO_PCI_PRIVATE_H

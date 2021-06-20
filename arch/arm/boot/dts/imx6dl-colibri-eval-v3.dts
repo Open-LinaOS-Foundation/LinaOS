@@ -53,7 +53,7 @@
 		wakeup {
 			label = "Wake-Up";
 			gpios = <&gpio2 22 GPIO_ACTIVE_HIGH>; /* SODIMM 45 */
-			linux,code = <KEY_WAKEUP>;
+			linaos,code = <KEY_WAKEUP>;
 			debounce-interval = <10>;
 			wakeup-source;
 		};

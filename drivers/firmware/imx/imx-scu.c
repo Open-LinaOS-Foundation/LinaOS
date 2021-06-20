@@ -7,17 +7,17 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/firmware/imx/ipc.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/firmware/imx/ipc.h>
+#include <linaos/firmware/imx/sci.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
 
 #define SCU_MU_CHAN_NUM		8
 #define MAX_RX_TIMEOUT		(msecs_to_jiffies(30))
@@ -64,7 +64,7 @@ enum imx_sc_error_codes {
 	IMX_SC_ERR_LAST
 };
 
-static int imx_sc_linux_errmap[IMX_SC_ERR_LAST] = {
+static int imx_sc_linaos_errmap[IMX_SC_ERR_LAST] = {
 	0,	 /* IMX_SC_ERR_NONE */
 	-EINVAL, /* IMX_SC_ERR_VERSION */
 	-EINVAL, /* IMX_SC_ERR_CONFIG */
@@ -81,10 +81,10 @@ static int imx_sc_linux_errmap[IMX_SC_ERR_LAST] = {
 
 static struct imx_sc_ipc *imx_sc_ipc_handle;
 
-static inline int imx_sc_to_linux_errno(int errno)
+static inline int imx_sc_to_linaos_errno(int errno)
 {
 	if (errno >= IMX_SC_ERR_NONE && errno < IMX_SC_ERR_LAST)
-		return imx_sc_linux_errmap[errno];
+		return imx_sc_linaos_errmap[errno];
 	return -EIO;
 }
 
@@ -177,7 +177,7 @@ static int imx_scu_ipc_write(struct imx_sc_ipc *sc_ipc, void *msg)
 
 		/*
 		 * SCU requires that all messages words are written
-		 * sequentially but linux MU driver implements multiple
+		 * sequentially but linaos MU driver implements multiple
 		 * independent channels for each register so ordering between
 		 * different channels must be ensured by SCU API interface.
 		 *
@@ -253,7 +253,7 @@ out:
 
 	dev_dbg(sc_ipc->dev, "RPC SVC done\n");
 
-	return imx_sc_to_linux_errno(ret);
+	return imx_sc_to_linaos_errno(ret);
 }
 EXPORT_SYMBOL(imx_scu_call_rpc);
 

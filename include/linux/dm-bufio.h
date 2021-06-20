@@ -9,8 +9,8 @@
 #ifndef _LINUX_DM_BUFIO_H
 #define _LINUX_DM_BUFIO_H
 
-#include <linux/blkdev.h>
-#include <linux/types.h>
+#include <linaos/blkdev.h>
+#include <linaos/types.h>
 
 /*----------------------------------------------------------------*/
 

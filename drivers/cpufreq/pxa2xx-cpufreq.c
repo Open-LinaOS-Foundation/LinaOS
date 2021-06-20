@@ -17,14 +17,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/err.h>
-#include <linux/regulator/consumer.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/cpufreq.h>
+#include <linaos/err.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/io.h>
 
 #include <mach/pxa2xx-regs.h>
 #include <mach/smemc.h>

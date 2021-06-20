@@ -5,16 +5,16 @@
  * Copyright 2013 Free Electrons
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/wait.h>
-#include <linux/log2.h>
-#include <linux/of.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/wait.h>
+#include <linaos/log2.h>
+#include <linaos/of.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 #define NAU7802_REG_PUCTRL	0x00
 #define NAU7802_PUCTRL_RR(x)		(x << 0)

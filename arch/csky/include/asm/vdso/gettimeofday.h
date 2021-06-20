@@ -8,7 +8,7 @@
 #include <asm/barrier.h>
 #include <asm/unistd.h>
 #include <abi/regdef.h>
-#include <uapi/linux/time.h>
+#include <uapi/linaos/time.h>
 
 #define VDSO_HAS_CLOCK_GETRES	1
 

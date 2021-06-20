@@ -3,7 +3,7 @@
  * Copyright 2019 NXP
  */
 #include <kunit/test.h>
-#include <linux/pm_qos.h>
+#include <linaos/pm_qos.h>
 
 /* Basic test for aggregating two "min" requests */
 static void freq_qos_test_min(struct kunit *test)

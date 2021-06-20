@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Follows implementation found in linux/virtio_byteorder.h
+ * Follows implementation found in linaos/virtio_byteorder.h
  */
 #ifndef _LINUX_RPMSG_BYTEORDER_H
 #define _LINUX_RPMSG_BYTEORDER_H
-#include <linux/types.h>
-#include <uapi/linux/rpmsg_types.h>
+#include <linaos/types.h>
+#include <uapi/linaos/rpmsg_types.h>
 
 static inline bool rpmsg_is_little_endian(void)
 {

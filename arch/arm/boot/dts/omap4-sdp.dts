@@ -533,7 +533,7 @@
 &keypad {
 	keypad,num-rows = <8>;
 	keypad,num-columns = <8>;
-	linux,keymap = <0x00000012	/* KEY_E */
+	linaos,keymap = <0x00000012	/* KEY_E */
 			0x00010013	/* KEY_R */
 			0x00020014	/* KEY_T */
 			0x00030066	/* KEY_HOME */
@@ -597,7 +597,7 @@
 			0x070500f0	/* KEY_UNKNOWN */
 			0x07060160	/* KEY_OK */
 			0x0707006c>;	/* KEY_DOWN */
-	linux,input-no-autorepeat;
+	linaos,input-no-autorepeat;
 };
 
 &uart2 {

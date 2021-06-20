@@ -2,9 +2,9 @@
 #ifndef _LINUX_MM_PAGE_IDLE_H
 #define _LINUX_MM_PAGE_IDLE_H
 
-#include <linux/bitops.h>
-#include <linux/page-flags.h>
-#include <linux/page_ext.h>
+#include <linaos/bitops.h>
+#include <linaos/page-flags.h>
+#include <linaos/page_ext.h>
 
 #ifdef CONFIG_IDLE_PAGE_TRACKING
 

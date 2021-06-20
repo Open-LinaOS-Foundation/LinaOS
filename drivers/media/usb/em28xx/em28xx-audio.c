@@ -23,14 +23,14 @@
 
 #include "em28xx.h"
 
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/init.h>
-#include <linux/sound.h>
-#include <linux/spinlock.h>
-#include <linux/soundcard.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/usb.h>
+#include <linaos/init.h>
+#include <linaos/sound.h>
+#include <linaos/spinlock.h>
+#include <linaos/soundcard.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

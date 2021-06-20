@@ -2,20 +2,20 @@
 //
 // Copyright (c) 2017-2019 Samuel Holland <samuel@sholland.org>
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_controller.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mailbox_controller.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
+#include <linaos/spinlock.h>
 
 #define NUM_CHANS		8
 
@@ -235,7 +235,7 @@ static int sun6i_msgbox_probe(struct platform_device *pdev)
 	/*
 	 * NOTE: We rely on platform firmware to preconfigure the channel
 	 * directions, and we share this hardware block with other firmware
-	 * that runs concurrently with Linux (e.g. a trusted monitor).
+	 * that runs concurrently with LinaOS (e.g. a trusted monitor).
 	 *
 	 * Therefore, we do *not* assert the reset line if probing fails or
 	 * when removing the device.

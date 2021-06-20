@@ -6,7 +6,7 @@
  * Copyright (C) 2005 Luben Tuikov <luben_tuikov@adaptec.com>
  */
 
-#include <linux/gfp.h>
+#include <linaos/gfp.h>
 #include <scsi/scsi_host.h>
 
 #include "aic94xx.h"

@@ -6,14 +6,14 @@
  *    Significantly tweaked by LaMont Jones <lamont@debian.org>
  */
 
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/signal.h>
-#include <linux/ratelimit.h>
-#include <linux/uaccess.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/debug.h>
+#include <linaos/signal.h>
+#include <linaos/ratelimit.h>
+#include <linaos/uaccess.h>
 #include <asm/hardirq.h>
 #include <asm/traps.h>
 

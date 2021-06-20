@@ -4,17 +4,17 @@
  * Author: James.Qian.Wang <james.qian.wang@arm.com>
  *
  */
-#include <linux/io.h>
-#include <linux/iommu.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/iommu.h>
+#include <linaos/of_device.h>
+#include <linaos/of_graph.h>
+#include <linaos/of_reserved_mem.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/dma-mapping.h>
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 #endif
 
 #include <drm/drm_print.h>

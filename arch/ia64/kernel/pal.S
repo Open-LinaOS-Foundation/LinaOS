@@ -4,7 +4,7 @@
  * IA-64 Processor Programmers Reference Vol 2
  *
  * Copyright (C) 1999 Don Dugger <don.dugger@intel.com>
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 Walt Drummond <drummond@valinaos.com>
  * Copyright (C) 1999-2001, 2003 Hewlett-Packard Co
  *	David Mosberger <davidm@hpl.hp.com>
  *	Stephane Eranian <eranian@hpl.hp.com>

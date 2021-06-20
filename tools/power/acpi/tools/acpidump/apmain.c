@@ -28,7 +28,7 @@
  * implementations:
  *
  *      source/os_specific/service_layers/oswintbl.c
- *      source/os_specific/service_layers/oslinuxtbl.c
+ *      source/os_specific/service_layers/oslinaostbl.c
  */
 
 /* Local prototypes */

@@ -5,8 +5,8 @@
  *  Copyright (C) 2008  Magnus Damm
  */
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/gpio.h>
 #include <cpu/sh7203.h>
 
 #include "sh_pfc.h"

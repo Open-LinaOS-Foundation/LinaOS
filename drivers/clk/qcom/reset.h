@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef __QCOM_CLK_RESET_H__
 #define __QCOM_CLK_RESET_H__
 
-#include <linux/reset-controller.h>
+#include <linaos/reset-controller.h>
 
 struct qcom_reset_map {
 	unsigned int reg;

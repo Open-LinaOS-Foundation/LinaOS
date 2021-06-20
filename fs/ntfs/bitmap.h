@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * bitmap.h - Defines for NTFS kernel bitmap handling.  Part of the Linux-NTFS
+ * bitmap.h - Defines for NTFS kernel bitmap handling.  Part of the LinaOS-NTFS
  *	      project.
  *
  * Copyright (c) 2004 Anton Altaparmakov
@@ -11,7 +11,7 @@
 
 #ifdef NTFS_RW
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 #include "types.h"
 

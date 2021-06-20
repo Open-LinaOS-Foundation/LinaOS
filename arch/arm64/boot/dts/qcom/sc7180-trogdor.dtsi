@@ -245,8 +245,8 @@
 
 			/* Insert = low, eject = high */
 			gpios = <&tlmm 52 GPIO_ACTIVE_LOW>;
-			linux,code = <SW_PEN_INSERTED>;
-			linux,input-type = <EV_SW>;
+			linaos,code = <SW_PEN_INSERTED>;
+			linaos,input-type = <EV_SW>;
 			wakeup-event-action = <EV_ACT_DEASSERTED>;
 			wakeup-source;
 		};

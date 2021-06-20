@@ -7,13 +7,13 @@
  * Author: Milo Kim <milo.kim@ti.com>
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/mfd/lp3943.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/mfd/lp3943.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/slab.h>
 
 #define LP3943_MAX_DUTY			255
 #define LP3943_MIN_PERIOD		6250

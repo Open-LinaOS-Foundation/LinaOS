@@ -39,7 +39,7 @@ TOOL_OBJS = \
 	utstrsuppt.o\
 	utstrtoul64.o\
 	utxferror.o\
-	oslinuxtbl.o\
+	oslinaostbl.o\
 	cmfsize.o\
 	getopt.o
 

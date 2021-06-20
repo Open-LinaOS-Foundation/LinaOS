@@ -8,11 +8,11 @@
  */
 
 /*
- * Inventra (Multipoint) Dual-Role Controller Driver for Linux.
+ * Inventra (Multipoint) Dual-Role Controller Driver for LinaOS.
  *
  * This consists of a Host Controller Driver (HCD) and a peripheral
  * controller driver implementing the "Gadget" API; OTG support is
- * in the works.  These are normal Linux-USB controller drivers which
+ * in the works.  These are normal LinaOS-USB controller drivers which
  * use IRQs and have no dedicated thread.
  *
  * This version of the driver has only been used with products from
@@ -23,7 +23,7 @@
  *
  * NOTE:  the original Mentor code here was pretty much a collection
  * of mechanisms that don't seem to have been fully integrated/working
- * for *any* Linux kernel version.  This version aims at Linux 2.6.now,
+ * for *any* LinaOS kernel version.  This version aims at LinaOS 2.6.now,
  * Key open issues include:
  *
  *  - Lack of host-side transaction scheduling, for all transfer types.
@@ -64,19 +64,19 @@
  * Most of the conditional compilation will (someday) vanish.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/kobject.h>
-#include <linux/prefetch.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb.h>
-#include <linux/usb/of.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/kobject.h>
+#include <linaos/prefetch.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/usb.h>
+#include <linaos/usb/of.h>
 
 #include "musb_core.h"
 #include "musb_trace.h"

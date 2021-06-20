@@ -2,7 +2,7 @@
 #ifndef _LINUX_UNALIGNED_LE_MEMMOVE_H
 #define _LINUX_UNALIGNED_LE_MEMMOVE_H
 
-#include <linux/unaligned/memmove.h>
+#include <linaos/unaligned/memmove.h>
 
 static inline u16 get_unaligned_le16(const void *p)
 {

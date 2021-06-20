@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
 
 #include <asm/processor-cyrix.h>
 #include <asm/processor-flags.h>

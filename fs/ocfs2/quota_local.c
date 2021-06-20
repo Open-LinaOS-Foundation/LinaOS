@@ -3,11 +3,11 @@
  *  Implementation of operations over local quota file
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/quota.h>
-#include <linux/quotaops.h>
-#include <linux/module.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/quota.h>
+#include <linaos/quotaops.h>
+#include <linaos/module.h>
 
 #include <cluster/masklog.h>
 

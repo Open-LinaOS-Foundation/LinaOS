@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  * acpi/internal.h
- * For use by Linux/ACPI infrastructure, not drivers
+ * For use by LinaOS/ACPI infrastructure, not drivers
  *
  * Copyright (c) 2009, Intel Corporation.
  */
@@ -9,7 +9,7 @@
 #ifndef _ACPI_INTERNAL_H_
 #define _ACPI_INTERNAL_H_
 
-#include <linux/idr.h>
+#include <linaos/idr.h>
 
 #define PREFIX "ACPI: "
 

@@ -238,7 +238,7 @@ The ioctls
 An example of an implementation which uses this interface can be seen
 in autofs version 5.0.4 and later in file lib/dev-ioctl-lib.c of the
 distribution tar available for download from kernel.org in directory
-/pub/linux/daemons/autofs/v5.
+/pub/linaos/daemons/autofs/v5.
 
 The device node ioctl operations implemented by this interface are:
 

@@ -7,12 +7,12 @@
  * (c) 2006 Benjamin Herrenschmidt <benh@kernel.crashing.org>, IBM Corp.
  */
 
-#include <linux/percpu.h>
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/pgtable.h>
+#include <linaos/percpu.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/pgtable.h>
 
 #include <asm/io.h>
 #include <asm/prom.h>

@@ -6,9 +6,9 @@
 #ifndef __INTEL_RESET_TYPES_H_
 #define __INTEL_RESET_TYPES_H_
 
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/srcu.h>
+#include <linaos/mutex.h>
+#include <linaos/wait.h>
+#include <linaos/srcu.h>
 
 struct intel_reset {
 	/**

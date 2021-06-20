@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/compiler.h>
-#include <linux/hrtimer.h>
-#include <linux/time.h>
+#include <linaos/compiler.h>
+#include <linaos/hrtimer.h>
+#include <linaos/time.h>
 #include <asm/io.h>
 #include <asm/barrier.h>
 #include <asm/bug.h>

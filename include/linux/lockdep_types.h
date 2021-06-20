@@ -10,7 +10,7 @@
 #ifndef __LINUX_LOCKDEP_TYPES_H
 #define __LINUX_LOCKDEP_TYPES_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define MAX_LOCKDEP_SUBCLASSES		8UL
 

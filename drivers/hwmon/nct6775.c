@@ -3,7 +3,7 @@
  * nct6775 - Driver for the hardware monitoring functionality of
  *	       Nuvoton NCT677x Super-I/O chips
  *
- * Copyright (C) 2012  Guenter Roeck <linux@roeck-us.net>
+ * Copyright (C) 2012  Guenter Roeck <linaos@roeck-us.net>
  *
  * Derived from w83627ehf driver
  * Copyright (C) 2005-2012  Jean Delvare <jdelvare@suse.de>
@@ -40,21 +40,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
-#include <linux/nospec.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/platform_device.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/hwmon-vid.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/acpi.h>
+#include <linaos/bitops.h>
+#include <linaos/dmi.h>
+#include <linaos/io.h>
+#include <linaos/nospec.h>
 #include "lm75.h"
 
 #define USE_ALTERNATE
@@ -4911,7 +4911,7 @@ static void __exit sensors_nct6775_exit(void)
 	platform_driver_unregister(&nct6775_driver);
 }
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linaos@roeck-us.net>");
 MODULE_DESCRIPTION("Driver for NCT6775F and compatible chips");
 MODULE_LICENSE("GPL");
 

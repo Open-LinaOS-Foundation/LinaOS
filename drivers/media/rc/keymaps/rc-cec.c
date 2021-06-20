@@ -15,7 +15,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /*
  * CEC Spec "High-Definition Multimedia Interface Specification" can be obtained

@@ -155,13 +155,13 @@
 		led0 {
 			label = "led0";
 			gpios = <&pioD 0 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "nand-disk";
+			linaos,default-trigger = "nand-disk";
 		};
 
 		led1 {
 			label = "led1";
 			gpios = <&pioD 31 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 
@@ -173,13 +173,13 @@
 		right {
 			label = "SW4";
 			gpios = <&pioE 7 GPIO_ACTIVE_LOW>;
-			linux,code = <106>;
+			linaos,code = <106>;
 		};
 
 		up {
 			label = "SW3";
 			gpios = <&pioE 8 GPIO_ACTIVE_LOW>;
-			linux,code = <103>;
+			linaos,code = <103>;
 		};
 	};
 };

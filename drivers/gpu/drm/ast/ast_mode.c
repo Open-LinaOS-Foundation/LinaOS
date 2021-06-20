@@ -28,8 +28,8 @@
  * Authors: Dave Airlie <airlied@redhat.com>
  */
 
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <linaos/export.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

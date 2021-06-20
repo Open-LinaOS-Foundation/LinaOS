@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ============================================================
-Linux kernel driver for Elastic Network Adapter (ENA) family
+LinaOS kernel driver for Elastic Network Adapter (ENA) family
 ============================================================
 
 Overview
@@ -52,7 +52,7 @@ ena_admin_defs.h    Definition of ENA management interface.
 ena_eth_io_defs.h   Definition of ENA data path interface.
 ena_common_defs.h   Common definitions for ena_com layer.
 ena_regs_defs.h     Definition of ENA PCI memory-mapped (MMIO) registers.
-ena_netdev.[ch]     Main Linux kernel driver.
+ena_netdev.[ch]     Main LinaOS kernel driver.
 ena_syfsfs.[ch]     Sysfs files.
 ena_ethtool.c       ethtool callbacks.
 ena_pci_id_tbl.h    Supported device IDs.
@@ -169,9 +169,9 @@ The driver assigns a single MSI-X vector per queue pair (for both Tx
 and Rx directions). The driver assigns an additional dedicated MSI-X vector
 for management (for ACQ and AENQ).
 
-Management interrupt registration is performed when the Linux kernel
+Management interrupt registration is performed when the LinaOS kernel
 probes the adapter, and it is de-registered when the adapter is
-removed. I/O queue interrupt registration is performed when the Linux
+removed. I/O queue interrupt registration is performed when the LinaOS
 interface of the adapter is opened, and it is de-registered when the
 interface is closed.
 

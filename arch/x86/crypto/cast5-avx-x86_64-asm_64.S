@@ -8,7 +8,7 @@
  * Copyright © 2012 Jussi Kivilinna <jussi.kivilinna@mbnet.fi>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/frame.h>
 
 .file "cast5-avx-x86_64-asm_64.S"

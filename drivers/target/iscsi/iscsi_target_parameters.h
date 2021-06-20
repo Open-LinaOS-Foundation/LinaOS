@@ -2,7 +2,7 @@
 #ifndef ISCSI_PARAMETERS_H
 #define ISCSI_PARAMETERS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <scsi/iscsi_proto.h>
 
 struct iscsi_extra_response {

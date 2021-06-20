@@ -7,16 +7,16 @@
  *
  * based on arch/mips/cavium-octeon/cpu.c
  * Copyright (C) 2009 Wind River Systems,
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@linaos-mips.org>
  */
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/irqflags.h>
-#include <linux/notifier.h>
-#include <linux/prefetch.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/capability.h>
+#include <linaos/init.h>
+#include <linaos/irqflags.h>
+#include <linaos/notifier.h>
+#include <linaos/prefetch.h>
+#include <linaos/ptrace.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
 
 #include <asm/cop2.h>
 #include <asm/current.h>

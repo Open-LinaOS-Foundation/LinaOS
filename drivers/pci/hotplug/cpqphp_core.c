@@ -14,19 +14,19 @@
  *			Torben Mathiasen <torben.mathiasen@hp.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/proc_fs.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/pci.h>
+#include <linaos/pci_hotplug.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "cpqphp.h"
 #include "cpqphp_nvram.h"

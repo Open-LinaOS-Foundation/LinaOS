@@ -15,8 +15,8 @@
 
 #include <syslog.h>
 #include <unistd.h>
-#include <linux/usb/ch9.h>
-#include <linux/usbip.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usbip.h>
 
 #ifndef USBIDS_FILE
 #define USBIDS_FILE "/usr/share/hwdata/usb.ids"

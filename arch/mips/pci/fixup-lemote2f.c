@@ -7,8 +7,8 @@
  * Copyright (C) 2007 Lemote, Inc.
  * Author: Fuxin Zhang, zhangfx@lemote.com
  */
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 
 #include <loongson.h>
 #include <cs5536/cs5536.h>

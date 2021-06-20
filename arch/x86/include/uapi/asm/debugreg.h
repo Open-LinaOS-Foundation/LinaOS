@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_ASM_X86_DEBUGREG_H
 #define _UAPI_ASM_X86_DEBUGREG_H
 
@@ -49,7 +49,7 @@
 /* The low byte to the control register determine which registers are
    enabled.  There are 4 fields of two bits.  One bit is "local", meaning
    that the processor will reset the bit after a task switch and the other
-   is global meaning that we have to explicitly reset the bit.  With linux,
+   is global meaning that we have to explicitly reset the bit.  With linaos,
    you can use either one, since we explicitly zero the register when we enter
    kernel mode. */
 

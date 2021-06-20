@@ -22,19 +22,19 @@
  *  Integrated into 2.2.5 kernel by Tigran Aivazian <tigran@sco.com>
  *  X86_64 changes from Andi Kleen's patch merged by Jim Houston
  */
-#include <linux/spinlock.h>
-#include <linux/kdebug.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/kgdb.h>
-#include <linux/smp.h>
-#include <linux/nmi.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/uaccess.h>
-#include <linux/memory.h>
+#include <linaos/spinlock.h>
+#include <linaos/kdebug.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/kgdb.h>
+#include <linaos/smp.h>
+#include <linaos/nmi.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/uaccess.h>
+#include <linaos/memory.h>
 
 #include <asm/text-patching.h>
 #include <asm/debugreg.h>
@@ -427,7 +427,7 @@ void kgdb_roundup_cpus(void)
  *	@err_code: The error code of the exception that happened.
  *	@remcomInBuffer: The buffer of the packet we have read.
  *	@remcomOutBuffer: The buffer of %BUFMAX bytes to write a packet into.
- *	@linux_regs: The &struct pt_regs of the current process.
+ *	@linaos_regs: The &struct pt_regs of the current process.
  *
  *	This function MUST handle the 'c' and 's' command packets,
  *	as well packets to set / remove a hardware breakpoint, if used.
@@ -438,7 +438,7 @@ void kgdb_roundup_cpus(void)
  */
 int kgdb_arch_handle_exception(int e_vector, int signo, int err_code,
 			       char *remcomInBuffer, char *remcomOutBuffer,
-			       struct pt_regs *linux_regs)
+			       struct pt_regs *linaos_regs)
 {
 	unsigned long addr;
 	char *ptr;
@@ -449,17 +449,17 @@ int kgdb_arch_handle_exception(int e_vector, int signo, int err_code,
 		/* try to read optional parameter, pc unchanged if no parm */
 		ptr = &remcomInBuffer[1];
 		if (kgdb_hex2long(&ptr, &addr))
-			linux_regs->ip = addr;
+			linaos_regs->ip = addr;
 		fallthrough;
 	case 'D':
 	case 'k':
 		/* clear the trace bit */
-		linux_regs->flags &= ~X86_EFLAGS_TF;
+		linaos_regs->flags &= ~X86_EFLAGS_TF;
 		atomic_set(&kgdb_cpu_doing_single_step, -1);
 
 		/* set the trace bit if we're stepping */
 		if (remcomInBuffer[0] == 's') {
-			linux_regs->flags |= X86_EFLAGS_TF;
+			linaos_regs->flags |= X86_EFLAGS_TF;
 			atomic_set(&kgdb_cpu_doing_single_step,
 				   raw_smp_processor_id());
 		}

@@ -18,29 +18,29 @@
  *		<jkenisto@us.ibm.com> and Prasanna S Panchamukhi
  *		<prasanna@in.ibm.com> added function-return probes.
  */
-#include <linux/kprobes.h>
-#include <linux/hash.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/export.h>
-#include <linux/moduleloader.h>
-#include <linux/kallsyms.h>
-#include <linux/freezer.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/sysctl.h>
-#include <linux/kdebug.h>
-#include <linux/memory.h>
-#include <linux/ftrace.h>
-#include <linux/cpu.h>
-#include <linux/jump_label.h>
-#include <linux/perf_event.h>
+#include <linaos/kprobes.h>
+#include <linaos/hash.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/stddef.h>
+#include <linaos/export.h>
+#include <linaos/moduleloader.h>
+#include <linaos/kallsyms.h>
+#include <linaos/freezer.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/sysctl.h>
+#include <linaos/kdebug.h>
+#include <linaos/memory.h>
+#include <linaos/ftrace.h>
+#include <linaos/cpu.h>
+#include <linaos/jump_label.h>
+#include <linaos/perf_event.h>
 
 #include <asm/sections.h>
 #include <asm/cacheflush.h>
 #include <asm/errno.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define KPROBE_HASH_BITS 6
 #define KPROBE_TABLE_SIZE (1 << KPROBE_HASH_BITS)

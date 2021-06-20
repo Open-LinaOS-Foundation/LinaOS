@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * STMicroelectronics TPM SPI Linux driver for TPM ST33ZP24
+ * STMicroelectronics TPM SPI LinaOS driver for TPM ST33ZP24
  * Copyright (C) 2009 - 2016 STMicroelectronics
  */
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h>
-#include <linux/acpi.h>
-#include <linux/tpm.h>
-#include <linux/platform_data/st33zp24.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_gpio.h>
+#include <linaos/acpi.h>
+#include <linaos/tpm.h>
+#include <linaos/platform_data/st33zp24.h>
 
 #include "../tpm.h"
 #include "st33zp24.h"

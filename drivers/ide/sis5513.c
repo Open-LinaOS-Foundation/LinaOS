@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 1999-2000	Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 1999-2000	Andre Hedrick <andre@linaos-ide.org>
  * Copyright (C) 2002		Lionel Bouton <Lionel.Bouton@inet6.fr>, Maintainer
  * Copyright (C) 2003		Vojtech Pavlik <vojtech@suse.cz>
  * Copyright (C) 2007-2009	Bartlomiej Zolnierkiewicz
@@ -44,12 +44,12 @@
  * 962/963.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/ide.h>
 
 #define DRV_NAME "sis5513"
 

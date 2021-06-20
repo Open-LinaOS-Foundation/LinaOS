@@ -7,16 +7,16 @@
  *	based on an inital version by Cliff Cai <cliff.cai@analog.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/regmap.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

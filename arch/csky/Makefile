@@ -73,7 +73,7 @@ core-y += $(boot)/dts/
 
 all: zImage
 
-zImage Image uImage: vmlinux
+zImage Image uImage: vmlinaos
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 archclean:

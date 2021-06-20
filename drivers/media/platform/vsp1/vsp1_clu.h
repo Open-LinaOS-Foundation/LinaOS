@@ -9,7 +9,7 @@
 #ifndef __VSP1_CLU_H__
 #define __VSP1_CLU_H__
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-ctrls.h>

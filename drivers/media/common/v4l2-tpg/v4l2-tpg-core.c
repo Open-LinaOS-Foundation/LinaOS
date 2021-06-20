@@ -8,7 +8,7 @@
  * Copyright 2014 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <media/tpg/v4l2-tpg.h>
 
 /* Must remain in sync with enum tpg_pattern */

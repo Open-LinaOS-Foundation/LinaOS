@@ -14,11 +14,11 @@
 
 #include "mcp251xfd.h"
 
-/* The standard crc16 in linux/crc16.h is unfortunately not computing
+/* The standard crc16 in linaos/crc16.h is unfortunately not computing
  * the correct results (left shift vs. right shift). So here an
  * implementation with a table generated with the help of:
  *
- * http://lkml.iu.edu/hypermail/linux/kernel/0508.1/1085.html
+ * http://lkml.iu.edu/hypermail/linaos/kernel/0508.1/1085.html
  */
 static const u16 mcp251xfd_crc16_table[] = {
 	0x0000, 0x8005, 0x800f, 0x000a, 0x801b, 0x001e, 0x0014, 0x8011,

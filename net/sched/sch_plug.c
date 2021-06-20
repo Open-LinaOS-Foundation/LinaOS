@@ -32,12 +32,12 @@
  *       ........
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
 #include <net/pkt_sched.h>
 
 /*

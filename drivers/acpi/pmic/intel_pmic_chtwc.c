@@ -7,11 +7,11 @@
  * Copyright (C) 2013-2015 Intel Corporation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/acpi.h>
+#include <linaos/init.h>
+#include <linaos/mfd/intel_soc_pmic.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 #include "intel_pmic.h"
 
 #define CHT_WC_V1P05A_CTRL		0x6e3b
@@ -68,7 +68,7 @@
 /*
  * Regulator support is based on the non upstream patch:
  * "regulator: whiskey_cove: implements Whiskey Cove pmic VRF support"
- * https://github.com/intel-aero/meta-intel-aero/blob/master/recipes-kernel/linux/linux-yocto/0019-regulator-whiskey_cove-implements-WhiskeyCove-pmic-V.patch
+ * https://github.com/intel-aero/meta-intel-aero/blob/master/recipes-kernel/linaos/linaos-yocto/0019-regulator-whiskey_cove-implements-WhiskeyCove-pmic-V.patch
  */
 static struct pmic_table power_table[] = {
 	{

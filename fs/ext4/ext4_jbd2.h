@@ -12,8 +12,8 @@
 #ifndef _EXT4_JBD2_H
 #define _EXT4_JBD2_H
 
-#include <linux/fs.h>
-#include <linux/jbd2.h>
+#include <linaos/fs.h>
+#include <linaos/jbd2.h>
 #include "ext4.h"
 
 #define EXT4_JOURNAL(inode)	(EXT4_SB((inode)->i_sb)->s_journal)

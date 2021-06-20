@@ -4,12 +4,12 @@
  * Copyright 2006-2009 Solarflare Communications Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/ethtool.h>
+#include <linaos/mdio.h>
+#include <linaos/module.h>
 
 MODULE_DESCRIPTION("Generic support for MDIO-compatible transceivers");
 MODULE_AUTHOR("Copyright 2006-2009 Solarflare Communications Inc.");

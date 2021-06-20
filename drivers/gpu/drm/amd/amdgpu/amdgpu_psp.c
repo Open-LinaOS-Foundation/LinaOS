@@ -23,8 +23,8 @@
  *
  */
 
-#include <linux/firmware.h>
-#include <linux/dma-mapping.h>
+#include <linaos/firmware.h>
+#include <linaos/dma-mapping.h>
 
 #include "amdgpu.h"
 #include "amdgpu_psp.h"

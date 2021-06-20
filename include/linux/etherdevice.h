@@ -11,16 +11,16 @@
  * Authors:	Ross Biro
  *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
  *
- *		Relocated to include/linux where it belongs by Alan Cox
+ *		Relocated to include/linaos where it belongs by Alan Cox
  *							<gw4pts@gw4pts.ampr.org>
  */
 #ifndef _LINUX_ETHERDEVICE_H
 #define _LINUX_ETHERDEVICE_H
 
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/random.h>
-#include <linux/crc32.h>
+#include <linaos/if_ether.h>
+#include <linaos/netdevice.h>
+#include <linaos/random.h>
+#include <linaos/crc32.h>
 #include <asm/unaligned.h>
 #include <asm/bitsperlong.h>
 

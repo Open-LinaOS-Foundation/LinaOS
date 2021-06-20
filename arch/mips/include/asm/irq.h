@@ -9,9 +9,9 @@
 #ifndef _ASM_IRQ_H
 #define _ASM_IRQ_H
 
-#include <linux/linkage.h>
-#include <linux/smp.h>
-#include <linux/irqdomain.h>
+#include <linaos/linkage.h>
+#include <linaos/smp.h>
+#include <linaos/irqdomain.h>
 
 #include <asm/mipsmtregs.h>
 

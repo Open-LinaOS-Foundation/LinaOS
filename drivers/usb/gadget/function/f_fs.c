@@ -14,27 +14,27 @@
 /* #define DEBUG */
 /* #define VERBOSE_DEBUG */
 
-#include <linux/blkdev.h>
-#include <linux/pagemap.h>
-#include <linux/export.h>
-#include <linux/fs_parser.h>
-#include <linux/hid.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/sched/signal.h>
-#include <linux/uio.h>
-#include <linux/vmalloc.h>
+#include <linaos/blkdev.h>
+#include <linaos/pagemap.h>
+#include <linaos/export.h>
+#include <linaos/fs_parser.h>
+#include <linaos/hid.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/scatterlist.h>
+#include <linaos/sched/signal.h>
+#include <linaos/uio.h>
+#include <linaos/vmalloc.h>
 #include <asm/unaligned.h>
 
-#include <linux/usb/ccid.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/functionfs.h>
+#include <linaos/usb/ccid.h>
+#include <linaos/usb/composite.h>
+#include <linaos/usb/functionfs.h>
 
-#include <linux/aio.h>
-#include <linux/kthread.h>
-#include <linux/poll.h>
-#include <linux/eventfd.h>
+#include <linaos/aio.h>
+#include <linaos/kthread.h>
+#include <linaos/poll.h>
+#include <linaos/eventfd.h>
 
 #include "u_fs.h"
 #include "u_f.h"

@@ -13,28 +13,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/proc_fs.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_queue.h>
-#include <linux/netfilter/nf_conntrack_common.h>
-#include <linux/list.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/notifier.h>
+#include <linaos/netdevice.h>
+#include <linaos/netfilter.h>
+#include <linaos/proc_fs.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/netfilter_bridge.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/nfnetlink_queue.h>
+#include <linaos/netfilter/nf_conntrack_common.h>
+#include <linaos/list.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/netfilter/nf_queue.h>
 #include <net/netns/generic.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #if IS_ENABLED(CONFIG_BRIDGE_NETFILTER)
 #include "../bridge/br_private.h"

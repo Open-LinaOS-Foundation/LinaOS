@@ -13,12 +13,12 @@ for `bpf(2)`_.
 bpf() subcommand reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. kernel-doc:: include/uapi/linux/bpf.h
+.. kernel-doc:: include/uapi/linaos/bpf.h
    :doc: eBPF Syscall Preamble
 
-.. kernel-doc:: include/uapi/linux/bpf.h
+.. kernel-doc:: include/uapi/linaos/bpf.h
    :doc: eBPF Syscall Commands
 
 .. Links:
 .. _man-pages: https://www.kernel.org/doc/man-pages/
-.. _bpf(2): https://man7.org/linux/man-pages/man2/bpf.2.html
+.. _bpf(2): https://man7.org/linaos/man-pages/man2/bpf.2.html

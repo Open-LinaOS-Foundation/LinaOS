@@ -19,7 +19,7 @@
 #ifndef _LINUX_HIPPIDEVICE_H
 #define _LINUX_HIPPIDEVICE_H
 
-#include <linux/if_hippi.h>
+#include <linaos/if_hippi.h>
 
 #ifdef __KERNEL__
 

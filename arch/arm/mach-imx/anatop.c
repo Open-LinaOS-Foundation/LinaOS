@@ -4,12 +4,12 @@
  * Copyright 2017-2018 NXP.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 #include "common.h"
 #include "hardware.h"
 
@@ -111,7 +111,7 @@ void __init imx_init_revision_from_anatop(void)
 	iounmap(anatop_base);
 
 	/*
-	 * On i.MX7D digprog value match linux version format, so
+	 * On i.MX7D digprog value match linaos version format, so
 	 * it needn't map again and we can use register value directly.
 	 */
 	if (of_device_is_compatible(np, "fsl,imx7d-anatop")) {
@@ -124,7 +124,7 @@ void __init imx_init_revision_from_anatop(void)
 		 * please refer to the i.MX RM for the detailed
 		 * silicon revison bit define.
 		 * format the major part and minor part to match the
-		 * linux kernel soc version format.
+		 * linaos kernel soc version format.
 		 */
 		major_part = (digprog >> 8) & 0xf;
 		minor_part = digprog & 0xf;

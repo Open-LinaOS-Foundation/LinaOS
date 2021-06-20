@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2020, The LinaOS Foundation. All rights reserved.
  *
  */
 
 #ifndef _MHI_INT_H
 #define _MHI_INT_H
 
-#include <linux/mhi.h>
+#include <linaos/mhi.h>
 
 extern struct bus_type mhi_bus_type;
 

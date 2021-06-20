@@ -32,7 +32,7 @@
 #ifndef __MLX5_VXLAN_H__
 #define __MLX5_VXLAN_H__
 
-#include <linux/mlx5/driver.h>
+#include <linaos/mlx5/driver.h>
 
 struct mlx5_vxlan;
 struct mlx5_vxlan_port;

@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux kernel.
+# Makefile for the linaos kernel.
 #
 
 ifdef CONFIG_PPC64
@@ -101,7 +101,7 @@ extra-$(CONFIG_40x)		:= head_40x.o
 extra-$(CONFIG_44x)		:= head_44x.o
 extra-$(CONFIG_FSL_BOOKE)	:= head_fsl_booke.o
 extra-$(CONFIG_PPC_8xx)		:= head_8xx.o
-extra-y				+= vmlinux.lds
+extra-y				+= vmlinaos.lds
 
 obj-$(CONFIG_RELOCATABLE)	+= reloc_$(BITS).o
 
@@ -190,7 +190,7 @@ $(obj)/prom_init_check: $(src)/prom_init_check.sh $(obj)/prom_init.o FORCE
 	$(call if_changed,prom_init_check)
 targets += prom_init_check
 
-clean-files := vmlinux.lds
+clean-files := vmlinaos.lds
 
 # Force dependency (incbin is bad)
 $(obj)/vdso32_wrapper.o : $(obj)/vdso32/vdso32.so.dbg

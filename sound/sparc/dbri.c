@@ -22,7 +22,7 @@
  *   - Data sheet of the T7903, a newer but very similar ISA bus equivalent
  *     available from the Lucent (formerly AT&T microelectronics) home
  *     page.
- *   - https://www.freesoft.org/Linux/DBRI/
+ *   - https://www.freesoft.org/LinaOS/DBRI/
  * - MMCODEC: Crystal Semiconductor CS4215 16 bit Multimedia Audio Codec
  *   Interfaces: CHI, Audio In & Out, 2 bits parallel
  *   Documentation: from the Crystal Semiconductor home page.
@@ -54,12 +54,12 @@
  * other	DBRI low-level stuff
  */
 
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/gfp.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
@@ -68,10 +68,10 @@
 #include <sound/control.h>
 #include <sound/initval.h>
 
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/atomic.h>
-#include <linux/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/atomic.h>
+#include <linaos/module.h>
 
 MODULE_AUTHOR("Rudolf Koenig, Brent Baccala and Martin Habets");
 MODULE_DESCRIPTION("Sun DBRI");

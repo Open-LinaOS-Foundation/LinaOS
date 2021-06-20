@@ -2,7 +2,7 @@
 #define __PXAFB_H__
 
 /*
- * linux/drivers/video/pxafb.h
+ * linaos/drivers/video/pxafb.h
  *    -- Intel PXA250/210 LCD Controller Frame Buffer Device
  *
  *  Copyright (C) 1999 Eric A. Thomas.

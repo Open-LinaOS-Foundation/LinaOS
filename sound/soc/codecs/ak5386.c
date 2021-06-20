@@ -6,12 +6,12 @@
  * (c) 2013 Daniel Mack <zonque@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_device.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_device.h>
+#include <linaos/regulator/consumer.h>
 #include <sound/soc.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

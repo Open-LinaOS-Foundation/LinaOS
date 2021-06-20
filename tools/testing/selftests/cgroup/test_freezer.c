@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #include <stdbool.h>
-#include <linux/limits.h>
+#include <linaos/limits.h>
 #include <sys/ptrace.h>
 #include <sys/types.h>
 #include <sys/mman.h>

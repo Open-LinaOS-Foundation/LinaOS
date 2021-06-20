@@ -4,7 +4,7 @@
  *
  *  Copyright (C) 2002 Shane Nay (shane@minirl.com)
  *
- *  Additional defines, Copyright 2003 Simtec Electronics (linux@simtec.co.uk)
+ *  Additional defines, Copyright 2003 Simtec Electronics (linaos@simtec.co.uk)
  *
  *  Adapted from:
  *
@@ -264,7 +264,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/serial_core.h>
+#include <linaos/serial_core.h>
 
 /* configuration structure for per-machine configurations for the
  * serial port

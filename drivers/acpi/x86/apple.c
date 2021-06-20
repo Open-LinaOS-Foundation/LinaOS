@@ -4,10 +4,10 @@
  * Copyright (C) 2017 Lukas Wunner <lukas@wunner.de>
  */
 
-#include <linux/acpi.h>
-#include <linux/bitmap.h>
-#include <linux/platform_data/x86/apple.h>
-#include <linux/uuid.h>
+#include <linaos/acpi.h>
+#include <linaos/bitmap.h>
+#include <linaos/platform_data/x86/apple.h>
+#include <linaos/uuid.h>
 
 /* Apple _DSM device properties GUID */
 static const guid_t apple_prp_guid =

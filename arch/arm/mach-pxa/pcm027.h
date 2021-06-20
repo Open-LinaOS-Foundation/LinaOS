@@ -2,7 +2,7 @@
 /*
  * arch/arm/mach-pxa/include/mach/pcm027.h
  *
- * (c) 2003 Phytec Messtechnik GmbH <armlinux@phytec.de>
+ * (c) 2003 Phytec Messtechnik GmbH <armlinaos@phytec.de>
  * (c) 2007 Juergen Beisert <j.beisert@pengutronix.de>
  */
 

@@ -10,7 +10,7 @@
 #include "seq_oss_timer.h"
 #include "seq_oss_event.h"
 #include <sound/seq_oss_legacy.h>
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 /*
  */

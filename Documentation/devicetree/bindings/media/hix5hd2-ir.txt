@@ -11,7 +11,7 @@ Required properties:
 	- clocks: clock phandle and specifier pair.
 
 Optional properties:
-	- linux,rc-map-name: see rc.txt file in the same directory.
+	- linaos,rc-map-name: see rc.txt file in the same directory.
 	- hisilicon,power-syscon: DEPRECATED. Don't use this in new dts files.
 		Provide correct clocks instead.
 
@@ -22,5 +22,5 @@ Example node:
 		reg = <0xf8001000 0x1000>;
 		interrupts = <0 47 4>;
 		clocks = <&clock HIX5HD2_IR_CLOCK>;
-		linux,rc-map-name = "rc-tivo";
+		linaos,rc-map-name = "rc-tivo";
 	};

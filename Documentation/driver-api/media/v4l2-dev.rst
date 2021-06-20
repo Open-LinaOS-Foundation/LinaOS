@@ -234,7 +234,7 @@ to select the specified device node number, you can call the function
 :c:func:`video_register_device_no_warn` instead.
 
 Whenever a device node is created some attributes are also created for you.
-If you look in ``/sys/class/video4linux`` you see the devices. Go into e.g.
+If you look in ``/sys/class/video4linaos`` you see the devices. Go into e.g.
 ``video0`` and you will see 'name', 'dev_debug' and 'index' attributes. The
 'name' attribute is the 'name' field of the video_device struct. The
 'dev_debug' attribute can be used to enable core debugging. See the next
@@ -267,7 +267,7 @@ video device debugging
 ----------------------
 
 The 'dev_debug' attribute that is created for each video, vbi, radio or swradio
-device in ``/sys/class/video4linux/<devX>/`` allows you to enable logging of
+device in ``/sys/class/video4linaos/<devX>/`` allows you to enable logging of
 file operations.
 
 It is a bitmask and the following bits can be set:

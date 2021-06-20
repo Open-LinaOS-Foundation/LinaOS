@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/mm/cache.c
+ *  linaos/arch/m68k/mm/cache.c
  *
  *  Instruction cache handling
  *
  *  Copyright (C) 1995  Hamish Macdonald
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <asm/cacheflush.h>
 #include <asm/traps.h>
 

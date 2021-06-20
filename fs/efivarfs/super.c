@@ -4,15 +4,15 @@
  * Copyright (C) 2012 Jeremy Kerr <jeremy.kerr@canonical.com>
  */
 
-#include <linux/ctype.h>
-#include <linux/efi.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/ucs2_string.h>
-#include <linux/slab.h>
-#include <linux/magic.h>
+#include <linaos/ctype.h>
+#include <linaos/efi.h>
+#include <linaos/fs.h>
+#include <linaos/fs_context.h>
+#include <linaos/module.h>
+#include <linaos/pagemap.h>
+#include <linaos/ucs2_string.h>
+#include <linaos/slab.h>
+#include <linaos/magic.h>
 
 #include "internal.h"
 

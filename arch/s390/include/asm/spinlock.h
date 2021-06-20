@@ -10,7 +10,7 @@
 #ifndef __ASM_SPINLOCK_H
 #define __ASM_SPINLOCK_H
 
-#include <linux/smp.h>
+#include <linaos/smp.h>
 #include <asm/atomic_ops.h>
 #include <asm/barrier.h>
 #include <asm/processor.h>

@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/vfp/vfpmodule.c
+ *  linaos/arch/arm/vfp/vfpmodule.c
  *
  *  Copyright (C) 2004 ARM Limited.
  *  Written by Deep Blue Solutions Limited.
  */
-#include <linux/types.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/hardirq.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/signal.h>
-#include <linux/sched/signal.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/uaccess.h>
-#include <linux/user.h>
-#include <linux/export.h>
+#include <linaos/types.h>
+#include <linaos/cpu.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/hardirq.h>
+#include <linaos/kernel.h>
+#include <linaos/notifier.h>
+#include <linaos/signal.h>
+#include <linaos/sched/signal.h>
+#include <linaos/smp.h>
+#include <linaos/init.h>
+#include <linaos/uaccess.h>
+#include <linaos/user.h>
+#include <linaos/export.h>
 
 #include <asm/cp15.h>
 #include <asm/cputype.h>

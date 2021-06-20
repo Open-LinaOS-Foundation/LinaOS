@@ -17,12 +17,12 @@
  * Authors: Will Deacon <will@kernel.org> and Marc Zyngier <maz@kernel.org>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/cpu.h>
-#include <linux/device.h>
-#include <linux/nospec.h>
-#include <linux/prctl.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/cpu.h>
+#include <linaos/device.h>
+#include <linaos/nospec.h>
+#include <linaos/prctl.h>
+#include <linaos/sched/task_stack.h>
 
 #include <asm/insn.h>
 #include <asm/spectre.h>

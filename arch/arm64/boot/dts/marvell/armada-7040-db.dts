@@ -170,7 +170,7 @@
 			};
 
 			partition@200000 {
-				label = "Linux";
+				label = "LinaOS";
 				reg = <0x200000 0xe00000>;
 			};
 

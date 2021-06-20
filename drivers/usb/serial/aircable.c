@@ -27,21 +27,21 @@
  * one.
  *
  * I have taken some info from a Greg Kroah-Hartman article:
- * http://www.linuxjournal.com/article/6573
- * And from Linux Device Driver Kit CD, which is a great work, the authors taken
+ * http://www.linaosjournal.com/article/6573
+ * And from LinaOS Device Driver Kit CD, which is a great work, the authors taken
  * the work to recompile lots of information an knowledge in drivers development
  * and made it all available inside a cd.
- * URL: http://kernel.org/pub/linux/kernel/people/gregkh/ddk/
+ * URL: http://kernel.org/pub/linaos/kernel/people/gregkh/ddk/
  *
  */
 
 #include <asm/unaligned.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/tty_flip.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <linaos/tty.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/tty_flip.h>
+#include <linaos/usb.h>
+#include <linaos/usb/serial.h>
 
 /* Vendor and Product ID */
 #define AIRCABLE_VID		0x16CA

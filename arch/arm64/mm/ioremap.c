@@ -9,10 +9,10 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/io.h>
 
 #include <asm/fixmap.h>
 #include <asm/tlbflush.h>

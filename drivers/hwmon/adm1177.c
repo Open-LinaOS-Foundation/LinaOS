@@ -5,13 +5,13 @@
  * Copyright 2015-2019 Analog Devices Inc.
  */
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/bits.h>
+#include <linaos/device.h>
+#include <linaos/hwmon.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/regulator/consumer.h>
 
 /*  Command Byte Operations */
 #define ADM1177_CMD_V_CONT	BIT(0)

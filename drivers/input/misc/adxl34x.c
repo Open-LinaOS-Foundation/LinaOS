@@ -2,20 +2,20 @@
 /*
  * ADXL345/346 Three-Axis Digital Accelerometers
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.uclinaos.org/
  *
  * Copyright (C) 2009 Michael Hennerich, Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/input/adxl34x.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/input/adxl34x.h>
+#include <linaos/module.h>
 
 #include "adxl34x.h"
 
@@ -908,6 +908,6 @@ int adxl34x_remove(struct adxl34x *ac)
 }
 EXPORT_SYMBOL_GPL(adxl34x_remove);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinaos.org>");
 MODULE_DESCRIPTION("ADXL345/346 Three-Axis Digital Accelerometer Driver");
 MODULE_LICENSE("GPL");

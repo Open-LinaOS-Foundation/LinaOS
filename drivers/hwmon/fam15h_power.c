@@ -6,17 +6,17 @@
  * Author: Andreas Herrmann <herrmann.der.user@googlemail.com>
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/bitops.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/time.h>
-#include <linux/sched.h>
+#include <linaos/err.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/bitops.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/time.h>
+#include <linaos/sched.h>
 #include <asm/processor.h>
 #include <asm/msr.h>
 

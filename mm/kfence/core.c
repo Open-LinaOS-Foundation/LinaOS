@@ -7,24 +7,24 @@
 
 #define pr_fmt(fmt) "kfence: " fmt
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/debugfs.h>
-#include <linux/irq_work.h>
-#include <linux/kcsan-checks.h>
-#include <linux/kfence.h>
-#include <linux/kmemleak.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/memblock.h>
-#include <linux/moduleparam.h>
-#include <linux/random.h>
-#include <linux/rcupdate.h>
-#include <linux/sched/sysctl.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <linaos/atomic.h>
+#include <linaos/bug.h>
+#include <linaos/debugfs.h>
+#include <linaos/irq_work.h>
+#include <linaos/kcsan-checks.h>
+#include <linaos/kfence.h>
+#include <linaos/kmemleak.h>
+#include <linaos/list.h>
+#include <linaos/lockdep.h>
+#include <linaos/memblock.h>
+#include <linaos/moduleparam.h>
+#include <linaos/random.h>
+#include <linaos/rcupdate.h>
+#include <linaos/sched/sysctl.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
 
 #include <asm/kfence.h>
 

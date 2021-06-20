@@ -4,11 +4,11 @@
  *
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
-#include <linux/init.h>
-#include <linux/mfd/syscon.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
+#include <linaos/init.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/reboot.h>
+#include <linaos/regmap.h>
+#include <linaos/of.h>
 
 #define INTEGRATOR_HDR_CTRL_OFFSET	0x0C
 #define INTEGRATOR_HDR_LOCK_OFFSET	0x14

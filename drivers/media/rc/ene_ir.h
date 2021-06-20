@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2010 Maxim Levitsky <maximlevitsky@gmail.com>
  */
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 
 /* hardware address */

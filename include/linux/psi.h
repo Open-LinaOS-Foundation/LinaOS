@@ -1,10 +1,10 @@
 #ifndef _LINUX_PSI_H
 #define _LINUX_PSI_H
 
-#include <linux/jump_label.h>
-#include <linux/psi_types.h>
-#include <linux/sched.h>
-#include <linux/poll.h>
+#include <linaos/jump_label.h>
+#include <linaos/psi_types.h>
+#include <linaos/sched.h>
+#include <linaos/poll.h>
 
 struct seq_file;
 struct css_set;

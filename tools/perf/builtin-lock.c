@@ -26,11 +26,11 @@
 #include <math.h>
 #include <limits.h>
 
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
-#include <linux/err.h>
+#include <linaos/list.h>
+#include <linaos/hash.h>
+#include <linaos/kernel.h>
+#include <linaos/zalloc.h>
+#include <linaos/err.h>
 
 static struct perf_session *session;
 
@@ -89,7 +89,7 @@ struct lock_stat {
 
 /*
  * MAX_LOCK_DEPTH
- * Imported from include/linux/sched.h.
+ * Imported from include/linaos/sched.h.
  * Should this be synchronized?
  */
 #define MAX_LOCK_DEPTH 48

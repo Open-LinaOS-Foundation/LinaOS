@@ -13,9 +13,9 @@
  *    Copyright 2007 David Gibson <dwg@au1.ibm.com>, IBM Corporation.
  */
 
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/rtc.h>
+#include <linaos/init.h>
+#include <linaos/of_platform.h>
+#include <linaos/rtc.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>
@@ -24,8 +24,8 @@
 #include <asm/uic.h>
 #include <asm/ppc4xx.h>
 #include <asm/dcr.h>
-#include <linux/interrupt.h>
-#include <linux/of_irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_irq.h>
 #include "fsp2.h"
 
 #define FSP2_BUS_ERR	"ibm,bus-error-irq"

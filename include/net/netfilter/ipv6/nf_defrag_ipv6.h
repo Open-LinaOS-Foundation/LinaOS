@@ -2,8 +2,8 @@
 #ifndef _NF_DEFRAG_IPV6_H
 #define _NF_DEFRAG_IPV6_H
 
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <linaos/skbuff.h>
+#include <linaos/types.h>
 
 int nf_defrag_ipv6_enable(struct net *net);
 void nf_defrag_ipv6_disable(struct net *net);

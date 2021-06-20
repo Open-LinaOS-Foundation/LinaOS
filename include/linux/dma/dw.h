@@ -9,11 +9,11 @@
 #ifndef _DMA_DW_H
 #define _DMA_DW_H
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/dmaengine.h>
 
-#include <linux/platform_data/dma-dw.h>
+#include <linaos/platform_data/dma-dw.h>
 
 struct dw_dma;
 

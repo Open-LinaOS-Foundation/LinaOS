@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: BSD-3-Clause-Clear */
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef ATH11K_CORE_H
 #define ATH11K_CORE_H
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/bitfield.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/bitfield.h>
 #include "qmi.h"
 #include "htc.h"
 #include "wmi.h"

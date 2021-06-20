@@ -2,7 +2,7 @@
 #define __LINUX_RWLOCK_TYPES_H
 
 /*
- * include/linux/rwlock_types.h - generic rwlock type definitions
+ * include/linaos/rwlock_types.h - generic rwlock type definitions
  *				  and initializers
  *
  * portions Copyright 2005, Red Hat, Inc., Ingo Molnar

@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the nios2 linux kernel.
+# Makefile for the nios2 linaos kernel.
 #
 
 extra-y	+= head.o
-extra-y	+= vmlinux.lds
+extra-y	+= vmlinaos.lds
 
 obj-y	+= cpuinfo.o
 obj-y	+= entry.o

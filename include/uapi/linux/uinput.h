@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  *  User level driver support for input subsystem
  *
@@ -40,8 +40,8 @@
 #ifndef _UAPI__UINPUT_H_
 #define _UAPI__UINPUT_H_
 
-#include <linux/types.h>
-#include <linux/input.h>
+#include <linaos/types.h>
+#include <linaos/input.h>
 
 #define UINPUT_VERSION		5
 #define UINPUT_MAX_NAME_SIZE	80

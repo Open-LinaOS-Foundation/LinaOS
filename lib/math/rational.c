@@ -8,10 +8,10 @@
  * helper functions when coping with rational numbers
  */
 
-#include <linux/rational.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/minmax.h>
+#include <linaos/rational.h>
+#include <linaos/compiler.h>
+#include <linaos/export.h>
+#include <linaos/minmax.h>
 
 /*
  * calculate best rational approximation for a given fraction

@@ -21,7 +21,7 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 #include <asm/iosf_mbi.h>
 
 #include "i915_drv.h"

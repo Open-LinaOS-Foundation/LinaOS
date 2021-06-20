@@ -7,10 +7,10 @@
  * Copyright (C) 1998-2000  Jens Axboe <axboe@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/cdrom.h>
-#include <linux/ide.h>
+#include <linaos/kernel.h>
+#include <linaos/blkdev.h>
+#include <linaos/cdrom.h>
+#include <linaos/ide.h>
 #include <scsi/scsi.h>
 #include "ide-cd.h"
 

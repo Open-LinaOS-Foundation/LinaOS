@@ -6,12 +6,12 @@
  *  Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/dccp.h>
-#include <linux/icmp.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/random.h>
+#include <linaos/dccp.h>
+#include <linaos/icmp.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/random.h>
 
 #include <net/icmp.h>
 #include <net/inet_common.h>
@@ -156,7 +156,7 @@ static inline void dccp_do_pmtu_discovery(struct sock *sk,
 	const struct dccp_sock *dp = dccp_sk(sk);
 
 	/* We are not interested in DCCP_LISTEN and request_socks (RESPONSEs
-	 * send out by Linux are always < 576bytes so they should go through
+	 * send out by LinaOS are always < 576bytes so they should go through
 	 * unfragmented).
 	 */
 	if (sk->sk_state == DCCP_LISTEN)
@@ -347,7 +347,7 @@ static int dccp_v4_err(struct sk_buff *skb, u32 info)
 	 * Note, that in modern internet, where routing is unreliable
 	 * and in each dark corner broken firewalls sit, sending random
 	 * errors ordered by their masters even this two messages finally lose
-	 * their original sense (even Linux sends invalid PORT_UNREACHs)
+	 * their original sense (even LinaOS sends invalid PORT_UNREACHs)
 	 *
 	 * Now we are in compliance with RFCs.
 	 *							--ANK (980905)

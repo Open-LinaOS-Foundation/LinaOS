@@ -5,7 +5,7 @@
  *
  * Split from the Comedi "8255" driver module.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
@@ -28,7 +28,7 @@
  * supported is mode 0.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "../comedidev.h"
 
 #include "8255.h"

@@ -10,17 +10,17 @@
  *
  * See Documentation/admin-guide/perf/qcom_l3_pmu.rst for more details.
  *
- * Copyright (c) 2015-2017, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2017, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/bitops.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/perf_event.h>
+#include <linaos/platform_device.h>
 
 /*
  * General constants

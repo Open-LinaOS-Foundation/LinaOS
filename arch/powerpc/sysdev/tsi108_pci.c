@@ -8,16 +8,16 @@
  * 	   Add pci interrupt router host
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/machdep.h>
 #include <asm/pci-bridge.h>
 #include <asm/tsi108.h>
@@ -325,7 +325,7 @@ static inline unsigned int get_pci_source(void)
 
 
 /*
- * Linux descriptor level callbacks
+ * LinaOS descriptor level callbacks
  */
 
 static void tsi108_pci_irq_unmask(struct irq_data *d)

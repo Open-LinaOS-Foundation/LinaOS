@@ -2,7 +2,7 @@
 #ifndef _CRYPTO_MD5_H
 #define _CRYPTO_MD5_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define MD5_DIGEST_SIZE		16
 #define MD5_HMAC_BLOCK_SIZE	64

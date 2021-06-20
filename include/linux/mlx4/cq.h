@@ -33,11 +33,11 @@
 #ifndef MLX4_CQ_H
 #define MLX4_CQ_H
 
-#include <linux/types.h>
-#include <uapi/linux/if_ether.h>
+#include <linaos/types.h>
+#include <uapi/linaos/if_ether.h>
 
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/doorbell.h>
+#include <linaos/mlx4/device.h>
+#include <linaos/mlx4/doorbell.h>
 
 struct mlx4_cqe {
 	__be32			vlan_my_qpn;

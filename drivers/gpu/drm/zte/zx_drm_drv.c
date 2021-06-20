@@ -4,13 +4,13 @@
  * Copyright 2016 ZTE Corporation.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of_graph.h>
+#include <linaos/of_platform.h>
+#include <linaos/spinlock.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_crtc.h>

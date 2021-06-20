@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2017 Intel Corporation
  *
- * Author: Lu Baolu <baolu.lu@linux.intel.com>
+ * Author: Lu Baolu <baolu.lu@linaos.intel.com>
  */
 
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include "xhci.h"
 #include "xhci-debugfs.h"

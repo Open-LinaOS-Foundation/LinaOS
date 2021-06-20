@@ -11,7 +11,7 @@
  * Author: Rickard Andersson <rickard.andersson@stericsson.com>
  */
 
-#include <linux/regulator/machine.h>
+#include <linaos/regulator/machine.h>
 
 struct device;
 

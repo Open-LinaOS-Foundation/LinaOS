@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /**
  * compress.c - NTFS kernel compressed attributes handling.
- *		Part of the Linux-NTFS project.
+ *		Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
  */
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <linaos/fs.h>
+#include <linaos/buffer_head.h>
+#include <linaos/blkdev.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
 
 #include "attrib.h"
 #include "inode.h"

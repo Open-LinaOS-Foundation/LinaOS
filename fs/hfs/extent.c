@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfs/extent.c
+ *  linaos/fs/hfs/extent.c
  *
  * Copyright (C) 1995-1997  Paul H. Hargrove
  * (C) 2003 Ardis Technologies <roman@ardistech.com>
@@ -8,7 +8,7 @@
  * This file contains the functions related to the extents B-tree.
  */
 
-#include <linux/pagemap.h>
+#include <linaos/pagemap.h>
 
 #include "hfs_fs.h"
 #include "btree.h"

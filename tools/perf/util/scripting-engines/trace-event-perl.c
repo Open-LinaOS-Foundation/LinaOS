@@ -25,8 +25,8 @@
 #include <string.h>
 #include <ctype.h>
 #include <errno.h>
-#include <linux/bitmap.h>
-#include <linux/time64.h>
+#include <linaos/bitmap.h>
+#include <linaos/time64.h>
 
 #include <stdbool.h>
 /* perl needs the following define, right after including stdbool.h */
@@ -724,7 +724,7 @@ sub print_backtrace\n\
 		"\n# Packed byte string args of process_event():\n"
 		"#\n"
 		"# $event:\tunion perf_event\tutil/event.h\n"
-		"# $attr:\tstruct perf_event_attr\tlinux/perf_event.h\n"
+		"# $attr:\tstruct perf_event_attr\tlinaos/perf_event.h\n"
 		"# $sample:\tstruct perf_sample\tutil/event.h\n"
 		"# $raw_data:\tperf_sample->raw_data\tutil/event.h\n"
 		"\n"

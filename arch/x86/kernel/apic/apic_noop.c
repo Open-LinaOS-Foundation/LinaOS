@@ -9,8 +9,8 @@
  * to not uglify the caller's code and allow to call (some) apic routines
  * like self-ipi, etc...
  */
-#include <linux/cpumask.h>
-#include <linux/thread_info.h>
+#include <linaos/cpumask.h>
+#include <linaos/thread_info.h>
 
 #include <asm/apic.h>
 

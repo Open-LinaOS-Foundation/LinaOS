@@ -8,7 +8,7 @@
 #ifndef _DRXD_FIRM_H_
 #define _DRXD_FIRM_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "drxd_map_firm.h"
 
 #define VERSION_MAJOR 1

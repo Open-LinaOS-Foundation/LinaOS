@@ -1,5 +1,5 @@
 /*
- * linux/fs/nls/nls_ascii.c
+ * linaos/fs/nls/nls_ascii.c
  *
  * Charset ascii translation tables.
  * Generated automatically from the Unicode and charset
@@ -7,11 +7,11 @@
  * The Unicode to charset table has only exact mappings.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/errno.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/nls.h>
+#include <linaos/errno.h>
 
 static const wchar_t charset2uni[256] = {
 	/* 0x00*/

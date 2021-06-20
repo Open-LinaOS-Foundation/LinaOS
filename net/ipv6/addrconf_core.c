@@ -4,7 +4,7 @@
  * not configured or static.
  */
 
-#include <linux/export.h>
+#include <linaos/export.h>
 #include <net/ipv6.h>
 #include <net/ipv6_stubs.h>
 #include <net/addrconf.h>

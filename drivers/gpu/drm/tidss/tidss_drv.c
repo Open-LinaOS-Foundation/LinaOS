@@ -4,10 +4,10 @@
  * Author: Tomi Valkeinen <tomi.valkeinen@ti.com>
  */
 
-#include <linux/console.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linaos/console.h>
+#include <linaos/of_device.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

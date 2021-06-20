@@ -9,7 +9,7 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 
 int ef100_netdev_event(struct notifier_block *this,
 		       unsigned long event, void *ptr);

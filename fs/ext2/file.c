@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext2/file.c
+ *  linaos/fs/ext2/file.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/fs/minix/file.c
+ *  linaos/fs/minix/file.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -19,12 +19,12 @@
  * 	(jj@sunsite.ms.mff.cuni.cz)
  */
 
-#include <linux/time.h>
-#include <linux/pagemap.h>
-#include <linux/dax.h>
-#include <linux/quotaops.h>
-#include <linux/iomap.h>
-#include <linux/uio.h>
+#include <linaos/time.h>
+#include <linaos/pagemap.h>
+#include <linaos/dax.h>
+#include <linaos/quotaops.h>
+#include <linaos/iomap.h>
+#include <linaos/uio.h>
 #include "ext2.h"
 #include "xattr.h"
 #include "acl.h"

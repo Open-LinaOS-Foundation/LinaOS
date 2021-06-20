@@ -4,13 +4,13 @@
  *
  * Copyright 2008-2009 Paul Mackerras, IBM Corporation.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/perf_event.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/clock.h>
+#include <linaos/perf_event.h>
+#include <linaos/percpu.h>
+#include <linaos/hardirq.h>
+#include <linaos/uaccess.h>
 #include <asm/reg.h>
 #include <asm/pmc.h>
 #include <asm/machdep.h>

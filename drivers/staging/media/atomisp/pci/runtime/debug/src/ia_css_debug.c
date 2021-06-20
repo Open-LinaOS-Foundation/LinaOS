@@ -31,7 +31,7 @@
 #define __INLINE_STREAM2MMIO__
 #endif
 
-#include <linux/string.h> /* for strscpy() */
+#include <linaos/string.h> /* for strscpy() */
 
 #include "ia_css_debug.h"
 #include "ia_css_debug_pipe.h"

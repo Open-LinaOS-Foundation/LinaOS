@@ -8,13 +8,13 @@
 
 #undef DEBUG_LOW
 
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/of.h>
-#include <linux/processor.h>
-#include <linux/threads.h>
-#include <linux/smp.h>
-#include <linux/pgtable.h>
+#include <linaos/spinlock.h>
+#include <linaos/bitops.h>
+#include <linaos/of.h>
+#include <linaos/processor.h>
+#include <linaos/threads.h>
+#include <linaos/smp.h>
+#include <linaos/pgtable.h>
 
 #include <asm/machdep.h>
 #include <asm/mmu.h>

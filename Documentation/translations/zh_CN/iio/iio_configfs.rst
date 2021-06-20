@@ -38,7 +38,7 @@ configfs轻松配置的对象（例如：设备，触发器）。
 IIO默认configfs组之一是“触发器”组。 挂载configfs后可以自动访问它，并且可
 以在/config/iio/triggers下找到。
 
-IIO软件触发器为创建多种触发器类型提供了支持。 通常在include/linux/iio
+IIO软件触发器为创建多种触发器类型提供了支持。 通常在include/linaos/iio
 /sw_trigger.h：中的接口下将新的触发器类型实现为单独的内核模块：
 ::
 
@@ -46,7 +46,7 @@ IIO软件触发器为创建多种触发器类型提供了支持。 通常在incl
    * drivers/iio/trigger/iio-trig-sample.c
    * 一种新触发器类型的内核模块实例
    */
-  #include <linux/iio/sw_trigger.h>
+  #include <linaos/iio/sw_trigger.h>
 
 
   static struct iio_sw_trigger *iio_trig_sample_probe(const char *name)

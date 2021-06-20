@@ -4,8 +4,8 @@
  * Copyright © 2014-2016 Intel Corporation
  */
 
-#include <linux/pagevec.h>
-#include <linux/swap.h>
+#include <linaos/pagevec.h>
+#include <linaos/swap.h>
 
 #include "gem/i915_gem_region.h"
 #include "i915_drv.h"

@@ -11,7 +11,7 @@
  * Copyright (c) 2000-2006 Silicon Graphics, Inc.  All rights reserved.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/sal.h>
 
 // SGI Specific Calls

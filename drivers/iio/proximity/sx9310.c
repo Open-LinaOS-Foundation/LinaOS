@@ -5,32 +5,32 @@
  * Driver for Semtech's SX9310/SX9311 capacitive proximity/button solution.
  * Based on SX9500 driver and Semtech driver using the input framework
  * <https://my.syncplicity.com/share/teouwsim8niiaud/
- *          linux-driver-SX9310_NoSmartHSensing>.
+ *          linaos-driver-SX9310_NoSmartHSensing>.
  * Reworked in April 2019 by Evan Green <evgreen@chromium.org>
  * and in January 2020 by Daniel Campello <campello@chromium.org>.
  */
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/bitfield.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/log2.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/pm.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/trigger_consumer.h>
 
 /* Register definitions. */
 #define SX9310_REG_IRQ_SRC				0x00

@@ -5,10 +5,10 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Pan Xiuli <xiuli.pan@linux.intel.com>
+// Author: Pan Xiuli <xiuli.pan@linaos.intel.com>
 //
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/sof.h>
 #include <sound/sof/xtensa.h>
 #include "../sof-priv.h"

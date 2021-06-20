@@ -6,7 +6,7 @@
 
 #ifndef WILC_HIF_H
 #define WILC_HIF_H
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 #include "wlan_if.h"
 
 enum {

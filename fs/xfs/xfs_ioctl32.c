@@ -3,8 +3,8 @@
  * Copyright (c) 2004-2005 Silicon Graphics, Inc.
  * All Rights Reserved.
  */
-#include <linux/mount.h>
-#include <linux/fsmap.h>
+#include <linaos/mount.h>
+#include <linaos/fsmap.h>
 #include "xfs.h"
 #include "xfs_fs.h"
 #include "xfs_shared.h"

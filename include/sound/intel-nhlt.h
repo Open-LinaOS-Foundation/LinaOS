@@ -8,7 +8,7 @@
 #ifndef __INTEL_NHLT_H__
 #define __INTEL_NHLT_H__
 
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 
 #if IS_ENABLED(CONFIG_ACPI) && IS_ENABLED(CONFIG_SND_INTEL_NHLT)
 

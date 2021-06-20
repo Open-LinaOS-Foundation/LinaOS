@@ -4,7 +4,7 @@
 #ifndef __LIMA_DUMP_H__
 #define __LIMA_DUMP_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * dump file format for all the information to start a lima task

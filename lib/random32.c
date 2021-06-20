@@ -32,13 +32,13 @@
  * s1 > 1, s2 > 7, s3 > 15, s4 > 127.
  */
 
-#include <linux/types.h>
-#include <linux/percpu.h>
-#include <linux/export.h>
-#include <linux/jiffies.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
+#include <linaos/types.h>
+#include <linaos/percpu.h>
+#include <linaos/export.h>
+#include <linaos/jiffies.h>
+#include <linaos/random.h>
+#include <linaos/sched.h>
+#include <linaos/bitops.h>
 #include <asm/unaligned.h>
 #include <trace/events/random.h>
 

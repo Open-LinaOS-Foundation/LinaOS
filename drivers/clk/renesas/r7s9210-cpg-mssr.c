@@ -9,9 +9,9 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
 #include <dt-bindings/clock/r7s9210-cpg-mssr.h>
 #include "renesas-cpg-mssr.h"
 

@@ -45,7 +45,7 @@
 #include "libaio.h"
 #define IOCB_FLAG_RESFD         (1 << 0)
 
-#include <linux/usb/functionfs.h>
+#include <linaos/usb/functionfs.h>
 
 #define BUF_LEN		8192
 #define BUFS_MAX	128

@@ -1,5 +1,5 @@
 ======================
-Linux Kernel Selftests
+LinaOS Kernel Selftests
 ======================
 
 The kernel contains a set of "self tests" under the tools/testing/selftests/
@@ -262,7 +262,7 @@ kselftest.  We use kselftests for lib/ as an example.
 .. code-block:: sh
 
    # Assumes you have booted a fresh build of this kernel tree
-   cd /path/to/linux/tree
+   cd /path/to/linaos/tree
    make kselftest-merge
    make modules
    sudo make modules_install

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/minix/bitmap.c
+ *  linaos/fs/minix/bitmap.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -13,9 +13,9 @@
 /* bitmap.c contains the code that handles the inode and block bitmaps */
 
 #include "minix.h"
-#include <linux/buffer_head.h>
-#include <linux/bitops.h>
-#include <linux/sched.h>
+#include <linaos/buffer_head.h>
+#include <linaos/bitops.h>
+#include <linaos/sched.h>
 
 static DEFINE_SPINLOCK(bitmap_lock);
 

@@ -5,10 +5,10 @@
  * Copyright (C) 2012 Sascha Hauer, Pengutronix
  */
 
-#include <linux/component.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
+#include <linaos/component.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/videodev2.h>
 
 #include <video/of_display_timing.h>
 

@@ -3,7 +3,7 @@
 #ifndef _BPF_TESTMOD_H
 #define _BPF_TESTMOD_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct bpf_testmod_test_read_ctx {
 	char *buf;

@@ -4,11 +4,11 @@
  * Copyright 2018, Paul Cercueil <paul@crapouillou.net>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linaos/bitops.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
 
 #include <dt-bindings/clock/jz4770-cgu.h>
 

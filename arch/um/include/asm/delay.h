@@ -2,7 +2,7 @@
 #ifndef __UM_DELAY_H
 #define __UM_DELAY_H
 #include <asm-generic/delay.h>
-#include <linux/time-internal.h>
+#include <linaos/time-internal.h>
 
 static inline void um_ndelay(unsigned long nsecs)
 {

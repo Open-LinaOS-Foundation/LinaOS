@@ -1,5 +1,5 @@
 /*
- *  linux/arch/h8300/kernel/ptrace.c
+ *  linaos/arch/h8300/kernel/ptrace.c
  *
  *  Copyright 2015 Yoshinori Sato <ysato@users.sourceforge.jp>
  *
@@ -8,13 +8,13 @@
  * this archive for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/audit.h>
-#include <linux/tracehook.h>
-#include <linux/regset.h>
-#include <linux/elf.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
+#include <linaos/audit.h>
+#include <linaos/tracehook.h>
+#include <linaos/regset.h>
+#include <linaos/elf.h>
 
 #define CCR_MASK 0x6f    /* mode/imask not set */
 #define EXR_MASK 0x80    /* modify only T */

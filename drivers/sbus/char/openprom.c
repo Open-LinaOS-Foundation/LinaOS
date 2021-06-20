@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux/SPARC PROM Configuration Driver
+ * LinaOS/SPARC PROM Configuration Driver
  * Copyright (C) 1996 Thomas K. Dyas (tdyas@noc.rutgers.edu)
  * Copyright (C) 1996 Eddie C. Dost  (ecd@skynet.be)
  *
@@ -16,21 +16,21 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
-#include <linux/miscdevice.h>
-#include <linux/init.h>
-#include <linux/fs.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/string.h>
+#include <linaos/miscdevice.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
 #include <asm/oplib.h>
 #include <asm/prom.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/openpromio.h>
 #ifdef CONFIG_PCI
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #endif
 
 MODULE_AUTHOR("Thomas K. Dyas (tdyas@noc.rutgers.edu) and Eddie C. Dost  (ecd@skynet.be)");

@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0-only
 mkboot
 elf2ecoff
-vmlinux.*
+vmlinaos.*
 vmlinuz.*
 zImage
 zImage.tmp

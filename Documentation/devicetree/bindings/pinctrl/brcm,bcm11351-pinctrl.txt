@@ -43,7 +43,7 @@ effect on any properties that are omitted.
 
 The pin group node accepts a subset of the generic pin config properties. For
 details generic pin config properties, please refer to pinctrl-bindings.txt
-and <include/linux/pinctrl/pinconfig-generic.h>.
+and <include/linaos/pinctrl/pinconfig-generic.h>.
 
 Each pin controlled by this pin controller belong to one of three types:
 Standard, I2C, and HDMI.  Each type accepts a different set of pin config

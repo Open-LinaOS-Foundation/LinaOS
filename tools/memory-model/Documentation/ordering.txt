@@ -1,5 +1,5 @@
 This document gives an overview of the categories of memory-ordering
-operations provided by the Linux-kernel memory model (LKMM).
+operations provided by the LinaOS-kernel memory model (LKMM).
 
 
 Categories of Ordering
@@ -48,14 +48,14 @@ in kernels built with CONFIG_SMP=n.  Therefore, if you are writing
 a device driver, which must correctly order accesses to a physical
 device even in kernels built with CONFIG_SMP=n, please use the
 ordering primitives provided for that purpose.  For example, instead of
-smp_mb(), use mb().  See the "Linux Kernel Device Drivers" book or the
+smp_mb(), use mb().  See the "LinaOS Kernel Device Drivers" book or the
 https://lwn.net/Articles/698014/ article for more information.
 
 
 Full Memory Barriers
 --------------------
 
-The Linux-kernel primitives that provide full ordering include:
+The LinaOS-kernel primitives that provide full ordering include:
 
 o	The smp_mb() full memory barrier.
 
@@ -173,7 +173,7 @@ to another.
 Write Memory Barrier
 --------------------
 
-The Linux kernel's write memory barrier is smp_wmb().  If a CPU executes
+The LinaOS kernel's write memory barrier is smp_wmb().  If a CPU executes
 the following code:
 
 	WRITE_ONCE(x, 1);
@@ -198,14 +198,14 @@ as follows:
 
 Therefore, if you need to use smp_wmb() with unmarked C-language writes,
 you will need to make sure that none of the compilers used to build
-the Linux kernel carry out this sort of transformation, both now and in
+the LinaOS kernel carry out this sort of transformation, both now and in
 the future.
 
 
 Read Memory Barrier
 -------------------
 
-The Linux kernel's read memory barrier is smp_rmb().  If a CPU executes
+The LinaOS kernel's read memory barrier is smp_rmb().  If a CPU executes
 the following code:
 
 	r0 = READ_ONCE(y);
@@ -219,7 +219,7 @@ in the "Acquire Operations" section below.
 Compiler Barrier
 ----------------
 
-The Linux kernel's compiler barrier is barrier().  This primitive
+The LinaOS kernel's compiler barrier is barrier().  This primitive
 prohibits compiler code-motion optimizations that might move memory
 references across the point in the code containing the barrier(), but
 does not constrain hardware memory ordering.  For example, this can be
@@ -242,7 +242,7 @@ equivalent in their implementations.
 Ordered Memory Accesses
 =======================
 
-The Linux kernel provides a wide variety of ordered memory accesses:
+The LinaOS kernel provides a wide variety of ordered memory accesses:
 
 a.	Release operations.
 
@@ -398,7 +398,7 @@ usually paired with a call to a call to rcu_assign_pointer() for that
 same pointer in much the same way that a call to smp_load_acquire() is
 paired with a call to smp_store_release().  Calls to rcu_dereference()
 and rcu_assign_pointer are often buried in other APIs, for example,
-the RCU list API members defined in include/linux/rculist.h.  For more
+the RCU list API members defined in include/linaos/rculist.h.  For more
 information, please see the docbook headers in that file, the most
 recent LWN article on the RCU API (https://lwn.net/Articles/777036/),
 and of course the material in Documentation/RCU.
@@ -406,7 +406,7 @@ and of course the material in Documentation/RCU.
 If the pointer value is manipulated between the rcu_dereference()
 that returned it and a later dereference(), please read
 Documentation/RCU/rcu_dereference.rst.  It can also be quite helpful to
-review uses in the Linux kernel.
+review uses in the LinaOS kernel.
 
 
 Control Dependencies
@@ -431,7 +431,7 @@ the write to "b".
 
 However, control dependencies are easily destroyed by compiler
 optimizations, so any use of control dependencies must take into account
-all of the compilers used to build the Linux kernel.  Please see the
+all of the compilers used to build the LinaOS kernel.  Please see the
 "control-dependencies.txt" file for more information.
 
 

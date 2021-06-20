@@ -6,13 +6,13 @@
  *                    Signal 11 Software
  */
 
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/ieee802154.h>
-#include <linux/irq.h>
+#include <linaos/spi/spi.h>
+#include <linaos/interrupt.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/ieee802154.h>
+#include <linaos/irq.h>
 #include <net/cfg802154.h>
 #include <net/mac802154.h>
 

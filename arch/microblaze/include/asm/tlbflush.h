@@ -8,8 +8,8 @@
 #ifndef _ASM_MICROBLAZE_TLBFLUSH_H
 #define _ASM_MICROBLAZE_TLBFLUSH_H
 
-#include <linux/sched.h>
-#include <linux/threads.h>
+#include <linaos/sched.h>
+#include <linaos/threads.h>
 #include <asm/processor.h>	/* For TASK_SIZE */
 #include <asm/mmu.h>
 #include <asm/page.h>

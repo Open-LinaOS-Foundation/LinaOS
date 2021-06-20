@@ -7,16 +7,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/random.h>
-#include <linux/highmem.h>
-#include <linux/sched.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/filter.h>
+#include <linaos/bpf.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/random.h>
+#include <linaos/highmem.h>
+#include <linaos/sched.h>
 
 /* General test specific settings */
 #define MAX_SUBTESTS	3

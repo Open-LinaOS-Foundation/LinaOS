@@ -8,8 +8,8 @@
 #ifndef _VMW_VMCI_DEF_H_
 #define _VMW_VMCI_DEF_H_
 
-#include <linux/atomic.h>
-#include <linux/bits.h>
+#include <linaos/atomic.h>
+#include <linaos/bits.h>
 
 /* Register offsets. */
 #define VMCI_STATUS_ADDR      0x00

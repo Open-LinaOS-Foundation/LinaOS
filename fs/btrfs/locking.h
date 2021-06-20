@@ -6,9 +6,9 @@
 #ifndef BTRFS_LOCKING_H
 #define BTRFS_LOCKING_H
 
-#include <linux/atomic.h>
-#include <linux/wait.h>
-#include <linux/percpu_counter.h>
+#include <linaos/atomic.h>
+#include <linaos/wait.h>
+#include <linaos/percpu_counter.h>
 #include "extent_io.h"
 
 #define BTRFS_WRITE_LOCK 1

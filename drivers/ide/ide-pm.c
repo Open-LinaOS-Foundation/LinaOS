@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/ide.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/ide.h>
 
 int generic_ide_suspend(struct device *dev, pm_message_t mesg)
 {

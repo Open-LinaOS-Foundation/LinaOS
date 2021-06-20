@@ -13,7 +13,7 @@
  * more details.
  */
 
-#include <linux/string.h> /* for memcpy() */
+#include <linaos/string.h> /* for memcpy() */
 
 #include <type_support.h>
 #include "system_global.h"

@@ -3,12 +3,12 @@
 #define __LINUX_MROUTE6_H
 
 
-#include <linux/pim.h>
-#include <linux/skbuff.h>	/* for struct sk_buff_head */
+#include <linaos/pim.h>
+#include <linaos/skbuff.h>	/* for struct sk_buff_head */
 #include <net/net_namespace.h>
-#include <uapi/linux/mroute6.h>
-#include <linux/mroute_base.h>
-#include <linux/sockptr.h>
+#include <uapi/linaos/mroute6.h>
+#include <linaos/mroute_base.h>
+#include <linaos/sockptr.h>
 #include <net/fib_rules.h>
 
 #ifdef CONFIG_IPV6_MROUTE

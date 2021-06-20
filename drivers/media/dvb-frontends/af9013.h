@@ -11,7 +11,7 @@
 #ifndef AF9013_H
 #define AF9013_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 /*
  * I2C address: 0x1c, 0x1d

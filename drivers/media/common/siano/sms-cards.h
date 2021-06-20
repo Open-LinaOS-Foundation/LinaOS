@@ -2,7 +2,7 @@
 /*
  *  Card-specific functions for the Siano SMS1xxx USB dongle
  *
- *  Copyright (c) 2008 Michael Krufky <mkrufky@linuxtv.org>
+ *  Copyright (c) 2008 Michael Krufky <mkrufky@linaostv.org>
  */
 
 #ifndef __SMS_CARDS_H__
@@ -10,7 +10,7 @@
 
 #include "smscoreapi.h"
 
-#include <linux/usb.h>
+#include <linaos/usb.h>
 #include "smsir.h"
 
 #define SMS_BOARD_UNKNOWN 0

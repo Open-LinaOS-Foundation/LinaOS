@@ -6,9 +6,9 @@
 #ifndef MTK_DRM_DDP_COMP_H
 #define MTK_DRM_DDP_COMP_H
 
-#include <linux/io.h>
-#include <linux/soc/mediatek/mtk-cmdq.h>
-#include <linux/soc/mediatek/mtk-mmsys.h>
+#include <linaos/io.h>
+#include <linaos/soc/mediatek/mtk-cmdq.h>
+#include <linaos/soc/mediatek/mtk-mmsys.h>
 
 struct device;
 struct device_node;

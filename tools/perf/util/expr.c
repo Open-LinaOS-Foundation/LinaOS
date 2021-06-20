@@ -9,8 +9,8 @@
 #include "expr.h"
 #include "expr-bison.h"
 #include "expr-flex.h"
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/zalloc.h>
 #include <ctype.h>
 
 #ifdef PARSER_DEBUG

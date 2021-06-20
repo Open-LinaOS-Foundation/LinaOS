@@ -7,7 +7,7 @@
  * Copyright (C) 2009 Andre Prendel <andre.prendel@gmx.de>
  *
  * Cleanup and support for TMP431 and TMP432 by Guenter Roeck
- * Copyright (c) 2013 Guenter Roeck <linux@roeck-us.net>
+ * Copyright (c) 2013 Guenter Roeck <linaos@roeck-us.net>
  */
 
 /*
@@ -18,17 +18,17 @@
  * and thus has 16 bits registers for its value and limit instead of 8 bits.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/sysfs.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x48, 0x49, 0x4a, 0x4c, 0x4d,

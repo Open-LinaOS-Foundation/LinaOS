@@ -8,8 +8,8 @@
 #include "habanalabs.h"
 #include "../include/common/hl_boot_if.h"
 
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <linaos/firmware.h>
+#include <linaos/slab.h>
 
 #define FW_FILE_MAX_SIZE	0x1400000 /* maximum size of 20MB */
 /**
@@ -1005,7 +1005,7 @@ int hl_fw_init_cpu(struct hl_device *hdev, u32 cpu_boot_status_reg,
 	}
 
 	if (!(hdev->fw_components & FW_TYPE_LINUX)) {
-		dev_info(hdev->dev, "Skip loading Linux F/W\n");
+		dev_info(hdev->dev, "Skip loading LinaOS F/W\n");
 		goto out;
 	}
 

@@ -10,7 +10,7 @@
  * Special thanks to Holger Waechtler, Michael Hunold, Marian Durkovic
  * and Metzlerbros
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://linaostv.org
  */
 
 #include "av7110.h"

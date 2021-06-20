@@ -6,17 +6,17 @@
  *   Tang Yuantian <Yuantian.Tang@freescale.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/ahci_platform.h>
-#include <linux/device.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/libata.h>
+#include <linaos/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pm.h>
+#include <linaos/ahci_platform.h>
+#include <linaos/device.h>
+#include <linaos/of_address.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/libata.h>
 #include "ahci.h"
 
 #define DRV_NAME "ahci-qoriq"

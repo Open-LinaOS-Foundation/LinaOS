@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/nmi.h
+ *  linaos/include/linaos/nmi.h
  */
 #ifndef LINUX_NMI_H
 #define LINUX_NMI_H
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include <asm/irq.h>
 #if defined(CONFIG_HAVE_NMI_WATCHDOG)
 #include <asm/nmi.h>

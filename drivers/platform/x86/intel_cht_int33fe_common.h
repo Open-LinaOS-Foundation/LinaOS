@@ -9,9 +9,9 @@
 #ifndef _INTEL_CHT_INT33FE_COMMON_H
 #define _INTEL_CHT_INT33FE_COMMON_H
 
-#include <linux/device.h>
-#include <linux/fwnode.h>
-#include <linux/i2c.h>
+#include <linaos/device.h>
+#include <linaos/fwnode.h>
+#include <linaos/i2c.h>
 
 enum int33fe_hw_type {
 	INT33FE_HW_MICROB,

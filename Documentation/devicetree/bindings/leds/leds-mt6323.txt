@@ -25,7 +25,7 @@ Required properties for the LED child node:
 
 Optional properties for the LED child node:
 - label : See Documentation/devicetree/bindings/leds/common.txt
-- linux,default-trigger : See Documentation/devicetree/bindings/leds/common.txt
+- linaos,default-trigger : See Documentation/devicetree/bindings/leds/common.txt
 - default-state: See Documentation/devicetree/bindings/leds/common.txt
 
 Example:
@@ -43,7 +43,7 @@ Example:
 			led@0 {
 				reg = <0>;
 				label = "LED0";
-				linux,default-trigger = "timer";
+				linaos,default-trigger = "timer";
 				default-state = "on";
 			};
 			led@1 {

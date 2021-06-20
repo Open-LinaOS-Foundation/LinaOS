@@ -13,7 +13,7 @@
 #include <sound/seq_oss_legacy.h>
 #include "seq_oss_readq.h"
 #include "seq_oss_writeq.h"
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
 
 /*

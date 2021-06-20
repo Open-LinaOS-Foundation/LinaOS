@@ -5,7 +5,7 @@
 
 #include "aq_macsec.h"
 #include "aq_nic.h"
-#include <linux/rtnetlink.h>
+#include <linaos/rtnetlink.h>
 
 #include "macsec/macsec_api.h"
 #define AQ_MACSEC_KEY_LEN_128_BIT 16

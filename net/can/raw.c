@@ -39,19 +39,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/uio.h>
-#include <linux/net.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/socket.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/can.h>
-#include <linux/can/core.h>
-#include <linux/can/skb.h>
-#include <linux/can/raw.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/uio.h>
+#include <linaos/net.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
+#include <linaos/socket.h>
+#include <linaos/if_arp.h>
+#include <linaos/skbuff.h>
+#include <linaos/can.h>
+#include <linaos/can/core.h>
+#include <linaos/can/skb.h>
+#include <linaos/can/raw.h>
 #include <net/sock.h>
 #include <net/net_namespace.h>
 

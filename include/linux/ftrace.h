@@ -7,17 +7,17 @@
 #ifndef _LINUX_FTRACE_H
 #define _LINUX_FTRACE_H
 
-#include <linux/trace_recursion.h>
-#include <linux/trace_clock.h>
-#include <linux/kallsyms.h>
-#include <linux/linkage.h>
-#include <linux/bitops.h>
-#include <linux/ptrace.h>
-#include <linux/ktime.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/fs.h>
+#include <linaos/trace_recursion.h>
+#include <linaos/trace_clock.h>
+#include <linaos/kallsyms.h>
+#include <linaos/linkage.h>
+#include <linaos/bitops.h>
+#include <linaos/ptrace.h>
+#include <linaos/ktime.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
 
 #include <asm/ftrace.h>
 

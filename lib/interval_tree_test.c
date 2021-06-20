@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/interval_tree.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/interval_tree.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
 #include <asm/timex.h>
 
 #define __param(type, name, init, msg)		\

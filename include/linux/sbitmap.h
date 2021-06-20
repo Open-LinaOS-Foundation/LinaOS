@@ -9,8 +9,8 @@
 #ifndef __LINUX_SCALE_BITMAP_H
 #define __LINUX_SCALE_BITMAP_H
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 
 struct seq_file;
 
@@ -290,7 +290,7 @@ static inline unsigned long *__sbitmap_word(struct sbitmap *sb,
 	return &sb->map[SB_NR_TO_INDEX(sb, bitnr)].word;
 }
 
-/* Helpers equivalent to the operations in asm/bitops.h and linux/bitmap.h */
+/* Helpers equivalent to the operations in asm/bitops.h and linaos/bitmap.h */
 
 static inline void sbitmap_set_bit(struct sbitmap *sb, unsigned int bitnr)
 {

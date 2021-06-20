@@ -10,7 +10,7 @@
 #ifndef AQ_PTP_H
 #define AQ_PTP_H
 
-#include <linux/net_tstamp.h>
+#include <linaos/net_tstamp.h>
 
 #include "aq_ring.h"
 

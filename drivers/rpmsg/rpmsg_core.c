@@ -11,12 +11,12 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rpmsg.h>
-#include <linux/of_device.h>
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/rpmsg.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/slab.h>
 
 #include "rpmsg_internal.h"
 

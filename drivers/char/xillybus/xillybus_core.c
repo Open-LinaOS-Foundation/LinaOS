@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/misc/xillybus_core.c
+ * linaos/drivers/misc/xillybus_core.c
  *
  * Copyright 2011 Xillybus Ltd, http://xillybus.com
  *
@@ -13,22 +13,22 @@
  * creates the device files accordingly.
  */
 
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/crc32.h>
-#include <linux/poll.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/list.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/fs.h>
+#include <linaos/cdev.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/crc32.h>
+#include <linaos/poll.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 #include "xillybus.h"
 
 MODULE_DESCRIPTION("Xillybus core functions");

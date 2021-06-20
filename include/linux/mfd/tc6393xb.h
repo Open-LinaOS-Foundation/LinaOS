@@ -14,7 +14,7 @@
 #ifndef MFD_TC6393XB_H
 #define MFD_TC6393XB_H
 
-#include <linux/fb.h>
+#include <linaos/fb.h>
 
 /* Also one should provide the CK3P6MI clock */
 struct tc6393xb_platform_data {

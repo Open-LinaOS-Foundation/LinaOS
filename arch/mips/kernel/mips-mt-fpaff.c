@@ -3,18 +3,18 @@
  * General MIPS MT support routines, usable in AP/SP and SMVP.
  * Copyright (C) 2005 Mips Technologies, Inc
  */
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/cpumask.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/cred.h>
-#include <linux/security.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linaos/cpu.h>
+#include <linaos/cpuset.h>
+#include <linaos/cpumask.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task.h>
+#include <linaos/cred.h>
+#include <linaos/security.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
 
 /*
  * CPU mask used to set process affinity for MT VPEs/TCs with FPUs

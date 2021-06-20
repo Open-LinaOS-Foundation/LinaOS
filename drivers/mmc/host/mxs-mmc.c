@@ -7,29 +7,29 @@
  * Copyright 2009-2011 Freescale Semiconductor, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/dma/mxs-dma.h>
-#include <linux/highmem.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/completion.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
-#include <linux/stmp_device.h>
-#include <linux/spi/mxs-spi.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma/mxs-dma.h>
+#include <linaos/highmem.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/completion.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/stmp_device.h>
+#include <linaos/spi/mxs-spi.h>
 
 #define DRIVER_NAME	"mxs-mmc"
 

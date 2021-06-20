@@ -4,10 +4,10 @@
  * Viresh Kumar <viresh.kumar@linaro.org>
  */
 
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
 
 #include "cpufreq-dt.h"
 

@@ -3,9 +3,9 @@
  * Copyright (c) 2016 Linaro Ltd.
  */
 
-#include <linux/device.h>
-#include <linux/usb/chipidea.h>
-#include <linux/ulpi/interface.h>
+#include <linaos/device.h>
+#include <linaos/usb/chipidea.h>
+#include <linaos/ulpi/interface.h>
 
 #include "ci.h"
 

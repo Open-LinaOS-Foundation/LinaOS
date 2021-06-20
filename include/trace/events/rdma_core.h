@@ -13,7 +13,7 @@
 #if !defined(_TRACE_RDMA_CORE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RDMA_CORE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include <rdma/ib_verbs.h>
 
 /*

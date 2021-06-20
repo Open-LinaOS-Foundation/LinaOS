@@ -4,9 +4,9 @@
  * Copyright (c) 2020, Intel Corporation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 #include "processor_thermal_device.h"
 
 static struct rapl_if_priv rapl_mmio_priv;

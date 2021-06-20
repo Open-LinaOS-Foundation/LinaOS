@@ -13,13 +13,13 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bitmap.h>
-#include <linux/build_bug.h>
-#include <linux/bug.h>
-#include <linux/cache.h>
-#include <linux/init.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <linaos/bitmap.h>
+#include <linaos/build_bug.h>
+#include <linaos/bug.h>
+#include <linaos/cache.h>
+#include <linaos/init.h>
+#include <linaos/stddef.h>
+#include <linaos/types.h>
 
 #ifdef CONFIG_COMPAT
 /* Masks for extracting the FPSR and FPCR from the FPSCR */

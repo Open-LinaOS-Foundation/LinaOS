@@ -3,7 +3,7 @@
  * pcmda12.c
  * Driver for Winsystems PC-104 based PCM-D/A-12 8-channel AO board.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2006 Calin A. Culianu <calin@ajvar.org>
  */
 
@@ -39,7 +39,7 @@
  *   [1] - Do Simultaneous Xfer (see description)
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "../comedidev.h"
 
 /* AI range is not configurable, it's set by jumpers on the board */

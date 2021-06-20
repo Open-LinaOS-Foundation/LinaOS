@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/pm3fb.h -- 3DLabs Permedia3 frame buffer device
+ *  linaos/drivers/video/pm3fb.h -- 3DLabs Permedia3 frame buffer device
  *
  *  Copyright (C) 2001 Romain Dolbeau <dolbeau@irisa.fr>
  *  Copyright (C) 2001 Sven Luther, <luther@dpt-info.u-strasbg.fr>

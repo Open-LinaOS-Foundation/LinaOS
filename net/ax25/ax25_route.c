@@ -9,32 +9,32 @@
  * Copyright (C) Frederic Rible F1OAT (frible@teaser.fr)
  */
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/timer.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/slab.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/timer.h>
+#include <linaos/in.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/slab.h>
 #include <net/ax25.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
 #include <net/sock.h>
-#include <linux/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <linaos/uaccess.h>
+#include <linaos/fcntl.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/seq_file.h>
+#include <linaos/export.h>
 
 static ax25_route *ax25_route_list;
 DEFINE_RWLOCK(ax25_route_lock);

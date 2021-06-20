@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/dma.c
+ *  linaos/arch/arm/kernel/dma.c
  *
  *  Copyright (C) 1995-2000 Russell King
  *
@@ -8,13 +8,13 @@
  *  of DMA channels, and provides a unified interface to the machines
  *  DMA facilities.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/scatterlist.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/scatterlist.h>
+#include <linaos/seq_file.h>
+#include <linaos/proc_fs.h>
 
 #include <asm/dma.h>
 

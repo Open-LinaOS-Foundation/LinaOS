@@ -30,16 +30,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/log2.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/ptrace.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/log2.h>
+#include <linaos/etherdevice.h>
+#include <linaos/mii.h>
 #include "8390.h"
 
 #include <pcmcia/cistpl.h>
@@ -49,7 +49,7 @@
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define PCNET_CMD	0x00
 #define PCNET_DATAPORT	0x10	/* NatSemi-defined port window offset. */

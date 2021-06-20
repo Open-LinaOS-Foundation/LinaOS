@@ -79,26 +79,26 @@
 
 		power-key {
 			gpios = <&pfc 99 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			label = "SW3";
 			wakeup-source;
 		};
 
 		back-key {
 			gpios = <&pfc 100 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_BACK>;
+			linaos,code = <KEY_BACK>;
 			label = "SW4";
 		};
 
 		menu-key {
 			gpios = <&pfc 97 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_MENU>;
+			linaos,code = <KEY_MENU>;
 			label = "SW5";
 		};
 
 		home-key {
 			gpios = <&pfc 98 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOME>;
+			linaos,code = <KEY_HOME>;
 			label = "SW6";
 		};
 	};

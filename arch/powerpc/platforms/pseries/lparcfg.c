@@ -14,15 +14,15 @@
  * keyword - value pairs that specify the configuration of the partition.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/hugetlb.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/proc_fs.h>
+#include <linaos/init.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/hugetlb.h>
 #include <asm/lppaca.h>
 #include <asm/hvcall.h>
 #include <asm/firmware.h>

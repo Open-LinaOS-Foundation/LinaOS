@@ -8,8 +8,8 @@
 #ifndef __XEN_PCIBACK_CONF_SPACE_H__
 #define __XEN_PCIBACK_CONF_SPACE_H__
 
-#include <linux/list.h>
-#include <linux/err.h>
+#include <linaos/list.h>
+#include <linaos/err.h>
 
 /* conf_field_init can return an errno in a ptr with ERR_PTR() */
 typedef void *(*conf_field_init) (struct pci_dev *dev, int offset);

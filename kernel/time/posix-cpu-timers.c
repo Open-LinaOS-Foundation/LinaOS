@@ -3,18 +3,18 @@
  * Implement CPU time clocks for the POSIX clock interface.
  */
 
-#include <linux/sched/signal.h>
-#include <linux/sched/cputime.h>
-#include <linux/posix-timers.h>
-#include <linux/errno.h>
-#include <linux/math64.h>
-#include <linux/uaccess.h>
-#include <linux/kernel_stat.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/posix-timers.h>
+#include <linaos/errno.h>
+#include <linaos/math64.h>
+#include <linaos/uaccess.h>
+#include <linaos/kernel_stat.h>
 #include <trace/events/timer.h>
-#include <linux/tick.h>
-#include <linux/workqueue.h>
-#include <linux/compat.h>
-#include <linux/sched/deadline.h>
+#include <linaos/tick.h>
+#include <linaos/workqueue.h>
+#include <linaos/compat.h>
+#include <linaos/sched/deadline.h>
 
 #include "posix-timers.h"
 

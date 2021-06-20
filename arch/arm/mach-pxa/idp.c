@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/idp.c
+ *  linaos/arch/arm/mach-pxa/idp.c
  *
  *  Copyright (c) 2001 Cliff Brake, Accelent Systems Inc.
  *
@@ -12,12 +12,12 @@
  *              Updated for 2.6 kernel
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/leds.h>
+#include <linaos/platform_device.h>
+#include <linaos/fb.h>
 
 #include <asm/setup.h>
 #include <asm/memory.h>
@@ -30,10 +30,10 @@
 
 #include "pxa25x.h"
 #include "idp.h"
-#include <linux/platform_data/video-pxafb.h>
+#include <linaos/platform_data/video-pxafb.h>
 #include <mach/bitfield.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/smc91x.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/smc91x.h>
 
 #include "generic.h"
 #include "devices.h"

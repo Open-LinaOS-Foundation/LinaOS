@@ -45,12 +45,12 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#include <linux/poll.h>
-#include <linux/cdev.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
-#include <linux/sched/mm.h>
-#include <linux/bitmap.h>
+#include <linaos/poll.h>
+#include <linaos/cdev.h>
+#include <linaos/vmalloc.h>
+#include <linaos/io.h>
+#include <linaos/sched/mm.h>
+#include <linaos/bitmap.h>
 
 #include <rdma/ib.h>
 

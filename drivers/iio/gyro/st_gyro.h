@@ -11,8 +11,8 @@
 #ifndef ST_GYRO_H
 #define ST_GYRO_H
 
-#include <linux/types.h>
-#include <linux/iio/common/st_sensors.h>
+#include <linaos/types.h>
+#include <linaos/iio/common/st_sensors.h>
 
 #define L3G4200D_GYRO_DEV_NAME		"l3g4200d"
 #define LSM330D_GYRO_DEV_NAME		"lsm330d_gyro"

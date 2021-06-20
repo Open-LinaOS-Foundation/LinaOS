@@ -38,7 +38,7 @@
 
 		button-update {
 			label = "update";
-			linux,code = <KEY_VENDOR>;
+			linaos,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <10000>;
 		};
 	};
@@ -51,7 +51,7 @@
 
 		button-power {
 			label = "power";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio_ao GPIOAO_2 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -67,7 +67,7 @@
 };
 
 &ir {
-	linux,rc-map-name = "rc-wetek-play2";
+	linaos,rc-map-name = "rc-wetek-play2";
 };
 
 /* This is connected to the Bluetooth module: */

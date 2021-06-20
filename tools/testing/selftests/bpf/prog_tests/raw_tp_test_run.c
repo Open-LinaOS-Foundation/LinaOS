@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2019 Facebook */
 #include <test_progs.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include "bpf/libbpf_internal.h"
 #include "test_raw_tp_test_run.skel.h"
 

@@ -10,29 +10,29 @@
  * Released under the GPLv2 only.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/completion.h>
-#include <linux/sched/mm.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/kcov.h>
-#include <linux/ioctl.h>
-#include <linux/usb.h>
-#include <linux/usbdevice_fs.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/quirks.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/random.h>
-#include <linux/pm_qos.h>
-#include <linux/kobject.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/completion.h>
+#include <linaos/sched/mm.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/kcov.h>
+#include <linaos/ioctl.h>
+#include <linaos/usb.h>
+#include <linaos/usbdevice_fs.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/usb/otg.h>
+#include <linaos/usb/quirks.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
+#include <linaos/random.h>
+#include <linaos/pm_qos.h>
+#include <linaos/kobject.h>
 
-#include <linux/bitfield.h>
-#include <linux/uaccess.h>
+#include <linaos/bitfield.h>
+#include <linaos/uaccess.h>
 #include <asm/byteorder.h>
 
 #include "hub.h"
@@ -2095,7 +2095,7 @@ EXPORT_SYMBOL_GPL(usb_set_device_state);
  *
  * We add 1 as an offset to the one-based USB-stack port number
  * (zero-based wusb virtual port index) for two reasons: (a) dev addr
- * 0 is reserved by USB for default address; (b) Linux's USB stack
+ * 0 is reserved by USB for default address; (b) LinaOS's USB stack
  * uses always #1 for the root hub of the controller. So USB stack's
  * port #1, which is wusb virtual-port #0 has address #2.
  *
@@ -3314,7 +3314,7 @@ EXPORT_SYMBOL_GPL(usb_wakeup_enabled_descendants);
  * Once VBUS drop breaks the circuit, the port it's using has to go through
  * normal re-enumeration procedures, starting with enabling VBUS power.
  * Other than re-initializing the hub (plug/unplug, except for root hubs),
- * Linux (2.6) currently has NO mechanisms to initiate that:  no hub_wq
+ * LinaOS (2.6) currently has NO mechanisms to initiate that:  no hub_wq
  * timer, no SRP, no requests through sysfs.
  *
  * If Runtime PM isn't enabled or used, non-SuperSpeed devices may not get
@@ -3444,7 +3444,7 @@ static int finish_port_resume(struct usb_device *udev)
 		udev->reset_resume ? "finish reset-resume" : "finish resume");
 
 	/* usb ch9 identifies four variants of SUSPENDED, based on what
-	 * state the device resumes to.  Linux currently won't see the
+	 * state the device resumes to.  LinaOS currently won't see the
 	 * first two on the host side; they'd be inside hub_port_init()
 	 * during many timeouts, but hub_wq can't suspend until later.
 	 */
@@ -4715,7 +4715,7 @@ hub_port_init(struct usb_hub *hub, struct usb_device *udev, int port1,
 
 	/* Why interleave GET_DESCRIPTOR and SET_ADDRESS this way?
 	 * Because device hardware and firmware is sometimes buggy in
-	 * this area, and this is how Linux has done it for ages.
+	 * this area, and this is how LinaOS has done it for ages.
 	 * Change it cautiously.
 	 *
 	 * NOTE:  If use_new_scheme() is true we will start by issuing

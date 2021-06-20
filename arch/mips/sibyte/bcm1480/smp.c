@@ -3,12 +3,12 @@
  * Copyright (C) 2001,2002,2004 Broadcom Corporation
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/kernel_stat.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/smp.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
 
 #include <asm/mmu_context.h>
 #include <asm/io.h>

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/dma-direct.h>
+#include <linaos/dma-direct.h>
 
 dma_addr_t phys_to_dma(struct device *dev, phys_addr_t paddr)
 {

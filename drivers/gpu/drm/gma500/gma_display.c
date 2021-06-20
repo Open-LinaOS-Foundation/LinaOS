@@ -7,8 +7,8 @@
  *	Patrik Jakobsson <patrik.r.jakobsson@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/highmem.h>
+#include <linaos/delay.h>
+#include <linaos/highmem.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_fourcc.h>

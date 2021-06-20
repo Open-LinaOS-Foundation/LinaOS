@@ -3,7 +3,7 @@
  * Copyright IBM Corp. 2020
  *
  * Author(s):
- *   Niklas Schnelle <schnelle@linux.ibm.com>
+ *   Niklas Schnelle <schnelle@linaos.ibm.com>
  *
  */
 

@@ -9,8 +9,8 @@
 #define WFX_HIF_API_GENERAL_H
 
 #ifdef __KERNEL__
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <linaos/types.h>
+#include <linaos/if_ether.h>
 #else
 #include <net/ethernet.h>
 #include <stdint.h>

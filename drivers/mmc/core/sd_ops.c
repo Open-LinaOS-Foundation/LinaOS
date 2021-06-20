@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/mmc/core/sd_ops.h
+ *  linaos/drivers/mmc/core/sd_ops.h
  *
  *  Copyright 2006-2007 Pierre Ossman
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
+#include <linaos/scatterlist.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/sd.h>
 
 #include "core.h"
 #include "sd_ops.h"

@@ -3,14 +3,14 @@
  * Copyright (C) 2007 Red Hat.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/posix_acl.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/xattr.h>
+#include <linaos/posix_acl_xattr.h>
+#include <linaos/posix_acl.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/slab.h>
 
 #include "ctree.h"
 #include "btrfs_inode.h"

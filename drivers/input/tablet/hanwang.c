@@ -8,11 +8,11 @@
 /*
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb/input.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/usb/input.h>
 
 MODULE_AUTHOR("Xing Wei <weixing@hanwang.com.cn>");
 MODULE_DESCRIPTION("USB Hanwang tablet driver");

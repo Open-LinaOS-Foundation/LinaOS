@@ -24,7 +24,7 @@
 #ifndef DRM_RECT_H
 #define DRM_RECT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * DOC: rect utils

@@ -3,7 +3,7 @@
  * Copyright (C) 2016 Felix Fietkau <nbd@nbd.name>
  */
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 #include "mt76.h"
 #include "dma.h"
 

@@ -1,12 +1,12 @@
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/mmdebug.h>
-#include <linux/mm_types.h>
-#include <linux/pagemap.h>
-#include <linux/rcupdate.h>
-#include <linux/smp.h>
-#include <linux/swap.h>
+#include <linaos/gfp.h>
+#include <linaos/highmem.h>
+#include <linaos/kernel.h>
+#include <linaos/mmdebug.h>
+#include <linaos/mm_types.h>
+#include <linaos/pagemap.h>
+#include <linaos/rcupdate.h>
+#include <linaos/smp.h>
+#include <linaos/swap.h>
 
 #include <asm/pgalloc.h>
 #include <asm/tlb.h>

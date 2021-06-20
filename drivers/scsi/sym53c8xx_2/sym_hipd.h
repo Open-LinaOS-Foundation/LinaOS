@@ -5,11 +5,11 @@
  *
  * Copyright (C) 1999-2001  Gerard Roudier <groudier@free.fr>
  *
- * This driver is derived from the Linux sym53c8xx driver.
+ * This driver is derived from the LinaOS sym53c8xx driver.
  * Copyright (C) 1998-2000  Gerard Roudier
  *
  * The sym53c8xx driver is derived from the ncr53c8xx driver that had been 
- * a port of the FreeBSD ncr driver to Linux-1.2.13.
+ * a port of the FreeBSD ncr driver to LinaOS-1.2.13.
  *
  * The original ncr driver has been written for 386bsd and FreeBSD by
  *         Wolfgang Stanglmeier        <wolf@cologne.de>
@@ -24,7 +24,7 @@
  *-----------------------------------------------------------------------------
  */
 
-#include <linux/gfp.h>
+#include <linaos/gfp.h>
 
 #ifndef SYM_HIPD_H
 #define SYM_HIPD_H
@@ -42,7 +42,7 @@
  *    SYM_OPT_LIMIT_COMMAND_REORDERING
  *        When this option is set, the driver tries to limit tagged 
  *        command reordering to some reasonable value.
- *        (set for Linux)
+ *        (set for LinaOS)
  */
 #if 0
 #define SYM_OPT_HANDLE_DEVICE_QUEUEING

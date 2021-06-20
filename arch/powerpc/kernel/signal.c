@@ -9,15 +9,15 @@
  * this archive for more details.
  */
 
-#include <linux/tracehook.h>
-#include <linux/signal.h>
-#include <linux/uprobes.h>
-#include <linux/key.h>
-#include <linux/context_tracking.h>
-#include <linux/livepatch.h>
-#include <linux/syscalls.h>
+#include <linaos/tracehook.h>
+#include <linaos/signal.h>
+#include <linaos/uprobes.h>
+#include <linaos/key.h>
+#include <linaos/context_tracking.h>
+#include <linaos/livepatch.h>
+#include <linaos/syscalls.h>
 #include <asm/hw_breakpoint.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/switch_to.h>
 #include <asm/unistd.h>
 #include <asm/debug.h>

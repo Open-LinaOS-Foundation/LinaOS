@@ -2,7 +2,7 @@
 /*
  *  mpc30x.h, Include file for Victor MP-C303/304.
  *
- *  Copyright (C) 2002-2004  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2002-2004  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
 #ifndef __VICTOR_MPC30X_H
 #define __VICTOR_MPC30X_H

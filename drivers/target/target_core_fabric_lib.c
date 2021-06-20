@@ -7,7 +7,7 @@
  *
  * (c) Copyright 2010-2013 Datera, Inc.
  *
- * Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Nicholas A. Bellinger <nab@linaos-iscsi.org>
  *
  ******************************************************************************/
 
@@ -16,11 +16,11 @@
  * on the formats implemented in this file.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/spinlock.h>
+#include <linaos/export.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi_proto.h>

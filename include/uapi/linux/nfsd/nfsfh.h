@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * This file describes the layout of the file handles as passed
  * over the wire.
@@ -9,14 +9,14 @@
 #ifndef _UAPI_LINUX_NFSD_FH_H
 #define _UAPI_LINUX_NFSD_FH_H
 
-#include <linux/types.h>
-#include <linux/nfs.h>
-#include <linux/nfs2.h>
-#include <linux/nfs3.h>
-#include <linux/nfs4.h>
+#include <linaos/types.h>
+#include <linaos/nfs.h>
+#include <linaos/nfs2.h>
+#include <linaos/nfs3.h>
+#include <linaos/nfs4.h>
 
 /*
- * This is the old "dentry style" Linux NFSv2 file handle.
+ * This is the old "dentry style" LinaOS NFSv2 file handle.
  *
  * The xino and xdev fields are currently used to transport the
  * ino/dev of the exported inode.
@@ -61,7 +61,7 @@ struct nfs_fhbase_old {
  * The fileid_type identified how the file within the filesystem is encoded.
  *   The values for this field are filesystem specific, exccept that
  *   filesystems must not use the values '0' or '0xff'. 'See enum fid_type'
- *   in include/linux/exportfs.h for currently registered values.
+ *   in include/linaos/exportfs.h for currently registered values.
  */
 struct nfs_fhbase_new {
 	union {

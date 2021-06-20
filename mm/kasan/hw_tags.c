@@ -8,14 +8,14 @@
 
 #define pr_fmt(fmt) "kasan: " fmt
 
-#include <linux/init.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/memory.h>
-#include <linux/mm.h>
-#include <linux/static_key.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/kasan.h>
+#include <linaos/kernel.h>
+#include <linaos/memory.h>
+#include <linaos/mm.h>
+#include <linaos/static_key.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 #include "kasan.h"
 

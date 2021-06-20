@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/fdtable.h>
-#include <linux/string.h>
-#include <linux/random.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/cache.h>
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/kcmp.h>
-#include <linux/capability.h>
-#include <linux/list.h>
-#include <linux/eventpoll.h>
-#include <linux/file.h>
+#include <linaos/kernel.h>
+#include <linaos/syscalls.h>
+#include <linaos/fdtable.h>
+#include <linaos/string.h>
+#include <linaos/random.h>
+#include <linaos/module.h>
+#include <linaos/ptrace.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/cache.h>
+#include <linaos/bug.h>
+#include <linaos/err.h>
+#include <linaos/kcmp.h>
+#include <linaos/capability.h>
+#include <linaos/list.h>
+#include <linaos/eventpoll.h>
+#include <linaos/file.h>
 
 #include <asm/unistd.h>
 

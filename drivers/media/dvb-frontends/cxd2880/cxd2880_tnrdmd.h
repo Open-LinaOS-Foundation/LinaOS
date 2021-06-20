@@ -10,7 +10,7 @@
 #ifndef CXD2880_TNRDMD_H
 #define CXD2880_TNRDMD_H
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #include "cxd2880_common.h"
 #include "cxd2880_io.h"

@@ -19,9 +19,9 @@
  *  CS5535 documentation available from AMD
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/ide.h>
 
 #define DRV_NAME "cs5535"
 

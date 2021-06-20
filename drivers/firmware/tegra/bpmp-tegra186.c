@@ -3,9 +3,9 @@
  * Copyright (c) 2018, NVIDIA CORPORATION.
  */
 
-#include <linux/genalloc.h>
-#include <linux/mailbox_client.h>
-#include <linux/platform_device.h>
+#include <linaos/genalloc.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/platform_device.h>
 
 #include <soc/tegra/bpmp.h>
 #include <soc/tegra/bpmp-abi.h>

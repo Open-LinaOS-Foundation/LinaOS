@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Copyright (C) 1998-2002		Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 1998-2002		Andre Hedrick <andre@linaos-ide.org>
  *  Copyright (C) 2006-2007, 2009	MontaVista Software, Inc.
  *  Copyright (C) 2007-2010		Bartlomiej Zolnierkiewicz
  *
@@ -9,14 +9,14 @@
  *  Released under terms of General Public License
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/blkdev.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/blkdev.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/ide.h>
 
 #include <asm/io.h>
 

@@ -5,7 +5,7 @@
 #if !defined(_TRACE_DMA_FENCE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_DMA_FENCE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 struct dma_fence;
 

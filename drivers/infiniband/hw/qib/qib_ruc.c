@@ -31,7 +31,7 @@
  * SOFTWARE.
  */
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 #include <rdma/ib_smi.h>
 
 #include "qib.h"

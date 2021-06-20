@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/irq.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/dma-mapping.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/init.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/irq.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/dma-mapping.h>
 #include <asm/leon.h>
 #include <asm/leon_amba.h>
 
@@ -341,7 +341,7 @@ static struct platform_device * __init scan_one_device(struct device_node *dp,
 						 struct device *parent)
 {
 	struct platform_device *op = kzalloc(sizeof(*op), GFP_KERNEL);
-	const struct linux_prom_irqs *intr;
+	const struct linaos_prom_irqs *intr;
 	struct dev_archdata *sd;
 	int len, i;
 
@@ -355,7 +355,7 @@ static struct platform_device * __init scan_one_device(struct device_node *dp,
 
 	intr = of_get_property(dp, "intr", &len);
 	if (intr) {
-		op->archdata.num_irqs = len / sizeof(struct linux_prom_irqs);
+		op->archdata.num_irqs = len / sizeof(struct linaos_prom_irqs);
 		for (i = 0; i < op->archdata.num_irqs; i++)
 			op->archdata.irqs[i] =
 			    sparc_config.build_device_irq(op, intr[i].pri);

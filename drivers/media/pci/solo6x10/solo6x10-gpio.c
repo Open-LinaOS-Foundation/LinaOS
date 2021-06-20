@@ -9,10 +9,10 @@
  * John Brooks <john.brooks@bluecherry.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
 
 #include "solo6x10.h"
 

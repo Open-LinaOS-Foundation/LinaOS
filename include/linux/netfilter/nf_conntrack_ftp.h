@@ -2,12 +2,12 @@
 #ifndef _NF_CONNTRACK_FTP_H
 #define _NF_CONNTRACK_FTP_H
 
-#include <linux/netfilter.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <linaos/netfilter.h>
+#include <linaos/skbuff.h>
+#include <linaos/types.h>
 #include <net/netfilter/nf_conntrack_expect.h>
-#include <uapi/linux/netfilter/nf_conntrack_ftp.h>
-#include <uapi/linux/netfilter/nf_conntrack_tuple_common.h>
+#include <uapi/linaos/netfilter/nf_conntrack_ftp.h>
+#include <uapi/linaos/netfilter/nf_conntrack_tuple_common.h>
 
 #define FTP_PORT	21
 

@@ -8,23 +8,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/spi/spi.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/sched/types.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/i2c.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/spi/spi.h>
+#include <linaos/uaccess.h>
+#include <uapi/linaos/sched/types.h>
 
 #define SC16IS7XX_NAME			"sc16is7xx"
 #define SC16IS7XX_MAX_DEVS		8

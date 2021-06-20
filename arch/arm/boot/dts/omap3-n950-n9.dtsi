@@ -42,7 +42,7 @@
 		heartbeat {
 			label = "debug::sleep";
 			gpios = <&gpio3 28 GPIO_ACTIVE_HIGH>;  /* gpio92 */
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 			pinctrl-names = "default";
 			pinctrl-0 = <&debug_leds>;
 		};

@@ -20,9 +20,9 @@
  *      Copyright 2002 MontaVista Softare Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/of_irq.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/of_irq.h>
 
 #include "core.h"
 #include <asm/dcr-regs.h>

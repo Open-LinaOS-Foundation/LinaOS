@@ -54,7 +54,7 @@
  *
  */
 #include "sched.h"
-#include <linux/sched_clock.h>
+#include <linaos/sched_clock.h>
 
 /*
  * Scheduler clock - returns current time in nanosec units.

@@ -33,7 +33,7 @@
 #include <sys/capability.h>
 #include <errno.h>
 #include <math.h>
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 #include <asm/unistd.h>
 #include <stdbool.h>
 
@@ -5246,10 +5246,10 @@ void print_dev_latency(void)
 }
 
 /*
- * Linux-perf manages the the HW instructions-retired counter
+ * LinaOS-perf manages the the HW instructions-retired counter
  * by enabling when requested, and hiding rollover
  */
-void linux_perf_init(void)
+void linaos_perf_init(void)
 {
 	if (!BIC_IS_ENABLED(BIC_IPC))
 		return;
@@ -5872,7 +5872,7 @@ void turbostat_init()
 	check_dev_msr();
 	check_permissions();
 	process_cpuid();
-	linux_perf_init();
+	linaos_perf_init();
 
 	if (!quiet)
 		for_all_cpus(print_hwp, ODD_COUNTERS);

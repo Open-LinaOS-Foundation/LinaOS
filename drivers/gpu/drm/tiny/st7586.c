@@ -5,12 +5,12 @@
  * Copyright 2017 David Lechner <david@lechnology.com>
  */
 
-#include <linux/delay.h>
-#include <linux/dma-buf.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
+#include <linaos/delay.h>
+#include <linaos/dma-buf.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/property.h>
+#include <linaos/spi/spi.h>
 #include <video/mipi_display.h>
 
 #include <drm/drm_atomic_helper.h>

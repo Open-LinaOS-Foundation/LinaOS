@@ -6,15 +6,15 @@
  * Copyright 2015 Linaro Ltd.
  */
 
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/greybus.h>
+#include <linaos/debugfs.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/uaccess.h>
+#include <linaos/vmalloc.h>
+#include <linaos/greybus.h>
 
 #include "gb-camera.h"
 #include "greybus_protocols.h"

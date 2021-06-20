@@ -3,13 +3,13 @@
 //
 // Copyright (c) 2006-2007 Mauro Carvalho Chehab <mchehab@kernel.org>
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/usb.h>
+#include <linaos/slab.h>
 #include <media/v4l2-common.h>
 #include <media/tuner.h>
 #include <media/i2c/tvaudio.h>

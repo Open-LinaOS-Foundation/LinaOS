@@ -8,25 +8,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/spinlock.h>
-#include <linux/hash.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/uaccess.h>
-#include <linux/ptrace.h>
-#include <linux/preempt.h>
-#include <linux/percpu.h>
-#include <linux/kdebug.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/list.h>
+#include <linaos/rculist.h>
+#include <linaos/spinlock.h>
+#include <linaos/hash.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/uaccess.h>
+#include <linaos/ptrace.h>
+#include <linaos/preempt.h>
+#include <linaos/percpu.h>
+#include <linaos/kdebug.h>
+#include <linaos/mutex.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include <asm/debugreg.h>
-#include <linux/mmiotrace.h>
+#include <linaos/mmiotrace.h>
 
 #define KMMIO_PAGE_HASH_BITS 4
 #define KMMIO_PAGE_TABLE_SIZE (1 << KMMIO_PAGE_HASH_BITS)

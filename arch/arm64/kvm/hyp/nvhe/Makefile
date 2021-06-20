@@ -60,12 +60,12 @@ $(obj)/hyp-reloc.S: $(obj)/kvm_nvhe.tmp.o $(obj)/gen-hyprel
 # 5) Compile hyp-reloc.S and link it into the existing partially linked object.
 #    The object file now contains a section with pointers to hyp positions that
 #    will contain kernel VAs at runtime. These pointers have relocations on them
-#    so that they get updated as the hyp object is linked into `vmlinux`.
+#    so that they get updated as the hyp object is linked into `vmlinaos`.
 LDFLAGS_kvm_nvhe.rel.o := -r
 $(obj)/kvm_nvhe.rel.o: $(obj)/kvm_nvhe.tmp.o $(obj)/hyp-reloc.o FORCE
 	$(call if_changed,ld)
 
-# 6) Produce the final 'kvm_nvhe.o', ready to be linked into 'vmlinux'.
+# 6) Produce the final 'kvm_nvhe.o', ready to be linked into 'vmlinaos'.
 #    Prefixes names of ELF symbols with '__kvm_nvhe_'.
 $(obj)/kvm_nvhe.o: $(obj)/kvm_nvhe.rel.o FORCE
 	$(call if_changed,hypcopy)

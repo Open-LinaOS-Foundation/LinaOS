@@ -2,7 +2,7 @@ Introduction
 ============
 
 The FPGA subsystem supports reprogramming FPGAs dynamically under
-Linux.  Some of the core intentions of the FPGA subsystems are:
+LinaOS.  Some of the core intentions of the FPGA subsystems are:
 
 * The FPGA subsystem is vendor agnostic.
 
@@ -13,7 +13,7 @@ Linux.  Some of the core intentions of the FPGA subsystems are:
 * Code should not be shared between upper and lower layers.  This
   should go without saying.  If that seems necessary, there's probably
   framework functionality that can be added that will benefit
-  other users.  Write the linux-fpga mailing list and maintainers and
+  other users.  Write the linaos-fpga mailing list and maintainers and
   seek out a solution that expands the framework for broad reuse.
 
 * Generally, when adding code, think of the future.  Plan for reuse.

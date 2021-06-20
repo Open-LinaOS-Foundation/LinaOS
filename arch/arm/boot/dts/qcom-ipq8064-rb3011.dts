@@ -194,9 +194,9 @@
 
 			button@1 {
 				label = "reset";
-				linux,code = <KEY_RESTART>;
+				linaos,code = <KEY_RESTART>;
 				gpios = <&qcom_pinmux 66 GPIO_ACTIVE_LOW>;
-				linux,input-type = <1>;
+				linaos,input-type = <1>;
 				debounce-interval = <60>;
 			};
 		};

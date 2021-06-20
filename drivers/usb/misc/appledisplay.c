@@ -2,21 +2,21 @@
 /*
  * Apple Cinema Display driver
  *
- * Copyright (C) 2006  Michael Hanselmann (linux-kernel@hansmi.ch)
+ * Copyright (C) 2006  Michael Hanselmann (linaos-kernel@hansmi.ch)
  *
  * Thanks to Caskey L. Dickson for his work with acdctl.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/backlight.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/atomic.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/backlight.h>
+#include <linaos/timer.h>
+#include <linaos/workqueue.h>
+#include <linaos/atomic.h>
 
 #define APPLE_VENDOR_ID		0x05AC
 

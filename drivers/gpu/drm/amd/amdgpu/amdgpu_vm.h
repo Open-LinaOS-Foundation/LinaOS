@@ -24,13 +24,13 @@
 #ifndef __AMDGPU_VM_H__
 #define __AMDGPU_VM_H__
 
-#include <linux/idr.h>
-#include <linux/kfifo.h>
-#include <linux/rbtree.h>
+#include <linaos/idr.h>
+#include <linaos/kfifo.h>
+#include <linaos/rbtree.h>
 #include <drm/gpu_scheduler.h>
 #include <drm/drm_file.h>
 #include <drm/ttm/ttm_bo_driver.h>
-#include <linux/sched/mm.h>
+#include <linaos/sched/mm.h>
 
 #include "amdgpu_sync.h"
 #include "amdgpu_ring.h"

@@ -26,10 +26,10 @@
 #include "amdgpu.h"
 #include "amdgpu_gfx.h"
 #include "amdgpu_dma_buf.h"
-#include <linux/module.h>
-#include <linux/dma-buf.h>
+#include <linaos/module.h>
+#include <linaos/dma-buf.h>
 #include "amdgpu_xgmi.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/linaos/kfd_ioctl.h>
 
 /* Total memory size in system memory and all GPU VRAM. Used to
  * estimate worst case amount of memory to reserve for page tables
@@ -136,7 +136,7 @@ void amdgpu_amdkfd_device_init(struct amdgpu_device *adev)
 				  adev->gfx.mec.queue_bitmap,
 				  KGD_MAX_QUEUES);
 
-		/* According to linux/bitmap.h we shouldn't use bitmap_clear if
+		/* According to linaos/bitmap.h we shouldn't use bitmap_clear if
 		 * nbits is not compile time constant
 		 */
 		last_valid_bit = 1 /* only first MEC can have compute queues */

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * linux/arch/arm/mach-omap2/sram243x.S
+ * linaos/arch/arm/mach-omap2/sram243x.S
  *
  * Omap2 specific functions that need to be run in internal SRAM
  *
@@ -14,7 +14,7 @@
  * since it will cause the ARM MMU to attempt to walk the page tables.
  * These crashes may be intermittent.
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/assembler.h>
 

@@ -44,7 +44,7 @@
 #include "node.h"
 #include "crypto.h"
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* configurable TIPC parameters */
 unsigned int tipc_net_id __read_mostly;

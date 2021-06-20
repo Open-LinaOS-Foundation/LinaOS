@@ -3,7 +3,7 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright 2003 Vivien Chappelier <vivien.chappelier@linux-mips.org>
+ * Copyright 2003 Vivien Chappelier <vivien.chappelier@linaos-mips.org>
  * Copyright 2008 Thomas Bogendoerfer <tsbogend@franken.de>
  */
 

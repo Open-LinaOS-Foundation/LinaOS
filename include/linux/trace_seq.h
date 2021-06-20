@@ -2,7 +2,7 @@
 #ifndef _LINUX_TRACE_SEQ_H
 #define _LINUX_TRACE_SEQ_H
 
-#include <linux/seq_buf.h>
+#include <linaos/seq_buf.h>
 
 #include <asm/page.h>
 

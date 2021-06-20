@@ -12,9 +12,9 @@
 #ifndef _LINUX_NET_BUSY_POLL_H
 #define _LINUX_NET_BUSY_POLL_H
 
-#include <linux/netdevice.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/signal.h>
+#include <linaos/netdevice.h>
+#include <linaos/sched/clock.h>
+#include <linaos/sched/signal.h>
 #include <net/ip.h>
 
 /*		0 - Reserved to indicate value not set

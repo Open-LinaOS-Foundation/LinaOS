@@ -6,14 +6,14 @@
  *   Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/export.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/spi/spi.h>
+#include <linaos/export.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/imu/adis.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/imu/adis.h>
 
 static int adis_data_rdy_trigger_set_state(struct iio_trigger *trig,
 						bool state)

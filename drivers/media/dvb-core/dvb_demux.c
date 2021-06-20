@@ -19,15 +19,15 @@
 
 #define pr_fmt(fmt) "dvb_demux: " fmt
 
-#include <linux/sched/signal.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/string.h>
-#include <linux/crc32.h>
-#include <linux/uaccess.h>
+#include <linaos/sched/signal.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/poll.h>
+#include <linaos/string.h>
+#include <linaos/crc32.h>
+#include <linaos/uaccess.h>
 #include <asm/div64.h>
 
 #include <media/dvb_demux.h>

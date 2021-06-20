@@ -4,15 +4,15 @@
  *
  * Copyright (C) 2004-2013 Texas Instruments
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/err.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 
-#include <linux/usb/phy.h>
+#include <linaos/usb/phy.h>
 
 /* Default current range by charger type. */
 #define DEFAULT_SDP_CUR_MIN	2

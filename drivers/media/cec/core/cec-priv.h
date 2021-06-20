@@ -8,7 +8,7 @@
 #ifndef _CEC_PRIV_H
 #define _CEC_PRIV_H
 
-#include <linux/cec-funcs.h>
+#include <linaos/cec-funcs.h>
 #include <media/cec-notifier.h>
 
 #define dprintk(lvl, fmt, arg...)					\

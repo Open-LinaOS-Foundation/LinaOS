@@ -8,21 +8,21 @@
  *	(C) Copyright 2002 Red Hat Inc, All Rights Reserved
  */
 
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/shm.h>
-#include <linux/ksm.h>
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/swapops.h>
-#include <linux/highmem.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/mmu_notifier.h>
-#include <linux/uaccess.h>
-#include <linux/userfaultfd_k.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/shm.h>
+#include <linaos/ksm.h>
+#include <linaos/mman.h>
+#include <linaos/swap.h>
+#include <linaos/capability.h>
+#include <linaos/fs.h>
+#include <linaos/swapops.h>
+#include <linaos/highmem.h>
+#include <linaos/security.h>
+#include <linaos/syscalls.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/uaccess.h>
+#include <linaos/userfaultfd_k.h>
 
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>

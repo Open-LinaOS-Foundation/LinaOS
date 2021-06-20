@@ -1106,7 +1106,7 @@ config NETFILTER_XT_TARGET_TCPMSS
 
 	  This is used to overcome criminally braindead ISPs or servers which
 	  block ICMP Fragmentation Needed packets.  The symptoms of this
-	  problem are that everything works fine from your Linux
+	  problem are that everything works fine from your LinaOS
 	  firewall/router, but machines behind it can never exchange large
 	  packets:
 	        1) Web browsers connect, then hang with no data received.
@@ -1147,7 +1147,7 @@ config NETFILTER_XT_MATCH_BPF
 	tristate '"bpf" match support'
 	depends on NETFILTER_ADVANCED
 	help
-	  BPF matching applies a linux socket filter to each packet and
+	  BPF matching applies a linaos socket filter to each packet and
 	  accepts those for which the filter returns non-zero.
 
 	  To compile it as a module, choose M here.  If unsure, say N.

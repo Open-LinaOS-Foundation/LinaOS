@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_SCHED_TYPES_H
 #define _UAPI_LINUX_SCHED_TYPES_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct sched_param {
 	int sched_priority;

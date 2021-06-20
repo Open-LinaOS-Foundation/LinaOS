@@ -16,11 +16,11 @@
 
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/log2.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 #define NFP_SUBSYS "nfp_hwinfo"
 

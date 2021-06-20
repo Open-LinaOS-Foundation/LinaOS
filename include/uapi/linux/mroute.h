@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI__LINUX_MROUTE_H
 #define _UAPI__LINUX_MROUTE_H
 
-#include <linux/sockios.h>
-#include <linux/types.h>
-#include <linux/in.h>		/* For struct in_addr. */
+#include <linaos/sockios.h>
+#include <linaos/types.h>
+#include <linaos/in.h>		/* For struct in_addr. */
 
 /* Based on the MROUTING 3.5 defines primarily to keep
  * source compatibility with BSD.

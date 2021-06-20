@@ -6,12 +6,12 @@
  * Derived from x86 implementation:
  * (C) Copyright 2008 Intel Corporation
  *
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@linaos.intel.com>
  */
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/seq_file.h>
 
 #include <asm/domain.h>
 #include <asm/fixmap.h>

@@ -10,8 +10,8 @@
 #ifndef __ASM_MEMORY_H
 #define __ASM_MEMORY_H
 
-#include <linux/const.h>
-#include <linux/sizes.h>
+#include <linaos/const.h>
+#include <linaos/sizes.h>
 #include <asm/page-def.h>
 
 /*
@@ -173,10 +173,10 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/mmdebug.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/compiler.h>
+#include <linaos/mmdebug.h>
+#include <linaos/types.h>
 #include <asm/bug.h>
 
 extern u64			vabits_actual;

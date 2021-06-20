@@ -6,16 +6,16 @@
  * This driver supports the following Measurement Computing devices: CIO-DAC16,
  * CIO-DAC06, and PC104-DAC06.
  */
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/types.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/isa.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/types.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/isa.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
 
 #define CIO_DAC_NUM_CHAN 16
 

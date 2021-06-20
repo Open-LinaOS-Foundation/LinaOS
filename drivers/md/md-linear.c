@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
-   linear.c : Multiple Devices driver for Linux
+   linear.c : Multiple Devices driver for LinaOS
 	      Copyright (C) 1994-96 Marc ZYNGIER
 	      <zyngier@ufr-info-p7.ibp.fr> or
 	      <maz@gloups.fdn.fr>
@@ -9,11 +9,11 @@
 
 */
 
-#include <linux/blkdev.h>
-#include <linux/raid/md_u.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/raid/md_u.h>
+#include <linaos/seq_file.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <trace/events/block.h>
 #include "md.h"
 #include "md-linear.h"

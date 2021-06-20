@@ -23,8 +23,8 @@
 #ifndef __DRM_EDID_H__
 #define __DRM_EDID_H__
 
-#include <linux/types.h>
-#include <linux/hdmi.h>
+#include <linaos/types.h>
+#include <linaos/hdmi.h>
 #include <drm/drm_mode.h>
 
 struct drm_device;

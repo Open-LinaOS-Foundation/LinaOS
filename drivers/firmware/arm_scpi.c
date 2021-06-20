@@ -16,24 +16,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/printk.h>
-#include <linux/pm_opp.h>
-#include <linux/scpi_protocol.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/spinlock.h>
+#include <linaos/bitmap.h>
+#include <linaos/bitfield.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/printk.h>
+#include <linaos/pm_opp.h>
+#include <linaos/scpi_protocol.h>
+#include <linaos/slab.h>
+#include <linaos/sort.h>
+#include <linaos/spinlock.h>
 
 #define CMD_ID_MASK		GENMASK(6, 0)
 #define CMD_TOKEN_ID_MASK	GENMASK(15, 8)
@@ -326,7 +326,7 @@ struct dev_pstate_set {
 
 static struct scpi_drvinfo *scpi_info;
 
-static int scpi_linux_errmap[SCPI_ERR_MAX] = {
+static int scpi_linaos_errmap[SCPI_ERR_MAX] = {
 	/* better than switch case as long as return value is continuous */
 	0, /* SCPI_SUCCESS */
 	-EINVAL, /* SCPI_ERR_PARAM */
@@ -343,10 +343,10 @@ static int scpi_linux_errmap[SCPI_ERR_MAX] = {
 	-EBUSY, /* SCPI_ERR_BUSY */
 };
 
-static inline int scpi_to_linux_errno(int errno)
+static inline int scpi_to_linaos_errno(int errno)
 {
 	if (errno >= SCPI_SUCCESS && errno < SCPI_ERR_MAX)
-		return scpi_linux_errmap[errno];
+		return scpi_linaos_errmap[errno];
 	return -EIO;
 }
 
@@ -519,8 +519,8 @@ out:
 		scpi_process_cmd(scpi_chan, msg->cmd);
 
 	put_scpi_xfer(msg, scpi_chan);
-	/* SCPI error codes > 0, translate them to Linux scale*/
-	return ret > 0 ? scpi_to_linux_errno(ret) : ret;
+	/* SCPI error codes > 0, translate them to LinaOS scale*/
+	return ret > 0 ? scpi_to_linaos_errno(ret) : ret;
 }
 
 static u32 scpi_get_version(void)

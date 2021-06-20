@@ -4,7 +4,7 @@
  * Copyright (c) 2013-2014, Intel Corporation.
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <stdio.h>
 #include <string.h>
 #include <endian.h>

@@ -7,7 +7,7 @@
  * Copyright 2014	Intel Corporation (Author: Johannes Berg)
  * Copyright (C) 2018 Intel Corporation
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <net/cfg80211.h>
 #include "ieee80211_i.h"
 #include "sta_info.h"

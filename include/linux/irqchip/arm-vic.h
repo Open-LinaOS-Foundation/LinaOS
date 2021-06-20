@@ -7,7 +7,7 @@
 #ifndef __ASM_ARM_HARDWARE_VIC_H
 #define __ASM_ARM_HARDWARE_VIC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 void vic_init(void __iomem *base, unsigned int irq_start, u32 vic_sources, u32 resume_sources);
 

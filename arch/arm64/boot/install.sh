@@ -11,7 +11,7 @@
 # Adapted from code in arch/i386/boot/Makefile by H. Peter Anvin
 # Adapted from code in arch/i386/boot/install.sh by Russell King
 #
-# "make install" script for the AArch64 Linux port
+# "make install" script for the AArch64 LinaOS port
 #
 # Arguments:
 #   $1 - kernel version
@@ -45,7 +45,7 @@ if [ "$(basename $2)" = "Image.gz" ]; then
 else
 # Normal install
   echo "Installing normal kernel"
-  base=vmlinux
+  base=vmlinaos
 fi
 
 if [ -f $4/$base-$1 ]; then

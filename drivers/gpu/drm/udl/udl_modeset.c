@@ -9,7 +9,7 @@
 
  */
 
-#include <linux/dma-buf.h>
+#include <linaos/dma-buf.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_crtc_helper.h>

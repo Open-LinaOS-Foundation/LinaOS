@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/acorn/net/ether3.c
+ *  linaos/drivers/acorn/net/ether3.c
  *
  *  Copyright (C) 1995-2000 Russell King
  *
@@ -29,8 +29,8 @@
  *				RX interrupt.
  * 1.10	RMK	15/07/1997	Fixed autoprobing of NQ8004.
  * 1.11	RMK	16/11/1997	Fixed autoprobing of NQ8005A.
- * 1.12	RMK	31/12/1997	Removed reference to dev_tint for Linux 2.1.
- *      RMK	27/06/1998	Changed asm/delay.h to linux/delay.h.
+ * 1.12	RMK	31/12/1997	Removed reference to dev_tint for LinaOS 2.1.
+ *      RMK	27/06/1998	Changed asm/delay.h to linaos/delay.h.
  * 1.13	RMK	29/06/1998	Fixed problem with transmission of packets.
  *				Chip seems to have a bug in, whereby if the
  *				packet starts two bytes from the end of the
@@ -43,23 +43,23 @@
  * 1.17	RMK	13/05/2000	Updated for 2.3.99-pre8
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/in.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/bitops.h>
 
 #include <asm/ecard.h>
 #include <asm/io.h>

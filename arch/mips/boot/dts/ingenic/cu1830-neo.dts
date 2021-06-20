@@ -27,7 +27,7 @@
 		compatible = "gpio-leds";
 		led-0 {
 			gpios = <&gpc 17 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 	};
 

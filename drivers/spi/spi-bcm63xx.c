@@ -6,19 +6,19 @@
  * Copyright (C) 2010 Tanguy Bouzeloc <tanguy.bouzeloc@efixo.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/reset.h>
+#include <linaos/kernel.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/spi/spi.h>
+#include <linaos/completion.h>
+#include <linaos/err.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/reset.h>
 
 /* BCM 6338/6348 SPI core */
 #define SPI_6348_RSET_SIZE		64

@@ -7,30 +7,30 @@
  * Copyright © 2006      Red Hat UK Limited 
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/ioctl.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/proc_fs.h>
-#include <linux/idr.h>
-#include <linux/backing-dev.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/reboot.h>
-#include <linux/leds.h>
-#include <linux/debugfs.h>
-#include <linux/nvmem-provider.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/seq_file.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/major.h>
+#include <linaos/fs.h>
+#include <linaos/err.h>
+#include <linaos/ioctl.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/proc_fs.h>
+#include <linaos/idr.h>
+#include <linaos/backing-dev.h>
+#include <linaos/gfp.h>
+#include <linaos/slab.h>
+#include <linaos/reboot.h>
+#include <linaos/leds.h>
+#include <linaos/debugfs.h>
+#include <linaos/nvmem-provider.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
 
 #include "mtdcore.h"
 

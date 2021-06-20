@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <linaos/syscalls.h>
+#include <linaos/uaccess.h>
 
 #include <asm/cachectl.h>
 #include <asm/proc-fns.h>

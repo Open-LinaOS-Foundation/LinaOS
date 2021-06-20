@@ -5,13 +5,13 @@
  *  Routines for control of EMU WaveTable chip
  */
 
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 #include <sound/core.h>
 #include <sound/emux_synth.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
 #include "emux_voice.h"
 
 MODULE_AUTHOR("Takashi Iwai");

@@ -7,18 +7,18 @@
  *   Roger Tseng <rogerable@realtek.com>
  */
 
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
-#include <linux/memstick.h>
-#include <linux/kthread.h>
-#include <linux/rtsx_usb.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
+#include <linaos/module.h>
+#include <linaos/highmem.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/workqueue.h>
+#include <linaos/memstick.h>
+#include <linaos/kthread.h>
+#include <linaos/rtsx_usb.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/mutex.h>
+#include <linaos/sched.h>
+#include <linaos/completion.h>
 #include <asm/unaligned.h>
 
 struct rtsx_usb_ms {

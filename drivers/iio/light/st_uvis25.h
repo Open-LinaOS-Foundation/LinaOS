@@ -12,7 +12,7 @@
 
 #define ST_UVIS25_DEV_NAME		"uvis25"
 
-#include <linux/iio/iio.h>
+#include <linaos/iio/iio.h>
 
 /**
  * struct st_uvis25_hw - ST UVIS25 sensor instance

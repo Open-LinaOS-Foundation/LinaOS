@@ -11,16 +11,16 @@
  * Copyright 2020 Jonathan Neuschäfer <j.neuschaefer@gmx.net>
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/ntxec.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/i2c.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/ntxec.h>
+#include <linaos/module.h>
+#include <linaos/pm.h>
+#include <linaos/reboot.h>
+#include <linaos/regmap.h>
+#include <linaos/types.h>
 #include <asm/unaligned.h>
 
 #define NTXEC_REG_VERSION	0x00

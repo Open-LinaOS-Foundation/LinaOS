@@ -34,7 +34,7 @@
 #ifndef __MLX5_FPGA_TLS_H__
 #define __MLX5_FPGA_TLS_H__
 
-#include <linux/mlx5/driver.h>
+#include <linaos/mlx5/driver.h>
 
 #include <net/tls.h>
 #include "fpga/core.h"

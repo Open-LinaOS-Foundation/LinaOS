@@ -11,7 +11,7 @@
  *
  * This driver supports the SCSI adapter implemented by the IBM
  * Power5 firmware.  That SCSI adapter is not a physical adapter,
- * but allows Linux SCSI peripheral drivers to directly
+ * but allows LinaOS SCSI peripheral drivers to directly
  * access devices in another logical partition on the physical system.
  *
  * The virtual adapter(s) are present in the open firmware device
@@ -46,14 +46,14 @@
  * layer.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/kthread.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/pm.h>
+#include <linaos/kthread.h>
 #include <asm/firmware.h>
 #include <asm/vio.h>
 #include <scsi/scsi.h>
@@ -2297,7 +2297,7 @@ static int ibmvscsi_probe(struct vio_dev *vdev, const struct vio_device_id *id)
 		/*
 		 * Wait around max init_timeout secs for the adapter to finish
 		 * initializing. When we are done initializing, we will have a
-		 * valid request_limit.  We don't want Linux scanning before
+		 * valid request_limit.  We don't want LinaOS scanning before
 		 * we are ready.
 		 */
 		for (wait_switch = jiffies + (init_timeout * HZ);

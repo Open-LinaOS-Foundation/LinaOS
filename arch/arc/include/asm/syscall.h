@@ -6,9 +6,9 @@
 #ifndef _ASM_ARC_SYSCALL_H
 #define _ASM_ARC_SYSCALL_H  1
 
-#include <uapi/linux/audit.h>
-#include <linux/err.h>
-#include <linux/sched.h>
+#include <uapi/linaos/audit.h>
+#include <linaos/err.h>
+#include <linaos/sched.h>
 #include <asm/unistd.h>
 #include <asm/ptrace.h>		/* in_syscall() */
 

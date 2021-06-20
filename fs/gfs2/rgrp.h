@@ -7,8 +7,8 @@
 #ifndef __RGRP_DOT_H__
 #define __RGRP_DOT_H__
 
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 /* Since each block in the file system is represented by two bits in the
  * bitmap, one 64-bit word in the bitmap will represent 32 blocks.

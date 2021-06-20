@@ -4,7 +4,7 @@
 #if !defined(_TRACE_NETLINK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_NETLINK_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(netlink_extack,
 

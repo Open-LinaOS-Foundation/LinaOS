@@ -3,10 +3,10 @@
  * Copyright (c) 2016 Cavium Inc.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 #include "qedi_hsi.h"
-#include <linux/qed/qed_if.h>
+#include <linaos/qed/qed_if.h>
 
 #include "qedi_fw_iscsi.h"
 #include "qedi_fw_scsi.h"

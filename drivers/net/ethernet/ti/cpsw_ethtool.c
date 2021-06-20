@@ -5,15 +5,15 @@
  * Copyright (C) 2019 Texas Instruments
  */
 
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/kmemleak.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/pm_runtime.h>
-#include <linux/skbuff.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/kmemleak.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/phy.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/skbuff.h>
 
 #include "cpsw.h"
 #include "cpts.h"

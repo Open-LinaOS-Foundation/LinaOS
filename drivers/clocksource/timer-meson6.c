@@ -7,20 +7,20 @@
  * Based on code from Amlogic, Inc
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqreturn.h>
-#include <linux/sched_clock.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/clockchips.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqreturn.h>
+#include <linaos/sched_clock.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
 #ifdef CONFIG_ARM
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #endif
 
 #define MESON_ISA_TIMER_MUX					0x00

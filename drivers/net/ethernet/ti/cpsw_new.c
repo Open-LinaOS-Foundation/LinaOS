@@ -5,28 +5,28 @@
  * Copyright (C) 2019 Texas Instruments
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/irqreturn.h>
-#include <linux/interrupt.h>
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/phy/phy.h>
-#include <linux/delay.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_device.h>
-#include <linux/if_vlan.h>
-#include <linux/kmemleak.h>
-#include <linux/sys_soc.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/timer.h>
+#include <linaos/module.h>
+#include <linaos/irqreturn.h>
+#include <linaos/interrupt.h>
+#include <linaos/if_ether.h>
+#include <linaos/etherdevice.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/phy.h>
+#include <linaos/phy/phy.h>
+#include <linaos/delay.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/of_device.h>
+#include <linaos/if_vlan.h>
+#include <linaos/kmemleak.h>
+#include <linaos/sys_soc.h>
 
 #include <net/page_pool.h>
 #include <net/pkt_cls.h>

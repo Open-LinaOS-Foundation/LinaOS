@@ -16,17 +16,17 @@
 #define pr_fmt(fmt) "kcsan_test: " fmt
 
 #include <kunit/test.h>
-#include <linux/jiffies.h>
-#include <linux/kcsan-checks.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/seqlock.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/torture.h>
-#include <linux/tracepoint.h>
-#include <linux/types.h>
+#include <linaos/jiffies.h>
+#include <linaos/kcsan-checks.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/seqlock.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/torture.h>
+#include <linaos/tracepoint.h>
+#include <linaos/types.h>
 #include <trace/events/printk.h>
 
 #ifdef CONFIG_CC_HAS_TSAN_COMPOUND_READ_BEFORE_WRITE

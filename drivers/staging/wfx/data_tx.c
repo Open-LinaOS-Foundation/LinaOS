@@ -6,7 +6,7 @@
  * Copyright (c) 2010, ST-Ericsson
  */
 #include <net/mac80211.h>
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 
 #include "data_tx.h"
 #include "wfx.h"
@@ -380,7 +380,7 @@ static int wfx_tx_inner(struct wfx_vif *wvif, struct ieee80211_sta *sta,
 	if (tx_info->flags & IEEE80211_TX_CTL_SEND_AFTER_DTIM)
 		req->after_dtim = 1;
 	req->peer_sta_id = wfx_tx_get_link_id(wvif, sta, hdr);
-	// Queue index are inverted between firmware and Linux
+	// Queue index are inverted between firmware and LinaOS
 	req->queue_id = 3 - queue_id;
 	req->retry_policy_index = wfx_tx_get_rate_id(wvif, tx_info);
 	req->frame_format = wfx_tx_get_frame_format(tx_info);

@@ -11,7 +11,7 @@
 #include <asm/io.h>
 #include <soc/imx/revision.h>
 #endif
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #define addr_in_module(addr, mod) \
 	((unsigned long)(addr) - mod ## _BASE_ADDR < mod ## _SIZE)

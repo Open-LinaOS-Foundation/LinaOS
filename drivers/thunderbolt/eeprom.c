@@ -6,10 +6,10 @@
  * Copyright (C) 2018, Intel Corporation
  */
 
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linaos/crc32.h>
+#include <linaos/delay.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
 #include "tb.h"
 
 /*

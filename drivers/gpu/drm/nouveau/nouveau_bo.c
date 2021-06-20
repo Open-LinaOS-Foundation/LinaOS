@@ -22,12 +22,12 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 /*
- * Authors: Dave Airlied <airlied@linux.ie>
+ * Authors: Dave Airlied <airlied@linaos.ie>
  *	    Ben Skeggs   <darktama@iinet.net.au>
  *	    Jeremy Kolb  <jkolb@brandeis.edu>
  */
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 
 #include "nouveau_drv.h"
 #include "nouveau_chan.h"

@@ -8,15 +8,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/lcd.h>
-#include <linux/notifier.h>
-#include <linux/ctype.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/lcd.h>
+#include <linaos/notifier.h>
+#include <linaos/ctype.h>
+#include <linaos/err.h>
+#include <linaos/fb.h>
+#include <linaos/slab.h>
 
 #if defined(CONFIG_FB) || (defined(CONFIG_FB_MODULE) && \
 			   defined(CONFIG_LCD_CLASS_DEVICE_MODULE))

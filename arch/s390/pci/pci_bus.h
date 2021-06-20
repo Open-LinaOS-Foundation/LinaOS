@@ -3,7 +3,7 @@
  * Copyright IBM Corp. 2020
  *
  * Author(s):
- *   Pierre Morel <pmorel@linux.ibm.com>
+ *   Pierre Morel <pmorel@linaos.ibm.com>
  *
  */
 

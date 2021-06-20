@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 static inline int __get_addr(unsigned long *a, unsigned long *p, bool user)
 {

@@ -13,16 +13,16 @@
  *	Populate cpu cache entries in sysfs for cpu cache info
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/node.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/nodemask.h>
-#include <linux/notifier.h>
-#include <linux/export.h>
+#include <linaos/cpu.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/node.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/nodemask.h>
+#include <linaos/notifier.h>
+#include <linaos/export.h>
 #include <asm/mmzone.h>
 #include <asm/numa.h>
 #include <asm/cpu.h>

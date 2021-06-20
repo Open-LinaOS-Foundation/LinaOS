@@ -8,7 +8,7 @@
 #ifndef __CNS3XXX_PM_H
 #define __CNS3XXX_PM_H
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 void cns3xxx_pwr_clk_en(unsigned int block);
 void cns3xxx_pwr_clk_dis(unsigned int block);

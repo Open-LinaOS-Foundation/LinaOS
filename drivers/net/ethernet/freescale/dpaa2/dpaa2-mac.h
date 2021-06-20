@@ -3,11 +3,11 @@
 #ifndef DPAA2_MAC_H
 #define DPAA2_MAC_H
 
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/phylink.h>
-#include <linux/pcs-lynx.h>
+#include <linaos/of.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/phylink.h>
+#include <linaos/pcs-lynx.h>
 
 #include "dpmac.h"
 #include "dpmac-cmd.h"

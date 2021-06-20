@@ -3,9 +3,9 @@
  * Copyright (C) 2021 Sifive.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/bug.h>
 #include <asm/patch.h>
 #include <asm/alternative.h>
 #include <asm/vendorid_list.h>

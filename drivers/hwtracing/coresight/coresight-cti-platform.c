@@ -2,12 +2,12 @@
 /*
  * Copyright (c) 2019, The Linaro Limited. All rights reserved.
  */
-#include <linux/coresight.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linaos/coresight.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
 
 #include <dt-bindings/arm/coresight-cti-dt.h>
 

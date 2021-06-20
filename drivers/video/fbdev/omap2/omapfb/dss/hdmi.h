@@ -8,10 +8,10 @@
 #ifndef _HDMI_H
 #define _HDMI_H
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/hdmi.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/hdmi.h>
 #include <video/omapfb_dss.h>
 #include <sound/omap-hdmi-audio.h>
 

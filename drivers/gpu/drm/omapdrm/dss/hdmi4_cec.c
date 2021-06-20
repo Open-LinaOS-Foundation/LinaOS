@@ -7,7 +7,7 @@
  * Authors: Yong Zhi
  *	Mythri pk <mythripk@ti.com>
  *
- * Heavily modified to use the linux CEC framework:
+ * Heavily modified to use the linaos CEC framework:
  *
  * Copyright 2016-2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  *
@@ -25,11 +25,11 @@
  * SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include "dss.h"
 #include "hdmi.h"

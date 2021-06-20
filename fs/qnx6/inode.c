@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * QNX6 file system, Linux implementation.
+ * QNX6 file system, LinaOS implementation.
  *
  * Version : 1.0.0
  *
@@ -11,19 +11,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/highuid.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/statfs.h>
-#include <linux/parser.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/crc32.h>
-#include <linux/mpage.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/highuid.h>
+#include <linaos/pagemap.h>
+#include <linaos/buffer_head.h>
+#include <linaos/writeback.h>
+#include <linaos/statfs.h>
+#include <linaos/parser.h>
+#include <linaos/seq_file.h>
+#include <linaos/mount.h>
+#include <linaos/crc32.h>
+#include <linaos/mpage.h>
 #include "qnx6.h"
 
 static const struct super_operations qnx6_sops;

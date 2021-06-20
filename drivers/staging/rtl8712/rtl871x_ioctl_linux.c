@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /******************************************************************************
- * rtl871x_ioctl_linux.c
+ * rtl871x_ioctl_linaos.c
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192SU
+ * LinaOS device driver for RTL8192SU
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the LinaOS staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -27,14 +27,14 @@
 #include "rtl871x_ioctl_set.h"
 #include "rtl871x_mp_ioctl.h"
 #include "mlme_osdep.h"
-#include <linux/wireless.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/semaphore.h>
+#include <linaos/wireless.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/semaphore.h>
 #include <net/iw_handler.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/etherdevice.h>
 
 #define RTL_IOCTL_WPA_SUPPLICANT	(SIOCIWFIRSTPRIV + 0x1E)
 
@@ -861,7 +861,7 @@ static int r8711_wx_get_range(struct net_device *dev,
 	wrqu->data.length = sizeof(*range);
 	memset(range, 0, sizeof(*range));
 	/* Let's try to keep this struct in the same order as in
-	 * linux/include/wireless.h
+	 * linaos/include/wireless.h
 	 */
 
 	/* TODO: See what values we can set, and remove the ones we can't

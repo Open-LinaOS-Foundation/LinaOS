@@ -5,17 +5,17 @@
  *
  * Copyright (C) 2004-2008, 2009, 2010 Cavium Networks
  */
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/sched.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/kexec.h>
+#include <linaos/cpu.h>
+#include <linaos/delay.h>
+#include <linaos/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/sched.h>
+#include <linaos/sched/hotplug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/kexec.h>
 
 #include <asm/mmu_context.h>
 #include <asm/time.h>
@@ -121,12 +121,12 @@ static inline void octeon_send_ipi_mask(const struct cpumask *mask,
 static void octeon_smp_hotplug_setup(void)
 {
 #ifdef CONFIG_HOTPLUG_CPU
-	struct linux_app_boot_info *labi;
+	struct linaos_app_boot_info *labi;
 
 	if (!setup_max_cpus)
 		return;
 
-	labi = (struct linux_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
+	labi = (struct linaos_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
 	if (labi->labi_signature != LABI_SIGNATURE) {
 		pr_info("The bootloader on this board does not support HOTPLUG_CPU.");
 		return;
@@ -322,9 +322,9 @@ static void octeon_cpu_die(unsigned int cpu)
 	block_desc = cvmx_bootmem_find_named_block(LINUX_APP_BOOT_BLOCK_NAME);
 
 	if (!block_desc) {
-		struct linux_app_boot_info *labi;
+		struct linaos_app_boot_info *labi;
 
-		labi = (struct linux_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
+		labi = (struct linaos_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
 
 		labi->avail_coremask |= mask;
 		new_mask = labi->avail_coremask;
@@ -372,9 +372,9 @@ static int octeon_update_boot_vector(unsigned int cpu)
 	block_desc = cvmx_bootmem_find_named_block(LINUX_APP_BOOT_BLOCK_NAME);
 
 	if (!block_desc) {
-		struct linux_app_boot_info *labi;
+		struct linaos_app_boot_info *labi;
 
-		labi = (struct linux_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
+		labi = (struct linaos_app_boot_info *)PHYS_TO_XKSEG_CACHED(LABI_ADDR_IN_BOOTLOADER);
 
 		avail_coremask = labi->avail_coremask;
 		labi->avail_coremask &= ~(1 << coreid);

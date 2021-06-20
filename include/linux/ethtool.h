@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * ethtool.h: Defines for Linux ethtool.
+ * ethtool.h: Defines for LinaOS ethtool.
  *
  * Copyright (C) 1998 David S. Miller (davem@redhat.com)
  * Copyright 2001 Jeff Garzik <jgarzik@pobox.com>
@@ -13,9 +13,9 @@
 #ifndef _LINUX_ETHTOOL_H
 #define _LINUX_ETHTOOL_H
 
-#include <linux/bitmap.h>
-#include <linux/compat.h>
-#include <uapi/linux/ethtool.h>
+#include <linaos/bitmap.h>
+#include <linaos/compat.h>
+#include <uapi/linaos/ethtool.h>
 
 #ifdef CONFIG_COMPAT
 
@@ -40,7 +40,7 @@ struct compat_ethtool_rxnfc {
 
 #endif /* CONFIG_COMPAT */
 
-#include <linux/rculist.h>
+#include <linaos/rculist.h>
 
 /**
  * enum ethtool_phys_id_state - indicator state for physical identification

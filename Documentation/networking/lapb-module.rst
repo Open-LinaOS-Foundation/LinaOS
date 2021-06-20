@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ===============================
-The Linux LAPB Module Interface
+The LinaOS LAPB Module Interface
 ===============================
 
 Version 1.3
@@ -11,7 +11,7 @@ Jonathan Naylor 29.12.96
 Changed (Henner Eisen, 2000-10-29): int return value for data_indication()
 
 The LAPB module will be a separately compiled module for use by any parts of
-the Linux operating system that require a LAPB service. This document
+the LinaOS operating system that require a LAPB service. This document
 defines the interfaces to, and the services provided by this module. The
 term module in this context does not imply that the LAPB module is a
 separately loadable module, although it may be. The term module is used in
@@ -30,7 +30,7 @@ document.
 
 The two LAPB specific structures are the LAPB initialisation structure and
 the LAPB parameter structure. These will be defined in a standard header
-file, <linux/lapb.h>. The header file <net/lapb.h> is internal to the LAPB
+file, <linaos/lapb.h>. The header file <net/lapb.h> is internal to the LAPB
 module and is not for use.
 
 LAPB Initialisation Structure
@@ -292,7 +292,7 @@ module will not perform any more actions on it. The skb->data pointer will
 be pointing to the first byte of data after the LAPB header.
 
 This method should return NET_RX_DROP (as defined in the header
-file include/linux/netdevice.h) if and only if the frame was dropped
+file include/linaos/netdevice.h) if and only if the frame was dropped
 before it could be delivered to the upper layer.
 
 ::

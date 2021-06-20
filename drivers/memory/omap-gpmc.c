@@ -9,29 +9,29 @@
  * Copyright (C) 2009 Texas Instruments
  * Added OMAP4 support - Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/consumer.h> /* GPIO descriptor enum */
-#include <linux/gpio/machine.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/omap-gpmc.h>
-#include <linux/pm_runtime.h>
-#include <linux/sizes.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/ioport.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/gpio/consumer.h> /* GPIO descriptor enum */
+#include <linaos/gpio/machine.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/omap-gpmc.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sizes.h>
 
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <linaos/platform_data/mtd-nand-omap2.h>
 
 #define	DEVICE_NAME		"omap-gpmc"
 

@@ -4,14 +4,14 @@
 #ifndef _MLXSW_CORE_H
 #define _MLXSW_CORE_H
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <linux/net_namespace.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/gfp.h>
+#include <linaos/types.h>
+#include <linaos/skbuff.h>
+#include <linaos/workqueue.h>
+#include <linaos/net_namespace.h>
 #include <net/devlink.h>
 
 #include "trap.h"

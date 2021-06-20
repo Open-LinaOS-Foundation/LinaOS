@@ -3,13 +3,13 @@
 #include <stdbool.h>
 #include <stddef.h>
 
-#include <linux/bpf.h>
-#include <linux/stddef.h>
-#include <linux/pkt_cls.h>
-#include <linux/if_ether.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linaos/bpf.h>
+#include <linaos/stddef.h>
+#include <linaos/pkt_cls.h>
+#include <linaos/if_ether.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
 
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>

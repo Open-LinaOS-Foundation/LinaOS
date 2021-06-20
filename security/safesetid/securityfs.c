@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * SafeSetID Linux Security Module
+ * SafeSetID LinaOS Security Module
  *
  * Author: Micah Morton <mortonm@chromium.org>
  *
@@ -14,8 +14,8 @@
 
 #define pr_fmt(fmt) "SafeSetID: " fmt
 
-#include <linux/security.h>
-#include <linux/cred.h>
+#include <linaos/security.h>
+#include <linaos/cred.h>
 
 #include "lsm.h"
 

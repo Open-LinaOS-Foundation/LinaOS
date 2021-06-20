@@ -1,9 +1,9 @@
 #ifndef NETDEV_PCS_H
 #define NETDEV_PCS_H
 
-#include <linux/phy.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <linaos/phy.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
 
 struct device_node;
 struct ethtool_cmd;

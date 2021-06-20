@@ -3,7 +3,7 @@
 // Cadence PCIe controller driver.
 // Author: Cyrille Pitchen <cyrille.pitchen@free-electrons.com>
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include "pcie-cadence.h"
 

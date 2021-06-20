@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _ASM_S390_UAPI_IPL_H
 #define _ASM_S390_UAPI_IPL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* IPL Parameter List header */
 struct ipl_pl_hdr {

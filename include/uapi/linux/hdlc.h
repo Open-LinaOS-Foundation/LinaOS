@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * Generic HDLC support routines for Linux
+ * Generic HDLC support routines for LinaOS
  *
  * Copyright (C) 1999-2005 Krzysztof Halasa <khc@pm.waw.pl>
  *

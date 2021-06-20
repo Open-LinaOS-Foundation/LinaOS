@@ -9,9 +9,9 @@
 #define __VBOX_VMMDEV_H__
 
 #include <asm/bitsperlong.h>
-#include <linux/sizes.h>
-#include <linux/types.h>
-#include <linux/vbox_vmmdev_types.h>
+#include <linaos/sizes.h>
+#include <linaos/types.h>
+#include <linaos/vbox_vmmdev_types.h>
 
 /* Port for generic request interface (relative offset). */
 #define VMMDEV_PORT_OFF_REQUEST                             0
@@ -287,7 +287,7 @@ enum vmmdev_guest_facility_type {
 	/* VBoxGINA / VBoxCredProv / pam_vbox. */
 	VBOXGUEST_FACILITY_TYPE_AUTO_LOGON       = 90,
 	VBOXGUEST_FACILITY_TYPE_VBOX_SERVICE     = 100,
-	/* VBoxTray (Windows), VBoxClient (Linux, Unix). */
+	/* VBoxTray (Windows), VBoxClient (LinaOS, Unix). */
 	VBOXGUEST_FACILITY_TYPE_VBOX_TRAY_CLIENT = 101,
 	VBOXGUEST_FACILITY_TYPE_SEAMLESS         = 1000,
 	VBOXGUEST_FACILITY_TYPE_GRAPHICS         = 1100,

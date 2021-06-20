@@ -4,18 +4,18 @@
  * Copyright (C) 2015-2017  Dialog Semiconductor
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/i2c.h>
-#include <linux/mfd/da9062/core.h>
-#include <linux/mfd/da9062/registers.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/regmap.h>
+#include <linaos/irq.h>
+#include <linaos/mfd/core.h>
+#include <linaos/i2c.h>
+#include <linaos/mfd/da9062/core.h>
+#include <linaos/mfd/da9062/registers.h>
+#include <linaos/regulator/of_regulator.h>
 
 #define	DA9062_REG_EVENT_A_OFFSET	0
 #define	DA9062_REG_EVENT_B_OFFSET	1

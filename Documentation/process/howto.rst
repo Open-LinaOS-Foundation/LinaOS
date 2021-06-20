@@ -1,11 +1,11 @@
 .. _process_howto:
 
-HOWTO do Linux kernel development
+HOWTO do LinaOS kernel development
 =================================
 
 This is the be-all, end-all document on this topic.  It contains
-instructions on how to become a Linux kernel developer and how to learn
-to work with the Linux kernel development community.  It tries to not
+instructions on how to become a LinaOS kernel developer and how to learn
+to work with the LinaOS kernel development community.  It tries to not
 contain anything related to the technical aspects of kernel programming,
 but will help point you in the right direction for that.
 
@@ -17,8 +17,8 @@ document.
 Introduction
 ------------
 
-So, you want to learn how to become a Linux kernel developer?  Or you
-have been told by your manager, "Go write a Linux driver for this
+So, you want to learn how to become a LinaOS kernel developer?  Or you
+have been told by your manager, "Go write a LinaOS driver for this
 device."  This document's goal is to teach you everything you need to
 know to achieve this by describing the process you need to go through,
 and hints on how to work with the community.  It will also try to
@@ -59,12 +59,12 @@ of doing things.
 Legal Issues
 ------------
 
-The Linux kernel source code is released under the GPL.  Please see the file
-COPYING in the main directory of the source tree. The Linux kernel licensing
+The LinaOS kernel source code is released under the GPL.  Please see the file
+COPYING in the main directory of the source tree. The LinaOS kernel licensing
 rules and how to use `SPDX <https://spdx.org/>`_ identifiers in source code are
 described in :ref:`Documentation/process/license-rules.rst <kernel_licensing>`.
 If you have further questions about the license, please contact a lawyer, and do
-not ask on the Linux kernel mailing list.  The people on the mailing lists are
+not ask on the LinaOS kernel mailing list.  The people on the mailing lists are
 not lawyers, and you should not rely on their statements on legal matters.
 
 For common questions and answers about the GPL, please see:
@@ -75,7 +75,7 @@ For common questions and answers about the GPL, please see:
 Documentation
 -------------
 
-The Linux kernel source tree has a large range of documents that are
+The LinaOS kernel source tree has a large range of documents that are
 invaluable for learning how to interact with the kernel community.  When
 new features are added to the kernel, it is recommended that new
 documentation files are also added which explain how to use the feature.
@@ -83,13 +83,13 @@ When a kernel change causes the interface that the kernel exposes to
 userspace to change, it is recommended that you send the information or
 a patch to the manual pages explaining the change to the manual pages
 maintainer at mtk.manpages@gmail.com, and CC the list
-linux-api@vger.kernel.org.
+linaos-api@vger.kernel.org.
 
 Here is a list of files that are in the kernel source tree that are
 required reading:
 
   :ref:`Documentation/admin-guide/README.rst <readme>`
-    This file gives a short background on the Linux kernel and describes
+    This file gives a short background on the LinaOS kernel and describes
     what is necessary to do to configure and build the kernel.  People
     who are new to the kernel should start here.
 
@@ -99,7 +99,7 @@ required reading:
     successfully.
 
   :ref:`Documentation/process/coding-style.rst <codingstyle>`
-    This describes the Linux kernel coding style, and some of the
+    This describes the LinaOS kernel coding style, and some of the
     rationale behind it. All new code is expected to follow the
     guidelines in this document. Most maintainers will only accept
     patches if these rules are followed, and many people will only
@@ -122,8 +122,8 @@ required reading:
 	"The Perfect Patch"
 		https://www.ozlabs.org/~akpm/stuff/tpp.txt
 
-	"Linux kernel patch submission format"
-		https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html
+	"LinaOS kernel patch submission format"
+		https://web.archive.org/web/20180829112450/http://linaos.yyz.us/patch-format.html
 
   :ref:`Documentation/process/stable-api-nonsense.rst <stable_api_nonsense>`
     This file describes the rationale behind the conscious decision to
@@ -134,17 +134,17 @@ required reading:
       - Mitigating rapid change within the kernel source tree (or
 	preventing rapid change)
 
-    This document is crucial for understanding the Linux development
-    philosophy and is very important for people moving to Linux from
+    This document is crucial for understanding the LinaOS development
+    philosophy and is very important for people moving to LinaOS from
     development on other Operating Systems.
 
   :ref:`Documentation/admin-guide/security-bugs.rst <securitybugs>`
-    If you feel you have found a security problem in the Linux kernel,
+    If you feel you have found a security problem in the LinaOS kernel,
     please follow the steps in this document to help notify the kernel
     developers, and help solve the issue.
 
   :ref:`Documentation/process/management-style.rst <managementstyle>`
-    This document describes how Linux kernel maintainers operate and the
+    This document describes how LinaOS kernel maintainers operate and the
     shared ethos behind their methodologies.  This is important reading
     for anyone new to kernel development (or anyone simply curious about
     it), as it resolves a lot of common misconceptions and confusion
@@ -186,8 +186,8 @@ They can also be generated on LaTeX and ePub formats with::
 Becoming A Kernel Developer
 ---------------------------
 
-If you do not know anything about Linux kernel development, you should
-look at the Linux KernelNewbies project:
+If you do not know anything about LinaOS kernel development, you should
+look at the LinaOS KernelNewbies project:
 
 	https://kernelnewbies.org
 
@@ -196,7 +196,7 @@ of basic kernel development question (make sure to search the archives
 first, before asking something that has already been answered in the
 past.)  It also has an IRC channel that you can use to ask questions in
 real-time, and a lot of helpful documentation that is useful for
-learning about Linux kernel development.
+learning about LinaOS kernel development.
 
 The website has basic information about code organization, subsystems,
 and current projects (both in-tree and out-of-tree). It also describes
@@ -205,22 +205,22 @@ apply a patch.
 
 If you do not know where you want to start, but you want to look for
 some task to start doing to join into the kernel development community,
-go to the Linux Kernel Janitor's project:
+go to the LinaOS Kernel Janitor's project:
 
 	https://kernelnewbies.org/KernelJanitors
 
 It is a great place to start.  It describes a list of relatively simple
-problems that need to be cleaned up and fixed within the Linux kernel
+problems that need to be cleaned up and fixed within the LinaOS kernel
 source tree.  Working with the developers in charge of this project, you
-will learn the basics of getting your patch into the Linux kernel tree,
+will learn the basics of getting your patch into the LinaOS kernel tree,
 and possibly be pointed in the direction of what to go work on next, if
 you do not already have an idea.
 
-Before making any actual modifications to the Linux kernel code, it is
+Before making any actual modifications to the LinaOS kernel code, it is
 imperative to understand how the code in question works.  For this
 purpose, nothing is better than reading through it directly (most tricky
 bits are commented well), perhaps even with the help of specialized
-tools.  One such tool that is particularly recommended is the Linux
+tools.  One such tool that is particularly recommended is the LinaOS
 Cross-Reference project, which is able to present source code in a
 self-referential, indexed webpage format. An excellent up-to-date
 repository of the kernel code may be found at:
@@ -231,14 +231,14 @@ repository of the kernel code may be found at:
 The development process
 -----------------------
 
-Linux kernel development process currently consists of a few different
+LinaOS kernel development process currently consists of a few different
 main kernel "branches" and lots of different subsystem-specific kernel
 branches.  These different branches are:
 
   - Linus's mainline tree
   - Various stable trees with multiple major numbers
   - Subsystem-specific trees
-  - linux-next integration testing tree
+  - linaos-next integration testing tree
 
 Mainline tree
 ~~~~~~~~~~~~~
@@ -249,7 +249,7 @@ https://kernel.org or in the repo.  Its development process is as follows:
   - As soon as a new kernel is released a two week window is open,
     during this period of time maintainers can submit big diffs to
     Linus, usually the patches that have already been included in the
-    linux-next for a few weeks.  The preferred way to submit big changes
+    linaos-next for a few weeks.  The preferred way to submit big changes
     is using git (the kernel's source management tool, more information
     can be found at https://git-scm.com/) but plain patches are also just
     fine.
@@ -269,7 +269,7 @@ https://kernel.org or in the repo.  Its development process is as follows:
   - Process continues until the kernel is considered "ready", the
     process should last around 6 weeks.
 
-It is worth mentioning what Andrew Morton wrote on the linux-kernel
+It is worth mentioning what Andrew Morton wrote on the linaos-kernel
 mailing list about kernel releases:
 
 	*"Nobody knows when a kernel will be released, because it's
@@ -324,7 +324,7 @@ revisions to it, and maintainers can mark patches as under review,
 accepted, or rejected.  Most of these patchwork sites are listed at
 https://patchwork.kernel.org/.
 
-linux-next integration testing tree
+linaos-next integration testing tree
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Before updates from subsystem trees are merged into the mainline tree,
@@ -332,11 +332,11 @@ they need to be integration-tested.  For this purpose, a special
 testing repository exists into which virtually all subsystem trees are
 pulled on an almost daily basis:
 
-	https://git.kernel.org/?p=linux/kernel/git/next/linux-next.git
+	https://git.kernel.org/?p=linaos/kernel/git/next/linaos-next.git
 
-This way, the linux-next gives a summary outlook onto what will be
+This way, the linaos-next gives a summary outlook onto what will be
 expected to go into the mainline kernel at the next merge period.
-Adventurous testers are very welcome to runtime-test the linux-next.
+Adventurous testers are very welcome to runtime-test the linaos-next.
 
 
 Bug Reporting
@@ -371,15 +371,15 @@ Mailing lists
 -------------
 
 As some of the above documents describe, the majority of the core kernel
-developers participate on the Linux Kernel Mailing list.  Details on how
+developers participate on the LinaOS Kernel Mailing list.  Details on how
 to subscribe and unsubscribe from the list can be found at:
 
-	http://vger.kernel.org/vger-lists.html#linux-kernel
+	http://vger.kernel.org/vger-lists.html#linaos-kernel
 
 There are archives of the mailing list on the web in many different
 places.  Use a search engine to find these archives.  For example:
 
-	http://dir.gmane.org/gmane.linux.kernel
+	http://dir.gmane.org/gmane.linaos.kernel
 
 It is highly recommended that you search the archives about the topic
 you want to bring up, before you post it to the list. A lot of things
@@ -501,11 +501,11 @@ Another way the kernel community is different than most traditional
 software engineering work environments is the faceless nature of
 interaction.  One benefit of using email and irc as the primary forms of
 communication is the lack of discrimination based on gender or race.
-The Linux kernel work environment is accepting of women and minorities
+The LinaOS kernel work environment is accepting of women and minorities
 because all you are is an email address.  The international aspect also
 helps to level the playing field because you can't guess gender based on
 a person's name. A man may be named Andrea and a woman may be named Pat.
-Most women who have worked in the Linux kernel and have expressed an
+Most women who have worked in the LinaOS kernel and have expressed an
 opinion have had positive experiences.
 
 The language barrier can cause problems for some people who are not
@@ -518,7 +518,7 @@ English before sending them.
 Break up your changes
 ---------------------
 
-The Linux kernel community does not gladly accept large chunks of code
+The LinaOS kernel community does not gladly accept large chunks of code
 dropped on it all at once.  The changes need to be properly introduced,
 discussed, and broken up into tiny, individual portions.  This is almost
 the exact opposite of what companies are used to doing.  Your proposal
@@ -575,7 +575,7 @@ Justify your change
 -------------------
 
 Along with breaking up your patches, it is very important for you to let
-the Linux community know why they should add this change.  New features
+the LinaOS community know why they should add this change.  New features
 must be justified as being needed and useful.
 
 

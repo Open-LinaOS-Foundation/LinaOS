@@ -7,16 +7,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/net.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
 #include <net/af_rxrpc.h>
 #include <generated/utsrelease.h>
 #include "ar-internal.h"
 
-static const char rxrpc_version_string[65] = "linux-" UTS_RELEASE " AF_RXRPC";
+static const char rxrpc_version_string[65] = "linaos-" UTS_RELEASE " AF_RXRPC";
 
 /*
  * Reply to a version request

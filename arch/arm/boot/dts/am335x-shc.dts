@@ -42,7 +42,7 @@
 		back_button {
 			label = "Back Button";
 			gpios = <&gpio1 29 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_BACK>;
+			linaos,code = <KEY_BACK>;
 			debounce-interval = <1000>;
 			wakeup-source;
 		};
@@ -50,7 +50,7 @@
 		front_button {
 			label = "Front Button";
 			gpios = <&gpio1 25 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_FRONT>;
+			linaos,code = <KEY_FRONT>;
 			debounce-interval = <1000>;
 			wakeup-source;
 		};
@@ -71,7 +71,7 @@
 		led2 {
 			label = "shc:power:bl";
 			gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "timer";
+			linaos,default-trigger = "timer";
 			default-state = "on";
 		};
 

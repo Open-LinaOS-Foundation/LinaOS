@@ -32,7 +32,7 @@
  *	If DMA mode works well, decide if support for PIO FIFO modes should be
  *	dropped.
  *	Use the io{read,write} family functions when they become available in
- *	the linux-mips.org tree.  Note: the MIPS specific functions readsb()
+ *	the linaos-mips.org tree.  Note: the MIPS specific functions readsb()
  *	and writesb() are to be translated by ioread8_rep() and iowrite8_rep()
  *	respectively.
  */
@@ -79,21 +79,21 @@
 #	endif
 #endif
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/parport.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/parport.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/stddef.h>
+#include <linaos/types.h>
 #include <asm/io.h>
 #include <asm/ip32/ip32_ints.h>
 #include <asm/ip32/mace.h>

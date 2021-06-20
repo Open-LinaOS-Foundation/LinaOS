@@ -54,7 +54,7 @@ Supported chips:
 
 Authors:
 	Vadim Pasternak <vadimp@mellanox.com>
-	Guenter Roeck <linux@roeck-us.net>
+	Guenter Roeck <linaos@roeck-us.net>
 
 
 Description

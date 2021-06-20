@@ -35,8 +35,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/rhashtable.h>
-#include <linux/sched/signal.h>
+#include <linaos/rhashtable.h>
+#include <linaos/sched/signal.h>
 
 #include "core.h"
 #include "name_table.h"

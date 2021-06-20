@@ -2,7 +2,7 @@
 #ifndef _LINUX_UNALIGNED_ACCESS_OK_H
 #define _LINUX_UNALIGNED_ACCESS_OK_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/byteorder.h>
 
 static __always_inline u16 get_unaligned_le16(const void *p)

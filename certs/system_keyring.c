@@ -5,14 +5,14 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/uidgid.h>
-#include <linux/verification.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/cred.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/uidgid.h>
+#include <linaos/verification.h>
 #include <keys/asymmetric-type.h>
 #include <keys/system_keyring.h>
 #include <crypto/pkcs7.h>

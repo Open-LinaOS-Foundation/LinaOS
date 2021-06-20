@@ -15,18 +15,18 @@
  * Based on pm.c for omap1
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/omap-gpmc.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/pm.h>
+#include <linaos/suspend.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/omap-gpmc.h>
 
 #include <trace/events/power.h>
 

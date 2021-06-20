@@ -159,7 +159,7 @@
 			interrupt-parent = <&ipic>;
 			tbi-handle = <&tbi0>;
 			phy-handle = <&phy1c>;
-			linux,network-index = <0>;
+			linaos,network-index = <0>;
 
 			mdio@520 {
 				#address-cells = <1>;

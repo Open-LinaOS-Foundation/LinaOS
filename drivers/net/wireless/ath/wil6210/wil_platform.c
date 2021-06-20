@@ -3,7 +3,7 @@
  * Copyright (c) 2014-2016 Qualcomm Atheros, Inc.
  */
 
-#include <linux/device.h>
+#include <linaos/device.h>
 #include "wil_platform.h"
 
 int __init wil_platform_modinit(void)

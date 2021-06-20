@@ -18,7 +18,7 @@ Overall design
   features. For example, if a device has an interrupt, then include the
   'interrupts' property even if the driver is only polled mode.
 
-- DON'T refer to Linux or "device driver" in bindings. Bindings should be
+- DON'T refer to LinaOS or "device driver" in bindings. Bindings should be
   based on what the hardware has, not what an OS and driver currently support.
 
 - DO use node names matching the class of the device. Many standard names are

@@ -4,9 +4,9 @@
  *
  * Based on arch/arm64/kernel/jump_label.c
  */
-#include <linux/kernel.h>
-#include <linux/jump_label.h>
-#include <linux/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/jump_label.h>
+#include <linaos/bug.h>
 #include <asm/alternative.h>
 #include <asm/patch.h>
 

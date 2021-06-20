@@ -9,8 +9,8 @@
 // This driver provides support for those extra devices
 
 #include "cx231xx.h"
-#include <linux/slab.h>
-#include <linux/bitrev.h>
+#include <linaos/slab.h>
+#include <linaos/bitrev.h>
 
 #define MODULE_NAME "cx231xx-input"
 

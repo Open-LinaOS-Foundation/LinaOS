@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  * Copyright (C) 2013 Richard Weinberger <richard@nod.at>
  * Copyright (C) 2014 Google Inc., Author: Daniel Walter <dwalter@google.com>
  */
 
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linaos/kallsyms.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/stacktrace.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
 #include <asm/stacktrace.h>
 
 void dump_trace(struct task_struct *tsk,

@@ -1,5 +1,5 @@
 /*
- *	linux/drivers/video/pmag-aa-fb.c
+ *	linaos/drivers/video/pmag-aa-fb.c
  *	Copyright 2002 Karsten Merker <merker@debian.org>
  *
  *	PMAG-AA TurboChannel framebuffer card support ... derived from
@@ -14,7 +14,7 @@
  *	Public License.  See the file COPYING in the main directory of this
  *	archive for more details.
  *
- *	2002-09-28  Karsten Merker <merker@linuxtag.org>
+ *	2002-09-28  Karsten Merker <merker@linaostag.org>
  *		Version 0.01: First try to get a PMAG-AA running.
  *
  *	2003-02-24  Thiemo Seufer  <seufer@csv.ica.uni-stuttgart.de>
@@ -23,26 +23,26 @@
  *	2003-09-21  Thiemo Seufer  <seufer@csv.ica.uni-stuttgart.de>
  *		Hardware cursor support.
  *
- *	2016-02-21  Maciej W. Rozycki  <macro@linux-mips.org>
+ *	2016-02-21  Maciej W. Rozycki  <macro@linaos-mips.org>
  *		Version 0.03: Rewritten for the new FB and TC APIs.
  */
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/tc.h>
-#include <linux/timer.h>
+#include <linaos/compiler.h>
+#include <linaos/errno.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/tc.h>
+#include <linaos/timer.h>
 
 #include "bt455.h"
 #include "bt431.h"
 
 /* Version information */
 #define DRIVER_VERSION "0.03"
-#define DRIVER_AUTHOR "Karsten Merker <merker@linuxtag.org>"
+#define DRIVER_AUTHOR "Karsten Merker <merker@linaostag.org>"
 #define DRIVER_DESCRIPTION "PMAG-AA Framebuffer Driver"
 
 /*

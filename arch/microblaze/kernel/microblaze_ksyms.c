@@ -4,18 +4,18 @@
  * Copyright (C) 2008-2009 PetaLogix
  */
 
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/in6.h>
-#include <linux/syscalls.h>
+#include <linaos/export.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/in6.h>
+#include <linaos/syscalls.h>
 
 #include <asm/checksum.h>
 #include <asm/cacheflush.h>
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <asm/page.h>
-#include <linux/ftrace.h>
-#include <linux/uaccess.h>
+#include <linaos/ftrace.h>
+#include <linaos/uaccess.h>
 
 #ifdef CONFIG_FUNCTION_TRACER
 extern void _mcount(void);

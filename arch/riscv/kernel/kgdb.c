@@ -3,12 +3,12 @@
  * Copyright (C) 2020 SiFive
  */
 
-#include <linux/ptrace.h>
-#include <linux/kdebug.h>
-#include <linux/bug.h>
-#include <linux/kgdb.h>
-#include <linux/irqflags.h>
-#include <linux/string.h>
+#include <linaos/ptrace.h>
+#include <linaos/kdebug.h>
+#include <linaos/bug.h>
+#include <linaos/kgdb.h>
+#include <linaos/irqflags.h>
+#include <linaos/string.h>
 #include <asm/cacheflush.h>
 #include <asm/gdb_xml.h>
 #include <asm/parse_asm.h>

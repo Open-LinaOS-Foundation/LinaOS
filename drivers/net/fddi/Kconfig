@@ -65,7 +65,7 @@ config SKFP
 	  for information about the driver.
 
 	  Questions concerning this driver can be addressed to:
-	  <linux@syskonnect.de>
+	  <linaos@syskonnect.de>
 
 	  To compile this driver as a module, choose M here: the module
 	  will be called skfp.  This is recommended.

@@ -8,13 +8,13 @@ Reserved Format Identifiers
 
 These formats are not defined by this specification, they are just
 listed for reference and to avoid naming conflicts. If you want to
-register your own format, send an e-mail to the linux-media mailing list
-`https://linuxtv.org/lists.php <https://linuxtv.org/lists.php>`__
+register your own format, send an e-mail to the linaos-media mailing list
+`https://linaostv.org/lists.php <https://linaostv.org/lists.php>`__
 for inclusion in the ``videodev2.h`` file. If you want to share your
 format with other developers add a link to your documentation and send a
-copy to the linux-media mailing list for inclusion in this section. If
+copy to the linaos-media mailing list for inclusion in this section. If
 you think your format should be listed in a standard format section
-please make a proposal on the linux-media mailing list.
+please make a proposal on the linaos-media mailing list.
 
 
 .. tabularcolumns:: |p{6.6cm}|p{2.2cm}|p{8.5cm}|

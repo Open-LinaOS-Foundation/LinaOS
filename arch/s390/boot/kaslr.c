@@ -2,7 +2,7 @@
 /*
  * Copyright IBM Corp. 2019
  */
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm/mem_detect.h>
 #include <asm/cpacf.h>
 #include <asm/timex.h>
@@ -192,7 +192,7 @@ unsigned long get_random_base(unsigned long safe_addr)
 	}
 	safe_addr = ALIGN(safe_addr, THREAD_SIZE);
 
-	kernel_size = vmlinux.image_size + vmlinux.bss_size;
+	kernel_size = vmlinaos.image_size + vmlinaos.bss_size;
 	if (safe_addr + kernel_size > memory_limit)
 		return 0;
 

@@ -25,13 +25,13 @@
  *   - Read/write EEPROM
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/rwsem.h>
-#include <linux/usb/input.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/rwsem.h>
+#include <linaos/usb/input.h>
 
 #define DRIVER_VERSION "20080805"
 #define DRIVER_AUTHOR  "Alfred E. Heggestad"
@@ -631,7 +631,7 @@ static int cm109_input_ev(struct input_dev *idev, unsigned int type,
 
 
 /******************************************************************************
- * Linux interface and usb initialisation
+ * LinaOS interface and usb initialisation
  *****************************************************************************/
 
 struct driver_info {

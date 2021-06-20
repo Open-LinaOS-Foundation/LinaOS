@@ -69,11 +69,11 @@
  *   o Otherwise this is corruption type 2.
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/crc32.h>
-#include <linux/math64.h>
-#include <linux/random.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/crc32.h>
+#include <linaos/math64.h>
+#include <linaos/random.h>
 #include "ubi.h"
 
 static int self_check_ai(struct ubi_device *ubi, struct ubi_attach_info *ai);

@@ -5,9 +5,9 @@
  * Copyright (c) 2014 Scott Feldman <sfeldma@gmail.com>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
 
 #include "rocker_hw.h"
 #include "rocker_tlv.h"

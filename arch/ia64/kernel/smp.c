@@ -2,7 +2,7 @@
 /*
  * SMP Support
  *
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 Walt Drummond <drummond@valinaos.com>
  * Copyright (C) 1999, 2001, 2003 David Mosberger-Tang <davidm@hpl.hp.com>
  *
  * Lots of stuff stolen from arch/alpha/kernel/smp.c
@@ -19,21 +19,21 @@
  * 10/13/00 Goutham Rao <goutham.rao@intel.com> Updated smp_call_function and
  *		smp_call_function_single to resend IPI on timeouts
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/kernel_stat.h>
-#include <linux/mm.h>
-#include <linux/cache.h>
-#include <linux/delay.h>
-#include <linux/efi.h>
-#include <linux/bitops.h>
-#include <linux/kexec.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/smp.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/mm.h>
+#include <linaos/cache.h>
+#include <linaos/delay.h>
+#include <linaos/efi.h>
+#include <linaos/bitops.h>
+#include <linaos/kexec.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/current.h>
 #include <asm/delay.h>
 #include <asm/io.h>

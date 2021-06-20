@@ -14,7 +14,7 @@ ISO7816 Serial Communications
   Some CPUs/UARTs (e.g., Microchip AT91) contain a built-in mode capable of
   handling communication with a smart card.
 
-  For these microcontrollers, the Linux driver should be made capable of
+  For these microcontrollers, the LinaOS driver should be made capable of
   working in both modes, and proper ioctls (see later) should be made
   available at user-level to allow switching from one mode to the other, and
   vice versa.
@@ -22,7 +22,7 @@ ISO7816 Serial Communications
 3. Data Structures Already Available in the Kernel
 ==================================================
 
-  The Linux kernel provides the serial_iso7816 structure (see [1]) to handle
+  The LinaOS kernel provides the serial_iso7816 structure (see [1]) to handle
   ISO7816 communications. This data structure is used to set and configure
   ISO7816 parameters in ioctls.
 
@@ -38,7 +38,7 @@ ISO7816 Serial Communications
   From user-level, ISO7816 configuration can be get/set using the previous
   ioctls. For instance, to set ISO7816 you can use the following code::
 
-	#include <linux/serial.h>
+	#include <linaos/serial.h>
 
 	/* Include definition for ISO7816 ioctls: TIOCSISO7816 and TIOCGISO7816 */
 	#include <sys/ioctl.h>
@@ -87,4 +87,4 @@ ISO7816 Serial Communications
 5. References
 =============
 
- [1]    include/uapi/linux/serial.h
+ [1]    include/uapi/linaos/serial.h

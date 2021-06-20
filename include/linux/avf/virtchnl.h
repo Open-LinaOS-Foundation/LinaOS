@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*******************************************************************************
  *
- * Intel Ethernet Controller XL710 Family Linux Virtual Function Driver
+ * Intel Ethernet Controller XL710 Family LinaOS Virtual Function Driver
  * Copyright(c) 2013 - 2014 Intel Corporation.
  *
  * Contact Information:

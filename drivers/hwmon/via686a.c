@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * via686a.c - Part of lm_sensors, Linux kernel modules
+ * via686a.c - Part of lm_sensors, LinaOS kernel modules
  *	       for hardware monitoring
  *
  * Copyright (c) 1998 - 2002  Frodo Looijaard <frodol@dds.nl>,
@@ -20,19 +20,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/jiffies.h>
+#include <linaos/platform_device.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/sysfs.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
 
 /*
  * If force_addr is set to anything different from 0, we forcibly enable

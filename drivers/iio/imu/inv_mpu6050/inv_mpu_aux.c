@@ -3,10 +3,10 @@
  * Copyright (C) 2019 TDK-InvenSense, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
+#include <linaos/delay.h>
 
 #include "inv_mpu_aux.h"
 #include "inv_mpu_iio.h"

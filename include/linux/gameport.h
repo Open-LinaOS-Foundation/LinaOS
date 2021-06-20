@@ -6,13 +6,13 @@
 #define _GAMEPORT_H
 
 #include <asm/io.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <uapi/linux/gameport.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/device.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <uapi/linaos/gameport.h>
 
 struct gameport {
 

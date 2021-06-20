@@ -4,7 +4,7 @@
  *			  (C) 2007 Red Hat Inc
  *
  * Based upon
- *  linux/drivers/ide/pci/cmd640.c		Version 1.02  Sep 01, 1996
+ *  linaos/drivers/ide/pci/cmd640.c		Version 1.02  Sep 01, 1996
  *
  *  Copyright (C) 1995-1996  Linus Torvalds & authors (see driver)
  *
@@ -13,14 +13,14 @@
  *	your own code.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/gfp.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linaos/libata.h>
 
 #define DRV_NAME "pata_cmd640"
 #define DRV_VERSION "0.0.5"

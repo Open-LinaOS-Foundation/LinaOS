@@ -10,8 +10,8 @@
  *
  * Copyright 2004 (c) MontaVista Software, Inc.
  */
-#include <linux/init.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
 #include <asm/io.h>
 #include <asm/txx9/smsc_fdc37m81x.h>
 

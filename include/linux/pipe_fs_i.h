@@ -15,7 +15,7 @@
 #endif
 
 /**
- *	struct pipe_buffer - a linux kernel pipe buffer
+ *	struct pipe_buffer - a linaos kernel pipe buffer
  *	@page: the page containing the data for the pipe buffer
  *	@offset: offset of data inside the @page
  *	@len: length of data inside the @page
@@ -32,7 +32,7 @@ struct pipe_buffer {
 };
 
 /**
- *	struct pipe_inode_info - a linux kernel pipe
+ *	struct pipe_inode_info - a linaos kernel pipe
  *	@mutex: mutex protecting the whole thing
  *	@rd_wait: reader wait point in case of empty pipe
  *	@wr_wait: writer wait point in case of full pipe

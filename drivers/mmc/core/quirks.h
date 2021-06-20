@@ -10,7 +10,7 @@
  *
  */
 
-#include <linux/mmc/sdio_ids.h>
+#include <linaos/mmc/sdio_ids.h>
 
 #include "card.h"
 

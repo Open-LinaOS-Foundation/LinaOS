@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* 
- * Coda File System, Linux Kernel module
+ * Coda File System, LinaOS Kernel module
  * 
  * Original version, adapted from cfs_mach.c, (C) Carnegie Mellon University
- * Linux modifications (C) 1996, Peter J. Braam
- * Rewritten for Linux 2.1 (C) 1997 Carnegie Mellon University
+ * LinaOS modifications (C) 1996, Peter J. Braam
+ * Rewritten for LinaOS 2.1 (C) 1997 Carnegie Mellon University
  *
  * Carnegie Mellon University encourages users of this software to
  * contribute improvements to the Coda project.
@@ -19,14 +19,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/wait.h>		
-#include <linux/types.h>
-#include <linux/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/param.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/wait.h>		
+#include <linaos/types.h>
+#include <linaos/fs.h>
 #include "coda_fs_i.h"
 
 /* operations */

@@ -5,12 +5,12 @@
  *
  * Authors:	Roopa Prabhu, <roopa@cumulusnetworks.com>
  */
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/net.h>
-#include <linux/module.h>
-#include <linux/mpls.h>
-#include <linux/vmalloc.h>
+#include <linaos/types.h>
+#include <linaos/skbuff.h>
+#include <linaos/net.h>
+#include <linaos/module.h>
+#include <linaos/mpls.h>
+#include <linaos/vmalloc.h>
 #include <net/ip.h>
 #include <net/dst.h>
 #include <net/lwtunnel.h>
@@ -19,7 +19,7 @@
 #include <net/ip6_fib.h>
 #include <net/route.h>
 #include <net/mpls_iptunnel.h>
-#include <linux/mpls_iptunnel.h>
+#include <linaos/mpls_iptunnel.h>
 #include "internal.h"
 
 static const struct nla_policy mpls_iptunnel_policy[MPLS_IPTUNNEL_MAX + 1] = {

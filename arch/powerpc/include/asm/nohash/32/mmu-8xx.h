@@ -177,7 +177,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/mmdebug.h>
+#include <linaos/mmdebug.h>
 
 void mmu_pin_tlb(unsigned long top, bool readonly);
 

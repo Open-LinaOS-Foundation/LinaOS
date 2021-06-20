@@ -9,7 +9,7 @@
 #ifndef DVB_ZL10036_H
 #define DVB_ZL10036_H
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/dvb_frontend.h>
 
 struct zl10036_config {

@@ -17,7 +17,7 @@
 #ifndef MEDIA_S5C73M3__
 #define MEDIA_S5C73M3__
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-mediabus.h>
 
 /**

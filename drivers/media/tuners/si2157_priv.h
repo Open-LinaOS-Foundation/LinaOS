@@ -8,7 +8,7 @@
 #ifndef SI2157_PRIV_H
 #define SI2157_PRIV_H
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 #include <media/v4l2-mc.h>
 #include "si2157.h"
 

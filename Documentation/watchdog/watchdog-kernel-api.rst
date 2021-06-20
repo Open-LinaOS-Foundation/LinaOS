@@ -1,5 +1,5 @@
 ===============================================
-The Linux WatchDog Timer Driver Core kernel API
+The LinaOS WatchDog Timer Driver Core kernel API
 ===============================================
 
 Last reviewed: 12-Feb-2013
@@ -23,7 +23,7 @@ a watchdog timer driver then only needs to provide the different routines
 The API
 -------
 Each watchdog timer driver that wants to use the WatchDog Timer Driver Core
-must #include <linux/watchdog.h> (you would have to do this anyway when
+must #include <linaos/watchdog.h> (you would have to do this anyway when
 writing a watchdog device driver). This include file contains following
 register/unregister routines::
 

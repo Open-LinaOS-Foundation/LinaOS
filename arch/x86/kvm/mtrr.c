@@ -11,10 +11,10 @@
  *   Avi Kivity   <avi@qumranet.com>
  *   Marcelo Tosatti <mtosatti@redhat.com>
  *   Paolo Bonzini <pbonzini@redhat.com>
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@linaos.intel.com>
  */
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 #include <asm/mtrr.h>
 
 #include "cpuid.h"

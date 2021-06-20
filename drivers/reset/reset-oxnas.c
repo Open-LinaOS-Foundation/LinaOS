@@ -6,16 +6,16 @@
  * Copyright (C) 2014 Ma Haijun <mahaijuns@gmail.com>
  * Copyright (C) 2009 Oxford Semiconductor Ltd
  */
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset-controller.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/types.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
 
 /* Regmap offsets */
 #define RST_SET_REGOFFSET	0x34

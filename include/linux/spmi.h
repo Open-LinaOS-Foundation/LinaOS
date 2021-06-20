@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2013, The LinaOS Foundation. All rights reserved.
  */
 #ifndef _LINUX_SPMI_H
 #define _LINUX_SPMI_H
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
 
 /* Maximum slave identifier */
 #define SPMI_MAX_SLAVE_ID		16

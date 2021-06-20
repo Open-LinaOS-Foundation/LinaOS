@@ -5,13 +5,13 @@
 
 #ifndef _VAS_H
 #define _VAS_H
-#include <linux/atomic.h>
-#include <linux/idr.h>
+#include <linaos/atomic.h>
+#include <linaos/idr.h>
 #include <asm/vas.h>
-#include <linux/io.h>
-#include <linux/dcache.h>
-#include <linux/mutex.h>
-#include <linux/stringify.h>
+#include <linaos/io.h>
+#include <linaos/dcache.h>
+#include <linaos/mutex.h>
+#include <linaos/stringify.h>
 
 /*
  * Overview of Virtual Accelerator Switchboard (VAS).
@@ -357,9 +357,9 @@ struct vas_window {
 	bool user_win;		/* True if user space window */
 	void *hvwc_map;		/* HV window context */
 	void *uwc_map;		/* OS/User window context */
-	struct pid *pid;	/* Linux process id of owner */
+	struct pid *pid;	/* LinaOS process id of owner */
 	struct pid *tgid;	/* Thread group ID of owner */
-	struct mm_struct *mm;	/* Linux process mm_struct */
+	struct mm_struct *mm;	/* LinaOS process mm_struct */
 	int wcreds_max;		/* Window credits */
 
 	char *dbgname;
@@ -408,7 +408,7 @@ struct vas_winctx {
 	bool notify_os_intr_reg;
 
 	int lpid;
-	int pidr;		/* value from SPRN_PID, not linux pid */
+	int pidr;		/* value from SPRN_PID, not linaos pid */
 	int lnotify_lpid;
 	int lnotify_pid;
 	int lnotify_tid;

@@ -9,7 +9,7 @@
 #ifndef CW1200_TXRX_H
 #define CW1200_TXRX_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 /* extern */ struct ieee80211_hw;
 /* extern */ struct sk_buff;
@@ -47,7 +47,7 @@ struct tx_policy_cache {
 /* Intention of TX policy cache is an overcomplicated WSM API.
  * Device does not accept per-PDU tx retry sequence.
  * It uses "tx retry policy id" instead, so driver code has to sync
- * linux tx retry sequences with a retry policy table in the device.
+ * linaos tx retry sequences with a retry policy table in the device.
  */
 void tx_policy_init(struct cw1200_common *priv);
 void tx_policy_upload_work(struct work_struct *work);

@@ -5,12 +5,12 @@
  * Copyright (C) 2004 Texas Instruments, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-map-ops.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/io.h>
 
 #include <asm/irq.h>
 

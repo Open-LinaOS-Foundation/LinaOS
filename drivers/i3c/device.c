@@ -5,12 +5,12 @@
  * Author: Boris Brezillon <boris.brezillon@bootlin.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linaos/atomic.h>
+#include <linaos/bug.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
 
 #include "internals.h"
 

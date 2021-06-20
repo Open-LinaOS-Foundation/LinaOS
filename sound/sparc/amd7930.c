@@ -30,15 +30,15 @@
  * --- End of notes from Thoamas's original driver ---
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/moduleparam.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/io.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

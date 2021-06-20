@@ -6,12 +6,12 @@
  * Copyright (c) 2016, Intel Corporation.
  */
 
-#include <linux/acpi.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <linaos/acpi.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
 
 #define MAX31722_REG_CFG				0x00
 #define MAX31722_REG_TEMP_LSB				0x01

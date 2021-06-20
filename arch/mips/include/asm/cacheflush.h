@@ -10,7 +10,7 @@
 #define _ASM_CACHEFLUSH_H
 
 /* Keep includes the same across arches.  */
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <asm/cpu-features.h>
 
 /* Cache flushing:

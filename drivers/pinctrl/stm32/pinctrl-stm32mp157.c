@@ -3,9 +3,9 @@
  * Copyright (C) STMicroelectronics 2017 - All Rights Reserved
  * Author: Alexandre Torgue <alexandre.torgue@st.com> for STMicroelectronics.
  */
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 
 #include "pinctrl-stm32.h"
 

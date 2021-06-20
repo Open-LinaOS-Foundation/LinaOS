@@ -18,11 +18,11 @@
 
 #include "em28xx.h"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/usb.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/hardirq.h>
+#include <linaos/init.h>
+#include <linaos/usb.h>
 
 #include "em28xx-v4l.h"
 

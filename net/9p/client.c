@@ -10,19 +10,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
-#include <linux/uio.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/poll.h>
+#include <linaos/idr.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
+#include <linaos/uaccess.h>
+#include <linaos/uio.h>
 #include <net/9p/9p.h>
-#include <linux/parser.h>
-#include <linux/seq_file.h>
+#include <linaos/parser.h>
+#include <linaos/seq_file.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>
 #include "protocol.h"

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/ptrace.h>
-#include <linux/bpf.h>
+#include <linaos/ptrace.h>
+#include <linaos/bpf.h>
 
 #include <netinet/in.h>
 

@@ -23,11 +23,11 @@
  *
  */
 
-#include <linux/kthread.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
-#include <linux/pm_runtime.h>
-#include <linux/poll.h>
+#include <linaos/kthread.h>
+#include <linaos/pci.h>
+#include <linaos/uaccess.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/poll.h>
 
 #include "amdgpu.h"
 #include "amdgpu_pm.h"

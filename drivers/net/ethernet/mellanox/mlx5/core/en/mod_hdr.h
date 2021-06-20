@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /* Copyright (c) 2020 Mellanox Technologies */
 
 #ifndef __MLX5E_EN_MOD_HDR_H__
 #define __MLX5E_EN_MOD_HDR_H__
 
-#include <linux/hashtable.h>
-#include <linux/mlx5/fs.h>
+#include <linaos/hashtable.h>
+#include <linaos/mlx5/fs.h>
 
 struct mlx5e_mod_hdr_handle;
 

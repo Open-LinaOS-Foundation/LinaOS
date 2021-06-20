@@ -13,32 +13,32 @@
 */
 
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/poison.h>
-#include <linux/errno.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/ioport.h> /* for request_region */
-#include <linux/uio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/capability.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/pci.h>
+#include <linaos/poison.h>
+#include <linaos/errno.h>
+#include <linaos/atm.h>
+#include <linaos/atmdev.h>
+#include <linaos/sonet.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h> /* for request_region */
+#include <linaos/uio.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/capability.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
 #include <asm/byteorder.h>
 #include <asm/string.h>
 #include <asm/io.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
+#include <linaos/atomic.h>
+#include <linaos/uaccess.h>
+#include <linaos/wait.h>
 
 #include "firestream.h"
 
@@ -56,7 +56,7 @@ static int num=0x5a;
  * smaller buffers more efficiently than the larger ones. -- REW
  */
 
-/* Due to the way Linux memory management works, specifying "576" as
+/* Due to the way LinaOS memory management works, specifying "576" as
  * an allocation size here isn't going to help. They are allocated
  * from 1024-byte regions anyway. With the size of the sk_buffs (quite
  * large), it doesn't pay to allocate the smallest size (64) -- REW */
@@ -122,7 +122,7 @@ static int rx_pool_sizes[NP] = {128,  128,  128, 64,   64,   64,   32,    32};
 
    You could queue up a bunch of outgoing packets without telling the
    FireStream. I'm not sure that's going to win you much though. The
-   Linux layer won't tell us in advance when it's not going to give us
+   LinaOS layer won't tell us in advance when it's not going to give us
    any more packets in a while. So this is tricky to implement right without
    introducing extra delays. 
   

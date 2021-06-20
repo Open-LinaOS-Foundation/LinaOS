@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  *  Copyright (C) 2005-2007 Jiri Slaby <jirislaby@gmail.com>
  *
@@ -11,7 +11,7 @@
 #ifndef __PHANTOM_H
 #define __PHANTOM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* PHN_(G/S)ET_REG param */
 struct phm_reg {

@@ -15,7 +15,7 @@
  * hex while segment addresses are written as segment:offset.
  *
  */
-#include <linux/pe.h>
+#include <linaos/pe.h>
 #include <asm/segment.h>
 #include <asm/boot.h>
 #include <asm/page_types.h>

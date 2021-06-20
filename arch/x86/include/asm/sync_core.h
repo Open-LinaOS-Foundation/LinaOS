@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_SYNC_CORE_H
 #define _ASM_X86_SYNC_CORE_H
 
-#include <linux/preempt.h>
+#include <linaos/preempt.h>
 #include <asm/processor.h>
 #include <asm/cpufeature.h>
 #include <asm/special_insns.h>
@@ -52,7 +52,7 @@ static inline void iret_to_self(void)
  * If you're calling this for a different reason, you're probably doing
  * it wrong.
  *
- * Like all of Linux's memory ordering operations, this is a
+ * Like all of LinaOS's memory ordering operations, this is a
  * compiler barrier as well.
  */
 static inline void sync_core(void)

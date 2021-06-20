@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * WL3501 Wireless LAN PCMCIA Card Driver for Linux
- * Written originally for Linux 2.0.30 by Fox Chen, mhchen@golf.ccl.itri.org.tw
+ * WL3501 Wireless LAN PCMCIA Card Driver for LinaOS
+ * Written originally for LinaOS 2.0.30 by Fox Chen, mhchen@golf.ccl.itri.org.tw
  * Ported to 2.2, 2.4 & 2.5 by Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  * Wireless extensions in 2.4 by Gustavo Niemeyer <niemeyer@conectiva.com>
  *
@@ -10,12 +10,12 @@
  *   1. WL24xx packet drivers (tooasm.asm)
  *   2. Access Point Firmware Interface Specification for IEEE 802.11 SUTRO
  *   3. IEEE 802.11
- *   4. Linux network driver (/usr/src/linux/drivers/net)
+ *   4. LinaOS network driver (/usr/src/linaos/drivers/net)
  *   5. ISA card driver - wl24.c
- *   6. Linux PCMCIA skeleton driver - skeleton.c
- *   7. Linux PCMCIA 3c589 network driver - 3c589_cs.c
+ *   6. LinaOS PCMCIA skeleton driver - skeleton.c
+ *   7. LinaOS PCMCIA 3c589 network driver - 3c589_cs.c
  *
- * Tested with WL2400 firmware 1.2, Linux 2.0.30, and pcmcia-cs-2.9.12
+ * Tested with WL2400 firmware 1.2, LinaOS 2.0.30, and pcmcia-cs-2.9.12
  *   1. Performance: about 165 Kbytes/sec in TCP/IP with Ad-Hoc mode.
  *      rsh 192.168.1.3 "dd if=/dev/zero bs=1k count=1000" > /dev/null
  *      (Specification 2M bits/sec. is about 250 Kbytes/sec., but we must deduct
@@ -28,21 +28,21 @@
  * with a SMP machine (dual pentium 100), using pktgen, 432 pps (pkt_size = 60)
  */
 
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fcntl.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/wireless.h>
+#include <linaos/delay.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/in.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/fcntl.h>
+#include <linaos/if_arp.h>
+#include <linaos/ioport.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/wireless.h>
 #include <net/cfg80211.h>
 
 #include <net/iw_handler.h>
@@ -52,7 +52,7 @@
 #include <pcmcia/ds.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "wl3501.h"
 

@@ -13,7 +13,7 @@
 #define __DRM_WRITEBACK_H__
 #include <drm/drm_connector.h>
 #include <drm/drm_encoder.h>
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 
 /**
  * struct drm_writeback_connector - DRM writeback connector

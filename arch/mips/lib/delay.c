@@ -8,11 +8,11 @@
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2007, 2014 Maciej W. Rozycki
  */
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/param.h>
-#include <linux/smp.h>
-#include <linux/stringify.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/param.h>
+#include <linaos/smp.h>
+#include <linaos/stringify.h>
 
 #include <asm/asm.h>
 #include <asm/compiler.h>

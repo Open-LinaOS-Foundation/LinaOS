@@ -2,7 +2,7 @@
 /*
     tda18271-common.c - driver for the Philips / NXP TDA18271 silicon tuner
 
-    Copyright (C) 2007, 2008 Michael Krufky <mkrufky@linuxtv.org>
+    Copyright (C) 2007, 2008 Michael Krufky <mkrufky@linaostv.org>
 
 */
 

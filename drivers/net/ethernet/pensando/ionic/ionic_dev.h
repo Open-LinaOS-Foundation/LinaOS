@@ -4,9 +4,9 @@
 #ifndef _IONIC_DEV_H_
 #define _IONIC_DEV_H_
 
-#include <linux/atomic.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <linaos/atomic.h>
+#include <linaos/mutex.h>
+#include <linaos/workqueue.h>
 
 #include "ionic_if.h"
 #include "ionic_regs.h"

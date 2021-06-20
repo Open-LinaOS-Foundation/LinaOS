@@ -3,11 +3,11 @@
  * Copyright (C) 2014-2017 Linaro Ltd. <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/elf.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sort.h>
-#include <linux/moduleloader.h>
+#include <linaos/elf.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sort.h>
+#include <linaos/moduleloader.h>
 
 #include <asm/cache.h>
 #include <asm/opcodes.h>

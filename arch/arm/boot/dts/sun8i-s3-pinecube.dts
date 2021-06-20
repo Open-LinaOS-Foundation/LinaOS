@@ -129,7 +129,7 @@
 
 	button-200 {
 		label = "Setup";
-		linux,code = <KEY_SETUP>;
+		linaos,code = <KEY_SETUP>;
 		channel = <0>;
 		voltage = <190000>;
 	};

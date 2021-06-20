@@ -5,7 +5,7 @@
  *  Copyright (C) 2012 Simo Sorce <simo@redhat.com>
  */
 
-#include <linux/sunrpc/svcauth.h>
+#include <linaos/sunrpc/svcauth.h>
 #include "gss_rpc_xdr.h"
 
 static int gssx_enc_bool(struct xdr_stream *xdr, int v)
@@ -160,12 +160,12 @@ static int get_host_u32(struct xdr_stream *xdr, u32 *res)
 	p = xdr_inline_decode(xdr, 4);
 	if (!p)
 		return -EINVAL;
-	/* Contents of linux creds are all host-endian: */
+	/* Contents of linaos creds are all host-endian: */
 	memcpy(res, p, sizeof(u32));
 	return 0;
 }
 
-static int gssx_dec_linux_creds(struct xdr_stream *xdr,
+static int gssx_dec_linaos_creds(struct xdr_stream *xdr,
 				struct svc_cred *creds)
 {
 	u32 length;
@@ -276,7 +276,7 @@ static int gssx_dec_option_array(struct xdr_stream *xdr,
 		if (length == sizeof(CREDS_VALUE) &&
 		    memcmp(p, CREDS_VALUE, sizeof(CREDS_VALUE)) == 0) {
 			/* We have creds here. parse them */
-			err = gssx_dec_linux_creds(xdr, creds);
+			err = gssx_dec_linaos_creds(xdr, creds);
 			if (err)
 				return err;
 			oa->data[0].value.len = 1; /* presence */

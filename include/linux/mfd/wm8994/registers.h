@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/mfd/wm8994/registers.h -- Register definitions for WM8994
+ * include/linaos/mfd/wm8994/registers.h -- Register definitions for WM8994
  *
  * Copyright 2009 Wolfson Microelectronics PLC.
  *

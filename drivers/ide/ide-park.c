@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/ide.h>
-#include <linux/jiffies.h>
-#include <linux/blkdev.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/ide.h>
+#include <linaos/jiffies.h>
+#include <linaos/blkdev.h>
 
 DECLARE_WAIT_QUEUE_HEAD(ide_park_wq);
 

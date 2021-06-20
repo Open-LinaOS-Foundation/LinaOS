@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex LinaOS Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2021 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.  *
@@ -20,18 +20,18 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/ctype.h>
-#include <linux/vmalloc.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/idr.h>
+#include <linaos/interrupt.h>
+#include <linaos/kthread.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
+#include <linaos/ctype.h>
+#include <linaos/vmalloc.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>
@@ -115,7 +115,7 @@ module_param(lpfc_debugfs_mask_disc_trc, int, S_IRUGO);
 MODULE_PARM_DESC(lpfc_debugfs_mask_disc_trc,
 	"Set debugfs discovery trace mask");
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 static atomic_t lpfc_debugfs_seq_trc_cnt = ATOMIC_INIT(0);
 static unsigned long lpfc_debugfs_start_time = 0L;

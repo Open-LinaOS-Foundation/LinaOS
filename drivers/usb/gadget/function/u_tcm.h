@@ -13,7 +13,7 @@
 #ifndef U_TCM_H
 #define U_TCM_H
 
-#include <linux/usb/composite.h>
+#include <linaos/usb/composite.h>
 
 /**
  * @dependent: optional dependent module. Meant for legacy gadget.

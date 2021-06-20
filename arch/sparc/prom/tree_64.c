@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * tree.c: Basic device tree traversal/scanning for the Linux
+ * tree.c: Basic device tree traversal/scanning for the LinaOS
  *         prom library.
  *
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  * Copyright (C) 1996,1997 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/module.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/module.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>

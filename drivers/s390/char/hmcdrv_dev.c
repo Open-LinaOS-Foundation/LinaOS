@@ -5,7 +5,7 @@
  *    Copyright IBM Corp. 2013
  *    Author(s): Ralf Hoppe (rhoppe@de.ibm.com)
  *
- *    This file provides a Linux "misc" character device for access to an
+ *    This file provides a LinaOS "misc" character device for access to an
  *    assigned HMC drive CD/DVD-ROM. It works as follows: First create the
  *    device by calling hmcdrv_dev_init(). After open() a lseek(fd, 0,
  *    SEEK_END) indicates that a new FTP command follows (not needed on the
@@ -17,16 +17,16 @@
 #define KMSG_COMPONENT "hmcdrv"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/miscdevice.h>
-#include <linux/device.h>
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/cdev.h>
+#include <linaos/miscdevice.h>
+#include <linaos/device.h>
+#include <linaos/capability.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
 
 #include "hmcdrv_dev.h"
 #include "hmcdrv_ftp.h"

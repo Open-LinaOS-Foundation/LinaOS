@@ -35,14 +35,14 @@
 #include "fman_dtsec.h"
 #include "fman.h"
 
-#include <linux/slab.h>
-#include <linux/bitrev.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/phy.h>
-#include <linux/crc32.h>
-#include <linux/of_mdio.h>
-#include <linux/mii.h>
+#include <linaos/slab.h>
+#include <linaos/bitrev.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/phy.h>
+#include <linaos/crc32.h>
+#include <linaos/of_mdio.h>
+#include <linaos/mii.h>
 
 /* TBI register addresses */
 #define MII_TBICON		0x11

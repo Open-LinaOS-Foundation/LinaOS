@@ -2,19 +2,19 @@
 #ifndef _LINUX_MM_TYPES_H
 #define _LINUX_MM_TYPES_H
 
-#include <linux/mm_types_task.h>
+#include <linaos/mm_types_task.h>
 
-#include <linux/auxvec.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/rbtree.h>
-#include <linux/rwsem.h>
-#include <linux/completion.h>
-#include <linux/cpumask.h>
-#include <linux/uprobes.h>
-#include <linux/page-flags-layout.h>
-#include <linux/workqueue.h>
-#include <linux/seqlock.h>
+#include <linaos/auxvec.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/rbtree.h>
+#include <linaos/rwsem.h>
+#include <linaos/completion.h>
+#include <linaos/cpumask.h>
+#include <linaos/uprobes.h>
+#include <linaos/page-flags-layout.h>
+#include <linaos/workqueue.h>
+#include <linaos/seqlock.h>
 
 #include <asm/mmu.h>
 
@@ -506,7 +506,7 @@ struct mm_struct {
 		 */
 		struct mm_rss_stat rss_stat;
 
-		struct linux_binfmt *binfmt;
+		struct linaos_binfmt *binfmt;
 
 		/* Architecture-specific MM context */
 		mm_context_t context;

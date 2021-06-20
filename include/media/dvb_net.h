@@ -18,11 +18,11 @@
 #ifndef _DVB_NET_H_
 #define _DVB_NET_H_
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/inetdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
 
 #include <media/dvbdev.h>
 

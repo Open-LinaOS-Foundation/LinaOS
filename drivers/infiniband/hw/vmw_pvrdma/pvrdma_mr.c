@@ -43,8 +43,8 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 
 #include "pvrdma.h"
 

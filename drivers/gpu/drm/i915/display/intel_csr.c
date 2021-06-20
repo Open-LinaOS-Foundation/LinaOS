@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 #include "i915_drv.h"
 #include "i915_reg.h"

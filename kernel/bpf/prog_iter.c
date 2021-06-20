@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2020 Facebook */
-#include <linux/bpf.h>
-#include <linux/fs.h>
-#include <linux/filter.h>
-#include <linux/kernel.h>
-#include <linux/btf_ids.h>
+#include <linaos/bpf.h>
+#include <linaos/fs.h>
+#include <linaos/filter.h>
+#include <linaos/kernel.h>
+#include <linaos/btf_ids.h>
 
 struct bpf_iter_seq_prog_info {
 	u32 prog_id;

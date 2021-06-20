@@ -5,17 +5,17 @@
  * Copyright (C) 2007-2009, Florian Fainelli <florian@openwrt.org>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/leds.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/input.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
 #include <mtd/mtd-abi.h>
 #include <asm/bootinfo.h>
 #include <asm/reboot.h>

@@ -47,7 +47,7 @@
 
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/media/tda1997x.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linaos-event-codes.h>
 #include <dt-bindings/interrupt-controller/irq.h>
 #include <dt-bindings/sound/fsl-imx-audmux.h>
 
@@ -71,40 +71,40 @@
 		user-pb {
 			label = "user_pb";
 			gpios = <&gsc_gpio 0 GPIO_ACTIVE_LOW>;
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 		};
 
 		user-pb1x {
 			label = "user_pb1x";
-			linux,code = <BTN_1>;
+			linaos,code = <BTN_1>;
 			interrupt-parent = <&gsc>;
 			interrupts = <0>;
 		};
 
 		key-erased {
 			label = "key-erased";
-			linux,code = <BTN_2>;
+			linaos,code = <BTN_2>;
 			interrupt-parent = <&gsc>;
 			interrupts = <1>;
 		};
 
 		eeprom-wp {
 			label = "eeprom_wp";
-			linux,code = <BTN_3>;
+			linaos,code = <BTN_3>;
 			interrupt-parent = <&gsc>;
 			interrupts = <2>;
 		};
 
 		tamper {
 			label = "tamper";
-			linux,code = <BTN_4>;
+			linaos,code = <BTN_4>;
 			interrupt-parent = <&gsc>;
 			interrupts = <5>;
 		};
 
 		switch-hold {
 			label = "switch_hold";
-			linux,code = <BTN_5>;
+			linaos,code = <BTN_5>;
 			interrupt-parent = <&gsc>;
 			interrupts = <7>;
 		};
@@ -119,7 +119,7 @@
 			label = "user1";
 			gpios = <&gpio4 7 GPIO_ACTIVE_LOW>;
 			default-state = "on";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

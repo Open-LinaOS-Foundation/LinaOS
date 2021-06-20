@@ -3,7 +3,7 @@
 .. _uapi-v4l-drivers:
 
 ===============================================
-Video4Linux (V4L) driver-specific documentation
+Video4LinaOS (V4L) driver-specific documentation
 ===============================================
 
 .. toctree::

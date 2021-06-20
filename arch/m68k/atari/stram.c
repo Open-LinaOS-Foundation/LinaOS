@@ -8,20 +8,20 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/mount.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/kdev_t.h>
+#include <linaos/major.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pagemap.h>
+#include <linaos/memblock.h>
+#include <linaos/mount.h>
+#include <linaos/blkdev.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
 
 #include <asm/setup.h>
 #include <asm/machdep.h>

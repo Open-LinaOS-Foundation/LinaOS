@@ -3,7 +3,7 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/log2.h>
+#include <linaos/log2.h>
 
 #include "gem/i915_gem_lmem.h"
 

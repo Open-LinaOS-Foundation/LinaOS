@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kobject.h>
+#include <linaos/kobject.h>
 #include <boot_param.h>
 
 static ssize_t boardinfo_show(struct kobject *kobj,

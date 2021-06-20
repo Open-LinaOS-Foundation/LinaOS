@@ -11,7 +11,7 @@ Component Helper for Aggregate Drivers
 API
 ===
 
-.. kernel-doc:: include/linux/component.h
+.. kernel-doc:: include/linaos/component.h
    :internal:
 
 .. kernel-doc:: drivers/base/component.c

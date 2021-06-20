@@ -62,16 +62,16 @@
 
 #define pr_fmt(fmt) "CPU features: " fmt
 
-#include <linux/bsearch.h>
-#include <linux/cpumask.h>
-#include <linux/crash_dump.h>
-#include <linux/sort.h>
-#include <linux/stop_machine.h>
-#include <linux/types.h>
-#include <linux/minmax.h>
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/kasan.h>
+#include <linaos/bsearch.h>
+#include <linaos/cpumask.h>
+#include <linaos/crash_dump.h>
+#include <linaos/sort.h>
+#include <linaos/stop_machine.h>
+#include <linaos/types.h>
+#include <linaos/minmax.h>
+#include <linaos/mm.h>
+#include <linaos/cpu.h>
+#include <linaos/kasan.h>
 #include <asm/cpu.h>
 #include <asm/cpufeature.h>
 #include <asm/cpu_ops.h>
@@ -291,7 +291,7 @@ static const struct arm64_ftr_bits ftr_id_aa64mmfr0[] = {
 	ARM64_FTR_BITS(FTR_HIDDEN, FTR_NONSTRICT, FTR_LOWER_SAFE, ID_AA64MMFR0_TGRAN16_SHIFT, 4, ID_AA64MMFR0_TGRAN16_NI),
 
 	ARM64_FTR_BITS(FTR_HIDDEN, FTR_STRICT, FTR_LOWER_SAFE, ID_AA64MMFR0_BIGENDEL0_SHIFT, 4, 0),
-	/* Linux shouldn't care about secure memory */
+	/* LinaOS shouldn't care about secure memory */
 	ARM64_FTR_BITS(FTR_HIDDEN, FTR_NONSTRICT, FTR_LOWER_SAFE, ID_AA64MMFR0_SNSMEM_SHIFT, 4, 0),
 	ARM64_FTR_BITS(FTR_HIDDEN, FTR_STRICT, FTR_LOWER_SAFE, ID_AA64MMFR0_BIGENDEL_SHIFT, 4, 0),
 	ARM64_FTR_BITS(FTR_HIDDEN, FTR_STRICT, FTR_LOWER_SAFE, ID_AA64MMFR0_ASID_SHIFT, 4, 0),
@@ -344,7 +344,7 @@ static const struct arm64_ftr_bits ftr_ctr[] = {
 	ARM64_FTR_BITS(FTR_VISIBLE, FTR_STRICT, FTR_HIGHER_OR_ZERO_SAFE, CTR_ERG_SHIFT, 4, 0),
 	ARM64_FTR_BITS(FTR_VISIBLE, FTR_STRICT, FTR_LOWER_SAFE, CTR_DMINLINE_SHIFT, 4, 1),
 	/*
-	 * Linux can handle differing I-cache policies. Userspace JITs will
+	 * LinaOS can handle differing I-cache policies. Userspace JITs will
 	 * make use of *minLine.
 	 * If we have differing I-cache policies, report it as the weakest - VIPT.
 	 */
@@ -1107,7 +1107,7 @@ void update_cpu_features(int cpu,
 	/*
 	 * Differing PARange support is fine as long as all peripherals and
 	 * memory are mapped within the minimum PARange of all CPUs.
-	 * Linux should not care about secure memory.
+	 * LinaOS should not care about secure memory.
 	 */
 	taint |= check_update_ftr_reg(SYS_ID_AA64MMFR0_EL1, cpu,
 				      info->reg_id_aa64mmfr0, boot->reg_id_aa64mmfr0);
@@ -1224,7 +1224,7 @@ u64 __read_sysreg_by_encoding(u32 sys_id)
 	return val;
 }
 
-#include <linux/irqchip/arm-gic-v3.h>
+#include <linaos/irqchip/arm-gic-v3.h>
 
 static bool
 feature_matches(u64 reg, const struct arm64_cpu_capabilities *entry)

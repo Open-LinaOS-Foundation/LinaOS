@@ -19,14 +19,14 @@
  *			 ksz9477
  */
 
-#include <linux/bitfield.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/micrel_phy.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
+#include <linaos/bitfield.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/phy.h>
+#include <linaos/micrel_phy.h>
+#include <linaos/of.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
 
 /* Operation Mode Strap Override */
 #define MII_KSZPHY_OMSO				0x16

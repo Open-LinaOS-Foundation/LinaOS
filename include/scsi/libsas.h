@@ -10,16 +10,16 @@
 #define _LIBSAS_H_
 
 
-#include <linux/timer.h>
-#include <linux/pci.h>
+#include <linaos/timer.h>
+#include <linaos/pci.h>
 #include <scsi/sas.h>
-#include <linux/libata.h>
-#include <linux/list.h>
+#include <linaos/libata.h>
+#include <linaos/list.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_transport_sas.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
 
 struct block_device;
 

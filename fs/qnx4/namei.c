@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /* 
- * QNX4 file system, Linux implementation.
+ * QNX4 file system, LinaOS implementation.
  * 
  * Version : 0.2.1
  * 
@@ -13,7 +13,7 @@
  * 04-07-1998 by Frank Denis : first step for rmdir/unlink.
  */
 
-#include <linux/buffer_head.h>
+#include <linaos/buffer_head.h>
 #include "qnx4.h"
 
 
@@ -21,7 +21,7 @@
  * check if the filename is correct. For some obscure reason, qnx writes a
  * new file twice in the directory entry, first with all possible options at 0
  * and for a second time the way it is, they want us not to access the qnx
- * filesystem when whe are using linux.
+ * filesystem when whe are using linaos.
  */
 static int qnx4_match(int len, const char *name,
 		      struct buffer_head *bh, unsigned long *offset)

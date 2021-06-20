@@ -5,7 +5,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static struct rc_map_table terratec_cinergy_c_pci[] = {
 	{ 0x3e, KEY_POWER},

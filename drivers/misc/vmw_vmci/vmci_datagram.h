@@ -8,8 +8,8 @@
 #ifndef _VMCI_DATAGRAM_H_
 #define _VMCI_DATAGRAM_H_
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
 
 #include "vmci_context.h"
 

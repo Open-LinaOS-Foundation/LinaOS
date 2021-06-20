@@ -25,15 +25,15 @@
  *    Benjamin Defnet <benjamin.r.defnet@intel.com>
  *    Rajesh Poornachandran <rajesh.poornachandran@intel.com>
  * Massively reworked
- *    Alan Cox <alan@linux.intel.com>
+ *    Alan Cox <alan@linaos.intel.com>
  */
 
 #include "power.h"
 #include "psb_drv.h"
 #include "psb_reg.h"
 #include "psb_intel_reg.h"
-#include <linux/mutex.h>
-#include <linux/pm_runtime.h>
+#include <linaos/mutex.h>
+#include <linaos/pm_runtime.h>
 
 static struct mutex power_mutex;	/* Serialize power ops */
 static DEFINE_SPINLOCK(power_ctrl_lock);	/* Serialize power claim */

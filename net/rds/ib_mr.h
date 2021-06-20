@@ -32,7 +32,7 @@
 #ifndef _RDS_IB_MR_H
 #define _RDS_IB_MR_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include "rds.h"
 #include "ib.h"

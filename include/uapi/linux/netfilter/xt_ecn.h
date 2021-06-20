@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* iptables module for matching the ECN header in IPv4 and TCP header
  *
  * (C) 2002 Harald Welte <laforge@gnumonks.org>
@@ -10,8 +10,8 @@
 #ifndef _XT_ECN_H
 #define _XT_ECN_H
 
-#include <linux/types.h>
-#include <linux/netfilter/xt_dscp.h>
+#include <linaos/types.h>
+#include <linaos/netfilter/xt_dscp.h>
 
 #define XT_ECN_IP_MASK	(~XT_DSCP_MASK)
 

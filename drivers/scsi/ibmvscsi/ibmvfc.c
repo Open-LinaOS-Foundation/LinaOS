@@ -2,23 +2,23 @@
 /*
  * ibmvfc.c -- driver for IBM Power Virtual Fibre Channel Adapter
  *
- * Written By: Brian King <brking@linux.vnet.ibm.com>, IBM Corporation
+ * Written By: Brian King <brking@linaos.vnet.ibm.com>, IBM Corporation
  *
  * Copyright (C) IBM Corporation, 2008
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/stringify.h>
-#include <linux/bsg-lib.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/kthread.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/pm.h>
+#include <linaos/stringify.h>
+#include <linaos/bsg-lib.h>
 #include <asm/firmware.h>
 #include <asm/irq.h>
 #include <asm/rtas.h>
@@ -52,7 +52,7 @@ static DEFINE_SPINLOCK(ibmvfc_driver_lock);
 static struct scsi_transport_template *ibmvfc_transport_template;
 
 MODULE_DESCRIPTION("IBM Virtual Fibre Channel Driver");
-MODULE_AUTHOR("Brian King <brking@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Brian King <brking@linaos.vnet.ibm.com>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(IBMVFC_DRIVER_VERSION);
 

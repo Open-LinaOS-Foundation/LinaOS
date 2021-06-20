@@ -6,13 +6,13 @@
  *
  * Copyright (c) 2016 Mentor Graphics Inc.
  */
-#include <linux/of_platform.h>
+#include <linaos/of_platform.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-fwnode.h>
 #include <media/v4l2-subdev.h>
 #include <media/videobuf2-dma-contig.h>
-#include <linux/of_graph.h>
+#include <linaos/of_graph.h>
 #include <video/imx-ipu-v3.h>
 #include "imx-media.h"
 

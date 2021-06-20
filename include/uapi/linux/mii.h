@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * linux/mii.h: definitions for MII-compatible transceivers
+ * linaos/mii.h: definitions for MII-compatible transceivers
  * Originally drivers/net/sunhme.h.
  *
  * Copyright (C) 1996, 1999, 2001 David S. Miller (davem@redhat.com)
@@ -9,8 +9,8 @@
 #ifndef _UAPI__LINUX_MII_H__
 #define _UAPI__LINUX_MII_H__
 
-#include <linux/types.h>
-#include <linux/ethtool.h>
+#include <linaos/types.h>
+#include <linaos/ethtool.h>
 
 /* Generic MII registers. */
 #define MII_BMCR		0x00	/* Basic mode control register */

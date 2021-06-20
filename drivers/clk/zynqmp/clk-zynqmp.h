@@ -6,9 +6,9 @@
 #ifndef __LINUX_CLK_ZYNQMP_H_
 #define __LINUX_CLK_ZYNQMP_H_
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <linaos/firmware/xlnx-zynqmp.h>
 
 enum topology_type {
 	TYPE_INVALID,

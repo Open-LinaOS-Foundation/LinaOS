@@ -13,7 +13,7 @@
  */
 #include "path.h"
 #include "cache.h"
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <limits.h>
 #include <stdio.h>
 #include <string.h>

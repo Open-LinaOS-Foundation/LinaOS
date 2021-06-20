@@ -5,13 +5,13 @@
  *
  * Copyright (C) IBM Corporation, 2017
  *
- * Author: Paul McKenney <paulmck@linux.ibm.com>
+ * Author: Paul McKenney <paulmck@linaos.ibm.com>
  */
 
 #ifndef _LINUX_SRCU_TINY_H
 #define _LINUX_SRCU_TINY_H
 
-#include <linux/swait.h>
+#include <linaos/swait.h>
 
 struct srcu_struct {
 	short srcu_lock_nesting[2];	/* srcu_read_lock() nesting depth. */

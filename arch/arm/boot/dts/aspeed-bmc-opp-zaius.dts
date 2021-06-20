@@ -61,13 +61,13 @@
 		checkstop {
 			label = "checkstop";
 			gpios = <&gpio ASPEED_GPIO(F, 7) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(F, 7)>;
+			linaos,code = <ASPEED_GPIO(F, 7)>;
 		};
 
 		pcie-e2b-present{
 			label = "pcie-e2b-present";
 			gpios = <&gpio ASPEED_GPIO(E, 7) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(E, 7)>;
+			linaos,code = <ASPEED_GPIO(E, 7)>;
 		};
 	};
 

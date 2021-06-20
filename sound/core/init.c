@@ -4,18 +4,18 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/ctype.h>
-#include <linux/pm.h>
-#include <linux/debugfs.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/file.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/ctype.h>
+#include <linaos/pm.h>
+#include <linaos/debugfs.h>
+#include <linaos/completion.h>
+#include <linaos/interrupt.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

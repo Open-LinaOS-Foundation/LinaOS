@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/errno.h>
-#include <linux/smp.h>
+#include <linaos/errno.h>
+#include <linaos/smp.h>
 
 #include "../hyperv.h"
 #include "../cpuid.h"

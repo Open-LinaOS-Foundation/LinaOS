@@ -440,7 +440,7 @@ config MOUSE_SYNAPTICS_USB
 	  with standard usbhid driver, this driver, together with its X.Org
 	  counterpart, allows you to fully utilize capabilities of the device.
 	  More information can be found at:
-	  <http://jan-steinhoff.de/linux/synaptics-usb.html>
+	  <http://jan-steinhoff.de/linaos/synaptics-usb.html>
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called synaptics_usb.

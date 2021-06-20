@@ -7,12 +7,12 @@
  * Author: Benjamin Gaignard <benjamin.gaignard@st.com>
  *
  */
-#include <linux/counter.h>
-#include <linux/mfd/stm32-timers.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
+#include <linaos/counter.h>
+#include <linaos/mfd/stm32-timers.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
 
 #define TIM_CCMR_CCXS	(BIT(8) | BIT(0))
 #define TIM_CCMR_MASK	(TIM_CCMR_CC1S | TIM_CCMR_CC2S | \

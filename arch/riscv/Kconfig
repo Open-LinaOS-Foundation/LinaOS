@@ -346,12 +346,12 @@ config NEED_PER_CPU_EMBED_FIRST_CHUNK
 	depends on NUMA
 
 config RISCV_ISA_C
-	bool "Emit compressed instructions when building Linux"
+	bool "Emit compressed instructions when building LinaOS"
 	default y
 	help
 	   Adds "C" to the ISA subsets that the toolchain is allowed to emit
-	   when building Linux, which results in compressed instructions in the
-	   Linux binary.
+	   when building LinaOS, which results in compressed instructions in the
+	   LinaOS binary.
 
 	   If you don't know what to do here, say Y.
 
@@ -400,7 +400,7 @@ config KEXEC
 	  kexec is a system call that implements the ability to shutdown your
 	  current kernel, and to start another kernel. It is like a reboot
 	  but it is independent of the system firmware. And like a reboot
-	  you can start any kernel with it, not just Linux.
+	  you can start any kernel with it, not just LinaOS.
 
 	  The name comes from the similarity to the exec system call.
 

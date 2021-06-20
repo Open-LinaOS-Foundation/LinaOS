@@ -2,8 +2,8 @@
 #ifndef LINUX_MSI_H
 #define LINUX_MSI_H
 
-#include <linux/kobject.h>
-#include <linux/list.h>
+#include <linaos/kobject.h>
+#include <linaos/list.h>
 #include <asm/msi.h>
 
 /* Dummy shadow structures if an architecture does not define them */
@@ -272,7 +272,7 @@ void default_restore_msi_irqs(struct pci_dev *dev);
 
 #ifdef CONFIG_GENERIC_MSI_IRQ_DOMAIN
 
-#include <linux/irqhandler.h>
+#include <linaos/irqhandler.h>
 
 struct irq_domain;
 struct irq_domain_ops;

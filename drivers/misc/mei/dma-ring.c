@@ -2,8 +2,8 @@
 /*
  * Copyright(c) 2016-2018 Intel Corporation. All rights reserved.
  */
-#include <linux/dma-mapping.h>
-#include <linux/mei.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/mei.h>
 
 #include "mei_dev.h"
 

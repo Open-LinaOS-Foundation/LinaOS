@@ -1,5 +1,5 @@
 /*
- * Linux driver for VMware's vmxnet3 ethernet NIC.
+ * LinaOS driver for VMware's vmxnet3 ethernet NIC.
  *
  * Copyright (C) 2008-2020, VMware, Inc. All Rights Reserved.
  *
@@ -27,35 +27,35 @@
 #ifndef _VMXNET3_INT_H
 #define _VMXNET3_INT_H
 
-#include <linux/bitops.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/ioport.h>
-#include <linux/highmem.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/uaccess.h>
+#include <linaos/bitops.h>
+#include <linaos/ethtool.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/compiler.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/ioport.h>
+#include <linaos/highmem.h>
+#include <linaos/timer.h>
+#include <linaos/skbuff.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
+#include <linaos/uaccess.h>
 #include <asm/dma.h>
 #include <asm/page.h>
 
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/in.h>
-#include <linux/etherdevice.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/in.h>
+#include <linaos/etherdevice.h>
 #include <asm/checksum.h>
-#include <linux/if_vlan.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/log2.h>
+#include <linaos/if_vlan.h>
+#include <linaos/if_arp.h>
+#include <linaos/inetdevice.h>
+#include <linaos/log2.h>
 
 #include "vmxnet3_defs.h"
 

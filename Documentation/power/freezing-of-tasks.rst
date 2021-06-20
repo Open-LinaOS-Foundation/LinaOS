@@ -33,17 +33,17 @@ the task's PF_FROZEN flag, changes its state to TASK_UNINTERRUPTIBLE and makes
 it loop until PF_FROZEN is cleared for it. Then, we say that the task is
 'frozen' and therefore the set of functions handling this mechanism is referred
 to as 'the freezer' (these functions are defined in kernel/power/process.c,
-kernel/freezer.c & include/linux/freezer.h). User space processes are generally
+kernel/freezer.c & include/linaos/freezer.h). User space processes are generally
 frozen before kernel threads.
 
 __refrigerator() must not be called directly.  Instead, use the
-try_to_freeze() function (defined in include/linux/freezer.h), that checks
+try_to_freeze() function (defined in include/linaos/freezer.h), that checks
 if the task is to be frozen and makes the task enter __refrigerator().
 
 For user space processes try_to_freeze() is called automatically from the
 signal-handling code, but the freezable kernel threads need to call it
 explicitly in suitable places or use the wait_event_freezable() or
-wait_event_freezable_timeout() macros (defined in include/linux/freezer.h)
+wait_event_freezable_timeout() macros (defined in include/linaos/freezer.h)
 that combine interruptible sleep with checking if the task is to be frozen and
 calling try_to_freeze().  The main loop of a freezable kernel thread may look
 like the following one::
@@ -134,7 +134,7 @@ Generally speaking, there is a couple of reasons to use the freezing of tasks:
    safeguards against race conditions that might occur in such a case.
 
 Although Linus Torvalds doesn't like the freezing of tasks, he said this in one
-of the discussions on LKML (https://lore.kernel.org/r/alpine.LFD.0.98.0704271801020.9964@woody.linux-foundation.org):
+of the discussions on LKML (https://lore.kernel.org/r/alpine.LFD.0.98.0704271801020.9964@woody.linaos-foundation.org):
 
 "RJW:> Why we freeze tasks at all or why we freeze kernel threads?
 
@@ -186,7 +186,7 @@ space processes:
 2. Now that we have FUSE, plus the framework for doing device drivers in
    userspace, it gets even more complicated because some userspace processes are
    now doing the sorts of things that kernel threads do
-   (https://lists.linux-foundation.org/pipermail/linux-pm/2007-May/012309.html).
+   (https://lists.linaos-foundation.org/pipermail/linaos-pm/2007-May/012309.html).
 
 The problem 1. seems to be fixable, although it hasn't been fixed so far.  The
 other one is more serious, but it seems that we can work around it by using

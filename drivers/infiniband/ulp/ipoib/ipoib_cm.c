@@ -33,13 +33,13 @@
 #include <rdma/ib_cm.h>
 #include <net/dst.h>
 #include <net/icmp.h>
-#include <linux/icmpv6.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/moduleparam.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
+#include <linaos/icmpv6.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/moduleparam.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
 
 #include "ipoib.h"
 

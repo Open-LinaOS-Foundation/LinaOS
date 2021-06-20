@@ -4,11 +4,11 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/qed/qede_rdma.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/qed/qede_rdma.h>
 #include "qede.h"
 
 static struct qedr_driver *qedr_drv;

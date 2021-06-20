@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* head.S: Initial boot code for the Sparc64 port of Linux.
+/* head.S: Initial boot code for the Sparc64 port of LinaOS.
  *
  * Copyright (C) 1996, 1997, 2007 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1996 David Sitsky (David.Sitsky@anu.edu.au)
@@ -7,12 +7,12 @@
  * Copyright (C) 1997 Miguel de Icaza (miguel@nuclecu.unam.mx)
  */
 
-#include <linux/version.h>
-#include <linux/errno.h>
-#include <linux/threads.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/pgtable.h>
+#include <linaos/version.h>
+#include <linaos/errno.h>
+#include <linaos/threads.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
+#include <linaos/pgtable.h>
 #include <asm/thread_info.h>
 #include <asm/asi.h>
 #include <asm/pstate.h>
@@ -747,9 +747,9 @@ tlb_fixup_done:
 	 * point.
 	 *
 	 * There used to be enormous complexity wrt. transferring
-	 * over from the firmware's trap table to the Linux kernel's.
+	 * over from the firmware's trap table to the LinaOS kernel's.
 	 * For example, there was a chicken & egg problem wrt. building
-	 * the OBP page tables, yet needing to be on the Linux kernel
+	 * the OBP page tables, yet needing to be on the LinaOS kernel
 	 * trap table (to translate PAGE_OFFSET addresses) in order to
 	 * do that.
 	 *
@@ -769,7 +769,7 @@ setup_trap_table:
 	rdpr	%pil, %l1
 	wrpr	%g0, PIL_NORMAL_MAX, %pil
 
-	/* Make the firmware call to jump over to the Linux trap table.  */
+	/* Make the firmware call to jump over to the LinaOS trap table.  */
 	sethi	%hi(is_sun4v), %o0
 	lduw	[%o0 + %lo(is_sun4v)], %o0
 	brz,pt	%o0, 1f

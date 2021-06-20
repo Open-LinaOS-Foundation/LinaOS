@@ -6,14 +6,14 @@
  * Author: David Dajun Chen <dchen@diasemi.com>
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
-#include <linux/mfd/da9055/core.h>
+#include <linaos/mfd/da9055/core.h>
 
 static int da9055_i2c_probe(struct i2c_client *i2c,
 				      const struct i2c_device_id *id)

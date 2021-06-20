@@ -9,9 +9,9 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <linaos/dmi.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
 #include <acpi/processor.h>
 
 #include "internal.h"

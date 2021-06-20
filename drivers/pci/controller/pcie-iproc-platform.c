@@ -3,18 +3,18 @@
  * Copyright (C) 2015 Broadcom Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_address.h>
+#include <linaos/of_pci.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/phy/phy.h>
 
 #include "../pci.h"
 #include "pcie-iproc.h"

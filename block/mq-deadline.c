@@ -5,18 +5,18 @@
  *
  *  Copyright (C) 2016 Jens Axboe <axboe@kernel.dk>
  */
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/elevator.h>
-#include <linux/bio.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/compiler.h>
-#include <linux/rbtree.h>
-#include <linux/sbitmap.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/elevator.h>
+#include <linaos/bio.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/compiler.h>
+#include <linaos/rbtree.h>
+#include <linaos/sbitmap.h>
 
 #include <trace/events/block.h>
 

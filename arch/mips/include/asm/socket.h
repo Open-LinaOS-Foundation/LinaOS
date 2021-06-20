@@ -15,7 +15,7 @@
 /** sock_type - Socket types
  *
  * Please notice that for binary compat reasons MIPS has to
- * override the enum sock_type in include/linux/net.h, so
+ * override the enum sock_type in include/linaos/net.h, so
  * we define ARCH_HAS_SOCKET_TYPES here.
  *
  * @SOCK_DGRAM - datagram (conn.less) socket
@@ -23,7 +23,7 @@
  * @SOCK_RAW - raw socket
  * @SOCK_RDM - reliably-delivered message
  * @SOCK_SEQPACKET - sequential packet socket
- * @SOCK_PACKET - linux specific way of getting packets at the dev level.
+ * @SOCK_PACKET - linaos specific way of getting packets at the dev level.
  *		  For writing rarp and other similar things on the user level.
  */
 enum sock_type {

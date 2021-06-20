@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2019 Intel Corporation
  *
- * Author: Lu Baolu <baolu.lu@linux.intel.com>
+ * Author: Lu Baolu <baolu.lu@linaos.intel.com>
  */
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM intel_iommu
@@ -12,8 +12,8 @@
 #if !defined(_TRACE_INTEL_IOMMU_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_INTEL_IOMMU_H
 
-#include <linux/tracepoint.h>
-#include <linux/intel-iommu.h>
+#include <linaos/tracepoint.h>
+#include <linaos/intel-iommu.h>
 
 TRACE_EVENT(qi_submit,
 	TP_PROTO(struct intel_iommu *iommu, u64 qw0, u64 qw1, u64 qw2, u64 qw3),

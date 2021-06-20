@@ -4,15 +4,15 @@
  *
  * Copyright (C) 2016-2018 Linaro Ltd.
  * Copyright (C) 2014 Sony Mobile Communications AB
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The LinaOS Foundation. All rights reserved.
  */
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/soc/qcom/smem_state.h>
-#include <linux/remoteproc.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/soc/qcom/smem.h>
+#include <linaos/soc/qcom/smem_state.h>
+#include <linaos/remoteproc.h>
 #include "qcom_common.h"
 #include "qcom_q6v5.h"
 

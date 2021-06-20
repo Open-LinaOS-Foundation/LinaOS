@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /* Copyright (c) 2020, Mellanox Technologies inc. All rights reserved. */
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include "accel/ipsec_offload.h"
 #include "ipsec_fs.h"
 #include "fs_core.h"

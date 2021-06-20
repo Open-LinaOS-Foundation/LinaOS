@@ -118,8 +118,8 @@
 #define NO_SYSCALL (-1)
 
 #ifndef __ASSEMBLY__
-#include <linux/bug.h>
-#include <linux/types.h>
+#include <linaos/bug.h>
+#include <linaos/types.h>
 
 /* sizeof(struct user) for AArch32 */
 #define COMPAT_USER_SZ	296

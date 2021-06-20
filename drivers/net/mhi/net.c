@@ -4,13 +4,13 @@
  * Copyright (C) 2020 Linaro Ltd <loic.poulain@linaro.org>
  */
 
-#include <linux/if_arp.h>
-#include <linux/mhi.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/u64_stats_sync.h>
+#include <linaos/if_arp.h>
+#include <linaos/mhi.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/u64_stats_sync.h>
 
 #include "mhi.h"
 

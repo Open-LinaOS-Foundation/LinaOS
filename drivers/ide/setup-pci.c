@@ -1,19 +1,19 @@
 /*
- *  Copyright (C) 1998-2000  Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 1998-2000  Andre Hedrick <andre@linaos-ide.org>
  *  Copyright (C) 1995-1998  Mark Lord
  *  Copyright (C) 2007-2009  Bartlomiej Zolnierkiewicz
  *
  *  May be copied or modified under the terms of the GNU General Public License
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ide.h>
-#include <linux/dma-mapping.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ide.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/io.h>
 
@@ -425,7 +425,7 @@ static int ide_setup_pci_controller(struct pci_dev *dev, int bars,
 		ret = ide_pci_configure(dev, d);
 		if (ret < 0)
 			goto out_free_bars;
-		printk(KERN_INFO "%s %s: device enabled (Linux)\n",
+		printk(KERN_INFO "%s %s: device enabled (LinaOS)\n",
 			d->name, pci_name(dev));
 	}
 

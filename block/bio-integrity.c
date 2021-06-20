@@ -6,12 +6,12 @@
  * Written by: Martin K. Petersen <martin.petersen@oracle.com>
  */
 
-#include <linux/blkdev.h>
-#include <linux/mempool.h>
-#include <linux/export.h>
-#include <linux/bio.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/mempool.h>
+#include <linaos/export.h>
+#include <linaos/bio.h>
+#include <linaos/workqueue.h>
+#include <linaos/slab.h>
 #include "blk.h"
 
 static struct kmem_cache *bip_slab;

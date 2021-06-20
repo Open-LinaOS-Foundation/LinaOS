@@ -20,8 +20,8 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/dma-buf.h>
-#include <linux/dma-resv.h>
+#include <linaos/dma-buf.h>
+#include <linaos/dma-resv.h>
 
 #include <drm/drm_file.h>
 

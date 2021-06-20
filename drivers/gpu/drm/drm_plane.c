@@ -20,8 +20,8 @@
  * OF THIS SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include <drm/drm_plane.h>
 #include <drm/drm_drv.h>

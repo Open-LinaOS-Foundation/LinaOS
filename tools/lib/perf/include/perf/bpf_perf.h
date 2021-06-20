@@ -2,7 +2,7 @@
 #ifndef __LIBPERF_BPF_PERF_H
 #define __LIBPERF_BPF_PERF_H
 
-#include <linux/types.h>  /* for __u32 */
+#include <linaos/types.h>  /* for __u32 */
 
 /*
  * bpf_perf uses a hashmap, the attr_map, to track all the leader programs.

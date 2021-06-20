@@ -2,7 +2,7 @@
 #ifndef _LINUX_SVGA_H
 #define _LINUX_SVGA_H
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include <video/vga.h>
 
 /* Terminator for register set */

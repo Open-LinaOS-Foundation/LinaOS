@@ -4,10 +4,10 @@
  *
  *   Lowlevel functions for WM8766 codec
  *
- *	Copyright (c) 2012 Ondrej Zary <linux@rainbow-software.org>
+ *	Copyright (c) 2012 Ondrej Zary <linaos@rainbow-software.org>
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/tlv.h>

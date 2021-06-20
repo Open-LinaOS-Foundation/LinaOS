@@ -12,10 +12,10 @@
 /*
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb/input.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/usb/input.h>
 
 MODULE_AUTHOR("Edouard TISSERANT <edouard.tisserant@wanadoo.fr>");
 MODULE_DESCRIPTION("USB Acecad Flair tablet driver");

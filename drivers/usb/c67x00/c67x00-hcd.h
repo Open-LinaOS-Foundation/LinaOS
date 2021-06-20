@@ -3,18 +3,18 @@
  * c67x00-hcd.h: Cypress C67X00 USB HCD
  *
  * Copyright (C) 2006-2008 Barco N.V.
- *    Derived from the Cypress cy7c67200/300 ezusb linux driver and
- *    based on multiple host controller drivers inside the linux kernel.
+ *    Derived from the Cypress cy7c67200/300 ezusb linaos driver and
+ *    based on multiple host controller drivers inside the linaos kernel.
  */
 
 #ifndef _USB_C67X00_HCD_H
 #define _USB_C67X00_HCD_H
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
 #include "c67x00.h"
 
 /*

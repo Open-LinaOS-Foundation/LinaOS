@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2002 H. Peter Anvin - All Rights Reserved
  *
@@ -18,7 +18,7 @@
 
 #ifdef CONFIG_X86_32
 
-#include <linux/raid/pq.h>
+#include <linaos/raid/pq.h>
 #include "x86.h"
 
 /* Defined in raid6/mmx.c */

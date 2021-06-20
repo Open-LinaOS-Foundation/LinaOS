@@ -3,7 +3,7 @@ Runtime locking correctness validator
 
 started by Ingo Molnar <mingo@redhat.com>
 
-additions by Arjan van de Ven <arjan@linux.intel.com>
+additions by Arjan van de Ven <arjan@linaos.intel.com>
 
 Lock-class
 ----------
@@ -192,7 +192,7 @@ not trigger in practice yet.)
 Exception: Nested data dependencies leading to nested locking
 -------------------------------------------------------------
 
-There are a few cases where the Linux kernel acquires more than one
+There are a few cases where the LinaOS kernel acquires more than one
 instance of the same lock-class. Such cases typically happen when there
 is some sort of hierarchy within objects of the same type. In these
 cases there is an inherent "natural" ordering between the two objects

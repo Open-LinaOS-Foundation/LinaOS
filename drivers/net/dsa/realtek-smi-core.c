@@ -25,20 +25,20 @@
  * Copyright (C) 2009-2010 Gabor Juhos <juhosg@openwrt.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/bitops.h>
-#include <linux/if_bridge.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/spinlock.h>
+#include <linaos/skbuff.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_mdio.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/bitops.h>
+#include <linaos/if_bridge.h>
 
 #include "realtek-smi-core.h"
 

@@ -11,14 +11,14 @@
  *
  *  See Documentation/locking/rt-mutex-design.rst for details.
  */
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/deadline.h>
-#include <linux/sched/wake_q.h>
-#include <linux/sched/debug.h>
-#include <linux/timer.h>
+#include <linaos/spinlock.h>
+#include <linaos/export.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/rt.h>
+#include <linaos/sched/deadline.h>
+#include <linaos/sched/wake_q.h>
+#include <linaos/sched/debug.h>
+#include <linaos/timer.h>
 
 #include "rtmutex_common.h"
 

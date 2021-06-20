@@ -1,7 +1,7 @@
 /*
 	drivers/net/ethernet/dec/tulip/interrupt.c
 
-	Copyright 2000,2001  The Linux Kernel Team
+	Copyright 2000,2001  The LinaOS Kernel Team
 	Written/copyright 1994-2001 by Donald Becker.
 
 	This software may be used and distributed according to the terms
@@ -10,9 +10,9 @@
         Please submit bugs to http://bugzilla.kernel.org/ .
 */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include "tulip.h"
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 
 int tulip_rx_copybreak;
 unsigned int tulip_max_interrupt_work;

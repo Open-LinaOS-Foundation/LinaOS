@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *	linux/arch/alpha/kernel/err_impl.h
+ *	linaos/arch/alpha/kernel/err_impl.h
  *
  *	Copyright (C) 2000 Jeff Wiedemeier (Compaq Computer Corporation)
  *

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/nfs_page.h
+ * linaos/include/linaos/nfs_page.h
  *
  * Copyright (C) 2000 Trond Myklebust
  *
@@ -11,13 +11,13 @@
 #define _LINUX_NFS_PAGE_H
 
 
-#include <linux/list.h>
-#include <linux/pagemap.h>
-#include <linux/wait.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/nfs_xdr.h>
+#include <linaos/list.h>
+#include <linaos/pagemap.h>
+#include <linaos/wait.h>
+#include <linaos/sunrpc/auth.h>
+#include <linaos/nfs_xdr.h>
 
-#include <linux/kref.h>
+#include <linaos/kref.h>
 
 /*
  * Valid flags for a dirty buffer

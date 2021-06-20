@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/ptrace.c
+ *  linaos/arch/arm/kernel/ptrace.c
  *
  *  By Ross Biro 1/23/92
  * edited by Linus Torvalds
  * ARM modifications Copyright (C) 2000 Russell King
  */
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/elf.h>
-#include <linux/smp.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/security.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/regset.h>
-#include <linux/audit.h>
-#include <linux/tracehook.h>
-#include <linux/unistd.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mm.h>
+#include <linaos/elf.h>
+#include <linaos/smp.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/security.h>
+#include <linaos/init.h>
+#include <linaos/signal.h>
+#include <linaos/uaccess.h>
+#include <linaos/perf_event.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/regset.h>
+#include <linaos/audit.h>
+#include <linaos/tracehook.h>
+#include <linaos/unistd.h>
 
 #include <asm/traps.h>
 

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (C) 2020 Felix Fietkau <nbd@nbd.name> */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/etherdevice.h>
+#include <linaos/platform_device.h>
 #include "mtk_ppe.h"
 #include "mtk_ppe_regs.h"
 

@@ -15,8 +15,8 @@
 #define _MEDIA_VIDEOBUF2_MEMOPS_H
 
 #include <media/videobuf2-v4l2.h>
-#include <linux/mm.h>
-#include <linux/refcount.h>
+#include <linaos/mm.h>
+#include <linaos/refcount.h>
 
 /**
  * struct vb2_vmarea_handler - common vma refcount tracking handler.

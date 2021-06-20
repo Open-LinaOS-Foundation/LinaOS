@@ -4,19 +4,19 @@
  * Based on code and know-how from the Samsung GT-S7710
  * Gareth Phillips <gareth.phillips@samsung.com>
  */
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linaos/backlight.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/fb.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/limits.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
 
 /* Current ratio is n/32 from 1/32 to 32/32 */
 #define KTD253_MIN_RATIO 1

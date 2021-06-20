@@ -11,9 +11,9 @@
  * Based on work from Matt Porter <mporter@mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 
 #include <asm/pci-bridge.h>
 

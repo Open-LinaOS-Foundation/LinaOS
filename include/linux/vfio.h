@@ -9,11 +9,11 @@
 #define VFIO_H
 
 
-#include <linux/iommu.h>
-#include <linux/mm.h>
-#include <linux/workqueue.h>
-#include <linux/poll.h>
-#include <uapi/linux/vfio.h>
+#include <linaos/iommu.h>
+#include <linaos/mm.h>
+#include <linaos/workqueue.h>
+#include <linaos/poll.h>
+#include <uapi/linaos/vfio.h>
 
 struct vfio_device {
 	struct device *dev;

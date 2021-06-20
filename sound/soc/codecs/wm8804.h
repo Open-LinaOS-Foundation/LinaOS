@@ -10,7 +10,7 @@
 #ifndef _WM8804_H
 #define _WM8804_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 /*
  * Register values.

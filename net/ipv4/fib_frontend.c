@@ -9,28 +9,28 @@
  * Authors:	Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/capability.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/if_addr.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/cache.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/bitops.h>
+#include <linaos/capability.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/errno.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
+#include <linaos/inetdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_addr.h>
+#include <linaos/if_arp.h>
+#include <linaos/skbuff.h>
+#include <linaos/cache.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 
 #include <net/ip.h>
 #include <net/protocol.h>

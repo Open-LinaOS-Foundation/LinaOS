@@ -10,14 +10,14 @@
 #ifdef __KERNEL__
 
 #ifndef __powerpc64__
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #endif
 #ifndef __powerpc64__
 #include <asm/page.h>
 #include <asm/mmu.h>
 #endif
 
-#include <linux/pagemap.h>
+#include <linaos/pagemap.h>
 
 #define tlb_start_vma(tlb, vma)	do { } while (0)
 #define tlb_end_vma(tlb, vma)	do { } while (0)
@@ -27,7 +27,7 @@
 extern void tlb_flush(struct mmu_gather *tlb);
 /*
  * book3s:
- * Hash does not use the linux page-tables, so we can avoid
+ * Hash does not use the linaos page-tables, so we can avoid
  * the TLB invalidate for page-table freeing, Radix otoh does use the
  * page-tables and needs the TLBI.
  *

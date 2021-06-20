@@ -1,6 +1,6 @@
-#include <uapi/linux/ptrace.h>
-#include <uapi/linux/bpf.h>
-#include <linux/version.h>
+#include <uapi/linaos/ptrace.h>
+#include <uapi/linaos/bpf.h>
+#include <linaos/version.h>
 #include <bpf/bpf_helpers.h>
 
 SEC("kprobe/open_ctree")

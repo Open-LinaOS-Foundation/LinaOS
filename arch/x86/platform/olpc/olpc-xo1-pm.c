@@ -8,12 +8,12 @@
  * Copyright (C) 2006 Advanced Micro Devices, Inc.
  */
 
-#include <linux/cs5535.h>
-#include <linux/platform_device.h>
-#include <linux/export.h>
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/olpc-ec.h>
+#include <linaos/cs5535.h>
+#include <linaos/platform_device.h>
+#include <linaos/export.h>
+#include <linaos/pm.h>
+#include <linaos/suspend.h>
+#include <linaos/olpc-ec.h>
 
 #include <asm/io.h>
 #include <asm/olpc.h>

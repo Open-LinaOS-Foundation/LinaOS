@@ -14,7 +14,7 @@
  * for fast access, falling back on scanning the LPT as a last resort.
  */
 
-#include <linux/sort.h>
+#include <linaos/sort.h>
 #include "ubifs.h"
 
 /**

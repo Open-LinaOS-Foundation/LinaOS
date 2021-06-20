@@ -3,16 +3,16 @@
  * arch/sh/boot/compressed/misc.c
  *
  * This is a collection of several routines from gzip-1.0.3
- * adapted for Linux.
+ * adapted for LinaOS.
  *
  * malloc by Hannu Savolainen 1993 and Matthias Urlichs 1994
  *
  * Adapted for SH by Stuart Menefy, Aug 1999
  *
- * Modified to use standard LinuxSH BIOS by Greg Banks 7Jul2000
+ * Modified to use standard LinaOSSH BIOS by Greg Banks 7Jul2000
  */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/addrspace.h>
 #include <asm/page.h>
 
@@ -39,7 +39,7 @@ static void error(char *m);
 
 int puts(const char *);
 
-extern int _text;		/* Defined in vmlinux.lds.S */
+extern int _text;		/* Defined in vmlinaos.lds.S */
 extern int _end;
 static unsigned long free_mem_ptr;
 static unsigned long free_mem_end_ptr;
@@ -111,7 +111,7 @@ void __stack_chk_fail(void)
 	error("stack-protector: Kernel stack is corrupted\n");
 }
 
-/* Needed because vmlinux.lds.h references this */
+/* Needed because vmlinaos.lds.h references this */
 void ftrace_stub(void)
 {
 }
@@ -135,7 +135,7 @@ void decompress_kernel(void)
 	free_mem_ptr = (unsigned long)&_end;
 	free_mem_end_ptr = free_mem_ptr + HEAP_SIZE;
 
-	puts("Uncompressing Linux... ");
+	puts("Uncompressing LinaOS... ");
 	cache_control(CACHE_ENABLE);
 	__decompress(input_data, input_len, NULL, NULL, output, 0, NULL, error);
 	cache_control(CACHE_DISABLE);

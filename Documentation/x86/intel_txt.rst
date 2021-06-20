@@ -27,8 +27,8 @@ which has been updated for the new released platforms.
 Intel TXT has been presented at various events over the past few
 years, some of which are:
 
-      - LinuxTAG 2008:
-          http://www.linuxtag.org/2008/en/conf/events/vp-donnerstag.html
+      - LinaOSTAG 2008:
+          http://www.linaostag.org/2008/en/conf/events/vp-donnerstag.html
 
       - TRUST2008:
           http://www.trust-conference.eu/downloads/Keynote-Speakers/
@@ -52,16 +52,16 @@ The mercurial source repo is available at http://www.bughost.org/
 repos.hg/tboot.hg.
 
 Tboot currently supports launching Xen (open source VMM/hypervisor
-w/ TXT support since v3.2), and now Linux kernels.
+w/ TXT support since v3.2), and now LinaOS kernels.
 
 
-Value Proposition for Linux or "Why should you care?"
+Value Proposition for LinaOS or "Why should you care?"
 =====================================================
 
 While there are many products and technologies that attempt to
 measure or protect the integrity of a running kernel, they all
 assume the kernel is "good" to begin with.  The Integrity
-Measurement Architecture (IMA) and Linux Integrity Module interface
+Measurement Architecture (IMA) and LinaOS Integrity Module interface
 are examples of such solutions.
 
 To get trust in the initial kernel without using Intel TXT, a
@@ -69,7 +69,7 @@ static root of trust must be used.  This bases trust in BIOS
 starting at system reset and requires measurement of all code
 executed between system reset through the completion of the kernel
 boot as well as data objects used by that code.  In the case of a
-Linux kernel, this means all of BIOS, any option ROMs, the
+LinaOS kernel, this means all of BIOS, any option ROMs, the
 bootloader and the boot config.  In practice, this is a lot of
 code/data, much of which is subject to change from boot to boot
 (e.g. changing NICs may change option ROMs).  Without reference
@@ -142,7 +142,7 @@ How Does it Work?
    in order to remove this blanket protection and use VT-d's
    page-level protection.
 -  Tboot will populate a shared page with some data about itself and
-   pass this to the Linux kernel as it transfers control.
+   pass this to the LinaOS kernel as it transfers control.
 
    -  The location of the shared page is passed via the boot_params
       struct as a physical address.
@@ -199,7 +199,7 @@ which to find them are BIOS-specific.
 
 grub.conf needs to be modified as follows::
 
-        title Linux 2.6.29-tip w/ tboot
+        title LinaOS 2.6.29-tip w/ tboot
           root (hd0,0)
                 kernel /tboot.gz logging=serial,vga,memory
                 module /vmlinuz-2.6.29-tip intel_iommu=on ro

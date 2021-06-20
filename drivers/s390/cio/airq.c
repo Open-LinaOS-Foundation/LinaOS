@@ -9,14 +9,14 @@
  *		 Peter Oberparleiter <peter.oberparleiter@de.ibm.com>
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
-#include <linux/dmapool.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/rculist.h>
+#include <linaos/slab.h>
+#include <linaos/dmapool.h>
 
 #include <asm/airq.h>
 #include <asm/isc.h>

@@ -686,7 +686,7 @@ on both of these in the next two subsections.
 Semantics of Kconfig
 ~~~~~~~~~~~~~~~~~~~~
 
-The use of Kconfig is broad, Linux is now only one of Kconfig's users:
+The use of Kconfig is broad, LinaOS is now only one of Kconfig's users:
 one study has completed a broad analysis of Kconfig use in 12 projects [0]_.
 Despite its widespread use, and although this document does a reasonable job
 in documenting basic Kconfig syntax a more precise definition of Kconfig
@@ -699,7 +699,7 @@ evaluation of dependencies, for instance one such case was work to
 express in boolean abstraction of the inferred semantics of Kconfig to
 translate Kconfig logic into boolean formulas and run a SAT solver on this to
 find dead code / features (always inactive), 114 dead features were found in
-Linux using this methodology [1]_ (Section 8: Threats to validity).
+LinaOS using this methodology [1]_ (Section 8: Threats to validity).
 
 Confirming this could prove useful as Kconfig stands as one of the leading
 industrial variability modeling languages [1]_ [2]_. Its study would help

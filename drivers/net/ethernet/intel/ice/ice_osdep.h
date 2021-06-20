@@ -4,10 +4,10 @@
 #ifndef _ICE_OSDEP_H_
 #define _ICE_OSDEP_H_
 
-#include <linux/types.h>
-#include <linux/io.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
 #ifndef CONFIG_64BIT
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 #endif
 
 #define wr32(a, reg, value)	writel((value), ((a)->hw_addr + (reg)))

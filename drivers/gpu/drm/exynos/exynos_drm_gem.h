@@ -9,7 +9,7 @@
 #define _EXYNOS_DRM_GEM_H_
 
 #include <drm/drm_gem.h>
-#include <linux/mm_types.h>
+#include <linaos/mm_types.h>
 
 #define to_exynos_gem(x)	container_of(x, struct exynos_drm_gem, base)
 

@@ -6,17 +6,17 @@
 
 #define pr_fmt(fmt) "GICv3: " fmt
 
-#include <linux/dma-iommu.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/dma-iommu.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/kernel.h>
+#include <linaos/msi.h>
+#include <linaos/of_address.h>
+#include <linaos/of_pci.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
-#include <linux/irqchip/arm-gic-v3.h>
+#include <linaos/irqchip/arm-gic-v3.h>
 
 struct mbi_range {
 	u32			spi_start;

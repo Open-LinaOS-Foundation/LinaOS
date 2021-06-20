@@ -9,20 +9,20 @@
  * TODO: illuminance channel
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
-#include <linux/acpi.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/acpi.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/sysfs.h>
-#include <linux/pm_runtime.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/pm_runtime.h>
 
 #define RPR0521_REG_SYSTEM_CTRL		0x40
 #define RPR0521_REG_MODE_CTRL		0x41

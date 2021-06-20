@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux Socket Filter - Kernel level socket filtering
+ * LinaOS Socket Filter - Kernel level socket filtering
  *
  * Based on the design of the Berkeley Packet Filter. The new
  * internal format has been designed by PLUMgrid:
@@ -17,37 +17,37 @@
  * Kris Katterjohn - Added many additional checks in bpf_check_classic()
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/fcntl.h>
-#include <linux/socket.h>
-#include <linux/sock_diag.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/if_packet.h>
-#include <linux/if_arp.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/fcntl.h>
+#include <linaos/socket.h>
+#include <linaos/sock_diag.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_packet.h>
+#include <linaos/if_arp.h>
+#include <linaos/gfp.h>
 #include <net/inet_common.h>
 #include <net/ip.h>
 #include <net/protocol.h>
 #include <net/netlink.h>
-#include <linux/skbuff.h>
-#include <linux/skmsg.h>
+#include <linaos/skbuff.h>
+#include <linaos/skmsg.h>
 #include <net/sock.h>
 #include <net/flow_dissector.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/timer.h>
+#include <linaos/uaccess.h>
 #include <asm/unaligned.h>
 #include <asm/cmpxchg.h>
-#include <linux/filter.h>
-#include <linux/ratelimit.h>
-#include <linux/seccomp.h>
-#include <linux/if_vlan.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
+#include <linaos/filter.h>
+#include <linaos/ratelimit.h>
+#include <linaos/seccomp.h>
+#include <linaos/if_vlan.h>
+#include <linaos/bpf.h>
+#include <linaos/btf.h>
 #include <net/sch_generic.h>
 #include <net/cls_cgroup.h>
 #include <net/dst_metadata.h>
@@ -57,9 +57,9 @@
 #include <net/tcp.h>
 #include <net/xfrm.h>
 #include <net/udp.h>
-#include <linux/bpf_trace.h>
+#include <linaos/bpf_trace.h>
 #include <net/xdp_sock.h>
-#include <linux/inetdevice.h>
+#include <linaos/inetdevice.h>
 #include <net/inet_hashtables.h>
 #include <net/inet6_hashtables.h>
 #include <net/ip_fib.h>
@@ -68,14 +68,14 @@
 #include <net/arp.h>
 #include <net/ipv6.h>
 #include <net/net_namespace.h>
-#include <linux/seg6_local.h>
+#include <linaos/seg6_local.h>
 #include <net/seg6.h>
 #include <net/seg6_local.h>
 #include <net/lwtunnel.h>
 #include <net/ipv6_stubs.h>
 #include <net/bpf_sk_storage.h>
 #include <net/transp_v6.h>
-#include <linux/btf_ids.h>
+#include <linaos/btf_ids.h>
 #include <net/tls.h>
 
 static const struct bpf_func_proto *

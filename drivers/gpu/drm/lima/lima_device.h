@@ -5,9 +5,9 @@
 #define __LIMA_DEVICE_H__
 
 #include <drm/drm_device.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
 
 #include "lima_sched.h"
 #include "lima_dump.h"

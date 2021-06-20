@@ -2,8 +2,8 @@
 #ifndef _LINUX_UNALIGNED_MEMMOVE_H
 #define _LINUX_UNALIGNED_MEMMOVE_H
 
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
 
 /* Use memmove here, so gcc does not insert a __builtin_memcpy. */
 

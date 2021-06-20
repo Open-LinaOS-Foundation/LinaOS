@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/vt8623fb.c - fbdev driver for
+ * linaos/drivers/video/vt8623fb.c - fbdev driver for
  * integrated graphic core in VIA VT8623 [CLE266] chipset
  *
  * Copyright (c) 2006-2007 Ondrej Zajicek <santiago@crfreenet.org>
@@ -12,18 +12,18 @@
  * (http://davesdomain.org.uk/viafb/)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/svga.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/console.h> /* Why should fb driver call console functions? because console_lock() */
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/tty.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/svga.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/console.h> /* Why should fb driver call console functions? because console_lock() */
 #include <video/vga.h>
 
 struct vt8623fb_info {

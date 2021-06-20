@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /* Copyright (C) 2019 IBM Corp. */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
+#include <linaos/bitfield.h>
+#include <linaos/delay.h>
+#include <linaos/iopoll.h>
+#include <linaos/mdio.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_mdio.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
 
 #define DRV_NAME "mdio-aspeed"
 

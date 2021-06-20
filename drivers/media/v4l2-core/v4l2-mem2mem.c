@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Memory-to-memory device framework for Video for Linux 2 and videobuf.
+ * Memory-to-memory device framework for Video for LinaOS 2 and videobuf.
  *
  * Helper functions for devices that use videobuf buffers for both their
  * source and destination.
@@ -9,9 +9,9 @@
  * Pawel Osciak, <pawel@osciak.com>
  * Marek Szyprowski, <m.szyprowski@samsung.com>
  */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 
 #include <media/media-device.h>
 #include <media/videobuf2-v4l2.h>

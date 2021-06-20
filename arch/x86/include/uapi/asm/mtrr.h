@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.0+ WITH LinaOS-syscall-note */
 /*  Generic MTRR (Memory Type Range Register) ioctls.
 
     Copyright (C) 1997-1999  Richard Gooch
@@ -24,9 +24,9 @@
 #ifndef _UAPI_ASM_X86_MTRR_H
 #define _UAPI_ASM_X86_MTRR_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
-#include <linux/errno.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
+#include <linaos/errno.h>
 
 #define	MTRR_IOCTL_BASE	'M'
 

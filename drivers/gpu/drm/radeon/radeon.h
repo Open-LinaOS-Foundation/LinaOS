@@ -60,16 +60,16 @@
  *                          are considered as fatal)
  */
 
-#include <linux/atomic.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/interval_tree.h>
-#include <linux/hashtable.h>
-#include <linux/dma-fence.h>
+#include <linaos/atomic.h>
+#include <linaos/wait.h>
+#include <linaos/list.h>
+#include <linaos/kref.h>
+#include <linaos/interval_tree.h>
+#include <linaos/hashtable.h>
+#include <linaos/dma-fence.h>
 
 #ifdef CONFIG_MMU_NOTIFIER
-#include <linux/mmu_notifier.h>
+#include <linaos/mmu_notifier.h>
 #endif
 
 #include <drm/ttm/ttm_bo_api.h>

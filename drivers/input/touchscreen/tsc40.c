@@ -6,11 +6,11 @@
  * Author: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
 
 #define PACKET_LENGTH  5
 struct tsc_ser {

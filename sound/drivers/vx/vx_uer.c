@@ -7,7 +7,7 @@
  * Copyright (c) 2002 by Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include <sound/core.h>
 #include <sound/vx_core.h>
 #include "vx_cmd.h"

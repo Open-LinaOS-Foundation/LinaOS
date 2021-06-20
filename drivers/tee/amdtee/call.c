@@ -3,12 +3,12 @@
  * Copyright 2019 Advanced Micro Devices, Inc.
  */
 
-#include <linux/device.h>
-#include <linux/tee.h>
-#include <linux/tee_drv.h>
-#include <linux/psp-tee.h>
-#include <linux/slab.h>
-#include <linux/psp-sev.h>
+#include <linaos/device.h>
+#include <linaos/tee.h>
+#include <linaos/tee_drv.h>
+#include <linaos/psp-tee.h>
+#include <linaos/slab.h>
+#include <linaos/psp-sev.h>
 #include "amdtee_if.h"
 #include "amdtee_private.h"
 

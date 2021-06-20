@@ -2,7 +2,7 @@
 #ifndef _PARISC_BUG_H
 #define _PARISC_BUG_H
 
-#include <linux/kernel.h>	/* for BUGFLAG_TAINT */
+#include <linaos/kernel.h>	/* for BUGFLAG_TAINT */
 
 /*
  * Tell the user there is some problem.

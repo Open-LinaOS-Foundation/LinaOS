@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/ceph/ceph_debug.h>
+#include <linaos/ceph/ceph_debug.h>
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/highmem.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 #ifdef CONFIG_BLOCK
-#include <linux/bio.h>
+#include <linaos/bio.h>
 #endif
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/osd_client.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/auth.h>
-#include <linux/ceph/pagelist.h>
-#include <linux/ceph/striper.h>
+#include <linaos/ceph/ceph_features.h>
+#include <linaos/ceph/libceph.h>
+#include <linaos/ceph/osd_client.h>
+#include <linaos/ceph/messenger.h>
+#include <linaos/ceph/decode.h>
+#include <linaos/ceph/auth.h>
+#include <linaos/ceph/pagelist.h>
+#include <linaos/ceph/striper.h>
 
 #define OSD_OPREPLY_FRONT_LEN	512
 

@@ -8,7 +8,7 @@
 #ifndef __LINUX_PLATFORM_DATA_CLK_DAVINCI_PLL_H__
 #define __LINUX_PLATFORM_DATA_CLK_DAVINCI_PLL_H__
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 /**
  * davinci_pll_platform_data

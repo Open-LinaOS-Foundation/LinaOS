@@ -7,14 +7,14 @@
  * IIO driver for MXC6255 (7-bit I2C slave address 0x15).
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/iio/iio.h>
-#include <linux/delay.h>
-#include <linux/acpi.h>
-#include <linux/regmap.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/iio/iio.h>
+#include <linaos/delay.h>
+#include <linaos/acpi.h>
+#include <linaos/regmap.h>
+#include <linaos/iio/sysfs.h>
 
 #define MXC6255_DRV_NAME		"mxc6255"
 #define MXC6255_REGMAP_NAME		"mxc6255_regmap"

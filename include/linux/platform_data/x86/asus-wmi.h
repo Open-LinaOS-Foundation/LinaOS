@@ -2,8 +2,8 @@
 #ifndef __PLATFORM_DATA_X86_ASUS_WMI_H
 #define __PLATFORM_DATA_X86_ASUS_WMI_H
 
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
 
 /* WMI Methods */
 #define ASUS_WMI_METHODID_SPEC	        0x43455053 /* BIOS SPECification */

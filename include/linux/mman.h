@@ -2,11 +2,11 @@
 #ifndef _LINUX_MMAN_H
 #define _LINUX_MMAN_H
 
-#include <linux/mm.h>
-#include <linux/percpu_counter.h>
+#include <linaos/mm.h>
+#include <linaos/percpu_counter.h>
 
-#include <linux/atomic.h>
-#include <uapi/linux/mman.h>
+#include <linaos/atomic.h>
+#include <uapi/linaos/mman.h>
 
 /*
  * Arrange for legacy / undefined architecture specific flags to be

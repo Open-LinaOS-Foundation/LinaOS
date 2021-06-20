@@ -16,17 +16,17 @@
 #define CARD_NAME "ESS Maestro3/Allegro/Canyon3D-2"
 #define DRIVER_NAME "Maestro3"
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/input.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/firmware.h>
+#include <linaos/input.h>
 #include <sound/core.h>
 #include <sound/info.h>
 #include <sound/control.h>

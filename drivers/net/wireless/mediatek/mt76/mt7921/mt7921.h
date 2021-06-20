@@ -4,8 +4,8 @@
 #ifndef __MT7921_H
 #define __MT7921_H
 
-#include <linux/interrupt.h>
-#include <linux/ktime.h>
+#include <linaos/interrupt.h>
+#include <linaos/ktime.h>
 #include "../mt76_connac_mcu.h"
 #include "regs.h"
 

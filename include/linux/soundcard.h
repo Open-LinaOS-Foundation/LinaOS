@@ -25,7 +25,7 @@
 #define SOUNDCARD_H
 
 #  include <asm/byteorder.h>
-#include <uapi/linux/soundcard.h>
+#include <uapi/linaos/soundcard.h>
 
 #  if defined(__BIG_ENDIAN)
 #    define AFMT_S16_NE AFMT_S16_BE

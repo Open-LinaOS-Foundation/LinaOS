@@ -21,7 +21,7 @@ menuconfig FB
 	  anything about the low-level (hardware register) stuff.
 
 	  Frame buffer devices work identically across the different
-	  architectures supported by Linux and make the implementation of
+	  architectures supported by LinaOS and make the implementation of
 	  application programs easier and more portable; at this point, an X
 	  server exists which uses the frame buffer device exclusively.
 	  On several non-X86 architectures, the frame buffer device is the
@@ -324,7 +324,7 @@ config FB_SA1100
 	select FB_CFB_IMAGEBLIT
 	help
 	  This is a framebuffer device for the SA-1100 LCD Controller.
-	  See <http://www.linux-fbdev.org/> for information on framebuffer
+	  See <http://www.linaos-fbdev.org/> for information on framebuffer
 	  devices.
 
 	  If you plan to use the LCD display with your SA-1100 system, say
@@ -403,7 +403,7 @@ config FB_AMIGA_OCS
 	help
 	  This enables support for the original Agnus and Denise video chips,
 	  found in the Amiga 1000 and most A500's and A2000's. If you intend
-	  to run Linux on any of these systems, say Y; otherwise say N.
+	  to run LinaOS on any of these systems, say Y; otherwise say N.
 
 config FB_AMIGA_ECS
 	bool "Amiga ECS chipset support"
@@ -411,7 +411,7 @@ config FB_AMIGA_ECS
 	help
 	  This enables support for the Enhanced Chip Set, found in later
 	  A500's, later A2000's, the A600, the A3000, the A3000T and CDTV. If
-	  you intend to run Linux on any of these systems, say Y; otherwise
+	  you intend to run LinaOS on any of these systems, say Y; otherwise
 	  say N.
 
 config FB_AMIGA_AGA
@@ -420,7 +420,7 @@ config FB_AMIGA_AGA
 	help
 	  This enables support for the Advanced Graphics Architecture (also
 	  known as the AGA or AA) Chip Set, found in the A1200, A4000, A4000T
-	  and CD32. If you intend to run Linux on any of these systems, say Y;
+	  and CD32. If you intend to run LinaOS on any of these systems, say Y;
 	  otherwise say N.
 
 config FB_FM2
@@ -556,7 +556,7 @@ config FB_STI
 	help
 	  STI refers to the HP "Standard Text Interface" which is a set of
 	  BIOS routines contained in a ROM chip in HP PA-RISC based machines.
-	  Enabling this option will implement the linux framebuffer device
+	  Enabling this option will implement the linaos framebuffer device
 	  using calls to the STI BIOS routines for initialisation.
 	
 	  If you enable this option, you will get a planar framebuffer device
@@ -596,7 +596,7 @@ config FB_TGA
 	  Due to hardware limitations ZLX-E2 and E3 cards are not supported
 	  for DECstation 5000/200 systems.  Additionally due to firmware
 	  limitations these cards may cause troubles with booting DECstation
-	  5000/240 and /260 systems, but are fully supported under Linux if
+	  5000/240 and /260 systems, but are fully supported under LinaOS if
 	  you manage to get it going. ;-)
 
 	  Say Y if you have one of those.
@@ -817,7 +817,7 @@ config FB_PVR2
 	select FB_CFB_IMAGEBLIT
 	help
 	  Say Y here if you have a PowerVR 2 card in your box.  If you plan to
-	  run linux on your Dreamcast, you will have to say Y here.
+	  run linaos on your Dreamcast, you will have to say Y here.
 	  This driver may or may not work on other PowerVR 2 cards, but is
 	  totally untested.  Use at your own risk.  If unsure, say N.
 
@@ -1136,7 +1136,7 @@ config FB_MATROX_G
 	  additional modules.
 
 	  The driver starts in monitor mode. You must use the matroxset tool
-	  (available at <ftp://platan.vc.cvut.cz/pub/linux/matrox-latest/>) to
+	  (available at <ftp://platan.vc.cvut.cz/pub/linaos/matrox-latest/>) to
 	  swap primary and secondary head outputs, or to change output mode.
 	  Secondary head driver always start in 640x480 resolution and you
 	  must use fbset to change it.
@@ -1187,7 +1187,7 @@ config FB_MATROX_MAVEN
 
 	  The driver starts in monitor mode and you must use the matroxset
 	  tool (available at
-	  <ftp://platan.vc.cvut.cz/pub/linux/matrox-latest/>) to switch it to
+	  <ftp://platan.vc.cvut.cz/pub/linaos/matrox-latest/>) to switch it to
 	  PAL or NTSC or to swap primary and secondary head outputs.
 	  Secondary head driver also always start in 640x480 resolution, you
 	  must use fbset to change it.

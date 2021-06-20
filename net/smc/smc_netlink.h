@@ -6,7 +6,7 @@
  *
  *  Copyright IBM Corp. 2020
  *
- *  Author(s):	Guvenc Gulce <guvenc@linux.ibm.com>
+ *  Author(s):	Guvenc Gulce <guvenc@linaos.ibm.com>
  */
 
 #ifndef _SMC_NETLINK_H

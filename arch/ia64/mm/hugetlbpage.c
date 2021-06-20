@@ -9,14 +9,14 @@
  * Feb, 2004: dynamic hugetlb page size via boot parameter
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/log2.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/pagemap.h>
+#include <linaos/module.h>
+#include <linaos/sysctl.h>
+#include <linaos/log2.h>
 #include <asm/mman.h>
 #include <asm/tlb.h>
 #include <asm/tlbflush.h>

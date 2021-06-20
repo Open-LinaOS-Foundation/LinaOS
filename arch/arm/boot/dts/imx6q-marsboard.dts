@@ -77,7 +77,7 @@
 			label = "imx6:green:user1";
 			gpios = <&gpio5 2 GPIO_ACTIVE_LOW>;
 			default-state = "off";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		user2 {

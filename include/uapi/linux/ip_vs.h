@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  *      IP Virtual Server
  *      data structure and functionality definitions
@@ -7,7 +7,7 @@
 #ifndef _IP_VS_H
 #define _IP_VS_H
 
-#include <linux/types.h>	/* For __beXX types in userland */
+#include <linaos/types.h>	/* For __beXX types in userland */
 
 #define IP_VS_VERSION_CODE	0x010201
 #define NVERSION(version)			\

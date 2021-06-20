@@ -6,12 +6,12 @@
  * Copyright (c) 2016-2017 HiSilicon Technologies Co., Ltd.
  */
 
-#include <linux/time.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linaos/time.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
 
 #include "ufshcd.h"
 #include "ufshcd-pltfrm.h"

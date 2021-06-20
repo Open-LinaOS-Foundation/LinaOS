@@ -7,7 +7,7 @@
 #ifndef __TIDSS_DISPC_COEF_H__
 #define __TIDSS_DISPC_COEF_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct tidss_scale_coefs {
 	s16 c2[16];

@@ -8,9 +8,9 @@
 #ifndef WFX_BH_H
 #define WFX_BH_H
 
-#include <linux/atomic.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linaos/atomic.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
 
 struct wfx_dev;
 

@@ -27,7 +27,7 @@
 
 #define MODULE_NAME "ov519"
 
-#include <linux/input.h>
+#include <linaos/input.h>
 #include "gspca.h"
 
 /* The jpeg_hdr is used by w996Xcf only */

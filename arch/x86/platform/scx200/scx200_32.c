@@ -5,15 +5,15 @@
  *  National Semiconductor SCx200 support.
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
 
-#include <linux/scx200.h>
-#include <linux/scx200_gpio.h>
+#include <linaos/scx200.h>
+#include <linaos/scx200_gpio.h>
 
 /* Verify that the configuration block really is there */
 #define scx200_cb_probe(base) (inw((base) + SCx200_CBA) == (base))

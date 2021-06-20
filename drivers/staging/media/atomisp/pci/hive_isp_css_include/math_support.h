@@ -16,7 +16,7 @@
 #ifndef __MATH_SUPPORT_H
 #define __MATH_SUPPORT_H
 
-#include <linux/kernel.h> /* Override the definition of max/min from linux kernel*/
+#include <linaos/kernel.h> /* Override the definition of max/min from linaos kernel*/
 
 #define IS_ODD(a)            ((a) & 0x1)
 #define IS_EVEN(a)           (!IS_ODD(a))

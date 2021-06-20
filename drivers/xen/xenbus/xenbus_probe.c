@@ -8,7 +8,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -37,19 +37,19 @@
 	pr_debug("xenbus_probe (%s:%d) " fmt ".\n",	\
 		 __func__, __LINE__, ##args)
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/fcntl.h>
+#include <linaos/mm.h>
+#include <linaos/proc_fs.h>
+#include <linaos/notifier.h>
+#include <linaos/kthread.h>
+#include <linaos/mutex.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
 #include <asm/page.h>
 #include <asm/xen/hypervisor.h>

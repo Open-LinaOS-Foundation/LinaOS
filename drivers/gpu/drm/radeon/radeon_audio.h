@@ -25,7 +25,7 @@
 #ifndef __RADEON_AUDIO_H__
 #define __RADEON_AUDIO_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define RREG32_ENDPOINT(block, reg)		\
 	radeon_audio_endpoint_rreg(rdev, (block), (reg))

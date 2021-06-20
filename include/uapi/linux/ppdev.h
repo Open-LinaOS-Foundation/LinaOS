@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
- * linux/include/linux/ppdev.h
+ * linaos/include/linaos/ppdev.h
  *
  * User-space parallel port device driver (header file).
  *

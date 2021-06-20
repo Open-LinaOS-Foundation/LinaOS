@@ -9,21 +9,21 @@
 
 #include <asm/head.h>
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/threads.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/perf_event.h>
-#include <linux/interrupt.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
-#include <linux/extable.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/ptrace.h>
+#include <linaos/mman.h>
+#include <linaos/threads.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/perf_event.h>
+#include <linaos/interrupt.h>
+#include <linaos/kdebug.h>
+#include <linaos/uaccess.h>
+#include <linaos/extable.h>
 
 #include <asm/page.h>
 #include <asm/openprom.h>

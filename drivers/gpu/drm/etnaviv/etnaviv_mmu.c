@@ -3,8 +3,8 @@
  * Copyright (C) 2015-2018 Etnaviv Project
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/scatterlist.h>
 
 #include "common.xml.h"
 #include "etnaviv_cmdbuf.h"

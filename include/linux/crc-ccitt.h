@@ -2,7 +2,7 @@
 #ifndef _LINUX_CRC_CCITT_H
 #define _LINUX_CRC_CCITT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 extern u16 const crc_ccitt_table[256];
 extern u16 const crc_ccitt_false_table[256];

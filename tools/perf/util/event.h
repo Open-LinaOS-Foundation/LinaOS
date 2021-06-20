@@ -2,15 +2,15 @@
 #ifndef __PERF_RECORD_H
 #define __PERF_RECORD_H
 /*
- * The linux/stddef.h isn't need here, but is needed for __always_inline used
- * in files included from uapi/linux/perf_event.h such as
- * /usr/include/linux/swab.h and /usr/include/linux/byteorder/little_endian.h,
- * detected in at least musl libc, used in Alpine Linux. -acme
+ * The linaos/stddef.h isn't need here, but is needed for __always_inline used
+ * in files included from uapi/linaos/perf_event.h such as
+ * /usr/include/linaos/swab.h and /usr/include/linaos/byteorder/little_endian.h,
+ * detected in at least musl libc, used in Alpine LinaOS. -acme
  */
 #include <stdio.h>
-#include <linux/stddef.h>
+#include <linaos/stddef.h>
 #include <perf/event.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "perf_regs.h"
 

@@ -4,7 +4,7 @@
  * Copyright (C) 2017-2019 Samuel Neves <sneves@dei.uc.pt>. All Rights Reserved.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 .section .rodata.cst32.BLAKE2S_IV, "aM", @progbits, 32
 .align 32

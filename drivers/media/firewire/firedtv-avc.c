@@ -7,18 +7,18 @@
  * Copyright (C) 2008 Henrik Kurelid <henrik@kurelid.se>
  */
 
-#include <linux/bug.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
-#include <linux/stringify.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linaos/bug.h>
+#include <linaos/crc32.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/moduleparam.h>
+#include <linaos/mutex.h>
+#include <linaos/string.h>
+#include <linaos/stringify.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
 
 #include <media/dvb_frontend.h>
 

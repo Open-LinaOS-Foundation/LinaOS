@@ -24,7 +24,7 @@
  * Daniel Vetter <daniel.vetter@ffwll.ch>
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_bridge;
 struct drm_bridge_state;

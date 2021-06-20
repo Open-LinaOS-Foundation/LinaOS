@@ -8,7 +8,7 @@ config VIDEO_CX88
 	select VIDEO_TVEEPROM
 	select VIDEO_WM8775 if MEDIA_SUBDRV_AUTOSELECT
 	help
-	  This is a video4linux driver for Conexant 2388x based
+	  This is a video4linaos driver for Conexant 2388x based
 	  TV cards.
 
 	  To compile this driver as a module, choose M here: the
@@ -19,7 +19,7 @@ config VIDEO_CX88_ALSA
 	depends on VIDEO_CX88 && SND
 	select SND_PCM
 	help
-	  This is a video4linux driver for direct (DMA) audio on
+	  This is a video4linaos driver for direct (DMA) audio on
 	  Conexant 2388x based TV cards using ALSA.
 
 	  It only works with boards with function 01 enabled.

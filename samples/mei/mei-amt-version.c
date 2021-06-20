@@ -1,5 +1,5 @@
 /******************************************************************************
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) LinaOS driver
  * Intel MEI Interface Header
  *
  * This file is provided under a dual BSD/GPLv2 license.  When using or
@@ -28,7 +28,7 @@
  *
  * Contact Information:
  *	Intel Corporation.
- *	linux-mei@linux.intel.com
+ *	linaos-mei@linaos.intel.com
  *	http://www.intel.com
  *
  * BSD LICENSE
@@ -74,7 +74,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <bits/wordsize.h>
-#include <linux/mei.h>
+#include <linaos/mei.h>
 
 /*****************************************************************************
  * Intel Management Engine Interface

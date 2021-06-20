@@ -15,7 +15,7 @@
 #define _ASM_ARM_IXP4XX_H_
 
 /*
- * IXP4xx Linux Memory Map:
+ * IXP4xx LinaOS Memory Map:
  *
  * Phy		Size		Virt		Description
  * =========================================================================

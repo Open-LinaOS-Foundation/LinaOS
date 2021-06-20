@@ -7,9 +7,9 @@
 #ifndef _LINUX_SWITCHDEV_H_
 #define _LINUX_SWITCHDEV_H_
 
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/list.h>
+#include <linaos/netdevice.h>
+#include <linaos/notifier.h>
+#include <linaos/list.h>
 #include <net/ip_fib.h>
 
 #define SWITCHDEV_F_NO_RECURSE		BIT(0)

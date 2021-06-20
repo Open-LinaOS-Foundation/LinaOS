@@ -8,16 +8,16 @@
 #ifndef _LINUX_RADIX_TREE_H
 #define _LINUX_RADIX_TREE_H
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/percpu.h>
-#include <linux/preempt.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/xarray.h>
-#include <linux/local_lock.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/percpu.h>
+#include <linaos/preempt.h>
+#include <linaos/rcupdate.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/xarray.h>
+#include <linaos/local_lock.h>
 
 /* Keep unconverted code working */
 #define radix_tree_root		xarray

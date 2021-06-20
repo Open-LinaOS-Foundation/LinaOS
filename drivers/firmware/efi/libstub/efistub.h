@@ -3,11 +3,11 @@
 #ifndef _DRIVERS_FIRMWARE_EFI_EFISTUB_H
 #define _DRIVERS_FIRMWARE_EFI_EFISTUB_H
 
-#include <linux/compiler.h>
-#include <linux/efi.h>
-#include <linux/kernel.h>
-#include <linux/kern_levels.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/efi.h>
+#include <linaos/kernel.h>
+#include <linaos/kern_levels.h>
+#include <linaos/types.h>
 #include <asm/efi.h>
 
 /*

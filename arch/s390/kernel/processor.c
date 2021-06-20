@@ -7,16 +7,16 @@
 #define KMSG_COMPONENT "cpu"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/stop_machine.h>
-#include <linux/cpufeature.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/sched/mm.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/mm_types.h>
-#include <linux/delay.h>
-#include <linux/cpu.h>
+#include <linaos/stop_machine.h>
+#include <linaos/cpufeature.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/mm.h>
+#include <linaos/init.h>
+#include <linaos/seq_file.h>
+#include <linaos/mm_types.h>
+#include <linaos/delay.h>
+#include <linaos/cpu.h>
 
 #include <asm/diag.h>
 #include <asm/facility.h>

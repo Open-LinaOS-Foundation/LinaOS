@@ -151,7 +151,7 @@
 			label = "user_led";
 			gpios = <&gpio0 2 0x1>;
 			default-state = "off";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			pinctrl-names = "default";
 			pinctrl-0 = <&user_led_default_mode>;
 		};
@@ -163,7 +163,7 @@
 		user-button {
 			label = "user_button";
 			gpios = <&gpio0 3 0x1>;
-			linux,code = <1>; /* KEY_ESC */
+			linaos,code = <1>; /* KEY_ESC */
 			wakeup-source;
 			pinctrl-names = "default";
 			pinctrl-0 = <&user_button_default_mode>;

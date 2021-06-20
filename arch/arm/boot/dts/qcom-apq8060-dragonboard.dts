@@ -265,7 +265,7 @@
 		qcom,ssbi@500000 {
 			pmic@0 {
 				keypad@148 {
-					linux,keymap = <
+					linaos,keymap = <
 					MATRIX_KEY(0, 0, KEY_MENU)
 					MATRIX_KEY(0, 2, KEY_1)
 					MATRIX_KEY(0, 3, KEY_4)
@@ -431,7 +431,7 @@
 					reg = <0x48>;
 					label = "pm8058:infrared:proximitysensor";
 					default-state = "off";
-					linux,default-trigger = "cm3605";
+					linaos,default-trigger = "cm3605";
 				};
 				led@131 {
 					compatible = "qcom,pm8058-led";
@@ -448,14 +448,14 @@
 					reg = <0x132>;
 					label = "pm8058:yellow";
 					default-state = "off";
-					linux,default-trigger = "mmc0";
+					linaos,default-trigger = "mmc0";
 				};
 				led@133 {
 					compatible = "qcom,pm8058-led";
 					reg = <0x133>;
 					label = "pm8058:green";
 					default-state = "on";
-					linux,default-trigger = "heartbeat";
+					linaos,default-trigger = "heartbeat";
 				};
 			};
 		};

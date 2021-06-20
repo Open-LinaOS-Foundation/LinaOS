@@ -5,8 +5,8 @@
 #if !defined(_TRACE_PAGEMAP_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_PAGEMAP_H
 
-#include <linux/tracepoint.h>
-#include <linux/mm.h>
+#include <linaos/tracepoint.h>
+#include <linaos/mm.h>
 
 #define	PAGEMAP_MAPPED		0x0001u
 #define PAGEMAP_ANONYMOUS	0x0002u

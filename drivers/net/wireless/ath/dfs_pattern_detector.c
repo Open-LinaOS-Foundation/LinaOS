@@ -14,8 +14,8 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 
 #include "dfs_pattern_detector.h"
 #include "dfs_pri_detector.h"

@@ -5,10 +5,10 @@
  * Copyright (C) 2017 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/init.h>
-#include <linux/of_fdt.h>
-#include <linux/libfdt.h>
-#include <linux/smp.h>
+#include <linaos/init.h>
+#include <linaos/of_fdt.h>
+#include <linaos/libfdt.h>
+#include <linaos/smp.h>
 #include <asm/arcregs.h>
 #include <asm/io.h>
 #include <asm/mach_desc.h>
@@ -67,7 +67,7 @@ static void __init hsdk_enable_gpio_intc_wire(void)
 	 * - GPIO[2] - HAPS interrupt (on HapsTrak 3 connector)
 	 * - GPIO[3] - Audio codec (MAX9880A) interrupt
 	 * - GPIO[8-23] - Available on Arduino and PMOD_x headers
-	 * For now there's no use of Arduino and PMOD_x headers in Linux
+	 * For now there's no use of Arduino and PMOD_x headers in LinaOS
 	 * use-case so we only enable lines 0, 2 and 3.
 	 *
 	 * [1] https://github.com/foss-for-synopsys-dwc-arc-processors/ARC-Development-Systems-Forum/wiki/docs/ARC_HSDK_User_Guide.pdf

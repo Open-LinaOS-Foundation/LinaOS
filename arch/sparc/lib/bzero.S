@@ -5,7 +5,7 @@
  * Copyright (C) 2005 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/export.h>
 
 	.text

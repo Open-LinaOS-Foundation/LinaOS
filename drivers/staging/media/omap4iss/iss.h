@@ -13,12 +13,12 @@
 #include <media/v4l2-device.h>
 #include <media/v4l2-mc.h>
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/wait.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/wait.h>
 
-#include <linux/platform_data/media/omap4iss.h>
+#include <linaos/platform_data/media/omap4iss.h>
 
 #include "iss_regs.h"
 #include "iss_csiphy.h"

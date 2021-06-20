@@ -4,12 +4,12 @@
  */
 
 #include "nfs4_fs.h"
-#include <linux/fs_context.h>
-#include <linux/security.h>
-#include <linux/crc32.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/nfs_page.h>
-#include <linux/wait_bit.h>
+#include <linaos/fs_context.h>
+#include <linaos/security.h>
+#include <linaos/crc32.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/nfs_page.h>
+#include <linaos/wait_bit.h>
 
 #define NFS_SB_MASK (SB_RDONLY|SB_NOSUID|SB_NODEV|SB_NOEXEC|SB_SYNCHRONOUS)
 

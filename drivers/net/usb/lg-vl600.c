@@ -5,16 +5,16 @@
  * Copyright (C) 2011 Intel Corporation
  * Author: Andrzej Zaborowski <balrogg@gmail.com>
  */
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/module.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/usb.h>
+#include <linaos/usb/cdc.h>
+#include <linaos/usb/usbnet.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_arp.h>
+#include <linaos/inetdevice.h>
+#include <linaos/module.h>
 
 /*
  * The device has a CDC ACM port for modem control (it claims to be
@@ -189,7 +189,7 @@ static int vl600_rx_fixup(struct usbnet *dev, struct sk_buff *skb)
 			/* Inbound IPv6 packets have an IPv4 ethertype (0x800)
 			 * for some reason.  Peek at the L3 header to check
 			 * for IPv6 packets, and set the ethertype to IPv6
-			 * (0x86dd) so Linux can understand it.
+			 * (0x86dd) so LinaOS can understand it.
 			 */
 			if ((buf->data[sizeof(*ethhdr)] & 0xf0) == 0x60)
 				ethhdr->h_proto = htons(ETH_P_IPV6);

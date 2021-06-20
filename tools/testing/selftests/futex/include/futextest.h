@@ -7,10 +7,10 @@
  *      Glibc independent futex library for testing kernel functionality.
  *
  * AUTHOR
- *      Darren Hart <dvhart@linux.intel.com>
+ *      Darren Hart <dvhart@linaos.intel.com>
  *
  * HISTORY
- *      2009-Nov-6: Initial version by Darren Hart <dvhart@linux.intel.com>
+ *      2009-Nov-6: Initial version by Darren Hart <dvhart@linaos.intel.com>
  *
  *****************************************************************************/
 
@@ -20,7 +20,7 @@
 #include <unistd.h>
 #include <sys/syscall.h>
 #include <sys/types.h>
-#include <linux/futex.h>
+#include <linaos/futex.h>
 
 typedef volatile u_int32_t futex_t;
 #define FUTEX_INITIALIZER 0

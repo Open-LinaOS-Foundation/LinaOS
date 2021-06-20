@@ -158,12 +158,12 @@
 
 	spdif_out: spdif-out {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dit";
+		compatible = "linaos,spdif-dit";
 	};
 
 	spdif_in: spdif-in {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dir";
+		compatible = "linaos,spdif-dir";
 	};
 };
 
@@ -232,7 +232,7 @@
 				reg = <0 0x800000>;
 			};
 			partition@800000 {
-				label = "Linux";
+				label = "LinaOS";
 				reg = <0x800000 0x800000>;
 			};
 			partition@1000000 {

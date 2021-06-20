@@ -7,11 +7,11 @@
  * set of CPU's in a system, one bit position per CPU number.  In general,
  * only nr_cpu_ids (<= NR_CPUS) bits are valid.
  */
-#include <linux/kernel.h>
-#include <linux/threads.h>
-#include <linux/bitmap.h>
-#include <linux/atomic.h>
-#include <linux/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/threads.h>
+#include <linaos/bitmap.h>
+#include <linaos/atomic.h>
+#include <linaos/bug.h>
 
 /* Don't assign or return these: may not be this big! */
 typedef struct cpumask { DECLARE_BITMAP(bits, NR_CPUS); } cpumask_t;

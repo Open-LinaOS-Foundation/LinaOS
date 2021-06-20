@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_SECCOMP_H
 #define _UAPI_LINUX_SECCOMP_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
 
 
 /* Valid values for seccomp.mode and prctl(PR_SET_SECCOMP, <mode>) */
@@ -52,7 +52,7 @@
  * struct seccomp_data - the format the BPF program executes over.
  * @nr: the system call number
  * @arch: indicates system call convention as an AUDIT_ARCH_* value
- *        as defined in <linux/audit.h>.
+ *        as defined in <linaos/audit.h>.
  * @instruction_pointer: at the time of the system call.
  * @args: up to 6 system call arguments always stored as 64-bit values
  *        regardless of the architecture.

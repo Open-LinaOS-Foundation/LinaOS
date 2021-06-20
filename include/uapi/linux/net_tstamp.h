@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Userspace API for hardware time stamping of network packets
  *
@@ -10,8 +10,8 @@
 #ifndef _NET_TIMESTAMPING_H
 #define _NET_TIMESTAMPING_H
 
-#include <linux/types.h>
-#include <linux/socket.h>   /* for SO_TIMESTAMPING */
+#include <linaos/types.h>
+#include <linaos/socket.h>   /* for SO_TIMESTAMPING */
 
 /* SO_TIMESTAMPING gets an integer bit field comprised of these values */
 enum {

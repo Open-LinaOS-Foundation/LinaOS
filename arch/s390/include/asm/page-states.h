@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  *    Copyright IBM Corp. 2017
- *    Author(s): Claudio Imbrenda <imbrenda@linux.vnet.ibm.com>
+ *    Author(s): Claudio Imbrenda <imbrenda@linaos.vnet.ibm.com>
  */
 
 #ifndef PAGE_STATES_H

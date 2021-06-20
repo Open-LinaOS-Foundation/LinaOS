@@ -8,14 +8,14 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/ptrace.h>
-#include <linux/hardirq.h>
-#include <linux/thread_info.h>
-#include <linux/kbuild.h>
+#include <linaos/init.h>
+#include <linaos/stddef.h>
+#include <linaos/sched.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/ptrace.h>
+#include <linaos/hardirq.h>
+#include <linaos/thread_info.h>
+#include <linaos/kbuild.h>
 #include <asm/cpuinfo.h>
 
 int main(int argc, char *argv[])

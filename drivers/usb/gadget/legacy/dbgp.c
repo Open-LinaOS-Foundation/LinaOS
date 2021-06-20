@@ -8,11 +8,11 @@
  */
 
 /* verbose messages */
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
 
 #include "u_serial.h"
 

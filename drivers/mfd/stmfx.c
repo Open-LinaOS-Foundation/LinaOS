@@ -5,14 +5,14 @@
  * Copyright (C) 2019 STMicroelectronics
  * Author(s): Amelie Delaunay <amelie.delaunay@st.com>.
  */
-#include <linux/bitfield.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/stmfx.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/bitfield.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/stmfx.h>
+#include <linaos/module.h>
+#include <linaos/regulator/consumer.h>
 
 static bool stmfx_reg_volatile(struct device *dev, unsigned int reg)
 {
@@ -355,7 +355,7 @@ static int stmfx_chip_init(struct i2c_client *client)
 	 * STMFX I2C address follows the 7-bit format (MSB), that's why
 	 * client->addr is shifted.
 	 *
-	 * STMFX_I2C_ADDR|       STMFX         |        Linux
+	 * STMFX_I2C_ADDR|       STMFX         |        LinaOS
 	 *   input pin   | I2C device address  | I2C device address
 	 *---------------------------------------------------------
 	 *       0       | b: 1000 010x h:0x84 |       0x42

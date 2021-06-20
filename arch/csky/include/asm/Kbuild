@@ -5,4 +5,4 @@ generic-y += gpio.h
 generic-y += kvm_para.h
 generic-y += qrwlock.h
 generic-y += user.h
-generic-y += vmlinux.lds.h
+generic-y += vmlinaos.lds.h

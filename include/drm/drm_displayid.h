@@ -22,7 +22,7 @@
 #ifndef DRM_DISPLAYID_H
 #define DRM_DISPLAYID_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct edid;
 

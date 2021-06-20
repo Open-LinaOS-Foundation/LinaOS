@@ -45,11 +45,11 @@
  *   (which has to be shallower than the one selected so far).
  */
 
-#include <linux/cpuidle.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/sched/clock.h>
-#include <linux/tick.h>
+#include <linaos/cpuidle.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/clock.h>
+#include <linaos/tick.h>
 
 /*
  * The PULSE value is added to metrics when they grow and the DECAY_SHIFT value

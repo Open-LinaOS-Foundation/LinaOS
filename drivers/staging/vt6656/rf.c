@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include "mac.h"
 #include "rf.h"
 #include "baseband.h"

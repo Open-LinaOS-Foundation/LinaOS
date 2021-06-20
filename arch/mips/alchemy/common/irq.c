@@ -2,7 +2,7 @@
  * Copyright 2001, 2007-2008 MontaVista Software Inc.
  * Author: MontaVista Software, Inc. <source@mvista.com>
  *
- * Copyright (C) 2007 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2007 Ralf Baechle (ralf@linaos-mips.org)
  *
  *  This program is free software; you can redistribute	 it and/or modify it
  *  under  the terms of	 the GNU General  Public License as published by the
@@ -25,11 +25,11 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/syscore_ops.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/mach-au1x00/au1000.h>
@@ -67,7 +67,7 @@
 
 /* per-processor fixed function irqs */
 struct alchemy_irqmap {
-	int irq;	/* linux IRQ number */
+	int irq;	/* linaos IRQ number */
 	int type;	/* IRQ_TYPE_ */
 	int prio;	/* irq priority, 0 highest, 3 lowest */
 	int internal;	/* GPIC: internal source (no ext. pin)? */
@@ -560,7 +560,7 @@ EXPORT_SYMBOL_GPL(au1300_pinfunc_to_dev);
 
 /*
  * au1300_set_irq_priority -  set internal priority of IRQ.
- * @irq:	irq to set priority (linux irq number).
+ * @irq:	irq to set priority (linaos irq number).
  * @p:		priority (0 = highest, 3 = lowest).
  */
 void au1300_set_irq_priority(unsigned int irq, int p)

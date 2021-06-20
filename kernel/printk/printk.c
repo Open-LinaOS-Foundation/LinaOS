@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/printk.c
+ *  linaos/kernel/printk.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -19,36 +19,36 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/nmi.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/security.h>
-#include <linux/memblock.h>
-#include <linux/syscalls.h>
-#include <linux/crash_core.h>
-#include <linux/ratelimit.h>
-#include <linux/kmsg_dump.h>
-#include <linux/syslog.h>
-#include <linux/cpu.h>
-#include <linux/rculist.h>
-#include <linux/poll.h>
-#include <linux/irq_work.h>
-#include <linux/ctype.h>
-#include <linux/uio.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/nmi.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/delay.h>
+#include <linaos/smp.h>
+#include <linaos/security.h>
+#include <linaos/memblock.h>
+#include <linaos/syscalls.h>
+#include <linaos/crash_core.h>
+#include <linaos/ratelimit.h>
+#include <linaos/kmsg_dump.h>
+#include <linaos/syslog.h>
+#include <linaos/cpu.h>
+#include <linaos/rculist.h>
+#include <linaos/poll.h>
+#include <linaos/irq_work.h>
+#include <linaos/ctype.h>
+#include <linaos/uio.h>
+#include <linaos/sched/clock.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task_stack.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/sections.h>
 
 #include <trace/events/initcall.h>

@@ -11,19 +11,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/uaccess.h>
-#include <linux/uuid.h>
+#include <linaos/acpi.h>
+#include <linaos/bitfield.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/dmi.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
+#include <linaos/uaccess.h>
+#include <linaos/uuid.h>
 
 #include <acpi/acpi_bus.h>
 #include <asm/cpu_device_id.h>

@@ -7,19 +7,19 @@
  * Authors: Rafal Ozieblo <rafalo@cadence.com>
  *          Bartosz Folta <bfolta@cadence.com>
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/time64.h>
-#include <linux/ptp_classify.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/net_tstamp.h>
-#include <linux/circ_buf.h>
-#include <linux/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/etherdevice.h>
+#include <linaos/platform_device.h>
+#include <linaos/time64.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/circ_buf.h>
+#include <linaos/spinlock.h>
 
 #include "macb.h"
 

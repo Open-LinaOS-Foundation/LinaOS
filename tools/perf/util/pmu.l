@@ -2,7 +2,7 @@
 
 %{
 #include <stdlib.h>
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include "pmu.h"
 #include "pmu-bison.h"
 

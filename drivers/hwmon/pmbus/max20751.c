@@ -5,11 +5,11 @@
  * Copyright (c) 2015 Guenter Roeck
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
 #include "pmbus.h"
 
 static struct pmbus_driver_info max20751_info = {
@@ -48,7 +48,7 @@ static struct i2c_driver max20751_driver = {
 
 module_i2c_driver(max20751_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linaos@roeck-us.net>");
 MODULE_DESCRIPTION("PMBus driver for Maxim MAX20751");
 MODULE_LICENSE("GPL");
 MODULE_IMPORT_NS(PMBUS);

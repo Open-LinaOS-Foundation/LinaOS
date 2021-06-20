@@ -7,8 +7,8 @@
  * the Free Software Foundation.
  */
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
 #include <net/devlink.h>
 #include "bnxt_hsi.h"
 #include "bnxt.h"

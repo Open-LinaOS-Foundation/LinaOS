@@ -14,10 +14,10 @@
  * kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
+#include <linaos/init.h>
+#include <linaos/of_address.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
 
 #include <asm/io.h>
 #include <asm/machdep.h>

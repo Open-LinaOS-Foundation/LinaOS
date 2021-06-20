@@ -5,7 +5,7 @@
  * Copyright 2018-2019 NXP
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include <media/videobuf2-core.h>
 #include "mxc-jpeg-hw.h"
 

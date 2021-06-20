@@ -8,22 +8,22 @@
  * 2001-05-06	Complete rewrite,  Christoph Hellwig (hch@infradead.org)
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/syscalls.h>
-#include <linux/sysctl.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/kmod.h>
+#include <linaos/module.h>
+#include <linaos/personality.h>
+#include <linaos/proc_fs.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/syscalls.h>
+#include <linaos/sysctl.h>
+#include <linaos/types.h>
 
 #ifdef CONFIG_PROC_FS
 static int execdomains_proc_show(struct seq_file *m, void *v)
 {
-	seq_puts(m, "0-0\tLinux           \t[kernel]\n");
+	seq_puts(m, "0-0\tLinaOS           \t[kernel]\n");
 	return 0;
 }
 

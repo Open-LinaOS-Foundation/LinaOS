@@ -6,11 +6,11 @@
  * Author(s): Michael Holzheu <holzheu@de.ibm.com>
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/cpu.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
 #include <asm/diag.h>
 #include <asm/trace/diag.h>
 #include <asm/sections.h>

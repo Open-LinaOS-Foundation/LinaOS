@@ -30,7 +30,7 @@ extern void gru_wait_abort_proc(void *cb);
  */
 
 #if defined(CONFIG_IA64)
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/intrinsics.h>
 #define __flush_cache(p)		ia64_fc((unsigned long)p)
 /* Use volatile on IA64 to ensure ordering via st4.rel */

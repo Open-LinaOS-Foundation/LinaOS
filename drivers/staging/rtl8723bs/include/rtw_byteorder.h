@@ -8,9 +8,9 @@
 #define _RTL871X_BYTEORDER_H_
 
 #if defined(__LITTLE_ENDIAN)
-#include <linux/byteorder/little_endian.h>
+#include <linaos/byteorder/little_endian.h>
 #else
-#  include <linux/byteorder/big_endian.h>
+#  include <linaos/byteorder/big_endian.h>
 #endif
 
 #endif /* _RTL871X_BYTEORDER_H_ */

@@ -31,7 +31,7 @@
  *
  */
 
-#include <linux/mlx5/device.h>
+#include <linaos/mlx5/device.h>
 #include "fpga/tls.h"
 #include "fpga/cmd.h"
 #include "fpga/sdk.h"

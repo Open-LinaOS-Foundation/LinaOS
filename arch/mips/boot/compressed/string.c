@@ -5,8 +5,8 @@
  * Very small subset of simple string routines
  */
 
-#include <linux/compiler_attributes.h>
-#include <linux/types.h>
+#include <linaos/compiler_attributes.h>
+#include <linaos/types.h>
 
 void *memcpy(void *dest, const void *src, size_t n)
 {

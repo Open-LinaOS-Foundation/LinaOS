@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
-   md.c : Multiple Devices driver for Linux
+   md.c : Multiple Devices driver for LinaOS
      Copyright (C) 1998, 1999, 2000 Ingo Molnar
 
      completely rewritten, based on the MD driver code from Marc Zyngier
@@ -37,31 +37,31 @@
 
 */
 
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/kthread.h>
-#include <linux/blkdev.h>
-#include <linux/badblocks.h>
-#include <linux/sysctl.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/hdreg.h>
-#include <linux/proc_fs.h>
-#include <linux/random.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/file.h>
-#include <linux/compat.h>
-#include <linux/delay.h>
-#include <linux/raid/md_p.h>
-#include <linux/raid/md_u.h>
-#include <linux/raid/detect.h>
-#include <linux/slab.h>
-#include <linux/percpu-refcount.h>
-#include <linux/part_stat.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/kthread.h>
+#include <linaos/blkdev.h>
+#include <linaos/badblocks.h>
+#include <linaos/sysctl.h>
+#include <linaos/seq_file.h>
+#include <linaos/fs.h>
+#include <linaos/poll.h>
+#include <linaos/ctype.h>
+#include <linaos/string.h>
+#include <linaos/hdreg.h>
+#include <linaos/proc_fs.h>
+#include <linaos/random.h>
+#include <linaos/module.h>
+#include <linaos/reboot.h>
+#include <linaos/file.h>
+#include <linaos/compat.h>
+#include <linaos/delay.h>
+#include <linaos/raid/md_p.h>
+#include <linaos/raid/md_u.h>
+#include <linaos/raid/detect.h>
+#include <linaos/slab.h>
+#include <linaos/percpu-refcount.h>
+#include <linaos/part_stat.h>
 
 #include <trace/events/block.h>
 #include "md.h"

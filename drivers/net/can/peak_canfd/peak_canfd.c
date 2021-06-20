@@ -5,8 +5,8 @@
  * Copyright (C) 2016  PEAK System-Technik GmbH
  */
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
 
 #include "peak_canfd_user.h"
 

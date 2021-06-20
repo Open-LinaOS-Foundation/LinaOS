@@ -12,11 +12,11 @@
  * https://www.ti.com/lit/ds/symlink/dac124s085.pdf
  */
 
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linaos/iio/iio.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/spi/spi.h>
 
 enum { dual_8bit, dual_10bit, dual_12bit, quad_8bit, quad_10bit, quad_12bit };
 

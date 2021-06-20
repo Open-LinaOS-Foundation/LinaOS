@@ -6,16 +6,16 @@
 
 #include "ingenic-drm.h"
 
-#include <linux/component.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
+#include <linaos/component.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of_device.h>
+#include <linaos/of_reserved_mem.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/regmap.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

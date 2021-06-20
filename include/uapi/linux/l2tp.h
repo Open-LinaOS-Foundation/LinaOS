@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * L2TP-over-IP socket for L2TPv3.
  *
@@ -8,10 +8,10 @@
 #ifndef _UAPI_LINUX_L2TP_H_
 #define _UAPI_LINUX_L2TP_H_
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
 
 #define IPPROTO_L2TP		115
 

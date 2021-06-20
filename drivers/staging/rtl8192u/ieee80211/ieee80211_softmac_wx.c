@@ -13,7 +13,7 @@
  */
 
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 
 #include "ieee80211.h"
 #include "dot11d.h"

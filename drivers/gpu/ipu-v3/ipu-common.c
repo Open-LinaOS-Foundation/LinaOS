@@ -3,23 +3,23 @@
  * Copyright (c) 2010 Sascha Hauer <s.hauer@pengutronix.de>
  * Copyright (C) 2005-2009 Freescale Semiconductor, Inc.
  */
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/reset.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/list.h>
-#include <linux/irq.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
+#include <linaos/module.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
+#include <linaos/reset.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/list.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of_device.h>
+#include <linaos/of_graph.h>
 
 #include <drm/drm_fourcc.h>
 

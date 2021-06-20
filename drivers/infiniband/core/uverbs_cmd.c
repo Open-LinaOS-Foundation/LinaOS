@@ -33,12 +33,12 @@
  * SOFTWARE.
  */
 
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <rdma/uverbs_types.h>
 #include <rdma/uverbs_std_types.h>

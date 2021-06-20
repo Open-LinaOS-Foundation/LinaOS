@@ -6,14 +6,14 @@
  * Copyright (C) 2008 Analog Devices, Inc
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/ctype.h>
-#include <linux/random.h>
-#include <linux/syscalls.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/ctype.h>
+#include <linaos/random.h>
+#include <linaos/syscalls.h>
 
 #include "u_uac1_legacy.h"
 

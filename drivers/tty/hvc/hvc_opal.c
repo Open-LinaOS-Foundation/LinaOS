@@ -7,15 +7,15 @@
 
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/console.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/console.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/export.h>
+#include <linaos/interrupt.h>
 
 #include <asm/hvconsole.h>
 #include <asm/prom.h>

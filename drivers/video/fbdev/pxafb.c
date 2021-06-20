@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/pxafb.c
+ *  linaos/drivers/video/pxafb.c
  *
  *  Copyright (C) 1999 Eric A. Thomas.
  *  Copyright (C) 2004 Jean-Frederic Clere.
@@ -18,7 +18,7 @@
  * Please direct your questions and comments on this driver to the following
  * email address:
  *
- *	linux-arm-kernel@lists.arm.linux.org.uk
+ *	linaos-arm-kernel@lists.arm.linaos.org.uk
  *
  * Add support for overlay1 and overlay2 based on pxafb_overlay.c:
  *
@@ -32,31 +32,31 @@
  *   All Rights Reserved
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/cpufreq.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/console.h>
-#include <linux/of_graph.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/fb.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/cpufreq.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/completion.h>
+#include <linaos/mutex.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/console.h>
+#include <linaos/of_graph.h>
+#include <linaos/regulator/consumer.h>
 #include <video/of_display_timing.h>
 #include <video/videomode.h>
 
@@ -65,7 +65,7 @@
 #include <asm/irq.h>
 #include <asm/div64.h>
 #include <mach/bitfield.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <linaos/platform_data/video-pxafb.h>
 
 /*
  * Complain if VAR is out of range.

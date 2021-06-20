@@ -4,7 +4,7 @@
  *
  * Copyright (C) IBM Corporation, 2005, 2006
  *
- * Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Authors: Paul E. McKenney <paulmck@linaos.ibm.com>
  *	  Josh Triplett <josh@joshtriplett.org>
  *
  * See also:  Documentation/RCU/torture.rst
@@ -12,45 +12,45 @@
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/freezer.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/stat.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/trace_clock.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kthread.h>
+#include <linaos/err.h>
+#include <linaos/spinlock.h>
+#include <linaos/smp.h>
+#include <linaos/rcupdate_wait.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched/signal.h>
+#include <uapi/linaos/sched/types.h>
+#include <linaos/atomic.h>
+#include <linaos/bitops.h>
+#include <linaos/completion.h>
+#include <linaos/moduleparam.h>
+#include <linaos/percpu.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/freezer.h>
+#include <linaos/cpu.h>
+#include <linaos/delay.h>
+#include <linaos/stat.h>
+#include <linaos/srcu.h>
+#include <linaos/slab.h>
+#include <linaos/trace_clock.h>
 #include <asm/byteorder.h>
-#include <linux/torture.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/sysctl.h>
-#include <linux/oom.h>
-#include <linux/tick.h>
-#include <linux/rcupdate_trace.h>
+#include <linaos/torture.h>
+#include <linaos/vmalloc.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/sysctl.h>
+#include <linaos/oom.h>
+#include <linaos/tick.h>
+#include <linaos/rcupdate_trace.h>
 
 #include "rcu.h"
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Paul E. McKenney <paulmck@linux.ibm.com> and Josh Triplett <josh@joshtriplett.org>");
+MODULE_AUTHOR("Paul E. McKenney <paulmck@linaos.ibm.com> and Josh Triplett <josh@joshtriplett.org>");
 
 /* Bits for ->extendables field, extendables param, and related definitions. */
 #define RCUTORTURE_RDR_SHIFT	 8	/* Put SRCU index in upper bits. */

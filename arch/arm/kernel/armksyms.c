@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/armksyms.c
+ *  linaos/arch/arm/kernel/armksyms.c
  *
  *  Copyright (C) 2000 Russell King
  */
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/in6.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/arm-smccc.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/in6.h>
+#include <linaos/syscalls.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/arm-smccc.h>
 
 #include <asm/checksum.h>
 #include <asm/ftrace.h>

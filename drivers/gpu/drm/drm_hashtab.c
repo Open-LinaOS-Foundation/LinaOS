@@ -32,12 +32,12 @@
  * Thomas Hellström <thomas-at-tungstengraphics-dot-com>
  */
 
-#include <linux/export.h>
-#include <linux/hash.h>
-#include <linux/mm.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/export.h>
+#include <linaos/hash.h>
+#include <linaos/mm.h>
+#include <linaos/rculist.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 #include <drm/drm_hashtab.h>
 #include <drm/drm_print.h>

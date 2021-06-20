@@ -8,18 +8,18 @@
  * Author: Jorge Eduardo Candelaria <jedu@slimlogic.co.uk>
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/core.h>
-#include <linux/regmap.h>
-#include <linux/mfd/tps65910.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/mfd/core.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/tps65910.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 static const struct resource rtc_resources[] = {
 	{

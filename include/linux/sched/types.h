@@ -2,7 +2,7 @@
 #ifndef _LINUX_SCHED_TYPES_H
 #define _LINUX_SCHED_TYPES_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * struct task_cputime - collected CPU time counts

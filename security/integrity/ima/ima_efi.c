@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2018 IBM Corporation
  */
-#include <linux/efi.h>
-#include <linux/module.h>
-#include <linux/ima.h>
+#include <linaos/efi.h>
+#include <linaos/module.h>
+#include <linaos/ima.h>
 #include <asm/efi.h>
 
 #ifndef arch_ima_efi_boot_mode

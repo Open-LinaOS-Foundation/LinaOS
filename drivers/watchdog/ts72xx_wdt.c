@@ -13,10 +13,10 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
-#include <linux/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/watchdog.h>
+#include <linaos/io.h>
 
 #define TS72XX_WDT_DEFAULT_TIMEOUT	30
 

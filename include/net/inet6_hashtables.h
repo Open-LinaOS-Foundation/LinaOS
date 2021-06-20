@@ -12,10 +12,10 @@
 
 
 #if IS_ENABLED(CONFIG_IPV6)
-#include <linux/in6.h>
-#include <linux/ipv6.h>
-#include <linux/types.h>
-#include <linux/jhash.h>
+#include <linaos/in6.h>
+#include <linaos/ipv6.h>
+#include <linaos/types.h>
+#include <linaos/jhash.h>
 
 #include <net/inet_sock.h>
 

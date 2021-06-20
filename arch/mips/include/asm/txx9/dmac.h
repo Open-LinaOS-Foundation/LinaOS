@@ -6,7 +6,7 @@
 #ifndef __ASM_TXX9_DMAC_H
 #define __ASM_TXX9_DMAC_H
 
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 
 #define TXX9_DMA_MAX_NR_CHANNELS	4
 

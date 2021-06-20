@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/video/dummycon.c -- A dummy console driver
+ *  linaos/drivers/video/dummycon.c -- A dummy console driver
  *
  *  To be used if there's no other console driver (e.g. for plain VGA text)
  *  available, usually until fbcon takes console over.
  */
 
-#include <linux/types.h>
-#include <linux/kdev_t.h>
-#include <linux/console.h>
-#include <linux/vt_kern.h>
-#include <linux/screen_info.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/kdev_t.h>
+#include <linaos/console.h>
+#include <linaos/vt_kern.h>
+#include <linaos/screen_info.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
 
 /*
  *  Dummy console driver

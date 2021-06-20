@@ -9,15 +9,15 @@
 
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/kref.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/idr.h>
+#include <linaos/kref.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "tcp.h"
 #include "nodemanager.h"

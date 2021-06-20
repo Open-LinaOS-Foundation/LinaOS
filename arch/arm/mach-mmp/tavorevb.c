@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-mmp/tavorevb.c
+ *  linaos/arch/arm/mach-mmp/tavorevb.c
  *
  *  Support for the Marvell PXA910-based TavorEVB Development Platform.
  */
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/smc91x.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio-pxa.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/smc91x.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

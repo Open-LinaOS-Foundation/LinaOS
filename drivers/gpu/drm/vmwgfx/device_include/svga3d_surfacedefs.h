@@ -38,7 +38,7 @@
 #define INCLUDE_ALLOW_MODULE
 #include "includeCheck.h"
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <drm/vmwgfx_drm.h>
 
 #include "svga3d_reg.h"

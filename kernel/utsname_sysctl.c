@@ -5,12 +5,12 @@
  *  Author: Eric Biederman <ebiederm@xmision.com>
  */
 
-#include <linux/export.h>
-#include <linux/uts.h>
-#include <linux/utsname.h>
-#include <linux/sysctl.h>
-#include <linux/wait.h>
-#include <linux/rwsem.h>
+#include <linaos/export.h>
+#include <linaos/uts.h>
+#include <linaos/utsname.h>
+#include <linaos/sysctl.h>
+#include <linaos/wait.h>
+#include <linaos/rwsem.h>
 
 #ifdef CONFIG_PROC_SYSCTL
 

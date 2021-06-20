@@ -14,9 +14,9 @@
 #include <asm/byteorder.h>
 #include <error.h>
 #include <errno.h>
-#include <linux/if_packet.h>
-#include <linux/if_ether.h>
-#include <linux/ipv6.h>
+#include <linaos/if_packet.h>
+#include <linaos/if_ether.h>
+#include <linaos/ipv6.h>
 #include <netinet/ip.h>
 #include <netinet/in.h>
 #include <netinet/udp.h>

@@ -2,7 +2,7 @@
 #ifndef __ARCH_H8300_CMPXCHG__
 #define __ARCH_H8300_CMPXCHG__
 
-#include <linux/irqflags.h>
+#include <linaos/irqflags.h>
 
 #define xchg(ptr, x) \
 	((__typeof__(*(ptr)))__xchg((unsigned long)(x), (ptr), \

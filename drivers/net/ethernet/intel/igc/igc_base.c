@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c)  2018 Intel Corporation */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include "igc_hw.h"
 #include "igc_i225.h"

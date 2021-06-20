@@ -9,13 +9,13 @@
 
 #define dev_fmt(fmt)	"gart: " fmt
 
-#include <linux/io.h>
-#include <linux/iommu.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
+#include <linaos/io.h>
+#include <linaos/iommu.h>
+#include <linaos/moduleparam.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/vmalloc.h>
 
 #include <soc/tegra/mc.h>
 

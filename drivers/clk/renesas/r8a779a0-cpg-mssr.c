@@ -10,18 +10,18 @@
  * Copyright (C) 2015 Renesas Electronics Corp.
  */
 
-#include <linux/bug.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/soc/renesas/rcar-rst.h>
+#include <linaos/bug.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
+#include <linaos/soc/renesas/rcar-rst.h>
 
 #include <dt-bindings/clock/r8a779a0-cpg-mssr.h>
 

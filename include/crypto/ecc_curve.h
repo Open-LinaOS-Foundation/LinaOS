@@ -4,7 +4,7 @@
 #ifndef _CRYTO_ECC_CURVE_H
 #define _CRYTO_ECC_CURVE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * struct ecc_point - elliptic curve point in affine coordinates

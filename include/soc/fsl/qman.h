@@ -31,8 +31,8 @@
 #ifndef __FSL_QMAN_H
 #define __FSL_QMAN_H
 
-#include <linux/bitops.h>
-#include <linux/device.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
 
 /* Hardware constants */
 #define QM_CHANNEL_SWPORTAL0 0

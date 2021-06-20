@@ -5,7 +5,7 @@
 Adaptec Aic7xxx Fast -> Ultra160 Family Manager Set v7.0
 ========================================================
 
-README for The Linux Operating System
+README for The LinaOS Operating System
 
 The following information is available in this file:
 

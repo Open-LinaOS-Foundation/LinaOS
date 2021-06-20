@@ -6,18 +6,18 @@
  * Author: Felipe Balbi <balbi@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/err.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched/task_stack.h>
-#include <linux/workqueue.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/err.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/workqueue.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb.h>
 
 #include "trace.h"
 

@@ -6,9 +6,9 @@
  */
 
 /* includes */
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/usb.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/usb.h>
 #include <msp_usb.h>
 
 /* stream disable*/

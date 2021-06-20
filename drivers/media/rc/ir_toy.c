@@ -11,12 +11,12 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/completion.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/usb/input.h>
+#include <linaos/completion.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/slab.h>
+#include <linaos/usb/input.h>
 
 #include <media/rc-core.h>
 

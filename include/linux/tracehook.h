@@ -43,13 +43,13 @@
 #ifndef _LINUX_TRACEHOOK_H
 #define _LINUX_TRACEHOOK_H	1
 
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/security.h>
-#include <linux/task_work.h>
-#include <linux/memcontrol.h>
-#include <linux/blk-cgroup.h>
-struct linux_binprm;
+#include <linaos/sched.h>
+#include <linaos/ptrace.h>
+#include <linaos/security.h>
+#include <linaos/task_work.h>
+#include <linaos/memcontrol.h>
+#include <linaos/blk-cgroup.h>
+struct linaos_binprm;
 
 /*
  * ptrace report for syscall entry and exit looks identical.
@@ -222,4 +222,4 @@ static inline void set_notify_signal(struct task_struct *task)
 		kick_process(task);
 }
 
-#endif	/* <linux/tracehook.h> */
+#endif	/* <linaos/tracehook.h> */

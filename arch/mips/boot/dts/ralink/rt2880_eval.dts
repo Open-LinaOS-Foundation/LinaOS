@@ -41,7 +41,7 @@
 			read-only;
 		};
 		partition@50000 {
-			label = "linux";
+			label = "linaos";
 			reg = <0x50000 0x3b0000>;
 		};
 	};

@@ -12,7 +12,7 @@
 #define __AA_NET_H
 
 #include <net/sock.h>
-#include <linux/path.h>
+#include <linaos/path.h>
 
 #include "apparmorfs.h"
 #include "label.h"

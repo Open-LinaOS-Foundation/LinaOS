@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2017-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017-2020, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
-#include <linux/component.h>
-#include <linux/of_irq.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/debugfs.h>
+#include <linaos/component.h>
+#include <linaos/of_irq.h>
+#include <linaos/delay.h>
 
 #include "msm_drv.h"
 #include "msm_kms.h"

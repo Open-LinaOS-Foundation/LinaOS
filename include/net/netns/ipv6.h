@@ -8,7 +8,7 @@
 #ifndef __NETNS_IPV6_H__
 #define __NETNS_IPV6_H__
 #include <net/dst_ops.h>
-#include <uapi/linux/icmpv6.h>
+#include <uapi/linaos/icmpv6.h>
 
 struct ctl_table_header;
 

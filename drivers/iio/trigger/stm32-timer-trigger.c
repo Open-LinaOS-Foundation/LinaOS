@@ -6,14 +6,14 @@
  *
  */
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/timer/stm32-timer-trigger.h>
-#include <linux/iio/trigger.h>
-#include <linux/mfd/stm32-timers.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/timer/stm32-timer-trigger.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/mfd/stm32-timers.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_device.h>
 
 #define MAX_TRIGGERS 7
 #define MAX_VALIDS 5

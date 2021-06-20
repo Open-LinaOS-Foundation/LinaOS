@@ -7,10 +7,10 @@
 
 #include "fsverity_private.h"
 
-#include <linux/backing-dev.h>
-#include <linux/highmem.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
+#include <linaos/backing-dev.h>
+#include <linaos/highmem.h>
+#include <linaos/sched/signal.h>
+#include <linaos/uaccess.h>
 
 static int fsverity_read_merkle_tree(struct inode *inode,
 				     const struct fsverity_info *vi,

@@ -8,8 +8,8 @@
  * based on arch/arm/common/rtctime.c and other bits
  */
 
-#include <linux/export.h>
-#include <linux/rtc.h>
+#include <linaos/export.h>
+#include <linaos/rtc.h>
 
 static const unsigned char rtc_days_in_month[] = {
 	31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31

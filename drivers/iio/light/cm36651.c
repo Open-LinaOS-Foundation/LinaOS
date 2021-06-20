@@ -4,16 +4,16 @@
  * Author: Beomho Seo <beomho.seo@samsung.com>
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/regulator/consumer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/events.h>
 
 /* Slave address 0x19 for PS of 7 bit addressing protocol for I2C */
 #define CM36651_I2C_ADDR_PS		0x19

@@ -5,8 +5,8 @@
  * Copyright (c) 2019 Sven Schnelle <svens@stackframe.org>
  */
 
-#include <linux/kprobes.h>
-#include <linux/mm.h>
+#include <linaos/kprobes.h>
+#include <linaos/mm.h>
 #include <asm/cacheflush.h>
 #include <asm/fixmap.h>
 

@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _dmasound_h_
 /*
- *  linux/sound/oss/dmasound/dmasound.h
+ *  linaos/sound/oss/dmasound/dmasound.h
  *
  *
  *  Minor numbers for the sound driver.
@@ -13,7 +13,7 @@
  */
 #define _dmasound_h_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define SND_NDEVS	256	/* Number of supported devices */
 #define SND_DEV_CTL	0	/* Control port /dev/mixer */

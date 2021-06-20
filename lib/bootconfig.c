@@ -6,14 +6,14 @@
 
 #define pr_fmt(fmt)    "bootconfig: " fmt
 
-#include <linux/bootconfig.h>
-#include <linux/bug.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/printk.h>
-#include <linux/string.h>
+#include <linaos/bootconfig.h>
+#include <linaos/bug.h>
+#include <linaos/ctype.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/memblock.h>
+#include <linaos/printk.h>
+#include <linaos/string.h>
 
 /*
  * Extra Boot Config (XBC) is given as tree-structured ascii text of

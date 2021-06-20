@@ -13,10 +13,10 @@
 #ifndef __MACH_GENERIC_H
 #define __MACH_GENERIC_H
 
-#include <linux/dmaengine.h>
-#include <linux/amba/pl08x.h>
-#include <linux/init.h>
-#include <linux/reboot.h>
+#include <linaos/dmaengine.h>
+#include <linaos/amba/pl08x.h>
+#include <linaos/init.h>
+#include <linaos/reboot.h>
 
 #include <asm/mach/time.h>
 

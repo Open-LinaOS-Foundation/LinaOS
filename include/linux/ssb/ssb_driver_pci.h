@@ -2,7 +2,7 @@
 #ifndef LINUX_SSB_PCICORE_H_
 #define LINUX_SSB_PCICORE_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct pci_dev;
 

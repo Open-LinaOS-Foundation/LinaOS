@@ -97,7 +97,7 @@
 		key {
 			label = "Power";
 			wakeup-source;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpd 29 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -115,7 +115,7 @@
 			    <&gpc 14 0>, <&gpc 15 0>, <&gpc 16 0>, <&gpc 17 0>;
 		gpio-activelow;
 
-		linux,keymap =
+		linaos,keymap =
 			<MATRIX_KEY(0, 0, KEY_F1)>,	/* S2 */
 			<MATRIX_KEY(0, 1, KEY_F2)>,	/* S3 */
 			<MATRIX_KEY(0, 2, KEY_F3)>,	/* S4 */

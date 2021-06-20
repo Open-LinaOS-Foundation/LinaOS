@@ -6,12 +6,12 @@
  *  Tugrul Galatali <galatalt@stuy.edu>
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/isa.h>
+#include <linaos/time.h>
+#include <linaos/wait.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/wss.h>
 #include <sound/mpu401.h>

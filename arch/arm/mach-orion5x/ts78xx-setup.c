@@ -10,14 +10,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sysfs.h>
-#include <linux/platform_device.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/ata_platform.h>
-#include <linux/mtd/platnand.h>
-#include <linux/timeriomem-rng.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/sysfs.h>
+#include <linaos/platform_device.h>
+#include <linaos/mv643xx_eth.h>
+#include <linaos/ata_platform.h>
+#include <linaos/mtd/platnand.h>
+#include <linaos/timeriomem-rng.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

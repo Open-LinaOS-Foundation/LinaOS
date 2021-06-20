@@ -44,11 +44,11 @@
  * The jobs in a entity are always scheduled in the order that they were pushed.
  */
 
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <uapi/linux/sched/types.h>
+#include <linaos/kthread.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>
+#include <linaos/completion.h>
+#include <uapi/linaos/sched/types.h>
 
 #include <drm/drm_print.h>
 #include <drm/gpu_scheduler.h>

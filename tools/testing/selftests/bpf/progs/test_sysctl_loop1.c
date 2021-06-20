@@ -4,8 +4,8 @@
 #include <stdint.h>
 #include <string.h>
 
-#include <linux/stddef.h>
-#include <linux/bpf.h>
+#include <linaos/stddef.h>
+#include <linaos/bpf.h>
 
 #include <bpf/bpf_helpers.h>
 

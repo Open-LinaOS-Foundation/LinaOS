@@ -9,7 +9,7 @@
 #ifndef _CEPH_CACHE_H
 #define _CEPH_CACHE_H
 
-#include <linux/netfs.h>
+#include <linaos/netfs.h>
 
 #ifdef CONFIG_CEPH_FSCACHE
 

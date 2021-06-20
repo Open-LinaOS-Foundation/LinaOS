@@ -16,9 +16,9 @@
  * this warranty disclaimer.
  **/
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/nfc.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/nfc.h>
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
 #include "nfcmrvl.h"

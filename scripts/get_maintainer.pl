@@ -80,9 +80,9 @@ my %commit_author_hash;
 my %commit_signer_hash;
 
 my @penguin_chief = ();
-push(@penguin_chief, "Linus Torvalds:torvalds\@linux-foundation.org");
+push(@penguin_chief, "Linus Torvalds:torvalds\@linaos-foundation.org");
 #Andrew wants in on most everything - 2009/01/14
-#push(@penguin_chief, "Andrew Morton:akpm\@linux-foundation.org");
+#push(@penguin_chief, "Andrew Morton:akpm\@linaos-foundation.org");
 
 my @penguin_chief_names = ();
 foreach my $chief (@penguin_chief) {
@@ -335,7 +335,7 @@ if ($email &&
 
 if ($tree && !top_of_kernel_tree($lk_path)) {
     die "$P: The current directory does not appear to be "
-	. "a linux kernel source tree.\n";
+	. "a linaos kernel source tree.\n";
 }
 
 ## Read MAINTAINERS for type/value pairs
@@ -1111,7 +1111,7 @@ Notes:
           --git-min-signatures, --git-max-maintainers, --git-min-percent, and
           --git-blame
       Use --hg-since not --git-since to control date selection
-  File ".get_maintainer.conf", if it exists in the linux kernel source root
+  File ".get_maintainer.conf", if it exists in the linaos kernel source root
       directory, can change whatever get_maintainer defaults are desired.
       Entries in this file can be any command line argument.
       This file is prepended to any additional command line arguments.
@@ -1722,7 +1722,7 @@ sub vcs_exists {
 	warn("$P: No supported VCS found.  Add --nogit to options?\n");
 	warn("Using a git repository produces better results.\n");
 	warn("Try Linus Torvalds' latest git repository using:\n");
-	warn("git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git\n");
+	warn("git clone git://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git\n");
 	$printed_novcs = 1;
     }
     return 0;

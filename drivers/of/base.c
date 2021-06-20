@@ -16,18 +16,18 @@
 
 #define pr_fmt(fmt)	"OF: " fmt
 
-#include <linux/bitmap.h>
-#include <linux/console.h>
-#include <linux/ctype.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/proc_fs.h>
+#include <linaos/bitmap.h>
+#include <linaos/console.h>
+#include <linaos/ctype.h>
+#include <linaos/cpu.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_graph.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/proc_fs.h>
 
 #include "of_private.h"
 
@@ -1969,11 +1969,11 @@ void of_alias_scan(void * (*dt_alloc)(u64 size, u64 align))
 		of_chosen = of_find_node_by_path("/chosen@0");
 
 	if (of_chosen) {
-		/* linux,stdout-path and /aliases/stdout are for legacy compatibility */
+		/* linaos,stdout-path and /aliases/stdout are for legacy compatibility */
 		const char *name = NULL;
 
 		if (of_property_read_string(of_chosen, "stdout-path", &name))
-			of_property_read_string(of_chosen, "linux,stdout-path",
+			of_property_read_string(of_chosen, "linaos,stdout-path",
 						&name);
 		if (IS_ENABLED(CONFIG_PPC) && !name)
 			of_property_read_string(of_aliases, "stdout", &name);
@@ -1994,7 +1994,7 @@ void of_alias_scan(void * (*dt_alloc)(u64 size, u64 align))
 		/* Skip those we do not want to proceed */
 		if (!strcmp(pp->name, "name") ||
 		    !strcmp(pp->name, "phandle") ||
-		    !strcmp(pp->name, "linux,phandle"))
+		    !strcmp(pp->name, "linaos,phandle"))
 			continue;
 
 		np = of_find_node_by_path(pp->value);

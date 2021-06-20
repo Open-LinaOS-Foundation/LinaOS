@@ -3,11 +3,11 @@
  * Copyright 2006-2008, Michael Ellerman, IBM Corporation.
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/kmemleak.h>
-#include <linux/bitmap.h>
-#include <linux/memblock.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/kmemleak.h>
+#include <linaos/bitmap.h>
+#include <linaos/memblock.h>
 #include <asm/msi_bitmap.h>
 #include <asm/setup.h>
 

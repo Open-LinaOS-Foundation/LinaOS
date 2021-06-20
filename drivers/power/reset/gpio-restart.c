@@ -6,14 +6,14 @@
  *
  * Based on the gpio-poweroff driver.
  */
-#include <linux/reboot.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_platform.h>
-#include <linux/module.h>
+#include <linaos/reboot.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of_platform.h>
+#include <linaos/module.h>
 
 struct gpio_restart {
 	struct gpio_desc *reset_gpio;

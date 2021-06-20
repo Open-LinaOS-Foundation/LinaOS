@@ -6,12 +6,12 @@
  *
  *  Copyright (C) 2007 - 2010  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/cpufreq.h>
-#include <linux/clkdev.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/cpufreq.h>
+#include <linaos/clkdev.h>
 #include <asm/clock.h>
 #include <asm/freq.h>
 #include <cpu/sh7785.h>

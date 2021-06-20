@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2012 ARM Ltd.
  *
@@ -19,7 +19,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Signal context structure - contains all info to do with the state
@@ -146,7 +146,7 @@ struct sve_context {
  * vector length beyond its initial architectural limit of 2048 bits
  * (16 quadwords).
  *
- * See linux/Documentation/arm64/sve.rst for a description of the VL/VQ
+ * See linaos/Documentation/arm64/sve.rst for a description of the VL/VQ
  * terminology.
  */
 #define SVE_VQ_BYTES		__SVE_VQ_BYTES	/* bytes per quadword */

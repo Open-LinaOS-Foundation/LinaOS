@@ -14,7 +14,7 @@
 #ifndef __TSI108_ETH_H
 #define __TSI108_ETH_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define TSI_WRITE(offset, val) \
 	out_be32((data->regs + (offset)), val)

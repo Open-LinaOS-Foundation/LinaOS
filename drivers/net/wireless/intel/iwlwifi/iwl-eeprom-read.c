@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2005-2014, 2018-2019 Intel Corporation
  */
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 
 #include "iwl-drv.h"
 #include "iwl-debug.h"

@@ -3,44 +3,44 @@
  *    PARISC Architecture-dependent parts of process handling
  *    based on the work for i386
  *
- *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-linux.org>
+ *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-linaos.org>
  *    Copyright (C) 2000 Martin K Petersen <mkp at mkp.net>
- *    Copyright (C) 2000 John Marvin <jsm at parisc-linux.org>
+ *    Copyright (C) 2000 John Marvin <jsm at parisc-linaos.org>
  *    Copyright (C) 2000 David Huggins-Daines <dhd with pobox.org>
- *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-linux.org>
+ *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-linaos.org>
  *    Copyright (C) 2000 Philipp Rumpf <prumpf with tux.org>
- *    Copyright (C) 2000 David Kennedy <dkennedy with linuxcare.com>
- *    Copyright (C) 2000 Richard Hirst <rhirst with parisc-linux.org>
- *    Copyright (C) 2000 Grant Grundler <grundler with parisc-linux.org>
- *    Copyright (C) 2001 Alan Modra <amodra at parisc-linux.org>
- *    Copyright (C) 2001-2002 Ryan Bradetich <rbrad at parisc-linux.org>
+ *    Copyright (C) 2000 David Kennedy <dkennedy with linaoscare.com>
+ *    Copyright (C) 2000 Richard Hirst <rhirst with parisc-linaos.org>
+ *    Copyright (C) 2000 Grant Grundler <grundler with parisc-linaos.org>
+ *    Copyright (C) 2001 Alan Modra <amodra at parisc-linaos.org>
+ *    Copyright (C) 2001-2002 Ryan Bradetich <rbrad at parisc-linaos.org>
  *    Copyright (C) 2001-2014 Helge Deller <deller@gmx.de>
- *    Copyright (C) 2002 Randolph Chung <tausq with parisc-linux.org>
+ *    Copyright (C) 2002 Randolph Chung <tausq with parisc-linaos.org>
  */
 
 #include <stdarg.h>
 
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/kallsyms.h>
-#include <linux/uaccess.h>
-#include <linux/rcupdate.h>
-#include <linux/random.h>
-#include <linux/nmi.h>
+#include <linaos/elf.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/cpu.h>
+#include <linaos/module.h>
+#include <linaos/personality.h>
+#include <linaos/ptrace.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/slab.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/kallsyms.h>
+#include <linaos/uaccess.h>
+#include <linaos/rcupdate.h>
+#include <linaos/random.h>
+#include <linaos/nmi.h>
 
 #include <asm/io.h>
 #include <asm/asm-offsets.h>

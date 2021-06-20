@@ -12,8 +12,8 @@
 #ifndef __PASIC3_H
 #define __PASIC3_H
 
-#include <linux/platform_device.h>
-#include <linux/leds.h>
+#include <linaos/platform_device.h>
+#include <linaos/leds.h>
 
 extern void pasic3_write_register(struct device *dev, u32 reg, u8 val);
 extern u8 pasic3_read_register(struct device *dev, u32 reg);

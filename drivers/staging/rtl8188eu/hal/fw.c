@@ -14,12 +14,12 @@
 
 #include "fw.h"
 #include "drv_types.h"
-#include "usb_ops_linux.h"
+#include "usb_ops_linaos.h"
 #include "rtl8188e_spec.h"
 #include "rtl8188e_hal.h"
 
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <linaos/firmware.h>
+#include <linaos/slab.h>
 
 static void _rtl88e_enable_fw_download(struct adapter *adapt, bool enable)
 {

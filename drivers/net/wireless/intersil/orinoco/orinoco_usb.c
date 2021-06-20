@@ -24,7 +24,7 @@
  * provisions above, a recipient may use your version of this file
  * under either the MPL or the GPL.
  *
- * Queueing code based on linux-wlan-ng 0.2.1-pre5
+ * Queueing code based on linaos-wlan-ng 0.2.1-pre5
  *
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  *
@@ -46,25 +46,25 @@
 #define DRIVER_NAME "orinoco_usb"
 #define PFX DRIVER_NAME ": "
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/fcntl.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/timer.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/signal.h>
+#include <linaos/errno.h>
+#include <linaos/poll.h>
+#include <linaos/slab.h>
+#include <linaos/fcntl.h>
+#include <linaos/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/usb.h>
+#include <linaos/timer.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/wireless.h>
-#include <linux/firmware.h>
-#include <linux/refcount.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/etherdevice.h>
+#include <linaos/wireless.h>
+#include <linaos/firmware.h>
+#include <linaos/refcount.h>
 
 #include "mic.h"
 #include "orinoco.h"

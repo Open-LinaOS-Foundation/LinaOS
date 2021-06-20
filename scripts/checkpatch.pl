@@ -3423,7 +3423,7 @@ sub process {
 			my $msg_level = \&ERROR;
 			$msg_level = \&CHK if ($file);
 			&{$msg_level}("FSF_MAILING_ADDRESS",
-				      "Do not include the paragraph about writing to the Free Software Foundation's mailing address from the sample GPL notice. The FSF has changed addresses in the past, and may do so again. Linux already includes a copy of the GPL.\n" . $herevet)
+				      "Do not include the paragraph about writing to the Free Software Foundation's mailing address from the sample GPL notice. The FSF has changed addresses in the past, and may do so again. LinaOS already includes a copy of the GPL.\n" . $herevet)
 		}
 
 # check for Kconfig help text having a real description
@@ -5684,11 +5684,11 @@ sub process {
 			}
 		}
 
-# warn if <asm/foo.h> is #included and <linux/foo.h> is available and includes
+# warn if <asm/foo.h> is #included and <linaos/foo.h> is available and includes
 # itself <asm/foo.h> (uses RAW line)
 		if ($tree && $rawline =~ m{^.\s*\#\s*include\s*\<asm\/(.*)\.h\>}) {
 			my $file = "$1.h";
-			my $checkfile = "include/linux/$file";
+			my $checkfile = "include/linaos/$file";
 			if (-f "$root/$checkfile" &&
 			    $realfile ne $checkfile &&
 			    $1 !~ /$allowed_asm_includes/)
@@ -5697,10 +5697,10 @@ sub process {
 				if ($asminclude > 0) {
 					if ($realfile =~ m{^arch/}) {
 						CHK("ARCH_INCLUDE_LINUX",
-						    "Consider using #include <linux/$file> instead of <asm/$file>\n" . $herecurr);
+						    "Consider using #include <linaos/$file> instead of <asm/$file>\n" . $herecurr);
 					} else {
 						WARN("INCLUDE_LINUX",
-						     "Use #include <linux/$file> instead of <asm/$file>\n" . $herecurr);
+						     "Use #include <linaos/$file> instead of <asm/$file>\n" . $herecurr);
 					}
 				}
 			}
@@ -5709,7 +5709,7 @@ sub process {
 # multi-statement macros should be enclosed in a do while loop, grab the
 # first statement and ensure its the whole macro if its not enclosed
 # in a known good container
-		if ($realfile !~ m@/vmlinux.lds.h$@ &&
+		if ($realfile !~ m@/vmlinaos.lds.h$@ &&
 		    $line =~ /^.\s*\#\s*define\s*$Ident(\()?/) {
 			my $ln = $linenr;
 			my $cnt = $realcnt;
@@ -5872,7 +5872,7 @@ sub process {
 # single-statement macros do not need to be enclosed in do while (0) loop,
 # macro should not end with a semicolon
 		if ($perl_version_ok &&
-		    $realfile !~ m@/vmlinux.lds.h$@ &&
+		    $realfile !~ m@/vmlinaos.lds.h$@ &&
 		    $line =~ /^.\s*\#\s*define\s+$Ident(\()?/) {
 			my $ln = $linenr;
 			my $cnt = $realcnt;
@@ -7144,7 +7144,7 @@ sub process {
 # check for __initcall(), use device_initcall() explicitly or more appropriate function please
 		if ($line =~ /^.\s*__initcall\s*\(/) {
 			WARN("USE_DEVICE_INITCALL",
-			     "please use device_initcall() or more appropriate function instead of __initcall() (see include/linux/init.h)\n" . $herecurr);
+			     "please use device_initcall() or more appropriate function instead of __initcall() (see include/linaos/init.h)\n" . $herecurr);
 		}
 
 # check for spin_is_locked(), suggest lockdep instead
@@ -7230,7 +7230,7 @@ sub process {
 		if ($line =~ /^.\s*lockdep_set_novalidate_class\s*\(/ ||
 		    $line =~ /__lockdep_no_validate__\s*\)/ ) {
 			if ($realfile !~ m@^kernel/lockdep@ &&
-			    $realfile !~ m@^include/linux/lockdep@ &&
+			    $realfile !~ m@^include/linaos/lockdep@ &&
 			    $realfile !~ m@^drivers/base/core@) {
 				ERROR("LOCKDEP",
 				      "lockdep_no_validate class is reserved for device->mutex.\n" . $herecurr);
@@ -7351,7 +7351,7 @@ sub process {
 			}
 		}
 
-# validate content of MODULE_LICENSE against list from include/linux/module.h
+# validate content of MODULE_LICENSE against list from include/linaos/module.h
 		if ($line =~ /\bMODULE_LICENSE\s*\(\s*($String)\s*\)/) {
 			my $extracted_string = get_quoted_string($line, $rawline);
 			my $valid_licenses = qr{
@@ -7372,7 +7372,7 @@ sub process {
 # check for sysctl duplicate constants
 		if ($line =~ /\.extra[12]\s*=\s*&(zero|one|int_max)\b/) {
 			WARN("DUPLICATED_SYSCTL_CONST",
-				"duplicated sysctl range checking value '$1', consider using the shared one in include/linux/sysctl.h\n" . $herecurr);
+				"duplicated sysctl range checking value '$1', consider using the shared one in include/linaos/sysctl.h\n" . $herecurr);
 		}
 	}
 

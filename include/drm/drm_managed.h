@@ -3,9 +3,9 @@
 #ifndef _DRM_MANAGED_H_
 #define _DRM_MANAGED_H_
 
-#include <linux/gfp.h>
-#include <linux/overflow.h>
-#include <linux/types.h>
+#include <linaos/gfp.h>
+#include <linaos/overflow.h>
+#include <linaos/types.h>
 
 struct drm_device;
 

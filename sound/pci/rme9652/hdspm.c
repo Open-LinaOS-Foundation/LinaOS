@@ -118,15 +118,15 @@
  * :8421.8421:8421.8421:8421.8421:8421.8421: hex digit
  *
  */
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/math64.h>
-#include <linux/io.h>
-#include <linux/nospec.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/math64.h>
+#include <linaos/io.h>
+#include <linaos/nospec.h>
 
 #include <sound/core.h>
 #include <sound/control.h>
@@ -157,10 +157,10 @@ MODULE_PARM_DESC(enable, "Enable/disable specific HDSPM soundcards.");
 MODULE_AUTHOR
 (
 	"Winfried Ritsch <ritsch_AT_iem.at>, "
-	"Paul Davis <paul@linuxaudiosystems.com>, "
+	"Paul Davis <paul@linaosaudiosystems.com>, "
 	"Marcus Andersson, Thomas Charbonnel <thomas@undata.org>, "
 	"Remy Bruno <remy.bruno@trinnov.com>, "
-	"Florian Faber <faberman@linuxproaudio.org>, "
+	"Florian Faber <faberman@linaosproaudio.org>, "
 	"Adrian Knoth <adi@drcomp.erfurt.thur.de>"
 );
 MODULE_DESCRIPTION("RME HDSPM");

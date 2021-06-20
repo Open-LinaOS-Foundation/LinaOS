@@ -9,10 +9,10 @@
 #include "builtin.h"
 
 #include "util/color.h"
-#include <linux/list.h>
+#include <linaos/list.h>
 #include "util/cache.h"
-#include <linux/rbtree.h>
-#include <linux/zalloc.h>
+#include <linaos/rbtree.h>
+#include <linaos/zalloc.h>
 #include "util/symbol.h"
 
 #include "perf.h"
@@ -39,8 +39,8 @@
 
 #include <dlfcn.h>
 #include <errno.h>
-#include <linux/bitmap.h>
-#include <linux/err.h>
+#include <linaos/bitmap.h>
+#include <linaos/err.h>
 
 struct perf_annotate {
 	struct perf_tool tool;
@@ -500,10 +500,10 @@ int cmd_annotate(int argc, const char **argv)
 	OPT_BOOLEAN(0, "tui", &annotate.use_tui, "Use the TUI interface"),
 	OPT_BOOLEAN(0, "stdio", &annotate.use_stdio, "Use the stdio interface"),
 	OPT_BOOLEAN(0, "stdio2", &annotate.use_stdio2, "Use the stdio interface"),
-	OPT_BOOLEAN(0, "ignore-vmlinux", &symbol_conf.ignore_vmlinux,
-                    "don't load vmlinux even if found"),
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_BOOLEAN(0, "ignore-vmlinaos", &symbol_conf.ignore_vmlinaos,
+                    "don't load vmlinaos even if found"),
+	OPT_STRING('k', "vmlinaos", &symbol_conf.vmlinaos_name,
+		   "file", "vmlinaos pathname"),
 	OPT_BOOLEAN('m', "modules", &symbol_conf.use_modules,
 		    "load module symbols - WARNING: use only with -k and LIVE kernel"),
 	OPT_BOOLEAN('l', "print-line", &annotate.opts.print_lines,
@@ -601,7 +601,7 @@ int cmd_annotate(int argc, const char **argv)
 	if (ret < 0)
 		goto out_delete;
 
-	symbol_conf.try_vmlinux_path = true;
+	symbol_conf.try_vmlinaos_path = true;
 
 	ret = symbol__init(&annotate.session->header.env);
 	if (ret < 0)

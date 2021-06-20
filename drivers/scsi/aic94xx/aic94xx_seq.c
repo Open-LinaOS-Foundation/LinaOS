@@ -8,11 +8,11 @@
  * Parts of this code adapted from David Chaw's adp94xx_seq.c.
  */
 
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
+#include <linaos/delay.h>
+#include <linaos/gfp.h>
+#include <linaos/pci.h>
+#include <linaos/module.h>
+#include <linaos/firmware.h>
 #include "aic94xx_reg.h"
 #include "aic94xx_hwi.h"
 

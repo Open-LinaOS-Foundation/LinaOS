@@ -8,7 +8,7 @@
 /dts-v1/;
 #include "mmp2.dtsi"
 #include <dt-bindings/gpio/gpio.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linaos-event-codes.h>
 #include <dt-bindings/interrupt-controller/irq.h>
 #include <dt-bindings/clock/marvell,mmp2-audio.h>
 
@@ -45,16 +45,16 @@
 		lid {
 			label = "Lid";
 			gpios = <&gpio 129 GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_LID>;
 			wakeup-source;
 		};
 
 		tablet_mode {
 			label = "E-Book Mode";
 			gpios = <&gpio 128 GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_TABLET_MODE>;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_TABLET_MODE>;
 			wakeup-source;
 		};
 	};

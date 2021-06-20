@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
-    hwmon.h - part of lm_sensors, Linux kernel modules for hardware monitoring
+    hwmon.h - part of lm_sensors, LinaOS kernel modules for hardware monitoring
 
     This file declares helper functions for the sysfs class "hwmon",
     for use by sensors drivers.
@@ -12,7 +12,7 @@
 #ifndef _HWMON_H_
 #define _HWMON_H_
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 struct device;
 struct attribute_group;

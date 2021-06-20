@@ -8,9 +8,9 @@
 #ifndef _KERNEL_KCSAN_ENCODING_H
 #define _KERNEL_KCSAN_ENCODING_H
 
-#include <linux/bits.h>
-#include <linux/log2.h>
-#include <linux/mm.h>
+#include <linaos/bits.h>
+#include <linaos/log2.h>
+#include <linaos/mm.h>
 
 #include "kcsan.h"
 

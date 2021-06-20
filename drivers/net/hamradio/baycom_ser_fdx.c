@@ -56,18 +56,18 @@
 
 /*****************************************************************************/
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/hdlcdrv.h>
-#include <linux/baycom.h>
-#include <linux/jiffies.h>
-#include <linux/time64.h>
+#include <linaos/capability.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/hdlcdrv.h>
+#include <linaos/baycom.h>
+#include <linaos/jiffies.h>
+#include <linaos/time64.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 

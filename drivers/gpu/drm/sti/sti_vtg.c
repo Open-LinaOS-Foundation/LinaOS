@@ -7,11 +7,11 @@
  *          for STMicroelectronics.
  */
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/notifier.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/notifier.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
 
 #include <drm/drm_modes.h>
 #include <drm/drm_print.h>

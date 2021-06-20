@@ -8,17 +8,17 @@
  * Author: Auryn Verwegen
  * Author: Mike Looijmans
  */
-#include <linux/devm-helpers.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/swab.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
+#include <linaos/devm-helpers.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/swab.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/power_supply.h>
+#include <linaos/slab.h>
 
 #define I16_MSB(x)			((x >> 8) & 0xFF)
 #define I16_LSB(x)			(x & 0xFF)

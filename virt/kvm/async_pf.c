@@ -8,11 +8,11 @@
  *      Gleb Natapov <gleb@redhat.com>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mmu_context.h>
-#include <linux/sched/mm.h>
+#include <linaos/kvm_host.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/mmu_context.h>
+#include <linaos/sched/mm.h>
 
 #include "async_pf.h"
 #include <trace/events/kvm.h>

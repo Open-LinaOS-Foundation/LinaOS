@@ -4,8 +4,8 @@
 #include "error.h"
 #include "../string.h"
 
-#include <linux/numa.h>
-#include <linux/efi.h>
+#include <linaos/numa.h>
+#include <linaos/efi.h>
 #include <asm/efi.h>
 
 /*

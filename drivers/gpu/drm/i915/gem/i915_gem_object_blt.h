@@ -6,7 +6,7 @@
 #ifndef __I915_GEM_OBJECT_BLT_H__
 #define __I915_GEM_OBJECT_BLT_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "gt/intel_context.h"
 #include "gt/intel_engine_pm.h"

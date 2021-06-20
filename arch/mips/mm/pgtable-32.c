@@ -5,10 +5,10 @@
  *
  * Copyright (C) 2003 by Ralf Baechle
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/highmem.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
+#include <linaos/highmem.h>
 #include <asm/fixmap.h>
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>

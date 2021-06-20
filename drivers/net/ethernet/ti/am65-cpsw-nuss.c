@@ -5,28 +5,28 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kmemleak.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_device.h>
-#include <linux/phy.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/sys_soc.h>
-#include <linux/dma/ti-cppi5.h>
-#include <linux/dma/k3-udma-glue.h>
+#include <linaos/clk.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/kmemleak.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/of.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/of_device.h>
+#include <linaos/phy.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/sys_soc.h>
+#include <linaos/dma/ti-cppi5.h>
+#include <linaos/dma/k3-udma-glue.h>
 
 #include "cpsw_ale.h"
 #include "cpsw_sl.h"

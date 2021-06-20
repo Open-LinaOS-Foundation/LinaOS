@@ -1,6 +1,6 @@
 /*
  * TX4939 irq routines
- * Based on linux/arch/mips/kernel/irq_txx9.c,
+ * Based on linaos/arch/mips/kernel/irq_txx9.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * Copyright 2001, 2003-2005 MontaVista Software Inc.
@@ -17,10 +17,10 @@
  * TX4939 defines 64 IRQs.
  * Similer to irq_txx9.c but different register layouts.
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/types.h>
 #include <asm/irq_cpu.h>
 #include <asm/txx9irq.h>
 #include <asm/txx9/tx4939.h>

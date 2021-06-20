@@ -4,15 +4,15 @@
  *
  * Copyright (c) 2008 by David Brownell
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/input/sparse-keymap.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
 
-#include <linux/mfd/dm355evm_msp.h>
-#include <linux/module.h>
+#include <linaos/mfd/dm355evm_msp.h>
+#include <linaos/module.h>
 
 
 /*
@@ -91,7 +91,7 @@ static const struct key_entry dm355evm_keys[] = {
 
 /*
  * Because we communicate with the MSP430 using I2C, and all I2C calls
- * in Linux sleep, we use a threaded IRQ handler.  The IRQ itself is
+ * in LinaOS sleep, we use a threaded IRQ handler.  The IRQ itself is
  * active low, but we go through the GPIO controller so we can trigger
  * on falling edges and not worry about enabling/disabling the IRQ in
  * the keypress handling path.

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  * Licensed under the GPL
  */
 #ifndef __UM_ELF_X86_H
@@ -182,8 +182,8 @@ do {								\
 #define FIXADDR_USER_END        0
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES 1
-struct linux_binprm;
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+struct linaos_binprm;
+extern int arch_setup_additional_pages(struct linaos_binprm *bprm,
 	int uses_interp);
 
 extern unsigned long um_vdso_addr;

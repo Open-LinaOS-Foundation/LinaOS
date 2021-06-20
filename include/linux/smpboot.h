@@ -2,7 +2,7 @@
 #ifndef _LINUX_SMPBOOT_H
 #define _LINUX_SMPBOOT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct task_struct;
 /* Cookie handed to the thread_fn*/

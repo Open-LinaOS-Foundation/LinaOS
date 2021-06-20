@@ -6,18 +6,18 @@
  *
  * Author: Miguel Aguilar <miguel.aguilar@ridgerun.com>
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/mfd/davinci_voicecodec.h>
-#include <linux/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/platform_device.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/mfd/davinci_voicecodec.h>
+#include <linaos/spi/spi.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

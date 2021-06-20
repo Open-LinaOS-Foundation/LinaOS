@@ -4,8 +4,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/log2.h>
+#include <linaos/compiler.h>
+#include <linaos/log2.h>
 
 /**
  * get_order - Determine the allocation order of a memory size

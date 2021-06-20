@@ -5,7 +5,7 @@
 // Author: Mark Brown <broonie@linaro.org>
 // Copyright 2013 Linaro
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

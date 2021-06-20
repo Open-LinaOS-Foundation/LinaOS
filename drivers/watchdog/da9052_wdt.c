@@ -8,18 +8,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/time.h>
-#include <linux/watchdog.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
+#include <linaos/platform_device.h>
+#include <linaos/time.h>
+#include <linaos/watchdog.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/jiffies.h>
 
-#include <linux/mfd/da9052/reg.h>
-#include <linux/mfd/da9052/da9052.h>
+#include <linaos/mfd/da9052/reg.h>
+#include <linaos/mfd/da9052/da9052.h>
 
 #define DA9052_DEF_TIMEOUT	4
 #define DA9052_TWDMIN		256

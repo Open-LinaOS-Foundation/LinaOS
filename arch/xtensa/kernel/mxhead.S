@@ -13,7 +13,7 @@
  * Pete Delaney <piet@tensilica.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/cacheasm.h>
 #include <asm/initialize_mmu.h>

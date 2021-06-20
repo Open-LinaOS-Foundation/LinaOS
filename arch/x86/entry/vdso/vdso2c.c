@@ -63,9 +63,9 @@
 
 #include <tools/le_byteshift.h>
 
-#include <linux/elf.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linaos/elf.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
 
 const char *outfilename;
 

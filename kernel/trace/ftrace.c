@@ -14,27 +14,27 @@
  *  Copyright (C) 2004 Nadia Yvette Chambers
  */
 
-#include <linux/stop_machine.h>
-#include <linux/clocksource.h>
-#include <linux/sched/task.h>
-#include <linux/kallsyms.h>
-#include <linux/security.h>
-#include <linux/seq_file.h>
-#include <linux/tracefs.h>
-#include <linux/hardirq.h>
-#include <linux/kthread.h>
-#include <linux/uaccess.h>
-#include <linux/bsearch.h>
-#include <linux/module.h>
-#include <linux/ftrace.h>
-#include <linux/sysctl.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/sort.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/rcupdate.h>
-#include <linux/kprobes.h>
+#include <linaos/stop_machine.h>
+#include <linaos/clocksource.h>
+#include <linaos/sched/task.h>
+#include <linaos/kallsyms.h>
+#include <linaos/security.h>
+#include <linaos/seq_file.h>
+#include <linaos/tracefs.h>
+#include <linaos/hardirq.h>
+#include <linaos/kthread.h>
+#include <linaos/uaccess.h>
+#include <linaos/bsearch.h>
+#include <linaos/module.h>
+#include <linaos/ftrace.h>
+#include <linaos/sysctl.h>
+#include <linaos/slab.h>
+#include <linaos/ctype.h>
+#include <linaos/sort.h>
+#include <linaos/list.h>
+#include <linaos/hash.h>
+#include <linaos/rcupdate.h>
+#include <linaos/kprobes.h>
 
 #include <trace/events/sched.h>
 

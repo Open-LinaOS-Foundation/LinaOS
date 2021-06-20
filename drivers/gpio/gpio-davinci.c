@@ -6,22 +6,22 @@
  * Copyright (c) 2007, MontaVista Software, Inc. <source@mvista.com>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/gpio-davinci.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/spinlock.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/gpio-davinci.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/spinlock.h>
 
 #include <asm-generic/gpio.h>
 

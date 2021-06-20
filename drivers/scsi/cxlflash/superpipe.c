@@ -2,17 +2,17 @@
 /*
  * CXL Flash Device Driver
  *
- * Written by: Manoj N. Kumar <manoj@linux.vnet.ibm.com>, IBM Corporation
- *             Matthew R. Ochs <mrochs@linux.vnet.ibm.com>, IBM Corporation
+ * Written by: Manoj N. Kumar <manoj@linaos.vnet.ibm.com>, IBM Corporation
+ *             Matthew R. Ochs <mrochs@linaos.vnet.ibm.com>, IBM Corporation
  *
  * Copyright (C) 2015 IBM Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/file.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/syscalls.h>
+#include <linaos/delay.h>
+#include <linaos/file.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/syscalls.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi.h>
@@ -144,7 +144,7 @@ static struct ctx_info *find_error_context(struct cxlflash_cfg *cfg, u64 rctxid,
  * @arg:	LUN information or file associated with request.
  * @ctx_ctrl:	Control information to 'steer' desired lookup.
  *
- * NOTE: despite the name pid, in linux, current->pid actually refers
+ * NOTE: despite the name pid, in linaos, current->pid actually refers
  * to the lightweight process id (tid) and can change if the process is
  * multi threaded. The tgid remains constant for the process and only changes
  * when the process of fork. For all intents and purposes, think of tgid

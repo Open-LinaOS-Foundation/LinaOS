@@ -11,9 +11,9 @@
 #ifndef _NILFS_ALLOC_H
 #define _NILFS_ALLOC_H
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
+#include <linaos/types.h>
+#include <linaos/buffer_head.h>
+#include <linaos/fs.h>
 
 /**
  * nilfs_palloc_entries_per_group - get the number of entries per group

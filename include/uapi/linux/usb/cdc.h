@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * USB Communications Device Class (CDC) definitions
  *
@@ -10,7 +10,7 @@
 #ifndef __UAPI_LINUX_USB_CDC_H
 #define __UAPI_LINUX_USB_CDC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define USB_CDC_SUBCLASS_ACM			0x02
 #define USB_CDC_SUBCLASS_ETHERNET		0x06

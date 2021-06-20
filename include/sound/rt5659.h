@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/rt5659.h -- Platform data for RT5659
+ * linaos/sound/rt5659.h -- Platform data for RT5659
  *
  * Copyright 2013 Realtek Microelectronics
  */

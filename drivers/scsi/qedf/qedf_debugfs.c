@@ -5,9 +5,9 @@
  */
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/debugfs.h>
+#include <linaos/module.h>
 
 #include "qedf.h"
 #include "qedf_dbg.h"

@@ -3,15 +3,15 @@
  * printk_safe.c - Safe printk for printk-deadlock-prone contexts
  */
 
-#include <linux/preempt.h>
-#include <linux/spinlock.h>
-#include <linux/debug_locks.h>
-#include <linux/kdb.h>
-#include <linux/smp.h>
-#include <linux/cpumask.h>
-#include <linux/irq_work.h>
-#include <linux/printk.h>
-#include <linux/kprobes.h>
+#include <linaos/preempt.h>
+#include <linaos/spinlock.h>
+#include <linaos/debug_locks.h>
+#include <linaos/kdb.h>
+#include <linaos/smp.h>
+#include <linaos/cpumask.h>
+#include <linaos/irq_work.h>
+#include <linaos/printk.h>
+#include <linaos/kprobes.h>
 
 #include "internal.h"
 

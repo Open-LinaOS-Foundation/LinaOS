@@ -3,7 +3,7 @@
  * comedi/drivers/8255.c
  * Driver for 8255
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
@@ -39,7 +39,7 @@
  * I/O port base address can be found in the output of 'lspci -v'.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "../comedidev.h"
 
 #include "8255.h"

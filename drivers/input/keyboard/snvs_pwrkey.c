@@ -3,21 +3,21 @@
 // Driver for the IMX SNVS ON/OFF Power Key
 // Copyright (C) 2015 Freescale Semiconductor, Inc. All Rights Reserved.
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_wakeirq.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 
 #define SNVS_HPVIDR1_REG	0xF8
 #define SNVS_LPSR_REG		0x4C	/* LP Status Register */
@@ -129,7 +129,7 @@ static int imx_snvs_pwrkey_probe(struct platform_device *pdev)
 		return PTR_ERR(pdata->snvs);
 	}
 
-	if (of_property_read_u32(np, "linux,keycode", &pdata->keycode)) {
+	if (of_property_read_u32(np, "linaos,keycode", &pdata->keycode)) {
 		pdata->keycode = KEY_POWER;
 		dev_warn(&pdev->dev, "KEY_POWER without setting in dts\n");
 	}

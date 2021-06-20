@@ -7,14 +7,14 @@
  * This driver was based on: drivers/watchdog/rt2880_wdt.c
  */
 
-#include <linux/clk.h>
-#include <linux/reset.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/watchdog.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/clk.h>
+#include <linaos/reset.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/watchdog.h>
+#include <linaos/moduleparam.h>
+#include <linaos/platform_device.h>
+#include <linaos/mod_devicetable.h>
 
 #include <asm/mach-ralink/ralink_regs.h>
 

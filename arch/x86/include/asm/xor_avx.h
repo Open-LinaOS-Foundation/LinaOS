@@ -6,12 +6,12 @@
  * Optimized RAID-5 checksumming functions for AVX
  *
  * Copyright (C) 2012 Intel Corporation
- * Author: Jim Kukunas <james.t.kukunas@linux.intel.com>
+ * Author: Jim Kukunas <james.t.kukunas@linaos.intel.com>
  *
  * Based on Ingo Molnar and Zach Brown's respective MMX and SSE routines
  */
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/fpu/api.h>
 
 #define BLOCK4(i) \

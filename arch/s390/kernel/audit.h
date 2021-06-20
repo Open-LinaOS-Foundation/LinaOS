@@ -2,7 +2,7 @@
 #ifndef __ARCH_S390_KERNEL_AUDIT_H
 #define __ARCH_S390_KERNEL_AUDIT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifdef CONFIG_COMPAT
 extern int s390_classify_syscall(unsigned);

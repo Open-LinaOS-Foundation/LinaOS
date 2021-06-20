@@ -10,7 +10,7 @@
 #ifndef __LINUX_MTD_NAND_H
 #define __LINUX_MTD_NAND_H
 
-#include <linux/mtd/mtd.h>
+#include <linaos/mtd/mtd.h>
 
 struct nand_device;
 

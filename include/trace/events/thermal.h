@@ -5,9 +5,9 @@
 #if !defined(_TRACE_THERMAL_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_THERMAL_H
 
-#include <linux/devfreq.h>
-#include <linux/thermal.h>
-#include <linux/tracepoint.h>
+#include <linaos/devfreq.h>
+#include <linaos/thermal.h>
+#include <linaos/tracepoint.h>
 
 TRACE_DEFINE_ENUM(THERMAL_TRIP_CRITICAL);
 TRACE_DEFINE_ENUM(THERMAL_TRIP_HOT);

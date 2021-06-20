@@ -37,7 +37,7 @@ Supported chips:
 
     Datasheet: https://datasheets.maximintegrated.com/en/ds/MAX20743.pdf
 
-Author: Guenter Roeck <linux@roeck-us.net>
+Author: Guenter Roeck <linaos@roeck-us.net>
 
 
 Description

@@ -3,7 +3,7 @@
 #define __NET_TC_PED_H
 
 #include <net/act_api.h>
-#include <linux/tc_act/tc_pedit.h>
+#include <linaos/tc_act/tc_pedit.h>
 
 struct tcf_pedit_key_ex {
 	enum pedit_header_type htype;

@@ -17,31 +17,31 @@
  *
 =============================================================================*/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/ptrace.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/skbuff.h>
-#include <linux/ieee80211.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/proc_fs.h>
+#include <linaos/ptrace.h>
+#include <linaos/seq_file.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/ioport.h>
+#include <linaos/skbuff.h>
+#include <linaos/ieee80211.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>
 #include <pcmcia/ds.h>
 
-#include <linux/wireless.h>
+#include <linaos/wireless.h>
 #include <net/iw_handler.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /* Warning : these stuff will slow down the driver... */
 #define WIRELESS_SPY		/* Enable spying addresses */
@@ -790,7 +790,7 @@ static int ray_dev_init(struct net_device *dev)
 	      local->card_status);
 #endif /* RAY_IMMEDIATE_INIT */
 
-	/* copy mac and broadcast addresses to linux device */
+	/* copy mac and broadcast addresses to linaos device */
 	memcpy(dev->dev_addr, &local->sparm.b4.a_mac_addr, ADDRLEN);
 	eth_broadcast_addr(dev->broadcast);
 

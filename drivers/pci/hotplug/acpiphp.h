@@ -21,9 +21,9 @@
 #ifndef _ACPIPHP_H
 #define _ACPIPHP_H
 
-#include <linux/acpi.h>
-#include <linux/mutex.h>
-#include <linux/pci_hotplug.h>
+#include <linaos/acpi.h>
+#include <linaos/mutex.h>
+#include <linaos/pci_hotplug.h>
 
 struct acpiphp_context;
 struct acpiphp_bridge;

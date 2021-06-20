@@ -6,7 +6,7 @@
 #ifndef __LINUX_BLK_CRYPTO_H
 #define __LINUX_BLK_CRYPTO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum blk_crypto_mode_num {
 	BLK_ENCRYPTION_MODE_INVALID,
@@ -68,8 +68,8 @@ struct bio_crypt_ctx {
 	u64				bc_dun[BLK_CRYPTO_DUN_ARRAY_SIZE];
 };
 
-#include <linux/blk_types.h>
-#include <linux/blkdev.h>
+#include <linaos/blk_types.h>
+#include <linaos/blkdev.h>
 
 struct request;
 struct request_queue;

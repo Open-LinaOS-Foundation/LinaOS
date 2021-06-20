@@ -23,8 +23,8 @@
  *          Alon Levy
  */
 
-#include <linux/dma-buf-map.h>
-#include <linux/io-mapping.h>
+#include <linaos/dma-buf-map.h>
+#include <linaos/io-mapping.h>
 
 #include "qxl_drv.h"
 #include "qxl_object.h"

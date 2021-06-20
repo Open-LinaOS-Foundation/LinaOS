@@ -7,21 +7,21 @@
  * Author Kurt Kanzenbach <kurt@linutronix.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/etherdevice.h>
-#include <linux/random.h>
-#include <linux/iopoll.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_mdio.h>
+#include <linaos/platform_device.h>
+#include <linaos/bitops.h>
+#include <linaos/if_bridge.h>
+#include <linaos/if_vlan.h>
+#include <linaos/etherdevice.h>
+#include <linaos/random.h>
+#include <linaos/iopoll.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
 #include <net/dsa.h>
 
 #include "hellcreek.h"

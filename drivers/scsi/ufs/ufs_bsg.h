@@ -5,7 +5,7 @@
 #ifndef UFS_BSG_H
 #define UFS_BSG_H
 
-#include <linux/bsg-lib.h>
+#include <linaos/bsg-lib.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 

@@ -4,17 +4,17 @@
  * (C) 2012 by Vyatta Inc. <http://www.vyatta.com>
  */
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/stddef.h>
-#include <linux/err.h>
-#include <linux/percpu.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/types.h>
+#include <linaos/netfilter.h>
+#include <linaos/skbuff.h>
+#include <linaos/vmalloc.h>
+#include <linaos/stddef.h>
+#include <linaos/err.h>
+#include <linaos/percpu.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>

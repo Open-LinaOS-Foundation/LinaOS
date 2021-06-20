@@ -2,17 +2,17 @@
 /*
  * Copyright (C) 2017 Linaro Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/qrtr.h>
-#include <linux/net.h>
-#include <linux/completion.h>
-#include <linux/idr.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/qrtr.h>
+#include <linaos/net.h>
+#include <linaos/completion.h>
+#include <linaos/idr.h>
+#include <linaos/string.h>
 #include <net/sock.h>
-#include <linux/workqueue.h>
-#include <linux/soc/qcom/qmi.h>
+#include <linaos/workqueue.h>
+#include <linaos/soc/qcom/qmi.h>
 
 static struct socket *qmi_sock_create(struct qmi_handle *qmi,
 				      struct sockaddr_qrtr *sq);

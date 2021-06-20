@@ -8,12 +8,12 @@
  */
 
 #include <sound/asound.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/wait.h>
+#include <linaos/mutex.h>
+#include <linaos/workqueue.h>
+#include <linaos/device.h>
 
 #if IS_ENABLED(CONFIG_SND_SEQUENCER)
 #include <sound/seq_device.h>

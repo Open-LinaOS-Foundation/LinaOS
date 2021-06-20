@@ -5,12 +5,12 @@
 //
 // S3C24XX Base setup for i2c device
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/gpio.h>
 
 struct platform_device;
 
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 
 #include "gpio-cfg.h"
 #include "regs-gpio.h"

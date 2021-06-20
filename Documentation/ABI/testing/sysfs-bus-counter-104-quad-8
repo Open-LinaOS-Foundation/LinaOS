@@ -1,6 +1,6 @@
 What:		/sys/bus/counter/devices/counterX/signalY/cable_fault
 KernelVersion:	5.7
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Read-only attribute that indicates whether a differential
 		encoder cable fault (not connected or loose wires) is detected
@@ -10,7 +10,7 @@ Description:
 
 What:		/sys/bus/counter/devices/counterX/signalY/cable_fault_enable
 KernelVersion:	5.7
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Whether detection of differential encoder cable faults for the
 		respective channel of Signal Y is enabled. Valid attribute
@@ -18,14 +18,14 @@ Description:
 
 What:		/sys/bus/counter/devices/counterX/signalY/filter_clock_prescaler
 KernelVersion:	5.7
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Filter clock factor for input Signal Y. This prescaler value
 		affects the inputs of both quadrature pair signals.
 
 What:		/sys/bus/counter/devices/counterX/signalY/index_polarity
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Active level of index input Signal Y; irrelevant in
 		non-synchronous load mode.
@@ -33,14 +33,14 @@ Description:
 What:		/sys/bus/counter/devices/counterX/signalY/index_polarity_available
 What:		/sys/bus/counter/devices/counterX/signalY/synchronous_mode_available
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Discrete set of available values for the respective Signal Y
 		configuration are listed in this file.
 
 What:		/sys/bus/counter/devices/counterX/signalY/synchronous_mode
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Configure the counter associated with Signal Y for
 		non-synchronous or synchronous load mode. Synchronous load mode

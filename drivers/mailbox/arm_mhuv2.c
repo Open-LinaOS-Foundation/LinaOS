@@ -25,13 +25,13 @@
  * for each mailbox controller, a sender device and a receiver device.
  */
 
-#include <linux/amba/bus.h>
-#include <linux/interrupt.h>
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox/arm_mhuv2_message.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/spinlock.h>
+#include <linaos/amba/bus.h>
+#include <linaos/interrupt.h>
+#include <linaos/mailbox_controller.h>
+#include <linaos/mailbox/arm_mhuv2_message.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/spinlock.h>
 
 /* ====== MHUv2 Registers ====== */
 

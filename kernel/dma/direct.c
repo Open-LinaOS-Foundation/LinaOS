@@ -4,15 +4,15 @@
  *
  * DMA operations that map physical memory directly without using an IOMMU.
  */
-#include <linux/memblock.h> /* for max_pfn */
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/dma-map-ops.h>
-#include <linux/scatterlist.h>
-#include <linux/pfn.h>
-#include <linux/vmalloc.h>
-#include <linux/set_memory.h>
-#include <linux/slab.h>
+#include <linaos/memblock.h> /* for max_pfn */
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/scatterlist.h>
+#include <linaos/pfn.h>
+#include <linaos/vmalloc.h>
+#include <linaos/set_memory.h>
+#include <linaos/slab.h>
 #include "direct.h"
 
 /*

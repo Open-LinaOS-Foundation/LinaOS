@@ -10,13 +10,13 @@
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/fs.h>
-#include <linux/firmware.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
-#include <linux/math64.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/fs.h>
+#include <linaos/firmware.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_qos.h>
+#include <linaos/math64.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

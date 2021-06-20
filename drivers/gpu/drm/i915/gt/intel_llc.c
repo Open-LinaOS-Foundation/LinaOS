@@ -3,7 +3,7 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/cpufreq.h>
+#include <linaos/cpufreq.h>
 
 #include "i915_drv.h"
 #include "intel_gt.h"

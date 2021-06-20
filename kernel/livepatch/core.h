@@ -2,7 +2,7 @@
 #ifndef _LIVEPATCH_CORE_H
 #define _LIVEPATCH_CORE_H
 
-#include <linux/livepatch.h>
+#include <linaos/livepatch.h>
 
 extern struct mutex klp_mutex;
 extern struct list_head klp_patches;

@@ -7,7 +7,7 @@
 /*
  * User space memory access functions
  */
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include <asm/errno.h>
 #include <asm/memory.h>
 #include <asm/types.h>

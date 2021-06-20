@@ -2,8 +2,8 @@
 #ifndef _LINUX_PAGE_COUNTER_H
 #define _LINUX_PAGE_COUNTER_H
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
+#include <linaos/atomic.h>
+#include <linaos/kernel.h>
 #include <asm/page.h>
 
 struct page_counter {

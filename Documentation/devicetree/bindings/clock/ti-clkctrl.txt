@@ -12,7 +12,7 @@ the hardware offset from the clkctrl instance register space. The optional
 clocks can be specified by clkctrl hardware offset and the index of the
 optional clock.
 
-For more information, please see the Linux clock framework binding at
+For more information, please see the LinaOS clock framework binding at
 Documentation/devicetree/bindings/clock/clock-bindings.txt.
 
 Required properties :

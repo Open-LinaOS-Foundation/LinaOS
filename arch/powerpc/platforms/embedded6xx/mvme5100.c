@@ -12,7 +12,7 @@
  * Author: Stephen Chivers <schivers@csc.com>
  */
 
-#include <linux/of_platform.h>
+#include <linaos/of_platform.h>
 
 #include <asm/i8259.h>
 #include <asm/pci-bridge.h>

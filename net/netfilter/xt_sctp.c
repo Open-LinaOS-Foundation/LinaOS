@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/sctp/sctp.h>
-#include <linux/sctp.h>
+#include <linaos/sctp.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_sctp.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter/xt_sctp.h>
+#include <linaos/netfilter_ipv4/ip_tables.h>
+#include <linaos/netfilter_ipv6/ip6_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Kiran Kumar Immidi");

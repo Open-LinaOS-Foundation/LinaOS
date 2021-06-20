@@ -13,26 +13,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/debugfs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/mii.h>
-#include <linux/slab.h>
-#include <linux/dmi.h>
-#include <linux/prefetch.h>
+#include <linaos/in.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/pci.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ip.h>
+#include <linaos/delay.h>
+#include <linaos/crc32.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/debugfs.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/mii.h>
+#include <linaos/slab.h>
+#include <linaos/dmi.h>
+#include <linaos/prefetch.h>
 #include <asm/irq.h>
 
 #include "skge.h"
@@ -58,7 +58,7 @@
 
 
 MODULE_DESCRIPTION("SysKonnect Gigabit Ethernet driver");
-MODULE_AUTHOR("Stephen Hemminger <shemminger@linux-foundation.org>");
+MODULE_AUTHOR("Stephen Hemminger <shemminger@linaos-foundation.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(DRV_VERSION);
 

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright(c) 2019-2020 Intel Corporation.
 
-#include <linux/device.h>
-#include <linux/acpi.h>
-#include <linux/pm_runtime.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
+#include <linaos/device.h>
+#include <linaos/acpi.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/soundwire/sdw.h>
+#include <linaos/soundwire/sdw_type.h>
 #include "bus.h"
 
 /*
@@ -119,7 +119,7 @@ struct device_type sdw_master_type = {
 };
 
 /**
- * sdw_master_device_add() - create a Linux Master Device representation.
+ * sdw_master_device_add() - create a LinaOS Master Device representation.
  * @bus: SDW bus instance
  * @parent: parent device
  * @fwnode: firmware node handle
@@ -174,7 +174,7 @@ device_register_err:
 }
 
 /**
- * sdw_master_device_del() - delete a Linux Master Device representation.
+ * sdw_master_device_del() - delete a LinaOS Master Device representation.
  * @bus: bus handle
  *
  * This function is the dual of sdw_master_device_add()

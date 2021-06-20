@@ -4,7 +4,7 @@
  * Copyright 2020 Google LLC.
  */
 
-#include "vmlinux.h"
+#include "vmlinaos.h"
 #include <errno.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
@@ -19,7 +19,7 @@ struct {
 char _license[] SEC("license") = "GPL";
 
 SEC("lsm.s/bprm_committed_creds")
-void BPF_PROG(ima, struct linux_binprm *bprm)
+void BPF_PROG(ima, struct linaos_binprm *bprm)
 {
 	u64 ima_hash = 0;
 	u64 *sample;

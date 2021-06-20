@@ -6,7 +6,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static struct rc_map_table msi_digivox_ii[] = {
 	{ 0x0302, KEY_NUMERIC_2 },

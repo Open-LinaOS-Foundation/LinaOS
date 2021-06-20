@@ -26,9 +26,9 @@
 #include <asm/byteorder.h>
 #include <net/ip.h>
 #include <asm/checksum.h>
-#include <linux/in6.h>
-#include <linux/tcp.h>
-#include <linux/ipv6.h>
+#include <linaos/in6.h>
+#include <linaos/tcp.h>
+#include <linaos/ipv6.h>
 
 #ifndef _HAVE_ARCH_IPV6_CSUM
 __sum16 csum_ipv6_magic(const struct in6_addr *saddr,

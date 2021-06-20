@@ -11,29 +11,29 @@
  */
 
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <net/sock.h>
 
-#include <linux/drbd.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
-#include <linux/slab.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/sched/signal.h>
-#include <linux/pkt_sched.h>
+#include <linaos/drbd.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/in.h>
+#include <linaos/mm.h>
+#include <linaos/memcontrol.h>
+#include <linaos/mm_inline.h>
+#include <linaos/slab.h>
+#include <uapi/linaos/sched/types.h>
+#include <linaos/sched/signal.h>
+#include <linaos/pkt_sched.h>
 #define __KERNEL_SYSCALLS__
-#include <linux/unistd.h>
-#include <linux/vmalloc.h>
-#include <linux/random.h>
-#include <linux/string.h>
-#include <linux/scatterlist.h>
-#include <linux/part_stat.h>
+#include <linaos/unistd.h>
+#include <linaos/vmalloc.h>
+#include <linaos/random.h>
+#include <linaos/string.h>
+#include <linaos/scatterlist.h>
+#include <linaos/part_stat.h>
 #include "drbd_int.h"
 #include "drbd_protocol.h"
 #include "drbd_req.h"
@@ -635,7 +635,7 @@ static struct socket *drbd_try_connect(struct drbd_connection *connection)
 	*  for the outgoing connections.
 	*  This is needed for multihomed hosts and to be
 	*  able to use lo: interfaces for drbd.
-	* Make sure to use 0 as port number, so linux selects
+	* Make sure to use 0 as port number, so linaos selects
 	*  a free one dynamically.
 	*/
 	what = "bind before connect";

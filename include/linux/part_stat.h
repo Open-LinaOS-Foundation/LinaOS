@@ -2,7 +2,7 @@
 #ifndef _LINUX_PART_STAT_H
 #define _LINUX_PART_STAT_H
 
-#include <linux/genhd.h>
+#include <linaos/genhd.h>
 
 struct disk_stats {
 	u64 nsecs[NR_STAT_GROUPS];

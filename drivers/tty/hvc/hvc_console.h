@@ -13,9 +13,9 @@
 
 #ifndef HVC_CONSOLE_H
 #define HVC_CONSOLE_H
-#include <linux/kref.h>
-#include <linux/tty.h>
-#include <linux/spinlock.h>
+#include <linaos/kref.h>
+#include <linaos/tty.h>
+#include <linaos/spinlock.h>
 
 /*
  * This is the max number of console adapters that can/will be found as
@@ -25,7 +25,7 @@
 #define MAX_NR_HVC_CONSOLES	16
 
 /*
- * The Linux TTY code does not support dynamic addition of tty derived devices
+ * The LinaOS TTY code does not support dynamic addition of tty derived devices
  * so we need to know how many tty devices we might need when space is allocated
  * for the tty device.  Since this driver supports hotplug of vty adapters we
  * need to make sure we have enough allocated.

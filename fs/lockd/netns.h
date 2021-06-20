@@ -2,7 +2,7 @@
 #ifndef __LOCKD_NETNS_H__
 #define __LOCKD_NETNS_H__
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 #include <net/netns/generic.h>
 
 struct lockd_net {

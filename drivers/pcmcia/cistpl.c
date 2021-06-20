@@ -9,19 +9,19 @@
  * (C) 1999		David A. Hinds
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/security.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/major.h>
+#include <linaos/errno.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/pci.h>
+#include <linaos/ioport.h>
+#include <linaos/io.h>
+#include <linaos/security.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 

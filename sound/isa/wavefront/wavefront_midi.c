@@ -44,10 +44,10 @@
  *  
  */
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/wait.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/time.h>
+#include <linaos/wait.h>
 #include <sound/core.h>
 #include <sound/snd_wavefront.h>
 

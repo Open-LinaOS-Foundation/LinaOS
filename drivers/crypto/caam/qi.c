@@ -7,8 +7,8 @@
  * Copyright 2016-2017, 2019-2020 NXP
  */
 
-#include <linux/cpumask.h>
-#include <linux/kthread.h>
+#include <linaos/cpumask.h>
+#include <linaos/kthread.h>
 #include <soc/fsl/qman.h>
 
 #include "debugfs.h"
@@ -769,6 +769,6 @@ int caam_qi_init(struct platform_device *caam_pdev)
 	if (err)
 		return err;
 
-	dev_info(qidev, "Linux CAAM Queue I/F driver initialised\n");
+	dev_info(qidev, "LinaOS CAAM Queue I/F driver initialised\n");
 	return 0;
 }

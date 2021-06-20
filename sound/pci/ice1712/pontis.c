@@ -7,11 +7,11 @@
  *	Copyright (c) 2004 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
 
 #include <sound/core.h>
 #include <sound/info.h>

@@ -3,7 +3,7 @@
 #ifndef _AB8500_CHARGER_H_
 #define _AB8500_CHARGER_H_
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /*
  * System control 2 register offsets.

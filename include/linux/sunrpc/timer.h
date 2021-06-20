@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/sunrpc/timer.h
+ *  linaos/include/linaos/sunrpc/timer.h
  *
  *  Declarations for the RPC transport timer.
  *
@@ -10,7 +10,7 @@
 #ifndef _LINUX_SUNRPC_TIMER_H
 #define _LINUX_SUNRPC_TIMER_H
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 struct rpc_rtt {
 	unsigned long timeo;	/* default timeout value */

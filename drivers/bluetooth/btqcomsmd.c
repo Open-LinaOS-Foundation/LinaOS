@@ -4,13 +4,13 @@
  * Copyright (c) 2015, Sony Mobile Communications Inc.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/rpmsg.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/rpmsg.h>
+#include <linaos/of.h>
 
-#include <linux/soc/qcom/wcnss_ctrl.h>
-#include <linux/platform_device.h>
+#include <linaos/soc/qcom/wcnss_ctrl.h>
+#include <linaos/platform_device.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

@@ -6,13 +6,13 @@
  * Author:
  *   Roger Tseng <rogerable@realtek.com>
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/usb.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/rtsx_usb.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/usb.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/core.h>
+#include <linaos/rtsx_usb.h>
 
 static int polling_pipe = 1;
 module_param(polling_pipe, int, S_IRUGO | S_IWUSR);

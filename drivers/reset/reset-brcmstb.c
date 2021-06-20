@@ -5,14 +5,14 @@
  * Author: Florian Fainelli <f.fainelli@gmail.com>
  * Copyright (C) 2018 Broadcom
  */
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/types.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset-controller.h>
+#include <linaos/types.h>
 
 struct brcmstb_reset {
 	void __iomem *base;

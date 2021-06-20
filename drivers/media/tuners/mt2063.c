@@ -7,15 +7,15 @@
  * This driver came from a driver originally written by:
  *		Henry Wang <Henry.wang@AzureWave.com>
  * Made publicly available by Terratec, at:
- *	http://linux.terratec.de/files/TERRATEC_H7/20110323_TERRATEC_H7_Linux.tar.gz
+ *	http://linaos.terratec.de/files/TERRATEC_H7/20110323_TERRATEC_H7_LinaOS.tar.gz
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/videodev2.h>
-#include <linux/gcd.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/videodev2.h>
+#include <linaos/gcd.h>
 
 #include "mt2063.h"
 

@@ -14,7 +14,7 @@ properties:
     description: Enable autorepeat when key is pressed and held down.
     type: boolean
 
-  linux,keycodes:
+  linaos,keycodes:
     description:
       Specifies an array of numeric keycode values to be used for reporting
       button presses.

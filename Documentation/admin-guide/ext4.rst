@@ -9,7 +9,7 @@ scalability and reliability enhancements for supporting large filesystems
 (64 bit) in keeping with increasing disk capacities and state-of-the-art
 feature requirements.
 
-Mailing list:	linux-ext4@vger.kernel.org
+Mailing list:	linaos-ext4@vger.kernel.org
 Web site:	http://ext4.wiki.kernel.org
 
 
@@ -22,7 +22,7 @@ http://ext4.wiki.kernel.org/index.php/Ext4_Howto
 
   - The latest version of e2fsprogs can be found at:
 
-    https://www.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/
+    https://www.kernel.org/pub/linaos/kernel/people/tytso/e2fsprogs/
 
 	or
 
@@ -273,13 +273,13 @@ When mounting an ext4 filesystem, the following option are accepted:
         These options are ignored by the filesystem. They are used only by
         quota tools to recognize volumes where quota should be turned on. See
         documentation in the quota-tools package for more details
-        (http://sourceforge.net/projects/linuxquota).
+        (http://sourceforge.net/projects/linaosquota).
 
   jqfmt=<quota type>, usrjquota=<file>, grpjquota=<file>
         These options tell filesystem details about quota so that quota
         information can be properly updated during journal replay. They replace
         the above quota options. See documentation in the quota-tools package
-        for more details (http://sourceforge.net/projects/linuxquota).
+        for more details (http://sourceforge.net/projects/linaosquota).
 
   stripe=n
         Number of filesystem blocks that mballoc will try to use for allocation

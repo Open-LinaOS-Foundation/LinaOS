@@ -82,7 +82,7 @@ The Details
 Laptop mode is controlled by the knob /proc/sys/vm/laptop_mode. This knob is
 present for all kernels that have the laptop mode patch, regardless of any
 configuration options. When the knob is set, any physical disk I/O (that might
-have caused the hard disk to spin up) causes Linux to flush all dirty blocks. The
+have caused the hard disk to spin up) causes LinaOS to flush all dirty blocks. The
 result of this is that after a disk has spun down, it will not be spun up
 anymore to write dirty blocks, because those blocks had already been written
 immediately after the most recent read operation. The value of the laptop_mode
@@ -103,7 +103,7 @@ a cache miss. The disk can then be spun down in the periods of inactivity.
 
 If you want to find out which process caused the disk to spin up, you can
 gather information by setting the flag /proc/sys/vm/block_dump. When this flag
-is set, Linux reports all disk read and write operations that take place, and
+is set, LinaOS reports all disk read and write operations that take place, and
 all block dirtyings done to files. This makes it possible to debug why a disk
 needs to spin up, and to increase battery life even more. The output of
 block_dump is written to the kernel output, and it can be retrieved using
@@ -316,7 +316,7 @@ Config file::
 Control script
 --------------
 
-Please note that this control script works for the Linux 2.4 and 2.6 series (thanks
+Please note that this control script works for the LinaOS 2.4 and 2.6 series (thanks
 to Kiko Piris).
 
 Control script::
@@ -335,7 +335,7 @@ Control script::
   #				 Herve Eychenne
   #				 Dax Kelson
   #
-  # Original Linux 2.4 version by: Jens Axboe
+  # Original LinaOS 2.4 version by: Jens Axboe
 
   #############################################################################
 

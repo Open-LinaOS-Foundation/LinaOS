@@ -10,9 +10,9 @@
 #define __VIA_AUX_H__
 
 
-#include <linux/list.h>
-#include <linux/i2c.h>
-#include <linux/fb.h>
+#include <linaos/list.h>
+#include <linaos/i2c.h>
+#include <linaos/fb.h>
 
 
 struct via_aux_bus {

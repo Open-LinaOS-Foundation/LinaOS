@@ -5,7 +5,7 @@
 #ifndef __iwl_fw_dbg_tlv_h__
 #define __iwl_fw_dbg_tlv_h__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define IWL_FW_INI_MAX_REGION_ID		64
 #define IWL_FW_INI_MAX_NAME			32

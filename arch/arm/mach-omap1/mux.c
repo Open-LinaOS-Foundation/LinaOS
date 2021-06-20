@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/arch/arm/mach-omap1/mux.c
+ * linaos/arch/arm/mach-omap1/mux.c
  *
  * OMAP1 pin multiplexing configurations
  *
@@ -8,10 +8,10 @@
  *
  * Written by Tony Lindgren
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
 
 #include <mach/hardware.h>
 

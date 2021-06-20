@@ -4,14 +4,14 @@
  *   Author: Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/bitfield.h>
+#include <linaos/bits.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 #include "sdhci-pltfm.h"
 

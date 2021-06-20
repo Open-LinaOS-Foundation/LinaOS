@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* The industrial I/O - event passing to userspace
  *
  * Copyright (c) 2008-2011 Jonathan Cameron
@@ -10,8 +10,8 @@
 #ifndef _UAPI_IIO_EVENTS_H_
 #define _UAPI_IIO_EVENTS_H_
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <linaos/ioctl.h>
+#include <linaos/types.h>
 
 /**
  * struct iio_event_data - The actual event being pushed to userspace

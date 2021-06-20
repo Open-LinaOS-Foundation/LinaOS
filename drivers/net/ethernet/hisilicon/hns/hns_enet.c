@@ -3,19 +3,19 @@
  * Copyright (c) 2014-2015 Hisilicon Limited.
  */
 
-#include <linux/clk.h>
-#include <linux/cpumask.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
+#include <linaos/clk.h>
+#include <linaos/cpumask.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/skbuff.h>
 
 #include "hnae.h"
 #include "hns_enet.h"

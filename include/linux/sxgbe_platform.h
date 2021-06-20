@@ -10,7 +10,7 @@
 #ifndef __SXGBE_PLATFORM_H__
 #define __SXGBE_PLATFORM_H__
 
-#include <linux/phy.h>
+#include <linaos/phy.h>
 
 /* MDC Clock Selection define*/
 #define SXGBE_CSR_100_150M	0x0	/* MDC = clk_scr_i/62 */

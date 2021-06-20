@@ -5,20 +5,20 @@
  * Copyright 2005-2013 Solarflare Communications Inc.
  */
 
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/prefetch.h>
-#include <linux/moduleparam.h>
-#include <linux/iommu.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/slab.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/prefetch.h>
+#include <linaos/moduleparam.h>
+#include <linaos/iommu.h>
 #include <net/ip.h>
 #include <net/checksum.h>
 #include <net/xdp.h>
-#include <linux/bpf_trace.h>
+#include <linaos/bpf_trace.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "rx_common.h"

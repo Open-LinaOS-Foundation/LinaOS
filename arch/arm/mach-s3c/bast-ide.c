@@ -2,16 +2,16 @@
 //
 // Copyright 2007 Simtec Electronics
 //	http://www.simtec.co.uk/products/EB2410ITX/
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //	Ben Dooks <ben@simtec.co.uk>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
 
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/ata_platform.h>
 
 #include <asm/mach-types.h>
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
 /*
- * linux/net/sunrpc/auth_gss/auth_gss_internal.h
+ * linaos/net/sunrpc/auth_gss/auth_gss_internal.h
  *
  * Internal definitions for RPCSEC_GSS client authentication
  *
@@ -8,9 +8,9 @@
  * All rights reserved.
  *
  */
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/sunrpc/xdr.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
+#include <linaos/sunrpc/xdr.h>
 
 static inline const void *
 simple_get_bytes(const void *p, const void *end, void *res, size_t len)

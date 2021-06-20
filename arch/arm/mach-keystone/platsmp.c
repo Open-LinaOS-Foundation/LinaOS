@@ -9,10 +9,10 @@
  * Based on platsmp.c, Copyright (C) 2002 ARM Ltd.
  */
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/pgtable.h>
+#include <linaos/init.h>
+#include <linaos/smp.h>
+#include <linaos/io.h>
+#include <linaos/pgtable.h>
 
 #include <asm/smp_plat.h>
 #include <asm/prom.h>

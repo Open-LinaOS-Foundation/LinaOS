@@ -3,12 +3,12 @@
  * PCI driver for the Synopsys DesignWare DMA Controller
  *
  * Copyright (C) 2013 Intel Corporation
- * Author: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Author: Andy Shevchenko <andriy.shevchenko@linaos.intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/device.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/device.h>
 
 #include "internal.h"
 
@@ -148,4 +148,4 @@ module_pci_driver(dw_pci_driver);
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("Synopsys DesignWare DMA Controller PCI driver");
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linaos.intel.com>");

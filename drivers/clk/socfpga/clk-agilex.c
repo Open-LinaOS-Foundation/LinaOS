@@ -2,11 +2,11 @@
 /*
  * Copyright (C) 2019, Intel Corporation
  */
-#include <linux/slab.h>
-#include <linux/clk-provider.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
 
 #include <dt-bindings/clock/agilex-clock.h>
 

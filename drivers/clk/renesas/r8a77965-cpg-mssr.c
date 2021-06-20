@@ -11,10 +11,10 @@
  * Copyright (C) 2015 Renesas Electronics Corp.
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/soc/renesas/rcar-rst.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/soc/renesas/rcar-rst.h>
 
 #include <dt-bindings/clock/r8a77965-cpg-mssr.h>
 

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * linux/drivers/mmc/core/sdio_cis.h
+ * linaos/drivers/mmc/core/sdio_cis.h
  *
  * Author:	Nicolas Pitre
  * Created:	June 11, 2007

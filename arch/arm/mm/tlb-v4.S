@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/tlbv4.S
+ *  linaos/arch/arm/mm/tlbv4.S
  *
  *  Copyright (C) 1997-2002 Russell King
  *
@@ -9,8 +9,8 @@
  *
  * Processors: ARM720T
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/tlbflush.h>

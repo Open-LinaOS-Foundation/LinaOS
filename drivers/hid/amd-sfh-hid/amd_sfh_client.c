@@ -6,12 +6,12 @@
  *	     Sandeep Singh <Sandeep.singh@amd.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/hid.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/errno.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/hid.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/errno.h>
 
 #include "hid_descriptor/amd_sfh_hid_desc.h"
 #include "amd_sfh_pcie.h"

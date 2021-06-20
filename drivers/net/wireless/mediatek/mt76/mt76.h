@@ -6,13 +6,13 @@
 #ifndef __MT76_H
 #define __MT76_H
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/leds.h>
-#include <linux/usb.h>
-#include <linux/average.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
+#include <linaos/skbuff.h>
+#include <linaos/leds.h>
+#include <linaos/usb.h>
+#include <linaos/average.h>
 #include <net/mac80211.h>
 #include "util.h"
 #include "testmode.h"

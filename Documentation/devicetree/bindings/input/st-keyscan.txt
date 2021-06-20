@@ -16,7 +16,7 @@ Required properties:
 - pinctrl: Should specify pin control groups used for this controller.
   See ../pinctrl/pinctrl-bindings.txt for details.
 
-- linux,keymap: The keymap for keys as described in the binding document
+- linaos,keymap: The keymap for keys as described in the binding document
   devicetree/bindings/input/matrix-keymap.txt.
 
 - keypad,num-rows: Number of row lines connected to the keypad controller.
@@ -41,7 +41,7 @@ keyscan: keyscan@fe4b0000 {
 	keypad,num-columns = <4>;
 	st,debounce_us = <5000>;
 
-	linux,keymap = < MATRIX_KEY(0x00, 0x00, KEY_F13)
+	linaos,keymap = < MATRIX_KEY(0x00, 0x00, KEY_F13)
 			 MATRIX_KEY(0x00, 0x01, KEY_F9)
 			 MATRIX_KEY(0x00, 0x02, KEY_F5)
 			 MATRIX_KEY(0x00, 0x03, KEY_F1)

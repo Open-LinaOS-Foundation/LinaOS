@@ -3,17 +3,17 @@
 # arch/microblaze/boot/Makefile
 #
 
-targets := linux.bin linux.bin.gz linux.bin.ub simpleImage.*
+targets := linaos.bin linaos.bin.gz linaos.bin.ub simpleImage.*
 
 OBJCOPYFLAGS := -R .note -R .comment -R .note.gnu.build-id -O binary
 
-$(obj)/linux.bin: vmlinux FORCE
+$(obj)/linaos.bin: vmlinaos FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/linux.bin.ub: $(obj)/linux.bin FORCE
+$(obj)/linaos.bin.ub: $(obj)/linaos.bin FORCE
 	$(call if_changed,uimage)
 
-$(obj)/linux.bin.gz: $(obj)/linux.bin FORCE
+$(obj)/linaos.bin.gz: $(obj)/linaos.bin FORCE
 	$(call if_changed,gzip)
 
 quiet_cmd_strip = STRIP   $< $@$2
@@ -22,14 +22,14 @@ quiet_cmd_strip = STRIP   $< $@$2
 
 UIMAGE_LOADADDR = $(CONFIG_KERNEL_BASE_ADDR)
 
-$(obj)/simpleImage.$(DTB): vmlinux FORCE
+$(obj)/simpleImage.$(DTB): vmlinaos FORCE
 	$(call if_changed,objcopy)
 
 $(obj)/simpleImage.$(DTB).ub: $(obj)/simpleImage.$(DTB) FORCE
 	$(call if_changed,uimage)
 
-$(obj)/simpleImage.$(DTB).unstrip: vmlinux FORCE
+$(obj)/simpleImage.$(DTB).unstrip: vmlinaos FORCE
 	$(call if_changed,shipped)
 
-$(obj)/simpleImage.$(DTB).strip: vmlinux FORCE
+$(obj)/simpleImage.$(DTB).strip: vmlinaos FORCE
 	$(call if_changed,strip)

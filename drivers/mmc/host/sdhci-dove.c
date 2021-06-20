@@ -7,12 +7,12 @@
  * Based on sdhci-cns3xxx.c
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mmc/host.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/mmc/host.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
 
 #include "sdhci-pltfm.h"
 

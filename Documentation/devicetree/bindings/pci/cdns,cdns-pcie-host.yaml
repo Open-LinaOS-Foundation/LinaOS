@@ -45,7 +45,7 @@ examples:
             #address-cells = <3>;
             #size-cells = <2>;
             bus-range = <0x0 0xff>;
-            linux,pci-domain = <0>;
+            linaos,pci-domain = <0>;
             vendor-id = <0x17cd>;
             device-id = <0x0200>;
 

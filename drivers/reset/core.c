@@ -4,17 +4,17 @@
  *
  * Copyright 2013 Philipp Zabel, Pengutronix
  */
-#include <linux/atomic.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/reset.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
+#include <linaos/atomic.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/reset.h>
+#include <linaos/reset-controller.h>
+#include <linaos/slab.h>
 
 static DEFINE_MUTEX(reset_list_mutex);
 static LIST_HEAD(reset_controller_list);

@@ -5,8 +5,8 @@
  * Written by Cai Zhiyong <caizhiyong@huawei.com>
  *
  */
-#include <linux/export.h>
-#include <linux/cmdline-parser.h>
+#include <linaos/export.h>
+#include <linaos/cmdline-parser.h>
 
 static int parse_subpart(struct cmdline_subpart **subpart, char *partdef)
 {

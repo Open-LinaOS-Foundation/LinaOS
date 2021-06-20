@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (c) 2003-2020, Intel Corporation. All rights reserved.
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) LinaOS driver
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/cdev.h>
-#include <linux/sched/signal.h>
-#include <linux/uuid.h>
-#include <linux/compat.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/poll.h>
+#include <linaos/init.h>
+#include <linaos/ioctl.h>
+#include <linaos/cdev.h>
+#include <linaos/sched/signal.h>
+#include <linaos/uuid.h>
+#include <linaos/compat.h>
+#include <linaos/jiffies.h>
+#include <linaos/interrupt.h>
 
-#include <linux/mei.h>
+#include <linaos/mei.h>
 
 #include "mei_dev.h"
 #include "client.h"

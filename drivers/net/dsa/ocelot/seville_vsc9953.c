@@ -2,14 +2,14 @@
 /* Distributed Switch Architecture VSC9953 driver
  * Copyright (C) 2020, Maxim Kochetkov <fido_max@inbox.ru>
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <soc/mscc/ocelot_vcap.h>
 #include <soc/mscc/ocelot_sys.h>
 #include <soc/mscc/ocelot.h>
-#include <linux/of_platform.h>
-#include <linux/pcs-lynx.h>
-#include <linux/dsa/ocelot.h>
-#include <linux/iopoll.h>
+#include <linaos/of_platform.h>
+#include <linaos/pcs-lynx.h>
+#include <linaos/dsa/ocelot.h>
+#include <linaos/iopoll.h>
 #include "felix.h"
 
 #define MSCC_MIIM_CMD_OPR_WRITE			BIT(1)

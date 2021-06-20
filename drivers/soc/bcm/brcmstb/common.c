@@ -4,12 +4,12 @@
  * Copyright © 2015 Broadcom Corporation
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/soc/brcmstb/brcmstb.h>
-#include <linux/sys_soc.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/soc/brcmstb/brcmstb.h>
+#include <linaos/sys_soc.h>
 
 static u32 family_id;
 static u32 product_id;

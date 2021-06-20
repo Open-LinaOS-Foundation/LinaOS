@@ -6,9 +6,9 @@
  * Copyright (C) 1998 Ralf Baechle
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/types.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
 
 #include <asm/io.h>
 #include <asm/sgi/hpc3.h>

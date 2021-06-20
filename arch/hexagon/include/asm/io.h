@@ -2,7 +2,7 @@
 /*
  * IO definitions for the Hexagon architecture
  *
- * Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2013, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _ASM_IO_H
@@ -10,7 +10,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/iomap.h>
 #include <asm/page.h>
 #include <asm/cacheflush.h>
@@ -159,7 +159,7 @@ static inline void writel(u32 data, volatile void __iomem *addr)
 #define __raw_readl readl
 
 /*
- * http://comments.gmane.org/gmane.linux.ports.arm.kernel/117626
+ * http://comments.gmane.org/gmane.linaos.ports.arm.kernel/117626
  */
 
 #define readb_relaxed __raw_readb

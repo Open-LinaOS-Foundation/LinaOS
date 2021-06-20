@@ -7,12 +7,12 @@
 
 #include "dm-exception-store.h"
 
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/ctype.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 #define DM_MSG_PREFIX "snapshot exception stores"
 

@@ -3,10 +3,10 @@
 #ifndef __LINUX_GUD_INTERNAL_H
 #define __LINUX_GUD_INTERNAL_H
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/usb.h>
+#include <linaos/workqueue.h>
 #include <uapi/drm/drm_fourcc.h>
 
 #include <drm/drm_modes.h>

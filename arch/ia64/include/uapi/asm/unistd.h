@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * IA-64 Linux syscall numbers and inline-functions.
+ * IA-64 LinaOS syscall numbers and inline-functions.
  *
  * Copyright (C) 1998-2005 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
@@ -13,7 +13,7 @@
 
 #define __BREAK_SYSCALL	__IA64_BREAK_SYSCALL
 
-#define __NR_Linux      1024
+#define __NR_LinaOS      1024
 
 #define __NR_umount __NR_umount2
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/clocksource/timer-sp.c
+ *  linaos/drivers/clocksource/timer-sp.c
  *
  *  Copyright (C) 1999 - 2003 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -8,18 +8,18 @@
 
 #define pr_fmt(fmt)    KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_clk.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
+#include <linaos/clk.h>
+#include <linaos/clocksource.h>
+#include <linaos/clockchips.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_clk.h>
+#include <linaos/of_irq.h>
+#include <linaos/sched_clock.h>
 
 #include "timer-sp.h"
 

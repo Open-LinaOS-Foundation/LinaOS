@@ -13,7 +13,7 @@
 #ifndef _ASM_NIOS2_MMU_CONTEXT_H
 #define _ASM_NIOS2_MMU_CONTEXT_H
 
-#include <linux/mm_types.h>
+#include <linaos/mm_types.h>
 
 #include <asm-generic/mm_hooks.h>
 

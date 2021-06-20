@@ -1,5 +1,5 @@
 /*
- * Linux Security Module interfaces
+ * LinaOS Security Module interfaces
  *
  * Copyright (C) 2001 WireX Communications, Inc <chris@wirex.com>
  * Copyright (C) 2001 Greg Kroah-Hartman <greg@kroah.com>
@@ -25,12 +25,12 @@
 #ifndef __LINUX_LSM_HOOKS_H
 #define __LINUX_LSM_HOOKS_H
 
-#include <linux/security.h>
-#include <linux/init.h>
-#include <linux/rculist.h>
+#include <linaos/security.h>
+#include <linaos/init.h>
+#include <linaos/rculist.h>
 
 /**
- * union security_list_options - Linux Security Module hook function list
+ * union security_list_options - LinaOS Security Module hook function list
  *
  * Security hooks for program execution operations.
  *
@@ -42,7 +42,7 @@
  *	(e.g. for transitions between security domains).
  *	The hook must set @bprm->secureexec to 1 if AT_SECURE should be set to
  *	request libc enable secure mode.
- *	@bprm contains the linux_binprm structure.
+ *	@bprm contains the linaos_binprm structure.
  *	Return 0 if the hook is successful and permission is granted.
  * @bprm_creds_from_file:
  *	If @file is setpcap, suid, sgid or otherwise marked to change
@@ -57,7 +57,7 @@
  *	request libc enable secure mode.
  *	The hook must add to @bprm->per_clear any personality flags that
  * 	should be cleared from current->personality.
- *	@bprm contains the linux_binprm structure.
+ *	@bprm contains the linaos_binprm structure.
  *	Return 0 if the hook is successful and permission is granted.
  * @bprm_check_security:
  *	This hook mediates the point when a search for a binary handler will
@@ -65,13 +65,13 @@
  *	which was set in the preceding creds_for_exec call.  The argv list and
  *	envp list are reliably available in @bprm.  This hook may be called
  *	multiple times during a single execve.
- *	@bprm contains the linux_binprm structure.
+ *	@bprm contains the linaos_binprm structure.
  *	Return 0 if the hook is successful and permission is granted.
  * @bprm_committing_creds:
  *	Prepare to install the new security attributes of a process being
  *	transformed by an execve operation, based on the old credentials
  *	pointed to by @current->cred and the information set in @bprm->cred by
- *	the bprm_creds_for_exec hook.  @bprm points to the linux_binprm
+ *	the bprm_creds_for_exec hook.  @bprm points to the linaos_binprm
  *	structure.  This hook is a good place to perform state changes on the
  *	process such as closing open file descriptors to which access will no
  *	longer be granted when the attributes are changed.  This is called
@@ -80,7 +80,7 @@
  *	Tidy up after the installation of the new security attributes of a
  *	process being transformed by an execve operation.  The new credentials
  *	have, by this point, been set to @current->cred.  @bprm points to the
- *	linux_binprm structure.  This hook is a good place to perform state
+ *	linaos_binprm structure.  This hook is a good place to perform state
  *	changes on the process such as clearing out non-inheritable signal
  *	state.  This is called immediately after commit_creds().
  *
@@ -236,7 +236,7 @@
  *	@inode contains the inode structure of the newly created inode.
  *	@dir contains the inode structure of the parent directory.
  *	@qstr contains the last path component of the new object
- *	@name will be set to the allocated name suffix (e.g. selinux).
+ *	@name will be set to the allocated name suffix (e.g. selinaos).
  *	@value will be set to the allocated attribute value.
  *	@len will be set to the length of the value.
  *	Returns 0 if @name and @value have been successfully set,
@@ -363,7 +363,7 @@
  *	mode is specified in @mode.
  *	@path contains the path structure of the file to change the mode.
  *	@mode contains the new DAC's permission, which is a bitmask of
- *	constants from <include/uapi/linux/stat.h>
+ *	constants from <include/uapi/linaos/stat.h>
  *	Return 0 if permission is granted.
  * @path_chown:
  *	Check for permission to change owner/group of a file or directory.
@@ -390,8 +390,8 @@
  *	Return 0 if permission is granted.
  * @inode_permission:
  *	Check permission before accessing an inode.  This hook is called by the
- *	existing Linux permission function, so a security module can use it to
- *	provide additional checking for existing Linux permission checks.
+ *	existing LinaOS permission function, so a security module can use it to
+ *	provide additional checking for existing LinaOS permission checks.
  *	Notice that this hook is called when a file is opened (as well as many
  *	other operations), whereas the file_security_ops permission hook is
  *	called when the actual read/write operations are performed.
@@ -830,7 +830,7 @@
  *	Return 0 if permission is granted.
  *
  * The @unix_stream_connect and @unix_may_send hooks were necessary because
- * Linux provides an alternative to the conventional file name space for Unix
+ * LinaOS provides an alternative to the conventional file name space for Unix
  * domain sockets.  Whereas binding and connecting to sockets in the file name
  * space is mediated by the typical file permissions (and caught by the mknod
  * and permission hooks in inode_security_ops), binding and connecting to
@@ -1371,8 +1371,8 @@
  *	credentials.
  *	@cred contains the credentials to use.
  *	@ns contains the user namespace we want the capability in
- *	@cap contains the capability <include/linux/capability.h>.
- *	@opts contains options for the capable check <include/linux/security.h>
+ *	@cap contains the capability <include/linaos/capability.h>.
+ *	@opts contains options for the capable check <include/linaos/security.h>
  *	Return 0 if the capability is granted for @tsk.
  * @quotactl:
  * 	Check whether the quotactl syscall is allowed for this @sb.
@@ -1382,12 +1382,12 @@
  *	Check permission before accessing the kernel message ring or changing
  *	logging to the console.
  *	See the syslog(2) manual page for an explanation of the @type values.
- *	@type contains the SYSLOG_ACTION_* constant from <include/linux/syslog.h>
+ *	@type contains the SYSLOG_ACTION_* constant from <include/linaos/syslog.h>
  *	Return 0 if permission is granted.
  * @settime:
  *	Check permission to change the system time.
- *	struct timespec64 is defined in <include/linux/time64.h> and timezone
- *	is defined in <include/linux/time.h>
+ *	struct timespec64 is defined in <include/linaos/time64.h> and timezone
+ *	is defined in <include/linaos/time.h>
  *	@ts contains new time
  *	@tz contains new timezone
  *	Return 0 if permission is granted.
@@ -1429,7 +1429,7 @@
  * @audit_rule_init:
  *	Allocate and initialize an LSM audit rule structure.
  *	@field contains the required Audit action.
- *	Fields flags are defined in <include/linux/audit.h>
+ *	Fields flags are defined in <include/linaos/audit.h>
  *	@op contains the operator the rule uses.
  *	@rulestr contains the context where the rule will be applied to.
  *	@lsmrule contains a pointer to receive the result.
@@ -1596,7 +1596,7 @@ struct lsm_blob_sizes {
 
 /*
  * LSM_RET_VOID is used as the default value in LSM_HOOK definitions for void
- * LSM hooks (in include/linux/lsm_hook_defs.h).
+ * LSM hooks (in include/linaos/lsm_hook_defs.h).
  */
 #define LSM_RET_VOID ((void) 0)
 
@@ -1656,7 +1656,7 @@ extern struct lsm_info __start_early_lsm_info[], __end_early_lsm_info[];
  * The name of the configuration option reflects the only module
  * that currently uses the mechanism. Any developer who thinks
  * disabling their module is a good idea needs to be at least as
- * careful as the SELinux team.
+ * careful as the SELinaOS team.
  */
 static inline void security_delete_hooks(struct security_hook_list *hooks,
 						int count)
@@ -1668,7 +1668,7 @@ static inline void security_delete_hooks(struct security_hook_list *hooks,
 }
 #endif /* CONFIG_SECURITY_SELINUX_DISABLE */
 
-/* Currently required to handle SELinux runtime hook disable. */
+/* Currently required to handle SELinaOS runtime hook disable. */
 #ifdef CONFIG_SECURITY_WRITABLE_HOOKS
 #define __lsm_ro_after_init
 #else

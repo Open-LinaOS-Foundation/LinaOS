@@ -8,7 +8,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/input.h>
+#include <linaos/input.h>
 #include "gspca.h"
 #include "jpeg.h"
 

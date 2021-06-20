@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Copyright (C) 2019-2020 ARM Limited or its affiliates. */
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define POWER_DOWN_ENABLE 0x01
 #define POWER_DOWN_DISABLE 0x00

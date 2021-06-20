@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_IPV6_H
 #define _UAPI_IPV6_H
 
-#include <linux/libc-compat.h>
-#include <linux/types.h>
-#include <linux/in6.h>
+#include <linaos/libc-compat.h>
+#include <linaos/types.h>
+#include <linaos/in6.h>
 #include <asm/byteorder.h>
 
 /* The latest drafts declared increase in minimal mtu up to 1280. */

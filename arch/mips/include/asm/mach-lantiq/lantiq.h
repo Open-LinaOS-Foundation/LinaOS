@@ -6,9 +6,9 @@
 #ifndef _LANTIQ_H__
 #define _LANTIQ_H__
 
-#include <linux/irq.h>
-#include <linux/device.h>
-#include <linux/clk.h>
+#include <linaos/irq.h>
+#include <linaos/device.h>
+#include <linaos/clk.h>
 
 /* generic reg access functions */
 #define ltq_r32(reg)		__raw_readl(reg)

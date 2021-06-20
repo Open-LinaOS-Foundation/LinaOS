@@ -15,10 +15,10 @@
  *    Copyright (c) 2010, Intel Corporation.
  */
 
-#include <linux/hardirq.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/err.h>
+#include <linaos/hardirq.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
 #include <crypto/algapi.h>
 #include <crypto/aes.h>
 #include <crypto/ctr.h>
@@ -31,10 +31,10 @@
 #include <crypto/internal/aead.h>
 #include <crypto/internal/simd.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/jump_label.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/static_call.h>
+#include <linaos/jump_label.h>
+#include <linaos/workqueue.h>
+#include <linaos/spinlock.h>
+#include <linaos/static_call.h>
 
 
 #define AESNI_ALIGN	16

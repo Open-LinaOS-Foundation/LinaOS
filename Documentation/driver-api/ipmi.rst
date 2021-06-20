@@ -1,5 +1,5 @@
 =====================
-The Linux IPMI Driver
+The LinaOS IPMI Driver
 =====================
 
 :Author: Corey Minyard <minyard@mvista.com> / <minyard@acm.org>
@@ -16,7 +16,7 @@ To use this, you need an interface to an IPMI controller in your
 system (called a Baseboard Management Controller, or BMC) and
 management software that can use the IPMI system.
 
-This document describes how to use the IPMI driver for Linux.  If you
+This document describes how to use the IPMI driver for LinaOS.  If you
 are not familiar with IPMI itself, see the web site at
 https://www.intel.com/design/servers/ipmi/index.htm.  IPMI is a big
 subject and I can't cover it all here!
@@ -24,7 +24,7 @@ subject and I can't cover it all here!
 Configuration
 -------------
 
-The Linux IPMI driver is modular, which means you have to pick several
+The LinaOS IPMI driver is modular, which means you have to pick several
 things to have it work right depending on your hardware.  Most of
 these are available in the 'Character Devices' menu then the IPMI
 menu.
@@ -88,7 +88,7 @@ or "string".  Setting that parameter to "none" disables this function.
 Basic Design
 ------------
 
-The Linux IPMI driver is designed to be very modular and flexible, you
+The LinaOS IPMI driver is designed to be very modular and flexible, you
 only need to take the pieces you need and you can use it in many
 different ways.  Because of that, it's broken into many chunks of
 code.  These chunks (by module name) are:
@@ -115,7 +115,7 @@ over the SMBus.
 ipmi_powernv - A driver for access BMCs on POWERNV systems.
 
 ipmi_watchdog - IPMI requires systems to have a very capable watchdog
-timer.  This driver implements the standard Linux watchdog timer
+timer.  This driver implements the standard LinaOS watchdog timer
 interface on top of the IPMI message handler.
 
 ipmi_poweroff - Some systems support the ability to be turned off via
@@ -123,19 +123,19 @@ IPMI commands.
 
 bt-bmc - This is not part of the main driver, but instead a driver for
 accessing a BMC-side interface of a BT interface.  It is used on BMCs
-running Linux to provide an interface to the host.
+running LinaOS to provide an interface to the host.
 
 These are all individually selectable via configuration options.
 
 Much documentation for the interface is in the include files.  The
 IPMI include files are:
 
-linux/ipmi.h - Contains the user interface and IOCTL interface for IPMI.
+linaos/ipmi.h - Contains the user interface and IOCTL interface for IPMI.
 
-linux/ipmi_smi.h - Contains the interface for system management interfaces
+linaos/ipmi_smi.h - Contains the interface for system management interfaces
 (things that interface to IPMI controllers) to use.
 
-linux/ipmi_msgdefs.h - General definitions for base IPMI messaging.
+linaos/ipmi_msgdefs.h - General definitions for base IPMI messaging.
 
 
 Addressing
@@ -603,7 +603,7 @@ on the dev pointer.
 Watchdog
 --------
 
-A watchdog timer is provided that implements the Linux-standard
+A watchdog timer is provided that implements the LinaOS-standard
 watchdog timer interface.  It has three module parameters that can be
 used to control it::
 
@@ -675,7 +675,7 @@ immediately.
 Once you open the watchdog timer, you must write a 'V' character to the
 device to close it, or the timer will not stop.  This is a new semantic
 for the driver, but makes it consistent with the rest of the watchdog
-drivers in Linux.
+drivers in LinaOS.
 
 
 Panic Timeouts

@@ -6,7 +6,7 @@
  *		http://www.samsung.com
  * Copyright (c) 2014 Collabora Ltd.
  * Copyright (c) 2015 Lukasz Majewski <l.majewski@samsung.com>
- *                    Anand Moon <linux.amoon@gmail.com>
+ *                    Anand Moon <linaos.amoon@gmail.com>
  */
 
 #include <dt-bindings/input/input.h>
@@ -27,7 +27,7 @@
 			 * then connected to XEINT3 SoC pin.
 			 */
 			gpios = <&gpx0 3 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			label = "power key";
 			debounce-interval = <0>;
 			wakeup-source;

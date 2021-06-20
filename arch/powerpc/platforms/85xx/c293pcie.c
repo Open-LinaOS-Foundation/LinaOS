@@ -5,10 +5,10 @@
  * Copyright 2013 Freescale Semiconductor Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
 
 #include <asm/machdep.h>
 #include <asm/udbg.h>

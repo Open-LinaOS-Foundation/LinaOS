@@ -12,15 +12,15 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/netdevice.h>
-#include <linux/smscphy.h>
+#include <linaos/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/of.h>
+#include <linaos/phy.h>
+#include <linaos/netdevice.h>
+#include <linaos/smscphy.h>
 
 /* Vendor-specific PHY Definitions */
 /* EDPD NLP / crossover time configuration */

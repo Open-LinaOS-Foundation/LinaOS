@@ -4,16 +4,16 @@
 //
 // Copyright (C) 2019, Paul Cercueil <paul@crapouillou.net>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/regmap.h>
+#include <linaos/clk.h>
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

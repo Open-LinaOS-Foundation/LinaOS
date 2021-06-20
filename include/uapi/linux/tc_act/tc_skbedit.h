@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (c) 2008, Intel Corporation.
  *
@@ -21,7 +21,7 @@
 #ifndef __LINUX_TC_SKBEDIT_H
 #define __LINUX_TC_SKBEDIT_H
 
-#include <linux/pkt_cls.h>
+#include <linaos/pkt_cls.h>
 
 #define SKBEDIT_F_PRIORITY		0x1
 #define SKBEDIT_F_QUEUE_MAPPING		0x2

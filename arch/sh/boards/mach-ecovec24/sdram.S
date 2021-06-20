@@ -5,9 +5,9 @@
  *  Copyright (C) 2009 Magnus Damm
  */
 
-#include <linux/sys.h>
-#include <linux/errno.h>
-#include <linux/linkage.h>
+#include <linaos/sys.h>
+#include <linaos/errno.h>
+#include <linaos/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/suspend.h>
 #include <asm/romimage-macros.h>

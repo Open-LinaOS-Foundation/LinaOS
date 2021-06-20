@@ -9,7 +9,7 @@
 #ifndef _LINUX_TNUM_H
 #define _LINUX_TNUM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct tnum {
 	u64 value;

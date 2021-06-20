@@ -11,7 +11,7 @@ struct netns_mib {
 #endif
 
 	DEFINE_SNMP_STAT(struct tcp_mib, tcp_statistics);
-	DEFINE_SNMP_STAT(struct linux_mib, net_statistics);
+	DEFINE_SNMP_STAT(struct linaos_mib, net_statistics);
 
 	DEFINE_SNMP_STAT(struct udp_mib, udp_statistics);
 #if IS_ENABLED(CONFIG_IPV6)
@@ -19,10 +19,10 @@ struct netns_mib {
 #endif
 
 #ifdef CONFIG_XFRM_STATISTICS
-	DEFINE_SNMP_STAT(struct linux_xfrm_mib, xfrm_statistics);
+	DEFINE_SNMP_STAT(struct linaos_xfrm_mib, xfrm_statistics);
 #endif
 #if IS_ENABLED(CONFIG_TLS)
-	DEFINE_SNMP_STAT(struct linux_tls_mib, tls_statistics);
+	DEFINE_SNMP_STAT(struct linaos_tls_mib, tls_statistics);
 #endif
 #ifdef CONFIG_MPTCP
 	DEFINE_SNMP_STAT(struct mptcp_mib, mptcp_statistics);

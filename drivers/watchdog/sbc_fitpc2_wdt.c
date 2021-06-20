@@ -12,18 +12,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME " WATCHDOG: " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/moduleparam.h>
+#include <linaos/dmi.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 
 static bool nowayout = WATCHDOG_NOWAYOUT;

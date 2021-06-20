@@ -3,14 +3,14 @@
 // Copyright (c) 2018 Mellanox Technologies. All rights reserved.
 // Copyright (c) 2018 Vadim Pasternak <vadimp@mellanox.com>
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/hwmon.h>
-#include <linux/module.h>
-#include <linux/platform_data/mlxreg.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/hwmon.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/mlxreg.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/thermal.h>
 
 #define MLXREG_FAN_MAX_TACHO		12
 #define MLXREG_FAN_MAX_STATE		10

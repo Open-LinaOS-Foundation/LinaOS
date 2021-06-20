@@ -5,17 +5,17 @@
  * Copyright 2012 Free Electrons
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/pwm.h>
-#include <linux/uaccess.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/backlight.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/property.h>
+#include <linaos/pwm.h>
+#include <linaos/uaccess.h>
+#include <linaos/regulator/consumer.h>
 
 #define SSD1307FB_DATA			0x40
 #define SSD1307FB_COMMAND		0x80

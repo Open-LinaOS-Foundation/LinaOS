@@ -8,8 +8,8 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/slab.h>
-#include <linux/mm_types.h>
+#include <linaos/slab.h>
+#include <linaos/mm_types.h>
 
 #include <asm/asid.h>
 

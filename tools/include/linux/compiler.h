@@ -2,7 +2,7 @@
 #ifndef _TOOLS_LINUX_COMPILER_H_
 #define _TOOLS_LINUX_COMPILER_H_
 
-#include <linux/compiler_types.h>
+#include <linaos/compiler_types.h>
 
 #ifndef __compiletime_error
 # define __compiletime_error(message)
@@ -106,7 +106,7 @@
 # define noinline
 #endif
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Following functions are taken from kernel sources and

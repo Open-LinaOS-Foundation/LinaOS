@@ -48,9 +48,9 @@
 #include "bitstream.h" /* BIT_* */
 #include "fse.h"       /* header compression */
 #include "huf.h"
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/string.h> /* memcpy, memset */
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h> /* memcpy, memset */
 
 /* **************************************************************
 *  Error Management

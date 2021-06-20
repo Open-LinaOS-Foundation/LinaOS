@@ -18,9 +18,9 @@
  */
 #ifndef RENESAS_USB_H
 #define RENESAS_USB_H
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ch9.h>
+#include <linaos/notifier.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb/ch9.h>
 
 /*
  * module type

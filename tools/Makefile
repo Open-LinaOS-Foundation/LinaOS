@@ -26,7 +26,7 @@ help:
 	@echo '  liblockdep             - user-space wrapper for kernel locking-validator'
 	@echo '  objtool                - an ELF object analysis tool'
 	@echo '  pci                    - PCI tools'
-	@echo '  perf                   - Linux performance measurement and analysis tool'
+	@echo '  perf                   - LinaOS performance measurement and analysis tool'
 	@echo '  selftests              - various kernel selftests'
 	@echo '  bootconfig             - boot config tool'
 	@echo '  spi                    - spi tools'

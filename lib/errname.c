@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/build_bug.h>
-#include <linux/errno.h>
-#include <linux/errname.h>
-#include <linux/kernel.h>
-#include <linux/math.h>
+#include <linaos/build_bug.h>
+#include <linaos/errno.h>
+#include <linaos/errname.h>
+#include <linaos/kernel.h>
+#include <linaos/math.h>
 
 /*
  * Ensure these tables do not accidentally become gigantic if some

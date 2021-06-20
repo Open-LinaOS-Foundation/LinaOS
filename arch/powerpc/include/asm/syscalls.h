@@ -3,9 +3,9 @@
 #define __ASM_POWERPC_SYSCALLS_H
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/linkage.h>
+#include <linaos/types.h>
 
 struct rtas_args;
 

@@ -3,11 +3,11 @@
  * Copyright (C) 2020 Intel Corporation
  * Author: Johannes Berg <johannes@sipsolutions.net>
  */
-#include <linux/platform_device.h>
-#include <linux/time-internal.h>
-#include <linux/suspend.h>
-#include <linux/err.h>
-#include <linux/rtc.h>
+#include <linaos/platform_device.h>
+#include <linaos/time-internal.h>
+#include <linaos/suspend.h>
+#include <linaos/err.h>
+#include <linaos/rtc.h>
 #include <kern_util.h>
 #include <irq_kern.h>
 #include <os.h>

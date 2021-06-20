@@ -6,7 +6,7 @@
 #ifndef __INTEL_COMBO_PHY_H__
 #define __INTEL_COMBO_PHY_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_private;
 enum phy;

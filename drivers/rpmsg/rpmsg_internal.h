@@ -12,8 +12,8 @@
 #ifndef __RPMSG_INTERNAL_H__
 #define __RPMSG_INTERNAL_H__
 
-#include <linux/rpmsg.h>
-#include <linux/poll.h>
+#include <linaos/rpmsg.h>
+#include <linaos/poll.h>
 
 #define to_rpmsg_device(d) container_of(d, struct rpmsg_device, dev)
 #define to_rpmsg_driver(d) container_of(d, struct rpmsg_driver, drv)

@@ -8,7 +8,7 @@
  * 386BSD DECtalk PC driver:
  *      Copyright (c) 1996 Brian Buhrow <buhrow@lothlorien.nfbcal.org>
  *
- * Linux DECtalk PC driver:
+ * LinaOS DECtalk PC driver:
  *      Copyright (c) 1997 Nicolas Pitre <nico@cam.org>
  *
  * speakup DECtalk PC Internal driver:
@@ -16,10 +16,10 @@
  *
  * All rights reserved.
  */
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/kthread.h>
+#include <linaos/jiffies.h>
+#include <linaos/sched.h>
+#include <linaos/timer.h>
+#include <linaos/kthread.h>
 
 #include "spk_priv.h"
 #include "speakup.h"

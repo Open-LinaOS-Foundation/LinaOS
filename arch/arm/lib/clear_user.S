@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/clear_user.S
+ *  linaos/arch/arm/lib/clear_user.S
  *
  *  Copyright (C) 1995, 1996,1997,1998 Russell King
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/unwind.h>
 

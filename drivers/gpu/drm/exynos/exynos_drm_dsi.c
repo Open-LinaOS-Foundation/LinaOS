@@ -7,16 +7,16 @@
  * Contacts: Tomasz Figa <t.figa@samsung.com>
 */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/component.h>
-#include <linux/gpio/consumer.h>
-#include <linux/irq.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_graph.h>
-#include <linux/phy/phy.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/component.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/irq.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_graph.h>
+#include <linaos/phy/phy.h>
+#include <linaos/regulator/consumer.h>
 
 #include <asm/unaligned.h>
 

@@ -15,16 +15,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/mv643xx.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/watchdog.h>
+#include <linaos/platform_device.h>
+#include <linaos/mv643xx.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
 
 #define MV64x60_WDT_WDC_OFFSET	0
 

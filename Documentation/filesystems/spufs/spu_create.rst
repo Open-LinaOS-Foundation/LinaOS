@@ -101,7 +101,7 @@ Notes
 =====
        spu_create  is  meant  to  be used from libraries that implement a more
        abstract interface to SPUs, not to be used from  regular  applications.
-       See  http://www.bsc.es/projects/deepcomputing/linuxoncell/ for the rec-
+       See  http://www.bsc.es/projects/deepcomputing/linaosoncell/ for the rec-
        ommended libraries.
 
 
@@ -113,7 +113,7 @@ Files
 
 Conforming to
 =============
-       This call is Linux specific and only implemented by the ppc64 architec-
+       This call is LinaOS specific and only implemented by the ppc64 architec-
        ture. Programs using this system call are not portable.
 
 

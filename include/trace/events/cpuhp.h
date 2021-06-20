@@ -5,7 +5,7 @@
 #if !defined(_TRACE_CPUHP_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_CPUHP_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(cpuhp_enter,
 

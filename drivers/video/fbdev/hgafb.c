@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/hgafb.c -- Hercules graphics adaptor frame buffer device
+ * linaos/drivers/video/hgafb.c -- Hercules graphics adaptor frame buffer device
  * 
  *      Created 25 Nov 1999 by Ferenc Bakonyi (fero@drama.obuda.kando.hu)
  *      Based on skeletonfb.c by Geert Uytterhoeven and
@@ -30,17 +30,17 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/platform_device.h>
 #include <asm/io.h>
 #include <asm/vga.h>
 
@@ -242,7 +242,7 @@ static void hga_show_logo(struct fb_info *info)
 {
 /*
 	void __iomem *dest = hga_vram;
-	char *logo = linux_logo_bw;
+	char *logo = linaos_logo_bw;
 	int x, y;
 	
 	for (y = 134; y < 134 + 80 ; y++) * this needs some cleanup *

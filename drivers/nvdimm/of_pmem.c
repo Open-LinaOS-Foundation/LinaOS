@@ -2,12 +2,12 @@
 
 #define pr_fmt(fmt) "of_pmem: " fmt
 
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/libnvdimm.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_address.h>
+#include <linaos/libnvdimm.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
 
 struct of_pmem_private {
 	struct nvdimm_bus_descriptor bus_desc;

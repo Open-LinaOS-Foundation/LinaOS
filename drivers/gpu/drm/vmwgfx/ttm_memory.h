@@ -28,13 +28,13 @@
 #ifndef TTM_MEMORY_H
 #define TTM_MEMORY_H
 
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/bug.h>
-#include <linux/wait.h>
-#include <linux/errno.h>
-#include <linux/kobject.h>
-#include <linux/mm.h>
+#include <linaos/workqueue.h>
+#include <linaos/spinlock.h>
+#include <linaos/bug.h>
+#include <linaos/wait.h>
+#include <linaos/errno.h>
+#include <linaos/kobject.h>
+#include <linaos/mm.h>
 
 #include <drm/ttm/ttm_bo_api.h>
 

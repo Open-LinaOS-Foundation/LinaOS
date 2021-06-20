@@ -133,7 +133,7 @@ ISP 提供的许多功能都不在标准 IOCTL 之列，例如 gamma（伽马）
 	VIDIOC_OMAP3ISP_STAT_REQ
 	VIDIOC_OMAP3ISP_STAT_EN
 
-在 include/linux/omap3isp.h 中描述了这些 ioctl 使用的参数结构体。
+在 include/linaos/omap3isp.h 中描述了这些 ioctl 使用的参数结构体。
 与特定 ISP 模块相关的 ISP 自身的详细功能在技术参考手册 (TRMs)中有
 描述，详见文档结尾。
 
@@ -272,6 +272,6 @@ DM 3730 TRM:
 参考资料
 =======
 
-[1] include/linux/omap3isp.h
+[1] include/linaos/omap3isp.h
 
 [2] http://git.ideasonboard.org/?p=media-ctl.git;a=summary

@@ -4,7 +4,7 @@
  *	(c) Copyright 2001 Red Hat Inc.
  *
  * based on the old aacraid driver that is..
- * Adaptec aacraid device driver for Linux.
+ * Adaptec aacraid device driver for LinaOS.
  *
  * Copyright (c) 2000-2010 Adaptec, Inc.
  *               2010-2015 PMC-Sierra, Inc. (aacraid@pmc-sierra.com)
@@ -16,17 +16,17 @@
  * Abstract: Contains Interfaces to manage IOs.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/blkdev.h>
-#include <linux/uaccess.h>
-#include <linux/highmem.h> /* For flush_kernel_dcache_page */
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/completion.h>
+#include <linaos/blkdev.h>
+#include <linaos/uaccess.h>
+#include <linaos/highmem.h> /* For flush_kernel_dcache_page */
+#include <linaos/module.h>
 
 #include <asm/unaligned.h>
 

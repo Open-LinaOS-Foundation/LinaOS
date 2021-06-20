@@ -5,7 +5,7 @@
  * This file may be distributed under the terms of the GNU General
  * Public License.
  *
- * Written by Tim Small <tim@buttersideup.com>, based on work by Linux
+ * Written by Tim Small <tim@buttersideup.com>, based on work by LinaOS
  * Networx, Thayne Harbaugh, Dan Hollis <goemon at anime dot net> and
  * others.
  *
@@ -21,14 +21,14 @@
  * how easy this would be).
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
 
 
-#include <linux/edac.h>
+#include <linaos/edac.h>
 #include "edac_module.h"
 
 #define EDAC_MOD_STR    "i82443bxgx_edac"

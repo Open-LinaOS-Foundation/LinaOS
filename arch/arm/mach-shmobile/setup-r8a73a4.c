@@ -6,7 +6,7 @@
  * Copyright (C) 2013  Magnus Damm
  */
 
-#include <linux/init.h>
+#include <linaos/init.h>
 
 #include <asm/mach/arch.h>
 

@@ -4,7 +4,7 @@
  * for more details.
  *
  * Copyright (C) 2005 Ilya A. Volynets-Evenbakh
- * Copyright (C) 2005, 07 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2005, 07 Ralf Baechle (ralf@linaos-mips.org)
  */
 #ifndef __ASM_MACH_IP32_CPU_FEATURE_OVERRIDES_H
 #define __ASM_MACH_IP32_CPU_FEATURE_OVERRIDES_H

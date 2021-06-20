@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/sunrpc/metrics.h
+ *  linaos/include/linaos/sunrpc/metrics.h
  *
  *  Declarations for RPC client per-operation metrics
  *
@@ -26,9 +26,9 @@
 #ifndef _LINUX_SUNRPC_METRICS_H
 #define _LINUX_SUNRPC_METRICS_H
 
-#include <linux/seq_file.h>
-#include <linux/ktime.h>
-#include <linux/spinlock.h>
+#include <linaos/seq_file.h>
+#include <linaos/ktime.h>
+#include <linaos/spinlock.h>
 
 #define RPC_IOSTATS_VERS	"1.1"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/nfs/dir.c
+ *  linaos/fs/nfs/dir.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -18,26 +18,26 @@
  *  6 Jun 1999	Cache readdir lookups in the page cache. -DaveM
  */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/errno.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/swap.h>
-#include <linux/sched.h>
-#include <linux/kmemleak.h>
-#include <linux/xattr.h>
+#include <linaos/module.h>
+#include <linaos/time.h>
+#include <linaos/errno.h>
+#include <linaos/stat.h>
+#include <linaos/fcntl.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_mount.h>
+#include <linaos/pagemap.h>
+#include <linaos/pagevec.h>
+#include <linaos/namei.h>
+#include <linaos/mount.h>
+#include <linaos/swap.h>
+#include <linaos/sched.h>
+#include <linaos/kmemleak.h>
+#include <linaos/xattr.h>
 
 #include "delegation.h"
 #include "iostat.h"
@@ -2395,7 +2395,7 @@ EXPORT_SYMBOL_GPL(nfs_link);
 
 /*
  * RENAME
- * FIXME: Some nfsds, like the Linux user space nfsd, may generate a
+ * FIXME: Some nfsds, like the LinaOS user space nfsd, may generate a
  * different file handle for the same inode after a rename (e.g. when
  * moving to a different directory). A fail-safe method to do so would
  * be to look up old_dir/old_name, create a link to new_dir/new_name and

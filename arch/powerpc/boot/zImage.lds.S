@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 
 #ifdef CONFIG_PPC64_BOOT_WRAPPER
 OUTPUT_ARCH(powerpc:common64)
@@ -64,11 +64,11 @@ SECTIONS
   }
 
   . = ALIGN(4096);
-  .kernel:vmlinux.strip :
+  .kernel:vmlinaos.strip :
   {
-    _vmlinux_start =  .;
-    *(.kernel:vmlinux.strip)
-    _vmlinux_end =  .;
+    _vmlinaos_start =  .;
+    *(.kernel:vmlinaos.strip)
+    _vmlinaos_end =  .;
   }
 
   . = ALIGN(4096);

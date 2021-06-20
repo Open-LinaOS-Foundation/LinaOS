@@ -4,8 +4,8 @@
 #include <crypto/internal/aead.h>
 #include <crypto/authenc.h>
 #include <crypto/scatterwalk.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/dma-mapping.h>
 
 #include "cc_buffer_mgr.h"
 #include "cc_lli_defs.h"

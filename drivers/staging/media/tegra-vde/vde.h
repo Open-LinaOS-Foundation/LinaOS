@@ -8,13 +8,13 @@
 #ifndef TEGRA_VDE_H
 #define TEGRA_VDE_H
 
-#include <linux/completion.h>
-#include <linux/dma-direction.h>
-#include <linux/iova.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linaos/completion.h>
+#include <linaos/dma-direction.h>
+#include <linaos/iova.h>
+#include <linaos/list.h>
+#include <linaos/miscdevice.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
 
 struct clk;
 struct dma_buf;

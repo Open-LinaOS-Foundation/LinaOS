@@ -1,5 +1,5 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
-/* r3964 linediscipline for linux
+/* SPDX-License-Identifier: GPL-1.0+ WITH LinaOS-syscall-note */
+/* r3964 linediscipline for linaos
  *
  * -----------------------------------------------------------
  * Copyright by

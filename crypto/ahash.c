@@ -10,14 +10,14 @@
 
 #include <crypto/internal/hash.h>
 #include <crypto/scatterwalk.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/cryptouser.h>
-#include <linux/compiler.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/seq_file.h>
+#include <linaos/cryptouser.h>
+#include <linaos/compiler.h>
 #include <net/netlink.h>
 
 #include "internal.h"
@@ -213,7 +213,7 @@ static int ahash_save_req(struct ahash_request *req, crypto_completion_t cplt)
 	 * WARNING: Voodoo programming below!
 	 *
 	 * The code below is obscure and hard to understand, thus explanation
-	 * is necessary. See include/crypto/hash.h and include/linux/crypto.h
+	 * is necessary. See include/crypto/hash.h and include/linaos/crypto.h
 	 * to understand the layout of structures used here!
 	 *
 	 * The code here will replace portions of the ORIGINAL request with

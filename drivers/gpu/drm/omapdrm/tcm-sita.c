@@ -16,13 +16,13 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  *
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/bitmap.h>
+#include <linaos/slab.h>
 #include "tcm.h"
 
 static unsigned long mask[8];

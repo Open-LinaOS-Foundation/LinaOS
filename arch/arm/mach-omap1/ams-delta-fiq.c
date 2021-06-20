@@ -7,18 +7,18 @@
  *  Copyright (c) 2004 Amstrad Plc
  *  Copyright (C) 2001 RidgeRun, Inc.
  *
- * Parts of this code are taken from linux/arch/arm/mach-omap/irq.c
+ * Parts of this code are taken from linaos/arch/arm/mach-omap/irq.c
  * in the MontaVista 2.4 kernel (and the Amstrad changes therein)
  */
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/platform_data/ams-delta-fiq.h>
-#include <linux/platform_device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/platform_data/ams-delta-fiq.h>
+#include <linaos/platform_device.h>
 
 #include <asm/fiq.h>
 
@@ -35,7 +35,7 @@ static struct fiq_handler fh = {
  * It is structured as a header section several 32bit slots,
  * followed by the circular buffer where the FIQ isr stores
  * keystrokes received from the qwerty keyboard.  See
- * <linux/platform_data/ams-delta-fiq.h> for details of offsets.
+ * <linaos/platform_data/ams-delta-fiq.h> for details of offsets.
  */
 static unsigned int fiq_buffer[1024];
 

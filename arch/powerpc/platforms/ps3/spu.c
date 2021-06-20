@@ -6,13 +6,13 @@
  *  Copyright 2006 Sony Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mmzone.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/mmzone.h>
+#include <linaos/export.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
 
 #include <asm/spu.h>
 #include <asm/spu_priv1.h>

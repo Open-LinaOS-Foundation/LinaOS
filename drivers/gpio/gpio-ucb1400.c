@@ -5,8 +5,8 @@
  * Author: Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/ucb1400.h>
+#include <linaos/module.h>
+#include <linaos/ucb1400.h>
 
 static int ucb1400_gpio_dir_in(struct gpio_chip *gc, unsigned off)
 {

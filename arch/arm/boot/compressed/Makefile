@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# linux/arch/arm/boot/compressed/Makefile
+# linaos/arch/arm/boot/compressed/Makefile
 #
-# create a compressed vmlinuz image from the original vmlinux
+# create a compressed vmlinuz image from the original vmlinaos
 #
 
 OBJS		=
@@ -72,9 +72,9 @@ endif
 MALLOC_SIZE	:= 65536
 
 AFLAGS_head.o += -DTEXT_OFFSET=$(TEXT_OFFSET) -DMALLOC_SIZE=$(MALLOC_SIZE)
-CPPFLAGS_vmlinux.lds := -DTEXT_START="$(ZTEXTADDR)" -DBSS_START="$(ZBSSADDR)"
-CPPFLAGS_vmlinux.lds += -DTEXT_OFFSET="$(TEXT_OFFSET)"
-CPPFLAGS_vmlinux.lds += -DMALLOC_SIZE="$(MALLOC_SIZE)"
+CPPFLAGS_vmlinaos.lds := -DTEXT_START="$(ZTEXTADDR)" -DBSS_START="$(ZBSSADDR)"
+CPPFLAGS_vmlinaos.lds += -DTEXT_OFFSET="$(TEXT_OFFSET)"
+CPPFLAGS_vmlinaos.lds += -DMALLOC_SIZE="$(MALLOC_SIZE)"
 
 compress-$(CONFIG_KERNEL_GZIP) = gzip
 compress-$(CONFIG_KERNEL_LZO)  = lzo
@@ -96,7 +96,7 @@ endif
 $(foreach o, $(libfdt_objs) atags_to_fdt.o fdt_check_mem_start.o, \
 	$(eval CFLAGS_$(o) := -I $(srctree)/scripts/dtc/libfdt -fno-stack-protector))
 
-targets       := vmlinux vmlinux.lds piggy_data piggy.o \
+targets       := vmlinaos vmlinaos.lds piggy_data piggy.o \
 		 lib1funcs.o ashldi3.o bswapsdi2.o \
 		 head.o $(OBJS)
 
@@ -110,27 +110,27 @@ ccflags-remove-$(CONFIG_FUNCTION_TRACER) += -pg
 asflags-y := -DZIMAGE
 
 # Supply kernel BSS size to the decompressor via a linker symbol.
-KBSS_SZ = $(shell echo $$(($$($(NM) $(obj)/../../../../vmlinux | \
+KBSS_SZ = $(shell echo $$(($$($(NM) $(obj)/../../../../vmlinaos | \
 		sed -n -e 's/^\([^ ]*\) [ABD] __bss_start$$/-0x\1/p' \
 		       -e 's/^\([^ ]*\) [ABD] __bss_stop$$/+0x\1/p') )) )
-LDFLAGS_vmlinux = --defsym _kernel_bss_size=$(KBSS_SZ)
+LDFLAGS_vmlinaos = --defsym _kernel_bss_size=$(KBSS_SZ)
 # Supply ZRELADDR to the decompressor via a linker symbol.
 ifneq ($(CONFIG_AUTO_ZRELADDR),y)
-LDFLAGS_vmlinux += --defsym zreladdr=$(ZRELADDR)
+LDFLAGS_vmlinaos += --defsym zreladdr=$(ZRELADDR)
 endif
 ifeq ($(CONFIG_CPU_ENDIAN_BE8),y)
-LDFLAGS_vmlinux += --be8
+LDFLAGS_vmlinaos += --be8
 endif
 # Report unresolved symbol references
-LDFLAGS_vmlinux += --no-undefined
+LDFLAGS_vmlinaos += --no-undefined
 # Delete all temporary local symbols
-LDFLAGS_vmlinux += -X
+LDFLAGS_vmlinaos += -X
 # Report orphan sections
 ifdef CONFIG_LD_ORPHAN_WARN
-LDFLAGS_vmlinux += --orphan-handling=warn
+LDFLAGS_vmlinaos += --orphan-handling=warn
 endif
 # Next argument is a linker script
-LDFLAGS_vmlinux += -T
+LDFLAGS_vmlinaos += -T
 
 # For __aeabi_uidivmod
 lib1funcs = $(obj)/lib1funcs.o
@@ -172,7 +172,7 @@ fi
 
 efi-obj-$(CONFIG_EFI_STUB) := $(objtree)/drivers/firmware/efi/libstub/lib.a
 
-$(obj)/vmlinux: $(obj)/vmlinux.lds $(obj)/$(HEAD) $(obj)/piggy.o \
+$(obj)/vmlinaos: $(obj)/vmlinaos.lds $(obj)/$(HEAD) $(obj)/piggy.o \
 		$(addprefix $(obj)/, $(OBJS)) $(lib1funcs) $(ashldi3) \
 		$(bswapsdi2) $(efi-obj-y) FORCE
 	@$(check_for_multiple_zreladdr)

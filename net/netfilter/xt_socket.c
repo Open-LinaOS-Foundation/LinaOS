@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Transparent proxy support for Linux/iptables
+ * Transparent proxy support for LinaOS/iptables
  *
  * Copyright (C) 2007-2008 BalaBit IT Ltd.
  * Author: Krisztian Kovacs
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter_ipv4/ip_tables.h>
 #include <net/tcp.h>
 #include <net/udp.h>
 #include <net/icmp.h>
@@ -18,13 +18,13 @@
 #include <net/netfilter/ipv4/nf_defrag_ipv4.h>
 
 #if IS_ENABLED(CONFIG_IP6_NF_IPTABLES)
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <linaos/netfilter_ipv6/ip6_tables.h>
 #include <net/inet6_hashtables.h>
 #include <net/netfilter/ipv6/nf_defrag_ipv6.h>
 #endif
 
 #include <net/netfilter/nf_socket.h>
-#include <linux/netfilter/xt_socket.h>
+#include <linaos/netfilter/xt_socket.h>
 
 /* "socket" match based redirection (no specific rule)
  * ===================================================

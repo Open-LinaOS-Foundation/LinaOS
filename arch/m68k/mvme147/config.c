@@ -13,18 +13,18 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/clocksource.h>
-#include <linux/console.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/genhd.h>
-#include <linux/rtc.h>
-#include <linux/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/tty.h>
+#include <linaos/clocksource.h>
+#include <linaos/console.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/major.h>
+#include <linaos/genhd.h>
+#include <linaos/rtc.h>
+#include <linaos/interrupt.h>
 
 #include <asm/bootinfo.h>
 #include <asm/bootinfo-vme.h>

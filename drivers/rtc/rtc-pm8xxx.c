@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2010-2011, Code Aurora Forum. All rights reserved.
  */
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/of.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/rtc.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 /* RTC Register offsets from RTC CTRL REG */
 #define PM8XXX_ALARM_CTRL_OFFSET	0x01

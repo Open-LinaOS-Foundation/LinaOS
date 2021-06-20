@@ -2,17 +2,17 @@
 /*
  * Functions related to setting various queue properties from drivers
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/pagemap.h>
-#include <linux/gcd.h>
-#include <linux/lcm.h>
-#include <linux/jiffies.h>
-#include <linux/gfp.h>
-#include <linux/dma-mapping.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/pagemap.h>
+#include <linaos/gcd.h>
+#include <linaos/lcm.h>
+#include <linaos/jiffies.h>
+#include <linaos/gfp.h>
+#include <linaos/dma-mapping.h>
 
 #include "blk.h"
 #include "blk-wbt.h"
@@ -721,7 +721,7 @@ void blk_queue_virt_boundary(struct request_queue *q, unsigned long mask)
 	/*
 	 * Devices that require a virtual boundary do not support scatter/gather
 	 * I/O natively, but instead require a descriptor list entry for each
-	 * page (which might not be idential to the Linux PAGE_SIZE).  Because
+	 * page (which might not be idential to the LinaOS PAGE_SIZE).  Because
 	 * of that they are not limited by our notion of "segment size".
 	 */
 	if (mask)

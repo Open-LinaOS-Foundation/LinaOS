@@ -6,7 +6,7 @@
 #ifndef __INTEL_LPE_AUDIO_H__
 #define __INTEL_LPE_AUDIO_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum pipe;
 enum port;

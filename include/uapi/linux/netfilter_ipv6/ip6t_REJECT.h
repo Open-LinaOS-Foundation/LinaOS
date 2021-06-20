@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _IP6T_REJECT_H
 #define _IP6T_REJECT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum ip6t_reject_with {
 	IP6T_ICMP6_NO_ROUTE,

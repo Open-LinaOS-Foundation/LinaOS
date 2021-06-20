@@ -20,24 +20,24 @@
  *
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
-#include <linux/wait.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
+#include <linaos/spinlock.h>
+#include <linaos/moduleparam.h>
+#include <linaos/wait.h>
 
-#include <linux/skbuff.h>
-#include <linux/io.h>
+#include <linaos/skbuff.h>
+#include <linaos/io.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ciscode.h>

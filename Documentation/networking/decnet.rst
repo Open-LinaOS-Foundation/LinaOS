@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =========================================
-Linux DECnet Networking Layer Information
+LinaOS DECnet Networking Layer Information
 =========================================
 
 1. Other documentation....
@@ -9,8 +9,8 @@ Linux DECnet Networking Layer Information
 
    - Project Home Pages
      - http://www.chygwyn.com/				   - Kernel info
-     - http://linux-decnet.sourceforge.net/                - Userland tools
-     - http://www.sourceforge.net/projects/linux-decnet/   - Status page
+     - http://linaos-decnet.sourceforge.net/                - Userland tools
+     - http://www.sourceforge.net/projects/linaos-decnet/   - Status page
 
 2. Configuring the kernel
 =========================
@@ -194,13 +194,13 @@ information (_most_ of which _is_ _essential_) includes:
 7. MAC FAQ
 ==========
 
-A quick FAQ on ethernet MAC addresses to explain how Linux and DECnet
+A quick FAQ on ethernet MAC addresses to explain how LinaOS and DECnet
 interact and how to get the best performance from your hardware.
 
 Ethernet cards are designed to normally only pass received network frames
 to a host computer when they are addressed to it, or to the broadcast address.
 
-Linux has an interface which allows the setting of extra addresses for
+LinaOS has an interface which allows the setting of extra addresses for
 an ethernet card to listen to. If the ethernet card supports it, the
 filtering operation will be done in hardware, if not the extra unwanted packets
 received will be discarded by the host computer. In the latter case,
@@ -233,7 +233,7 @@ http://sourceforge.net/mail/?group_id=4993
 9. Legal Info
 =============
 
-The Linux DECnet project team have placed their code under the GPL. The
+The LinaOS DECnet project team have placed their code under the GPL. The
 software is provided "as is" and without warranty express or implied.
 DECnet is a trademark of Compaq. This software is not a product of
 Compaq. We acknowledge the help of people at Compaq in providing extra

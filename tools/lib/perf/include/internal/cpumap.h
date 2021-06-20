@@ -2,7 +2,7 @@
 #ifndef __LIBPERF_INTERNAL_CPUMAP_H
 #define __LIBPERF_INTERNAL_CPUMAP_H
 
-#include <linux/refcount.h>
+#include <linaos/refcount.h>
 
 struct perf_cpu_map {
 	refcount_t	refcnt;

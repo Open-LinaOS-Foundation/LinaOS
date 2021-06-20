@@ -13,9 +13,9 @@
 #ifndef _LINUX_ICMP_H
 #define	_LINUX_ICMP_H
 
-#include <linux/skbuff.h>
-#include <uapi/linux/icmp.h>
-#include <uapi/linux/errqueue.h>
+#include <linaos/skbuff.h>
+#include <uapi/linaos/icmp.h>
+#include <uapi/linaos/errqueue.h>
 
 static inline struct icmphdr *icmp_hdr(const struct sk_buff *skb)
 {

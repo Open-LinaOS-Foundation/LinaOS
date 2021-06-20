@@ -3,7 +3,7 @@
 #define __ASM_POWERPC_CPUTABLE_H
 
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <uapi/asm/cputable.h>
 #include <asm/asm-const.h>
 

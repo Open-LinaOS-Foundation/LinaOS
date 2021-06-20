@@ -3,11 +3,11 @@
  * Copyright (c) 2015, NVIDIA Corporation.
  */
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/pci_ids.h>
-#include <linux/iopoll.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/firmware.h>
+#include <linaos/pci_ids.h>
+#include <linaos/iopoll.h>
 
 #include "falcon.h"
 #include "drm.h"

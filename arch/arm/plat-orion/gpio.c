@@ -10,19 +10,19 @@
 
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
+#include <linaos/gpio.h>
+#include <linaos/leds.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
 #include <plat/orion-gpio.h>
 
 /*
@@ -435,7 +435,7 @@ static void gpio_irq_handler(struct irq_desc *desc)
 }
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 
 static void orion_gpio_dbg_show(struct seq_file *s, struct gpio_chip *chip)
 {

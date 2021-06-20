@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/hp300/reboot.S
+ *  linaos/arch/m68k/hp300/reboot.S
  *
  *  Copyright (C) 1998 Philip Blundell <philb@gnu.org>
  *

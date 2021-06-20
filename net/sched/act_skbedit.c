@@ -5,11 +5,11 @@
  * Author: Alexander Duyck <alexander.h.duyck@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/ip.h>
@@ -17,7 +17,7 @@
 #include <net/dsfield.h>
 #include <net/pkt_cls.h>
 
-#include <linux/tc_act/tc_skbedit.h>
+#include <linaos/tc_act/tc_skbedit.h>
 #include <net/tc_act/tc_skbedit.h>
 
 static unsigned int skbedit_net_id;

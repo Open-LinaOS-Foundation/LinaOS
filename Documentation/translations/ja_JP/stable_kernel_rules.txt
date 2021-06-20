@@ -1,7 +1,7 @@
 NOTE:
 This is Japanese translated version of "Documentation/process/stable-kernel-rules.rst".
 This one is maintained by Tsugikazu Shibata <tshibata@ab.jp.nec.com>
-and JF Project team <www.linux.or.jp/JF>.
+and JF Project team <www.linaos.or.jp/JF>.
 If you find difference with original file or problem in translation,
 please contact maintainer of this file or JF project.
 
@@ -12,10 +12,10 @@ file at first.
 
 ==================================
 これは、
-linux-2.6.29/Documentation/process/stable-kernel-rules.rst
+linaos-2.6.29/Documentation/process/stable-kernel-rules.rst
 の和訳です。
 
-翻訳団体： JF プロジェクト < http://www.linux.or.jp/JF/ >
+翻訳団体： JF プロジェクト < http://www.linaos.or.jp/JF/ >
 翻訳日： 2009/1/14
 翻訳者： Tsugikazu Shibata <tshibata at ab dot jp dot nec dot com>
 校正者： 武井伸光さん、<takei at webmasters dot gr dot jp>
@@ -25,7 +25,7 @@ linux-2.6.29/Documentation/process/stable-kernel-rules.rst
          神宮信太郎さん <jin at libjingu dot jp>
 ==================================
 
-ずっと知りたかった Linux 2.6 -stable リリースの全て
+ずっと知りたかった LinaOS 2.6 -stable リリースの全て
 
 "-stable" ツリーにどのような種類のパッチが受け入れられるか、どのような
 ものが受け入れられないか、についての規則-
@@ -66,10 +66,10 @@ linux-2.6.29/Documentation/process/stable-kernel-rules.rst
 
  - -stable メンテナがレビューサイクルを決めるとき、パッチはレビュー委
    員会とパッチが影響する領域のメンテナ(提供者がその領域のメンテナで無
-   い限り)に送られ、linux-kernel メーリングリストにCCされる。
+   い限り)に送られ、linaos-kernel メーリングリストにCCされる。
  - レビュー委員会は 48時間の間に ACK か NAK を出す。
  - もしパッチが委員会のメンバから却下されるか、メンテナ達やメンバが気付
-   かなかった問題が持ちあがり、linux-kernel メンバがパッチに異議を唱え
+   かなかった問題が持ちあがり、linaos-kernel メンバがパッチに異議を唱え
    た場合には、パッチはキューから削除される。
  - レビューサイクルの最後に、ACK を受けたパッチは最新の -stable リリー
    スに追加され、その後に新しい -stable リリースが行われる。

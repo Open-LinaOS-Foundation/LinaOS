@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _NFNETLINK_COMPAT_H
 #define _NFNETLINK_COMPAT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifndef __KERNEL__
 /* Old nfnetlink macros for userspace */

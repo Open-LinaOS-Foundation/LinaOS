@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/node.h - generic node definition
+ * include/linaos/node.h - generic node definition
  *
  * This is mainly for topological representation. We define the 
  * basic 'struct node' here, which can be embedded in per-arch 
@@ -15,10 +15,10 @@
 #ifndef _LINUX_NODE_H_
 #define _LINUX_NODE_H_
 
-#include <linux/device.h>
-#include <linux/cpumask.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/cpumask.h>
+#include <linaos/list.h>
+#include <linaos/workqueue.h>
 
 /**
  * struct node_hmem_attrs - heterogeneous memory performance attributes

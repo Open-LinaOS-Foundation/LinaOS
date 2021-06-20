@@ -30,8 +30,8 @@
  * SOFTWARE.
  */
 
-#include <linux/platform_device.h>
-#include <linux/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/pci.h>
 #include "hns_roce_device.h"
 
 static int hns_roce_pd_alloc(struct hns_roce_dev *hr_dev, unsigned long *pdn)

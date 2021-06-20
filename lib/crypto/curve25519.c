@@ -10,8 +10,8 @@
  */
 
 #include <crypto/curve25519.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 
 static int __init mod_init(void)
 {

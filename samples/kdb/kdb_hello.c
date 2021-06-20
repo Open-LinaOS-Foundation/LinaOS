@@ -8,8 +8,8 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/kdb.h>
+#include <linaos/module.h>
+#include <linaos/kdb.h>
 
 /*
  * All kdb shell command call backs receive argc and argv, where

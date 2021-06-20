@@ -16,8 +16,8 @@
 #ifndef _LINUX_IF_ETHER_H
 #define _LINUX_IF_ETHER_H
 
-#include <linux/skbuff.h>
-#include <uapi/linux/if_ether.h>
+#include <linaos/skbuff.h>
+#include <uapi/linaos/if_ether.h>
 
 static inline struct ethhdr *eth_hdr(const struct sk_buff *skb)
 {

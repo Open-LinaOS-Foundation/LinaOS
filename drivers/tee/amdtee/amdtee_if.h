@@ -12,7 +12,7 @@
 #ifndef AMDTEE_IF_H
 #define AMDTEE_IF_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*****************************************************************************
  ** TEE Param

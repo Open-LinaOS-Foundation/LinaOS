@@ -6,19 +6,19 @@
  * Copyright (C) 2001 Peter Bergner.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/poison.h>
-#include <linux/pfn.h>
-#include <linux/debugfs.h>
-#include <linux/kmemleak.h>
-#include <linux/seq_file.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/poison.h>
+#include <linaos/pfn.h>
+#include <linaos/debugfs.h>
+#include <linaos/kmemleak.h>
+#include <linaos/seq_file.h>
+#include <linaos/memblock.h>
 
 #include <asm/sections.h>
-#include <linux/io.h>
+#include <linaos/io.h>
 
 #include "internal.h"
 

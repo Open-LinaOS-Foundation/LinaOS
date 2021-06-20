@@ -4,13 +4,13 @@
  * Copyright (C) 2012 Jeremy Kerr <jeremy.kerr@canonical.com>
  */
 
-#include <linux/efi.h>
-#include <linux/fs.h>
-#include <linux/ctype.h>
-#include <linux/kmemleak.h>
-#include <linux/slab.h>
-#include <linux/uuid.h>
-#include <linux/fileattr.h>
+#include <linaos/efi.h>
+#include <linaos/fs.h>
+#include <linaos/ctype.h>
+#include <linaos/kmemleak.h>
+#include <linaos/slab.h>
+#include <linaos/uuid.h>
+#include <linaos/fileattr.h>
 
 #include "internal.h"
 

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/debugfs.h>
-#include <linux/efi.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/pgtable.h>
+#include <linaos/debugfs.h>
+#include <linaos/efi.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/pgtable.h>
 
 static int ptdump_show(struct seq_file *m, void *v)
 {
@@ -72,5 +72,5 @@ static void __exit pt_dump_debug_exit(void)
 module_init(pt_dump_debug_init);
 module_exit(pt_dump_debug_exit);
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Arjan van de Ven <arjan@linux.intel.com>");
+MODULE_AUTHOR("Arjan van de Ven <arjan@linaos.intel.com>");
 MODULE_DESCRIPTION("Kernel debugging helper that dumps pagetables");

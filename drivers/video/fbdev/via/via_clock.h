@@ -11,7 +11,7 @@
 #ifndef __VIA_CLOCK_H__
 #define __VIA_CLOCK_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum via_clksrc {
 	VIA_CLKSRC_X1 = 0,

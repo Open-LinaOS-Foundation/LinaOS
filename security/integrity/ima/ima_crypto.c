@@ -10,14 +10,14 @@
  *	Calculates md5/sha1 file hash, template hash, boot-aggreate hash
  */
 
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/ratelimit.h>
-#include <linux/file.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/moduleparam.h>
+#include <linaos/ratelimit.h>
+#include <linaos/file.h>
+#include <linaos/crypto.h>
+#include <linaos/scatterlist.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
 #include <crypto/hash.h>
 
 #include "ima.h"

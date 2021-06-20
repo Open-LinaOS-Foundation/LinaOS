@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Prom access routines for the sun3x */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/string.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/tty.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
 
 #include <asm/page.h>
 #include <asm/setup.h>
@@ -25,7 +25,7 @@ int (*sun3x_mayget)(void);
 int (*sun3x_mayput)(int);
 void (*sun3x_prom_reboot)(void);
 e_vector sun3x_prom_abort;
-struct linux_romvec *romvec;
+struct linaos_romvec *romvec;
 
 /* prom vector table */
 e_vector *sun3x_prom_vbr;
@@ -69,7 +69,7 @@ void sun3x_reboot(void)
 	sun3_enable_irq(7);
 
 	/* Let 'er rip */
-	(*romvec->pv_reboot)("vmlinux");
+	(*romvec->pv_reboot)("vmlinaos");
 }
 
 static void sun3x_prom_write(struct console *co, const char *s,
@@ -101,7 +101,7 @@ void __init sun3x_prom_init(void)
 	sun3x_mayput = *(int (**)(int))   (SUN3X_P_MAYPUT);
 	sun3x_prom_reboot = *(void (**)(void)) (SUN3X_P_REBOOT);
 	sun3x_prom_abort = *(e_vector *)  (SUN3X_P_ABORT);
-	romvec = (struct linux_romvec *)SUN3X_PROM_BASE;
+	romvec = (struct linaos_romvec *)SUN3X_PROM_BASE;
 
 	idprom_init();
 

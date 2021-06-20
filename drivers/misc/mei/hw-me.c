@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (c) 2003-2020, Intel Corporation. All rights reserved.
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) LinaOS driver
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/sizes.h>
+#include <linaos/kthread.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sizes.h>
 
 #include "mei_dev.h"
 #include "hbm.h"

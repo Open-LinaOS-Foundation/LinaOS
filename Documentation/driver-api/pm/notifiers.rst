@@ -69,6 +69,6 @@ always NULL).
 
 To register and/or unregister a suspend notifier use
 :c:func:`register_pm_notifier()` and :c:func:`unregister_pm_notifier()`,
-respectively (both defined in :file:`include/linux/suspend.h`).  If you don't
+respectively (both defined in :file:`include/linaos/suspend.h`).  If you don't
 need to unregister the notifier, you can also use the :c:func:`pm_notifier()`
-macro defined in :file:`include/linux/suspend.h`.
+macro defined in :file:`include/linaos/suspend.h`.

@@ -1,42 +1,42 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/x86_64/mm/init.c
+ *  linaos/arch/x86_64/mm/init.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Copyright (C) 2000  Pavel Machek <pavel@ucw.cz>
  *  Copyright (C) 2002,2003 Andi Kleen <ak@suse.de>
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/pci.h>
-#include <linux/pfn.h>
-#include <linux/poison.h>
-#include <linux/dma-mapping.h>
-#include <linux/memory.h>
-#include <linux/memory_hotplug.h>
-#include <linux/memremap.h>
-#include <linux/nmi.h>
-#include <linux/gfp.h>
-#include <linux/kcore.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/ptrace.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/smp.h>
+#include <linaos/init.h>
+#include <linaos/initrd.h>
+#include <linaos/pagemap.h>
+#include <linaos/memblock.h>
+#include <linaos/proc_fs.h>
+#include <linaos/pci.h>
+#include <linaos/pfn.h>
+#include <linaos/poison.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/memory.h>
+#include <linaos/memory_hotplug.h>
+#include <linaos/memremap.h>
+#include <linaos/nmi.h>
+#include <linaos/gfp.h>
+#include <linaos/kcore.h>
 
 #include <asm/processor.h>
 #include <asm/bios_ebda.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/pgalloc.h>
 #include <asm/dma.h>
 #include <asm/fixmap.h>

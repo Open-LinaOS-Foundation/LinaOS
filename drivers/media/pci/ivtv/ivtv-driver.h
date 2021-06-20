@@ -37,28 +37,28 @@
  *                using information provided by Jiun-Kuei Jung @ AVerMedia.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/sched/signal.h>
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/list.h>
-#include <linux/unistd.h>
-#include <linux/pagemap.h>
-#include <linux/scatterlist.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/sched/signal.h>
+#include <linaos/fs.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-bit.h>
+#include <linaos/list.h>
+#include <linaos/unistd.h>
+#include <linaos/pagemap.h>
+#include <linaos/scatterlist.h>
+#include <linaos/kthread.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 #include <asm/byteorder.h>
 
-#include <linux/dvb/video.h>
-#include <linux/dvb/audio.h>
+#include <linaos/dvb/video.h>
+#include <linaos/dvb/audio.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
@@ -68,7 +68,7 @@
 #include <media/drv-intf/cx2341x.h>
 #include <media/i2c/ir-kbd-i2c.h>
 
-#include <linux/ivtv.h>
+#include <linaos/ivtv.h>
 
 /* Memory layout */
 #define IVTV_ENCODER_OFFSET	0x00000000

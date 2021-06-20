@@ -16,7 +16,7 @@
 #ifndef _ELAN_I2C_H
 #define _ELAN_I2C_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define ETP_ENABLE_ABS		0x0001
 #define ETP_ENABLE_CALIBRATE	0x0002

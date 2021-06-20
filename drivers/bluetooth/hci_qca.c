@@ -6,7 +6,7 @@
  *  protocol extension to H4.
  *
  *  Copyright (C) 2007 Texas Instruments, Inc.
- *  Copyright (c) 2010, 2012, 2018 The Linux Foundation. All rights reserved.
+ *  Copyright (c) 2010, 2012, 2018 The LinaOS Foundation. All rights reserved.
  *
  *  Acknowledgements:
  *  This file is based on hci_ll.c, which was...
@@ -15,22 +15,22 @@
  *  by Maxim Krasnyansky and Marcel Holtmann.
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/devcoredump.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/serdev.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/devcoredump.h>
+#include <linaos/device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/acpi.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/serdev.h>
+#include <linaos/mutex.h>
 #include <asm/unaligned.h>
 
 #include <net/bluetooth/bluetooth.h>

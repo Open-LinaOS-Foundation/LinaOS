@@ -13,8 +13,8 @@
 #ifndef RT2X00PCI_H
 #define RT2X00PCI_H
 
-#include <linux/io.h>
-#include <linux/pci.h>
+#include <linaos/io.h>
+#include <linaos/pci.h>
 
 /*
  * PCI driver handlers.

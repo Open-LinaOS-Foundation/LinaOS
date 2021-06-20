@@ -4,7 +4,7 @@
  * Author: Maxime Jourdan <mjourdan@baylibre.com>
  */
 
-#include <linux/gcd.h>
+#include <linaos/gcd.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/v4l2-event.h>
 #include <media/videobuf2-dma-contig.h>

@@ -8,17 +8,17 @@
  * 7-bit I2C slave address: 0x57
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/of_device.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/of_device.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/triggered_buffer.h>
 
 /* Control, setting and status registers */
 #define ISL29501_DEVICE_ID			0x00

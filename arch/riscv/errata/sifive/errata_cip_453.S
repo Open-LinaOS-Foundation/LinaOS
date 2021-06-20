@@ -3,7 +3,7 @@
  * Copyright (C) 2021 SiFive
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>
 #include <asm/alternative.h>

@@ -3,8 +3,8 @@
  * Copyright (C) 2004, OGAWA Hirofumi
  */
 
-#include <linux/blkdev.h>
-#include <linux/sched/signal.h>
+#include <linaos/blkdev.h>
+#include <linaos/sched/signal.h>
 #include "fat.h"
 
 struct fatent_operations {

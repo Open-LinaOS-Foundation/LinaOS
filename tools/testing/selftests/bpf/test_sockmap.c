@@ -22,12 +22,12 @@
 #include <sys/types.h>
 #include <sys/sendfile.h>
 
-#include <linux/netlink.h>
-#include <linux/socket.h>
-#include <linux/sock_diag.h>
-#include <linux/bpf.h>
-#include <linux/if_link.h>
-#include <linux/tls.h>
+#include <linaos/netlink.h>
+#include <linaos/socket.h>
+#include <linaos/sock_diag.h>
+#include <linaos/bpf.h>
+#include <linaos/if_link.h>
+#include <linaos/tls.h>
 #include <assert.h>
 #include <libgen.h>
 

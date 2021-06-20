@@ -7,8 +7,8 @@
  * functionality:
  */
 
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <linaos/sched.h>
+#include <linaos/uaccess.h>
 
 struct task_struct;
 struct rusage;

@@ -34,10 +34,10 @@ and C local variables) with debuginfo.
 OPTIONS
 -------
 -k::
---vmlinux=PATH::
-	Specify vmlinux path which has debuginfo (Dwarf binary).
+--vmlinaos=PATH::
+	Specify vmlinaos path which has debuginfo (Dwarf binary).
 	Only when using this with --definition, you can give an offline
-	vmlinux file.
+	vmlinaos file.
 
 -m::
 --module=MODNAME|PATH::

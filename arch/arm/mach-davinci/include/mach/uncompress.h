@@ -18,8 +18,8 @@
  * kind, whether express or implied.
  */
 
-#include <linux/types.h>
-#include <linux/serial_reg.h>
+#include <linaos/types.h>
+#include <linaos/serial_reg.h>
 
 #include <asm/mach-types.h>
 

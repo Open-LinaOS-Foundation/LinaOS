@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The LinaOS Foundation. All rights reserved.
  */
 
 /*
@@ -9,9 +9,9 @@
  * for ease of debug, and to a lesser degree for code size,
  * we implement here as subroutines.
  */
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/pgtable.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
+#include <linaos/pgtable.h>
 
 /*
  * For clear_user(), exploit previously defined copy_to_user function

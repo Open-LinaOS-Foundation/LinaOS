@@ -3,7 +3,7 @@
 #define __ASM_SH_SH7763RDP_H
 
 /*
- * linux/include/asm-sh/sh7763drp.h
+ * linaos/include/asm-sh/sh7763drp.h
  *
  * Copyright (C) 2008 Renesas Solutions
  * Copyright (C) 2008 Nobuhiro Iwamatsu <iwamatsu.nobuhiro@renesas.com>

@@ -6,13 +6,13 @@
 #ifndef _NE_MISC_DEV_H_
 #define _NE_MISC_DEV_H_
 
-#include <linux/cpumask.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
+#include <linaos/cpumask.h>
+#include <linaos/list.h>
+#include <linaos/miscdevice.h>
+#include <linaos/mm.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/wait.h>
 
 #include "ne_pci_dev.h"
 

@@ -2,8 +2,8 @@
 /*
  * Some non-inline ceph helpers
  */
-#include <linux/module.h>
-#include <linux/ceph/types.h>
+#include <linaos/module.h>
+#include <linaos/ceph/types.h>
 
 /*
  * return true if @layout appears to be valid

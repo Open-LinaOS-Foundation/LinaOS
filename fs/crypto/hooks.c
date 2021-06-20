@@ -5,7 +5,7 @@
  * Encryption hooks for higher-level filesystem operations.
  */
 
-#include <linux/key.h>
+#include <linaos/key.h>
 
 #include "fscrypt_private.h"
 

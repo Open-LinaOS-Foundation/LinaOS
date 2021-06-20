@@ -8,7 +8,7 @@
 #include <net/sock.h>
 #include "dccp.h"
 #include "ccids/ccid3.h"
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include <trace/events/net_probe_common.h>
 
 TRACE_EVENT(dccp_probe,

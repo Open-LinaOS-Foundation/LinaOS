@@ -2,8 +2,8 @@
 #ifndef _LINUX_EXTABLE_H
 #define _LINUX_EXTABLE_H
 
-#include <linux/stddef.h>	/* for NULL */
-#include <linux/types.h>
+#include <linaos/stddef.h>	/* for NULL */
+#include <linaos/types.h>
 
 struct module;
 struct exception_table_entry;

@@ -8,11 +8,11 @@
  *	    Pankaj Dev <pankaj.dev@st.com>
  */
 
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
 #include "clkgen.h"
 
 static const char ** __init clkgen_mux_get_parents(struct device_node *np,

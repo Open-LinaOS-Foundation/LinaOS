@@ -3,11 +3,11 @@
  * Setup routines for AGP 3.5 compliant bridges.
  */
 
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/agp_backend.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/list.h>
+#include <linaos/pci.h>
+#include <linaos/agp_backend.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 #include "agp.h"
 

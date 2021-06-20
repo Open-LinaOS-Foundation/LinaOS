@@ -5,11 +5,11 @@
  * Copyright (C) 2006, NXP Semiconductors, All Rights Reserved
  * Author: Jean-Paul Saman <jean-paul.saman@nxp.com>
  */
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/kdev_t.h>
-#include <linux/syscalls.h>
-#include <linux/init_syscalls.h>
+#include <linaos/init.h>
+#include <linaos/stat.h>
+#include <linaos/kdev_t.h>
+#include <linaos/syscalls.h>
+#include <linaos/init_syscalls.h>
 
 /*
  * Create a simple rootfs that is similar to the default initramfs

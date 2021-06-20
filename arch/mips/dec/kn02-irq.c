@@ -6,9 +6,9 @@
  *	Copyright (c) 2002, 2003, 2005  Maciej W. Rozycki
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/types.h>
 
 #include <asm/dec/kn02.h>
 

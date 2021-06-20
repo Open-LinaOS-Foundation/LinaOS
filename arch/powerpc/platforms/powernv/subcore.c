@@ -5,13 +5,13 @@
 
 #define pr_fmt(fmt)	"powernv: " fmt
 
-#include <linux/kernel.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
-#include <linux/smp.h>
-#include <linux/stop_machine.h>
+#include <linaos/kernel.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/device.h>
+#include <linaos/gfp.h>
+#include <linaos/smp.h>
+#include <linaos/stop_machine.h>
 
 #include <asm/cputhreads.h>
 #include <asm/cpuidle.h>

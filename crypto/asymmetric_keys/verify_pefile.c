@@ -6,13 +6,13 @@
  */
 
 #define pr_fmt(fmt) "PEFILE: "fmt
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/pe.h>
-#include <linux/asn1.h>
-#include <linux/verification.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/pe.h>
+#include <linaos/asn1.h>
+#include <linaos/verification.h>
 #include <crypto/hash.h>
 #include "verify_pefile.h"
 

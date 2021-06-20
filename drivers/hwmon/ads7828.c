@@ -7,22 +7,22 @@
  *
  * Written by Steve Hardy <shardy@redhat.com>
  *
- * ADS7830 support, by Guillaume Roguez <guillaume.roguez@savoirfairelinux.com>
+ * ADS7830 support, by Guillaume Roguez <guillaume.roguez@savoirfairelinaos.com>
  *
  * For further information, see the Documentation/hwmon/ads7828.rst file.
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_data/ads7828.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/err.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_data/ads7828.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/regulator/consumer.h>
 
 /* The ADS7828 registers */
 #define ADS7828_CMD_SD_SE	0x80	/* Single ended inputs */

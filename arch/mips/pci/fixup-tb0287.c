@@ -2,10 +2,10 @@
 /*
  *  fixup-tb0287.c, The TANBAC TB0287 specific PCI fixups.
  *
- *  Copyright (C) 2005	Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2005	Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 
 #include <asm/vr41xx/tb0287.h>
 

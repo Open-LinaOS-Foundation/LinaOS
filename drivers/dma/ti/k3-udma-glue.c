@@ -6,16 +6,16 @@
  *
  */
 
-#include <linux/atomic.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/soc/ti/k3-ringacc.h>
-#include <linux/dma/ti-cppi5.h>
-#include <linux/dma/k3-udma-glue.h>
+#include <linaos/atomic.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/soc/ti/k3-ringacc.h>
+#include <linaos/dma/ti-cppi5.h>
+#include <linaos/dma/k3-udma-glue.h>
 
 #include "k3-udma.h"
 #include "k3-psil-priv.h"
@@ -1009,7 +1009,7 @@ k3_udma_glue_request_remote_rx_chn(struct device *dev, const char *name,
 
 	/*
 	 * Remote RX channel is under control of Remote CPU core, so
-	 * Linux can only request and manipulate by dedicated RX flows
+	 * LinaOS can only request and manipulate by dedicated RX flows
 	 */
 
 	rx_chn = devm_kzalloc(dev, sizeof(*rx_chn), GFP_KERNEL);

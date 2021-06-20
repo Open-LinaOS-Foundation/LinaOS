@@ -22,14 +22,14 @@
  * irq levels 10 and 11.
  */
 
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/eisa.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
+#include <linaos/eisa.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>

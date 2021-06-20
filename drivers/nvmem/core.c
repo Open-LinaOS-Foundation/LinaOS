@@ -6,18 +6,18 @@
  * Copyright (C) 2013 Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/nvmem-provider.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/fs.h>
+#include <linaos/idr.h>
+#include <linaos/init.h>
+#include <linaos/kref.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-consumer.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 
 struct nvmem_device {
 	struct module		*owner;

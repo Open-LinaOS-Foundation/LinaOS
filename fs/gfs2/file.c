@@ -4,28 +4,28 @@
  * Copyright (C) 2004-2006 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/compat.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/blkdev.h>
-#include <linux/mm.h>
-#include <linux/mount.h>
-#include <linux/fs.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/falloc.h>
-#include <linux/swap.h>
-#include <linux/crc32.h>
-#include <linux/writeback.h>
-#include <linux/uaccess.h>
-#include <linux/dlm.h>
-#include <linux/dlm_plock.h>
-#include <linux/delay.h>
-#include <linux/backing-dev.h>
-#include <linux/fileattr.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/compat.h>
+#include <linaos/completion.h>
+#include <linaos/buffer_head.h>
+#include <linaos/pagemap.h>
+#include <linaos/uio.h>
+#include <linaos/blkdev.h>
+#include <linaos/mm.h>
+#include <linaos/mount.h>
+#include <linaos/fs.h>
+#include <linaos/gfs2_ondisk.h>
+#include <linaos/falloc.h>
+#include <linaos/swap.h>
+#include <linaos/crc32.h>
+#include <linaos/writeback.h>
+#include <linaos/uaccess.h>
+#include <linaos/dlm.h>
+#include <linaos/dlm_plock.h>
+#include <linaos/delay.h>
+#include <linaos/backing-dev.h>
+#include <linaos/fileattr.h>
 
 #include "gfs2.h"
 #include "incore.h"

@@ -2,9 +2,9 @@
 // Copyright (C) 2012 ARM Limited
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/const.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
+#include <linaos/const.h>
 #include <asm/page.h>
 
 	.globl vdso_start, vdso_end

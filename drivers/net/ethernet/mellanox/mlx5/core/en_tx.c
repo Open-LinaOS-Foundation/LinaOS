@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/tcp.h>
-#include <linux/if_vlan.h>
-#include <linux/ptp_classify.h>
+#include <linaos/tcp.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ptp_classify.h>
 #include <net/geneve.h>
 #include <net/dsfield.h>
 #include "en.h"

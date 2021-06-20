@@ -11,8 +11,8 @@
 
 #ifndef __STA2X11_MFD_H
 #define __STA2X11_MFD_H
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
 
 enum sta2x11_mfd_plat_dev {
 	sta2x11_sctl = 0,

@@ -30,13 +30,13 @@
 
 /* Include files */
 
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/ata.h>
-#include <linux/hdreg.h>
-#include <linux/scatterlist.h>
+#include <linaos/jiffies.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/ata.h>
+#include <linaos/hdreg.h>
+#include <linaos/scatterlist.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -149,10 +149,10 @@ static struct us_unusual_dev isd200_unusual_dev_list[] = {
 #define ATA_REG_HCYL_OFFSET		5
 #define ATA_REG_STATUS_OFFSET		7
 
-/* ATA error definitions not in <linux/hdreg.h> */
+/* ATA error definitions not in <linaos/hdreg.h> */
 #define ATA_ERROR_MEDIA_CHANGE		0x20
 
-/* ATA command definitions not in <linux/hdreg.h> */
+/* ATA command definitions not in <linaos/hdreg.h> */
 #define ATA_COMMAND_GET_MEDIA_STATUS	0xDA
 #define ATA_COMMAND_MEDIA_EJECT		0xED
 

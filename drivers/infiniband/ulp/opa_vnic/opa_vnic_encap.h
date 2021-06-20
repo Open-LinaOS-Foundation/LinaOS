@@ -52,7 +52,7 @@
  * and decapsulation of Ethernet packets
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <rdma/ib_mad.h>
 
 /* EMA class version */

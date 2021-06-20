@@ -4,18 +4,18 @@
  * Copyright (C) 2008 Red Hat, Inc. All Rights Reserved.
  * Written by David Howells (dhowells@redhat.com)
  */
-#include <linux/export.h>
-#include <linux/cred.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/coredump.h>
-#include <linux/key.h>
-#include <linux/keyctl.h>
-#include <linux/init_task.h>
-#include <linux/security.h>
-#include <linux/binfmts.h>
-#include <linux/cn_proc.h>
-#include <linux/uidgid.h>
+#include <linaos/export.h>
+#include <linaos/cred.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/sched/coredump.h>
+#include <linaos/key.h>
+#include <linaos/keyctl.h>
+#include <linaos/init_task.h>
+#include <linaos/security.h>
+#include <linaos/binfmts.h>
+#include <linaos/cn_proc.h>
+#include <linaos/uidgid.h>
 
 #if 0
 #define kdebug(FMT, ...)						\

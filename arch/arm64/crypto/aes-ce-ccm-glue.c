@@ -13,7 +13,7 @@
 #include <crypto/internal/aead.h>
 #include <crypto/internal/simd.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "aes-ce-setkey.h"
 
@@ -73,7 +73,7 @@ static int ccm_init_mac(struct aead_request *req, u8 maciv[], u32 msglen)
 		return -EOVERFLOW;
 
 	/*
-	 * Even if the CCM spec allows L values of up to 8, the Linux cryptoapi
+	 * Even if the CCM spec allows L values of up to 8, the LinaOS cryptoapi
 	 * uses a u32 type to represent msglen so the top 4 bytes are always 0.
 	 */
 	n[0] = 0;

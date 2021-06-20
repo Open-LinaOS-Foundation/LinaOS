@@ -16,16 +16,16 @@
  * Copyright 2011 Google, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kobject.h>
-#include <linux/dmi.h>
-#include <linux/capability.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kobject.h>
+#include <linaos/dmi.h>
+#include <linaos/capability.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/io.h>
 #include <asm/dmi.h>
 
 #define MAX_ENTRY_TYPE 255 /* Most of these aren't used, but we consider

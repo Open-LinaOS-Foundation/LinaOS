@@ -157,7 +157,7 @@
 		power {
 			label = "Power Button";
 			gpios = <&gpio2 21 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};
@@ -411,7 +411,7 @@
 &kpp {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_kpp>;
-	linux,keymap = <
+	linaos,keymap = <
 		MATRIX_KEY(0, 0, KEY_UP)
 		MATRIX_KEY(0, 1, KEY_DOWN)
 		MATRIX_KEY(0, 2, KEY_VOLUMEDOWN)

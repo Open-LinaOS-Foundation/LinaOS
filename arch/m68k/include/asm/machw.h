@@ -1,5 +1,5 @@
 /*
-** linux/machw.h -- This header defines some macros and pointers for
+** linaos/machw.h -- This header defines some macros and pointers for
 **                    the various Macintosh custom hardware registers.
 **
 ** Copyright 1997 by Michael Schmitz
@@ -21,4 +21,4 @@
 #define VIDEOMEMSIZE	(4096*1024)
 #define VIDEOMEMMASK	(-4096*1024)
 
-#endif /* linux/machw.h */
+#endif /* linaos/machw.h */

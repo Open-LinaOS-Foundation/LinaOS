@@ -14,13 +14,13 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/arm-cci.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/arm-cci.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>

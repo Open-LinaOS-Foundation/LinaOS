@@ -25,7 +25,7 @@
  * Authors: Thomas Hellström <thomas-at-tungstengraphics-dot-com>
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>
@@ -82,7 +82,7 @@ int via_final_context(struct drm_device *dev, int context)
 
 	via_release_futex(dev_priv, context);
 
-	/* Linux specific until context tracking code gets ported to BSD */
+	/* LinaOS specific until context tracking code gets ported to BSD */
 	/* Last context, perform cleanup */
 	if (list_is_singular(&dev->ctxlist)) {
 		DRM_DEBUG("Last Context\n");

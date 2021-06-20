@@ -15,13 +15,13 @@
 #ifndef _CLK_KONA_H
 #define _CLK_KONA_H
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/clk-provider.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/of.h>
+#include <linaos/clk-provider.h>
 
 #define	BILLION		1000000000
 

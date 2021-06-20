@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/prandom.h
+ * include/linaos/prandom.h
  *
  * Include file for the fast pseudo-random 32-bit
  * generation.
@@ -8,8 +8,8 @@
 #ifndef _LINUX_PRANDOM_H
 #define _LINUX_PRANDOM_H
 
-#include <linux/types.h>
-#include <linux/percpu.h>
+#include <linaos/types.h>
+#include <linaos/percpu.h>
 
 u32 prandom_u32(void);
 void prandom_bytes(void *buf, size_t nbytes);

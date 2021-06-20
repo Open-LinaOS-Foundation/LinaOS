@@ -4,12 +4,12 @@
  *
  * Copyright (C) 2015 Intel Corporation
  *
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linaos.intel.com>
  */
 
-#include <linux/delay.h>
-#include <linux/time64.h>
-#include <linux/ulpi/regs.h>
+#include <linaos/delay.h>
+#include <linaos/time64.h>
+#include <linaos/ulpi/regs.h>
 
 #include "core.h"
 #include "io.h"

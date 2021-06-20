@@ -9,31 +9,31 @@
  * 	- completely revamped method functions so they are aware and
  * 	  independent of the flash geometry (buswidth, interleave, etc.)
  * 	- scalability vs code size is completely set at compile-time
- * 	  (see include/linux/mtd/cfi.h for selection)
+ * 	  (see include/linaos/mtd/cfi.h for selection)
  *	- optimized write buffer method
  * 02/05/2002	Christopher Hoover <ch@hpl.hp.com>/<ch@murgatroid.com>
  *	- reworked lock/unlock/erase support for var size flash
- * 21/03/2007   Rodolfo Giometti <giometti@linux.it>
+ * 21/03/2007   Rodolfo Giometti <giometti@linaos.it>
  * 	- auto unlock sectors on resume for auto locking flash on power up
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/bitmap.h>
-#include <linux/mtd/xip.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/cfi.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/reboot.h>
+#include <linaos/bitmap.h>
+#include <linaos/mtd/xip.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/cfi.h>
 
 /* #define CMDSET0001_DISABLE_ERASE_SUSPEND_ON_WRITE */
 /* #define CMDSET0001_DISABLE_WRITE_SUSPEND */

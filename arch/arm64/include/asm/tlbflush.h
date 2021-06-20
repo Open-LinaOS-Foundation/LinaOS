@@ -10,9 +10,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bitfield.h>
-#include <linux/mm_types.h>
-#include <linux/sched.h>
+#include <linaos/bitfield.h>
+#include <linaos/mm_types.h>
+#include <linaos/sched.h>
 #include <asm/cputype.h>
 #include <asm/mmu.h>
 

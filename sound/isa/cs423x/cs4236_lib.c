@@ -65,11 +65,11 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/wait.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/time.h>
+#include <linaos/wait.h>
 #include <sound/core.h>
 #include <sound/wss.h>
 #include <sound/asoundef.h>

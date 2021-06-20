@@ -7,14 +7,14 @@ use Getopt::Long;
 
 # Copyright 2008, Intel Corporation
 #
-# This file is part of the Linux kernel
+# This file is part of the LinaOS kernel
 #
 # Authors:
-# 	Arjan van de Ven <arjan@linux.intel.com>
+# 	Arjan van de Ven <arjan@linaos.intel.com>
 
 
 my $cross_compile = "";
-my $vmlinux_name = "";
+my $vmlinaos_name = "";
 my $modulefile = "";
 
 # Get options
@@ -23,14 +23,14 @@ Getopt::Long::GetOptions(
 	'module|m=s'		=> \$modulefile,
 	'help|h'		=> \&usage,
 ) || usage ();
-my $vmlinux_name = $ARGV[0];
-if (!defined($vmlinux_name)) {
+my $vmlinaos_name = $ARGV[0];
+if (!defined($vmlinaos_name)) {
 	my $kerver = `uname -r`;
 	chomp($kerver);
-	$vmlinux_name = "/lib/modules/$kerver/build/vmlinux";
-	print "No vmlinux specified, assuming $vmlinux_name\n";
+	$vmlinaos_name = "/lib/modules/$kerver/build/vmlinaos";
+	print "No vmlinaos specified, assuming $vmlinaos_name\n";
 }
-my $filename = $vmlinux_name;
+my $filename = $vmlinaos_name;
 
 # Parse the oops to find the EIP value
 

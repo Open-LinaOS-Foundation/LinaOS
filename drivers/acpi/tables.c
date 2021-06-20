@@ -9,18 +9,18 @@
 /* #define DEBUG */
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/memblock.h>
-#include <linux/earlycpio.h>
-#include <linux/initrd.h>
-#include <linux/security.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/smp.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/irq.h>
+#include <linaos/errno.h>
+#include <linaos/acpi.h>
+#include <linaos/memblock.h>
+#include <linaos/earlycpio.h>
+#include <linaos/initrd.h>
+#include <linaos/security.h>
 #include "internal.h"
 
 #ifdef CONFIG_ACPI_CUSTOM_DSDT
@@ -446,7 +446,7 @@ static void __init check_multiple_madt(void)
 		pr_warn("BIOS bug: multiple APIC/MADT found, using %d\n",
 			acpi_apic_instance);
 		pr_warn("If \"acpi_apic_instance=%d\" works better, "
-			"notify linux-acpi@vger.kernel.org\n",
+			"notify linaos-acpi@vger.kernel.org\n",
 			acpi_apic_instance ? 0 : 2);
 		acpi_put_table(table);
 

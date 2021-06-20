@@ -5,7 +5,7 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "ar-internal.h"
 
 static struct rxrpc_bundle rxrpc_service_dummy_bundle = {

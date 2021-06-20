@@ -3,12 +3,12 @@
 #define __INCLUDE_LINUX_OOM_H
 
 
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/nodemask.h>
-#include <uapi/linux/oom.h>
-#include <linux/sched/coredump.h> /* MMF_* */
-#include <linux/mm.h> /* VM_FAULT* */
+#include <linaos/sched/signal.h>
+#include <linaos/types.h>
+#include <linaos/nodemask.h>
+#include <uapi/linaos/oom.h>
+#include <linaos/sched/coredump.h> /* MMF_* */
+#include <linaos/mm.h> /* VM_FAULT* */
 
 struct zonelist;
 struct notifier_block;

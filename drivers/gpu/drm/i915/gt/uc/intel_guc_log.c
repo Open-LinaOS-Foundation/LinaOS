@@ -3,7 +3,7 @@
  * Copyright © 2014-2019 Intel Corporation
  */
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 #include "gt/intel_gt.h"
 #include "i915_drv.h"

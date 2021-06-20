@@ -1,5 +1,5 @@
- /*-*- linux-c -*-
- *  linux/drivers/video/i810-i2c.c -- Intel 810/815 I2C support
+ /*-*- linaos-c -*-
+ *  linaos/drivers/video/i810-i2c.c -- Intel 810/815 I2C support
  *
  *      Copyright (C) 2004 Antonino Daplas<adaplas@pol.net>
  *      All Rights Reserved
@@ -8,12 +8,12 @@
  *  License. See the file COPYING in the main directory of this archive for
  *  more details.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/fb.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/gfp.h>
+#include <linaos/pci.h>
+#include <linaos/fb.h>
 #include "i810.h"
 #include "i810_regs.h"
 #include "i810_main.h"

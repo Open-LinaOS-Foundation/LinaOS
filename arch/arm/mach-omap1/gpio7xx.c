@@ -16,8 +16,8 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/gpio.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <linaos/gpio.h>
+#include <linaos/platform_data/gpio-omap.h>
 
 #include <mach/irqs.h>
 

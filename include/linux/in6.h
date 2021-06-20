@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  *	Types and definitions for AF_INET6 
- *	Linux INET6 implementation 
+ *	LinaOS INET6 implementation 
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>	
@@ -16,7 +16,7 @@
 #ifndef _LINUX_IN6_H
 #define _LINUX_IN6_H
 
-#include <uapi/linux/in6.h>
+#include <uapi/linaos/in6.h>
 
 /* IPv6 Wildcard Address (::) and Loopback Address (::1) defined in RFC2553
  * NOTE: Be aware the IN6ADDR_* constants and in6addr_* externals are defined

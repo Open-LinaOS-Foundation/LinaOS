@@ -20,9 +20,9 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/fb.h>
 
 #include "smu11_driver_if.h"
 #include "vega20_processpptables.h"

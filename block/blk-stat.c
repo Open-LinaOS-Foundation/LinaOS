@@ -4,9 +4,9 @@
  *
  * Copyright (C) 2016 Jens Axboe
  */
-#include <linux/kernel.h>
-#include <linux/rculist.h>
-#include <linux/blk-mq.h>
+#include <linaos/kernel.h>
+#include <linaos/rculist.h>
+#include <linaos/blk-mq.h>
 
 #include "blk-stat.h"
 #include "blk-mq.h"

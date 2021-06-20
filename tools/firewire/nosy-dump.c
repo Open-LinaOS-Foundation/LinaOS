@@ -7,7 +7,7 @@
 #include <byteswap.h>
 #include <endian.h>
 #include <fcntl.h>
-#include <linux/firewire-constants.h>
+#include <linaos/firewire-constants.h>
 #include <poll.h>
 #include <popt.h>
 #include <signal.h>

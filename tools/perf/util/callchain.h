@@ -2,8 +2,8 @@
 #ifndef __PERF_CALLCHAIN_H
 #define __PERF_CALLCHAIN_H
 
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <linaos/list.h>
+#include <linaos/rbtree.h>
 #include "map_symbol.h"
 #include "branch.h"
 

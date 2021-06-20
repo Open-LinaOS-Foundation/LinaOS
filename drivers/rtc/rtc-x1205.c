@@ -14,12 +14,12 @@
  * http://www.intersil.com/cda/deviceinfo/0,1477,X1205,00.html
  */
 
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
+#include <linaos/i2c.h>
+#include <linaos/bcd.h>
+#include <linaos/rtc.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
 
 /* offsets into CCR area */
 

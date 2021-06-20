@@ -2,14 +2,14 @@
 /*
  *  Cobalt button interface driver.
  *
- *  Copyright (C) 2007-2008  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2007-2008  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/input.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/input.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #define BUTTONS_POLL_INTERVAL	30	/* msec */
 #define BUTTONS_COUNT_THRESHOLD	3
@@ -113,7 +113,7 @@ static int cobalt_buttons_probe(struct platform_device *pdev)
 	return 0;
 }
 
-MODULE_AUTHOR("Yoichi Yuasa <yuasa@linux-mips.org>");
+MODULE_AUTHOR("Yoichi Yuasa <yuasa@linaos-mips.org>");
 MODULE_DESCRIPTION("Cobalt button interface driver");
 MODULE_LICENSE("GPL");
 /* work with hotplug and coldplug */

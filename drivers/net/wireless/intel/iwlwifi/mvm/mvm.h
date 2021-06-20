@@ -7,13 +7,13 @@
 #ifndef __IWL_MVM_H__
 #define __IWL_MVM_H__
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/leds.h>
-#include <linux/in6.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/leds.h>
+#include <linaos/in6.h>
 
 #ifdef CONFIG_THERMAL
-#include <linux/thermal.h>
+#include <linaos/thermal.h>
 #endif
 
 #include "iwl-op-mode.h"
@@ -30,7 +30,7 @@
 #include "fw/acpi.h"
 #include "iwl-nvm-parse.h"
 
-#include <linux/average.h>
+#include <linaos/average.h>
 
 #define IWL_MVM_MAX_ADDRESSES		5
 /* RSSI offset for WkP */

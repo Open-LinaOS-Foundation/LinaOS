@@ -5,25 +5,25 @@
  * Portions Copyright (C) 2020 Christoph Hellwig
  */
 
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/genhd.h>
-#include <linux/kdev_t.h>
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/mutex.h>
-#include <linux/idr.h>
-#include <linux/log2.h>
-#include <linux/pm_runtime.h>
-#include <linux/badblocks.h>
+#include <linaos/module.h>
+#include <linaos/ctype.h>
+#include <linaos/fs.h>
+#include <linaos/genhd.h>
+#include <linaos/kdev_t.h>
+#include <linaos/kernel.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/kmod.h>
+#include <linaos/mutex.h>
+#include <linaos/idr.h>
+#include <linaos/log2.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/badblocks.h>
 
 #include "blk.h"
 

@@ -3,8 +3,8 @@
  * Copyright (C) 2013 Richard Weinberger <richrd@nod.at>
  */
 
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
+#include <linaos/uaccess.h>
+#include <linaos/kernel.h>
 #include <os.h>
 
 bool copy_from_kernel_nofault_allowed(const void *src, size_t size)

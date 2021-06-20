@@ -12,14 +12,14 @@
  *
  * Copyright 2010 Freescale Semiconductor, Inc.
  */
-#include <linux/dma-mapping.h>
-#include <linux/fsl_devices.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/spi/spi.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/fsl_devices.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/spi/spi.h>
 #ifdef CONFIG_FSL_SOC
 #include <sysdev/fsl_soc.h>
 #endif

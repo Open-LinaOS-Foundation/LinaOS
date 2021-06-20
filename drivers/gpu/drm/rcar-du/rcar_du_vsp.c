@@ -18,12 +18,12 @@
 #include <drm/drm_plane_helper.h>
 #include <drm/drm_vblank.h>
 
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_platform.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <linaos/bitops.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/of_platform.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
 
 #include <media/vsp1.h>
 

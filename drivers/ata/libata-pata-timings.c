@@ -6,9 +6,9 @@
  *  Copyright 2003-2004 Jeff Garzik
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/libata.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/libata.h>
 
 /*
  * This mode timing computation functionality is ported over from

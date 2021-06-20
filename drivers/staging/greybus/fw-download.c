@@ -6,11 +6,11 @@
  * Copyright 2016 Linaro Ltd.
  */
 
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/greybus.h>
+#include <linaos/firmware.h>
+#include <linaos/jiffies.h>
+#include <linaos/mutex.h>
+#include <linaos/workqueue.h>
+#include <linaos/greybus.h>
 #include "firmware.h"
 
 /* Estimated minimum buffer size, actual size can be smaller than this */

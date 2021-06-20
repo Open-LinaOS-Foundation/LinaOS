@@ -31,10 +31,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/string.h>
-#include <linux/of_platform.h>
-#include <linux/net_tstamp.h>
-#include <linux/fsl/ptp_qoriq.h>
+#include <linaos/string.h>
+#include <linaos/of_platform.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/fsl/ptp_qoriq.h>
 
 #include "dpaa_eth.h"
 #include "mac.h"

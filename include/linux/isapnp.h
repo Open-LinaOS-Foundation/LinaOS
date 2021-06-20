@@ -7,8 +7,8 @@
 #ifndef LINUX_ISAPNP_H
 #define LINUX_ISAPNP_H
 
-#include <linux/errno.h>
-#include <linux/pnp.h>
+#include <linaos/errno.h>
+#include <linaos/pnp.h>
 
 /*
  *
@@ -28,7 +28,7 @@
  */
 
 #ifdef __KERNEL__
-#include <linux/mod_devicetable.h>
+#include <linaos/mod_devicetable.h>
 
 #define DEVICE_COUNT_COMPATIBLE 4
 

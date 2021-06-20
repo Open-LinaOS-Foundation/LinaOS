@@ -47,7 +47,7 @@
  *
  */
 
-#include <linux/hash.h>
+#include <linaos/hash.h>
 #include <rdma/rdmavt_qp.h>
 #include "verbs.h"
 #include "sdma.h"

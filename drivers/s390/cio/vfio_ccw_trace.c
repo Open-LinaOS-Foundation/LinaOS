@@ -3,7 +3,7 @@
  * Tracepoint definitions for vfio_ccw
  *
  * Copyright IBM Corp. 2019
- * Author(s): Eric Farman <farman@linux.ibm.com>
+ * Author(s): Eric Farman <farman@linaos.ibm.com>
  */
 
 #define CREATE_TRACE_POINTS

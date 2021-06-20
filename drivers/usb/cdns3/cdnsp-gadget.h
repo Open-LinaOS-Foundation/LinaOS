@@ -6,15 +6,15 @@
  *
  * Author: Pawel Laszczak <pawell@cadence.com>
  *
- * Code based on Linux XHCI driver.
+ * Code based on LinaOS XHCI driver.
  * Origin: Copyright (C) 2008 Intel Corp.
  */
 #ifndef __LINUX_CDNSP_GADGET_H
 #define __LINUX_CDNSP_GADGET_H
 
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/usb/gadget.h>
-#include <linux/irq.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/irq.h>
 
 /* Max number slots - only 1 is allowed. */
 #define CDNSP_DEV_MAX_SLOTS	1

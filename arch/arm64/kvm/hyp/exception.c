@@ -11,7 +11,7 @@
  */
 
 #include <hyp/adjust_pc.h>
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 #include <asm/kvm_emulate.h>
 
 #if !defined (__KVM_NVHE_HYPERVISOR__) && !defined (__KVM_VHE_HYPERVISOR__)

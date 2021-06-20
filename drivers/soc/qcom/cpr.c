@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2013-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2015, The LinaOS Foundation. All rights reserved.
  * Copyright (c) 2019, Linaro Limited
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/debugfs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_opp.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regulator/consumer.h>
-#include <linux/clk.h>
-#include <linux/nvmem-consumer.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/debugfs.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_opp.h>
+#include <linaos/interrupt.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/nvmem-consumer.h>
 
 /* Register Offsets for RB-CPR and Bit Definitions */
 

@@ -26,9 +26,9 @@
  * transport class is framed entirely in terms of generic devices to
  * allow it to be used by any physical HBA in the system.
  */
-#include <linux/export.h>
-#include <linux/attribute_container.h>
-#include <linux/transport_class.h>
+#include <linaos/export.h>
+#include <linaos/attribute_container.h>
+#include <linaos/transport_class.h>
 
 static int transport_remove_classdev(struct attribute_container *cont,
 				     struct device *dev,

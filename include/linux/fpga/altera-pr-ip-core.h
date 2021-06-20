@@ -10,7 +10,7 @@
 
 #ifndef _ALT_PR_IP_CORE_H
 #define _ALT_PR_IP_CORE_H
-#include <linux/io.h>
+#include <linaos/io.h>
 
 int alt_pr_register(struct device *dev, void __iomem *reg_base);
 void alt_pr_unregister(struct device *dev);

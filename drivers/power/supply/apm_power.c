@@ -9,10 +9,10 @@
  * preserved in its entirety in all copies and derived works.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/power_supply.h>
-#include <linux/apm-emulation.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/power_supply.h>
+#include <linaos/apm-emulation.h>
 
 
 #define PSY_PROP(psy, prop, val) (power_supply_get_property(psy, \

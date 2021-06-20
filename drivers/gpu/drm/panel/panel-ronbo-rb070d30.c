@@ -7,17 +7,17 @@
  * This file based on panel-ilitek-ili9881c.c
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/kernel.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/fb.h>
+#include <linaos/kernel.h>
+#include <linaos/media-bus-format.h>
+#include <linaos/module.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/regulator/consumer.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_mipi_dsi.h>

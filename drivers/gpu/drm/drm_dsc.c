@@ -6,11 +6,11 @@
  * Manasi Navare <manasi.d.navare@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/byteorder/generic.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/byteorder/generic.h>
 #include <drm/drm_print.h>
 #include <drm/drm_dp_helper.h>
 #include <drm/drm_dsc.h>

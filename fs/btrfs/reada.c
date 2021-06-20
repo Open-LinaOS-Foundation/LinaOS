@@ -3,12 +3,12 @@
  * Copyright (C) 2011 STRATO.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/sched.h>
+#include <linaos/pagemap.h>
+#include <linaos/writeback.h>
+#include <linaos/blkdev.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 #include "ctree.h"
 #include "volumes.h"
 #include "disk-io.h"

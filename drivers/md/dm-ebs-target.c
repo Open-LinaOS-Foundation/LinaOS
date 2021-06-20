@@ -10,9 +10,9 @@
  */
 
 #include "dm.h"
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/dm-bufio.h>
+#include <linaos/module.h>
+#include <linaos/workqueue.h>
+#include <linaos/dm-bufio.h>
 
 #define DM_MSG_PREFIX "ebs"
 

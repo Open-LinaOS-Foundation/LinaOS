@@ -9,11 +9,11 @@
  * For non-devicetree platforms. Once pxa is fully converted to devicetree, this
  * should go away.
  */
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
 #include <mach/pxa2xx-regs.h>
 #include <mach/smemc.h>
 

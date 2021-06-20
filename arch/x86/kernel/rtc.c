@@ -2,13 +2,13 @@
 /*
  * RTC related functions
  */
-#include <linux/platform_device.h>
-#include <linux/mc146818rtc.h>
-#include <linux/acpi.h>
-#include <linux/bcd.h>
-#include <linux/export.h>
-#include <linux/pnp.h>
-#include <linux/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/mc146818rtc.h>
+#include <linaos/acpi.h>
+#include <linaos/bcd.h>
+#include <linaos/export.h>
+#include <linaos/pnp.h>
+#include <linaos/of.h>
 
 #include <asm/vsyscall.h>
 #include <asm/x86_init.h>

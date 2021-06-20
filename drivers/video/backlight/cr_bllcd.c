@@ -15,16 +15,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/lcd.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/mutex.h>
+#include <linaos/fb.h>
+#include <linaos/backlight.h>
+#include <linaos/lcd.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 
 /* The LVDS- and panel power controls sits on the
  * GPIO port of the ISA bridge.

@@ -3,7 +3,7 @@
  *
  * Copyright(C) Timesys Corporation 2016
  *
- * Based on Microchip 251x CAN Controller (mcp251x) Linux kernel driver
+ * Based on Microchip 251x CAN Controller (mcp251x) LinaOS kernel driver
  * Copyright 2009 Christian Pellegrin EVOL S.r.l.
  * Copyright 2007 Raymarine UK, Ltd. All Rights Reserved.
  * Copyright 2006 Arcom Control Systems Ltd.
@@ -14,26 +14,26 @@
  * Copyright 2007
  */
 
-#include <linux/can/core.h>
-#include <linux/can/dev.h>
-#include <linux/can/led.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/freezer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/uaccess.h>
+#include <linaos/can/core.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/led.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/freezer.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi.h>
+#include <linaos/uaccess.h>
 
 #define HI3110_MASTER_RESET 0x56
 #define HI3110_READ_CTRL0 0xD2

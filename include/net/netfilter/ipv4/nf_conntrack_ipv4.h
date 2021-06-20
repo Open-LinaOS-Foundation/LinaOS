@@ -3,7 +3,7 @@
  * IPv4 support for nf_conntrack.
  *
  * 23 Mar 2004: Yasuyuki Kozakai @ USAGI <yasuyuki.kozakai@toshiba.co.jp>
- *	- move L3 protocol dependent part from include/linux/netfilter_ipv4/
+ *	- move L3 protocol dependent part from include/linaos/netfilter_ipv4/
  *	  ip_conntarck.h
  */
 

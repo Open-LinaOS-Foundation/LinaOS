@@ -10,11 +10,11 @@
  *   Copyright (C) 2011 Red Hat, Inc., Don Zickus <dzickus@redhat.com>
  */
 
-#include <linux/smp.h>
-#include <linux/cpumask.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
+#include <linaos/smp.h>
+#include <linaos/cpumask.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/percpu.h>
 
 #include <asm/apic.h>
 #include <asm/nmi.h>

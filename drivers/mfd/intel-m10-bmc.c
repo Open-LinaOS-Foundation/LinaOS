@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2018-2020 Intel Corporation. All rights reserved.
  */
-#include <linux/bitfield.h>
-#include <linux/init.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/intel-m10-bmc.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linaos/bitfield.h>
+#include <linaos/init.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/intel-m10-bmc.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/regmap.h>
+#include <linaos/spi/spi.h>
 
 enum m10bmc_type {
 	M10_N3000,

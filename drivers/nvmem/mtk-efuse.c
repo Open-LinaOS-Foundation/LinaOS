@@ -4,12 +4,12 @@
  * Author: Andrew-CT Chen <andrew-ct.chen@mediatek.com>
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/io.h>
-#include <linux/nvmem-provider.h>
-#include <linux/platform_device.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/io.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/platform_device.h>
 
 struct mtk_efuse_priv {
 	void __iomem *base;

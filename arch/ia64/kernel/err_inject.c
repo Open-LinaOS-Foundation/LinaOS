@@ -24,11 +24,11 @@
  * Copyright (C) 2006, Intel Corp.  All rights reserved.
  *
  */
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/cpu.h>
+#include <linaos/module.h>
 
 #define ERR_INJ_DEBUG
 

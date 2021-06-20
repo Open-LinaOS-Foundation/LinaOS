@@ -1,5 +1,5 @@
 /*
- *  Video for Linux Two header file
+ *  Video for LinaOS Two header file
  *
  *  Copyright (C) 1999-2012 the contributors
  *
@@ -46,7 +46,7 @@
  * All kernel-specific stuff were moved to media/v4l2-dev.h, so
  * no #if __KERNEL tests are allowed here
  *
- *	See https://linuxtv.org for more info
+ *	See https://linaostv.org for more info
  *
  *	Author: Bill Dirks <bill@thedirks.org>
  *		Justin Schoeman
@@ -56,8 +56,8 @@
 #ifndef __LINUX_VIDEODEV2_H
 #define __LINUX_VIDEODEV2_H
 
-#include <linux/time.h>     /* need struct timeval */
-#include <linux/kernel.h>
-#include <uapi/linux/videodev2.h>
+#include <linaos/time.h>     /* need struct timeval */
+#include <linaos/kernel.h>
+#include <uapi/linaos/videodev2.h>
 
 #endif /* __LINUX_VIDEODEV2_H */

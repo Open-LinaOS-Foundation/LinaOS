@@ -20,16 +20,16 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/hash.h>
-#include <linux/cpufreq.h>
-#include <linux/log2.h>
-#include <linux/dmi.h>
-#include <linux/atomic.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/errno.h>
+#include <linaos/acpi.h>
+#include <linaos/hash.h>
+#include <linaos/cpufreq.h>
+#include <linaos/log2.h>
+#include <linaos/dmi.h>
+#include <linaos/atomic.h>
 
 #include "kfd_priv.h"
 #include "kfd_crat.h"

@@ -3,20 +3,20 @@
  * Copyright (C) 2011 LAPIS Semiconductor Co., Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/if_ether.h>
-#include <linux/ctype.h>
-#include <linux/dmi.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/uaccess.h>
+#include <linaos/string.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/if_ether.h>
+#include <linaos/ctype.h>
+#include <linaos/dmi.h>
+#include <linaos/of.h>
 
 #define PHUB_STATUS 0x00		/* Status Register offset */
 #define PHUB_CONTROL 0x04		/* Control Register offset */

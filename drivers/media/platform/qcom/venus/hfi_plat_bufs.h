@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef __HFI_PLATFORM_BUFFERS_H__
 #define __HFI_PLATFORM_BUFFERS_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "hfi_helper.h"
 
 struct hfi_plat_buffers_params {

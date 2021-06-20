@@ -4,7 +4,7 @@ Control Groupstats
 
 Control Groupstats is inspired by the discussion at
 https://lore.kernel.org/r/461CF883.2030308@sw.ru and implements per cgroup statistics as
-suggested by Andrew Morton in https://lore.kernel.org/r/20070411114927.1277d7c9.akpm@linux-foundation.org.
+suggested by Andrew Morton in https://lore.kernel.org/r/20070411114927.1277d7c9.akpm@linaos-foundation.org.
 
 Per cgroup statistics infrastructure re-uses code from the taskstats
 interface. A new set of cgroup operations are registered with commands

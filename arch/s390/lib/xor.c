@@ -6,9 +6,9 @@
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/raid/xor.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
+#include <linaos/raid/xor.h>
 #include <asm/xor.h>
 
 static void xor_xc_2(unsigned long bytes, unsigned long *p1, unsigned long *p2)

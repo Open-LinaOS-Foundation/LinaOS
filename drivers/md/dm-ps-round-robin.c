@@ -9,12 +9,12 @@
  * Round-robin path selector.
  */
 
-#include <linux/device-mapper.h>
+#include <linaos/device-mapper.h>
 
 #include "dm-path-selector.h"
 
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
 #define DM_MSG_PREFIX "multipath round-robin"
 #define RR_MIN_IO     1

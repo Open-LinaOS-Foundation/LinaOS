@@ -9,29 +9,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mdio.h>
-#include <linux/mii.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/phy_led_triggers.h>
-#include <linux/property.h>
-#include <linux/sfp.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/unistd.h>
+#include <linaos/bitmap.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mdio.h>
+#include <linaos/mii.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/phy.h>
+#include <linaos/phy_led_triggers.h>
+#include <linaos/property.h>
+#include <linaos/sfp.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/uaccess.h>
+#include <linaos/unistd.h>
 
 MODULE_DESCRIPTION("PHY library");
 MODULE_AUTHOR("Andy Fleming");

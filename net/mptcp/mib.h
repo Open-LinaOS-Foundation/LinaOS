@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 
-enum linux_mptcp_mib_field {
+enum linaos_mptcp_mib_field {
 	MPTCP_MIB_NUM = 0,
 	MPTCP_MIB_MPCAPABLEPASSIVE,	/* Received SYN with MP_CAPABLE */
 	MPTCP_MIB_MPCAPABLEACTIVE,	/* Sent SYN with MP_CAPABLE */
@@ -44,14 +44,14 @@ struct mptcp_mib {
 };
 
 static inline void MPTCP_INC_STATS(struct net *net,
-				   enum linux_mptcp_mib_field field)
+				   enum linaos_mptcp_mib_field field)
 {
 	if (likely(net->mib.mptcp_statistics))
 		SNMP_INC_STATS(net->mib.mptcp_statistics, field);
 }
 
 static inline void __MPTCP_INC_STATS(struct net *net,
-				     enum linux_mptcp_mib_field field)
+				     enum linaos_mptcp_mib_field field)
 {
 	if (likely(net->mib.mptcp_statistics))
 		__SNMP_INC_STATS(net->mib.mptcp_statistics, field);

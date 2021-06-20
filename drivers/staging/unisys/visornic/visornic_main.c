@@ -9,14 +9,14 @@
  * Partition via the IO channel.
  */
 
-#include <linux/debugfs.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/kthread.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/visorbus.h>
+#include <linaos/debugfs.h>
+#include <linaos/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/kthread.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/visorbus.h>
 
 #include "iochannel.h"
 
@@ -869,7 +869,7 @@ static netdev_tx_t visornic_xmit(struct sk_buff *skb, struct net_device *netdev)
 	}
 
 	/* sk_buff struct is used to host network data throughout all the
-	 * linux network subsystems
+	 * linaos network subsystems
 	 */
 	len = skb->len;
 
@@ -1698,7 +1698,7 @@ static void service_resp_queue(struct uiscmdrsp *cmdrsp,
 
 			if (devdata->server_down &&
 			    devdata->server_change_state) {
-				/* Inform Linux that the link is up */
+				/* Inform LinaOS that the link is up */
 				devdata->server_down = false;
 				devdata->server_change_state = false;
 				netif_wake_queue(netdev);

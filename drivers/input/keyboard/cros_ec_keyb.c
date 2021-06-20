@@ -11,19 +11,19 @@
 // it cannot be easily upgraded and EC flash/IRAM space is relatively
 // expensive.
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/sysrq.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/notifier.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/sysrq.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_proto.h>
 
 #include <asm/unaligned.h>
 
@@ -69,11 +69,11 @@ struct cros_ec_keyb {
 };
 
 /**
- * struct cros_ec_bs_map - Mapping between Linux keycodes and EC button/switch
+ * struct cros_ec_bs_map - Mapping between LinaOS keycodes and EC button/switch
  *	bitmap #defines
  *
  * @ev_type: The type of the input event to generate (e.g., EV_KEY).
- * @code: A linux keycode
+ * @code: A linaos keycode
  * @bit: A #define like EC_MKBP_POWER_BUTTON or EC_MKBP_LID_OPEN
  * @inverted: If the #define and EV_SW have opposite meanings, this is true.
  *            Only applicable to switches.

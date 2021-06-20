@@ -17,7 +17,7 @@
 #define _NETLABEL_MGMT_H
 
 #include <net/netlabel.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 /*
  * The following NetLabel payloads are supported by the management interface.

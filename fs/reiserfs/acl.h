@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/init.h>
-#include <linux/posix_acl.h>
+#include <linaos/init.h>
+#include <linaos/posix_acl.h>
 
 #define REISERFS_ACL_VERSION	0x0001
 

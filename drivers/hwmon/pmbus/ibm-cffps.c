@@ -3,18 +3,18 @@
  * Copyright 2017 IBM Corp.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/i2c.h>
-#include <linux/jiffies.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/pmbus.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/i2c.h>
+#include <linaos/jiffies.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of_device.h>
+#include <linaos/pmbus.h>
 
 #include "pmbus.h"
 
@@ -121,7 +121,7 @@ static ssize_t ibm_cffps_read_input_history(struct ibm_cffps *psu,
 		if (time_after(jiffies, psu->input_history.last_update + HZ)) {
 			/*
 			 * Use a raw i2c transfer, since we need more bytes
-			 * than Linux I2C supports through smbus xfr (only 32).
+			 * than LinaOS I2C supports through smbus xfr (only 32).
 			 */
 			rc = i2c_transfer(psu->client->adapter, msg, 2);
 			if (rc < 0) {

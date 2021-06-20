@@ -4,8 +4,8 @@
  * Copyright (C) 2013-2014 Intel Mobile Communications GmbH
  * Copyright (C) 2015 Intel Deutschland GmbH
  */
-#include <linux/module.h>
-#include <linux/stringify.h>
+#include <linaos/module.h>
+#include <linaos/stringify.h>
 #include "iwl-config.h"
 
 /* Highest firmware API version supported */

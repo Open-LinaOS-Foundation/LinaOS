@@ -5,10 +5,10 @@
 #if !defined(_TRACE_FIB_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_FIB_H
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
 #include <net/ip_fib.h>
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(fib_table_lookup,
 

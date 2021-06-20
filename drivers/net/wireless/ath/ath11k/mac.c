@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The LinaOS Foundation. All rights reserved.
  */
 
 #include <net/mac80211.h>
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include "mac.h"
 #include "core.h"
 #include "debug.h"

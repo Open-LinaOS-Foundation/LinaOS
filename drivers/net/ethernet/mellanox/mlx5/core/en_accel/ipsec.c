@@ -33,9 +33,9 @@
 
 #include <crypto/internal/geniv.h>
 #include <crypto/aead.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/module.h>
+#include <linaos/inetdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/module.h>
 
 #include "en.h"
 #include "en_accel/ipsec.h"

@@ -9,7 +9,7 @@
 #ifndef __LINUX_PCI_EPC_H
 #define __LINUX_PCI_EPC_H
 
-#include <linux/pci-epf.h>
+#include <linaos/pci-epf.h>
 
 struct pci_epc;
 

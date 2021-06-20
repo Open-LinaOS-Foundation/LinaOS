@@ -9,14 +9,14 @@
 
 #define pr_fmt(fmt) "intel_mid: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/regulator/machine.h>
-#include <linux/scatterlist.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/notifier.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/scatterlist.h>
+#include <linaos/irq.h>
+#include <linaos/export.h>
+#include <linaos/notifier.h>
 
 #include <asm/setup.h>
 #include <asm/mpspec_def.h>

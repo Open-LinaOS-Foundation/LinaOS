@@ -5,13 +5,13 @@
  * Copyright (C) 2008 Hartmut Hackmann
  * Copyright (C) 2006 Oliver Endriss
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://linaostv.org
  */
 
 #ifndef _ISL6405_H
 #define _ISL6405_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 /* system register bits */
 

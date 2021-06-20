@@ -7,10 +7,10 @@
 
 #include <crypto/algapi.h>
 #include <crypto/internal/simd.h>
-#include <linux/crypto.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linaos/crypto.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
 
 #include "camellia.h"
 #include "ecb_cbc_helpers.h"

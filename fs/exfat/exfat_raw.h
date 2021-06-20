@@ -6,7 +6,7 @@
 #ifndef _EXFAT_RAW_H
 #define _EXFAT_RAW_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define BOOT_SIGNATURE		0xAA55
 #define EXBOOT_SIGNATURE	0xAA550000

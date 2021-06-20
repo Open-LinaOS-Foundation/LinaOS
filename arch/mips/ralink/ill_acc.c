@@ -4,9 +4,9 @@
  * Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/interrupt.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_irq.h>
 
 #include <asm/mach-ralink/ralink_regs.h>
 

@@ -9,14 +9,14 @@
 #define __LINUX_LEDS_H_INCLUDED
 
 #include <dt-bindings/leds/common.h>
-#include <linux/device.h>
-#include <linux/kernfs.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/kernfs.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/rwsem.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
+#include <linaos/workqueue.h>
 
 struct device;
 struct led_pattern;

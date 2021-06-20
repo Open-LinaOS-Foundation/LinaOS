@@ -54,19 +54,19 @@
 
 		button@0 {
 			label = "wps";
-			linux,code = <KEY_WPS_BUTTON>;
+			linaos,code = <KEY_WPS_BUTTON>;
 			gpios = <&gpio 11 GPIO_ACTIVE_HIGH>;
 		};
 
 		button@1 {
 			label = "sw1";
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			gpios = <&gpio 18 GPIO_ACTIVE_HIGH>;
 		};
 
 		button@2 {
 			label = "sw2";
-			linux,code = <BTN_1>;
+			linaos,code = <BTN_1>;
 			gpios = <&gpio 20 GPIO_ACTIVE_HIGH>;
 		};
 	};

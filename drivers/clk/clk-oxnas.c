@@ -5,15 +5,15 @@
  * Copyright (C) 2016 Neil Armstrong <narmstrong@baylibre.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/stringify.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/clk-provider.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/stringify.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
 
 #include <dt-bindings/clock/oxsemi,ox810se.h>
 #include <dt-bindings/clock/oxsemi,ox820.h>

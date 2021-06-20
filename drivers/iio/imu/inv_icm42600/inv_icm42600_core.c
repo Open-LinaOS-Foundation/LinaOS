@@ -3,19 +3,19 @@
  * Copyright (C) 2020 Invensense, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/iio/iio.h>
 
 #include "inv_icm42600.h"
 #include "inv_icm42600_buffer.h"

@@ -4,8 +4,8 @@
 #define _QAT_CRYPTO_INSTANCE_H_
 
 #include <crypto/aes.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 #include "adf_accel_devices.h"
 #include "icp_qat_fw_la.h"
 

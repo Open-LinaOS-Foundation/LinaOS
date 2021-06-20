@@ -15,9 +15,9 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/debugfs.h>
 
 #include "snic.h"
 

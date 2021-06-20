@@ -3,7 +3,7 @@
  * bpf_jit.h: BPF JIT compiler for PPC
  *
  * Copyright 2011 Matt Evans <matt@ozlabs.org>, IBM Corporation
- * 	     2016 Naveen N. Rao <naveen.n.rao@linux.vnet.ibm.com>
+ * 	     2016 Naveen N. Rao <naveen.n.rao@linaos.vnet.ibm.com>
  */
 #ifndef _BPF_JIT_H
 #define _BPF_JIT_H

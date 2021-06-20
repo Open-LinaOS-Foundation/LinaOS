@@ -8,7 +8,7 @@
 #ifndef GOYA_PACKETS_H
 #define GOYA_PACKETS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define PACKET_HEADER_PACKET_ID_SHIFT		56
 #define PACKET_HEADER_PACKET_ID_MASK		0x1F00000000000000ull

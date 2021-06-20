@@ -9,7 +9,7 @@
  * Based on: sound/soc/tegra/tegra_pcm.c
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

@@ -7,7 +7,7 @@
 #ifndef __LINUX_IP6_NETFILTER_H
 #define __LINUX_IP6_NETFILTER_H
 
-#include <uapi/linux/netfilter_ipv6.h>
+#include <uapi/linaos/netfilter_ipv6.h>
 #include <net/tcp.h>
 
 /* Check for an extension */

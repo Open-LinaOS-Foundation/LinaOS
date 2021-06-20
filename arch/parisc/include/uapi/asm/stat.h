@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _PARISC_STAT_H
 #define _PARISC_STAT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct stat {
 	unsigned int	st_dev;		/* dev_t is 32 bits on parisc */

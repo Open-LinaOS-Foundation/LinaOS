@@ -9,15 +9,15 @@
 #define _CRYPTO_INTERNAL_H
 
 #include <crypto/algapi.h>
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/numa.h>
-#include <linux/refcount.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <linaos/completion.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/numa.h>
+#include <linaos/refcount.h>
+#include <linaos/rwsem.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
 
 struct crypto_instance;
 struct crypto_template;

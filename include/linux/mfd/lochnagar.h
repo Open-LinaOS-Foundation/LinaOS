@@ -8,9 +8,9 @@
  * Author: Charles Keepax <ckeepax@opensource.cirrus.com>
  */
 
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/regmap.h>
 
 #ifndef CIRRUS_LOCHNAGAR_H
 #define CIRRUS_LOCHNAGAR_H

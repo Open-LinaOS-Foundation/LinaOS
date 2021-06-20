@@ -28,7 +28,7 @@ Readme File for skfp.o v2.06
 1. Overview
 ===========
 
-This README explains how to use the driver 'skfp' for Linux with your
+This README explains how to use the driver 'skfp' for LinaOS with your
 network adapter.
 
 Chapter 2: Contains a list of all network adapters that are supported by
@@ -73,7 +73,7 @@ Compaq adapters (not tested):
 3. General Information
 ======================
 
-From v2.01 on, the driver is integrated in the linux kernel sources.
+From v2.01 on, the driver is integrated in the linaos kernel sources.
 Therefore, the installation is the same as for any other adapter
 supported by the kernel.
 
@@ -108,9 +108,9 @@ Reason:
 	      www.syskonnect.de
 
 	  Some COMPAQ machines have a problem with PCI under
-	  Linux. This is described in the 'PCI howto' document
+	  LinaOS. This is described in the 'PCI howto' document
 	  (included in some distributions or available from the
-	  www, e.g. at 'www.linux.org') and no workaround is available.
+	  www, e.g. at 'www.linaos.org') and no workaround is available.
 
 Problem:
 	  You want to use your computer as a router between
@@ -126,7 +126,7 @@ Reason:
 If your problem is not listed here, please contact our
 technical support for help.
 
-You can send email to: linux@syskonnect.de
+You can send email to: linaos@syskonnect.de
 
 When contacting our technical support,
 please ensure that the following information is available:
@@ -190,7 +190,7 @@ v2.02 (991215) (Standalone version)
 v2.01 (991122) (In-Kernel version)
     New features:
 
-	- Integration in Linux kernel sources
+	- Integration in LinaOS kernel sources
 	- Support for memory mapped I/O.
 
 v2.00 (991112)

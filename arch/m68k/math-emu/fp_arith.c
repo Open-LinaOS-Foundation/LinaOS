@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
 
-   fp_arith.c: floating-point math routines for the Linux-m68k
+   fp_arith.c: floating-point math routines for the LinaOS-m68k
    floating point emulator.
 
    Copyright (c) 1998-1999 David Huggins-Daines.
 
-   Somewhat based on the AlphaLinux floating point emulator, by David
+   Somewhat based on the AlphaLinaOS floating point emulator, by David
    Mosberger-Tang.
 
  */

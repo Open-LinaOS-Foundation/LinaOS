@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/mc146818rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/mc146818rtc.h>
 
 #ifdef CONFIG_ACPI
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 #endif
 
 unsigned int mc146818_get_time(struct rtc_time *time)

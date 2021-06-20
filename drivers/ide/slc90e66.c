@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Copyright (C) 2000-2002 Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 2000-2002 Andre Hedrick <andre@linaos-ide.org>
  *  Copyright (C) 2006-2007 MontaVista Software, Inc. <source@mvista.com>
  *
  * This is a look-alike variation of the ICH0 PIIX4 Ultra-66,
@@ -8,12 +8,12 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/ide.h>
+#include <linaos/init.h>
 
 #define DRV_NAME "slc90e66"
 

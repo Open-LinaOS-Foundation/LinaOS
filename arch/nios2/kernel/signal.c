@@ -9,13 +9,13 @@
  * for more details.
  */
 
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/uaccess.h>
-#include <linux/unistd.h>
-#include <linux/personality.h>
-#include <linux/tracehook.h>
+#include <linaos/signal.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
+#include <linaos/uaccess.h>
+#include <linaos/unistd.h>
+#include <linaos/personality.h>
+#include <linaos/tracehook.h>
 
 #include <asm/ucontext.h>
 #include <asm/cacheflush.h>

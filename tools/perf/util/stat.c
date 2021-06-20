@@ -14,7 +14,7 @@
 #include "evsel.h"
 #include "thread_map.h"
 #include "hashmap.h"
-#include <linux/zalloc.h>
+#include <linaos/zalloc.h>
 
 void update_stats(struct stats *stats, u64 val)
 {

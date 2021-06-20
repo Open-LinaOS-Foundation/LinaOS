@@ -18,10 +18,10 @@
 #define MODULE_NAME "vicam"
 #define HEADER_SIZE 64
 
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/ihex.h>
+#include <linaos/workqueue.h>
+#include <linaos/slab.h>
+#include <linaos/firmware.h>
+#include <linaos/ihex.h>
 #include "gspca.h"
 
 #define VICAM_FIRMWARE "vicam/firmware.fw"

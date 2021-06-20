@@ -2,36 +2,36 @@
 #ifndef _LINUX_MM_H
 #define _LINUX_MM_H
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 #ifdef __KERNEL__
 
-#include <linux/mmdebug.h>
-#include <linux/gfp.h>
-#include <linux/bug.h>
-#include <linux/list.h>
-#include <linux/mmzone.h>
-#include <linux/rbtree.h>
-#include <linux/atomic.h>
-#include <linux/debug_locks.h>
-#include <linux/mm_types.h>
-#include <linux/mmap_lock.h>
-#include <linux/range.h>
-#include <linux/pfn.h>
-#include <linux/percpu-refcount.h>
-#include <linux/bit_spinlock.h>
-#include <linux/shrinker.h>
-#include <linux/resource.h>
-#include <linux/page_ext.h>
-#include <linux/err.h>
-#include <linux/page-flags.h>
-#include <linux/page_ref.h>
-#include <linux/memremap.h>
-#include <linux/overflow.h>
-#include <linux/sizes.h>
-#include <linux/sched.h>
-#include <linux/pgtable.h>
-#include <linux/kasan.h>
+#include <linaos/mmdebug.h>
+#include <linaos/gfp.h>
+#include <linaos/bug.h>
+#include <linaos/list.h>
+#include <linaos/mmzone.h>
+#include <linaos/rbtree.h>
+#include <linaos/atomic.h>
+#include <linaos/debug_locks.h>
+#include <linaos/mm_types.h>
+#include <linaos/mmap_lock.h>
+#include <linaos/range.h>
+#include <linaos/pfn.h>
+#include <linaos/percpu-refcount.h>
+#include <linaos/bit_spinlock.h>
+#include <linaos/shrinker.h>
+#include <linaos/resource.h>
+#include <linaos/page_ext.h>
+#include <linaos/err.h>
+#include <linaos/page-flags.h>
+#include <linaos/page_ref.h>
+#include <linaos/memremap.h>
+#include <linaos/overflow.h>
+#include <linaos/sizes.h>
+#include <linaos/sched.h>
+#include <linaos/pgtable.h>
+#include <linaos/kasan.h>
 
 struct mempolicy;
 struct anon_vma;
@@ -245,7 +245,7 @@ int __add_to_page_cache_locked(struct page *page, struct address_space *mapping,
 #define lru_to_page(head) (list_entry((head)->prev, struct page, lru))
 
 /*
- * Linux kernel virtual memory manager primitives.
+ * LinaOS kernel virtual memory manager primitives.
  * The idea being to have a "virtual" mm in the same way
  * we have a virtual fs - giving a cleaner interface to the
  * mm details, and allowing different kinds of memory mappings
@@ -723,7 +723,7 @@ int vma_is_stack_for_current(struct vm_area_struct *vma);
 struct mmu_gather;
 struct inode;
 
-#include <linux/huge_mm.h>
+#include <linaos/huge_mm.h>
 
 /*
  * Methods to modify the page usage count.
@@ -1044,7 +1044,7 @@ vm_fault_t finish_mkwrite_fault(struct vm_fault *vmf);
  * subsequently been given references to it.
  *
  * The other pages (we may call them "pagecache pages") are completely
- * managed by the Linux memory manager: I/O, buffers, swapping etc.
+ * managed by the LinaOS memory manager: I/O, buffers, swapping etc.
  * The following discussion applies only to them.
  *
  * A pagecache page contains an opaque `private' member, which belongs to the
@@ -1232,7 +1232,7 @@ static inline void put_page(struct page *page)
 	 * For devmap managed pages we need to catch refcount transition from
 	 * 2 to 1, when refcount reach one it means the page is free and we
 	 * need to inform the device driver through callback. See
-	 * include/linux/memremap.h and HMM for details.
+	 * include/linaos/memremap.h and HMM for details.
 	 */
 	if (page_is_devmap_managed(page)) {
 		put_devmap_managed_page(page);
@@ -1594,7 +1594,7 @@ static inline void set_page_links(struct page *page, enum zone_type zone,
 /*
  * Some inline functions in vmstat.h depend on page_zone()
  */
-#include <linux/vmstat.h>
+#include <linaos/vmstat.h>
 
 static __always_inline void *lowmem_page_address(const struct page *page)
 {

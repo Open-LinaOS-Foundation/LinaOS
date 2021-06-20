@@ -29,8 +29,8 @@ struct platform_ops {
 	void	(*free)(void *ptr);
 	void *	(*realloc)(void *ptr, unsigned long size);
 	void	(*exit)(void);
-	void *	(*vmlinux_alloc)(unsigned long size);
-	void  	(*kentry)(unsigned long fdt_addr, void *vmlinux_addr);
+	void *	(*vmlinaos_alloc)(unsigned long size);
+	void  	(*kentry)(unsigned long fdt_addr, void *vmlinaos_addr);
 };
 extern struct platform_ops platform_ops;
 
@@ -200,10 +200,10 @@ void __dt_fixup_mac_addresses(u32 startindex, ...);
 	__dt_fixup_mac_addresses(0, __VA_ARGS__, NULL)
 
 
-static inline void *find_node_by_linuxphandle(const u32 linuxphandle)
+static inline void *find_node_by_linaosphandle(const u32 linaosphandle)
 {
-	return find_node_by_prop_value(NULL, "linux,phandle",
-			(char *)&linuxphandle, sizeof(u32));
+	return find_node_by_prop_value(NULL, "linaos,phandle",
+			(char *)&linaosphandle, sizeof(u32));
 }
 
 static inline char *get_path(const void *phandle, char *buf, int len)
@@ -244,8 +244,8 @@ void udelay(long delay);
 extern char _start[];
 extern char __bss_start[];
 extern char _end[];
-extern char _vmlinux_start[];
-extern char _vmlinux_end[];
+extern char _vmlinaos_start[];
+extern char _vmlinaos_end[];
 extern char _initrd_start[];
 extern char _initrd_end[];
 extern char _dtb_start[];

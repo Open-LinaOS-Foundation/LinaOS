@@ -10,7 +10,7 @@
 #define RO_EXCEPTION_TABLE_ALIGN	0
 
 #include <asm/page.h>
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 #include <asm/cache.h>
 #include <asm/thread_info.h>
 

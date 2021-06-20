@@ -4,11 +4,11 @@
  * Author: Elaine <zhangqing@rock-chips.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/syscore_ops.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/syscore_ops.h>
 #include <dt-bindings/clock/rk3128-cru.h>
 #include "clk.h"
 

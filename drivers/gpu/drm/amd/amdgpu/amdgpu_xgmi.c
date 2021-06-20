@@ -21,7 +21,7 @@
  *
  *
  */
-#include <linux/list.h>
+#include <linaos/list.h>
 #include "amdgpu.h"
 #include "amdgpu_xgmi.h"
 #include "amdgpu_ras.h"

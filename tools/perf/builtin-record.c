@@ -68,11 +68,11 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
-#include <linux/bitmap.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
+#include <linaos/time64.h>
+#include <linaos/zalloc.h>
+#include <linaos/bitmap.h>
 #include <sys/time.h>
 
 struct switch_output {
@@ -944,11 +944,11 @@ try_again:
 		pr_warning(
 "WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,\n"
 "check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.\n\n"
-"Samples in kernel functions may not be resolved if a suitable vmlinux\n"
-"file is not found in the buildid cache or in the vmlinux path.\n\n"
+"Samples in kernel functions may not be resolved if a suitable vmlinaos\n"
+"file is not found in the buildid cache or in the vmlinaos path.\n\n"
 "Samples in kernel modules won't be resolved at all.\n\n"
 "If some relocation was applied (e.g. kexec) symbols may be misresolved\n"
-"even with a suitable vmlinux or kallsyms file.\n\n");
+"even with a suitable vmlinaos or kallsyms file.\n\n");
 	}
 
 	if (evlist__apply_filters(evlist, &pos)) {
@@ -999,13 +999,13 @@ static int process_buildids(struct record *rec)
 	/*
 	 * During this process, it'll load kernel map and replace the
 	 * dso->long_name to a real pathname it found.  In this case
-	 * we prefer the vmlinux path like
-	 *   /lib/modules/3.16.4/build/vmlinux
+	 * we prefer the vmlinaos path like
+	 *   /lib/modules/3.16.4/build/vmlinaos
 	 *
 	 * rather than build-id path (in debug directory).
 	 *   $HOME/.debug/.build-id/f0/6e17aa50adf4d00b88925e03775de107611551
 	 */
-	symbol_conf.ignore_vmlinux_buildid = true;
+	symbol_conf.ignore_vmlinaos_buildid = true;
 
 	/*
 	 * If --buildid-all is given, it marks all DSO regardless of hits,
@@ -2590,8 +2590,8 @@ static struct option __record_options[] = {
 		   "clang binary to use for compiling BPF scriptlets"),
 	OPT_STRING(0, "clang-opt", &llvm_param.clang_opt, "clang options",
 		   "options passed to clang when compiling BPF scriptlets"),
-	OPT_STRING(0, "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_STRING(0, "vmlinaos", &symbol_conf.vmlinaos_name,
+		   "file", "vmlinaos pathname"),
 	OPT_BOOLEAN(0, "buildid-all", &record.buildid_all,
 		    "Record build-id of all DSOs regardless of hits"),
 	OPT_BOOLEAN(0, "buildid-mmap", &record.buildid_mmap,
@@ -2669,7 +2669,7 @@ int cmd_record(int argc, const char **argv)
 #  define REASON  "this architecture doesn't support BPF prologue"
 # endif
 # define set_nobuild(s, l, c) set_option_nobuild(record_options, s, l, REASON, c)
-	set_nobuild('\0', "vmlinux", true);
+	set_nobuild('\0', "vmlinaos", true);
 # undef set_nobuild
 # undef REASON
 #endif

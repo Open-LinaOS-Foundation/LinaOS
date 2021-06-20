@@ -8,8 +8,8 @@
 #ifndef __LINUX_POWER_SBS_BATTERY_H_
 #define __LINUX_POWER_SBS_BATTERY_H_
 
-#include <linux/power_supply.h>
-#include <linux/types.h>
+#include <linaos/power_supply.h>
+#include <linaos/types.h>
 
 /**
  * struct sbs_platform_data - platform data for sbs devices

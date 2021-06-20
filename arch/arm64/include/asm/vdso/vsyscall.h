@@ -4,7 +4,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/timekeeper_internal.h>
+#include <linaos/timekeeper_internal.h>
 #include <vdso/datapage.h>
 
 #define VDSO_PRECISION_MASK	~(0xFF00ULL<<48)

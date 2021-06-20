@@ -23,7 +23,7 @@ Support
 -------
 
   Ben Dooks' SMDK2440 site at http://www.fluff.org/ben/smdk2440/ which
-  includes linux based USB download tools.
+  includes linaos based USB download tools.
 
   Some of the h1940 patches that can be found from the H1940 project
   site at http://www.handhelds.org/projects/h1940.html can also be

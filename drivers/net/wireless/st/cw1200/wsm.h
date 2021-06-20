@@ -13,7 +13,7 @@
 #ifndef CW1200_WSM_H_INCLUDED
 #define CW1200_WSM_H_INCLUDED
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 struct cw1200_common;
 
@@ -1086,7 +1086,7 @@ struct wsm_set_tx_queue_params {
 };
 
 struct wsm_tx_queue_params {
-	/* NOTE: index is a linux queue id. */
+	/* NOTE: index is a linaos queue id. */
 	struct wsm_set_tx_queue_params params[4];
 };
 
@@ -1126,7 +1126,7 @@ struct wsm_edca_queue_params {
 };
 
 struct wsm_edca_params {
-	/* NOTE: index is a linux queue id. */
+	/* NOTE: index is a linaos queue id. */
 	struct wsm_edca_queue_params params[4];
 	bool uapsd_enable[4];
 };
@@ -1832,11 +1832,11 @@ int wsm_get_tx(struct cw1200_common *priv, u8 **data,
 void wsm_txed(struct cw1200_common *priv, u8 *data);
 
 /* ******************************************************************** */
-/* Queue mapping: WSM <---> linux					*/
-/* Linux: VO VI BE BK							*/
+/* Queue mapping: WSM <---> linaos					*/
+/* LinaOS: VO VI BE BK							*/
 /* WSM:   BE BK VI VO							*/
 
-static inline u8 wsm_queue_id_to_linux(u8 queue_id)
+static inline u8 wsm_queue_id_to_linaos(u8 queue_id)
 {
 	static const u8 queue_mapping[] = {
 		2, 3, 1, 0

@@ -3,14 +3,14 @@
  * Copyright (C) 2014 Sergey Senozhatsky.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/cpu.h>
-#include <linux/crypto.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>
+#include <linaos/cpu.h>
+#include <linaos/crypto.h>
 
 #include "zcomp.h"
 

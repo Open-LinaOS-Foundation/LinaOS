@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0-only WITH LinaOS-syscall-note) OR BSD-3-Clause) */
 /*
- * linux/can.h
+ * linaos/can.h
  *
  * Definitions for CAN network layer (socket addr / CAN frame / CAN filter)
  *
@@ -46,8 +46,8 @@
 #ifndef _UAPI_CAN_H
 #define _UAPI_CAN_H
 
-#include <linux/types.h>
-#include <linux/socket.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
 
 /* controller area network (CAN) kernel definitions */
 
@@ -77,7 +77,7 @@ typedef __u32 canid_t;
 /*
  * Controller Area Network Error Message Frame Mask structure
  *
- * bit 0-28	: error class mask (see include/uapi/linux/can/error.h)
+ * bit 0-28	: error class mask (see include/uapi/linaos/can/error.h)
  * bit 29-31	: set to zero
  */
 typedef __u32 can_err_mask_t;

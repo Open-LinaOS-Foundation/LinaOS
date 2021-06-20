@@ -7,10 +7,10 @@
 
 #include "fsverity_private.h"
 
-#include <linux/cred.h>
-#include <linux/key.h>
-#include <linux/slab.h>
-#include <linux/verification.h>
+#include <linaos/cred.h>
+#include <linaos/key.h>
+#include <linaos/slab.h>
+#include <linaos/verification.h>
 
 /*
  * /proc/sys/fs/verity/require_signatures

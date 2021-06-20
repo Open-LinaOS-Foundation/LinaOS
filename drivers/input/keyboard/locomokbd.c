@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * LoCoMo keyboard driver for Linux-based ARM PDAs:
+ * LoCoMo keyboard driver for LinaOS-based ARM PDAs:
  * 	- SHARP Zaurus Collie (SL-5500)
  * 	- SHARP Zaurus Poodle (SL-5600)
  *
@@ -8,14 +8,14 @@
  * Based on from xtkbd.c
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
 
 #include <asm/hardware/locomo.h>
 #include <asm/irq.h>

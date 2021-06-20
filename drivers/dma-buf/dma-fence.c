@@ -10,11 +10,11 @@
  * Maarten Lankhorst <maarten.lankhorst@canonical.com>
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/atomic.h>
-#include <linux/dma-fence.h>
-#include <linux/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/atomic.h>
+#include <linaos/dma-fence.h>
+#include <linaos/sched/signal.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/dma_fence.h>

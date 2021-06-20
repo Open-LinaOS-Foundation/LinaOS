@@ -67,13 +67,13 @@ SEV is active::
 		Bit[0]	  0 = memory encryption is not active
 			  1 = memory encryption is active
 
-Linux relies on BIOS to set this bit if BIOS has determined that the reduction
+LinaOS relies on BIOS to set this bit if BIOS has determined that the reduction
 in the physical address space as a result of enabling memory encryption (see
 CPUID information above) will not conflict with the address space resource
-requirements for the system.  If this bit is not set upon Linux startup then
-Linux itself will not set it and memory encryption will not be possible.
+requirements for the system.  If this bit is not set upon LinaOS startup then
+LinaOS itself will not set it and memory encryption will not be possible.
 
-The state of SME in the Linux kernel can be documented as follows:
+The state of SME in the LinaOS kernel can be documented as follows:
 
 	- Supported:
 	  The CPU supports SME (determined through CPUID instruction).
@@ -82,16 +82,16 @@ The state of SME in the Linux kernel can be documented as follows:
 	  Supported and bit 23 of MSR_AMD64_SYSCFG is set.
 
 	- Active:
-	  Supported, Enabled and the Linux kernel is actively applying
+	  Supported, Enabled and the LinaOS kernel is actively applying
 	  the encryption bit to page table entries (the SME mask in the
 	  kernel is non-zero).
 
 SME can also be enabled and activated in the BIOS. If SME is enabled and
 activated in the BIOS, then all memory accesses will be encrypted and it will
-not be necessary to activate the Linux memory encryption support.  If the BIOS
-merely enables SME (sets bit 23 of the MSR_AMD64_SYSCFG), then Linux can activate
+not be necessary to activate the LinaOS memory encryption support.  If the BIOS
+merely enables SME (sets bit 23 of the MSR_AMD64_SYSCFG), then LinaOS can activate
 memory encryption by default (CONFIG_AMD_MEM_ENCRYPT_ACTIVE_BY_DEFAULT=y) or
 by supplying mem_encrypt=on on the kernel command line.  However, if BIOS does
-not enable SME, then Linux will not be able to activate memory encryption, even
+not enable SME, then LinaOS will not be able to activate memory encryption, even
 if configured to do so by default or the mem_encrypt=on command line parameter
 is specified.

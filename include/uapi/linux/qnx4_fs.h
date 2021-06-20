@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  *  Name                         : qnx4_fs.h
  *  Author                       : Richard Frowijn
@@ -8,9 +8,9 @@
 #ifndef _LINUX_QNX4_FS_H
 #define _LINUX_QNX4_FS_H
 
-#include <linux/types.h>
-#include <linux/qnxtypes.h>
-#include <linux/magic.h>
+#include <linaos/types.h>
+#include <linaos/qnxtypes.h>
+#include <linaos/magic.h>
 
 #define QNX4_ROOT_INO 1
 

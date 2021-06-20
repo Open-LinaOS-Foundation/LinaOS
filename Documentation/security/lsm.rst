@@ -1,5 +1,5 @@
 ========================================================
-Linux Security Modules: General Security Hooks for Linux
+LinaOS Security Modules: General Security Hooks for LinaOS
 ========================================================
 
 :Author: Stephen Smalley
@@ -14,31 +14,31 @@ Introduction
 ============
 
 In March 2001, the National Security Agency (NSA) gave a presentation
-about Security-Enhanced Linux (SELinux) at the 2.5 Linux Kernel Summit.
-SELinux is an implementation of flexible and fine-grained
-nondiscretionary access controls in the Linux kernel, originally
+about Security-Enhanced LinaOS (SELinaOS) at the 2.5 LinaOS Kernel Summit.
+SELinaOS is an implementation of flexible and fine-grained
+nondiscretionary access controls in the LinaOS kernel, originally
 implemented as its own particular kernel patch. Several other security
 projects (e.g. RSBAC, Medusa) have also developed flexible access
-control architectures for the Linux kernel, and various projects have
-developed particular access control models for Linux (e.g. LIDS, DTE,
+control architectures for the LinaOS kernel, and various projects have
+developed particular access control models for LinaOS (e.g. LIDS, DTE,
 SubDomain). Each project has developed and maintained its own kernel
 patch to support its security needs.
 
 In response to the NSA presentation, Linus Torvalds made a set of
 remarks that described a security framework he would be willing to
-consider for inclusion in the mainstream Linux kernel. He described a
+consider for inclusion in the mainstream LinaOS kernel. He described a
 general framework that would provide a set of security hooks to control
 operations on kernel objects and a set of opaque security fields in
 kernel data structures for maintaining security attributes. This
 framework could then be used by loadable kernel modules to implement any
 desired model of security. Linus also suggested the possibility of
-migrating the Linux capabilities code into such a module.
+migrating the LinaOS capabilities code into such a module.
 
-The Linux Security Modules (LSM) project was started by WireX to develop
+The LinaOS Security Modules (LSM) project was started by WireX to develop
 such a framework. LSM was a joint development effort by several security
-projects, including Immunix, SELinux, SGI and Janus, and several
+projects, including Immunix, SELinaOS, SGI and Janus, and several
 individuals, including Greg Kroah-Hartman and James Morris, to develop a
-Linux kernel patch that implements this framework. The work was
+LinaOS kernel patch that implements this framework. The work was
 incorporated in the mainstream in December of 2003. This technical
 report provides an overview of the framework and the capabilities
 security module.
@@ -83,8 +83,8 @@ security fields were added to :c:type:`struct kern_ipc_perm
 <kern_ipc_perm>` and :c:type:`struct msg_msg
 <msg_msg>`; additionally, the definitions for :c:type:`struct
 msg_msg <msg_msg>`, struct msg_queue, and struct shmid_kernel
-were moved to header files (``include/linux/msg.h`` and
-``include/linux/shm.h`` as appropriate) to allow the security modules to
+were moved to header files (``include/linaos/msg.h`` and
+``include/linaos/shm.h`` as appropriate) to allow the security modules to
 use these definitions.
 
 For packet and
@@ -98,7 +98,7 @@ associate these values with real security attributes.
 LSM hooks are maintained in lists. A list is maintained for each
 hook, and the hooks are called in the order specified by CONFIG_LSM.
 Detailed documentation for each hook is
-included in the `include/linux/lsm_hooks.h` header file.
+included in the `include/linaos/lsm_hooks.h` header file.
 
 The LSM framework provides for a close approximation of
 general security module stacking. It defines
@@ -106,7 +106,7 @@ security_add_hooks() to which each security module passes a
 :c:type:`struct security_hooks_list <security_hooks_list>`,
 which are added to the lists.
 The LSM framework does not provide a mechanism for removing hooks that
-have been registered. The SELinux security module has implemented
+have been registered. The SELinaOS security module has implemented
 a way to remove itself, however the feature has been deprecated.
 
 The hooks can be viewed as falling into two major

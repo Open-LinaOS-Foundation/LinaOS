@@ -3,9 +3,9 @@
  * Copyright 2015-2016, Aneesh Kumar K.V, IBM Corporation.
  */
 
-#include <linux/sched.h>
-#include <linux/mm_types.h>
-#include <linux/memblock.h>
+#include <linaos/sched.h>
+#include <linaos/mm_types.h>
+#include <linaos/memblock.h>
 #include <misc/cxl-base.h>
 
 #include <asm/debugfs.h>

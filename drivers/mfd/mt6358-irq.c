@@ -2,16 +2,16 @@
 //
 // Copyright (c) 2020 MediaTek Inc.
 
-#include <linux/interrupt.h>
-#include <linux/mfd/mt6358/core.h>
-#include <linux/mfd/mt6358/registers.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/mt6358/core.h>
+#include <linaos/mfd/mt6358/registers.h>
+#include <linaos/mfd/mt6397/core.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 static struct irq_top_t mt6358_ints[] = {
 	MT6358_TOP_GEN(BUCK),

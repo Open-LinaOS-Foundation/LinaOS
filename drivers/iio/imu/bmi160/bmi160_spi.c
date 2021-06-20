@@ -5,11 +5,11 @@
  * Copyright (c) 2016, Intel Corporation.
  *
  */
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linaos/acpi.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
+#include <linaos/spi/spi.h>
 
 #include "bmi160.h"
 

@@ -6,8 +6,8 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/perf_event.h>
-#include <linux/kvm_host.h>
+#include <linaos/perf_event.h>
+#include <linaos/kvm_host.h>
 
 #include <asm/kvm_emulate.h>
 

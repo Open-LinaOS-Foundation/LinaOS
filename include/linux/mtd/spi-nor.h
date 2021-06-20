@@ -6,10 +6,10 @@
 #ifndef __LINUX_MTD_SPI_NOR_H
 #define __LINUX_MTD_SPI_NOR_H
 
-#include <linux/bitops.h>
-#include <linux/mtd/cfi.h>
-#include <linux/mtd/mtd.h>
-#include <linux/spi/spi-mem.h>
+#include <linaos/bitops.h>
+#include <linaos/mtd/cfi.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/spi/spi-mem.h>
 
 /*
  * Note on opcode nomenclature: some opcodes have a format like

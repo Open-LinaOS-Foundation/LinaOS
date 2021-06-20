@@ -2,13 +2,13 @@
 /*
  * Functions related to io context handling
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/sched/task.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/slab.h>
+#include <linaos/sched/task.h>
 
 #include "blk.h"
 

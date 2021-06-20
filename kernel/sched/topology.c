@@ -27,7 +27,7 @@ static inline bool sched_debug(void)
 
 #define SD_FLAG(_name, mflags) [__##_name] = { .meta_flags = mflags, .name = #_name },
 const struct sd_flag_debug sd_flag_debug[] = {
-#include <linux/sched/sd_flags.h>
+#include <linaos/sched/sd_flags.h>
 };
 #undef SD_FLAG
 
@@ -163,7 +163,7 @@ static inline bool sched_debug(void)
 /* Generate a mask of SD flags with the SDF_NEEDS_GROUPS metaflag */
 #define SD_FLAG(name, mflags) (name * !!((mflags) & SDF_NEEDS_GROUPS)) |
 static const unsigned int SD_DEGENERATE_GROUPS_MASK =
-#include <linux/sched/sd_flags.h>
+#include <linaos/sched/sd_flags.h>
 0;
 #undef SD_FLAG
 

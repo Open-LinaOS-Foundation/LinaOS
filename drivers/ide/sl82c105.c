@@ -5,7 +5,7 @@
  * Maintainer unknown.
  *
  * Drive tuning added from Rebel.com's kernel sources
- *  -- Russell King (15/11/98) linux@arm.linux.org.uk
+ *  -- Russell King (15/11/98) linaos@arm.linaos.org.uk
  * 
  * Merge in Russell's HW workarounds, fix various problems
  * with the timing registers setup.
@@ -15,11 +15,11 @@
  * Copyright (C)      2007 Bartlomiej Zolnierkiewicz
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/ide.h>
 
 #include <asm/io.h>
 

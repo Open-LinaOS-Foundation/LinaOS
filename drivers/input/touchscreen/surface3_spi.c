@@ -6,17 +6,17 @@
  */
 
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/input.h>
+#include <linaos/input/mt.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi.h>
+#include <linaos/acpi.h>
 
 #include <asm/unaligned.h>
 

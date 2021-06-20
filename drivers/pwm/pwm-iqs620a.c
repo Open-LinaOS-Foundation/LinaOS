@@ -14,16 +14,16 @@
  *   to hold the GPIO3/LTX pin low.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/mfd/iqs62x.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/iqs62x.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 #define IQS620_PWR_SETTINGS			0xd2
 #define IQS620_PWR_SETTINGS_PWM_OUT		BIT(7)

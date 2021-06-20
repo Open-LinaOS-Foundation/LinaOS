@@ -6,8 +6,8 @@
  * Copyright (C) 2011 Becky Bruce, Freescale Semiconductor
  *
  */
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
 
 #include <asm/mmu.h>
 
@@ -185,7 +185,7 @@ book3e_hugetlb_preload(struct vm_area_struct *vma, unsigned long ea, pte_t pte)
 
 /*
  * This is called at the end of handling a user page fault, when the
- * fault has been handled by updating a PTE in the linux page tables.
+ * fault has been handled by updating a PTE in the linaos page tables.
  *
  * This must always be called with the pte lock held.
  */

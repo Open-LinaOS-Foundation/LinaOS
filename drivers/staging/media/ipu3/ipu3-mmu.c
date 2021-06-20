@@ -4,17 +4,17 @@
  * Copyright 2018 Google LLC.
  *
  * Author: Tuukka Toivonen <tuukka.toivonen@intel.com>
- * Author: Sakari Ailus <sakari.ailus@linux.intel.com>
+ * Author: Sakari Ailus <sakari.ailus@linaos.intel.com>
  * Author: Samu Onkalo <samu.onkalo@intel.com>
  * Author: Tomasz Figa <tfiga@chromium.org>
  *
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/iopoll.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/iopoll.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/set_memory.h>
 

@@ -8,9 +8,9 @@
 #ifndef _LINUX_TASKSTATS_KERN_H
 #define _LINUX_TASKSTATS_KERN_H
 
-#include <linux/taskstats.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
+#include <linaos/taskstats.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
 
 #ifdef CONFIG_TASKSTATS
 extern struct kmem_cache *taskstats_cache;

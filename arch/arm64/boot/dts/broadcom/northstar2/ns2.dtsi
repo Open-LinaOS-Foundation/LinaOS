@@ -120,7 +120,7 @@
 		interrupt-map-mask = <0 0 0 0>;
 		interrupt-map = <0 0 0 0 &gic 0 GIC_SPI 281 IRQ_TYPE_LEVEL_HIGH>;
 
-		linux,pci-domain = <0>;
+		linaos,pci-domain = <0>;
 
 		bus-range = <0x00 0xff>;
 
@@ -151,7 +151,7 @@
 		interrupt-map-mask = <0 0 0 0>;
 		interrupt-map = <0 0 0 0 &gic 0 GIC_SPI 305 IRQ_TYPE_LEVEL_HIGH>;
 
-		linux,pci-domain = <4>;
+		linaos,pci-domain = <4>;
 
 		bus-range = <0x00 0xff>;
 
@@ -177,7 +177,7 @@
 		compatible = "brcm,iproc-pcie-paxc";
 		reg = <0 0x60c00000 0 0x1000>;
 		dma-coherent;
-		linux,pci-domain = <8>;
+		linaos,pci-domain = <8>;
 
 		bus-range = <0x0 0x1>;
 

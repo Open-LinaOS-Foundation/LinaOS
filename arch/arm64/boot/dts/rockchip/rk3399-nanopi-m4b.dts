@@ -21,7 +21,7 @@
 
 		recovery {
 			label = "Recovery";
-			linux,code = <KEY_VENDOR>;
+			linaos,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <18000>;
 		};
 	};

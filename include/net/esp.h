@@ -2,7 +2,7 @@
 #ifndef _NET_ESP_H
 #define _NET_ESP_H
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 struct ip_esp_hdr;
 

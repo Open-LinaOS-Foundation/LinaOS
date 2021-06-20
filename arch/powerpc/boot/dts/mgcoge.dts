@@ -151,7 +151,7 @@
 				local-mac-address = [ 00 00 00 00 00 00 ]; /* Filled in by U-Boot */
 				interrupts = <43 8>;
 				interrupt-parent = <&PIC>;
-				linux,network-index = <0>;
+				linaos,network-index = <0>;
 				fsl,cpm-command = <0xce00000>;
 				fixed-link = <0 0 10 0 0>;
 			};
@@ -193,7 +193,7 @@
 				interrupts = <32 8>;
 				interrupt-parent = <&PIC>;
 				phy-handle = <&phy0>;
-				linux,network-index = <1>;
+				linaos,network-index = <1>;
 				fsl,cpm-command = <0x12000300>;
 			};
 
@@ -206,7 +206,7 @@
 				interrupts = <33 8>;
 				interrupt-parent = <&PIC>;
 				phy-handle = <&phy1>;
-				linux,network-index = <2>;
+				linaos,network-index = <2>;
 				fsl,cpm-command = <0x16200300>;
 			};
 

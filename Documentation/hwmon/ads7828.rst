@@ -21,14 +21,14 @@ Supported chips:
 
 Authors:
 	- Steve Hardy <shardy@redhat.com>
-	- Vivien Didelot <vivien.didelot@savoirfairelinux.com>
-	- Guillaume Roguez <guillaume.roguez@savoirfairelinux.com>
+	- Vivien Didelot <vivien.didelot@savoirfairelinaos.com>
+	- Guillaume Roguez <guillaume.roguez@savoirfairelinaos.com>
 
 Platform data
 -------------
 
 The ads7828 driver accepts an optional ads7828_platform_data structure (defined
-in include/linux/platform_data/ads7828.h). The structure fields are:
+in include/linaos/platform_data/ads7828.h). The structure fields are:
 
 * diff_input: (bool) Differential operation
     set to true for differential mode, false for default single ended mode.

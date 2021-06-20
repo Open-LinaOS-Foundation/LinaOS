@@ -4,18 +4,18 @@
  */
 
 /*
- * Creative Labs Blaster GamePad Cobra driver for Linux
+ * Creative Labs Blaster GamePad Cobra driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/gameport.h>
+#include <linaos/input.h>
+#include <linaos/jiffies.h>
 
 #define DRIVER_DESC	"Creative Labs Blaster GamePad Cobra driver"
 

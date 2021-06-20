@@ -8,14 +8,14 @@
 **
 **-----------------------------------------------------------------------------
 **
-**  This driver has been ported to Linux from the FreeBSD NCR53C8XX driver
+**  This driver has been ported to LinaOS from the FreeBSD NCR53C8XX driver
 **  and is currently maintained by
 **
 **          Gerard Roudier              <groudier@free.fr>
 **
 **  Being given that this driver originates from the FreeBSD version, and
 **  in order to keep synergy on both, any suggested enhancements and corrections
-**  received on Linux are automatically a potential candidate for the FreeBSD 
+**  received on LinaOS are automatically a potential candidate for the FreeBSD 
 **  version.
 **
 **  The original driver has been written for 386bsd and FreeBSD by
@@ -499,7 +499,7 @@ struct ncr_chip {
 /*
 **	Driver setup structure.
 **
-**	This structure is initialized from linux config options.
+**	This structure is initialized from linaos config options.
 **	It can be overridden at boot-up by the boot command line.
 */
 #define SCSI_NCR_MAX_EXCLUDES 8

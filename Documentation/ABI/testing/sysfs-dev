@@ -18,4 +18,4 @@ Description:	The /sys/dev tree provides a method to look up the sysfs
 		dynamically created and destroyed as devices enter and
 		leave the system.
 
-Users:		mdadm <linux-raid@vger.kernel.org>
+Users:		mdadm <linaos-raid@vger.kernel.org>

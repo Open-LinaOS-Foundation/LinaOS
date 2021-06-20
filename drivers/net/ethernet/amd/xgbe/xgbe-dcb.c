@@ -114,7 +114,7 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include <net/dcbnl.h>
 
 #include "xgbe.h"

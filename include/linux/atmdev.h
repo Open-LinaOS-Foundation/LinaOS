@@ -4,25 +4,25 @@
 #define LINUX_ATMDEV_H
 
 
-#include <linux/wait.h> /* wait_queue_head_t */
-#include <linux/time.h> /* struct timeval */
-#include <linux/net.h>
-#include <linux/bug.h>
-#include <linux/skbuff.h> /* struct sk_buff */
-#include <linux/uio.h>
+#include <linaos/wait.h> /* wait_queue_head_t */
+#include <linaos/time.h> /* struct timeval */
+#include <linaos/net.h>
+#include <linaos/bug.h>
+#include <linaos/skbuff.h> /* struct sk_buff */
+#include <linaos/uio.h>
 #include <net/sock.h>
-#include <linux/atomic.h>
-#include <linux/refcount.h>
-#include <uapi/linux/atmdev.h>
+#include <linaos/atomic.h>
+#include <linaos/refcount.h>
+#include <uapi/linaos/atmdev.h>
 
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
+#include <linaos/proc_fs.h>
 
 extern struct proc_dir_entry *atm_proc_root;
 #endif
 
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <linaos/compat.h>
 struct compat_atm_iobuf {
 	int length;
 	compat_uptr_t buffer;

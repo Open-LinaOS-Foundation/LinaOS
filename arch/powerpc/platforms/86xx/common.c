@@ -3,7 +3,7 @@
  * Routines common to most mpc86xx-based boards.
  */
 
-#include <linux/of_platform.h>
+#include <linaos/of_platform.h>
 #include <asm/synch.h>
 
 #include "mpc86xx.h"

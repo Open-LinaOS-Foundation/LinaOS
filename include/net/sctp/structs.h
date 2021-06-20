@@ -9,7 +9,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email addresses:
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    Randall Stewart	    <randall@sctp.chicago.il.us>
@@ -32,18 +32,18 @@
 #ifndef __sctp_structs_h__
 #define __sctp_structs_h__
 
-#include <linux/ktime.h>
-#include <linux/generic-radix-tree.h>
-#include <linux/rhashtable-types.h>
-#include <linux/socket.h>	/* linux/in.h needs this!!    */
-#include <linux/in.h>		/* We get struct sockaddr_in. */
-#include <linux/in6.h>		/* We get struct in6_addr     */
-#include <linux/ipv6.h>
+#include <linaos/ktime.h>
+#include <linaos/generic-radix-tree.h>
+#include <linaos/rhashtable-types.h>
+#include <linaos/socket.h>	/* linaos/in.h needs this!!    */
+#include <linaos/in.h>		/* We get struct sockaddr_in. */
+#include <linaos/in6.h>		/* We get struct in6_addr     */
+#include <linaos/ipv6.h>
 #include <asm/param.h>		/* We get MAXHOSTNAMELEN.     */
-#include <linux/atomic.h>		/* This gets us atomic counters.  */
-#include <linux/skbuff.h>	/* We need sk_buff_head. */
-#include <linux/workqueue.h>	/* We need tq_struct.	 */
-#include <linux/sctp.h>		/* We need sctp* header structs.  */
+#include <linaos/atomic.h>		/* This gets us atomic counters.  */
+#include <linaos/skbuff.h>	/* We need sk_buff_head. */
+#include <linaos/workqueue.h>	/* We need tq_struct.	 */
+#include <linaos/sctp.h>		/* We need sctp* header structs.  */
 #include <net/sctp/auth.h>	/* We need auth specific structs */
 #include <net/ip.h>		/* For inet_skb_parm */
 

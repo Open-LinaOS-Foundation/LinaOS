@@ -8,9 +8,9 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/kernel.h>
-#include <linux/ide.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/ide.h>
+#include <linaos/module.h>
 
 /*
  * PIO 0-5, MWDMA 0-2 and UDMA 0-6 timings (in nanoseconds).

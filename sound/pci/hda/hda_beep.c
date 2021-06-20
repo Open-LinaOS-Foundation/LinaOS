@@ -6,10 +6,10 @@
  * Copyright (c) 2008 Embedded Alley Solutions Inc
  */
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/export.h>
 #include <sound/core.h>
 #include "hda_beep.h"
 #include "hda_local.h"

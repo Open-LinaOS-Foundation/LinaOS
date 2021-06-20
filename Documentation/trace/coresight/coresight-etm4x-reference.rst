@@ -1,5 +1,5 @@
 ===============================================
-ETMv4 sysfs linux driver programming reference.
+ETMv4 sysfs linaos driver programming reference.
 ===============================================
 
     :Author:   Mike Leach <mike.leach@linaro.org>

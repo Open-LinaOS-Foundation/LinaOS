@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * lm75.h - Part of lm_sensors, Linux kernel modules for hardware monitoring
+ * lm75.h - Part of lm_sensors, LinaOS kernel modules for hardware monitoring
  * Copyright (c) 2003 Mark M. Hoffman <mhoffman@lightlink.com>
  */
 
@@ -11,7 +11,7 @@
  * which contains this code, we don't worry about the wasted space.
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /* straight from the datasheet */
 #define LM75_TEMP_MIN (-55000)

@@ -32,18 +32,18 @@
  */
 
 #include <asm/page.h>
-#include <linux/mlx4/cq.h>
-#include <linux/slab.h>
-#include <linux/mlx4/qp.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
-#include <linux/prefetch.h>
-#include <linux/vmalloc.h>
-#include <linux/tcp.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/moduleparam.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/mlx4/cq.h>
+#include <linaos/slab.h>
+#include <linaos/mlx4/qp.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_vlan.h>
+#include <linaos/prefetch.h>
+#include <linaos/vmalloc.h>
+#include <linaos/tcp.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/moduleparam.h>
+#include <linaos/indirect_call_wrapper.h>
 
 #include "mlx4_en.h"
 

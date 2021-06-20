@@ -7,21 +7,21 @@
  *   Wei WANG <wei_wang@realsil.com.cn>
  */
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/rtsx_pci.h>
-#include <linux/mmc/card.h>
+#include <linaos/pci.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/highmem.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/idr.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/core.h>
+#include <linaos/rtsx_pci.h>
+#include <linaos/mmc/card.h>
 #include <asm/unaligned.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
 
 #include "rtsx_pcr.h"
 #include "rts5261.h"

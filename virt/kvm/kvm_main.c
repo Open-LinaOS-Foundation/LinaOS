@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for LinaOS
  *
  * This module enables machines with Intel VT-x extensions to run virtual
  * machines without emulation or binary translation.
@@ -15,46 +15,46 @@
 
 #include <kvm/iodev.h>
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/percpu.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/reboot.h>
-#include <linux/debugfs.h>
-#include <linux/highmem.h>
-#include <linux/file.h>
-#include <linux/syscore_ops.h>
-#include <linux/cpu.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/stat.h>
-#include <linux/cpumask.h>
-#include <linux/smp.h>
-#include <linux/anon_inodes.h>
-#include <linux/profile.h>
-#include <linux/kvm_para.h>
-#include <linux/pagemap.h>
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/compat.h>
-#include <linux/srcu.h>
-#include <linux/hugetlb.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/bsearch.h>
-#include <linux/io.h>
-#include <linux/lockdep.h>
-#include <linux/kthread.h>
+#include <linaos/kvm_host.h>
+#include <linaos/kvm.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/percpu.h>
+#include <linaos/mm.h>
+#include <linaos/miscdevice.h>
+#include <linaos/vmalloc.h>
+#include <linaos/reboot.h>
+#include <linaos/debugfs.h>
+#include <linaos/highmem.h>
+#include <linaos/file.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/cpu.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/stat.h>
+#include <linaos/cpumask.h>
+#include <linaos/smp.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/profile.h>
+#include <linaos/kvm_para.h>
+#include <linaos/pagemap.h>
+#include <linaos/mman.h>
+#include <linaos/swap.h>
+#include <linaos/bitops.h>
+#include <linaos/spinlock.h>
+#include <linaos/compat.h>
+#include <linaos/srcu.h>
+#include <linaos/hugetlb.h>
+#include <linaos/slab.h>
+#include <linaos/sort.h>
+#include <linaos/bsearch.h>
+#include <linaos/io.h>
+#include <linaos/lockdep.h>
+#include <linaos/kthread.h>
 
 #include <asm/processor.h>
 #include <asm/ioctl.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "coalesced_mmio.h"
 #include "async_pf.h"
@@ -64,7 +64,7 @@
 #define CREATE_TRACE_POINTS
 #include <trace/events/kvm.h>
 
-#include <linux/kvm_dirty_ring.h>
+#include <linaos/kvm_dirty_ring.h>
 
 /* Worst case buffer size needed for holding an integer. */
 #define ITOA_MAX_LEN 12

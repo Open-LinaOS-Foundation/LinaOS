@@ -6,7 +6,7 @@
  * Copyright (C) 2005-2008 Intel Co.
  *	Fenghua Yu <fenghua.yu@intel.com>
  *	Bibo Mao <bibo.mao@intel.com>
- *	Chandramouli Narayanan <mouli@linux.intel.com>
+ *	Chandramouli Narayanan <mouli@linaos.intel.com>
  *	Huang Ying <ying.huang@intel.com>
  *
  * Code to convert EFI to E820 map has been implemented in elilo bootloader
@@ -18,23 +18,23 @@
 
 #define pr_fmt(fmt) "efi: " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/memblock.h>
-#include <linux/ioport.h>
-#include <linux/mc146818rtc.h>
-#include <linux/efi.h>
-#include <linux/export.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/ucs2_string.h>
-#include <linux/mem_encrypt.h>
-#include <linux/sched/task.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/memblock.h>
+#include <linaos/ioport.h>
+#include <linaos/mc146818rtc.h>
+#include <linaos/efi.h>
+#include <linaos/export.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/ucs2_string.h>
+#include <linaos/mem_encrypt.h>
+#include <linaos/sched/task.h>
 
 #include <asm/setup.h>
 #include <asm/page.h>

@@ -6,20 +6,20 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/pm.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/irq.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/pm.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mfd/wm831x/core.h>
+#include <linaos/mfd/wm831x/irq.h>
+#include <linaos/mfd/wm831x/pdata.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 /*
  * R16424 (0x4028) - Touch Control 1

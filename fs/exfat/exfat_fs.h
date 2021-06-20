@@ -6,9 +6,9 @@
 #ifndef _EXFAT_FS_H
 #define _EXFAT_FS_H
 
-#include <linux/fs.h>
-#include <linux/ratelimit.h>
-#include <linux/nls.h>
+#include <linaos/fs.h>
+#include <linaos/ratelimit.h>
+#include <linaos/nls.h>
 
 #define EXFAT_SUPER_MAGIC       0x2011BAB0UL
 #define EXFAT_ROOT_INO		1

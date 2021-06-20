@@ -24,7 +24,7 @@ config MACH_NSLU2
 	help
 	  Say 'Y' here if you want your kernel to support Linksys's
 	  NSLU2 NAS device. For more information on this platform,
-	  see http://www.nslu2-linux.org
+	  see http://www.nslu2-linaos.org
 
 config MACH_AVILA
 	bool "Avila"
@@ -124,7 +124,7 @@ config MACH_NAS100D
 	help
 	  Say 'Y' here if you want your kernel to support Iomega's
 	  NAS 100d device. For more information on this platform,
-	  see http://www.nslu2-linux.org/wiki/NAS100d/HomePage
+	  see http://www.nslu2-linaos.org/wiki/NAS100d/HomePage
 
 config MACH_DSMG600
 	bool
@@ -133,7 +133,7 @@ config MACH_DSMG600
 	help
 	  Say 'Y' here if you want your kernel to support D-Link's
 	  DSM-G600 RevA device. For more information on this platform,
-	  see http://www.nslu2-linux.org/wiki/DSMG600/HomePage
+	  see http://www.nslu2-linaos.org/wiki/DSMG600/HomePage
 
 config	ARCH_IXDP4XX
 	bool
@@ -147,7 +147,7 @@ config MACH_FSG
 	help
 	  Say 'Y' here if you want your kernel to support Freecom's
 	  FSG-3 device. For more information on this platform,
-	  see http://www.nslu2-linux.org/wiki/FSG3/HomePage
+	  see http://www.nslu2-linaos.org/wiki/FSG3/HomePage
 
 config MACH_ARCOM_VULCAN
 	bool

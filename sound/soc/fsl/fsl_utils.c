@@ -6,8 +6,8 @@
 //
 // Copyright 2010 Freescale Semiconductor, Inc.
 
-#include <linux/module.h>
-#include <linux/of_address.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
 #include <sound/soc.h>
 
 #include "fsl_utils.h"

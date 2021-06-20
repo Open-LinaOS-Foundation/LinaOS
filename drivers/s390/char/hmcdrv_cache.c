@@ -10,9 +10,9 @@
 #define KMSG_COMPONENT "hmcdrv"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/jiffies.h>
 
 #include "hmcdrv_ftp.h"
 #include "hmcdrv_cache.h"

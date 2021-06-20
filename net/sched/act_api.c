@@ -5,16 +5,16 @@
  * Author:	Jamal Hadi Salim
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/kmod.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/sch_generic.h>

@@ -10,7 +10,7 @@
  */
 #include "dvb-usb-common.h"
 
-#include <linux/usb.h>
+#include <linaos/usb.h>
 
 struct usb_cypress_controller {
 	int id;

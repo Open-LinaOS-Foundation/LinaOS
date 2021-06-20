@@ -24,9 +24,9 @@
 #define PLUGIN_DEBUG
 #endif
 
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/vmalloc.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

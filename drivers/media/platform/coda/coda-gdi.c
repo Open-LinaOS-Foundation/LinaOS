@@ -5,7 +5,7 @@
  * Copyright (C) 2014 Philipp Zabel, Pengutronix
  */
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include "coda.h"
 
 #define XY2_INVERT	BIT(7)

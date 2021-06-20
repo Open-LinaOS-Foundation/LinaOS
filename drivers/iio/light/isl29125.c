@@ -10,16 +10,16 @@
  * TODO: interrupt support, IR compensation, thresholds, 12bit
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/triggered_buffer.h>
 
 #define ISL29125_DRV_NAME "isl29125"
 

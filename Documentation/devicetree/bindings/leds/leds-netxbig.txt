@@ -20,7 +20,7 @@ Required sub-node properties:
 
 Optional sub-node properties:
 - label: Name for this LED. If omitted, the label is taken from the node name.
-- linux,default-trigger: Trigger assigned to the LED.
+- linaos,default-trigger: Trigger assigned to the LED.
 
 Example:
 

@@ -7,14 +7,14 @@
  * Copyright (C) 1994-2000 Algorithmics Ltd.
  *
  *  Nov 7, 2000
- *  Modified to build and operate in Linux kernel environment.
+ *  Modified to build and operate in LinaOS kernel environment.
  *
  *  Kevin D. Kissell, kevink@mips.com and Carsten Langgaard, carstenl@mips.com
  *  Copyright (C) 2000 MIPS Technologies, Inc. All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/printk.h>
+#include <linaos/types.h>
+#include <linaos/printk.h>
 #include "ieee754.h"
 #include "ieee754sp.h"
 #include "ieee754dp.h"

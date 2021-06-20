@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for LinaOS.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -34,18 +34,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/aer.h>
-#include <linux/mm.h>
-#include <linux/notifier.h>
-#include <linux/kdebug.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/string.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/aer.h>
+#include <linaos/mm.h>
+#include <linaos/notifier.h>
+#include <linaos/kdebug.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/string.h>
+#include <linaos/export.h>
 
 #include "csio_init.h"
 #include "csio_defs.h"

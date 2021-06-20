@@ -46,7 +46,7 @@
 #ifndef __ZIP_DEVICE_H__
 #define __ZIP_DEVICE_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "zip_main.h"
 
 struct sg_info {

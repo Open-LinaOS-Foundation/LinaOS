@@ -7,28 +7,28 @@
  * Copyright (C) 2016, Robert Jarzmik <robert.jarzmik@free.fr>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/time.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
-#include <linux/dma/pxa-dma.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/moduleparam.h>
+#include <linaos/of.h>
+#include <linaos/of_graph.h>
+#include <linaos/time.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma/pxa-dma.h>
 
 #include <media/v4l2-async.h>
 #include <media/v4l2-common.h>
@@ -40,9 +40,9 @@
 
 #include <media/videobuf2-dma-sg.h>
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 
-#include <linux/platform_data/media/camera-pxa.h>
+#include <linaos/platform_data/media/camera-pxa.h>
 
 #define PXA_CAM_VERSION "0.0.6"
 #define PXA_CAM_DRV_NAME "pxa27x-camera"

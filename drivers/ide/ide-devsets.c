@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/ide.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/ide.h>
 
 DEFINE_MUTEX(ide_setting_mtx);
 

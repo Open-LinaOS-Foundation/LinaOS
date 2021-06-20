@@ -7,15 +7,15 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/elf.h>
-#include <linux/ftrace.h>
-#include <linux/gfp.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/moduleloader.h>
-#include <linux/vmalloc.h>
+#include <linaos/bitops.h>
+#include <linaos/elf.h>
+#include <linaos/ftrace.h>
+#include <linaos/gfp.h>
+#include <linaos/kasan.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/moduleloader.h>
+#include <linaos/vmalloc.h>
 #include <asm/alternative.h>
 #include <asm/insn.h>
 #include <asm/sections.h>

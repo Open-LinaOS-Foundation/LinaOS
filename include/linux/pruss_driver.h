@@ -9,7 +9,7 @@
 #ifndef _PRUSS_DRIVER_H_
 #define _PRUSS_DRIVER_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * enum pruss_mem - PRUSS memory range identifiers

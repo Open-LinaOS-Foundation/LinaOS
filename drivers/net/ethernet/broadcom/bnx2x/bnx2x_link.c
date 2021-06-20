@@ -18,13 +18,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/delay.h>
+#include <linaos/ethtool.h>
+#include <linaos/mutex.h>
 
 #include "bnx2x.h"
 #include "bnx2x_cmn.h"

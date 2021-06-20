@@ -8,7 +8,7 @@
  * Written by:
  *	Marek Szyprowski <m.szyprowski@samsung.com>
  *	Michal Nazarewicz <mina86@mina86.com>
- *	Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ *	Aneesh Kumar K.V <aneesh.kumar@linaos.vnet.ibm.com>
  *	Joonsoo Kim <iamjoonsoo.kim@lge.com>
  */
 
@@ -21,16 +21,16 @@
 #endif
 #define CREATE_TRACE_POINTS
 
-#include <linux/memblock.h>
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
-#include <linux/cma.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/kmemleak.h>
+#include <linaos/memblock.h>
+#include <linaos/err.h>
+#include <linaos/mm.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/log2.h>
+#include <linaos/cma.h>
+#include <linaos/highmem.h>
+#include <linaos/io.h>
+#include <linaos/kmemleak.h>
 #include <trace/events/cma.h>
 
 #include "cma.h"

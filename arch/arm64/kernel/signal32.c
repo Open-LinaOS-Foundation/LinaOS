@@ -7,16 +7,16 @@
  * Modified by Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/compat.h>
-#include <linux/signal.h>
-#include <linux/syscalls.h>
-#include <linux/ratelimit.h>
+#include <linaos/compat.h>
+#include <linaos/signal.h>
+#include <linaos/syscalls.h>
+#include <linaos/ratelimit.h>
 
 #include <asm/esr.h>
 #include <asm/fpsimd.h>
 #include <asm/signal32.h>
 #include <asm/traps.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/unistd.h>
 #include <asm/vdso.h>
 

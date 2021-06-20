@@ -2,7 +2,7 @@
 #ifndef _LINUX_MPLS_H
 #define _LINUX_MPLS_H
 
-#include <uapi/linux/mpls.h>
+#include <uapi/linaos/mpls.h>
 
 #define MPLS_TTL_MASK		(MPLS_LS_TTL_MASK >> MPLS_LS_TTL_SHIFT)
 #define MPLS_BOS_MASK		(MPLS_LS_S_MASK >> MPLS_LS_S_SHIFT)

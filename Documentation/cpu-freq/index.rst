@@ -1,10 +1,10 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ==============================================================================
-Linux CPUFreq - CPU frequency and voltage scaling code in the Linux(TM) kernel
+LinaOS CPUFreq - CPU frequency and voltage scaling code in the LinaOS(TM) kernel
 ==============================================================================
 
-Author: Dominik Brodowski  <linux@brodo.de>
+Author: Dominik Brodowski  <linaos@brodo.de>
 
    Clock scaling allows you to change the clock speed of the CPUs on the
    fly. This is a nice method to save battery power, because the lower
@@ -22,18 +22,18 @@ Mailing List
 ------------
 There is a CPU frequency changing CVS commit and general list where
 you can report bugs, problems or submit patches. To post a message,
-send an email to linux-pm@vger.kernel.org.
+send an email to linaos-pm@vger.kernel.org.
 
 Links
 -----
 the FTP archives:
-* ftp://ftp.linux.org.uk/pub/linux/cpufreq/
+* ftp://ftp.linaos.org.uk/pub/linaos/cpufreq/
 
 how to access the CVS repository:
-* http://cvs.arm.linux.org.uk/
+* http://cvs.arm.linaos.org.uk/
 
 the CPUFreq Mailing list:
-* http://vger.kernel.org/vger-lists.html#linux-pm
+* http://vger.kernel.org/vger-lists.html#linaos-pm
 
 Clock and voltage scaling for the SA-1100:
 * http://www.lartmaker.nl/projects/scaling

@@ -5,14 +5,14 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/backing-dev.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/pagevec.h>
-#include <linux/netfs.h>
-#include <linux/fscache.h>
+#include <linaos/backing-dev.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/writeback.h>
+#include <linaos/pagevec.h>
+#include <linaos/netfs.h>
+#include <linaos/fscache.h>
 #include "internal.h"
 
 /*

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2019-2020 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/soc/qcom/smem_state.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/notifier.h>
+#include <linaos/soc/qcom/smem.h>
+#include <linaos/soc/qcom/smem_state.h>
 
 #include "ipa_smp2p.h"
 #include "ipa.h"

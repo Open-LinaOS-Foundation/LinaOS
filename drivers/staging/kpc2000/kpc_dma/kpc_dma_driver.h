@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 #ifndef KPC_DMA_DRIVER_H
 #define KPC_DMA_DRIVER_H
-#include <linux/platform_device.h>
-#include <linux/cdev.h>
-#include <linux/kfifo.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/miscdevice.h>
-#include <linux/rwsem.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
+#include <linaos/platform_device.h>
+#include <linaos/cdev.h>
+#include <linaos/kfifo.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/sched.h>
+#include <linaos/miscdevice.h>
+#include <linaos/rwsem.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
+#include <linaos/bitops.h>
 #include "../kpc.h"
 
 struct kp2000_device;

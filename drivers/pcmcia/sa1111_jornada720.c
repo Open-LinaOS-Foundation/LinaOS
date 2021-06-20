@@ -5,12 +5,12 @@
  * Jornada720 PCMCIA specific routines
  *
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>

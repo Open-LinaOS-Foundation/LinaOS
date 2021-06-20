@@ -20,11 +20,11 @@
 
 #include "em28xx.h"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
-#include <linux/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/usb.h>
+#include <linaos/i2c.h>
+#include <linaos/jiffies.h>
 
 #include "tuner-xc2028.h"
 #include <media/v4l2-common.h>
@@ -608,7 +608,7 @@ error:
 }
 
 /*
- * based on linux/sunrpc/svcauth.h and linux/hash.h
+ * based on linaos/sunrpc/svcauth.h and linaos/hash.h
  * The original hash function returns a different value, if arch is x86_64
  * or i386.
  */

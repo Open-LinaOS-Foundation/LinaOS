@@ -32,10 +32,10 @@
  */
 
 
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/srq.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
+#include <linaos/mlx4/cmd.h>
+#include <linaos/mlx4/srq.h>
+#include <linaos/export.h>
+#include <linaos/gfp.h>
 
 #include "mlx4.h"
 #include "icm.h"

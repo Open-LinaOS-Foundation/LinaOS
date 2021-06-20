@@ -3,7 +3,7 @@
 
 #include "wifi.h"
 #include "cam.h"
-#include <linux/export.h>
+#include <linaos/export.h>
 
 void rtl_cam_reset_sec_info(struct ieee80211_hw *hw)
 {

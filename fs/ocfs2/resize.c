@@ -8,8 +8,8 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
 
 #include <cluster/masklog.h>
 

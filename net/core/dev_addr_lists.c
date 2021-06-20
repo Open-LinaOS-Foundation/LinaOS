@@ -7,10 +7,10 @@
  * addresses lists.
  */
 
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/export.h>
-#include <linux/list.h>
+#include <linaos/netdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/export.h>
+#include <linaos/list.h>
 
 /*
  * General list handling functions

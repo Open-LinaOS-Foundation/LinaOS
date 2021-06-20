@@ -13,19 +13,19 @@
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2006, 2008
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/audit.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/audit.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/netlabel.h>
 #include <net/cipso_ipv4.h>
 #include <net/calipso.h>
 #include <asm/bug.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #include "netlabel_domainhash.h"
 #include "netlabel_unlabeled.h"

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfs/part_tbl.c
+ *  linaos/fs/hfs/part_tbl.c
  *
  * Copyright (C) 1996-1997  Paul H. Hargrove
  * (C) 2003 Ardis Technologies <roman@ardistech.com>

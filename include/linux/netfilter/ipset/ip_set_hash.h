@@ -2,7 +2,7 @@
 #ifndef __IP_SET_HASH_H
 #define __IP_SET_HASH_H
 
-#include <uapi/linux/netfilter/ipset/ip_set_hash.h>
+#include <uapi/linaos/netfilter/ipset/ip_set_hash.h>
 
 
 #define IPSET_DEFAULT_HASHSIZE		1024

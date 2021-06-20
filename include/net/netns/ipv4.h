@@ -6,10 +6,10 @@
 #ifndef __NETNS_IPV4_H__
 #define __NETNS_IPV4_H__
 
-#include <linux/uidgid.h>
+#include <linaos/uidgid.h>
 #include <net/inet_frag.h>
-#include <linux/rcupdate.h>
-#include <linux/siphash.h>
+#include <linaos/rcupdate.h>
+#include <linaos/siphash.h>
 
 struct ctl_table_header;
 struct ipv4_devconf;

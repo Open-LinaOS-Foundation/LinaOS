@@ -7,11 +7,11 @@
  *	Seung-Woo Kim <sw0312.kim@samsung.com>
  */
 
-#include <linux/component.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/uaccess.h>
+#include <linaos/component.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/uaccess.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

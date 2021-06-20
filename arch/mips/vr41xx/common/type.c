@@ -2,7 +2,7 @@
 /*
  *  type.c, System type for NEC VR4100 series.
  *
- *  Copyright (C) 2005	Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2005	Yoichi Yuasa <yuasa@linaos-mips.org>
  */
 
 const char *get_system_type(void)

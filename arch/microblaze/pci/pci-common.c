@@ -12,26 +12,26 @@
  * Common pmac/prep/chrp pci routines. -- Cort
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/shmem_fs.h>
-#include <linux/list.h>
-#include <linux/syscalls.h>
-#include <linux/irq.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/mm.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/list.h>
+#include <linaos/syscalls.h>
+#include <linaos/irq.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_pci.h>
+#include <linaos/export.h>
 
 #include <asm/processor.h>
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <asm/pci-bridge.h>
 #include <asm/byteorder.h>
 

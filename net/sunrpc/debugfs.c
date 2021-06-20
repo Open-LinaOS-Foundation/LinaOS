@@ -5,9 +5,9 @@
  * (c) 2014 Jeff Layton <jlayton@primarydata.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/clnt.h>
+#include <linaos/debugfs.h>
+#include <linaos/sunrpc/sched.h>
+#include <linaos/sunrpc/clnt.h>
 #include "netns.h"
 
 static struct dentry *topdir;

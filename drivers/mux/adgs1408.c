@@ -5,12 +5,12 @@
  * Copyright 2018 Analog Devices Inc.
  */
 
-#include <linux/err.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mux/driver.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
+#include <linaos/err.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/mux/driver.h>
+#include <linaos/property.h>
+#include <linaos/spi/spi.h>
 
 #define ADGS1408_SW_DATA       (0x01)
 #define ADGS1408_REG_READ(reg) ((reg) | 0x80)

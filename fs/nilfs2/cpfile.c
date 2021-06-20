@@ -7,11 +7,11 @@
  * Written by Koji Sato.
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/buffer_head.h>
+#include <linaos/errno.h>
 #include "mdt.h"
 #include "cpfile.h"
 

@@ -5,11 +5,11 @@
  * Copyright (C) 2015-2016 Smart Energy Instruments, Inc.
  */
 
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/of_fdt.h>
-#include <linux/clocksource.h>
-#include <linux/irqchip.h>
+#include <linaos/of.h>
+#include <linaos/of_clk.h>
+#include <linaos/of_fdt.h>
+#include <linaos/clocksource.h>
+#include <linaos/irqchip.h>
 #include <asm/machvec.h>
 #include <asm/rtc.h>
 

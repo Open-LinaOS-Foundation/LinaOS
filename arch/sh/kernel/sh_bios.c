@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  C interface for trapping into the standard LinuxSH BIOS.
+ *  C interface for trapping into the standard LinaOSSH BIOS.
  *
  *  Copyright (C) 2000 Greg Banks, Mitch Davis
  *  Copyright (C) 1999, 2000  Niibe Yutaka
  *  Copyright (C) 2002  M. R. Brown
  *  Copyright (C) 2004 - 2010  Paul Mundt
  */
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/console.h>
+#include <linaos/tty.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
 #include <asm/sh_bios.h>
 
 #define BIOS_CALL_CONSOLE_WRITE		0
@@ -64,7 +64,7 @@ void sh_bios_shutdown(unsigned int how)
 
 /*
  * Read the old value of the VBR register to initialise the vector
- * through which debug and BIOS traps are delegated by the Linux trap
+ * through which debug and BIOS traps are delegated by the LinaOS trap
  * handler.
  */
 void sh_bios_vbr_init(void)

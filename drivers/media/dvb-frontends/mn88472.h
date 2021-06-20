@@ -8,7 +8,7 @@
 #ifndef MN88472_H
 #define MN88472_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 /* Define old names for backward compatibility */
 #define VARIABLE_TS_CLOCK   MN88472_TS_CLK_VARIABLE

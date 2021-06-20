@@ -7,11 +7,11 @@
  * Authors : Utz Bacher <utz.bacher@de.ibm.com>
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 
 #include <asm/machdep.h>
 #include <asm/nvram.h>

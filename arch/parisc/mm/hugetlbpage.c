@@ -7,12 +7,12 @@
  * Copyright (C) 2015 Helge Deller <deller@gmx.de>
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/sysctl.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/pagemap.h>
+#include <linaos/sysctl.h>
 
 #include <asm/mman.h>
 #include <asm/tlb.h>
@@ -106,7 +106,7 @@ static inline void purge_tlb_entries_huge(struct mm_struct *mm, unsigned long ad
 	int i;
 
 	/* We may use multiple physical huge pages (e.g. 2x1 MB) to emulate
-	 * Linux standard huge pages (e.g. 2 MB) */
+	 * LinaOS standard huge pages (e.g. 2 MB) */
 	BUILD_BUG_ON(REAL_HPAGE_SHIFT > HPAGE_SHIFT);
 
 	addr &= HPAGE_MASK;

@@ -2,7 +2,7 @@
 #include <net/genetlink.h>
 #include <net/ila.h>
 #include <net/netns/generic.h>
-#include <uapi/linux/genetlink.h>
+#include <uapi/linaos/genetlink.h>
 #include "ila.h"
 
 static const struct nla_policy ila_nl_policy[ILA_ATTR_MAX + 1] = {

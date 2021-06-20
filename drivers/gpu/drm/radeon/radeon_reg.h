@@ -1,6 +1,6 @@
 /*
  * Copyright 2000 ATI Technologies Inc., Markham, Ontario, and
- *                VA Linux Systems Inc., Fremont, California.
+ *                VA LinaOS Systems Inc., Fremont, California.
  *
  * All Rights Reserved.
  *
@@ -29,7 +29,7 @@
 /*
  * Authors:
  *   Kevin E. Martin <martin@xfree86.org>
- *   Rickard E. Faith <faith@valinux.com>
+ *   Rickard E. Faith <faith@valinaos.com>
  *   Alan Hourihane <alanh@fairlite.demon.co.uk>
  *
  * References:

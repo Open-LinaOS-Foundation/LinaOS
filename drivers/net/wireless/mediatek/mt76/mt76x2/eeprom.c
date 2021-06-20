@@ -3,8 +3,8 @@
  * Copyright (C) 2016 Felix Fietkau <nbd@nbd.name>
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
 #include <asm/unaligned.h>
 #include "mt76x2.h"
 #include "eeprom.h"

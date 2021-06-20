@@ -17,11 +17,11 @@
 #include "util/target.h"
 #include "util/time-utils.h"
 #include "util/cgroup.h"
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
-#include <linux/perf_event.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/zalloc.h>
+#include <linaos/perf_event.h>
 #include <asm/bug.h>
 #include <perf/evsel.h>
 #include <perf/cpumap.h>
@@ -34,7 +34,7 @@
 #include <inttypes.h>
 #include <stdio.h>
 #include <string.h>
-#include <uapi/linux/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
+#include <uapi/linaos/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
 #include <api/fs/fs.h>
 #include <api/io.h>
 #include <sys/types.h>

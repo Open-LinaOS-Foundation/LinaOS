@@ -18,15 +18,15 @@
 
 #define pr_fmt(fmt) "dmxdev: " fmt
 
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/ioctl.h>
-#include <linux/wait.h>
-#include <linux/uaccess.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/poll.h>
+#include <linaos/ioctl.h>
+#include <linaos/wait.h>
+#include <linaos/uaccess.h>
 #include <media/dmxdev.h>
 #include <media/dvb_vb2.h>
 

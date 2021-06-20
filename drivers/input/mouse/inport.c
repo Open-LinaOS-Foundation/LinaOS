@@ -10,17 +10,17 @@
  */
 
 /*
- * Inport (ATI XL and Microsoft) busmouse driver for Linux
+ * Inport (ATI XL and Microsoft) busmouse driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

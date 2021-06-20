@@ -4,30 +4,30 @@
  *
  *  Based on asus_acpi.c as patched for the Eee PC by Asus:
  *  ftp://ftp.asus.com/pub/ASUS/EeePC/701/ASUS_ACPI_071126.rar
- *  Based on eee.c from eeepc-linux
+ *  Based on eee.c from eeepc-linaos
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/uaccess.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/rfkill.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/leds.h>
-#include <linux/dmi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/platform_device.h>
+#include <linaos/backlight.h>
+#include <linaos/fb.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/uaccess.h>
+#include <linaos/input.h>
+#include <linaos/input/sparse-keymap.h>
+#include <linaos/rfkill.h>
+#include <linaos/pci.h>
+#include <linaos/pci_hotplug.h>
+#include <linaos/leds.h>
+#include <linaos/dmi.h>
 #include <acpi/video.h>
 
 #define EEEPC_LAPTOP_VERSION	"0.1"

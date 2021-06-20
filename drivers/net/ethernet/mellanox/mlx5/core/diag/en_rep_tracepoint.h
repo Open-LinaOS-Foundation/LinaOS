@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /* Copyright (c) 2019 Mellanox Technologies. */
 
 #undef TRACE_SYSTEM
@@ -7,8 +7,8 @@
 #if !defined(_MLX5_EN_REP_TP_) || defined(TRACE_HEADER_MULTI_READ)
 #define _MLX5_EN_REP_TP_
 
-#include <linux/tracepoint.h>
-#include <linux/trace_seq.h>
+#include <linaos/tracepoint.h>
+#include <linaos/trace_seq.h>
 #include "en_rep.h"
 
 TRACE_EVENT(mlx5e_rep_neigh_update,

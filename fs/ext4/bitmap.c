@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/bitmap.c
+ *  linaos/fs/ext4/bitmap.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,7 +8,7 @@
  * Universite Pierre et Marie Curie (Paris VI)
  */
 
-#include <linux/buffer_head.h>
+#include <linaos/buffer_head.h>
 #include "ext4.h"
 
 unsigned int ext4_count_free(char *bitmap, unsigned int numchars)

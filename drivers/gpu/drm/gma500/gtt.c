@@ -4,10 +4,10 @@
  * All Rights Reserved.
  *
  * Authors: Thomas Hellstrom <thomas-at-tungstengraphics.com>
- *	    Alan Cox <alan@linux.intel.com>
+ *	    Alan Cox <alan@linaos.intel.com>
  */
 
-#include <linux/shmem_fs.h>
+#include <linaos/shmem_fs.h>
 
 #include <asm/set_memory.h>
 

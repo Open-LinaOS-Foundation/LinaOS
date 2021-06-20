@@ -7,29 +7,29 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/proc_fs.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/regulator/machine.h>
-#include <linux/workqueue.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/sched.h>
+#include <linaos/pm.h>
+#include <linaos/device.h>
+#include <linaos/proc_fs.h>
+#include <linaos/acpi.h>
+#include <linaos/slab.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/workqueue.h>
+#include <linaos/reboot.h>
+#include <linaos/delay.h>
 #ifdef CONFIG_X86
 #include <asm/mpspec.h>
-#include <linux/dmi.h>
+#include <linaos/dmi.h>
 #endif
-#include <linux/acpi_iort.h>
-#include <linux/pci.h>
+#include <linaos/acpi_iort.h>
+#include <linaos/pci.h>
 #include <acpi/apei.h>
-#include <linux/suspend.h>
+#include <linaos/suspend.h>
 
 #include "internal.h"
 

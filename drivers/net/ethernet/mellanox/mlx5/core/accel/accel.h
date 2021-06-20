@@ -3,8 +3,8 @@
 
 #ifdef CONFIG_MLX5_ACCEL
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
 
 static inline bool is_metadata_hdr_valid(struct sk_buff *skb)
 {

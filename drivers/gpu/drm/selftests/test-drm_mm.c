@@ -5,12 +5,12 @@
 
 #define pr_fmt(fmt) "drm_mm: " fmt
 
-#include <linux/module.h>
-#include <linux/prime_numbers.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/vmalloc.h>
-#include <linux/ktime.h>
+#include <linaos/module.h>
+#include <linaos/prime_numbers.h>
+#include <linaos/slab.h>
+#include <linaos/random.h>
+#include <linaos/vmalloc.h>
+#include <linaos/ktime.h>
 
 #include <drm/drm_mm.h>
 

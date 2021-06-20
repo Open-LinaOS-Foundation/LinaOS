@@ -4,7 +4,7 @@
 #ifndef _ASM_POWERPC_CACHEFLUSH_H
 #define _ASM_POWERPC_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <asm/cputable.h>
 #include <asm/cpu_has_feature.h>
 

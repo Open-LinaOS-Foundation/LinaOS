@@ -5,7 +5,7 @@
  * Based on code by Robert Teather (C) 2012 Samsung
  *
  * This display driver (and I refer to the physical component NT35510,
- * not this Linux kernel software driver) can handle:
+ * not this LinaOS kernel software driver) can handle:
  * 480x864, 480x854, 480x800, 480x720 and 480x640 pixel displays.
  * It has 480x840x24bit SRAM embedded for storing a frame.
  * When powered on the display is by default in 480x800 mode.
@@ -22,13 +22,13 @@
  * this panel driver should be refactored to also support that use
  * case.
  */
-#include <linux/backlight.h>
-#include <linux/bitops.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/backlight.h>
+#include <linaos/bitops.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
 
 #include <video/mipi_display.h>
 

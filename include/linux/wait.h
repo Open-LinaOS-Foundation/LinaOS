@@ -2,14 +2,14 @@
 #ifndef _LINUX_WAIT_H
 #define _LINUX_WAIT_H
 /*
- * Linux wait queue related types and methods
+ * LinaOS wait queue related types and methods
  */
-#include <linux/list.h>
-#include <linux/stddef.h>
-#include <linux/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/stddef.h>
+#include <linaos/spinlock.h>
 
 #include <asm/current.h>
-#include <uapi/linux/wait.h>
+#include <uapi/linaos/wait.h>
 
 typedef struct wait_queue_entry wait_queue_entry_t;
 

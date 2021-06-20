@@ -23,13 +23,13 @@
  * Copyright 2005-06 Tower Technologies
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/rtc.h>
+#include <linaos/spi/spi.h>
+#include <linaos/bcd.h>
 
 #define RX4581_REG_SC		0x00 /* Second in BCD */
 #define RX4581_REG_MN		0x01 /* Minute in BCD */

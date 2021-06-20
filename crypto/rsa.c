@@ -5,8 +5,8 @@
  * Authors: Tadeusz Struk <tadeusz.struk@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/mpi.h>
+#include <linaos/module.h>
+#include <linaos/mpi.h>
 #include <crypto/internal/rsa.h>
 #include <crypto/internal/akcipher.h>
 #include <crypto/akcipher.h>

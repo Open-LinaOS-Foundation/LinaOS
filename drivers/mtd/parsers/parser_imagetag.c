@@ -10,16 +10,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bcm963xx_tag.h>
-#include <linux/crc32.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of.h>
+#include <linaos/bcm963xx_tag.h>
+#include <linaos/crc32.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/of.h>
 
 /* Ensure strings read from flash structs are null terminated */
 #define STR_NULL_TERMINATE(x) \
@@ -60,7 +60,7 @@ static int bcm963xx_parse_imagetag_partitions(struct mtd_info *master,
 					const struct mtd_partition **pparts,
 					struct mtd_part_parser_data *data)
 {
-	/* CFE, NVRAM and global Linux are always present */
+	/* CFE, NVRAM and global LinaOS are always present */
 	int nrparts = 0, curpart = 0;
 	struct bcm_tag *buf = NULL;
 	struct mtd_partition *parts;

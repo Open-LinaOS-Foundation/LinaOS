@@ -4,7 +4,7 @@
  * Copyright (C) 1994-2000 Algorithmics Ltd.
  *
  *  Nov 7, 2000
- *  Modification to allow integration with Linux kernel
+ *  Modification to allow integration with LinaOS kernel
  *
  *  Kevin D. Kissell, kevink@mips.com and Carsten Langgard, carstenl@mips.com
  *  Copyright (C) 2000 MIPS Technologies, Inc. All rights reserved.
@@ -12,11 +12,11 @@
 #ifndef __ARCH_MIPS_MATH_EMU_IEEE754_H
 #define __ARCH_MIPS_MATH_EMU_IEEE754_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/byteorder.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
 #include <asm/bitfield.h>
 
 union ieee754dp {

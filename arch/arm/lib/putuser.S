@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/putuser.S
+ *  linaos/arch/arm/lib/putuser.S
  *
  *  Copyright (C) 2001 Russell King
  *
@@ -24,7 +24,7 @@
  * Note that ADDR_LIMIT is either 0 or 0xc0000000
  * Note also that it is intended that __put_user_bad is not global.
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/errno.h>
 #include <asm/domain.h>

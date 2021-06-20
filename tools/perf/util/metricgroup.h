@@ -2,8 +2,8 @@
 #ifndef METRICGROUP_H
 #define METRICGROUP_H 1
 
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <linaos/list.h>
+#include <linaos/rbtree.h>
 #include <stdbool.h>
 #include "pmu-events/pmu-events.h"
 

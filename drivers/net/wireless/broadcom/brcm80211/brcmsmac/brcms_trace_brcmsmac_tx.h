@@ -17,7 +17,7 @@
 #if !defined(__TRACE_BRCMSMAC_TX_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __TRACE_BRCMSMAC_TX_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM brcmsmac_tx

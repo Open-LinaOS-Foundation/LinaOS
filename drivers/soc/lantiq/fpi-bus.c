@@ -6,15 +6,15 @@
  *  Copyright (C) 2017 Hauke Mehrtens <hauke@hauke-m.de>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
 
 #include <lantiq_soc.h>
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Driver for the Solos PCI ADSL2+ card, designed to support Linux by
+ * Driver for the Solos PCI ADSL2+ card, designed to support LinaOS by
  *  Traverse Technologies -- https://www.traverse.com.au/
  *  Xrio Limited          -- http://www.xrio.com/
  *
@@ -15,23 +15,23 @@
 #define DEBUG
 #define VERBOSE_DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/skbuff.h>
-#include <linux/sysfs.h>
-#include <linux/device.h>
-#include <linux/kobject.h>
-#include <linux/firmware.h>
-#include <linux/ctype.h>
-#include <linux/swab.h>
-#include <linux/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/atm.h>
+#include <linaos/atmdev.h>
+#include <linaos/skbuff.h>
+#include <linaos/sysfs.h>
+#include <linaos/device.h>
+#include <linaos/kobject.h>
+#include <linaos/firmware.h>
+#include <linaos/ctype.h>
+#include <linaos/swab.h>
+#include <linaos/slab.h>
 
 #define VERSION "1.04"
 #define DRIVER_VERSION 0x01

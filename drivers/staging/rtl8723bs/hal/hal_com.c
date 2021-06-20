@@ -6,7 +6,7 @@
  ******************************************************************************/
 #define _HAL_COM_C_
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <drv_types.h>
 #include <rtw_debug.h>
 #include "hal_com_h2c.h"

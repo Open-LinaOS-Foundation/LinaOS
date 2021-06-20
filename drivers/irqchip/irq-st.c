@@ -8,12 +8,12 @@
  */
 
 #include <dt-bindings/interrupt-controller/irq-st.h>
-#include <linux/err.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 #define STIH415_SYSCFG_642		0x0a8
 #define STIH416_SYSCFG_7543		0x87c

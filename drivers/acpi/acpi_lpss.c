@@ -3,26 +3,26 @@
  * ACPI support for Intel Lynxpoint LPSS.
  *
  * Copyright (C) 2013, Intel Corporation
- * Authors: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Mika Westerberg <mika.westerberg@linaos.intel.com>
  *          Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/x86/clk-lpss.h>
-#include <linux/platform_data/x86/pmc_atom.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/pwm.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
+#include <linaos/acpi.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/dmi.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/x86/clk-lpss.h>
+#include <linaos/platform_data/x86/pmc_atom.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pwm.h>
+#include <linaos/suspend.h>
+#include <linaos/delay.h>
 
 #include "internal.h"
 

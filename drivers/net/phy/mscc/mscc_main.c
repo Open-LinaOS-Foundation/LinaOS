@@ -7,15 +7,15 @@
  * Copyright (c) 2016 Microsemi Corporation
  */
 
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mdio.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/of.h>
-#include <linux/netdevice.h>
+#include <linaos/firmware.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mdio.h>
+#include <linaos/mii.h>
+#include <linaos/phy.h>
+#include <linaos/of.h>
+#include <linaos/netdevice.h>
 #include <dt-bindings/net/mscc-phy-vsc8531.h>
 #include "mscc_serdes.h"
 #include "mscc.h"

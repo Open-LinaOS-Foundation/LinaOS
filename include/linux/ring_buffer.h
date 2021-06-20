@@ -2,9 +2,9 @@
 #ifndef _LINUX_RING_BUFFER_H
 #define _LINUX_RING_BUFFER_H
 
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
+#include <linaos/mm.h>
+#include <linaos/seq_file.h>
+#include <linaos/poll.h>
 
 struct trace_buffer;
 struct ring_buffer_iter;

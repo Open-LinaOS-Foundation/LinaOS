@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-sa1100/hackkit.c
+ * linaos/arch/arm/mach-sa1100/hackkit.c
  *
  * Copyright (C) 2002 Stefan Eletzhofer <stefan.eletzhofer@eletztrick.de>
  *
  * This file contains all HackKit tweaks. Based on original work from
  * Nicolas Pitre's assabet fixes
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/cpufreq.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/serial_core.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/tty.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/pgtable.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/tty.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/cpufreq.h>
+#include <linaos/platform_data/sa11x0-serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/tty.h>
+#include <linaos/gpio.h>
+#include <linaos/leds.h>
+#include <linaos/platform_device.h>
+#include <linaos/pgtable.h>
 
 #include <asm/mach-types.h>
 #include <asm/setup.h>

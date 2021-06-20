@@ -15,28 +15,28 @@
  * and many others.
  */
 
-#include <linux/blkdev.h>
-#include <linux/bug.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/stringify.h>
-#include <linux/workqueue.h>
+#include <linaos/blkdev.h>
+#include <linaos/bug.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/firewire.h>
+#include <linaos/firewire-constants.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/stringify.h>
+#include <linaos/workqueue.h>
 
 #include <asm/byteorder.h>
 
@@ -1089,7 +1089,7 @@ static void sbp2_init_workarounds(struct sbp2_target *tgt, u32 model,
 
 	if (w)
 		dev_notice(tgt_dev(tgt),
-			   "Please notify linux1394-devel@lists.sf.net "
+			   "Please notify linaos1394-devel@lists.sf.net "
 			   "if you need the workarounds parameter\n");
 
 	if (w & SBP2_WORKAROUND_OVERRIDE)

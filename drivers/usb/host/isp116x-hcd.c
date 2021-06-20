@@ -39,7 +39,7 @@
   1. Configure your memory controller (the best)
   2. Implement platform-specific delay function possibly
   combined with configuring the memory controller; see
-  include/linux/usb-isp116x.h for more info. Some broken
+  include/linaos/usb-isp116x.h for more info. Some broken
   memory controllers line LH7A400 SMC need this. Also,
   uncomment for that to work the following
   USE_PLATFORM_DELAY macro.
@@ -56,17 +56,17 @@
 /* enqueuing/finishing log of urbs */
 //#define URB_TRACE
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/isp116x.h>
-#include <linux/usb/hcd.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/errno.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/usb/isp116x.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

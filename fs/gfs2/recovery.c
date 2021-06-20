@@ -4,15 +4,15 @@
  * Copyright (C) 2004-2006 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/crc32.h>
-#include <linux/crc32c.h>
-#include <linux/ktime.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/completion.h>
+#include <linaos/buffer_head.h>
+#include <linaos/gfs2_ondisk.h>
+#include <linaos/crc32.h>
+#include <linaos/crc32c.h>
+#include <linaos/ktime.h>
 
 #include "gfs2.h"
 #include "incore.h"

@@ -3,7 +3,7 @@
 #ifndef _NET_CORE_DATAGRAM_H_
 #define _NET_CORE_DATAGRAM_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct sock;
 struct sk_buff;

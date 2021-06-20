@@ -30,11 +30,11 @@
  * software renderer and the X server for efficient buffer sharing.
  */
 
-#include <linux/dma-buf.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/shmem_fs.h>
-#include <linux/vmalloc.h>
+#include <linaos/dma-buf.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/vmalloc.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_file.h>

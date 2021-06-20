@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/module.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/module.h>
 #include <asm/cacheflush.h>
 #include <asm/proc-fns.h>
 #include <asm/shmparam.h>

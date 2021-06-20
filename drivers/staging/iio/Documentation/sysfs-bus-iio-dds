@@ -1,7 +1,7 @@
 
 What:		/sys/bus/iio/devices/.../out_altvoltageX_frequencyY
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Stores frequency into tuning word Y.
 		There will be more than one out_altvoltageX_frequencyY file,
@@ -12,7 +12,7 @@ Description:
 
 What:		/sys/bus/iio/devices/.../out_altvoltageX_frequencyY_scale
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Scale to be applied to out_altvoltageX_frequencyY in order to
 		obtain the desired value in Hz. If shared across all frequency
@@ -21,7 +21,7 @@ Description:
 
 What:		/sys/bus/iio/devices/.../out_altvoltageX_frequencysymbol
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Specifies the active output frequency tuning word. The value
 		corresponds to the Y in out_altvoltageX_frequencyY.
@@ -31,7 +31,7 @@ Description:
 
 What:		/sys/bus/iio/devices/.../out_altvoltageX_phaseY
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Stores phase into Y.
 		There will be more than one out_altvoltageX_phaseY file, which
@@ -42,7 +42,7 @@ Description:
 
 What:		/sys/bus/iio/devices/.../out_altvoltageX_phaseY_scale
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Scale to be applied to out_altvoltageX_phaseY in order to obtain
 		the desired value in rad. If shared across all phase registers
@@ -51,7 +51,7 @@ Description:
 
 What:		/sys/bus/iio/devices/.../out_altvoltageX_phasesymbol
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Specifies the active phase Y which is added to the phase
 		accumulator output. The value corresponds to the Y in
@@ -62,7 +62,7 @@ What:		/sys/bus/iio/devices/.../out_altvoltageX_pincontrol_en
 What:		/sys/bus/iio/devices/.../out_altvoltageX_pincontrol_frequency_en
 What:		/sys/bus/iio/devices/.../out_altvoltageX_pincontrol_phase_en
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		out_altvoltageX_pincontrol_en: Both, the active frequency and
 		phase is controlled by the respective phase and frequency
@@ -74,7 +74,7 @@ Description:
 What:		/sys/bus/iio/devices/.../out_altvoltageX_out_enable
 What:		/sys/bus/iio/devices/.../out_altvoltageX_outY_enable
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		out_altvoltageX_outY_enable controls signal generation on
 		output Y of channel X. Y may be suppressed if all channels are
@@ -82,7 +82,7 @@ Description:
 
 What:		/sys/bus/iio/devices/.../out_altvoltageX_outY_wavetype
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Specifies the output waveform.
 		(sine, triangle, ramp, square, ...)
@@ -91,6 +91,6 @@ Description:
 
 What:		/sys/bus/iio/devices/.../out_altvoltageX_outY_wavetype_available
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Lists all available output waveform options.

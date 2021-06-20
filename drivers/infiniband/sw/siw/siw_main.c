@@ -3,24 +3,24 @@
 /* Authors: Bernard Metzler <bmt@zurich.ibm.com> */
 /* Copyright (c) 2008-2019, IBM Corporation */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/inetdevice.h>
 #include <net/net_namespace.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_arp.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/if_arp.h>
+#include <linaos/list.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/module.h>
+#include <linaos/dma-mapping.h>
 
 #include <net/addrconf.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/rdma_netlink.h>
-#include <linux/kthread.h>
+#include <linaos/kthread.h>
 
 #include "siw.h"
 #include "siw_verbs.h"
@@ -117,7 +117,7 @@ static int siw_dev_qualified(struct net_device *netdev)
 	/*
 	 * Additional hardware support can be added here
 	 * (e.g. ARPHRD_FDDI, ARPHRD_ATM, ...) - see
-	 * <linux/if_arp.h> for type identifiers.
+	 * <linaos/if_arp.h> for type identifiers.
 	 */
 	if (netdev->type == ARPHRD_ETHER || netdev->type == ARPHRD_IEEE802 ||
 	    (netdev->type == ARPHRD_LOOPBACK && loopback_enabled))

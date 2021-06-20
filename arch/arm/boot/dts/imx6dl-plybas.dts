@@ -23,13 +23,13 @@
 
 		button-start {
 			label = "START";
-			linux,code = <31>;
+			linaos,code = <31>;
 			gpios = <&gpio5 8 GPIO_ACTIVE_LOW>;
 		};
 
 		button-clean {
 			label = "CLEAN";
-			linux,code = <46>;
+			linaos,code = <46>;
 			gpios = <&gpio5 9 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -52,7 +52,7 @@
 		led-2 {
 			label = "light_tower1";
 			gpios = <&gpio4 22 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		led-3 {
@@ -215,7 +215,7 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_uart2>;
 	fsl,uart-has-rtscts;
-	linux,rs485-enabled-at-boot-time;
+	linaos,rs485-enabled-at-boot-time;
 	rs485-rts-delay = <0 20>;
 	status = "okay";
 };

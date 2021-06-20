@@ -32,7 +32,7 @@
  * SOFTWARE.
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "mad_priv.h"
 #include "mad_rmpp.h"

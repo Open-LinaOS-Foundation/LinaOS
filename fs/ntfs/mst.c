@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * mst.c - NTFS multi sector transfer protection handling code. Part of the
- *	   Linux-NTFS project.
+ *	   LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  */

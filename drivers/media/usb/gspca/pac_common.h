@@ -3,7 +3,7 @@
  * Pixart PAC207BCA / PAC73xx common functions
  *
  * Copyright (C) 2008 Hans de Goede <j.w.r.degoede@hhs.nl>
- * Copyright (C) 2005 Thomas Kaiser thomas@kaiser-linux.li
+ * Copyright (C) 2005 Thomas Kaiser thomas@kaiser-linaos.li
  * Copyleft (C) 2005 Michel Xhaard mxhaard@magic.fr
  *
  * V4L2 by Jean-Francois Moine <http://moinejf.free.fr>

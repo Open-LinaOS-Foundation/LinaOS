@@ -11,7 +11,7 @@
  * Copyright (C) 2000 Franz Sirl.
  *
  * Adapted to ADB changes and support for more devices by
- * Benjamin Herrenschmidt. Adapted from code in MkLinux
+ * Benjamin Herrenschmidt. Adapted from code in MkLinaOS
  * and reworked.
  * 
  * Supported devices:
@@ -35,15 +35,15 @@
  * Move to syfs
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/notifier.h>
-#include <linux/input.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/notifier.h>
+#include <linaos/input.h>
 
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/pmu.h>
+#include <linaos/adb.h>
+#include <linaos/cuda.h>
+#include <linaos/pmu.h>
 
 #include <asm/machdep.h>
 #ifdef CONFIG_PPC_PMAC
@@ -76,7 +76,7 @@ static struct notifier_block adbhid_adb_notifier = {
 #define ADB_KEY_POWER_OLD	0x7e
 #define ADB_KEY_POWER		0x7f
 
-static const u16 adb_to_linux_keycodes[128] = {
+static const u16 adb_to_linaos_keycodes[128] = {
 	/* 0x00 */ KEY_A, 		/*  30 */
 	/* 0x01 */ KEY_S, 		/*  31 */
 	/* 0x02 */ KEY_D,		/*  32 */
@@ -789,7 +789,7 @@ adbhid_input_register(int id, int default_id, int original_handler_id,
 
 	switch (default_id) {
 	case ADB_KEYBOARD:
-		hid->keycode = kmalloc(sizeof(adb_to_linux_keycodes), GFP_KERNEL);
+		hid->keycode = kmalloc(sizeof(adb_to_linaos_keycodes), GFP_KERNEL);
 		if (!hid->keycode) {
 			err = -ENOMEM;
 			goto fail;
@@ -797,7 +797,7 @@ adbhid_input_register(int id, int default_id, int original_handler_id,
 
 		sprintf(hid->name, "ADB keyboard");
 
-		memcpy(hid->keycode, adb_to_linux_keycodes, sizeof(adb_to_linux_keycodes));
+		memcpy(hid->keycode, adb_to_linaos_keycodes, sizeof(adb_to_linaos_keycodes));
 
 		switch (original_handler_id) {
 		default:

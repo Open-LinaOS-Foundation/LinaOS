@@ -5,7 +5,7 @@
 #ifndef DCA_H
 #define DCA_H
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 /* DCA Provider API */
 

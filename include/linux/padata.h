@@ -12,11 +12,11 @@
 #ifndef PADATA_H
 #define PADATA_H
 
-#include <linux/compiler_types.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/kobject.h>
+#include <linaos/compiler_types.h>
+#include <linaos/workqueue.h>
+#include <linaos/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/kobject.h>
 
 #define PADATA_CPU_SERIAL   0x01
 #define PADATA_CPU_PARALLEL 0x02

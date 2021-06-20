@@ -8,7 +8,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: MIPI CCS, SMIA++ and SMIA compliant camera sensors
 
 maintainers:
-  - Sakari Ailus <sakari.ailus@linux.intel.com>
+  - Sakari Ailus <sakari.ailus@linaos.intel.com>
 
 description:
 

@@ -4,10 +4,10 @@
  * Copyright:	(C) 2015 Linaro Ltd.
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/of_address.h>
-#include <linux/suspend.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/irqchip/arm-gic.h>
+#include <linaos/of_address.h>
+#include <linaos/suspend.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

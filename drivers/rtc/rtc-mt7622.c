@@ -5,13 +5,13 @@
  * Copyright (C) 2017 Sean Wang <sean.wang@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
 
 #define MTK_RTC_DEV KBUILD_MODNAME
 

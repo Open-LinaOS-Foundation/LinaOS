@@ -4,18 +4,18 @@
  */
 
 /*
- *  Serial mouse driver for Linux
+ *  Serial mouse driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
 
 #define DRIVER_DESC	"Serial mouse driver"
 

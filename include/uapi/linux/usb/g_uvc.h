@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * g_uvc.h  --  USB Video Class Gadget driver API
  *
@@ -8,9 +8,9 @@
 #ifndef __LINUX_USB_G_UVC_H
 #define __LINUX_USB_G_UVC_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
-#include <linux/usb/ch9.h>
+#include <linaos/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/usb/ch9.h>
 
 #define UVC_EVENT_FIRST			(V4L2_EVENT_PRIVATE_START + 0)
 #define UVC_EVENT_CONNECT		(V4L2_EVENT_PRIVATE_START + 0)

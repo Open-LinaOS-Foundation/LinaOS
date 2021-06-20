@@ -11,12 +11,12 @@
 #include <recv_osdep.h>
 #include <xmit_osdep.h>
 #include <hal_intf.h>
-#include <linux/usb.h>
-#include <linux/vmalloc.h>
+#include <linaos/usb.h>
+#include <linaos/vmalloc.h>
 #include <mon.h>
 #include <osdep_intf.h>
 
-#include <usb_ops_linux.h>
+#include <usb_ops_linaos.h>
 #include <rtw_ioctl.h>
 
 #include "rtl8188e_hal.h"

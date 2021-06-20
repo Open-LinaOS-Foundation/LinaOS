@@ -8,7 +8,7 @@
 #ifndef _KEYS_DNS_RESOLVER_TYPE_H
 #define _KEYS_DNS_RESOLVER_TYPE_H
 
-#include <linux/key-type.h>
+#include <linaos/key-type.h>
 
 extern struct key_type key_type_dns_resolver;
 

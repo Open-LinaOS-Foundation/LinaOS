@@ -8,20 +8,20 @@
  * Thirupathi Chippakurthy <thirupathi.chippakurthy@stericsson.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/usb/otg.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/usb/musb-ux500.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb/otg.h>
+#include <linaos/slab.h>
+#include <linaos/notifier.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/mfd/abx500.h>
+#include <linaos/mfd/abx500/ab8500.h>
+#include <linaos/usb/musb-ux500.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/pinctrl/consumer.h>
 
 /* Bank AB8500_SYS_CTRL2_BLOCK */
 #define AB8500_MAIN_WD_CTRL_REG 0x01

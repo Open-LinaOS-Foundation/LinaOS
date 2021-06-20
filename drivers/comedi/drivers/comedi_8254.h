@@ -4,14 +4,14 @@
  * Generic 8254 timer/counter support
  * Copyright (C) 2014 H Hartley Sweeten <hsweeten@visionengravers.com>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
 #ifndef _COMEDI_8254_H
 #define _COMEDI_8254_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct comedi_device;
 struct comedi_insn;

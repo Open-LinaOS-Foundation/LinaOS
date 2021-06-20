@@ -150,7 +150,7 @@ have a bug in them that prevents the module from generating a SIGFPE.  This
 is caused by a failure to alias fp_current to the kernel variable
 current_set[0] correctly.
 
-The kernel provided with this distribution (vmlinux-nwfpe-0.93) contains
+The kernel provided with this distribution (vmlinaos-nwfpe-0.93) contains
 a fix for this problem and also incorporates the current version of the
 emulator directly.  It is possible to run with no floating point module
 loaded with this kernel.  It is provided as a demonstration of the

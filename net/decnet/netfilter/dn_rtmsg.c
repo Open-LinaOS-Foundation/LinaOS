@@ -10,15 +10,15 @@
  *
  * Author:      Steven Whitehouse <steve@chygwyn.com>
  */
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/netfilter.h>
+#include <linaos/spinlock.h>
 #include <net/netlink.h>
-#include <linux/netfilter_decnet.h>
+#include <linaos/netfilter_decnet.h>
 
 #include <net/sock.h>
 #include <net/flow.h>

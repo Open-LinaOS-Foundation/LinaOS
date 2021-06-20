@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * vboxguest linux pci driver, char-dev and input-device code,
+ * vboxguest linaos pci driver, char-dev and input-device code,
  *
  * Copyright (C) 2006-2016 Oracle Corporation
  */
 
-#include <linux/cred.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/vbox_utils.h>
+#include <linaos/cred.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/poll.h>
+#include <linaos/vbox_utils.h>
 #include "vboxguest_core.h"
 
 /** The device name. */
@@ -459,7 +459,7 @@ EXPORT_SYMBOL(vbg_put_gdev);
  *
  * @gdev:		The device extension.
  */
-void vbg_linux_mouse_event(struct vbg_dev *gdev)
+void vbg_linaos_mouse_event(struct vbg_dev *gdev)
 {
 	int rc;
 
@@ -493,5 +493,5 @@ static struct pci_driver vbg_pci_driver = {
 module_pci_driver(vbg_pci_driver);
 
 MODULE_AUTHOR("Oracle Corporation");
-MODULE_DESCRIPTION("Oracle VM VirtualBox Guest Additions for Linux Module");
+MODULE_DESCRIPTION("Oracle VM VirtualBox Guest Additions for LinaOS Module");
 MODULE_LICENSE("GPL");

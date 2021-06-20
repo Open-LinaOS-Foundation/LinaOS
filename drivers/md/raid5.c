@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * raid5.c : Multiple Devices driver for Linux
+ * raid5.c : Multiple Devices driver for LinaOS
  *	   Copyright (C) 1996, 1997 Ingo Molnar, Miguel de Icaza, Gadi Oxman
  *	   Copyright (C) 1999, 2000 Ingo Molnar
  *	   Copyright (C) 2002, 2003 H. Peter Anvin
@@ -35,20 +35,20 @@
  * miss any bits.
  */
 
-#include <linux/blkdev.h>
-#include <linux/kthread.h>
-#include <linux/raid/pq.h>
-#include <linux/async_tx.h>
-#include <linux/module.h>
-#include <linux/async.h>
-#include <linux/seq_file.h>
-#include <linux/cpu.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
-#include <linux/nodemask.h>
+#include <linaos/blkdev.h>
+#include <linaos/kthread.h>
+#include <linaos/raid/pq.h>
+#include <linaos/async_tx.h>
+#include <linaos/module.h>
+#include <linaos/async.h>
+#include <linaos/seq_file.h>
+#include <linaos/cpu.h>
+#include <linaos/slab.h>
+#include <linaos/ratelimit.h>
+#include <linaos/nodemask.h>
 
 #include <trace/events/block.h>
-#include <linux/list_sort.h>
+#include <linaos/list_sort.h>
 
 #include "md.h"
 #include "raid5.h"

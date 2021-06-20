@@ -12,18 +12,18 @@
  * Datasheet: https://ams.com/documents/20143/36005/AS73211_DS000556_3-01.pdf
  */
 
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
+#include <linaos/bitfield.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/pm.h>
 
 #define HZ_PER_KHZ 1000
 

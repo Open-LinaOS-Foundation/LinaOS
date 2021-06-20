@@ -10,8 +10,8 @@
  * You could find a link for the datasheet in Documentation/arm/sunxi.rst
  */
 #include "sun8i-ce.h"
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pm_runtime.h>
 #include <crypto/internal/rng.h>
 
 int sun8i_ce_prng_init(struct crypto_tfm *tfm)

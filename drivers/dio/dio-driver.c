@@ -10,9 +10,9 @@
  *  for more details.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/dio.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/dio.h>
 
 
 /**

@@ -6,20 +6,20 @@
  * Copyright (C) 2004 Intel Corporation <matthew.e.tolentino@intel.com>
  */
 
-#include <linux/capability.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/smp.h>
-#include <linux/efi.h>
-#include <linux/sysfs.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/ucs2_string.h>
+#include <linaos/capability.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/smp.h>
+#include <linaos/efi.h>
+#include <linaos/sysfs.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/ctype.h>
+#include <linaos/ucs2_string.h>
 
 /* Private pointer to registered efivars */
 static struct efivars *__efivars;

@@ -25,7 +25,7 @@
  * can be open at any time.
  *
  * Each fixed section created in a .S file must have corresponding linkage
- * directives including location, added to  arch/powerpc/kernel/vmlinux.lds.S
+ * directives including location, added to  arch/powerpc/kernel/vmlinaos.lds.S
  *
  * For each fixed section, code is generated into it in the order which it
  * appears in the source.  Fixed section entries can be placed at a fixed
@@ -68,7 +68,7 @@ start_##sname:
 /*
  * .linker_stub_catch section is used to catch linker stubs from being
  * inserted in our .text section, above the start_text label (which breaks
- * the ABS_ADDR calculation). See kernel/vmlinux.lds.S and tools/head_check.sh
+ * the ABS_ADDR calculation). See kernel/vmlinaos.lds.S and tools/head_check.sh
  * for more details. We would prefer to just keep a cacheline (0x80), but
  * 0x100 seems to be how the linker aligns branch stub groups.
  */

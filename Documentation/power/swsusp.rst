@@ -80,7 +80,7 @@ before suspend (it is limited to around 2/5 of available RAM by default).
      that this be done prior to remounting any filesystems (even as
      read-only) otherwise data may be corrupted.
 
-Article about goals and implementation of Software Suspend for Linux
+Article about goals and implementation of Software Suspend for LinaOS
 ====================================================================
 
 Author: Gábor Kuti
@@ -168,7 +168,7 @@ A:
   advance. That means that the limitation goes away in practice.
 
 Q:
-  Does linux support ACPI S4?
+  Does linaos support ACPI S4?
 
 A:
   Yes. That's what echo platform > /sys/power/disk does.
@@ -185,7 +185,7 @@ A:
   encryption) and arbitrary backends for writing the image (eg to swap
   or an NFS share[Work In Progress]). Questions regarding suspend2
   should be sent to the mailing list available through the suspend2
-  website, and not to the Linux Kernel Mailing List. We are working
+  website, and not to the LinaOS Kernel Mailing List. We are working
   toward merging suspend2 into the mainline kernel.
 
 Q:
@@ -201,10 +201,10 @@ Q:
 
 A:
   shutdown:
-	save state in linux, then tell bios to powerdown
+	save state in linaos, then tell bios to powerdown
 
   platform:
-	save state in linux, then tell bios to powerdown and blink
+	save state in linaos, then tell bios to powerdown and blink
         "suspended led"
 
   "platform" is actually right thing to do where supported, but

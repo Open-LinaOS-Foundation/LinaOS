@@ -256,8 +256,8 @@ OPTIONS
 	  misc field ___________/
 
 -k::
---vmlinux=<file>::
-        vmlinux pathname
+--vmlinaos=<file>::
+        vmlinaos pathname
 
 --kallsyms=<file>::
         kallsyms pathname

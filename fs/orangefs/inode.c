@@ -7,11 +7,11 @@
  */
 
 /*
- *  Linux VFS inode operations.
+ *  LinaOS VFS inode operations.
  */
 
-#include <linux/bvec.h>
-#include <linux/fileattr.h>
+#include <linaos/bvec.h>
+#include <linaos/fileattr.h>
 #include "protocol.h"
 #include "orangefs-kernel.h"
 #include "orangefs-bufmap.h"

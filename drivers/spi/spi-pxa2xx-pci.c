@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2016, Intel Corporation
  */
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/spi/pxa2xx_spi.h>
+#include <linaos/clk-provider.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/spi/pxa2xx_spi.h>
 
-#include <linux/dmaengine.h>
-#include <linux/platform_data/dma-dw.h>
+#include <linaos/dmaengine.h>
+#include <linaos/platform_data/dma-dw.h>
 
 enum {
 	PORT_QUARK_X1000,

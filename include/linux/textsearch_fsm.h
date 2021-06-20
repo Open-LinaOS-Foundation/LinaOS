@@ -2,7 +2,7 @@
 #ifndef __LINUX_TEXTSEARCH_FSM_H
 #define __LINUX_TEXTSEARCH_FSM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum {
 	TS_FSM_SPECIFIC,	/* specific character */

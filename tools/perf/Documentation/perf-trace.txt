@@ -275,7 +275,7 @@ Trace syscalls, major and minor pagefaults:
 
  $ perf trace -F all
 
-  1416.547 ( 0.000 ms): python/20235 majfault [CRYPTO_push_info_+0x0] => /lib/x86_64-linux-gnu/libcrypto.so.1.0.0@0x61be0 (x.)
+  1416.547 ( 0.000 ms): python/20235 majfault [CRYPTO_push_info_+0x0] => /lib/x86_64-linaos-gnu/libcrypto.so.1.0.0@0x61be0 (x.)
 
   As you can see, there was major pagefault in python process, from
   CRYPTO_push_info_ routine which faulted somewhere in libcrypto.so.

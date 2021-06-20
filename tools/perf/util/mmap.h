@@ -2,10 +2,10 @@
 #define __PERF_MMAP_H 1
 
 #include <internal/mmap.h>
-#include <linux/compiler.h>
-#include <linux/refcount.h>
-#include <linux/types.h>
-#include <linux/ring_buffer.h>
+#include <linaos/compiler.h>
+#include <linaos/refcount.h>
+#include <linaos/types.h>
+#include <linaos/ring_buffer.h>
 #include <stdbool.h>
 #include <pthread.h> // for cpu_set_t
 #ifdef HAVE_AIO_SUPPORT

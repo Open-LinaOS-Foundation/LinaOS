@@ -16,16 +16,16 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/sort.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kref.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/sort.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
 
 #include "nfp_cpp.h"
 

@@ -6,12 +6,12 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>
@@ -58,7 +58,7 @@ static int __init fixup_one_level_bus_range(struct device_node *node, int higher
  * system since they tend to have their "last" member wrong on macs
  *
  * Note that the bus numbers manipulated here are OF bus numbers, they
- * are not Linux bus numbers.
+ * are not LinaOS bus numbers.
  */
 static void __init fixup_bus_range(struct device_node *bridge)
 {

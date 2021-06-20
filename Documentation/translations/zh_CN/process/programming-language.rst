@@ -1,7 +1,7 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: :ref:`Documentation/process/programming-language.rst <programming_language>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
+:Translator: Alex Shi <alex.shi@linaos.alibaba.com>
 
 .. _cn_programming_language:
 
@@ -29,7 +29,7 @@
 
 内核定义了伪关键字（例如， ``pure`` ），而不是直接使用GNU属性语法（例如,
 ``__attribute__((__pure__))`` ），以检测可以使用哪些关键字和/或缩短代码, 具体
-请参阅 ``include/linux/compiler_attributes.h``
+请参阅 ``include/linaos/compiler_attributes.h``
 
 .. _cn_c-language:
 

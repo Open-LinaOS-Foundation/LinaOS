@@ -4,9 +4,9 @@
 #ifndef __NFP_ABM_H__
 #define __NFP_ABM_H__ 1
 
-#include <linux/bits.h>
-#include <linux/list.h>
-#include <linux/radix-tree.h>
+#include <linaos/bits.h>
+#include <linaos/list.h>
+#include <linaos/radix-tree.h>
 #include <net/devlink.h>
 #include <net/pkt_cls.h>
 #include <net/pkt_sched.h>

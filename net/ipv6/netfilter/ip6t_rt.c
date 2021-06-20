@@ -4,18 +4,18 @@
 /* (C) 2001-2002 Andras Kis-Szabo <kisza@sch.bme.hu>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ipv6.h>
-#include <linux/types.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/ipv6.h>
+#include <linaos/types.h>
 #include <net/checksum.h>
 #include <net/ipv6.h>
 
 #include <asm/byteorder.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/netfilter_ipv6/ip6t_rt.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter_ipv6/ip6_tables.h>
+#include <linaos/netfilter_ipv6/ip6t_rt.h>
 
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Xtables: IPv6 Routing Header match");

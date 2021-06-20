@@ -10,18 +10,18 @@
 #ifndef _ARM_SMMU_H
 #define _ARM_SMMU_H
 
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/io-pgtable.h>
-#include <linux/iommu.h>
-#include <linux/irqreturn.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/atomic.h>
+#include <linaos/bitfield.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/io-64-nonatomic-hi-lo.h>
+#include <linaos/io-pgtable.h>
+#include <linaos/iommu.h>
+#include <linaos/irqreturn.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 
 /* Configuration registers */
 #define ARM_SMMU_GR0_sCR0		0x0

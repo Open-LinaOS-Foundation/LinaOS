@@ -35,23 +35,23 @@
 
 #define pr_fmt(fmt) "user_mad: " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/kref.h>
-#include <linux/compat.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/slab.h>
-#include <linux/nospec.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/cdev.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/poll.h>
+#include <linaos/mutex.h>
+#include <linaos/kref.h>
+#include <linaos/compat.h>
+#include <linaos/sched.h>
+#include <linaos/semaphore.h>
+#include <linaos/slab.h>
+#include <linaos/nospec.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <rdma/ib_mad.h>
 #include <rdma/ib_user_mad.h>

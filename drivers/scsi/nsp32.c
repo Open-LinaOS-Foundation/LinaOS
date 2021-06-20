@@ -13,19 +13,19 @@
  *   1.2: PowerPC (big endian) support.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ctype.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/ioport.h>
+#include <linaos/major.h>
+#include <linaos/blkdev.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/ctype.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>

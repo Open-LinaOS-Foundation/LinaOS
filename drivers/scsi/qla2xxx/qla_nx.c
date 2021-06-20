@@ -4,11 +4,11 @@
  * Copyright (c)  2003-2014 QLogic Corporation
  */
 #include "qla_def.h"
-#include <linux/delay.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/pci.h>
-#include <linux/ratelimit.h>
-#include <linux/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/pci.h>
+#include <linaos/ratelimit.h>
+#include <linaos/vmalloc.h>
 #include <scsi/scsi_tcq.h>
 
 #define MASK(n)			((1ULL<<(n))-1)

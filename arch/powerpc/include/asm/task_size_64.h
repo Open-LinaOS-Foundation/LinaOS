@@ -18,7 +18,7 @@
 #define TASK_SIZE_4PB   (0x0010000000000000UL)
 
 /*
- * For now 512TB is only supported with book3s and 64K linux page size.
+ * For now 512TB is only supported with book3s and 64K linaos page size.
  */
 #ifdef CONFIG_PPC_64K_PAGES
 /*

@@ -11,8 +11,8 @@
 #define _LINUX_MUX_DRIVER_H
 
 #include <dt-bindings/mux/mux.h>
-#include <linux/device.h>
-#include <linux/semaphore.h>
+#include <linaos/device.h>
+#include <linaos/semaphore.h>
 
 struct mux_chip;
 struct mux_control;

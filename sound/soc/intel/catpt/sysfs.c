@@ -5,7 +5,7 @@
 // Author: Cezary Rojewski <cezary.rojewski@intel.com>
 //
 
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 #include "core.h"
 
 static ssize_t fw_version_show(struct device *dev,

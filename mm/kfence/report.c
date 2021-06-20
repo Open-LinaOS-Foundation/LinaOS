@@ -7,13 +7,13 @@
 
 #include <stdarg.h>
 
-#include <linux/kernel.h>
-#include <linux/lockdep.h>
-#include <linux/printk.h>
-#include <linux/sched/debug.h>
-#include <linux/seq_file.h>
-#include <linux/stacktrace.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/lockdep.h>
+#include <linaos/printk.h>
+#include <linaos/sched/debug.h>
+#include <linaos/seq_file.h>
+#include <linaos/stacktrace.h>
+#include <linaos/string.h>
 #include <trace/events/error_report.h>
 
 #include <asm/kfence.h>

@@ -3,7 +3,7 @@
 * Filename: rsxx.h
 *
 * Authors: Joshua Morris <josh.h.morris@us.ibm.com>
-*	Philip Kelleher <pjk1939@linux.vnet.ibm.com>
+*	Philip Kelleher <pjk1939@linaos.vnet.ibm.com>
 *
 * (C) Copyright 2013 IBM Corporation
 */

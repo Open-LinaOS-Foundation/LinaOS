@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /* Copyright(c) 2016-2020 Intel Corporation. All rights reserved. */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asm.h>
 
 #ifndef CONFIG_UML

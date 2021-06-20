@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1995, 96, 99, 2001 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 1995, 96, 99, 2001 Ralf Baechle <ralf@linaos-mips.org>
  * Copyright (C) 2009 Wind River Systems
- * Written by Ralf Baechle <ralf@linux-mips.org>
+ * Written by Ralf Baechle <ralf@linaos-mips.org>
  */
 #ifndef __ASM_IOCTL_H
 #define __ASM_IOCTL_H

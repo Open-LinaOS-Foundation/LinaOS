@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: (GPL-2.0 OR Linux-OpenIB) */
+/* SPDX-License-Identifier: (GPL-2.0 OR LinaOS-OpenIB) */
 /*
  * Copyright (c) 2017-2018 Mellanox Technologies. All rights reserved.
  */
@@ -6,7 +6,7 @@
 #ifndef _RDMA_SIGNATURE_H_
 #define _RDMA_SIGNATURE_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum ib_signature_prot_cap {
 	IB_PROT_T10DIF_TYPE_1 = 1,

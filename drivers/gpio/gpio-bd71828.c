@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2018 ROHM Semiconductors
 
-#include <linux/gpio/driver.h>
-#include <linux/mfd/rohm-bd71828.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/mfd/rohm-bd71828.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 #define GPIO_OUT_REG(off) (BD71828_REG_GPIO_CTRL1 + (off))
 #define HALL_GPIO_OFFSET 3

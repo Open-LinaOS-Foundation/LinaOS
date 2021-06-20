@@ -2,8 +2,8 @@
 #ifndef BTREE_H
 #define BTREE_H
 
-#include <linux/kernel.h>
-#include <linux/mempool.h>
+#include <linaos/kernel.h>
+#include <linaos/mempool.h>
 
 /**
  * DOC: B+Tree basics
@@ -204,14 +204,14 @@ size_t btree_grim_visitor(struct btree_head *head, struct btree_geo *geo,
 			  void *func2);
 
 
-#include <linux/btree-128.h>
+#include <linaos/btree-128.h>
 
 extern struct btree_geo btree_geo32;
 #define BTREE_TYPE_SUFFIX l
 #define BTREE_TYPE_BITS BITS_PER_LONG
 #define BTREE_TYPE_GEO &btree_geo32
 #define BTREE_KEYTYPE unsigned long
-#include <linux/btree-type.h>
+#include <linaos/btree-type.h>
 
 #define btree_for_each_safel(head, key, val)	\
 	for (val = btree_lastl(head, &key);	\
@@ -222,7 +222,7 @@ extern struct btree_geo btree_geo32;
 #define BTREE_TYPE_BITS 32
 #define BTREE_TYPE_GEO &btree_geo32
 #define BTREE_KEYTYPE u32
-#include <linux/btree-type.h>
+#include <linaos/btree-type.h>
 
 #define btree_for_each_safe32(head, key, val)	\
 	for (val = btree_last32(head, &key);	\
@@ -234,7 +234,7 @@ extern struct btree_geo btree_geo64;
 #define BTREE_TYPE_BITS 64
 #define BTREE_TYPE_GEO &btree_geo64
 #define BTREE_KEYTYPE u64
-#include <linux/btree-type.h>
+#include <linaos/btree-type.h>
 
 #define btree_for_each_safe64(head, key, val)	\
 	for (val = btree_last64(head, &key);	\

@@ -2,7 +2,7 @@
 /*
  * iteration_check.c: test races having to do with xarray iteration
  * Copyright (c) 2016 Intel Corporation
- * Author: Ross Zwisler <ross.zwisler@linux.intel.com>
+ * Author: Ross Zwisler <ross.zwisler@linaos.intel.com>
  */
 #include <pthread.h>
 #include "test.h"

@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 
 #
-# Makefile for the linux kernel.
+# Makefile for the linaos kernel.
 #
 
 asflags-y := -ansi
@@ -9,10 +9,10 @@ ccflags-y := -Werror
 
 extra-y     := head_$(BITS).o
 
-# Undefine sparc when processing vmlinux.lds - it is used
+# Undefine sparc when processing vmlinaos.lds - it is used
 # And teach CPP we are doing $(BITS) builds (for this case)
-CPPFLAGS_vmlinux.lds := -Usparc -m$(BITS)
-extra-y              += vmlinux.lds
+CPPFLAGS_vmlinaos.lds := -Usparc -m$(BITS)
+extra-y              += vmlinaos.lds
 
 ifdef CONFIG_FUNCTION_TRACER
 # Do not profile debug and lowlevel utilities

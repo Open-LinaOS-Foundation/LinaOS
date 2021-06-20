@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * uapi/sound/asoc.h -- ALSA SoC Firmware Controls and DAPM
  *
@@ -16,7 +16,7 @@
 #ifndef __LINUX_UAPI_SND_ASOC_H
 #define __LINUX_UAPI_SND_ASOC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <sound/asound.h>
 
 /*

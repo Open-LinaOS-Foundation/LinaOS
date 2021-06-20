@@ -8,32 +8,32 @@
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/notifier.h>
-#include <linux/percpu.h>
-#include <linux/rcupdate.h>
-#include <linux/rcupdate_trace.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/stat.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/torture.h>
-#include <linux/types.h>
+#include <linaos/atomic.h>
+#include <linaos/bitops.h>
+#include <linaos/completion.h>
+#include <linaos/cpu.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kthread.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/notifier.h>
+#include <linaos/percpu.h>
+#include <linaos/rcupdate.h>
+#include <linaos/rcupdate_trace.h>
+#include <linaos/reboot.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/smp.h>
+#include <linaos/stat.h>
+#include <linaos/srcu.h>
+#include <linaos/slab.h>
+#include <linaos/torture.h>
+#include <linaos/types.h>
 
 #define SCFTORT_STRING "scftorture"
 #define SCFTORT_FLAG SCFTORT_STRING ": "

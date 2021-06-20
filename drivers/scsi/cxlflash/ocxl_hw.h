@@ -2,8 +2,8 @@
 /*
  * CXL Flash Device Driver
  *
- * Written by: Matthew R. Ochs <mrochs@linux.vnet.ibm.com>, IBM Corporation
- *	       Uma Krishnan <ukrishn@linux.vnet.ibm.com>, IBM Corporation
+ * Written by: Matthew R. Ochs <mrochs@linaos.vnet.ibm.com>, IBM Corporation
+ *	       Uma Krishnan <ukrishn@linaos.vnet.ibm.com>, IBM Corporation
  *
  * Copyright (C) 2018 IBM Corporation
  */

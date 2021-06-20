@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/mount.h>
-#include <linux/major.h>
-#include <linux/delay.h>
-#include <linux/init_syscalls.h>
-#include <linux/raid/detect.h>
-#include <linux/raid/md_u.h>
-#include <linux/raid/md_p.h>
+#include <linaos/kernel.h>
+#include <linaos/blkdev.h>
+#include <linaos/init.h>
+#include <linaos/mount.h>
+#include <linaos/major.h>
+#include <linaos/delay.h>
+#include <linaos/init_syscalls.h>
+#include <linaos/raid/detect.h>
+#include <linaos/raid/md_u.h>
+#include <linaos/raid/md_p.h>
 #include "md.h"
 
 /*

@@ -3,39 +3,39 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/smsc911x.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/platform_data/s3c-hsotg.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
+#include <linaos/fb.h>
+#include <linaos/gpio.h>
+#include <linaos/delay.h>
+#include <linaos/smsc911x.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/platform_data/s3c-hsotg.h>
 
 #ifdef CONFIG_SMDK6410_WM1190_EV1
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/pmic.h>
+#include <linaos/mfd/wm8350/core.h>
+#include <linaos/mfd/wm8350/pmic.h>
 #endif
 
 #ifdef CONFIG_SMDK6410_WM1192_EV1
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
+#include <linaos/mfd/wm831x/core.h>
+#include <linaos/mfd/wm831x/pdata.h>
 #endif
 
 #include <video/platform_lcd.h>
@@ -53,15 +53,15 @@
 
 #include "regs-gpio.h"
 #include "gpio-samsung.h"
-#include <linux/platform_data/ata-samsung_cf.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/ata-samsung_cf.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 #include "fb.h"
 #include "gpio-cfg.h"
 
 #include "devs.h"
 #include "cpu.h"
-#include <linux/soc/samsung/s3c-adc.h>
-#include <linux/platform_data/touchscreen-s3c2410.h>
+#include <linaos/soc/samsung/s3c-adc.h>
+#include <linaos/platform_data/touchscreen-s3c2410.h>
 #include "keypad.h"
 
 #include "backlight-s3c64xx.h"
@@ -696,7 +696,7 @@ static void __init smdk6410_machine_init(void)
 }
 
 MACHINE_START(SMDK6410, "SMDK6410")
-	/* Maintainer: Ben Dooks <ben-linux@fluff.org> */
+	/* Maintainer: Ben Dooks <ben-linaos@fluff.org> */
 	.atag_offset	= 0x100,
 	.nr_irqs	= S3C64XX_NR_IRQS,
 	.init_irq	= s3c6410_init_irq,

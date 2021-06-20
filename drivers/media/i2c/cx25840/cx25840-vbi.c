@@ -3,8 +3,8 @@
  */
 
 
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
+#include <linaos/videodev2.h>
+#include <linaos/i2c.h>
 #include <media/v4l2-common.h>
 #include <media/drv-intf/cx25840.h>
 

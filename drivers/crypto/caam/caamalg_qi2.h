@@ -9,8 +9,8 @@
 
 #include <soc/fsl/dpaa2-io.h>
 #include <soc/fsl/dpaa2-fd.h>
-#include <linux/threads.h>
-#include <linux/netdevice.h>
+#include <linaos/threads.h>
+#include <linaos/netdevice.h>
 #include "dpseci.h"
 #include "desc_constr.h"
 #include <crypto/skcipher.h>

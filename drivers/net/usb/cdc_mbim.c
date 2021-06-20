@@ -7,17 +7,17 @@
  * Copyright (C) ST-Ericsson 2010-2012
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
-#include <linux/usb/cdc-wdm.h>
-#include <linux/usb/cdc_ncm.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ip.h>
+#include <linaos/mii.h>
+#include <linaos/usb.h>
+#include <linaos/usb/cdc.h>
+#include <linaos/usb/usbnet.h>
+#include <linaos/usb/cdc-wdm.h>
+#include <linaos/usb/cdc_ncm.h>
 #include <net/ipv6.h>
 #include <net/addrconf.h>
 #include <net/ipv6_stubs.h>

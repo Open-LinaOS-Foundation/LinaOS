@@ -11,8 +11,8 @@
  * Copyright (c) 2009 Secret Lab Technologies Ltd.
  */
 
-#include <linux/pci.h>
-#include <linux/export.h>
+#include <linaos/pci.h>
+#include <linaos/export.h>
 #include <asm/pci-bridge.h>
 #include <asm/prom.h>
 

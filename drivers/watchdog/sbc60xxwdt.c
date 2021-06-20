@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	60xx Single Board Computer Watchdog Timer driver for Linux 2.2.x
+ *	60xx Single Board Computer Watchdog Timer driver for LinaOS 2.2.x
  *
  *	Based on acquirewdt.c by Alan Cox.
  *
@@ -34,7 +34,7 @@
  *                            added extra printk's for startup problems
  *                            added MODULE_AUTHOR and MODULE_DESCRIPTION info
  *
- *  This WDT driver is different from the other Linux WDT
+ *  This WDT driver is different from the other LinaOS WDT
  *  drivers in the following ways:
  *  *)  The driver will ping the watchdog by itself, because this
  *      particular WDT has a very short timeout (one second) and it
@@ -44,20 +44,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/timer.h>
+#include <linaos/jiffies.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/fs.h>
+#include <linaos/ioport.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 
 #define OUR_NAME "sbc60xxwdt"

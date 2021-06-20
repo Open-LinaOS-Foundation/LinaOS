@@ -3,12 +3,12 @@
  * Based on arch/arm/kernel/atags_proc.c
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/printk.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/printk.h>
+#include <linaos/proc_fs.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
 #include <asm/bootinfo.h>
 #include <asm/byteorder.h>

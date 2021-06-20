@@ -131,18 +131,18 @@
  */
 
 #include "../workqueue_internal.h"
-#include <linux/sched/loadavg.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/seqlock.h>
-#include <linux/uaccess.h>
-#include <linux/cgroup.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/ctype.h>
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/psi.h>
+#include <linaos/sched/loadavg.h>
+#include <linaos/seq_file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seqlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/cgroup.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/ctype.h>
+#include <linaos/file.h>
+#include <linaos/poll.h>
+#include <linaos/psi.h>
 #include "sched.h"
 
 static int psi_bug __read_mostly;

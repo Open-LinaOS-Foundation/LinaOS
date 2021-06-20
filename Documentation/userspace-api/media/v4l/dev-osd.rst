@@ -36,7 +36,7 @@ Framebuffer
 ===========
 
 Contrary to the *Video Overlay* interface the framebuffer is normally
-implemented on the TV card and not the graphics card. On Linux it is
+implemented on the TV card and not the graphics card. On LinaOS it is
 accessible as a framebuffer device (``/dev/fbN``). Given a V4L2 device,
 applications can find the corresponding framebuffer device by calling
 the :ref:`VIDIOC_G_FBUF <VIDIOC_G_FBUF>` ioctl. It returns, amongst
@@ -46,7 +46,7 @@ The framebuffer device ioctl ``FBIOGET_FSCREENINFO`` returns the same
 address in the ``smem_start`` field of struct
 :c:type:`fb_fix_screeninfo`. The ``FBIOGET_FSCREENINFO``
 ioctl and struct :c:type:`fb_fix_screeninfo` are defined in
-the ``linux/fb.h`` header file.
+the ``linaos/fb.h`` header file.
 
 The width and height of the framebuffer depends on the current video
 standard. A V4L2 driver may reject attempts to change the video standard
@@ -58,7 +58,7 @@ Example: Finding a framebuffer device for OSD
 
 .. code-block:: c
 
-    #include <linux/fb.h>
+    #include <linaos/fb.h>
 
     struct v4l2_framebuffer fbuf;
     unsigned int i;

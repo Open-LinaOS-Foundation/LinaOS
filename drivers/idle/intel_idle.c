@@ -10,8 +10,8 @@
 /*
  * intel_idle is a cpuidle driver that loads on all Intel CPUs with MWAIT
  * in lieu of the legacy ACPI processor_idle driver.  The intent is to
- * make Linux more efficient on these processors, as intel_idle knows
- * more than ACPI, as well as make Linux more immune to ACPI BIOS bugs.
+ * make LinaOS more efficient on these processors, as intel_idle knows
+ * more than ACPI, as well as make LinaOS more immune to ACPI BIOS bugs.
  */
 
 /*
@@ -41,15 +41,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/cpuidle.h>
-#include <linux/tick.h>
+#include <linaos/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/cpuidle.h>
+#include <linaos/tick.h>
 #include <trace/events/power.h>
-#include <linux/sched.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/moduleparam.h>
+#include <linaos/sched.h>
+#include <linaos/notifier.h>
+#include <linaos/cpu.h>
+#include <linaos/moduleparam.h>
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>
 #include <asm/mwait.h>

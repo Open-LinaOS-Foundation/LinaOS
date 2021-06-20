@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _IPV6_FRAG_H
 #define _IPV6_FRAG_H
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <net/addrconf.h>
 #include <net/ipv6.h>
 #include <net/inet_frag.h>

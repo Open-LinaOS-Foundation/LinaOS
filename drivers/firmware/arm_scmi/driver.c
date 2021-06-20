@@ -14,20 +14,20 @@
  * Copyright (C) 2018-2021 ARM Ltd.
  */
 
-#include <linux/bitmap.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/idr.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/processor.h>
-#include <linux/refcount.h>
-#include <linux/slab.h>
+#include <linaos/bitmap.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/idr.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/ktime.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/processor.h>
+#include <linaos/refcount.h>
+#include <linaos/slab.h>
 
 #include "common.h"
 #include "notify.h"
@@ -149,7 +149,7 @@ struct scmi_info {
 
 #define handle_to_scmi_info(h)	container_of(h, struct scmi_info, handle)
 
-static const int scmi_linux_errmap[] = {
+static const int scmi_linaos_errmap[] = {
 	/* better than switch case as long as return value is continuous */
 	0,			/* SCMI_SUCCESS */
 	-EOPNOTSUPP,		/* SCMI_ERR_SUPPORT */
@@ -164,10 +164,10 @@ static const int scmi_linux_errmap[] = {
 	-EPROTO,		/* SCMI_ERR_PROTOCOL */
 };
 
-static inline int scmi_to_linux_errno(int errno)
+static inline int scmi_to_linaos_errno(int errno)
 {
 	if (errno < SCMI_SUCCESS && errno > SCMI_ERR_MAX)
-		return scmi_linux_errmap[-errno];
+		return scmi_linaos_errmap[-errno];
 	return -EIO;
 }
 
@@ -469,7 +469,7 @@ static int do_xfer(const struct scmi_protocol_handle *ph,
 	}
 
 	if (!ret && xfer->hdr.status)
-		ret = scmi_to_linux_errno(xfer->hdr.status);
+		ret = scmi_to_linaos_errno(xfer->hdr.status);
 
 	if (info->desc->ops->mark_txdone)
 		info->desc->ops->mark_txdone(cinfo, ret);

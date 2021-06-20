@@ -15,10 +15,10 @@
 #ifndef _CHECKSUM_H
 #define _CHECKSUM_H
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include <asm/types.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/checksum.h>
 
 #ifndef _HAVE_ARCH_COPY_AND_CSUM_FROM_USER

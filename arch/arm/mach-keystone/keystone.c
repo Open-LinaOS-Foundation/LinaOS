@@ -6,13 +6,13 @@
  *	Cyril Chemparathy <cyril@ti.com>
  *	Santosh Shilimkar <santosh.shillimkar@ti.com>
  */
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/dma-map-ops.h>
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/memblock.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/init.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_address.h>
+#include <linaos/memblock.h>
 
 #include <asm/setup.h>
 #include <asm/mach/map.h>

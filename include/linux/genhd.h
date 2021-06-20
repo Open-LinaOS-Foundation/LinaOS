@@ -10,13 +10,13 @@
  *		<drew@colorado.edu>
  */
 
-#include <linux/types.h>
-#include <linux/kdev_t.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/percpu-refcount.h>
-#include <linux/uuid.h>
-#include <linux/blk_types.h>
+#include <linaos/types.h>
+#include <linaos/kdev_t.h>
+#include <linaos/rcupdate.h>
+#include <linaos/slab.h>
+#include <linaos/percpu-refcount.h>
+#include <linaos/uuid.h>
+#include <linaos/blk_types.h>
 #include <asm/local.h>
 
 extern const struct device_type disk_type;
@@ -26,13 +26,13 @@ extern struct class block_class;
 #define DISK_MAX_PARTS			256
 #define DISK_NAME_LEN			32
 
-#include <linux/major.h>
-#include <linux/device.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/workqueue.h>
-#include <linux/xarray.h>
+#include <linaos/major.h>
+#include <linaos/device.h>
+#include <linaos/smp.h>
+#include <linaos/string.h>
+#include <linaos/fs.h>
+#include <linaos/workqueue.h>
+#include <linaos/xarray.h>
 
 #define PARTITION_META_INFO_VOLNAMELTH	64
 /*

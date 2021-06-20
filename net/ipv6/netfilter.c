@@ -4,12 +4,12 @@
  * Rusty Russell (C) 2000 -- This code is GPL.
  * Patrick McHardy (C) 2006-2012
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ipv6.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/ipv6.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/export.h>
 #include <net/addrconf.h>
 #include <net/dst.h>
 #include <net/ipv6.h>

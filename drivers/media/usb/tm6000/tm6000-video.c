@@ -6,26 +6,26 @@
 // Copyright (c) 2007 Michel Ludwig <michel.ludwig@gmail.com>
 //	- Fixed module load/unload
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/random.h>
-#include <linux/usb.h>
-#include <linux/videodev2.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/random.h>
+#include <linaos/usb.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>
 #include <media/tuner.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/highmem.h>
-#include <linux/freezer.h>
+#include <linaos/interrupt.h>
+#include <linaos/kthread.h>
+#include <linaos/highmem.h>
+#include <linaos/freezer.h>
 
 #include "tm6000-regs.h"
 #include "tm6000.h"

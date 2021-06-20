@@ -6,18 +6,18 @@
  *  Nick Kossifidis <mick@ics.forth.gr>
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/initrd.h>
-#include <linux/swap.h>
-#include <linux/sizes.h>
-#include <linux/of_fdt.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/libfdt.h>
-#include <linux/set_memory.h>
-#include <linux/dma-map-ops.h>
-#include <linux/crash_dump.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
+#include <linaos/initrd.h>
+#include <linaos/swap.h>
+#include <linaos/sizes.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_reserved_mem.h>
+#include <linaos/libfdt.h>
+#include <linaos/set_memory.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/crash_dump.h>
 
 #include <asm/fixmap.h>
 #include <asm/tlbflush.h>
@@ -121,13 +121,13 @@ void __init mem_init(void)
 
 void __init setup_bootmem(void)
 {
-	phys_addr_t vmlinux_end = __pa_symbol(&_end);
-	phys_addr_t vmlinux_start = __pa_symbol(&_start);
+	phys_addr_t vmlinaos_end = __pa_symbol(&_end);
+	phys_addr_t vmlinaos_start = __pa_symbol(&_start);
 	phys_addr_t dram_end = memblock_end_of_DRAM();
 	phys_addr_t max_mapped_addr = __pa(~(ulong)0);
 
 #ifdef CONFIG_XIP_KERNEL
-	vmlinux_start = __pa_symbol(&_sdata);
+	vmlinaos_start = __pa_symbol(&_sdata);
 #endif
 
 	/* The maximal physical memory size is -PAGE_OFFSET. */
@@ -142,9 +142,9 @@ void __init setup_bootmem(void)
 	 * map the kernel in the linear mapping as read-only: we do not want
 	 * any allocation to happen between _end and the next pmd aligned page.
 	 */
-	vmlinux_end = (vmlinux_end + PMD_SIZE - 1) & PMD_MASK;
+	vmlinaos_end = (vmlinaos_end + PMD_SIZE - 1) & PMD_MASK;
 #endif
-	memblock_reserve(vmlinux_start, vmlinux_end - vmlinux_start);
+	memblock_reserve(vmlinaos_start, vmlinaos_end - vmlinaos_start);
 
 	/*
 	 * memblock allocator is not aware of the fact that last 4K bytes of
@@ -852,7 +852,7 @@ static void __init reserve_crashkernel(void)
 /*
  * We keep track of the ELF core header of the crashed
  * kernel with a reserved-memory region with compatible
- * string "linux,elfcorehdr". Here we register a callback
+ * string "linaos,elfcorehdr". Here we register a callback
  * to populate elfcorehdr_addr/size when this region is
  * present. Note that this region will be marked as
  * reserved once we call early_init_fdt_scan_reserved_mem()
@@ -865,7 +865,7 @@ static int elfcore_hdr_setup(struct reserved_mem *rmem)
 	return 0;
 }
 
-RESERVEDMEM_OF_DECLARE(elfcorehdr, "linux,elfcorehdr", elfcore_hdr_setup);
+RESERVEDMEM_OF_DECLARE(elfcorehdr, "linaos,elfcorehdr", elfcore_hdr_setup);
 #endif
 
 void __init paging_init(void)

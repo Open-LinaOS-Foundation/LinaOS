@@ -5,15 +5,15 @@
  * Copyright (C) 2013 Philipp Zabel, Pengutronix
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/videodev2.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/videodev2.h>
 
 #include <video/imx-ipu-v3.h>
 

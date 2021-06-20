@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * SafeSetID Linux Security Module
+ * SafeSetID LinaOS Security Module
  *
  * Author: Micah Morton <mortonm@chromium.org>
  *
@@ -14,11 +14,11 @@
 
 #define pr_fmt(fmt) "SafeSetID: " fmt
 
-#include <linux/lsm_hooks.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/sched/task_stack.h>
-#include <linux/security.h>
+#include <linaos/lsm_hooks.h>
+#include <linaos/module.h>
+#include <linaos/ptrace.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/security.h>
 #include "lsm.h"
 
 /* Flag indicating whether initialization completed */
@@ -191,7 +191,7 @@ static bool id_permitted_for_cred(const struct cred *old, kid_t new_id, enum set
 /*
  * Check whether there is either an exception for user under old cred struct to
  * set*uid to user under new cred struct, or the UID transition is allowed (by
- * Linux set*uid rules) even without CAP_SETUID.
+ * LinaOS set*uid rules) even without CAP_SETUID.
  */
 static int safesetid_task_fix_setuid(struct cred *new,
 				     const struct cred *old,

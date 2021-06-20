@@ -46,12 +46,12 @@ A: The 24MHz oscillator allows gating to save power. Indeed, if gated
 
 Q: Were can I learn more about the sunxi clocks?
 
-A: The linux-sunxi wiki contains a page documenting the clock registers,
+A: The linaos-sunxi wiki contains a page documenting the clock registers,
    you can find it at
 
-        http://linux-sunxi.org/A10/CCM
+        http://linaos-sunxi.org/A10/CCM
 
    The authoritative source for information at this time is the ccmu driver
    released by Allwinner, you can find it at
 
-        https://github.com/linux-sunxi/linux-sunxi/tree/sunxi-3.0/arch/arm/mach-sun4i/clock/ccmu
+        https://github.com/linaos-sunxi/linaos-sunxi/tree/sunxi-3.0/arch/arm/mach-sun4i/clock/ccmu

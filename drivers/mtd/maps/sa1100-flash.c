@@ -4,24 +4,24 @@
  *
  * (C) 2000 Nicolas Pitre <nico@fluxnic.net>
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/concat.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/concat.h>
 
 #include <mach/hardware.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 #include <asm/mach/flash.h>
 
 struct sa_subdev_info {

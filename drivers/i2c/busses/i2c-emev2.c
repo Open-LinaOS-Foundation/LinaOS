@@ -7,18 +7,18 @@
  * Copyright 2010-2015 Renesas Electronics Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
 
 /* I2C Registers */
 #define I2C_OFS_IICACT0		0x00	/* start */

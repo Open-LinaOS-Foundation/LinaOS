@@ -12,7 +12,7 @@
 
 #include "hpi_internal.h"
 #include "hpimsginit.h"
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
 /* The actual message size for each object type */
 static u16 msg_size[HPI_OBJ_MAXINDEX + 1] = HPI_MESSAGE_SIZE_BY_OBJECT;

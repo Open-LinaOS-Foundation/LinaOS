@@ -6,7 +6,7 @@
  *	Copyright (C) 2006-2008  Jiri Slaby <jirislaby@gmail.com>
  *
  *      This code is loosely based on the 1.8 moxa driver which is based on
- *	Linux serial driver, written by Linus Torvalds, Theodore T'so and
+ *	LinaOS serial driver, written by Linus Torvalds, Theodore T'so and
  *	others.
  *
  *	Fed through a cleanup, indent and remove of non 2.6 code by Alan Cox
@@ -15,31 +15,31 @@
  *	- Fixed x86_64 cleanness
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/serial.h>
+#include <linaos/serial_reg.h>
+#include <linaos/major.h>
+#include <linaos/string.h>
+#include <linaos/fcntl.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/ratelimit.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "mxser.h"
 

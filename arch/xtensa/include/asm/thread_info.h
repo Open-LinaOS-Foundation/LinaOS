@@ -11,7 +11,7 @@
 #ifndef _XTENSA_THREAD_INFO_H
 #define _XTENSA_THREAD_INFO_H
 
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 #include <asm/kmem_layout.h>
 
 #define CURRENT_SHIFT KERNEL_STACK_SHIFT

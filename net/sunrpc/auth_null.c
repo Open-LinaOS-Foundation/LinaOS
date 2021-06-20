@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/net/sunrpc/auth_null.c
+ * linaos/net/sunrpc/auth_null.c
  *
  * AUTH_NULL authentication. Really :-)
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/sunrpc/clnt.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/sunrpc/clnt.h>
 
 #if IS_ENABLED(CONFIG_SUNRPC_DEBUG)
 # define RPCDBG_FACILITY	RPCDBG_AUTH

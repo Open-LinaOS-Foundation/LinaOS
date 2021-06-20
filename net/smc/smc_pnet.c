@@ -6,18 +6,18 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Thomas Richter <tmricht@linux.vnet.ibm.com>
+ *  Author(s):  Thomas Richter <tmricht@linaos.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/ctype.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/ctype.h>
+#include <linaos/mutex.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 
-#include <uapi/linux/if.h>
-#include <uapi/linux/smc.h>
+#include <uapi/linaos/if.h>
+#include <uapi/linaos/smc.h>
 
 #include <rdma/ib_verbs.h>
 

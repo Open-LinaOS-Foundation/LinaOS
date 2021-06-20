@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2014, The LinaOS Foundation. All rights reserved.
  */
 /*
  * QCOM BAM DMA engine driver
@@ -23,24 +23,24 @@
  * indication of where the hardware is currently working.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_dma.h>
-#include <linux/circ_buf.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/pm_runtime.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/scatterlist.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_dma.h>
+#include <linaos/circ_buf.h>
+#include <linaos/clk.h>
+#include <linaos/dmaengine.h>
+#include <linaos/pm_runtime.h>
 
 #include "../dmaengine.h"
 #include "../virt-dma.h"

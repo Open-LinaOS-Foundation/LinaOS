@@ -7,7 +7,7 @@ internals.
 
 Authors:
 
-- Geert Uytterhoeven <geert@linux-m68k.org>, 21 July 1998
+- Geert Uytterhoeven <geert@linaos-m68k.org>, 21 July 1998
 - James Simmons <jsimmons@user.sf.net>, Nov 26 2002
 
 --------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ Structures used by the frame buffer device API
 ==============================================
 
 The following structures play a role in the game of frame buffer devices. They
-are defined in <linux/fb.h>.
+are defined in <linaos/fb.h>.
 
 1. Outside the kernel (user space)
 

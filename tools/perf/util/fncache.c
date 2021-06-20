@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-#include <linux/list.h>
+#include <linaos/list.h>
 #include "fncache.h"
 
 struct fncache {

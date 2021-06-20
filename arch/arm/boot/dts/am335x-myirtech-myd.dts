@@ -35,14 +35,14 @@
 		button1: button@0 {
 			reg = <0>;
 			label = "button1";
-			linux,code = <BTN_1>;
+			linaos,code = <BTN_1>;
 			gpios = <&gpio3 0 GPIO_ACTIVE_LOW>;
 		};
 
 		button2: button@1 {
 			reg = <1>;
 			label = "button2";
-			linux,code = <BTN_2>;
+			linaos,code = <BTN_2>;
 			gpios = <&gpio0 29 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -254,7 +254,7 @@
 	pinctrl-names = "default", "sleep";
 	pinctrl-0 = <&uart1_pins_default>;
 	pinctrl-1 = <&uart1_pins_sleep>;
-	linux,rs485-enabled-at-boot-time;
+	linaos,rs485-enabled-at-boot-time;
 	status = "okay";
 };
 

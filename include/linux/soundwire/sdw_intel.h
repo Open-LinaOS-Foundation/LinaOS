@@ -4,8 +4,8 @@
 #ifndef __SDW_INTEL_H
 #define __SDW_INTEL_H
 
-#include <linux/irqreturn.h>
-#include <linux/soundwire/sdw.h>
+#include <linaos/irqreturn.h>
+#include <linaos/soundwire/sdw.h>
 
 /**
  * struct sdw_intel_stream_params_data: configuration passed during

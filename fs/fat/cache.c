@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/fat/cache.c
+ *  linaos/fs/fat/cache.c
  *
  *  Written 1992,1993 by Werner Almesberger
  *
@@ -9,7 +9,7 @@
  *  May 1999. AV. Fixed the bogosity with FAT32 (read "FAT28"). Fscking lusers.
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "fat.h"
 
 /* this must be > 0. */

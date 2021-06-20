@@ -5,7 +5,7 @@
 #include <uapi/asm/sigcontext.h>
 #include <asm/siginfo.h>
 #include <asm/ucontext.h>
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 #ifdef CONFIG_X86_32
 #define sigframe_ia32		sigframe

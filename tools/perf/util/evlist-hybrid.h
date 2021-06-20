@@ -2,8 +2,8 @@
 #ifndef __PERF_EVLIST_HYBRID_H
 #define __PERF_EVLIST_HYBRID_H
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
 #include "evlist.h"
 #include <unistd.h>
 

@@ -4,17 +4,17 @@
  * Author: Jie Qiu <jie.qiu@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_graph.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_graph.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/types.h>
 
 #include <video/videomode.h>
 

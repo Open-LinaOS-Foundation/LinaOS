@@ -7,7 +7,7 @@ Last update: 2004-12-20 tlh
 
 "Early userspace" is a set of libraries and programs that provide
 various pieces of functionality that are important enough to be
-available while a Linux kernel is coming up, but that don't need to be
+available while a LinaOS kernel is coming up, but that don't need to be
 run inside the kernel itself.
 
 It consists of several major infrastructure components:
@@ -89,7 +89,7 @@ early userspace useful.  The klibc distribution is currently
 maintained separately from the kernel.
 
 You can obtain somewhat infrequent snapshots of klibc from
-https://www.kernel.org/pub/linux/libs/klibc/
+https://www.kernel.org/pub/linaos/libs/klibc/
 
 For active users, you are better off using the klibc git
 repository, at https://git.kernel.org/?p=libs/klibc/klibc.git
@@ -135,9 +135,9 @@ a) all required device and filesystem drivers compiled into the kernel, no
    some other init binary than listed at the end of init/main.c:init().
 
 b) some device and filesystem drivers built as modules and stored in an
-   initrd.  The initrd must contain a binary '/linuxrc' which is supposed to
+   initrd.  The initrd must contain a binary '/linaosrc' which is supposed to
    load these driver modules.  It is also possible to mount the final root
-   filesystem via linuxrc and use the pivot_root syscall.  The initrd is
+   filesystem via linaosrc and use the pivot_root syscall.  The initrd is
    mounted and executed via prepare_namespace().
 
 c) using initramfs.  The call to prepare_namespace() must be skipped.

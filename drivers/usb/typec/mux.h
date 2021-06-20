@@ -3,7 +3,7 @@
 #ifndef __USB_TYPEC_MUX__
 #define __USB_TYPEC_MUX__
 
-#include <linux/usb/typec_mux.h>
+#include <linaos/usb/typec_mux.h>
 
 struct typec_switch {
 	struct device dev;

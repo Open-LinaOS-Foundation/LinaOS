@@ -6,7 +6,7 @@
  *	MMX 3Dnow! helper operations
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 extern void *_mmx_memcpy(void *to, const void *from, size_t size);
 extern void mmx_clear_page(void *page);

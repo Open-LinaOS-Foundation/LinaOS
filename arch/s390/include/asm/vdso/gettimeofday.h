@@ -9,7 +9,7 @@
 #include <asm/timex.h>
 #include <asm/unistd.h>
 #include <asm/vdso.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #define vdso_calc_delta __arch_vdso_calc_delta
 static __always_inline u64 __arch_vdso_calc_delta(u64 cycles, u64 last, u64 mask, u32 mult)

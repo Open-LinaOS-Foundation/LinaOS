@@ -3,7 +3,7 @@
  *      sd.c Copyright (C) 1992 Drew Eckhardt
  *           Copyright (C) 1993, 1994, 1995, 1999 Eric Youngdale
  *
- *      Linux scsi disk driver
+ *      LinaOS scsi disk driver
  *              Initial versions: Drew Eckhardt
  *              Subsequent revisions: Eric Youngdale
  *	Modification history:
@@ -33,30 +33,30 @@
  *	than the level indicated above to trigger output.	
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bio.h>
-#include <linux/genhd.h>
-#include <linux/hdreg.h>
-#include <linux/errno.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/blkpg.h>
-#include <linux/blk-pm.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/string_helpers.h>
-#include <linux/async.h>
-#include <linux/slab.h>
-#include <linux/sed-opal.h>
-#include <linux/pm_runtime.h>
-#include <linux/pr.h>
-#include <linux/t10-pi.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/bio.h>
+#include <linaos/genhd.h>
+#include <linaos/hdreg.h>
+#include <linaos/errno.h>
+#include <linaos/idr.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/blkpg.h>
+#include <linaos/blk-pm.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/string_helpers.h>
+#include <linaos/async.h>
+#include <linaos/slab.h>
+#include <linaos/sed-opal.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pr.h>
+#include <linaos/t10-pi.h>
+#include <linaos/uaccess.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi.h>

@@ -9,7 +9,7 @@
 #include "util/evlist.h"
 #include "util/pfm.h"
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #ifdef HAVE_LIBPFM
 static int test__pfm_events(void);

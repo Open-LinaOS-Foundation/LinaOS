@@ -6,7 +6,7 @@
  * This dumps the content of BATS
  */
 
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm/debugfs.h>
 #include <asm/cpu_has_feature.h>
 

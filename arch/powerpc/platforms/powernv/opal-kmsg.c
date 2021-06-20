@@ -7,7 +7,7 @@
  * Copyright 2015 IBM Corporation.
  */
 
-#include <linux/kmsg_dump.h>
+#include <linaos/kmsg_dump.h>
 
 #include <asm/opal.h>
 #include <asm/opal-api.h>

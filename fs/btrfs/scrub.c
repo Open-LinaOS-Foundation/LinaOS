@@ -3,9 +3,9 @@
  * Copyright (C) 2011, 2012 STRATO.  All rights reserved.
  */
 
-#include <linux/blkdev.h>
-#include <linux/ratelimit.h>
-#include <linux/sched/mm.h>
+#include <linaos/blkdev.h>
+#include <linaos/ratelimit.h>
+#include <linaos/sched/mm.h>
 #include <crypto/hash.h>
 #include "ctree.h"
 #include "discard.h"
@@ -1725,7 +1725,7 @@ static void scrub_wr_submit(struct scrub_ctx *sctx)
 	/* process all writes in a single worker thread. Then the block layer
 	 * orders the requests before sending them to the driver which
 	 * doubled the write performance on spinning disks when measured
-	 * with Linux 3.5 */
+	 * with LinaOS 3.5 */
 	btrfsic_submit_bio(sbio->bio);
 
 	if (btrfs_is_zoned(sctx->fs_info))

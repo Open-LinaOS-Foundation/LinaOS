@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex LinaOS Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2021 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.  *
@@ -21,14 +21,14 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/aer.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
+#include <linaos/ctype.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/aer.h>
+#include <linaos/gfp.h>
+#include <linaos/kernel.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>
@@ -4854,7 +4854,7 @@ lpfc_param_show(sriov_nr_virtfn)
 static DEVICE_ATTR_RW(lpfc_sriov_nr_virtfn);
 
 /**
- * lpfc_request_firmware_upgrade_store - Request for Linux generic firmware upgrade
+ * lpfc_request_firmware_upgrade_store - Request for LinaOS generic firmware upgrade
  *
  * @dev: class device that is converted into a Scsi_host.
  * @attr: device attribute, not used.
@@ -4896,16 +4896,16 @@ lpfc_request_firmware_upgrade_store(struct device *dev,
 
 static int lpfc_req_fw_upgrade;
 module_param(lpfc_req_fw_upgrade, int, S_IRUGO|S_IWUSR);
-MODULE_PARM_DESC(lpfc_req_fw_upgrade, "Enable Linux generic firmware upgrade");
+MODULE_PARM_DESC(lpfc_req_fw_upgrade, "Enable LinaOS generic firmware upgrade");
 lpfc_param_show(request_firmware_upgrade)
 
 /**
- * lpfc_request_firmware_upgrade_init - Enable initial linux generic fw upgrade
+ * lpfc_request_firmware_upgrade_init - Enable initial linaos generic fw upgrade
  * @phba: lpfc_hba pointer.
  * @val: 0 or 1.
  *
  * Description:
- * Set the initial Linux generic firmware upgrade enable or disable flag.
+ * Set the initial LinaOS generic firmware upgrade enable or disable flag.
  *
  * Returns:
  * zero if val saved.
@@ -5609,7 +5609,7 @@ LPFC_VPORT_ATTR(discovery_threads, 32, 1, 64, "Maximum number of ELS commands "
 #    there are FC targets, such as JBODs, that only recognize 8-bits of
 #    LUN ID. When they receive a value greater than 8 bits, they chop off
 #    the high order bits. In other words, they see LUN IDs 0, 256, 512,
-#    and so on all as LUN ID 0. This causes the linux kernel, which sees
+#    and so on all as LUN ID 0. This causes the linaos kernel, which sees
 #    valid responses at each of the LUN IDs, to believe there are multiple
 #    devices present, when in fact, there is only 1.
 #    A customer that is aware of their target behaviors, and the results as

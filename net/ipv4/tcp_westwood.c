@@ -2,7 +2,7 @@
 /*
  * TCP Westwood+: end-to-end bandwidth estimation for TCP
  *
- *      Angelo Dell'Aera: author of the first version of TCP Westwood+ in Linux 2.4
+ *      Angelo Dell'Aera: author of the first version of TCP Westwood+ in LinaOS 2.4
  *
  * Support at http://c3lab.poliba.it/index.php/Westwood
  * Main references in literature:
@@ -15,17 +15,17 @@
  *     Comm. Review, 2004
  *
  * - A. Dell'Aera, L. Grieco, S. Mascolo.
- *   "Linux 2.4 Implementation of Westwood+ TCP with Rate-Halving :
+ *   "LinaOS 2.4 Implementation of Westwood+ TCP with Rate-Halving :
  *    A Performance Evaluation Over the Internet" (ICC 2004), Paris, June 2004
  *
  * Westwood+ employs end-to-end bandwidth measurement to set cwnd and
  * ssthresh after packet loss. The probing phase is as the original Reno.
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/inet_diag.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/inet_diag.h>
 #include <net/tcp.h>
 
 /* TCP Westwood structure */

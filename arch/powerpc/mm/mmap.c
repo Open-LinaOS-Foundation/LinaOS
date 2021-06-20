@@ -8,14 +8,14 @@
  * Started by Ingo Molnar <mingo@elte.hu>
  */
 
-#include <linux/personality.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/elf-randomize.h>
-#include <linux/security.h>
-#include <linux/mman.h>
+#include <linaos/personality.h>
+#include <linaos/mm.h>
+#include <linaos/random.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
+#include <linaos/elf-randomize.h>
+#include <linaos/security.h>
+#include <linaos/mman.h>
 
 /*
  * Top of mmap area (just below the process stack).

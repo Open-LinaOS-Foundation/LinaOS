@@ -1,4 +1,4 @@
-/* 8139cp.c: A Linux PCI Ethernet driver for the RealTek 8139C+ chips. */
+/* 8139cp.c: A LinaOS PCI Ethernet driver for the RealTek 8139C+ chips. */
 /*
 	Copyright 2001-2004 Jeff Garzik <jgarzik@pobox.com>
 
@@ -53,30 +53,30 @@
 #define DRV_RELDATE		"Mar 22, 2004"
 
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/gfp.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/crc32.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/cache.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/compiler.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/ethtool.h>
+#include <linaos/gfp.h>
+#include <linaos/mii.h>
+#include <linaos/if_vlan.h>
+#include <linaos/crc32.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/cache.h>
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /* These identify the driver base version and may not be removed. */
 static char version[] =

@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T6 Ethernet driver for Linux.
+ * This file is part of the Chelsio T6 Ethernet driver for LinaOS.
  *
  * Copyright (c) 2017-2018 Chelsio Communications, Inc. All rights reserved.
  *

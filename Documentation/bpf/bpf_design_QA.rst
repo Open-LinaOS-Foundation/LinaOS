@@ -3,7 +3,7 @@ BPF Design Q&A
 ==============
 
 BPF extensibility and applicability to networking, tracing, security
-in the linux kernel and several user space implementations of BPF
+in the linaos kernel and several user space implementations of BPF
 virtual machine led to a number of misunderstanding on what BPF actually is.
 This short QA is an attempt to address that and outline a direction
 of where BPF is heading long term.
@@ -29,12 +29,12 @@ BPF is generic instruction set *with* C calling convention.
 Q: Why C calling convention was chosen?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A: Because BPF programs are designed to run in the linux kernel
+A: Because BPF programs are designed to run in the linaos kernel
 which is written in C, hence BPF defines instruction set compatible
 with two most used architectures x64 and arm64 (and takes into
 consideration important quirks of other architectures) and
 defines calling convention that is compatible with C calling
-convention of the linux kernel on those architectures.
+convention of the linaos kernel on those architectures.
 
 Q: Can multiple return values be supported in the future?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

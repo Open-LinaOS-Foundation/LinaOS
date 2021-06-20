@@ -10,9 +10,9 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/init.h>
-#include <linux/clk-provider.h>
-#include <linux/of.h>
+#include <linaos/init.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of.h>
 #include "clk-iproc.h"
 
 static void __init bcm63138_armpll_init(struct device_node *node)

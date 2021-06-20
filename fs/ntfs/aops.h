@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /**
  * aops.h - Defines for NTFS kernel address space operations and page cache
- *	    handling.  Part of the Linux-NTFS project.
+ *	    handling.  Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
@@ -10,10 +10,10 @@
 #ifndef _LINUX_NTFS_AOPS_H
 #define _LINUX_NTFS_AOPS_H
 
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/fs.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>
+#include <linaos/pagemap.h>
+#include <linaos/fs.h>
 
 #include "inode.h"
 

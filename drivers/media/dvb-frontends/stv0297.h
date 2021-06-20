@@ -9,7 +9,7 @@
 #ifndef STV0297_H
 #define STV0297_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 #include <media/dvb_frontend.h>
 
 struct stv0297_config

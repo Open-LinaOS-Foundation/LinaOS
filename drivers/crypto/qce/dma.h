@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2011-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2014, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _DMA_H_
 #define _DMA_H_
 
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 
 /* maximum data transfer block size between BAM and CE */
 #define QCE_BAM_BURST_SIZE		64

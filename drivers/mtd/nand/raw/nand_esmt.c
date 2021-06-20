@@ -5,7 +5,7 @@
  * Author: Marcel Ziswiler <marcel.ziswiler@toradex.com>
  */
 
-#include <linux/mtd/rawnand.h>
+#include <linaos/mtd/rawnand.h>
 #include "internals.h"
 
 static void esmt_nand_decode_id(struct nand_chip *chip)

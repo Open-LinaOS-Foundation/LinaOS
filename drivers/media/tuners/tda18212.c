@@ -6,7 +6,7 @@
  */
 
 #include "tda18212.h"
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 struct tda18212_dev {
 	struct tda18212_config cfg;

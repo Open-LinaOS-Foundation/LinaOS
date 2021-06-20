@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2020 Jesper Dangaard Brouer */
 
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 
 #include <stddef.h>
 #include <stdint.h>

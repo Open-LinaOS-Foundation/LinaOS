@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /* Copyright (c) 2018 Mellanox Technologies. */
 
 #ifndef __MLX5_EN_TC_CT_H__
 #define __MLX5_EN_TC_CT_H__
 
 #include <net/pkt_cls.h>
-#include <linux/mlx5/fs.h>
+#include <linaos/mlx5/fs.h>
 #include <net/tc_act/tc_ct.h>
 
 #include "en.h"

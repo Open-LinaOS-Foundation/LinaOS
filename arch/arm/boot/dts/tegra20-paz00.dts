@@ -581,7 +581,7 @@
 		wakeup {
 			label = "Wakeup";
 			gpios = <&gpio TEGRA_GPIO(J, 7) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_WAKEUP>;
+			linaos,code = <KEY_WAKEUP>;
 			wakeup-source;
 		};
 	};
@@ -592,7 +592,7 @@
 		led-0 {
 			label = "wifi-led";
 			gpios = <&gpio TEGRA_GPIO(D, 0) GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "rfkill0";
+			linaos,default-trigger = "rfkill0";
 		};
 	};
 

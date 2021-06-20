@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/tools/lib/string.c
+ *  linaos/tools/lib/string.c
  *
- *  Copied from linux/lib/string.c, where it is:
+ *  Copied from linaos/lib/string.c, where it is:
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -16,9 +16,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/compiler.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/compiler.h>
 
 /**
  * memdup - duplicate region of memory

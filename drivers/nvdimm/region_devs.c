@@ -2,15 +2,15 @@
 /*
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
-#include <linux/scatterlist.h>
-#include <linux/memregion.h>
-#include <linux/highmem.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
-#include <linux/sort.h>
-#include <linux/io.h>
-#include <linux/nd.h>
+#include <linaos/scatterlist.h>
+#include <linaos/memregion.h>
+#include <linaos/highmem.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/hash.h>
+#include <linaos/sort.h>
+#include <linaos/io.h>
+#include <linaos/nd.h>
 #include "nd-core.h"
 #include "nd.h"
 
@@ -18,7 +18,7 @@
  * For readq() and writeq() on 32-bit builds, the hi-lo, lo-hi order is
  * irrelevant.
  */
-#include <linux/io-64-nonatomic-hi-lo.h>
+#include <linaos/io-64-nonatomic-hi-lo.h>
 
 static DEFINE_PER_CPU(int, flush_idx);
 

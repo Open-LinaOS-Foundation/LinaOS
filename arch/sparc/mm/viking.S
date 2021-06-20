@@ -3,7 +3,7 @@
  * viking.S: High speed Viking cache/mmu operations
  *
  * Copyright (C) 1997  Eddie C. Dost  (ecd@skynet.be)
- * Copyright (C) 1997,1998,1999  Jakub Jelinek  (jj@ultra.linux.cz)
+ * Copyright (C) 1997,1998,1999  Jakub Jelinek  (jj@ultra.linaos.cz)
  * Copyright (C) 1999  Pavel Semerad  (semerad@ss1000.ms.mff.cuni.cz)
  */
 

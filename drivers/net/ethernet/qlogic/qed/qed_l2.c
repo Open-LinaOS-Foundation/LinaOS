@@ -4,29 +4,29 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 #include <asm/param.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/etherdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/stddef.h>
+#include <linaos/string.h>
+#include <linaos/workqueue.h>
+#include <linaos/bitops.h>
+#include <linaos/bug.h>
+#include <linaos/vmalloc.h>
 #include "qed.h"
-#include <linux/qed/qed_chain.h>
+#include <linaos/qed/qed_chain.h>
 #include "qed_cxt.h"
 #include "qed_dcbx.h"
 #include "qed_dev_api.h"
-#include <linux/qed/qed_eth_if.h>
+#include <linaos/qed/qed_eth_if.h>
 #include "qed_hsi.h"
 #include "qed_hw.h"
 #include "qed_int.h"

@@ -6,16 +6,16 @@
  *	 Dave Gerlach <d-gerlach@ti.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pm_opp.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_opp.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 #define REVISION_MASK				0xF
 #define REVISION_SHIFT				28

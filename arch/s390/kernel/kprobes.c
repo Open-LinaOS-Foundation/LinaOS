@@ -7,18 +7,18 @@
  * s390 port, used ppc64 as template. Mike Grundy <grundym@us.ibm.com>
  */
 
-#include <linux/moduleloader.h>
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/preempt.h>
-#include <linux/stop_machine.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
-#include <linux/extable.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/hardirq.h>
-#include <linux/ftrace.h>
+#include <linaos/moduleloader.h>
+#include <linaos/kprobes.h>
+#include <linaos/ptrace.h>
+#include <linaos/preempt.h>
+#include <linaos/stop_machine.h>
+#include <linaos/kdebug.h>
+#include <linaos/uaccess.h>
+#include <linaos/extable.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/hardirq.h>
+#include <linaos/ftrace.h>
 #include <asm/set_memory.h>
 #include <asm/sections.h>
 #include <asm/dis.h>

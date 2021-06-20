@@ -5,12 +5,12 @@
  *  Copyright 2008 Wolfson Microelectronics
  */
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/debugfs.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/ctype.h>
+#include <linaos/mm.h>
+#include <linaos/debugfs.h>
 #include <sound/jack.h>
 #include <sound/core.h>
 #include <sound/control.h>

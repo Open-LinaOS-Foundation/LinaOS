@@ -5,22 +5,22 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  */
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/buffer_head.h>
-#include <linux/mpage.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/pagevec.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/blk-crypto.h>
-#include <linux/swap.h>
-#include <linux/prefetch.h>
-#include <linux/uio.h>
-#include <linux/cleancache.h>
-#include <linux/sched/signal.h>
-#include <linux/fiemap.h>
+#include <linaos/fs.h>
+#include <linaos/f2fs_fs.h>
+#include <linaos/buffer_head.h>
+#include <linaos/mpage.h>
+#include <linaos/writeback.h>
+#include <linaos/backing-dev.h>
+#include <linaos/pagevec.h>
+#include <linaos/blkdev.h>
+#include <linaos/bio.h>
+#include <linaos/blk-crypto.h>
+#include <linaos/swap.h>
+#include <linaos/prefetch.h>
+#include <linaos/uio.h>
+#include <linaos/cleancache.h>
+#include <linaos/sched/signal.h>
+#include <linaos/fiemap.h>
 
 #include "f2fs.h"
 #include "node.h"
@@ -3735,7 +3735,7 @@ out:
 }
 
 #ifdef CONFIG_MIGRATION
-#include <linux/migrate.h>
+#include <linaos/migrate.h>
 
 int f2fs_migrate_page(struct address_space *mapping,
 		struct page *newpage, struct page *page, enum migrate_mode mode)

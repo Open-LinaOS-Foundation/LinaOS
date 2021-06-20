@@ -5,13 +5,13 @@
  *
  * Putting things on the screen/serial line using YAMONs facilities.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/serial_reg.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/serial_reg.h>
+#include <linaos/spinlock.h>
+#include <linaos/export.h>
+#include <linaos/string.h>
+#include <linaos/io.h>
 #include <asm/bootinfo.h>
 #include <asm/setup.h>
 

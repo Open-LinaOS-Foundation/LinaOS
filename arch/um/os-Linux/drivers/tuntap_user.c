@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /* 
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
 #include <stdio.h>
 #include <unistd.h>
 #include <errno.h>
 #include <string.h>
-#include <linux/if_tun.h>
+#include <linaos/if_tun.h>
 #include <net/if.h>
 #include <sys/ioctl.h>
 #include <sys/socket.h>

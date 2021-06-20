@@ -16,16 +16,16 @@
  * this warranty disclaimer.
  **/
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/nfc.h>
-#include <linux/gpio.h>
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/nfc.h>
+#include <linaos/gpio.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_gpio.h>
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
-#include <linux/spi/spi.h>
+#include <linaos/spi/spi.h>
 #include "nfcmrvl.h"
 
 #define SPI_WAIT_HANDSHAKE	1

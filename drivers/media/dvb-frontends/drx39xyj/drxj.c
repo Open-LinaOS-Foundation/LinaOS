@@ -30,7 +30,7 @@
   DRXJ specific implementation of DRX driver
   authors: Dragan Savic, Milos Nikolic, Mihajlo Katona, Tao Ding, Paul Janssen
 
-  The Linux DVB Driver for Micronas DRX39xx family (drx3933j) was
+  The LinaOS DVB Driver for Micronas DRX39xx family (drx3933j) was
   written by Devin Heitmueller <devin.heitmueller@kernellabs.com>
 
   This program is free software; you can redistribute it and/or modify
@@ -55,10 +55,10 @@ INCLUDE FILES
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 #include <asm/div64.h>
 
 #include <media/dvb_frontend.h>
@@ -11932,7 +11932,7 @@ static int drxj_set_lna_state(struct drx_demod_instance *demod, bool state)
 }
 
 /*
- * The Linux DVB Driver for Micronas DRX39xx family (drx3933j)
+ * The LinaOS DVB Driver for Micronas DRX39xx family (drx3933j)
  *
  * Written by Devin Heitmueller <devin.heitmueller@kernellabs.com>
  */

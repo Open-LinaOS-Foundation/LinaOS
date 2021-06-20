@@ -2,16 +2,16 @@
 /*
  * Common interrupt code for 32 and 64 bit
  */
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/of.h>
-#include <linux/seq_file.h>
-#include <linux/smp.h>
-#include <linux/ftrace.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/irq.h>
+#include <linaos/cpu.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/of.h>
+#include <linaos/seq_file.h>
+#include <linaos/smp.h>
+#include <linaos/ftrace.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/irq.h>
 
 #include <asm/irq_stack.h>
 #include <asm/apic.h>

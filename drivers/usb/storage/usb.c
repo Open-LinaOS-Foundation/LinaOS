@@ -10,7 +10,7 @@
  *   (c) 2003-2009 Alan Stern (stern@rowland.harvard.edu)
  *
  * Initial work by:
- *   (c) 1999 Michael Gee (michael@linuxspecific.com)
+ *   (c) 1999 Michael Gee (michael@linaosspecific.com)
  *
  * usb_device_id support by Adam J. Richter (adam@yggdrasil.com):
  *   (c) 2000 Yggdrasil Computing, Inc.
@@ -34,13 +34,13 @@
 #define DEBUG
 #endif
 
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/utsname.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/kthread.h>
+#include <linaos/mutex.h>
+#include <linaos/utsname.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -64,7 +64,7 @@
 
 /* Some informational data */
 MODULE_AUTHOR("Matthew Dharm <mdharm-usb@one-eyed-alien.net>");
-MODULE_DESCRIPTION("USB Mass Storage driver for Linux");
+MODULE_DESCRIPTION("USB Mass Storage driver for LinaOS");
 MODULE_LICENSE("GPL");
 
 static unsigned int delay_use = 1;
@@ -648,7 +648,7 @@ static int get_device_info(struct us_data *us, const struct usb_device_id *id,
 					" has %s in unusual_devs.h (kernel"
 					" %s)\n"
 					"   Please send a copy of this message to "
-					"<linux-usb@vger.kernel.org> and "
+					"<linaos-usb@vger.kernel.org> and "
 					"<usb-storage@lists.one-eyed-alien.net>\n",
 					le16_to_cpu(ddesc->idVendor),
 					le16_to_cpu(ddesc->idProduct),

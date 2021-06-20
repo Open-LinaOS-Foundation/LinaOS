@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/dmi.h>
+#include <linaos/efi.h>
+#include <linaos/pci.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
 #include <media/v4l2-subdev.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include "../../include/linux/atomisp_platform.h"
-#include "../../include/linux/atomisp_gmin_platform.h"
+#include <linaos/mfd/intel_soc_pmic.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio.h>
+#include <linaos/platform_device.h>
+#include "../../include/linaos/atomisp_platform.h"
+#include "../../include/linaos/atomisp_gmin_platform.h"
 
 #define MAX_SUBDEVS 8
 

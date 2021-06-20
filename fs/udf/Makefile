@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for the linux udf-filesystem routines.
+# Makefile for the linaos udf-filesystem routines.
 #
 
 obj-$(CONFIG_UDF_FS) += udf.o

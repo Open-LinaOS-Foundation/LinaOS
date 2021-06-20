@@ -9,24 +9,24 @@
  * Author: Andreas Westin <andreas.westin@stericsson.com> for ST-Ericsson.
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irqreturn.h>
-#include <linux/kernel.h>
-#include <linux/klist.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/semaphore.h>
-#include <linux/platform_data/dma-ste-dma40.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irqreturn.h>
+#include <linaos/kernel.h>
+#include <linaos/klist.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/semaphore.h>
+#include <linaos/platform_data/dma-ste-dma40.h>
 
 #include <crypto/aes.h>
 #include <crypto/ctr.h>
@@ -34,7 +34,7 @@
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
 
-#include <linux/platform_data/crypto-ux500.h>
+#include <linaos/platform_data/crypto-ux500.h>
 
 #include "cryp_p.h"
 #include "cryp.h"

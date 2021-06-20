@@ -2,10 +2,10 @@
 #ifndef _LINUX_CACHEINFO_H
 #define _LINUX_CACHEINFO_H
 
-#include <linux/bitops.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/smp.h>
+#include <linaos/bitops.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/smp.h>
 
 struct device_node;
 struct attribute;

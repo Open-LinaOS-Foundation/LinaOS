@@ -1,8 +1,8 @@
-/* mga_drv.h -- Private header for the Matrox G200/G400 driver -*- linux-c -*-
+/* mga_drv.h -- Private header for the Matrox G200/G400 driver -*- linaos-c -*-
  * Created: Mon Dec 13 01:50:01 1999 by jhartmann@precisioninsight.com
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -25,15 +25,15 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Gareth Hughes <gareth@valinux.com>
+ *    Gareth Hughes <gareth@valinaos.com>
  */
 
 #ifndef __MGA_DRV_H__
 #define __MGA_DRV_H__
 
-#include <linux/irqreturn.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/irqreturn.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_agpsupport.h>
 #include <drm/drm_device.h>
@@ -49,7 +49,7 @@
 /* General customization:
  */
 
-#define DRIVER_AUTHOR		"Gareth Hughes, VA Linux Systems Inc."
+#define DRIVER_AUTHOR		"Gareth Hughes, VA LinaOS Systems Inc."
 
 #define DRIVER_NAME		"mga"
 #define DRIVER_DESC		"Matrox G200/G400"

@@ -1,13 +1,13 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =======================================
-Linux ACPI Custom Control Method How To
+LinaOS ACPI Custom Control Method How To
 =======================================
 
 :Author: Zhang Rui <rui.zhang@intel.com>
 
 
-Linux supports customizing ACPI control methods at runtime.
+LinaOS supports customizing ACPI control methods at runtime.
 
 Users can use this to:
 
@@ -27,7 +27,7 @@ rebuild/reboot is not needed and test result can be got in minutes.
     declared inside scope operators are also not supported.
 
   - The same ACPI control method can be overridden for many times,
-    and it's always the latest one that used by Linux/kernel.
+    and it's always the latest one that used by LinaOS/kernel.
 
   - To get the ACPI debug object output (Store (AAAA, Debug)),
     please run::

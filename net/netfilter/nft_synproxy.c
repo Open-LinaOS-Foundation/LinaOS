@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <net/ip.h>
 #include <net/tcp.h>
 #include <net/netlink.h>
@@ -7,8 +7,8 @@
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_synproxy.h>
 #include <net/netfilter/nf_synproxy.h>
-#include <linux/netfilter/nf_tables.h>
-#include <linux/netfilter/nf_synproxy.h>
+#include <linaos/netfilter/nf_tables.h>
+#include <linaos/netfilter/nf_synproxy.h>
 
 struct nft_synproxy {
 	struct nf_synproxy_info	info;

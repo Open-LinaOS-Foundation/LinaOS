@@ -4,9 +4,9 @@
  * Copyright (c) 2014, Intel Corporation.
  */
 
-#include <linux/rbtree.h>
-#include <linux/list.h>
-#include <linux/zalloc.h>
+#include <linaos/rbtree.h>
+#include <linaos/list.h>
+#include <linaos/zalloc.h>
 #include <stdlib.h>
 
 #include "call-path.h"

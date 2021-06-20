@@ -7,14 +7,14 @@
  */
 
 /*
- *  Linux VFS file operations.
+ *  LinaOS VFS file operations.
  */
 
 #include "protocol.h"
 #include "orangefs-kernel.h"
 #include "orangefs-bufmap.h"
-#include <linux/fs.h>
-#include <linux/pagemap.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
 
 static int flush_racache(struct inode *inode)
 {

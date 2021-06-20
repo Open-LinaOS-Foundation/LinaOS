@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -35,17 +35,17 @@
 
 #include <stdarg.h>
 
-#include <linux/module.h>
-#include <linux/utsname.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/configfs.h>
+#include <linaos/module.h>
+#include <linaos/utsname.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>
+#include <linaos/list.h>
+#include <linaos/gfp.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/configfs.h>
 
 #include <generated/utsrelease.h>
 

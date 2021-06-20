@@ -15,16 +15,16 @@
 
 #if !defined(__ASSEMBLY__)
 
-#include <linux/crash_core.h>
+#include <linaos/crash_core.h>
 #include <asm/io.h>
 
-#include <uapi/linux/kexec.h>
+#include <uapi/linaos/kexec.h>
 
 #ifdef CONFIG_KEXEC_CORE
-#include <linux/list.h>
-#include <linux/compat.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
+#include <linaos/list.h>
+#include <linaos/compat.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
 #include <asm/kexec.h>
 
 /* Verify architecture specific macros are defined */

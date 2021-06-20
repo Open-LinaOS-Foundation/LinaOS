@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/include/net/ethoc.h
+ * linaos/include/net/ethoc.h
  *
  * Copyright (C) 2008-2009 Avionic Design GmbH
  *

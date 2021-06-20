@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_WATCH_QUEUE_H
 #define _UAPI_LINUX_WATCH_QUEUE_H
 
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/ioctl.h>
 
 #define O_NOTIFICATION_PIPE	O_EXCL	/* Parameter to pipe2() selecting notification pipe */
 

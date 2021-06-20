@@ -7,16 +7,16 @@
  *  Hotplug & misc device support: Jochen Roehrig (roehrig@de.ibm.com)
  *  Major cleanup & driver split: Martin Schwidefsky <schwidefsky@de.ibm.com>
  *				  Ralph Wuerthner <rwuerthn@de.ibm.com>
- *  MSGTYPE restruct:		  Holger Dengler <hd@linux.vnet.ibm.com>
+ *  MSGTYPE restruct:		  Holger Dengler <hd@linaos.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/atomic.h>
+#include <linaos/uaccess.h>
+#include <linaos/mod_devicetable.h>
 
 #include "ap_bus.h"
 #include "zcrypt_api.h"

@@ -3,15 +3,15 @@
  * Driver for the enhanced rotary controller on pxa930 and pxa935
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
-#include <linux/platform_data/keyboard-pxa930_rotary.h>
+#include <linaos/platform_data/keyboard-pxa930_rotary.h>
 
 #define SBCR	(0x04)
 #define ERCR	(0x0c)

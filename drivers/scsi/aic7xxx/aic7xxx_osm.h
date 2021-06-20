@@ -1,5 +1,5 @@
 /*
- * Adaptec AIC7xxx device driver for Linux.
+ * Adaptec AIC7xxx device driver for LinaOS.
  *
  * Copyright (c) 1994 John Aycock
  *   The University of Calgary Department of Computer Science.
@@ -53,20 +53,20 @@
  * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGES.
  *
- * $Id: //depot/aic7xxx/linux/drivers/scsi/aic7xxx/aic7xxx_osm.h#151 $
+ * $Id: //depot/aic7xxx/linaos/drivers/scsi/aic7xxx/aic7xxx_osm.h#151 $
  *
  */
 #ifndef _AIC7XXX_LINUX_H_
 #define _AIC7XXX_LINUX_H_
 
-#include <linux/types.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <asm/byteorder.h>
 #include <asm/io.h>
 
@@ -146,13 +146,13 @@ typedef struct bus_dma_segment
 	bus_size_t	ds_len;
 } bus_dma_segment_t;
 
-struct ahc_linux_dma_tag
+struct ahc_linaos_dma_tag
 {
 	bus_size_t	alignment;
 	bus_size_t	boundary;
 	bus_size_t	maxsize;
 };
-typedef struct ahc_linux_dma_tag* bus_dma_tag_t;
+typedef struct ahc_linaos_dma_tag* bus_dma_tag_t;
 
 typedef dma_addr_t bus_dmamap_t;
 
@@ -210,7 +210,7 @@ int	ahc_dmamap_unload(struct ahc_softc *, bus_dma_tag_t, bus_dmamap_t);
  * XXX
  * ahc_dmamap_sync is only used on buffers allocated with
  * the pci_alloc_consistent() API.  Although I'm not sure how
- * this works on architectures with a write buffer, Linux does
+ * this works on architectures with a write buffer, LinaOS does
  * not have an API to sync "coherent" memory.  Perhaps we need
  * to do an mb()?
  */
@@ -231,14 +231,14 @@ ahc_scb_timer_reset(struct scb *scb, u_int usec)
 }
 
 /***************************** SMP support ************************************/
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 #define AIC7XXX_DRIVER_VERSION "7.0"
 
 /*************************** Device Data Structures ***************************/
 /*
  * A per probed device structure used to deal with some error recovery
- * scenarios that the Linux mid-layer code just doesn't know how to
+ * scenarios that the LinaOS mid-layer code just doesn't know how to
  * handle.  The structure allocated for a device only becomes persistent
  * after a successfully completed inquiry command to the target when
  * that inquiry data indicates a lun is present.
@@ -248,9 +248,9 @@ typedef enum {
 	AHC_DEV_Q_BASIC		 = 0x10, /* Allow basic device queuing */
 	AHC_DEV_Q_TAGGED	 = 0x20, /* Allow full SCSI2 command queueing */
 	AHC_DEV_PERIODIC_OTAG	 = 0x40, /* Send OTAG to prevent starvation */
-} ahc_linux_dev_flags;
+} ahc_linaos_dev_flags;
 
-struct ahc_linux_device {
+struct ahc_linaos_device {
 	/*
 	 * The number of transactions currently
 	 * queued to the device.
@@ -287,7 +287,7 @@ struct ahc_linux_device {
 	u_int			tag_success_count;
 #define AHC_TAG_SUCCESS_INTERVAL 50
 
-	ahc_linux_dev_flags	flags;
+	ahc_linaos_dev_flags	flags;
 
 	/*
 	 * The high limit for the tags variable.
@@ -335,7 +335,7 @@ struct ahc_linux_device {
  * Per-SCB OSM storage.
  */
 struct scb_platform_data {
-	struct ahc_linux_device	*dev;
+	struct ahc_linaos_device	*dev;
 	dma_addr_t		 buf_busaddr;
 	uint32_t		 xfer_len;
 	uint32_t		 sense_resid;	/* Auto-Sense residual */
@@ -375,7 +375,7 @@ void ahc_insb(struct ahc_softc * ahc, long port,
 	       uint8_t *, int count);
 
 /**************************** Initialization **********************************/
-int		ahc_linux_register_host(struct ahc_softc *,
+int		ahc_linaos_register_host(struct ahc_softc *,
 					struct scsi_host_template *);
 
 /******************************** Locking *************************************/
@@ -446,23 +446,23 @@ typedef enum
 
 /**************************** VL/EISA Routines ********************************/
 #ifdef CONFIG_EISA
-int			 ahc_linux_eisa_init(void);
-void			 ahc_linux_eisa_exit(void);
+int			 ahc_linaos_eisa_init(void);
+void			 ahc_linaos_eisa_exit(void);
 int			 aic7770_map_registers(struct ahc_softc *ahc,
 					       u_int port);
 int			 aic7770_map_int(struct ahc_softc *ahc, u_int irq);
 #else
-static inline int	ahc_linux_eisa_init(void) {
+static inline int	ahc_linaos_eisa_init(void) {
 	return -ENODEV;
 }
-static inline void	ahc_linux_eisa_exit(void) {
+static inline void	ahc_linaos_eisa_exit(void) {
 }
 #endif
 
 /******************************* PCI Routines *********************************/
 #ifdef CONFIG_PCI
-int			 ahc_linux_pci_init(void);
-void			 ahc_linux_pci_exit(void);
+int			 ahc_linaos_pci_init(void);
+void			 ahc_linaos_pci_exit(void);
 int			 ahc_pci_map_registers(struct ahc_softc *ahc);
 int			 ahc_pci_map_int(struct ahc_softc *ahc);
 
@@ -494,10 +494,10 @@ ahc_get_pci_bus(ahc_dev_softc_t pci)
 	return (pci->bus->number);
 }
 #else
-static inline int ahc_linux_pci_init(void) {
+static inline int ahc_linaos_pci_init(void) {
 	return 0;
 }
-static inline void ahc_linux_pci_exit(void) {
+static inline void ahc_linaos_pci_exit(void) {
 }
 #endif
 
@@ -511,7 +511,7 @@ ahc_flush_device_writes(struct ahc_softc *ahc)
 
 /**************************** Proc FS Support *********************************/
 int	ahc_proc_write_seeprom(struct Scsi_Host *, char *, int);
-int	ahc_linux_show_info(struct seq_file *, struct Scsi_Host *);
+int	ahc_linaos_show_info(struct seq_file *, struct Scsi_Host *);
 
 /*************************** Domain Validation ********************************/
 /*********************** Transaction Access Wrappers *************************/
@@ -570,7 +570,7 @@ static inline
 void ahc_set_transaction_tag(struct scb *scb, int enabled, u_int type)
 {
 	/*
-	 * Nothing to do for linux as the incoming transaction
+	 * Nothing to do for linaos as the incoming transaction
 	 * has no concept of tag/non tagged, etc.
 	 */
 }
@@ -615,7 +615,7 @@ static inline
 int ahc_perform_autosense(struct scb *scb)
 {
 	/*
-	 * We always perform autosense in Linux.
+	 * We always perform autosense in LinaOS.
 	 * On other platforms this is set on a
 	 * per-transaction basis.
 	 */
@@ -632,7 +632,7 @@ static inline void
 ahc_notify_xfer_settings_change(struct ahc_softc *ahc,
 				struct ahc_devinfo *devinfo)
 {
-	/* Nothing to do here for linux */
+	/* Nothing to do here for linaos */
 }
 
 static inline void
@@ -659,7 +659,7 @@ int	ahc_platform_abort_scbs(struct ahc_softc *ahc, int target,
 				char channel, int lun, u_int tag,
 				role_t role, uint32_t status);
 irqreturn_t
-	ahc_linux_isr(int irq, void *dev_id);
+	ahc_linaos_isr(int irq, void *dev_id);
 void	ahc_platform_flushwork(struct ahc_softc *ahc);
 void	ahc_done(struct ahc_softc*, struct scb*);
 void	ahc_send_async(struct ahc_softc *, char channel,

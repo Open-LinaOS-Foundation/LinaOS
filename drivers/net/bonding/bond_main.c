@@ -10,7 +10,7 @@
  *	Cisco 5500
  *	Sun Trunking (Solaris)
  *	Alteon AceDirector Trunks
- *	Linux Bonding
+ *	LinaOS Bonding
  *	and probably many L2 switches ...
  *
  * How it works:
@@ -31,53 +31,53 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
+#include <linaos/in.h>
 #include <net/ip.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/icmpv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/socket.h>
-#include <linux/ctype.h>
-#include <linux/inet.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
+#include <linaos/ip.h>
+#include <linaos/icmp.h>
+#include <linaos/icmpv6.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/timer.h>
+#include <linaos/socket.h>
+#include <linaos/ctype.h>
+#include <linaos/inet.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
 #include <asm/dma.h>
-#include <linux/uaccess.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <linaos/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/inetdevice.h>
+#include <linaos/igmp.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
 #include <net/sock.h>
-#include <linux/rtnetlink.h>
-#include <linux/smp.h>
-#include <linux/if_ether.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/smp.h>
+#include <linaos/if_ether.h>
 #include <net/arp.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bonding.h>
-#include <linux/jiffies.h>
-#include <linux/preempt.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_vlan.h>
+#include <linaos/if_bonding.h>
+#include <linaos/jiffies.h>
+#include <linaos/preempt.h>
 #include <net/route.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/pkt_sched.h>
-#include <linux/rculist.h>
+#include <linaos/rculist.h>
 #include <net/flow_dissector.h>
 #include <net/xfrm.h>
 #include <net/bonding.h>

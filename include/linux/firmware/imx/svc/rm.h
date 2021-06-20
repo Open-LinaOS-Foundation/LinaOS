@@ -15,7 +15,7 @@
 #ifndef _SC_RM_API_H
 #define _SC_RM_API_H
 
-#include <linux/firmware/imx/sci.h>
+#include <linaos/firmware/imx/sci.h>
 
 /*
  * This type is used to indicate RPC RM function calls.

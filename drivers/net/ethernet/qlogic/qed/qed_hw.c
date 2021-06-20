@@ -4,19 +4,19 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/qed/qed_chain.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/qed/qed_chain.h>
 #include "qed.h"
 #include "qed_hsi.h"
 #include "qed_hw.h"

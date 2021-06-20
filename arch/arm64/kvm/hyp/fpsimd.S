@@ -4,7 +4,7 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/fpsimdmacros.h>
 

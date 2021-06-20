@@ -56,7 +56,7 @@
 	led0 {
 		label = "led:green:heartbeat";
 		gpios = <&porta 28 1>;
-		linux,default-trigger = "heartbeat";
+		linaos,default-trigger = "heartbeat";
 	};
 
 	led1 {

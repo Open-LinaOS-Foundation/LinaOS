@@ -6,13 +6,13 @@
  * Copyright (C) 2020 by Renesas Electronics Corporation
  */
 
-#include <linux/bitops.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h> /* FIXME: is system_long_wq the best choice? */
+#include <linaos/bitops.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h> /* FIXME: is system_long_wq the best choice? */
 
 #define TU_CUR_VERSION 0x01
 

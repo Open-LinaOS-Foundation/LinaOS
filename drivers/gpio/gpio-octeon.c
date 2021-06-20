@@ -6,11 +6,11 @@
  * Copyright (C) 2011, 2012 Cavium Inc.
  */
 
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-gpio-defs.h>

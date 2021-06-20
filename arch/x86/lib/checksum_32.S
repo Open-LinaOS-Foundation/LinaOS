@@ -21,7 +21,7 @@
  *                   converted to pure assembler
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/errno.h>
 #include <asm/asm.h>
 #include <asm/export.h>

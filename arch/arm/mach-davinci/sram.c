@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2009 David Brownell
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/genalloc.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/genalloc.h>
 
 #include <mach/common.h>
 #include "sram.h"

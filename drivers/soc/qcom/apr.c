@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2017, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2017, The LinaOS Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/of_device.h>
-#include <linux/soc/qcom/apr.h>
-#include <linux/soc/qcom/pdr.h>
-#include <linux/rpmsg.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/spinlock.h>
+#include <linaos/idr.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/of_device.h>
+#include <linaos/soc/qcom/apr.h>
+#include <linaos/soc/qcom/pdr.h>
+#include <linaos/rpmsg.h>
+#include <linaos/of.h>
 
 struct apr {
 	struct rpmsg_endpoint *ch;

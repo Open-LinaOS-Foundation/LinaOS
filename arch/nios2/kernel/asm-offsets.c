@@ -3,13 +3,13 @@
  * Copyright (C) 2011 Tobias Klauser <tklauser@distanz.ch>
  */
 
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/ptrace.h>
-#include <linux/hardirq.h>
-#include <linux/thread_info.h>
-#include <linux/kbuild.h>
+#include <linaos/stddef.h>
+#include <linaos/sched.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/ptrace.h>
+#include <linaos/hardirq.h>
+#include <linaos/thread_info.h>
+#include <linaos/kbuild.h>
 
 int main(void)
 {

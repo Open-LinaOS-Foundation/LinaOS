@@ -10,7 +10,7 @@
 #ifndef __OMAP2_DSS_H
 #define __OMAP2_DSS_H
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #include "omapdss.h"
 

@@ -18,7 +18,7 @@
 #include "util/symbol.h"
 #include "util/data.h"
 #include <errno.h>
-#include <linux/err.h>
+#include <linaos/err.h>
 
 static int sysfs__fprintf_build_id(FILE *fp)
 {

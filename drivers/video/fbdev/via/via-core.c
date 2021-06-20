@@ -8,16 +8,16 @@
 /*
  * Core code for the Via multifunction framebuffer device.
  */
-#include <linux/via-core.h>
-#include <linux/via_i2c.h>
-#include <linux/via-gpio.h>
+#include <linaos/via-core.h>
+#include <linaos/via_i2c.h>
+#include <linaos/via-gpio.h>
 #include "global.h"
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/pm.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/list.h>
+#include <linaos/pm.h>
 
 /*
  * The default port config.

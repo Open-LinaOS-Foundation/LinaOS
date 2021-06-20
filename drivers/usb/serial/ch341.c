@@ -12,13 +12,13 @@
  * This driver only supports the asynchronous serial interface.
  */
 
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/serial.h>
+#include <linaos/kernel.h>
+#include <linaos/tty.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/usb/serial.h>
+#include <linaos/serial.h>
 #include <asm/unaligned.h>
 
 #define DEFAULT_BAUD_RATE 9600

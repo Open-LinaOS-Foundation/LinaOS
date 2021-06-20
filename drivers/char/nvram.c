@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * CMOS/NV-RAM driver for Linux
+ * CMOS/NV-RAM driver for LinaOS
  *
  * Copyright (C) 1997 Roman Hodek <Roman.Hodek@informatik.uni-erlangen.de>
  * idea by and with help from Richard Jelinek <rj@suse.de>
@@ -31,23 +31,23 @@
 
 #define NVRAM_VERSION	"1.3"
 
-#include <linux/module.h>
-#include <linux/nvram.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/mc146818rtc.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
+#include <linaos/module.h>
+#include <linaos/nvram.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/miscdevice.h>
+#include <linaos/ioport.h>
+#include <linaos/fcntl.h>
+#include <linaos/mc146818rtc.h>
+#include <linaos/init.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
+#include <linaos/mutex.h>
+#include <linaos/pagemap.h>
 
 #ifdef CONFIG_PPC
 #include <asm/nvram.h>

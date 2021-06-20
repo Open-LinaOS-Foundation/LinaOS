@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2014-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2014-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2018-2021 Linaro Ltd.
  */
 
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_rmnet.h>
-#include <linux/remoteproc/qcom_rproc.h>
+#include <linaos/errno.h>
+#include <linaos/if_arp.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_rmnet.h>
+#include <linaos/remoteproc/qcom_rproc.h>
 
 #include "ipa.h"
 #include "ipa_data.h"

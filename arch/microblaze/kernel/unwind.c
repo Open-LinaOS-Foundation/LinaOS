@@ -13,15 +13,15 @@
  */
 
 /* #define DEBUG 1 */
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/stacktrace.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <linaos/export.h>
+#include <linaos/kallsyms.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/stacktrace.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
 #include <asm/sections.h>
 #include <asm/exceptions.h>
 #include <asm/unwind.h>

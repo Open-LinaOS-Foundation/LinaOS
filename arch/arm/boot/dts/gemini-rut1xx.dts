@@ -30,7 +30,7 @@
 		button-setup {
 			debounce-interval = <100>;
 			wakeup-source;
-			linux,code = <KEY_SETUP>;
+			linaos,code = <KEY_SETUP>;
 			label = "Reset to defaults";
 			/* Conflict with TVC */
 			gpios = <&gpio1 28 GPIO_ACTIVE_LOW>;
@@ -52,7 +52,7 @@
 			/* Conflict with NAND CE0 */
 			gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

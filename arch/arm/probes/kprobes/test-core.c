@@ -197,14 +197,14 @@
  *		from memory.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sched/clock.h>
-#include <linux/kprobes.h>
-#include <linux/errno.h>
-#include <linux/stddef.h>
-#include <linux/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/sched/clock.h>
+#include <linaos/kprobes.h>
+#include <linaos/errno.h>
+#include <linaos/stddef.h>
+#include <linaos/bug.h>
 #include <asm/opcodes.h>
 
 #include "core.h"

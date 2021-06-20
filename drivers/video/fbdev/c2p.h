@@ -8,7 +8,7 @@
  *  for more details.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 extern void c2p_planar(void *dst, const void *src, u32 dx, u32 dy, u32 width,
 		       u32 height, u32 dst_nextline, u32 dst_nextplane,

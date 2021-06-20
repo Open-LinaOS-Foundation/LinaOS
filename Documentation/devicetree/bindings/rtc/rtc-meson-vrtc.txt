@@ -1,7 +1,7 @@
 * Amlogic Virtual RTC (VRTC)
 
-This is a Linux interface to an RTC managed by firmware, hence it's
-virtual from a Linux perspective.  The interface is 1 register where
+This is a LinaOS interface to an RTC managed by firmware, hence it's
+virtual from a LinaOS perspective.  The interface is 1 register where
 an alarm time (in seconds) is to be written.
 
 Required properties:

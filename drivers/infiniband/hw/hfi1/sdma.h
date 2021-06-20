@@ -47,11 +47,11 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
 #include <asm/byteorder.h>
-#include <linux/workqueue.h>
-#include <linux/rculist.h>
+#include <linaos/workqueue.h>
+#include <linaos/rculist.h>
 
 #include "hfi.h"
 #include "verbs.h"

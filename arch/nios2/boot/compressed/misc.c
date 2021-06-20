@@ -3,18 +3,18 @@
  * Copyright (C) 2009 Thomas Chou <thomas@wytron.com.tw>
  *
  * This is a collection of several routines from gzip-1.0.3
- * adapted for Linux.
+ * adapted for LinaOS.
  *
  * malloc by Hannu Savolainen 1993 and Matthias Urlichs 1994
  *
  * Adapted for SH by Stuart Menefy, Aug 1999
  *
- * Modified to use standard LinuxSH BIOS by Greg Banks 7Jul2000
+ * Modified to use standard LinaOSSH BIOS by Greg Banks 7Jul2000
  *
  * Based on arch/sh/boot/compressed/misc.c
  */
 
-#include <linux/string.h>
+#include <linaos/string.h>
 
 /*
  * gzip declarations
@@ -168,7 +168,7 @@ void decompress_kernel(void)
 
 	console_init();
 	makecrc();
-	puts("Uncompressing Linux... ");
+	puts("Uncompressing LinaOS... ");
 	gunzip();
 	puts("Ok, booting the kernel.\n");
 }

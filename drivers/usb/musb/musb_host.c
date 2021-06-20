@@ -8,14 +8,14 @@
  * Copyright (C) 2008-2009 MontaVista Software, Inc. <source@mvista.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/list.h>
+#include <linaos/dma-mapping.h>
 
 #include "musb_core.h"
 #include "musb_host.h"
@@ -1502,7 +1502,7 @@ static inline int musb_rx_dma_iso_cppi41(struct dma_controller *dma,
 	submit_urb ->
 		- if queue was empty, ProgramEndpoint
 		- first IN token is sent out (by setting ReqPkt)
-	LinuxIsr -> RxReady()
+	LinaOSIsr -> RxReady()
 	/\	=> first packet is received
 	|	- Set in mode 0 (DmaEnab, ~ReqPkt)
 	|		-> DMA Isr (transfer complete) -> RxReady()

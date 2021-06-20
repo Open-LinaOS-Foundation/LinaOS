@@ -2,7 +2,7 @@
 /*
  * Comedi driver for NI PCMCIA MIO E series cards
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -26,8 +26,8 @@
  *	341080a.pdf  DAQCard E Series Register Level Programmer Manual
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
 
 #include "../comedi_pcmcia.h"
 #include "ni_stc.h"

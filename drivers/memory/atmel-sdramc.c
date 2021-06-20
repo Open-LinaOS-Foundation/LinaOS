@@ -7,12 +7,12 @@
  * Copyright (C) 2014 Atmel
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
 
 struct at91_ramc_caps {
 	bool has_ddrck;

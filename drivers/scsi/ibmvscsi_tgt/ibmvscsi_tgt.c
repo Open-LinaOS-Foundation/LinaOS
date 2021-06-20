@@ -8,20 +8,20 @@
  * Copyright (C) 2005-2011 FUJITA Tomonori <tomof@acm.org>
  * Copyright (C) 2010 Nicholas A. Bellinger <nab@kernel.org>
  *
- * Authors: Bryant G. Ly <bryantly@linux.vnet.ibm.com>
- * Authors: Michael Cyr <mikecyr@linux.vnet.ibm.com>
+ * Authors: Bryant G. Ly <bryantly@linaos.vnet.ibm.com>
+ * Authors: Michael Cyr <mikecyr@linaos.vnet.ibm.com>
  *
  ****************************************************************************/
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
 
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>
@@ -4084,7 +4084,7 @@ static struct vio_driver ibmvscsis_driver = {
  * ibmvscsis_init() - Kernel Module initialization
  *
  * Note: vio_register_driver() registers callback functions, and at least one
- * of those callback functions calls TCM - Linux IO Target Subsystem, thus
+ * of those callback functions calls TCM - LinaOS IO Target Subsystem, thus
  * the SCSI Target template must be registered before vio_register_driver()
  * is called.
  */

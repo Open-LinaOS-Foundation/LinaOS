@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ide.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/ide.h>
+#include <linaos/scatterlist.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
 
 /**
  *	config_drive_for_dma	-	attempt to activate IDE DMA

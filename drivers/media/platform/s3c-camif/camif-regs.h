@@ -9,7 +9,7 @@
 #ifndef CAMIF_REGS_H_
 #define CAMIF_REGS_H_
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #include "camif-core.h"
 #include <media/drv-intf/s3c_camif.h>

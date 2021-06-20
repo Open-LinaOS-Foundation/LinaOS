@@ -19,10 +19,10 @@
 #ifndef _DVB_DEMUX_H_
 #define _DVB_DEMUX_H_
 
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
+#include <linaos/time.h>
+#include <linaos/timer.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
 
 #include <media/demux.h>
 

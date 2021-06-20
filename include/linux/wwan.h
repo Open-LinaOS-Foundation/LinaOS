@@ -4,9 +4,9 @@
 #ifndef __WWAN_H
 #define __WWAN_H
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
 
 /**
  * enum wwan_port_type - WWAN port types

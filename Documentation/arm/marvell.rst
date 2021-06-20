@@ -3,9 +3,9 @@ ARM Marvell SoCs
 ================
 
 This document lists all the ARM Marvell SoCs that are currently
-supported in mainline by the Linux kernel. As the Marvell families of
+supported in mainline by the LinaOS kernel. As the Marvell families of
 SoCs are large and complex, it is hard to understand where the support
-for a particular SoC is available in the Linux kernel. This document
+for a particular SoC is available in the LinaOS kernel. This document
 tries to help in understanding where those SoCs are supported, and to
 match them with their corresponding public datasheet, when available.
 
@@ -27,9 +27,9 @@ Orion family
         - 88F6183
   Core:
 	Feroceon 88fr331 (88f51xx) or 88fr531-vd (88f52xx) ARMv5 compatible
-  Linux kernel mach directory:
+  LinaOS kernel mach directory:
 	arch/arm/mach-orion5x
-  Linux kernel plat directory:
+  LinaOS kernel plat directory:
 	arch/arm/plat-orion
 
 Kirkwood family
@@ -67,9 +67,9 @@ Kirkwood family
 	https://web.archive.org/web/20160513194943/http://www.marvell.com/embedded-processors/kirkwood/
   Core:
 	Feroceon 88fr131 ARMv5 compatible
-  Linux kernel mach directory:
+  LinaOS kernel mach directory:
 	arch/arm/mach-mvebu
-  Linux kernel plat directory:
+  LinaOS kernel plat directory:
 	none
 
 Discovery family
@@ -89,14 +89,14 @@ Discovery family
 
         - MV76100
 
-                Not supported by the Linux kernel.
+                Not supported by the LinaOS kernel.
 
   Core:
 	Feroceon 88fr571-vd ARMv5 compatible
 
-  Linux kernel mach directory:
+  LinaOS kernel mach directory:
 	arch/arm/mach-mv78xx0
-  Linux kernel plat directory:
+  LinaOS kernel plat directory:
 	arch/arm/plat-orion
 
 EBU Armada family
@@ -165,9 +165,9 @@ EBU Armada family
   Core:
 	Sheeva ARMv7 compatible Dual-core or Quad-core PJ4B-MP
 
-  Linux kernel mach directory:
+  LinaOS kernel mach directory:
 	arch/arm/mach-mvebu
-  Linux kernel plat directory:
+  LinaOS kernel plat directory:
 	none
 
 EBU Armada family ARMv8
@@ -244,9 +244,9 @@ Avanta family
   Core:
 	ARMv5 compatible
 
-  Linux kernel mach directory:
+  LinaOS kernel mach directory:
 	no code in mainline yet, planned for the future
-  Linux kernel plat directory:
+  LinaOS kernel plat directory:
 	no code in mainline yet, planned for the future
 
 Storage family
@@ -261,7 +261,7 @@ Storage family
   Core:
 	Sheeva ARMv7 comatible Quad-core PJ4C
 
-  (not supported in upstream Linux kernel)
+  (not supported in upstream LinaOS kernel)
 
 Dove family (application processor)
 -----------------------------------
@@ -332,9 +332,9 @@ PXA 2xx/3xx/93x/95x family
       common with the other (Kirkwood, Dove, etc.) families of Marvell
       SoCs, except with the MMP/MMP2 family of SoCs.
 
-   Linux kernel mach directory:
+   LinaOS kernel mach directory:
 	arch/arm/mach-pxa
-   Linux kernel plat directory:
+   LinaOS kernel plat directory:
 	arch/arm/plat-pxa
 
 MMP/MMP2/MMP3 family (communication processor)
@@ -364,13 +364,13 @@ MMP/MMP2/MMP3 family (communication processor)
 	     - Product Brief	    : https://web.archive.org/web/20120824055155/http://www.marvell.com/application-processors/armada/pxa2128/assets/Marvell-ARMADA-PXA2128-SoC-PB.pdf
 	     - Application processor only
 	     - Core: Dual-core ARMv7 compatible Sheeva PJ4C core
-	- PXA960/PXA968/PXA978 (Linux support not upstream)
+	- PXA960/PXA968/PXA978 (LinaOS support not upstream)
 	     - Application processor with Communication Processor
 	     - Core: ARMv7 compatible Sheeva PJ4 core
-	- PXA986/PXA988 (Linux support not upstream)
+	- PXA986/PXA988 (LinaOS support not upstream)
 	     - Application processor with Communication Processor
 	     - Core: Dual-core ARMv7 compatible Sheeva PJ4B-MP core
-	- PXA1088/PXA1920 (Linux support not upstream)
+	- PXA1088/PXA1920 (LinaOS support not upstream)
 	     - Application processor with Communication Processor
 	     - Core: quad-core ARMv7 Cortex-A7
 	- PXA1908/PXA1928/PXA1936
@@ -387,16 +387,16 @@ MMP/MMP2/MMP3 family (communication processor)
       common with the other (Kirkwood, Dove, etc.) families of Marvell
       SoCs, except with the PXA family of SoCs listed above.
 
-   Linux kernel mach directory:
+   LinaOS kernel mach directory:
 	arch/arm/mach-mmp
-   Linux kernel plat directory:
+   LinaOS kernel plat directory:
 	arch/arm/plat-pxa
 
 Berlin family (Multimedia Solutions)
 -------------------------------------
 
   - Flavors:
-	- 88DE3010, Armada 1000 (no Linux support)
+	- 88DE3010, Armada 1000 (no LinaOS support)
 		- Core:		Marvell PJ1 (ARMv5TE), Dual-core
 		- Product Brief:	http://www.marvell.com.cn/digital-entertainment/assets/armada_1000_pb.pdf
 	- 88DE3005, Armada 1500 Mini

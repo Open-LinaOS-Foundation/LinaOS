@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *    Hypervisor filesystem for Linux on s390. Diag 204 and 224
+ *    Hypervisor filesystem for LinaOS on s390. Diag 204 and 224
  *    implementation.
  *
  *    Copyright IBM Corp. 2006, 2008
@@ -10,12 +10,12 @@
 #define KMSG_COMPONENT "hypfs"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm.h>
 #include <asm/diag.h>
 #include <asm/ebcdic.h>
 #include "hypfs.h"

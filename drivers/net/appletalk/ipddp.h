@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *	ipddp.h: Header for IP-over-DDP driver for Linux.
+ *	ipddp.h: Header for IP-over-DDP driver for LinaOS.
  */
 
 #ifndef __LINUX_IPDDP_H

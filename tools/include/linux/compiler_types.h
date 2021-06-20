@@ -15,7 +15,7 @@
 
 /* Compiler specific macros. */
 #ifdef __GNUC__
-#include <linux/compiler-gcc.h>
+#include <linaos/compiler-gcc.h>
 #endif
 
 #endif /* __LINUX_COMPILER_TYPES_H */

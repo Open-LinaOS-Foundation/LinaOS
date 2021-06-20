@@ -60,7 +60,7 @@ Description:    Allows the root user to read or write directly through the
                 device's PCI bar. Writing to this file generates a write
                 transaction while reading from the file generates a read
                 transaction. This custom interface is needed (instead of using
-                the generic Linux user-space PCI mapping) because the DDR bar
+                the generic LinaOS user-space PCI mapping) because the DDR bar
                 is very small compared to the DDR memory and only the driver can
                 move the bar before and after the transaction.
 
@@ -75,7 +75,7 @@ Description:    Allows the root user to read or write 64 bit data directly
                 through the device's PCI bar. Writing to this file generates a
                 write transaction while reading from the file generates a read
                 transaction. This custom interface is needed (instead of using
-                the generic Linux user-space PCI mapping) because the DDR bar
+                the generic LinaOS user-space PCI mapping) because the DDR bar
                 is very small compared to the DDR memory and only the driver can
                 move the bar before and after the transaction.
 
@@ -91,7 +91,7 @@ Description:    Allows the root user to read from the device's internal
                 This property is a binary blob that contains the result of the
                 DMA transfer.
                 This custom interface is needed (instead of using the generic
-                Linux user-space PCI mapping) because the amount of internal
+                LinaOS user-space PCI mapping) because the amount of internal
                 memory is huge (>32GB) and reading it via the PCI bar will take
                 a very long time.
                 This interface doesn't support concurrency in the same device.

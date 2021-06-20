@@ -7,12 +7,12 @@
 //
 // Based on mach-s3c64xx/setup-sdhci-gpio.c
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/gpio.h>
 
 #include "regs-gpio.h"
 #include "gpio-samsung.h"

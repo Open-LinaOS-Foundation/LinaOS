@@ -396,7 +396,7 @@ patternProperties:
             default: 10
             description: Specifies the threshold for the event.
 
-          linux,code:
+          linaos,code:
             $ref: /schemas/types.yaml#/definitions/uint32
             description: Numeric key or switch code associated with the event.
 
@@ -421,7 +421,7 @@ patternProperties:
             default: 4
             description: Specifies the hysteresis for the event.
 
-          linux,code:
+          linaos,code:
             $ref: /schemas/types.yaml#/definitions/uint32
             description: Numeric key or switch code associated with the event.
 
@@ -446,7 +446,7 @@ patternProperties:
             default: 0
             description: Specifies the hysteresis for the event.
 
-          linux,code:
+          linaos,code:
             $ref: /schemas/types.yaml#/definitions/uint32
             description: Numeric key or switch code associated with the event.
 
@@ -491,7 +491,7 @@ examples:
                             reg = <0x0>;
 
                             event-prox {
-                                    linux,code = <KEY_POWER>;
+                                    linaos,code = <KEY_POWER>;
                             };
                     };
 
@@ -546,7 +546,7 @@ examples:
                             azoteq,ati-target = <320>;
 
                             event-touch {
-                                    linux,code = <SW_LID>;
+                                    linaos,code = <SW_LID>;
                             };
                     };
             };

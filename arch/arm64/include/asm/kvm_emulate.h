@@ -11,7 +11,7 @@
 #ifndef __ARM64_KVM_EMULATE_H__
 #define __ARM64_KVM_EMULATE_H__
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 #include <asm/debug-monitors.h>
 #include <asm/esr.h>

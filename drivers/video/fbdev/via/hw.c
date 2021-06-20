@@ -5,7 +5,7 @@
 
  */
 
-#include <linux/via-core.h>
+#include <linaos/via-core.h>
 #include "global.h"
 #include "via_clock.h"
 

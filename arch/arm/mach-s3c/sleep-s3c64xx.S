@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* linux/arch/arm/plat-s3c64xx/sleep.S
+/* linaos/arch/arm/plat-s3c64xx/sleep.S
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *
  * S3C64XX CPU sleep code
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include "map.h"
 

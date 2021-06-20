@@ -4,10 +4,10 @@
  * because MTRRs can span up to 40 bits (36bits on most modern x86)
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
 
 #include <asm/processor-flags.h>
 #include <asm/cpufeature.h>

@@ -4,7 +4,7 @@
  * Created with information from:
  *	DECstation 3100 Desktop Workstation Functional Specification
  *	DECstation 5000/200 KN02 System Module Functional Specification
- *	mipsel-linux-objdump --disassemble vmunix | grep "wbflush" :-)
+ *	mipsel-linaos-objdump --disassemble vmunix | grep "wbflush" :-)
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -14,8 +14,8 @@
  * Copyright (C) 2002 Maciej W. Rozycki
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
 
 #include <asm/bootinfo.h>
 #include <asm/wbflush.h>

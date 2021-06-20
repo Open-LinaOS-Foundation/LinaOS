@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /* 
- *    Copyright (C) 2001 Matthew Wilcox <willy at parisc-linux.org>
- *    Copyright (C) 2003 Carlos O'Donell <carlos at parisc-linux.org>
+ *    Copyright (C) 2001 Matthew Wilcox <willy at parisc-linaos.org>
+ *    Copyright (C) 2003 Carlos O'Donell <carlos at parisc-linaos.org>
  */
 #ifndef _PARISC64_KERNEL_SIGNAL32_H
 #define _PARISC64_KERNEL_SIGNAL32_H
 
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 /* 32-bit ucontext as seen from an 64-bit kernel */
 struct compat_ucontext {
@@ -56,7 +56,7 @@ struct compat_rt_sigframe {
 /*
  * The 32-bit ABI wants at least 48 bytes for a function call frame:
  * 16 bytes for arg0-arg3, and 32 bytes for magic (the only part of
- * which Linux/parisc uses is sp-20 for the saved return pointer...)
+ * which LinaOS/parisc uses is sp-20 for the saved return pointer...)
  * Then, the stack pointer must be rounded to a cache line (64 bytes).
  */
 #define SIGFRAME32              64

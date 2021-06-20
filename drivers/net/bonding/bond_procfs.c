@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/proc_fs.h>
-#include <linux/ethtool.h>
-#include <linux/export.h>
+#include <linaos/proc_fs.h>
+#include <linaos/ethtool.h>
+#include <linaos/export.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/bonding.h>

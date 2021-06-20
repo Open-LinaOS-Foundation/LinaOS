@@ -5,11 +5,11 @@
  *  Copyright (C) 2004 Aurelien Alleaume <slts@free.fr>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/videodev2.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/videodev2.h>
 
 #include "pvrusb2-hdw.h"
 #include "pvrusb2-devattr.h"

@@ -27,16 +27,16 @@
  * TODO:
  * - Allocate more than order 0 pages to avoid too much linear map splitting.
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/miscdevice.h>
-#include <linux/pm.h>
-#include <linux/agp_backend.h>
-#include <linux/agpgart.h>
-#include <linux/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/pagemap.h>
+#include <linaos/miscdevice.h>
+#include <linaos/pm.h>
+#include <linaos/agp_backend.h>
+#include <linaos/agpgart.h>
+#include <linaos/vmalloc.h>
 #include <asm/io.h>
 #include "agp.h"
 
@@ -335,7 +335,7 @@ EXPORT_SYMBOL(agp_try_unsupported_boot);
 static int __init agp_init(void)
 {
 	if (!agp_off)
-		printk(KERN_INFO "Linux agpgart interface v%d.%d\n",
+		printk(KERN_INFO "LinaOS agpgart interface v%d.%d\n",
 			AGPGART_VERSION_MAJOR, AGPGART_VERSION_MINOR);
 	return 0;
 }

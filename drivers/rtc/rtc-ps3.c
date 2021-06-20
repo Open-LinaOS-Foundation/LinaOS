@@ -5,10 +5,10 @@
  * Copyright 2009 Sony Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
 
 #include <asm/lv1call.h>
 #include <asm/ps3.h>

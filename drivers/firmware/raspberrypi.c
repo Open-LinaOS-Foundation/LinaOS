@@ -6,13 +6,13 @@
  * Copyright © 2015 Broadcom
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/kref.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kref.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 #include <soc/bcm2835/raspberrypi-firmware.h>
 
 #define MBOX_MSG(chan, data28)		(((data28) & ~0xf) | ((chan) & 0xf))

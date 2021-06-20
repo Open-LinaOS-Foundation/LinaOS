@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netfilter.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/netfilter.h>
 #include <net/flow_offload.h>
 #include <net/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables_offload.h>

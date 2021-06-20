@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2016-2018, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _DPU_CORE_PERF_H_
 #define _DPU_CORE_PERF_H_
 
-#include <linux/types.h>
-#include <linux/dcache.h>
-#include <linux/mutex.h>
+#include <linaos/types.h>
+#include <linaos/dcache.h>
+#include <linaos/mutex.h>
 #include <drm/drm_crtc.h>
 
 #include "dpu_hw_catalog.h"

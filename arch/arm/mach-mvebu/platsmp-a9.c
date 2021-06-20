@@ -12,11 +12,11 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/smp.h>
-#include <linux/mbus.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/smp.h>
+#include <linaos/mbus.h>
 #include <asm/smp_scu.h>
 #include <asm/smp_plat.h>
 #include "common.h"

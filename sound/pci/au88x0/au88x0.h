@@ -5,8 +5,8 @@
 #ifndef __SOUND_AU88X0_H
 #define __SOUND_AU88X0_H
 
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/rawmidi.h>

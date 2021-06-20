@@ -66,17 +66,17 @@
 #include <signal.h>
 #include <stdlib.h>
 #include <string.h>
-#include <linux/err.h>
-#include <linux/filter.h>
-#include <linux/kernel.h>
-#include <linux/random.h>
-#include <linux/stringify.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <linaos/err.h>
+#include <linaos/filter.h>
+#include <linaos/kernel.h>
+#include <linaos/random.h>
+#include <linaos/stringify.h>
+#include <linaos/time64.h>
+#include <linaos/zalloc.h>
 #include <fcntl.h>
 #include <sys/sysmacros.h>
 
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 #include <perf/mmap.h>
 
 #ifndef O_CLOEXEC
@@ -753,17 +753,17 @@ static const char *fcntl_cmds[] = {
 };
 static DEFINE_STRARRAY(fcntl_cmds, "F_");
 
-static const char *fcntl_linux_specific_cmds[] = {
+static const char *fcntl_linaos_specific_cmds[] = {
 	"SETLEASE", "GETLEASE", "NOTIFY", [5] =	"CANCELLK", "DUPFD_CLOEXEC",
 	"SETPIPE_SZ", "GETPIPE_SZ", "ADD_SEALS", "GET_SEALS",
 	"GET_RW_HINT", "SET_RW_HINT", "GET_FILE_RW_HINT", "SET_FILE_RW_HINT",
 };
 
-static DEFINE_STRARRAY_OFFSET(fcntl_linux_specific_cmds, "F_", F_LINUX_SPECIFIC_BASE);
+static DEFINE_STRARRAY_OFFSET(fcntl_linaos_specific_cmds, "F_", F_LINUX_SPECIFIC_BASE);
 
 static struct strarray *fcntl_cmds_arrays[] = {
 	&strarray__fcntl_cmds,
-	&strarray__fcntl_linux_specific_cmds,
+	&strarray__fcntl_linaos_specific_cmds,
 };
 
 static DEFINE_STRARRAYS(fcntl_cmds_arrays);

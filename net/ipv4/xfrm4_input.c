@@ -10,11 +10,11 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv4.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 

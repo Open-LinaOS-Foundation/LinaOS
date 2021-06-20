@@ -7,20 +7,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/printk.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/most.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/printk.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/sched.h>
+#include <linaos/kthread.h>
+#include <linaos/most.h>
 #include "hal.h"
 #include "errors.h"
 #include "sysfs.h"

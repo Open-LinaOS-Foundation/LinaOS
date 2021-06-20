@@ -9,10 +9,10 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 #define dev_fmt pr_fmt
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/mutex.h>
 #include "pciback.h"
 
 #define PCI_SLOT_MAX 32

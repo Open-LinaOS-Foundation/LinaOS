@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2003-2006 Simtec Electronics <linux@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ * Copyright (c) 2003-2006 Simtec Electronics <linaos@simtec.co.uk>
+ *	http://armlinaos.simtec.co.uk/
  */
 
 #ifndef __ARCH_ARM_MACH_S3C24XX_S3C2412_POWER_H

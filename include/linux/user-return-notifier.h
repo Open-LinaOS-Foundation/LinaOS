@@ -4,8 +4,8 @@
 
 #ifdef CONFIG_USER_RETURN_NOTIFIER
 
-#include <linux/list.h>
-#include <linux/sched.h>
+#include <linaos/list.h>
+#include <linaos/sched.h>
 
 struct user_return_notifier {
 	void (*on_user_return)(struct user_return_notifier *urn);

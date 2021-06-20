@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/proc/array.c
+ *  linaos/fs/proc/array.c
  *
  *  Copyright (C) 1992  by Linus Torvalds
  *  based on ideas by Darren Senn
@@ -53,45 +53,45 @@
  *			 :  base.c too.
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/time_namespace.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/tty.h>
-#include <linux/string.h>
-#include <linux/mman.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/task.h>
-#include <linux/sched/cputime.h>
-#include <linux/proc_fs.h>
-#include <linux/ioport.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/signal.h>
-#include <linux/highmem.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/times.h>
-#include <linux/cpuset.h>
-#include <linux/rcupdate.h>
-#include <linux/delayacct.h>
-#include <linux/seq_file.h>
-#include <linux/pid_namespace.h>
-#include <linux/prctl.h>
-#include <linux/ptrace.h>
-#include <linux/tracehook.h>
-#include <linux/string_helpers.h>
-#include <linux/user_namespace.h>
-#include <linux/fs_struct.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/time.h>
+#include <linaos/time_namespace.h>
+#include <linaos/kernel.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/tty.h>
+#include <linaos/string.h>
+#include <linaos/mman.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/numa_balancing.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/proc_fs.h>
+#include <linaos/ioport.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/pagemap.h>
+#include <linaos/swap.h>
+#include <linaos/smp.h>
+#include <linaos/signal.h>
+#include <linaos/highmem.h>
+#include <linaos/file.h>
+#include <linaos/fdtable.h>
+#include <linaos/times.h>
+#include <linaos/cpuset.h>
+#include <linaos/rcupdate.h>
+#include <linaos/delayacct.h>
+#include <linaos/seq_file.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/prctl.h>
+#include <linaos/ptrace.h>
+#include <linaos/tracehook.h>
+#include <linaos/string_helpers.h>
+#include <linaos/user_namespace.h>
+#include <linaos/fs_struct.h>
 
 #include <asm/processor.h>
 #include "internal.h"
@@ -601,7 +601,7 @@ static int do_task_stat(struct seq_file *m, struct pid_namespace *ns,
 	seq_put_decimal_ull(m, " ", esp);
 	seq_put_decimal_ull(m, " ", eip);
 	/* The signal information here is obsolete.
-	 * It must be decimal for Linux 2.0 compatibility.
+	 * It must be decimal for LinaOS 2.0 compatibility.
 	 * Use /proc/#/status for real-time signals.
 	 */
 	seq_put_decimal_ull(m, " ", task->pending.signal.sig[0] & 0x7fffffffUL);

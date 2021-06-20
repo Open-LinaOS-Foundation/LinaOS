@@ -7,8 +7,8 @@
 /*
  * RCU-protected list version
  */
-#include <linux/list.h>
-#include <linux/rcupdate.h>
+#include <linaos/list.h>
+#include <linaos/rcupdate.h>
 
 /*
  * Why is there no list_empty_rcu()?  Because list_empty() serves this

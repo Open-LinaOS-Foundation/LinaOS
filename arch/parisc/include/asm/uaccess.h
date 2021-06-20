@@ -8,8 +8,8 @@
 #include <asm/page.h>
 #include <asm/cache.h>
 
-#include <linux/bug.h>
-#include <linux/string.h>
+#include <linaos/bug.h>
+#include <linaos/string.h>
 
 #define KERNEL_DS	((mm_segment_t){0})
 #define USER_DS 	((mm_segment_t){1})

@@ -11,17 +11,17 @@
  * (find more info at www.hackndev.com)
  */
 
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/memblock.h>
-#include <linux/pda_power.h>
-#include <linux/pwm_backlight.h>
-#include <linux/gpio.h>
-#include <linux/power_supply.h>
-#include <linux/w1-gpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/input.h>
+#include <linaos/memblock.h>
+#include <linaos/pda_power.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/gpio.h>
+#include <linaos/power_supply.h>
+#include <linaos/w1-gpio.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -31,15 +31,15 @@
 #include "pxa27x-udc.h"
 #include <mach/audio.h>
 #include "palmtreo.h"
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/keypad-pxa27x.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/irda-pxaficp.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
 #include "udc.h"
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
 #include <mach/pxa2xx-regs.h>
-#include <linux/platform_data/asoc-palm27x.h>
-#include <linux/platform_data/media/camera-pxa.h>
+#include <linaos/platform_data/asoc-palm27x.h>
+#include <linaos/platform_data/media/camera-pxa.h>
 #include "palm27x.h"
 
 #include <sound/pxa2xx-lib.h>

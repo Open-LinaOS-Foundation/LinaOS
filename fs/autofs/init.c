@@ -3,8 +3,8 @@
  * Copyright 1997-1998 Transmeta Corporation -- All Rights Reserved
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 #include "autofs_i.h"
 
 static struct dentry *autofs_mount(struct file_system_type *fs_type,

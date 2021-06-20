@@ -6,13 +6,13 @@
  ******************************************************************************/
 #define _IOCTL_LINUX_C_
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include <drv_types.h>
 #include <rtw_debug.h>
 #include <rtw_mp.h>
 #include <hal_btcoex.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
 
 #define RTL_IOCTL_WPA_SUPPLICANT	(SIOCIWFIRSTPRIV+30)
 
@@ -932,7 +932,7 @@ static int rtw_wx_get_range(struct net_device *dev,
 	memset(range, 0, sizeof(*range));
 
 	/* Let's try to keep this struct in the same order as in
-	 * linux/include/wireless.h
+	 * linaos/include/wireless.h
 	 */
 
 	/* TODO: See what values we can set, and remove the ones we can't

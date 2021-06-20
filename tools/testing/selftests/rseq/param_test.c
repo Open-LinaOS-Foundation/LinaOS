@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: LGPL-2.1
 #define _GNU_SOURCE
 #include <assert.h>
-#include <linux/membarrier.h>
+#include <linaos/membarrier.h>
 #include <pthread.h>
 #include <sched.h>
 #include <stdatomic.h>

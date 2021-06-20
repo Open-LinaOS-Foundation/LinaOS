@@ -6,4 +6,4 @@
 CA Data Types
 *************
 
-.. kernel-doc:: include/uapi/linux/dvb/ca.h
+.. kernel-doc:: include/uapi/linaos/dvb/ca.h

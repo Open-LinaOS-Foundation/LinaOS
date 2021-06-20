@@ -3,16 +3,16 @@
  * USB Role Switch Support
  *
  * Copyright (C) 2018 Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linaos.intel.com>
  *         Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/usb/role.h>
-#include <linux/property.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linaos/usb/role.h>
+#include <linaos/property.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
 
 static struct class *role_class;
 
@@ -392,7 +392,7 @@ static void __exit usb_roles_exit(void)
 }
 module_exit(usb_roles_exit);
 
-MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linux.intel.com>");
+MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linaos.intel.com>");
 MODULE_AUTHOR("Hans de Goede <hdegoede@redhat.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("USB Role Class");

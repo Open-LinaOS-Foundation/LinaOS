@@ -6,7 +6,7 @@
 #if !defined(_TRACE_HDA_INTEL_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_HDA_INTEL_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(hda_pm,
 	TP_PROTO(struct azx *chip),

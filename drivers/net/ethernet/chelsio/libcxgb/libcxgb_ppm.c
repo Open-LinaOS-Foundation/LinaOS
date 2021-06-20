@@ -37,16 +37,16 @@
 #define DRV_NAME "libcxgb"
 #define pr_fmt(fmt) DRV_NAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/pci.h>
-#include <linux/scatterlist.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/debugfs.h>
+#include <linaos/export.h>
+#include <linaos/list.h>
+#include <linaos/skbuff.h>
+#include <linaos/pci.h>
+#include <linaos/scatterlist.h>
 
 #include "libcxgb_ppm.h"
 

@@ -2,13 +2,13 @@
 /*
  * Atomic operations for the Hexagon architecture
  *
- * Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2013, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _ASM_ATOMIC_H
 #define _ASM_ATOMIC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/cmpxchg.h>
 #include <asm/barrier.h>
 

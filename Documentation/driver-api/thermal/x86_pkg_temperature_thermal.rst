@@ -8,7 +8,7 @@ Supported chips:
 
 (Verify using: CPUID.06H:EAX[bit 6] =1)
 
-Authors: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
+Authors: Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>
 
 Reference
 ---------

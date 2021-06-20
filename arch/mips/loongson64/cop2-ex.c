@@ -8,14 +8,14 @@
  *
  * based on arch/mips/cavium-octeon/cpu.c
  * Copyright (C) 2009 Wind River Systems,
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@linaos-mips.org>
  */
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/notifier.h>
-#include <linux/ptrace.h>
-#include <linux/uaccess.h>
-#include <linux/sched/signal.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/notifier.h>
+#include <linaos/ptrace.h>
+#include <linaos/uaccess.h>
+#include <linaos/sched/signal.h>
 
 #include <asm/fpu.h>
 #include <asm/cop2.h>

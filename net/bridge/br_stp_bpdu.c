@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Spanning tree protocol; BPDU handling
- *	Linux ethernet bridge
+ *	LinaOS ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/etherdevice.h>
-#include <linux/llc.h>
-#include <linux/slab.h>
-#include <linux/pkt_sched.h>
+#include <linaos/kernel.h>
+#include <linaos/netfilter_bridge.h>
+#include <linaos/etherdevice.h>
+#include <linaos/llc.h>
+#include <linaos/slab.h>
+#include <linaos/pkt_sched.h>
 #include <net/net_namespace.h>
 #include <net/llc.h>
 #include <net/llc_pdu.h>

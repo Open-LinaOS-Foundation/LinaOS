@@ -7,11 +7,11 @@
  * Author: Roland Stigge <stigge@antcom.de>
  */
 
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/i2c.h>
-#include <linux/usb/phy.h>
-#include <linux/usb/isp1301.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/i2c.h>
+#include <linaos/usb/phy.h>
+#include <linaos/usb/isp1301.h>
 
 #define DRV_NAME		"isp1301"
 

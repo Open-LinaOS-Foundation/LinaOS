@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/ext4/ioctl.c
+ * linaos/fs/ext4/ioctl.c
  *
  * Copyright (C) 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,22 +8,22 @@
  * Universite Pierre et Marie Curie (Paris VI)
  */
 
-#include <linux/fs.h>
-#include <linux/capability.h>
-#include <linux/time.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/file.h>
-#include <linux/quotaops.h>
-#include <linux/random.h>
-#include <linux/uuid.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/iversion.h>
-#include <linux/fileattr.h>
+#include <linaos/fs.h>
+#include <linaos/capability.h>
+#include <linaos/time.h>
+#include <linaos/compat.h>
+#include <linaos/mount.h>
+#include <linaos/file.h>
+#include <linaos/quotaops.h>
+#include <linaos/random.h>
+#include <linaos/uuid.h>
+#include <linaos/uaccess.h>
+#include <linaos/delay.h>
+#include <linaos/iversion.h>
+#include <linaos/fileattr.h>
 #include "ext4_jbd2.h"
 #include "ext4.h"
-#include <linux/fsmap.h>
+#include <linaos/fsmap.h>
 #include "fsmap.h"
 #include <trace/events/ext4.h>
 

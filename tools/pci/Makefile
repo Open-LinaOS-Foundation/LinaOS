@@ -27,11 +27,11 @@ include $(srctree)/tools/build/Makefile.include
 #
 # We need the following to be outside of kernel tree
 #
-$(OUTPUT)include/linux/: ../../include/uapi/linux/
-	mkdir -p $(OUTPUT)include/linux/ 2>&1 || true
-	ln -sf $(CURDIR)/../../include/uapi/linux/pcitest.h $@
+$(OUTPUT)include/linaos/: ../../include/uapi/linaos/
+	mkdir -p $(OUTPUT)include/linaos/ 2>&1 || true
+	ln -sf $(CURDIR)/../../include/uapi/linaos/pcitest.h $@
 
-prepare: $(OUTPUT)include/linux/
+prepare: $(OUTPUT)include/linaos/
 
 PCITEST_IN := $(OUTPUT)pcitest-in.o
 $(PCITEST_IN): prepare FORCE

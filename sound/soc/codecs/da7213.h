@@ -10,9 +10,9 @@
 #ifndef _DA7213_H
 #define _DA7213_H
 
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
 #include <sound/da7213.h>
 
 /*

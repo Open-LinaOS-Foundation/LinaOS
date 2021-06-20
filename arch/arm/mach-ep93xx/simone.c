@@ -10,17 +10,17 @@
  *   MMC support by Peter Ivanov <ivanovp@gmail.com>, 2007
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/mmc/host.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/platform_data/video-ep93xx.h>
-#include <linux/platform_data/spi-ep93xx.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/mmc/host.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/mmc_spi.h>
+#include <linaos/platform_data/video-ep93xx.h>
+#include <linaos/platform_data/spi-ep93xx.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
 
 #include "hardware.h"
 #include "gpio-ep93xx.h"

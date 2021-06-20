@@ -3,8 +3,8 @@
  * Copyright (c) 2014-2015 Hisilicon Limited.
  */
 
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/of_mdio.h>
+#include <linaos/io-64-nonatomic-hi-lo.h>
+#include <linaos/of_mdio.h>
 #include "hns_dsaf_main.h"
 #include "hns_dsaf_mac.h"
 #include "hns_dsaf_xgmac.h"

@@ -9,7 +9,7 @@
  * Authors: Sanjay Lal <sanjayl@kymasys.com>
  */
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 char *kvm_cop0_str[N_MIPS_COPROC_REGS] = {
 	"Index",

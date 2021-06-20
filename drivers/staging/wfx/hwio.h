@@ -8,7 +8,7 @@
 #ifndef WFX_HWIO_H
 #define WFX_HWIO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct wfx_dev;
 

@@ -31,7 +31,7 @@ This facility is available to and expected to be used by the cache backends,
 and FS-Cache will create operations and pass them off to the appropriate cache
 backend for completion.
 
-To make use of this facility, <linux/fscache-cache.h> should be #included.
+To make use of this facility, <linaos/fscache-cache.h> should be #included.
 
 
 Operation Record Initialisation

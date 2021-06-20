@@ -13,18 +13,18 @@
  *	Greg Kroah-Hartman	<greg@kroah.com>
  */
 
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/kobject.h>
-#include <linux/export.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/uidgid.h>
-#include <linux/uuid.h>
-#include <linux/ctype.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/kobject.h>
+#include <linaos/export.h>
+#include <linaos/kmod.h>
+#include <linaos/slab.h>
+#include <linaos/socket.h>
+#include <linaos/skbuff.h>
+#include <linaos/netlink.h>
+#include <linaos/uidgid.h>
+#include <linaos/uuid.h>
+#include <linaos/ctype.h>
 #include <net/sock.h>
 #include <net/netlink.h>
 #include <net/net_namespace.h>
@@ -47,7 +47,7 @@ static LIST_HEAD(uevent_sock_list);
 /* This lock protects uevent_seqnum and uevent_sock_list */
 static DEFINE_MUTEX(uevent_sock_mutex);
 
-/* the strings here must match the enum in include/linux/kobject.h */
+/* the strings here must match the enum in include/linaos/kobject.h */
 static const char *kobject_actions[] = {
 	[KOBJ_ADD] =		"add",
 	[KOBJ_REMOVE] =		"remove",

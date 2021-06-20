@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _XT_RPATH_H
 #define _XT_RPATH_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum {
 	XT_RPFILTER_LOOSE = 1 << 0,

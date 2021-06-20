@@ -6,9 +6,9 @@
 // Copyright (C) 2008 Secret Lab Technologies Ltd.
 // Copyright (C) 2009 Jon Smirl, Digispeaker
 
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
 
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

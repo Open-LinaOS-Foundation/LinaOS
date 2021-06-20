@@ -19,7 +19,7 @@
 #include "xfs_log.h"
 #include "xfs_error.h"
 
-#include <linux/iversion.h>
+#include <linaos/iversion.h>
 
 kmem_zone_t	*xfs_ili_zone;		/* inode log item zone */
 

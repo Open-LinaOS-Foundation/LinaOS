@@ -4,17 +4,17 @@
  * Copyright (c) 2009 Intel Corporation
  */
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-event.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_data/media/timb_radio.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/media/timb_radio.h>
 
 #define DRIVER_NAME "timb-radio"
 

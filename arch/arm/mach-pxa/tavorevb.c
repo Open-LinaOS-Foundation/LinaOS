@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/tavorevb.c
+ *  linaos/arch/arm/mach-pxa/tavorevb.c
  *
  *  Support for the Marvell PXA930 Evaluation Board
  *
  *  Copyright (C) 2007-2008 Marvell International Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/smc91x.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/gpio.h>
+#include <linaos/smc91x.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 
 #include "pxa930.h"
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/keypad-pxa27x.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
 
 #include "devices.h"
 #include "generic.h"

@@ -8,10 +8,10 @@
 #ifndef _LINUX_THREAD_INFO_H
 #define _LINUX_THREAD_INFO_H
 
-#include <linux/types.h>
-#include <linux/bug.h>
-#include <linux/restart_block.h>
-#include <linux/errno.h>
+#include <linaos/types.h>
+#include <linaos/bug.h>
+#include <linaos/restart_block.h>
+#include <linaos/errno.h>
 
 #ifdef CONFIG_THREAD_INFO_IN_TASK
 /*
@@ -23,7 +23,7 @@
 #define current_thread_info() ((struct thread_info *)current)
 #endif
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 /*
  * For per-arch arch_within_stack_frames() implementations, defined in

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *      linux/arch/alpha/kernel/core_polaris.c
+ *      linaos/arch/alpha/kernel/core_polaris.c
  *
  * POLARIS chip-specific code
  */
@@ -10,10 +10,10 @@
 #include <asm/core_polaris.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
 
 #include <asm/ptrace.h>
 

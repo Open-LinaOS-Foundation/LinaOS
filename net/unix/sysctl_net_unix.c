@@ -5,9 +5,9 @@
  * Authors:	Mike Shaver.
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/sysctl.h>
 
 #include <net/af_unix.h>
 

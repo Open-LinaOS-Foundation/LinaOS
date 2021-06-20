@@ -8,27 +8,27 @@
 
 #define pr_fmt(fmt) "kasan: " fmt
 
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/kmemleak.h>
-#include <linux/linkage.h>
-#include <linux/memblock.h>
-#include <linux/memory.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/slab.h>
-#include <linux/stacktrace.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/vmalloc.h>
-#include <linux/bug.h>
+#include <linaos/export.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/kasan.h>
+#include <linaos/kernel.h>
+#include <linaos/kmemleak.h>
+#include <linaos/linkage.h>
+#include <linaos/memblock.h>
+#include <linaos/memory.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/printk.h>
+#include <linaos/random.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/slab.h>
+#include <linaos/stacktrace.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/vmalloc.h>
+#include <linaos/bug.h>
 
 #include "kasan.h"
 #include "../slab.h"

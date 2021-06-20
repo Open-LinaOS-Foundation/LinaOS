@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - COM90xx chipset (memory-mapped buffers)
+ * LinaOS ARCnet driver - COM90xx chipset (memory-mapped buffers)
  *
  * Written 1994-1999 by Avery Pennarun.
  * Written 1999 by Martin Mares <mj@ucw.cz>.
@@ -27,15 +27,15 @@
 
 #define pr_fmt(fmt) "arcnet:" KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 
 #include "arcdevice.h"
 #include "com9026.h"

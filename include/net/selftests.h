@@ -2,7 +2,7 @@
 #ifndef _NET_SELFTESTS
 #define _NET_SELFTESTS
 
-#include <linux/ethtool.h>
+#include <linaos/ethtool.h>
 
 #if IS_ENABLED(CONFIG_NET_SELFTESTS)
 

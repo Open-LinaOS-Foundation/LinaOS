@@ -7,9 +7,9 @@
  * Copyright (C) 1999  Niibe Yutaka
  * Copyright (C) 2002 - 2007 Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/io.h>
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
 

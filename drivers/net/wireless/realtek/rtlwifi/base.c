@@ -9,9 +9,9 @@
 #include "ps.h"
 #include "regd.h"
 #include "pci.h"
-#include <linux/ip.h>
-#include <linux/module.h>
-#include <linux/udp.h>
+#include <linaos/ip.h>
+#include <linaos/module.h>
+#include <linaos/udp.h>
 
 /*
  *NOTICE!!!: This file will be very big, we should

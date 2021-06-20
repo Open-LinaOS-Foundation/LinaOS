@@ -224,25 +224,25 @@
 
  **************************************************************************/
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <asm/irq.h>
-#include <linux/io.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/isapnp.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/io.h>
+#include <linaos/blkdev.h>
+#include <linaos/completion.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/wait.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/proc_fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/isapnp.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 #include <scsi/scsicam.h>
 
 #include "scsi.h"

@@ -3,15 +3,15 @@
 // Copyright (C) 2012 ARM Ltd.
 // Copyright (C) 2013-2017 Andes Technology Corporation
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/mman.h>
-#include <linux/nodemask.h>
-#include <linux/initrd.h>
-#include <linux/highmem.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/swap.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/mman.h>
+#include <linaos/nodemask.h>
+#include <linaos/initrd.h>
+#include <linaos/highmem.h>
 
 #include <asm/sections.h>
 #include <asm/setup.h>
@@ -56,7 +56,7 @@ static void __init map_ram(void)
 	pmd_t *pme;
 	pte_t *pte;
 	/* These mark extents of read-only kernel pages...
-	 * ...from vmlinux.lds.S
+	 * ...from vmlinaos.lds.S
 	 */
 
 	p = (u32) memblock_start_of_DRAM() & PAGE_MASK;

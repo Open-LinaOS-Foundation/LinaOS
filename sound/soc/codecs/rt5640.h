@@ -9,8 +9,8 @@
 #ifndef _RT5640_H
 #define _RT5640_H
 
-#include <linux/clk.h>
-#include <linux/workqueue.h>
+#include <linaos/clk.h>
+#include <linaos/workqueue.h>
 #include <dt-bindings/sound/rt5640.h>
 
 /* Info */

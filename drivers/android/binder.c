@@ -42,32 +42,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fdtable.h>
-#include <linux/file.h>
-#include <linux/freezer.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nsproxy.h>
-#include <linux/poll.h>
-#include <linux/debugfs.h>
-#include <linux/rbtree.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/pid_namespace.h>
-#include <linux/security.h>
-#include <linux/spinlock.h>
-#include <linux/ratelimit.h>
-#include <linux/syscalls.h>
-#include <linux/task_work.h>
-#include <linux/sizes.h>
+#include <linaos/fdtable.h>
+#include <linaos/file.h>
+#include <linaos/freezer.h>
+#include <linaos/fs.h>
+#include <linaos/list.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/nsproxy.h>
+#include <linaos/poll.h>
+#include <linaos/debugfs.h>
+#include <linaos/rbtree.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
+#include <linaos/seq_file.h>
+#include <linaos/string.h>
+#include <linaos/uaccess.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/security.h>
+#include <linaos/spinlock.h>
+#include <linaos/ratelimit.h>
+#include <linaos/syscalls.h>
+#include <linaos/task_work.h>
+#include <linaos/sizes.h>
 
-#include <uapi/linux/android/binder.h>
+#include <uapi/linaos/android/binder.h>
 
 #include <asm/cacheflush.h>
 

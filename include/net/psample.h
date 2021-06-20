@@ -2,8 +2,8 @@
 #ifndef __NET_PSAMPLE_H
 #define __NET_PSAMPLE_H
 
-#include <uapi/linux/psample.h>
-#include <linux/list.h>
+#include <uapi/linaos/psample.h>
+#include <linaos/list.h>
 
 struct psample_group {
 	struct list_head list;

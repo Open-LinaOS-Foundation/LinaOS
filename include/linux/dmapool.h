@@ -1,5 +1,5 @@
 /*
- * include/linux/dmapool.h
+ * include/linaos/dmapool.h
  *
  * Allocation pools for DMAable (coherent) memory.
  *
@@ -11,7 +11,7 @@
 #ifndef LINUX_DMAPOOL_H
 #define	LINUX_DMAPOOL_H
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 #include <asm/io.h>
 
 struct device;

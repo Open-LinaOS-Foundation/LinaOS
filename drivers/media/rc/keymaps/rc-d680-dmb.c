@@ -6,7 +6,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static struct rc_map_table rc_map_d680_dmb_table[] = {
 	{ 0x0038, KEY_SWITCHVIDEOMODE },	/* TV/AV */

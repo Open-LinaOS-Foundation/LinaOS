@@ -14,18 +14,18 @@
 
 #define pr_fmt(fmt) "ACPI: PCI: " fmt
 
-#include <linux/syscore_ops.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/pm.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/irq.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/pm.h>
+#include <linaos/pci.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/irq.h>
 
 #include "internal.h"
 

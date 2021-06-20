@@ -10,19 +10,19 @@
  * Author:     Srikar Dronamraju
  */
 
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/tracefs.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/perf_event.h>
-#include <linux/kprobes.h>
-#include <linux/stringify.h>
-#include <linux/limits.h>
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
+#include <linaos/tracefs.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/ptrace.h>
+#include <linaos/perf_event.h>
+#include <linaos/kprobes.h>
+#include <linaos/stringify.h>
+#include <linaos/limits.h>
+#include <linaos/uaccess.h>
+#include <linaos/bitops.h>
 #include <asm/bitsperlong.h>
 
 #include "trace.h"

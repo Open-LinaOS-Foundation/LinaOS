@@ -13,14 +13,14 @@
  *
  */
 
-#include <linux/cec.h>
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/regmap.h>
+#include <linaos/cec.h>
+#include <linaos/dmi.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/regmap.h>
 #include <media/cec.h>
 #include <media/cec-notifier.h>
 

@@ -20,7 +20,7 @@
 #include <crypto/aead.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/internal/hash.h>
-#include <linux/tls.h>
+#include <linaos/tls.h>
 #include <net/tls.h>
 #include <net/tls_toe.h>
 

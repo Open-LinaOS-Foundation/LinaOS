@@ -54,5 +54,5 @@
 };
 
 &ir {
-	linux,rc-map-name = "rc-wetek-hub";
+	linaos,rc-map-name = "rc-wetek-hub";
 };

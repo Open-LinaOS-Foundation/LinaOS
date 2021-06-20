@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2012-2019 ARM Limited (or its affiliates). */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 #include <crypto/algapi.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/internal/des.h>
@@ -1134,7 +1134,7 @@ static const struct cc_alg_template skcipher_algs[] = {
 		.sec_func = true,
 	},
 	{
-		/* See https://www.mail-archive.com/linux-crypto@vger.kernel.org/msg40576.html
+		/* See https://www.mail-archive.com/linaos-crypto@vger.kernel.org/msg40576.html
 		 * for the reason why this differs from the generic
 		 * implementation.
 		 */
@@ -1467,7 +1467,7 @@ int cc_cipher_alloc(struct cc_drvdata *drvdata)
 
 	INIT_LIST_HEAD(&drvdata->alg_list);
 
-	/* Linux crypto */
+	/* LinaOS crypto */
 	dev_dbg(dev, "Number of algorithms = %zu\n",
 		ARRAY_SIZE(skcipher_algs));
 	for (alg = 0; alg < ARRAY_SIZE(skcipher_algs); alg++) {

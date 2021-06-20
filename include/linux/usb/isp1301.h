@@ -18,7 +18,7 @@
 #ifndef __LINUX_USB_ISP1301_H
 #define __LINUX_USB_ISP1301_H
 
-#include <linux/of.h>
+#include <linaos/of.h>
 
 /* I2C Register definitions: */
 

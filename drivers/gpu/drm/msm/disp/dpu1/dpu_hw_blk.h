@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2017-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2017-2018, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _DPU_HW_BLK_H
 #define _DPU_HW_BLK_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/atomic.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/atomic.h>
 
 struct dpu_hw_blk;
 

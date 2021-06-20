@@ -9,26 +9,26 @@
 #ifndef _LINUX_MODULE_H
 #define _LINUX_MODULE_H
 
-#include <linux/list.h>
-#include <linux/stat.h>
-#include <linux/compiler.h>
-#include <linux/cache.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/elf.h>
-#include <linux/stringify.h>
-#include <linux/kobject.h>
-#include <linux/moduleparam.h>
-#include <linux/jump_label.h>
-#include <linux/export.h>
-#include <linux/rbtree_latch.h>
-#include <linux/error-injection.h>
-#include <linux/tracepoint-defs.h>
-#include <linux/srcu.h>
-#include <linux/static_call_types.h>
-#include <linux/cfi.h>
+#include <linaos/list.h>
+#include <linaos/stat.h>
+#include <linaos/compiler.h>
+#include <linaos/cache.h>
+#include <linaos/kmod.h>
+#include <linaos/init.h>
+#include <linaos/elf.h>
+#include <linaos/stringify.h>
+#include <linaos/kobject.h>
+#include <linaos/moduleparam.h>
+#include <linaos/jump_label.h>
+#include <linaos/export.h>
+#include <linaos/rbtree_latch.h>
+#include <linaos/error-injection.h>
+#include <linaos/tracepoint-defs.h>
+#include <linaos/srcu.h>
+#include <linaos/static_call_types.h>
+#include <linaos/cfi.h>
 
-#include <linux/percpu.h>
+#include <linaos/percpu.h>
 #include <asm/module.h>
 
 #define MODULE_NAME_LEN MAX_PARAM_PREFIX_LEN
@@ -216,7 +216,7 @@ extern void cleanup_module(void);
  * license variants. The detailed and correct license information is again
  * to be found in the corresponding source files.
  *
- * There are dual licensed components, but when running with Linux it is the
+ * There are dual licensed components, but when running with LinaOS it is the
  * GPL that is relevant so this is a non issue. Similarly LGPL linked with GPL
  * is a GPL combined work.
  *

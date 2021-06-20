@@ -3,11 +3,11 @@
  * Copyright(c) 2018 Intel Corporation.
  */
 
-#include <linux/bpf.h>
-#include <linux/capability.h>
+#include <linaos/bpf.h>
+#include <linaos/capability.h>
 #include <net/xdp_sock.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
 
 #include "xsk.h"
 

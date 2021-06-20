@@ -5,7 +5,7 @@
 #ifndef __I915_GEM_CLIENT_BLT_H__
 #define __I915_GEM_CLIENT_BLT_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_gem_object;
 struct i915_page_sizes;

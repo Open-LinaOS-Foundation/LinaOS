@@ -7,15 +7,15 @@
  * Copyright (C) 2005 IBM Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/notifier.h>
+#include <linaos/proc_fs.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 
 #include <asm/prom.h>
 #include <asm/machdep.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/mmu.h>
 
 #include "of_helpers.h"

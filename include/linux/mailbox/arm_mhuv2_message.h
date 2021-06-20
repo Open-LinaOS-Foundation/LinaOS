@@ -9,7 +9,7 @@
 #ifndef _LINUX_ARM_MHUV2_MESSAGE_H_
 #define _LINUX_ARM_MHUV2_MESSAGE_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Data structure for data-transfer protocol */
 struct arm_mhuv2_mbox_msg {

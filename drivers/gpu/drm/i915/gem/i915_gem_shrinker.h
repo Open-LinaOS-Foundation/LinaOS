@@ -6,7 +6,7 @@
 #ifndef __I915_GEM_SHRINKER_H__
 #define __I915_GEM_SHRINKER_H__
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 struct drm_i915_private;
 struct i915_gem_ww_ctx;

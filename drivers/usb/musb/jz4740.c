@@ -5,15 +5,15 @@
  * Copyright (C) 2013, Apelete Seketeli <apelete@seketeli.net>
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/usb/role.h>
-#include <linux/usb/usb_phy_generic.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb/role.h>
+#include <linaos/usb/usb_phy_generic.h>
 
 #include "musb_core.h"
 

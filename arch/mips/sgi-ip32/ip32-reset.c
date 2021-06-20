@@ -8,17 +8,17 @@
  * Copyright (C) 2003 Guido Guenther <agx@sigxcpu.org>
  */
 
-#include <linux/compiler.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/notifier.h>
-#include <linux/delay.h>
-#include <linux/rtc/ds1685.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
+#include <linaos/compiler.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/sched/signal.h>
+#include <linaos/notifier.h>
+#include <linaos/delay.h>
+#include <linaos/rtc/ds1685.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm.h>
 
 #include <asm/addrspace.h>
 #include <asm/irq.h>

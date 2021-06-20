@@ -10,7 +10,7 @@
 #ifndef __LINUX_CLK_RENESAS_H_
 #define __LINUX_CLK_RENESAS_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct device;
 struct device_node;

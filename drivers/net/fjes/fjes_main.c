@@ -4,12 +4,12 @@
  *  Copyright (c) 2015 FUJITSU LIMITED
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/nls.h>
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/nls.h>
+#include <linaos/platform_device.h>
+#include <linaos/netdevice.h>
+#include <linaos/interrupt.h>
 
 #include "fjes.h"
 #include "fjes_trace.h"

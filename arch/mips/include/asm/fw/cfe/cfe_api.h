@@ -14,8 +14,8 @@
 #ifndef CFE_API_H
 #define CFE_API_H
 
-#include <linux/types.h>
-#include <linux/string.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
 
 typedef long intptr_t;
 

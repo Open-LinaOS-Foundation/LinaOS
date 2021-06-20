@@ -5,20 +5,20 @@
 
 #define pr_fmt(fmt) "aspeed-kcs-bmc: " fmt
 
-#include <linux/atomic.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/regmap.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <linaos/atomic.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/poll.h>
+#include <linaos/regmap.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
 
 #include "kcs_bmc.h"
 
@@ -420,5 +420,5 @@ static struct platform_driver ast_kcs_bmc_driver = {
 module_platform_driver(ast_kcs_bmc_driver);
 
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Haiyue Wang <haiyue.wang@linux.intel.com>");
+MODULE_AUTHOR("Haiyue Wang <haiyue.wang@linaos.intel.com>");
 MODULE_DESCRIPTION("Aspeed device interface to the KCS BMC device");

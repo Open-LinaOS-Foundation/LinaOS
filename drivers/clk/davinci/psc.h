@@ -8,8 +8,8 @@
 #ifndef __CLK_DAVINCI_PSC_H__
 #define __CLK_DAVINCI_PSC_H__
 
-#include <linux/clk-provider.h>
-#include <linux/types.h>
+#include <linaos/clk-provider.h>
+#include <linaos/types.h>
 
 /* PSC quirk flags */
 #define LPSC_ALWAYS_ENABLED	BIT(0) /* never disable this clock */

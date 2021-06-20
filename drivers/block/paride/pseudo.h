@@ -32,8 +32,8 @@
 	
 #define PS_VERSION	"1.02"
 
-#include <linux/sched.h>
-#include <linux/workqueue.h>
+#include <linaos/sched.h>
+#include <linaos/workqueue.h>
 
 static void ps_tq_int(struct work_struct *work);
 

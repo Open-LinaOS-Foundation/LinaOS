@@ -4,13 +4,13 @@
  * Copyright (c) 2006-2009 Red Hat Inc.
  * Copyright (c) 2006-2008 Intel Corporation
  *   Jesse Barnes <jesse.barnes@intel.com>
- * Copyright (c) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2007 Dave Airlie <airlied@linaos.ie>
  */
 
 #include "drm/drm_modeset_lock.h"
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_client.h>

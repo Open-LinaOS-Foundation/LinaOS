@@ -37,10 +37,10 @@
 #ifndef _TTM_OBJECT_H_
 #define _TTM_OBJECT_H_
 
-#include <linux/dma-buf.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
+#include <linaos/dma-buf.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/rcupdate.h>
 
 #include <drm/drm_hashtab.h>
 

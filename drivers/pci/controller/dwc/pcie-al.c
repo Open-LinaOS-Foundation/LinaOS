@@ -8,9 +8,9 @@
  * Author: Jonathan Chocron <jonnyc@amazon.com>
  */
 
-#include <linux/pci.h>
-#include <linux/pci-ecam.h>
-#include <linux/pci-acpi.h>
+#include <linaos/pci.h>
+#include <linaos/pci-ecam.h>
+#include <linaos/pci-acpi.h>
 #include "../../pci.h"
 
 #if defined(CONFIG_ACPI) && defined(CONFIG_PCI_QUIRKS)
@@ -88,7 +88,7 @@ const struct pci_ecam_ops al_pcie_ops = {
 
 #ifdef CONFIG_PCIE_AL
 
-#include <linux/of_pci.h>
+#include <linaos/of_pci.h>
 #include "pcie-designware.h"
 
 #define AL_PCIE_REV_ID_2	2

@@ -7,17 +7,17 @@
  * Author : Sriramakrishnan.A.G. <srk@ti.com>
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/tca6416_keypad.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
+#include <linaos/gpio.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/tca6416_keypad.h>
 
 #define TCA6416_INPUT          0
 #define TCA6416_OUTPUT         1
@@ -243,7 +243,7 @@ static int tca6416_keypad_probe(struct i2c_client *client,
 	input->id.product = 0x0001;
 	input->id.version = 0x0100;
 
-	/* Enable auto repeat feature of Linux input subsystem */
+	/* Enable auto repeat feature of LinaOS input subsystem */
 	if (pdata->rep)
 		__set_bit(EV_REP, input->evbit);
 

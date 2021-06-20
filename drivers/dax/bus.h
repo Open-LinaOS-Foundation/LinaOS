@@ -2,8 +2,8 @@
 /* Copyright(c) 2016 - 2018 Intel Corporation. All rights reserved. */
 #ifndef __DAX_BUS_H__
 #define __DAX_BUS_H__
-#include <linux/device.h>
-#include <linux/range.h>
+#include <linaos/device.h>
+#include <linaos/range.h>
 
 struct dev_dax;
 struct resource;
@@ -55,7 +55,7 @@ int dev_dax_probe(struct dev_dax *dev_dax);
 
 /*
  * While run_dax() is potentially a generic operation that could be
- * defined in include/linux/dax.h we don't want to grow any users
+ * defined in include/linaos/dax.h we don't want to grow any users
  * outside of drivers/dax/
  */
 void run_dax(struct dax_device *dax_dev);

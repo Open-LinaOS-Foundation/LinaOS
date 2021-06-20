@@ -33,7 +33,7 @@
 #ifndef _GVT_HYPERCALL_H_
 #define _GVT_HYPERCALL_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct device;
 

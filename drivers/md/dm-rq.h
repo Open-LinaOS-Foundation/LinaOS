@@ -9,8 +9,8 @@
 #ifndef DM_RQ_INTERNAL_H
 #define DM_RQ_INTERNAL_H
 
-#include <linux/bio.h>
-#include <linux/kthread.h>
+#include <linaos/bio.h>
+#include <linaos/kthread.h>
 
 #include "dm-stats.h"
 

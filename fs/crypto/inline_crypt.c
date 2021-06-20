@@ -12,11 +12,11 @@
  * provides the key and IV to use.
  */
 
-#include <linux/blk-crypto.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
+#include <linaos/blk-crypto.h>
+#include <linaos/blkdev.h>
+#include <linaos/buffer_head.h>
+#include <linaos/sched/mm.h>
+#include <linaos/slab.h>
 
 #include "fscrypt_private.h"
 

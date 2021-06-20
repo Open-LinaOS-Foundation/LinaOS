@@ -8,13 +8,13 @@
  * Copyright (c) 2007 Novell Inc.
  */
 
-#include <linux/device/driver.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
+#include <linaos/device/driver.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/sysfs.h>
 #include "base.h"
 
 static struct device *next_device(struct klist_iter *i)

@@ -9,14 +9,14 @@
 
 #define pr_fmt(fmt) "6LoWPAN: " fmt
 
-#include <linux/net.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/random.h>
-#include <linux/jhash.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/net.h>
+#include <linaos/list.h>
+#include <linaos/netdevice.h>
+#include <linaos/random.h>
+#include <linaos/jhash.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 
 #include <net/ieee802154_netdev.h>
 #include <net/6lowpan.h>

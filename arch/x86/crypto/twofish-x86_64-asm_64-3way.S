@@ -5,7 +5,7 @@
  * Copyright (C) 2011 Jussi Kivilinna <jussi.kivilinna@mbnet.fi>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 .file "twofish-x86_64-asm-3way.S"
 .text

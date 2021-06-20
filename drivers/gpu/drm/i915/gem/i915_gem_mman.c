@@ -4,10 +4,10 @@
  * Copyright © 2014-2016 Intel Corporation
  */
 
-#include <linux/anon_inodes.h>
-#include <linux/mman.h>
-#include <linux/pfn_t.h>
-#include <linux/sizes.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/mman.h>
+#include <linaos/pfn_t.h>
+#include <linaos/sizes.h>
 
 #include "gt/intel_gt.h"
 #include "gt/intel_gt_requests.h"

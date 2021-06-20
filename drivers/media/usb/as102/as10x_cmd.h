@@ -6,7 +6,7 @@
 #ifndef _AS10X_CMD_H_
 #define _AS10X_CMD_H_
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include "as102_fe_types.h"
 

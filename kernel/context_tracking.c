@@ -15,12 +15,12 @@
  *
  */
 
-#include <linux/context_tracking.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/hardirq.h>
-#include <linux/export.h>
-#include <linux/kprobes.h>
+#include <linaos/context_tracking.h>
+#include <linaos/rcupdate.h>
+#include <linaos/sched.h>
+#include <linaos/hardirq.h>
+#include <linaos/export.h>
+#include <linaos/kprobes.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/context_tracking.h>

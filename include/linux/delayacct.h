@@ -7,7 +7,7 @@
 #ifndef _LINUX_DELAYACCT_H
 #define _LINUX_DELAYACCT_H
 
-#include <uapi/linux/taskstats.h>
+#include <uapi/linaos/taskstats.h>
 
 /*
  * Per-task flags relevant to delay accounting
@@ -56,8 +56,8 @@ struct task_delay_info {
 };
 #endif
 
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 
 #ifdef CONFIG_TASK_DELAY_ACCT
 extern int delayacct_on;	/* Delay accounting turned on/off */

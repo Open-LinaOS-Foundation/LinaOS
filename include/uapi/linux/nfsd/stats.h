@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * linux/include/linux/nfsd/stats.h
+ * linaos/include/linaos/nfsd/stats.h
  *
  * Statistics for NFS server.
  *
@@ -10,7 +10,7 @@
 #ifndef _UAPILINUX_NFSD_STATS_H
 #define _UAPILINUX_NFSD_STATS_H
 
-#include <linux/nfs4.h>
+#include <linaos/nfs4.h>
 
 /* thread usage wraps very million seconds (approx one fortnight) */
 #define	NFSD_USAGE_WRAP	(HZ*1000000)

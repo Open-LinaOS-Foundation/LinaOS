@@ -3,7 +3,7 @@
  * Common file for modeset selftests.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "test-drm_modeset_common.h"
 

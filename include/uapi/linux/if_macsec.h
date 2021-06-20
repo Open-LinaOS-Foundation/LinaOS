@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
- * include/uapi/linux/if_macsec.h - MACsec device
+ * include/uapi/linaos/if_macsec.h - MACsec device
  *
  * Copyright (c) 2015 Sabrina Dubroca <sd@queasysnail.net>
  *
@@ -13,7 +13,7 @@
 #ifndef _UAPI_MACSEC_H
 #define _UAPI_MACSEC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define MACSEC_GENL_NAME "macsec"
 #define MACSEC_GENL_VERSION 1

@@ -1,5 +1,5 @@
 /*
- * Compressed rom filesystem for Linux.
+ * Compressed rom filesystem for LinaOS.
  *
  * Copyright (C) 1999 Linus Torvalds.
  *
@@ -13,23 +13,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/pfn_t.h>
-#include <linux/ramfs.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/blkdev.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/super.h>
-#include <linux/fs_context.h>
-#include <linux/slab.h>
-#include <linux/vfs.h>
-#include <linux/mutex.h>
-#include <uapi/linux/cramfs_fs.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/pagemap.h>
+#include <linaos/pfn_t.h>
+#include <linaos/ramfs.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/blkdev.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/super.h>
+#include <linaos/fs_context.h>
+#include <linaos/slab.h>
+#include <linaos/vfs.h>
+#include <linaos/mutex.h>
+#include <uapi/linaos/cramfs_fs.h>
+#include <linaos/uaccess.h>
 
 #include "internal.h"
 

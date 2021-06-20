@@ -4,10 +4,10 @@
  * Copyright © 2008,2010 Intel Corporation
  */
 
-#include <linux/intel-iommu.h>
-#include <linux/dma-resv.h>
-#include <linux/sync_file.h>
-#include <linux/uaccess.h>
+#include <linaos/intel-iommu.h>
+#include <linaos/dma-resv.h>
+#include <linaos/sync_file.h>
+#include <linaos/uaccess.h>
 
 #include <drm/drm_syncobj.h>
 

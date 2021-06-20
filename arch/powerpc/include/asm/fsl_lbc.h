@@ -11,11 +11,11 @@
 #ifndef __ASM_FSL_LBC_H
 #define __ASM_FSL_LBC_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
+#include <linaos/device.h>
+#include <linaos/spinlock.h>
 
 struct fsl_lbc_bank {
 	__be32 br;             /**< Base Register  */

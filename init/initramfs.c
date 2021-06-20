@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/async.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/dirent.h>
-#include <linux/syscalls.h>
-#include <linux/utime.h>
-#include <linux/file.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/namei.h>
-#include <linux/init_syscalls.h>
+#include <linaos/init.h>
+#include <linaos/async.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/dirent.h>
+#include <linaos/syscalls.h>
+#include <linaos/utime.h>
+#include <linaos/file.h>
+#include <linaos/memblock.h>
+#include <linaos/mm.h>
+#include <linaos/namei.h>
+#include <linaos/init_syscalls.h>
 
 static ssize_t __init xwrite(struct file *file, const char *p, size_t count,
 		loff_t *pos)
@@ -458,7 +458,7 @@ static long __init flush_buffer(void *bufv, unsigned long len)
 
 static unsigned long my_inptr; /* index of next byte to be processed in inbuf */
 
-#include <linux/decompress/generic.h>
+#include <linaos/decompress/generic.h>
 
 static char * __init unpack_to_rootfs(char *buf, unsigned long len)
 {
@@ -552,8 +552,8 @@ __setup("initramfs_async=", initramfs_async_setup);
 
 extern char __initramfs_start[];
 extern unsigned long __initramfs_size;
-#include <linux/initrd.h>
-#include <linux/kexec.h>
+#include <linaos/initrd.h>
+#include <linaos/kexec.h>
 
 void __init reserve_initrd_mem(void)
 {

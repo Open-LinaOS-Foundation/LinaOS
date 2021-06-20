@@ -6,21 +6,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/highmem.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/delay.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/highmem.h>
+#include <linaos/if_vlan.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/netdevice.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #if defined(CONFIG_IPV6)
-#include <linux/icmpv6.h>
+#include <linaos/icmpv6.h>
 #endif
 
 #include <net/ip.h>

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2010, 2011, 2016 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2010, 2011, 2016 The LinaOS Foundation. All rights reserved.
  */
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/regmap.h>
 
 #define PM8058_LED_TYPE_COMMON	0x00
 #define PM8058_LED_TYPE_KEYPAD	0x01

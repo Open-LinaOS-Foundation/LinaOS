@@ -2,7 +2,7 @@
 #define _GNU_SOURCE
 
 #include <cap-ng.h>
-#include <linux/capability.h>
+#include <linaos/capability.h>
 #include <stdbool.h>
 #include <string.h>
 #include <stdio.h>

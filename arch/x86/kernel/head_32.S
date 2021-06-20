@@ -8,9 +8,9 @@
  */
 
 .text
-#include <linux/threads.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linaos/threads.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
 #include <asm/segment.h>
 #include <asm/page_types.h>
 #include <asm/pgtable_types.h>

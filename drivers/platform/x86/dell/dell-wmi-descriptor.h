@@ -8,7 +8,7 @@
 #ifndef _DELL_WMI_DESCRIPTOR_H_
 #define _DELL_WMI_DESCRIPTOR_H_
 
-#include <linux/wmi.h>
+#include <linaos/wmi.h>
 
 /* possible return values:
  *  -ENODEV: Descriptor GUID missing from WMI bus

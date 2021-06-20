@@ -4,11 +4,11 @@
  * Author: Alexandru M Stan <amstan@chromium.org>
  */
 
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
 #include "clk.h"
 
 struct rockchip_mmc_clock {

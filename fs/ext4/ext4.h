@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/include/linux/minix_fs.h
+ *  linaos/include/linaos/minix_fs.h
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -17,33 +17,33 @@
 #ifndef _EXT4_H
 #define _EXT4_H
 
-#include <linux/types.h>
-#include <linux/blkdev.h>
-#include <linux/magic.h>
-#include <linux/jbd2.h>
-#include <linux/quota.h>
-#include <linux/rwsem.h>
-#include <linux/rbtree.h>
-#include <linux/seqlock.h>
-#include <linux/mutex.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
-#include <linux/blockgroup_lock.h>
-#include <linux/percpu_counter.h>
-#include <linux/ratelimit.h>
+#include <linaos/types.h>
+#include <linaos/blkdev.h>
+#include <linaos/magic.h>
+#include <linaos/jbd2.h>
+#include <linaos/quota.h>
+#include <linaos/rwsem.h>
+#include <linaos/rbtree.h>
+#include <linaos/seqlock.h>
+#include <linaos/mutex.h>
+#include <linaos/timer.h>
+#include <linaos/wait.h>
+#include <linaos/sched/signal.h>
+#include <linaos/blockgroup_lock.h>
+#include <linaos/percpu_counter.h>
+#include <linaos/ratelimit.h>
 #include <crypto/hash.h>
-#include <linux/falloc.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/fiemap.h>
+#include <linaos/falloc.h>
+#include <linaos/percpu-rwsem.h>
+#include <linaos/fiemap.h>
 #ifdef __KERNEL__
-#include <linux/compat.h>
+#include <linaos/compat.h>
 #endif
 
-#include <linux/fscrypt.h>
-#include <linux/fsverity.h>
+#include <linaos/fscrypt.h>
+#include <linaos/fsverity.h>
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 /*
  * The fourth extended filesystem constants/structures
@@ -553,7 +553,7 @@ enum {
  * any extra space in the compiled kernel image, otherwise, the build will fail.
  * It's important that these values are the same, since we are using
  * EXT4_INODE_XXX to test for flag values, but EXT4_XXX_FL must be consistent
- * with the values of FS_XXX_FL defined in include/linux/fs.h and the on-disk
+ * with the values of FS_XXX_FL defined in include/linaos/fs.h and the on-disk
  * values found in ext2, ext3 and ext4 filesystems, and of course the values
  * defined in e2fsprogs.
  *
@@ -785,7 +785,7 @@ struct ext4_inode {
 	union {
 		struct {
 			__le32  l_i_version;
-		} linux1;
+		} linaos1;
 		struct {
 			__u32  h_i_translator;
 		} hurd1;
@@ -806,7 +806,7 @@ struct ext4_inode {
 			__le16	l_i_gid_high;	/* were reserved2[0] */
 			__le16	l_i_checksum_lo;/* crc32c(uuid+inum+inode) LE */
 			__le16	l_i_reserved;
-		} linux2;
+		} linaos2;
 		struct {
 			__le16	h_i_reserved1;	/* Obsoleted fragment number/size which are removed in ext4 */
 			__u16	h_i_mode_high;
@@ -941,17 +941,17 @@ do {									       \
 		(einode)->xtime.tv_nsec = 0;				       \
 } while (0)
 
-#define i_disk_version osd1.linux1.l_i_version
+#define i_disk_version osd1.linaos1.l_i_version
 
-#if defined(__KERNEL__) || defined(__linux__)
-#define i_reserved1	osd1.linux1.l_i_reserved1
-#define i_file_acl_high	osd2.linux2.l_i_file_acl_high
-#define i_blocks_high	osd2.linux2.l_i_blocks_high
+#if defined(__KERNEL__) || defined(__linaos__)
+#define i_reserved1	osd1.linaos1.l_i_reserved1
+#define i_file_acl_high	osd2.linaos2.l_i_file_acl_high
+#define i_blocks_high	osd2.linaos2.l_i_blocks_high
 #define i_uid_low	i_uid
 #define i_gid_low	i_gid
-#define i_uid_high	osd2.linux2.l_i_uid_high
-#define i_gid_high	osd2.linux2.l_i_gid_high
-#define i_checksum_lo	osd2.linux2.l_i_checksum_lo
+#define i_uid_high	osd2.linaos2.l_i_uid_high
+#define i_gid_high	osd2.linaos2.l_i_gid_high
+#define i_checksum_lo	osd2.linaos2.l_i_checksum_lo
 
 #elif defined(__GNU__)
 
@@ -966,7 +966,7 @@ do {									       \
 #define i_file_acl_high	osd2.masix2.m_i_file_acl_high
 #define i_reserved2	osd2.masix2.m_i_reserved2
 
-#endif /* defined(__KERNEL__) || defined(__linux__) */
+#endif /* defined(__KERNEL__) || defined(__linaos__) */
 
 #include "extents_status.h"
 #include "fast_commit.h"
@@ -1786,7 +1786,7 @@ static inline void ext4_simulate_fail_bh(struct super_block *sb,
 /*
  * Error number codes for s_{first,last}_error_errno
  *
- * Linux errno numbers are architecture specific, so we need to translate
+ * LinaOS errno numbers are architecture specific, so we need to translate
  * them into something which is architecture independent.   We don't define
  * codes for all errno's; just the ones which are most likely to be the cause
  * of an ext4_error() call.
@@ -2581,7 +2581,7 @@ struct mmpd_data {
  */
 
 /*
- * Ok, these declarations are also in <linux/kernel.h> but none of the
+ * Ok, these declarations are also in <linaos/kernel.h> but none of the
  * ext4 source programs needs to include it so they are duplicated here.
  */
 # define NORET_TYPE	/**/

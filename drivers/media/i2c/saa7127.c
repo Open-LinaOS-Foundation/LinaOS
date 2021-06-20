@@ -13,7 +13,7 @@
  *
  * Copyright (C) 1999 Nathan Laredo <laredo@gnu.org>
  *
- * This driver is designed for the Hauppauge 250/350 Linux driver
+ * This driver is designed for the Hauppauge 250/350 LinaOS driver
  * from the ivtv Project
  *
  * Copyright (C) 2003 Kevin Thayer <nufan_wfk@yahoo.com>
@@ -35,11 +35,11 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/i2c/saa7127.h>
 

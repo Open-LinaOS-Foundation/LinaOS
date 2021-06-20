@@ -9,7 +9,7 @@ title: Maxim max20730
 
 maintainers:
   - Jean Delvare <jdelvare@suse.com>
-  - Guenter Roeck <linux@roeck-us.net>
+  - Guenter Roeck <linaos@roeck-us.net>
 
 description: |
   The MAX20730 is a fully integrated, highly efficient switching regulator

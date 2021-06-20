@@ -36,13 +36,13 @@
  * T	Tip
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/usb/input.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/usb/input.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
 
 /* USB HID defines */
 #define USB_REQ_GET_REPORT		0x01

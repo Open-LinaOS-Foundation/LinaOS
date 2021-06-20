@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/h8300/kernel/process.c
+ *  linaos/arch/h8300/kernel/process.c
  *
  * Yoshinori Sato <ysato@users.sourceforge.jp>
  *
  *  Based on:
  *
- *  linux/arch/m68knommu/kernel/process.c
+ *  linaos/arch/m68knommu/kernel/process.c
  *
  *  Copyright (C) 1998  D. Jeff Dionne <jeff@ryeham.ee.ryerson.ca>,
  *                      Kenneth Albanowski <kjahds@kjahds.com>,
  *                      The Silver Hammer Group, Ltd.
  *
- *  linux/arch/m68k/kernel/process.c
+ *  linaos/arch/m68k/kernel/process.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  *
@@ -23,26 +23,26 @@
  * This file handles the architecture-dependent parts of process handling..
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/interrupt.h>
+#include <linaos/reboot.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/rcupdate.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/traps.h>
 #include <asm/setup.h>
 

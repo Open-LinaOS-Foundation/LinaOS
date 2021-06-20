@@ -7,17 +7,17 @@
  * Copyright © 2007 Anton Vorontsov <cbou@mail.ru>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/power_supply.h>
-#include <linux/pda_power.h>
-#include <linux/regulator/consumer.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/usb/otg.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/notifier.h>
+#include <linaos/power_supply.h>
+#include <linaos/pda_power.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/timer.h>
+#include <linaos/jiffies.h>
+#include <linaos/usb/otg.h>
 
 static inline unsigned int get_irq_flags(struct resource *res)
 {

@@ -12,13 +12,13 @@
 
 #define pr_fmt(fmt) "NMI watchdog: " fmt
 
-#include <linux/nmi.h>
-#include <linux/atomic.h>
-#include <linux/module.h>
-#include <linux/sched/debug.h>
+#include <linaos/nmi.h>
+#include <linaos/atomic.h>
+#include <linaos/module.h>
+#include <linaos/sched/debug.h>
 
 #include <asm/irq_regs.h>
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 
 static DEFINE_PER_CPU(bool, hard_watchdog_warn);
 static DEFINE_PER_CPU(bool, watchdog_nmi_touch);

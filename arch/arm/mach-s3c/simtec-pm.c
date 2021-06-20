@@ -3,18 +3,18 @@
 // Copyright 2004 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
 //
-// http://armlinux.simtec.co.uk/
+// http://armlinaos.simtec.co.uk/
 //
 // Power Management helpers for Simtec S3C24XX implementations
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

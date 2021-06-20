@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/fs/jbd2/journal.c
+ * linaos/fs/jbd2/journal.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1998
  *
@@ -19,33 +19,33 @@
  * journaling (ext2 can use a reserved inode for storing the log).
  */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/freezer.h>
-#include <linux/pagemap.h>
-#include <linux/kthread.h>
-#include <linux/poison.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/math64.h>
-#include <linux/hash.h>
-#include <linux/log2.h>
-#include <linux/vmalloc.h>
-#include <linux/backing-dev.h>
-#include <linux/bitops.h>
-#include <linux/ratelimit.h>
-#include <linux/sched/mm.h>
+#include <linaos/module.h>
+#include <linaos/time.h>
+#include <linaos/fs.h>
+#include <linaos/jbd2.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/freezer.h>
+#include <linaos/pagemap.h>
+#include <linaos/kthread.h>
+#include <linaos/poison.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/math64.h>
+#include <linaos/hash.h>
+#include <linaos/log2.h>
+#include <linaos/vmalloc.h>
+#include <linaos/backing-dev.h>
+#include <linaos/bitops.h>
+#include <linaos/ratelimit.h>
+#include <linaos/sched/mm.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/jbd2.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/page.h>
 
 #ifdef CONFIG_JBD2_DEBUG

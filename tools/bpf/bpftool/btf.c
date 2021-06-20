@@ -3,7 +3,7 @@
 
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/err.h>
+#include <linaos/err.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
@@ -11,8 +11,8 @@
 #include <bpf/bpf.h>
 #include <bpf/btf.h>
 #include <bpf/libbpf.h>
-#include <linux/btf.h>
-#include <linux/hashtable.h>
+#include <linaos/btf.h>
+#include <linaos/hashtable.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 
@@ -525,15 +525,15 @@ static int do_dump(int argc, char **argv)
 		NEXT_ARG();
 	} else if (is_prefix(src, "file")) {
 		const char sysfs_prefix[] = "/sys/kernel/btf/";
-		const char sysfs_vmlinux[] = "/sys/kernel/btf/vmlinux";
+		const char sysfs_vmlinaos[] = "/sys/kernel/btf/vmlinaos";
 
 		if (!base_btf &&
 		    strncmp(*argv, sysfs_prefix, sizeof(sysfs_prefix) - 1) == 0 &&
-		    strcmp(*argv, sysfs_vmlinux) != 0) {
-			base = btf__parse(sysfs_vmlinux, NULL);
+		    strcmp(*argv, sysfs_vmlinaos) != 0) {
+			base = btf__parse(sysfs_vmlinaos, NULL);
 			if (libbpf_get_error(base)) {
-				p_err("failed to parse vmlinux BTF at '%s': %ld\n",
-				      sysfs_vmlinux, libbpf_get_error(base));
+				p_err("failed to parse vmlinaos BTF at '%s': %ld\n",
+				      sysfs_vmlinaos, libbpf_get_error(base));
 				base = NULL;
 			}
 		}

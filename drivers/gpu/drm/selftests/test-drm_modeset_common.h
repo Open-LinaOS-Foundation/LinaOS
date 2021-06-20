@@ -3,8 +3,8 @@
 #ifndef __TEST_DRM_MODESET_COMMON_H__
 #define __TEST_DRM_MODESET_COMMON_H__
 
-#include <linux/errno.h>
-#include <linux/printk.h>
+#include <linaos/errno.h>
+#include <linaos/printk.h>
 
 #define FAIL(test, msg, ...) \
 	do { \

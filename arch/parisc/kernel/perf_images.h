@@ -2,7 +2,7 @@
 /* 
  *    Imagine for use with the Onyx (PCX-U) CPU interface 
  *
- *    Copyright (C) 2001 Randolph Chung <tausq at parisc-linux.org>
+ *    Copyright (C) 2001 Randolph Chung <tausq at parisc-linaos.org>
  *    Copyright (C) 2001 Hewlett-Packard (Grant Grundler)
  */
 #ifndef PERF_IMAGES_H

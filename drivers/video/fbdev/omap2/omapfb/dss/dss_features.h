@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/drivers/video/omap2/dss/dss_features.h
+ * linaos/drivers/video/omap2/dss/dss_features.h
  *
  * Copyright (C) 2010 Texas Instruments
  * Author: Archit Taneja <archit@ti.com>

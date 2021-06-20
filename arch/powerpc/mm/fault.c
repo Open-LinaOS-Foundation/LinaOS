@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *
  *  Derived from "arch/i386/mm/fault.c"
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
@@ -11,29 +11,29 @@
  *  Modified for PPC64 by Dave Engebretsen (engebret@ibm.com)
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/pagemap.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/highmem.h>
-#include <linux/extable.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/perf_event.h>
-#include <linux/ratelimit.h>
-#include <linux/context_tracking.h>
-#include <linux/hugetlb.h>
-#include <linux/uaccess.h>
-#include <linux/kfence.h>
-#include <linux/pkeys.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/pagemap.h>
+#include <linaos/ptrace.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/highmem.h>
+#include <linaos/extable.h>
+#include <linaos/kprobes.h>
+#include <linaos/kdebug.h>
+#include <linaos/perf_event.h>
+#include <linaos/ratelimit.h>
+#include <linaos/context_tracking.h>
+#include <linaos/hugetlb.h>
+#include <linaos/uaccess.h>
+#include <linaos/kfence.h>
+#include <linaos/pkeys.h>
 
 #include <asm/firmware.h>
 #include <asm/interrupt.h>

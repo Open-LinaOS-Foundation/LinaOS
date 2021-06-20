@@ -8,30 +8,30 @@
  *	Steffen Klassert <steffen.klassert@secunet.com>
  */
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sockios.h>
-#include <linux/icmp.h>
-#include <linux/if.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_link.h>
-#include <linux/if_arp.h>
-#include <linux/icmpv6.h>
-#include <linux/init.h>
-#include <linux/route.h>
-#include <linux/rtnetlink.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
+#include <linaos/module.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/sockios.h>
+#include <linaos/icmp.h>
+#include <linaos/if.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/net.h>
+#include <linaos/in6.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_link.h>
+#include <linaos/if_arp.h>
+#include <linaos/icmpv6.h>
+#include <linaos/init.h>
+#include <linaos/route.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/slab.h>
+#include <linaos/hash.h>
 
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <linaos/uaccess.h>
+#include <linaos/atomic.h>
 
 #include <net/icmp.h>
 #include <net/ip.h>
@@ -42,7 +42,7 @@
 #include <net/xfrm.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 
 static int xfrmi_dev_init(struct net_device *dev);
 static void xfrmi_dev_setup(struct net_device *dev);

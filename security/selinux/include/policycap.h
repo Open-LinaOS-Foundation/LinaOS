@@ -15,6 +15,6 @@ enum {
 };
 #define POLICYDB_CAPABILITY_MAX (__POLICYDB_CAPABILITY_MAX - 1)
 
-extern const char *selinux_policycap_names[__POLICYDB_CAPABILITY_MAX];
+extern const char *selinaos_policycap_names[__POLICYDB_CAPABILITY_MAX];
 
 #endif /* _SELINUX_POLICYCAP_H_ */

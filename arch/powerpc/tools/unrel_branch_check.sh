@@ -2,17 +2,17 @@
 # SPDX-License-Identifier: GPL-2.0+
 # Copyright © 2016,2020 IBM Corporation
 #
-# This script checks the unrelocated code of a vmlinux for "suspicious"
+# This script checks the unrelocated code of a vmlinaos for "suspicious"
 # branches to relocated code (head_64.S code).
 
 # Have Kbuild supply the path to objdump and nm so we handle cross compilation.
 objdump="$1"
 nm="$2"
-vmlinux="$3"
+vmlinaos="$3"
 
 kstart=0xc000000000000000
 
-end_intr=0x$($nm -p "$vmlinux" |
+end_intr=0x$($nm -p "$vmlinaos" |
 	sed -E -n '/\s+[[:alpha:]]\s+__end_interrupts\s*$/{s///p;q}')
 if [ "$end_intr" = "0x" ]; then
 	exit 0
@@ -21,10 +21,10 @@ fi
 # we know that there is a correct branch to
 # __start_initialization_multiplatform, so find its address
 # so we can exclude it.
-sim=0x$($nm -p "$vmlinux" |
+sim=0x$($nm -p "$vmlinaos" |
 	sed -E -n '/\s+[[:alpha:]]\s+__start_initialization_multiplatform\s*$/{s///p;q}')
 
-$objdump -D --no-show-raw-insn --start-address="$kstart" --stop-address="$end_intr" "$vmlinux" |
+$objdump -D --no-show-raw-insn --start-address="$kstart" --stop-address="$end_intr" "$vmlinaos" |
 sed -E -n '
 # match lines that start with a kernel address
 /^c[0-9a-f]*:\s*b/ {

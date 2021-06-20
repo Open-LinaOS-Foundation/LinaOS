@@ -4,7 +4,7 @@
 
 #include <pthread.h>
 #include <stdbool.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 extern pthread_mutex_t ui__lock;
 extern void *perf_gtk_handle;

@@ -7,7 +7,7 @@ adapter that is integrated on System-on-Modules from Theobroma Systems
 and that is also available as a standalone USB stick.
 
 The UCAN protocol has been designed to be hardware-independent.
-It is modeled closely after how Linux represents CAN devices
+It is modeled closely after how LinaOS represents CAN devices
 internally. All multi-byte integers are encoded as Little Endian.
 
 All structures mentioned in this document are defined in
@@ -122,7 +122,7 @@ UCAN_COMMAND_GET_INFO
   Request the device information structure ``ucan_ctl_payload_t.device_info``.
 
   See the ``device_info`` field for details, and
-  ``uapi/linux/can/netlink.h`` for an explanation of the
+  ``uapi/linaos/can/netlink.h`` for an explanation of the
   ``can_bittiming fields``.
 
   Payload Format
@@ -300,11 +300,11 @@ CAN Error Handling
 ==================
 
 If error reporting is turned on the device encodes errors into CAN
-error frames (see ``uapi/linux/can/error.h``) and sends it using the
+error frames (see ``uapi/linaos/can/error.h``) and sends it using the
 IN endpoint. The driver updates its error statistics and forwards
 it.
 
-Although UCAN devices can suppress error frames completely, in Linux
+Although UCAN devices can suppress error frames completely, in LinaOS
 the driver is always interested. Hence, the device is always started with
 the ``UCAN_MODE_BERR_REPORT`` set. Filtering those messages for the
 user space is done by the driver.
@@ -313,7 +313,7 @@ Bus OFF
 -------
 
 - The device does not recover from bus of automatically.
-- Bus OFF is indicated by an error frame (see ``uapi/linux/can/error.h``)
+- Bus OFF is indicated by an error frame (see ``uapi/linaos/can/error.h``)
 - Bus OFF recovery is started by ``UCAN_COMMAND_RESTART``
 - Once Bus OFF recover is completed the device sends an error frame
   indicating that it is on ERROR-ACTIVE state.

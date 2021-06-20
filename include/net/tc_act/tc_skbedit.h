@@ -9,7 +9,7 @@
 #define __NET_TC_SKBEDIT_H
 
 #include <net/act_api.h>
-#include <linux/tc_act/tc_skbedit.h>
+#include <linaos/tc_act/tc_skbedit.h>
 
 struct tcf_skbedit_params {
 	u32 flags;

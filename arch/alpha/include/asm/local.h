@@ -2,8 +2,8 @@
 #ifndef _ALPHA_LOCAL_H
 #define _ALPHA_LOCAL_H
 
-#include <linux/percpu.h>
-#include <linux/atomic.h>
+#include <linaos/percpu.h>
+#include <linaos/atomic.h>
 
 typedef struct
 {

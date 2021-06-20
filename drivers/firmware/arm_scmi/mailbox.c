@@ -6,12 +6,12 @@
  * Copyright (C) 2019 ARM Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/mailbox_client.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/device.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
 
 #include "common.h"
 

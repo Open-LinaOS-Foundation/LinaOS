@@ -7,14 +7,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/timer.h>
+#include <linaos/skbuff.h>
+#include <linaos/gfp.h>
 #include <net/xfrm.h>
-#include <linux/jhash.h>
-#include <linux/rtnetlink.h>
+#include <linaos/jhash.h>
+#include <linaos/rtnetlink.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>
@@ -23,7 +23,7 @@
 #include <net/netfilter/nf_conntrack_zones.h>
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_helper.h>
-#include <uapi/linux/netfilter/nf_nat.h>
+#include <uapi/linaos/netfilter/nf_nat.h>
 
 #include "nf_internals.h"
 
@@ -820,8 +820,8 @@ static struct nf_ct_ext_type nat_extend __read_mostly = {
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/nfnetlink_conntrack.h>
 
 static const struct nla_policy protonat_nla_policy[CTA_PROTONAT_MAX+1] = {
 	[CTA_PROTONAT_PORT_MIN]	= { .type = NLA_U16 },

@@ -14,7 +14,7 @@
  */
 
 #include "system_global.h"
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #ifndef ISP2401
 

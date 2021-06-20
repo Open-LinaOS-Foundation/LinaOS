@@ -4,16 +4,16 @@
  *
  * Copyright IBM Corp. 2012
  *
- * Author: Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author: Michael Holzheu <holzheu@linaos.vnet.ibm.com>
  */
 
-#include <linux/compat.h>
-#include <linux/uaccess.h>
-#include <linux/miscdevice.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/fs.h>
+#include <linaos/compat.h>
+#include <linaos/uaccess.h>
+#include <linaos/miscdevice.h>
+#include <linaos/gfp.h>
+#include <linaos/init.h>
+#include <linaos/ioctl.h>
+#include <linaos/fs.h>
 #include <asm/sclp_ctl.h>
 #include <asm/sclp.h>
 

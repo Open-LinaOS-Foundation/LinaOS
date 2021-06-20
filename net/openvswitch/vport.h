@@ -6,14 +6,14 @@
 #ifndef VPORT_H
 #define VPORT_H 1
 
-#include <linux/if_tunnel.h>
-#include <linux/list.h>
-#include <linux/netlink.h>
-#include <linux/openvswitch.h>
-#include <linux/reciprocal_div.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/u64_stats_sync.h>
+#include <linaos/if_tunnel.h>
+#include <linaos/list.h>
+#include <linaos/netlink.h>
+#include <linaos/openvswitch.h>
+#include <linaos/reciprocal_div.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/u64_stats_sync.h>
 
 #include "datapath.h"
 

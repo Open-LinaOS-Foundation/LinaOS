@@ -5,23 +5,23 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mman.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/seq_file.h>
-#include <linux/hugetlb.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/time.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/mman.h>
+#include <linaos/proc_fs.h>
+#include <linaos/mm.h>
+#include <linaos/mmzone.h>
+#include <linaos/pagemap.h>
+#include <linaos/swap.h>
+#include <linaos/smp.h>
+#include <linaos/seq_file.h>
+#include <linaos/hugetlb.h>
+#include <linaos/vmalloc.h>
+#include <linaos/uaccess.h>
 #include <asm/tlb.h>
 #include <asm/div64.h>
 #include "internal.h"

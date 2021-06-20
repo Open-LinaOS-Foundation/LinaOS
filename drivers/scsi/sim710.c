@@ -13,14 +13,14 @@
  * Rewritten to use 53c700.c by James.Bottomley@SteelEye.com
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/eisa.h>
-#include <linux/interrupt.h>
+#include <linaos/blkdev.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/eisa.h>
+#include <linaos/interrupt.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_transport.h>

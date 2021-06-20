@@ -4,8 +4,8 @@
  * Copyright (C) 2013-2014 Intel Mobile Communications GmbH
  * Copyright (C) 2015-2017 Intel Deutschland GmbH
  */
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
+#include <linaos/etherdevice.h>
+#include <linaos/crc32.h>
 #include <net/mac80211.h>
 #include "iwl-io.h"
 #include "iwl-prph.h"

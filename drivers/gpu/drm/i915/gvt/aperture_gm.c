@@ -29,7 +29,7 @@
  *    Min He <min.he@intel.com>
  *    Niu Bing <bing.niu@intel.com>
  *    Yulei Zhang <yulei.zhang@intel.com>
- *    Zhenyu Wang <zhenyuw@linux.intel.com>
+ *    Zhenyu Wang <zhenyuw@linaos.intel.com>
  *    Zhi Wang <zhi.a.wang@intel.com>
  *
  */

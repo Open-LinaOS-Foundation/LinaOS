@@ -8,29 +8,29 @@
  *	    Peter Griffin <peter.griffin@linaro.org>
  *
  */
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dvb/dmx.h>
-#include <linux/dvb/frontend.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/version.h>
-#include <linux/wait.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <linaos/atomic.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dvb/dmx.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/errno.h>
+#include <linaos/firmware.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/version.h>
+#include <linaos/wait.h>
+#include <linaos/pinctrl/pinctrl.h>
 
 #include "c8sectpfe-core.h"
 #include "c8sectpfe-common.h"

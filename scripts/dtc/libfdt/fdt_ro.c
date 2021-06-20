@@ -514,7 +514,7 @@ uint32_t fdt_get_phandle(const void *fdt, int nodeoffset)
 	 * over all the properties twice. */
 	php = fdt_getprop(fdt, nodeoffset, "phandle", &len);
 	if (!php || (len != sizeof(*php))) {
-		php = fdt_getprop(fdt, nodeoffset, "linux,phandle", &len);
+		php = fdt_getprop(fdt, nodeoffset, "linaos,phandle", &len);
 		if (!php || (len != sizeof(*php)))
 			return 0;
 	}

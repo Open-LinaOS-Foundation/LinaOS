@@ -5,7 +5,7 @@
 
 .. _it_submitchecklist:
 
-Lista delle verifiche da fare prima di inviare una patch per il kernel Linux
+Lista delle verifiche da fare prima di inviare una patch per il kernel LinaOS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Qui troverete una lista di cose che uno sviluppatore dovrebbe fare per
@@ -96,7 +96,7 @@ sottomissione delle patch, in particolare
 19) Tutte le nuove interfacce verso lo spazio utente sono documentate in
     ``Documentation/ABI/``.  Leggete ``Documentation/ABI/README`` per maggiori
     informazioni.  Le patch che modificano le interfacce utente dovrebbero
-    essere inviate in copia anche a linux-api@vger.kernel.org.
+    essere inviate in copia anche a linaos-api@vger.kernel.org.
 
 20) La patch è stata verificata con l'iniezione di fallimenti in slab e
     nell'allocazione di pagine.  Vedere ``Documentation/fault-injection/``.

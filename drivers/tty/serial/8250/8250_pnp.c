@@ -6,15 +6,15 @@
  *
  *  Copyright (C) 2001 Russell King, All Rights Reserved.
  *
- *  Ported to the Linux PnP Layer - (C) Adam Belay.
+ *  Ported to the LinaOS PnP Layer - (C) Adam Belay.
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pnp.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/serial_core.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pnp.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/serial_core.h>
+#include <linaos/bitops.h>
 
 #include <asm/byteorder.h>
 

@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2015-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/if_link.h>
-#include <linux/netdevice.h>
-#include <linux/completion.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
-#include <linux/random.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/firmware.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/err.h>
+#include <linaos/if_link.h>
+#include <linaos/netdevice.h>
+#include <linaos/completion.h>
+#include <linaos/skbuff.h>
+#include <linaos/etherdevice.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/gfp.h>
+#include <linaos/random.h>
+#include <linaos/jiffies.h>
+#include <linaos/mutex.h>
+#include <linaos/rcupdate.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/firmware.h>
 #include <asm/byteorder.h>
 #include <net/devlink.h>
 #include <trace/events/devlink.h>

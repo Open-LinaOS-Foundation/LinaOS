@@ -6,10 +6,10 @@
  * Copyright 2020 Delta LLC.
  */
 
-#include <linux/debugfs.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linaos/debugfs.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
 #include "pmbus.h"
 
 #define STORE_DEFAULT_ALL		0x11

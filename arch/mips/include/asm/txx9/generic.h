@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-mips/txx9/generic.h
+ * linaos/include/asm-mips/txx9/generic.h
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -8,8 +8,8 @@
 #ifndef __ASM_TXX9_GENERIC_H
 #define __ASM_TXX9_GENERIC_H
 
-#include <linux/init.h>
-#include <linux/ioport.h>	/* for struct resource */
+#include <linaos/init.h>
+#include <linaos/ioport.h>	/* for struct resource */
 
 extern struct resource txx9_ce_res[];
 #define TXX9_CE(n)	(unsigned long)(txx9_ce_res[(n)].start)

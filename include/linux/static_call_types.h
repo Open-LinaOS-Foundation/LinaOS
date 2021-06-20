@@ -2,9 +2,9 @@
 #ifndef _STATIC_CALL_TYPES_H
 #define _STATIC_CALL_TYPES_H
 
-#include <linux/types.h>
-#include <linux/stringify.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/stringify.h>
+#include <linaos/compiler.h>
 
 #define STATIC_CALL_KEY_PREFIX		__SCK__
 #define STATIC_CALL_KEY_PREFIX_STR	__stringify(STATIC_CALL_KEY_PREFIX)

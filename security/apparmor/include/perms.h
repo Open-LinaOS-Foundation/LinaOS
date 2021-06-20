@@ -10,7 +10,7 @@
 #ifndef __AA_PERM_H
 #define __AA_PERM_H
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 #include "label.h"
 
 #define AA_MAY_EXEC		MAY_EXEC

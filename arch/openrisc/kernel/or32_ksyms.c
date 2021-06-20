@@ -2,7 +2,7 @@
 /*
  * OpenRISC or32_ksyms.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -11,17 +11,17 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/export.h>
-#include <linux/elfcore.h>
-#include <linux/sched.h>
-#include <linux/in6.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/semaphore.h>
-#include <linux/pgtable.h>
+#include <linaos/export.h>
+#include <linaos/elfcore.h>
+#include <linaos/sched.h>
+#include <linaos/in6.h>
+#include <linaos/interrupt.h>
+#include <linaos/vmalloc.h>
+#include <linaos/semaphore.h>
+#include <linaos/pgtable.h>
 
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/checksum.h>
 #include <asm/io.h>
 #include <asm/hardirq.h>

@@ -1,9 +1,9 @@
 /*
- * include/linux/superhyway.h
+ * include/linaos/superhyway.h
  *
  * SuperHyway Bus definitions
  *
- * Copyright (C) 2004, 2005  Paul Mundt <lethal@linux-sh.org>
+ * Copyright (C) 2004, 2005  Paul Mundt <lethal@linaos-sh.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -12,7 +12,7 @@
 #ifndef __LINUX_SUPERHYWAY_H
 #define __LINUX_SUPERHYWAY_H
 
-#include <linux/device.h>
+#include <linaos/device.h>
 
 /*
  * SuperHyway IDs

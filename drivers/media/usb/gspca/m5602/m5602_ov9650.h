@@ -3,8 +3,8 @@
  * Driver for the ov9650 sensor
  *
  * Copyright (C) 2008 Erik Andrén
- * Copyright (C) 2007 Ilyes Gouta. Based on the m5603x Linux Driver Project.
- * Copyright (C) 2005 m5603x Linux Driver Project <m5602@x3ng.com.br>
+ * Copyright (C) 2007 Ilyes Gouta. Based on the m5603x LinaOS Driver Project.
+ * Copyright (C) 2005 m5603x LinaOS Driver Project <m5602@x3ng.com.br>
  *
  * Portions of code to USB interface and ALi driver software,
  * Copyright (c) 2006 Willem Duinker
@@ -15,7 +15,7 @@
 #ifndef M5602_OV9650_H_
 #define M5602_OV9650_H_
 
-#include <linux/dmi.h>
+#include <linaos/dmi.h>
 #include "m5602_sensor.h"
 
 /*****************************************************************************/

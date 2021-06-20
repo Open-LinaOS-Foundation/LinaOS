@@ -3,7 +3,7 @@
 #define __S390_EXTABLE_H
 
 #include <asm/ptrace.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 /*
  * The exception table consists of three addresses:

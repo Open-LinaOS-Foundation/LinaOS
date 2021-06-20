@@ -7,19 +7,19 @@
  *   Author: Peter Griffin <peter.griffin@linaro.org>
  *
  */
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dvb/dmx.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dvb/dmx.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/wait.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

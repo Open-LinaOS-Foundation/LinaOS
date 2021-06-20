@@ -14,11 +14,11 @@
 
 #ifdef CONFIG_NUMA
 
-#include <linux/cache.h>
-#include <linux/cpumask.h>
-#include <linux/numa.h>
-#include <linux/smp.h>
-#include <linux/threads.h>
+#include <linaos/cache.h>
+#include <linaos/cpumask.h>
+#include <linaos/numa.h>
+#include <linaos/smp.h>
+#include <linaos/threads.h>
 
 #include <asm/mmzone.h>
 

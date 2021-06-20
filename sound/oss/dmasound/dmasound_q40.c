@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/sound/oss/dmasound/dmasound_q40.c
+ *  linaos/sound/oss/dmasound/dmasound_q40.c
  *
  *  Q40 DMA Sound Driver
  *
- *  See linux/sound/oss/dmasound/dmasound_core.c for copyright and credits
+ *  See linaos/sound/oss/dmasound/dmasound_core.c for copyright and credits
  *  prior to 28/01/2001
  *
  *  28/01/2001 [0.1] Iain Sandoe
@@ -15,13 +15,13 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/soundcard.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/soundcard.h>
+#include <linaos/interrupt.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/q40ints.h>
 #include <asm/q40_master.h>
 

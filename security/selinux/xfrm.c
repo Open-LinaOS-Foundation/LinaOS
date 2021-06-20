@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  NSA Security-Enhanced Linux (SELinux) security module
+ *  NSA Security-Enhanced LinaOS (SELinaOS) security module
  *
- *  This file contains the SELinux XFRM hook function implementations.
+ *  This file contains the SELinaOS XFRM hook function implementations.
  *
  *  Authors:  Serge Hallyn <sergeh@us.ibm.com>
  *	      Trent Jaeger <jaegert@us.ibm.com>
@@ -28,31 +28,31 @@
  *   2. Emulating a reasonable SO_PEERSEC across machines
  *   3. Testing addition of sk_policy's with security context via setsockopt
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/security.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/xfrm.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/security.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/skbuff.h>
+#include <linaos/xfrm.h>
 #include <net/xfrm.h>
 #include <net/checksum.h>
 #include <net/udp.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #include "avc.h"
 #include "objsec.h"
 #include "xfrm.h"
 
 /* Labeled XFRM instance counter */
-atomic_t selinux_xfrm_refcount __read_mostly = ATOMIC_INIT(0);
+atomic_t selinaos_xfrm_refcount __read_mostly = ATOMIC_INIT(0);
 
 /*
- * Returns true if the context is an LSM/SELinux context.
+ * Returns true if the context is an LSM/SELinaOS context.
  */
-static inline int selinux_authorizable_ctx(struct xfrm_sec_ctx *ctx)
+static inline int selinaos_authorizable_ctx(struct xfrm_sec_ctx *ctx)
 {
 	return (ctx &&
 		(ctx->ctx_doi == XFRM_SC_DOI_LSM) &&
@@ -60,23 +60,23 @@ static inline int selinux_authorizable_ctx(struct xfrm_sec_ctx *ctx)
 }
 
 /*
- * Returns true if the xfrm contains a security blob for SELinux.
+ * Returns true if the xfrm contains a security blob for SELinaOS.
  */
-static inline int selinux_authorizable_xfrm(struct xfrm_state *x)
+static inline int selinaos_authorizable_xfrm(struct xfrm_state *x)
 {
-	return selinux_authorizable_ctx(x->security);
+	return selinaos_authorizable_ctx(x->security);
 }
 
 /*
  * Allocates a xfrm_sec_state and populates it using the supplied security
  * xfrm_user_sec_ctx context.
  */
-static int selinux_xfrm_alloc_user(struct xfrm_sec_ctx **ctxp,
+static int selinaos_xfrm_alloc_user(struct xfrm_sec_ctx **ctxp,
 				   struct xfrm_user_sec_ctx *uctx,
 				   gfp_t gfp)
 {
 	int rc;
-	const struct task_security_struct *tsec = selinux_cred(current_cred());
+	const struct task_security_struct *tsec = selinaos_cred(current_cred());
 	struct xfrm_sec_ctx *ctx = NULL;
 	u32 str_len;
 
@@ -98,19 +98,19 @@ static int selinux_xfrm_alloc_user(struct xfrm_sec_ctx **ctxp,
 	ctx->ctx_len = str_len;
 	memcpy(ctx->ctx_str, &uctx[1], str_len);
 	ctx->ctx_str[str_len] = '\0';
-	rc = security_context_to_sid(&selinux_state, ctx->ctx_str, str_len,
+	rc = security_context_to_sid(&selinaos_state, ctx->ctx_str, str_len,
 				     &ctx->ctx_sid, gfp);
 	if (rc)
 		goto err;
 
-	rc = avc_has_perm(&selinux_state,
+	rc = avc_has_perm(&selinaos_state,
 			  tsec->sid, ctx->ctx_sid,
 			  SECCLASS_ASSOCIATION, ASSOCIATION__SETCONTEXT, NULL);
 	if (rc)
 		goto err;
 
 	*ctxp = ctx;
-	atomic_inc(&selinux_xfrm_refcount);
+	atomic_inc(&selinaos_xfrm_refcount);
 	return 0;
 
 err:
@@ -121,26 +121,26 @@ err:
 /*
  * Free the xfrm_sec_ctx structure.
  */
-static void selinux_xfrm_free(struct xfrm_sec_ctx *ctx)
+static void selinaos_xfrm_free(struct xfrm_sec_ctx *ctx)
 {
 	if (!ctx)
 		return;
 
-	atomic_dec(&selinux_xfrm_refcount);
+	atomic_dec(&selinaos_xfrm_refcount);
 	kfree(ctx);
 }
 
 /*
  * Authorize the deletion of a labeled SA or policy rule.
  */
-static int selinux_xfrm_delete(struct xfrm_sec_ctx *ctx)
+static int selinaos_xfrm_delete(struct xfrm_sec_ctx *ctx)
 {
-	const struct task_security_struct *tsec = selinux_cred(current_cred());
+	const struct task_security_struct *tsec = selinaos_cred(current_cred());
 
 	if (!ctx)
 		return 0;
 
-	return avc_has_perm(&selinux_state,
+	return avc_has_perm(&selinaos_state,
 			    tsec->sid, ctx->ctx_sid,
 			    SECCLASS_ASSOCIATION, ASSOCIATION__SETCONTEXT,
 			    NULL);
@@ -150,7 +150,7 @@ static int selinux_xfrm_delete(struct xfrm_sec_ctx *ctx)
  * LSM hook implementation that authorizes that a flow can use a xfrm policy
  * rule.
  */
-int selinux_xfrm_policy_lookup(struct xfrm_sec_ctx *ctx, u32 fl_secid, u8 dir)
+int selinaos_xfrm_policy_lookup(struct xfrm_sec_ctx *ctx, u32 fl_secid, u8 dir)
 {
 	int rc;
 
@@ -160,10 +160,10 @@ int selinux_xfrm_policy_lookup(struct xfrm_sec_ctx *ctx, u32 fl_secid, u8 dir)
 		return 0;
 
 	/* Context sid is either set to label or ANY_ASSOC */
-	if (!selinux_authorizable_ctx(ctx))
+	if (!selinaos_authorizable_ctx(ctx))
 		return -EINVAL;
 
-	rc = avc_has_perm(&selinux_state,
+	rc = avc_has_perm(&selinaos_state,
 			  fl_secid, ctx->ctx_sid,
 			  SECCLASS_ASSOCIATION, ASSOCIATION__POLMATCH, NULL);
 	return (rc == -EACCES ? -ESRCH : rc);
@@ -173,7 +173,7 @@ int selinux_xfrm_policy_lookup(struct xfrm_sec_ctx *ctx, u32 fl_secid, u8 dir)
  * LSM hook implementation that authorizes that a state matches
  * the given policy, flow combo.
  */
-int selinux_xfrm_state_pol_flow_match(struct xfrm_state *x,
+int selinaos_xfrm_state_pol_flow_match(struct xfrm_state *x,
 				      struct xfrm_policy *xp,
 				      const struct flowi_common *flic)
 {
@@ -192,8 +192,8 @@ int selinux_xfrm_state_pol_flow_match(struct xfrm_state *x,
 			/* unlabeled SA and labeled policy can't match */
 			return 0;
 		else
-			if (!selinux_authorizable_xfrm(x))
-				/* Not a SELinux-labeled SA */
+			if (!selinaos_authorizable_xfrm(x))
+				/* Not a SELinaOS-labeled SA */
 				return 0;
 
 	state_sid = x->security->ctx_sid;
@@ -204,13 +204,13 @@ int selinux_xfrm_state_pol_flow_match(struct xfrm_state *x,
 
 	/* We don't need a separate SA Vs. policy polmatch check since the SA
 	 * is now of the same label as the flow and a flow Vs. policy polmatch
-	 * check had already happened in selinux_xfrm_policy_lookup() above. */
-	return (avc_has_perm(&selinux_state, flic_sid, state_sid,
+	 * check had already happened in selinaos_xfrm_policy_lookup() above. */
+	return (avc_has_perm(&selinaos_state, flic_sid, state_sid,
 			     SECCLASS_ASSOCIATION, ASSOCIATION__SENDTO,
 			     NULL) ? 0 : 1);
 }
 
-static u32 selinux_xfrm_skb_sid_egress(struct sk_buff *skb)
+static u32 selinaos_xfrm_skb_sid_egress(struct sk_buff *skb)
 {
 	struct dst_entry *dst = skb_dst(skb);
 	struct xfrm_state *x;
@@ -218,13 +218,13 @@ static u32 selinux_xfrm_skb_sid_egress(struct sk_buff *skb)
 	if (dst == NULL)
 		return SECSID_NULL;
 	x = dst->xfrm;
-	if (x == NULL || !selinux_authorizable_xfrm(x))
+	if (x == NULL || !selinaos_authorizable_xfrm(x))
 		return SECSID_NULL;
 
 	return x->security->ctx_sid;
 }
 
-static int selinux_xfrm_skb_sid_ingress(struct sk_buff *skb,
+static int selinaos_xfrm_skb_sid_ingress(struct sk_buff *skb,
 					u32 *sid, int ckall)
 {
 	u32 sid_session = SECSID_NULL;
@@ -235,7 +235,7 @@ static int selinux_xfrm_skb_sid_ingress(struct sk_buff *skb,
 
 		for (i = sp->len - 1; i >= 0; i--) {
 			struct xfrm_state *x = sp->xvec[i];
-			if (selinux_authorizable_xfrm(x)) {
+			if (selinaos_authorizable_xfrm(x)) {
 				struct xfrm_sec_ctx *ctx = x->security;
 
 				if (sid_session == SECSID_NULL) {
@@ -259,22 +259,22 @@ out:
  * LSM hook implementation that checks and/or returns the xfrm sid for the
  * incoming packet.
  */
-int selinux_xfrm_decode_session(struct sk_buff *skb, u32 *sid, int ckall)
+int selinaos_xfrm_decode_session(struct sk_buff *skb, u32 *sid, int ckall)
 {
 	if (skb == NULL) {
 		*sid = SECSID_NULL;
 		return 0;
 	}
-	return selinux_xfrm_skb_sid_ingress(skb, sid, ckall);
+	return selinaos_xfrm_skb_sid_ingress(skb, sid, ckall);
 }
 
-int selinux_xfrm_skb_sid(struct sk_buff *skb, u32 *sid)
+int selinaos_xfrm_skb_sid(struct sk_buff *skb, u32 *sid)
 {
 	int rc;
 
-	rc = selinux_xfrm_skb_sid_ingress(skb, sid, 0);
+	rc = selinaos_xfrm_skb_sid_ingress(skb, sid, 0);
 	if (rc == 0 && *sid == SECSID_NULL)
-		*sid = selinux_xfrm_skb_sid_egress(skb);
+		*sid = selinaos_xfrm_skb_sid_egress(skb);
 
 	return rc;
 }
@@ -282,18 +282,18 @@ int selinux_xfrm_skb_sid(struct sk_buff *skb, u32 *sid)
 /*
  * LSM hook implementation that allocs and transfers uctx spec to xfrm_policy.
  */
-int selinux_xfrm_policy_alloc(struct xfrm_sec_ctx **ctxp,
+int selinaos_xfrm_policy_alloc(struct xfrm_sec_ctx **ctxp,
 			      struct xfrm_user_sec_ctx *uctx,
 			      gfp_t gfp)
 {
-	return selinux_xfrm_alloc_user(ctxp, uctx, gfp);
+	return selinaos_xfrm_alloc_user(ctxp, uctx, gfp);
 }
 
 /*
  * LSM hook implementation that copies security data structure from old to new
  * for policy cloning.
  */
-int selinux_xfrm_policy_clone(struct xfrm_sec_ctx *old_ctx,
+int selinaos_xfrm_policy_clone(struct xfrm_sec_ctx *old_ctx,
 			      struct xfrm_sec_ctx **new_ctxp)
 {
 	struct xfrm_sec_ctx *new_ctx;
@@ -305,7 +305,7 @@ int selinux_xfrm_policy_clone(struct xfrm_sec_ctx *old_ctx,
 			  GFP_ATOMIC);
 	if (!new_ctx)
 		return -ENOMEM;
-	atomic_inc(&selinux_xfrm_refcount);
+	atomic_inc(&selinaos_xfrm_refcount);
 	*new_ctxp = new_ctx;
 
 	return 0;
@@ -314,34 +314,34 @@ int selinux_xfrm_policy_clone(struct xfrm_sec_ctx *old_ctx,
 /*
  * LSM hook implementation that frees xfrm_sec_ctx security information.
  */
-void selinux_xfrm_policy_free(struct xfrm_sec_ctx *ctx)
+void selinaos_xfrm_policy_free(struct xfrm_sec_ctx *ctx)
 {
-	selinux_xfrm_free(ctx);
+	selinaos_xfrm_free(ctx);
 }
 
 /*
  * LSM hook implementation that authorizes deletion of labeled policies.
  */
-int selinux_xfrm_policy_delete(struct xfrm_sec_ctx *ctx)
+int selinaos_xfrm_policy_delete(struct xfrm_sec_ctx *ctx)
 {
-	return selinux_xfrm_delete(ctx);
+	return selinaos_xfrm_delete(ctx);
 }
 
 /*
  * LSM hook implementation that allocates a xfrm_sec_state, populates it using
  * the supplied security context, and assigns it to the xfrm_state.
  */
-int selinux_xfrm_state_alloc(struct xfrm_state *x,
+int selinaos_xfrm_state_alloc(struct xfrm_state *x,
 			     struct xfrm_user_sec_ctx *uctx)
 {
-	return selinux_xfrm_alloc_user(&x->security, uctx, GFP_KERNEL);
+	return selinaos_xfrm_alloc_user(&x->security, uctx, GFP_KERNEL);
 }
 
 /*
  * LSM hook implementation that allocates a xfrm_sec_state and populates based
  * on a secid.
  */
-int selinux_xfrm_state_alloc_acquire(struct xfrm_state *x,
+int selinaos_xfrm_state_alloc_acquire(struct xfrm_state *x,
 				     struct xfrm_sec_ctx *polsec, u32 secid)
 {
 	int rc;
@@ -355,7 +355,7 @@ int selinux_xfrm_state_alloc_acquire(struct xfrm_state *x,
 	if (secid == 0)
 		return -EINVAL;
 
-	rc = security_sid_to_context(&selinux_state, secid, &ctx_str,
+	rc = security_sid_to_context(&selinaos_state, secid, &ctx_str,
 				     &str_len);
 	if (rc)
 		return rc;
@@ -373,7 +373,7 @@ int selinux_xfrm_state_alloc_acquire(struct xfrm_state *x,
 	memcpy(ctx->ctx_str, ctx_str, str_len);
 
 	x->security = ctx;
-	atomic_inc(&selinux_xfrm_refcount);
+	atomic_inc(&selinaos_xfrm_refcount);
 out:
 	kfree(ctx_str);
 	return rc;
@@ -382,17 +382,17 @@ out:
 /*
  * LSM hook implementation that frees xfrm_state security information.
  */
-void selinux_xfrm_state_free(struct xfrm_state *x)
+void selinaos_xfrm_state_free(struct xfrm_state *x)
 {
-	selinux_xfrm_free(x->security);
+	selinaos_xfrm_free(x->security);
 }
 
 /*
  * LSM hook implementation that authorizes deletion of labeled SAs.
  */
-int selinux_xfrm_state_delete(struct xfrm_state *x)
+int selinaos_xfrm_state_delete(struct xfrm_state *x)
 {
-	return selinux_xfrm_delete(x->security);
+	return selinaos_xfrm_delete(x->security);
 }
 
 /*
@@ -402,7 +402,7 @@ int selinux_xfrm_state_delete(struct xfrm_state *x)
  * we need to check for unlabelled access since this may not have
  * gone thru the IPSec process.
  */
-int selinux_xfrm_sock_rcv_skb(u32 sk_sid, struct sk_buff *skb,
+int selinaos_xfrm_sock_rcv_skb(u32 sk_sid, struct sk_buff *skb,
 			      struct common_audit_data *ad)
 {
 	int i;
@@ -413,7 +413,7 @@ int selinux_xfrm_sock_rcv_skb(u32 sk_sid, struct sk_buff *skb,
 		for (i = 0; i < sp->len; i++) {
 			struct xfrm_state *x = sp->xvec[i];
 
-			if (x && selinux_authorizable_xfrm(x)) {
+			if (x && selinaos_authorizable_xfrm(x)) {
 				struct xfrm_sec_ctx *ctx = x->security;
 				peer_sid = ctx->ctx_sid;
 				break;
@@ -424,7 +424,7 @@ int selinux_xfrm_sock_rcv_skb(u32 sk_sid, struct sk_buff *skb,
 	/* This check even when there's no association involved is intended,
 	 * according to Trent Jaeger, to make sure a process can't engage in
 	 * non-IPsec communication unless explicitly allowed by policy. */
-	return avc_has_perm(&selinux_state,
+	return avc_has_perm(&selinaos_state,
 			    sk_sid, peer_sid,
 			    SECCLASS_ASSOCIATION, ASSOCIATION__RECVFROM, ad);
 }
@@ -434,9 +434,9 @@ int selinux_xfrm_sock_rcv_skb(u32 sk_sid, struct sk_buff *skb,
  * If we have no security association, then we need to determine
  * whether the socket is allowed to send to an unlabelled destination.
  * If we do have a authorizable security association, then it has already been
- * checked in the selinux_xfrm_state_pol_flow_match hook above.
+ * checked in the selinaos_xfrm_state_pol_flow_match hook above.
  */
-int selinux_xfrm_postroute_last(u32 sk_sid, struct sk_buff *skb,
+int selinaos_xfrm_postroute_last(u32 sk_sid, struct sk_buff *skb,
 				struct common_audit_data *ad, u8 proto)
 {
 	struct dst_entry *dst;
@@ -460,7 +460,7 @@ int selinux_xfrm_postroute_last(u32 sk_sid, struct sk_buff *skb,
 		for (iter = dst; iter != NULL; iter = xfrm_dst_child(iter)) {
 			struct xfrm_state *x = iter->xfrm;
 
-			if (x && selinux_authorizable_xfrm(x))
+			if (x && selinaos_authorizable_xfrm(x))
 				return 0;
 		}
 	}
@@ -468,6 +468,6 @@ int selinux_xfrm_postroute_last(u32 sk_sid, struct sk_buff *skb,
 	/* This check even when there's no association involved is intended,
 	 * according to Trent Jaeger, to make sure a process can't engage in
 	 * non-IPsec communication unless explicitly allowed by policy. */
-	return avc_has_perm(&selinux_state, sk_sid, SECINITSID_UNLABELED,
+	return avc_has_perm(&selinaos_state, sk_sid, SECINITSID_UNLABELED,
 			    SECCLASS_ASSOCIATION, ASSOCIATION__SENDTO, ad);
 }

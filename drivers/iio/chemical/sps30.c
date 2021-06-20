@@ -8,16 +8,16 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/crc8.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/crc8.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #define SPS30_CRC8_POLYNOMIAL 0x31
 /* max number of bytes needed to store PM measurements or serial string */

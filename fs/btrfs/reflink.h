@@ -3,7 +3,7 @@
 #ifndef BTRFS_REFLINK_H
 #define BTRFS_REFLINK_H
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 loff_t btrfs_remap_file_range(struct file *file_in, loff_t pos_in,
 			      struct file *file_out, loff_t pos_out,

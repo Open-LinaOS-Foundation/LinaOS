@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
+#include <linaos/kernel.h>
+#include <linaos/bitops.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/regmap.h>
+#include <linaos/reset-controller.h>
 
 #include <dt-bindings/clock/qcom,mmcc-msm8998.h>
 
@@ -1060,7 +1060,7 @@ static const struct freq_tbl ftbl_axi_clk_src[] = {
 	{ }
 };
 
-/* RO to linux */
+/* RO to linaos */
 static struct clk_rcg2 axi_clk_src = {
 	.cmd_rcgr = 0xd000,
 	.hid_width = 5,

@@ -2,7 +2,7 @@
 Legacy GPIO Interfaces
 ======================
 
-This provides an overview of GPIO access conventions on Linux.
+This provides an overview of GPIO access conventions on LinaOS.
 
 These calls use the gpio_* naming prefix.  No other calls should use that
 prefix, or the related __gpio_* prefix.
@@ -12,7 +12,7 @@ What is a GPIO?
 ===============
 A "General Purpose Input/Output" (GPIO) is a flexible software-controlled
 digital signal.  They are provided from many kinds of chip, and are familiar
-to Linux developers working with embedded and custom hardware.  Each GPIO
+to LinaOS developers working with embedded and custom hardware.  Each GPIO
 represents a bit connected to a particular pin, or "ball" on Ball Grid Array
 (BGA) packages.  Board schematics show which external hardware connects to
 which GPIOs.  Drivers can be written generically, so that board setup code
@@ -80,7 +80,7 @@ standard GPIO calls should have Kconfig entries which depend on GPIOLIB.  The
 GPIO calls are available, either as "real code" or as optimized-away stubs,
 when drivers use the include file:
 
-	#include <linux/gpio.h>
+	#include <linaos/gpio.h>
 
 If you stick to this convention then it'll be easier for other developers to
 see what your code is doing, and help maintain it.
@@ -154,7 +154,7 @@ gpiolib framework.
 Setting the direction can fail if the GPIO number is invalid, or when
 that particular GPIO can't be used in that mode.  It's generally a bad
 idea to rely on boot firmware to have set the direction correctly, since
-it probably wasn't validated to do more than boot Linux.  (Similarly,
+it probably wasn't validated to do more than boot LinaOS.  (Similarly,
 that board setup code probably needs to multiplex that pin as a GPIO,
 and configure pullups/pulldowns appropriately.)
 
@@ -490,7 +490,7 @@ this is highly chip-specific and nonportable.  One platform might not need
 explicit multiplexing; another might have just two options for use of any
 given pin; another might have eight options per pin; another might be able
 to route a given GPIO to any one of several pins.  (Yes, those examples all
-come from systems that run Linux today.)
+come from systems that run LinaOS today.)
 
 Related to multiplexing is configuration and enabling of the pullups or
 pulldowns integrated on some platforms.  Not all platforms support them,

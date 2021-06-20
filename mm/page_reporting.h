@@ -2,13 +2,13 @@
 #ifndef _MM_PAGE_REPORTING_H
 #define _MM_PAGE_REPORTING_H
 
-#include <linux/mmzone.h>
-#include <linux/pageblock-flags.h>
-#include <linux/page-isolation.h>
-#include <linux/jump_label.h>
-#include <linux/slab.h>
-#include <linux/pgtable.h>
-#include <linux/scatterlist.h>
+#include <linaos/mmzone.h>
+#include <linaos/pageblock-flags.h>
+#include <linaos/page-isolation.h>
+#include <linaos/jump_label.h>
+#include <linaos/slab.h>
+#include <linaos/pgtable.h>
+#include <linaos/scatterlist.h>
 
 #define PAGE_REPORTING_MIN_ORDER	pageblock_order
 

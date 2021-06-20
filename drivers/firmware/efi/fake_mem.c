@@ -11,12 +11,12 @@
  * memmap.
  */
 
-#include <linux/kernel.h>
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/types.h>
-#include <linux/sort.h>
+#include <linaos/kernel.h>
+#include <linaos/efi.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/types.h>
+#include <linaos/sort.h>
 #include "fake_mem.h"
 
 struct efi_mem_range efi_fake_mems[EFI_MAX_FAKEMEM];

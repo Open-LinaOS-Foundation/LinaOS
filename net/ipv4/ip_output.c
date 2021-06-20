@@ -9,12 +9,12 @@
  * Authors:	Ross Biro
  *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
  *		Donald Becker, <becker@super.org>
- *		Alan Cox, <Alan.Cox@linux.org>
+ *		Alan Cox, <Alan.Cox@linaos.org>
  *		Richard Underwood
  *		Stefan Becker, <stefanb@yello.ping.de>
  *		Jorge Cwik, <jorge@laser.satlink.net>
  *		Arnt Gulbrandsen, <agulbra@nvg.unit.no>
- *		Hirokazu Takahashi, <taka@valinux.co.jp>
+ *		Hirokazu Takahashi, <taka@valinaos.co.jp>
  *
  *	See ip_input.c for original log
  *
@@ -43,32 +43,32 @@
  *		Hirokazu Takahashi:	sendfile() on UDP works now.
  */
 
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/highmem.h>
+#include <linaos/slab.h>
 
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/init.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/proc_fs.h>
+#include <linaos/stat.h>
+#include <linaos/init.h>
 
 #include <net/snmp.h>
 #include <net/ip.h>
 #include <net/protocol.h>
 #include <net/route.h>
 #include <net/xfrm.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/sock.h>
 #include <net/arp.h>
 #include <net/icmp.h>
@@ -76,12 +76,12 @@
 #include <net/inetpeer.h>
 #include <net/inet_ecn.h>
 #include <net/lwtunnel.h>
-#include <linux/bpf-cgroup.h>
-#include <linux/igmp.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/netlink.h>
-#include <linux/tcp.h>
+#include <linaos/bpf-cgroup.h>
+#include <linaos/igmp.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_bridge.h>
+#include <linaos/netlink.h>
+#include <linaos/tcp.h>
 
 static int
 ip_fragment(struct net *net, struct sock *sk, struct sk_buff *skb,

@@ -12,7 +12,7 @@
  *
  *  Group scheduling enhancements by Srivatsa Vaddagiri
  *  Copyright IBM Corporation, 2007
- *  Author: Srivatsa Vaddagiri <vatsa@linux.vnet.ibm.com>
+ *  Author: Srivatsa Vaddagiri <vatsa@linaos.vnet.ibm.com>
  *
  *  Scaled math optimizations by Thomas Gleixner
  *  Copyright (C) 2007, Thomas Gleixner <tglx@linutronix.de>

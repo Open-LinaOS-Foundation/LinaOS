@@ -2,7 +2,7 @@
 #ifndef __PCI_BRIDGE_EMUL_H__
 #define __PCI_BRIDGE_EMUL_H__
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /* PCI configuration space of a PCI-to-PCI bridge. */
 struct pci_bridge_emul_conf {

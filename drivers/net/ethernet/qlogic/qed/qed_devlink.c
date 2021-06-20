@@ -4,9 +4,9 @@
  * Copyright (C) 2020 Marvell International Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/qed/qed_if.h>
-#include <linux/vmalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/qed/qed_if.h>
+#include <linaos/vmalloc.h>
 #include "qed.h"
 #include "qed_devlink.h"
 

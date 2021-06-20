@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-ep93xx/micro9.c
+ *  linaos/arch/arm/mach-ep93xx/micro9.c
  *
  * Copyright (C) 2006 Contec Steuerungstechnik & Automation GmbH
  *                    Manfred Gruber <m.gruber@tirol.com>
@@ -8,10 +8,10 @@
  *                    Hubert Feurstein <hubert.feurstein@contec.at>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
 
 #include "hardware.h"
 

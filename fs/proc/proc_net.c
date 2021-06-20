@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/proc/net.c
+ *  linaos/fs/proc/net.c
  *
  *  Copyright (C) 2007
  *
@@ -9,23 +9,23 @@
  *  proc net directory handling functions
  */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/mount.h>
-#include <linux/nsproxy.h>
-#include <linux/uidgid.h>
+#include <linaos/errno.h>
+#include <linaos/time.h>
+#include <linaos/proc_fs.h>
+#include <linaos/stat.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
+#include <linaos/mount.h>
+#include <linaos/nsproxy.h>
+#include <linaos/uidgid.h>
 #include <net/net_namespace.h>
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 
 #include "internal.h"
 

@@ -3,22 +3,22 @@
  * CAPI 2.0 convert capi message to capi message struct
  *
  * From CAPI 2.0 Development Kit AVM 1995 (msg.c)
- * Rewritten for Linux 1996 by Carsten Paeth <calle@calle.de>
+ * Rewritten for LinaOS 1996 by Carsten Paeth <calle@calle.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/isdn/capiutil.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/isdn/capiutil.h>
+#include <linaos/slab.h>
 
 #include "kcapi.h"
 

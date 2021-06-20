@@ -8,7 +8,7 @@
 /*
  * Core file format: The core file is written in such a way that gdb
  * can understand it and provide useful information to the user (under
- * linux we use the `trad-core' bfd).  The file contents are as follows:
+ * linaos we use the `trad-core' bfd).  The file contents are as follows:
  *
  *  upage: 1 page consisting of a user struct that tells gdb
  *	what is present in the file.  Directly after this is a

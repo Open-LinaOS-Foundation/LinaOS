@@ -3,7 +3,7 @@
  * Copyright © 2016-2019 Intel Corporation
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "gt/intel_gt.h"
 #include "intel_huc.h"

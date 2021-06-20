@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-// linux/arch/arm/mach-s3c2440/mach-nexcoder.c
+// linaos/arch/arm/mach-s3c2440/mach-nexcoder.c
 //
 // Copyright (c) 2004 Nex Vision
 //   Guillaume GOURAT <guillaume.gourat@nexvision.tv>
@@ -8,20 +8,20 @@
 //     15-10-2004 GG  Created initial version
 //     12-03-2005 BJD Updated for release
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/string.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/gpio.h>
+#include <linaos/string.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
 
-#include <linux/mtd/map.h>
+#include <linaos/mtd/map.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -34,7 +34,7 @@
 //#include <asm/debug-ll.h>
 #include "regs-gpio.h"
 #include "gpio-samsung.h"
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 
 #include "gpio-cfg.h"
 #include "devs.h"

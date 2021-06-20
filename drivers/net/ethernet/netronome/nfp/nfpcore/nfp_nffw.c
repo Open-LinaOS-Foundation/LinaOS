@@ -8,8 +8,8 @@
  *          Francois H. Theron <francois.theron@netronome.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 
 #include "nfp.h"
 #include "nfp_cpp.h"

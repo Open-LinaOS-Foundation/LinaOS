@@ -11,7 +11,7 @@
 #ifndef __LINUX_PINCTRL_PINCONF_H
 #define __LINUX_PINCTRL_PINCONF_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct pinctrl_dev;
 struct seq_file;

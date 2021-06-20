@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/fpga.c
+ * linaos/arch/arm/mach-omap1/fpga.c
  *
  * Interrupt handler for OMAP-1510 Innovator FPGA
  *
@@ -13,13 +13,13 @@
  * Copyright (C) 2004 Nokia Corporation by Tony Lindrgen <tony@atomide.com>
  */
 
-#include <linux/types.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <linaos/types.h>
+#include <linaos/gpio.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
 
 #include <asm/irq.h>
 #include <asm/mach/irq.h>

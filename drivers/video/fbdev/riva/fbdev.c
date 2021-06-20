@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/riva/fbdev.c - nVidia RIVA 128/TNT/TNT2 fb driver
+ * linaos/drivers/video/riva/fbdev.c - nVidia RIVA 128/TNT/TNT2 fb driver
  *
  * Maintained by Ani Joshi <ajoshi@shell.unixbox.com>
  *
@@ -29,18 +29,18 @@
  *	doublescan modes are broken
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/backlight.h>
-#include <linux/bitrev.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/backlight.h>
+#include <linaos/bitrev.h>
 #ifdef CONFIG_PMAC_BACKLIGHT
 #include <asm/machdep.h>
 #include <asm/backlight.h>

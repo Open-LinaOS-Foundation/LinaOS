@@ -6,10 +6,10 @@
  * Bongsu Jeon <bongsu.jeon@samsung.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/miscdevice.h>
+#include <linaos/mutex.h>
 #include <net/nfc/nci_core.h>
 
 enum virtual_ncidev_mode {

@@ -15,7 +15,7 @@
 #ifndef __LINUX_MFD_MAX77686_H
 #define __LINUX_MFD_MAX77686_H
 
-#include <linux/regulator/consumer.h>
+#include <linaos/regulator/consumer.h>
 
 /* MAX77686 regulator IDs */
 enum max77686_regulators {

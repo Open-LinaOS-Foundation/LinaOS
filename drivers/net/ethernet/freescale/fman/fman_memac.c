@@ -35,11 +35,11 @@
 #include "fman_memac.h"
 #include "fman.h"
 
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/of_mdio.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/phy.h>
+#include <linaos/phy_fixed.h>
+#include <linaos/of_mdio.h>
 
 /* PCS registers */
 #define MDIO_SGMII_CR			0x00

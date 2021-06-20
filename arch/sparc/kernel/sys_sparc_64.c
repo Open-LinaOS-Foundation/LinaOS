@@ -1,35 +1,35 @@
 // SPDX-License-Identifier: GPL-2.0
-/* linux/arch/sparc64/kernel/sys_sparc.c
+/* linaos/arch/sparc64/kernel/sys_sparc.c
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/sparc
+ * have a non-standard calling sequence on the LinaOS/sparc
  * platform.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/debug.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/mman.h>
-#include <linux/utsname.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/ipc.h>
-#include <linux/personality.h>
-#include <linux/random.h>
-#include <linux/export.h>
-#include <linux/context_tracking.h>
-#include <linux/timex.h>
-#include <linux/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/debug.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/mm.h>
+#include <linaos/sem.h>
+#include <linaos/msg.h>
+#include <linaos/shm.h>
+#include <linaos/stat.h>
+#include <linaos/mman.h>
+#include <linaos/utsname.h>
+#include <linaos/smp.h>
+#include <linaos/slab.h>
+#include <linaos/syscalls.h>
+#include <linaos/ipc.h>
+#include <linaos/personality.h>
+#include <linaos/random.h>
+#include <linaos/export.h>
+#include <linaos/context_tracking.h>
+#include <linaos/timex.h>
+#include <linaos/uaccess.h>
 
 #include <asm/utrap.h>
 #include <asm/unistd.h>
@@ -451,7 +451,7 @@ int sparc_mmap_check(unsigned long addr, unsigned long len)
 	return 0;
 }
 
-/* Linux version of mmap */
+/* LinaOS version of mmap */
 SYSCALL_DEFINE6(mmap, unsigned long, addr, unsigned long, len,
 		unsigned long, prot, unsigned long, flags, unsigned long, fd,
 		unsigned long, off)

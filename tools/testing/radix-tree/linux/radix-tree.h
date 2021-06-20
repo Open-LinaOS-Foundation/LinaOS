@@ -2,7 +2,7 @@
 #ifndef _TEST_RADIX_TREE_H
 #define _TEST_RADIX_TREE_H
 
-#include "../../../../include/linux/radix-tree.h"
+#include "../../../../include/linaos/radix-tree.h"
 
 extern int kmalloc_verbose;
 extern int test_verbose;

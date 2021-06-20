@@ -8,12 +8,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/usb.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/usb.h>
+#include <linaos/fs.h>
+#include <linaos/uaccess.h>
 
 #include "usb_mon.h"
 

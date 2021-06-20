@@ -9,8 +9,8 @@
  *  Copyright (c) 1999-2000 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/wait.h>
-#include <linux/sched.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>
 #include <sound/core.h>
 #include <sound/emux_synth.h>
 

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Definitions for talking to the PMU.  The PMU is a microcontroller
  * which controls battery charging and system power on PowerBook 3400
@@ -121,7 +121,7 @@ enum {
 /*
  * Ioctl commands for the /dev/pmu device
  */
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 
 /* no param */
 #define PMU_IOC_SLEEP		_IO('B', 0)

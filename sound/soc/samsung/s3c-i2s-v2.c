@@ -4,16 +4,16 @@
 //
 // Copyright (c) 2006 Wolfson Microelectronics PLC.
 //	Graeme Gregory graeme.gregory@wolfsonmicro.com
-//	linux@wolfsonmicro.com
+//	linaos@wolfsonmicro.com
 //
 // Copyright (c) 2008, 2007, 2004-2005 Simtec Electronics
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //	Ben Dooks <ben@simtec.co.uk>
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
 
 #include <sound/soc.h>
 #include <sound/pcm_params.h>

@@ -10,19 +10,19 @@
  * Copyright (c) 2008 QUALCOMM USA, INC.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/input/auo-pixcir-ts.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/jiffies.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/input/auo-pixcir-ts.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
 
 /*
  * Coordinate calculation:

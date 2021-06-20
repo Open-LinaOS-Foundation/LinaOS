@@ -13,13 +13,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
 #include <scsi/scsi_host.h>
 #include <net/tcp.h>
 #include <net/dst.h>
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include <net/addrconf.h>
 
 #include "t4_regs.h"

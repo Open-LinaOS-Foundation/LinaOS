@@ -2,7 +2,7 @@
 #ifndef __LINUX_KEYBOARD_H
 #define __LINUX_KEYBOARD_H
 
-#include <uapi/linux/keyboard.h>
+#include <uapi/linaos/keyboard.h>
 
 struct notifier_block;
 extern unsigned short *key_maps[MAX_NR_KEYMAPS];

@@ -27,11 +27,11 @@
 
 #include <drm/drm_mipi_dsi.h>
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_dsc.h>
 #include <drm/drm_print.h>

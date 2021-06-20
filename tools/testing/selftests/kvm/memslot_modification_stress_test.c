@@ -17,9 +17,9 @@
 #include <time.h>
 #include <poll.h>
 #include <pthread.h>
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/userfaultfd.h>
+#include <linaos/bitmap.h>
+#include <linaos/bitops.h>
+#include <linaos/userfaultfd.h>
 
 #include "perf_test_util.h"
 #include "processor.h"

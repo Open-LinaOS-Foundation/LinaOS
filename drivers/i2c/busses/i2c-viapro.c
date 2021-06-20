@@ -30,16 +30,16 @@
    Note: we assume there can only be one device, with one SMBus interface.
 */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/stddef.h>
+#include <linaos/ioport.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
 
 static struct pci_dev *vt596_pdev;
 

@@ -4,9 +4,9 @@
  */
 
 #include <net/genetlink.h>
-#include <linux/dlm.h>
-#include <linux/dlm_netlink.h>
-#include <linux/gfp.h>
+#include <linaos/dlm.h>
+#include <linaos/dlm_netlink.h>
+#include <linaos/gfp.h>
 
 #include "dlm_internal.h"
 

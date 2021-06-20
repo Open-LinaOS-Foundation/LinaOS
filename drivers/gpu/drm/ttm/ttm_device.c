@@ -27,7 +27,7 @@
 
 #define pr_fmt(fmt) "[TTM DEVICE] " fmt
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 #include <drm/ttm/ttm_device.h>
 #include <drm/ttm/ttm_tt.h>

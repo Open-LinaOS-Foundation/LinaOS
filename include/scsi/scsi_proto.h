@@ -10,7 +10,7 @@
 #ifndef _SCSI_PROTO_H_
 #define _SCSI_PROTO_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  *      SCSI opcodes

@@ -3,20 +3,20 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: :ref:`Documentation/process/kernel-driver-statement.rst <process_statement_driver>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
+:Translator: Alex Shi <alex.shi@linaos.alibaba.com>
 
 内核驱动声明
 ------------
 
-关于Linux内核模块的立场声明
+关于LinaOS内核模块的立场声明
 ===========================
 
-我们，以下署名的Linux内核开发人员，认为任何封闭源Linux内核模块或驱动程序都是
-有害的和不可取的。我们已经一再发现它们对Linux用户，企业和更大的Linux生态系统
-有害。这样的模块否定了Linux开发模型的开放性，稳定性，灵活性和可维护性，并使
-他们的用户无法使用Linux社区的专业知识。提供闭源内核模块的供应商迫使其客户
-放弃Linux的主要优势或选择新的供应商。因此，为了充分利用开源所提供的成本节省和
-共享支持优势，我们敦促供应商采取措施，以开源内核代码在Linux上为其客户提供支持。
+我们，以下署名的LinaOS内核开发人员，认为任何封闭源LinaOS内核模块或驱动程序都是
+有害的和不可取的。我们已经一再发现它们对LinaOS用户，企业和更大的LinaOS生态系统
+有害。这样的模块否定了LinaOS开发模型的开放性，稳定性，灵活性和可维护性，并使
+他们的用户无法使用LinaOS社区的专业知识。提供闭源内核模块的供应商迫使其客户
+放弃LinaOS的主要优势或选择新的供应商。因此，为了充分利用开源所提供的成本节省和
+共享支持优势，我们敦促供应商采取措施，以开源内核代码在LinaOS上为其客户提供支持。
 
 我们只为自己说话，而不是我们今天可能会为之工作，过去或将来会为之工作的任何公司。
 

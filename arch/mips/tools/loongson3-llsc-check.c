@@ -57,7 +57,7 @@
 
 static void usage(FILE *f)
 {
-	fprintf(f, "Usage: loongson3-llsc-check /path/to/vmlinux\n");
+	fprintf(f, "Usage: loongson3-llsc-check /path/to/vmlinaos\n");
 }
 
 static int se16(uint16_t x)
@@ -233,12 +233,12 @@ static int check_code(uint64_t pc, uint32_t *code, size_t sz)
 
 int main(int argc, char *argv[])
 {
-	int vmlinux_fd, status, err, i;
-	const char *vmlinux_path;
+	int vmlinaos_fd, status, err, i;
+	const char *vmlinaos_path;
 	struct stat st;
 	Elf64_Ehdr *eh;
 	Elf64_Shdr *sh;
-	void *vmlinux;
+	void *vmlinaos;
 
 	status = EXIT_FAILURE;
 
@@ -247,43 +247,43 @@ int main(int argc, char *argv[])
 		goto out_ret;
 	}
 
-	vmlinux_path = argv[1];
-	vmlinux_fd = open(vmlinux_path, O_RDONLY);
-	if (vmlinux_fd == -1) {
-		perror("Unable to open vmlinux");
+	vmlinaos_path = argv[1];
+	vmlinaos_fd = open(vmlinaos_path, O_RDONLY);
+	if (vmlinaos_fd == -1) {
+		perror("Unable to open vmlinaos");
 		goto out_ret;
 	}
 
-	err = fstat(vmlinux_fd, &st);
+	err = fstat(vmlinaos_fd, &st);
 	if (err) {
-		perror("Unable to stat vmlinux");
+		perror("Unable to stat vmlinaos");
 		goto out_close;
 	}
 
-	vmlinux = mmap(NULL, st.st_size, PROT_READ, MAP_PRIVATE, vmlinux_fd, 0);
-	if (vmlinux == MAP_FAILED) {
-		perror("Unable to mmap vmlinux");
+	vmlinaos = mmap(NULL, st.st_size, PROT_READ, MAP_PRIVATE, vmlinaos_fd, 0);
+	if (vmlinaos == MAP_FAILED) {
+		perror("Unable to mmap vmlinaos");
 		goto out_close;
 	}
 
-	eh = vmlinux;
+	eh = vmlinaos;
 	if (memcmp(eh->e_ident, ELFMAG, SELFMAG)) {
-		fprintf(stderr, "vmlinux is not an ELF?\n");
+		fprintf(stderr, "vmlinaos is not an ELF?\n");
 		goto out_munmap;
 	}
 
 	if (eh->e_ident[EI_CLASS] != ELFCLASS64) {
-		fprintf(stderr, "vmlinux is not 64b?\n");
+		fprintf(stderr, "vmlinaos is not 64b?\n");
 		goto out_munmap;
 	}
 
 	if (eh->e_ident[EI_DATA] != ELFDATA2LSB) {
-		fprintf(stderr, "vmlinux is not little endian?\n");
+		fprintf(stderr, "vmlinaos is not little endian?\n");
 		goto out_munmap;
 	}
 
 	for (i = 0; i < le16toh(eh->e_shnum); i++) {
-		sh = vmlinux + le64toh(eh->e_shoff) + (i * le16toh(eh->e_shentsize));
+		sh = vmlinaos + le64toh(eh->e_shoff) + (i * le16toh(eh->e_shentsize));
 
 		if (sh->sh_type != SHT_PROGBITS)
 			continue;
@@ -291,7 +291,7 @@ int main(int argc, char *argv[])
 			continue;
 
 		err = check_code(le64toh(sh->sh_addr),
-				 vmlinux + le64toh(sh->sh_offset),
+				 vmlinaos + le64toh(sh->sh_offset),
 				 le64toh(sh->sh_size));
 		if (err)
 			goto out_munmap;
@@ -299,9 +299,9 @@ int main(int argc, char *argv[])
 
 	status = EXIT_SUCCESS;
 out_munmap:
-	munmap(vmlinux, st.st_size);
+	munmap(vmlinaos, st.st_size);
 out_close:
-	close(vmlinux_fd);
+	close(vmlinaos_fd);
 out_ret:
 	fprintf(stdout, "loongson3-llsc-check returns %s\n",
 		status ? "failure" : "success");

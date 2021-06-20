@@ -11,11 +11,11 @@
  *	Yuning Pu <yuning.pu@intel.com>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/mfd/tps68470.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/mfd/tps68470.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 #define TPS68470_N_LOGIC_OUTPUT	3
 #define TPS68470_N_REGULAR_GPIO	7

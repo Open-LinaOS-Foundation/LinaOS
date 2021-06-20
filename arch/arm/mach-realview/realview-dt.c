@@ -4,7 +4,7 @@
  *
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
-#include <linux/of_platform.h>
+#include <linaos/of_platform.h>
 #include <asm/mach/arch.h>
 #include <asm/hardware/cache-l2x0.h>
 

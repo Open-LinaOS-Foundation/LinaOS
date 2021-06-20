@@ -10,16 +10,16 @@
  * storage device to each channel for storing ECC data.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/irq_work.h>
-#include <linux/llist.h>
-#include <linux/genalloc.h>
-#include <linux/edac.h>
-#include <linux/bits.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/irq_work.h>
+#include <linaos/llist.h>
+#include <linaos/genalloc.h>
+#include <linaos/edac.h>
+#include <linaos/bits.h>
+#include <linaos/io.h>
 #include <asm/mach_traps.h>
 #include <asm/nmi.h>
 

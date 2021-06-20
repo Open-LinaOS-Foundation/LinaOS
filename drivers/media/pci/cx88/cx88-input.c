@@ -11,11 +11,11 @@
 
 #include "cx88.h"
 
-#include <linux/init.h>
-#include <linux/hrtimer.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/hrtimer.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
 #include <media/rc-core.h>
 

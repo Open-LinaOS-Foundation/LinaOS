@@ -6,25 +6,25 @@
 
 #include "main.h"
 
-#include <linux/byteorder/generic.h>
-#include <linux/etherdevice.h>
-#include <linux/gfp.h>
-#include <linux/if_ether.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/netdevice.h>
-#include <linux/pkt_sched.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <uapi/linux/batadv_packet.h>
+#include <linaos/byteorder/generic.h>
+#include <linaos/etherdevice.h>
+#include <linaos/gfp.h>
+#include <linaos/if_ether.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/lockdep.h>
+#include <linaos/netdevice.h>
+#include <linaos/pkt_sched.h>
+#include <linaos/rculist.h>
+#include <linaos/rcupdate.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/stddef.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <uapi/linaos/batadv_packet.h>
 
 #include "originator.h"
 #include "send.h"

@@ -6,10 +6,10 @@
  *  			     Fri Feb 19 15:55:28 MST 1999
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/time.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include "trident.h"
 #include <sound/initval.h>

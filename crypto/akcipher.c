@@ -5,16 +5,16 @@
  * Copyright (c) 2015, Intel Corporation
  * Authors: Tadeusz Struk <tadeusz.struk@intel.com>
  */
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/crypto.h>
-#include <linux/compiler.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/crypto.h>
+#include <linaos/compiler.h>
 #include <crypto/algapi.h>
-#include <linux/cryptouser.h>
+#include <linaos/cryptouser.h>
 #include <net/netlink.h>
 #include <crypto/akcipher.h>
 #include <crypto/internal/akcipher.h>

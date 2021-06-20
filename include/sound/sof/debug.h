@@ -5,7 +5,7 @@
  *
  * Copyright(c) 2020 Intel Corporation. All rights reserved.
  *
- * Author: Karol Trzcinski <karolx.trzcinski@linux.intel.com>
+ * Author: Karol Trzcinski <karolx.trzcinski@linaos.intel.com>
  */
 
 #ifndef __INCLUDE_SOUND_SOF_DEBUG_H__

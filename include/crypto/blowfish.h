@@ -6,8 +6,8 @@
 #ifndef _CRYPTO_BLOWFISH_H
 #define _CRYPTO_BLOWFISH_H
 
-#include <linux/types.h>
-#include <linux/crypto.h>
+#include <linaos/types.h>
+#include <linaos/crypto.h>
 
 #define BF_BLOCK_SIZE 8
 #define BF_MIN_KEY_SIZE 4

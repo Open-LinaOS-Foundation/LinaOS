@@ -10,7 +10,7 @@
 #ifndef OMAP_ARCH_OMAP_SECURE_H
 #define OMAP_ARCH_OMAP_SECURE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Monitor error code */
 #define  API_HAL_RET_VALUE_NS2S_CONVERSION_ERROR	0xFFFFFFFE

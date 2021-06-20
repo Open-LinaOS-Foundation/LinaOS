@@ -17,16 +17,16 @@
  * 3.) change CPU frequency
  * 4.) modprobe this module again
  * 5.) if the third value, "diff_pmtmr", changes between 2. and 4., the
- *     TSC-based delay routine on the Linux kernel does not correctly
+ *     TSC-based delay routine on the LinaOS kernel does not correctly
  *     handle the cpufreq transition. Please report this to
- *     linux-pm@vger.kernel.org
+ *     linaos-pm@vger.kernel.org
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/acpi.h>
 #include <asm/io.h>
 
 static int pm_tmr_ioport = 0;
@@ -58,7 +58,7 @@ static int __init cpufreq_test_tsc(void)
 	int i;
 
 	/* the following code snipped is copied from arch/x86/kernel/acpi/boot.c
-	   of Linux v2.6.25. */
+	   of LinaOS v2.6.25. */
 
 	/* detect the location of the ACPI PM Timer */
 	if (acpi_gbl_FADT.header.revision >= FADT2_REVISION_ID) {

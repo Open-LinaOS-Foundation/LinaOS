@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -10,9 +10,9 @@
 #define _ASM_BYTEORDER_H
 
 #if defined(__MIPSEB__)
-#include <linux/byteorder/big_endian.h>
+#include <linaos/byteorder/big_endian.h>
 #elif defined(__MIPSEL__)
-#include <linux/byteorder/little_endian.h>
+#include <linaos/byteorder/little_endian.h>
 #else
 # error "MIPS, but neither __MIPSEB__, nor __MIPSEL__???"
 #endif

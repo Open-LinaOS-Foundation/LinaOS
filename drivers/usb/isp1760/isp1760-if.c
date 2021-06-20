@@ -10,20 +10,20 @@
  *
  */
 
-#include <linux/usb.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/usb/isp1760.h>
-#include <linux/usb/hcd.h>
+#include <linaos/usb.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/usb/isp1760.h>
+#include <linaos/usb/hcd.h>
 
 #include "isp1760-core.h"
 #include "isp1760-regs.h"
 
 #ifdef CONFIG_USB_PCI
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #endif
 
 #ifdef CONFIG_USB_PCI

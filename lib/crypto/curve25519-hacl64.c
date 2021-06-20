@@ -12,7 +12,7 @@
 
 #include <asm/unaligned.h>
 #include <crypto/curve25519.h>
-#include <linux/string.h>
+#include <linaos/string.h>
 
 typedef __uint128_t u128;
 

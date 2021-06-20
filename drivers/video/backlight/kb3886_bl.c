@@ -7,15 +7,15 @@
  *  Based on corgi_bl.c by Richard Purdie and kb3886 driver by Robert Woerle
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/mutex.h>
+#include <linaos/fb.h>
+#include <linaos/backlight.h>
+#include <linaos/delay.h>
+#include <linaos/dmi.h>
 
 #define KB3886_PARENT 0x64
 #define KB3886_IO 0x60

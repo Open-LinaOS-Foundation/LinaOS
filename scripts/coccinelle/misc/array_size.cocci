@@ -19,7 +19,7 @@ virtual report
 @i@
 @@
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 //----------------------------------------------------------
 //  For context mode

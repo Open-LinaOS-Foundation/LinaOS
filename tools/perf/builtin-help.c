@@ -14,9 +14,9 @@
 #include <subcmd/run-command.h>
 #include <subcmd/help.h>
 #include "util/debug.h"
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/zalloc.h>
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>

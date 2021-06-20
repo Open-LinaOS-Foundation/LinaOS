@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <abi/entry.h>
 #include <abi/pgtable-bits.h>
 #include <asm/errno.h>
 #include <asm/setup.h>
 #include <asm/unistd.h>
 #include <asm/asm-offsets.h>
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #include <asm/page.h>
 #include <asm/thread_info.h>
 

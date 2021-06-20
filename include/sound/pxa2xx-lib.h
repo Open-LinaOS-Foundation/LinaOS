@@ -3,7 +3,7 @@
 #define PXA2XX_LIB_H
 
 #include <uapi/sound/asound.h>
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 /* PCM */
 struct snd_pcm_substream;

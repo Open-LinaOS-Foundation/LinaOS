@@ -5,18 +5,18 @@
  * "arch/x86/kernel/hw_breakpoint.c"
  *
  * Copyright 2010 IBM Corporation
- * Author: K.Prasad <prasad@linux.vnet.ibm.com>
+ * Author: K.Prasad <prasad@linaos.vnet.ibm.com>
  */
 
-#include <linux/hw_breakpoint.h>
-#include <linux/notifier.h>
-#include <linux/kprobes.h>
-#include <linux/percpu.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/debugfs.h>
-#include <linux/init.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/notifier.h>
+#include <linaos/kprobes.h>
+#include <linaos/percpu.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
+#include <linaos/debugfs.h>
+#include <linaos/init.h>
 
 #include <asm/hw_breakpoint.h>
 #include <asm/processor.h>
@@ -25,7 +25,7 @@
 #include <asm/debugfs.h>
 #include <asm/hvcall.h>
 #include <asm/inst.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /*
  * Stores the breakpoints currently in use on each breakpoint address

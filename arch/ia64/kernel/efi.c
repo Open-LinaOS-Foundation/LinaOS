@@ -5,8 +5,8 @@
  * Based on Extensible Firmware Interface Specification version 0.9
  * April 30, 1999
  *
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA LinaOS Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@valinaos.com>
  * Copyright (C) 1999-2003 Hewlett-Packard Co.
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  *	Stephane Eranian <eranian@hpl.hp.com>
@@ -22,17 +22,17 @@
  * Goutham Rao: <goutham.rao@intel.com>
  *	Skip non-WB memory and ignore empty memory ranges.
  */
-#include <linux/module.h>
-#include <linux/memblock.h>
-#include <linux/crash_dump.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/efi.h>
-#include <linux/kexec.h>
-#include <linux/mm.h>
+#include <linaos/module.h>
+#include <linaos/memblock.h>
+#include <linaos/crash_dump.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/efi.h>
+#include <linaos/kexec.h>
+#include <linaos/mm.h>
 
 #include <asm/efi.h>
 #include <asm/io.h>

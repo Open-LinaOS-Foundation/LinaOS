@@ -5,9 +5,9 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
 
 /*
  * Copy data from IO memory space to "real" memory space.

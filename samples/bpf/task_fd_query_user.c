@@ -8,12 +8,12 @@
 #include <string.h>
 #include <stdint.h>
 #include <fcntl.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <sys/ioctl.h>
 #include <sys/resource.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>

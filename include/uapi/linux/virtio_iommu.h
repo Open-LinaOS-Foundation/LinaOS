@@ -7,7 +7,7 @@
 #ifndef _UAPI_LINUX_VIRTIO_IOMMU_H
 #define _UAPI_LINUX_VIRTIO_IOMMU_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Feature bits */
 #define VIRTIO_IOMMU_F_INPUT_RANGE		0

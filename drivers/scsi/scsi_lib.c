@@ -6,22 +6,22 @@
  *  SCSI queueing library.
  *      Initial versions: Eric Youngdale (eric@andante.org).
  *                        Based upon conversations with large numbers
- *                        of people at Linux Expo.
+ *                        of people at LinaOS Expo.
  */
 
-#include <linux/bio.h>
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/scatterlist.h>
-#include <linux/blk-mq.h>
-#include <linux/ratelimit.h>
+#include <linaos/bio.h>
+#include <linaos/bitops.h>
+#include <linaos/blkdev.h>
+#include <linaos/completion.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/hardirq.h>
+#include <linaos/scatterlist.h>
+#include <linaos/blk-mq.h>
+#include <linaos/ratelimit.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi.h>
@@ -201,7 +201,7 @@ void scsi_queue_insert(struct scsi_cmnd *cmd, int reason)
  * @resid:	optional residual length
  *
  * Returns the scsi_cmnd result field if a command was executed, or a negative
- * Linux error code if we didn't get that far.
+ * LinaOS error code if we didn't get that far.
  */
 int __scsi_execute(struct scsi_device *sdev, const unsigned char *cmd,
 		 int data_direction, void *buffer, unsigned bufflen,

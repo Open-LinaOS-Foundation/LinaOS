@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2021, Linaro Ltd <loic.poulain@linaro.org> */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/wwan.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/idr.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/poll.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/wwan.h>
 
 #define WWAN_MAX_MINORS 256 /* 256 minors allowed with register_chrdev() */
 

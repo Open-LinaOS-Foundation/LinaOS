@@ -10,10 +10,10 @@
  * Contacts: Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  *	     Sakari Ailus <sakari.ailus@iki.fi>
  */
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include <media/v4l2-common.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/mm.h>
+#include <linaos/v4l2-mediabus.h>
+#include <linaos/mm.h>
 
 #include "isp.h"
 #include "ispreg.h"

@@ -5,8 +5,8 @@
  * Copyright (C) 2016-2019 Renesas Electronics Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
 #include "common.h"
 #include "rcar3.h"
 

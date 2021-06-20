@@ -2,7 +2,7 @@
 /*
  * Copyright (c) 2005-2011 Atheros Communications Inc.
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The LinaOS Foundation. All rights reserved.
  */
 #include "core.h"
 #include "debug.h"
@@ -13,7 +13,7 @@
 #include "wmi-tlv.h"
 #include "p2p.h"
 #include "testmode.h"
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 
 /***************/
 /* TLV helpers */

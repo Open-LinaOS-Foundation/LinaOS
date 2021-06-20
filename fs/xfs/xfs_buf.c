@@ -4,7 +4,7 @@
  * All Rights Reserved.
  */
 #include "xfs.h"
-#include <linux/backing-dev.h>
+#include <linaos/backing-dev.h>
 
 #include "xfs_shared.h"
 #include "xfs_format.h"

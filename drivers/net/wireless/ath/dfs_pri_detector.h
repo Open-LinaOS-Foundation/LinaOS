@@ -17,7 +17,7 @@
 #ifndef DFS_PRI_DETECTOR_H
 #define DFS_PRI_DETECTOR_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 extern struct ath_dfs_pool_stats global_dfs_pool_stats;
 

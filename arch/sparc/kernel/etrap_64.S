@@ -3,7 +3,7 @@
  * etrap.S: Preparing for entry into the kernel on Sparc V9.
  *
  * Copyright (C) 1996, 1997 David S. Miller (davem@caip.rutgers.edu)
- * Copyright (C) 1997, 1998, 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1997, 1998, 1999 Jakub Jelinek (jj@ultra.linaos.cz)
  */
 
 

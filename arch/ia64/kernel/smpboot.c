@@ -23,25 +23,25 @@
  *						Setup cpu_sibling_map and cpu_core_map
  */
 
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/memblock.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/mm.h>
-#include <linux/notifier.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/efi.h>
-#include <linux/percpu.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
+#include <linaos/memblock.h>
+#include <linaos/cpu.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/mm.h>
+#include <linaos/notifier.h>
+#include <linaos/smp.h>
+#include <linaos/spinlock.h>
+#include <linaos/efi.h>
+#include <linaos/percpu.h>
+#include <linaos/bitops.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/cache.h>
 #include <asm/current.h>
 #include <asm/delay.h>

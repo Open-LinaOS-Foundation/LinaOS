@@ -17,12 +17,12 @@
 
 #define ATEN_VERSION      "1.01"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/types.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/wait.h>
+#include <linaos/types.h>
 #include <asm/io.h>
 
 #include "paride.h"

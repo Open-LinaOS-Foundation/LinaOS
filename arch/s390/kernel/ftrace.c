@@ -8,13 +8,13 @@
  *		Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/moduleloader.h>
-#include <linux/hardirq.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/kprobes.h>
+#include <linaos/moduleloader.h>
+#include <linaos/hardirq.h>
+#include <linaos/uaccess.h>
+#include <linaos/ftrace.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/kprobes.h>
 #include <trace/syscall.h>
 #include <asm/asm-offsets.h>
 #include <asm/cacheflush.h>

@@ -45,23 +45,23 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/uio.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/mmu_context.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/dmapool.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/highmem.h>
+#include <linaos/io.h>
+#include <linaos/uio.h>
+#include <linaos/rbtree.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/mmu_context.h>
+#include <linaos/module.h>
+#include <linaos/vmalloc.h>
+#include <linaos/string.h>
 
 #include "hfi.h"
 #include "sdma.h"

@@ -6,21 +6,21 @@
  * Samsung EXYNOS5 SoC series G-Scaler driver
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/bug.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/bug.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/list.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 #include <media/v4l2-ioctl.h>
 
 #include "gsc-core.h"

@@ -47,10 +47,10 @@
  *
  */
 
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
+#include <linaos/list.h>
+#include <linaos/workqueue.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>
 
 #include "sdma_txreq.h"
 

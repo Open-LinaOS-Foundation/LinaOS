@@ -7,8 +7,8 @@
  * AT91SAM9 support:
  *  Copyright (C) 2007 Anti Sullin <anti.sullin@artecdesign.ee>
  */
-#include <linux/linkage.h>
-#include <linux/clk/at91_pmc.h>
+#include <linaos/linkage.h>
+#include <linaos/clk/at91_pmc.h>
 #include "pm.h"
 #include "pm_data-offsets.h"
 

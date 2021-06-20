@@ -3,13 +3,13 @@
 * Filename: cregs.c
 *
 * Authors: Joshua Morris <josh.h.morris@us.ibm.com>
-*	Philip Kelleher <pjk1939@linux.vnet.ibm.com>
+*	Philip Kelleher <pjk1939@linaos.vnet.ibm.com>
 *
 * (C) Copyright 2013 IBM Corporation
 */
 
-#include <linux/completion.h>
-#include <linux/slab.h>
+#include <linaos/completion.h>
+#include <linaos/slab.h>
 
 #include "rsxx_priv.h"
 

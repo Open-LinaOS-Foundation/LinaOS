@@ -5,7 +5,7 @@
 #if !defined(_TRACE_BENCHMARK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_BENCHMARK_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 extern int trace_benchmark_reg(void);
 extern void trace_benchmark_unreg(void);

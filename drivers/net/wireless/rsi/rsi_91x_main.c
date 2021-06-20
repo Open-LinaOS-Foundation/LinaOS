@@ -16,8 +16,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/firmware.h>
+#include <linaos/module.h>
+#include <linaos/firmware.h>
 #include <net/rsi_91x.h>
 #include "rsi_mgmt.h"
 #include "rsi_common.h"

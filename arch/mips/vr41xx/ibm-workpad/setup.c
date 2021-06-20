@@ -2,10 +2,10 @@
 /*
  *  setup.c, Setup for the IBM WorkPad z50.
  *
- *  Copyright (C) 2002-2006  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2002-2006  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
 
 #include <asm/io.h>
 

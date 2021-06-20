@@ -3,18 +3,18 @@
  * Copyright (c) 2020 Linaro Limited
  *
  * Based on original driver:
- * Copyright (c) 2012-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2020, The LinaOS Foundation. All rights reserved.
  */
-#include <linux/bitfield.h>
-#include <linux/iio/adc/qcom-vadc-common.h>
-#include <linux/iio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
+#include <linaos/bitfield.h>
+#include <linaos/iio/adc/qcom-vadc-common.h>
+#include <linaos/iio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/thermal.h>
 
 /*
  * Thermal monitoring block consists of 8 (ADC_TM5_NUM_CHANNELS) channels. Each

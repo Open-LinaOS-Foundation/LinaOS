@@ -4,20 +4,20 @@
  */
 
 /*
- * Sun keyboard driver for Linux
+ * Sun keyboard driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/workqueue.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
+#include <linaos/workqueue.h>
 
 #define DRIVER_DESC	"Sun keyboard driver"
 

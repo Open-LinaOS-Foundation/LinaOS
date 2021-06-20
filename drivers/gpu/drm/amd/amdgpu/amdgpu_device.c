@@ -25,18 +25,18 @@
  *          Alex Deucher
  *          Jerome Glisse
  */
-#include <linux/power_supply.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/slab.h>
+#include <linaos/power_supply.h>
+#include <linaos/kthread.h>
+#include <linaos/module.h>
+#include <linaos/console.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_probe_helper.h>
 #include <drm/amdgpu_drm.h>
-#include <linux/vgaarb.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/efi.h>
+#include <linaos/vgaarb.h>
+#include <linaos/vga_switcheroo.h>
+#include <linaos/efi.h>
 #include "amdgpu.h"
 #include "amdgpu_trace.h"
 #include "amdgpu_i2c.h"
@@ -54,8 +54,8 @@
 #include "soc15.h"
 #include "nv.h"
 #include "bif/bif_4_1_d.h"
-#include <linux/pci.h>
-#include <linux/firmware.h>
+#include <linaos/pci.h>
+#include <linaos/firmware.h>
 #include "amdgpu_vf_error.h"
 
 #include "amdgpu_amdkfd.h"
@@ -67,9 +67,9 @@
 #include "amdgpu_fru_eeprom.h"
 #include "amdgpu_reset.h"
 
-#include <linux/suspend.h>
+#include <linaos/suspend.h>
 #include <drm/task_barrier.h>
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 
 MODULE_FIRMWARE("amdgpu/vega10_gpu_info.bin");
 MODULE_FIRMWARE("amdgpu/vega12_gpu_info.bin");

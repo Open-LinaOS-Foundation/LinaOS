@@ -10,8 +10,8 @@
 #ifndef __SOC_ATMEL_TCB_H
 #define __SOC_ATMEL_TCB_H
 
-#include <linux/compiler.h>
-#include <linux/list.h>
+#include <linaos/compiler.h>
+#include <linaos/list.h>
 
 /*
  * Many 32-bit Atmel SOCs include one or more TC blocks, each of which holds

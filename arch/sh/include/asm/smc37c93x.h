@@ -3,7 +3,7 @@
 #define __ASM_SH_SMC37C93X_H
 
 /*
- * linux/include/asm-sh/smc37c93x.h
+ * linaos/include/asm-sh/smc37c93x.h
  *
  * Copyright (C) 2000  Kazumoto Kojima
  *

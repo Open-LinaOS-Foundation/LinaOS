@@ -4,27 +4,27 @@
  * Copyright (c) 2010-2012 Broadcom. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/bug.h>
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/compat.h>
-#include <linux/dma-mapping.h>
-#include <linux/rcupdate.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched/signal.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/cdev.h>
+#include <linaos/fs.h>
+#include <linaos/device.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>
+#include <linaos/pagemap.h>
+#include <linaos/bug.h>
+#include <linaos/completion.h>
+#include <linaos/list.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/compat.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/rcupdate.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
 #include <soc/bcm2835/raspberrypi-firmware.h>
 
 #include "vchiq_core.h"

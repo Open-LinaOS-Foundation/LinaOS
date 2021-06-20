@@ -9,15 +9,15 @@
  * Input by Jari Vanhala <ext-jari.vanhala@nokia.com>
  */
 
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/workqueue.h>
-#include <linux/mfd/twl.h>
-#include <linux/mfd/twl4030-audio.h>
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/jiffies.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/workqueue.h>
+#include <linaos/mfd/twl.h>
+#include <linaos/mfd/twl4030-audio.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
 
 /* MODULE ID2 */
 #define LEDEN		0x00

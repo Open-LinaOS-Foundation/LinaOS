@@ -7,11 +7,11 @@
  * virtual HSR or PRP devices.
  */
 
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/pkt_sched.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/etherdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/pkt_sched.h>
 #include "hsr_device.h"
 #include "hsr_slave.h"
 #include "hsr_framereg.h"

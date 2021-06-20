@@ -6,12 +6,12 @@
  *  Copyright (C) 2005, 2006 by Eric Van Hensbergen <ericvh@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/idr.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/idr.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

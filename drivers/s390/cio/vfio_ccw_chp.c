@@ -4,12 +4,12 @@
  *
  * Copyright IBM Corp. 2020
  *
- * Author(s): Farhan Ali <alifm@linux.ibm.com>
- *            Eric Farman <farman@linux.ibm.com>
+ * Author(s): Farhan Ali <alifm@linaos.ibm.com>
+ *            Eric Farman <farman@linaos.ibm.com>
  */
 
-#include <linux/slab.h>
-#include <linux/vfio.h>
+#include <linaos/slab.h>
+#include <linaos/vfio.h>
 #include "vfio_ccw_private.h"
 
 static ssize_t vfio_ccw_schib_region_read(struct vfio_ccw_private *private,

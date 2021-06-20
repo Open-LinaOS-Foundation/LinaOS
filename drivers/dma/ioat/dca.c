@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Intel I/OAT DMA Linux driver
+ * Intel I/OAT DMA LinaOS driver
  * Copyright(c) 2007 - 2009 Intel Corporation.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/dca.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/dca.h>
 
 /* either a kernel change is needed, or we need something like this in kernel */
 #ifndef CONFIG_SMP

@@ -9,7 +9,7 @@
 #ifndef __JEDEC_DDR_H
 #define __JEDEC_DDR_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* DDR Densities */
 #define DDR_DENSITY_64Mb	1

@@ -2,7 +2,7 @@
 IDE ATAPI streaming tape driver
 ===============================
 
-This driver is a part of the Linux ide driver.
+This driver is a part of the LinaOS ide driver.
 
 The driver, in co-operation with ide.c, basically traverses the
 request-list for the block device interface. The character device
@@ -22,7 +22,7 @@ The character device interface consists of the following devices::
   ...
 
 The general magnetic tape commands compatible interface, as defined by
-include/linux/mtio.h, is accessible through the character device.
+include/linaos/mtio.h, is accessible through the character device.
 
 General ide driver configuration options, such as the interrupt-unmask
 flag, can be configured by issuing an ioctl to the block device interface,

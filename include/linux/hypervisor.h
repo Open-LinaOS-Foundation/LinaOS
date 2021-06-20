@@ -19,7 +19,7 @@ static inline void hypervisor_pin_vcpu(int cpu)
 
 #else /* !CONFIG_X86 */
 
-#include <linux/of.h>
+#include <linaos/of.h>
 
 static inline void hypervisor_pin_vcpu(int cpu)
 {

@@ -5,12 +5,12 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/nfnetlink_acct.h>
-#include <linux/netfilter/xt_nfacct.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter/nfnetlink_acct.h>
+#include <linaos/netfilter/xt_nfacct.h>
 
 MODULE_AUTHOR("Pablo Neira Ayuso <pablo@netfilter.org>");
 MODULE_DESCRIPTION("Xtables: match for the extended accounting infrastructure");

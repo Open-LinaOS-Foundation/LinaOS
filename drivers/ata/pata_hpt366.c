@@ -4,9 +4,9 @@
  *
  * This driver is heavily based upon:
  *
- * linux/drivers/ide/pci/hpt366.c		Version 0.36	April 25, 2003
+ * linaos/drivers/ide/pci/hpt366.c		Version 0.36	April 25, 2003
  *
- * Copyright (C) 1999-2003		Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 1999-2003		Andre Hedrick <andre@linaos-ide.org>
  * Portions Copyright (C) 2001	        Sun Microsystems, Inc.
  * Portions Copyright (C) 2003		Red Hat Inc
  *
@@ -17,13 +17,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linaos/libata.h>
 
 #define DRV_NAME	"pata_hpt366"
 #define DRV_VERSION	"0.6.11"

@@ -4,17 +4,17 @@
  *
  *    Copyright (C) 2006 Arnd Bergmann <arnd@arndb.de>, IBM Corp.
  */
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/reset.h>
+#include <linaos/console.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_reg.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/reset.h>
 
 #include "8250.h"
 

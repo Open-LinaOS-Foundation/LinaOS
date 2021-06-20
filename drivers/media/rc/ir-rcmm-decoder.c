@@ -4,7 +4,7 @@
 // Copyright (C) 2018 by Patrick Lerda <patrick9876@free.fr>
 
 #include "rc-core-priv.h"
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #define RCMM_UNIT		166  /* microseconds */
 #define RCMM_PREFIX_PULSE	417  /* 166.666666666666*2.5 */

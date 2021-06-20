@@ -13,7 +13,7 @@
 #include <signal.h>
 #include <errno.h>
 #include <sys/time.h>
-#include <linux/hpet.h>
+#include <linaos/hpet.h>
 
 
 extern void hpet_open_close(int, const char **);

@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _IP6T_RT_H
 #define _IP6T_RT_H
 
-#include <linux/types.h>
-#include <linux/in6.h>
+#include <linaos/types.h>
+#include <linaos/in6.h>
 
 #define IP6T_RT_HOPS 16
 

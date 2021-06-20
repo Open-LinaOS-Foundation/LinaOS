@@ -13,10 +13,10 @@
 #ifndef _KGDB_H_
 #define _KGDB_H_
 
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/atomic.h>
-#include <linux/kprobes.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/atomic.h>
+#include <linaos/kprobes.h>
 #ifdef CONFIG_HAVE_ARCH_KGDB
 #include <asm/kgdb.h>
 #endif

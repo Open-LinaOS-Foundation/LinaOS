@@ -60,7 +60,7 @@ DEC EtherWORKS Ethernet De4x5 cards
     To utilise this ability, you have to do 8 things:
 
     0) have a copy of the loadable modules code installed on your system.
-    1) copy de4x5.c from the  /linux/drivers/net directory to your favourite
+    1) copy de4x5.c from the  /linaos/drivers/net directory to your favourite
        temporary directory.
     2) for fixed  autoprobes (not  recommended),  edit the source code  near
        line 5594 to reflect the I/O address  you're using, or assign these when
@@ -147,7 +147,7 @@ DEC EtherWORKS Ethernet De4x5 cards
     more than one DECchip based  card.  As a  side effect, I don't mess with
     the  device structure any  more which means that  if more than 1 card in
     2.0.x is    installed (4  in   2.1.x),  the  user   will have   to  edit
-    linux/drivers/net/Space.c  to make room for  them. Hence, module loading
+    linaos/drivers/net/Space.c  to make room for  them. Hence, module loading
     is  the preferred way to use   this driver, since  it  doesn't have this
     limitation.
 
@@ -178,7 +178,7 @@ DEC EtherWORKS Ethernet De4x5 cards
 
 	insmod de4x5 args='eth1:fdx autosense=BNC eth0:autosense=100Mb'.
 
-    For a compiled in driver, in linux/drivers/net/CONFIG, place e.g.::
+    For a compiled in driver, in linaos/drivers/net/CONFIG, place e.g.::
 
 	DE4X5_OPTS = -DDE4X5_PARM='"eth0:fdx autosense=AUI eth2:autosense=TP"'
 

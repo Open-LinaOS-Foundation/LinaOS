@@ -118,7 +118,7 @@
 #define PF_NAME		"pf"
 #define PF_UNITS	4
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Here are things one can override from the insmod command.
    Most are autoprobed by paride unless set here.  Verbose is off
@@ -145,17 +145,17 @@ enum {D_PRT, D_PRO, D_UNI, D_MOD, D_SLV, D_LUN, D_DLY};
 
 /* end of parameters */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/hdreg.h>
-#include <linux/cdrom.h>
-#include <linux/spinlock.h>
-#include <linux/blk-mq.h>
-#include <linux/blkpg.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/delay.h>
+#include <linaos/hdreg.h>
+#include <linaos/cdrom.h>
+#include <linaos/spinlock.h>
+#include <linaos/blk-mq.h>
+#include <linaos/blkpg.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
 
 static DEFINE_MUTEX(pf_mutex);
 static DEFINE_SPINLOCK(pf_spin_lock);

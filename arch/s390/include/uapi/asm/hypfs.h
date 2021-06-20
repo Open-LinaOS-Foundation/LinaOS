@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Structures for hypfs interface
  *
@@ -10,7 +10,7 @@
 #ifndef _ASM_HYPFS_H
 #define _ASM_HYPFS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * IOCTL for binary interface /sys/kernel/debug/diag_304
@@ -43,7 +43,7 @@ struct hypfs_diag0c_entry {
 	char	time[8];	/* HH:MM:SS in EBCDIC */
 	__u64	virtcpu;	/* Virtual time consumed by the virt CPU (us) */
 	__u64	totalproc;	/* Total of virtual and simulation time (us) */
-	__u32	cpu;		/* Linux logical CPU number */
+	__u32	cpu;		/* LinaOS logical CPU number */
 	__u32	reserved;	/* Align to 8 byte */
 };
 

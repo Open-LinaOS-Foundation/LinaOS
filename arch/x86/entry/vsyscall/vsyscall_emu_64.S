@@ -5,7 +5,7 @@
  * Copyright (c) 2011 Andy Lutomirski
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/irq_vectors.h>
 #include <asm/page_types.h>

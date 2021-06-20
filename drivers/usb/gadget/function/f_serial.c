@@ -7,10 +7,10 @@
  * Copyright (C) 2008 by Nokia Corporation
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
 
 #include "u_serial.h"
 

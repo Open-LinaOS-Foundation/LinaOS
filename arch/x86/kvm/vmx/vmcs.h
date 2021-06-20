@@ -2,9 +2,9 @@
 #ifndef __KVM_X86_VMX_VMCS_H
 #define __KVM_X86_VMX_VMCS_H
 
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/nospec.h>
+#include <linaos/ktime.h>
+#include <linaos/list.h>
+#include <linaos/nospec.h>
 
 #include <asm/kvm.h>
 #include <asm/vmx.h>

@@ -4,7 +4,7 @@
  *  comedi/drivers/ni_routing/ni_route_values.h
  *  Route information for NI boards.
  *
- *  COMEDI - Linux Control and Measurement Device Interface
+ *  COMEDI - LinaOS Control and Measurement Device Interface
  *  Copyright (C) 2016 Spencer E. Olson <olsonse@umich.edu>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -22,7 +22,7 @@
 #define _COMEDI_DRIVERS_NI_ROUTINT_NI_ROUTE_VALUES_H
 
 #include "../../comedi.h"
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * This file includes the tables that are a list of all the values of various

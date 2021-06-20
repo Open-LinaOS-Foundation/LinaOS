@@ -5,8 +5,8 @@
  * Copyright (C) 2012 Freescale Semiconductor, Inc.
  */
 
-#include <linux/of.h>
-#include <linux/of_fdt.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
 #include <asm/epapr_hcalls.h>
 #include <asm/cacheflush.h>
 #include <asm/code-patching.h>

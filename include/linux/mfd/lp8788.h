@@ -10,10 +10,10 @@
 #ifndef __MFD_LP8788_H__
 #define __MFD_LP8788_H__
 
-#include <linux/gpio.h>
-#include <linux/irqdomain.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
+#include <linaos/gpio.h>
+#include <linaos/irqdomain.h>
+#include <linaos/pwm.h>
+#include <linaos/regmap.h>
 
 #define LP8788_DEV_BUCK		"lp8788-buck"
 #define LP8788_DEV_DLDO		"lp8788-dldo"

@@ -8,7 +8,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include <asm/dsp-impl.h>
 #include <asm/fpu.h>
 

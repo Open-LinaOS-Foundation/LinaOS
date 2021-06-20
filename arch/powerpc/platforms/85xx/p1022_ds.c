@@ -16,9 +16,9 @@
  * kind, whether express or implied.
  */
 
-#include <linux/fsl/guts.h>
-#include <linux/pci.h>
-#include <linux/of_platform.h>
+#include <linaos/fsl/guts.h>
+#include <linaos/pci.h>
+#include <linaos/of_platform.h>
 #include <asm/div64.h>
 #include <asm/mpic.h>
 #include <asm/swiotlb.h>

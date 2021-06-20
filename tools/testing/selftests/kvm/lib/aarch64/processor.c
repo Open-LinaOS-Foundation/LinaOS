@@ -5,7 +5,7 @@
  * Copyright (C) 2018, Red Hat, Inc.
  */
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #include "kvm_util.h"
 #include "../kvm_util_internal.h"

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Based on linux/arch/arm/mm/dma-mapping.c
+ *  Based on linaos/arch/arm/mm/dma-mapping.c
  *
  *  Copyright (C) 2000-2004 Russell King
  */
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/scatterlist.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/dma-direct.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/scatterlist.h>
 
 #include <asm/cachetype.h>
 #include <asm/cacheflush.h>

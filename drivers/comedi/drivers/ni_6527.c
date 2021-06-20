@@ -3,7 +3,7 @@
  * ni_6527.c
  * Comedi driver for National Instruments PCI-6527
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1999,2002,2003 David A. Schleef <ds@schleef.org>
  */
 
@@ -18,8 +18,8 @@
  * Configuration Options: not applicable, uses PCI auto config
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
 
 #include "../comedi_pci.h"
 

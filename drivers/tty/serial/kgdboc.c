@@ -11,17 +11,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/kgdb.h>
-#include <linux/kdb.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/vt_kern.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
+#include <linaos/kernel.h>
+#include <linaos/ctype.h>
+#include <linaos/kgdb.h>
+#include <linaos/kdb.h>
+#include <linaos/tty.h>
+#include <linaos/console.h>
+#include <linaos/vt_kern.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial_core.h>
 
 #define MAX_CONFIG_LEN		40
 

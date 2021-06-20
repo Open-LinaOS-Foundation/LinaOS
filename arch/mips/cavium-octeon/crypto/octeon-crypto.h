@@ -12,7 +12,7 @@
 #ifndef __LINUX_OCTEON_CRYPTO_H
 #define __LINUX_OCTEON_CRYPTO_H
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include <asm/mipsregs.h>
 
 #define OCTEON_CR_OPCODE_PRIORITY 300

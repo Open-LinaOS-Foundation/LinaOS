@@ -9,10 +9,10 @@
  *      2001	Kai Germaschewski	<kai.germaschewski@gmx.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/crc-ccitt.h>
-#include <linux/bitrev.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/crc-ccitt.h>
+#include <linaos/bitrev.h>
 #include "isdnhdlc.h"
 
 /*-------------------------------------------------------------------*/

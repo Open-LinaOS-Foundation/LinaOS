@@ -44,7 +44,7 @@ The media subsystem
 	dvb-drivers
 	cec-drivers
 
-**Copyright** |copy| 1999-2020 : LinuxTV Developers
+**Copyright** |copy| 1999-2020 : LinaOSTV Developers
 
 ::
 
@@ -58,4 +58,4 @@ The media subsystem
   FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
   more details.
 
-  For more details see the file COPYING in the source distribution of Linux.
+  For more details see the file COPYING in the source distribution of LinaOS.

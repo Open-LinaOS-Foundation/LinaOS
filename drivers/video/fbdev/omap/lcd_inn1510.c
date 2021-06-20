@@ -6,9 +6,9 @@
  * Author: Imre Deak <imre.deak@nokia.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
 
 #include <mach/hardware.h>
 

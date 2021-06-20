@@ -5,11 +5,11 @@
 // Authors: Inha Song <ideal.song@samsung.com>
 //          Sylwester Nawrocki <s.nawrocki@samsung.com>
 
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linaos/clk.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 

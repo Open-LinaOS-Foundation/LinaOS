@@ -8,16 +8,16 @@
  * Implemetation based on sbs-battery.c
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/power_supply.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/bitops.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/power_supply.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/regmap.h>
+#include <linaos/bitops.h>
 
 #define SBS_CHARGER_REG_SPEC_INFO		0x11
 #define SBS_CHARGER_REG_STATUS			0x13

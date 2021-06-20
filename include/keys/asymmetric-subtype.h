@@ -10,7 +10,7 @@
 #ifndef _KEYS_ASYMMETRIC_SUBTYPE_H
 #define _KEYS_ASYMMETRIC_SUBTYPE_H
 
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 #include <keys/asymmetric-type.h>
 
 struct kernel_pkey_query;

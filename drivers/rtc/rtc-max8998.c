@@ -6,16 +6,16 @@
 // Author: Minkyu Kang <mk7.kang@samsung.com>
 // Author: Joonyoung Shim <jy0922.shim@samsung.com>
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/bcd.h>
-#include <linux/irqdomain.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/max8998.h>
-#include <linux/mfd/max8998-private.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/bcd.h>
+#include <linaos/irqdomain.h>
+#include <linaos/rtc.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/max8998.h>
+#include <linaos/mfd/max8998-private.h>
+#include <linaos/delay.h>
 
 #define MAX8998_RTC_SEC			0x00
 #define MAX8998_RTC_MIN			0x01

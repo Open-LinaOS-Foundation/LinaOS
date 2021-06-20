@@ -14,7 +14,7 @@
 #ifndef __DEVICE_CONFIG_H
 #define __DEVICE_CONFIG_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define VID_TABLE_SIZE      64
 #define MCAST_TABLE_SIZE    64
@@ -37,8 +37,8 @@
 #define DEVICE_VERSION       "1.19.12"
 #endif
 
-#include <linux/fs.h>
-#include <linux/fcntl.h>
+#include <linaos/fs.h>
+#include <linaos/fcntl.h>
 #ifndef CONFIG_PATH
 #define CONFIG_PATH            "/etc/vntconfiguration.dat"
 #endif

@@ -199,7 +199,7 @@ examples:
                reg = <0x2>;
                color = <LED_COLOR_ID_RGB>;
                function = LED_FUNCTION_STANDBY;
-               linux,default-trigger = "heartbeat";
+               linaos,default-trigger = "heartbeat";
 
                led@0 {
                    led-cur = /bits/ 8 <50>;

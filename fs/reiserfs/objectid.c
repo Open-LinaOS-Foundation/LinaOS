@@ -2,9 +2,9 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/uuid.h>
+#include <linaos/string.h>
+#include <linaos/time.h>
+#include <linaos/uuid.h>
 #include "reiserfs.h"
 
 /* find where objectid map starts */

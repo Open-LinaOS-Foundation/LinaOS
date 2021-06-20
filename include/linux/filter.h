@@ -1,34 +1,34 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Linux Socket Filter Data Structures
+ * LinaOS Socket Filter Data Structures
  */
 #ifndef __LINUX_FILTER_H__
 #define __LINUX_FILTER_H__
 
 #include <stdarg.h>
 
-#include <linux/atomic.h>
-#include <linux/refcount.h>
-#include <linux/compat.h>
-#include <linux/skbuff.h>
-#include <linux/linkage.h>
-#include <linux/printk.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/capability.h>
-#include <linux/set_memory.h>
-#include <linux/kallsyms.h>
-#include <linux/if_vlan.h>
-#include <linux/vmalloc.h>
-#include <linux/sockptr.h>
+#include <linaos/atomic.h>
+#include <linaos/refcount.h>
+#include <linaos/compat.h>
+#include <linaos/skbuff.h>
+#include <linaos/linkage.h>
+#include <linaos/printk.h>
+#include <linaos/workqueue.h>
+#include <linaos/sched.h>
+#include <linaos/capability.h>
+#include <linaos/set_memory.h>
+#include <linaos/kallsyms.h>
+#include <linaos/if_vlan.h>
+#include <linaos/vmalloc.h>
+#include <linaos/sockptr.h>
 #include <crypto/sha1.h>
-#include <linux/u64_stats_sync.h>
+#include <linaos/u64_stats_sync.h>
 
 #include <net/sch_generic.h>
 
 #include <asm/byteorder.h>
-#include <uapi/linux/filter.h>
-#include <uapi/linux/bpf.h>
+#include <uapi/linaos/filter.h>
+#include <uapi/linaos/bpf.h>
 
 struct sk_buff;
 struct sock;

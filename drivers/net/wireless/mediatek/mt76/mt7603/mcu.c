@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: ISC
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 #include "mt7603.h"
 #include "mcu.h"
 #include "eeprom.h"

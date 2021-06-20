@@ -30,7 +30,7 @@
       copyright notice and this permission notice appear in all copies.
 */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "b43.h"
 #include "phy_lcn.h"

@@ -2,9 +2,9 @@
 #ifndef _ASM_PGALLOC_H
 #define _ASM_PGALLOC_H
 
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/threads.h>
+#include <linaos/gfp.h>
+#include <linaos/mm.h>
+#include <linaos/threads.h>
 #include <asm/processor.h>
 #include <asm/fixmap.h>
 

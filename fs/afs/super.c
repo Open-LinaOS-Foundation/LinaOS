@@ -14,18 +14,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/fs_parser.h>
-#include <linux/statfs.h>
-#include <linux/sched.h>
-#include <linux/nsproxy.h>
-#include <linux/magic.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mount.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/fs_parser.h>
+#include <linaos/statfs.h>
+#include <linaos/sched.h>
+#include <linaos/nsproxy.h>
+#include <linaos/magic.h>
 #include <net/net_namespace.h>
 #include "internal.h"
 

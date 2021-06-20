@@ -15,12 +15,12 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/clk/ti.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/clk/ti.h>
 
 #include "clock.h"
 

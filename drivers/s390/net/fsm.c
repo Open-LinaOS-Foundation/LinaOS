@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /**
- * A generic FSM based on fsm used in isdn4linux
+ * A generic FSM based on fsm used in isdn4linaos
  *
  */
 
 #include "fsm.h"
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
 
 MODULE_AUTHOR("(C) 2000 IBM Corp. by Fritz Elfert (felfert@millenux.com)");
 MODULE_DESCRIPTION("Finite state machine helper functions");

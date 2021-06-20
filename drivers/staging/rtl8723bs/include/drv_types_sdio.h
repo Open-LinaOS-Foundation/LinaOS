@@ -8,8 +8,8 @@
 #define __DRV_TYPES_SDIO_H__
 
 /*  SDIO Header Files */
-	#include <linux/mmc/sdio_func.h>
-	#include <linux/mmc/sdio_ids.h>
+	#include <linaos/mmc/sdio_func.h>
+	#include <linaos/mmc/sdio_ids.h>
 
 struct sdio_data {
 	u8  func_number;

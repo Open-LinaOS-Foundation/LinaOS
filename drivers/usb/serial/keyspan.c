@@ -19,24 +19,24 @@
   having the patience to sit down and explain why and where he'd changed
   stuff.
 
-  Tip 'o the hat to IBM (and previously Linuxcare :) for supporting
+  Tip 'o the hat to IBM (and previously LinaOScare :) for supporting
   staff in their work on open source projects.
 */
 
 
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/usb/ezusb.h>
+#include <linaos/kernel.h>
+#include <linaos/jiffies.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/usb.h>
+#include <linaos/usb/serial.h>
+#include <linaos/usb/ezusb.h>
 
 #define DRIVER_AUTHOR "Hugh Blemings <hugh@misc.nu"
 #define DRIVER_DESC "Keyspan USB to Serial Converter Driver"

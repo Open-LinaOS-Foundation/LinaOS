@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 #include "header.h"
 #include "utils_header.h"
 #include "metricgroup.h"

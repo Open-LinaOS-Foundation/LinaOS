@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Userspace interface
- *	Linux ethernet bridge
+ *	LinaOS ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/netpoll.h>
-#include <linux/ethtool.h>
-#include <linux/if_arp.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_ether.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/netpoll.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_arp.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/if_ether.h>
+#include <linaos/slab.h>
 #include <net/dsa.h>
 #include <net/sock.h>
-#include <linux/if_vlan.h>
+#include <linaos/if_vlan.h>
 #include <net/switchdev.h>
 #include <net/net_namespace.h>
 

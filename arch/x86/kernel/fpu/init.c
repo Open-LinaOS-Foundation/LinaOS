@@ -6,9 +6,9 @@
 #include <asm/tlbflush.h>
 #include <asm/setup.h>
 
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/init.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task.h>
+#include <linaos/init.h>
 
 /*
  * Initialize the registers found in all CPUs, CR0 and CR4:

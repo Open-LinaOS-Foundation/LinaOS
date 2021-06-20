@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2009-2010  Realtek Corporation.*/
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "table.h"
 u32 RTL8812AE_PHY_REG_ARRAY[] = {
 		0x800, 0x8020D010,

@@ -6,7 +6,7 @@
  * Extended task accounting methods:
  */
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 
 #ifdef CONFIG_TASK_XACCT
 static inline void add_rchar(struct task_struct *tsk, ssize_t amt)

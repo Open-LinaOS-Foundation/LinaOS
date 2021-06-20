@@ -3,9 +3,9 @@
  * benchmark.c:
  * Author: Konstantin Khlebnikov <koct9i@gmail.com>
  */
-#include <linux/radix-tree.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
+#include <linaos/radix-tree.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
 #include <time.h>
 #include "test.h"
 

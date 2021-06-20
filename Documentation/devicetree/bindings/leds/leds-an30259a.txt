@@ -21,7 +21,7 @@ Optional sub-node properties:
 		see Documentation/devicetree/bindings/leds/common.txt
 	- label :
 		see Documentation/devicetree/bindings/leds/common.txt (deprecated)
-	- linux,default-trigger :
+	- linaos,default-trigger :
 		see Documentation/devicetree/bindings/leds/common.txt
 
 Example:
@@ -36,7 +36,7 @@ led-controller@30 {
 
 	led@1 {
 		reg = <1>;
-		linux,default-trigger = "heartbeat";
+		linaos,default-trigger = "heartbeat";
 		function = LED_FUNCTION_INDICATOR;
 		color = <LED_COLOR_ID_RED>;
 	};

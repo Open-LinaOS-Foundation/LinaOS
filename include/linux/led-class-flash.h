@@ -8,7 +8,7 @@
 #ifndef __LINUX_FLASH_LEDS_H_INCLUDED
 #define __LINUX_FLASH_LEDS_H_INCLUDED
 
-#include <linux/leds.h>
+#include <linaos/leds.h>
 
 struct device_node;
 struct led_classdev_flash;

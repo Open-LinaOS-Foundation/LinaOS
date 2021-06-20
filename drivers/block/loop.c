@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/block/loop.c
+ *  linaos/drivers/block/loop.c
  *
  *  Written by Theodore Ts'o, 3/29/93
  *
@@ -49,40 +49,40 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/wait.h>
-#include <linux/blkdev.h>
-#include <linux/blkpg.h>
-#include <linux/init.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/suspend.h>
-#include <linux/freezer.h>
-#include <linux/mutex.h>
-#include <linux/writeback.h>
-#include <linux/completion.h>
-#include <linux/highmem.h>
-#include <linux/kthread.h>
-#include <linux/splice.h>
-#include <linux/sysfs.h>
-#include <linux/miscdevice.h>
-#include <linux/falloc.h>
-#include <linux/uio.h>
-#include <linux/ioprio.h>
-#include <linux/blk-cgroup.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/sched.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/file.h>
+#include <linaos/stat.h>
+#include <linaos/errno.h>
+#include <linaos/major.h>
+#include <linaos/wait.h>
+#include <linaos/blkdev.h>
+#include <linaos/blkpg.h>
+#include <linaos/init.h>
+#include <linaos/swap.h>
+#include <linaos/slab.h>
+#include <linaos/compat.h>
+#include <linaos/suspend.h>
+#include <linaos/freezer.h>
+#include <linaos/mutex.h>
+#include <linaos/writeback.h>
+#include <linaos/completion.h>
+#include <linaos/highmem.h>
+#include <linaos/kthread.h>
+#include <linaos/splice.h>
+#include <linaos/sysfs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/falloc.h>
+#include <linaos/uio.h>
+#include <linaos/ioprio.h>
+#include <linaos/blk-cgroup.h>
 
 #include "loop.h"
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 static DEFINE_IDR(loop_index_idr);
 static DEFINE_MUTEX(loop_ctl_mutex);

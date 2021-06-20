@@ -7,13 +7,13 @@
  *	by Helge Deller <deller@gmx.de>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
 
 #include <asm/io.h>
 #include <asm/hardware.h>

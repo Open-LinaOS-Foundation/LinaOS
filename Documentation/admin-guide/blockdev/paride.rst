@@ -1,5 +1,5 @@
 ===================================
-Linux and parallel port IDE devices
+LinaOS and parallel port IDE devices
 ===================================
 
 PARIDE v1.03   (c) 1997-8  Grant Guenther <grant@torque.net>
@@ -32,7 +32,7 @@ that interconnected a standard PC parallel port cable and a standard
 IDE cable.  It is usually possible to exchange the CD-ROM device with
 any other device using the IDE interface.
 
-The document describes the support in Linux for parallel port IDE
+The document describes the support in LinaOS for parallel port IDE
 devices.  It does not cover parallel port SCSI devices, "ditto" tape
 drives or scanners.  Many different devices are supported by the
 parallel port IDE subsystem, including:
@@ -70,7 +70,7 @@ high-level drivers for each of the different types of supported devices:
 The high-level drivers function according to the relevant standards.
 The third component of PARIDE is a set of low-level protocol drivers
 for each of the parallel port IDE adapter chips.  Thanks to the interest
-and encouragement of Linux users from many parts of the world,
+and encouragement of LinaOS users from many parts of the world,
 support is available for almost all known adapter protocols:
 
 	====    ====================================== ====
@@ -94,7 +94,7 @@ support is available for almost all known adapter protocols:
 2. Using the PARIDE subsystem
 =============================
 
-While configuring the Linux kernel, you may choose either to build
+While configuring the LinaOS kernel, you may choose either to build
 the PARIDE drivers into your kernel, or to build them as modules.
 
 In either case, you will need to select "Parallel port IDE device support"
@@ -143,7 +143,7 @@ you may need to give some command line options to your bootloader
 (eg: LILO), how to do that is beyond the scope of this document.
 
 The high-level drivers accept a number of command line parameters, all
-of which are documented in the source files in linux/drivers/block/paride.
+of which are documented in the source files in linaos/drivers/block/paride.
 By default, each driver will automatically try all parallel ports it
 can find, and all protocol types that have been installed, until it finds
 a parallel port IDE adapter.  Once it finds one, the probe stops.  So,
@@ -229,7 +229,7 @@ you could give the following command::
 	# insmod pcd drive0=0x378,1 drive1=0x3bc,1
 
 For most adapters, giving a port address and protocol number is sufficient,
-but check the source files in linux/drivers/block/paride for more
+but check the source files in linaos/drivers/block/paride for more
 information.  (Hopefully someone will write some man pages one day !).
 
 As another example, here's what happens when PARPORT is installed, and
@@ -285,7 +285,7 @@ cut to a file and execute::
   # end of mkd
 
 With the device files and drivers in place, you can access PARIDE devices
-like any other Linux device.   For example, to mount a CD-ROM in pcd0, use::
+like any other LinaOS device.   For example, to mount a CD-ROM in pcd0, use::
 
 	mount /dev/pcd0 /cdrom
 
@@ -364,7 +364,7 @@ transfers, or unexpected failures, you may wish to increase the
 port delay.   The delay can be programmed using the "driveN" parameters
 to each of the high-level drivers.  Please see the notes above, or
 read the comments at the beginning of the driver source files in
-linux/drivers/block/paride.
+linaos/drivers/block/paride.
 
 3.3  Some drives need a printer reset
 -------------------------------------
@@ -412,16 +412,16 @@ Use 'dmesg' to capture a log of all the PARIDE messages (any messages
 beginning with paride:, a protocol module's name or a driver's name) and
 include that with your bug report.  You can submit a bug report in one
 of two ways.  Either send it directly to the author of the PARIDE suite,
-by e-mail to grant@torque.net, or join the linux-parport mailing list
+by e-mail to grant@torque.net, or join the linaos-parport mailing list
 and post your report there.
 
 3.5  For more information or help
 ---------------------------------
 
-You can join the linux-parport mailing list by sending a mail message
+You can join the linaos-parport mailing list by sending a mail message
 to:
 
-		linux-parport-request@torque.net
+		linaos-parport-request@torque.net
 
 with the single word::
 
@@ -433,7 +433,7 @@ the list manager is a robot that will subscribe you using the reply
 address in your mail headers.  REMOVE any anti-spam gimmicks you may
 have in your mail headers, when sending mail to the list server.
 
-You might also find some useful information on the linux-parport
+You might also find some useful information on the linaos-parport
 web pages (although they are not always up to date) at
 
 	http://web.archive.org/web/%2E/http://www.torque.net/parport/

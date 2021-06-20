@@ -1,9 +1,9 @@
 /*
- *  linux/drivers/scsi/esas2r/esas2r_main.c
+ *  linaos/drivers/scsi/esas2r/esas2r_main.c
  *      For use with ATTO ExpressSAS R6xx SAS/SATA RAID controllers
  *
  *  Copyright (c) 2001-2013 ATTO Technology, Inc.
- *  (mailto:linuxdrivers@attotech.com)
+ *  (mailto:linaosdrivers@attotech.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -1872,7 +1872,7 @@ void esas2r_target_state_changed(struct esas2r_adapter *a, u16 targ_id,
 				      sizeof(targ_id));
 }
 
-/* Translate status to a Linux SCSI mid-layer error code */
+/* Translate status to a LinaOS SCSI mid-layer error code */
 int esas2r_req_status_to_error(u8 req_stat)
 {
 	switch (req_stat) {

@@ -11,7 +11,7 @@
 #ifndef _ASM_IA64_MMZONE_H
 #define _ASM_IA64_MMZONE_H
 
-#include <linux/numa.h>
+#include <linaos/numa.h>
 #include <asm/page.h>
 #include <asm/meminit.h>
 

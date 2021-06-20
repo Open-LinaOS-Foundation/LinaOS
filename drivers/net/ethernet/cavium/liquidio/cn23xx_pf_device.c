@@ -15,9 +15,9 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE, TITLE, or
  * NONINFRINGEMENT.  See the GNU General Public License for more details.
  ***********************************************************************/
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/etherdevice.h>
+#include <linaos/pci.h>
+#include <linaos/vmalloc.h>
+#include <linaos/etherdevice.h>
 #include "liquidio_common.h"
 #include "octeon_droq.h"
 #include "octeon_iq.h"

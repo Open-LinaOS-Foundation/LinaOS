@@ -275,7 +275,7 @@
 
 		/* IPIC
 		 * interrupts cell = <intr #, sense>
-		 * sense values match linux IORESOURCE_IRQ_* defines:
+		 * sense values match linaos IORESOURCE_IRQ_* defines:
 		 * sense == 8: Level, low assertion
 		 * sense == 2: Edge, high-to-low change
 		 */

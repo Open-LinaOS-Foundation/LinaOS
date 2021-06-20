@@ -4,21 +4,21 @@
  * Copyright(c) 2005 - 2011 Intel Corporation. All rights reserved.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel LinaOS Wireless <ilw@linaos.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
 #include <net/mac80211.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/delay.h>
 
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 
 #include "commands.h"
 #include "3945.h"

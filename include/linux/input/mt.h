@@ -8,7 +8,7 @@
  * Copyright (c) 2010 Henrik Rydberg
  */
 
-#include <linux/input.h>
+#include <linaos/input.h>
 
 #define TRKID_MAX	0xffff
 

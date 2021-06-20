@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Definitions for MIBs
  *
- * Author: Hideaki YOSHIFUJI <yoshfuji@linux-ipv6.org>
+ * Author: Hideaki YOSHIFUJI <yoshfuji@linaos-ipv6.org>
  */
 
 #ifndef _LINUX_SNMP_H
@@ -163,7 +163,7 @@ enum
 	__UDP_MIB_MAX
 };
 
-/* linux mib definitions */
+/* linaos mib definitions */
 enum
 {
 	LINUX_MIB_NUM = 0,
@@ -293,7 +293,7 @@ enum
 	__LINUX_MIB_MAX
 };
 
-/* linux Xfrm mib definitions */
+/* linaos Xfrm mib definitions */
 enum
 {
 	LINUX_MIB_XFRMNUM = 0,
@@ -328,7 +328,7 @@ enum
 	__LINUX_MIB_XFRMMAX
 };
 
-/* linux TLS mib definitions */
+/* linaos TLS mib definitions */
 enum
 {
 	LINUX_MIB_TLSNUM = 0,

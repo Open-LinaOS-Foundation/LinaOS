@@ -42,17 +42,17 @@
  * like lsb/msb first, syncdl, dtdl etc. are exposed via DT and I2S defaults
  * are used. These can be exposed later if needed after testing.
  */
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/ioctl.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/ioctl.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/of_graph.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
 #include <media/v4l2-async.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

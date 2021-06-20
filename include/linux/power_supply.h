@@ -12,11 +12,11 @@
 #ifndef __LINUX_POWER_SUPPLY_H__
 #define __LINUX_POWER_SUPPLY_H__
 
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/leds.h>
-#include <linux/spinlock.h>
-#include <linux/notifier.h>
+#include <linaos/device.h>
+#include <linaos/workqueue.h>
+#include <linaos/leds.h>
+#include <linaos/spinlock.h>
+#include <linaos/notifier.h>
 
 /*
  * All voltages, currents, charges, energies, time and temperatures in uV,

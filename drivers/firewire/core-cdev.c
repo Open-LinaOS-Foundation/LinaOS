@@ -5,38 +5,38 @@
  * Copyright (C) 2005-2007  Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/bug.h>
-#include <linux/compat.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-cdev.h>
-#include <linux/idr.h>
-#include <linux/irqflags.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/sched.h> /* required for linux/wait.h */
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linaos/bug.h>
+#include <linaos/compat.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/firewire.h>
+#include <linaos/firewire-cdev.h>
+#include <linaos/idr.h>
+#include <linaos/irqflags.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h> /* required for linaos/wait.h */
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/time.h>
+#include <linaos/uaccess.h>
+#include <linaos/vmalloc.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
 
 
 #include "core.h"
 
 /*
- * ABI version history is documented in linux/firewire-cdev.h.
+ * ABI version history is documented in linaos/firewire-cdev.h.
  */
 #define FW_CDEV_KERNEL_VERSION			5
 #define FW_CDEV_VERSION_EVENT_REQUEST2		4

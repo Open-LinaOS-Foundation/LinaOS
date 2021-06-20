@@ -10,8 +10,8 @@
  *          Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/dma-buf-map.h>
-#include <linux/export.h>
+#include <linaos/dma-buf-map.h>
+#include <linaos/export.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

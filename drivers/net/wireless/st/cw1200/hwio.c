@@ -11,7 +11,7 @@
  * Author: Ajitpal Singh <ajitpal.singh@lockless.no>
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "cw1200.h"
 #include "hwio.h"

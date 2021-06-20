@@ -4,8 +4,8 @@
 #ifndef __IPU3_CSS_H
 #define __IPU3_CSS_H
 
-#include <linux/videodev2.h>
-#include <linux/types.h>
+#include <linaos/videodev2.h>
+#include <linaos/types.h>
 
 #include "ipu3-abi.h"
 #include "ipu3-css-pool.h"

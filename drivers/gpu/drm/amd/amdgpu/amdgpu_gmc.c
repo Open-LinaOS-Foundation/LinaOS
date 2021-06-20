@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 
 #include "amdgpu.h"
 #include "amdgpu_gmc.h"

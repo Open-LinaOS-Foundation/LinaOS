@@ -2,10 +2,10 @@
 #ifndef BLK_MQ_H
 #define BLK_MQ_H
 
-#include <linux/blkdev.h>
-#include <linux/sbitmap.h>
-#include <linux/srcu.h>
-#include <linux/lockdep.h>
+#include <linaos/blkdev.h>
+#include <linaos/sbitmap.h>
+#include <linaos/srcu.h>
+#include <linaos/lockdep.h>
 
 struct blk_mq_tags;
 struct blk_flush_queue;

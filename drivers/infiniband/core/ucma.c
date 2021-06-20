@@ -30,21 +30,21 @@
  * SOFTWARE.
  */
 
-#include <linux/completion.h>
-#include <linux/file.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/idr.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
-#include <linux/nsproxy.h>
+#include <linaos/completion.h>
+#include <linaos/file.h>
+#include <linaos/mutex.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h>
+#include <linaos/idr.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/miscdevice.h>
+#include <linaos/slab.h>
+#include <linaos/sysctl.h>
+#include <linaos/module.h>
+#include <linaos/nsproxy.h>
 
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
 #include <rdma/rdma_user_cm.h>
 #include <rdma/ib_marshall.h>

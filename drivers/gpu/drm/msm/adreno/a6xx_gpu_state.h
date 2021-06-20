@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2018-2019 The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2018-2019 The LinaOS Foundation. All rights reserved. */
 
 #ifndef _A6XX_CRASH_DUMP_H_
 #define _A6XX_CRASH_DUMP_H_

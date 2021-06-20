@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-palmtt.c
+ * linaos/arch/arm/mach-omap1/board-palmtt.c
  *
  * Modified from board-palmtt2.c
  *
@@ -8,24 +8,24 @@
  * by Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/notifier.h>
-#include <linux/clk.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/leds.h>
-#include <linux/omapfb.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/platform_data/omap1_bl.h>
-#include <linux/platform_data/leds-omap.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/notifier.h>
+#include <linaos/clk.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/leds.h>
+#include <linaos/omapfb.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/ads7846.h>
+#include <linaos/platform_data/omap1_bl.h>
+#include <linaos/platform_data/leds-omap.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -33,9 +33,9 @@
 
 #include "flash.h"
 #include <mach/mux.h>
-#include <linux/omap-dma.h>
+#include <linaos/omap-dma.h>
 #include <mach/tc.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <linaos/platform_data/keypad-omap.h>
 
 #include <mach/hardware.h>
 #include <mach/usb.h>

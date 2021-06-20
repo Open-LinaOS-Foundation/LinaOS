@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Linux driver for System z and s390 unit record devices
+ * LinaOS driver for System z and s390 unit record devices
  * (z/VM virtual punch, reader, printer)
  *
  * Copyright IBM Corp. 2001, 2009
@@ -12,11 +12,11 @@
 #define KMSG_COMPONENT "vmur"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/cdev.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/cio.h>
 #include <asm/ccwdev.h>
 #include <asm/debug.h>

@@ -6,8 +6,8 @@
  ******************************************************************************/
 #define _HAL_INIT_C_
 
-#include <linux/firmware.h>
-#include <linux/vmalloc.h>
+#include <linaos/firmware.h>
+#include <linaos/vmalloc.h>
 #include <drv_types.h>
 #include <rtw_efuse.h>
 #include <phy.h>

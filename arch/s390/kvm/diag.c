@@ -8,8 +8,8 @@
  *               Christian Borntraeger <borntraeger@de.ibm.com>
  */
 
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
+#include <linaos/kvm.h>
+#include <linaos/kvm_host.h>
 #include <asm/gmap.h>
 #include <asm/virtio-ccw.h>
 #include "kvm-s390.h"

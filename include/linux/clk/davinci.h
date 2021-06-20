@@ -8,8 +8,8 @@
 #ifndef __LINUX_CLK_DAVINCI_PLL_H___
 #define __LINUX_CLK_DAVINCI_PLL_H___
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
 
 /* function for registering clocks in early boot */
 

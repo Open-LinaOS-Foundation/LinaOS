@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Copyright (c) 2020 Facebook */
-/* "undefine" structs in vmlinux.h, because we "override" them below */
+/* "undefine" structs in vmlinaos.h, because we "override" them below */
 #define bpf_iter_meta bpf_iter_meta___not_used
 #define bpf_iter__bpf_map bpf_iter__bpf_map___not_used
 #define bpf_iter__ipv6_route bpf_iter__ipv6_route___not_used
@@ -20,7 +20,7 @@
 #define BTF_F_NONAME BTF_F_NONAME___not_used
 #define BTF_F_PTR_RAW BTF_F_PTR_RAW___not_used
 #define BTF_F_ZERO BTF_F_ZERO___not_used
-#include "vmlinux.h"
+#include "vmlinaos.h"
 #undef bpf_iter_meta
 #undef bpf_iter__bpf_map
 #undef bpf_iter__ipv6_route

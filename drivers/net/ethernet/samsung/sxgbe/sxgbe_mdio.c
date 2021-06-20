@@ -9,13 +9,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/io.h>
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
-#include <linux/slab.h>
-#include <linux/sxgbe_platform.h>
+#include <linaos/io.h>
+#include <linaos/mii.h>
+#include <linaos/netdevice.h>
+#include <linaos/platform_device.h>
+#include <linaos/phy.h>
+#include <linaos/slab.h>
+#include <linaos/sxgbe_platform.h>
 
 #include "sxgbe_common.h"
 #include "sxgbe_reg.h"

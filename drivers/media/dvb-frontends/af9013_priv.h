@@ -14,10 +14,10 @@
 #include <media/dvb_frontend.h>
 #include <media/dvb_math.h>
 #include "af9013.h"
-#include <linux/firmware.h>
-#include <linux/i2c-mux.h>
-#include <linux/math64.h>
-#include <linux/regmap.h>
+#include <linaos/firmware.h>
+#include <linaos/i2c-mux.h>
+#include <linaos/math64.h>
+#include <linaos/regmap.h>
 
 #define AF9013_FIRMWARE "dvb-fe-af9013.fw"
 

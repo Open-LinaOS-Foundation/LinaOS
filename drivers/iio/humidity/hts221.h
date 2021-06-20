@@ -12,8 +12,8 @@
 
 #define HTS221_DEV_NAME		"hts221"
 
-#include <linux/iio/iio.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/regulator/consumer.h>
 
 enum hts221_sensor_type {
 	HTS221_SENSOR_H,

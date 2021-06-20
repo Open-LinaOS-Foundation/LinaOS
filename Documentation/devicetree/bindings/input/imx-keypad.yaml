@@ -53,7 +53,7 @@ required:
   - reg
   - interrupts
   - clocks
-  - linux,keymap
+  - linaos,keymap
 
 unevaluatedProperties: false
 
@@ -66,7 +66,7 @@ examples:
         clocks = <&clks 0>;
         pinctrl-names = "default";
         pinctrl-0 = <&pinctrl_kpp_1>;
-        linux,keymap = <0x00000067	/* KEY_UP */
+        linaos,keymap = <0x00000067	/* KEY_UP */
                         0x0001006c	/* KEY_DOWN */
                         0x00020072	/* KEY_VOLUMEDOWN */
                         0x00030066	/* KEY_HOME */

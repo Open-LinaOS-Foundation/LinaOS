@@ -15,30 +15,30 @@
 #define KMSG_COMPONENT "ctcm"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/timer.h>
+#include <linaos/bitops.h>
 
-#include <linux/signal.h>
-#include <linux/string.h>
+#include <linaos/signal.h>
+#include <linaos/string.h>
 
-#include <linux/ip.h>
-#include <linux/if_arp.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/ctype.h>
+#include <linaos/ip.h>
+#include <linaos/if_arp.h>
+#include <linaos/tcp.h>
+#include <linaos/skbuff.h>
+#include <linaos/ctype.h>
 #include <net/dst.h>
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <asm/ccwdev.h>
 #include <asm/ccwgroup.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <asm/idals.h>
 

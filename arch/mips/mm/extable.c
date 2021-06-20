@@ -3,12 +3,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1997, 99, 2001 - 2004 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 1997, 99, 2001 - 2004 Ralf Baechle <ralf@linaos-mips.org>
  */
-#include <linux/extable.h>
-#include <linux/spinlock.h>
+#include <linaos/extable.h>
+#include <linaos/spinlock.h>
 #include <asm/branch.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 int fixup_exception(struct pt_regs *regs)
 {

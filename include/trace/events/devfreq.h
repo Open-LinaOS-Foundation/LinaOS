@@ -5,8 +5,8 @@
 #if !defined(_TRACE_DEVFREQ_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_DEVFREQ_H
 
-#include <linux/devfreq.h>
-#include <linux/tracepoint.h>
+#include <linaos/devfreq.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(devfreq_frequency,
 	TP_PROTO(struct devfreq *devfreq, unsigned long freq,

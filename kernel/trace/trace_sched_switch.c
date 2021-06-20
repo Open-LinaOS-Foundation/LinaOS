@@ -5,10 +5,10 @@
  * Copyright (C) 2007 Steven Rostedt <srostedt@redhat.com>
  *
  */
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
+#include <linaos/module.h>
+#include <linaos/kallsyms.h>
+#include <linaos/uaccess.h>
+#include <linaos/ftrace.h>
 #include <trace/events/sched.h>
 
 #include "trace.h"

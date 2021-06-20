@@ -1,5 +1,5 @@
 #
-# gdb helper commands and functions for Linux kernel debugging
+# gdb helper commands and functions for LinaOS kernel debugging
 #
 #  task & thread tools
 #
@@ -13,7 +13,7 @@
 
 import gdb
 
-from linux import utils
+from linaos import utils
 
 
 task_type = utils.CachedType("struct task_struct")
@@ -47,7 +47,7 @@ def get_task_by_pid(pid):
 
 
 class LxTaskByPidFunc(gdb.Function):
-    """Find Linux task by PID and return the task_struct variable.
+    """Find LinaOS task by PID and return the task_struct variable.
 
 $lx_task_by_pid(PID): Given PID, iterate over all tasks of the target and
 return that task_struct variable which PID matches."""
@@ -67,7 +67,7 @@ LxTaskByPidFunc()
 
 
 class LxPs(gdb.Command):
-    """Dump Linux tasks."""
+    """Dump LinaOS tasks."""
 
     def __init__(self):
         super(LxPs, self).__init__("lx-ps", gdb.COMMAND_DATA)
@@ -105,7 +105,7 @@ def get_thread_info(task):
 
 
 class LxThreadInfoFunc (gdb.Function):
-    """Calculate Linux thread_info from task variable.
+    """Calculate LinaOS thread_info from task variable.
 
 $lx_thread_info(TASK): Given TASK, return the corresponding thread_info
 variable."""
@@ -121,7 +121,7 @@ LxThreadInfoFunc()
 
 
 class LxThreadInfoByPidFunc (gdb.Function):
-    """Calculate Linux thread_info from task variable found by pid
+    """Calculate LinaOS thread_info from task variable found by pid
 
 $lx_thread_info_by_pid(PID): Given PID, return the corresponding thread_info
 variable."""

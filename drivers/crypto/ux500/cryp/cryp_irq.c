@@ -8,9 +8,9 @@
  * Author: Niklas Hernaeus <niklas.hernaeus@stericsson.com> for ST-Ericsson.
  */
 
-#include <linux/kernel.h>
-#include <linux/bitmap.h>
-#include <linux/device.h>
+#include <linaos/kernel.h>
+#include <linaos/bitmap.h>
+#include <linaos/device.h>
 
 #include "cryp.h"
 #include "cryp_p.h"

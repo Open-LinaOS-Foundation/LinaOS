@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Intel IXP4xx Network Processor Engine driver for Linux
+ * Intel IXP4xx Network Processor Engine driver for LinaOS
  *
  * Copyright (C) 2007 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -11,15 +11,15 @@
  *   Thanks, Christian.
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/soc/ixp4xx/npe.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/firmware.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/soc/ixp4xx/npe.h>
 
 #define DEBUG_MSG			0
 #define DEBUG_FW			0

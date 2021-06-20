@@ -5,8 +5,8 @@
  * - Kurt Van Dijck, EIA Electronics
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
 #include <asm/io.h>
 
 #include "softing.h"

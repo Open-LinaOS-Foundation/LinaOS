@@ -6,15 +6,15 @@
 #ifndef _I915_PERF_TYPES_H_
 #define _I915_PERF_TYPES_H_
 
-#include <linux/atomic.h>
-#include <linux/device.h>
-#include <linux/hrtimer.h>
-#include <linux/llist.h>
-#include <linux/poll.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/uuid.h>
-#include <linux/wait.h>
+#include <linaos/atomic.h>
+#include <linaos/device.h>
+#include <linaos/hrtimer.h>
+#include <linaos/llist.h>
+#include <linaos/poll.h>
+#include <linaos/sysfs.h>
+#include <linaos/types.h>
+#include <linaos/uuid.h>
+#include <linaos/wait.h>
 #include <uapi/drm/i915_drm.h>
 
 #include "gt/intel_sseu.h"

@@ -2,8 +2,8 @@
 #ifndef _LINUX_CEPH_STRIPER_H
 #define _LINUX_CEPH_STRIPER_H
 
-#include <linux/list.h>
-#include <linux/types.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
 
 struct ceph_file_layout;
 

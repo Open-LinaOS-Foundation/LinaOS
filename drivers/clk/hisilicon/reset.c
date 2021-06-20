@@ -5,12 +5,12 @@
  * Copyright (c) 2015-2016 HiSilicon Technologies Co., Ltd.
  */
 
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset-controller.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 #include "reset.h"
 
 #define	HISI_RESET_BIT_MASK	0x1f

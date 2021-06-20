@@ -29,13 +29,13 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/if.h>
+#include <linaos/if_vlan.h>
+#include <linaos/jhash.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 #include <net/neighbour.h>
 #include "common.h"
 #include "t3cdev.h"

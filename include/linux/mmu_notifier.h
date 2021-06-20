@@ -2,12 +2,12 @@
 #ifndef _LINUX_MMU_NOTIFIER_H
 #define _LINUX_MMU_NOTIFIER_H
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/mm_types.h>
-#include <linux/mmap_lock.h>
-#include <linux/srcu.h>
-#include <linux/interval_tree.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm_types.h>
+#include <linaos/mmap_lock.h>
+#include <linaos/srcu.h>
+#include <linaos/interval_tree.h>
 
 struct mmu_notifier_subscriptions;
 struct mmu_notifier;
@@ -87,7 +87,7 @@ struct mmu_notifier_ops {
 	 * test-and-clearing the young/accessed bitflag in the
 	 * pte. This way the VM will provide proper aging to the
 	 * accesses to the page through the secondary MMUs and not
-	 * only to the ones through the Linux pte.
+	 * only to the ones through the LinaOS pte.
 	 * Start-end is necessary in case the secondary MMU is mapping the page
 	 * at a smaller granularity than the primary MMU.
 	 */
@@ -164,7 +164,7 @@ struct mmu_notifier_ops {
 	 * droppped on invalidate_range_end() then the driver itself
 	 * will drop the last refcount but it must take care to flush
 	 * any secondary tlb before doing the final free on the
-	 * page. Pages will no longer be referenced by the linux
+	 * page. Pages will no longer be referenced by the linaos
 	 * address space but may still be referenced by sptes until
 	 * the last refcount is dropped.
 	 *

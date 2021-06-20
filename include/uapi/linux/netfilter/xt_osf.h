@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Copyright (c) 2003+ Evgeniy Polyakov <johnpol@2ka.mxt.ru>
  *
@@ -20,8 +20,8 @@
 #ifndef _XT_OSF_H
 #define _XT_OSF_H
 
-#include <linux/types.h>
-#include <linux/netfilter/nfnetlink_osf.h>
+#include <linaos/types.h>
+#include <linaos/netfilter/nfnetlink_osf.h>
 
 #define XT_OSF_GENRE		NF_OSF_GENRE
 #define XT_OSF_INVERT		NF_OSF_INVERT

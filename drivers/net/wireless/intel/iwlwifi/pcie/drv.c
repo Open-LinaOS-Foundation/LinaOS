@@ -6,9 +6,9 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/acpi.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/acpi.h>
 
 #include "fw/acpi.h"
 

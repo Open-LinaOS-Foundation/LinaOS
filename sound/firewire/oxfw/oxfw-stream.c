@@ -6,7 +6,7 @@
  */
 
 #include "oxfw.h"
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #define AVC_GENERIC_FRAME_MAXIMUM_BYTES	512
 #define CALLBACK_TIMEOUT	200

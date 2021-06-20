@@ -10,7 +10,7 @@
 #ifndef _LINUX_WL12XX_H
 #define _LINUX_WL12XX_H
 
-#include <linux/err.h>
+#include <linaos/err.h>
 
 struct wl1251_platform_data {
 	int power_gpio;

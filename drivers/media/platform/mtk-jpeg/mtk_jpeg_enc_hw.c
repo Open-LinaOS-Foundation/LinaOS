@@ -5,8 +5,8 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/kernel.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
 #include <media/videobuf2-core.h>
 #include <media/videobuf2-dma-contig.h>
 

@@ -1,4 +1,4 @@
-#include <linux/device.h>
+#include <linaos/device.h>
 #include "pl111_drm.h"
 
 #ifndef PL111_VERSATILE_H

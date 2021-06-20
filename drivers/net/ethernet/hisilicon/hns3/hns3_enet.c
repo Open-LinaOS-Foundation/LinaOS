@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright (c) 2016-2017 Hisilicon Limited.
 
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/etherdevice.h>
+#include <linaos/interrupt.h>
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <linaos/cpu_rmap.h>
 #endif
-#include <linux/if_vlan.h>
-#include <linux/irq.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/aer.h>
-#include <linux/skbuff.h>
-#include <linux/sctp.h>
+#include <linaos/if_vlan.h>
+#include <linaos/irq.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/aer.h>
+#include <linaos/skbuff.h>
+#include <linaos/sctp.h>
 #include <net/gre.h>
 #include <net/ip6_checksum.h>
 #include <net/pkt_cls.h>

@@ -81,11 +81,11 @@
  * queueing support and devices which fail to provide sense data on
  * contingent allegiance conditions)
  *
- * Many thanks to Richard Hirst <rhirst@linuxcare.com> for patiently
+ * Many thanks to Richard Hirst <rhirst@linaoscare.com> for patiently
  * debugging this driver on the parisc architecture and suggesting
  * many improvements and bug fixes.
  *
- * Thanks also go to Linuxcare Inc. for providing several PARISC
+ * Thanks also go to LinaOScare Inc. for providing several PARISC
  * machines for me to debug the driver on.
  *
  * Version 2.2
@@ -101,21 +101,21 @@
  * */
 #define NCR_700_VERSION "2.8"
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/completion.h>
+#include <linaos/init.h>
+#include <linaos/proc_fs.h>
+#include <linaos/blkdev.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/pgtable.h>
 #include <asm/dma.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>

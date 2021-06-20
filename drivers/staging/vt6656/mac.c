@@ -16,7 +16,7 @@
  * Revision History:
  */
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 
 #include "desc.h"
 #include "mac.h"

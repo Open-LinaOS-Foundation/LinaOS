@@ -11,7 +11,7 @@
  *   (c) 2002 Alan Stern <stern@rowland.org>
  *
  * Initial work by:
- *   (c) 1999 Michael Gee (michael@linuxspecific.com)
+ *   (c) 1999 Michael Gee (michael@linaosspecific.com)
  *
  * This driver is based on the 'USB Mass Storage Class' document. This
  * describes in detail the protocol used to communicate with such
@@ -28,12 +28,12 @@
  * status of a command.
  */
 
-#include <linux/sched.h>
-#include <linux/gfp.h>
-#include <linux/errno.h>
-#include <linux/export.h>
+#include <linaos/sched.h>
+#include <linaos/gfp.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
 
-#include <linux/usb/quirks.h>
+#include <linaos/usb/quirks.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_eh.h>
@@ -45,7 +45,7 @@
 #include "scsiglue.h"
 #include "debug.h"
 
-#include <linux/blkdev.h>
+#include <linaos/blkdev.h>
 #include "../../scsi/sd.h"
 
 

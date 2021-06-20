@@ -4,9 +4,9 @@
  *
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
 
 #include "ccu_common.h"
 #include "ccu_reset.h"

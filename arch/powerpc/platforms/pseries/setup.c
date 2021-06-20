@@ -12,33 +12,33 @@
  * bootup setup stuff..
  */
 
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/user.h>
-#include <linux/tty.h>
-#include <linux/major.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/console.h>
-#include <linux/pci.h>
-#include <linux/utsname.h>
-#include <linux/adb.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/of.h>
-#include <linux/of_pci.h>
-#include <linux/memblock.h>
-#include <linux/swiotlb.h>
+#include <linaos/cpu.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/user.h>
+#include <linaos/tty.h>
+#include <linaos/major.h>
+#include <linaos/interrupt.h>
+#include <linaos/reboot.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/console.h>
+#include <linaos/pci.h>
+#include <linaos/utsname.h>
+#include <linaos/adb.h>
+#include <linaos/export.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/seq_file.h>
+#include <linaos/root_dev.h>
+#include <linaos/of.h>
+#include <linaos/of_pci.h>
+#include <linaos/memblock.h>
+#include <linaos/swiotlb.h>
 
 #include <asm/mmu.h>
 #include <asm/processor.h>
@@ -840,9 +840,9 @@ static int __init pSeries_init_panel(void)
 {
 	/* Manually leave the kernel version on the panel. */
 #ifdef __BIG_ENDIAN__
-	ppc_md.progress("Linux ppc64\n", 0);
+	ppc_md.progress("LinaOS ppc64\n", 0);
 #else
-	ppc_md.progress("Linux ppc64le\n", 0);
+	ppc_md.progress("LinaOS ppc64le\n", 0);
 #endif
 	ppc_md.progress(init_utsname()->version, 0);
 

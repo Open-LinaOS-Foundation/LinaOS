@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2012 LSI
  */
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/mach/arch.h>
 
 static const char *const axxia_dt_match[] __initconst = {

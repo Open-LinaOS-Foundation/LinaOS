@@ -4,7 +4,7 @@
 
 #include <uapi/asm/unistd.h>
 
-#define __NR_Linux_syscalls	__NR_syscalls
+#define __NR_LinaOS_syscalls	__NR_syscalls
 
 #ifndef __ASSEMBLY__
 
@@ -17,7 +17,7 @@
 #endif
 
 /* Definition taken from glibc 2.3.3
- * sysdeps/unix/sysv/linux/hppa/sysdep.h
+ * sysdeps/unix/sysv/linaos/hppa/sysdep.h
  */
 
 #ifdef PIC

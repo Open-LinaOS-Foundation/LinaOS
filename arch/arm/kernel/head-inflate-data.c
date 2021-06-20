@@ -6,8 +6,8 @@
  * Copyright:	(C) 2017  Linaro Limited
  */
 
-#include <linux/init.h>
-#include <linux/zutil.h>
+#include <linaos/init.h>
+#include <linaos/zutil.h>
 
 /* for struct inflate_state */
 #include "../../../lib/zlib_inflate/inftrees.h"

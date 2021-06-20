@@ -4,7 +4,7 @@
  *
  * Author: Tom Hromatka <tom.hromatka@oracle.com>
  */
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <errno.h>
 #include <fcntl.h>
 #include <stdarg.h>

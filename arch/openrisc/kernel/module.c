@@ -2,7 +2,7 @@
 /*
  * OpenRISC module.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -10,8 +10,8 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
+#include <linaos/moduleloader.h>
+#include <linaos/elf.h>
 
 int apply_relocate_add(Elf32_Shdr *sechdrs,
 		       const char *strtab,

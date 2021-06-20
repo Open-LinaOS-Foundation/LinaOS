@@ -3,10 +3,10 @@
 // Copyright (c) 2013-2014 Freescale Semiconductor, Inc
 // Copyright (c) 2017 Sysam, Angelo Dureghello  <angelo@sysam.it>
 
-#include <linux/dmapool.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/dma-mapping.h>
 
 #include "fsl-edma-common.h"
 

@@ -3,13 +3,13 @@
 * Copyright (C) 2014 Texas Instruments Ltd
 */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
 
 #include <video/omapfb_dss.h>
 

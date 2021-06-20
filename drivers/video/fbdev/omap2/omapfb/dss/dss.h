@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/drivers/video/omap2/dss/dss.h
+ * linaos/drivers/video/omap2/dss/dss.h
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -12,7 +12,7 @@
 #ifndef __OMAP2_DSS_H
 #define __OMAP2_DSS_H
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #ifdef pr_fmt
 #undef pr_fmt

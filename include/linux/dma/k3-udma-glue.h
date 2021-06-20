@@ -6,9 +6,9 @@
 #ifndef K3_UDMA_GLUE_H_
 #define K3_UDMA_GLUE_H_
 
-#include <linux/types.h>
-#include <linux/soc/ti/k3-ringacc.h>
-#include <linux/dma/ti-cppi5.h>
+#include <linaos/types.h>
+#include <linaos/soc/ti/k3-ringacc.h>
+#include <linaos/dma/ti-cppi5.h>
 
 struct k3_udma_glue_tx_channel_cfg {
 	struct k3_ring_cfg tx_cfg;
@@ -85,7 +85,7 @@ struct k3_udma_glue_rx_flow_cfg {
  * @flow_id_use_rxchan_id:	use RX channel id as flow id,
  *				used only if @flow_id_num = 1
  * @remote		indication that RX channel is remote - some remote CPU
- *			core owns and control the RX channel. Linux Host only
+ *			core owns and control the RX channel. LinaOS Host only
  *			allowed to attach and configure RX Flow within RX
  *			channel. if set - not RX channel operation will be
  *			performed by K3 NAVSS DMA glue interface.

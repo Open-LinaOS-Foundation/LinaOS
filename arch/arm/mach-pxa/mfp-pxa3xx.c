@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/mfp.c
+ * linaos/arch/arm/mach-pxa/mfp.c
  *
  * PXA3xx Multi-Function Pin Support
  *
@@ -10,11 +10,11 @@
  *             initial version
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/syscore_ops.h>
 
 #include <mach/hardware.h>
 #include "mfp-pxa3xx.h"

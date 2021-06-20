@@ -4,7 +4,7 @@
 #ifndef QTNFMAC_UTIL_H
 #define QTNFMAC_UTIL_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "core.h"
 
 const char *qtnf_chipid_to_string(unsigned long chip_id);

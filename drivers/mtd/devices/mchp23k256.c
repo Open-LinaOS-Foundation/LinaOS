@@ -6,16 +6,16 @@
  *
  * Copyright © 2016 Andrew Lunn <andrew@lunn.ch>
  */
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/sizes.h>
-#include <linux/spi/flash.h>
-#include <linux/spi/spi.h>
-#include <linux/of_device.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mutex.h>
+#include <linaos/sched.h>
+#include <linaos/sizes.h>
+#include <linaos/spi/flash.h>
+#include <linaos/spi/spi.h>
+#include <linaos/of_device.h>
 
 #define MAX_CMD_SIZE		4
 

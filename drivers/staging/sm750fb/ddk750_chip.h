@@ -6,9 +6,9 @@
 #define SM750LE_REVISION_ID ((unsigned char)0xfe)
 #endif
 
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/uaccess.h>
 
 extern void __iomem *mmio750;
 

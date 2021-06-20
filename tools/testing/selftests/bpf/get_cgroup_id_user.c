@@ -8,13 +8,13 @@
 #include <fcntl.h>
 #include <syscall.h>
 #include <unistd.h>
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 #include <sys/ioctl.h>
 #include <sys/time.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
 

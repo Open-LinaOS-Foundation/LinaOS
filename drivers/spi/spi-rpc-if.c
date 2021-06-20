@@ -7,10 +7,10 @@
 // Copyright (C) 2019 - 2020 Cogent Embedded, Inc.
 //
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi-mem.h>
 
 #include <memory/renesas-rpc-if.h>
 

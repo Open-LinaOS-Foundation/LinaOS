@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  Copyright (C) 1992 obz under the linux copyright
+ *  Copyright (C) 1992 obz under the linaos copyright
  *
  *  Dynamic diacritical handling - aeb@cwi.nl - Dec 1993
  *  Dynamic keymap and string allocation - aeb@cwi.nl - May 1994
@@ -9,35 +9,35 @@
  *  Check put/get_user, cleanups - acme@conectiva.com.br - Jun 2001
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/sched/signal.h>
-#include <linux/tty.h>
-#include <linux/timer.h>
-#include <linux/kernel.h>
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/kd.h>
-#include <linux/vt.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/console.h>
-#include <linux/consolemap.h>
-#include <linux/signal.h>
-#include <linux/suspend.h>
-#include <linux/timex.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/sched/signal.h>
+#include <linaos/tty.h>
+#include <linaos/timer.h>
+#include <linaos/kernel.h>
+#include <linaos/compat.h>
+#include <linaos/module.h>
+#include <linaos/kd.h>
+#include <linaos/vt.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/major.h>
+#include <linaos/fs.h>
+#include <linaos/console.h>
+#include <linaos/consolemap.h>
+#include <linaos/signal.h>
+#include <linaos/suspend.h>
+#include <linaos/timex.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
-#include <linux/kbd_kern.h>
-#include <linux/vt_kern.h>
-#include <linux/kbd_diacr.h>
-#include <linux/selection.h>
+#include <linaos/kbd_kern.h>
+#include <linaos/vt_kern.h>
+#include <linaos/kbd_diacr.h>
+#include <linaos/selection.h>
 
 bool vt_dont_switch;
 
@@ -71,7 +71,7 @@ static inline bool vt_busy(int i)
  * experimentation and study of X386 SYSV handling.
  *
  * One point of difference: SYSV vt's are /dev/vtX, which X >= 0, and
- * /dev/console is a separate ttyp. Under Linux, /dev/tty0 is /dev/console,
+ * /dev/console is a separate ttyp. Under LinaOS, /dev/tty0 is /dev/console,
  * and the vc start at /dev/ttyX, X >= 1. We maintain that here, so we will
  * always treat our set of vt as numbered 1..MAX_NR_CONSOLES (corresponding to
  * ttys 0..MAX_NR_CONSOLES-1). Explicitly naming VT 0 is illegal, but using
@@ -354,7 +354,7 @@ static int vt_k_ioctl(struct tty_struct *tty, unsigned int cmd,
 				  (cmd == KDENABIO)) ? -ENXIO : 0;
 #endif
 
-	/* Linux m68k/i386 interface for setting the keyboard delay/repeat rate */
+	/* LinaOS m68k/i386 interface for setting the keyboard delay/repeat rate */
 
 	case KDKBDREP:
 	{
@@ -757,7 +757,7 @@ int vt_ioctl(struct tty_struct *tty,
 
 	switch (cmd) {
 	case TIOCLINUX:
-		return tioclinux(tty, arg);
+		return tioclinaos(tty, arg);
 	case VT_SETMODE:
 	{
 		struct vt_mode tmp;

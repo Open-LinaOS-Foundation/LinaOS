@@ -5,7 +5,7 @@
 
 
   Contact Information:
-  Intel Linux Wireless <ilw@linux.intel.com>
+  Intel LinaOS Wireless <ilw@linaos.intel.com>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
 ******************************************************************************/
@@ -13,23 +13,23 @@
 #ifndef __ipw2200_h__
 #define __ipw2200_h__
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/interrupt.h>
+#include <linaos/mutex.h>
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/dma-mapping.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/skbuff.h>
+#include <linaos/etherdevice.h>
+#include <linaos/delay.h>
+#include <linaos/random.h>
+#include <linaos/dma-mapping.h>
 
-#include <linux/firmware.h>
-#include <linux/wireless.h>
-#include <linux/jiffies.h>
+#include <linaos/firmware.h>
+#include <linaos/wireless.h>
+#include <linaos/jiffies.h>
 #include <asm/io.h>
 
 #include <net/lib80211.h>
@@ -37,7 +37,7 @@
 
 #define DRV_NAME	"ipw2200"
 
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 
 #include "libipw.h"
 
@@ -1481,7 +1481,7 @@ do { if (ipw_debug_level & (level)) \
 #define IPW_DEBUG_MERGE(f, a...) IPW_LL_DEBUG(IPW_DL_MERGE, f, ## a)
 #define IPW_DEBUG_QOS(f, a...)   IPW_LL_DEBUG(IPW_DL_QOS, f, ## a)
 
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 
 /*
 * Register bit definitions

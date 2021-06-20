@@ -11,8 +11,8 @@
 #ifndef _LINUX_FSVERITY_H
 #define _LINUX_FSVERITY_H
 
-#include <linux/fs.h>
-#include <uapi/linux/fsverity.h>
+#include <linaos/fs.h>
+#include <uapi/linaos/fsverity.h>
 
 /* Verity operations for filesystems */
 struct fsverity_operations {

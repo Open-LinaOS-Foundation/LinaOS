@@ -4,14 +4,14 @@
  *
  *  Copyright (C) 2007 - 2010  Paul Mundt
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/serial_sci.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
+#include <linaos/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/serial.h>
+#include <linaos/serial_sci.h>
+#include <linaos/io.h>
+#include <linaos/gpio.h>
+#include <linaos/sh_timer.h>
+#include <linaos/sh_intc.h>
 #include <cpu/shx3.h>
 #include <asm/mmzone.h>
 #include <asm/platform_early.h>

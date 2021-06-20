@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2012 Nobuhiro Iwamatsu <iwamatsu@nigauri.org>
  */
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/thermal.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/thermal.h>
 
 #define KIRKWOOD_THERMAL_VALID_OFFSET	9
 #define KIRKWOOD_THERMAL_VALID_MASK	0x1

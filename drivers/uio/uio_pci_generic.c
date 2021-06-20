@@ -18,11 +18,11 @@
  * all compliant PCI Express devices should support this bit.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/uio_driver.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/uio_driver.h>
 
 #define DRIVER_VERSION	"0.01.0"
 #define DRIVER_AUTHOR	"Michael S. Tsirkin <mst@redhat.com>"

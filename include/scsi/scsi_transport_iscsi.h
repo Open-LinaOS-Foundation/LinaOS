@@ -10,9 +10,9 @@
 #ifndef SCSI_TRANSPORT_ISCSI_H
 #define SCSI_TRANSPORT_ISCSI_H
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
 #include <scsi/iscsi_if.h>
 
 struct scsi_transport_template;

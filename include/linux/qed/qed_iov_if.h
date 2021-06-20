@@ -7,7 +7,7 @@
 #ifndef _QED_IOV_IF_H
 #define _QED_IOV_IF_H
 
-#include <linux/qed/qed_if.h>
+#include <linaos/qed/qed_if.h>
 
 /* Structs used by PF to control and manipulate child VFs */
 struct qed_iov_hv_ops {

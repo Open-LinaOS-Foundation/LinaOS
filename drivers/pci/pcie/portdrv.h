@@ -9,7 +9,7 @@
 #ifndef _PORTDRV_H_
 #define _PORTDRV_H_
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 /* Service Type */
 #define PCIE_PORT_SERVICE_PME_SHIFT	0	/* Power Management Event */

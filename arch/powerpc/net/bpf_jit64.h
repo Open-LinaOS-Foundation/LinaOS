@@ -2,7 +2,7 @@
 /*
  * bpf_jit64.h: BPF JIT compiler for PPC64
  *
- * Copyright 2016 Naveen N. Rao <naveen.n.rao@linux.vnet.ibm.com>
+ * Copyright 2016 Naveen N. Rao <naveen.n.rao@linaos.vnet.ibm.com>
  *		  IBM Corporation
  */
 #ifndef _BPF_JIT64_H

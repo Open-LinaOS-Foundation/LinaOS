@@ -7,23 +7,23 @@
  *   broadsheetfb.c, Copyright (C) 2008, Jaya Kumar
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/fb.h>
-#include <linux/gpio/consumer.h>
-#include <linux/spi/spi.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/backlight.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/fb.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/spi/spi.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
+#include <linaos/backlight.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/spinlock.h>
 
 #include <video/mipi_display.h>
 

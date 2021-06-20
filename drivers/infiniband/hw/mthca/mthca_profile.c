@@ -31,10 +31,10 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 
 #include "mthca_profile.h"
 

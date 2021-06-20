@@ -12,18 +12,18 @@
 #ifndef _HYPERV_H
 #define _HYPERV_H
 
-#include <uapi/linux/hyperv.h>
+#include <uapi/linaos/hyperv.h>
 
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/scatterlist.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/interrupt.h>
-#include <linux/reciprocal_div.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
+#include <linaos/scatterlist.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/interrupt.h>
+#include <linaos/reciprocal_div.h>
 #include <asm/hyperv-tlfs.h>
 
 #define MAX_PAGE_BUFFER_COUNT				32
@@ -1454,7 +1454,7 @@ void vmbus_free_mmio(resource_size_t start, resource_size_t size);
 			  0x80, 0x2e, 0x27, 0xed, 0xe1, 0x9f)
 
 /*
- * Linux doesn't support the 3 devices: the first two are for
+ * LinaOS doesn't support the 3 devices: the first two are for
  * Automatic Virtual Machine Activation, and the third is for
  * Remote Desktop Virtualization.
  * {f8e65716-3cb3-4a06-9a60-1889c5cccab5}

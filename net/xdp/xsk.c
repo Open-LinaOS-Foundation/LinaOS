@@ -11,17 +11,17 @@
 
 #define pr_fmt(fmt) "AF_XDP: %s: " fmt, __func__
 
-#include <linux/if_xdp.h>
-#include <linux/init.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/socket.h>
-#include <linux/file.h>
-#include <linux/uaccess.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/rculist.h>
+#include <linaos/if_xdp.h>
+#include <linaos/init.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task.h>
+#include <linaos/socket.h>
+#include <linaos/file.h>
+#include <linaos/uaccess.h>
+#include <linaos/net.h>
+#include <linaos/netdevice.h>
+#include <linaos/rculist.h>
 #include <net/xdp_sock_drv.h>
 #include <net/busy_poll.h>
 #include <net/xdp.h>

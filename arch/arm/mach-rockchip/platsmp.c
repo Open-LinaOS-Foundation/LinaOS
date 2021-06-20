@@ -4,17 +4,17 @@
  * Author: Heiko Stuebner <heiko@sntech.de>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/smp.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
 
-#include <linux/reset.h>
-#include <linux/cpu.h>
+#include <linaos/reset.h>
+#include <linaos/cpu.h>
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>
 #include <asm/smp_scu.h>

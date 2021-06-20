@@ -9,13 +9,13 @@
  * Copyright 2006 Martin Večeřa.
  */
 
-#include <linux/module.h>
-#include <linux/dmi.h>
-#include <linux/i8042.h>
-#include <linux/io.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/rfkill.h>
+#include <linaos/module.h>
+#include <linaos/dmi.h>
+#include <linaos/i8042.h>
+#include <linaos/io.h>
+#include <linaos/moduleparam.h>
+#include <linaos/platform_device.h>
+#include <linaos/rfkill.h>
 
 /*
  * These values were obtained from disassembling and debugging the

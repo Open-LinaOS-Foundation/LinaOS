@@ -2,11 +2,11 @@
 /* Copyright 2017-2019 NXP */
 
 #include "enetc.h"
-#include <linux/bpf_trace.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/vmalloc.h>
-#include <linux/ptp_classify.h>
+#include <linaos/bpf_trace.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/vmalloc.h>
+#include <linaos/ptp_classify.h>
 #include <net/pkt_sched.h>
 
 static int enetc_num_stack_tx_queues(struct enetc_ndev_priv *priv)

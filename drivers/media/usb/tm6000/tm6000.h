@@ -8,17 +8,17 @@
  *	- DVB-T support
  */
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/videobuf-vmalloc.h>
 #include "tm6000-usb-isoc.h"
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-fh.h>
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 #include <media/dvb_demux.h>
 #include <media/dvb_frontend.h>
 #include <media/dmxdev.h>
@@ -200,7 +200,7 @@ struct tm6000_core {
 	/* extension */
 	struct list_head		devlist;
 
-	/* video for linux */
+	/* video for linaos */
 	int				users;
 
 	/* various device info */

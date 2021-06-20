@@ -9,11 +9,11 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/thread_info.h>
-#include <linux/ptrace.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/stacktrace.h>
+#include <linaos/thread_info.h>
+#include <linaos/ptrace.h>
 #include <asm/unwind.h>
 
 void save_stack_trace(struct stack_trace *trace)

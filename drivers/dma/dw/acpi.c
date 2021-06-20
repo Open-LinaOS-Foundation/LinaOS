@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2013,2019 Intel Corporation
 
-#include <linux/acpi.h>
-#include <linux/acpi_dma.h>
+#include <linaos/acpi.h>
+#include <linaos/acpi_dma.h>
 
 #include "internal.h"
 

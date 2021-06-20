@@ -8,16 +8,16 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/sched_clock.h>
-#include <linux/cpu.h>
-#include <linux/cpuhotplug.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/clockchips.h>
+#include <linaos/clocksource.h>
+#include <linaos/sched_clock.h>
+#include <linaos/cpu.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
 #define PIT_IRQ_SHIFT		12
 #define PIT_PRIO_SHIFT		20

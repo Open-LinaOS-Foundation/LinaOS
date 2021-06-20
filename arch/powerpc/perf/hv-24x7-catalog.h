@@ -2,7 +2,7 @@
 #ifndef LINUX_POWERPC_PERF_HV_24X7_CATALOG_H_
 #define LINUX_POWERPC_PERF_HV_24X7_CATALOG_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* From document "24x7 Event and Group Catalog Formats Proposal" v0.15 */
 

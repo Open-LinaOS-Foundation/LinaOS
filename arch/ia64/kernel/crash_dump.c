@@ -7,12 +7,12 @@
  *	Original code comment copied from the i386 version of this file
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/crash_dump.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/crash_dump.h>
 
 #include <asm/page.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /**
  * copy_oldmem_page - copy one page from "oldmem"

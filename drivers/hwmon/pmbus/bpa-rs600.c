@@ -5,11 +5,11 @@
  * Copyright 2021 Allied Telesis Labs
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pmbus.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pmbus.h>
 #include "pmbus.h"
 
 #define BPARS600_MFR_VIN_MIN	0xa0

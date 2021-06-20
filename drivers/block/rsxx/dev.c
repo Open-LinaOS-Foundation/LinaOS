@@ -3,23 +3,23 @@
 * Filename: dev.c
 *
 * Authors: Joshua Morris <josh.h.morris@us.ibm.com>
-*	Philip Kelleher <pjk1939@linux.vnet.ibm.com>
+*	Philip Kelleher <pjk1939@linaos.vnet.ibm.com>
 *
 * (C) Copyright 2013 IBM Corporation
 */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 
-#include <linux/hdreg.h>
-#include <linux/genhd.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
+#include <linaos/hdreg.h>
+#include <linaos/genhd.h>
+#include <linaos/blkdev.h>
+#include <linaos/bio.h>
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 #include "rsxx_priv.h"
 

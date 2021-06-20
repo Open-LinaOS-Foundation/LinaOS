@@ -6,7 +6,7 @@
 #ifndef _I9XX_PLANE_H_
 #define _I9XX_PLANE_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum pipe;
 struct drm_i915_private;

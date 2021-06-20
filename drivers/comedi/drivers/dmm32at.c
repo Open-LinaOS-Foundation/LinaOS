@@ -3,7 +3,7 @@
  * dmm32at.c
  * Diamond Systems Diamond-MM-32-AT Comedi driver
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -26,9 +26,9 @@
  * yet supported.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
 #include "../comedidev.h"
 
 #include "8255.h"

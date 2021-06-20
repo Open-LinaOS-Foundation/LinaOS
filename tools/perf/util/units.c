@@ -4,8 +4,8 @@
 #include <limits.h>
 #include <stdlib.h>
 #include <string.h>
-#include <linux/kernel.h>
-#include <linux/time64.h>
+#include <linaos/kernel.h>
+#include <linaos/time64.h>
 
 unsigned long parse_tag_value(const char *str, struct parse_tag *tags)
 {

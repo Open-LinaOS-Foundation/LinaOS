@@ -2,7 +2,7 @@
 #ifndef _PARISC_PAGE_H
 #define _PARISC_PAGE_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 #if defined(CONFIG_PARISC_PAGE_SIZE_4KB)
 # define PAGE_SHIFT	12
@@ -140,7 +140,7 @@ extern int npmem_ranges;
 /* The size of the gateway page (we leave lots of room for expansion) */
 #define GATEWAY_PAGE_SIZE	0x4000
 
-/* The start of the actual kernel binary---used in vmlinux.lds.S
+/* The start of the actual kernel binary---used in vmlinaos.lds.S
  * Leave some space after __PAGE_OFFSET for detecting kernel null
  * ptr derefs */
 #define KERNEL_BINARY_TEXT_START	(__PAGE_OFFSET + 0x100000)

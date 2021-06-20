@@ -6,7 +6,7 @@
  ******************************************************************************/
 
 #include <pwrseqcmd.h>
-#include <usb_ops_linux.h>
+#include <usb_ops_linaos.h>
 
 /* This routine deals with the Power Configuration CMDs parsing
  * for RTL8723/RTL8188E Series IC.

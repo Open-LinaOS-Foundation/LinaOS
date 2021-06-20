@@ -2,17 +2,17 @@
 /*
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
-#include <linux/libnvdimm.h>
-#include <linux/suspend.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/ctype.h>
-#include <linux/ndctl.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/libnvdimm.h>
+#include <linaos/suspend.h>
+#include <linaos/export.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>
+#include <linaos/device.h>
+#include <linaos/ctype.h>
+#include <linaos/ndctl.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 #include "nd-core.h"
 #include "nd.h"
 

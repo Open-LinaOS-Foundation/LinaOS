@@ -2,11 +2,11 @@
 #ifndef __PERF_MAPS_H
 #define __PERF_MAPS_H
 
-#include <linux/refcount.h>
-#include <linux/rbtree.h>
+#include <linaos/refcount.h>
+#include <linaos/rbtree.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "rwsem.h"
 
 struct ref_reloc_sym;

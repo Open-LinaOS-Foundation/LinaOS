@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/himalaya.c
+ * linaos/arch/arm/mach-pxa/himalaya.c
  *
  * Hardware definitions for the HTC Himalaya
  *
@@ -9,11 +9,11 @@
  * Copyright (c) 2008 Zbynek Michl <Zbynek.Michl@seznam.cz>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/fb.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/fb.h>
+#include <linaos/platform_device.h>
 
 #include <video/w100fb.h>
 

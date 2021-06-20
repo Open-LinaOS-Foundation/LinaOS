@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * hwmon.c - part of lm_sensors, Linux kernel modules for hardware monitoring
+ * hwmon.c - part of lm_sensors, LinaOS kernel modules for hardware monitoring
  *
  * This file defines the sysfs class "hwmon", for use by sensors drivers.
  *
@@ -9,18 +9,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/hwmon.h>
-#include <linux/idr.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/thermal.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/gfp.h>
+#include <linaos/hwmon.h>
+#include <linaos/idr.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/thermal.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/hwmon.h>

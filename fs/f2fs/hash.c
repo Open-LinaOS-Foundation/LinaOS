@@ -5,15 +5,15 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  *
- * Portions of this code from linux/fs/ext3/hash.c
+ * Portions of this code from linaos/fs/ext3/hash.c
  *
  * Copyright (C) 2002 by Theodore Ts'o
  */
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/pagemap.h>
-#include <linux/unicode.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/f2fs_fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/unicode.h>
 
 #include "f2fs.h"
 

@@ -4,7 +4,7 @@
  *
  * Copyright IBM Corporation, 2011
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@linaos.ibm.com>
  */
 
 #ifndef __LINUX_RCU_H
@@ -273,7 +273,7 @@ extern void resched_cpu(int cpu);
 
 #if defined(CONFIG_SRCU) || !defined(CONFIG_TINY_RCU)
 
-#include <linux/rcu_node_tree.h>
+#include <linaos/rcu_node_tree.h>
 
 extern int rcu_num_lvls;
 extern int num_rcu_lvl[];

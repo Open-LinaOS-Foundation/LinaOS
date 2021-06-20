@@ -4,8 +4,8 @@
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
  */
 
-#include <linux/slab.h>
-#include <linux/if_ether.h>
+#include <linaos/slab.h>
+#include <linaos/if_ether.h>
 
 #include "htt.h"
 #include "core.h"

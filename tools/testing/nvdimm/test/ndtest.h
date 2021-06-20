@@ -2,8 +2,8 @@
 #ifndef NDTEST_H
 #define NDTEST_H
 
-#include <linux/platform_device.h>
-#include <linux/libnvdimm.h>
+#include <linaos/platform_device.h>
+#include <linaos/libnvdimm.h>
 
 /* SCM device is unable to persist memory contents */
 #define PAPR_PMEM_UNARMED                   (1ULL << (63 - 0))

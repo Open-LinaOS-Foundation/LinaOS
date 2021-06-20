@@ -23,7 +23,7 @@
  * Author: Jani Nikula <jani.nikula@intel.com>
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_crtc.h>

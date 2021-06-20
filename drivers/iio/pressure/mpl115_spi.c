@@ -7,8 +7,8 @@
  * Datasheet: http://www.nxp.com/files/sensors/doc/data_sheet/MPL115A1.pdf
  */
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
 
 #include "mpl115.h"
 

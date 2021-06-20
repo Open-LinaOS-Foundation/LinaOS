@@ -7,7 +7,7 @@ Description:
 		through the Dell ACPI-WMI interface.
 
 		IOCTL's and buffer formats are defined in:
-		<uapi/linux/wmi.h>
+		<uapi/linaos/wmi.h>
 
 		1) To perform an SMBIOS call from userspace, you'll need to
 		   first determine the minimum size of the calling interface

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH LinaOS-syscall-note */
 /* Copyright (C) 2003 Krzysztof Benedyczak & Michal Wronski
 
    This program is free software; you can redistribute it and/or
@@ -19,7 +19,7 @@
 #ifndef _LINUX_MQUEUE_H
 #define _LINUX_MQUEUE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define MQ_PRIO_MAX 	32768
 /* per-uid limit of kernel memory used by mqueue, in bytes */

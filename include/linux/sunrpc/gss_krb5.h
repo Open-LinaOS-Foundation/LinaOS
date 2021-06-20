@@ -1,5 +1,5 @@
 /*
- *  linux/include/linux/sunrpc/gss_krb5_types.h
+ *  linaos/include/linaos/sunrpc/gss_krb5_types.h
  *
  *  Adapted from MIT Kerberos 5-1.2.1 lib/include/krb5.h,
  *  lib/gssapi/krb5/gssapiP_krb5.h, and others
@@ -37,9 +37,9 @@
  */
 
 #include <crypto/skcipher.h>
-#include <linux/sunrpc/auth_gss.h>
-#include <linux/sunrpc/gss_err.h>
-#include <linux/sunrpc/gss_asn1.h>
+#include <linaos/sunrpc/auth_gss.h>
+#include <linaos/sunrpc/gss_err.h>
+#include <linaos/sunrpc/gss_asn1.h>
 
 /* Length of constant used in key derivation */
 #define GSS_KRB5_K5CLENGTH (5)
@@ -179,7 +179,7 @@ enum seal_alg {
 #define KG_NO_CTYPES                             (39756045L)
 
 /* per Kerberos v5 protocol spec crypto types from the wire. 
- * these get mapped to linux kernel crypto routines.  
+ * these get mapped to linaos kernel crypto routines.  
  */
 #define ENCTYPE_NULL            0x0000
 #define ENCTYPE_DES_CBC_CRC     0x0001	/* DES cbc mode with CRC-32 */

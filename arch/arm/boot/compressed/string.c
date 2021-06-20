@@ -5,7 +5,7 @@
  * Small subset of simple string routines
  */
 
-#include <linux/string.h>
+#include <linaos/string.h>
 
 /*
  * The decompressor is built without KASan but uses the same redirects as the

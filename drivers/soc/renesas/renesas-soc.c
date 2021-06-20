@@ -5,12 +5,12 @@
  * Copyright (C) 2014-2016 Glider bvba
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/sys_soc.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/sys_soc.h>
 
 
 struct renesas_family {

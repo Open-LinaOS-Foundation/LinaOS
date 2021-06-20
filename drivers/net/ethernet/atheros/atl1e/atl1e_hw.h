@@ -9,8 +9,8 @@
 #ifndef _ATHL1E_HW_H_
 #define _ATHL1E_HW_H_
 
-#include <linux/types.h>
-#include <linux/mii.h>
+#include <linaos/types.h>
+#include <linaos/mii.h>
 
 struct atl1e_adapter;
 struct atl1e_hw;

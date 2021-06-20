@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/socket.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/udp.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/socket.h>
+#include <linaos/skbuff.h>
+#include <linaos/ip.h>
+#include <linaos/icmp.h>
+#include <linaos/udp.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
 #include <net/genetlink.h>
 #include <net/gue.h>
 #include <net/fou.h>
@@ -16,8 +16,8 @@
 #include <net/udp.h>
 #include <net/udp_tunnel.h>
 #include <net/xfrm.h>
-#include <uapi/linux/fou.h>
-#include <uapi/linux/genetlink.h>
+#include <uapi/linaos/fou.h>
+#include <uapi/linaos/genetlink.h>
 
 struct fou {
 	struct socket *sock;

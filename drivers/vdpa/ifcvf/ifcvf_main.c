@@ -8,10 +8,10 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sysfs.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/sysfs.h>
 #include "ifcvf_base.h"
 
 #define DRIVER_AUTHOR   "Intel Corporation"

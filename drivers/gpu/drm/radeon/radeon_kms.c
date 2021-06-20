@@ -26,11 +26,11 @@
  *          Jerome Glisse
  */
 
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/vga_switcheroo.h>
+#include <linaos/pci.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/vga_switcheroo.h>
 
 #include <drm/drm_agpsupport.h>
 #include <drm/drm_fb_helper.h>

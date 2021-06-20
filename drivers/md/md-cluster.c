@@ -4,11 +4,11 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/dlm.h>
-#include <linux/sched.h>
-#include <linux/raid/md_p.h>
+#include <linaos/module.h>
+#include <linaos/kthread.h>
+#include <linaos/dlm.h>
+#include <linaos/sched.h>
+#include <linaos/raid/md_p.h>
 #include "md.h"
 #include "md-bitmap.h"
 #include "md-cluster.h"

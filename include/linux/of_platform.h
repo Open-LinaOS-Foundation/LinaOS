@@ -6,11 +6,11 @@
  *			 <benh@kernel.crashing.org>
  */
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pm.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/pm.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
 
 /**
  * struct of_dev_auxdata - lookup table entry for device names & platform_data
@@ -24,8 +24,8 @@
  * should be terminated with an empty entry.  It also allows the platform_data
  * pointer to be set.
  *
- * The reason for this functionality is that some Linux infrastructure uses
- * the device name to look up a specific device, but the Linux-specific names
+ * The reason for this functionality is that some LinaOS infrastructure uses
+ * the device name to look up a specific device, but the LinaOS-specific names
  * are not encoded into the device tree, so the kernel needs to provide specific
  * values.
  *

@@ -8,15 +8,15 @@
  * With code from the mailing list:
  * Copyright (C) 2013 Xilinx, Inc.
  */
-#include <linux/firmware.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
-#include <linux/highmem.h>
+#include <linaos/firmware.h>
+#include <linaos/fpga/fpga-mgr.h>
+#include <linaos/idr.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/scatterlist.h>
+#include <linaos/highmem.h>
 
 static DEFINE_IDA(fpga_mgr_ida);
 static struct class *fpga_mgr_class;

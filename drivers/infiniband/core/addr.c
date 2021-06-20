@@ -33,11 +33,11 @@
  * SOFTWARE.
  */
 
-#include <linux/mutex.h>
-#include <linux/inetdevice.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
+#include <linaos/mutex.h>
+#include <linaos/inetdevice.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/module.h>
 #include <net/arp.h>
 #include <net/neighbour.h>
 #include <net/route.h>

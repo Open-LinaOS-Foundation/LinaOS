@@ -48,7 +48,7 @@ int chip_addr[10]:
 
 unsigned long functionality:
 	Functionality override, to disable some commands. See I2C_FUNC_*
-	constants in <linux/i2c.h> for the suitable values. For example,
+	constants in <linaos/i2c.h> for the suitable values. For example,
 	value 0x1f0000 would only enable the quick, byte and byte data
 	commands.
 

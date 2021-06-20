@@ -9,10 +9,10 @@
 
 /* For spinlocks. sched.h includes spinlock.h from whichever directory it
  * happens to be in - so we don't have to care whether we're on 2.2, which
- * has asm/spinlock.h, or 2.4, which has linux/spinlock.h
+ * has asm/spinlock.h, or 2.4, which has linaos/spinlock.h
  */
-#include <linux/sched.h>
-#include <linux/mutex.h>
+#include <linaos/sched.h>
+#include <linaos/mutex.h>
 
 typedef enum {
 	FL_READY,

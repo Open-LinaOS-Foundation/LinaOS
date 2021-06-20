@@ -9,7 +9,7 @@ struct ioc_gq;
 #if !defined(_TRACE_BLK_IOCOST_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_BLK_IOCOST_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(iocost_iocg_state,
 

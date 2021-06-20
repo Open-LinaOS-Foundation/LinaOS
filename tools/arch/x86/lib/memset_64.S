@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Copyright 2002 Andi Kleen, SuSE Labs */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/cpufeatures.h>
 #include <asm/alternative.h>
 #include <asm/export.h>

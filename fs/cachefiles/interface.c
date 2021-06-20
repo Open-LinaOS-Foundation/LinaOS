@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/slab.h>
-#include <linux/mount.h>
+#include <linaos/slab.h>
+#include <linaos/mount.h>
 #include "internal.h"
 
 struct cachefiles_lookup_data {

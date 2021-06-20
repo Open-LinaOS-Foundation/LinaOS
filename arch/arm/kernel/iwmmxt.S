@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/kernel/iwmmxt.S
+ *  linaos/arch/arm/kernel/iwmmxt.S
  *
  *  XScale iWMMXt (Concan) context switching and handling
  *
@@ -11,7 +11,7 @@
 *   Copyright (c) 2003-2004, MontaVista Software, Inc.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/ptrace.h>
 #include <asm/thread_info.h>
 #include <asm/asm-offsets.h>

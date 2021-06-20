@@ -100,7 +100,7 @@ struct sdw_cdns_dma_data {
 
 /**
  * struct sdw_cdns - Cadence driver context
- * @dev: Linux device
+ * @dev: LinaOS device
  * @bus: Bus handle
  * @instance: instance number
  * @response_buf: SoundWire response buffer

@@ -3,7 +3,7 @@ Built-in firmware
 =================
 
 Firmware can be built-in to the kernel, this means building the firmware
-into vmlinux directly, to enable avoiding having to look for firmware from
+into vmlinaos directly, to enable avoiding having to look for firmware from
 the filesystem. Instead, firmware can be looked for inside the kernel
 directly. You can enable built-in firmware using the kernel configuration
 options:

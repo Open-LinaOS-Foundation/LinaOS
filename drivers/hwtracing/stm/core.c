@@ -7,22 +7,22 @@
  * as defined in MIPI STPv2 specification.
  */
 
-#include <linux/pm_runtime.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/compat.h>
-#include <linux/kdev_t.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/stm.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/compat.h>
+#include <linaos/kdev_t.h>
+#include <linaos/srcu.h>
+#include <linaos/slab.h>
+#include <linaos/stm.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
 #include "stm.h"
 
-#include <uapi/linux/stm.h>
+#include <uapi/linaos/stm.h>
 
 static unsigned int stm_core_up;
 
@@ -1360,4 +1360,4 @@ module_exit(stm_core_exit);
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("System Trace Module device class");
-MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@linux.intel.com>");
+MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@linaos.intel.com>");

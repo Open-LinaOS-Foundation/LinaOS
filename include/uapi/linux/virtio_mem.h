@@ -38,10 +38,10 @@
 #ifndef _LINUX_VIRTIO_MEM_H
 #define _LINUX_VIRTIO_MEM_H
 
-#include <linux/types.h>
-#include <linux/virtio_types.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
+#include <linaos/types.h>
+#include <linaos/virtio_types.h>
+#include <linaos/virtio_ids.h>
+#include <linaos/virtio_config.h>
 
 /*
  * Each virtio-mem device manages a dedicated region in physical address

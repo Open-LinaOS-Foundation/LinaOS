@@ -5,13 +5,13 @@
  * Copyright (C) 2020 Lubomir Rintel <lkundrak@v3.sk>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_clock.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
 #include <dt-bindings/clock/marvell,mmp2-audio.h>
 
 /* Audio Controller Registers */

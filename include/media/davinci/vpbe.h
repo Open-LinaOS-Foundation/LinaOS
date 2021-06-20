@@ -5,8 +5,8 @@
 #ifndef _VPBE_H
 #define _VPBE_H
 
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
+#include <linaos/videodev2.h>
+#include <linaos/i2c.h>
 
 #include <media/v4l2-dev.h>
 #include <media/v4l2-ioctl.h>

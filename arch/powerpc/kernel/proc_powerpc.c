@@ -3,15 +3,15 @@
  * Copyright (C) 2001 Mike Corrigan & Dave Engebretsen IBM Corporation
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/proc_fs.h>
+#include <linaos/kernel.h>
 
 #include <asm/machdep.h>
 #include <asm/vdso_datapage.h>
 #include <asm/rtas.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/prom.h>
 
 #ifdef CONFIG_PPC64

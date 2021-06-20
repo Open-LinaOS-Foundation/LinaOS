@@ -8,7 +8,7 @@
 #ifndef __LINUX_MFD_DA8XX_CFGCHIP_H
 #define __LINUX_MFD_DA8XX_CFGCHIP_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 /* register offset (32-bit registers) */
 #define CFGCHIP(n)				((n) * 4)

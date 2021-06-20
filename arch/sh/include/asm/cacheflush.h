@@ -2,7 +2,7 @@
 #ifndef __ASM_SH_CACHEFLUSH_H
 #define __ASM_SH_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 /*
  * Cache flushing:

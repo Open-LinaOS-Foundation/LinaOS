@@ -6,9 +6,9 @@
  * Copyright(c) 1999 - 2005 Intel Corporation. All rights reserved.
  */
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/slab.h>
+#include <linaos/netdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/slab.h>
 
 #include "atl1c.h"
 

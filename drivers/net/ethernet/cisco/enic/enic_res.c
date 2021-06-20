@@ -17,11 +17,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
 
 #include "wq_enet_desc.h"
 #include "rq_enet_desc.h"

@@ -6,20 +6,20 @@
  *	    Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/g_uvc.h>
-#include <linux/usb/video.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/string.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/g_uvc.h>
+#include <linaos/usb/video.h>
+#include <linaos/vmalloc.h>
+#include <linaos/wait.h>
 
 #include <media/v4l2-dev.h>
 #include <media/v4l2-event.h>

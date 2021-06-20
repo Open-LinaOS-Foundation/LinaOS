@@ -5,8 +5,8 @@
  * Copyright (C) 2020-2021 ARM Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/scmi_protocol.h>
+#include <linaos/module.h>
+#include <linaos/scmi_protocol.h>
 
 #include "common.h"
 

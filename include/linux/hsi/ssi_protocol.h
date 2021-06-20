@@ -12,7 +12,7 @@
 #ifndef __LINUX_SSIP_SLAVE_H__
 #define __LINUX_SSIP_SLAVE_H__
 
-#include <linux/hsi/hsi.h>
+#include <linaos/hsi/hsi.h>
 
 static inline void ssip_slave_put_master(struct hsi_client *master)
 {

@@ -3,7 +3,7 @@
  * USB4 port sideband registers found on routers and retimers
  *
  * Copyright (C) 2020, Intel Corporation
- * Authors: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Mika Westerberg <mika.westerberg@linaos.intel.com>
  *	    Rajmohan Mani <rajmohan.mani@intel.com>
  */
 

@@ -34,9 +34,9 @@
 #ifndef __FM_H
 #define __FM_H
 
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/of_irq.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_irq.h>
 
 /* FM Frame descriptor macros  */
 /* Frame queue Context Override */

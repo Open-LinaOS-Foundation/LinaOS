@@ -16,21 +16,21 @@
  *    --
  */
 
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mutex.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/iommu.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mutex.h>
 
 
 #include <sound/core.h>
 #include <sound/emu10k1.h>
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 #include "p16v.h"
 #include "tina2.h"
 #include "p17v.h"

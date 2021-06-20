@@ -9,18 +9,18 @@
  *
  */
 
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/mm_types.h>
-#include <linux/preempt.h>
-#include <linux/rbtree.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/pgtable.h>
+#include <linaos/dmi.h>
+#include <linaos/efi.h>
+#include <linaos/io.h>
+#include <linaos/memblock.h>
+#include <linaos/mm_types.h>
+#include <linaos/preempt.h>
+#include <linaos/rbtree.h>
+#include <linaos/rwsem.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/pgtable.h>
 
 #include <asm/cacheflush.h>
 #include <asm/efi.h>

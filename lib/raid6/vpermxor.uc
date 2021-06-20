@@ -20,7 +20,7 @@
  * This instruction was introduced in POWER8 - ISA v2.07.
  */
 
-#include <linux/raid/pq.h>
+#include <linaos/raid/pq.h>
 #ifdef CONFIG_ALTIVEC
 
 #include <altivec.h>

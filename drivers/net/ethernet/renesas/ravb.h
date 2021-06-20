@@ -11,14 +11,14 @@
 #ifndef __RAVB_H__
 #define __RAVB_H__
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mdio-bitbang.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/ptp_clock_kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mdio-bitbang.h>
+#include <linaos/netdevice.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/ptp_clock_kernel.h>
 
 #define BE_TX_RING_SIZE	64	/* TX ring size for Best Effort */
 #define BE_RX_RING_SIZE	1024	/* RX ring size for Best Effort */

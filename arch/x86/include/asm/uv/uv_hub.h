@@ -13,11 +13,11 @@
 #define _ASM_X86_UV_UV_HUB_H
 
 #ifdef CONFIG_X86_64
-#include <linux/numa.h>
-#include <linux/percpu.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/topology.h>
+#include <linaos/numa.h>
+#include <linaos/percpu.h>
+#include <linaos/timer.h>
+#include <linaos/io.h>
+#include <linaos/topology.h>
 #include <asm/types.h>
 #include <asm/percpu.h>
 #include <asm/uv/uv.h>
@@ -654,7 +654,7 @@ static inline int uv_numa_blade_id(void)
 }
 
 /*
- * Convert linux node number to the UV blade number.
+ * Convert linaos node number to the UV blade number.
  * .. Currently for UV2 thru UV4 the node and the blade are identical.
  * .. If this changes then you MUST check references to this function!
  */
@@ -699,7 +699,7 @@ static inline int uv_cpu_to_pnode(int cpu)
 	return uv_cpu_hub_info(cpu)->pnode;
 }
 
-/* Convert a linux node number to the PNODE of the blade */
+/* Convert a linaos node number to the PNODE of the blade */
 static inline int uv_node_to_pnode(int nid)
 {
 	return uv_hub_info_list(nid)->pnode;

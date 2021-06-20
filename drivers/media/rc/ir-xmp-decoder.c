@@ -8,8 +8,8 @@
  * - Ignore XMP-1 XMP-2 difference, always store 16 bit OBC
  */
 
-#include <linux/bitrev.h>
-#include <linux/module.h>
+#include <linaos/bitrev.h>
+#include <linaos/module.h>
 #include "rc-core-priv.h"
 
 #define XMP_UNIT		  136 /* us */

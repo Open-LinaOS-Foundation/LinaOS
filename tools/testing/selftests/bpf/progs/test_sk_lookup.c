@@ -4,8 +4,8 @@
 #include <errno.h>
 #include <stdbool.h>
 #include <stddef.h>
-#include <linux/bpf.h>
-#include <linux/in.h>
+#include <linaos/bpf.h>
+#include <linaos/in.h>
 #include <sys/socket.h>
 
 #include <bpf/bpf_endian.h>

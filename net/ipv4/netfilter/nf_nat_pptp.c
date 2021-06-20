@@ -20,16 +20,16 @@
  * 	   (needs netfilter tuple reservation)
  */
 
-#include <linux/module.h>
-#include <linux/tcp.h>
+#include <linaos/module.h>
+#include <linaos/tcp.h>
 
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_helper.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_zones.h>
-#include <linux/netfilter/nf_conntrack_proto_gre.h>
-#include <linux/netfilter/nf_conntrack_pptp.h>
+#include <linaos/netfilter/nf_conntrack_proto_gre.h>
+#include <linaos/netfilter/nf_conntrack_pptp.h>
 
 #define NF_NAT_PPTP_VERSION "3.0"
 

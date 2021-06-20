@@ -5,24 +5,24 @@
  * Copyright (C) 2008  Yoshihiro Shimoda
  * Copyright (C) 2009  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/sm501.h>
-#include <linux/sm501-regs.h>
-#include <linux/fb.h>
-#include <linux/mtd/physmap.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-pca-platform.h>
-#include <linux/i2c-algo-pca.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/sh_intc.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/gpio/machine.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/sm501.h>
+#include <linaos/sm501-regs.h>
+#include <linaos/fb.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/i2c-pca-platform.h>
+#include <linaos/i2c-algo-pca.h>
+#include <linaos/usb/r8a66597.h>
+#include <linaos/sh_intc.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/errno.h>
+#include <linaos/gpio/machine.h>
 #include <mach/sh7785lcr.h>
 #include <cpu/sh7785.h>
 #include <asm/heartbeat.h>

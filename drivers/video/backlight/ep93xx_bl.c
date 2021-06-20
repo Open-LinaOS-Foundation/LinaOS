@@ -8,11 +8,11 @@
  * BRIGHT, on the Cirrus EP9307, EP9312, and EP9315 processors.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/fb.h>
+#include <linaos/backlight.h>
 
 #define EP93XX_MAX_COUNT		255
 #define EP93XX_MAX_BRIGHT		255

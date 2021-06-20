@@ -2,26 +2,26 @@
  * arch/arm/plat-spear/time.c
  *
  * Copyright (C) 2010 ST Microelectronics
- * Shiraz Hashim<shiraz.linux.kernel@gmail.com>
+ * Shiraz Hashim<shiraz.linaos.kernel@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/time.h>
-#include <linux/irq.h>
+#include <linaos/clk.h>
+#include <linaos/clockchips.h>
+#include <linaos/clocksource.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/time.h>
+#include <linaos/irq.h>
 #include <asm/mach/time.h>
 #include "generic.h"
 

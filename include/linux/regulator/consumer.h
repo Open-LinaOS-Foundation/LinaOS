@@ -31,8 +31,8 @@
 #ifndef __LINUX_REGULATOR_CONSUMER_H_
 #define __LINUX_REGULATOR_CONSUMER_H_
 
-#include <linux/err.h>
-#include <linux/suspend.h>
+#include <linaos/err.h>
+#include <linaos/suspend.h>
 
 struct device;
 struct notifier_block;

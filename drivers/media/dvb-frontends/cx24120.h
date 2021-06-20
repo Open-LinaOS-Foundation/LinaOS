@@ -2,7 +2,7 @@
 /*
  * Conexant CX24120/CX24118 - DVB-S/S2 demod/tuner driver
  *
- * Copyright (C) 2008 Patrick Boettcher <pb@linuxtv.org>
+ * Copyright (C) 2008 Patrick Boettcher <pb@linaostv.org>
  * Copyright (C) 2009 Sergey Tyurin <forum.free-x.de>
  * Updated 2012 by Jannis Achstetter <jannis_achstetter@web.de>
  * Copyright (C) 2015 Jemma Denson <jdenson@gmail.com>
@@ -11,8 +11,8 @@
 #ifndef CX24120_H
 #define CX24120_H
 
-#include <linux/dvb/frontend.h>
-#include <linux/firmware.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/firmware.h>
 
 struct cx24120_initial_mpeg_config {
 	u8 x1;

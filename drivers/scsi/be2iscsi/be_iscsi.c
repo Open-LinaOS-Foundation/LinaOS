@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * This file is part of the Emulex Linux Device Driver for Enterprise iSCSI
+ * This file is part of the Emulex LinaOS Device Driver for Enterprise iSCSI
  * Host Bus Adapters. Refer to the README file included with this package
  * for driver version and adapter compatibility.
  *
@@ -8,7 +8,7 @@
  * The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
  *
  * Contact Information:
- * linux-drivers@broadcom.com
+ * linaos-drivers@broadcom.com
  */
 
 #include <scsi/libiscsi.h>

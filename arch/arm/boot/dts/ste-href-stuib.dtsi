@@ -17,13 +17,13 @@
 		button@139 {
 			/* Proximity sensor */
 			gpios = <&gpio6 25 GPIO_ACTIVE_HIGH>;
-			linux,code = <11>; /* SW_FRONT_PROXIMITY */
+			linaos,code = <11>; /* SW_FRONT_PROXIMITY */
 			label = "SFH7741 Proximity Sensor";
 		};
 		button@145 {
 			/* Hall sensor */
 			gpios = <&gpio4 17 GPIO_ACTIVE_HIGH>;
-			linux,code = <0>; /* SW_LID */
+			linaos,code = <0>; /* SW_LID */
 			label = "HED54XXU11 Hall Effect Sensor";
 		};
 	};
@@ -51,7 +51,7 @@
 					st,scan-count = <8>;
 					st,no-autorepeat;
 
-					linux,keymap = <0x205006b
+					linaos,keymap = <0x205006b
 							0x4010074
 							0x3050072
 							0x1030004

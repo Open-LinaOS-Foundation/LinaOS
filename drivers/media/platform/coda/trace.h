@@ -5,7 +5,7 @@
 #if !defined(__CODA_TRACE_H__) || defined(TRACE_HEADER_MULTI_READ)
 #define __CODA_TRACE_H__
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include <media/videobuf2-v4l2.h>
 
 #include "coda.h"

@@ -4,8 +4,8 @@
 #include <assert.h>
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
 #include <net/if.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -113,7 +113,7 @@ static int do_dump_btf(const struct btf_dumper *d,
 			goto err_end_obj;
 	}
 
-	value_id = map_info->btf_vmlinux_value_type_id ?
+	value_id = map_info->btf_vmlinaos_value_type_id ?
 		: map_info->btf_value_type_id;
 
 	if (!map_is_per_cpu(map_info->type)) {
@@ -791,19 +791,19 @@ static int maps_have_btf(int *fds, int nb_fds)
 	return 1;
 }
 
-static struct btf *btf_vmlinux;
+static struct btf *btf_vmlinaos;
 
 static struct btf *get_map_kv_btf(const struct bpf_map_info *info)
 {
 	struct btf *btf = NULL;
 
-	if (info->btf_vmlinux_value_type_id) {
-		if (!btf_vmlinux) {
-			btf_vmlinux = libbpf_find_kernel_btf();
-			if (IS_ERR(btf_vmlinux))
+	if (info->btf_vmlinaos_value_type_id) {
+		if (!btf_vmlinaos) {
+			btf_vmlinaos = libbpf_find_kernel_btf();
+			if (IS_ERR(btf_vmlinaos))
 				p_err("failed to get kernel btf");
 		}
-		return btf_vmlinux;
+		return btf_vmlinaos;
 	} else if (info->btf_value_type_id) {
 		int err;
 
@@ -819,14 +819,14 @@ static struct btf *get_map_kv_btf(const struct bpf_map_info *info)
 
 static void free_map_kv_btf(struct btf *btf)
 {
-	if (!IS_ERR(btf) && btf != btf_vmlinux)
+	if (!IS_ERR(btf) && btf != btf_vmlinaos)
 		btf__free(btf);
 }
 
-static void free_btf_vmlinux(void)
+static void free_btf_vmlinaos(void)
 {
-	if (!IS_ERR(btf_vmlinux))
-		btf__free(btf_vmlinux);
+	if (!IS_ERR(btf_vmlinaos))
+		btf__free(btf_vmlinaos);
 }
 
 static int
@@ -962,7 +962,7 @@ exit_close:
 		close(fds[i]);
 exit_free:
 	free(fds);
-	free_btf_vmlinux();
+	free_btf_vmlinaos();
 	return err;
 }
 

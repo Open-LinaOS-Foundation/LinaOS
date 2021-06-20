@@ -1,5 +1,5 @@
 #
-# gdb helper commands and functions for Linux kernel debugging
+# gdb helper commands and functions for LinaOS kernel debugging
 #
 #  module tools
 #
@@ -13,7 +13,7 @@
 
 import gdb
 
-from linux import cpus, utils, lists
+from linaos import cpus, utils, lists
 
 
 module_type = utils.CachedType("struct module")

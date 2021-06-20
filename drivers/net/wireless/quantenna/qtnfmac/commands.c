@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (c) 2015-2016 Quantenna Communications. All rights reserved. */
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
+#include <linaos/types.h>
+#include <linaos/skbuff.h>
 
 #include "cfg80211.h"
 #include "core.h"

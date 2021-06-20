@@ -5,8 +5,8 @@
 #ifndef _LOONGSON_REGS_H_
 #define _LOONGSON_REGS_H_
 
-#include <linux/types.h>
-#include <linux/bits.h>
+#include <linaos/types.h>
+#include <linaos/bits.h>
 
 #include <asm/mipsregs.h>
 #include <asm/cpu.h>

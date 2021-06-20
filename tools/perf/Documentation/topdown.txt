@@ -71,7 +71,7 @@ For example, the perf_event_attr structure can be initialized with
 { .config = 0x8000, .type = PERF_TYPE_RAW } for Retiring metric event
 The Fixed counter 3 must be the leader of the group.
 
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 #include <sys/mman.h>
 #include <sys/syscall.h>
 #include <unistd.h>

@@ -8,21 +8,21 @@
  * This code is licenced under the GPL.
  */
 
-#include <linux/clockchips.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/notifier.h>
-#include <linux/pm_qos.h>
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
-#include <linux/module.h>
-#include <linux/suspend.h>
-#include <linux/tick.h>
-#include <linux/mmu_context.h>
+#include <linaos/clockchips.h>
+#include <linaos/kernel.h>
+#include <linaos/mutex.h>
+#include <linaos/sched.h>
+#include <linaos/sched/clock.h>
+#include <linaos/notifier.h>
+#include <linaos/pm_qos.h>
+#include <linaos/cpu.h>
+#include <linaos/cpuidle.h>
+#include <linaos/ktime.h>
+#include <linaos/hrtimer.h>
+#include <linaos/module.h>
+#include <linaos/suspend.h>
+#include <linaos/tick.h>
+#include <linaos/mmu_context.h>
 #include <trace/events/power.h>
 
 #include "cpuidle.h"

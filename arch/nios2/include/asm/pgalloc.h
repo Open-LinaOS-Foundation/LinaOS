@@ -10,7 +10,7 @@
 #ifndef _ASM_NIOS2_PGALLOC_H
 #define _ASM_NIOS2_PGALLOC_H
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 #include <asm-generic/pgalloc.h>
 

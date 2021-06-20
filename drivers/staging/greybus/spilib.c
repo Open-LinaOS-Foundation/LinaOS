@@ -6,12 +6,12 @@
  * Copyright 2014-2016 Linaro Ltd.
  */
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/greybus.h>
-#include <linux/spi/spi.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/greybus.h>
+#include <linaos/spi/spi.h>
 
 #include "spilib.h"
 
@@ -405,7 +405,7 @@ static void gb_spi_cleanup(struct spi_device *spi)
 /* Routines to get controller information */
 
 /*
- * Map Greybus spi mode bits/flags/bpw into Linux ones.
+ * Map Greybus spi mode bits/flags/bpw into LinaOS ones.
  * All bits are same for now and so these macro's return same values.
  */
 #define gb_spi_mode_map(mode) mode

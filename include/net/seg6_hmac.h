@@ -12,12 +12,12 @@
 #include <net/flow.h>
 #include <net/ip6_fib.h>
 #include <net/sock.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/route.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/route.h>
 #include <net/seg6.h>
-#include <linux/seg6_hmac.h>
-#include <linux/rhashtable-types.h>
+#include <linaos/seg6_hmac.h>
+#include <linaos/rhashtable-types.h>
 
 #define SEG6_HMAC_MAX_DIGESTSIZE	160
 #define SEG6_HMAC_RING_SIZE		256

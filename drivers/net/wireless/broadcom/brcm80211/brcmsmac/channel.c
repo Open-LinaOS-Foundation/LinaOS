@@ -14,7 +14,7 @@
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <net/cfg80211.h>
 #include <net/mac80211.h>
 #include <net/regulatory.h>

@@ -9,10 +9,10 @@
  *
  * Copyright (c) 2006-2007 MontaVista Software, Inc.
  */
-#include <linux/export.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
+#include <linaos/export.h>
+#include <linaos/mii.h>
+#include <linaos/phy.h>
+#include <linaos/phy_fixed.h>
 
 #include "swphy.h"
 

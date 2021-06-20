@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the SuperH DMA specific kernel interface routines under Linux.
+# Makefile for the SuperH DMA specific kernel interface routines under LinaOS.
 #
 
 obj-$(CONFIG_SH_DMA_API)	+= dma-sh.o dma-api.o dma-sysfs.o

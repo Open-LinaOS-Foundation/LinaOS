@@ -25,10 +25,10 @@
 #ifndef AMDGPU_AMDKFD_H_INCLUDED
 #define AMDGPU_AMDKFD_H_INCLUDED
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/kthread.h>
-#include <linux/workqueue.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/kthread.h>
+#include <linaos/workqueue.h>
 #include <kgd_kfd_interface.h>
 #include <drm/ttm/ttm_execbuf_util.h>
 #include "amdgpu_sync.h"

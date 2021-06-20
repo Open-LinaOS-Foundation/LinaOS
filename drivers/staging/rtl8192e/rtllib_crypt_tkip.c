@@ -7,18 +7,18 @@
 
 #include <crypto/arc4.h>
 #include <crypto/hash.h>
-#include <linux/fips.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/string.h>
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
+#include <linaos/fips.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/random.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_arp.h>
+#include <linaos/string.h>
+#include <linaos/crc32.h>
+#include <linaos/etherdevice.h>
 
 #include "rtllib.h"
 

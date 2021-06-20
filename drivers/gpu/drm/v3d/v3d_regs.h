@@ -4,7 +4,7 @@
 #ifndef V3D_REGS_H
 #define V3D_REGS_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define V3D_MASK(high, low) ((u32)GENMASK(high, low))
 /* Using the GNU statement expression extension */

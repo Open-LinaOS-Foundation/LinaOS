@@ -8,12 +8,12 @@
  *               Christian Borntraeger <borntraeger@de.ibm.com>
  */
 
-#include <linux/kvm.h>
-#include <linux/gfp.h>
-#include <linux/errno.h>
-#include <linux/compat.h>
-#include <linux/mm_types.h>
-#include <linux/pgtable.h>
+#include <linaos/kvm.h>
+#include <linaos/gfp.h>
+#include <linaos/errno.h>
+#include <linaos/compat.h>
+#include <linaos/mm_types.h>
+#include <linaos/pgtable.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/facility.h>
@@ -825,7 +825,7 @@ static void handle_stsi_3_2_2(struct kvm_vcpu *vcpu, struct sysinfo_3_2_2 *mem)
 	mem->vm[0].caf = 1000;
 	memcpy(mem->vm[0].name, "KVMguest", 8);
 	ASCEBC(mem->vm[0].name, 8);
-	memcpy(mem->vm[0].cpi, "KVM/Linux       ", 16);
+	memcpy(mem->vm[0].cpi, "KVM/LinaOS       ", 16);
 	ASCEBC(mem->vm[0].cpi, 16);
 }
 
@@ -1451,7 +1451,7 @@ static int handle_tprot(struct kvm_vcpu *vcpu)
 
 	kvm_s390_get_base_disp_sse(vcpu, &address1, &address2, &ar, NULL);
 
-	/* we only handle the Linux memory detection case:
+	/* we only handle the LinaOS memory detection case:
 	 * access key == 0
 	 * everything else goes to userspace. */
 	if (address2 & 0xf0)

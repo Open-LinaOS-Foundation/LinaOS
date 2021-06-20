@@ -6,21 +6,21 @@
  *
  * Driver for the Melexis MLX90632 I2C 16-bit IR thermopile sensor
  */
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/math64.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/limits.h>
+#include <linaos/module.h>
+#include <linaos/math64.h>
+#include <linaos/of.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 /* Memory sections addresses */
 #define MLX90632_ADDR_RAM	0x4000 /* Start address of ram */

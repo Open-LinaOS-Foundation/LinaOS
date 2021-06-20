@@ -25,7 +25,7 @@
  *
  **************************************************************************/
 
-#include <linux/highmem.h>
+#include <linaos/highmem.h>
 
 #include "vmwgfx_drv.h"
 

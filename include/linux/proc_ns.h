@@ -5,7 +5,7 @@
 #ifndef _LINUX_PROC_NS_H
 #define _LINUX_PROC_NS_H
 
-#include <linux/ns_common.h>
+#include <linaos/ns_common.h>
 
 struct pid_namespace;
 struct nsset;

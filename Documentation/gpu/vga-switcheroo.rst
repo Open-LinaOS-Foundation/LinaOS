@@ -34,22 +34,22 @@ Public functions
 Public structures
 -----------------
 
-.. kernel-doc:: include/linux/vga_switcheroo.h
+.. kernel-doc:: include/linaos/vga_switcheroo.h
    :functions: vga_switcheroo_handler
 
-.. kernel-doc:: include/linux/vga_switcheroo.h
+.. kernel-doc:: include/linaos/vga_switcheroo.h
    :functions: vga_switcheroo_client_ops
 
 Public constants
 ----------------
 
-.. kernel-doc:: include/linux/vga_switcheroo.h
+.. kernel-doc:: include/linaos/vga_switcheroo.h
    :functions: vga_switcheroo_handler_flags_t
 
-.. kernel-doc:: include/linux/vga_switcheroo.h
+.. kernel-doc:: include/linaos/vga_switcheroo.h
    :functions: vga_switcheroo_client_id
 
-.. kernel-doc:: include/linux/vga_switcheroo.h
+.. kernel-doc:: include/linaos/vga_switcheroo.h
    :functions: vga_switcheroo_state
 
 Private structures
@@ -94,5 +94,5 @@ Backlight control
 Public functions
 ~~~~~~~~~~~~~~~~
 
-.. kernel-doc:: include/linux/apple-gmux.h
+.. kernel-doc:: include/linaos/apple-gmux.h
    :internal:

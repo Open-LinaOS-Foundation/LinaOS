@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2017 Facebook
  */
-#include <linux/bpf.h>
-#include <linux/btf_ids.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/etherdevice.h>
-#include <linux/filter.h>
-#include <linux/sched/signal.h>
+#include <linaos/bpf.h>
+#include <linaos/btf_ids.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/etherdevice.h>
+#include <linaos/filter.h>
+#include <linaos/sched/signal.h>
 #include <net/bpf_sk_storage.h>
 #include <net/sock.h>
 #include <net/tcp.h>
 #include <net/net_namespace.h>
-#include <linux/error-injection.h>
-#include <linux/smp.h>
-#include <linux/sock_diag.h>
+#include <linaos/error-injection.h>
+#include <linaos/smp.h>
+#include <linaos/sock_diag.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/bpf_test_run.h>
@@ -164,7 +164,7 @@ out:
  */
 __diag_push();
 __diag_ignore(GCC, 8, "-Wmissing-prototypes",
-	      "Global functions as their definitions will be in vmlinux BTF");
+	      "Global functions as their definitions will be in vmlinaos BTF");
 int noinline bpf_fentry_test1(int a)
 {
 	return a + 1;

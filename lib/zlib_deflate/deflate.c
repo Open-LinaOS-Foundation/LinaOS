@@ -48,8 +48,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/zutil.h>
+#include <linaos/module.h>
+#include <linaos/zutil.h>
 #include "defutil.h"
 
 /* architecture-specific bits */

@@ -2,7 +2,7 @@
 #ifndef __NETNS_NETFILTER_H
 #define __NETNS_NETFILTER_H
 
-#include <linux/netfilter_defs.h>
+#include <linaos/netfilter_defs.h>
 
 struct proc_dir_entry;
 struct nf_logger;

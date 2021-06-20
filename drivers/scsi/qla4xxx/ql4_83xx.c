@@ -4,7 +4,7 @@
  * Copyright (c)   2003-2013 QLogic Corporation
  */
 
-#include <linux/ratelimit.h>
+#include <linaos/ratelimit.h>
 
 #include "ql4_def.h"
 #include "ql4_version.h"

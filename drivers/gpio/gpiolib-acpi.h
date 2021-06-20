@@ -19,7 +19,7 @@ struct acpi_device;
  * @polarity: interrupt polarity as provided by ACPI
  * @triggering: triggering type as provided by ACPI
  * @debounce: debounce timeout as provided by ACPI
- * @quirks: Linux specific quirks as provided by struct acpi_gpio_mapping
+ * @quirks: LinaOS specific quirks as provided by struct acpi_gpio_mapping
  */
 struct acpi_gpio_info {
 	struct acpi_device *adev;

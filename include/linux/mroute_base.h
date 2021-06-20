@@ -1,9 +1,9 @@
 #ifndef __LINUX_MROUTE_BASE_H
 #define __LINUX_MROUTE_BASE_H
 
-#include <linux/netdevice.h>
-#include <linux/rhashtable-types.h>
-#include <linux/spinlock.h>
+#include <linaos/netdevice.h>
+#include <linaos/rhashtable-types.h>
+#include <linaos/spinlock.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/fib_notifier.h>

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/unistd.h>
 #include <abi/vdso.h>
 

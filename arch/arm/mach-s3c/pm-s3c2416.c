@@ -5,9 +5,9 @@
 //
 // S3C2416 - PM support (Based on Ben Dooks' S3C2412 PM support)
 
-#include <linux/device.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
+#include <linaos/device.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/io.h>
 
 #include <asm/cacheflush.h>
 

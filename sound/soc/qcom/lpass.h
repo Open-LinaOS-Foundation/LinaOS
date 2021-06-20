@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2010-2011,2013-2015,2020 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011,2013-2015,2020 The LinaOS Foundation. All rights reserved.
  *
  * lpass.h - Definitions for the QTi LPASS
  */
@@ -8,10 +8,10 @@
 #ifndef __LPASS_H__
 #define __LPASS_H__
 
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/compiler.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 #include <dt-bindings/sound/qcom,lpass.h>
 #include "lpass-hdmi.h"
 

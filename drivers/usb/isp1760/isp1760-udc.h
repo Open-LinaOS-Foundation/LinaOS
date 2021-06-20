@@ -11,11 +11,11 @@
 #ifndef _ISP1760_UDC_H_
 #define _ISP1760_UDC_H_
 
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/usb/gadget.h>
+#include <linaos/ioport.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
+#include <linaos/usb/gadget.h>
 
 struct isp1760_device;
 struct isp1760_udc;

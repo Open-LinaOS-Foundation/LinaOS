@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/se/7751/setup.c
+ * linaos/arch/sh/boards/se/7751/setup.c
  *
  * Copyright (C) 2000  Kazumoto Kojima
  *
@@ -9,8 +9,8 @@
  * Modified for 7751 Solution Engine by
  * Ian da Silva and Jeremy Siegel, 2001.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
 #include <asm/machvec.h>
 #include <mach-se/mach/se7751.h>
 #include <asm/io.h>

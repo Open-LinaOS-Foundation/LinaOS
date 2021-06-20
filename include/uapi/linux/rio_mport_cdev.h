@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR BSD-3-Clause) */
 /*
  * Copyright (c) 2015-2016, Integrated Device Technology Inc.
  * Copyright (c) 2015, Prodrive Technologies
@@ -40,8 +40,8 @@
 #ifndef _RIO_MPORT_CDEV_H_
 #define _RIO_MPORT_CDEV_H_
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <linaos/ioctl.h>
+#include <linaos/types.h>
 
 struct rio_mport_maint_io {
 	__u16 rioid;		/* destID of remote device */

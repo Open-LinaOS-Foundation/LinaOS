@@ -65,9 +65,9 @@ typedef enum {
 typedef int (*kdb_func_t)(int, const char **);
 
 #ifdef	CONFIG_KGDB_KDB
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/atomic.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/atomic.h>
 
 #define KDB_POLL_FUNC_MAX	5
 extern int kdb_poll_idx;

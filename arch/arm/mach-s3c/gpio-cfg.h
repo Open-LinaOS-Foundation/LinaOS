@@ -2,7 +2,7 @@
 /*
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C Platform - GPIO pin configuration
@@ -20,7 +20,7 @@
 #ifndef __PLAT_GPIO_CFG_H
 #define __PLAT_GPIO_CFG_H __FILE__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 typedef unsigned int __bitwise samsung_gpio_pull_t;
 

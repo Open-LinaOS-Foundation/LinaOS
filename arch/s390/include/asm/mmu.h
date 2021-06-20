@@ -2,8 +2,8 @@
 #ifndef __MMU_H
 #define __MMU_H
 
-#include <linux/cpumask.h>
-#include <linux/errno.h>
+#include <linaos/cpumask.h>
+#include <linaos/errno.h>
 
 typedef struct {
 	spinlock_t lock;

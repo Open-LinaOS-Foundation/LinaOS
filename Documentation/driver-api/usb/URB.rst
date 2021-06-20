@@ -115,7 +115,7 @@ What has to be filled in?
 =========================
 
 Depending on the type of transaction, there are some inline functions
-defined in ``linux/usb.h`` to simplify the initialization, such as
+defined in ``linaos/usb.h`` to simplify the initialization, such as
 :c:func:`usb_fill_control_urb`, :c:func:`usb_fill_bulk_urb` and
 :c:func:`usb_fill_int_urb`.  In general, they need the usb device pointer,
 the pipe (usual format from usb.h), the transfer buffer, the desired transfer
@@ -283,7 +283,7 @@ You can use the :c:func:`usb_fill_int_urb` macro to fill INT transfer fields.
 The :c:func:`usb_submit_urb` call modifies ``urb->interval`` to the implemented
 interval value that is less than or equal to the requested interval value.
 
-In Linux 2.6, unlike earlier versions, interrupt URBs are not automagically
+In LinaOS 2.6, unlike earlier versions, interrupt URBs are not automagically
 restarted when they complete.  They end when the completion handler is
 called, just like other URBs.  If you want an interrupt URB to be restarted,
 your completion handler must resubmit it.

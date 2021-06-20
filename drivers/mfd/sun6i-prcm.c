@@ -7,9 +7,9 @@
  * Allwinner PRCM (Power/Reset/Clock Management) driver
  */
 
-#include <linux/mfd/core.h>
-#include <linux/init.h>
-#include <linux/of.h>
+#include <linaos/mfd/core.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
 
 #define SUN8I_CODEC_ANALOG_BASE	0x1c0
 #define SUN8I_CODEC_ANALOG_SIZE	0x4

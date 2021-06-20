@@ -2,20 +2,20 @@
 /*
  * Copyright (C) 2001 Jens Axboe <axboe@suse.de>
  */
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/capability.h>
-#include <linux/completion.h>
-#include <linux/cdrom.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
-#include <linux/times.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
+#include <linaos/compat.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>
+#include <linaos/capability.h>
+#include <linaos/completion.h>
+#include <linaos/cdrom.h>
+#include <linaos/ratelimit.h>
+#include <linaos/slab.h>
+#include <linaos/times.h>
+#include <linaos/uio.h>
+#include <linaos/uaccess.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_ioctl.h>

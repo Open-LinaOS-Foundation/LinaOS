@@ -1,19 +1,19 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# create a compressed vmlinux image from the original vmlinux
+# create a compressed vmlinaos image from the original vmlinaos
 #
 
-targets		:= vmlinux head.o misc.o piggy.o vmlinux.lds
+targets		:= vmlinaos head.o misc.o piggy.o vmlinaos.lds
 asflags-y	:=
 
 OBJECTS = $(obj)/head.o $(obj)/misc.o
 
-LDFLAGS_vmlinux := -T
+LDFLAGS_vmlinaos := -T
 
-$(obj)/vmlinux: $(obj)/vmlinux.lds $(OBJECTS) $(obj)/piggy.o FORCE
+$(obj)/vmlinaos: $(obj)/vmlinaos.lds $(OBJECTS) $(obj)/piggy.o FORCE
 	$(call if_changed,ld)
 
 LDFLAGS_piggy.o := -r --format binary --oformat elf32-littlenios2 -T
 
-$(obj)/piggy.o: $(obj)/vmlinux.scr $(obj)/../vmlinux.gz FORCE
+$(obj)/piggy.o: $(obj)/vmlinaos.scr $(obj)/../vmlinaos.gz FORCE
 	$(call if_changed,ld)

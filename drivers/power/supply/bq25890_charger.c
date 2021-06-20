@@ -5,18 +5,18 @@
  * Copyright (C) 2015 Intel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/usb/phy.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/power_supply.h>
+#include <linaos/regmap.h>
+#include <linaos/types.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/usb/phy.h>
 
-#include <linux/acpi.h>
-#include <linux/of.h>
+#include <linaos/acpi.h>
+#include <linaos/of.h>
 
 #define BQ25890_MANUFACTURER		"Texas Instruments"
 #define BQ25890_IRQ_PIN			"bq25890_irq"

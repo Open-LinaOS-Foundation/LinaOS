@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 #define DEVCG_ACC_MKNOD 1
 #define DEVCG_ACC_READ  2

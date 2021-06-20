@@ -6,14 +6,14 @@
  * Copyright (c) 2016 David Herrmann
  */
 
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
+#include <linaos/bpf.h>
+#include <linaos/btf.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/vmalloc.h>
 #include <net/ipv6.h>
-#include <uapi/linux/btf.h>
+#include <uapi/linaos/btf.h>
 
 /* Intermediate node */
 #define LPM_TREE_NODE_FLAG_IM BIT(0)

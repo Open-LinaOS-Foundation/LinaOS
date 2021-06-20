@@ -8,11 +8,11 @@
  * Copyright 2009-2010 Canonical Ltd.
  */
 
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
+#include <linaos/ctype.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/vmalloc.h>
 
 #include "include/audit.h"
 #include "include/apparmor.h"

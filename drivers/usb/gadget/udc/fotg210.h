@@ -6,7 +6,7 @@
  * Author: Yuan-Hsin Chen <yhchen@faraday-tech.com>
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #define FOTG210_MAX_NUM_EP	5 /* ep0...ep4 */
 #define FOTG210_MAX_FIFO_NUM	4 /* fifo0...fifo4 */

@@ -11,7 +11,7 @@
 #ifndef _XTENSA_IRQ_H
 #define _XTENSA_IRQ_H
 
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/core.h>
 
 #ifdef CONFIG_PLATFORM_NR_IRQS

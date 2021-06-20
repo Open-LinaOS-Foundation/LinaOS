@@ -11,9 +11,9 @@
  *  move struct usb_hub to this file.
  */
 
-#include <linux/usb.h>
-#include <linux/usb/ch11.h>
-#include <linux/usb/hcd.h>
+#include <linaos/usb.h>
+#include <linaos/usb/ch11.h>
+#include <linaos/usb/hcd.h>
 #include "usb.h"
 
 struct usb_hub {

@@ -8,10 +8,10 @@
 
 #define __LSE_PREAMBLE	".arch_extension lse\n"
 
-#include <linux/compiler_types.h>
-#include <linux/export.h>
-#include <linux/jump_label.h>
-#include <linux/stringify.h>
+#include <linaos/compiler_types.h>
+#include <linaos/export.h>
+#include <linaos/jump_label.h>
+#include <linaos/stringify.h>
 #include <asm/alternative.h>
 #include <asm/atomic_lse.h>
 #include <asm/cpucaps.h>

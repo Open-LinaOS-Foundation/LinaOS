@@ -10,11 +10,11 @@
 #ifndef _REGMAP_INTERNAL_H
 #define _REGMAP_INTERNAL_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/wait.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
+#include <linaos/fs.h>
+#include <linaos/list.h>
+#include <linaos/wait.h>
 
 struct regmap;
 struct regcache_ops;

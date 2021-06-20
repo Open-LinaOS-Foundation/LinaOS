@@ -4,11 +4,11 @@
  * All rights reserved.
  */
 
-#include <linux/irq.h>
-#include <linux/kthread.h>
-#include <linux/firmware.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
+#include <linaos/irq.h>
+#include <linaos/kthread.h>
+#include <linaos/firmware.h>
+#include <linaos/netdevice.h>
+#include <linaos/inetdevice.h>
 
 #include "cfg80211.h"
 #include "wlan_cfg.h"

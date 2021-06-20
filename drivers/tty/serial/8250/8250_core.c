@@ -14,28 +14,28 @@
  *	      serial8250_register_8250_port() ports
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/ratelimit.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/nmi.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/pm_runtime.h>
-#include <linux/io.h>
+#include <linaos/acpi.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/sysrq.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/tty.h>
+#include <linaos/ratelimit.h>
+#include <linaos/tty_flip.h>
+#include <linaos/serial.h>
+#include <linaos/serial_8250.h>
+#include <linaos/nmi.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/io.h>
 #ifdef CONFIG_SPARC
-#include <linux/sunserialcore.h>
+#include <linaos/sunserialcore.h>
 #endif
 
 #include <asm/irq.h>

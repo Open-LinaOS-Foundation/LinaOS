@@ -10,7 +10,7 @@
 #ifndef _MVS94XX_REG_H_
 #define _MVS94XX_REG_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define MAX_LINK_RATE		SAS_LINK_RATE_6_0_GBPS
 

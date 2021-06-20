@@ -2,7 +2,7 @@
 #ifndef DECOMPRESSOR_H
 #define DECOMPRESSOR_H
 /*
- * Squashfs - a compressed read only filesystem for Linux
+ * Squashfs - a compressed read only filesystem for LinaOS
  *
  * Copyright (c) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009
  * Phillip Lougher <phillip@squashfs.org.uk>
@@ -10,7 +10,7 @@
  * decompressor.h
  */
 
-#include <linux/bio.h>
+#include <linaos/bio.h>
 
 struct squashfs_decompressor {
 	void	*(*init)(struct squashfs_sb_info *, void *);

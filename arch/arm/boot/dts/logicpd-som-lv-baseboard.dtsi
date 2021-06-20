@@ -9,7 +9,7 @@
 		sysboot2 {
 			label = "gpio3";
 			gpios = <&gpio4 15 GPIO_ACTIVE_LOW>;	/* gpio_111 / uP_GPIO_3 */
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			wakeup-source;
 		};
 	};
@@ -28,13 +28,13 @@
 		led1 {
 			label = "led1";
 			gpios = <&gpio5 5 GPIO_ACTIVE_LOW>;	/* gpio133 */
-			linux,default-trigger = "cpu0";
+			linaos,default-trigger = "cpu0";
 		};
 
 		led2 {
 			label = "led2";
 			gpios = <&gpio1 11 GPIO_ACTIVE_LOW>;	/* gpio11 */
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 		};
 	};
 };

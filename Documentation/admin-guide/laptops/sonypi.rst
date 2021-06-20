@@ -24,7 +24,7 @@ generate, like:
 	- programmable keys, back, help, zoom, thumbphrase buttons, etc.
 	  (when available)
 
-Those events (see linux/sonypi.h) can be polled using the character device node
+Those events (see linaos/sonypi.h) can be polled using the character device node
 /dev/sonypi (major 10, minor auto allocated or specified as a option).
 A simple daemon which translates the jogdial movements into mouse wheel events
 can be downloaded at: <http://popies.net/sonypi/>
@@ -37,7 +37,7 @@ brightness and querying the batteries charge information (some more
 commands may be added in the future).
 
 This driver can also be used to set the camera controls on Picturebook series
-(brightness, contrast etc), and is used by the video4linux driver for the
+(brightness, contrast etc), and is used by the video4linaos driver for the
 Motion Eye camera.
 
 Please note that this driver was created by reverse engineering the Windows

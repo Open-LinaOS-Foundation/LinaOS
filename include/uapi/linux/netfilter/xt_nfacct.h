@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _XT_NFACCT_MATCH_H
 #define _XT_NFACCT_MATCH_H
 
-#include <linux/netfilter/nfnetlink_acct.h>
+#include <linaos/netfilter/nfnetlink_acct.h>
 
 struct nf_acct;
 

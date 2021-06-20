@@ -11,12 +11,12 @@
  *	http://www.embeddedarm.com/documentation/ts-can1-manual.pdf
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/isa.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/isa.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
 #include "sja1000.h"
 
 MODULE_DESCRIPTION("Driver for Technologic Systems TS-CAN1 PC104 boards");

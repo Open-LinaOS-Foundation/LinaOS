@@ -1,8 +1,8 @@
 #include <stddef.h>
 #include <inttypes.h>
 #include <errno.h>
-#include <linux/seg6_local.h>
-#include <linux/bpf.h>
+#include <linaos/seg6_local.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
 

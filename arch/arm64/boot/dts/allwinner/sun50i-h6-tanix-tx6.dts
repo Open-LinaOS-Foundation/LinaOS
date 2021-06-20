@@ -100,7 +100,7 @@
 };
 
 &r_ir {
-	linux,rc-map-name = "rc-tanix-tx5max";
+	linaos,rc-map-name = "rc-tanix-tx5max";
 	status = "okay";
 };
 

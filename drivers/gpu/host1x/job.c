@@ -5,15 +5,15 @@
  * Copyright (c) 2010-2015, NVIDIA Corporation.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/host1x.h>
-#include <linux/iommu.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/host1x.h>
+#include <linaos/iommu.h>
+#include <linaos/kref.h>
+#include <linaos/module.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 #include <trace/events/host1x.h>
 
 #include "channel.h"

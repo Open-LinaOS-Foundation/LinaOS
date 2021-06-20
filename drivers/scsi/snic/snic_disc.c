@@ -15,8 +15,8 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/mempool.h>
+#include <linaos/errno.h>
+#include <linaos/mempool.h>
 
 #include <scsi/scsi_tcq.h>
 

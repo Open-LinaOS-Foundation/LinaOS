@@ -3,7 +3,7 @@
 /*
  *	m54xxpci.h -- ColdFire 547x and 548x PCI bus support
  *
- *	(C) Copyright 2011,  Greg Ungerer <gerg@uclinux.org>
+ *	(C) Copyright 2011,  Greg Ungerer <gerg@uclinaos.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive

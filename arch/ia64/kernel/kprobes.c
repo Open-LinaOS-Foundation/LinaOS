@@ -10,14 +10,14 @@
  *              <anil.s.keshavamurthy@intel.com> adapted from i386
  */
 
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/preempt.h>
-#include <linux/extable.h>
-#include <linux/kdebug.h>
-#include <linux/pgtable.h>
+#include <linaos/kprobes.h>
+#include <linaos/ptrace.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/preempt.h>
+#include <linaos/extable.h>
+#include <linaos/kdebug.h>
+#include <linaos/pgtable.h>
 
 #include <asm/sections.h>
 #include <asm/exception.h>

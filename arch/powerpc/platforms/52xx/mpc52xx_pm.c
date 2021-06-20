@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/suspend.h>
+#include <linaos/io.h>
 #include <asm/time.h>
 #include <asm/cacheflush.h>
 #include <asm/mpc52xx.h>

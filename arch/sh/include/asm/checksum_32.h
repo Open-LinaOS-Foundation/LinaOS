@@ -6,7 +6,7 @@
  * Copyright (C) 1999 by Kaz Kojima & Niibe Yutaka
  */
 
-#include <linux/in6.h>
+#include <linaos/in6.h>
 
 /*
  * computes the checksum of a memory block at buff, length len,
@@ -80,7 +80,7 @@ static inline __sum16 csum_fold(__wsum sum)
  *	which always checksum on 4 octet boundaries.
  *
  *      i386 version by Jorge Cwik <jorge@laser.satlink.net>, adapted
- *      for linux by * Arnt Gulbrandsen.
+ *      for linaos by * Arnt Gulbrandsen.
  */
 static inline __sum16 ip_fast_csum(const void *iph, unsigned int ihl)
 {

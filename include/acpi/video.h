@@ -2,8 +2,8 @@
 #ifndef __ACPI_VIDEO_H
 #define __ACPI_VIDEO_H
 
-#include <linux/errno.h> /* for ENODEV */
-#include <linux/types.h> /* for bool */
+#include <linaos/errno.h> /* for ENODEV */
+#include <linaos/types.h> /* for bool */
 
 struct acpi_video_brightness_flags {
 	u8 _BCL_no_ac_battery_levels:1;	/* no AC/Battery levels in _BCL */

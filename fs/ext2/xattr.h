@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
-  File: linux/ext2_xattr.h
+  File: linaos/ext2_xattr.h
 
   On-disk format of extended attributes for the ext2 filesystem.
 
   (C) 2001 Andreas Gruenbacher, <a.gruenbacher@computer.org>
 */
 
-#include <linux/init.h>
-#include <linux/xattr.h>
+#include <linaos/init.h>
+#include <linaos/xattr.h>
 
 /* Magic value in attribute blocks */
 #define EXT2_XATTR_MAGIC		0xEA020000

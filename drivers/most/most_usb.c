@@ -5,24 +5,24 @@
  * Copyright (C) 2013-2015 Microchip Technology Germany II GmbH & Co. KG
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/sysfs.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/uaccess.h>
-#include <linux/most.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/usb.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/cdev.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/completion.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
+#include <linaos/sysfs.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/etherdevice.h>
+#include <linaos/uaccess.h>
+#include <linaos/most.h>
 
 #define USB_MTU			512
 #define NO_ISOCHRONOUS_URB	0

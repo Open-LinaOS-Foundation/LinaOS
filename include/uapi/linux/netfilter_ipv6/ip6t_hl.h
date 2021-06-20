@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* ip6tables module for matching the Hop Limit value
  * Maciej Soltysiak <solt@dns.toxicfilms.tv>
  * Based on HW's ttl module */
@@ -6,7 +6,7 @@
 #ifndef _IP6T_HL_H
 #define _IP6T_HL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum {
 	IP6T_HL_EQ = 0,		/* equals */

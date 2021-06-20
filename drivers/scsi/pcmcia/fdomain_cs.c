@@ -8,8 +8,8 @@
  * are Copyright (C) 1999 David A. Hinds.  All Rights Reserved.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 #include <scsi/scsi_host.h>
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

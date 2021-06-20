@@ -13,31 +13,31 @@
  *	Hugh Dickins
  */
 
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/mman.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/rwsem.h>
-#include <linux/pagemap.h>
-#include <linux/rmap.h>
-#include <linux/spinlock.h>
-#include <linux/xxhash.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/rbtree.h>
-#include <linux/memory.h>
-#include <linux/mmu_notifier.h>
-#include <linux/swap.h>
-#include <linux/ksm.h>
-#include <linux/hashtable.h>
-#include <linux/freezer.h>
-#include <linux/oom.h>
-#include <linux/numa.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/mman.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/coredump.h>
+#include <linaos/rwsem.h>
+#include <linaos/pagemap.h>
+#include <linaos/rmap.h>
+#include <linaos/spinlock.h>
+#include <linaos/xxhash.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
+#include <linaos/rbtree.h>
+#include <linaos/memory.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/swap.h>
+#include <linaos/ksm.h>
+#include <linaos/hashtable.h>
+#include <linaos/freezer.h>
+#include <linaos/oom.h>
+#include <linaos/numa.h>
 
 #include <asm/tlbflush.h>
 #include "internal.h"

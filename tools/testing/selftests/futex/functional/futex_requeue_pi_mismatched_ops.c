@@ -9,10 +9,10 @@
  *      3. The kernel must detect the mismatch and return -EINVAL.
  *
  * AUTHOR
- *      Darren Hart <dvhart@linux.intel.com>
+ *      Darren Hart <dvhart@linaos.intel.com>
  *
  * HISTORY
- *      2009-Nov-9: Initial version by Darren Hart <dvhart@linux.intel.com>
+ *      2009-Nov-9: Initial version by Darren Hart <dvhart@linaos.intel.com>
  *
  *****************************************************************************/
 

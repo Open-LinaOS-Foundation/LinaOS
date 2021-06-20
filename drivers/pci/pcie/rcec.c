@@ -9,9 +9,9 @@
  * Copyright (C) 2020 Intel Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/pci_regs.h>
 
 #include "../pci.h"
 

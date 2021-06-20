@@ -3,8 +3,8 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/time.h>
-#include <linux/export.h>
+#include <linaos/time.h>
+#include <linaos/export.h>
 #include <sound/core.h>
 #include <sound/gus.h>
 #define __GUS_TABLES_ALLOC__

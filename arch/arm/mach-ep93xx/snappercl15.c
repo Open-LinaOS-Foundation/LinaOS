@@ -11,17 +11,17 @@
  *   James R. McKaskill
  */
 
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/fb.h>
+#include <linaos/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/i2c.h>
+#include <linaos/fb.h>
 
-#include <linux/mtd/platnand.h>
+#include <linaos/mtd/platnand.h>
 
 #include "hardware.h"
-#include <linux/platform_data/video-ep93xx.h>
+#include <linaos/platform_data/video-ep93xx.h>
 #include "gpio-ep93xx.h"
 
 #include <asm/mach-types.h>

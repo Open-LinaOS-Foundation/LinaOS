@@ -8,9 +8,9 @@
  * Copyright (C) 2002 Rory Bolt
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
 #include <asm/mach/irq.h>
 #include <asm/irq.h>
 #include <asm/mach-types.h>

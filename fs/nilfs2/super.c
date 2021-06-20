@@ -7,7 +7,7 @@
  * Written by Ryusuke Konishi.
  */
 /*
- *  linux/fs/ext2/super.c
+ *  linaos/fs/ext2/super.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -16,7 +16,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  linaos/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -24,17 +24,17 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/parser.h>
-#include <linux/crc32.h>
-#include <linux/vfs.h>
-#include <linux/writeback.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/parser.h>
+#include <linaos/crc32.h>
+#include <linaos/vfs.h>
+#include <linaos/writeback.h>
+#include <linaos/seq_file.h>
+#include <linaos/mount.h>
 #include "nilfs.h"
 #include "export.h"
 #include "mdt.h"

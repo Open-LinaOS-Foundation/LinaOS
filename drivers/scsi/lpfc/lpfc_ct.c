@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex LinaOS Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2021 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.     *
@@ -24,11 +24,11 @@
  * Fibre Channel SCSI LAN Device Driver CT support: FC Generic Services FC-GS
  */
 
-#include <linux/blkdev.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/utsname.h>
+#include <linaos/blkdev.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/utsname.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>
@@ -1812,7 +1812,7 @@ lpfc_vport_symbolic_node_name(struct lpfc_vport *vport, char *symbol,
 	if (strlcat(symbol, tmp, size) >= size)
 		goto buffer_done;
 
-	/* Note :- OS name is "Linux" */
+	/* Note :- OS name is "LinaOS" */
 	scnprintf(tmp, sizeof(tmp), " OS:%s", init_utsname()->sysname);
 	strlcat(symbol, tmp, size);
 

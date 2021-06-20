@@ -44,7 +44,7 @@ Tue Feb 6 13:30 2001 Gerard Roudier (groudier@club-internet.fr)
 	  PCI BAR value from the BAR cookie is now useless.
 	  This point had been discussed at the list and the solution 
 	  got approved by PCI code maintainer (Martin Mares).
-	- Merge changes for linux-2.4 that declare the host template 
+	- Merge changes for linaos-2.4 that declare the host template 
 	  in the driver object also when the driver is statically 
 	  linked with the kernel.
 	- Increase SCSI message size up to 12 bytes, given that 8 
@@ -98,7 +98,7 @@ Sun Jul 09 16:30 2000 Gerard Roudier (groudier@club-internet.fr)
 	    SCRIPTS. These errors are now immediately reported to 
 	    the C code by an interrupt.
 	  * Sync the residual handling code with sym-1.6.2 and now 
-	    report `resid' to user for linux version >= 2.3.99 
+	    report `resid' to user for linaos version >= 2.3.99 
 	- General cleanup:
 	  Move definitions for barriers and IO/MMIO operations to the 
 	  sym53c8xx_defs.h header files. They are now shared by the 
@@ -137,7 +137,7 @@ Sat Mar 11 12:00 2000 Gerard Roudier (groudier@club-internet.fr)
 	* version sym53c8xx-1.6b-5
 	- Test against expected data transfer direction from SCRIPTS.
 	- Add support for the new dynamic dma mapping kernel interface.
-	  Requires Linux-2.3.47 (tested with pre-2.3.47-6).
+	  Requires LinaOS-2.3.47 (tested with pre-2.3.47-6).
 	  Many thanks to David S. Miller for his preliminary changes 
 	  that have been useful guidelines.
 	- Get data transfer direction from the scsi command structure 
@@ -165,7 +165,7 @@ Mon Feb 14 4:00 2000 Pam Delaney (pam.delaney@lsil.com)
 Sun Feb 20 11:00 2000 Gerard Roudier (groudier@club-internet.fr)
 	* version sym53c8xx-1.5j
 	- Add support for the new dynamic dma mapping kernel interface.
-	  Requires Linux-2.3.47 (tested with pre-2.3.47-6).
+	  Requires LinaOS-2.3.47 (tested with pre-2.3.47-6).
 	  Many thanks to David S. Miller for his preliminary changes 
 	  that have been useful guidelines, for having reviewed the 
 	  code and having tested this driver version on Ultra-Sparc.
@@ -228,7 +228,7 @@ Mon Dec 6  22:00 1999 Gerard Roudier (groudier@club-internet.fr)
 	  (Sent by Pamela Delaney from LSILOGIC)
 	- Remove the compilation condition about having to acquire the 
 	  io_request_lock since it seems to be a definite feature now.:)
-	- Change get_pages by GetPages since Linux >= 2.3.27 now wants 
+	- Change get_pages by GetPages since LinaOS >= 2.3.27 now wants 
 	  get_pages to ever be used as a kernel symbol (from 2.3.27).
 	- proc_dir structure no longer needed for kernel >= 2.3.27.
 
@@ -245,7 +245,7 @@ Sun Oct  3  19:00 1999 Gerard Roudier (groudier@club-internet.fr)
 
 Sat Sep 11  11:00 1999 Gerard Roudier (groudier@club-internet.fr)
 	* version sym53c8xx-1.5e
-	- New linux-2.3.13 __setup scheme support added.
+	- New linaos-2.3.13 __setup scheme support added.
 	- Cleanup of the extended error status handling:
 	  Use 1 bit per error type.
 	- Also save the extended error status prior to auto-sense.
@@ -272,7 +272,7 @@ Sat Sep 11  11:00 1999 Gerard Roudier (groudier@club-internet.fr)
 	- Calculate the data transfer residual as the 2's complement 
 	  integer (A positive value in returned on data overrun, and 
 	  a negative one on underrun).
-	- Add support of some 'resource handling' for linux-2.3.13.
+	- Add support of some 'resource handling' for linaos-2.3.13.
 	  Basically the BARs have been changed to something more complex 
 	  in the pci_dev structure.
 	- Remove some deprecated code.
@@ -347,7 +347,7 @@ Sun May 9  11:00 1999 Gerard Roudier (groudier@club-internet.fr)
 	- Fix the misdetection of SYM53C875E (was detected as a 876).
 	- Fix the misdetection of SYM53C810 not A (was detected as a 810A).
 	- Support for up to 256 TAGS per LUN (CMD_PER_LUN).
-	  Currently limited to 255 due to Linux limitation. :)
+	  Currently limited to 255 due to LinaOS limitation. :)
 	- Support for up to 508 active commands (CAN_QUEUE).
 	- Support for the 53C895A by Pamela Delaney <pam.delaney@lsil.com>
 	  The 53C895A contains all of the features of the 896 but has only 
@@ -359,7 +359,7 @@ Sun May 9  11:00 1999 Gerard Roudier (groudier@club-internet.fr)
 Tue Apr 15  10:00 1999 Gerard Roudier (groudier@club-internet.fr)
 	* version sym53c8xx-1.3e
 	- Support for any number of LUNs (64) (SPI2-compliant).
-	  (Btw, this may only be ever useful under linux-2.2 ;-))
+	  (Btw, this may only be ever useful under linaos-2.2 ;-))
 
 Sun Apr 11  10:00 1999 Gerard Roudier (groudier@club-internet.fr)
 	* version sym53c8xx-1.3d
@@ -416,7 +416,7 @@ Fri Feb 12  23:00 1999 Gerard Roudier (groudier@club-internet.fr)
 	  support of SCSI hot-plug.
 	- Add 'recovery' option to driver set-up.
 	- Negotiate SYNC data transfers with CCS devices.
-	- Deal correctly with 64 bit PCI address registers on Linux 2.2.
+	- Deal correctly with 64 bit PCI address registers on LinaOS 2.2.
 	  Pointed out by Leonard Zubkoff.
 
 Sun Jan 31  18:00 1999 Gerard Roudier (groudier@club-internet.fr)
@@ -450,7 +450,7 @@ Fri Jan  1  20:00 1999 Gerard Roudier (groudier@club-internet.fr)
 	* version sym53c8xx-1.0a
 	- Waiting list look-up didn't work for the first command of the list.
 	  Hopefully fixed, but tested on paper only. ;)
-	- Remove the most part of PPC specific code for Linux-2.2.
+	- Remove the most part of PPC specific code for LinaOS-2.2.
 	  Thanks to Cort.
 	- Some other minors changes.
 
@@ -533,7 +533,7 @@ Sun Nov 1  14H00 1998 Gerard Roudier (groudier@club-internet.fr)
 	  conflicted with some other driver code as work-arounds.
 	  Reread the NVRAM before the calling of ncr_attach(). This spares 
 	  stack space and so allows to handle more boards.
-	  Handle 64 bit base addresses under linux-2.0.X.
+	  Handle 64 bit base addresses under linaos-2.0.X.
 	  Set MASTER bit in PCI COMMAND register if not set.
 
 Wed Oct 30 22H00 1998 Gerard Roudier (groudier@club-internet.fr)

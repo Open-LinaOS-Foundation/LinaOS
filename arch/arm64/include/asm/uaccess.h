@@ -14,9 +14,9 @@
 /*
  * User space memory access functions
  */
-#include <linux/bitops.h>
-#include <linux/kasan-checks.h>
-#include <linux/string.h>
+#include <linaos/bitops.h>
+#include <linaos/kasan-checks.h>
+#include <linaos/string.h>
 
 #include <asm/cpufeature.h>
 #include <asm/mmu.h>

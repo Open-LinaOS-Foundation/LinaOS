@@ -8,28 +8,28 @@
  *
  *  DMA support added by Chip Coldwell.
  */
-#include <linux/tty.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/tty_flip.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/atmel_pdc.h>
-#include <linux/uaccess.h>
-#include <linux/platform_data/atmel.h>
-#include <linux/timer.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/suspend.h>
-#include <linux/mm.h>
+#include <linaos/tty.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/serial.h>
+#include <linaos/clk.h>
+#include <linaos/console.h>
+#include <linaos/sysrq.h>
+#include <linaos/tty_flip.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/atmel_pdc.h>
+#include <linaos/uaccess.h>
+#include <linaos/platform_data/atmel.h>
+#include <linaos/timer.h>
+#include <linaos/err.h>
+#include <linaos/irq.h>
+#include <linaos/suspend.h>
+#include <linaos/mm.h>
 
 #include <asm/div64.h>
 #include <asm/io.h>
@@ -48,7 +48,7 @@
 #define ATMEL_RTS_HIGH_OFFSET	16
 #define ATMEL_RTS_LOW_OFFSET	20
 
-#include <linux/serial_core.h>
+#include <linaos/serial_core.h>
 
 #include "serial_mctrl_gpio.h"
 #include "atmel_serial.h"

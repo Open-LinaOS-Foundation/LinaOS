@@ -6,7 +6,7 @@
  * 	       Javier Cardona <javier@cozybit.com>
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <asm/unaligned.h>
 #include "ieee80211_i.h"
 #include "mesh.h"

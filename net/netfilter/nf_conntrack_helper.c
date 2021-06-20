@@ -3,22 +3,22 @@
 
 /* (C) 1999-2001 Paul `Rusty' Russell
  * (C) 2002-2006 Netfilter Core Team <coreteam@netfilter.org>
- * (C) 2003,2004 USAGI/WIDE Project <http://www.linux-ipv6.org>
+ * (C) 2003,2004 USAGI/WIDE Project <http://www.linaos-ipv6.org>
  * (C) 2006-2012 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/stddef.h>
-#include <linux/random.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/rculist.h>
-#include <linux/rtnetlink.h>
+#include <linaos/types.h>
+#include <linaos/netfilter.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/vmalloc.h>
+#include <linaos/stddef.h>
+#include <linaos/random.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/rculist.h>
+#include <linaos/rtnetlink.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>

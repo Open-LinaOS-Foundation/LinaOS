@@ -5,15 +5,15 @@
  * Copyright(C) 2006, Red Hat, Inc., Ingo Molnar
  */
 
-#include <linux/proc_fs.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/kallsyms.h>
-#include <linux/nmi.h>
+#include <linaos/proc_fs.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/kallsyms.h>
+#include <linaos/nmi.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "tick-internal.h"
 

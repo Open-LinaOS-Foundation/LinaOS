@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 #include "mlx5_ib.h"
 #include "cmd.h"

@@ -22,12 +22,12 @@
  * Copyright 2000,2001 Jeff Garzik <jgarzik@pobox.com>
  * Copyright 2000,2001 Philipp Rumpf <prumpf@mandrakesoft.com>
  */
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/gpio/driver.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
 
 #define PMBASE_OFFSET 0xb0
 #define PMBASE_SIZE   0x30
@@ -239,6 +239,6 @@ static void __exit amd_gpio_exit(void)
 module_init(amd_gpio_init);
 module_exit(amd_gpio_exit);
 
-MODULE_AUTHOR("The Linux Kernel team");
+MODULE_AUTHOR("The LinaOS Kernel team");
 MODULE_DESCRIPTION("GPIO driver for AMD chipsets");
 MODULE_LICENSE("GPL");

@@ -11,8 +11,8 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
 
 #include <asm/pci-bridge.h>
 #include <asm/isa-bridge.h>

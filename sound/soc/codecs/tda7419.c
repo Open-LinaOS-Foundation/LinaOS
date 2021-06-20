@@ -7,10 +7,10 @@
  * Author: Matt Porter <mporter@konsulko.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/soc.h>

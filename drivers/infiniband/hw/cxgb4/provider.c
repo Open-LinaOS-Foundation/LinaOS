@@ -29,19 +29,19 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/rtnetlink.h>
-#include <linux/inetdevice.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/device.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/ethtool.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/inetdevice.h>
+#include <linaos/io.h>
 
 #include <asm/irq.h>
 #include <asm/byteorder.h>

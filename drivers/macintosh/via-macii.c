@@ -11,7 +11,7 @@
  * Rewrite for Unified ADB by Joshua M. Thompson (funaho@jurai.org)
  *
  * 1999-08-02 (jmt) - Initial rewrite for Unified ADB.
- * 2000-03-29 Tony Mantler <tonym@mac.linux-m68k.org>
+ * 2000-03-29 Tony Mantler <tonym@mac.linaos-m68k.org>
  *            - Big overhaul, should actually work now.
  * 2006-12-31 Finn Thain - Another overhaul.
  *
@@ -25,13 +25,13 @@
  */
 
 #include <stdarg.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/adb.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/adb.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
 #include <asm/macintosh.h>
 #include <asm/macints.h>
 #include <asm/mac_via.h>

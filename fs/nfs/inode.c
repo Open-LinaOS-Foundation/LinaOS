@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/nfs/inode.c
+ *  linaos/fs/nfs/inode.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -14,33 +14,33 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/metrics.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/lockd/bind.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/vfs.h>
-#include <linux/inet.h>
-#include <linux/nfs_xdr.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/freezer.h>
-#include <linux/uaccess.h>
-#include <linux/iversion.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/sched/signal.h>
+#include <linaos/time.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/stat.h>
+#include <linaos/errno.h>
+#include <linaos/unistd.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/sunrpc/stats.h>
+#include <linaos/sunrpc/metrics.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_mount.h>
+#include <linaos/nfs4_mount.h>
+#include <linaos/lockd/bind.h>
+#include <linaos/seq_file.h>
+#include <linaos/mount.h>
+#include <linaos/vfs.h>
+#include <linaos/inet.h>
+#include <linaos/nfs_xdr.h>
+#include <linaos/slab.h>
+#include <linaos/compat.h>
+#include <linaos/freezer.h>
+#include <linaos/uaccess.h>
+#include <linaos/iversion.h>
 
 #include "nfs4_fs.h"
 #include "callback.h"

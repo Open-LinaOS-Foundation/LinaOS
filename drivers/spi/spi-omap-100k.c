@@ -8,20 +8,20 @@
  * Author:      Samuel Ortiz <samuel.ortiz@nokia.com> and
  *              Juha Yrj�l� <juha.yrjola@nokia.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
-#include <linux/spi/spi.h>
+#include <linaos/spi/spi.h>
 
 #define OMAP1_SPI100K_MAX_FREQ          48000000
 

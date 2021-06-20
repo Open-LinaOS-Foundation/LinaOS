@@ -12,7 +12,7 @@
 #ifndef _LINUX_RNDIS_H
 #define _LINUX_RNDIS_H
 
-#include <linux/rndis.h>
+#include <linaos/rndis.h>
 #include "u_ether.h"
 #include "ndis.h"
 

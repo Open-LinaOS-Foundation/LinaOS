@@ -9,7 +9,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/asm.h>
 
 #define JUMP_LABEL_NOP_SIZE 4

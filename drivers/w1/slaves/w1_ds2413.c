@@ -6,15 +6,15 @@
  * Copyright (c) 2013 Mariusz Bialonczyk <manio@skyboo.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
 
-#include <linux/w1.h>
+#include <linaos/w1.h>
 
 #define W1_FAMILY_DS2413	0x3A
 

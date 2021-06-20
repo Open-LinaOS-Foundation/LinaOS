@@ -8,14 +8,14 @@
  * Based on wm8350.c
  */
 
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/lp3971.h>
-#include <linux/slab.h>
+#include <linaos/bug.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/lp3971.h>
+#include <linaos/slab.h>
 
 struct lp3971 {
 	struct device *dev;

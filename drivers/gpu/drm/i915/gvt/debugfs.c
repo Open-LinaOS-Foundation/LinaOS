@@ -20,8 +20,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/debugfs.h>
-#include <linux/list_sort.h>
+#include <linaos/debugfs.h>
+#include <linaos/list_sort.h>
 #include "i915_drv.h"
 #include "gvt.h"
 

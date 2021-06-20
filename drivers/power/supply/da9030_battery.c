@@ -6,20 +6,20 @@
  * 	Mike Rapoport <mike@compulab.co.il>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/mfd/da903x.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/mfd/da903x.h>
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/notifier.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/notifier.h>
 
 #define DA9030_FAULT_LOG		0x0a
 #define DA9030_FAULT_LOG_OVER_TEMP	(1 << 7)

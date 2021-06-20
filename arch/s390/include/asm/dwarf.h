@@ -20,7 +20,7 @@
 	/*
 	 * Emit CFI data in .debug_frame sections and not in .eh_frame
 	 * sections.  The .eh_frame CFI is used for runtime unwind
-	 * information that is not being used.  Hence, vmlinux.lds.S
+	 * information that is not being used.  Hence, vmlinaos.lds.S
 	 * can discard the .eh_frame sections.
 	 */
 	.cfi_sections .debug_frame

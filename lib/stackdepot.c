@@ -19,19 +19,19 @@
  * Based on code by Dmitry Chernenkov.
  */
 
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
-#include <linux/jhash.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/percpu.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/stacktrace.h>
-#include <linux/stackdepot.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/memblock.h>
+#include <linaos/gfp.h>
+#include <linaos/interrupt.h>
+#include <linaos/jhash.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/percpu.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/stacktrace.h>
+#include <linaos/stackdepot.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/memblock.h>
 
 #define DEPOT_STACK_BITS (sizeof(depot_stack_handle_t) * 8)
 

@@ -61,7 +61,7 @@
 		heartbeat-led {
 			label = "Heartbeat";
 			gpios = <&gpio2 31 0>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

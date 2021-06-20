@@ -5,12 +5,12 @@
  * Copyright (c) 2009 Rafael J. Wysocki <rjw@sisk.pl>, Novell Inc.
  * Copyright (C) 2010 Alan Stern <stern@rowland.harvard.edu>
  */
-#include <linux/sched/mm.h>
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
-#include <linux/export.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
+#include <linaos/sched/mm.h>
+#include <linaos/ktime.h>
+#include <linaos/hrtimer.h>
+#include <linaos/export.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_wakeirq.h>
 #include <trace/events/rpm.h>
 
 #include "../base.h"

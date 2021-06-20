@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for the Linux/nds32 kernel FPU emulation.
+# Makefile for the LinaOS/nds32 kernel FPU emulation.
 #
 
 obj-y	:= fpuemu.o \

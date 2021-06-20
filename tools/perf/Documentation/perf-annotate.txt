@@ -52,11 +52,11 @@ OPTIONS
         Dump raw trace in ASCII.
 
 -k::
---vmlinux=<file>::
-        vmlinux pathname.
+--vmlinaos=<file>::
+        vmlinaos pathname.
 
---ignore-vmlinux::
-	Ignore vmlinux files.
+--ignore-vmlinaos::
+	Ignore vmlinaos files.
 
 -m::
 --modules::

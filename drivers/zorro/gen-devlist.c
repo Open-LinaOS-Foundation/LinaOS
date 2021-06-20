@@ -2,7 +2,7 @@
 /*
  *	Generate devlist.h from the Zorro ID file.
  *
- *	(c) 2000 Geert Uytterhoeven <geert@linux-m68k.org>
+ *	(c) 2000 Geert Uytterhoeven <geert@linaos-m68k.org>
  *
  *	Based on the PCI version:
  *

@@ -8,7 +8,7 @@ The FS-Cache system provides an API by which actual caches can be supplied to
 FS-Cache for it to then serve out to network filesystems and other interested
 parties.
 
-This API is declared in <linux/fscache-cache.h>.
+This API is declared in <linaos/fscache-cache.h>.
 
 
 Initialising and Registering a Cache
@@ -83,7 +83,7 @@ The cache methods are executed one of two contexts:
 In either case, this may not be an appropriate context in which to access the
 cache.
 
-The calling process's fsuid, fsgid and SELinux security identities may need to
+The calling process's fsuid, fsgid and SELinaOS security identities may need to
 be masqueraded for the duration of the cache driver's access to the cache.
 This is left to the cache to handle; FS-Cache makes no effort in this regard.
 

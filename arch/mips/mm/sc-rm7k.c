@@ -2,14 +2,14 @@
 /*
  * sc-rm7k.c: RM7000 cache management functions.
  *
- * Copyright (C) 1997, 2001, 2003, 2004 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1997, 2001, 2003, 2004 Ralf Baechle (ralf@linaos-mips.org)
  */
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/bitops.h>
 
 #include <asm/addrspace.h>
 #include <asm/bcache.h>

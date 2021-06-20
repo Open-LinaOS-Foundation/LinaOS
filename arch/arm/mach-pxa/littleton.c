@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/littleton.c
+ *  linaos/arch/arm/mach-pxa/littleton.c
  *
  *  Support for the Marvell Littleton Development Platform.
  *
@@ -12,20 +12,20 @@
  *              eric miao <eric.miao@marvell.com>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/gpio/machine.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/smc91x.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/mfd/da903x.h>
-#include <linux/platform_data/max732x.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/pxa2xx_spi.h>
+#include <linaos/smc91x.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
+#include <linaos/mfd/da903x.h>
+#include <linaos/platform_data/max732x.h>
+#include <linaos/platform_data/i2c-pxa.h>
 
 #include <asm/types.h>
 #include <asm/setup.h>
@@ -40,11 +40,11 @@
 
 #include "pxa300.h"
 #include "devices.h"
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/keypad-pxa27x.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
 #include "littleton.h"
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <linaos/platform_data/mtd-nand-pxa3xx.h>
 
 #include "generic.h"
 

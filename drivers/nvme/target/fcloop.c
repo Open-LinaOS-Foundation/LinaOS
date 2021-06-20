@@ -3,14 +3,14 @@
  * Copyright (c) 2016 Avago Technologies.  All rights reserved.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/parser.h>
+#include <linaos/module.h>
+#include <linaos/parser.h>
 #include <uapi/scsi/fc/fc_fs.h>
 
 #include "../host/nvme.h"
 #include "../target/nvmet.h"
-#include <linux/nvme-fc-driver.h>
-#include <linux/nvme-fc.h>
+#include <linaos/nvme-fc-driver.h>
+#include <linaos/nvme-fc.h>
 
 
 enum {

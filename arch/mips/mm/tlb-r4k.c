@@ -8,13 +8,13 @@
  * Carsten Langgaard, carstenl@mips.com
  * Copyright (C) 2002 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/cpu_pm.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/export.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/export.h>
 
 #include <asm/cpu.h>
 #include <asm/cpu-type.h>

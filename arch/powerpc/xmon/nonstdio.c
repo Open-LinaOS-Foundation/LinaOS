@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 1996-2005 Paul Mackerras.
  */
-#include <linux/string.h>
+#include <linaos/string.h>
 #include <asm/udbg.h>
 #include <asm/time.h>
 #include "nonstdio.h"

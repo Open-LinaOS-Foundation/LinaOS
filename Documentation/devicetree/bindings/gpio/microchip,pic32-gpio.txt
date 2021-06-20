@@ -43,7 +43,7 @@ keys {
 
 	button@sw1 {
 		label = "ESC";
-		linux,code = <1>;
+		linaos,code = <1>;
 		gpios = <&gpio0 12 0>;
 	};
 };

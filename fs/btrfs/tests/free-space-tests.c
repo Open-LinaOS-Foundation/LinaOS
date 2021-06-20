@@ -3,7 +3,7 @@
  * Copyright (C) 2013 Fusion IO.  All rights reserved.
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "btrfs-tests.h"
 #include "../ctree.h"
 #include "../disk-io.h"

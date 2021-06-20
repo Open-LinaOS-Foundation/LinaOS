@@ -2,7 +2,7 @@
 #ifndef _LINUX_SCHED_SMT_H
 #define _LINUX_SCHED_SMT_H
 
-#include <linux/static_key.h>
+#include <linaos/static_key.h>
 
 #ifdef CONFIG_SCHED_SMT
 extern struct static_key_false sched_smt_present;

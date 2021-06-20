@@ -2,10 +2,10 @@
 /*
  * Copyright (C) 2014 Davidlohr Bueso.
  */
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/mm.h>
-#include <linux/vmacache.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task.h>
+#include <linaos/mm.h>
+#include <linaos/vmacache.h>
 
 /*
  * Hash based on the pmd of addr if configured with MMU, which provides a good

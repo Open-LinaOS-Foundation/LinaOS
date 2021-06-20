@@ -14,10 +14,10 @@
 #define KMSG_COMPONENT "tape"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/bio.h>
-#include <linux/timer.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/bio.h>
+#include <linaos/timer.h>
 
 #include <asm/types.h>
 #include <asm/idals.h>

@@ -8,13 +8,13 @@
  * Author: Gary R Hook <gary.hook@amd.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/des.h>
-#include <linux/ccp.h>
+#include <linaos/ccp.h>
 
 #include "ccp-dev.h"
 

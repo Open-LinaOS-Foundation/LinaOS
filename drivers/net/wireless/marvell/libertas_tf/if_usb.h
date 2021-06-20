@@ -3,8 +3,8 @@
  *  Copyright (C) 2008, cozybit Inc.
  *  Copyright (C) 2003-2006, Marvell International Ltd.
  */
-#include <linux/wait.h>
-#include <linux/timer.h>
+#include <linaos/wait.h>
+#include <linaos/timer.h>
 
 struct lbtf_private;
 

@@ -1,9 +1,9 @@
 /*
- * linux/arch/arm/lib/lib1funcs.S: Optimized ARM division routines
+ * linaos/arch/arm/lib/lib1funcs.S: Optimized ARM division routines
  *
  * Author: Nicolas Pitre <nico@fluxnic.net>
  *   - contributed to gcc-3.4 on Sep 30, 2003
- *   - adapted for the Linux kernel on Oct 2, 2003
+ *   - adapted for the LinaOS kernel on Oct 2, 2003
  */
 
 /* Copyright 1995, 1996, 1998, 1999, 2000, 2003 Free Software Foundation, Inc.
@@ -33,7 +33,7 @@ the Free Software Foundation, 59 Temple Place - Suite 330,
 Boston, MA 02111-1307, USA.  */
 
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/unwind.h>
 

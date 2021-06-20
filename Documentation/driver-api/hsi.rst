@@ -37,10 +37,10 @@ cellular die and CA for signals going the other way around.
     |            |                                 |               |
     +------------+                                 +---------------+
 
-HSI Subsystem in Linux
+HSI Subsystem in LinaOS
 -------------------------
 
-In the Linux kernel the hsi subsystem is supposed to be used for HSI devices.
+In the LinaOS kernel the hsi subsystem is supposed to be used for HSI devices.
 The hsi subsystem contains drivers for hsi controllers including support for
 multi-port controllers and provides a generic API for using the HSI ports.
 
@@ -80,7 +80,7 @@ HSC_GET_TX
 The kernel HSI API
 ------------------
 
-.. kernel-doc:: include/linux/hsi/hsi.h
+.. kernel-doc:: include/linaos/hsi/hsi.h
    :internal:
 
 .. kernel-doc:: drivers/hsi/hsi_core.c

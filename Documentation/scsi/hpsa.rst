@@ -108,7 +108,7 @@ HPSA specific ioctls
   For compatibility with applications written for the cciss driver, many, but
   not all of the ioctls supported by the cciss driver are also supported by the
   hpsa driver.  The data structures used by these are described in
-  include/linux/cciss_ioctl.h
+  include/linaos/cciss_ioctl.h
 
   CCISS_DEREGDISK, CCISS_REGNEWDISK, CCISS_REGNEWD
 	The above three ioctls all do exactly the same thing, which is to cause the driver

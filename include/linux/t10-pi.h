@@ -2,8 +2,8 @@
 #ifndef _LINUX_T10_PI_H
 #define _LINUX_T10_PI_H
 
-#include <linux/types.h>
-#include <linux/blkdev.h>
+#include <linaos/types.h>
+#include <linaos/blkdev.h>
 
 /*
  * A T10 PI-capable target device can be formatted with different

@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/of_device.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/kthread.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/of_device.h>
 
 enum ams_irq {
 	AMS_IRQ_FREEFALL = 0x01,

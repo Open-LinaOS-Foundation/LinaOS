@@ -9,8 +9,8 @@
 
 #include "main.h"
 
-#include <linux/netlink.h>
-#include <linux/types.h>
+#include <linaos/netlink.h>
+#include <linaos/types.h>
 #include <net/genetlink.h>
 
 void batadv_netlink_register(void);

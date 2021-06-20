@@ -13,14 +13,14 @@
  *   SiFive FU540-C000 v1.0
  *   https://static.dev.sifive.com/FU540-C000-v1.0.pdf
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 
 #include "sf-pdma.h"
 

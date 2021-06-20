@@ -4,7 +4,7 @@
  *
  * Copyright (c) 2005 Pete Zaitcev <zaitcev@redhat.com>
  * Copyright (c) 1999-2002 Matthew Dharm (mdharm-usb@one-eyed-alien.net)
- * Copyright (c) 1999 Michael Gee (michael@linuxspecific.com)
+ * Copyright (c) 1999 Michael Gee (michael@linaosspecific.com)
  */
 
 #ifndef __LINUX_USB_USUAL_H
@@ -12,7 +12,7 @@
 
 
 /* We should do this for cleanliness... But other usb_foo.h do not do this. */
-/* #include <linux/usb.h> */
+/* #include <linaos/usb.h> */
 
 /*
  * The flags field, which we store in usb_device_id.driver_info.
@@ -93,7 +93,7 @@
 enum { US_DO_ALL_FLAGS };
 #undef US_FLAG
 
-#include <linux/usb/storage.h>
+#include <linaos/usb/storage.h>
 
 extern int usb_usual_ignore_device(struct usb_interface *intf);
 extern const struct usb_device_id usb_storage_usb_ids[];

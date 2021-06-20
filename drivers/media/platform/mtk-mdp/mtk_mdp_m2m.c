@@ -5,12 +5,12 @@
  *         Ming Hsiu Tsai <minghsiu.tsai@mediatek.com>
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-ioctl.h>
 

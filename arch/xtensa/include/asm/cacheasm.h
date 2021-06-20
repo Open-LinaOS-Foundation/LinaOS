@@ -10,7 +10,7 @@
 
 #include <asm/cache.h>
 #include <asm/asmmacro.h>
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 /*
  * Define cache functions as macros here so that they can be used

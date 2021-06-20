@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Copyright 2006 IBM Corporation
- * IUCV protocol stack for Linux on zSeries
+ * IUCV protocol stack for LinaOS on zSeries
  * Version 1.0
  * Author(s): Jennifer Hunt <jenhunt@us.ibm.com>
  *
@@ -12,9 +12,9 @@
 
 #include <asm/types.h>
 #include <asm/byteorder.h>
-#include <linux/list.h>
-#include <linux/poll.h>
-#include <linux/socket.h>
+#include <linaos/list.h>
+#include <linaos/poll.h>
+#include <linaos/socket.h>
 #include <net/iucv/iucv.h>
 
 #ifndef AF_IUCV

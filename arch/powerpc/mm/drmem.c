@@ -7,10 +7,10 @@
 
 #define pr_fmt(fmt) "drmem: " fmt
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/memblock.h>
 #include <asm/prom.h>
 #include <asm/drmem.h>
 
@@ -291,7 +291,7 @@ int __init walk_drmem_lmbs_early(unsigned long node, void *data,
 
 	drmem_info->lmb_size = dt_mem_next_cell(dt_root_size_cells, &prop);
 
-	usm = of_get_flat_dt_prop(node, "linux,drconf-usable-memory", &len);
+	usm = of_get_flat_dt_prop(node, "linaos,drconf-usable-memory", &len);
 
 	prop = of_get_flat_dt_prop(node, "ibm,dynamic-memory", &len);
 	if (prop) {
@@ -328,7 +328,7 @@ static int init_drmem_lmb_size(struct device_node *dn)
 }
 
 /*
- * Returns the property linux,drconf-usable-memory if
+ * Returns the property linaos,drconf-usable-memory if
  * it exists (the property exists only in kexec/kdump kernels,
  * added by kexec-tools)
  */
@@ -337,7 +337,7 @@ static const __be32 *of_get_usable_memory(struct device_node *dn)
 	const __be32 *prop;
 	u32 len;
 
-	prop = of_get_property(dn, "linux,drconf-usable-memory", &len);
+	prop = of_get_property(dn, "linaos,drconf-usable-memory", &len);
 	if (!prop || len < sizeof(unsigned int))
 		return NULL;
 

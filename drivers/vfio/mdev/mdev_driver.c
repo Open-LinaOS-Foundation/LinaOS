@@ -7,9 +7,9 @@
  *             Kirti Wankhede <kwankhede@nvidia.com>
  */
 
-#include <linux/device.h>
-#include <linux/iommu.h>
-#include <linux/mdev.h>
+#include <linaos/device.h>
+#include <linaos/iommu.h>
+#include <linaos/mdev.h>
 
 #include "mdev_private.h"
 

@@ -5,14 +5,14 @@
 //  Copyright (C) 2009-2010 Samsung Electronics
 //  MyungJoo Ham <myungjoo.ham@samsung.com>
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/mfd/max8998.h>
-#include <linux/mfd/max8998-private.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/mfd/max8998.h>
+#include <linaos/mfd/max8998-private.h>
 
 struct max8998_battery_data {
 	struct device *dev;

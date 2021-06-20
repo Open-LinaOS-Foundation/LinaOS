@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Common LSM logging functions
- * Heavily borrowed from selinux/avc.h
+ * Heavily borrowed from selinaos/avc.h
  *
  * Author : Etienne BASSET  <etienne.basset@ensta.org>
  *
@@ -11,17 +11,17 @@
 #ifndef _LSM_COMMON_LOGGING_
 #define _LSM_COMMON_LOGGING_
 
-#include <linux/stddef.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/kdev_t.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/audit.h>
-#include <linux/in6.h>
-#include <linux/path.h>
-#include <linux/key.h>
-#include <linux/skbuff.h>
+#include <linaos/stddef.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/kdev_t.h>
+#include <linaos/spinlock.h>
+#include <linaos/init.h>
+#include <linaos/audit.h>
+#include <linaos/in6.h>
+#include <linaos/path.h>
+#include <linaos/key.h>
+#include <linaos/skbuff.h>
 #include <rdma/ib_verbs.h>
 
 struct lsm_network_audit {
@@ -103,7 +103,7 @@ struct common_audit_data {
 		struct smack_audit_data *smack_audit_data;
 #endif
 #ifdef CONFIG_SECURITY_SELINUX
-		struct selinux_audit_data *selinux_audit_data;
+		struct selinaos_audit_data *selinaos_audit_data;
 #endif
 #ifdef CONFIG_SECURITY_APPARMOR
 		struct apparmor_audit_data *apparmor_audit_data;

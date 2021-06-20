@@ -7,16 +7,16 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/wm8400-private.h>
-#include <linux/mfd/wm8400-audio.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/bug.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/wm8400-private.h>
+#include <linaos/mfd/wm8400-audio.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 static bool wm8400_volatile(struct device *dev, unsigned int reg)
 {

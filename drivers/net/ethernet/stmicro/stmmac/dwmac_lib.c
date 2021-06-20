@@ -6,8 +6,8 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/io.h>
-#include <linux/iopoll.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
 #include "common.h"
 #include "dwmac_dma.h"
 

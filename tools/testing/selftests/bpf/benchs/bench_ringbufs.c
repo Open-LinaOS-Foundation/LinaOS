@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2020 Facebook */
 #include <asm/barrier.h>
-#include <linux/perf_event.h>
-#include <linux/ring_buffer.h>
+#include <linaos/perf_event.h>
+#include <linaos/ring_buffer.h>
 #include <sys/epoll.h>
 #include <sys/mman.h>
 #include <argp.h>

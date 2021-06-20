@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/sysv/itree.c
+ *  linaos/fs/sysv/itree.c
  *
  *  Handling of indirect blocks' trees.
  *  AV, Sep--Dec 2000
  */
 
-#include <linux/buffer_head.h>
-#include <linux/mount.h>
-#include <linux/string.h>
+#include <linaos/buffer_head.h>
+#include <linaos/mount.h>
+#include <linaos/string.h>
 #include "sysv.h"
 
 enum {DIRECT = 10, DEPTH = 4};	/* Have triple indirect */

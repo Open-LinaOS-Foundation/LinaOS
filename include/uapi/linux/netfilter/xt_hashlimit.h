@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_XT_HASHLIMIT_H
 #define _UAPI_XT_HASHLIMIT_H
 
-#include <linux/types.h>
-#include <linux/limits.h>
-#include <linux/if.h>
+#include <linaos/types.h>
+#include <linaos/limits.h>
+#include <linaos/if.h>
 
 /* timings are in milliseconds. */
 #define XT_HASHLIMIT_SCALE 10000

@@ -10,9 +10,9 @@
 #ifndef LINUX_NUBUS_H
 #define LINUX_NUBUS_H
 
-#include <linux/device.h>
+#include <linaos/device.h>
 #include <asm/nubus.h>
-#include <uapi/linux/nubus.h>
+#include <uapi/linaos/nubus.h>
 
 struct proc_dir_entry;
 struct seq_file;

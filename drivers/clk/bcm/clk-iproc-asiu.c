@@ -11,14 +11,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/clkdev.h>
-#include <linux/of_address.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/clkdev.h>
+#include <linaos/of_address.h>
+#include <linaos/delay.h>
 
 #include "clk-iproc.h"
 

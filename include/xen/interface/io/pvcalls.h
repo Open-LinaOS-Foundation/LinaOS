@@ -1,7 +1,7 @@
 #ifndef __XEN_PUBLIC_IO_XEN_PVCALLS_H__
 #define __XEN_PUBLIC_IO_XEN_PVCALLS_H__
 
-#include <linux/net.h>
+#include <linaos/net.h>
 #include <xen/interface/io/ring.h>
 #include <xen/interface/grant_table.h>
 

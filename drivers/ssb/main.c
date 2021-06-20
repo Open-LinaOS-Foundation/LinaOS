@@ -10,17 +10,17 @@
 
 #include "ssb_private.h"
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_regs.h>
-#include <linux/ssb/ssb_driver_gige.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/ssb/ssb.h>
+#include <linaos/ssb/ssb_regs.h>
+#include <linaos/ssb/ssb_driver_gige.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pci.h>
+#include <linaos/mmc/sdio_func.h>
+#include <linaos/slab.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

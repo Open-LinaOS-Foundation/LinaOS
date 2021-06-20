@@ -21,26 +21,26 @@
 
 /*****************************************************************************/
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/signal.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/usb.h>
-#include <linux/usbdevice_fs.h>
-#include <linux/usb/hcd.h>	/* for usbcore internals */
-#include <linux/cdev.h>
-#include <linux/notifier.h>
-#include <linux/security.h>
-#include <linux/user_namespace.h>
-#include <linux/scatterlist.h>
-#include <linux/uaccess.h>
-#include <linux/dma-mapping.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/signal.h>
+#include <linaos/poll.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/usb.h>
+#include <linaos/usbdevice_fs.h>
+#include <linaos/usb/hcd.h>	/* for usbcore internals */
+#include <linaos/cdev.h>
+#include <linaos/notifier.h>
+#include <linaos/security.h>
+#include <linaos/user_namespace.h>
+#include <linaos/scatterlist.h>
+#include <linaos/uaccess.h>
+#include <linaos/dma-mapping.h>
 #include <asm/byteorder.h>
-#include <linux/moduleparam.h>
+#include <linaos/moduleparam.h>
 
 #include "usb.h"
 

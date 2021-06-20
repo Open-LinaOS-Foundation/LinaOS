@@ -8,7 +8,7 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/stmmac.h>
+#include <linaos/stmmac.h>
 #include "common.h"
 #include "descs_com.h"
 

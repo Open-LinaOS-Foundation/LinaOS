@@ -4,15 +4,15 @@
  *
  * Copyright (c) 2019 Paulo Alcantara <palcantara@suse.de>
  */
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/root_dev.h>
-#include <linux/kernel.h>
-#include <linux/in.h>
-#include <linux/inet.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
+#include <linaos/ctype.h>
+#include <linaos/string.h>
+#include <linaos/root_dev.h>
+#include <linaos/kernel.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
 #include <net/ipconfig.h>
 
 #define DEFAULT_MNT_OPTS \

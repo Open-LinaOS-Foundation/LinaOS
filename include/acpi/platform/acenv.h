@@ -159,8 +159,8 @@
 
 #endif
 
-#if defined(_LINUX) || defined(__linux__)
-#include <acpi/platform/aclinux.h>
+#if defined(_LINUX) || defined(__linaos__)
+#include <acpi/platform/aclinaos.h>
 
 #elif defined(_APPLE) || defined(__APPLE__)
 #include "acmacosx.h"

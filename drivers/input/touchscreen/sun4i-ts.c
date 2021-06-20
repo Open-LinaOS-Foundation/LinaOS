@@ -27,17 +27,17 @@
  * than the one in the A10 User Manual v.1.5)
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/thermal.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/hwmon.h>
+#include <linaos/thermal.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #define TP_CTRL0		0x00
 #define TP_CTRL1		0x04

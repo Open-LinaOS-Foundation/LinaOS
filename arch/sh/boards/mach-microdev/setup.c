@@ -8,14 +8,14 @@
  *
  * SuperH SH4-202 MicroDev board support.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/ioport.h>
 #include <video/s1d13xxxfb.h>
 #include <mach/microdev.h>
 #include <asm/io.h>
 #include <asm/machvec.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 static struct resource smc91x_resources[] = {
 	[0] = {

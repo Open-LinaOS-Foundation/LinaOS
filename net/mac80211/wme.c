@@ -4,11 +4,11 @@
  * Copyright 2013-2014  Intel Mobile Communications GmbH
  */
 
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/module.h>
-#include <linux/if_arp.h>
-#include <linux/types.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/if_arp.h>
+#include <linaos/types.h>
 #include <net/ip.h>
 #include <net/pkt_sched.h>
 

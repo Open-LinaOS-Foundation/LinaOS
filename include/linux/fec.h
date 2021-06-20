@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* include/linux/fec.h
+/* include/linaos/fec.h
  *
  * Copyright (c) 2009 Orex Computed Radiography
  *   Baruch Siach <baruch@tkos.co.il>
@@ -11,7 +11,7 @@
 #ifndef __LINUX_FEC_H__
 #define __LINUX_FEC_H__
 
-#include <linux/phy.h>
+#include <linaos/phy.h>
 
 struct fec_platform_data {
 	phy_interface_t phy;

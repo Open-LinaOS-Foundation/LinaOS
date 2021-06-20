@@ -55,7 +55,7 @@ There are a few types of systems where video works after S3 resume:
 
 (5) radeon systems, where X can soft-boot your video card. You'll need
     a new enough X, and a plain text console (no vesafb or radeonfb). See
-    http://www.doesi.gmxhome.de/linux/tm800s3/s3.html for more information.
+    http://www.doesi.gmxhome.de/linaos/tm800s3/s3.html for more information.
     Alternatively, you should use vbetool (6) instead.
 
 (6) other radeon systems, where vbetool is enough to bring system back

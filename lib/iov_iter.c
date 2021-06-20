@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #include <crypto/hash.h>
-#include <linux/export.h>
-#include <linux/bvec.h>
-#include <linux/fault-inject-usercopy.h>
-#include <linux/uio.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/splice.h>
-#include <linux/compat.h>
+#include <linaos/export.h>
+#include <linaos/bvec.h>
+#include <linaos/fault-inject-usercopy.h>
+#include <linaos/uio.h>
+#include <linaos/pagemap.h>
+#include <linaos/highmem.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/splice.h>
+#include <linaos/compat.h>
 #include <net/checksum.h>
-#include <linux/scatterlist.h>
-#include <linux/instrumented.h>
+#include <linaos/scatterlist.h>
+#include <linaos/instrumented.h>
 
 #define PIPE_PARANOIA /* for now */
 
@@ -1975,7 +1975,7 @@ struct iovec *iovec_from_user(const struct iovec __user *uvec,
 
 	/*
 	 * SuS says "The readv() function *may* fail if the iovcnt argument was
-	 * less than or equal to 0, or greater than {IOV_MAX}.  Linux has
+	 * less than or equal to 0, or greater than {IOV_MAX}.  LinaOS has
 	 * traditionally returned zero for zero segments, so...
 	 */
 	if (nr_segs == 0)
@@ -2020,7 +2020,7 @@ ssize_t __import_iovec(int type, const struct iovec __user *uvec,
 	 * an element length is < 0 when cast to ssize_t or if the total length
 	 * would overflow the ssize_t return value of the system call.
 	 *
-	 * Linux caps all read/write calls to MAX_RW_COUNT, and avoids the
+	 * LinaOS caps all read/write calls to MAX_RW_COUNT, and avoids the
 	 * overflow case.
 	 */
 	for (seg = 0; seg < nr_segs; seg++) {

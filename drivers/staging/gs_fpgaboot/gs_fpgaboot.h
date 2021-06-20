@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 #define	MAX_STR	256
 

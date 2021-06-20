@@ -7,18 +7,18 @@
  *	  add static buffer allocation
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_graph.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <media/v4l2-fwnode.h>
 #include <media/v4l2-ioctl.h>
 #include <media/i2c/tvp514x.h>
 #include <media/v4l2-mediabus.h>
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 
 #include "vpif.h"
 #include "vpif_capture.h"

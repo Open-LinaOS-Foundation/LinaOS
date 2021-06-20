@@ -7,7 +7,7 @@
 
 #include "habanalabs.h"
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 static void hl_ctx_fini(struct hl_ctx *ctx)
 {

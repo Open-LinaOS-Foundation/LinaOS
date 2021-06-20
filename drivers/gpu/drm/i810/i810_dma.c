@@ -1,8 +1,8 @@
-/* i810_dma.c -- DMA support for the i810 -*- linux-c -*-
+/* i810_dma.c -- DMA support for the i810 -*- linaos-c -*-
  * Created: Mon Dec 13 01:50:01 1999 by jhartmann@precisioninsight.com
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -24,15 +24,15 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  *
- * Authors: Rickard E. (Rik) Faith <faith@valinux.com>
- *	    Jeff Hartmann <jhartmann@valinux.com>
+ * Authors: Rickard E. (Rik) Faith <faith@valinaos.com>
+ *	    Jeff Hartmann <jhartmann@valinaos.com>
  *          Keith Whitwell <keith@tungstengraphics.com>
  *
  */
 
-#include <linux/delay.h>
-#include <linux/mman.h>
-#include <linux/pci.h>
+#include <linaos/delay.h>
+#include <linaos/mman.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_agpsupport.h>
 #include <drm/drm_device.h>

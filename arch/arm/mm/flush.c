@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/flush.c
+ *  linaos/arch/arm/mm/flush.c
  *
  *  Copyright (C) 1995-2002 Russell King
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/highmem.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cachetype.h>
 #include <asm/highmem.h>
 #include <asm/smp_plat.h>
 #include <asm/tlbflush.h>
-#include <linux/hugetlb.h>
+#include <linaos/hugetlb.h>
 
 #include "mm.h"
 

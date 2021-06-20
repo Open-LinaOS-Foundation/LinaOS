@@ -3,7 +3,7 @@
 #define __PERF_STRFILTER_H
 /* General purpose glob matching filter */
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include <stdbool.h>
 
 /* A node of string filter */

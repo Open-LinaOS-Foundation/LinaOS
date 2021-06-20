@@ -8,8 +8,8 @@
  * Copyright 2009-2017 Canonical Ltd.
  */
 
-#include <linux/gfp.h>
-#include <linux/ptrace.h>
+#include <linaos/gfp.h>
+#include <linaos/ptrace.h>
 
 #include "include/audit.h"
 #include "include/capability.h"

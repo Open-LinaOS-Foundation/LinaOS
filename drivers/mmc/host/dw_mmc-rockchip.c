@@ -3,14 +3,14 @@
  * Copyright (c) 2014, Fuzhou Rockchip Electronics Co., Ltd
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/mmc/host.h>
-#include <linux/of_address.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/mmc/host.h>
+#include <linaos/of_address.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
 
 #include "dw_mmc.h"
 #include "dw_mmc-pltfm.h"

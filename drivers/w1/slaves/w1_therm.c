@@ -7,19 +7,19 @@
 
 #include <asm/types.h>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/hwmon.h>
-#include <linux/string.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/sched.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/hwmon.h>
+#include <linaos/string.h>
+#include <linaos/jiffies.h>
 
-#include <linux/w1.h>
+#include <linaos/w1.h>
 
 #define W1_THERM_DS18S20	0x10
 #define W1_THERM_DS1822		0x22

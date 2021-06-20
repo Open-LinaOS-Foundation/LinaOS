@@ -4,12 +4,12 @@
  *  Copyright (C) 2003-2004 Luis R. Rodriguez <mcgrof@ruslug.rutgers.edu>_
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/ktime.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/ktime.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 
 #include "prismcompat.h"

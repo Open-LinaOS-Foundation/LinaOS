@@ -5,7 +5,7 @@
  * Copyright © 2010  Luca Barbieri
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/alternative.h>
 
 /* if you want SMP support, implement these with real spinlocks */

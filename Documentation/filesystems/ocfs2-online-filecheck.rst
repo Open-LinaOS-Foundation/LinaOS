@@ -66,7 +66,7 @@ The output is like this::
     <INO> lists the inode numbers.
     <DONE> indicates whether the operation has been finished.
     <ERROR> says what kind of errors was found. For the detailed error numbers,
-    please refer to the file linux/fs/ocfs2/filecheck.h.
+    please refer to the file linaos/fs/ocfs2/filecheck.h.
 
 2. If you determine to fix this inode, do::
 

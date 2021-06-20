@@ -12,23 +12,23 @@
  * heartbeat requests after the watchdog device has been closed.
  */
 
-#include <linux/bitops.h>
-#include <linux/limits.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/watchdog.h>
-#include <linux/debugfs.h>
+#include <linaos/bitops.h>
+#include <linaos/limits.h>
+#include <linaos/kernel.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
+#include <linaos/pm.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
+#include <linaos/watchdog.h>
+#include <linaos/debugfs.h>
 
 #define WDOG_CONTROL_REG_OFFSET		    0x00
 #define WDOG_CONTROL_REG_WDT_EN_MASK	    0x01

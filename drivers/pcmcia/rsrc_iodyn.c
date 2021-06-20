@@ -9,9 +9,9 @@
  * (C) 1999		David A. Hinds
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
 
 #include <pcmcia/ss.h>
 #include <pcmcia/cistpl.h>

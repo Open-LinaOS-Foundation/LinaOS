@@ -2,7 +2,7 @@
 #ifndef _ASM_GENERIC_FLAT_H
 #define _ASM_GENERIC_FLAT_H
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 static inline int flat_get_addr_from_rp(u32 __user *rp, u32 relval, u32 flags,
 		u32 *addr)

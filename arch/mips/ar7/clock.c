@@ -5,15 +5,15 @@
  * Copyright (C) 2009 Florian Fainelli <florian@openwrt.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/gcd.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
+#include <linaos/delay.h>
+#include <linaos/gcd.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
 
 #include <asm/addrspace.h>
 #include <asm/mach-ar7/ar7.h>
@@ -402,7 +402,7 @@ static void __init tnetd7200_init_clocks(void)
 }
 
 /*
- * Linux clock API
+ * LinaOS clock API
  */
 int clk_enable(struct clk *clk)
 {

@@ -13,7 +13,7 @@
 #ifndef _HIDDEV_H
 #define _HIDDEV_H
 
-#include <uapi/linux/hiddev.h>
+#include <uapi/linaos/hiddev.h>
 
 
 /*

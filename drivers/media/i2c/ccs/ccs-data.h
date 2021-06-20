@@ -8,7 +8,7 @@
 #ifndef __CCS_DATA_H__
 #define __CCS_DATA_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct device;
 

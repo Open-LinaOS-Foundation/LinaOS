@@ -6,30 +6,30 @@
  * Copyright (C) 2012 Broadcom Corporation
  */
 
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/workqueue.h>
+#include <linaos/bitops.h>
+#include <linaos/bug.h>
+#include <linaos/clk.h>
+#include <linaos/compiler.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
+#include <linaos/usb.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/workqueue.h>
 
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_iudma.h>
@@ -263,7 +263,7 @@ struct bcm63xx_req {
 /**
  * struct bcm63xx_udc - Driver/hardware private context.
  * @lock: Spinlock to mediate access to this struct, and (most) HW regs.
- * @dev: Generic Linux device structure.
+ * @dev: Generic LinaOS device structure.
  * @pd: Platform data (board/port info).
  * @usbd_clk: Clock descriptor for the USB device block.
  * @usbh_clk: Clock descriptor for the USB host block.

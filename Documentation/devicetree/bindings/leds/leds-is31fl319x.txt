@@ -27,7 +27,7 @@ Required led sub-node properties:
 
 Optional led sub-node properties:
 - label : see Documentation/devicetree/bindings/leds/common.txt.
-- linux,default-trigger :
+- linaos,default-trigger :
 	see Documentation/devicetree/bindings/leds/common.txt.
 - led-max-microamp : (optional)
 	Valid values: 5000 - 40000, step by 5000 (rounded down)
@@ -56,6 +56,6 @@ fancy_leds: leds@65 {
 	green_power: led@5 {
 		label = "green:power";
 		reg = <5>;
-		linux,default-trigger = "default-on";
+		linaos,default-trigger = "default-on";
 	};
 };

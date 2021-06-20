@@ -1,21 +1,21 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/linux/mmc/host.h
+ *  linaos/include/linaos/mmc/host.h
  *
  *  Host driver specific definitions.
  */
 #ifndef LINUX_MMC_HOST_H
 #define LINUX_MMC_HOST_H
 
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/fault-inject.h>
+#include <linaos/sched.h>
+#include <linaos/device.h>
+#include <linaos/fault-inject.h>
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/pm.h>
-#include <linux/dma-direction.h>
-#include <linux/keyslot-manager.h>
+#include <linaos/mmc/core.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/pm.h>
+#include <linaos/dma-direction.h>
+#include <linaos/keyslot-manager.h>
 
 struct mmc_ios {
 	unsigned int	clock;			/* clock rate */

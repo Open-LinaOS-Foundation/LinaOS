@@ -3,7 +3,7 @@
 #ifndef __ASM_CSKY_SWITCH_TO_H
 #define __ASM_CSKY_SWITCH_TO_H
 
-#include <linux/thread_info.h>
+#include <linaos/thread_info.h>
 #ifdef CONFIG_CPU_HAS_FPU
 #include <abi/fpu.h>
 static inline void __switch_to_fpu(struct task_struct *prev,

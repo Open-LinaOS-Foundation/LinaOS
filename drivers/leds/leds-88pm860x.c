@@ -6,14 +6,14 @@
  *	Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
+#include <linaos/slab.h>
+#include <linaos/mfd/88pm860x.h>
+#include <linaos/module.h>
 
 #define LED_PWM_MASK		(0x1F)
 #define LED_CURRENT_MASK	(0x07 << 5)

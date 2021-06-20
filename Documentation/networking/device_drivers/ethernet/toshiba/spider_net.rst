@@ -11,7 +11,7 @@ Version of 7 June 2007
 Abstract
 ========
 This document sketches the structure of portions of the spidernet
-device driver in the Linux kernel tree. The spidernet is a gigabit
+device driver in the LinaOS kernel tree. The spidernet is a gigabit
 ethernet device built into the Toshiba southbridge commonly used
 in the SONY Playstation 3 and the IBM QS20 Cell blade.
 

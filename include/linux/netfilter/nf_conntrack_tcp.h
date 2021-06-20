@@ -2,7 +2,7 @@
 #ifndef _NF_CONNTRACK_TCP_H
 #define _NF_CONNTRACK_TCP_H
 
-#include <uapi/linux/netfilter/nf_conntrack_tcp.h>
+#include <uapi/linaos/netfilter/nf_conntrack_tcp.h>
 
 
 struct ip_ct_tcp_state {

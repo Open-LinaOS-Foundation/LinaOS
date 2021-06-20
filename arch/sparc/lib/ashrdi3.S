@@ -6,7 +6,7 @@
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/export.h>
 
 	.text

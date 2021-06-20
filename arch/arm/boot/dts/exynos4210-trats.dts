@@ -89,21 +89,21 @@
 
 		vol-down-key {
 			gpios = <&gpx2 1 GPIO_ACTIVE_LOW>;
-			linux,code = <114>;
+			linaos,code = <114>;
 			label = "volume down";
 			debounce-interval = <10>;
 		};
 
 		vol-up-key {
 			gpios = <&gpx2 0 GPIO_ACTIVE_LOW>;
-			linux,code = <115>;
+			linaos,code = <115>;
 			label = "volume up";
 			debounce-interval = <10>;
 		};
 
 		power-key {
 			gpios = <&gpx2 7 GPIO_ACTIVE_LOW>;
-			linux,code = <116>;
+			linaos,code = <116>;
 			label = "power";
 			debounce-interval = <10>;
 			wakeup-source;
@@ -111,7 +111,7 @@
 
 		ok-key {
 			gpios = <&gpx3 5 GPIO_ACTIVE_LOW>;
-			linux,code = <352>;
+			linaos,code = <352>;
 			label = "ok";
 			debounce-interval = <10>;
 		};

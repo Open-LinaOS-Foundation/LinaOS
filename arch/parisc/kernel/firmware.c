@@ -11,9 +11,9 @@
  *
  * Copyright 1999 SuSE GmbH Nuernberg (Philipp Rumpf, prumpf@tux.org)
  * Copyright 1999 The Puffin Group, (Alex deVries, David Kennedy)
- * Copyright 2003 Grant Grundler <grundler parisc-linux org>
- * Copyright 2003,2004 Ryan Bradetich <rbrad@parisc-linux.org>
- * Copyright 2004,2006 Thibaut VARENE <varenet@parisc-linux.org>
+ * Copyright 2003 Grant Grundler <grundler parisc-linaos org>
+ * Copyright 2003,2004 Ryan Bradetich <rbrad@parisc-linaos.org>
+ * Copyright 2004,2006 Thibaut VARENE <varenet@parisc-linaos.org>
  */
 
 /*	I think it would be in everyone's best interest to follow this
@@ -53,12 +53,12 @@
 
 #include <stdarg.h>
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/spinlock.h>
 
 #include <asm/page.h>
 #include <asm/pdc.h>
@@ -193,9 +193,9 @@ void set_firmware_width(void)
 
 #if !defined(BOOTLOADER)
 /**
- * pdc_emergency_unlock - Unlock the linux pdc lock
+ * pdc_emergency_unlock - Unlock the linaos pdc lock
  *
- * This call unlocks the linux pdc lock in case we need some PDC functions
+ * This call unlocks the linaos pdc lock in case we need some PDC functions
  * (like pdc_add_valid) during kernel stack dump.
  */
 void pdc_emergency_unlock(void)
@@ -957,7 +957,7 @@ int pdc_pci_irt(unsigned long num_entries, unsigned long hpa, void *tbl)
  * @hpa		token from PDC to indicate which PCI device
  * @pci_addr	configuration space address to read from
  *
- * Read PCI Configuration space *before* linux PCI subsystem is running.
+ * Read PCI Configuration space *before* linaos PCI subsystem is running.
  */
 unsigned int pdc_pci_config_read(void *hpa, unsigned long cfg_addr)
 {
@@ -981,7 +981,7 @@ unsigned int pdc_pci_config_read(void *hpa, unsigned long cfg_addr)
  * @pci_addr	configuration space address to write
  * @val		value we want in the 32-bit register
  *
- * Write PCI Configuration space *before* linux PCI subsystem is running.
+ * Write PCI Configuration space *before* linaos PCI subsystem is running.
  */
 void pdc_pci_config_write(void *hpa, unsigned long cfg_addr, unsigned int val)
 {
@@ -1182,7 +1182,7 @@ int pdc_soft_power_button(int sw_control)
 
 /*
  * pdc_io_reset - Hack to avoid overlapping range registers of Bridges devices.
- * Primarily a problem on T600 (which parisc-linux doesn't support) but
+ * Primarily a problem on T600 (which parisc-linaos doesn't support) but
  * who knows what other platform firmware might do with this OS "hook".
  */
 void pdc_io_reset(void)

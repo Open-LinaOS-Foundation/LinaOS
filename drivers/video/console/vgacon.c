@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/vgacon.c -- Low level VGA based console driver
+ *  linaos/drivers/video/vgacon.c -- Low level VGA based console driver
  *
  *	Created 28 Sep 1997 by Geert Uytterhoeven
  *
@@ -14,7 +14,7 @@
  *	<crosser@average.org>
  *
  *	Improved loadable font/UTF-8 support by H. Peter Anvin
- *	Feb-Sep 1995 <peter.anvin@linux.org>
+ *	Feb-Sep 1995 <peter.anvin@linaos.org>
  *
  *	Colour palette handling, by Simon Tatham
  *	17-Jun-95 <sgt20@cam.ac.uk>
@@ -33,21 +33,21 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/kd.h>
-#include <linux/slab.h>
-#include <linux/vt_kern.h>
-#include <linux/sched.h>
-#include <linux/selection.h>
-#include <linux/spinlock.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/screen_info.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/console.h>
+#include <linaos/string.h>
+#include <linaos/kd.h>
+#include <linaos/slab.h>
+#include <linaos/vt_kern.h>
+#include <linaos/sched.h>
+#include <linaos/selection.h>
+#include <linaos/spinlock.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/screen_info.h>
 #include <video/vga.h>
 #include <asm/io.h>
 

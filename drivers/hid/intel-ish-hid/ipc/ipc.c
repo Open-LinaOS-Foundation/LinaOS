@@ -5,10 +5,10 @@
  * Copyright (c) 2014-2016, Intel Corporation.
  */
 
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/jiffies.h>
 #include "client.h"
 #include "hw-ish.h"
 #include "hbm.h"

@@ -10,20 +10,20 @@
  *
  */
 
-#include <linux/clkdev.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clk-provider.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/tc6387xb.h>
-#include <linux/mfd/tc6393xb.h>
-#include <linux/mfd/t7l66xb.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/memblock.h>
+#include <linaos/clkdev.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/clk-provider.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/tc6387xb.h>
+#include <linaos/mfd/tc6393xb.h>
+#include <linaos/mfd/t7l66xb.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/memblock.h>
 
 #include <video/w100fb.h>
 
@@ -35,9 +35,9 @@
 #include <mach/eseries-gpio.h>
 #include "eseries-irq.h"
 #include <mach/audio.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <linaos/platform_data/video-pxafb.h>
 #include "udc.h"
-#include <linux/platform_data/irda-pxaficp.h>
+#include <linaos/platform_data/irda-pxaficp.h>
 
 #include "devices.h"
 #include "generic.h"

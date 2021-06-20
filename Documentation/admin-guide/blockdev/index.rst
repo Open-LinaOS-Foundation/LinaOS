@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ===========================
-The Linux RapidIO Subsystem
+The LinaOS RapidIO Subsystem
 ===========================
 
 .. toctree::

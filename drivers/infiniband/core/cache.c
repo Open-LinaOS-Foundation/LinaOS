@@ -33,11 +33,11 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/netdevice.h>
 #include <net/addrconf.h>
 
 #include <rdma/ib_cache.h>

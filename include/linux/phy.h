@@ -11,24 +11,24 @@
 #ifndef __PHY_H
 #define __PHY_H
 
-#include <linux/compiler.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/linkmode.h>
-#include <linux/netlink.h>
-#include <linux/mdio.h>
-#include <linux/mii.h>
-#include <linux/mii_timestamper.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/mod_devicetable.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/irqreturn.h>
-#include <linux/iopoll.h>
-#include <linux/refcount.h>
+#include <linaos/compiler.h>
+#include <linaos/spinlock.h>
+#include <linaos/ethtool.h>
+#include <linaos/linkmode.h>
+#include <linaos/netlink.h>
+#include <linaos/mdio.h>
+#include <linaos/mii.h>
+#include <linaos/mii_timestamper.h>
+#include <linaos/module.h>
+#include <linaos/timer.h>
+#include <linaos/workqueue.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/u64_stats_sync.h>
+#include <linaos/irqreturn.h>
+#include <linaos/iopoll.h>
+#include <linaos/refcount.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #define PHY_DEFAULT_FEATURES	(SUPPORTED_Autoneg | \
 				 SUPPORTED_TP | \

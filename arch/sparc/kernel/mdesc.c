@@ -3,22 +3,22 @@
  *
  * Copyright (C) 2007, 2008 David S. Miller <davem@davemloft.net>
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/log2.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/refcount.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/log2.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/miscdevice.h>
+#include <linaos/memblock.h>
+#include <linaos/export.h>
+#include <linaos/refcount.h>
 
 #include <asm/cpudata.h>
 #include <asm/hypervisor.h>
 #include <asm/mdesc.h>
 #include <asm/prom.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/oplib.h>
 #include <asm/smp.h>
 #include <asm/adi.h>

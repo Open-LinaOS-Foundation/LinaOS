@@ -11,8 +11,8 @@
 #ifndef __OTX_CPTPF_H
 #define __OTX_CPTPF_H
 
-#include <linux/types.h>
-#include <linux/device.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
 #include "otx_cptpf_ucode.h"
 
 /*

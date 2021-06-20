@@ -20,16 +20,16 @@
 #define DRV_VER_MIN	10
 #define DRV_VER_UPD	2
 
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
-#include <linux/rhashtable.h>
-#include <linux/crash_dump.h>
+#include <linaos/ethtool.h>
+#include <linaos/interrupt.h>
+#include <linaos/rhashtable.h>
+#include <linaos/crash_dump.h>
 #include <net/devlink.h>
 #include <net/dst_metadata.h>
 #include <net/xdp.h>
-#include <linux/dim.h>
+#include <linaos/dim.h>
 #ifdef CONFIG_TEE_BNXT_FW
-#include <linux/firmware/broadcom/tee_bnxt_fw.h>
+#include <linaos/firmware/broadcom/tee_bnxt_fw.h>
 #endif
 
 extern struct list_head bnxt_block_cb_list;

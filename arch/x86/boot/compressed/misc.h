@@ -17,17 +17,17 @@
 /* cpu_feature_enabled() cannot be used this early */
 #define USE_EARLY_PGTABLE_L5
 
-#include <linux/linkage.h>
-#include <linux/screen_info.h>
-#include <linux/elf.h>
-#include <linux/io.h>
+#include <linaos/linkage.h>
+#include <linaos/screen_info.h>
+#include <linaos/elf.h>
+#include <linaos/io.h>
 #include <asm/page.h>
 #include <asm/boot.h>
 #include <asm/bootparam.h>
 #include <asm/desc_defs.h>
 
 #define BOOT_CTYPE_H
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 
 #define BOOT_BOOT_H
 #include "../ctype.h"
@@ -38,7 +38,7 @@
 #define memptr unsigned
 #endif
 
-/* boot/compressed/vmlinux start and end markers */
+/* boot/compressed/vmlinaos start and end markers */
 extern char _head[], _end[];
 
 /* misc.c */

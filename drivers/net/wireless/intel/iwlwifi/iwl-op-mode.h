@@ -7,8 +7,8 @@
 #ifndef __iwl_op_mode_h__
 #define __iwl_op_mode_h__
 
-#include <linux/netdevice.h>
-#include <linux/debugfs.h>
+#include <linaos/netdevice.h>
+#include <linaos/debugfs.h>
 #include "iwl-dbg-tlv.h"
 
 struct iwl_op_mode;

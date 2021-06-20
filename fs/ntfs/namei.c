@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * namei.c - NTFS kernel directory inode operations. Part of the Linux-NTFS
+ * namei.c - NTFS kernel directory inode operations. Part of the LinaOS-NTFS
  *	     project.
  *
  * Copyright (c) 2001-2006 Anton Altaparmakov
  */
 
-#include <linux/dcache.h>
-#include <linux/exportfs.h>
-#include <linux/security.h>
-#include <linux/slab.h>
+#include <linaos/dcache.h>
+#include <linaos/exportfs.h>
+#include <linaos/security.h>
+#include <linaos/slab.h>
 
 #include "attrib.h"
 #include "debug.h"

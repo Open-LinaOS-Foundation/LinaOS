@@ -2,7 +2,7 @@ Device-tree bindings for I2C OPAL driver
 ----------------------------------------
 
 Most of the device node and properties layout is specific to the firmware and
-used by the firmware itself for configuring the port. From the linux
+used by the firmware itself for configuring the port. From the linaos
 perspective, the properties of use are "ibm,port-name" and "ibm,opal-id".
 
 Required properties:
@@ -12,7 +12,7 @@ Required properties:
 - ibm,opal-id: Refers to a specific bus and used to identify it when calling
 	       the relevant OPAL functions.
 - bus-frequency: Operating frequency of the i2c bus (in HZ). Informational for
-		 linux, used by the FW though.
+		 linaos, used by the FW though.
 
 Optional properties:
 - ibm,port-name: Firmware provides this name that uniquely identifies the i2c
@@ -33,5 +33,5 @@ i2c-bus@0 {
 	#address-cells = <0x1>;
 	phandle = <0x10000006>;
 	#size-cells = <0x0>;
-	linux,phandle = <0x10000006>;
+	linaos,phandle = <0x10000006>;
 };

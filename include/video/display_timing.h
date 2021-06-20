@@ -8,8 +8,8 @@
 #ifndef __LINUX_DISPLAY_TIMING_H
 #define __LINUX_DISPLAY_TIMING_H
 
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/types.h>
 
 enum display_flags {
 	DISPLAY_FLAGS_HSYNC_LOW		= BIT(0),

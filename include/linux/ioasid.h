@@ -2,8 +2,8 @@
 #ifndef __LINUX_IOASID_H
 #define __LINUX_IOASID_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
 
 #define INVALID_IOASID ((ioasid_t)-1)
 typedef unsigned int ioasid_t;

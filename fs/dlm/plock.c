@@ -3,12 +3,12 @@
  * Copyright (C) 2005-2008 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/poll.h>
-#include <linux/dlm.h>
-#include <linux/dlm_plock.h>
-#include <linux/slab.h>
+#include <linaos/fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/poll.h>
+#include <linaos/dlm.h>
+#include <linaos/dlm_plock.h>
+#include <linaos/slab.h>
 
 #include "dlm_internal.h"
 #include "lockspace.h"

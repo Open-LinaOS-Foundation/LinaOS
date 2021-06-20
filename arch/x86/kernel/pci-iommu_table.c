@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 #include <asm/iommu_table.h>
-#include <linux/string.h>
-#include <linux/kallsyms.h>
+#include <linaos/string.h>
+#include <linaos/kallsyms.h>
 
 static struct iommu_table_entry * __init
 find_dependents_of(struct iommu_table_entry *start,

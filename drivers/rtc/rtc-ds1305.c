@@ -4,16 +4,16 @@
  *
  * Copyright (C) 2008 David Brownell
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/workqueue.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/bcd.h>
+#include <linaos/slab.h>
+#include <linaos/rtc.h>
+#include <linaos/workqueue.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/ds1305.h>
-#include <linux/module.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/ds1305.h>
+#include <linaos/module.h>
 
 
 /*
@@ -73,7 +73,7 @@
 #define DS1305_STATUS		0x10
 /* status has just AEIx bits, mirrored as IRQFx */
 #define DS1305_TRICKLE		0x11
-/* trickle bits are defined in <linux/spi/ds1305.h> */
+/* trickle bits are defined in <linaos/spi/ds1305.h> */
 
 /* a bunch of NVRAM */
 #define DS1305_NVRAM_LEN	96		/* bytes of NVRAM */
@@ -98,7 +98,7 @@ struct ds1305 {
 /*----------------------------------------------------------------------*/
 
 /*
- * Utilities ...  tolerate 12-hour AM/PM notation in case of non-Linux
+ * Utilities ...  tolerate 12-hour AM/PM notation in case of non-LinaOS
  * software (like a bootloader) which may require it.
  */
 
@@ -670,7 +670,7 @@ static int ds1305_probe(struct spi_device *spi)
 		dev_dbg(&spi->dev, "ctrl %s: %3ph\n", "write", ds1305->ctrl);
 	}
 
-	/* see if non-Linux software set up AM/PM mode */
+	/* see if non-LinaOS software set up AM/PM mode */
 	addr = DS1305_HOUR;
 	status = spi_write_then_read(spi, &addr, sizeof(addr),
 				&value, sizeof(value));

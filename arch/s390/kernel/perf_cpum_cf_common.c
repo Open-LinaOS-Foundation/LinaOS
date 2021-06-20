@@ -3,17 +3,17 @@
  * CPU-Measurement Counter Facility Support - Common Layer
  *
  *  Copyright IBM Corp. 2019
- *  Author(s): Hendrik Brueckner <brueckner@linux.ibm.com>
+ *  Author(s): Hendrik Brueckner <brueckner@linaos.ibm.com>
  */
 #define KMSG_COMPONENT	"cpum_cf_common"
 #define pr_fmt(fmt)	KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/percpu.h>
+#include <linaos/notifier.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
 #include <asm/ctl_reg.h>
 #include <asm/irq.h>
 #include <asm/cpu_mcf.h>

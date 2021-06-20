@@ -6,7 +6,7 @@
  *
  * Author(s): Cornelia Huck <cornelia.huck@de.ibm.com>
  *	      Peter Oberparleiter <peter.oberparleiter@de.ibm.com>
- *	      Sebastian Ott <sebott@linux.vnet.ibm.com>
+ *	      Sebastian Ott <sebott@linaos.vnet.ibm.com>
  */
 
 #ifndef S390_ORB_H

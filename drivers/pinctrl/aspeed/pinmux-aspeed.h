@@ -4,7 +4,7 @@
 #ifndef ASPEED_PINMUX_H
 #define ASPEED_PINMUX_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 #include <stdbool.h>
 
 /*

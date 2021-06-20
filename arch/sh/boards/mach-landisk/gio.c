@@ -8,13 +8,13 @@
  *   Copylight (C) 2006 kogiidena
  *   Copylight (C) 2002 Atom Create Engineering Co., Ltd. *
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kdev_t.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kdev_t.h>
+#include <linaos/cdev.h>
+#include <linaos/fs.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <mach-landisk/mach/gio.h>
 #include <mach-landisk/mach/iodata_landisk.h>
 

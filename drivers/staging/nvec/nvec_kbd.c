@@ -8,11 +8,11 @@
  *           Marc Dietrich <marvin24@gmx.de>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
 
 #include "nvec-keytable.h"
 #include "nvec.h"

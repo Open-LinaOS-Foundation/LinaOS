@@ -8,10 +8,10 @@
 
 #define pr_fmt(fmt) "g_ffs: " fmt
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #if defined CONFIG_USB_FUNCTIONFS_ETH || defined CONFIG_USB_FUNCTIONFS_RNDIS
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 
 #  if defined USB_ETH_RNDIS
 #    undef USB_ETH_RNDIS
@@ -54,7 +54,7 @@ MODULE_DESCRIPTION(DRIVER_DESC);
 MODULE_AUTHOR("Michal Nazarewicz");
 MODULE_LICENSE("GPL");
 
-#define GFS_VENDOR_ID	0x1d6b	/* Linux Foundation */
+#define GFS_VENDOR_ID	0x1d6b	/* LinaOS Foundation */
 #define GFS_PRODUCT_ID	0x0105	/* FunctionFS Gadget */
 
 #define GFS_MAX_DEVS	10

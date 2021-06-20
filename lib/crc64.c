@@ -22,13 +22,13 @@
  * x^24 + x^23 + x^22 + x^21 + x^19 + x^17 + x^13 + x^12 + x^10 + x^9 +
  * x^7 + x^4 + x + 1
  *
- * Copyright 2018 SUSE Linux.
+ * Copyright 2018 SUSE LinaOS.
  *   Author: Coly Li <colyli@suse.de>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/crc64.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/crc64.h>
 #include "crc64table.h"
 
 MODULE_DESCRIPTION("CRC64 calculations");

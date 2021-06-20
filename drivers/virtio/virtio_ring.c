@@ -3,14 +3,14 @@
  *
  *  Copyright 2007 Rusty Russell IBM Corporation
  */
-#include <linux/virtio.h>
-#include <linux/virtio_ring.h>
-#include <linux/virtio_config.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/hrtimer.h>
-#include <linux/dma-mapping.h>
+#include <linaos/virtio.h>
+#include <linaos/virtio_ring.h>
+#include <linaos/virtio_config.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/hrtimer.h>
+#include <linaos/dma-mapping.h>
 #include <xen/xen.h>
 
 #ifdef DEBUG

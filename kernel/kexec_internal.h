@@ -2,7 +2,7 @@
 #ifndef LINUX_KEXEC_INTERNAL_H
 #define LINUX_KEXEC_INTERNAL_H
 
-#include <linux/kexec.h>
+#include <linaos/kexec.h>
 
 struct kimage *do_kimage_alloc_init(void);
 int sanity_check_segment_list(struct kimage *image);
@@ -16,7 +16,7 @@ int kimage_is_destination_range(struct kimage *image,
 extern struct mutex kexec_mutex;
 
 #ifdef CONFIG_KEXEC_FILE
-#include <linux/purgatory.h>
+#include <linaos/purgatory.h>
 void kimage_file_post_load_cleanup(struct kimage *image);
 extern char kexec_purgatory[];
 extern size_t kexec_purgatory_size;

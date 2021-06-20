@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/minix/file.c
+ *  linaos/fs/minix/file.c
  *
  *  Copyright (C) 1991, 1992 Linus Torvalds
  *

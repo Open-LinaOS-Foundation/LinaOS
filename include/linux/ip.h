@@ -13,8 +13,8 @@
 #ifndef _LINUX_IP_H
 #define _LINUX_IP_H
 
-#include <linux/skbuff.h>
-#include <uapi/linux/ip.h>
+#include <linaos/skbuff.h>
+#include <uapi/linaos/ip.h>
 
 static inline struct iphdr *ip_hdr(const struct sk_buff *skb)
 {

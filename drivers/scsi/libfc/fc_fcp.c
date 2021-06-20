@@ -7,15 +7,15 @@
  * Maintained at www.Open-FCoE.org
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/scatterlist.h>
-#include <linux/err.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/scatterlist.h>
+#include <linaos/err.h>
+#include <linaos/crc32.h>
+#include <linaos/slab.h>
 
 #include <scsi/scsi_tcq.h>
 #include <scsi/scsi.h>
@@ -1952,7 +1952,7 @@ EXPORT_SYMBOL(fc_queuecommand);
  * fc_io_compl() - Handle responses for completed commands
  * @fsp: The FCP packet that is complete
  *
- * Translates fcp_pkt errors to a Linux SCSI errors.
+ * Translates fcp_pkt errors to a LinaOS SCSI errors.
  * The fcp packet lock must be held when calling.
  */
 static void fc_io_compl(struct fc_fcp_pkt *fsp)

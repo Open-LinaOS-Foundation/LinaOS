@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) "bpf_jit: " fmt
 
-#include <linux/bitfield.h>
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
+#include <linaos/bitfield.h>
+#include <linaos/bpf.h>
+#include <linaos/filter.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
 
 #include <asm/byteorder.h>
 #include <asm/cacheflush.h>

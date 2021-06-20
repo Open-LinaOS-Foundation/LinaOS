@@ -55,7 +55,7 @@ Supported chips:
 
       http://www.summitmicro.com/prod_select/summary/SMM766B/SMM766B_2122.pdf
 
-Author: Guenter Roeck <linux@roeck-us.net>
+Author: Guenter Roeck <linaos@roeck-us.net>
 
 
 Module Parameters

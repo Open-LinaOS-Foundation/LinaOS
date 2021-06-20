@@ -4,7 +4,7 @@
  * Copyright © 2018 Intel Corporation
  */
 
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
 #include "i915_drv.h"
 #include "i915_perf.h"

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfs/super.c
+ *  linaos/fs/hfs/super.c
  *
  * Copyright (C) 1995-1997  Paul H. Hargrove
  * (C) 2003 Ardis Technologies <roman@ardistech.com>
@@ -12,16 +12,16 @@
  * Based on the minix file system code, (C) 1991, 1992 by Linus Torvalds
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/mount.h>
-#include <linux/init.h>
-#include <linux/nls.h>
-#include <linux/parser.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/vfs.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/mount.h>
+#include <linaos/init.h>
+#include <linaos/nls.h>
+#include <linaos/parser.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/vfs.h>
 
 #include "hfs_fs.h"
 #include "btree.h"
@@ -217,7 +217,7 @@ static inline int match_fourchar(substring_t *arg, u32 *result)
 /*
  * parse_options()
  *
- * adapted from linux/fs/msdos/inode.c written 1992,93 by Werner Almesberger
+ * adapted from linaos/fs/msdos/inode.c written 1992,93 by Werner Almesberger
  * This function is called by hfs_read_super() to parse the mount options.
  */
 static int parse_options(char *options, struct hfs_sb_info *hsb)

@@ -6,7 +6,7 @@
 #ifndef AES_CMAC_H
 #define AES_CMAC_H
 
-#include <linux/crypto.h>
+#include <linaos/crypto.h>
 #include <crypto/hash.h>
 
 struct crypto_shash *ieee80211_aes_cmac_key_setup(const u8 key[],

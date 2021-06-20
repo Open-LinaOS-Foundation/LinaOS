@@ -22,7 +22,7 @@
 #include <errno.h>
 #include <sys/stat.h>
 #include <sys/dir.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <string.h>
 #include <poll.h>
 #include <endian.h>
@@ -31,7 +31,7 @@
 #include <stdbool.h>
 #include <signal.h>
 #include <sys/ioctl.h>
-#include <linux/iio/buffer.h>
+#include <linaos/iio/buffer.h>
 #include "iio_utils.h"
 
 /**

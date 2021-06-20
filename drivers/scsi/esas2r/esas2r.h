@@ -1,9 +1,9 @@
 /*
- *  linux/drivers/scsi/esas2r/esas2r.h
+ *  linaos/drivers/scsi/esas2r/esas2r.h
  *      For use with ATTO ExpressSAS R6xx SAS/SATA RAID controllers
  *
  *  Copyright (c) 2001-2013 ATTO Technology, Inc.
- *  (mailto:linuxdrivers@attotech.com)
+ *  (mailto:linaosdrivers@attotech.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -41,14 +41,14 @@
  * USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/proc_fs.h>
+#include <linaos/workqueue.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/vmalloc.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>

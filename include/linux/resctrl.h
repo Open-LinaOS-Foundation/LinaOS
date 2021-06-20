@@ -2,7 +2,7 @@
 #ifndef _RESCTRL_H
 #define _RESCTRL_H
 
-#include <linux/pid.h>
+#include <linaos/pid.h>
 
 #ifdef CONFIG_PROC_CPU_RESCTRL
 

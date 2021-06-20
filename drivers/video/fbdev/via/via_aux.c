@@ -6,7 +6,7 @@
  * infrastructure for devices connected via I2C
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "via_aux.h"
 
 

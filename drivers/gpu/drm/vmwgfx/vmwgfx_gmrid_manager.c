@@ -31,9 +31,9 @@
 #include "vmwgfx_drv.h"
 #include <drm/ttm/ttm_bo_driver.h>
 #include <drm/ttm/ttm_placement.h>
-#include <linux/idr.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
+#include <linaos/idr.h>
+#include <linaos/spinlock.h>
+#include <linaos/kernel.h>
 
 struct vmwgfx_gmrid_man {
 	struct ttm_resource_manager manager;

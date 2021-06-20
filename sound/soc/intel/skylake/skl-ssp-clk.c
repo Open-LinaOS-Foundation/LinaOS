@@ -5,12 +5,12 @@
  *  skl-ssp-clk.c - ASoC skylake ssp clock driver
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clkdev.h>
 #include <sound/intel-nhlt.h>
 #include "skl.h"
 #include "skl-ssp-clk.h"

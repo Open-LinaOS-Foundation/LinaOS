@@ -20,19 +20,19 @@
  */
 
 
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/usb.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/usb/audio-v3.h>
-#include <linux/module.h>
+#include <linaos/bitops.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/usb.h>
+#include <linaos/moduleparam.h>
+#include <linaos/mutex.h>
+#include <linaos/usb/audio.h>
+#include <linaos/usb/audio-v2.h>
+#include <linaos/usb/audio-v3.h>
+#include <linaos/module.h>
 
 #include <sound/control.h>
 #include <sound/core.h>
@@ -1088,7 +1088,7 @@ static const struct usb_device_id usb_audio_ids [] = {
 MODULE_DEVICE_TABLE(usb, usb_audio_ids);
 
 /*
- * entry point for linux usb interface
+ * entry point for linaos usb interface
  */
 
 static struct usb_driver usb_audio_driver = {

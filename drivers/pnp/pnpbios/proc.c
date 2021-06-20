@@ -18,16 +18,16 @@
  * The other files are human-readable.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/pnp.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/proc_fs.h>
+#include <linaos/pnp.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "pnpbios.h"
 

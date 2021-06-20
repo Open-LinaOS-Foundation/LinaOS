@@ -10,8 +10,8 @@
 #ifndef __MGAG200_DRV_H__
 #define __MGAG200_DRV_H__
 
-#include <linux/i2c-algo-bit.h>
-#include <linux/i2c.h>
+#include <linaos/i2c-algo-bit.h>
+#include <linaos/i2c.h>
 
 #include <video/vga.h>
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/export.h>
-#include <linux/io.h>
+#include <linaos/export.h>
+#include <linaos/io.h>
 
 /**
  * __ioread64_copy - copy data from MMIO space, in 64-bit units

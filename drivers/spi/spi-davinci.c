@@ -4,23 +4,23 @@
  * Copyright (C) 2010 EF Johnson Technologies
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi_bitbang.h>
+#include <linaos/slab.h>
 
-#include <linux/platform_data/spi-davinci.h>
+#include <linaos/platform_data/spi-davinci.h>
 
 #define CS_DEFAULT	0xFF
 
@@ -853,7 +853,7 @@ static int spi_davinci_get_pdata(struct platform_device *pdev,
  * davinci_spi_probe - probe function for SPI Master Controller
  * @pdev: platform_device structure which contains plateform specific data
  *
- * According to Linux Device Model this function will be invoked by Linux
+ * According to LinaOS Device Model this function will be invoked by LinaOS
  * with platform_device struct which contains the device specific info.
  * This function will map the SPI controller's memory, register IRQ,
  * Reset SPI controller and setting its registers to default value.

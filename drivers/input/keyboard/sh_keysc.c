@@ -7,18 +7,18 @@
  * Based on gpio_keys.c, Copyright 2005 Phil Blundell
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/bitmap.h>
-#include <linux/pm_runtime.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/input/sh_keysc.h>
+#include <linaos/bitmap.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
 static const struct {
 	unsigned char kymd, keyout, keyin;

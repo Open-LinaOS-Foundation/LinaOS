@@ -5,17 +5,17 @@
  * Copyright (c) 2012 Trond Myklebust <Trond.Myklebust@netapp.com>
  *
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/bc_xprt.h>
-#include <linux/nfs.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/sunrpc/sched.h>
+#include <linaos/sunrpc/bc_xprt.h>
+#include <linaos/nfs.h>
+#include <linaos/nfs4.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/module.h>
 
 #include "nfs4_fs.h"
 #include "internal.h"

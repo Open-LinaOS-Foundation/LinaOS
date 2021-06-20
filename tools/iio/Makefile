@@ -25,13 +25,13 @@ include $(srctree)/tools/build/Makefile.include
 #
 # We need the following to be outside of kernel tree
 #
-$(OUTPUT)include/linux/iio: ../../include/uapi/linux/iio
-	mkdir -p $(OUTPUT)include/linux/iio 2>&1 || true
-	ln -sf $(CURDIR)/../../include/uapi/linux/iio/buffer.h $@
-	ln -sf $(CURDIR)/../../include/uapi/linux/iio/events.h $@
-	ln -sf $(CURDIR)/../../include/uapi/linux/iio/types.h $@
+$(OUTPUT)include/linaos/iio: ../../include/uapi/linaos/iio
+	mkdir -p $(OUTPUT)include/linaos/iio 2>&1 || true
+	ln -sf $(CURDIR)/../../include/uapi/linaos/iio/buffer.h $@
+	ln -sf $(CURDIR)/../../include/uapi/linaos/iio/events.h $@
+	ln -sf $(CURDIR)/../../include/uapi/linaos/iio/types.h $@
 
-prepare: $(OUTPUT)include/linux/iio
+prepare: $(OUTPUT)include/linaos/iio
 
 IIO_UTILS_IN := $(OUTPUT)iio_utils-in.o
 $(IIO_UTILS_IN): prepare FORCE
@@ -57,7 +57,7 @@ $(OUTPUT)iio_generic_buffer: $(IIO_GENERIC_BUFFER_IN)
 
 clean:
 	rm -f $(ALL_PROGRAMS)
-	rm -rf $(OUTPUT)include/linux/iio
+	rm -rf $(OUTPUT)include/linaos/iio
 	find $(if $(OUTPUT),$(OUTPUT),.) -name '*.o' -delete -o -name '\.*.d' -delete
 
 install: $(ALL_PROGRAMS)

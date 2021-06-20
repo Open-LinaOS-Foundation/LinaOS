@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/cache.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
+#include <linaos/cache.h>
+#include <linaos/highmem.h>
+#include <linaos/mm.h>
 #include <asm/cache.h>
 
 void update_mmu_cache(struct vm_area_struct *vma, unsigned long address,

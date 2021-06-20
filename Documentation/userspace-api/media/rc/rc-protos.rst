@@ -12,7 +12,7 @@ command: what it should do. The values for these are not always consistent
 across different devices for a given protocol.
 
 Therefore out the output of the IR decoder is a scancode; a single u32
-value. Using keymap tables this can be mapped to linux key codes.
+value. Using keymap tables this can be mapped to linaos key codes.
 
 Other things can be encoded too. Some IR protocols encode a toggle bit; this
 is to distinguish whether the same button is being held down, or has been

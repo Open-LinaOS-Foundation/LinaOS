@@ -5,7 +5,7 @@
  * Copyright (C) 2017-2018 SUSE
  */
 
-#include <linux/statfs.h>
+#include <linaos/statfs.h>
 
 #include "super.h"
 #include "mds_client.h"

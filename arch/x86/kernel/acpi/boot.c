@@ -6,21 +6,21 @@
  *  Copyright (C) 2001 Jun Nakajima <jun.nakajima@intel.com>
  */
 
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/acpi_pmtmr.h>
-#include <linux/efi.h>
-#include <linux/cpumask.h>
-#include <linux/export.h>
-#include <linux/dmi.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/memblock.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/efi-bgrt.h>
-#include <linux/serial_core.h>
-#include <linux/pgtable.h>
+#include <linaos/init.h>
+#include <linaos/acpi.h>
+#include <linaos/acpi_pmtmr.h>
+#include <linaos/efi.h>
+#include <linaos/cpumask.h>
+#include <linaos/export.h>
+#include <linaos/dmi.h>
+#include <linaos/irq.h>
+#include <linaos/slab.h>
+#include <linaos/memblock.h>
+#include <linaos/ioport.h>
+#include <linaos/pci.h>
+#include <linaos/efi-bgrt.h>
+#include <linaos/serial_core.h>
+#include <linaos/pgtable.h>
 
 #include <asm/e820/api.h>
 #include <asm/irqdomain.h>
@@ -1391,7 +1391,7 @@ static void __init acpi_reduced_hw_init(void)
 
 /*
  * If your system is blacklisted here, but you find that acpi=force
- * works for you, please contact linux-acpi@vger.kernel.org
+ * works for you, please contact linaos-acpi@vger.kernel.org
  */
 static const struct dmi_system_id acpi_dmi_table[] __initconst = {
 	/*

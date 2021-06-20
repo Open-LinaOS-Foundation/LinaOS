@@ -96,7 +96,7 @@
 };
 
 &twl_keypad {
-	linux,keymap = <
+	linaos,keymap = <
 				MATRIX_KEY(0x00, 0x01, KEY_A)
 				MATRIX_KEY(0x00, 0x02, KEY_B)
 				MATRIX_KEY(0x00, 0x03, KEY_LEFT)

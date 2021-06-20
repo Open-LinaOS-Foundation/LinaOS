@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* /proc routines for Host AP driver */
 
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/export.h>
+#include <linaos/types.h>
+#include <linaos/proc_fs.h>
+#include <linaos/export.h>
 #include <net/lib80211.h>
 
 #include "hostap_wlan.h"

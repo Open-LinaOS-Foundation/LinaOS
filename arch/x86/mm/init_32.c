@@ -6,35 +6,35 @@
  *  Support of BIGMEM added by Gerhard Wichert, Siemens AG, July 1999
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/pci.h>
-#include <linux/pfn.h>
-#include <linux/poison.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/memory_hotplug.h>
-#include <linux/initrd.h>
-#include <linux/cpumask.h>
-#include <linux/gfp.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/ptrace.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/swap.h>
+#include <linaos/smp.h>
+#include <linaos/init.h>
+#include <linaos/highmem.h>
+#include <linaos/pagemap.h>
+#include <linaos/pci.h>
+#include <linaos/pfn.h>
+#include <linaos/poison.h>
+#include <linaos/memblock.h>
+#include <linaos/proc_fs.h>
+#include <linaos/memory_hotplug.h>
+#include <linaos/initrd.h>
+#include <linaos/cpumask.h>
+#include <linaos/gfp.h>
 
 #include <asm/asm.h>
 #include <asm/bios_ebda.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/dma.h>
 #include <asm/fixmap.h>
 #include <asm/e820/api.h>
@@ -239,7 +239,7 @@ page_table_range_init(unsigned long start, unsigned long end, pgd_t *pgd_base)
 }
 
 /*
- * The <linux/kallsyms.h> already defines is_kernel_text,
+ * The <linaos/kallsyms.h> already defines is_kernel_text,
  * using '__' prefix not to get in conflict.
  */
 static inline int __is_kernel_text(unsigned long addr)
@@ -728,7 +728,7 @@ static void __init test_wp_bit(void)
 	}
 
 	printk(KERN_CONT "No.\n");
-	panic("Linux doesn't support CPUs with broken WP.");
+	panic("LinaOS doesn't support CPUs with broken WP.");
 }
 
 void __init mem_init(void)

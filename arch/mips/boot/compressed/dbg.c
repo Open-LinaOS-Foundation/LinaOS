@@ -6,8 +6,8 @@
  * please select SYS_SUPPORTS_ZBOOT_UART16550 for your machine. othewise, you
  * need to implement your own putc().
  */
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
 
 void __weak putc(char c)
 {

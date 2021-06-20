@@ -12,22 +12,22 @@
  * Marc Gauthier<marc@tensilica.com> <marc@alumni.uwaterloo.ca>
  */
 
-#include <linux/audit.h>
-#include <linux/errno.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/perf_event.h>
-#include <linux/ptrace.h>
-#include <linux/regset.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/seccomp.h>
-#include <linux/security.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/tracehook.h>
-#include <linux/uaccess.h>
+#include <linaos/audit.h>
+#include <linaos/errno.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/perf_event.h>
+#include <linaos/ptrace.h>
+#include <linaos/regset.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/seccomp.h>
+#include <linaos/security.h>
+#include <linaos/signal.h>
+#include <linaos/smp.h>
+#include <linaos/tracehook.h>
+#include <linaos/uaccess.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/syscalls.h>

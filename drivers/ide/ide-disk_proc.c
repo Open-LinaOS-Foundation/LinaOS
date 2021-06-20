@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/ide.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/seq_file.h>
+#include <linaos/kernel.h>
+#include <linaos/ide.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/seq_file.h>
 
 #include "ide-disk.h"
 

@@ -1,32 +1,32 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/ceph/ceph_debug.h>
-#include <linux/backing-dev.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/inet.h>
-#include <linux/in6.h>
-#include <linux/key.h>
+#include <linaos/ceph/ceph_debug.h>
+#include <linaos/backing-dev.h>
+#include <linaos/ctype.h>
+#include <linaos/fs.h>
+#include <linaos/inet.h>
+#include <linaos/in6.h>
+#include <linaos/key.h>
 #include <keys/ceph-type.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/nsproxy.h>
-#include <linux/fs_parser.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/statfs.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/mount.h>
+#include <linaos/nsproxy.h>
+#include <linaos/fs_parser.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/statfs.h>
+#include <linaos/string.h>
+#include <linaos/vmalloc.h>
 
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/debugfs.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/auth.h>
+#include <linaos/ceph/ceph_features.h>
+#include <linaos/ceph/libceph.h>
+#include <linaos/ceph/debugfs.h>
+#include <linaos/ceph/decode.h>
+#include <linaos/ceph/mon_client.h>
+#include <linaos/ceph/auth.h>
 #include "crypto.h"
 
 

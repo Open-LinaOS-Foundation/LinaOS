@@ -18,12 +18,12 @@
  *   the output at low level at all times.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
 
 #define PIPGM_PCSR(ch) (0x400 + 4 * (ch))
 #define PIPGM_PDUT(ch) (0x420 + 4 * (ch))

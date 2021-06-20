@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2012, 2017-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012, 2017-2018, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef __DPU_IO_UTIL_H__
 #define __DPU_IO_UTIL_H__
 
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <linaos/platform_device.h>
+#include <linaos/types.h>
 
 #define DEV_DBG(fmt, args...)   pr_debug(fmt, ##args)
 #define DEV_INFO(fmt, args...)  pr_info(fmt, ##args)

@@ -41,9 +41,9 @@
 #include "i40iw_type.h"
 #include "i40iw_p.h"
 
-#include <linux/pci.h>
-#include <linux/genalloc.h>
-#include <linux/vmalloc.h>
+#include <linaos/pci.h>
+#include <linaos/genalloc.h>
+#include <linaos/vmalloc.h>
 #include "i40iw_pble.h"
 #include "i40iw.h"
 

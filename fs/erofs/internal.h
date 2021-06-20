@@ -7,15 +7,15 @@
 #ifndef __EROFS_INTERNAL_H
 #define __EROFS_INTERNAL_H
 
-#include <linux/fs.h>
-#include <linux/dcache.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/bio.h>
-#include <linux/buffer_head.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/fs.h>
+#include <linaos/dcache.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/bio.h>
+#include <linaos/buffer_head.h>
+#include <linaos/magic.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 #include "erofs_fs.h"
 
 /* redefine pr_fmt "erofs: " */

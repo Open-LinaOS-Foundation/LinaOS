@@ -6,9 +6,9 @@
  * AV backend support for PS3
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
 
 #include <asm/ps3av.h>
 #include <asm/ps3.h>

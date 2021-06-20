@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2018, The LinaOS Foundation. All rights reserved.
  *
  * Inspired by dwc3-of-simple.c
  */
 
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/of_clk.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/extcon.h>
-#include <linux/interconnect.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/usb/of.h>
-#include <linux/reset.h>
-#include <linux/iopoll.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/clk.h>
+#include <linaos/irq.h>
+#include <linaos/of_clk.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/extcon.h>
+#include <linaos/interconnect.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/usb/of.h>
+#include <linaos/reset.h>
+#include <linaos/iopoll.h>
 
 #include "core.h"
 

@@ -24,7 +24,7 @@
  * Authors: Christian König
  *          Rafał Miłecki
  */
-#include <linux/hdmi.h>
+#include <linaos/hdmi.h>
 
 #include <drm/radeon_drm.h>
 #include "evergreen_hdmi.h"

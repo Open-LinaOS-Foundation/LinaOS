@@ -3,7 +3,7 @@ DMA attributes
 ==============
 
 This document describes the semantics of the DMA attributes that are
-defined in linux/dma-mapping.h.
+defined in linaos/dma-mapping.h.
 
 DMA_ATTR_WEAK_ORDERING
 ----------------------

@@ -12,7 +12,7 @@
 #ifndef _ASM_XTALK_XWIDGET_H
 #define _ASM_XTALK_XWIDGET_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/xtalk/xtalk.h>
 
 #define WIDGET_ID			0x04

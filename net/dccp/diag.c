@@ -7,8 +7,8 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/inet_diag.h>
+#include <linaos/module.h>
+#include <linaos/inet_diag.h>
 
 #include "ccid.h"
 #include "dccp.h"

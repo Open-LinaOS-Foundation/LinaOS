@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * skl-tplg-interface.h - Intel DSP FW private data interface
  *
@@ -10,7 +10,7 @@
 #ifndef __HDA_TPLG_INTERFACE_H__
 #define __HDA_TPLG_INTERFACE_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Default types range from 0~12. type can range from 0 to 0xff

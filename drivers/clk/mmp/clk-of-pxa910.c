@@ -9,13 +9,13 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/of_address.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/of_address.h>
 
 #include <dt-bindings/clock/marvell,pxa910.h>
 

@@ -31,10 +31,10 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/xprt.h>
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/slab.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/sunrpc/xprt.h>
+#include <linaos/sunrpc/svc_xprt.h>
+#include <linaos/slab.h>
 #include "nfsd.h"
 #include "state.h"
 #include "netns.h"
@@ -49,7 +49,7 @@ static void nfsd4_mark_cb_fault(struct nfs4_client *, int reason);
 #define NFSPROC4_CB_NULL 0
 #define NFSPROC4_CB_COMPOUND 1
 
-/* Index of predefined Linux callback client operations */
+/* Index of predefined LinaOS callback client operations */
 
 struct nfs4_cb_compound_hdr {
 	/* args */
@@ -201,7 +201,7 @@ static const struct {
  * handle it.
  *
  * Note: remaining NFSv4 error codes have values > 10000, so should
- * not conflict with native Linux error codes.
+ * not conflict with native LinaOS error codes.
  */
 static int nfs_cb_stat_to_errno(int status)
 {

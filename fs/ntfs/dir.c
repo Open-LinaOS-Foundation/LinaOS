@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /**
- * dir.c - NTFS kernel directory operations. Part of the Linux-NTFS project.
+ * dir.c - NTFS kernel directory operations. Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2007 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
  */
 
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
+#include <linaos/buffer_head.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
 
 #include "dir.h"
 #include "aops.h"
@@ -205,7 +205,7 @@ found_it:
 						"and if that doesn't find any "
 						"errors please report you saw "
 						"this message to "
-						"linux-ntfs-dev@lists."
+						"linaos-ntfs-dev@lists."
 						"sourceforge.net.");
 				goto dir_err_out;
 			}
@@ -465,7 +465,7 @@ found_it2:
 						"and if that doesn't find any "
 						"errors please report you saw "
 						"this message to "
-						"linux-ntfs-dev@lists."
+						"linaos-ntfs-dev@lists."
 						"sourceforge.net.");
 				unlock_page(page);
 				ntfs_unmap_page(page);
@@ -691,7 +691,7 @@ u64 ntfs_lookup_inode_by_name(ntfs_inode *dir_ni, const ntfschar *uname,
 		 * after the non-POSIX one when they only differ in case, but
 		 * anyone doing screwy stuff like that deserves to burn in
 		 * hell... Doing that kind of stuff on NT4 actually causes
-		 * corruption on the partition even when using SP6a and Linux
+		 * corruption on the partition even when using SP6a and LinaOS
 		 * is not involved at all.
 		 */
 		ic = ie->key.file_name.file_name_type ? IGNORE_CASE :
@@ -878,7 +878,7 @@ fast_descend_into_child_node:
 		 * after the non-POSIX one when they only differ in case, but
 		 * anyone doing screwy stuff like that deserves to burn in
 		 * hell... Doing that kind of stuff on NT4 actually causes
-		 * corruption on the partition even when using SP6a and Linux
+		 * corruption on the partition even when using SP6a and LinaOS
 		 * is not involved at all.
 		 */
 		ic = ie->key.file_name.file_name_type ? IGNORE_CASE :

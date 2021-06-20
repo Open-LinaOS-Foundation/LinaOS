@@ -11,20 +11,20 @@
  */
 
 #include <stdarg.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/kallsyms.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/ptrace.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/hardirq.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/kdb.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/kallsyms.h>
+#include <linaos/stddef.h>
+#include <linaos/vmalloc.h>
+#include <linaos/ptrace.h>
+#include <linaos/module.h>
+#include <linaos/highmem.h>
+#include <linaos/hardirq.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
+#include <linaos/kdb.h>
+#include <linaos/slab.h>
 #include "kdb_private.h"
 
 /*

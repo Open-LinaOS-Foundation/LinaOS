@@ -7,15 +7,15 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kmod.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/termios.h>
-#include <linux/err.h>
-#include <linux/reboot.h>
-#include <linux/gfp.h>
+#include <linaos/kmod.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/timer.h>
+#include <linaos/jiffies.h>
+#include <linaos/termios.h>
+#include <linaos/err.h>
+#include <linaos/reboot.h>
+#include <linaos/gfp.h>
 
 #include "sclp.h"
 #include "sclp_rw.h"

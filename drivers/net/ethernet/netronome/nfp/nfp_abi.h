@@ -4,7 +4,7 @@
 #ifndef __NFP_ABI__
 #define __NFP_ABI__ 1
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define NFP_MBOX_SYM_NAME		"_abi_nfd_pf%u_mbox"
 #define NFP_MBOX_SYM_MIN_SIZE		16 /* When no data needed */

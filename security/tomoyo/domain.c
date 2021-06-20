@@ -7,9 +7,9 @@
 
 #include "common.h"
 
-#include <linux/binfmts.h>
-#include <linux/slab.h>
-#include <linux/rculist.h>
+#include <linaos/binfmts.h>
+#include <linaos/slab.h>
+#include <linaos/rculist.h>
 
 /* Variables definitions.*/
 
@@ -613,7 +613,7 @@ out:
 static int tomoyo_environ(struct tomoyo_execve *ee)
 {
 	struct tomoyo_request_info *r = &ee->r;
-	struct linux_binprm *bprm = ee->bprm;
+	struct linaos_binprm *bprm = ee->bprm;
 	/* env_page.data is allocated by tomoyo_dump_page(). */
 	struct tomoyo_page_dump env_page = { };
 	char *arg_ptr; /* Size is TOMOYO_EXEC_TMPSIZE bytes */
@@ -692,13 +692,13 @@ out:
 /**
  * tomoyo_find_next_domain - Find a domain.
  *
- * @bprm: Pointer to "struct linux_binprm".
+ * @bprm: Pointer to "struct linaos_binprm".
  *
  * Returns 0 on success, negative value otherwise.
  *
  * Caller holds tomoyo_read_lock().
  */
-int tomoyo_find_next_domain(struct linux_binprm *bprm)
+int tomoyo_find_next_domain(struct linaos_binprm *bprm)
 {
 	struct tomoyo_domain_info *old_domain = tomoyo_domain();
 	struct tomoyo_domain_info *domain = NULL;
@@ -887,13 +887,13 @@ force_jump_domain:
 /**
  * tomoyo_dump_page - Dump a page to buffer.
  *
- * @bprm: Pointer to "struct linux_binprm".
+ * @bprm: Pointer to "struct linaos_binprm".
  * @pos:  Location to dump.
  * @dump: Pointer to "struct tomoyo_page_dump".
  *
  * Returns true on success, false otherwise.
  */
-bool tomoyo_dump_page(struct linux_binprm *bprm, unsigned long pos,
+bool tomoyo_dump_page(struct linaos_binprm *bprm, unsigned long pos,
 		      struct tomoyo_page_dump *dump)
 {
 	struct page *page;

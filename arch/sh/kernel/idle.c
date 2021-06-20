@@ -4,16 +4,16 @@
  *
  *  Copyright (C) 2002 - 2009  Paul Mundt
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/preempt.h>
-#include <linux/thread_info.h>
-#include <linux/irqflags.h>
-#include <linux/smp.h>
-#include <linux/atomic.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/pm.h>
+#include <linaos/tick.h>
+#include <linaos/preempt.h>
+#include <linaos/thread_info.h>
+#include <linaos/irqflags.h>
+#include <linaos/smp.h>
+#include <linaos/atomic.h>
 #include <asm/smp.h>
 #include <asm/bl_bit.h>
 

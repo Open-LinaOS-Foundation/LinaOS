@@ -9,8 +9,8 @@
 #ifndef __TIMER_DAVINCI_H__
 #define __TIMER_DAVINCI_H__
 
-#include <linux/clk.h>
-#include <linux/ioport.h>
+#include <linaos/clk.h>
+#include <linaos/ioport.h>
 
 enum {
 	DAVINCI_TIMER_CLOCKEVENT_IRQ,

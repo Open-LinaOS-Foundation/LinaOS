@@ -13,8 +13,8 @@
 #ifndef __DVB_ASCOT2E_H__
 #define __DVB_ASCOT2E_H__
 
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/i2c.h>
 
 /**
  * struct ascot2e_config - the configuration of Ascot2E tuner driver

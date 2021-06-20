@@ -5,7 +5,7 @@
 #
 # Copyright (C) IBM Corporation, 2014
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@linaos.ibm.com>
 
 # locktorture_param_onoff bootparam-string config-file
 #

@@ -11,7 +11,7 @@ September 21, 1999
 Copyright |copy| 1998  Corey Thomas (corey@world.std.com)
 
 This file is the documentation for the Raylink Wireless LAN card driver for
-Linux.  The Raylink wireless LAN card is a PCMCIA card which provides IEEE
+LinaOS.  The Raylink wireless LAN card is a PCMCIA card which provides IEEE
 802.11 compatible wireless network connectivity at 1 and 2 megabits/second.
 See http://www.raytheon.com/micro/raylink/ for more information on the Raylink
 card.  This driver is in early development and does have bugs.  See the known
@@ -19,9 +19,9 @@ bugs and limitations at the end of this document for more information.
 This driver also works with WebGear's Aviator 2.4 and Aviator Pro
 wireless LAN cards.
 
-As of kernel 2.3.18, the ray_cs driver is part of the Linux kernel
+As of kernel 2.3.18, the ray_cs driver is part of the LinaOS kernel
 source.  My web page for the development of ray_cs is at
-http://web.ralinktech.com/ralink/Home/Support/Linux.html
+http://web.ralinktech.com/ralink/Home/Support/LinaOS.html
 and I can be emailed at corey@world.std.com
 
 The kernel driver is based on ray_cs-1.62.tgz
@@ -33,7 +33,7 @@ the essid= string parameter is available via the kernel command line.
 This will change after the method of sorting out parameters for all
 the PCMCIA drivers is agreed upon.  If you must have a built in driver
 with nondefault parameters, they can be edited in
-/usr/src/linux/drivers/net/pcmcia/ray_cs.c.  Searching for module_param
+/usr/src/linaos/drivers/net/pcmcia/ray_cs.c.  Searching for module_param
 will find them all.
 
 Information on card services is available at:
@@ -105,7 +105,7 @@ hop_dwell	integer         hop dwell time in Kilo-microseconds
 
 				legal values = 16,32,64,128(default),256
 
-irq_mask	integer         linux standard 16 bit value 1bit/IRQ
+irq_mask	integer         linaos standard 16 bit value 1bit/IRQ
 
 				lsb is IRQ 0, bit 1 is IRQ 1 etc.
 				Used to restrict choice of IRQ's to use.
@@ -143,7 +143,7 @@ More on sniffer mode:
 tcpdump does not understand 802.11 headers, so it can't
 interpret the contents, but it can record to a file.  This is only
 useful for debugging 802.11 lowlevel protocols that are not visible to
-linux.  If you want to watch ftp xfers, or do similar things, you
+linaos.  If you want to watch ftp xfers, or do similar things, you
 don't need to use sniffer mode.  Also, some packet types are never
 sent up by the card, so you will never see them (ack, rts, cts, probe
 etc.)  There is a simple program (showcap) included in the ray_cs

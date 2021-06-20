@@ -12,8 +12,8 @@
 #ifndef _ASM_S390_NMI_H
 #define _ASM_S390_NMI_H
 
-#include <linux/bits.h>
-#include <linux/types.h>
+#include <linaos/bits.h>
+#include <linaos/types.h>
 
 #define MCIC_SUBCLASS_MASK	(1ULL<<63 | 1ULL<<62 | 1ULL<<61 | \
 				1ULL<<59 | 1ULL<<58 | 1ULL<<56 | \

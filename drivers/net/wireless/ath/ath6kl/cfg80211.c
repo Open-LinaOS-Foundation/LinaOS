@@ -17,10 +17,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/moduleparam.h>
-#include <linux/inetdevice.h>
-#include <linux/export.h>
-#include <linux/sched/signal.h>
+#include <linaos/moduleparam.h>
+#include <linaos/inetdevice.h>
+#include <linaos/export.h>
+#include <linaos/sched/signal.h>
 
 #include "core.h"
 #include "cfg80211.h"

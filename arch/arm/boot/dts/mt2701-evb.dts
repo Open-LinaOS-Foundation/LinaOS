@@ -49,7 +49,7 @@
 	};
 
 	bt_sco_codec:bt_sco_codec {
-		compatible = "linux,bt-sco";
+		compatible = "linaos,bt-sco";
 	};
 
 	backlight_lcd: backlight_lcd {

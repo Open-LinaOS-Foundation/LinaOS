@@ -15,16 +15,16 @@
 #ifndef _NET_BONDING_H
 #define _NET_BONDING_H
 
-#include <linux/timer.h>
-#include <linux/proc_fs.h>
-#include <linux/if_bonding.h>
-#include <linux/cpumask.h>
-#include <linux/in6.h>
-#include <linux/netpoll.h>
-#include <linux/inetdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/reciprocal_div.h>
-#include <linux/if_link.h>
+#include <linaos/timer.h>
+#include <linaos/proc_fs.h>
+#include <linaos/if_bonding.h>
+#include <linaos/cpumask.h>
+#include <linaos/in6.h>
+#include <linaos/netpoll.h>
+#include <linaos/inetdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/reciprocal_div.h>
+#include <linaos/if_link.h>
 
 #include <net/bond_3ad.h>
 #include <net/bond_alb.h>

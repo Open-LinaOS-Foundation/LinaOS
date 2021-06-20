@@ -3,7 +3,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static struct rc_map_table terratec_cinergy_s2_hd[] = {
 	{ 0x03, KEY_NEXT},               /* >| */

@@ -3,8 +3,8 @@
 #include "util/bpf_map.h"
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <unistd.h>

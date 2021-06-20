@@ -10,16 +10,16 @@
  *	Andrew F. Davis <afd@ti.com>
  */
 
-#include <linux/dma-buf.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma-heap.h>
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/dma-buf.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dma-heap.h>
+#include <linaos/err.h>
+#include <linaos/highmem.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 static struct dma_heap *sys_heap;
 

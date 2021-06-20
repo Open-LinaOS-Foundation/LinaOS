@@ -28,14 +28,14 @@
  /* treated slightly differently for reconnection purposes since we never     */
  /* want to reuse a stale file handle and only the caller knows the file info */
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/vfs.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/uaccess.h>
-#include <linux/uuid.h>
-#include <linux/pagemap.h>
-#include <linux/xattr.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/vfs.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/uaccess.h>
+#include <linaos/uuid.h>
+#include <linaos/pagemap.h>
+#include <linaos/xattr.h>
 #include "smb2pdu.h"
 #include "cifsglob.h"
 #include "cifsacl.h"

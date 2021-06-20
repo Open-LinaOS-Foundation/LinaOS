@@ -9,7 +9,7 @@
 
 #ifndef _ARCH_X86_KERNEL_TLS_H
 
-#include <linux/regset.h>
+#include <linaos/regset.h>
 
 extern user_regset_active_fn regset_tls_active;
 extern user_regset_get2_fn regset_tls_get;

@@ -3,12 +3,12 @@
 //
 // Copyright (C) 2015 Google, Inc
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_proto.h>
+#include <linaos/slab.h>
 #include <asm/unaligned.h>
 
 #include "cros_ec_trace.h"
@@ -561,7 +561,7 @@ EXPORT_SYMBOL(cros_ec_query_all);
  *
  * Return:
  * >=0 - The number of bytes transferred
- * <0 - Linux error code
+ * <0 - LinaOS error code
  */
 int cros_ec_cmd_xfer_status(struct cros_ec_device *ec_dev,
 			    struct cros_ec_command *msg)

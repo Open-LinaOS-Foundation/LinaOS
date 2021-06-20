@@ -8,10 +8,10 @@
  * Copyright (C) 2012 Broadcom Corporation
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_dev_usb_usbd.h>
 

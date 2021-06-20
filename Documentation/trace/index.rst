@@ -1,5 +1,5 @@
 ==========================
-Linux Tracing Technologies
+LinaOS Tracing Technologies
 ==========================
 
 .. toctree::

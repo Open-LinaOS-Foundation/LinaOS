@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/string.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/string.h>
 #include <bcm47xx.h>
 #include <bcm47xx_board.h>
 

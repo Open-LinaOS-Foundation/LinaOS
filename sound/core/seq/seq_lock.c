@@ -4,7 +4,7 @@
  *  Copyright (c) 1999 by Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/export.h>
+#include <linaos/export.h>
 #include <sound/core.h>
 #include "seq_lock.h"
 

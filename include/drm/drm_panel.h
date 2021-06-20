@@ -24,9 +24,9 @@
 #ifndef __DRM_PANEL_H__
 #define __DRM_PANEL_H__
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/list.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/list.h>
 
 struct backlight_device;
 struct device_node;

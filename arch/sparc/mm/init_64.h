@@ -17,14 +17,14 @@ extern unsigned long sparc64_kern_pri_nuc_bits;
 extern unsigned long sparc64_kern_sec_context;
 void mmu_info(struct seq_file *m);
 
-struct linux_prom_translation {
+struct linaos_prom_translation {
 	unsigned long virt;
 	unsigned long size;
 	unsigned long data;
 };
 
 /* Exported for kernel TLB miss handling in ktlb.S */
-extern struct linux_prom_translation prom_trans[512];
+extern struct linaos_prom_translation prom_trans[512];
 extern unsigned int prom_trans_ents;
 
 /* Exported for SMP bootup purposes. */

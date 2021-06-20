@@ -11,7 +11,7 @@
 
 #define MODULE_NAME "spca561"
 
-#include <linux/input.h>
+#include <linaos/input.h>
 #include "gspca.h"
 
 MODULE_AUTHOR("Michel Xhaard <mxhaard@users.sourceforge.net>");

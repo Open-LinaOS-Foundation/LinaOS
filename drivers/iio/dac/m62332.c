@@ -8,15 +8,15 @@
  *  Copyright (C) 2010, 2011 Roland Stigge <stigge@antcom.de>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/driver.h>
 
-#include <linux/regulator/consumer.h>
+#include <linaos/regulator/consumer.h>
 
 #define M62332_CHANNELS 2
 

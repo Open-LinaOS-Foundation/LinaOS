@@ -8,11 +8,11 @@
 #include <drm/drm_modes.h>
 #include <drm/drm_panel.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/regulator/consumer.h>
 
 #include <video/mipi_display.h>
 

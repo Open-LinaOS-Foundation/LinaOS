@@ -5,7 +5,7 @@
 
 #include "ixgb.h"
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define IXGB_ALL_RAR_ENTRIES 16
 

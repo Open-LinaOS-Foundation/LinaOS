@@ -2,8 +2,8 @@
 #ifndef __PERF_ENV_H
 #define __PERF_ENV_H
 
-#include <linux/types.h>
-#include <linux/rbtree.h>
+#include <linaos/types.h>
+#include <linaos/rbtree.h>
 #include "rwsem.h"
 
 struct perf_cpu_map;

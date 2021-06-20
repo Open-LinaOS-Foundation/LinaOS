@@ -23,13 +23,13 @@
 
 #include "udf_i.h"
 #include "udf_sb.h"
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/crc-itu-t.h>
-#include <linux/exportfs.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/crc-itu-t.h>
+#include <linaos/exportfs.h>
 
 static inline int udf_match(int len1, const unsigned char *name1, int len2,
 			    const unsigned char *name2)

@@ -30,7 +30,7 @@ Required properties:
 Optional properties:
 - label: see Documentation/devicetree/bindings/leds/common.txt
 - default-state: see Documentation/devicetree/bindings/leds/common.txt
-- linux,default-trigger: see Documentation/devicetree/bindings/leds/common.txt
+- linaos,default-trigger: see Documentation/devicetree/bindings/leds/common.txt
 
 Example:
 
@@ -54,14 +54,14 @@ qcom,ssbi@500000 {
 			reg = <0x132>;
 			label = "pm8058:yellow";
 			default-state = "off";
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 		led@133 {
 			compatible = "qcom,pm8058-led";
 			reg = <0x133>;
 			label = "pm8058:green";
 			default-state = "on";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 };

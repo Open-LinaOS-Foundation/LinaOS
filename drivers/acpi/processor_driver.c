@@ -4,21 +4,21 @@
  *
  *  Copyright (C) 2001, 2002 Andy Grover <andrew.grover@intel.com>
  *  Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
- *  Copyright (C) 2004       Dominik Brodowski <linux@brodo.de>
+ *  Copyright (C) 2004       Dominik Brodowski <linaos@brodo.de>
  *  Copyright (C) 2004  Anil S Keshavamurthy <anil.s.keshavamurthy@intel.com>
  *  			- Added processor hotplug support
  *  Copyright (C) 2013, Intel Corporation
  *                      Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/cpufreq.h>
+#include <linaos/cpu.h>
+#include <linaos/cpuidle.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
 
 #include <acpi/processor.h>
 

@@ -13,11 +13,11 @@ Introduction
 
 Modern SoCs typically employ heterogeneous remote processor devices in
 asymmetric multiprocessing (AMP) configurations, which may be running
-different instances of operating system, whether it's Linux or any other
+different instances of operating system, whether it's LinaOS or any other
 flavor of real-time OS.
 
 OMAP4, for example, has dual Cortex-A9, dual Cortex-M3 and a C64x+ DSP.
-Typically, the dual cortex-A9 is running Linux in a SMP configuration,
+Typically, the dual cortex-A9 is running LinaOS in a SMP configuration,
 and each of the other three cores (two M3 cores and a DSP) is running
 its own instance of RTOS in an AMP configuration.
 
@@ -266,9 +266,9 @@ content to the console.
 
 ::
 
-  #include <linux/kernel.h>
-  #include <linux/module.h>
-  #include <linux/rpmsg.h>
+  #include <linaos/kernel.h>
+  #include <linaos/module.h>
+  #include <linaos/rpmsg.h>
 
   static void rpmsg_sample_cb(struct rpmsg_channel *rpdev, void *data, int len,
 						void *priv, u32 src)

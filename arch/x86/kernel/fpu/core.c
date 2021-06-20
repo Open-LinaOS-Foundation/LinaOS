@@ -4,7 +4,7 @@
  *
  *  Pentium III FXSR, SSE support
  *  General FPU state handling cleanups
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@valinaos.com>, May 2000
  */
 #include <asm/fpu/internal.h>
 #include <asm/fpu/regset.h>
@@ -13,8 +13,8 @@
 #include <asm/traps.h>
 #include <asm/irq_regs.h>
 
-#include <linux/hardirq.h>
-#include <linux/pkeys.h>
+#include <linaos/hardirq.h>
+#include <linaos/pkeys.h>
 
 #define CREATE_TRACE_POINTS
 #include <asm/trace/fpu.h>

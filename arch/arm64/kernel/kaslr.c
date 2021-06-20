@@ -3,15 +3,15 @@
  * Copyright (C) 2016 Linaro Ltd <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/cache.h>
-#include <linux/crc32.h>
-#include <linux/init.h>
-#include <linux/libfdt.h>
-#include <linux/mm_types.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/pgtable.h>
-#include <linux/random.h>
+#include <linaos/cache.h>
+#include <linaos/crc32.h>
+#include <linaos/init.h>
+#include <linaos/libfdt.h>
+#include <linaos/mm_types.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/pgtable.h>
+#include <linaos/random.h>
 
 #include <asm/cacheflush.h>
 #include <asm/fixmap.h>

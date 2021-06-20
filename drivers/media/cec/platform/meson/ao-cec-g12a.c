@@ -7,24 +7,24 @@
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/reset.h>
+#include <linaos/slab.h>
+#include <linaos/regmap.h>
 #include <media/cec.h>
 #include <media/cec-notifier.h>
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 
 /* CEC Registers */
 

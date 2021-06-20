@@ -16,13 +16,13 @@
  * Author: Alessandro Zummo <a.zummo@towertech.it>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/libata.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/libata.h>
+#include <linaos/irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
 
 #include <scsi/scsi_host.h>
 #include <mach/palmld.h>

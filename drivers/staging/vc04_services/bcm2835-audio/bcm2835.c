@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright 2011 Broadcom Corporation.  All rights reserved. */
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
 #include "bcm2835.h"
 

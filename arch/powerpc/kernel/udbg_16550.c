@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2001-2005 PPC 64 Team, IBM Corp
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/udbg.h>
 #include <asm/io.h>
 #include <asm/reg_a2.h>

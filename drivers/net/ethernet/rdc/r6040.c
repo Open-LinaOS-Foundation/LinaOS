@@ -8,28 +8,28 @@
  * Copyright (C) 2007-2012 Florian Fainelli <f.fainelli@gmail.com>
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/uaccess.h>
-#include <linux/phy.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/delay.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/crc32.h>
+#include <linaos/spinlock.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/uaccess.h>
+#include <linaos/phy.h>
 
 #include <asm/processor.h>
 

@@ -6,9 +6,9 @@ IBM Virtual Management Channel Kernel Driver (IBMVMC)
 
 :Authors:
 	Dave Engebretsen <engebret@us.ibm.com>,
-	Adam Reznechek <adreznec@linux.vnet.ibm.com>,
-	Steven Royer <seroyer@linux.vnet.ibm.com>,
-	Bryant G. Ly <bryantly@linux.vnet.ibm.com>,
+	Adam Reznechek <adreznec@linaos.vnet.ibm.com>,
+	Steven Royer <seroyer@linaos.vnet.ibm.com>,
+	Bryant G. Ly <bryantly@linaos.vnet.ibm.com>,
 
 Introduction
 ============
@@ -40,7 +40,7 @@ a system administrator to configure the system’s partitioning
 characteristics via a command line interface (CLI) or Representational
 State Transfer Application (REST API's).
 
-The management application runs on a Linux logical partition on a
+The management application runs on a LinaOS logical partition on a
 POWER8 or newer processor-based server that is virtualized by PowerVM.
 System configuration, maintenance, and control functions which
 traditionally require an HMC can be implemented in the management
@@ -223,5 +223,5 @@ Additional Information
 ======================
 
 For more information on the documentation for CRQ Messages, VMC Messages,
-HMC interface Buffers, and signal messages please refer to the Linux on
+HMC interface Buffers, and signal messages please refer to the LinaOS on
 Power Architecture Platform Reference. Section F.

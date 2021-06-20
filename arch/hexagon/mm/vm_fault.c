@@ -2,7 +2,7 @@
 /*
  * Memory fault handling for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The LinaOS Foundation. All rights reserved.
  */
 
 /*
@@ -12,13 +12,13 @@
  */
 
 #include <asm/traps.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/signal.h>
-#include <linux/extable.h>
-#include <linux/hardirq.h>
-#include <linux/perf_event.h>
+#include <linaos/uaccess.h>
+#include <linaos/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/signal.h>
+#include <linaos/extable.h>
+#include <linaos/hardirq.h>
+#include <linaos/perf_event.h>
 
 /*
  * Decode of hardware exception sends us to one of several

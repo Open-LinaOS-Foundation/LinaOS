@@ -7,14 +7,14 @@
  * Author: Dajun Dajun Chen <dajun.chen@diasemi.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/err.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/reg.h>
+#include <linaos/mfd/da9052/da9052.h>
+#include <linaos/mfd/da9052/reg.h>
 
 #define rtc_err(rtc, fmt, ...) \
 		dev_err(rtc->da9052->dev, "%s: " fmt, __func__, ##__VA_ARGS__)

@@ -5,13 +5,13 @@
 // Copyright (C) 2018 Simon Shields <simon@lineageos.org>
 // Copyright (C) 2020 Samsung Electronics Co., Ltd.
 
-#include <linux/clk.h>
-#include <linux/mfd/wm8994/registers.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/mfd/wm8994/registers.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/regulator/consumer.h>
 #include <sound/jack.h>
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>

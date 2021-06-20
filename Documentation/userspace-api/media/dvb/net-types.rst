@@ -6,4 +6,4 @@
 Net Data Types
 **************
 
-.. kernel-doc:: include/uapi/linux/dvb/net.h
+.. kernel-doc:: include/uapi/linaos/dvb/net.h

@@ -35,9 +35,9 @@
  * SOFTWARE.
  */
 
-#include <linux/sched/signal.h>
-#include <linux/module.h>
-#include <linux/splice.h>
+#include <linaos/sched/signal.h>
+#include <linaos/module.h>
+#include <linaos/splice.h>
 #include <crypto/aead.h>
 
 #include <net/strparser.h>

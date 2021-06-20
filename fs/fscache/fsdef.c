@@ -6,7 +6,7 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL CACHE
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "internal.h"
 
 static

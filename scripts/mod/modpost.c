@@ -8,7 +8,7 @@
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
- * Usage: modpost vmlinux module1.o module2.o ...
+ * Usage: modpost vmlinaos module1.o module2.o ...
  */
 
 #define _GNU_SOURCE
@@ -19,7 +19,7 @@
 #include <limits.h>
 #include <errno.h>
 #include "modpost.h"
-#include "../../include/linux/license.h"
+#include "../../include/linaos/license.h"
 
 /* Are we using CONFIG_MODVERSIONS? */
 static int modversions = 0;
@@ -41,7 +41,7 @@ static bool error_occurred;
 
 /*
  * Cut off the warnings when there are too many. This typically occurs when
- * vmlinux is missing. ('make modules' without building vmlinux.)
+ * vmlinaos is missing. ('make modules' without building vmlinaos.)
  */
 #define MAX_UNRESOLVED_REPORTS	10
 static unsigned int nr_unresolved;
@@ -52,7 +52,7 @@ enum export {
 	export_unknown
 };
 
-/* In kernel, this size is defined in linux/module.h;
+/* In kernel, this size is defined in linaos/module.h;
  * here we use Elf_Addr instead of long for covering cross-compile
  */
 
@@ -177,7 +177,7 @@ static struct module *new_module(const char *modname)
 
 	/* add to list */
 	strcpy(mod->name, modname);
-	mod->is_vmlinux = (strcmp(modname, "vmlinux") == 0);
+	mod->is_vmlinaos = (strcmp(modname, "vmlinaos") == 0);
 	mod->gpl_compatible = -1;
 	mod->next = modules;
 	modules = mod;
@@ -407,11 +407,11 @@ static struct symbol *sym_add_exported(const char *name, struct module *mod,
 
 	if (!s) {
 		s = new_symbol(name, mod, export);
-	} else if (!external_module || s->module->is_vmlinux ||
+	} else if (!external_module || s->module->is_vmlinaos ||
 		   s->module == mod) {
 		warn("%s: '%s' exported twice. Previous export was in %s%s\n",
 		     mod->name, name, s->module->name,
-		     s->module->is_vmlinux ? "" : ".ko");
+		     s->module->is_vmlinaos ? "" : ".ko");
 		return s;
 	}
 
@@ -661,7 +661,7 @@ static void handle_modversion(const struct module *mod,
 
 	if (sym->st_shndx == SHN_UNDEF) {
 		warn("EXPORT symbol \"%s\" [%s%s] version generation failed, symbol will not be versioned.\n",
-		     symname, mod->name, mod->is_vmlinux ? "" : ".ko");
+		     symname, mod->name, mod->is_vmlinaos ? "" : ".ko");
 		return;
 	}
 
@@ -893,7 +893,7 @@ static void check_section(const char *modname, struct elf_info *elf,
 	    !match(sec, section_white_list)) {
 		warn("%s (%s): unexpected non-allocatable section.\n"
 		     "Did you forget to use \"ax\"/\"aw\" in a .S file?\n"
-		     "Note that for example <linux/init.h> contains\n"
+		     "Note that for example <linaos/init.h> contains\n"
 		     "section definitions for use in .S files.\n\n",
 		     modname, sec);
 	}
@@ -1466,7 +1466,7 @@ static void report_sec_mismatch(const char *modname,
 		"The variable %s references\n"
 		"the %s %s%s%s\n"
 		"If the reference is valid then annotate the\n"
-		"variable with __init* or __refdata (see linux/init.h) "
+		"variable with __init* or __refdata (see linaos/init.h) "
 		"or name the variable:\n",
 		fromsym, to, prl_to, tosym, to_p);
 		print_section_list(mismatch->symbol_white_list);
@@ -1488,7 +1488,7 @@ static void report_sec_mismatch(const char *modname,
 		"The variable %s references\n"
 		"the %s %s%s%s\n"
 		"If the reference is valid then annotate the\n"
-		"variable with __exit* (see linux/init.h) or "
+		"variable with __exit* (see linaos/init.h) or "
 		"name the variable:\n",
 		fromsym, to, prl_to, tosym, to_p);
 		print_section_list(mismatch->symbol_white_list);
@@ -1995,7 +1995,7 @@ static void read_symbols(const char *modname)
 		free(tmp);
 	}
 
-	if (!mod->is_vmlinux) {
+	if (!mod->is_vmlinaos) {
 		license = get_modinfo(&info, "license");
 		if (!license)
 			error("missing MODULE_LICENSE() in %s\n", modname);
@@ -2054,7 +2054,7 @@ static void read_symbols(const char *modname)
 
 	check_sec_ref(mod, modname, &info);
 
-	if (!mod->is_vmlinux) {
+	if (!mod->is_vmlinaos) {
 		version = get_modinfo(&info, "version");
 		if (version || all_versions)
 			get_src_version(modname, mod->srcversion,
@@ -2186,16 +2186,16 @@ static void check_modname_len(struct module *mod)
  **/
 static void add_header(struct buffer *b, struct module *mod)
 {
-	buf_printf(b, "#include <linux/module.h>\n");
+	buf_printf(b, "#include <linaos/module.h>\n");
 	/*
 	 * Include build-salt.h after module.h in order to
 	 * inherit the definitions.
 	 */
 	buf_printf(b, "#define INCLUDE_VERMAGIC\n");
-	buf_printf(b, "#include <linux/build-salt.h>\n");
-	buf_printf(b, "#include <linux/elfnote-lto.h>\n");
-	buf_printf(b, "#include <linux/vermagic.h>\n");
-	buf_printf(b, "#include <linux/compiler.h>\n");
+	buf_printf(b, "#include <linaos/build-salt.h>\n");
+	buf_printf(b, "#include <linaos/elfnote-lto.h>\n");
+	buf_printf(b, "#include <linaos/vermagic.h>\n");
+	buf_printf(b, "#include <linaos/compiler.h>\n");
 	buf_printf(b, "\n");
 	buf_printf(b, "BUILD_SALT;\n");
 	buf_printf(b, "BUILD_LTO_INFO;\n");
@@ -2287,7 +2287,7 @@ static void add_depends(struct buffer *b, struct module *mod)
 	/* Clear ->seen flag of modules that own symbols needed by this. */
 	for (s = mod->unres; s; s = s->next)
 		if (s->module)
-			s->module->seen = s->module->is_vmlinux;
+			s->module->seen = s->module->is_vmlinaos;
 
 	buf_printf(b, "\n");
 	buf_printf(b, "MODULE_INFO(depends, \"");
@@ -2552,7 +2552,7 @@ int main(int argc, char **argv)
 	for (mod = modules; mod; mod = mod->next) {
 		char fname[PATH_MAX];
 
-		if (mod->is_vmlinux || mod->from_dump)
+		if (mod->is_vmlinaos || mod->from_dump)
 			continue;
 
 		buf.pos = 0;

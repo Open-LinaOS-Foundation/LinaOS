@@ -1,35 +1,35 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Real Time Clock interface for Linux on Atmel AT91RM9200
+ *	Real Time Clock interface for LinaOS on Atmel AT91RM9200
  *
  *	Copyright (C) 2002 Rick Bronson
  *
  *	Converted to RTC class model by Andrew Victor
  *
- *	Ported to Linux 2.6 by Steven Scholz
+ *	Ported to LinaOS 2.6 by Steven Scholz
  *	Based on s3c2410-rtc.c Simtec Electronics
  *
  *	Based on sa1100-rtc.c by Nils Faerber
  *	Based on rtc.c by Paul Gortmaker
  */
 
-#include <linux/bcd.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spinlock.h>
-#include <linux/suspend.h>
-#include <linux/time.h>
-#include <linux/uaccess.h>
+#include <linaos/bcd.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioctl.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/spinlock.h>
+#include <linaos/suspend.h>
+#include <linaos/time.h>
+#include <linaos/uaccess.h>
 
 #define	AT91_RTC_CR		0x00			/* Control Register */
 #define		AT91_RTC_UPDTIM		BIT(0)		/* Update Request Time Register */

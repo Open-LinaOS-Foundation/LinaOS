@@ -8,12 +8,12 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_driver_gige.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/slab.h>
+#include <linaos/ssb/ssb.h>
+#include <linaos/ssb/ssb_driver_gige.h>
+#include <linaos/export.h>
+#include <linaos/pci.h>
+#include <linaos/pci_regs.h>
+#include <linaos/slab.h>
 
 
 /*

@@ -12,14 +12,14 @@
  * Chris Zankel <chris@zankel.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/memblock.h>
 
 #include <asm/pci-bridge.h>
 #include <asm/platform.h>

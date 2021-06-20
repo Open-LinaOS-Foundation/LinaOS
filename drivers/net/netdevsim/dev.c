@@ -15,23 +15,23 @@
  * THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/inet.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/random.h>
-#include <linux/rtnetlink.h>
-#include <linux/workqueue.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/etherdevice.h>
+#include <linaos/inet.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/random.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/workqueue.h>
 #include <net/devlink.h>
 #include <net/ip.h>
 #include <net/flow_offload.h>
-#include <uapi/linux/devlink.h>
-#include <uapi/linux/ip.h>
-#include <uapi/linux/udp.h>
+#include <uapi/linaos/devlink.h>
+#include <uapi/linaos/ip.h>
+#include <uapi/linaos/udp.h>
 
 #include "netdevsim.h"
 

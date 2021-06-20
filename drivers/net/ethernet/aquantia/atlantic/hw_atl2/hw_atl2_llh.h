@@ -6,7 +6,7 @@
 #ifndef HW_ATL2_LLH_H
 #define HW_ATL2_LLH_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct aq_hw_s;
 

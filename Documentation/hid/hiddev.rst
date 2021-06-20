@@ -11,7 +11,7 @@ interfaces, but have similar sorts of communication needs. The two big
 examples for this are power devices (especially uninterruptable power
 supplies) and monitor control on higher end monitors.
 
-To support these disparate requirements, the Linux USB system provides
+To support these disparate requirements, the LinaOS USB system provides
 HID events to two separate interfaces:
 * the input subsystem, which converts HID events into normal input
 device interfaces (such as keyboard, mouse and joystick) and a
@@ -66,7 +66,7 @@ The HIDDEV API
 
 This description should be read in conjunction with the HID
 specification, freely available from https://www.usb.org, and
-conveniently linked of http://www.linux-usb.org.
+conveniently linked of http://www.linaos-usb.org.
 
 The hiddev API uses a read() interface, and a set of ioctl() calls.
 
@@ -92,7 +92,7 @@ usage changes available to the reader using a struct hiddev_event::
 
 containing the HID usage identifier for the status that changed, and
 the value that it was changed to. Note that the structure is defined
-within <linux/hiddev.h>, along with some other useful #defines and
+within <linaos/hiddev.h>, along with some other useful #defines and
 structures.  The HID usage identifier is a composite of the HID usage
 page shifted to the 16 high order bits ORed with the usage code.  The
 behavior of the read() function can be modified using the HIDIOCSFLAG

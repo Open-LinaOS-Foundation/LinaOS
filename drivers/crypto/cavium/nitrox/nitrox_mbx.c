@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 
 #include "nitrox_csr.h"
 #include "nitrox_hal.h"

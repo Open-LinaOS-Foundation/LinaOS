@@ -17,12 +17,12 @@
 #ifndef __CYTTSP_CORE_H__
 #define __CYTTSP_CORE_H__
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/input/cyttsp.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/input/cyttsp.h>
 
 #define CY_NUM_RETRY		16 /* max number of retries for read ops */
 

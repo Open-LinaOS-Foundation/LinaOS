@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/renesas/sh7763rdp/irq.c
+ * linaos/arch/sh/boards/renesas/sh7763rdp/irq.c
  *
  * Renesas Solutions SH7763RDP Support.
  *
@@ -8,8 +8,8 @@
  * Copyright (C) 2008  Nobuhiro Iwamatsu <iwamatsu.nobuhiro@renesas.com>
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <mach/sh7763rdp.h>

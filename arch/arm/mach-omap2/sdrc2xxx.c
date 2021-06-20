@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap2/sdrc2xxx.c
+ * linaos/arch/arm/mach-omap2/sdrc2xxx.c
  *
  * SDRAM timing related functions for OMAP2xxx
  *
@@ -12,14 +12,14 @@
  * Richard Woodruff <r-woodruff2@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
 
 #include "soc.h"
 #include "iomap.h"

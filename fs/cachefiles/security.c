@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/fs.h>
-#include <linux/cred.h>
+#include <linaos/fs.h>
+#include <linaos/cred.h>
 #include "internal.h"
 
 /*

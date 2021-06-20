@@ -8,17 +8,17 @@
 #ifndef _SURFACE_AGGREGATOR_SSH_PACKET_LAYER_H
 #define _SURFACE_AGGREGATOR_SSH_PACKET_LAYER_H
 
-#include <linux/atomic.h>
-#include <linux/kfifo.h>
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/serdev.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linaos/atomic.h>
+#include <linaos/kfifo.h>
+#include <linaos/ktime.h>
+#include <linaos/list.h>
+#include <linaos/serdev.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
 
-#include <linux/surface_aggregator/serial_hub.h>
+#include <linaos/surface_aggregator/serial_hub.h>
 #include "ssh_parser.h"
 
 /**

@@ -7,7 +7,7 @@ BPF drgn tools
 drgn scripts is a convenient and easy to use mechanism to retrieve arbitrary
 kernel data structures. drgn is not relying on kernel UAPI to read the data.
 Instead it's reading directly from ``/proc/kcore`` or vmcore and pretty prints
-the data based on DWARF debug information from vmlinux.
+the data based on DWARF debug information from vmlinaos.
 
 This document describes BPF related drgn tools.
 

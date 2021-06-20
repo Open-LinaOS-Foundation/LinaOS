@@ -10,7 +10,7 @@
 #ifndef __LINUX_HSI_CORE_H__
 #define __LINUX_HSI_CORE_H__
 
-#include <linux/hsi/hsi.h>
+#include <linaos/hsi/hsi.h>
 
 struct hsi_cl_info {
 	struct list_head	list;

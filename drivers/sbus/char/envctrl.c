@@ -19,18 +19,18 @@
  *              Daniele Bellucci <bellucda@tiscali.it>
  */
 
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/miscdevice.h>
-#include <linux/kmod.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/kthread.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/miscdevice.h>
+#include <linaos/kmod.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/envctrl.h>
 #include <asm/io.h>
 

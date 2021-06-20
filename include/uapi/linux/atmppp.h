@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* atmppp.h - RFC2364 PPPoATM */
 
 /* Written 2000 by Mitchell Blank Jr */
@@ -6,7 +6,7 @@
 #ifndef _LINUX_ATMPPP_H
 #define _LINUX_ATMPPP_H
 
-#include <linux/atm.h>
+#include <linaos/atm.h>
 
 #define PPPOATM_ENCAPS_AUTODETECT	(0)
 #define PPPOATM_ENCAPS_VC		(1)

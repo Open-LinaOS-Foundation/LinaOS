@@ -8,7 +8,7 @@
 #ifndef __SOUND_HDA_REGISTER_H
 #define __SOUND_HDA_REGISTER_H
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <sound/hdaudio.h>
 
 #define AZX_REG_GCAP			0x00

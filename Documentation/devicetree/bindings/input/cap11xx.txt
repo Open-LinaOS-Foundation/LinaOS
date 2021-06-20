@@ -18,7 +18,7 @@ Required properties:
 
 Optional properties:
 
-	autorepeat:		Enables the Linux input system's autorepeat
+	autorepeat:		Enables the LinaOS input system's autorepeat
 				feature on the input device.
 
 	microchip,sensor-gain:	Defines the gain of the sensor circuitry. This
@@ -32,7 +32,7 @@ Optional properties:
 				open drain. This property allows using the active
 				high push-pull output.
 
-	linux,keycodes:		Specifies an array of numeric keycode values to
+	linaos,keycodes:		Specifies an array of numeric keycode values to
 				be used for the channels. If this property is
 				omitted, KEY_A, KEY_B, etc are used as
 				defaults. The array must have exactly six
@@ -49,7 +49,7 @@ i2c_controller {
 		autorepeat;
 		microchip,sensor-gain = <2>;
 
-		linux,keycodes = <103>,		/* KEY_UP */
+		linaos,keycodes = <103>,		/* KEY_UP */
 				 <106>,		/* KEY_RIGHT */
 				 <108>,		/* KEY_DOWN */
 				 <105>,		/* KEY_LEFT */
@@ -72,7 +72,7 @@ i2c_controller {
 		alive@2 {
 			label = "cap11xx:green:alive";
 			reg = <2>;
-			linux,default_trigger = "heartbeat";
+			linaos,default_trigger = "heartbeat";
 		};
 	};
 }

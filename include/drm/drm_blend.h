@@ -23,8 +23,8 @@
 #ifndef __DRM_BLEND_H__
 #define __DRM_BLEND_H__
 
-#include <linux/list.h>
-#include <linux/ctype.h>
+#include <linaos/list.h>
+#include <linaos/ctype.h>
 #include <drm/drm_mode.h>
 
 #define DRM_MODE_BLEND_PREMULTI		0

@@ -20,12 +20,12 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include "linux/delay.h"
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/fb.h>
+#include "linaos/delay.h"
+#include <linaos/types.h>
+#include <linaos/pci.h>
 
 #include "smumgr.h"
 #include "pp_debug.h"

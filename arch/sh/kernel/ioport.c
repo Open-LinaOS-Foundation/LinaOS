@@ -5,8 +5,8 @@
  * Copyright (C) 2000  Niibe Yutaka
  * Copyright (C) 2005 - 2007 Paul Mundt
  */
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
 #include <asm/io_trapped.h>
 
 unsigned long sh_io_port_base __read_mostly = -1;

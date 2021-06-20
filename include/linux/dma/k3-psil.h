@@ -6,7 +6,7 @@
 #ifndef K3_PSIL_H_
 #define K3_PSIL_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define K3_PSIL_DST_THREAD_ID_OFFSET 0x8000
 

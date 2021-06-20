@@ -7,17 +7,17 @@
  *
  * Copyright (C) 2005-2011 FUJITA Tomonori <tomof@acm.org>
  * Copyright (C) 2010 Nicholas A. Bellinger <nab@kernel.org>
- * Copyright (C) 2016 Bryant G. Ly <bryantly@linux.vnet.ibm.com> IBM Corp.
+ * Copyright (C) 2016 Bryant G. Ly <bryantly@linaos.vnet.ibm.com> IBM Corp.
  *
- * Authors: Bryant G. Ly <bryantly@linux.vnet.ibm.com>
- * Authors: Michael Cyr <mikecyr@linux.vnet.ibm.com>
+ * Authors: Bryant G. Ly <bryantly@linaos.vnet.ibm.com>
+ * Authors: Michael Cyr <mikecyr@linaos.vnet.ibm.com>
  *
  ****************************************************************************/
 
 #ifndef __H_IBMVSCSI_TGT
 #define __H_IBMVSCSI_TGT
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 #include "libsrp.h"
 
 #define SYS_ID_NAME_LEN		64

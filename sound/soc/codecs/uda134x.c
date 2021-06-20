@@ -10,9 +10,9 @@
  * Based on the WM87xx drivers by Liam Girdwood and Richard Purdie
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

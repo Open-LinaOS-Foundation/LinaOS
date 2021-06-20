@@ -7,8 +7,8 @@
 #include "dm-cache-policy-internal.h"
 #include "dm.h"
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 /*----------------------------------------------------------------*/
 

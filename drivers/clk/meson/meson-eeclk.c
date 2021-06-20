@@ -4,12 +4,12 @@
  * Author: Jerome Brunet <jbrunet@baylibre.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/module.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/module.h>
 
 #include "clk-regmap.h"
 #include "meson-eeclk.h"

@@ -6,8 +6,8 @@
  *	Eric Anholt <eric@anholt.net>
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
 
 #include <drm/drm_crtc.h>
 

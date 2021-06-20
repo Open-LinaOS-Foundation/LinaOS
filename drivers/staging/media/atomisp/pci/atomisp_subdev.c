@@ -15,13 +15,13 @@
  *
  *
  */
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 
 #include <media/v4l2-event.h>
 #include <media/v4l2-mediabus.h>

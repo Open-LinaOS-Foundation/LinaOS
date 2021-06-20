@@ -3,10 +3,10 @@
  * string arrays, and the i18n pointer.
  */
 
-#include <linux/slab.h>		/* For kmalloc. */
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <linaos/slab.h>		/* For kmalloc. */
+#include <linaos/ctype.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
 #include "speakup.h"
 #include "spk_priv.h"
 

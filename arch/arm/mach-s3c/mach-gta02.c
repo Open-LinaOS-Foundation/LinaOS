@@ -8,43 +8,43 @@
 //          Werner Almesberger <werner@openmoko.org>
 // All rights reserved.
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/input.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/workqueue.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/input.h>
+#include <linaos/io.h>
+#include <linaos/i2c.h>
 
-#include <linux/mmc/host.h>
+#include <linaos/mmc/host.h>
 
-#include <linux/mfd/pcf50633/adc.h>
-#include <linux/mfd/pcf50633/backlight.h>
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/gpio.h>
-#include <linux/mfd/pcf50633/mbc.h>
-#include <linux/mfd/pcf50633/pmic.h>
+#include <linaos/mfd/pcf50633/adc.h>
+#include <linaos/mfd/pcf50633/backlight.h>
+#include <linaos/mfd/pcf50633/core.h>
+#include <linaos/mfd/pcf50633/gpio.h>
+#include <linaos/mfd/pcf50633/mbc.h>
+#include <linaos/mfd/pcf50633/pmic.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/nand-ecc-sw-hamming.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
 
-#include <linux/regulator/machine.h>
+#include <linaos/regulator/machine.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/s3c24xx.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/s3c24xx.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>
@@ -52,12 +52,12 @@
 #include <asm/mach/map.h>
 #include <asm/mach/irq.h>
 
-#include <linux/platform_data/i2c-s3c2410.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
-#include <linux/platform_data/touchscreen-s3c2410.h>
-#include <linux/platform_data/usb-ohci-s3c2410.h>
-#include <linux/platform_data/usb-s3c2410_udc.h>
-#include <linux/platform_data/fb-s3c2410.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/mtd-nand-s3c2410.h>
+#include <linaos/platform_data/touchscreen-s3c2410.h>
+#include <linaos/platform_data/usb-ohci-s3c2410.h>
+#include <linaos/platform_data/usb-s3c2410_udc.h>
+#include <linaos/platform_data/fb-s3c2410.h>
 
 #include "regs-gpio.h"
 #include "regs-irq.h"

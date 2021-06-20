@@ -47,7 +47,7 @@
  * 320502b (lab-pc+)
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "../comedidev.h"
 

@@ -5,15 +5,15 @@
  * Copyright (C) 2014 Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/sched.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/clps711x.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/of_gpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/sched.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mfd/syscon/clps711x.h>
 
 #define CLPS711X_KEYPAD_COL_COUNT	8
 

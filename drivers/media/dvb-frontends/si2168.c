@@ -5,7 +5,7 @@
  * Copyright (C) 2014 Antti Palosaari <crope@iki.fi>
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include "si2168_priv.h"
 

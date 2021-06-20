@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/clocksource/arm_arch_timer.c
+ *  linaos/drivers/clocksource/arm_arch_timer.c
  *
  *  Copyright (C) 2011 ARM Ltd.
  *  All Rights Reserved
@@ -8,25 +8,25 @@
 
 #define pr_fmt(fmt) 	"arch_timer: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/clocksource_ids.h>
-#include <linux/interrupt.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/sched/clock.h>
-#include <linux/sched_clock.h>
-#include <linux/acpi.h>
-#include <linux/arm-smccc.h>
-#include <linux/ptp_kvm.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/smp.h>
+#include <linaos/cpu.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/clockchips.h>
+#include <linaos/clocksource.h>
+#include <linaos/clocksource_ids.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/sched/clock.h>
+#include <linaos/sched_clock.h>
+#include <linaos/acpi.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/ptp_kvm.h>
 
 #include <asm/arch_timer.h>
 #include <asm/virt.h>

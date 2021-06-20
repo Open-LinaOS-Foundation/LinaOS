@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/renesas/sdk7780/irq.c
+ * linaos/arch/sh/boards/renesas/sdk7780/irq.c
  *
  * Renesas Technology Europe SDK7780 Support.
  *
  * Copyright (C) 2008  Nicholas Beck <nbeck@mpc-data.co.uk>
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
 #include <mach/sdk7780.h>
 
 enum {

@@ -22,11 +22,11 @@ Optional Properties for Direct Keyes
   When this property is set, it means that when the pin level
   is low, the key is pressed(active).
 - marvell,direct-key-map : It is a u16 array. Each item indicates
-  the linux key-code for the direct key.
+  the linaos key-code for the direct key.
 
 Optional Properties For Rotary
 - marvell,rotary0 : It is a u32 value. Bit[31:16] is the
-  linux key-code for rotary up. Bit[15:0] is the linux key-code
+  linaos key-code for rotary up. Bit[15:0] is the linaos key-code
   for rotary down. It is for rotary 0.
 - marvell,rotary1 : Same as marvell,rotary0. It is for rotary 1.
 - marvell,rotary-rel-key : When rotary is used for relative axes
@@ -38,7 +38,7 @@ Examples:
 	keypad: keypad@d4012000 {
 		keypad,num-rows = <3>;
 		keypad,num-columns = <5>;
-		linux,keymap = <0x0000000e	/* KEY_BACKSPACE */
+		linaos,keymap = <0x0000000e	/* KEY_BACKSPACE */
 				0x0001006b	/* KEY_END */
 				0x00020061	/* KEY_RIGHTCTRL */
 				0x0003000b	/* KEY_0 */

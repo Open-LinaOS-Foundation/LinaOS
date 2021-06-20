@@ -20,7 +20,7 @@
 #ifndef __DRIVERS_PHY_COMPANION_H
 #define __DRIVERS_PHY_COMPANION_H
 
-#include <linux/usb/otg.h>
+#include <linaos/usb/otg.h>
 
 /* phy_companion to take care of VBUS, ID and srp capabilities */
 struct phy_companion {

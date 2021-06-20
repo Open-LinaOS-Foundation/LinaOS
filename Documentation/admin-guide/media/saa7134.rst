@@ -63,10 +63,10 @@ distribution), with this content::
 Changes / Fixes
 ---------------
 
-Please mail to linux-media AT vger.kernel.org unified diffs against
-the linux media git tree:
+Please mail to linaos-media AT vger.kernel.org unified diffs against
+the linaos media git tree:
 
-    https://git.linuxtv.org/media_tree.git/
+    https://git.linaostv.org/media_tree.git/
 
 This is done by committing a patch at a clone of the git tree and
 submitting the patch using ``git send-email``. Don't forget to

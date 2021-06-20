@@ -23,7 +23,7 @@
 #include <assert_support.h>
 /* HRT_GDC_N */
 #include "gdc_device.h"
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /* This module provides a binary descriptions to used to find a binary. Since,
  * every stage is associated with a binary, it implicity helps stage

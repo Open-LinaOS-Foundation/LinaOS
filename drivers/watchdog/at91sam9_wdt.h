@@ -15,7 +15,7 @@
 #ifndef AT91_WDT_H
 #define AT91_WDT_H
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 #define AT91_WDT_CR		0x00			/* Watchdog Control Register */
 #define  AT91_WDT_WDRSTT	BIT(0)			/* Restart */

@@ -75,12 +75,12 @@ the VM is shut down.
 3. Extensions
 =============
 
-As of Linux 2.6.22, the KVM ABI has been stabilized: no backward
+As of LinaOS 2.6.22, the KVM ABI has been stabilized: no backward
 incompatible change are allowed.  However, there is an extension
 facility that allows backward-compatible extensions to the API to be
 queried and used.
 
-The extension mechanism is not based on the Linux version number.
+The extension mechanism is not based on the LinaOS version number.
 Instead, kvm defines extension identifiers and a facility to query
 whether a particular extension identifier is available.  If it is, a
 set of ioctls is available for application use.
@@ -128,7 +128,7 @@ description:
 :Returns: the constant KVM_API_VERSION (=12)
 
 This identifies the API version as the stable kvm API. It is not
-expected that this number will change.  However, Linux 2.6.20 and
+expected that this number will change.  However, LinaOS 2.6.20 and
 2.6.21 report earlier versions; these are not documented and not
 supported.  Applications should refuse to run if KVM_GET_API_VERSION
 returns a value other than 12.  If this check passes, all ioctls
@@ -3864,7 +3864,7 @@ interrupt whenever there isn't a pending interrupt from i8254.
   };
 
 pit_reinject = 0 (!reinject mode) is recommended, unless running an old
-operating system that uses the PIT for timing (e.g. Linux 2.4.x).
+operating system that uses the PIT for timing (e.g. LinaOS 2.4.x).
 
 4.100 KVM_PPC_CONFIGURE_V3_MMU
 ------------------------------
@@ -5638,7 +5638,7 @@ The following information is provided along with the description:
 
 This capability enables interception of OSI hypercalls that otherwise would
 be treated as normal system calls to be injected into the guest. OSI hypercalls
-were invented by Mac-on-Linux to have a standardized communication mechanism
+were invented by Mac-on-LinaOS to have a standardized communication mechanism
 between the guest and the host.
 
 When this capability is enabled, KVM_EXIT_OSI can occur.
@@ -6697,8 +6697,8 @@ environments running on the machine.
 The information is associated with the DIAGNOSE 0x318 instruction, which sets
 an 8-byte value consisting of a one-byte Control Program Name Code (CPNC) and
 a 7-byte Control Program Version Code (CPVC). The CPNC determines what
-environment the control program is running in (e.g. Linux, z/VM...), and the
-CPVC is used for information specific to OS (e.g. Linux version, Linux
+environment the control program is running in (e.g. LinaOS, z/VM...), and the
+CPVC is used for information specific to OS (e.g. LinaOS version, LinaOS
 distribution...)
 
 If this capability is available, then the CPNC and CPVC can be synchronized

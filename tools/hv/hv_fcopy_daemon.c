@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * An implementation of host to guest copy functionality for Linux.
+ * An implementation of host to guest copy functionality for LinaOS.
  *
  * Copyright (C) 2014, Microsoft, Inc.
  *
@@ -14,8 +14,8 @@
 #include <unistd.h>
 #include <string.h>
 #include <errno.h>
-#include <linux/hyperv.h>
-#include <linux/limits.h>
+#include <linaos/hyperv.h>
+#include <linaos/limits.h>
 #include <syslog.h>
 #include <sys/stat.h>
 #include <fcntl.h>

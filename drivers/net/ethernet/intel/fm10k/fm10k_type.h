@@ -7,9 +7,9 @@
 /* forward declaration */
 struct fm10k_hw;
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 
 #include "fm10k_mbx.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/drivers/scsi/scsi_proc.c
+ * linaos/drivers/scsi/scsi_proc.c
  *
  * The functions in this file provide an interface between
  * the PROC file system and the SCSI device drivers
@@ -17,17 +17,17 @@
  * Michael A. Griffith <grif@acm.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/errno.h>
-#include <linux/blkdev.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
-#include <linux/gfp.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/proc_fs.h>
+#include <linaos/errno.h>
+#include <linaos/blkdev.h>
+#include <linaos/seq_file.h>
+#include <linaos/mutex.h>
+#include <linaos/gfp.h>
+#include <linaos/uaccess.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>

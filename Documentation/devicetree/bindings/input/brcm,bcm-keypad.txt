@@ -55,10 +55,10 @@ Board Specific Properties:
 - pull-up-enabled: An optional property indicating the Keypad scan mode.
   If specified implies the keypad scan pull-up has been enabled.
 
-- autorepeat: Boolean, Enable auto repeat feature of Linux input
+- autorepeat: Boolean, Enable auto repeat feature of LinaOS input
 	  subsystem (optional).
 
-- linux,keymap: The keymap for keys as described in the binding document
+- linaos,keymap: The keymap for keys as described in the binding document
   devicetree/bindings/input/matrix-keymap.txt.
 
 Example:
@@ -73,7 +73,7 @@ Example:
 		keypad,num-rows = <5>;
 		keypad,num-columns = <5>;
 
-		linux,keymap = <MATRIX_KEY(0x00, 0x02, KEY_F) /* key_forward */
+		linaos,keymap = <MATRIX_KEY(0x00, 0x02, KEY_F) /* key_forward */
 		MATRIX_KEY(0x00, 0x03, KEY_HOME) /* key_home */
 		MATRIX_KEY(0x00, 0x04, KEY_M) /* key_message */
 		MATRIX_KEY(0x01, 0x00, KEY_A) /* key_contacts */

@@ -2,8 +2,8 @@
 #ifndef SOUND_FIREWIRE_ISO_RESOURCES_H_INCLUDED
 #define SOUND_FIREWIRE_ISO_RESOURCES_H_INCLUDED
 
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
 
 struct fw_unit;
 

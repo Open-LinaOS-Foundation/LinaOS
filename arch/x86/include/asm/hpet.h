@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_HPET_H
 #define _ASM_X86_HPET_H
 
-#include <linux/msi.h>
+#include <linaos/msi.h>
 
 #ifdef CONFIG_HPET_TIMER
 
@@ -76,7 +76,7 @@ extern void force_hpet_resume(void);
 
 #ifdef CONFIG_HPET_EMULATE_RTC
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 typedef irqreturn_t (*rtc_irq_handler)(int interrupt, void *cookie);
 extern int hpet_mask_rtc_irq_bit(unsigned long bit_mask);

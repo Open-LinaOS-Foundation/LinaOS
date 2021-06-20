@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-arm/hardware/amba_clcd.h -- Integrator LCD panel.
+ * linaos/include/asm-arm/hardware/amba_clcd.h -- Integrator LCD panel.
  *
  * David A Rusling
  *
@@ -9,8 +9,8 @@
  * License.  See the file COPYING in the main directory of this archive
  * for more details.
  */
-#include <linux/fb.h>
-#include <linux/amba/clcd-regs.h>
+#include <linaos/fb.h>
+#include <linaos/amba/clcd-regs.h>
 
 enum {
 	/* individual formats */

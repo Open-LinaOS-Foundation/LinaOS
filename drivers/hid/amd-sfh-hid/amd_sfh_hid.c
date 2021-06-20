@@ -5,9 +5,9 @@
  * Authors: Nehal Bakulchandra Shah <Nehal-bakulchandra.shah@amd.com>
  *	    Sandeep Singh <sandeep.singh@amd.com>
  */
-#include <linux/hid.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
+#include <linaos/hid.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>
 
 #include "amd_sfh_hid.h"
 

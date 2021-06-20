@@ -5,7 +5,7 @@
  * Copyright (C) 2018 Stanislaw Gruszka <stf_xl@wp.pl>
  */
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include "mt76x0.h"
 
 static void

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * HMM stands for Heterogeneous Memory Management, it is a helper layer inside
- * the linux kernel to help device drivers mirror a process address space in
+ * the linaos kernel to help device drivers mirror a process address space in
  * the device. This allows the device to use the same address space which
  * makes communication and data exchange a lot easier.
  *

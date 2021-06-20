@@ -8,10 +8,10 @@
 #ifndef __DRIVERS_MTD_NAND_GPMI_NAND_H
 #define __DRIVERS_MTD_NAND_GPMI_NAND_H
 
-#include <linux/mtd/rawnand.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
 
 #define GPMI_CLK_MAX 5 /* MX6Q needs five clocks */
 struct resources {

@@ -10,7 +10,7 @@
 #define __ASM_PARISC_PROCESSOR_H
 
 #ifndef __ASSEMBLY__
-#include <linux/threads.h>
+#include <linaos/threads.h>
 
 #include <asm/prefetch.h>
 #include <asm/hardware.h>

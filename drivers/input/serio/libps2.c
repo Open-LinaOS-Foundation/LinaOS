@@ -7,14 +7,14 @@
  */
 
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/i8042.h>
-#include <linux/libps2.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
+#include <linaos/i8042.h>
+#include <linaos/libps2.h>
 
 #define DRIVER_DESC	"PS/2 driver library"
 

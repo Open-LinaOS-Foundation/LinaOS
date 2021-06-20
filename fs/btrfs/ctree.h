@@ -6,28 +6,28 @@
 #ifndef BTRFS_CTREE_H
 #define BTRFS_CTREE_H
 
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/highmem.h>
-#include <linux/fs.h>
-#include <linux/rwsem.h>
-#include <linux/semaphore.h>
-#include <linux/completion.h>
-#include <linux/backing-dev.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
+#include <linaos/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/highmem.h>
+#include <linaos/fs.h>
+#include <linaos/rwsem.h>
+#include <linaos/semaphore.h>
+#include <linaos/completion.h>
+#include <linaos/backing-dev.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
 #include <trace/events/btrfs.h>
 #include <asm/unaligned.h>
-#include <linux/pagemap.h>
-#include <linux/btrfs.h>
-#include <linux/btrfs_tree.h>
-#include <linux/workqueue.h>
-#include <linux/security.h>
-#include <linux/sizes.h>
-#include <linux/dynamic_debug.h>
-#include <linux/refcount.h>
-#include <linux/crc32c.h>
-#include <linux/iomap.h>
+#include <linaos/pagemap.h>
+#include <linaos/btrfs.h>
+#include <linaos/btrfs_tree.h>
+#include <linaos/workqueue.h>
+#include <linaos/security.h>
+#include <linaos/sizes.h>
+#include <linaos/dynamic_debug.h>
+#include <linaos/refcount.h>
+#include <linaos/crc32c.h>
+#include <linaos/iomap.h>
 #include "extent-io-tree.h"
 #include "extent_io.h"
 #include "extent_map.h"
@@ -68,7 +68,7 @@ struct btrfs_ref;
 
 /*
  * we can actually store much bigger names, but lets not confuse the rest
- * of linux
+ * of linaos
  */
 #define BTRFS_NAME_LEN 255
 

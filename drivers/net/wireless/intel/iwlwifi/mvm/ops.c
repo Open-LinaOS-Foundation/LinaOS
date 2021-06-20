@@ -4,8 +4,8 @@
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  * Copyright (C) 2016-2017 Intel Deutschland GmbH
  */
-#include <linux/module.h>
-#include <linux/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/vmalloc.h>
 #include <net/mac80211.h>
 
 #include "fw/notif-wait.h"
@@ -27,7 +27,7 @@
 #include "fw-api.h"
 #include "fw/acpi.h"
 
-#define DRV_DESCRIPTION	"The new Intel(R) wireless AGN driver for Linux"
+#define DRV_DESCRIPTION	"The new Intel(R) wireless AGN driver for LinaOS"
 MODULE_DESCRIPTION(DRV_DESCRIPTION);
 MODULE_AUTHOR(DRV_AUTHOR);
 MODULE_LICENSE("GPL");

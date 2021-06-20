@@ -7,10 +7,10 @@
  * Copyright (c) 2004 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/hda_codec.h>
 #include "hda_local.h"
 

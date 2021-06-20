@@ -1,7 +1,7 @@
 #ifndef __NOUVEAU_SVM_H__
 #define __NOUVEAU_SVM_H__
 #include <nvif/os.h>
-#include <linux/mmu_notifier.h>
+#include <linaos/mmu_notifier.h>
 struct drm_device;
 struct drm_file;
 struct nouveau_drm;

@@ -5,8 +5,8 @@
  *		      Sean Wang <sean.wang@mediatek.com>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
 
 #include "dsa_priv.h"
 

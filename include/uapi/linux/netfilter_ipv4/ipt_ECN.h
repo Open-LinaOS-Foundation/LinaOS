@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* Header file for iptables ipt_ECN target
  *
  * (C) 2002 by Harald Welte <laforge@gnumonks.org>
@@ -10,8 +10,8 @@
 #ifndef _IPT_ECN_TARGET_H
 #define _IPT_ECN_TARGET_H
 
-#include <linux/types.h>
-#include <linux/netfilter/xt_DSCP.h>
+#include <linaos/types.h>
+#include <linaos/netfilter/xt_DSCP.h>
 
 #define IPT_ECN_IP_MASK	(~XT_DSCP_MASK)
 

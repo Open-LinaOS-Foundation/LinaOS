@@ -6,10 +6,10 @@
  * Author: Mathieu Poirier <mathieu.poirier@linaro.org>
  */
 
-#include <linux/coresight-pmu.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/zalloc.h>
+#include <linaos/coresight-pmu.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/zalloc.h>
 #include <stdlib.h>
 #include <opencsd/c_api/opencsd_c_api.h>
 #include <opencsd/etmv4/trc_pkt_types_etmv4.h>

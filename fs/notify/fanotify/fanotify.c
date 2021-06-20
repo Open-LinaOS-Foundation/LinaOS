@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/fanotify.h>
-#include <linux/fdtable.h>
-#include <linux/fsnotify_backend.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h> /* UINT_MAX */
-#include <linux/mount.h>
-#include <linux/sched.h>
-#include <linux/sched/user.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/audit.h>
-#include <linux/sched/mm.h>
-#include <linux/statfs.h>
-#include <linux/stringhash.h>
+#include <linaos/fanotify.h>
+#include <linaos/fdtable.h>
+#include <linaos/fsnotify_backend.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h> /* UINT_MAX */
+#include <linaos/mount.h>
+#include <linaos/sched.h>
+#include <linaos/sched/user.h>
+#include <linaos/sched/signal.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
+#include <linaos/audit.h>
+#include <linaos/sched/mm.h>
+#include <linaos/statfs.h>
+#include <linaos/stringhash.h>
 
 #include "fanotify.h"
 

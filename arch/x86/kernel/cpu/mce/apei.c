@@ -16,10 +16,10 @@
  *   Author: Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/cper.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/acpi.h>
+#include <linaos/cper.h>
 #include <acpi/apei.h>
 #include <acpi/ghes.h>
 #include <asm/mce.h>

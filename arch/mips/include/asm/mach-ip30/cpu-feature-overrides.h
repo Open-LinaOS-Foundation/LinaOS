@@ -2,7 +2,7 @@
 /*
  * IP30/Octane cpu-features overrides.
  *
- * Copyright (C) 2003 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2003 Ralf Baechle <ralf@linaos-mips.org>
  *		 2004-2007 Stanislaw Skowronek <skylark@unaligned.org>
  *		 2009 Johannes Dickgreber <tanzy@gmx.de>
  *		 2015 Joshua Kinard <kumba@gentoo.org>

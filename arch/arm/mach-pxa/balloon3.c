@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/balloon3.c
+ *  linaos/arch/arm/mach-pxa/balloon3.c
  *
  *  Support for Balloonboard.org Balloon3 board.
  *
@@ -10,29 +10,29 @@
  *  Derived from mainstone.c, by Nico Pitre
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/ioport.h>
-#include <linux/ucb1400.h>
-#include <linux/mtd/mtd.h>
-#include <linux/types.h>
-#include <linux/platform_data/pcf857x.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/mtd/platnand.h>
-#include <linux/mtd/physmap.h>
-#include <linux/regulator/max1586.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/leds.h>
+#include <linaos/sched.h>
+#include <linaos/bitops.h>
+#include <linaos/fb.h>
+#include <linaos/gpio.h>
+#include <linaos/ioport.h>
+#include <linaos/ucb1400.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/types.h>
+#include <linaos/platform_data/pcf857x.h>
+#include <linaos/platform_data/i2c-pxa.h>
+#include <linaos/mtd/platnand.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/regulator/max1586.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>
 #include <asm/irq.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -42,12 +42,12 @@
 #include "pxa27x.h"
 #include <mach/balloon3.h>
 #include <mach/audio.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/mmc-pxamci.h>
 #include "udc.h"
 #include "pxa27x-udc.h"
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/irda-pxaficp.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
 
 #include "generic.h"
 #include "devices.h"

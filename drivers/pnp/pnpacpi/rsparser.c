@@ -7,11 +7,11 @@
  * Copyright (C) 2008 Hewlett-Packard Development Company, L.P.
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
  */
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/pnp.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/acpi.h>
+#include <linaos/pci.h>
+#include <linaos/pnp.h>
+#include <linaos/slab.h>
 #include "../base.h"
 #include "pnpacpi.h"
 
@@ -109,7 +109,7 @@ static void pnpacpi_add_irqresource(struct pnp_dev *dev, struct resource *r)
 /*
  * Device CSRs that do not appear in PCI config space should be described
  * via ACPI.  This would normally be done with Address Space Descriptors
- * marked as "consumer-only," but old versions of Windows and Linux ignore
+ * marked as "consumer-only," but old versions of Windows and LinaOS ignore
  * the producer/consumer flag, so HP invented a vendor-defined resource to
  * describe the location and size of CSR space.
  */

@@ -3,17 +3,17 @@
    Copyright (C) 2001 Rusty Russell, 2002 Rusty Russell IBM.
 
 */
-#include <linux/ftrace.h>
-#include <linux/memory.h>
-#include <linux/extable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/kprobes.h>
-#include <linux/filter.h>
+#include <linaos/ftrace.h>
+#include <linaos/memory.h>
+#include <linaos/extable.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/init.h>
+#include <linaos/kprobes.h>
+#include <linaos/filter.h>
 
 #include <asm/sections.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /*
  * mutex protecting text section modification (dynamic code patching).

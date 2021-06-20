@@ -11,7 +11,7 @@
 #if !defined(_TRACE_IOMMU_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_IOMMU_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 struct device;
 

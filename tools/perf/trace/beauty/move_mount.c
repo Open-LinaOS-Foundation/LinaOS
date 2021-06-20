@@ -6,7 +6,7 @@
  */
 
 #include "trace/beauty/beauty.h"
-#include <linux/log2.h>
+#include <linaos/log2.h>
 
 static size_t move_mount__scnprintf_flags(unsigned long flags, char *bf, size_t size, bool show_prefix)
 {

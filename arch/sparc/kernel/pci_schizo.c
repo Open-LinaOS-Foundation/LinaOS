@@ -4,15 +4,15 @@
  * Copyright (C) 2001, 2002, 2003, 2007, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/of_device.h>
-#include <linux/numa.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_device.h>
+#include <linaos/numa.h>
 
 #include <asm/iommu.h>
 #include <asm/irq.h>
@@ -1312,7 +1312,7 @@ static int schizo_pbm_init(struct pci_pbm_info *pbm,
 			   struct platform_device *op, u32 portid,
 			   int chip_type)
 {
-	const struct linux_prom64_registers *regs;
+	const struct linaos_prom64_registers *regs;
 	struct device_node *dp = op->dev.of_node;
 	const char *chipset_name;
 	int err;

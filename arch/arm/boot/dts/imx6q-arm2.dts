@@ -48,7 +48,7 @@
 		debug-led {
 			label = "Heartbeat";
 			gpios = <&gpio3 25 0>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 };

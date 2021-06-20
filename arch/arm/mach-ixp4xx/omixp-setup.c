@@ -9,12 +9,12 @@
  *      Copyright (C) 2003-2004 MontaVista Software, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/leds.h>
+#include <linaos/kernel.h>
+#include <linaos/serial.h>
+#include <linaos/serial_8250.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/leds.h>
 
 #include <asm/setup.h>
 #include <asm/memory.h>

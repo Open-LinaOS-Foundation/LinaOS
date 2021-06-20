@@ -5,7 +5,7 @@
 
 #include "demangle-ocaml.h"
 
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 
 static const char *caml_prefix = "caml";
 static const size_t caml_prefix_len = 4;

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The LinaOS Foundation. All rights reserved.
  */
 
 #include "msm8916-pm8916.dtsi"
@@ -68,7 +68,7 @@
 	};
 
 	usb_id: usb-id {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "linaos,extcon-usb-gpio";
 		id-gpio = <&msmgpio 121 GPIO_ACTIVE_HIGH>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&usb_id_default>;
@@ -96,7 +96,7 @@
 
 		button@0 {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			gpios = <&msmgpio 107 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -112,28 +112,28 @@
 		led@1 {
 			label = "apq8016-sbc:green:user1";
 			gpios = <&msmgpio 21 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 
 		led@2 {
 			label = "apq8016-sbc:green:user2";
 			gpios = <&msmgpio 120 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 			default-state = "off";
 		};
 
 		led@3 {
 			label = "apq8016-sbc:green:user3";
 			gpios = <&pm8916_gpios 1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc1";
+			linaos,default-trigger = "mmc1";
 			default-state = "off";
 		};
 
 		led@4 {
 			label = "apq8016-sbc:green:user4";
 			gpios = <&pm8916_gpios 2 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 			panic-indicator;
 			default-state = "off";
 		};
@@ -141,14 +141,14 @@
 		led@5 {
 			label = "apq8016-sbc:yellow:wlan";
 			gpios = <&pm8916_mpps 2 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy0tx";
+			linaos,default-trigger = "phy0tx";
 			default-state = "off";
 		};
 
 		led@6 {
 			label = "apq8016-sbc:blue:bt";
 			gpios = <&pm8916_mpps 3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "bluetooth-power";
+			linaos,default-trigger = "bluetooth-power";
 			default-state = "off";
 		};
 	};
@@ -307,7 +307,7 @@
 
 &pm8916_resin {
 	status = "okay";
-	linux,code = <KEY_VOLUMEDOWN>;
+	linaos,code = <KEY_VOLUMEDOWN>;
 };
 
 &pronto {

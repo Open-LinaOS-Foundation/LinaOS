@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- *  include/linux/timerfd.h
+ *  include/linaos/timerfd.h
  *
  *  Copyright (C) 2007  Davide Libenzi <davidel@xmailserver.org>
  *
@@ -9,13 +9,13 @@
 #ifndef _UAPI_LINUX_TIMERFD_H
 #define _UAPI_LINUX_TIMERFD_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* For O_CLOEXEC and O_NONBLOCK */
-#include <linux/fcntl.h>
+#include <linaos/fcntl.h>
 
 /* For _IO helpers */
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 
 /*
  * CAREFUL: Check include/asm-generic/fcntl.h when defining
@@ -24,7 +24,7 @@
  * from eventfd, in order to leave a free define-space for
  * shared O_* flags.
  *
- * Also make sure to update the masks in include/linux/timerfd.h
+ * Also make sure to update the masks in include/linaos/timerfd.h
  * when adding new flags.
  */
 #define TFD_TIMER_ABSTIME (1 << 0)

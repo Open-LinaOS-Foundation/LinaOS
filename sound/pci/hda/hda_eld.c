@@ -6,11 +6,11 @@
  * Copyright (c) 2013 Anssi Hannula <anssi.hannula@iki.fi>
  *
  * Authors:
- * 		Wu Fengguang <wfg@linux.intel.com>
+ * 		Wu Fengguang <wfg@linaos.intel.com>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include <asm/unaligned.h>
 #include <sound/hda_chmap.h>

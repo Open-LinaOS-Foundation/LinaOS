@@ -83,14 +83,14 @@
 		user-button {
 			label = "User Button";
 			gpios = <&gpio4 14 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 		};
 
 		lid {
 			label = "Lid";
 			gpios = <&gpio4 12 GPIO_ACTIVE_LOW>;
-			linux,input-type = <5>;	/* EV_SW */
-			linux,code = <0>;	/* SW_LID */
+			linaos,input-type = <5>;	/* EV_SW */
+			linaos,code = <0>;	/* SW_LID */
 		};
 	};
 
@@ -102,7 +102,7 @@
 		heartbeat {
 			label = "novena:white:panel";
 			gpios = <&gpio1 21 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 	};
 
@@ -428,7 +428,7 @@
 &kpp {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_kpp_novena>;
-	linux,keymap = <
+	linaos,keymap = <
 		MATRIX_KEY(1, 1, KEY_CONFIG)
 	>;
 	status = "okay";

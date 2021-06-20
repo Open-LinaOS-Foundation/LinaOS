@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/lib/copypage-fa.S
+ *  linaos/arch/arm/lib/copypage-fa.S
  *
  *  Copyright (C) 2005 Faraday Corp.
  *  Copyright (C) 2008-2009 Paulius Zaleckas <paulius.zaleckas@teltonika.lt>
@@ -8,8 +8,8 @@
  * Based on copypage-v4wb.S:
  *  Copyright (C) 1995-1999 Russell King
  */
-#include <linux/init.h>
-#include <linux/highmem.h>
+#include <linaos/init.h>
+#include <linaos/highmem.h>
 
 /*
  * Faraday optimised copy_user_page

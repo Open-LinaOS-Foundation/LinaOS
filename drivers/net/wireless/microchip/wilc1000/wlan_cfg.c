@@ -4,7 +4,7 @@
  * All rights reserved.
  */
 
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 #include "wlan_if.h"
 #include "wlan.h"
 #include "wlan_cfg.h"

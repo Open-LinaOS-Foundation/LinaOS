@@ -34,8 +34,8 @@
 #include <asm/percpu.h>
 #include <asm/desc.h>
 
-#include <linux/random.h>
-#include <linux/sched.h>
+#include <linaos/random.h>
+#include <linaos/sched.h>
 
 /*
  * Initialize the stackprotector canary value.
@@ -86,7 +86,7 @@ static inline void cpu_init_stack_canary(int cpu, struct task_struct *idle)
 
 #else	/* STACKPROTECTOR */
 
-/* dummy boot_init_stack_canary() is defined in linux/stackprotector.h */
+/* dummy boot_init_stack_canary() is defined in linaos/stackprotector.h */
 
 static inline void cpu_init_stack_canary(int cpu, struct task_struct *idle)
 { }

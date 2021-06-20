@@ -4,29 +4,29 @@
  *
  * Copyright (c) 2004, 2018 IBM Corp.
  *   Dave Engebretsen engebret@us.ibm.com
- *   Steven Royer seroyer@linux.vnet.ibm.com
- *   Adam Reznechek adreznec@linux.vnet.ibm.com
- *   Bryant G. Ly <bryantly@linux.vnet.ibm.com>
+ *   Steven Royer seroyer@linaos.vnet.ibm.com
+ *   Adam Reznechek adreznec@linaos.vnet.ibm.com
+ *   Bryant G. Ly <bryantly@linaos.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/percpu.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/miscdevice.h>
-#include <linux/sched/signal.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
+#include <linaos/major.h>
+#include <linaos/string.h>
+#include <linaos/fcntl.h>
+#include <linaos/slab.h>
+#include <linaos/poll.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/percpu.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/miscdevice.h>
+#include <linaos/sched/signal.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>
@@ -2413,7 +2413,7 @@ MODULE_PARM_DESC(max_hmcs, "Max HMCs");
 module_param_named(max_mtu, ibmvmc_max_mtu, int, 0644);
 MODULE_PARM_DESC(max_mtu, "Max MTU");
 
-MODULE_AUTHOR("Steven Royer <seroyer@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Steven Royer <seroyer@linaos.vnet.ibm.com>");
 MODULE_DESCRIPTION("IBM VMC");
 MODULE_VERSION(IBMVMC_DRIVER_VERSION);
 MODULE_LICENSE("GPL v2");

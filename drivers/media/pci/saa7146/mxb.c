@@ -4,7 +4,7 @@
 
     Copyright (C) 1998-2006 Michael Hunold <michael@mihu.de>
 
-    Visit http://www.themm.net/~mihu/linux/saa7146/mxb.html
+    Visit http://www.themm.net/~mihu/linaos/saa7146/mxb.html
     for further details about this card.
 
 */
@@ -17,8 +17,8 @@
 #include <media/tuner.h>
 #include <media/v4l2-common.h>
 #include <media/i2c/saa7115.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
 
 #include "tea6415c.h"
 #include "tea6420.h"
@@ -863,6 +863,6 @@ static void __exit mxb_cleanup_module(void)
 module_init(mxb_init_module);
 module_exit(mxb_cleanup_module);
 
-MODULE_DESCRIPTION("video4linux-2 driver for the Siemens-Nixdorf 'Multimedia eXtension board'");
+MODULE_DESCRIPTION("video4linaos-2 driver for the Siemens-Nixdorf 'Multimedia eXtension board'");
 MODULE_AUTHOR("Michael Hunold <michael@mihu.de>");
 MODULE_LICENSE("GPL");

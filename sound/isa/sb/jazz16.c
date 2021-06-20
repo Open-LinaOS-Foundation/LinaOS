@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
 #include <asm/dma.h>
-#include <linux/isa.h>
+#include <linaos/isa.h>
 #include <sound/core.h>
 #include <sound/mpu401.h>
 #include <sound/opl3.h>

@@ -32,17 +32,17 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/random.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/kref.h>
-#include <linux/xarray.h>
-#include <linux/workqueue.h>
-#include <uapi/linux/if_ether.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/random.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kref.h>
+#include <linaos/xarray.h>
+#include <linaos/workqueue.h>
+#include <uapi/linaos/if_ether.h>
 #include <rdma/ib_pack.h>
 #include <rdma/ib_cache.h>
 #include <rdma/rdma_netlink.h>

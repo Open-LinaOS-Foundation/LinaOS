@@ -6,7 +6,7 @@
 #ifndef __LINUX_CLK_SAMSUNG_H_
 #define __LINUX_CLK_SAMSUNG_H_
 
-#include <linux/compiler_types.h>
+#include <linaos/compiler_types.h>
 
 struct device_node;
 

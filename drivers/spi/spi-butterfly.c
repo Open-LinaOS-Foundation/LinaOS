@@ -4,19 +4,19 @@
  *
  * Copyright (C) 2005 David Brownell
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/parport.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/parport.h>
 
-#include <linux/sched.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/spi/flash.h>
+#include <linaos/sched.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi_bitbang.h>
+#include <linaos/spi/flash.h>
 
-#include <linux/mtd/partitions.h>
+#include <linaos/mtd/partitions.h>
 
 /*
  * This uses SPI to talk with an "AVR Butterfly", which is a $US20 card

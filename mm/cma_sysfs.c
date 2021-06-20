@@ -5,9 +5,9 @@
  * Copyright (c) 2021 Minchan Kim <minchan@kernel.org>
  */
 
-#include <linux/cma.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/cma.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 
 #include "cma.h"
 

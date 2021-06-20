@@ -5,7 +5,7 @@
 #undef pr_fmt
 #define pr_fmt(fmt) "mce: " fmt
 
-#include <linux/device.h>
+#include <linaos/device.h>
 #include <asm/mce.h>
 
 /* Pointer to the installed machine check handler for this CPU setup. */

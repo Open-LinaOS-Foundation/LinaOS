@@ -2,12 +2,12 @@
 #ifndef _INTEL_PMT_CLASS_H
 #define _INTEL_PMT_CLASS_H
 
-#include <linux/platform_device.h>
-#include <linux/xarray.h>
-#include <linux/types.h>
-#include <linux/bits.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/xarray.h>
+#include <linaos/types.h>
+#include <linaos/bits.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
 
 /* PMT access types */
 #define ACCESS_BARID		2

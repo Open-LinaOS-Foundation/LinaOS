@@ -9,11 +9,11 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
 
 #include "clk.h"
 

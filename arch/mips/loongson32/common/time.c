@@ -3,9 +3,9 @@
  * Copyright (c) 2014 Zhang, Keguang <keguang.zhang@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/sizes.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/sizes.h>
 #include <asm/time.h>
 
 #include <loongson1.h>

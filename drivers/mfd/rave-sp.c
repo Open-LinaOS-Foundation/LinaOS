@@ -8,19 +8,19 @@
  * Copyright (C) 2017 Zodiac Inflight Innovations
  */
 
-#include <linux/atomic.h>
-#include <linux/crc-ccitt.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/mfd/rave-sp.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/sched.h>
-#include <linux/serdev.h>
+#include <linaos/atomic.h>
+#include <linaos/crc-ccitt.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/rave-sp.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/sched.h>
+#include <linaos/serdev.h>
 #include <asm/unaligned.h>
 
 /*

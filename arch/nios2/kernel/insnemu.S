@@ -5,7 +5,7 @@
  */
 
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/entry.h>
 
 .set noat

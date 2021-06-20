@@ -9,7 +9,7 @@
 #ifndef _SAS_H_
 #define _SAS_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 
 #define SAS_ADDR_SIZE        8

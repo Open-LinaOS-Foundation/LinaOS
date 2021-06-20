@@ -112,16 +112,16 @@ Kernel Functions and Structures Reference
 .. kernel-doc:: drivers/dma-buf/dma-buf.c
    :export:
 
-.. kernel-doc:: include/linux/dma-buf.h
+.. kernel-doc:: include/linaos/dma-buf.h
    :internal:
 
 Buffer Mapping Helpers
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. kernel-doc:: include/linux/dma-buf-map.h
+.. kernel-doc:: include/linaos/dma-buf-map.h
    :doc: overview
 
-.. kernel-doc:: include/linux/dma-buf-map.h
+.. kernel-doc:: include/linaos/dma-buf-map.h
    :internal:
 
 Reservation Objects
@@ -133,7 +133,7 @@ Reservation Objects
 .. kernel-doc:: drivers/dma-buf/dma-resv.c
    :export:
 
-.. kernel-doc:: include/linux/dma-resv.h
+.. kernel-doc:: include/linaos/dma-resv.h
    :internal:
 
 DMA Fences
@@ -160,13 +160,13 @@ DMA Fences Functions Reference
 .. kernel-doc:: drivers/dma-buf/dma-fence.c
    :export:
 
-.. kernel-doc:: include/linux/dma-fence.h
+.. kernel-doc:: include/linaos/dma-fence.h
    :internal:
 
 Seqno Hardware Fences
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. kernel-doc:: include/linux/seqno-fence.h
+.. kernel-doc:: include/linaos/seqno-fence.h
    :internal:
 
 DMA Fence Array
@@ -175,7 +175,7 @@ DMA Fence Array
 .. kernel-doc:: drivers/dma-buf/dma-fence-array.c
    :export:
 
-.. kernel-doc:: include/linux/dma-fence-array.h
+.. kernel-doc:: include/linaos/dma-fence-array.h
    :internal:
 
 DMA Fence uABI/Sync File
@@ -184,7 +184,7 @@ DMA Fence uABI/Sync File
 .. kernel-doc:: drivers/dma-buf/sync_file.c
    :export:
 
-.. kernel-doc:: include/linux/sync_file.h
+.. kernel-doc:: include/linaos/sync_file.h
    :internal:
 
 Indefinite DMA Fences
@@ -272,7 +272,7 @@ synchronization. Synchronization fences controlled by userspace must be used
 instead.
 
 On GPUs this poses a problem, because current desktop compositor protocols on
-Linux rely on DMA fences, which means without an entirely new userspace stack
+LinaOS rely on DMA fences, which means without an entirely new userspace stack
 built on top of userspace fences, they cannot benefit from recoverable page
 faults. Specifically this means implicit synchronization will not be possible.
 The exception is when page faults are only used as migration hints and never to

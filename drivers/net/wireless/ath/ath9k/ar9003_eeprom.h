@@ -17,7 +17,7 @@
 #ifndef AR9003_EEPROM_H
 #define AR9003_EEPROM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define AR9300_EEP_VER               0xD000
 #define AR9300_EEP_VER_MINOR_MASK    0xFFF

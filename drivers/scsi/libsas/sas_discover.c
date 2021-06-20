@@ -6,9 +6,9 @@
  * Copyright (C) 2005 Luben Tuikov <luben_tuikov@adaptec.com>
  */
 
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/async.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/async.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_eh.h>
 #include "sas_internal.h"

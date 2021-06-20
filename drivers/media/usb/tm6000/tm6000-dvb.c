@@ -5,9 +5,9 @@
  *  Copyright (C) 2007 Michel Ludwig <michel.ludwig@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
 
 #include "tm6000.h"
 #include "tm6000-regs.h"

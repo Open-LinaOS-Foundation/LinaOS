@@ -5,18 +5,18 @@
  *	Copyright (C) 2016 Red Hat, Inc.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
 
 #include <net/page_pool.h>
 #include <net/xdp.h>
 
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/page-flags.h>
-#include <linux/mm.h> /* for __put_page() */
+#include <linaos/dma-direction.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/page-flags.h>
+#include <linaos/mm.h> /* for __put_page() */
 
 #include <trace/events/page_pool.h>
 

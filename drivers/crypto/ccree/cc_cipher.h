@@ -8,7 +8,7 @@
 #ifndef __CC_CIPHER_H__
 #define __CC_CIPHER_H__
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <crypto/algapi.h>
 #include "cc_driver.h"
 #include "cc_buffer_mgr.h"

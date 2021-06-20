@@ -9,8 +9,8 @@
 #ifndef __STMMAC_PCS_H__
 #define __STMMAC_PCS_H__
 
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 #include "common.h"
 
 /* PCS registers (AN/TBI/SGMII/RGMII) offsets */

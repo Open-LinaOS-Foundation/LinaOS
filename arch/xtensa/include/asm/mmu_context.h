@@ -15,10 +15,10 @@
 #include <asm/nommu_context.h>
 #else
 
-#include <linux/stringify.h>
-#include <linux/sched.h>
-#include <linux/mm_types.h>
-#include <linux/pgtable.h>
+#include <linaos/stringify.h>
+#include <linaos/sched.h>
+#include <linaos/mm_types.h>
+#include <linaos/pgtable.h>
 
 #include <asm/vectors.h>
 
@@ -28,7 +28,7 @@
 #include <asm-generic/percpu.h>
 
 #if (XCHAL_HAVE_TLBS != 1)
-# error "Linux must have an MMU!"
+# error "LinaOS must have an MMU!"
 #endif
 
 DECLARE_PER_CPU(unsigned long, asid_cache);

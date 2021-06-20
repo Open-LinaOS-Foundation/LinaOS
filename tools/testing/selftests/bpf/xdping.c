@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019, Oracle and/or its affiliates. All rights reserved. */
 
-#include <linux/bpf.h>
-#include <linux/if_link.h>
+#include <linaos/bpf.h>
+#include <linaos/if_link.h>
 #include <arpa/inet.h>
 #include <assert.h>
 #include <errno.h>

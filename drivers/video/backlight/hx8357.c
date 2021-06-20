@@ -5,13 +5,13 @@
  * Copyright 2012 Free Electrons
  */
 
-#include <linux/delay.h>
-#include <linux/lcd.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/spi/spi.h>
+#include <linaos/delay.h>
+#include <linaos/lcd.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/spi/spi.h>
 
 #define HX8357_NUM_IM_PINS	3
 

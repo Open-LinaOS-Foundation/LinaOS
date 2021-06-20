@@ -23,8 +23,8 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
 
 #include "dm_services.h"
 #include "core_types.h"

@@ -12,8 +12,8 @@
  */
 
 /*
- * isspace() in linux/ctype.h is expected by next_args() to filter
- * out "space/lf/tab". While boot/ctype.h conflicts with linux/ctype.h,
+ * isspace() in linaos/ctype.h is expected by next_args() to filter
+ * out "space/lf/tab". While boot/ctype.h conflicts with linaos/ctype.h,
  * since isdigit() is implemented in both of them. Hence disable it
  * here.
  */
@@ -24,17 +24,17 @@
 #include "../string.h"
 
 #include <generated/compile.h>
-#include <linux/module.h>
-#include <linux/uts.h>
-#include <linux/utsname.h>
-#include <linux/ctype.h>
-#include <linux/efi.h>
+#include <linaos/module.h>
+#include <linaos/uts.h>
+#include <linaos/utsname.h>
+#include <linaos/ctype.h>
+#include <linaos/efi.h>
 #include <generated/utsrelease.h>
 #include <asm/efi.h>
 
 /* Macros used by the included decompressor code below. */
 #define STATIC
-#include <linux/decompress/mm.h>
+#include <linaos/decompress/mm.h>
 
 #define _SETUP
 #include <asm/setup.h>	/* For COMMAND_LINE_SIZE */

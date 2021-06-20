@@ -2,7 +2,7 @@
 /*
  * forked from parisc asm/atomic.h which was:
  *	Copyright (C) 2000 Philipp Rumpf <prumpf@tux.org>
- *	Copyright (C) 2006 Kyle McMartin <kyle@parisc-linux.org>
+ *	Copyright (C) 2006 Kyle McMartin <kyle@parisc-linaos.org>
  */
 
 #ifndef _ASM_PARISC_CMPXCHG_H_

@@ -7,28 +7,28 @@
 #ifndef _TEHUTI_H
 #define _TEHUTI_H
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/uaccess.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/crc32.h>
+#include <linaos/uaccess.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/sched.h>
+#include <linaos/tty.h>
+#include <linaos/if_vlan.h>
+#include <linaos/interrupt.h>
+#include <linaos/vmalloc.h>
+#include <linaos/firmware.h>
 #include <asm/byteorder.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
 
 /* Compile Time Switches */
 /* start */

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <net/sock.h>
-#include <linux/ethtool_netlink.h>
+#include <linaos/ethtool_netlink.h>
 #include "netlink.h"
 
 static struct genl_family ethtool_genl_family;

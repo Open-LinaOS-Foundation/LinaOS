@@ -8,29 +8,29 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/pcf857x.h>
-#include <linux/platform_data/gpio-davinci.h>
-#include <linux/property.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/nvmem-provider.h>
-#include <linux/phy.h>
-#include <linux/clk.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-dv-timings.h>
-#include <linux/export.h>
-#include <linux/leds.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/pcf857x.h>
+#include <linaos/platform_data/gpio-davinci.h>
+#include <linaos/property.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/phy.h>
+#include <linaos/clk.h>
+#include <linaos/videodev2.h>
+#include <linaos/v4l2-dv-timings.h>
+#include <linaos/export.h>
+#include <linaos/leds.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
 
 #include <media/i2c/tvp514x.h>
 
@@ -41,12 +41,12 @@
 #include <mach/mux.h>
 #include <mach/serial.h>
 
-#include <linux/platform_data/i2c-davinci.h>
-#include <linux/platform_data/mtd-davinci.h>
-#include <linux/platform_data/mmc-davinci.h>
-#include <linux/platform_data/usb-davinci.h>
-#include <linux/platform_data/mtd-davinci-aemif.h>
-#include <linux/platform_data/ti-aemif.h>
+#include <linaos/platform_data/i2c-davinci.h>
+#include <linaos/platform_data/mtd-davinci.h>
+#include <linaos/platform_data/mmc-davinci.h>
+#include <linaos/platform_data/usb-davinci.h>
+#include <linaos/platform_data/mtd-davinci-aemif.h>
+#include <linaos/platform_data/ti-aemif.h>
 
 #include "davinci.h"
 #include "irqs.h"
@@ -144,7 +144,7 @@ static struct mtd_partition davinci_evm_nandflash_partition[] = {
 	}
 	/* A few blocks at end hold a flash BBT ... created by TI's CCS
 	 * using flashwriter_nand.out, but ignored by TI's versions of
-	 * Linux and u-boot.  We boot faster by using them.
+	 * LinaOS and u-boot.  We boot faster by using them.
 	 */
 };
 

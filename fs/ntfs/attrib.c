@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /**
- * attrib.c - NTFS attribute operations.  Part of the Linux-NTFS project.
+ * attrib.c - NTFS attribute operations.  Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2012 Anton Altaparmakov and Tuxera Inc.
  * Copyright (c) 2002 Richard Russon
  */
 
-#include <linux/buffer_head.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/writeback.h>
+#include <linaos/buffer_head.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/swap.h>
+#include <linaos/writeback.h>
 
 #include "attrib.h"
 #include "debug.h"

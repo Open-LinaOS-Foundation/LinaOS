@@ -6,7 +6,7 @@ Using KUnit
 
 The purpose of this document is to describe what KUnit is, how it works, how it
 is intended to be used, and all the concepts and terminology that are needed to
-understand it. This guide assumes a working knowledge of the Linux kernel and
+understand it. This guide assumes a working knowledge of the LinaOS kernel and
 some basic knowledge of testing.
 
 For a high level introduction to KUnit, including setting up KUnit for your
@@ -26,7 +26,7 @@ Testing
 What is KUnit?
 --------------
 
-"K" is short for "kernel" so "KUnit" is the "(Linux) Kernel Unit Testing
+"K" is short for "kernel" so "KUnit" is the "(LinaOS) Kernel Unit Testing
 Framework." KUnit is intended first and foremost for writing unit tests; it is
 general enough that it can be used to write integration tests; however, this is
 a secondary goal. KUnit has no ambition of being the only testing framework for
@@ -242,7 +242,7 @@ Classes are not a construct that is built into the C programming language;
 however, it is an easily derived concept. Accordingly, pretty much every project
 that does not use a standardized object oriented library (like GNOME's GObject)
 has their own slightly different way of doing object oriented programming; the
-Linux kernel is no exception.
+LinaOS kernel is no exception.
 
 The central concept in kernel object oriented programming is the class. In the
 kernel, a *class* is a struct that contains function pointers. This creates a
@@ -701,7 +701,7 @@ The first thing you must do is ask yourself whether it is necessary to write a
 KUnit test for a specific architecture, and then whether it is necessary to
 write that test for a particular piece of hardware. In general, writing a test
 that depends on having access to a particular piece of hardware or software (not
-included in the Linux source repo) should be avoided at all costs.
+included in the LinaOS source repo) should be avoided at all costs.
 
 Even if you only ever plan on running your KUnit test on your hardware
 configuration, other people may want to run your tests and may not have access

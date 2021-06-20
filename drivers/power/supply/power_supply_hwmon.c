@@ -3,10 +3,10 @@
  *  power_supply_hwmon.c - power supply hwmon support.
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/hwmon.h>
+#include <linaos/power_supply.h>
+#include <linaos/slab.h>
 
 struct power_supply_hwmon {
 	struct power_supply *psy;
@@ -194,7 +194,7 @@ static int power_supply_hwmon_read_string(struct device *dev,
 		 * gcc bug #51513 [1] and clang bug #978 [2]
 		 *
 		 * [1] https://gcc.gnu.org/bugzilla/show_bug.cgi?id=51513
-		 * [2] https://github.com/ClangBuiltLinux/linux/issues/978
+		 * [2] https://github.com/ClangBuiltLinaOS/linaos/issues/978
 		 */
 		break;
 	}

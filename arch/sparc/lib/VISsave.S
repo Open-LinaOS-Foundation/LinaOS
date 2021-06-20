@@ -4,10 +4,10 @@
  *            VIS routines. One should not call this directly,
  *            but use macros provided in <asm/visasm.h>.
  *
- * Copyright (C) 1998 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1998 Jakub Jelinek (jj@ultra.linaos.cz)
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/asi.h>
 #include <asm/page.h>

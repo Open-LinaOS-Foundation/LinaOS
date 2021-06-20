@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 /* Set of debugging defines */
 
@@ -44,34 +44,34 @@
  * End of serial driver configuration section.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/types.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
+#include <linaos/types.h>
+#include <linaos/serial.h>
+#include <linaos/serial_reg.h>
 static char *serial_version = "4.30";
 
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/circ_buf.h>
-#include <linux/console.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/circ_buf.h>
+#include <linaos/console.h>
+#include <linaos/major.h>
+#include <linaos/string.h>
+#include <linaos/fcntl.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
+#include <linaos/mm.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/platform_device.h>
 
 #include <asm/setup.h>
 
@@ -118,7 +118,7 @@ static struct serial_state rs_table[1];
 
 #define NR_PORTS ARRAY_SIZE(rs_table)
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define serial_isroot()	(capable(CAP_SYS_ADMIN))
 

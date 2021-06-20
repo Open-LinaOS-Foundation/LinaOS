@@ -3,7 +3,7 @@
  * Copyright 2006 PathScale, Inc.  All Rights Reserved.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 /*
  * override generic version in lib/iomap_copy.c

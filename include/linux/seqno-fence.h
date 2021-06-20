@@ -12,8 +12,8 @@
 #ifndef __LINUX_SEQNO_FENCE_H
 #define __LINUX_SEQNO_FENCE_H
 
-#include <linux/dma-fence.h>
-#include <linux/dma-buf.h>
+#include <linaos/dma-fence.h>
+#include <linaos/dma-buf.h>
 
 enum seqno_fence_condition {
 	SEQNO_FENCE_WAIT_GEQUAL,

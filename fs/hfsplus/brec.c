@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hfsplus/brec.c
+ *  linaos/fs/hfsplus/brec.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)

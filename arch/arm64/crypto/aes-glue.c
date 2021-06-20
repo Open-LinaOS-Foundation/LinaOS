@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm64/crypto/aes-glue.c - wrapper code for ARMv8 AES
+ * linaos/arch/arm64/crypto/aes-glue.c - wrapper code for ARMv8 AES
  *
  * Copyright (C) 2013 - 2017 Linaro Ltd <ard.biesheuvel@linaro.org>
  */
@@ -15,8 +15,8 @@
 #include <crypto/internal/simd.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
-#include <linux/module.h>
-#include <linux/cpufeature.h>
+#include <linaos/module.h>
+#include <linaos/cpufeature.h>
 #include <crypto/xts.h>
 
 #include "aes-ce-setkey.h"

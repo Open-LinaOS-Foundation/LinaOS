@@ -5,7 +5,7 @@
  *  Copyright (c) 2010-2015 Steven Toth <stoth@kernellabs.com>
  */
 
-#include <linux/wait.h>
+#include <linaos/wait.h>
 
 #include "saa7164.h"
 

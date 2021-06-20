@@ -3,7 +3,7 @@
  *	Low-Level PCI Support for SH7780 targets
  *
  *  Dustin McIntire (dustin@sensoria.com) (c) 2001
- *  Paul Mundt (lethal@linux-sh.org) (c) 2003
+ *  Paul Mundt (lethal@linaos-sh.org) (c) 2003
  */
 
 #ifndef _PCI_SH7780_H_

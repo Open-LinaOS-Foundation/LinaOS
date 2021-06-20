@@ -3,13 +3,13 @@
  * Machine check exception header file.
  *
  * Copyright 2013 IBM Corporation
- * Author: Mahesh Salgaonkar <mahesh@linux.vnet.ibm.com>
+ * Author: Mahesh Salgaonkar <mahesh@linaos.vnet.ibm.com>
  */
 
 #ifndef __ASM_PPC64_MCE_H__
 #define __ASM_PPC64_MCE_H__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 enum MCE_Version {
 	MCE_V1 = 1,

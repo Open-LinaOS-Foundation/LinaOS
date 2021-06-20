@@ -5,17 +5,17 @@
  * Copyright (C) 2006 Atsushi Nemoto <anemo@mba.ocn.ne.jp>
  */
 
-#include <linux/bcd.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <linaos/bcd.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/delay.h>
+#include <linaos/jiffies.h>
+#include <linaos/interrupt.h>
+#include <linaos/rtc.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
 
 #define RTC_REG_SIZE		0x2000
 #define RTC_OFFSET		0x1ff0

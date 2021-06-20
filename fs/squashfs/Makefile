@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux squashfs routines.
+# Makefile for the linaos squashfs routines.
 #
 
 obj-$(CONFIG_SQUASHFS) += squashfs.o

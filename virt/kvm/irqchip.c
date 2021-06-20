@@ -12,10 +12,10 @@
  *   Alexander Graf <agraf@suse.de>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/slab.h>
-#include <linux/srcu.h>
-#include <linux/export.h>
+#include <linaos/kvm_host.h>
+#include <linaos/slab.h>
+#include <linaos/srcu.h>
+#include <linaos/export.h>
 #include <trace/events/kvm.h>
 #include "irq.h"
 

@@ -17,7 +17,7 @@
  */
 
 #include <stdio.h>
-#include <linux/socket.h>
+#include <linaos/socket.h>
 
 /* bpf-output associated map */
 bpf_map(__augmented_syscalls__, PERF_EVENT_ARRAY, int, u32, __NR_CPUS__);

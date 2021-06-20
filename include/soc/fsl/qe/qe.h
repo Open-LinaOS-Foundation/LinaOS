@@ -12,16 +12,16 @@
 #define _ASM_POWERPC_QE_H
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/genalloc.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/err.h>
+#include <linaos/compiler.h>
+#include <linaos/genalloc.h>
+#include <linaos/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
 #include <soc/fsl/cpm.h>
 #include <soc/fsl/qe/immap_qe.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/types.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/types.h>
 
 #define QE_NUM_OF_SNUM	256	/* There are 256 serial number in QE */
 #define QE_NUM_OF_BRGS	16

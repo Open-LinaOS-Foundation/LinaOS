@@ -7,23 +7,23 @@
  *
  * (c) Copyright 2010-2013 Datera, Inc.
  *
- * Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Nicholas A. Bellinger <nab@linaos-iscsi.org>
 *
  ****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/unistd.h>
-#include <linux/string.h>
-#include <linux/syscalls.h>
-#include <linux/configfs.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/utsname.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/namei.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/unistd.h>
+#include <linaos/string.h>
+#include <linaos/syscalls.h>
+#include <linaos/configfs.h>
 
 #include <target/target_core_base.h>
 #include <target/target_core_backend.h>

@@ -5,9 +5,9 @@
  * Copyright (c) 2011 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/jack.h>

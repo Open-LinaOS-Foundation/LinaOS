@@ -2,18 +2,18 @@
 /*
  * DA8xx USB
  */
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/mfd/da8xx-cfgchip.h>
-#include <linux/mfd/syscon.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_data/clk-da8xx-cfgchip.h>
-#include <linux/platform_data/phy-da8xx-usb.h>
-#include <linux/platform_data/usb-davinci.h>
-#include <linux/platform_device.h>
-#include <linux/usb/musb.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/mfd/da8xx-cfgchip.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_data/clk-da8xx-cfgchip.h>
+#include <linaos/platform_data/phy-da8xx-usb.h>
+#include <linaos/platform_data/usb-davinci.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb/musb.h>
 
 #include <mach/common.h>
 #include <mach/cputype.h>

@@ -7,8 +7,8 @@
 #ifndef __CPSW_H__
 #define __CPSW_H__
 
-#include <linux/if_ether.h>
-#include <linux/phy.h>
+#include <linaos/if_ether.h>
+#include <linaos/phy.h>
 
 #define mac_hi(mac)	(((mac)[0] << 0) | ((mac)[1] << 8) |	\
 			 ((mac)[2] << 16) | ((mac)[3] << 24))

@@ -2,7 +2,7 @@
 #ifndef __IRQ_H
 #define __IRQ_H
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 static inline int irqchip_in_kernel(struct kvm *kvm)
 {

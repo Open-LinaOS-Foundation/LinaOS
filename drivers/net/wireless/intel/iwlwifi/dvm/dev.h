@@ -4,7 +4,7 @@
  * Copyright(c) 2003 - 2014, 2020 Intel Corporation. All rights reserved.
  *
  * Contact Information:
- *  Intel Linux Wireless <linuxwifi@intel.com>
+ *  Intel LinaOS Wireless <linaoswifi@intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
@@ -16,12 +16,12 @@
 #ifndef __iwl_dev_h__
 #define __iwl_dev_h__
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/wait.h>
+#include <linaos/leds.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
 
 #include "fw/img.h"
 #include "iwl-eeprom-parse.h"

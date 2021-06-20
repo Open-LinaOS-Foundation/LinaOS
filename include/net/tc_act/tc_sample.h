@@ -3,7 +3,7 @@
 #define __NET_TC_SAMPLE_H
 
 #include <net/act_api.h>
-#include <linux/tc_act/tc_sample.h>
+#include <linaos/tc_act/tc_sample.h>
 #include <net/psample.h>
 
 struct tcf_sample {

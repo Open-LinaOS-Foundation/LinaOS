@@ -6,8 +6,8 @@
 #ifndef __BPF_LOADER_H
 #define __BPF_LOADER_H
 
-#include <linux/compiler.h>
-#include <linux/err.h>
+#include <linaos/compiler.h>
+#include <linaos/err.h>
 
 #ifdef HAVE_LIBBPF_SUPPORT
 #include <bpf/libbpf.h>

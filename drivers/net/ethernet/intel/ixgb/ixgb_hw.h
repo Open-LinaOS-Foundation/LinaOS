@@ -4,7 +4,7 @@
 #ifndef _IXGB_HW_H_
 #define _IXGB_HW_H_
 
-#include <linux/mdio.h>
+#include <linaos/mdio.h>
 
 #include "ixgb_osdep.h"
 

@@ -3,7 +3,7 @@
 #define _LINUX_KPROBES_H
 /*
  *  Kernel Probes (KProbes)
- *  include/linux/kprobes.h
+ *  include/linaos/kprobes.h
  *
  * Copyright (C) IBM Corporation, 2002, 2004
  *
@@ -16,19 +16,19 @@
  *		<jkenisto@us.ibm.com>  and Prasanna S Panchamukhi
  *		<prasanna@in.ibm.com> added function-return probes.
  */
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/smp.h>
-#include <linux/bug.h>
-#include <linux/percpu.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/mutex.h>
-#include <linux/ftrace.h>
-#include <linux/refcount.h>
-#include <linux/freelist.h>
+#include <linaos/compiler.h>
+#include <linaos/linkage.h>
+#include <linaos/list.h>
+#include <linaos/notifier.h>
+#include <linaos/smp.h>
+#include <linaos/bug.h>
+#include <linaos/percpu.h>
+#include <linaos/spinlock.h>
+#include <linaos/rcupdate.h>
+#include <linaos/mutex.h>
+#include <linaos/ftrace.h>
+#include <linaos/refcount.h>
+#include <linaos/freelist.h>
 #include <asm/kprobes.h>
 
 #ifdef CONFIG_KPROBES

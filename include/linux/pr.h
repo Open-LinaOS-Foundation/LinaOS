@@ -2,7 +2,7 @@
 #ifndef LINUX_PR_H
 #define LINUX_PR_H
 
-#include <uapi/linux/pr.h>
+#include <uapi/linaos/pr.h>
 
 struct pr_ops {
 	int (*pr_register)(struct block_device *bdev, u64 old_key, u64 new_key,

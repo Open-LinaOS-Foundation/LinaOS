@@ -558,7 +558,7 @@ __END__
 
 =head1 NAME
 
-abi_book.pl - parse the Linux ABI files and produce a ReST book.
+abi_book.pl - parse the LinaOS ABI files and produce a ReST book.
 
 =head1 SYNOPSIS
 
@@ -614,9 +614,9 @@ Prints the manual page and exits.
 
 =head1 DESCRIPTION
 
-Parse the Linux ABI files from ABI DIR (usually located at Documentation/ABI),
+Parse the LinaOS ABI files from ABI DIR (usually located at Documentation/ABI),
 allowing to search for ABI symbols or to produce a ReST book containing
-the Linux ABI documentation.
+the LinaOS ABI documentation.
 
 =head1 EXAMPLES
 

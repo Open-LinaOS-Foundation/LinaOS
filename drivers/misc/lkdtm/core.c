@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux Kernel Dump Test Module for testing kernel crashes conditions:
+ * LinaOS Kernel Dump Test Module for testing kernel crashes conditions:
  * induces system failures at predefined crashpoints and under predefined
  * operational conditions in order to evaluate the reliability of kernel
  * sanity checking and crash dumps obtained using different dumping
@@ -10,7 +10,7 @@
  *
  * Author: Ankita Garg <ankita@in.ibm.com>
  *
- * It is adapted from the Linux Kernel Dump Test Tool by
+ * It is adapted from the LinaOS Kernel Dump Test Tool by
  * Fernando Luis Vazquez Cao <http://lkdtt.sourceforge.net>
  *
  * Debugfs support added by Simon Kagstrom <simon.kagstrom@netinsight.net>
@@ -18,14 +18,14 @@
  * See Documentation/fault-injection/provoke-crashes.rst for instructions
  */
 #include "lkdtm.h"
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/buffer_head.h>
-#include <linux/kprobes.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
+#include <linaos/fs.h>
+#include <linaos/module.h>
+#include <linaos/buffer_head.h>
+#include <linaos/kprobes.h>
+#include <linaos/list.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/debugfs.h>
 
 #define DEFAULT_COUNT 10
 

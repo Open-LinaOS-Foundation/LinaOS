@@ -9,15 +9,15 @@
  * by MontaVista Software, Inc.  (Nico, your code rocks!)
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sched/clock.h>
-#include <linux/sched_clock.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/clk.h>
+#include <linaos/clockchips.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/sched/clock.h>
+#include <linaos/sched_clock.h>
 
 #include <clocksource/pxa.h>
 

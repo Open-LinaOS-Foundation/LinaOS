@@ -6,10 +6,10 @@
  *  All rights reserved.
  */
 
-#include <linux/string.h>
-#include <linux/io.h>
-#include <linux/pci_regs.h>
-#include <linux/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/io.h>
+#include <linaos/pci_regs.h>
+#include <linaos/spinlock.h>
 
 #include "cobalt-driver.h"
 #include "cobalt-omnitek.h"

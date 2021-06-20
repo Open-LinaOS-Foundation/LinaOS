@@ -3,11 +3,11 @@
  * Static Memory Controller
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/syscore_ops.h>
 
 #include <mach/hardware.h>
 #include <mach/smemc.h>

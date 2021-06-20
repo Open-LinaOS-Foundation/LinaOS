@@ -7,11 +7,11 @@
  * Authors:  Ilya Petrov <ilya.muromec@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/leds.h>
+#include <linaos/platform_device.h>
 #include "nvec.h"
 
 #define to_nvec_led(led_cdev) \

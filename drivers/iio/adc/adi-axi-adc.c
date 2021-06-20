@@ -6,22 +6,22 @@
  * Copyright 2012-2020 Analog Devices Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/buffer-dmaengine.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/buffer-dmaengine.h>
 
-#include <linux/fpga/adi-axi-common.h>
-#include <linux/iio/adc/adi-axi-adc.h>
+#include <linaos/fpga/adi-axi-common.h>
+#include <linaos/iio/adc/adi-axi-adc.h>
 
 /*
  * Register definitions:

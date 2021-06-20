@@ -5,21 +5,21 @@
  *	Copyright (C) 2007, 2008 Wolfson Microelectronics PLC.
  *
  *  Author: Liam Girdwood
- *          linux@wolfsonmicro.com
+ *          linaos@wolfsonmicro.com
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/completion.h>
-#include <linux/mfd/wm8350/rtc.h>
-#include <linux/mfd/wm8350/core.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/time.h>
+#include <linaos/rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioctl.h>
+#include <linaos/completion.h>
+#include <linaos/mfd/wm8350/rtc.h>
+#include <linaos/mfd/wm8350/core.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
 
 #define WM8350_SET_ALM_RETRIES	5
 #define WM8350_SET_TIME_RETRIES	5

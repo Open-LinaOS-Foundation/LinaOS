@@ -6,7 +6,7 @@
  *
  *	https://github.com/IAIK/KAISER
  *
- * The original work was written by and and signed off by for the Linux
+ * The original work was written by and and signed off by for the LinaOS
  * kernel by:
  *
  *   Signed-off-by: Richard Fellner <richard.fellner@student.tugraz.at>
@@ -18,16 +18,16 @@
  * Mostly rewritten by Thomas Gleixner <tglx@linutronix.de> and
  *		       Andy Lutomirsky <luto@amacapital.net>
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/cpu.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/bug.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm.h>
+#include <linaos/uaccess.h>
+#include <linaos/cpu.h>
 
 #include <asm/cpufeature.h>
 #include <asm/hypervisor.h>

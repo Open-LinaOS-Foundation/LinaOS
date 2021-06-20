@@ -35,7 +35,7 @@
 #define YPULSE 3
 #define DPI 72
 #define VFREQ 60 /* Hz */
-#define TIMING_NAME "Linux SXGA"
+#define TIMING_NAME "LinaOS SXGA"
 /* No ESTABLISHED_TIMINGx_BITS */
 #define HSYNC_POL 1
 #define VSYNC_POL 1

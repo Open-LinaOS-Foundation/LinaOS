@@ -1,54 +1,54 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Memory Migration functionality - linux/mm/migrate.c
+ * Memory Migration functionality - linaos/mm/migrate.c
  *
  * Copyright (C) 2006 Silicon Graphics, Inc., Christoph Lameter
  *
  * Page migration was first developed in the context of the memory hotplug
  * project. The main authors of the migration code are:
  *
- * IWAMOTO Toshihiro <iwamoto@valinux.co.jp>
- * Hirokazu Takahashi <taka@valinux.co.jp>
+ * IWAMOTO Toshihiro <iwamoto@valinaos.co.jp>
+ * Hirokazu Takahashi <taka@valinaos.co.jp>
  * Dave Hansen <haveblue@us.ibm.com>
  * Christoph Lameter
  */
 
-#include <linux/migrate.h>
-#include <linux/export.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/mm_inline.h>
-#include <linux/nsproxy.h>
-#include <linux/pagevec.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/topology.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/writeback.h>
-#include <linux/mempolicy.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
-#include <linux/backing-dev.h>
-#include <linux/compaction.h>
-#include <linux/syscalls.h>
-#include <linux/compat.h>
-#include <linux/hugetlb.h>
-#include <linux/hugetlb_cgroup.h>
-#include <linux/gfp.h>
-#include <linux/pagewalk.h>
-#include <linux/pfn_t.h>
-#include <linux/memremap.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/balloon_compaction.h>
-#include <linux/mmu_notifier.h>
-#include <linux/page_idle.h>
-#include <linux/page_owner.h>
-#include <linux/sched/mm.h>
-#include <linux/ptrace.h>
-#include <linux/oom.h>
+#include <linaos/migrate.h>
+#include <linaos/export.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
+#include <linaos/pagemap.h>
+#include <linaos/buffer_head.h>
+#include <linaos/mm_inline.h>
+#include <linaos/nsproxy.h>
+#include <linaos/pagevec.h>
+#include <linaos/ksm.h>
+#include <linaos/rmap.h>
+#include <linaos/topology.h>
+#include <linaos/cpu.h>
+#include <linaos/cpuset.h>
+#include <linaos/writeback.h>
+#include <linaos/mempolicy.h>
+#include <linaos/vmalloc.h>
+#include <linaos/security.h>
+#include <linaos/backing-dev.h>
+#include <linaos/compaction.h>
+#include <linaos/syscalls.h>
+#include <linaos/compat.h>
+#include <linaos/hugetlb.h>
+#include <linaos/hugetlb_cgroup.h>
+#include <linaos/gfp.h>
+#include <linaos/pagewalk.h>
+#include <linaos/pfn_t.h>
+#include <linaos/memremap.h>
+#include <linaos/userfaultfd_k.h>
+#include <linaos/balloon_compaction.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/page_idle.h>
+#include <linaos/page_owner.h>
+#include <linaos/sched/mm.h>
+#include <linaos/ptrace.h>
+#include <linaos/oom.h>
 
 #include <asm/tlbflush.h>
 

@@ -4,7 +4,7 @@
  * This version contains the part of the user interface to the Real Time Clock
  * service. It is used with both the legacy mc146818 and also  EFI
  * Struct rtc_time and first 12 ioctl by Paul Gortmaker, 1996 - separated out
- * from <linux/mc146818rtc.h> to this file for 2.4 kernels.
+ * from <linaos/mc146818rtc.h> to this file for 2.4 kernels.
  *
  * Copyright (C) 1999 Hewlett-Packard Co.
  * Copyright (C) 1999 Stephane Eranian <eranian@hpl.hp.com>
@@ -13,10 +13,10 @@
 #define _LINUX_RTC_H_
 
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/nvmem-provider.h>
-#include <uapi/linux/rtc.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/nvmem-provider.h>
+#include <uapi/linaos/rtc.h>
 
 extern int rtc_month_days(unsigned int month, unsigned int year);
 extern int rtc_year_days(unsigned int day, unsigned int month, unsigned int year);
@@ -34,13 +34,13 @@ static inline time64_t rtc_tm_sub(struct rtc_time *lhs, struct rtc_time *rhs)
 	return rtc_tm_to_time64(lhs) - rtc_tm_to_time64(rhs);
 }
 
-#include <linux/device.h>
-#include <linux/seq_file.h>
-#include <linux/cdev.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/timerqueue.h>
-#include <linux/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/seq_file.h>
+#include <linaos/cdev.h>
+#include <linaos/poll.h>
+#include <linaos/mutex.h>
+#include <linaos/timerqueue.h>
+#include <linaos/workqueue.h>
 
 extern struct class *rtc_class;
 

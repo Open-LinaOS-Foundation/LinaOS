@@ -9,8 +9,8 @@
  * code to time64_t should get removed.
  */
 
-#include <linux/time64.h>
-#include <linux/timex.h>
+#include <linaos/time64.h>
+#include <linaos/timex.h>
 
 #include <vdso/time32.h>
 

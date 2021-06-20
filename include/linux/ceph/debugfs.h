@@ -2,7 +2,7 @@
 #ifndef _FS_CEPH_DEBUGFS_H
 #define _FS_CEPH_DEBUGFS_H
 
-#include <linux/ceph/types.h>
+#include <linaos/ceph/types.h>
 
 /* debugfs.c */
 extern void ceph_debugfs_init(void);

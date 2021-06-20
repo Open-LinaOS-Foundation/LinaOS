@@ -1,10 +1,10 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /* Copyright (c) 2020 Mellanox Technologies Ltd. */
 
-#include <linux/vdpa.h>
-#include <linux/gcd.h>
-#include <linux/string.h>
-#include <linux/mlx5/qp.h>
+#include <linaos/vdpa.h>
+#include <linaos/gcd.h>
+#include <linaos/string.h>
+#include <linaos/mlx5/qp.h>
 #include "mlx5_vdpa.h"
 
 /* DIV_ROUND_UP where the divider is a power of 2 give by its log base 2 value */

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _XT_DEVGROUP_H
 #define _XT_DEVGROUP_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum xt_devgroup_flags {
 	XT_DEVGROUP_MATCH_SRC	= 0x1,

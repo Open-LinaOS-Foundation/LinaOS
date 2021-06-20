@@ -3,10 +3,10 @@
  * Copyright (c) 2017 Chen-Yu Tsai. All rights reserved.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
 
 #include "ccu_common.h"
 #include "ccu_reset.h"
@@ -26,7 +26,7 @@
 /*
  * The CPU PLLs are actually NP clocks, with P being /1 or /4. However
  * P should only be used for output frequencies lower than 228 MHz.
- * Neither mainline Linux, U-boot, nor the vendor BSPs use these.
+ * Neither mainline LinaOS, U-boot, nor the vendor BSPs use these.
  *
  * For now we can just model it as a multiplier clock, and force P to /1.
  */

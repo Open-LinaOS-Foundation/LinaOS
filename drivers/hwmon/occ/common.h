@@ -4,9 +4,9 @@
 #ifndef OCC_COMMON_H
 #define OCC_COMMON_H
 
-#include <linux/hwmon-sysfs.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/mutex.h>
+#include <linaos/sysfs.h>
 
 struct device;
 

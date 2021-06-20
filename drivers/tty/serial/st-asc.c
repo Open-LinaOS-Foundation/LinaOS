@@ -5,24 +5,24 @@
  * Copyright (C) 2003-2013 STMicroelectronics (R&D) Limited
  */
 
-#include <linux/module.h>
-#include <linux/serial.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/serial_core.h>
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/serial.h>
+#include <linaos/console.h>
+#include <linaos/sysrq.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/serial_core.h>
+#include <linaos/clk.h>
+#include <linaos/gpio/consumer.h>
 
 #define DRIVER_NAME "st-asc"
 #define ASC_SERIAL_NAME "ttyAS"

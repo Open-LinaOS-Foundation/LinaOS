@@ -5,11 +5,11 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@linaos.intel.com>
 //
 
-#include <linux/debugfs.h>
-#include <linux/sched/signal.h>
+#include <linaos/debugfs.h>
+#include <linaos/sched/signal.h>
 #include "sof-priv.h"
 #include "ops.h"
 

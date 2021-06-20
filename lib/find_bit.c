@@ -12,12 +12,12 @@
  * size and improve performance, 2015.
  */
 
-#include <linux/bitops.h>
-#include <linux/bitmap.h>
-#include <linux/export.h>
-#include <linux/math.h>
-#include <linux/minmax.h>
-#include <linux/swab.h>
+#include <linaos/bitops.h>
+#include <linaos/bitmap.h>
+#include <linaos/export.h>
+#include <linaos/math.h>
+#include <linaos/minmax.h>
+#include <linaos/swab.h>
 
 #if !defined(find_next_bit) || !defined(find_next_zero_bit) ||			\
 	!defined(find_next_bit_le) || !defined(find_next_zero_bit_le) ||	\

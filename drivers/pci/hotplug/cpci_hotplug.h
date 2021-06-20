@@ -14,9 +14,9 @@
 #ifndef _CPCI_HOTPLUG_H
 #define _CPCI_HOTPLUG_H
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/pci_hotplug.h>
 
 /* PICMG 2.1 R2.0 HS CSR bits: */
 #define HS_CSR_INS	0x0080

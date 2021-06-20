@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH LinaOS-syscall-note */
 /*
  * nilfs2_api.h - NILFS2 user space API
  *
@@ -13,8 +13,8 @@
 #ifndef _LINUX_NILFS2_API_H
 #define _LINUX_NILFS2_API_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 
 /**
  * struct nilfs_cpinfo - checkpoint information

@@ -9,24 +9,24 @@
  *
  */
 
-#include <linux/alarmtimer.h>
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/time.h>
-#include <linux/hrtimer.h>
-#include <linux/anon_inodes.h>
-#include <linux/timerfd.h>
-#include <linux/syscalls.h>
-#include <linux/compat.h>
-#include <linux/rcupdate.h>
-#include <linux/time_namespace.h>
+#include <linaos/alarmtimer.h>
+#include <linaos/file.h>
+#include <linaos/poll.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/time.h>
+#include <linaos/hrtimer.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/timerfd.h>
+#include <linaos/syscalls.h>
+#include <linaos/compat.h>
+#include <linaos/rcupdate.h>
+#include <linaos/time_namespace.h>
 
 struct timerfd_ctx {
 	union {

@@ -5,10 +5,10 @@
  * Copyright (C) 2020 Jiaxun Yang <jiaxun.yang@flygoat.com>
  */
 
-#include <linux/of_device.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
+#include <linaos/of_device.h>
+#include <linaos/of_pci.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
 
 #include "../pci.h"
 

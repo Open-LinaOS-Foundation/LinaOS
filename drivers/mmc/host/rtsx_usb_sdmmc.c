@@ -7,26 +7,26 @@
  *   Roger Tseng <rogerable@realtek.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/card.h>
-#include <linux/scatterlist.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/sd.h>
+#include <linaos/mmc/card.h>
+#include <linaos/scatterlist.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
 
-#include <linux/rtsx_usb.h>
+#include <linaos/rtsx_usb.h>
 #include <asm/unaligned.h>
 
 #if defined(CONFIG_LEDS_CLASS) || (defined(CONFIG_LEDS_CLASS_MODULE) && \
 		defined(CONFIG_MMC_REALTEK_USB_MODULE))
-#include <linux/leds.h>
-#include <linux/workqueue.h>
+#include <linaos/leds.h>
+#include <linaos/workqueue.h>
 #define RTSX_USB_USE_LEDS_CLASS
 #endif
 

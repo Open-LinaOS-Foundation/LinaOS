@@ -6,10 +6,10 @@
  *
  *  Sören Brinkmann <soren.brinkmann@xilinx.com>
  */
-#include <linux/clk/zynq.h>
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/clk/zynq.h>
+#include <linaos/clk-provider.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 
 /**
  * struct zynq_pll

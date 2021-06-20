@@ -26,7 +26,7 @@ UBSAN_SANITIZE := n
 KASAN_SANITIZE := n
 
 ccflags-y := -shared -fno-common -fno-builtin -nostdlib \
-	-Wl,-soname=linux-vdso64.so.1 -Wl,--hash-style=both
+	-Wl,-soname=linaos-vdso64.so.1 -Wl,--hash-style=both
 asflags-y := -D__VDSO64__ -s
 
 targets += vdso64.lds

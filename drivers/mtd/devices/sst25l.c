@@ -11,18 +11,18 @@
  * Based on m25p80.c
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/flash.h>
 
 /* Erases can take up to 3 seconds! */
 #define MAX_READY_WAIT_JIFFIES	msecs_to_jiffies(3000)

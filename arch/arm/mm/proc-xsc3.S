@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/arch/arm/mm/proc-xsc3.S
+ * linaos/arch/arm/mm/proc-xsc3.S
  *
  * Original Author: Matthew Gilbert
  * Current Maintainer: Lennert Buytenhek <buytenh@wantstofly.org>
@@ -21,9 +21,9 @@
  * Based on original XScale code by Nicolas Pitre.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable-hwdef.h>

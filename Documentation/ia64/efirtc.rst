@@ -50,9 +50,9 @@ ioctl()s. The other is read-only via the /proc filesystem.
 As of today we don't offer a /proc/sys interface.
 
 To allow for a uniform interface between the legacy RTC and EFI time service,
-we have created the include/linux/rtc.h header file to contain only the
+we have created the include/linaos/rtc.h header file to contain only the
 "public" API of the two drivers.  The specifics of the legacy RTC are still
-in include/linux/mc146818rtc.h.
+in include/linaos/mc146818rtc.h.
 
 
 3. Time of day service

@@ -10,7 +10,7 @@ struct btf_id_set {
 
 #ifdef CONFIG_DEBUG_INFO_BTF
 
-#include <linux/compiler.h> /* for __PASTE */
+#include <linaos/compiler.h> /* for __PASTE */
 
 /*
  * Following macros help to define lists of BTF IDs placed

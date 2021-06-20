@@ -14,7 +14,7 @@
 
 #include "ctamixer.h"
 #include "cthardware.h"
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #define AMIXER_RESOURCE_NUM	256
 #define SUM_RESOURCE_NUM	256

@@ -33,12 +33,12 @@
  *   0.7: rewrite code that urb->interval is always 1
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/fcntl.h>
-#include <linux/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/fcntl.h>
+#include <linaos/compiler.h>
 #include <asm/unaligned.h>
 
 #include "../comedi_usb.h"

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/rt1015.h -- Platform data for RT1015
+ * linaos/sound/rt1015.h -- Platform data for RT1015
  *
  * Copyright 2020 Realtek Microelectronics
  */

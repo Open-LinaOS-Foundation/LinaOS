@@ -8,25 +8,25 @@
 #ifndef _LINUX_F2FS_H
 #define _LINUX_F2FS_H
 
-#include <linux/uio.h>
-#include <linux/types.h>
-#include <linux/page-flags.h>
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/crc32.h>
-#include <linux/magic.h>
-#include <linux/kobject.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/vmalloc.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/quotaops.h>
-#include <linux/part_stat.h>
+#include <linaos/uio.h>
+#include <linaos/types.h>
+#include <linaos/page-flags.h>
+#include <linaos/buffer_head.h>
+#include <linaos/slab.h>
+#include <linaos/crc32.h>
+#include <linaos/magic.h>
+#include <linaos/kobject.h>
+#include <linaos/sched.h>
+#include <linaos/cred.h>
+#include <linaos/vmalloc.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/quotaops.h>
+#include <linaos/part_stat.h>
 #include <crypto/hash.h>
 
-#include <linux/fscrypt.h>
-#include <linux/fsverity.h>
+#include <linaos/fscrypt.h>
+#include <linaos/fsverity.h>
 
 #ifdef CONFIG_F2FS_CHECK_FS
 #define f2fs_bug_on(sbi, condition)	BUG_ON(condition)

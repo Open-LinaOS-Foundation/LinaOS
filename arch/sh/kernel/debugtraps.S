@@ -6,8 +6,8 @@
  *
  *  Copyright (C) 2006 - 2008  Paul Mundt
  */
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <linaos/sys.h>
+#include <linaos/linkage.h>
 
 #if !defined(CONFIG_KGDB)
 #define singlestep_trap_handler		debug_trap_handler

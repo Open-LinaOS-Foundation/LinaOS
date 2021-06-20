@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright (c) 2017-2019 Mellanox Technologies. All rights reserved.
  */
@@ -6,7 +6,7 @@
 #ifndef _RDMA_CORE_RESTRACK_H_
 #define _RDMA_CORE_RESTRACK_H_
 
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 
 /**
  * struct rdma_restrack_root - main resource tracking management

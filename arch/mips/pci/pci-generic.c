@@ -6,7 +6,7 @@
  * pcibios_align_resource taken from arch/arm/kernel/bios32.c.
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 /*
  * We need to avoid collisions with `mirrored' VGA ports

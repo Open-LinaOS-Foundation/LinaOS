@@ -9,7 +9,7 @@
  *  in the early extended-partition checks and added DM partitions
  *
  *  Support for DiskManager v6.0x added by Mark Lord,
- *  with information provided by OnTrack.  This now works for linux fdisk
+ *  with information provided by OnTrack.  This now works for linaos fdisk
  *  and LILO, as well as loadlin and bootln.  Note that disks other than
  *  /dev/hda *must* have a "DOS" type 0x51 partition in the first slot (hda1).
  *
@@ -25,8 +25,8 @@
  *  Unixware slices support by Andrzej Krzysztofowicz <ankry@mif.pg.gda.pl>
  *  and Krzysztof G. Baranowski <kgb@knm.org.pl>
  */
-#include <linux/msdos_fs.h>
-#include <linux/msdos_partition.h>
+#include <linaos/msdos_fs.h>
+#include <linaos/msdos_partition.h>
 
 #include "check.h"
 #include "efi.h"
@@ -85,9 +85,9 @@ static int aix_magic_present(struct parsed_partitions *state, unsigned char *p)
 		return 0;
 
 	/*
-	 * Assume the partition table is valid if Linux partitions exists.
+	 * Assume the partition table is valid if LinaOS partitions exists.
 	 * Note that old Solaris/x86 partitions use the same indicator as
-	 * Linux swap partitions, so we consider that a Linux partition as
+	 * LinaOS swap partitions, so we consider that a LinaOS partition as
 	 * well.
 	 */
 	for (slot = 1; slot <= 4; slot++, pt++) {
@@ -125,7 +125,7 @@ static void set_info(struct parsed_partitions *state, int slot,
  * is the real data partition (with a start relative to the partition
  * table start).  The second is a pointer to the next logical partition
  * (with a start relative to the entire extended partition).
- * We do not create a Linux partition for the partition tables, but
+ * We do not create a LinaOS partition for the partition tables, but
  * only for the actual data partitions.
  */
 
@@ -246,7 +246,7 @@ struct solaris_x86_vtoc {
 };
 
 /* james@bpgc.com: Solaris has a nasty indicator: 0x82 which also
-   indicates linux swap.  Be careful before believing this is Solaris. */
+   indicates linaos swap.  Be careful before believing this is Solaris. */
 
 static void parse_solaris_x86(struct parsed_partitions *state,
 			      sector_t offset, sector_t size, int origin)

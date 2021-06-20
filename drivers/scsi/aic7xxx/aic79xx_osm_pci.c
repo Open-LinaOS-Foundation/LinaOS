@@ -1,5 +1,5 @@
 /*
- * Linux driver attachment glue for PCI based U320 controllers.
+ * LinaOS driver attachment glue for PCI based U320 controllers.
  *
  * Copyright (c) 2000-2001 Adaptec Inc.
  * All rights reserved.
@@ -36,7 +36,7 @@
  * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGES.
  *
- * $Id: //depot/aic7xxx/linux/drivers/scsi/aic7xxx/aic79xx_osm_pci.c#25 $
+ * $Id: //depot/aic7xxx/linaos/drivers/scsi/aic7xxx/aic79xx_osm_pci.c#25 $
  */
 
 #include "aic79xx_osm.h"
@@ -49,7 +49,7 @@
 	ID2C(x),	 \
 	ID2C(IDIROC(x))
 
-static const struct pci_device_id ahd_linux_pci_id_table[] = {
+static const struct pci_device_id ahd_linaos_pci_id_table[] = {
 	/* aic7901 based controllers */
 	ID(ID_AHA_29320A),
 	ID(ID_AHA_29320ALP),
@@ -72,10 +72,10 @@ static const struct pci_device_id ahd_linux_pci_id_table[] = {
 	{ 0 }
 };
 
-MODULE_DEVICE_TABLE(pci, ahd_linux_pci_id_table);
+MODULE_DEVICE_TABLE(pci, ahd_linaos_pci_id_table);
 
 static int __maybe_unused
-ahd_linux_pci_dev_suspend(struct device *dev)
+ahd_linaos_pci_dev_suspend(struct device *dev)
 {
 	struct ahd_softc *ahd = dev_get_drvdata(dev);
 	int rc;
@@ -89,7 +89,7 @@ ahd_linux_pci_dev_suspend(struct device *dev)
 }
 
 static int __maybe_unused
-ahd_linux_pci_dev_resume(struct device *dev)
+ahd_linaos_pci_dev_resume(struct device *dev)
 {
 	struct ahd_softc *ahd = dev_get_drvdata(dev);
 
@@ -101,7 +101,7 @@ ahd_linux_pci_dev_resume(struct device *dev)
 }
 
 static void
-ahd_linux_pci_dev_remove(struct pci_dev *pdev)
+ahd_linaos_pci_dev_remove(struct pci_dev *pdev)
 {
 	struct ahd_softc *ahd = pci_get_drvdata(pdev);
 	u_long s;
@@ -116,7 +116,7 @@ ahd_linux_pci_dev_remove(struct pci_dev *pdev)
 }
 
 static void
-ahd_linux_pci_inherit_flags(struct ahd_softc *ahd)
+ahd_linaos_pci_inherit_flags(struct ahd_softc *ahd)
 {
 	struct pci_dev *pdev = ahd->dev_softc, *master_pdev;
 	unsigned int master_devfn = PCI_DEVFN(PCI_SLOT(pdev->devfn), 0);
@@ -134,7 +134,7 @@ ahd_linux_pci_inherit_flags(struct ahd_softc *ahd)
 }
 
 static int
-ahd_linux_pci_dev_probe(struct pci_dev *pdev, const struct pci_device_id *ent)
+ahd_linaos_pci_dev_probe(struct pci_dev *pdev, const struct pci_device_id *ent)
 {
 	char		 buf[80];
 	struct		 ahd_softc *ahd;
@@ -196,46 +196,46 @@ ahd_linux_pci_dev_probe(struct pci_dev *pdev, const struct pci_device_id *ent)
 	 * * settings from function 0.
 	 */
 	if ((ahd->features & AHD_MULTI_FUNC) && PCI_FUNC(pdev->devfn) != 0)
-		ahd_linux_pci_inherit_flags(ahd);
+		ahd_linaos_pci_inherit_flags(ahd);
 
 	pci_set_drvdata(pdev, ahd);
 
-	ahd_linux_register_host(ahd, &aic79xx_driver_template);
+	ahd_linaos_register_host(ahd, &aic79xx_driver_template);
 	return (0);
 }
 
-static SIMPLE_DEV_PM_OPS(ahd_linux_pci_dev_pm_ops,
-			 ahd_linux_pci_dev_suspend,
-			 ahd_linux_pci_dev_resume);
+static SIMPLE_DEV_PM_OPS(ahd_linaos_pci_dev_pm_ops,
+			 ahd_linaos_pci_dev_suspend,
+			 ahd_linaos_pci_dev_resume);
 
 static struct pci_driver aic79xx_pci_driver = {
 	.name		= "aic79xx",
-	.probe		= ahd_linux_pci_dev_probe,
-	.driver.pm	= &ahd_linux_pci_dev_pm_ops,
-	.remove		= ahd_linux_pci_dev_remove,
-	.id_table	= ahd_linux_pci_id_table
+	.probe		= ahd_linaos_pci_dev_probe,
+	.driver.pm	= &ahd_linaos_pci_dev_pm_ops,
+	.remove		= ahd_linaos_pci_dev_remove,
+	.id_table	= ahd_linaos_pci_id_table
 };
 
 int
-ahd_linux_pci_init(void)
+ahd_linaos_pci_init(void)
 {
 	return pci_register_driver(&aic79xx_pci_driver);
 }
 
 void
-ahd_linux_pci_exit(void)
+ahd_linaos_pci_exit(void)
 {
 	pci_unregister_driver(&aic79xx_pci_driver);
 }
 
 static int
-ahd_linux_pci_reserve_io_regions(struct ahd_softc *ahd, resource_size_t *base,
+ahd_linaos_pci_reserve_io_regions(struct ahd_softc *ahd, resource_size_t *base,
 				 resource_size_t *base2)
 {
 	*base = pci_resource_start(ahd->dev_softc, 0);
 	/*
 	 * This is really the 3rd bar and should be at index 2,
-	 * but the Linux PCI code doesn't know how to "count" 64bit
+	 * but the LinaOS PCI code doesn't know how to "count" 64bit
 	 * bars.
 	 */
 	*base2 = pci_resource_start(ahd->dev_softc, 3);
@@ -251,7 +251,7 @@ ahd_linux_pci_reserve_io_regions(struct ahd_softc *ahd, resource_size_t *base,
 }
 
 static int
-ahd_linux_pci_reserve_mem_region(struct ahd_softc *ahd,
+ahd_linaos_pci_reserve_mem_region(struct ahd_softc *ahd,
 				 resource_size_t *bus_addr,
 				 uint8_t __iomem **maddr)
 {
@@ -301,7 +301,7 @@ ahd_pci_map_registers(struct ahd_softc *ahd)
 	command &= ~(PCIM_CMD_PORTEN|PCIM_CMD_MEMEN);
 	base = 0;
 	maddr = NULL;
-	error = ahd_linux_pci_reserve_mem_region(ahd, &base, &maddr);
+	error = ahd_linaos_pci_reserve_mem_region(ahd, &base, &maddr);
 	if (error == 0) {
 		ahd->platform_data->mem_busaddr = base;
 		ahd->tags[0] = BUS_SPACE_MEMIO;
@@ -337,7 +337,7 @@ ahd_pci_map_registers(struct ahd_softc *ahd)
 	if (maddr == NULL) {
 		resource_size_t base2;
 
-		error = ahd_linux_pci_reserve_io_regions(ahd, &base, &base2);
+		error = ahd_linaos_pci_reserve_io_regions(ahd, &base, &base2);
 		if (error == 0) {
 			ahd->tags[0] = BUS_SPACE_PIO;
 			ahd->tags[1] = BUS_SPACE_PIO;
@@ -363,7 +363,7 @@ ahd_pci_map_int(struct ahd_softc *ahd)
 {
 	int error;
 
-	error = request_irq(ahd->dev_softc->irq, ahd_linux_isr,
+	error = request_irq(ahd->dev_softc->irq, ahd_linaos_isr,
 			    IRQF_SHARED, "aic79xx", ahd);
 	if (!error)
 		ahd->platform_data->irq = ahd->dev_softc->irq;

@@ -121,13 +121,13 @@
 		pwr_led {
 			label = "sam9-l9260:yellow:pwr";
 			gpios = <&pioA 9 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "cpu0";
+			linaos,default-trigger = "cpu0";
 		};
 
 		status_led {
 			label = "sam9-l9260:green:status";
 			gpios = <&pioA 6 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "timer";
+			linaos,default-trigger = "timer";
 		};
 	};
 };

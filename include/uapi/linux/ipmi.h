@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * ipmi.h
  *
@@ -15,8 +15,8 @@
 #ifndef _UAPI__LINUX_IPMI_H
 #define _UAPI__LINUX_IPMI_H
 
-#include <linux/ipmi_msgdefs.h>
-#include <linux/compiler.h>
+#include <linaos/ipmi_msgdefs.h>
+#include <linaos/compiler.h>
 
 /*
  * This file describes an interface to an IPMI driver.  You have to

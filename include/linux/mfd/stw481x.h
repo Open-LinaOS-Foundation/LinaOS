@@ -8,10 +8,10 @@
 #ifndef MFD_STW481X_H
 #define MFD_STW481X_H
 
-#include <linux/i2c.h>
-#include <linux/regulator/machine.h>
-#include <linux/regmap.h>
-#include <linux/bitops.h>
+#include <linaos/i2c.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regmap.h>
+#include <linaos/bitops.h>
 
 /* These registers are accessed from more than one driver */
 #define STW_CONF1			0x11U

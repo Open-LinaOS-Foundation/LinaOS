@@ -7,8 +7,8 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/device.h>
-#include <linux/gfp.h>
+#include <linaos/device.h>
+#include <linaos/gfp.h>
 
 #include <media/v4l2-subdev.h>
 #include <media/videobuf2-vmalloc.h>

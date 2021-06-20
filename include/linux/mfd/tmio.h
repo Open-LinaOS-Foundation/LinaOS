@@ -2,13 +2,13 @@
 #ifndef MFD_TMIO_H
 #define MFD_TMIO_H
 
-#include <linux/device.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/mmc/card.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/device.h>
+#include <linaos/fb.h>
+#include <linaos/io.h>
+#include <linaos/jiffies.h>
+#include <linaos/mmc/card.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 
 #define tmio_ioread8(addr) readb(addr)
 #define tmio_ioread16(addr) readw(addr)

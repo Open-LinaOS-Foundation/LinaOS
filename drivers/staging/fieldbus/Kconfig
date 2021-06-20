@@ -7,11 +7,11 @@ menuconfig FIELDBUS_DEV
 	  Fieldbus device (client) adapters allow data exchange with a PLC aka.
 	  "Fieldbus Controller" over a fieldbus (Profinet, FLNet, etc.)
 
-	  They are typically used when a Linux device wants to expose itself
+	  They are typically used when a LinaOS device wants to expose itself
 	  as an actuator, motor, console light, switch, etc. over the fieldbus.
 
 	  This framework is designed to provide a generic interface to Fieldbus
-	  Devices from both the Linux Kernel and the userspace.
+	  Devices from both the LinaOS Kernel and the userspace.
 
 	  If unsure, say no.
 

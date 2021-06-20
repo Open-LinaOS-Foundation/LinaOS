@@ -14,24 +14,24 @@
  *	Copyright (C) 2004 Texas Instruments
  *	Copyright (C) 2005 Dirk Behme
  */
-#include <linux/types.h>
-#include <linux/hwmon.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_device.h>
-#include <linux/gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/hwmon.h>
+#include <linaos/err.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/input.h>
+#include <linaos/input/touchscreen.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/pm.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_device.h>
+#include <linaos/gpio.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/ads7846.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/module.h>
 #include <asm/unaligned.h>
 
 /*
@@ -1198,7 +1198,7 @@ static const struct ads7846_platform_data *ads7846_probe_dt(struct device *dev)
 			     &pdata->gpio_pendown_debounce);
 
 	pdata->wakeup = of_property_read_bool(node, "wakeup-source") ||
-			of_property_read_bool(node, "linux,wakeup");
+			of_property_read_bool(node, "linaos,wakeup");
 
 	pdata->gpio_pendown = of_get_named_gpio(dev->of_node, "pendown-gpio", 0);
 

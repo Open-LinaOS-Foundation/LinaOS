@@ -1,4 +1,4 @@
-/* Copyright (C) 2005 - 2008 Jeff Dike <jdike@{linux.intel,addtoit}.com> */
+/* Copyright (C) 2005 - 2008 Jeff Dike <jdike@{linaos.intel,addtoit}.com> */
 
 /* Much of this ripped from drivers/char/hw_random.c, see there for other
  * copyright.
@@ -6,14 +6,14 @@
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  */
-#include <linux/sched/signal.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/miscdevice.h>
-#include <linux/hw_random.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <linaos/sched/signal.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/miscdevice.h>
+#include <linaos/hw_random.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
 #include <init.h>
 #include <irq_kern.h>
 #include <os.h>

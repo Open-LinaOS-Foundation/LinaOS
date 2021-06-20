@@ -7,11 +7,11 @@
  * Author: Richard Fitzgerald <rf@opensource.wolfsonmicro.com>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/registers.h>
-#include <linux/device.h>
+#include <linaos/mfd/arizona/core.h>
+#include <linaos/mfd/arizona/registers.h>
+#include <linaos/device.h>
 
 #include "arizona.h"
 

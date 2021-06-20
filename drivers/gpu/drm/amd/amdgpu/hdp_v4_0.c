@@ -27,7 +27,7 @@
 
 #include "hdp/hdp_4_0_offset.h"
 #include "hdp/hdp_4_0_sh_mask.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/linaos/kfd_ioctl.h>
 
 /* for Vega20 register name change */
 #define mmHDP_MEM_POWER_CTRL    0x00d4

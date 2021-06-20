@@ -5,12 +5,12 @@
  * Copyright (c) 2009 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 #include <sound/core.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
 #include <sound/tlv.h>
 #include <sound/hda_codec.h>
 #include "hda_local.h"

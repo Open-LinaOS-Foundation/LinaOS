@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2014-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2014-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2018-2020 Linaro Ltd.
  */
 
@@ -19,8 +19,8 @@
  * time only these three are supported.
  */
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
 
 #include "ipa.h"
 #include "ipa_clock.h"
@@ -31,7 +31,7 @@
 /**
  * struct ipa_interrupt - IPA interrupt information
  * @ipa:		IPA pointer
- * @irq:		Linux IRQ number used for IPA interrupts
+ * @irq:		LinaOS IRQ number used for IPA interrupts
  * @enabled:		Mask indicating which interrupts are enabled
  * @handler:		Array of handlers indexed by IPA interrupt ID
  */

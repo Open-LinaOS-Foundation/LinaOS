@@ -6,7 +6,7 @@
 #ifndef __LINUX_MFD_MC13XXX_H
 #define __LINUX_MFD_MC13XXX_H
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 struct mc13xxx;
 

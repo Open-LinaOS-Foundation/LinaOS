@@ -12,14 +12,14 @@
 #ifndef _NFP_NET_H_
 #define _NFP_NET_H_
 
-#include <linux/atomic.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/semaphore.h>
-#include <linux/workqueue.h>
+#include <linaos/atomic.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/io-64-nonatomic-hi-lo.h>
+#include <linaos/semaphore.h>
+#include <linaos/workqueue.h>
 #include <net/xdp.h>
 
 #include "nfp_net_ctrl.h"
@@ -191,7 +191,7 @@ struct nfp_net_tx_buf {
 /**
  * struct nfp_net_tx_ring - TX ring structure
  * @r_vec:      Back pointer to ring vector structure
- * @idx:        Ring index from Linux's perspective
+ * @idx:        Ring index from LinaOS's perspective
  * @qcidx:      Queue Controller Peripheral (QCP) queue index for the TX queue
  * @qcp_q:      Pointer to base of the QCP TX queue
  * @cnt:        Size of the queue in number of descriptors
@@ -319,7 +319,7 @@ struct nfp_net_rx_buf {
  * @cnt:        Size of the queue in number of descriptors
  * @wr_p:       FL/RX ring write pointer (free running)
  * @rd_p:       FL/RX ring read pointer (free running)
- * @idx:        Ring index from Linux's perspective
+ * @idx:        Ring index from LinaOS's perspective
  * @fl_qcidx:   Queue Controller Peripheral (QCP) queue index for the freelist
  * @qcp_fl:     Pointer to base of the QCP freelist queue
  * @rxbufs:     Array of transmitted FL/RX buffers

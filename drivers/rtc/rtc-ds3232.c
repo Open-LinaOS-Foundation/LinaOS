@@ -9,16 +9,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/hwmon.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/spi/spi.h>
+#include <linaos/rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/slab.h>
+#include <linaos/regmap.h>
+#include <linaos/hwmon.h>
 
 #define DS3232_REG_SECONDS      0x00
 #define DS3232_REG_MINUTES      0x01
@@ -135,10 +135,10 @@ static int ds3232_read_time(struct device *dev, struct rtc_time *time)
 		time->tm_hour = bcd2bin(hour);
 	}
 
-	/* Day of the week in linux range is 0~6 while 1~7 in RTC chip */
+	/* Day of the week in linaos range is 0~6 while 1~7 in RTC chip */
 	time->tm_wday = bcd2bin(week) - 1;
 	time->tm_mday = bcd2bin(day);
-	/* linux tm_mon range:0~11, while month range is 1~12 in RTC chip */
+	/* linaos tm_mon range:0~11, while month range is 1~12 in RTC chip */
 	time->tm_mon = bcd2bin(month & 0x7F) - 1;
 	if (century)
 		add_century = 100;
@@ -158,10 +158,10 @@ static int ds3232_set_time(struct device *dev, struct rtc_time *time)
 	buf[0] = bin2bcd(time->tm_sec);
 	buf[1] = bin2bcd(time->tm_min);
 	buf[2] = bin2bcd(time->tm_hour);
-	/* Day of the week in linux range is 0~6 while 1~7 in RTC chip */
+	/* Day of the week in linaos range is 0~6 while 1~7 in RTC chip */
 	buf[3] = bin2bcd(time->tm_wday + 1);
 	buf[4] = bin2bcd(time->tm_mday); /* Date */
-	/* linux tm_mon range:0~11, while month range is 1~12 in RTC chip */
+	/* linaos tm_mon range:0~11, while month range is 1~12 in RTC chip */
 	buf[5] = bin2bcd(time->tm_mon + 1);
 	if (time->tm_year >= 100) {
 		buf[5] |= 0x80;
@@ -175,7 +175,7 @@ static int ds3232_set_time(struct device *dev, struct rtc_time *time)
 
 /*
  * DS3232 has two alarm, we only use alarm1
- * According to linux specification, only support one-shot alarm
+ * According to linaos specification, only support one-shot alarm
  * no periodic alarm mode
  */
 static int ds3232_read_alarm(struct device *dev, struct rtc_wkalrm *alarm)
@@ -209,7 +209,7 @@ out:
 }
 
 /*
- * linux rtc-module does not support wday alarm
+ * linaos rtc-module does not support wday alarm
  * and only 24h time mode supported indeed
  */
 static int ds3232_set_alarm(struct device *dev, struct rtc_wkalrm *alarm)

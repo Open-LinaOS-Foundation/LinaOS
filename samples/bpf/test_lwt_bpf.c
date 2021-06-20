@@ -12,14 +12,14 @@
 
 #include <stdint.h>
 #include <stddef.h>
-#include <linux/bpf.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/icmpv6.h>
-#include <linux/if_ether.h>
+#include <linaos/bpf.h>
+#include <linaos/ip.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/icmpv6.h>
+#include <linaos/if_ether.h>
 #include <bpf/bpf_helpers.h>
 #include <string.h>
 

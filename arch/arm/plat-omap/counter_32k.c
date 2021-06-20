@@ -9,13 +9,13 @@
  *
  * NOTE: This timer is not the same timer as the old OMAP1 MPU timer.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clocksource.h>
-#include <linux/sched_clock.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/clocksource.h>
+#include <linaos/sched_clock.h>
 
 #include <asm/mach/time.h>
 

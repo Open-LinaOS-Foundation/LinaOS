@@ -88,15 +88,15 @@
  *			fix return value of pcc_acpi_get_key()
  *			fix checking return value of acpi_bus_register_driver()
  *
- *      Aug.22, 2004    David Bronaugh <dbronaugh@linuxboxen.org>
+ *      Aug.22, 2004    David Bronaugh <dbronaugh@linaosboxen.org>
  *              -v0.6.2 Add check on ACPI data (num_sifr)
  *                      Coding style cleanups, better error messages/handling
  *			Fixed an off-by-one error in memory allocation
  *
- *      Aug.21, 2004    David Bronaugh <dbronaugh@linuxboxen.org>
+ *      Aug.21, 2004    David Bronaugh <dbronaugh@linaosboxen.org>
  *              -v0.6.1 Fix a silly error with status checking
  *
- *      Aug.20, 2004    David Bronaugh <dbronaugh@linuxboxen.org>
+ *      Aug.20, 2004    David Bronaugh <dbronaugh@linaosboxen.org>
  *              - v0.6  Correct brightness controls to reflect reality
  *                      based on information gleaned by Hiroshi Miura
  *                      and discussions with Hiroshi Miura
@@ -119,23 +119,23 @@
  *		- v0.1  start from toshiba_acpi driver written by John Belmonte
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/backlight.h>
-#include <linux/ctype.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/backlight.h>
+#include <linaos/ctype.h>
+#include <linaos/seq_file.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/input.h>
+#include <linaos/input/sparse-keymap.h>
+#include <linaos/platform_device.h>
 
 
 MODULE_AUTHOR("Hiroshi Miura <miura@da-cha.org>");
-MODULE_AUTHOR("David Bronaugh <dbronaugh@linuxboxen.org>");
+MODULE_AUTHOR("David Bronaugh <dbronaugh@linaosboxen.org>");
 MODULE_AUTHOR("Harald Welte <laforge@gnumonks.org>");
 MODULE_AUTHOR("Martin Lucina <mato@kotelna.sk>");
 MODULE_AUTHOR("Kenneth Chan <kenneth.t.chan@gmail.com>");

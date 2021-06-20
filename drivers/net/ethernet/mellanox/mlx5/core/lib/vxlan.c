@@ -30,10 +30,10 @@
  * SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/refcount.h>
-#include <linux/mlx5/driver.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/refcount.h>
+#include <linaos/mlx5/driver.h>
 #include <net/vxlan.h>
 #include "mlx5_core.h"
 #include "vxlan.h"

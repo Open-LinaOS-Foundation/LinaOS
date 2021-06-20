@@ -5,7 +5,7 @@
  * Copyright IBM Corp. 2012
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/export.h>
 #include <asm/nospec-insn.h>
 

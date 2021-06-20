@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/pci_ids.h>
+#include <linaos/pci_ids.h>
 #include "ixgb_hw.h"
 #include "ixgb_ids.h"
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 
 /*  Local function prototypes */
 

@@ -16,10 +16,10 @@
  *      Applied standard bit operations to improve bitmap scanning.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/jhash.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/jhash.h>
 #include <net/netlabel.h>
 #include "ebitmap.h"
 #include "policydb.h"
@@ -103,7 +103,7 @@ int ebitmap_and(struct ebitmap *dst, struct ebitmap *e1, struct ebitmap *e2)
  * @catmap: the NetLabel category bitmap
  *
  * Description:
- * Export a SELinux extensibile bitmap into a NetLabel category bitmap.
+ * Export a SELinaOS extensibile bitmap into a NetLabel category bitmap.
  * Returns zero on success, negative values on error.
  *
  */
@@ -155,7 +155,7 @@ netlbl_export_failure:
  * @catmap: the NetLabel category bitmap
  *
  * Description:
- * Import a NetLabel category bitmap into a SELinux extensibile bitmap.
+ * Import a NetLabel category bitmap into a SELinaOS extensibile bitmap.
  * Returns zero on success, negative values on error.
  *
  */
@@ -383,7 +383,7 @@ int ebitmap_read(struct ebitmap *e, void *fp)
 	count = le32_to_cpu(buf[2]);
 
 	if (mapunit != BITS_PER_U64) {
-		pr_err("SELinux: ebitmap: map size %u does not "
+		pr_err("SELinaOS: ebitmap: map size %u does not "
 		       "match my size %zd (high bit was %d)\n",
 		       mapunit, BITS_PER_U64, e->highbit);
 		goto bad;
@@ -404,19 +404,19 @@ int ebitmap_read(struct ebitmap *e, void *fp)
 	for (i = 0; i < count; i++) {
 		rc = next_entry(&ebitmap_start, fp, sizeof(u32));
 		if (rc < 0) {
-			pr_err("SELinux: ebitmap: truncated map\n");
+			pr_err("SELinaOS: ebitmap: truncated map\n");
 			goto bad;
 		}
 		startbit = le32_to_cpu(ebitmap_start);
 
 		if (startbit & (mapunit - 1)) {
-			pr_err("SELinux: ebitmap start bit (%d) is "
+			pr_err("SELinaOS: ebitmap start bit (%d) is "
 			       "not a multiple of the map unit size (%u)\n",
 			       startbit, mapunit);
 			goto bad;
 		}
 		if (startbit > e->highbit - mapunit) {
-			pr_err("SELinux: ebitmap start bit (%d) is "
+			pr_err("SELinaOS: ebitmap start bit (%d) is "
 			       "beyond the end of the bitmap (%u)\n",
 			       startbit, (e->highbit - mapunit));
 			goto bad;
@@ -426,7 +426,7 @@ int ebitmap_read(struct ebitmap *e, void *fp)
 			struct ebitmap_node *tmp;
 			tmp = kmem_cache_zalloc(ebitmap_node_cachep, GFP_KERNEL);
 			if (!tmp) {
-				pr_err("SELinux: ebitmap: out of memory\n");
+				pr_err("SELinaOS: ebitmap: out of memory\n");
 				rc = -ENOMEM;
 				goto bad;
 			}
@@ -438,7 +438,7 @@ int ebitmap_read(struct ebitmap *e, void *fp)
 				e->node = tmp;
 			n = tmp;
 		} else if (startbit <= n->startbit) {
-			pr_err("SELinux: ebitmap: start bit %d"
+			pr_err("SELinaOS: ebitmap: start bit %d"
 			       " comes after start bit %d\n",
 			       startbit, n->startbit);
 			goto bad;
@@ -446,7 +446,7 @@ int ebitmap_read(struct ebitmap *e, void *fp)
 
 		rc = next_entry(&mapbits, fp, sizeof(u64));
 		if (rc < 0) {
-			pr_err("SELinux: ebitmap: truncated map\n");
+			pr_err("SELinaOS: ebitmap: truncated map\n");
 			goto bad;
 		}
 		map = le64_to_cpu(mapbits);

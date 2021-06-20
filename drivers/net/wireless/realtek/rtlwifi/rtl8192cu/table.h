@@ -4,7 +4,7 @@
 #ifndef __RTL92CU_TABLE__H_
 #define __RTL92CU_TABLE__H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define RTL8192CUPHY_REG_2TARRAY_LENGTH		374
 extern u32 RTL8192CUPHY_REG_2TARRAY[RTL8192CUPHY_REG_2TARRAY_LENGTH];

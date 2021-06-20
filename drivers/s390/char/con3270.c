@@ -8,15 +8,15 @@
  *     Copyright IBM Corp. 2003, 2009
  */
 
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/reboot.h>
+#include <linaos/module.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/reboot.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>

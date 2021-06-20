@@ -4,8 +4,8 @@
  */
 
 
-#include <linux/bitfield.h>
-#include <linux/etherdevice.h>
+#include <linaos/bitfield.h>
+#include <linaos/etherdevice.h>
 
 #include "dsa_priv.h"
 

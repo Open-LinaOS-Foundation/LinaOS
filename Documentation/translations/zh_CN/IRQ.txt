@@ -28,7 +28,7 @@ Documentation/core-api/irq/index.rst 的中文翻译
 或来自一个数据包。多个设备可能连接到同个硬件引脚，从而共享一个 IRQ。
 
 一个 IRQ 编号是用于告知硬件中断源的内核标识。通常情况下，这是一个
-全局 irq_desc 数组的索引，但是除了在 linux/interrupt.h 中的实现，
+全局 irq_desc 数组的索引，但是除了在 linaos/interrupt.h 中的实现，
 具体的细节是体系结构特定的。
 
 一个 IRQ 编号是设备上某个可能的中断源的枚举。通常情况下，枚举的编号是

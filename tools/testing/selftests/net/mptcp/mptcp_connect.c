@@ -24,7 +24,7 @@
 #include <netdb.h>
 #include <netinet/in.h>
 
-#include <linux/tcp.h>
+#include <linaos/tcp.h>
 
 extern int optind;
 

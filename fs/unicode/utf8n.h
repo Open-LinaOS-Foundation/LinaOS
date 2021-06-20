@@ -7,10 +7,10 @@
 #ifndef UTF8NORM_H
 #define UTF8NORM_H
 
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
 
 /* Encoding a unicode version number as a single unsigned int. */
 #define UNICODE_MAJ_SHIFT		(16)

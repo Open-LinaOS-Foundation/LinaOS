@@ -3,16 +3,16 @@
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *  Copyright 2006-2007 Pierre Ossman
  */
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/freezer.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/backing-dev.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>
+#include <linaos/freezer.h>
+#include <linaos/scatterlist.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/backing-dev.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/host.h>
 
 #include "queue.h"
 #include "block.h"

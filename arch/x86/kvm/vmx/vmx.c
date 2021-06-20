@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for LinaOS
  *
  * This module enables machines with Intel VT-x extensions to run virtual
  * machines without emulation or binary translation.
@@ -13,21 +13,21 @@
  *   Yaniv Kamay  <yaniv@qumranet.com>
  */
 
-#include <linux/highmem.h>
-#include <linux/hrtimer.h>
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mm.h>
-#include <linux/objtool.h>
-#include <linux/sched.h>
-#include <linux/sched/smt.h>
-#include <linux/slab.h>
-#include <linux/tboot.h>
-#include <linux/trace_events.h>
-#include <linux/entry-kvm.h>
+#include <linaos/highmem.h>
+#include <linaos/hrtimer.h>
+#include <linaos/kernel.h>
+#include <linaos/kvm_host.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/mm.h>
+#include <linaos/objtool.h>
+#include <linaos/sched.h>
+#include <linaos/sched/smt.h>
+#include <linaos/slab.h>
+#include <linaos/tboot.h>
+#include <linaos/trace_events.h>
+#include <linaos/entry-kvm.h>
 
 #include <asm/apic.h>
 #include <asm/asm.h>
@@ -1378,7 +1378,7 @@ void vmx_vcpu_load_vmcs(struct kvm_vcpu *vcpu, int cpu,
 		kvm_make_request(KVM_REQ_TLB_FLUSH, vcpu);
 
 		/*
-		 * Linux uses per-cpu TSS and GDT, so set these when switching
+		 * LinaOS uses per-cpu TSS and GDT, so set these when switching
 		 * processors.  See 22.2.4.
 		 */
 		vmcs_writel(HOST_TR_BASE,

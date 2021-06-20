@@ -6,14 +6,14 @@
  * Copyright (C) 2006 Craig W. Nadler
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
 #include <asm/byteorder.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/g_printer.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/composite.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/g_printer.h>
 
 USB_GADGET_COMPOSITE_OPTIONS();
 
@@ -33,7 +33,7 @@ static const char shortname [] = "printer";
 /* Thanks to NetChip Technologies for donating this product ID.
  */
 #define PRINTER_VENDOR_NUM	0x0525		/* NetChip */
-#define PRINTER_PRODUCT_NUM	0xa4a8		/* Linux-USB Printer Gadget */
+#define PRINTER_PRODUCT_NUM	0xa4a8		/* LinaOS-USB Printer Gadget */
 
 /* Some systems will want different product identifiers published in the
  * device descriptor, either numbers or strings or both.  These string
@@ -45,7 +45,7 @@ MODULE_PARM_DESC(iSerialNum, "1");
 
 static char *iPNPstring;
 module_param(iPNPstring, charp, S_IRUGO);
-MODULE_PARM_DESC(iPNPstring, "MFG:linux;MDL:g_printer;CLS:PRINTER;SN:1;");
+MODULE_PARM_DESC(iPNPstring, "MFG:linaos;MDL:g_printer;CLS:PRINTER;SN:1;");
 
 /* Number of requests to allocate per endpoint, not used for ep0. */
 static unsigned qlen = 10;
@@ -84,7 +84,7 @@ static const struct usb_descriptor_header *otg_desc[2];
 static char				product_desc [40] = DRIVER_DESC;
 static char				serial_num [40] = "1";
 static char				*pnp_string =
-	"MFG:linux;MDL:g_printer;CLS:PRINTER;SN:1;";
+	"MFG:linaos;MDL:g_printer;CLS:PRINTER;SN:1;";
 
 /* static strings, in UTF-8 */
 static struct usb_string		strings [] = {

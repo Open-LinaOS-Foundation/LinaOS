@@ -10,7 +10,7 @@
 #ifndef __DA9150_REGISTERS_H
 #define __DA9150_REGISTERS_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 /* Registers */
 #define DA9150_PAGE_CON			0x000

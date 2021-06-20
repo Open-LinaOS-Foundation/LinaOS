@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux driver for TerraTec DMX 6Fire USB
+ * LinaOS driver for TerraTec DMX 6Fire USB
  *
  * Device communications
  *

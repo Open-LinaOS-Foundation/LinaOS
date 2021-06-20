@@ -5,15 +5,15 @@
  * Copyright (c) 2016 Daniel Mack
  */
 
-#include <linux/kernel.h>
-#include <linux/atomic.h>
-#include <linux/cgroup.h>
-#include <linux/filter.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/string.h>
-#include <linux/bpf.h>
-#include <linux/bpf-cgroup.h>
+#include <linaos/kernel.h>
+#include <linaos/atomic.h>
+#include <linaos/cgroup.h>
+#include <linaos/filter.h>
+#include <linaos/slab.h>
+#include <linaos/sysctl.h>
+#include <linaos/string.h>
+#include <linaos/bpf.h>
+#include <linaos/bpf-cgroup.h>
 #include <net/sock.h>
 #include <net/bpf_sk_storage.h>
 

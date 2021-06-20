@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/mlx5/port.h>
+#include <linaos/mlx5/port.h>
 #include "mlx5_core.h"
 
 int mlx5_core_access_reg(struct mlx5_core_dev *dev, void *data_in,

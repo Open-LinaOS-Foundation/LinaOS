@@ -7,7 +7,7 @@ RightWay (TM) to insert a delay?"
 
 This question is most often faced by driver writers who have to
 deal with hardware delays and who may not be the most intimately
-familiar with the inner workings of the Linux Kernel.
+familiar with the inner workings of the LinaOS Kernel.
 
 
 Inserting Delays

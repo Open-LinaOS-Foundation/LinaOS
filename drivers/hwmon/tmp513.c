@@ -19,15 +19,15 @@
  * the Free Software Foundation; version 2 of the License.
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/util_macros.h>
+#include <linaos/err.h>
+#include <linaos/hwmon.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/util_macros.h>
 
 // Common register definition
 #define TMP51X_SHUNT_CONFIG		0x00

@@ -2,7 +2,7 @@
 #ifndef _ISP1760_HCD_H_
 #define _ISP1760_HCD_H_
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 struct isp1760_qh;
 struct isp1760_qtd;

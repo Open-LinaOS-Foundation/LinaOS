@@ -4,7 +4,7 @@
  *
  *  Maintained by: Benjamin Herrenschmidt <benh@kernel.crashing.org> and
  *		   Jeff Garzik <jgarzik@pobox.com>
- *  		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *  		    Please ALWAYS copy linaos-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2003 Benjamin Herrenschmidt <benh@kernel.crashing.org>
@@ -20,18 +20,18 @@
  *  Hardware documentation available under NDA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi.h>
-#include <linux/libata.h>
-#include <linux/of.h>
+#include <linaos/libata.h>
+#include <linaos/of.h>
 
 #define DRV_NAME	"sata_svw"
 #define DRV_VERSION	"2.3"

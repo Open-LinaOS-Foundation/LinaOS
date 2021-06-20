@@ -7,15 +7,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/rculist.h>
-#include <linux/workqueue.h>
-#include <linux/ratelimit.h>
-#include <linux/bug.h>
-#include <linux/uaccess.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/rculist.h>
+#include <linaos/workqueue.h>
+#include <linaos/ratelimit.h>
+#include <linaos/bug.h>
+#include <linaos/uaccess.h>
 
 #include "fwserial.h"
 
@@ -2441,7 +2441,7 @@ static struct fwserial_unit_directory_data fwserial_unit_directory_data = {
 	.desc1_data = {
 		0x00000000,			/*   type = text            */
 		0x00000000,			/*   enc = ASCII, lang EN   */
-		0x4c696e75,			/* 'Linux TTY'              */
+		0x4c696e75,			/* 'LinaOS TTY'              */
 		0x78205454,
 		0x59000000,
 	},

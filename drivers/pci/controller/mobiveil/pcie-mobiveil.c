@@ -9,11 +9,11 @@
  *	   Hou Zhiqiang <Zhiqiang.Hou@nxp.com>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
 
 #include "pcie-mobiveil.h"
 

@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "reg_helper.h"
 #include "dce_audio.h"

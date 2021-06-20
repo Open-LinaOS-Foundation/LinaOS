@@ -16,7 +16,7 @@
 #ifndef __LINUX_REGULATOR_DA9121_H
 #define __LINUX_REGULATOR_DA9121_H
 
-#include <linux/regulator/machine.h>
+#include <linaos/regulator/machine.h>
 
 struct gpio_desc;
 

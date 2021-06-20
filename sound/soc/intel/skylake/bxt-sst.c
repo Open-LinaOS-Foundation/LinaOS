@@ -7,10 +7,10 @@
  *	   Jeeja KP <jeeja.kp@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/device.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/firmware.h>
+#include <linaos/device.h>
 
 #include "../common/sst-dsp.h"
 #include "../common/sst-dsp-priv.h"

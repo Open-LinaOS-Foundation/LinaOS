@@ -7,8 +7,8 @@
 #ifndef __DIO_DOT_H__
 #define __DIO_DOT_H__
 
-#include <linux/buffer_head.h>
-#include <linux/string.h>
+#include <linaos/buffer_head.h>
+#include <linaos/string.h>
 #include "incore.h"
 
 static inline void gfs2_buffer_clear(struct buffer_head *bh)

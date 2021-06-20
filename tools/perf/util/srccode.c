@@ -4,8 +4,8 @@
  * Copyright (c) 2017, Intel Corporation.
  * Author: Andi Kleen
  */
-#include <linux/list.h>
-#include <linux/zalloc.h>
+#include <linaos/list.h>
+#include <linaos/zalloc.h>
 #include <stdlib.h>
 #include <sys/mman.h>
 #include <sys/stat.h>

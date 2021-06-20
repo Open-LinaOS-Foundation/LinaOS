@@ -3,14 +3,14 @@
  * (C) 2002-2004 Netfilter Core Team <coreteam@netfilter.org>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <net/ipv6.h>
 #include <net/ip6_route.h>
 #include <net/ip6_fib.h>
 #include <net/ip6_checksum.h>
 #include <net/netfilter/ipv6/nf_reject.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_bridge.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/netfilter_bridge.h>
 
 static bool nf_reject_v6_csum_ok(struct sk_buff *skb, int hook)
 {

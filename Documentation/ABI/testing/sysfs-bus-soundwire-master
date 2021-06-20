@@ -11,8 +11,8 @@ What:		/sys/bus/soundwire/devices/sdw-master-N/revision
 
 Date:		April 2020
 
-Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
-		Bard Liao <yung-chuan.liao@linux.intel.com>
+Contact:	Pierre-Louis Bossart <pierre-louis.bossart@linaos.intel.com>
+		Bard Liao <yung-chuan.liao@linaos.intel.com>
 		Vinod Koul <vkoul@kernel.org>
 
 Description:	SoundWire Master-N DisCo properties.

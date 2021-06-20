@@ -3,22 +3,22 @@
  * Copyright (C) 2014-2017 Broadcom
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/sysfs.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/bitops.h>
-#include <linux/pm.h>
-#include <linux/kernel.h>
-#include <linux/kdebug.h>
-#include <linux/notifier.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/sysfs.h>
+#include <linaos/io.h>
+#include <linaos/string.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/of.h>
+#include <linaos/bitops.h>
+#include <linaos/pm.h>
+#include <linaos/kernel.h>
+#include <linaos/kdebug.h>
+#include <linaos/notifier.h>
 
 #ifdef CONFIG_MIPS
 #include <asm/traps.h>

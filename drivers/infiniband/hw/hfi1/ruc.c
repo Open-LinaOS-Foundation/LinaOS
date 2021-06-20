@@ -45,7 +45,7 @@
  *
  */
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 #include "hfi.h"
 #include "mad.h"

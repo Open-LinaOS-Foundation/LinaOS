@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  HID support for Linux
+ *  HID support for LinaOS
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -13,13 +13,13 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
 
-#include <linux/hid.h>
+#include <linaos/hid.h>
 
 static struct hid_driver hid_generic;
 

@@ -4,7 +4,7 @@
 #ifndef _MLXSW_SPECTRUM_TRAP_H
 #define _MLXSW_SPECTRUM_TRAP_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include <net/devlink.h>
 
 struct mlxsw_sp_trap {

@@ -4,8 +4,8 @@
  *
  * HEST describes error sources in detail; communicates operational
  * parameters (i.e. severity levels, masking bits, and threshold
- * values) to Linux as necessary. It also allows the BIOS to report
- * non-standard error sources to Linux (for example, chipset-specific
+ * values) to LinaOS as necessary. It also allows the BIOS to report
+ * non-standard error sources to LinaOS (for example, chipset-specific
  * error registers).
  *
  * For more information about HEST, please refer to ACPI Specification
@@ -15,14 +15,14 @@
  *   Author: Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/kdebug.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/acpi.h>
+#include <linaos/kdebug.h>
+#include <linaos/highmem.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
 #include <acpi/apei.h>
 #include <acpi/ghes.h>
 

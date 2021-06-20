@@ -38,9 +38,9 @@ Support
 MTD
 ---
 
-  The NAND and NOR support has been merged from the linux-mtd project.
-  Any problems, see http://www.linux-mtd.infradead.org/ for more
-  information or up-to-date versions of linux-mtd.
+  The NAND and NOR support has been merged from the linaos-mtd project.
+  Any problems, see http://www.linaos-mtd.infradead.org/ for more
+  information or up-to-date versions of linaos-mtd.
 
 
 IDE

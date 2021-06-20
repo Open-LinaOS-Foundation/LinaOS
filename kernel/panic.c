@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/panic.c
+ *  linaos/kernel/panic.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -9,28 +9,28 @@
  * This function is used through-out the kernel (including mm and fs)
  * to indicate a major problem.
  */
-#include <linux/debug_locks.h>
-#include <linux/sched/debug.h>
-#include <linux/interrupt.h>
-#include <linux/kgdb.h>
-#include <linux/kmsg_dump.h>
-#include <linux/kallsyms.h>
-#include <linux/notifier.h>
-#include <linux/vt_kern.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/ftrace.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/kexec.h>
-#include <linux/sched.h>
-#include <linux/sysrq.h>
-#include <linux/init.h>
-#include <linux/nmi.h>
-#include <linux/console.h>
-#include <linux/bug.h>
-#include <linux/ratelimit.h>
-#include <linux/debugfs.h>
+#include <linaos/debug_locks.h>
+#include <linaos/sched/debug.h>
+#include <linaos/interrupt.h>
+#include <linaos/kgdb.h>
+#include <linaos/kmsg_dump.h>
+#include <linaos/kallsyms.h>
+#include <linaos/notifier.h>
+#include <linaos/vt_kern.h>
+#include <linaos/module.h>
+#include <linaos/random.h>
+#include <linaos/ftrace.h>
+#include <linaos/reboot.h>
+#include <linaos/delay.h>
+#include <linaos/kexec.h>
+#include <linaos/sched.h>
+#include <linaos/sysrq.h>
+#include <linaos/init.h>
+#include <linaos/nmi.h>
+#include <linaos/console.h>
+#include <linaos/bug.h>
+#include <linaos/ratelimit.h>
+#include <linaos/debugfs.h>
 #include <asm/sections.h>
 
 #define PANIC_TIMER_STEP 100

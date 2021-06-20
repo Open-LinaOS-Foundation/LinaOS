@@ -7,7 +7,7 @@
  * Author: Eric Biggers <ebiggers@google.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 	KEY		.req	x0
 	MESSAGE		.req	x1

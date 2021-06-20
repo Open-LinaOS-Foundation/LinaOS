@@ -2,27 +2,27 @@
 /*
  *    Architecture-specific kernel symbols
  *
- *    Copyright (C) 2000-2001 Richard Hirst <rhirst with parisc-linux.org>
+ *    Copyright (C) 2000-2001 Richard Hirst <rhirst with parisc-linaos.org>
  *    Copyright (C) 2001 Dave Kennedy
- *    Copyright (C) 2001 Paul Bame <bame at parisc-linux.org>
- *    Copyright (C) 2001-2003 Grant Grundler <grundler with parisc-linux.org>
- *    Copyright (C) 2002-2003 Matthew Wilcox <willy at parisc-linux.org>
- *    Copyright (C) 2002 Randolph Chung <tausq at parisc-linux.org>
- *    Copyright (C) 2002-2007 Helge Deller <deller with parisc-linux.org>
+ *    Copyright (C) 2001 Paul Bame <bame at parisc-linaos.org>
+ *    Copyright (C) 2001-2003 Grant Grundler <grundler with parisc-linaos.org>
+ *    Copyright (C) 2002-2003 Matthew Wilcox <willy at parisc-linaos.org>
+ *    Copyright (C) 2002 Randolph Chung <tausq at parisc-linaos.org>
+ *    Copyright (C) 2002-2007 Helge Deller <deller with parisc-linaos.org>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/syscalls.h>
 
-#include <linux/string.h>
+#include <linaos/string.h>
 EXPORT_SYMBOL(memset);
 EXPORT_SYMBOL(strlen);
 EXPORT_SYMBOL(strcpy);
 EXPORT_SYMBOL(strncpy);
 EXPORT_SYMBOL(strcat);
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 EXPORT_SYMBOL(__xchg8);
 EXPORT_SYMBOL(__xchg32);
 EXPORT_SYMBOL(__cmpxchg_u32);
@@ -34,7 +34,7 @@ EXPORT_SYMBOL(__atomic_hash);
 EXPORT_SYMBOL(__xchg64);
 #endif
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 EXPORT_SYMBOL(lclear_user);
 EXPORT_SYMBOL(lstrnlen_user);
 

@@ -8,12 +8,12 @@
 
         中文版维护者： 贾威威  Harry Wei <harryxiyou@gmail.com>
         中文版翻译者： 贾威威  Harry Wei <harryxiyou@gmail.com>
-                       时奎亮  Alex Shi <alex.shi@linux.alibaba.com>
+                       时奎亮  Alex Shi <alex.shi@linaos.alibaba.com>
         中文版校译者： Yinglin Luan <synmyth@gmail.com>
         	       Xiaochen Wang <wangxiaochen0@gmail.com>
                        yaxinsn <yaxinsn@163.com>
 
-Linux邮件客户端配置信息
+LinaOS邮件客户端配置信息
 =======================
 
 Git
@@ -29,11 +29,11 @@ Git
 
 普通配置
 --------
-Linux内核补丁是通过邮件被提交的，最好把补丁作为邮件体的内嵌文本。有些维护者
+LinaOS内核补丁是通过邮件被提交的，最好把补丁作为邮件体的内嵌文本。有些维护者
 接收附件，但是附件的内容格式应该是"text/plain"。然而，附件一般是不赞成的，
 因为这会使补丁的引用部分在评论过程中变的很困难。
 
-用来发送Linux内核补丁的邮件客户端在发送补丁时应该处于文本的原始状态。例如，
+用来发送LinaOS内核补丁的邮件客户端在发送补丁时应该处于文本的原始状态。例如，
 他们不能改变或者删除制表符或者空格，甚至是在每一行的开头或者结尾。
 
 不要通过"format=flowed"模式发送补丁。这样会引起不可预期以及有害的断行。
@@ -58,7 +58,7 @@ Linux内核补丁是通过邮件被提交的，最好把补丁作为邮件体的
 
 一些邮件客户端提示
 ------------------
-这里给出一些详细的MUA配置提示，可以用于给Linux内核发送补丁。这些并不意味是
+这里给出一些详细的MUA配置提示，可以用于给LinaOS内核发送补丁。这些并不意味是
 所有的软件包配置总结。
 
 说明：
@@ -127,7 +127,7 @@ Lotus Notes (GUI)
 Mutt (TUI)
 ~~~~~~~~~~
 
-很多Linux开发人员使用mutt客户端，所以证明它肯定工作的非常漂亮。
+很多LinaOS开发人员使用mutt客户端，所以证明它肯定工作的非常漂亮。
 
 Mutt不自带编辑器，所以不管你使用什么编辑器都不应该带有自动断行。大多数编辑器都带有
 一个"insert file"选项，它可以通过不改变文件内容的方式插入文件。

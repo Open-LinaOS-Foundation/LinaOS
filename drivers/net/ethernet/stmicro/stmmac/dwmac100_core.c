@@ -14,7 +14,7 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/crc32.h>
+#include <linaos/crc32.h>
 #include <net/dsa.h>
 #include <asm/io.h>
 #include "stmmac.h"

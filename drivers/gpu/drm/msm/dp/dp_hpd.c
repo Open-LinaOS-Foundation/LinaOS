@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2020, The LinaOS Foundation. All rights reserved.
  */
 
 #define pr_fmt(fmt)	"[drm-dp] %s: " fmt, __func__
 
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
 
 #include "dp_hpd.h"
 

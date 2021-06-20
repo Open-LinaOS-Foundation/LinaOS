@@ -3,9 +3,9 @@
  *
  * Copyright (c) 2008 Jonathan Cameron
  */
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/atomic.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/atomic.h>
 
 #ifndef _IIO_TRIGGER_H_
 #define _IIO_TRIGGER_H_

@@ -16,10 +16,10 @@
  * Inspired by sdhci-pci.c, by Pierre Ossman
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/of.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/property.h>
+#include <linaos/of.h>
 #ifdef CONFIG_PPC
 #include <asm/machdep.h>
 #endif

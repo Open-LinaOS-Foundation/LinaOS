@@ -3,15 +3,15 @@
  * Platform keyring for firmware/platform keys
  *
  * Copyright IBM Corporation, 2018
- * Author(s): Nayna Jain <nayna@linux.ibm.com>
+ * Author(s): Nayna Jain <nayna@linaos.ibm.com>
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/cred.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
 #include "../integrity.h"
 
 /**

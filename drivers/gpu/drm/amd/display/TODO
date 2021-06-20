@@ -99,7 +99,7 @@ guilty.
 
 19. DONE - The DC logger is still a rather sore thing, but I know that the
 DRM_DEBUG stuff just isn't up to the challenges either. We need to figure out
-something that integrates better with DRM and linux debug printing, while not
+something that integrates better with DRM and linaos debug printing, while not
 being useless with filtering output. dynamic debug printing might be an option.
 
 20. Use kernel i2c device to program HDMI retimer. Some boards have an HDMI

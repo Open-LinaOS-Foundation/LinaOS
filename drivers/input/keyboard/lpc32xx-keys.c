@@ -12,17 +12,17 @@
  * This controller supports square key matrices from 1x1 up to 8x8
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/input/matrix_keypad.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
+#include <linaos/pm.h>
+#include <linaos/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/input/matrix_keypad.h>
 
 #define DRV_NAME				"lpc32xx_keys"
 

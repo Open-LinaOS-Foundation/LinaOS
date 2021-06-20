@@ -5,8 +5,8 @@
 #if !defined(_TRACE_KYBER_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_KYBER_H
 
-#include <linux/blkdev.h>
-#include <linux/tracepoint.h>
+#include <linaos/blkdev.h>
+#include <linaos/tracepoint.h>
 
 #define DOMAIN_LEN		16
 #define LATENCY_TYPE_LEN	8

@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/m68k/kernel/sys_m68k.c
+ * linaos/arch/m68k/kernel/sys_m68k.c
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/m68k
+ * have a non-standard calling sequence on the LinaOS/m68k
  * platform.
  */
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/ipc.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/smp.h>
+#include <linaos/sem.h>
+#include <linaos/msg.h>
+#include <linaos/shm.h>
+#include <linaos/stat.h>
+#include <linaos/syscalls.h>
+#include <linaos/mman.h>
+#include <linaos/file.h>
+#include <linaos/ipc.h>
 
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/cachectl.h>
 #include <asm/traps.h>
 #include <asm/page.h>

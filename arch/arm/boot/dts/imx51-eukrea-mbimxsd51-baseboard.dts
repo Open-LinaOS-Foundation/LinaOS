@@ -27,9 +27,9 @@
 		button-1 {
 			label = "BP1";
 			gpios = <&gpio3 31 GPIO_ACTIVE_LOW>;
-			linux,code = <256>;
+			linaos,code = <256>;
 			wakeup-source;
-			linux,input-type = <1>;
+			linaos,input-type = <1>;
 		};
 	};
 
@@ -41,7 +41,7 @@
 		led1 {
 			label = "led1";
 			gpios = <&gpio3 30 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

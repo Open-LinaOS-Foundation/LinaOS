@@ -1,5 +1,5 @@
 ==============================
-Flash LED handling under Linux
+Flash LED handling under LinaOS
 ==============================
 
 Some LED devices provide two modes - torch and flash. In the LED subsystem
@@ -26,7 +26,7 @@ Following sysfs attributes are exposed for controlling flash LED devices:
 V4L2 flash wrapper for flash LEDs
 =================================
 
-A LED subsystem driver can be controlled also from the level of VideoForLinux2
+A LED subsystem driver can be controlled also from the level of VideoForLinaOS2
 subsystem. In order to enable this CONFIG_V4L2_FLASH_LED_CLASS symbol has to
 be defined in the kernel config.
 
@@ -63,7 +63,7 @@ V4L2 subsystem. The function takes six arguments:
 	* flash_faults
 		bitmask of flash faults that the LED flash class
 		device can report; corresponding LED_FAULT* bit definitions are
-		available in <linux/led-class-flash.h>,
+		available in <linaos/led-class-flash.h>,
 	* torch_intensity
 		constraints for the LED in TORCH mode
 		in microamperes,

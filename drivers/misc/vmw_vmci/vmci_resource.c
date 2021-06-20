@@ -5,11 +5,11 @@
  * Copyright (C) 2012 VMware, Inc. All rights reserved.
  */
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/hash.h>
-#include <linux/types.h>
-#include <linux/rculist.h>
-#include <linux/completion.h>
+#include <linaos/vmw_vmci_defs.h>
+#include <linaos/hash.h>
+#include <linaos/types.h>
+#include <linaos/rculist.h>
+#include <linaos/completion.h>
 
 #include "vmci_resource.h"
 #include "vmci_driver.h"

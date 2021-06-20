@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Linux GPIOlib driver for the VIA VX855 integrated southbridge GPIO
+ * LinaOS GPIOlib driver for the VIA VX855 integrated southbridge GPIO
  *
  * Copyright (C) 2009 VIA Technologies, Inc.
  * Copyright (C) 2010 One Laptop per Child
  * Author: Harald Welte <HaraldWelte@viatech.com>
  * All rights reserved.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
 
 #define MODULE_NAME "vx855_gpio"
 

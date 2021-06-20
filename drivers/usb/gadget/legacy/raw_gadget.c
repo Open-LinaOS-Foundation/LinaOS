@@ -7,25 +7,25 @@
  * Author: Andrey Konovalov <andreyknvl@gmail.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/kref.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/semaphore.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
+#include <linaos/compiler.h>
+#include <linaos/ctype.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/kref.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/semaphore.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/wait.h>
 
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/ch11.h>
-#include <linux/usb/gadget.h>
+#include <linaos/usb.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/ch11.h>
+#include <linaos/usb/gadget.h>
 
-#include <uapi/linux/usb/raw_gadget.h>
+#include <uapi/linaos/usb/raw_gadget.h>
 
 #define	DRIVER_DESC "USB Raw Gadget"
 #define DRIVER_NAME "raw-gadget"

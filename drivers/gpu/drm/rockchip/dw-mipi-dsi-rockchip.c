@@ -6,15 +6,15 @@
  *      Nickey Yang <nickey.yang@rock-chips.com>
  */
 
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/math64.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/iopoll.h>
+#include <linaos/math64.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
 
 #include <video/mipi_display.h>
 

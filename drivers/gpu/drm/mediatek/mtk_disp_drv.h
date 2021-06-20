@@ -6,7 +6,7 @@
 #ifndef _MTK_DISP_DRV_H_
 #define _MTK_DISP_DRV_H_
 
-#include <linux/soc/mediatek/mtk-cmdq.h>
+#include <linaos/soc/mediatek/mtk-cmdq.h>
 #include "mtk_drm_plane.h"
 
 void mtk_ccorr_ctm_set(struct device *dev, struct drm_crtc_state *state);

@@ -7,17 +7,17 @@
  * for more details.
  */
 
-#include <linux/dma-map-ops.h>
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h> /* mem_init */
-#include <linux/initrd.h>
-#include <linux/pagemap.h>
-#include <linux/pfn.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/export.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/memblock.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h> /* mem_init */
+#include <linaos/initrd.h>
+#include <linaos/pagemap.h>
+#include <linaos/pfn.h>
+#include <linaos/slab.h>
+#include <linaos/swap.h>
+#include <linaos/export.h>
 
 #include <asm/page.h>
 #include <asm/mmu_context.h>

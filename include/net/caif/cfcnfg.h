@@ -6,8 +6,8 @@
 
 #ifndef CFCNFG_H_
 #define CFCNFG_H_
-#include <linux/spinlock.h>
-#include <linux/netdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/netdevice.h>
 #include <net/caif/caif_layer.h>
 #include <net/caif/cfctrl.h>
 

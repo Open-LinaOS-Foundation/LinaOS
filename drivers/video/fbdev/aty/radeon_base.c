@@ -16,7 +16,7 @@
  *	driver which has the following copyright notice:
  *
  *	Copyright 2000 ATI Technologies Inc., Markham, Ontario, and
- *                     VA Linux Systems Inc., Fremont, California.
+ *                     VA LinaOS Systems Inc., Fremont, California.
  *
  *	All Rights Reserved.
  *
@@ -44,7 +44,7 @@
  *	XFree86 driver authors:
  *
  *	   Kevin E. Martin <martin@xfree86.org>
- *	   Rickard E. Faith <faith@valinux.com>
+ *	   Rickard E. Faith <faith@valinaos.com>
  *	   Alan Hourihane <alanh@fairlite.demon.co.uk>
  *
  */
@@ -54,25 +54,25 @@
 
 #include "radeonfb.h"
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/device.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/time.h>
+#include <linaos/fb.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/vmalloc.h>
+#include <linaos/device.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #ifdef CONFIG_PPC
 
@@ -85,7 +85,7 @@
 #endif /* CONFIG_PPC */
 
 #include <video/radeon.h>
-#include <linux/radeonfb.h>
+#include <linaos/radeonfb.h>
 
 #include "../edid.h" // MOVE THAT TO include/video
 #include "ati_ids.h"

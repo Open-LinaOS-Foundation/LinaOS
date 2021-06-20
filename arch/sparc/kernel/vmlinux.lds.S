@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* ld script for sparc32/sparc64 kernel */
 
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 
 #include <asm/page.h>
 #include <asm/thread_info.h>

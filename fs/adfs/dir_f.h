@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/fs/adfs/dir_f.h
+ *  linaos/fs/adfs/dir_f.h
  *
  *  Copyright (C) 1999 Russell King
  *

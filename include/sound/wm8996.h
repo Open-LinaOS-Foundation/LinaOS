@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/wm8996.h -- Platform data for WM8996
+ * linaos/sound/wm8996.h -- Platform data for WM8996
  *
  * Copyright 2011 Wolfson Microelectronics. PLC.
  */

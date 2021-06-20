@@ -50,38 +50,38 @@
 		power {
 			label = "Power Button";
 			gpios = <&gpio2 3 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 		};
 
 		menu {
 			label = "Menu";
 			gpios = <&gpio2 1 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_MENU>;
+			linaos,code = <KEY_MENU>;
 		};
 
 		home {
 			label = "Home";
 			gpios = <&gpio2 4 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOME>;
+			linaos,code = <KEY_HOME>;
 		};
 
 		back {
 			label = "Back";
 			gpios = <&gpio2 2 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_BACK>;
+			linaos,code = <KEY_BACK>;
 		};
 
 		volume-up {
 			label = "Volume Up";
 			gpios = <&gpio7 13 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 		};
 
 		volume-down {
 			label = "Volume Down";
 			gpios = <&gpio7 1 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 		};
 	};
 

@@ -25,10 +25,10 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/stat.h>
-#include <linux/sysfs.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/stat.h>
+#include <linaos/sysfs.h>
 
 #include "gt/intel_rc6.h"
 #include "gt/intel_rps.h"

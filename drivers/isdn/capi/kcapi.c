@@ -11,26 +11,26 @@
  */
 
 #include "kcapi.h"
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/sched/signal.h>
-#include <linux/seq_file.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <linux/capi.h>
-#include <linux/kernelcapi.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/isdn/capicmd.h>
-#include <linux/isdn/capiutil.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/proc_fs.h>
+#include <linaos/sched/signal.h>
+#include <linaos/seq_file.h>
+#include <linaos/skbuff.h>
+#include <linaos/workqueue.h>
+#include <linaos/capi.h>
+#include <linaos/kernelcapi.h>
+#include <linaos/init.h>
+#include <linaos/moduleparam.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/isdn/capicmd.h>
+#include <linaos/isdn/capiutil.h>
+#include <linaos/mutex.h>
+#include <linaos/rcupdate.h>
 
 static int showcapimsgs = 0;
 static struct workqueue_struct *kcapi_wq;

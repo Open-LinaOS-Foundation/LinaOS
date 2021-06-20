@@ -11,7 +11,7 @@
  * modify it under the terms of the GNU General Public License.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <mach/hardware.h>
 #include <mach/smemc.h>

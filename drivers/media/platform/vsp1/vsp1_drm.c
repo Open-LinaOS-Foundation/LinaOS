@@ -7,9 +7,9 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-subdev.h>

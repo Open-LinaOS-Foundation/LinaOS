@@ -7,9 +7,9 @@
  * Author(s): Amelie Delaunay <amelie.delaunay@st.com>
  */
 
-#include <linux/iopoll.h>
-#include <linux/platform_device.h>
-#include <linux/usb/role.h>
+#include <linaos/iopoll.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb/role.h>
 #include "core.h"
 
 static void dwc2_ovr_init(struct dwc2_hsotg *hsotg)

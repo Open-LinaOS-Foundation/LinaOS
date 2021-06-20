@@ -2,7 +2,7 @@
 /*
  *  cx18 functions for DVB support
  *
- *  Copyright (c) 2008 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2008 Steven Toth <stoth@linaostv.org>
  *  Copyright (C) 2008  Andy Walls <awalls@md.metrocast.net>
  */
 
@@ -19,7 +19,7 @@
 #include "tda18271.h"
 #include "zl10353.h"
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 #include "mt352.h"
 #include "mt352_priv.h"
 #include "tuner-xc2028.h"
@@ -111,7 +111,7 @@ static struct zl10353_config leadtek_dvr3100h_demod = {
  * Due to
  *
  * 1. an absence of information on how to program the MT352
- * 2. the Linux mt352 module pushing MT352 initialization off onto us here
+ * 2. the LinaOS mt352 module pushing MT352 initialization off onto us here
  *
  * We have to use an init sequence that *you* must extract from the Windows
  * driver (yuanrap.sys) and which we load as a firmware.
@@ -142,7 +142,7 @@ static int yuan_mpc718_mt352_reqfw(struct cx18_stream *stream,
 
 	if (ret) {
 		CX18_ERR("The MPC718 board variant with the MT352 DVB-T demodulator will not work without it\n");
-		CX18_ERR("Run 'linux/scripts/get_dvb_firmware mpc718' if you need the firmware\n");
+		CX18_ERR("Run 'linaos/scripts/get_dvb_firmware mpc718' if you need the firmware\n");
 	}
 	return ret;
 }

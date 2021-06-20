@@ -20,7 +20,7 @@
 #ifndef _VNIC_INTR_H_
 #define _VNIC_INTR_H_
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #include "vnic_dev.h"
 

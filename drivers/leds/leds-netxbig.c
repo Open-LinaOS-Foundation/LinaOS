@@ -7,15 +7,15 @@
  * Author: Simon Guinot <sguinot@lacie.com>
  */
 
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/leds.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <linaos/module.h>
+#include <linaos/irq.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/leds.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
 
 struct netxbig_gpio_ext {
 	struct gpio_desc **addr;
@@ -292,7 +292,7 @@ static int create_netxbig_led(struct platform_device *pdev,
 	 *
 	 * Note that the initial LED state can't be reconfigured.
 	 * The reason is that the LED behaviour must stay uniform during
-	 * the whole boot process (bootloader+linux).
+	 * the whole boot process (bootloader+linaos).
 	 */
 	led_dat->sata = 0;
 	led_dat->cdev.brightness = LED_OFF;
@@ -572,7 +572,7 @@ static int netxbig_leds_get_of_pdata(struct device *dev,
 			led->name = child->name;
 
 		if (!of_property_read_string(child,
-					     "linux,default-trigger", &string))
+					     "linaos,default-trigger", &string))
 			led->default_trigger = string;
 
 		led++;

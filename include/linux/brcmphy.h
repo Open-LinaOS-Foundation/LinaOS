@@ -2,7 +2,7 @@
 #ifndef _LINUX_BRCMPHY_H
 #define _LINUX_BRCMPHY_H
 
-#include <linux/phy.h>
+#include <linaos/phy.h>
 
 /* All Broadcom Ethernet switches have a pseudo-PHY at address 30 which is used
  * to configure the switch internal registers via MDIO accesses.

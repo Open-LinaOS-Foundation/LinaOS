@@ -8,19 +8,19 @@
  * EC about sensors data. Data access is presented through iio sysfs.
  */
 
-#include <linux/device.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/common/cros_ec_sensors_core.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/common/cros_ec_sensors_core.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/kfifo_buf.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_proto.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #define CROS_EC_SENSORS_MAX_CHANNELS 4
 

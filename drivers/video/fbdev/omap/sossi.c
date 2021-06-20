@@ -5,14 +5,14 @@
  * Copyright (C) 2004-2005 Nokia Corporation
  * Author: Juha Yrjölä <juha.yrjola@nokia.com>
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/clk.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
 
-#include <linux/omap-dma.h>
+#include <linaos/omap-dma.h>
 
 #include "omapfb.h"
 #include "lcdc.h"

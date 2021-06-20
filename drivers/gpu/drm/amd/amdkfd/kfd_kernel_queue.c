@@ -21,11 +21,11 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
+#include <linaos/types.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/printk.h>
+#include <linaos/sched.h>
 #include "kfd_kernel_queue.h"
 #include "kfd_priv.h"
 #include "kfd_device_queue_manager.h"

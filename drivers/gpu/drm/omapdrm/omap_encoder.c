@@ -4,7 +4,7 @@
  * Author: Rob Clark <rob@ti.com>
  */
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 #include <drm/drm_bridge.h>
 #include <drm/drm_crtc.h>

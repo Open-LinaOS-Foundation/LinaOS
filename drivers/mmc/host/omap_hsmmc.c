@@ -15,33 +15,33 @@
  * kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/debugfs.h>
-#include <linux/dmaengine.h>
-#include <linux/seq_file.h>
-#include <linux/sizes.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/timer.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/platform_data/hsmmc-omap.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/debugfs.h>
+#include <linaos/dmaengine.h>
+#include <linaos/seq_file.h>
+#include <linaos/sizes.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/platform_device.h>
+#include <linaos/timer.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_device.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/core.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_wakeirq.h>
+#include <linaos/platform_data/hsmmc-omap.h>
 
 /* OMAP HSMMC Host Controller Registers */
 #define OMAP_HSMMC_SYSSTATUS	0x0014

@@ -2,7 +2,7 @@
 #ifndef __ASM_SH_TRAPS_32_H
 #define __ASM_SH_TRAPS_32_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/mmu.h>
 
 #ifdef CONFIG_CPU_HAS_SR_RB

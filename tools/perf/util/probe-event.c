@@ -40,8 +40,8 @@
 #include "strbuf.h"
 
 #include <subcmd/pager.h>
-#include <linux/ctype.h>
-#include <linux/zalloc.h>
+#include <linaos/ctype.h>
+#include <linaos/zalloc.h>
 
 #ifdef HAVE_DEBUGINFOD_SUPPORT
 #include <elfutils/debuginfod.h>
@@ -68,7 +68,7 @@ int e_snprintf(char *str, size_t size, const char *format, ...)
 
 static struct machine *host_machine;
 
-/* Initialize symbol maps and path of vmlinux/modules */
+/* Initialize symbol maps and path of vmlinaos/modules */
 int init_probe_symbol_maps(bool user_only)
 {
 	int ret;
@@ -84,8 +84,8 @@ int init_probe_symbol_maps(bool user_only)
 	if (host_machine || user_only)	/* already initialized */
 		return 0;
 
-	if (symbol_conf.vmlinux_name)
-		pr_debug("Use vmlinux: %s\n", symbol_conf.vmlinux_name);
+	if (symbol_conf.vmlinaos_name)
+		pr_debug("Use vmlinaos: %s\n", symbol_conf.vmlinaos_name);
 
 	host_machine = machine__new_host();
 	if (!host_machine) {
@@ -95,7 +95,7 @@ int init_probe_symbol_maps(bool user_only)
 	}
 out:
 	if (ret < 0)
-		pr_warning("Failed to init vmlinux path.\n");
+		pr_warning("Failed to init vmlinaos path.\n");
 	return ret;
 }
 
@@ -298,9 +298,9 @@ static char *find_module_name(const char *module)
 	/*
 	 * NOTE:
 	 * '.gnu.linkonce.this_module' section of kernel module elf directly
-	 * maps to 'struct module' from linux/module.h. This section contains
+	 * maps to 'struct module' from linaos/module.h. This section contains
 	 * actual module name which will be used by kernel after loading it.
-	 * But, we cannot use 'struct module' here since linux/module.h is not
+	 * But, we cannot use 'struct module' here since linaos/module.h is not
 	 * exposed to user-space. Offset of 'name' has remained same from long
 	 * time, so hardcoding it here.
 	 */
@@ -324,7 +324,7 @@ static int kernel_get_module_dso(const char *module, struct dso **pdso)
 {
 	struct dso *dso;
 	struct map *map;
-	const char *vmlinux_name;
+	const char *vmlinaos_name;
 	int ret = 0;
 
 	if (module) {
@@ -345,12 +345,12 @@ static int kernel_get_module_dso(const char *module, struct dso **pdso)
 	if (!dso->has_build_id)
 		dso__read_running_kernel_build_id(dso, host_machine);
 
-	vmlinux_name = symbol_conf.vmlinux_name;
+	vmlinaos_name = symbol_conf.vmlinaos_name;
 	dso->load_errno = 0;
-	if (vmlinux_name)
-		ret = dso__load_vmlinux(dso, map, vmlinux_name, false);
+	if (vmlinaos_name)
+		ret = dso__load_vmlinaos(dso, map, vmlinaos_name, false);
 	else
-		ret = dso__load_vmlinux_path(dso, map);
+		ret = dso__load_vmlinaos_path(dso, map);
 found:
 	*pdso = dso;
 	return ret;
@@ -813,9 +813,9 @@ post_process_kernel_probe_trace_events(struct probe_trace_event *tevs,
 	int i, skipped = 0;
 
 	/* Skip post process if the target is an offline kernel */
-	if (symbol_conf.ignore_vmlinux_buildid)
+	if (symbol_conf.ignore_vmlinaos_buildid)
 		return post_process_offline_probe_trace_events(tevs, ntevs,
-						symbol_conf.vmlinux_name);
+						symbol_conf.vmlinaos_name);
 
 	reloc_sym = kernel_get_ref_reloc_sym(&map);
 	if (!reloc_sym) {
@@ -895,7 +895,7 @@ static int try_to_find_probe_trace_events(struct perf_probe_event *pev,
 	int ntevs, ret = 0;
 
 	/* Workaround for gcc #98776 issue.
-	 * Perf failed to add kretprobe event with debuginfo of vmlinux which is
+	 * Perf failed to add kretprobe event with debuginfo of vmlinaos which is
 	 * compiled by gcc with -fpatchable-function-entry option enabled. The
 	 * same issue with kernel module. The retprobe doesn`t need debuginfo.
 	 * This workaround solution use map to query the probe function address
@@ -951,7 +951,7 @@ static int try_to_find_probe_trace_events(struct perf_probe_event *pev,
 		/* Error path : ntevs < 0 */
 		pr_debug("An error occurred in debuginfo analysis (%d).\n", ntevs);
 		if (ntevs == -EBADF)
-			pr_warning("Warning: No dwarf info found in the vmlinux - "
+			pr_warning("Warning: No dwarf info found in the vmlinaos - "
 				"please rebuild kernel with CONFIG_DEBUG_INFO=y.\n");
 		if (!need_dwarf) {
 			pr_debug("Trying to use symbols.\n");

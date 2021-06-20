@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Copyright (c) 2016, Jamal Hadi Salim
  *
@@ -11,7 +11,7 @@
 #ifndef __LINUX_TC_SKBMOD_H
 #define __LINUX_TC_SKBMOD_H
 
-#include <linux/pkt_cls.h>
+#include <linaos/pkt_cls.h>
 
 #define SKBMOD_F_DMAC	0x1
 #define SKBMOD_F_SMAC	0x2

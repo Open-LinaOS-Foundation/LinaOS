@@ -3,8 +3,8 @@
  * Copyright (C) 2013 NVIDIA Corporation
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
 
 #include "mipi-phy.h"
 

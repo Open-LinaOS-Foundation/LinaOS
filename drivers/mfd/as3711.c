@@ -6,16 +6,16 @@
  * Author: Guennadi Liakhovetski, <g.liakhovetski@gmx.de>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mfd/as3711.h>
-#include <linux/mfd/core.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/as3711.h>
+#include <linaos/mfd/core.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 enum {
 	AS3711_REGULATOR,

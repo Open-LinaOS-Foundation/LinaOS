@@ -12,15 +12,15 @@
  * can also display the input voltage.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/hwmon.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/hwmon.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 /* Vdd / reference voltage in millivolt */
 #define MCP3021_VDD_REF_MAX	5500

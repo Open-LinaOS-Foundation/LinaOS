@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/module.h>
-#include <linux/netfilter/nf_tables.h>
+#include <linaos/module.h>
+#include <linaos/netfilter/nf_tables.h>
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables_ipv4.h>

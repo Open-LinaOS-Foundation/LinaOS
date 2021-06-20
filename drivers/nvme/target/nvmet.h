@@ -6,27 +6,27 @@
 #ifndef _NVMET_H
 #define _NVMET_H
 
-#include <linux/dma-mapping.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/kref.h>
-#include <linux/percpu-refcount.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/uuid.h>
-#include <linux/nvme.h>
-#include <linux/configfs.h>
-#include <linux/rcupdate.h>
-#include <linux/blkdev.h>
-#include <linux/radix-tree.h>
-#include <linux/t10-pi.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/kref.h>
+#include <linaos/percpu-refcount.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/uuid.h>
+#include <linaos/nvme.h>
+#include <linaos/configfs.h>
+#include <linaos/rcupdate.h>
+#include <linaos/blkdev.h>
+#include <linaos/radix-tree.h>
+#include <linaos/t10-pi.h>
 
 #define NVMET_DEFAULT_VS		NVME_VS(1, 3, 0)
 
 #define NVMET_ASYNC_EVENTS		4
 #define NVMET_ERROR_LOG_SLOTS		128
 #define NVMET_NO_ERROR_LOC		((u16)-1)
-#define NVMET_DEFAULT_CTRL_MODEL	"Linux"
+#define NVMET_DEFAULT_CTRL_MODEL	"LinaOS"
 #define NVMET_MN_MAX_SIZE		40
 
 /*

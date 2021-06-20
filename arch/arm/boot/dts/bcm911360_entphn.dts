@@ -52,7 +52,7 @@
 
 		hook {
 			label = "HOOK";
-			linux,code = <KEY_O>;
+			linaos,code = <KEY_O>;
 			gpios = <&gpio_asiu 48 0>;
 		};
 	};

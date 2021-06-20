@@ -9,9 +9,9 @@
  *		Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 
 #include <asm/asm_pointer_auth.h>
 #include <asm/assembler.h>
@@ -59,7 +59,7 @@
  */
 	__HEAD
 	/*
-	 * DO NOT MODIFY. Image header expected by Linux boot-loaders.
+	 * DO NOT MODIFY. Image header expected by LinaOS boot-loaders.
 	 */
 	efi_signature_nop			// special NOP to identity as PE/COFF executable
 	b	primary_entry			// branch to kernel start, magic

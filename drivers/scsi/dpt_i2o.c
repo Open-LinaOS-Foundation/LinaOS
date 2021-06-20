@@ -17,7 +17,7 @@
  *                                                                         *
  ***************************************************************************/
 /***************************************************************************
- * Sat Dec 20 2003 Go Taniguchi <go@turbolinux.co.jp>
+ * Sat Dec 20 2003 Go Taniguchi <go@turbolinaos.co.jp>
  - Support 2.6 kernel and DMA-mapping
  - ioctl fix for raid tools
  - use schedule_timeout in long long loop
@@ -26,34 +26,34 @@
 /*#define DEBUG 1 */
 /*#define UARTDELAY 1 */
 
-#include <linux/module.h>
-#include <linux/pgtable.h>
+#include <linaos/module.h>
+#include <linaos/pgtable.h>
 
 MODULE_AUTHOR("Deanna Bonds, with _lots_ of help from Mark Salyzyn");
 MODULE_DESCRIPTION("Adaptec I2O RAID Driver");
 
 ////////////////////////////////////////////////////////////////
 
-#include <linux/ioctl.h>	/* For SCSI-Passthrough */
-#include <linux/uaccess.h>
+#include <linaos/ioctl.h>	/* For SCSI-Passthrough */
+#include <linaos/uaccess.h>
 
-#include <linux/stat.h>
-#include <linux/slab.h>		/* for kmalloc() */
-#include <linux/pci.h>		/* for PCI support */
-#include <linux/proc_fs.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>	/* for udelay */
-#include <linux/interrupt.h>
-#include <linux/kernel.h>	/* for printk */
-#include <linux/sched.h>
-#include <linux/reboot.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
+#include <linaos/stat.h>
+#include <linaos/slab.h>		/* for kmalloc() */
+#include <linaos/pci.h>		/* for PCI support */
+#include <linaos/proc_fs.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>	/* for udelay */
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>	/* for printk */
+#include <linaos/sched.h>
+#include <linaos/reboot.h>
+#include <linaos/spinlock.h>
+#include <linaos/dma-mapping.h>
 
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/mutex.h>
+#include <linaos/timer.h>
+#include <linaos/string.h>
+#include <linaos/ioport.h>
+#include <linaos/mutex.h>
 
 #include <asm/processor.h>	/* for boot_cpu_data */
 #include <asm/io.h>		/* for virt_to_bus, etc. */
@@ -88,7 +88,7 @@ static dpt_sig_S DPTI_sig = {
 #endif
 	 FT_HBADRVR, 0, OEM_DPT, OS_LINUX, CAP_OVERLAP, DEV_ALL,
 	ADF_ALL_SC5, 0, 0, DPT_VERSION, DPT_REVISION, DPT_SUBREVISION,
-	DPT_MONTH, DPT_DAY, DPT_YEAR, "Adaptec Linux I2O RAID Driver"
+	DPT_MONTH, DPT_DAY, DPT_YEAR, "Adaptec LinaOS I2O RAID Driver"
 };
 
 

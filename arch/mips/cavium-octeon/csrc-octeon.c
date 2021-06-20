@@ -6,11 +6,11 @@
  * Copyright (C) 2007 by Ralf Baechle
  * Copyright (C) 2009, 2012 Cavium, Inc.
  */
-#include <linux/clocksource.h>
-#include <linux/sched/clock.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/smp.h>
+#include <linaos/clocksource.h>
+#include <linaos/sched/clock.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/smp.h>
 
 #include <asm/cpu-info.h>
 #include <asm/cpu-type.h>

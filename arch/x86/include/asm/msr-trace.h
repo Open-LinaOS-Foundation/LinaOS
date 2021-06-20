@@ -11,7 +11,7 @@
 #if !defined(_TRACE_MSR_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_MSR_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 /*
  * Tracing for x86 model specific registers. Directly maps to the

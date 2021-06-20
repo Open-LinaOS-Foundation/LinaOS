@@ -12,19 +12,19 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/acpi.h>
-#include <linux/cpumask.h>
-#include <linux/efi.h>
-#include <linux/efi-bgrt.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/irq_work.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
-#include <linux/smp.h>
-#include <linux/serial_core.h>
-#include <linux/pgtable.h>
+#include <linaos/acpi.h>
+#include <linaos/cpumask.h>
+#include <linaos/efi.h>
+#include <linaos/efi-bgrt.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irq_work.h>
+#include <linaos/memblock.h>
+#include <linaos/of_fdt.h>
+#include <linaos/smp.h>
+#include <linaos/serial_core.h>
+#include <linaos/pgtable.h>
 
 #include <acpi/ghes.h>
 #include <asm/cputype.h>

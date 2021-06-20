@@ -12,7 +12,7 @@ common small CD-ROM changers, neither one-lun-per-slot SCSI changers
 nor IDE drives.
 
 Userland tools available from here:
-	http://linux.bytesex.org/misc/changer.html
+	http://linaos.bytesex.org/misc/changer.html
 
 
 General Information
@@ -52,7 +52,7 @@ How it is implemented
 
 I implemented the driver as character device driver with a NetBSD-like
 ioctl interface. Just grabbed NetBSD's header file and one of the
-other linux SCSI device drivers as starting point. The interface
+other linaos SCSI device drivers as starting point. The interface
 should be source code compatible with NetBSD. So if there is any
 software (anybody knows ???) which supports a BSDish changer driver,
 it should work with this driver too.
@@ -91,7 +91,7 @@ This is a character device with major number is 86, so use
 If the module finds the changer, it prints some messages about the
 device [ try "dmesg" if you don't see anything ] and should show up in
 /proc/devices. If not....  some changers use ID ? / LUN 0 for the
-device and ID ? / LUN 1 for the robot mechanism. But Linux does *not*
+device and ID ? / LUN 1 for the robot mechanism. But LinaOS does *not*
 look for LUNs other than 0 as default, because there are too many
 broken devices. So you can try:
 

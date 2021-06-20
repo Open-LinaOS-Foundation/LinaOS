@@ -3,19 +3,19 @@
  * Copyright (c) 2007-2014 Nicira, Inc.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/jhash.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/rcupdate.h>
-#include <linux/rtnetlink.h>
-#include <linux/compat.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if.h>
+#include <linaos/if_vlan.h>
+#include <linaos/jhash.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/percpu.h>
+#include <linaos/rcupdate.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/compat.h>
 #include <net/net_namespace.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "datapath.h"
 #include "vport.h"

@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef __HFI_PLATFORM_H__
 #define __HFI_PLATFORM_H__
 
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
 
 #include "hfi.h"
 #include "hfi_plat_bufs.h"

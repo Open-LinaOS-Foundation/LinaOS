@@ -3,12 +3,12 @@
  * Cryptographic API.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/lzo.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/crypto.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm.h>
+#include <linaos/lzo.h>
 #include <crypto/internal/scompress.h>
 
 struct lzorle_ctx {

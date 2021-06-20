@@ -8,12 +8,12 @@
 #ifndef _IXGB_OSDEP_H_
 #define _IXGB_OSDEP_H_
 
-#include <linux/types.h>
-#include <linux/delay.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
 #include <asm/io.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/if_ether.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/if_ether.h>
 
 #undef ASSERT
 #define ASSERT(x)	BUG_ON(!(x))

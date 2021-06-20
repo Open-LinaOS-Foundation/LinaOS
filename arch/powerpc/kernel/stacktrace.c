@@ -4,21 +4,21 @@
  * Stack trace utility functions etc.
  *
  * Copyright 2008 Christoph Hellwig, IBM Corp.
- * Copyright 2018 SUSE Linux GmbH
+ * Copyright 2018 SUSE LinaOS GmbH
  * Copyright 2018 Nick Piggin, Michael Ellerman, IBM Corp.
  */
 
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/module.h>
-#include <linux/nmi.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/stacktrace.h>
+#include <linaos/export.h>
+#include <linaos/kallsyms.h>
+#include <linaos/module.h>
+#include <linaos/nmi.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/stacktrace.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
-#include <linux/ftrace.h>
+#include <linaos/ftrace.h>
 #include <asm/kprobes.h>
 
 #include <asm/paca.h>

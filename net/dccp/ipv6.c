@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	DCCP over IPv6
- *	Linux INET6 implementation
+ *	LinaOS INET6 implementation
  *
  *	Based on net/dccp6/ipv6.c
  *
  *	Arnaldo Carvalho de Melo <acme@ghostprotocols.net>
  */
 
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/xfrm.h>
-#include <linux/string.h>
+#include <linaos/module.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
+#include <linaos/xfrm.h>
+#include <linaos/string.h>
 
 #include <net/addrconf.h>
 #include <net/inet_common.h>

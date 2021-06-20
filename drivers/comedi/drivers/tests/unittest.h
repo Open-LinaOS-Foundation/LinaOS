@@ -4,7 +4,7 @@
  *  comedi/drivers/tests/unittest.h
  *  Simple framework for unittests for comedi drivers.
  *
- *  COMEDI - Linux Control and Measurement Device Interface
+ *  COMEDI - LinaOS Control and Measurement Device Interface
  *  Copyright (C) 2016 Spencer E. Olson <olsonse@umich.edu>
  *  based of parts of drivers/of/unittest.c
  *

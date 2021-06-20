@@ -4,10 +4,10 @@
  * Copyright (C) 2015 Lyude Paul <thatslyude@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/serio.h>
-#include <linux/notifier.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/serio.h>
+#include <linaos/notifier.h>
 #include "rmi_driver.h"
 
 #define RMI_F03_RX_DATA_OFB		0x01

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/lockd/xdr4.h
+ * linaos/include/linaos/lockd/xdr4.h
  *
  * XDR types for the NLM protocol
  *
@@ -10,10 +10,10 @@
 #ifndef LOCKD_XDR4_H
 #define LOCKD_XDR4_H
 
-#include <linux/fs.h>
-#include <linux/nfs.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/lockd/xdr.h>
+#include <linaos/fs.h>
+#include <linaos/nfs.h>
+#include <linaos/sunrpc/xdr.h>
+#include <linaos/lockd/xdr.h>
 
 /* error codes new to NLMv4 */
 #define	nlm4_deadlock		cpu_to_be32(NLM_DEADLCK)

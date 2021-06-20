@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/context_tracking.h>
-#include <linux/entry-common.h>
-#include <linux/highmem.h>
-#include <linux/livepatch.h>
-#include <linux/audit.h>
-#include <linux/tick.h>
+#include <linaos/context_tracking.h>
+#include <linaos/entry-common.h>
+#include <linaos/highmem.h>
+#include <linaos/livepatch.h>
+#include <linaos/audit.h>
+#include <linaos/tick.h>
 
 #include "common.h"
 

@@ -2,20 +2,20 @@
 /*
  * Copyright (C) 2010 Texas Instruments Incorporated - https://www.ti.com/
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/string.h>
+#include <linaos/wait.h>
+#include <linaos/time.h>
+#include <linaos/platform_device.h>
+#include <linaos/irq.h>
+#include <linaos/mm.h>
+#include <linaos/mutex.h>
+#include <linaos/videodev2.h>
+#include <linaos/slab.h>
 
 
 #include <media/v4l2-dev.h>

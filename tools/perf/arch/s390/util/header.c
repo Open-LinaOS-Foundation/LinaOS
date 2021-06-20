@@ -3,8 +3,8 @@
  * Implementation of get_cpuid().
  *
  * Copyright IBM Corp. 2014, 2018
- * Author(s): Alexander Yarygin <yarygin@linux.vnet.ibm.com>
- *	      Thomas Richter <tmricht@linux.vnet.ibm.com>
+ * Author(s): Alexander Yarygin <yarygin@linaos.vnet.ibm.com>
+ *	      Thomas Richter <tmricht@linaos.vnet.ibm.com>
  */
 
 #include <sys/types.h>
@@ -12,9 +12,9 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <linaos/ctype.h>
+#include <linaos/kernel.h>
+#include <linaos/zalloc.h>
 
 #include "../../util/header.h"
 

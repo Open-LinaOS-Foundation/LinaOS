@@ -21,10 +21,10 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 #include "hwmgr.h"
 #include "amd_powerplay.h"

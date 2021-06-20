@@ -2,9 +2,9 @@
 /*
  *  specific defines for CCD's HFC 2BDS0 PCI chips
  *
- * Author     Werner Cornelius (werner@isdn4linux.de)
+ * Author     Werner Cornelius (werner@isdn4linaos.de)
  *
- * Copyright 1999  by Werner Cornelius (werner@isdn4linux.de)
+ * Copyright 1999  by Werner Cornelius (werner@isdn4linaos.de)
  */
 
 /*

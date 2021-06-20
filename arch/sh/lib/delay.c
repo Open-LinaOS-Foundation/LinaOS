@@ -5,8 +5,8 @@
  *	Copyright (C) 1999 Niibe Yutaka & Kaz Kojima
  */
 
-#include <linux/sched.h>
-#include <linux/delay.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
 
 void __delay(unsigned long loops)
 {

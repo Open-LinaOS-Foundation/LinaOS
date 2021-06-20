@@ -12,7 +12,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    La Monte H.P. Yarroll <piggy@acm.org>
@@ -28,13 +28,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/poll.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/poll.h>
+#include <linaos/init.h>
 
-#include <linux/slab.h>
-#include <linux/in.h>
+#include <linaos/slab.h>
+#include <linaos/in.h>
 #include <net/ipv6.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>

@@ -6,11 +6,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/ssb/ssb.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/platform_device.h>
+#include <linaos/ssb/ssb.h>
 #include <asm/addrspace.h>
 #include <bcm63xx_board.h>
 #include <bcm63xx_cpu.h>
@@ -27,7 +27,7 @@
 #include <bcm63xx_dev_usb_usbd.h>
 #include <board_bcm963xx.h>
 
-#include <uapi/linux/bcm933xx_hcs.h>
+#include <uapi/linaos/bcm933xx_hcs.h>
 
 #define HCS_OFFSET_128K			0x20000
 

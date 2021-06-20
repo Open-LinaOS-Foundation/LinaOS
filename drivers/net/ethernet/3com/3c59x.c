@@ -1,4 +1,4 @@
-/* EtherLinkXL.c: A 3Com EtherLink PCI III/XL ethernet driver for linux. */
+/* EtherLinkXL.c: A 3Com EtherLink PCI III/XL ethernet driver for linaos. */
 /*
 	Written 1996-1999 by Donald Becker.
 
@@ -70,36 +70,36 @@ static int vortex_debug = VORTEX_DEBUG;
 static int vortex_debug = 1;
 #endif
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/mii.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/highmem.h>
-#include <linux/eisa.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/in.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/mii.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/ethtool.h>
+#include <linaos/highmem.h>
+#include <linaos/eisa.h>
+#include <linaos/bitops.h>
+#include <linaos/jiffies.h>
+#include <linaos/gfp.h>
 #include <asm/irq.h>			/* For nr_irqs only. */
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /* Kernel compatibility defines, some common to David Hinds' PCMCIA package.
    This is only in the support-all-kernels source code. */
 
 #define RUN_AT(x) (jiffies + (x))
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 
 static const char version[] =
@@ -140,7 +140,7 @@ versions of the FastEtherLink cards.  The supported product IDs are
 
 The related ISA 3c515 is supported with a separate driver, 3c515.c, included
 with the kernel source or available from
-    cesdis.gsfc.nasa.gov:/pub/linux/drivers/3c515.html
+    cesdis.gsfc.nasa.gov:/pub/linaos/drivers/3c515.html
 
 II. Board-specific settings
 

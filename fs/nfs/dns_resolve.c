@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/nfs/dns_resolve.c
+ * linaos/fs/nfs/dns_resolve.c
  *
  * Copyright (c) 2009 Trond Myklebust <Trond.Myklebust@netapp.com>
  *
@@ -9,10 +9,10 @@
 
 #ifdef CONFIG_NFS_USE_KERNEL_DNS
 
-#include <linux/module.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/dns_resolver.h>
+#include <linaos/module.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/dns_resolver.h>
 #include "dns_resolve.h"
 
 ssize_t nfs_dns_resolve_name(struct net *net, char *name, size_t namelen,
@@ -34,20 +34,20 @@ ssize_t nfs_dns_resolve_name(struct net *net, char *name, size_t namelen,
 
 #else
 
-#include <linux/module.h>
-#include <linux/hash.h>
-#include <linux/string.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/seq_file.h>
-#include <linux/inet.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/nfs_fs.h>
+#include <linaos/module.h>
+#include <linaos/hash.h>
+#include <linaos/string.h>
+#include <linaos/kmod.h>
+#include <linaos/slab.h>
+#include <linaos/socket.h>
+#include <linaos/seq_file.h>
+#include <linaos/inet.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/sunrpc/cache.h>
+#include <linaos/sunrpc/svcauth.h>
+#include <linaos/sunrpc/rpc_pipe_fs.h>
+#include <linaos/nfs_fs.h>
 
 #include "nfs4_fs.h"
 #include "dns_resolve.h"

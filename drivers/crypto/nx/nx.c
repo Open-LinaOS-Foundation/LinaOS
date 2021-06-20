@@ -13,13 +13,13 @@
 #include <crypto/sha2.h>
 #include <crypto/algapi.h>
 #include <crypto/scatterwalk.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/device.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/scatterlist.h>
+#include <linaos/device.h>
+#include <linaos/of.h>
 #include <asm/hvcall.h>
 #include <asm/vio.h>
 
@@ -137,11 +137,11 @@ struct nx_sg *nx_build_sg_list(struct nx_sg *sg_head,
 }
 
 /**
- * nx_walk_and_build - walk a linux scatterlist and build an nx scatterlist
+ * nx_walk_and_build - walk a linaos scatterlist and build an nx scatterlist
  *
  * @nx_dst: pointer to the first nx_sg element to write
  * @sglen: max number of nx_sg entries we're allowed to write
- * @sg_src: pointer to the source linux scatterlist to walk
+ * @sg_src: pointer to the source linaos scatterlist to walk
  * @start: number of bytes to fast-forward past at the beginning of @sg_src
  * @src_len: number of bytes to walk in @sg_src
  */

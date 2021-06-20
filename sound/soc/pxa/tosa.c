@@ -13,10 +13,10 @@
  *  5 - Hookswitch (headset answer/hang up switch)
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/device.h>
+#include <linaos/gpio.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

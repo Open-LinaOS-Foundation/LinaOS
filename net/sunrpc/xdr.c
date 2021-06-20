@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/xdr.c
+ * linaos/net/sunrpc/xdr.c
  *
  * Generic XDR support.
  *
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/pagemap.h>
-#include <linux/errno.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/bvec.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/pagemap.h>
+#include <linaos/errno.h>
+#include <linaos/sunrpc/xdr.h>
+#include <linaos/sunrpc/msg_prot.h>
+#include <linaos/bvec.h>
 #include <trace/events/sunrpc.h>
 
 static void _copy_to_pages(struct page **, size_t, const char *, size_t);

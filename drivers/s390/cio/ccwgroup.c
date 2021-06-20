@@ -7,14 +7,14 @@
  *  Author(s): Arnd Bergmann (arndb@de.ibm.com)
  *	       Cornelia Huck (cornelia.huck@de.ibm.com)
  */
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/ctype.h>
-#include <linux/dcache.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/ctype.h>
+#include <linaos/dcache.h>
 
 #include <asm/cio.h>
 #include <asm/ccwdev.h>
@@ -24,7 +24,7 @@
 
 #define CCW_BUS_ID_SIZE		10
 
-/* In Linux 2.4, we had a channel device layer called "chandev"
+/* In LinaOS 2.4, we had a channel device layer called "chandev"
  * that did all sorts of obscure stuff for networking devices.
  * This is another driver that serves as a replacement for just
  * one of its functions, namely the translation of single subchannels

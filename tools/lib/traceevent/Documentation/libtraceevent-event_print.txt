@@ -119,7 +119,7 @@ AUTHOR
 --
 REPORTING BUGS
 --------------
-Report bugs to  <linux-trace-devel@vger.kernel.org>
+Report bugs to  <linaos-trace-devel@vger.kernel.org>
 
 LICENSE
 -------
@@ -127,4 +127,4 @@ libtraceevent is Free Software licensed under the GNU LGPL 2.1
 
 RESOURCES
 ---------
-https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git

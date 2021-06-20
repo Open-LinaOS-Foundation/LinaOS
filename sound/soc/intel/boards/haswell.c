@@ -5,8 +5,8 @@
  * Copyright (C) 2013, Intel Corporation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

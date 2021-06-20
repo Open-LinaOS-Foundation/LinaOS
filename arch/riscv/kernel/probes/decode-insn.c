@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
-#include <linux/kallsyms.h>
+#include <linaos/kernel.h>
+#include <linaos/kprobes.h>
+#include <linaos/module.h>
+#include <linaos/kallsyms.h>
 #include <asm/sections.h>
 
 #include "decode-insn.h"

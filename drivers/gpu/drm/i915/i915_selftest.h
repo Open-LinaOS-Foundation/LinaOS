@@ -24,7 +24,7 @@
 #ifndef __I915_SELFTEST_H__
 #define __I915_SELFTEST_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct pci_dev;
 struct drm_i915_private;
@@ -40,7 +40,7 @@ struct i915_selftest {
 };
 
 #if IS_ENABLED(CONFIG_DRM_I915_SELFTEST)
-#include <linux/fault-inject.h>
+#include <linaos/fault-inject.h>
 
 extern struct i915_selftest i915_selftest;
 

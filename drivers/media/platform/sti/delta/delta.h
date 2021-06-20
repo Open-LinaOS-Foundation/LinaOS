@@ -7,7 +7,7 @@
 #ifndef DELTA_H
 #define DELTA_H
 
-#include <linux/rpmsg.h>
+#include <linaos/rpmsg.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-mem2mem.h>
 

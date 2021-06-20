@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include "dcn20_vmid.h"
 #include "reg_helper.h"

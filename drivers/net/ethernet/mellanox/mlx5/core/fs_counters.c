@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/fs.h>
-#include <linux/rbtree.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/mlx5/fs.h>
+#include <linaos/rbtree.h>
 #include "mlx5_core.h"
 #include "fs_core.h"
 #include "fs_cmd.h"

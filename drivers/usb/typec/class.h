@@ -3,8 +3,8 @@
 #ifndef __USB_TYPEC_CLASS__
 #define __USB_TYPEC_CLASS__
 
-#include <linux/device.h>
-#include <linux/usb/typec.h>
+#include <linaos/device.h>
+#include <linaos/usb/typec.h>
 
 struct typec_mux;
 struct typec_switch;

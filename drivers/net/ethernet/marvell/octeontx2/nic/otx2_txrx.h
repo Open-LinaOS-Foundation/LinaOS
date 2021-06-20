@@ -11,9 +11,9 @@
 #ifndef OTX2_TXRX_H
 #define OTX2_TXRX_H
 
-#include <linux/etherdevice.h>
-#include <linux/iommu.h>
-#include <linux/if_vlan.h>
+#include <linaos/etherdevice.h>
+#include <linaos/iommu.h>
+#include <linaos/if_vlan.h>
 
 #define LBK_CHAN_BASE	0x000
 #define SDP_CHAN_BASE	0x700

@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for generic prom monitor library routines under Linux.
+# Makefile for generic prom monitor library routines under LinaOS.
 #
 
 lib-y			+= cmdline.o

@@ -10,12 +10,12 @@
 #define __RT5682_H__
 
 #include <sound/rt5682.h>
-#include <linux/regulator/consumer.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/soundwire/sdw.h>
+#include <linaos/soundwire/sdw_type.h>
 
 #define DEVICE_ID 0x6530
 

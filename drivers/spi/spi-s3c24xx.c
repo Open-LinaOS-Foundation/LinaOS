@@ -5,22 +5,22 @@
  *	Ben Dooks <ben@simtec.co.uk>
 */
 
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/spi/s3c24xx.h>
-#include <linux/spi/s3c24xx-fiq.h>
-#include <linux/module.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi_bitbang.h>
+#include <linaos/spi/s3c24xx.h>
+#include <linaos/spi/s3c24xx-fiq.h>
+#include <linaos/module.h>
 
 #include <asm/fiq.h>
 

@@ -12,10 +12,10 @@
 #ifndef __ARCH_ARM_MACH_DAVINCI_COMMON_H
 #define __ARCH_ARM_MACH_DAVINCI_COMMON_H
 
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/reboot.h>
+#include <linaos/clk.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
+#include <linaos/reboot.h>
 
 #include <asm/irq.h>
 

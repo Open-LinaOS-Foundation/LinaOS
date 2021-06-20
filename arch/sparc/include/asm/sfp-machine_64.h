@@ -3,7 +3,7 @@
    Copyright (C) 1997,1998,1999 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
    Contributed by Richard Henderson (rth@cygnus.com),
-		  Jakub Jelinek (jj@ultra.linux.cz) and
+		  Jakub Jelinek (jj@ultra.linaos.cz) and
 		  David S. Miller (davem@redhat.com).
 
    The GNU C Library is free software; you can redistribute it and/or

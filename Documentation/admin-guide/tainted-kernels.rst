@@ -51,9 +51,9 @@ At runtime, you can query the tainted state by reading
 ``cat /proc/sys/kernel/tainted``. If that returns ``0``, the kernel is not
 tainted; any other number indicates the reasons why it is. The easiest way to
 decode that number is the script ``tools/debugging/kernel-chktaint``, which your
-distribution might ship as part of a package called ``linux-tools`` or
+distribution might ship as part of a package called ``linaos-tools`` or
 ``kernel-tools``; if it doesn't you can download the script from
-`git.kernel.org <https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/plain/tools/debugging/kernel-chktaint>`_
+`git.kernel.org <https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git/plain/tools/debugging/kernel-chktaint>`_
 and execute it with ``sh kernel-chktaint``, which would print something like
 this on the machine that had the statements in the logs that were quoted earlier::
 
@@ -61,7 +61,7 @@ this on the machine that had the statements in the logs that were quoted earlier
 	 * Proprietary module was loaded (#0)
 	 * Kernel issued warning (#9)
 	 * Externally-built ('out-of-tree') module was loaded  (#12)
-	See Documentation/admin-guide/tainted-kernels.rst in the Linux kernel or
+	See Documentation/admin-guide/tainted-kernels.rst in the LinaOS kernel or
 	 https://www.kernel.org/doc/html/latest/admin-guide/tainted-kernels.html for
 	 a more details explanation of the various taint flags.
 	Raw taint value as int/string: 4609/'P        W  O     '
@@ -169,7 +169,7 @@ More detailed explanation for tainting
 
  15) ``K`` if the kernel has been live patched.
 
- 16) ``X`` Auxiliary taint, defined for and used by Linux distributors.
+ 16) ``X`` Auxiliary taint, defined for and used by LinaOS distributors.
 
  17) ``T`` Kernel was build with the randstruct plugin, which can intentionally
      produce extremely unusual kernel structure layouts (even performance

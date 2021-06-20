@@ -12,8 +12,8 @@
 
 #include <asm/core.h>
 
-#include <linux/compiler.h>
-#include <linux/stringify.h>
+#include <linaos/compiler.h>
+#include <linaos/stringify.h>
 #include <asm/ptrace.h>
 #include <asm/types.h>
 #include <asm/regs.h>
@@ -21,7 +21,7 @@
 /* Assertions. */
 
 #if (XCHAL_HAVE_WINDOWED != 1)
-# error Linux requires the Xtensa Windowed Registers Option.
+# error LinaOS requires the Xtensa Windowed Registers Option.
 #endif
 
 /* Xtensa ABI requires stack alignment to be at least 16 */

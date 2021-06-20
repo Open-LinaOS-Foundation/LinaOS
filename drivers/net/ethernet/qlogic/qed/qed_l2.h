@@ -6,11 +6,11 @@
 
 #ifndef _QED_L2_H
 #define _QED_L2_H
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/qed/qed_eth_if.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/qed/qed_eth_if.h>
 #include "qed.h"
 #include "qed_hw.h"
 #include "qed_sp.h"
@@ -230,7 +230,7 @@ int qed_sp_eth_filter_ucast(struct qed_hwfn *p_hwfn,
  * This ramrod updates an RX queue. It is used for setting the active state
  * of the queue and updating the TPA and SGE parameters.
  *
- * @note At the moment - only used by non-linux VFs.
+ * @note At the moment - only used by non-linaos VFs.
  *
  * @param p_hwfn
  * @param pp_rxq_handlers	An array of queue handlers to be updated.

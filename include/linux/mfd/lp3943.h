@@ -10,9 +10,9 @@
 #ifndef __MFD_LP3943_H__
 #define __MFD_LP3943_H__
 
-#include <linux/gpio.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
+#include <linaos/gpio.h>
+#include <linaos/pwm.h>
+#include <linaos/regmap.h>
 
 /* Registers */
 #define LP3943_REG_GPIO_A		0x00

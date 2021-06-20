@@ -3,8 +3,8 @@
 #define __ACPI_NUMA_H
 
 #ifdef CONFIG_ACPI_NUMA
-#include <linux/kernel.h>
-#include <linux/numa.h>
+#include <linaos/kernel.h>
+#include <linaos/numa.h>
 
 /* Proximity bitmap length */
 #if MAX_NUMNODES > 256

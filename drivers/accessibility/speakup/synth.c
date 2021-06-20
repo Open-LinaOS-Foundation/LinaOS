@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/ctype.h>	/* for isdigit() and friends */
-#include <linux/fs.h>
-#include <linux/mm.h>		/* for verify_area */
-#include <linux/errno.h>	/* for -EBUSY */
-#include <linux/ioport.h>	/* for check_region, request_region */
-#include <linux/interrupt.h>
-#include <linux/delay.h>	/* for loops_per_sec */
-#include <linux/kmod.h>
-#include <linux/jiffies.h>
-#include <linux/uaccess.h>	/* for copy_from_user */
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/kthread.h>
+#include <linaos/types.h>
+#include <linaos/ctype.h>	/* for isdigit() and friends */
+#include <linaos/fs.h>
+#include <linaos/mm.h>		/* for verify_area */
+#include <linaos/errno.h>	/* for -EBUSY */
+#include <linaos/ioport.h>	/* for check_region, request_region */
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>	/* for loops_per_sec */
+#include <linaos/kmod.h>
+#include <linaos/jiffies.h>
+#include <linaos/uaccess.h>	/* for copy_from_user */
+#include <linaos/sched.h>
+#include <linaos/timer.h>
+#include <linaos/kthread.h>
 
 #include "spk_priv.h"
 #include "speakup.h"

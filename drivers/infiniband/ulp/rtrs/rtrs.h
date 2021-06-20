@@ -9,8 +9,8 @@
 #ifndef RTRS_H
 #define RTRS_H
 
-#include <linux/socket.h>
-#include <linux/scatterlist.h>
+#include <linaos/socket.h>
+#include <linaos/scatterlist.h>
 
 struct rtrs_permit;
 struct rtrs_clt;

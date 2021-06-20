@@ -1,21 +1,21 @@
 /*
  * TX3927 setup routines
- * Based on linux/arch/mips/txx9/jmr3927/setup.c
+ * Based on linaos/arch/mips/txx9/jmr3927/setup.c
  *
  * Copyright 2001 MontaVista Software Inc.
  * Copyright (C) 2000-2001 Toshiba Corporation
- * Copyright (C) 2007 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2007 Ralf Baechle (ralf@linaos-mips.org)
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/param.h>
-#include <linux/io.h>
-#include <linux/mtd/physmap.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/param.h>
+#include <linaos/io.h>
+#include <linaos/mtd/physmap.h>
 #include <asm/mipsregs.h>
 #include <asm/txx9irq.h>
 #include <asm/txx9tmr.h>

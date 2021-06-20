@@ -4,14 +4,14 @@
  *
  * Copyright IBM Corp. 2010, 2017
  * Author(s): Heiko Carstens <heiko.carstens@de.ibm.com>,
- *	      Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ *	      Hendrik Brueckner <brueckner@linaos.vnet.ibm.com>
  *
  */
 
 #include <errno.h>
 #include <stddef.h>
 #include <stdlib.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/ptrace.h>
 #include <string.h>
 #include <dwarf-regs.h>

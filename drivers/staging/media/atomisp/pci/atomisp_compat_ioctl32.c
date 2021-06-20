@@ -16,9 +16,9 @@
  *
  */
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 
 #include "atomisp_internal.h"
 #include "atomisp_compat.h"

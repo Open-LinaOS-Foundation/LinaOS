@@ -110,7 +110,7 @@ Description:
 What:		/sys/class/ubi/ubiX/ro_mode
 Date:		April 2016
 KernelVersion:	4.7
-Contact:	linux-mtd@lists.infradead.org
+Contact:	linaos-mtd@lists.infradead.org
 Description:
 		Contains ASCII "1\n" if the read-only flag is set on this
 		device, and "0\n" if it is cleared. UBI devices mark themselves

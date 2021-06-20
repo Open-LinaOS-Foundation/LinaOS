@@ -10,12 +10,12 @@
  * https://www.gnu.org/copyleft/gpl.html
  */
 
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/clk.h>
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 #include "fsl_sai.h"
 #include "fsl_audmix.h"
 

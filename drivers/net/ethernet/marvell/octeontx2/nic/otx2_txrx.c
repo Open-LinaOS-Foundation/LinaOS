@@ -8,7 +8,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include <net/ip.h>
 #include <net/tso.h>
 

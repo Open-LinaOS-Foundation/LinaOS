@@ -5,9 +5,9 @@
  * Copyright (C) 2009 Uwe Kleine-Koenig <u.kleine-koenig@pengutronix.de>
  * for Pengutronix
  */
-#include <linux/export.h>
-#include <linux/ftrace.h>
-#include <linux/sched.h>
+#include <linaos/export.h>
+#include <linaos/ftrace.h>
+#include <linaos/sched.h>
 
 #include <asm/stacktrace.h>
 

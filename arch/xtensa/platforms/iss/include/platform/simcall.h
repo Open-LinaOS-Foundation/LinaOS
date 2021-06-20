@@ -12,7 +12,7 @@
 #ifndef _XTENSA_PLATFORM_ISS_SIMCALL_H
 #define _XTENSA_PLATFORM_ISS_SIMCALL_H
 
-#include <linux/bug.h>
+#include <linaos/bug.h>
 
 #ifdef CONFIG_XTENSA_SIMCALL_ISS
 #include <platform/simcall-iss.h>

@@ -8,8 +8,8 @@
  * Provide real functions which expand to whatever the header file defined.
  * Also definitions of machine independent IO functions.
  */
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
 
 void __raw_readsl(const void __iomem *addr, void *datap, int len)
 {

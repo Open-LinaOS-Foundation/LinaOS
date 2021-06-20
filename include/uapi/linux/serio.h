@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 1999-2002 Vojtech Pavlik
 *
@@ -9,8 +9,8 @@
 #ifndef _UAPI_SERIO_H
 #define _UAPI_SERIO_H
 
-#include <linux/const.h>
-#include <linux/ioctl.h>
+#include <linaos/const.h>
+#include <linaos/ioctl.h>
 
 #define SPIOCSTYPE	_IOW('q', 0x01, unsigned long)
 

@@ -8,7 +8,7 @@
 #ifndef _ASM_PARISC_IRQ_H
 #define _ASM_PARISC_IRQ_H
 
-#include <linux/cpumask.h>
+#include <linaos/cpumask.h>
 #include <asm/types.h>
 
 #define NO_IRQ		(-1)

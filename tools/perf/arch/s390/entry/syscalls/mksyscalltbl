@@ -4,7 +4,7 @@
 # Generate system call table for perf
 #
 # Copyright IBM Corp. 2017, 2018
-# Author(s):  Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+# Author(s):  Hendrik Brueckner <brueckner@linaos.vnet.ibm.com>
 #
 
 SYSCALL_TBL=$1

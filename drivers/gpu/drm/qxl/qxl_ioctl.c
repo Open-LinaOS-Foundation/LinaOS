@@ -23,8 +23,8 @@
  *          Alon Levy
  */
 
-#include <linux/pci.h>
-#include <linux/uaccess.h>
+#include <linaos/pci.h>
+#include <linaos/uaccess.h>
 
 #include "qxl_drv.h"
 #include "qxl_object.h"

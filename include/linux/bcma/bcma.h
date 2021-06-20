@@ -2,18 +2,18 @@
 #ifndef LINUX_BCMA_H_
 #define LINUX_BCMA_H_
 
-#include <linux/pci.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/pci.h>
+#include <linaos/mod_devicetable.h>
 
-#include <linux/bcma/bcma_driver_arm_c9.h>
-#include <linux/bcma/bcma_driver_chipcommon.h>
-#include <linux/bcma/bcma_driver_pci.h>
-#include <linux/bcma/bcma_driver_pcie2.h>
-#include <linux/bcma/bcma_driver_mips.h>
-#include <linux/bcma/bcma_driver_gmac_cmn.h>
-#include <linux/ssb/ssb.h> /* SPROM sharing */
+#include <linaos/bcma/bcma_driver_arm_c9.h>
+#include <linaos/bcma/bcma_driver_chipcommon.h>
+#include <linaos/bcma/bcma_driver_pci.h>
+#include <linaos/bcma/bcma_driver_pcie2.h>
+#include <linaos/bcma/bcma_driver_mips.h>
+#include <linaos/bcma/bcma_driver_gmac_cmn.h>
+#include <linaos/ssb/ssb.h> /* SPROM sharing */
 
-#include <linux/bcma/bcma_regs.h>
+#include <linaos/bcma/bcma_regs.h>
 
 struct bcma_device;
 struct bcma_bus;

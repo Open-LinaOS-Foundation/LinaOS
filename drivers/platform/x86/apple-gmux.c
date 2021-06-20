@@ -9,18 +9,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/backlight.h>
-#include <linux/acpi.h>
-#include <linux/pnp.h>
-#include <linux/apple_bl.h>
-#include <linux/apple-gmux.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/vga_switcheroo.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/backlight.h>
+#include <linaos/acpi.h>
+#include <linaos/pnp.h>
+#include <linaos/apple_bl.h>
+#include <linaos/apple-gmux.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/vga_switcheroo.h>
 #include <acpi/video.h>
 #include <asm/io.h>
 

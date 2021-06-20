@@ -2,9 +2,9 @@
 #ifndef _LINUX_MIN_HEAP_H
 #define _LINUX_MIN_HEAP_H
 
-#include <linux/bug.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/bug.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 /**
  * struct min_heap - Data structure to hold a min-heap.

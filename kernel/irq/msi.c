@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (C) 2014 Intel Corp.
- * Author: Jiang Liu <jiang.liu@linux.intel.com>
+ * Author: Jiang Liu <jiang.liu@linaos.intel.com>
  *
  * This file is licensed under GPLv2.
  *
  * This file contains common code to support Message Signaled Interrupts for
  * PCI compatible and non PCI compatible devices.
  */
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/msi.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/msi.h>
+#include <linaos/slab.h>
 
 #include "internals.h"
 

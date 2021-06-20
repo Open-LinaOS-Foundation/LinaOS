@@ -7,8 +7,8 @@
 #ifndef NET_ATM_RESOURCES_H
 #define NET_ATM_RESOURCES_H
 
-#include <linux/atmdev.h>
-#include <linux/mutex.h>
+#include <linaos/atmdev.h>
+#include <linaos/mutex.h>
 
 
 extern struct list_head atm_devs;
@@ -20,7 +20,7 @@ int atm_dev_ioctl(unsigned int cmd, void __user *buf, int __user *sioc_len,
 
 #ifdef CONFIG_PROC_FS
 
-#include <linux/proc_fs.h>
+#include <linaos/proc_fs.h>
 
 void *atm_dev_seq_start(struct seq_file *seq, loff_t *pos);
 void atm_dev_seq_stop(struct seq_file *seq, void *v);

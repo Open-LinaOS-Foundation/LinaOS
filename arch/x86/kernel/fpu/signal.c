@@ -3,9 +3,9 @@
  * FPU signal frame handling routines.
  */
 
-#include <linux/compat.h>
-#include <linux/cpu.h>
-#include <linux/pagemap.h>
+#include <linaos/compat.h>
+#include <linaos/cpu.h>
+#include <linaos/pagemap.h>
 
 #include <asm/fpu/internal.h>
 #include <asm/fpu/signal.h>

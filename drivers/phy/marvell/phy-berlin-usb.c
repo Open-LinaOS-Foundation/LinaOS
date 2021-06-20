@@ -6,12 +6,12 @@
  * Jisheng Zhang <jszhang@marvell.com>
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
 
 #define USB_PHY_PLL		0x04
 #define USB_PHY_PLL_CONTROL	0x08

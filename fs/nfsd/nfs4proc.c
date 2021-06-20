@@ -32,13 +32,13 @@
  *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include <linux/fs_struct.h>
-#include <linux/file.h>
-#include <linux/falloc.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/nfs_ssc.h>
+#include <linaos/fs_struct.h>
+#include <linaos/file.h>
+#include <linaos/falloc.h>
+#include <linaos/slab.h>
+#include <linaos/kthread.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/nfs_ssc.h>
 
 #include "idmap.h"
 #include "cache.h"
@@ -56,7 +56,7 @@ MODULE_PARM_DESC(inter_copy_offload_enable,
 		 "Enable inter server to server copy offload. Default: false");
 
 #ifdef CONFIG_NFSD_V4_SECURITY_LABEL
-#include <linux/security.h>
+#include <linaos/security.h>
 
 static inline void
 nfsd4_security_inode_setsecctx(struct svc_fh *resfh, struct xdr_netobj *label, u32 *bmval)
@@ -213,7 +213,7 @@ static __be32 nfsd_check_obj_isreg(struct svc_fh *fh)
 	/*
 	 * Using err_symlink as our catch-all case may look odd; but
 	 * there's no other obvious error for this case in 4.0, and we
-	 * happen to know that it will cause the linux v4 client to do
+	 * happen to know that it will cause the linaos v4 client to do
 	 * the right thing on attempts to open something other than a
 	 * regular file.
 	 */
@@ -332,7 +332,7 @@ do_open_fhandle(struct svc_rqst *rqstp, struct nfsd4_compound_state *cstate, str
 	 * should let it succeed now if possible.
 	 *
 	 * In the case of a CLAIM_FH open, on the other hand, the client
-	 * may be counting on us to enforce permissions (the Linux 4.1
+	 * may be counting on us to enforce permissions (the LinaOS 4.1
 	 * client uses this for normal opens, for example).
 	 */
 	if (open->op_claim_type == NFS4_OPEN_CLAIM_DELEG_CUR_FH)

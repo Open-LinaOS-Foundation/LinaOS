@@ -3,10 +3,10 @@
 #ifndef BTRFS_MISC_H
 #define BTRFS_MISC_H
 
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
 #include <asm/div64.h>
-#include <linux/rbtree.h>
+#include <linaos/rbtree.h>
 
 #define in_range(b, first, len) ((b) >= (first) && (b) < (first) + (len))
 

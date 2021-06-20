@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
 #include <test_progs.h>
-#include <linux/nbd.h>
+#include <linaos/nbd.h>
 
 void test_raw_tp_writable_reject_nbd_invalid(void)
 {

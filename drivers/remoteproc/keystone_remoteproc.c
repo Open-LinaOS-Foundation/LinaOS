@@ -5,20 +5,20 @@
  * Copyright (C) 2015-2017 Texas Instruments Incorporated - http://www.ti.com/
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/workqueue.h>
-#include <linux/of_address.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/remoteproc.h>
-#include <linux/reset.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/workqueue.h>
+#include <linaos/of_address.h>
+#include <linaos/of_reserved_mem.h>
+#include <linaos/of_gpio.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/remoteproc.h>
+#include <linaos/reset.h>
 
 #include "remoteproc_internal.h"
 

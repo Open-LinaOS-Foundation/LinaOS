@@ -11,13 +11,13 @@
 */
 
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/delay.h>
-#include <linux/pnp.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/isa.h>
+#include <linaos/delay.h>
+#include <linaos/pnp.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
 #include <asm/dma.h>
 #include <sound/core.h>
 #include <sound/tlv.h>

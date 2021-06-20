@@ -9,15 +9,15 @@
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_clock.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_clock.h>
+#include <linaos/platform_device.h>
+#include <linaos/mutex.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
 
 #include "soc.h"
 

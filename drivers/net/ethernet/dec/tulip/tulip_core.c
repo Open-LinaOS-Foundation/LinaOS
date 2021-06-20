@@ -1,6 +1,6 @@
-/*	tulip_core.c: A DEC 21x4x-family ethernet driver for Linux.
+/*	tulip_core.c: A DEC 21x4x-family ethernet driver for LinaOS.
 
-	Copyright 2000,2001  The Linux Kernel Team
+	Copyright 2000,2001  The LinaOS Kernel Team
 	Written/copyright 1994-2001 by Donald Becker.
 
 	This software may be used and distributed according to the terms
@@ -13,18 +13,18 @@
 
 #define DRV_NAME	"tulip"
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 #include "tulip.h"
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/etherdevice.h>
+#include <linaos/delay.h>
+#include <linaos/mii.h>
+#include <linaos/crc32.h>
 #include <asm/unaligned.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #ifdef CONFIG_SPARC
 #include <asm/prom.h>
@@ -96,7 +96,7 @@ static int csr0;
 #define TX_TIMEOUT  (4*HZ)
 
 
-MODULE_AUTHOR("The Linux Kernel Team");
+MODULE_AUTHOR("The LinaOS Kernel Team");
 MODULE_DESCRIPTION("Digital 21*4* Tulip ethernet driver");
 MODULE_LICENSE("GPL");
 module_param(tulip_debug, int, 0);

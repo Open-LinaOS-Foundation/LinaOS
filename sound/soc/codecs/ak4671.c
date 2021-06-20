@@ -6,12 +6,12 @@
  * Author: Joonyoung Shim <jy0922.shim@samsung.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 #include <sound/soc.h>
 #include <sound/initval.h>
 #include <sound/tlv.h>

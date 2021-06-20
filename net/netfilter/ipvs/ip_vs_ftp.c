@@ -2,7 +2,7 @@
 /*
  * ip_vs_ftp.c: IPVS ftp application module
  *
- * Authors:	Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:	Wensong Zhang <wensong@linaosvirtualserver.org>
  *
  * Changes:
  *
@@ -19,20 +19,20 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/ctype.h>
-#include <linux/inet.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/netfilter.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/ctype.h>
+#include <linaos/inet.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/netfilter.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_helper.h>
-#include <linux/gfp.h>
+#include <linaos/gfp.h>
 #include <net/protocol.h>
 #include <net/tcp.h>
 #include <asm/unaligned.h>

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/se/7721/setup.c
+ * linaos/arch/sh/boards/se/7721/setup.c
  *
  * Copyright (C) 2008 Renesas Solutions Corp.
  *
  * Hitachi UL SolutionEngine 7721 Support.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
 #include <mach-se/mach/se7721.h>
 #include <mach-se/mach/mrshpc.h>
 #include <asm/machvec.h>

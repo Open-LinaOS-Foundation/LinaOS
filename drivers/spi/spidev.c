@@ -7,25 +7,25 @@
  * Copyright (C) 2007 David Brownell (simplification, cleanup)
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ioctl.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/acpi.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/ioctl.h>
+#include <linaos/fs.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/compat.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/acpi.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spidev.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spidev.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 
 /*
@@ -736,7 +736,7 @@ static int spidev_probe(struct spi_device *spi)
 
 	/*
 	 * spidev should never be referenced in DT without a specific
-	 * compatible string, it is a Linux implementation thing
+	 * compatible string, it is a LinaOS implementation thing
 	 * rather than a description of the hardware.
 	 */
 	WARN(spi->dev.of_node &&

@@ -2,14 +2,14 @@
 #ifndef __IPC_NAMESPACE_H__
 #define __IPC_NAMESPACE_H__
 
-#include <linux/err.h>
-#include <linux/idr.h>
-#include <linux/rwsem.h>
-#include <linux/notifier.h>
-#include <linux/nsproxy.h>
-#include <linux/ns_common.h>
-#include <linux/refcount.h>
-#include <linux/rhashtable-types.h>
+#include <linaos/err.h>
+#include <linaos/idr.h>
+#include <linaos/rwsem.h>
+#include <linaos/notifier.h>
+#include <linaos/nsproxy.h>
+#include <linaos/ns_common.h>
+#include <linaos/refcount.h>
+#include <linaos/rhashtable-types.h>
 
 struct user_namespace;
 

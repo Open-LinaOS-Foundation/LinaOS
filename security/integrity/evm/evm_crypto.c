@@ -10,10 +10,10 @@
  *	 Using root's kernel master key (kmk), calculate the HMAC
  */
 
-#include <linux/export.h>
-#include <linux/crypto.h>
-#include <linux/xattr.h>
-#include <linux/evm.h>
+#include <linaos/export.h>
+#include <linaos/crypto.h>
+#include <linaos/xattr.h>
+#include <linaos/evm.h>
 #include <keys/encrypted-type.h>
 #include <crypto/hash.h>
 #include <crypto/hash_info.h>

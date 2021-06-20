@@ -8,11 +8,11 @@
  * Copyright (C) 2006 Thomas Bogendoerfer (tsbogend@alpha.franken.de)
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/serial_8250.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/pci.h>
+#include <linaos/serial_8250.h>
 
 #include <asm/sni.h>
 #include <asm/time.h>

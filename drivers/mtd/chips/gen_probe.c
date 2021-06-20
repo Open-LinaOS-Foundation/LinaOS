@@ -4,13 +4,13 @@
  * GPL'd
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/cfi.h>
-#include <linux/mtd/gen_probe.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/cfi.h>
+#include <linaos/mtd/gen_probe.h>
 
 static struct mtd_info *check_cmd_set(struct map_info *, int);
 static struct cfi_private *genprobe_ident_chips(struct map_info *map,

@@ -9,15 +9,15 @@
  * Inspired by the w1_therm and w1_ds2431 drivers.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/crc16.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/crc16.h>
 
-#include <linux/w1.h>
+#include <linaos/w1.h>
 
 #define W1_COUNTER_DS2423	0x1D
 

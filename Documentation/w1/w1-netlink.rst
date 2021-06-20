@@ -183,7 +183,7 @@ Connector [1] specific documentation
 ====================================
 
 Each connector message includes two u32 fields as "address".
-w1 uses CN_W1_IDX and CN_W1_VAL defined in include/linux/connector.h header.
+w1 uses CN_W1_IDX and CN_W1_VAL defined in include/linaos/connector.h header.
 Each message also includes sequence and acknowledge numbers.
 Sequence number for event messages is appropriate bus master sequence number
 increased with each event message sent "through" this master.

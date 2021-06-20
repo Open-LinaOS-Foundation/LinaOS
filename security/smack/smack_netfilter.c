@@ -11,9 +11,9 @@
  *  Copyright (C) 2014 Intel Corporation.
  */
 
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netdevice.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/netdevice.h>
 #include <net/inet_sock.h>
 #include <net/net_namespace.h>
 #include "smack.h"

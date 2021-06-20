@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2006 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2006 Dave Airlie <airlied@linaos.ie>
  * Copyright © 2006-2008,2010 Intel Corporation
  *   Jesse Barnes <jesse.barnes@intel.com>
  *
@@ -27,10 +27,10 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include <linux/delay.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/i2c-algo-bit.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
 
 #include "psb_drv.h"
 #include "psb_intel_drv.h"

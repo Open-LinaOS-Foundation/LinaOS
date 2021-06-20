@@ -18,13 +18,13 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #include <sound/initval.h>
 
-#include <linux/usb/composite.h>
-#include <linux/usb/gadget.h>
+#include <linaos/usb/composite.h>
+#include <linaos/usb/gadget.h>
 
 #include "u_midi.h"
 
@@ -67,7 +67,7 @@ MODULE_PARM_DESC(out_ports, "Number of MIDI output ports");
  * Instead:  allocate your own, using normal USB-IF procedures.
  */
 #define DRIVER_VENDOR_NUM	0x17b3		/* Grey Innovation */
-#define DRIVER_PRODUCT_NUM	0x0004		/* Linux-USB "MIDI Gadget" */
+#define DRIVER_PRODUCT_NUM	0x0004		/* LinaOS-USB "MIDI Gadget" */
 
 /* string IDs are assigned dynamically */
 

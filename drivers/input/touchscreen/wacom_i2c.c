@@ -6,12 +6,12 @@
  * <tobita.tatsunosuke@wacom.co.jp>
  */
 
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
 #include <asm/unaligned.h>
 
 #define WACOM_CMD_QUERY0	0x04

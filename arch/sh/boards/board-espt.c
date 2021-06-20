@@ -5,15 +5,15 @@
  * Copyright (C) 2008, 2009 Renesas Solutions Corp.
  * Copyright (C) 2008, 2009 Nobuhiro Iwamatsu <iwamatsu.nobuhiro@renesas.com>
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/physmap.h>
-#include <linux/io.h>
-#include <linux/sh_eth.h>
-#include <linux/sh_intc.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/io.h>
+#include <linaos/sh_eth.h>
+#include <linaos/sh_intc.h>
 #include <asm/machvec.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 /* NOR Flash */
 static struct mtd_partition espt_nor_flash_partitions[] = {
@@ -23,7 +23,7 @@ static struct mtd_partition espt_nor_flash_partitions[] = {
 		.size = (2 * SZ_128K),
 		.mask_flags = MTD_WRITEABLE,	/* Read-only */
 	}, {
-		.name = "Linux-Kernel",
+		.name = "LinaOS-Kernel",
 		.offset = MTDPART_OFS_APPEND,
 		.size = (20 * SZ_128K),
 	}, {

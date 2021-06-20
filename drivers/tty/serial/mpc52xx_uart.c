@@ -28,23 +28,23 @@
 
 #undef DEBUG
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/sysrq.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/serial.h>
+#include <linaos/sysrq.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/clk.h>
 
 #include <asm/mpc52xx.h>
 #include <asm/mpc52xx_psc.h>
 
-#include <linux/serial_core.h>
+#include <linaos/serial_core.h>
 
 
 /* We've been assigned a range on the "Low-density serial ports" major */

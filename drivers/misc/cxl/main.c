@@ -3,19 +3,19 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/pci.h>
-#include <linux/sched/task.h>
+#include <linaos/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/idr.h>
+#include <linaos/pci.h>
+#include <linaos/sched/task.h>
 
 #include <asm/cputable.h>
 #include <asm/mmu.h>

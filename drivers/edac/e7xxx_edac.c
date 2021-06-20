@@ -1,6 +1,6 @@
 /*
  * Intel e7xxx Memory Controller kernel module
- * (C) 2003 Linux Networx (http://lnxi.com)
+ * (C) 2003 LinaOS Networx (http://lnxi.com)
  * This file may be distributed under the terms of the
  * GNU General Public License.
  *
@@ -8,14 +8,14 @@
  *
  * Written by Thayne Harbaugh
  * Based on work by Dan Hollis <goemon at anime dot net> and others.
- *	http://www.anime.net/~goemon/linux-ecc/
+ *	http://www.anime.net/~goemon/linaos-ecc/
  *
  * Datasheet:
  *	http://www.intel.com/content/www/us/en/chipsets/e7501-chipset-memory-controller-hub-datasheet.html
  *
  * Contributors:
- *	Eric Biederman (Linux Networx)
- *	Tom Zimmerman (Linux Networx)
+ *	Eric Biederman (LinaOS Networx)
+ *	Tom Zimmerman (LinaOS Networx)
  *	Jim Garlick (Lawrence Livermore National Labs)
  *	Dave Peterson (Lawrence Livermore National Labs)
  *	That One Guy (Some other place)
@@ -25,11 +25,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/edac.h>
 #include "edac_module.h"
 
 #define	EDAC_MOD_STR	"e7xxx_edac"
@@ -596,7 +596,7 @@ module_init(e7xxx_init);
 module_exit(e7xxx_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Linux Networx (http://lnxi.com) Thayne Harbaugh et al\n"
+MODULE_AUTHOR("LinaOS Networx (http://lnxi.com) Thayne Harbaugh et al\n"
 		"Based on.work by Dan Hollis et al");
 MODULE_DESCRIPTION("MC support for Intel e7xxx memory controllers");
 module_param(edac_op_state, int, 0444);

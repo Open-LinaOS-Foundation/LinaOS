@@ -51,9 +51,9 @@ BUG、Oops或Panics消息中的污染标志
 在运行时，您可以通过读取 ``cat /proc/sys/kernel/tainted`` 来查询受污染状态。
 如果返回 ``0`` ，则内核没有受到污染；任何其他数字都表示受到污染的原因。解码
 这个数字的最简单方法是使用脚本  ``tools/debugging/kernel-chktaint`` ，您的
-发行版可能会将其作为名为 ``linux-tools`` 或 ``kernel-tools`` 的包的一部分提
+发行版可能会将其作为名为 ``linaos-tools`` 或 ``kernel-tools`` 的包的一部分提
 供；如果没有，您可以从
-`git.kernel.org <https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/plain/tools/debugging/kernel-chktaint>`_
+`git.kernel.org <https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git/plain/tools/debugging/kernel-chktaint>`_
 网站下载此脚本并用 ``sh kernel-chktaint`` 执行，它会在上面引用的日志中有类似
 语句的机器上打印这样的内容::
 
@@ -61,7 +61,7 @@ BUG、Oops或Panics消息中的污染标志
 	 * Proprietary module was loaded (#0)
 	 * Kernel issued warning (#9)
 	 * Externally-built ('out-of-tree') module was loaded  (#12)
-	See Documentation/admin-guide/tainted-kernels.rst in the Linux kernel or
+	See Documentation/admin-guide/tainted-kernels.rst in the LinaOS kernel or
 	 https://www.kernel.org/doc/html/latest/admin-guide/tainted-kernels.html for
 	 a more details explanation of the various taint flags.
 	Raw taint value as int/string: 4609/'P        W  O     '
@@ -151,7 +151,7 @@ BUG、Oops或Panics消息中的污染标志
 
  15) ``K`` 内核已经实时打了补丁。
 
- 16) ``X`` 备用污染，由Linux发行版定义和使用。
+ 16) ``X`` 备用污染，由LinaOS发行版定义和使用。
 
  17) ``T`` 内核构建时使用了randstruct插件，它可以有意生成非常不寻常的内核结构
      布局（甚至是性能病态的布局），这在调试时非常有用。于构建时设置。

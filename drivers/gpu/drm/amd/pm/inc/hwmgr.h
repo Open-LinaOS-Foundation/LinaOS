@@ -23,7 +23,7 @@
 #ifndef _HWMGR_H_
 #define _HWMGR_H_
 
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 #include "amd_powerplay.h"
 #include "hardwaremanager.h"
 #include "hwmgr_ppt.h"

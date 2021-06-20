@@ -11,13 +11,13 @@
  * published by the Free Software Foundation, version 2.
  */
 
-#include <linux/hid.h>
-#include <linux/hidraw.h>
-#include <linux/hw_random.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/usb.h>
+#include <linaos/hid.h>
+#include <linaos/hidraw.h>
+#include <linaos/hw_random.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/usb.h>
 
 #include "usbhid/usbhid.h"
 #include "hid-ids.h"

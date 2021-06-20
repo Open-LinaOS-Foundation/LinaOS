@@ -2,8 +2,8 @@
 #ifndef _ASM_X86_ALTERNATIVE_H
 #define _ASM_X86_ALTERNATIVE_H
 
-#include <linux/types.h>
-#include <linux/stringify.h>
+#include <linaos/types.h>
+#include <linaos/stringify.h>
 #include <asm/asm.h>
 
 #define ALTINSTR_FLAG_INV	(1 << 15)
@@ -11,7 +11,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/stddef.h>
+#include <linaos/stddef.h>
 
 /*
  * Alternative inline assembly for SMP.

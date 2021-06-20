@@ -8,7 +8,7 @@
 #include "r819xU_firmware_img.h"
 
 #include "ieee80211/dot11d.h"
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 static u32 RF_CHANNEL_TABLE_ZEBRA[] = {
 	0,

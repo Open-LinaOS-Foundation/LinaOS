@@ -13,7 +13,7 @@
  */
 
 #include "asix.h"
-#include <linux/phy.h>
+#include <linaos/phy.h>
 
 struct ax88172a_private {
 	struct mii_bus *mdio;

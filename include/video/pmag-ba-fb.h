@@ -1,10 +1,10 @@
 /*
- *	linux/include/video/pmag-ba-fb.h
+ *	linaos/include/video/pmag-ba-fb.h
  *
  *	TURBOchannel PMAG-BA Color Frame Buffer (CFB) card support,
  *	Copyright (C) 1999, 2000, 2001 by
  *	Michael Engel <engel@unix-ag.org>,
- *	Karsten Merker <merker@linuxtag.org>
+ *	Karsten Merker <merker@linaostag.org>
  *	Copyright (c) 2005  Maciej W. Rozycki
  *
  *	This file is subject to the terms and conditions of the GNU General

@@ -25,13 +25,13 @@
  * Copyright (C) 2013 Peter Hurley <peter@hurleysoftware.com>
  */
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
-#include <linux/tty.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/atomic.h>
+#include <linaos/tty.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
 
 
 #if BITS_PER_LONG == 64

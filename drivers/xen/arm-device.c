@@ -3,8 +3,8 @@
  * Copyright (c) 2015, Linaro Limited, Shannon Zhao
  */
 
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
+#include <linaos/platform_device.h>
+#include <linaos/acpi.h>
 #include <xen/xen.h>
 #include <xen/page.h>
 #include <xen/interface/memory.h>
@@ -144,7 +144,7 @@ static int __init register_xen_platform_notifier(void)
 arch_initcall(register_xen_platform_notifier);
 
 #ifdef CONFIG_ARM_AMBA
-#include <linux/amba/bus.h>
+#include <linaos/amba/bus.h>
 
 static int xen_amba_notifier(struct notifier_block *nb,
 			     unsigned long action, void *data)

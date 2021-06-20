@@ -22,7 +22,7 @@
  * Authors: Slava Grigorev <slava.grigorev@amd.com>
  */
 
-#include <linux/gcd.h>
+#include <linaos/gcd.h>
 
 #include <drm/drm_crtc.h>
 #include "dce6_afmt.h"

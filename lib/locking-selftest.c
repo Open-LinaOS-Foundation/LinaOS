@@ -11,20 +11,20 @@
  *
  *  Copyright (C) 2006 Red Hat, Inc., Ingo Molnar <mingo@redhat.com>
  */
-#include <linux/rwsem.h>
-#include <linux/mutex.h>
-#include <linux/ww_mutex.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/delay.h>
-#include <linux/lockdep.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/interrupt.h>
-#include <linux/debug_locks.h>
-#include <linux/irqflags.h>
-#include <linux/rtmutex.h>
-#include <linux/local_lock.h>
+#include <linaos/rwsem.h>
+#include <linaos/mutex.h>
+#include <linaos/ww_mutex.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/delay.h>
+#include <linaos/lockdep.h>
+#include <linaos/spinlock.h>
+#include <linaos/kallsyms.h>
+#include <linaos/interrupt.h>
+#include <linaos/debug_locks.h>
+#include <linaos/irqflags.h>
+#include <linaos/rtmutex.h>
+#include <linaos/local_lock.h>
 
 /*
  * Change this to 1 if you want to see the failure printouts:

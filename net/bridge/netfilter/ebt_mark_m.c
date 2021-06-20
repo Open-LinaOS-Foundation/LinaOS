@@ -8,10 +8,10 @@
  *  July, 2002
  *
  */
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_mark_m.h>
+#include <linaos/module.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter_bridge/ebtables.h>
+#include <linaos/netfilter_bridge/ebt_mark_m.h>
 
 static bool
 ebt_mark_mt(const struct sk_buff *skb, struct xt_action_param *par)

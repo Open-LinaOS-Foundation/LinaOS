@@ -8,17 +8,17 @@
     Copyright (C) 2001-2002 Convergence Integrated Media GmbH
 	  Holger Waechtler <holger@convergence.de>
 
-    Copyright (C) 2004 Steven Toth <stoth@linuxtv.org>
+    Copyright (C) 2004 Steven Toth <stoth@linaostv.org>
 
 
 */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 #include <media/dvb_frontend.h>
 #include "cx22702.h"
 

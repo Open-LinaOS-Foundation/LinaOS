@@ -6,17 +6,17 @@
  *
  * Copyright (C) 2009 - 2010  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/perf_event.h>
-#include <linux/sched/signal.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/percpu.h>
-#include <linux/kallsyms.h>
-#include <linux/notifier.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/io.h>
-#include <linux/clk.h>
+#include <linaos/init.h>
+#include <linaos/perf_event.h>
+#include <linaos/sched/signal.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/percpu.h>
+#include <linaos/kallsyms.h>
+#include <linaos/notifier.h>
+#include <linaos/kprobes.h>
+#include <linaos/kdebug.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
 #include <asm/hw_breakpoint.h>
 #include <asm/mmu_context.h>
 #include <asm/ptrace.h>

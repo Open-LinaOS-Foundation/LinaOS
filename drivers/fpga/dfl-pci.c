@@ -6,7 +6,7 @@
  *
  * Authors:
  *   Zhang Yi <Yi.Z.Zhang@intel.com>
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@linaos.intel.com>
  *   Joseph Grecco <joe.grecco@intel.com>
  *   Enno Luebbers <enno.luebbers@intel.com>
  *   Tim Whisonant <tim.whisonant@intel.com>
@@ -14,13 +14,13 @@
  *   Henry Mitchel <henry.mitchel@intel.com>
  */
 
-#include <linux/pci.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/errno.h>
-#include <linux/aer.h>
+#include <linaos/pci.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/stddef.h>
+#include <linaos/errno.h>
+#include <linaos/aer.h>
 
 #include "dfl.h"
 

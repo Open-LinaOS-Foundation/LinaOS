@@ -7,7 +7,7 @@
  * Copyright (c) 2019 Andrew Lunn <andrew@lunn.ch>
  */
 
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 
 #include "chip.h"
 #include "port.h"

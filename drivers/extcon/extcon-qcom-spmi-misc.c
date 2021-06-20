@@ -7,16 +7,16 @@
  * Stephen Boyd <stephen.boyd@linaro.org>
  */
 
-#include <linux/devm-helpers.h>
-#include <linux/extcon-provider.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/devm-helpers.h>
+#include <linaos/extcon-provider.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 
 #define USB_ID_DEBOUNCE_MS	5	/* ms */
 

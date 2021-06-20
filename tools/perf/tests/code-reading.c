@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <errno.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 #include <inttypes.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -32,7 +32,7 @@
 
 #include "tests.h"
 
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 
 #define BUFSZ	1024
 #define READLEN	128
@@ -564,7 +564,7 @@ static int do_test_code_reading(bool try_kcore)
 	int err = -1, ret;
 	pid_t pid;
 	struct map *map;
-	bool have_vmlinux, have_kcore, excl_kernel = false;
+	bool have_vmlinaos, have_kcore, excl_kernel = false;
 
 	pid = getpid();
 
@@ -577,7 +577,7 @@ static int do_test_code_reading(bool try_kcore)
 		goto out_err;
 	}
 
-	/* Force the use of kallsyms instead of vmlinux to try kcore */
+	/* Force the use of kallsyms instead of vmlinaos to try kcore */
 	if (try_kcore)
 		symbol_conf.kallsyms_name = "/proc/kallsyms";
 
@@ -588,7 +588,7 @@ static int do_test_code_reading(bool try_kcore)
 		pr_debug("map__load failed\n");
 		goto out_err;
 	}
-	have_vmlinux = dso__is_vmlinux(map->dso);
+	have_vmlinaos = dso__is_vmlinaos(map->dso);
 	have_kcore = dso__is_kcore(map->dso);
 
 	/* 2nd time through we just try kcore */
@@ -596,7 +596,7 @@ static int do_test_code_reading(bool try_kcore)
 		return TEST_CODE_READING_NO_KCORE;
 
 	/* No point getting kernel events if there is no kernel object */
-	if (!have_vmlinux && !have_kcore)
+	if (!have_vmlinaos && !have_kcore)
 		excl_kernel = true;
 
 	threads = thread_map__new_by_tid(pid);
@@ -695,9 +695,9 @@ static int do_test_code_reading(bool try_kcore)
 	if (ret < 0)
 		goto out_put;
 
-	if (!have_vmlinux && !have_kcore && !try_kcore)
+	if (!have_vmlinaos && !have_kcore && !try_kcore)
 		err = TEST_CODE_READING_NO_KERNEL_OBJ;
-	else if (!have_vmlinux && !try_kcore)
+	else if (!have_vmlinaos && !try_kcore)
 		err = TEST_CODE_READING_NO_VMLINUX;
 	else if (excl_kernel)
 		err = TEST_CODE_READING_NO_ACCESS;
@@ -727,7 +727,7 @@ int test__code_reading(struct test *test __maybe_unused, int subtest __maybe_unu
 	case TEST_CODE_READING_OK:
 		return 0;
 	case TEST_CODE_READING_NO_VMLINUX:
-		pr_debug("no vmlinux\n");
+		pr_debug("no vmlinaos\n");
 		return 0;
 	case TEST_CODE_READING_NO_KCORE:
 		pr_debug("no kcore\n");

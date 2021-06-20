@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-footbridge/common.c
+ *  linaos/arch/arm/mach-footbridge/common.c
  *
  *  Copyright (C) 1998-2000 Russell King, Dave Gilbert.
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/ioport.h>
+#include <linaos/list.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
 #include <video/vga.h>
 
 #include <asm/page.h>

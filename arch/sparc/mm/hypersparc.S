@@ -12,7 +12,7 @@
 #include <asm/page.h>
 #include <asm/pgtable.h>
 #include <asm/pgtsrmmu.h>
-#include <linux/init.h>
+#include <linaos/init.h>
 
 	.text
 	.align	4

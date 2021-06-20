@@ -29,7 +29,7 @@
 #include "nbio/nbio_7_4_sh_mask.h"
 #include "nbio/nbio_7_4_0_smn.h"
 #include "ivsrcid/nbio/irqsrcs_nbif_7_4.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/linaos/kfd_ioctl.h>
 
 #define smnPCIE_LC_CNTL		0x11140280
 #define smnPCIE_LC_CNTL3	0x111402d4

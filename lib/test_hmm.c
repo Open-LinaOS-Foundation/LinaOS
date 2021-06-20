@@ -5,26 +5,26 @@
  * Userspace programs can register with the driver to mirror their own address
  * space and can use the device to read/write any valid virtual address.
  */
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/delay.h>
-#include <linux/pagemap.h>
-#include <linux/hmm.h>
-#include <linux/vmalloc.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/sched/mm.h>
-#include <linux/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/cdev.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/rwsem.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/highmem.h>
+#include <linaos/delay.h>
+#include <linaos/pagemap.h>
+#include <linaos/hmm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
+#include <linaos/sched/mm.h>
+#include <linaos/platform_device.h>
 
 #include "test_hmm_uapi.h"
 

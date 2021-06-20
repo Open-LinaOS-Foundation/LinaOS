@@ -9,10 +9,10 @@
  *	ep93xx-pcm.c, Copyright (C) 2006 Lennert Buytenhek <buytenh@wantstofly.org>
  *		      Copyright (C) 2006 Applied Data Systems
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/dmaengine.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/dmaengine.h>
+#include <linaos/slab.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

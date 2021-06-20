@@ -3,12 +3,12 @@
  * Copyright (C) 2015, 2016 ARM Ltd.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/list_sort.h>
-#include <linux/nospec.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kvm.h>
+#include <linaos/kvm_host.h>
+#include <linaos/list_sort.h>
+#include <linaos/nospec.h>
 
 #include <asm/kvm_hyp.h>
 

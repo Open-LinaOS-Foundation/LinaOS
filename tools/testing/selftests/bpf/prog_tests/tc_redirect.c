@@ -13,10 +13,10 @@
 #define _GNU_SOURCE
 
 #include <arpa/inet.h>
-#include <linux/limits.h>
-#include <linux/sysctl.h>
-#include <linux/if_tun.h>
-#include <linux/if.h>
+#include <linaos/limits.h>
+#include <linaos/sysctl.h>
+#include <linaos/if_tun.h>
+#include <linaos/if.h>
 #include <sched.h>
 #include <stdbool.h>
 #include <stdio.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/plat-omap/dma.c
+ * linaos/arch/arm/plat-omap/dma.c
  *
  * Copyright (C) 2003 - 2008 Nokia Corporation
  * Author: Juha Yrjölä <juha.yrjola@nokia.com>
@@ -21,18 +21,18 @@
  *	- G, Manjunath Kondaiah <manjugk@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 
-#include <linux/omap-dma.h>
+#include <linaos/omap-dma.h>
 
 #ifdef CONFIG_ARCH_OMAP1
 #include <mach/soc.h>

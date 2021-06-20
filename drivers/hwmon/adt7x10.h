@@ -2,8 +2,8 @@
 #ifndef __HWMON_ADT7X10_H__
 #define __HWMON_ADT7X10_H__
 
-#include <linux/types.h>
-#include <linux/pm.h>
+#include <linaos/types.h>
+#include <linaos/pm.h>
 
 /* ADT7410 registers definition */
 #define ADT7X10_TEMPERATURE		0

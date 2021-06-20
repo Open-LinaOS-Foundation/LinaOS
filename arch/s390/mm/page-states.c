@@ -7,13 +7,13 @@
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
+#include <linaos/gfp.h>
+#include <linaos/init.h>
 #include <asm/facility.h>
 #include <asm/page-states.h>
 

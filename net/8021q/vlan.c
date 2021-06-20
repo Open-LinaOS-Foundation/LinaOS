@@ -16,23 +16,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/rculist.h>
+#include <linaos/capability.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/rculist.h>
 #include <net/p8022.h>
 #include <net/arp.h>
-#include <linux/rtnetlink.h>
-#include <linux/notifier.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/notifier.h>
 #include <net/rtnetlink.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/if_vlan.h>
+#include <linaos/if_vlan.h>
 #include "vlan.h"
 #include "vlanproc.h"
 

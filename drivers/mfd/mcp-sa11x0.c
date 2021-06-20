@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mfd/mcp-sa11x0.c
+ *  linaos/drivers/mfd/mcp-sa11x0.c
  *
  *  Copyright (C) 2001-2005 Russell King
  *
@@ -8,19 +8,19 @@
  *
  *  MCP read/write timeouts from Jordi Colomer, rehacked by rmk.
  */
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/mfd/mcp.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/mfd/mcp.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <linaos/platform_data/mfd-mcp-sa11x0.h>
 
 #define DRIVER_NAME "sa11x0-mcp"
 
@@ -305,6 +305,6 @@ static struct platform_driver mcp_sa11x0_driver = {
 module_platform_driver(mcp_sa11x0_driver);
 
 MODULE_ALIAS("platform:" DRIVER_NAME);
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.linaos.org.uk>");
 MODULE_DESCRIPTION("SA11x0 multimedia communications port driver");
 MODULE_LICENSE("GPL");

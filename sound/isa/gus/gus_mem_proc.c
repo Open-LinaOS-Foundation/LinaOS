@@ -4,7 +4,7 @@
  *  GUS's memory access via proc filesystem
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include <sound/gus.h>
 #include <sound/info.h>

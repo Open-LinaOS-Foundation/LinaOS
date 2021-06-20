@@ -1,7 +1,7 @@
 /*
  * Header for the Direct Rendering Manager
  *
- * Author: Rickard E. (Rik) Faith <faith@valinux.com>
+ * Author: Rickard E. (Rik) Faith <faith@valinaos.com>
  *
  * Acknowledgments:
  * Dec 1999, Richard Henderson <rth@twiddle.net>, move to generic cmpxchg.
@@ -9,7 +9,7 @@
 
 /*
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -37,13 +37,13 @@
 
 #if defined(__KERNEL__)
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/ioctl.h>
 typedef unsigned int drm_handle_t;
 
-#elif defined(__linux__)
+#elif defined(__linaos__)
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/ioctl.h>
 typedef unsigned int drm_handle_t;
 

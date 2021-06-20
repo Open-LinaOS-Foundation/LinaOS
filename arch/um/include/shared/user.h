@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* 
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
 #ifndef __USER_H__
@@ -18,7 +18,7 @@
 
 /* This is to get size_t */
 #ifndef __UM_HOST__
-#include <linux/types.h>
+#include <linaos/types.h>
 #else
 #include <stddef.h>
 #endif
@@ -26,7 +26,7 @@
 extern void panic(const char *fmt, ...)
 	__attribute__ ((format (printf, 1, 2)));
 
-/* Requires preincluding include/linux/kern_levels.h */
+/* Requires preincluding include/linaos/kern_levels.h */
 #define UM_KERN_EMERG	KERN_EMERG
 #define UM_KERN_ALERT	KERN_ALERT
 #define UM_KERN_CRIT	KERN_CRIT
@@ -51,7 +51,7 @@ extern int in_aton(char *str);
 extern size_t strlcpy(char *, const char *, size_t);
 extern size_t strlcat(char *, const char *, size_t);
 
-/* Copied from linux/compiler-gcc.h since we can't include it directly */
+/* Copied from linaos/compiler-gcc.h since we can't include it directly */
 #define barrier() __asm__ __volatile__("": : :"memory")
 
 #endif

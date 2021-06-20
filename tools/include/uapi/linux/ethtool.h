@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * ethtool.h: Defines for Linux ethtool.
+ * ethtool.h: Defines for LinaOS ethtool.
  *
  * Copyright (C) 1998 David S. Miller (davem@redhat.com)
  * Copyright 2001 Jeff Garzik <jgarzik@pobox.com>
@@ -14,9 +14,9 @@
 #ifndef _UAPI_LINUX_ETHTOOL_H
 #define _UAPI_LINUX_ETHTOOL_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/if_ether.h>
 
 #define ETHTOOL_GCHANNELS       0x0000003c /* Get no of channels */
 

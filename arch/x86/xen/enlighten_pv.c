@@ -12,27 +12,27 @@
  * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/preempt.h>
-#include <linux/hardirq.h>
-#include <linux/percpu.h>
-#include <linux/delay.h>
-#include <linux/start_kernel.h>
-#include <linux/sched.h>
-#include <linux/kprobes.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/page-flags.h>
-#include <linux/highmem.h>
-#include <linux/console.h>
-#include <linux/pci.h>
-#include <linux/gfp.h>
-#include <linux/edd.h>
-#include <linux/objtool.h>
+#include <linaos/cpu.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/smp.h>
+#include <linaos/preempt.h>
+#include <linaos/hardirq.h>
+#include <linaos/percpu.h>
+#include <linaos/delay.h>
+#include <linaos/start_kernel.h>
+#include <linaos/sched.h>
+#include <linaos/kprobes.h>
+#include <linaos/memblock.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/page-flags.h>
+#include <linaos/highmem.h>
+#include <linaos/console.h>
+#include <linaos/pci.h>
+#include <linaos/gfp.h>
+#include <linaos/edd.h>
+#include <linaos/objtool.h>
 
 #include <xen/xen.h>
 #include <xen/events.h>
@@ -76,7 +76,7 @@
 #endif
 
 #ifdef CONFIG_ACPI
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 #include <asm/acpi.h>
 #include <acpi/pdc_intel.h>
 #include <acpi/processor.h>

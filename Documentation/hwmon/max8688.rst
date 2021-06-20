@@ -11,7 +11,7 @@ Supported chips:
 
     Datasheet: http://datasheets.maxim-ic.com/en/ds/MAX8688.pdf
 
-Author: Guenter Roeck <linux@roeck-us.net>
+Author: Guenter Roeck <linaos@roeck-us.net>
 
 
 Description

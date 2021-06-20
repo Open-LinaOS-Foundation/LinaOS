@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The LinaOS Foundation. All rights reserved.
  * Copyright (c) 2019, 2020, Linaro Ltd.
  */
 
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <linaos/debugfs.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-consumer.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/thermal.h>
 #include "tsens.h"
 
 /**
@@ -431,7 +431,7 @@ static irqreturn_t tsens_critical_irq_thread(int irq, void *data)
 		tsens_read_irq_state(priv, hw_id, s, &d);
 		if (d.crit_viol &&
 		    !masked_irq(hw_id, d.crit_irq_mask, tsens_version(priv))) {
-			/* Mask critical interrupts, unused on Linux */
+			/* Mask critical interrupts, unused on LinaOS */
 			tsens_set_interrupt(priv, hw_id, CRITICAL, false);
 		}
 	}

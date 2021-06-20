@@ -23,7 +23,7 @@ until the result is actually needed, and both the waiting and the signalling
 is highly efficient using low level scheduler sleep/wakeup facilities.
 
 Completions are built on top of the waitqueue and wakeup infrastructure of
-the Linux scheduler. The event the threads on the waitqueue are waiting for
+the LinaOS scheduler. The event the threads on the waitqueue are waiting for
 is reduced to a simple flag in 'struct completion', appropriately called "done".
 
 As completions are scheduling related, the code can be found in
@@ -45,7 +45,7 @@ part can happen in any order. I.e. it's entirely normal for a thread
 to have marked a completion as 'done' before another thread checks whether
 it has to wait for it.
 
-To use completions you need to #include <linux/completion.h> and
+To use completions you need to #include <linaos/completion.h> and
 create a static or dynamic variable of type 'struct completion',
 which has only two fields::
 

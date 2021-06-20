@@ -7,7 +7,7 @@
 #if !defined(__TRACE_OBJAGG_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __TRACE_OBJAGG_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 struct objagg;
 struct objagg_obj;

@@ -4,17 +4,17 @@
  * Copyright (c) 2017 Yotam Gigi <yotamg@mellanox.com>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/module.h>
-#include <linux/timekeeping.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/timekeeping.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 #include <net/psample.h>
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 #include <net/ip_tunnels.h>
 #include <net/dst_metadata.h>
 

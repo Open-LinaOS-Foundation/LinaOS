@@ -9,12 +9,12 @@
  * ds1803	2	256		10, 50, 100		0101xxx
  */
 
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/i2c.h>
+#include <linaos/iio/iio.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
 
 #define DS1803_MAX_POS		255
 #define DS1803_WRITE(chan)	(0xa8 | ((chan) + 1))

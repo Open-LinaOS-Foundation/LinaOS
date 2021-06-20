@@ -11,7 +11,7 @@
 
 #include <fcntl.h>
 #include <string.h>
-#include <linux/usb/ch9.h>
+#include <linaos/usb/ch9.h>
 
 #include <unistd.h>
 

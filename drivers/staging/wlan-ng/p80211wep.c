@@ -6,7 +6,7 @@
  * Copyright (C) 2002 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * linaos-wlan
  *
  *   The contents of this file are subject to the Mozilla Public
  *   License Version 1.1 (the "License"); you may not use this file
@@ -31,12 +31,12 @@
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the linaos-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@linaos-wlan.com
+ * http://www.linaos-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -49,11 +49,11 @@
 /*================================================================*/
 /* System Includes */
 
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/wireless.h>
-#include <linux/random.h>
-#include <linux/kernel.h>
+#include <linaos/crc32.h>
+#include <linaos/netdevice.h>
+#include <linaos/wireless.h>
+#include <linaos/random.h>
+#include <linaos/kernel.h>
 #include "p80211hdr.h"
 #include "p80211types.h"
 #include "p80211msg.h"

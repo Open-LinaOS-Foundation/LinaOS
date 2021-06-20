@@ -23,17 +23,17 @@
  * 02111-1307, USA
  */
 
-#include <linux/bcd.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/tps80031.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <linaos/bcd.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mfd/tps80031.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
 
 #define ENABLE_ALARM_INT			0x08
 #define ALARM_INT_STATUS			0x40

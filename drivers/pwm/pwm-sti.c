@@ -8,19 +8,19 @@
  *         Lee Jones <lee.jones@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/math64.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/math64.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/regmap.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/wait.h>
 
 #define PWM_OUT_VAL(x)	(0x00 + (4 * (x))) /* Device's Duty Cycle register */
 #define PWM_CPT_VAL(x)	(0x10 + (4 * (x))) /* Capture value */

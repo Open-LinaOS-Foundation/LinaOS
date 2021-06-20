@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/metronomefb.c -- FB driver for Metronome controller
+ * linaos/drivers/video/metronomefb.c -- FB driver for Metronome controller
  *
  * Copyright (C) 2008, Jaya Kumar
  *
@@ -18,22 +18,22 @@
  * is provided as am200epd.c
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/firmware.h>
-#include <linux/dma-mapping.h>
-#include <linux/uaccess.h>
-#include <linux/irq.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/list.h>
+#include <linaos/firmware.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/uaccess.h>
+#include <linaos/irq.h>
 
 #include <video/metronomefb.h>
 

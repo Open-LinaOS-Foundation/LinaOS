@@ -6,17 +6,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/ftrace.h>
-#include <linux/cache.h>
-#include <linux/bug.h>
-#include <linux/sort.h>
+#include <linaos/module.h>
+#include <linaos/moduleloader.h>
+#include <linaos/elf.h>
+#include <linaos/vmalloc.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/ftrace.h>
+#include <linaos/cache.h>
+#include <linaos/bug.h>
+#include <linaos/sort.h>
 #include <asm/setup.h>
 
 /* Count how many different relocations (different symbol, different

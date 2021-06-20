@@ -7,24 +7,24 @@
 
 #define pr_fmt(fmt)	"opal: " fmt
 
-#include <linux/printk.h>
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/kobject.h>
-#include <linux/delay.h>
-#include <linux/memblock.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/kmsg_dump.h>
-#include <linux/console.h>
-#include <linux/sched/debug.h>
+#include <linaos/printk.h>
+#include <linaos/types.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_address.h>
+#include <linaos/interrupt.h>
+#include <linaos/notifier.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/kobject.h>
+#include <linaos/delay.h>
+#include <linaos/memblock.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/kmsg_dump.h>
+#include <linaos/console.h>
+#include <linaos/sched/debug.h>
 
 #include <asm/machdep.h>
 #include <asm/opal.h>
@@ -222,12 +222,12 @@ static int __init opal_register_exception_handlers(void)
 	 *
 	 * Check if we are running on newer (post Oct 2014) firmware that
 	 * exports the OPAL_HANDLE_HMI token. If yes, then don't ask OPAL to
-	 * patch the HMI interrupt and we catch it directly in Linux.
+	 * patch the HMI interrupt and we catch it directly in LinaOS.
 	 *
 	 * For older firmware (i.e < FW810.20), we fallback to old behavior and
 	 * let OPAL patch the HMI vector and handle it inside OPAL firmware.
 	 *
-	 * For newer firmware we catch/handle the HMI directly in Linux.
+	 * For newer firmware we catch/handle the HMI directly in LinaOS.
 	 */
 	if (!opal_check_token(OPAL_HANDLE_HMI)) {
 		pr_info("Old firmware detected, OPAL handles HMIs.\n");
@@ -700,7 +700,7 @@ int opal_hmi_exception_early(struct pt_regs *regs)
 	/*
 	 * call opal hmi handler. Pass paca address as token.
 	 * The return value OPAL_SUCCESS is an indication that there is
-	 * an HMI event generated waiting to pull by Linux.
+	 * an HMI event generated waiting to pull by LinaOS.
 	 */
 	rc = opal_handle_hmi();
 	if (rc == OPAL_SUCCESS) {

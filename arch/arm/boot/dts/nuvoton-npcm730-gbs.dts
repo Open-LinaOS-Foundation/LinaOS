@@ -80,61 +80,61 @@
 		sas-cable0 {
 			label = "sas-cable0";
 			gpios = <&gpio2 9 GPIO_ACTIVE_LOW>;
-			linux,code = <73>;
+			linaos,code = <73>;
 		};
 
 		sas-cable1 {
 			label = "sas-cable1";
 			gpios = <&gpio2 8 GPIO_ACTIVE_LOW>;
-			linux,code = <72>;
+			linaos,code = <72>;
 		};
 
 		sas-cable2 {
 			label = "sas-cable2";
 			gpios = <&gpio2 7 GPIO_ACTIVE_LOW>;
-			linux,code = <71>;
+			linaos,code = <71>;
 		};
 
 		sas-cable3 {
 			label = "sas-cable3";
 			gpios = <&gpio2 6 GPIO_ACTIVE_LOW>;
-			linux,code = <70>;
+			linaos,code = <70>;
 		};
 
 		sata0 {
 			label = "sata0";
 			gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
-			linux,code = <5>;
+			linaos,code = <5>;
 		};
 
 		hsbp-cable {
 			label = "hsbp-cable";
 			gpios = <&gpio1 25 GPIO_ACTIVE_LOW>;
-			linux,code = <57>;
+			linaos,code = <57>;
 		};
 
 		fanbd-cable {
 			label = "fanbd-cable";
 			gpios = <&gpio1 26 GPIO_ACTIVE_HIGH>;
-			linux,code = <58>;
+			linaos,code = <58>;
 		};
 
 		bp12v-cable {
 			label = "bp12v-cable";
 			gpios = <&gpio2 5 GPIO_ACTIVE_HIGH>;
-			linux,code = <69>;
+			linaos,code = <69>;
 		};
 
 		pe-slot0 {
 			label = "pe-slot0";
 			gpios = <&gpio3 24 GPIO_ACTIVE_LOW>;
-			linux,code = <120>;
+			linaos,code = <120>;
 		};
 
 		pe-slot1 {
 			label = "pe-slot1";
 			gpios = <&gpio3 25 GPIO_ACTIVE_LOW>;
-			linux,code = <121>;
+			linaos,code = <121>;
 		};
 	};
 
@@ -153,7 +153,7 @@
 
 		heartbeat { /* gpio153 */
 			gpios = <&gpio4 25 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		attention { /* gpio215 */
@@ -170,7 +170,7 @@
 		bmc_fault { /* gpio217 */
 			gpios = <&gpio6 25 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "panic";
+			linaos,default-trigger = "panic";
 			panic-indicator;
 		};
 

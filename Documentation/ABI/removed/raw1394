@@ -1,6 +1,6 @@
 What:		raw1394 (a.k.a. "Raw IEEE1394 I/O support" for FireWire)
 Date:		May 2010 (scheduled), finally removed in kernel v2.6.37
-Contact:	linux1394-devel@lists.sourceforge.net
+Contact:	linaos1394-devel@lists.sourceforge.net
 Description:
 	/dev/raw1394 was a character device file that allowed low-level
 	access to FireWire buses.  Its major drawbacks were its inability
@@ -8,7 +8,7 @@ Description:
 	of abstraction that required userspace clients to duplicate much
 	of the kernel's ieee1394 core functionality.
 
-	Replaced by /dev/fw*, i.e. the <linux/firewire-cdev.h> ABI of
+	Replaced by /dev/fw*, i.e. the <linaos/firewire-cdev.h> ABI of
 	firewire-core.
 
 Users:

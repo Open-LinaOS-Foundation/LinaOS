@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <test_progs.h>
-#include <linux/btf.h>
+#include <linaos/btf.h>
 #include "netif_receive_skb.skel.h"
 
 /* Demonstrate that bpf_snprintf_btf succeeds and that various data types

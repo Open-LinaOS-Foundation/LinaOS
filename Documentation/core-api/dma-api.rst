@@ -16,7 +16,7 @@ should only use the API described in part I.
 Part I - dma_API
 ----------------
 
-To get the dma_API, you must #include <linux/dma-mapping.h>.  This
+To get the dma_API, you must #include <linaos/dma-mapping.h>.  This
 provides dma_addr_t and the interfaces described below.
 
 A dma_addr_t can hold any valid DMA address for the platform.  It can be
@@ -76,7 +76,7 @@ may only be called with IRQs enabled.
 Part Ib - Using small DMA-coherent buffers
 ------------------------------------------
 
-To get this part of the dma_API, you must #include <linux/dmapool.h>
+To get this part of the dma_API, you must #include <linaos/dmapool.h>
 
 Many drivers need lots of small DMA-coherent memory regions for DMA
 descriptors or I/O buffers.  Rather than allocating in units of a page
@@ -490,8 +490,8 @@ As an example of the use of the ``*_attrs`` functions, here's how
 you could pass an attribute DMA_ATTR_FOO when mapping memory
 for DMA::
 
-	#include <linux/dma-mapping.h>
-	/* DMA_ATTR_FOO should be defined in linux/dma-mapping.h and
+	#include <linaos/dma-mapping.h>
+	/* DMA_ATTR_FOO should be defined in linaos/dma-mapping.h and
 	* documented in Documentation/core-api/dma-attributes.rst */
 	...
 
@@ -709,7 +709,7 @@ about what DMA memory was allocated for which device. If this code detects an
 error it prints a warning message with some details into your kernel log. An
 example warning message may look like this::
 
-	WARNING: at /data2/repos/linux-2.6-iommu/lib/dma-debug.c:448
+	WARNING: at /data2/repos/linaos-2.6-iommu/lib/dma-debug.c:448
 		check_unmap+0x203/0x490()
 	Hardware name:
 	forcedeth 0000:00:08.0: DMA-API: device driver frees DMA memory with wrong

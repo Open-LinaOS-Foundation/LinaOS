@@ -21,13 +21,13 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
 
 #include <video/display_timing.h>
 #include <video/of_display_timing.h>
@@ -1895,7 +1895,7 @@ static const struct drm_display_mode edt_etm043080dh6gp_mode = {
 	.htotal = 480 + 8 + 4 + 41,
 
 	/*
-	 * IWG22M: Y resolution changed for "dc_linuxfb" module crashing while
+	 * IWG22M: Y resolution changed for "dc_linaosfb" module crashing while
 	 * fb_align
 	 */
 
@@ -3217,7 +3217,7 @@ static const struct panel_desc okaya_rs800480t_7x0gp = {
 	.bus_format = MEDIA_BUS_FMT_RGB666_1X18,
 };
 
-static const struct drm_display_mode olimex_lcd_olinuxino_43ts_mode = {
+static const struct drm_display_mode olimex_lcd_olinaosino_43ts_mode = {
 	.clock = 9000,
 	.hdisplay = 480,
 	.hsync_start = 480 + 5,
@@ -3229,8 +3229,8 @@ static const struct drm_display_mode olimex_lcd_olinuxino_43ts_mode = {
 	.vtotal = 272 + 8 + 5 + 3,
 };
 
-static const struct panel_desc olimex_lcd_olinuxino_43ts = {
-	.modes = &olimex_lcd_olinuxino_43ts_mode,
+static const struct panel_desc olimex_lcd_olinaosino_43ts = {
+	.modes = &olimex_lcd_olinaosino_43ts_mode,
 	.num_modes = 1,
 	.size = {
 		.width = 95,
@@ -4447,8 +4447,8 @@ static const struct of_device_id platform_of_match[] = {
 		.compatible = "okaya,rs800480t-7x0gp",
 		.data = &okaya_rs800480t_7x0gp,
 	}, {
-		.compatible = "olimex,lcd-olinuxino-43-ts",
-		.data = &olimex_lcd_olinuxino_43ts,
+		.compatible = "olimex,lcd-olinaosino-43-ts",
+		.data = &olimex_lcd_olinaosino_43ts,
 	}, {
 		.compatible = "ontat,yx700wv03",
 		.data = &ontat_yx700wv03,

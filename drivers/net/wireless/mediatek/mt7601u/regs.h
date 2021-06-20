@@ -7,7 +7,7 @@
 #ifndef __MT76_REGS_H
 #define __MT76_REGS_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define MT_ASIC_VERSION			0x0000
 

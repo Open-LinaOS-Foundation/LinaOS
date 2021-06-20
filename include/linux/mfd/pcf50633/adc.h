@@ -9,8 +9,8 @@
 #ifndef __LINUX_MFD_PCF50633_ADC_H
 #define __LINUX_MFD_PCF50633_ADC_H
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/platform_device.h>
+#include <linaos/mfd/pcf50633/core.h>
+#include <linaos/platform_device.h>
 
 /* ADC Registers */
 #define PCF50633_REG_ADCC3		0x52

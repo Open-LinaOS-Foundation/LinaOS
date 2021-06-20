@@ -7,39 +7,39 @@
 #include "multicast.h"
 #include "main.h"
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/byteorder/generic.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/gfp.h>
-#include <linux/icmpv6.h>
-#include <linux/if_bridge.h>
-#include <linux/if_ether.h>
-#include <linux/igmp.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/inetdevice.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
-#include <linux/printk.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/atomic.h>
+#include <linaos/bitops.h>
+#include <linaos/bug.h>
+#include <linaos/byteorder/generic.h>
+#include <linaos/errno.h>
+#include <linaos/etherdevice.h>
+#include <linaos/gfp.h>
+#include <linaos/icmpv6.h>
+#include <linaos/if_bridge.h>
+#include <linaos/if_ether.h>
+#include <linaos/igmp.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/inetdevice.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/lockdep.h>
+#include <linaos/netdevice.h>
+#include <linaos/netlink.h>
+#include <linaos/printk.h>
+#include <linaos/rculist.h>
+#include <linaos/rcupdate.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/stddef.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 #include <net/addrconf.h>
 #include <net/genetlink.h>
 #include <net/if_inet6.h>
@@ -47,8 +47,8 @@
 #include <net/ipv6.h>
 #include <net/netlink.h>
 #include <net/sock.h>
-#include <uapi/linux/batadv_packet.h>
-#include <uapi/linux/batman_adv.h>
+#include <uapi/linaos/batadv_packet.h>
+#include <uapi/linaos/batman_adv.h>
 
 #include "bridge_loop_avoidance.h"
 #include "hard-interface.h"
@@ -596,7 +596,7 @@ static int batadv_mcast_mla_bridge_get(struct net_device *dev,
 	int ret;
 
 	/* we don't need to detect these devices/listeners, the IGMP/MLD
-	 * snooping code of the Linux bridge already does that for us
+	 * snooping code of the LinaOS bridge already does that for us
 	 */
 	ret = br_multicast_list_adjacent(dev, &bridge_mcast_list);
 	if (ret < 0)

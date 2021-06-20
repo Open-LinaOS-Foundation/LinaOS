@@ -8,8 +8,8 @@
 #ifndef _ATTRIBUTE_CONTAINER_H_
 #define _ATTRIBUTE_CONTAINER_H_
 
-#include <linux/list.h>
-#include <linux/klist.h>
+#include <linaos/list.h>
+#include <linaos/klist.h>
 
 struct device;
 

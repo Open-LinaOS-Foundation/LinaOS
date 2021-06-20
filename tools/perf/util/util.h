@@ -9,7 +9,7 @@
 #include <fcntl.h>
 #include <stdbool.h>
 #include <stddef.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <sys/types.h>
 
 /* General helper functions */

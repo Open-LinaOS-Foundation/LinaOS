@@ -2,10 +2,10 @@
 /*
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
-#include <linux/cpumask.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/nd.h>
+#include <linaos/cpumask.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/nd.h>
 #include "nd-core.h"
 #include "nd.h"
 

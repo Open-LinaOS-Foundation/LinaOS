@@ -2,7 +2,7 @@
 #ifndef _ZBUD_H_
 #define _ZBUD_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct zbud_pool;
 

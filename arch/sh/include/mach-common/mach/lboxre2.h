@@ -7,7 +7,7 @@
  *
  * NTT COMWARE L-BOX RE2 support
  */
-#include <linux/sh_intc.h>
+#include <linaos/sh_intc.h>
 
 #define IRQ_CF1		evt2irq(0x320)	/* CF1 */
 #define IRQ_CF0		evt2irq(0x340)	/* CF0 */

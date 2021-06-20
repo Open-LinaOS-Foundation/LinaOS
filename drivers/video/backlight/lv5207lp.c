@@ -7,13 +7,13 @@
  * Contact: Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_data/lv5207lp.h>
-#include <linux/slab.h>
+#include <linaos/backlight.h>
+#include <linaos/err.h>
+#include <linaos/fb.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/lv5207lp.h>
+#include <linaos/slab.h>
 
 #define LV5207LP_CTRL1			0x00
 #define LV5207LP_CPSW			(1 << 7)

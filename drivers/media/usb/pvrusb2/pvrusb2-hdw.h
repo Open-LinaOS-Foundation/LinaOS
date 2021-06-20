@@ -6,8 +6,8 @@
 #ifndef __PVRUSB2_HDW_H
 #define __PVRUSB2_HDW_H
 
-#include <linux/usb.h>
-#include <linux/videodev2.h>
+#include <linaos/usb.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-dev.h>
 #include "pvrusb2-io.h"
 #include "pvrusb2-ctrl.h"

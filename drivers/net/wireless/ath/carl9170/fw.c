@@ -7,10 +7,10 @@
  * Copyright 2009, 2010, Christian Lamparter <chunkeey@googlemail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/firmware.h>
-#include <linux/crc32.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/firmware.h>
+#include <linaos/crc32.h>
+#include <linaos/module.h>
 #include "carl9170.h"
 #include "fwcmd.h"
 #include "version.h"

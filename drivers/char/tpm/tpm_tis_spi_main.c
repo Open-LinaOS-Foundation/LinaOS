@@ -20,17 +20,17 @@
  * Dorn and Kyleen Hall and Jarko Sakkinnen.
  */
 
-#include <linux/acpi.h>
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/completion.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
-#include <linux/tpm.h>
+#include <linaos/of_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/tpm.h>
 
 #include "tpm.h"
 #include "tpm_tis_core.h"

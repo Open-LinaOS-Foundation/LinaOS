@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  IUCV protocol stack for Linux on zSeries
+ *  IUCV protocol stack for LinaOS on zSeries
  *
  *  Copyright IBM Corp. 2006, 2009
  *
  *  Author(s):	Jennifer Hunt <jenhunt@us.ibm.com>
- *		Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ *		Hendrik Brueckner <brueckner@linaos.vnet.ibm.com>
  *  PM functions:
  *		Ursula Braun <ursula.braun@de.ibm.com>
  */
@@ -13,23 +13,23 @@
 #define KMSG_COMPONENT "af_iucv"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/limits.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/security.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/types.h>
+#include <linaos/limits.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/poll.h>
+#include <linaos/security.h>
 #include <net/sock.h>
 #include <asm/ebcdic.h>
 #include <asm/cpcmd.h>
-#include <linux/kmod.h>
+#include <linaos/kmod.h>
 
 #include <net/iucv/af_iucv.h>
 

@@ -9,7 +9,7 @@
 #include <asm/barrier.h>
 
 /*
- * include/linux/spinlock_up.h - UP-debug version of spinlocks.
+ * include/linaos/spinlock_up.h - UP-debug version of spinlocks.
  *
  * portions Copyright 2005, Red Hat, Inc., Ingo Molnar
  * Released under the General Public License (GPL).

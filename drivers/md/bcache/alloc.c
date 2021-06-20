@@ -64,9 +64,9 @@
 #include "bcache.h"
 #include "btree.h"
 
-#include <linux/blkdev.h>
-#include <linux/kthread.h>
-#include <linux/random.h>
+#include <linaos/blkdev.h>
+#include <linaos/kthread.h>
+#include <linaos/random.h>
 #include <trace/events/bcache.h>
 
 #define MAX_OPEN_BUCKETS 128

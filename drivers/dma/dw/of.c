@@ -7,9 +7,9 @@
  * Copyright (C) 2013 Intel Corporation
  */
 
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_dma.h>
+#include <linaos/platform_device.h>
 
 #include "internal.h"
 

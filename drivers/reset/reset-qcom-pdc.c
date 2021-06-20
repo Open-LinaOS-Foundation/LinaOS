@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2018 The Linux Foundation. All rights reserved.
+ * Copyright (C) 2018 The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/reset-controller.h>
 
 #include <dt-bindings/reset/qcom,sdm845-pdc.h>
 

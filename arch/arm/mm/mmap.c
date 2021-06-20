@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/arm/mm/mmap.c
+ *  linaos/arch/arm/mm/mmap.c
  */
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/shm.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/io.h>
-#include <linux/personality.h>
-#include <linux/random.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/shm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
+#include <linaos/io.h>
+#include <linaos/personality.h>
+#include <linaos/random.h>
 #include <asm/cachetype.h>
 
 #define COLOUR_ALIGN(addr,pgoff)		\

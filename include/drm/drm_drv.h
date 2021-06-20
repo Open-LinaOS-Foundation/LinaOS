@@ -1,6 +1,6 @@
 /*
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * Copyright (c) 2009-2010, Code Aurora Forum.
  * Copyright 2016 Intel Corp.
  *
@@ -27,8 +27,8 @@
 #ifndef _DRM_DRV_H_
 #define _DRM_DRV_H_
 
-#include <linux/list.h>
-#include <linux/irqreturn.h>
+#include <linaos/list.h>
+#include <linaos/irqreturn.h>
 
 #include <drm/drm_device.h>
 

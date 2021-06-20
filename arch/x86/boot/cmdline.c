@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright (C) 1991, 1992 Linus Torvalds
  *   Copyright 2007 rPath, Inc. - All Rights Reserved
@@ -19,7 +19,7 @@ static inline int myisspace(u8 c)
 
 /*
  * Find a non-boolean option, that is, "option=argument".  In accordance
- * with standard Linux practice, if this option is repeated, this returns
+ * with standard LinaOS practice, if this option is repeated, this returns
  * the last instance on the command line.
  *
  * Returns the length of the argument (regardless of if it was

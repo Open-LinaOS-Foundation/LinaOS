@@ -6,17 +6,17 @@
  * Copyright © 2007-2008  Andres Salomon <dilinger@debian.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/syscore_ops.h>
-#include <linux/mutex.h>
-#include <linux/olpc-ec.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/string.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/mutex.h>
+#include <linaos/olpc-ec.h>
 
 #include <asm/geode.h>
 #include <asm/setup.h>

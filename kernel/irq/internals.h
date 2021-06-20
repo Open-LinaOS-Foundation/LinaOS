@@ -6,10 +6,10 @@
  * kernel/irq/. Do not even think about using any information outside
  * of this file for your non core code.
  */
-#include <linux/irqdesc.h>
-#include <linux/kernel_stat.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched/clock.h>
+#include <linaos/irqdesc.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sched/clock.h>
 
 #ifdef CONFIG_SPARSE_IRQ
 # define IRQ_BITMAP_BITS	(NR_IRQS + 8196)
@@ -483,7 +483,7 @@ static inline struct irq_data *irqd_get_parent_data(struct irq_data *irqd)
 }
 
 #ifdef CONFIG_GENERIC_IRQ_DEBUGFS
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 void irq_add_debugfs_entry(unsigned int irq, struct irq_desc *desc);
 static inline void irq_remove_debugfs_entry(struct irq_desc *desc)

@@ -12,14 +12,14 @@
 #ifndef _LINUX_HRTIMER_H
 #define _LINUX_HRTIMER_H
 
-#include <linux/hrtimer_defs.h>
-#include <linux/rbtree.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/percpu.h>
-#include <linux/seqlock.h>
-#include <linux/timer.h>
-#include <linux/timerqueue.h>
+#include <linaos/hrtimer_defs.h>
+#include <linaos/rbtree.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/percpu.h>
+#include <linaos/seqlock.h>
+#include <linaos/timer.h>
+#include <linaos/timerqueue.h>
 
 struct hrtimer_clock_base;
 struct hrtimer_cpu_base;

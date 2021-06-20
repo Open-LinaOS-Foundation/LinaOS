@@ -23,8 +23,8 @@
 #ifndef _DVB_RINGBUFFER_H_
 #define _DVB_RINGBUFFER_H_
 
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <linaos/spinlock.h>
+#include <linaos/wait.h>
 
 /**
  * struct dvb_ringbuffer - Describes a ring buffer used at DVB framework

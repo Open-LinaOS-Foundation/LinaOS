@@ -5,24 +5,24 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  */
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/stat.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/falloc.h>
-#include <linux/types.h>
-#include <linux/compat.h>
-#include <linux/uaccess.h>
-#include <linux/mount.h>
-#include <linux/pagevec.h>
-#include <linux/uio.h>
-#include <linux/uuid.h>
-#include <linux/file.h>
-#include <linux/nls.h>
-#include <linux/sched/signal.h>
-#include <linux/fileattr.h>
+#include <linaos/fs.h>
+#include <linaos/f2fs_fs.h>
+#include <linaos/stat.h>
+#include <linaos/buffer_head.h>
+#include <linaos/writeback.h>
+#include <linaos/blkdev.h>
+#include <linaos/falloc.h>
+#include <linaos/types.h>
+#include <linaos/compat.h>
+#include <linaos/uaccess.h>
+#include <linaos/mount.h>
+#include <linaos/pagevec.h>
+#include <linaos/uio.h>
+#include <linaos/uuid.h>
+#include <linaos/file.h>
+#include <linaos/nls.h>
+#include <linaos/sched/signal.h>
+#include <linaos/fileattr.h>
 
 #include "f2fs.h"
 #include "node.h"
@@ -31,7 +31,7 @@
 #include "acl.h"
 #include "gc.h"
 #include <trace/events/f2fs.h>
-#include <uapi/linux/f2fs.h>
+#include <uapi/linaos/f2fs.h>
 
 static vm_fault_t f2fs_filemap_fault(struct vm_fault *vmf)
 {

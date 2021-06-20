@@ -3,7 +3,7 @@
  * Comedi driver for National Instruments AT-A2150 boards
  * Copyright (C) 2001, 2002 Frank Mori Hess <fmhess@users.sourceforge.net>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -34,11 +34,11 @@
  * - TRIG_WAKE_EOS
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 
 #include "../comedidev.h"
 

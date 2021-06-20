@@ -3,20 +3,20 @@
  * Copyright (C) 2016 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/cache.h>
-#include <linux/random.h>
-#include <linux/hrtimer.h>
-#include <linux/ktime.h>
-#include <linux/string.h>
-#include <linux/net.h>
-#include <linux/siphash.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/cache.h>
+#include <linaos/random.h>
+#include <linaos/hrtimer.h>
+#include <linaos/ktime.h>
+#include <linaos/string.h>
+#include <linaos/net.h>
+#include <linaos/siphash.h>
 #include <net/secure_seq.h>
 
 #if IS_ENABLED(CONFIG_IPV6) || IS_ENABLED(CONFIG_INET)
-#include <linux/in6.h>
+#include <linaos/in6.h>
 #include <net/tcp.h>
 
 static siphash_key_t net_secret __read_mostly;

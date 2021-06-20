@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_SHM_H_
 #define _UAPI_LINUX_SHM_H_
 
-#include <linux/ipc.h>
-#include <linux/errno.h>
+#include <linaos/ipc.h>
+#include <linaos/errno.h>
 #include <asm-generic/hugetlb_encode.h>
 #ifndef __KERNEL__
 #include <unistd.h>
@@ -46,8 +46,8 @@ struct shmid_ds {
  * shmget() shmflg values.
  */
 /* The bottom nine bits are the same as open(2) mode flags */
-#define SHM_R		0400	/* or S_IRUGO from <linux/stat.h> */
-#define SHM_W		0200	/* or S_IWUGO from <linux/stat.h> */
+#define SHM_R		0400	/* or S_IRUGO from <linaos/stat.h> */
+#define SHM_W		0200	/* or S_IWUGO from <linaos/stat.h> */
 /* Bits 9 & 10 are IPC_CREAT and IPC_EXCL */
 #define SHM_HUGETLB	04000	/* segment will use huge TLB pages */
 #define SHM_NORESERVE	010000	/* don't check for reservations */

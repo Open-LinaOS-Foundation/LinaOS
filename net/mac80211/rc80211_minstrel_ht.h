@@ -6,7 +6,7 @@
 #ifndef __RC_MINSTREL_HT_H
 #define __RC_MINSTREL_HT_H
 
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 
 /* number of highest throughput rates to consider*/
 #define MAX_THR_RATES 4

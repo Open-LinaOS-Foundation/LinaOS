@@ -37,11 +37,11 @@
 #ifndef RDMA_CORE_H
 #define RDMA_CORE_H
 
-#include <linux/idr.h>
+#include <linaos/idr.h>
 #include <rdma/uverbs_types.h>
 #include <rdma/uverbs_ioctl.h>
 #include <rdma/ib_verbs.h>
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 
 struct ib_uverbs_device;
 

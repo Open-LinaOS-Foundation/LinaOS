@@ -19,11 +19,11 @@
  * version 4.0, section 17.3.1
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
 
 #include "apei-internal.h"
 

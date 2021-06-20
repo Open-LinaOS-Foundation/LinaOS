@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/lubbock.c
+ *  linaos/arch/arm/mach-pxa/lubbock.c
  *
  *  Support for the Intel DBPXA250 Development Platform.
  *
@@ -8,35 +8,35 @@
  *  Created:	Jun 15, 2001
  *  Copyright:	MontaVista Software Inc.
  */
-#include <linux/clkdev.h>
-#include <linux/gpio.h>
-#include <linux/gpio/gpio-reg.h>
-#include <linux/gpio/machine.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/major.h>
-#include <linux/fb.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/smc91x.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
+#include <linaos/clkdev.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/gpio-reg.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/major.h>
+#include <linaos/fb.h>
+#include <linaos/interrupt.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/smc91x.h>
+#include <linaos/slab.h>
+#include <linaos/leds.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/spi/pxa2xx_spi.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/ads7846.h>
+#include <linaos/spi/pxa2xx_spi.h>
 
 #include <asm/setup.h>
 #include <asm/memory.h>
 #include <asm/mach-types.h>
 #include <mach/hardware.h>
 #include <asm/irq.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -49,9 +49,9 @@
 #include <mach/audio.h>
 #include <mach/lubbock.h>
 #include "udc.h"
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/irda-pxaficp.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/mmc-pxamci.h>
 #include "pm.h"
 #include <mach/smemc.h>
 

@@ -4,7 +4,7 @@
 #include "wifi.h"
 #include "base.h"
 #include "ps.h"
-#include <linux/export.h>
+#include <linaos/export.h>
 #include "btcoexist/rtl_btc.h"
 
 bool rtl_ps_enable_nic(struct ieee80211_hw *hw)

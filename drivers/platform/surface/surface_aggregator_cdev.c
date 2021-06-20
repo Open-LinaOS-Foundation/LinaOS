@@ -6,18 +6,18 @@
  * Copyright (C) 2020 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/rwsem.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
-#include <linux/surface_aggregator/cdev.h>
-#include <linux/surface_aggregator/controller.h>
+#include <linaos/surface_aggregator/cdev.h>
+#include <linaos/surface_aggregator/controller.h>
 
 #define SSAM_CDEV_DEVICE_NAME	"surface_aggregator_cdev"
 

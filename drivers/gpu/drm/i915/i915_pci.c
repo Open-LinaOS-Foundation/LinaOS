@@ -22,8 +22,8 @@
  *
  */
 
-#include <linux/console.h>
-#include <linux/vga_switcheroo.h>
+#include <linaos/console.h>
+#include <linaos/vga_switcheroo.h>
 
 #include <drm/drm_drv.h>
 #include <drm/i915_pciids.h>

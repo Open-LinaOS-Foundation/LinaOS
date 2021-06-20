@@ -4,11 +4,11 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/acpi_iort.h>
-#include <linux/device.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <linaos/acpi_iort.h>
+#include <linaos/device.h>
+#include <linaos/msi.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
 
 static struct irq_chip its_pmsi_irq_chip = {
 	.name			= "ITS-pMSI",

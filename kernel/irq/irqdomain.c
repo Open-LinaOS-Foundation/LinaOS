@@ -2,23 +2,23 @@
 
 #define pr_fmt(fmt)  "irq: " fmt
 
-#include <linux/acpi.h>
-#include <linux/debugfs.h>
-#include <linux/hardirq.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdesc.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/topology.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/fs.h>
+#include <linaos/acpi.h>
+#include <linaos/debugfs.h>
+#include <linaos/hardirq.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqdesc.h>
+#include <linaos/irqdomain.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/topology.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
+#include <linaos/fs.h>
 
 static LIST_HEAD(irq_domain_list);
 static DEFINE_MUTEX(irq_domain_mutex);
@@ -57,7 +57,7 @@ EXPORT_SYMBOL_GPL(irqchip_fwnode_ops);
 /**
  * __irq_domain_alloc_fwnode - Allocate a fwnode_handle suitable for
  *                           identifying an irq domain
- * @type:	Type of irqchip_fwnode. See linux/irqdomain.h
+ * @type:	Type of irqchip_fwnode. See linaos/irqdomain.h
  * @id:		Optional user provided id if name != NULL
  * @name:	Optional user provided domain name
  * @pa:		Optional user-provided physical address
@@ -610,7 +610,7 @@ EXPORT_SYMBOL_GPL(irq_domain_associate_many);
  *
  * This routine is used for irq controllers which can choose the hardware
  * interrupt numbers they generate. In such a case it's simplest to use
- * the linux irq as the hardware interrupt number. It still uses the linear
+ * the linaos irq as the hardware interrupt number. It still uses the linear
  * or radix tree to store the mapping, but the irq controller can optimize
  * the revmap path by using the hwirq directly.
  */
@@ -646,12 +646,12 @@ unsigned int irq_create_direct_mapping(struct irq_domain *domain)
 EXPORT_SYMBOL_GPL(irq_create_direct_mapping);
 
 /**
- * irq_create_mapping_affinity() - Map a hardware interrupt into linux irq space
+ * irq_create_mapping_affinity() - Map a hardware interrupt into linaos irq space
  * @domain: domain owning this hardware interrupt or NULL for default domain
  * @hwirq: hardware irq number in that domain space
  * @affinity: irq affinity
  *
- * Only one mapping per hardware interrupt is permitted. Returns a linux
+ * Only one mapping per hardware interrupt is permitted. Returns a linaos
  * irq number.
  * If the sense/trigger is to be specified, set_irq_type() should be called
  * on the number returned from that call.
@@ -838,7 +838,7 @@ EXPORT_SYMBOL_GPL(irq_create_of_mapping);
 
 /**
  * irq_dispose_mapping() - Unmap an interrupt
- * @virq: linux irq number of the interrupt to unmap
+ * @virq: linaos irq number of the interrupt to unmap
  */
 void irq_dispose_mapping(unsigned int virq)
 {
@@ -862,7 +862,7 @@ void irq_dispose_mapping(unsigned int virq)
 EXPORT_SYMBOL_GPL(irq_dispose_mapping);
 
 /**
- * irq_find_mapping() - Find a linux irq from a hw irq number.
+ * irq_find_mapping() - Find a linaos irq from a hw irq number.
  * @domain: domain owning this hardware interrupt
  * @hwirq: hardware irq number in that domain space
  */
@@ -917,7 +917,7 @@ EXPORT_SYMBOL_GPL(irq_domain_xlate_onecell);
  *
  * Device Tree IRQ specifier translation function which works with two cell
  * bindings where the cell values map directly to the hwirq number
- * and linux irq flags.
+ * and linaos irq flags.
  */
 int irq_domain_xlate_twocell(struct irq_domain *d, struct device_node *ctrlr,
 			const u32 *intspec, unsigned int intsize,
@@ -935,7 +935,7 @@ EXPORT_SYMBOL_GPL(irq_domain_xlate_twocell);
  *
  * Device Tree IRQ specifier translation function which works with either one
  * or two cell bindings where the cell values map directly to the hwirq number
- * and linux irq flags.
+ * and linaos irq flags.
  *
  * Note: don't use this function unless your interrupt controller explicitly
  * supports both one and two cell bindings.  For the majority of controllers
@@ -985,7 +985,7 @@ EXPORT_SYMBOL_GPL(irq_domain_translate_onecell);
  *
  * Device Tree IRQ specifier translation function which works with two cell
  * bindings where the cell values map directly to the hwirq number
- * and linux irq flags.
+ * and linaos irq flags.
  */
 int irq_domain_translate_twocell(struct irq_domain *d,
 				 struct irq_fwspec *fwspec,

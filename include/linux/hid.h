@@ -14,18 +14,18 @@
 #define __HID_H
 
 
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h> /* hid_device_id */
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/input.h>
-#include <linux/semaphore.h>
-#include <linux/mutex.h>
-#include <linux/power_supply.h>
-#include <uapi/linux/hid.h>
+#include <linaos/bitops.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/mod_devicetable.h> /* hid_device_id */
+#include <linaos/timer.h>
+#include <linaos/workqueue.h>
+#include <linaos/input.h>
+#include <linaos/semaphore.h>
+#include <linaos/mutex.h>
+#include <linaos/power_supply.h>
+#include <uapi/linaos/hid.h>
 
 /*
  * We parse each description item into this structure. Short items data
@@ -361,7 +361,7 @@ struct hid_item {
 /*
  * HID device groups
  *
- * Note: HID_GROUP_ANY is declared in linux/mod_devicetable.h
+ * Note: HID_GROUP_ANY is declared in linaos/mod_devicetable.h
  * and has a value of 0x0000
  */
 #define HID_GROUP_GENERIC			0x0001

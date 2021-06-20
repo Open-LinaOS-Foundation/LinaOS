@@ -11,11 +11,11 @@
  * Adapted from DA9052
  */
 
-#include <linux/mfd/altera-a10sr.h>
-#include <linux/mfd/core.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/spi/spi.h>
+#include <linaos/mfd/altera-a10sr.h>
+#include <linaos/mfd/core.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/spi/spi.h>
 
 static const struct mfd_cell altr_a10sr_subdev_info[] = {
 	{

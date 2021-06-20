@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/adfs/dir_f.c
+ *  linaos/fs/adfs/dir_f.c
  *
  * Copyright (C) 1997-1999 Russell King
  *
@@ -169,7 +169,7 @@ bad_dir:
 }
 
 /*
- * convert a disk-based directory entry to a Linux ADFS directory entry
+ * convert a disk-based directory entry to a LinaOS ADFS directory entry
  */
 static inline void
 adfs_dir2obj(struct adfs_dir *dir, struct object_info *obj,
@@ -195,7 +195,7 @@ adfs_dir2obj(struct adfs_dir *dir, struct object_info *obj,
 }
 
 /*
- * convert a Linux ADFS directory entry to a disk-based directory entry
+ * convert a LinaOS ADFS directory entry to a disk-based directory entry
  */
 static inline void
 adfs_obj2dir(struct adfs_direntry *de, struct object_info *obj)

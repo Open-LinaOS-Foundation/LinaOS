@@ -1,5 +1,5 @@
 /*
-** linux/atarihw.h -- This header defines some macros and pointers for
+** linaos/atarihw.h -- This header defines some macros and pointers for
 **                    the various Atari custom hardware registers.
 **
 ** Copyright 1994 by Björn Brauel
@@ -20,7 +20,7 @@
 #ifndef _LINUX_ATARIHW_H_
 #define _LINUX_ATARIHW_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/bootinfo-atari.h>
 #include <asm/kmap.h>
 
@@ -131,7 +131,7 @@ extern struct atari_hw_present atari_hw_present;
  */
 
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <asm/cacheflush.h>
 
 static inline void dma_cache_maintenance( unsigned long paddr,
@@ -237,7 +237,7 @@ struct SHIFTER_TT {
 
 /*
 ** Falcon030 VIDEL Video Controller
-** for description see File 'linux\tools\atari\hardware.txt
+** for description see File 'linaos\tools\atari\hardware.txt
  */
 #define f030_col ((u_long *)		0xffff9800)
 #define f030_xreg ((u_short*)		0xffff8282)
@@ -809,5 +809,5 @@ struct MSTE_RTC {
 
 #define ATARI_ETHERNAT_PHYS_ADDR	0x80000000
 
-#endif /* linux/atarihw.h */
+#endif /* linaos/atarihw.h */
 

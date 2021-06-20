@@ -26,8 +26,8 @@
 #include "util/spark.h"
 #include "util/block-info.h"
 #include "util/stream.h"
-#include <linux/err.h>
-#include <linux/zalloc.h>
+#include <linaos/err.h>
+#include <linaos/zalloc.h>
 #include <subcmd/pager.h>
 #include <subcmd/parse-options.h>
 
