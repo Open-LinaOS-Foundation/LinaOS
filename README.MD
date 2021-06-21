@@ -25,4 +25,4 @@
 - 在某些领域，我们成功的优化了*114514%*。比如变量i循环一万次+1的操作，我们直接优化成了 `i += 114514`。
 
 ## 出处
-灵感来源于：[梦弘浏览器GitHub](https://github.com/StickTech/monyhar) 以及 [鸿蒙浏览器知乎](https://www.zhihu.com/question/463566649/answer/1929522948)
+灵感来源于：[梦弘浏览器（GitHub）](https://github.com/StickTech/monyhar) 以及 [鸿蒙浏览器（知乎）](https://www.zhihu.com/question/463566649/answer/1929522948)
